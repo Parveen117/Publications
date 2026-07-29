@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the specific Zenodo release DOI for this publication collection."
+title: "A Representation-Complete Reduction of the Riemann Hypothesis to a Native Seam Integer: Bilateral Recognition, Spectral Blindness, and a Finite Birman-Schwinger Obstruction"
+type: article
+authors:
+  - family-names: Dabas
+    given-names: Monty
+    orcid: "https://orcid.org/0009-0005-6948-209X"
+date-released: 2026-07-29
+repository-code: "https://github.com/Parveen117/Publications"
+keywords:
+  - Riemann hypothesis
+  - completed Weil criterion
+  - recognition-seam calculus
+  - Birman-Schwinger operator
+  - spectral blindness
