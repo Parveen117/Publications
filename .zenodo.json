@@ -1,0 +1,27 @@
+{
+  "title": "A Representation-Complete Reduction of the Riemann Hypothesis to a Native Seam Integer: Bilateral Recognition, Spectral Blindness, and a Finite Birman-Schwinger Obstruction",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "publication_date": "2026-07-29",
+  "access_right": "open",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Dabas, Monty",
+      "orcid": "0009-0005-6948-209X"
+    }
+  ],
+  "description": "A representation-complete reduction paper developing a native completed-Weil seam integer, bilateral target-faithful closure, an explicit source floor S_(0.01,-) >= 0.008 I, and a final outward acceptance theorem for an already established Hermitian Birman-Schwinger obstruction of rank at most five. The actual outward five-by-five value, a controlled cofinal shift sequence, and the Riemann hypothesis remain open; RH is not claimed.",
+  "keywords": [
+    "Riemann hypothesis",
+    "completed Weil criterion",
+    "recognition-seam calculus",
+    "Birman-Schwinger operator",
+    "spectral blindness",
+    "Mellin transform",
+    "spectral flow",
+    "Morse spectral zeta",
+    "functional analysis",
+    "mathematical physics"
+  ]
+}
