@@ -1,0 +1,196 @@
+\section{Reader contract and theorem dependency}
+
+This paper is a thermodynamic companion to the finite matrix theory of spectral blindness and stable recovery developed in \cite{dabasSpectralOne,dabasSpectralTwo}. It also consumes the typed thermodynamic response coordinates, Recognition Kernel theorem, and cut-flow response architecture of \cite{dabasThermoRecognition}. The purpose is not to rename matrices as thermodynamics. The purpose is to identify the additional thermodynamic data that make the matrix theorems lawful response theorems.
+
+The dependency chain is
+\[
+\begin{gathered}
+\text{regular thermodynamic chart and typed response coordinates}
+\\
+\Downarrow
+\\
+\text{declared finite response fibre, metric, ordered generators, target}
+\\
+\Downarrow
+\\
+\text{endpoint operator}\longrightarrow\text{spectral shadow}
+\\
+\Downarrow
+\\
+\text{marked response and cut-square residue}
+\\
+\Downarrow
+\\
+\text{target-faithful minimal completion and stability margin}.
+\end{gathered}
+\]
+Every downward arrow consumes new data. In particular, an equilibrium identity such as $C_P/C_V=K_S/K_T$ does not by itself construct a noncommuting response-operator family, and a nonzero algebraic marker response does not by itself identify a laboratory sensor.
+
+\subsection{Main contributions}
+
+The paper proves or specializes the following theorem chain.
+
+\begin{enumerate}[label=\textbf{T\arabic*.},leftmargin=2.2em]
+\item \textbf{Typed thermodynamic spectral blindness.} Two-factor reversal and cyclic rotation may change the endpoint response operator while leaving every characteristic-determinant coefficient unchanged.
+\item \textbf{First connected noncyclic channel.} For three labelled response generators, the lowest multilinear connected order response is the cyclic trace $\Tr(A[B,C])$ with the exact rational kernel $q/(1-q)^2$.
+\item \textbf{Metric-marked recovery.} A declared response marker separates a blind endpoint residue exactly through a nonzero trace pairing. Complete finite banks reconstruct the endpoint and frame bounds quantify noise amplification.
+\item \textbf{Thermodynamic cut-square coherence.} In the positive response metric, every scalar decoder admits an exact energy decomposition into captured channel, contractive reserve, and pairwise transverse squares.
+\item \textbf{Multiplicity blindness and minimal split lift.} The degree-five collapsed response hierarchy has the exact $50/45/5$ count, while five split-occurrence probes form a minimal repair bank.
+\item \textbf{Target-relative minimum observer count.} The minimum number of arbitrary scalar response probes required for a target $\Pi$ is $\rank(\Pi|_{\Ker A})$, not necessarily $\dim\Ker A$.
+\item \textbf{Endpoint/history boundary.} No endpoint-only thermodynamic observation can recover two process histories that already produce the same endpoint operator.
+\end{enumerate}
+
+\section{Typed thermodynamic response datum}
+
+\subsection{Equilibrium chart and response coordinates}
+
+Let $\Omega\subset\R^2$ be an admissible simple-compressible equilibrium chart with coordinates $(S,V)$ and smooth fundamental relation $U(S,V)$, in the standard equilibrium thermodynamic setting of \cite{callen1985,degroot1962}. Write
+\[
+ T=\left(\frac{\partial U}{\partial S}\right)_V,
+ \qquad
+ P=-\left(\frac{\partial U}{\partial V}\right)_S.
+\]
+The exact Legendre potential differentials give the usual Maxwell relations and the constrained response identities. In the notation of \cite{dabasThermoRecognition}, one obtains six response coordinates
+\[
+ \Lambda=(\lambda_P,\lambda_V,\lambda_S,z_T,z_S,\lambda_T).
+\]
+Their natural carrier is not an unqualified Euclidean six-space because the entries have temperature, pressure, and volume dimensions. Declare positive reference scales $T_*,P_*,V_*$ and form the nondimensional response section
+\[
+ \widehat\Lambda=
+ \left(
+ \frac{\lambda_P}{T_*},
+ \frac{\lambda_V}{T_*},
+ \frac{\lambda_S}{P_*},
+ \frac{z_T}{P_*},
+ \frac{z_S}{V_*},
+ \frac{\lambda_T}{V_*}
+ \right).
+\]
+
+\begin{principle}[Unit-typed observation]
+No Euclidean norm, adjoint, cut, wedge product, or characteristic determinant is applied to unlike thermodynamic response coordinates before a common finite carrier and its transported metric have been declared.
+\end{principle}
+
+\subsection{Finite response fibre and metric}
+
+\begin{definition}[Thermodynamic response fibre]
+A finite thermodynamic response datum is a tuple
+\[
+ \mathfrak T=(\Rth,\thmmetric,\mathcal G,\mathcal W;\Pi),
+\]
+where:
+\begin{enumerate}[label=(\roman*)]
+\item $\Rth\cong\C^m$ is a nondimensional response fibre;
+\item $\thmmetric>0$ is a declared positive response metric;
+\item $\mathcal G=\{A_1,\ldots,A_n\}\subset\operatorname{End}(\Rth)$ is a labelled family of response generators;
+\item $\mathcal W$ is a declared class of admissible ordered factor words;
+\item $\Pi$ is the target map to be preserved or reconstructed.
+\end{enumerate}
+\end{definition}
+
+The metric pairing and norm are
+\[
+ \langle u,v\rangle_{\thmmetric}=u^*\thmmetric v,
+ \qquad
+ \|u\|_{\thmmetric}^2=u^*\thmmetric u.
+\]
+A change of response coordinates $u'=Cu$ transports the metric by
+\[
+ \thmmetric'=(C^{-1})^*\thmmetric C^{-1}.
+\]
+Every metric statement below is covariant under this simultaneous transport.
+
+\begin{remark}[What equilibrium data do not select]
+The equilibrium chart and the six response coordinates do not uniquely select the noncommuting generators $A_j$. A generator may represent a linearized protocol step, a finite response transfer, a jet-layer transition, a constraint exchange, or another explicitly declared response action. The physical identification of the generators is additional protocol data.
+\end{remark}
+
+\section{Ordered constitutive endpoints and spectral shadows}
+
+For each labelled generator $A_j$ and parameter $z_j\in\C$, define
+\[
+ X_j(z_j)=e^{z_jA_j}.
+\]
+For a permutation $\pi$ of $\{1,\ldots,n\}$, the ordered endpoint is
+\[
+ U_\pi(z)=X_{\pi(n)}(z_{\pi(n)})\cdots X_{\pi(1)}(z_{\pi(1)}).
+\]
+We distinguish:
+\begin{enumerate}[label=(\roman*)]
+\item the ordered process word $\pi$;
+\item the endpoint response operator $U_\pi$;
+\item the ordinary spectral shadow
+\[
+ \mathcal S_q(U_\pi)=\det(I-qU_\pi).
+\]
+\end{enumerate}
+Both maps
+\[
+ \pi\longmapsto U_\pi\longmapsto \mathcal S_q(U_\pi)
+\]
+may be many-to-one.
+
+\begin{definition}[Thermodynamic endpoint collision]
+Two admissible process words $w_1,w_2\in\mathcal W$ have an endpoint collision when they are distinct as ordered words but produce the same endpoint operator.
+\end{definition}
+
+\begin{definition}[Thermodynamic spectral collision]
+Two endpoint operators $U,V$ have a characteristic spectral collision when
+\[
+ \det(I-qU)=\det(I-qV)
+\]
+as polynomials in $q$.
+\end{definition}
+
+An endpoint collision implies a spectral collision, but the converse need not hold.
+
+\subsection{Connected determinant channel}
+
+For an ordered endpoint $U_\pi(z)$ define
+\[
+ F_\pi(q,z)=\frac{\det(I-qU_\pi(z))}{(1-q)^m},
+ \qquad
+ L_\pi(q,z)=\log F_\pi(q,z).
+\]
+The normalization gives $F_\pi(q,0)=1$. Formal coefficient extraction in the labelled variables requires no global convergence theorem. The logarithm removes disconnected products of lower-order coefficients and isolates connected trace channels.
+
+\section{Exact thermodynamic spectral blindness}
+
+\begin{theorem}[Two-factor characteristic blindness]\label{thm:two-factor-blind}
+Let $X,Y\in\operatorname{End}(\Rth)$ be arbitrary. Then
+\[
+ \det(I-qYX)=\det(I-qXY)
+\]
+for every scalar $q$.
+\end{theorem}
+
+\begin{proof}
+Sylvester's determinant identity, in the standard finite-matrix setting of \cite{hornjohnson2013}, gives $\det(I+AB)=\det(I+BA)$ in the square case. Apply it with $A=-qY$ and $B=X$.
+\end{proof}
+
+\begin{corollary}[Ordered exponential blindness]
+For arbitrary response generators $A,B$ and parameters $x,y$,
+\[
+ \det(I-qe^{yB}e^{xA})
+ =\det(I-qe^{xA}e^{yB}).
+\]
+The endpoints may nevertheless differ by the nonzero residue
+\[
+ e^{yB}e^{xA}-e^{xA}e^{yB}.
+\]
+\end{corollary}
+
+\begin{theorem}[Cyclic-word characteristic blindness]\label{thm:cyclic-blind}
+Let $X_1,\ldots,X_n\in\operatorname{End}(\Rth)$. Every cyclic rotation of $X_n\cdots X_1$ has the same characteristic determinant. If all factors are invertible, the cyclic rotations are also similar.
+\end{theorem}
+
+\begin{proof}
+Write $U=X_nQ$ with $Q=X_{n-1}\cdots X_1$. By Sylvester's identity,
+\[
+ \det(I-qX_nQ)=\det(I-qQX_n).
+\]
+Iterate. If $X_n$ is invertible, then $QX_n=X_n^{-1}UX_n$.
+\end{proof}
+
+\begin{remark}[Thermodynamic meaning]
+Theorems \ref{thm:two-factor-blind}--\ref{thm:cyclic-blind} do not say that order is physically irrelevant. They say that the selected characteristic spectral representation is incapable of seeing certain order distinctions. The failure lies in the observation map, not necessarily in the process.
+\end{remark}
