@@ -1,0 +1,60 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage[nameinlink,capitalise]{cleveref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue,
+  pdftitle={When Thermodynamic Response Spectra Forget Order},
+  pdfauthor={Monty Dabas}
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{assumption}[theorem]{Assumption}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{principle}[theorem]{Principle}
+
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\M}{\mathrm M}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Ran}{\operatorname{Ran}}
+\newcommand{\Ker}{\operatorname{Ker}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\sflo}{\operatorname{sf}}
+\newcommand{\HS}{\mathrm{HS}}
+\newcommand{\thmmetric}{H_{\mathrm{th}}}
+\newcommand{\Rth}{\mathcal R_{\mathrm{th}}}
+\newcommand{\Bth}{\mathcal B_{\mathrm{th}}}
+
+\title{\textbf{When Thermodynamic Response Spectra Forget Order:}\\
+Constitutive Blindness, Cut-Square Coherence, and Minimal Observer Lifts}
+\author{Monty Dabas\\
+\small ORCID: 0009-0005-6948-209X}
+\date{Initial publication-repository draft, August 2026}
+
+\begin{document}
+\maketitle
+\input{sections/00_frontmatter}
+\input{sections/01_foundations}
+\input{sections/02_order_channels}
+\input{sections/03_recovery}
+\input{sections/04_boundaries}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
