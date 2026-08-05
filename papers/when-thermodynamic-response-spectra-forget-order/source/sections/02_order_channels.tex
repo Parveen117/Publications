@@ -1,0 +1,137 @@
+\section{The first connected noncyclic order channel}
+
+Consider
+\[
+ U_{CBA}=e^{zC}e^{yB}e^{xA},
+ \qquad
+ U_{CAB}=e^{zC}e^{xA}e^{yB},
+\]
+and their normalized connected determinants $L_{CBA}$ and $L_{CAB}$.
+
+\begin{theorem}[Cubic thermodynamic order coefficient]\label{thm:cubic-channel}
+The multilinear coefficient satisfies
+\[
+ [xyz]\bigl(L_{CBA}-L_{CAB}\bigr)
+ =\frac{q}{(1-q)^2}\Tr\bigl(A[B,C]\bigr).
+\]
+\end{theorem}
+
+\begin{proof}
+Put $U=I+W$ and $r=q/(1-q)$. Then
+\[
+ L=\Tr\log(I-rW)
+ =-\sum_{k\ge1}\frac{r^k}{k}\Tr(W^k).
+\]
+Only $k=1,2,3$ contribute to the coefficient $xyz$. Expanding the two ordered endpoints through total degree three and reducing trace words cyclically gives
+\[
+ [xyz](L_{CBA}-L_{CAB})
+ =r(1+r)\bigl(\Tr(ABC)-\Tr(ACB)\bigr).
+\]
+Since $r(1+r)=q/(1-q)^2$ and
+\[
+ \Tr(ABC)-\Tr(ACB)=\Tr(A[B,C]),
+\]
+the result follows.
+\end{proof}
+
+\begin{corollary}[Visibility criterion]
+The two noncyclic process orders are distinguished by the cubic connected spectral channel whenever
+\[
+ \Tr(A[B,C])\ne0.
+\]
+\end{corollary}
+
+\begin{remark}[Noncommutation is not enough]
+The condition $[B,C]\ne0$ creates an available order-memory direction, but the selected connected spectral channel is visible only when the closure against $A$ is nonzero.
+\end{remark}
+
+The cubic theorem is the first member of a general cyclic-descent hierarchy; the underlying cyclic-descent combinatorics is classical \cite{petersen2005}. For $n$ distinct labelled response generators and oriented cyclic classes $c,e$, define $\operatorname{cdesc}_c(e)$ as the relative cyclic descent number. The square-free connected potential is
+\[
+ \Phi_c^{(n)}(q)
+ =-\frac{1}{(1-q)^n}
+ \sum_e q^{\operatorname{cdesc}_c(e)}T_e,
+ \qquad
+ T_e=\Tr(A_{e_1}\cdots A_{e_n}).
+\]
+The theorem is algebraic and therefore applies to every declared thermodynamic response-operator realization. It does not identify which trace words are physically measurable without a response protocol.
+
+\section{Thermodynamic markers and endpoint recovery}
+
+\subsection{Metric-marked observations}
+
+For a response marker $M\in\operatorname{End}(\Rth)$ define
+\[
+ \tau_M(U)=\Tr(MU).
+\]
+For endpoint operators $U,V$, the marked residue is
+\[
+ G_M(U,V)=\Tr(M(U-V)).
+\]
+If one wishes to express the marker through the thermodynamic metric, choose an analysis vector $N$ and set
+\[
+ M=\thmmetric^{1/2}N\thmmetric^{-1/2}
+\]
+in a whitened response frame. The metric is part of the marker implementation, not a decorative norm added after the response is observed.
+
+\begin{theorem}[Marked detection of two-factor reversal]
+For $U_{YX}=YX$ and $U_{XY}=XY$,
+\[
+ G_M(U_{YX},U_{XY})=\Tr(M[Y,X]).
+\]
+Hence $M$ detects the spectrally blind reversal whenever $\Tr(M[Y,X])\ne0$.
+\end{theorem}
+
+\begin{theorem}[Marked determinant separation]
+Define
+\[
+ F_M(q;U)=\det(I-qMU).
+\]
+If $\Tr(M(U-V))\ne0$, then $F_M(q;U)\ne F_M(q;V)$ as polynomials in $q$.
+\end{theorem}
+
+\begin{proof}
+The linear coefficient is
+\[
+ [q]F_M(q;U)=-\Tr(MU).
+\]
+A nonzero marked trace difference therefore forces distinct marked determinants.
+\end{proof}
+
+\subsection{Complete banks and frame stability}
+
+Following finite frame theory \cite{duffin1952,christensen2016}, let $\mathcal M=(M_a)_{a=1}^r$ be a finite marker bank and define
+\[
+ \mathcal A_{\mathcal M}(D)
+ =\bigl(\langle M_a,D\rangle_{\HS}\bigr)_{a=1}^r.
+\]
+The bank is complete on a declared residue subspace $\mathcal D$ when
+\[
+ \Ker\mathcal A_{\mathcal M}\cap\mathcal D=\{0\}.
+\]
+Let $S_{\mathcal M}=\mathcal A_{\mathcal M}^*\mathcal A_{\mathcal M}$ and denote its extremal eigenvalues on $\mathcal D$ by $\alpha$ and $\beta$.
+
+\begin{theorem}[Marker frame bounds]
+For every $D\in\mathcal D$,
+\[
+ \alpha\|D\|_{\HS}^2
+ \le \|\mathcal A_{\mathcal M}D\|_2^2
+ \le \beta\|D\|_{\HS}^2.
+\]
+The bank is complete on $\mathcal D$ exactly when $\alpha>0$.
+\end{theorem}
+
+\begin{corollary}[Deterministic noisy reconstruction]
+Assume $\alpha>0$ and observe
+\[
+ y=\mathcal A_{\mathcal M}D+\eta,
+ \qquad
+ \|\eta\|_2\le\varepsilon.
+\]
+The canonical dual reconstruction satisfies
+\[
+ \|\widehat D-D\|_{\HS}
+ \le \frac{\varepsilon}{\sqrt\alpha}.
+\]
+\end{corollary}
+
+These statements distinguish algebraic completeness from robustness. A bank can be injective while possessing a very small lower frame bound and therefore amplifying the weakest response direction.
