@@ -1,0 +1,31 @@
+{
+  "project": "cut-graded-recognition-dynamics-nuclear-validation",
+  "title": "Cut-Graded Recognition Dynamics and Nuclear Validation: Universal Generators, Bilateral Jet Flows, Madhava-Smriti Closure, Cut-Square Coherence, and Guarded Atomic Response",
+  "author": "Monty Dabas",
+  "orcid": "0009-0005-6948-209X",
+  "stage": "STAGE_I_RIGOROUS_CORE_DRAFT",
+  "canonical_source": "source/main.tex",
+  "compiled_pages": 21,
+  "theorem_spine": [
+    "Theorem 41: cut-graded universal generator",
+    "Theorem 42: cut-graded response tower",
+    "Theorem 43: bilateral jet-flow capstone",
+    "Theorem 44: Madhava-Smriti closure",
+    "Theorem 45: frozen nuclear adapter and validation"
+  ],
+  "included_validation": [
+    "exact rational capstone fixtures",
+    "3558-nucleus bilateral and Smriti wiring audit",
+    "V5.1 same-coverage guarded decoder result",
+    "UAM-V4 baseline and FRDM2012 common-set context"
+  ],
+  "compile_status": "PASS_PDFLATEX_THREE_PASSES",
+  "layout_status": "PASS_RENDER_INSPECTION_NO_OVERFULL_BOXES",
+  "next_stage": [
+    "literature and originality audit",
+    "unbounded-domain appendix",
+    "full V4/V5.1/V6 method and leakage specification",
+    "frozen tables and figures",
+    "arXiv metadata and source manifest"
+  ]
+}
