@@ -1,0 +1,228 @@
+\section{Theorem 41: the cut-graded universal generator}
+
+\subsection{Unique cut grading}
+
+Define
+\[
+ \Ge=\frac12(G+JGJ),
+ \qquad
+ \Go=\frac12(G-JGJ).
+\]
+
+\begin{theorem}[Theorem 41A: unique cut grading]\label{thm:t41grading}
+The generator decomposes uniquely as
+\[
+ G=\Ge+\Go,
+\]
+with
+\[
+ J\Ge J=\Ge,
+ \qquad
+ J\Go J=-\Go.
+\]
+Moreover,
+\[
+ P_+\Ge P_-=P_-\Ge P_+=0,
+\]
+while
+\[
+ P_+\Go P_+=P_-\Go P_-=0.
+\]
+Thus $\Ge$ is sheet-preserving and $\Go$ is trans-cut.
+\end{theorem}
+
+\begin{proof}
+The sum identity follows by addition. Conjugating by $J$ and using $J^2=I$ gives the two parity relations. If $G=A+B$ with $JAJ=A$ and $JBJ=-B$, then
+\[
+ A=\frac12(G+JGJ),\qquad B=\frac12(G-JGJ),
+\]
+so the decomposition is unique. Multiplication by $P_\pm$ yields the block-support statements.
+\end{proof}
+
+\subsection{Bilateral reconstruction and the operator cut square}
+
+Assume now that $G$ is cut odd:
+\[
+ JGJ=-G.
+\]
+
+\begin{theorem}[Theorem 41B: bilateral exponential reconstruction]\label{thm:t41bilateral}
+For every $t$ for which the exponential is defined,
+\[
+ JU_tJ=U_{-t}.
+\]
+Put
+\[
+ E_t=\frac12(U_t+U_{-t}),
+ \qquad
+ O_t=\frac12(U_t-U_{-t}).
+\]
+Then
+\[
+ U_t=E_t+O_t,
+ \qquad
+ U_{-t}=E_t-O_t,
+\]
+\[
+ JE_tJ=E_t,
+ \qquad
+ JO_tJ=-O_t,
+\]
+and
+\[
+ E_t^2-O_t^2=I.
+\]
+Equivalently, with
+\[
+ \widehat J_t=U_t+U_{-t},
+ \qquad
+ \widehat C_t=U_t-U_{-t},
+\]
+one has the operator cut-square identity
+\[
+ \boxed{\widehat J_t^2-\widehat C_t^2=4I.}
+\]
+The two channels commute and
+\[
+ \widehat J_t\widehat C_t
+ =\widehat C_t\widehat J_t
+ =U_{2t}-U_{-2t}.
+\]
+\end{theorem}
+
+\begin{proof}
+Functional calculus and $JGJ=-G$ give
+\[
+ Je^{tG}J=e^{tJGJ}=e^{-tG}.
+\]
+The parity and reconstruction formulas follow by addition and subtraction. Because $U_t$ and $U_{-t}$ are functions of the same operator, they commute and $U_tU_{-t}=I$. Expanding gives
+\[
+ E_t^2-O_t^2
+ =\frac14\bigl[(U_t+U_{-t})^2-(U_t-U_{-t})^2\bigr]=I.
+\]
+Multiplying by four gives the boxed identity; direct expansion gives the product formula.
+\end{proof}
+
+\begin{remark}
+The operator cut square is a bilateral flow identity. It is not the positive-metric Lagrange identity proved in \cref{sec:metric-cut-square}. Both are called cut-square identities because each separates a recognised channel from its complementary structure, but their carriers, signs, and hypotheses differ.
+\end{remark}
+
+\subsection{Cut-loop memory and seam curvature}
+
+For a general bounded generator define
+\[
+ \mathscr H_J(t)=JU_tJU_t=e^{tJGJ}e^{tG}.
+\]
+
+\begin{theorem}[Theorem 41C: logarithmic cut-loop expansion]\label{thm:t41loop}
+As $t\to0$,
+\[
+ \mathscr H_J(t)
+ =I+2t\Ge+t^2\bigl(2\Ge^2+[\Ge,\Go]\bigr)+O(t^3),
+\]
+and
+\[
+ \boxed{
+ \log\mathscr H_J(t)
+ =2t\Ge+t^2[\Ge,\Go]+O(t^3).}
+\]
+Consequently,
+\[
+ \Ge=\frac12\left.\frac{d}{dt}\right|_{t=0}\mathscr H_J(t),
+ \qquad
+ \mathcal R_{\mathrm{seam}}=[\Ge,\Go].
+\]
+The cut loop is locally the identity exactly when $\Ge=0$.
+\end{theorem}
+
+\begin{proof}
+Substitute $JGJ=\Ge-\Go$ and $G=\Ge+\Go$ into the product of exponential series. The linear term is $2\Ge$. The quadratic term is $2\Ge^2+[\Ge,\Go]$. For $I+tA+t^2B+O(t^3)$,
+\[
+ \log(I+tA+t^2B+O(t^3))=tA+t^2\left(B-\frac12A^2\right)+O(t^3),
+\]
+which yields the logarithmic formula. If the loop is locally $I$, its first derivative vanishes, hence $\Ge=0$. Conversely, if $\Ge=0$, then $JGJ=-G$ and $JU_tJ=U_{-t}$, so the loop equals $I$.
+\end{proof}
+
+\subsection{Closure sectors and the clock-free Eye}
+
+\begin{proposition}[Periodic and antiperiodic sectors]
+If $G\psi=i\omega\psi$ with $\omega\in\R$, then for integer $N\ge1$,
+\[
+ U_N\psi=\psi \iff N\omega\in2\pi\mathbb Z,
+\]
+while
+\[
+ U_N\psi=-\psi \iff N\omega\in(2\mathbb Z+1)\pi.
+\]
+For $\sigma\in\{\pm1\}$,
+\[
+ S_{N,\sigma}=(U_N-\sigma I)^*(U_N-\sigma I)\ge0,
+\]
+and
+\[
+ \Ker S_{N,\sigma}=\Ker(U_N-\sigma I).
+\]
+\end{proposition}
+
+\begin{proof}
+Apply the exponential to the eigenvector. Positivity and the kernel identity follow from the definition of $S_{N,\sigma}$.
+\end{proof}
+
+Assume now $U_t=e^{-itH}$ with $H=H^*$. The one-step fixed space can contain nonzero integer frequencies:
+\[
+ \Fix(U_1)=E_H(2\pi\mathbb Z)\Hh.
+\]
+
+\begin{theorem}[Theorem 41D: clock-free Eye]\label{thm:eye}
+The all-time fixed space is
+\[
+ \bigcap_{t\in\R}\Fix(U_t)=\Ker H,
+\]
+and the mean-ergodic projector is
+\[
+ \boxed{
+ \Eye=\operatorname*{s-lim}_{T\to\infty}
+ \frac1T\int_0^TU_t\,dt=E_H(\{0\}).}
+\]
+Thus
+\[
+ \Fix(U_1)/\Ker H
+\]
+is the stroboscopic recognition-blind sector.
+\end{theorem}
+
+\begin{proof}
+The spectral theorem gives
+\[
+ \frac1T\int_0^TU_t x\,dt
+ =\int_{\R}\left(\frac1T\int_0^Te^{-it\lambda}\,dt\right)dE_H(\lambda)x.
+\]
+The scalar factor tends to one at $\lambda=0$ and zero elsewhere, and is bounded in modulus by one. Dominated convergence with respect to the spectral measure proves the strong limit.
+\end{proof}
+
+\subsection{Faithful component observer}
+
+Let $P_1,\ldots,P_m$ be pairwise orthogonal projections with $\sum_aP_a=I$. Define $G_a=P_aG$ and
+\[
+ \Aobs_Gx=(G_1x,\ldots,G_mx).
+\]
+
+\begin{theorem}[Theorem 41E: component Gram preservation]
+One has
+\[
+ \Aobs_G^*\Aobs_G=\sum_aG_a^*G_a=G^*G,
+\]
+and therefore
+\[
+ \Ker\Aobs_G=\Ker G.
+\]
+\end{theorem}
+
+\begin{proof}
+\[
+ \sum_aG_a^*G_a=G^*\left(\sum_aP_a\right)G=G^*G.
+\]
+The kernel equality follows because $\|\Aobs_Gx\|^2=\|Gx\|^2$.
+\end{proof}
+
+This result is load-bearing for two-axis nuclear observation: a direct sum preserves both directional energies, whereas a scalar aggregate can vanish by cancellation.
