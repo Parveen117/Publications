@@ -1,0 +1,164 @@
+\section{Theorem 44: Madhava--Smriti closure}
+
+Let the recognized full observed flow be
+\[
+ F(t)=BU_t.
+\]
+Define the finite body
+\[
+ P_N(t)=\sum_{k=0}^N\frac{t^k}{k!}\Lambda_k,
+\]
+the correction window
+\[
+ C_{N,m}(t)=\sum_{k=N+1}^{N+m}\frac{t^k}{k!}\Lambda_k,
+\]
+and the corrected finite state
+\[
+ M_{N,m}(t)=P_N(t)+C_{N,m}(t).
+\]
+Define the conventional tail and signed Smriti by
+\[
+ T_{N,m}(t)=F(t)-M_{N,m}(t),
+ \qquad
+ \Sigma_{N,m}(t)=-T_{N,m}(t).
+\]
+
+\subsection{Exact closure and tail control}
+
+\begin{theorem}[Theorem 44A: corrected jet closure]\label{thm:t44closure}
+For every $N,m\ge0$,
+\[
+ \boxed{M_{N,m}(t)+T_{N,m}(t)=F(t),}
+\]
+or equivalently
+\[
+ M_{N,m}(t)-F(t)-\Sigma_{N,m}(t)=0.
+\]
+The tail has the exact integral form
+\[
+ T_{N,m}(t)=\frac1{(N+m)!}
+ \int_0^t(t-s)^{N+m}BG^{N+m+1}U_s\,ds,
+\]
+and for $t\ge0$,
+\[
+ \|T_{N,m}(t)\|
+ \le\frac{t^{N+m+1}}{(N+m+1)!}
+ \|B\|\,\|G\|^{N+m+1}e^{t\|G\|}.
+\]
+\end{theorem}
+
+\begin{proof}
+The closure identity follows from the definition of the tail. Since $M_{N,m}$ is the exponential polynomial through order $N+m$, \cref{thm:t43remainder} with $N$ replaced by $N+m$ gives the integral representation and bound.
+\end{proof}
+
+The identity is not permission to rename arbitrary error as memory. The flow, observer, order, correction depth, carrier, and sign convention are fixed before the tail is evaluated.
+
+\subsection{Living refinement and the seam cocycle}
+
+Write
+\[
+ M_r(t)=\sum_{k=0}^r\frac{t^k}{k!}\Lambda_k,
+ \qquad
+ T_r=F-M_r,
+ \qquad
+ \Sigma_r=-T_r,
+\]
+and
+\[
+ q_{r+1}(t)=\frac{t^{r+1}}{(r+1)!}\Lambda_{r+1}.
+\]
+
+\begin{theorem}[Theorem 44B: exact correction-to-tail transfer]\label{thm:t44transfer}
+Refinement by one jet level obeys
+\[
+ M_{r+1}=M_r+q_{r+1},
+\]
+\[
+ T_{r+1}=T_r-q_{r+1},
+ \qquad
+ \Sigma_{r+1}=\Sigma_r+q_{r+1}.
+\]
+Therefore
+\[
+ (M_{r+1}-M_r)-(\Sigma_{r+1}-\Sigma_r)=0,
+\]
+and
+\[
+ M_{r+1}+T_{r+1}=M_r+T_r=F.
+\]
+For $r\le s$, the refinement seam
+\[
+ \mathfrak d_{r,s}=(M_s-M_r)-(\Sigma_s-\Sigma_r)
+\]
+vanishes, and it is additive under composition of refinement intervals.
+\end{theorem}
+
+\begin{proof}
+The difference of consecutive exponential polynomials is $q_{r+1}$. Subtraction from $F$ gives the tail transfer, and negation gives the signed-Smriti transfer. Telescoping proves the two-depth and cocycle statements.
+\end{proof}
+
+\subsection{Correction--Smriti gauge}
+
+\begin{proposition}[Coupled correction invariance]
+For any admitted typed correction $Q(t)$, set
+\[
+ \widetilde M=M+Q,
+ \qquad
+ \widetilde\Sigma=\Sigma+Q.
+\]
+Then
+\[
+ \widetilde M-F-\widetilde\Sigma=M-F-\Sigma.
+\]
+If the correction changes without the matching Smriti update, the closure defect is exactly $Q$.
+\end{proposition}
+
+This is a ledger invariance, not a data-fitting licence. The admissible class of corrections must be declared independently.
+
+\subsection{Bilateral Smriti transport}
+
+Under $JGJ=-G$ and $BJ=B$,
+\[
+ M_{N,m}(t)J=M_{N,m}(-t),
+\]
+\[
+ T_{N,m}(t)J=T_{N,m}(-t),
+ \qquad
+ \Sigma_{N,m}(t)J=\Sigma_{N,m}(-t).
+\]
+Thus the even and odd tail strands
+\[
+ T_{\mathrm e}(t)=\frac12(T(t)+T(-t)),
+ \qquad
+ T_{\mathrm o}(t)=\frac12(T(t)-T(-t))
+\]
+satisfy
+\[
+ T_{\mathrm e}J=T_{\mathrm e},
+ \qquad
+ T_{\mathrm o}J=-T_{\mathrm o}.
+\]
+The tail is itself cut graded.
+
+\begin{corollary}[Exact finite termination]
+If $G^{d+1}=0$, then for every $r\ge d$,
+\[
+ T_r=\Sigma_r=0,
+ \qquad
+ M_r=F.
+\]
+\end{corollary}
+
+\subsection{Memory-closed and fail-closed states}
+
+The Theorem 44 classification distinguishes:
+\begin{description}[leftmargin=4.2em,style=nextline]
+\item[OPEN\_BILATERAL\_SEAM] cut transport fails;
+\item[OPEN\_RECOGNITION\_RESIDUE] body, recognized limit, and Smriti do not close;
+\item[ABSTAIN\_UNTYPED\_TAIL] the tail lacks a declared carrier, bound, or burden;
+\item[BURDEN\_EXCEEDS\_ONE] closure holds but the target burden exceeds one;
+\item[MEMORY\_CLOSED] closure and transport hold, burden is admissible, and a nonzero typed tail remains;
+\item[EXACT\_FINITE\_CLOSURE] all gates pass and the tail vanishes.
+\end{description}
+
+A nonzero lawful tail is not automatically a failure. An untyped or unmatched tail is.
