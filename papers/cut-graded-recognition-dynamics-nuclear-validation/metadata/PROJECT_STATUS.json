@@ -1,31 +1,42 @@
 {
   "project": "cut-graded-recognition-dynamics-nuclear-validation",
-  "title": "Cut-Graded Recognition Dynamics and Nuclear Validation: Universal Generators, Bilateral Jet Flows, Madhava-Smriti Closure, Cut-Square Coherence, and Guarded Atomic Response",
+  "title": "Cut-Graded Recognition Dynamics with Nuclear and Atomic Validation: Bilateral Flows, Covariant Response Jets, Typed Refinement, and Guarded Decoding",
   "author": "Monty Dabas",
   "orcid": "0009-0005-6948-209X",
-  "stage": "STAGE_I_RIGOROUS_CORE_DRAFT",
+  "stage": "STAGE_II_REVIEW_CRITICISM_INTEGRATED",
   "canonical_source": "source/main.tex",
-  "compiled_pages": 21,
+  "compiled_pages": 27,
   "theorem_spine": [
-    "Theorem 41: cut-graded universal generator",
-    "Theorem 42: cut-graded response tower",
-    "Theorem 43: bilateral jet-flow capstone",
-    "Theorem 44: Madhava-Smriti closure",
-    "Theorem 45: frozen nuclear adapter and validation"
+    "Theorem 41: foundational cut-graded generator and bilateral flow",
+    "Theorem 42: foundational covariant response tower",
+    "Theorem 43: capstone jet reconstruction synthesis",
+    "Theorem 44: typed refinement ledger and tail parity"
   ],
   "included_validation": [
     "exact rational capstone fixtures",
-    "3558-nucleus bilateral and Smriti wiring audit",
+    "3558-nucleus implementation and refinement audit",
     "V5.1 same-coverage guarded decoder result",
-    "UAM-V4 baseline and FRDM2012 common-set context"
+    "UAM-V4 versus FRDM2012 common-set context",
+    "118-position periodic skeleton conditional derivation",
+    "NIST H-U 92-atom ground-configuration residue audit"
+  ],
+  "review_repairs": [
+    "plain-language core idea added",
+    "standard terminology crosswalk added",
+    "novelty boundary made explicit",
+    "nuclear cut physically defined on response fibre",
+    "finite-data theorem language demoted to propositions",
+    "definitional zero defects labelled implementation checks",
+    "direct V5.1 mass-model comparison marked open",
+    "second atomic validation domain added"
   ],
   "compile_status": "PASS_PDFLATEX_THREE_PASSES",
   "layout_status": "PASS_RENDER_INSPECTION_NO_OVERFULL_BOXES",
   "next_stage": [
+    "direct common-support V5.1 external-model benchmark",
     "literature and originality audit",
     "unbounded-domain appendix",
     "full V4/V5.1/V6 method and leakage specification",
-    "frozen tables and figures",
-    "arXiv metadata and source manifest"
+    "frozen figures and arXiv source manifest"
   ]
 }
