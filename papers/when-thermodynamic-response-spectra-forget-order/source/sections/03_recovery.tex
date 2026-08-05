@@ -1,0 +1,232 @@
+\section{Thermodynamic cut-square coherence}
+
+The marked endpoint theory is linear in operator residues. The positive thermodynamic response metric provides an additional pointwise energy decomposition.
+
+Let $y,c\in\Rth$ be a response event and a declared scalar decoder. Set
+\[
+ L_c(y)=\langle c,y\rangle_{\thmmetric},
+ \qquad
+ \beta_{\mathrm{th}}=\|c\|_{\thmmetric}^2,
+\]
+and whiten the coordinates by
+\[
+ C=\thmmetric^{1/2}c,
+ \qquad
+ Y=\thmmetric^{1/2}y.
+\]
+
+\begin{theorem}[Thermodynamic cut-square identity]\label{thm:cut-square}
+For every $y,c\in\Rth$,
+\[
+ \boxed{
+ \beta_{\mathrm{th}}\|y\|_{\thmmetric}^2
+ -|L_c(y)|^2
+ =\sum_{i<j}|C_iY_j-C_jY_i|^2
+ =\|C\wedge Y\|^2.}
+\]
+\end{theorem}
+
+\begin{proof}
+After metric whitening, the statement is the finite complex Lagrange identity
+\[
+ \|C\|^2\|Y\|^2-|\langle C,Y\rangle|^2
+ =\sum_{i<j}|C_iY_j-C_jY_i|^2.
+\]
+Substitute the definitions of $C$, $Y$, and $L_c$.
+\end{proof}
+
+\begin{corollary}[Contractive response decomposition]\label{cor:contractive}
+If $\beta_{\mathrm{th}}\le1$, then
+\[
+ \boxed{
+ \|y\|_{\thmmetric}^2-|L_c(y)|^2
+ =(1-\beta_{\mathrm{th}})\|y\|_{\thmmetric}^2
+ +\|C\wedge Y\|^2\ge0.}
+\]
+Equivalently,
+\[
+ \thmmetric-\thmmetric cc^*\thmmetric\ge0.
+\]
+\end{corollary}
+
+\begin{corollary}[Equality classification]
+If $\beta_{\mathrm{th}}<1$, equality in \cref{cor:contractive} occurs only for $y=0$. If $\beta_{\mathrm{th}}=1$, equality occurs exactly when $Y=\lambda C$ for some scalar $\lambda$.
+\end{corollary}
+
+\subsection{Four-channel response tetrad}
+
+For four normalized thermodynamic response channels, indexed for example by $p,v,s,t$, the transverse residue is
+\[
+\begin{aligned}
+\|C\wedge Y\|^2={}&
+|C_pY_v-C_vY_p|^2
++|C_pY_s-C_sY_p|^2
++|C_pY_t-C_tY_p|^2\\
+&+|C_vY_s-C_sY_v|^2
++|C_vY_t-C_tY_v|^2
++|C_sY_t-C_tY_s|^2.
+\end{aligned}
+\]
+One scalar equilibrium relation can hold while one or more of these cross-response minors remain nonzero. Thus complete cut-square coherence is strictly finer than a single caloric--mechanical ratio identity.
+
+\subsection{Onsager specialization}
+
+Let the dissipative response metric be the positive symmetric Onsager part
+\[
+ \thmmetric=L_{\mathrm{sym}}>0.
+\]
+Then
+\[
+ \sigma(y)=y^*L_{\mathrm{sym}}y
+\]
+is the declared quadratic entropy-production form, and \cref{cor:contractive} becomes
+\[
+ \sigma(y)-|L_c(y)|^2
+ =(1-\beta_{\mathrm{th}})\sigma(y)+\|C\wedge Y\|^2\ge0.
+\]
+The antisymmetric Onsager part contributes no quadratic entropy production. It belongs to orientation and circulation, and must not be hidden inside the positive cut-square term.
+
+\section{Multiplicity blindness and minimal thermodynamic lifts}
+
+Repeated response labels produce a source restriction. Distinct physical occurrences may be collapsed into one exponential per response label, causing trace coordinates to disappear even when every block source order and every spectral parameter value are sampled.
+
+Let $\lambda=(m_1,\ldots,m_r)\vdash n$ be a multiplicity partition. Replace the $m_i$ copies of label $i$ by a distinct occurrence alphabet. Let $P_\lambda$ collapse occurrence-labelled cyclic classes to multiset necklaces, $M_n(q)$ be the square-free cyclic-descent matrix, and $B_\lambda$ select block source orders. The collapsed transform is
+\[
+ \Phi_\lambda(q)
+ =-\frac{1}{\bigl(\prod_i m_i!\bigr)(1-q)^n}
+ B_\lambda M_n(q)P_\lambda T_\lambda.
+\]
+
+\begin{theorem}[All-parameter blind kernel]
+The functional rank of the collapsed multiplicity transform is
+\[
+ R_\lambda=\rank
+ \begin{pmatrix}
+ B_\lambda D_1P_\lambda\\
+ B_\lambda D_2P_\lambda\\
+ \vdots\\
+ B_\lambda D_{n-1}P_\lambda
+ \end{pmatrix},
+\]
+where $M_n(q)=\sum_{s=1}^{n-1}q^sD_s$. Its exact all-parameter blind kernel is
+\[
+ \mathcal K_\lambda
+ =\bigcap_{s=1}^{n-1}\Ker(B_\lambda D_sP_\lambda).
+\]
+\end{theorem}
+
+\begin{theorem}[Generic completeness of split occurrences]
+For every $n$,
+\[
+ M_n(q)=qI+O(q^2).
+\]
+Hence $M_n(q)P_\lambda$ has full column rank for all $q$ outside a finite exceptional set. The collapsed blind kernel is caused by restricting the available source orders to block words, not by target-label identification alone.
+\end{theorem}
+
+\begin{theorem}[Degree-five thermodynamic $50/45/5$ calibration]\label{thm:50455}
+At total degree five, across all multiplicity partitions, the collapsed one-exponential-per-label hierarchy contains fifty formal cyclic trace coordinates and has all-parameter functional rank forty-five. Its blind kernel is five dimensional.
+\end{theorem}
+
+\begin{theorem}[Minimal five-probe split lift]\label{thm:five-probe}
+At $q=2$, five explicitly chosen split-occurrence response coefficients restrict to an invertible $5\times5$ matrix on the blind kernel, with determinant $-2592$. Therefore five split scalar probes repair the full degree-five collapsed thermodynamic response map. No family of fewer than five scalar supplemental observations can do so.
+\end{theorem}
+
+\begin{proof}
+The nonzero determinant proves injectivity on the five-dimensional blind kernel. Rank--nullity gives the lower bound: an injective scalar observation map on a five-dimensional space must have at least five output coordinates.
+\end{proof}
+
+\begin{remark}[What the five probes repair]
+The five probes repair missing endpoint trace coordinates within the declared finite response model. They do not recover process histories that have already collapsed to the same endpoint operator.
+\end{remark}
+
+\section{Recognition Kernel and target-relative observer count}
+
+Let $X$ be a finite-dimensional thermodynamic response-coordinate or response-jet space, let
+\[
+ A:X\to Y
+\]
+be the current observation map, and let
+\[
+ \Pi:X\to Z
+\]
+be the declared thermodynamic target. Define
+\[
+ K=\Ker A,
+ \qquad
+ N=K\cap\Ker\Pi.
+\]
+The quotient $K/N$ contains exactly the blind directions that remain relevant to the target.
+
+\begin{theorem}[Canonical target-faithful completion]
+The augmented observation
+\[
+ A_\Pi^\sharp x=(Ax,q\,P_Kx),
+\]
+where $P_K$ is the orthogonal projection onto $K$ and $q:K\to K/N$ is the quotient map, satisfies
+\[
+ \Ker A_\Pi^\sharp=\Ker A\cap\Ker\Pi.
+\]
+\end{theorem}
+
+\begin{theorem}[Exact minimum thermodynamic probe count]\label{thm:min-count}
+Among all supplemental scalar banks $G:X\to\C^r$ for which
+\[
+ \Ker(A,G)\subseteq\Ker\Pi,
+\]
+the minimum possible number of scalar channels is
+\[
+ \boxed{r_{\min}=\rank(\Pi|_{\Ker A})
+ =\dim\frac{\Ker A}{\Ker A\cap\Ker\Pi}.}
+\]
+\end{theorem}
+
+\begin{proof}
+Restrict $G$ to $K=\Ker A$. Target faithfulness requires
+\[
+ \Ker(G|_K)\subseteq K\cap\Ker\Pi=N.
+\]
+Rank--nullity gives
+\[
+ r\ge\rank(G|_K)
+ =\dim K-\dim\Ker(G|_K)
+ \ge\dim K-\dim N.
+\]
+The quotient observation $qP_K$ attains equality.
+\end{proof}
+
+\begin{corollary}[Full degree-five recovery]
+For the full coordinate target in \cref{thm:50455}, \cref{thm:min-count} gives five required scalar probes. A target sensitive to only a $t$-dimensional image of the degree-five blind kernel requires exactly $t$ independent scalar probes.
+\end{corollary}
+
+\subsection{Sharp scalar decoder burden}
+
+For a scalar target functional $\ell:X\to\C$, define
+\[
+ \beta_A(\ell)=
+ \sup_{Ax\ne0}\frac{|\ell(x)|^2}{\|Ax\|^2},
+\]
+with $\beta_A(\ell)=+\infty$ if $\ell$ does not vanish on $\Ker A$.
+
+\begin{theorem}[Sharp decoder burden]
+The following are equivalent, in the spirit of the range-factorization criterion of Douglas \cite{douglas1966}:
+\begin{enumerate}[label=(\roman*)]
+\item $\beta_A(\ell)<\infty$;
+\item $\ell$ factors through $A$ by a bounded decoder;
+\item there exists a unique minimum-norm decoder vector $c_\ell\in\overline{\Ran A}$ such that
+\[
+ \ell(x)=\langle Ax,c_\ell\rangle.
+\]
+\end{enumerate}
+Moreover,
+\[
+ \beta_A(\ell)=\|c_\ell\|^2,
+\]
+and
+\[
+ A^*A-\ell^*\ell\ge0
+ \quad\Longleftrightarrow\quad
+ \beta_A(\ell)\le1.
+\]
+\end{theorem}
+
+This theorem interfaces directly with the cut-square identity: constructing a decoder is not enough; its sharp burden must be bounded by one to obtain a contractive response decomposition.
