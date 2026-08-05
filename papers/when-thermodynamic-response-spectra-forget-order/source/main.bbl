@@ -1,0 +1,61 @@
+\begin{thebibliography}{10}
+
+\bibitem{callen1985}
+Herbert B. Callen.
+\newblock \emph{Thermodynamics and an Introduction to Thermostatistics}.
+\newblock Wiley, second edition, 1985.
+
+\bibitem{christensen2016}
+Ole Christensen.
+\newblock \emph{An Introduction to Frames and Riesz Bases}.
+\newblock Birkh\"auser, second edition, 2016.
+
+\bibitem{dabasThermoRecognition}
+Monty Dabas.
+\newblock Geometric completion of thermodynamic response: From the
+  T--V--S--P compass to recognition kernels, cut--flow jets, and
+  action-lifted spacetime field equations.
+\newblock Rigorous revision draft, 4 August 2026; revision lineage of
+  arXiv:2603.20773, 2026.
+
+\bibitem{dabasSpectralTwo}
+Monty Dabas.
+\newblock Stable recovery beyond spectral blindness: Finite sampling,
+  minimal observer lifts, and completion-stable reconstruction.
+\newblock Companion preprint, 2026.
+
+\bibitem{dabasSpectralOne}
+Monty Dabas.
+\newblock When spectra forget order: Spectral blindness, observer-marked
+  separation, and stable reconstruction of ordered matrix products.
+\newblock Companion preprint, 2026.
+
+\bibitem{degroot1962}
+S.~R. de~Groot and P.~Mazur.
+\newblock \emph{Non-Equilibrium Thermodynamics}.
+\newblock North-Holland, 1962.
+
+\bibitem{douglas1966}
+Ronald~G. Douglas.
+\newblock On majorization, factorization, and range inclusion of operators on
+  Hilbert space.
+\newblock \emph{Proceedings of the American Mathematical Society},
+  17(2):413--415, 1966.
+
+\bibitem{duffin1952}
+R.~J. Duffin and A.~C. Schaeffer.
+\newblock A class of nonharmonic Fourier series.
+\newblock \emph{Transactions of the American Mathematical Society},
+  72:341--366, 1952.
+
+\bibitem{hornjohnson2013}
+Roger~A. Horn and Charles~R. Johnson.
+\newblock \emph{Matrix Analysis}.
+\newblock Cambridge University Press, second edition, 2013.
+
+\bibitem{petersen2005}
+T.~Kyle Petersen.
+\newblock Cyclic descents and P-partitions.
+\newblock \emph{Journal of Algebraic Combinatorics}, 22(3):343--375, 2005.
+
+\end{thebibliography}
