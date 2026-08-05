@@ -1,0 +1,131 @@
+\section{Theorem 45: frozen nuclear recognition adapter and validation}
+
+\subsection{Frozen validation datum}
+
+The validation repository fixes an AME/NUBASE-derived working chart containing 3,558 evaluated nuclei. The primary target is binding energy per nucleon in keV/A. The frozen two-axis baseline constructs independent neutron-direction and proton-direction local reconstructions and combines them under declared uncertainty and abstention rules. It returns 3,514 predictions and 44 abstentions, giving 98.7634\% coverage \cite{atomicRelease,uamDraft}.
+
+The nuclear theorem interface uses the two directional response channels as a direct-sum observer rather than collapsing them before coherence is tested. Successive feature depths produce cross-fitted response bodies $p_1,p_2,p_3$. Define
+\[
+ q_2=p_2-p_1,
+ \qquad
+ q_3=p_3-p_2.
+\]
+For a held-out measured target $y$, define empirical tails
+\[
+ T_r=y-p_r.
+\]
+The target is not used to choose the prediction depth; it is used only after selection for validation.
+
+\subsection{Structural validation theorem}
+
+\begin{theorem}[Theorem 45A: nuclear bilateral and Smriti identity validation]\label{thm:t45wiring}
+On the frozen set of 3,558 evaluated nuclei, the generated nuclear adapter report satisfies:
+\begin{enumerate}[label=(\roman*)]
+\item the maximum bilateral neutron/proton reconstruction defect is
+\[
+ 1.8189894035458565\times10^{-12}\ \mathrm{keV/A};
+\]
+\item the maximum validation closure defect in
+\[
+ p_r+T_r=y
+\]
+is zero;
+\item the maximum correction-to-tail transfer defect in
+\[
+ T_2=T_1-q_2,
+ \qquad
+ T_3=T_2-q_3
+\]
+is zero;
+\item the predeclared target-free refinement rule classifies 2,578 nuclei as \texttt{CONTRACTIVE\_MEMORY} and 980 as \texttt{OPEN\_REFINEMENT}.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+This is a deterministic finite-data theorem. The identities are evaluated row by row by the frozen adapter and aggregated by maxima and counts. The generated report records the three maxima and the two exhaustive class counts. Re-running the pinned code and data reproduces the same report artefacts. The algebraic zero defects in (ii)--(iii) certify adapter wiring; the near-machine-zero value in (i) is a floating-point reconstruction tolerance, not an exact rational identity.
+\end{proof}
+
+\begin{remark}
+The theorem validates the adapter identities on the declared chart. It does not identify a fundamental nuclear generator or prove that the correction ratio is a physical observable.
+\end{remark}
+
+\subsection{Refinement behaviour}
+
+The held-out absolute tail decreases from level one to level two for approximately 73.27\% of nuclei and from level two to level three for approximately 80.83\%. Deeper observation therefore repairs the empirical tail in most, but not all, cases. The refinement classification is target-free; the monotonic tail statement is empirical and is reported rather than assumed.
+
+The strict V6 audit retains 3,370 predictions with MAE 5.9481 keV/A, but the retained values are exactly the same as the V5.1 predictions on those nuclei. The apparent improvement is entirely due to 144 additional abstentions. It is therefore a selective-risk result, not a new point predictor.
+
+The ratio $|q_3|/|q_2|$ is not promoted as an error score. Its correlation with absolute level-three error in the seam-stressed sector is approximately $2.7\times10^{-4}$, effectively zero. The level-three decoder burden is more informative, with correlation approximately 0.24, but that observation remains an empirical design clue rather than a universal theorem.
+
+\subsection{Guarded recognition repair}
+
+The Recognition Repair rule preserves the frozen 50 keV/A directional-disagreement boundary:
+\[
+\widehat y_{\mathrm{repair}}=
+\begin{cases}
+\text{abstain},&\text{if the frozen baseline abstains},\\
+\widehat y_{\UAM},&\text{if directional disagreement}\le50\ \mathrm{keV/A},\\
+\widehat y_{\RKF},&\text{if directional disagreement}>50\ \mathrm{keV/A}.
+\end{cases}
+\]
+The threshold was inherited from the frozen prospective guard and was not optimized over the Recognition Repair residuals.
+
+\begin{theorem}[Theorem 45B: same-coverage guarded decoder improvement]\label{thm:t45performance}
+On the frozen 3,558-nucleus chart, the Recognition Repair predictor and the frozen UAM-V4 baseline both retain 3,514 predictions. The repair changes the principal retained-set metrics as follows:
+\[
+\begin{array}{lccc}
+\toprule
+\text{Metric} & \text{UAM-V4} & \text{Recognition Repair} & \text{Change}\\
+\midrule
+\text{MAE (keV/A)} & 10.2147 & 7.5174 & -26.41\%\\
+\text{Median abs. residual (keV/A)} & 0.9894 & 0.9878 & -0.16\%\\
+\text{p95 abs. residual (keV/A)} & 36.9846 & 35.3138 & -4.52\%\\
+\text{p99 abs. residual (keV/A)} & 165.2220 & 100.7613 & -39.01\%\\
+\text{RMSE (keV/A)} & 54.7503 & 29.3292 & -46.43\%\\
+\text{Maximum abs. residual (keV/A)} & 1282.4164 & 794.3589 & -38.06\%\\
+\text{Residuals }\ge1000\ \text{keV/A} & 3 & 0 & \text{eliminated}\\
+\bottomrule
+\end{array}
+\]
+The generated report status is
+\[
+ \texttt{PASS\_EXPLORATORY\_RECOGNITION\_REPAIR\_BEATS\_FROZEN\_UAM\_V4\_SAME\_COVERAGE}.
+\]
+\end{theorem}
+
+\begin{proof}
+The result is obtained by deterministic evaluation of both frozen prediction vectors on the same retained set. Coverage equality follows from the rule preserving every baseline abstention and adding none. The displayed metrics are direct functions of the two residual vectors. The report and its hash are generated by the pinned validation workflow.
+\end{proof}
+
+\subsection{Why the sector split matters}
+
+There are 3,154 retained nuclei in the coherent sector, with directional disagreement at or below 50 keV/A. There the frozen local decoder is superior:
+\[
+ \mathrm{MAE}_{\UAM}=3.0685\ \mathrm{keV/A},
+ \qquad
+ \mathrm{MAE}_{\RKF}=9.4069\ \mathrm{keV/A}.
+\]
+There are 360 retained nuclei in the seam-stressed sector. There the cross-fitted RKF decoder is superior:
+\[
+ \mathrm{MAE}_{\UAM}=72.8236\ \mathrm{keV/A},
+ \qquad
+ \mathrm{MAE}_{\RKF}=46.4946\ \mathrm{keV/A}.
+\]
+The same observable that diagnoses loss of local directional coherence chooses the alternate decoder. The result is therefore a recognition-regime selection law, not a universal replacement of one model by another.
+
+\subsection{Baseline and external-model context}
+
+The frozen UAM-V4 result itself has MAE 10.2147 keV/A, compared with 30.6717 and 33.6621 keV/A for the neutron and proton axes separately, 27.2556 keV/A for an equal two-axis blend, 38.1164 keV/A for a leakage-safe local-neighbour mean, and 181.7699 keV/A for a deterministic five-fold out-of-fold semi-empirical mass-formula baseline.
+
+On 3,448 nuclei common to UAM-V4 and FRDM(2012), UAM-V4 has MAE 6.1442 keV/A versus 6.6248 keV/A for FRDM(2012), while FRDM has the better RMSE and extreme tail. This is a common-set historical comparison, not a temporally independent external validation.
+
+\subsection{Theorem 45 claim boundary}
+
+Theorem 45 establishes reproducible finite-data identities and same-coverage guarded performance on the frozen chart. It does not establish:
+\begin{enumerate}[label=(\roman*)]
+\item a fundamental nuclear Hamiltonian or unique physical cut;
+\item a universal improvement over established mass models;
+\item temporal validation on measurements released after model freezing;
+\item independence from all historical calibration choices;
+\item a physical interpretation of every Smriti tail or seam variable.
+\end{enumerate}
