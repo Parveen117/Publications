@@ -1,9 +1,14 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{11}
 
 \bibitem{atomicRelease}
 Monty Dabas.
 \newblock \emph{Atomic Validation Public: Guarded Two-Axis Nuclear Binding-Energy Reconstruction}.
 \newblock Zenodo, 2026. DOI: 10.5281/zenodo.21342540.
+
+\bibitem{aiTrustRelease}
+Monty Dabas.
+\newblock \emph{Artificial Intelligence Trust Enablement: Recognition-Residue Evaluation, Release Control, and Finality Certificates}.
+\newblock Version 1.0.2, Zenodo, 2026. DOI: 10.5281/zenodo.21300179.
 
 \bibitem{rkfRelease}
 Monty Dabas.

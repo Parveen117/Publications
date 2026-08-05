@@ -1,0 +1,153 @@
+\section{Third application: context-grounded AI hallucination control}
+
+The third adapter moves from physical response carriers to an information carrier. Its task is deliberately narrow: given a supplied reference context, a prompt, and a generated answer, decide whether the answer may be committed, should be reviewed, requires additional evidence, should be regenerated with retrieval, or must be blocked. The public implementation is deterministic and emits hash-addressed certificates \cite{aiTrustRelease}. It is not a standalone truth oracle and does not validate claims outside the supplied evidence.
+
+\subsection{Claim frames and the evidence carrier}
+
+Let $E$ be the supplied evidence text, $P$ the prompt, and $A$ the generated answer. The adapter decomposes $E$ into evidence frames $e_i$ and $A$ into claim frames $c_j$. A frame records the typed fields
+\[
+(\text{subject},\text{relation},\text{object},\text{quantity},\text{time},
+\text{location},\text{modality},\text{negation},\text{source}).
+\]
+Each answer claim is matched to the highest-scoring evidence frame by direct token agreement, field closure, analogy, and contradiction routes. The frozen implementation assigns classifications including
+\[
+\begin{aligned}
+&\texttt{SUPPORTED\_EXACT},\quad \texttt{SUPPORTED\_PARAPHRASE},\\
+&\texttt{SUPPORTED\_INFERRED},\quad \texttt{CONTRADICTED\_ENTITY},\\
+&\texttt{CONTRADICTED\_NUMBER},\quad \texttt{CONTRADICTED\_NEGATION},\\
+&\texttt{UNSUPPORTED\_RELATION},\quad \texttt{UNSUPPORTED\_SOURCE},\\
+&\texttt{UNSUPPORTED\_NO\_EVIDENCE},\quad \texttt{UNCERTAIN\_ROUTE\_CONFLICT}.
+\end{aligned}
+\]
+This separation matters: absent evidence is not silently relabelled as refutation, and a confirmed contradiction is not diluted into mere low similarity.
+
+\subsection{Support--contradiction cut}
+
+For matched claim $j$, let
+\[
+ x_j=(s_j,d_j,r_j)\in[0,1]^3,
+\]
+where $s_j$ is the total support-route score, $d_j$ is the contradiction score, and $r_j$ is the typed frame residue. Define
+\[
+ \boxed{J_{\mathrm{AI}}(s,d,r)=(d,s,r).}
+\]
+Then $J_{\mathrm{AI}}^2=I$. Its even and odd components are
+\[
+ x_{j,+}=\frac{x_j+J_{\mathrm{AI}}x_j}{2}
+ =\left(\frac{s_j+d_j}{2},\frac{s_j+d_j}{2},r_j\right),
+\]
+\[
+ x_{j,-}=\frac{x_j-J_{\mathrm{AI}}x_j}{2}
+ =\left(\frac{s_j-d_j}{2},-\frac{s_j-d_j}{2},0\right).
+\]
+The odd component records evidence polarity: positive orientation favours support and negative orientation favours contradiction. The third coordinate is fixed by the cut because unsupported or uncertain material is neither positive support nor confirmed refutation. It is carried as an open seam residue. This paper adds no new classifier parameter at this point; it reads the support, contradiction, and residue fields already present in the deterministic certificate into an explicit involutive carrier.
+
+For $m$ answer claims, the frame-level open residue is
+\[
+ R_{\mathrm{frame}}=\frac1m\sum_{j=1}^{m}r_j.
+\]
+The fusion certificate combines four frozen routes:
+\[
+ R_{\mathrm{fuse}}
+ =0.20R_{\mathrm{answer}}
+ +0.30R_{\mathrm{claim}}
+ +0.15R_{\mathrm{trace}}
+ +0.35R_{\mathrm{frame}}.
+\]
+Route agreement is computed from the dispersion of the four route risks. The final action belongs to
+\[
+\{\texttt{COMMIT},\texttt{REVIEW},\texttt{RETRIEVE\_MORE\_EVIDENCE},
+\texttt{REGENERATE\_WITH\_EVIDENCE},\texttt{BLOCK\_OUTPUT}\}.
+\]
+The weights and thresholds are frozen engineering choices, not universal mathematical constants.
+
+\subsection{Finite adversarial benchmark}
+
+The public proof pack fixes fifteen context-grounded cases before evaluation. They include hidden wrong times and gate numbers, an inserted unsupported facility, a negation flip, material and conversion-object contradictions, a wrong city, unsupported medical efficacy, a medical instruction negation, a confident answer with empty context, and an unsupported number appended to an otherwise correct answer. Each case declares an acceptable safe action family rather than insisting that only one conservative action can ever be lawful.
+
+\begin{proposition}[Frozen AI adversarial action audit]\label{prop:ai-adversarial}
+On the fifteen-case adversarial suite, the fusion engine returns an action inside the predeclared acceptable family for all fifteen cases. A naive token-overlap baseline succeeds on five of the fifteen. The frozen report status is
+\[
+ \texttt{ADVERSARIAL\_BENCHMARK=15/15},
+\]
+with summary hash
+\[
+ \texttt{e94c61740310f7f600bdb93e7463c3efaae7e69c40364daf028ca6b6f438b5f0}.
+\]
+\end{proposition}
+
+\begin{proof}
+The benchmark runner evaluates the same fixed context, prompt, answer, and expected action family for each case. The report records fifteen successful fusion decisions and five successful naive decisions. The associated manifest pins the case file, frame kernel, fusion engine, baseline script, generated reports, and the summary hash. This is a deterministic finite-case reproduction claim.
+\end{proof}
+
+Representative decisions are:
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.37\textwidth}>{\raggedright\arraybackslash}p{0.31\textwidth}>{\raggedright\arraybackslash}p{0.21\textwidth}}
+\toprule
+Failure pattern & Fusion classification & Action\\
+\midrule
+wrong time or gate number & confirmed numeric contradiction & block output\\
+negation flip & confirmed negation contradiction & block output\\
+wrong city & confirmed entity contradiction & block output\\
+unsupported inserted facility & bounded unsupported claim & review\\
+unsupported medical efficacy & bounded unsupported claim & review\\
+confident claim with empty context & high hallucination risk & regenerate with evidence\\
+partly correct answer with extra number & evidence insufficient & retrieve more evidence\\
+\bottomrule
+\end{tabular}
+\end{center}
+A separate ten-case baseline comparison records
+\[
+ \text{naive token baseline}=5/10,
+ \qquad
+ \text{fusion engine}=10/10.
+\]
+Its five gain cases are an unsupported added facility, wrong opening time, wrong conversion output, negation contradiction, and wrong location entity.
+
+\subsection{End-to-end repair and evidence ledger}
+
+The local proof pack tests more than first-pass detection. Its pinned pipeline is
+\[
+\begin{aligned}
+\text{answer}
+&\to\text{claim-frame verification}
+\to\text{fusion certificate}
+\to\text{repair certificate}\\
+&\to\text{evidence ledger}
+\to\text{retrieval resolution}.
+\end{aligned}
+\]
+The frozen report records:
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Layer & Result\\
+\midrule
+compile & pass\\
+smoke suite & $6/6$\\
+detection benchmark & $10/10$\\
+repair validation & $10/10$\\
+retrieval resolution & $3/3$\\
+evidence ledger & 16 entries, hash chain valid\\
+\bottomrule
+\end{tabular}
+\end{center}
+This is evidence that the architecture can preserve supported claims, block contradictions, route unsupported claims, repair from retrieved evidence, refuse without evidence, and seal the resulting decisions into a deterministic ledger. It is not evidence that the benchmark spans natural language, all domains, or current production-scale model behaviour.
+
+\subsection{Why the AI adapter strengthens the theorem architecture}
+
+The nuclear and electronic adapters show that a declared exchange can grade physical response or occupancy channels. The AI adapter shows the same governance pattern on an information carrier:
+\[
+\begin{aligned}
+\text{declared evidence channels}
+&\to\text{support/contradiction cut}
+\to\text{typed open residue}\\
+&\to\text{multi-route certificate}
+\to\text{guarded action}.
+\end{aligned}
+\]
+The useful commonality is not that nuclei, electrons, and language models share one Hamiltonian. They do not. It is that an observer may preserve opposed channels, refuse premature scalar collapse, expose an unresolved residue, and choose a fail-closed action before release.
+
+\subsection{AI validation claim boundary}
+
+The current evidence is a small, handcrafted, context-grounded benchmark. The answers are fixed test strings rather than an independently sampled stream from many live models. Success means that the emitted action belongs to a declared safe family; it is not an estimate of precision, recall, false-positive rate, calibration, or population hallucination frequency. The engine has no external truth oracle and cannot validate claims absent from the supplied evidence. Its rule weights and thresholds require domain-specific calibration, and adversarial robustness beyond the frozen cases remains open. A stronger next validation must freeze outputs from multiple named models on an independently authored benchmark, separate tuning and test sets, and report exact confusion matrices and selective-risk curves.
