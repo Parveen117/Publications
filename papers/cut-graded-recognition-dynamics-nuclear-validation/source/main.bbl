@@ -1,0 +1,53 @@
+\begin{thebibliography}{10}
+
+\bibitem{atomicRelease}
+Monty Dabas.
+\newblock \emph{Atomic Validation Public: Guarded Two-Axis Nuclear Binding-Energy Reconstruction}.
+\newblock Zenodo, 2026. DOI: 10.5281/zenodo.21342540.
+
+\bibitem{rkfRelease}
+Monty Dabas.
+\newblock \emph{Recognition Kernel Framework: Reviewer-Oriented Release}.
+\newblock Zenodo, 2026. DOI: 10.5281/zenodo.21760119.
+
+\bibitem{uamDraft}
+Monty Dabas.
+\newblock Guarded two-axis interpolation for nuclear binding energy per nucleon.
+\newblock Internal preprint manuscript in the Atomic Validation repository, 2026.
+
+\bibitem{douglas1966}
+Ronald G. Douglas.
+\newblock On majorization, factorization, and range inclusion of operators on Hilbert space.
+\newblock \emph{Proceedings of the American Mathematical Society}, 17(2):413--415, 1966.
+
+\bibitem{huang2021}
+W. J. Huang, M. Wang, F. G. Kondev, G. Audi, and S. Naimi.
+\newblock The AME 2020 atomic mass evaluation (I): Evaluation of input data, and adjustment procedures.
+\newblock \emph{Chinese Physics C}, 45:030002, 2021.
+
+\bibitem{wang2021}
+M. Wang, W. J. Huang, F. G. Kondev, G. Audi, and S. Naimi.
+\newblock The AME 2020 atomic mass evaluation (II): Tables, graphs and references.
+\newblock \emph{Chinese Physics C}, 45:030003, 2021.
+
+\bibitem{kondev2021}
+F. G. Kondev, M. Wang, W. J. Huang, S. Naimi, and G. Audi.
+\newblock The NUBASE2020 evaluation of nuclear physics properties.
+\newblock \emph{Chinese Physics C}, 45:030001, 2021.
+
+\bibitem{moller2016}
+P. M\"oller, A. J. Sierk, T. Ichikawa, and H. Sagawa.
+\newblock Nuclear ground-state masses and deformations: FRDM(2012).
+\newblock \emph{Atomic Data and Nuclear Data Tables}, 109--110:1--204, 2016.
+
+\bibitem{higham2008}
+Nicholas J. Higham.
+\newblock \emph{Functions of Matrices: Theory and Computation}.
+\newblock SIAM, 2008.
+
+\bibitem{reedsimon1}
+Michael Reed and Barry Simon.
+\newblock \emph{Methods of Modern Mathematical Physics, Volume I: Functional Analysis}.
+\newblock Academic Press, 1980.
+
+\end{thebibliography}
