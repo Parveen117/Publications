@@ -1,10 +1,10 @@
-# Cut-Graded Recognition Dynamics and Nuclear Validation
+# Cut-Graded Recognition Dynamics with Nuclear and Atomic Validation
 
-Stage-I arXiv manuscript source for the theorem-capstone paper built from Recognition Kernel Framework Theorems 41--45, the operator and positive-metric cut-square theorems, and the frozen Atomic Validation package.
+Stage-II arXiv manuscript source for a theorem-governed recognition architecture with separate nuclear and electronic validation domains.
 
 ## Canonical title
 
-**Cut-Graded Recognition Dynamics and Nuclear Validation: Universal Generators, Bilateral Jet Flows, Madhava--Smriti Closure, Cut-Square Coherence, and Guarded Atomic Response**
+**Cut-Graded Recognition Dynamics with Nuclear and Atomic Validation: Bilateral Flows, Covariant Response Jets, Typed Refinement, and Guarded Decoding**
 
 Author: Monty Dabas  
 ORCID: 0009-0005-6948-209X
@@ -19,24 +19,27 @@ pdflatex main.tex
 
 A compiled `main.bbl` is included, so BibTeX is not required for the arXiv source bundle.
 
-## Stage-I coverage
+## Stage-II coverage
 
-- rigorous statements and proofs for Theorems 41--44;
-- explicit separation of the two cut-square identities;
-- Theorem 45 as the frozen nuclear adapter and validation theorem;
-- exact certificate fixtures and source hashes;
-- full-chart V6 structural validation;
-- V5.1 same-coverage prediction result;
-- negative controls and claim boundary.
+- foundational cut-graded generator and covariant response-tower theorems;
+- bilateral jet reconstruction as a capstone synthesis rather than a duplicate foundation;
+- typed refinement ledger with definitional closure clearly separated from physical evidence;
+- explicit separation of operator and positive-metric cut-square identities;
+- plain-language core summary and standard-terminology crosswalk;
+- nuclear cut defined as neutron/proton response-axis exchange;
+- 3,558-nucleus implementation audit and V5.1 same-coverage validation result;
+- conditional derivation of the 118-position periodic skeleton;
+- frozen NIST H-U configuration audit with 75 exact matches and 17 charge-conserving residues;
+- explicit negative controls, abstention boundaries, and open comparison gates.
 
 ## Validation
 
-The Stage-I source compiled through three pdfLaTeX passes to a 21-page A4 manuscript. The build has no undefined references, no undefined citations, and no overfull boxes. Rendered pages were inspected for clipping, overlap, and broken glyphs.
+The revised source compiled through three pdfLaTeX passes to a 27-page A4 manuscript. The build has no undefined references, no undefined citations, and no overfull boxes. Rendered pages were inspected for clipping, overlap, broken glyphs, and table overflow.
 
 ## Next manuscript stages
 
-1. theorem-by-theorem literature and originality audit;
-2. expansion of the unbounded-domain appendix;
-3. full V4/V5.1/V6 method and leakage-control specification;
-4. tables and figures imported from frozen report artefacts;
-5. journal/arXiv metadata, source manifest, and final reproducibility appendix.
+1. direct common-support V5.1 comparison against FRDM and additional frozen mass models;
+2. theorem-by-theorem literature and originality audit;
+3. expansion of the unbounded-domain appendix;
+4. full V4/V5.1/V6 method and leakage-control specification;
+5. frozen figures, arXiv metadata, source manifest, and final reproducibility appendix.
