@@ -1,4 +1,4 @@
-\section{Reader contract, source discipline, and theorem map}
+\section{Reader contract, core idea, and source discipline}
 
 This paper assembles theorem capsules developed in the public Recognition Kernel Framework repository with deterministic adapters developed in the public Atomic Validation repository \cite{rkfRelease,atomicRelease}. The manuscript is not a retrospective relabelling of numerical observations. Its audit order is
 \[
@@ -7,33 +7,64 @@ This paper assembles theorem capsules developed in the public Recognition Kernel
 \]
 A later object is never used to redefine an earlier datum after the residual has been inspected.
 
-\subsection{The five-result architecture}
+\subsection{Core idea in plain language}
 
-The paper preserves the development numbering used by the source programme.
+The construction begins with a system that has two declared sectors. A self-adjoint involution $J$ labels those sectors. Every generator $G$ then splits uniquely into an even part that acts within the sectors and an odd part that transports between them. When the generator is purely odd, forward and backward evolution are related by conjugation with $J$.
 
-\begin{description}[leftmargin=3.6em,style=nextline]
-\item[Theorem 41.] Certified cut-graded universal generator theorem.
-\item[Theorem 42.] Cut-graded lambda-Jacobian tower and thermodynamic recognition theorem.
-\item[Theorem 43.] Bilateral jet-flow recognition capstone theorem.
-\item[Theorem 44.] Madhava--Smriti bilateral jet-flow closure theorem.
-\item[Theorem 45.] Frozen nuclear recognition adapter and validation theorem.
+Measurements of the evolving system are organized by derivative order. The zeroth-order measurement records the observed value, the first records its first response, and higher orders record progressively finer response information. Stacking these measurements can shrink the set of states invisible to the observer. For a declared target, the first derivative order that removes every target-relevant blind direction is its first recognition order.
+
+A finite derivative expansion leaves a tail. The paper records that tail in the same typed carrier as the observed flow and tracks exactly how one additional derivative term moves from the tail into the finite approximation. In the nuclear adapter, the two sectors are the neutron-direction and proton-direction response channels. Their average is the cut-even channel and their disagreement is the cut-odd channel. The disagreement is then used as a predeclared regime coordinate for choosing between two frozen decoders.
+
+\subsection{Terminology crosswalk}
+
+Framework terminology is always paired with its standard mathematical carrier:
+\begin{center}
+\begin{tabular}{p{0.28\textwidth}p{0.62\textwidth}}
+\toprule
+Framework term & Standard mathematical meaning\\
+\midrule
+cut & self-adjoint unitary involution or declared channel-exchange map\\
+cut-even / cut-odd & $+1$ and $-1$ eigensectors of conjugation by the involution\\
+seam curvature & the commutator coefficient $[G_{\mathrm e},G_{\mathrm o}]$ in the logarithmic cut loop\\
+clock-free Eye & the all-time fixed subspace, or zero-spectral projector, of a unitary flow\\
+Smriti tail & a typed remainder or residual ledger with a fixed sign and carrier\\
+recognition kernel & kernel of the stacked observer, optionally quotiented by target-null directions\\
+decoder burden & squared norm of the minimum decoder, equivalently a range-factorization constant\\
+\bottomrule
+\end{tabular}
+\end{center}
+The Sanskrit-derived names are mnemonic labels, not claims that standard operator theory has been replaced or historically rediscovered.
+
+\subsection{Dependency architecture rather than four independent discoveries}
+
+The paper preserves source numbers 41--44 for traceability, but does not present them as four unrelated discoveries:
+\begin{description}[leftmargin=3.8em,style=nextline]
+\item[Theorem 41.] Foundational cut-graded generator and bilateral-flow theorem.
+\item[Theorem 42.] Foundational covariant response-tower theorem.
+\item[Theorem 43.] Capstone synthesis of the first two results, adding the observed-flow remainder and first-recognition order.
+\item[Theorem 44.] Refinement-ledger theorem and consequences for the typed tail; its elementary closure identities are distinguished from its structural use.
+\item[Finite-data results.] Reproducible nuclear and electronic adapters, reported separately from the abstract theorems.
 \end{description}
 
-Theorem 45 is distinguished from the first four results. Theorems 41--44 are operator and response-theoretic statements. Theorem 45 is a deterministic validation theorem on a fixed dataset, fixed code path, fixed guards, and fixed report artefacts. Calling both kinds of statement ``theorems'' does not erase their different hypotheses.
+This hierarchy matters. Bilateral conjugacy inherited by Theorem 43 is not counted as a second proof of Theorem 41, and an identity that follows from defining a tail as $F-M_r$ is treated as implementation structure rather than independent physical evidence.
 
 \subsection{Three levels of evidence}
 
 \begin{enumerate}[label=\textbf{E\arabic*.},leftmargin=2.7em]
 \item \textbf{Formal proof.} Operator identities are proved from stated Hilbert-space, cut, domain, and boundedness hypotheses.
 \item \textbf{Exact finite certificate.} Rational fixtures verify theorem wiring, negative controls, and finite-rank consequences without floating-point fitting.
-\item \textbf{Empirical validation.} Frozen nuclear data test the adapter, guards, coverage, residuals, subgroup behaviour, and decoder selection.
+\item \textbf{Empirical validation.} Frozen nuclear and electronic data test adapters, guards, coverage, residuals, subgroup behaviour, and decoder selection.
 \end{enumerate}
 
 An exact certificate is not empirical evidence for a physical identification. An empirical improvement is not a proof of an operator theorem. Their value lies in meeting at a typed interface.
 
+\subsection{Novelty boundary}
+
+Several ingredients are classical or standard: involutive gradings, functional calculus for exponentials, Taylor remainders, covariant jets, Lagrange's identity, and Hilbert-space range factorization. The claimed contribution is their fail-closed integration into one target-relative architecture, together with explicit finite certificates and two physically different adapters. Novelty is therefore asserted at the level of the composed recognition interface, theorem governance, and validated adapter design, not by renaming each classical identity.
+
 \subsection{Claim discipline}
 
-The paper does not claim that one physical generator has been derived for all systems, that the algebraic cut is uniquely nuclear, that every residual is memory, or that a cross-fitted historical validation is a future prediction. The source data support a narrower result: a cut-graded recognition architecture has exact finite realizations and a guarded nuclear adapter whose declared identities and performance metrics are reproducible.
+The paper does not claim that one physical generator has been derived for all systems, that the algebraic cut is uniquely nuclear, that every residual is memory, or that a cross-fitted historical validation is a future prediction. The source data support a narrower result: a cut-graded recognition architecture has exact finite realizations and guarded adapters whose declared identities and performance metrics are reproducible.
 
 \section{Native notation and admissibility hypotheses}
 
