@@ -1,0 +1,143 @@
+\section{Theorem 42: the cut-graded response tower}
+
+\subsection{Typed covariant layers}
+
+Let $M$ be a smooth manifold, $E\to M$ a finite-rank response bundle, $\nabla$ a connection on $E$, and $\Lambda\in\Gamma(E)$ a smooth response section. Define
+\[
+ L_1=\Lambda,
+ \qquad
+ L_{n+1}=\nabla L_n.
+\]
+Then
+\[
+ L_n\in\Gamma\left(E\otimes(T^*M)^{\otimes(n-1)}\right).
+\]
+
+\begin{theorem}[Theorem 42A: typed lambda-Jacobian tower]\label{thm:t42tower}
+The recursion above defines a unique covariant derivative tower. In a flat chart,
+\[
+ L_n=D^{n-1}\Lambda.
+\]
+If $\Lambda$ is polynomial of degree $d$ in that chart, then $L_n=0$ for $n>d+1$. Whenever the series converges in a declared completed tensor topology,
+\[
+ \mathcal T_t\Lambda
+ =\sum_{k=0}^\infty\frac{t^k}{k!}\nabla^k\Lambda
+\]
+has the response layers as Taylor coefficients.
+\end{theorem}
+
+\begin{proof}
+A connection extends uniquely to tensor products by the Leibniz rule. Iteration gives the stated carrier at every order. Flat-chart and polynomial statements follow from ordinary differentiation. The generating series is the exponential series of the raising operator on the completed graded direct sum.
+\end{proof}
+
+\subsection{Induced cut on every derivative order}
+
+Let $j:M\to M$ be an involution and $J_E:E\to E$ an involutive bundle map covering $j$. Assume cut covariance of the connection. On the $n$th layer define
+\[
+ \mathbb J_n=J_E\otimes(j^*)^{\otimes(n-1)}.
+\]
+
+\begin{theorem}[Theorem 42B: cut-graded tower]\label{thm:t42grading}
+Every layer has the unique splitting
+\[
+ L_n=L_n^++L_n^- ,
+ \qquad
+ L_n^\pm=\frac12(L_n\pm\mathbb J_nL_n),
+\]
+with
+\[
+ \mathbb J_nL_n^+=L_n^+,
+ \qquad
+ \mathbb J_nL_n^-=-L_n^-.
+\]
+If $\Lambda(jx)=J_E\Lambda(x)$, then every derivative layer satisfies the induced parity selection rule obtained by differentiating the equivariance identity.
+\end{theorem}
+
+\begin{proof}
+The maps $(I\pm\mathbb J_n)/2$ are the spectral projections of an involution. Repeated differentiation of the equivariance relation and the chain rule give the derivative covariance.
+\end{proof}
+
+\subsection{The Jacobian is bi-graded, not automatically skew}
+
+Assume locally that source and response fibres have the same finite dimension and write $A=D\Lambda(x)$. Define commuting involutions
+\[
+ \mathcal C(A)=JAJ,
+ \qquad
+ \mathcal T(A)=A^{\mathsf T}.
+\]
+For $\sigma,\tau\in\{\pm1\}$ put
+\[
+ A^{\sigma,\tau}
+ =\frac14\left(A+\sigma JAJ+\tau A^{\mathsf T}
+ +\sigma\tau JA^{\mathsf T}J\right).
+\]
+
+\begin{theorem}[Theorem 42C: cut/transpose bi-grading]
+One has
+\[
+ A=\sum_{\sigma,\tau\in\{\pm1\}}A^{\sigma,\tau},
+\]
+\[
+ JA^{\sigma,\tau}J=\sigma A^{\sigma,\tau},
+ \qquad
+ (A^{\sigma,\tau})^{\mathsf T}=\tau A^{\sigma,\tau}.
+\]
+Consequently, ordinary antisymmetry $A^{\mathsf T}=-A$ is equivalent to the vanishing of both transpose-even sectors. It is not implied by the existence of a thermodynamic compass or a visual four-cycle.
+\end{theorem}
+
+\begin{proof}
+The two involutions commute and square to the identity. The displayed formula is their joint spectral-projection formula.
+\end{proof}
+
+\subsection{Connection curvature and cut-loop curvature}
+
+On a two-parameter protocol chart $(s,t)$ consider the constant connection one-form
+\[
+ \mathcal A=\Ge\,ds+\Go\,dt.
+\]
+Its mixed curvature is
+\[
+ \mathcal F_{st}=[\Ge,\Go].
+\]
+By \cref{thm:t41loop}, the same commutator is the quadratic logarithmic cut-loop coefficient.
+
+\begin{corollary}[Theorem 42D: cut-loop/connection identity]
+For the constant cut-graded connection,
+\[
+ [t^2]\log\mathscr H_J(t)=\mathcal F_{st}.
+\]
+\end{corollary}
+
+The abstract equality does not identify $\mathcal F_{st}$ with an experimentally measured thermodynamic or nuclear curvature. A physical adapter must still prove the carrier map and unit calibration.
+
+\subsection{Tower observers and monotone repair}
+
+Let $V$ be a finite-dimensional perturbation space. At each order let $Q_nL_n:V\to Y_n$ be the declared measurable packet and define
+\[
+ \Aobs_Nv=(Q_1L_1v,\ldots,Q_NL_Nv).
+\]
+For a target $\Pi:V\to Z$, define
+\[
+ \mathfrak B_N=\frac{\Ker\Aobs_N}{\Ker\Aobs_N\cap\Ker\Pi}.
+\]
+
+\begin{theorem}[Theorem 42E: tower monotonicity and target repair]\label{thm:t42monotone}
+The recognition kernels are nested:
+\[
+ \Ker\Aobs_{N+1}\subseteq\Ker\Aobs_N.
+\]
+A higher layer repairs a target-relevant blind direction precisely when the inclusion becomes strict after passage to the target-relevant quotient. For a scalar target $L$, define
+\[
+ \beta_N(L)=\sup_{\Aobs_Nv\ne0}
+ \frac{|L(v)|^2}{\|\Aobs_Nv\|^2}.
+\]
+Whenever finite, the minimum decoder exists and
+\[
+ \Aobs_N^*\Aobs_N-L^*L\ge0
+ \iff \beta_N(L)\le1.
+\]
+\end{theorem}
+
+\begin{proof}
+Adding an observer component can only shrink the common kernel. The quotient statement is the definition of target-relevant strict repair. The burden criterion is the bounded factorization theorem applied to the direct-sum observer; see also Douglas' range-inclusion theorem \cite{douglas1966}.
+\end{proof}
