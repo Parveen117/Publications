@@ -1,0 +1,31 @@
+{
+  "project": "when-thermodynamic-response-spectra-forget-order",
+  "title": "When Thermodynamic Response Spectra Forget Order: Constitutive Blindness, Cut-Square Coherence, and Minimal Observer Lifts",
+  "author": "Monty Dabas",
+  "orcid": "0009-0005-6948-209X",
+  "status": "INITIAL_SUBSTANTIVE_DRAFT",
+  "canonical_source": "source/main.tex",
+  "companion_foundations": [
+    "When Spectra Forget Order",
+    "Stable Recovery Beyond Spectral Blindness",
+    "Geometric Completion of Thermodynamic Response"
+  ],
+  "current_modules": [
+    "typed_response_fibre",
+    "ordered_endpoint_spectral_shadow",
+    "exact_spectral_blindness",
+    "connected_order_channel",
+    "metric_marked_recovery",
+    "thermodynamic_cut_square",
+    "degree_five_50_45_5_specialization",
+    "target_relative_minimal_lift",
+    "endpoint_history_boundary"
+  ],
+  "next_required_development": [
+    "physical_response_generator_interface",
+    "symmetry_constrained_thermodynamic_marker_bank",
+    "continuous_time_response_limit",
+    "experimental_protocol_section"
+  ],
+  "claim_status": "FINITE_TYPED_THERMODYNAMIC_OBSERVATION_THEORY_ONLY"
+}
