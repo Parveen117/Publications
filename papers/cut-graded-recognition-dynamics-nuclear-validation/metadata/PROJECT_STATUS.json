@@ -1,11 +1,11 @@
 {
   "project": "cut-graded-recognition-dynamics-nuclear-validation",
-  "title": "Cut-Graded Recognition Dynamics with Nuclear and Atomic Validation: Bilateral Flows, Covariant Response Jets, Typed Refinement, and Guarded Decoding",
+  "title": "Cut-Graded Recognition Dynamics with Nuclear, Atomic, and AI Validation: Bilateral Flows, Covariant Response Jets, Typed Refinement, and Guarded Decoding",
   "author": "Monty Dabas",
   "orcid": "0009-0005-6948-209X",
-  "stage": "STAGE_II_REVIEW_CRITICISM_INTEGRATED",
+  "stage": "STAGE_III_AI_HALLUCINATION_EVIDENCE_INTEGRATED",
   "canonical_source": "source/main.tex",
-  "compiled_pages": 27,
+  "compiled_pages": 31,
   "theorem_spine": [
     "Theorem 41: foundational cut-graded generator and bilateral flow",
     "Theorem 42: foundational covariant response tower",
@@ -18,25 +18,27 @@
     "V5.1 same-coverage guarded decoder result",
     "UAM-V4 versus FRDM2012 common-set context",
     "118-position periodic skeleton conditional derivation",
-    "NIST H-U 92-atom ground-configuration residue audit"
+    "NIST H-U 92-atom ground-configuration residue audit",
+    "15-case context-grounded AI adversarial action audit",
+    "10-case AI fusion versus naive-token comparison",
+    "AI repair, retrieval-resolution, and 16-entry evidence-ledger proof pack"
   ],
-  "review_repairs": [
-    "plain-language core idea added",
-    "standard terminology crosswalk added",
-    "novelty boundary made explicit",
-    "nuclear cut physically defined on response fibre",
-    "finite-data theorem language demoted to propositions",
-    "definitional zero defects labelled implementation checks",
-    "direct V5.1 mass-model comparison marked open",
-    "second atomic validation domain added"
-  ],
+  "ai_evidence": {
+    "source_commit": "0dec55bdfd9d00764526bd2a6b44f3a96ea8ebe9",
+    "adversarial_summary_hash": "e94c61740310f7f600bdb93e7463c3efaae7e69c40364daf028ca6b6f438b5f0",
+    "fusion_adversarial": "15/15",
+    "naive_adversarial": "5/15",
+    "fusion_baseline": "10/10",
+    "naive_baseline": "5/10",
+    "claim_boundary": "fixed handcrafted context-grounded cases; not a truth oracle or population hallucination estimate"
+  },
   "compile_status": "PASS_PDFLATEX_THREE_PASSES",
-  "layout_status": "PASS_RENDER_INSPECTION_NO_OVERFULL_BOXES",
+  "layout_status": "PASS_RENDER_INSPECTION_NO_WARNINGS_OR_OVERFULL_BOXES",
   "next_stage": [
+    "independently authored multi-model AI benchmark",
     "direct common-support V5.1 external-model benchmark",
     "literature and originality audit",
     "unbounded-domain appendix",
-    "full V4/V5.1/V6 method and leakage specification",
     "frozen figures and arXiv source manifest"
   ]
 }
