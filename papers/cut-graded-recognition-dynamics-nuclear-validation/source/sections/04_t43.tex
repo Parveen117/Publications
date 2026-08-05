@@ -1,0 +1,144 @@
+\section{Theorem 43: bilateral jet-flow recognition capstone}
+
+Assume
+\[
+ JGJ=-G,
+ \qquad BJ=B.
+\]
+Define observer jets
+\[
+ \Lambda_k=BG^k,
+ \qquad k\ge0,
+\]
+and the finite jet observer
+\[
+ \Aobs_Nx=(\Lambda_0x,\ldots,\Lambda_Nx).
+\]
+
+\subsection{Bilateral conjugacy and parity ladder}
+
+\begin{theorem}[Theorem 43A: bilateral observer conjugacy]
+The forward and backward strands
+\[
+ S_+(t)=BU_t,
+ \qquad
+ S_-(t)=BU_{-t}
+\]
+satisfy
+\[
+ BJU_tJ=BU_{-t}.
+\]
+Moreover,
+\[
+ \Lambda_kJ=(-1)^k\Lambda_k.
+\]
+Thus even observer jets are cut even and odd observer jets are cut odd.
+\end{theorem}
+
+\begin{proof}
+The first statement follows from \cref{thm:t41bilateral} and $BJ=B$. From $JGJ=-G$ one obtains $GJ=-JG$, hence $G^kJ=(-1)^kJG^k$. Left multiplication by $B$ gives the parity ladder.
+\end{proof}
+
+\subsection{Finite reconstruction and exact remainder}
+
+\begin{theorem}[Theorem 43B: observed-flow jet formula]\label{thm:t43remainder}
+For every integer $N\ge0$ and $t\ge0$,
+\[
+ BU_t=\sum_{k=0}^N\frac{t^k}{k!}\Lambda_k+R_{N+1}(t),
+\]
+where
+\[
+ R_{N+1}(t)=\frac1{N!}\int_0^t(t-s)^NBG^{N+1}U_s\,ds.
+\]
+Consequently,
+\[
+ \|R_{N+1}(t)\|
+ \le\frac{t^{N+1}}{(N+1)!}\|B\|\,\|G\|^{N+1}e^{t\|G\|}.
+\]
+If $G^{d+1}=0$, the order-$d$ jet reconstructs the observed flow exactly.
+\end{theorem}
+
+\begin{proof}
+Apply Taylor's formula with integral remainder to the bounded operator exponential and left-compose with $B$. The norm estimate follows from $\|e^{sG}\|\le e^{s\|G\|}$. Nilpotence kills every term beyond degree $d$.
+\end{proof}
+
+Define
+\[
+ S_{\mathrm e}(t)=\frac12(S_+(t)+S_-(t)),
+ \qquad
+ S_{\mathrm o}(t)=\frac12(S_+(t)-S_-(t)).
+\]
+Adding and subtracting the two exponential series gives
+\[
+ S_{\mathrm e}(t)=\sum_{m\ge0}\frac{t^{2m}}{(2m)!}\Lambda_{2m},
+\]
+\[
+ S_{\mathrm o}(t)=\sum_{m\ge0}\frac{t^{2m+1}}{(2m+1)!}\Lambda_{2m+1}.
+\]
+
+\subsection{First recognition order and burden}
+
+Let $K_N=\Ker\Aobs_N$.
+
+\begin{theorem}[Theorem 43C: first recognition order]
+The kernels satisfy $K_{N+1}\subseteq K_N$. For a scalar target $L$, define
+\[
+ \nu(L)=\inf\{N:K_N\subseteq\Ker L\}.
+\]
+If $\nu(L)=r<\infty$, then the target is blind through order $r-1$ and repaired at order $r$.
+\end{theorem}
+
+\begin{proof}
+The observer $\Aobs_{N+1}$ contains all components of $\Aobs_N$ plus one more, so its kernel can only shrink. The remaining statement is the definition of the first order at which every blind direction is target-null.
+\end{proof}
+
+Whenever
+\[
+ \beta_N(L)=\sup_{\Aobs_Nx\ne0}\frac{|Lx|^2}{\|\Aobs_Nx\|^2}
+\]
+is finite, there is a unique minimum-norm decoder on the closed response range, and
+\[
+ \Aobs_N^*\Aobs_N-L^*L\ge0
+ \iff \beta_N(L)\le1.
+\]
+Visibility and admissible burden are separate gates: a target can become visible while still requiring a decoder of norm greater than one.
+
+\subsection{Observed seam curvature and fail-closed states}
+
+For a general generator $G=\Ge+\Go$,
+\[
+ [t^2]B\log\mathscr H_J(t)=B[\Ge,\Go].
+\]
+This is the abstract observed curvature channel. It becomes a nuclear or thermodynamic curvature only after an adapter identifies $B$, the physical carrier, and units.
+
+The capstone classification is ordered as follows:
+\begin{description}[leftmargin=3.2em,style=nextline]
+\item[OPEN\_SEAM] bilateral covariance fails;
+\item[ABSTAIN] the target remains blind or no bounded decoder exists;
+\item[BURDEN\_EXCEEDS\_ONE] the target is visible but $\beta_N(L)>1$;
+\item[HIGHER\_LAYER\_REPAIR] a higher jet first repairs the target and $\beta_N(L)\le1$;
+\item[CLOSED] bilateral covariance holds, the target is visible, and the burden is at most one.
+\end{description}
+
+\subsection{Exact rational fixture}
+
+The canonical finite certificate uses
+\[
+ J=\operatorname{diag}(1,-1,1,-1),
+\quad
+ G=\begin{pmatrix}
+0&1&0&0\\0&0&1&0\\0&0&0&1\\0&0&0&0
+\end{pmatrix},
+\quad B=(1,0,0,0).
+\]
+Then $G^4=0$ and
+\[
+ BG^0=e_1^*,\ BG=e_2^*,\ BG^2=e_3^*,\ BG^3=e_4^*.
+\]
+The observer ranks are $1,2,3,4$, while the kernel dimensions are $3,2,1,0$. For $L=\frac12e_4^*$, the target is blind through order two and repaired at order three with
+\[
+ \beta_3(L)=\frac14,
+ \qquad
+ 1-\beta_3(L)=\frac34.
+\]
+This fixture verifies the theorem interface exactly; it is not asserted to be the physical nuclear state space.
