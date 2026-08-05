@@ -1,0 +1,128 @@
+\section{Secondary atomic-domain validation: periodic skeleton and ground-state residue ledger}
+
+The nuclear binding-energy adapter is not the only finite realization of the framework. A separate electronic adapter tests whether the same governance principles survive on a different carrier: subshell occupancies rather than nuclear mass-response jets. This section is intentionally separated from the nuclear predictor. It does not claim that the mass model derives the periodic table.
+
+\subsection{Conditional derivation of the 118-position skeleton}
+
+For a neutral atom of atomic number $Z$, assume the standard one-electron labels $(n,\ell,m_\ell,m_s)$, Pauli occupancy, neutral electron count, and the declared Madelung order obtained by lexicographically ordering $(n+\ell,n)$. For a subshell of orbital index $\ell$, the magnetic quantum number has $2\ell+1$ values and each spatial state has two spin states. Hence
+\[
+ c_\ell=2(2\ell+1),
+\]
+so
+\[
+ s:2,\qquad p:6,\qquad d:10,\qquad f:14.
+\]
+For principal shell $n$,
+\[
+ C_n=\sum_{\ell=0}^{n-1}2(2\ell+1)=2n^2.
+\]
+Under the declared Madelung ordering, the generated period lengths through the present table are
+\[
+ \boxed{2,8,8,18,18,32,32},
+\]
+with cumulative closures
+\[
+ \boxed{2,10,18,36,54,86,118}.
+\]
+The block counts are
+\[
+ \boxed{14\ s+36\ p+40\ d+28\ f=118}.
+\]
+The deterministic certificate checks all 118 positions, neutrality, occupancy bounds, period closures, block counts, the H--Og symbol spine, and negative controls for duplicated quantum states, shell overflow, invalid quantum labels, and reordered subshell lists \cite{atomicRelease}.
+
+This is a conditional counting derivation. Pauli capacity and the declared Madelung order imply the skeleton; the many-electron Hamiltonian has not been proved to imply the Madelung order.
+
+\subsection{Electron--hole cut}
+
+For subshell capacity $c$ and occupancy $q$, define
+\[
+ J_c(q)=c-q.
+\]
+Then $J_c^2=I$ and
+\[
+ q_+=\frac{q+J_c(q)}2=\frac c2,
+ \qquad
+ q_-=\frac{q-J_c(q)}2=q-\frac c2.
+\]
+This gives the cut a direct electronic meaning. It exchanges electrons and holes within a declared subshell. A half-filled subshell is fixed by the cut, while a full subshell is exchanged with the empty subshell. The construction is mathematically exact on occupancy space; it is not yet an energy theorem.
+
+\begin{proposition}[Periodic-skeleton certificate]
+Given the stated one-electron labels, Pauli occupancy, neutral closure, and declared Madelung ordering, the generated electronic grammar produces the 118-position period/block/group skeleton with the capacities and closures displayed above. The frozen certificate status is
+\[
+ \texttt{PASS\_RKF\_PERIODIC\_TABLE\_SKELETON\_V1}.
+\]
+\end{proposition}
+
+\subsection{NIST H--U ground-state residue audit}
+
+Let $M_Z(a)$ be the V1 Madelung occupancy of subshell $a$, and let $N_Z(a)$ be the frozen NIST neutral ground-state occupancy for atomic number $Z$. Define
+\[
+ \Sigma_Z(a)=N_Z(a)-M_Z(a).
+\]
+The identity
+\[
+ M_Z+\Sigma_Z=N_Z
+\]
+is definitional and serves as an implementation check. Its physical content lies not in the zero closure defect, but in the observed support, size, direction, and frequency of the residues relative to the frozen NIST configurations.
+
+For the 92 audited neutral atoms from hydrogen through uranium:
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Classification & Count\\
+\midrule
+Exact Madelung occupancy matches & 75\\
+Nonzero promotion residues & 17\\
+One-electron promotions & 15\\
+Two-electron promotions & 2\\
+Total promoted electrons & 19\\
+$s\to d$ promotion family & 10\\
+$f\to d$ promotion family & 7\\
+\bottomrule
+\end{tabular}
+\end{center}
+The exception sequence is
+\[
+\mathrm{Cr,Cu,Nb,Mo,Ru,Rh,Pd,Ag,La,Ce,Gd,Pt,Au,Ac,Th,Pa,U}.
+\]
+The two double promotions occur for Pd and Th. Seven promotions terminate at a half-filled or full inner subshell, but ten do not. The familiar half-filled/full-subshell slogan is therefore recorded as a real structural subset rather than promoted to a universal explanation.
+
+\subsection{Donor--acceptor cut and source boundary}
+
+Every nonzero V2A residue has one donor and one acceptor subshell and can be written
+\[
+ \Sigma_Z=k(e_b-e_a).
+\]
+Let $J_{a,b}$ exchange those active channels. Then
+\[
+ J_{a,b}\Sigma_Z=-\Sigma_Z.
+\]
+Thus all 17 nonzero frozen residues are cut odd under their donor--acceptor exchange. Electron number is conserved:
+\[
+ \sum_a\Sigma_Z(a)=0.
+\]
+The frozen NIST source covers H through U. The 26 elements with $93\le Z\le118$ are retained in the 118-position skeleton but assigned
+\[
+ \texttt{ABSTAIN\_SUPERHEAVY\_OUTSIDE\_NIST\_H\_U\_SOURCE}.
+\]
+This is a provenance boundary, not a claim that superheavy configurations are unknowable.
+
+\begin{proposition}[Finite atomic ground-state audit]
+Relative to the declared Madelung skeleton and frozen NIST H--U configuration table, 75 of 92 occupancies match exactly and 17 have finite charge-conserving donor--acceptor residues. All 17 nonzero residues are cut odd under active-channel exchange. The frozen certificate status is
+\[
+ \texttt{PASS\_RKF\_PERIODIC\_GROUND\_STATE\_SMRITI\_LEDGER\_V2A}.
+\]
+\end{proposition}
+
+\subsection{What this second domain validates}
+
+The electronic adapter gives the cut an explicit electron--hole and donor--acceptor interpretation, while the nuclear adapter gives it a neutron/proton response-axis interpretation. Their common structure is not a shared physical Hamiltonian. It is a shared recognition pattern:
+\[
+\text{declared exchange}\to\text{even/odd coordinates}\to
+\text{typed residue}\to\text{source-bounded validation}.
+\]
+The second domain therefore supports portability of the architecture. It does not prove that one universal operator governs nuclear masses and electronic configurations.
+
+\subsection{Atomic validation claim boundary}
+
+The current periodic results do not derive Madelung order from the many-electron Hamiltonian, predict promotion energies, resolve superheavy configurations, or derive chemical bonding and reactivity. A stronger V3 validation would require a leave-one-period or leave-one-block-out model that predicts whether $\Sigma_Z$ vanishes without reading the held-out ground-configuration label.
