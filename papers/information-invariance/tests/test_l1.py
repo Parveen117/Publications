@@ -81,3 +81,25 @@ def test_D2b_certificate_pinned():
 
 def test_theorems_A_B_unaffected_by_D2b():
     assert "unaffected" in B2.build()["scope"]
+
+
+import d3_regulator_scale as R3
+
+def test_theorem_F_and_G_proved():
+    c = R3.build()
+    assert c["theorem_F_no_planck_length_without_hbar"]["status"] == "PROVED"
+    assert c["theorem_G_own_regulator_is_cosmological"]["status"] == "PROVED"
+
+def test_no_length_from_c_and_G_alone():
+    ch = R3.build()["theorem_F_no_planck_length_without_hbar"]["checks"]
+    assert ch["no_length_from_c_and_G_alone"] and ch["hbar_not_in_span_of_c_G"]
+
+def test_own_regulator_is_cosmological_not_planckian():
+    g = R3.build()["theorem_G_own_regulator_is_cosmological"]
+    assert float(g["numeric_illustration"]["L_E_over_L_P"]) > 1e50
+
+def test_D3_negative_result_recorded():
+    assert R3.build()["obligation"]["D3"].startswith("DISCHARGED WITH NEGATIVE")
+
+def test_D3_certificate_pinned():
+    assert R3.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D3.sha256").read_text().strip()

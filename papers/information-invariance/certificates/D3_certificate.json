@@ -1,0 +1,42 @@
+{
+  "certificate_sha256": "67c58d97db1b7ff5d2c31fc21bfe8fdb1ce71ff66c687c32427545563f31835e",
+  "claim_boundary": "Exact rational linear algebra in the (M, L, T) dimension group; no physics beyond dimensional analysis is used or claimed.",
+  "obligation": {
+    "D3": "DISCHARGED WITH NEGATIVE RESULT"
+  },
+  "protocol": "INFORMATION_INVARIANCE_D3_V1",
+  "scope": "Bears on the emergent-gravity conjecture only; Theorems A and B are unaffected.",
+  "theorem_F_no_planck_length_without_hbar": {
+    "checks": {
+      "c_G_hbar_span_all_dimensions": true,
+      "hbar_not_in_span_of_c_G": true,
+      "length_solvable_once_hbar_admitted": true,
+      "no_length_from_c_and_G_alone": true,
+      "planck_exponents_verified": true
+    },
+    "planck_solution_exponents": {
+      "G": "1/2",
+      "c": "-3/2",
+      "hbar": "1/2"
+    },
+    "reading": "L_P requires hbar as an input; it is not derivable from the deterministic constants.",
+    "status": "PROVED"
+  },
+  "theorem_G_own_regulator_is_cosmological": {
+    "checks": {
+      "canonical_form_c2_over_sqrt_GE": true,
+      "lambda_gives_a_length": true,
+      "length_from_c_G_E_exists": true
+    },
+    "numeric_illustration": {
+      "L_E_metres": "4.492e+26",
+      "L_E_over_L_P": "2.779e+61",
+      "L_P_metres": "1.616e-35",
+      "note": "order Hubble scale; ~10^61 Planck lengths"
+    },
+    "own_regulator": "L_E = c^2 / sqrt(G * E)  (equivalently Lambda^{-1/2})",
+    "reading": "The only length the deterministic dynamics generates by itself is cosmological. Regularisation at L_P is an insertion, and the ultraviolet-finiteness claim does not follow.",
+    "status": "PROVED"
+  },
+  "verdict": "The correlation function 1/(r^2 + L_P^2) cannot be obtained from the stated deterministic constants: hbar is dimensionally independent of c and G, so L_P is an input, not a consequence. The scale the dynamics does generate, c^2/sqrt(G E), is cosmological. The paper must therefore either admit hbar as a primitive \u2014 forfeiting the claim to derive quantum structure \u2014 or drop Planck-scale regularisation."
+}
