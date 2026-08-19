@@ -148,3 +148,28 @@ def test_D1_partially_discharged_not_overclaimed():
 
 def test_D1_certificate_pinned():
     assert R1.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D1.sha256").read_text().strip()
+
+
+import d3prime_emergent_einstein as R3p
+
+def test_K_L_M_proved():
+    c = R3p.build()
+    for k in ("theorem_K_degree_of_freedom_no_go", "theorem_L_clausius_route_imports_hbar",
+              "theorem_M_scalar_source_not_conserved"):
+        assert c[k]["status"] == "PROVED"
+
+def test_scalar_cannot_carry_two_polarisations():
+    c = R3p.build()["theorem_K_degree_of_freedom_no_go"]
+    assert c["counting"]["propagating"] == 2 and c["counting"]["scalar"] == 1
+
+def test_clausius_route_needs_hbar():
+    assert R3p.build()["theorem_L_clausius_route_imports_hbar"]["checks"]["no_temperature_from_acceleration_and_c_alone"]
+
+def test_source_not_conserved_but_control_is():
+    ch = R3p.build()["theorem_M_scalar_source_not_conserved"]["checks"]
+    assert ch["proposed_law_changes_the_total"] and ch["conservative_law_preserves_the_total"]
+
+def test_D3prime_negative_and_pinned():
+    c = R3p.build()
+    assert c["obligation"]["D3'"].startswith("DISCHARGED WITH NEGATIVE")
+    assert c["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D3PRIME.sha256").read_text().strip()

@@ -1,0 +1,55 @@
+{
+  "certificate_sha256": "762cdd1e4f46a23508c5dcc1cad75ed278418bc3d470c7c8f5294ca0987269bc",
+  "claim_boundary": "Exact counting, exact dimensional algebra in (M, L, T, Theta), and an exact finite-lattice conservation check.",
+  "obligation": {
+    "D3'": "DISCHARGED WITH NEGATIVE RESULT (three independent grounds)"
+  },
+  "protocol": "INFORMATION_INVARIANCE_D3PRIME_V1",
+  "scope": "Bears on the emergent-gravity conjecture; Theorems A and B are unaffected.",
+  "theorem_K_degree_of_freedom_no_go": {
+    "checks": {
+      "metric_components_is_10": true,
+      "one_function_sector_is_the_most_available": true,
+      "propagating_polarisations_is_2": true,
+      "scalar_cannot_cover_two_polarisations": true,
+      "scalar_supplies_one_function": true
+    },
+    "counting": {
+      "constraints": 4,
+      "gauge": 4,
+      "metric": 10,
+      "propagating": 2,
+      "scalar": 1
+    },
+    "reading": "Two propagating polarisations cannot be carried by one scalar function; the construction can at best reproduce a one-function sector of the field equations.",
+    "status": "PROVED"
+  },
+  "theorem_L_clausius_route_imports_hbar": {
+    "checks": {
+      "no_temperature_from_acceleration_and_c_alone": true,
+      "temperature_solvable_with_hbar_and_kB": true,
+      "unruh_exponents_verified": true
+    },
+    "reading": "The Clausius/Unruh route to the field equations requires hbar (and k_B); it cannot be used by a dynamics that claims to be deterministic and non-quantised and to derive rather than assume quantum structure.",
+    "status": "PROVED"
+  },
+  "theorem_M_scalar_source_not_conserved": {
+    "checks": {
+      "conservative_law_preserves_the_total": true,
+      "proposed_law_changes_the_total": true,
+      "vanishes_only_if_alpha_zero_and_no_vacuum": true
+    },
+    "reading": "Bianchi forces a conserved source. The proposed law is not a divergence, so the scalar cannot play the role of T_mu_nu without a compensating flux.",
+    "status": "PROVED",
+    "totals": {
+      "conservative": "0",
+      "proposed": "155340769049/90901530720"
+    }
+  },
+  "verdict": "The Einstein equations do not emerge from the scalar dynamics: one scalar cannot carry the two propagating polarisations (K); the cited Clausius/Unruh route presupposes hbar and k_B, which the deterministic programme claims not to assume (L); and the proposed local law is not a divergence, so its source is not conserved as Bianchi requires (M). The emergent-gravity claim is withdrawn as a derivation.",
+  "what_survives": [
+    "a one-function sector (spherically symmetric or conformally flat) where a scalar can carry the geometry",
+    "an explicit admission of hbar if the Clausius route is used, with the quantum-derivation claim dropped",
+    "a compensating flux, or a second field, restoring conservation of the source"
+  ]
+}
