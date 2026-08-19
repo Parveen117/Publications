@@ -9,14 +9,18 @@ attempted here) · **RETRACTED** (present in v1, removed in v2 with reason).
 |---|---|---|
 | A | δ𝓘 = 0 ⟺ dω = 0 ⟺ ω exact, on a finite simply-connected chart; on the λ-chart this is the Onsager-flat sector Γ_cΓ_m = 1 | `certificates/l1_certificates.py` → `L1_certificate.json` |
 | B | A single cycle's loop area does not witness curvature: explicit flat-with-offset and curved-without-offset constructions with equal first-cycle area, separated only at cycle 2 (reopen ratio 0 vs 1) | same |
+| C | A real linear flow x' = Ax is exactly a Schrödinger flow iff it carries a complex structure J with A antisymmetric and AJ = JA; then H = −ħJA is Hermitian and iħψ' = Hψ | `certificates/d2_phase_origin.py` → `D2_certificate.json` |
+| D | One-channel obstruction: an odd-dimensional real flow — in particular a single scalar channel — admits no complex structure (det J² = (−1)^N), so no rescaling of the scalar linearisation can yield Schrödinger evolution | same |
 
-Pin: `certificates/EXPECTED_L1.sha256`, regenerated in CI on every push.
+Pins: `certificates/EXPECTED_L1.sha256`, `certificates/EXPECTED_D2.sha256` — regenerated in CI on every push.
 
 ## OPEN (named obligations, v2 §V)
 | id | obligation |
 |---|---|
 | D1 | Derive the null-coordinate energy dynamics *from* Definition 1, rather than positing it; show why α_G ℰ² is the unique quadratic term under δ𝓘 = 0. |
-| D2 | Exhibit the rescaling and coarse-graining that take the linearised dynamics to the Schrödinger equation, including the origin of the complex phase from a real energy density, and the identification of the correlation scale with ħ/m. |
+| D2 | **Reduced by Theorems C, D** (not discharged). The scalar linearisation d(δℰ)/du = 2α_G Ē δℰ + … is one real channel and therefore cannot be Schrödinger evolution. What remains: |
+| D2a | Name the conjugate channel π of δℰ inside the energy dynamics (candidate: the u-derivative, or the transverse flux) and exhibit the complex structure J on the pair (δℰ, π). |
+| D2b | Show the linearised generator on that pair is antisymmetric — i.e. the quadratic self-interaction contributes only to the Hermitian H and not to a symmetric (damping) part of A. This computation can fail: a positive-definite symmetric part means decay, not phase. |
 | D3 | Derive L_P (which contains ħ) inside a dynamics declared deterministic and non-quantised, instead of inserting it as a regulator; then derive the emergent Einstein equations rather than citing the analogy. |
 | D4 | Relate Γ_grav ~ Gm²/ħV to the Diósi–Penrose rate: either reduce to it, or state the regime where the two differ observably. |
 

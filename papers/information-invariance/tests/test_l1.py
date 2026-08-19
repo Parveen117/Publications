@@ -25,3 +25,23 @@ def test_tamper_detected():
 def test_ledger_lists_only_certified_claims_as_proved():
     txt = (ROOT / "LEDGER.md").read_text()
     assert "## PROVED" in txt and "## OPEN" in txt and "D1" in txt and "D4" in txt
+
+
+sys.path.insert(0, str(ROOT / "certificates"))
+import d2_phase_origin as D
+
+def test_theorem_C_proved():
+    assert D.build()["theorem_C_real_flow_is_schrodinger_iff"]["status"] == "PROVED"
+
+def test_theorem_D_proved_and_scalar_channel_blocked():
+    d = D.build()["theorem_D_one_channel_obstruction"]
+    assert d["status"] == "PROVED"
+    assert d["checks"]["odd_dim_determinant_obstruction"] is True
+
+def test_D2_certificate_pinned():
+    c = D.build()
+    assert c["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D2.sha256").read_text().strip()
+
+def test_D2_still_open_not_claimed_discharged():
+    r = D.build()["reduces_obligation"]
+    assert r["D2"].startswith("not discharged")

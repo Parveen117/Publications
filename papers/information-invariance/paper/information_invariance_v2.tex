@@ -32,8 +32,12 @@ first-cycle areas, and only the second cycle separates them. Both statements are
 accompanied by executable certificates over exact rational arithmetic. We then
 state, explicitly as conjectures rather than results, a null-coordinate energy
 dynamics compatible with the principle, together with the emergent-quantum,
-emergent-gravity and gravitational-decoherence claims that a full derivation
-would have to establish; each carries a named open obligation. We identify a
+emergent-gravity and gravitational-decoherence claims that a full derivation would have to
+establish; each carries a named open obligation. For the quantum step we prove
+the precise structural criterion --- a real linear flow is a Schr\"odinger flow
+exactly when it carries a complex structure with an antisymmetric commuting
+generator --- and prove that a single real channel never satisfies it, which
+reduces that obligation to two explicit, checkable requirements. We identify a
 falsifiable experimental route, and we state which of our own Raman
 measurements currently do and do not support the framework.
 \end{abstract}
@@ -135,13 +139,43 @@ rather than positing it; in particular show which variational problem
 $\delta\cI=0$ makes $\alpha_G\cE^2$ the unique quadratic term.
 \end{conjecture}
 
-\begin{conjecture}[Emergent Schr\"odinger dynamics]\label{conj:qm}
-Linearising $\cE=\bar\cE+\delta\cE$ and coarse-graining $\psi=\langle\delta\cE\rangle$
-yields $i\hbar\partial_t\psi=-(\hbar^2/2m)\nabla^2\psi+V\psi$ in the
-weak-gravity limit. \textbf{Obligation D2:} exhibit the rescaling, identify the
-correlation scale with $\hbar/m$, and account for the appearance of a complex
-phase from a real energy density.
-\end{conjecture}
+\subsection{Where a complex phase can come from (proved)}
+
+The step usually left implicit is the appearance of a complex phase in a real
+theory. Its finite content is settled.
+
+\begin{theorem}[Real flow $=$ Schr\"odinger flow]\label{thm:C}
+Let $x'=Ax$ be a real linear flow on $\mathbb{R}^{2n}$ and $J$ an orthogonal
+complex structure ($J^2=-I$, $J^{T}=-J$). Then $A^{T}=-A$ and $AJ=JA$ if and
+only if $H:=-\hbar JA$ is Hermitian for $J$, in which case the flow reads
+$i\hbar\psi'=H\psi$ under $x\leftrightarrow\psi$; equivalently, the flow is
+complex linear and norm preserving.
+\end{theorem}
+
+\begin{theorem}[One-channel obstruction]\label{thm:D}
+An odd-dimensional real flow admits no complex structure, since
+$\det(J)^2=\det(-I)=(-1)^N$. In particular a single scalar channel
+$x'=ax$ is never a Schr\"odinger flow, for any $a$ and any rescaling.
+\end{theorem}
+
+Linearising Conjecture~\ref{conj:dyn} about a background gives, at leading
+order, the single real channel
+$\partial_u\delta\cE=2\alpha_G\bar\cE\,\delta\cE+\epsilon\,\mathcal{F}'\delta\cE$.
+By Theorem~\ref{thm:D} this cannot be Schr\"odinger evolution as it stands, and
+by Theorem~\ref{thm:C} what a derivation must supply is explicit:
+
+\begin{itemize}
+\item[\textbf{D2a}] a conjugate channel $\pi$ of $\delta\cE$ within the dynamics,
+and a complex structure $J$ on the pair $(\delta\cE,\pi)$;
+\item[\textbf{D2b}] antisymmetry of the linearised generator on that pair, i.e.\
+the quadratic self-interaction must contribute to the Hermitian $H$ and not to a
+symmetric part of $A$ --- a computation that can fail, since a positive-definite
+symmetric part is damping rather than phase.
+\end{itemize}
+
+We do not claim these hold; we claim only that they are what is left of
+Obligation~D2, and that the widely used phrase ``the fluctuation dynamics
+yield the Schr\"odinger equation'' is not available without them.
 
 \begin{conjecture}[Finite correlations and emergent geometry]\label{conj:grav}
 $\langle\cE(x)\cE(x')\rangle\sim(r^2+L_P^2)^{-1}$, and in the adiabatic limit the

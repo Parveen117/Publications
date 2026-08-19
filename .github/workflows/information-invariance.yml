@@ -21,7 +21,8 @@ jobs:
       - name: Regenerate certificates and check pin
         run: |
           python papers/information-invariance/certificates/l1_certificates.py
-          git diff --exit-code papers/information-invariance/certificates/EXPECTED_L1.sha256
+          python papers/information-invariance/certificates/d2_phase_origin.py
+          git diff --exit-code papers/information-invariance/certificates/EXPECTED_L1.sha256 papers/information-invariance/certificates/EXPECTED_D2.sha256
       - name: Install pytest
         run: python -m pip install pytest
       - name: Tests

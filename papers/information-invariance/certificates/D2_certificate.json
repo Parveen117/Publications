@@ -1,0 +1,31 @@
+{
+  "certificate_sha256": "e4ad1cfc2b0a48e268fe36b8ec34287e822b48d2bb6495ac2848b1da2ba8fad3",
+  "claim_boundary": "Finite-dimensional linear algebra over exact rationals. Theorem C characterises when a real linear flow IS a Schrodinger flow; Theorem D shows a single real channel never is. Neither asserts that the paper's energy dynamics does or does not admit such a structure \u2014 that is D2a/D2b, which remain OPEN.",
+  "protocol": "INFORMATION_INVARIANCE_D2_V1",
+  "reduces_obligation": {
+    "D2": "not discharged; reduced to D2a + D2b",
+    "D2a": "name the conjugate channel of dE and exhibit the complex structure J on the pair",
+    "D2b": "show the linearised generator on that pair is antisymmetric (no symmetric/damping part)"
+  },
+  "theorem_C_real_flow_is_schrodinger_iff": {
+    "checks": {
+      "H_hermitian_gives_antisym_J_commuting_A": true,
+      "antisym_J_commuting_A_gives_hermitian_H": true,
+      "control_non_J_commuting_A_not_complex_linear": true,
+      "control_symmetric_part_breaks_norm": true,
+      "flow_generator_preserves_norm": true
+    },
+    "status": "PROVED",
+    "trials": 40
+  },
+  "theorem_D_one_channel_obstruction": {
+    "checks": {
+      "odd_dim_determinant_obstruction": true,
+      "scalar_antisymmetric_forces_zero": true,
+      "scalar_channel_has_no_rotation": true,
+      "two_dim_rotation_exists": true
+    },
+    "consequence": "The scalar linearisation of the null-coordinate energy dynamics carries no complex structure, hence cannot be Schrodinger evolution; a declared conjugate channel is required (obligations D2a, D2b).",
+    "status": "PROVED"
+  }
+}
