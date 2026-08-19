@@ -10,8 +10,8 @@
 
 \begin{document}
 
-\title{Information Invariance as a Selection Principle:\\
-Proved Finite Structure, and Conjectured Emergent Dynamics}
+\title{Information Invariance: What It Is, What It Decides,\\
+and What It Does Not Derive}
 
 \author{Monty Dabas}
 \affiliation{Celextrix Private Limited, New Delhi 110086, India}
@@ -20,35 +20,32 @@ Proved Finite Structure, and Conjectured Emergent Dynamics}
 \date{\today}
 
 \begin{abstract}
-We give a concrete definition of information invariance for thermodynamic
-response charts: the stationarity of the loop functional of the entropy-scaled
-accessibility one-form. On a finite chart we prove two statements. First,
-information invariance is \emph{equivalent} to vanishing thermodynamic
-curvature and to exactness of the one-form; on the $\lambda$-chart this is
-precisely the Onsager-reciprocal (flat) sector. Second, the loop area measured
-on a \emph{single} thermal cycle does not witness curvature: a flat chart with a
-one-time irreversible offset and a curved chart can produce identical
-first-cycle areas, and only the second cycle separates them. Both statements are
-accompanied by executable certificates over exact rational arithmetic. We then
-state, explicitly as conjectures rather than results, a null-coordinate energy
-dynamics compatible with the principle, together with the emergent-quantum,
-emergent-gravity and gravitational-decoherence claims that a full derivation would have to
-establish; each carries a named open obligation. For the quantum step we carry
-the analysis to a conclusion: we prove
-the precise structural criterion --- a real linear flow is a Schr\"odinger flow
-exactly when it carries a complex structure with an antisymmetric commuting
-generator --- and prove that a single real channel never satisfies it, which
-reduces that obligation to two explicit requirements, one of which is then
-discharged by the derived quarter turn and cut grading of the recognition
-framework; performing the remaining computation shows that the proposed energy
-dynamics fails the criterion, so the emergent-quantum step is withdrawn as a
-claim and retained only as an explicit conditional. We also give information invariance a microscopic reading: it is exactly
-time-reversal invariance of the statistical weight, and we show that a null
-curvature measurement is uninformative, so that only a repeated-cycle
-measurement can decide the question. We correct the associated decoherence formula, which as printed is not a rate,
-and identify its repair with the Di\'osi--Penrose expression, so that it is a
-consistency requirement rather than a new prediction; and we state which of our
-own Raman measurements currently do and do not support the framework.
+We define information invariance for thermodynamic response charts as the
+stationarity of the loop functional of the entropy-scaled accessibility
+one-form, and settle what follows from it. Three structural results are proved
+on finite charts with executable certificates: information invariance is
+equivalent to vanishing thermodynamic curvature and to exactness of the
+one-form, i.e.\ to the Onsager-reciprocal sector; microscopically it is exactly
+time-reversal invariance of the statistical weight, through the factor
+$\chi=W(\Theta\Gamma)/W(\Gamma)$; and curvature is a sufficient but not a
+necessary witness of that invariance, since microscopic asymmetry can cancel
+under coarse-graining. On the experimental side we prove that the loop area of a
+\emph{single} thermal cycle decides nothing --- a flat chart with a one-time
+irreversible offset and a curved chart give equal first-cycle areas --- which we
+illustrate on our own graphene Raman data, where the measured loop does not
+close. We then carry every obligation of the associated emergent-dynamics
+programme to a verdict rather than leaving it open: the quadratic energy law is
+not derivable from invariance but is uniquely selected by a stated
+minimal-scale principle; the linearised dynamics is a damped rotation, not a
+Schr\"odinger generator, and we give the exact condition that would make it
+one; the Planck length is an input rather than a consequence, the scale the
+theory supplies being cosmological; the emergent-Einstein claim fails on
+degree-of-freedom counting, on the $\hbar$-dependence of the thermodynamic
+route, and on non-conservation of the scalar source; and the proposed
+decoherence rate is dimensionally invalid, its unique repair being the
+Di\'osi--Penrose expression. We regard the negative results as the paper's main
+contribution: they replace an unsupported programme with a small set of proved
+statements and explicitly stated conditions.
 \end{abstract}
 
 \maketitle
@@ -365,6 +362,38 @@ mass or geometry regime of departure; or a dependence on shape or entropy
 gradient, which DP does not carry. Optomechanical tests discriminate such
 departures~\cite{Aspelmeyer2014,Bassi2013}, not the agreement.
 
+\section{Summary of status}\label{sec:summary}
+
+Every claim below is either proved with a machine-checked certificate that is
+regenerated on each commit, or marked as a stated condition. No claim rests on
+an argument that is not reproduced by the accompanying code.
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+Statement & Status & Where\\
+\hline
+$\delta\cI=0\Leftrightarrow\Omega=0\Leftrightarrow$ exact & proved & Thm~\ref{thm:A}\\
+One cycle does not witness curvature & proved & Thm~\ref{thm:B}\\
+Real flow is Schr\"odinger iff $J$, antisym. & proved & Thm~\ref{thm:C}\\
+One channel admits no complex structure & proved & Thm~\ref{thm:D}\\
+Cut supplies the pair; phase is odd part & proved & Thm~\ref{thm:E}\\
+No Planck length without $\hbar$ & proved & Thm~\ref{thm:F}\\
+Own regulator is cosmological & proved & Thm~\ref{thm:G}\\
+Printed decoherence rate is not a rate & proved & Thm~\ref{thm:H}\\
+Invariance alone selects no dynamics & proved & Thm~\ref{thm:I}\\
+Minimal scale usage selects $n=2$ & proved & Thm~\ref{thm:J}\\
+One scalar cannot carry two polarisations & proved & Thm~\ref{thm:K}\\
+Clausius route imports $\hbar$ & proved & Thm~\ref{thm:L}\\
+Scalar source is not conserved & proved & Thm~\ref{thm:M}\\
+$\delta\cI=0\Leftrightarrow\chi\equiv1$ & proved & Thm~\ref{thm:N}\\
+$\Omega=0$ does not imply $\chi\equiv1$ & proved & Thm~\ref{thm:O}\\
+Selection principle itself; $\lambda=L_\cE$ & stated condition & D1$'$\\
+Reversible curvature in graphene & measurement pending & Sec.~\ref{sec:empirical}\\
+\hline
+\end{tabular}
+\end{center}
+
 \section{Conclusion}
 
 Information invariance, defined as stationarity of the loop functional, is
@@ -383,6 +412,13 @@ dynamics generates a damped rotation rather than unitary evolution, and the
 step survives only as the explicit condition that the cut-even symmetric part
 cancel at the background. We regard reporting this as more useful than
 asserting the step.
+
+\section*{Reproducibility}
+All theorems marked ``proved'' are accompanied by executable certificates over
+exact rational arithmetic, with pinned SHA-256 digests regenerated by continuous
+integration on every commit; tampering with any recorded value changes the
+digest and fails the build. Source, certificates and the claim ledger:
+\texttt{Parveen117/Publications}, \texttt{papers/information-invariance}.
 
 \begin{acknowledgments}
 Underlying Raman data were acquired at the Centre for Nano Science and
