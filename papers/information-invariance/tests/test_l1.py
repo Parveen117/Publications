@@ -45,3 +45,17 @@ def test_D2_certificate_pinned():
 def test_D2_still_open_not_claimed_discharged():
     r = D.build()["reduces_obligation"]
     assert r["D2"].startswith("not discharged")
+
+
+import d2a_cut_supplies_structure as E
+
+def test_theorem_E_proved():
+    assert E.build()["theorem_E_cut_supplies_conjugate_pair_and_complex_structure"]["status"] == "PROVED"
+
+def test_D2a_discharged_D2b_open():
+    o = E.build()["obligations"]
+    assert o["D2a"].startswith("DISCHARGED")
+    assert o["D2b"].startswith("OPEN")
+
+def test_D2a_certificate_pinned():
+    assert E.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D2A.sha256").read_text().strip()

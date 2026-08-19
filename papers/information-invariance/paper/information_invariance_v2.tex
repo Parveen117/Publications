@@ -37,7 +37,9 @@ establish; each carries a named open obligation. For the quantum step we prove
 the precise structural criterion --- a real linear flow is a Schr\"odinger flow
 exactly when it carries a complex structure with an antisymmetric commuting
 generator --- and prove that a single real channel never satisfies it, which
-reduces that obligation to two explicit, checkable requirements. We identify a
+reduces that obligation to two explicit requirements, one of which is then
+discharged by the derived quarter turn and cut grading of the recognition
+framework, leaving a single stated computation. We identify a
 falsifiable experimental route, and we state which of our own Raman
 measurements currently do and do not support the framework.
 \end{abstract}
@@ -169,13 +171,35 @@ by Theorem~\ref{thm:C} what a derivation must supply is explicit:
 and a complex structure $J$ on the pair $(\delta\cE,\pi)$;
 \item[\textbf{D2b}] antisymmetry of the linearised generator on that pair, i.e.\
 the quadratic self-interaction must contribute to the Hermitian $H$ and not to a
-symmetric part of $A$ --- a computation that can fail, since a positive-definite
-symmetric part is damping rather than phase.
+symmetric part of $A$.
 \end{itemize}
 
-We do not claim these hold; we claim only that they are what is left of
-Obligation~D2, and that the widely used phrase ``the fluctuation dynamics
-yield the Schr\"odinger equation'' is not available without them.
+The first is supplied by structure that is already derived, not assumed. An
+oriented cut yields a quarter turn $\iota$ with $\iota^2=-1$ and
+$\iota^\dagger=-\iota$~\cite{RKF-F00E}, and every generator splits uniquely
+relative to the cut $J$ into an even part preserving the two sheets and an odd
+part transporting between them~\cite{RKF-41}. Taking the conjugate channel to
+be the image on the opposite sheet gives:
+
+\begin{theorem}[Cut supplies the pair; phase is the odd part]\label{thm:E}
+Let $J$ be a balanced cut, and write the generator in the sheet basis as blocks
+$A=\bigl(\begin{smallmatrix}A_{++}&B\\ C&A_{--}\end{smallmatrix}\bigr)$ with
+$\iota=\bigl(\begin{smallmatrix}0&-I\\ I&0\end{smallmatrix}\bigr)$. Then
+$A\iota=\iota A$ iff $A_{++}=A_{--}$ and $C=-B$; $A^{T}=-A$ iff the diagonal
+blocks are antisymmetric and $C=-B^{T}$; both hold iff the diagonal blocks are
+equal and antisymmetric and $B$ is symmetric, in which case $H=-\hbar\iota A$ is
+Hermitian and Theorem~\ref{thm:C} applies. A purely cut-even generator never
+mixes the sheets and produces no phase, and the symmetric part of $A$ is exactly
+the damping: $d|x|^2/du=2x^{T}A_{\rm sym}x$.
+\end{theorem}
+
+Obligation~D2 therefore reduces to a single computation, D2b: in the sheet basis
+of the cut, does the linearised energy dynamics have equal antisymmetric
+diagonal blocks and a symmetric transport block? Failure of the first is damping
+rather than phase; failure of the second is a non-Hermitian generator. We do not
+claim it holds; we claim that this, and only this, is what remains, and that the
+usual phrase ``the fluctuation dynamics yield the Schr\"odinger equation'' is
+not available until it is done.
 
 \begin{conjecture}[Finite correlations and emergent geometry]\label{conj:grav}
 $\langle\cE(x)\cE(x')\rangle\sim(r^2+L_P^2)^{-1}$, and in the adiabatic limit the
@@ -214,6 +238,8 @@ Engineering, Indian Institute of Science, Bengaluru.
 arXiv:2603.20773 [cond-mat.stat-mech] (2026).
 \bibitem{ThermoRepro} \texttt{Parveen117/Thermodynamics-Reproducibility},
 campaign \texttt{T02\_RAMAN\_THERMAL\_HYSTERESIS} (2026).
+\bibitem{RKF-F00E} Recognition-Kernel Framework, \texttt{theorems/foundation/F00E\_NATIVE\_EULER\_FROM\_IOTA\_COMPLEX} (PROVED), Zenodo doi:10.5281/zenodo.21760119.
+\bibitem{RKF-41} Recognition-Kernel Framework, \texttt{theorum/41\_cut\_graded\_universal\_generator\_theorem} (certified, pin \texttt{34afc445\ldots}), \emph{ibid}.
 \bibitem{Jacobson1995} T.~Jacobson, Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
 \bibitem{Diosi1987} L.~Di\'osi, Phys.\ Lett.\ A \textbf{120}, 377 (1987).
 \bibitem{Penrose1996} R.~Penrose, Gen.\ Rel.\ Grav.\ \textbf{28}, 581 (1996).

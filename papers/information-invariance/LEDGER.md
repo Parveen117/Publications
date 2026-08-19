@@ -10,17 +10,18 @@ attempted here) · **RETRACTED** (present in v1, removed in v2 with reason).
 | A | δ𝓘 = 0 ⟺ dω = 0 ⟺ ω exact, on a finite simply-connected chart; on the λ-chart this is the Onsager-flat sector Γ_cΓ_m = 1 | `certificates/l1_certificates.py` → `L1_certificate.json` |
 | B | A single cycle's loop area does not witness curvature: explicit flat-with-offset and curved-without-offset constructions with equal first-cycle area, separated only at cycle 2 (reopen ratio 0 vs 1) | same |
 | C | A real linear flow x' = Ax is exactly a Schrödinger flow iff it carries a complex structure J with A antisymmetric and AJ = JA; then H = −ħJA is Hermitian and iħψ' = Hψ | `certificates/d2_phase_origin.py` → `D2_certificate.json` |
+| E | On a balanced cut, a real generator is a Schrödinger generator iff its diagonal (cut-even) blocks are equal and antisymmetric and its transport (cut-odd) block is symmetric with C = −B; phase lives in the odd transporting part, damping in the symmetric part | `certificates/d2a_cut_supplies_structure.py` → `D2a_certificate.json` |
 | D | One-channel obstruction: an odd-dimensional real flow — in particular a single scalar channel — admits no complex structure (det J² = (−1)^N), so no rescaling of the scalar linearisation can yield Schrödinger evolution | same |
 
-Pins: `certificates/EXPECTED_L1.sha256`, `certificates/EXPECTED_D2.sha256` — regenerated in CI on every push.
+Pins: `EXPECTED_L1.sha256`, `EXPECTED_D2.sha256`, `EXPECTED_D2A.sha256` (in `certificates/`) — regenerated in CI on every push.
 
 ## OPEN (named obligations, v2 §V)
 | id | obligation |
 |---|---|
 | D1 | Derive the null-coordinate energy dynamics *from* Definition 1, rather than positing it; show why α_G ℰ² is the unique quadratic term under δ𝓘 = 0. |
 | D2 | **Reduced by Theorems C, D** (not discharged). The scalar linearisation d(δℰ)/du = 2α_G Ē δℰ + … is one real channel and therefore cannot be Schrödinger evolution. What remains: |
-| D2a | Name the conjugate channel π of δℰ inside the energy dynamics (candidate: the u-derivative, or the transverse flux) and exhibit the complex structure J on the pair (δℰ, π). |
-| D2b | Show the linearised generator on that pair is antisymmetric — i.e. the quadratic self-interaction contributes only to the Hermitian H and not to a symmetric (damping) part of A. This computation can fail: a positive-definite symmetric part means decay, not phase. |
+| ~~D2a~~ | **DISCHARGED by Theorem E** — the conjugate channel is the image of the fluctuation on the *opposite sheet of the oriented cut*, and the complex structure is the framework's derived quarter turn ι (F00E: ι²=−1, ι†=−ι; grading from theorum/41, pin 34afc445…). Nothing new is assumed: both are already PROVED/certified in Recognition-Kernel-Framework. |
+| D2b | **The single remaining computation.** In the sheet basis of the cut, show the linearisation of the energy dynamics has (i) equal antisymmetric diagonal blocks and (ii) a symmetric transport block with C = −B. Failure of (i) is damping rather than phase; failure of (ii) is a non-Hermitian generator. Theorem E makes both conditions explicit and checkable. |
 | D3 | Derive L_P (which contains ħ) inside a dynamics declared deterministic and non-quantised, instead of inserting it as a regulator; then derive the emergent Einstein equations rather than citing the analogy. |
 | D4 | Relate Γ_grav ~ Gm²/ħV to the Diósi–Penrose rate: either reduce to it, or state the regime where the two differ observably. |
 
