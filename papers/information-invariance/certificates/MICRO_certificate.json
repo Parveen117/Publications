@@ -1,0 +1,56 @@
+{
+  "certificate_sha256": "064cf2faf4f6ee420059bb7332902b4a846a31f6329454fa28c16a6deafa07e2",
+  "chain": "delta I = 0  <=>  Omega = 0 (Theorem A)  <=  chi == 1 (Theorems N, O); the last arrow is one-directional.",
+  "claim_boundary": "Finite phase space, exact rational weights, linear coarse-graining. The continuum Green-Kubo statement of the companion work is cited, not re-derived.",
+  "consequence": "Information invariance has a microscopic reading: stationarity of the loop functional is time-reversal invariance of the statistical weight. And the predeclared cycle-2 test is not optional: neither a single loop area nor a null curvature result carries an inference by itself.",
+  "experimental_logic": {
+    "Omega_nonzero_across_cycles": "implies chi != 1 \u2014 informative",
+    "Omega_zero": "implies nothing about chi",
+    "single_cycle_loop_area_nonzero": "implies nothing about Omega (Theorem B)"
+  },
+  "protocol": "INFORMATION_INVARIANCE_MICRO_V1",
+  "theorem_N_microscopic_characterisation": {
+    "checks": {
+      "chi_one_implies_symmetric": true,
+      "control_asymmetric_weight_breaks_symmetry": true,
+      "identity_exact": true,
+      "symmetric_for_all_implies_chi_one": true
+    },
+    "reading": "delta I = 0 (equivalently Omega = 0, Theorem A) is exactly the statement that the statistical weight is invariant under time reversal.",
+    "status": "PROVED"
+  },
+  "theorem_O_curvature_is_sufficient_not_necessary": {
+    "checks": {
+      "chi_differs_from_one": true,
+      "coarse_grained_curvature_vanishes": true,
+      "microscopic_antisymmetric_part_nonzero": true,
+      "orbit_contributions_are_opposite": true,
+      "sufficiency_direction_holds": true
+    },
+    "example": {
+      "W": [
+        "3",
+        "1",
+        "1",
+        "3"
+      ],
+      "asym_orbit1": "2",
+      "asym_orbit2": "-2",
+      "chi": [
+        "1/3",
+        "3",
+        "3",
+        "1/3"
+      ],
+      "coarse_image": "0",
+      "theta": [
+        1,
+        0,
+        3,
+        2
+      ]
+    },
+    "reading": "Omega = 0 does not imply chi = 1: microscopic irreversibility can cancel under coarse-graining. A null curvature measurement is uninformative; only Omega != 0 carries the inference.",
+    "status": "PROVED"
+  }
+}

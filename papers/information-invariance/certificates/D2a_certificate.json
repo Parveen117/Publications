@@ -1,0 +1,26 @@
+{
+  "certificate_sha256": "1eb7f25a03e771b4597c6d885274ad817e83863dfe00f186911e6f5f7741a0e3",
+  "claim_boundary": "Exact finite linear algebra. Theorem E characterises, in the sheet basis of a balanced cut, exactly when a real generator is a Schrodinger generator, and shows phase lives in the cut-odd transporting block while damping lives in the symmetric part. It consumes the framework's derived quarter turn and cut grading as inputs and re-proves neither. It makes no claim about the energy dynamics itself.",
+  "framework_inputs_consumed": {
+    "cut_grading": "Recognition-Kernel-Framework theorum/41_cut_graded_universal_generator_theorem.md (certified, pin 34afc445...): G = G_e + G_o, J G_o J = -G_o, even preserves sheets, odd transports",
+    "iota_from_oriented_cut": "Recognition-Kernel-Framework theorems/foundation/F00E_NATIVE_EULER_FROM_IOTA_COMPLEX.md (PROVED): oriented cut -> quarter turn, iota^2 = -1, iota^dagger = -iota"
+  },
+  "obligations": {
+    "D2a": "DISCHARGED \u2014 conjugate channel = the opposite sheet of the oriented cut; complex structure = the derived quarter turn iota",
+    "D2b": "OPEN \u2014 show the linearised energy dynamics has equal antisymmetric diagonal blocks and a symmetric transport block in the sheet basis; failure of the first is damping, of the second non-Hermiticity"
+  },
+  "protocol": "INFORMATION_INVARIANCE_D2A_V1",
+  "theorem_E_cut_supplies_conjugate_pair_and_complex_structure": {
+    "checks": {
+      "E1_commutes_iff_equal_diag_and_C_eq_minusB": true,
+      "E2_antisym_iff_blocks_antisym_and_C_eq_minusBT": true,
+      "E3_both_iff_B_symmetric_gives_hermitian_H": true,
+      "E4_pure_even_generator_never_rotates": true,
+      "E5_symmetric_part_is_the_damping": true,
+      "control_asymmetric_B_breaks_hermiticity": true,
+      "control_unequal_diagonal_breaks_commuting": true
+    },
+    "status": "PROVED",
+    "trials": 40
+  }
+}

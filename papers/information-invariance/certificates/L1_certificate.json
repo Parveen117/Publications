@@ -1,0 +1,36 @@
+{
+  "certificate_sha256": "5dd30df43ad1919f599ceff2e97a569d36b63858eade76aafcaa7aebcb16df6a",
+  "claim_boundary": "Finite-chart theorems over exact rationals. They fix the paper's \ud835\udcd8 as the loop functional of \u03c9 and prove \u03b4\ud835\udcd8=0 \u27fa d\u03c9=0 \u27fa exactness, and that one-cycle non-closure is not a curvature witness. Nothing here concerns quantum mechanics, gravity, or decoherence; those items are OPEN/CONJECTURE in the ledger.",
+  "ledger_pointer": "papers/information-invariance/LEDGER.md",
+  "protocol": "INFORMATION_INVARIANCE_L1_V1",
+  "theorem_A_information_invariance_iff_flat": {
+    "checks": {
+      "all_plaquettes_zero_implies_exact": true,
+      "curved_has_nonzero_loop": true,
+      "flat_implies_all_loops_zero": true,
+      "planted_curvature_detected": true,
+      "single_plaquette_loop_equals_curvature": true,
+      "stokes_exact_identity": true
+    },
+    "status": "PROVED",
+    "trials": 60
+  },
+  "theorem_B_single_cycle_nonclosure_not_curvature_witness": {
+    "checks": {
+      "a_nonclosure_at_base": true,
+      "b_closes_at_base": true,
+      "cycle2_rule_separates": true,
+      "first_cycle_areas_equal": true,
+      "reopen_ratio_a": "0",
+      "reopen_ratio_b": "1",
+      "second_cycle_a_collapses": true,
+      "second_cycle_b_reopens": true
+    },
+    "construction": {
+      "a": "flat chart + one-time irreversible offset delta=5 on cooling branch",
+      "b": "curved chart, closes at base, bump scaled to equal first-cycle area"
+    },
+    "first_cycle_area": "1000",
+    "status": "PROVED"
+  }
+}

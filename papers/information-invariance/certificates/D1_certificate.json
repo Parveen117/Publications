@@ -1,0 +1,74 @@
+{
+  "certificate_sha256": "aa1b9a1bf0aec36385d7c2782aa803915d250723e2947968ab96bb2e0f8e5650",
+  "claim_boundary": "Finite-lattice exactness checks and exact dimensional algebra. No claim is made that the selection principle is forced by physics; it is stated so that the quadratic law follows from something written down.",
+  "obligation": {
+    "D1": "PARTIALLY DISCHARGED \u2014 negative half proved (Theorem I), positive half proved under a stated selection principle (Theorem J)"
+  },
+  "protocol": "INFORMATION_INVARIANCE_D1_V1",
+  "scope": "Bears on the dynamics conjecture; Theorems A and B are unaffected.",
+  "theorem_I_invariance_alone_selects_nothing": {
+    "checks": {
+      "composed_quad_then_lin": true,
+      "control_non_potential_perturbation_creates_curvature": true,
+      "cubic": true,
+      "family_is_infinite_dimensional": true,
+      "linear": true,
+      "quadratic": true,
+      "rational": true
+    },
+    "reading": "Every potential-transporting evolution preserves exactness, so delta I = 0 is compatible with an arbitrary function f: the quadratic law is one point in an infinite family and is not selected by invariance.",
+    "status": "PROVED"
+  },
+  "theorem_J_minimal_scale_usage_selects_the_quadratic_law": {
+    "checks": {
+      "alpha_2_equals_G_lambda_over_c4": true,
+      "draft_alpha_short_by_one_length": true,
+      "exponent_formula_a_eq_n_minus_1": true,
+      "exponent_formula_b_eq_4_minus_4n": true,
+      "exponent_formula_d_eq_2n_minus_3": true,
+      "half_integer_case_confirms_obstruction": true,
+      "minimal_scale_usage_selects_n_equals_2": true,
+      "no_power_law_from_G_and_c_alone": true
+    },
+    "reading": "Dimensions alone do not fix the power once a new length is admitted; requiring that the new length be used exactly once fixes n = 2 uniquely and gives the coupling's form.",
+    "selected": {
+      "alpha_2": "G * lambda / c^4",
+      "n": 2,
+      "natural_lambda": "L_E = c^2 / sqrt(G E)  (Theorem G of D3) -> alpha_2 = 1/(c^2 sqrt(G E))"
+    },
+    "solutions": {
+      "0": [
+        "-1",
+        "4",
+        "-3"
+      ],
+      "1": [
+        "0",
+        "0",
+        "-1"
+      ],
+      "2": [
+        "1",
+        "-4",
+        "1"
+      ],
+      "3": [
+        "2",
+        "-8",
+        "3"
+      ],
+      "4": [
+        "3",
+        "-12",
+        "5"
+      ],
+      "5": [
+        "4",
+        "-16",
+        "7"
+      ]
+    },
+    "status": "PROVED"
+  },
+  "verdict": "delta I = 0 does not derive the energy dynamics: every potential-transporting evolution preserves it, an infinite family. What does select the quadratic term is a separate, stateable principle \u2014 admit exactly one new length and use it exactly once \u2014 under which n = 2 is unique and alpha_2 = G lambda / c^4. The draft's alpha_G ~ G/c^4 is short by exactly that length; the length the theory itself supplies is the cosmological L_E."
+}

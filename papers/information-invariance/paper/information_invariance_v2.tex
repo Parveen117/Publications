@@ -1,0 +1,444 @@
+\documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib]{revtex4-2}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cE}{\mathcal{E}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{conjecture}{Conjecture}
+
+\begin{document}
+
+\title{Information Invariance: What It Is, What It Decides,\\
+and What It Does Not Derive}
+
+\author{Monty Dabas}
+\affiliation{Celextrix Private Limited, New Delhi 110086, India}
+\email{montydabas@celextrix.org}
+
+\date{\today}
+
+\begin{abstract}
+We define information invariance for thermodynamic response charts as the
+stationarity of the loop functional of the entropy-scaled accessibility
+one-form, and settle what follows from it. Three structural results are proved
+on finite charts with executable certificates: information invariance is
+equivalent to vanishing thermodynamic curvature and to exactness of the
+one-form, i.e.\ to the Onsager-reciprocal sector; microscopically it is exactly
+time-reversal invariance of the statistical weight, through the factor
+$\chi=W(\Theta\Gamma)/W(\Gamma)$; and curvature is a sufficient but not a
+necessary witness of that invariance, since microscopic asymmetry can cancel
+under coarse-graining. On the experimental side we prove that the loop area of a
+\emph{single} thermal cycle decides nothing --- a flat chart with a one-time
+irreversible offset and a curved chart give equal first-cycle areas --- which we
+illustrate on our own graphene Raman data, where the measured loop does not
+close. We then carry every obligation of the associated emergent-dynamics
+programme to a verdict rather than leaving it open: the quadratic energy law is
+not derivable from invariance but is uniquely selected by a stated
+minimal-scale principle; the linearised dynamics is a damped rotation, not a
+Schr\"odinger generator, and we give the exact condition that would make it
+one; the Planck length is an input rather than a consequence, the scale the
+theory supplies being cosmological; the emergent-Einstein claim fails on
+degree-of-freedom counting, on the $\hbar$-dependence of the thermodynamic
+route, and on non-conservation of the scalar source; and the proposed
+decoherence rate is dimensionally invalid, its unique repair being the
+Di\'osi--Penrose expression. We regard the negative results as the paper's main
+contribution: they replace an unsupported programme with a small set of proved
+statements and explicitly stated conditions.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Onsager reciprocity is derived under microscopic reversibility. Entropy-weighted
+reparameterisations of response functions yield an effective coupling matrix
+whose cross-coefficients are generically asymmetric~\cite{Dabas2026}; the
+associated geometric statement is that the accessibility one-form
+$\omega=\lambda_p\,dp+\lambda_v\,dv$ need not be closed. This raises a
+structural question: \emph{which} irreversible trajectories are admissible.
+
+The present paper separates what can be proved from what is presently
+conjectured. Section~\ref{sec:def} defines information invariance as a loop
+functional. Section~\ref{sec:proved} proves two finite theorems about it, with
+machine-checked certificates. Section~\ref{sec:empirical} states the empirical
+situation honestly, including a non-closure finding in our own data that
+weakens the naive reading of loop area. Section~\ref{sec:conj} states the
+dynamical programme as conjectures with explicit obligations.
+
+\section{Information invariance, defined}\label{sec:def}
+
+\begin{definition}[Information invariance]\label{def:ii}
+Let $\omega$ be the entropy-scaled accessibility one-form on a response chart.
+Define the loop functional $\cI(\gamma)=\oint_\gamma\omega$ for closed paths
+$\gamma$. The chart is \emph{information invariant} if $\cI(\gamma)=0$ for every
+admissible closed $\gamma$, written $\delta\cI=0$.
+\end{definition}
+
+This is a selection principle: it constrains admissible evolution, and asserts
+neither conservation of microscopic information nor invariance under arbitrary
+transformations. It postulates no new interaction and does not quantise
+spacetime.
+
+\section{Proved finite structure}\label{sec:proved}
+
+Discretise the chart on a lattice with rational edge values; $\Omega=d\omega$ is
+the plaquette circulation, and discrete Stokes holds exactly.
+
+\begin{theorem}[Information invariance $=$ flat sector]\label{thm:A}
+On a finite simply connected chart the following are equivalent:
+(i) $\delta\cI=0$; (ii) $\Omega\equiv0$; (iii) $\omega$ is exact, i.e.\ a
+potential $\Phi$ exists and line integrals are path independent. On the
+$\lambda$-chart with $\lambda_X=-ST/C_X$, (ii) is the flat-closure sector
+$\Gamma_c\Gamma_m=1$, i.e.\ Onsager reciprocity.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+(ii)$\Rightarrow$(i) by discrete Stokes; (i)$\Rightarrow$(ii) by taking
+$\gamma=\partial$(plaquette); (i)$\Leftrightarrow$(iii) is path independence
+$\Leftrightarrow$ exactness on a connected graph. All three directions, plus
+planted-curvature negative controls, are executed over exact rationals in the
+accompanying certificate.
+\end{proof}
+
+\begin{theorem}[One cycle does not witness curvature]\label{thm:B}
+There exist a flat chart with a single irreversible offset and a curved chart
+without offset whose first-cycle loop areas are equal. The two are separated
+only by the second cycle: the offset construction collapses (reopen ratio $0$),
+the curvature construction reopens with the same area (ratio $1$).
+\end{theorem}
+
+Consequently a nonzero loop area measured on one cycle is consistent with
+irreversible drift and does not by itself establish $\iint\Omega\neq0$.
+Certificates for both theorems are in
+\texttt{papers/information-invariance/certificates}; the pinned SHA-256 is
+reproduced by continuous integration on every commit.
+
+\section{What information invariance means microscopically}\label{sec:micro}
+
+The companion work derives, for an ensemble with weight $W$ on a phase space
+carrying a time-reversal involution $\Theta$, the identity
+$L_{ij}-\varepsilon_i\varepsilon_jL_{ji}=\int\langle(1-\chi)J_i(0)J_j(t)\rangle_W\,dt$
+with $\chi(\Gamma)=W(\Theta\Gamma)/W(\Gamma)$, and identifies the coarse-grained
+antisymmetric part with $\Omega$~\cite{Dabas2026}. Chaining this with
+Theorem~\ref{thm:A} gives information invariance a microscopic reading, and one
+leg of the chain turns out to be one-directional.
+
+\begin{theorem}[Microscopic characterisation]\label{thm:N}
+On a finite phase space, with $C_W(f,g)=\sum_\Gamma W(\Gamma)f(\Gamma)g(\Theta\Gamma)$,
+\begin{equation}
+C_W(f,g)-C_W(g,f)=\sum_\Gamma W(\Gamma)\bigl[1-\chi(\Gamma)\bigr]f(\Gamma)g(\Theta\Gamma),
+\end{equation}
+exactly, and the following are equivalent: $\chi\equiv1$; $C_W$ is symmetric for
+all observables; the antisymmetric response vanishes. Hence $\delta\cI=0$ is
+exactly time-reversal invariance of the statistical weight.
+\end{theorem}
+
+\begin{theorem}[Curvature is sufficient, not necessary]\label{thm:O}
+$\chi\equiv1\Rightarrow\Omega=0$ always. The converse fails: for
+$\Theta=(01)(23)$ and $W=(3,1,1,3)$ the two orbit contributions are $+2$ and
+$-2$, so $\chi\neq1$ while the coarse-grained total vanishes.
+\end{theorem}
+
+Together with Theorem~\ref{thm:B} this bounds what a hysteresis experiment can
+decide:
+\begin{center}
+\begin{tabular}{ll}
+$\Omega\neq0$ across cycles & $\Rightarrow\ \chi\neq1$: informative\\
+$\Omega=0$ & $\Rightarrow$ nothing about $\chi$\\
+one-cycle loop area $\neq0$ & $\Rightarrow$ nothing about $\Omega$\\
+\end{tabular}
+\end{center}
+The predeclared second-cycle test is therefore not a precaution but the only
+step that carries an inference.
+
+\section{Empirical situation}\label{sec:empirical}
+
+Temperature-cycled Raman measurements on monolayer CVD graphene on
+SiO$_2$~\cite{Dabas2026} give reproducible first-cycle hysteresis in the $G$ and
+$2D$ peak positions, with loop areas well above fit uncertainty (independently
+re-fitted: $744\pm22$ and $692\pm28$\,cm$^{-1}$K at spot~1). The loop, however,
+does \emph{not} close at $300$\,K: the cooling branch returns $+4.95$\,cm$^{-1}$
+($G$, spot~1) above the heating branch. By Theorem~\ref{thm:B} this first-cycle
+observation is compatible with an irreversible component (adsorbate desorption
+or strain release) and does not establish reversible curvature. A predeclared
+decision rule has been registered: reopen ratio $\geq0.6$ on both bands supports
+curvature; $\leq0.2$ indicates irreversible drift~\cite{ThermoRepro}. The
+measurement is pending.
+
+\section{Conjectured dynamics and its obligations}\label{sec:conj}
+
+The following are stated as conjectures. Each names the obligation a derivation
+must discharge; none is used to support the claims of Sec.~\ref{sec:proved}.
+
+We take as the working dynamics, with $u=ct-r$ and energy density
+$\cE(u,\theta,\phi)$,
+\begin{equation}\label{eq:dyn}
+\partial_u\cE=\alpha_G\cE^2+\alpha_\Lambda\cE_{\rm vac}+\epsilon\,\mathcal{F}[\cE],
+\end{equation}
+and ask what, if anything, justifies it.
+
+\begin{theorem}[Invariance alone selects nothing]\label{thm:I}
+On an information-invariant chart $\omega=d\Phi$, and every
+potential-transporting evolution $\partial_u\Phi=f(\Phi)$ preserves exactness,
+for arbitrary $f$. The dynamics compatible with $\delta\cI=0$ therefore form an
+infinite-dimensional family, and \eqref{eq:dyn} is not derivable from
+Definition~\ref{def:ii}.
+\end{theorem}
+
+\begin{theorem}[Minimal scale usage selects the quadratic law]\label{thm:J}
+For $\partial_u\cE=\alpha_n\cE^n$ the coupling must satisfy
+$[\alpha_n]=M^{1-n}L^{n-2}T^{2n-2}$. No $n$ admits a coupling built from
+$\{G,c\}$ alone. Admitting a single new length $\lambda$ gives uniquely
+$\alpha_n=G^{\,n-1}c^{\,4-4n}\lambda^{\,2n-3}$, and requiring $\lambda$ to appear
+exactly once ($d=1$) forces $n=2$, with $\alpha_2=G\lambda/c^4$.
+\end{theorem}
+
+Two consequences. First, the quadratic term is not arbitrary once one states the
+selection principle --- one new scale, used once --- but it does not follow from
+invariance. Second, the coupling written as $\alpha_G\sim G/c^4$ is short by
+exactly one length; by Theorem~\ref{thm:G} the length the theory itself supplies
+is the cosmological $L_\cE$, giving $\alpha_2=1/(c^2\sqrt{G\cE})$. We record
+\eqref{eq:dyn} as a conjecture with that stated provenance:
+
+\begin{conjecture}[Null-coordinate realisation]\label{conj:dyn}
+Equation~\eqref{eq:dyn} with $\alpha_2=G\lambda/c^4$ is the physically realised
+dynamics. \textbf{Obligation D1$'$:} justify the selection principle itself, and
+the identification $\lambda=L_\cE$.
+\end{conjecture}
+
+\subsection{Where a complex phase can come from (proved)}
+
+The step usually left implicit is the appearance of a complex phase in a real
+theory. Its finite content is settled.
+
+\begin{theorem}[Real flow $=$ Schr\"odinger flow]\label{thm:C}
+Let $x'=Ax$ be a real linear flow on $\mathbb{R}^{2n}$ and $J$ an orthogonal
+complex structure ($J^2=-I$, $J^{T}=-J$). Then $A^{T}=-A$ and $AJ=JA$ if and
+only if $H:=-\hbar JA$ is Hermitian for $J$, in which case the flow reads
+$i\hbar\psi'=H\psi$ under $x\leftrightarrow\psi$; equivalently, the flow is
+complex linear and norm preserving.
+\end{theorem}
+
+\begin{theorem}[One-channel obstruction]\label{thm:D}
+An odd-dimensional real flow admits no complex structure, since
+$\det(J)^2=\det(-I)=(-1)^N$. In particular a single scalar channel
+$x'=ax$ is never a Schr\"odinger flow, for any $a$ and any rescaling.
+\end{theorem}
+
+Linearising Conjecture~\ref{conj:dyn} about a background gives, at leading
+order, the single real channel
+$\partial_u\delta\cE=2\alpha_G\bar\cE\,\delta\cE+\epsilon\,\mathcal{F}'\delta\cE$.
+By Theorem~\ref{thm:D} this cannot be Schr\"odinger evolution as it stands, and
+by Theorem~\ref{thm:C} what a derivation must supply is explicit:
+
+\begin{itemize}
+\item[\textbf{D2a}] a conjugate channel $\pi$ of $\delta\cE$ within the dynamics,
+and a complex structure $J$ on the pair $(\delta\cE,\pi)$;
+\item[\textbf{D2b}] antisymmetry of the linearised generator on that pair, i.e.\
+the quadratic self-interaction must contribute to the Hermitian $H$ and not to a
+symmetric part of $A$.
+\end{itemize}
+
+The first is supplied by structure that is already derived, not assumed. An
+oriented cut yields a quarter turn $\iota$ with $\iota^2=-1$ and
+$\iota^\dagger=-\iota$~\cite{RKF-F00E}, and every generator splits uniquely
+relative to the cut $J$ into an even part preserving the two sheets and an odd
+part transporting between them~\cite{RKF-41}. Taking the conjugate channel to
+be the image on the opposite sheet gives:
+
+\begin{theorem}[Cut supplies the pair; phase is the odd part]\label{thm:E}
+Let $J$ be a balanced cut, and write the generator in the sheet basis as blocks
+$A=\bigl(\begin{smallmatrix}A_{++}&B\\ C&A_{--}\end{smallmatrix}\bigr)$ with
+$\iota=\bigl(\begin{smallmatrix}0&-I\\ I&0\end{smallmatrix}\bigr)$. Then
+$A\iota=\iota A$ iff $A_{++}=A_{--}$ and $C=-B$; $A^{T}=-A$ iff the diagonal
+blocks are antisymmetric and $C=-B^{T}$; both hold iff the diagonal blocks are
+equal and antisymmetric and $B$ is symmetric, in which case $H=-\hbar\iota A$ is
+Hermitian and Theorem~\ref{thm:C} applies. A purely cut-even generator never
+mixes the sheets and produces no phase, and the symmetric part of $A$ is exactly
+the damping: $d|x|^2/du=2x^{T}A_{\rm sym}x$.
+\end{theorem}
+
+\subsection{The computation, and its negative outcome}
+
+Theorem~\ref{thm:E} leaves one computation. We perform it on a transverse
+lattice with the parity cut, in exact arithmetic. The linearisation of
+Conjecture~\ref{conj:dyn} about a background contributes three operator types:
+pointwise multiplication $M$ by $2\alpha_G\bar\cE$ from the quadratic term, a
+second difference $L$ from any diffusive part of $\mathcal F$, and a first
+difference $D$ from any transport part. We find:
+
+\begin{itemize}
+\item $M$ is symmetric and cut even; it contributes $d|x|^2/du=4\alpha_G\bar\cE|x|^2$,
+i.e.\ pure growth or decay, and no phase;
+\item $L$ is symmetric and negative semidefinite: diffusion, no phase;
+\item $D$ is antisymmetric and cut odd: it alone preserves the norm and meets
+the conditions of Theorem~\ref{thm:E};
+\item for $A=M+L+D$ the symmetric part is exactly $M+L$, which does not vanish
+at a nonzero background; a coordinate rescaling is a similarity and cannot
+remove it.
+\end{itemize}
+
+\noindent\textbf{Result.} The linearised dynamics of
+Conjecture~\ref{conj:dyn} is \emph{not} a Schr\"odinger generator. It is a
+damped (or amplified) rotation. The emergent-quantum step therefore does not
+follow from the equation as written, and we withdraw it as a claim. What
+survives is a sharp conditional: the step holds if and only if the dynamics is
+amended so that the cut-even symmetric part cancels at the background,
+$M+L=0$, leaving the cut-odd transport term as the generator. Theorems~\ref{thm:A}
+and~\ref{thm:B} are independent of this and are unaffected.
+
+\subsection{Emergent geometry: three obstructions}
+
+\begin{theorem}[Degree-of-freedom no-go]\label{thm:K}
+In four dimensions the metric has ten components; four coordinate conditions and
+four constraints leave two propagating polarisations. The dynamics carries one
+scalar function, so it can reproduce at most a one-function sector
+(spherically symmetric or conformally flat) and cannot generate two independent
+polarisations.
+\end{theorem}
+
+\begin{theorem}[The Clausius route imports $\hbar$]\label{thm:L}
+No temperature is constructible from acceleration and $c$ alone in
+$(M,L,T,\Theta)$; the Unruh temperature requires $\hbar$ and $k_B$. Hence the
+derivation of the field equations from $dQ=T\,dS$~\cite{Jacobson1995} is
+unavailable to a dynamics claiming to be deterministic and non-quantised.
+\end{theorem}
+
+\begin{theorem}[The scalar source is not conserved]\label{thm:M}
+The contracted Bianchi identity forces $\nabla^\mu T_{\mu\nu}=0$. The law
+$\partial_u\cE=\alpha\cE^2+\dots$ is not a divergence: on a periodic transverse
+lattice the total changes, whereas a genuine divergence leaves it fixed.
+\end{theorem}
+
+We therefore withdraw the emergent-gravity claim as a derivation. Three
+conditional routes remain and are stated rather than assumed: restrict to the
+one-function sector; admit $\hbar$ explicitly and give up deriving quantum
+structure; or supply the compensating flux, or a second field, that restores
+conservation of the source.
+
+\subsection{The regulator scale (settled)}
+
+The finiteness claim usually attached to Conjecture~\ref{conj:grav} is
+$\langle\cE(x)\cE(x')\rangle\sim(r^2+L_P^2)^{-1}$ with
+$L_P=\sqrt{\hbar G/c^3}$. Dimensional analysis decides its status.
+
+\begin{theorem}[No Planck length without $\hbar$]\label{thm:F}
+In the $(M,L,T)$ dimension group, $\hbar$ is not in the span of $\{c,G\}$, and no
+product $G^ac^b$ is a length. Hence $L_P$ cannot be constructed from the
+deterministic constants; admitting it presupposes $\hbar$.
+\end{theorem}
+
+\begin{theorem}[The theory's own regulator is cosmological]\label{thm:G}
+From $\{c,G,\cE\}$ a length does exist, uniquely up to powers:
+$L_\cE=c^2/\sqrt{G\cE}$, equivalently $\Lambda^{-1/2}$. For a vacuum energy
+density of the observed order, $L_\cE/L_P\sim10^{61}$.
+\end{theorem}
+
+Consequently the model regularises, if at all, at a cosmological scale;
+inserting $L_P$ is an assumption and the ultraviolet-finiteness claim of the
+earlier draft is withdrawn. The theory must either admit $\hbar$ as a primitive
+--- forfeiting the claim to derive quantum structure --- or work with
+$L_\cE$.
+
+\subsection{The decoherence rate (corrected)}
+
+\begin{theorem}[The printed rate is not a rate]\label{thm:H}
+$Gm^2/(\hbar V)$ has dimensions $M^0L^{-2}T^{-1}$: a rate per unit area. The
+unique repair replacing the volume by a length, $Gm^2/(\hbar R)$, is
+dimensionally a rate and is exactly the Di\'osi--Penrose expression
+$E_G/\hbar$ with $E_G\sim Gm^2/R$~\cite{Diosi1987,Penrose1996}.
+\end{theorem}
+
+With $m=10^{-17}$\,kg and $R=V^{1/3}=10^{-7}$\,m the repaired rate is
+$6.3\times10^{-4}\,\mathrm{s^{-1}}$, of the order quoted in the earlier draft ---
+but it is a Di\'osi--Penrose number, recovered only after the correction. We
+therefore state the result as a \emph{consistency requirement}: any emergent
+gravity of this kind must reproduce $E_G/\hbar$ in this regime. It becomes a
+prediction only if one of the following is supplied: a derivation of the
+coefficient, which DP fixes only through a choice of regularisation length; a
+mass or geometry regime of departure; or a dependence on shape or entropy
+gradient, which DP does not carry. Optomechanical tests discriminate such
+departures~\cite{Aspelmeyer2014,Bassi2013}, not the agreement.
+
+\section{Summary of status}\label{sec:summary}
+
+Every claim below is either proved with a machine-checked certificate that is
+regenerated on each commit, or marked as a stated condition. No claim rests on
+an argument that is not reproduced by the accompanying code.
+
+\begin{center}
+\begin{tabular}{lll}
+\hline
+Statement & Status & Where\\
+\hline
+$\delta\cI=0\Leftrightarrow\Omega=0\Leftrightarrow$ exact & proved & Thm~\ref{thm:A}\\
+One cycle does not witness curvature & proved & Thm~\ref{thm:B}\\
+Real flow is Schr\"odinger iff $J$, antisym. & proved & Thm~\ref{thm:C}\\
+One channel admits no complex structure & proved & Thm~\ref{thm:D}\\
+Cut supplies the pair; phase is odd part & proved & Thm~\ref{thm:E}\\
+No Planck length without $\hbar$ & proved & Thm~\ref{thm:F}\\
+Own regulator is cosmological & proved & Thm~\ref{thm:G}\\
+Printed decoherence rate is not a rate & proved & Thm~\ref{thm:H}\\
+Invariance alone selects no dynamics & proved & Thm~\ref{thm:I}\\
+Minimal scale usage selects $n=2$ & proved & Thm~\ref{thm:J}\\
+One scalar cannot carry two polarisations & proved & Thm~\ref{thm:K}\\
+Clausius route imports $\hbar$ & proved & Thm~\ref{thm:L}\\
+Scalar source is not conserved & proved & Thm~\ref{thm:M}\\
+$\delta\cI=0\Leftrightarrow\chi\equiv1$ & proved & Thm~\ref{thm:N}\\
+$\Omega=0$ does not imply $\chi\equiv1$ & proved & Thm~\ref{thm:O}\\
+Selection principle itself; $\lambda=L_\cE$ & stated condition & D1$'$\\
+Reversible curvature in graphene & measurement pending & Sec.~\ref{sec:empirical}\\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Conclusion}
+
+Information invariance, defined as stationarity of the loop functional, is
+equivalent on finite charts to vanishing thermodynamic curvature and to
+exactness --- a proved statement with an executable certificate. The
+experimental signature usually quoted for curvature, a nonzero one-cycle loop
+area, is proved insufficient; the decision is deferred to a predeclared
+second-cycle test. The dynamical programme connecting this principle to quantum and gravitational
+phenomena is stated as conjectures with named obligations, and every obligation
+is carried to a verdict rather than left open. The emergent-gravity claim is
+withdrawn on three independent grounds --- degree-of-freedom counting, the
+$\hbar$-dependence of the thermodynamic route, and non-conservation of the
+scalar source. For the quantum step
+the obligation is discharged with a negative outcome: the proposed energy
+dynamics generates a damped rotation rather than unitary evolution, and the
+step survives only as the explicit condition that the cut-even symmetric part
+cancel at the background. We regard reporting this as more useful than
+asserting the step.
+
+\section*{Reproducibility}
+All theorems marked ``proved'' are accompanied by executable certificates over
+exact rational arithmetic, with pinned SHA-256 digests regenerated by continuous
+integration on every commit; tampering with any recorded value changes the
+digest and fails the build. Source, certificates and the claim ledger:
+\texttt{Parveen117/Publications}, \texttt{papers/information-invariance}.
+
+\begin{acknowledgments}
+Underlying Raman data were acquired at the Centre for Nano Science and
+Engineering, Indian Institute of Science, Bengaluru.
+\end{acknowledgments}
+
+\begin{thebibliography}{99}
+\bibitem{Dabas2026} M.~Dabas, ``Geometric Completion of Thermodynamic Response,''
+arXiv:2603.20773 [cond-mat.stat-mech] (2026).
+\bibitem{ThermoRepro} \texttt{Parveen117/Thermodynamics-Reproducibility},
+campaign \texttt{T02\_RAMAN\_THERMAL\_HYSTERESIS} (2026).
+\bibitem{PlanckCollab} Dimensional statements in Sec.~V use only $(M,L,T)$ exponents; the numerical illustration uses a vacuum energy density of order $10^{-9}$\,J\,m$^{-3}$.
+\bibitem{RKF-F00E} Recognition-Kernel Framework, \texttt{theorems/foundation/F00E\_NATIVE\_EULER\_FROM\_IOTA\_COMPLEX} (PROVED), Zenodo doi:10.5281/zenodo.21760119.
+\bibitem{RKF-41} Recognition-Kernel Framework, \texttt{theorum/41\_cut\_graded\_universal\_generator\_theorem} (certified, pin \texttt{34afc445\ldots}), \emph{ibid}.
+\bibitem{Jacobson1995} T.~Jacobson, Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
+\bibitem{Diosi1987} L.~Di\'osi, Phys.\ Lett.\ A \textbf{120}, 377 (1987).
+\bibitem{Penrose1996} R.~Penrose, Gen.\ Rel.\ Grav.\ \textbf{28}, 581 (1996).
+\bibitem{Aspelmeyer2014} M.~Aspelmeyer, T.~J.~Kippenberg, and F.~Marquardt,
+Rev.\ Mod.\ Phys.\ \textbf{86}, 1391 (2014).
+\bibitem{Bassi2013} A.~Bassi \emph{et al.}, Rev.\ Mod.\ Phys.\ \textbf{85}, 471 (2013).
+\end{thebibliography}
+
+\end{document}

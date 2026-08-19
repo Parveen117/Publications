@@ -1,0 +1,36 @@
+name: Information Invariance certificates
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Regenerate certificates and check pin
+        run: |
+          python papers/information-invariance/certificates/l1_certificates.py
+          python papers/information-invariance/certificates/d2_phase_origin.py
+          python papers/information-invariance/certificates/d2a_cut_supplies_structure.py
+          python papers/information-invariance/certificates/d2b_linearisation_verdict.py
+          python papers/information-invariance/certificates/d3_regulator_scale.py
+          python papers/information-invariance/certificates/d4_decoherence_audit.py
+          python papers/information-invariance/certificates/d1_selection_principle.py
+          python papers/information-invariance/certificates/d3prime_emergent_einstein.py
+          python papers/information-invariance/certificates/micro_chi_characterisation.py
+          git diff --exit-code papers/information-invariance/certificates/EXPECTED_L1.sha256 papers/information-invariance/certificates/EXPECTED_D2.sha256 papers/information-invariance/certificates/EXPECTED_D2A.sha256 papers/information-invariance/certificates/EXPECTED_D2B.sha256 papers/information-invariance/certificates/EXPECTED_D3.sha256 papers/information-invariance/certificates/EXPECTED_D4.sha256 papers/information-invariance/certificates/EXPECTED_D1.sha256 papers/information-invariance/certificates/EXPECTED_D3PRIME.sha256 papers/information-invariance/certificates/EXPECTED_MICRO.sha256
+      - name: Install pytest
+        run: python -m pip install pytest
+      - name: Tests
+        run: python -m pytest papers/information-invariance/tests -v

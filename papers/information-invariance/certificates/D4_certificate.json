@@ -1,0 +1,48 @@
+{
+  "certificate_sha256": "62027a022b59607624fc6c8418f1531a6a1bee77da95e024e2bf72dfa2776f83",
+  "claim_boundary": "Dimensional algebra is exact; the numerical illustration uses floating point and enters no verdict.",
+  "numeric_audit": {
+    "claimed_in_draft_s^-1": 0.001,
+    "inputs": {
+      "R_m": "1.000e-07",
+      "V_m3": 1e-21,
+      "m_kg": 1e-17
+    },
+    "printed_formula_units": "m^-2 s^-1 (not a rate)",
+    "printed_formula_value": "6.328e+10",
+    "reading": "the quoted 1e-3 s^-1 is recovered only by the repaired (Diosi-Penrose) formula",
+    "repaired_DP_rate_s^-1": "6.328e-04",
+    "repaired_within_one_order_of_claim": true
+  },
+  "obligation": {
+    "D4": "DISCHARGED WITH CORRECTION"
+  },
+  "protocol": "INFORMATION_INVARIANCE_D4_V1",
+  "scope": "Bears on the decoherence conjecture only; Theorems A and B are unaffected.",
+  "theorem_H_printed_rate_is_dimensionally_invalid": {
+    "checks": {
+      "printed_dimension_is_inverse_area_per_time": true,
+      "printed_formula_is_not_a_rate": true,
+      "repair_is_the_diosi_penrose_form": true,
+      "repair_with_length_is_a_rate": true
+    },
+    "printed_dimension_MLT": [
+      "0",
+      "-2",
+      "-1"
+    ],
+    "reading": "G m^2/(hbar V) has dimensions of rate per unit area; the unique natural repair replaces the volume by a length, giving exactly the Diosi-Penrose rate E_G/hbar.",
+    "repaired_dimension_MLT": [
+      "0",
+      "0",
+      "-1"
+    ],
+    "status": "PROVED"
+  },
+  "verdict": "Gamma ~ G m^2/(hbar V) is not a rate; its unique length-based repair is exactly the Diosi-Penrose rate G m^2/(hbar R). The draft's numerical value survives only under that repair, and is therefore a Diosi-Penrose number. No regime of departure from DP has been exhibited, so the result must be presented as a consistency requirement, not as an independent prediction.",
+  "what_would_make_it_a_prediction": [
+    "derive the coefficient (DP fixes it only up to the choice of regularisation length)",
+    "exhibit a mass or geometry regime where the information-invariant rate departs from E_G/hbar",
+    "predict the dependence on shape or on entropy gradient, which DP does not carry"
+  ]
+}
