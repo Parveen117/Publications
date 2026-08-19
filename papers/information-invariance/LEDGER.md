@@ -13,7 +13,10 @@ attempted here) · **RETRACTED** (present in v1, removed in v2 with reason).
 | E | On a balanced cut, a real generator is a Schrödinger generator iff its diagonal (cut-even) blocks are equal and antisymmetric and its transport (cut-odd) block is symmetric with C = −B; phase lives in the odd transporting part, damping in the symmetric part | `certificates/d2a_cut_supplies_structure.py` → `D2a_certificate.json` |
 | D | One-channel obstruction: an odd-dimensional real flow — in particular a single scalar channel — admits no complex structure (det J² = (−1)^N), so no rescaling of the scalar linearisation can yield Schrödinger evolution | same |
 
-Pins: `EXPECTED_L1.sha256`, `EXPECTED_D2.sha256`, `EXPECTED_D2A.sha256` (in `certificates/`) — regenerated in CI on every push.
+| N | Microscopic characterisation: with χ(Γ)=W(ΘΓ)/W(Γ), the weighted correlation obeys C_W(f,g)−C_W(g,f)=Σ W(1−χ) f·(g∘Θ) exactly, and χ≡1 ⟺ symmetry for all observables ⟺ vanishing antisymmetric response. Hence δ𝓘 = 0 is time-reversal invariance of the statistical weight | `certificates/micro_chi_characterisation.py` → `MICRO_certificate.json` |
+| O | Curvature is a *sufficient but not necessary* witness: χ≡1 ⇒ Ω=0 always, but an explicit two-orbit weight with χ≠1 has opposite orbit contributions whose coarse-grained total vanishes. A null curvature measurement is therefore uninformative about microscopic reversibility | same |
+
+Pins: `EXPECTED_L1.sha256`, `EXPECTED_D2.sha256`, `EXPECTED_D2A.sha256`, `EXPECTED_MICRO.sha256` (in `certificates/`) — regenerated in CI on every push.
 
 ## OPEN (named obligations, v2 §V)
 | id | obligation |

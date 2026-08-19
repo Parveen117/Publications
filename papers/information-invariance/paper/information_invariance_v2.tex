@@ -42,7 +42,10 @@ reduces that obligation to two explicit requirements, one of which is then
 discharged by the derived quarter turn and cut grading of the recognition
 framework; performing the remaining computation shows that the proposed energy
 dynamics fails the criterion, so the emergent-quantum step is withdrawn as a
-claim and retained only as an explicit conditional. We correct the associated decoherence formula, which as printed is not a rate,
+claim and retained only as an explicit conditional. We also give information invariance a microscopic reading: it is exactly
+time-reversal invariance of the statistical weight, and we show that a null
+curvature measurement is uninformative, so that only a repeated-cycle
+measurement can decide the question. We correct the associated decoherence formula, which as printed is not a rate,
 and identify its repair with the Di\'osi--Penrose expression, so that it is a
 consistency requirement rather than a new prediction; and we state which of our
 own Raman measurements currently do and do not support the framework.
@@ -114,6 +117,44 @@ irreversible drift and does not by itself establish $\iint\Omega\neq0$.
 Certificates for both theorems are in
 \texttt{papers/information-invariance/certificates}; the pinned SHA-256 is
 reproduced by continuous integration on every commit.
+
+\section{What information invariance means microscopically}\label{sec:micro}
+
+The companion work derives, for an ensemble with weight $W$ on a phase space
+carrying a time-reversal involution $\Theta$, the identity
+$L_{ij}-\varepsilon_i\varepsilon_jL_{ji}=\int\langle(1-\chi)J_i(0)J_j(t)\rangle_W\,dt$
+with $\chi(\Gamma)=W(\Theta\Gamma)/W(\Gamma)$, and identifies the coarse-grained
+antisymmetric part with $\Omega$~\cite{Dabas2026}. Chaining this with
+Theorem~\ref{thm:A} gives information invariance a microscopic reading, and one
+leg of the chain turns out to be one-directional.
+
+\begin{theorem}[Microscopic characterisation]\label{thm:N}
+On a finite phase space, with $C_W(f,g)=\sum_\Gamma W(\Gamma)f(\Gamma)g(\Theta\Gamma)$,
+\begin{equation}
+C_W(f,g)-C_W(g,f)=\sum_\Gamma W(\Gamma)\bigl[1-\chi(\Gamma)\bigr]f(\Gamma)g(\Theta\Gamma),
+\end{equation}
+exactly, and the following are equivalent: $\chi\equiv1$; $C_W$ is symmetric for
+all observables; the antisymmetric response vanishes. Hence $\delta\cI=0$ is
+exactly time-reversal invariance of the statistical weight.
+\end{theorem}
+
+\begin{theorem}[Curvature is sufficient, not necessary]\label{thm:O}
+$\chi\equiv1\Rightarrow\Omega=0$ always. The converse fails: for
+$\Theta=(01)(23)$ and $W=(3,1,1,3)$ the two orbit contributions are $+2$ and
+$-2$, so $\chi\neq1$ while the coarse-grained total vanishes.
+\end{theorem}
+
+Together with Theorem~\ref{thm:B} this bounds what a hysteresis experiment can
+decide:
+\begin{center}
+\begin{tabular}{ll}
+$\Omega\neq0$ across cycles & $\Rightarrow\ \chi\neq1$: informative\\
+$\Omega=0$ & $\Rightarrow$ nothing about $\chi$\\
+one-cycle loop area $\neq0$ & $\Rightarrow$ nothing about $\Omega$\\
+\end{tabular}
+\end{center}
+The predeclared second-cycle test is therefore not a precaution but the only
+step that carries an inference.
 
 \section{Empirical situation}\label{sec:empirical}
 

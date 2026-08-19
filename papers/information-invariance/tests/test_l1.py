@@ -173,3 +173,26 @@ def test_D3prime_negative_and_pinned():
     c = R3p.build()
     assert c["obligation"]["D3'"].startswith("DISCHARGED WITH NEGATIVE")
     assert c["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D3PRIME.sha256").read_text().strip()
+
+
+import micro_chi_characterisation as MC
+
+def test_theorem_N_and_O_proved():
+    c = MC.build()
+    assert c["theorem_N_microscopic_characterisation"]["status"] == "PROVED"
+    assert c["theorem_O_curvature_is_sufficient_not_necessary"]["status"] == "PROVED"
+
+def test_identity_and_both_directions():
+    ch = MC.build()["theorem_N_microscopic_characterisation"]["checks"]
+    assert ch["identity_exact"] and ch["chi_one_implies_symmetric"] and ch["symmetric_for_all_implies_chi_one"]
+
+def test_curvature_null_result_is_uninformative():
+    o = MC.build()["theorem_O_curvature_is_sufficient_not_necessary"]
+    assert o["checks"]["microscopic_antisymmetric_part_nonzero"] and o["checks"]["coarse_grained_curvature_vanishes"]
+
+def test_experimental_logic_recorded():
+    e = MC.build()["experimental_logic"]
+    assert "informative" in e["Omega_nonzero_across_cycles"] and "nothing" in e["Omega_zero"]
+
+def test_micro_certificate_pinned():
+    assert MC.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_MICRO.sha256").read_text().strip()
