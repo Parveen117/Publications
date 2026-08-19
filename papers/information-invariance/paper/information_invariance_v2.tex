@@ -33,13 +33,16 @@ accompanied by executable certificates over exact rational arithmetic. We then
 state, explicitly as conjectures rather than results, a null-coordinate energy
 dynamics compatible with the principle, together with the emergent-quantum,
 emergent-gravity and gravitational-decoherence claims that a full derivation would have to
-establish; each carries a named open obligation. For the quantum step we prove
+establish; each carries a named open obligation. For the quantum step we carry
+the analysis to a conclusion: we prove
 the precise structural criterion --- a real linear flow is a Schr\"odinger flow
 exactly when it carries a complex structure with an antisymmetric commuting
 generator --- and prove that a single real channel never satisfies it, which
 reduces that obligation to two explicit requirements, one of which is then
 discharged by the derived quarter turn and cut grading of the recognition
-framework, leaving a single stated computation. We identify a
+framework; performing the remaining computation shows that the proposed energy
+dynamics fails the criterion, so the emergent-quantum step is withdrawn as a
+claim and retained only as an explicit conditional. We identify a
 falsifiable experimental route, and we state which of our own Raman
 measurements currently do and do not support the framework.
 \end{abstract}
@@ -193,13 +196,34 @@ mixes the sheets and produces no phase, and the symmetric part of $A$ is exactly
 the damping: $d|x|^2/du=2x^{T}A_{\rm sym}x$.
 \end{theorem}
 
-Obligation~D2 therefore reduces to a single computation, D2b: in the sheet basis
-of the cut, does the linearised energy dynamics have equal antisymmetric
-diagonal blocks and a symmetric transport block? Failure of the first is damping
-rather than phase; failure of the second is a non-Hermitian generator. We do not
-claim it holds; we claim that this, and only this, is what remains, and that the
-usual phrase ``the fluctuation dynamics yield the Schr\"odinger equation'' is
-not available until it is done.
+\subsection{The computation, and its negative outcome}
+
+Theorem~\ref{thm:E} leaves one computation. We perform it on a transverse
+lattice with the parity cut, in exact arithmetic. The linearisation of
+Conjecture~\ref{conj:dyn} about a background contributes three operator types:
+pointwise multiplication $M$ by $2\alpha_G\bar\cE$ from the quadratic term, a
+second difference $L$ from any diffusive part of $\mathcal F$, and a first
+difference $D$ from any transport part. We find:
+
+\begin{itemize}
+\item $M$ is symmetric and cut even; it contributes $d|x|^2/du=4\alpha_G\bar\cE|x|^2$,
+i.e.\ pure growth or decay, and no phase;
+\item $L$ is symmetric and negative semidefinite: diffusion, no phase;
+\item $D$ is antisymmetric and cut odd: it alone preserves the norm and meets
+the conditions of Theorem~\ref{thm:E};
+\item for $A=M+L+D$ the symmetric part is exactly $M+L$, which does not vanish
+at a nonzero background; a coordinate rescaling is a similarity and cannot
+remove it.
+\end{itemize}
+
+\noindent\textbf{Result.} The linearised dynamics of
+Conjecture~\ref{conj:dyn} is \emph{not} a Schr\"odinger generator. It is a
+damped (or amplified) rotation. The emergent-quantum step therefore does not
+follow from the equation as written, and we withdraw it as a claim. What
+survives is a sharp conditional: the step holds if and only if the dynamics is
+amended so that the cut-even symmetric part cancels at the background,
+$M+L=0$, leaving the cut-odd transport term as the generator. Theorems~\ref{thm:A}
+and~\ref{thm:B} are independent of this and are unaffected.
 
 \begin{conjecture}[Finite correlations and emergent geometry]\label{conj:grav}
 $\langle\cE(x)\cE(x')\rangle\sim(r^2+L_P^2)^{-1}$, and in the adiabatic limit the
@@ -224,9 +248,13 @@ equivalent on finite charts to vanishing thermodynamic curvature and to
 exactness --- a proved statement with an executable certificate. The
 experimental signature usually quoted for curvature, a nonzero one-cycle loop
 area, is proved insufficient; the decision is deferred to a predeclared
-second-cycle test. The dynamical programme connecting this principle to quantum
-and gravitational phenomena is stated here as conjectures with named
-obligations, and is not claimed as a result.
+second-cycle test. The dynamical programme connecting this principle to quantum and gravitational
+phenomena is stated as conjectures with named obligations. For the quantum step
+the obligation is discharged with a negative outcome: the proposed energy
+dynamics generates a damped rotation rather than unitary evolution, and the
+step survives only as the explicit condition that the cut-even symmetric part
+cancel at the background. We regard reporting this as more useful than
+asserting the step.
 
 \begin{acknowledgments}
 Underlying Raman data were acquired at the Centre for Nano Science and

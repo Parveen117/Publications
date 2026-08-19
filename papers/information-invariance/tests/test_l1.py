@@ -59,3 +59,25 @@ def test_D2a_discharged_D2b_open():
 
 def test_D2a_certificate_pinned():
     assert E.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D2A.sha256").read_text().strip()
+
+
+import d2b_linearisation_verdict as B2
+
+def test_D2b_executed():
+    assert B2.build()["status"] == "EXECUTED"
+
+def test_D2b_negative_verdict_recorded_not_hidden():
+    c = B2.build()
+    assert c["results"]["R4_full_generator"]["verdict"] == "NOT_UNITARY_DAMPED_ROTATION"
+    assert c["results"]["theorem_E_conditions_on_A"]["passes"] is False
+    assert "NEGATIVE RESULT" in c["verdict"]
+
+def test_D2b_transport_term_alone_is_unitary():
+    r = B2.build()["results"]["R3_D_antisymmetric_cut_odd_gives_phase"]
+    assert r["antisymmetric"] and r["norm_preserved"] and r["verdict"] == "PHASE"
+
+def test_D2b_certificate_pinned():
+    assert B2.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D2B.sha256").read_text().strip()
+
+def test_theorems_A_B_unaffected_by_D2b():
+    assert "unaffected" in B2.build()["scope"]

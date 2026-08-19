@@ -1,0 +1,48 @@
+{
+  "certificate_sha256": "fbc86c58bbdf36cbb8d34d56029cd52bd95cc043bd167b2b1d4858dbf7301bc5",
+  "lattice_points": 8,
+  "protocol": "INFORMATION_INVARIANCE_D2B_V1",
+  "results": {
+    "R1_M_symmetric_cut_even_pure_growth": {
+      "antisymmetric": false,
+      "cut_even": true,
+      "cut_odd_part_zero": true,
+      "norm_rate_equals_2coeff_normsq": true,
+      "symmetric": true,
+      "verdict": "NO_PHASE_PURE_GROWTH_OR_DECAY"
+    },
+    "R2_L_symmetric_diffusive": {
+      "antisymmetric": false,
+      "diagonal_negative": true,
+      "symmetric": true,
+      "verdict": "NO_PHASE_DIFFUSION"
+    },
+    "R3_D_antisymmetric_cut_odd_gives_phase": {
+      "antisymmetric": true,
+      "cut_even_part_zero": true,
+      "cut_odd": true,
+      "norm_preserved": true,
+      "verdict": "PHASE"
+    },
+    "R4_full_generator": {
+      "norm_rate_nonzero": true,
+      "schrodinger_iff_condition": "M + L = 0 at the background",
+      "symmetric_part_is_M_plus_L": true,
+      "symmetric_part_vanishes": false,
+      "verdict": "NOT_UNITARY_DAMPED_ROTATION"
+    },
+    "R5_rescaling_cannot_remove_damping": {
+      "norm_rate_sign_unchanged": true,
+      "similarity_leaves_generator_unchanged": true,
+      "verdict": "DAMPING_IS_INVARIANT"
+    },
+    "theorem_E_conditions_on_A": {
+      "A_antisymmetric": false,
+      "A_commutes_with_parity_cut": false,
+      "passes": false
+    }
+  },
+  "scope": "This bears on Conjecture 'emergent Schrodinger dynamics' only. Theorems A and B (information invariance = flat sector; one cycle does not witness curvature) are independent and unaffected.",
+  "status": "EXECUTED",
+  "verdict": "D2b DISCHARGED WITH NEGATIVE RESULT: the linearised dynamics is not a Schrodinger generator. The quadratic self-interaction enters the symmetric (damping) part, so the flow is a damped or amplified rotation, not unitary evolution. Unitarity requires the cut-even symmetric part to vanish at the background (M + L = 0), leaving the cut-odd transport term as generator \u2014 a concrete modelling requirement on the dynamics."
+}
