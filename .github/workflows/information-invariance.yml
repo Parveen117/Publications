@@ -26,7 +26,8 @@ jobs:
           python papers/information-invariance/certificates/d2b_linearisation_verdict.py
           python papers/information-invariance/certificates/d3_regulator_scale.py
           python papers/information-invariance/certificates/d4_decoherence_audit.py
-          git diff --exit-code papers/information-invariance/certificates/EXPECTED_L1.sha256 papers/information-invariance/certificates/EXPECTED_D2.sha256 papers/information-invariance/certificates/EXPECTED_D2A.sha256 papers/information-invariance/certificates/EXPECTED_D2B.sha256 papers/information-invariance/certificates/EXPECTED_D3.sha256 papers/information-invariance/certificates/EXPECTED_D4.sha256
+          python papers/information-invariance/certificates/d1_selection_principle.py
+          git diff --exit-code papers/information-invariance/certificates/EXPECTED_L1.sha256 papers/information-invariance/certificates/EXPECTED_D2.sha256 papers/information-invariance/certificates/EXPECTED_D2A.sha256 papers/information-invariance/certificates/EXPECTED_D2B.sha256 papers/information-invariance/certificates/EXPECTED_D3.sha256 papers/information-invariance/certificates/EXPECTED_D4.sha256 papers/information-invariance/certificates/EXPECTED_D1.sha256
       - name: Install pytest
         run: python -m pip install pytest
       - name: Tests

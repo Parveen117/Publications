@@ -125,3 +125,26 @@ def test_D4_corrected_and_not_claimed_novel():
 
 def test_D4_certificate_pinned():
     assert R4.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D4.sha256").read_text().strip()
+
+
+import d1_selection_principle as R1
+
+def test_theorem_I_and_J_proved():
+    c = R1.build()
+    assert c["theorem_I_invariance_alone_selects_nothing"]["status"] == "PROVED"
+    assert c["theorem_J_minimal_scale_usage_selects_the_quadratic_law"]["status"] == "PROVED"
+
+def test_invariance_alone_selects_nothing():
+    ch = R1.build()["theorem_I_invariance_alone_selects_nothing"]["checks"]
+    assert ch["family_is_infinite_dimensional"] and ch["control_non_potential_perturbation_creates_curvature"]
+
+def test_minimal_scale_usage_selects_quadratic():
+    j = R1.build()["theorem_J_minimal_scale_usage_selects_the_quadratic_law"]
+    assert j["checks"]["minimal_scale_usage_selects_n_equals_2"]
+    assert j["selected"]["n"] == 2 and j["solutions"]["2"] == ["1", "-4", "1"]
+
+def test_D1_partially_discharged_not_overclaimed():
+    assert R1.build()["obligation"]["D1"].startswith("PARTIALLY DISCHARGED")
+
+def test_D1_certificate_pinned():
+    assert R1.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D1.sha256").read_text().strip()

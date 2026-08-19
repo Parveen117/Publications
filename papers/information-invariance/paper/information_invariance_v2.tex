@@ -134,15 +134,40 @@ measurement is pending.
 The following are stated as conjectures. Each names the obligation a derivation
 must discharge; none is used to support the claims of Sec.~\ref{sec:proved}.
 
-\begin{conjecture}[Null-coordinate realisation]\label{conj:dyn}
-With $u=ct-r$ and energy density $\cE(u,\theta,\phi)$, an admissible local
-realisation of $\delta\cI=0$ takes the form
-\begin{equation}
-\partial_u\cE=\alpha_G\cE^2+\alpha_\Lambda\cE_{\rm vac}+\epsilon\,\mathcal{F}[\cE].
+We take as the working dynamics, with $u=ct-r$ and energy density
+$\cE(u,\theta,\phi)$,
+\begin{equation}\label{eq:dyn}
+\partial_u\cE=\alpha_G\cE^2+\alpha_\Lambda\cE_{\rm vac}+\epsilon\,\mathcal{F}[\cE],
 \end{equation}
-\textbf{Obligation D1:} derive this form \emph{from} Definition~\ref{def:ii}
-rather than positing it; in particular show which variational problem
-$\delta\cI=0$ makes $\alpha_G\cE^2$ the unique quadratic term.
+and ask what, if anything, justifies it.
+
+\begin{theorem}[Invariance alone selects nothing]\label{thm:I}
+On an information-invariant chart $\omega=d\Phi$, and every
+potential-transporting evolution $\partial_u\Phi=f(\Phi)$ preserves exactness,
+for arbitrary $f$. The dynamics compatible with $\delta\cI=0$ therefore form an
+infinite-dimensional family, and \eqref{eq:dyn} is not derivable from
+Definition~\ref{def:ii}.
+\end{theorem}
+
+\begin{theorem}[Minimal scale usage selects the quadratic law]\label{thm:J}
+For $\partial_u\cE=\alpha_n\cE^n$ the coupling must satisfy
+$[\alpha_n]=M^{1-n}L^{n-2}T^{2n-2}$. No $n$ admits a coupling built from
+$\{G,c\}$ alone. Admitting a single new length $\lambda$ gives uniquely
+$\alpha_n=G^{\,n-1}c^{\,4-4n}\lambda^{\,2n-3}$, and requiring $\lambda$ to appear
+exactly once ($d=1$) forces $n=2$, with $\alpha_2=G\lambda/c^4$.
+\end{theorem}
+
+Two consequences. First, the quadratic term is not arbitrary once one states the
+selection principle --- one new scale, used once --- but it does not follow from
+invariance. Second, the coupling written as $\alpha_G\sim G/c^4$ is short by
+exactly one length; by Theorem~\ref{thm:G} the length the theory itself supplies
+is the cosmological $L_\cE$, giving $\alpha_2=1/(c^2\sqrt{G\cE})$. We record
+\eqref{eq:dyn} as a conjecture with that stated provenance:
+
+\begin{conjecture}[Null-coordinate realisation]\label{conj:dyn}
+Equation~\eqref{eq:dyn} with $\alpha_2=G\lambda/c^4$ is the physically realised
+dynamics. \textbf{Obligation D1$'$:} justify the selection principle itself, and
+the identification $\lambda=L_\cE$.
 \end{conjecture}
 
 \subsection{Where a complex phase can come from (proved)}

@@ -31,6 +31,8 @@ Pins: `EXPECTED_L1.sha256`, `EXPECTED_D2.sha256`, `EXPECTED_D2A.sha256` (in `cer
 
 - **D4 (decoherence prediction).** Formula corrected (dimensional error), identified with Diósi–Penrose, and demoted from prediction to consistency check.
 
+- **D1 (origin of the dynamics).** Negative half: invariance alone derives nothing. Positive half: the quadratic law follows from a *stated* selection principle (one new length, used once), which also repairs the coupling's dimensions.
+
 ## RETRACTED from v1 (with reason)
 - "Validated Onsager violations" / "absence of defect-driven entropy generation" → the measured first-cycle loops **do not close** at 300 K; by Theorem B the observation is compatible with irreversible drift. Replaced by the honest statement plus the predeclared cycle-2 rule (T02).
 - "Reproducibility across material platforms" → one platform (CVD graphene on SiO₂), two spots, one cycle. Rewritten.
