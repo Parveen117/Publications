@@ -1,0 +1,28 @@
+name: Information Invariance certificates
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Regenerate certificates and check pin
+        run: |
+          python papers/information-invariance/certificates/l1_certificates.py
+          git diff --exit-code papers/information-invariance/certificates/EXPECTED_L1.sha256
+      - name: Install pytest
+        run: python -m pip install pytest
+      - name: Tests
+        run: python -m pytest papers/information-invariance/tests -v

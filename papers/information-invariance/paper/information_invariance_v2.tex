@@ -1,0 +1,191 @@
+\documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib]{revtex4-2}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cE}{\mathcal{E}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{conjecture}{Conjecture}
+
+\begin{document}
+
+\title{Information Invariance as a Selection Principle:\\
+Proved Finite Structure, and Conjectured Emergent Dynamics}
+
+\author{Monty Dabas}
+\affiliation{Celextrix Private Limited, New Delhi 110086, India}
+\email{montydabas@celextrix.org}
+
+\date{\today}
+
+\begin{abstract}
+We give a concrete definition of information invariance for thermodynamic
+response charts: the stationarity of the loop functional of the entropy-scaled
+accessibility one-form. On a finite chart we prove two statements. First,
+information invariance is \emph{equivalent} to vanishing thermodynamic
+curvature and to exactness of the one-form; on the $\lambda$-chart this is
+precisely the Onsager-reciprocal (flat) sector. Second, the loop area measured
+on a \emph{single} thermal cycle does not witness curvature: a flat chart with a
+one-time irreversible offset and a curved chart can produce identical
+first-cycle areas, and only the second cycle separates them. Both statements are
+accompanied by executable certificates over exact rational arithmetic. We then
+state, explicitly as conjectures rather than results, a null-coordinate energy
+dynamics compatible with the principle, together with the emergent-quantum,
+emergent-gravity and gravitational-decoherence claims that a full derivation
+would have to establish; each carries a named open obligation. We identify a
+falsifiable experimental route, and we state which of our own Raman
+measurements currently do and do not support the framework.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Onsager reciprocity is derived under microscopic reversibility. Entropy-weighted
+reparameterisations of response functions yield an effective coupling matrix
+whose cross-coefficients are generically asymmetric~\cite{Dabas2026}; the
+associated geometric statement is that the accessibility one-form
+$\omega=\lambda_p\,dp+\lambda_v\,dv$ need not be closed. This raises a
+structural question: \emph{which} irreversible trajectories are admissible.
+
+The present paper separates what can be proved from what is presently
+conjectured. Section~\ref{sec:def} defines information invariance as a loop
+functional. Section~\ref{sec:proved} proves two finite theorems about it, with
+machine-checked certificates. Section~\ref{sec:empirical} states the empirical
+situation honestly, including a non-closure finding in our own data that
+weakens the naive reading of loop area. Section~\ref{sec:conj} states the
+dynamical programme as conjectures with explicit obligations.
+
+\section{Information invariance, defined}\label{sec:def}
+
+\begin{definition}[Information invariance]\label{def:ii}
+Let $\omega$ be the entropy-scaled accessibility one-form on a response chart.
+Define the loop functional $\cI(\gamma)=\oint_\gamma\omega$ for closed paths
+$\gamma$. The chart is \emph{information invariant} if $\cI(\gamma)=0$ for every
+admissible closed $\gamma$, written $\delta\cI=0$.
+\end{definition}
+
+This is a selection principle: it constrains admissible evolution, and asserts
+neither conservation of microscopic information nor invariance under arbitrary
+transformations. It postulates no new interaction and does not quantise
+spacetime.
+
+\section{Proved finite structure}\label{sec:proved}
+
+Discretise the chart on a lattice with rational edge values; $\Omega=d\omega$ is
+the plaquette circulation, and discrete Stokes holds exactly.
+
+\begin{theorem}[Information invariance $=$ flat sector]\label{thm:A}
+On a finite simply connected chart the following are equivalent:
+(i) $\delta\cI=0$; (ii) $\Omega\equiv0$; (iii) $\omega$ is exact, i.e.\ a
+potential $\Phi$ exists and line integrals are path independent. On the
+$\lambda$-chart with $\lambda_X=-ST/C_X$, (ii) is the flat-closure sector
+$\Gamma_c\Gamma_m=1$, i.e.\ Onsager reciprocity.
+\end{theorem}
+
+\begin{proof}[Proof sketch]
+(ii)$\Rightarrow$(i) by discrete Stokes; (i)$\Rightarrow$(ii) by taking
+$\gamma=\partial$(plaquette); (i)$\Leftrightarrow$(iii) is path independence
+$\Leftrightarrow$ exactness on a connected graph. All three directions, plus
+planted-curvature negative controls, are executed over exact rationals in the
+accompanying certificate.
+\end{proof}
+
+\begin{theorem}[One cycle does not witness curvature]\label{thm:B}
+There exist a flat chart with a single irreversible offset and a curved chart
+without offset whose first-cycle loop areas are equal. The two are separated
+only by the second cycle: the offset construction collapses (reopen ratio $0$),
+the curvature construction reopens with the same area (ratio $1$).
+\end{theorem}
+
+Consequently a nonzero loop area measured on one cycle is consistent with
+irreversible drift and does not by itself establish $\iint\Omega\neq0$.
+Certificates for both theorems are in
+\texttt{papers/information-invariance/certificates}; the pinned SHA-256 is
+reproduced by continuous integration on every commit.
+
+\section{Empirical situation}\label{sec:empirical}
+
+Temperature-cycled Raman measurements on monolayer CVD graphene on
+SiO$_2$~\cite{Dabas2026} give reproducible first-cycle hysteresis in the $G$ and
+$2D$ peak positions, with loop areas well above fit uncertainty (independently
+re-fitted: $744\pm22$ and $692\pm28$\,cm$^{-1}$K at spot~1). The loop, however,
+does \emph{not} close at $300$\,K: the cooling branch returns $+4.95$\,cm$^{-1}$
+($G$, spot~1) above the heating branch. By Theorem~\ref{thm:B} this first-cycle
+observation is compatible with an irreversible component (adsorbate desorption
+or strain release) and does not establish reversible curvature. A predeclared
+decision rule has been registered: reopen ratio $\geq0.6$ on both bands supports
+curvature; $\leq0.2$ indicates irreversible drift~\cite{ThermoRepro}. The
+measurement is pending.
+
+\section{Conjectured dynamics and its obligations}\label{sec:conj}
+
+The following are stated as conjectures. Each names the obligation a derivation
+must discharge; none is used to support the claims of Sec.~\ref{sec:proved}.
+
+\begin{conjecture}[Null-coordinate realisation]\label{conj:dyn}
+With $u=ct-r$ and energy density $\cE(u,\theta,\phi)$, an admissible local
+realisation of $\delta\cI=0$ takes the form
+\begin{equation}
+\partial_u\cE=\alpha_G\cE^2+\alpha_\Lambda\cE_{\rm vac}+\epsilon\,\mathcal{F}[\cE].
+\end{equation}
+\textbf{Obligation D1:} derive this form \emph{from} Definition~\ref{def:ii}
+rather than positing it; in particular show which variational problem
+$\delta\cI=0$ makes $\alpha_G\cE^2$ the unique quadratic term.
+\end{conjecture}
+
+\begin{conjecture}[Emergent Schr\"odinger dynamics]\label{conj:qm}
+Linearising $\cE=\bar\cE+\delta\cE$ and coarse-graining $\psi=\langle\delta\cE\rangle$
+yields $i\hbar\partial_t\psi=-(\hbar^2/2m)\nabla^2\psi+V\psi$ in the
+weak-gravity limit. \textbf{Obligation D2:} exhibit the rescaling, identify the
+correlation scale with $\hbar/m$, and account for the appearance of a complex
+phase from a real energy density.
+\end{conjecture}
+
+\begin{conjecture}[Finite correlations and emergent geometry]\label{conj:grav}
+$\langle\cE(x)\cE(x')\rangle\sim(r^2+L_P^2)^{-1}$, and in the adiabatic limit the
+induced metric satisfies the Einstein equations, in the sense
+of~\cite{Jacobson1995}. \textbf{Obligation D3:} the regulator $L_P$ contains
+$\hbar$, which the deterministic dynamics has not yet produced; derive
+$L_P$ rather than inserting it.
+\end{conjecture}
+
+\begin{conjecture}[Gravitational decoherence]\label{conj:dec}
+$\Gamma_{\rm grav}\sim Gm^2/\hbar V$. \textbf{Obligation D4:} this has the form
+of the Di\'osi--Penrose rate~\cite{Diosi1987,Penrose1996}; a derivation must
+either reduce to it, or state the parameter regime in which the two differ
+observably, which is what an optomechanical test would
+discriminate~\cite{Aspelmeyer2014,Bassi2013}.
+\end{conjecture}
+
+\section{Conclusion}
+
+Information invariance, defined as stationarity of the loop functional, is
+equivalent on finite charts to vanishing thermodynamic curvature and to
+exactness --- a proved statement with an executable certificate. The
+experimental signature usually quoted for curvature, a nonzero one-cycle loop
+area, is proved insufficient; the decision is deferred to a predeclared
+second-cycle test. The dynamical programme connecting this principle to quantum
+and gravitational phenomena is stated here as conjectures with named
+obligations, and is not claimed as a result.
+
+\begin{acknowledgments}
+Underlying Raman data were acquired at the Centre for Nano Science and
+Engineering, Indian Institute of Science, Bengaluru.
+\end{acknowledgments}
+
+\begin{thebibliography}{99}
+\bibitem{Dabas2026} M.~Dabas, ``Geometric Completion of Thermodynamic Response,''
+arXiv:2603.20773 [cond-mat.stat-mech] (2026).
+\bibitem{ThermoRepro} \texttt{Parveen117/Thermodynamics-Reproducibility},
+campaign \texttt{T02\_RAMAN\_THERMAL\_HYSTERESIS} (2026).
+\bibitem{Jacobson1995} T.~Jacobson, Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
+\bibitem{Diosi1987} L.~Di\'osi, Phys.\ Lett.\ A \textbf{120}, 377 (1987).
+\bibitem{Penrose1996} R.~Penrose, Gen.\ Rel.\ Grav.\ \textbf{28}, 581 (1996).
+\bibitem{Aspelmeyer2014} M.~Aspelmeyer, T.~J.~Kippenberg, and F.~Marquardt,
+Rev.\ Mod.\ Phys.\ \textbf{86}, 1391 (2014).
+\bibitem{Bassi2013} A.~Bassi \emph{et al.}, Rev.\ Mod.\ Phys.\ \textbf{85}, 471 (2013).
+\end{thebibliography}
+
+\end{document}
