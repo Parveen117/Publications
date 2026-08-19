@@ -103,3 +103,25 @@ def test_D3_negative_result_recorded():
 
 def test_D3_certificate_pinned():
     assert R3.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D3.sha256").read_text().strip()
+
+
+import d4_decoherence_audit as R4
+
+def test_theorem_H_proved():
+    assert R4.build()["theorem_H_printed_rate_is_dimensionally_invalid"]["status"] == "PROVED"
+
+def test_printed_rate_is_not_a_rate():
+    ch = R4.build()["theorem_H_printed_rate_is_dimensionally_invalid"]["checks"]
+    assert ch["printed_formula_is_not_a_rate"] and ch["repair_with_length_is_a_rate"]
+
+def test_number_survives_only_after_repair():
+    n = R4.build()["numeric_audit"]
+    assert n["repaired_within_one_order_of_claim"] is True
+
+def test_D4_corrected_and_not_claimed_novel():
+    c = R4.build()
+    assert c["obligation"]["D4"].startswith("DISCHARGED WITH CORRECTION")
+    assert "consistency requirement" in c["verdict"]
+
+def test_D4_certificate_pinned():
+    assert R4.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_D4.sha256").read_text().strip()
