@@ -176,8 +176,16 @@ def free_theta_content(max_twice_spin=6):
     return out
 
 
-def seam_count(s: F, max_twice_spin=6, casimir_tamper=False) -> int:
-    """#{(j1,j2) : C_{j1}+C_{j2} < s} — exactly independent of a."""
+def seam_count(s: F, max_twice_spin=6, casimir_tamper=False,
+               with_multiplicity=False) -> int:
+    """Threshold count below s, exactly independent of a.
+
+    AMENDED (see YM-10 T2): the default counts CONTENTS (j1,j2). The seam
+    count k_Sigma of YM-6/7 counts EIGENVALUES WITH MULTIPLICITY, which
+    differs (at s=2: 4 contents but 5 eigenvalues). Pass
+    with_multiplicity=True for the corrected count; the a-independence —
+    the whole point of T4 — holds for BOTH.
+    """
     n = 0
     for t1 in range(max_twice_spin + 1):
         for t2 in range(max_twice_spin + 1):
@@ -186,7 +194,7 @@ def seam_count(s: F, max_twice_spin=6, casimir_tamper=False) -> int:
             else:
                 c = casimir(t1) + casimir(t2)
             if c < s:
-                n += 1
+                n += (min(t1, t2) + 1) if with_multiplicity else 1
     return n
 
 
@@ -224,7 +232,10 @@ def run():
         c3 = c3 and agree
 
     # T4 uniform seam counts + tamper
-    counts = {str(s): seam_count(s) for s in S_GRID}
+    counts = {str(s): {"contents": seam_count(s),
+                       "eigenvalues_with_multiplicity":
+                           seam_count(s, with_multiplicity=True)}
+              for s in S_GRID}
     c4 = (seam_count(F(2)) != seam_count(F(2), casimir_tamper=True))
 
     # T5 Wilson contrast
@@ -253,9 +264,14 @@ def run():
                 f"C_(1/2) - 6*theta = {uni_bound} for EVERY a > 0; "
                 f"uniform positivity iff theta < {THETA_CRIT}",
             "T4_uniform_seam_count":
-                "k(a, e^{-as}) = #{(j1,j2): C_j1 + C_j2 < s} is exactly "
-                "independent of a — the dock's threshold grammar "
-                "transports across the whole family at once",
+                "the threshold count below s is exactly independent of a — "
+                "the dock's threshold grammar transports across the whole "
+                "family at once. AMENDED per YM-10 T2: the count of "
+                "CONTENTS #{(j1,j2): C+C<s} and the count of EIGENVALUES "
+                "WITH MULTIPLICITY (weights m = min(2j1,2j2)+1) differ; "
+                "k_Sigma of YM-6/7 is the latter. Both are a-independent, "
+                "so the uniformity conclusion is unaffected; both are "
+                "reported below",
             "T5_wilson_contrast":
                 "at fixed beta the Wilson reduced gap scales like 1/a and "
                 "diverges as a -> 0: no cutoff-independent gap without a "

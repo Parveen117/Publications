@@ -40,6 +40,7 @@ width budget.
 | YM-7 V7 carrier: kappa=7/10 unlocked (exact count), certified 7-eigenvalue crossing curves | PASS (pinned) |
 | YM-8 CAPSTONE: theta-graph gap is a THEOREM at every coupling (certified kernel floors + pinned Jentzsch anchor); remaining Millennium content = uniformity in the cutoff | PASS (pinned) |
 | YM-9 FIRST UNIFORMITY: exact heat-kernel refinement family; free gap exactly cutoff-independent; interacting uniform bound 3/8 along a declared trajectory | PASS (pinned) |
+| YM-10 blindness ledger (SPECTRAL-1/2 framework): exact multiplicity law, exact probe counts, composition ledger, YM-9 T4 correction | PASS (pinned) |
 | Remaining: physical (asymptotically-free) trajectory, growing lattice, universality, OS reconstruction, Clay predicate | OPEN (the real wall) |
 | Continuum existence / mass gap | OPEN |
 
@@ -69,8 +70,39 @@ YM-2's sandwich slope is slack by the exact factor 24.
 Single-command reproduction (regenerates and pins all three):
 
 ```bash
-python papers/yang-mills-certified-benchmark/certificates/ym9_uniform_heat_kernel.py
+python papers/yang-mills-certified-benchmark/certificates/ym10_blindness_ledger.py
 ```
+
+YM-10 applies the source-restriction framework of the companion
+manuscripts *When Spectra Forget Order* and *Stable Recovery Beyond
+Spectral Blindness* to our own compressions. Every dock computes on a
+compressed carrier `V`; in that language `V` is a source restriction, so
+the honest question is not whether the complement bound is tight but
+whether the carrier is **blind** to the target.
+
+- **T1** exact multiplicity law `m(j1,j2) = min(2j1,2j2)+1` on the
+  Ad-invariant sector — it reproduces `dim V5 = 5` and `dim V7 = 7`
+  independently, and re-derives YM-6's `(1/2,1/2)` two-dimensionality from
+  representation theory rather than from the Gram matrix.
+- **T2 correction to YM-9 T4** (self-audit): YM-9's uniform count counted
+  *contents*; `k_Sigma` counts *eigenvalues with multiplicity*. At `s = 2`
+  that is 4 versus 5. Both are `a`-independent, so YM-9's uniformity
+  conclusion is unaffected — only the arithmetic. YM-9 is amended to
+  report both.
+- **T3/T4** blindness ledger and exact probe count
+  `rank(Pi_s | ker E) = b(V,s)`. Result worth noting: `b(V5, s) = 0` for
+  `s <= 2` — the YM-6 carrier is **exactly blindness-free in its own
+  threshold window**, so that choice was correct, not lucky. At `s = 3`,
+  V5 needs 6 probes, V7 needs 4, V9 needs 0 more than V7 minus 4.
+- **T5** composition ledger: blindness is nonincreasing along
+  `V5 ⊂ V7 ⊂ V9` with nonnegative stage increments.
+- **T6** the whole ledger depends only on contents and Casimir levels, so
+  it is exactly `a`-independent — one ledger covers the entire YM-9
+  refinement family.
+
+Honest remainder: the ledger is exact for the **free** target; the
+interacting faces mix the content grading, so `b(V,s)` is a lower bound
+there and YM-6/7's declared truncation remainder is the extra obligation.
 
 YM-9 — the program's first statement that is uniform in the cutoff rather
 than at a fixed cutoff. Switching the link action from Wilson to the

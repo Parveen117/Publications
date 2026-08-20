@@ -76,13 +76,22 @@
     "T1_exact_refinement_semigroup": "K_a * K_b = K_{a+b} identically; n links of spacing a/n compose exactly to one link of spacing a (no discretization error in the refinement family)",
     "T2_free_gap_exactly_cutoff_independent": "Delta_red(a) = C_(1/2) = 3/4 EXACTLY for every a > 0 (transcendentals cancel identically)",
     "T3_interacting_uniform_lower_bound": "along kappa(a) = 1/16*a: Delta(a, kappa(a)) >= C_(1/2) - 6*theta = 3/8 for EVERY a > 0; uniform positivity iff theta < 1/8",
-    "T4_uniform_seam_count": "k(a, e^{-as}) = #{(j1,j2): C_j1 + C_j2 < s} is exactly independent of a \u2014 the dock's threshold grammar transports across the whole family at once",
+    "T4_uniform_seam_count": "the threshold count below s is exactly independent of a \u2014 the dock's threshold grammar transports across the whole family at once. AMENDED per YM-10 T2: the count of CONTENTS #{(j1,j2): C+C<s} and the count of EIGENVALUES WITH MULTIPLICITY (weights m = min(2j1,2j2)+1) differ; k_Sigma of YM-6/7 is the latter. Both are a-independent, so the uniformity conclusion is unaffected; both are reported below",
     "T5_wilson_contrast": "at fixed beta the Wilson reduced gap scales like 1/a and diverges as a -> 0: no cutoff-independent gap without a running coupling (computed, not asserted)"
   },
   "uniform_seam_counts": {
-    "1": 3,
-    "2": 4,
-    "4": 10
+    "1": {
+      "contents": 3,
+      "eigenvalues_with_multiplicity": 3
+    },
+    "2": {
+      "contents": 4,
+      "eigenvalues_with_multiplicity": 5
+    },
+    "4": {
+      "contents": 10,
+      "eigenvalues_with_multiplicity": 13
+    }
   },
   "verdict": "PASS",
   "wilson_reduced_gap_by_spacing": {

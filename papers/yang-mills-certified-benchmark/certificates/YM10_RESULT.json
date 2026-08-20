@@ -1,0 +1,152 @@
+{
+  "blindness_ledger": {
+    "V5": {
+      "1": {
+        "blind_dimension": 0,
+        "probes_needed": 0
+      },
+      "2": {
+        "blind_dimension": 0,
+        "probes_needed": 0
+      },
+      "3": {
+        "blind_dimension": 6,
+        "probes_needed": 6
+      },
+      "4": {
+        "blind_dimension": 8,
+        "probes_needed": 8
+      },
+      "6": {
+        "blind_dimension": 21,
+        "probes_needed": 21
+      }
+    },
+    "V7": {
+      "1": {
+        "blind_dimension": 0,
+        "probes_needed": 0
+      },
+      "2": {
+        "blind_dimension": 0,
+        "probes_needed": 0
+      },
+      "3": {
+        "blind_dimension": 4,
+        "probes_needed": 4
+      },
+      "4": {
+        "blind_dimension": 6,
+        "probes_needed": 6
+      },
+      "6": {
+        "blind_dimension": 19,
+        "probes_needed": 19
+      }
+    },
+    "V9": {
+      "1": {
+        "blind_dimension": 0,
+        "probes_needed": 0
+      },
+      "2": {
+        "blind_dimension": 0,
+        "probes_needed": 0
+      },
+      "3": {
+        "blind_dimension": 0,
+        "probes_needed": 0
+      },
+      "4": {
+        "blind_dimension": 2,
+        "probes_needed": 2
+      },
+      "6": {
+        "blind_dimension": 15,
+        "probes_needed": 15
+      }
+    }
+  },
+  "carrier_dimensions": {
+    "V5": 5,
+    "V7": 7,
+    "V9": 11
+  },
+  "certificate_type": "YM10_SOURCE_RESTRICTION_BLINDNESS_LEDGER",
+  "claim_status": "exact_ledger_free_target_uniform_in_cutoff",
+  "composition_increments": {
+    "V5->V7": {
+      "1": 0,
+      "2": 0,
+      "3": 2,
+      "4": 2,
+      "6": 2
+    },
+    "V7->V9": {
+      "1": 0,
+      "2": 0,
+      "3": 4,
+      "4": 4,
+      "6": 4
+    }
+  },
+  "controls": {
+    "C1_law_reproduces_carrier_dimensions": true,
+    "C2_multiplicity_tamper_changes_ledger": true,
+    "C3_composition_increments_nonnegative": true,
+    "C4_probe_count_matches_direct_enumeration": true,
+    "C5_ledger_bit_identical_across_spacings": true,
+    "T2_correction_is_material": true
+  },
+  "honest_remainder": {
+    "clay_predicate": "OPEN",
+    "free_target_only": "exact for the free target Pi_s; under the interacting transfer the faces mix the content grading, so b(V,s) is a LOWER bound and YM-6/7's declared truncation remainder is the extra obligation",
+    "no_physical_claim": "the ledger says exactly how much the carriers miss and how many probes repair it \u2014 nothing about sufficiency for any physical statement",
+    "open_gates": [
+      "volume growth",
+      "asymptotically-free trajectory",
+      "universality",
+      "OS reconstruction",
+      "gauge",
+      "tightness",
+      "IR",
+      "non-triviality"
+    ]
+  },
+  "lineage_consumed": [
+    "When Spectra Forget Order (source-restriction blindness as an exact rank defect on a declared target)",
+    "Stable Recovery Beyond Spectral Blindness (minimum probes = rank(Pi|ker E); nonnegative stage-by-stage quotient ledger)",
+    "framework only \u2014 no numerical result of either manuscript is imported or restated"
+  ],
+  "theorems": {
+    "T1_multiplicity_law": "m(j1,j2) = min(2j1,2j2)+1 on the Ad-invariant sector; reproduces dim V5 = 5, dim V7 = 7 exactly and re-derives YM-6's (1/2,1/2) two-dimensionality from representation theory",
+    "T2_ym9_t4_correction": "YM-9's uniform count counted CONTENTS; the seam count of YM-6/7 counts EIGENVALUES WITH MULTIPLICITY. Corrected count = sum of m over contents below s. Uniformity in a is UNAFFECTED; only the arithmetic changes",
+    "T3_blindness_ledger": "b(V,s) = sum of m over target-relevant contents discarded at the source \u2014 exact for the free target",
+    "T4_exact_probe_count": "rank(Pi_s | ker E) = b(V,s): exactly that many supplemental scalar observations are necessary and sufficient (coordinate projection in this grading)",
+    "T5_composition_ledger": "blindness is nonincreasing along V5 subset V7 subset V9 with nonnegative stage increments; ledger telescopes",
+    "T6_ledger_uniform_in_cutoff": "the ledger depends only on contents and Casimir levels, hence is exactly independent of the spacing a \u2014 one ledger covers the whole YM-9 refinement family"
+  },
+  "verdict": "PASS",
+  "ym9_t4_amendment": {
+    "1": {
+      "corrected_eigenvalue_count": 3,
+      "ym9_content_count": 3
+    },
+    "2": {
+      "corrected_eigenvalue_count": 5,
+      "ym9_content_count": 4
+    },
+    "3": {
+      "corrected_eigenvalue_count": 11,
+      "ym9_content_count": 8
+    },
+    "4": {
+      "corrected_eigenvalue_count": 13,
+      "ym9_content_count": 10
+    },
+    "6": {
+      "corrected_eigenvalue_count": 26,
+      "ym9_content_count": 15
+    }
+  }
+}
