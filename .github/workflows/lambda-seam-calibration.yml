@@ -1,0 +1,28 @@
+name: Lambda seam calibration
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install deps
+        run: python -m pip install pytest
+      - name: Regenerate LAM1 certificate and check pin
+        run: |
+          python papers/lambda-seam-calibration/certificates/lam1_seam_interface.py
+          git diff --exit-code papers/lambda-seam-calibration/certificates/EXPECTED_LAM1.sha256 papers/lambda-seam-calibration/certificates/LAM1_RESULT.json
+      - name: Tests
+        run: python -m pytest papers/lambda-seam-calibration/tests -v

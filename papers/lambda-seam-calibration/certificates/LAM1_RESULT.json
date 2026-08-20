@@ -1,0 +1,83 @@
+{
+  "T1_ramanujan_two_route": {
+    "grid": {
+      "c": "1..36 plus [40, 45, 48, 49, 60]",
+      "n": "1..36"
+    },
+    "max_abs_value_on_grid": 30,
+    "pairs_checked": 1476,
+    "statement": "Direct exact cyclotomic reduction of c_c(n) in Z[x]/Phi_c(x) equals sum_{d|gcd(c,n)} d mu(c/d) on the full grid; the Lambda-twist multiplies whole c-blocks and never enters this d-sum layer",
+    "verdict": "PASS"
+  },
+  "T2_memory_lattice_multiplicativity": {
+    "additivity_pairs_checked": 2468,
+    "euler_range": 300,
+    "statement": "chi_phi(n) = e^{i phi Omega(n)} is exact integer bookkeeping: Omega additive on all mn <= 400; formal Euler product over primes <= 300 reproduces every n <= 300 with marker exactly Omega(n) and multiplicity exactly one (twist exponents ADD along the product \u2014 the memory lattice of multiplication)",
+    "verdict": "PASS"
+  },
+  "T3_theta_seam_certified": {
+    "overlap": true,
+    "sqrt2_times_theta2_enclosure": [
+      "1.4194954880837661233621867313516977908561",
+      "1.4194954880837661233621867313516977908569"
+    ],
+    "statement": "The single S-move generating the classical functional equation, theta(1/t) = sqrt(t) theta(t), certified at t=2 with two-sided directed rational enclosures (no floats)",
+    "theta_half_enclosure": [
+      "1.4194954880837661233621867313516977908568",
+      "1.4194954880837661233621867313516977908568"
+    ],
+    "verdict": "PASS",
+    "width_budget": "1e-20",
+    "width_rhs": "0.0000000000000000000000000000000000000007",
+    "width_theta_half": "0.0000000000000000000000000000000000000000"
+  },
+  "T4_declared_phase_audit": {
+    "net_weight_change": 0,
+    "region_size": 8812,
+    "statement": "Under the exact S-reindexing bijection (c,d) -> (d,-c) on the primitive region |c|,|d| <= 60, the coset-weight layer nu(|c|) has ZERO net change (sum before = sum after). The weight bookkeeping alone produces no functional-equation phase; the legacy e^{i phi} FE factor is therefore carried entirely by the DECLARED right S-multiplier",
+    "verdict": "PASS",
+    "weight_sum_post_S": 16512,
+    "weight_sum_pre_S": 16512
+  },
+  "anchor_pinned": "Classical automorphic substrate \u2014 Poisson summation, Jacobi theta inversion theta(1/t) = sqrt(t) theta(t), SL(2,Z) coset structure Gamma_inf \\ Gamma, Ramanujan-sum closed form: PINNED NAMED DEPENDENCY, cited as classical witness, never rederived natively (CIRC-1 discipline). This capsule verifies exact finite instances and bookkeeping only.",
+  "arithmetic_discipline": "integers, exact rationals, exact integer polynomial arithmetic, and directed rational intervals with outward rounding to 1e-60 denominators; no floating point in any verdict path",
+  "certificate_type": "LAM1_LAMBDA_SEAM_INTERFACE_CALIBRATION",
+  "claim_boundary": {
+    "K0_L0_RH": "OPEN",
+    "N1_native_continuation": "OPEN",
+    "N2_native_functional_equation": "OPEN",
+    "N3_identification": "OPEN",
+    "YM_continuum_gates": "OPEN",
+    "legacy_lambda_FE": "declared multiplier over classical substrate",
+    "zeros_of_any_L_function": "no claims"
+  },
+  "claim_status": "calibration_and_audit_only; no zero claims; legacy Lambda-FE phase certified as DECLARED, not derived",
+  "controls_C1_coprimality_tamper_separates": {
+    "c": 4,
+    "full_sum_reduction": "0",
+    "n": 2,
+    "ramanujan_value": -2
+  },
+  "controls_C2_fake_winding_detected": {
+    "fake_nu(m)+fake_nu(n)": 4,
+    "fake_nu(mn)": 3,
+    "m": 2,
+    "n": 3
+  },
+  "controls_C3_sqrt3_tamper_separates": {
+    "separated": true,
+    "separation_gap_lower_bound": "0.31902433091032694296"
+  },
+  "controls_C4_asymmetric_region_separates": {
+    "asym_weight_sum_c": 8239,
+    "asym_weight_sum_d": 8980,
+    "separated": true
+  },
+  "finding_LAM1_F1": "The e^{i phi} functional-equation factor of the legacy Lambda-Eisenstein / Lambda-mock construction is a DECLARED right S-multiplier, not a derived quantity: the legacy canvas itself records that no homomorphism SL(2,Z) -> S^1 can realize arbitrary phi (finite abelianization), and T4 certifies that the coset-weight bookkeeping contributes zero net phase. The legacy analytic layer therefore decorated the classical substrate with an input phase \u2014 this is the precise mechanism of its silence on RH/YM: the phase was never load-bearing. Any native functional equation (N2) must DERIVE its seam-crossing phase; the theta seam of T3 is the classical shape of that single crossing.",
+  "lineage": {
+    "legacy_documents": "Lambda-Mathematics Analytic Rigor Canvas (+ Gamma/pi constant audits, half-weight Lambda-mock), Lambda-Geometric Generalization, lambda-Geometry Package v1",
+    "origin_diagram": "T-V-S-P compass of arXiv:2603.20773 (Geometric Completion of Thermodynamic Response); response block L = [[lp, Lpv],[Lvp, lv]]",
+    "phase_identification": "Onsager non-reciprocity bias phase phi = arg(Lpv/Lvp) of the compass response block is the same phi appearing as the legacy Lambda-FE multiplier e^{i phi}",
+    "ruling": "MINE-DONT-MERGE: zero claims imported from legacy canvases"
+  }
+}
