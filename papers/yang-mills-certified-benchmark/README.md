@@ -35,7 +35,8 @@ width budget.
 | YM-2 interacting theta-graph gap, certified small coupling (kappa < Delta_red/6) | PASS (pinned) |
 | YM-3 first-order crossing direction: rank-one, A<->B transported, slope lambda_half/4 | PASS (pinned) |
 | YM-4 symmetry-protection theorem [S,T_kappa]=0 + finite-kappa certified lower bounds | PASS (pinned) |
-| YM-5 complement control: certified UPPER bounds on lambda_2 at finite kappa | OPEN (next) |
+| YM-5 certified TWO-SIDED gap at finite kappa, beyond the sandwich threshold (Kill-Lemma realization) | PASS (pinned) |
+| YM-6 larger compression V / theta-network basis; push certified region toward strong coupling | OPEN |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
@@ -64,8 +65,18 @@ YM-2's sandwich slope is slack by the exact factor 24.
 Single-command reproduction (regenerates and pins all three):
 
 ```bash
-python papers/yang-mills-certified-benchmark/certificates/ym4_symmetry_protected.py
+python papers/yang-mills-certified-benchmark/certificates/ym5_two_sided_gap.py
 ```
+
+New in YM-5: certified TWO-SIDED spectral gap of the interacting theta
+transfer at finite coupling — including BEYOND YM-2's sandwich threshold
+`kappa_0 = 0.1394...`. Complement control uses the exact doubling identity
+`m_kappa^2 = m_{2 kappa}`: `|PMQ|^2 <= lammax(P m_{2k} P - (P m_k P)^2)`,
+with `|QSQ| <= lambda_half^2 e^{3k}` and a Weyl bound. Certified rows
+(ratio upper bound, gap lower bound): kappa=1/8: 0.5003, gap>=0.6924;
+kappa=1/4: 0.5610, gap>=0.5781; kappa=3/10: 0.5867, gap>=0.5332.
+Fail-closed at kappa=1. Lineage: realizes the old lambda-manuscripts'
+Kill-Lemma skeleton unconditionally (see LINEAGE.md); no claim imported.
 
 New in YM-4: (T1) the graph swap S:(A,B)->(B,A) commutes with T_kappa for
 EVERY coupling — `Tr(BA^-1) = Tr(AB^-1)` on SU(2) — so YM-3's rank-one
