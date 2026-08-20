@@ -1,0 +1,28 @@
+name: Poincare calibration
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install deps
+        run: python -m pip install sympy pytest
+      - name: Regenerate PC1 certificate and check pin
+        run: |
+          python papers/poincare-calibration/certificates/pc1_lambda_monotonicity.py
+          git diff --exit-code papers/poincare-calibration/certificates/EXPECTED_PC1.sha256
+      - name: Tests
+        run: python -m pytest papers/poincare-calibration/tests -v

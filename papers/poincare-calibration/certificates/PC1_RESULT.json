@@ -1,0 +1,110 @@
+{
+  "anchor_pinned": "Hamilton-Perelman Ricci flow with surgery (2003) and Perelman's monotonicity of the lambda-functional: PINNED NAMED DEPENDENCY, cited as classical witness, never rederived natively (CIRC-1). This capsule reproduces the lambda-monotonicity statement exactly on the SU(2) homogeneous carrier only.",
+  "berger_anisotropy_samples": {
+    "u=1/2": {
+      "du_dt": "2.00000000000000000000",
+      "sign_matches_-(u-1)": true
+    },
+    "u=10/9": {
+      "du_dt": "-0.44444444444444444444",
+      "sign_matches_-(u-1)": true
+    },
+    "u=2": {
+      "du_dt": "-2.00000000000000000000",
+      "sign_matches_-(u-1)": true
+    },
+    "u=5/4": {
+      "du_dt": "-0.80000000000000000000",
+      "sign_matches_-(u-1)": true
+    }
+  },
+  "certificate_type": "PC1_PERELMAN_LAMBDA_MONOTONICITY_SU2_CALIBRATION",
+  "claim_status": "calibration_only_exact_on_homogeneous_carrier",
+  "collapse_boundary_recorded": {
+    "C=1/10": {
+      "lambda": "3.9000000000",
+      "status": "outside certified regime (collapse = obstruction-tower entry)"
+    },
+    "C=1/100": {
+      "lambda": "3.9900000000",
+      "status": "outside certified regime (collapse = obstruction-tower entry)"
+    },
+    "C=1/1000": {
+      "lambda": "3.9990000000",
+      "status": "outside certified regime (collapse = obstruction-tower entry)"
+    }
+  },
+  "controls": {
+    "C1_R_tamper_breaks_identity": true,
+    "C2_flow_tamper_breaks_identity": true,
+    "C3_round_specialization_consistent": true,
+    "C4_strict_positivity_of_Ric_norm": true,
+    "C5_collapse_boundary_recorded_not_claimed": true,
+    "T1_R_closed_form_verified": true,
+    "T2_identity_remainder_zero": true,
+    "T4_berger_identity_verified": true,
+    "berger_sign_law_exact": true,
+    "round_lambda_strictly_increasing": true
+  },
+  "honest_remainder": {
+    "note": "The homogeneous carrier is precisely the case where surgery and collapse are absent; that is why this is a calibration, not a proof.",
+    "obstruction_tower_untouched": [
+      "surgery / neck-cap data at singular seams",
+      "non-collapsing, kappa-solutions, canonical neighbourhoods",
+      "singularity classification off the homogeneous carrier",
+      "finite-time extinction for general simply-connected 3-manifolds",
+      "topological reconstruction from flow + surgery ledger",
+      "the Poincare conjecture itself"
+    ],
+    "poincare_conjecture": "NOT CLAIMED"
+  },
+  "lambda_and_rate_samples": {
+    "(1,1,1)": {
+      "d_lambda_dt": "6.000000000000000",
+      "lambda": "3.000000000000000"
+    },
+    "(1,1,1/4)": {
+      "d_lambda_dt": "12.375000000000000",
+      "lambda": "3.750000000000000"
+    },
+    "(2,1,1)": {
+      "d_lambda_dt": "8.000000000000000",
+      "lambda": "2.000000000000000"
+    },
+    "(3,2,1)": {
+      "d_lambda_dt": "3.555555555555555",
+      "lambda": "1.333333333333333"
+    }
+  },
+  "purpose": "Calibration of the Poincare adapter against the accepted Hamilton-Perelman architecture. NOT a proof, NOT new mathematics, NO part of the Poincare conjecture claimed.",
+  "round_flow_samples": {
+    "0": {
+      "a": "1",
+      "lambda": "3.00000000000000000000"
+    },
+    "1/10": {
+      "a": "4/5",
+      "lambda": "3.75000000000000000000"
+    },
+    "1/4": {
+      "a": "1/2",
+      "lambda": "6.00000000000000000000"
+    },
+    "2/5": {
+      "a": "1/5",
+      "lambda": "15.00000000000000000000"
+    },
+    "49/100": {
+      "a": "1/50",
+      "lambda": "150.00000000000000000000"
+    }
+  },
+  "theorems": {
+    "T1_lambda_equals_R_on_homogeneous": "lambda(g) = min spec(-4 Delta + R) = R on any homogeneous metric; R = [2(AB+BC+CA)-(A^2+B^2+C^2)]/(ABC) verified",
+    "T2_exact_monotonicity_identity": "dR/dt - 2|Ric|^2 = 0 identically in Q(A,B,C); SOS witness with 3 squares => d lambda/dt >= 0, strict here",
+    "T3_exact_round_solution": "a(t) = a0 - 2t, lambda = 3/a, extinction t* = a0/2 = 1/2 exactly for a0 = 1",
+    "T4_exact_berger_rounding": "du/dt = -4(x-z)/(xz) for u = x/z; sign(du/dt) = -sign(u-1) exactly => monotone rounding toward the round sphere",
+    "T5_seam_readout": "lambda is a bottom-of-spectrum threshold object, strictly increasing => threshold crossings are irreversible (one-directional seam flow; thermodynamics/02 instance, same primitive as the YM seam-integer dock)"
+  },
+  "verdict": "PASS"
+}
