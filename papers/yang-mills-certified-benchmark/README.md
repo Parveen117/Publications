@@ -32,14 +32,22 @@ width budget.
 | Item | Status |
 |---|---|
 | YM-1 reduced gap enclosure (a=1, beta=2) | PASS (pinned) |
-| YM-2 theta-graph exact character transfer + SOS positivity | OPEN (next) |
-| YM-3 gap-closing direction analysis along refinement | OPEN |
+| YM-2 interacting theta-graph gap, certified small coupling (kappa < Delta_red/6) | PASS (pinned) |
+| YM-3 exact character transfer at general coupling + gap-closing direction | OPEN (next) |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
 
+New in YM-2: for beta=2 the interacting theta-graph transfer
+`T_kappa = M^{1/2}(K x K)M^{1/2}` has a certified positive spectral gap for
+every coupling `0 <= kappa < kappa_0 = Delta_red/6 = 0.13945388...`, via the
+min-max sandwich `m_- T_0 <= T_kappa <= m_+ T_0` with
+`m_+/m_- = e^{6 kappa}` from `|Tr U| <= 2`. At `kappa = 1/8` the reduced gap
+is certified `>= 0.08672330623...`. Fail-closed above threshold.
+
 ```bash
 python papers/yang-mills-certified-benchmark/certificates/ym1_certified_gap.py
+python papers/yang-mills-certified-benchmark/certificates/ym2_theta_interacting_gap.py
 python -m pytest papers/yang-mills-certified-benchmark/tests -v
 ```
 
