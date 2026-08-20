@@ -20,10 +20,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install deps
         run: python -m pip install pytest
-      - name: Regenerate LAM1 and LAM2 certificates and check pins
+      - name: Regenerate LAM1-LAM3 certificates and check pins
         run: |
           python papers/lambda-seam-calibration/certificates/lam1_seam_interface.py
           python papers/lambda-seam-calibration/certificates/lam2_derived_phase.py
-          git diff --exit-code papers/lambda-seam-calibration/certificates/EXPECTED_LAM1.sha256 papers/lambda-seam-calibration/certificates/LAM1_RESULT.json papers/lambda-seam-calibration/certificates/EXPECTED_LAM2.sha256 papers/lambda-seam-calibration/certificates/LAM2_RESULT.json
+          python papers/lambda-seam-calibration/certificates/lam3_crossing_derivation.py
+          git diff --exit-code papers/lambda-seam-calibration/certificates
       - name: Tests
         run: python -m pytest papers/lambda-seam-calibration/tests -v

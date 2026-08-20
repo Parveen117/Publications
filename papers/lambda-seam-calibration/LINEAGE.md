@@ -60,3 +60,16 @@ the separated-Gauss identity, the odd twisted theta functional
 equation — are pinned named dependencies; finite instances are verified
 exactly, nothing is claimed as new mathematics. The native obligation
 N2 remains open: what LAM-2 fixes is its design constraint.
+
+## LAM-3 addendum
+
+LAM-3 closes the paper's contrast arc by executing the classical
+derivation of the s <-> 1-s crossing with certified arithmetic on the
+memory-grammar carrier, at points where the native zeta exists. The
+legacy canvases attempted to build functional equations by decorating
+this substrate with a declared phase; LAM-3 shows the substrate's own
+phase (+1) being derived, tamper-separable at every step. The single
+remaining native obligation for N2 is stated in the certificate:
+reproduce the split-flip step inside the cut grammar with the theta
+seam as a native theorem. Euler-Maclaurin enveloping remainders and
+the theta/Mellin substrate are pinned classical anchors throughout.

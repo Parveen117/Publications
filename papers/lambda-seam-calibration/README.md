@@ -90,16 +90,64 @@ LAM1-F1 + LAM2-F1 state the N2 design constraint: a native functional
 equation must ride a twist whose phase is derivable as finite seam
 arithmetic.
 
+## Certified blocks (LAM-3: the crossing, derived)
+
+The derivation of the `s ↔ 1−s` crossing itself, executed and certified
+at machine level — theta seam → split-flip identity → manifestly
+symmetric completed kernel = Euler-product side — at points where the
+native `ζ_Σ` exists. The FE phase for ζ is the derived `+1` of the
+untwisted seam: an *output* of the crossing, never an input.
+
+| Block | Statement | Verdict |
+|---|---|---|
+| T1 | Memory-grammar values: `γ`, `ln 2`, `ln π`, `ζ(3)`, `ζ(5)` as exact-rational enclosures (recognized body + Bernoulli correction window + declared bracketed tail), widths `< 1e-24`, two truncation depths overlap | PASS |
+| T2 | Split-flip identity at s=3: `∫₀¹ t^{1/2}ω dt = 1/6 + ∫₁^∞ t^{-2}ω dt`, two independent routes (incomplete-gamma series vs `E₁` route with exact rational cancellation) agreeing to 28+ digits — the crossing step, certified | PASS |
+| T3 | Completed identity at s=3: `ζ(3)/(2π) = 1/6 + ∫₁^∞ (t^{1/2}+t^{-2})ω dt` | PASS |
+| T4 | Second point s=5: `3ζ(5)/(4π²) = 1/20 + ∫₁^∞ (t^{3/2}+t^{-3})ω dt` — kills point-luck | PASS |
+
+Controls: polar-drop separates (gap > 1/10); seam-weight tamper
+`ω(1/t) → t·ω(t)+(t−1)/2` separates (gap > 2/5); reflected-kernel
+exponent tamper separates (gap > 1/200); body-only ζ separates
+(memory grammar load-bearing); Bernoulli-window tamper separates.
+
+**Note on the E₁ route:** at `c = 16π` the convergent-series route
+suffers ~22 digits of cancellation — fatal in floats, *exact* in
+rationals. The capsule's positivity and width assertions at that point
+are the machine witness that the arithmetic discipline is load-bearing.
+
+## Findings LAM3-F1/F2
+
+**F1:** the crossing is derived end-to-end and machine-certified on the
+`Re s > 1` side. Contrast chain complete across the paper:
+LAM-1 — declared phase, never load-bearing; LAM-2 — derived phase,
+load-bearing finite seam arithmetic; LAM-3 — the derivation itself
+executed, with every tamper separating certified enclosures.
+
+**F2:** the memory grammar is load-bearing: body-only ζ(3) separates by
+more than `1e-5` at widths below `1e-24` — the public echo of "without
+memory terms there is no critical strip."
+
+## Honest boundary (LAM-3)
+
+Continuation into the critical strip via the symmetric kernel is
+**definitional** here, not a native theorem. The exact remaining native
+obligation for N2 is now pinned: *reproduce the split-flip step (T2)
+inside the cut grammar, where the theta seam is a native theorem rather
+than a pinned classical anchor.* T3 is T2 composed with exact termwise
+Mellin evaluation (recorded per TAUT-1); the tails on both sides share
+the Euler–Maclaurin utility.
+
 ## Reproduce
 
 ```
 python papers/lambda-seam-calibration/certificates/lam1_seam_interface.py
 python papers/lambda-seam-calibration/certificates/lam2_derived_phase.py
+python papers/lambda-seam-calibration/certificates/lam3_crossing_derivation.py
 python -m pytest papers/lambda-seam-calibration/tests -v
 ```
 
 The generator is deterministic; CI regenerates the certificate and
-fails on any pin drift (`EXPECTED_LAM1.sha256`, `EXPECTED_LAM2.sha256`).
+fails on any pin drift (`EXPECTED_LAM1.sha256`, `EXPECTED_LAM2.sha256`, `EXPECTED_LAM3.sha256`).
 
 ## Arithmetic discipline
 
