@@ -42,7 +42,8 @@ width budget.
 | YM-9 FIRST UNIFORMITY: exact heat-kernel refinement family; free gap exactly cutoff-independent; interacting uniform bound 3/8 along a declared trajectory | PASS (pinned) |
 | YM-10 blindness ledger (SPECTRAL-1/2 framework): exact multiplicity law, exact probe counts, composition ledger, YM-9 T4 correction | PASS (pinned) |
 | YM-11 three gate verdicts on the toy carrier: gauge CLOSED; volume/IR SPLIT (free closed, sandwich route proven insufficient, critical volume exact); universality SPLIT (counting closed, metric open) | PASS (pinned) |
-| Remaining: Clay predicate, AF trajectory, tightness, OS reconstruction, non-triviality, interacting half of volume, metric half of universality | OPEN (the real wall) |
+| YM-12 the T03 move: positivity SQUARE-SOURCED (classical anchor demoted to simplicity-only); volume+cutoff-uniform interacting gap 3/8 on the factorized chain; governance capsule | PASS (pinned) |
+| Remaining: interaction-overlap (bounded-degree) volume, AF trajectory, tightness, OS reconstruction, non-triviality, metric universality, Clay predicate | OPEN |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
@@ -71,8 +72,32 @@ YM-2's sandwich slope is slack by the exact factor 24.
 Single-command reproduction (regenerates and pins all three):
 
 ```bash
-python papers/yang-mills-certified-benchmark/certificates/ym11_gate_verdicts.py
+python papers/yang-mills-certified-benchmark/certificates/ym12_square_sourced.py
 ```
+
+YM-12 transplants the RH journey's decisive step (T03: re-source
+positivity as a square with declared defects) to Yang-Mills:
+
+- **T1** manifest square: `T_kappa(a) = S*S` with
+  `S = [K_{a/2} x K_{a/2}] m_{kappa/2}` — both factors are the program's
+  own halved-parameter objects (YM-9 semigroup + YM-5 doubling).
+  Positivity is now **square-sourced**; YM-8's Jentzsch anchor is demoted
+  to top-eigenvalue *simplicity* only. The compressed defect
+  `A - N*G^{-1}N` is exactly a Gram of `(I-P)S phi` — a source-restriction
+  object, the T03 shape.
+- **T2** on the theta chain `L_m` (vertex-glued, no shared faces) the
+  transfer tensor-factorizes exactly, so `lambda_2/lambda_1` is
+  `m`-independent, and with YM-9: `Delta(L_m, a, a/16) >= 3/8` for
+  **every** `m` and **every** `a` — an interacting gap uniform in volume
+  and cutoff simultaneously. This closes YM-11 gate 2's interacting half
+  on the factorized family and localizes the remaining volume obstruction
+  to **interaction overlap** (shared faces): the chain (no sharing) is
+  uniform, `B_n` (complete sharing) kills the sup route, and a physical
+  lattice's bounded sharing sits strictly between the two certified
+  extremes.
+- **T3** governance capsule (RH 07-20 analog): claim/consumption chain for
+  YM-1..12, standing corrections (YM-9 T4 amendment, YM-8 anchor
+  demotion), and a do-not-reopen list — machine-checked for completeness.
 
 YM-11 takes three dependency-map gates and gives each an exact verdict on
 the toy carrier — the generalized theta ("n-banana") graphs `B_n`, two

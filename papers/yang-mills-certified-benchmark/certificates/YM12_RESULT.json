@@ -1,0 +1,153 @@
+{
+  "certificate_type": "YM12_SQUARE_SOURCED_POSITIVITY_AND_GOVERNANCE",
+  "chain_ratio_invariance": {
+    "L_1": {
+      "lambda1_lo": "1.057964780178",
+      "lambda2_hi": "0.467867406113",
+      "ratio_invariant": true
+    },
+    "L_2": {
+      "lambda1_lo": "1.119289476098",
+      "lambda2_hi": "0.494987237496",
+      "ratio_invariant": true
+    },
+    "L_3": {
+      "lambda1_lo": "1.184168844537",
+      "lambda2_hi": "0.523679063944",
+      "ratio_invariant": true
+    },
+    "L_5": {
+      "lambda1_lo": "1.325427725614",
+      "lambda2_hi": "0.586148465207",
+      "ratio_invariant": true
+    }
+  },
+  "claim_status": "t03_move_plus_factorized_volume_uniformity",
+  "controls": {
+    "C1_halving_tamper_separates": true,
+    "C2_defect_diag_nonneg_source_shaped": true,
+    "C3_ratio_invariance_and_planted_contrast": true,
+    "C4_governance_complete": true,
+    "C5_two_route_agreement_on_uniform_bound": true,
+    "T1_exponent_identities": true
+  },
+  "do_not_reopen": [
+    "sup-norm sandwich for volume-uniformity (YM-11 gate 2: proven insufficient, quadratic degradation, critical volume exact)",
+    "content-count vs multiplicity-count confusion (YM-10 T2 amendment)",
+    "limited-denominator exact-constant claims from bisection (RH L0 lesson, adopted YM-7)"
+  ],
+  "governance": {
+    "YM1": {
+      "claim": "certified reduced cutoff gap (a=1, beta=2)",
+      "consumers": [
+        "YM2",
+        "YM3",
+        "YM5"
+      ]
+    },
+    "YM10": {
+      "claim": "blindness ledger, exact probe counts",
+      "consumers": [
+        "YM11"
+      ]
+    },
+    "YM11": {
+      "claim": "gate verdicts: gauge closed; volume and universality split",
+      "consumers": [
+        "YM12"
+      ]
+    },
+    "YM12": {
+      "claim": "square-sourced positivity; volume-uniform factorized family; governance",
+      "consumers": [
+        "TERMINAL"
+      ]
+    },
+    "YM2": {
+      "claim": "sandwich gap for kappa < kappa_0 = Delta_red/6",
+      "consumers": [
+        "YM5",
+        "YM9",
+        "YM11",
+        "YM12"
+      ]
+    },
+    "YM3": {
+      "claim": "rank-one first-order crossing direction",
+      "consumers": [
+        "YM4"
+      ]
+    },
+    "YM4": {
+      "claim": "[S,T_kappa]=0 all coupling; compressed machinery",
+      "consumers": [
+        "YM5",
+        "YM6",
+        "YM7"
+      ]
+    },
+    "YM5": {
+      "claim": "two-sided gap via doubling m_k^2 = m_2k",
+      "consumers": [
+        "YM6",
+        "YM12"
+      ],
+      "standing_note": "envelope route; superseded in method by YM6"
+    },
+    "YM6": {
+      "claim": "exact seam counts, Haynsworth congruence, V5",
+      "consumers": [
+        "YM7",
+        "YM10"
+      ]
+    },
+    "YM7": {
+      "claim": "V7 carrier, kappa=7/10, certified curves",
+      "consumers": [
+        "YM8",
+        "YM10",
+        "YM12"
+      ]
+    },
+    "YM8": {
+      "claim": "all-coupling gap theorem",
+      "consumers": [
+        "YM9"
+      ],
+      "standing_correction": "anchor DEMOTED by YM12: positivity is square-sourced (T1); Jentzsch remains pinned for top-eigenvalue SIMPLICITY only"
+    },
+    "YM9": {
+      "claim": "uniform-in-cutoff gap, heat-kernel family",
+      "consumers": [
+        "YM10",
+        "YM11",
+        "YM12"
+      ],
+      "standing_correction": "T4 amended by YM10 (multiplicity)"
+    }
+  },
+  "honest_remainder": {
+    "factorized_only": "the chain shares no faces; a physical lattice has bounded face-sharing \u2014 strictly between the certified extremes (chain: uniform; B_n complete sharing: sup route dies). The named open object is the interaction-overlap dock",
+    "still_open": [
+      "interaction-overlap (bounded-degree) volume",
+      "asymptotically-free trajectory",
+      "tightness",
+      "OS reconstruction",
+      "non-triviality",
+      "metric half of universality",
+      "Clay predicate"
+    ]
+  },
+  "rh_journey_transplant": "interior positivity (YM-1..8) -> seam integer (YM-6/7) -> THIS CAPSULE: the T03 move (positivity square-sourced, defect = declared source Gram) + governance (RH 07-20 analog)",
+  "theorems": {
+    "T1_manifest_square": "T_kappa(a) = S*S with S = [K_{a/2} (x) K_{a/2}] m_{kappa/2} \u2014 both factors are the program's own halved-parameter objects (YM-9 semigroup + YM-5 doubling). Positivity is SQUARE-SOURCED; YM-8's classical anchor is demoted to simplicity-only. Compressed defect A - N*G^{-1}N is exactly the Gram of (I-P)S phi \u2014 a source-restriction object (T03 shape)",
+    "T2_volume_uniform_factorized": "on the theta chain L_m (vertex-glued, no shared faces) T_kappa(L_m) = tensor power of T_kappa(B_3), so lambda_2/lambda_1 is m-independent EXACTLY; with YM-9: Delta(L_m, a, 1/16a) >= 3/8 for EVERY m and EVERY a \u2014 interacting gap uniform in volume AND cutoff. Closes YM-11 gate 2's interacting half ON THE FACTORIZED FAMILY; the remaining volume obstruction is localized to interaction overlap (shared faces)",
+    "T3_governance": "claim/consumption chain for YM-1..12 with standing corrections and a do-not-reopen list, machine-checked for completeness"
+  },
+  "verdict": "PASS",
+  "volume_uniform_bound": {
+    "bound": "3/8",
+    "holds_for": "every m >= 1, every a > 0",
+    "theta": "1/16"
+  }
+}

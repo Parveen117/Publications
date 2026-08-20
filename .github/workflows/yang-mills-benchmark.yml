@@ -20,8 +20,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Regenerate YM1 certificate and check pin
         run: |
-          python papers/yang-mills-certified-benchmark/certificates/ym11_gate_verdicts.py
-          git diff --exit-code papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM1.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM2.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM3.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM4.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM5.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM6.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM7.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM8.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM9.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM10.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM11.sha256
+          python papers/yang-mills-certified-benchmark/certificates/ym12_square_sourced.py
+          git diff --exit-code papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM1.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM2.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM3.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM4.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM5.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM6.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM7.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM8.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM9.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM10.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM11.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM12.sha256
       - name: Install pytest
         run: python -m pip install pytest
       - name: Tests
