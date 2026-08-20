@@ -1,0 +1,56 @@
+{
+  "anchor_pinned": "Jentzsch / Krein-Rutman (classical; e.g. Reed-Simon, Methods of Modern Mathematical Physics IV, Thm XIII.43): a compact self-adjoint integral operator with strictly positive continuous kernel on a compact finite-measure space has a simple largest eigenvalue with strictly positive eigenfunction. PINNED AS CLASSICAL VERIFICATION WITNESS; not rederived natively (CIRC-1 discipline).",
+  "certificate_type": "YM8_ALL_COUPLING_GAP_THEOREM_CAPSTONE",
+  "claim_status": "qualitative_all_coupling_plus_quantified_window",
+  "controls": {
+    "C1_floor_tamper_separates": true,
+    "C2_simplicity_witnessed_on_curves": true,
+    "C3_vacuum_overlap_positive_witness": true,
+    "C4_anchor_pinned_not_rederived": true
+  },
+  "honest_remainder": {
+    "clay_predicate": "OPEN",
+    "open_gates": [
+      "Gauge (physical observables/states gauge invariant) \u2014 open",
+      "Tightness (uniform bounds => compactness of cutoff family) \u2014 open",
+      "UV (renormalized local data converge as a->0) \u2014 open",
+      "IR (infinite-volume limit) \u2014 open",
+      "Universality (regulator-path equivalence) \u2014 open",
+      "OS (full reconstruction hypotheses) \u2014 open",
+      "Locality / Non-triviality / AF-OPE matching \u2014 open",
+      "Uniform physical spectral estimate => spec(H) gap \u2014 open"
+    ],
+    "statement": "NOT uniform in the lattice. Fixed-cutoff gap does not imply continuum gap \u2014 exact analogue of the RH eta-floor lesson: fixed-regulator positivity is not endpoint evidence."
+  },
+  "kernel_floors": {
+    "0": [
+      "0.0072390235744124146358620",
+      "0.0072390235744124146358620"
+    ],
+    "1": [
+      "0.0003604097616158497029236",
+      "0.0003604097616158497029236"
+    ],
+    "1/4": [
+      "0.0034194726110561306614951",
+      "0.0034194726110561306614951"
+    ],
+    "2": [
+      "0.0000179437454420138550334",
+      "0.0000179437454420138550334"
+    ],
+    "7/10": [
+      "0.0008864649709616785071352",
+      "0.0008864649709616785071352"
+    ]
+  },
+  "lambda1_lambda2_separations": {
+    "1/2": "0.751797053962945",
+    "1/4": "0.590097374064764",
+    "1/8": "0.564724338182713",
+    "7/10": "1.018152236938476"
+  },
+  "quantified_window": "kappa in [0, 7/10]: exact counts + enclosures (YM-2..7, pinned)",
+  "theorem": "For every kappa >= 0, beta > 0: the interacting theta-graph transfer T_kappa has a SIMPLE largest eigenvalue and hence a strictly positive spectral gap. Proof = certified kernel floors (T1, this capsule) + pinned classical positivity anchor (T2).",
+  "verdict": "PASS"
+}

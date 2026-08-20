@@ -38,7 +38,8 @@ width budget.
 | YM-5 certified TWO-SIDED gap at finite kappa, beyond the sandwich threshold (Kill-Lemma realization) | PASS (pinned) |
 | YM-6 seam-integer dock: EXACT eigenvalue counts on the native 5x5, certified to kappa=1/2 (D03 congruence) | PASS (pinned) |
 | YM-7 V7 carrier: kappa=7/10 unlocked (exact count), certified 7-eigenvalue crossing curves | PASS (pinned) |
-| YM-8 exact crossing kappa* localization / stronger complement toward kappa=1; then the continuum gates | OPEN |
+| YM-8 CAPSTONE: theta-graph gap is a THEOREM at every coupling (certified kernel floors + pinned Jentzsch anchor); remaining Millennium content = uniformity in the cutoff | PASS (pinned) |
+| Continuum program: UV/IR uniformity, OS reconstruction, vacuum, Clay predicate | OPEN (the real wall) |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
@@ -67,8 +68,19 @@ YM-2's sandwich slope is slack by the exact factor 24.
 Single-command reproduction (regenerates and pins all three):
 
 ```bash
-python papers/yang-mills-certified-benchmark/certificates/ym7_v7_crossing_curves.py
+python papers/yang-mills-certified-benchmark/certificates/ym8_all_coupling_capstone.py
 ```
+
+Capstone (YM-8): the interacting theta-graph transfer has a strictly
+positive spectral gap at EVERY coupling — certified pointwise kernel
+floors (`k >= e^{-3 kappa} [c0^{-1} e^{-beta}]^2 > 0`, exact enclosures)
+plus the pinned classical Jentzsch/Krein-Rutman anchor (simple Perron
+eigenvalue; CIRC-1 discipline: cited, never rederived). Quantified window
+`kappa in [0, 7/10]` carries exact counts and enclosures (YM-2..7). The
+honest remainder is named exactly: nothing here is uniform in the lattice;
+a gap at every fixed cutoff is compatible with the gap closing in the
+continuum limit — the fixed-regulator lesson. The Millennium content is
+precisely the open uniformity/OS/vacuum gates of the MP dependency map.
 
 New in YM-7: carrier enlarged to V7 (adds `chi_1(A), chi_1(B)`; Gram stays
 block-diagonal, all seven exact T0 eigenvectors), dropping the complement
