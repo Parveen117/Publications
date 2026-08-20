@@ -37,7 +37,8 @@ width budget.
 | YM-4 symmetry-protection theorem [S,T_kappa]=0 + finite-kappa certified lower bounds | PASS (pinned) |
 | YM-5 certified TWO-SIDED gap at finite kappa, beyond the sandwich threshold (Kill-Lemma realization) | PASS (pinned) |
 | YM-6 seam-integer dock: EXACT eigenvalue counts on the native 5x5, certified to kappa=1/2 (D03 congruence) | PASS (pinned) |
-| YM-7 tighter complement (declared-tail |C| control) to unlock kappa >= 7/10; then the continuum gates | OPEN |
+| YM-7 V7 carrier: kappa=7/10 unlocked (exact count), certified 7-eigenvalue crossing curves | PASS (pinned) |
+| YM-8 exact crossing kappa* localization / stronger complement toward kappa=1; then the continuum gates | OPEN |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
@@ -66,8 +67,18 @@ YM-2's sandwich slope is slack by the exact factor 24.
 Single-command reproduction (regenerates and pins all three):
 
 ```bash
-python papers/yang-mills-certified-benchmark/certificates/ym6_seam_integer_dock.py
+python papers/yang-mills-certified-benchmark/certificates/ym7_v7_crossing_curves.py
 ```
+
+New in YM-7: carrier enlarged to V7 (adds `chi_1(A), chi_1(B)`; Gram stays
+block-diagonal, all seven exact T0 eigenvectors), dropping the complement
+top from `lambda_1` to `lambda_1*lambda_half` (certified ordering) — which
+UNLOCKS the previously refused `kappa = 7/10` cell: exact seam count
+`k_Sigma = 1` at `(7/10, 13/10)`. Also ships certified brackets for all
+seven compressed eigenvalue curves (inertia bisection; every step an exact
+LDL count), published with honest kappa-drift — adopting the RH-line's
+post-pause lesson that limited-denominator "exact constants" are never
+promoted from bisection.
 
 New in YM-6 (framework-native): the gap becomes an exact threshold COUNT
 `k_Sigma(kappa,mu) = N(spec(T_kappa) > mu)` via a Haynsworth congruence —
