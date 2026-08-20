@@ -1,0 +1,57 @@
+{
+  "cells": {
+    "kappa=1,mu=3/2": {
+      "count_bracket": [
+        0,
+        0
+      ],
+      "seam_count_exact": 0
+    },
+    "kappa=1/2,mu=9/10": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "seam_count_exact": 1
+    },
+    "kappa=1/4,mu=7/10": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "seam_count_exact": 1
+    },
+    "kappa=1/8,mu=3/5": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "seam_count_exact": 1
+    }
+  },
+  "certificate_type": "YM14_INTERACTION_OVERLAP_DOCK_BRIDGED_PAIR",
+  "claim_status": "first_exact_data_in_overlap_regime",
+  "controls": {
+    "C1_bridge_swap_invariance": true,
+    "C2_B_plane_inert": true,
+    "C3_theta_tamper_separates": true,
+    "C4_large_kappa_no_k1_claim": true,
+    "C5_free_limit_identity": true,
+    "T1_anatomy": true
+  },
+  "honest_remainder": {
+    "scope": "one bridge = minimal overlap; chain S_m, 2D lattice, AF trajectory, tightness, OS, non-triviality, metric universality, Clay all OPEN"
+  },
+  "overlap_price": {
+    "carried_by": "single swap-even line chi12(A1)+chi12(A2)",
+    "first_order_prediction_hi": "0.01353523208507224244",
+    "first_order_prediction_lo": "0.01353523208507224244"
+  },
+  "theorems": {
+    "T1_overlap_seam_rank_one_transported": "bridge-swap symmetry exact for all kappa; first-order splitting driven by the SAME exact theta integral 1/2; crossing line chi12(A1)+chi12(A2) (+lam/4), receding line (-lam/4), B-plane exactly inert \u2014 the inter-block overlap seam has the identical rank-one transported anatomy as the intra-block interaction (YM-3/4)",
+    "T2_certified_two_sided_gap_bridged_pair": "exact seam counts k=1 on the (kappa,mu) grid up to kappa=1/2; at kappa=1 the carrier certifies count 0 at mu=3/2 (no k=1 window) \u2014 carrier limit recorded, not papered over",
+    "T3_overlap_price_measured": "first-order price kappa*lam/4, carried by one swap-even direction, not spread",
+    "T4_1d_block_transfer_reduction_NAMED": "bounded-overlap chain uniformity reduces in 1D to the spectrum of a finite block-transfer operator \u2014 declared next dock, nothing claimed"
+  },
+  "verdict": "PASS"
+}
