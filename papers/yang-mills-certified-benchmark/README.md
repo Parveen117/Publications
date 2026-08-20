@@ -39,7 +39,8 @@ width budget.
 | YM-6 seam-integer dock: EXACT eigenvalue counts on the native 5x5, certified to kappa=1/2 (D03 congruence) | PASS (pinned) |
 | YM-7 V7 carrier: kappa=7/10 unlocked (exact count), certified 7-eigenvalue crossing curves | PASS (pinned) |
 | YM-8 CAPSTONE: theta-graph gap is a THEOREM at every coupling (certified kernel floors + pinned Jentzsch anchor); remaining Millennium content = uniformity in the cutoff | PASS (pinned) |
-| Continuum program: UV/IR uniformity, OS reconstruction, vacuum, Clay predicate | OPEN (the real wall) |
+| YM-9 FIRST UNIFORMITY: exact heat-kernel refinement family; free gap exactly cutoff-independent; interacting uniform bound 3/8 along a declared trajectory | PASS (pinned) |
+| Remaining: physical (asymptotically-free) trajectory, growing lattice, universality, OS reconstruction, Clay predicate | OPEN (the real wall) |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
@@ -68,8 +69,34 @@ YM-2's sandwich slope is slack by the exact factor 24.
 Single-command reproduction (regenerates and pins all three):
 
 ```bash
-python papers/yang-mills-certified-benchmark/certificates/ym8_all_coupling_capstone.py
+python papers/yang-mills-certified-benchmark/certificates/ym9_uniform_heat_kernel.py
 ```
+
+YM-9 — the program's first statement that is uniform in the cutoff rather
+than at a fixed cutoff. Switching the link action from Wilson to the
+HEAT KERNEL `K_a(g) = sum_j d_j e^{-a C_j} chi_j(g)` makes refinement
+EXACT (`K_a * K_b = K_{a+b}`; n links of spacing a/n compose to one link
+of spacing a with no discretization error), and the cutoff dependence then
+cancels identically:
+
+- **T2** free reduced gap `= C_(1/2) = 3/4` EXACTLY for every `a > 0`;
+- **T3** along the declared trajectory `kappa(a) = theta*a`,
+  `Delta(a, kappa(a)) >= 3/4 - 6*theta` for EVERY `a > 0` — at
+  `theta = 1/16` a cutoff-independent gap of exactly **3/8**; fail-closed
+  at `theta >= 1/8`;
+- **T4** the seam count `k(a, e^{-as})` is exactly `a`-independent
+  (combinatorial), so the dock's threshold grammar transports across the
+  whole family at once;
+- **T5** Wilson contrast, computed: at fixed `beta` the reduced gap grows
+  like `1/a` and diverges — no cutoff-independent gap without a running
+  coupling.
+
+Honest remainder (in-certificate): the trajectory is DECLARED not derived
+(the physical one is fixed by asymptotic freedom, `beta ~ log(1/a)`, not
+modelled); the graph is FIXED (no infinite-volume growth); the heat-kernel
+action is a CHOICE (universality gate open); `Delta` is a reduced graph
+gap, not a reconstructed physical mass gap. Net movement: one gate from
+"untouched" to "touched on a toy carrier".
 
 Capstone (YM-8): the interacting theta-graph transfer has a strictly
 positive spectral gap at EVERY coupling — certified pointwise kernel

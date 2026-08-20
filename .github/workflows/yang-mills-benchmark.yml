@@ -20,8 +20,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Regenerate YM1 certificate and check pin
         run: |
-          python papers/yang-mills-certified-benchmark/certificates/ym8_all_coupling_capstone.py
-          git diff --exit-code papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM1.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM2.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM3.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM4.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM5.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM6.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM7.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM8.sha256
+          python papers/yang-mills-certified-benchmark/certificates/ym9_uniform_heat_kernel.py
+          git diff --exit-code papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM1.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM2.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM3.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM4.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM5.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM6.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM7.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM8.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM9.sha256
       - name: Install pytest
         run: python -m pip install pytest
       - name: Tests
