@@ -1,0 +1,63 @@
+{
+  "certificate_type": "YM4_SYMMETRY_PROTECTED_CROSSING_FINITE_KAPPA",
+  "claim_boundary": {
+    "certified": [
+      "[S, T_kappa] = 0 for all kappa (structural proof in header; machine content: pairing tensor p<->q symmetric and every compressed matrix commutes with swap exactly) \u2014 crossing line symmetry-protected at ALL coupling (T1)",
+      "finite-kappa certified interval compression on V and Cauchy-interlacing lower bounds for lambda_1, lambda_2, sector-resolved (T2)"
+    ],
+    "not_certified": [
+      "upper bounds on lambda_2 at finite kappa (YM-5: complement control)",
+      "full lattice",
+      "continuum",
+      "Clay predicate"
+    ],
+    "sources": [
+      "YM-1/2/3 (consumed, pinned)",
+      "MP adapters/yang_mills/THETA_GRAPH_PROTOTYPE.md"
+    ]
+  },
+  "claim_status": "exact_symmetry_theorem_plus_certified_lower_bounds",
+  "controls": {
+    "C1_coefficient_identity_eK": true,
+    "C2_tiny_kappa_reproduces_YM3_structure": true,
+    "C3_swap_commutator_exactly_zero_all_grid": true,
+    "C4_pairing_tamper_separates": true
+  },
+  "grid_results": {
+    "1/2": {
+      "even_second_lower": "0.462993790968917404009813139200",
+      "lambda1_lower": "1.232498492123214573583489032634",
+      "odd_lower": "0.405582351053147482689682182991",
+      "trunc_err": "0.000000004015215538909116164239"
+    },
+    "1/4": {
+      "even_second_lower": "0.454720197998726837318113657378",
+      "lambda1_lower": "1.052641777316075540576683834563",
+      "odd_lower": "0.412723667439853673801343128718",
+      "trunc_err": "0.000000000004322597605616618259"
+    },
+    "1/8": {
+      "even_second_lower": "0.445500405233151040418098683417",
+      "lambda1_lower": "1.012485320620656195052348208283",
+      "odd_lower": "0.421268963957243308924084926822",
+      "trunc_err": "0.000000000000006347353317832964"
+    },
+    "7/50": {
+      "even_second_lower": "0.446792799573001200288261002168",
+      "lambda1_lower": "1.015762635432509808320281055257",
+      "odd_lower": "0.420069450269176421158569368629",
+      "trunc_err": "0.000000000000018206605037104616"
+    }
+  },
+  "parameters": {
+    "beta": "2",
+    "grid": [
+      "1/8",
+      "7/50",
+      "1/4",
+      "1/2"
+    ],
+    "p_cut_twice_spin": 8
+  },
+  "verdict": "PASS"
+}

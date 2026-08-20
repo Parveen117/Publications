@@ -34,7 +34,8 @@ width budget.
 | YM-1 reduced gap enclosure (a=1, beta=2) | PASS (pinned) |
 | YM-2 interacting theta-graph gap, certified small coupling (kappa < Delta_red/6) | PASS (pinned) |
 | YM-3 first-order crossing direction: rank-one, A<->B transported, slope lambda_half/4 | PASS (pinned) |
-| YM-4 second-order / finite-kappa exact character transfer | OPEN (next) |
+| YM-4 symmetry-protection theorem [S,T_kappa]=0 + finite-kappa certified lower bounds | PASS (pinned) |
+| YM-5 complement control: certified UPPER bounds on lambda_2 at finite kappa | OPEN (next) |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
@@ -63,7 +64,18 @@ YM-2's sandwich slope is slack by the exact factor 24.
 Single-command reproduction (regenerates and pins all three):
 
 ```bash
-python papers/yang-mills-certified-benchmark/certificates/ym3_crossing_direction.py
+python papers/yang-mills-certified-benchmark/certificates/ym4_symmetry_protected.py
 ```
+
+New in YM-4: (T1) the graph swap S:(A,B)->(B,A) commutes with T_kappa for
+EVERY coupling — `Tr(BA^-1) = Tr(AB^-1)` on SU(2) — so YM-3's rank-one
+crossing line `chi12(A)+chi12(B)` is symmetry-protected at all kappa: a
+theorem, not a first-order accident. (T2) first certified finite-kappa
+spectral data from the exact character expansion
+`exp[(k/2)TrU] = sum d_j f_j chi_j`, `f_j = 2 I_{2j+1}(k)/k`, with exact
+Clebsch-Gordan ring arithmetic, the exact pairing tensor
+`Int chi_p(A)chi_q(B)chi_r(AB^-1) = delta_{p=q=r}/d_p`, and a certified
+truncation remainder. Sector-resolved lower bounds on the grid show the
+swap-even branch rising and the swap-odd branch falling with coupling.
 
 CI runs exactly that one command plus pin diff and pytest.
