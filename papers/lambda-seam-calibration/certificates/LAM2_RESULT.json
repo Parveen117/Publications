@@ -1,0 +1,105 @@
+{
+  "T1_gauss_magnitude_exact": {
+    "grid_moduli": [
+      3,
+      4,
+      5,
+      7,
+      9,
+      11,
+      13
+    ],
+    "primitive_characters_checked": 34,
+    "statement": "|tau(chi)|^2 = q as an exact identity in Z[zeta_L] for every primitive character on the grid (cyclic convolution + reduction mod Phi_L; no floats, no complex numbers)",
+    "verdict": "PASS"
+  },
+  "T1b_quarter_turn_instance": {
+    "statement": "tau(chi_4)^2 = -4 exactly: the derived seam phase tau/sqrt(q) at q=4 satisfies the cut relation iota^2 = -1 \u2014 the derived phase IS the quarter turn (remark-level native hook, exact)",
+    "tau_squared": -4,
+    "verdict": "PASS"
+  },
+  "T2_derivation_step_exact": {
+    "identities_checked": 335,
+    "statement": "Separated-Gauss identity sum_a chibar(a) zeta_q^{an} = chi(n) tau(chibar) verified exactly for EVERY residue n and every primitive chi on the grid, including gcd(n,q)>1 where both sides vanish (the vanishing IS primitivity). This is the exact step that converts a multiplicative twist into additive characters transportable by the Poisson/theta seam \u2014 where a genuine twist's FE phase is DERIVED",
+    "verdict": "PASS"
+  },
+  "T3_derived_phase_certified_analytically": {
+    "overlap": true,
+    "sqrt8_times_theta2_enclosure": [
+      "1.1759321620996608591267497978056178955179",
+      "1.1759321620996608591267497978056178955200"
+    ],
+    "statement": "Odd twisted theta seam at q=4 with DERIVED multiplier tau(chi_4)/(i sqrt 4) = 1: theta_chi(1/2) overlaps sqrt(8) * theta_chi(2), two-sided directed rational enclosures, no floats in any verdict path",
+    "theta_half_enclosure": [
+      "1.1759321620996608591267497978056178955197",
+      "1.1759321620996608591267497978056178957738"
+    ],
+    "verdict": "PASS",
+    "width_budget": "1e-20",
+    "width_rhs": "0.0000000000000000000000000000000000000021",
+    "width_theta_half": "0.0000000000000000000000000000000000002541"
+  },
+  "T4_no_conductor_for_legacy_twist": {
+    "max_witness_n": 3,
+    "moduli_covered": "2..60",
+    "sample_witnesses_n_m": {
+      "12": [
+        2,
+        14
+      ],
+      "2": [
+        2,
+        4
+      ],
+      "30": [
+        2,
+        32
+      ],
+      "4": [
+        2,
+        6
+      ],
+      "60": [
+        2,
+        62
+      ]
+    },
+    "statement": "For every modulus q <= 60 there is an explicit congruent pair n == m (mod q) with Omega(n) != Omega(m): the legacy winding twist chi_phi(n) = e^{i phi Omega(n)} is periodic for NO modulus, hence is not a Dirichlet character of any conductor, hence the Gauss-seam derivation of T1/T2 is unavailable to it",
+    "verdict": "PASS"
+  },
+  "anchor_pinned": "Classical statements \u2014 Gauss sums of Dirichlet characters, separated-Gauss identity for primitive characters, odd twisted theta functional equation theta_chi(1/x) = (tau(chi)/(i sqrt q)) x^{3/2} theta_chibar(x): PINNED NAMED DEPENDENCIES, cited as classical witnesses (CIRC-1). This capsule verifies exact finite instances in Z[zeta_L] and one certified analytic instance.",
+  "arithmetic_discipline": "exact integer cyclotomic-ring arithmetic (cyclic convolution in Z[x]/(x^L - 1), equality by reduction mod Phi_L) for all algebraic verdicts; directed rational intervals with 300-bit relative outward rounding for the analytic seam; no floating point in any verdict path",
+  "certificate_type": "LAM2_DERIVED_SEAM_PHASE",
+  "claim_boundary": {
+    "K0_L0_RH": "OPEN",
+    "N1_native_continuation": "OPEN",
+    "N2_native_functional_equation": "OPEN (template + impossibility half only)",
+    "N3_identification": "OPEN",
+    "YM_continuum_gates": "OPEN",
+    "classical_anchors": "Gauss sums, separated-Gauss identity, twisted theta FE \u2014 pinned, finite instances verified, never claimed as new",
+    "zeros_of_any_L_function": "no claims"
+  },
+  "claim_status": "derived-phase template certified on finite grid + one certified analytic seam; impossibility half certified for the legacy winding twist; no zero claims",
+  "controls_C1_imprimitive_magnitude": {
+    "expected_if_primitive": 9,
+    "induced_from": "quadratic character mod 3",
+    "j": 3,
+    "q": 9,
+    "separated": true,
+    "tau_times_conj_tau": 0
+  },
+  "controls_C2_imprimitive_derivation_fails": {
+    "first_failing_residue_n": 3,
+    "j": 3,
+    "q": 9,
+    "separated": true
+  },
+  "controls_C3_multiplier_tamper_separates": {
+    "separated": true,
+    "separation_gap_lower_bound": "0.58796608104983042956",
+    "tamper": "sqrt(2) in place of sqrt(8)"
+  },
+  "finding_LAM2_F1": "Derived-phase template certified: for genuine (primitive-character) twists the functional-equation seam phase is finite arithmetic on the cut's residue classes \u2014 |tau|^2 = q exact (T1), the derivation step exact at every residue (T2), and the derived multiplier confirmed by a certified analytic seam (T3). A derived phase is load-bearing: tampering the multiplier separates certified enclosures.",
+  "finding_LAM2_F2": "tau(chi_4)^2 = -4 exactly: the derived seam phase at q=4 satisfies iota^2 = -1, the cut's defining relation. Recorded as an exact remark-level native hook, not a transport theorem.",
+  "finding_LAM2_F3": "The legacy winding twist has no conductor (explicit witness for every q <= 60), so no Gauss-seam derivation exists for it: the declared phase certified in LAM1-F1 was FORCED by the twist's own arithmetic, not an oversight. Together LAM1-F1 + LAM2-F1 state the N2 design constraint: a native functional equation must ride a twist whose phase is derivable as finite seam arithmetic."
+}

@@ -49,3 +49,14 @@ grammar (memory channel included), rather than declare it. The theta
 identity certified in T3 is the classical shape of that single seam
 crossing; the memory-lattice bookkeeping of T2 is the exact object any
 native twist rides on. Both are finite, exact, and now pinned.
+
+## LAM-2 addendum
+
+LAM-2 supplies the constructive counterpoint: the derived-phase template
+(Gauss-sum seam arithmetic, exact in cyclotomic rings) and the
+impossibility half (the legacy winding twist has no conductor, so the
+derivation route never existed for it). Classical anchors — Gauss sums,
+the separated-Gauss identity, the odd twisted theta functional
+equation — are pinned named dependencies; finite instances are verified
+exactly, nothing is claimed as new mathematics. The native obligation
+N2 remains open: what LAM-2 fixes is its design constraint.
