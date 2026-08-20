@@ -1,0 +1,210 @@
+{
+  "cells": {
+    "kappa=1/2,mu=1": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "r_hi": "0.086160108315668",
+      "seam_count_exact": 1
+    },
+    "kappa=1/4,mu=3/5": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "r_hi": "0.017063726792173",
+      "seam_count_exact": 1
+    },
+    "kappa=1/8,mu=3/5": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "r_hi": "0.002935219035118",
+      "seam_count_exact": 1
+    },
+    "kappa=7/10,mu=13/10": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "r_hi": "0.277731063980165",
+      "seam_count_exact": 1
+    }
+  },
+  "certificate_type": "YM7_V7_CARRIER_CROSSING_CURVES",
+  "claim_boundary": {
+    "certified": [
+      "V7 content-exhaustive at its levels; complement top drops to lam1*lam (certified ordering)",
+      "kappa=7/10 seam count k=1 EXACT (YM-6 refusal unlocked)",
+      "all seven compressed eigenvalue curves as certified brackets with honest kappa-drift (no exact-constant claims; RH-line drift lesson adopted)"
+    ],
+    "framework_sources": [
+      "YM-1..6 (consumed, pinned)",
+      "RH-Framework L0 demand audit lesson: determinant-lemma/exact-formula ethos; limited-denominator constants never promoted"
+    ],
+    "not_certified": [
+      "unclosed cells (recorded)",
+      "full lattice",
+      "UV/IR",
+      "continuum OS",
+      "vacuum",
+      "Clay predicate"
+    ]
+  },
+  "claim_status": "exact_counts_extended_plus_certified_curves",
+  "controls": {
+    "C1_v5_v7_consistency": true,
+    "C2_level_ordering_content_exhaustion": true,
+    "C3_top_curve_monotone_within_brackets": true,
+    "C4_gram_blockdiag_exact": true,
+    "C5_planted_and_fail_closed": true,
+    "unlocked_kappa_7_10": true
+  },
+  "eigenvalue_curves": {
+    "1/2": [
+      [
+        "1.264605630189180",
+        "1.264605648815631"
+      ],
+      [
+        "0.512808501720428",
+        "0.512808576226234"
+      ],
+      [
+        "0.420550644397735",
+        "0.420550793409347"
+      ],
+      [
+        "0.199862658977508",
+        "0.199862957000732"
+      ],
+      [
+        "0.182331591844558",
+        "0.182331740856170"
+      ],
+      [
+        "0.135807037353515",
+        "0.135811805725097"
+      ],
+      [
+        "0.127110719680786",
+        "0.127110868692398"
+      ]
+    ],
+    "1/4": [
+      [
+        "1.057964780178735",
+        "1.057964780251495"
+      ],
+      [
+        "0.467867406026925",
+        "0.467867406113971"
+      ],
+      [
+        "0.416063767610467",
+        "0.416063767683226"
+      ],
+      [
+        "0.191593944458873",
+        "0.191593944531632"
+      ],
+      [
+        "0.185998883011052",
+        "0.185998883156571"
+      ],
+      [
+        "0.134405725242686",
+        "0.134405725315446"
+      ],
+      [
+        "0.131273252030950",
+        "0.131273252103710"
+      ]
+    ],
+    "1/8": [
+      [
+        "1.013565154338721",
+        "1.013565154411480"
+      ],
+      [
+        "0.448840816083247",
+        "0.448840816156007"
+      ],
+      [
+        "0.422061684352229",
+        "0.422061684424988"
+      ],
+      [
+        "0.188733874732861",
+        "0.188733874805620"
+      ],
+      [
+        "0.187171255878638",
+        "0.187171255951398"
+      ],
+      [
+        "0.133928920389735",
+        "0.133928920462494"
+      ],
+      [
+        "0.133012113496079",
+        "0.133012113568838"
+      ]
+    ],
+    "7/10": [
+      [
+        "1.577285766601562",
+        "1.577362060546875"
+      ],
+      [
+        "0.559123992919921",
+        "0.559133529663085"
+      ],
+      [
+        "0.435546875000000",
+        "0.445312500000000"
+      ],
+      [
+        "0.207685470581054",
+        "0.207695007324218"
+      ],
+      [
+        "0.178939342498779",
+        "0.178941726684570"
+      ],
+      [
+        "0.137020587921142",
+        "0.137022972106933"
+      ],
+      [
+        "0.124577522277832",
+        "0.124579906463623"
+      ]
+    ]
+  },
+  "parameters": {
+    "basis_dim": 7,
+    "beta": "2",
+    "cells": [
+      [
+        "1/8",
+        "3/5"
+      ],
+      [
+        "1/4",
+        "3/5"
+      ],
+      [
+        "1/2",
+        "1"
+      ],
+      [
+        "7/10",
+        "13/10"
+      ]
+    ]
+  },
+  "verdict": "PASS"
+}

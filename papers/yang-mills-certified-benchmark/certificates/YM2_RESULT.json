@@ -1,0 +1,39 @@
+{
+  "certificate_type": "YM2_CERTIFIED_INTERACTING_THETA_GAP_SMALL_COUPLING",
+  "claim_boundary": {
+    "certified": "theta-graph interacting transfer spectral-ratio gap for 0 <= kappa < kappa_0 = Delta_red/6 at beta=2; min-max sandwich m_- T_0 <= T_kappa <= m_+ T_0",
+    "not_certified": [
+      "large coupling",
+      "full 4d lattice",
+      "UV/IR uniformity",
+      "continuum OS reconstruction",
+      "Clay mass-gap predicate"
+    ],
+    "sources": [
+      "MP adapters/yang_mills/THETA_GRAPH_PROTOTYPE.md",
+      "papers/yang-mills-certified-benchmark YM-1 (consumed)"
+    ]
+  },
+  "claim_status": "finite_cutoff_theta_graph_small_coupling",
+  "controls": {
+    "C1_kappa0_recovers_YM1": true,
+    "C2_above_threshold_fails_closed": true,
+    "C3_exp_two_route_overlap": true
+  },
+  "enclosures": {
+    "gap_lower_hi": "0.0867233062315889130500678010545476832187",
+    "gap_lower_lo": "0.0867233062315889130500678010545476832187",
+    "kappa_threshold_hi": "0.1394538843719314855083446335090912805364",
+    "kappa_threshold_lo": "0.1394538843719314855083446335090912805364",
+    "ratio_bound_hi": "0.9169307695665390225194668203502385831651",
+    "ratio_bound_lo": "0.9169307695665390225194668203502385831651"
+  },
+  "parameters": {
+    "bessel_terms": 60,
+    "beta": "2",
+    "exp_terms": 60,
+    "kappa": "1/8",
+    "log_terms": 80
+  },
+  "verdict": "PASS"
+}

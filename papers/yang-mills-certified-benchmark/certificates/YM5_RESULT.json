@@ -1,0 +1,79 @@
+{
+  "certificate_type": "YM5_TWO_SIDED_GAP_KILL_LEMMA_REALIZATION",
+  "claim_boundary": {
+    "certified": [
+      "two-sided spectral gap of the interacting theta transfer at every grid kappa marked certified, via U1-U3 + L",
+      "off-block control from the exact doubling m_k^2 = m_{2k}",
+      "gap certified BEYOND YM-2's sandwich threshold kappa_0"
+    ],
+    "lineage": "lambda-framework Kill-Lemma skeleton realized; no claim imported (see LINEAGE.md)",
+    "not_certified": [
+      "couplings where the ratio bound >= 1 (refused)",
+      "full 4d lattice",
+      "UV/IR limits",
+      "continuum OS",
+      "vacuum construction",
+      "Clay mass-gap predicate"
+    ],
+    "sources": [
+      "YM-1/2/3/4 (consumed, pinned)"
+    ]
+  },
+  "claim_status": "certified_two_sided_gap_finite_coupling",
+  "controls": {
+    "C1_gram_difference_psd_within_tolerance": true,
+    "C2_tiny_kappa_reproduces_free_ratio": true,
+    "C3_next_level_certified": true,
+    "C4_large_kappa_fails_closed": true,
+    "fired_beyond_sandwich_threshold": true
+  },
+  "grid_results": {
+    "1/4": {
+      "gap_lower": "0.5780893361878687667021282",
+      "lambda1_lower": "1.0526417773160755405761752",
+      "lambda2_upper": "0.5904995807142898325769652",
+      "ratio_upper": "0.5609691667566992260347794",
+      "two_sided_gap_certified": true
+    },
+    "1/5": {
+      "gap_lower": "0.6205134688082746323742785",
+      "lambda1_lower": "1.0329976557750116263002308",
+      "lambda2_upper": "0.5554100839890484537342800",
+      "ratio_upper": "0.5376682908078327411742635",
+      "two_sided_gap_certified": true
+    },
+    "1/8": {
+      "gap_lower": "0.6924658799623194074577291",
+      "lambda1_lower": "1.0124853206206561950522258",
+      "lambda2_upper": "0.5065876812554836024137469",
+      "ratio_upper": "0.5003407663677968250743581",
+      "two_sided_gap_certified": true
+    },
+    "3/10": {
+      "gap_lower": "0.5332360641390026390176765",
+      "lambda1_lower": "1.0773645289074100804521039",
+      "lambda2_upper": "0.6320933081344484857430764",
+      "ratio_upper": "0.5867032848904674637655266",
+      "two_sided_gap_certified": true
+    },
+    "7/50": {
+      "gap_lower": "0.6772342958493262781116619",
+      "lambda1_lower": "1.0157626354325098083201265",
+      "lambda2_upper": "0.5160278198423356520663405",
+      "ratio_upper": "0.5080200844586215584848399",
+      "two_sided_gap_certified": true
+    }
+  },
+  "parameters": {
+    "beta": "2",
+    "fail_demo_kappa": "1",
+    "grid": [
+      "1/8",
+      "7/50",
+      "1/5",
+      "1/4",
+      "3/10"
+    ]
+  },
+  "verdict": "PASS"
+}

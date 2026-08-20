@@ -1,0 +1,53 @@
+{
+  "certificate_type": "YM3_FIRST_ORDER_RANK_ONE_CROSSING_DIRECTION",
+  "claim_boundary": {
+    "certified": [
+      "top-excited free eigenspace exactly 2-dim (T1)",
+      "vacuum derivative exactly 0; excited split +-lam_half/4 (T2)",
+      "r'(0) = lam_half/4; crossing line = chi12(A)+chi12(B), rank-one, A<->B transported (T3)",
+      "sandwich slack factor exactly 24 at first order (T4)"
+    ],
+    "not_certified": [
+      "finite-kappa spectra beyond YM-2",
+      "second order",
+      "full lattice",
+      "continuum",
+      "Clay mass-gap predicate"
+    ],
+    "sources": [
+      "MP adapters/yang_mills/THETA_GRAPH_PROTOTYPE.md",
+      "YM-1, YM-2 (consumed, pinned)"
+    ]
+  },
+  "claim_status": "exact_first_order_at_zero_coupling",
+  "controls": {
+    "C1_level_ordering": true,
+    "C2_theta_tamper_kills_splitting": true,
+    "C3_crossing_vector_swap_invariant": true,
+    "C4_slope_below_sandwich_ratio_1_over_24": true
+  },
+  "enclosures": {
+    "lambda_half_hi": "0.4331274267223117583171834557759918204315",
+    "lambda_half_lo": "0.4331274267223117583171834557759918204315",
+    "r_slope_hi": "0.1082818566805779395792958639439979551078",
+    "r_slope_lo": "0.1082818566805779395792958639439979551078",
+    "separation_next_levels": true
+  },
+  "exact_values": {
+    "block_eigen_derivatives": [
+      "1/4",
+      "-1/4"
+    ],
+    "crossing_vector": [
+      1,
+      1
+    ],
+    "receding_vector": [
+      1,
+      -1
+    ],
+    "slack_factor_vs_sandwich": "24",
+    "theta_integral": "1/2"
+  },
+  "verdict": "PASS"
+}
