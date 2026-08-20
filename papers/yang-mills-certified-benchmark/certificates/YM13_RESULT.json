@@ -1,0 +1,113 @@
+{
+  "H_after": [
+    [
+      "5",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "5",
+      "1",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "1",
+      "5",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "5",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0",
+      "0",
+      "5"
+    ]
+  ],
+  "H_before": [
+    [
+      "5",
+      "2",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "2",
+      "5",
+      "1",
+      "0",
+      "1"
+    ],
+    [
+      "1",
+      "1",
+      "5",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "5",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0",
+      "0",
+      "5"
+    ]
+  ],
+  "beta_after": "3/5",
+  "beta_before": "4/5",
+  "beta_discipline_source": {
+    "pinned_sha": "90e01b9bdc1597e424a41af4e684373331bf0d03614c230fa83404a4de9dd885",
+    "rh_d03_beta_audits": "2/5 -> 1/5, predecessor pinned",
+    "rule_adopted": "remove an overlap only by an actually executed independent obligation; retain lineage overlaps with a refusal note"
+  },
+  "certificate_type": "YM13_VERIFICATION_OVERLAP_BETA_AUDIT",
+  "channels": {
+    "CH1": "exact-arithmetic engine (intervals, series Bessel, Taylor exp/log)",
+    "CH2": "compression + inertia engine",
+    "CH3": "exponent/uniformity algebra",
+    "CH4": "representation-theory counting",
+    "CH5": "governance + pins"
+  },
+  "claim_status": "beta_reduced_with_retained_lineage",
+  "controls": {
+    "C1_import_isolation_ast": true,
+    "C2_cf_vs_series_two_algorithms": true,
+    "C3_compound_exp_contains_taylor_and_recertifies_3_8": true,
+    "C4_independent_casimir_agrees": true,
+    "C5_dettrace_vs_ldl_inertia": true,
+    "C6_beta_computed_not_narrated": true
+  },
+  "ranking_note": "RH remains lowest (1/5) \u2014 correct and expected; the YM program is younger and CH2 is still its hub. Next reductions named, not done: split CH2 into separately witnessed compression and inertia channels; non-executing attestation format for governance",
+  "reductions_executed": {
+    "A_H12_2_to_1": "series-Bessel slot replaced by independent continued-fraction enclosure (import-isolated)",
+    "B_H13_1_to_0": "Taylor exp/log corroboration replaced by compound-interest rational bounds",
+    "C_H34_1_to_0": "Casimir recomputed from scratch in the independent module"
+  },
+  "retained_overlaps": {
+    "H_12=1": "shared audited interval-arithmetic substrate \u2014 erasing it would fake independence",
+    "H_23=1": "YM-12's defect must consume the compression it certifies; the consumption IS the theorem",
+    "H_25=1": "governance attesting other channels is governance's purpose (d03_contract precedent)"
+  },
+  "rh_beta_for_comparison": "1/5",
+  "verdict": "PASS"
+}

@@ -43,7 +43,8 @@ width budget.
 | YM-10 blindness ledger (SPECTRAL-1/2 framework): exact multiplicity law, exact probe counts, composition ledger, YM-9 T4 correction | PASS (pinned) |
 | YM-11 three gate verdicts on the toy carrier: gauge CLOSED; volume/IR SPLIT (free closed, sandwich route proven insufficient, critical volume exact); universality SPLIT (counting closed, metric open) | PASS (pinned) |
 | YM-12 the T03 move: positivity SQUARE-SOURCED (classical anchor demoted to simplicity-only); volume+cutoff-uniform interacting gap 3/8 on the factorized chain; governance capsule | PASS (pinned) |
-| Remaining: interaction-overlap (bounded-degree) volume, AF trajectory, tightness, OS reconstruction, non-triviality, metric universality, Clay predicate | OPEN |
+| YM-13 verification-overlap beta audit: beta 4/5 -> 3/5 via independent witnesses (CF Bessel, compound-interest exp, det/trace inertia); three lineage overlaps retained with refusal notes; RH remains lowest at 1/5 | PASS (pinned) |
+| Remaining: interaction-overlap volume, AF trajectory, tightness, OS reconstruction, non-triviality, metric universality, Clay predicate | OPEN |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
