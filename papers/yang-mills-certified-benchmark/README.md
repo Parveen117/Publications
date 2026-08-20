@@ -33,7 +33,8 @@ width budget.
 |---|---|
 | YM-1 reduced gap enclosure (a=1, beta=2) | PASS (pinned) |
 | YM-2 interacting theta-graph gap, certified small coupling (kappa < Delta_red/6) | PASS (pinned) |
-| YM-3 exact character transfer at general coupling + gap-closing direction | OPEN (next) |
+| YM-3 first-order crossing direction: rank-one, A<->B transported, slope lambda_half/4 | PASS (pinned) |
+| YM-4 second-order / finite-kappa exact character transfer | OPEN (next) |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
@@ -51,4 +52,18 @@ python papers/yang-mills-certified-benchmark/certificates/ym2_theta_interacting_
 python -m pytest papers/yang-mills-certified-benchmark/tests -v
 ```
 
-CI regenerates the certificate and fails on any pin drift.
+New in YM-3 (exact, zero coupling): the free top-excited eigenspace is exactly
+two-dimensional; the exact theta integral `Int chi12(A)chi12(B)chi12(AB^-1) = 1/2`
+splits it at first order with derivatives `+-lambda_half/4`; the vacuum derivative
+is exactly 0. Hence `r'(0) = lambda_half/4` (certified `0.10828185668...`), the
+first-order CROSSING DIRECTION is the single symmetric line
+`chi12(A)+chi12(B)` — rank-one and transported by the graph symmetry — and
+YM-2's sandwich slope is slack by the exact factor 24.
+
+Single-command reproduction (regenerates and pins all three):
+
+```bash
+python papers/yang-mills-certified-benchmark/certificates/ym3_crossing_direction.py
+```
+
+CI runs exactly that one command plus pin diff and pytest.
