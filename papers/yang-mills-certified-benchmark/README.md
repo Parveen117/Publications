@@ -41,7 +41,8 @@ width budget.
 | YM-8 CAPSTONE: theta-graph gap is a THEOREM at every coupling (certified kernel floors + pinned Jentzsch anchor); remaining Millennium content = uniformity in the cutoff | PASS (pinned) |
 | YM-9 FIRST UNIFORMITY: exact heat-kernel refinement family; free gap exactly cutoff-independent; interacting uniform bound 3/8 along a declared trajectory | PASS (pinned) |
 | YM-10 blindness ledger (SPECTRAL-1/2 framework): exact multiplicity law, exact probe counts, composition ledger, YM-9 T4 correction | PASS (pinned) |
-| Remaining: physical (asymptotically-free) trajectory, growing lattice, universality, OS reconstruction, Clay predicate | OPEN (the real wall) |
+| YM-11 three gate verdicts on the toy carrier: gauge CLOSED; volume/IR SPLIT (free closed, sandwich route proven insufficient, critical volume exact); universality SPLIT (counting closed, metric open) | PASS (pinned) |
+| Remaining: Clay predicate, AF trajectory, tightness, OS reconstruction, non-triviality, interacting half of volume, metric half of universality | OPEN (the real wall) |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
@@ -70,8 +71,39 @@ YM-2's sandwich slope is slack by the exact factor 24.
 Single-command reproduction (regenerates and pins all three):
 
 ```bash
-python papers/yang-mills-certified-benchmark/certificates/ym10_blindness_ledger.py
+python papers/yang-mills-certified-benchmark/certificates/ym11_gate_verdicts.py
 ```
+
+YM-11 takes three dependency-map gates and gives each an exact verdict on
+the toy carrier — the generalized theta ("n-banana") graphs `B_n`, two
+vertices joined by `n` edges, so `b_1 = n-1` holonomies and
+`F(n) = n(n-1)/2` plaquettes; `B_3` is the theta graph of YM-1..10.
+**These are toy-carrier verdicts, not Clay-sense closures**, and two of
+the three are partly negative.
+
+- **Gauge — CLOSED.** Tree gauge-fixing on a connected graph is exact (no
+  Gribov obstruction), leaving `b_1 = E-V+1` holonomies and a residual
+  diagonal `G` acting by conjugation, so gauge-invariant states are
+  exactly `L^2(G^{b_1})^Ad`. For `B_3` that **is** the carrier every
+  capsule has used — now certified rather than assumed, with Wilson loops
+  spanning it and YM-10's multiplicity law counting them.
+- **Volume / IR — SPLIT.** The *free* reduced gap is `C_(1/2) = 3/4` for
+  every `n` and every `a`: volume- **and** cutoff-uniform, closed. The
+  *interacting* sandwich gives `Delta >= C_(1/2) - 2 F(n) theta`, which
+  degrades quadratically in `n`: at `theta = 1/16` the bounds are `3/8`
+  (n=3), exactly `0` (n=4), `-1/2` (n=5). The route is **proven
+  insufficient** for volume-uniformity, with the critical volume computed
+  exactly. What a replacement must do is named: control the interaction
+  per-plaquette (dock route, YM-6) rather than by a global sup (envelope
+  route, YM-5) — the same lesson one level up.
+- **Universality — SPLIT.** For the whole regulator class
+  `K = sum_j d_j c_j chi_j` with `c_j > 0`, the **counting layer**
+  (content grading, multiplicity law, carrier dimensions, blindness
+  ledger, probe counts) depends only on SU(2) representation theory and
+  is therefore regulator-independent — closed, and it means YM-10's
+  ledger is kinematics, not a choice of action. The **metric layer** (the
+  gap value) genuinely differs between regulators (witnessed) and remains
+  the real universality gate.
 
 YM-10 applies the source-restriction framework of the companion
 manuscripts *When Spectra Forget Order* and *Stable Recovery Beyond

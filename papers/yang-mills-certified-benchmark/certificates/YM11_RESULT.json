@@ -1,0 +1,108 @@
+{
+  "certificate_type": "YM11_THREE_GATE_VERDICTS_TOY_CARRIER",
+  "claim_status": "toy_carrier_gate_verdicts_two_partly_negative",
+  "controls": {
+    "C1_euler_bookkeeping": true,
+    "C2_exact_critical_volume": true,
+    "C3_counting_layer_regulator_independent": true,
+    "C4_metric_layer_differs_witnessed": true,
+    "C5_positive_coefficient_class_enforced": true
+  },
+  "gate_1_gauge": {
+    "content": "tree gauge-fixing is exact on a connected graph (no Gribov obstruction), leaving b_1 = E-V+1 holonomies and residual diagonal G acting by conjugation => gauge-invariant states = L^2(G^{b_1})^Ad; for B_3 this IS the carrier used by YM-1..10, now certified rather than assumed",
+    "family": {
+      "B_2": {
+        "holonomies_b1": 1,
+        "plaquettes": 1
+      },
+      "B_3": {
+        "holonomies_b1": 2,
+        "plaquettes": 3
+      },
+      "B_4": {
+        "holonomies_b1": 3,
+        "plaquettes": 6
+      },
+      "B_5": {
+        "holonomies_b1": 4,
+        "plaquettes": 10
+      },
+      "B_6": {
+        "holonomies_b1": 5,
+        "plaquettes": 15
+      },
+      "B_7": {
+        "holonomies_b1": 6,
+        "plaquettes": 21
+      }
+    },
+    "verdict": "CLOSED on this carrier",
+    "wilson_loops_span_check": true
+  },
+  "gate_2_volume_ir": {
+    "critical_volume_at_theta": {
+      "1/16": 4
+    },
+    "family": {
+      "B_2": {
+        "faces": 1,
+        "route_certifies": true,
+        "sandwich_gap_bound": "5/8"
+      },
+      "B_3": {
+        "faces": 3,
+        "route_certifies": true,
+        "sandwich_gap_bound": "3/8"
+      },
+      "B_4": {
+        "faces": 6,
+        "route_certifies": false,
+        "sandwich_gap_bound": "0"
+      },
+      "B_5": {
+        "faces": 10,
+        "route_certifies": false,
+        "sandwich_gap_bound": "-1/2"
+      },
+      "B_6": {
+        "faces": 15,
+        "route_certifies": false,
+        "sandwich_gap_bound": "-9/8"
+      },
+      "B_7": {
+        "faces": 21,
+        "route_certifies": false,
+        "sandwich_gap_bound": "-15/8"
+      }
+    },
+    "free": "free reduced gap = C_(1/2) = 3/4 for every n and every a \u2014 volume- and cutoff-uniform",
+    "interacting": "sandwich gives Delta >= C_(1/2) - 2 F(n) theta; F(n) = n(n-1)/2 so degradation is quadratic in n. PROVEN INSUFFICIENT for volume-uniformity",
+    "verdict": "SPLIT \u2014 free CLOSED, interacting route INSUFFICIENT",
+    "what_a_replacement_must_do": "control the interaction per-plaquette rather than by a global sup \u2014 the dock route (YM-6) not the envelope route (YM-5), one level up"
+  },
+  "gate_3_universality": {
+    "counting_layer": "content grading, multiplicity law, carrier dimensions, blindness ledger and probe counts depend only on SU(2) representation theory, not on (c_j): identical for every regulator in the class",
+    "metric_layer": {
+      "differ": true,
+      "heat_kernel_reduced_gap_all_a": "3/4",
+      "note": "physical universality would require agreement after renormalization along the asymptotically-free trajectory \u2014 NOT modelled, NOT claimed",
+      "wilson_reduced_gap_at_a_1_hi": "0.83672330623158891305",
+      "wilson_reduced_gap_at_a_1_lo": "0.83672330623158891305"
+    },
+    "regulator_class": "K(g) = sum_j d_j c_j chi_j(g), c_0 = 1, c_j > 0 \u2014 includes heat kernel and Wilson",
+    "verdict": "SPLIT \u2014 counting layer CLOSED, metric layer OPEN"
+  },
+  "net_movement": "one gate CLOSED on the toy carrier; two gates SPLIT with their open halves sharpened to named obstructions and, for gate 2, an exact critical volume",
+  "scope_warning": "These are the TOY-CARRIER versions of the dependency-map gates on generalized theta graphs B_n with the heat-kernel action. Closing a gate in the Clay sense is not attempted and not claimed. Two of the three verdicts are partly NEGATIVE: a route is proven insufficient.",
+  "still_open": [
+    "Clay predicate",
+    "asymptotically-free trajectory",
+    "tightness",
+    "OS reconstruction",
+    "non-triviality / locality",
+    "AF-OPE matching",
+    "interacting half of gate 2",
+    "metric half of gate 3"
+  ],
+  "verdict": "PASS"
+}
