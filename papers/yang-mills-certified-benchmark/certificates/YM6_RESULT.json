@@ -1,0 +1,95 @@
+{
+  "cells": {
+    "kappa=1/2,mu=1": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "gap_statement": "lambda_2 <= 1 < lambda_1 (exact count)",
+      "r_hi": "0.34578770470376664884",
+      "seam_count_exact": 1
+    },
+    "kappa=1/4,mu=3/5": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "gap_statement": "lambda_2 <= 3/5 < lambda_1 (exact count)",
+      "r_hi": "0.05763556096624618783",
+      "seam_count_exact": 1
+    },
+    "kappa=1/8,mu=3/5": {
+      "count_bracket": [
+        1,
+        1
+      ],
+      "gap_statement": "lambda_2 <= 3/5 < lambda_1 (exact count)",
+      "r_hi": "0.00849803879435475166",
+      "seam_count_exact": 1
+    },
+    "kappa=7/10,mu=5/4": {
+      "count_bracket": [
+        1,
+        5
+      ],
+      "gap_statement": null,
+      "r_hi": "3.07572966483127421597",
+      "seam_count_exact": null
+    }
+  },
+  "certificate_type": "YM6_THETA_SEAM_INTEGER_DOCK",
+  "claim_boundary": {
+    "certified": [
+      "k_Sigma(kappa,mu) exact where bracket closes: Haynsworth congruence (D03 pattern) on the native 5x5 carrier",
+      "count=1 cells give lambda_2 <= mu < lambda_1 EXACTLY",
+      "no seam spectral flow across the certified window (thermodynamics/02 instance)"
+    ],
+    "framework_sources": [
+      "D03 compact seam integer (two exact block congruences)",
+      "T01-D3 declared-tail doctrine (truncation as obligation)",
+      "thermodynamics/02 curvature-to-seam spectral flow",
+      "YM-1..5 (consumed, pinned)"
+    ],
+    "not_certified": [
+      "refused cells (recorded)",
+      "full lattice",
+      "UV/IR",
+      "continuum OS",
+      "vacuum construction",
+      "Clay predicate"
+    ]
+  },
+  "claim_status": "exact_threshold_counts_finite_theta",
+  "controls": {
+    "C1_low_mu_sees_three_crossings": true,
+    "C2_ym5_consistency": true,
+    "C3_gram_tamper_separates": true,
+    "C4_inertia_engine_verified": true,
+    "C5_fired_at_kappa_ge_half": true,
+    "levels_certified": true,
+    "no_seam_flow_in_window": true
+  },
+  "parameters": {
+    "beta": "2",
+    "cells": [
+      [
+        "1/8",
+        "3/5"
+      ],
+      [
+        "1/4",
+        "3/5"
+      ],
+      [
+        "1/2",
+        "1"
+      ],
+      [
+        "7/10",
+        "5/4"
+      ]
+    ],
+    "p_cut": 8
+  },
+  "verdict": "PASS"
+}

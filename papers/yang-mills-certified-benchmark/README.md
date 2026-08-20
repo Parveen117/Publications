@@ -36,7 +36,8 @@ width budget.
 | YM-3 first-order crossing direction: rank-one, A<->B transported, slope lambda_half/4 | PASS (pinned) |
 | YM-4 symmetry-protection theorem [S,T_kappa]=0 + finite-kappa certified lower bounds | PASS (pinned) |
 | YM-5 certified TWO-SIDED gap at finite kappa, beyond the sandwich threshold (Kill-Lemma realization) | PASS (pinned) |
-| YM-6 larger compression V / theta-network basis; push certified region toward strong coupling | OPEN |
+| YM-6 seam-integer dock: EXACT eigenvalue counts on the native 5x5, certified to kappa=1/2 (D03 congruence) | PASS (pinned) |
+| YM-7 tighter complement (declared-tail |C| control) to unlock kappa >= 7/10; then the continuum gates | OPEN |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
@@ -65,8 +66,18 @@ YM-2's sandwich slope is slack by the exact factor 24.
 Single-command reproduction (regenerates and pins all three):
 
 ```bash
-python papers/yang-mills-certified-benchmark/certificates/ym5_two_sided_gap.py
+python papers/yang-mills-certified-benchmark/certificates/ym6_seam_integer_dock.py
 ```
+
+New in YM-6 (framework-native): the gap becomes an exact threshold COUNT
+`k_Sigma(kappa,mu) = N(spec(T_kappa) > mu)` via a Haynsworth congruence —
+the D03 "infinite ko finite" move — on the native 5x5 carrier
+`{1, chi12(A), chi12(B), chi12(A)chi12(B), chi12(AB^-1)}` (all exact T0
+eigenvectors; exact Gram has a single 1/2 overlap). Certified exact counts:
+`k=1` at (kappa,mu) = (1/8,3/5), (1/4,3/5), (1/2,1) — so
+`lambda_2 <= mu < lambda_1` EXACTLY, past YM-5's reach — and constant
+count across the window = no seam spectral flow (thermodynamics/02
+instance). The (7/10,5/4) cell is honestly REFUSED (bracket [1,5]).
 
 New in YM-5: certified TWO-SIDED spectral gap of the interacting theta
 transfer at finite coupling — including BEYOND YM-2's sandwich threshold
