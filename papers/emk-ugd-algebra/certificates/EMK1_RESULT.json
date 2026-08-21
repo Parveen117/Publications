@@ -1,0 +1,109 @@
+{
+  "T1_primitive_relations": {
+    "K_squared_is_I": true,
+    "RK_squared_is_I": true,
+    "R_K_anticommute": true,
+    "R_squared_is_minus_I": true,
+    "statement": "K^2=I, R^2=-I, RK=-KR, (RK)^2=I, and the UGD Lie bracket [R,K]=2RK \u2014 exact in the declared representation. K is seam reflection, R the quarter turn, RK mixed rotation-cut parity",
+    "ugd_bracket_R_K_equals_2RK": true,
+    "verdict": "PASS"
+  },
+  "T2_additive_determinant_identity": {
+    "channel_independence": {
+      "both_channels_zero_operator_nonzero": {
+        "coeffs": [
+          "2.000000000000000000000000000000",
+          "2.000000000000000000000000000000",
+          "3.000000000000000000000000000000",
+          "3.000000000000000000000000000000"
+        ],
+        "det": "0.000000000000000000000000000000",
+        "operator_is_zero": false
+      },
+      "rotational_zero_seam_nonzero": {
+        "Delta_par": "8.000000000000000000000000000000",
+        "Delta_perp": "0.000000000000000000000000000000",
+        "coeffs": [
+          "3.000000000000000000000000000000",
+          "1.000000000000000000000000000000",
+          "2.000000000000000000000000000000",
+          "2.000000000000000000000000000000"
+        ]
+      },
+      "seam_channel_zero_rotational_nonzero": {
+        "Delta_par": "0.000000000000000000000000000000",
+        "Delta_perp": "8.000000000000000000000000000000",
+        "coeffs": [
+          "2.000000000000000000000000000000",
+          "2.000000000000000000000000000000",
+          "3.000000000000000000000000000000",
+          "1.000000000000000000000000000000"
+        ]
+      }
+    },
+    "coefficient_grid": "a,b,c,d in -3..3",
+    "quadruples_checked": 2401,
+    "statement": "det(aI+bK+cR+dRK) = (a^2-b^2)+(c^2-d^2) = Delta_par + Delta_perp, verified on the full rational coefficient grid by two independent routes (assembled matrix determinant vs the channel formula)",
+    "verdict": "PASS"
+  },
+  "T3_projectors_and_mixing_diagnostic": {
+    "commutator_iff_no_mixing": true,
+    "projector_identities_exact": true,
+    "statement": "P_pm=(I+-K)/2 are idempotent, orthogonal and sum to I; and [A,K]=0 exactly when the seam-mixing blocks P_+ A P_- and P_- A P_+ both vanish \u2014 the commutator IS the seam-mixing detector, verified exactly on the whole grid",
+    "verdict": "PASS"
+  },
+  "T4_second_order_determinant_correction": {
+    "control_first_order_closure_is_incomplete": {
+      "both_diagonal_blocks_det": 1,
+      "meaning": "a determinant sector can pass every diagonal-block test and still fail recognition closure at second order",
+      "quadratic_residue_nonzero": "0.166666666666666666666666666666"
+    },
+    "quadratic_residue": "0.004166666666666666666666666666",
+    "schur_identity_exact": true,
+    "statement": "The exact Schur identity det A = det(A_pp) det(A_mm - E_mp A_pp^{-1} E_pm) holds in Q, and the quadratic trace Tr(A_pp^{-1} E_pm A_mm^{-1} E_mp) is the leading seam-mixing determinant correction",
+    "verdict": "PASS"
+  },
+  "T5_cut_commutator_curvature": {
+    "commuting_pair_closes_path": true,
+    "identity_exact": true,
+    "noncommuting_pair_has_curvature": true,
+    "statement": "C_i C_x - C_x C_i = -dx di [D_x, D_i] exactly; path equality of the elementary cut square holds exactly when the commutator channel vanishes",
+    "verdict": "PASS"
+  },
+  "T6_winding_obstruction": {
+    "arithmetic": "rational Pythagorean circle parametrization + exact signed crossing count of the positive real axis; no trigonometry, no floats",
+    "contraction_meets_singular_locus": true,
+    "half_scaled_loop_same_winding": 1,
+    "statement": "The EMK winding index of a closed rational loop of invertible operators is an exact integer, invariant under homotopies staying in the invertible sector; a loop of nonzero winding cannot be contracted without meeting the singular determinant locus \u2014 non-healable curvature",
+    "verdict": "PASS",
+    "winding_loop_excluding_origin": 0,
+    "winding_scaled_loop_homotopy_invariant": 1,
+    "winding_unit_loop": 1
+  },
+  "T7_bridge_to_cut_first_equivalence": {
+    "cross_ref": "papers/cut-first-equivalence (CFE-1 T1, CFE-Q T3)",
+    "determinant_reduces_to_seam_channel_when_memoryless": true,
+    "memoryless_iff_rotation_free": true,
+    "statement": "A primitive block is memoryless (commutes with the seam grading K, zero mixing residue) EXACTLY when its rotational channel vanishes (c=d=0), and then det M = Delta_par alone. The determinant channel split is therefore the theory-native form of the Cut-First Equivalence residue: the seam-compatible channel is the memoryless part, the rotational channel carries the memory",
+    "verdict": "PASS"
+  },
+  "arithmetic_discipline": "exact rationals throughout; determinants and inverses by exact Gauss-Jordan over Q; winding by rational circle parametrization and exact signed crossing counts; no floating point anywhere",
+  "certificate_type": "EMK1_DETERMINANT_SEAM_LADDER",
+  "claim_boundary": {
+    "CFE_uniqueness_U": "OPEN (inherited)",
+    "RH_K0_L0": "not touched",
+    "YM_continuum_gates": "not touched",
+    "certified": "finite-dimensional theorem spine of the EMK/UGD determinant seam ladder, exact rational arithmetic",
+    "infinite_dimensional_extensions": "NOT CLAIMED \u2014 trace-class, essential-spectrum, Hurwitz-zeta, xi-function and Hilbert-Polya style extensions are deferred by the vault source and are not asserted here",
+    "quantum_gravity": "not touched"
+  },
+  "claim_status": "the framework's native algebraic core certified: primitive EMK/UGD relations, the additive determinant identity with independent channels, projector algebra, exact Schur second-order correction, cut-commutator curvature, integer winding with non-healability, and the algebra-level bridge to Cut-First Equivalence; infinite-dimensional extensions NOT claimed",
+  "finding_EMK1_F1": "The determinant identity det M = (a^2-b^2)+(c^2-d^2) is certified on the full rational grid with genuinely INDEPENDENT channels: each can vanish while the other does not, and both can vanish while the operator itself is nonzero. The additive split is structure, not notation.",
+  "finding_EMK1_F2": "First-order closure is provably incomplete: an operator whose diagonal seam blocks each have determinant 1 still carries a nonzero quadratic determinant residue. Diagonal-block tests cannot certify recognition closure.",
+  "finding_EMK1_F3": "The algebra-level bridge to Cut-First Equivalence is exact: memoryless (K-commuting) blocks are precisely the rotation-free ones, and for those the determinant collapses to the seam channel. The CFE memory dial and the EMK rotational determinant channel are the same object in two presentations \u2014 so CFE's witness EOS can be replaced by this native algebra.",
+  "provenance": {
+    "prior_executable_version": "NONE \u2014 checked Recognition-Kernel-Framework and RH-Framework; no UGD algebra implementation exists in either. This capsule is the first machine-checkable realization.",
+    "source": "vault LaTeX: EMK algebraic core ladder I-VII (determinant seam decomposition, cut curvature, second-order correction, healing flow, winding obstruction, spectral index) and the UGD algebraic-operators appendix",
+    "why_now": "the Cut-First Equivalence capsules used an explicit rational equation of state as scaffold; this replaces that scaffold with the theory's own algebra"
+  }
+}

@@ -1,0 +1,28 @@
+name: EMK UGD algebra
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install deps
+        run: python -m pip install pytest
+      - name: Regenerate EMK-1 certificate and check pin
+        run: |
+          python papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py
+          git diff --exit-code papers/emk-ugd-algebra/certificates
+      - name: Tests
+        run: python -m pytest papers/emk-ugd-algebra/tests -v
