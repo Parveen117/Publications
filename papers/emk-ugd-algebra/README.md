@@ -36,6 +36,40 @@ a rotational / anti-seam channel, and the two close or fail
 | T6 | Winding index an exact integer, homotopy invariant (1, 1, 0 across scaled and off-origin loops) — **non-healable curvature**, via rational circle parametrization and exact crossing counts, no trigonometry | PASS |
 | T7 | **Bridge to CFE:** a block is memoryless (commutes with K) **exactly** when rotation-free (c=d=0), and then det M = Δ∥ alone | PASS |
 
+## EMK-2 — CFE rebuilt on this algebra, and the UGD multiplicative law
+
+EMK-1 T7 gave the licence; EMK-2 performs the replacement and retires the
+scaffold equation of state.
+
+**The algebra is ℤ/2-graded:** even (seam) sector `{I, K}`, odd
+(rotational) sector `{R, RK}`, with `even·even = even`, `odd·odd = even`,
+`even·odd = odd`. The determinant channels read the two grades — so
+**memory is the odd grade**, not a dial bolted onto a model.
+
+**The UGD multiplicative law lives in the seam channel.** In the Cayley
+coordinate `y = b/a`, even-sector composition is exactly
+
+```
+y₁ ⊕ y₂ = (y₁ + y₂) / (1 + y₁y₂)
+```
+
+and under the native chart `x = (1+y)/(1−y)` this is precisely
+`Log_Σ(x₁x₂) = Log_Σ(x₁) + Log_Σ(x₂)` — the framework's own
+multiplicative-to-additive law (Recognition-Kernel-Framework, F00G
+Theorem 7.1). Certified with **no series, no transcendental evaluation
+and no floats**. The seam determinant channel is correspondingly
+multiplicative, `Δ∥(MN) = Δ∥(M)·Δ∥(N)`, while its coordinate is additive:
+the determinant split and the multiplicative law are one grading seen
+twice.
+
+| Block | Statement | Verdict |
+|---|---|---|
+| T1 | The ℤ/2 grading, with explicit composition laws for each sector | PASS |
+| T2 | The multiplicative law in the Cayley chart, exact; seam channel multiplicative; naive-addition control separates | PASS |
+| T3 | CFE rebuilt natively: memoryless ⟺ even grade; zero curvature, zero residue | PASS |
+| T4 | Residue on the native carrier: ∮ω=∬Ω exact, zero iff even grade, strictly monotone in the odd amplitude | PASS |
+| T5 | **The dial was the odd grade:** under ρ = χ−1 the scaffold and native densities are identical — the residues reproduce CFE-1's certified −32, −16, 0, +16, +32 exactly | PASS |
+
 ## Findings
 
 **F1** — the additive split is *structure, not notation*: the channels are
@@ -47,6 +81,16 @@ cannot certify recognition closure.
 **F3** — the CFE memory dial and the EMK rotational determinant channel are
 the same object in two presentations, so CFE's witness EOS can be
 replaced by this native algebra.
+
+**EMK2-F1** — memory *is* the odd grade; the memory dial was never an extra
+parameter.
+
+**EMK2-F2** — multiplication of native scalars is addition of seam
+coordinates; the determinant split and the UGD multiplicative law are one
+grading.
+
+**EMK2-F3** — the scaffold retires without cost: every certified curvature
+and residue value is unchanged under ρ = χ−1.
 
 ## Provenance
 
@@ -69,8 +113,9 @@ touched.
 
 ```
 python papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py
+python papers/emk-ugd-algebra/certificates/emk2_native_carrier.py
 python -m pytest papers/emk-ugd-algebra/tests -v
 ```
 
 CI regenerates the certificate and fails on pin drift
-(`EXPECTED_EMK1.sha256`).
+(`EXPECTED_EMK1.sha256`, `EXPECTED_EMK2.sha256`).

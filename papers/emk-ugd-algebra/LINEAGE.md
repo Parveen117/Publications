@@ -44,3 +44,28 @@ sharpening:
 Certified: the finite-dimensional spine. Deferred by the source and not
 asserted here: all infinite-dimensional analytic extensions. Untouched:
 RH / K₀ / L₀ / YM continuum gates, and quantum gravity.
+
+## EMK-2 addendum
+
+EMK-2 consumes EMK-1's T7 licence and retires the scaffold equation of
+state used by the Cut-First Equivalence capsules. Two things are added.
+
+First, the ℤ/2 grading is made explicit and certified: the even (seam)
+sector {I,K} and the odd (rotational) sector {R,RK}, with the sector
+multiplication laws. EMK-1's determinant channels read exactly these two
+grades, so the memoryless/memory split is the grading itself.
+
+Second, the framework's native multiplicative-to-additive law is bound to
+the seam channel. The derivation of Log_Sigma lives in the public
+Recognition-Kernel-Framework (theorems/foundation/F00G, Theorem 7.1) and
+is a PINNED NAMED DEPENDENCY here — cited, never rederived. What EMK-2
+certifies is the exact Cayley-chart identity: even-sector composition is
+the rational addition law (y1+y2)/(1+y1y2), which under
+x = (1+y)/(1-y) is exactly Log_Sigma(x1 x2) = Log_Sigma(x1) +
+Log_Sigma(x2). No series, no transcendental evaluation, no floats.
+
+The retirement is certified to be free: under rho = chi - 1 the scaffold
+and native curvature densities coincide identically, and the native
+residues reproduce CFE-1's certified values (-32, -16, 0, +16, +32)
+exactly. CFE's numbers did not depend on the equation of state; the
+equation of state was a coordinate on the odd grade.

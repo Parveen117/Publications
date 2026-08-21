@@ -1,0 +1,95 @@
+{
+  "T1_z2_grading": {
+    "even_composition_law": "(a1 I + b1 K)(a2 I + b2 K) = (a1a2+b1b2) I + (a1b2+a2b1) K",
+    "even_times_even_is_even": true,
+    "even_times_odd_is_odd": true,
+    "odd_composition_law": "(c1 R + d1 RK)(c2 R + d2 RK) = (d1d2-c1c2) I + (d1c2-c1d2) K",
+    "odd_times_odd_is_even": true,
+    "pairs_checked": 625,
+    "statement": "The primitive algebra is Z/2-graded: even (seam) sector spanned by I,K and odd (rotational) sector by R,RK, with even*even = even, odd*odd = even, even*odd = odd \u2014 verified exactly on a rational grid. Memory is the ODD GRADE of the theory's own algebra, not a dial attached to a model",
+    "verdict": "PASS"
+  },
+  "T2_ugd_multiplicative_law_in_seam_channel": {
+    "addition_law_exact": true,
+    "cayley_pairs_checked": 64,
+    "chart_identity_x1x2_exact": true,
+    "control_naive_addition_fails": {
+      "correct_composition": "0.500000000000000000000000000000",
+      "naive_y1_plus_y2": "0.533333333333333333333333333333",
+      "separated": true,
+      "y1": "0.333333333333333333333333333333",
+      "y2": "0.200000000000000000000000000000"
+    },
+    "seam_channel_multiplicative": true,
+    "statement": "In the even sector's Cayley coordinate y = b/a, composition is EXACTLY y1(+)y2 = (y1+y2)/(1+y1y2); under the native chart x = (1+y)/(1-y) this is exactly x1*x2, i.e. Log_Sigma(x1 x2) = Log_Sigma(x1) + Log_Sigma(x2) (F00G Thm 7.1) \u2014 certified with no series, no transcendental evaluation and no floats. The seam determinant channel is correspondingly MULTIPLICATIVE: Delta_par(MN) = Delta_par(M) Delta_par(N)",
+    "verdict": "PASS"
+  },
+  "T3_cfe_rebuilt_on_native_carrier": {
+    "curvature_at_zero_odd_amplitude": "0.000000000000000000000000000000",
+    "memoryless_iff_even_grade": true,
+    "residue_at_zero_odd_amplitude": "0.000000000000000000000000000000",
+    "statement": "The response one-form is carried by EMK blocks, not by an invented potential. A configuration is memoryless exactly when its odd grade vanishes; then the curvature is zero, every loop residue is zero, and the classical response is recovered \u2014 CFE-1 T1 with the scaffold removed",
+    "verdict": "PASS"
+  },
+  "T4_residue_on_native_carrier": {
+    "residue_by_odd_amplitude": {
+      "-0.200000000000000000000000000000": "-16.000000000000000000000000000000",
+      "-0.400000000000000000000000000000": "-32.000000000000000000000000000000",
+      "0.000000000000000000000000000000": "0.000000000000000000000000000000",
+      "0.200000000000000000000000000000": "16.000000000000000000000000000000",
+      "0.400000000000000000000000000000": "32.000000000000000000000000000000"
+    },
+    "statement": "oint omega = iint Omega holds exactly in Q on the native carrier with curvature read off the ODD channel; the residue is zero iff the odd grade vanishes and strictly monotone in the odd amplitude",
+    "stokes_exact": true,
+    "strictly_monotone": true,
+    "verdict": "PASS",
+    "zero_iff_even": true
+  },
+  "T5_the_dial_was_the_odd_grade": {
+    "correspondence": {
+      "0.600000000000000000000000000000": {
+        "native_density": "-2.000000000000000000000000000000",
+        "scaffold_density": "-2.000000000000000000000000000000"
+      },
+      "0.800000000000000000000000000000": {
+        "native_density": "-1.000000000000000000000000000000",
+        "scaffold_density": "-1.000000000000000000000000000000"
+      },
+      "1.000000000000000000000000000000": {
+        "native_density": "0.000000000000000000000000000000",
+        "scaffold_density": "0.000000000000000000000000000000"
+      },
+      "1.200000000000000000000000000000": {
+        "native_density": "1.000000000000000000000000000000",
+        "scaffold_density": "1.000000000000000000000000000000"
+      },
+      "1.400000000000000000000000000000": {
+        "native_density": "2.000000000000000000000000000000",
+        "scaffold_density": "2.000000000000000000000000000000"
+      }
+    },
+    "identical": true,
+    "statement": "CFE-1's memory dial (chi - 1) and the native odd amplitude rho are in exact correspondence: under rho = chi - 1 the scaffolded curvature density and the native one coincide identically. The equation of state was a coordinate on the odd grade, not an independent modelling choice \u2014 so its removal changes no certified value",
+    "verdict": "PASS"
+  },
+  "arithmetic_discipline": "exact rationals throughout; the multiplicative law certified as a rational identity in the Cayley chart (no series, no transcendental evaluation); midpoint circulation exact for the linear form; no floating point anywhere",
+  "certificate_type": "EMK2_NATIVE_CARRIER_AND_MULTIPLICATIVE_LAW",
+  "claim_boundary": {
+    "CFE_uniqueness_U": "OPEN (inherited)",
+    "RH_K0_L0": "not touched",
+    "YM_continuum_gates": "not touched",
+    "certified": "the Z/2 grading, the seam-channel multiplicative law bound to F00G Thm 7.1, the native rebuild of CFE's memoryless limit and residue, and the exact scaffold-to-native correspondence",
+    "infinite_dimensional_extensions": "NOT CLAIMED",
+    "native_log_derivation": "PINNED \u2014 F00G's derivation of Log_Sigma is cited, not rederived; what is certified here is the exact Cayley-chart identity",
+    "quantum_gravity": "not touched"
+  },
+  "claim_status": "Cut-First Equivalence rebuilt on the framework's own Z/2-graded algebra, with the UGD multiplicative-to-additive law bound to the seam determinant channel; exact rational arithmetic; the scaffold equation of state is retired, not merely supplemented",
+  "finding_EMK2_F1": "Memory is the ODD GRADE. The Z/2 grading of the primitive algebra (even = seam {I,K}, odd = rotational {R,RK}) is exactly the memoryless/memory split, and EMK-1's determinant channels Delta_par / Delta_perp read the two grades. The memory dial was never an extra parameter.",
+  "finding_EMK2_F2": "The UGD multiplicative law lives in the seam channel: even-sector composition in the Cayley coordinate is exactly the rational addition law (y1+y2)/(1+y1y2), which under the native chart is Log_Sigma(x1 x2) = Log_Sigma(x1) + Log_Sigma(x2). Multiplication of native scalars IS addition of seam coordinates \u2014 certified without series, transcendentals or floats. The seam determinant channel is multiplicative while its coordinate is additive: the determinant split and the multiplicative law are one grading seen twice.",
+  "finding_EMK2_F3": "The scaffold is retired without cost: the CFE equation of state was a coordinate on the odd amplitude, and under rho = chi - 1 every certified curvature and residue value is unchanged. CFE now stands on the theory's own algebra.",
+  "provenance": {
+    "licence": "EMK-1 T7 (memoryless <=> rotation-free)",
+    "native_log_law_source": "Recognition-Kernel-Framework, theorems/foundation/F00G (Native logarithm and powers), Theorem 7.1 Log_Sigma(xy) = Log_Sigma(x) + Log_Sigma(y), with the Cayley chart Exp_Sigma(A_Sigma(y)) = (1+y)/(1-y) and A_Sigma(y) = 2 Atanh_Sigma(y) \u2014 PINNED NAMED DEPENDENCY, cited and not rederived",
+    "replaces": "the explicit rational equation of state used as witness in CFE-1 / CFE-2 / CFE-Q"
+  }
+}

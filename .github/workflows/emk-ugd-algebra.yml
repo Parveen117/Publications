@@ -20,9 +20,10 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install deps
         run: python -m pip install pytest
-      - name: Regenerate EMK-1 certificate and check pin
+      - name: Regenerate EMK-1/EMK-2 certificates and check pins
         run: |
           python papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py
+          python papers/emk-ugd-algebra/certificates/emk2_native_carrier.py
           git diff --exit-code papers/emk-ugd-algebra/certificates
       - name: Tests
         run: python -m pytest papers/emk-ugd-algebra/tests -v
