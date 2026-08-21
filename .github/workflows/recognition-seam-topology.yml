@@ -24,6 +24,7 @@ jobs:
         run: |
           python papers/recognition-seam-topology/certificates/rst1_recognition_seam_topology.py
           python papers/recognition-seam-topology/certificates/rst2_arithmetic_fusion_spine.py
+          python papers/recognition-seam-topology/certificates/emktop1_vault_topology_appendix.py
           git diff --exit-code papers/recognition-seam-topology/certificates
       - name: Tests
         run: python -m pytest papers/recognition-seam-topology/tests -v

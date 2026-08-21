@@ -95,3 +95,26 @@ fusion gates F1–F5 remain OPEN; Zmodel→Zξ forbidden. **RH: ABSTAIN.**
 python certificates/rst2_arithmetic_fusion_spine.py
 python -m pytest tests -v
 ```
+
+---
+
+# EMK-TOP-1 — The vault topology appendix, exact spine
+
+Source: `APPENDIX_EMK_TOPOLOGY_RIGOROUS.tex` in the private vault, with
+the sheet-rotation subsection of the Euler information–curvature
+appendix. **This is a different object from RST-1** (see LINEAGE.md):
+the paper gives cut-stable topology and index calibration; the appendix
+builds seam *cohomology*. 29 tests; 99 in this folder.
+
+| Block | Certifies | Result |
+|---|---|---|
+| **T1** | The I, R, K system is closed and finite (order **8**, {±1}×{I,R,K,RK}); explicit KIR words that are the **identity under the shadow projection while their holonomy is −I** — visibly closed loops that do not recognition-close; the lawful ledger closes them exactly | PASS |
+| **T2** | On an explicit complex (square + diagonal, one face filled) d₁d₀ = 0 and **H¹ rank exactly 1**; a closed cochain has **equal** charge on homologous cycles and zero on boundaries; a non-closed one is provably not a class function | PASS |
+| **T3** | The additive log-determinant cochain certified **multiplicatively** — no logarithm evaluated. The corollary as an exact witness: a loop whose **global determinant returns exactly** while subcycle charges are 6 and 1/6 | PASS |
+| **T4** | The **trichotomy** exact / closed-non-exact / open, decided by exact rank, with a witness of each and an explicit β for the exact one. **Bridge:** CFE-U's H¹ = 0 means the middle class is *empty* on the response complex — the trichotomy is about the complex, not a universal law | PASS |
+| **T5** | Sheet-rotation class with an exact cocycle, phase carried as an **exponent in ℤ/K** (never a root of unity): a loop with total turn 0 mod K — visible phase return — but sheet index 2 and winding 6 | PASS |
+| **T6** | Seam survival ⟺ every **active** sector closes; shadow-only survival witness, exact and wrong ledgers separated, and monotonicity in the active set (so it must be declared before the verdict) | PASS |
+
+Protocol — the space tuple, seam module, tolerances, eight-component
+residue vector, commit policy — and the declared information-curvature
+tensor I^GE remain **declared, not certified**.

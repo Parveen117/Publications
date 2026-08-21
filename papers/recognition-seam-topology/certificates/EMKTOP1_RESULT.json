@@ -1,0 +1,70 @@
+{
+  "T1_KIR_holonomy_visible_vs_recognition": {
+    "group_order": 8,
+    "statement": "The I, R, K operator system is exactly closed and finite (8 elements, {+-1} x {I,R,K,RK}, in the 2x2 representation \u2014 the scalars are real, so no factor of i occurs) with R^2 = -I, K^2 = I, RK = -KR. Explicit KIR words are certified that are the IDENTITY under the declared shadow projection while their holonomy is -I: visibly closed loops whose recognition holonomy does not return. Others close in both sectors. The lawful holonomy ledger closes the residue exactly. Visible endpoint return does not imply EMK topological return \u2014 the appendix's KIR obstruction theorem, as an exact witness",
+    "verdict": "PASS"
+  },
+  "T2_cochains_and_seam_charge_conservation": {
+    "H1_rank": 1,
+    "statement": "On an explicit finite complex (square with diagonal, one face filled) d1 d0 = 0 exactly and H^1 has rank EXACTLY 1. For a CLOSED cochain the seam charge is EQUAL on homologous cycles \u2014 certified with two cycles differing by the boundary of the filled face \u2014 and zero on boundaries; a coboundary has charge zero on every cycle; and a non-closed cochain is provably not a class function. Seam charge is conserved on recognition homology classes, and a nonzero class is closed but not locally removable",
+    "verdict": "PASS"
+  },
+  "T3_determinant_charge_without_logarithms": {
+    "loop_charge": "1",
+    "statement": "The appendix's additive log-determinant cochain is certified in its equivalent MULTIPLICATIVE form, so no logarithm is evaluated: edge charges are determinant ratios and the loop charge is their product, invariant under edge refinement and realized by explicit matrices. THE COROLLARY, as an exact witness: a loop whose GLOBAL determinant returns exactly to its initial value while its subcycle charges are 6 and 1/6 \u2014 determinant return does NOT imply topological closure unless every active additive charge vanishes or is lawfully ledgered, and the ledger neutralizes it exactly",
+    "subcycle_charges": [
+      "6",
+      "1/6"
+    ],
+    "verdict": "PASS"
+  },
+  "T4_residue_trichotomy_and_empty_middle": {
+    "statement": "Every residue is exact, closed-but-not-exact, or open \u2014 decided here by exact rank computation with a witness of each and an EXPLICIT beta for the exact one. Only the exact class is locally removable: the closed non-exact class survives every coboundary correction with its charge unchanged. BRIDGE: CFE-U certified H^1 = 0 on the response complex, so THE MIDDLE CLASS IS EMPTY THERE \u2014 every closed response is exact and no stable seam charge can exist in that algebra. The middle class is nonempty exactly when H^1 is nontrivial, as the unfilled cycle here exhibits. The trichotomy is a statement about the complex, not a universal law",
+    "verdict": "PASS",
+    "witness_classes": [
+      "exact",
+      "closed_not_exact",
+      "open"
+    ]
+  },
+  "T5_sheet_rotation_class": {
+    "K": 6,
+    "statement": "The sheet rotation S_(alpha,n) acts with an exact cocycle: phase and sheet index add, and the winding terms differ from the naive sum by an exactly computed cocycle correction. Phase is carried as an EXPONENT in Z/K and never evaluated as a root of unity. Certified witness: a loop with total turn exactly 0 mod K \u2014 visible phase return on the circle \u2014 whose sheet index is 2 and winding 6, i.e. a nonzero sheet-rotation class; and controls where the class vanishes entirely. The visible phase circle forgets sheet index and winding; the recognition topology retains them",
+    "verdict": "PASS",
+    "witness_class": [
+      0,
+      2,
+      6
+    ]
+  },
+  "T6_seam_survival_across_a_cut": {
+    "sectors": [
+      "visible",
+      "KIR",
+      "determinant",
+      "projection",
+      "memory"
+    ],
+    "statement": "An object survives an EMK cut exactly when EVERY ACTIVE sector closes. Certified: a witness closing in the visible sector while KIR and memory stay open \u2014 survival in the shadow topology only, not in the EMK topology; the full-closure case; exact ledgered closure and its failure under a wrong ledger; and monotonicity \u2014 deactivating a sector can only turn an open verdict into a closed one, so the ACTIVE SET is load-bearing and must be declared before the verdict, never after seeing it",
+    "verdict": "PASS"
+  },
+  "capsule": "EMK-TOP-1: vault topology appendix, exact spine",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "continuum_representative": "NOT CLAIMED: the differential-form representative of the seam charge and any continuum limit of the finite complex",
+    "information_curvature_tensor": "DECLARED: the generalized Euler information-curvature tensor I^GE. Its certified companion is CID-1, which proves the obstruction is metric-free while the split is not",
+    "physical_sectors": "NOT CLAIMED: that any particular physical sector exists or is correctly identified",
+    "protocol_declared_not_certified": "DECLARED: the space tuple (X, T_Sigma, M_Sigma, O_KIR, L_Sigma, G_Sigma), the seam module, tolerances epsilon_Sigma and epsilon_KIR, the eight-component residue vector as a physical decomposition, and the commit policy. Encoding declarations would certify nothing",
+    "yang_mills_quantum_gravity": "not touched"
+  },
+  "provenance": {
+    "bridges": "T4 consumes CFE-U's H^1 = 0 to show the trichotomy's middle class is EMPTY on the response complex; T5 uses UGD-1's phase-exponent discipline; T1 reuses the I,R,K relations certified in EMK-1 T1",
+    "companions": "RST-1/RST-2 (recognition-seam-topology), EMK-1/EMK-2/UGD-1/EMK-T1/EMK-T2 (emk-ugd-algebra), CFE-U and CID-1",
+    "prior_executable_version": "NONE for this appendix"
+  },
+  "source": {
+    "distinct_from_RST1": "RST-1 certified the arXiv topology PAPER (cut-stable topology, rotation-vs-gluing, flow generator, dagger algebra, circle index). This appendix builds seam COHOMOLOGY instead. Overlap is confined to the shared I,R,K alphabet and J-is-derived, both already certified",
+    "primary": "EMK-UGD-Provisional-Vault, recognition_seam_calculus_master/appendices/APPENDIX_EMK_TOPOLOGY_RIGOROUS.tex",
+    "secondary": "APPENDIX_GENERALIZED_EULER_INFORMATION_CURVATURE_DUALITY.tex \u2014 sheet-rotation class and the visible-return statement"
+  }
+}
