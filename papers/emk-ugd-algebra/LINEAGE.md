@@ -92,3 +92,27 @@ principle that visible equality is not UGD equality.
 Not claimed: convergence of admissibly infinite numerals, and the seam
 composition rule for linked seams, which the source declares rather than
 derives. Both are recorded as such in the certificate.
+
+## EMK-T1 addendum
+
+EMK-T1 is deliberately partial, and the partiality is the point. The
+vault's master-tensor appendix mixes two kinds of content: declared
+protocol (the tensor tuple's component list, the eight-channel split of
+the RTC connection, the residue sectors, tolerances and commit policy)
+and statements with mathematical consequences. Encoding declarations
+would certify nothing, so only the second kind is certified, and the
+first is recorded explicitly as declared-not-certified in the
+certificate's claim boundary.
+
+Three results are worth naming. The cut-swap J is shown to be a derived
+map — in the primitive basis it IS K — which unifies it with the
+geometry capsule's involution and the algebra's seam reflection. The
+mixed curvature term is shown necessary by exhibiting channels whose
+individual curvatures vanish while their cross-commutator carries the
+entire master curvature. And time closure is separated from clock
+equality by an exact witness with an identical clock reading and a
+nonzero temporal residue, mirroring UGD-1's projection-blindness result.
+
+The determinant coupling is certified in multiplicative form rather than
+the source's additive log-Det form, so no logarithm is ever evaluated;
+the two statements are equivalent and the multiplicative one stays in Q.

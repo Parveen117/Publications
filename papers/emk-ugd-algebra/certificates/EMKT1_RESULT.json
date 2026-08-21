@@ -1,0 +1,79 @@
+{
+  "T1_cut_swap_is_derived_not_primitive": {
+    "J_equals_K": true,
+    "J_squared_is_identity": true,
+    "agrees_with_geometry_involution": true,
+    "cross_ref": "papers/emk-recognition-geometry EMK-G1 T1",
+    "primitive_relations_hold": true,
+    "statement": "The cut-swap J(e,m) = (m,e) is not an independent generator: in the primitive basis it IS the operator K. So J is derived, J^2 = I, and it coincides exactly with the involution (x,y) -> (y,x) certified in the geometry capsule \u2014 one object, reached from the basis rather than assumed alongside it",
+    "verdict": "PASS"
+  },
+  "T2_channel_curvature_decomposition": {
+    "channel_sets_checked": 3,
+    "decomposition_exact": true,
+    "statement": "For a channel-summed connection the master curvature [sum A_mu, sum A_nu] equals exactly the sum of the per-channel curvatures plus the sum of cross-channel commutators. The mixed term is an algebraic consequence, not a placeholder",
+    "verdict": "PASS"
+  },
+  "T3_mixed_term_is_necessary": {
+    "each_channel_curvature_zero": true,
+    "master_curvature_equals_mixed_term": true,
+    "mixed_term_nonzero": true,
+    "statement": "Two channels whose individual curvatures both VANISH can still produce nonzero master curvature entirely through their cross-commutator. Truncating the decomposition channel-by-channel loses curvature that is genuinely present",
+    "sum_of_channel_curvatures_zero": true,
+    "verdict": "PASS"
+  },
+  "T4_recognition_or_residue_closure": {
+    "closed_when_fully_ledgered": true,
+    "closed_when_survivor_inactive": true,
+    "open_when_partly_unledgered": true,
+    "raw_curvature_nonzero": true,
+    "statement": "Nonzero raw curvature decides nothing. The same curvature is exhibited CLOSED when exact compensation and the lawful ledger account for it, OPEN when part is unledgered, and CLOSED AGAIN when the survivor lies outside the active recognition mask. The residue vector and the seam module make the decision",
+    "verdict": "PASS"
+  },
+  "T5_time_closure_is_not_clock_equality": {
+    "closes_only_with_lawful_ledger": true,
+    "cross_ref": "papers/emk-ugd-algebra UGD-1 T4 (projection blindness)",
+    "shared_clock_reading": "7.000000000000000000000000000000",
+    "statement": "Two recognition-time states with the IDENTICAL time coordinate and identical elapsed clock can differ in time-tensor content, leaving a nonzero temporal residue and an open sector. Clock equality constrains only the visible coordinate; temporal closure is strictly stronger",
+    "temporal_residue_unledgered": "1.000000000000000000000000000000",
+    "temporal_residue_when_ledgered": "0.000000000000000000000000000000",
+    "time_tensors_differ": true,
+    "verdict": "PASS"
+  },
+  "T6_determinant_coupling_without_logarithms": {
+    "coupling_equals_inverse_transport_det": true,
+    "coupling_factor": "0.166666666666666666666666666666",
+    "det_multiplicative": true,
+    "ledger_cancels_exactly": true,
+    "statement": "The source's additive log-Det residue is certified in its equivalent multiplicative form, needing no transcendental evaluation: Det is multiplicative over composed blocks, the coupling term is exactly the failure of the transport to commute with the block product, and the lawful ledger cancels it exactly \u2014 all in Q",
+    "verdict": "PASS"
+  },
+  "T7_presentation_agreement_and_its_hypothesis": {
+    "control_dropping_a_sector_breaks_agreement": true,
+    "statement": "When the presentation maps preserve every active residue sector, the closure verdicts of the three presentations agree on a grid of states. CONTROL: a map that DROPS one sector produces a different verdict \u2014 so 'preserves active residue sectors' is a load-bearing hypothesis, not a formality",
+    "states_checked": 5,
+    "verdict": "PASS",
+    "verdicts_agree_when_sectors_preserved": true
+  },
+  "arithmetic_discipline": "exact rationals throughout; the determinant residue certified in multiplicative form so no logarithm is ever evaluated; norms are exact max-abs; no floating point anywhere",
+  "certificate_type": "EMKT1_MASTER_TENSOR_AND_TIME_SPINE",
+  "claim_boundary": {
+    "CFE_uniqueness_U": "OPEN (inherited)",
+    "RH_K0_L0": "not touched",
+    "YM_continuum_gates": "not touched",
+    "certified": "J derived from the primitive basis, exact channel curvature decomposition with a necessity control, closure as a real decision, time/clock separation, determinant coupling in multiplicative form, presentation agreement with a load-bearing hypothesis",
+    "declared_not_certified": "the tensor tuple's component list, the eight-channel split of the RTC connection, the choice of residue sectors, tolerance values and commit policy \u2014 these are the framework's declarations; consequences of them are certified, the choices themselves are not",
+    "field_theoretic_and_device_extensions": "NOT CLAIMED",
+    "finite_matrix_model_only": "the RTC connection is certified as a finite matrix model; no claim is made that any particular physical channel exists or is correctly identified",
+    "quantum_gravity": "not touched"
+  },
+  "claim_status": "the certifiable spine of the EMK master-tensor appendix: J derived not primitive, exact channel curvature decomposition with a necessity control, recognition-or-residue closure as a real decision, time closure separated from clock equality, determinant coupling without logarithms, and presentation agreement with its hypothesis shown load-bearing. The tensor tuple, the eight-channel split, the sectors, tolerances and commit policy remain DECLARED and are not certified",
+  "finding_EMKT1_F1": "The cut-swap is not an extra primitive: in the primitive basis it IS K. The geometry capsule's involution, the algebra's seam reflection and the tensor layer's cut-swap are one derived object, now certified as such.",
+  "finding_EMKT1_F2": "The mixed curvature term is necessary, not decorative: channels with individually vanishing curvature can generate the entire master curvature through their cross-commutator. A channel-by-channel audit is provably insufficient.",
+  "finding_EMKT1_F3": "Time closure is strictly stronger than clock equality \u2014 exhibited with an identical clock reading and a nonzero temporal residue that closes only under a lawful ledger. The same shape as the classical-projection blindness of UGD-1: the visible coordinate never carries the whole state.",
+  "provenance": {
+    "honest_note": "much of the source is protocol rather than theorem; only the content with mathematical consequences is certified here, and the declared structure is recorded as declared",
+    "prior_executable_version": "NONE",
+    "source": "vault appendix: EMK master tensor and recognition-time sector (recognition tensor field, KIR seam frame, RTC master connection and curvature, recognition-time sector, additive determinant coupling, presentation compatibility)"
+  }
+}

@@ -103,6 +103,34 @@ load-bearing, not bookkeeping.
 **UGD1-F3** — the classical projection is provably lossy: UGD numbers carry
 strictly more than their classical shadows.
 
+## EMK-T1 — the master tensor and recognition-time sector
+
+An **honest** capsule. The vault's master-tensor appendix is largely a
+*protocol*: the tensor tuple, the eight-channel RTC connection, the
+residue sectors, tolerances and commit policy are **declared structure**,
+not derived results — writing declarations into code certifies nothing.
+This capsule extracts only what carries mathematical content, and records
+the rest as declared.
+
+| Block | Statement | Verdict |
+|---|---|---|
+| T1 | **J is derived, not primitive:** in the primitive basis the cut-swap *is* `K`, so `J²=I` and it coincides exactly with the geometry capsule's involution `(x,y)↦(y,x)` | PASS |
+| T2 | Channel curvature decomposition exact: `[ΣA_μ, ΣA_ν]` = per-channel curvatures + cross-channel commutators | PASS |
+| T3 | **The mixed term is necessary:** two channels with individually *vanishing* curvature whose cross-commutator carries the entire master curvature — a channel-by-channel audit is provably insufficient | PASS |
+| T4 | Closure is a real decision: the *same* nonzero curvature is CLOSED when fully ledgered, OPEN when partly unledgered, and CLOSED again when the survivor is outside the active mask | PASS |
+| T5 | **Time closure ≠ clock equality:** identical clock reading (τ=7), different time-tensor content, nonzero temporal residue that closes only under a lawful ledger | PASS |
+| T6 | Determinant coupling **without logarithms:** the source's additive log-Det residue certified in multiplicative form; the coupling factor is exactly `1/det(T)` and the ledger cancels it exactly | PASS |
+| T7 | Presentation agreement, with the hypothesis shown load-bearing: a map that *drops* a sector produces a different verdict | PASS |
+
+**EMKT1-F1** — the geometry involution, the algebra's seam reflection and
+the tensor layer's cut-swap are **one derived object**.
+
+**EMKT1-F2** — the mixed curvature term is necessary, not decorative.
+
+**EMKT1-F3** — time closure is strictly stronger than clock equality — the
+same shape as UGD-1's projection blindness: the visible coordinate never
+carries the whole state.
+
 ## Findings
 
 **F1** — the additive split is *structure, not notation*: the channels are
@@ -148,8 +176,9 @@ touched.
 python papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py
 python papers/emk-ugd-algebra/certificates/emk2_native_carrier.py
 python papers/emk-ugd-algebra/certificates/ugd1_numerals.py
+python papers/emk-ugd-algebra/certificates/emkt1_master_tensor_and_time.py
 python -m pytest papers/emk-ugd-algebra/tests -v
 ```
 
 CI regenerates the certificate and fails on pin drift
-(`EXPECTED_EMK1.sha256`, `EXPECTED_EMK2.sha256`, `EXPECTED_UGD1.sha256`).
+(`EXPECTED_EMK1.sha256`, `EXPECTED_EMK2.sha256`, `EXPECTED_UGD1.sha256`, `EXPECTED_EMKT1.sha256`).
