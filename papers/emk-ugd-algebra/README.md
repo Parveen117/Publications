@@ -70,6 +70,39 @@ twice.
 | T4 | Residue on the native carrier: ∮ω=∬Ω exact, zero iff even grade, strictly monotone in the odd amplitude | PASS |
 | T5 | **The dial was the odd grade:** under ρ = χ−1 the scaffold and native densities are identical — the residues reproduce CFE-1's certified −32, −16, 0, +16, +32 exactly | PASS |
 
+## UGD-1 — UGD number
+
+The most original layer: a **seam-aware analogue of positional notation**.
+A classical digit records a scalar at a scale. A UGD digit records
+**phase, scale index, and local seam charge**:
+
+```
+d_n = (φ_a, n, s)  ∈  Φ_K × ℤ × {−1, 0, 1}
+```
+
+Phase is carried as an **exponent in ℤ/K** — never evaluated as a root of
+unity — and the scale base is an exact rational, so no transcendental
+arithmetic enters any verdict.
+
+| Block | Statement | Verdict |
+|---|---|---|
+| T1 | Phase exponents form ℤ/K with the generator of full order; **at K=4 the generator has order 4 and its square is the half turn** — the quarter turn, at the numeral level | PASS |
+| T2 | **Carry conservation:** phase overflow carries to the next scale, seam overflow returns to {−1,0,1} and is pushed to the ledger; total seam charge is conserved exactly (1296 digit pairs). Control: a clamping policy that drops overflow loses charge and separates | PASS |
+| T3 | Multiplication is **scale convolution** — scale indices *add*, phases multiply mod K, so π_scale is multiplicative: the multiplicative-to-additive law at the numeral level | PASS |
+| T4 | The classical projection is **blind to seam**: null-seam recovers ordinary positional notation exactly, while three numerals share the projection 7 with total seam charges 0, 0, 2 | PASS |
+| T5 | **Cut-zero:** the neutral digit's neutrality is *derived*, its projection and ledger are null — yet it occupies a scale and carries a phase exponent, so it is distinct from the *absence* of a numeral. Zero is the first cut | PASS |
+| T6 | λ-logic: negation `N(φ,σ,k)=(φ,−σ,−k)` is an involution; the seam predicate marks exactly `k≠0`; the null-seam trivial-phase limit recovers classical behaviour (36-point domain, exhaustive) | PASS |
+
+**UGD1-F1** — the quarter turn now stands certified in **four** presentations:
+arithmetic (LAM-2 ι²=−1), quantum geometry (CFE-Q J²=−I), native algebra
+(EMK-1 R²=−I), and number (UGD-1 at K=4).
+
+**UGD1-F2** — the carry discipline is a *conservation law*; the ledger is
+load-bearing, not bookkeeping.
+
+**UGD1-F3** — the classical projection is provably lossy: UGD numbers carry
+strictly more than their classical shadows.
+
 ## Findings
 
 **F1** — the additive split is *structure, not notation*: the channels are
@@ -114,8 +147,9 @@ touched.
 ```
 python papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py
 python papers/emk-ugd-algebra/certificates/emk2_native_carrier.py
+python papers/emk-ugd-algebra/certificates/ugd1_numerals.py
 python -m pytest papers/emk-ugd-algebra/tests -v
 ```
 
 CI regenerates the certificate and fails on pin drift
-(`EXPECTED_EMK1.sha256`, `EXPECTED_EMK2.sha256`).
+(`EXPECTED_EMK1.sha256`, `EXPECTED_EMK2.sha256`, `EXPECTED_UGD1.sha256`).

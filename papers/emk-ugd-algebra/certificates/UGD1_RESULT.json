@@ -1,0 +1,88 @@
+{
+  "T1_phase_alphabet_and_quarter_turn": {
+    "K": 12,
+    "K4_generator_powers": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "cross_refs": [
+      "papers/lambda-seam-calibration LAM-2 T1b",
+      "papers/cut-first-equivalence CFE-Q T3",
+      "papers/emk-ugd-algebra EMK-1 T1"
+    ],
+    "generator_order": 12,
+    "quarter_turn_squared_is_half_turn": true,
+    "statement": "Phase exponents form the cyclic group Z/K under seam-aware addition, with the generator of order exactly K. At K=4 the generator has order 4 and its square is the half-turn exponent \u2014 the numeral-level appearance of the same quarter turn certified as iota^2=-1 (LAM-2), J^2=-I (CFE-Q) and R^2=-I (EMK-1)",
+    "verdict": "PASS"
+  },
+  "T2_carry_discipline_conserves": {
+    "control_dropped_overflow_loses_charge": {
+      "correct_total": 2,
+      "separated": true,
+      "tampered_total": 1
+    },
+    "digit_pairs_checked": 1296,
+    "seam_charge_conserved": true,
+    "statement": "Seam-aware addition \u2014 phase overflow carried to the next scale, seam overflow returned to {-1,0,1} and pushed to the ledger \u2014 conserves the total seam charge exactly, and every resulting digit seam lies back in the balanced alphabet",
+    "verdict": "PASS"
+  },
+  "T3_scale_convolution_multiplication": {
+    "cross_ref": "papers/emk-ugd-algebra EMK-2 T2 (the same law in the seam channel's Cayley coordinate, F00G Thm 7.1)",
+    "scale_indices_add": true,
+    "scale_projection_is_multiplicative": true,
+    "statement": "Multiplication is scale convolution: the scale index of a product is m + n exactly and the phase exponents multiply mod K, so the scale projection is multiplicative, pi_scale(d x e) = pi_scale(d) pi_scale(e). Multiplication of numerals is ADDITION of scale indices \u2014 the multiplicative-to-additive law at the numeral level",
+    "verdict": "PASS"
+  },
+  "T4_classical_projection_is_blind_to_seam": {
+    "null_seam_projection": "11.000000000000000000000000000000",
+    "shared_projection": "7.000000000000000000000000000000",
+    "statement": "In the null-seam limit the classical projection recovers ordinary positional notation exactly. With active seam charge the projection DISCARDS information: three numerals with identical classical projection, two of them carrying different seam data and one a different total seam charge. Visible equality is not UGD equality \u2014 as a witness",
+    "states_distinct": true,
+    "total_seams": [
+      0,
+      0,
+      2
+    ],
+    "verdict": "PASS"
+  },
+  "T5_cut_zero": {
+    "distinct_from_absent_numeral": true,
+    "neutral_projection": "0.000000000000000000000000000000",
+    "neutral_total_seam": 0,
+    "neutrality_derived_on_grid": true,
+    "statement": "The all-neutral digit is the neutral element for seam-aware addition (derived, not assumed) and has null classical projection and zero ledger \u2014 yet it is a POST-CUT representative: it occupies a scale and carries a phase exponent, and is therefore distinct from the absence of a numeral. Zero is the first cut, not primitive absence",
+    "verdict": "PASS"
+  },
+  "T6_lambda_logic": {
+    "classical_limit_recovered": true,
+    "contradiction_seam_charges_cancel": true,
+    "domain_size": 36,
+    "negation_is_involution": true,
+    "note": "a contradiction whose seam charge cancels is ledgerable and non-explosive; an unledgered active seam charge remains an open gap and blocks commit",
+    "seam_predicate_exact": true,
+    "statement": "UGD negation N(phi, sigma, k) = (phi, -sigma, -k) is an involution on the truth domain; the seam predicate marks exactly the values with nonzero seam charge; and in the null-seam trivial-phase limit the structure reduces to ordinary support negation with the seam predicate inactive \u2014 the classical limit, verified exhaustively",
+    "verdict": "PASS"
+  },
+  "arithmetic_discipline": "exact integers for phase exponents and seam charges; exact rationals for the scale base; no root of unity is ever evaluated numerically; no floating point anywhere",
+  "certificate_type": "UGD1_NUMERALS_CUT_ZERO_AND_STRUCTURAL_LOGIC",
+  "claim_boundary": {
+    "CFE_uniqueness_U": "OPEN (inherited)",
+    "RH_K0_L0": "not touched",
+    "YM_continuum_gates": "not touched",
+    "certified": "finite arithmetic and logic spine \u2014 cyclic phase algebra, carry conservation, scale additivity, projection blindness, cut-zero neutrality, negation involution, classical limit",
+    "infinite_numerals": "NOT CLAIMED (convergence not addressed)",
+    "linked_seam_composition_rule": "DECLARED, not derived",
+    "quantum_gravity": "not touched"
+  },
+  "claim_status": "UGD number certified: cyclic phase algebra with the quarter turn at K=4, carry conservation, scale additivity under multiplication, the classical projection's blindness to seam charge, cut-zero neutrality, and the lambda-logic classical limit; exact integer and rational arithmetic only",
+  "finding_UGD1_F1": "The quarter turn appears at the numeral level: at K=4 the phase generator has order exactly 4 and its square is the half turn. The same object now stands certified in four presentations \u2014 arithmetic (LAM-2 iota^2=-1), quantum geometry (CFE-Q J^2=-I), native algebra (EMK-1 R^2=-I), and number (UGD-1 K=4).",
+  "finding_UGD1_F2": "The carry discipline is a conservation law: seam charge pushed out of the balanced alphabet is conserved in the ledger, exactly. The tampered policy that clamps instead of ledgering loses charge and separates \u2014 the ledger is load-bearing, not bookkeeping.",
+  "finding_UGD1_F3": "The classical projection is provably lossy: explicit numerals share a classical value while differing in seam data and total seam charge. This is the precise sense in which UGD numbers carry strictly more than their classical shadows.",
+  "provenance": {
+    "prior_executable_version": "NONE \u2014 first machine-checkable realization",
+    "representation_discipline": "phase carried as an EXPONENT in Z/K, never evaluated as a root of unity; scale base an exact rational; so no transcendental arithmetic enters any verdict",
+    "source": "vault appendix: UGD core \u2014 cut-zero, operator numerals, and structural logic (phase alphabet Phi_K, scale base beta, balanced seam alphabet {-1,0,1}, seam-aware addition with carries, scale-convolution multiplication, classical projection, lambda-paraconsistent truth domain)"
+  }
+}

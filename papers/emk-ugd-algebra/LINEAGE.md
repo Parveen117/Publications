@@ -69,3 +69,26 @@ and native curvature densities coincide identically, and the native
 residues reproduce CFE-1's certified values (-32, -16, 0, +16, +32)
 exactly. CFE's numbers did not depend on the equation of state; the
 equation of state was a coordinate on the odd grade.
+
+## UGD-1 addendum
+
+UGD-1 certifies the UGD number layer: cut-zero, operator numerals, and
+the lambda-paraconsistent structural logic. As with EMK-1 and EMK-2, the
+source is vault LaTeX and no executable version existed.
+
+Two representation decisions keep the capsule exact. Phase is carried as
+an EXPONENT in Z/K and never evaluated as a root of unity; the scale base
+is an exact rational. Consequently no transcendental arithmetic enters
+any verdict path, and the phase algebra is certified as the cyclic group
+it is rather than as a numerical approximation of one.
+
+The sharpest results are the carry conservation law (seam charge pushed
+out of the balanced alphabet is conserved in the ledger, with a clamping
+control that loses charge and separates) and the projection-blindness
+witness (numerals sharing a classical value while differing in seam data
+and total seam charge). Together they make precise the appendix's
+principle that visible equality is not UGD equality.
+
+Not claimed: convergence of admissibly infinite numerals, and the seam
+composition rule for linked seams, which the source declares rather than
+derives. Both are recorded as such in the certificate.
