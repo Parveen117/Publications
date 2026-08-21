@@ -25,6 +25,7 @@ jobs:
           python papers/cut-first-equivalence/certificates/cfe1_cut_first_equivalence.py
           python papers/cut-first-equivalence/certificates/cfe2_surjectivity.py
           python papers/cut-first-equivalence/certificates/cfeq_quantum_witness.py
+          python papers/cut-first-equivalence/certificates/cfeu_uniqueness.py
           git diff --exit-code papers/cut-first-equivalence/certificates
       - name: Tests
         run: python -m pytest papers/cut-first-equivalence/tests -v

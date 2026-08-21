@@ -1,0 +1,86 @@
+{
+  "T1_response_complex_exact_ranks": {
+    "rank_d0": 5,
+    "rank_d1": 1,
+    "statement": "The response complex Lambda^0 -> Lambda^1 -> Lambda^2 on the declared algebra has exact ranks: rank d0 = 5 (kernel = the constants), rank d1 = 1, d1 o d0 = 0. The rank-5 image of d0 IS the classical response space certified by CFE-2",
+    "verdict": "PASS"
+  },
+  "T2_closed_equals_exact": {
+    "dim_ker_d1": 5,
+    "statement": "H^1(response) = 0: ker d1 = im d0, by the rank equality 5 = 5 AND constructively \u2014 the explicit potential Phi = a p + b p^2/2 + c p v + e v + g v^2/2 integrates every closed form at the coefficient level. Zero curvature leaves NO residual obstruction: the response is a gradient, i.e. memoryless",
+    "verdict": "PASS"
+  },
+  "T3_uniqueness_obstruction_rank_1": {
+    "annihilator_dimension": 1,
+    "area": "16",
+    "residue_functional": [
+      "0",
+      "0",
+      "-16",
+      "0",
+      "16",
+      "0"
+    ],
+    "statement": "THE UNIQUENESS THEOREM: the space of obstruction functionals \u2014 linear functionals vanishing on every memoryless response \u2014 is the annihilator of ker d1 and has dimension EXACTLY 1. The loop-residue functional R(omega) = oint_(dD) omega lies in it (Stokes verified on the kernel basis), is nonzero, and therefore SPANS: every obstruction to the chi -> 1 limit is a scalar multiple of the residue. Moreover R = Area * d1 exactly on the whole basis: the residue and the curvature flux iint Omega are the same rank-1 map. There is no second, independent obstruction",
+    "verdict": "PASS"
+  },
+  "T4_dial_excites_generator_ladder": {
+    "ladder": [
+      [
+        "3/5",
+        "-32"
+      ],
+      [
+        "4/5",
+        "-16"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "6/5",
+        "16"
+      ],
+      [
+        "7/5",
+        "32"
+      ]
+    ],
+    "statement": "The memory dial's deformation direction is d omega/d chi = 5 p dv with curvature 5 != 0: the dial drives the one obstruction dimension. The residue of omega(chi) equals BETA*(chi-1)*Area = 80*(chi-1) exactly, reproducing CFE-1's certified ladder -32, -16, 0, +16, +32 \u2014 computed here AND consumed from the pinned CFE-1 circulation, two routes agreeing as rationals. Uniqueness in action: two responses with equal residue differ by a closed form, integrated to an explicit potential \u2014 equal residue IS equal obstruction class",
+    "verdict": "PASS"
+  },
+  "T5_discrete_residue_matrix_rank_1": {
+    "cells": 16,
+    "residue_matrix_rank": 1,
+    "statement": "On the exact 4x4 cell grid the (cells x basis) residue matrix \u2014 every entry an exact midpoint circulation \u2014 has rank EXACTLY 1, every cell row equal to (cell area) * d1, and kernel exactly ker d1 (the same 5-dimensional memoryless space). The per-cell obstruction is ONE number repeated, not a family of independent obstructions; discrete Stokes holds for the witness at every cell and every sampled chi",
+    "verdict": "PASS"
+  },
+  "T6_boundary_control_rank_3": {
+    "rank_declared_inside": 1,
+    "rank_enlarged": 3,
+    "statement": "CONTROL: in the enlarged algebra of quadratic-coefficient one-forms the curvature map has rank 3 \u2014 three independent obstruction directions exist there \u2014 while the declared affine response algebra embedded inside it still has rank 1. Uniqueness is therefore a THEOREM ABOUT THE DECLARED RESPONSE ALGEBRA (the one whose classical face CFE-1 and CFE-2 certified), not a universal law, and this certificate proves where the boundary sits",
+    "verdict": "PASS"
+  },
+  "capsule": "CFE-U: uniqueness of the obstruction \u2014 the flagship's last half",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "generality": "NOT CLAIMED: continuum, general-manifold and general-EOS uniqueness. The declared algebra is the affine-coefficient response space; T6 certifies that larger algebras carry more obstruction directions",
+    "yang_mills_quantum_gravity": "not touched"
+  },
+  "consumes": {
+    "CFE-1": "witness family lambda_p, lambda_v, BETA, LOOP_RECT and circulation consumed from the pinned module, not re-declared",
+    "CFE-2": "the rank-5 classical response space = im d0 of this capsule's complex"
+  },
+  "flagship_status": {
+    "part_1_memoryless_limit": "CERTIFIED (CFE-1 T1, T4)",
+    "part_2_residue": "CERTIFIED (CFE-1 T2, T3)",
+    "part_S_surjectivity": "CERTIFIED (CFE-2)",
+    "part_U_uniqueness": "CERTIFIED (this capsule)",
+    "scope": "all declared obligations of the Cut-First Equivalence theorem are now certified ON THE WITNESS EOS AND ITS DECLARED RESPONSE ALGEBRA"
+  },
+  "provenance": {
+    "machinery": "the same exact-rank machinery that closed (S): rational Gaussian elimination, exact nullspaces, midpoint circulations exact for affine integrands",
+    "prior_executable_version": "NONE \u2014 (U) was the flagship's single remaining open obligation since CFE-2"
+  }
+}

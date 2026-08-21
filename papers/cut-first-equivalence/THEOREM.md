@@ -48,11 +48,18 @@ one-form ω = λ_p dp + λ_v dv and curvature two-form Ω = dω. Then:
      response algebra. **✔ DISCHARGED by CFE-2** (rank equality, zero
      cokernel, on the witness EOS; renaming test passed).
    - **(U) Uniqueness.** ∬Ω is the *unique* obstruction to the χ → 1
-     limit: no second, independent obstruction exists. **OPEN.**
+     limit: no second, independent obstruction exists. **✔ DISCHARGED by
+     CFE-U** (the obstruction space — the annihilator of the memoryless
+     responses in the declared algebra — has dimension exactly 1, and the
+     loop-residue functional spans it; H¹ = 0 constructively; enlarged-
+     algebra control shows where the boundary sits).
 
-Parts (1) and (2) are the **certified core** (CFE-1). Part (S) is now
-**certified** (CFE-2). Part (U) is the **single remaining** open
-obligation.
+Parts (1) and (2) are the **certified core** (CFE-1). Part (S) is
+**certified** (CFE-2). Part (U) is **certified** (CFE-U). **All declared
+obligations of the theorem are now machine-certified on the witness EOS
+and its declared response algebra.** Continuum / general-manifold /
+general-EOS statements remain outside the certified scope, exactly as
+recorded in each capsule's claim boundary.
 
 ---
 
