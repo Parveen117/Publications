@@ -41,3 +41,16 @@ Certified: the memoryless-limit direction and the residue identity on an
 explicit EOS, in exact arithmetic. Open: (S), (U), and generality beyond
 the witness EOS. Untouched: RH / K0 / L0 / YM continuum gates. The EOS is
 the witness, not the theorem.
+
+## CFE-2 addendum
+
+CFE-2 discharges obligation (S), surjectivity, on the witness EOS: the
+cut grammar generates the entire classical response algebra. The cut
+basis is built by cut-native centered finite differences of the
+potential — a procedure independent of the analytic partials used for
+the classical frame — and the two span the same exact 5-dimensional
+space (cokernel 0). The renaming test (TAUT-1) was applied and passed:
+random potentials of the same shape also reach full rank (structural,
+not point-luck), and a non-closed shear control separates. Only (U)
+uniqueness remains open for the full theorem; no RH/K0/L0/YM continuum
+gate is touched.

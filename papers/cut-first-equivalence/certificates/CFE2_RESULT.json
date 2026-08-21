@@ -1,0 +1,61 @@
+{
+  "T1_all_maxwell_relations_are_cut_closedness": {
+    "all_residuals_zero": true,
+    "control_separates": true,
+    "lattice_points": 16,
+    "nonpotential_control_residual": "-1.2000000000000000000000000000000000000000",
+    "statement": "All four classical Maxwell relations hold exactly at every lattice point as the vanishing of mixed-partial curvature of the potential (d omega = 0); a sheared non-potential field (chi != 1) breaks the symmetry",
+    "verdict": "PASS"
+  },
+  "T2_response_coefficient_identities": {
+    "mayer_relation_exact_all_points": true,
+    "ratio_law_exact_all_points": true,
+    "sample_Cp_minus_Cv": "0.1296296296296296296296296296296296296296",
+    "sample_gamma": "1.1111111111111111111111111111111111111111",
+    "sample_point_S_V": [
+      "1.0000000000000000000000000000000000000000",
+      "1.0000000000000000000000000000000000000000"
+    ],
+    "statement": "The classical response-coefficient identities hold exactly in the cut grammar on the potential: the ratio law kappa_T/kappa_S = C_p/C_v = gamma at every lattice point, and the Mayer relation C_p - C_v = T (U_SV)^2/(U_SS det) exactly (the potential form of C_p - C_v = TV alpha^2/kappa_T)",
+    "verdict": "PASS"
+  },
+  "T3_surjectivity_rank_equality": {
+    "cokernel_dimension": 0,
+    "cut_basis_procedure": "cut-native centered finite differences of the potential U (loops + differences only), independent of the analytic partials used for the classical frame",
+    "nonclosed_control_separates": true,
+    "rank_classical_response_space": 5,
+    "rank_cut_generated_space": 5,
+    "rank_union": 5,
+    "renaming_test": "PASS \u2014 cut rank is 5 on random potentials of the same shape (structural, not point-luck); a non-closed shear control separates (result is contentful, not a finite-difference tautology)",
+    "statement": "The cut-generated closed-form space has exactly the same exact rank as the full classical closed-form space, and their union adds nothing: rank(cut) = rank(classical) = rank(cut union classical). Cokernel dimension 0 \u2014 no classical response identity lies outside the cut image. SURJECTIVE.",
+    "surjective": true,
+    "verdict": "PASS"
+  },
+  "T4_cover_is_faithful": {
+    "no_cut_form_raises_classical_rank": true,
+    "statement": "Every cut-generated closed form is a genuine classical response form: adjoining any cut row to the classical basis does not raise the rank. The image sits EXACTLY on the classical algebra \u2014 neither sub- nor super-space.",
+    "verdict": "PASS"
+  },
+  "anchor_pinned": "Classical substrate \u2014 the four Maxwell relations as equalities of mixed partials across the thermodynamic potentials (U,H,F,G), the Mayer relation, and the compressibility/heat-capacity ratio law: PINNED NAMED DEPENDENCIES. This capsule verifies that the cut grammar reproduces them exactly on an explicit rational potential.",
+  "arithmetic_discipline": "exact rationals throughout; ranks computed by fraction-free exact Gaussian elimination over Q; every Maxwell and response identity an exact equality at explicit lattice points; a non-potential control field breaks the closedness; no floating point anywhere",
+  "certificate_type": "CFE2_SURJECTIVITY_COMPLETENESS",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "YM_continuum_gates": "not touched",
+    "certified": "surjectivity of the cut grammar onto the classical response algebra on the witness EOS, exact arithmetic, zero cokernel",
+    "generality_beyond_witness_EOS": "OPEN",
+    "uniqueness_U": "OPEN"
+  },
+  "claim_status": "discharges obligation (S) of Cut-First Equivalence on the witness EOS in exact arithmetic: the cut grammar generates the ENTIRE classical response algebra (all four Maxwell relations + the response-coefficient identities), zero cokernel; (U) uniqueness remains OPEN; no RH/K0/L0/YM continuum gates touched",
+  "discharges": {
+    "from": "CFE-1 THEOREM.md open obligations",
+    "meaning": "the cut grammar maps ONTO the classical response algebra \u2014 recognition thermodynamics loses nothing classical",
+    "obligation": "S (surjectivity / completeness)"
+  },
+  "finding_CFE2_F1": "Surjectivity (S) is discharged on the witness EOS: the cut grammar generates the ENTIRE classical response algebra \u2014 all four Maxwell relations as cut-closedness (T1), the response-coefficient identities including the Mayer relation and the gamma ratio law (T2), with cut-image rank equal to the full classical rank and zero cokernel (T3), and no spurious image (T4). Recognition thermodynamics loses nothing classical.",
+  "remaining_open": {
+    "U_uniqueness": "OPEN \u2014 CFE-1's second half: that iint Omega is the UNIQUE obstruction to the chi->1 limit. Not addressed here.",
+    "generality_beyond_witness_EOS": "OPEN \u2014 the rank-equality argument is EOS-independent in FORM (closed-form spaces on a 2-D compass), certified here on the explicit rational potential; lifting to all admissible potentials is the next obligation.",
+    "note": "no RH / K0 / L0 / YM continuum gate is touched"
+  }
+}

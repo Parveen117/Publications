@@ -28,24 +28,31 @@ thermodynamic response geometry, with a computable residue.
 
 All exact rationals, no floating point in any verdict path.
 
-## Open (the flagship's remaining obligation)
+## Surjectivity — DISCHARGED (CFE-2)
 
-- **(S) Surjectivity** — every classical response identity is realized by
-  some cut protocol (cut grammar maps *onto* classical response).
-- **(U) Uniqueness** — ∬Ω is the *unique* obstruction to χ→1.
+**(S)** the cut grammar maps *onto* the classical response algebra: all
+four Maxwell relations as cut-closedness, the response-coefficient
+identities (γ ratio law + Mayer), and a rank-equality surjectivity
+certificate (5 = 5, cokernel 0) built by cut-native finite differences
+independent of the classical partials — renaming test passed, non-closed
+control separates.
 
-Both are finite, gate-free, and provable inside the regular regime;
-neither touches RH / K0 / L0 / YM continuum gates.
+## Open — the single remaining obligation
+
+- **(U) Uniqueness** — ∬Ω is the *unique* obstruction to χ→1. Finite,
+  gate-free, attackable by the same exact-rank machinery (H²(response)
+  rank 1). Touches no RH / K0 / L0 / YM continuum gate.
 
 ## Reproduce
 
 ```
 python papers/cut-first-equivalence/certificates/cfe1_cut_first_equivalence.py
+python papers/cut-first-equivalence/certificates/cfe2_surjectivity.py
 python -m pytest papers/cut-first-equivalence/tests -v
 ```
 
 CI regenerates the certificate and fails on any pin drift
-(`EXPECTED_CFE1.sha256`).
+(`EXPECTED_CFE1.sha256`, `EXPECTED_CFE2.sha256`).
 
 ## Relationship to the rest of the corpus
 

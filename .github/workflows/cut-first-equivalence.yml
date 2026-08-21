@@ -20,9 +20,10 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install deps
         run: python -m pip install pytest
-      - name: Regenerate CFE-1 certificate and check pin
+      - name: Regenerate CFE-1/CFE-2 certificates and check pins
         run: |
           python papers/cut-first-equivalence/certificates/cfe1_cut_first_equivalence.py
+          python papers/cut-first-equivalence/certificates/cfe2_surjectivity.py
           git diff --exit-code papers/cut-first-equivalence/certificates
       - name: Tests
         run: python -m pytest papers/cut-first-equivalence/tests -v
