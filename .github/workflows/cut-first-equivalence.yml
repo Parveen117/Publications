@@ -1,0 +1,28 @@
+name: Cut-First Equivalence
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install deps
+        run: python -m pip install pytest
+      - name: Regenerate CFE-1 certificate and check pin
+        run: |
+          python papers/cut-first-equivalence/certificates/cfe1_cut_first_equivalence.py
+          git diff --exit-code papers/cut-first-equivalence/certificates
+      - name: Tests
+        run: python -m pytest papers/cut-first-equivalence/tests -v

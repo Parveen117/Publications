@@ -1,0 +1,76 @@
+{
+  "T1_memoryless_limit_is_classical": {
+    "curvature_density_at_chi_1": "0.0000000000000000000000000000000000000000",
+    "max_abs_loop_circulation_at_chi_1": "0.0000000000000000000000000000000000000000",
+    "per_cell_stokes_holds": true,
+    "statement": "At chi=1 the curvature two-form vanishes identically on the grid (d omega = 0): every discrete Maxwell loop sums to exactly 0, the Onsager cross-asymmetry dg/dp - df/dv is exactly 0, so the response is a closed form and the classical laws hold exactly",
+    "verdict": "PASS"
+  },
+  "T2_residue_identity_stokes": {
+    "chi": "1.4000000000000000000000000000000000000000",
+    "exact_equal": true,
+    "iint_Omega": "32.0000000000000000000000000000000000000000",
+    "loop_rect_p_v": [
+      "-2.0000000000000000000000000000000000000000",
+      "2.0000000000000000000000000000000000000000",
+      "-1.0000000000000000000000000000000000000000",
+      "3.0000000000000000000000000000000000000000"
+    ],
+    "oint_omega": "32.0000000000000000000000000000000000000000",
+    "statement": "For an explicit rectangular loop D and memory value chi=7/5, the circulation oint_dD omega equals the interior curvature flux iint_D Omega as an EXACT identity in Q (boundary walk and area sum computed independently)",
+    "verdict": "PASS"
+  },
+  "T3_obstruction_is_faithful": {
+    "curvature_zero_iff_chi_1": true,
+    "residue_by_chi": {
+      "0.6000000000000000000000000000000000000000": "-32.0000000000000000000000000000000000000000",
+      "0.8000000000000000000000000000000000000000": "-16.0000000000000000000000000000000000000000",
+      "1.0000000000000000000000000000000000000000": "0.0000000000000000000000000000000000000000",
+      "1.2000000000000000000000000000000000000000": "16.0000000000000000000000000000000000000000",
+      "1.4000000000000000000000000000000000000000": "32.0000000000000000000000000000000000000000"
+    },
+    "residue_zero_exactly_at_chi_1": true,
+    "statement": "Omega = 0 on the whole grid IFF chi = 1; the loop residue oint omega is strictly monotone in the memory dial mu = chi - 1 and vanishes exactly at mu = 0, so loop area is a true order parameter for irreversibility (sign of the residue = sign of mu)",
+    "strictly_monotone_in_dial": true,
+    "verdict": "PASS"
+  },
+  "T4_equilibrium_invariant": {
+    "I_at_chi_1": "1.0000000000000000000000000000000000000000",
+    "I_off_equilibrium": {
+      "0.8000000000000000000000000000000000000000": "1.3333333333333333333333333333333333333333",
+      "1.2000000000000000000000000000000000000000": "0.8888888888888888888888888888888888888888",
+      "1.4000000000000000000000000000000000000000": "0.8333333333333333333333333333333333333333"
+    },
+    "statement": "The entropy-weighted product I = Gamma_c * Gamma_m equals 1 exactly at chi = 1 (the paper's I = 1) and departs from 1 exactly when chi != 1; I - 1 is itself a memory diagnostic",
+    "verdict": "PASS"
+  },
+  "anchor_pinned": "Classical substrate \u2014 Stokes' theorem, the contact-form origin of Maxwell relations, Onsager reciprocity in the reversible limit: PINNED NAMED DEPENDENCIES, cited as classical witnesses. The witness equation of state is an explicit rational model; the theorem is a claim about the structure (one-form, curvature, memory dial), not about this EOS.",
+  "arithmetic_discipline": "exact rationals throughout (Fraction); midpoint line integral is exact for the linear one-form; curvature flux computed as an explicit area sum independent of the boundary walk; every verdict an exact equality or exact sign in Q; no floating point anywhere",
+  "certificate_type": "CFE1_CUT_FIRST_EQUIVALENCE_CORE",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "YM_continuum_gates": "not touched",
+    "certified": "memoryless-limit direction + exact residue identity + obstruction faithfulness + equilibrium invariant, on an explicit rational EOS, in exact arithmetic",
+    "full_generality_beyond_witness_EOS": "OPEN",
+    "surjectivity_S": "OPEN",
+    "uniqueness_U": "OPEN"
+  },
+  "claim_status": "certified core of the Cut-First Equivalence theorem: the memoryless-limit direction and the exact residue identity, on an explicit equation of state, in exact rational arithmetic; surjectivity and uniqueness are stated OPEN; no RH/YM claims",
+  "controls_C1_equilibrium_residue_zero": {
+    "chi": "1",
+    "residue": "0.0000000000000000000000000000000000000000",
+    "separated_from_nonzero": true
+  },
+  "finding_CFE1_F1": "The memoryless-limit direction of Cut-First Equivalence is certified exactly: chi=1 is the flat face where curvature vanishes on the whole grid, Onsager symmetry is exact, every Maxwell loop closes, and the invariant I=1 \u2014 the classical laws are the memoryless sector, verbatim.",
+  "finding_CFE1_F2": "The residue oint_dD omega = iint_D Omega is exact in Q and faithful: it is zero iff chi=1 and strictly monotone in the memory dial, so iint Omega is a genuine obstruction to the memoryless limit, not an artefact. This upgrades the second-law inequality slot to an identity-with-computable-residue on the witness EOS.",
+  "open_obligations_for_full_theorem": {
+    "S_surjectivity_completeness": "OPEN: that EVERY classical response identity is realized by some cut protocol (the cut grammar maps onto the classical response algebra). Certified here only that the specific Maxwell/Onsager/invariant content is reproduced on the witness EOS.",
+    "U_uniqueness": "OPEN: that iint_D Omega is the UNIQUE obstruction to the chi->1 limit (no second, independent obstruction). Certified here only that it is A faithful obstruction.",
+    "note": "S and U are the flagship's minimal remaining proof obligation, both provable within the regular/certified regime; neither touches RH / K0 / L0 / YM continuum gates."
+  },
+  "target_theorem": {
+    "name": "Cut-First Equivalence",
+    "plain": "Recognition/cut response reproduces classical thermodynamic response exactly; the classical laws are the memoryless (chi->1, d omega=0) limit; and the loop residue oint_dD omega = iint_D Omega is the obstruction to that limit.",
+    "precise": "On a regular response manifold with cut J and memory dial chi, the cut-flow response coincides with classical thermodynamic response (all Maxwell relations, Onsager symmetry, the invariant I=1) in the limit chi->1 (equivalently d omega=0), and the deviation is exactly iint_D Omega, the integrated cut-loop curvature."
+  }
+}
