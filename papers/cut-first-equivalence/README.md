@@ -37,6 +37,14 @@ certificate (5 = 5, cokernel 0) built by cut-native finite differences
 independent of the classical partials — renaming test passed, non-closed
 control separates.
 
+## Quantum witness (CFE-Q)
+
+The same bridge holds quantum-mechanically, certified on a dissipative
+qubit: memory dial χ ↔ non-Markovianity, ∮ω=∬Ω ↔ Berry holonomy, χ=1 ↔
+CP-divisible (Markovian) limit, and the Bloch quarter-turn J²=−I echoes
+the seam phase ι²=−1. A witness, not a general theorem; quantum gravity
+is a horizon, not a claim.
+
 ## Open — the single remaining obligation
 
 - **(U) Uniqueness** — ∬Ω is the *unique* obstruction to χ→1. Finite,
@@ -48,11 +56,12 @@ control separates.
 ```
 python papers/cut-first-equivalence/certificates/cfe1_cut_first_equivalence.py
 python papers/cut-first-equivalence/certificates/cfe2_surjectivity.py
+python papers/cut-first-equivalence/certificates/cfeq_quantum_witness.py
 python -m pytest papers/cut-first-equivalence/tests -v
 ```
 
 CI regenerates the certificate and fails on any pin drift
-(`EXPECTED_CFE1.sha256`, `EXPECTED_CFE2.sha256`).
+(`EXPECTED_CFE1.sha256`, `EXPECTED_CFE2.sha256`, `EXPECTED_CFEQ.sha256`).
 
 ## Relationship to the rest of the corpus
 

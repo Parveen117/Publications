@@ -148,6 +148,29 @@ potentials.
 | (U) uniqueness | **to build** — obstruction-theoretic argument that H²(response) is rank 1 |
 | quantized residue values (downstream) | `../lambda-seam-calibration/` LAM-1/LAM-2 (seam integers, Gauss-sum cuts) |
 
+## Quantum extension: capsule CFE-Q
+
+The same bridge identity has a **quantum realization**, certified on a
+dissipative-qubit witness (pin `EXPECTED_CFEQ.sha256`):
+
+| Block | Certifies | Result |
+|---|---|---|
+| **T1** | Markovian limit is flat: at χ=1 the qubit propagator is CP-divisible (memoryless) and the closed-cycle geometric residue is exactly 0 — no holonomy | PASS |
+| **T2** | The geometric residue is exact (∮ω=∬Ω on the Bloch loop) and faithful: zero iff Markovian, strictly monotone in the memory dial — a certified quantum **non-Markovianity measure** | PASS |
+| **T3** | Quarter-turn echo: the residue is the Berry-phase area form, and the Bloch rotation generator satisfies **J²=−I** — the quantum instance of the derived seam phase **ι²=−1** (LAM-2 T1b) | PASS |
+| **T4** | CP-divisibility control: a χ≠1 propagator loses intermediate complete positivity at an explicit step — genuinely non-Markovian, not a relabelling | PASS |
+
+The dictionary is exact: **memory dial χ ↔ non-Markovianity**, **∮ω=∬Ω ↔
+geometric (Berry) holonomy**, **χ=1 flat face ↔ CP-divisible Markovian
+limit**. The classical seam quantization (ι²=−1) and the quantum
+geometric phase are literally the same quarter turn.
+
+**Boundary:** CFE-Q is a *witness*, not a general open-system theorem —
+one qubit, one explicit rational dynamics. Generality beyond the qubit
+and the full open-system theorem are OPEN. **Quantum gravity is not
+touched** — it is a horizon, exactly like the action-lifted field
+equations below, never a foundation.
+
 ## Honest boundary
 
 The witness equation of state is an explicit rational model chosen so the

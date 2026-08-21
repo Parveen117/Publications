@@ -1,0 +1,57 @@
+{
+  "T1_markovian_limit_is_flat": {
+    "cp_divisible_at_chi_1": true,
+    "curvature_density_at_chi_1": "0.0000000000000000000000000000000000000000",
+    "geometric_residue_at_chi_1": "0.0000000000000000000000000000000000000000",
+    "statement": "At chi=1 the qubit propagator is CP-divisible (every intermediate map PSD = Markovian/memoryless), the Bloch response one-form is closed, and the geometric residue around the closed loop is exactly 0 \u2014 no holonomy",
+    "verdict": "PASS"
+  },
+  "T2_geometric_residue_exact_and_faithful": {
+    "residue_by_chi": {
+      "0.6000000000000000000000000000000000000000": "-0.6000000000000000000000000000000000000000",
+      "0.8000000000000000000000000000000000000000": "-0.3000000000000000000000000000000000000000",
+      "1.0000000000000000000000000000000000000000": "0.0000000000000000000000000000000000000000",
+      "1.2000000000000000000000000000000000000000": "0.3000000000000000000000000000000000000000",
+      "1.4000000000000000000000000000000000000000": "0.6000000000000000000000000000000000000000"
+    },
+    "statement": "For the closed Bloch loop, oint omega = iint Omega exactly in Q; the geometric residue is zero iff chi=1 and strictly monotone in the memory dial mu=chi-1 \u2014 a certified quantum measure of non-Markovianity (loop holonomy as bath-memory order parameter)",
+    "stokes_identity_exact": true,
+    "strictly_monotone_in_memory": true,
+    "verdict": "PASS",
+    "zero_iff_markovian": true
+  },
+  "T3_quarter_turn_echo": {
+    "J_squared_is_minus_identity": true,
+    "cross_ref": "papers/lambda-seam-calibration LAM-2 T1b (tau(chi4)^2=-4)",
+    "residue_equals_density_times_area": true,
+    "statement": "The geometric residue equals the curvature density times the enclosed signed area (Berry-phase form: holonomy proportional to swept area, the qubit analogue of solid angle), and the Bloch rotation generator squares to minus the identity, J^2 = -I \u2014 the quantum Berry-phase instance of the derived seam phase iota^2 = -1 (Lambda-seam LAM-2 T1b)",
+    "verdict": "PASS"
+  },
+  "T4_cp_divisibility_control": {
+    "chi": "1.4000000000000000000000000000000000000000",
+    "cp_divisible": false,
+    "first_non_cp_step": 1,
+    "statement": "A chi!=1 propagator fails intermediate complete positivity at an explicit step (a witness eigenvalue goes negative) \u2014 chi!=1 is genuinely non-Markovian, not a relabelling",
+    "verdict": "PASS"
+  },
+  "anchor_pinned": "Quantum substrate \u2014 the Bloch representation of qubit states, CP-divisibility as the Markovian condition, and the Berry/geometric phase as loop holonomy: PINNED NAMED DEPENDENCIES. This capsule verifies an exact finite instance; the qubit dynamics is an explicit rational witness, not the theorem.",
+  "arithmetic_discipline": "exact rationals throughout; CP-divisibility by exact 2x2 PSD witnesses; geometric residue by exact midpoint circulation and signed area; quarter-turn J^2=-I by exact matrix multiply; no floating point anywhere",
+  "certificate_type": "CFEQ_QUANTUM_THERMODYNAMIC_WITNESS",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "YM_continuum_gates": "not touched",
+    "certified": "quantum realization on an explicit dissipative-qubit witness, exact arithmetic: Markovian limit flat, geometric residue faithful, quarter-turn echo of iota^2=-1",
+    "full_open_system_theorem": "OPEN",
+    "generality_beyond_qubit_witness": "OPEN",
+    "quantum_gravity": "NOT TOUCHED \u2014 horizon only, not a claim",
+    "uniqueness_U": "OPEN (inherited from CFE-1)"
+  },
+  "claim_status": "quantum realization of Cut-First Equivalence on a dissipative-qubit witness, exact arithmetic: Markovian (CP-divisible) limit is the flat face, closed-cycle geometric residue is a faithful non-Markovianity measure, quarter-turn echoes iota^2=-1; a witness not a general theorem; quantum gravity NOT touched",
+  "finding_CFEQ_F1": "Cut-First Equivalence has a certified quantum realization: on a dissipative qubit the Markovian (CP-divisible) limit is the flat chi=1 face with zero geometric residue, and the closed-cycle holonomy is a faithful, exact measure of non-Markovianity. The same memory-to-geometry bridge holds quantum-mechanically.",
+  "finding_CFEQ_F2": "The quarter-turn generator squares to -I on the cycle plane, the quantum Berry-phase echo of the derived seam phase iota^2=-1 in the Lambda-seam capsules \u2014 the classical seam quantization and the quantum geometric phase are the same quarter turn.",
+  "sequence_context": {
+    "next": "quantum gravity is a HORIZON only \u2014 to be attempted, if ever, solely by connecting a certified piece to an established QG bridge (e.g. Jacobson 1995), never asserted as foundation",
+    "prior": "CFE-1 core certified; CFE-2 surjectivity (S) discharged",
+    "step": "2 of 3 (quantum thermodynamics)"
+  }
+}

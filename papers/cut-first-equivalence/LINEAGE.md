@@ -54,3 +54,17 @@ random potentials of the same shape also reach full rank (structural,
 not point-luck), and a non-closed shear control separates. Only (U)
 uniqueness remains open for the full theorem; no RH/K0/L0/YM continuum
 gate is touched.
+
+## CFE-Q addendum
+
+CFE-Q is step (2) of the quantum sequence: a certified quantum-
+thermodynamics witness on a dissipative qubit. It shows the Cut-First
+Equivalence structure realizes quantum-mechanically — Markovian
+(CP-divisible) limit as the flat χ=1 face, closed-cycle geometric
+holonomy as a faithful non-Markovianity measure, and the Bloch
+quarter-turn J²=−I as the Berry-phase echo of the Λ-seam ι²=−1. It is a
+witness, not a general open-system theorem; generality and the full
+theorem are open. Quantum gravity is deliberately NOT addressed — it
+remains a horizon, to be attempted only by connecting a certified piece
+to an established bridge (e.g. Jacobson 1995), never asserted as
+foundation. No RH/K0/L0/YM continuum gate is touched.
