@@ -1,0 +1,71 @@
+{
+  "T1_mapping_torus_is_a_bundle": {
+    "period": "5",
+    "statement": "The helix is certified as the orbit structure of a deck transformation, not as a drawn curve. The transition rho is a bijection with an exact inverse; the monodromy after n circuits is EXACTLY rho^n for positive, zero and negative n; the deck action is FREE (no point fixed by any nonzero power) and composes additively; and every orbit meets the fundamental domain 0 <= u < L exactly once. The mapping torus is therefore a well-defined bundle whose monodromy is the declared automorphism",
+    "transition": {
+      "K": 6,
+      "alpha": 3,
+      "beta": "2/5",
+      "q": 2
+    },
+    "verdict": "PASS"
+  },
+  "T2_pitch_and_compensated_coordinates": {
+    "p_phi": "3/5",
+    "p_sigma": "2/25",
+    "statement": "The compensated variables phi - p_phi u and sigma - p_sigma u are EXACTLY invariant under the deck transformation on a rational grid, while the uncompensated coordinates fail by exactly alpha and beta. The pitches p_phi = alpha/L and p_sigma = beta/L are exact rationals measuring fibre advance per unit visible seam length, and a wrong pitch fails to compensate by an exactly computed amount",
+    "verdict": "PASS"
+  },
+  "T3_flat_is_not_memoryless": {
+    "curved_curvature": "-1",
+    "flat_circuit_holonomy": "3",
+    "flat_curvature": "0",
+    "statement": "THE PRINCIPLE, as an exact separation. For the constant-pitch connection A = p du the abelian curvature is EXACTLY ZERO as a bivariate polynomial identity and every contractible rectangle loop has EXACTLY ZERO holonomy \u2014 yet one circuit of the noncontractible base circle gives holonomy exactly alpha = p L != 0, and n circuits give exactly n alpha. A non-flat connection with curvature exactly -1 and nonzero rectangle holonomy matching its exact flux completes the separation: local curvature and global monodromy are independent. Flat does NOT mean memoryless",
+    "verdict": "PASS"
+  },
+  "T4_visible_return_lifted_nonreturn": {
+    "grid_separating_cases": 24,
+    "statement": "With phase carried as an exponent modulo K, visible return is exactly alpha = 0 mod K while full lifted return additionally requires beta = 0 and q = 0 \u2014 certified exhaustively on a parameter grid, with lifted return always implying visible return and never the converse. The headline witness: the phase closes while support and sheet do not. After n circuits the fibre displacement is exactly (n alpha, n beta, n q), so a nonzero sheet increment can never be undone by further circuits unless n = 0: sheet memory is not a phase that eventually wraps",
+    "verdict": "PASS"
+  },
+  "T5_four_return_classes": {
+    "classes": [
+      "exact_return",
+      "lawfully_transported_return",
+      "memory_bearing_return",
+      "open_obstruction"
+    ],
+    "statement": "The section's four return classes are decided by exact arithmetic with a witness of each, mutually exclusive on the witness set. MEMORY-BEARING RETURN is certified distinct from exact return: the sheet entry is still nonzero and the declared ledger is precisely what makes it lawful \u2014 removing the ledger turns the same state into an open obstruction, and de-admitting the sheet sector reclassifies it as ordinary lawful transport. The class depends on the declared admissions, not on the visible state alone",
+    "verdict": "PASS"
+  },
+  "T6_no_proper_subset_forces_closure": {
+    "proper_subsets_checked": 31,
+    "sectors": [
+      "base_point",
+      "levi_civita",
+      "helical",
+      "rtc_curvature",
+      "thermodynamic"
+    ],
+    "statement": "Consuming the pinned EMK-G2 seam holonomy: base-point return holds, Levi-Civita holonomy is exactly zero, RTC curvature is zero and the lifted connection is exactly flat \u2014 and the transition is STILL open, because the helical residue is nonzero. Certified in the strongest available form: for EVERY one of the 31 proper subsets of the five declared sectors there is a residue vector closing exactly that subset while the whole stays open, so no proper subset can force closure. And a structure-preserving projection maps closure to closure while a NON-FAITHFUL projection dropping the sheet sector maps an OPEN lift to a CLOSED image \u2014 the converse of the projection theorem fails exactly",
+    "verdict": "PASS"
+  },
+  "capsule": "EMK-G3: helical sheet-memory lift \u2014 flat is not memoryless",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "declared_structure": "DECLARED: the fibre model F = R_phi x R_sigma x Z_k, the transition rho, the pitches, the EMK connection A^EMK, the ledgers, the tolerances and the thermodynamic presentation map",
+    "not_certified": "NOT CERTIFIED: the non-abelian lift, the cut-localized or distributional sheet term, and any continuous relaxation of the sheet sector",
+    "phase_convention": "visible phase return is certified in the exponent-mod-K form (UGD-1 discipline), NOT as a statement about 2 pi; no root of unity is ever formed",
+    "physical_identification": "NOT CLAIMED: that alpha, beta, q are phase lag, scale drift or hysteretic branch count \u2014 the section itself says the mapping torus supplies bookkeeping geometry and does not manufacture a physical law",
+    "yang_mills_quantum_gravity": "not touched"
+  },
+  "provenance": {
+    "companions": "EMK-G1 (local seam metric), EMK-G2 (global quotient and holonomy, PINNED), EMK-TOP-1 (seam survival), UGD-1 (phase exponents), EMK-T2 (ordered transport)",
+    "guard_thread": "EMK-G1 T6 metric vs recognition curvature; EMK-G2 T6 Levi-Civita holonomy vs recognition monodromy; EMK-G3 T3 local flatness vs global monodromy \u2014 the same guard three times, each at a higher level",
+    "prior_executable_version": "NONE for this section"
+  },
+  "source": {
+    "continues": "EMK-G2, whose closing remark states that helical lifts can now be added without confusing them with the base-surface metric; the Levi-Civita seam holonomy is consumed from that pinned module",
+    "primary": "EMK-UGD-Provisional-Vault, emk_ugd_recognition_geometry/sections/helical_sheet_memory.tex (245 lines)"
+  }
+}

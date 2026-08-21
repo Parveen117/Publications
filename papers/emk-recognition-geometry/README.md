@@ -128,3 +128,35 @@ from *recognition monodromy* — the same guard at the global level.
 Declared: both warp families, the auxiliary EMK bundle, ρ_Σ,
 tolerances. Identification of the two holonomies is **not claimed** —
 T6 certifies the opposite.
+
+---
+
+# EMK-G3 — The helical sheet-memory lift: flat is not memoryless
+
+Source: vault `emk_ugd_recognition_geometry/sections/helical_sheet_memory.tex`
+(245 lines) — the door EMK-G2's closing remark left open. 27 tests;
+76 in this folder.
+
+**The sharpest principle in the geometry layer**, certified as an exact
+separation: *a flat lifted connection may carry nontrivial global
+monodromy.* Local curvature detects infinitesimal nonclosure; monodromy
+detects global return data.
+
+| Block | Certifies | Result |
+|---|---|---|
+| **T1** | The helix is the **orbit structure of a deck transformation**, not a drawn curve: ρ is a bijection with exact inverse, monodromy after n circuits is exactly ρⁿ (n positive, zero, negative), the action is **free** and additive, and every orbit meets 0 ≤ u < L exactly once | PASS |
+| **T2** | The compensated variables φ − p_φu, σ − p_σu are **exactly invariant** under the deck map; the uncompensated ones fail by exactly α and β; a wrong pitch fails by an exactly computed amount | PASS |
+| **T3** | **The principle.** A = p du has curvature **exactly zero** as a bivariate polynomial identity and **exactly zero** holonomy on every contractible rectangle — yet one circuit of the base circle gives **exactly α ≠ 0**, and n circuits exactly nα. A curved companion (curvature exactly −1, holonomy = exact flux) completes the separation in both directions | PASS |
+| **T4** | Visible return is exactly α ≡ 0 (mod K); full lifted return also needs β = 0 and q = 0 — exhaustive on a grid, with lifted ⟹ visible and never the converse. After n circuits the displacement is exactly (nα, nβ, nq): **a sheet increment is never undone by more circuits** — sheet memory is not a phase that eventually wraps | PASS |
+| **T5** | The four return classes with a witness each, mutually exclusive. **Memory-bearing return is distinct from exact return**: remove the ledger and the same state becomes an open obstruction; de-admit the sheet sector and it reads as ordinary lawful transport | PASS |
+| **T6** | Consuming **pinned EMK-G2**: base return holds, Θ_LC = 0 exactly, RTC curvature zero, lift exactly flat — **and the transition is still open**. Strong form: for **all 31 proper subsets** of the five sectors, a residue vector closes exactly that subset while the whole stays open. A **non-faithful projection** dropping the sheet sector maps an open lift to a closed image — the converse of the projection theorem fails exactly | PASS |
+
+**Guard thread, three levels.** EMK-G1 T6: metric curvature vs
+recognition curvature. EMK-G2 T6: Levi-Civita holonomy vs recognition
+monodromy. EMK-G3 T3: local flatness vs global monodromy. Same guard,
+each time one level higher.
+
+Declared: the fibre model, ρ, the pitches, A^EMK, ledgers, tolerances,
+the thermodynamic presentation map. Not certified: the non-abelian
+lift, the cut-localized sheet term. **Not claimed:** that α, β, q are
+phase lag, scale drift or hysteretic branch count.
