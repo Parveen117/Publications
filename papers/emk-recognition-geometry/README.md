@@ -160,3 +160,29 @@ Declared: the fibre model, ρ, the pitches, A^EMK, ledgers, tolerances,
 the thermodynamic presentation map. Not certified: the non-abelian
 lift, the cut-localized sheet term. **Not claimed:** that α, β, q are
 phase lag, scale drift or hysteretic branch count.
+
+---
+
+# UGD-G1 — Phase–scale–seam geometry: the number layer meets the surface
+
+Source: vault `emk_ugd_recognition_geometry/sections/ugd_phase_scale_seam_geometry.tex`
+(213 lines). **This closes a loop.** EMK-G3's fibre ℝ_φ × ℝ_σ × ℤ_k is
+not an arbitrary choice — it *is* the UGD state, whose numeral
+presentation UGD-1 certified independently. 28 tests; 104 in this folder.
+
+| Block | Certifies | Result |
+|---|---|---|
+| **T1** | Three sectors, three topologies, **three different closure rules** (phase mod K, scale by equality in ℚ, sheet by equality in ℤ). No collapsing audit works: a mod-K audit **passes** an open sheet, an exact-equality audit **rejects** a genuine phase return. The residue vector is irreducibly a vector | PASS |
+| **T2** | **The cocycle theorem, sharpened.** Under any chart re-choice n→n+m_a−m_b the triple sum is **exactly invariant** — certified exhaustively *and* by the identity making the shifts cancel in pairs — so a nonzero integer sheet defect is a genuine class that must enter the ledger and **cannot be erased by chart choice**. Scale: exact composed-identity condition with the closing chart constructed | PASS |
+| **T3** | Abelian curvature componentwise; flat-with-period **consumed** from pinned EMK-G3, not repeated. New: the sheet defect isn't a curvature component at all — its invariance involves no continuous data, so no relaxation (flat or curved) changes it. F_UGD = 0 ⇏ Δk = 0 for a **structural** reason | PASS |
+| **T4** | The two named non-implications with witnesses, strengthened to **pairwise independence** across all 12 ordered pairs of the four sectors | PASS |
+| **T5** | Faithful ⟹ preserves **and** reflects closure; lossy preserves but provably fails to reflect. Third mode separated: a projection that **identifies** two sectors discards nothing yet still fails — phase +3 with sheet −3 merges to zero and reads closed. **Injectivity, not non-discarding, is load-bearing** | PASS |
+| **T6** | **The bridge.** Consuming pinned UGD-1: numerals with identical classical projection and phase content but different seam charge give a transition whose phase and scale residues are **exactly zero** and whose sheet residue is **exactly the seam-charge difference**. UGD-1 T4 ("classical projection blind to seam") and this section's "lossy projection reports closure" are **one statement at two layers** | PASS |
+
+The number layer and the geometry layer are the same object seen twice.
+
+Declared: state space, transition, ledgers, tolerances, chart cover,
+P_UGD, and the thermodynamic dictionary (which the section itself calls
+a constitutive presentation, not a universal identity — its
+σ = log λ_s option is **never evaluated**). Phase closure certified in
+exponent-mod-K form throughout.

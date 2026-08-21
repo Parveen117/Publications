@@ -1,0 +1,54 @@
+{
+  "T1_heterogeneous_closure_rules": {
+    "K": 6,
+    "statement": "The three UGD sectors carry three different topologies and therefore three different closure rules: phase modulo K, scale by exact equality in Q, sheet by exact equality in Z. Certified that no single collapsing audit reproduces the correct verdict \u2014 a mod-K audit PASSES a state whose sheet sector is open, and an exact-equality audit REJECTS a genuine phase return. The residue vector is irreducibly a vector; collapsing it to one norm gives provably wrong answers in both directions",
+    "verdict": "PASS"
+  },
+  "T2_ugd_cocycle_and_chart_choice": {
+    "sheet_defect": 5,
+    "statement": "THE COCYCLE THEOREM, and the sharp part of it. Under any chart re-choice n_ab -> n_ab + m_a - m_b the triple sum n_ab + n_bc + n_ca is EXACTLY INVARIANT \u2014 certified exhaustively over an integer grid of re-choices and by the algebraic identity that makes the shifts cancel in pairs \u2014 so a nonzero integer sheet defect is a genuine cocycle class that MUST enter the active seam ledger and cannot be erased by chart choice. The same invariance holds in the phase sector modulo K, so a phase defect is absorbable exactly when it already vanishes mod K, never by re-choosing charts. The scale condition is the exact composed-identity condition on rational affine charts, with the closing chart constructed and a failing witness exhibited",
+    "verdict": "PASS"
+  },
+  "T3_flat_connection_discrete_memory": {
+    "consumed_circuit_period": "3",
+    "statement": "The abelian UGD curvature is certified componentwise: each constant coefficient one-form is exactly flat. The flat-with-nonzero-period statement is CONSUMED from the pinned EMK-G3 module rather than repeated. What is new: the integer sheet defect is not a curvature component at all \u2014 its invariance under chart re-choice involves no continuous data, so no continuous relaxation of the memory sector, flat or curved, can change it. Hence F_UGD = 0 does not imply Delta k = 0 for a STRUCTURAL reason, not merely by example",
+    "verdict": "PASS"
+  },
+  "T4_product_lift_non_implications": {
+    "ordered_pairs_checked": 12,
+    "statement": "The two non-implications named by the section are certified with explicit witnesses: base-point return does NOT force UGD closure, and UGD closure does NOT force the open RTC curvature to vanish. Strengthened to PAIRWISE INDEPENDENCE: for every one of the 12 ordered pairs of distinct sectors there is a state closing the first while the second stays open, so no sector's closure constrains any other, and full closure genuinely requires all four",
+    "verdict": "PASS"
+  },
+  "T5_faithful_versus_lossy_projection": {
+    "statement": "Certified as an exact criterion in both directions: a projection injective on every active sector both PRESERVES and REFLECTS closure, while a lossy projection preserves closure and provably fails to reflect it \u2014 an OPEN state maps to a CLOSED image, so projected closure cannot reconstruct lifted closure. A third failure mode is separated: a projection that IDENTIFIES two distinct active sectors discards nothing yet is still not injective, and a state with phase +3 and sheet -3 merges to zero and reads as closed. Injectivity on active sectors, not mere non-discarding, is the load-bearing hypothesis",
+    "verdict": "PASS"
+  },
+  "T6_bridge_number_layer_equals_geometry": {
+    "seam_charges": [
+      0,
+      2,
+      2
+    ],
+    "statement": "THE BRIDGE. Consuming the pinned UGD-1 numeral class: numerals with IDENTICAL classical projection and identical phase content but DIFFERENT total seam charge map, under the declared reduction, to UGD geometry states agreeing on every visible sector. Closure is a property of the TRANSITION, so the certified object is the residue between them: phase and scale components exactly zero, sheet component exactly the difference of seam charges. UGD-1 T4's 'the classical projection is blind to seam' and this section's 'a lossy projection reports closure while the transition is memory-bearing' are therefore ONE statement at two layers. Controls: a null-seam transition genuinely closes, and a transition differing in a VISIBLE sector stays open even after the lossy projection. The number layer and the geometry layer are the same object seen twice",
+    "verdict": "PASS"
+  },
+  "capsule": "UGD-G1: phase-scale-seam geometry \u2014 the number layer meets the surface",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "declared_structure": "DECLARED: the state space, the transition, the ledgers L and M, the tolerance vector, the chart cover, the reduction map P_UGD, and the thermodynamic dictionary \u2014 which the section itself calls a constitutive presentation, not a universal identity",
+    "no_logarithm_evaluated": "the dictionary's sigma = log lambda_s option is DECLARED and never evaluated; no logarithm, no root of unity and no float appears in any verdict",
+    "not_claimed": "NOT CLAIMED: the non-abelian reduced representation, the continuous relaxation of the memory sector as a physical model, and any identification of k with a thermodynamic branch index",
+    "phase_convention": "phase closure is certified in exponent-mod-K form, never as an evaluated 2 pi statement",
+    "reduction_not_replacement": "UGD is a REDUCTION of EMK, not a replacement; faithfulness is a hypothesis and T5 certifies exactly what it buys",
+    "yang_mills_quantum_gravity": "not touched"
+  },
+  "provenance": {
+    "closes_the_loop": "EMK-G3's fibre R_phi x R_sigma x Z_k is the UGD state whose numeral presentation UGD-1 certified; T6 certifies that the two layers are one object",
+    "companions": "UGD-1 (numerals, PINNED), EMK-G1/G2/G3 (geometry, EMK-G3 PINNED), EMK-TOP-1 (seam cohomology), EMK-T1/T2 (tensor and time)",
+    "prior_executable_version": "NONE for this section"
+  },
+  "source": {
+    "consumes_pinned": "EMK-G3 (bivariate curvature machinery and the flat-with-period statement) and UGD-1 (the numeral class, classical projection and seam charge)",
+    "primary": "EMK-UGD-Provisional-Vault, emk_ugd_recognition_geometry/sections/ugd_phase_scale_seam_geometry.tex (213 lines)"
+  }
+}
