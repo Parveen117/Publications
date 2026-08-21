@@ -26,6 +26,7 @@ jobs:
           python papers/emk-ugd-algebra/certificates/emk2_native_carrier.py
           python papers/emk-ugd-algebra/certificates/ugd1_numerals.py
           python papers/emk-ugd-algebra/certificates/emkt1_master_tensor_and_time.py
+          python papers/emk-ugd-algebra/certificates/emkt2_time_ordered_transport.py
           git diff --exit-code papers/emk-ugd-algebra/certificates
       - name: Tests
         run: python -m pytest papers/emk-ugd-algebra/tests -v

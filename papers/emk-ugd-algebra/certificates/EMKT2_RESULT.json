@@ -1,0 +1,50 @@
+{
+  "T1_order_is_content": {
+    "statement": "Three transports of the same generator content \u2014 the two time-orders and the unordered sum-exponential \u2014 are EXACTLY different rational matrices, every pairwise discrepancy an exact multiple of [K1,K2] (ab, ab/2, ab/2), and the sum-exponential sits exactly halfway between the two orders. Commuting generators collapse all three to one transport identically. Order is content, and the content is the commutator",
+    "times": [
+      "2/3",
+      "5/7"
+    ],
+    "verdict": "PASS"
+  },
+  "T2_refinement_free_reversal_not": {
+    "partitions_checked": 4,
+    "statement": "Within one constant generator, every rational partition of the same total time yields the SAME transport \u2014 e^(K(a+b)) = e^(Ka) e^(Kb) exactly, so time-slicing is free. Reversing the order of two distinct-generator segments changes the transport by exactly ab[K1,K2]. Time-ORDERING, not time-slicing, is the load-bearing structure",
+    "verdict": "PASS"
+  },
+  "T3_mixed_term_obstructs_transport": {
+    "cross_commutator": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "-1"
+      ]
+    ],
+    "statement": "The pinned EMK-T1 channels are individually flat and their internal transport loops close EXACTLY to I; the cross-channel loop L(a,b) is given in closed form as a rational matrix identity with leading bilinear part EXACTLY ab[E12,E21], never closes unless ab = 0, and has det 1. The mixed term obstructs transport itself: a channel-by-channel audit is provably insufficient in dynamics, not only in the static curvature decomposition",
+    "verdict": "PASS"
+  },
+  "T4_same_clock_different_history_ledger": {
+    "clock": "17/10",
+    "open_residue": "3/10",
+    "statement": "Two evolutions through the same generators for the same total time carry IDENTICAL clocks but transports differing by exactly ab[K1,K2]. The pinned EMK-T1 temporal-residue functional reads the open residue as exactly ab, the lawful ledger closes it to 0 identically, and the exact corrective transport maps one history onto the other. Clock equality is not time closure \u2014 now as a statement about transport, completing the static EMK-T1 T5 separation",
+    "verdict": "PASS"
+  },
+  "capsule": "EMK-T2: time-ordered transport \u2014 order is content",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "continuous_time": "NOT CLAIMED: P exp ordered exponentials, Magnus expansions, non-nilpotent generators and refinement limits \u2014 the source (topology paper 5.4) states the general object; only the exact nilpotent sector is certified",
+    "convention": "DECLARED: later transport multiplies on the left; reversing the convention swaps the roles of the two orders and negates the discrepancy",
+    "yang_mills_quantum_gravity": "not touched"
+  },
+  "consumes": {
+    "EMK-T1": "channel matrices, comm/is_zero/mixed_curvature and the temporal_residue functional consumed from the pinned module, not re-declared",
+    "RST-1": "the exact nilpotent-exponential machinery of its T4 flow-generator block (cited; this module is self-contained to keep folder CI local)"
+  },
+  "provenance": {
+    "prior_executable_version": "NONE \u2014 first dynamic capsule of the tensor/time layer",
+    "threads": "mixed-term necessity now static (EMK-T1 T3) AND dynamic (T3 here); projection blindness now includes a transport form (T4 here) alongside UGD-1 T4, EMK-T1 T5 and RST-2 T1"
+  }
+}
