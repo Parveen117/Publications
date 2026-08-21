@@ -1,0 +1,105 @@
+{
+  "T1_exact_information_metric": {
+    "metric": [
+      [
+        "155/144",
+        "-71/144"
+      ],
+      [
+        "-71/144",
+        "203/144"
+      ]
+    ],
+    "point": [
+      "1/4",
+      "1/3",
+      "1/4",
+      "1/6"
+    ],
+    "statement": "At a declared rational point of a finite exponential family the information metric is g = Cov_p(T), an EXACT rational matrix computed without evaluating any exponential or logarithm. It is symmetric and PSD; it is positive definite exactly when the sufficient statistics are affinely independent, and degenerate with an explicit null vector exactly when one is an affine combination of the others. Constant statistics lie in the kernel: the information metric is blind to constants, exactly as CFE-U's d0 has kernel the constants",
+    "verdict": "PASS"
+  },
+  "T2_recognition_ledger_total_covariance": {
+    "cases": {
+      "proper": {
+        "discarded_is_zero": false,
+        "recognized_is_zero": false
+      },
+      "singleton_refinement": {
+        "discarded_is_zero": true,
+        "recognized_is_zero": false
+      },
+      "total_collapse": {
+        "discarded_is_zero": false,
+        "recognized_is_zero": true
+      },
+      "uneven": {
+        "discarded_is_zero": false,
+        "recognized_is_zero": false
+      }
+    },
+    "statement": "Coarse-graining splits the information metric EXACTLY: g = g_recognized + g_discarded (between-block covariance of the conditional means plus block-averaged within-block covariance), both PSD, as an exact matrix identity. Monotonicity follows as an IDENTITY rather than an inequality: g - g_recognized = g_discarded is PSD, so recognition can lose information and can never manufacture it. The singleton refinement discards exactly nothing; total collapse recognizes exactly nothing; a proper partition does both partially. This is the recognition ledger on the information side",
+    "verdict": "PASS"
+  },
+  "T3_obstruction_is_metric_free": {
+    "ladder": [
+      [
+        "3/5",
+        "-32"
+      ],
+      [
+        "4/5",
+        "-16"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "6/5",
+        "16"
+      ],
+      [
+        "7/5",
+        "32"
+      ]
+    ],
+    "metrics": [
+      "anisotropic",
+      "euclidean",
+      "information",
+      "sheared"
+    ],
+    "statement": "Curvature is d, not a covariant derivative: no Christoffel symbol of any information metric enters the residue. For every tested positive-definite rational metric \u2014 euclidean, strongly anisotropic, sheared, and the information metric Cov_p(T) itself \u2014 the loop residue of the pinned CFE-1 witness is the SAME rational number, equal to BETA*(chi-1)*Area, reproducing the certified ladder -32, -16, 0, +16, +32",
+    "verdict": "PASS"
+  },
+  "T4_split_is_metric_dependent": {
+    "common_residue": "32",
+    "distinct_splits": 4,
+    "statement": "Exact rational least squares (normal equations solved in Q) splits a response into its g-orthogonal memoryless part and a remainder. The split is genuine \u2014 the closed part is memoryless with zero residue and integrates to an explicit potential, the remainder is g-orthogonal to every memoryless direction \u2014 and it GENUINELY DIFFERS between metrics. Yet the residue of the remainder is the SAME rational number 32 for every metric. The information metric is a gauge on the decomposition and an invariant on the obstruction",
+    "verdict": "PASS"
+  },
+  "T5_one_obstruction_two_presentations": {
+    "complement_rank": 1,
+    "distinct_generators": 4,
+    "statement": "For every tested metric the g-orthogonal complement of the memoryless space has rank EXACTLY 1 \u2014 CFE-U's uniqueness seen through the information metric. Its generator is metric-DEPENDENT as a vector while its residue is always nonzero: all metrics land on the same 1-dimensional obstruction class, differing only by a scalar. CONTROL: a degenerate PSD form is not invertible and yields no well-posed split \u2014 positive definiteness is load-bearing",
+    "verdict": "PASS"
+  },
+  "capsule": "CID-1: curvature-information duality \u2014 the obstruction is metric-free, the split is not",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "family_form_declared": "DECLARED: the exponential form of the family. Only the arithmetic at a rational point is certified \u2014 no exponential or logarithm is evaluated anywhere",
+    "not_claimed": "NOT CLAIMED: continuum information geometry, alpha-connections, dually flat structures, and quantum (Fubini-Study / Bures / SLD) information metrics or their monotonicity",
+    "source": "this is a BRIDGE between two certified capsules of this corpus; the vault appendix named for Euler information-curvature duality has NOT been read and is NOT the source",
+    "uniqueness_scope": "inherits CFE-U's scope: the DECLARED response algebra, not a universal law",
+    "yang_mills_quantum_gravity": "not touched"
+  },
+  "consumes": {
+    "CFE-1": "the witness family and circulation, through CFE-U",
+    "CFE-U": "the memoryless space ker d1, the residue functional, the response complex and the potential reconstruction, all from the pinned module"
+  },
+  "provenance": {
+    "companions": "CFE-1/2/Q/U (cut-first-equivalence), information-invariance D-series",
+    "prior_executable_version": "NONE \u2014 first bridge capsule between the curvature and information layers"
+  }
+}
