@@ -1,0 +1,89 @@
+{
+  "T1_involution_and_45_degree_seam": {
+    "J_squared_is_identity": true,
+    "fixed_points_on_line_y_equals_x": 9,
+    "grid": "x,y in -4..4",
+    "statement": "J(z) = i conj(z) acts on real coordinates as (x,y) -> (y,x); the seam coordinate u is invariant and v is negated exactly, and the fixed set is precisely v = 0, the 45-degree line y = x. J is an involution",
+    "u_invariant_v_negated": true,
+    "verdict": "PASS"
+  },
+  "T2_determinant_and_degeneracy": {
+    "example_degeneracy": {
+      "W_at_v_one_half": "0.000000000000000000000000000000",
+      "kappa": "-4.000000000000000000000000000000",
+      "v_squared_at_degeneracy": "0.250000000000000000000000000000"
+    },
+    "positive_definite_iff_W_positive": true,
+    "statement": "det g_A = A(v)^2 = W, with eigenvalues W and 1, so the metric is positive definite exactly where W > 0 and degenerates exactly at the zeros of A. For kappa < 0 the degeneracy locus is the exact rational condition 1 + kappa v^2 = 0",
+    "verdict": "PASS"
+  },
+  "T3_connection_and_curvature_two_routes": {
+    "christoffels_agree": true,
+    "curvature_two_routes_agree": true,
+    "grid_points_checked": 25,
+    "seam_curvature_equals_minus_kappa": {
+      "-2.000000000000000000000000000000": "2.000000000000000000000000000000",
+      "0.000000000000000000000000000000": "0.000000000000000000000000000000",
+      "0.200000000000000000000000000000": "-0.200000000000000000000000000000",
+      "1.750000000000000000000000000000": "-1.750000000000000000000000000000",
+      "3.000000000000000000000000000000": "-3.000000000000000000000000000000"
+    },
+    "statement": "The Christoffel symbols in W-form agree with the Levi-Civita expressions computed independently from the metric components, and the Gaussian curvature obtained as R_{uvuv}/det g agrees with the closed form -kappa/(1+kappa v^2)^2 \u2014 exactly, on a rational grid. At the seam K(0) = -kappa exactly",
+    "verdict": "PASS"
+  },
+  "T4_geodesic_seam_criterion": {
+    "control_odd_perturbation_breaks_it": {
+      "dW_at_zero": "0.600000000000000000000000000000",
+      "gamma_v_uu_at_zero": "-0.300000000000000000000000000000",
+      "mu": "0.600000000000000000000000000000",
+      "seam_still_geodesic": false,
+      "separated": true
+    },
+    "reflection_symmetric_seam_is_geodesic": true,
+    "statement": "For a diagonal metric E du^2 + G dv^2 the coordinate seam v = 0 is geodesic iff d_v E(u, 0) = 0. Every reflection-symmetric warp satisfies this (W even => W'(0) = 0 => Gamma^v_{uu}(0) = 0), so the 45-degree seam is an intrinsic geodesic, not merely a visual bisector",
+    "verdict": "PASS"
+  },
+  "T5_sign_and_regularity": {
+    "degenerate_exactly_at_strip_boundary": true,
+    "kappa_negative_positive_curvature_inside_strip": true,
+    "kappa_positive_negative_curvature": true,
+    "kappa_zero_euclidean": true,
+    "statement": "kappa > 0: globally positive definite with strictly negative curvature. kappa = 0: Euclidean, K identically zero. kappa < 0: positive curvature strictly inside the strip v^2 < -1/kappa, degenerating exactly at its boundary",
+    "verdict": "PASS"
+  },
+  "T6_metric_and_recognition_curvature_are_distinct": {
+    "config_A_euclidean_metric": {
+      "gaussian_curvature": "0.000000000000000000000000000000",
+      "recognition_curvature": "2.000000000000000000000000000000"
+    },
+    "config_B_curved_metric_rotation_free": {
+      "gaussian_curvature": "-3.000000000000000000000000000000",
+      "recognition_curvature": "0.000000000000000000000000000000"
+    },
+    "cross_ref": "papers/emk-ugd-algebra EMK-2 T3/T4 (odd-grade curvature)",
+    "independent": true,
+    "statement": "The source states as a principle that metric (Gaussian) curvature and the declared connection curvature are distinct objects. This is certified as a SEPARATION, not asserted: an explicit configuration with K identically zero carrying nonzero recognition curvature, and one with K != 0 carrying zero recognition curvature. Neither determines the other; any identification must be proved, never inherited from shared notation",
+    "verdict": "PASS"
+  },
+  "arithmetic_discipline": "exact rationals throughout; the warp carried as W = A^2 so that connection, Riemann component and curvature are rational functions; the coordinate normalization constant sqrt2 is recorded and never evaluated; no floating point anywhere",
+  "certificate_type": "EMKG1_ROTATIONAL_SEAM_METRIC",
+  "claim_boundary": {
+    "CFE_uniqueness_U": "OPEN (inherited)",
+    "RH_K0_L0": "not touched",
+    "YM_continuum_gates": "not touched",
+    "certified": "involution action and the 45-degree seam, determinant and degeneracy, connection and curvature by two routes, the geodesic seam criterion with control, the sign/regularity trichotomy, and the two-curvature separation",
+    "global_and_completeness_statements": "NOT CLAIMED",
+    "identification_with_recognition_two_form": "NOT CLAIMED \u2014 certified independent in T6",
+    "metric_family_is_declared": "the reflection-symmetric warp is DECLARED, as in the source; K(0) = -kappa is a theorem for this family, NOT a universal law equating flow parameters with curvature scalars",
+    "quantum_gravity": "not touched"
+  },
+  "claim_status": "the rotational seam metric certified in exact rational arithmetic: involution action and the 45-degree seam, metric determinant and degeneracy, connection and Gaussian curvature by two routes, the geodesic seam criterion with a symmetry control, sign/regularity trichotomy, and a certified SEPARATION of metric curvature from recognition curvature",
+  "finding_EMKG1_F1": "The 45-degree seam is an intrinsic geodesic of every reflection-symmetric seam metric \u2014 not a visual bisector but a geometric fact, with the reflection symmetry certified load-bearing by an odd-perturbation control that destroys it.",
+  "finding_EMKG1_F2": "The whole seam geometry is exactly rational once the warp is carried as W = A^2: connection, Riemann component and Gaussian curvature all become rational functions, so K(0) = -kappa is certified without a single square root or float.",
+  "finding_EMKG1_F3": "Metric curvature and recognition curvature are certified INDEPENDENT: each can vanish while the other does not. This guards the corpus against the most tempting over-claim in the geometry layer \u2014 identifying the Gaussian curvature of the seam metric with the recognition or thermodynamic two-form because both are called curvature.",
+  "provenance": {
+    "arithmetic_move": "carrying W = A^2 instead of A removes every square root: Gamma^u_{uv} = W'/(2W), Gamma^v_{uu} = -W'/2, K = (W')^2/(4W^2) - W''/(2W). The sqrt2 in the coordinate normalization is a positive constant that changes no line, no fixed set and no curvature sign, so the certified arithmetic uses unnormalized seam coordinates",
+    "prior_executable_version": "NONE \u2014 first machine-checkable realization",
+    "source": "vault LaTeX, emk_ugd_recognition_geometry tree: section 'A rotational seam metric' (seam-adapted coordinates, reflection-symmetric metric g_A = A(v)^2 du^2 + dv^2, Levi-Civita connection, K_A = -A''/A, geodesic seam criterion, quadratic seam warp A_kappa = sqrt(1+kappa v^2))"
+  }
+}
