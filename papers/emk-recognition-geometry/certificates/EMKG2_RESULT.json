@@ -1,0 +1,72 @@
+{
+  "T1_closed_geodesic_seam_exact_length": {
+    "period": "5",
+    "seam_length_squared": {
+      "-2": "25",
+      "-4": "25",
+      "0": "25",
+      "1/5": "25",
+      "3": "25"
+    },
+    "statement": "On the periodic cylinder the seam closes after one period and, since A > 0, the geodesic criterion A'(0) = 0 is EQUIVALENT to W'(0) = 0, so EMK-G1's local criterion transfers unchanged. The seam length is exact: length^2 = L^2 W(0), equal to L^2 for the declared family. CONTROL: an odd perturbation gives W'(0) = mu != 0 and the seam stops being a geodesic while still closing \u2014 global closure and geodesy are different properties",
+    "verdict": "PASS"
+  },
+  "T2_quotient_is_not_doubling": {
+    "fixed_points": 4,
+    "statement": "The isometric involution j(u,v) = (u,-v) has orbits of size exactly 2 off the seam and exactly 1 on it, so the fixed set is precisely the seam and the reflection quotient is the half-cylinder with a MIRROR boundary \u2014 not an interior point of a two-sided surface. Counting witness: at every nonzero normal level the double has exactly twice the points of the quotient, and equally many at the seam. Target separation: the side target sgn(v) takes opposite values on each glued orbit, so it factors through no map on the quotient while the labelled double retains it. Quotient and doubling carry different information",
+    "verdict": "PASS"
+  },
+  "T3_gluing_criterion_and_invisible_shift": {
+    "first_failing_jet_for_mismatched_pair": 2,
+    "statement": "Since A > 0, the vault's jet criterion A_+^(n)(0) = (-1)^n A_-^(n)(0) is EQUIVALENT to the same condition on W, a finite exact check for polynomial warps. Certified: every even warp glues smoothly to itself (the smooth double); an odd-term warp fails already at n = 1 with the mismatch exhibited exactly, yet glues smoothly to its own reflection; a mismatched pair fails at the first differing jet, identified exactly. THE SEAM SHIFT alpha is metric-invisible \u2014 the warp does not depend on u, so alpha creates no Levi-Civita curvature \u2014 while a declared phase ledger separates the shifts. The separation of T6 is already visible in the gluing data",
+    "verdict": "PASS"
+  },
+  "T4_global_classification_finite_ends": {
+    "kappa_minus4_distance_squared": "1/4",
+    "regimes": {
+      "-2": "incomplete_finite_ends",
+      "-4": "incomplete_finite_ends",
+      "0": "flat_cylinder",
+      "1/5": "complete_positive",
+      "3": "complete_positive"
+    },
+    "statement": "Global classification of W_kappa = 1 + kappa v^2: kappa > 0 gives W >= 1 at every v (complete, curvature decaying); kappa = 0 the flat cylinder; kappa < 0 positivity exactly on v^2 < -1/kappa with the degeneracy at NORMAL DISTANCE SQUARED exactly -1/kappa \u2014 finite, because the dv^2 coefficient is 1, so the surface is incomplete there. Curvature magnitude grows without bound along an exact rational sequence approaching the boundary (a growth witness on exact values, NOT a limit claim), and the regular-cap condition fails, so these ends are not polar caps",
+    "verdict": "PASS"
+  },
+  "T5_holonomy_equals_curvature_integral": {
+    "sample_holonomies": {
+      "-2": "16",
+      "0": "0",
+      "1/4": "-2",
+      "3": "-24",
+      "5/3": "-40/3"
+    },
+    "statement": "With coframe theta^1 = A du, theta^2 = dv and connection omega^1_2 = A'(v) du, the Levi-Civita rotation around a coordinate rectangle is computed by an exact boundary walk and, independently, by exact polynomial integration of K * A \u2014 where the identity K * A = -A'' is certified by exact polynomial division with remainder zero, not by evaluation. The two routes agree exactly and both equal -(u1-u0)(A'(v1) - A'(v0)); on a symmetric strip with an even warp this is -2(u1-u0)A'(b). THE SEAM LOOP has Theta_LC = 0 EXACTLY, not merely modulo 2 pi",
+    "verdict": "PASS"
+  },
+  "T6_two_holonomies_are_independent": {
+    "statement": "THE SECOND GUARD, certified in BOTH directions: (a) the seam loop has Theta_LC = 0 exactly while the recognition monodromy rho_Sigma * transport equals -I \u2014 the tangent frame returns, the recognition state does not; (b) a rectangle with Theta_LC != 0 whose recognition monodromy is exactly the identity \u2014 the frame rotates, the recognition state returns. Neither holonomy determines the other, and identifying them requires an explicit presentation and coupling law that is NOT supplied. The lawful ledger closes the monodromy residue exactly, and global seam closure fails when any active sector stays open even though endpoint return and trivial Levi-Civita holonomy both hold",
+    "theta_rectangle": "-12",
+    "theta_seam": "0",
+    "verdict": "PASS"
+  },
+  "capsule": "EMK-G2: global quotient, completeness, and seam holonomy",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "auxiliary_bundle_declared": "DECLARED: the auxiliary EMK bundle E, its connection A^EMK, the seam transition rho_Sigma, tolerances and the residue vector",
+    "blowup_is_a_growth_witness": "NOT CLAIMED as a limit: curvature blow-up is certified as strictly increasing exact values along an exact rational sequence",
+    "declared_families": "DECLARED: the rational-warp family A_c = 1 + c v^2 used for the holonomy blocks, and the vault's A_kappa = sqrt(1 + kappa v^2) whose global classification is certified in W-form. The theorems are for these declared families and for general even polynomial warps where stated, not universal laws",
+    "exact_versus_mod_2pi": "the vault states the holonomy relation modulo 2 pi; certified here in its EXACT non-reduced form on the rational-warp family",
+    "identification_of_holonomies": "NOT CLAIMED \u2014 T6 certifies the opposite, in both directions",
+    "yang_mills_quantum_gravity": "not touched"
+  },
+  "provenance": {
+    "companions": "EMK-G1 (local seam metric, same folder), EMK-T2 (exact nilpotent transport), EMK-TOP-1 (seam survival), RST-1 T2 (quotient target separation)",
+    "guard_thread": "EMK-G1 T6 separated metric curvature from recognition curvature; EMK-G2 T6 separates Levi-Civita holonomy from recognition monodromy \u2014 the same guard at the global level",
+    "prior_executable_version": "NONE for this section"
+  },
+  "source": {
+    "continues": "EMK-G1 (rotational seam metric) \u2014 same seam, now on the periodic cylinder",
+    "primary": "EMK-UGD-Provisional-Vault, emk_ugd_recognition_geometry/sections/global_quotient_holonomy.tex (281 lines)"
+  }
+}

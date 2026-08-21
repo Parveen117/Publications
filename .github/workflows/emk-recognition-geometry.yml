@@ -23,6 +23,7 @@ jobs:
       - name: Regenerate EMK-G1 certificate and check pin
         run: |
           python papers/emk-recognition-geometry/certificates/emkg1_rotational_seam_metric.py
+          python papers/emk-recognition-geometry/certificates/emkg2_global_quotient_holonomy.py
           git diff --exit-code papers/emk-recognition-geometry/certificates
       - name: Tests
         run: python -m pytest papers/emk-recognition-geometry/tests -v

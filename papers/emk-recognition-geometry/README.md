@@ -99,3 +99,32 @@ python -m pytest papers/emk-recognition-geometry/tests -v
 
 CI regenerates the certificate and fails on pin drift
 (`EXPECTED_EMKG1.sha256`).
+
+---
+
+# EMK-G2 — Global quotient, completeness, and seam holonomy
+
+Source: vault `emk_ugd_recognition_geometry/sections/global_quotient_holonomy.tex`
+(281 lines) — the global continuation of EMK-G1: same seam, now on the
+periodic cylinder. 29 tests; 49 in this folder.
+
+**The section's real content is a second guard**, and this capsule
+certifies it in both directions: *trivial Levi-Civita holonomy does not
+imply recognition closure.*
+
+| Block | Certifies | Result |
+|---|---|---|
+| **T1** | Since A > 0, the geodesic criterion A′(0) = 0 ⟺ W′(0) = 0, so EMK-G1's local criterion transfers unchanged; seam length² = L²·W(0), exactly L² for the family. Control: an odd perturbation kills geodesy while the curve still **closes** — closure and geodesy are different properties | PASS |
+| **T2** | Orbits of ȷ(u,v) = (u,−v) have size exactly 2 off the seam, 1 on it ⇒ the quotient is the half-cylinder with a **mirror** boundary; counting witness (double = 2× quotient off-seam); the side target sgn(v) factors through **no** map on the quotient | PASS |
+| **T3** | The jet criterion in **W-form** (equivalent since A > 0): even warps glue smoothly to themselves; an odd term fails at n = 1 exactly yet glues to its own reflection; a mismatched pair fails at the identified jet. **The seam shift α is metric-invisible** while a declared ledger sees it | PASS |
+| **T4** | κ > 0 ⇒ W ≥ 1 everywhere; κ = 0 flat; κ < 0 ⇒ positivity exactly on v² < −1/κ with degeneracy at **normal distance² exactly −1/κ** (finite ⇒ incomplete). Curvature blow-up as an **exact growth witness**, not a limit claim; the polar-cap condition fails | PASS |
+| **T5** | Holonomy by **two independent exact routes** — boundary walk of ω¹₂ = A′du, and polynomial integration of K·A where K·A = −A″ is certified by **exact polynomial division** (remainder zero), not evaluation. Seam loop: Θ_LC = 0 **exactly**, not merely mod 2π | PASS |
+| **T6** | **The guard, both directions:** (a) Θ_LC = 0 on the seam while recognition monodromy = −I; (b) Θ_LC ≠ 0 on a rectangle whose monodromy is exactly the identity. Neither determines the other; the ledger closes the residue; global closure fails when any active sector stays open | PASS |
+
+**Guard thread.** EMK-G1 T6 separated *metric curvature* from
+*recognition curvature*. EMK-G2 T6 separates *Levi-Civita holonomy*
+from *recognition monodromy* — the same guard at the global level.
+
+Declared: both warp families, the auxiliary EMK bundle, ρ_Σ,
+tolerances. Identification of the two holonomies is **not claimed** —
+T6 certifies the opposite.
