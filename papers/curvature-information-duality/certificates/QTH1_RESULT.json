@@ -1,0 +1,90 @@
+{
+  "T1_exact_sld_and_two_routes": {
+    "qfi": {
+      "(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))": "0",
+      "(Fraction(0, 1), Fraction(0, 1), Fraction(1, 4))": "1/12",
+      "(Fraction(1, 3), Fraction(0, 1), Fraction(1, 3))": "7/27",
+      "(Fraction(3, 5), Fraction(4, 5), Fraction(0, 1))": "1"
+    },
+    "state": [
+      "0",
+      "0",
+      "1/2"
+    ],
+    "statement": "For a rational Bloch state with |r| < 1 the symmetric logarithmic derivative solves an exact 4x4 rational system; its defining equation d rho = (L rho + rho L)/2 is verified as an exact matrix identity; and the quantum Fisher information computed as Tr(d rho L) agrees EXACTLY with the closed Bloch form |dr|^2 + (r.dr)^2/(1-|r|^2). Two independent routes, one rational number. QFI is nonnegative and vanishes exactly when the state does not move",
+    "verdict": "PASS"
+  },
+  "T2_measurement_ledger_is_an_inequality": {
+    "per_direction": {
+      "(Fraction(0, 1), Fraction(0, 1), Fraction(1, 1))": {
+        "cfi": "0",
+        "discard": "1"
+      },
+      "(Fraction(0, 1), Fraction(1, 1), Fraction(0, 1))": {
+        "cfi": "16/25",
+        "discard": "9/25"
+      },
+      "(Fraction(0, 1), Fraction(3, 5), Fraction(4, 5))": {
+        "cfi": "48/175",
+        "discard": "127/175"
+      },
+      "(Fraction(1, 1), Fraction(0, 1), Fraction(0, 1))": {
+        "cfi": "9/25",
+        "discard": "16/25"
+      },
+      "(Fraction(3, 5), Fraction(4, 5), Fraction(0, 1))": {
+        "cfi": "1",
+        "discard": "0"
+      },
+      "(Fraction(4, 5), Fraction(-3, 5), Fraction(0, 1))": {
+        "cfi": "0",
+        "discard": "1"
+      }
+    },
+    "qfi": "1",
+    "saturating_directions": [
+      "(Fraction(3, 5), Fraction(4, 5), Fraction(0, 1))"
+    ],
+    "statement": "Projective measurement along rational unit vectors gives an exact classical Fisher information, and CFI <= QFI holds on every sampled direction. The discard QFI - CFI is EXACTLY ZERO at the optimal direction (aligned with the state's motion) and strictly positive elsewhere; a fully coarse measurement discards everything. So the quantum recognition ledger is QFI = CFI + discard with discard >= 0 \u2014 an INEQUALITY with an exactly vanishing case, not the exact identity CID-1 certified classically",
+    "verdict": "PASS"
+  },
+  "T3_one_tensor_two_halves": {
+    "antisymmetric_offdiagonal": "-1/2",
+    "commuting_pair_antisymmetric": "0",
+    "statement": "The quantum geometric tensor Q_ij = Tr(rho L_i L_j) splits EXACTLY into a real symmetric part (1/2)Tr(rho{L_i,L_j}) \u2014 the information metric, CID-1's object, whose diagonal is the quantum Fisher information \u2014 and an imaginary antisymmetric part (1/2i)Tr(rho[L_i,L_j]), the mean Uhlmann curvature, with exactly zero diagonal. Both are exact rationals. The antisymmetric part is nonzero EXACTLY when the two SLDs fail to commute in the state average, and vanishes exactly for a commuting pair: the obstruction to recognizing both parameters at once IS a curvature, in the sense CFE gives the word. One tensor, two halves already certified separately",
+    "symmetric_offdiagonal": "0",
+    "verdict": "PASS"
+  },
+  "T4_where_the_classical_identity_fails": {
+    "quantum_discard_at_z_measurement": "1",
+    "statement": "The classical ledger does not fail because classical bookkeeping breaks. Inside the outcome data CID-1's total-covariance accounting still holds exactly \u2014 the singleton partition discards nothing \u2014 and yet the quantum discard QFI - CFI is nonzero by an exactly computed amount that NO partition of outcomes can see. The gap is nonnegative in every sampled direction, strictly positive for non-saturating ones and exactly zero for the saturating one. The remainder is strictly quantum",
+    "verdict": "PASS"
+  },
+  "T5_commuting_face_restores_everything": {
+    "commuting_face_discard": "0",
+    "statement": "On the commuting face \u2014 a fixed eigenbasis with only the eigenvalues moving \u2014 everything classical returns exactly: the SLDs commute, the mean Uhlmann curvature is exactly zero, the eigenbasis measurement is optimal with quantum discard exactly zero, and the quantum Fisher information equals the classical Fisher information computed by CID-1's route on the eigenvalue distribution. The quantum layer contains the classical one as its commuting face, exactly as classical thermodynamics is the memoryless face in CFE-1",
+    "verdict": "PASS"
+  },
+  "T6_monotonicity_under_channels": {
+    "depolarizing_scaling": "lambda^2",
+    "statement": "Unitary conjugation by a rational orthogonal Bloch rotation preserves the quantum Fisher information EXACTLY, while a depolarizing channel strictly decreases it \u2014 by exactly lambda^2 for this orthogonal-motion witness \u2014 and no channel in the family raises it. Recognition channels can lose information and can never manufacture it, here as an inequality with an exact equality case, matching T2's shape rather than CID-1's classical identity",
+    "unitary_preserves": true,
+    "verdict": "PASS"
+  },
+  "answers": "the queued question left open by CID-1: whether the classical recognition ledger g = g_recognized + g_discarded survives quantum-ly. It does not \u2014 it becomes an inequality with exact saturation, and the commuting face restores the identity",
+  "capsule": "QTH-1: quantum recognition information \u2014 the ledger becomes an inequality",
+  "claim_boundary": {
+    "RH_K0_L0_YM": "not touched",
+    "berry_phase_identification": "NOT CLAIMED: that the antisymmetric part is a physical Berry phase; CFE-Q certifies the holonomy side separately",
+    "no_thermodynamic_interpretation": "NOT CLAIMED: entropy production, work, or heat. The quantities certified are information-geometric",
+    "not_claimed": "NOT CLAIMED: the general Braunstein-Caves attainability theorem, the Morozova-Chentsov classification of quantum Fisher metrics, Kubo-Mori/Bogoliubov metrics (which need logarithms and are never evaluated here), and multi-copy or asymptotic estimation statements",
+    "quantum_gravity": "a horizon, not a claim",
+    "witness_capsule": "one qubit, explicit rational families \u2014 a WITNESS like CFE-Q, NOT a general open-system or general quantum-estimation theorem"
+  },
+  "companion_not_duplicate": "CFE-Q certified the Bloch/holonomy side of quantum CFE (Markovian limit flat, geometric residue faithful, quarter-turn echo). This capsule certifies the INFORMATION side, which CFE-Q does not touch",
+  "provenance": {
+    "companions": "CID-1 (classical ledger), CFE-Q (quantum holonomy witness), CFE-1/CFE-U (the memoryless-face and uniqueness shape)",
+    "finding": "QTH-F1 the recognition ledger is classically an identity and quantum-ly an inequality with exact saturation; QTH-F2 the quantum geometric tensor's symmetric half is CID-1's information metric and its antisymmetric half is a CFE-style curvature obstruction \u2014 one object, two capsules; QTH-F3 the commuting face restores the classical identity exactly, the same shape as CFE-1's memoryless limit",
+    "prior_executable_version": "NONE \u2014 first quantum information capsule"
+  }
+}

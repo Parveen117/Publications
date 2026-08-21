@@ -44,3 +44,48 @@ algebra). RH / K0 / L0 / YM / QG untouched.
 python certificates/cid1_curvature_information_duality.py
 python -m pytest tests -v
 ```
+
+---
+
+# QTH-1 — Quantum recognition information: the ledger becomes an inequality
+
+The question CID-1 left open, answered. CID-1 certified the **classical**
+recognition ledger g = g_recognized + g_discarded as an **exact identity**
+(law of total covariance). Does that shape survive quantum-ly?
+
+**It does not — and the failure is exactly located.** 25 tests; 49 in
+this folder.
+
+> QFI = CFI(measurement) + discard,  discard ≥ 0,
+> vanishing **exactly** for an optimal measurement.
+
+An inequality with exact saturation, not an identity. And on the
+**commuting face** the identity is restored exactly — the same shape as
+CFE-1's memoryless limit.
+
+| Block | Certifies | Result |
+|---|---|---|
+| **T1** | Rational Bloch states; the SLD from an exact 4×4 rational solve, its defining equation verified as a matrix identity; QFI by **two independent routes** (solve vs closed Bloch form) agreeing in ℚ | PASS |
+| **T2** | CFI ≤ QFI on every rational measurement direction, **discard exactly 0** at the aligned direction and **exactly 1 (everything)** at the orthogonal one. The quantum ledger is an inequality with exact saturation | PASS |
+| **T3** | **One tensor, two certified halves.** Q_ij = Tr(ρL_iL_j) splits exactly into a real symmetric part (CID-1's information metric, diagonal = QFI) and an imaginary antisymmetric part (mean Uhlmann curvature, exactly −1/2 here, zero diagonal). The antisymmetric half is nonzero **exactly when the SLDs fail to commute** — the obstruction *is* a curvature | PASS |
+| **T4** | The classical bookkeeping inside the outcome data still holds exactly, while the quantum discard is nonzero by an exactly computed amount **no partition of outcomes can see**. The remainder is strictly quantum | PASS |
+| **T5** | **The commuting face restores everything**: SLDs commute, Uhlmann curvature exactly 0, eigenbasis measurement optimal, discard exactly 0, and QFI equals CID-1's classical covariance route | PASS |
+| **T6** | A rational unitary rotation preserves QFI **exactly**; a depolarizing channel scales it by exactly λ². Information can be lost, never manufactured | PASS |
+
+## Findings
+
+- **QTH-F1.** The recognition ledger is classically an **identity** and
+  quantum-ly an **inequality with exact saturation**.
+- **QTH-F2.** The quantum geometric tensor's symmetric half is CID-1's
+  object and its antisymmetric half is a CFE-style obstruction — **one
+  tensor, two capsules**.
+- **QTH-F3.** The commuting face restores the classical identity exactly.
+
+**Companion, not duplicate:** CFE-Q certified the Bloch/holonomy side of
+quantum CFE; this is the information side.
+
+Witness capsule (one qubit, explicit rational families) like CFE-Q — not
+a general open-system or quantum-estimation theorem. Kubo–Mori/Bogoliubov
+metrics need logarithms and are **never evaluated**. **Not claimed:**
+entropy production, work, heat, or that the antisymmetric part is a
+physical Berry phase.
