@@ -20,9 +20,10 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install deps
         run: python -m pip install pytest
-      - name: Regenerate RST-1 certificate and check pin
+      - name: Regenerate RST-1 and RST-2 certificates and check pins
         run: |
           python papers/recognition-seam-topology/certificates/rst1_recognition_seam_topology.py
+          python papers/recognition-seam-topology/certificates/rst2_arithmetic_fusion_spine.py
           git diff --exit-code papers/recognition-seam-topology/certificates
       - name: Tests
         run: python -m pytest papers/recognition-seam-topology/tests -v
