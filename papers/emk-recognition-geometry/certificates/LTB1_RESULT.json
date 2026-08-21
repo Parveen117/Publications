@@ -1,0 +1,67 @@
+{
+  "T1_skew_response_is_not_curvature": {
+    "antisymmetric_sector": [
+      [
+        "0",
+        "2"
+      ],
+      [
+        "-2",
+        "0"
+      ]
+    ],
+    "statement": "THE BRIDGE'S MAIN GUARD, both directions. A response Jacobian with nonzero antisymmetric sector can carry an EXACTLY FLAT declared connection, and a perfectly symmetric Jacobian can carry an exactly NONZERO curvature. Neither determines the other, so without an explicitly stated constitutive map the identification of skew response with transport curvature is blocked. And when a map IS stated, a different stated map gives a different curvature from the same Jacobian \u2014 the map is a choice, not a discovery",
+    "verdict": "PASS"
+  },
+  "T2_subtraction_ladder_and_independence": {
+    "open_remainder": "1",
+    "permutations_checked": 120,
+    "statement": "The open-curvature ladder is exact and ORDER-INDEPENDENT over all 120 permutations of the subtracted sectors, and a fully accounted raw curvature leaves exactly zero. THE CONTROL: a sector defined as the raw curvature itself makes the open curvature identically zero on every input tested \u2014 a diagnostic that can never fire is not a diagnostic. The source's requirement that each subtracted term be computed from its own PREVIOUSLY DECLARED component is therefore load-bearing, and is certified as such",
+    "verdict": "PASS"
+  },
+  "T3_vdw_cycle_with_formal_logarithm": {
+    "lambda_coefficient": "3",
+    "rational_part": "0",
+    "statement": "Around the oriented rectangle the van der Waals work loop is computed by two independent routes \u2014 a leg-by-leg boundary walk and the area integral of Omega_W \u2014 and both give exactly R(T1-T0) times the FORMAL symbol Lambda = log((V1-b)/(V0-b)), which is never evaluated. THE ATTRACTION PARAMETER CANCELS EXACTLY: each isothermal leg carries an a-contribution and the two are exact negatives, so the closed loop's rational part is exactly zero \u2014 certified as rational arithmetic with no logarithm anywhere. A fully rational control equation of state reproduces the same two-route agreement with no formal symbol at all",
+    "verdict": "PASS"
+  },
+  "T4_three_diagnostics_separated": {
+    "loop_coefficient": "3",
+    "statement": "Three diagnostics separated exactly. (i) The loop integral is nonzero and constitutive. (ii) It is NOT entropy production: the same loop MAGNITUDE arises under two declared protocols of opposite time orientation, so the loop alone cannot fix the sign an entropy reading requires \u2014 orientation, heat and flux-force data must be supplied separately. (iii) Repeating the visible cycle returns phase and scale EXACTLY while the branch index advances by one each traversal, so global branch memory accumulates while the local work curvature is unchanged \u2014 EMK-G3's helical statement, now on a thermodynamic cycle",
+    "verdict": "PASS"
+  },
+  "T5_post_hoc_ledger_is_vacuous": {
+    "pairs_distinguished_post_hoc": 0,
+    "statement": "A LEDGER CHOSEN AFTER SEEING THE DATA IS VACUOUS. With the work ledger declared in advance, the residue |loop - L_W| is exactly zero on the reference protocol and exactly nonzero on a departing one \u2014 it separates. With the ledger set equal to the observed loop, the residue is IDENTICALLY ZERO on every input, and the number of protocol pairs it can distinguish is exactly zero, while the declared rule distinguishes them. The post-hoc rule renames the observation instead of testing it \u2014 certified as a property of the construction, not of one example",
+    "verdict": "PASS"
+  },
+  "T6_presentation_is_a_choice_ratios_are_the_flagships": {
+    "invariant_at_chi_one": "1",
+    "statement": "The phase presentation is certified in exponent-mod-K form (no 2 pi is evaluated) and is REFERENCE-DEPENDENT: three declared reference scales give three different presentations of the same physical state, while a full-cycle shift of the reference leaves it invariant \u2014 the dictionary is a model-specific choice, not an equation of state. BRIDGE: the section's ratio variables Gamma_c = lambda_p/lambda_v and Gamma_m = lambda_s/lambda_t are the same symbols whose product CFE-1 certified as the equilibrium invariant, and consuming the pinned CFE-1 module that invariant is exactly 1 on the memoryless face and departs exactly off it. The bridge's ratios are the flagship's invariant factors, not new objects. The logarithmic definition of sigma is DECLARED and never evaluated \u2014 only the ratio inside it is computed",
+    "three_presentations": [
+      0,
+      9,
+      6
+    ],
+    "verdict": "PASS"
+  },
+  "capsule": "LTB-1: the thermodynamic bridge \u2014 what a loop integral is NOT",
+  "claim_boundary": {
+    "RH_K0_L0": "not touched",
+    "declared_structure": "DECLARED: the response hierarchy, the connection one-form omega_lambda, the constitutive map C_lambda, every subtracted sector, the reference scales, the branch continuation rule, and the work ledger L_W",
+    "no_logarithm_evaluated": "log((V1-b)/(V0-b)) is carried as a FORMAL symbol and never evaluated; the certified content is the exact rational coefficient of that symbol and the exact cancellation of the attraction parameter",
+    "not_claimed": "NOT CLAIMED: that any loop integral is entropy production, that skew response is curvature, that cyclic winding is entropy, that the UGD dictionary is a universal equation of state, or that any diagnostic measures a physical quantity absent dimensional calibration, time orientation and a stated experimental protocol",
+    "worked_example_only": "the van der Waals model is a WORKED CONSTITUTIVE EXAMPLE with NO claim of experimental validation \u2014 the source says so and this capsule repeats it",
+    "yang_mills_quantum_gravity": "not touched"
+  },
+  "provenance": {
+    "companions": "CFE-1 (PINNED, the invariant), EMK-G3 (branch memory), UGD-G1 (the dictionary's sectors), QTH-1 and CID-1 (information side)",
+    "guard_thread": "fourth level: EMK-G1 T6 metric vs recognition curvature, EMK-G2 T6 Levi-Civita vs recognition monodromy, EMK-G3 T3 local flatness vs global monodromy, LTB-1 T1 response asymmetry vs transport curvature",
+    "prior_executable_version": "NONE for these sections"
+  },
+  "source": {
+    "character": "these sections are almost entirely PROHIBITIVE \u2014 they say what may not be identified with what \u2014 so each is discharged by an exact witness that blocks the identification",
+    "consumes_pinned": "CFE-1 (the equilibrium invariant)",
+    "primary": "EMK-UGD-Provisional-Vault, emk_ugd_recognition_geometry/sections/lambda_thermodynamic_bridge.tex (82) and thermodynamic_worked_cycle.tex (87)"
+  }
+}

@@ -186,3 +186,33 @@ P_UGD, and the thermodynamic dictionary (which the section itself calls
 a constitutive presentation, not a universal identity — its
 σ = log λ_s option is **never evaluated**). Phase closure certified in
 exponent-mod-K form throughout.
+
+---
+
+# LTB-1 — The thermodynamic bridge: what a loop integral is *not*
+
+Sources: vault `lambda_thermodynamic_bridge.tex` (82) and
+`thermodynamic_worked_cycle.tex` (87). These sections are almost
+entirely **prohibitive** — they say what may not be identified with what
+— so each is discharged by an exact witness that blocks the
+identification permanently. 26 tests; 130 in this folder.
+
+| Block | Certifies | Result |
+|---|---|---|
+| **T1** | **The bridge's main guard, both directions.** A Jacobian with nonzero skew sector carrying an **exactly flat** connection; a perfectly symmetric Jacobian carrying **exactly nonzero** curvature. And when a constitutive map *is* stated, a different stated map gives a different curvature from the same Jacobian — the map is a choice, not a discovery | PASS |
+| **T2** | The subtraction ladder is exact and **order-independent over all 120 permutations**. Control: a sector defined as the raw curvature itself makes the diagnostic **identically zero on every input** — a diagnostic that can never fire is not a diagnostic | PASS |
+| **T3** | The van der Waals loop by **two independent routes**, with log((V₁−b)/(V₀−b)) carried as a **formal symbol** and never evaluated. **The attraction parameter cancels exactly**: each leg carries an *a*-term, the two are exact negatives. A fully rational control EOS needs no symbol at all | PASS |
+| **T4** | Three diagnostics separated: the loop is constitutive; it is **not** entropy production (the same magnitude arises under both time orientations, so the loop alone can't fix the sign); repetition returns (φ,σ) exactly while the branch index advances — EMK-G3's helical statement on a thermodynamic cycle | PASS |
+| **T5** | **A post-hoc ledger is vacuous.** Declared in advance, the residue separates protocols; set equal to the observed loop it is identically zero and distinguishes **exactly zero pairs** — certified as a property of the construction, not one example | PASS |
+| **T6** | The presentation is **reference-dependent** (three declared scales, three presentations of the same state) so the dictionary is a choice, not an equation of state. **Bridge:** consuming pinned CFE-1, the section's Γ_c, Γ_m are the flagship's invariant factors — I = 1 exactly on the memoryless face | PASS |
+
+**Guard thread, fourth level.** EMK-G1 T6: metric vs recognition
+curvature. EMK-G2 T6: Levi-Civita holonomy vs recognition monodromy.
+EMK-G3 T3: local flatness vs global monodromy. **LTB-1 T1: response
+asymmetry vs transport curvature.**
+
+**Not claimed:** that any loop integral is entropy production, that skew
+response is curvature, that cyclic winding is entropy, or that the UGD
+dictionary is a universal equation of state. The van der Waals model is
+a worked constitutive example with **no claim of experimental
+validation** — as the source itself states.
