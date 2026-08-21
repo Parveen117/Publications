@@ -1,0 +1,251 @@
+{
+  "T1_cut_stable_topology_and_seam": {
+    "cost_of_c": {
+      "0": "unreachable",
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "lawful_composite_defects": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "open_sets": [
+      [],
+      [
+        0,
+        1,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "recognition_classes": {
+      "0": [
+        0,
+        1
+      ],
+      "2": [
+        2,
+        3
+      ],
+      "4": [
+        4,
+        5
+      ]
+    },
+    "seam_of_c": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "seam_of_kappa": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "statement": "Finite primitive cut-recognition datum: chi idempotent, the cut family closed under composition, and the recognition-saturated cut-stable sets form a topology, verified exhaustively over all 64 subsets. The seam is the recognition-fixed locus and equals the zero-cost locus of the reachability cost, with an off-seam point of infinite cost. The recognition curvature defect vanishes for the lawful declared composite and fires exactly at the point where the unlawful declaration breaks recognized path equality",
+    "unlawful_composite_defects": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "verdict": "PASS"
+  },
+  "T2_rotation_instead_of_gluing": {
+    "binary_repair_separates": true,
+    "invariant_target_factors": true,
+    "orientation_factors_through_quotient": false,
+    "reflected_pair": [
+      "9/14",
+      "5/14"
+    ],
+    "seam_closure_without_state_identity": true,
+    "statement": "Gluing blindness: the orientation target factors through no map on the glued quotient (both candidate constant values fail), while an invariant target factors uniquely; one bit of sheet label restores injectivity on the glued fibre and no single-valued supplement can (minimal binary repair). Recognition equality after rotation transport does not erase state identity. The reflected-point side target is destroyed by gluing, retained by the labelled carrier, and target-null exactly on the reflection-fixed locus. Model points only: no assertion that any modeled point is a zero of xi",
+    "verdict": "PASS"
+  },
+  "T3_rotation_induced_involution_and_bridge": {
+    "J_self_adjoint": true,
+    "J_squared_is_identity": true,
+    "U_identity_gives_cut_swap": true,
+    "projections_orthogonal_complementary": true,
+    "statement": "For rational orthogonal transport U, J_U(u,v) = (U^{-1}v, Uu) is a self-adjoint involution and P+- = (I +- J_U)/2 are complementary orthogonal projections \u2014 the seam/anti-seam split is induced by reversible sheet rotation, not by quotient identification. BRIDGE: at U = I the involution is exactly the cut swap (u,v) -> (v,u): the same derived object certified as J = K in EMK-T1 T1 and as (x,y) -> (y,x) in EMK-G1 T1. Fourth certified presentation of the derived involution; it is never primitive",
+    "transport": [
+      [
+        "3/5",
+        "-4/5"
+      ],
+      [
+        "4/5",
+        "3/5"
+      ]
+    ],
+    "verdict": "PASS"
+  },
+  "T4_flow_generator_residue_is_commutator": {
+    "commuting_control_loop_is_identity": true,
+    "covariance_defect_iff_conjugation_invariance": true,
+    "eigenmode_terms_checked": 12,
+    "lambda_mode": "-3",
+    "loop_max_degree": 2,
+    "residue_h2_coefficient_is_commutator": true,
+    "statement": "The flow generator is certified without limits: for nilpotent generators the Cayley step and the commutator loop are exact polynomial matrices in h, C_h(D)^{-1} = C_{-h}(D) is a polynomial identity, and L_h = I + h^2 [D1,D2] + O(h^3) holds coefficient-wise with the h^2 coefficient EXACTLY the commutator: curvature is the infinitesimal failure of two sheet transports to close, as an identity of rational coefficient matrices. Commuting generators give L_h = I identically. The curvature eigenmode law W(A)v = e^(kappa A) v is certified term by term (K^m v = kappa^m v for all m), with lambda_mode = -kappa as declared sign bookkeeping and a non-eigenvector control; no exponential is evaluated. The dagger covariance defect D_J(A) vanishes identically iff J K J^{-1} = K, both directions certified at the coefficient level with the first-order defect exactly J K J^{-1} - K",
+    "verdict": "PASS"
+  },
+  "T5_dagger_algebra_and_separation": {
+    "R0_dagger_is_plus_R0": true,
+    "R0_star_is_minus_R0": true,
+    "dagger_involutive_antiautomorphism": true,
+    "grid_size": 256,
+    "leakage_criterion_three_way_equivalence": true,
+    "statement": "The finite dagger algebra is exact over the Gaussian rationals: R0^2 = -I, K^2 = I, anticommutation, J_cut = R0 K is a self-adjoint involution (and is again the cut swap), and A# = K A* K is an involutive conjugate-linear anti-automorphism on the full sample grid. THE SEPARATION: R0* = -R0 while R0# = R0 \u2014 dagger self-adjointness is not Hilbert self-adjointness, so any analytic carrier must declare which one it consumes. Leakage criterion: A commutes with J iff both leakage blocks vanish iff A is block diagonal, verified on all 256 grid matrices",
+    "verdict": "PASS"
+  },
+  "T6_circle_sf_wind_ind": {
+    "delta": "1/3",
+    "per_q": {
+      "-1": {
+        "crossing_times": [
+          "1/3"
+        ],
+        "spectral_flow": -1,
+        "toeplitz_cokernel_dim": 1,
+        "toeplitz_index": -1,
+        "toeplitz_kernel_dim": 0,
+        "winding": -1
+      },
+      "-3": {
+        "crossing_times": [
+          "1/9",
+          "4/9",
+          "7/9"
+        ],
+        "spectral_flow": -3,
+        "toeplitz_cokernel_dim": 3,
+        "toeplitz_index": -3,
+        "toeplitz_kernel_dim": 0,
+        "winding": -3
+      },
+      "0": {
+        "crossing_times": [],
+        "spectral_flow": 0,
+        "toeplitz_cokernel_dim": 0,
+        "toeplitz_index": 0,
+        "toeplitz_kernel_dim": 0,
+        "winding": 0
+      },
+      "1": {
+        "crossing_times": [
+          "2/3"
+        ],
+        "spectral_flow": 1,
+        "toeplitz_cokernel_dim": 0,
+        "toeplitz_index": 1,
+        "toeplitz_kernel_dim": 1,
+        "winding": 1
+      },
+      "2": {
+        "crossing_times": [
+          "5/6",
+          "1/3"
+        ],
+        "spectral_flow": 2,
+        "toeplitz_cokernel_dim": 0,
+        "toeplitz_index": 2,
+        "toeplitz_kernel_dim": 2,
+        "winding": 2
+      },
+      "5": {
+        "crossing_times": [
+          "14/15",
+          "11/15",
+          "8/15",
+          "1/3",
+          "2/15"
+        ],
+        "spectral_flow": 5,
+        "toeplitz_cokernel_dim": 0,
+        "toeplitz_index": 5,
+        "toeplitz_kernel_dim": 5,
+        "winding": 5
+      }
+    },
+    "statement": "sf(D_{delta+tq}; 0) = Wind(z^q) = ind(T_{z^q}) = q, certified exactly for every q in the declared set: crossing times are exact rationals with a proof that the finite window is exhaustive for the full Fourier spectrum (no truncation), winding is an exact signed crossing count on the rational Pythagorean parametrization with Gaussian-rational powers (no trigonometry, no floats), and the Toeplitz kernel/cokernel are read off the exact shift action on the Hardy basis. ARITHMETIC NONPROMOTION: no winding sector is a prime, no crossing is a zero of xi, no index is an RH obstruction (paper Remark 7.8)",
+    "verdict": "PASS"
+  },
+  "T7_staircase_negative_control": {
+    "diagonal_length_squared": "2",
+    "per_n": {
+      "1": {
+        "length": "2",
+        "sup_dist_squared": "1/2"
+      },
+      "16": {
+        "length": "2",
+        "sup_dist_squared": "1/512"
+      },
+      "2": {
+        "length": "2",
+        "sup_dist_squared": "1/8"
+      },
+      "4": {
+        "length": "2",
+        "sup_dist_squared": "1/32"
+      },
+      "64": {
+        "length": "2",
+        "sup_dist_squared": "1/8192"
+      },
+      "8": {
+        "length": "2",
+        "sup_dist_squared": "1/128"
+      }
+    },
+    "statement": "The staircase approximants of the diagonal have length EXACTLY 2 for every n while converging uniformly to the diagonal (sup distance squared <= 1/(2 n^2)); the diagonal's squared Euclidean length is 2 and 2^2 != 2, so the limit of lengths is not the length of the limit. Same endpoint limit does not imply same length functional: a target/metric mismatch, certified as such, and NOT evidence of curvature (paper 5.8)",
+    "verdict": "PASS"
+  },
+  "capsule": "RST-1: recognition-seam topology, the exact spine",
+  "claim_boundary": {
+    "analytic_layer": "DECLARED, NOT CERTIFIED: Thm 8.8 (damped paired-prime family entire and trace-class), Thm 9.1 (undamped strip classification), Thm 8.5 (Schatten thresholds), Thm 9.4 (archimedean logarithmic-derivative defect), and every completed-carrier statement. These are analytic theorems of the source paper, outside exact rational verification",
+    "area_rotation_form": "candidate coordinate expression only, NOT a universal curvature law (paper 3.5, 5.7)",
+    "arithmetic_meaning_of_q": "NOT CLAIMED: no winding sector is a prime, no crossing is a zero of xi, no index is an RH obstruction",
+    "critical_line_identification": "NOT CLAIMED: the represented seam is not identified with Re(s) = 1/2; that is an open representation theorem (paper 17.3)",
+    "model_zeros": "NOT CLAIMED: Zmodel -> Zxi is forbidden (paper 13.7); every reflected point used here is a model point",
+    "riemann_hypothesis": "ABSTAIN"
+  },
+  "provenance": {
+    "companions": "EMK-1, EMK-2, UGD-1, EMK-T1 (papers/emk-ugd-algebra), EMK-G1 (papers/emk-recognition-geometry)",
+    "derived_involution_thread": "fourth certified presentation: EMK-T1 T1 (J = K), EMK-G1 T1 ((x,y) -> (y,x)), EMK-1 T1 (seam reflection K), now J_{U=I} = cut swap from rotation transport",
+    "prior_executable_version": "NONE found for the topology paper's exact spine; this is the first certification"
+  },
+  "source": {
+    "lineage": "MP PR #94 front door; EMK-UGD Vault sheet-rotation development; vault appendix APPENDIX_EMK_TOPOLOGY_RIGOROUS cross-reference pending repo access",
+    "paper": "Recognition-Seam Topology and Daggered Index Geometry (M. Dabas, July 2026, arXiv source v1)",
+    "sections_certified": "2, 3, 4, 5, 6, 7 (exact content)"
+  }
+}
