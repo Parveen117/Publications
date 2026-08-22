@@ -95,3 +95,14 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   chain at strong coupling, fixed time step. Does NOT close cutoff
   uniformity — the Dobrushin condition degrades as a -> 0. That is now
   the sharp wall, one level deeper than YM-9 left it.
+
+## GOVERNANCE (Aug 22 2026, owner's rule): NO CLASSICAL BORROWING
+
+- Owner's standing rule: the program proves with its own machinery
+  (EMK/UGD algebra, generalized Euler flow, seam calculus); classical
+  results are not imported as load-bearing anchors.
+- Applied: YM-19 T3 DEMOTED to "anchored"; the m-uniform gap claim is
+  withdrawn until derived natively. YM-19 T1/T2 (exact, self-derived)
+  stand. YM-8's Jentzsch anchor was already demoted by YM-12 the same
+  way. Audit of YM-1..19: these were the only two borrowed anchors.
+- Standing obligation: a native replacement for correlation decay.

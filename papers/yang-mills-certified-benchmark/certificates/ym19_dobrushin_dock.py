@@ -236,8 +236,9 @@ def run():
     ok = c1 and c2 and c3 and c4 and c5 and c6 and all_cert
     cert = {
         "certificate_type": "YM19_DOBRUSHIN_DOCK_VOLUME_UNIFORM_GAP",
-        "claim_status": "first_certified_m_uniform_interacting_gap_on_the_"
-                        "bounded_overlap_chain__strong_coupling_fixed_time_step",
+        "claim_status": "ANCHORED_NOT_NATIVE__T1_T2_exact_and_native__T3_rests_on_a_"
+                        "BORROWED_classical_anchor__DEMOTED_by_governance_rule_"
+                        "no_classical_borrowing__awaits_native_replacement",
         "standing_correction": {
             "target": "YM-17 T3",
             "content": "vacuum-tracking inequality is not sufficient for the "
@@ -261,7 +262,9 @@ def run():
                 "alpha for every m; gap >= -log alpha uniformly in volume",
         },
         "anchor": {
-            "circ_status": "CIRC-1: cited, not rederived (as YM-8 Jentzsch)",
+            "circ_status": "CIRC-1: cited, not rederived — DEMOTED (owner rule Aug 22: "
+                           "the program does not borrow classical results; "
+                           "same fate as YM-8 Jentzsch, replaced in YM-12)",
             "references": ["Dobrushin 1968 (uniqueness)",
                            "Foellmer 1982 / Kuensch 1982 (covariance decay)",
                            "Georgii, Gibbs Measures and Phase Transitions, "

@@ -1,6 +1,6 @@
 {
   "anchor": {
-    "circ_status": "CIRC-1: cited, not rederived (as YM-8 Jentzsch)",
+    "circ_status": "CIRC-1: cited, not rederived \u2014 DEMOTED (owner rule Aug 22: the program does not borrow classical results; same fate as YM-8 Jentzsch, replaced in YM-12)",
     "references": [
       "Dobrushin 1968 (uniqueness)",
       "Foellmer 1982 / Kuensch 1982 (covariance decay)",
@@ -8,7 +8,7 @@
     ]
   },
   "certificate_type": "YM19_DOBRUSHIN_DOCK_VOLUME_UNIFORM_GAP",
-  "claim_status": "first_certified_m_uniform_interacting_gap_on_the_bounded_overlap_chain__strong_coupling_fixed_time_step",
+  "claim_status": "ANCHORED_NOT_NATIVE__T1_T2_exact_and_native__T3_rests_on_a_BORROWED_classical_anchor__DEMOTED_by_governance_rule_no_classical_borrowing__awaits_native_replacement",
   "closes": "volume-uniformity of the interacting gap on the bounded-overlap chain (YM-12 named object; YM-11 gate 2 interacting half, bounded degree) \u2014 at strong coupling, fixed time step",
   "controls": {
     "C1_delta_s_two_route": true,
