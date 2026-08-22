@@ -296,3 +296,12 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   drift of delta_2 in m was the boundary at distance 2 — at distances
   3 and 4 it decays geometrically (1.3e-9, 1.6e-12 at kappa = 1/8).
   Both corrected before pinning.
+
+## YM-33 (Aug 22 2026): E4D-C restated
+
+- CONSUMES: T01-E4C/E4D (RH), YM-16/26 exponential, YM-31 log-convexity.
+- RESULT: certified negative (unsmoothed iteration -> sup) and positive
+  (smoothed iteration -> spectral constant f_0(1+delta)). The RH open
+  item E4D-C is replaced by the alternating-product gap statement; its
+  vacuum half is YM-31, its excitation half is the one open item.
+- RH-Framework ledger edit to follow as a PR.
