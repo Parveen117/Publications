@@ -200,3 +200,15 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   direction-blind (exact); direction change = 6j recoupling with exact
   rational squares 1/4 : 3/4. The weak-coupling gap is isolated to the
   intertwiner transfer. YM-26 named. Frontier status declared.
+
+## YM-26 (Aug 22 2026): dock to theorum/28
+
+- OWNER'S CORRECTION recorded: the framework already has the finite-to-
+  infinite machinery (recognition-Cauchy + Smriti tails + outward
+  certificate u_n + e_n < 1). YM-16 was that theorem without its name.
+- RESULT: YM-16's dock re-certified as a lawful theorum/28 outward
+  certificate for m <= m*; the remaining obligation is theorum/28
+  hypothesis 3 (memory-channel Cauchy bound uniform in m), reduced via
+  the tiling law to the content-1/2 multi-insertion channel.
+- RULE going forward: before declaring any object "infinite-dimensional
+  with no finite truncation", check theorum/28's hypothesis list first.

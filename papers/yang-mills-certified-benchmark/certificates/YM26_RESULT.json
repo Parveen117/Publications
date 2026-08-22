@@ -1,0 +1,173 @@
+{
+  "certificate_type": "YM26_DOCK_TO_THEORUM28_FINITE_TO_INFINITE_CUT",
+  "claim_status": "lawful_outward_certificate_for_m_le_mstar__obligation_named_as_theorem_hypothesis_3__no_m_uniform_claim",
+  "controls": {
+    "C1_lawful_for_m_le_mstar": true,
+    "C2_e_n_increasing_crosses_1_at_mstar_plus_1": true,
+    "C3_recognized_channel_exact": true,
+    "C4_reference_floor_positive": true,
+    "C5_ladder_tail_geometric": true,
+    "C6_shadow_certificate_warning_reproduced": true
+  },
+  "dictionary": {
+    "N_+(B_n - I)": "Haynsworth inertia at mu",
+    "P_n": "A-line carrier W_{m+1} (YM-15)",
+    "Q_n": "complement",
+    "certificate": "e_n < 1 and inertia count == 1 => lambda_2 < nu lambda_1",
+    "e_n": "||QSQ||/mu (sup route)",
+    "floor_m": "lambda_1 >= f_0^{m-1}",
+    "threshold": "mu = nu f_0^{m-1}, nu=9/10"
+  },
+  "grid": {
+    "1/2": {
+      "cells": {
+        "2": {
+          "e_n_blind": "0.33314581",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "3": {
+          "e_n_blind": "0.53245125",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "4": {
+          "e_n_blind": "0.85099175",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "5": {
+          "e_n_blind": "1.36010002",
+          "inertia_count": null,
+          "status": "REFUSED_e_n>=1"
+        }
+      },
+      "ladder_tail_per_face_j>=1": "0.0334936133",
+      "m_star": 4
+    },
+    "1/4": {
+      "cells": {
+        "2": {
+          "e_n_blind": "0.26556691",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "3": {
+          "e_n_blind": "0.33834445",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "4": {
+          "e_n_blind": "0.43106639",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "5": {
+          "e_n_blind": "0.54919840",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "6": {
+          "e_n_blind": "0.69970401",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "7": {
+          "e_n_blind": "0.89145508",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "8": {
+          "e_n_blind": "1.13575477",
+          "inertia_count": null,
+          "status": "REFUSED_e_n>=1"
+        }
+      },
+      "ladder_tail_per_face_j>=1": "0.0081164885",
+      "m_star": 7
+    },
+    "1/8": {
+      "cells": {
+        "10": {
+          "e_n_blind": "0.63086807",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "11": {
+          "e_n_blind": "0.71347277",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "12": {
+          "e_n_blind": "0.80689358",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "13": {
+          "e_n_blind": "0.91254674",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "14": {
+          "e_n_blind": "1.03203392",
+          "inertia_count": null,
+          "status": "REFUSED_e_n>=1"
+        },
+        "2": {
+          "e_n_blind": "0.23573698",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "3": {
+          "e_n_blind": "0.26660394",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "4": {
+          "e_n_blind": "0.30151257",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "5": {
+          "e_n_blind": "0.34099207",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "6": {
+          "e_n_blind": "0.38564094",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "7": {
+          "e_n_blind": "0.43613605",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "8": {
+          "e_n_blind": "0.49324290",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        },
+        "9": {
+          "e_n_blind": "0.55782721",
+          "inertia_count": 1,
+          "status": "LAWFUL"
+        }
+      },
+      "ladder_tail_per_face_j>=1": "0.0019925050",
+      "m_star": 13
+    }
+  },
+  "hypothesis_ledger": {
+    "1_recovered_identity": "BUILT (YM-F1)",
+    "2_recognized_channel_cauchy": "BUILT exact (YM-15)",
+    "3_memory_channel_cauchy_uniform_in_m": "NOT YET BUILT",
+    "4_smriti_tail_content_ge_1": "BUILT leading order (YM-21/22)",
+    "5_target_faithfulness": "= item 3",
+    "6_uniform_reference_floor": "BUILT",
+    "7_outward_seam_margin": "BUILT for m <= m*"
+  },
+  "reduction_of_item_3": "Cauchy bound uniform in m for the multi-insertion content-1/2 memory channel (j=1/2 branching tilings)",
+  "source": "Recognition-Kernel-Framework/theorum/28_recognition_complete_finite_to_infinite_cut_theorem.md (Thm 5.1, 6.1, 7.1, Sec 8-9, 12)",
+  "verdict": "PASS"
+}
