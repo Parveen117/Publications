@@ -179,3 +179,14 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   weak-coupling gap problem is now the commutator-residue transfer.
 - DECLARED, not certified: AF trajectory shape; harmonic excitation
   relation. No weak-coupling gap claimed.
+
+## YM-24 (Aug 22 2026): the abelian subfabric and the non-abelian residue
+
+- CONSUMES: YM-F1 quaternion chart, YM-23 soft mode, F00-E Thm 3.1/5.2
+  (native addition law / circular orbit), EMK-1 rotational determinant
+  channel, EMK-T2 (order is content).
+- RESULT: the commutator sector's exact structure — abelian subfabrics
+  are copies of the native circle with additive Stokes; the non-abelian
+  residue is a Gram defect; the gapless soft mode is exactly abelian.
+  Weak-coupling gap, if any, lives in direction changes between
+  subfabrics. YM-25 named. No gap claimed.

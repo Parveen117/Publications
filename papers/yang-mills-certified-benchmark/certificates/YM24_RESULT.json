@@ -1,0 +1,25 @@
+{
+  "certificate_type": "YM24_ABELIAN_SUBFABRIC_AND_NON_ABELIAN_RESIDUE",
+  "claim_status": "exact_structure_of_the_commutator_sector__no_gap_claim",
+  "controls": {
+    "C1_circle_law_and_additive_stokes": true,
+    "C2_lagrange_identity": true,
+    "C3_degree2_truncation_exact": true,
+    "C4_parallel_control": true,
+    "C5_E_na_zero_on_abelian_positive_generic_invariant": true,
+    "C6_order_tamper_is_2_cross": true
+  },
+  "named_next": "YM-25: the direction-change (u-rotation) sector of the transfer \u2014 the only place a weak-coupling gap can live",
+  "theorems": {
+    "T1_abelian_subfabric_is_circular_euler_orbit": "commuting faces compose by F00-E's native addition law; Stokes additive in the Euler coordinate (rotor chain)",
+    "T2_non_abelian_residue_is_gram_defect": "|p x q|^2 = |p|^2|q|^2 - <p,q>^2; zero iff one subfabric",
+    "T3_second_order_stokes": "odd_2 = sum p_i + sum_{i<j} p_i x p_j; even_2 = 1 - sum <p_i,p_j>; remainder degree >= 3 (exact interpolation)",
+    "T4_soft_mode_is_abelian": "YM-23's soft mode lies in an exact abelian subfabric; E_na = |sum_{i<j} p_i x p_j|^2 vanishes there, positive generically, rotation-invariant"
+  },
+  "verdict": "PASS",
+  "witness_unit_direction_u": [
+    "3/7",
+    "2/7",
+    "6/7"
+  ]
+}
