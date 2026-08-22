@@ -120,3 +120,20 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - Framework-internal pins (F00-G 5.1/7.1, F00-E 2.1/6.2, T01-C) are
   citations INSIDE the program, permitted as in EMK-2.
 - YM-21 named: native contraction replacing the decay anchor.
+
+## YM-F1 (Aug 22 2026): the chain as a recognition fabric — native carrier
+
+- SOURCE (vault, read this session): APPENDIX_DISCRETE_HOLONOMY_FABRICS_AND_
+  RECOGNITION_STOKES — the program's lattice objects (plaquettes, Wilson
+  action, gauge-fixed tree) are its fabric, face holonomy, face residue
+  and rails. Also read: generalized_euler_phase_ratio_space and
+  EULER_INFORMATION_CURVATURE_DUALITY (no decay mechanism — recorded),
+  mp_gold/01 (YM-1..8's ancestor: MP PR#30), gold/05 (curvature-to-seam-
+  index spectral-flow law), gold/06 (same-projection two-block bound).
+- CONSUMES: EMK-1 (Publications) determinant seam ladder; F00-E iota_Sigma.
+- NEW NATIVE FACT: SU(2) is the unit sphere of the EMK primitive block
+  with iota-twisted seam channels — the gauge group was inside the
+  framework's own algebra. EMK-1's channel witness (2,2,3,1) has split
+  determinant 8 untwisted and norm 18 twisted (test).
+- Carrier layer of YM-1..18 is now NATIVE except the declared Haar <->
+  Phi_Sigma identification. No number changed. No gap claimed.

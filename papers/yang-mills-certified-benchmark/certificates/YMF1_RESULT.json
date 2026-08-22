@@ -1,0 +1,44 @@
+{
+  "certificate_type": "YMF1_CHAIN_AS_RECOGNITION_FABRIC_NATIVE_CARRIER",
+  "claim_status": "native_carrier_certified__no_gap_claim",
+  "controls": {
+    "C1_quaternion_relations_over_Q_iota": true,
+    "C2_homomorphism_quat_vs_matrix": true,
+    "C3_det_is_norm_unit_sphere_is_SU2": true,
+    "C4_stokes_exact_and_tamper_bites": true,
+    "C5_residue_range_and_endpoints": true,
+    "C6_two_route_weight_overlap": true,
+    "T2_face_trace_is_bridge_trace": true
+  },
+  "demo": {
+    "face_residues": [
+      "1556/29555",
+      "16054/32125"
+    ],
+    "m": 3,
+    "total_residue": "408142/738875",
+    "weight_direct": [
+      "1.436061427210926",
+      "1.436061427210926"
+    ],
+    "weight_residue_form": [
+      "1.436061427210926",
+      "1.436061427210926"
+    ]
+  },
+  "native_form_of_YM21": "does the boundary-holonomy residue of a fabric with exact interior cancellation control the face-residue sum uniformly in the number of faces?",
+  "remaining_shadow": "Haar integration <-> Phi_Sigma stationary-path extraction (pairing delta_{a=b=c}/d_a): DECLARED",
+  "source": [
+    "vault APPENDIX_DISCRETE_HOLONOMY_FABRICS_AND_RECOGNITION_STOKES (fabric, face holonomy, Stokes closure)",
+    "EMK-1 determinant seam ladder (pinned, Publications)",
+    "F00-E native exponential / iota_Sigma (pinned, RKF)",
+    "YM-11 gate 1 (tree gauge fixing) \u2014 consumed"
+  ],
+  "theorems": {
+    "T1_gauge_group_is_EMK_block_over_C_Sigma": "span{I, R, iota K, iota RK} = Hamilton quaternions; det = Delta_par + Delta_perp = N_Sigma; SU(2) = unit sphere; chi_1/2 = 2 x identity-sector coefficient",
+    "T2_chain_is_ladder_fabric": "bridge face weight = ladder plaquette weight, H_l = A_i^{-1} A_{i+1}",
+    "T3_recognition_stokes_exact_on_chain": "prod H_l = A_1^{-1} A_m; interior rungs cancel exactly (E_int = 0); orientation tamper breaks it",
+    "T4_action_is_face_residue_sum": "weight = Exp(kappa(m-1)) Exp(-kappa sum rho_l), rho_l = 1 - Tr H_l / 2 in [0,2]"
+  },
+  "verdict": "PASS"
+}
