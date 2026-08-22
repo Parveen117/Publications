@@ -190,3 +190,13 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   residue is a Gram defect; the gapless soft mode is exactly abelian.
   Weak-coupling gap, if any, lives in direction changes between
   subfabrics. YM-25 named. No gap claimed.
+
+## YM-25 (Aug 22 2026): the direction-change sector
+
+- CONSUMES: YM-10 multiplicity law, YM-9 semigroup, YM-F1 chart, YM-24
+  rotation, RST-2 squared-amplitude discipline, MP gold/01 (PR #30
+  spin-network seed — reopened here at weak coupling).
+- RESULT: time kernel and class-function carriers are both
+  direction-blind (exact); direction change = 6j recoupling with exact
+  rational squares 1/4 : 3/4. The weak-coupling gap is isolated to the
+  intertwiner transfer. YM-26 named. Frontier status declared.

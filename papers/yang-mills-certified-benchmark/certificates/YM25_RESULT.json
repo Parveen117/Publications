@@ -1,0 +1,32 @@
+{
+  "certificate_type": "YM25_DIRECTION_CHANGE_SECTOR",
+  "claim_status": "two_exact_negatives_one_exact_positive__weak_coupling_gap_isolated_to_recoupling_data__no_gap_claim",
+  "controls": {
+    "C1_multiplicity_dj2_refinement_invariant": true,
+    "C2_carriers_rotation_invariant": true,
+    "C3_recoupling_squares_exact_unitary": true,
+    "C4_singlet_tamper_breaks_unitarity": true,
+    "C5_recoupling_not_identity": true
+  },
+  "declared": [
+    "Haar <-> Phi_Sigma (shadow, as in YM-F1)",
+    "chain at weak coupling ~ O(4)-type rotor model in 1+1 D; continuum gap at the frontier for every method"
+  ],
+  "recoupling_squares": [
+    [
+      "1/4",
+      "3/4"
+    ],
+    [
+      "3/4",
+      "1/4"
+    ]
+  ],
+  "theorems": {
+    "T1_time_kernel_direction_blind": "K_a acts on the whole spin-j block (d_j^2 coefficients) by one scalar; no time-direction floor for direction change",
+    "T2_class_function_carriers_direction_blind": "YM-15..22 carriers invariant under common rotation; structural blindness (SPECTRAL-1 / YM-10)",
+    "T3_direction_change_is_recoupling": "squared 6j overlaps between (12)3 and 1(23) schemes in the J=1/2 sector are exactly [[1/4,3/4],[3/4,1/4]]; unitarity exact; no square root evaluated (RST-2 discipline)",
+    "T4_reduction": "weak-coupling gap can live only in the intertwiner transfer (MP PR#30 / gold/01 spin-network seed) \u2014 YM-26 named"
+  },
+  "verdict": "PASS"
+}
