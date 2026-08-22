@@ -77,3 +77,21 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   interleaved vacuum tracks a per-bridge rate.
 - DESIGNED, NOT EXECUTED: the Kotecky-Preiss dock (T3). Every line is an
   obligation. YM-18 proper = discharging them.
+
+## YM-19 (Aug 22 2026): the Dobrushin dock — volume-uniform gap certified
+
+- CONSUMES: YM-9 heat-kernel family (time step a), YM-8 Perron floors
+  (simple positive vacuum), YM-16 B-factorisation (consistency control),
+  YM-5 exp two-route, YM-13 compound exp route (e^{-x} = (e^{-x/n})^n).
+- ANCHOR (CIRC-1, cited not rederived): Dobrushin uniqueness and the
+  Foellmer/Kuensch covariance decay (Georgii ch. 8). Same governance as
+  YM-8's Jentzsch anchor, which YM-12 later demoted; the program should
+  look for a square-sourced replacement of this anchor too.
+- STANDING CORRECTION: YM-17 T3's "vacuum-tracking inequality" is not a
+  sufficient reduction; recorded in the certificate. YM-18 retained as
+  calibration. The KP design (YM-18 T3) is superseded as the main route
+  but remains valid as an alternative.
+- CLOSES: volume-uniformity of the interacting gap on the bounded-degree
+  chain at strong coupling, fixed time step. Does NOT close cutoff
+  uniformity — the Dobrushin condition degrades as a -> 0. That is now
+  the sharp wall, one level deeper than YM-9 left it.

@@ -1,0 +1,74 @@
+{
+  "anchor": {
+    "circ_status": "CIRC-1: cited, not rederived (as YM-8 Jentzsch)",
+    "references": [
+      "Dobrushin 1968 (uniqueness)",
+      "Foellmer 1982 / Kuensch 1982 (covariance decay)",
+      "Georgii, Gibbs Measures and Phase Transitions, ch. 8"
+    ]
+  },
+  "certificate_type": "YM19_DOBRUSHIN_DOCK_VOLUME_UNIFORM_GAP",
+  "claim_status": "first_certified_m_uniform_interacting_gap_on_the_bounded_overlap_chain__strong_coupling_fixed_time_step",
+  "closes": "volume-uniformity of the interacting gap on the bounded-overlap chain (YM-12 named object; YM-11 gate 2 interacting half, bounded degree) \u2014 at strong coupling, fixed time step",
+  "controls": {
+    "C1_delta_s_two_route": true,
+    "C2_Ka_lower_bound_positive": true,
+    "C3_fail_closed_cells_refused": true,
+    "C4_kappa0_bound_below_exact_free_gap": true,
+    "C5_B_sector_consistent": true,
+    "C6_monotone_in_a_and_kappa": true
+  },
+  "grid": {
+    "a=10,kappa=1/4": {
+      "alpha_hi": "1.28186191271515913666",
+      "alpha_lo": "1.28186191271515913666",
+      "status": "REFUSED_ALPHA_NOT_BELOW_1"
+    },
+    "a=12,kappa=1/8": {
+      "alpha_hi": "0.79088390102848532557",
+      "alpha_lo": "0.79088390102848532557",
+      "gap_per_time_step_lower_bound": "0.23460409691936031514",
+      "gap_per_unit_time_lower_bound": "0.01955034140994669292",
+      "status": "CERTIFIED_UNIFORM_IN_m"
+    },
+    "a=4,kappa=1/16": {
+      "alpha_hi": "1.56152254193253017810",
+      "alpha_lo": "1.56152254193244448217",
+      "status": "REFUSED_ALPHA_NOT_BELOW_1"
+    },
+    "a=6,kappa=1/16": {
+      "alpha_hi": "0.76865203248242048508",
+      "alpha_lo": "0.76865203248242048508",
+      "gap_per_time_step_lower_bound": "0.26311690540348917797",
+      "gap_per_unit_time_lower_bound": "0.04385281756724819632",
+      "status": "CERTIFIED_UNIFORM_IN_m"
+    },
+    "a=6,kappa=1/8": {
+      "alpha_hi": "1.11319227919996337437",
+      "alpha_lo": "1.11319227919996337436",
+      "status": "REFUSED_ALPHA_NOT_BELOW_1"
+    },
+    "a=8,kappa=1/8": {
+      "alpha_hi": "0.86471670786935713610",
+      "alpha_lo": "0.86471670786935713610",
+      "gap_per_time_step_lower_bound": "0.14535333104519257484",
+      "gap_per_unit_time_lower_bound": "0.01816916638064907185",
+      "status": "CERTIFIED_UNIFORM_IN_m"
+    }
+  },
+  "honest_remainder": {
+    "coupling": "small kappa only; weak-coupling/AF regime OPEN",
+    "cutoff": "alpha -> infinity as a -> 0 (delta_t blows up): NOT uniform in the cutoff; continuum OPEN",
+    "scope": "toy chain (2 holonomies per block); 2D lattice, tightness, OS, non-triviality, metric universality, Clay OPEN"
+  },
+  "standing_correction": {
+    "content": "vacuum-tracking inequality is not sufficient for the gap (interleaved free energy != sum of halves, exponential mismatch generic); replaced by the correlation-decay route; YM-18 measurement retained as calibration only",
+    "target": "YM-17 T3"
+  },
+  "theorems": {
+    "T1_dobrushin_coefficient_bound": "C_ij <= 1 - 1/delta^2, delta = sup w / inf w (elementary proof in docstring); delta_s = e^{2kappa} exact, delta_t <= (1+S_a)/(1-S_a) with certified tail",
+    "T2_dobrushin_condition_uniform_in_m": "alpha = 2(1-1/delta_t^2) + 2(1-1/delta_s^2) bounds the row sum on the strip for every m; alpha < 1 certified on the grid, refused on the fail cells",
+    "T3_uniform_gap_via_pinned_anchor": "Dobrushin uniqueness => |Cov| <= osc osc alpha^t/(1-alpha) (cited); extraction lemma (proved): lambda_2/lambda_1 <= alpha for every m; gap >= -log alpha uniformly in volume"
+  },
+  "verdict": "PASS"
+}
