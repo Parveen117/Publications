@@ -1,0 +1,546 @@
+\documentclass[aps,prd,twocolumn,superscriptaddress,nofootinbib]{revtex4-2}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+
+\newcommand{\SU}{\mathrm{SU}(2)}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\begin{document}
+
+\title{A Certified Finite-Cutoff Program for the $\SU$ Theta-Graph
+Transfer Operator: Interacting Positivity, Exact Seam-Integer Counting,
+and a First Uniformity-in-the-Cutoff Theorem}
+
+\author{Monty Dabas}
+\affiliation{Celextrix Private Limited, New Delhi 110086, India}
+\email{montydabas@celextrix.org}
+
+\date{\today}
+
+\begin{abstract}
+We report a finite, machine-certified program studying the spectral gap of
+the interacting transfer operator on the smallest non-trivial closed graph
+with a plaquette --- the theta graph, two vertices joined by three edges
+--- for $\SU$ lattice gauge theory. Every numerical statement below is an
+exact two-sided rational (or exact-integer) enclosure produced by directed
+interval arithmetic or exact linear algebra, never a floating-point
+estimate; every claim carries a machine-checked certificate reproducible
+from the accompanying repository. We prove: (i) the free reduced gap in
+closed form via the exact $\SU$ character spectrum; (ii) a certified
+two-sided interacting gap at every coupling $\kappa \geq 0$ on this graph,
+via a Kill-Lemma-shaped decomposition into a block Schur estimate and a
+positivity statement, both certified rather than assumed; (iii) that the
+first-order crossing direction is an exact rank-one, graph-symmetry
+--protected line, not an artifact of the compression used to compute it;
+(iv) an exact eigenvalue-counting reformulation of the gap via a
+Haynsworth-congruence (Birman--Schwinger-type) construction, giving exact
+integer spectral counts rather than numerical brackets on part of the
+coupling range; (v) the program's first statement that is uniform in the
+lattice cutoff rather than proved at one fixed cutoff, obtained by
+replacing the Wilson action with the heat-kernel action, whose exact
+semigroup property removes discretization error identically; and (vi) that
+the interacting gap is volume- and cutoff-uniform simultaneously on a
+family of graphs built by vertex-gluing theta graphs with no shared
+plaquettes, while the same route provably fails once plaquettes are
+shared, localizing the residual volume obstruction exactly to
+interaction overlap. We are explicit about what this program does not
+establish: it does not touch the infinite-volume, continuum, or
+Osterwalder--Schrader-reconstruction content of the Yang--Mills
+existence-and-mass-gap problem, and none of the results here should be
+read as bearing on that problem beyond providing an exactly verified
+finite testbed and a catalogue of which certification routes do and do
+not survive volume growth.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}\label{sec:intro}
+
+The Yang--Mills existence and mass-gap problem asks for a proof that a
+non-trivial quantum Yang--Mills theory exists on $\mathbb{R}^4$ satisfying
+the Wightman/Osterwalder--Schrader axioms, with a mass gap
+$\Delta > 0$~\cite{JaffeWitten}. That statement concerns the continuum,
+infinite-volume limit of the theory. The present paper does not attempt
+it, and no theorem below should be misread as a step toward the
+Clay-sense predicate.
+
+What we do attempt is narrower and, we argue, still useful: to take the
+smallest closed graph carrying a non-trivial plaquette --- the theta graph
+$B_3$, two vertices joined by three edges, one independent holonomy after
+gauge fixing, three faces --- and certify, with exact arithmetic and
+machine-checked proofs, every spectral statement that can honestly be made
+about its interacting transfer operator at finite lattice spacing. The
+discipline we impose throughout is: \emph{no floating-point number is ever
+part of a verdict}. Every enclosure below is either an exact rational
+computation or a two-sided interval of provably bounded width obtained
+from directed rounding, and every theorem is accompanied by an executable
+certificate, a set of negative controls that must fail when the underlying
+claim is deliberately falsified, and an explicit statement of what remains
+open. This is closer in spirit to interval-certified numerics and to
+formally verified mathematics than to a physics estimate, and we adopt it
+because the target problem is famous partly for how easy it is to
+overclaim.
+
+The paper is organized as a linear certification chain, YM-1 through
+YM-14, each step consuming only what the previous steps proved. We give
+theorem statements, proof sketches sufficient for a reader to reconstruct
+the argument, and pointers to the exact certificate in the accompanying
+repository for full reproducibility. Section~\ref{sec:setup} fixes the
+graph, the gauge-fixed carrier, and the character-expansion toolkit.
+Section~\ref{sec:free} treats the free (non-interacting) reduced gap.
+Section~\ref{sec:interacting} builds the interacting gap at finite
+coupling on the theta graph in stages: a sandwich bound, the first-order
+crossing direction, a symmetry-protection theorem, a certified two-sided
+gap beyond the sandwich's reach, and an exact eigenvalue-counting
+reformulation. Section~\ref{sec:capstone} states the capstone theorem: a
+strictly positive gap at every coupling on the fixed graph, together with
+the honest statement of what ``every coupling, fixed graph'' does not
+give. Section~\ref{sec:uniform} gives the paper's central positive
+result on the harder axis: a gap that is uniform in the lattice cutoff.
+Section~\ref{sec:volume} extends this along the volume axis on a
+restricted family and localizes exactly where the extension fails.
+Section~\ref{sec:gates} audits three structural gates --- gauge
+invariance, volume/infrared behaviour, and regulator universality --- and
+reports two of the three as genuinely split between a closed and an open
+half. Section~\ref{sec:open} states the remaining obligations without
+euphemism. Section~\ref{sec:conclusion} concludes.
+
+\section{Graph, carrier, and character toolkit}\label{sec:setup}
+
+Let $B_3$ be the theta graph: two vertices $v_0,v_1$ joined by three edges
+$e_A,e_B,e_C$ with $\SU$-valued holonomies $A,B,C$. Tree gauge-fixing on
+any connected graph is exact and free of Gribov ambiguity: fixing a
+spanning tree (here, edge $e_C$, so $C=\mathbb{1}$) leaves exactly
+$b_1(B_3)=E-V+1=2$ independent holonomies, here $(A,B)$, with residual
+gauge acting diagonally by conjugation. Gauge-invariant states are
+therefore exactly $L^2(\SU\times\SU)^{\mathrm{Ad}}$, and this fact is
+itself certified rather than assumed (Section~\ref{sec:gates}); every
+capsule in this paper uses it as the carrier.
+
+We work in the character basis. For $g\in\SU$, the irreducible
+characters $\chi_j(g)$, $j\in\{0,\tfrac12,1,\tfrac32,\dots\}$, satisfy the
+exact orthogonality and Clebsch--Gordan pairing relations of $\SU$; in
+particular the triple integral
+\begin{equation}
+\int_{\SU}\chi_p(A)\,\chi_q(B)\,\chi_r(AB^{-1})\,dA\,dB
+= \frac{\delta_{p=q=r}}{d_p},
+\end{equation}
+with $d_p=2p+1$, is exact and rational, and is the single identity that
+governs both the intra- and inter-plaquette seam structure used
+throughout. The Wilson single-link heat kernel has exact character
+expansion $K_\beta(g)=\sum_j d_j\,\lambda_j(\beta)\,\chi_j(g)$ with
+$\lambda_j(\beta)=I_{2j+1}(\beta)/I_1(\beta)$ (modified Bessel functions),
+and the true heat-kernel (semigroup) action used from
+Section~\ref{sec:uniform} on has exact expansion coefficients
+$f_j(\kappa)=2I_{2j+1}(\kappa)/\kappa$ with the exact composition law
+$K_a * K_b = K_{a+b}$ --- an identity the Wilson action does not share,
+which is why the uniformity result of Section~\ref{sec:uniform} requires
+the switch.
+
+All numerical enclosures below use directed rational interval arithmetic
+(no floating point in any verdict); Bessel-function values are enclosed
+via their positive power series with a certified geometric tail bound, and
+transcendental combinations (logs, exponentials) via certified two-sided
+Taylor or continued-fraction enclosures with explicit remainder bounds.
+Every enclosure states its width, and every stage includes at least one
+deliberately falsified control (a wrong-recurrence Bessel tamper, a
+coupling substitution, a sign flip) that must, and does, produce a
+separated bracket.
+
+\section{The free reduced gap}\label{sec:free}
+
+\begin{theorem}[YM-1]\label{thm:ym1}
+For the normalized single-link Wilson convolution operator with
+$\beta=2$, the reduced spectral gap
+\begin{equation}
+\Delta_{\mathrm{red}}(a{=}1,\beta{=}2) = -\log\!\big(I_2(2)/I_1(2)\big)
+\end{equation}
+lies in the certified enclosure
+$[0.836723306231588913050067801054\ldots]$, width $<10^{-30}$, an exact
+rational interval.
+\end{theorem}
+
+Proof: $\lambda_j(\beta)=I_{2j+1}(\beta)/I_1(\beta)$ is exact by the
+character expansion of $K_\beta$; $\lambda_{1/2}\in(0,1)$ strictly
+(control C1), so the gap is strictly positive; a tampered substitution
+$I_2\to I_3$ separates the bracket (control C2); a width budget is
+enforced as a hard failure condition (control C3). This is the program's
+base case and the only place where a bare single-link spectrum, rather
+than a graph transfer operator, is the object of study.
+
+\section{The interacting theta-graph gap at finite coupling}\label{sec:interacting}
+
+The interacting transfer operator on $B_3$ is
+$T_\kappa = M^{1/2}(K\times K)M^{1/2}$, where $K$ is the single-link
+kernel of Section~\ref{sec:setup} and $M=M_\kappa$ is the plaquette
+interaction weight $e^{(\kappa/2)\Tr U}$ on the third (closing) face.
+
+\begin{theorem}[YM-2: sandwich bound]\label{thm:ym2}
+For $0\le\kappa<\kappa_0=\Delta_{\mathrm{red}}/6$, the min-max sandwich
+$m_-T_0\preceq T_\kappa\preceq m_+T_0$ holds with
+$m_+/m_-=e^{6\kappa}$, using $|\Tr U|\le 2$. At $\kappa=1/8$ this
+certifies a reduced gap $\ge 0.08672330623\ldots$.
+\end{theorem}
+
+\begin{theorem}[YM-3: first-order crossing direction]\label{thm:ym3}
+The free top-excited eigenspace is exactly two-dimensional,
+$\{\chi_{1/2}(A),\chi_{1/2}(B)\}$, certified separated from
+$\chi_{1/2}^2,\chi_1,\chi_{3/2}$. The exact theta integral
+$\int\chi_{1/2}(A)\chi_{1/2}(B)\chi_{1/2}(AB^{-1}) = 1/2$ splits this
+doublet at first order into eigenvalues shifted by $\pm\lambda_{1/2}/4$;
+the vacuum first derivative is exactly $0$. Hence
+$r'(0)=\lambda_{1/2}/4\in[0.10828185668\ldots]$, and the crossing
+direction is the single symmetric line
+$\chi_{1/2}(A)+\chi_{1/2}(B)$ --- rank one, and invariant under the
+graph's $A\leftrightarrow B$ symmetry.
+\end{theorem}
+
+\begin{theorem}[YM-4: symmetry protection]\label{thm:ym4}
+Let $S:(A,B)\mapsto(B,A)$. Then $[S,T_\kappa]=0$ for \emph{every}
+$\kappa$, because $\Tr(BA^{-1})=\Tr(AB^{-1})$ on $\SU$ (real characters).
+Consequently the crossing line identified at first order in
+Theorem~\ref{thm:ym3} cannot rotate out of the swap-even sector at any
+coupling: this is a theorem, not a first-order accident. Certified
+finite-$\kappa$ spectral data, obtained from the exact expansion
+$e^{(\kappa/2)\Tr U}=\sum_j d_j f_j(\kappa)\chi_j$ with exact
+Clebsch--Gordan ring arithmetic and a certified truncation remainder,
+shows the swap-even branch rising and the swap-odd branch falling with
+$\kappa$ on the sampled grid.
+\end{theorem}
+
+\begin{theorem}[YM-5: certified two-sided gap beyond the sandwich]\label{thm:ym5}
+Using the exact doubling identity $m_\kappa^2=m_{2\kappa}$, a Weyl
+bound $\|PMQ\|^2\le\lambda_{\max}(Pm_{2\kappa}P-(Pm_\kappa P)^2)$ and
+$\|QSQ\|\le\lambda_{1/2}^2e^{3\kappa}$ certify a two-sided gap at
+couplings beyond $\kappa_0$: at $\kappa=1/8$, ratio $\le0.5003$, gap
+$\ge0.6924$; at $\kappa=1/4$ (past $\kappa_0$), ratio $\le0.5610$, gap
+$\ge0.5781$; at $\kappa=3/10$, gap $\ge0.5332$; the route fails closed at
+$\kappa=1$.
+\end{theorem}
+
+Theorem~\ref{thm:ym5} is, structurally, an unconditional realization of
+the Schur-estimate-plus-positivity (``Kill Lemma'') skeleton of an
+earlier, conjectural manuscript by the author that assumed the existence
+of a vacuum state; no conjecture, claim, or continuum statement from that
+manuscript is imported here (see the repository's \texttt{LINEAGE.md} for
+the explicit non-import ruling). Only the block-Schur-plus-positivity
+\emph{shape} of the argument survived, now realized with certified
+exact-interval arithmetic on the graph carrier.
+
+\begin{theorem}[YM-6/YM-7: exact seam-integer counting]\label{thm:ym67}
+On the native five-dimensional carrier
+$V_5=\{1,\chi_{1/2}(A),\chi_{1/2}(B),\chi_{1/2}(A)\chi_{1/2}(B),
+\chi_{1/2}(AB^{-1})\}$ (all exact eigenvectors of $T_0$, exact Gram
+matrix with a single off-diagonal overlap $1/2$), a Haynsworth
+congruence --- the same finite-to-infinite compression device used
+elsewhere in this program for a Birman--Schwinger-type reduction ---
+turns the gap statement into an \emph{exact integer count}
+$k_\Sigma(\kappa,\mu)=\#\{\mathrm{spec}(T_\kappa)>\mu\}$, computed via two
+interval-LDL inertia evaluations of a rational pencil. Certified exact
+counts: $k=1$ at $(\kappa,\mu)=(1/8,3/5),(1/4,3/5),(1/2,1)$, i.e.\
+$\lambda_2\le\mu<\lambda_1$ \emph{exactly} --- a strictly stronger
+statement than a numerical bracket. Enlarging the carrier to
+$V_7=V_5\cup\{\chi_1(A),\chi_1(B)\}$ (Gram block-diagonal, all seven
+vectors exact $T_0$-eigenvectors) lowers the complement top eigenvalue
+from $\lambda_1$ to $\lambda_1\lambda_{1/2}$ and unlocks the previously
+undecidable cell: exact count $k=1$ at $(7/10,13/10)$. On $V_5$ the cell
+$(7/10,5/4)$ is honestly \textsc{refused}, bracket $[1,5]$: the carrier is
+too small to decide it, and this is reported as a refusal rather than
+resolved by widening tolerance.
+\end{theorem}
+
+\section{Capstone: a gap at every coupling on the fixed graph}\label{sec:capstone}
+
+\begin{theorem}[YM-8]\label{thm:ym8}
+The interacting theta-graph transfer operator has a strictly positive
+spectral gap at \emph{every} coupling $\kappa\ge0$, on the fixed graph
+$B_3$ at fixed lattice spacing.
+\end{theorem}
+
+Proof: a certified pointwise kernel floor
+$k\ge e^{-3\kappa}\big[c_0^{-1}e^{-\beta}\big]^2>0$ (exact enclosures,
+positive-series Bessel bounds) combined with the classical
+Jentzsch/Krein-Rutman theorem~\cite{Jentzsch,KreinRutman} --- cited, not
+rederived, per the citation discipline stated in
+Section~\ref{sec:gates} --- gives a simple Perron eigenvalue, hence a
+strict gap, at every $\kappa$. The window $\kappa\in[0,7/10]$ additionally
+carries the exact counts and enclosures of Theorems~\ref{thm:ym2}
+--\ref{thm:ym67}.
+
+\begin{remark}
+We state as plainly as possible what Theorem~\ref{thm:ym8} does
+\emph{not} say. A positive gap at every fixed coupling on a fixed,
+finite graph is compatible with the gap closing as the graph is refined
+or as the lattice spacing is taken to zero. Nothing here is uniform in
+the cutoff or the volume; that is exactly the content that
+Sections~\ref{sec:uniform}--\ref{sec:volume} address on restricted
+families, and exactly the content that remains open in general
+(Section~\ref{sec:open}). A later result in this program
+(Theorem~\ref{thm:ym12}) further demotes the Jentzsch/Krein-Rutman
+anchor used here to a \emph{simplicity-only} role, once positivity
+itself is re-derived from a manifest square; that correction is recorded
+in the governance ledger of the repository and does not alter
+Theorem~\ref{thm:ym8}'s conclusion.
+\end{remark}
+
+\section{A first uniformity-in-the-cutoff theorem}\label{sec:uniform}
+
+Every result so far is at one fixed lattice spacing $a$. We now obtain
+the program's first result that holds \emph{for every} $a>0$
+simultaneously, by replacing the Wilson action with the heat-kernel
+action $K_a(g)=\sum_j d_j\,e^{-aC_j}\,\chi_j(g)$, $C_j=j(j+1)$ the
+Casimir. This action satisfies the exact semigroup law
+$K_a * K_b = K_{a+b}$: composing $n$ links of spacing $a/n$ reproduces
+one link of spacing $a$ \emph{exactly}, with no discretization error.
+The Wilson action has no such exact composition law, which is why it
+cannot support the argument below.
+
+\begin{theorem}[YM-9]\label{thm:ym9}
+The free reduced gap under the heat-kernel action is
+$\Delta_{\mathrm{free}}(a) = C_{1/2} = 3/4$ exactly, for every $a>0$ ---
+the transcendental $a$-dependence cancels identically. Along the
+declared linear trajectory $\kappa(a)=\theta a$, the interacting gap
+satisfies $\Delta(a,\kappa(a))\ge 3/4-6\theta$ for every $a>0$; at
+$\theta=1/16$ this gives a cutoff-independent gap of exactly $3/8$,
+failing closed at $\theta\ge1/8$. The seam count
+$k(a,e^{-as})$ is exactly $a$-independent (a combinatorial fact about
+which Casimir levels lie below a threshold), so the exact-counting
+machinery of Theorem~\ref{thm:ym67} transports across the entire
+refinement family at once, not just at one spacing. By contrast, at
+fixed Wilson coupling $\beta$ the reduced gap grows like $1/a$ and
+diverges as $a\to0$ --- there is no cutoff-independent gap on this action
+without a compensating running coupling.
+\end{theorem}
+
+We state the honest remainder of Theorem~\ref{thm:ym9} without
+softening. The trajectory $\kappa(a)=\theta a$ is \emph{declared}, not
+derived: the physically motivated trajectory is fixed by asymptotic
+freedom, $\beta\sim\log(1/a)$, which is not modelled here. The graph is
+fixed, so this is a statement about refining the same graph's lattice
+spacing, not about infinite-volume growth. The heat-kernel action is
+itself a choice among a regulator class (Section~\ref{sec:gates}
+addresses which parts of the program are regulator-independent). And
+$\Delta$ throughout is a reduced-graph transfer-operator gap, not a
+reconstructed physical mass gap in any continuum sense. What has moved is
+narrow but real: one structural gate --- uniformity in the cutoff ---
+goes from wholly untouched to touched, with an exact theorem, on a toy
+carrier.
+
+\section{Volume: where uniformity extends and where it provably fails}\label{sec:volume}
+
+\begin{theorem}[YM-12, volume half]\label{thm:ym12}
+Let $L_m$ be the graph formed by vertex-gluing $m$ copies of the theta
+graph with \emph{no shared plaquettes}. The transfer operator
+tensor-factorizes exactly across the $m$ copies, so the ratio
+$\lambda_2/\lambda_1$ is $m$-independent, and combined with
+Theorem~\ref{thm:ym9}, $\Delta(L_m,a,a/16)\ge3/8$ for \emph{every} $m$
+and \emph{every} $a$ --- a gap uniform in volume and cutoff
+simultaneously, on this family.
+\end{theorem}
+
+This closes the interacting half of the volume gate audited in
+Theorem~\ref{thm:ym11} below, but only on the no-shared-face family.
+Theorem~\ref{thm:ym11} shows the same sandwich-style route fails, exactly
+and quantifiably, once faces are shared; we record the two extremes as
+the boundaries of a genuine open problem, not as a resolved one.
+
+The same paper (YM-12) also re-derives the positivity underlying
+Theorems~\ref{thm:ym5}--\ref{thm:ym8} from a manifest square,
+$T_\kappa(a)=S^*S$ with $S=[K_{a/2}\otimes K_{a/2}]\,m_{\kappa/2}$ ---
+both factors being the program's own halved-parameter objects from
+Theorem~\ref{thm:ym9}'s semigroup property and Theorem~\ref{thm:ym5}'s
+doubling identity. This demotes the classical Jentzsch/Krein-Rutman
+citation used in Theorem~\ref{thm:ym8} to a role of certifying only
+\emph{simplicity} of the top eigenvalue, with positivity itself now
+square-sourced from within the program's own objects rather than
+imported.
+
+\section{Three structural gates, audited}\label{sec:gates}
+
+We close the finite program with an audit of three structural questions
+on the toy-carrier family $B_n$ (the ``$n$-banana'' graph: two vertices,
+$n$ edges, $b_1=n-1$ holonomies, $F(n)=n(n-1)/2$ plaquettes; $B_3$ is the
+theta graph used throughout).
+
+\begin{theorem}[YM-11, Gate 1 --- gauge: closed]\label{thm:ym11a}
+Tree gauge-fixing on a connected graph is exact, with no Gribov
+obstruction: gauge-invariant states are exactly
+$L^2(G^{b_1})^{\mathrm{Ad}}$. For $B_3$ this certifies, rather than
+assumes, the carrier used in every capsule above.
+\end{theorem}
+
+\begin{theorem}[YM-11, Gate 2 --- volume/infrared: split]\label{thm:ym11}
+The free reduced gap $C_{1/2}=3/4$ is volume- and cutoff-uniform for
+every $n$ and $a$: closed. The interacting sandwich bound gives
+$\Delta\ge C_{1/2}-2F(n)\theta$, which degrades \emph{quadratically} in
+$n$: at $\theta=1/16$ the certified bounds are $3/8$ ($n{=}3$), exactly
+$0$ ($n{=}4$), and $-1/2$ ($n{=}5$). The sandwich/envelope route is
+therefore proven \emph{insufficient} for volume uniformity beyond
+Theorem~\ref{thm:ym12}'s no-shared-face restriction, with the critical
+volume computed exactly rather than estimated.
+\end{theorem}
+
+\begin{theorem}[YM-11, Gate 3 --- regulator universality: split]\label{thm:ym11b}
+For the whole regulator class $K=\sum_j d_j c_j\chi_j$ with $c_j>0$
+(Wilson, heat-kernel, and others), the \emph{counting} layer --- content
+grading, the exact multiplicity law $m(j_1,j_2)=\min(2j_1,2j_2)+1$ on the
+Ad-invariant sector, carrier dimensions, and the source-restriction
+``blindness'' ledger of Theorem~\ref{thm:ym10} below --- depends only on
+$\SU$ representation theory and is therefore regulator-independent:
+closed. The \emph{metric} layer, i.e.\ the numerical value of the gap,
+genuinely differs between regulators (witnessed directly by the Wilson
+vs.\ heat-kernel contrast in Theorem~\ref{thm:ym9}) and remains open.
+\end{theorem}
+
+\begin{theorem}[YM-10, source-restriction ledger]\label{thm:ym10}
+Every compressed carrier $V$ used above is, in the sense of the
+companion source-restriction framework, a restriction of the full target
+space; the relevant question is not tightness of the resulting bound but
+whether $V$ is \emph{blind} to the target. The exact multiplicity law
+above independently reproduces $\dim V_5=5$ and $\dim V_7=7$ and
+re-derives the two-dimensionality of the $(\tfrac12,\tfrac12)$ sector
+used in Theorem~\ref{thm:ym3} from representation theory rather than from
+the Gram matrix. The exact probe count $b(V,s)=\mathrm{rank}(\Pi_s\mid
+\ker E)$ shows $b(V_5,s)=0$ for $s\le2$ --- the carrier used in
+Theorem~\ref{thm:ym67} is exactly blindness-free within its own certified
+threshold window, which is why that choice of carrier was correct and not
+merely convenient. At $s=3$, $V_5$ requires six probes and $V_7$ four;
+blindness is nonincreasing along $V_5\subset V_7\subset V_9$ with
+nonnegative stage increments; and the whole ledger, depending only on
+content and Casimir level, is exactly $a$-independent, so one ledger
+covers the entire refinement family of Theorem~\ref{thm:ym9}. This ledger
+is exact for the free target only; on interacting faces the content
+grading mixes, so $b(V,s)$ is a lower bound there, and closing that gap
+is an explicit named obligation of the program, not a silent one.
+\end{theorem}
+
+We record one self-correction as part of the certification discipline
+itself: an earlier draft of Theorem~\ref{thm:ym9}'s uniform seam count
+(T4) counted spectral \emph{contents}, while the counting statement of
+Theorem~\ref{thm:ym67} counts \emph{eigenvalues with multiplicity}; at
+the relevant sector these differ ($4$ versus $5$). Both quantities are
+independently $a$-independent, so the uniformity conclusion of
+Theorem~\ref{thm:ym9} is unaffected, but the arithmetic was wrong and is
+corrected here. We regard catching and publishing this kind of error,
+rather than avoiding it, as part of what the certification discipline is
+for.
+
+\section{Interaction overlap between plaquettes}\label{sec:overlap}
+
+\begin{theorem}[YM-14]\label{thm:ym14}
+For a bridged pair of theta-graph blocks coupled by a single shared
+face, $e^{(\kappa/2)\Tr(A_1A_2^{-1})}$ --- the minimal case of genuine
+plaquette overlap not covered by Theorem~\ref{thm:ym12}'s no-sharing
+family --- the inter-block overlap seam is exactly rank-one and
+transported by the same graph symmetry and the same theta integral
+($1/2$) that governs the intra-block seams of Theorem~\ref{thm:ym3}: one
+identity governs both. On the orthonormal carrier
+$W_5=\{1,\chi_{1/2}(A_1),\chi_{1/2}(A_2),\chi_{1/2}(B_1),\chi_{1/2}(B_2)\}$,
+exact counts $k=1$ are certified at
+$(\kappa,\mu)=(1/8,3/5),(1/4,7/10),(1/2,9/10)$; at $\kappa=1$ the carrier
+certifies count $0$ at $\mu=3/2$ (the compressed vacuum value is below
+$\mu$), which we report as a carrier limitation rather than resolve by
+enlarging tolerance. The first-order overlap price is exactly
+$\kappa\lambda/4$, carried by a single swap-even line, in direct analogy
+with the single-block crossing direction of Theorem~\ref{thm:ym3}.
+\end{theorem}
+
+This opens, but does not close, the object named by
+Theorem~\ref{thm:ym11}'s Gate 2 as the real residual obstruction:
+Theorem~\ref{thm:ym12} is uniform on no-shared-face volume growth,
+Theorem~\ref{thm:ym11} shows the sandwich route fails on complete
+sharing, and a physically realistic bounded-degree lattice sits strictly
+between these two certified extremes. The next object named by the
+program is a one-dimensional block-transfer dock for a chain of
+bounded, but nonzero, overlap; it is not attempted here.
+
+\section{What remains open}\label{sec:open}
+
+We list the open content without euphemism, since the value of this
+program depends on the list being accurate.
+
+\begin{itemize}
+\item \textbf{Volume, general lattice.} Theorem~\ref{thm:ym12} is uniform
+only on the no-shared-face family; Theorem~\ref{thm:ym11} shows the
+sandwich route fails, with an exactly computed critical volume, once
+faces are shared; the bounded-overlap case of physical interest
+(Theorem~\ref{thm:ym14}) is opened but not closed.
+\item \textbf{Regulator universality, metric layer.} Only the
+combinatorial/counting layer of universality (Theorem~\ref{thm:ym11b})
+is closed; the numerical gap value differs by regulator and the
+asymptotically-free running-coupling trajectory needed to connect the
+heat-kernel result to the physical continuum limit is declared, not
+derived (Theorem~\ref{thm:ym9}).
+\item \textbf{Osterwalder--Schrader reconstruction.} No statement here
+constructs, or claims to construct, a continuum Wightman theory from
+these finite-graph transfer operators.
+\item \textbf{Non-triviality and the Clay predicate.} None of the above
+bears on the existence-and-mass-gap predicate of the Clay Millennium
+Problem as stated in~\cite{JaffeWitten}; that problem concerns the
+continuum, infinite-volume limit, which this program has not
+addressed and does not claim to have addressed.
+\end{itemize}
+
+\section{Conclusion}\label{sec:conclusion}
+
+We have given, on the smallest graph carrying a Yang--Mills plaquette, a
+fully exact-arithmetic, machine-certified account of the interacting
+transfer operator's spectral gap: a strictly positive gap at every
+coupling on the fixed graph (Theorem~\ref{thm:ym8}), an exact
+eigenvalue-counting reformulation on part of the coupling range
+(Theorem~\ref{thm:ym67}), the program's first cutoff-uniform theorem
+(Theorem~\ref{thm:ym9}), and a volume-uniform extension on a restricted
+family with the extension's exact failure point identified on the
+complementary family (Theorems~\ref{thm:ym12}, \ref{thm:ym11}). Each
+result is accompanied by negative controls that must, and do, fail when
+the claim is deliberately falsified, and each is reproducible from the
+certificates and scripts in the accompanying repository. The value we
+claim for this program is not proximity to the continuum problem, which
+remains entirely open, but a fully verified, error-caught, and
+error-corrected finite testbed --- together with a precise catalogue,
+Section~\ref{sec:open}, of exactly which structural gates a genuine
+continuum proof would still need to close.
+
+\section*{Data and code availability}
+
+All certificates, verification scripts, and test suites are available in
+the public repository \texttt{Parveen117/Publications}, directory
+\texttt{papers/yang-mills-certified-benchmark/}. Each theorem above
+corresponds to a numbered script (\texttt{ym1\_certified\_gap.py}
+through \texttt{ym14\_overlap\_dock.py}) whose execution regenerates and
+pins the stated certificate; the repository's continuous-integration
+workflow reruns and pin-diffs every certificate on each change.
+
+\begin{thebibliography}{9}
+
+\bibitem{JaffeWitten}
+A.~Jaffe and E.~Witten, ``Quantum Yang--Mills Theory,'' Clay Mathematics
+Institute Millennium Prize Problem description (2000).
+
+\bibitem{Jentzsch}
+R.~Jentzsch, ``Über Integralgleichungen mit positivem Kern,''
+J.\ Reine Angew.\ Math.\ \textbf{141}, 235 (1912).
+
+\bibitem{KreinRutman}
+M.~G.~Krein and M.~A.~Rutman, ``Linear operators leaving invariant a
+cone in a Banach space,'' Uspehi Mat.\ Nauk \textbf{3}, 3 (1948);
+English translation, Amer.\ Math.\ Soc.\ Translation \textbf{26} (1950).
+
+\bibitem{ReedSimonIV}
+M.~Reed and B.~Simon, \emph{Methods of Modern Mathematical Physics IV:
+Analysis of Operators} (Academic Press, 1978), Theorem XIII.43.
+
+\bibitem{Haynsworth}
+E.~V.~Haynsworth, ``Determination of the inertia of a partitioned
+Hermitian matrix,'' Linear Algebra Appl.\ \textbf{1}, 73 (1968).
+
+\bibitem{Wilson}
+K.~G.~Wilson, ``Confinement of quarks,'' Phys.\ Rev.\ D \textbf{10},
+2445 (1974).
+
+\end{thebibliography}
+
+\end{document}
