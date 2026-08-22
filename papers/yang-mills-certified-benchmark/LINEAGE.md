@@ -273,3 +273,13 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - Trial-state discipline: the truncation lives in the trial (no error),
   the rung truncation is one-sided by positivity, the denominator is an
   exact interval — nothing is a shadow certificate.
+
+## YM-32 (Aug 22 2026): dressed single-insertion energy
+
+- CONSUMES: YM-30/31 engine and trial discipline, YM-15 bracket,
+  YM-21 tiling law (KMS hopping explains the O(r^2) excess over lambda).
+- RESULT: engine handles rung insertions (4-valent vertices by CG
+  reduction); the dressed J=1/2 excitation/vacuum ratio is an exact bulk
+  constant, uniform in m. Lower-bound-side only; item 3 still open.
+- Build note: predicted E_bulk < lambda; engine gave E_bulk > lambda by
+  O(r^2). Claim corrected, certificate records the measured excess.
