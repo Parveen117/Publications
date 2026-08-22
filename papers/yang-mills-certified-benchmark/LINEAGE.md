@@ -283,3 +283,16 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   constant, uniform in m. Lower-bound-side only; item 3 still open.
 - Build note: predicted E_bulk < lambda; engine gave E_bulk > lambda by
   O(r^2). Claim corrected, certificate records the measured excess.
+
+## YM-33 (Aug 22 2026): t-row fabric engine and the exact time two-point function
+
+- CONSUMES: YM-30/32 engine (generalised to t rails, 5-leg vertices by
+  two CG fusions), YM-31 trial discipline, YM-15 r for the r^2 law.
+- RESULT: second order of the time expansion of the dressed excitation
+  ratio is an exact bulk constant, m-uniform, edges localised with
+  increments scaling as r^2 per unit distance (certified window).
+- Build notes: (i) first run used w_pt^2 on the middle rail — wrong: the
+  rail shared by two T0 factors carries W once; (ii) an apparent linear
+  drift of delta_2 in m was the boundary at distance 2 — at distances
+  3 and 4 it decays geometrically (1.3e-9, 1.6e-12 at kappa = 1/8).
+  Both corrected before pinning.
