@@ -137,3 +137,15 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   determinant 8 untwisted and norm 18 twisted (test).
 - Carrier layer of YM-1..18 is now NATIVE except the declared Haar <->
   Phi_Sigma identification. No number changed. No gap claimed.
+
+## YM-21 (Aug 22 2026): the tiling law
+
+- STANDING CORRECTION: YM-F1's "native form of YM-21" was ill-posed
+  (boundary closure never bounds interior residue — the fabric
+  appendix's own principle); killed by witness (g, g^{-1}) and replaced.
+- DERIVED, not docked: YM-15's compressed A-block is the leading-order
+  tiling transfer of the 2D fabric; YM-15/20's m-uniform bound is a
+  tiling count. Spatial decay exact via Stokes sub-telescoping.
+- OPEN: full-order time decay uniform in m = convergence of the
+  face-coefficient tiling expansion (native cluster statement).
+  Expansion parameter certified small and decreasing (r_j ladder).

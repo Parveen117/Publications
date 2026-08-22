@@ -1,0 +1,103 @@
+{
+  "certificate_type": "YM21_TILING_LAW_NATIVE_DECAY_ON_THE_FABRIC",
+  "claim_status": "spatial_decay_exact_m_uniform__time_decay_leading_order_m_uniform__full_order_OPEN",
+  "coefficient_ladder_r_half_r_1_r_3half": {
+    "1": [
+      "0.2401937238",
+      "0.0392251045",
+      "0.0048430967"
+    ],
+    "1/2": [
+      "0.1237179282",
+      "0.0102565737",
+      "0.0006390429"
+    ],
+    "1/4": [
+      "0.0623378727",
+      "0.0025940363",
+      "0.0000810003"
+    ],
+    "1/8": [
+      "0.0312296747",
+      "0.0006504065",
+      "0.0000101606"
+    ]
+  },
+  "controls": {
+    "C1_negative_witness": true,
+    "C2_sub_telescoping_exact": true,
+    "C3_entry_is_face_product": true,
+    "C4_tiling_powers_in_bracket": true,
+    "C5_ladder_decreasing": true,
+    "C6_unpaired_edge_breaks": true
+  },
+  "grid": {
+    "1": {
+      "leading_order_time_decay_rate_uniform_in_m": "0.346763931866310",
+      "r": "0.240193723870089",
+      "spatial_rate_-log_r": "1.426309498444936",
+      "tiling_powers_checked_m": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "1/2": {
+      "leading_order_time_decay_rate_uniform_in_m": "0.588013299548989",
+      "r": "0.123717928278320",
+      "spatial_rate_-log_r": "2.089751076550211",
+      "tiling_powers_checked_m": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "1/4": {
+      "leading_order_time_decay_rate_uniform_in_m": "0.711885686098901",
+      "r": "0.062337872728278",
+      "spatial_rate_-log_r": "2.775186128851812",
+      "tiling_powers_checked_m": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "1/8": {
+      "leading_order_time_decay_rate_uniform_in_m": "0.774243639369945",
+      "r": "0.031229674795457",
+      "spatial_rate_-log_r": "3.466382883986948",
+      "tiling_powers_checked_m": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    }
+  },
+  "standing_correction": {
+    "content": "boundary residue cannot control face residue (witness g, g^{-1}); replaced by the tiling law",
+    "target": "YM-F1 'native form of YM-21'"
+  },
+  "theorems": {
+    "T1_negative_witness": true,
+    "T2_spatial_tiling_law": "sub-telescoping exact; YM-15 entry = r^{faces crossed}; spatial decay exactly geometric, rate -Log r, all m",
+    "T3_time_decay_leading_order": "leading tiling two-point = (lambda KMS_m(r))^t; bracketed by lambda^t((1-/+r)/(1+/-r))^t for every m => rate >= -Log(lambda) - A_Sigma(r) uniformly \u2014 YM-15/20 bound DERIVED as a tiling count",
+    "T4_named_remainder": "higher-content and branching tilings; expansion parameter = face-coefficient ladder r_j (certified decreasing); uniform convergence = native cluster statement, OPEN"
+  },
+  "verdict": "PASS"
+}
