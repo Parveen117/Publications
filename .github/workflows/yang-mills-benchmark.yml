@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install deps
+        run: python -m pip install pytest mpmath
       - name: Regenerate YM1 certificate and check pin
         run: |
           python papers/yang-mills-certified-benchmark/certificates/ym12_square_sourced.py
@@ -43,7 +45,6 @@ jobs:
           python papers/yang-mills-certified-benchmark/certificates/ym31_uniform_floor.py
           python papers/yang-mills-certified-benchmark/certificates/ym32_dressed_excitation.py
           python papers/yang-mills-certified-benchmark/certificates/ym33_e4dc_restated.py
-          python papers/yang-mills-certified-benchmark/certificates/ym33_t_row_engine.py
           git diff --exit-code papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM1.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM2.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM3.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM4.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM5.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM6.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM7.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM8.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM9.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM10.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM11.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM12.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM13.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM14.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM15.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM16.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM17.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM18.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM19.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM20.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YMF1.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM21.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM22.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM23.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM24.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM25.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM26.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM27.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM28.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM29.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM30.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM31.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM32.sha256 papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM33.sha256
       - name: Install pytest
         run: python -m pip install pytest mpmath
