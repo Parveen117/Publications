@@ -257,6 +257,7 @@ def stokes_product(faces):
 
 
 def run():
+    random.seed(20260822)   # reseed: pins must not depend on test order
     # ---- T1 / C1: R, iota K, iota RK anticommute, square to -I
     iK = mscale(K_, IOTA)
     iRK = mscale(RK, IOTA)

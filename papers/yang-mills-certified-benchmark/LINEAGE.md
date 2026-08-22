@@ -162,3 +162,8 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   arithmetic showed approach-from-above (the limit is a uniform lower
   bound) — controls corrected to what the arithmetic says (YM-14 C4
   lesson again).
+- CI LESSON (b2291d1 failed on hosted Tests, pins passed): YM-F1/YM-21
+  seeded the shared `random` module at import; in the full pytest run
+  the test order changed the stream and YM-F1's pinned demo drifted.
+  Fix: reseed inside run(). Pins unchanged. Rule: a pinned certificate
+  must be a pure function of its inputs, never of module import order.

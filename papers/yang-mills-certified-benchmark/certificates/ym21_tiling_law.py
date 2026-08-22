@@ -120,6 +120,7 @@ def mat_pow_rows(M, t):
 
 
 def run():
+    random.seed(20260822)   # reseed: pins must not depend on test order
     # ---- T1 / C1 negative witness
     c1 = True
     for _ in range(20):
