@@ -149,3 +149,16 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - OPEN: full-order time decay uniform in m = convergence of the
   face-coefficient tiling expansion (native cluster statement).
   Expansion parameter certified small and decreasing (r_j ladder).
+
+## YM-22 (Aug 22 2026): the tiling rate survives the cutoff
+
+- CONSUMES: YM-9 heat-kernel family + declared trajectory; YM-21 T3
+  tiling transfer (scalar in lambda); YM-20 native odd-series log.
+- RESULT: at leading tiling order the chain's rate per unit time is
+  uniform in m AND a along kappa = theta a, infimum exactly 3/4 - theta/2.
+  First native touch of the cutoff wall. Full order OPEN: in the limit
+  only j = 1/2 branching tilings survive (r_j/a -> 0 for j >= 1).
+- Build note: I first wrote the convergence as approach-from-below; the
+  arithmetic showed approach-from-above (the limit is a uniform lower
+  bound) — controls corrected to what the arithmetic says (YM-14 C4
+  lesson again).

@@ -1,0 +1,107 @@
+{
+  "certificate_type": "YM22_TILING_RATE_UNIFORM_IN_VOLUME_AND_CUTOFF",
+  "claim_status": "leading_tiling_order_only__uniform_in_m_and_a_along_declared_trajectory__full_order_OPEN",
+  "controls": {
+    "C1_time_log_exact": true,
+    "C2_gamma_ge_limit_and_nonincreasing": true,
+    "C3_beats_ym9_sandwich": true,
+    "C4_kms_bracket_with_lambda_a": true,
+    "C5_theta_2_refused_theta_1_ok": true,
+    "C6_higher_coefficients_vanish": true,
+    "C7_limit_is_infimum_within_1e-10": true
+  },
+  "grid": {
+    "1": {
+      "excess_above_limit_23_32": "0.000002542759037",
+      "gamma_hi": "0.718752542759037",
+      "gamma_lo": "0.718752542759037",
+      "ym9_sandwich_bound": "0.375000"
+    },
+    "1/10": {
+      "excess_above_limit_23_32": "0.000000025431277",
+      "gamma_hi": "0.718750025431277",
+      "gamma_lo": "0.718750025431277",
+      "ym9_sandwich_bound": "0.375000"
+    },
+    "1/100": {
+      "excess_above_limit_23_32": "0.000000000254313",
+      "gamma_hi": "0.718750000254313",
+      "gamma_lo": "0.718750000254313",
+      "ym9_sandwich_bound": "0.375000"
+    },
+    "1/1000": {
+      "excess_above_limit_23_32": "0.000000000002543",
+      "gamma_hi": "0.718750000002543",
+      "gamma_lo": "0.718750000002543",
+      "ym9_sandwich_bound": "0.375000"
+    },
+    "1/10000": {
+      "excess_above_limit_23_32": "0.000000000000025",
+      "gamma_hi": "0.718750000000025",
+      "gamma_lo": "0.718750000000025",
+      "ym9_sandwich_bound": "0.375000"
+    },
+    "1/100000": {
+      "excess_above_limit_23_32": "0.000000000000000",
+      "gamma_hi": "0.718750000000000",
+      "gamma_lo": "0.718750000000000",
+      "ym9_sandwich_bound": "0.375000"
+    },
+    "1/1000000": {
+      "excess_above_limit_23_32": "0.000000000000000",
+      "gamma_hi": "0.718750000000000",
+      "gamma_lo": "0.718750000000000",
+      "ym9_sandwich_bound": "0.375000"
+    }
+  },
+  "higher_coeff_per_unit_time_r1_r32": {
+    "1": [
+      "0.000162720690",
+      "0.000001271193"
+    ],
+    "1/10": [
+      "0.000016276001",
+      "0.000000012715"
+    ],
+    "1/100": [
+      "0.000001627604",
+      "0.000000000127"
+    ],
+    "1/1000": [
+      "0.000000162760",
+      "0.000000000001"
+    ],
+    "1/10000": [
+      "0.000000016276",
+      "0.000000000000"
+    ],
+    "1/100000": [
+      "0.000000001627",
+      "0.000000000000"
+    ],
+    "1/1000000": [
+      "0.000000000162",
+      "0.000000000000"
+    ]
+  },
+  "honest_remainder": "leading tiling order; full-order convergence (branching j=1/2 tilings) OPEN; trajectory declared; not the physical mass gap; Clay OPEN",
+  "limit_bracket_at_smallest_a": [
+    "0.71875000000000",
+    "0.71875000000000"
+  ],
+  "theorems": {
+    "T1_exact_time_face_log": "-Log(lambda_a) = 3a/4 exactly",
+    "T2_cutoff_uniform_leading_rate": "gamma(a) = 3/4 - A_Sigma(r(theta a))/a in [23/32, 3/4] over six decades: the limit is a uniform lower bound in the cutoff",
+    "T3_volume_uniform_at_every_cutoff": "KMS bracket with lambda_a holds for m = 2..8 at a = 1, 1e-3, 1e-6",
+    "T4_trajectory_ceiling": "theta < 3/2 in the limit; theta = 2 refused",
+    "T5_expansion_parameter_in_the_cutoff": "r_1/a, r_3/2/a -> 0; only j = 1/2 branching survives a -> 0"
+  },
+  "trajectory": {
+    "kappa": "theta * a",
+    "limit_rate": "23/32",
+    "limit_rate_dec": "0.718750",
+    "theta": "1/16",
+    "ym9_sandwich_rate": "3/8"
+  },
+  "verdict": "PASS"
+}
