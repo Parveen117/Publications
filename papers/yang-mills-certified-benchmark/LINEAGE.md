@@ -233,3 +233,16 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   Remaining: E4D-C on superpositions (quadratic form) = theorum/28
   hypothesis 3. Build note: first run used unnormalised Bessel for f_0
   and a tamper test that could not bite; both corrected.
+
+## YM-29 (Aug 22 2026): closed-form vacuum floor for every m
+
+- CONSUMES: YM-F1 fabric (faces as independent contents, T01-E1 product
+  content), YM-4 fusion rule, YM-15 lambda, YM-16 dock, YM-28 rates.
+- RESULT: face-independence lemma; single-face-excitation Rayleigh floor
+  in closed form for all m (Q_m > 1, linear for large m). Honest: does
+  not move m*; the true-rate floor and the E4D-C quadratic form both
+  reduce to one missing engine — exact rational 2-row (ladder)
+  recoupling evaluations. YM-30 named with that spec.
+- Build note: my first asymptotic claim (linear law visible at m=60)
+  was wrong — the linear regime starts at m ~ 1/(4 lambda^2 r^2);
+  control corrected to m = 2000.
