@@ -223,3 +223,13 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   Haar shadow is RH's own T01-E6; recognition energy = vacuum form.
 - RULE: before any new derivation, check RH-Framework LEDGER and
   theorum/ for a proved statement to cite.
+
+## YM-28 (Aug 22 2026): T01-E4D on the chain
+
+- CONSUMES: RH-Framework T01-E4D (PR #19), YM-15 engine (extended to
+  content 8), YM-16 f_0 normalisation, YM-18 measured rates, YM-27 slack.
+- RESULT: mean law exact on single insertions; deviation geometric and
+  per-insertion on basis states; E4D rate derives the measured slack.
+  Remaining: E4D-C on superpositions (quadratic form) = theorum/28
+  hypothesis 3. Build note: first run used unnormalised Bessel for f_0
+  and a tamper test that could not bite; both corrected.

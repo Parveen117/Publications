@@ -1,0 +1,50 @@
+{
+  "certificate_type": "YM28_T01_E4D_ON_THE_CHAIN",
+  "claim_status": "mean_law_exact_on_single_insertions__deviation_per_insertion_on_basis_states__E4D_explains_measured_slack__superposition_statement_OPEN",
+  "controls": {
+    "C1_single_insertion_formal_identity": true,
+    "C2_two_insertion_ratio_exact": true,
+    "C3_per_insertion_bound_S_le_4": true,
+    "C3b_tighter_tamper_bound_violated": true,
+    "C4_E4D_rate_explains_measured_rate": true,
+    "C5_reproduces_YM27_slack": true,
+    "C6_engine_tamper_bites": true
+  },
+  "grid": {
+    "1/2": {
+      "E4C_over_E4D": "15.547",
+      "E4D_share_of_true_rate": "0.8714",
+      "m_star_E4D_projected_CONDITIONAL": 50,
+      "m_star_sup_route": 4,
+      "per_insertion_factor_1+2r1": "1.07845020",
+      "phi_E4C_sup_per_face": "0.46891108",
+      "phi_E4D_per_face": "0.03016068",
+      "phi_measured_YM18": "3461/100000",
+      "r_1_at_2kappa": "0.03922510"
+    },
+    "1/4": {
+      "E4C_over_E4D": "31.283",
+      "E4D_share_of_true_rate": "0.8901",
+      "m_star_E4D_projected_CONDITIONAL": 200,
+      "m_star_sup_route": 7,
+      "per_insertion_factor_1+2r1": "1.02051314",
+      "phi_E4C_sup_per_face": "0.24219764",
+      "phi_E4D_per_face": "0.00774210",
+      "phi_measured_YM18": "4349/500000",
+      "r_1_at_2kappa": "0.01025657"
+    },
+    "1/8": {
+      "E4C_over_E4D": "63.143",
+      "E4D_share_of_true_rate": "0.8951",
+      "m_star_E4D_projected_CONDITIONAL": ">=400 (cap)",
+      "m_star_sup_route": 13,
+      "per_insertion_factor_1+2r1": "1.00518807",
+      "phi_E4C_sup_per_face": "0.12304751",
+      "phi_E4D_per_face": "0.00194868",
+      "phi_measured_YM18": "2177/1000000",
+      "r_1_at_2kappa": "0.00259403"
+    }
+  },
+  "source": "RH-Framework T01-E4D (PR #19) applied to the content-1/2 memory channel",
+  "verdict": "PASS"
+}
