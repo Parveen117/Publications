@@ -1,0 +1,220 @@
+{
+  "certificate_type": "YM15_CHAIN_CLOSED_FORM_BLOCK_TRANSFER_DOCK",
+  "claim_status": "first_m_uniform_statement_in_overlap_regime_A_line_carrier_only",
+  "controls": {
+    "C1_symbolic_engine_equals_closed_form_m2_to_8": true,
+    "C2_pairing_normalisation_tamper_breaks_identity": true,
+    "C2b_no_f1_monomial_on_diagonal": true,
+    "C3_free_limit_identity": true,
+    "C4_tridiagonal_inverse_identity": true,
+    "C5_per_m_monotone_below_ceiling": true,
+    "C6_fail_closed_kappa_2": true
+  },
+  "convention": {
+    "T0": "Wilson beta = 2, lambda = I2(2)/I1(2) (YM-14 convention)",
+    "carrier": "W_{m+1} = {1, chi12(A_1..A_m)}, orthonormal, exact T0 eigenvectors; B-contents inert by parity",
+    "normalisation": "rho = (A-line top)/(vacuum) of the COMPRESSED transfer; gap = -log rho (YM-5/6 convention)"
+  },
+  "grid": {
+    "1": {
+      "gap_lower_bound_all_m": "0.34676393186631084341",
+      "lammax_KMS_m_brackets": {
+        "2": [
+          "1.240193723870",
+          "1.240193723870"
+        ],
+        "3": [
+          "1.369754375787",
+          "1.369754375788"
+        ],
+        "4": [
+          "1.445684578888",
+          "1.445684578888"
+        ],
+        "5": [
+          "1.493442365230",
+          "1.493442365231"
+        ],
+        "6": [
+          "1.525224205612",
+          "1.525224205613"
+        ],
+        "7": [
+          "1.547352972843",
+          "1.547352972844"
+        ],
+        "8": [
+          "1.563337406122",
+          "1.563337406122"
+        ]
+      },
+      "r_hi": "0.2401937238700897411052206",
+      "r_lo": "0.2401937238700897411052206",
+      "rho_uniform_ceiling_hi": "0.70697220216850419314",
+      "rho_uniform_floor_lo": "0.26535607369521147130",
+      "status": "CERTIFIED_UNIFORM_IN_m"
+    },
+    "1/2": {
+      "gap_lower_bound_all_m": "0.58801329954898904594",
+      "lammax_KMS_m_brackets": {
+        "2": [
+          "1.123717928278",
+          "1.123717928278"
+        ],
+        "3": [
+          "1.182783930888",
+          "1.182783930889"
+        ],
+        "4": [
+          "1.214588448191",
+          "1.214588448192"
+        ],
+        "5": [
+          "1.233447162129",
+          "1.233447162129"
+        ],
+        "6": [
+          "1.245475759678",
+          "1.245475759678"
+        ],
+        "7": [
+          "1.253590417464",
+          "1.253590417464"
+        ],
+        "8": [
+          "1.259311603349",
+          "1.259311603349"
+        ]
+      },
+      "r_hi": "0.1237179282783207305848523",
+      "r_lo": "0.1237179282783207305848523",
+      "rho_uniform_ceiling_hi": "0.55542966168490085404",
+      "rho_uniform_floor_lo": "0.33775540040480945727",
+      "status": "CERTIFIED_UNIFORM_IN_m"
+    },
+    "1/4": {
+      "gap_lower_bound_all_m": "0.71188568609890197033",
+      "lammax_KMS_m_brackets": {
+        "2": [
+          "1.062337872728",
+          "1.062337872728"
+        ],
+        "3": [
+          "1.090123479339",
+          "1.090123479340"
+        ],
+        "4": [
+          "1.104430809921",
+          "1.104430809922"
+        ],
+        "5": [
+          "1.112668062735",
+          "1.112668062736"
+        ],
+        "6": [
+          "1.117815965159",
+          "1.117815965160"
+        ],
+        "7": [
+          "1.121237970828",
+          "1.121237970829"
+        ],
+        "8": [
+          "1.123624071608",
+          "1.123624071609"
+        ]
+      },
+      "r_hi": "0.0623378727282785401145478",
+      "r_lo": "0.0623378727282785401145478",
+      "rho_uniform_ceiling_hi": "0.49071798438022591815",
+      "rho_uniform_floor_lo": "0.38229568458964979392",
+      "status": "CERTIFIED_UNIFORM_IN_m"
+    },
+    "1/8": {
+      "gap_lower_bound_all_m": "0.77424363936994588581",
+      "lammax_KMS_m_brackets": {
+        "2": [
+          "1.031229674794",
+          "1.031229674795"
+        ],
+        "3": [
+          "1.044655767994",
+          "1.044655767995"
+        ],
+        "4": [
+          "1.051414248764",
+          "1.051414248765"
+        ],
+        "5": [
+          "1.055249299059",
+          "1.055249299060"
+        ],
+        "6": [
+          "1.057622564792",
+          "1.057622564793"
+        ],
+        "7": [
+          "1.059189134451",
+          "1.059189134452"
+        ],
+        "8": [
+          "1.060275793803",
+          "1.060275793804"
+        ]
+      },
+      "r_hi": "0.0312296747954574065889196",
+      "r_lo": "0.0312296747954574065889196",
+      "rho_uniform_ceiling_hi": "0.46105237101429383169",
+      "rho_uniform_floor_lo": "0.40689383587027572148",
+      "status": "CERTIFIED_UNIFORM_IN_m"
+    },
+    "2": {
+      "lammax_KMS_m_brackets": {
+        "2": [
+          "1.433127426722",
+          "1.433127426722"
+        ],
+        "3": [
+          "1.713474692467",
+          "1.713474692467"
+        ],
+        "4": [
+          "1.902369512579",
+          "1.902369512580"
+        ],
+        "5": [
+          "2.034469936758",
+          "2.034469936759"
+        ],
+        "6": [
+          "2.129882455396",
+          "2.129882455397"
+        ],
+        "7": [
+          "2.200736618652",
+          "2.200736618653"
+        ],
+        "8": [
+          "2.254627831193",
+          "2.254627831194"
+        ]
+      },
+      "r_hi": "0.4331274267223117583171834",
+      "r_lo": "0.4331274267223117583171834",
+      "rho_uniform_ceiling_hi": "1.09500234049484349557",
+      "rho_uniform_floor_lo": "0.17132325734967227766",
+      "status": "REFUSED_CEILING_NOT_BELOW_1"
+    }
+  },
+  "honest_remainder": {
+    "named_next": "YM-16: m-uniform complement bound \u2014 complement T0 top is lambda^2 for all m; doubling identity survives the bridge product verbatim",
+    "off_carrier": "complement of W_{m+1} grows with m and is NOT bounded here; T2 is a compressed-operator statement, not a certified gap of S_m",
+    "scope": "toy carrier; 2D, AF trajectory, tightness, OS, non-triviality, metric universality, Clay OPEN"
+  },
+  "theorems": {
+    "T1_closed_form_all_m": "compressed bridge product on W_{m+1} = diag(f0^{m-1}, f0^{m-1} KMS_m(r)), r = f_{1/2}/f0 = I2(kappa)/I1(kappa); proof = SU(2) convolution lemma by induction along the chain; machine-checked as an exact polynomial identity in formal f_j for m = 2..8; NO truncation remainder on this carrier",
+    "T2_m_uniform_ratio_bracket": "lambda(1-r)/(1+r) < rho_m < lambda(1+r)/(1-r) for every m; normalised A-line gap >= -log lambda - log((1+r)/(1-r)) uniformly in m; certified positive on the grid kappa in {1/8,1/4,1/2,1}; per-m exact brackets pinned and monotone",
+    "T3_fail_closed_edge": "kappa = 2: ceiling >= 1, claim refused"
+  },
+  "verdict": "PASS"
+}
