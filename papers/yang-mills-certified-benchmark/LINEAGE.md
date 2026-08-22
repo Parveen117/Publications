@@ -38,3 +38,18 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - IMPORTS ZERO numerical claims; the m=4,6,8 spot values are superseded.
 - HONEST: A-line carrier only; the complement of W_{m+1} grows with m and
   is untouched. YM-16 (m-uniform complement bound) is the named next dock.
+
+## YM-16 (Aug 22 2026): the chain dock — finite volume certified, death volume computed
+
+- CONSUMES: YM-15 closed form (both M_kappa and M_{2kappa} on the chain
+  carrier), YM-6/14 Haynsworth dock, YM-5 doubling identity (survives the
+  bridge product verbatim), YM-1 Delta_red (reappears as the exact
+  m-uniform UPPER bound on the chain gap via B-factorisation).
+- DIRECTION: the Millennium predicate is volume-uniformity. This capsule
+  certifies the chain gap for m <= m*(kappa) and PROVES the sup route
+  cannot go further (per-bridge price e^kappa/f0 > 1 is exponential in m).
+  The wall is now a formula, not a mood: the obstruction is the use of
+  |m_kappa|_inf on the complement; its replacement (local/per-bridge
+  control in the content basis = certified strong-coupling cluster
+  radius, Osterwalder-Seiler shape) is YM-17.
+- IMPORTS ZERO external claims. Jentzsch anchor not used.

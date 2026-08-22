@@ -1,0 +1,224 @@
+{
+  "certificate_type": "YM16_CHAIN_DOCK_FINITE_VOLUME_AND_DEATH_VOLUME",
+  "claim_status": "certified_gap_of_S_m_for_m_le_mstar_kappa__uniformity_OPEN_obstruction_localised",
+  "controls": {
+    "C1_complement_top_is_lambda_squared": true,
+    "C2_carrier_consistent_with_B_factorisation": true,
+    "C3_free_chain_exact": true,
+    "C4_predicted_mstar_equals_dock": true,
+    "C5_fail_closed_at_mstar_plus_1": true,
+    "C6_sup_price_exceeds_1": true
+  },
+  "gap_upper_bound_all_m_all_kappa": [
+    "0.83672330623158891305",
+    "0.83672330623158891305"
+  ],
+  "grid": {
+    "1/2": {
+      "cells": {
+        "2": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "2321048748518066847262316935707/2500000000000000000000000000000",
+          "status": "OK"
+        },
+        "3": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "9577364076439616566587394063359/10000000000000000000000000000000",
+          "status": "OK"
+        },
+        "4": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "4939895311938236253698260791237/5000000000000000000000000000000",
+          "status": "OK"
+        },
+        "5": {
+          "status": "REFUSED_C_NOT_BELOW_MU"
+        }
+      },
+      "certified_gap_lower_bound_for_m_le_mstar": "0.10536051565782630122",
+      "certified_ratio_threshold_nu": "9/10",
+      "m_star_dock_actual": 4,
+      "m_star_predicted": 4,
+      "per_site_free_energy_bracket": [
+        "0.03108891409455615434",
+        "0.50000000000000000000"
+      ],
+      "sup_route_price_per_bridge_e^k/f0_lo": "1.59825288522862446016"
+    },
+    "1/4": {
+      "cells": {
+        "2": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "9070495844073690665354916645459/10000000000000000000000000000000",
+          "status": "OK"
+        },
+        "3": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "9141543873039788231521351416597/10000000000000000000000000000000",
+          "status": "OK"
+        },
+        "4": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "1842629682418326872245110921633/2000000000000000000000000000000",
+          "status": "OK"
+        },
+        "5": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "1857062764060250930159213647233/2000000000000000000000000000000",
+          "status": "OK"
+        },
+        "6": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "1871608898176945202032858013697/2000000000000000000000000000000",
+          "status": "OK"
+        },
+        "7": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "2357836212867405657867447291117/2500000000000000000000000000000",
+          "status": "OK"
+        },
+        "8": {
+          "status": "REFUSED_C_NOT_BELOW_MU"
+        }
+      },
+      "certified_gap_lower_bound_for_m_le_mstar": "0.10536051565782630122",
+      "certified_ratio_threshold_nu": "9/10",
+      "m_star_dock_actual": 7,
+      "m_star_predicted": 7,
+      "per_site_free_energy_bracket": [
+        "0.00780235388240660819",
+        "0.25000000000000000000"
+      ],
+      "sup_route_price_per_bridge_e^k/f0_lo": "1.27404597817439759149"
+    },
+    "1/8": {
+      "cells": {
+        "10": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "9159549387876195103740573789201/10000000000000000000000000000000",
+          "status": "OK"
+        },
+        "11": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "9177450783535797314579076998349/10000000000000000000000000000000",
+          "status": "OK"
+        },
+        "12": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "9195387165629010090754819630893/10000000000000000000000000000000",
+          "status": "OK"
+        },
+        "13": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "2303339650633303403308183869993/2500000000000000000000000000000",
+          "status": "OK"
+        },
+        "14": {
+          "status": "REFUSED_C_NOT_BELOW_MU"
+        },
+        "2": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "360703582912712594558847029931/400000000000000000000000000000",
+          "status": "OK"
+        },
+        "3": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "1807042704528724016955888156093/2000000000000000000000000000000",
+          "status": "OK"
+        },
+        "4": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "282902247395741757870861669837/312500000000000000000000000000",
+          "status": "OK"
+        },
+        "5": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "566910301387237043544959904639/625000000000000000000000000000",
+          "status": "OK"
+        },
+        "6": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "9088292306688984122268447747729/10000000000000000000000000000000",
+          "status": "OK"
+        },
+        "7": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "9106054437724327733862962445507/10000000000000000000000000000000",
+          "status": "OK"
+        },
+        "8": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "2280962820753730218191518993761/2500000000000000000000000000000",
+          "status": "OK"
+        },
+        "9": {
+          "count_exact": 1,
+          "count_lower": 1,
+          "count_upper": 1,
+          "mu": "9141682910406199153174732260591/10000000000000000000000000000000",
+          "status": "OK"
+        }
+      },
+      "certified_gap_lower_bound_for_m_le_mstar": "0.10536051565782630122",
+      "certified_ratio_threshold_nu": "9/10",
+      "m_star_dock_actual": 13,
+      "m_star_predicted": 13,
+      "per_site_free_energy_bracket": [
+        "0.00195248963072043766",
+        "0.12500000000000000000"
+      ],
+      "sup_route_price_per_bridge_e^k/f0_lo": "1.13093815096029731140"
+    }
+  },
+  "honest_remainder": {
+    "named_next": "YM-17: local (per-bridge) complement control in the content basis \u2014 certified strong-coupling cluster / gap-stability radius",
+    "scope": "toy carrier; 2D, AF, tightness, OS, non-triviality, metric universality, Clay OPEN",
+    "uniformity": "OPEN on the A-chain; sup route provably non-uniform (T2); certified only for m <= m*"
+  },
+  "theorems": {
+    "T1_B_factorisation_uniform_upper_bound": "T(S_m) = T_A (x) K_B^{(x)m} exactly; chi12(B_1) psi_vac is an exact eigenvector with ratio lambda => gap(S_m) <= -log lambda = Delta_red for every m and kappa",
+    "T2_vacuum_volume_bracket": "f0^{m-1} <= lambda_1(T_A,m) <= e^{kappa(m-1)}; per-site free energy in [log f0, kappa]; sup price e^kappa/f0 > 1",
+    "T3_finite_volume_certified_gap_and_death_volume": "exact seam count k=1 on W_{m+1} for m = 2..m*(kappa): certified two-sided ratio <= nu; m* computed exactly and matched by the dock; m*+1 refused"
+  },
+  "verdict": "PASS"
+}

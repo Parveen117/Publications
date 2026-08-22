@@ -46,7 +46,8 @@ width budget.
 | YM-13 verification-overlap beta audit: beta 4/5 -> 3/5 via independent witnesses (CF Bessel, compound-interest exp, det/trace inertia); three lineage overlaps retained with refusal notes; RH remains lowest at 1/5 | PASS (pinned) |
 | YM-14 interaction-overlap dock, first carrier: bridged pair — overlap seam rank-one and swap-transported (same theta integral), certified k=1 to kappa=1/2, overlap price kappa*lam/4 on one line; kappa=1 carrier limit recorded | PASS (pinned) |
 | YM-15 1D block-transfer dock opened: exact closed form of the chain compression for EVERY m (vacuum f0^{m-1}, A-line f0^{m-1}·KMS_m(r), r=I2/I1; SU(2) convolution lemma, machine-checked as a formal polynomial identity m=2..8, no truncation remainder); m-UNIFORM ratio bracket λ(1−r)/(1+r)<ρ_m<λ(1+r)/(1−r), certified positive normalised gap for all m at κ≤1; κ=2 fails closed. A-line carrier ONLY — complement not bounded | PASS (pinned) |
-| Remaining: m-uniform complement bound for the chain (YM-16, named), 2D lattice, AF trajectory, tightness, OS reconstruction, non-triviality, metric universality, Clay predicate | OPEN |
+| YM-16 chain dock: exact B-factorisation ⇒ gap(S_m) ≤ Δ_red for ALL m,κ (m-uniform upper bound, exact eigenvector); vacuum volume bracket f0^{m−1} ≤ λ₁ ≤ e^{κ(m−1)}; certified two-sided gap (ratio ≤ 9/10) of S_m for m ≤ m*(κ) — m*=13 (κ=1/8), 7 (1/4), 4 (1/2) — with m* computed exactly and matched by the dock; m*+1 refused. Sup route provably non-uniform: death volume has coordinates | PASS (pinned) |
+| Remaining: m-UNIFORM complement control on the A-chain (YM-17 named: per-bridge/local control in the content basis — certified strong-coupling cluster radius), 2D lattice, AF trajectory, tightness, OS reconstruction, non-triviality, metric universality, Clay predicate | OPEN |
 | Continuum existence / mass gap | OPEN |
 
 ## Reproduce
