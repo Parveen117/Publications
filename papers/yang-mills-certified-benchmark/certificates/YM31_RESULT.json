@@ -1,0 +1,87 @@
+{
+  "certificate_type": "YM31_OUTWARD_M_UNIFORM_DRESSED_VACUUM_FLOOR",
+  "claim_status": "lambda_1(S_m) >= FLOOR_m0 * (rho_lo/I_hi)^(m-m0) for all m >= m0 (rung positivity + exact denominator + native log-convexity); item 6 of theorum/28 at the true rate; gap NOT claimed",
+  "controls": {
+    "C1_rung_monotone_in_lambda": true,
+    "C3_log_convexity_observed": true,
+    "C4_floor_inside_known_brackets": true,
+    "C5_rate_above_E4D_excitation": true,
+    "C6_bound_direction": true
+  },
+  "grid": {
+    "1/2": {
+      "E4D_excitation_rate_YM28": "754017/25000000",
+      "Z_lo_by_m": {
+        "2": "1.07639208714788",
+        "3": "1.15875015440857",
+        "4": "1.24741106140832",
+        "5": "1.34285580625221",
+        "6": "1.44560343607892",
+        "7": "1.55621272565196",
+        "8": "1.67528520411522"
+      },
+      "f_pt": {
+        "0": "1031577221/1000000000",
+        "1": "31906149/250000000",
+        "2": "10580447/1000000000"
+      },
+      "face_integral_hi": "1.031584421052",
+      "floor_at_m0": "1.237443269179",
+      "margin_per_face": "0.01244643",
+      "old_floor_rate_log_f0": "0.03108891",
+      "per_face_floor_rate_all_m_ge_m0": "0.04260711",
+      "rho_lo": "1.076487045272",
+      "rung_tail_bound_at_m0": "0.0000365579052686"
+    },
+    "1/4": {
+      "E4D_excitation_rate_YM28": "77421/10000000",
+      "Z_lo_by_m": {
+        "2": "1.01869010957133",
+        "3": "1.03773715805111",
+        "4": "1.05714035994213",
+        "5": "1.07690635533312",
+        "6": "1.09704192754545",
+        "7": "1.11755398678128",
+        "8": "1.13844957244717"
+      },
+      "f_pt": {
+        "0": "1007832871/1000000000",
+        "1": "62826157/1000000000",
+        "2": "522871/200000000"
+      },
+      "face_integral_hi": "1.007832978004",
+      "floor_at_m0": "1.055067877025",
+      "margin_per_face": "0.00298002",
+      "old_floor_rate_log_f0": "0.00780235",
+      "per_face_floor_rate_all_m_ge_m0": "0.01072212",
+      "rho_lo": "1.018697227756",
+      "rung_tail_bound_at_m0": "0.0000004088139896"
+    },
+    "1/8": {
+      "E4D_excitation_rate_YM28": "48717/25000000",
+      "Z_lo_by_m": {
+        "2": "1.00464740055055",
+        "3": "1.00931686777695",
+        "4": "1.01400803836303",
+        "5": "1.01872101288636",
+        "6": "1.02345589268857",
+        "7": "1.02821277958246",
+        "8": "1.03299177585409"
+      },
+      "f_pt": {
+        "0": "250488599/250000000",
+        "1": "31290709/1000000000",
+        "2": "651677/1000000000"
+      },
+      "face_integral_hi": "1.001954396682",
+      "floor_at_m0": "1.013513071217",
+      "margin_per_face": "0.00073592",
+      "old_floor_rate_log_f0": "0.00195248",
+      "per_face_floor_rate_all_m_ge_m0": "0.00268460",
+      "rho_lo": "1.004647861264",
+      "rung_tail_bound_at_m0": "0.0000000058673007"
+    }
+  },
+  "m0": 6,
+  "verdict": "PASS"
+}

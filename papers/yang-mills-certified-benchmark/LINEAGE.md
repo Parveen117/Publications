@@ -260,3 +260,16 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   said 1/d_a^2 and the engine was right (three convolutions, one trace).
   A brute-force label sum was 3^{3m-2} evaluations — replaced by
   folding labels into the cut transfer (m = 6 in < 1 s).
+
+## YM-31 (Aug 22 2026): outward m-uniform dressed vacuum floor
+
+- CONSUMES: YM-30 engine, YM-29 face independence, T01-B/C (projection
+  square, cut-square inequality) for rung positivity and log-convexity,
+  YM-28 E4D rate, theorum/28 item 6.
+- RESULT: lambda_1(S_m) >= FLOOR_{m0} (rho_lo / I_hi)^{m-m0} for all
+  m >= 6 at the true per-face rate; margin over the E4D excitation rate
+  certified positive at every grid kappa. First m-uniform statement of
+  the program that holds at the TRUE rate rather than a bracket.
+- Trial-state discipline: the truncation lives in the trial (no error),
+  the rung truncation is one-sided by positivity, the denominator is an
+  exact interval — nothing is a shadow certificate.
