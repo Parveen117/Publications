@@ -108,6 +108,106 @@ reports two of the three as genuinely split between a closed and an open
 half. Section~\ref{sec:open} states the remaining obligations without
 euphemism. Section~\ref{sec:conclusion} concludes.
 
+\section{Methodology: certification and reproducibility}\label{sec:method}
+
+Because this program's value depends entirely on a reader's ability to
+check it independently rather than take it on trust, we state the
+certification methodology precisely before using it.
+
+\textbf{Exact and directed-interval arithmetic only.} No floating-point
+number ever appears inside a verdict. Rational quantities (eigenvalue
+multiplicities, Gram-matrix overlaps, seam-integer counts) are computed
+with Python's arbitrary-precision \texttt{fractions.Fraction} and
+carried exactly; no external numerical library is required for these.
+Transcendental quantities (Bessel functions $I_\nu$, logarithms) are
+bracketed by two-sided rational intervals $[\ell,u]$ with $\ell\le
+x\le u$ guaranteed by construction: $I_\nu$ is enclosed by its
+everywhere-positive power series truncated at a declared order, with a
+geometric-series majorant bounding the truncated tail from above; $\log$
+is enclosed via the atanh series, which is exact-sign alternation-free
+and admits the same majorant technique. Every arithmetic operation on
+such intervals rounds outward (down for lower bounds, up for upper
+bounds), so the true value is guaranteed to remain inside the bracket at
+every step, and every reported enclosure states its width explicitly.
+
+\textbf{Hash-pinned certificates.} Each theorem above has one
+corresponding executable script (Table~\ref{tab:map}) that recomputes
+its result from these primitives and writes a certificate file
+containing the exact value or bracket together with a SHA-256 digest of
+the full certificate content. That digest is checked against an
+\texttt{EXPECTED\_*.sha256} file committed alongside it. A change to any
+input, any arithmetic step, or any stated conclusion changes the digest
+and is caught automatically; nothing about a certified result can be
+edited by hand without the mismatch being visible.
+
+\textbf{Negative controls.} Every script includes at least one
+deliberately falsified variant of its own computation --- a wrong Bessel
+recurrence, a substituted coupling, a sign flip on the disputed term,
+a shrunk carrier known to be too small --- and asserts that this variant
+produces a \emph{different, separated} bracket or a different exact
+count from the certified one. A script fails if a negative control does
+not separate, which is the mechanism that distinguishes a theorem that
+constrains the actual object from an identity that would hold on
+arbitrary data (the discipline we call, in the repository, the
+\emph{renaming test}: before a computed coincidence is reported as a
+finding about the carrier, we check that it disappears under repetition
+on random data of the same shape).
+
+\textbf{Independent re-execution and continuous integration.} Several
+results above (the Theorem~\ref{thm:ym67} counting law, the
+Theorem~\ref{thm:ym9} uniformity theorem) were independently re-derived
+or corrected after a first pass flagged an inconsistency between a
+narrated claim and the arithmetic the script actually performed; we
+report such corrections in place (Section~\ref{sec:gates}) rather than
+silently overwrite the earlier claim. The repository's continuous
+integration workflow re-executes every certificate script and every test
+on each change and fails the build on any pin mismatch, so the checked-in
+state of the repository is, at every commit, the actual output of the
+actual scripts, not a hand-maintained summary of them.
+
+\textbf{Reproducing a specific theorem.} Any of the results above can be
+independently checked with no dependency beyond a standard Python 3
+interpreter (no NumPy, no computer-algebra system) by cloning the public
+repository and running the corresponding script, e.g.:
+\begin{verbatim}
+git clone https://github.com/Parveen117/
+    Publications
+cd Publications/papers/
+    yang-mills-certified-benchmark
+python certificates/ym1_certified_gap.py
+python -m pytest tests/ -v
+\end{verbatim}
+Each script prints its certified value or bracket, its digest, and the
+result of every negative control; the test suite additionally checks
+every digest against the committed \texttt{EXPECTED\_*.sha256} file.
+
+\begin{table}[t]
+\centering
+\caption{Theorem-to-script correspondence. Every result in this paper is
+the printed output of the named script, with certificate digest pinned
+in the correspondingly named \texttt{EXPECTED\_*.sha256} file.}
+\label{tab:map}
+\begin{tabular}{ll}
+\hline
+Theorem & Script (in \texttt{certificates/}) \\
+\hline
+YM-1 (\ref{thm:ym1}) & \texttt{ym1\_certified\_gap.py} \\
+YM-2 (\ref{thm:ym2}) & \texttt{ym2\_theta\_interacting\_gap.py} \\
+YM-3 (\ref{thm:ym3}) & \texttt{ym3\_crossing\_direction.py} \\
+YM-4 (\ref{thm:ym4}) & \texttt{ym4\_symmetry\_protected.py} \\
+YM-5 (\ref{thm:ym5}) & \texttt{ym5\_two\_sided\_gap.py} \\
+YM-6/7 (\ref{thm:ym67}) & \texttt{ym6\_seam\_integer\_dock.py},\\
+                        & \texttt{ym7\_v7\_crossing\_curves.py} \\
+YM-8 (\ref{thm:ym8}) & \texttt{ym8\_all\_coupling\_capstone.py} \\
+YM-9 (\ref{thm:ym9}) & \texttt{ym9\_uniform\_heat\_kernel.py} \\
+YM-10 (\ref{thm:ym10}) & \texttt{ym10\_blindness\_ledger.py} \\
+YM-11 (\ref{thm:ym11a}--\ref{thm:ym11b}) & \texttt{ym11\_gate\_verdicts.py} \\
+YM-12 (\ref{thm:ym12}) & \texttt{ym12\_square\_sourced.py} \\
+YM-14 (\ref{thm:ym14}) & \texttt{ym14\_overlap\_dock.py} \\
+\hline
+\end{tabular}
+\end{table}
+
 \section{Graph, carrier, and character toolkit}\label{sec:setup}
 
 Let $B_3$ be the theta graph: two vertices $v_0,v_1$ joined by three edges
@@ -508,11 +608,12 @@ continuum proof would still need to close.
 
 All certificates, verification scripts, and test suites are available in
 the public repository \texttt{Parveen117/Publications}, directory
-\texttt{papers/yang-mills-certified-benchmark/}. Each theorem above
-corresponds to a numbered script (\texttt{ym1\_certified\_gap.py}
-through \texttt{ym14\_overlap\_dock.py}) whose execution regenerates and
-pins the stated certificate; the repository's continuous-integration
-workflow reruns and pin-diffs every certificate on each change.
+\texttt{papers/yang-mills-certified-benchmark/}, under an open license.
+The theorem-to-script correspondence and reproduction instructions are
+given in full in Section~\ref{sec:method} and Table~\ref{tab:map}; no
+result in this paper depends on any data, computation, or software that
+is not in that public repository and independently re-executable by a
+reader.
 
 \begin{thebibliography}{9}
 
