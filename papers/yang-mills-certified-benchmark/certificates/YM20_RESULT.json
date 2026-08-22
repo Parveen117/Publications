@@ -1,0 +1,202 @@
+{
+  "audit_summary": {
+    "anchors": "YM-8 Jentzsch (replaced by YM-12), YM-19 Dobrushin/Foellmer (demoted 7232f9a); YM-17 uses singular-value Weyl as a proof technique",
+    "carrier_layer": "COORDINATE_SHADOW throughout (L^2/Haar/Peter-Weyl) except YM-13 witnesses",
+    "counting_layer": "NATIVE_DERIVED throughout (pairing tensor, convolution lemma, seam counts, inertia)"
+  },
+  "certificate_type": "YM20_NATIVE_ORIGIN_AUDIT_AND_CAYLEY_FORM",
+  "claim_status": "audit_plus_certified_native_form_of_uniform_bounds__no_new_gap_claim",
+  "controls": {
+    "C1_ledger_complete_and_closed": true,
+    "C2_cayley_inversion_exact": true,
+    "C2b_delta_t_cayley_recovers_S": true,
+    "C3_two_route_native_log_overlap": true,
+    "C4_F00E_tail_shape": true,
+    "C5_bridge_cut_tail_mass_is_exp_kappa": true,
+    "C6_fake_tag_rejected": true
+  },
+  "framework_pins": {
+    "F00E_Lemma_2_1": "factorial-tail convergence",
+    "F00E_Thm_6_2": "Exp(tH) = Cosh(t) I + H Sinh(t), H^2 = I",
+    "F00G_Thm_5_1": "Exp_Sigma(A_Sigma(y)) = (1+y)/(1-y)",
+    "F00G_Thm_7_1": "Log_Sigma(xy) = Log_Sigma(x) + Log_Sigma(y)",
+    "RH_T01_C": "E(a*xi) <= M(a)^2 E(xi)"
+  },
+  "grid": {
+    "1": {
+      "A_Sigma(r)_native_odd_series": [
+        "0.48995937436527806963",
+        "0.48995937436527806963"
+      ],
+      "log_ceiling_YM1_route": [
+        "0.48995937436527806963",
+        "0.48995937436527806963"
+      ],
+      "seam_coordinate_r": [
+        "0.24019372387008974110",
+        "0.24019372387008974110"
+      ],
+      "two_routes_overlap": true,
+      "uniform_gap_native_form_-Log(lam)-A(r)": "0.34676393186631084341"
+    },
+    "1/2": {
+      "A_Sigma(r)_native_odd_series": [
+        "0.24871000668259986710",
+        "0.24871000668259986710"
+      ],
+      "log_ceiling_YM1_route": [
+        "0.24871000668259986710",
+        "0.24871000668259986710"
+      ],
+      "seam_coordinate_r": [
+        "0.12371792827832073058",
+        "0.12371792827832073058"
+      ],
+      "two_routes_overlap": true,
+      "uniform_gap_native_form_-Log(lam)-A(r)": "0.58801329954898904594"
+    },
+    "1/4": {
+      "A_Sigma(r)_native_odd_series": [
+        "0.12483762013268694271",
+        "0.12483762013268694271"
+      ],
+      "log_ceiling_YM1_route": [
+        "0.12483762013268694271",
+        "0.12483762013268694271"
+      ],
+      "seam_coordinate_r": [
+        "0.06233787272827854011",
+        "0.06233787272827854011"
+      ],
+      "two_routes_overlap": true,
+      "uniform_gap_native_form_-Log(lam)-A(r)": "0.71188568609890197033"
+    },
+    "1/8": {
+      "A_Sigma(r)_native_odd_series": [
+        "0.06247966686164302723",
+        "0.06247966686164302723"
+      ],
+      "log_ceiling_YM1_route": [
+        "0.06247966686164302723",
+        "0.06247966686164302723"
+      ],
+      "seam_coordinate_r": [
+        "0.03122967479545740658",
+        "0.03122967479545740658"
+      ],
+      "two_routes_overlap": true,
+      "uniform_gap_native_form_-Log(lam)-A(r)": "0.77424363936994588581"
+    },
+    "delta_t(a=6)": {
+      "Cayley_coordinate_of_delta_t_recovers_S_a": true,
+      "S_a": [
+        "0.04449128677119165486",
+        "0.04449128677119165486"
+      ]
+    }
+  },
+  "origin_ledger": {
+    "YM-1": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-10": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-11": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-12": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-13": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "NATIVE_DERIVED",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-14": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-15": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-16": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-17": {
+      "anchor": "NATIVE_DERIVED_WITH_CLASSICAL_PROOF_TECHNIQUES",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-18": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-19": {
+      "anchor": "DEMOTED_CLASSICAL_IMPORT",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-2": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-3": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-4": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-5": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-6": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-7": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-8": {
+      "anchor": "DEMOTED_CLASSICAL_IMPORT",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    },
+    "YM-9": {
+      "anchor": "NATIVE_DERIVED",
+      "carrier": "COORDINATE_SHADOW",
+      "counting": "NATIVE_DERIVED"
+    }
+  },
+  "theorems": {
+    "T1_origin_ledger_machine_checked": true,
+    "T2_cayley_form": "YM-15 ceiling and YM-19 delta_t are Exp_Sigma(A_Sigma(y)) with seam coordinates r and S_a (F00-G Thm 5.1 pinned); native odd-series log agrees with YM-1 route",
+    "T3_metric_coefficients_native_series": "YM-1 Bessel series has F00-E Lemma 2.1 shape; Haar identification is the shadow",
+    "T4_named_native_obligation": "contraction in recognition energy under the seam-involution flow, bridge-local and multiplicative \u2014 YM-21"
+  },
+  "verdict": "PASS"
+}

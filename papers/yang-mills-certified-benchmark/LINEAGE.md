@@ -106,3 +106,17 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   stand. YM-8's Jentzsch anchor was already demoted by YM-12 the same
   way. Audit of YM-1..19: these were the only two borrowed anchors.
 - Standing obligation: a native replacement for correlation decay.
+
+## YM-20 (Aug 22 2026): native origin audit + Cayley form
+
+- READ for this capsule: Recognition-Kernel-Framework F00-E (native
+  Euler, circular-hyperbolic via sheet involution), F00-G (Cayley
+  coordinate, odd-series log, Exp(A(y))=(1+y)/(1-y)), RH-Framework T01
+  (cut-tail mass, recognition energy, native action bound) and its
+  NATIVE_DERIVATION_CONTAMINATION_AUDIT (vocabulary adopted verbatim).
+- FINDING: the YM carrier is a coordinate shadow by the framework's own
+  standard (same class as RH T03-A); the counting layer is native; the
+  program's uniform bounds are Cayley exponentials of seam coordinates.
+- Framework-internal pins (F00-G 5.1/7.1, F00-E 2.1/6.2, T01-C) are
+  citations INSIDE the program, permitted as in EMK-2.
+- YM-21 named: native contraction replacing the decay anchor.
