@@ -1,0 +1,43 @@
+{
+  "certificate_type": "YM27_DOCK_TO_RH_FRAMEWORK_T01",
+  "controls": {
+    "C1_U_sigma_and_e_n_from_E4C": true,
+    "C2_slack_factors_gt_1": true,
+    "C3_E5A_wrap_assoc_inverse_winding": true,
+    "C4_witness_vs_full_turn_mu_0_vs_1": true,
+    "C5_aliasing_structure": true,
+    "C6_vacuum_entry_closed_form": true
+  },
+  "obligation_restated": "theorum/28 hypothesis 3 = a memory-channel bound beating T01-E4C by a factor uniform in m (measured slack 56.5 / 27.8 / 13.5 per face)",
+  "sources": {
+    "T01-A/B/C": "RH-Framework/theorems/T01_NATIVE_SUMMABILITY_AND_RECOGNITION_COMPLETION.md (PROVED)",
+    "T01-E1/E3": "RH-Framework/theorems/T01_E_NATIVE_REFINEMENT_COUNT_MEASURE.md (PROVED)",
+    "T01-E4C": "RH-Framework/theorems/T01_E4_NATIVE_FUNCTION_COMPLETION.md (PROVED)",
+    "T01-E5A/B": "RH-Framework/theorems/T01_E5_NATIVE_RATIONAL_UGD_REFINEMENT_ADAPTER.md (PROVED)",
+    "T01-E5C/E6": "RH-Framework/theorems/LEDGER.md (OPEN)",
+    "T03-A": "CLASSICAL_THEOREM_IMPORT (LEDGER)"
+  },
+  "theorems": {
+    "T1_sup_route_is_T01_E4C": {
+      "1/2": {
+        "slack_factor": "13.548",
+        "t01_e4c_price_per_face": "0.468911",
+        "true_vacuum_rate_ym18": "3461/100000"
+      },
+      "1/4": {
+        "slack_factor": "27.845",
+        "t01_e4c_price_per_face": "0.242197",
+        "true_vacuum_rate_ym18": "4349/500000"
+      },
+      "1/8": {
+        "slack_factor": "56.521",
+        "t01_e4c_price_per_face": "0.123047",
+        "true_vacuum_rate_ym18": "2177/1000000"
+      }
+    },
+    "T2_abelian_subfabric_is_E5A_packet": "wrap law = rotor chain; winding = seam memory mu",
+    "T3_haar_shadow_is_T01_E6": "YM inherits RH's open item; no new obligation",
+    "T4_recognition_energy_is_vacuum_form": "vacuum entry f_0^{m-1} = T01-C floor"
+  },
+  "verdict": "PASS"
+}

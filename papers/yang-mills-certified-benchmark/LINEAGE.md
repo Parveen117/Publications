@@ -212,3 +212,14 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   the tiling law to the content-1/2 multi-insertion channel.
 - RULE going forward: before declaring any object "infinite-dimensional
   with no finite truncation", check theorum/28's hypothesis list first.
+
+## YM-27 (Aug 22 2026): dock to RH-Framework T01
+
+- OWNER'S INSTRUCTION recorded: read RH-Framework, use and cite its
+  proved theorems rather than re-deriving. Cited: T01-A/B/C, E1/E3,
+  E4C, E5A/B (PROVED); E5C/E6 (OPEN); T03-A (CLASSICAL_THEOREM_IMPORT).
+- RESULT: sup route = T01-E4C exactly (obligation now a measured slack
+  factor); abelian subfabric = E5A packet with winding as memory; the
+  Haar shadow is RH's own T01-E6; recognition energy = vacuum form.
+- RULE: before any new derivation, check RH-Framework LEDGER and
+  theorum/ for a proved statement to cite.
