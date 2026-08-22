@@ -246,3 +246,17 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - Build note: my first asymptotic claim (linear law visible at m=60)
   was wrong — the linear regime starts at m ~ 1/(4 lambda^2 r^2);
   control corrected to m = 2000.
+
+## YM-30 (Aug 22 2026): the 2-row recoupling engine
+
+- CONSUMES: MP gold/01 spin-network seed (now executable), RST-2
+  squared-amplitude discipline (surds cancel by construction), YM-25
+  recoupling squares (reproduced), YM-15 chain (recovered as a limit).
+- RESULT: exact ladder evaluations; calibration shows the W^{1/2}-
+  dressed vacuum floor is geometric in m at rate 0.002685/face (kappa
+  1/8), above the E4D excitation rate. YM-31 named: outward
+  certification (intervals, tail, Perron on the column transfer).
+- Build notes: my docstring claimed 1/d_a for one plaquette; the engine
+  said 1/d_a^2 and the engine was right (three convolutions, one trace).
+  A brute-force label sum was 3^{3m-2} evaluations — replaced by
+  folding labels into the cut transfer (m = 6 in < 1 s).

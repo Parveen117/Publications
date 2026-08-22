@@ -1,0 +1,81 @@
+{
+  "calibration_product_ansatz_kappa_1_8_content_le_1": {
+    "-1/20": {
+      "2": {
+        "ratio_to_f0_pow": "0.9975243054",
+        "rayleigh": "0.9994738639"
+      },
+      "3": {
+        "ratio_to_f0_pow": "0.9950547407",
+        "rayleigh": "0.9989480055"
+      },
+      "4": {
+        "ratio_to_f0_pow": "0.9925912899",
+        "rayleigh": "0.9984224237"
+      },
+      "5": {
+        "ratio_to_f0_pow": "0.9901339378",
+        "rayleigh": "0.9978971184"
+      },
+      "6": {
+        "ratio_to_f0_pow": "0.9876826694",
+        "rayleigh": "0.9973720895"
+      }
+    },
+    "0": {
+      "2": {
+        "ratio_to_f0_pow": "1.0007319251",
+        "rayleigh": "1.0026877526"
+      },
+      "3": {
+        "ratio_to_f0_pow": "1.0014648508",
+        "rayleigh": "1.0053831958"
+      },
+      "4": {
+        "ratio_to_f0_pow": "1.0021983134",
+        "rayleigh": "1.0080858852"
+      },
+      "5": {
+        "ratio_to_f0_pow": "1.0029323133",
+        "rayleigh": "1.0107958400"
+      },
+      "6": {
+        "ratio_to_f0_pow": "1.0036668508",
+        "rayleigh": "1.0135130798"
+      }
+    },
+    "1/20": {
+      "2": {
+        "ratio_to_f0_pow": "0.9998830660",
+        "rayleigh": "1.0018372344"
+      },
+      "3": {
+        "ratio_to_f0_pow": "0.9997709635",
+        "rayleigh": "1.0036826810"
+      },
+      "4": {
+        "ratio_to_f0_pow": "0.9996588834",
+        "rayleigh": "1.0055315369"
+      },
+      "5": {
+        "ratio_to_f0_pow": "0.9995468159",
+        "rayleigh": "1.0073837985"
+      },
+      "6": {
+        "ratio_to_f0_pow": "0.9994347610",
+        "rayleigh": "1.0092394722"
+      }
+    }
+  },
+  "certificate_type": "YM30_TWO_ROW_RECOUPLING_ENGINE",
+  "claim_status": "engine_validated_V1_V5__first_use_is_calibration_only",
+  "scope": "labels <= 1; coefficients at interval lower ends; not an outward certificate",
+  "validation": {
+    "V1_rational": true,
+    "V2_one_plaquette_closed_form": true,
+    "V3_single_row_limit": true,
+    "V4_recoupling_unitarity": true,
+    "V5_symmetries": true
+  },
+  "verdict": "PASS"
+}
