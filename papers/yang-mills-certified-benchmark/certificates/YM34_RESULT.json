@@ -1,0 +1,43 @@
+{
+  "certificate_type": "YM34_E4DC_RESTATED_LAPLACE_VS_SMOOTHED",
+  "claim_status": "iterated_multiplier_without_smoothing_converges_to_sup__with_smoothing_to_spectral_constant__E4D_C_restated_for_alternating_product",
+  "controls": {
+    "C1_unsmoothed_increasing_to_sup": true,
+    "C2_smoothed_nondecreasing_converges": true,
+    "C3_delta_far_below_sup_price": true,
+    "C4_identity_tamper_reproduces_negative": true
+  },
+  "grid": {
+    "0.125": {
+      "delta_per_face": "0.0035824206",
+      "lambda1_KWK_over_f0": "1.00358242056",
+      "q_10": "1.13028014149",
+      "q_1_f0": "1.00783287156",
+      "q_60": "1.25262881627",
+      "smoothed_limit_p_30": "1.00358242056",
+      "sup_price": "0.27404598",
+      "sup_w": "1.28402541669"
+    },
+    "0.25": {
+      "delta_per_face": "0.014031924",
+      "lambda1_KWK_over_f0": "1.01403192409",
+      "q_10": "1.42320884418",
+      "q_1_f0": "1.03157722156",
+      "q_60": "1.60802809521",
+      "smoothed_limit_p_30": "1.01403192409",
+      "sup_price": "0.59825289",
+      "sup_w": "1.6487212707"
+    },
+    "0.5": {
+      "delta_per_face": "0.051911467",
+      "lambda1_KWK_over_f0": "1.05191146668",
+      "q_10": "2.3318024477",
+      "q_1_f0": "1.13031820798",
+      "q_60": "2.65089435545",
+      "smoothed_limit_p_30": "1.05191146668",
+      "sup_price": "1.4048819",
+      "sup_w": "2.71828182846"
+    }
+  },
+  "verdict": "PASS"
+}

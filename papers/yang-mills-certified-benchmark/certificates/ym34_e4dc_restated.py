@@ -1,4 +1,4 @@
-"""YM-33: E4D-C RESTATED — the iterated multiplier WITHOUT a smoothing step
+"""YM-34: E4D-C RESTATED — the iterated multiplier WITHOUT a smoothing step
 converges to the SUP, not the mean (native Laplace principle), so the open
 item T01-E4D-C of the RH ledger (= theorum/28 item 3 = the last open YM
 item) must be stated for the alternating product (smooth o multiplier)^n.
@@ -133,7 +133,7 @@ def run():
         }
     ok = c1 and c2 and c3 and c4
     return {
-        "certificate_type": "YM33_E4DC_RESTATED_LAPLACE_VS_SMOOTHED",
+        "certificate_type": "YM34_E4DC_RESTATED_LAPLACE_VS_SMOOTHED",
         "claim_status": "iterated_multiplier_without_smoothing_converges_to_sup__"
                         "with_smoothing_to_spectral_constant__E4D_C_restated_for_alternating_product",
         "grid": out,
@@ -145,9 +145,9 @@ def run():
 
 if __name__ == "__main__":
     cert = run()
-    json.dump(cert, open(os.path.join(HERE, "YM33_RESULT.json"), "w"), indent=2, sort_keys=True)
+    json.dump(cert, open(os.path.join(HERE, "YM34_RESULT.json"), "w"), indent=2, sort_keys=True)
     sha = canonical_sha(cert)
-    open(os.path.join(HERE, "EXPECTED_YM33.sha256"), "w").write(sha + "\n")
+    open(os.path.join(HERE, "EXPECTED_YM34.sha256"), "w").write(sha + "\n")
     print(cert["verdict"], cert["controls"])
     for k, v in cert["grid"].items():
         print(k, v)

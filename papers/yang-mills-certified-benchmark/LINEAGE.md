@@ -297,7 +297,7 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   3 and 4 it decays geometrically (1.3e-9, 1.6e-12 at kappa = 1/8).
   Both corrected before pinning.
 
-## YM-33 (Aug 22 2026): E4D-C restated
+## YM-34 (Aug 22 2026): E4D-C restated
 
 - CONSUMES: T01-E4C/E4D (RH), YM-16/26 exponential, YM-31 log-convexity.
 - RESULT: certified negative (unsmoothed iteration -> sup) and positive
