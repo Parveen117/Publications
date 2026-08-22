@@ -167,3 +167,15 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   the test order changed the stream and YM-F1's pinned demo drifted.
   Fix: reseed inside run(). Pins unchanged. Rule: a pinned certificate
   must be a pure function of its inputs, never of module import order.
+
+## YM-23 (Aug 22 2026): the weak-coupling turn
+
+- CONSUMES: YM-F1 stereographic chart + quaternion product, YM-21/22
+  tiling rate, EMK-1 T5 cut-commutator curvature, RST-1 T4 flow loop,
+  F00-G Cayley/odd-series log (native tanh and log 2 = A(1/3)).
+- RESULT: exact boundary of the strong-coupling route; native
+  linearization with the commutator as the only curvature; exact
+  negative — abelianized fabric has no volume-uniform gap. The
+  weak-coupling gap problem is now the commutator-residue transfer.
+- DECLARED, not certified: AF trajectory shape; harmonic excitation
+  relation. No weak-coupling gap claimed.

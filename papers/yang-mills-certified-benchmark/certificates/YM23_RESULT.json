@@ -1,0 +1,187 @@
+{
+  "certificate_type": "YM23_WEAK_COUPLING_TURN",
+  "claim_status": "tiling_route_boundary_exact__native_linearization__abelianized_fabric_gapless__weak_coupling_gap_OPEN",
+  "controls": {
+    "C1_ladder_monotone_and_collapsed": true,
+    "C2_r_c_native_cayley_two_route": true,
+    "C3_kappa_c_bracket_and_monotone": true,
+    "C4_stereographic_residue_identity": true,
+    "C5_product_law_and_commuting_control": true,
+    "C6_rayleigh_identity_and_zero_mode": true,
+    "T1c_af_crossing_found": true
+  },
+  "declared_not_certified": [
+    "AF trajectory shape kappa = c log(1/a)",
+    "harmonic excitation energy ~ sqrt(stiffness)"
+  ],
+  "theorems": {
+    "T1_tiling_route_boundary": {
+      "af_coverage_by_a": {
+        "1/1024": {
+          "kappa_traj": [
+            "1.732867",
+            "1.732867"
+          ],
+          "status": "outside"
+        },
+        "1/128": {
+          "kappa_traj": [
+            "1.213007",
+            "1.213007"
+          ],
+          "status": "outside"
+        },
+        "1/16": {
+          "kappa_traj": [
+            "0.693147",
+            "0.693147"
+          ],
+          "status": "outside"
+        },
+        "1/2": {
+          "kappa_traj": [
+            "0.173286",
+            "0.173286"
+          ],
+          "status": "covered"
+        },
+        "1/2048": {
+          "kappa_traj": [
+            "1.906154",
+            "1.906154"
+          ],
+          "status": "outside"
+        },
+        "1/256": {
+          "kappa_traj": [
+            "1.386294",
+            "1.386294"
+          ],
+          "status": "outside"
+        },
+        "1/32": {
+          "kappa_traj": [
+            "0.866433",
+            "0.866433"
+          ],
+          "status": "outside"
+        },
+        "1/4": {
+          "kappa_traj": [
+            "0.346573",
+            "0.346573"
+          ],
+          "status": "covered"
+        },
+        "1/4096": {
+          "kappa_traj": [
+            "2.079441",
+            "2.079441"
+          ],
+          "status": "outside"
+        },
+        "1/512": {
+          "kappa_traj": [
+            "1.559581",
+            "1.559581"
+          ],
+          "status": "outside"
+        },
+        "1/64": {
+          "kappa_traj": [
+            "1.039720",
+            "1.039720"
+          ],
+          "status": "outside"
+        },
+        "1/8": {
+          "kappa_traj": [
+            "0.519860",
+            "0.519860"
+          ],
+          "status": "outside"
+        }
+      },
+      "af_trajectory_c_log_1_over_a_c": "1/4",
+      "first_a_outside_route": "1/8",
+      "ladder_r_half_r1_r3half_by_kappa": {
+        "1": [
+          "0.24019372",
+          "0.03922510",
+          "0.00484309"
+        ],
+        "10": [
+          "0.85418530",
+          "0.65832587",
+          "0.45918978"
+        ],
+        "2": [
+          "0.43312742",
+          "0.13374514",
+          "0.03189198"
+        ],
+        "20": [
+          "0.92598774",
+          "0.81480245",
+          "0.68154701"
+        ],
+        "5": [
+          "0.71934058",
+          "0.42452753",
+          "0.20990753"
+        ],
+        "50": [
+          "0.97015308",
+          "0.92238775",
+          "0.85946655"
+        ]
+      },
+      "r_c_and_kappa_c_by_a": {
+        "1": {
+          "kappa_c_bracket": [
+            "1.574158",
+            "1.574768"
+          ],
+          "r_c": [
+            "0.358357398350",
+            "0.358357398350"
+          ]
+        },
+        "1/2": {
+          "kappa_c_bracket": [
+            "0.758526",
+            "0.759136"
+          ],
+          "r_c": [
+            "0.185333199908",
+            "0.185333199908"
+          ]
+        },
+        "1/4": {
+          "kappa_c_bracket": [
+            "0.376027",
+            "0.376637"
+          ],
+          "r_c": [
+            "0.093476303969",
+            "0.093476303969"
+          ]
+        },
+        "1/8": {
+          "kappa_c_bracket": [
+            "0.187523",
+            "0.188133"
+          ],
+          "r_c": [
+            "0.046840697872",
+            "0.046840697872"
+          ]
+        }
+      }
+    },
+    "T2_native_linearization": "rho = 2s/(1+s); odd(H1 H2) = p1 + p2 + (1/2)[p1,p2]; even = 1 - <p1,p2>; commutator is the only non-additive term = EMK-1 T5 / RST-1 T4 curvature on the fabric",
+    "T3_abelianized_fabric_gapless": "softest spatial stiffness <= 12 kappa/(m(m+1)) exactly; no volume-uniform gap without the commutator",
+    "T4_native_statement": "a weak-coupling gap lives entirely in the commutator (non-healable curvature) sector \u2014 named next object"
+  },
+  "verdict": "PASS"
+}
