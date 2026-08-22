@@ -1,0 +1,164 @@
+{
+  "certificate_type": "YM18_VACUUM_TRACKING_CALIBRATION_AND_CLUSTER_DESIGN",
+  "claim_status": "calibration_only__no_uniformity_claim",
+  "controls": {
+    "C1_enlarged_vacuum_exceeds_f0_power": true,
+    "C2_free_chain_diagonal": true,
+    "C3_engine_symmetry": true,
+    "C4_bracket_ordering": true,
+    "C5_pair_first_order_coefficient_is_f_half": true
+  },
+  "grid": {
+    "1/2": {
+      "log_f0": "0.031088914094",
+      "per_m": {
+        "2": {
+          "carrier_vacuum_f0_pow": "1.031577221563",
+          "lambda1_lower_bracket": [
+            "1.035216135927",
+            "1.035216135979"
+          ],
+          "phi_lo": "0.034610231899"
+        },
+        "3": {
+          "carrier_vacuum_f0_pow": "1.064151564048",
+          "lambda1_lower_bracket": [
+            "1.071679517241",
+            "1.071679517295"
+          ],
+          "phi_lo": "0.034613530077"
+        },
+        "4": {
+          "carrier_vacuum_f0_pow": "1.097754513764",
+          "lambda1_lower_bracket": [
+            "1.109407450389",
+            "1.109407450471"
+          ],
+          "phi_lo": "0.034608681436"
+        },
+        "5": {
+          "carrier_vacuum_f0_pow": "1.132418551267",
+          "lambda1_lower_bracket": [
+            "1.148442965826",
+            "1.148442965883"
+          ],
+          "phi_lo": "0.034601770551"
+        },
+        "6": {
+          "carrier_vacuum_f0_pow": "1.168177182763",
+          "lambda1_lower_bracket": [
+            "1.188830915119",
+            "1.188830915192"
+          ],
+          "phi_lo": "0.034594079991"
+        }
+      },
+      "phi_hi_YM17": "0.158578788318",
+      "tracking_bracket_width_at_M_MAX": "0.123984708327"
+    },
+    "1/4": {
+      "log_f0": "0.007802353882",
+      "per_m": {
+        "2": {
+          "carrier_vacuum_f0_pow": "1.007832871563",
+          "lambda1_lower_bracket": [
+            "1.008736800540",
+            "1.008736800591"
+          ],
+          "phi_lo": "0.008698855550"
+        },
+        "3": {
+          "carrier_vacuum_f0_pow": "1.015727097004",
+          "lambda1_lower_bracket": [
+            "1.017550371647",
+            "1.017550371698"
+          ],
+          "phi_lo": "0.008699071206"
+        },
+        "4": {
+          "carrier_vacuum_f0_pow": "1.023683156899",
+          "lambda1_lower_bracket": [
+            "1.026439747805",
+            "1.026439747882"
+          ],
+          "phi_lo": "0.008698753007"
+        },
+        "5": {
+          "carrier_vacuum_f0_pow": "1.031701535589",
+          "lambda1_lower_bracket": [
+            "1.035405568683",
+            "1.035405568735"
+          ],
+          "phi_lo": "0.008698300940"
+        },
+        "6": {
+          "carrier_vacuum_f0_pow": "1.039782721209",
+          "lambda1_lower_bracket": [
+            "1.044448484888",
+            "1.044448484954"
+          ],
+          "phi_lo": "0.008697796088"
+        }
+      },
+      "phi_hi_YM17": "0.066823844184",
+      "tracking_bracket_width_at_M_MAX": "0.058126048096"
+    },
+    "1/8": {
+      "log_f0": "0.001952489630",
+      "per_m": {
+        "2": {
+          "carrier_vacuum_f0_pow": "1.001954396979",
+          "lambda1_lower_bracket": [
+            "1.002180022818",
+            "1.002180022868"
+          ],
+          "phi_lo": "0.002177650016"
+        },
+        "3": {
+          "carrier_vacuum_f0_pow": "1.003912613627",
+          "lambda1_lower_bracket": [
+            "1.004364825518",
+            "1.004364825569"
+          ],
+          "phi_lo": "0.002177663648"
+        },
+        "4": {
+          "carrier_vacuum_f0_pow": "1.005874657407",
+          "lambda1_lower_bracket": [
+            "1.006554316651",
+            "1.006554316727"
+          ],
+          "phi_lo": "0.002177643505"
+        },
+        "5": {
+          "carrier_vacuum_f0_pow": "1.007840535799",
+          "lambda1_lower_bracket": [
+            "1.008748506153",
+            "1.008748506204"
+          ],
+          "phi_lo": "0.002177614928"
+        },
+        "6": {
+          "carrier_vacuum_f0_pow": "1.009810256298",
+          "lambda1_lower_bracket": [
+            "1.010947403928",
+            "1.010947403992"
+          ],
+          "phi_lo": "0.002177582975"
+        }
+      },
+      "phi_hi_YM17": "0.030247570496",
+      "tracking_bracket_width_at_M_MAX": "0.028069987521"
+    }
+  },
+  "honest_remainder": {
+    "scope": "toy carrier; 2D, AF, tightness, OS, non-triviality, metric universality, Clay OPEN",
+    "status": "finite-m measurement; uniformity OPEN; YM-18 proper = executing T3"
+  },
+  "theorems": {
+    "T1_enlarged_carrier_rayleigh_bounds": "certified lammax brackets of the compressed transfer on W'_m (dim 2m: vacuum, sites, bridge pairs), m = 2..6, strictly above f0^{m-1}",
+    "T2_tracking_bracket": "log f0 < phi_m^lo(W') <= phi_m <= (1/2) log lambda_1(Y_2k); residual width pinned as the number the cluster expansion must close",
+    "T3_cluster_dock_design": "monomers = odd two-site chains at 2kappa; activities = even bridges; polymers = connected unions on a line; weights = connected matrix elements / monomer vacua via the YM-15 engine (finite, exact); KP criterion with 1D connectivity 2^|gamma|; deliverables (i) phi analytic uniformly in m, (ii) m-uniform gap via truncated two-point decay; each line an obligation, none discharged here"
+  },
+  "verdict": "PASS"
+}

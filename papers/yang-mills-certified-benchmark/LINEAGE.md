@@ -67,3 +67,13 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   whose next object is a classical convergence criterion rather than a
   new carrier — the program has reached the cluster-expansion wall with
   its own coordinates.
+
+## YM-18 calibration (Aug 22 2026): vacuum tracking measured, cluster dock designed
+
+- CONSUMES: YM-15 engine (generalised to multiple insertions per site),
+  YM-16 f0, YM-17 upper end. PC-1 precedent for "calibration, not claim".
+- MEASURED: the enlarged-carrier vacuum rate is m-independent to ~1e-5
+  for m = 2..6 at every grid kappa. Evidence, not proof, that the
+  interleaved vacuum tracks a per-bridge rate.
+- DESIGNED, NOT EXECUTED: the Kotecky-Preiss dock (T3). Every line is an
+  obligation. YM-18 proper = discharging them.
