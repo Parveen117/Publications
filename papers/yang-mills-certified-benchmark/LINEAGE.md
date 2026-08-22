@@ -53,3 +53,17 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   control in the content basis = certified strong-coupling cluster
   radius, Osterwalder-Seiler shape) is YM-17.
 - IMPORTS ZERO external claims. Jentzsch anchor not used.
+
+## YM-17 (Aug 22 2026): the interleaving seam
+
+- CONSUMES: YM-16 dock at m = 2 (the pair), YM-5 doubling (pairwise),
+  YM-15 closed form, singular-value Weyl inequality (classical, cited).
+- RESULT: half-chains are exactly volume-uniform (product spectrum); the
+  A-chain's entire volume problem is the vacuum-tracking inequality
+  lambda_1(T) vs sigma_1(X) sigma_1(Y). Vacuum bracket per bridge now
+  O(kappa^2) at both ends. No m-uniform chain gap claimed.
+- YM-18 named: certified Kotecky-Preiss radius for the interleaving
+  polymer gas (two-site pairs as monomers). This is the first capsule
+  whose next object is a classical convergence criterion rather than a
+  new carrier — the program has reached the cluster-expansion wall with
+  its own coordinates.

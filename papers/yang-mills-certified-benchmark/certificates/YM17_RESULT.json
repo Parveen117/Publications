@@ -1,0 +1,104 @@
+{
+  "certificate_type": "YM17_INTERLEAVING_SEAM_HALF_CHAIN_UNIFORMITY",
+  "claim_status": "half_chains_exactly_m_uniform__chain_uniformity_OPEN_reduced_to_one_named_inequality",
+  "controls": {
+    "C1_pair_dock_certifies_on_grid": true,
+    "C2_product_spectrum_ratio_arithmetic": true,
+    "C3_bracket_ordering_old_vs_new": true,
+    "C4_exp_two_route_doubling": true,
+    "C5_price_gt_1_and_volume_monotone": true,
+    "C6_edge_pair_dock_no_k1_claim": true
+  },
+  "edge": {
+    "dock": {
+      "count_exact": null,
+      "count_lower": 1,
+      "count_upper": 3,
+      "mu": "14315731691735961570440289824991/10000000000000000000000000000000",
+      "status": "OK"
+    },
+    "pair_coupling": "2"
+  },
+  "grid": {
+    "1/2": {
+      "death_volume_IF_complement_inherited_p2_HYPOTHETICAL": 13,
+      "death_volume_certified_unchanged_mstar": 4,
+      "half_chain_uniform_ratio_bound": "9/10",
+      "pair_coupling": "1",
+      "pair_dock": {
+        "count_exact": 1,
+        "count_lower": 1,
+        "count_upper": 1,
+        "mu": "10172863871864730489738528496971/10000000000000000000000000000000",
+        "status": "OK"
+      },
+      "pair_top_upper_bound": "1.37321894209975685705",
+      "per_bridge_free_energy_bracket_new": [
+        "0.031088914094556",
+        "0.158578788318291"
+      ],
+      "per_bridge_free_energy_bracket_old": [
+        "0.031088914094556",
+        "0.500000000000000"
+      ],
+      "residual_price_p2": "1.135973365570782"
+    },
+    "1/4": {
+      "death_volume_IF_complement_inherited_p2_HYPOTHETICAL": 27,
+      "death_volume_certified_unchanged_mstar": 7,
+      "half_chain_uniform_ratio_bound": "9/10",
+      "pair_coupling": "1/2",
+      "pair_dock": {
+        "count_exact": 1,
+        "count_lower": 1,
+        "count_upper": 1,
+        "mu": "2321048748518066847262316935707/2500000000000000000000000000000",
+        "status": "OK"
+      },
+      "pair_top_upper_bound": "1.14299006000907627783",
+      "per_bridge_free_energy_bracket_new": [
+        "0.007802353882406",
+        "0.066823844184926"
+      ],
+      "per_bridge_free_energy_bracket_old": [
+        "0.007802353882406",
+        "0.250000000000000"
+      ],
+      "residual_price_p2": "1.060798037365939"
+    },
+    "1/8": {
+      "death_volume_IF_complement_inherited_p2_HYPOTHETICAL": 56,
+      "death_volume_certified_unchanged_mstar": 13,
+      "half_chain_uniform_ratio_bound": "9/10",
+      "pair_coupling": "1/4",
+      "pair_dock": {
+        "count_exact": 1,
+        "count_lower": 1,
+        "count_upper": 1,
+        "mu": "9070495844073690665354916645459/10000000000000000000000000000000",
+        "status": "OK"
+      },
+      "pair_top_upper_bound": "1.06236243553154975398",
+      "per_bridge_free_energy_bracket_new": [
+        "0.001952489630720",
+        "0.030247570496630"
+      ],
+      "per_bridge_free_energy_bracket_old": [
+        "0.001952489630720",
+        "0.125000000000000"
+      ],
+      "residual_price_p2": "1.028699189087489"
+    }
+  },
+  "honest_remainder": {
+    "complement": "dock complement bound unchanged (sup); the narrowing buys the vacuum side only \u2014 the hypothetical volume is labelled as such",
+    "scope": "toy carrier; 2D, AF, tightness, OS, non-triviality, metric universality, Clay OPEN",
+    "uniformity": "OPEN for the chain; certified for each half"
+  },
+  "theorems": {
+    "T1_half_chain_product_theorem": "Pi_odd/Pi_even are tensor products of the two-site chain at 2kappa (doubling pairwise); product spectrum => gap ratio = max(pair ratio, lambda), exactly m-independent; pair ratio certified <= nu on the grid",
+    "T2_vacuum_bracket_rate_kappa_squared": "|T| <= lambda_1(Y_2k)^{(m-1)/2}; per-bridge free energy in [log f0, (1/2) log lambda_1(Y_2k)_hi], both O(kappa^2)",
+    "T3_wall_is_one_inequality": "sigma_2(T) <= sigma_1(X) sigma_2(Y) has uniform ratio; non-uniformity enters only via lambda_1(T) vs sigma_1(X)sigma_1(Y) \u2014 the vacuum-tracking inequality; YM-18 = certified Kotecky-Preiss radius for the interleaving polymer gas"
+  },
+  "verdict": "PASS"
+}
