@@ -264,3 +264,14 @@ truncation remainder. Sector-resolved lower bounds on the grid show the
 swap-even branch rising and the swap-odd branch falling with coupling.
 
 CI runs exactly that one command plus pin diff and pytest.
+
+## YM-35 — T54′ energy version + commutator remainder (E4D-C with the RKF operator ladder)
+
+Framework inputs: theorum/54 (constant-μ chain is exactly its uncovered case — `sum_mu_diverges`), theorum/50 A4 (polarization visibility = YM-28's superposition gap), theorum/53 (energy, not mass), theorum/51 + 61 (commutator calculus). On the fabric, with the YM-30 engine as the only evaluator:
+
+- **T1 locality** — `[K^{1/2}, B_l]` vanishes on states with no content at sites l, l+1; non-adjacent face pairs do not mix (site content exactly ½). Commutator support is `{l−1, l+1}` — bridge-local, every m.
+- **T2 exact adjacent commutator energy** — `E_Σ([K^{1/2},B_l] B_{l+1}) = λ²·(3/4)·(1−√λ₁)²`, κ- and m-independent (site weights 1/4 : 3/4 = YM-25 recoupling squares, from the engine).
+- **T3 T54′ ratio theorem (commuting model, exact m ≤ 8)** — vacuum and excitation carry the same per-face factor; ratio exactly m-independent; `Σμ<∞` not needed for a ratio.
+- **T4 second-order remainder** — relative size ρ = μ²·(3/4)(1−√λ₁)² = 2.9e-4 / 1.2e-3 / 4.6e-3 at κ = 1/8, 1/4, 1/2 (a = 1); kill criterion ρ < 1/10 passed.
+
+**Verdict:** E4D-C's excitation bound opens at the first non-commutative order — the first obstruction is an exact local number, not a sup. **Not done:** the full face expansion (all words, contents j ≥ 1) — the worldline cluster problem (YM-33). E4D-C OPEN. Pin `EXPECTED_YM35.sha256`.
