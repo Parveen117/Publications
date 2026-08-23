@@ -305,3 +305,23 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   item E4D-C is replaced by the alternating-product gap statement; its
   vacuum half is YM-31, its excitation half is the one open item.
 - RH-Framework ledger edit to follow as a PR.
+
+## YM-37 (Aug 23 2026): the space transfer — m-uniformity as a theorem
+
+- CONSUMES: YM-33 t-row engine (validated against, exactly), YM-F1
+  quaternion carrier, RKF theorum/53 (native LDL / weights) and
+  theorum/28 §7–9 (finite seam matrix, outward certificate), YM-15 r.
+- REFUSES, with witness: "complement upper bound from T53 cut-square
+  weights". T53 T4 bounds pivots by the diagonal; a block with every
+  diagonal ≤ μ can have λmax > μ. Item 3's upper half stays OPEN.
+- RESULT: every YM-33/36 quantity is ⟨boundary, M τ^{m−1} boundary⟩ for
+  one column map τ = B^{-1}M on the even conjugation-invariant sector
+  (dim 8 at t = 2, 52 at t = 3); σ_1, σ_2 bracketed by exact inertia
+  (Bareiss, integer minors); m-uniformity of ρ_1(m,p) with an explicit
+  certified error; ρ_1^∞ = N_11/σ_1 bracketed two-sided.
+- Build notes: (i) the full invariant sector (dim 14) gave a rate ~1.4 r —
+  its σ_2 mode is the total-flip-odd state x0+y0 that no quantity here
+  touches; the centre-of-SU(2) symmetry fixed it; (ii) exact rational
+  LDL at dim 52 did not terminate in 17 min (10^9 face denominators in
+  B); replaced by fraction-free Bareiss with Jacobi sign rule, which
+  agrees with LDL at dim 8 and runs in seconds.

@@ -279,3 +279,17 @@ Framework inputs: theorum/54 (constant-μ chain is exactly its uncovered case �
 ## YM-36 — T54′ on the fabric at content ½ (face-word carrier)
 
 The alternating product `K^{1/2} M_w K^{1/2}` compressed to ALL superpositions of content-½ face insertions (2^{m−1} orthonormal words), exact rational matrices m = 2..6 at μ = 1/32, 1/16, 1/8 (declared rational-square kernel √λ½ = 11/16, √λ₁ = 3/8; YM-33 engine with per-column face labels). Excitation/vacuum ratio ρ_m increases with geometrically decaying increments (consecutive-increment ratios in [2/5, 3/5] certified); under declared q ≤ 2/3 the m-uniform limit is bracketed, e.g. ρ∞ ∈ [0.2225014, 0.2225544] at μ = 1/32. The top eigenvector is a genuine superposition (single-insertion weight 0.98 / 0.92 / 0.73), yet exceeds the one-face ratio by only 0.24 % / 0.93 % / 3.5 % — superpositions open no gap-closing channel at content ½. **Boundary:** compressed-operator statement (interlacing: lower bounds), contents j ≥ 1 outside the carrier (first effect = YM-35 commutator, ~μ²), m ≤ 6. E4D-C OPEN; it holds at content ½ on this carrier in compression with a geometric tail. Pin `EXPECTED_YM36.sha256`.
+
+## YM-37 — The space transfer: m-uniformity of the dressed time two-point ratio as a theorem
+
+**(a) refused with witness.** theorum/53 T4 bounds cut-square *weights* (`d_k ≤ S_kk`); a block with every diagonal ≤ μ can still have λmax > μ (2×2 witness, exact). So "complement λmax from T53 weights" is not available; item 3's upper half stays OPEN.
+
+**What is a theorem.** Every YM-33/36 quantity is `⟨boundary, M τ^{m−1} boundary⟩` for one column map τ = B⁻¹M (native quaternion carrier: faces/rungs are class functions of products, so only dot products appear; Haar = rational S³ moments; cut space = harmonic degree ≤ 2 per rail). τ commutes with simultaneous conjugation and with the centre of SU(2) acting on all rails; both boundary vectors are even, so everything lives in the even invariant sector: dim 8 (t = 2), 52 (t = 3). Validated **exactly** against `ym33.fabric_partition`. σ₁, σ₂ of the symmetric pencil (M, B) bracketed by exact inertia (fraction-free Bareiss, Jacobi sign rule); q := σ₂/σ₁ certified:
+
+| κ | q (t = 2) | q/r² | q (t = 3) | q/r² | ρ₁^∞ (two-sided) | certified err, interior p ≥ 3 |
+|---|---|---|---|---|---|---|
+| 1/8 | 0.0014578 | 1.495 | 0.0021668 | 2.222 | 0.43367710465900 | 9.3e-7 |
+| 1/4 | 0.0057991 | 1.492 | 0.0086057 | 2.215 | [0.4353154056078, 0.4353154056137] | 1.5e-5 |
+| 1/2 | 0.0226981 | 1.483 | 0.0334686 | 2.187 | [0.4417107170, 0.4417107229] | 2.6e-4 |
+
+so `|ρ₁(m,p) − ρ₁^∞| ≤ err(m,p)` for **every** m and interior p, with err explicit in σ₁, σ₂, ‖N‖_B, ‖e₀‖_B — YM-33's "bulk constant with geometric edges" is now certified with its rate (both q's lie in YM-33's measured window [r²/2, 2r²]), and ρ₁^∞ = N₁₁/σ₁ is a single-column Rayleigh quotient (YM-32's E_bulk reproduced to every digit). **Boundary:** fixed time order only; no complement bound; no m-uniform upper bound on the true gap — item 3's m-dependence is now a one-column pencil question, its upper half unchanged. Runtime ~16 min (own CI step). Pin `EXPECTED_YM37.sha256`.
