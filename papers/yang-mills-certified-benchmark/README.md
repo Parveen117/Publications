@@ -319,3 +319,16 @@ Session item (b). **T1:** the centre of SU(2) (total flip on every rail) grades 
 | 1/2 | 0.44171072 | 0.13837705 | 0.00268149 | ✓ |
 
 ρ(1) sits at the declared λ₁ = 9/64 scale (anchor check). So on this carrier the J = ½ excitation is certified **lightest, uniformly in m**, and no content ≥ 1 channel can mix into it — YM-36's boundary concern closed at the carrier level. **Boundary:** truncated faces/rung kernel (contents ≤ 1), so 3/2 is a composite row (data); compressed statements; E4D-C OPEN. Named next: the same ladder on the YM-22 heat-kernel trajectory, quantifying the collapse onto content ½ as a → 0. Pin `EXPECTED_YM39.sha256`.
+
+## YM-40 — Content ladder on the heat-kernel trajectory: the Casimir pinch
+
+YM-39's ladder run along YM-22's family (heat-kernel time kernel, Wilson faces at κ = a/16), a ∈ {1, 1/4, 1/16, 1/64}, everything per-a by the YM-37/38/39 native machinery (superselection exact at every a; every γ bracket carries the m-uniform band, so it holds for every m and interior p; native exp = YM-13 compound interest, native log = F00-G odd series, with a cross-route re-enclosure control):
+
+| a | γ_½ | γ₁ | Δγ | ε = \|Δγ − 5/4\| | r₁/r_½ |
+|---|---|---|---|---|---|
+| 1 | 0.7497494 | 1.9993628 | 1.2496134 | 6.4e-4 | 0.010416 |
+| 1/4 | 0.7499914 | 2.0001512 | 1.2501597 | 1.6e-4 | 0.002604 |
+| 1/16 | 0.7499999 | 2.0000692 | 1.2500693 | 7.0e-5 | 0.000651 |
+| 1/64 | 0.750000005 | 2.0000196 | 1.2500196 | 2.0e-5 | 0.000163 |
+
+**Certified:** Δγ(a) ≥ 1 at every a, and the two-sided pinch |Δγ(a) − 5/4| ≤ ε(a) with ε strictly decreasing — the content-1 channel's excess rate lands on the **free Casimir gap C₁ − C_½ = 5/4** in the cutoff direction, while the face ladder collapses (r₁/r_½ ↓, YM-22 tie). Session item (b) is now closed in both directions: fixed-a ordering with margins (YM-39) and cutoff-direction Casimir pinch (here). Build notes: the draft's "approach from below" was refused by the brackets (Δγ crosses 5/4; γ_½ crosses 3/4 — signed dressing), and the first run violated the standing round-before-log rule (12 min → 4 min). **Boundary:** order-1 dressed two-point, not the operator gap; declared trajectory; E4D-C OPEN. Pin `EXPECTED_YM40.sha256`.

@@ -1,0 +1,123 @@
+{
+  "certificate_type": "YM40_HEAT_KERNEL_CONTENT_LADDER_CASIMIR",
+  "claim_status": "superselection_on_family_EXACT__channel_rates_bracketed_m_uniform__Delta_gamma_floor_1_and_two_sided_pinch_onto_Casimir_5_4__faces_collapse__compressed_order1_only__trajectory_declared__E4DC_OPEN",
+  "controls": {
+    "C1_superselection_every_a": true,
+    "C2_outward_certificate_every_a": true,
+    "C3_tables_inside": true,
+    "C4_gamma_brackets_and_exp_crosscheck": true,
+    "C5_ladder_floor_pinch_and_face_collapse": true
+  },
+  "grid": {
+    "1": {
+      "Delta_floor_ge_1": true,
+      "Delta_gamma": [
+        "1.249613372090",
+        "1.249613375836"
+      ],
+      "L_beta": "0.00037752401519",
+      "band_half": "0.00000000044194287555",
+      "band_one": "0.00000000012682615909",
+      "gamma_half": [
+        "0.749749421886",
+        "0.749749423758"
+      ],
+      "gamma_one": [
+        "1.999362795848",
+        "1.999362797722"
+      ],
+      "kappa": "1/16",
+      "pinch_eps_strictly_decreasing": true,
+      "pinch_eps_to_5_4": "0.000386627910",
+      "r1_over_rhalf": [
+        "0.010415819066",
+        "0.010415819066"
+      ],
+      "rho_half": "0.4724849318498733",
+      "rho_one": "0.1354215467949874"
+    },
+    "1/16": {
+      "Delta_floor_ge_1": true,
+      "Delta_gamma": [
+        "1.250069324625",
+        "1.250069324627"
+      ],
+      "L_beta": "0.00000242753098",
+      "band_half": "0.00000000000000000023",
+      "band_one": "0.00000000000000000021",
+      "gamma_half": [
+        "0.749999850097",
+        "0.749999850098"
+      ],
+      "gamma_one": [
+        "2.000069174723",
+        "2.000069174724"
+      ],
+      "kappa": "1/256",
+      "pinch_eps_strictly_decreasing": true,
+      "pinch_eps_to_5_4": "0.000069324627",
+      "r1_over_rhalf": [
+        "0.000651041459",
+        "0.000651041459"
+      ],
+      "rho_half": "0.9542066749090334",
+      "rho_one": "0.8824930871878923"
+    },
+    "1/4": {
+      "Delta_floor_ge_1": true,
+      "Delta_gamma": [
+        "1.250159744680",
+        "1.250159744682"
+      ],
+      "L_beta": "0.00003423640671",
+      "band_half": "0.00000000000002497705",
+      "band_one": "0.00000000000001827289",
+      "gamma_half": [
+        "0.749991407095",
+        "0.749991407096"
+      ],
+      "gamma_one": [
+        "2.000151151776",
+        "2.000151151777"
+      ],
+      "kappa": "1/64",
+      "pinch_eps_strictly_decreasing": true,
+      "pinch_eps_to_5_4": "0.000159744682",
+      "r1_over_rhalf": [
+        "0.002604153421",
+        "0.002604153421"
+      ],
+      "rho_half": "0.8290308991243566",
+      "rho_one": "0.6065077405989336"
+    },
+    "1/64": {
+      "Delta_floor_ge_1": true,
+      "Delta_gamma": [
+        "1.250019585042",
+        "1.250019585044"
+      ],
+      "L_beta": "0.00000015565357",
+      "band_half": "0.00000000000000000000",
+      "band_one": "0.00000000000000000000",
+      "gamma_half": [
+        "0.750000004631",
+        "0.750000004632"
+      ],
+      "gamma_one": [
+        "2.000019589674",
+        "2.000019589675"
+      ],
+      "kappa": "1/1024",
+      "pinch_eps_strictly_decreasing": true,
+      "pinch_eps_to_5_4": "0.000019585044",
+      "r1_over_rhalf": [
+        "0.000162760413",
+        "0.000162760413"
+      ],
+      "rho_half": "0.9883496470423255",
+      "rho_one": "0.9692329378050890"
+    }
+  },
+  "theta": "1/16",
+  "verdict": "PASS"
+}

@@ -394,3 +394,28 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   claim); compressed statements; no operator upper bound; E4D-C OPEN.
 - Named next: the same ladder on the heat-kernel trajectory (YM-22),
   where r_j/a -> 0 for j >= 1 quantifies the collapse onto content 1/2.
+
+## YM-40 (Aug 23 2026): heat-kernel content ladder — Casimir pinch
+
+- CONSUMES: YM-22 trajectory (kappa = theta a, theta = 1/16; face-ladder
+  collapse), YM-37/38/39 machinery verbatim per a, YM-13 compound-
+  interest exp (via YM-19 exp_neg), YM-1/F00-G odd-series log (log_iv).
+  No new verdict types; nothing classical.
+- RESULT: (T1) centre superselection exact at every a on the family;
+  (T2) channel rates gamma_c(a) = -Log(rho_c)/a bracketed two-sided,
+  m-uniform bands included, with an independent exp-route re-enclosure
+  control; (T3) Delta_gamma(a) >= 1 at every a AND the two-sided PINCH
+  |Delta_gamma(a) - 5/4| <= eps(a), eps certified strictly decreasing
+  (6.4e-4, 1.6e-4, 7.0e-5, 2.0e-5): the channel spacing lands on the
+  free Casimir gap C_1 - C_1/2 in the cutoff direction; (T4) face
+  ladder r_1/r_1/2 strictly decreasing on the same grid (YM-22 tie).
+- Build notes: (i) first draft claimed monotone approach to 5/4 from
+  BELOW; the certified brackets cross 5/4 after a = 1 and approach from
+  above — replaced by the pinch (YM-22's approach-direction lesson,
+  mirror image); gamma_1/2 likewise crosses 3/4 along the family —
+  the dressing term is signed; (ii) first run ground for 12+ minutes on
+  odd-series logs fed raw 100-digit rationals — the standing YM-23 rule
+  (round outward BEFORE odd-series logs) applied, run time ~4 min.
+- Boundary: order-1 dressed two-point on the carrier (compressed,
+  lower-bound side), NOT the operator gap; kernel contents <= 1 (no
+  chi_3/2 Casimir claim); trajectory declared; E4D-C OPEN.
