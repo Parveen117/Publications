@@ -325,3 +325,21 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   LDL at dim 52 did not terminate in 17 min (10^9 face denominators in
   B); replaced by fraction-free Bareiss with Jacobi sign rule, which
   agrees with LDL at dim 8 and runs in seconds.
+
+## STANDING CORRECTION to YM-37 (same day, owner's audit question)
+
+- YM-37 T3's proof of the all-m bound uses the finite spectral
+  decomposition of the pencil (v_k "eigenvectors") — a CLASSICAL_THEOREM_IMPORT
+  by the framework's own audit vocabulary; T53 explicitly does not claim
+  weights = eigenvalues. Status of T3: ANCHORED (YM-19 precedent). The
+  inertia brackets, sector reduction, exact matches and all rationals
+  are unaffected; what is anchored is only the route from the brackets
+  to the for-all-m statement.
+- NAMED YM-38 (native replacement): n_+(M - sigma B) = 1 + T53 gives a
+  one-positive-weight square d_+ |c_+(x)|^2 with an explicit rational
+  witness row (codimension-1 negativity, no eigenvectors); top direction
+  by explicit-vector deflation (YM-8 lesson) with the defect
+  ||(B^-1 M)w - theta w||_B tracked exactly; two-block recursion in the
+  theorum/28 Sec 9 outward-certificate shape. Same brackets expected.
+- Remaining declared shadow (unchanged, inherited): Haar <-> Phi_Sigma
+  = RH T01-E5C/E6, OPEN.
