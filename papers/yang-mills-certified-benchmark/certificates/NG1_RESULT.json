@@ -1,0 +1,42 @@
+{
+  "NG_statement": "exists gamma_* > 0 and a declared trajectory kappa(a) such that every member of the recognition fabric family has recognition gap gamma(a,m,t) >= gamma_* for all a, m, t, each instance certified by native verdicts, every infinite direction taken through theorum/28's outward certificate",
+  "certificate_type": "NG1_NATIVE_GAP_STATEMENT_AND_TEETH",
+  "cited_capsules": [
+    "YM8",
+    "YM9",
+    "YM11",
+    "YM22",
+    "YM23",
+    "YM37",
+    "YM38",
+    "YM39",
+    "YM40",
+    "YM41"
+  ],
+  "claim_status": "statement_and_refutation_conditions_FIXED__ledger_relabelled_against_NG__no_new_numbers__NG_is_NOT_the_clay_statement__DICT_declared_OPEN",
+  "controls": {
+    "C1_cited_capsules_exist_and_pass": true,
+    "C1_failing": [],
+    "C1_missing": [],
+    "C2_teeth_citations_have_stated_shape": true,
+    "C3_no_capsule_claims_clay_os_continuum": true
+  },
+  "dictionary": "OPEN \u2014 native derivation of Phi_Sigma <-> Haar/Peter-Weyl and the precise classical consequence (if any) of NG; RH T01-E5C/E6",
+  "obligations": {
+    "DICT_translation_to_clay": "OPEN__separate_problem__RH_T01_E5C_E6",
+    "O1_single_member_gap": "DELIVERED",
+    "O2_volume_direction_m": "DELIVERED_ON_COLUMN__chain_operator_upper_bound_NOT_delivered",
+    "O3_content_direction": "DELIVERED",
+    "O4_time_direction_t": "OPEN__the_remainder__named_YM42",
+    "O5_cutoff_direction_a": "PARTIAL__declared_trajectory_only__AF_shape_not_modelled",
+    "O6_evidence_standard": "IN_FORCE"
+  },
+  "refutation_conditions": {
+    "R1_volume": "live; global-sup route already killed by YM-11 gate 2 (route, not NG)",
+    "R2_cutoff": "live; YM-22 floor 23/32 over six decades, YM-23 route exits at a=1/8",
+    "R3_sector": "live; seam-flow meter (RKF theorum/76, docked YM-41) is the instrument",
+    "R4_content": "live; YM-39 ordering with margins, YM-40 Casimir pinch",
+    "R5_tamper": "in force; a control that cannot fail is not evidence (AUDIT_74_75)"
+  },
+  "verdict": "PASS"
+}

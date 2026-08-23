@@ -443,3 +443,18 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   of silence contractions — and the t-uniform statement linking
   beta_sil(t) to the excitation/vacuum ratio limit. Clay/OS/continuum
   gates unchanged, OPEN.
+
+## NG-1 (Aug 23 2026): the native gap statement
+
+- OWNER'S DECISION after asking whether the program was posing the wrong
+  question: pursue the framework's own gap theorem; declare the
+  translation to Clay as a separate open dictionary problem.
+- CONTAINS NO NEW NUMBERS. Fixes NG, fixes five refutation conditions,
+  re-labels the certified corpus against NG's obligation list.
+- CONTROLS are against pinned artifacts, not narration: every cited
+  capsule must exist and PASS; the teeth citations must have the stated
+  shape in the stored results; no capsule may claim Clay/OS/continuum
+  outside an open/boundary context. A test asserts C1 can fail.
+- HONEST POSITION RECORDED: scored against NG the program is not near
+  zero, but O4 (time) and O5 (cutoff) are where the difficulty lives and
+  no capsule has touched the chain's operator upper bound.
