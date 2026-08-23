@@ -1,0 +1,198 @@
+{
+  "certificate_type": "YM36_T54PRIME_ON_FABRIC_CONTENT_HALF_FACE_WORD_CARRIER",
+  "declared": {
+    "carrier": "all 2^(m-1) face-insertion words, orthonormal",
+    "face_weight": "w_pt/f0 = 1 + 2 mu chi_half (content-1/2 truncation, YM-31)",
+    "rational_square_kernel": {
+      "sqrt_lambda_1": "3/8",
+      "sqrt_lambda_half": "11/16"
+    },
+    "tail_continuation": "q <= 2/3 (declared, observed in [2/5,3/5])"
+  },
+  "grid": {
+    "1/16": {
+      "excess_over_single_insertion_ratio_rho2": "0.00925679",
+      "increment_ratios": {
+        "2": "0.503283",
+        "3": "0.418312",
+        "4": "0.493691"
+      },
+      "increment_ratios_in_2_5_to_3_5": true,
+      "increments": {
+        "2": "0.0009960482",
+        "3": "0.00050129424",
+        "4": "0.00020969722",
+        "5": "0.00010352566"
+      },
+      "increments_positive": true,
+      "lambda_squared_reference": "14641/65536",
+      "rho_inf_bracket_under_q_le_2_3": [
+        "0.219771264304",
+        "0.219978315624"
+      ],
+      "rows": {
+        "2": {
+          "dim": 2,
+          "rho": "0.217960698984625",
+          "top": "0.218934794932527",
+          "top_vector_single_insertion_weight": "0.99431071",
+          "vacuum": "1.00446913573154"
+        },
+        "3": {
+          "dim": 4,
+          "rho": "0.218956747184922",
+          "top": "0.220920277736907",
+          "top_vector_single_insertion_weight": "0.96827633",
+          "vacuum": "1.00896766405799"
+        },
+        "4": {
+          "dim": 8,
+          "rho": "0.219458041420518",
+          "top": "0.222417732983973",
+          "top_vector_single_insertion_weight": "0.95085746",
+          "vacuum": "1.01348636643387"
+        },
+        "5": {
+          "dim": 16,
+          "rho": "0.219667738643776",
+          "top": "0.223627316869614",
+          "top_vector_single_insertion_weight": "0.93542633",
+          "vacuum": "1.01802530608402"
+        },
+        "6": {
+          "dim": 32,
+          "rho": "0.219771264303882",
+          "top": "0.224734704588726",
+          "top_vector_single_insertion_weight": "0.92084692",
+          "vacuum": "1.02258457355908"
+        }
+      },
+      "symmetric": true
+    },
+    "1/32": {
+      "excess_over_single_insertion_ratio_rho2": "0.00234987",
+      "increment_ratios": {
+        "2": "0.500844",
+        "3": "0.415264",
+        "4": "0.492477"
+      },
+      "increment_ratios_in_2_5_to_3_5": true,
+      "increments": {
+        "2": "0.00025878934",
+        "3": "0.00012961319",
+        "4": "5.382374e-5",
+        "5": "2.6506977e-5"
+      },
+      "increments_positive": true,
+      "lambda_squared_reference": "14641/65536",
+      "rho_inf_bracket_under_q_le_2_3": [
+        "0.222501430362",
+        "0.222554444316"
+      ],
+      "rows": {
+        "2": {
+          "dim": 2,
+          "rho": "0.222032697116161",
+          "top": "0.22228183830832",
+          "top_vector_single_insertion_weight": "0.99855928",
+          "vacuum": "1.00112209235574"
+        },
+        "3": {
+          "dim": 4,
+          "rho": "0.222291486451997",
+          "top": "0.222790762943037",
+          "top_vector_single_insertion_weight": "0.99186805",
+          "vacuum": "1.00224604414235"
+        },
+        "4": {
+          "dim": 8,
+          "rho": "0.222421099644876",
+          "top": "0.22317093860669",
+          "top_vector_single_insertion_weight": "0.98734387",
+          "vacuum": "1.003371258226"
+        },
+        "5": {
+          "dim": 16,
+          "rho": "0.222474923385233",
+          "top": "0.223475556763662",
+          "top_vector_single_insertion_weight": "0.98329887",
+          "vacuum": "1.00449773557938"
+        },
+        "6": {
+          "dim": 32,
+          "rho": "0.222501430362187",
+          "top": "0.223753107179195",
+          "top_vector_single_insertion_weight": "0.9794393",
+          "vacuum": "1.00562547762039"
+        }
+      },
+      "symmetric": true
+    },
+    "1/8": {
+      "excess_over_single_insertion_ratio_rho2": "0.0349507",
+      "increment_ratios": {
+        "2": "0.511796",
+        "3": "0.429107",
+        "4": "0.498231"
+      },
+      "increment_ratios_in_2_5_to_3_5": true,
+      "increments": {
+        "2": "0.0034322734",
+        "3": "0.0017566245",
+        "4": "0.00075378072",
+        "5": "0.0003755573"
+      },
+      "increments_positive": true,
+      "lambda_squared_reference": "14641/65536",
+      "rho_inf_bracket_under_q_le_2_3": [
+        "0.208584648904",
+        "0.209335763497"
+      ],
+      "rows": {
+        "2": {
+          "dim": 2,
+          "rho": "0.202266412974926",
+          "top": "0.205822538169837",
+          "top_vector_single_insertion_weight": "0.97834161",
+          "vacuum": "1.01758139249423"
+        },
+        "3": {
+          "dim": 4,
+          "rho": "0.205698686395782",
+          "top": "0.213023961694585",
+          "top_vector_single_insertion_weight": "0.88436023",
+          "vacuum": "1.0356116775812"
+        },
+        "4": {
+          "dim": 8,
+          "rho": "0.207455310886141",
+          "top": "0.218650206280223",
+          "top_vector_single_insertion_weight": "0.82403585",
+          "vacuum": "1.05396292505727"
+        },
+        "5": {
+          "dim": 16,
+          "rho": "0.208209091607275",
+          "top": "0.223333270315119",
+          "top_vector_single_insertion_weight": "0.77255206",
+          "vacuum": "1.07263937703725"
+        },
+        "6": {
+          "dim": 32,
+          "rho": "0.208584648903826",
+          "top": "0.227700760331654",
+          "top_vector_single_insertion_weight": "0.72578648",
+          "vacuum": "1.09164677999214"
+        }
+      },
+      "symmetric": true
+    }
+  },
+  "honest_boundary": [
+    "compression (interlacing): compressed eigenvalues are lower bounds of the true ones; rho_m is a compressed-operator statement",
+    "contents j>=1 outside the carrier; first effect = YM-35 adjacent commutator, relative size ~mu^2",
+    "m <= 6 certified; m = 7 reproduced off-line once (increment ratios 0.56)",
+    "E4D-C OPEN; holds at content 1/2 on the face-word carrier in compression with geometric tail"
+  ],
+  "verdict": "PASS"
+}
