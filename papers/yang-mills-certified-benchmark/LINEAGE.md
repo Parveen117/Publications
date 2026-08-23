@@ -372,3 +372,25 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   structure, nothing claimed below p₀; (iii) a bracket comparison
   against YM-37's 14-digit decimal strings needed the stored-precision
   slack — exact rationals vs rounded display.
+
+## YM-39 (Aug 23 2026): content ladder — superselection + channel ordering
+
+- CONSUMES: YM-37 pencil/carrier, YM-38 native uniformity machinery
+  (applied verbatim per channel — the derivation never used more of N
+  than its pencil norm and reference positivity), YM-33 engine
+  (cross-check of the exact vanishing), theorum/51 zero-residue sector
+  (the centre-even split), YM-22 (ladder collapse, named next step).
+- RESULT: (T1) centre Z2 of SU(2) superselects the fabric — mixed
+  half-integer/integer fabric quantities vanish EXACTLY (zero matrix +
+  engine zeros; a same-parity pair is nonzero, so the vanishing bites
+  on parity); (T2) per-channel m-uniform bulk ratios with certified
+  bands; (T3) strict ordering rho_1/2 > rho_1 > rho_3/2 WITH the
+  uniformity margins on both sides, all grid kappa — the J = 1/2
+  channel is the lightest on the carrier for every m and interior p,
+  and no content >= 1 channel can mix into it. Session item (b) closed
+  at the carrier level.
+- Boundary: declared truncated faces/rung kernel (contents <= 1), so
+  chi_3/2 is a composite channel here (data row, not a fundamental
+  claim); compressed statements; no operator upper bound; E4D-C OPEN.
+- Named next: the same ladder on the heat-kernel trajectory (YM-22),
+  where r_j/a -> 0 for j >= 1 quantifies the collapse onto content 1/2.

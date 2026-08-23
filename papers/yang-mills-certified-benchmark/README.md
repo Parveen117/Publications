@@ -307,3 +307,15 @@ The YM-37 T3 statement re-proved with the framework's own machinery, nothing els
 | 1/2 | 0.0226981 | 2.17e-5 | 8/8 inside |
 
 The coarse constant beats the anchored YM-37 one (1.9e-8 vs 9.3e-7 at κ = 1/8); ρ_c lies inside YM-37's bracket at every κ. **YM-37's standing correction is RESOLVED** — its T3 now rests on this capsule; also corrected there: the pinned dim-52 run used the native elimination, not Bareiss (LINEAGE). Certificates refused three drafts (missing reference-tail term; backwards extrapolation below p₀; display-precision comparison) — all recorded. Pin `EXPECTED_YM38.sha256`.
+
+## YM-39 — Content ladder: centre superselection (exact) + certified channel ordering
+
+Session item (b). **T1:** the centre of SU(2) (total flip on every rail) grades the fabric exactly — faces and rungs are centre-blind class functions of products, χ_j picks (−1)^{2j} — so every mixed half-integer/integer fabric quantity vanishes **identically**: the mixed insertion matrix is the zero matrix (exact rationals) and the YM-33 engine's mixed partitions are 0; a same-parity pair (½ with 3/2) is nonzero, so the vanishing is parity, not accident. Superselection at every coupling, every m, every time order. **T2/T3:** per-channel bulk ratios by the YM-38 native route (same τ, same L, channel-specific N), with the m-uniform band on both sides of every comparison:
+
+| κ | ρ(½) | ρ(1) | ρ(3/2) | ordering with margins |
+|---|---|---|---|---|
+| 1/8 | 0.43367710 | 0.13403748 | 0.00016958 | ✓ |
+| 1/4 | 0.43531541 | 0.13491222 | 0.00067672 | ✓ |
+| 1/2 | 0.44171072 | 0.13837705 | 0.00268149 | ✓ |
+
+ρ(1) sits at the declared λ₁ = 9/64 scale (anchor check). So on this carrier the J = ½ excitation is certified **lightest, uniformly in m**, and no content ≥ 1 channel can mix into it — YM-36's boundary concern closed at the carrier level. **Boundary:** truncated faces/rung kernel (contents ≤ 1), so 3/2 is a composite row (data); compressed statements; E4D-C OPEN. Named next: the same ladder on the YM-22 heat-kernel trajectory, quantifying the collapse onto content ½ as a → 0. Pin `EXPECTED_YM39.sha256`.
