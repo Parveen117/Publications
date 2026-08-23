@@ -419,3 +419,27 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - Boundary: order-1 dressed two-point on the carrier (compressed,
   lower-bound side), NOT the operator gap; kernel contents <= 1 (no
   chi_3/2 Casimir claim); trajectory declared; E4D-C OPEN.
+
+## YM-41 (Aug 23 2026): the tools dock — E4D-C restated
+
+- CONSUMES (cross-repo, YM-27 discipline — cited by pin, re-verified on
+  this side): RKF theorum/74 (bfe40c2), theorum/75 (d185e86 + regrading
+  13b4315), theorum/76 (51afbcd), audit (3534418 + 8679f0b).
+- RE-VERIFIED on the Publications pencil: silence-channel contraction
+  beta_sil < 1 at every kappa (values agree with RKF to the last printed
+  digit — both roundings coincide at 1e-9); ladder law with the
+  discrimination check (tight, not loose); the seam-flow meter with the
+  per-bracket parity law (count route = det route); ladder identity
+  exact; superselection inside the meter ((0,1/2) slot empty).
+- CONSUMED BY PIN (not re-instantiated here): theorum/75's stationarity,
+  seam-count retention at Lambda = 3/2, 2, and the outward certificate
+  u + e < 1 for the untruncated column. Publications-side
+  re-instantiation = future work if wanted; the RKF certificate is the
+  derivation of record.
+- E4D-C LEDGER UPDATE: m eliminated (YM-37), content tail lawfully
+  released (theorum/75), contraction structural (theorum/74). The
+  alternating product's remaining open content is the t-DIRECTION ONLY.
+  NAMED YM-42: beta_sil(t = 3) on the 52-dim even sector — the t-ladder
+  of silence contractions — and the t-uniform statement linking
+  beta_sil(t) to the excitation/vacuum ratio limit. Clay/OS/continuum
+  gates unchanged, OPEN.

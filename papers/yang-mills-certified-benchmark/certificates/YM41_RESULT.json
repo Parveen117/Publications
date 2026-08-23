@@ -1,0 +1,92 @@
+{
+  "certificate_type": "YM41_TOOLS_DOCK_E4DC_RESTATED",
+  "claim_status": "silence_contraction_reverified_on_ym_pencil__ladder_law_reverified_with_discrimination__seam_flow_meter_reverified__selective_release_CONSUMED_by_pin__E4DC_remainder_is_the_t_direction_ONLY__ym42_named",
+  "controls": {
+    "C1_silence_contraction_and_nonvacuous_refusal": true,
+    "C2_ladder_law_and_discrimination": true,
+    "C3_meter_parity_per_bracket": true,
+    "C4_ladder_identity_exact": true,
+    "C5_superselection_and_tamper": true
+  },
+  "grid": {
+    "1/2": {
+      "beta_lt_1": true,
+      "beta_sil": "0.041733272961",
+      "sigma_sil": "0.02443479887097",
+      "theta_sil": "1.0641515628860828"
+    },
+    "1/4": {
+      "beta_lt_1": true,
+      "beta_sil": "0.010286606270",
+      "sigma_sil": "0.00590751757226",
+      "theta_sil": "1.0157270958681026"
+    },
+    "1/8": {
+      "beta_lt_1": true,
+      "beta_sil": "0.002562637244",
+      "sigma_sil": "0.00146452863373",
+      "theta_sil": "1.0039126116637248"
+    }
+  },
+  "meter_column_pencil": {
+    "flips": [
+      {
+        "det_flip": true,
+        "jump": 1,
+        "kappa_lo": "1942475904089/1099511627776"
+      },
+      {
+        "det_flip": true,
+        "jump": 1,
+        "kappa_lo": "2556818478941/1099511627776"
+      },
+      {
+        "det_flip": true,
+        "jump": 1,
+        "kappa_lo": "2602097275075/1099511627776"
+      },
+      {
+        "det_flip": true,
+        "jump": 1,
+        "kappa_lo": "1494378453971/549755813888"
+      },
+      {
+        "det_flip": true,
+        "jump": 1,
+        "kappa_lo": "3355745616777/1099511627776"
+      },
+      {
+        "det_flip": true,
+        "jump": 1,
+        "kappa_lo": "1806017788599/549755813888"
+      },
+      {
+        "det_flip": true,
+        "jump": 1,
+        "kappa_lo": "226021194793/68719476736"
+      }
+    ],
+    "kappa_range": [
+      "1/16",
+      "4"
+    ],
+    "mu": "1/2",
+    "n_flips": 7,
+    "sectors": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      8
+    ]
+  },
+  "rkf_source_pins": {
+    "audit_74_75": "3534418+8679f0b",
+    "theorum_74_lopa_ledger_contraction": "bfe40c2",
+    "theorum_75_native_regrading": "13b4315",
+    "theorum_75_selective_release": "d185e86",
+    "theorum_76_seam_flow_meter": "51afbcd"
+  },
+  "verdict": "PASS"
+}
