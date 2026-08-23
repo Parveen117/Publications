@@ -343,3 +343,32 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   theorum/28 Sec 9 outward-certificate shape. Same brackets expected.
 - Remaining declared shadow (unchanged, inherited): Haar <-> Phi_Sigma
   = RH T01-E5C/E6, OPEN.
+
+## YM-38 (Aug 23 2026): native m-uniformity — YM-37's import removed
+
+- CONSUMES (all framework-internal): T53 elimination (every count is a
+  sign pattern of native weights — the quadratic-form ceiling needs no
+  eigenvalues), RH T01-C cut-square inequality, theorum/28 §3–5/§9
+  (recognized-channel Cauchy with declared geometric tail; outward
+  certificate beta = L < 1), theorum/54 §2 product bound (replaces all
+  exponentials), YM-8 deflation lesson (explicit vector, exact defect).
+- RESULT: |ρ₁(m,p) − ρ_c| ≤ A·(L^{j−p₀} + L^{j_c−p₀}) for ALL m,p with
+  j = min(p−1, m−p) ≥ p₀, in two certified regimes p₀ = 2 (all interior
+  p — the YM-37 T3 scope) and p₀ = 12 (sharp); exact identities:
+  r_w ⊥_B w, U'BτU = U'MU, split step law. Coarse A beats the anchored
+  YM-37 constant (1.9e-8 vs 9.3e-7 at κ = 1/8). YM-37's standing
+  correction is RESOLVED: T3's statement now rests on this capsule.
+- CORRECTION of the YM-37 build note (narration ≠ arithmetic): the
+  LINEAGE entry above claimed the dim-52 inertia ran on fraction-free
+  Bareiss. Inspection of the committed file shows that patch never
+  applied — the pinned YM-37 run used the NATIVE T53 elimination
+  throughout, dim 52 included. No Bareiss identity is in any
+  load-bearing path anywhere; the in-session timing note was about an
+  uncommitted experiment.
+- Build notes: (i) first error formula dropped the reference point's own
+  tail term A·L^{j_c−p₀} — the exact table refused it ((30,15) outside);
+  (ii) a backwards extrapolation L^{j−p₀} for j < p₀ was heuristic — the
+  exact value at (30,10) refused it by 47×; replaced by the two-regime
+  structure, nothing claimed below p₀; (iii) a bracket comparison
+  against YM-37's 14-digit decimal strings needed the stored-precision
+  slack — exact rationals vs rounded display.

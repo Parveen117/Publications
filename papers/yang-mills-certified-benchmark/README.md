@@ -292,4 +292,18 @@ The alternating product `K^{1/2} M_w K^{1/2}` compressed to ALL superpositions o
 | 1/4 | 0.0057991 | 1.492 | 0.0086057 | 2.215 | [0.4353154056078, 0.4353154056137] | 1.5e-5 |
 | 1/2 | 0.0226981 | 1.483 | 0.0334686 | 2.187 | [0.4417107170, 0.4417107229] | 2.6e-4 |
 
-so `|ρ₁(m,p) − ρ₁^∞| ≤ err(m,p)` for **every** m and interior p, with err explicit in σ₁, σ₂, ‖N‖_B, ‖e₀‖_B — YM-33's "bulk constant with geometric edges" is now certified with its rate (both q's lie in YM-33's measured window [r²/2, 2r²]), and ρ₁^∞ = N₁₁/σ₁ is a single-column Rayleigh quotient (YM-32's E_bulk reproduced to every digit). **Boundary:** fixed time order only; no complement bound; no m-uniform upper bound on the true gap — item 3's m-dependence is now a one-column pencil question, its upper half unchanged. Runtime ~16 min (own CI step). Pin `EXPECTED_YM37.sha256`. **Standing correction (same day):** T3's for-all-m route uses the finite spectral split — classical import; status ANCHORED pending YM-38 (native replacement: T53 one-positive-weight square + explicit-vector deflation). Brackets and exact data unaffected.
+so `|ρ₁(m,p) − ρ₁^∞| ≤ err(m,p)` for **every** m and interior p, with err explicit in σ₁, σ₂, ‖N‖_B, ‖e₀‖_B — YM-33's "bulk constant with geometric edges" is now certified with its rate (both q's lie in YM-33's measured window [r²/2, 2r²]), and ρ₁^∞ = N₁₁/σ₁ is a single-column Rayleigh quotient (YM-32's E_bulk reproduced to every digit). **Boundary:** fixed time order only; no complement bound; no m-uniform upper bound on the true gap — item 3's m-dependence is now a one-column pencil question, its upper half unchanged. Runtime ~16 min (own CI step). Pin `EXPECTED_YM37.sha256`. **Standing correction (same day):** T3's for-all-m route uses the finite spectral split — classical import; status ANCHORED pending YM-38. **Resolved by YM-38 (same day): the for-all-m statement now rests on the native route; see the YM-38 entry.**
+
+## YM-38 — Native m-uniformity (YM-37's spectral import removed)
+
+The YM-37 T3 statement re-proved with the framework's own machinery, nothing else: deflation with the explicit vector w = x₁₂ (defect exactly B-orthogonal, `r_w'Bw = 0`), complement ceiling `‖Πτy‖_B ≤ σ''‖y‖_B` from **one T53 elimination sign check** on the restricted doubled pencil (no eigenvectors anywhere), recognized-channel Cauchy with declared geometric tail and outward certificate **β = L < 1** (theorum/28 §3–5, §9), window products handled by theorum/54 §2's `∏(1+x) ≤ 1+2s` bound. Result per κ, two regimes:
+
+`|ρ₁(m,p) − ρ_c| ≤ A·(L^{j−p₀} + L^{j_c−p₀})` for **all** m, p with `j = min(p−1, m−p) ≥ p₀`, where ρ_c = exact ρ₁(26,13):
+
+| κ | L (= β) | A (p₀ = 2, all interior p) | check rows |
+|---|---|---|---|
+| 1/8 | 0.0014578 | 1.93e-8 | 8/8 inside |
+| 1/4 | 0.0057991 | 6.34e-7 | 8/8 inside |
+| 1/2 | 0.0226981 | 2.17e-5 | 8/8 inside |
+
+The coarse constant beats the anchored YM-37 one (1.9e-8 vs 9.3e-7 at κ = 1/8); ρ_c lies inside YM-37's bracket at every κ. **YM-37's standing correction is RESOLVED** — its T3 now rests on this capsule; also corrected there: the pinned dim-52 run used the native elimination, not Bareiss (LINEAGE). Certificates refused three drafts (missing reference-tail term; backwards extrapolation below p₀; display-precision comparison) — all recorded. Pin `EXPECTED_YM38.sha256`.
