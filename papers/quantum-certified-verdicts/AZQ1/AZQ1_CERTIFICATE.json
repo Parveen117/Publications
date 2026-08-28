@@ -1,9 +1,23 @@
 {
-  "_pin": "efa57e84c4b0c7bbb141aaed701697ca0692343fc36f6231a2a307438b1fc8a4",
+  "_pin": "9cffe27a45dcdc12a1e28b41dc62eb1b81000d2f690dfebfcd654d4fb469cd40",
   "backends": {
-    "quantinuum.sim.h1-1e": {
-      "error": "\"The 'quantinuum.sim.h1-1e' backend is not installed in your system, nor is it a valid target in your Azure Quantum workspace.\"",
-      "status": "NOT_EXECUTABLE"
+    "quantinuum.sim.h2-1e": {
+      "clean": {
+        "W": 0.0029296875,
+        "W_X": 0.001953125,
+        "W_Z": 0.00390625,
+        "p0": 0.05,
+        "verdict": "NOT_FALSIFIED",
+        "z": -6.911148982850674
+      },
+      "corrupted": {
+        "W": 0.4990234375,
+        "W_X": 0.001953125,
+        "W_Z": 0.99609375,
+        "p0": 0.05,
+        "verdict": "FALSIFIED_MEASUREMENT_CONTRACT",
+        "z": 65.92834652105269
+      }
     },
     "rigetti.sim.qvm": {
       "clean": {
