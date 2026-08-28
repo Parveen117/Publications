@@ -21,12 +21,23 @@ jobs:
           python run_azq1.py > RUN_LOG.txt 2>&1
           echo "exit=$?" >> RUN_LOG.txt
           tail -40 RUN_LOG.txt
-      - name: commit outputs (certificate or error log)
+      - name: upload outputs via contents API
         if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config user.name "Monty Dabas"
-          git config user.email "Parveen117@users.noreply.github.com"
-          git pull --rebase origin main || true
-          git add -f papers/quantum-certified-verdicts/AZQ1/AZQ1_CERTIFICATE.json papers/quantum-certified-verdicts/AZQ1/RUN_LOG.txt 2>/dev/null || true
-          git commit -m "AZQ1 run outputs (as they fell)" || echo "no change"
-          git push || true
+          for F in AZQ1_CERTIFICATE.json RUN_LOG.txt; do
+            P="papers/quantum-certified-verdicts/AZQ1/$F"
+            [ -f "$P" ] || continue
+            B64=$(base64 -w0 "$P")
+            SHA=$(curl -s -H "Authorization: token $GH_TOKEN"               "https://api.github.com/repos/${GITHUB_REPOSITORY}/contents/$P?ref=main"               | python3 -c "import json,sys;d=json.load(sys.stdin);print(d.get('sha',''))")
+            BODY=$(python3 - "$B64" "$SHA" <<PYEOF
+          import json,sys
+          b64,sha=sys.argv[1],sys.argv[2]
+          d={"message":"AZQ1 run outputs (as they fell)","content":b64,"branch":"main"}
+          if sha: d["sha"]=sha
+          print(json.dumps(d))
+          PYEOF
+          )
+            curl -s -X PUT -H "Authorization: token $GH_TOKEN"               -d "$BODY" "https://api.github.com/repos/${GITHUB_REPOSITORY}/contents/$P"               | python3 -c "import json,sys;d=json.load(sys.stdin);print('$F ->', d.get('commit',{}).get('sha', d.get('message')))"
+          done
