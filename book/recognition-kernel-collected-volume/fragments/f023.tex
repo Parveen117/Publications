@@ -1,0 +1,670 @@
+% source: RKF/theorum/21_cut_memory_spectral_isomorphism.md
+\hypertarget{cut-memory-spectral-isomorphism-and-rank-five-fredholm-reduction}{%
+\chapter{Cut-Memory Spectral Isomorphism and Rank-Five Fredholm Reduction}\label{cut-memory-spectral-isomorphism-and-rank-five-fredholm-reduction}}
+
+\hypertarget{status}{%
+\section{Status}\label{status}}
+
+This theorem formalizes the actual infinite-to-finite mechanism behind the Recognition Kernel Framework.
+
+It corrects three tempting but false shortcuts:
+
+\begin{verbatim}
+det(I-B) > 0 is not sufficient for positivity when rank(B) >= 2;
+centrality of a projection does not imply rank five;
+the ordinary spectral gap is not generally equal to lambda_min(I-B)
+unless the operator is measured in the positive reference metric.
+\end{verbatim}
+
+The correct capstone is a \textbf{relative} spectral theorem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-cut-setup}{%
+\section{1. Native cut setup}\label{native-cut-setup}}
+
+Let \(\mathcal H\) be a Hilbert carrier with a fixed orthogonal cut decomposition
+
+\[
+\mathcal H=P\mathcal H\oplus Q\mathcal H,
+\qquad
+P+Q=I,
+\qquad
+PQ=QP=0.
+\]
+
+Let \(\pi\) be the represented event algebra and let
+
+\[
+V_0:\mathcal H_{\rm rec}\longrightarrow P\mathcal H
+\]
+
+be the recognized inclusion.
+
+For an admissible event \(a\), define the cut bridge
+
+\[
+\boxed{
+C_a=Q\pi(a)V_0:
+\mathcal H_{\rm rec}\longrightarrow Q\mathcal H.
+}
+\]
+
+The cut projection is canonical, but it is not assumed to be central in the
+operator-algebraic sense. Indeed, if \(Q\) commuted with every \(\pi(a)\) and
+\(QV_0=0\), then \(Q\pi(a)V_0=0\), killing the bridge. The relevant object is
+the off-diagonal cut corner \(Q\pi(a)P\).
+
+The framework-specific rank theorem is the following input.
+
+\hypertarget{memory-cut-rank-hypothesis}{%
+\subsection{Memory Cut Rank Hypothesis}\label{memory-cut-rank-hypothesis}}
+
+The target-relevant cut-memory space
+
+\[
+\mathcal E_\Sigma
+=
+\overline{\operatorname{Ran} C_a}
+\]
+
+has finite dimension
+
+\[
+\nu_\Sigma\le 5.
+\]
+
+The theorem below proves exactly what follows once this rank statement and the
+positive reference decomposition are available.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{positive-spectrum-is-transport-zero-spectrum-is-memory}{%
+\section{2. Positive spectrum is transport; zero spectrum is memory}\label{positive-spectrum-is-transport-zero-spectrum-is-memory}}
+
+\hypertarget{theorem-2.1-cut-bridge-spectral-isomorphism}{%
+\subsection{Theorem 2.1 (Cut-bridge spectral isomorphism)}\label{theorem-2.1-cut-bridge-spectral-isomorphism}}
+
+Let \(C:\mathcal H_1\to\mathcal H_2\) be bounded. Then
+
+\[
+\sigma(C^*C)\setminus\{0\}
+=
+\sigma(CC^*)\setminus\{0\}
+\]
+
+with multiplicity.
+
+If \(C=U|C|\) is the polar decomposition, then \(U\) is unitary from the
+initial support \(\overline{\operatorname{Ran}|C|}\) onto the final support
+\(\overline{\operatorname{Ran}C}\), and
+
+\[
+U(C^*C)U^*=CC^*
+\]
+
+on those supports.
+
+The zero modes remain directional:
+
+\[
+\ker C
+\quad\text{and}\quad
+\ker C^*.
+\]
+
+If \(C\) is Fredholm, their difference is the cut-memory index
+
+\[
+\boxed{
+\operatorname{ind}C
+=
+\dim\ker C-\dim\ker C^*.
+}
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+If \(C^*Cx=\lambda x\) with \(\lambda>0\), then \(Cx\neq0\) and
+
+\[
+CC^*(Cx)=C(C^*Cx)=\lambda Cx.
+\]
+
+The inverse correspondence is obtained by applying \(C^*\). Multiplicity is
+preserved. The polar-decomposition statement is standard on the initial and
+final support spaces. The zero spaces are not transported by this positive
+spectral correspondence and therefore retain the direction of the cut. ∎
+
+\hypertarget{corollary-2.2-cut-generated-rotation-memory}{%
+\subsection{Corollary 2.2 (Cut-generated rotation memory)}\label{corollary-2.2-cut-generated-rotation-memory}}
+
+On the direct sum of the initial and final supports, define
+
+\[
+\mathfrak i_C
+=
+\begin{pmatrix}
+0&-U^*\\
+U&0
+\end{pmatrix}.
+\]
+
+Then
+
+\[
+\boxed{
+\mathfrak i_C^2=-I
+}
+\]
+
+on the support sum, and hence
+
+\[
+\boxed{
+e^{\theta\mathfrak i_C}
+=
+\cos\theta\,I+\sin\theta\,\mathfrak i_C.
+}
+\]
+
+Thus the Euler rotation is derived from the polar memory of the cut bridge.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-exact-infinite-to-finite-theorem}{%
+\section{3. The exact infinite-to-finite theorem}\label{the-exact-infinite-to-finite-theorem}}
+
+Let \(R=R^*\) be a positive reference operator satisfying
+
+\[
+R\ge mI
+\qquad(m>0),
+\]
+
+and let
+
+\[
+V_\Sigma:\mathbb C^\nu\longrightarrow\mathcal H,
+\qquad
+\nu\le5,
+\]
+
+be the target-relevant cut-memory injection.
+
+Define
+
+\[
+F=R-V_\Sigma V_\Sigma^*,
+\]
+
+\[
+A=R^{-1/2}V_\Sigma,
+\]
+
+and the finite seam matrix
+
+\[
+\boxed{
+B=V_\Sigma^*R^{-1}V_\Sigma=A^*A
+\in M_\nu(\mathbb C).
+}
+\]
+
+\hypertarget{theorem-3.1-cut-memory-birmanschwingerfredholm-isomorphism}{%
+\subsection{Theorem 3.1 (Cut-memory Birman--Schwinger--Fredholm isomorphism)}\label{theorem-3.1-cut-memory-birmanschwingerfredholm-isomorphism}}
+
+The following identities hold.
+
+\hypertarget{normalized-factorization}{%
+\subsubsection{Normalized factorization}\label{normalized-factorization}}
+
+\[
+\boxed{
+F
+=
+R^{1/2}(I-AA^*)R^{1/2}.
+}
+\]
+
+\hypertarget{shared-nonzero-spectrum}{%
+\subsubsection{Shared nonzero spectrum}\label{shared-nonzero-spectrum}}
+
+\[
+\boxed{
+\sigma(AA^*)\setminus\{0\}
+=
+\sigma(B)\setminus\{0\}
+}
+\]
+
+with multiplicity.
+
+\hypertarget{exact-inertia-reduction}{%
+\subsubsection{Exact inertia reduction}\label{exact-inertia-reduction}}
+
+\[
+\boxed{
+N_-(F)=N_+(B-I).
+}
+\]
+
+Moreover,
+
+\[
+\boxed{
+\dim\ker F=\dim\ker(I-B).
+}
+\]
+
+Hence
+
+\[
+\boxed{
+F\ge0
+\iff
+B\le I.
+}
+\]
+
+\hypertarget{exact-relative-gap}{%
+\subsubsection{Exact relative gap}\label{exact-relative-gap}}
+
+Define the reference-normalized gap
+
+\[
+\delta_R(F)
+=
+\inf_{x\ne0}
+\frac{\langle x,Fx\rangle}
+     {\langle x,Rx\rangle}.
+\]
+
+Then
+
+\[
+\boxed{
+\delta_R(F)
+=
+\lambda_{\min}(I-B)
+=
+1-\lambda_{\max}(B).
+}
+\]
+
+Therefore, if \(\delta_R(F)>0\),
+
+\[
+F\ge \delta_R(F)R
+\ge m\,\delta_R(F)I.
+\]
+
+Thus the ordinary spectral gap has the certified lower bound
+
+\[
+\boxed{
+\operatorname{dist}(0,\sigma(F))
+\ge
+m\,\lambda_{\min}(I-B).
+}
+\]
+
+If \(R=I\), this becomes the exact absolute gap identity
+
+\[
+\operatorname{dist}(0,\sigma(F))
+=
+\lambda_{\min}(I-B)
+\]
+
+in the positive case.
+
+\hypertarget{fredholm-determinant-isomorphism}{%
+\subsubsection{Fredholm determinant isomorphism}\label{fredholm-determinant-isomorphism}}
+
+Since \(AA^*\) has rank at most \(\nu\),
+
+\[
+\boxed{
+\det_{\!F}(I-AA^*)
+=
+\det(I-B).
+}
+\]
+
+The determinant vanishes exactly at a threshold memory:
+
+\[
+\det(I-B)=0
+\iff
+1\in\sigma(B)
+\iff
+\ker F\ne\{0\}.
+\]
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+The factorization follows from
+
+\[
+R-V_\Sigma V_\Sigma^*
+=
+R^{1/2}
+\left(
+I-R^{-1/2}V_\Sigma V_\Sigma^*R^{-1/2}
+\right)
+R^{1/2}.
+\]
+
+The nonzero spectra of \(AA^*\) and \(A^*A=B\) coincide by Theorem 2.1.
+
+The map \(x\mapsto R^{1/2}x\) is invertible, so the quadratic-form inertia of
+\(F\) equals the inertia of \(I-AA^*\). Its negative directions correspond
+exactly to eigenvalues of \(AA^*\), hence of \(B\), larger than one. Its zero
+space corresponds exactly to the unit eigenspace of \(B\).
+
+For the relative gap, set \(z=R^{1/2}x\). Then
+
+\[
+\frac{\langle x,Fx\rangle}{\langle x,Rx\rangle}
+=
+\frac{\langle z,(I-AA^*)z\rangle}{\|z\|^2}.
+\]
+
+The smallest spectral value of \(I-AA^*\) is
+\(1-\lambda_{\max}(AA^*)=1-\lambda_{\max}(B)\).
+
+Finally, the finite-rank Sylvester identity gives
+
+\[
+\det_{\!F}(I-AA^*)
+=
+\det(I-A^*A)
+=
+\det(I-B).
+\]
+
+∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-determinant-warning}{%
+\section{4. The determinant warning}\label{the-determinant-warning}}
+
+\hypertarget{proposition-4.1}{%
+\subsection{Proposition 4.1}\label{proposition-4.1}}
+
+For \(\nu\ge2\),
+
+\[
+\det(I-B)>0
+\]
+
+does \textbf{not} imply \(B<I\) or \(F>0\).
+
+\hypertarget{exact-counterexample}{%
+\subsubsection{Exact counterexample}\label{exact-counterexample}}
+
+Take
+
+\[
+B=\operatorname{diag}
+\left(
+4,\frac94,\frac14,\frac49,\frac9{16}
+\right).
+\]
+
+Then
+
+\[
+\det(I-B)=\frac{175}{256}>0,
+\]
+
+but \(B\) has two eigenvalues above one, so
+
+\[
+N_-(F)=N_+(B-I)=2.
+\]
+
+The lawful terminal certificate is therefore
+
+\[
+\boxed{
+\lambda_{\min}(I-B)>0,
+}
+\]
+
+equivalently
+
+\[
+\boxed{
+\lambda_{\max}(B)<1.
+}
+\]
+
+The determinant isomorphism identifies threshold zeros and multiplicities, but
+its sign alone is not the positivity test.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-actual-infinite-to-finite-animal}{%
+\section{5. The actual infinite-to-finite animal}\label{the-actual-infinite-to-finite-animal}}
+
+Under the Memory Cut Rank Hypothesis \(\nu_\Sigma\le5\), the infinite carrier
+does not need to be diagonalized.
+
+The exact terminal quantities are:
+
+\[
+\boxed{
+\text{seam integer}
+=
+N_+(B-I)
+=
+N_-(F),
+}
+\]
+
+\[
+\boxed{
+\text{relative spectral gap}
+=
+\lambda_{\min}(I-B),
+}
+\]
+
+and
+
+\[
+\boxed{
+\text{threshold multiplicity}
+=
+\dim\ker(I-B)
+=
+\dim\ker F.
+}
+\]
+
+Thus the infinite sign, gap and threshold-memory problems reduce exactly to a
+matrix of size at most five.
+
+This is the correct mathematical version of the Copernican hierarchy:
+
+\begin{verbatim}
+cut bridge
+-> polar transport and zero memory
+-> finite target-relevant memory range
+-> positive reference minus finite cut defect
+-> five-matrix seam operator
+-> exact inertia, gap and determinant reduction.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{rh-specialization-and-the-genuine-next-theorem}{%
+\section{6. RH specialization and the genuine next theorem}\label{rh-specialization-and-the-genuine-next-theorem}}
+
+The theorem above is universal. To apply it to the completed-Weil endpoint,
+the framework must prove the following native identification.
+
+\hypertarget{targeted-theorem-memory-cut-rank-and-source-defect-identification}{%
+\subsection{Targeted Theorem (Memory Cut Rank and Source-Defect Identification)}\label{targeted-theorem-memory-cut-rank-and-source-defect-identification}}
+
+Construct \(R\) and \(V_\Sigma\) directly from the native completed-Weil cut
+events so that
+
+\[
+\boxed{
+W_3^-
+=
+R-V_\Sigma V_\Sigma^*,
+}
+\]
+
+\[
+\boxed{
+\overline{\operatorname{Ran}V_\Sigma}
+=
+\overline{\operatorname{Ran}
+\left(
+Q\pi(\mathcal A_{\rm Weil})V_0
+\right)},
+}
+\]
+
+and
+
+\[
+\boxed{
+\operatorname{rank}V_\Sigma\le5.
+}
+\]
+
+Then the completed-Weil odd sign is equivalent to
+
+\[
+B\le I,
+\]
+
+and its reference-normalized gap is exactly
+
+\[
+\lambda_{\min}(I-B).
+\]
+
+This targeted theorem, not determinant sign by itself, is the native bridge
+that can eliminate the infinite-dimensional barrier.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{numerical-certificate-v0.1}{%
+\section{7. Numerical certificate v0.1}\label{numerical-certificate-v0.1}}
+
+The executable packet checks four independent cases.
+
+\hypertarget{cut-bridge-calibration}{%
+\subsection{Cut-bridge calibration}\label{cut-bridge-calibration}}
+
+A \(5\times7\) cut bridge has:
+
+\begin{verbatim}
+rank                              5
+dim ker C                         2
+dim ker C*                        0
+index                             2
+positive-spectrum residual        0
+iota-square residual              0
+\end{verbatim}
+
+\hypertarget{exact-subcritical-five-memory-packet}{%
+\subsection{Exact subcritical five-memory packet}\label{exact-subcritical-five-memory-packet}}
+
+\[
+\sigma(B)
+=
+\left\{
+\frac14,\frac49,\frac9{16},\frac{16}{25},\frac{81}{100}
+\right\}.
+\]
+
+Then
+
+\[
+\lambda_{\min}(I-B)=\frac{19}{100},
+\]
+
+and
+
+\[
+\det(I-B)=\frac{399}{32000}.
+\]
+
+The full normalized operator and the five-matrix produce the same gap, inertia,
+kernel dimension and determinant.
+
+\hypertarget{threshold-packet}{%
+\subsection{Threshold packet}\label{threshold-packet}}
+
+Replacing \(81/100\) by \(1\) gives:
+
+\begin{verbatim}
+full kernel dimension            1
+five-matrix kernel dimension     1
+determinant                      0
+\end{verbatim}
+
+\hypertarget{positive-determinant-negative-control}{%
+\subsection{Positive-determinant negative control}\label{positive-determinant-negative-control}}
+
+The exact packet
+
+\[
+B=\operatorname{diag}
+\left(
+4,\frac94,\frac14,\frac49,\frac9{16}
+\right)
+\]
+
+has
+
+\[
+\det(I-B)=\frac{175}{256}>0
+\]
+
+but seam integer and full negative index both equal two.
+
+This permanently rejects the false determinant-sign shortcut.
+
+The frozen executable status is
+
+\begin{verbatim}
+PASS_CUT_MEMORY_SPECTRAL_ISOMORPHISM_V0_1
+\end{verbatim}
+
+with fourteen fail-closed checks.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{8. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+positive nonzero spectral isomorphism C*C <-> CC*     PROVED
+zero-mode cut-memory index                              PROVED
+polar iota and Euler rotation on support                PROVED
+finite-rank normalized factorization                    PROVED
+full inertia = five-matrix seam inertia                 PROVED
+relative gap = lambda_min(I-B)                          PROVED
+Fredholm determinant = det(I-B)                         PROVED
+det(I-B)>0 as positivity criterion                      DISPROVED
+central projection alone implies rank five              DISPROVED
+ordinary unnormalized gap equality                      NOT CLAIMED
+
+RH-specific memory range rank <= 5                      TARGETED NATIVE GATE
+RH-specific identity W3-=R-VV*                          TARGETED NATIVE GATE
+RH                                                      NOT CLAIMED BY v0.1
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/21\_cut\_memory\_spectral\_isomorphism.md}\end{flushright}

@@ -1,0 +1,460 @@
+% source: Publications/papers/yang-mills-certified-benchmark/README.md
+\hypertarget{yangmills-certified-benchmark-ym-1}{%
+\chapter{Yang--Mills Certified Benchmark (YM-1)}\label{yangmills-certified-benchmark-ym-1}}
+
+First rung of resuming the MP Yang--Mills adapter with the certified RNKE
+machinery: the reduced finite-cutoff gap of the SU(2) one-holonomy Wilson
+benchmark, previously a float, is now an exact two-sided rational enclosure.
+
+\hypertarget{certified-statement}{%
+\section{Certified statement}\label{certified-statement}}
+
+For the normalized SU(2) Wilson convolution operator on class functions
+(source: \texttt{MP/adapters/yang\_mills/cutoff\_gap\_benchmark.tex}), with exact
+character spectrum \texttt{lambda\_j(beta)\ =\ I\_\{2j+1\}(beta)/I\_1(beta)}:
+
+\begin{verbatim}
+Delta_red(a=1, beta=2) = -log( I_2(2) / I_1(2) )
+  in [0.83672330623158891305006780105454768321... ]  (width < 1e-30, exact ℚ)
+\end{verbatim}
+
+Verdict engine: directed rational interval arithmetic only. No floats in any
+verdict. Controls: (C1) \texttt{lambda\_1} strictly inside (0,1) hence gap strictly
+positive; (C2) tampering \texttt{I\_2\ -\textgreater{}\ I\_3} produces a separated bracket; (C3)
+width budget.
+
+\hypertarget{claim-boundary-fail-closed}{%
+\section{Claim boundary (fail-closed)}\label{claim-boundary-fail-closed}}
+
+\begin{itemize}
+\tightlist
+\item
+  CERTIFIED: the reduced finite-cutoff benchmark number only.
+\item
+  NOT CERTIFIED / OPEN: full-lattice gap, theta-graph interacting transfer,
+  ultraviolet/infinite-volume uniformity, OS continuum reconstruction, the
+  Clay existence and mass-gap predicate. Adapter verdict remains \texttt{hold}.
+\end{itemize}
+
+\hypertarget{ledger}{%
+\section{Ledger}\label{ledger}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+YM-1 reduced gap enclosure (a=1, beta=2) & PASS (pinned) \\
+YM-2 interacting theta-graph gap, certified small coupling (kappa \textless{} Delta\_red/6) & PASS (pinned) \\
+YM-3 first-order crossing direction: rank-one, A\textless-\textgreater B transported, slope lambda\_half/4 & PASS (pinned) \\
+YM-4 symmetry-protection theorem {[}S,T\_kappa{]}=0 + finite-kappa certified lower bounds & PASS (pinned) \\
+YM-5 certified TWO-SIDED gap at finite kappa, beyond the sandwich threshold (Kill-Lemma realization) & PASS (pinned) \\
+YM-6 seam-integer dock: EXACT eigenvalue counts on the native 5x5, certified to kappa=1/2 (D03 congruence) & PASS (pinned) \\
+YM-7 V7 carrier: kappa=7/10 unlocked (exact count), certified 7-eigenvalue crossing curves & PASS (pinned) \\
+YM-8 CAPSTONE: theta-graph gap is a THEOREM at every coupling (certified kernel floors + pinned Jentzsch anchor); remaining Millennium content = uniformity in the cutoff & PASS (pinned) \\
+YM-9 FIRST UNIFORMITY: exact heat-kernel refinement family; free gap exactly cutoff-independent; interacting uniform bound 3/8 along a declared trajectory & PASS (pinned) \\
+YM-10 blindness ledger (SPECTRAL-1/2 framework): exact multiplicity law, exact probe counts, composition ledger, YM-9 T4 correction & PASS (pinned) \\
+YM-11 three gate verdicts on the toy carrier: gauge CLOSED; volume/IR SPLIT (free closed, sandwich route proven insufficient, critical volume exact); universality SPLIT (counting closed, metric open) & PASS (pinned) \\
+YM-12 the T03 move: positivity SQUARE-SOURCED (classical anchor demoted to simplicity-only); volume+cutoff-uniform interacting gap 3/8 on the factorized chain; governance capsule & PASS (pinned) \\
+YM-13 verification-overlap beta audit: beta 4/5 -\textgreater{} 3/5 via independent witnesses (CF Bessel, compound-interest exp, det/trace inertia); three lineage overlaps retained with refusal notes; RH remains lowest at 1/5 & PASS (pinned) \\
+YM-14 interaction-overlap dock, first carrier: bridged pair --- overlap seam rank-one and swap-transported (same theta integral), certified k=1 to kappa=1/2, overlap price kappa*lam/4 on one line; kappa=1 carrier limit recorded & PASS (pinned) \\
+YM-15 1D block-transfer dock opened: exact closed form of the chain compression for EVERY m (vacuum f0\^{}\{m-1\}, A-line f0\^{}\{m-1\}·KMS\_m(r), r=I2/I1; SU(2) convolution lemma, machine-checked as a formal polynomial identity m=2..8, no truncation remainder); m-UNIFORM ratio bracket λ(1−r)/(1+r)\textless ρ\_m\textless λ(1+r)/(1−r), certified positive normalised gap for all m at κ≤1; κ=2 fails closed. A-line carrier ONLY --- complement not bounded & PASS (pinned) \\
+YM-16 chain dock: exact B-factorisation ⇒ gap(S\_m) ≤ Δ\_red for ALL m,κ (m-uniform upper bound, exact eigenvector); vacuum volume bracket f0\^{}\{m−1\} ≤ λ₁ ≤ e\^{}\{κ(m−1)\}; certified two-sided gap (ratio ≤ 9/10) of S\_m for m ≤ m\emph{(κ) --- m}=13 (κ=1/8), 7 (1/4), 4 (1/2) --- with m* computed exactly and matched by the dock; m*+1 refused. Sup route provably non-uniform: death volume has coordinates & PASS (pinned) \\
+YM-17 interleaving seam: m\_κ = B\_odd·B\_even; each dressed half-chain is a tensor product of the two-site chain at 2κ ⇒ product spectrum ⇒ gap ratio EXACTLY m-uniform (pair ratio certified ≤ 9/10 at κ≤1/2; bracket {[}1,3{]} honest at κ=1); vacuum bracket narrowed to rate κ² (per-bridge upper end 0.125→0.030 at κ=1/8); whole volume problem reduced to ONE inequality: λ₁(T) vs σ₁(X)σ₁(Y) (vacuum tracking of interleaved halves) & PASS (pinned) \\
+YM-18 CALIBRATION + DESIGN: enlarged exact carrier W'\_m (vacuum + sites + bridge-pairs, dim 2m) gives certified Rayleigh lower bounds on λ₁(T\_A,m), m=2..6; per-bridge vacuum rate φ\_m\^{}lo is m-independent to \textasciitilde1e-5 (0.002177 @κ=1/8, 0.008698 @1/4, 0.03461 @1/2) --- vacuum tracking behaves as a clean per-bridge rate; bracket width = looseness of the upper end. Cluster dock DESIGNED (monomers = odd pairs at 2κ, activities = even bridges, KP on a line) --- no claim & PASS (calibration, pinned) \\
+YM-19 Dobrushin dock --- \textbf{DEMOTED to ANCHORED} (governance rule: no classical borrowing; T3 rests on a cited Dobrushin/Föllmer anchor, same fate as YM-8 Jentzsch). T1 (coefficient bound) and T2 (α\textless1 arithmetic) are native and stand; the m-uniform GAP claim is WITHDRAWN until derived natively. Was: on the bounded-overlap chain --- Dobrushin coefficient C\_ij ≤ 1−1/δ² (elementary, proved), δ\_s = e\^{}\{2κ\} exact, δ\_t ≤ (1+S\_a)/(1−S\_a) certified; α = 2(1−1/δ\_t²)+2(1−1/δ\_s²) \textless{} 1 ⇒ (pinned anchor: Dobrushin/Föllmer/Künsch covariance decay; extraction lemma proved) λ₂/λ₁ ≤ α for EVERY m. Certified gap/step ≥ 0.263 (a=6,κ=1/16), ≥ 0.145 (a=8,κ=1/8, ON YM-9's trajectory θ=1/64), ≥ 0.235 (a=12,κ=1/8); refused at (6,1/8),(4,1/16),(10,1/4). Coupling ceiling of the route exact: κ \textless{} log2/4. STANDING CORRECTION to YM-17 T3 (vacuum tracking insufficient; correlation-decay route replaces it). NOT uniform in the cutoff (δ\_t→∞ as a→0) & ANCHORED (pinned, not a native theorem) \\
+YM-20 NATIVE ORIGIN AUDIT: machine-checked origin ledger for YM-1..19 in the framework's vocabulary (carrier = COORDINATE\_SHADOW throughout; counting = NATIVE\_DERIVED throughout; anchors: YM-8 and YM-19 demoted imports, YM-17 SV-Weyl as technique). CAYLEY FORM certified: YM-15 ceiling (1+r)/(1−r) and YM-19 δ\_t are Exp\_Σ(A\_Σ(y)) (F00-G Thm 5.1 pinned) with seam coordinates r, S\_a; native odd-series log agrees with YM-1 route to 1e-20; uniform gap in native form = −Log\_Σ(λ) − A\_Σ(r). Bessel coefficients = native factorial series (F00-E Lemma 2.1 shape); Haar identification = the shadow. NAMED YM-21: bridge-local recognition-energy contraction under the seam-involution flow (F00-E Thm 6.2) & PASS (pinned) \\
+\textbf{YM-F1 THE CHAIN AS A RECOGNITION FABRIC (native carrier)}: T1 SU(2) = unit sphere of the EMK block over C\_Σ --- span\{I, R, ιK, ιRK\} is Hamilton's quaternion algebra, det = Δ∥+Δ⊥ becomes the quaternion norm (twisted seam channels), χ½ = 2×identity-sector coefficient; T2 chain = ladder fabric, bridge faces = plaquette holonomies H\_l = A\_i⁻¹A\_\{i+1\}; T3 Recognition-Stokes EXACT on the chain (interior rungs cancel, E\_int = 0, orientation tamper bites); T4 action = sum of face residues ρ\_l = 1−Tr H\_l/2 ∈ {[}0,2{]}, weight = Exp\_Σ(κ(m−1))·Exp\_Σ(−κΣρ). Source: vault fabric appendix + EMK-1 + F00-E. Remaining shadow: Haar ↔ Φ\_Σ (declared). Native form of YM-21 posed on the fabric & PASS (pinned) \\
+YM-21 THE TILING LAW (native, on the fabric): STANDING CORRECTION to YM-F1's posed question (boundary residue cannot control face residue --- witness g, g⁻¹, certified); the right object is the tiling. T2 Stokes sub-telescoping ⇒ YM-15 entry = r\^{}\{\#faces crossed\}: SPATIAL decay along the chain exactly geometric, rate −Log r, every m. T3 leading-order TIME two-point = (λ·KMS\_m(r))\^{}t, bracketed λ\textsuperscript{t((1∓r)/(1±r))}t for every m ⇒ YM-15/20's uniform rate −Log λ − A\_Σ(r) DERIVED as a tiling count (t=1..6, m=2..8 inside bracket). T4 remainder named natively: higher-content/branching tilings, expansion parameter = face-coefficient ladder r\_j (certified decreasing: r\_½ ≫ r\_1 ≫ r\_\{3/2\}); uniform convergence = native cluster statement & PASS (pinned) \\
+\textbf{YM-22 THE TILING RATE SURVIVES THE CUTOFF}: on the heat-kernel family along κ=θa, the time-face log is EXACTLY 3a/4 (no transcendental), so the leading tiling rate per unit time γ(a) = 3/4 − A\_Σ(r(θa))/a. Certified over SIX DECADES a=1\ldots1e-6 at θ=1/16: \textbf{23/32 ≤ γ(a) ≤ 3/4 for every a} --- the limit 3/4 − θ/2 is a uniform LOWER bound in the cutoff (approached from above); KMS bracket holds with λ\_a for m=2..8 at every a ⇒ leading-order rate uniform in volume AND cutoff simultaneously. Beats YM-9's sandwich 3/4 − 6θ by factor 12 in the θ-coefficient; trajectory ceiling θ \textless{} 3/2 (θ=2 refused). Higher face coefficients per unit time r\_1/a, r\_\{3/2\}/a → 0: in the cutoff limit only j=½ branching survives. SCOPE: leading tiling order & PASS (pinned) \\
+\textbf{YM-23 THE WEAK-COUPLING TURN}: T1 tiling route has an EXACT weak-coupling boundary --- ladder collapses (r\_½,r\_1,r\_\{3/2\} = 0.970, 0.922, 0.859 at κ=50: no small parameter), leading rate sign change at r\_c(a) = tanh(3a/8) in native Cayley form, κ\_c(a) bracketed (1.574 @a=1, 0.759 @1/2, 0.376 @1/4, 0.188 @1/8), and on a DECLARED AF-shaped trajectory κ = ¼log(1/a) the route is left at a = 1/8 --- the continuum lies outside the tiling route. T2 native linearization: ρ = 2s/(1+s) in the stereographic chart; odd(H₁H₂) = p₁+p₂+½{[}p₁,p₂{]} EXACTLY --- the commutator is the only non-additive term = EMK-1 T5 / RST-1 T4 curvature on the fabric. T3 EXACT NEGATIVE: the abelianized fabric's softest spatial stiffness ≤ 12κ/(m(m+1)) (Rayleigh identity certified m=2..40) --- gapless in volume. T4 native statement: a weak-coupling gap lives entirely in the commutator sector (non-healable curvature) --- the mass gap is non-perturbative, said in the framework's words & PASS (pinned) \\
+YM-24 ABELIAN SUBFABRIC + NON-ABELIAN RESIDUE (exact algebra, no gap claim): T1 commuting faces = F00-E's circular Euler orbit, compose by the native addition law, Stokes additive in the Euler coordinate (the rotor chain), m=2..8 on rational circle points; T2 non-abelian residue = Gram defect & p×q \\
+YM-25 THE DIRECTION-CHANGE SECTOR: two exact negatives --- the time kernel is direction-blind (bi-invariant: one scalar per spin-j block, d\_j² coefficients, refinement-invariant) and the strong-coupling carriers are direction-blind (class functions, rotation-invariant: structural SPECTRAL-1 blindness) --- and one exact positive: direction change between adjacent faces IS the 6j recoupling (MP gold/01 seed), squared overlaps between (12)3 and 1(23) schemes exactly {[}{[}1/4,3/4{]},{[}3/4,1/4{]}{]}, unitary, no √ evaluated (RST-2 discipline), singlet tamper breaks unitarity. REDUCTION: a weak-coupling gap can live only in the intertwiner transfer & PASS (pinned) \\
+\textbf{YM-26 DOCK TO theorum/28 (Recognition-Complete Finite-to-Infinite Cut Theorem)} --- owner's correction: the framework's own convergence machinery. Dictionary: P\_n = A-line carrier (YM-15), Q\_n = complement, floor λ₁ ≥ f₀\^{}\{m−1\}, threshold μ = νf₀\^{}\{m−1\}, e\_n = ‖QSQ‖/μ, N₊(B\_n−I) = Haynsworth inertia; outward certificate e\_n \textless{} 1 ∧ inertia count = 1 ⇒ λ₂ \textless{} νλ₁. T1: LAWFUL (e\_n present, not a shadow certificate) for every m ≤ m\emph{(κ) = 13, 7, 4 at κ = 1/8, 1/4, 1/2. T2: e\_n(m) certified increasing, crosses 1 exactly at m}+1 --- theorum/28's hypothesis 3 (memory-channel Cauchy bound uniform in m) is NOT YET BUILT; full hypothesis ledger 1--7 written in the theorem's vocabulary. T3: via the tiling law, item 3 reduces to a Cauchy bound uniform in m for the multi-insertion content-½ memory channel (the j=½ branching sector) & PASS (pinned) \\
+\textbf{YM-27 DOCK TO RH-FRAMEWORK T01} (owner: use the RH journey's proved results, cite them): T1 the sup route IS T01-E4C (bounded native simple multiplier, U\_Σ(w) = e\^{}κ exactly; YM-16's e\_n reproduced to the last digit) ⇒ theorum/28 hypothesis 3 = a memory-channel bound beating T01-E4C by a factor uniform in m --- measured slack per face 56.5 / 27.8 / 13.5 at κ = 1/8, 1/4, 1/2 (YM-18 calibration vs E4C price). T2 the abelian subfabric is a T01-E5A rational UGD packet: wrap law = rotor-chain composition, winding = seam memory μ; (g,g⁻¹) witness vs full-turn fabric have the same visible boundary but μ = 0 vs 1 --- the native form of EMK-1 winding. T3 the Haar shadow of YM-F1 is exactly RH's OPEN T01-E5C/E6 --- YM inherits RH's item, invents none; aliasing structure of class functions on E1 grids certified (exact for n \textgreater{} 2j). T4 T01-B/C recognition energy = chain vacuum form, floor f₀\^{}\{m−1\} & PASS (pinned) \\
+\textbf{YM-28 T01-E4D ON THE CHAIN} (RH-Framework PR \#19 applied): T1 the mean law is EXACT with zero deviation on single insertions --- I\_rec(W·χ½(A\_i)) = f₀(2κ)\^{}\{m−1\} for every m (formal identity, χ₁ branch dies at the open end); T2 two insertions: deviation = r₁(2κ)\^{}\{ & i−j \\
+YM-29 CLOSED-FORM VACUUM FLOOR FOR EVERY m: native face-independence lemma (bridge faces independent contents, W a product over faces ⇒ face-product integrals factorise; fusion-rule certified: ∫wχ½ = 2f\_½, ∫wχ½² = f₀+3f₁); T0\^{}\{1/2\}χ½(H\_ℓ) = λχ½(H\_ℓ); ansatz ψ = 1 + cΣχ½(H\_ℓ) gives λ₁ ≥ f₀\^{}\{m−1\}·Q\_m(c\emph{) in closed form for ALL m, Q\_m \textgreater{} 1 always, \textasciitilde4λ²r²(m−1) for m ≫ 1/(4λ²r²) (Q₂₀₀₀ = 2.58 / 6.99 / 24.1). Honest: linear floor moves the dock's m} by 0 --- the floor at the TRUE rate (0.000228/face margin, YM-28) needs the product ansatz, whose T-expectation is the one-time-step ladder = 6j recoupling contraction & PASS (pinned) \\
+\textbf{YM-30 THE 2-ROW RECOUPLING ENGINE --- BUILT AND VALIDATED}: exact surd arithmetic (Q adjoined √), Clebsch--Gordan by Racah's closed form (no floats), 3j, three-matrix-coefficient vertex integral, ε-removal of conjugates, ladder (one-time-step fabric) evaluated as a transfer over cut indices with label sums folded in. V1 every evaluation rational (surds cancel --- the built-in consistency check); V2 one plaquette = 1/d\_a²; V3 single-row limit recovers the YM-15 chain; V4 two plaquettes: Σ\_c d\_c N = 1/4 and the split d₀N₀ : d₁N₁ = 1/4 : 3/4 = YM-25's recoupling squares, now from the engine; V5 rail-swap and reversal symmetry. FIRST USE (calibration, κ=1/8, content ≤ 1, point coefficients): the W\^{}\{1/2\}-dressed vacuum for T'\,' = W\textsuperscript{\{1/2\}T0W}\{1/2\} beats the old floor f₀\^{}\{m−1\} by a GEOMETRIC factor 1.000732 per face (m=2..6) --- floor rate 0.002685/face \textgreater{} YM-18's bound 0.002177 \textgreater{} E4D excitation rate 0.001949: margin 0.000736/face; single-face excitation (c ≠ 0) does not help & PASS (pinned) \\
+\textbf{YM-31 OUTWARD m-UNIFORM DRESSED VACUUM FLOOR --- theorum/28 ITEM 6 AT THE TRUE RATE}: trial φ = W\^{}\{1/2\}·(W\_pt/W) with W\_pt a product of rational truncated faces (no error by definition); numerator = ladder ⟨W\_pt, T0 W\_pt⟩ (YM-30 engine), rung truncation is a rigorous LOWER bound (T0 = Π\_i Σ\_c λ\_c Π\_c: a sum of nonnegative projection terms, monotone in λ\_c); denominator ∫W\_pt²/W = {[}Σ d\_jd\_kd\_l f\_j\^{}pt f\_k\^{}pt (−1)\^{}\{2l\} f\_l N\_jkl{]}\^{}\{m−1\} exact with outward l-tail; NATIVE LOG-CONVEXITY Z\_m² ≤ Z\_\{m−1\}Z\_\{m+1\} (Z\_m = ⟨g, S\^{}\{m−2\}g⟩, S = C\^{}\{1/2\}M\_K C\^{}\{1/2\} symmetric PSD, cut-square inequality) ⇒ ratio nondecreasing ⇒ \textbf{λ₁(S\_m) ≥ FLOOR\_\{m₀\}·(ρ\_lo/I\_hi)\^{}\{m−m₀\} for every m ≥ 6}, rung tail at m₀ bounded (5.9e-9). Per-face floor rate \textbf{0.002685 / 0.010722 / 0.042607} at κ = 1/8, 1/4, 1/2 vs old floor 0.001952 / 0.007802 / 0.031089 and E4D excitation rate 0.001949 / 0.007742 / 0.030161 --- margin \textbf{0.000736 / 0.002980 / 0.012446 per face}, uniformly in m & PASS (pinned) \\
+YM-32 DRESSED SINGLE-INSERTION ENERGY, m-UNIFORM (engine extended to rung insertions via CG reduction of 4-valent vertices; validated: j=0 reproduces YM-30, one-rail insertion vanishes, reversal identity, mixed-rung tamper smaller): E\_m(p) = ⟨W\_ptχ½(A\_p), T0 W\_ptχ½(A\_p)⟩/⟨W\_pt,T0W\_pt⟩ exact for m=2..7, all p --- bulk value m-independent to \textless{} 1e-6, ends differ; E\_bulk = 0.43368 / 0.43532 / 0.44171 at κ = 1/8, 1/4, 1/2, i.e.~λ·(1 + 1.27e-3 / 5.05e-3 / 1.98e-2), inside YM-15's bracket (I first wrote `below λ'; the engine corrected me). Dressed denominator factorises (rung insertion free) ⇒ the J=½ sector's dressed excitation/vacuum ratio is exactly E\_bulk, uniformly in m --- a certified LOWER bound on that sector's top, not an upper bound on λ₂ & PASS (pinned) \\
+YM-33 t-ROW FABRIC ENGINE + EXACT TIME TWO-POINT FUNCTION (owner's framing: time carries no infinity, only the flow λ\^{}τ = Exp\_Σ(−τ·gap); expand the space coupling only): general cut transfer over t rails with rungs contracted up the column (interior vertices 5-leg: two rungs, two faces, insertion --- two CG fusions); validated: t=2 reproduces YM-32 exactly, t=1 the chain, 3-row fabrics rational with exact time reflection. Dressed sequence a\_τ = ⟨φ, T'\,'\_pt\^{}τ φ⟩ and vacuum z\_τ exact for τ=1,2, m=5..8: ratio sequence ρ₁ = E\_bulk (YM-32), ρ₂ ≥ ρ₁, and the SECOND-ORDER connected correction δ₂ = ρ₂ − ρ₁ is a BULK CONSTANT --- 0.00076998 / 0.00305278 / 0.01178845 at κ = 1/8, 1/4, 1/2 --- with boundary influence decaying geometrically: moving an end from distance 2→3 shifts δ₂ by 1.3e-9 (either end, identically), 3→4 by 1.6e-12, ratio certified in {[}r²/2, 2r²{]}. The framework's own strong-coupling series for the gap, order by order as exact rationals, m-uniform with exponentially localised edges. Lower-bound side (Rayleigh data) --- item 3's upper bound still open & PASS (pinned) \\
+YM-34 E4D-C RESTATED (native Laplace principle): the iterated multiplier WITHOUT smoothing, q\_n = ∫wⁿ/∫wⁿ⁻¹, is strictly increasing to sup w = e\^{}\{2κ\} (certified n ≤ 60) --- so E4D-C as written in the RH ledger (deviation control of the multiplier iterated on one state) is unprovable, and the exponential of YM-16/26 is this growth. WITH the time kernel between multiplications the ratio is nondecreasing (log-convexity) and converges to λ₁(K\textsuperscript{\{1/2\}WK}\{1/2\}) = f₀(1+δ), δ = 0.003582 / 0.014032 / 0.051911 (κ=1/8,1/4,1/2) vs sup price 0.274 / 0.598 / 1.405. E4D-C is restated for the alternating product (K\textsuperscript{\{1/2\}M\_wK}\{1/2\})ⁿ: λ₂/λ₁ ≤ 1−δ\_gap uniform in m --- the vacuum side of this is YM-31; only the excitation side is open & PASS (pinned) \\
+Remaining: theorum/28 item 3 --- the memory channel's OPERATOR norm (not basis-state norms) uniform in m, via the same engine (E4D-C quadratic form on content-½); with YM-31's floor the dock's e\_n becomes (‖QTQ‖/FLOOR) and the sup numerator is the last exponential; (interval coefficients, content tail, Perron bound on the column transfer → m-uniform floor at rate ≥ 0.00268) and the E4D-C quadratic form on content-½ via the same engine; (exact rational ladder evaluations) --- closes item 6 at the true rate AND item 3 (E4D-C quadratic form on content-½) in one build; E4D-C on SUPERPOSITIONS of content-½ basis states (a quadratic-form statement on the multi-insertion channel) = theorum/28 item 3 (content-½ multi-insertion memory channel, Cauchy-uniform in m); (weak) YM-27 the intertwiner (spin-network) transfer on the chain fabric --- recoupling matrices as weak-coupling tiling weights, floor uniform in m? (declared: chain \textasciitilde{} O(4)-type rotor model in 1+1D, continuum gap at the frontier for every method); (strong) FULL-ORDER tiling convergence uniform in m and a (j=½ branching); (weak) the COMMUTATOR-RESIDUE TRANSFER on the fabric --- does the non-abelian sector alone carry a gap; AF trajectory derivation; (convergence of the face-coefficient tiling expansion) --- the cluster statement in fabric language; then (replace the borrowed decay anchor by program machinery --- square-sourcing/seam count/flow generator; generalized Euler flow and EMK/UGD sections to be read first); then uniformity in the CUTOFF a→0 of the volume-uniform gap (Dobrushin degrades as the heat kernel sharpens) --- this is now the sharp wall; AF trajectory, tightness, OS, non-triviality, metric universality, 2D lattice, Clay & OPEN \\
+(superseded as the main route) cluster dock YM-18 proper: certified Kotecký--Preiss radius for the interleaving polymer gas with two-site pairs as monomers; per-bridge/local control in the content basis --- certified strong-coupling cluster radius), 2D lattice, AF trajectory, tightness, OS reconstruction, non-triviality, metric universality, Clay predicate & OPEN \\
+Continuum existence / mass gap & OPEN \\
+\end{longtable}
+
+\hypertarget{reproduce}{%
+\section{Reproduce}\label{reproduce}}
+
+New in YM-2: for beta=2 the interacting theta-graph transfer
+\texttt{T\_kappa\ =\ M\^{}\{1/2\}(K\ x\ K)M\^{}\{1/2\}} has a certified positive spectral gap for
+every coupling \texttt{0\ \textless{}=\ kappa\ \textless{}\ kappa\_0\ =\ Delta\_red/6\ =\ 0.13945388...}, via the
+min-max sandwich \texttt{m\_-\ T\_0\ \textless{}=\ T\_kappa\ \textless{}=\ m\_+\ T\_0} with
+\texttt{m\_+/m\_-\ =\ e\^{}\{6\ kappa\}} from \texttt{\textbar{}Tr\ U\textbar{}\ \textless{}=\ 2}. At \texttt{kappa\ =\ 1/8} the reduced gap
+is certified \texttt{\textgreater{}=\ 0.08672330623...}. Fail-closed above threshold.
+
+\begin{verbatim}
+python papers/yang-mills-certified-benchmark/certificates/ym1_certified_gap.py
+python papers/yang-mills-certified-benchmark/certificates/ym2_theta_interacting_gap.py
+python -m pytest papers/yang-mills-certified-benchmark/tests -v
+\end{verbatim}
+
+New in YM-3 (exact, zero coupling): the free top-excited eigenspace is exactly
+two-dimensional; the exact theta integral \texttt{Int\ chi12(A)chi12(B)chi12(AB\^{}-1)\ =\ 1/2}
+splits it at first order with derivatives \texttt{+-lambda\_half/4}; the vacuum derivative
+is exactly 0. Hence \texttt{r\textquotesingle{}(0)\ =\ lambda\_half/4} (certified \texttt{0.10828185668...}), the
+first-order CROSSING DIRECTION is the single symmetric line
+\texttt{chi12(A)+chi12(B)} --- rank-one and transported by the graph symmetry --- and
+YM-2's sandwich slope is slack by the exact factor 24.
+
+Single-command reproduction (regenerates and pins all three):
+
+\begin{verbatim}
+python papers/yang-mills-certified-benchmark/certificates/ym12_square_sourced.py
+\end{verbatim}
+
+YM-12 transplants the RH journey's decisive step (T03: re-source
+positivity as a square with declared defects) to Yang-Mills:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{T1} manifest square: \texttt{T\_kappa(a)\ =\ S*S} with
+  \texttt{S\ =\ {[}K\_\{a/2\}\ x\ K\_\{a/2\}{]}\ m\_\{kappa/2\}} --- both factors are the program's
+  own halved-parameter objects (YM-9 semigroup + YM-5 doubling).
+  Positivity is now \textbf{square-sourced}; YM-8's Jentzsch anchor is demoted
+  to top-eigenvalue \emph{simplicity} only. The compressed defect
+  \texttt{A\ -\ N*G\^{}\{-1\}N} is exactly a Gram of \texttt{(I-P)S\ phi} --- a source-restriction
+  object, the T03 shape.
+\item
+  \textbf{T2} on the theta chain \texttt{L\_m} (vertex-glued, no shared faces) the
+  transfer tensor-factorizes exactly, so \texttt{lambda\_2/lambda\_1} is
+  \texttt{m}-independent, and with YM-9: \texttt{Delta(L\_m,\ a,\ a/16)\ \textgreater{}=\ 3/8} for
+  \textbf{every} \texttt{m} and \textbf{every} \texttt{a} --- an interacting gap uniform in volume
+  and cutoff simultaneously. This closes YM-11 gate 2's interacting half
+  on the factorized family and localizes the remaining volume obstruction
+  to \textbf{interaction overlap} (shared faces): the chain (no sharing) is
+  uniform, \texttt{B\_n} (complete sharing) kills the sup route, and a physical
+  lattice's bounded sharing sits strictly between the two certified
+  extremes.
+\item
+  \textbf{T3} governance capsule (RH 07-20 analog): claim/consumption chain for
+  YM-1..12, standing corrections (YM-9 T4 amendment, YM-8 anchor
+  demotion), and a do-not-reopen list --- machine-checked for completeness.
+\end{itemize}
+
+YM-11 takes three dependency-map gates and gives each an exact verdict on
+the toy carrier --- the generalized theta (``n-banana'') graphs \texttt{B\_n}, two
+vertices joined by \texttt{n} edges, so \texttt{b\_1\ =\ n-1} holonomies and
+\texttt{F(n)\ =\ n(n-1)/2} plaquettes; \texttt{B\_3} is the theta graph of YM-1..10.
+\textbf{These are toy-carrier verdicts, not Clay-sense closures}, and two of
+the three are partly negative.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Gauge --- CLOSED.} Tree gauge-fixing on a connected graph is exact (no
+  Gribov obstruction), leaving \texttt{b\_1\ =\ E-V+1} holonomies and a residual
+  diagonal \texttt{G} acting by conjugation, so gauge-invariant states are
+  exactly \texttt{L\^{}2(G\^{}\{b\_1\})\^{}Ad}. For \texttt{B\_3} that \textbf{is} the carrier every
+  capsule has used --- now certified rather than assumed, with Wilson loops
+  spanning it and YM-10's multiplicity law counting them.
+\item
+  \textbf{Volume / IR --- SPLIT.} The \emph{free} reduced gap is \texttt{C\_(1/2)\ =\ 3/4} for
+  every \texttt{n} and every \texttt{a}: volume- \textbf{and} cutoff-uniform, closed. The
+  \emph{interacting} sandwich gives \texttt{Delta\ \textgreater{}=\ C\_(1/2)\ -\ 2\ F(n)\ theta}, which
+  degrades quadratically in \texttt{n}: at \texttt{theta\ =\ 1/16} the bounds are \texttt{3/8}
+  (n=3), exactly \texttt{0} (n=4), \texttt{-1/2} (n=5). The route is \textbf{proven
+  insufficient} for volume-uniformity, with the critical volume computed
+  exactly. What a replacement must do is named: control the interaction
+  per-plaquette (dock route, YM-6) rather than by a global sup (envelope
+  route, YM-5) --- the same lesson one level up.
+\item
+  \textbf{Universality --- SPLIT.} For the whole regulator class
+  \texttt{K\ =\ sum\_j\ d\_j\ c\_j\ chi\_j} with \texttt{c\_j\ \textgreater{}\ 0}, the \textbf{counting layer}
+  (content grading, multiplicity law, carrier dimensions, blindness
+  ledger, probe counts) depends only on SU(2) representation theory and
+  is therefore regulator-independent --- closed, and it means YM-10's
+  ledger is kinematics, not a choice of action. The \textbf{metric layer} (the
+  gap value) genuinely differs between regulators (witnessed) and remains
+  the real universality gate.
+\end{itemize}
+
+YM-10 applies the source-restriction framework of the companion
+manuscripts \emph{When Spectra Forget Order} and \emph{Stable Recovery Beyond
+Spectral Blindness} to our own compressions. Every dock computes on a
+compressed carrier \texttt{V}; in that language \texttt{V} is a source restriction, so
+the honest question is not whether the complement bound is tight but
+whether the carrier is \textbf{blind} to the target.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{T1} exact multiplicity law \texttt{m(j1,j2)\ =\ min(2j1,2j2)+1} on the
+  Ad-invariant sector --- it reproduces \texttt{dim\ V5\ =\ 5} and \texttt{dim\ V7\ =\ 7}
+  independently, and re-derives YM-6's \texttt{(1/2,1/2)} two-dimensionality from
+  representation theory rather than from the Gram matrix.
+\item
+  \textbf{T2 correction to YM-9 T4} (self-audit): YM-9's uniform count counted
+  \emph{contents}; \texttt{k\_Sigma} counts \emph{eigenvalues with multiplicity}. At \texttt{s\ =\ 2}
+  that is 4 versus 5. Both are \texttt{a}-independent, so YM-9's uniformity
+  conclusion is unaffected --- only the arithmetic. YM-9 is amended to
+  report both.
+\item
+  \textbf{T3/T4} blindness ledger and exact probe count
+  \texttt{rank(Pi\_s\ \textbar{}\ ker\ E)\ =\ b(V,s)}. Result worth noting: \texttt{b(V5,\ s)\ =\ 0} for
+  \texttt{s\ \textless{}=\ 2} --- the YM-6 carrier is \textbf{exactly blindness-free in its own
+  threshold window}, so that choice was correct, not lucky. At \texttt{s\ =\ 3},
+  V5 needs 6 probes, V7 needs 4, V9 needs 0 more than V7 minus 4.
+\item
+  \textbf{T5} composition ledger: blindness is nonincreasing along
+  \texttt{V5\ ⊂\ V7\ ⊂\ V9} with nonnegative stage increments.
+\item
+  \textbf{T6} the whole ledger depends only on contents and Casimir levels, so
+  it is exactly \texttt{a}-independent --- one ledger covers the entire YM-9
+  refinement family.
+\end{itemize}
+
+Honest remainder: the ledger is exact for the \textbf{free} target; the
+interacting faces mix the content grading, so \texttt{b(V,s)} is a lower bound
+there and YM-6/7's declared truncation remainder is the extra obligation.
+
+YM-9 --- the program's first statement that is uniform in the cutoff rather
+than at a fixed cutoff. Switching the link action from Wilson to the
+HEAT KERNEL \texttt{K\_a(g)\ =\ sum\_j\ d\_j\ e\^{}\{-a\ C\_j\}\ chi\_j(g)} makes refinement
+EXACT (\texttt{K\_a\ *\ K\_b\ =\ K\_\{a+b\}}; n links of spacing a/n compose to one link
+of spacing a with no discretization error), and the cutoff dependence then
+cancels identically:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{T2} free reduced gap \texttt{=\ C\_(1/2)\ =\ 3/4} EXACTLY for every \texttt{a\ \textgreater{}\ 0};
+\item
+  \textbf{T3} along the declared trajectory \texttt{kappa(a)\ =\ theta*a},
+  \texttt{Delta(a,\ kappa(a))\ \textgreater{}=\ 3/4\ -\ 6*theta} for EVERY \texttt{a\ \textgreater{}\ 0} --- at
+  \texttt{theta\ =\ 1/16} a cutoff-independent gap of exactly \textbf{3/8}; fail-closed
+  at \texttt{theta\ \textgreater{}=\ 1/8};
+\item
+  \textbf{T4} the seam count \texttt{k(a,\ e\^{}\{-as\})} is exactly \texttt{a}-independent
+  (combinatorial), so the dock's threshold grammar transports across the
+  whole family at once;
+\item
+  \textbf{T5} Wilson contrast, computed: at fixed \texttt{beta} the reduced gap grows
+  like \texttt{1/a} and diverges --- no cutoff-independent gap without a running
+  coupling.
+\end{itemize}
+
+Honest remainder (in-certificate): the trajectory is DECLARED not derived
+(the physical one is fixed by asymptotic freedom, \texttt{beta\ \textasciitilde{}\ log(1/a)}, not
+modelled); the graph is FIXED (no infinite-volume growth); the heat-kernel
+action is a CHOICE (universality gate open); \texttt{Delta} is a reduced graph
+gap, not a reconstructed physical mass gap. Net movement: one gate from
+``untouched'' to ``touched on a toy carrier''.
+
+Capstone (YM-8): the interacting theta-graph transfer has a strictly
+positive spectral gap at EVERY coupling --- certified pointwise kernel
+floors (\texttt{k\ \textgreater{}=\ e\^{}\{-3\ kappa\}\ {[}c0\^{}\{-1\}\ e\^{}\{-beta\}{]}\^{}2\ \textgreater{}\ 0}, exact enclosures)
+plus the pinned classical Jentzsch/Krein-Rutman anchor (simple Perron
+eigenvalue; CIRC-1 discipline: cited, never rederived). Quantified window
+\texttt{kappa\ in\ {[}0,\ 7/10{]}} carries exact counts and enclosures (YM-2..7). The
+honest remainder is named exactly: nothing here is uniform in the lattice;
+a gap at every fixed cutoff is compatible with the gap closing in the
+continuum limit --- the fixed-regulator lesson. The Millennium content is
+precisely the open uniformity/OS/vacuum gates of the MP dependency map.
+
+New in YM-7: carrier enlarged to V7 (adds \texttt{chi\_1(A),\ chi\_1(B)}; Gram stays
+block-diagonal, all seven exact T0 eigenvectors), dropping the complement
+top from \texttt{lambda\_1} to \texttt{lambda\_1*lambda\_half} (certified ordering) --- which
+UNLOCKS the previously refused \texttt{kappa\ =\ 7/10} cell: exact seam count
+\texttt{k\_Sigma\ =\ 1} at \texttt{(7/10,\ 13/10)}. Also ships certified brackets for all
+seven compressed eigenvalue curves (inertia bisection; every step an exact
+LDL count), published with honest kappa-drift --- adopting the RH-line's
+post-pause lesson that limited-denominator ``exact constants'' are never
+promoted from bisection.
+
+New in YM-6 (framework-native): the gap becomes an exact threshold COUNT
+\texttt{k\_Sigma(kappa,mu)\ =\ N(spec(T\_kappa)\ \textgreater{}\ mu)} via a Haynsworth congruence ---
+the D03 ``infinite ko finite'' move --- on the native 5x5 carrier
+\texttt{\{1,\ chi12(A),\ chi12(B),\ chi12(A)chi12(B),\ chi12(AB\^{}-1)\}} (all exact T0
+eigenvectors; exact Gram has a single 1/2 overlap). Certified exact counts:
+\texttt{k=1} at (kappa,mu) = (1/8,3/5), (1/4,3/5), (1/2,1) --- so
+\texttt{lambda\_2\ \textless{}=\ mu\ \textless{}\ lambda\_1} EXACTLY, past YM-5's reach --- and constant
+count across the window = no seam spectral flow (thermodynamics/02
+instance). The (7/10,5/4) cell is honestly REFUSED (bracket {[}1,5{]}).
+
+New in YM-5: certified TWO-SIDED spectral gap of the interacting theta
+transfer at finite coupling --- including BEYOND YM-2's sandwich threshold
+\texttt{kappa\_0\ =\ 0.1394...}. Complement control uses the exact doubling identity
+\texttt{m\_kappa\^{}2\ =\ m\_\{2\ kappa\}}: \texttt{\textbar{}PMQ\textbar{}\^{}2\ \textless{}=\ lammax(P\ m\_\{2k\}\ P\ -\ (P\ m\_k\ P)\^{}2)},
+with \texttt{\textbar{}QSQ\textbar{}\ \textless{}=\ lambda\_half\^{}2\ e\^{}\{3k\}} and a Weyl bound. Certified rows
+(ratio upper bound, gap lower bound): kappa=1/8: 0.5003, gap\textgreater=0.6924;
+kappa=1/4: 0.5610, gap\textgreater=0.5781; kappa=3/10: 0.5867, gap\textgreater=0.5332.
+Fail-closed at kappa=1. Lineage: realizes the old lambda-manuscripts'
+Kill-Lemma skeleton unconditionally (see LINEAGE.md); no claim imported.
+
+New in YM-4: (T1) the graph swap S:(A,B)-\textgreater(B,A) commutes with T\_kappa for
+EVERY coupling --- \texttt{Tr(BA\^{}-1)\ =\ Tr(AB\^{}-1)} on SU(2) --- so YM-3's rank-one
+crossing line \texttt{chi12(A)+chi12(B)} is symmetry-protected at all kappa: a
+theorem, not a first-order accident. (T2) first certified finite-kappa
+spectral data from the exact character expansion
+\texttt{exp{[}(k/2)TrU{]}\ =\ sum\ d\_j\ f\_j\ chi\_j}, \texttt{f\_j\ =\ 2\ I\_\{2j+1\}(k)/k}, with exact
+Clebsch-Gordan ring arithmetic, the exact pairing tensor
+\texttt{Int\ chi\_p(A)chi\_q(B)chi\_r(AB\^{}-1)\ =\ delta\_\{p=q=r\}/d\_p}, and a certified
+truncation remainder. Sector-resolved lower bounds on the grid show the
+swap-even branch rising and the swap-odd branch falling with coupling.
+
+CI runs exactly that one command plus pin diff and pytest.
+
+\hypertarget{ym-35-t54-energy-version-commutator-remainder-e4d-c-with-the-rkf-operator-ladder}{%
+\section{YM-35 --- T54′ energy version + commutator remainder (E4D-C with the RKF operator ladder)}\label{ym-35-t54-energy-version-commutator-remainder-e4d-c-with-the-rkf-operator-ladder}}
+
+Framework inputs: theorum/54 (constant-μ chain is exactly its uncovered case --- \texttt{sum\_mu\_diverges}), theorum/50 A4 (polarization visibility = YM-28's superposition gap), theorum/53 (energy, not mass), theorum/51 + 61 (commutator calculus). On the fabric, with the YM-30 engine as the only evaluator:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{T1 locality} --- \texttt{{[}K\^{}\{1/2\},\ B\_l{]}} vanishes on states with no content at sites l, l+1; non-adjacent face pairs do not mix (site content exactly ½). Commutator support is \texttt{\{l−1,\ l+1\}} --- bridge-local, every m.
+\item
+  \textbf{T2 exact adjacent commutator energy} --- \texttt{E\_Σ({[}K\^{}\{1/2\},B\_l{]}\ B\_\{l+1\})\ =\ λ²·(3/4)·(1−√λ₁)²}, κ- and m-independent (site weights 1/4 : 3/4 = YM-25 recoupling squares, from the engine).
+\item
+  \textbf{T3 T54′ ratio theorem (commuting model, exact m ≤ 8)} --- vacuum and excitation carry the same per-face factor; ratio exactly m-independent; \texttt{Σμ\textless{}∞} not needed for a ratio.
+\item
+  \textbf{T4 second-order remainder} --- relative size ρ = μ²·(3/4)(1−√λ₁)² = 2.9e-4 / 1.2e-3 / 4.6e-3 at κ = 1/8, 1/4, 1/2 (a = 1); kill criterion ρ \textless{} 1/10 passed.
+\end{itemize}
+
+\textbf{Verdict:} E4D-C's excitation bound opens at the first non-commutative order --- the first obstruction is an exact local number, not a sup. \textbf{Not done:} the full face expansion (all words, contents j ≥ 1) --- the worldline cluster problem (YM-33). E4D-C OPEN. Pin \texttt{EXPECTED\_YM35.sha256}.
+
+\hypertarget{ym-36-t54-on-the-fabric-at-content-uxbd-face-word-carrier}{%
+\section{YM-36 --- T54′ on the fabric at content ½ (face-word carrier)}\label{ym-36-t54-on-the-fabric-at-content-uxbd-face-word-carrier}}
+
+The alternating product \texttt{K\^{}\{1/2\}\ M\_w\ K\^{}\{1/2\}} compressed to ALL superpositions of content-½ face insertions (2\^{}\{m−1\} orthonormal words), exact rational matrices m = 2..6 at μ = 1/32, 1/16, 1/8 (declared rational-square kernel √λ½ = 11/16, √λ₁ = 3/8; YM-33 engine with per-column face labels). Excitation/vacuum ratio ρ\_m increases with geometrically decaying increments (consecutive-increment ratios in {[}2/5, 3/5{]} certified); under declared q ≤ 2/3 the m-uniform limit is bracketed, e.g.~ρ∞ ∈ {[}0.2225014, 0.2225544{]} at μ = 1/32. The top eigenvector is a genuine superposition (single-insertion weight 0.98 / 0.92 / 0.73), yet exceeds the one-face ratio by only 0.24 \% / 0.93 \% / 3.5 \% --- superpositions open no gap-closing channel at content ½. \textbf{Boundary:} compressed-operator statement (interlacing: lower bounds), contents j ≥ 1 outside the carrier (first effect = YM-35 commutator, \textasciitilde μ²), m ≤ 6. E4D-C OPEN; it holds at content ½ on this carrier in compression with a geometric tail. Pin \texttt{EXPECTED\_YM36.sha256}.
+
+\hypertarget{ym-37-the-space-transfer-m-uniformity-of-the-dressed-time-two-point-ratio-as-a-theorem}{%
+\section{YM-37 --- The space transfer: m-uniformity of the dressed time two-point ratio as a theorem}\label{ym-37-the-space-transfer-m-uniformity-of-the-dressed-time-two-point-ratio-as-a-theorem}}
+
+\textbf{(a) refused with witness.} theorum/53 T4 bounds cut-square \emph{weights} (\texttt{d\_k\ ≤\ S\_kk}); a block with every diagonal ≤ μ can still have λmax \textgreater{} μ (2×2 witness, exact). So ``complement λmax from T53 weights'' is not available; item 3's upper half stays OPEN.
+
+\textbf{What is a theorem.} Every YM-33/36 quantity is \texttt{⟨boundary,\ M\ τ\^{}\{m−1\}\ boundary⟩} for one column map τ = B⁻¹M (native quaternion carrier: faces/rungs are class functions of products, so only dot products appear; Haar = rational S³ moments; cut space = harmonic degree ≤ 2 per rail). τ commutes with simultaneous conjugation and with the centre of SU(2) acting on all rails; both boundary vectors are even, so everything lives in the even invariant sector: dim 8 (t = 2), 52 (t = 3). Validated \textbf{exactly} against \texttt{ym33.fabric\_partition}. σ₁, σ₂ of the symmetric pencil (M, B) bracketed by exact inertia (fraction-free Bareiss, Jacobi sign rule); q := σ₂/σ₁ certified:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1429}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1429}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+κ
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+q (t = 2)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+q/r²
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+q (t = 3)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+q/r²
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+ρ₁\^{}∞ (two-sided)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+certified err, interior p ≥ 3
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1/8 & 0.0014578 & 1.495 & 0.0021668 & 2.222 & 0.43367710465900 & 9.3e-7 \\
+1/4 & 0.0057991 & 1.492 & 0.0086057 & 2.215 & {[}0.4353154056078, 0.4353154056137{]} & 1.5e-5 \\
+1/2 & 0.0226981 & 1.483 & 0.0334686 & 2.187 & {[}0.4417107170, 0.4417107229{]} & 2.6e-4 \\
+\end{longtable}
+
+so \texttt{\textbar{}ρ₁(m,p)\ −\ ρ₁\^{}∞\textbar{}\ ≤\ err(m,p)} for \textbf{every} m and interior p, with err explicit in σ₁, σ₂, ‖N‖\_B, ‖e₀‖\_B --- YM-33's ``bulk constant with geometric edges'' is now certified with its rate (both q's lie in YM-33's measured window {[}r²/2, 2r²{]}), and ρ₁\^{}∞ = N₁₁/σ₁ is a single-column Rayleigh quotient (YM-32's E\_bulk reproduced to every digit). \textbf{Boundary:} fixed time order only; no complement bound; no m-uniform upper bound on the true gap --- item 3's m-dependence is now a one-column pencil question, its upper half unchanged. Runtime \textasciitilde16 min (own CI step). Pin \texttt{EXPECTED\_YM37.sha256}. \textbf{Standing correction (same day):} T3's for-all-m route uses the finite spectral split --- classical import; status ANCHORED pending YM-38. \textbf{Resolved by YM-38 (same day): the for-all-m statement now rests on the native route; see the YM-38 entry.}
+
+\hypertarget{ym-38-native-m-uniformity-ym-37s-spectral-import-removed}{%
+\section{YM-38 --- Native m-uniformity (YM-37's spectral import removed)}\label{ym-38-native-m-uniformity-ym-37s-spectral-import-removed}}
+
+The YM-37 T3 statement re-proved with the framework's own machinery, nothing else: deflation with the explicit vector w = x₁₂ (defect exactly B-orthogonal, \texttt{r\_w\textquotesingle{}Bw\ =\ 0}), complement ceiling \texttt{‖Πτy‖\_B\ ≤\ σ\textquotesingle{}\textquotesingle{}‖y‖\_B} from \textbf{one T53 elimination sign check} on the restricted doubled pencil (no eigenvectors anywhere), recognized-channel Cauchy with declared geometric tail and outward certificate \textbf{β = L \textless{} 1} (theorum/28 §3--5, §9), window products handled by theorum/54 §2's \texttt{∏(1+x)\ ≤\ 1+2s} bound. Result per κ, two regimes:
+
+\texttt{\textbar{}ρ₁(m,p)\ −\ ρ\_c\textbar{}\ ≤\ A·(L\^{}\{j−p₀\}\ +\ L\^{}\{j\_c−p₀\})} for \textbf{all} m, p with \texttt{j\ =\ min(p−1,\ m−p)\ ≥\ p₀}, where ρ\_c = exact ρ₁(26,13):
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+κ & L (= β) & A (p₀ = 2, all interior p) & check rows \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1/8 & 0.0014578 & 1.93e-8 & 8/8 inside \\
+1/4 & 0.0057991 & 6.34e-7 & 8/8 inside \\
+1/2 & 0.0226981 & 2.17e-5 & 8/8 inside \\
+\end{longtable}
+
+The coarse constant beats the anchored YM-37 one (1.9e-8 vs 9.3e-7 at κ = 1/8); ρ\_c lies inside YM-37's bracket at every κ. \textbf{YM-37's standing correction is RESOLVED} --- its T3 now rests on this capsule; also corrected there: the pinned dim-52 run used the native elimination, not Bareiss (LINEAGE). Certificates refused three drafts (missing reference-tail term; backwards extrapolation below p₀; display-precision comparison) --- all recorded. Pin \texttt{EXPECTED\_YM38.sha256}.
+
+\hypertarget{ym-39-content-ladder-centre-superselection-exact-certified-channel-ordering}{%
+\section{YM-39 --- Content ladder: centre superselection (exact) + certified channel ordering}\label{ym-39-content-ladder-centre-superselection-exact-certified-channel-ordering}}
+
+Session item (b). \textbf{T1:} the centre of SU(2) (total flip on every rail) grades the fabric exactly --- faces and rungs are centre-blind class functions of products, χ\_j picks (−1)\^{}\{2j\} --- so every mixed half-integer/integer fabric quantity vanishes \textbf{identically}: the mixed insertion matrix is the zero matrix (exact rationals) and the YM-33 engine's mixed partitions are 0; a same-parity pair (½ with 3/2) is nonzero, so the vanishing is parity, not accident. Superselection at every coupling, every m, every time order. \textbf{T2/T3:} per-channel bulk ratios by the YM-38 native route (same τ, same L, channel-specific N), with the m-uniform band on both sides of every comparison:
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+κ & ρ(½) & ρ(1) & ρ(3/2) & ordering with margins \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1/8 & 0.43367710 & 0.13403748 & 0.00016958 & ✓ \\
+1/4 & 0.43531541 & 0.13491222 & 0.00067672 & ✓ \\
+1/2 & 0.44171072 & 0.13837705 & 0.00268149 & ✓ \\
+\end{longtable}
+
+ρ(1) sits at the declared λ₁ = 9/64 scale (anchor check). So on this carrier the J = ½ excitation is certified \textbf{lightest, uniformly in m}, and no content ≥ 1 channel can mix into it --- YM-36's boundary concern closed at the carrier level. \textbf{Boundary:} truncated faces/rung kernel (contents ≤ 1), so 3/2 is a composite row (data); compressed statements; E4D-C OPEN. Named next: the same ladder on the YM-22 heat-kernel trajectory, quantifying the collapse onto content ½ as a → 0. Pin \texttt{EXPECTED\_YM39.sha256}.
+
+\hypertarget{ym-40-content-ladder-on-the-heat-kernel-trajectory-the-casimir-pinch}{%
+\section{YM-40 --- Content ladder on the heat-kernel trajectory: the Casimir pinch}\label{ym-40-content-ladder-on-the-heat-kernel-trajectory-the-casimir-pinch}}
+
+YM-39's ladder run along YM-22's family (heat-kernel time kernel, Wilson faces at κ = a/16), a ∈ \{1, 1/4, 1/16, 1/64\}, everything per-a by the YM-37/38/39 native machinery (superselection exact at every a; every γ bracket carries the m-uniform band, so it holds for every m and interior p; native exp = YM-13 compound interest, native log = F00-G odd series, with a cross-route re-enclosure control):
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule\noalign{}
+a & γ\_½ & γ₁ & Δγ & ε = \textbar Δγ − 5/4\textbar{} & r₁/r\_½ \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 0.7497494 & 1.9993628 & 1.2496134 & 6.4e-4 & 0.010416 \\
+1/4 & 0.7499914 & 2.0001512 & 1.2501597 & 1.6e-4 & 0.002604 \\
+1/16 & 0.7499999 & 2.0000692 & 1.2500693 & 7.0e-5 & 0.000651 \\
+1/64 & 0.750000005 & 2.0000196 & 1.2500196 & 2.0e-5 & 0.000163 \\
+\end{longtable}
+
+\textbf{Certified:} Δγ(a) ≥ 1 at every a, and the two-sided pinch \textbar Δγ(a) − 5/4\textbar{} ≤ ε(a) with ε strictly decreasing --- the content-1 channel's excess rate lands on the \textbf{free Casimir gap C₁ − C\_½ = 5/4} in the cutoff direction, while the face ladder collapses (r₁/r\_½ ↓, YM-22 tie). Session item (b) is now closed in both directions: fixed-a ordering with margins (YM-39) and cutoff-direction Casimir pinch (here). Build notes: the draft's ``approach from below'' was refused by the brackets (Δγ crosses 5/4; γ\_½ crosses 3/4 --- signed dressing), and the first run violated the standing round-before-log rule (12 min → 4 min). \textbf{Boundary:} order-1 dressed two-point, not the operator gap; declared trajectory; E4D-C OPEN. Pin \texttt{EXPECTED\_YM40.sha256}.
+
+\hypertarget{ym-41-the-tools-dock-e4d-c-restated-with-the-operator-branch-tools}{%
+\section{YM-41 --- The tools dock: E4D-C restated with the operator-branch tools}\label{ym-41-the-tools-dock-e4d-c-restated-with-the-operator-branch-tools}}
+
+The RKF operator-branch tools consumed by pin and re-verified on this repo's own pencil: \textbf{silence-channel contraction} β\_sil \textless{} 1 at every κ (0.00256 / 0.01029 / 0.04173 --- identical to RKF's digits, both roundings coincide at 1e-9), the \textbf{ladder law} f\_\{c+½\}/f\_c ≤ κ/(2(2c+2)) with the sharper-claim discrimination (tight to 0.07\%), and the \textbf{seam-flow meter} (sector cascade on the column pencil, every bracket's count route agreeing with the native det route). Selective release (stationarity, seam-count retention, u+e \textless{} 1 for the untruncated column) consumed by pin --- RKF theorum/75 is the derivation of record. \textbf{E4D-C after the dock:} m gone (YM-37), content tail gone (theorum/75), contraction structural (theorum/74) --- the remaining open content of \texttt{K\^{}\{1/2\}M\_wK\^{}\{1/2\}} is the \textbf{t-direction only}. Named YM-42: the t-ladder of silence contractions (β\_sil at t = 3, 52-dim even sector) and the t-uniform statement. Pin \texttt{EXPECTED\_YM41.sha256}.
+
+\hypertarget{ng-1-the-native-gap-statement-its-teeth-and-the-dictionary-declared-open}{%
+\section{NG-1 --- The native gap statement, its teeth, and the dictionary declared open}\label{ng-1-the-native-gap-statement-its-teeth-and-the-dictionary-declared-open}}
+
+A governance capsule with \textbf{no new numbers}. Diagnosis behind it: every wall this program has hit (cutoff uniformity, OS, infinite volume, Haar↔Φ\_Σ) sits exactly where a native object meets a classically-stated goal --- progress has been fast inside and zero at that boundary. So the statement being pursued is now written in the framework's own ontology, and the translation is named as a separate open problem, explicitly rather than implicitly.
+
+\textbf{NG.} There is γ* \textgreater{} 0 and a declared trajectory κ(a) such that every member of the recognition fabric family has recognition gap γ(a, m, t) ≥ γ* for all a, m, t --- each instance certified by native verdicts (elimination sign patterns, cut-tail mass, recognition energy, seam counts), every infinite direction taken through theorum/28's outward certificate, never a completion or a limit axiom. \textbf{NG is not the Clay statement and is never claimed to be.}
+
+\textbf{Teeth} (a statement with no refutation condition is a definition, not a theorem) --- five ways to refute NG with a single certified counterexample: volume (R1, a route already died this way in YM-11), cutoff (R2, live --- YM-23 shows the tiling route exits at a = 1/8), sector cascade (R3, the seam-flow meter is the instrument), a channel lighter than J = ½ (R4), and any verdict that survives its own tamper (R5).
+
+\textbf{Ledger re-scored against NG:} O1 single-member gap DELIVERED; O2 volume DELIVERED on the column (the chain's operator upper bound is \textbf{not} delivered); O3 content DELIVERED; \textbf{O4 time OPEN --- the whole remainder (YM-42)}; O5 cutoff PARTIAL (declared trajectory only, AF shape not modelled); O6 evidence standard IN FORCE; \textbf{DICT (translation to Clay) OPEN, separate problem} (RH T01-E5C/E6). Sharpened by today's finding: theorum/75's grading was built classically and then regraded natively with identical rationals --- one classical-looking ingredient proved replaceable; whether the measure itself is, is exactly DICT. Pin \texttt{EXPECTED\_NG1.sha256}.
+
+\begin{flushright}\small\texttt{Publications/papers/yang-mills-certified-benchmark/README.md}\end{flushright}

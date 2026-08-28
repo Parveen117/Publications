@@ -1,0 +1,112 @@
+% source: RKF/certificates/foundation/F00GHI_LOG_ARITHMETIC_ZETA_V0_1/README.md
+\hypertarget{f00-ghi-rigorous-computational-certificate-v0.1}{%
+\chapter{F00-G/H/I Rigorous Computational Certificate v0.1}\label{f00-ghi-rigorous-computational-certificate-v0.1}}
+
+\hypertarget{scope}{%
+\section{Scope}\label{scope}}
+
+This Class F package audits the native derivation chain
+
+\begin{verbatim}
+F00-G  positive logarithm and native powers;
+F00-H  natural arithmetic, prime factorization, Mobius and von Mangoldt;
+F00-I  half-plane zeta, Euler product and logarithmic derivative.
+\end{verbatim}
+
+It does not prove the universal theorems by random sampling. It checks exact finite arithmetic, rigorous rational interval enclosures for the native logarithm/exponential inverse packet, the proof inequalities used in dyadic convergence and Euler-product passage, source-order policy, immutable source pins and adversarial negative controls.
+
+\hypertarget{arithmetic}{%
+\section{Arithmetic}\label{arithmetic}}
+
+\begin{verbatim}
+fractions.Fraction       exact rational arithmetic;
+integer trial division   exact finite factorization audit;
+rational intervals       outward series and tail enclosures;
+SHA-1 / SHA-256          source identity and canonical result hashing.
+\end{verbatim}
+
+No floating-point number is used in a proof margin.
+
+\hypertarget{main-obligations}{%
+\section{Main obligations}\label{main-obligations}}
+
+\hypertarget{logarithm-and-powers}{%
+\subsection{Logarithm and powers}\label{logarithm-and-powers}}
+
+\begin{verbatim}
+C00G-01 Cayley contraction on the exact rational packet;
+C00G-02 odd logarithm tails and Exp(Log x)=x enclosures;
+C00G-03 multiplicative logarithm packet and exact derivative identity;
+C00G-04 exponent-addition and product-base interval consistency.
+\end{verbatim}
+
+\hypertarget{arithmetic-1}{%
+\subsection{Arithmetic}\label{arithmetic-1}}
+
+\begin{verbatim}
+C00H-01 exhaustive division algorithm packet;
+C00H-02 Euclidean gcd and Bezout reconstruction;
+C00H-03 exhaustive Euclid lemma packet;
+C00H-04 prime factor reconstruction and primality audit;
+C00H-05 Mobius divisor cancellation;
+C00H-06 formal-prime-log von Mangoldt divisor identity;
+C00H-07 Euclid prime construction on increasing prime prefixes.
+\end{verbatim}
+
+\hypertarget{half-plane-zeta}{%
+\subsection{Half-plane zeta}\label{half-plane-zeta}}
+
+\begin{verbatim}
+C00I-01 exact dyadic block estimates;
+C00I-02 geometric and polynomial-geometric tail bounds;
+C00I-03 finite Dirichlet-convolution coefficients;
+C00I-04 finite Euler products and rigorous zeta-tail enclosure;
+C00I-05 product-tail inequality supporting nonvanishing;
+C00I-06 Mobius reciprocal coefficient identity;
+C00I-07 von Mangoldt logarithmic-derivative coefficient identity.
+\end{verbatim}
+
+\hypertarget{negative-controls}{%
+\section{Negative controls}\label{negative-controls}}
+
+The verifier must reject:
+
+\begin{verbatim}
+noncontracting Cayley coordinate;
+a composite number treated as prime in Euclid's lemma;
+wrong Mobius signs;
+omission of prime powers from Lambda;
+the wrong dyadic exponent;
+an Euler product truncated to first prime powers only;
+classical logarithm/zeta inserted as a primitive source.
+\end{verbatim}
+
+\hypertarget{run}{%
+\section{Run}\label{run}}
+
+From the repository root:
+
+\begin{verbatim}
+python certificates/foundation/F00GHI_LOG_ARITHMETIC_ZETA_V0_1/verify.py \
+  --output certificates/foundation/F00GHI_LOG_ARITHMETIC_ZETA_V0_1/result.json
+\end{verbatim}
+
+Jupyter:
+
+\begin{verbatim}
+%run certificates/foundation/F00GHI_LOG_ARITHMETIC_ZETA_V0_1/verify.py \
+    --output certificates/foundation/F00GHI_LOG_ARITHMETIC_ZETA_V0_1/result.json
+\end{verbatim}
+
+Passing status:
+
+\begin{verbatim}
+PASS_F00GHI_LOG_ARITHMETIC_ZETA_AUDIT
+\end{verbatim}
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+A PASS confirms the declared exact/interval obligations and their alignment with the pinned theorem sources. It does not certify analytic continuation, the completed-Weil sign, \texttt{K0\ \textgreater{}=\ 0}, or RH.
+
+\begin{flushright}\small\texttt{RKF/certificates/foundation/F00GHI\_LOG\_ARITHMETIC\_ZETA\_V0\_1/README.md}\end{flushright}

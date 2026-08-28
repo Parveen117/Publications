@@ -1,0 +1,902 @@
+% source: RKF/theorum/36_native_prime_gamma_debt_source_adapter.md
+\hypertarget{native-primegammadebt-source-adapter-and-graph-null-seam-theorem}{%
+\chapter{Native Prime--Gamma--Debt Source Adapter and Graph-Null Seam Theorem}\label{native-primegammadebt-source-adapter-and-graph-null-seam-theorem}}
+
+\hypertarget{purpose}{%
+\section{1. Purpose}\label{purpose}}
+
+The Stage 3C metric-graph theorem constructs the completed-Weil boundary state
+from the native metric,
+
+\[
+M_X=I+C_X^*C_X,
+\qquad
+r_\partial=M_X^{-1}q_b,
+\]
+
+\[
+J_Xf=(f,C_Xf),
+\qquad
+p_X=J_Xr_\partial.
+\]
+
+The remaining source-adapter problem initially appeared to require a new map
+
+\[
+D_\Sigma:\mathcal G_X\longrightarrow\mathcal Y_\Sigma
+\]
+
+assembled event by event from every prime and Gamma coordinate.
+
+That demand is too strong. The complete native source analysis has already
+been constructed upstream from the positive prime mismatch, positive Gamma
+mismatch and exact diagonal debt:
+
+\[
+\mathcal A_{\rm mis}:
+X_3^-\longrightarrow\mathcal Y_{\rm mis},
+\]
+
+\[
+M_{\rm mis}=\mathcal A_{\rm mis}^*\mathcal A_{\rm mis},
+\qquad
+d_0=m_\Gamma+m_{\rm p},
+\]
+
+\[
+D_{\rm comp}
+=
+\left(I-d_0M_{\rm mis}^{-1}\right)^{1/2},
+\]
+
+\[
+\boxed{
+\Xi_0=\mathcal A_{\rm mis}D_{\rm comp},
+}
+\]
+
+\[
+\boxed{
+\Xi_0^*\Xi_0
+=
+M_{\rm mis}-d_0I
+=
+S_{0,-}^{\rm full}.
+}
+\]
+
+Once both \(J_X\) and \(\Xi_0\) are native, the source adapter is forced by the
+graph synthesis. This stage constructs that adapter, classifies every other
+adapter with the same pullback, and separates the now-closed adapter problem
+from the still-open two-sheet decoder bound.
+
+The native order is
+
+\begin{verbatim}
+prime mismatch + Gamma mismatch
+-> explicit diagonal debt
+-> compatibility defect D_comp
+-> complete source analysis Xi_0
+-> native metric graph J_X
+-> canonical source adapter D_Sigma^0=Xi_0 J_X^*
+-> graph-null adapter freedom
+-> two-sheet source domination
+-> canonical boundary decoder.
+\end{verbatim}
+
+No classical explicit formula, Birman--Schwinger inverse, fitted Gram factor or
+post-hoc event rotation defines any object in this theorem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{primegamma-mismatch-and-debt-source}{%
+\section{2. Prime--Gamma mismatch and debt source}\label{primegamma-mismatch-and-debt-source}}
+
+The positive mismatch carrier consists of:
+
+\begin{verbatim}
+prime events:
+  weights Lambda(n)/n^2;
+  two-sheet mismatch vectors
+  (1,-exp(-i xi log n));
+
+Gamma events:
+  weights (1/2) exp(-(k+1/4)t) dt;
+  oscillator mismatches
+  1-exp(i xi t/2).
+\end{verbatim}
+
+The upstream factorization proves
+
+\[
+m_{\rm p}I_2-\mathcal Q(\xi)\ge0,
+\]
+
+and
+
+\[
+G(\xi)+m_\Gamma
+=
+\frac12
+\sum_{k\ge0}\int_0^\infty
+e^{-(k+1/4)t}
+|1-e^{i\xi t/2}|^2\,dt
+\ge0.
+\]
+
+Their direct-integral analysis is \(\mathcal A_{\rm mis}\).
+The exact source accounting is
+
+\[
+S_{0,-}^{\rm full}
+=
+\mathcal A_{\rm mis}^*\mathcal A_{\rm mis}
+-d_0I.
+\]
+
+The compatibility defect does not append a new arbitrary event. It removes the
+declared debt inside the same mismatch range:
+
+\[
+\Xi_0
+=
+\mathcal A_{\rm mis}
+\left(I-d_0M_{\rm mis}^{-1}\right)^{1/2}.
+\]
+
+Consequently,
+
+\[
+\operatorname{Ran}\Xi_0
+\subseteq
+\overline{\operatorname{Ran}\mathcal A_{\rm mis}},
+\]
+
+so the source event orientation remains prime--Gamma native.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-graph-carrier}{%
+\section{3. Native graph carrier}\label{native-graph-carrier}}
+
+Let
+
+\[
+J_X:X_3^-\longrightarrow\mathcal G_X
+\]
+
+be the isometric native metric-graph analysis. Put
+
+\[
+P_X=J_XJ_X^*,
+\qquad
+Q_X=I-P_X.
+\]
+
+Then
+
+\[
+J_X^*J_X=I,
+\qquad
+\operatorname{Ran}Q_X=\ker J_X^*.
+\]
+
+The graph-null seam \(\ker J_X^*\) consists of ambient event directions which
+vanish under native graph synthesis. Such directions are not deleted; they
+are retained as recognition-null memory.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{canonical-source-adapter-theorem}{%
+\section{4. Canonical source-adapter theorem}\label{canonical-source-adapter-theorem}}
+
+\hypertarget{theorem-4.1-canonical-native-source-adapter}{%
+\subsection{Theorem 4.1 (Canonical native source adapter)}\label{theorem-4.1-canonical-native-source-adapter}}
+
+Define
+
+\[
+\boxed{
+D_\Sigma^0
+=
+\Xi_0J_X^*:
+\mathcal G_X\longrightarrow\mathcal Y_\Sigma.
+}
+\]
+
+Then
+
+\[
+\boxed{
+D_\Sigma^0J_X=\Xi_0,
+}
+\tag{4.1}
+\]
+
+\[
+\boxed{
+D_\Sigma^0Q_X=0,
+}
+\tag{4.2}
+\]
+
+and
+
+\[
+\boxed{
+J_X^*(D_\Sigma^0)^*D_\Sigma^0J_X
+=
+\Xi_0^*\Xi_0
+=
+S_{0,-}^{\rm full}.
+}
+\tag{4.3}
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+Since \(J_X^*J_X=I\),
+
+\[
+D_\Sigma^0J_X
+=
+\Xi_0J_X^*J_X
+=
+\Xi_0.
+\]
+
+Also \(J_X^*Q_X=0\), so
+
+\[
+D_\Sigma^0Q_X
+=
+\Xi_0J_X^*Q_X
+=
+0.
+\]
+
+Finally, pull back the adapter Gram through \(J_X\):
+
+\[
+\begin{aligned}
+J_X^*(D_\Sigma^0)^*D_\Sigma^0J_X
+&=
+(D_\Sigma^0J_X)^*(D_\Sigma^0J_X)\\
+&=
+\Xi_0^*\Xi_0\\
+&=
+S_{0,-}^{\rm full}.
+\end{aligned}
+\]
+
+\(\square\)
+
+The actual source adapter is therefore no longer an open construction. It is
+the native source analysis followed by graph synthesis.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{all-adapters-form-one-graph-null-affine-family}{%
+\section{5. All adapters form one graph-null affine family}\label{all-adapters-form-one-graph-null-affine-family}}
+
+\hypertarget{theorem-5.1-graph-null-adapter-classification}{%
+\subsection{Theorem 5.1 (Graph-null adapter classification)}\label{theorem-5.1-graph-null-adapter-classification}}
+
+Let
+
+\[
+D_\Sigma:\mathcal G_X\to\mathcal Y_\Sigma
+\]
+
+be bounded. Then
+
+\[
+D_\Sigma J_X=\Xi_0
+\]
+
+if and only if there is a bounded map \(E\) such that
+
+\[
+\boxed{
+D_\Sigma
+=
+D_\Sigma^0+EQ_X.
+}
+\tag{5.1}
+\]
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+Every map of the form (5.1) satisfies
+
+\[
+D_\Sigma J_X
+=
+D_\Sigma^0J_X+EQ_XJ_X
+=
+\Xi_0.
+\]
+
+Conversely, if \(D_\Sigma J_X=\Xi_0\), then
+
+\[
+(D_\Sigma-D_\Sigma^0)P_X
+=
+(D_\Sigma-D_\Sigma^0)J_XJ_X^*
+=
+0.
+\]
+
+Hence
+
+\[
+D_\Sigma-D_\Sigma^0
+=
+(D_\Sigma-D_\Sigma^0)Q_X,
+\]
+
+which is (5.1) with \(E=D_\Sigma-D_\Sigma^0\).
+
+\(\square\)
+
+Thus adapter nonuniqueness lives entirely on the graph-null seam. It cannot
+change the physical source pullback.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{boundary-recognition-class-is-adapter-invariant}{%
+\section{6. Boundary recognition class is adapter invariant}\label{boundary-recognition-class-is-adapter-invariant}}
+
+The metric-graph boundary state is
+
+\[
+p_X=J_Xr_\partial,
+\]
+
+and
+
+\[
+L_\partial(f)
+=
+\langle p_X,J_Xf\rangle_{\mathcal G_X}.
+\]
+
+A source decoder \(c_\partial\in\mathcal Y_\Sigma\) satisfies
+
+\[
+\Xi_0^*c_\partial=r_\partial
+\]
+
+exactly when
+
+\[
+L_\partial(f)
+=
+\langle c_\partial,\Xi_0f\rangle_\Sigma.
+\]
+
+\hypertarget{theorem-6.1-adapter-independent-quotient-decoder}{%
+\subsection{Theorem 6.1 (Adapter-independent quotient decoder)}\label{theorem-6.1-adapter-independent-quotient-decoder}}
+
+Let
+
+\[
+D_\Sigma^E=D_\Sigma^0+EQ_X.
+\]
+
+If
+
+\[
+\Xi_0^*c_\partial=r_\partial,
+\]
+
+then
+
+\[
+\boxed{
+p_X-(D_\Sigma^E)^*c_\partial
+\in\ker J_X^*.
+}
+\tag{6.1}
+\]
+
+For the canonical adapter,
+
+\[
+\boxed{
+(D_\Sigma^0)^*c_\partial=p_X.
+}
+\tag{6.2}
+\]
+
+\hypertarget{proof-2}{%
+\subsubsection{Proof}\label{proof-2}}
+
+For the canonical adapter,
+
+\[
+(D_\Sigma^0)^*c_\partial
+=
+J_X\Xi_0^*c_\partial
+=
+J_Xr_\partial
+=
+p_X.
+\]
+
+For a general adapter,
+
+\[
+(D_\Sigma^E)^*c_\partial
+=
+p_X+Q_XE^*c_\partial.
+\]
+
+Therefore
+
+\[
+p_X-(D_\Sigma^E)^*c_\partial
+=
+-Q_XE^*c_\partial
+\in\operatorname{Ran}Q_X
+=
+\ker J_X^*.
+\]
+
+\(\square\)
+
+This is the exact Recognition-Seam statement:
+
+\[
+\boxed{
+\text{different ambient adapters represent one boundary object
+when they differ only by graph-null memory.}
+}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{canonical-minimum-decoder-after-a-relative-bound}{%
+\section{7. Canonical minimum decoder after a relative bound}\label{canonical-minimum-decoder-after-a-relative-bound}}
+
+Suppose a native estimate proves
+
+\[
+|L_\partial(f)|^2
+\le
+\beta\|\Xi_0f\|_\Sigma^2
+\qquad(f\in X_3^-)
+\]
+
+for some finite \(\beta\).
+
+Then \(L_\partial\) vanishes on \(\ker\Xi_0\) and defines a bounded functional
+on \(\operatorname{Ran}\Xi_0\). Recognition completion produces a unique
+minimum decoder
+
+\[
+c_{\partial,\min}
+\in\overline{\operatorname{Ran}\Xi_0}
+\]
+
+such that
+
+\[
+\Xi_0^*c_{\partial,\min}=r_\partial
+\]
+
+and
+
+\[
+\boxed{
+\|c_{\partial,\min}\|_\Sigma^2
+=
+\beta_{\rm cut}
+\le\beta.
+}
+\tag{7.1}
+\]
+
+Consequently,
+
+\[
+\boxed{
+S_{0,-}^{\rm full}
+-
+L_\partial^*L_\partial
+\ge
+(1-\beta)
+S_{0,-}^{\rm full}.
+}
+\tag{7.2}
+\]
+
+The decoder is therefore forced after the bound. It is not fitted and then
+declared contractive.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{event-coordinate-covariance}{%
+\section{8. Event-coordinate covariance}\label{event-coordinate-covariance}}
+
+Let
+
+\[
+U:\mathcal Y_\Sigma\to\mathcal Y_\Sigma'
+\]
+
+be unitary. Define
+
+\[
+\Xi_0'=U\Xi_0,
+\qquad
+D_\Sigma'=UD_\Sigma,
+\qquad
+c_\partial'=Uc_\partial.
+\]
+
+Then
+
+\[
+(\Xi_0')^*\Xi_0'=\Xi_0^*\Xi_0,
+\]
+
+\[
+(D_\Sigma')J_X=\Xi_0',
+\]
+
+\[
+(\Xi_0')^*c_\partial'=\Xi_0^*c_\partial,
+\]
+
+and
+
+\[
+\|c_\partial'\|=\|c_\partial\|.
+\]
+
+Thus the actual event-coordinate chart may rotate, but the source Gram,
+boundary recognition class, burden and cut covariance are invariant.
+
+This explains why Stage 3A's request for every individual event phase was
+unnecessarily rigid. The lawful invariant is the source adapter and quotient
+boundary class.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{robust-two-sheet-attachment-theorem}{%
+\section{9. Robust two-sheet attachment theorem}\label{robust-two-sheet-attachment-theorem}}
+
+The remaining actual issue is no longer the source adapter. It is the
+attachment of the direct cut envelope to the actual source and boundary in one
+two-sheet chart.
+
+Let \(\beta_{\rm env}\) be a charted boundary/source envelope. Assume:
+
+\[
+\mathcal E_{\rm chart}(f)
+\le
+\frac{1}{1-\varepsilon_S}
+\|\Xi_0f\|_\Sigma^2,
+\qquad
+0\le\varepsilon_S<1,
+\]
+
+and
+
+\[
+|L_\partial(f)-L_{\rm chart}(f)|
+\le
+\delta_\partial\|\Xi_0f\|_\Sigma.
+\]
+
+If
+
+\[
+|L_{\rm chart}(f)|^2
+\le
+\beta_{\rm env}\mathcal E_{\rm chart}(f),
+\]
+
+then
+
+\[
+\boxed{
+\sqrt{\beta_{\rm cut}}
+\le
+\sqrt{\frac{\beta_{\rm env}}{1-\varepsilon_S}}
++
+\delta_\partial.
+}
+\tag{9.1}
+\]
+
+\hypertarget{proof-3}{%
+\subsubsection{Proof}\label{proof-3}}
+
+For every \(f\),
+
+\[
+\begin{aligned}
+|L_\partial(f)|
+&\le
+|L_{\rm chart}(f)|
++
+|L_\partial(f)-L_{\rm chart}(f)|\\
+&\le
+\sqrt{\beta_{\rm env}}\,
+\mathcal E_{\rm chart}(f)^{1/2}
++
+\delta_\partial\|\Xi_0f\|_\Sigma\\
+&\le
+\left(
+\sqrt{\frac{\beta_{\rm env}}{1-\varepsilon_S}}
++
+\delta_\partial
+\right)
+\|\Xi_0f\|_\Sigma.
+\end{aligned}
+\]
+
+Take the sharp supremum.
+
+\(\square\)
+
+For the imported direct-unshifted envelope
+
+\[
+\beta_{\rm env}
+=
+0.8290856201657449,
+\]
+
+the exact relative reserve is
+
+\[
+1-\beta_{\rm env}
+=
+0.1709143798342551.
+\]
+
+If the source attachment is exact, the allowed boundary residual is
+
+\[
+\boxed{
+\delta_\partial
+<
+1-\sqrt{\beta_{\rm env}}
+=
+0.0894586115031646185\ldots
+}
+\]
+
+If the source chart loses at most five percent, the residual budget remains
+
+\[
+\delta_\partial
+<
+0.0658042467246887\ldots
+\]
+
+and at ten percent source loss it remains
+
+\[
+\delta_\partial
+<
+0.0402051028325867\ldots
+\]
+
+Thus the next theorem need not be a symbolic miracle. It may be an exact
+attachment or a directed residual enclosure with a substantial budget.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-stage-3d-calibration}{%
+\section{10. Exact Stage 3D calibration}\label{exact-stage-3d-calibration}}
+
+The exact rational packet uses six mismatch rows:
+
+\begin{verbatim}
+prime singular amplitudes   5, 9, 12
+Gamma singular amplitudes   12, 12, 16
+\end{verbatim}
+
+so
+
+\[
+M_{\rm mis}
+=
+\operatorname{diag}(169,225,400).
+\]
+
+With debt
+
+\[
+d_0=144
+\]
+
+and compatibility defect
+
+\[
+D_{\rm comp}
+=
+\operatorname{diag}
+\left(
+\frac5{13},
+\frac35,
+\frac45
+\right),
+\]
+
+the source Gram is
+
+\[
+\Xi^*\Xi
+=
+\operatorname{diag}(25,81,256)
+=
+M_{\rm mis}-144I.
+\]
+
+A rational graph isometry \(J\) is used to construct
+
+\[
+D_\Sigma^0=\Xi J^*.
+\]
+
+The packet verifies:
+
+\begin{verbatim}
+D_Sigma^0 J = Xi;
+D_Sigma^0 Q_graph = 0;
+all alternate adapters differ by E Q_graph;
+alternate boundary states differ only by ker(J*);
+event-coordinate rotations preserve the source and decoder;
+minimum decoder burden = 361/900;
+relative reserve = 539/900;
+cut covariance is positive definite.
+\end{verbatim}
+
+These are exact Fraction calculations.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{actual-completed-weil-status}{%
+\section{11. Actual completed-Weil status}\label{actual-completed-weil-status}}
+
+The source material supports:
+
+\begin{verbatim}
+prime mismatch factorization                       PROVED
+Gamma oscillator mismatch factorization            PROVED
+diagonal debt d_0                                  PROVED
+compatibility defect D_comp                         PROVED
+Xi_0=A_mis D_comp                                  PROVED
+Xi_0^*Xi_0=S_(0,-)^full                            PROVED
+native metric graph J_X                            PASSED / HASH STABLE
+canonical adapter D_Sigma^0=Xi_0 J_X^*             PROVED HERE
+Xi_0=D_Sigma^0 J_X                                 PROVED HERE
+\end{verbatim}
+
+Therefore:
+
+\[
+\boxed{
+\text{ACTUAL SOURCE ADAPTER = CONSTRUCTED.}
+}
+\]
+
+Still open:
+
+\begin{verbatim}
+actual two-sheet Loewner source domination;
+actual boundary density in that same chart;
+promotion of the T21 scalar envelope to beta_cut;
+actual minimum completed-Weil decoder;
+actual cut covariance;
+RH.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{next-theorem-stage-3e}{%
+\section{12. Next theorem: Stage 3E}\label{next-theorem-stage-3e}}
+
+The next development is the
+
+\[
+\boxed{
+\textbf{Native Two-Sheet Source-Domination Attachment Theorem.}
+}
+\]
+
+It must construct a two-sheet chart
+
+\[
+J_{\rm 2sh}:X_3^-\to
+L^2(\mathbb R;\mathbb C^2)
+\]
+
+from the already declared prime/Gamma mismatch analysis and prove:
+
+\[
+\boxed{
+\|\Xi_0f\|_\Sigma^2
+\ge
+\int_{\mathbb R}
+\langle
+J_{\rm 2sh}f(\xi),
+A_0(\xi)J_{\rm 2sh}f(\xi)
+\rangle
+\,d\xi,
+}
+\tag{12.1}
+\]
+
+together with
+
+\[
+\boxed{
+L_\partial(f)
+=
+\int_{\mathbb R}
+\langle
+b_\partial(\xi),
+J_{\rm 2sh}f(\xi)
+\rangle
+\,d\xi.
+}
+\tag{12.2}
+\]
+
+The directed cell floors and actual boundary envelope must then be shown to
+bound (12.1)--(12.2), exactly or with the residuals in Theorem 9.1.
+
+If this stage attaches the existing envelope
+
+\[
+\beta_{\rm env}\le0.8290856201657449,
+\]
+
+then Recognition completion forces
+
+\[
+\|c_{\partial,\min}\|^2
+\le0.8290856201657449<1
+\]
+
+and
+
+\[
+S_{0,-}^{\rm full}
+-
+L_\partial^*L_\partial
+\ge
+0.1709143798342551
+S_{0,-}^{\rm full}.
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{13. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+PRIME--GAMMA MISMATCH/DEBT SOURCE                    SOURCE-DERIVED / PROVED
+CANONICAL METRIC-GRAPH SOURCE ADAPTER                PROVED
+CLASSIFICATION OF ALL SOURCE ADAPTERS                PROVED
+GRAPH-NULL RECOGNITION-QUOTIENT INVARIANCE           PROVED
+EVENT-COORDINATE COVARIANCE                          PROVED
+ROBUST TWO-SHEET ATTACHMENT BUDGET                   PROVED
+EXACT RATIONAL STAGE 3D PACKET                       WRITTEN
+
+ACTUAL TWO-SHEET SOURCE DOMINATION                   OPEN / NEXT
+ACTUAL BOUNDARY COMMON-CHART IDENTITY                OPEN / NEXT
+T21 ENVELOPE AS ACTUAL DECODER BOUND                 OPEN
+ACTUAL COMPLETED-WEIL CUT COVARIANCE                 OPEN
+RIEMANN HYPOTHESIS                                   NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/36\_native\_prime\_gamma\_debt\_source\_adapter.md}\end{flushright}

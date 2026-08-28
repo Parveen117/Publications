@@ -1,0 +1,562 @@
+% source: RKF/theorum/28_recognition_complete_finite_to_infinite_cut_theorem.md
+\hypertarget{recognition-complete-finite-to-infinite-cut-theorem}{%
+\chapter{Recognition-Complete Finite-to-Infinite Cut Theorem}\label{recognition-complete-finite-to-infinite-cut-theorem}}
+
+\hypertarget{purpose}{%
+\section{1. Purpose}\label{purpose}}
+
+This theorem is the generalized bridge needed before any RH specialization.
+It replaces the vague instruction
+
+\begin{verbatim}
+refine the finite model and take a limit
+\end{verbatim}
+
+by a clock-free recognition-completion theorem.
+
+The refinement index is a directed comparison label, not time. Every packet is
+first transported to a common recovered carrier. Convergence is required in
+both the recognized and cut-memory channels, with predeclared Smriti tails.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{transported-finite-cut-packets}{%
+\section{2. Transported finite cut packets}\label{transported-finite-cut-packets}}
+
+Let \(\mathcal D\) be a common algebraic source core. After recovered middle
+identification, let every finite packet be represented on one complete event
+carrier \(\mathcal K\) by a bounded lift
+
+\[
+Z_n:\mathcal D\longrightarrow\mathcal K.
+\]
+
+Let
+
+\[
+P_n=P_n^*=P_n^2,
+\qquad
+Q_n=I-P_n.
+\]
+
+Define the recognized and memory lifts
+
+\[
+Y_n=P_nZ_n,
+\qquad
+M_n=Q_nZ_n.
+\]
+
+The finite positive forms are
+
+\[
+R_n=Y_n^*Y_n,
+\qquad
+D_n=M_n^*M_n,
+\]
+
+and the finite signed cut form is
+
+\[
+F_n=R_n-D_n.
+\]
+
+The notation \(^*\) is used only after the positive recognition form has been
+quotiented by its null seam and completed. The Hilbert representation is thus
+derived, not primitive.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{recognition-cauchy-hypothesis}{%
+\section{3. Recognition-Cauchy hypothesis}\label{recognition-cauchy-hypothesis}}
+
+\hypertarget{definition-3.1}{%
+\subsection{Definition 3.1}\label{definition-3.1}}
+
+The transported cut packets are recognition-Cauchy when there exist numbers
+
+\[
+\rho_n^{\rm rec},
+\qquad
+\rho_n^{\rm mem},
+\qquad
+\rho_n^{\rm hol}
+\]
+
+with
+
+\[
+\rho_n^{\rm rec}+\rho_n^{\rm mem}+\rho_n^{\rm hol}
+\longrightarrow0
+\]
+
+such that, for all sufficiently refined \(m\succeq n\),
+
+\[
+\|Y_m-Y_n\|
+\le \rho_n^{\rm rec},
+\]
+
+\[
+\|M_m-M_n\|
+\le \rho_n^{\rm mem},
+\]
+
+and the recovered-middle path holonomy/residue between the two transported
+packets is bounded by \(\rho_n^{\rm hol}\).
+
+The comparison is invalid if the source metric, cut labels or memory orientation
+have been changed without a recovered identity map.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{smriti-tail-hypothesis}{%
+\section{4. Smriti tail hypothesis}\label{smriti-tail-hypothesis}}
+
+For each \(n\), let \(C_n^{\rm rec}\), \(C_n^{\rm mem}\) be predeclared
+corrections and let \(\mathsf S_n^{\rm rec}\), \(\mathsf S_n^{\rm mem}\) be
+lawful tail memories satisfying
+
+\[
+Y=
+Y_n+C_n^{\rm rec}+\mathsf S_n^{\rm rec},
+\]
+
+\[
+M=
+M_n+C_n^{\rm mem}+\mathsf S_n^{\rm mem},
+\]
+
+with
+
+\[
+\|\mathsf S_n^{\rm rec}\|
++\|\mathsf S_n^{\rm mem}\|
+\longrightarrow0.
+\]
+
+The corrections must be generated from constitutive, analytic or reference data
+independent of the held-out evaluation residue.
+
+This is the operator form of
+
+\begin{verbatim}
+finite Chandas recursion + correction + vanishing Smriti tail.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{recognition-complete-limit}{%
+\section{5. Recognition-complete limit}\label{recognition-complete-limit}}
+
+\hypertarget{theorem-5.1-cut-channel-completion}{%
+\subsection{Theorem 5.1 (Cut-channel completion)}\label{theorem-5.1-cut-channel-completion}}
+
+Under the recognition-Cauchy and Smriti-tail hypotheses, there exist bounded
+limit lifts
+
+\[
+Y,M:\mathcal H_{\rm rec}\longrightarrow\mathcal K
+\]
+
+such that
+
+\[
+Y_n\longrightarrow Y,
+\qquad
+M_n\longrightarrow M
+\]
+
+in operator norm after declared corrections. The limit event lift is
+
+\[
+Z=Y+M.
+\]
+
+The cut-generated forms
+
+\[
+R=Y^*Y,
+\qquad
+D=M^*M,
+\qquad
+F=R-D
+\]
+
+satisfy
+
+\[
+R_n\longrightarrow R,
+\qquad
+D_n\longrightarrow D,
+\qquad
+F_n\longrightarrow F
+\]
+
+in operator norm.
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+The two channel families are Cauchy in the complete operator spaces and therefore
+converge. For any two bounded operators \(A,B\),
+
+\[
+\|A^*A-B^*B\|
+\le
+(\|A\|+\|B\|)\|A-B\|.
+\]
+
+Apply this first to \(Y_n,Y\) and then to \(M_n,M\). Subtraction gives the
+convergence of \(F_n\). The holonomy condition ensures that the limits belong
+to one recovered carrier rather than merely sharing a shadow coordinate. ∎
+
+\hypertarget{quantitative-form}{%
+\subsection{Quantitative form}\label{quantitative-form}}
+
+If
+
+\[
+\delta_n^{\rm rec}=\|Y-Y_n\|,
+\qquad
+\delta_n^{\rm mem}=\|M-M_n\|,
+\]
+
+then
+
+\[
+\boxed{
+\|R-R_n\|
+\le
+(\|Y\|+\|Y_n\|)\delta_n^{\rm rec},
+}
+\]
+
+\[
+\boxed{
+\|D-D_n\|
+\le
+(\|M\|+\|M_n\|)\delta_n^{\rm mem},
+}
+\]
+
+and
+
+\[
+\boxed{
+\|F-F_n\|
+\le
+(\|Y\|+\|Y_n\|)\delta_n^{\rm rec}
++
+(\|M\|+\|M_n\|)\delta_n^{\rm mem}.
+}
+\]
+
+These bounds are the general replacement for an unnamed collection of finite-to-
+infinite errors.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{target-faithful-memory-completion}{%
+\section{6. Target-faithful memory completion}\label{target-faithful-memory-completion}}
+
+Let
+
+\[
+T_n:\mathcal K\longrightarrow\mathbb C^\nu,
+\qquad \nu\le5,
+\]
+
+be transported target observers satisfying
+
+\[
+T_nT_n^*=I_\nu.
+\]
+
+Define the faithfulness residual
+
+\[
+\varepsilon_n^{\rm faith}
+=
+\|(I-T_n^*T_n)M_n\|.
+\]
+
+Assume
+
+\[
+T_n\longrightarrow T
+\]
+
+in operator norm after one fixed label orientation, and
+
+\[
+\varepsilon_n^{\rm faith}\longrightarrow0.
+\]
+
+\hypertarget{theorem-6.1-no-hidden-memory-completion}{%
+\subsection{Theorem 6.1 (No-hidden-memory completion)}\label{theorem-6.1-no-hidden-memory-completion}}
+
+The limit memory lift satisfies
+
+\[
+\boxed{
+M=T^*TM.
+}
+\]
+
+Consequently
+
+\[
+\overline{\operatorname{Ran}M}
+\subseteq
+\operatorname{Ran}T^*,
+\]
+
+and the target-relevant memory rank is at most \(\nu\le5\).
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+Write
+
+\[
+(I-T^*T)M
+=
+(I-T^*T)(M-M_n)
++
+(T_n^*T_n-T^*T)M_n
++
+(I-T_n^*T_n)M_n.
+\]
+
+Every term tends to zero by norm convergence and the faithfulness residual. ∎
+
+This is the rigorous no-hidden-complement theorem. A numerically rank-five
+finite packet without the vanishing faithfulness residual does not satisfy it.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{cut-derived-finite-seam-matrix}{%
+\section{7. Cut-derived finite seam matrix}\label{cut-derived-finite-seam-matrix}}
+
+Define
+
+\[
+A_n=T_nM_n,
+\qquad
+A=TM.
+\]
+
+Then
+
+\[
+D_n=A_n^*A_n+E_n^{\rm blind},
+\qquad
+\|E_n^{\rm blind}\|\longrightarrow0,
+\]
+
+and in the limit
+
+\[
+D=A^*A.
+\]
+
+Assume a uniform positive reference floor
+
+\[
+R_n\ge mI,
+\qquad
+R\ge mI,
+\qquad m>0.
+\]
+
+Define
+
+\[
+B_n=A_nR_n^{-1}A_n^*
+\in M_\nu(\mathbb C),
+\]
+
+and
+
+\[
+B=AR^{-1}A^*.
+\]
+
+\hypertarget{theorem-7.1-finite-seam-matrix-convergence}{%
+\subsection{Theorem 7.1 (Finite seam-matrix convergence)}\label{theorem-7.1-finite-seam-matrix-convergence}}
+
+The matrices satisfy
+
+\[
+B_n\longrightarrow B
+\]
+
+in operator norm. More precisely,
+
+\[
+\boxed{
+\|B_n-B\|
+\le
+m^{-1}(\|A_n\|+\|A\|)\|A_n-A\|
++
+m^{-2}\|A\|\|A_n\|\|R_n-R\|.
+}
+\]
+
+\hypertarget{proof-2}{%
+\subsubsection{Proof}\label{proof-2}}
+
+Use
+
+\[
+\|R_n^{-1}\|,\|R^{-1}\|\le m^{-1}
+\]
+
+and
+
+\[
+\|R_n^{-1}-R^{-1}\|
+\le
+m^{-2}\|R_n-R\|.
+\]
+
+Expand \(B_n-B\) by adding and subtracting
+\(AR_n^{-1}A_n^*\) and \(AR^{-1}A_n^*\). ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-infinite-to-finite-conclusion}{%
+\section{8. Exact infinite-to-finite conclusion}\label{exact-infinite-to-finite-conclusion}}
+
+By Theorem 6.1,
+
+\[
+F=R-A^*A.
+\]
+
+The cut-memory spectral isomorphism therefore gives
+
+\[
+\boxed{
+N_-(F)=N_+(B-I),
+}
+\]
+
+\[
+\boxed{
+\dim\ker F=\dim\ker(I-B),
+}
+\]
+
+and
+
+\[
+\boxed{
+\inf_{f\ne0}
+\frac{\langle f,Ff\rangle}{\langle f,Rf\rangle}
+=
+\lambda_{\min}(I-B).
+}
+\]
+
+Thus the infinite signed cut form is decided by a matrix of size at most five,
+but only after recognition-complete convergence and target faithfulness have
+been proved.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{outward-finite-certificate}{%
+\section{9. Outward finite certificate}\label{outward-finite-certificate}}
+
+Let \(u_n\) be an outward upper bound for \(\lambda_{\max}(B_n)\), and let
+\(e_n\) be an outward upper bound for \(\|B-B_n\|\). Then
+
+\[
+\lambda_{\max}(B)
+\le u_n+e_n.
+\]
+
+Hence
+
+\[
+\boxed{
+u_n+e_n<1}
+\]
+
+is a lawful finite certificate for
+
+\[
+F>0
+\]
+
+in the reference metric.
+
+A fixed-grid top without \(e_n\) is a shadow certificate only.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{why-this-theorem-is-clock-free}{%
+\section{10. Why this theorem is clock-free}\label{why-this-theorem-is-clock-free}}
+
+No external time parameter appears. The index \(n\) labels a directed
+refinement or declared comparison object. The calculus uses:
+
+\begin{verbatim}
+trans-cut arrows;
+recovered middle identity;
+recognition-Cauchy comparison;
+predeclared Smriti tails;
+target-faithful memory observers.
+\end{verbatim}
+
+An exponential family may generate one refinement chart, but the theorem does
+not depend on that chart.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{rh-specialization-gate}{%
+\section{11. RH specialization gate}\label{rh-specialization-gate}}
+
+For the completed-Weil specialization, the framework must construct a directed
+family of native event lifts
+
+\[
+Z_n^{\rm Weil}
+\]
+
+from prime, Gamma, completion-boundary and compatibility events and prove:
+
+\begin{verbatim}
+1. recovered identity across all refinement arrows;
+2. recognized and memory channel Cauchy bounds;
+3. Madhava--Smriti tail bounds for every omitted event family;
+4. target-faithfulness residual -> 0 with one fixed five-label orientation;
+5. a uniform positive recognized-reference floor;
+6. an outward finite seam-matrix margin.
+\end{verbatim}
+
+Only then is RH a special case of the universal Recognition-Complete Cut
+Theorem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{12. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+cut-channel operator-norm completion                  PROVED
+explicit form-error bounds                            PROVED
+no-hidden-memory limit from faithfulness residual     PROVED
+finite seam-matrix convergence                        PROVED
+outward finite certificate rule                       PROVED
+clock-free character                                   PROVED
+
+RH event family recognition-Cauchy bounds             NOT YET BUILT
+RH Smriti tail packet                                  NOT YET BUILT
+RH target-faithfulness residual                        NOT YET BUILT
+RH outward five-matrix certificate                     NOT YET BUILT
+RH                                                     NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/28\_recognition\_complete\_finite\_to\_infinite\_cut\_theorem.md}\end{flushright}

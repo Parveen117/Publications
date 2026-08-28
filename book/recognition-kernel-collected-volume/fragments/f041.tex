@@ -1,0 +1,530 @@
+% source: RKF/theorum/39_native_source_kernel_no_blindness_strict_odd.md
+\hypertarget{native-source-kernel-no-blindness-and-strict-odd-cut-theorem}{%
+\chapter{Native Source-Kernel No-Blindness and Strict Odd Cut Theorem}\label{native-source-kernel-no-blindness-and-strict-odd-cut-theorem}}
+
+\hypertarget{purpose}{%
+\section{1. Purpose}\label{purpose}}
+
+Stage 3F constructs the actual completed odd source decoder and proves the
+relative cut-covariance estimate
+
+\[
+S_{0,-}^{\mathrm{full}}-L_\partial^*L_\partial
+\ge
+\delta_{\rm cut}S_{0,-}^{\mathrm{full}},
+\]
+
+where
+
+\[
+\beta_\partial^{\mathrm{cut}}
+\le 0.8290856201657449,
+\qquad
+\delta_{\rm cut}
+=1-\beta_\partial^{\mathrm{cut}}
+\ge0.1709143798342551.
+\]
+
+This proves nonnegativity, but strict positivity on every nonzero odd state
+requires one further statement:
+
+\[
+\boxed{
+\ker S_{0,-}^{\mathrm{full}}
+=
+\ker\Xi_0
+=
+\{0\}.
+}
+\]
+
+The present stage attaches no-blindness to the same two-sheet source carrier
+used in Stage 3F. It does not consume the classical explicit formula, an even
+sector, a five-dimensional endpoint matrix, an attained threshold vector, or a
+uniform ambient spectral gap.
+
+The native order is
+
+\begin{verbatim}
+actual prime--Gamma--debt analysis Xi_0
+-> actual two-sheet chart J_2sh
+-> T21 lower cut profile s_T21
+-> zero-cut no-blindness
+-> source-kernel injectivity
+-> strict relative odd cut covariance.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{abstract-cut-source-no-blindness-theorem}{%
+\section{2. Abstract cut-source no-blindness theorem}\label{abstract-cut-source-no-blindness-theorem}}
+
+Let
+
+\[
+\Xi:\mathcal H\longrightarrow\mathcal Y
+\]
+
+be a bounded event analysis and let
+
+\[
+J:\mathcal H\longrightarrow L^2(X,\mu;\mathbb C^d)
+\]
+
+be an injective recognition chart. Suppose there is a measurable function
+\(s:X\to[0,\infty)\) satisfying
+
+\[
+\boxed{
+\|\Xi f\|_{\mathcal Y}^2
+\ge
+\int_X s(x)\|Jf(x)\|^2\,d\mu(x)
+}
+\tag{2.1}
+\]
+
+for every \(f\in\mathcal H\). Let
+
+\[
+Z_s=\{x:s(x)=0\}.
+\]
+
+\hypertarget{theorem-2.1-null-cut-source-injectivity}{%
+\subsection{Theorem 2.1 (Null-cut source injectivity)}\label{theorem-2.1-null-cut-source-injectivity}}
+
+If
+
+\[
+\mu(Z_s)=0,
+\]
+
+then
+
+\[
+\boxed{
+\ker\Xi=\{0\}.
+}
+\tag{2.2}
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+Let \(\Xi f=0\). Equation (2.1) gives
+
+\[
+\int_X s(x)\|Jf(x)\|^2\,d\mu(x)=0.
+\]
+
+The integrand is nonnegative. Since \(s>0\) almost everywhere outside the
+null set \(Z_s\), one has
+
+\[
+Jf=0
+\quad\text{almost everywhere on }X.
+\]
+
+Injectivity of \(J\) gives \(f=0\). ∎
+
+The theorem does not require \(\inf s>0\). The lower chart may approach zero
+at the cut, so zero can remain in the continuous or essential spectral
+closure. What is excluded is an attained nonzero source-null state.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{positive-measure-active-band-variant}{%
+\section{3. Positive-measure active-band variant}\label{positive-measure-active-band-variant}}
+
+Sometimes a source certificate is available only on a declared active band.
+Let \(E\subseteq X\) have positive measure and assume
+
+\[
+\|\Xi f\|^2
+\ge
+\int_E h(x)\|Jf(x)\|^2\,d\mu(x),
+\qquad
+h>0\ \text{a.e. on }E.
+\tag{3.1}
+\]
+
+\hypertarget{theorem-3.1-recognition-unique-active-observer}{%
+\subsection{Theorem 3.1 (Recognition-unique active observer)}\label{theorem-3.1-recognition-unique-active-observer}}
+
+Assume the chart has the uniqueness property
+
+\[
+1_EJf=0
+\quad\Longrightarrow\quad
+f=0.
+\tag{3.2}
+\]
+
+Then \(\ker\Xi=\{0\}\).
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+If \(\Xi f=0\), (3.1) forces \(Jf=0\) almost everywhere on \(E\), and (3.2)
+then gives \(f=0\). ∎
+
+For Hardy boundary charts, (3.2) is the boundary uniqueness/no-blindness
+property. This theorem is the direct recognition form of the covariant
+active-band virial route already proved in the MP source stack.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{application-to-the-actual-completed-odd-source}{%
+\section{4. Application to the actual completed odd source}\label{application-to-the-actual-completed-odd-source}}
+
+Stage 3D constructs
+
+\[
+\Xi_0
+=\mathcal A_{\rm mis}D_{\rm comp},
+\qquad
+\Xi_0^*\Xi_0
+=S_{0,-}^{\mathrm{full}}.
+\tag{4.1}
+\]
+
+Stage 3E constructs the native two-sheet Hardy chart
+
+\[
+J_{\rm 2sh}:X_3^-\longrightarrow
+L^2\!\left(\mathbb R,\frac{d\xi}{2\pi};\mathbb C^2\right).
+\tag{4.2}
+\]
+
+Stage 3F attaches the actual prime--Gamma--debt source symbol to that chart and
+proves the T21 Loewner lower estimate
+
+\[
+\boxed{
+\|\Xi_0f\|^2
+\ge
+\int_{\mathbb R}
+ s_{\rm T21}(\xi)
+ \|J_{\rm 2sh}f(\xi)\|^2
+ \frac{d\xi}{2\pi}.
+}
+\tag{4.3}
+\]
+
+The cut profile satisfies:
+
+\begin{verbatim}
+first cut:
+  s_T21(xi) >= (gamma_0/2) xi^2,
+  gamma_0 = 28.96922744937062;
+
+remaining active cells:
+  every cumulative source floor is strictly positive;
+
+[12,13]:
+  source floor >= 0.4571260170709391;
+
+far ray:
+  source floor >= 0.1568358628972386.
+\end{verbatim}
+
+Hence
+
+\[
+s_{\rm T21}(\xi)>0
+\quad\text{for almost every }\xi\ne0,
+\]
+
+and the only zero cut is the singleton \(\{0\}\), which has Lebesgue measure
+zero.
+
+\hypertarget{theorem-4.1-actual-source-kernel-no-blindness}{%
+\subsection{Theorem 4.1 (Actual source-kernel no-blindness)}\label{theorem-4.1-actual-source-kernel-no-blindness}}
+
+On the Stage 3F completed odd carrier,
+
+\[
+\boxed{
+\ker\Xi_0
+=
+\ker S_{0,-}^{\mathrm{full}}
+=
+\{0\}.
+}
+\tag{4.4}
+\]
+
+\hypertarget{proof-2}{%
+\subsubsection{Proof}\label{proof-2}}
+
+Apply Theorem 2.1 to (4.3). Since
+
+\[
+S_{0,-}^{\mathrm{full}}=\Xi_0^*\Xi_0,
+\]
+
+one has
+
+\[
+\ker S_{0,-}^{\mathrm{full}}=\ker\Xi_0.
+\]
+
+The two-sheet Hardy chart is injective, so (4.4) follows. ∎
+
+\hypertarget{independent-source-pin}{%
+\subsection{Independent source pin}\label{independent-source-pin}}
+
+The MP T20 theorem proves the same conclusion by a covariant cut-flow
+commutator and Hardy no-blindness. In that route a hypothetical zero source
+state has zero virial expectation, while the positive active-band commutator
+and Hardy uniqueness force the same expectation to be strictly positive. The
+Stage 3G direct proof and the T20 virial proof are independent presentations of
+the same native no-blindness mechanism.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{strict-odd-completed-weil-positivity}{%
+\section{5. Strict odd completed-Weil positivity}\label{strict-odd-completed-weil-positivity}}
+
+Put
+
+\[
+W_3^-
+=
+S_{0,-}^{\mathrm{full}}-L_\partial^*L_\partial.
+\]
+
+Stage 3F proves
+
+\[
+W_3^-
+\ge
+\delta_{\rm cut}S_{0,-}^{\mathrm{full}},
+\qquad
+\delta_{\rm cut}
+=0.1709143798342551.
+\tag{5.1}
+\]
+
+\hypertarget{theorem-5.1-strict-odd-cut-theorem}{%
+\subsection{Theorem 5.1 (Strict odd cut theorem)}\label{theorem-5.1-strict-odd-cut-theorem}}
+
+For every nonzero odd native state \(f\),
+
+\[
+\boxed{
+\langle f,W_3^-f\rangle
+\ge
+0.1709143798342551
+\langle f,S_{0,-}^{\mathrm{full}}f\rangle
+>0.
+}
+\tag{5.2}
+\]
+
+\hypertarget{proof-3}{%
+\subsubsection{Proof}\label{proof-3}}
+
+Theorem 4.1 gives
+
+\[
+\langle f,S_{0,-}^{\mathrm{full}}f\rangle
+=\|\Xi_0f\|^2>0
+\]
+
+for every nonzero \(f\). Substitute this into (5.1). ∎
+
+The theorem is strict in the quadratic-form sense. It does not claim a bound
+
+\[
+W_3^-\ge cI
+\]
+
+in the ambient carrier norm. The source floor vanishes at the cut and may
+approach zero under refinement, so the spectrum may still accumulate at zero
+without possessing a zero eigenvector.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{injective-cut-covariance-bridge}{%
+\section{6. Injective cut-covariance bridge}\label{injective-cut-covariance-bridge}}
+
+Stage 3A gives an enlarged event lift \(\widehat\Xi_0\) and a unit boundary
+state \(p_\partial\) such that
+
+\[
+W_3^-
+=
+\widehat\Xi_0^*
+(I-p_\partial p_\partial^*)
+\widehat\Xi_0.
+\tag{6.1}
+\]
+
+Let
+
+\[
+Q_\partial=I-p_\partial p_\partial^*.
+\]
+
+\hypertarget{corollary-6.1-boundary-line-no-blindness}{%
+\subsection{Corollary 6.1 (Boundary-line no-blindness)}\label{corollary-6.1-boundary-line-no-blindness}}
+
+\[
+\boxed{
+\ker(Q_\partial\widehat\Xi_0)=\{0\}.
+}
+\tag{6.2}
+\]
+
+\hypertarget{proof-4}{%
+\subsubsection{Proof}\label{proof-4}}
+
+If \(Q_\partial\widehat\Xi_0f=0\), then (6.1) gives
+
+\[
+\langle f,W_3^-f\rangle=0.
+\]
+
+Theorem 5.1 implies \(f=0\). ∎
+
+Thus the source, boundary and remaining cut memory form one injective
+co-generated event object.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-generalized-calibration}{%
+\section{7. Exact generalized calibration}\label{exact-generalized-calibration}}
+
+The executable packet uses the odd polynomial family
+
+\[
+p(x)=a x+b x^3+c x^5.
+\]
+
+The cut row at \(x=0\) vanishes for every state. Three active rows at
+\(x=1,2,3\) form the exact matrix
+
+\[
+\begin{pmatrix}
+1&1&1\\
+2&8&32\\
+3&27&243
+\end{pmatrix},
+\]
+
+whose determinant is
+
+\[
+720\ne0.
+\]
+
+Thus the zero cut carries no source rank, while the active observer recovers
+the complete odd state. The source Gram has determinant
+
+\[
+518400>0.
+\]
+
+With decoder
+
+\[
+c=(0,1/2,1/3,1/4),
+\]
+
+one has
+
+\[
+\|c\|^2=\frac{61}{144},
+\qquad
+1-\|c\|^2=\frac{83}{144},
+\]
+
+and the exact cut covariance has determinant
+
+\[
+298800>0.
+\]
+
+A negative control retains only the active nodes \(1,2\). The nonzero odd
+polynomial
+
+\[
+p(x)=x(4-5x^2+x^4)
+\]
+
+then vanishes at the cut and both observed nodes. The third active node detects
+it with value \(120\). This proves that positive weights do not replace a
+no-blindness/uniqueness theorem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{noncoercive-strictness-calibration}{%
+\section{8. Noncoercive strictness calibration}\label{noncoercive-strictness-calibration}}
+
+The packet also considers
+
+\[
+S_N=\operatorname{diag}(1,1/2,\ldots,1/N),
+\qquad
+W_N=\frac15S_N.
+\]
+
+Every finite source and strict form has trivial kernel, and the relative reserve
+is exactly \(1/5\). Nevertheless,
+
+\[
+\lambda_{\min}(S_N)=\frac1N\to0,
+\qquad
+\lambda_{\min}(W_N)=\frac1{5N}\to0.
+\]
+
+This is the exact distinction used in the completed endpoint:
+
+\begin{verbatim}
+strict positivity on every nonzero state     proved;
+uniform ambient coercivity                    not asserted.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{next-membrane}{%
+\section{9. Next membrane}\label{next-membrane}}
+
+Stage 3G closes the native odd sign. It deliberately stops before the
+classical target interface.
+
+The next theorem must establish, term by term and in one Fourier convention,
+that the native odd form equals the odd restriction of the classical completed
+explicit-formula Weil form. It must match:
+
+\begin{verbatim}
+completion-boundary term;
+Gamma term;
+prime-power term;
+reflection and conjugation convention;
+logarithmic/multiplicative unitary normalization;
+test-core density.
+\end{verbatim}
+
+Only after that normalization theorem is proved may a parity-restricted
+classical Weil implication be consumed.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{10. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+NULL-CUT SOURCE INJECTIVITY THEOREM                 PROVED
+ACTIVE-BAND RECOGNITION-UNIQUE VARIANT              PROVED
+ACTUAL ker Xi_0 = ker S_(0,-)^full = {0}            CLOSED FROM STAGE 3F PINS
+STRICT ODD COMPLETED-WEIL POSITIVITY                CLOSED
+BOUNDARY-LINE CUT-COVARIANCE INJECTIVITY            CLOSED
+UNIFORM AMBIENT SPECTRAL GAP                         NOT CLAIMED
+
+ODD NATIVE/CLASSICAL NORMALIZATION INTERFACE         NEXT
+PARITY-RESTRICTED CLASSICAL WEIL IMPLICATION         NEXT / EXTERNAL MEMBRANE
+RIEMANN HYPOTHESIS                                   NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/39\_native\_source\_kernel\_no\_blindness\_strict\_odd.md}\end{flushright}

@@ -1,0 +1,437 @@
+% source: RH-Framework/theorems/T01_E4_NATIVE_FUNCTION_COMPLETION.md
+\hypertarget{t01-e4-native-simple-function-tail-and-recognition-completions}{%
+\chapter{T01-E4 --- Native Simple-Function Tail and Recognition Completions}\label{t01-e4-native-simple-function-tail-and-recognition-completions}}
+
+\textbf{Classification:} \texttt{PROVED}
+
+\textbf{Foundational origin:} \texttt{NATIVE\_DERIVED}
+
+\textbf{Actual UGD function adapter:} \texttt{OPEN}
+
+This theorem completes finite cut-scalar simple functions using the native
+refinement content of T01-E1/E2/E3. It does not begin with an ordinary
+\(L^1\), \(L^2\), Hilbert, Haar, or Lebesgue structure.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{finite-native-simple-functions}{%
+\section{1. Finite native simple functions}\label{finite-native-simple-functions}}
+
+Let \(R=(n_s,n_t,n_\alpha)\) be a native refinement grid and let
+\(C_R\) be its cell atlas. A finite native simple function is a finitely
+supported map
+
+\[
+f:C_R\to\mathbb K_\Sigma^0.
+\tag{1.1}
+\]
+
+If two functions live on different grids, refine both to the coordinatewise
+least-common-multiple grid. Refinement copies each coarse value to all fine cells
+inside that coarse cell.
+
+Addition, subtraction, dagger, and pointwise multiplication are defined after
+common refinement.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-integral-gauges}{%
+\section{2. Native integral gauges}\label{native-integral-gauges}}
+
+The tail integral is
+
+\[
+\boxed{
+\mathcal I_1(f)
+=
+\sum_{c\in C_R}\nu_R(c)D_\Sigma(f(c)).
+}
+\tag{2.1}
+\]
+
+The recognition integral is
+
+\[
+\boxed{
+\mathcal I_2(f)
+=
+\sum_{c\in C_R}\nu_R(c)N_\Sigma(f(c)).
+}
+\tag{2.2}
+\]
+
+T01-E3 proves that both values are unchanged by refinement and integer cell
+translation.
+
+Define
+
+\[
+d_1(f,g)=\mathcal I_1(f-g),
+\tag{2.3}
+\]
+
+\[
+d_2(f,g)=\mathcal I_2(f-g).
+\tag{2.4}
+\]
+
+The second expression is an energy gauge rather than a square-root norm.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{tail-gauge-control}{%
+\section{3. Tail-gauge control}\label{tail-gauge-control}}
+
+For cut scalars,
+
+\[
+D_\Sigma(x+y)
+\le D_\Sigma(x)+D_\Sigma(y).
+\]
+
+Summing over a common refinement gives
+
+\[
+\boxed{
+d_1(f,h)\le d_1(f,g)+d_1(g,h).}
+\tag{3.1}
+\]
+
+Thus \(d_1\) is a rational refinement-invariant distance on finite simple
+functions modulo equality after common refinement.
+
+A sequence \((f_n)\) is \textbf{tail Cauchy} when for every positive cut rational
+\(\varepsilon\),
+
+\[
+d_1(f_m,f_n)<\varepsilon
+\]
+
+for all sufficiently large \(m,n\).
+
+Define
+
+\[
+\boxed{
+\mathfrak F_{\Sigma,1}
+=
+\{\text{tail-Cauchy simple presentations}\}/\sim_{d_1}.
+}
+\tag{3.2}
+\]
+
+\hypertarget{theorem-3.1}{%
+\subsection{Theorem 3.1}\label{theorem-3.1}}
+
+\(\mathfrak F_{\Sigma,1}\) is a complete cut module. Refinement and integer cell
+translation extend as isometries.
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+Addition and scalar multiplication are uniformly continuous by the scalar tail
+triangle inequality and
+
+\[
+\mathcal I_1(zf)
+=D_\Sigma(z)\mathcal I_1(f).
+\]
+
+The Cauchy-presentation quotient is well defined. Completeness follows from the
+diagonal presentation construction using only positive cut-rational thresholds.
+Refinement and translation preserve \(\mathcal I_1\) on the finite core, hence
+extend to the completion. QED.
+
+This object is the \textbf{native tail-integrable function completion}. Ordinary
+\(L^1\) is not its definition.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{recognition-gauge-control}{%
+\section{4. Recognition-gauge control}\label{recognition-gauge-control}}
+
+For cut scalars,
+
+\[
+2N_\Sigma(x)+2N_\Sigma(y)-N_\Sigma(x+y)
+=N_\Sigma(x-y)\ge0.
+\tag{4.1}
+\]
+
+After summation,
+
+\[
+\boxed{
+\mathcal I_2(f+g)
+\le
+2\mathcal I_2(f)+2\mathcal I_2(g).
+}
+\tag{4.2}
+\]
+
+A sequence \((f_n)\) is \textbf{recognition Cauchy} when for every positive cut
+rational \(\varepsilon\),
+
+\[
+d_2(f_m,f_n)<\varepsilon
+\]
+
+for all sufficiently large \(m,n\).
+
+Define
+
+\[
+\boxed{
+\mathfrak F_{\Sigma,2}
+=
+\{\text{recognition-Cauchy simple presentations}\}/\sim_{d_2}.
+}
+\tag{4.3}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-completed-pairing}{%
+\section{5. Native completed pairing}\label{native-completed-pairing}}
+
+For finite simple functions, define
+
+\[
+\boxed{
+\langle f,g\rangle_{\Sigma,\nu}^0
+=
+\sum_c\nu_R(c)f(c)^\dagger g(c),
+}
+\tag{5.1}
+\]
+
+after common refinement.
+
+The exact finite cut-square identity gives
+
+\[
+\boxed{
+N_\Sigma\left(
+\langle f,g\rangle_{\Sigma,\nu}^0
+\right)
+\le
+\mathcal I_2(f)\mathcal I_2(g).
+}
+\tag{5.2}
+\]
+
+One proof clears the rational cell denominators and applies the finite
+coefficient identity
+
+\[
+\left(\sum_iN(x_i)\right)
+\left(\sum_iN(y_i)\right)
+-
+N\left(\sum_i x_i^\dagger y_i\right)
+=
+\sum_{i<j}N(x_iy_j-x_jy_i).
+\tag{5.3}
+\]
+
+No pre-existing inner-product theorem is used.
+
+\hypertarget{theorem-5.1}{%
+\subsection{Theorem 5.1}\label{theorem-5.1}}
+
+The pairing extends uniquely to
+
+\[
+\langle\cdot,\cdot\rangle_{\Sigma,\nu}:
+\mathfrak F_{\Sigma,2}\times
+\mathfrak F_{\Sigma,2}
+\to
+\widehat{\mathbb K}_\Sigma.
+\tag{5.4}
+\]
+
+It satisfies dagger symmetry, cut-linearity, positivity, and
+
+\[
+\langle f,f\rangle_{\Sigma,\nu}=0
+\Longleftrightarrow f=0.
+\tag{5.5}
+\]
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Recognition-Cauchy presentations are energy bounded. Apply \texttt{(5.2)} to pairing
+differences exactly as in T01-B. Positivity and definiteness follow from
+\(\mathcal I_2(f)\) and the recognition-null equivalence relation. QED.
+
+Therefore \(\mathfrak F_{\Sigma,2}\) is the complete \textbf{native recognition-
+integrable function module}. Hilbert space may appear later only as a coordinate
+shadow.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-bounded-simple-multipliers}{%
+\section{6. Native bounded simple multipliers}\label{native-bounded-simple-multipliers}}
+
+For a finite simple function \(h\), define its uniform cut bound
+
+\[
+\boxed{
+U_\Sigma(h)=\max_c D_\Sigma(h(c)).
+}
+\tag{6.1}
+\]
+
+Then pointwise multiplication obeys
+
+\[
+\boxed{
+\mathcal I_1(hf)
+\le U_\Sigma(h)\mathcal I_1(f),
+}
+\tag{6.2}
+\]
+
+and
+
+\[
+\boxed{
+\mathcal I_2(hf)
+\le U_\Sigma(h)^2\mathcal I_2(f).
+}
+\tag{6.3}
+\]
+
+\hypertarget{proof-2}{%
+\subsection{Proof}\label{proof-2}}
+
+For every cell,
+
+\[
+D_\Sigma(h(c)f(c))
+\le D_\Sigma(h(c))D_\Sigma(f(c))
+\le U_\Sigma(h)D_\Sigma(f(c)),
+\]
+
+while
+
+\[
+N_\Sigma(h(c)f(c))
+=N_\Sigma(h(c))N_\Sigma(f(c))
+\le U_\Sigma(h)^2N_\Sigma(f(c)).
+\]
+
+Multiply by cell content and sum. QED.
+
+Thus every bounded native simple multiplier extends continuously to both native
+function completions.
+
+This theorem does \textbf{not} claim that the product of two arbitrary tail-completed
+functions remains tail-integrable. Such closure requires a separate hypothesis.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{explicit-cauchy-function}{%
+\section{7. Explicit Cauchy function}\label{explicit-cauchy-function}}
+
+On the unit-denominator grid, define
+
+\[
+f_N
+=
+\sum_{n=0}^{N}
+2^{-(n+1)}1_{c_n},
+\tag{7.1}
+\]
+
+where the \(c_n\) are distinct native cells. Then for \(M>N\),
+
+\[
+d_1(f_M,f_N)
+=
+\sum_{n=N+1}^{M}2^{-(n+1)}
+<2^{-(N+1)},
+\tag{7.2}
+\]
+
+and
+
+\[
+d_2(f_M,f_N)
+=
+\sum_{n=N+1}^{M}4^{-(n+1)}
+<\frac{1}{3\,4^{N+1}}.
+\tag{7.3}
+\]
+
+The same presentation therefore defines elements in both native completions.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{foundational-exclusion-boundary}{%
+\section{8. Foundational exclusion boundary}\label{foundational-exclusion-boundary}}
+
+The theorem does not use as definitions or proof generators:
+
+\begin{verbatim}
+ordinary L1 or L2 spaces;
+Hilbert space;
+Haar or Lebesgue integration;
+operator norms;
+complex floating-point values;
+spectral or polar decomposition.
+\end{verbatim}
+
+The implementation uses exact cut scalars and rational cell content only.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{coordinate-shadow-boundary}{%
+\section{9. Coordinate-shadow boundary}\label{coordinate-shadow-boundary}}
+
+After the actual UGD refinement adapter is proved, one may attempt to identify
+
+\begin{verbatim}
+native tail function completion         with an ordinary L1 chart;
+native recognition function completion with an ordinary L2 chart;
+native bounded multipliers              with decomposable bounded operators.
+\end{verbatim}
+
+Those must be equivalence theorems. They may not be used as definitions of the
+native objects above.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-certificate}{%
+\section{10. Exact certificate}\label{exact-certificate}}
+
+The expected status is
+
+\begin{verbatim}
+PASS_NATIVE_SIMPLE_FUNCTION_TAIL_AND_RECOGNITION_COMPLETION_CORE
+\end{verbatim}
+
+The exact certificate verifies cross-refinement arithmetic, pairing identities,
+native multiplier bounds, a nontrivial Cauchy function, and the absence of
+classical numerical dependencies in the foundational module.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{remaining-gates}{%
+\section{11. Remaining gates}\label{remaining-gates}}
+
+\begin{verbatim}
+T01-E4A NATIVE TAIL FUNCTION COMPLETION           PROVED
+T01-E4B NATIVE RECOGNITION FUNCTION COMPLETION    PROVED
+T01-E4C NATIVE BOUNDED SIMPLE MULTIPLIERS          PROVED
+
+T01-E5 ACTUAL UGD REFINEMENT ADAPTER               OPEN
+T01-E6 HAAR AND ORDINARY L1/L2 SHADOWS             OPEN
+ACTUAL MP ACTIONS ON NATIVE FUNCTION DOMAINS       OPEN
+NATIVE STATE-PACKET GENERATION                     OPEN
+TARGET FAITHFULNESS                                OPEN
+NATIVE SHUNYA                                      OPEN
+RIEMANN HYPOTHESIS                                 OPEN
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RH-Framework/theorems/T01\_E4\_NATIVE\_FUNCTION\_COMPLETION.md}\end{flushright}

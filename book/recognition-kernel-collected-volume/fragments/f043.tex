@@ -1,0 +1,610 @@
+% source: RKF/theorum/41_cut_graded_universal_generator_theorem.md
+\hypertarget{certified-cut-graded-universal-generator-theorem}{%
+\chapter{Certified Cut-Graded Universal Generator Theorem}\label{certified-cut-graded-universal-generator-theorem}}
+
+\hypertarget{certification-status}{%
+\section{1. Certification status}\label{certification-status}}
+
+The exact rational certificate and its ten focused tests have passed in the
+user's local Jupyter worktree. The two repository workflows also passed on the
+branch:
+
+\begin{verbatim}
+RKF proof-lab CI                    PASS
+Recognition Kernel Review          PASS
+user-local exact theorem suite      PASS
+\end{verbatim}
+
+The deterministic certificate target is
+
+\begin{verbatim}
+PASS_CUT_GRADED_UNIVERSAL_GENERATOR_CANDIDATE
+\end{verbatim}
+
+with pinned SHA-256
+
+\begin{verbatim}
+34afc44543cd83cacd96cbced32b77f5fdd765c28fbaf81105d0d2063cf5f36e
+\end{verbatim}
+
+The local console log and generated \texttt{ACTUAL.json} are not committed by this
+status update; the user has reported the complete prescribed run as passing.
+The algebraic theorem below is therefore promoted from candidate to the
+certified central theorem of this branch. No claim is made that one particular
+physical operator has already been proved universal.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-data}{%
+\section{2. Native data}\label{native-data}}
+
+Let \(\mathcal H\) be a Hilbert space and let
+
+\[
+J=J^*=J^{-1}
+\]
+
+be the primitive cut. Let \(G\) be a bounded operator on \(\mathcal H\). For an
+unbounded generator, the same formulas are licensed on a common invariant core
+provided
+
+\[
+J\operatorname{Dom}(G)=\operatorname{Dom}(G),
+\]
+
+and the relevant closures and functional calculi exist.
+
+Define the cut projections
+
+\[
+P_\pm=\frac{I\pm J}{2}.
+\]
+
+The generator is not treated as an untyped sum of winding, phase, memory and
+cost coordinates. Its first lawful structure is its grading relative to the
+cut.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{central-theorem}{%
+\section{3. Central theorem}\label{central-theorem}}
+
+\hypertarget{theorem-3.1-certified-cut-graded-universal-generator-theorem}{%
+\subsection{Theorem 3.1 (Certified cut-graded universal-generator theorem)}\label{theorem-3.1-certified-cut-graded-universal-generator-theorem}}
+
+Define
+
+\[
+\boxed{
+G_{\mathrm e}=\frac12(G+JGJ),
+\qquad
+G_{\mathrm o}=\frac12(G-JGJ).
+}
+\tag{3.1}
+\]
+
+Then the following statements hold.
+
+\hypertarget{i-unique-cut-grading}{%
+\subsection{(i) Unique cut grading}\label{i-unique-cut-grading}}
+
+\[
+\boxed{G=G_{\mathrm e}+G_{\mathrm o},}
+\tag{3.2}
+\]
+
+\[
+\boxed{
+JG_{\mathrm e}J=G_{\mathrm e},
+\qquad
+JG_{\mathrm o}J=-G_{\mathrm o}.
+}
+\tag{3.3}
+\]
+
+The decomposition is unique. Moreover,
+
+\[
+P_+G_{\mathrm e}P_-=P_-G_{\mathrm e}P_+=0,
+\tag{3.4}
+\]
+
+and
+
+\[
+P_+G_{\mathrm o}P_+=P_-G_{\mathrm o}P_-=0.
+\tag{3.5}
+\]
+
+Thus \(G_{\mathrm e}\) preserves the two sheets, while \(G_{\mathrm o}\)
+transports between them.
+
+\hypertarget{ii-bilateral-exponential-reconstruction}{%
+\subsection{(ii) Bilateral exponential reconstruction}\label{ii-bilateral-exponential-reconstruction}}
+
+Assume \(G\) is cut odd, so \(JGJ=-G\), and write
+
+\[
+U_t=e^{tG}.
+\]
+
+Then
+
+\[
+\boxed{JU_tJ=U_{-t}.}
+\tag{3.6}
+\]
+
+Define
+
+\[
+E_t=\frac12(U_t+U_{-t})=\cosh(tG),
+\qquad
+O_t=\frac12(U_t-U_{-t})=\sinh(tG).
+\tag{3.7}
+\]
+
+Then
+
+\[
+JE_tJ=E_t,
+\qquad
+JO_tJ=-O_t,
+\tag{3.8}
+\]
+
+\[
+\boxed{
+U_t=E_t+O_t,
+\qquad
+U_{-t}=E_t-O_t,
+}
+\tag{3.9}
+\]
+
+and
+
+\[
+\boxed{E_t^2-O_t^2=I.}
+\tag{3.10}
+\]
+
+\hypertarget{iii-exponential-cut-square-identity}{%
+\subsection{(iii) Exponential cut-square identity}\label{iii-exponential-cut-square-identity}}
+
+For the derived channels
+
+\[
+\widehat J_t=U_t+U_{-t}=2\cosh(tG),
+\qquad
+\widehat C_t=U_t-U_{-t}=2\sinh(tG),
+\tag{3.11}
+\]
+
+one has
+
+\[
+\boxed{\widehat J_t^2-\widehat C_t^2=4I,}
+\tag{3.12}
+\]
+
+and
+
+\[
+\boxed{
+\widehat J_t\widehat C_t
+=
+\widehat C_t\widehat J_t
+=
+U_{2t}-U_{-2t}
+=
+2\sinh(2tG).
+}
+\tag{3.13}
+\]
+
+Consequently the two cut/join products cannot be assigned different values
+when both channels are functions of the same generator.
+
+\hypertarget{iv-cut-loop-memory-and-seam-curvature}{%
+\subsection{(iv) Cut-loop memory and seam curvature}\label{iv-cut-loop-memory-and-seam-curvature}}
+
+For a general generator, define
+
+\[
+\boxed{
+\mathscr H_J(t)=JU_tJU_t=e^{tJGJ}e^{tG}.
+}
+\tag{3.14}
+\]
+
+Then
+
+\[
+\boxed{
+\mathscr H_J(t)
+=
+I+2tG_{\mathrm e}
++t^2\left(2G_{\mathrm e}^2+[G_{\mathrm e},G_{\mathrm o}]\right)
++O(t^3),
+}
+\tag{3.15}
+\]
+
+and
+
+\[
+\boxed{
+\log\mathscr H_J(t)
+=
+2tG_{\mathrm e}
++t^2[G_{\mathrm e},G_{\mathrm o}]
++O(t^3).
+}
+\tag{3.16}
+\]
+
+Hence
+
+\[
+\boxed{
+G_{\mathrm e}
+=
+\frac12\left.\frac{d}{dt}\right|_{t=0}\mathscr H_J(t),
+}
+\tag{3.17}
+\]
+
+and the first noncommutative seam-curvature coefficient is
+
+\[
+\boxed{
+\mathcal R_{\mathrm{seam}}
+=[G_{\mathrm e},G_{\mathrm o}].
+}
+\tag{3.18}
+\]
+
+The cut loop is locally the identity exactly when the generator is cut odd:
+
+\[
+\boxed{
+\mathscr H_J(t)=I
+\text{ for all sufficiently small }t
+\iff
+G_{\mathrm e}=0.
+}
+\tag{3.19}
+\]
+
+\hypertarget{v-periodic-and-antiperiodic-closure}{%
+\subsection{(v) Periodic and antiperiodic closure}\label{v-periodic-and-antiperiodic-closure}}
+
+If
+
+\[
+G\psi=i\omega\psi,
+\qquad \omega\in\mathbb R,
+\]
+
+then for every integer \(N\ge1\),
+
+\[
+U_N\psi=+\psi
+\iff
+N\omega\in2\pi\mathbb Z,
+\tag{3.20}
+\]
+
+while
+
+\[
+U_N\psi=-\psi
+\iff
+N\omega\in(2\mathbb Z+1)\pi.
+\tag{3.21}
+\]
+
+For \(\sigma\in\{+1,-1\}\), define
+
+\[
+D_{N,\sigma}=U_N-\sigma I,
+\qquad
+S_{N,\sigma}=D_{N,\sigma}^*D_{N,\sigma}.
+\tag{3.22}
+\]
+
+Then
+
+\[
+\boxed{
+S_{N,\sigma}\ge0,
+\qquad
+\ker S_{N,\sigma}=\ker(U_N-\sigma I).
+}
+\tag{3.23}
+\]
+
+The \(+1\) and \(-1\) closure sectors are distinct. A condition of the form
+\(N\lambda=2\pi i m\) covers only the periodic sector.
+
+\hypertarget{vi-clock-free-eye}{%
+\subsection{(vi) Clock-free Eye}\label{vi-clock-free-eye}}
+
+Suppose
+
+\[
+U_t=e^{-itH},
+\qquad H=H^*.
+\]
+
+Then the one-step Eye is
+
+\[
+\boxed{
+\operatorname{Fix}(U_1)=E_H(2\pi\mathbb Z)\mathcal H,
+}
+\tag{3.24}
+\]
+
+whereas the clock-free Eye is
+
+\[
+\boxed{
+\bigcap_{t\in\mathbb R}\operatorname{Fix}(U_t)=\ker H.
+}
+\tag{3.25}
+\]
+
+Its mean-ergodic projector is
+
+\[
+\boxed{
+P_{\mathrm{Eye}}
+=
+\operatorname*{s-lim}_{T\to\infty}
+\frac1T\int_0^T U_t\,dt
+=
+E_H(\{0\}).
+}
+\tag{3.26}
+\]
+
+Therefore
+
+\[
+\boxed{
+\mathfrak B_{\mathrm{clock}}
+=
+\operatorname{Fix}(U_1)/\ker H
+}
+\tag{3.27}
+\]
+
+is the stroboscopic recognition-blind sector.
+
+\hypertarget{vii-faithful-component-observer}{%
+\subsection{(vii) Faithful component observer}\label{vii-faithful-component-observer}}
+
+Let \(P_1,\ldots,P_m\) be pairwise orthogonal projections satisfying
+
+\[
+\sum_{a=1}^mP_a=I,
+\]
+
+and define
+
+\[
+G_a=P_aG,
+\qquad
+\mathcal A_Gx=(G_1x,\ldots,G_mx).
+\tag{3.28}
+\]
+
+Then
+
+\[
+\boxed{
+\mathcal A_G^*\mathcal A_G
+=
+\sum_{a=1}^mG_a^*G_a
+=
+G^*G,
+}
+\tag{3.29}
+\]
+
+and hence
+
+\[
+\boxed{\ker\mathcal A_G=\ker G.}
+\tag{3.30}
+\]
+
+If named components are not proved to arise from an orthogonal complete
+projection family, their lawful observer is the direct sum, not merely their
+aggregate. An aggregate can vanish by cancellation while the direct-sum energy
+remains positive.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{proof}{%
+\section{4. Proof}\label{proof}}
+
+The formulas in (i) follow from \(J^2=I\). If
+\(G=A+B\), \(JAJ=A\), and \(JBJ=-B\), then averaging \(G\) and \(JGJ\)
+recovers \(A\) and \(B\), proving uniqueness. Multiplication by the cut
+projections gives the block-support identities.
+
+Under \(JGJ=-G\), functional calculus gives (3.6). Equations (3.7)--(3.10)
+follow by symmetric and antisymmetric reconstruction. Since the derived
+channels are functions of one operator, they commute; expanding their squares
+and product gives (3.12)--(3.13).
+
+For the cut loop, substitute
+
+\[
+JGJ=G_{\mathrm e}-G_{\mathrm o},
+\qquad
+G=G_{\mathrm e}+G_{\mathrm o},
+\]
+
+and multiply the two exponential series. This gives (3.15). The standard
+second-order logarithm expansion gives (3.16). The first derivative gives
+(3.17), and the quadratic logarithmic coefficient gives (3.18). If the loop is
+locally the identity, its derivative vanishes, so \(G_{\mathrm e}=0\). The
+converse follows from \(JU_tJ=U_{-t}\).
+
+The closure statements follow by applying \(U_N\) to an eigenvector. The
+positive source identity (3.23) is immediate from the definition of
+\(D_{N,\sigma}\).
+
+The spectral theorem gives (3.24)--(3.26). In particular, integer nonzero
+frequencies can be invisible to a one-step fixed-point test, which produces the
+quotient (3.27).
+
+Finally,
+
+\[
+\sum_aG_a^*G_a
+=
+G^*\left(\sum_aP_a\right)G
+=
+G^*G,
+\]
+
+which proves the component-observer statement. \(\square\)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{recognition-kernel-flow-consequence}{%
+\section{5. Recognition-Kernel flow consequence}\label{recognition-kernel-flow-consequence}}
+
+For an observer \(B:\mathcal H\to\mathcal Y\) and times
+\(\mathbf t=(t_1,\ldots,t_N)\), define
+
+\[
+\mathcal A_{\mathbf t}x
+=
+(BU_{t_1}x,\ldots,BU_{t_N}x).
+\tag{5.1}
+\]
+
+For a target functional \(L\), put
+
+\[
+\beta_{\mathbf t}(L)
+=
+\sup_{\mathcal A_{\mathbf t}x\ne0}
+\frac{|Lx|^2}{\|\mathcal A_{\mathbf t}x\|^2}.
+\tag{5.2}
+\]
+
+Whenever the burden is finite, the Recognition-Kernel Theorem supplies a
+unique minimum decoder
+
+\[
+c_L\in\overline{\operatorname{Ran}\mathcal A_{\mathbf t}}
+\]
+
+with
+
+\[
+Lx=\langle\mathcal A_{\mathbf t}x,c_L\rangle,
+\qquad
+\|c_L\|^2=\beta_{\mathbf t}(L),
+\tag{5.3}
+\]
+
+and the exact flow cut-square criterion
+
+\[
+\boxed{
+\mathcal A_{\mathbf t}^*\mathcal A_{\mathbf t}-L^*L\ge0
+\iff
+\beta_{\mathbf t}(L)\le1.
+}
+\tag{5.4}
+\]
+
+Thus the target-relative cost of recognizing a flow is a decoder burden, not an
+unproved trace formula.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{corrected-interpretation-of-the-generator-tower}{%
+\section{6. Corrected interpretation of the generator tower}\label{corrected-interpretation-of-the-generator-tower}}
+
+The iteration
+
+\[
+G_{n+1}=2\sinh(G_n)
+\]
+
+does not converge to zero for a general real initial value, because the scalar
+map has derivative \(2>1\) at zero. The lawful cut coordinate is instead
+
+\[
+C(G)=2\sinh(G/2),
+\]
+
+with inverse, wherever the functional calculus permits,
+
+\[
+\boxed{
+G=2\operatorname{arsinh}(C(G)/2).
+}
+\tag{6.1}
+\]
+
+This is a reversible coordinate transformation, not a convergence theorem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{certified-exact-packet}{%
+\section{7. Certified exact packet}\label{certified-exact-packet}}
+
+The passing rational packet verifies:
+
+\begin{verbatim}
+unique cut-even/cut-odd decomposition;
+cut-diagonal and trans-cut block support;
+cut-loop linear memory coefficient;
+cut-loop quadratic seam-curvature coefficient;
+exact nilpotent odd bilateral flow;
+exponential cut-square identity;
+equality of the two derived cut/join products;
+periodic and antiperiodic closure characters;
+single-step versus all-time Eye;
+orthogonal component Gram preservation;
+nonorthogonal aggregate cancellation negative control.
+\end{verbatim}
+
+The implementation uses \texttt{fractions.Fraction} only. No NumPy, floating point,
+fitted unitary, source inverse, spectral eigensolver, or post-hoc Gram factor is
+used.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{updated-claim-boundary}{%
+\section{8. Updated claim boundary}\label{updated-claim-boundary}}
+
+\begin{verbatim}
+CUT-GRADED BOUNDED-OPERATOR THEOREM                    PROVED
+BILATERAL EXPONENTIAL RECONSTRUCTION                   PROVED
+EXPONENTIAL CUT-SQUARE                                 PROVED
+CUT-LOOP MEMORY / SEAM-CURVATURE EXPANSION             PROVED
+PERIODIC / ANTIPERIODIC CLOSURE CLASSIFICATION         PROVED
+CLOCK-FREE EYE DISTINCTION                             PROVED
+ORTHOGONAL COMPONENT OBSERVER                         PROVED
+EXACT RATIONAL CERTIFICATE                            USER-REPORTED PASS
+REPOSITORY PROOF-LAB CI                               PASS
+RECOGNITION KERNEL REVIEW                             PASS
+
+UNBOUNDED UNIVERSAL-GENERATOR DOMAIN THEOREM           REQUIRES DOMAIN PINS
+PHYSICAL IDENTIFICATION OF ONE UNIVERSAL GENERATOR     NOT CLAIMED
+MASTER COST/MEMORY FLOW AS ONE CLOSED GENERATOR        NEXT DEVELOPMENT
+CENTRAL THEOREM STATUS                                CERTIFIED ON THIS BRANCH
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/41\_cut\_graded\_universal\_generator\_theorem.md}\end{flushright}

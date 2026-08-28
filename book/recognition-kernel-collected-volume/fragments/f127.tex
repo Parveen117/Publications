@@ -1,0 +1,144 @@
+% source: RKF/theorum/SOURCE_PR_INDEX.md
+\hypertarget{source-and-development-index}{%
+\chapter{Source and Development Index}\label{source-and-development-index}}
+
+This file maps the theorem capsules to their source PRs or native development branches. It is a provenance guide, not a substitute for the theorem statements, proof notes, certificates, or claim boundaries.
+
+\hypertarget{initial-mp-transfer}{%
+\section{Initial MP transfer}\label{initial-mp-transfer}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Theorum capsule
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+MP PRs
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Main source claim
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{01\_positive\_eta\_path\_independence.md} & 246 & actual eta-normalization rectangle and exact positive-eta family path independence \\
+\texttt{02\_seam\_integer\_single\_sector\_reduction.md} & 235, 242, 247, 255, 277 & seam integer, common five-matrix covariance, single-sector terminal focus \\
+\texttt{03\_m3\_positive\_accepted\_block.md} & 181, 182, 196, 198, 199, 200, 202 & exact native \texttt{b3} signs, target-local \texttt{M3} positivity, positive accepted odd block \\
+\texttt{04\_zero\_cut\_t03\_endpoint\_completion.md} & 254, 256 & zero-cut quotient, five-label lift, source-Gram identity, projection-defect positivity \\
+\texttt{05\_transfer\_boundary\_and\_next\_gate.md} & all above & prevents reopening certified upstream theorems and records the next lawful gate \\
+\end{longtable}
+
+Source branches named in that material include:
+
+\begin{verbatim}
+agent/rh-rotation-metric-topology-reset
+agent/native-x3-fixed-state-primal-spectral-transfer
+agent/native-x3-parity-feshbach-complement-reduction
+agent/native-seam-scale-convergence
+agent/rh-journal-final-conditional-zero-closure
+agent/rh-paper-single-sector-seam-closure
+agent/t20-native-odd-single-sector-closure
+\end{verbatim}
+
+The machine-readable \texttt{provenance.json} records this original \texttt{01}--\texttt{05} transfer. It is intentionally scoped to that packet and is not a complete history of later native theorem development.
+
+\hypertarget{native-cut-and-completion-chain}{%
+\section{Native cut and completion chain}\label{native-cut-and-completion-chain}}
+
+Files \texttt{21} through \texttt{40} were developed natively in this repository after the first transfer. Their exact dependencies, source pins, imported membranes, and status labels are stated inside each capsule and in the Git history.
+
+The chain includes:
+
+\begin{verbatim}
+cut-memory spectral isomorphism;
+memory-cut rank gate;
+native cut-generated object theorem;
+clock-free recognition seam cut calculus;
+primitive-to-completion hierarchy;
+finite-to-infinite recognition completion;
+minimal observer and covariance realization;
+native source, decoder and boundary adapters;
+strict odd source-kernel no-blindness;
+odd/native classical-normalization interface.
+\end{verbatim}
+
+No blanket claim is made that every file in this range has the same evidence status.
+
+\hypertarget{advanced-native-development-branches}{%
+\section{Advanced native development branches}\label{advanced-native-development-branches}}
+
+Before repository consolidation, the advanced theorem capsules were carried by the following branch tips:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Theorum capsule or archive
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Development branch
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pre-consolidation tip
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{41\_cut\_graded\_universal\_generator\_theorem.md} & \texttt{agent/cut-graded-universal-generator} & \texttt{01ee1d32ee704d97ea3e31811746ffdcb0ee221a} \\
+\texttt{42\_cut\_graded\_lambda\_jacobian\_tower\_theorem.md} & \texttt{agent/cut-graded-lambda-jacobian-tower} & \texttt{9f5792ee62ce3a1a71d9ed242ff9cb10e6745f3e} \\
+\texttt{43\_bilateral\_jet\_flow\_recognition\_capstone\_theorem.md} & \texttt{agent/bilateral-jet-flow-capstone} & \texttt{1e737c0f18d93fa69f5109a6fec426b7a69f2c1f} \\
+\texttt{44\_madhava\_smriti\_bilateral\_jet\_flow\_closure\_theorem.md} & \texttt{agent/madhava-smriti-jet-flow-closure} & \texttt{60b8bba2b4579d75c691af6589b00a764f24622b} \\
+broader native theorem development & \texttt{agent/rkf-next-development} & \texttt{9d6bce5ac9cd2a7adeca228ff74901ae6bb6988a} \\
+direct thermodynamic archive & \texttt{agent/thermodynamic-theorem-archive} & \texttt{191f2a424386394d9b4805239f742103604abe6a} \\
+lambda-geometry expansion & \texttt{agent/broaden-thermodynamic-pr-archive} & \texttt{832d162077db2da7b33877f5755c55d1323c0c28} \\
+thermodynamic cut-square specialization & \texttt{agent/thermodynamic-cut-square-theorem} & \texttt{b05b69bdd02bd3f230b12df996704661947e2b0f} \\
+\end{longtable}
+
+On 2026-08-05 each branch was compared against \texttt{main}. Every branch had \texttt{ahead\_by\ =\ 0}; therefore all theorem-bearing commits were already present in \texttt{main}. The stale refs were advanced by ordinary fast-forward without force or history deletion. The complete record is in \texttt{BRANCH\_CONSOLIDATION\_AUDIT.md}.
+
+\hypertarget{thermodynamic-mp-provenance}{%
+\section{Thermodynamic MP provenance}\label{thermodynamic-mp-provenance}}
+
+The thermodynamic archive under \texttt{theorum/thermodynamics/} is sourced primarily from:
+
+\begin{verbatim}
+MP PR #239    thermodynamic response tetrad, entropy-scaled lambda coordinates,
+              flat closure, response curvature and seam-index spectral flow;
+
+MP PR #243    canonical response cost, projection/source overlap,
+              Onsager compass and Hodge no-leakage, thermo-Weil provenance,
+              physical-flux connection;
+
+MP PRs #274-#275
+              native cut-square event decoder and minimum-decoder burden,
+              specialized as the thermodynamic cut-square theorem;
+
+MP PRs #52-#61
+              lambda holonomy, path ordering, admissible factorization,
+              refinement-stable length, constrained descent,
+              curvature-flux no-collapse and primitive flux witnesses.
+\end{verbatim}
+
+Exact source file paths and blob hashes are preserved in \texttt{thermodynamics/SOURCE\_PROVENANCE.md} and \texttt{thermodynamics/lambda\_geometry/SOURCE\_PROVENANCE.md}.
+
+\hypertarget{supersession-rule}{%
+\section{Supersession rule}\label{supersession-rule}}
+
+A claim-boundary statement may accurately describe the repository state at the time a theorem was written and later become historically stale. The principal example is Theorem 43's statement that a Madhava-named calculus was not yet present. Theorem 44 now supplies that extension. The earlier mathematical theorem remains valid; the later capsule supersedes only the repository-status sentence.
+
+\hypertarget{consolidated-canonical-branch}{%
+\section{Consolidated canonical branch}\label{consolidated-canonical-branch}}
+
+\begin{verbatim}
+repository: Parveen117/Recognition-Kernel-Framework
+canonical branch: main
+branch audit: theorum/BRANCH_CONSOLIDATION_AUDIT.md
+complete theorem map: theorum/README.md
+\end{verbatim}
+
+Future theorem development should branch from current \texttt{main}, preserve individual evidence labels, and return through a verified fast-forward or reviewed merge. Otherwise the repository will resume its natural ambition to become a maze.
+
+\begin{flushright}\small\texttt{RKF/theorum/SOURCE\_PR\_INDEX.md}\end{flushright}

@@ -1,0 +1,136 @@
+% source: RKF/theorum/04_zero_cut_t03_endpoint_completion.md
+\hypertarget{theorum-04-zero-cut-t03-endpoint-completion}{%
+\chapter{Theorum 04: Zero-Cut T03 Endpoint Completion}\label{theorum-04-zero-cut-t03-endpoint-completion}}
+
+\hypertarget{source-provenance}{%
+\section{Source provenance}\label{source-provenance}}
+
+\begin{verbatim}
+source repository: Parveen117/MP
+primary PR:        #254 Close the five-dimensional completed-Weil endpoint by explicit zero-cut T03 completion
+support PRs:       #242, #247, #255, #256
+main objects:      R_Sigma, P_src, S_(0,-), W_Sigma, A3, K_0
+\end{verbatim}
+
+\hypertarget{purpose}{%
+\section{Purpose}\label{purpose}}
+
+This theorem package records the endpoint completion of the five-dimensional completed-Weil packet after the seam-integer and single-sector reductions have fixed the terminal object.
+
+It should not be confused with the earlier exploratory finite eta sequence. The T03 theorem is the endpoint source-readout theorem.
+
+\hypertarget{native-t03-specialization}{%
+\section{Native T03 specialization}\label{native-t03-specialization}}
+
+The zero-cut theorem fixes, before any lift is chosen:
+
+\begin{verbatim}
+projected native observer;
+completed-Weil target;
+actual target-relevant blind quotient.
+\end{verbatim}
+
+The two spectral inputs are:
+
+\begin{verbatim}
+Spectral I:
+  exact five-dimensional defect;
+  minimal five-observer repair.
+
+Spectral II:
+  target-relative lift count;
+  positive uniform repair margin;
+  a posteriori response-defect control;
+  matched visible/blind/cross certification;
+  strong completion.
+\end{verbatim}
+
+\hypertarget{six-block-gram-decomposition}{%
+\section{Six-block Gram decomposition}\label{six-block-gram-decomposition}}
+
+For transported finite source maps \texttt{Y\_n} and \texttt{T\_n}, the five-label Gram defect is decomposed into
+
+\begin{verbatim}
+visible compression
++ five-dimensional blind response
++ both cross blocks
++ omitted prime/Gamma tails
++ quadrature/window/solve/rounding errors
++ native/Feshbach/prime-torus chart transport.
+\end{verbatim}
+
+The theorem records that the six directed bounds have total error tending to zero.
+
+\hypertarget{invariant-source-gram-identity}{%
+\section{Invariant source-Gram identity}\label{invariant-source-gram-identity}}
+
+Strong completion proves the invariant source-Gram identity
+
+\begin{verbatim}
+R_Sigma^* P_src R_Sigma
+  = (S_(0,-)^(dagger/2) W_Sigma)^*
+    (S_(0,-)^(dagger/2) W_Sigma).
+\end{verbatim}
+
+Literal equality of ambient source maps is not assumed. Equal Grams give a canonical partial-isometry identification of the final ranges. The endpoint sign needs only the invariant Gram identity.
+
+\hypertarget{projection-defect-positivity}{%
+\section{Projection-defect positivity}\label{projection-defect-positivity}}
+
+The independently constructed total-response Gram is
+
+\begin{verbatim}
+R_Sigma^* R_Sigma = diag(1,A3).
+\end{verbatim}
+
+Therefore the endpoint projection defect is
+
+\begin{verbatim}
+K_0 = R_Sigma^*(I-P_src)R_Sigma >= 0.
+\end{verbatim}
+
+The endpoint Schur equivalence then transfers this projection-defect positivity to the completed-Weil endpoint sign in the declared normalization.
+
+\hypertarget{terminal-membrane}{%
+\section{Terminal membrane}\label{terminal-membrane}}
+
+The theorem uses the classical completed explicit-formula identification and Weil criterion as the final classical membrane.
+
+\begin{verbatim}
+native endpoint Schur sign
++ classical completed explicit formula / Weil criterion
+-> RH in the declared normalization.
+\end{verbatim}
+
+This folder records the native theorem and its stated terminal interface. It does not pretend that the classical membrane was independently rederived inside this capsule.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+zero-cut quotient                              FIXED
+five-label lift                                SUPPLIED BY SPECTRAL I-II
+six-block Gram decomposition                   SUPPLIED
+vanishing total error                           SUPPLIED
+orientation-free source readout                 SUPPLIED
+K_0 = R_Sigma^*(I-P_src)R_Sigma >= 0            PROVED IN SOURCE THEOREM
+endpoint Schur closure                          PROVED IN SOURCE THEOREM
+classical Weil terminal membrane                CITED/CONSUMED WHERE STATED
+\end{verbatim}
+
+\hypertarget{use-in-the-framework}{%
+\section{Use in the framework}\label{use-in-the-framework}}
+
+Consume this theorem as the endpoint closure adapter:
+
+\begin{verbatim}
+single-sector / five-label source packet
+-> invariant source-Gram identity
+-> K_0 >= 0
+-> endpoint completed-Weil sign
+-> classical membrane if invoked
+\end{verbatim}
+
+Do not reopen M3, path equality, or seam integer while using T03. They are upstream adapters already transferred into this folder.
+
+\begin{flushright}\small\texttt{RKF/theorum/04\_zero\_cut\_t03\_endpoint\_completion.md}\end{flushright}

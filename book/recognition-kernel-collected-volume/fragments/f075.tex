@@ -1,0 +1,835 @@
+% source: RKF/theorems/foundation/F00H_NATIVE_NATURAL_ARITHMETIC_AND_PRIME_FACTORIZATION.md
+\hypertarget{f00-h-native-natural-arithmetic-and-prime-factorization}{%
+\chapter{F00-H --- Native Natural Arithmetic and Prime Factorization}\label{f00-h-native-natural-arithmetic-and-prime-factorization}}
+
+\hypertarget{classification}{%
+\section{Classification}\label{classification}}
+
+\texttt{PROVED}
+
+\hypertarget{purpose}{%
+\section{Purpose}\label{purpose}}
+
+F00-G defines \texttt{Log\_Sigma(n)} and \texttt{n\^{}s} for every positive natural scalar. The
+Euler product for native zeta additionally requires a unique prime decomposition
+of the natural multiplicative semigroup.
+
+This theorem derives that decomposition inside the repeated-unit subsemiring of
+the ordered radial cut field. It does not cite
+
+\begin{verbatim}
+the ordinary fundamental theorem of arithmetic;
+Euclid's lemma;
+Bezout's theorem;
+the Euclidean algorithm;
+ordinary integer factorization.
+\end{verbatim}
+
+Each required statement is reconstructed below from finite induction, ordered
+addition and multiplication.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-natural-scalars}{%
+\section{1. Native natural scalars}\label{native-natural-scalars}}
+
+Let \texttt{1\_Sigma} be the multiplicative unit of \texttt{R\_Sigma}. Define
+
+\[
+0_\Sigma=0,
+\qquad
+n_\Sigma=\underbrace{1_\Sigma+\cdots+1_\Sigma}_{n\text{ terms}}
+\]
+
+for an external finite counting index \texttt{n}. The set
+
+\[
+\mathbb N_\Sigma
+=
+\{0_\Sigma,1_\Sigma,2_\Sigma,\ldots\}
+\]
+
+is the native natural subsemiring.
+
+Because \texttt{R\_Sigma} is ordered and has characteristic zero,
+
+\[
+m_\Sigma<n_\Sigma
+\quad\Longleftrightarrow\quad
+m<n
+\]
+
+at the finite counting level. We suppress the subscript when no confusion is
+possible.
+
+The induction principle used below is the defining recursive principle of this
+repeated-unit construction:
+
+\begin{verbatim}
+P(0) and [P(n) implies P(n+1)]
+=> P(n) for every native natural n.
+\end{verbatim}
+
+Strong induction follows by applying ordinary induction to the finite statement
+that \texttt{P(k)} holds for every \texttt{k\textless{}=n}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{divisibility}{%
+\section{2. Divisibility}\label{divisibility}}
+
+For \texttt{a,b\ in\ N\_Sigma}, say
+
+\[
+a\mid b
+\]
+
+when there exists \texttt{c\ in\ N\_Sigma} such that
+
+\[
+b=ac.
+\]
+
+A positive natural \texttt{u} is a unit in \texttt{N\_Sigma} exactly when \texttt{u=1}.
+
+\hypertarget{lemma-2.1-cancellation}{%
+\subsection{Lemma 2.1 --- Cancellation}\label{lemma-2.1-cancellation}}
+
+If \texttt{a\textgreater{}0} and
+
+\[
+ab=ac,
+\]
+
+then
+
+\[
+b=c.
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+The equality holds in the ambient field \texttt{R\_Sigma}, where nonzero \texttt{a} has an
+inverse. Multiply by \texttt{a\^{}\{-1\}}. ∎
+
+\hypertarget{lemma-2.2-finiteness-below-a-natural}{%
+\subsection{Lemma 2.2 --- Finiteness below a natural}\label{lemma-2.2-finiteness-below-a-natural}}
+
+For every \texttt{a\ in\ N\_Sigma}, the set
+
+\[
+\{n\in\mathbb N_\Sigma:n\le a\}
+\]
+
+contains exactly the finite repeated-unit elements
+
+\[
+0,1,\ldots,a.
+\]
+
+In particular, every nonempty subset of this interval has a least and a greatest
+element.
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+This is immediate from the recursive construction and finite induction. No
+completeness or choice principle is required. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{division-with-remainder}{%
+\section{3. Division with remainder}\label{division-with-remainder}}
+
+\hypertarget{theorem-3.1-native-division-algorithm}{%
+\subsection{Theorem 3.1 --- Native division algorithm}\label{theorem-3.1-native-division-algorithm}}
+
+Let \texttt{a,b\ in\ N\_Sigma} with \texttt{b\textgreater{}0}. There exist unique natural scalars \texttt{q,r} such
+that
+
+\[
+\boxed{
+a=qb+r,
+\qquad
+0\le r<b.
+}
+\]
+
+\hypertarget{proof-existence}{%
+\subsection{Proof: existence}\label{proof-existence}}
+
+Consider
+
+\[
+S=\{k\in\mathbb N_\Sigma:kb\le a\}.
+\]
+
+The set is nonempty because \texttt{0\ in\ S}. Also \texttt{k\textless{}=a} for every \texttt{k\ in\ S}, since
+\texttt{b\textgreater{}=1} gives \texttt{k\textless{}=kb\textless{}=a}. Hence \texttt{S} is a finite subset of \texttt{{[}0,a{]}} and has a
+greatest element \texttt{q}.
+
+Put
+
+\[
+r=a-qb.
+\]
+
+Then \texttt{r\textgreater{}=0}. If \texttt{r\textgreater{}=b}, then
+
+\[
+(q+1)b=qb+b\le a,
+\]
+
+contradicting maximality of \texttt{q}. Thus \texttt{r\textless{}b}.
+
+\hypertarget{proof-uniqueness}{%
+\subsection{Proof: uniqueness}\label{proof-uniqueness}}
+
+Suppose
+
+\[
+a=qb+r=q'b+r',
+\qquad
+0\le r,r'<b.
+\]
+
+If \texttt{q\textgreater{}q\textquotesingle{}}, then \texttt{q\textgreater{}=q\textquotesingle{}+1}, so
+
+\[
+r'=a-q'b=(q-q')b+r\ge b,
+\]
+
+contradicting \texttt{r\textquotesingle{}\textless{}b}. Similarly \texttt{q\textquotesingle{}\textless{}q} is impossible. Hence \texttt{q=q\textquotesingle{}}, and then
+\texttt{r=r\textquotesingle{}}. ∎
+
+The theorem defines native quotient and remainder operations
+
+\[
+q=\operatorname{quo}_b(a),
+\qquad
+r=\operatorname{rem}_b(a).
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{greatest-common-divisors}{%
+\section{4. Greatest common divisors}\label{greatest-common-divisors}}
+
+For positive \texttt{a,b}, a common divisor is \texttt{d} with \texttt{d\textbar{}a} and \texttt{d\textbar{}b}.
+
+\hypertarget{definition-4.1}{%
+\subsection{Definition 4.1}\label{definition-4.1}}
+
+The native greatest common divisor \texttt{gcd\_Sigma(a,b)} is the greatest common
+divisor in the natural order.
+
+It exists because every common divisor is at most \texttt{min(a,b)} and the set of
+common divisors is a nonempty finite set containing \texttt{1}.
+
+\hypertarget{lemma-4.2-remainder-invariance}{%
+\subsection{Lemma 4.2 --- Remainder invariance}\label{lemma-4.2-remainder-invariance}}
+
+If
+
+\[
+a=qb+r,
+\]
+
+then the common divisors of \texttt{(a,b)} are exactly the common divisors of \texttt{(b,r)}.
+Consequently
+
+\[
+\boxed{
+\gcd_\Sigma(a,b)=\gcd_\Sigma(b,r).
+}
+\]
+
+\hypertarget{proof-2}{%
+\subsection{Proof}\label{proof-2}}
+
+If \texttt{d\textbar{}a} and \texttt{d\textbar{}b}, then \texttt{d\textbar{}(a-qb)=r}. Conversely, if \texttt{d\textbar{}b} and \texttt{d\textbar{}r}, then
+\texttt{d\textbar{}(qb+r)=a}. ∎
+
+\hypertarget{theorem-4.3-native-euclidean-algorithm}{%
+\subsection{Theorem 4.3 --- Native Euclidean algorithm}\label{theorem-4.3-native-euclidean-algorithm}}
+
+Repeated division
+
+\[
+a=q_0b+r_0,
+\]
+
+\[
+b=q_1r_0+r_1,
+\]
+
+and so on terminates at a final nonzero remainder \texttt{r\_k}, and
+
+\[
+\boxed{
+\gcd_\Sigma(a,b)=r_k.
+}
+\]
+
+\hypertarget{proof-3}{%
+\subsection{Proof}\label{proof-3}}
+
+The positive remainders form a strictly decreasing sequence
+
+\[
+b>r_0>r_1>\cdots>0.
+\]
+
+No infinite strictly decreasing sequence of native naturals exists: after at
+most \texttt{b} decreases the sequence must stop. Remainder invariance propagates the
+gcd to the last nonzero remainder. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-bezout-identity}{%
+\section{5. Native Bezout identity}\label{native-bezout-identity}}
+
+\hypertarget{theorem-5.1-bezout-representation}{%
+\subsection{Theorem 5.1 --- Bezout representation}\label{theorem-5.1-bezout-representation}}
+
+For positive naturals \texttt{a,b}, there exist native integers \texttt{u,v} in the signed
+repeated-unit ring
+
+\[
+\mathbb Z_\Sigma
+=
+\mathbb N_\Sigma-\mathbb N_\Sigma
+\]
+
+such that
+
+\[
+\boxed{
+\gcd_\Sigma(a,b)=ua+vb.
+}
+\]
+
+\hypertarget{proof-4}{%
+\subsection{Proof}\label{proof-4}}
+
+Every remainder in the Euclidean algorithm is an integer-linear combination of
+\texttt{a} and \texttt{b}.
+
+The first remainder is
+
+\[
+r_0=a-q_0b.
+\]
+
+If
+
+\[
+r_{j-1}=u_{j-1}a+v_{j-1}b,
+\qquad
+r_j=u_ja+v_jb,
+\]
+
+then
+
+\[
+r_{j+1}=r_{j-1}-q_{j+1}r_j
+\]
+
+is also such a combination. Induction reaches the last nonzero remainder, which
+is the gcd by Theorem 4.3. ∎
+
+\hypertarget{corollary-5.2-coprime-inverse-relation}{%
+\subsection{Corollary 5.2 --- Coprime inverse relation}\label{corollary-5.2-coprime-inverse-relation}}
+
+If
+
+\[
+\gcd_\Sigma(a,b)=1,
+\]
+
+then there exist \texttt{u,v\ in\ Z\_Sigma} with
+
+\[
+ua+vb=1.
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-primes}{%
+\section{6. Native primes}\label{native-primes}}
+
+\hypertarget{definition-6.1}{%
+\subsection{Definition 6.1}\label{definition-6.1}}
+
+A natural scalar \texttt{p\textgreater{}1} is \textbf{native prime} when its only positive natural
+divisors are \texttt{1} and \texttt{p}.
+
+A natural \texttt{n\textgreater{}1} that is not prime is \textbf{composite}.
+
+\hypertarget{lemma-6.2-composite-splitting}{%
+\subsection{Lemma 6.2 --- Composite splitting}\label{lemma-6.2-composite-splitting}}
+
+If \texttt{n\textgreater{}1} is composite, then
+
+\[
+n=ab
+\]
+
+for naturals \texttt{a,b} satisfying
+
+\[
+1<a<n,
+\qquad
+1<b<n.
+\]
+
+\hypertarget{proof-5}{%
+\subsection{Proof}\label{proof-5}}
+
+A nontrivial divisor \texttt{a} obeys \texttt{1\textless{}a\textless{}n}. Write \texttt{n=ab}. Since \texttt{a\textgreater{}1}, cancellation
+and order give \texttt{b\textless{}n}; since \texttt{a\textless{}n}, one also has \texttt{b\textgreater{}1}. ∎
+
+\hypertarget{theorem-6.3-native-euclid-lemma}{%
+\subsection{Theorem 6.3 --- Native Euclid lemma}\label{theorem-6.3-native-euclid-lemma}}
+
+If \texttt{p} is native prime and
+
+\[
+p\mid ab,
+\]
+
+then
+
+\[
+\boxed{p\mid a\quad\text{or}\quad p\mid b.}
+\]
+
+\hypertarget{proof-6}{%
+\subsection{Proof}\label{proof-6}}
+
+If \texttt{p\textbar{}a}, there is nothing to prove. Suppose \texttt{p} does not divide \texttt{a}.
+
+Every common divisor of \texttt{p} and \texttt{a} divides \texttt{p}; since \texttt{p} is prime and does not
+divide \texttt{a}, the gcd is \texttt{1}. Bezout gives
+
+\[
+up+va=1.
+\]
+
+Multiply by \texttt{b}:
+
+\[
+ubp+vab=b.
+\]
+
+The first term is divisible by \texttt{p}, and the second is divisible by \texttt{p} because
+\texttt{p\textbar{}ab}. Therefore \texttt{p\textbar{}b}. ∎
+
+\hypertarget{corollary-6.4-prime-divides-a-finite-product}{%
+\subsection{Corollary 6.4 --- Prime divides a finite product}\label{corollary-6.4-prime-divides-a-finite-product}}
+
+If
+
+\[
+p\mid a_1a_2\cdots a_m,
+\]
+
+then \texttt{p} divides at least one factor.
+
+\hypertarget{proof-7}{%
+\subsection{Proof}\label{proof-7}}
+
+Induct on \texttt{m} using Theorem 6.3. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{existence-of-prime-factorization}{%
+\section{7. Existence of prime factorization}\label{existence-of-prime-factorization}}
+
+\hypertarget{theorem-7.1-native-prime-factor-existence}{%
+\subsection{Theorem 7.1 --- Native prime-factor existence}\label{theorem-7.1-native-prime-factor-existence}}
+
+Every natural scalar \texttt{n\textgreater{}1} is a finite product of native primes.
+
+\hypertarget{proof-8}{%
+\subsection{Proof}\label{proof-8}}
+
+Use strong induction on \texttt{n}.
+
+If \texttt{n} is prime, the one-factor product suffices. If \texttt{n} is composite, Lemma 6.2
+gives
+
+\[
+n=ab
+\]
+
+with \texttt{1\textless{}a,b\textless{}n}. By the induction hypothesis, both \texttt{a} and \texttt{b} are finite prime
+products. Concatenating those products gives a prime factorization of \texttt{n}. ∎
+
+The proof terminates because every composite split strictly decreases both
+factors in the native natural order.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{uniqueness-of-prime-factorization}{%
+\section{8. Uniqueness of prime factorization}\label{uniqueness-of-prime-factorization}}
+
+\hypertarget{theorem-8.1-native-fundamental-theorem-of-arithmetic}{%
+\subsection{Theorem 8.1 --- Native fundamental theorem of arithmetic}\label{theorem-8.1-native-fundamental-theorem-of-arithmetic}}
+
+Suppose
+
+\[
+n=p_1p_2\cdots p_r
+=q_1q_2\cdots q_s,
+\]
+
+where all \texttt{p\_i} and \texttt{q\_j} are native primes. Then
+
+\[
+r=s
+\]
+
+and, after a permutation,
+
+\[
+p_i=q_i
+\qquad(1\le i\le r).
+\]
+
+\hypertarget{proof-9}{%
+\subsection{Proof}\label{proof-9}}
+
+The prime \texttt{p\_1} divides the product \texttt{q\_1\textbackslash{}cdots\ q\_s}. By Corollary 6.4 it divides
+some \texttt{q\_j}. Since \texttt{q\_j} is prime and \texttt{p\_1\textgreater{}1}, the only possibility is
+
+\[
+p_1=q_j.
+\]
+
+Reorder the \texttt{q} factors and cancel this common nonzero factor. Repeat by finite
+induction. Every factor on one side is matched with exactly one factor on the
+other, so the lengths agree. ∎
+
+\hypertarget{corollary-8.2-exponent-vector-form}{%
+\subsection{Corollary 8.2 --- Exponent-vector form}\label{corollary-8.2-exponent-vector-form}}
+
+For every \texttt{n\textgreater{}=1}, there is a unique finitely supported function
+
+\[
+\nu_n:\mathcal P_\Sigma\to\mathbb N_\Sigma
+\]
+
+on the native prime set such that
+
+\[
+\boxed{
+n=\prod_{p\in\mathcal P_\Sigma}p^{\nu_n(p)}.}
+\]
+
+Moreover,
+
+\[
+\boxed{
+\nu_{mn}(p)=\nu_m(p)+\nu_n(p).
+}
+\]
+
+This is the native prime-exponent vector consumed by the later prime-torus
+chart, but no torus is introduced here.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{divisor-sums-and-finite-euler-identities}{%
+\section{9. Divisor sums and finite Euler identities}\label{divisor-sums-and-finite-euler-identities}}
+
+\hypertarget{definition-9.1}{%
+\subsection{Definition 9.1}\label{definition-9.1}}
+
+For \texttt{n\textgreater{}=1}, let
+
+\[
+\operatorname{Div}_\Sigma(n)
+=
+\{d\in\mathbb N_\Sigma:d|n\}.
+\]
+
+This set is finite because every divisor satisfies \texttt{1\textless{}=d\textless{}=n}.
+
+For a native arithmetic function \texttt{f}, define the finite divisor sum
+
+\[
+\sum_{d|n}f(d).
+\]
+
+\hypertarget{lemma-9.2-multiplicative-divisor-decomposition}{%
+\subsection{Lemma 9.2 --- Multiplicative divisor decomposition}\label{lemma-9.2-multiplicative-divisor-decomposition}}
+
+If \texttt{gcd\_Sigma(m,n)=1}, then every divisor of \texttt{mn} has a unique form
+
+\[
+d=ab,
+\qquad a|m,
+\qquad b|n.
+\]
+
+\hypertarget{proof-10}{%
+\subsection{Proof}\label{proof-10}}
+
+Use the disjoint prime supports supplied by Corollary 8.2. A divisor chooses an
+exponent between \texttt{0} and the exponent of each prime. Splitting those choices
+between the prime supports of \texttt{m} and \texttt{n} gives the unique pair \texttt{(a,b)}. ∎
+
+\hypertarget{corollary-9.3}{%
+\subsection{Corollary 9.3}\label{corollary-9.3}}
+
+Finite divisor convolution
+
+\[
+(f*g)(n)=\sum_{d|n}f(d)g(n/d)
+\]
+
+is associative and commutative on native arithmetic functions.
+
+\hypertarget{proof-11}{%
+\subsection{Proof}\label{proof-11}}
+
+All sums are finite. Reindex by the unique factorization of ordered divisor
+triples. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-muxf6bius-function}{%
+\section{10. Native Möbius function}\label{native-muxf6bius-function}}
+
+The logarithmic derivative of zeta can be developed without Möbius inversion,
+but the exact arithmetic extraction is useful later.
+
+\hypertarget{definition-10.1}{%
+\subsection{Definition 10.1}\label{definition-10.1}}
+
+Define \texttt{mu\_Sigma(n)} by the prime exponent vector:
+
+\[
+\mu_\Sigma(1)=1,
+\]
+
+\[
+\mu_\Sigma(n)=0
+\quad\text{if some }\nu_n(p)\ge2,
+\]
+
+and otherwise
+
+\[
+\mu_\Sigma(n)=(-1)^k
+\]
+
+when \texttt{n} is a product of \texttt{k} distinct primes.
+
+\hypertarget{theorem-10.2-native-muxf6bius-cancellation}{%
+\subsection{Theorem 10.2 --- Native Möbius cancellation}\label{theorem-10.2-native-muxf6bius-cancellation}}
+
+For every natural \texttt{n},
+
+\[
+\boxed{
+\sum_{d|n}\mu_\Sigma(d)
+=
+\begin{cases}
+1,&n=1,\\
+0,&n>1.
+\end{cases}
+}
+\]
+
+\hypertarget{proof-12}{%
+\subsection{Proof}\label{proof-12}}
+
+If
+
+\[
+n=\prod_{j=1}^{r}p_j^{a_j},
+\]
+
+then only square-free divisors contribute. Choosing a subset of the \texttt{r} distinct
+prime factors gives
+
+\[
+\sum_{d|n}\mu_\Sigma(d)
+=
+\sum_{k=0}^{r}\binom{r}{k}(-1)^k
+=(1-1)^r.
+\]
+
+For \texttt{n=1}, \texttt{r=0} and the value is \texttt{1}. The binomial identity is finite algebra
+inside the native integer ring. ∎
+
+\hypertarget{corollary-10.3-native-muxf6bius-inversion}{%
+\subsection{Corollary 10.3 --- Native Möbius inversion}\label{corollary-10.3-native-muxf6bius-inversion}}
+
+If native arithmetic functions satisfy
+
+\[
+F(n)=\sum_{d|n}f(d),
+\]
+
+then
+
+\[
+\boxed{
+f(n)=\sum_{d|n}\mu_\Sigma(d)F(n/d).}
+\]
+
+\hypertarget{proof-13}{%
+\subsection{Proof}\label{proof-13}}
+
+Substitute the divisor sum for \texttt{F}, regroup the finite double sum by the product
+of the two divisor variables, and apply Theorem 10.2. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-von-mangoldt-arithmetic-weight}{%
+\section{11. Native von Mangoldt arithmetic weight}\label{native-von-mangoldt-arithmetic-weight}}
+
+\hypertarget{definition-11.1}{%
+\subsection{Definition 11.1}\label{definition-11.1}}
+
+Using the native logarithm of F00-G, define
+
+\[
+\boxed{
+\Lambda_\Sigma(n)
+=
+\begin{cases}
+\operatorname{Log}_\Sigma(p),
+&n=p^k\text{ for a native prime }p\text{ and }k\ge1,\\
+0,&\text{otherwise}.
+\end{cases}
+}
+\]
+
+\hypertarget{theorem-11.2-native-logarithmic-divisor-identity}{%
+\subsection{Theorem 11.2 --- Native logarithmic divisor identity}\label{theorem-11.2-native-logarithmic-divisor-identity}}
+
+For every positive natural \texttt{n},
+
+\[
+\boxed{
+\operatorname{Log}_\Sigma(n)
+=
+\sum_{d|n}\Lambda_\Sigma(d).
+}
+\]
+
+\hypertarget{proof-14}{%
+\subsection{Proof}\label{proof-14}}
+
+Write
+
+\[
+n=\prod_{j=1}^{r}p_j^{a_j}.
+\]
+
+The prime powers dividing \texttt{n} are \texttt{p\_j\^{}k} for \texttt{1\textless{}=k\textless{}=a\_j}. Therefore
+
+\[
+\sum_{d|n}\Lambda_\Sigma(d)
+=
+\sum_{j=1}^{r}a_j\operatorname{Log}_\Sigma(p_j)
+=
+\operatorname{Log}_\Sigma(n)
+\]
+
+by the logarithmic product law. ∎
+
+\hypertarget{corollary-11.3-native-pressure-extraction}{%
+\subsection{Corollary 11.3 --- Native pressure extraction}\label{corollary-11.3-native-pressure-extraction}}
+
+Let
+
+\[
+\ell_\Sigma(n)=\operatorname{Log}_\Sigma(n).
+\]
+
+Then under divisor convolution,
+
+\[
+\boxed{
+\ell_\Sigma*\mu_\Sigma
+=
+\Lambda_\Sigma.
+}
+\]
+
+\hypertarget{proof-15}{%
+\subsection{Proof}\label{proof-15}}
+
+Apply Möbius inversion to Theorem 11.2. ∎
+
+This recovers the arithmetic identity used in MP without importing the ordinary
+Möbius or von Mangoldt functions.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{coordinate-shadow}{%
+\section{12. Coordinate shadow}\label{coordinate-shadow}}
+
+Under a later faithful scalar chart preserving the repeated unit,
+
+\[
+n_\Sigma\mapsto n,
+\]
+
+native divisibility, gcd, primes, exponent vectors, \texttt{mu\_Sigma} and
+\texttt{Lambda\_Sigma} map to their ordinary arithmetic counterparts. The chart is
+forced by the finite recursive construction and unique factorization proved
+above.
+
+No ordinary prime theorem is used to construct the native objects.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{13. Claim boundary}\label{claim-boundary}}
+
+Proved here:
+
+\begin{verbatim}
+native natural and integer subrings;
+divisibility and cancellation;
+division with remainder;
+gcd and terminating Euclidean algorithm;
+Bezout identity;
+native primes and composite splitting;
+Euclid lemma;
+existence and uniqueness of prime factorization;
+prime-exponent vectors;
+finite divisor convolution;
+native Möbius function and inversion;
+native von Mangoldt function;
+Log_Sigma(n)=sum_{d|n} Lambda_Sigma(d);
+Log_Sigma * mu_Sigma = Lambda_Sigma.
+\end{verbatim}
+
+Not proved here:
+
+\begin{verbatim}
+infinitude of primes;
+Dirichlet-series convergence;
+Euler product as an infinite limit;
+nonvanishing of zeta in Re(s)>1;
+prime number theorem;
+analytic continuation;
+completed zeta;
+explicit formula;
+Weil criterion;
+K0>=0;
+RH.
+\end{verbatim}
+
+Infinitude of primes and the analytic identities belong to F00-I. No external
+fundamental theorem of arithmetic is consumed.
+
+\begin{flushright}\small\texttt{RKF/theorems/foundation/F00H\_NATIVE\_NATURAL\_ARITHMETIC\_AND\_PRIME\_FACTORIZATION.md}\end{flushright}

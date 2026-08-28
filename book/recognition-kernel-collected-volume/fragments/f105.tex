@@ -1,0 +1,314 @@
+% source: Publications/papers/emk-recognition-geometry/README.md
+\hypertarget{emk-recognition-geometry-the-rotational-seam-metric-emk-g1}{%
+\chapter{EMK recognition geometry --- the rotational seam metric (EMK-G1)}\label{emk-recognition-geometry-the-rotational-seam-metric-emk-g1}}
+
+The geometry layer. EMK-1/EMK-2 identify the seam algebraically; this
+capsule certifies the metric that gives it lengths, geodesics and
+curvature.
+
+\hypertarget{the-construction}{%
+\section{The construction}\label{the-construction}}
+
+The local involution \texttt{J(z)\ =\ i·conj(z)} acts on real coordinates as
+\texttt{(x,y)\ ↦\ (y,x)}. In seam-adapted coordinates
+
+\begin{verbatim}
+u = (x+y)/√2   tangent to the seam
+v = (y−x)/√2   normal to it        J : (u,v) ↦ (u,−v)
+\end{verbatim}
+
+so seam reflection is ordinary reflection of the normal coordinate and
+the fixed seam is the \textbf{45° line} \texttt{v\ =\ 0}. The reflection-symmetric seam
+metric is
+
+\begin{verbatim}
+g_A = A(v)² du² + dv²      det g_A = A(v)²      K_A = −A″/A
+\end{verbatim}
+
+\hypertarget{the-move-that-keeps-it-exact}{%
+\section{The move that keeps it exact}\label{the-move-that-keeps-it-exact}}
+
+Carrying \textbf{W = A²} removes every square root:
+
+\begin{verbatim}
+Γᵘ_uv = W′/(2W)      Γᵛ_uu = −W′/2      K = (W′)²/(4W²) − W″/(2W)
+\end{verbatim}
+
+For the quadratic warp \texttt{W\ =\ 1\ +\ κv²} this gives, exactly,
+
+\begin{verbatim}
+K_κ(v) = −κ / (1 + κv²)²        K_κ(0) = −κ
+\end{verbatim}
+
+Every quantity is a rational function of rational data --- the whole seam
+geometry is certified with \textbf{no square root and no float}. The \texttt{√2} in
+the coordinate normalization is a positive constant that changes no line,
+no fixed set and no curvature sign; the certified arithmetic uses
+unnormalized seam coordinates and records the normalization explicitly.
+
+\hypertarget{certified-blocks}{%
+\section{Certified blocks}\label{certified-blocks}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & The involution acts as \texttt{(x,y)↦(y,x)}; \texttt{u} invariant, \texttt{v} negated, exactly on an integer grid; fixed set is precisely the line \texttt{y=x}; \texttt{J²=id} & PASS \\
+T2 & \texttt{det\ g\_A\ =\ W}; positive definite exactly where \texttt{W\textgreater{}0}, degenerate exactly at the zeros of \texttt{A}; for \texttt{κ\textless{}0} the locus is the exact condition \texttt{1+κv²=0} & PASS \\
+T3 & Christoffels in W-form agree with Levi-Civita computed independently; curvature via \texttt{R\_uvuv/det\ g} agrees with the closed form --- two routes, 25 grid points; \textbf{K(0) = −κ exactly} & PASS \\
+T4 & \textbf{The 45° seam is an intrinsic geodesic} of every reflection-symmetric warp (\texttt{W} even ⇒ \texttt{W′(0)=0}). Control: an odd perturbation breaks the symmetry, \texttt{W′(0)≠0}, and the seam is no longer geodesic & PASS \\
+T5 & \texttt{κ\textgreater{}0} → globally definite, \texttt{K\textless{}0}; \texttt{κ=0} → Euclidean, \texttt{K≡0}; \texttt{κ\textless{}0} → \texttt{K\textgreater{}0} strictly inside \texttt{v²\ \textless{}\ −1/κ}, degenerate exactly at the boundary & PASS \\
+T6 & \textbf{The two curvatures are independent} --- see below & PASS \\
+\end{longtable}
+
+\hypertarget{the-guard-t6}{%
+\section{The guard (T6)}\label{the-guard-t6}}
+
+The source states as a \emph{principle} that metric (Gaussian) curvature and
+the declared connection curvature are distinct. This capsule certifies
+that as a \textbf{separation} rather than asserting it:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+configuration & Gaussian curvature & recognition curvature \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Euclidean seam metric (κ=0) & 0 & 2 \\
+curved metric, rotation-free & −3 & 0 \\
+\end{longtable}
+
+Neither determines the other. Any future identification must be \textbf{proved},
+never inherited from the fact that both are called ``curvature''. This is
+the most tempting over-claim in the geometry layer, and it is now blocked
+by a certificate.
+
+\hypertarget{findings}{%
+\section{Findings}\label{findings}}
+
+\textbf{F1} --- the 45° seam is an intrinsic geodesic, not a visual bisector, with
+the reflection symmetry certified load-bearing.
+
+\textbf{F2} --- the entire seam geometry is exactly rational under \texttt{W\ =\ A²}, so
+\texttt{K(0)\ =\ −κ} needs no square root and no float.
+
+\textbf{F3} --- metric curvature and recognition curvature are certified
+independent.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+The metric family is \textbf{declared} (a reflection-symmetric warp), as in the
+source; \texttt{K(0)\ =\ −κ} is a theorem for this family, \textbf{not} a universal law
+equating flow parameters with curvature scalars. Global and completeness
+statements are not claimed. No identification with the recognition or
+thermodynamic two-form is claimed --- T6 certifies the opposite. CFE's
+(U) uniqueness stays open. No RH / K₀ / L₀ / YM continuum gate is
+touched; quantum gravity is not touched.
+
+\hypertarget{reproduce}{%
+\section{Reproduce}\label{reproduce}}
+
+\begin{verbatim}
+python papers/emk-recognition-geometry/certificates/emkg1_rotational_seam_metric.py
+python -m pytest papers/emk-recognition-geometry/tests -v
+\end{verbatim}
+
+CI regenerates the certificate and fails on pin drift
+(\texttt{EXPECTED\_EMKG1.sha256}).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{emk-g2-global-quotient-completeness-and-seam-holonomy}{%
+\chapter{EMK-G2 --- Global quotient, completeness, and seam holonomy}\label{emk-g2-global-quotient-completeness-and-seam-holonomy}}
+
+Source: vault \texttt{emk\_ugd\_recognition\_geometry/sections/global\_quotient\_holonomy.tex}
+(281 lines) --- the global continuation of EMK-G1: same seam, now on the
+periodic cylinder. 29 tests; 49 in this folder.
+
+\textbf{The section's real content is a second guard}, and this capsule
+certifies it in both directions: \emph{trivial Levi-Civita holonomy does not
+imply recognition closure.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & Since A \textgreater{} 0, the geodesic criterion A′(0) = 0 ⟺ W′(0) = 0, so EMK-G1's local criterion transfers unchanged; seam length² = L²·W(0), exactly L² for the family. Control: an odd perturbation kills geodesy while the curve still \textbf{closes} --- closure and geodesy are different properties & PASS \\
+\textbf{T2} & Orbits of ȷ(u,v) = (u,−v) have size exactly 2 off the seam, 1 on it ⇒ the quotient is the half-cylinder with a \textbf{mirror} boundary; counting witness (double = 2× quotient off-seam); the side target sgn(v) factors through \textbf{no} map on the quotient & PASS \\
+\textbf{T3} & The jet criterion in \textbf{W-form} (equivalent since A \textgreater{} 0): even warps glue smoothly to themselves; an odd term fails at n = 1 exactly yet glues to its own reflection; a mismatched pair fails at the identified jet. \textbf{The seam shift α is metric-invisible} while a declared ledger sees it & PASS \\
+\textbf{T4} & κ \textgreater{} 0 ⇒ W ≥ 1 everywhere; κ = 0 flat; κ \textless{} 0 ⇒ positivity exactly on v² \textless{} −1/κ with degeneracy at \textbf{normal distance² exactly −1/κ} (finite ⇒ incomplete). Curvature blow-up as an \textbf{exact growth witness}, not a limit claim; the polar-cap condition fails & PASS \\
+\textbf{T5} & Holonomy by \textbf{two independent exact routes} --- boundary walk of ω¹₂ = A′du, and polynomial integration of K·A where K·A = −A″ is certified by \textbf{exact polynomial division} (remainder zero), not evaluation. Seam loop: Θ\_LC = 0 \textbf{exactly}, not merely mod 2π & PASS \\
+\textbf{T6} & \textbf{The guard, both directions:} (a) Θ\_LC = 0 on the seam while recognition monodromy = −I; (b) Θ\_LC ≠ 0 on a rectangle whose monodromy is exactly the identity. Neither determines the other; the ledger closes the residue; global closure fails when any active sector stays open & PASS \\
+\end{longtable}
+
+\textbf{Guard thread.} EMK-G1 T6 separated \emph{metric curvature} from
+\emph{recognition curvature}. EMK-G2 T6 separates \emph{Levi-Civita holonomy}
+from \emph{recognition monodromy} --- the same guard at the global level.
+
+Declared: both warp families, the auxiliary EMK bundle, ρ\_Σ,
+tolerances. Identification of the two holonomies is \textbf{not claimed} ---
+T6 certifies the opposite.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{emk-g3-the-helical-sheet-memory-lift-flat-is-not-memoryless}{%
+\chapter{EMK-G3 --- The helical sheet-memory lift: flat is not memoryless}\label{emk-g3-the-helical-sheet-memory-lift-flat-is-not-memoryless}}
+
+Source: vault \texttt{emk\_ugd\_recognition\_geometry/sections/helical\_sheet\_memory.tex}
+(245 lines) --- the door EMK-G2's closing remark left open. 27 tests;
+76 in this folder.
+
+\textbf{The sharpest principle in the geometry layer}, certified as an exact
+separation: \emph{a flat lifted connection may carry nontrivial global
+monodromy.} Local curvature detects infinitesimal nonclosure; monodromy
+detects global return data.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & The helix is the \textbf{orbit structure of a deck transformation}, not a drawn curve: ρ is a bijection with exact inverse, monodromy after n circuits is exactly ρⁿ (n positive, zero, negative), the action is \textbf{free} and additive, and every orbit meets 0 ≤ u \textless{} L exactly once & PASS \\
+\textbf{T2} & The compensated variables φ − p\_φu, σ − p\_σu are \textbf{exactly invariant} under the deck map; the uncompensated ones fail by exactly α and β; a wrong pitch fails by an exactly computed amount & PASS \\
+\textbf{T3} & \textbf{The principle.} A = p du has curvature \textbf{exactly zero} as a bivariate polynomial identity and \textbf{exactly zero} holonomy on every contractible rectangle --- yet one circuit of the base circle gives \textbf{exactly α ≠ 0}, and n circuits exactly nα. A curved companion (curvature exactly −1, holonomy = exact flux) completes the separation in both directions & PASS \\
+\textbf{T4} & Visible return is exactly α ≡ 0 (mod K); full lifted return also needs β = 0 and q = 0 --- exhaustive on a grid, with lifted ⟹ visible and never the converse. After n circuits the displacement is exactly (nα, nβ, nq): \textbf{a sheet increment is never undone by more circuits} --- sheet memory is not a phase that eventually wraps & PASS \\
+\textbf{T5} & The four return classes with a witness each, mutually exclusive. \textbf{Memory-bearing return is distinct from exact return}: remove the ledger and the same state becomes an open obstruction; de-admit the sheet sector and it reads as ordinary lawful transport & PASS \\
+\textbf{T6} & Consuming \textbf{pinned EMK-G2}: base return holds, Θ\_LC = 0 exactly, RTC curvature zero, lift exactly flat --- \textbf{and the transition is still open}. Strong form: for \textbf{all 31 proper subsets} of the five sectors, a residue vector closes exactly that subset while the whole stays open. A \textbf{non-faithful projection} dropping the sheet sector maps an open lift to a closed image --- the converse of the projection theorem fails exactly & PASS \\
+\end{longtable}
+
+\textbf{Guard thread, three levels.} EMK-G1 T6: metric curvature vs
+recognition curvature. EMK-G2 T6: Levi-Civita holonomy vs recognition
+monodromy. EMK-G3 T3: local flatness vs global monodromy. Same guard,
+each time one level higher.
+
+Declared: the fibre model, ρ, the pitches, A\^{}EMK, ledgers, tolerances,
+the thermodynamic presentation map. Not certified: the non-abelian
+lift, the cut-localized sheet term. \textbf{Not claimed:} that α, β, q are
+phase lag, scale drift or hysteretic branch count.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{ugd-g1-phasescaleseam-geometry-the-number-layer-meets-the-surface}{%
+\chapter{UGD-G1 --- Phase--scale--seam geometry: the number layer meets the surface}\label{ugd-g1-phasescaleseam-geometry-the-number-layer-meets-the-surface}}
+
+Source: vault \texttt{emk\_ugd\_recognition\_geometry/sections/ugd\_phase\_scale\_seam\_geometry.tex}
+(213 lines). \textbf{This closes a loop.} EMK-G3's fibre ℝ\_φ × ℝ\_σ × ℤ\_k is
+not an arbitrary choice --- it \emph{is} the UGD state, whose numeral
+presentation UGD-1 certified independently. 28 tests; 104 in this folder.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & Three sectors, three topologies, \textbf{three different closure rules} (phase mod K, scale by equality in ℚ, sheet by equality in ℤ). No collapsing audit works: a mod-K audit \textbf{passes} an open sheet, an exact-equality audit \textbf{rejects} a genuine phase return. The residue vector is irreducibly a vector & PASS \\
+\textbf{T2} & \textbf{The cocycle theorem, sharpened.} Under any chart re-choice n→n+m\_a−m\_b the triple sum is \textbf{exactly invariant} --- certified exhaustively \emph{and} by the identity making the shifts cancel in pairs --- so a nonzero integer sheet defect is a genuine class that must enter the ledger and \textbf{cannot be erased by chart choice}. Scale: exact composed-identity condition with the closing chart constructed & PASS \\
+\textbf{T3} & Abelian curvature componentwise; flat-with-period \textbf{consumed} from pinned EMK-G3, not repeated. New: the sheet defect isn't a curvature component at all --- its invariance involves no continuous data, so no relaxation (flat or curved) changes it. F\_UGD = 0 ⇏ Δk = 0 for a \textbf{structural} reason & PASS \\
+\textbf{T4} & The two named non-implications with witnesses, strengthened to \textbf{pairwise independence} across all 12 ordered pairs of the four sectors & PASS \\
+\textbf{T5} & Faithful ⟹ preserves \textbf{and} reflects closure; lossy preserves but provably fails to reflect. Third mode separated: a projection that \textbf{identifies} two sectors discards nothing yet still fails --- phase +3 with sheet −3 merges to zero and reads closed. \textbf{Injectivity, not non-discarding, is load-bearing} & PASS \\
+\textbf{T6} & \textbf{The bridge.} Consuming pinned UGD-1: numerals with identical classical projection and phase content but different seam charge give a transition whose phase and scale residues are \textbf{exactly zero} and whose sheet residue is \textbf{exactly the seam-charge difference}. UGD-1 T4 (``classical projection blind to seam'') and this section's ``lossy projection reports closure'' are \textbf{one statement at two layers} & PASS \\
+\end{longtable}
+
+The number layer and the geometry layer are the same object seen twice.
+
+Declared: state space, transition, ledgers, tolerances, chart cover,
+P\_UGD, and the thermodynamic dictionary (which the section itself calls
+a constitutive presentation, not a universal identity --- its
+σ = log λ\_s option is \textbf{never evaluated}). Phase closure certified in
+exponent-mod-K form throughout.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{ltb-1-the-thermodynamic-bridge-what-a-loop-integral-is-not}{%
+\chapter{\texorpdfstring{LTB-1 --- The thermodynamic bridge: what a loop integral is \emph{not}}{LTB-1 --- The thermodynamic bridge: what a loop integral is not}}\label{ltb-1-the-thermodynamic-bridge-what-a-loop-integral-is-not}}
+
+Sources: vault \texttt{lambda\_thermodynamic\_bridge.tex} (82) and
+\texttt{thermodynamic\_worked\_cycle.tex} (87). These sections are almost
+entirely \textbf{prohibitive} --- they say what may not be identified with what
+--- so each is discharged by an exact witness that blocks the
+identification permanently. 26 tests; 130 in this folder.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & \textbf{The bridge's main guard, both directions.} A Jacobian with nonzero skew sector carrying an \textbf{exactly flat} connection; a perfectly symmetric Jacobian carrying \textbf{exactly nonzero} curvature. And when a constitutive map \emph{is} stated, a different stated map gives a different curvature from the same Jacobian --- the map is a choice, not a discovery & PASS \\
+\textbf{T2} & The subtraction ladder is exact and \textbf{order-independent over all 120 permutations}. Control: a sector defined as the raw curvature itself makes the diagnostic \textbf{identically zero on every input} --- a diagnostic that can never fire is not a diagnostic & PASS \\
+\textbf{T3} & The van der Waals loop by \textbf{two independent routes}, with log((V₁−b)/(V₀−b)) carried as a \textbf{formal symbol} and never evaluated. \textbf{The attraction parameter cancels exactly}: each leg carries an \emph{a}-term, the two are exact negatives. A fully rational control EOS needs no symbol at all & PASS \\
+\textbf{T4} & Three diagnostics separated: the loop is constitutive; it is \textbf{not} entropy production (the same magnitude arises under both time orientations, so the loop alone can't fix the sign); repetition returns (φ,σ) exactly while the branch index advances --- EMK-G3's helical statement on a thermodynamic cycle & PASS \\
+\textbf{T5} & \textbf{A post-hoc ledger is vacuous.} Declared in advance, the residue separates protocols; set equal to the observed loop it is identically zero and distinguishes \textbf{exactly zero pairs} --- certified as a property of the construction, not one example & PASS \\
+\textbf{T6} & The presentation is \textbf{reference-dependent} (three declared scales, three presentations of the same state) so the dictionary is a choice, not an equation of state. \textbf{Bridge:} consuming pinned CFE-1, the section's Γ\_c, Γ\_m are the flagship's invariant factors --- I = 1 exactly on the memoryless face & PASS \\
+\end{longtable}
+
+\textbf{Guard thread, fourth level.} EMK-G1 T6: metric vs recognition
+curvature. EMK-G2 T6: Levi-Civita holonomy vs recognition monodromy.
+EMK-G3 T3: local flatness vs global monodromy. \textbf{LTB-1 T1: response
+asymmetry vs transport curvature.}
+
+\textbf{Not claimed:} that any loop integral is entropy production, that skew
+response is curvature, that cyclic winding is entropy, or that the UGD
+dictionary is a universal equation of state. The van der Waals model is
+a worked constitutive example with \textbf{no claim of experimental
+validation} --- as the source itself states.
+
+\begin{flushright}\small\texttt{Publications/papers/emk-recognition-geometry/README.md}\end{flushright}

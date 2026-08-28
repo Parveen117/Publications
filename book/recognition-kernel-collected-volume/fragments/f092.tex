@@ -1,0 +1,452 @@
+% source: RH-Framework/theorems/T01_E5_NATIVE_RATIONAL_UGD_REFINEMENT_ADAPTER.md
+\hypertarget{t01-e5ab-native-rational-ugd-refinement-adapter}{%
+\chapter{T01-E5A/B --- Native Rational UGD Refinement Adapter}\label{t01-e5ab-native-rational-ugd-refinement-adapter}}
+
+\textbf{Classification:} \texttt{PROVED}
+
+\textbf{Foundational origin:} \texttt{NATIVE\_DERIVED}
+
+\textbf{Completed actual UGD adapter:} \texttt{OPEN}
+
+This theorem derives the rational refinement law of normalized UGD without using
+\(\pi\), logarithm, exponential, positive-real coordinates, Haar measure, or a
+Jacobian.
+
+The native scale variable below is a signed \textbf{scale-debt ledger}. It is not yet
+identified with an actual positive numerical scale \(\sigma\). That later
+identification is a separate completion and coordinate-shadow problem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-normalized-ugd-packets}{%
+\section{1. Native normalized UGD packets}\label{native-normalized-ugd-packets}}
+
+Let
+
+\[
+p\in\mathbb Q_\Sigma/\mathbb Z
+\]
+
+be a full-turn phase fraction, represented in the principal interval
+\([0,1)\). Let
+
+\[
+u\in\mathbb Q_\Sigma
+\]
+
+be a signed scale-debt coordinate, and let
+
+\[
+\mu\in\mathbb Q_\Sigma
+\]
+
+be corrected seam memory.
+
+A rational normalized UGD packet is
+
+\[
+N=(p,u,\mu).
+\tag{1.1}
+\]
+
+For principal phase representatives define
+
+\[
+W(p,q)=\lfloor p+q\rfloor\in\{0,1\},
+\tag{1.2}
+\]
+
+\[
+(p+q)^\flat=p+q-W(p,q).
+\tag{1.3}
+\]
+
+The product is
+
+\[
+\boxed{
+(p,u,\mu)\star(q,v,\nu)
+=
+\left(
+(p+q)^\flat,
+ u+v,
+ \mu+\nu+W(p,q)
+\right).
+}
+\tag{1.4}
+\]
+
+This is the full-turn form of the gauge-normalized UGD memory law. No angle in
+radians is required.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{group-theorem}{%
+\section{2. Group theorem}\label{group-theorem}}
+
+\hypertarget{theorem-2.1}{%
+\subsection{Theorem 2.1}\label{theorem-2.1}}
+
+Equation \texttt{(1.4)} defines an abelian group. Its identity is
+
+\[
+(0,0,0),
+\tag{2.1}
+\]
+
+and its inverse is
+
+\[
+\boxed{
+(p,u,\mu)^{-1}
+=
+\left(
+(-p)^\flat,
+-u,
+-\mu-W(p,(-p)^\flat)
+\right).
+}
+\tag{2.2}
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+The raw full-turn sum of three principal phases is independent of bracketing.
+Both bracketings subtract exactly the integer part of \(p+q+r\). Hence
+
+\[
+W(p,q)+W((p+q)^\flat,r)
+=
+W(q,r)+W(p,(q+r)^\flat).
+\tag{2.3}
+\]
+
+This proves associativity of phase and memory. Scale debt and the remaining
+memory terms add associatively. Symmetry of the raw phase sum proves
+commutativity.
+
+For \texttt{(2.2)}, principal phases sum to zero after their unique wrap, scale debts
+cancel, and the memory correction cancels that wrap. QED.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-lifted-coordinates}{%
+\section{3. Native lifted coordinates}\label{native-lifted-coordinates}}
+
+Define
+
+\[
+\boxed{
+\Psi_\Sigma(p,u,\mu)
+=
+(u,t,\alpha),
+\qquad
+t=p+\mu,
+\qquad
+\alpha=[\mu]\in\mathbb Q_\Sigma/\mathbb Z.
+}
+\tag{3.1}
+\]
+
+\hypertarget{theorem-3.1-rational-native-linearization}{%
+\subsection{Theorem 3.1 --- Rational native linearization}\label{theorem-3.1-rational-native-linearization}}
+
+\(\Psi_\Sigma\) is a group isomorphism from \texttt{(1.4)} to
+
+\[
+\boxed{
+\mathbb Q_\Sigma
+\times
+\mathbb Q_\Sigma
+\times
+(\mathbb Q_\Sigma/\mathbb Z)
+}
+\tag{3.2}
+\]
+
+with componentwise addition.
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Let
+
+\[
+p_{12}=p+q-W(p,q),
+\qquad
+\mu_{12}=\mu+\nu+W(p,q).
+\]
+
+Then
+
+\[
+\begin{aligned}
+t_{12}
+&=p_{12}+\mu_{12}\\
+&=p+\mu+q+\nu\\
+&=t_1+t_2.
+\end{aligned}
+\tag{3.3}
+\]
+
+Also
+
+\[
+[\mu_{12}]=[\mu+\nu]
+\tag{3.4}
+\]
+
+because the wrap is integral, and scale debts add.
+
+For the inverse map, let \((u,t,\alpha)\) be given with the unique principal
+representative \(0\le\alpha<1\). Put
+
+\[
+n=\lfloor t-\alpha\rfloor,
+\qquad
+\mu=\alpha+n,
+\qquad
+p=(t-\alpha)-n.
+\tag{3.5}
+\]
+
+Then \(0\le p<1\), \([\mu]=\alpha\), and \(p+\mu=t\). This is the unique
+preimage. QED.
+
+The theorem needs neither \(2\pi\) nor a logarithm. Full turns, scale debt, and
+memory are primitive cut-ledger coordinates.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{rational-refinement-lattices}{%
+\section{4. Rational refinement lattices}\label{rational-refinement-lattices}}
+
+For a refinement grid
+
+\[
+R=(n_s,n_t,n_\alpha),
+\]
+
+define the compatible rational lattice
+
+\[
+\boxed{
+\Lambda_R
+=
+\frac1{n_s}\mathbb Z
+\times
+\frac1{n_t}\mathbb Z
+\times
+\left(
+\frac1{n_\alpha}\mathbb Z/\mathbb Z
+\right).
+}
+\tag{4.1}
+\]
+
+A native lifted point \((u,t,\alpha)\) is compatible with \(R\) exactly when
+
+\[
+n_su\in\mathbb Z,
+\qquad
+n_tt\in\mathbb Z,
+\qquad
+n_\alpha\alpha\in\mathbb Z.
+\tag{4.2}
+\]
+
+Its cell shift is
+
+\[
+\boxed{
+S_R(u,t,\alpha)
+=
+(n_su,n_tt,n_\alpha\alpha),
+}
+\tag{4.3}
+\]
+
+with the final component reduced modulo \(n_\alpha\).
+
+\hypertarget{theorem-4.1-lattice-action}{%
+\subsection{Theorem 4.1 --- Lattice action}\label{theorem-4.1-lattice-action}}
+
+For compatible points \(x,y\in\Lambda_R\),
+
+\[
+S_R(x+y)=S_R(x)+S_R(y),
+\tag{4.4}
+\]
+
+with circular reduction in the seam component.
+
+Therefore compatible rational UGD packets act on native cylinders by exact cell
+translation.
+
+\hypertarget{proof-2}{%
+\subsection{Proof}\label{proof-2}}
+
+Multiply componentwise rational addition by the declared denominators. The
+first two coordinates add in \(\mathbb Z\), while the seam coordinate adds in
+\(\mathbb Z/n_\alpha\mathbb Z\). QED.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{refinement-covariance}{%
+\section{5. Refinement covariance}\label{refinement-covariance}}
+
+Let \(R'\) refine \(R\), with refinement factors
+
+\[
+q_s=\frac{n_s'}{n_s},
+\quad
+q_t=\frac{n_t'}{n_t},
+\quad
+q_\alpha=\frac{n_\alpha'}{n_\alpha}.
+\]
+
+For every point compatible with \(R\),
+
+\[
+\boxed{
+S_{R'}(x)
+=
+(q_sS_R^s(x),q_tS_R^t(x),q_\alpha S_R^\alpha(x)),
+}
+\tag{5.1}
+\]
+
+with the final coordinate reduced modulo \(n_\alpha'\).
+
+Thus translating first and refining afterward gives the same fine cells as
+refining first and applying the fine-grid shift.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{content-preserving-ugd-translation}{%
+\section{6. Content-preserving UGD translation}\label{content-preserving-ugd-translation}}
+
+Let \(A\) be a finite native cylinder on grid \(R\), and let \(N\) be a rational
+normalized UGD packet whose lifted point is compatible with \(R\). Define
+
+\[
+T_NA
+=
+T_{S_R(\Psi_\Sigma(N))}A.
+\tag{6.1}
+\]
+
+\hypertarget{theorem-6.1}{%
+\subsection{Theorem 6.1}\label{theorem-6.1}}
+
+\[
+\boxed{
+\nu(T_NA)=\nu(A).
+}
+\tag{6.2}
+\]
+
+Moreover,
+
+\[
+T_{N_1}(T_{N_2}A)
+=
+T_{N_1\star N_2}A.
+\tag{6.3}
+\]
+
+\hypertarget{proof-3}{%
+\subsection{Proof}\label{proof-3}}
+
+The first statement is T01-E1 translation invariance. For the second, use the
+group homomorphism \texttt{(3.3)} and the lattice action \texttt{(4.4)}. QED.
+
+The same translations preserve the native simple-function tail and recognition
+integrals by finite reindexing.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{what-is-native-here}{%
+\section{7. What is native here}\label{what-is-native-here}}
+
+The construction uses only:
+
+\begin{verbatim}
+full-turn rational phase;
+integer phase wrap;
+additive rational scale debt;
+rational corrected memory;
+rational quotient by integers;
+finite refinement denominators;
+integer cell shifts;
+reciprocal-count content.
+\end{verbatim}
+
+It does not use:
+
+\begin{verbatim}
+pi or radians;
+logarithm or exponential;
+a primitive positive-real scale line;
+real-coordinate topology;
+Haar measure;
+Jacobian density;
+floating-point arithmetic.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{actual-scale-boundary}{%
+\section{8. Actual-scale boundary}\label{actual-scale-boundary}}
+
+This theorem does \textbf{not} yet identify the native scale debt \(u\) with an
+actual UGD numerical scale \(\sigma>0\).
+
+The classical formula
+
+\[
+\sigma=e^u
+\]
+
+may later be proved as a coordinate chart after the native scale-debt completion
+is fixed. It may not be used as the definition of \(u\).
+
+Likewise, the full completed UGD carrier requires completion of rational phase,
+scale-debt, and memory presentations and proof that the actual state-locked UGD
+packet lands in that completion.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-certificate}{%
+\section{9. Exact certificate}\label{exact-certificate}}
+
+The expected status is
+
+\begin{verbatim}
+PASS_NATIVE_RATIONAL_UGD_REFINEMENT_LATTICE_ADAPTER
+\end{verbatim}
+
+The certificate checks exact wrap, product, inverse, linearization, round trip,
+compatible and incompatible lattice points, refinement covariance,
+content-preserving translation, and product/translation covariance.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{remaining-gates}{%
+\section{10. Remaining gates}\label{remaining-gates}}
+
+\begin{verbatim}
+T01-E5A RATIONAL NATIVE UGD LINEARIZATION          PROVED
+T01-E5B RATIONAL UGD REFINEMENT ACTION             PROVED
+
+T01-E5C COMPLETED ACTUAL UGD ADAPTER               OPEN
+T01-E6 POSITIVE-SCALE/LOG-EXP COORDINATE SHADOW    OPEN
+T01-E6 HAAR/JACOBIAN/Lp COORDINATE SHADOW          OPEN
+STATE-LOCKED UGD PACKET TO NATIVE COMPLETION       OPEN
+TARGET FAITHFULNESS                                OPEN
+NATIVE SHUNYA                                      OPEN
+RIEMANN HYPOTHESIS                                 OPEN
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RH-Framework/theorems/T01\_E5\_NATIVE\_RATIONAL\_UGD\_REFINEMENT\_ADAPTER.md}\end{flushright}

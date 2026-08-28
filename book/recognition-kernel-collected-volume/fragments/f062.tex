@@ -1,0 +1,384 @@
+% source: RKF/theorum/thermodynamics/10_thermodynamic_cut_square_response_decomposition.md
+\hypertarget{thermodynamic-cut-square-response-decomposition-theorem}{%
+\chapter{Thermodynamic Cut-Square Response Decomposition Theorem}\label{thermodynamic-cut-square-response-decomposition-theorem}}
+
+\hypertarget{purpose}{%
+\section{1. Purpose}\label{purpose}}
+
+This capsule specializes the native cut-square and minimum-decoder theorems to the positive thermodynamic response fibre.
+
+The result is an exact decomposition of thermodynamic response energy into:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  energy captured by a declared scalar response channel;
+\item
+  unused contractive reserve;
+\item
+  pairwise transverse response squares.
+\end{enumerate}
+
+It is a finite positive-metric identity. It does not, by itself, identify a physical material, derive an equation of state, or prove that a chosen response decoder is realized by nature.
+
+\hypertarget{typed-thermodynamic-response-fibre}{%
+\section{2. Typed thermodynamic response fibre}\label{typed-thermodynamic-response-fibre}}
+
+Let
+
+\[
+\mathcal R_{\rm th}\cong\mathbb C^m
+\]
+
+be a finite thermodynamic response fibre and let
+
+\[
+H_{\rm th}>0
+\]
+
+be its declared stable response metric. Define
+
+\[
+\langle u,v\rangle_{H_{\rm th}}=u^*H_{\rm th}v,
+\qquad
+\|u\|_{H_{\rm th}}^2=u^*H_{\rm th}u.
+\]
+
+Let
+
+\[
+y\in\mathcal R_{\rm th}
+\]
+
+be an actual response event and let
+
+\[
+c\in\mathcal R_{\rm th}
+\]
+
+be a declared thermodynamic decoder. Its scalar readout is
+
+\[
+L_c(y)=\langle c,y\rangle_{H_{\rm th}}.
+\]
+
+Put
+
+\[
+\beta_{\rm th}=\|c\|_{H_{\rm th}}^2.
+\]
+
+The metric-whitened coordinates are
+
+\[
+C=H_{\rm th}^{1/2}c,
+\qquad
+Y=H_{\rm th}^{1/2}y.
+\]
+
+All exterior-square expressions below are taken in these compatible whitened coordinates. Raw response coordinates with unlike physical units must not be wedged before the metric normalization is declared.
+
+\hypertarget{exact-thermodynamic-cut-square-identity}{%
+\section{3. Exact thermodynamic cut-square identity}\label{exact-thermodynamic-cut-square-identity}}
+
+\hypertarget{theorem-3.1}{%
+\subsection{Theorem 3.1}\label{theorem-3.1}}
+
+For every thermodynamic response event \texttt{y} and decoder \texttt{c},
+
+\[
+\boxed{
+\beta_{\rm th}\,\|y\|_{H_{\rm th}}^2
+-
+|L_c(y)|^2
+=
+\sum_{i<j}|C_iY_j-C_jY_i|^2.
+}
+\]
+
+Equivalently,
+
+\[
+\boxed{
+\|C\|^2\|Y\|^2-|\langle C,Y\rangle|^2
+=
+\|C\wedge Y\|^2.
+}
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+After whitening, the statement is the finite complex Lagrange identity
+
+\[
+\|C\|^2\|Y\|^2-|\langle C,Y\rangle|^2
+=
+\sum_{i<j}|C_iY_j-C_jY_i|^2.
+\]
+
+Since
+
+\[
+\|C\|^2=\beta_{\rm th},
+\quad
+\|Y\|^2=\|y\|_{H_{\rm th}}^2,
+\quad
+\langle C,Y\rangle=L_c(y),
+\]
+
+the thermodynamic form follows. QED.
+
+\hypertarget{contractive-response-decomposition}{%
+\section{4. Contractive response decomposition}\label{contractive-response-decomposition}}
+
+\hypertarget{theorem-4.1}{%
+\subsection{Theorem 4.1}\label{theorem-4.1}}
+
+If
+
+\[
+\beta_{\rm th}\le1,
+\]
+
+then
+
+\[
+\boxed{
+\|y\|_{H_{\rm th}}^2-|L_c(y)|^2
+=
+(1-\beta_{\rm th})\|y\|_{H_{\rm th}}^2
++
+\sum_{i<j}|C_iY_j-C_jY_i|^2
+\ge0.
+}
+\]
+
+Therefore
+
+\[
+\boxed{
+H_{\rm th}-H_{\rm th}cc^*H_{\rm th}\ge0.
+}
+\]
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+Add
+
+\[
+(1-\beta_{\rm th})\|y\|_{H_{\rm th}}^2
+\]
+
+to both sides of Theorem 3.1. Every term on the right is nonnegative when \texttt{beta\_th\ \textless{}=\ 1}. The operator statement is the same quadratic-form identity because
+
+\[
+y^*(H_{\rm th}-H_{\rm th}cc^*H_{\rm th})y
+=
+\|y\|_{H_{\rm th}}^2-|L_c(y)|^2.
+\]
+
+QED.
+
+\hypertarget{four-channel-thermodynamic-tetrad}{%
+\section{5. Four-channel thermodynamic tetrad}\label{four-channel-thermodynamic-tetrad}}
+
+For the declared response tetrad
+
+\[
+X\in\{p,v,s,t\},
+\]
+
+the transverse residue contains exactly six pairwise squares:
+
+\[
+\begin{aligned}
+\|C\wedge Y\|^2={}&
+|C_pY_v-C_vY_p|^2
++|C_pY_s-C_sY_p|^2
++|C_pY_t-C_tY_p|^2\\
+&+|C_vY_s-C_sY_v|^2
++|C_vY_t-C_tY_v|^2
++|C_sY_t-C_tY_s|^2.
+\end{aligned}
+\]
+
+The \texttt{(p,v)} and \texttt{(s,t)} minors measure mismatch within the caloric and mechanical pairs. The remaining four minors measure cross-pair incompatibility. These names are interpretive labels only; the rigorous content is the positive metric-square decomposition.
+
+\hypertarget{equality-and-no-leakage-classification}{%
+\section{6. Equality and no-leakage classification}\label{equality-and-no-leakage-classification}}
+
+\hypertarget{corollary-6.1}{%
+\subsection{Corollary 6.1}\label{corollary-6.1}}
+
+If
+
+\[
+\beta_{\rm th}<1,
+\]
+
+then equality in Theorem 4.1 occurs only for
+
+\[
+y=0.
+\]
+
+If
+
+\[
+\beta_{\rm th}=1,
+\]
+
+then equality occurs exactly when
+
+\[
+C\wedge Y=0,
+\]
+
+or equivalently when
+
+\[
+Y=\alpha C
+\]
+
+for some scalar \texttt{alpha}.
+
+Thus a unit decoder has no transverse leakage exactly when the complete metric-normalized response event lies on the one-dimensional constitutive line selected by that decoder.
+
+This is a response-alignment statement. It is not automatically a claim of equilibrium, reversibility, or zero entropy production.
+
+\hypertarget{sharp-thermodynamic-decoder-burden}{%
+\section{7. Sharp thermodynamic decoder burden}\label{sharp-thermodynamic-decoder-burden}}
+
+Suppose a declared scalar response functional \texttt{ell} admits at least one representation
+
+\[
+\ell(y)=\langle c,y\rangle_{H_{\rm th}}.
+\]
+
+Define its sharp thermodynamic burden
+
+\[
+\beta_{\rm th}^{\min}
+=
+\inf\left\{
+\|c\|_{H_{\rm th}}^2:
+\ell(y)=\langle c,y\rangle_{H_{\rm th}}
+\text{ for all }y
+\right\}.
+\]
+
+In a complete finite positive fibre the Riesz decoder is unique, so the infimum is attained. The native minimum-decoder theorem then specializes to
+
+\[
+\boxed{
+H_{\rm th}-\ell^*\ell\ge0
+\iff
+\beta_{\rm th}^{\min}\le1.
+}
+\]
+
+Any nonminimal enlarged event representation can only add orthogonal decoder energy. Constructing a decoder therefore does not prove contractivity; its sharp burden must still be bounded by one.
+
+\hypertarget{onsager-entropy-production-specialization}{%
+\section{8. Onsager entropy-production specialization}\label{onsager-entropy-production-specialization}}
+
+Let the dissipative thermodynamic response metric be the positive symmetric Onsager part
+
+\[
+H_{\rm th}=L_{\rm sym}>0.
+\]
+
+Then
+
+\[
+\sigma(y)=y^*L_{\rm sym}y
+\]
+
+is the declared quadratic entropy-production form, and Theorem 4.1 gives
+
+\[
+\boxed{
+\sigma(y)-|L_c(y)|^2
+=
+(1-\beta_{\rm th})\sigma(y)
++
+\|C\wedge Y\|^2
+\ge0.
+}
+\]
+
+The antisymmetric Onsager component contributes no quadratic entropy production and is not part of this positive cut-square identity. It belongs to the orientation/circulation side of the Onsager compass developed elsewhere in this archive.
+
+\hypertarget{relation-to-flat-caloric-mechanical-closure}{%
+\section{9. Relation to flat caloric-mechanical closure}\label{relation-to-flat-caloric-mechanical-closure}}
+
+The flat scalar relation
+
+\[
+\Gamma_c\Gamma_m=1
+\]
+
+checks one caloric-mechanical ratio. By contrast, cut-square closure at unit burden requires all six whitened pairwise minors to vanish.
+
+Under the necessary nonzero-coordinate assumptions, complete cut-square closure can imply the corresponding ratio consistency. The converse is not generally valid: one scalar product identity can hold while one or more cross-response minors remain nonzero.
+
+Therefore the cut-square theorem is a strictly finer response-coherence test than the flat closure relation.
+
+\hypertarget{interface-with-the-thermodynamic-response-cost}{%
+\section{10. Interface with the thermodynamic response cost}\label{interface-with-the-thermodynamic-response-cost}}
+
+Let a source state \texttt{x} produce the thermodynamic response
+
+\[
+y=Bx
+\]
+
+and define the canonical response cost
+
+\[
+Q_{\rm th}=B^*H_{\rm th}B\ge0.
+\]
+
+Then a contractive decoder gives
+
+\[
+\boxed{
+Q_{\rm th}
+-
+B^*H_{\rm th}cc^*H_{\rm th}B
+\ge0.
+}
+\]
+
+Pointwise on \texttt{x}, its defect is exactly the contractive reserve plus the thermodynamic cut-square residue of \texttt{Bx}.
+
+This theorem controls extraction of one rank-one response channel from \texttt{Q\_th}. The nonlinear barrier
+
+\[
+W_{\rm th}=I-e^{-Q_{\rm th}}
+\]
+
+remains the separate functional-calculus construction proved in the canonical response-cost capsule. No unproved commutation or direct identification between the rank-one cut defect and \texttt{W\_th} is assumed here.
+
+\hypertarget{claim-boundary}{%
+\section{11. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+POSITIVE-METRIC THERMODYNAMIC CUT-SQUARE IDENTITY       PROVED
+CONTRACTIVE RESPONSE NO-LEAKAGE DECOMPOSITION           PROVED
+FOUR-CHANNEL SIX-MINOR EXPANSION                        PROVED
+EQUALITY / COMPLETE RESPONSE-ALIGNMENT CLASSIFICATION   PROVED
+SHARP DECODER BURDEN CRITERION                           PROVED IN FINITE POSITIVE FIBRE
+ONSAGER SYMMETRIC ENTROPY-PRODUCTION SPECIALIZATION      PROVED UNDER DECLARED METRIC
+RANK-ONE CHANNEL DOMINATION OF RESPONSE COST             PROVED
+
+PHYSICAL IDENTIFICATION OF A PARTICULAR DECODER          NOT PROVIDED
+EQUILIBRIUM OR REVERSIBILITY FROM CUT-SQUARE EQUALITY    NOT CLAIMED
+UNIVERSAL MATERIAL LAW                                   NOT CLAIMED
+DIRECT IDENTIFICATION WITH THE NONLINEAR BARRIER          NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/thermodynamics/10\_thermodynamic\_cut\_square\_response\_decomposition.md}\end{flushright}

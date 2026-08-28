@@ -1,0 +1,694 @@
+% source: RKF/theorum/24_clock_free_recognition_seam_cut_calculus.md
+\hypertarget{clock-free-recognition-seam-cut-calculus}{%
+\chapter{Clock-Free Recognition-Seam Cut Calculus}\label{clock-free-recognition-seam-cut-calculus}}
+
+\hypertarget{purpose}{%
+\section{1. Purpose}\label{purpose}}
+
+This note rewrites the cut-memory programme in the native language of
+Recognition-Seam Calculus.
+
+The primitive object is not a one-parameter operator family and not a
+preassembled classical source operator. The primitives are:
+
+\begin{verbatim}
+recognition objects;
+declared transition arrows;
+a native event lift at each object;
+a cut projector pair at each object;
+predeclared composition ledgers.
+\end{verbatim}
+
+A real parameter or exponential flow may later provide one chart of the arrow
+system. It is not the clock of the calculus.
+
+The framework therefore proceeds in the order
+
+\begin{verbatim}
+cut
+-> transition differential
+-> composition residue
+-> cut-generated source and memory forms
+-> stable repair
+-> target-faithful finite memory
+-> finite seam matrix.
+\end{verbatim}
+
+The Riemann-Hypothesis carrier is intended to be one specialization of this
+calculus, not the definition of it.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{recognition-objects}{%
+\section{2. Recognition objects}\label{recognition-objects}}
+
+Let \(\mathfrak G\) be a small category of recognition objects and declared
+transitions. For every object \(x\), assign:
+
+\[
+\mathcal F_x
+\quad\text{(native source core)},
+\]
+
+\[
+\mathcal K_x
+\quad\text{(event carrier)},
+\]
+
+\[
+Z_x:\mathcal F_x\longrightarrow\mathcal K_x
+\quad\text{(native event lift)},
+\]
+
+and an orthogonal cut pair
+
+\[
+P_x=P_x^*=P_x^2,
+\qquad
+Q_x=I-P_x,
+\qquad
+P_xQ_x=Q_xP_x=0.
+\]
+
+The recognized and memory carriers are
+
+\[
+\mathcal K_x^{\rm rec}=P_x\mathcal K_x,
+\qquad
+\mathcal K_x^{\rm mem}=Q_x\mathcal K_x.
+\]
+
+The cut involution is
+
+\[
+\mathfrak j_x=P_x-Q_x,
+\qquad
+\mathfrak j_x^2=I.
+\]
+
+No external time is present in these definitions.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{declared-transition-arrows}{%
+\section{3. Declared transition arrows}\label{declared-transition-arrows}}
+
+For an arrow
+
+\[
+\gamma:x\longrightarrow y,
+\]
+
+declare a source transport and an event transport
+
+\[
+A_\gamma:\mathcal F_x\longrightarrow\mathcal F_y,
+\qquad
+U_\gamma:\mathcal K_x\longrightarrow\mathcal K_y,
+\]
+
+satisfying the native event intertwiner
+
+\[
+\boxed{Z_yA_\gamma=U_\gamma Z_x.}
+\]
+
+For composable arrows \(\gamma:x\to y\) and \(\delta:y\to z\), require
+
+\[
+A_{\delta\gamma}=A_\delta A_\gamma,
+\qquad
+U_{\delta\gamma}=U_\delta U_\gamma.
+\]
+
+These are finite transition laws. Differentiation is defined from arrows, not
+from a time parameter.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{clock-free-transition-differential}{%
+\section{4. Clock-free transition differential}\label{clock-free-transition-differential}}
+
+Decompose an event transport into its four cut corners:
+
+\[
+\mathsf R_\gamma=P_yU_\gamma P_x,
+\]
+
+\[
+\mathsf J_\gamma=P_yU_\gamma Q_x,
+\]
+
+\[
+\mathsf C_\gamma=Q_yU_\gamma P_x,
+\]
+
+\[
+\mathsf M_\gamma=Q_yU_\gamma Q_x.
+\]
+
+Their meanings are:
+
+\begin{verbatim}
+R_gamma  recognized-to-recognized transport;
+J_gamma  memory-to-recognized repair;
+C_gamma  recognized-to-memory cut creation;
+M_gamma  memory-to-memory transport.
+\end{verbatim}
+
+\hypertarget{definition-4.1-transition-differential-of-the-cut}{%
+\subsection{Definition 4.1 (Transition differential of the cut)}\label{definition-4.1-transition-differential-of-the-cut}}
+
+Define
+
+\[
+\boxed{
+\nabla_\gamma P
+=P_yU_\gamma-U_\gamma P_x
+=\mathsf J_\gamma-\mathsf C_\gamma.
+}
+\]
+
+This is a finite transition differential. It compares the cut before and
+after one declared arrow.
+
+The arrow is cut-compatible exactly when
+
+\[
+\nabla_\gamma P=0.
+\]
+
+Because \(\mathsf J_\gamma\) and \(\mathsf C_\gamma\) occupy orthogonal cut
+corners, cut compatibility is equivalent to
+
+\[
+\mathsf J_\gamma=0,
+\qquad
+\mathsf C_\gamma=0.
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-composition-residues}{%
+\section{5. Exact composition residues}\label{exact-composition-residues}}
+
+Block multiplication gives the clock-free chain law.
+
+\hypertarget{theorem-5.1-composition-residue-identities}{%
+\subsection{Theorem 5.1 (Composition-residue identities)}\label{theorem-5.1-composition-residue-identities}}
+
+For composable arrows \(\gamma:x\to y\) and \(\delta:y\to z\),
+
+\[
+\boxed{
+\mathsf R_{\delta\gamma}
+=\mathsf R_\delta\mathsf R_\gamma
++\mathsf J_\delta\mathsf C_\gamma,
+}
+\]
+
+\[
+\boxed{
+\mathsf J_{\delta\gamma}
+=\mathsf R_\delta\mathsf J_\gamma
++\mathsf J_\delta\mathsf M_\gamma,
+}
+\]
+
+\[
+\boxed{
+\mathsf C_{\delta\gamma}
+=\mathsf C_\delta\mathsf R_\gamma
++\mathsf M_\delta\mathsf C_\gamma,
+}
+\]
+
+and
+
+\[
+\boxed{
+\mathsf M_{\delta\gamma}
+=\mathsf C_\delta\mathsf J_\gamma
++\mathsf M_\delta\mathsf M_\gamma.
+}
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+Insert
+
+\[
+I_{\mathcal K_y}=P_y+Q_y
+\]
+
+between \(U_\delta\) and \(U_\gamma\), then project onto the four output/input
+corners. For example,
+
+\[
+P_zU_\delta U_\gamma P_x
+=P_zU_\delta(P_y+Q_y)U_\gamma P_x
+=\mathsf R_\delta\mathsf R_\gamma
++\mathsf J_\delta\mathsf C_\gamma.
+\]
+
+The other identities are identical. ∎
+
+The cross terms
+
+\[
+\mathsf J_\delta\mathsf C_\gamma
+\quad\text{and}\quad
+\mathsf C_\delta\mathsf J_\gamma
+\]
+
+are the generated seam residues. They are created by composition; they are not
+post-hoc corrections.
+
+When every arrow is cut-compatible, the recognized and memory blocks compose
+independently.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{cut-generated-forms}{%
+\section{6. Cut-generated forms}\label{cut-generated-forms}}
+
+At each object define
+
+\[
+S_x=Z_x^*Z_x,
+\]
+
+\[
+R_x=Z_x^*P_xZ_x,
+\]
+
+\[
+D_x=Z_x^*Q_xZ_x,
+\]
+
+and
+
+\[
+F_x=Z_x^*\mathfrak j_xZ_x=R_x-D_x.
+\]
+
+\hypertarget{theorem-6.1-native-cut-decomposition}{%
+\subsection{Theorem 6.1 (Native cut decomposition)}\label{theorem-6.1-native-cut-decomposition}}
+
+For every recognition object,
+
+\[
+\boxed{S_x=R_x+D_x}
+\]
+
+and
+
+\[
+\boxed{F_x=R_x-D_x.}
+\]
+
+Moreover,
+
+\[
+R_x\ge0,
+\qquad
+D_x\ge0.
+\]
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Use \(P_x+Q_x=I\) and \(\mathfrak j_x=P_x-Q_x\). Positivity follows because
+\(R_x\) and \(D_x\) are Gram forms. ∎
+
+Thus the source, recognized energy, memory energy and signed endpoint form are
+not independent objects. They are four shadows of one cut-generated event
+lift.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{clock-free-differential-of-a-form}{%
+\section{7. Clock-free differential of a form}\label{clock-free-differential-of-a-form}}
+
+Let \(G_x\) be any form assigned to the object \(x\).
+
+\hypertarget{definition-7.1-transition-differential}{%
+\subsection{Definition 7.1 (Transition differential)}\label{definition-7.1-transition-differential}}
+
+Define
+
+\[
+\boxed{
+\Delta_\gamma G
+=A_\gamma^*G_yA_\gamma-G_x.
+}
+\]
+
+This is the Recognition-Seam replacement for an external-clock derivative.
+
+\hypertarget{theorem-7.2-clock-free-chain-rule}{%
+\subsection{Theorem 7.2 (Clock-free chain rule)}\label{theorem-7.2-clock-free-chain-rule}}
+
+For composable arrows \(\gamma:x\to y\) and \(\delta:y\to z\),
+
+\[
+\boxed{
+\Delta_{\delta\gamma}G
+=\Delta_\gamma G
++A_\gamma^*(\Delta_\delta G)A_\gamma.
+}
+\]
+
+\hypertarget{proof-2}{%
+\subsection{Proof}\label{proof-2}}
+
+\[
+\begin{aligned}
+\Delta_{\delta\gamma}G
+&=A_\gamma^*A_\delta^*G_zA_\delta A_\gamma-G_x\\
+&=A_\gamma^*(A_\delta^*G_zA_\delta-G_y)A_\gamma
+ +(A_\gamma^*G_yA_\gamma-G_x).
+\end{aligned}
+\]
+
+∎
+
+No limiting quotient by a time increment appears.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{generated-ledgers-and-local-closure}{%
+\section{8. Generated ledgers and local closure}\label{generated-ledgers-and-local-closure}}
+
+A ledger \(\Lambda_\gamma^G\) for a transition differential must be declared
+before the observation and must be generated from constitutive, control,
+reference or topological data independent of the evaluation packet.
+
+Define the local recognition residue
+
+\[
+\operatorname{Res}_\gamma^G
+=\Delta_\gamma G-\Lambda_\gamma^G.
+\]
+
+Local closure means
+
+\[
+\operatorname{Res}_\gamma^G=0.
+\]
+
+For composition, an admissible ledger satisfies
+
+\[
+\boxed{
+\Lambda_{\delta\gamma}^G
+=\Lambda_\gamma^G
++A_\gamma^*\Lambda_\delta^G A_\gamma.
+}
+\]
+
+A ledger chosen after seeing \(\Delta_\gamma G\) is retrospective cancellation
+and is inadmissible.
+
+Even when all elementary arrows are locally closed, a loop may retain nonzero
+memory holonomy. Visible return and state return are therefore different
+statements.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{stable-repair-without-a-clock}{%
+\section{9. Stable repair without a clock}\label{stable-repair-without-a-clock}}
+
+Suppose \(\gamma:x\to y\) is cut-compatible. Then
+
+\[
+\mathsf M_\gamma:
+\mathcal K_x^{\rm mem}
+\longrightarrow
+\mathcal K_y^{\rm mem}
+\]
+
+is the induced memory transport.
+
+Define
+
+\[
+\ell_\gamma=\dim\ker\mathsf M_\gamma
+\quad\text{(loss)},
+\]
+
+\[
+b_\gamma=\dim\operatorname{coker}\mathsf M_\gamma
+\quad\text{(birth)},
+\]
+
+and
+
+\[
+\iota_\gamma=\ell_\gamma-b_\gamma.
+\]
+
+For finite-dimensional or Fredholm memory arrows,
+
+\[
+\boxed{
+\iota_{\delta\gamma}
+=\iota_\gamma+\iota_\delta.
+}
+\]
+
+Also,
+
+\[
+\dim\mathcal K_y^{\rm mem}
+-
+\dim\mathcal K_x^{\rm mem}
+=b_\gamma-\ell_\gamma.
+\]
+
+This is stable repair as a transition index. It requires no external clock and
+no preferred parametrization.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{target-relevant-memory-and-finite-reduction}{%
+\section{10. Target-relevant memory and finite reduction}\label{target-relevant-memory-and-finite-reduction}}
+
+Let
+
+\[
+T_{\Sigma,x}:
+\mathcal K_x^{\rm mem}
+\longrightarrow
+\mathbb C^{\nu_x},
+\qquad
+\nu_x\le5,
+\]
+
+be a declared target observer, with
+
+\[
+T_{\Sigma,x}T_{\Sigma,x}^*=I_{\nu_x}.
+\]
+
+Define the target-visible cut bridge
+
+\[
+A_{\Sigma,x}
+=T_{\Sigma,x}Q_xZ_x.
+\]
+
+\hypertarget{definition-10.1-target-faithfulness}{%
+\subsection{Definition 10.1 (Target faithfulness)}\label{definition-10.1-target-faithfulness}}
+
+The observer is faithful on the adverse module if
+
+\[
+\boxed{
+Q_xZ_x
+=T_{\Sigma,x}^*T_{\Sigma,x}Q_xZ_x.
+}
+\]
+
+Then
+
+\[
+D_x=A_{\Sigma,x}^*A_{\Sigma,x}
+\]
+
+on that module and its target-relevant rank is at most five.
+
+If \(R_x>0\), define the cut-derived finite seam matrix
+
+\[
+\boxed{
+B_{\Sigma,x}
+=A_{\Sigma,x}R_x^{-1}A_{\Sigma,x}^*.
+}
+\]
+
+The Cut-Memory Spectral Isomorphism gives
+
+\[
+N_-(R_x-D_x)=N_+(B_{\Sigma,x}-I),
+\]
+
+\[
+\dim\ker(R_x-D_x)=\dim\ker(I-B_{\Sigma,x}),
+\]
+
+and
+
+\[
+\inf_{f\ne0}
+\frac{\langle f,(R_x-D_x)f\rangle}
+     {\langle f,R_xf\rangle}
+=
+\lambda_{\min}(I-B_{\Sigma,x}).
+\]
+
+Thus the finite seam matrix is not imported. It is derived from the target
+compression of the cut memory.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{generalized-exact-examples}{%
+\section{11. Generalized exact examples}\label{generalized-exact-examples}}
+
+The first executable stage contains three independent examples.
+
+\hypertarget{example-a-nonlinear-seam-holonomy}{%
+\subsection{Example A: nonlinear seam holonomy}\label{example-a-nonlinear-seam-holonomy}}
+
+A clock-free arrow loop on
+
+\[
+\mathbb T^2\times\mathbb Z
+\]
+
+has exact local ledger closure on every arrow. The visible torus coordinates
+return while the integer memory changes by one.
+
+This proves that local transition closure does not imply global state return.
+
+\hypertarget{example-b-target-blind-stable-repair}{%
+\subsection{Example B: target-blind stable repair}\label{example-b-target-blind-stable-repair}}
+
+Three objects have memory ranks
+
+\[
+2\longrightarrow1\longrightarrow2.
+\]
+
+The first arrow loses one blind mode, the second births one blind mode, and the
+repair index is additive under composition.
+
+This is a clock-free kernel--cokernel theorem, not a time evolution.
+
+\hypertarget{example-c-cut-generated-five-memory-packet}{%
+\subsection{Example C: cut-generated five-memory packet}\label{example-c-cut-generated-five-memory-packet}}
+
+A single event lift has the exact block form
+
+\[
+Z=
+\begin{pmatrix}
+I_5\\
+A
+\end{pmatrix},
+\]
+
+with
+
+\[
+P=
+\begin{pmatrix}
+I_5&0\\0&0
+\end{pmatrix},
+\qquad
+Q=I-P.
+\]
+
+Therefore
+
+\[
+R=I_5,
+\qquad
+D=A^*A,
+\qquad
+F=I_5-A^*A.
+\]
+
+The target observer is the identity on the five-dimensional cut-memory carrier,
+so target faithfulness is exact. The finite seam matrix is
+
+\[
+B_\Sigma=AA^*.
+\]
+
+The full signed form and the five-matrix have exactly the same inertia,
+threshold multiplicity, relative gap and Fredholm determinant.
+
+The example is a theorem calibration. It is not an RH certificate.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{rh-as-a-specialization}{%
+\section{12. RH as a specialization}\label{rh-as-a-specialization}}
+
+The completed-Weil problem enters only after the general calculus is stable.
+
+At the RH object \(x_{\rm Weil}\), construct the native event lift
+
+\[
+Z_{\rm Weil}
+\]
+
+from declared prime, Gamma, completion-boundary and compatibility events.
+
+Then prove, coefficientwise and before classical recognition,
+
+\[
+S_{0,-}^{\rm full}=Z_{\rm Weil}^*Z_{\rm Weil},
+\]
+
+\[
+L_\partial(f)=\langle p_\partial,Z_{\rm Weil}f\rangle,
+\]
+
+and
+
+\[
+QZ_{\rm Weil}
+=T_\Sigma^*T_\Sigma QZ_{\rm Weil}
+\]
+
+on the adverse target-relevant module.
+
+Only after these native identities are proved may the classical explicit formula
+recognize the constructed form as a completed-Weil shadow.
+
+The classical theory indicates what the shadow should resemble. It does not
+create the native map.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{stage-boundary}{%
+\section{13. Stage boundary}\label{stage-boundary}}
+
+\begin{verbatim}
+clock-free recognition objects and arrows             WRITTEN
+transition differential                               PROVED ABSTRACTLY
+composition-residue identities                        PROVED ABSTRACTLY
+cut-generated source/memory forms                      PROVED ABSTRACTLY
+clock-free form chain rule                             PROVED ABSTRACTLY
+stable repair index                                    PROVED ABSTRACTLY
+target-faithful finite seam reduction                  PROVED ABSTRACTLY
+three generalized exact examples                      IMPLEMENTED NEXT FILE
+
+native completed-Weil event lift                       LATER STAGE
+RH numerical certificate                              NOT ATTEMPTED IN STAGE 1
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/24\_clock\_free\_recognition\_seam\_cut\_calculus.md}\end{flushright}

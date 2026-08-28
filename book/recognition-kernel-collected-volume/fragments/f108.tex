@@ -1,0 +1,142 @@
+% source: Publications/papers/emk-ugd-algebra/LINEAGE.md
+\hypertarget{lineage-emk-ugd-algebra}{%
+\chapter{Lineage --- EMK / UGD algebra}\label{lineage-emk-ugd-algebra}}
+
+\hypertarget{origin}{%
+\section{Origin}\label{origin}}
+
+The EMK algebraic core ladder (I--VII) and the UGD algebraic-operators
+appendix exist in the provisional vault as LaTeX: definitions, theorems
+and proofs, written and reviewed but never executed. A search of the
+public Recognition-Kernel-Framework and the RH-Framework found \textbf{no UGD
+algebra implementation} in either. EMK-1 is therefore the first
+machine-checkable realization of this layer, not a port of existing code.
+
+\hypertarget{what-emk-1-adds}{%
+\section{What EMK-1 adds}\label{what-emk-1-adds}}
+
+Nothing mathematically new is claimed. What is added is execution and
+sharpening:
+
+\begin{itemize}
+\tightlist
+\item
+  the additive determinant identity verified on the full rational
+  coefficient grid by two independent routes;
+\item
+  \textbf{channel independence} exhibited explicitly (each determinant channel
+  vanishing alone; both vanishing on a nonzero operator) --- turning the
+  ladder's ``channels can close or fail independently'' from a remark into
+  a certificate;
+\item
+  the incompleteness of first-order closure witnessed by an operator with
+  unit diagonal-block determinants and a nonzero quadratic residue;
+\item
+  the winding obstruction made exact through a rational circle
+  parametrization and integer crossing counts, with no trigonometry and
+  no floats anywhere in the verdict path;
+\item
+  an exact algebra-level bridge to Cut-First Equivalence (T7).
+\end{itemize}
+
+\hypertarget{relationship-to-the-other-capsules}{%
+\section{Relationship to the other capsules}\label{relationship-to-the-other-capsules}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Cut-First Equivalence} (\texttt{../cut-first-equivalence/}): T7 identifies
+  the CFE memory dial with the EMK rotational determinant channel, so
+  CFE's explicit rational equation of state can be replaced by this
+  native algebra. That replacement is the next capsule's work, not a
+  claim made here.
+\item
+  \textbf{Λ-seam calibration} (\texttt{../lambda-seam-calibration/}): the quarter turn
+  R²=−I certified here is the same quarter turn as LAM-2's derived seam
+  phase ι²=−1 and CFE-Q's Bloch generator J²=−I --- three presentations,
+  one object.
+\end{itemize}
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+Certified: the finite-dimensional spine. Deferred by the source and not
+asserted here: all infinite-dimensional analytic extensions. Untouched:
+RH / K₀ / L₀ / YM continuum gates, and quantum gravity.
+
+\hypertarget{emk-2-addendum}{%
+\section{EMK-2 addendum}\label{emk-2-addendum}}
+
+EMK-2 consumes EMK-1's T7 licence and retires the scaffold equation of
+state used by the Cut-First Equivalence capsules. Two things are added.
+
+First, the ℤ/2 grading is made explicit and certified: the even (seam)
+sector \{I,K\} and the odd (rotational) sector \{R,RK\}, with the sector
+multiplication laws. EMK-1's determinant channels read exactly these two
+grades, so the memoryless/memory split is the grading itself.
+
+Second, the framework's native multiplicative-to-additive law is bound to
+the seam channel. The derivation of Log\_Sigma lives in the public
+Recognition-Kernel-Framework (theorems/foundation/F00G, Theorem 7.1) and
+is a PINNED NAMED DEPENDENCY here --- cited, never rederived. What EMK-2
+certifies is the exact Cayley-chart identity: even-sector composition is
+the rational addition law (y1+y2)/(1+y1y2), which under
+x = (1+y)/(1-y) is exactly Log\_Sigma(x1 x2) = Log\_Sigma(x1) +
+Log\_Sigma(x2). No series, no transcendental evaluation, no floats.
+
+The retirement is certified to be free: under rho = chi - 1 the scaffold
+and native curvature densities coincide identically, and the native
+residues reproduce CFE-1's certified values (-32, -16, 0, +16, +32)
+exactly. CFE's numbers did not depend on the equation of state; the
+equation of state was a coordinate on the odd grade.
+
+\hypertarget{ugd-1-addendum}{%
+\section{UGD-1 addendum}\label{ugd-1-addendum}}
+
+UGD-1 certifies the UGD number layer: cut-zero, operator numerals, and
+the lambda-paraconsistent structural logic. As with EMK-1 and EMK-2, the
+source is vault LaTeX and no executable version existed.
+
+Two representation decisions keep the capsule exact. Phase is carried as
+an EXPONENT in Z/K and never evaluated as a root of unity; the scale base
+is an exact rational. Consequently no transcendental arithmetic enters
+any verdict path, and the phase algebra is certified as the cyclic group
+it is rather than as a numerical approximation of one.
+
+The sharpest results are the carry conservation law (seam charge pushed
+out of the balanced alphabet is conserved in the ledger, with a clamping
+control that loses charge and separates) and the projection-blindness
+witness (numerals sharing a classical value while differing in seam data
+and total seam charge). Together they make precise the appendix's
+principle that visible equality is not UGD equality.
+
+Not claimed: convergence of admissibly infinite numerals, and the seam
+composition rule for linked seams, which the source declares rather than
+derives. Both are recorded as such in the certificate.
+
+\hypertarget{emk-t1-addendum}{%
+\section{EMK-T1 addendum}\label{emk-t1-addendum}}
+
+EMK-T1 is deliberately partial, and the partiality is the point. The
+vault's master-tensor appendix mixes two kinds of content: declared
+protocol (the tensor tuple's component list, the eight-channel split of
+the RTC connection, the residue sectors, tolerances and commit policy)
+and statements with mathematical consequences. Encoding declarations
+would certify nothing, so only the second kind is certified, and the
+first is recorded explicitly as declared-not-certified in the
+certificate's claim boundary.
+
+Three results are worth naming. The cut-swap J is shown to be a derived
+map --- in the primitive basis it IS K --- which unifies it with the
+geometry capsule's involution and the algebra's seam reflection. The
+mixed curvature term is shown necessary by exhibiting channels whose
+individual curvatures vanish while their cross-commutator carries the
+entire master curvature. And time closure is separated from clock
+equality by an exact witness with an identical clock reading and a
+nonzero temporal residue, mirroring UGD-1's projection-blindness result.
+
+The determinant coupling is certified in multiplicative form rather than
+the source's additive log-Det form, so no logarithm is ever evaluated;
+the two statements are equivalent and the multiplicative one stays in Q.
+
+\begin{flushright}\small\texttt{Publications/papers/emk-ugd-algebra/LINEAGE.md}\end{flushright}

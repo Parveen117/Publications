@@ -1,0 +1,143 @@
+% source: RKF/theorum/01_positive_eta_path_independence.md
+\hypertarget{theorum-01-positive-eta-path-independence-by-amplitude-lift}{%
+\chapter{Theorum 01: Positive-Eta Path Independence by Amplitude Lift}\label{theorum-01-positive-eta-path-independence-by-amplitude-lift}}
+
+\hypertarget{source-provenance}{%
+\section{Source provenance}\label{source-provenance}}
+
+\begin{verbatim}
+source repository: Parveen117/MP
+primary PR:        #246 Reset RH route onto rotation-generated recognition topology
+source branch:     agent/rh-rotation-metric-topology-reset
+\end{verbatim}
+
+\hypertarget{statement}{%
+\section{Statement}\label{statement}}
+
+On the fixed five-label event-response carrier, every positive-eta normalization/continuation rectangle is an identity loop.
+
+Equivalently, for any admissible positive eta values \texttt{eta\_1,\ eta\_2},
+
+\begin{verbatim}
+normalize then eta-continue
+=
+eta-continue then normalize.
+\end{verbatim}
+
+No rank-one seam compensation is required for the positive-eta family itself.
+
+\hypertarget{native-factorization}{%
+\section{Native factorization}\label{native-factorization}}
+
+The state-locked construction has the factorization
+
+\begin{verbatim}
+A_chart  = A U,
+Theta_eta = Q_chart G_eta^(1/2),
+G_eta = 1 + (A_+ + eta I_4),    eta > 0.
+\end{verbatim}
+
+Here:
+
+\begin{verbatim}
+A          raw native event amplitude, eta-independent;
+U          one fixed unitary accepted chart;
+Q_chart    the polar orientation of the charted amplitude;
+G_eta      positive metric/scale factor for eta > 0.
+\end{verbatim}
+
+Because right multiplication by a unitary is polar-covariant and right multiplication by a strictly positive factor does not change the polar orientation,
+
+\begin{verbatim}
+polar(A U) = polar(A) U,
+polar(Q_chart G_eta^(1/2)) = Q_chart.
+\end{verbatim}
+
+Thus the frame transport data are exactly
+
+\begin{verbatim}
+raw eta transport                 I_5
+normalized eta transport          I_5
+raw-to-normalized transport       U*
+based loop                        I_5
+\end{verbatim}
+
+for every positive eta in the fixed five-label family.
+
+\hypertarget{finite-state-locked-rectangle-evidence}{%
+\section{Finite state-locked rectangle evidence}\label{finite-state-locked-rectangle-evidence}}
+
+The user-local rectangle at
+
+\begin{verbatim}
+eta     = 0.010
+eta + h = 0.011
+\end{verbatim}
+
+used the four actual amplitudes
+
+\begin{verbatim}
+raw(eta)          normalized(eta)
+raw(eta+h)        normalized(eta+h)
+\end{verbatim}
+
+and reported
+
+\begin{verbatim}
+status                          PASS_STATE_LOCKED_UGD_ETA_NORMALIZATION_RECTANGLE_EVALUATION
+loop classification             FINITE_ACTUAL_TWO_PATH_EQUALITY_PROVED
+path transport difference       3.0669860554696173e-15
+loop identity residual          3.1396725820594018e-15
+defect phase                    1.0705180635847342e-40
+defect-to-accepted leakage      1.7140530928543942e-17
+accepted-block residual         3.139637946219698e-15
+endpoint scale difference       0
+maximum pairing return residual 6.071532165918825e-18
+false checks                    none
+\end{verbatim}
+
+These numbers are the floating-point shadow of the exact positive-eta family theorem.
+
+\hypertarget{what-this-closes}{%
+\section{What this closes}\label{what-this-closes}}
+
+\begin{verbatim}
+positive-eta raw amplitude path equality       CLOSED
+positive-eta normalization path equality       CLOSED
+fixed five-label UGD rectangle                 CLOSED
+need for new observer label at positive eta    REMOVED
+rank-one seam compensation at positive eta     NOT NEEDED
+\end{verbatim}
+
+\hypertarget{what-this-does-not-close}{%
+\section{What this does not close}\label{what-this-does-not-close}}
+
+At eta zero,
+
+\begin{verbatim}
+G_0 = 1 + A_+.
+\end{verbatim}
+
+If \texttt{A\_+} has a kernel, the normalized response can lose support. Therefore the next eta problem is support/Fredholm descent, not another path-holonomy problem.
+
+\begin{verbatim}
+eta-zero support descent                  OPEN
+kernel-line target visibility             OPEN
+continuum UGD/Fredholm identification      OPEN
+actual RH target map                       OPEN
+odd/even or single-sector terminal sign    NOT DECIDED BY THIS THEOREM
+\end{verbatim}
+
+\hypertarget{use-in-the-framework}{%
+\section{Use in the framework}\label{use-in-the-framework}}
+
+Consume this theorem only as the positive-eta path-equivalence adapter:
+
+\begin{verbatim}
+positive eta family
+-> no normalization/path-order ambiguity
+-> fixed five-label carrier is lawful
+-> eta-zero problem becomes support descent
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/01\_positive\_eta\_path\_independence.md}\end{flushright}

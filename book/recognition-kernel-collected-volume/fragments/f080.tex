@@ -1,0 +1,234 @@
+% source: RKF/certificates/foundation/VERIFICATION_CAMPAIGN.md
+\hypertarget{rh-framework-native-verification-campaign}{%
+\chapter{RH-Framework Native Verification Campaign}\label{rh-framework-native-verification-campaign}}
+
+\hypertarget{decision}{%
+\section{Decision}\label{decision}}
+
+New foundational theorem development is frozen while the existing native chain is audited in dependency order.
+
+A theorem is not declared computationally verified merely because it has a script. A package advances only after:
+
+\begin{verbatim}
+obligations frozen;
+authoritative sources pinned;
+exact or outward execution passes;
+negative controls fail as intended;
+result artifact is archived;
+ledger evidence field is updated without changing the theorem claim boundary.
+\end{verbatim}
+
+\hypertarget{current-campaign-state}{%
+\section{Current campaign state}\label{current-campaign-state}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Package
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Scope
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+State
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{F00\_F00E\_EULER\_V0\_1} & cut scalar and Euler derivation & \texttt{IMPLEMENTED\ /\ RUN\_PENDING} \\
+\texttt{F00GHI\_LOG\_ARITHMETIC\_ZETA\_V0\_1} & logarithm, prime arithmetic and half-plane zeta & \texttt{IMPLEMENTED\ /\ RUN\_PENDING} \\
+\texttt{F06\_08\_OPERATOR\_FOUNDATION\_V0\_1} & operator algebra, Riesz and compactness & \texttt{DESIGNED} \\
+\texttt{F09\_10\_FOURIER\_GAMMA\_XI\_V0\_1} & Fourier, Poisson, Gamma and xi & \texttt{DESIGNED} \\
+\texttt{F11\_EXPLICIT\_WEIL\_V0\_1} & zero geometry, explicit formula and Weil criterion & \texttt{DESIGNED} \\
+\texttt{F12\_15\_WEIL\_OPERATOR\_REDUCTION\_V0\_1} & completed-Weil and spectral reduction & \texttt{DESIGNED} \\
+\texttt{F16\_ACTIVE\_BAND\_OUTWARD\_V0\_1} & active-band source positivity & \texttt{DESIGNED} \\
+\texttt{ENDPOINT\_K0\_OUTWARD\_V0\_1} & eta-zero endpoint & \texttt{DESIGNED} \\
+\end{longtable}
+
+The master runner \texttt{certificates/foundation/run\_campaign.py} executes every implemented package containing \texttt{verify.py}. Missing planned packages are never counted as passes.
+
+\hypertarget{verification-classes}{%
+\section{Verification classes}\label{verification-classes}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Meaning
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Admissible engines
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+F-Exact & Exact foundational identities and finite proof-bound arithmetic & integers, fractions, symbolic coefficients \\
+F-Interval & Analytic identities reduced to compact interval and tail obligations & Arb/ball arithmetic, exact tails \\
+O-Residual & Operator claims reduced to validated residual, graph-domain and finite-aperture obligations & interval linear algebra, exact Gram identities \\
+N-Proof & Proof-bearing numerical theorem after a proved reduction & directed intervals, immutable tails, validated inertia \\
+P-Policy & Provenance, source order, no-import and negative-control audit & hashes, static dependency checks \\
+\end{longtable}
+
+\hypertarget{campaign-order}{%
+\section{Campaign order}\label{campaign-order}}
+
+\hypertarget{c00c00-e-scalar-genesis-and-euler}{%
+\subsection{C00/C00-E --- Scalar genesis and Euler}\label{c00c00-e-scalar-genesis-and-euler}}
+
+\textbf{Package:} \texttt{F00\_F00E\_EULER\_V0\_1}
+
+\textbf{Class:} \texttt{F-Exact\ +\ P-Policy}
+
+\textbf{Current state:} \texttt{IMPLEMENTED\ /\ RUN\_PENDING}.
+
+\hypertarget{c00-ghi-logarithm-arithmetic-and-half-plane-zeta}{%
+\subsection{C00-G/H/I --- Logarithm, arithmetic and half-plane zeta}\label{c00-ghi-logarithm-arithmetic-and-half-plane-zeta}}
+
+\textbf{Package:} \texttt{F00GHI\_LOG\_ARITHMETIC\_ZETA\_V0\_1}
+
+\textbf{Class:} \texttt{F-Exact\ +\ rational\ F-Interval\ +\ P-Policy}
+
+\textbf{Current state:} \texttt{IMPLEMENTED\ /\ RUN\_PENDING}.
+
+Implemented obligations:
+
+\begin{verbatim}
+positive logarithm series and exact rational tail bounds;
+Exp_Sigma(Log_Sigma x)=x on outward rational intervals;
+Log_Sigma(xy)=Log_Sigma x+Log_Sigma y packets;
+exact derivative and native-power consistency packets;
+Euclidean division, gcd and Bezout identities;
+Euclid lemma and prime factor reconstruction;
+Mobius cancellation and formal-prime-log Mangoldt identity;
+Euclid prime-prefix construction;
+exact dyadic zeta convergence bounds;
+finite Euler products plus rigorous omitted tails;
+product-tail inequality supporting nonvanishing;
+Mobius reciprocal and logarithmic-derivative coefficient identities;
+adversarial negative controls.
+\end{verbatim}
+
+\hypertarget{c06c07c08-native-operator-foundation}{%
+\subsection{C06/C07/C08 --- Native operator foundation}\label{c06c07c08-native-operator-foundation}}
+
+\textbf{Planned package:} \texttt{F06\_08\_OPERATOR\_FOUNDATION\_V0\_1}
+
+Obligations:
+
+\begin{verbatim}
+adjoint identities on exact finite path cores;
+energy bounds and nondegeneracy;
+Riesz reconstruction residuals on exhaustive finite apertures;
+form/operator sign equivalence;
+compact aperture tail estimates;
+negative controls for lost residue, wrong dagger and nonfaithful quotient.
+\end{verbatim}
+
+\hypertarget{c09c10-fourier-poisson-gamma-and-xi-completion}{%
+\subsection{C09/C10 --- Fourier, Poisson, Gamma and xi completion}\label{c09c10-fourier-poisson-gamma-and-xi-completion}}
+
+\textbf{Planned package:} \texttt{F09\_10\_FOURIER\_GAMMA\_XI\_V0\_1}
+
+\textbf{Class:} \texttt{F-Interval\ +\ P-Policy}
+
+Obligations:
+
+\begin{verbatim}
+Gaussian integral enclosure;
+Gaussian Fourier self-duality;
+approximate-identity error bounds;
+Poisson finite window plus explicit tails;
+theta inversion enclosure;
+Gamma recursion and reciprocal-product tails;
+Mellin continuation identity on overlapping domains;
+xi functional-equation residual enclosure;
+negative controls for wrong pi, Fourier sign and omitted Gamma factor.
+\end{verbatim}
+
+\hypertarget{c11-cauchy-zero-geometry-explicit-formula-and-weil}{%
+\subsection{C11 --- Cauchy, zero geometry, explicit formula and Weil}\label{c11-cauchy-zero-geometry-explicit-formula-and-weil}}
+
+\textbf{Planned package:} \texttt{F11\_EXPLICIT\_WEIL\_V0\_1}
+
+\textbf{Class:} \texttt{F-Interval\ +\ O-Residual\ +\ P-Policy}
+
+Obligations:
+
+\begin{verbatim}
+contour discretization and residue balance with outward error;
+Jensen zero-count bounds;
+canonical-product tail bounds;
+prime-Gamma-zero explicit-formula residual;
+on-seam positivity finite packets;
+off-seam constructive negative witness with rigorous tail domination;
+negative controls for missing residues, unsymmetrized zeros and sign reversal.
+\end{verbatim}
+
+This is an audit-critical package and cannot be reduced to random evaluations of zeta zeros.
+
+\hypertarget{c12c13c14c15-completed-weil-and-spectral-reduction}{%
+\subsection{C12/C13/C14/C15 --- Completed-Weil and spectral reduction}\label{c12c13c14c15-completed-weil-and-spectral-reduction}}
+
+\textbf{Planned package:} \texttt{F12\_15\_WEIL\_OPERATOR\_REDUCTION\_V0\_1}
+
+\textbf{Class:} \texttt{O-Residual\ +\ F-Interval}
+
+Obligations:
+
+\begin{verbatim}
+completed-Weil form boundedness budgets;
+Riesz representative reconstruction;
+cut covariance and block reconstruction;
+finite-aperture compactness;
+positive square-root residuals;
+Feshbach congruence identities;
+Birman-Schwinger inertia agreement;
+target-faithful kernel identity;
+negative controls for lost blind residue and wrong Schur sign.
+\end{verbatim}
+
+\hypertarget{c16-n-active-band-source-positivity}{%
+\subsection{C16-N --- Active-band source positivity}\label{c16-n-active-band-source-positivity}}
+
+\textbf{Planned package:} \texttt{F16\_ACTIVE\_BAND\_OUTWARD\_V0\_1}
+
+\textbf{Class:} \texttt{N-Proof}
+
+This package is proof-bearing. It must prove the actual interval inequalities, complete prime tails, Gamma derivative bounds, source observability and virial error budget.
+
+\hypertarget{cend-n-eta-zero-endpoint}{%
+\subsection{CEND-N --- Eta-zero endpoint}\label{cend-n-eta-zero-endpoint}}
+
+\textbf{Planned package:} \texttt{ENDPOINT\_K0\_OUTWARD\_V0\_1}
+
+\textbf{Class:} \texttt{N-Proof}
+
+This package must validate source regularity, inverse-half domains, norm descent, the exact five-label matrix and a lawful outward certificate for or against \texttt{K0\ \textgreater{}=\ 0}.
+
+\hypertarget{master-status-meanings}{%
+\section{Master status meanings}\label{master-status-meanings}}
+
+\begin{verbatim}
+DESIGNED       obligations and package layout exist;
+IMPLEMENTED    deterministic verifier exists;
+RUN_PENDING    authoritative execution not archived;
+PASS           all mandatory obligations and negative controls pass;
+INCONCLUSIVE   at least one obligation is unproved or enclosure overlaps zero;
+FAIL           a claimed identity or required margin is rigorously contradicted;
+STALE          source pins no longer match.
+\end{verbatim}
+
+\hypertarget{scientific-boundary}{%
+\section{Scientific boundary}\label{scientific-boundary}}
+
+A PASS foundational certificate strengthens confidence and catches implementation/proof-bound errors. It does not replace universal reasoning that was never reduced to the checked obligations.
+
+A PASS proof-bearing numerical certificate can promote a theorem only when its reduction theorem, domain coverage, tails and residuals are all part of the certified package.
+
+\begin{flushright}\small\texttt{RKF/certificates/foundation/VERIFICATION\_CAMPAIGN.md}\end{flushright}

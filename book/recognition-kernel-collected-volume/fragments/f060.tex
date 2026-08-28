@@ -1,0 +1,81 @@
+% source: RKF/theorum/thermodynamics/09_scope_exclusions.md
+\hypertarget{scope-exclusions-and-false-positive-audit}{%
+\chapter{Scope Exclusions and False-Positive Audit}\label{scope-exclusions-and-false-positive-audit}}
+
+This archive includes only results whose mathematical content is genuinely thermodynamic-response, Onsager, susceptibility, entropy-production, or thermodynamic-curvature based.
+
+\hypertarget{eta-descent-margin-barrier}{%
+\section{1. Eta-descent margin barrier}\label{eta-descent-margin-barrier}}
+
+The MP file
+
+\begin{verbatim}
+proof_lab/clock_free_recognition/ETA_DESCENT_MARGIN_BARRIER.md
+\end{verbatim}
+
+proves a certificate-descent obstruction. If
+
+\[
+\eta_{j+1}=\frac{\eta_j}{1+q_j}
+\]
+
+and
+
+\[
+\sum_j\log(1+q_j)<\infty,
+\]
+
+then
+
+\[
+\eta_\infty
+=\eta_0\prod_j(1+q_j)^{-1}>0.
+\]
+
+This is a convergence/certificate theorem, not a thermodynamics theorem. It is related only because a direct thermodynamic response-curvature identity was proposed as one possible alternative to repeated eta descent.
+
+\hypertarget{native-energy-channel-exterior-rates}{%
+\section{2. Native energy-channel exterior rates}\label{native-energy-channel-exterior-rates}}
+
+The MP file
+
+\begin{verbatim}
+papers/rh_initial_journey/NATIVE_ENERGY_CHANNEL_EXTERIOR_RATES.md
+\end{verbatim}
+
+uses the word \texttt{energy} for operator and source-channel norms. Its exponential exterior estimates concern multiplicative carriers, prime dilations, Gamma channels, and finite-rank augmentation. They are functional-analytic energy estimates, not caloric or thermodynamic energy laws.
+
+\hypertarget{raw-hessian-positivity}{%
+\section{3. Raw Hessian positivity}\label{raw-hessian-positivity}}
+
+The raw Hessian of a thermodynamic potential is not automatically a positive response metric in the chosen coordinates. For example, on a stable material,
+
+\[
+\frac1S\left(\frac{\partial V}{\partial P}\right)_S
+=-\frac{V}{SK_S}<0.
+\]
+
+Therefore this archive uses a positive metric obtained from stable susceptibilities or compatibility-Gram whitening. It does not import an indefinite raw Hessian as a Riemannian metric.
+
+\hypertarget{smooth-scalar-curvature-warning}{%
+\section{4. Smooth-scalar curvature warning}\label{smooth-scalar-curvature-warning}}
+
+A smooth scalar potential has commuting mixed partial derivatives. Path dependence alone does not make its Hessian noncommutative. Nonzero curvature requires a non-exact connection, singular structure, non-smoothness, or an explicitly operator-valued transport law.
+
+\hypertarget{speculative-extensions}{%
+\section{5. Speculative extensions}\label{speculative-extensions}}
+
+Claims involving quantum field theory, gauge unification, gravity, black holes, or cosmology are not part of this theorem archive unless separately derived from declared Recognition Kernel objects and proved with typed source maps.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+ETA-DESCENT BARRIER                         EXCLUDED: NOT THERMODYNAMICS
+OPERATOR ENERGY EXTERIOR RATES              EXCLUDED: NOT THERMODYNAMICS
+RAW HESSIAN AS AUTOMATIC POSITIVE METRIC    REJECTED
+PATH DEPENDENCE AS SMOOTH-SCALAR CURVATURE  REJECTED
+SPECULATIVE QFT / GRAVITY EXTENSIONS        QUARANTINED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/thermodynamics/09\_scope\_exclusions.md}\end{flushright}

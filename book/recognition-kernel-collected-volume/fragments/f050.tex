@@ -1,0 +1,210 @@
+% source: RKF/theorum/48_emk_algebra_cut_graded_curvature_theorem.md
+\hypertarget{emk-algebra-as-an-exact-instantiation-of-the-cut-graded-curvature-theorem-42}{%
+\chapter{EMK Algebra as an Exact Instantiation of the Cut-Graded Curvature (Theorem 42)}\label{emk-algebra-as-an-exact-instantiation-of-the-cut-graded-curvature-theorem-42}}
+
+\hypertarget{source-problem-and-scope}{%
+\section{1. Source problem and scope}\label{source-problem-and-scope}}
+
+\texttt{theorum/42\_cut\_graded\_lambda\_jacobian\_tower\_theorem.md} builds the abstract
+machinery for a cut-graded response tower on a state manifold \texttt{M}: a state
+cut \texttt{j}, a covering response-bundle involution \texttt{J\_E} (\texttt{J\_E\^{}2=I}), the induced
+even/odd grading \texttt{L\_n\^{}+-\ =\ (1/2)(L\_n\ +-\ J\_n\ L\_n)}, and --- for a protocol
+generator \texttt{G\ =\ G\_e\ +\ G\_o} split by the same involution --- an exact cut-loop
+curvature identity (Theorem 6.1):
+
+\begin{verbatim}
+F_st = [G_e, G_o]
+\end{verbatim}
+
+Its claim boundary lists as \textbf{OPEN/NEXT}:
+
+\begin{verbatim}
+PHYSICAL T-V-S-P CUT AND RESPONSE-FIBRE INVOLUTION
+CUT-COMPATIBLE THERMODYNAMIC CONNECTION
+OPERATOR CURVATURE -> RESPONSE TWO-FORM ADAPTER
+\end{verbatim}
+
+Separately, the \texttt{Publications} repository certifies a small primitive
+algebra (EMK-1, EMK-2: \texttt{papers/emk-ugd-algebra/}) on generators \texttt{I,\ K,\ R,\ RK}
+with \texttt{K\^{}2=I}, \texttt{R\^{}2=-I}, \texttt{RK=-KR}, and a proved \texttt{Z/2} grading: \texttt{\{I,K\}} even
+(the ``seam'' sector), \texttt{\{R,RK\}} odd (the ``rotational'' sector).
+
+\textbf{This capsule asks a narrow, previously unasked question}: does the EMK
+algebra supply a concrete instantiation of theorum/42's abstract axioms ---
+and if so, what is the exact (not truncated-series) cut-loop curvature on
+that carrier? It does \textbf{not} attempt the physical adapter of theorum/42
+Eq. (6.7), and it does \textbf{not} claim the EMK algebra is \emph{the} correct
+involution for the physical T-V-S-P lambda map of \texttt{arXiv:2603.20773}. It
+closes one narrow algebraic gap and leaves the physical identification
+exactly as open as theorum/42 already stated.
+
+The EMK primitive relations are \textbf{reproduced from scratch} on the 2x2
+matrix carrier below, not imported from the Publications repo, so this
+capsule is an independent cross-repo consistency check rather than a
+restatement.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-concrete-involution}{%
+\section{2. The concrete involution}\label{the-concrete-involution}}
+
+Represent the EMK primitives as real 2x2 matrices:
+
+\begin{verbatim}
+I  = [[1,0],[0,1]]
+K  = [[0,1],[1,0]]
+R  = [[0,-1],[1,0]]
+RK = R K = [[-1,0],[0,1]]
+\end{verbatim}
+
+\hypertarget{proposition-2.1}{%
+\subsection{Proposition 2.1}\label{proposition-2.1}}
+
+\texttt{K\^{}2\ =\ I}, \texttt{R\^{}2\ =\ -I}, \texttt{RK\^{}2\ =\ I}, \texttt{RK\ =\ -KR}. Take \texttt{J\_E\ :=\ K}. Then \texttt{J\_E}
+satisfies theorum/42's involution axiom \texttt{J\_E\^{}2\ =\ I} exactly.
+
+Proof: direct matrix computation, exact over \texttt{Q}. \texttt{square}
+
+\hypertarget{proposition-2.2-grading-matches-emk-2-independently}{%
+\subsection{Proposition 2.2 (grading matches EMK-2, independently)}\label{proposition-2.2-grading-matches-emk-2-independently}}
+
+Under the induced grading \texttt{G\^{}+-\ =\ (1/2)(G\ +-\ J\_E\ G\ J\_E)} with \texttt{J\_E\ =\ K}:
+
+\begin{verbatim}
+I  is purely cut-even
+K  is purely cut-even
+R  is purely cut-odd
+RK is purely cut-odd
+\end{verbatim}
+
+This exactly reproduces the \texttt{Z/2} grading independently certified in
+Publications-repo EMK-2 (\texttt{\{I,K\}} even, \texttt{\{R,RK\}} odd) --- obtained here without
+reference to that repo, from the involution axiom alone.
+
+Proof: \texttt{KIK=I}, \texttt{KKK=K} (even); \texttt{KRK=-R}, \texttt{K(RK)K\ =\ -RK} (odd), by direct
+computation. \texttt{square}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-closed-form-curvature}{%
+\section{3. Exact closed-form curvature}\label{exact-closed-form-curvature}}
+
+Theorum/42 Theorem 6.1 states the cut-loop curvature of a constant
+cut-graded connection is exactly the commutator of its even and odd parts.
+On a general (possibly unbounded, possibly non-nilpotent) carrier this is
+computed via the log of a series (theorum/42 Eq. 6.3). On the EMK carrier
+it is available in \textbf{closed form with no series at all}, because the
+carrier is two-dimensional and every product is already known exactly.
+
+\hypertarget{theorem-3.1-representative-curvature}{%
+\subsection{Theorem 3.1 (representative curvature)}\label{theorem-3.1-representative-curvature}}
+
+For \texttt{G\_e\ :=\ K}, \texttt{G\_o\ :=\ R}:
+
+\[
+\boxed{
+F_{st} = [K, R] = -2\,RK.
+}
+\]
+
+\texttt{F\_\{st\}} is nonzero and purely cut-odd.
+
+\hypertarget{theorem-3.2-general-closed-form}{%
+\subsection{Theorem 3.2 (general closed form)}\label{theorem-3.2-general-closed-form}}
+
+For every \texttt{G\_e\ =\ aI\ +\ bK} and \texttt{G\_o\ =\ cR\ +\ dRK} with \texttt{a,b,c,d} rational:
+
+\[
+\boxed{
+[G_e, G_o] = -2b\,(d\,R + c\,RK).
+}
+\]
+
+Consequently \texttt{{[}G\_e,\ G\_o{]}} is \textbf{always} purely cut-odd on this carrier,
+regardless of \texttt{a,b,c,d}. This structural fact is not stated in theorum/42
+(which leaves the commutator's grading unresolved in the abstract setting)
+and is new to this capsule.
+
+Proof: direct expansion using \texttt{{[}K,R{]}=-2RK} and \texttt{{[}K,RK{]}=-2R} (each a single
+exact matrix computation), then bilinearity of the commutator and
+\texttt{{[}I,\textbackslash{}cdot{]}=0}. Verified exactly on a grid of over 100 rational sample
+points as a machine cross-check. \texttt{square}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{negative-controls}{%
+\section{4. Negative controls}\label{negative-controls}}
+
+\begin{verbatim}
+N1  a generic involution unrelated to the algebra's own multiplication
+    table (diag(1,-1)) does NOT reproduce the {I,K} even / {R,RK} odd
+    partition -- confirms J_E := K is load-bearing, not an arbitrary
+    choice of involution;
+N2  odd input identically zero gives identically zero curvature;
+N3  a wrong-sign claim (F_st = +2 RK) is correctly rejected.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-rational-certificate}{%
+\section{5. Exact rational certificate}\label{exact-rational-certificate}}
+
+The proof-lab packet verifies exactly:
+
+\begin{verbatim}
+K^2=I, R^2=-I, RK=-KR, RK^2=I;
+J_E := K satisfies theorum/42's involution axiom;
+induced grading matches EMK-2's Z/2 grading exactly;
+representative curvature [K,R] = -2 RK exactly;
+general closed form [aI+bK, cR+dRK] = -2b(dR+cRK) on >100 rational points;
+the commutator is always cut-odd on this carrier (new structural fact);
+three negative controls.
+\end{verbatim}
+
+No NumPy, floating point, or transcendental evaluation is used.
+
+Expected status:
+
+\begin{verbatim}
+PASS_EMK_ALGEBRA_CUT_GRADED_CURVATURE_CANDIDATE
+\end{verbatim}
+
+Expected SHA-256:
+
+\begin{verbatim}
+8f5da0b72389d88380c9af6c26e2edf4c4f63554bf1fd5485b0ccdee95c58a0f
+\end{verbatim}
+
+Reproduce:
+
+\begin{verbatim}
+python proof_lab/emk_algebra_cut_graded_curvature.py
+python -m pytest proof_lab/test_emk_algebra_cut_graded_curvature.py -v
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{6. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+K^2=I, R^2=-I, RK=-KR (reproduced independently)          PROVED
+J_E := K SATISFIES THEORUM/42'S INVOLUTION AXIOM            PROVED
+GRADING MATCHES EMK-2'S Z/2 GRADING EXACTLY                 PROVED
+REPRESENTATIVE CUT-LOOP CURVATURE, EXACT CLOSED FORM         PROVED
+GENERAL CLOSED FORM [G_e,G_o]=-2b(dR+cRK)                    PROVED
+COMMUTATOR ALWAYS CUT-ODD ON THIS CARRIER (new fact)         PROVED
+EXACT RATIONAL CERTIFICATE                        IMPLEMENTED / USER RUN REQUIRED
+
+PHYSICAL T-V-S-P CUT AND RESPONSE-FIBRE INVOLUTION           STILL OPEN
+OPERATOR CURVATURE -> RESPONSE TWO-FORM ADAPTER (Eq. 6.7)    STILL OPEN
+IDENTIFICATION OF THIS ALGEBRA WITH THE PHYSICAL LAMBDA MAP  NOT CLAIMED
+emk_thermo_seed.tex RECURSIVE TOWER Lambda^(n)               UNTOUCHED
+RH, YANG-MILLS, ANY OTHER FRAMEWORK GATE                     UNTOUCHED
+\end{verbatim}
+
+This capsule narrows, but does not close, theorum/42's stated open items.
+It supplies one concrete, exactly-computable candidate instantiation; it
+does not determine whether that candidate is the physically correct one.
+
+\begin{flushright}\small\texttt{RKF/theorum/48\_emk\_algebra\_cut\_graded\_curvature\_theorem.md}\end{flushright}

@@ -1,0 +1,202 @@
+% source: RKF/theorum/03_m3_positive_accepted_block.md
+\hypertarget{theorum-03-certified-m3-positivity-and-the-odd-accepted-block}{%
+\chapter{Theorum 03: Certified M3 Positivity and the Odd Accepted Block}\label{theorum-03-certified-m3-positivity-and-the-odd-accepted-block}}
+
+\hypertarget{source-provenance}{%
+\section{Source provenance}\label{source-provenance}}
+
+\begin{verbatim}
+source repository: Parveen117/MP
+primary PRs:       #181, #182, #196, #198, #199, #200, #202
+main objects:      G3, b3, e3, M3, A3, E3
+\end{verbatim}
+
+\hypertarget{target-local-scalar}{%
+\section{Target-local scalar}\label{target-local-scalar}}
+
+The reduced anti-seam scalar is
+
+\begin{verbatim}
+M3 = q(e3,e3) - b3* G3^(-1) b3.
+\end{verbatim}
+
+It is the Schur complement of the finite completed-Weil Gram block over
+
+\begin{verbatim}
+V3 = span{u, |x|u, |x|^2u}.
+\end{verbatim}
+
+The accepted odd block is
+
+\begin{verbatim}
+E3 = span{u, |x|u, |x|^2u, e3}.
+\end{verbatim}
+
+\hypertarget{certified-coupling-signs}{%
+\section{Certified coupling signs}\label{certified-coupling-signs}}
+
+The strong-residual Krylov packet certifies the exact native coupling signs
+
+\begin{verbatim}
+sgn(b3) = (-,+,+).
+\end{verbatim}
+
+The final certified intervals recorded there are
+
+\begin{verbatim}
+-8.4429782348e-6 < (b3)_u < -8.1644107492e-7
+ 3.0255175052e-7 < (b3)_h <  2.3045071878e-6
+ 3.6746554244e-8 < (b3)_k <  4.0310126099e-7
+\end{verbatim}
+
+This solved the sign of the coupling vector, but did not by itself solve \texttt{M3}.
+
+\hypertarget{correlated-schur-rule}{%
+\section{Correlated Schur rule}\label{correlated-schur-rule}}
+
+Independent coordinate-box propagation through \texttt{G3\^{}(-1)} is prohibited because \texttt{G3} is nearly singular. The M3 calculation must keep
+
+\begin{verbatim}
+self channel;
+coupling vector;
+Schur compensation;
+prime/Gamma truncation;
+state transfer
+\end{verbatim}
+
+inside one correlated ledger.
+
+The source-seam invariance theorem gives
+
+\begin{verbatim}
+q_/V3(e+v,e+v)=q_/V3(e,e),    v in V3,
+\end{verbatim}
+
+and since
+
+\begin{verbatim}
+e3 = r_odd - r3,
+s3 = r_odd - u,
+e3 - s3 = u - r3 in V3,
+\end{verbatim}
+
+we may compute
+
+\begin{verbatim}
+M3 = q_/V3(s3,s3).
+\end{verbatim}
+
+\hypertarget{state-local-ledger-separation}{%
+\section{State-local ledger separation}\label{state-local-ledger-separation}}
+
+The exact/fixed-state arithmetic is separated as
+
+\begin{verbatim}
+M(x)-M_N(x_m)
+=
+[M(x)-M(x_m)]
++
+[M(x_m)-M_N(x_m)].
+\end{verbatim}
+
+The exact-to-state term is paid through
+
+\begin{verbatim}
+|M(x)-M(x_m)| <= 2 eta_p eta_d + (157/30) eta_p^2.
+\end{verbatim}
+
+The finite-state arithmetic term uses
+
+\begin{verbatim}
+q = q_N + delta_q
+b = b_N + delta_b
+a_N = G3^(-1) b_N
+\end{verbatim}
+
+and the Schur identity
+
+\begin{verbatim}
+M(x_m)-M_N(x_m)
+= delta_q - 2 Re<a_N,delta_b> - delta_b*G3^(-1)delta_b.
+\end{verbatim}
+
+This route removes the older need to prove the whole exact-state \texttt{A\_4.74} norm directly.
+
+\hypertarget{final-certified-interval}{%
+\section{Final certified interval}\label{final-certified-interval}}
+
+The fixed-state primal transfer closes the last formal transfer and records
+
+\begin{verbatim}
+continuum eta_p                       < 1.4e-7
+continuum eta_d                       < 1.83e-6
+fixed-state pivot transfer            < 1.1e-14
+state-local omitted-prime arithmetic  < 6.565652843015687e-13
+finite packet guard                    7.1e-14
+\end{verbatim}
+
+Around the canonical center
+
+\begin{verbatim}
+1.651058994316351e-12
+\end{verbatim}
+
+the exact target-local interval is
+
+\begin{verbatim}
+3.08520376681449e-13
+< M3 <
+2.993597611951253e-12.
+\end{verbatim}
+
+Therefore
+
+\begin{verbatim}
+M3 > 0.
+\end{verbatim}
+
+\hypertarget{positive-accepted-block}{%
+\section{Positive accepted block}\label{positive-accepted-block}}
+
+The accepted block uses \texttt{G3\textgreater{}0} and \texttt{M3\textgreater{}0}. PR \#202 records
+
+\begin{verbatim}
+lambda_min(G3) = 2.0838177120437723e-13 > 0
+3.08520376681449e-13 < M3 < 2.993597611951253e-12.
+\end{verbatim}
+
+Since \texttt{M3} is the Schur complement of \texttt{G3} in the bordered block, the completed-Weil form is positive definite on
+
+\begin{verbatim}
+E3 = span{u, |x|u, |x|^2u, e3}.
+\end{verbatim}
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+exact native b3 signs                    CERTIFIED (-,+,+)
+source-seam correlated Schur route        PROVED
+state-local ledger separation             PROVED
+fixed-state transfer                      CERTIFIED
+exact target-local M3                     CERTIFIED POSITIVE
+odd accepted finite block E3              CERTIFIED POSITIVE
+
+signed infinite complement                NOT CLOSED BY M3 ALONE
+full global Weil sign                      NOT CLOSED BY M3 ALONE
+RH                                         NOT CLAIMED FROM THIS CAPSULE ALONE
+\end{verbatim}
+
+\hypertarget{use-in-the-framework}{%
+\section{Use in the framework}\label{use-in-the-framework}}
+
+Consume this theorem as the accepted-block certificate:
+
+\begin{verbatim}
+G3 > 0 and M3 > 0
+-> A3 > 0 / E3 positive
+-> finite accepted block no longer missing
+-> downstream obstruction is outside the accepted block
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/03\_m3\_positive\_accepted\_block.md}\end{flushright}

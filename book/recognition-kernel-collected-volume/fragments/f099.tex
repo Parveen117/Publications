@@ -1,0 +1,296 @@
+% source: RH-Framework/notebooks/T03_ACTION_DOMAIN_JUPYTER.md
+\hypertarget{t03-action-domain-verification-jupyter-procedure}{%
+\chapter{T03 Action-Domain Verification --- Jupyter Procedure}\label{t03-action-domain-verification-jupyter-procedure}}
+
+This procedure uses Python cells only. No PowerShell is required.
+
+\hypertarget{set-repository-paths}{%
+\section{1. Set repository paths}\label{set-repository-paths}}
+
+\begin{verbatim}
+from pathlib import Path
+import subprocess
+import sys
+
+RH_REPO = Path(
+    r"C:\Users\abc\Desktop\New Folder (2)\New folder\PROVISNAL RELATED\RH-Framework"
+).resolve()
+
+MP_REPO = Path(
+    r"C:\Users\abc\Desktop\New Folder (2)\New folder\PROVISNAL RELATED\MP_clock_free_endpoint_17e51005"
+).resolve()
+
+OPERATOR_COMMIT = "abc9725a8f232feab81ba63230085457913aadd7"
+STATE_COMMIT = "f9e2f71c2d0ef7db239d7e12b18394eff8e83a1e"
+
+OPERATOR_WORKTREE = MP_REPO.parent / "MP_operator_source_abc9725"
+STATE_WORKTREE = MP_REPO.parent / "MP_state_source_f9e2f71"
+
+T03_C1_JSON = (
+    RH_REPO / "certificates" / "T03_C1_PINNED_ACTION_INVENTORY_v0.1.json"
+)
+T03_C1_NPZ = (
+    RH_REPO / "certificates" / "T03_C1_PINNED_ACTION_ARRAYS_v0.1.npz"
+)
+
+print("RH framework:", RH_REPO)
+print("MP source clone:", MP_REPO)
+print("operator worktree:", OPERATOR_WORKTREE)
+print("state worktree:", STATE_WORKTREE)
+\end{verbatim}
+
+Change only the local paths when your folders differ.
+
+\hypertarget{git-helper-and-rh-branch-audit}{%
+\section{2. Git helper and RH branch audit}\label{git-helper-and-rh-branch-audit}}
+
+\begin{verbatim}
+def run_git(repo: Path, *args: str) -> str:
+    completed = subprocess.run(
+        ["git", "-C", str(repo), *args],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return completed.stdout.strip()
+
+print("RH branch:", run_git(RH_REPO, "branch", "--show-current"))
+print("RH head:", run_git(RH_REPO, "rev-parse", "HEAD"))
+\end{verbatim}
+
+Expected branch:
+
+\begin{verbatim}
+agent/t03-action-domain-adapter
+\end{verbatim}
+
+\hypertarget{install-the-rh-verification-package}{%
+\section{3. Install the RH verification package}\label{install-the-rh-verification-package}}
+
+\begin{verbatim}
+completed = subprocess.run(
+    [sys.executable, "-m", "pip", "install", "-e", str(RH_REPO)],
+    text=True,
+    capture_output=True,
+)
+print(completed.stdout)
+print(completed.stderr)
+print("return code:", completed.returncode)
+assert completed.returncode == 0
+\end{verbatim}
+
+\hypertarget{verify-t03-a-and-all-source-independent-controls}{%
+\section{4. Verify T03-A and all source-independent controls}\label{verify-t03-a-and-all-source-independent-controls}}
+
+\begin{verbatim}
+completed = subprocess.run(
+    [sys.executable, str(RH_REPO / "tools" / "verify_t03.py")],
+    cwd=RH_REPO,
+    text=True,
+    capture_output=True,
+)
+print(completed.stdout)
+print(completed.stderr)
+print("return code:", completed.returncode)
+assert completed.returncode == 0
+\end{verbatim}
+
+Expected lines include:
+
+\begin{verbatim}
+T03-A PASS_T03_ACTION_DOMAIN_DENSE_CORE
+T03-A certificate 05a4784308e996763928b4cead0c86462150154c506b30bf292f96dd8986db3c
+T03-B OPEN: pinned private worktrees were not supplied
+T03-C1 OPEN: actual finite action inventory was not extracted
+\end{verbatim}
+
+This reproduces T03-A and the fail-closed T03-B/T03-C1 control logic. It does not
+execute the private MP packet.
+
+\hypertarget{fetch-the-pinned-mp-branches}{%
+\section{5. Fetch the pinned MP branches}\label{fetch-the-pinned-mp-branches}}
+
+\begin{verbatim}
+subprocess.run(
+    [
+        "git",
+        "-C",
+        str(MP_REPO),
+        "fetch",
+        "origin",
+        "agent/native-recognition-operator-algebra",
+        "agent/rh-rotation-metric-topology-reset",
+    ],
+    check=True,
+)
+\end{verbatim}
+
+\hypertarget{create-clean-detached-source-worktrees}{%
+\section{6. Create clean detached source worktrees}\label{create-clean-detached-source-worktrees}}
+
+\begin{verbatim}
+if not OPERATOR_WORKTREE.exists():
+    subprocess.run(
+        [
+            "git",
+            "-C",
+            str(MP_REPO),
+            "worktree",
+            "add",
+            "--detach",
+            str(OPERATOR_WORKTREE),
+            OPERATOR_COMMIT,
+        ],
+        check=True,
+    )
+
+if not STATE_WORKTREE.exists():
+    subprocess.run(
+        [
+            "git",
+            "-C",
+            str(MP_REPO),
+            "worktree",
+            "add",
+            "--detach",
+            str(STATE_WORKTREE),
+            STATE_COMMIT,
+        ],
+        check=True,
+    )
+
+print("operator head:", run_git(OPERATOR_WORKTREE, "rev-parse", "HEAD"))
+print("state head:", run_git(STATE_WORKTREE, "rev-parse", "HEAD"))
+print("operator dirty:", repr(run_git(OPERATOR_WORKTREE, "status", "--porcelain")))
+print("state dirty:", repr(run_git(STATE_WORKTREE, "status", "--porcelain")))
+
+assert run_git(OPERATOR_WORKTREE, "rev-parse", "HEAD") == OPERATOR_COMMIT
+assert run_git(STATE_WORKTREE, "rev-parse", "HEAD") == STATE_COMMIT
+assert run_git(OPERATOR_WORKTREE, "status", "--porcelain") == ""
+assert run_git(STATE_WORKTREE, "status", "--porcelain") == ""
+\end{verbatim}
+
+The RH verifier rejects dirty worktrees, wrong commits, changed pinned blobs,
+and altered label order.
+
+\hypertarget{execute-the-pinned-carrier-and-t03-c1-inventory}{%
+\section{7. Execute the pinned carrier and T03-C1 inventory}\label{execute-the-pinned-carrier-and-t03-c1-inventory}}
+
+\begin{verbatim}
+completed = subprocess.run(
+    [
+        sys.executable,
+        str(RH_REPO / "tools" / "verify_t03.py"),
+        "--operator-root",
+        str(OPERATOR_WORKTREE),
+        "--state-root",
+        str(STATE_WORKTREE),
+        "--t03-c1-output",
+        str(T03_C1_JSON),
+        "--t03-c1-npz-output",
+        str(T03_C1_NPZ),
+    ],
+    cwd=RH_REPO,
+    text=True,
+    capture_output=True,
+)
+print(completed.stdout)
+print(completed.stderr)
+print("return code:", completed.returncode)
+print("JSON certificate:", T03_C1_JSON)
+print("NPZ arrays:", T03_C1_NPZ)
+\end{verbatim}
+
+Required status:
+
+\begin{verbatim}
+PASS_RH_FRAMEWORK_T03_C1_PINNED_ACTION_INVENTORY
+\end{verbatim}
+
+A passing run proves T03-B and T03-C1 together. A nonzero return code is a
+verification failure, not a warning to be renamed until morale improves.
+
+\hypertarget{inspect-theorem-states-and-false-gates}{%
+\section{8. Inspect theorem states and false gates}\label{inspect-theorem-states-and-false-gates}}
+
+\begin{verbatim}
+import json
+
+report = json.loads(T03_C1_JSON.read_text(encoding="utf-8"))
+false_checks = [
+    name for name, passed in report.get("checks", {}).items() if not passed
+]
+print("status:", report["status"])
+print("classification:", report["theorem_classification"])
+print("false checks:", false_checks)
+print("certificate hash:", report.get("certificate_hash"))
+\end{verbatim}
+
+Required promotion state:
+
+\begin{verbatim}
+T03_B_finite_packet_reproduction = PROVED
+T03_C1_actual_finite_packet_action_inventory = PROVED
+T03_C_remaining_action_families = OPEN
+riemann_hypothesis = OPEN
+false checks = []
+\end{verbatim}
+
+\hypertarget{inspect-per-array-hashes-and-roles}{%
+\section{9. Inspect per-array hashes and roles}\label{inspect-per-array-hashes-and-roles}}
+
+\begin{verbatim}
+inventory = report["action_inventory"]
+
+print("carrier data:")
+for name, metadata in inventory["carrier_data"].items():
+    print(" ", name, metadata["shape"], metadata["sha256"])
+
+print("matrix actions:")
+for name, role in inventory["actions"].items():
+    metadata = inventory["array_metadata"][name]
+    print(
+        " ",
+        name,
+        role["operator_class"],
+        metadata["operator_norm"],
+        metadata["sha256"],
+    )
+\end{verbatim}
+
+The individual SHA-256 values identify the mathematical arrays. The NPZ file is
+only their transport bundle.
+
+\hypertarget{confirm-the-npz-names}{%
+\section{10. Confirm the NPZ names}\label{confirm-the-npz-names}}
+
+\begin{verbatim}
+import numpy as np
+
+with np.load(T03_C1_NPZ, allow_pickle=False) as loaded:
+    print(sorted(loaded.files))
+\end{verbatim}
+
+Expected names include:
+
+\begin{verbatim}
+corrected_defect_line
+source_defect_projector
+accepted_complement_projector
+source_metric
+response_metric
+loop_holonomy
+memory_holonomy
+compensated_holonomy
+\end{verbatim}
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+A passing run proves the pinned finite carrier reproduction and the actual
+finite packet action inventory. T03-C2 through T03-C5 remain open: amplitude
+families, arithmetic/Gamma actions, unbounded graph domains, and aperture
+exhaustion. Target faithfulness, native Shunya, the critical-line adapter, and
+RH remain open.
+
+\begin{flushright}\small\texttt{RH-Framework/notebooks/T03\_ACTION\_DOMAIN\_JUPYTER.md}\end{flushright}

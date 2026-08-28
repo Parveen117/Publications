@@ -1,0 +1,656 @@
+% source: RKF/theorum/40_odd_native_classical_normalization_interface.md
+\hypertarget{odd-native-to-classical-completed-weil-normalization-interface}{%
+\chapter{Odd Native-to-Classical Completed-Weil Normalization Interface}\label{odd-native-to-classical-completed-weil-normalization-interface}}
+
+\hypertarget{purpose}{%
+\section{1. Purpose}\label{purpose}}
+
+Stages 3F and 3G close the native odd sign on the Recognition-Seam carrier:
+
+\[
+\ker S_{0,-}^{\mathrm{full}}=\{0\},
+\]
+
+and
+
+\[
+\langle f,W_3^-f\rangle
+\ge
+0.1709143798342551
+\langle f,S_{0,-}^{\mathrm{full}}f\rangle
+>0
+\]
+
+for every nonzero odd native state.
+
+The remaining interface is not another sign estimate. It is a normalization
+theorem: the native boundary, Gamma and prime-power terms must be shown to be
+exactly the completed explicit-formula distribution evaluated on one declared
+correlation, in one Fourier convention, on one logarithmic test core.
+
+The order is
+
+\begin{verbatim}
+native logarithmic core
+-> correlation q_(f,h)=f*h-sharp
+-> completed explicit-formula distribution E_xi(q_(f,h))
+-> termwise boundary/Gamma/prime identity
+-> odd negative-rank-one restriction
+-> multiplicative/logarithmic unitary identity
+-> classical symmetric-zero-sum membrane.
+\end{verbatim}
+
+The last arrow is a classical theorem. Stage 3H pins it but does not pretend to
+rederive it from the preceding algebra.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{pinned-conventions}{%
+\section{2. Pinned conventions}\label{pinned-conventions}}
+
+Throughout, Hilbert inner products are linear in the first variable.
+
+Let
+
+\[
+\mathcal D=C_c^\infty(\mathbb R),
+\qquad
+\mathcal D_\times=C_c^\infty(0,\infty).
+\]
+
+Use the Fourier convention
+
+\[
+\boxed{
+\widehat f(z)
+=\int_{\mathbb R}f(x)e^{izx}\,dx,
+}
+\tag{2.1}
+\]
+
+with
+
+\[
+\|f\|_2^2
+=\frac1{2\pi}\int_{\mathbb R}|\widehat f(\xi)|^2\,d\xi.
+\]
+
+Define translation and the reflection-adjoint by
+
+\[
+(T_th)(x)=h(x-t),
+\qquad
+h^\sharp(x)=\overline{h(-x)}.
+\tag{2.2}
+\]
+
+For \(f,h\in\mathcal D\), put
+
+\[
+\boxed{
+q_{f,h}=f*h^\sharp.
+}
+\tag{2.3}
+\]
+
+Because \(f\) and \(h\) are compactly supported, \(q_{f,h}\) is compactly
+supported and its Fourier transform is entire.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{correlation-theorem}{%
+\section{3. Correlation theorem}\label{correlation-theorem}}
+
+\hypertarget{theorem-3.1}{%
+\subsection{Theorem 3.1}\label{theorem-3.1}}
+
+For every real \(t\),
+
+\[
+\boxed{
+q_{f,h}(t)=\langle f,T_th\rangle_{L^2}.
+}
+\tag{3.1}
+\]
+
+For every \(z\in\mathbb C\),
+
+\[
+\boxed{
+\widehat q_{f,h}(z)
+=
+\widehat f(z)
+\overline{\widehat h(\overline z)}.
+}
+\tag{3.2}
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+By definition,
+
+\[
+\begin{aligned}
+q_{f,h}(t)
+&=\int_{\mathbb R}f(x)h^\sharp(t-x)\,dx\\
+&=\int_{\mathbb R}f(x)\overline{h(x-t)}\,dx\\
+&=\langle f,T_th\rangle.
+\end{aligned}
+\]
+
+The convolution theorem gives
+
+\[
+\widehat q_{f,h}(z)
+=\widehat f(z)\widehat{h^\sharp}(z).
+\]
+
+Changing variables in the second factor yields
+
+\[
+\widehat{h^\sharp}(z)
+=\overline{\widehat h(\overline z)}.
+\]
+
+This proves both identities. ∎
+
+The conjugate-reflection in (3.2) is essential away from the real axis. Omitting
+it changes the completion-boundary term and destroys the Hermitian interface.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-pinned-completed-explicit-formula-distribution}{%
+\section{4. The pinned completed explicit-formula distribution}\label{the-pinned-completed-explicit-formula-distribution}}
+
+Let
+
+\[
+G(\xi)
+=
+\operatorname{Re}\psi\!\left(\frac14+\frac{i\xi}{2}\right)
+-\log\pi.
+\tag{4.1}
+\]
+
+For a compactly supported smooth correlation \(q\), define the completed
+boundary--Gamma--prime distribution side by
+
+\[
+\boxed{
+\begin{aligned}
+\mathcal E_\xi(q)
+={}&\widehat q(i/2)+\widehat q(-i/2)\\
+&+\frac1{2\pi}\int_{\mathbb R}G(\xi)\widehat q(\xi)\,d\xi\\
+&-\sum_{n\ge2}\frac{\Lambda(n)}{\sqrt n}
+\bigl(q(\log n)+q(-\log n)\bigr).
+\end{aligned}
+}
+\tag{4.2}
+\]
+
+Only finitely many prime-power translations meet the compact support of \(q\).
+The formula therefore has no hidden truncation on the core.
+
+The classical completed explicit formula, in the normalization of
+
+\[
+\xi(s)
+=\frac12s(s-1)\pi^{-s/2}\Gamma(s/2)\zeta(s),
+\]
+
+identifies (4.2) with the symmetrically summed zero distribution. That theorem
+is consumed later as a classical membrane; it is not derived in Stage 3H.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{termwise-normalization-theorem}{%
+\section{5. Termwise normalization theorem}\label{termwise-normalization-theorem}}
+
+For \(f,h\in\mathcal D\), define
+
+\[
+\ell_+(f)=\widehat f(i/2),
+\qquad
+\ell_-(f)=\widehat f(-i/2),
+\tag{5.1}
+\]
+
+\[
+B(f,h)
+=
+\ell_+(f)\overline{\ell_-(h)}
++
+\ell_-(f)\overline{\ell_+(h)},
+\tag{5.2}
+\]
+
+\[
+A_\Gamma(f,h)
+=
+\frac1{2\pi}
+\int_{\mathbb R}
+G(\xi)\widehat f(\xi)
+\overline{\widehat h(\xi)}\,d\xi,
+\tag{5.3}
+\]
+
+and
+
+\[
+P_{1/2}(f,h)
+=
+\sum_{n\ge2}\frac{\Lambda(n)}{\sqrt n}
+\left(
+\langle f,T_{\log n}h\rangle
++
+\langle f,T_{-\log n}h\rangle
+\right).
+\tag{5.4}
+\]
+
+The native logarithmic completed-Weil form is
+
+\[
+W_\xi(f,h)=B(f,h)+A_\Gamma(f,h)-P_{1/2}(f,h).
+\tag{5.5}
+\]
+
+\hypertarget{theorem-5.1-exact-nativeclassical-distribution-interface}{%
+\subsection{Theorem 5.1 (Exact native/classical distribution interface)}\label{theorem-5.1-exact-nativeclassical-distribution-interface}}
+
+For every \(f,h\in\mathcal D\),
+
+\[
+\boxed{
+W_\xi(f,h)=\mathcal E_\xi(q_{f,h}).
+}
+\tag{5.6}
+\]
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+By Theorem 3.1,
+
+\[
+\widehat q_{f,h}(i/2)
+=
+\ell_+(f)\overline{\ell_-(h)},
+\]
+
+and
+
+\[
+\widehat q_{f,h}(-i/2)
+=
+\ell_-(f)\overline{\ell_+(h)}.
+\]
+
+These are exactly the two terms in (5.2).
+
+For real \(\xi\), (3.2) reduces to
+
+\[
+\widehat q_{f,h}(\xi)
+=\widehat f(\xi)\overline{\widehat h(\xi)},
+\]
+
+which turns the integral in (4.2) into (5.3).
+
+Finally, (3.1) gives
+
+\[
+q_{f,h}(\pm\log n)
+=\langle f,T_{\pm\log n}h\rangle,
+\]
+
+which turns the prime-power sum in (4.2) into (5.4). Adding the three identities
+proves (5.6). ∎
+
+No factor, sign, conjugation or \(2\pi\) normalization remains implicit.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{hermitian-and-reflection-covariance}{%
+\section{6. Hermitian and reflection covariance}\label{hermitian-and-reflection-covariance}}
+
+The correlation satisfies
+
+\[
+q_{h,f}(t)=\overline{q_{f,h}(-t)}.
+\tag{6.1}
+\]
+
+Because \(G\) is real and even and the prime translations occur in \(\pm\) pairs,
+
+\[
+\mathcal E_\xi(q_{h,f})
+=
+\overline{\mathcal E_\xi(q_{f,h})}.
+\tag{6.2}
+\]
+
+Thus (5.6) is Hermitian.
+
+Let
+
+\[
+(\kappa f)(x)=f(-x).
+\]
+
+Then
+
+\[
+q_{\kappa f,\kappa h}(t)=q_{f,h}(-t),
+\]
+
+so
+
+\[
+\boxed{
+W_\xi(\kappa f,\kappa h)=W_\xi(f,h).
+}
+\tag{6.3}
+\]
+
+This is the core identity from which the completed even/odd decomposition is
+derived.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-odd-restriction}{%
+\section{7. Exact odd restriction}\label{exact-odd-restriction}}
+
+Let
+
+\[
+\mathcal D^-
+=
+\{f\in C_c^\infty(\mathbb R):f(-x)=-f(x)\}.
+\]
+
+For \(f\in\mathcal D^-\),
+
+\[
+\widehat f(-z)=-\widehat f(z),
+\]
+
+and hence
+
+\[
+\ell_-(f)=-\ell_+(f).
+\tag{7.1}
+\]
+
+Define
+
+\[
+L_\partial f=\sqrt2\,\ell_+(f).
+\tag{7.2}
+\]
+
+\hypertarget{theorem-7.1-odd-negative-rank-one-normalization}{%
+\subsection{Theorem 7.1 (Odd negative-rank-one normalization)}\label{theorem-7.1-odd-negative-rank-one-normalization}}
+
+For \(f,h\in\mathcal D^-\),
+
+\[
+\boxed{
+B(f,h)
+=-L_\partial(f)\overline{L_\partial(h)}.
+}
+\tag{7.3}
+\]
+
+Consequently,
+
+\[
+\boxed{
+W_\xi^-(f,h)
+=
+A_\Gamma(f,h)-P_{1/2}(f,h)
+-L_\partial(f)\overline{L_\partial(h)}.
+}
+\tag{7.4}
+\]
+
+\hypertarget{proof-2}{%
+\subsubsection{Proof}\label{proof-2}}
+
+Substitute (7.1) into (5.2):
+
+\[
+\begin{aligned}
+B(f,h)
+&=\ell_+(f)\overline{-\ell_+(h)}
++(-\ell_+(f))\overline{\ell_+(h)}\\
+&=-2\ell_+(f)\overline{\ell_+(h)}.
+\end{aligned}
+\]
+
+Equation (7.2) gives (7.3), and (7.4) follows from (5.5). ∎
+
+This is the exact classical normalization of the native Stage 3F decomposition
+
+\[
+W_3^-=S_{0,-}^{\mathrm{full}}-L_\partial^*L_\partial.
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{multiplicativelogarithmic-unitary-interface}{%
+\section{8. Multiplicative/logarithmic unitary interface}\label{multiplicativelogarithmic-unitary-interface}}
+
+For \(F\in\mathcal D_\times\), define
+
+\[
+(\mathcal LF)(x)=F(e^x).
+\tag{8.1}
+\]
+
+Since \(dr/r=dx\), \(\mathcal L\) is the core Haar isometry. Under the Mellin
+convention
+
+\[
+(\mathcal MF)(\xi)
+=\int_0^\infty F(r)r^{-i\xi}\,\frac{dr}{r},
+\]
+
+one has
+
+\[
+\boxed{
+\mathcal MF(\xi)=\widehat{\mathcal LF}(-\xi).
+}
+\tag{8.2}
+\]
+
+The multiplicative boundary channels satisfy
+
+\[
+\ell_+^\times(F)=\ell_+(\mathcal LF),
+\qquad
+\ell_-^\times(F)=\ell_-(\mathcal LF).
+\tag{8.3}
+\]
+
+For the scale flow
+
+\[
+(U_tF)(r)=F(e^{-t}r),
+\]
+
+one has
+
+\[
+\boxed{
+\mathcal L U_t=T_t\mathcal L.
+}
+\tag{8.4}
+\]
+
+Finally,
+
+\[
+\mathcal LJ_\times=\kappa\mathcal L.
+\tag{8.5}
+\]
+
+\hypertarget{theorem-8.1}{%
+\subsection{Theorem 8.1}\label{theorem-8.1}}
+
+For \(F,H\in\mathcal D_\times\),
+
+\[
+\boxed{
+W_\times(F,H)
+=W_\xi(\mathcal LF,\mathcal LH).
+}
+\tag{8.6}
+\]
+
+\hypertarget{proof-3}{%
+\subsubsection{Proof}\label{proof-3}}
+
+Equation (8.3) matches the boundary terms. Equation (8.2), followed by
+\(\xi\mapsto-\xi\), matches the Gamma terms because \(G\) is even. Equation
+(8.4) matches every paired prime dilation with its logarithmic translation.
+Adding the three identities gives (8.6). ∎
+
+Thus the multiplicative inversion-odd core and the logarithmic odd core are the
+same test object in unitary charts.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{fourier-sign-convention-invariance}{%
+\section{9. Fourier-sign convention invariance}\label{fourier-sign-convention-invariance}}
+
+If the opposite Fourier convention is used,
+
+\[
+\mathcal F_-f(\xi)
+=\int f(x)e^{-i\xi x}\,dx
+=\widehat f(-\xi),
+\]
+
+then:
+
+\begin{verbatim}
+the two boundary values are interchanged;
+the Gamma integral is unchanged because G is even;
+the prime translations are interchanged inside each +/- pair.
+\end{verbatim}
+
+Therefore the completed Hermitian form is unchanged. The sign of the Fourier
+exponent is a chart orientation, not a new quadratic form.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{core-density-and-extension}{%
+\section{10. Core density and extension}\label{core-density-and-extension}}
+
+The logarithmic map is a bijection
+
+\[
+\mathcal L:\mathcal D_\times\longrightarrow\mathcal D.
+\]
+
+It maps inversion-odd functions to reflection-odd functions. The source carrier
+theorem gives
+
+\[
+X_3^-=\overline{\mathcal D^-}^{\,X_3}.
+\]
+
+The native boundary, Gamma and prime forms are bounded in the native norm.
+Therefore the termwise identity (5.6), the odd identity (7.4), and the unitary
+identity (8.6) extend uniquely from the core to the native odd completion.
+
+The classical zero-sum distribution is still consumed on the admissible core.
+No assertion that the zero sum independently defines the completed Hilbert
+operator is needed.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{classical-membrane}{%
+\section{11. Classical membrane}\label{classical-membrane}}
+
+Put
+
+\[
+z_\rho=\frac{\rho-1/2}{i}.
+\]
+
+The classical completed explicit formula in the pinned normalization states
+
+\[
+\boxed{
+\mathcal E_\xi(q)
+=\operatorname*{sym}\sum_\rho\widehat q(z_\rho).
+}
+\tag{11.1}
+\]
+
+Combining (11.1) with Theorem 3.1 and Theorem 5.1 gives
+
+\[
+\boxed{
+W_\xi(f,h)
+=
+\operatorname*{sym}\sum_\rho
+\widehat f(z_\rho)
+\overline{\widehat h(\overline{z_\rho})}.
+}
+\tag{11.2}
+\]
+
+Stage 3H proves every normalization arrow entering (11.1). It does not claim a
+new proof of the classical explicit formula itself.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{executable-exact-packet}{%
+\section{12. Executable exact packet}\label{executable-exact-packet}}
+
+The Stage 3H packet uses Gaussian rational Laurent sequences to verify exactly:
+
+\begin{verbatim}
+q=f*h-sharp;
+q(t)=<f,T_t h>;
+q-hat(z)=f-hat(z) conjugate(h-hat(conjugate z));
+boundary distribution = native boundary form;
+Gamma distribution = native Gamma form;
+prime distribution = paired translation form;
+odd boundary = -L_partial*L_partial;
+Mellin sign reversal is removed by the even Gamma symbol;
+reflection, Hermitian symmetry and Fourier-sign invariance;
+finite odd cores converge in a weighted completion.
+\end{verbatim}
+
+The calibration is not a substitute for the analytic proof. It is a deterministic
+normalization audit designed to catch missing conjugates, swapped pole channels,
+incorrect translation signs and lost \(2\pi\) factors.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{13. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+CORRELATION / TRANSLATION IDENTITY                    PROVED
+ENTIRE CORRELATION TRANSFORM IDENTITY                 PROVED
+BOUNDARY NORMALIZATION                                PROVED
+GAMMA NORMALIZATION                                   PROVED
+PRIME-POWER NORMALIZATION                             PROVED
+ODD NEGATIVE-RANK-ONE RESTRICTION                     PROVED
+MULTIPLICATIVE / LOGARITHMIC UNITARY NORMALIZATION    PROVED
+FOURIER-SIGN AND REFLECTION INVARIANCE                PROVED
+ODD CORE DENSITY / BOUNDED EXTENSION                  PROVED
+
+CLASSICAL ZERO-SUM EXPLICIT FORMULA                   PINNED, NOT REDERIVED
+PARITY-RESTRICTED WEIL IMPLICATION                    NEXT
+RH                                                     NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/40\_odd\_native\_classical\_normalization\_interface.md}\end{flushright}

@@ -1,0 +1,223 @@
+% source: Publications/papers/lambda-seam-calibration/README.md
+\hypertarget{lambda-seam-calibration-lam-1}{%
+\chapter{Lambda-Seam Calibration (LAM-1)}\label{lambda-seam-calibration-lam-1}}
+
+Calibration and audit of the \textbf{legacy Λ-analytic layer} --- the
+Λ-Eisenstein / Λ-mock functional-equation machinery that grew out of the
+T-V-S-P compass diagram of \emph{Geometric Completion of Thermodynamic
+Response} (arXiv:2603.20773) --- against exact, executable arithmetic.
+
+The legacy program carried the compass response block
+
+\begin{verbatim}
+L = [[λp, Lpv], [Lvp, λv]],   φ = arg(Lpv / Lvp)
+\end{verbatim}
+
+(the Onsager non-reciprocity bias phase) into automorphic machinery,
+producing ``Λ-functional equations'' of the form
+\texttt{Ξ\_φ(s)\ =\ e\^{}\{iφ\}\ Ξ\_φ(1−s)}. That layer is exactly where the legacy
+framework went silent on RH and Yang--Mills. This capsule certifies the
+finite content of that layer and names the mechanism of the silence.
+
+\hypertarget{certified-blocks-lam-1}{%
+\section{Certified blocks (LAM-1)}\label{certified-blocks-lam-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & Ramanujan two-route: exact cyclotomic reduction of \texttt{c\_c(n)} in \texttt{Z{[}x{]}/Φ\_c(x)} equals \texttt{Σ\_\{d\textbar{}gcd(c,n)\}\ d·μ(c/d)} on a 1476-pair grid --- the layer the Λ-twist multiplies but never enters & PASS \\
+T2 & Memory-lattice multiplicativity: \texttt{χ\_φ(n)=e\^{}\{iφΩ(n)\}} is exact integer bookkeeping --- Ω additive on all \texttt{mn\ ≤\ 400}; formal Euler product reproduces every \texttt{n\ ≤\ 300} with marker exactly \texttt{Ω(n)}, multiplicity exactly 1 & PASS \\
+T3 & Theta seam certified: \texttt{θ(1/t)=√t·θ(t)} at \texttt{t=2} with two-sided directed rational enclosures, widths \texttt{\textless{}\ 1e-20} (actual agreement 30+ digits), \textbf{no floats in any verdict path} & PASS \\
+T4 & Declared-phase audit: under the exact S-reindexing bijection \texttt{(c,d)→(d,−c)} on the primitive region \texttt{\textbar{}c\textbar{},\textbar{}d\textbar{}\ ≤\ 60} (8812 pairs), the coset-weight layer has \textbf{zero net change} (16512 = 16512) & PASS \\
+\end{longtable}
+
+Controls: coprimality tamper separates (T1); non-additive fake winding
+detected (T2); \texttt{√3} tamper separates the enclosures with certified gap
+\texttt{\textgreater{}\ 0.319} (T3); asymmetric region separates (T4).
+
+\hypertarget{finding-lam1-f1}{%
+\section{Finding LAM1-F1}\label{finding-lam1-f1}}
+
+The \texttt{e\^{}\{iφ\}} functional-equation factor of the legacy Λ-construction is
+a \textbf{declared} right S-multiplier, not a derived quantity. The legacy
+canvas itself records that no homomorphism \texttt{SL(2,Z)\ →\ S¹} can realize
+arbitrary φ (finite abelianization), and T4 certifies that the
+coset-weight bookkeeping contributes zero net phase across the S-move.
+The legacy analytic layer therefore decorated the classical substrate
+with an \emph{input} phase --- which is the precise mechanism of its silence on
+RH/YM: \textbf{the phase was never load-bearing}. Any native functional
+equation (obligation N2) must \emph{derive} its seam-crossing phase; the
+theta seam of T3 is the classical shape of that single crossing.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{itemize}
+\tightlist
+\item
+  Legacy Λ-FE: declared multiplier over the classical substrate.
+\item
+  N1 (native continuation), N2 (native functional equation),
+  N3 (identification): \textbf{OPEN}.
+\item
+  K₀ / L₀ / RH: \textbf{OPEN}. YM continuum gates: \textbf{OPEN}.
+\item
+  No claims about zeros of any L-function.
+\item
+  Classical anchors (Poisson summation, Jacobi theta inversion,
+  SL(2,Z) coset structure, Ramanujan-sum closed form) are pinned named
+  dependencies, cited and never rederived natively.
+\end{itemize}
+
+\hypertarget{certified-blocks-lam-2-derived-seam-phase}{%
+\section{Certified blocks (LAM-2: derived seam phase)}\label{certified-blocks-lam-2-derived-seam-phase}}
+
+The counterpoint to LAM1-F1 --- for a \emph{genuine} twist the seam phase is
+\textbf{derived}, as finite arithmetic on the cut's residue classes:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & Gauss magnitude exact: \texttt{\textbar{}τ(χ)\textbar{}²\ =\ q} in \texttt{ℤ{[}ζ\_L{]}} for all 34 primitive characters, moduli \{3,4,5,7,9,11,13\} (cyclic convolution + reduction mod \texttt{Φ\_L}; no floats, no complex numbers) & PASS \\
+T1b & Quarter-turn instance: \texttt{τ(χ₄)²\ =\ −4} exactly --- the derived seam phase at q=4 satisfies the cut relation \texttt{ι²\ =\ −1} & PASS \\
+T2 & The derivation step exact: separated-Gauss identity \texttt{Σ\_a\ χ̄(a)ζ\_q\^{}\{an\}\ =\ χ(n)τ(χ̄)} at \textbf{every} residue n for every primitive χ (335 identities), including \texttt{gcd(n,q)\textgreater{}1} where both sides vanish --- the vanishing \emph{is} primitivity & PASS \\
+T3 & Derived phase certified analytically: twisted theta seam \texttt{θ\_χ(1/2)\ =\ √8·θ\_χ(2)} at q=4 with derived multiplier \texttt{τ/(i√q)\ =\ 1}, enclosures agreeing to 30+ digits & PASS \\
+T4 & No conductor for the legacy twist: for every modulus \texttt{q\ ≤\ 60}, explicit congruent pair with different \texttt{Ω} --- the winding twist is a Dirichlet character of \textbf{no} modulus & PASS \\
+\end{longtable}
+
+Controls: imprimitive character mod 9 gives \texttt{\textbar{}τ\textbar{}²\ =\ 0} and fails the
+derivation step at residue n=3 (both exact); multiplier tamper
+(\texttt{√2} for \texttt{√8}) separates the certified enclosures with gap \texttt{\textgreater{}\ 0.58}.
+
+\hypertarget{findings-lam2-f1f2f3}{%
+\section{Findings LAM2-F1/F2/F3}\label{findings-lam2-f1f2f3}}
+
+\textbf{F1 (template):} for primitive-character twists the FE seam phase is
+finite cut arithmetic --- exact magnitude, exact derivation step, and a
+certified analytic seam confirming the derived multiplier. A derived
+phase is \emph{load-bearing}: tampering it separates certified enclosures.
+
+\textbf{F2 (native hook, remark-level):} \texttt{τ(χ₄)²\ =\ −4} --- the derived phase at
+q=4 is exactly the quarter turn: \texttt{(τ/√q)²\ =\ −1}, the cut's defining
+relation, obtained from seam arithmetic rather than declared.
+
+\textbf{F3 (impossibility half):} the legacy winding twist
+\texttt{χ\_φ(n)\ =\ e\^{}\{iφΩ(n)\}} has \textbf{no conductor} (witness for every q ≤ 60),
+so the Gauss-seam derivation route does not exist for it: the declared
+phase of LAM1-F1 was \emph{forced} by the twist's own arithmetic. Together,
+LAM1-F1 + LAM2-F1 state the N2 design constraint: a native functional
+equation must ride a twist whose phase is derivable as finite seam
+arithmetic.
+
+\hypertarget{certified-blocks-lam-3-the-crossing-derived}{%
+\section{Certified blocks (LAM-3: the crossing, derived)}\label{certified-blocks-lam-3-the-crossing-derived}}
+
+The derivation of the \texttt{s\ ↔\ 1−s} crossing itself, executed and certified
+at machine level --- theta seam → split-flip identity → manifestly
+symmetric completed kernel = Euler-product side --- at points where the
+native \texttt{ζ\_Σ} exists. The FE phase for ζ is the derived \texttt{+1} of the
+untwisted seam: an \emph{output} of the crossing, never an input.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & Memory-grammar values: \texttt{γ}, \texttt{ln\ 2}, \texttt{ln\ π}, \texttt{ζ(3)}, \texttt{ζ(5)} as exact-rational enclosures (recognized body + Bernoulli correction window + declared bracketed tail), widths \texttt{\textless{}\ 1e-24}, two truncation depths overlap & PASS \\
+T2 & Split-flip identity at s=3: \texttt{∫₀¹\ t\^{}\{1/2\}ω\ dt\ =\ 1/6\ +\ ∫₁\^{}∞\ t\^{}\{-2\}ω\ dt}, two independent routes (incomplete-gamma series vs \texttt{E₁} route with exact rational cancellation) agreeing to 28+ digits --- the crossing step, certified & PASS \\
+T3 & Completed identity at s=3: \texttt{ζ(3)/(2π)\ =\ 1/6\ +\ ∫₁\^{}∞\ (t\^{}\{1/2\}+t\^{}\{-2\})ω\ dt} & PASS \\
+T4 & Second point s=5: \texttt{3ζ(5)/(4π²)\ =\ 1/20\ +\ ∫₁\^{}∞\ (t\^{}\{3/2\}+t\^{}\{-3\})ω\ dt} --- kills point-luck & PASS \\
+\end{longtable}
+
+Controls: polar-drop separates (gap \textgreater{} 1/10); seam-weight tamper
+\texttt{ω(1/t)\ →\ t·ω(t)+(t−1)/2} separates (gap \textgreater{} 2/5); reflected-kernel
+exponent tamper separates (gap \textgreater{} 1/200); body-only ζ separates
+(memory grammar load-bearing); Bernoulli-window tamper separates.
+
+\textbf{Note on the E₁ route:} at \texttt{c\ =\ 16π} the convergent-series route
+suffers \textasciitilde22 digits of cancellation --- fatal in floats, \emph{exact} in
+rationals. The capsule's positivity and width assertions at that point
+are the machine witness that the arithmetic discipline is load-bearing.
+
+\hypertarget{findings-lam3-f1f2}{%
+\section{Findings LAM3-F1/F2}\label{findings-lam3-f1f2}}
+
+\textbf{F1:} the crossing is derived end-to-end and machine-certified on the
+\texttt{Re\ s\ \textgreater{}\ 1} side. Contrast chain complete across the paper:
+LAM-1 --- declared phase, never load-bearing; LAM-2 --- derived phase,
+load-bearing finite seam arithmetic; LAM-3 --- the derivation itself
+executed, with every tamper separating certified enclosures.
+
+\textbf{F2:} the memory grammar is load-bearing: body-only ζ(3) separates by
+more than \texttt{1e-5} at widths below \texttt{1e-24} --- the public echo of ``without
+memory terms there is no critical strip.''
+
+\hypertarget{honest-boundary-lam-3}{%
+\section{Honest boundary (LAM-3)}\label{honest-boundary-lam-3}}
+
+Continuation into the critical strip via the symmetric kernel is
+\textbf{definitional} here, not a native theorem. The exact remaining native
+obligation for N2 is now pinned: \emph{reproduce the split-flip step (T2)
+inside the cut grammar, where the theta seam is a native theorem rather
+than a pinned classical anchor.} T3 is T2 composed with exact termwise
+Mellin evaluation (recorded per TAUT-1); the tails on both sides share
+the Euler--Maclaurin utility.
+
+\hypertarget{reproduce}{%
+\section{Reproduce}\label{reproduce}}
+
+\begin{verbatim}
+python papers/lambda-seam-calibration/certificates/lam1_seam_interface.py
+python papers/lambda-seam-calibration/certificates/lam2_derived_phase.py
+python papers/lambda-seam-calibration/certificates/lam3_crossing_derivation.py
+python -m pytest papers/lambda-seam-calibration/tests -v
+\end{verbatim}
+
+The generator is deterministic; CI regenerates the certificate and
+fails on any pin drift (\texttt{EXPECTED\_LAM1.sha256}, \texttt{EXPECTED\_LAM2.sha256}, \texttt{EXPECTED\_LAM3.sha256}).
+
+\hypertarget{arithmetic-discipline}{%
+\section{Arithmetic discipline}\label{arithmetic-discipline}}
+
+Integers, exact rationals, exact integer polynomial arithmetic, and
+directed rational intervals with relative outward rounding to 300-bit
+significands. No floating point in any verdict path.
+
+\begin{flushright}\small\texttt{Publications/papers/lambda-seam-calibration/README.md}\end{flushright}

@@ -1,0 +1,196 @@
+% source: RH-Framework/theorems/T01_E4D_NATIVE_MEAN_MULTIPLIER_BOUND.md
+\hypertarget{t01-e4d-native-mean-multiplier-identity-and-bound}{%
+\chapter{T01-E4D --- Native Mean-Multiplier Identity and Bound}\label{t01-e4d-native-mean-multiplier-identity-and-bound}}
+
+\textbf{Classification:} \texttt{PROVED}
+
+\textbf{Foundational origin:} \texttt{NATIVE\_DERIVED}
+
+\textbf{Iterated-multiplier deviation control (T01-E4D-B):} \texttt{OPEN}
+
+T01-E4C bounds a bounded native simple multiplier by its uniform cut bound
+\(U_\Sigma(h)=\max_c D_\Sigma(h(c))\). That bound is tight only when the state
+is concentrated where the multiplier is largest. This theorem proves the exact
+finite identity that separates the \textbf{mean} action of a multiplier from its
+\textbf{fluctuation}, and bounds the fluctuation by the multiplier's oscillation
+times a native deviation of the state. Nothing beyond exact rational
+arithmetic on refinement cells of one unit box is used.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{setting}{%
+\section{1. Setting}\label{setting}}
+
+Let \(R=(n_s,n_t,n_\alpha)\) be a refinement grid, \(B\) its unit box
+(T01-E1, content \(\nu_R(B)=1\)), and let \(h,f\) be finite cut-scalar simple
+functions supported in \(B\). Write \(N_\Sigma\) for the native norm square
+(T01-B). Define on \(B\)
+
+\[
+\langle N(h)\rangle=\sum_{c\subset B}\nu_R(c)\,N_\Sigma(h(c))
+=\mathcal I_{\rm rec}(h),
+\qquad
+\operatorname{osc}N(h)=\max_c N_\Sigma(h(c))-\min_c N_\Sigma(h(c)),
+\]
+
+and the \textbf{recognition deviation}
+
+\[
+\mathcal D_{\rm rec}(f)=\sum_{c\subset B}\nu_R(c)\,
+\bigl(N_\Sigma(f(c))-\langle N(f)\rangle\bigr)_+ .
+\tag{1.1}
+\]
+
+All three are refinement-invariant by T01-E3 (they are finite cell sums of
+refinement-invariant simple integrals), and
+
+\[
+0\le\mathcal D_{\rm rec}(f)\le\mathcal I_{\rm rec}(f).
+\tag{1.2}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{theorem-e4d-a-exact-mean-split}{%
+\section{2. Theorem E4D-A (exact mean split)}\label{theorem-e4d-a-exact-mean-split}}
+
+\[
+\boxed{
+\mathcal I_{\rm rec}(hf)
+=
+\langle N(h)\rangle\,\mathcal I_{\rm rec}(f)
++
+\sum_{c\subset B}\nu_R(c)
+\bigl(N(h(c))-\langle N(h)\rangle\bigr)
+\bigl(N(f(c))-\langle N(f)\rangle\bigr).
+}
+\tag{2.1}
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+\(N_\Sigma\) is multiplicative on cut scalars (T01-B: \(N(ab)=N(a)N(b)\)), so
+\(\mathcal I_{\rm rec}(hf)=\sum_c\nu(c)N(h(c))N(f(c))\). Expand
+\(N(h(c))=\langle N(h)\rangle+(N(h(c))-\langle N(h)\rangle)\) and use
+\(\sum_c\nu(c)(N(h(c))-\langle N(h)\rangle)=0\) on the unit box. QED.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{theorem-e4d-b-mean-multiplier-bound}{%
+\section{3. Theorem E4D-B (mean-multiplier bound)}\label{theorem-e4d-b-mean-multiplier-bound}}
+
+\[
+\boxed{
+\mathcal I_{\rm rec}(hf)
+\le
+\langle N(h)\rangle\,\mathcal I_{\rm rec}(f)
++
+\operatorname{osc}N(h)\;\mathcal D_{\rm rec}(f).
+}
+\tag{3.1}
+\]
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Split the covariance sum of (2.1) into cells where
+\(N(f(c))>\langle N(f)\rangle\) and cells where it is below. On the first set
+the \(h\)-factor is at most \(\max N(h)-\langle N(h)\rangle\); on the second set
+the \(h\)-factor is at least \(\min N(h)-\langle N(h)\rangle\) and multiplies a
+negative quantity, so the contribution is at most
+\((\langle N(h)\rangle-\min N(h))\sum_c\nu(c)(\langle N(f)\rangle-N(f(c)))_+\).
+The positive and negative deviations of \(N(f)\) have equal content-weighted
+mass on the unit box (their difference is \(\sum_c\nu(c)(N(f(c))-\langle N(f)\rangle)=0\)), so both sums equal \(\mathcal D_{\rm rec}(f)\). Adding the
+two gaps gives \(\operatorname{osc}N(h)\). QED.
+
+\hypertarget{corollaries}{%
+\subsection{Corollaries}\label{corollaries}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Vacuum equality.} If \(N(f)\) is constant on \(B\) then
+  \(\mathcal D_{\rm rec}(f)=0\) and
+  \(\mathcal I_{\rm rec}(hf)=\langle N(h)\rangle\,\mathcal I_{\rm rec}(f)\):
+  a multiplier acts on a recognition-flat state by its \textbf{mean}, not its
+  maximum.
+\item
+  \textbf{Product content.} If \(h_1\) depends only on the scale coordinate and
+  \(h_2\) only on the seam coordinate then
+  \(\langle N(h_1h_2)\rangle=\langle N(h_1)\rangle\langle N(h_2)\rangle\)
+  (T01-E1 product content).
+\item
+  \textbf{Relation to T01-E4C.} Neither bound dominates: E4C is sharper for
+  states concentrated at the multiplier's maximum, E4D is sharper for
+  recognition-flat states. Both are lawful; the certificate records that
+  E4D is strictly below E4C in all 40 pseudo-random trials.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{what-is-not-claimed-t01-e4d-c-open}{%
+\section{\texorpdfstring{4. What is not claimed (T01-E4D-C, \texttt{OPEN})}{4. What is not claimed (T01-E4D-C, OPEN)}}\label{what-is-not-claimed-t01-e4d-c-open}}
+
+For an \textbf{iterated} product \(h_1h_2\cdots h_k f\) the bound (3.1) applies
+face by face, but \(\mathcal D_{\rm rec}\) of the intermediate states is not
+controlled by this theorem. Bounding the deviation along an iteration
+uniformly in \(k\) is exactly the obligation that appears as hypothesis 3 of
+the Recognition-Complete Finite-to-Infinite Cut Theorem
+(Recognition-Kernel-Framework \texttt{theorum/28}) for the chain adapters
+(Publications \texttt{yang-mills-certified-benchmark}, YM-26/27): there the
+T01-E4C price per face is measured to exceed the true vacuum rate by factors
+56.5 / 27.8 / 13.5, and Corollary 1 is the mechanism that removes the
+maximum from the vacuum channel. No gap, no Haar shadow, and no RH statement
+is promoted by this theorem.
+
+\hypertarget{restatement-of-t01-e4d-c-aug-22-2026-after-publications-ym-34}{%
+\subsection{4.1 Restatement of T01-E4D-C (Aug 22 2026, after Publications YM-34)}\label{restatement-of-t01-e4d-c-aug-22-2026-after-publications-ym-34}}
+
+The obligation above is \textbf{not provable as written}. For a single face with
+multiplier \(w=e^{\kappa\chi_{1/2}}\) the iterated ratio on one recognition
+state,
+\[
+q_n=\frac{\int w^{\,n}}{\int w^{\,n-1}}=\frac{f_0(n\kappa)}{f_0((n-1)\kappa)},
+\]
+is strictly increasing and converges to \(\sup w=e^{2\kappa}\), not to the mean
+\(f_0\) (certified for \(n\le 60\) at \(\kappa=1/8,1/4,1/2\): Publications
+\texttt{ym34\_e4dc\_restated.py}, pin \texttt{EXPECTED\_YM34.sha256}). This is the native
+Laplace principle: the mean law (3.1) holds once; iterated on a fixed state the
+per-application price returns to the E4C supremum. Every exponential met in the
+chain adapters (YM-16, YM-26 T2) is this growth.
+
+With the recognition kernel \(K\) (content-\(j\) eigenvalue \(\lambda_j\)) applied
+\textbf{between} multiplications the iterated ratio is nondecreasing (native
+log-convexity, cut-square) and converges to
+\(\lambda_1(K^{1/2}M_wK^{1/2})=f_0(1+\delta(\kappa))\) with
+\(\delta=0.003582,\ 0.014032,\ 0.051911\), against a supremum price
+\(e^{2\kappa}/f_0-1=0.274,\ 0.598,\ 1.405\). The smoothing step is what turns
+the supremum into a spectral constant.
+
+\textbf{T01-E4D-C (corrected statement, \texttt{OPEN}).} For the alternating product
+\(S=(K^{1/2}M_wK^{1/2})\) on a chain of \(m\) faces,
+\(\lambda_2(S)/\lambda_1(S)\le 1-\delta_{\rm gap}(\kappa)\) uniformly in \(m\).
+The vacuum half (an \(m\)-uniform lower bound on \(\lambda_1\) at the true per-face
+rate) is PROVED in Publications YM-31; the excitation half (an \(m\)-uniform upper
+bound on \(\lambda_2\)) is the single open obligation, and any proof of it must
+carry the smoothing step inside the iteration.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{certificate}{%
+\section{5. Certificate}\label{certificate}}
+
+\begin{verbatim}
+src/rh_framework/native_mean_multiplier.py
+src/rh_framework/native_mean_multiplier_certificate.py
+certificates/T01_E4D_NATIVE_MEAN_MULTIPLIER_v0.1.json
+tests/test_native_mean_multiplier.py
+\end{verbatim}
+
+Build note: the first draft of (3.1) used \(\max N(h)-\langle N(h)\rangle\)
+in place of \(\operatorname{osc}N(h)\); the executable certificate refused it
+(negative-side cells), and the proof above is the corrected statement.
+
+\begin{flushright}\small\texttt{RH-Framework/theorems/T01\_E4D\_NATIVE\_MEAN\_MULTIPLIER\_BOUND.md}\end{flushright}

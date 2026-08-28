@@ -1,0 +1,834 @@
+% source: RKF/theorems/foundation/F00G_NATIVE_LOGARITHM_AND_POWERS.md
+\hypertarget{f00-g-native-logarithm-on-the-positive-radial-cone-and-native-powers}{%
+\chapter{F00-G --- Native Logarithm on the Positive Radial Cone and Native Powers}\label{f00-g-native-logarithm-on-the-positive-radial-cone-and-native-powers}}
+
+\hypertarget{classification}{%
+\section{Classification}\label{classification}}
+
+\texttt{PROVED}
+
+\hypertarget{purpose}{%
+\section{Purpose}\label{purpose}}
+
+F00-E derives the native exponential
+
+\[
+\operatorname{Exp}_\Sigma:\mathbb C_\Sigma\to\mathbb C_\Sigma
+\]
+
+from finite factorial polynomials and cut-complex completion. F00-F proves that
+its restriction to the radial line is strictly increasing and defines an inverse
+only on the earned Euler orbit
+
+\[
+\mathbb P_\Sigma
+=
+\{\operatorname{Exp}_\Sigma(x):x\in\mathbb R_\Sigma\}.
+\]
+
+This theorem proves that every positive radial scalar belongs to that orbit. It
+derives the logarithm without importing
+
+\begin{verbatim}
+ordinary real logarithm;
+an inverse-function theorem;
+integration of 1/x;
+the ordinary positive real line;
+complex analysis;
+a pre-existing power x^s.
+\end{verbatim}
+
+The construction order is
+
+\begin{verbatim}
+positive radial scalar
+-> Cayley coordinate y=(x-1)/(x+1)
+-> native odd power series
+-> inverse identity with Exp_Sigma
+-> full positive Euler orbit
+-> multiplicative logarithm
+-> native complex powers.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{established-input}{%
+\section{1. Established input}\label{established-input}}
+
+Let
+
+\[
+\mathbb C_\Sigma
+=
+\mathbb R_\Sigma\oplus\iota_\Sigma\mathbb R_\Sigma,
+\qquad
+\iota_\Sigma^2=-1,
+\]
+
+with dagger
+
+\[
+(a+\iota_\Sigma b)^\dagger=a-\iota_\Sigma b.
+\]
+
+The radial field \texttt{R\_Sigma} is complete, Archimedean and ordered. The exponential
+satisfies
+
+\[
+\operatorname{Exp}_\Sigma(z+w)
+=
+\operatorname{Exp}_\Sigma(z)
+\operatorname{Exp}_\Sigma(w),
+\]
+
+\[
+\partial_\Sigma\operatorname{Exp}_\Sigma
+=
+\operatorname{Exp}_\Sigma,
+\qquad
+\operatorname{Exp}_\Sigma(0)=1,
+\]
+
+and is strictly increasing on \texttt{R\_Sigma}.
+
+For radial \texttt{u}, write \texttt{\textbar{}u\textbar{}\_Sigma} for the ordered absolute value.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-native-cayley-coordinate}{%
+\section{2. The native Cayley coordinate}\label{the-native-cayley-coordinate}}
+
+Let \texttt{x\textgreater{}0} be radial and define
+
+\[
+\boxed{
+\mathcal C_\Sigma(x)
+=
+\frac{x-1}{x+1}.
+}
+\]
+
+\hypertarget{lemma-2.1-cayley-contraction}{%
+\subsection{Lemma 2.1 --- Cayley contraction}\label{lemma-2.1-cayley-contraction}}
+
+For every radial \texttt{x\textgreater{}0},
+
+\[
+\left|\mathcal C_\Sigma(x)\right|_\Sigma<1.
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+Because \texttt{x\textgreater{}0},
+
+\[
+x+1>0.
+\]
+
+Also
+
+\[
+(x+1)^2-(x-1)^2=4x>0.
+\]
+
+Hence
+
+\[
+|x-1|_\Sigma<x+1.
+\]
+
+Division by the positive scalar \texttt{x+1} gives the result. ∎
+
+The inverse rational transformation is
+
+\[
+\boxed{
+x=\frac{1+y}{1-y}}
+\]
+
+whenever
+
+\[
+y=\mathcal C_\Sigma(x).
+\]
+
+Indeed,
+
+\[
+1+y=\frac{2x}{x+1},
+\qquad
+1-y=\frac{2}{x+1}.
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-native-odd-logarithm-series}{%
+\section{3. The native odd logarithm series}\label{the-native-odd-logarithm-series}}
+
+For radial \texttt{y} with \texttt{\textbar{}y\textbar{}\_Sigma\textless{}1}, define finite odd polynomials
+
+\[
+A_{\Sigma,N}(y)
+=
+2\sum_{m=0}^{N}
+\frac{y^{2m+1}}{2m+1}.
+\]
+
+\hypertarget{lemma-3.1-native-convergence}{%
+\subsection{Lemma 3.1 --- Native convergence}\label{lemma-3.1-native-convergence}}
+
+For every \texttt{\textbar{}y\textbar{}\_Sigma\textless{}1}, the sequence \texttt{A\_\{Sigma,N\}(y)} is Cauchy in
+\texttt{R\_Sigma}.
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Choose a radial rational \texttt{q} with
+
+\[
+|y|_\Sigma<q<1.
+\]
+
+For \texttt{M\textgreater{}N},
+
+\[
+\begin{aligned}
+|A_{\Sigma,M}(y)-A_{\Sigma,N}(y)|_\Sigma
+&\le
+2\sum_{m=N+1}^{M}
+\frac{|y|_\Sigma^{2m+1}}{2m+1}\\
+&\le
+2\sum_{m=N+1}^{\infty}q^{2m+1}\\
+&=
+\frac{2q^{2N+3}}{1-q^2}.
+\end{aligned}
+\]
+
+The last expression tends to zero by the native geometric-tail identity. ∎
+
+\hypertarget{definition-3.2-native-odd-logarithm-coordinate}{%
+\subsection{Definition 3.2 --- Native odd logarithm coordinate}\label{definition-3.2-native-odd-logarithm-coordinate}}
+
+For \texttt{\textbar{}y\textbar{}\_Sigma\textless{}1}, define
+
+\[
+\boxed{
+\operatorname{Atanh}_\Sigma(y)
+=
+\sum_{m=0}^{\infty}
+\frac{y^{2m+1}}{2m+1},
+}
+\]
+
+and
+
+\[
+\boxed{
+A_\Sigma(y)=2\operatorname{Atanh}_\Sigma(y).
+}
+\]
+
+The name records the later classical shadow only. The definition is the native
+odd power series above.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{difference-rules-used-below}{%
+\section{4. Difference rules used below}\label{difference-rules-used-below}}
+
+All rules in this section are derived from the cut-complex difference quotient.
+They are not imported as real-calculus theorems.
+
+\hypertarget{lemma-4.1-product-rule}{%
+\subsection{Lemma 4.1 --- Product rule}\label{lemma-4.1-product-rule}}
+
+If native derivatives of \texttt{f} and \texttt{g} exist at \texttt{y}, then
+
+\[
+\partial_\Sigma(fg)(y)
+=
+(\partial_\Sigma f)(y)g(y)
++f(y)(\partial_\Sigma g)(y).
+\]
+
+\hypertarget{proof-2}{%
+\subsection{Proof}\label{proof-2}}
+
+Write
+
+\[
+\frac{f(y+h)g(y+h)-f(y)g(y)}{h}
+=
+\frac{f(y+h)-f(y)}{h}g(y+h)
++f(y)\frac{g(y+h)-g(y)}{h}.
+\]
+
+Pass to the native limit. ∎
+
+\hypertarget{lemma-4.2-inverse-rule}{%
+\subsection{Lemma 4.2 --- Inverse rule}\label{lemma-4.2-inverse-rule}}
+
+If \texttt{g(y)} is nonzero and native differentiable, then
+
+\[
+\partial_\Sigma(g^{-1})(y)
+=-g(y)^{-2}(\partial_\Sigma g)(y).
+\]
+
+\hypertarget{proof-3}{%
+\subsection{Proof}\label{proof-3}}
+
+Apply the product rule to \texttt{g\ g\^{}\{-1\}=1}. ∎
+
+\hypertarget{lemma-4.3-analytic-chain-rule}{%
+\subsection{Lemma 4.3 --- Analytic chain rule}\label{lemma-4.3-analytic-chain-rule}}
+
+Let \texttt{F} be represented by a native convergent power series on a neighbourhood
+of \texttt{g(y)}, and let \texttt{g} be native differentiable. Then
+
+\[
+\partial_\Sigma(F\circ g)(y)
+=F'(g(y))\partial_\Sigma g(y).
+\]
+
+\hypertarget{proof-4}{%
+\subsection{Proof}\label{proof-4}}
+
+The rule holds for every polynomial by induction using the product rule. On a
+strictly smaller native neighbourhood, the power series and its formal
+derivative have uniformly Cauchy tails. Pass the polynomial identity to the
+native limit. ∎
+
+\hypertarget{lemma-4.4-derivative-of-the-odd-series}{%
+\subsection{Lemma 4.4 --- Derivative of the odd series}\label{lemma-4.4-derivative-of-the-odd-series}}
+
+For \texttt{\textbar{}y\textbar{}\_Sigma\textless{}1},
+
+\[
+\boxed{
+\partial_\Sigma A_\Sigma(y)
+=
+\frac{2}{1-y^2}.
+}
+\]
+
+\hypertarget{proof-5}{%
+\subsection{Proof}\label{proof-5}}
+
+On every closed native subinterval \texttt{\textbar{}y\textbar{}\_Sigma\textless{}=q\textless{}1}, termwise differentiation
+is justified by the geometric majorant. Thus
+
+\[
+\partial_\Sigma A_\Sigma(y)
+=
+2\sum_{m=0}^{\infty}y^{2m}
+=
+\frac{2}{1-y^2}.
+\]
+
+The last identity follows from the finite geometric identity followed by native
+completion. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{inversion-of-the-native-exponential}{%
+\section{5. Inversion of the native exponential}\label{inversion-of-the-native-exponential}}
+
+For \texttt{\textbar{}y\textbar{}\_Sigma\textless{}1}, define
+
+\[
+G_\Sigma(y)
+=
+\operatorname{Exp}_\Sigma(A_\Sigma(y))
+\frac{1-y}{1+y}.
+\]
+
+The factors \texttt{1-y} and \texttt{1+y} are positive and therefore invertible.
+
+\hypertarget{theorem-5.1-native-cayleyexponential-identity}{%
+\subsection{Theorem 5.1 --- Native Cayley--exponential identity}\label{theorem-5.1-native-cayleyexponential-identity}}
+
+For every radial \texttt{\textbar{}y\textbar{}\_Sigma\textless{}1},
+
+\[
+\boxed{
+\operatorname{Exp}_\Sigma(A_\Sigma(y))
+=
+\frac{1+y}{1-y}.
+}
+\]
+
+\hypertarget{proof-6}{%
+\subsection{Proof}\label{proof-6}}
+
+Using the native Euler equation, the chain rule, product rule and inverse rule,
+
+\[
+\begin{aligned}
+\partial_\Sigma G_\Sigma(y)
+&=
+G_\Sigma(y)
+\left(
+\frac{2}{1-y^2}
+-
+\frac{1}{1-y}
+-
+\frac{1}{1+y}
+\right)\\
+&=0.
+\end{aligned}
+\]
+
+The expression in parentheses is zero after passage to the common denominator
+\texttt{1-y\^{}2}.
+
+It remains to justify that a native analytic function with zero derivative on
+the interval \texttt{(-1,1)\_Sigma} is constant. Around every point it has a convergent
+power series. Vanishing of the derivative forces every positive-degree
+coefficient to vanish. Overlapping neighbourhoods propagate the same constant
+through the connected ordered interval.
+
+At \texttt{y=0},
+
+\[
+A_\Sigma(0)=0,
+\qquad
+G_\Sigma(0)=1.
+\]
+
+Hence \texttt{G\_Sigma(y)=1}, proving the identity. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{full-positive-logarithm}{%
+\section{6. Full positive logarithm}\label{full-positive-logarithm}}
+
+\hypertarget{definition-6.1-native-positive-logarithm}{%
+\subsection{Definition 6.1 --- Native positive logarithm}\label{definition-6.1-native-positive-logarithm}}
+
+For every radial \texttt{x\textgreater{}0}, define
+
+\[
+\boxed{
+\operatorname{Log}_\Sigma^+(x)
+=
+2\sum_{m=0}^{\infty}
+\frac{1}{2m+1}
+\left(
+\frac{x-1}{x+1}
+\right)^{2m+1}.
+}
+\]
+
+The series is lawful by Lemma 2.1 and Lemma 3.1.
+
+\hypertarget{theorem-6.2-exact-inverse-identities}{%
+\subsection{Theorem 6.2 --- Exact inverse identities}\label{theorem-6.2-exact-inverse-identities}}
+
+For every radial \texttt{x\textgreater{}0},
+
+\[
+\boxed{
+\operatorname{Exp}_\Sigma
+(\operatorname{Log}_\Sigma^+(x))
+=x.
+}
+\]
+
+For every radial \texttt{u},
+
+\[
+\boxed{
+\operatorname{Log}_\Sigma^+
+(\operatorname{Exp}_\Sigma(u))
+=u.
+}
+\]
+
+\hypertarget{proof-7}{%
+\subsection{Proof}\label{proof-7}}
+
+Put
+
+\[
+y=\frac{x-1}{x+1}.
+\]
+
+Theorem 5.1 gives
+
+\[
+\operatorname{Exp}_\Sigma
+(\operatorname{Log}_\Sigma^+(x))
+=
+\frac{1+y}{1-y}
+=x.
+\]
+
+For the second identity, apply the first identity with
+\texttt{x=Exp\_Sigma(u)}. Both \texttt{u} and \texttt{Log\_Sigma\^{}+(Exp\_Sigma(u))} are radial and have
+the same exponential. Strict radial injectivity of \texttt{Exp\_Sigma} gives equality.
+∎
+
+\hypertarget{corollary-6.3-full-positive-euler-orbit}{%
+\subsection{Corollary 6.3 --- Full positive Euler orbit}\label{corollary-6.3-full-positive-euler-orbit}}
+
+\[
+\boxed{
+\mathbb P_\Sigma
+=
+\mathbb R_{\Sigma,>0}.
+}
+\]
+
+Thus the logarithm introduced in F00-F on \texttt{P\_Sigma} extends to the whole
+positive radial cone and agrees with \texttt{Log\_Sigma\^{}+}.
+
+From now on write simply
+
+\[
+\operatorname{Log}_\Sigma(x)
+\]
+
+for \texttt{x\textgreater{}0}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{logarithmic-laws}{%
+\section{7. Logarithmic laws}\label{logarithmic-laws}}
+
+\hypertarget{theorem-7.1-multiplicative-to-additive-law}{%
+\subsection{Theorem 7.1 --- Multiplicative-to-additive law}\label{theorem-7.1-multiplicative-to-additive-law}}
+
+For radial \texttt{x,y\textgreater{}0},
+
+\[
+\boxed{
+\operatorname{Log}_\Sigma(xy)
+=
+\operatorname{Log}_\Sigma(x)
++
+\operatorname{Log}_\Sigma(y).
+}
+\]
+
+\hypertarget{proof-8}{%
+\subsection{Proof}\label{proof-8}}
+
+The exponential addition law gives
+
+\[
+\operatorname{Exp}_\Sigma
+(\operatorname{Log}_\Sigma(x)+
+ \operatorname{Log}_\Sigma(y))
+=xy.
+\]
+
+Apply the radial inverse identity. ∎
+
+\hypertarget{corollary-7.2}{%
+\subsection{Corollary 7.2}\label{corollary-7.2}}
+
+For radial \texttt{x\textgreater{}0} and integers \texttt{n},
+
+\[
+\operatorname{Log}_\Sigma(x^n)
+=n\operatorname{Log}_\Sigma(x).
+\]
+
+Also
+
+\[
+\operatorname{Log}_\Sigma(1)=0,
+\qquad
+\operatorname{Log}_\Sigma(x^{-1})
+=-\operatorname{Log}_\Sigma(x).
+\]
+
+\hypertarget{theorem-7.3-native-derivative}{%
+\subsection{Theorem 7.3 --- Native derivative}\label{theorem-7.3-native-derivative}}
+
+For radial \texttt{x\textgreater{}0},
+
+\[
+\boxed{
+\partial_\Sigma\operatorname{Log}_\Sigma(x)
+=x^{-1}.
+}
+\]
+
+\hypertarget{proof-9}{%
+\subsection{Proof}\label{proof-9}}
+
+Put
+
+\[
+y(x)=\frac{x-1}{x+1}.
+\]
+
+The quotient rule gives
+
+\[
+y'(x)=\frac{2}{(x+1)^2}.
+\]
+
+Moreover,
+
+\[
+1-y(x)^2
+=
+\frac{4x}{(x+1)^2}.
+\]
+
+Apply Lemma 4.4 and the chain rule:
+
+\[
+\partial_\Sigma\operatorname{Log}_\Sigma(x)
+=
+\frac{2}{1-y^2}
+\frac{2}{(x+1)^2}
+=
+\frac1x.
+\]
+
+∎
+
+\hypertarget{theorem-7.4-strict-order-preservation}{%
+\subsection{Theorem 7.4 --- Strict order preservation}\label{theorem-7.4-strict-order-preservation}}
+
+For radial \texttt{x,y\textgreater{}0},
+
+\[
+x<y
+\quad\Longleftrightarrow\quad
+\operatorname{Log}_\Sigma(x)
+<
+\operatorname{Log}_\Sigma(y).
+\]
+
+\hypertarget{proof-10}{%
+\subsection{Proof}\label{proof-10}}
+
+This follows because \texttt{Log\_Sigma} is the inverse of the strictly increasing
+radial exponential. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-complex-powers}{%
+\section{8. Native complex powers}\label{native-complex-powers}}
+
+\hypertarget{definition-8.1-native-power}{%
+\subsection{Definition 8.1 --- Native power}\label{definition-8.1-native-power}}
+
+For radial \texttt{x\textgreater{}0} and \texttt{z\ in\ C\_Sigma}, define
+
+\[
+\boxed{
+x^z_\Sigma
+=
+\operatorname{Exp}_\Sigma
+(z\operatorname{Log}_\Sigma(x)).
+}
+\]
+
+The subscript is omitted when no confusion is possible.
+
+\hypertarget{theorem-8.2-exponent-laws}{%
+\subsection{Theorem 8.2 --- Exponent laws}\label{theorem-8.2-exponent-laws}}
+
+For radial \texttt{x,y\textgreater{}0} and \texttt{z,w\ in\ C\_Sigma},
+
+\[
+\boxed{x^{z+w}=x^zx^w,}
+\]
+
+\[
+\boxed{(xy)^z=x^zy^z,}
+\]
+
+\[
+\boxed{(x^z)^\dagger=x^{z^\dagger},}
+\]
+
+and for every integer \texttt{n},
+
+\[
+\boxed{x^n=x\cdots x}
+\]
+
+with the ordinary repeated-product interpretation.
+
+\hypertarget{proof-11}{%
+\subsection{Proof}\label{proof-11}}
+
+Use the addition law for \texttt{Exp\_Sigma}, the logarithmic product law, dagger
+covariance, and \texttt{Log\_Sigma(x\^{}n)=nLog\_Sigma(x)}. ∎
+
+\hypertarget{theorem-8.3-exponent-derivative}{%
+\subsection{Theorem 8.3 --- Exponent derivative}\label{theorem-8.3-exponent-derivative}}
+
+For fixed \texttt{x\textgreater{}0},
+
+\[
+\boxed{
+\partial_\Sigma^z x^z
+=
+\operatorname{Log}_\Sigma(x)x^z.
+}
+\]
+
+For fixed \texttt{z}, differentiation in the positive radial variable gives
+
+\[
+\boxed{
+\partial_\Sigma^x x^z
+=z x^{z-1}.
+}
+\]
+
+\hypertarget{proof-12}{%
+\subsection{Proof}\label{proof-12}}
+
+Apply the chain rule to the defining exponential and use
+\texttt{partial\ Log\_Sigma(x)=1/x}. ∎
+
+\hypertarget{corollary-8.4-native-modulus-law}{%
+\subsection{Corollary 8.4 --- Native modulus law}\label{corollary-8.4-native-modulus-law}}
+
+Write
+
+\[
+z=\sigma+\iota_\Sigma\tau.
+\]
+
+Then
+
+\[
+(x^z)^\dagger x^z
+=x^{2\sigma}.
+\]
+
+Thus the radial magnitude of \texttt{x\^{}\{-z\}} is controlled entirely by
+\texttt{x\^{}\{-sigma\}}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{positive-integers-and-prime-logarithms}{%
+\section{9. Positive integers and prime logarithms}\label{positive-integers-and-prime-logarithms}}
+
+The natural number \texttt{n} is the radial scalar obtained by adding the unit \texttt{n}
+times. Every \texttt{n\textgreater{}=1} is positive, so
+
+\[
+\operatorname{Log}_\Sigma(n)
+\]
+
+and
+
+\[
+n^{-s}_\Sigma
+=
+\operatorname{Exp}_\Sigma
+(-s\operatorname{Log}_\Sigma(n))
+\]
+
+are now native objects for every \texttt{s\ in\ C\_Sigma}.
+
+For positive integers \texttt{m,n},
+
+\[
+\operatorname{Log}_\Sigma(mn)
+=
+\operatorname{Log}_\Sigma(m)
++
+\operatorname{Log}_\Sigma(n),
+\]
+
+and therefore
+
+\[
+(mn)^{-s}=m^{-s}n^{-s}.
+\]
+
+This is the arithmetic multiplicativity required for the native Dirichlet zeta
+construction.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{coordinate-shadow}{%
+\section{10. Coordinate shadow}\label{coordinate-shadow}}
+
+Under a later scalar chart
+
+\[
+\kappa:\mathbb C_\Sigma\to\mathbb C
+\]
+
+that preserves cut-complex addition, multiplication, dagger, order and the
+factorial exponential,
+
+\[
+\kappa(\operatorname{Exp}_\Sigma z)=e^{\kappa(z)}.
+\]
+
+The inverse identity forces
+
+\[
+\kappa(\operatorname{Log}_\Sigma x)=\log\kappa(x)
+\]
+
+for positive radial \texttt{x}, and
+
+\[
+\kappa(x^z_\Sigma)=
+\kappa(x)^{\kappa(z)}
+\]
+
+with the positive-real branch.
+
+These are coordinate consequences, not definitions.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{11. Claim boundary}\label{claim-boundary}}
+
+Proved here:
+
+\begin{verbatim}
+Cayley contraction for every positive radial scalar;
+convergence of the native odd logarithm series;
+native product, inverse and analytic chain rules used in the proof;
+Exp_Sigma(2 Atanh_Sigma y)=(1+y)/(1-y);
+Log_Sigma on the entire positive radial cone;
+Exp_Sigma and Log_Sigma are inverse order isomorphisms;
+P_Sigma=R_{Sigma,>0};
+Log_Sigma(xy)=Log_Sigma(x)+Log_Sigma(y);
+partial Log_Sigma(x)=1/x;
+native complex powers x^z;
+exponent laws and modulus law;
+native logarithms and powers of every positive integer.
+\end{verbatim}
+
+Not proved here:
+
+\begin{verbatim}
+unique factorization of native natural numbers;
+Dirichlet-series convergence;
+Euler product;
+analytic continuation;
+Gamma or theta functions;
+Poisson summation;
+completed zeta functional equation;
+explicit formula;
+Weil criterion;
+K0>=0;
+RH.
+\end{verbatim}
+
+No classical logarithm or inverse-function theorem is consumed. No separate
+certificate is created at this algebraic-analytic foundation stage. The later
+native zeta and completed-zeta promotion audits will consume the load-bearing
+identities proved here.
+
+\begin{flushright}\small\texttt{RKF/theorems/foundation/F00G\_NATIVE\_LOGARITHM\_AND\_POWERS.md}\end{flushright}

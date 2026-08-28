@@ -1,0 +1,147 @@
+% source: RKF/theorum/thermodynamics/07_thermo_weil_provenance_five_source_schur.md
+\hypertarget{thermo-weil-provenance-five-source-and-boundary-schur-theorem}{%
+\chapter{Thermo-Weil Provenance, Five-Source, and Boundary-Schur Theorem}\label{thermo-weil-provenance-five-source-and-boundary-schur-theorem}}
+
+\hypertarget{provenance-contract}{%
+\section{1. Provenance contract}\label{provenance-contract}}
+
+Let
+
+\[
+C_{\mathrm{th}}:\mathbb C^5\to\mathbb C^4
+\]
+
+be a proposed boundary-plus-tetrad thermodynamic coupling and let
+
+\[
+R_{\mathrm W}:\mathbb C^5\to\mathbb C^4
+\]
+
+be the finite Weil response synthesis.
+
+The statement
+
+\[
+C_{\mathrm{th}}^*H_{\mathrm{th}}C_{\mathrm{th}}
+=R_{\mathrm W}^*R_{\mathrm W}
+\]
+
+may be promoted from finite matching to a source theorem only when the following are independently certified:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  physical thermodynamic source lineage;
+\item
+  normalization and units;
+\item
+  positive response metric \(H_{\mathrm{th}}>0\);
+\item
+  event-resolved five-source assignment;
+\item
+  native source-chain identification;
+\item
+  covariance under admissible coordinate changes.
+\end{enumerate}
+
+\hypertarget{theorem-1.1-finite-five-source-gram-equivalence}{%
+\section{Theorem 1.1 (finite five-source Gram equivalence)}\label{theorem-1.1-finite-five-source-gram-equivalence}}
+
+Put
+
+\[
+G_{\mathrm{th}}=H_{\mathrm{th}}^{1/2}C_{\mathrm{th}}.
+\]
+
+If
+
+\[
+G_{\mathrm{th}}^*G_{\mathrm{th}}=R_{\mathrm W}^*R_{\mathrm W},
+\]
+
+then there exists a partial isometry \(U\) from the final range of \(R_{\mathrm W}\) to the final range of \(G_{\mathrm{th}}\) such that
+
+\[
+\boxed{G_{\mathrm{th}}=UR_{\mathrm W}.}
+\]
+
+If both maps have full row rank four, \(U\in U(4)\).
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+Two finite synthesis maps with the same Gram define the same seminorm on the common coefficient space. Quotienting by the shared kernel gives an isometry between their ranges, which extends to the stated partial isometry. Full row rank makes the final ranges equal to \(\mathbb C^4\), so the partial isometry is unitary. QED.
+
+This theorem proves finite unitary equivalence. The provenance contract determines whether that equivalence represents the same physical source.
+
+\hypertarget{boundary-schur-realization}{%
+\section{2. Boundary Schur realization}\label{boundary-schur-realization}}
+
+Let the total finite cost matrix be written as
+
+\[
+\mathcal Q=
+\begin{pmatrix}
+A&B\\
+B^*&D
+\end{pmatrix},
+\qquad D>0.
+\]
+
+Define the boundary Schur complement
+
+\[
+\boxed{S_\partial=A-BD^{-1}B^*.}
+\]
+
+\hypertarget{theorem-2.1-thermo-weil-boundary-schur-theorem}{%
+\section{Theorem 2.1 (thermo-Weil boundary Schur theorem)}\label{theorem-2.1-thermo-weil-boundary-schur-theorem}}
+
+The block matrix \(\mathcal Q\) is positive semidefinite if and only if
+
+\[
+D>0
+\quad\text{and}\quad
+S_\partial\ge0.
+\]
+
+Moreover,
+
+\[
+\operatorname{inertia}(\mathcal Q)
+=
+\operatorname{inertia}(D)
++
+\operatorname{inertia}(S_\partial).
+\]
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Use the exact congruence
+
+\[
+\begin{pmatrix}I&-BD^{-1}\\0&I\end{pmatrix}
+\mathcal Q
+\begin{pmatrix}I&0\\-D^{-1}B^*&I\end{pmatrix}
+=
+\begin{pmatrix}S_\partial&0\\0&D\end{pmatrix}.
+\]
+
+Congruence preserves inertia. QED.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+PROVENANCE INPUT CONTRACT                    DECLARED
+FINITE SAME-GRAM PARTIAL ISOMETRY            PROVED
+FULL-RANK U(4) INTERTWINER                   PROVED
+BOUNDARY SCHUR POSITIVITY                    PROVED
+SCHUR INERTIA SPLITTING                      PROVED
+PHYSICAL THERMO / WEIL SOURCE IDENTITY       OPEN WITHOUT PROVENANCE
+COFINAL CONTINUUM LIMIT                      OPEN
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/thermodynamics/07\_thermo\_weil\_provenance\_five\_source\_schur.md}\end{flushright}

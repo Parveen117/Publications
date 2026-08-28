@@ -1,0 +1,586 @@
+% source: RKF/theorum/46_first_visible_jet_seam_quotient_theorem.md
+\hypertarget{first-visible-jet-seam-quotient-closure-theorem}{%
+\chapter{First-Visible-Jet Seam Quotient Closure Theorem}\label{first-visible-jet-seam-quotient-closure-theorem}}
+
+\hypertarget{purpose-and-claim-boundary}{%
+\section{1. Purpose and claim boundary}\label{purpose-and-claim-boundary}}
+
+This theorem gives a rigorous finite-jet resolution of a class of apparent
+\texttt{0/0} indeterminate forms. It does \textbf{not} redefine ordinary algebraic division
+by zero. The raw expressions
+
+\begin{verbatim}
+1/0
+0/0
+\end{verbatim}
+
+remain invalid as algebraic quotients.
+
+The object defined here is instead a \textbf{seam quotient of two functions} along a
+declared one-parameter seam. Its value is determined, when possible, by the
+first nonvanishing relative jet together with explicit remainder control.
+
+The construction consumes the current capstone chain:
+
+\begin{verbatim}
+Theorem 42  typed derivative / response tower
+Theorem 43  first-visible jet and explicit remainder
+Theorem 44  body-tail transfer under refinement
+Theorem 45  arithmetic radius + analytic tail enclosure
+\end{verbatim}
+
+The motivating Dot-in-Circle seam principle is therefore narrowed to a theorem:
+indeterminate endpoint values may be resolved only when the declared seam
+carries enough nonvanishing local structure to determine a unique quotient.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{declared-seam-and-scalar-carrier}{%
+\section{2. Declared seam and scalar carrier}\label{declared-seam-and-scalar-carrier}}
+
+Let \texttt{K} be either \texttt{R} or \texttt{C}. Let
+
+\[
+S:(-\varepsilon,\varepsilon)\to X
+\]
+
+be a declared local seam with distinguished endpoint \texttt{S(0)}. Let
+
+\[
+A,B:(-\varepsilon,\varepsilon)\to K
+\]
+
+be scalar observables evaluated along this seam. We write simply \texttt{A(t)} and
+\texttt{B(t)}.
+
+Assume
+
+\[
+A(0)=B(0)=0.
+\tag{2.1}
+\]
+
+For an integer \texttt{N\ \textgreater{}=\ 0}, suppose the two observables admit finite jet
+expansions
+
+\[
+A(t)=\sum_{k=0}^{N} a_k t^k + R_A^{(N)}(t),
+\tag{2.2}
+\]
+
+\[
+B(t)=\sum_{k=0}^{N} b_k t^k + R_B^{(N)}(t),
+\tag{2.3}
+\]
+
+where the coefficient normalization may absorb factorials. In a derivative
+normalization one has \texttt{a\_k=A\^{}\{(k)\}(0)/k!} and similarly for \texttt{b\_k}.
+
+Define the finite first-visible orders
+
+\[
+r_A=\min\{k\le N:a_k\ne0\},
+\qquad
+r_B=\min\{k\le N:b_k\ne0\},
+\tag{2.4}
+\]
+
+whenever the sets are nonempty.
+
+If every coefficient through the available depth vanishes, the corresponding
+finite first-visible order is \textbf{unresolved}, not infinity by decree.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{first-visible-jet-classification}{%
+\section{3. First-visible-jet classification}\label{first-visible-jet-classification}}
+
+\hypertarget{theorem-3.1-finite-first-visible-jet-quotient-classification}{%
+\subsection{Theorem 3.1 (Finite first-visible-jet quotient classification)}\label{theorem-3.1-finite-first-visible-jet-quotient-classification}}
+
+Assume finite first-visible orders \texttt{r\_A} and \texttt{r\_B} exist and that the remainders
+are little-o at the corresponding leading orders:
+
+\[
+R_A^{(N)}(t)=o(t^{r_A}),
+\qquad
+R_B^{(N)}(t)=o(t^{r_B}).
+\tag{3.1}
+\]
+
+Then along the declared seam:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  if \texttt{r\_A\ \textgreater{}\ r\_B},
+\end{enumerate}
+
+\[
+\boxed{\lim_{t\to0}\frac{A(t)}{B(t)}=0;}
+\tag{3.2}
+\]
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  if \texttt{r\_A\ =\ r\_B\ =\ r},
+\end{enumerate}
+
+\[
+\boxed{\lim_{t\to0}\frac{A(t)}{B(t)}=\frac{a_r}{b_r};}
+\tag{3.3}
+\]
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  if \texttt{r\_A\ \textless{}\ r\_B}, then
+\end{enumerate}
+
+\[
+\boxed{\left|\frac{A(t)}{B(t)}\right|\to\infty,}
+\tag{3.4}
+\]
+
+so no finite seam quotient exists.
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+Factor the leading powers:
+
+\[
+A(t)=t^{r_A}(a_{r_A}+o(1)),
+\qquad
+B(t)=t^{r_B}(b_{r_B}+o(1)).
+\]
+
+Since \texttt{b\_\{r\_B\}\ !=\ 0}, the second parenthesis is nonzero for sufficiently small
+punctured \texttt{t}. Hence
+
+\[
+\frac{A(t)}{B(t)}
+=t^{r_A-r_B}
+\frac{a_{r_A}+o(1)}{b_{r_B}+o(1)}.
+\]
+
+The three cases follow from the sign of \texttt{r\_A-r\_B}. \texttt{square}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{dot-in-circle-seam-quotient}{%
+\section{4. Dot-in-Circle seam quotient}\label{dot-in-circle-seam-quotient}}
+
+\hypertarget{definition-4.1-certified-dot-in-circle-quotient}{%
+\subsection{Definition 4.1 (Certified Dot-in-Circle quotient)}\label{definition-4.1-certified-dot-in-circle-quotient}}
+
+When Theorem 3.1 gives a finite limit, define
+
+\[
+\boxed{A\odot_S B:=\lim_{t\to0}\frac{A(t)}{B(t)}.}
+\tag{4.1}
+\]
+
+The subscript \texttt{S} is part of the type. Different seams need not produce the same
+value unless a seam-invariance theorem is separately proved.
+
+In the equal-order case,
+
+\[
+\boxed{A\odot_S B=\frac{a_r}{b_r}.}
+\tag{4.2}
+\]
+
+This is not the algebraic statement \texttt{0/0=a\_r/b\_r}. It is the limit statement
+that two vanishing observables retain a first nonvanishing relative jet along a
+declared seam.
+
+\hypertarget{example-4.2}{%
+\subsection{Example 4.2}\label{example-4.2}}
+
+Let
+
+\[
+A(t)=t\cos\alpha,
+\qquad
+B(t)=t\sin\alpha.
+\]
+
+If \texttt{sin(alpha)\ !=\ 0}, then \texttt{r\_A=r\_B=1} and
+
+\[
+\boxed{A\odot_S B=\cot\alpha.}
+\tag{4.3}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{regular-seam-reparameterization-invariance}{%
+\section{5. Regular seam-reparameterization invariance}\label{regular-seam-reparameterization-invariance}}
+
+A seam may be described by more than one regular local parameter. Let
+
+\[
+t=\phi(s),
+\qquad
+\phi(0)=0,
+\qquad
+\phi'(0)=c\ne0.
+\tag{5.1}
+\]
+
+\hypertarget{theorem-5.1-regular-parameter-invariance}{%
+\subsection{Theorem 5.1 (Regular parameter invariance)}\label{theorem-5.1-regular-parameter-invariance}}
+
+Suppose \texttt{A} and \texttt{B} have equal first-visible order \texttt{r}. Under the regular
+reparameterization (5.1), their leading coefficients become
+
+\[
+\widetilde a_r=a_r c^r,
+\qquad
+\widetilde b_r=b_r c^r.
+\tag{5.2}
+\]
+
+Therefore
+
+\[
+\boxed{\frac{\widetilde a_r}{\widetilde b_r}=\frac{a_r}{b_r}.}
+\tag{5.3}
+\]
+
+The finite Dot-in-Circle seam quotient is invariant under regular local
+reparameterization of the same seam.
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+Since \texttt{phi(s)=cs+o(s)}, one has
+
+\[
+A(\phi(s))=a_r c^r s^r+o(s^r),
+\qquad
+B(\phi(s))=b_r c^r s^r+o(s^r).
+\]
+
+Cancel the common nonzero factor \texttt{c\^{}r}. \texttt{square}
+
+The theorem does not identify genuinely different geometric paths. It only
+removes arbitrary regular changes of local seam coordinate.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{quantitative-denominator-separation}{%
+\section{6. Quantitative denominator separation}\label{quantitative-denominator-separation}}
+
+The limit theorem becomes proof-bearing numerically only after the reduced
+denominator is separated from zero.
+
+Assume the common first-visible order is \texttt{r} and define the reduced functions
+
+\[
+\widehat A(t)=\frac{A(t)}{t^r},
+\qquad
+\widehat B(t)=\frac{B(t)}{t^r}
+\quad(t\ne0).
+\tag{6.1}
+\]
+
+Suppose on a certified punctured seam neighborhood,
+
+\[
+|\widehat A(t)-a|\le\delta_A,
+\qquad
+|\widehat B(t)-b|\le\delta_B,
+\tag{6.2}
+\]
+
+with
+
+\[
+\boxed{|b|>\delta_B.}
+\tag{6.3}
+\]
+
+\hypertarget{theorem-6.1-certified-quotient-enclosure}{%
+\subsection{Theorem 6.1 (Certified quotient enclosure)}\label{theorem-6.1-certified-quotient-enclosure}}
+
+Under (6.2)--(6.3), \texttt{widehat\ B(t)} is nonzero throughout the certified
+neighborhood and
+
+\[
+\boxed{
+\left|
+\frac{A(t)}{B(t)}-\frac{a}{b}
+\right|
+\le
+\frac{|b|\delta_A+|a|\delta_B}
+{|b|\,(|b|-\delta_B)}.
+}
+\tag{6.4}
+\]
+
+\hypertarget{proof-2}{%
+\subsubsection{Proof}\label{proof-2}}
+
+Write
+
+\[
+\widehat A=a+e_A,
+\qquad
+\widehat B=b+e_B,
+\]
+
+with \texttt{\textbar{}e\_A\textbar{}\textless{}=delta\_A}, \texttt{\textbar{}e\_B\textbar{}\textless{}=delta\_B}. Condition (6.3) gives
+
+\[
+|b+e_B|\ge |b|-\delta_B>0.
+\]
+
+Then
+
+\[
+\frac{a+e_A}{b+e_B}-\frac ab
+=\frac{b e_A-a e_B}{b(b+e_B)}.
+\]
+
+Taking absolute values and applying the triangle inequality gives (6.4).
+\texttt{square}
+
+The quantity
+
+\[
+\boxed{
+\rho_Q=
+\frac{|b|\delta_A+|a|\delta_B}
+{|b|\,(|b|-\delta_B)}
+}
+\tag{6.5}
+\]
+
+is the outward quotient radius. It may be consumed by Theorem 45 as a numerical
+arithmetic/analytic enclosure only when \texttt{delta\_A} and \texttt{delta\_B} themselves are
+proved bounds.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{connection-to-theorems-4245}{%
+\section{7. Connection to Theorems 42--45}\label{connection-to-theorems-4245}}
+
+The capstone chain supplies the data needed by the quotient theorem.
+
+\hypertarget{theorem-42-typed-tower}{%
+\subsection{7.1 Theorem 42: typed tower}\label{theorem-42-typed-tower}}
+
+The derivative/response tower provides the candidate coefficients
+
+\[
+a_k,\ b_k.
+\]
+
+The first nonzero compatible layer determines the first-visible order.
+
+\hypertarget{theorem-43-first-visibility-and-remainder}{%
+\subsection{7.2 Theorem 43: first visibility and remainder}\label{theorem-43-first-visibility-and-remainder}}
+
+The nested observer tower identifies the first order at which the target ceases
+to be blind. Its explicit finite-jet remainder gives a lawful route to bounds
+of the form \texttt{delta\_A}, \texttt{delta\_B}.
+
+\hypertarget{theorem-44-no-discarded-tail}{%
+\subsection{7.3 Theorem 44: no discarded tail}\label{theorem-44-no-discarded-tail}}
+
+Refinement transfers one term from tail to recognized body while preserving
+
+\[
+M_r+T_r=F.
+\]
+
+Thus a quotient certificate may not erase higher-order uncertainty after the
+first visible coefficient is found.
+
+\hypertarget{theorem-45-arithmetic-enclosure}{%
+\subsection{7.4 Theorem 45: arithmetic enclosure}\label{theorem-45-arithmetic-enclosure}}
+
+Exact rational or finite-decimal coefficients have zero arithmetic radius.
+Approximate coefficients require validated interval/ball enclosures. The
+quotient radius (6.5) and any remaining analytic tail are carried outward before
+promotion.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{flat-function-boundary}{%
+\section{8. Flat-function boundary}\label{flat-function-boundary}}
+
+Finite jets do not resolve every \texttt{0/0} limit.
+
+For example,
+
+\[
+A(t)=e^{-1/t^2},
+\qquad
+B(t)=e^{-1/t^2}
+\quad(t\ne0),
+\]
+
+extended by zero at \texttt{t=0}, have all derivatives zero at the endpoint but
+
+\[
+\frac{A(t)}{B(t)}=1
+\]
+
+on the punctured seam.
+
+Therefore:
+
+\[
+\boxed{
+\text{all available jets zero}
+\not\Rightarrow
+\text{quotient absent};
+}
+\tag{8.1}
+\]
+
+it means only that the finite-jet theorem has insufficient information.
+
+The fail-closed status is
+
+\begin{verbatim}
+INCOMPLETE_FLAT_OR_UNRESOLVED
+\end{verbatim}
+
+until a different admitted seam invariant or non-jet asymptotic theorem closes
+the case.
+
+This boundary is essential. Declaring all flat \texttt{0/0} forms equal would simply
+replace indeterminacy with invention.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{raw-division-by-zero-boundary}{%
+\section{9. Raw division-by-zero boundary}\label{raw-division-by-zero-boundary}}
+
+The theorem distinguishes the following typed cases:
+
+\begin{verbatim}
+1 / 0 as algebraic scalar                     INVALID
+0 / 0 as algebraic scalar                     INVALID
+A(t)/B(t), no declared seam                    INVALID_CONTRACT
+seam declared, no finite denominator jet       INCOMPLETE_FLAT_OR_UNRESOLVED
+r_A > r_B                                      FINITE_QUOTIENT_ZERO
+r_A = r_B and b_r != 0                         FINITE_SEAM_QUOTIENT
+r_A < r_B                                      DIVERGENT_NO_FINITE_QUOTIENT
+reduced denominator not separated from zero    INCOMPLETE_DENOMINATOR_SEPARATION
+\end{verbatim}
+
+No branch converts \texttt{1/0} into a finite certified number.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{optional-phase-compatibility}{%
+\section{10. Optional phase compatibility}\label{optional-phase-compatibility}}
+
+The Bindu-Lopa source motivates a phase lift on the unit circle. Such a phase
+layer may be consumed only \textbf{after} the scalar seam quotient has been resolved
+or enclosed.
+
+Suppose a separately admitted phase factor satisfies
+
+\[
+\Phi(t)\to\Phi_0,
+\qquad
+|\Phi_0|=1.
+\]
+
+If \texttt{A\ odot\_S\ B=q} exists, then
+
+\[
+\boxed{\lim_{t\to0}\frac{A(t)}{B(t)}\Phi(t)=q\Phi_0.}
+\tag{10.1}
+\]
+
+The phase factor decorates an already resolved quotient; it does not by itself
+recover discarded magnitude information or prove existence of the quotient.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{negative-controls-required-for-certification}{%
+\section{11. Negative controls required for certification}\label{negative-controls-required-for-certification}}
+
+Any implementation claiming this theorem must include at least:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  raw \texttt{1/0} rejection;
+\item
+  raw \texttt{0/0} rejection;
+\item
+  equal-order finite quotient fixture;
+\item
+  numerator-higher-order zero-limit fixture;
+\item
+  denominator-higher-order divergence fixture;
+\item
+  all-zero finite-jet incomplete fixture;
+\item
+  regular seam-reparameterization invariance fixture;
+\item
+  denominator-separation failure fixture;
+\item
+  exact-rational coefficient fixture;
+\item
+  quotient-enclosure bound fixture.
+\end{enumerate}
+
+A numerical implementation must additionally prove or validate the coefficient
+and remainder bounds it consumes. Merely labelling a submitted radius
+\texttt{validated} does not establish the hypothesis of Theorem 6.1.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{12. Claim boundary}\label{claim-boundary}}
+
+The proved statement is:
+
+\begin{quote}
+A pair of vanishing scalar observables along a declared regular seam has a
+finite seam quotient whenever their first nonzero jets occur at the same
+finite order and the denominator leading coefficient is nonzero; the quotient
+equals the ratio of those leading coefficients. Unequal first-visible orders
+classify zero versus divergence. Explicit reduced-function remainder bounds
+give an outward quotient enclosure once the reduced denominator is separated
+from zero.
+\end{quote}
+
+The theorem does \textbf{not} claim:
+
+\begin{itemize}
+\tightlist
+\item
+  a universal value for algebraic \texttt{0/0};
+\item
+  a finite value for \texttt{1/0};
+\item
+  uniqueness across genuinely different seams without an additional invariance theorem;
+\item
+  finite-jet resolution of flat functions;
+\item
+  correctness of an externally asserted arithmetic radius or analytic tail;
+\item
+  that phase lifting alone resolves magnitude indeterminacy.
+\end{itemize}
+
+This theorem is therefore a conditional closure theorem for indeterminate
+limits, not a redefinition of field arithmetic.
+
+\begin{flushright}\small\texttt{RKF/theorum/46\_first\_visible\_jet\_seam\_quotient\_theorem.md}\end{flushright}

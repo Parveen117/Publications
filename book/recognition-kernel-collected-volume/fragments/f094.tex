@@ -1,0 +1,860 @@
+% source: RH-Framework/theorems/T01_NATIVE_SUMMABILITY_AND_RECOGNITION_COMPLETION.md
+\hypertarget{t01-abc-native-cut-tail-and-recognition-cauchy-completion}{%
+\chapter{T01-A/B/C --- Native Cut-Tail and Recognition-Cauchy Completion}\label{t01-abc-native-cut-tail-and-recognition-cauchy-completion}}
+
+\textbf{Classification:} \texttt{PROVED}
+
+\textbf{Foundational origin:} \texttt{NATIVE\_DERIVED}
+
+\textbf{Main T01 classification:} \texttt{OPEN}
+
+This theorem removes the first functional-analysis import from the recognition
+foundation. It does not begin with
+
+\begin{verbatim}
+ell1;
+ell2;
+Hilbert space;
+operator norm;
+Haar measure;
+Minkowski, Young, or an imported Cauchy-Schwarz theorem.
+\end{verbatim}
+
+It begins with finite typed residue paths over exact oriented-cut scalars and
+defines two independent native completion relations.
+
+The meta-foundation remains ordinary finite algebra, rational order, sequences,
+and equivalence relations. No claim of foundation-free mathematics is made.
+The relevant claim is narrower and precise: no pre-existing complex Hilbert or
+Banach structure generates the objects proved below.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{primitive-finite-path-core}{%
+\section{1. Primitive finite path core}\label{primitive-finite-path-core}}
+
+Let
+
+\[
+\mathbb K_\Sigma^0
+=
+\{r+t\iota_\Sigma:r,t\in\mathbb Q_\Sigma\}
+\]
+
+be the exact cut field, with
+
+\[
+\iota_\Sigma^2=-1,
+\qquad
+(r+t\iota_\Sigma)^\dagger=r-t\iota_\Sigma.
+\]
+
+Define the native radial square
+
+\[
+N_\Sigma(z)=z^\dagger z=r^2+t^2
+\in\mathbb Q_{\Sigma,+}.
+\tag{1.1}
+\]
+
+Let \(\mathscr G_\Sigma\) be a typed residue groupoid. Its object and arrow sets
+may be countable, but every element used in the dense core has finite support.
+Write
+
+\[
+\mathscr P_\Sigma^0
+=
+C_c(\mathscr G_\Sigma,\mathbb K_\Sigma^0).
+\]
+
+Convolution and dagger are defined entirely by path composition and path
+reversal:
+
+\[
+(a\star b)_\gamma
+=
+\sum_{\alpha\beta=\gamma}a_\alpha b_\beta,
+\tag{1.2}
+\]
+
+\[
+(a^\dagger)_\gamma
+=
+(a_{\gamma^{-1}})^\dagger.
+\tag{1.3}
+\]
+
+All sums in this section are finite.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-cut-tail-mass}{%
+\section{2. Native cut-tail mass}\label{native-cut-tail-mass}}
+
+For a scalar \(z=r+t\iota_\Sigma\), define
+
+\[
+D_\Sigma(z)=|r|_\Sigma+|t|_\Sigma.
+\tag{2.1}
+\]
+
+This is a rational cut gauge. It is not introduced as an absolute value on
+\(\mathbb C\).
+
+For a finite path element
+
+\[
+a=\sum_\gamma a_\gamma\gamma,
+\]
+
+define its cut-tail mass
+
+\[
+\boxed{
+\mathcal M_\Sigma(a)
+=
+\sum_\gamma D_\Sigma(a_\gamma).
+}
+\tag{2.2}
+\]
+
+\hypertarget{lemma-2.1-scalar-cut-mass-product-inequality}{%
+\subsection{Lemma 2.1 --- Scalar cut-mass product inequality}\label{lemma-2.1-scalar-cut-mass-product-inequality}}
+
+For all \(z,w\in\mathbb K_\Sigma^0\),
+
+\[
+D_\Sigma(zw)
+\le
+D_\Sigma(z)D_\Sigma(w).
+\tag{2.3}
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+Write
+
+\[
+z=r+t\iota_\Sigma,
+\qquad
+w=s+u\iota_\Sigma.
+\]
+
+Then
+
+\[
+zw=(rs-tu)+(ru+ts)\iota_\Sigma.
+\]
+
+The ordered cut-rational triangle inequality gives
+
+\[
+\begin{aligned}
+D_\Sigma(zw)
+&=|rs-tu|_\Sigma+|ru+ts|_\Sigma\\
+&\le |r||s|+|t||u|+|r||u|+|t||s|\\
+&=(|r|+|t|)(|s|+|u|).
+\end{aligned}
+\]
+
+QED.
+
+\hypertarget{theorem-2.2-native-cut-tail-convolution-inequality}{%
+\subsection{Theorem 2.2 --- Native cut-tail convolution inequality}\label{theorem-2.2-native-cut-tail-convolution-inequality}}
+
+For all finite path elements,
+
+\[
+\boxed{
+\mathcal M_\Sigma(a\star b)
+\le
+\mathcal M_\Sigma(a)\mathcal M_\Sigma(b).
+}
+\tag{2.4}
+\]
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Using \texttt{(2.3)} and the finite triangle inequality,
+
+\[
+\begin{aligned}
+\mathcal M_\Sigma(a\star b)
+&=
+\sum_\gamma
+D_\Sigma\left(
+\sum_{\alpha\beta=\gamma}a_\alpha b_\beta
+\right)\\
+&\le
+\sum_{\alpha,\beta\;\mathrm{composable}}
+D_\Sigma(a_\alpha)D_\Sigma(b_\beta)\\
+&\le
+\left(\sum_\alpha D_\Sigma(a_\alpha)\right)
+\left(\sum_\beta D_\Sigma(b_\beta)\right).
+\end{aligned}
+\]
+
+QED.
+
+Dagger preserves cut-tail mass exactly:
+
+\[
+\mathcal M_\Sigma(a^\dagger)=\mathcal M_\Sigma(a).
+\tag{2.5}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-cut-tail-completion}{%
+\section{3. Native cut-tail completion}\label{native-cut-tail-completion}}
+
+A sequence \((a_n)\) in \(\mathscr P_\Sigma^0\) is \textbf{cut-tail Cauchy} when for
+every positive cut rational \(\varepsilon\), there exists \(N\) such that
+
+\[
+\mathcal M_\Sigma(a_m-a_n)<\varepsilon
+\qquad(m,n\ge N).
+\tag{3.1}
+\]
+
+Two cut-tail Cauchy sequences are equivalent when
+
+\[
+\mathcal M_\Sigma(a_n-b_n)\longrightarrow0
+\tag{3.2}
+\]
+
+in rational-threshold language.
+
+Define
+
+\[
+\boxed{
+\mathfrak A_\Sigma^{\mathrm{tail}}
+=
+\{\text{cut-tail Cauchy presentations}\}/\sim_{\mathcal M}.
+}
+\tag{3.3}
+\]
+
+\hypertarget{lemma-3.1-cauchy-presentations-are-mass-bounded}{%
+\subsection{Lemma 3.1 --- Cauchy presentations are mass bounded}\label{lemma-3.1-cauchy-presentations-are-mass-bounded}}
+
+Every cut-tail Cauchy sequence \((a_n)\) admits a positive rational bound
+\(B\) such that
+
+\[
+\mathcal M_\Sigma(a_n)\le B
+\]
+
+for every \(n\).
+
+\hypertarget{proof-2}{%
+\subsection{Proof}\label{proof-2}}
+
+Choose \(N\) such that
+
+\[
+\mathcal M_\Sigma(a_n-a_N)<1
+\qquad(n\ge N).
+\]
+
+Then
+
+\[
+\mathcal M_\Sigma(a_n)
+\le
+\mathcal M_\Sigma(a_N)+1
+\]
+
+for \(n\ge N\). Enlarge the bound to include the finitely many earlier terms.
+QED.
+
+\hypertarget{theorem-3.2-native-cut-tail-algebra}{%
+\subsection{Theorem 3.2 --- Native cut-tail algebra}\label{theorem-3.2-native-cut-tail-algebra}}
+
+Termwise addition, convolution, and dagger descend to
+\(\mathfrak A_\Sigma^{\mathrm{tail}}\). The resulting object is a complete
+involutive path algebra.
+
+\hypertarget{proof-3}{%
+\subsection{Proof}\label{proof-3}}
+
+Let \((a_n)\) and \((b_n)\) be cut-tail Cauchy and mass bounded by \(A\) and
+\(B\). Then
+
+\[
+\begin{aligned}
+\mathcal M_\Sigma(a_n\star b_n-a_m\star b_m)
+&\le
+\mathcal M_\Sigma((a_n-a_m)\star b_n)\\
+&\quad+
+\mathcal M_\Sigma(a_m\star(b_n-b_m))\\
+&\le
+B\mathcal M_\Sigma(a_n-a_m)
++A\mathcal M_\Sigma(b_n-b_m).
+\end{aligned}
+\tag{3.4}
+\]
+
+Thus termwise convolution is Cauchy. The same estimate shows independence of
+representatives. Dagger is immediate from \texttt{(2.5)}. Associativity and the star
+law hold termwise on the finite core and therefore on equivalence classes.
+
+Completeness follows from the standard Cauchy-presentation diagonal argument,
+but every neighborhood and estimate used in that argument is expressed through
+\(\mathcal M_\Sigma\) and positive cut-rational thresholds. No pre-existing
+\(L^1\) space is used to define the object. QED.
+
+The phrase \textbf{cut-tail completion} refers to \texttt{(3.3)}. Any later identification
+with an ordinary sequence space is a separate coordinate theorem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-closed-loop-recognition-energy}{%
+\section{4. Native closed-loop recognition energy}\label{native-closed-loop-recognition-energy}}
+
+Let \(\Phi_\Sigma\) extract stationary zero-residue paths. Define
+
+\[
+\langle a,b\rangle_\Sigma^0
+=
+\Phi_\Sigma(a^\dagger\star b).
+\tag{4.1}
+\]
+
+The typed path rules give the exact coefficient identity
+
+\[
+\boxed{
+\langle a,b\rangle_\Sigma^0
+=
+\sum_\gamma a_\gamma^\dagger b_\gamma.
+}
+\tag{4.2}
+\]
+
+Define recognition energy
+
+\[
+\boxed{
+\mathcal E_\Sigma(a)
+=
+\langle a,a\rangle_\Sigma^0
+=
+\sum_\gamma N_\Sigma(a_\gamma).
+}
+\tag{4.3}
+\]
+
+It is a nonnegative radial cut rational, and
+
+\[
+\mathcal E_\Sigma(a)=0
+\Longleftrightarrow
+a=0.
+\tag{4.4}
+\]
+
+\hypertarget{lemma-4.1-native-addition-control}{%
+\subsection{Lemma 4.1 --- Native addition control}\label{lemma-4.1-native-addition-control}}
+
+For finite paths,
+
+\[
+\boxed{
+\mathcal E_\Sigma(a+b)
+\le
+2\mathcal E_\Sigma(a)+2\mathcal E_\Sigma(b).
+}
+\tag{4.5}
+\]
+
+\hypertarget{proof-4}{%
+\subsection{Proof}\label{proof-4}}
+
+For every pair of cut scalars,
+
+\[
+2N_\Sigma(x)+2N_\Sigma(y)-N_\Sigma(x+y)
+=N_\Sigma(x-y)\ge0.
+\tag{4.6}
+\]
+
+Sum \texttt{(4.6)} over path coefficients. QED.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-finite-cauchy-schwarz-identity}{%
+\section{5. Native finite Cauchy-Schwarz identity}\label{native-finite-cauchy-schwarz-identity}}
+
+The required recognition estimate is not imported from a Hilbert space.
+
+Let \(x_1,\ldots,x_n\) be cut scalars and let
+\(d_1,\ldots,d_n\) be positive cut rationals. Put
+
+\[
+D=\sum_i d_i.
+\]
+
+\hypertarget{lemma-5.1-weighted-cut-square-identity}{%
+\subsection{Lemma 5.1 --- Weighted cut-square identity}\label{lemma-5.1-weighted-cut-square-identity}}
+
+\[
+\boxed{
+D\sum_i\frac{N_\Sigma(x_i)}{d_i}
+-
+N_\Sigma\left(\sum_i x_i\right)
+=
+\sum_{i<j}
+\frac{N_\Sigma(d_jx_i-d_ix_j)}{d_id_j}.
+}
+\tag{5.1}
+\]
+
+\hypertarget{proof-5}{%
+\subsection{Proof}\label{proof-5}}
+
+Expand both sides using
+
+\[
+N_\Sigma(z)=z^\dagger z.
+\]
+
+The coefficient of \(N_\Sigma(x_i)\) on each side is
+
+\[
+\frac{D-d_i}{d_i},
+\]
+
+and every mixed pair contributes
+
+\[
+-x_i^\dagger x_j-x_j^\dagger x_i.
+\]
+
+Thus the expressions agree exactly. Every term on the right is a positive
+radial square. QED.
+
+\hypertarget{corollary-5.2-native-coefficient-pairing-inequality}{%
+\subsection{Corollary 5.2 --- Native coefficient pairing inequality}\label{corollary-5.2-native-coefficient-pairing-inequality}}
+
+For finite path elements,
+
+\[
+\boxed{
+N_\Sigma(\langle a,b\rangle_\Sigma^0)
+\le
+\mathcal E_\Sigma(a)\mathcal E_\Sigma(b).
+}
+\tag{5.2}
+\]
+
+This also follows from the unweighted finite identity
+
+\[
+\mathcal E_\Sigma(a)\mathcal E_\Sigma(b)
+-
+N_\Sigma(\langle a,b\rangle_\Sigma^0)
+=
+\sum_{\gamma<\delta}
+N_\Sigma(a_\gamma b_\delta-a_\delta b_\gamma).
+\tag{5.3}
+\]
+
+No square-root norm is required.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-recognition-cauchy-completion}{%
+\section{6. Native recognition-Cauchy completion}\label{native-recognition-cauchy-completion}}
+
+A sequence \((\xi_n)\) of finite paths is \textbf{recognition Cauchy} when for every
+positive cut rational \(\varepsilon\), there exists \(N\) such that
+
+\[
+\mathcal E_\Sigma(\xi_m-\xi_n)<\varepsilon
+\qquad(m,n\ge N).
+\tag{6.1}
+\]
+
+Two recognition-Cauchy presentations are equivalent when
+
+\[
+\mathcal E_\Sigma(\xi_n-\eta_n)\longrightarrow0.
+\tag{6.2}
+\]
+
+Define
+
+\[
+\boxed{
+\mathfrak R_\Sigma
+=
+\{\text{recognition-Cauchy presentations}\}/\sim_{\mathcal E}.
+}
+\tag{6.3}
+\]
+
+\hypertarget{theorem-6.1-native-recognition-completion}{%
+\subsection{Theorem 6.1 --- Native recognition completion}\label{theorem-6.1-native-recognition-completion}}
+
+The object \(\mathfrak R_\Sigma\) is a complete module over the completed cut
+field. The pairing \texttt{(4.1)} extends uniquely to
+
+\[
+\langle\cdot,\cdot\rangle_\Sigma:
+\mathfrak R_\Sigma\times\mathfrak R_\Sigma
+\longrightarrow
+\widehat{\mathbb K}_\Sigma,
+\tag{6.4}
+\]
+
+and satisfies
+
+\[
+\langle\xi,\xi\rangle_\Sigma\ge0,
+\qquad
+\langle\xi,\xi\rangle_\Sigma=0
+\Longleftrightarrow
+\xi=0.
+\tag{6.5}
+\]
+
+\hypertarget{proof-6}{%
+\subsection{Proof}\label{proof-6}}
+
+Addition is continuous by \texttt{(4.5)}, and scalar multiplication obeys
+
+\[
+\mathcal E_\Sigma(z\xi)
+=N_\Sigma(z)\mathcal E_\Sigma(\xi).
+\tag{6.6}
+\]
+
+Recognition-Cauchy sequences are energy bounded by the same argument as Lemma
+3.1, using \texttt{(4.5)}.
+
+For Cauchy presentations \((\xi_n)\), \((\eta_n)\), the difference
+
+\[
+\langle\xi_n,\eta_n\rangle^0
+-
+\langle\xi_m,\eta_m\rangle^0
+\]
+
+is the sum of
+
+\[
+\langle\xi_n-\xi_m,\eta_n\rangle^0
+\quad\text{and}\quad
+\langle\xi_m,\eta_n-\eta_m\rangle^0.
+\]
+
+Use \texttt{(4.6)} and \texttt{(5.2)}. Energy boundedness makes both terms converge to zero
+in cut norm square. Therefore the pairing sequence is cut-Cauchy and independent
+of representatives.
+
+Positivity follows from \texttt{(4.3)}. If the completed self-pairing is zero, then
+\(\mathcal E_\Sigma(\xi_n)\) converges to zero, so the presentation is
+recognition-null and represents the zero class.
+
+Completeness follows from the Cauchy-presentation diagonal construction using
+only the entourages \texttt{(6.1)}. QED.
+
+This object is called the \textbf{recognition completion}. The theorem does not use
+the word Hilbert as a definition. A later chart may prove that its coordinate
+image is an ordinary Hilbert space.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-tail-action-on-recognition-completion}{%
+\section{7. Native tail action on recognition completion}\label{native-tail-action-on-recognition-completion}}
+
+\hypertarget{theorem-7.1-finite-native-action-bound}{%
+\subsection{Theorem 7.1 --- Finite native action bound}\label{theorem-7.1-finite-native-action-bound}}
+
+For finite paths \(a\) and \(\xi\),
+
+\[
+\boxed{
+\mathcal E_\Sigma(a\star\xi)
+\le
+\mathcal M_\Sigma(a)^2\mathcal E_\Sigma(\xi).
+}
+\tag{7.1}
+\]
+
+\hypertarget{proof-7}{%
+\subsection{Proof}\label{proof-7}}
+
+Fix an output arrow \(\gamma\). For each decomposition
+\(\alpha\beta=\gamma\), put
+
+\[
+x_\alpha=a_\alpha\xi_\beta,
+\qquad
+d_\alpha=D_\Sigma(a_\alpha).
+\]
+
+Terms with \(a_\alpha=0\) are omitted, so \(d_\alpha>0\). Lemma 5.1 gives
+
+\[
+N_\Sigma\left(
+\sum_{\alpha\beta=\gamma}a_\alpha\xi_\beta
+\right)
+\le
+\mathcal M_\Sigma(a)
+\sum_{\alpha\beta=\gamma}
+\frac{N_\Sigma(a_\alpha\xi_\beta)}{d_\alpha}.
+\tag{7.2}
+\]
+
+Since
+
+\[
+N_\Sigma(a_\alpha)
+\le D_\Sigma(a_\alpha)^2=d_\alpha^2,
+\]
+
+we obtain
+
+\[
+N_\Sigma((a\star\xi)_\gamma)
+\le
+\mathcal M_\Sigma(a)
+\sum_{\alpha\beta=\gamma}
+ d_\alpha N_\Sigma(\xi_\beta).
+\tag{7.3}
+\]
+
+Sum over \(\gamma\). Every composable pair produces one output arrow, and the
+sum over composable pairs is bounded by the unrestricted product of the two
+finite positive sums. Hence
+
+\[
+\mathcal E_\Sigma(a\star\xi)
+\le
+\mathcal M_\Sigma(a)^2\mathcal E_\Sigma(\xi).
+\]
+
+QED.
+
+\hypertarget{theorem-7.2-completed-native-action}{%
+\subsection{Theorem 7.2 --- Completed native action}\label{theorem-7.2-completed-native-action}}
+
+Convolution extends uniquely to an action
+
+\[
+\boxed{
+\mathfrak A_\Sigma^{\mathrm{tail}}
+\times
+\mathfrak R_\Sigma
+\longrightarrow
+\mathfrak R_\Sigma.
+}
+\tag{7.4}
+\]
+
+The completed action obeys the native bound \texttt{(7.1)} in cut-completed radial
+coordinates.
+
+\hypertarget{proof-8}{%
+\subsection{Proof}\label{proof-8}}
+
+Let \((a_n)\) be mass Cauchy and \((\xi_n)\) recognition Cauchy. By \texttt{(4.5)}
+and \texttt{(7.1)},
+
+\[
+\begin{aligned}
+\mathcal E_\Sigma(a_n\star\xi_n-a_m\star\xi_m)
+&\le
+2\mathcal E_\Sigma((a_n-a_m)\star\xi_n)\\
+&\quad+
+2\mathcal E_\Sigma(a_m\star(\xi_n-\xi_m))\\
+&\le
+2\mathcal M_\Sigma(a_n-a_m)^2
+  \mathcal E_\Sigma(\xi_n)\\
+&\quad+
+2\mathcal M_\Sigma(a_m)^2
+  \mathcal E_\Sigma(\xi_n-\xi_m).
+\end{aligned}
+\tag{7.5}
+\]
+
+Mass and energy boundedness show that \texttt{(7.5)} tends to zero. The same estimate
+proves independence of representatives. QED.
+
+This is native boundedness: preservation of recognition-Cauchy neighborhoods by
+a cut-tail mass estimate. No operator norm is primitive.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{residue-is-not-lost-by-completion}{%
+\section{8. Residue is not lost by completion}\label{residue-is-not-lost-by-completion}}
+
+Let \(r\ne s\) be residue channels over the same endpoints. Then
+
+\[
+w=\delta_{(x,y,r)}-\delta_{(x,y,s)}
+\]
+
+has
+
+\[
+\mathcal E_\Sigma(w)=2,
+\tag{8.1}
+\]
+
+while the endpoint-only shadow sends \(w\) to zero.
+
+Thus neither the cut-tail completion nor the recognition completion erases seam
+memory. Blindness enters only through a later quotient map.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{explicit-infinite-native-presentation}{%
+\section{9. Explicit infinite native presentation}\label{explicit-infinite-native-presentation}}
+
+For the integer object atlas with two residue channels, define
+
+\[
+s_N
+=
+\sum_{n=0}^{N}
+2^{-(n+1)}
+\delta_{(0,n,n\bmod2)}.
+\tag{9.1}
+\]
+
+For \(M>N\),
+
+\[
+\mathcal M_\Sigma(s_M-s_N)
+=
+\sum_{n=N+1}^{M}2^{-(n+1)}
+<2^{-(N+1)},
+\tag{9.2}
+\]
+
+and
+
+\[
+\mathcal E_\Sigma(s_M-s_N)
+=
+\sum_{n=N+1}^{M}4^{-(n+1)}
+<\frac{1}{3\,4^{N+1}}.
+\tag{9.3}
+\]
+
+Therefore the same finite presentation converges in both native completion
+relations and retains alternating residue over infinitely many targets.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{what-has-been-removed}{%
+\section{10. What has been removed}\label{what-has-been-removed}}
+
+The construction order is now
+
+\[
+\boxed{
+\text{cut scalars}
+\to
+\text{finite typed paths}
+\to
+\mathcal M_\Sigma,\mathcal E_\Sigma
+\to
+\text{two native Cauchy quotients}
+\to
+\text{native completed action}.
+}
+\]
+
+The following are not used to define or prove this chain:
+
+\begin{verbatim}
+ordinary complex numbers;
+ell1 or ell2 spaces;
+Banach or Hilbert completeness as imported objects;
+operator norms;
+Haar measure;
+Minkowski inequality;
+Young inequality;
+spectral theory.
+\end{verbatim}
+
+Finite algebraic cut-square identities replace the imported analytic bounds.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{coordinate-shadow-boundary}{%
+\section{11. Coordinate-shadow boundary}\label{coordinate-shadow-boundary}}
+
+This theorem does not deny that a later coordinate map may identify
+
+\begin{verbatim}
+native cut-tail completion       with an ordinary absolute-summability space;
+native recognition completion   with an ordinary square-summability space;
+native completed action          with a bounded regular representation.
+\end{verbatim}
+
+Those identifications must be proved \textbf{after} the native objects exist. They
+are coordinate-shadow theorems, not definitions.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-certificate}{%
+\section{12. Exact certificate}\label{exact-certificate}}
+
+The exact dense-core certificate has expected status
+
+\begin{verbatim}
+PASS_NATIVE_CUT_TAIL_AND_RECOGNITION_CAUCHY_COMPLETION_CORE
+\end{verbatim}
+
+It verifies:
+
+\begin{verbatim}
+quarter-turn scalar algebra;
+dagger and radial squares;
+cut-tail scalar and convolution inequalities;
+finite path associativity and dagger reversal;
+closed-loop coefficient identity;
+native addition control;
+weighted cut Cauchy-Schwarz identity;
+native action-energy bound;
+explicit mass and energy Cauchy tails;
+nonzero residue with zero endpoint shadow;
+absence of classical-analysis imports in the foundational module.
+\end{verbatim}
+
+The certificate is an implementation witness. The proof above establishes the
+abstract completion theorem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{remaining-gates}{%
+\section{13. Remaining gates}\label{remaining-gates}}
+
+\begin{verbatim}
+T01-A NATIVE CUT-TAIL COMPLETION                   PROVED
+T01-B NATIVE RECOGNITION-CAUCHY COMPLETION        PROVED
+T01-C NATIVE COMPLETED PATH ACTION                PROVED
+
+ACTUAL MP PATH-ATLAS IDENTIFICATION               OPEN
+ACTUAL MP REFINEMENT CONTINUITY                   OPEN
+NATIVE CONTINUOUS REFINEMENT MEASURE              OPEN
+COORDINATE SHADOW TO ORDINARY ell1/ell2           OPEN
+NATIVE STATE-PACKET GENERATION                    OPEN
+TARGET FAITHFULNESS                               OPEN
+NATIVE SHUNYA                                     OPEN
+RIEMANN HYPOTHESIS                                OPEN
+\end{verbatim}
+
+The next native reconstruction gate is a refinement-count measure derived from
+path partitions before any Haar measure is named.
+
+\begin{flushright}\small\texttt{RH-Framework/theorems/T01\_NATIVE\_SUMMABILITY\_AND\_RECOGNITION\_COMPLETION.md}\end{flushright}

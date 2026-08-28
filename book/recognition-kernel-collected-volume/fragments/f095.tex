@@ -1,0 +1,435 @@
+% source: RH-Framework/theorems/T03_ACTION_DOMAIN_ADAPTER.md
+\hypertarget{t03-a-action-domain-theorem-on-the-normalized-ugd-path-group}{%
+\chapter{T03-A --- Action-Domain Theorem on the Normalized UGD Path Group}\label{t03-a-action-domain-theorem-on-the-normalized-ugd-path-group}}
+
+\textbf{Classification:} \texttt{PROVED}
+
+\textbf{Main T03 classification:} \texttt{OPEN}
+
+The abstract operator-domain theorem is proved below. The actual MP coefficient
+fields and their immutable state-locked extraction remain separate verification
+obligations.
+
+\hypertarget{carrier-and-haar-measure}{%
+\section{1. Carrier and Haar measure}\label{carrier-and-haar-measure}}
+
+The normalized scalar UGD path group is
+
+\[
+\mathcal U_F
+\cong
+\mathbb R_u\times\mathbb R_t\times S^1_\alpha,
+\]
+
+with Haar measure
+
+\[
+d\lambda=du\,dt\,d\alpha.
+\]
+
+In the original phase-scale-seam coordinates this is, up to a fixed
+normalization constant,
+
+\[
+d\lambda
+=
+\frac{d\phi\,d\sigma\,dk}{\sigma^2}.
+\]
+
+The active event fibre has exactly five labels:
+
+\[
+E_5=
+\{\ell_\partial,\phi_0,\phi_1,\phi_2,e_3^{\mathrm{corr}}\}.
+\]
+
+Set
+
+\[
+\mathcal H
+=
+L^2(\mathcal U_F,d\lambda;\mathbb C^5).
+\]
+
+The matrix factor represents pair-groupoid directions over these five labels.
+Seam memory remains a path coordinate. It is not a sixth label.
+
+\hypertarget{bounded-fibre-multipliers}{%
+\section{2. Bounded fibre multipliers}\label{bounded-fibre-multipliers}}
+
+Let
+
+\[
+A:\mathcal U_F\to M_5(\mathbb C)
+\]
+
+be strongly measurable and essentially bounded in operator norm. Define
+
+\[
+(M_Af)(x)=A(x)f(x).
+\]
+
+\hypertarget{theorem-2.1}{%
+\subsection{Theorem 2.1}\label{theorem-2.1}}
+
+\(M_A\) is bounded on \(\mathcal H\) and
+
+\[
+\|M_Af\|_2
+\le
+\operatorname*{ess\,sup}_{x\in\mathcal U_F}\|A(x)\|_{\mathrm{op}}
+\,\|f\|_2.
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+For almost every \(x\),
+
+\[
+\|A(x)f(x)\|_{\mathbb C^5}
+\le
+\|A(x)\|_{\mathrm{op}}\|f(x)\|_{\mathbb C^5}.
+\]
+
+Squaring and integrating gives
+
+\[
+\|M_Af\|_2^2
+\le
+\|A\|_{L^\infty(\mathrm{op})}^2\|f\|_2^2.
+\]
+
+Hence \(M_A\in\mathcal B(\mathcal H)\). QED.
+
+\hypertarget{integrable-matrix-convolution-kernels}{%
+\section{3. Integrable matrix convolution kernels}\label{integrable-matrix-convolution-kernels}}
+
+Let
+
+\[
+K:\mathcal U_F\to M_5(\mathbb C)
+\]
+
+be measurable with
+
+\[
+\|K\|_{L^1(\mathrm{op})}
+=
+\int_{\mathcal U_F}\|K(y)\|_{\mathrm{op}}\,d\lambda(y)
+<\infty.
+\]
+
+Define
+
+\[
+(T_Kf)(x)
+=
+\int_{\mathcal U_F}K(y)f(y^{-1}x)\,d\lambda(y).
+\]
+
+\hypertarget{theorem-3.1}{%
+\subsection{Theorem 3.1}\label{theorem-3.1}}
+
+\(T_K\) is bounded on \(\mathcal H\) and
+
+\[
+\boxed{
+\|T_Kf\|_2
+\le
+\|K\|_{L^1(\mathrm{op})}\|f\|_2.
+}
+\]
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+By the pointwise matrix bound and Minkowski's integral inequality,
+
+\[
+\|T_Kf\|_2
+\le
+\int_{\mathcal U_F}
+\|K(y)f(y^{-1}\cdot)\|_2\,d\lambda(y).
+\]
+
+Left translation is unitary on \(L^2\) because \(\lambda\) is Haar measure.
+Therefore
+
+\[
+\|K(y)f(y^{-1}\cdot)\|_2
+\le
+\|K(y)\|_{\mathrm{op}}\|f\|_2.
+\]
+
+Integration proves the bound. QED.
+
+Since \(\mathcal U_F\) is abelian and unimodular, the involution is
+
+\[
+K^*(x)=K(x^{-1})^*,
+\]
+
+and the matrix-kernel \(L^1\) algebra has the usual convolution star structure.
+
+\hypertarget{maximal-domains-for-unbounded-generators}{%
+\section{4. Maximal domains for unbounded generators}\label{maximal-domains-for-unbounded-generators}}
+
+Let
+
+\[
+m:\mathcal U_F\to\mathbb R
+\]
+
+be measurable and finite almost everywhere. Define
+
+\[
+(M_mf)(x)=m(x)f(x)
+\]
+
+on the maximal domain
+
+\[
+D(M_m)
+=
+\{f\in\mathcal H:m f\in\mathcal H\}.
+\]
+
+\hypertarget{theorem-4.1}{%
+\subsection{Theorem 4.1}\label{theorem-4.1}}
+
+\(M_m\) is densely defined, closed, and self-adjoint.
+
+\hypertarget{proof-2}{%
+\subsection{Proof}\label{proof-2}}
+
+The group is second countable and locally compact, so Haar measure is
+sigma-finite. The sets
+
+\[
+E_n=\{x:|m(x)|\le n\}
+\]
+
+increase to full measure. Compactly supported square-integrable functions
+restricted to \(E_n\) lie in \(D(M_m)\), proving density.
+
+Suppose
+
+\[
+f_n\to f,
+\qquad
+M_mf_n\to g
+\]
+
+in \(\mathcal H\). Passing to an almost-everywhere convergent subsequence gives
+
+\[
+f_n(x)\to f(x),
+\qquad
+m(x)f_n(x)\to g(x).
+\]
+
+Thus \(g(x)=m(x)f(x)\) almost everywhere. Hence \(f\in D(M_m)\) and
+\(M_mf=g\), proving closedness.
+
+For real \(m\), the pointwise resolvents
+
+\[
+(m\pm i)^{-1}
+\]
+
+are bounded by one. Therefore \(M_m\pm iI\) are onto, and the symmetric maximal
+multiplication operator is self-adjoint. QED.
+
+\hypertarget{hermitian-matrix-extension}{%
+\subsection{Hermitian matrix extension}\label{hermitian-matrix-extension}}
+
+Let
+
+\[
+H(x)=H(x)^*\in M_5(\mathbb C)
+\]
+
+be a measurable Hermitian field and define
+
+\[
+D(M_H)=\{f:Hf\in\mathcal H\}.
+\]
+
+The same argument applies because
+
+\[
+\|(H(x)\pm iI_5)^{-1}\|_{\mathrm{op}}\le1.
+\]
+
+Thus \(M_H\) is self-adjoint on its maximal domain. This is the correct home
+for unbounded prime-log, scale, Euler, or Gamma-generated matrix fields once
+their actual formulas are imported.
+
+\hypertarget{constant-state-locked-packets}{%
+\section{5. Constant state-locked packets}\label{constant-state-locked-packets}}
+
+Let
+
+\[
+A_0\in M_5(\mathbb C)
+\]
+
+be a finite state-locked source, response, transport, or Gram-derived action.
+The constant field
+
+\[
+A(x)=A_0
+\]
+
+belongs to \(L^\infty(\mathcal U_F;M_5)\). Hence
+
+\[
+\|M_A\|\le\|A_0\|_{\mathrm{op}}.
+\]
+
+Therefore a finite packet embeds canonically as a bounded decomposable fibre
+action.
+
+It must not be silently reinterpreted as the constant convolution kernel
+
+\[
+K(x)=A_0.
+\]
+
+The group has infinite Haar measure, so for \(A_0\ne0\),
+
+\[
+\int_{\mathcal U_F}\|A_0\|_{\mathrm{op}}\,d\lambda
+=\infty.
+\]
+
+The finite packet is a multiplier, not an integrable convolution kernel. A
+Dirac-supported convolution action would require a declared measure-algebra
+formulation.
+
+\hypertarget{compact-positive-eta-families}{%
+\section{6. Compact positive-eta families}\label{compact-positive-eta-families}}
+
+Let \(I\subset(0,\infty)\) be compact and suppose
+
+\[
+\eta\mapsto A_\eta\in M_5(\mathbb C)
+\]
+
+is continuous. Compactness gives
+
+\[
+\sup_{\eta\in I}\|A_\eta\|_{\mathrm{op}}<\infty.
+\]
+
+Consequently
+
+\[
+(\mathsf M_Af)(\eta,x)=A_\eta f(\eta,x)
+\]
+
+is bounded on
+
+\[
+L^2(I\times\mathcal U_F;\mathbb C^5).
+\]
+
+Thus a verified continuous positive-eta matrix family has a common bounded
+fibre-action domain on every compact positive-eta interval. This does not prove
+eta-zero support descent.
+
+\hypertarget{cut-aperture-compatibility}{%
+\section{7. Cut-aperture compatibility}\label{cut-aperture-compatibility}}
+
+Let
+
+\[
+P=P^*=P^2\in M_5(\mathbb C)
+\]
+
+be the state-locked cut aperture. The constant fibre action \(M_P\) is an
+orthogonal projection on \(\mathcal H\).
+
+For each bounded field \(A\),
+
+\[
+\|PAP\|_{L^\infty(\mathrm{op})}
+\le
+\|A\|_{L^\infty(\mathrm{op})}.
+\]
+
+If a measurable unitary transport satisfies
+
+\[
+U(x)PU(x)^*=P
+\]
+
+almost everywhere, then \(M_P\mathcal H\) is invariant under \(M_U\). Seam
+memory remains in the path coordinate, with no new fibre label.
+
+\hypertarget{resulting-action-classes}{%
+\section{8. Resulting action classes}\label{resulting-action-classes}}
+
+The following classes are rigorous on the normalized UGD carrier:
+
+\begin{verbatim}
+L-infinity matrix fields     -> bounded fibre multipliers on L2
+L1 matrix kernels            -> bounded convolution operators on L2
+real scalar weights          -> self-adjoint maximal multiplication operators
+Hermitian matrix weights     -> self-adjoint maximal multiplication operators
+constant five-label packets  -> bounded fibre multipliers
+compact positive-eta family  -> common bounded decomposable action
+cut-aperture compression     -> bounded recognized-sector action
+\end{verbatim}
+
+\hypertarget{remaining-subtheorems}{%
+\section{9. Remaining subtheorems}\label{remaining-subtheorems}}
+
+\hypertarget{t03-b-finite-packet-realization}{%
+\subsection{T03-B --- finite packet realization}\label{t03-b-finite-packet-realization}}
+
+\textbf{Classification:} \texttt{OPEN}
+
+The type theorem is proved, but RH-Framework must execute the pinned
+state-locked source and import immutable matrices with their source hashes.
+
+\hypertarget{t03-c-actual-coefficient-domain-membership}{%
+\subsection{T03-C --- actual coefficient-domain membership}\label{t03-c-actual-coefficient-domain-membership}}
+
+\textbf{Classification:} \texttt{OPEN}
+
+Every actual source, response, prime, Gamma, boundary, continuation, Euler,
+scale, and compatibility action must be proved to belong to one declared class:
+
+\begin{verbatim}
+essentially bounded matrix field
+L1 matrix convolution kernel
+finite measure-algebra kernel
+closed maximal multiplication operator
+controlled unbounded integral operator with explicit graph domain
+\end{verbatim}
+
+Numerical samples alone do not establish integrability on the full UGD group.
+
+\hypertarget{computational-witness}{%
+\section{10. Computational witness}\label{computational-witness}}
+
+The companion code checks a finite Haar-grid dense core with positive and
+adversarial controls.
+
+\begin{verbatim}
+PASS_T03_ACTION_DOMAIN_DENSE_CORE
+05a4784308e996763928b4cead0c86462150154c506b30bf292f96dd8986db3c
+\end{verbatim}
+
+The certificate verifies the implementation. The proof above establishes the
+continuum theorem.
+
+\hypertarget{claim-boundary}{%
+\section{11. Claim boundary}\label{claim-boundary}}
+
+T03-A is proved. T03-B, T03-C, target faithfulness, native Shunya, the
+critical-line adapter, and the Riemann Hypothesis remain open.
+
+\begin{flushright}\small\texttt{RH-Framework/theorems/T03\_ACTION\_DOMAIN\_ADAPTER.md}\end{flushright}

@@ -1,0 +1,80 @@
+% source: RKF/theorum/MP_CLEANUP_CANDIDATES.md
+\hypertarget{mp-cleanup-candidates-after-theorum-transfer}{%
+\chapter{MP cleanup candidates after theorum transfer}\label{mp-cleanup-candidates-after-theorum-transfer}}
+
+The theorem capsules have been moved into \texttt{Parveen117/Recognition-Kernel-Framework/theorum} on branch \texttt{agent/transfer-certified-theorum-from-mp}.
+
+This file records what should be removed from MP next. It is intentionally a candidate list because the source material lives across several open MP branches, not one merged directory.
+
+\hypertarget{safe-deletion-class}{%
+\section{Safe deletion class}\label{safe-deletion-class}}
+
+Delete from MP only after confirming the corresponding theorem capsule exists in RKF:
+
+\begin{verbatim}
+human-readable theorem summaries;
+status JSON files whose content is duplicated in RKF provenance;
+old manuscript theorem surfaces superseded by the RKF theorum capsules.
+\end{verbatim}
+
+\hypertarget{do-not-delete-without-archival-copy}{%
+\section{Do not delete without archival copy}\label{do-not-delete-without-archival-copy}}
+
+\begin{verbatim}
+native verifier scripts;
+test modules;
+state capsules;
+raw numerical ledgers;
+source audit scripts;
+large artifacts needed to regenerate the theorem packets.
+\end{verbatim}
+
+\hypertarget{candidate-mp-prs-and-files}{%
+\section{Candidate MP PRs and files}\label{candidate-mp-prs-and-files}}
+
+\hypertarget{pr-246-branch-agentrh-rotation-metric-topology-reset}{%
+\subsection{\texorpdfstring{PR \#246, branch \texttt{agent/rh-rotation-metric-topology-reset}}{PR \#246, branch agent/rh-rotation-metric-topology-reset}}\label{pr-246-branch-agentrh-rotation-metric-topology-reset}}
+
+Candidate readable/status surfaces:
+
+\begin{verbatim}
+proof_lab/clock_free_recognition/NATIVE_EXACT_ETA_FAMILY_PATH_INDEPENDENCE.md
+proof_lab/clock_free_recognition/EXACT_ETA_FAMILY_PATH_INDEPENDENCE_STATUS.json
+proof_lab/clock_free_recognition/NATIVE_ACTUAL_ETA_NORMALIZATION_TWO_PATH_ANALYTICITY.md
+proof_lab/clock_free_recognition/ACTUAL_ETA_NORMALIZATION_TWO_PATH_STATUS.json
+proof_lab/clock_free_recognition/NATIVE_UGD_FIXED_FIVE_MULTIPLICATIVE_HOLONOMY.md
+proof_lab/clock_free_recognition/UGD_FIXED_FIVE_MULTIPLICATIVE_HOLONOMY_STATUS.json
+\end{verbatim}
+
+Keep scripts/tests unless deliberately archiving them:
+
+\begin{verbatim}
+native_state_locked_exact_eta_family_path_independence.py
+test_native_state_locked_exact_eta_family_path_independence.py
+native_state_locked_ugd_eta_normalization_rectangle.py
+test_native_state_locked_ugd_eta_normalization_rectangle.py
+\end{verbatim}
+
+\hypertarget{pr-200-stack}{%
+\subsection{PR \#200 stack}\label{pr-200-stack}}
+
+Candidate readable theorem surfaces are spread through the M3 stack PRs \#181-\#200. Keep all executable ledgers until exact file-level archive exists.
+
+\hypertarget{pr-242247254255277}{%
+\subsection{PR \#242/\#247/\#254/\#255/\#277}\label{pr-242247254255277}}
+
+Candidate deletion class:
+
+\begin{verbatim}
+manuscript theorem summaries duplicated by RKF theorum;
+status files that merely restate seam-integer / T03 conclusions.
+\end{verbatim}
+
+Keep source-audit and build files unless the publication bundle is separately archived.
+
+\hypertarget{cleanup-rule}{%
+\section{Cleanup rule}\label{cleanup-rule}}
+
+Use one MP cleanup branch per source PR branch. Do not delete across unrelated open branches in one blind operation. Future humans already have enough ruins to interpret.
+
+\begin{flushright}\small\texttt{RKF/theorum/MP\_CLEANUP\_CANDIDATES.md}\end{flushright}

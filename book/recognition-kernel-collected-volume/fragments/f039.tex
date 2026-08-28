@@ -1,0 +1,497 @@
+% source: RKF/theorum/37_native_two_sheet_hardy_compatibility_attachment.md
+\hypertarget{native-two-sheet-hardy-boundary-and-compatibility-transfer-theorem}{%
+\chapter{Native Two-Sheet Hardy Boundary and Compatibility-Transfer Theorem}\label{native-two-sheet-hardy-boundary-and-compatibility-transfer-theorem}}
+
+\hypertarget{purpose}{%
+\section{1. Purpose}\label{purpose}}
+
+The native prime--Gamma--debt source adapter is now constructed:
+
+\[
+\Xi_0=\mathcal A_{\rm mis}D_{\rm comp},
+\qquad
+\Xi_0^*\Xi_0=S_{0,-}^{\rm full}.
+\]
+
+The native metric graph also generates the physical odd boundary state. The
+remaining problem is not the existence of a source adapter and not the
+existence of the boundary functional. It is to place them in one actual
+source-dominating two-sheet chart.
+
+This stage proves the boundary half of that attachment exactly. The Hardy strip
+already carried by the native exponential spatial energy has an explicit
+Cauchy boundary kernel. Therefore the completion-boundary evaluation is a
+first moment of the declared two-sheet Hardy boundary values, not an imported
+row.
+
+The stage then identifies the only remaining displacement. The prime--Gamma
+mismatch uses the raw two-sheet chart, while the physical source uses that chart
+after the compatibility defect. The boundary density must therefore be
+transported through the same defect on its positive support.
+
+The corrected order is
+
+\begin{verbatim}
+native Hardy strip
+-> exact two-sheet Cauchy boundary density
+-> raw prime--Gamma two-sheet mismatch chart
+-> compatibility defect on that chart
+-> support-range test for the boundary density
+-> transformed boundary density
+-> source domination / direct T21 envelope
+-> completed-Weil cut covariance.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-two-sheet-hardy-chart}{%
+\section{2. Native two-sheet Hardy chart}\label{native-two-sheet-hardy-chart}}
+
+Let
+
+\[
+S_a=\{z\in\mathbb C:|\operatorname{Im}z|<a\},
+\qquad a=\frac32.
+\]
+
+For a native odd state, the exponential spatial channel gives a Hardy function
+\(\Phi_f\in H^2(S_a)\). Put
+
+\[
+\Phi_f^-(\xi)=\Phi_f(\xi-ia),
+\qquad
+\Phi_f^+(\xi)=\Phi_f(\xi+ia),
+\]
+
+and define the two-sheet chart
+
+\[
+\boxed{
+J_{\rm 2sh}f=(\Phi_f^-,\Phi_f^+)
+\in
+L^2\!\left(\mathbb R,\frac{d\xi}{2\pi};\mathbb C^2\right).
+}
+\]
+
+The source construction upstream uses these same two Hardy boundary channels
+for the prime two-sheet mismatch and Gamma oscillator mismatch.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{strip-cauchy-boundary-density}{%
+\section{3. Strip Cauchy boundary density}\label{strip-cauchy-boundary-density}}
+
+Let \(|y|<a\). Cauchy's formula on an expanding rectangle in the strip gives
+
+\[
+\boxed{
+\begin{aligned}
+\Phi(iy)
+={}&
+\int_{\mathbb R}
+\frac{-i\,\Phi^-(\xi)}{\xi-i(a+y)}\,\frac{d\xi}{2\pi}
+\\
+&+
+\int_{\mathbb R}
+\frac{i\,\Phi^+(\xi)}{\xi+i(a-y)}\,\frac{d\xi}{2\pi}.
+\end{aligned}
+}
+\tag{3.1}
+\]
+
+The signs swap if the opposite Fourier convention is used. The two sheet
+masses and their sum do not change.
+
+\hypertarget{theorem-3.1-exact-strip-boundary-first-moment}{%
+\subsection{Theorem 3.1 (Exact strip boundary first moment)}\label{theorem-3.1-exact-strip-boundary-first-moment}}
+
+There is a unique two-sheet Cauchy density \(k_{a,y}\) in the Hardy boundary
+space such that
+
+\[
+\boxed{
+\Phi(iy)=\langle k_{a,y},J_{\rm 2sh}\Phi\rangle.
+}
+\]
+
+Its sheet masses are
+
+\[
+\boxed{
+\|k_{a,y}^-\|^2
+=\frac{1}{2(a+y)},
+\qquad
+\|k_{a,y}^+\|^2
+=\frac{1}{2(a-y)},
+}
+\tag{3.2}
+\]
+
+and
+
+\[
+\boxed{
+\|k_{a,y}\|^2
+=\frac{a}{a^2-y^2}.
+}
+\tag{3.3}
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+Equation (3.1) is a bounded functional on the two boundary lines. The Riesz
+representer is obtained by reading off the two Cauchy kernels. Since
+
+\[
+\int_{\mathbb R}\frac{d\xi}{2\pi(\xi^2+c^2)}
+=\frac1{2c},
+\]
+
+one obtains (3.2); addition gives (3.3). ∎
+
+For
+
+\[
+a=\frac32,
+\qquad
+|y|=\frac12,
+\]
+
+one sheet has mass \(1/4\), the other has mass \(1/2\), and
+
+\[
+\boxed{
+\|k_{3/2,\,1/2}\|^2=\frac34.
+}
+\]
+
+Reflection swaps the two sheet masses and preserves their sum.
+
+The actual odd completion boundary is
+
+\[
+L_\partial f=\sqrt2\,\widehat f(i/2).
+\]
+
+Therefore
+
+\[
+\boxed{
+L_\partial f
+=
+\langle b_{\partial,{\rm 2sh}},J_{\rm 2sh}f\rangle,
+\qquad
+b_{\partial,{\rm 2sh}}
+=\sqrt2\,k_{3/2,\,\pm1/2},
+}
+\tag{3.4}
+\]
+
+followed by the declared odd/reflection projection. The sign of the evaluation
+height depends only on the pinned Fourier convention. Equation (3.4) is
+unchanged as a physical odd functional.
+
+Thus the actual boundary is now attached to the declared two-sheet Hardy chart.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{compatibility-displacement-of-the-source-chart}{%
+\section{4. Compatibility displacement of the source chart}\label{compatibility-displacement-of-the-source-chart}}
+
+Let \(J=J_{\rm 2sh}\). The raw positive mismatch analysis factors through this
+chart. Write it schematically as
+
+\[
+\mathcal A_{\rm mis}=\mathcal M_{\rm mis}J.
+\]
+
+The completed pure source is not the raw mismatch. It is obtained after the
+exact diagonal debt is paid:
+
+\[
+\Xi_0
+=\mathcal A_{\rm mis}D_{\rm comp}.
+\]
+
+On the two-sheet chart range define
+
+\[
+\boxed{
+C_{\rm comp}=JD_{\rm comp}J^*.
+}
+\tag{4.1}
+\]
+
+Then
+
+\[
+\boxed{
+JD_{\rm comp}=C_{\rm comp}J
+}
+\tag{4.2}
+\]
+
+and
+
+\[
+\Xi_0
+=\mathcal M_{\rm mis}C_{\rm comp}J.
+\]
+
+The boundary density in (3.4) pairs with \(Jf\), while the source event analysis
+sees \(C_{\rm comp}Jf\). This is the precise remaining attachment problem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{compatibility-transfer-theorem}{%
+\section{5. Compatibility-transfer theorem}\label{compatibility-transfer-theorem}}
+
+\hypertarget{theorem-5.1-boundary-transfer-through-the-source-defect}{%
+\subsection{Theorem 5.1 (Boundary transfer through the source defect)}\label{theorem-5.1-boundary-transfer-through-the-source-defect}}
+
+Let \(C\ge0\) be a contraction on a chart space and let
+
+\[
+L(f)=\langle b,Jf\rangle.
+\]
+
+The following are equivalent:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(b\in\operatorname{Ran}C^*\) on the positive support;
+\item
+  there exists a minimum-norm density
+  \[
+  \widetilde b=C^{\dagger,*}b
+  \]
+  such that
+  \[
+  L(f)=\langle\widetilde b,CJf\rangle;
+  \]
+\item
+  \(b\) vanishes on \(\ker C\).
+\end{enumerate}
+
+When these conditions hold, every raw source domination
+
+\[
+\|\Xi f\|^2
+\ge
+\langle CJf,A\,CJf\rangle
+\]
+
+gives
+
+\[
+\boxed{
+|L(f)|^2
+\le
+\langle\widetilde b,A^\dagger\widetilde b\rangle
+\,\|\Xi f\|^2.
+}
+\tag{5.1}
+\]
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+The equivalence is the support form of the Moore--Penrose range theorem. Under
+it,
+
+\[
+b=C^*\widetilde b,
+\]
+
+so
+
+\[
+L(f)=\langle\widetilde b,CJf\rangle.
+\]
+
+Apply Cauchy--Schwarz in the positive \(A\)-metric. ∎
+
+This theorem explains why an untransformed boundary mass table cannot be
+attached blindly to the post-debt source. The density consumed by the source
+ledger must be \(\widetilde b\), not merely \(b\).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{zero-remembers-the-compatibility-cut}{%
+\section{6. Zero remembers the compatibility cut}\label{zero-remembers-the-compatibility-cut}}
+
+If \(C\) has a kernel, a component of \(b\) in that kernel cannot be decoded by
+the physical source. It is not a small numerical error. It is directional
+cut memory.
+
+\hypertarget{corollary-6.1-zero-cut-support-gate}{%
+\subsection{Corollary 6.1 (Zero-cut support gate)}\label{corollary-6.1-zero-cut-support-gate}}
+
+\[
+\boxed{
+P_{\ker C}b=0
+}
+\tag{6.1}
+\]
+
+is necessary and sufficient for a finite compatibility-transferred boundary
+burden. A nonzero kernel component forces the source-relative burden to be
+infinite.
+
+This is the operator form of the doctrine
+
+\begin{verbatim}
+positive spectrum transports;
+zero spectrum remembers which side of the compatibility cut was lost.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{robust-source-loss-and-boundary-residual-theorem}{%
+\section{7. Robust source-loss and boundary-residual theorem}\label{robust-source-loss-and-boundary-residual-theorem}}
+
+Let \(\beta_{\rm env}<1\) be a chart envelope for a candidate transformed
+boundary density. Suppose the actual source dominates the chart with relative
+loss \(0\le\varepsilon_S<1\), and the remaining boundary pairing residual has
+source-relative norm at most \(\delta_\partial\). Then
+
+\[
+\boxed{
+\sqrt{\beta_{\rm actual}}
+\le
+\sqrt{\frac{\beta_{\rm env}}{1-\varepsilon_S}}
++\delta_\partial.
+}
+\tag{7.1}
+\]
+
+Therefore the actual decoder is contractive whenever the right side is below
+one.
+
+For the direct T21 envelope
+
+\[
+\beta_{\rm env}=0.8290856201657449,
+\]
+
+the available boundary-residual budgets are approximately
+
+\begin{verbatim}
+source loss 0%    0.0894586115031646
+source loss 5%    0.0658042467246887
+source loss 10%   0.0402051028325867.
+\end{verbatim}
+
+At ten percent source loss and residual \(0.04\), the robust burden remains
+strictly below one.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-generalized-calibrations}{%
+\section{8. Exact generalized calibrations}\label{exact-generalized-calibrations}}
+
+The executable Stage 3E packet verifies:
+
+\begin{verbatim}
+strip a=3/2, evaluation |y|=1/2:
+  sheet masses                    1/4 and 1/2
+  total evaluation-kernel mass   3/4
+
+compatibility-transfer model:
+  raw mismatch source             diag(4,9,16)
+  compatibility defect            diag(1/2,2/3,3/4)
+  completed source Gram           diag(1,4,9)
+  transformed/actual burden       397/5184
+
+zero-cut support model:
+  compatibility defect            diag(1/2,2/3,0)
+  supported burden                97/1296
+  nonzero kernel boundary         rejected.
+\end{verbatim}
+
+A wrong sheet orientation preserves coefficient masses but changes the boundary
+functional. Orientation still matters before the exact Cauchy density and
+compatibility transfer are fixed.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{actual-completed-weil-gate}{%
+\section{9. Actual completed-Weil gate}\label{actual-completed-weil-gate}}
+
+Stage 3E closes
+
+\[
+\boxed{
+L_\partial(f)
+=\langle b_{\partial,{\rm 2sh}},J_{\rm 2sh}f\rangle.
+}
+\]
+
+The remaining actual theorem is now only:
+
+\[
+\boxed{
+b_{\partial,{\rm 2sh}}
+\in\operatorname{Ran}C_{\rm comp}^*,}
+\tag{9.1}
+\]
+
+construct
+
+\[
+\boxed{
+\widetilde b_\partial
+=C_{\rm comp}^{\dagger,*}b_{\partial,{\rm 2sh}},}
+\tag{9.2}
+\]
+
+and prove that the T21 cut profile is a Loewner lower source chart for that
+transformed density:
+
+\[
+\boxed{
+\|\Xi_0f\|^2
+\ge
+(1-\varepsilon_S)
+\int
+\langle C_{\rm comp}J_{\rm 2sh}f,
+A_{\rm T21}
+C_{\rm comp}J_{\rm 2sh}f\rangle.
+}
+\tag{9.3}
+\]
+
+If (9.1)--(9.3) are exact, the T21 envelope gives
+
+\[
+\|c_\partial\|^2
+\le0.8290856201657449<1.
+\]
+
+A directed residual version is already licensed by (7.1).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{10. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+NATIVE HARDY TWO-SHEET CHART                         PROVED UPSTREAM
+STRIP CAUCHY BOUNDARY DENSITY                        PROVED
+ACTUAL COMPLETION BOUNDARY ATTACHED TO THAT CHART    PROVED
+COMPATIBILITY-TRANSFER RANGE THEOREM                 PROVED
+ZERO-CUT SUPPORT GATE                                PROVED
+ROBUST SOURCE-LOSS / BOUNDARY-RESIDUAL RULE          PROVED
+
+ACTUAL b_partial IN Ran(C_comp*)                     OPEN / NEXT
+ACTUAL TRANSFORMED DENSITY b_tilde_partial           OPEN / NEXT
+T21 PROFILE AS ACTUAL SOURCE DOMINATION              OPEN / NEXT
+ACTUAL COMPLETED-WEIL DECODER BOUND                  OPEN
+ACTUAL COMPLETED-WEIL CUT COVARIANCE                 OPEN
+RIEMANN HYPOTHESIS                                   NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/37\_native\_two\_sheet\_hardy\_compatibility\_attachment.md}\end{flushright}

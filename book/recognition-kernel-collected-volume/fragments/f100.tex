@@ -1,0 +1,143 @@
+% source: Publications/papers/curvature-information-duality/README.md
+\hypertarget{cid-1-curvatureinformation-duality-the-obstruction-is-metric-free}{%
+\chapter{CID-1 --- Curvature--information duality: the obstruction is metric-free}\label{cid-1-curvatureinformation-duality-the-obstruction-is-metric-free}}
+
+A \textbf{bridge capsule}. CFE-U certified that the obstruction to the
+memoryless limit is unique (a 1-dimensional obstruction space spanned by
+the loop residue). This capsule asks whether the \emph{information} side sees
+the same obstruction --- or a second, independent one.
+
+\textbf{The answer is a separation with an invariance:} the Hodge/Helmholtz
+split of a response \emph{depends} on the information metric; the obstruction
+\emph{does not}. The metric is a gauge on the decomposition and an invariant
+on the obstruction.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & The information metric at a declared rational point is g = Cov\_p(T), exact --- \textbf{no exponential or logarithm evaluated anywhere}. PD ⟺ statistics affinely independent; degenerate with explicit kernel otherwise; constants always in the kernel (matching CFE-U's ker d₀) & PASS \\
+\textbf{T2} & \textbf{Recognition ledger = law of total covariance:} g = g\_recognized + g\_discarded exactly (between-block + within-block), both PSD. Monotonicity follows as an \emph{identity}, not an inequality: recognition can lose information, never manufacture it. Sufficient partition discards exactly nothing; total collapse recognizes exactly nothing & PASS \\
+\textbf{T3} & \textbf{The obstruction is metric-free:} curvature is d, not ∇ --- no Christoffel of any metric enters. Euclidean, anisotropic, sheared and the information metric Cov\_p(T) itself all give the same residue, reproducing CFE-1's ladder −32\ldots+32 & PASS \\
+\textbf{T4} & \textbf{The split is not:} exact rational least squares gives ω = dΦ\_g + h\_g, genuine for each metric (closed part memoryless with an explicit potential, remainder g-orthogonal), and the splits \textbf{genuinely differ} --- yet ∮h\_g = 32 for every metric & PASS \\
+\textbf{T5} & For every metric the g-orthogonal complement of the memoryless space has rank \textbf{exactly 1} --- CFE-U's uniqueness seen through the information metric. Generators differ as vectors, all land in the same obstruction class. Control: a degenerate PSD form gives no well-posed split & PASS \\
+\end{longtable}
+
+\hypertarget{findings}{%
+\section{Findings}\label{findings}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{CID-F1.} Curvature and information are \textbf{dual descriptions of one
+  object}, not two obstructions. Every positive-definite information
+  metric reproduces CFE-U's rank-1 obstruction space exactly.
+\item
+  \textbf{CID-F2.} The law of total covariance \emph{is} a recognition ledger:
+  what the Eye map keeps and what it discards sum exactly to the whole,
+  with both parts PSD.
+\item
+  \textbf{CID-F3.} Monotonicity of information under coarse-graining is here
+  an \textbf{identity}, which is strictly stronger than the usual inequality.
+\end{itemize}
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+The exponential family's form is \textbf{declared}; only rational-point
+arithmetic is certified. Continuum information geometry, α-connections,
+dually flat structures and quantum (Fubini--Study / Bures / SLD) metrics
+are \textbf{not claimed}. The vault appendix named for Euler
+information--curvature duality \textbf{has not been read and is not the
+source} --- this is a bridge between two certified capsules of this
+corpus. Uniqueness inherits CFE-U's scope (the declared response
+algebra). RH / K0 / L0 / YM / QG untouched.
+
+\begin{verbatim}
+python certificates/cid1_curvature_information_duality.py
+python -m pytest tests -v
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{qth-1-quantum-recognition-information-the-ledger-becomes-an-inequality}{%
+\chapter{QTH-1 --- Quantum recognition information: the ledger becomes an inequality}\label{qth-1-quantum-recognition-information-the-ledger-becomes-an-inequality}}
+
+The question CID-1 left open, answered. CID-1 certified the \textbf{classical}
+recognition ledger g = g\_recognized + g\_discarded as an \textbf{exact identity}
+(law of total covariance). Does that shape survive quantum-ly?
+
+\textbf{It does not --- and the failure is exactly located.} 25 tests; 49 in
+this folder.
+
+\begin{quote}
+QFI = CFI(measurement) + discard, discard ≥ 0,
+vanishing \textbf{exactly} for an optimal measurement.
+\end{quote}
+
+An inequality with exact saturation, not an identity. And on the
+\textbf{commuting face} the identity is restored exactly --- the same shape as
+CFE-1's memoryless limit.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & Rational Bloch states; the SLD from an exact 4×4 rational solve, its defining equation verified as a matrix identity; QFI by \textbf{two independent routes} (solve vs closed Bloch form) agreeing in ℚ & PASS \\
+\textbf{T2} & CFI ≤ QFI on every rational measurement direction, \textbf{discard exactly 0} at the aligned direction and \textbf{exactly 1 (everything)} at the orthogonal one. The quantum ledger is an inequality with exact saturation & PASS \\
+\textbf{T3} & \textbf{One tensor, two certified halves.} Q\_ij = Tr(ρL\_iL\_j) splits exactly into a real symmetric part (CID-1's information metric, diagonal = QFI) and an imaginary antisymmetric part (mean Uhlmann curvature, exactly −1/2 here, zero diagonal). The antisymmetric half is nonzero \textbf{exactly when the SLDs fail to commute} --- the obstruction \emph{is} a curvature & PASS \\
+\textbf{T4} & The classical bookkeeping inside the outcome data still holds exactly, while the quantum discard is nonzero by an exactly computed amount \textbf{no partition of outcomes can see}. The remainder is strictly quantum & PASS \\
+\textbf{T5} & \textbf{The commuting face restores everything}: SLDs commute, Uhlmann curvature exactly 0, eigenbasis measurement optimal, discard exactly 0, and QFI equals CID-1's classical covariance route & PASS \\
+\textbf{T6} & A rational unitary rotation preserves QFI \textbf{exactly}; a depolarizing channel scales it by exactly λ². Information can be lost, never manufactured & PASS \\
+\end{longtable}
+
+\hypertarget{findings-1}{%
+\section{Findings}\label{findings-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{QTH-F1.} The recognition ledger is classically an \textbf{identity} and
+  quantum-ly an \textbf{inequality with exact saturation}.
+\item
+  \textbf{QTH-F2.} The quantum geometric tensor's symmetric half is CID-1's
+  object and its antisymmetric half is a CFE-style obstruction --- \textbf{one
+  tensor, two capsules}.
+\item
+  \textbf{QTH-F3.} The commuting face restores the classical identity exactly.
+\end{itemize}
+
+\textbf{Companion, not duplicate:} CFE-Q certified the Bloch/holonomy side of
+quantum CFE; this is the information side.
+
+Witness capsule (one qubit, explicit rational families) like CFE-Q --- not
+a general open-system or quantum-estimation theorem. Kubo--Mori/Bogoliubov
+metrics need logarithms and are \textbf{never evaluated}. \textbf{Not claimed:}
+entropy production, work, heat, or that the antisymmetric part is a
+physical Berry phase.
+
+\begin{flushright}\small\texttt{Publications/papers/curvature-information-duality/README.md}\end{flushright}

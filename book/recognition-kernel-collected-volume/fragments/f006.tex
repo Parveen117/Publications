@@ -1,0 +1,94 @@
+% source: RKF/SOURCE_PROVENANCE.md
+\hypertarget{source-provenance}{%
+\chapter{Source Provenance}\label{source-provenance}}
+
+\hypertarget{authoritative-imported-source}{%
+\section{Authoritative imported source}\label{authoritative-imported-source}}
+
+The first reviewer cartridge is imported from:
+
+\begin{verbatim}
+Repository: Parveen117/RH-Framework
+Source commit: c588ded973a395b5fce37c82f670616160979a2e
+Commit message: Archive passing native foundation certificate campaign
+\end{verbatim}
+
+The source commit is treated as an immutable import anchor.
+
+\hypertarget{archived-campaign-identity}{%
+\section{Archived campaign identity}\label{archived-campaign-identity}}
+
+\begin{verbatim}
+Campaign status:
+PASS_IMPLEMENTED_FOUNDATION_CERTIFICATE_CAMPAIGN
+
+Canonical campaign SHA-256:
+8728ab0319afe5fb6e6329deaee479cfa93f50bb4422ee863aaaf4f911dd9582
+\end{verbatim}
+
+Package result file hashes recorded by the archived campaign:
+
+\begin{verbatim}
+F00GHI_LOG_ARITHMETIC_ZETA_V0_1/result.json
+b5eff18191bc1834d57b8783a0f35c7214123d544d0ba6431d241e4227e150b6
+
+F00_F00E_EULER_V0_1/result.json
+c8db07cc20bb532ddf483bb56483ab43e3d717b765e7f9525fd8dafc2f380a41
+\end{verbatim}
+
+Package-reported canonical result hashes:
+
+\begin{verbatim}
+F00GHI_LOG_ARITHMETIC_ZETA_V0_1
+672865d994b1111a876b160a80858f78d3133f400351f0792715a8d8bee142bd
+
+F00_F00E_EULER_V0_1
+edc07e6bed39874251c0b75bb0e806a393a9b61343351fb40d70034fa66a2af5
+\end{verbatim}
+
+\hypertarget{byte-preservation-rule}{%
+\section{Byte-preservation rule}\label{byte-preservation-rule}}
+
+Files consumed by source-pin checks are copied without semantic renaming. Paths, historical namespaces, and line content remain source-identical to the imported commit.
+
+Cross-platform verifier code canonicalizes text line endings before Git-blob hashing so a clean Windows or Unix checkout verifies the same pinned source content.
+
+\hypertarget{public-overlay}{%
+\section{Public overlay}\label{public-overlay}}
+
+Public-facing documents in this repository are a reviewer overlay. They explain the imported cartridge under the Recognition Kernel Framework and RNKE terminology. The overlay does not change the imported mathematical source identity.
+
+\hypertarget{excluded-material}{%
+\section{Excluded material}\label{excluded-material}}
+
+The public export excludes:
+
+\begin{verbatim}
+private filing drafts;
+correspondence addresses;
+priority-application lists;
+private notebooks;
+cache and build directories;
+local machine paths;
+credentials and tokens;
+unreviewed experimental branches;
+unrelated private repository history.
+\end{verbatim}
+
+\hypertarget{change-rule}{%
+\section{Change rule}\label{change-rule}}
+
+Any modification to a pinned theorem source, implementation source, package specification, or verifier requires:
+
+\begin{verbatim}
+new source pins;
+new package version;
+new result JSON;
+new campaign hash;
+updated claim boundary;
+reproduction on a clean checkout.
+\end{verbatim}
+
+An old PASS artifact must never be presented as certifying modified sources.
+
+\begin{flushright}\small\texttt{RKF/SOURCE\_PROVENANCE.md}\end{flushright}

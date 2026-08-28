@@ -1,0 +1,576 @@
+% source: RKF/theorum/43_bilateral_jet_flow_recognition_capstone_theorem.md
+\hypertarget{bilateral-jet-flow-recognition-capstone-theorem}{%
+\chapter{Bilateral Jet-Flow Recognition Capstone Theorem}\label{bilateral-jet-flow-recognition-capstone-theorem}}
+
+\hypertarget{status-and-purpose}{%
+\section{1. Status and purpose}\label{status-and-purpose}}
+
+This theorem joins the certified cut-graded generator theorem with the typed
+lambda-Jacobian tower. Its purpose is to provide one lawful interface for a
+later physical adapter:
+
+\begin{verbatim}
+cut-graded generator
+-> bilateral Euler/recognition flow
+-> finite response jets
+-> explicit remainder
+-> nested recognition kernels
+-> target burden
+-> seam-curvature response
+-> fail-closed classification.
+\end{verbatim}
+
+The exact rational packet in
+\texttt{proof\_lab/bilateral\_jet\_flow\_capstone.py} verifies a finite nilpotent model and
+pins the candidate certificate hash. The theorem below is an abstract bounded-
+operator statement. Unbounded generators require the domain conditions stated
+in Section 10.
+
+The term \emph{bilateral strands} is used deliberately. A physical double-helical
+interpretation requires a separate adapter and is not smuggled in by drawing
+two arrows around a circle, humanity's traditional method of discovering
+unearned geometry.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-data}{%
+\section{2. Native data}\label{native-data}}
+
+Let \(\mathcal H\) and \(\mathcal Y\) be Hilbert spaces. Let
+
+\[
+J=J^*=J^{-1}
+\]
+
+be the primitive cut on \(\mathcal H\). Let \(G\) be a bounded generator and
+
+\[
+U_t=e^{tG}.
+\]
+
+Let
+
+\[
+B:\mathcal H\to\mathcal Y
+\]
+
+be a bounded observer. For the principal bilateral theorem assume
+
+\[
+JGJ=-G,
+\qquad BJ=B.
+\tag{2.1}
+\]
+
+The first condition says that the generator transports across the cut. The
+second says that the declared observer reads the cut-even output channel.
+
+Define the order-\(k\) observer jet
+
+\[
+\boxed{\Lambda_k:=BG^k,\qquad k\ge0.}
+\tag{2.2}
+\]
+
+and the finite jet observer
+
+\[
+\boxed{
+\mathcal A_Nx
+=(\Lambda_0x,\Lambda_1x,\ldots,\Lambda_Nx).
+}
+\tag{2.3}
+\]
+
+For a scalar target \(L\), define the order-\(N\) burden
+
+\[
+\boxed{
+\beta_N(L)
+=
+\sup_{\mathcal A_Nx\ne0}
+\frac{|Lx|^2}{\|\mathcal A_Nx\|^2}.
+}
+\tag{2.4}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{bilateral-flow-and-strand-closure}{%
+\section{3. Bilateral flow and strand closure}\label{bilateral-flow-and-strand-closure}}
+
+\hypertarget{theorem-3.1-bilateral-cut-conjugacy}{%
+\subsection{Theorem 3.1 (Bilateral cut conjugacy)}\label{theorem-3.1-bilateral-cut-conjugacy}}
+
+Under (2.1),
+
+\[
+\boxed{JU_tJ=U_{-t}.}
+\tag{3.1}
+\]
+
+Define the state channels
+
+\[
+\widehat J_t=U_t+U_{-t},
+\qquad
+\widehat C_t=U_t-U_{-t}.
+\tag{3.2}
+\]
+
+Then
+
+\[
+\boxed{\widehat J_t^2-\widehat C_t^2=4I,}
+\tag{3.3}
+\]
+
+and
+
+\[
+\boxed{\widehat J_t\widehat C_t=\widehat C_t\widehat J_t.}
+\tag{3.4}
+\]
+
+The forward and backward observer strands are
+
+\[
+S_+(t)=BU_t,
+\qquad
+S_-(t)=BU_{-t}.
+\tag{3.5}
+\]
+
+Their cut-conjugacy defect is
+
+\[
+\Delta_H(t)=BJU_tJ-BU_{-t}.
+\tag{3.6}
+\]
+
+Therefore
+
+\[
+\boxed{\Delta_H(t)=0.}
+\tag{3.7}
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+Functional calculus applied to \(JGJ=-G\) gives (3.1). Since \(U_tU_{-t}=I\)
+and both flows are functions of \(G\), the square and commutation identities
+follow. Equation (3.7) follows from \(BJ=B\). \(\square\)
+
+A nonzero \(\Delta_H\) is not a decorative error bar. It means that at least
+one of the declared cut, generator, observer or domain covariance conditions
+has failed.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{alternating-cut-parity-of-the-jet-tower}{%
+\section{4. Alternating cut parity of the jet tower}\label{alternating-cut-parity-of-the-jet-tower}}
+
+\hypertarget{theorem-4.1-jet-parity-ladder}{%
+\subsection{Theorem 4.1 (Jet parity ladder)}\label{theorem-4.1-jet-parity-ladder}}
+
+For every \(k\ge0\),
+
+\[
+\boxed{\Lambda_kJ=(-1)^k\Lambda_k.}
+\tag{4.1}
+\]
+
+Thus even jet levels are cut even and odd jet levels are cut odd.
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+From \(JGJ=-G\) one obtains \(GJ=-JG\), hence
+
+\[
+G^kJ=(-1)^kJG^k.
+\]
+
+Multiplying by \(B\) and using \(BJ=B\) proves (4.1). \(\square\)
+
+This is the precise bridge between the generator grading and the recursive
+response tower. Parity is inherited at every order rather than assigned after
+seeing a convenient pattern.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{finite-jet-reconstruction-and-remainder}{%
+\section{5. Finite jet reconstruction and remainder}\label{finite-jet-reconstruction-and-remainder}}
+
+\hypertarget{theorem-5.1-observed-flow-jet-formula}{%
+\subsection{Theorem 5.1 (Observed-flow jet formula)}\label{theorem-5.1-observed-flow-jet-formula}}
+
+For every integer \(N\ge0\) and \(t\ge0\),
+
+\[
+\boxed{
+BU_t
+=
+\sum_{k=0}^{N}\frac{t^k}{k!}\Lambda_k
++R_{N+1}(t),
+}
+\tag{5.1}
+\]
+
+where
+
+\[
+\boxed{
+R_{N+1}(t)
+=
+\frac1{N!}
+\int_0^t(t-s)^NBG^{N+1}U_s\,ds.
+}
+\tag{5.2}
+\]
+
+Consequently,
+
+\[
+\boxed{
+\|R_{N+1}(t)\|
+\le
+\frac{t^{N+1}}{(N+1)!}
+\|B\|\,\|G\|^{N+1}e^{t\|G\|}.
+}
+\tag{5.3}
+\]
+
+If \(G^{d+1}=0\), then
+
+\[
+\boxed{R_{d+1}(t)=0}
+\tag{5.4}
+\]
+
+and the order-\(d\) jet reconstructs the observed flow exactly.
+
+\hypertarget{proof-2}{%
+\subsubsection{Proof}\label{proof-2}}
+
+Apply the integral remainder formula for the bounded exponential series and
+left-compose with \(B\). Nilpotent termination gives (5.4). \(\square\)
+
+Equation (5.2) is the repository's exact native series/remainder interface. It
+can later consume a separately proved Madhava calculus, but the present
+repository contains no Madhava-named operator or certificate, so that name is
+not claimed here.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{bilateral-even-and-odd-response-strands}{%
+\section{6. Bilateral even and odd response strands}\label{bilateral-even-and-odd-response-strands}}
+
+Define
+
+\[
+S_{\mathrm e}(t)
+=\frac12(S_+(t)+S_-(t)),
+\qquad
+S_{\mathrm o}(t)
+=\frac12(S_+(t)-S_-(t)).
+\tag{6.1}
+\]
+
+\hypertarget{theorem-6.1-bilateral-strand-reconstruction}{%
+\subsection{Theorem 6.1 (Bilateral strand reconstruction)}\label{theorem-6.1-bilateral-strand-reconstruction}}
+
+Whenever the exponential series converges,
+
+\[
+\boxed{
+S_{\mathrm e}(t)
+=
+\sum_{m\ge0}\frac{t^{2m}}{(2m)!}\Lambda_{2m},
+}
+\tag{6.2}
+\]
+
+\[
+\boxed{
+S_{\mathrm o}(t)
+=
+\sum_{m\ge0}\frac{t^{2m+1}}{(2m+1)!}\Lambda_{2m+1}.
+}
+\tag{6.3}
+\]
+
+Moreover,
+
+\[
+\boxed{S_+=S_{\mathrm e}+S_{\mathrm o},
+\qquad
+S_-=S_{\mathrm e}-S_{\mathrm o}.}
+\tag{6.4}
+\]
+
+\hypertarget{proof-3}{%
+\subsubsection{Proof}\label{proof-3}}
+
+Add and subtract the power series for \(BU_t\) and \(BU_{-t}\). \(\square\)
+
+These are the abstract two strands available for a later helical adapter. A
+physical braid, phase angle or twist memory must be defined from physical data
+and proved to intertwine these strands.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{recognition-kernels-and-first-repair-order}{%
+\section{7. Recognition kernels and first repair order}\label{recognition-kernels-and-first-repair-order}}
+
+Let
+
+\[
+K_N=\ker\mathcal A_N.
+\]
+
+\hypertarget{theorem-7.1-monotone-blindness-reduction}{%
+\subsection{Theorem 7.1 (Monotone blindness reduction)}\label{theorem-7.1-monotone-blindness-reduction}}
+
+For every \(N\),
+
+\[
+\boxed{K_{N+1}\subseteq K_N.}
+\tag{7.1}
+\]
+
+For a target \(L\), define its first recognition order by
+
+\[
+\boxed{
+\nu(L)
+=
+\inf\{N:\ K_N\subseteq\ker L\}.
+}
+\tag{7.2}
+\]
+
+If \(\nu(L)=r<\infty\), then the target is blind through order \(r-1\) and is
+repaired at order \(r\).
+
+\hypertarget{proof-4}{%
+\subsubsection{Proof}\label{proof-4}}
+
+\(\mathcal A_{N+1}\) contains every component of \(\mathcal A_N\) plus one
+additional jet layer, so its common kernel can only shrink. Equation (7.2) is
+therefore well defined whenever some finite tower recognizes the target.
+\(\square\)
+
+The theorem does not say that every additional layer is useful. It says that a
+new layer cannot restore a direction already excluded by the earlier observer.
+Strict repair must be demonstrated target by target.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{decoder-burden-and-admissibility}{%
+\section{8. Decoder burden and admissibility}\label{decoder-burden-and-admissibility}}
+
+Whenever \(\beta_N(L)\) is finite, the Recognition-Kernel theorem supplies a
+minimum decoder \(c_{L,N}\) satisfying
+
+\[
+Lx=\langle\mathcal A_Nx,c_{L,N}\rangle,
+\qquad
+\|c_{L,N}\|^2=\beta_N(L).
+\tag{8.1}
+\]
+
+The exact admissibility criterion is
+
+\[
+\boxed{
+\mathcal A_N^*\mathcal A_N-L^*L\ge0
+\iff
+\beta_N(L)\le1.
+}
+\tag{8.2}
+\]
+
+Thus higher-order recognition and low decoder burden are separate obligations:
+a target may become visible yet remain too expensive to certify at unit
+reserve.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{seam-curvature-consumed-by-the-jet-observer}{%
+\section{9. Seam curvature consumed by the jet observer}\label{seam-curvature-consumed-by-the-jet-observer}}
+
+Now allow a general bounded generator
+
+\[
+G=G_{\mathrm e}+G_{\mathrm o},
+\qquad
+JG_{\mathrm e}J=G_{\mathrm e},
+\qquad
+JG_{\mathrm o}J=-G_{\mathrm o}.
+\tag{9.1}
+\]
+
+Define the cut loop
+
+\[
+\mathscr H_J(t)=Je^{tG}Je^{tG}.
+\tag{9.2}
+\]
+
+The universal-generator theorem gives
+
+\[
+\log\mathscr H_J(t)
+=
+2tG_{\mathrm e}
++t^2[G_{\mathrm e},G_{\mathrm o}]
++O(t^3).
+\tag{9.3}
+\]
+
+Therefore the observed quadratic seam coefficient is
+
+\[
+\boxed{
+[t^2]B\log\mathscr H_J(t)
+=B[G_{\mathrm e},G_{\mathrm o}].
+}
+\tag{9.4}
+\]
+
+Equation (9.4) is the exact abstract curvature adapter. A physical model must
+still prove what its measured response packet \(B\) is and why the right-hand
+side represents the intended physical curvature.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{capstone-classification}{%
+\section{10. Capstone classification}\label{capstone-classification}}
+
+For one declared target and tower depth, assign:
+
+\begin{verbatim}
+OPEN_SEAM
+    if the bilateral closure defect is nonzero;
+
+ABSTAIN
+    if the target remains blind or no finite decoder exists;
+
+BURDEN_EXCEEDS_ONE
+    if the target is visible but beta_N(L) > 1;
+
+HIGHER_LAYER_REPAIR
+    if the target was blind at a lower layer, becomes visible at N,
+    and beta_N(L) <= 1;
+
+CLOSED
+    if the target is already visible, the closure defect vanishes,
+    and beta_N(L) <= 1.
+\end{verbatim}
+
+This classification is fail-closed: algebraic inconsistency is checked before
+predictive ambition.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-rational-certificate}{%
+\section{11. Exact rational certificate}\label{exact-rational-certificate}}
+
+The finite certificate uses
+
+\[
+J=\operatorname{diag}(1,-1,1,-1),
+\]
+
+\[
+G=
+\begin{pmatrix}
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1\\
+0&0&0&0
+\end{pmatrix},
+\qquad G^4=0,
+\]
+
+and
+
+\[
+B=(1,0,0,0).
+\]
+
+Then
+
+\[
+BG^0=e_1^*,\quad BG=e_2^*,\quad BG^2=e_3^*,\quad BG^3=e_4^*,
+\]
+
+so the jet observers have ranks
+
+\[
+1,2,3,4
+\]
+
+and kernel dimensions
+
+\[
+3,2,1,0.
+\]
+
+The target
+
+\[
+L=\frac12e_4^*
+\]
+
+is blind through second order and repaired at third order. Since the full jet
+observer is the identity,
+
+\[
+\beta_3(L)=\frac14,
+\qquad
+1-\beta_3(L)=\frac34.
+\]
+
+The certificate also uses a wrong-cut negative control and verifies that its
+bilateral closure defect is nonzero.
+
+Expected status:
+
+\begin{verbatim}
+PASS_BILATERAL_JET_FLOW_CAPSTONE_CANDIDATE
+\end{verbatim}
+
+Expected SHA-256:
+
+\begin{verbatim}
+4f0f31183c6de9b354fbc90134cfcd14c8d6f55270f41c1e286f719c0e06b091
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{analytic-and-physical-claim-boundary}{%
+\section{12. Analytic and physical claim boundary}\label{analytic-and-physical-claim-boundary}}
+
+\begin{verbatim}
+BOUNDED CUT-ODD BILATERAL FLOW                         PROVED
+JET PARITY LADDER                                      PROVED
+BOUNDED OBSERVED-FLOW REMAINDER FORMULA                PROVED
+NILPOTENT EXACT JET RECONSTRUCTION                     PROVED
+BILATERAL EVEN/ODD STRAND RECONSTRUCTION               PROVED
+MONOTONE RECOGNITION-KERNEL REDUCTION                  PROVED
+TARGET FIRST-RECOGNITION ORDER                         PROVED
+DECODER BURDEN ADMISSIBILITY                           INHERITED / PROVED
+OBSERVED SEAM-CURVATURE COEFFICIENT                    PROVED
+EXACT RATIONAL FINITE CERTIFICATE                      LOCAL PASS
+
+UNBOUNDED GENERATOR DOMAIN CLOSURE                     REQUIRES DOMAIN PINS
+PHYSICAL DOUBLE-HELIX IDENTIFICATION                   NOT CLAIMED
+MADHAVA-NAMED CALCULUS                                 NOT PRESENT IN REPO
+NUCLEAR CUT / OBSERVER / TARGET ADAPTER                NEXT PHYSICAL THEOREM
+UNIVERSAL PREDICTIVE IMPROVEMENT                       NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/43\_bilateral\_jet\_flow\_recognition\_capstone\_theorem.md}\end{flushright}

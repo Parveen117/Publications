@@ -1,0 +1,622 @@
+% source: RH-Framework/theorems/T01_E_NATIVE_REFINEMENT_COUNT_MEASURE.md
+\hypertarget{t01-e1e2e3-native-refinement-count-content-and-simple-integrals}{%
+\chapter{T01-E1/E2/E3 --- Native Refinement-Count Content and Simple Integrals}\label{t01-e1e2e3-native-refinement-count-content-and-simple-integrals}}
+
+\textbf{Classification:} \texttt{PROVED}
+
+\textbf{Foundational origin:} \texttt{NATIVE\_DERIVED}
+
+\textbf{Continuous native measure classification:} \texttt{OPEN}
+
+This theorem constructs a finite refinement content and its symmetric-difference
+completion before introducing Haar measure, Lebesgue measure, a Jacobian, or an
+ordinary \(L^p\) space.
+
+It does \textbf{not} yet prove a sigma-additive measure on the actual continuous UGD
+carrier. The completed object below is a complete finite-content algebra. The
+continuous-function and actual-UGD adapters remain separate gates.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-refinement-grids}{%
+\section{1. Native refinement grids}\label{native-refinement-grids}}
+
+A refinement grid is a triple
+
+\[
+R=(n_s,n_t,n_\alpha),
+\qquad
+n_s,n_t,n_\alpha\in\mathbb N_{>0}.
+\tag{1.1}
+\]
+
+The three entries count subdivisions in:
+
+\begin{verbatim}
+scale-refinement direction;
+lifted phase-memory direction;
+circular seam direction.
+\end{verbatim}
+
+At this stage these are native partition channels. They are not assumed to be
+ordinary real coordinates.
+
+A cell is indexed by
+
+\[
+c=(j_s,j_t,j_\alpha),
+\qquad
+j_s,j_t\in\mathbb Z,
+\quad
+j_\alpha\in\mathbb Z/n_\alpha\mathbb Z.
+\tag{1.2}
+\]
+
+Define the reciprocal refinement content of one cell by
+
+\[
+\boxed{
+\nu_R(c)=\frac{1}{n_sn_tn_\alpha}.
+}
+\tag{1.3}
+\]
+
+The value is a positive cut rational. No real length, volume form, or external
+measure is primitive.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{finite-native-cylinders}{%
+\section{2. Finite native cylinders}\label{finite-native-cylinders}}
+
+A finite native cylinder is a finite set of cells on one grid:
+
+\[
+A=(R,C),
+\qquad
+C\subset
+\mathbb Z\times\mathbb Z\times
+\mathbb Z/n_\alpha\mathbb Z.
+\tag{2.1}
+\]
+
+Its content is
+
+\[
+\boxed{
+\nu(A)=\frac{|C|}{n_sn_tn_\alpha}.
+}
+\tag{2.2}
+\]
+
+Repeated cell indices are identified before counting. Thus content depends on
+the represented finite cylinder, not on a list presentation.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{refinement}{%
+\section{3. Refinement}\label{refinement}}
+
+Let
+
+\[
+R'=(n_s',n_t',n_\alpha')
+\]
+
+refine \(R\), meaning each denominator of \(R'\) is a positive integer multiple
+of the corresponding denominator of \(R\). Put
+
+\[
+q_s=\frac{n_s'}{n_s},
+\qquad
+q_t=\frac{n_t'}{n_t},
+\qquad
+q_\alpha=\frac{n_\alpha'}{n_\alpha}.
+\tag{3.1}
+\]
+
+Each coarse cell is replaced by exactly
+
+\[
+q_sq_tq_\alpha
+\tag{3.2}
+\]
+
+fine cells.
+
+\hypertarget{theorem-3.1-refinement-invariance}{%
+\subsection{Theorem 3.1 --- Refinement invariance}\label{theorem-3.1-refinement-invariance}}
+
+For every finite cylinder \(A\),
+
+\[
+\boxed{
+\nu(\operatorname{Ref}_{R'}A)=\nu(A).
+}
+\tag{3.3}
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+If \(A\) contains \(m\) coarse cells, its refinement contains
+\(mq_sq_tq_\alpha\) fine cells. Therefore
+
+\[
+\begin{aligned}
+\nu(\operatorname{Ref}_{R'}A)
+&=
+\frac{mq_sq_tq_\alpha}
+{n_s'n_t'n_\alpha'}\\
+&=
+\frac{m}{n_sn_tn_\alpha}
+=
+u(A).
+\end{aligned}
+\]
+
+QED.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{common-refinement-and-boolean-operations}{%
+\section{4. Common refinement and Boolean operations}\label{common-refinement-and-boolean-operations}}
+
+For grids \(R\) and \(S\), define their common refinement coordinatewise by
+least common multiples:
+
+\[
+R\vee S
+=
+(\operatorname{lcm}(n_s,m_s),
+ \operatorname{lcm}(n_t,m_t),
+ \operatorname{lcm}(n_\alpha,m_\alpha)).
+\tag{4.1}
+\]
+
+Refine both cylinders to \(R\vee S\), then define union, intersection,
+difference, and symmetric difference by ordinary finite-cell operations.
+Refinement invariance shows that the resulting content is independent of the
+chosen common refinement.
+
+\hypertarget{theorem-4.1-finite-content-identity}{%
+\subsection{Theorem 4.1 --- Finite-content identity}\label{theorem-4.1-finite-content-identity}}
+
+For finite cylinders \(A,B\),
+
+\[
+\boxed{
+\nu(A\cup B)+\nu(A\cap B)=\nu(A)+\nu(B).
+}
+\tag{4.2}
+\]
+
+In particular, if \(A\cap B=\varnothing\), then
+
+\[
+\nu(A\cup B)=\nu(A)+\nu(B).
+\tag{4.3}
+\]
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Move to a common refinement. Every cell belongs to exactly one of
+
+\[
+A\setminus B,
+\quad
+B\setminus A,
+\quad
+A\cap B.
+\]
+
+Count the three disjoint finite sets and multiply by the common cell content.
+QED.
+
+The symmetric-difference identity is
+
+\[
+\boxed{
+\nu(A\triangle B)
+=
+u(A)+\nu(B)-2\nu(A\cap B).
+}
+\tag{4.4}
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-translation-invariance}{%
+\section{5. Native translation invariance}\label{native-translation-invariance}}
+
+For integer shifts
+
+\[
+h=(h_s,h_t,h_\alpha),
+\]
+
+define
+
+\[
+T_h(j_s,j_t,j_\alpha)
+=
+(j_s+h_s,j_t+h_t,j_\alpha+h_\alpha),
+\tag{5.1}
+\]
+
+with the seam coordinate reduced modulo \(n_\alpha\).
+
+\hypertarget{theorem-5.1}{%
+\subsection{Theorem 5.1}\label{theorem-5.1}}
+
+\[
+\boxed{
+\nu(T_hA)=\nu(A).
+}
+\tag{5.2}
+\]
+
+\hypertarget{proof-2}{%
+\subsection{Proof}\label{proof-2}}
+
+Translation is a bijection of the cell index set on a fixed grid. It preserves
+the number of cells and therefore preserves reciprocal-count content. QED.
+
+This is native translation invariance on the refinement atlas. It is not yet a
+Haar theorem on a locally compact group.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{symmetric-difference-gauge}{%
+\section{6. Symmetric-difference gauge}\label{symmetric-difference-gauge}}
+
+Define
+
+\[
+\boxed{
+\delta(A,B)=\nu(A\triangle B).
+}
+\tag{6.1}
+\]
+
+After passing to common refinements, finite-set identities give
+
+\[
+\delta(A,B)\ge0,
+\qquad
+\delta(A,B)=\delta(B,A),
+\tag{6.2}
+\]
+
+and
+
+\[
+A\triangle C
+\subseteq
+(A\triangle B)\cup(B\triangle C).
+\tag{6.3}
+\]
+
+Consequently
+
+\[
+\boxed{
+\delta(A,C)
+\le
+\delta(A,B)+\delta(B,C).
+}
+\tag{6.4}
+\]
+
+Two cylinder presentations have zero distance precisely when their common
+refinements contain the same cells.
+
+\hypertarget{lemma-6.1-content-continuity}{%
+\subsection{Lemma 6.1 --- Content continuity}\label{lemma-6.1-content-continuity}}
+
+\[
+\boxed{
+|\nu(A)-\nu(B)|\le\delta(A,B).
+}
+\tag{6.5}
+\]
+
+\hypertarget{proof-3}{%
+\subsection{Proof}\label{proof-3}}
+
+On a common refinement,
+
+\[
+\nu(A)-\nu(B)
+=
+u(A\setminus B)-\nu(B\setminus A).
+\]
+
+Taking the ordered rational absolute value yields
+
+\[
+|\nu(A)-\nu(B)|
+\le
+\nu(A\setminus B)+\nu(B\setminus A)
+=
+u(A\triangle B).
+\]
+
+QED.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-content-algebra-completion}{%
+\section{7. Native content-algebra completion}\label{native-content-algebra-completion}}
+
+A sequence \((A_n)\) of finite native cylinders is \textbf{refinement-content Cauchy}
+when, for every positive cut rational \(\varepsilon\), there exists \(N\) such
+that
+
+\[
+\delta(A_m,A_n)<\varepsilon
+\qquad(m,n\ge N).
+\tag{7.1}
+\]
+
+Two such sequences are equivalent when
+
+\[
+\delta(A_n,B_n)\longrightarrow0
+\tag{7.2}
+\]
+
+in rational-threshold language.
+
+Define
+
+\[
+\boxed{
+\mathfrak M_\Sigma^{\mathrm{ref}}
+=
+\{\text{refinement-content Cauchy presentations}\}/\sim_\delta.
+}
+\tag{7.3}
+\]
+
+\hypertarget{theorem-7.1-complete-native-content-algebra}{%
+\subsection{Theorem 7.1 --- Complete native content algebra}\label{theorem-7.1-complete-native-content-algebra}}
+
+Union, intersection, difference, symmetric difference, and translation extend
+to \(\mathfrak M_\Sigma^{\mathrm{ref}}\). The content extends uniquely by
+
+\[
+\boxed{
+\widehat\nu([A_n])
+=\lim_n\nu(A_n),
+}
+\tag{7.4}
+\]
+
+where the limit is taken in the cut-rational completion.
+
+The extended content is nonnegative, finitely additive on disjoint completed
+classes, translation invariant, and satisfies
+
+\[
+|\widehat\nu(X)-\widehat\nu(Y)|
+\le
+\widehat\delta(X,Y).
+\tag{7.5}
+\]
+
+\hypertarget{proof-4}{%
+\subsection{Proof}\label{proof-4}}
+
+By \texttt{(6.5)}, \((\nu(A_n))\) is cut-Cauchy whenever \((A_n)\) is
+\(\delta\)-Cauchy. Equation \texttt{(6.5)} also proves independence of representatives.
+
+Finite-set inclusions give the Lipschitz estimates
+
+\[
+\delta(A\cup C,B\cup D)
+\le
+\delta(A,B)+\delta(C,D),
+\tag{7.6}
+\]
+
+and analogous estimates for intersection, difference, and symmetric difference.
+Thus Boolean-ring operations descend to Cauchy classes. Translation is an
+isometry by \texttt{(5.2)}.
+
+Finite additivity is inherited by approximating disjoint completed classes with
+finite cylinders whose overlaps tend to zero in content. Completeness follows
+from the Cauchy-presentation diagonal construction using \(\delta\)-entourages.
+QED.
+
+This theorem proves a complete finite-content algebra. It does not yet claim a
+sigma-algebra or countable additivity for arbitrary completed families.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{nontrivial-cauchy-cylinder}{%
+\section{8. Nontrivial Cauchy cylinder}\label{nontrivial-cauchy-cylinder}}
+
+Let \(R_n=(2^n,1,1)\), and let \(S_n\) contain the first
+\(2^n-1\) scale cells of one unit aperture. Then
+
+\[
+\nu(S_n)=1-2^{-n}.
+\tag{8.1}
+\]
+
+For \(m>n\),
+
+\[
+\delta(S_n,S_m)
+=2^{-n}-2^{-m}
+<2^{-n}.
+\tag{8.2}
+\]
+
+Thus \((S_n)\) is refinement-content Cauchy and represents a completed cylinder
+of content one. The object is constructed through cell refinement, not by first
+naming a real interval.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-simple-functions}{%
+\section{9. Native simple functions}\label{native-simple-functions}}
+
+A finite native simple function on a grid is a finite assignment
+
+\[
+f:C_R\to\mathbb K_\Sigma^0.
+\tag{9.1}
+\]
+
+Zero values may be omitted. Refinement copies a coarse value to all fine cells
+inside the coarse cell.
+
+Define the tail integral
+
+\[
+\boxed{
+\mathcal I_{\mathrm{tail}}(f)
+=
+\frac{1}{n_sn_tn_\alpha}
+\sum_{c}D_\Sigma(f(c)),
+}
+\tag{9.2}
+\]
+
+and the recognition integral
+
+\[
+\boxed{
+\mathcal I_{\mathrm{rec}}(f)
+=
+\frac{1}{n_sn_tn_\alpha}
+\sum_c N_\Sigma(f(c)).
+}
+\tag{9.3}
+\]
+
+\hypertarget{theorem-9.1-refinement-invariance}{%
+\subsection{Theorem 9.1 --- Refinement invariance}\label{theorem-9.1-refinement-invariance}}
+
+For every refinement \(R'\succ R\),
+
+\[
+\mathcal I_{\mathrm{tail}}(\operatorname{Ref}_{R'}f)
+=
+\mathcal I_{\mathrm{tail}}(f),
+\tag{9.4}
+\]
+
+\[
+\mathcal I_{\mathrm{rec}}(\operatorname{Ref}_{R'}f)
+=
+\mathcal I_{\mathrm{rec}}(f).
+\tag{9.5}
+\]
+
+\hypertarget{proof-5}{%
+\subsection{Proof}\label{proof-5}}
+
+Each value is copied to exactly \(q_sq_tq_\alpha\) fine cells, while fine cell
+content is divided by the same factor. QED.
+
+\hypertarget{theorem-9.2-translation-invariance}{%
+\subsection{Theorem 9.2 --- Translation invariance}\label{theorem-9.2-translation-invariance}}
+
+For every integer cell translation,
+
+\[
+\mathcal I_{\mathrm{tail}}(T_hf)
+=
+\mathcal I_{\mathrm{tail}}(f),
+\qquad
+\mathcal I_{\mathrm{rec}}(T_hf)
+=
+\mathcal I_{\mathrm{rec}}(f).
+\tag{9.6}
+\]
+
+The proof is finite reindexing.
+
+These integrals are native finite sums. Their Cauchy completions into general
+integrable native functions remain T01-E4.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{foundational-exclusion-boundary}{%
+\section{10. Foundational exclusion boundary}\label{foundational-exclusion-boundary}}
+
+The construction above does not use as definitions or theorem sources:
+
+\begin{verbatim}
+Haar measure;
+Lebesgue measure;
+Caratheodory extension;
+real-coordinate volume;
+Jacobian density;
+ordinary Lp spaces;
+floating-point arithmetic.
+\end{verbatim}
+
+The implementation core uses exact integer counts and \texttt{Fraction} coordinates.
+The Python type is a model of rational refinement content, not the mathematical
+definition.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{later-coordinate-shadow}{%
+\section{11. Later coordinate shadow}\label{later-coordinate-shadow}}
+
+After an actual UGD refinement adapter is proved, one may attempt to identify the
+three native partition channels with the normalized coordinates
+
+\[
+(u,t,\alpha).
+\]
+
+Only then may one prove that \(\widehat\nu\) corresponds to flat coordinate
+content and subsequently that the original \((\phi,\sigma,k)\) chart has density
+proportional to \(\sigma^{-2}\).
+
+That future statement would be a coordinate-shadow theorem. The density may not
+be used to generate the native content retroactively.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-certificate}{%
+\section{12. Exact certificate}\label{exact-certificate}}
+
+The expected status is
+
+\begin{verbatim}
+PASS_NATIVE_REFINEMENT_COUNT_CONTENT_AND_SIMPLE_INTEGRALS
+\end{verbatim}
+
+The certificate checks exact refinement invariance, Boolean identities,
+translation invariance, symmetric-difference continuity, a nontrivial Cauchy
+slab, and refinement/translation invariance of both native simple integrals.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{remaining-gates}{%
+\section{13. Remaining gates}\label{remaining-gates}}
+
+\begin{verbatim}
+T01-E1 NATIVE REFINEMENT CONTENT                  PROVED
+T01-E2 COMPLETE NATIVE CONTENT ALGEBRA            PROVED
+T01-E3 NATIVE SIMPLE TAIL/RECOGNITION INTEGRALS   PROVED
+
+T01-E4 SIMPLE-FUNCTION CAUCHY COMPLETIONS          OPEN
+T01-E5 ACTUAL UGD REFINEMENT-CHANNEL ADAPTER       OPEN
+T01-E6 HAAR/JACOBIAN COORDINATE SHADOW             OPEN
+ACTUAL MP PATH-ATLAS ADAPTER                       OPEN
+NATIVE STATE-PACKET GENERATION                     OPEN
+TARGET FAITHFULNESS                                OPEN
+NATIVE SHUNYA                                      OPEN
+RIEMANN HYPOTHESIS                                 OPEN
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RH-Framework/theorems/T01\_E\_NATIVE\_REFINEMENT\_COUNT\_MEASURE.md}\end{flushright}

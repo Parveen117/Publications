@@ -1,0 +1,171 @@
+% source: RKF/theorum/thermodynamics/03_canonical_response_cost_barrier.md
+\hypertarget{canonical-thermodynamic-response-cost-and-barrier-theorem}{%
+\chapter{Canonical Thermodynamic Response-Cost and Barrier Theorem}\label{canonical-thermodynamic-response-cost-and-barrier-theorem}}
+
+\hypertarget{canonical-response-frame}{%
+\section{1. Canonical response frame}\label{canonical-response-frame}}
+
+Let the four thermodynamic response columns be
+
+\[
+\rho_X(x)\in\mathcal Y,
+\qquad X\in\{p,v,s,t\},
+\]
+
+with synthesis map
+
+\[
+T_x:\mathbb C^4\to\mathcal Y,
+\qquad T_xe_X=\rho_X(x).
+\]
+
+Define the compatibility Gram matrix
+
+\[
+M_x=T_x^*T_x.
+\]
+
+On
+
+\[
+\mathcal S_{\mathrm{th}}(x)=(\ker M_x)^\perp,
+\]
+
+define
+
+\[
+\boxed{
+J_{\mathrm{th}}(x)=T_xM_x^{-1/2}.
+}
+\]
+
+Then
+
+\[
+J_{\mathrm{th}}(x)^*J_{\mathrm{th}}(x)=I_{\mathcal S_{\mathrm{th}}(x)}.
+\]
+
+\hypertarget{canonical-source-to-response-coupling}{%
+\section{2. Canonical source-to-response coupling}\label{canonical-source-to-response-coupling}}
+
+Let \(J_q\) be an isometric reconstruction of a declared native source block and let \(\mathcal C\) be the native channel isometry. Define
+
+\[
+\boxed{
+B_q(x)=J_{\mathrm{th}}(x)^*\mathcal C J_q.
+}
+\]
+
+Let
+
+\[
+H_{\mathrm{th}}(x)>0
+\]
+
+be a stable response metric obtained from positive susceptibilities or compatibility-Gram whitening.
+
+Define the response cost
+
+\[
+\boxed{
+Q_q(x)=B_q(x)^*H_{\mathrm{th}}(x)B_q(x)\ge0.
+}
+\]
+
+\hypertarget{theorem-2.1-bounded-thermodynamic-response-barrier}{%
+\section{Theorem 2.1 (bounded thermodynamic response barrier)}\label{theorem-2.1-bounded-thermodynamic-response-barrier}}
+
+Define
+
+\[
+A_q=e^{-Q_q/2},
+\qquad
+\boxed{
+W_q=I-e^{-Q_q}.
+}
+\]
+
+Then
+
+\[
+\boxed{0\le W_q<I}
+\]
+
+and
+
+\[
+\boxed{
+\ker W_q=\ker Q_q=\ker B_q.
+}
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+Since \(H_{\mathrm{th}}>0\),
+
+\[
+Q_q=(H_{\mathrm{th}}^{1/2}B_q)^*(H_{\mathrm{th}}^{1/2}B_q)\ge0,
+\]
+
+and
+
+\[
+\ker Q_q=\ker(H_{\mathrm{th}}^{1/2}B_q)=\ker B_q.
+\]
+
+Functional calculus on the nonnegative operator \(Q_q\) gives
+
+\[
+0<e^{-Q_q}\le I,
+\]
+
+hence \(0\le W_q<I\). The scalar function \(1-e^{-t}\) vanishes exactly at \(t=0\), so
+
+\[
+\ker W_q=\ker Q_q.
+\]
+
+QED.
+
+\hypertarget{basis-invariance}{%
+\section{3. Basis invariance}\label{basis-invariance}}
+
+Under unitary changes of source and response coordinates,
+
+\[
+B_q\mapsto V^*B_qU,
+\qquad
+H_{\mathrm{th}}\mapsto V^*H_{\mathrm{th}}V.
+\]
+
+Therefore
+
+\[
+Q_q\mapsto U^*Q_qU,
+\qquad
+W_q\mapsto U^*W_qU.
+\]
+
+Spectrum, rank, kernel, and positivity are invariant.
+
+\hypertarget{barrier-interpretation}{%
+\section{4. Barrier interpretation}\label{barrier-interpretation}}
+
+The spectrum of \(Q_q\) measures response cost. The bounded defect \(W_q\) is the corresponding response barrier. Radial response magnitude changes the barrier strength; unitary angular changes rotate its orientation without changing its spectrum.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+CANONICAL RESPONSE-FRAME WHITENING         PROVED
+CANONICAL COUPLING B_q                     PROVED ON DECLARED SOURCE RANGE
+POSITIVE RESPONSE COST Q_q                 PROVED
+BOUNDED BARRIER W_q                        PROVED
+KERNEL IDENTITY                            PROVED
+UNITARY BASIS INVARIANCE                   PROVED
+PHYSICAL SOURCE IDENTIFICATION             OPEN
+CONTINUUM RESPONSE-CURVATURE IDENTITY       OPEN
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/thermodynamics/03\_canonical\_response\_cost\_barrier.md}\end{flushright}

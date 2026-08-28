@@ -1,0 +1,44 @@
+% source: Publications/papers/information-invariance/README.md
+\hypertarget{information-invariance-paper-under-development}{%
+\chapter{Information Invariance --- paper under development}\label{information-invariance-paper-under-development}}
+
+\texttt{paper/information\_invariance\_v1\_original.tex} --- the original draft (kept for provenance).
+\texttt{paper/information\_invariance\_v2.tex} --- the working paper: proved finite structure separated from conjectured dynamics.
+\texttt{certificates/l1\_certificates.py} --- executable certificates for Theorems A and B (exact rational arithmetic).
+\texttt{LEDGER.md} --- what is PROVED / OPEN / CONJECTURE / RETRACTED, with named obligations.
+
+\hypertarget{certificates}{%
+\section{Certificates}\label{certificates}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+file
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+theorems
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{l1\_certificates.py} & A (invariance = flat sector), B (one cycle decides nothing) \\
+\texttt{d2\_phase\_origin.py} & C (real flow is Schrödinger iff), D (one-channel obstruction) \\
+\texttt{d2a\_cut\_supplies\_structure.py} & E (cut supplies conjugate pair; phase is the odd part) \\
+\texttt{d2b\_linearisation\_verdict.py} & D2b verdict: damped rotation, not Schrödinger \\
+\texttt{d3\_regulator\_scale.py} & F (no Planck length without ħ), G (own regulator is cosmological) \\
+\texttt{d3prime\_emergent\_einstein.py} & K (DOF no-go), L (Clausius route imports ħ), M (source not conserved) \\
+\texttt{d4\_decoherence\_audit.py} & H (printed rate is not a rate; repair is Diósi--Penrose) \\
+\texttt{d1\_selection\_principle.py} & I (invariance selects nothing), J (minimal scale usage selects n=2) \\
+\texttt{micro\_chi\_characterisation.py} & N (δ𝓘=0 ⟺ χ≡1), O (curvature sufficient, not necessary) \\
+\end{longtable}
+
+Rule for this folder: a sentence may claim a result only if the ledger lists it as PROVED with a reproducing certificate. Everything else is written as a conjecture with its obligation.
+
+\begin{verbatim}
+python papers/information-invariance/certificates/l1_certificates.py
+python -m pytest papers/information-invariance/tests
+\end{verbatim}
+
+\begin{flushright}\small\texttt{Publications/papers/information-invariance/README.md}\end{flushright}

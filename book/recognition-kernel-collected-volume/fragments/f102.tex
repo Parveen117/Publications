@@ -1,0 +1,138 @@
+% source: Publications/papers/cut-first-equivalence/README.md
+\hypertarget{cut-first-equivalence-certified-core-cfe-1}{%
+\chapter{Cut-First Equivalence --- certified core (CFE-1)}\label{cut-first-equivalence-certified-core-cfe-1}}
+
+The candidate \textbf{flagship theorem} of the recognition / cut-flow
+framework (arXiv:2603.20773), with its memoryless-limit direction and
+residue identity certified in exact rational arithmetic.
+
+\textbf{Read \href{THEOREM.md}{\texttt{THEOREM.md}} first} --- it states the theorem, marks
+certified vs.~open, and maps every obligation to its scaffolding.
+
+\hypertarget{the-statement}{%
+\section{The statement}\label{the-statement}}
+
+\begin{quote}
+Classical thermodynamics is the \textbf{memoryless sector} of recognition
+thermodynamics, and the loop residue **∮\_∂D ω = ∬\_D Ω** is the
+obstruction. Equilibrium is flat (Ω=0); irreversibility is curvature
+(Ω≠0).
+\end{quote}
+
+A bridge identity of the Noether type: recognition/memory structure ↔
+thermodynamic response geometry, with a computable residue.
+
+\hypertarget{certified-blocks-cfe-1}{%
+\section{Certified blocks (CFE-1)}\label{certified-blocks-cfe-1}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & Memoryless limit is classical: at χ=1 curvature vanishes on the whole grid, every Maxwell loop closes, Onsager asymmetry is exactly 0 & PASS \\
+T2 & Residue is exact: ∮\_∂D ω = ∬\_D Ω in ℚ (boundary walk vs area sum, independent), both = 32 at χ=7/5 & PASS \\
+T3 & Obstruction is faithful: Ω=0 iff χ=1; residue strictly monotone in μ=χ−1 (−32,−16,0,+16,+32), zero exactly at μ=0 & PASS \\
+T4 & Equilibrium invariant 𝓘=Γ\_c·Γ\_m=1 exactly at χ=1, departs when χ≠1 & PASS \\
+\end{longtable}
+
+All exact rationals, no floating point in any verdict path.
+
+\hypertarget{surjectivity-discharged-cfe-2}{%
+\section{Surjectivity --- DISCHARGED (CFE-2)}\label{surjectivity-discharged-cfe-2}}
+
+\textbf{(S)} the cut grammar maps \emph{onto} the classical response algebra: all
+four Maxwell relations as cut-closedness, the response-coefficient
+identities (γ ratio law + Mayer), and a rank-equality surjectivity
+certificate (5 = 5, cokernel 0) built by cut-native finite differences
+independent of the classical partials --- renaming test passed, non-closed
+control separates.
+
+\hypertarget{quantum-witness-cfe-q}{%
+\section{Quantum witness (CFE-Q)}\label{quantum-witness-cfe-q}}
+
+The same bridge holds quantum-mechanically, certified on a dissipative
+qubit: memory dial χ ↔ non-Markovianity, ∮ω=∬Ω ↔ Berry holonomy, χ=1 ↔
+CP-divisible (Markovian) limit, and the Bloch quarter-turn J²=−I echoes
+the seam phase ι²=−1. A witness, not a general theorem; quantum gravity
+is a horizon, not a claim.
+
+\hypertarget{open-the-single-remaining-obligation}{%
+\section{Open --- the single remaining obligation}\label{open-the-single-remaining-obligation}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{(U) Uniqueness} --- ∬Ω is the \emph{unique} obstruction to χ→1. Finite,
+  gate-free, attackable by the same exact-rank machinery (H²(response)
+  rank 1). Touches no RH / K0 / L0 / YM continuum gate.
+\end{itemize}
+
+\hypertarget{reproduce}{%
+\section{Reproduce}\label{reproduce}}
+
+\begin{verbatim}
+python papers/cut-first-equivalence/certificates/cfe1_cut_first_equivalence.py
+python papers/cut-first-equivalence/certificates/cfe2_surjectivity.py
+python papers/cut-first-equivalence/certificates/cfeq_quantum_witness.py
+python -m pytest papers/cut-first-equivalence/tests -v
+\end{verbatim}
+
+CI regenerates the certificate and fails on any pin drift
+(\texttt{EXPECTED\_CFE1.sha256}, \texttt{EXPECTED\_CFE2.sha256}, \texttt{EXPECTED\_CFEQ.sha256}).
+
+\hypertarget{relationship-to-the-rest-of-the-corpus}{%
+\section{Relationship to the rest of the corpus}\label{relationship-to-the-rest-of-the-corpus}}
+
+CFE-1 is the \textbf{parent} capsule. Its downstream corollaries live in
+\href{../lambda-seam-calibration/}{\texttt{../lambda-seam-calibration/}}: the
+seam-integer quantization (LAM-1/LAM-2) becomes ``the obstruction takes
+quantized seam values,'' and the ``no memory, no critical strip'' finding
+(LAM-3) becomes ``∬Ω is non-trivial iff the memory channel is retained.''
+
+\hypertarget{capsule-cfe-u-uniqueness-the-flagship-closed}{%
+\section{Capsule CFE-U: uniqueness --- the flagship closed}\label{capsule-cfe-u-uniqueness-the-flagship-closed}}
+
+\texttt{certificates/cfeu\_uniqueness.py} discharges Part (U) with the same
+exact-rank machinery that closed (S):
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & The response complex Λ⁰→Λ¹→Λ² has exact ranks 5, 1 and d₁∘d₀=0; im d₀ \textbf{is} CFE-2's rank-5 classical space & PASS \\
+\textbf{T2} & H¹ = 0: closed ⟺ gradient, constructively --- the explicit potential integrates every closed form; zero curvature leaves no residual obstruction & PASS \\
+\textbf{T3} & \textbf{The uniqueness theorem:} the annihilator of the memoryless space is EXACTLY 1-dimensional; the loop residue lies in it, is nonzero, hence spans --- every obstruction is c·∮ω; and R = Area·d₁ on the whole basis & PASS \\
+\textbf{T4} & The dial's direction 5p dv excites the generator; the residue ladder −32\ldots+32 reproduced from the \textbf{pinned} CFE-1 module (two routes agree in ℚ); equal residue ⟹ equal obstruction class with explicit potential witness & PASS \\
+\textbf{T5} & The 16-cell residue matrix has rank exactly 1 with kernel = the memoryless space: one obstruction repeated, not many & PASS \\
+\textbf{T6} & Control: quadratic-coefficient algebra has rank 3 --- uniqueness is a theorem about the \textbf{declared} algebra, and the boundary itself is certified & PASS \\
+\end{longtable}
+
+\textbf{With CFE-1 + CFE-2 + CFE-Q + CFE-U, every declared obligation of the
+Cut-First Equivalence theorem is machine-certified} on the witness EOS
+and its declared response algebra.
+
+\begin{flushright}\small\texttt{Publications/papers/cut-first-equivalence/README.md}\end{flushright}

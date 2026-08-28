@@ -1,0 +1,443 @@
+% source: RKF/theorum/22_rh_memory_cut_rank_gate.md
+\hypertarget{rh-target-gate-native-cut-generated-objects-and-five-memory-faithfulness}{%
+\chapter{RH Target Gate: Native Cut-Generated Objects and Five-Memory Faithfulness}\label{rh-target-gate-native-cut-generated-objects-and-five-memory-faithfulness}}
+
+\hypertarget{permanent-doctrine}{%
+\section{Permanent doctrine}\label{permanent-doctrine}}
+
+The completed-Weil source, boundary, memory bridge and finite seam matrix are
+not imported as independent operator-theoretic objects. They must be generated
+from one native cut-event lift.
+
+Classical operator algebra is allowed only as a shadow which tells us what an
+already constructed map should resemble. It does not define the map.
+
+The primitive data are
+
+\begin{verbatim}
+exact exponential change flow;
+cut projector pair P,Q;
+native event lift Z;
+declared target observer T_Sigma.
+\end{verbatim}
+
+Everything else must be derived.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{primitive-cut-system}{%
+\section{1. Primitive cut system}\label{primitive-cut-system}}
+
+Let \(\mathcal F\) be the native generator core and \(\mathcal K\) the event
+carrier. Let
+
+\[
+\alpha_t(a)=U_t^*aU_t,
+\qquad
+U_t=e^{itG},
+\]
+
+be the exact exponential change flow. The finite-time flow is primitive; no
+infinitesimal truncation is used to define the event family.
+
+Let
+
+\[
+Z_t:\mathcal F\longrightarrow\mathcal K
+\]
+
+be the cut-generated event lift. In an event representation one may write
+
+\[
+Z_t f=\pi(\alpha_t(a_f))\Omega,
+\]
+
+but \(a_f\), \(\pi\), and \(\Omega\) are bookkeeping for the native event
+construction, not classical imports.
+
+Let
+
+\[
+P=P^*=P^2,
+\qquad
+Q=I-P,
+\qquad
+PQ=QP=0,
+\]
+
+be the recognized and cut-memory projectors. Define the cut involution
+
+\[
+\mathfrak j_{\rm cut}=P-Q.
+\]
+
+Then
+
+\[
+\mathfrak j_{\rm cut}^*=\mathfrak j_{\rm cut},
+\qquad
+\mathfrak j_{\rm cut}^2=I.
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{objects-derived-from-the-cut}{%
+\section{2. Objects derived from the cut}\label{objects-derived-from-the-cut}}
+
+The single lift \(Z_t\) generates four canonical forms:
+
+\[
+S_t=Z_t^*Z_t,
+\]
+
+\[
+R_t=Z_t^*PZ_t,
+\]
+
+\[
+D_t=Z_t^*QZ_t,
+\]
+
+and
+
+\[
+F_t=Z_t^*\mathfrak j_{\rm cut}Z_t=R_t-D_t.
+\]
+
+The exact cut decomposition is
+
+\[
+\boxed{S_t=R_t+D_t.}
+\]
+
+Thus source energy, recognized energy, cut-memory energy and signed cut form
+are not separately postulated. They are shadows of the same event lift under
+\(I,P,Q,P-Q\).
+
+If \(P=|p\rangle\langle p|\) has rank one and
+
+\[
+L_t(f)=\langle p,Z_tf\rangle,
+\]
+
+then
+
+\[
+R_t=L_t^*L_t
+\]
+
+and therefore
+
+\[
+\boxed{S_t-L_t^*L_t=D_t=Z_t^*QZ_t\ge0.}
+\]
+
+This is the infinite-dimensional Cut-Square Identity before coordinates are
+chosen.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-exponential-covariance}{%
+\section{3. Exact exponential covariance}\label{exact-exponential-covariance}}
+
+Transport the cut with the exact flow:
+
+\[
+Z_t=U_tZ_0,
+\qquad
+P_t=U_tP_0U_t^*,
+\qquad
+Q_t=U_tQ_0U_t^*.
+\]
+
+Then
+
+\[
+Z_t^*P_tZ_t=Z_0^*P_0Z_0,
+\qquad
+Z_t^*Q_tZ_t=Z_0^*Q_0Z_0.
+\]
+
+Thus the cut-generated forms are exactly path-covariant under finite exponential
+change. The classical Lax or unitary-conjugation formula is merely a coordinate
+shadow of this native transport.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{full-memory-versus-target-relevant-memory}{%
+\section{4. Full memory versus target-relevant memory}\label{full-memory-versus-target-relevant-memory}}
+
+The full cut bridge
+
+\[
+C_t=Q_tZ_t
+\]
+
+may have infinite rank. The framework does \textbf{not} claim that the full cut
+carrier is five-dimensional.
+
+Let
+
+\[
+T_\Sigma:\mathcal K\longrightarrow\mathbb C^\nu,
+\qquad
+\nu\le5,
+\]
+
+be the declared target observer. It is required to be a coisometry on its
+range:
+
+\[
+T_\Sigma T_\Sigma^*=I_\nu.
+\]
+
+Define the target-visible cut bridge
+
+\[
+A_\Sigma=T_\Sigma C_t.
+\]
+
+The exact target-faithfulness condition is
+
+\[
+\boxed{C_t=T_\Sigma^*T_\Sigma C_t}
+\]
+
+on the adverse target-relevant cut module. Equivalently, the hidden residual
+
+\[
+H_\Sigma=(I-T_\Sigma^*T_\Sigma)C_t
+\]
+
+vanishes there.
+
+This condition, not unitary covariance and not numerical rank thresholding,
+is the theorem which licenses the five-dimensional reduction.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-target-memory-rank-theorem}{%
+\section{5. Native target-memory rank theorem}\label{native-target-memory-rank-theorem}}
+
+\hypertarget{theorem-a-cut-derived-target-memory-rank}{%
+\subsection{Theorem A (Cut-derived target-memory rank)}\label{theorem-a-cut-derived-target-memory-rank}}
+
+If
+
+\[
+C_t=T_\Sigma^*T_\Sigma C_t
+\]
+
+on the target-relevant adverse module, then
+
+\[
+\operatorname{rank}C_t\le\nu\le5
+\]
+
+on that module, and
+
+\[
+D_t=C_t^*C_t=A_\Sigma^*A_\Sigma.
+\]
+
+Moreover, the nonzero spectrum of \(D_t\) is exactly the nonzero spectrum of
+
+\[
+B_\Sigma^{\rm cut}=A_\Sigma A_\Sigma^*
+\in M_\nu(\mathbb C).
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+The faithfulness identity factors the cut bridge through
+\(T_\Sigma^*:\mathbb C^\nu\to\mathcal K\):
+
+\[
+C_t=T_\Sigma^*A_\Sigma.
+\]
+
+Hence its target-relevant range has dimension at most \(\nu\). Since
+\(T_\Sigma T_\Sigma^*=I_\nu\),
+
+\[
+C_t^*C_t
+=A_\Sigma^*T_\Sigma T_\Sigma^*A_\Sigma
+=A_\Sigma^*A_\Sigma.
+\]
+
+The shared nonzero spectrum follows from the cut-bridge spectral isomorphism
+for \(A_\Sigma^*A_\Sigma\) and \(A_\Sigma A_\Sigma^*\). ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-signed-reduction}{%
+\section{6. Native signed reduction}\label{native-signed-reduction}}
+
+Let \(R_0>0\) be the accepted reference generated from the recognized cut
+channel and the native carrier metric. Define
+
+\[
+\mathcal W_{\rm cut}=R_0-D_t.
+\]
+
+Under target faithfulness,
+
+\[
+\mathcal W_{\rm cut}
+=R_0-A_\Sigma^*A_\Sigma.
+\]
+
+Set
+
+\[
+V_\Sigma=A_\Sigma^*:
+\mathbb C^\nu\longrightarrow\mathcal F^{\rm comp}
+\]
+
+and
+
+\[
+B_\Sigma
+=A_\Sigma R_0^{-1}A_\Sigma^*
+=V_\Sigma^*R_0^{-1}V_\Sigma.
+\]
+
+The universal cut-memory spectral theorem then gives
+
+\[
+N_-(\mathcal W_{\rm cut})=N_+(B_\Sigma-I),
+\]
+
+\[
+\ker\mathcal W_{\rm cut}\cong\ker(I-B_\Sigma),
+\]
+
+and
+
+\[
+\inf_{f\ne0}
+\frac{\langle f,\mathcal W_{\rm cut}f\rangle}
+     {\langle f,R_0f\rangle}
+=
+\lambda_{\min}(I-B_\Sigma).
+\]
+
+The determinant identity
+
+\[
+\det_F(I-R_0^{-1/2}D_tR_0^{-1/2})
+=
+\det(I-B_\Sigma)
+\]
+
+locates threshold memory, but determinant sign alone is not the positivity
+criterion. The lawful sign certificate is
+
+\[
+\lambda_{\max}(B_\Sigma)<1.
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{rh-specific-construction-gate}{%
+\section{7. RH-specific construction gate}\label{rh-specific-construction-gate}}
+
+The remaining theorem is not to import \(S_{0,-}^{\rm full}\), \(L_\partial\),
+\(R_0\), or \(V_\Sigma\) from a classical operator decomposition.
+
+It is to construct one native event lift
+
+\[
+Z_{\rm Weil}f
+\]
+
+coefficientwise from the declared prime, Gamma, completion-boundary and
+compatibility cut events and then prove:
+
+\hypertarget{gate-1-source-and-boundary-are-cut-moments}{%
+\subsection{Gate 1: source and boundary are cut moments}\label{gate-1-source-and-boundary-are-cut-moments}}
+
+For a cut-recognized vector \(p_\partial\),
+
+\[
+S_{0,-}^{\rm full}=Z_{\rm Weil}^*Z_{\rm Weil},
+\]
+
+\[
+L_\partial(f)=\langle p_\partial,Z_{\rm Weil}f\rangle,
+\]
+
+and hence
+
+\[
+S_{0,-}^{\rm full}-L_\partial^*L_\partial
+=Z_{\rm Weil}^*QZ_{\rm Weil}.
+\]
+
+\hypertarget{gate-2-target-observer-is-native-and-faithful}{%
+\subsection{Gate 2: target observer is native and faithful}\label{gate-2-target-observer-is-native-and-faithful}}
+
+Construct \(T_\Sigma\) from the five declared target labels before whitening or
+Gram fitting and prove
+
+\[
+QZ_{\rm Weil}
+=T_\Sigma^*T_\Sigma QZ_{\rm Weil}
+\]
+
+on the adverse target-relevant module.
+
+\hypertarget{gate-3-no-hidden-adverse-complement}{%
+\subsection{Gate 3: no hidden adverse complement}\label{gate-3-no-hidden-adverse-complement}}
+
+If full cut memory contains a target-null complement, prove that its form is
+nonnegative and does not contribute to the threshold count. Equivalently,
+only the target-visible cut memory may enter the negative inertia ledger.
+
+These are native coefficient identities. The classical explicit formula may
+later recognize their shadow, but it does not define them.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{numerical-development-plan}{%
+\section{8. Numerical development plan}\label{numerical-development-plan}}
+
+The numerical packet must be built from the same cut-generated data:
+
+\begin{verbatim}
+1. construct Z from declared event amplitudes;
+2. construct P,Q and verify P+Q=I, PQ=0;
+3. verify S=Z*Z, R=Z*PZ, D=Z*QZ and S=R+D;
+4. verify the rank-one boundary identity where applicable;
+5. construct T_Sigma from declared target labels;
+6. enclose the faithfulness residual ||QZ-T*TZ||;
+7. reject a target map which misses one cut-memory direction;
+8. build B_Sigma from the cut-derived R0 and A_Sigma;
+9. certify lambda_min(I-B_Sigma), inertia and determinant identities;
+10. enclose refinement and off-bank tails before any RH promotion.
+\end{verbatim}
+
+A favorable five-matrix is not terminal unless Steps 3, 6 and 10 are proved.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{9. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+source/recognized/memory forms derived from one cut lift    PROVED ABSTRACTLY
+rank-one first/second-moment covariance identity            PROVED ABSTRACTLY
+exact exponential cut covariance                            PROVED ABSTRACTLY
+target-faithful rank <= 5 theorem                            PROVED ABSTRACTLY
+finite seam spectral reduction                              PROVED ABSTRACTLY
+
+native completed-Weil event lift Z_Weil                     NEXT
+coefficientwise source/boundary moment identities            NEXT
+native target observer T_Sigma                              NEXT
+target-faithfulness residual with outward bounds             NEXT
+no-hidden-adverse-complement theorem                         NEXT
+RH                                                          NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/22\_rh\_memory\_cut\_rank\_gate.md}\end{flushright}

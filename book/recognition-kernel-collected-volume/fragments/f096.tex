@@ -1,0 +1,365 @@
+% source: RH-Framework/theorems/T03_C1_FINITE_PACKET_ACTION_INVENTORY.md
+\hypertarget{t03-c1-actual-finite-packet-action-inventory}{%
+\chapter{T03-C1 --- Actual Finite Packet Action Inventory}\label{t03-c1-actual-finite-packet-action-inventory}}
+
+\textbf{Classification:} \texttt{OPEN}
+
+The action-typing theorem is proved. The actual MP packet has not yet been
+executed inside RH-Framework, so its immutable array hashes are not yet fixed in
+this repository.
+
+\hypertarget{purpose}{%
+\section{1. Purpose}\label{purpose}}
+
+T03-A proves the available operator domains on
+
+\[
+\mathcal H
+=
+L^2(\mathcal U_F,d\lambda;\mathbb C^5).
+\]
+
+T03-C1 answers the next question:
+
+\begin{quote}
+Which arrays in the state-locked five-label packet are operators, which are
+carrier data, and what operator class does each operator belong to?
+\end{quote}
+
+The distinction is required before any source, response, target-faithfulness,
+or Shunya argument can use the packet.
+
+\hypertarget{required-packet}{%
+\section{2. Required packet}\label{required-packet}}
+
+The pinned MP extractor returns one carrier vector and seven matrices.
+
+\hypertarget{carrier-data}{%
+\subsection{Carrier data}\label{carrier-data}}
+
+\[
+v_\partial
+\in
+\mathbb C^5
+\]
+
+stored as
+
+\begin{verbatim}
+corrected_defect_line
+\end{verbatim}
+
+is a vector. It is not an operator.
+
+\hypertarget{matrix-actions}{%
+\subsection{Matrix actions}\label{matrix-actions}}
+
+\begin{verbatim}
+source_defect_projector
+accepted_complement_projector
+source_metric
+response_metric
+loop_holonomy
+memory_holonomy
+compensated_holonomy
+\end{verbatim}
+
+Each must have shape exactly \texttt{5\ x\ 5}. A sixth coordinate or sixth label is
+rejected.
+
+\hypertarget{projector-typing}{%
+\section{3. Projector typing}\label{projector-typing}}
+
+Define
+
+\[
+P_\partial
+=
+\frac{v_\partial v_\partial^*}
+{\langle v_\partial,v_\partial\rangle}.
+\]
+
+The source packet must satisfy
+
+\[
+P_\partial^*=P_\partial,
+\qquad
+P_\partial^2=P_\partial,
+\qquad
+P_\partial v_\partial=v_\partial.
+\]
+
+Let \(Q_+=I_5-P_\partial\). The accepted-complement packet must satisfy
+
+\[
+Q_+^*=Q_+,
+\qquad
+Q_+^2=Q_+,
+\qquad
+P_\partial Q_+=Q_+P_\partial=0,
+\qquad
+P_\partial+Q_+=I_5.
+\]
+
+\hypertarget{typing-conclusion}{%
+\subsection{Typing conclusion}\label{typing-conclusion}}
+
+The constant fields
+
+\[
+x\mapsto P_\partial,
+\qquad
+x\mapsto Q_+
+\]
+
+are bounded orthogonal-projection fibre multipliers on \(\mathcal H\), with
+full domain \(\mathcal H\).
+
+\hypertarget{metric-typing}{%
+\section{4. Metric typing}\label{metric-typing}}
+
+Let
+
+\[
+G_{\mathrm{src}},G_{\mathrm{rsp}}\in M_5(\mathbb C)
+\]
+
+be the extracted source and response metrics. The verifier requires
+
+\[
+G_{\mathrm{src}}^*=G_{\mathrm{src}},
+\qquad
+G_{\mathrm{rsp}}^*=G_{\mathrm{rsp}},
+\]
+
+and
+
+\[
+G_{\mathrm{src}}\ge0,
+\qquad
+G_{\mathrm{rsp}}\ge0.
+\]
+
+\hypertarget{typing-conclusion-1}{%
+\subsection{Typing conclusion}\label{typing-conclusion-1}}
+
+The constant fields defined by these matrices are bounded positive
+semidefinite fibre multipliers on \(\mathcal H\). Their operator norms are their
+largest eigenvalues.
+
+This statement does not identify either metric with a convolution kernel and
+does not prove equivalence of any infinite completions.
+
+\hypertarget{holonomy-typing}{%
+\section{5. Holonomy typing}\label{holonomy-typing}}
+
+Let
+
+\[
+H_\square,
+\qquad
+K_\square,
+\qquad
+C_\square
+\]
+
+be the loop, memory, and compensated holonomies. The verifier requires
+
+\[
+H_\square^*H_\square=H_\square H_\square^*=I_5,
+\]
+
+\[
+K_\square^*K_\square=K_\square K_\square^*=I_5,
+\]
+
+and
+
+\[
+C_\square=I_5.
+\]
+
+It also requires
+
+\[
+H_\square P_\partial H_\square^*=P_\partial,
+\qquad
+K_\square P_\partial K_\square^*=P_\partial.
+\]
+
+\hypertarget{typing-conclusion-2}{%
+\subsection{Typing conclusion}\label{typing-conclusion-2}}
+
+The loop and memory matrices are bounded unitary fibre multipliers. The
+compensated holonomy is the identity fibre multiplier. The recognized defect
+subspace is invariant under both loop and memory transport.
+
+Seam memory remains path data acting through a transport operator. It does not
+create another event label.
+
+\hypertarget{general-finite-action-typing-theorem}{%
+\section{6. General finite-action typing theorem}\label{general-finite-action-typing-theorem}}
+
+\hypertarget{theorem-6.1}{%
+\subsection{Theorem 6.1}\label{theorem-6.1}}
+
+Let \(A\in M_5(\mathbb C)\). The constant field
+
+\[
+\widetilde A(x)=A
+\]
+
+is an essentially bounded measurable matrix field on \(\mathcal U_F\), and the
+associated fibre multiplier satisfies
+
+\[
+\|M_{\widetilde A}f\|_2
+\le
+\|A\|_{\mathrm{op}}\|f\|_2.
+\]
+
+Therefore every finite packet matrix has a canonical bounded action on
+\(\mathcal H\).
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+The field is measurable and
+
+\[
+\operatorname*{ess\,sup}_{x\in\mathcal U_F}
+\|\widetilde A(x)\|_{\mathrm{op}}
+=
+\|A\|_{\mathrm{op}}<\infty.
+\]
+
+Apply T03-A, Theorem 2.1. QED.
+
+\hypertarget{important-exclusion}{%
+\subsection{Important exclusion}\label{important-exclusion}}
+
+A nonzero constant matrix field is generally not an \(L^1\) convolution kernel
+on the noncompact UGD group. Its Haar integral diverges. T03-C1 classifies the
+finite matrices as fibre multipliers only.
+
+\hypertarget{immutable-evidence-rule}{%
+\section{7. Immutable evidence rule}\label{immutable-evidence-rule}}
+
+Each extracted array is hashed separately using SHA-256 over:
+
+\begin{verbatim}
+canonical complex128 dtype
+exact shape
+C-order byte representation
+\end{verbatim}
+
+The NPZ file is a transport container. The individual array hashes in the JSON
+certificate are the immutable mathematical evidence identifiers, because ZIP
+container metadata is not the array identity.
+
+The verifier records:
+
+\begin{verbatim}
+array name
+shape
+dtype
+SHA-256
+operator norm
+Hermitian residual
+unitarity residual
+minimum Hermitian eigenvalue
+\end{verbatim}
+
+The carrier vector receives its own SHA-256 and Euclidean norm, but no operator
+classification.
+
+\hypertarget{promotion-rule}{%
+\section{8. Promotion rule}\label{promotion-rule}}
+
+T03-B and T03-C1 are promoted to \texttt{PROVED} together only if all of the following
+hold:
+
+\begin{verbatim}
+operator MP worktree matches the pinned commit and blobs
+state MP worktree matches the pinned commit and blobs
+both worktrees are clean
+the MP carrier interface passes with no false checks
+the exact five-label order is preserved
+all seven matrices pass their declared algebraic tests
+every array has an individual SHA-256
+no sixth label is created
+RH is not promoted
+\end{verbatim}
+
+Required generated status:
+
+\begin{verbatim}
+PASS_RH_FRAMEWORK_T03_C1_PINNED_ACTION_INVENTORY
+\end{verbatim}
+
+\hypertarget{current-implementation}{%
+\section{9. Current implementation}\label{current-implementation}}
+
+Implemented files:
+
+\begin{verbatim}
+src/rh_framework/action_inventory.py
+src/rh_framework/pinned_mp_action_inventory.py
+tests/test_action_inventory.py
+tests/test_pinned_mp_action_inventory.py
+tools/verify_t03.py
+\end{verbatim}
+
+The pure inventory layer has positive and adversarial controls for:
+
+\begin{verbatim}
+missing arrays
+six-label matrices
+non-Hermitian metrics
+nonunitary holonomy
+wrong complementary projection
+false carrier-interface checks
+dirty source worktrees
+wrong label order
+\end{verbatim}
+
+\hypertarget{remaining-t03-c-work}{%
+\section{10. Remaining T03-C work}\label{remaining-t03-c-work}}
+
+T03-C1 closes only the finite constant-action inventory. The following remain
+open:
+
+\hypertarget{t03-c2-amplitude-family-multipliers}{%
+\subsection{T03-C2 --- amplitude-family multipliers}\label{t03-c2-amplitude-family-multipliers}}
+
+Prove measurability and compact-eta essential bounds for the actual source and
+response amplitude families.
+
+\hypertarget{t03-c3-arithmetic-and-gamma-actions}{%
+\subsection{T03-C3 --- arithmetic and Gamma actions}\label{t03-c3-arithmetic-and-gamma-actions}}
+
+Classify prime, Gamma, boundary, and compatibility actions as bounded
+multipliers, integrable kernels, measure-algebra kernels, or controlled
+unbounded operators.
+
+\hypertarget{t03-c4-generator-graph-domains}{%
+\subsection{T03-C4 --- generator graph domains}\label{t03-c4-generator-graph-domains}}
+
+Specify and prove closed graph domains for Euler, scale, prime-log, and related
+unbounded generators.
+
+\hypertarget{t03-c5-aperture-exhaustion}{%
+\subsection{T03-C5 --- aperture exhaustion}\label{t03-c5-aperture-exhaustion}}
+
+Prove convergence of finite apertures in the operator norm, strong topology, or
+declared graph norm appropriate to each action.
+
+\hypertarget{claim-boundary}{%
+\section{11. Claim boundary}\label{claim-boundary}}
+
+The finite-action typing theorem is proved. The actual T03-C1 packet theorem is
+open until the pinned private run fixes its array hashes. T03-C2 through T03-C5,
+target faithfulness, native Shunya, the critical-line adapter, and the Riemann
+Hypothesis remain open.
+
+\begin{flushright}\small\texttt{RH-Framework/theorems/T03\_C1\_FINITE\_PACKET\_ACTION\_INVENTORY.md}\end{flushright}

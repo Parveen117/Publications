@@ -1,0 +1,555 @@
+% source: RKF/theorum/47_source_bound_proof_carrying_numerical_validation_theorem.md
+\hypertarget{source-bound-proof-carrying-numerical-validation-theorem}{%
+\chapter{Source-Bound Proof-Carrying Numerical Validation Theorem}\label{source-bound-proof-carrying-numerical-validation-theorem}}
+
+\hypertarget{purpose-and-claim-boundary}{%
+\section{1. Purpose and claim boundary}\label{purpose-and-claim-boundary}}
+
+Theorem 45 proves how a certified arithmetic radius and a certified analytic tail compose. It does \textbf{not} prove that a participant-supplied radius or tail is true merely because it is present in a certificate. Theorem 46 likewise permits an approximate seam quotient only after its remainder and denominator-separation hypotheses are proved.
+
+This theorem closes that trust membrane for a declared class of proof-carrying numerical certificates.
+
+The principle is:
+
+\begin{verbatim}
+A numerical bound may be consumed only after its source and derivation are validated.
+A bound does not validate itself.
+\end{verbatim}
+
+The theorem consumes the earlier chain
+
+\begin{verbatim}
+Theorem 34  common-chart source binding and decoder transfer
+Theorem 38  source-relative domination / form-range control
+Theorem 39  no-blindness requirement
+Theorem 43  explicit analytic remainder
+Theorem 44  body-tail preservation under refinement
+Theorem 45  arithmetic-radius + analytic-tail closure
+Theorem 46  quantitative seam quotient after validated remainders
+\end{verbatim}
+
+It does not claim universal validation of arbitrary external software, measurements, hardware, interval libraries, or participant assertions. Such objects require an admitted source validator.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{rational-interval-carrier}{%
+\section{2. Rational interval carrier}\label{rational-interval-carrier}}
+
+Let
+
+\[
+\mathbb I_{\mathbb Q}
+=
+\{[a,b]:a,b\in\mathbb Q,\ a\le b\}.
+\]
+
+For an interval \(I=[a,b]\), write
+
+\[
+\underline I=a,
+\qquad
+\overline I=b.
+\]
+
+An exact rational \(q\) embeds as the singleton
+
+\[
+\boxed{q\mapsto[q,q].}
+\tag{2.1}
+\]
+
+The admitted exact interval operations are
+
+\[
+[a,b]+[c,d]=[a+c,b+d],
+\tag{2.2}
+\]
+
+\[
+[a,b]-[c,d]=[a-d,b-c],
+\tag{2.3}
+\]
+
+\[
+[a,b][c,d]
+=
+[\min(ac,ad,bc,bd),\max(ac,ad,bc,bd)],
+\tag{2.4}
+\]
+
+and
+
+\[
+-[a,b]=[-b,-a].
+\tag{2.5}
+\]
+
+For division, if
+
+\[
+0\notin[c,d],
+\tag{2.6}
+\]
+
+then reciprocal endpoint order is taken outward and multiplication uses (2.4). If
+
+\[
+0\in[c,d],
+\]
+
+the division rule is not admitted.
+
+All calculations in this carrier may be performed by exact integer/rational arithmetic.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{source-bound-proof-dag}{%
+\section{3. Source-bound proof DAG}\label{source-bound-proof-dag}}
+
+A \textbf{proof-carrying arithmetic trace} is a finite directed acyclic graph
+
+\[
+\mathcal G=(V,E)
+\]
+
+with a distinguished root \(r\). Each node \(v\in V\) has:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  a unique identifier;
+\item
+  either a source-leaf declaration or an admitted operation;
+\item
+  an interval \(I_v\in\mathbb I_{\mathbb Q}\);
+\item
+  ordered references to its dependency nodes.
+\end{enumerate}
+
+A source-leaf declaration has a source class \(s(v)\) and is accepted only when an admitted validator \(V_{s(v)}\) proves
+
+\[
+\boxed{x_v\in I_v.}
+\tag{3.1}
+\]
+
+The initial exact-contract source class is the singleton case
+
+\[
+I_v=[q,q]
+\]
+
+for a rational value frozen as part of the mathematical challenge contract. External measurements, backend-produced radii, norm claims, or other nonprimitive assertions are not exact-contract leaves merely because their JSON encoding is exact.
+
+For an internal node with operation \(f_v\) and dependency intervals \(I_{v_1},\ldots,I_{v_m}\), let
+
+\[
+\mathcal E_{f_v}(I_{v_1},\ldots,I_{v_m})
+\]
+
+be the canonical outward interval obtained from the admitted rules (2.2)--(2.6). The local verifier accepts only if
+
+\[
+\boxed{
+\mathcal E_{f_v}(I_{v_1},\ldots,I_{v_m})\subseteq I_v.
+}
+\tag{3.2}
+\]
+
+Thus a participant may widen an enclosure, but cannot obtain certification by shrinking it below the verifier-computed enclosure.
+
+\hypertarget{theorem-3.1-source-bound-dag-enclosure}{%
+\subsection{Theorem 3.1 (Source-bound DAG enclosure)}\label{theorem-3.1-source-bound-dag-enclosure}}
+
+Assume:
+
+\begin{itemize}
+\tightlist
+\item
+  the graph is finite and acyclic;
+\item
+  every dependency reference resolves to a unique earlier node in a topological order;
+\item
+  every source leaf satisfies its admitted source validator;
+\item
+  every internal node satisfies (3.2).
+\end{itemize}
+
+Then the exact value represented by every node lies in its declared interval. In particular,
+
+\[
+\boxed{x_r\in I_r.}
+\tag{3.3}
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+Take a topological ordering of the DAG. For a source leaf the claim is (3.1). Assume it holds for all dependencies of an internal node \(v\). Soundness of the admitted interval operation gives
+
+\[
+f_v(x_{v_1},\ldots,x_{v_m})
+\in
+\mathcal E_{f_v}(I_{v_1},\ldots,I_{v_m}).
+\]
+
+By (3.2), the latter is contained in \(I_v\). Induction over the topological order proves the result. \(\square\)
+
+\hypertarget{corollary-3.2-derived-arithmetic-radius}{%
+\subsection{Corollary 3.2 (Derived arithmetic radius)}\label{corollary-3.2-derived-arithmetic-radius}}
+
+For
+
+\[
+I_r=[L,U],
+\]
+
+define
+
+\[
+c=\frac{L+U}{2},
+\qquad
+\rho=\frac{U-L}{2}.
+\]
+
+Then
+
+\[
+\boxed{|x_r-c|\le\rho.}
+\tag{3.4}
+\]
+
+The radius is derived from the verified trace. It is not a free participant assertion.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{source-completeness-no-blindness-boundary}{%
+\section{4. Source completeness / no-blindness boundary}\label{source-completeness-no-blindness-boundary}}
+
+Theorem 3.1 proves the arithmetic consequence of the declared dependency graph. It cannot prove that an omitted physical, semantic, or analytic dependency never mattered.
+
+Therefore a proof-carrying trace is promotion-capable only when the selected adapter also closes a source-completeness obligation:
+
+\[
+\boxed{
+V_{\mathrm{src}}=1
+\Longrightarrow
+\text{all target-relevant primitive inputs are represented by admitted leaves.}
+}
+\tag{4.1}
+\]
+
+This is the numerical analogue of the common-chart/no-blindness discipline in Theorems 34, 38 and 39. A beautifully verified DAG of the wrong source does not certify the target.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{theorem-derived-analytic-tails}{%
+\section{5. Theorem-derived analytic tails}\label{theorem-derived-analytic-tails}}
+
+A tail certificate must identify an admitted tail rule and supply the hypotheses from source-validated or DAG-derived quantities. The verifier recomputes the tail; the participant does not choose its final value.
+
+\hypertarget{geometrically-dominated-tail}{%
+\subsection{5.1 Geometrically dominated tail}\label{geometrically-dominated-tail}}
+
+Suppose a series tail has magnitude terms satisfying, for \(k\ge N+1\),
+
+\[
+|a_{k+1}|\le q|a_k|,
+\qquad
+0\le q<1.
+\tag{5.1}
+\]
+
+If the first omitted magnitude obeys
+
+\[
+|a_{N+1}|\le A,
+\]
+
+then
+
+\[
+\boxed{
+\left|\sum_{k=N+1}^{\infty}a_k\right|
+\le
+\frac{A}{1-q}.
+}
+\tag{5.2}
+\]
+
+\hypertarget{rational-upper-enclosure-for-the-exponential}{%
+\subsection{5.2 Rational upper enclosure for the exponential}\label{rational-upper-enclosure-for-the-exponential}}
+
+Let \(x\in\mathbb Q_{\ge0}\), and choose \(m\ge0\) so that
+
+\[
+q_m=\frac{x}{m+2}<1.
+\tag{5.3}
+\]
+
+Since the ratio between successive exponential-series terms beyond order \(m+1\) is at most \(q_m\),
+
+\[
+\boxed{
+e^x
+\le
+E_m(x)
+:=
+\sum_{k=0}^{m}\frac{x^k}{k!}
++
+\frac{x^{m+1}}{(m+1)!}
+\frac{1}{1-x/(m+2)}.
+}
+\tag{5.4}
+\]
+
+Every quantity on the right is rational.
+
+\hypertarget{theorem-43-jet-tail-without-floating-point-exponentiation}{%
+\subsection{5.3 Theorem-43 jet tail without floating-point exponentiation}\label{theorem-43-jet-tail-without-floating-point-exponentiation}}
+
+Let source-validated quantities satisfy
+
+\[
+|t|\le T,
+\qquad
+\|B\|\le B_*,
+\qquad
+\|G\|\le G_*,
+\]
+
+with \(T,B_*,G_*\in\mathbb Q_{\ge0}\). Theorem 43 gives
+
+\[
+\|R_{N+1}(t)\|
+\le
+\frac{T^{N+1}}{(N+1)!}
+B_*G_*^{N+1}e^{TG_*}.
+\]
+
+Choose \(m\) satisfying
+
+\[
+\frac{TG_*}{m+2}<1.
+\]
+
+Using (5.4), the verifier may compute the exact rational upper bound
+
+\[
+\boxed{
+\tau_{43}
+=
+\frac{T^{N+1}}{(N+1)!}
+B_*G_*^{N+1}E_m(TG_*).
+}
+\tag{5.5}
+\]
+
+No nearest-rounded evaluation of \(e^{TG_*}\) is required.
+
+\hypertarget{theorem-5.1-tail-source-rule}{%
+\subsection{Theorem 5.1 (Tail-source rule)}\label{theorem-5.1-tail-source-rule}}
+
+If every hypothesis of an admitted tail rule is source-validated or DAG-derived and the verifier recomputes \(\tau\) from that rule, then the resulting tail bound is proof-bearing. A participant-supplied scalar named \texttt{analytic\_tail} without such provenance is not proof-bearing.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{source-bound-numerical-promotion}{%
+\section{6. Source-bound numerical promotion}\label{source-bound-numerical-promotion}}
+
+Let \(\widehat M\) be the numerical center obtained from a source-bound arithmetic certificate and let
+
+\[
+\|M-\widehat M\|\le\rho
+\tag{6.1}
+\]
+
+be derived from Theorem 3.1. Let an admitted tail rule prove
+
+\[
+\|T\|\le\tau.
+\tag{6.2}
+\]
+
+By Theorem 45,
+
+\[
+F=\widehat M+A+T,
+\qquad
+\|A\|\le\rho,
+\]
+
+therefore
+
+\[
+\boxed{
+\|F-\widehat M\|
+\le
+\rho+\tau.
+}
+\tag{6.3}
+\]
+
+\hypertarget{theorem-6.1-source-bound-promotion-gate}{%
+\subsection{Theorem 6.1 (Source-bound promotion gate)}\label{theorem-6.1-source-bound-promotion-gate}}
+
+Let
+
+\[
+V_\rho=1
+\]
+
+mean the arithmetic trace and its source leaves have passed, and let
+
+\[
+V_\tau=1
+\]
+
+mean the analytic tail rule and its hypotheses have passed. A strict upper-threshold promotion may occur only when
+
+\[
+\boxed{
+V_\rho=1,
+\qquad
+V_\tau=1,
+\qquad
+U+\tau<\Theta,
+}
+\tag{6.4}
+\]
+
+where \(U=\overline I_r\).
+
+If either validator is open, absent, unsupported, or fails, the bound cannot be promoted merely because the participant supplied numerically favorable values.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{certainty-aware-strict-boundary}{%
+\section{7. Certainty-aware strict boundary}\label{certainty-aware-strict-boundary}}
+
+For a strict claim
+
+\[
+F<\Theta,
+\]
+
+let the final certified scalar enclosure be \([L,U]\), after all proof-bearing arithmetic and analytic uncertainty has been carried outward.
+
+The terminal logic is:
+
+\[
+\boxed{
+\begin{array}{ll}
+U<\Theta
+& \text{PASS},\\[2mm]
+L=U=\Theta
+& \text{FAIL (exact strict inequality is false)},\\[2mm]
+U=\Theta\text{ and }L<U
+& \text{INCOMPLETE (refinement may decide)},\\[2mm]
+L\ge\Theta
+& \text{FAIL},\\[2mm]
+L<\Theta<U
+& \text{INCOMPLETE}.
+\end{array}
+}
+\tag{7.1}
+\]
+
+This distinguishes mathematical falsity from unresolved numerical contact with a boundary.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{implementation-commitment-boundary}{%
+\section{8. Implementation commitment boundary}\label{implementation-commitment-boundary}}
+
+A proof-carrying protocol must commit the validator semantics used to interpret the certificate. Let
+
+\[
+H_{\mathrm{impl}}
+\]
+
+be a cryptographic digest of a declared implementation manifest containing the validator source, parser contract, schema and admitted operation/tail-rule identifiers.
+
+The challenge rules should commit
+
+\[
+\boxed{H_{\mathrm{impl}}}
+\tag{8.1}
+\]
+
+so an implementation change cannot masquerade as the same frozen protocol.
+
+This is an \textbf{integrity} statement, not an external authenticity theorem. If an attacker controls both the executable and the hash it reports, an internal hash is not a trust anchor. A published repository commit, immutable archive, signature, attestation, or equivalent external pin is still required when executable authenticity matters.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{negative-controls}{%
+\section{9. Negative controls}\label{negative-controls}}
+
+A compliant verifier must reject or hold open at least the following:
+
+\begin{verbatim}
+cycle in proof DAG                              INVALID
+missing dependency                             INVALID
+duplicate node identifier                      INVALID
+claimed node interval narrower than recompute  FAILED
+interval division with zero in denominator     FAILED / INVALID
+participant radius without proof trace         INCOMPLETE
+participant analytic tail without tail rule    INCOMPLETE
+unsupported source class                       INCOMPLETE
+source-completeness obligation open             INCOMPLETE
+exact strict equality at threshold              FAILED
+non-singleton enclosure merely touching bound  INCOMPLETE
+implementation fingerprint mismatch            FAILED
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{theorem-46-approximate-seam-consumption}{%
+\section{10. Theorem-46 approximate seam consumption}\label{theorem-46-approximate-seam-consumption}}
+
+Theorem 46 gives an outward quotient radius
+
+\[
+\rho_Q
+=
+\frac{|b|\delta_A+|a|\delta_B}
+{|b|(|b|-\delta_B)}
+\]
+
+when \(|b|>\delta_B\).
+
+Under Theorem 47, the quantities \(\delta_A\) and \(\delta_B\) become promotion-capable only if they are produced by admitted source-bound remainder validators. Then the approximate seam quotient may consume \(\rho_Q\) through Theorem 45.
+
+Until those remainder sources close, the correct status remains
+
+\begin{verbatim}
+INCOMPLETE_REMAINDER_VALIDATION
+\end{verbatim}
+
+rather than a participant-certified quotient.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{11. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+SOURCE-BOUND RATIONAL INTERVAL DAG THEOREM       PROVED
+LOCAL-TO-GLOBAL ENCLOSURE INDUCTION              PROVED
+DIVISION-ZERO ENCLOSURE GATE                     PROVED
+RATIONAL GEOMETRIC TAIL RULE                     PROVED
+RATIONAL EXPONENTIAL UPPER RULE                  PROVED
+THEOREM-43 RATIONAL TAIL ADAPTER                 PROVED CONDITIONAL ON SOURCE-VALIDATED NORM BOUNDS
+SOURCE-BOUND PROMOTION GATE                      PROVED
+CERTAINTY-AWARE STRICT BOUNDARY                  PROVED
+IMPLEMENTATION-HASH INTEGRITY REQUIREMENT        SPECIFIED
+
+ARBITRARY EXTERNAL BACKEND AUTHENTICITY          NOT CLAIMED
+ARBITRARY REAL-WORLD SOURCE TRUTH                NOT CLAIMED
+UNIVERSAL SOURCE-COMPLETENESS VALIDATOR          NOT CLAIMED
+RESOURCE/CPU DENIAL-OF-SERVICE CONTROL           ENGINEERING GATE, SEPARATE FROM THIS THEOREM
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/47\_source\_bound\_proof\_carrying\_numerical\_validation\_theorem.md}\end{flushright}

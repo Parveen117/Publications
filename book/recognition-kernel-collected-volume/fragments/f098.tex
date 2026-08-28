@@ -1,0 +1,156 @@
+% source: RH-Framework/notebooks/T01_NATIVE_RECONSTRUCTION_JUPYTER.md
+\hypertarget{t01-native-reconstruction-complete-jupyter-reproduction}{%
+\chapter{T01 Native Reconstruction --- Complete Jupyter Reproduction}\label{t01-native-reconstruction-complete-jupyter-reproduction}}
+
+This procedure uses Python cells only.
+
+\hypertarget{repository}{%
+\section{1. Repository}\label{repository}}
+
+\begin{verbatim}
+from pathlib import Path
+import subprocess
+import sys
+
+RH_REPO = Path(
+    r"C:\Users\abc\Desktop\New Folder (2)\New folder\PROVISNAL RELATED\RH-Framework"
+).resolve()
+
+print("repository:", RH_REPO)
+\end{verbatim}
+
+Change only the local path when needed.
+
+\hypertarget{git-audit}{%
+\section{2. Git audit}\label{git-audit}}
+
+\begin{verbatim}
+def run_git(repo: Path, *args: str) -> str:
+    completed = subprocess.run(
+        ["git", "-C", str(repo), *args],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return completed.stdout.strip()
+
+print("branch:", run_git(RH_REPO, "branch", "--show-current"))
+print("head:", run_git(RH_REPO, "rev-parse", "HEAD"))
+print("dirty:", repr(run_git(RH_REPO, "status", "--porcelain")))
+\end{verbatim}
+
+Expected branch:
+
+\begin{verbatim}
+agent/native-summability-reconstruction
+\end{verbatim}
+
+\hypertarget{install}{%
+\section{3. Install}\label{install}}
+
+\begin{verbatim}
+completed = subprocess.run(
+    [sys.executable, "-m", "pip", "install", "-e", str(RH_REPO)],
+    text=True,
+    capture_output=True,
+)
+print(completed.stdout)
+print(completed.stderr)
+assert completed.returncode == 0
+\end{verbatim}
+
+\hypertarget{verify-every-native-layer}{%
+\section{4. Verify every native layer}\label{verify-every-native-layer}}
+
+\begin{verbatim}
+completed = subprocess.run(
+    [
+        sys.executable,
+        str(RH_REPO / "tools" / "verify_native_foundation.py"),
+    ],
+    cwd=RH_REPO,
+    text=True,
+    capture_output=True,
+)
+print(completed.stdout)
+print(completed.stderr)
+print("return code:", completed.returncode)
+assert completed.returncode == 0
+\end{verbatim}
+
+Required statuses and hashes:
+
+\begin{verbatim}
+PASS_NATIVE_CUT_TAIL_AND_RECOGNITION_CAUCHY_COMPLETION_CORE
+4e88898fc93010a6ba189f932817d0715298f106aff61528bb2e58acb8c6dbfd
+
+PASS_NATIVE_REFINEMENT_COUNT_CONTENT_AND_SIMPLE_INTEGRALS
+1366eeb443efc661c614a3bf8e7b95b9500a10d40104a579d3e2ec438c51feb9
+
+PASS_NATIVE_SIMPLE_FUNCTION_TAIL_AND_RECOGNITION_COMPLETION_CORE
+ca4d3443e057adbaa0c94a285263d8d136465eaf970c7fef73df70196972cad9
+
+PASS_NATIVE_RATIONAL_UGD_REFINEMENT_LATTICE_ADAPTER
+932d3e549e3a01d7d42d85e70371dc74fa06c214841bca8f776d19dd70ce4bc7
+\end{verbatim}
+
+\hypertarget{inspect-source-boundaries}{%
+\section{5. Inspect source boundaries}\label{inspect-source-boundaries}}
+
+\begin{verbatim}
+native_files = [
+    "native_summability.py",
+    "native_refinement_measure.py",
+    "native_function_completion.py",
+    "native_ugd_refinement_adapter.py",
+]
+
+for name in native_files:
+    path = RH_REPO / "src" / "rh_framework" / name
+    print(name, path.stat().st_size, "bytes")
+\end{verbatim}
+
+The verifier rejects undeclared imports and executable uses of:
+
+\begin{verbatim}
+float
+complex
+numpy
+scipy
+log
+exp
+pi
+\end{verbatim}
+
+inside the foundational files.
+
+\hypertarget{inspect-theorem-frontier}{%
+\section{6. Inspect theorem frontier}\label{inspect-theorem-frontier}}
+
+\begin{verbatim}
+import json
+
+manifest = json.loads(
+    (
+        RH_REPO
+        / "provenance"
+        / "NATIVE_CLASSICAL_BOUNDARY_v0.3.json"
+    ).read_text(encoding="utf-8")
+)
+
+print("overall:", manifest["overall_status"])
+print("pure native framework:", manifest["pure_native_framework"])
+print("remaining:")
+for item in manifest["remaining_native_reconstruction"]:
+    print(" -", item)
+\end{verbatim}
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+A passing run reproduces the abstract native path, content, function, and
+rational UGD refinement layers. It does not prove the completed actual
+positive-scale UGD adapter, state-locked packet binding, target faithfulness,
+Shunya, the critical-line adapter, or the Riemann Hypothesis.
+
+\begin{flushright}\small\texttt{RH-Framework/notebooks/T01\_NATIVE\_RECONSTRUCTION\_JUPYTER.md}\end{flushright}

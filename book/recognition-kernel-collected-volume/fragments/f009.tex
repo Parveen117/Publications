@@ -1,0 +1,175 @@
+% source: RKF/theorum/02_seam_integer_single_sector_reduction.md
+\hypertarget{theorum-02-seam-integer-and-single-sector-terminal-reduction}{%
+\chapter{Theorum 02: Seam Integer and Single-Sector Terminal Reduction}\label{theorum-02-seam-integer-and-single-sector-terminal-reduction}}
+
+\hypertarget{source-provenance}{%
+\section{Source provenance}\label{source-provenance}}
+
+\begin{verbatim}
+source repository: Parveen117/MP
+primary PRs:       #235, #242, #247, #255, #277
+main objects:      K_eta, B_eta, k_Sigma(eta), threshold holonomy, odd five-label packet
+\end{verbatim}
+
+\hypertarget{global-seam-integer}{%
+\section{Global seam integer}\label{global-seam-integer}}
+
+The native completed-Weil sign decision is represented by a compact seam response. For positive eta, the representation uses a compact relative operator
+
+\begin{verbatim}
+K_eta = K_(+,eta) direct_sum K_(3,eta)^sharp
+\end{verbatim}
+
+and the seam charge
+
+\begin{verbatim}
+k_Sigma(eta) = rank 1_(1,infinity)(K_eta).
+\end{verbatim}
+
+The global relation is
+
+\begin{verbatim}
+k_Sigma(eta)=0
+iff shifted completed packet is nonnegative.
+\end{verbatim}
+
+For a cofinal sequence \texttt{eta\_j\ downarrow\ 0}, the eta-chain version of this statement becomes the endpoint sign reformulation.
+
+\hypertarget{rank-at-most-five-adverse-packet}{%
+\section{Rank-at-most-five adverse packet}\label{rank-at-most-five-adverse-packet}}
+
+The representation-complete reduction isolates the remaining fixed-shift adverse source as a finite Birman-Schwinger obstruction:
+
+\begin{verbatim}
+F_(3,eta)^times = S_(eta,-) - V_eta V_eta*
+rank(V_eta) <= 5
+B_eta = V_eta* S_(eta,-)^(-1) V_eta
+k_Sigma(eta) = N_+(B_eta - I).
+\end{verbatim}
+
+Thus the terminal sign is tracked by a Hermitian matrix of rank at most five, not by an uncontrolled infinite observer cascade.
+
+\hypertarget{common-five-matrix-covariance}{%
+\section{Common five-matrix covariance}\label{common-five-matrix-covariance}}
+
+For a positive source operator \texttt{S} and five-column source map \texttt{V}, set
+
+\begin{verbatim}
+B = V* S^(-1) V in M_5(C).
+\end{verbatim}
+
+Faithful carrier transport by a unitary does not change the represented obstruction:
+
+\begin{verbatim}
+S^U = U S U*
+V^U = U V
+(V^U)* (S^U)^(-1) V^U = B.
+\end{verbatim}
+
+Changing the five labels by a unitary only conjugates the matrix:
+
+\begin{verbatim}
+B' = U_5* B U_5.
+\end{verbatim}
+
+Therefore the following data are representation invariant:
+
+\begin{verbatim}
+spectrum;
+threshold projection;
+seam charge;
+sign decision.
+\end{verbatim}
+
+\hypertarget{prime-torus-and-threshold-holonomy-avatars}{%
+\section{Prime-torus and threshold-holonomy avatars}\label{prime-torus-and-threshold-holonomy-avatars}}
+
+The arithmetic Bohr/prime-torus chart transports the same native source and same five columns. Therefore
+
+\begin{verbatim}
+B_eta^prime-torus = B_eta^native.
+\end{verbatim}
+
+The matrix, seam and holonomy statements become
+
+\begin{verbatim}
+B_eta <= I
+iff k_Sigma(eta)=0
+iff H_threshold(eta)=I
+iff shifted completed parity/Feshbach packet is nonnegative,
+\end{verbatim}
+
+where
+
+\begin{verbatim}
+H_threshold(eta) = I - 2 1_(1,infinity)(B_eta).
+\end{verbatim}
+
+This makes threshold holonomy an avatar of the same finite obstruction, not an independent RH route.
+
+\hypertarget{one-sector-sufficiency-after-reduction}{%
+\section{One-sector sufficiency after reduction}\label{one-sector-sufficiency-after-reduction}}
+
+The upstream bilateral carrier still represents both parity sectors. The single-sector conclusion is more delicate:
+
+\begin{verbatim}
+even sector remains represented upstream;
+common pure-source sign and favorable even boundary remove an independent even terminal gate;
+finite endpoint diagnostic follows only the odd five-label source packet.
+\end{verbatim}
+
+So the lawful sentence is:
+
+\begin{verbatim}
+One sector is terminally sufficient only after the seam-integer / source-sign / favorable-even reduction.
+\end{verbatim}
+
+The even sector is not deleted. It becomes non-terminal after the reduction.
+
+\hypertarget{fixed-node-evidence}{%
+\section{Fixed-node evidence}\label{fixed-node-evidence}}
+
+The common five-matrix update records the fixed node
+
+\begin{verbatim}
+eta=.01 centre top             0.43597867312210625
+outward matrix error upper     0.40291149063402765
+native top upper               0.8388901637561339
+threshold reserve              0.1611098362438661
+k_Sigma(.01)                   PROVED ZERO
+\end{verbatim}
+
+This is a closed shifted node, not by itself eta-zero completion.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+representation-complete bilateral framework    PROVED
+native seam integer                            PROVED
+rank-at-most-five fixed-shift reduction         PROVED
+common five-matrix covariance                   PROVED
+prime-torus matrix transport                    PROVED
+threshold holonomy <=> seam charge              PROVED
+fixed eta=.01 seam zero                         PROVED
+single-sector terminal focus                    VALID AFTER REDUCTION
+
+controlled eta_j downarrow 0                    SEPARATE GATE UNLESS T03 APPLIED
+UGD terminal holonomy = threshold holonomy       ASSUMED WHERE STATED
+unconditional RH from this capsule alone         NOT CLAIMED
+\end{verbatim}
+
+\hypertarget{use-in-the-framework}{%
+\section{Use in the framework}\label{use-in-the-framework}}
+
+The theorem should be consumed as the finite obstruction adapter:
+
+\begin{verbatim}
+completed-Weil sign problem
+-> compact seam response
+-> seam integer k_Sigma
+-> rank-at-most-five B_eta
+-> odd five-label terminal packet after source/even reduction
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/02\_seam\_integer\_single\_sector\_reduction.md}\end{flushright}

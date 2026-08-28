@@ -1,0 +1,116 @@
+% source: RKF/CLAIM_BOUNDARY.md
+\hypertarget{claim-boundary}{%
+\chapter{Claim Boundary}\label{claim-boundary}}
+
+\hypertarget{current-certified-scope}{%
+\section{Current certified scope}\label{current-certified-scope}}
+
+The first public reviewer cartridge contains two implemented foundational certificate packages.
+
+\hypertarget{f00-f00-e}{%
+\subsection{F00 / F00-E}\label{f00-f00-e}}
+
+Certified declared obligations include:
+
+\begin{verbatim}
+exact cut-scalar multiplication;
+quarter-turn relation and dagger;
+exact norm-square identities;
+factorial/binomial coefficient identities;
+explicit factorial-tail bounds;
+Euler circular residual enclosure;
+flow composition and generator sign;
+source-order policy checks;
+adversarial negative controls.
+\end{verbatim}
+
+\hypertarget{f00-g-f00-h-f00-i}{%
+\subsection{F00-G / F00-H / F00-I}\label{f00-g-f00-h-f00-i}}
+
+Certified declared obligations include:
+
+\begin{verbatim}
+positive logarithm series packets and exact tails;
+Exp(Log(x)) enclosure packets;
+logarithmic product-law packets;
+division, gcd, and Bezout packets;
+prime-factor reconstruction packets;
+Mobius and von Mangoldt coefficient identities;
+dyadic zeta convergence bounds;
+finite Euler products with omitted-tail bounds;
+nonvanishing product-tail obligations;
+adversarial negative controls.
+\end{verbatim}
+
+\hypertarget{meaning-of-certificate-status}{%
+\section{Meaning of certificate status}\label{meaning-of-certificate-status}}
+
+\hypertarget{pass}{%
+\subsection{PASS}\label{pass}}
+
+Every declared computational obligation in that package passed, required source pins matched, and all required negative controls behaved as specified.
+
+\hypertarget{inconclusive}{%
+\subsection{INCONCLUSIVE}\label{inconclusive}}
+
+At least one obligation was incomplete, unavailable, stale, not strictly enclosed, or failed to produce a lawful final result. \texttt{INCONCLUSIVE} is not silently promoted to PASS.
+
+\hypertarget{fail}{%
+\subsection{FAIL}\label{fail}}
+
+A required declared obligation was rigorously contradicted or a required negative control was not detected.
+
+\hypertarget{stale}{%
+\subsection{STALE}\label{stale}}
+
+One or more source pins or immutable inputs no longer match the package specification.
+
+\hypertarget{what-is-not-established-by-this-release}{%
+\section{What is not established by this release}\label{what-is-not-established-by-this-release}}
+
+This repository does not claim that the current certificates establish:
+
+\begin{verbatim}
+all universal mathematical statements appearing in every related manuscript;
+Fourier or Poisson reconstruction;
+Gamma and completed-xi continuation;
+Hadamard factorization;
+the explicit prime–Gamma–zero formula;
+the completed-Weil sign;
+active-band source positivity;
+eta-zero endpoint positivity;
+K0 >= 0;
+the Riemann Hypothesis.
+\end{verbatim}
+
+These remain \texttt{NOT\ CERTIFIED}, \texttt{OPEN}, or subject to later audit packages.
+
+\hypertarget{manuscript-status-versus-certificate-status}{%
+\section{Manuscript status versus certificate status}\label{manuscript-status-versus-certificate-status}}
+
+The repository keeps distinct labels for:
+
+\begin{verbatim}
+manuscript theorem classification;
+computational certificate status;
+external independent review status.
+\end{verbatim}
+
+A manuscript theorem may be classified \texttt{PROVED} while its executable audit is \texttt{NOT\ IMPLEMENTED} or \texttt{INCONCLUSIVE}. Conversely, a computational PASS certifies only the finite obligations declared by its reduction and package specification.
+
+\hypertarget{recognition-kernel-interpretation}{%
+\section{Recognition Kernel interpretation}\label{recognition-kernel-interpretation}}
+
+The current public cartridge demonstrates the RNKE pattern on mathematical proof transport:
+
+\begin{verbatim}
+declared state and theorem dependency
+-> lawful derivation step
+-> exact or outward audit
+-> residue classification
+-> certificate
+\end{verbatim}
+
+The difficult number-theory application is the demonstrator. The public claim is the reproducible recognition-kernel architecture and the declared verified obligations, not an RH solution.
+
+\begin{flushright}\small\texttt{RKF/CLAIM\_BOUNDARY.md}\end{flushright}

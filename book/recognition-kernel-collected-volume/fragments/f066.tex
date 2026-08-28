@@ -1,0 +1,162 @@
+% source: RKF/theorum/thermodynamics/lambda_geometry/14_constrained_variational_length.md
+\hypertarget{constrained-homotopy-groupoid-and-variational-length}{%
+\chapter{Constrained Homotopy Groupoid and Variational Length}\label{constrained-homotopy-groupoid-and-variational-length}}
+
+\hypertarget{provenance}{%
+\section{Provenance}\label{provenance}}
+
+\begin{verbatim}
+source repository: Parveen117/MP
+source PR: #57
+source theorem: adapters/common/CONSTRAINED_HOMOTOPY_GROUPOID.md
+\end{verbatim}
+
+\hypertarget{constrained-state}{%
+\section{1. Constrained state}\label{constrained-state}}
+
+A continuum sector carries
+
+\[
+(A,\varphi;
+\text{hierarchy itinerary},
+\nu,
+\mathfrak m,
+\Phi,
+\text{seam class}),
+\]
+
+where \(A\) is the connection path, \(\varphi\) is a lifted phase, \(\nu\) is winding, \(\mathfrak m\) is memory, and \(\Phi\) is lifted curvature flux.
+
+The endpoint transport is
+
+\[
+U_A=\mathcal P\exp\!\int A(t)\,dt,
+\]
+
+and the phase lift obeys
+
+\[
+\varphi(1)-\varphi(0)=2\pi\nu.
+\]
+
+\hypertarget{guarded-groupoid}{%
+\section{2. Guarded groupoid}\label{guarded-groupoid}}
+
+A declared morphism may combine:
+
+\begin{itemize}
+\tightlist
+\item
+  orientation-preserving reparameterization;
+\item
+  constant \(SU(2)\) gauge conjugation;
+\item
+  an admissible homotopy preserving the complete ledger;
+\item
+  endpoint holonomies related by gauge conjugacy.
+\end{itemize}
+
+Identity, inverse, and composition laws hold for the declared finite compatibility packet. The theorem does not claim existence of a smooth constrained homotopy for every formally compatible pair.
+
+\hypertarget{variational-functional}{%
+\section{3. Variational functional}\label{variational-functional}}
+
+For nonnegative coefficients \(c,\alpha,\beta,\gamma\), define
+
+\[
+\mathcal L
+=c\int\|A(t)\|\,dt
++\alpha\int|\dot\varphi(t)|\,dt
++\beta W(\mathfrak m)
++\gamma\|\Phi\|.
+\]
+
+The coefficients are calibrations, not canonical universal constants.
+
+\hypertarget{universal-lower-bound-theorem}{%
+\section{4. Universal lower-bound theorem}\label{universal-lower-bound-theorem}}
+
+Let \(\theta(U)\) denote the principal \(SU(2)\) conjugacy angle. Then
+
+\[
+\boxed{
+\mathcal L
+\ge
+c\,\theta(U_A)
++2\pi\alpha|\nu|
++\beta W(\mathfrak m)
++\gamma\|\Phi\|.
+}
+\]
+
+The proof uses:
+
+\begin{itemize}
+\tightlist
+\item
+  the geodesic-distance lower bound for connection length;
+\item
+  total variation of the lifted phase;
+\item
+  nonnegativity of the protected memory and curvature terms.
+\end{itemize}
+
+The bound is saturated in the declared principal-geodesic, monotone-phase calibration class.
+
+\hypertarget{positivity-boundary}{%
+\section{5. Positivity boundary}\label{positivity-boundary}}
+
+The constrained infimum is strictly positive whenever at least one protected invariant entering the lower bound is nonzero with a positive coefficient.
+
+A sector with
+
+\begin{verbatim}
+identity holonomy
+zero winding
+empty memory
+zero curvature flux
+\end{verbatim}
+
+may still have zero lower bound. Composition-primitivity alone does not prohibit collapse.
+
+\hypertarget{composition-subadditivity}{%
+\section{6. Composition subadditivity}\label{composition-subadditivity}}
+
+For compatible sectors,
+
+\[
+\ell_{\min}(C_2\circ C_1)
+\le
+\ell_{\min}(C_1)+\ell_{\min}(C_2).
+\]
+
+The explicit lower-bound expression is also subadditive by the triangle inequalities for the conjugacy angle, integer winding, and curvature norm.
+
+\hypertarget{ledger-preserving-obstruction}{%
+\section{7. Ledger-preserving obstruction}\label{ledger-preserving-obstruction}}
+
+An identity-holonomy sector with nonzero winding cannot be constrained-equivalent to the trivial zero-winding sector because
+
+\[
+\mathcal L\ge2\pi\alpha|\nu|.
+\]
+
+Thus a visible endpoint may close while a protected lifted ledger prevents contraction.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+DECLARED CONSTRAINED GROUPOID LAWS        PROVED IN FINITE AUDIT
+VARIATIONAL LOWER BOUND                  PROVED
+WINDING / MEMORY / FLUX POSITIVITY       PROVED WHEN WEIGHTED
+COMPOSITION SUBADDITIVITY                PROVED
+ZERO-LEDGER COLLAPSE POSSIBILITY        RETAINED
+
+CANONICAL COEFFICIENTS                  NOT PROVED
+ALL SMOOTH CONSTRAINED HOMOTOPIES       NOT CLASSIFIED
+GENERAL MINIMIZER EXISTENCE             OPEN AT THIS STAGE
+CURVATURE-DERIVED NO-COLLAPSE           NEXT THEOREM LAYER
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/thermodynamics/lambda\_geometry/14\_constrained\_variational\_length.md}\end{flushright}

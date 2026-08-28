@@ -1,0 +1,74 @@
+% source: RKF/theorum/thermodynamics/lambda_geometry/README.md
+\hypertarget{thermodynamic-lambda-geometry-archive}{%
+\chapter{Thermodynamic-Lambda Geometry Archive}\label{thermodynamic-lambda-geometry-archive}}
+
+This subarchive records the earlier theorem chain developed in \texttt{Parveen117/MP} PRs \#52 through \#61.
+
+It begins with a thermodynamic response hierarchy, then studies the additional geometry required to turn that hierarchy into a connection, holonomy, memory-preserving length, constrained path space, and curvature-flux no-collapse theory.
+
+\hypertarget{typing-warning}{%
+\section{Typing warning}\label{typing-warning}}
+
+PR \#52 used the historical first-layer coordinates
+
+\[
+\lambda_p=-ST/C_p,
+\qquad
+\lambda_v=-ST/C_v,
+\]
+
+\[
+\lambda_s=V(\partial P/\partial V)_S,
+\qquad
+\lambda_t=-P(\partial V/\partial P)_T.
+\]
+
+PR \#239 later corrected the physical typing by distinguishing those derivative coordinates from the uniform entropy-scaled response tetrad
+
+\[
+\lambda_X^{\mathrm{th}}=-ST/C_X,
+\qquad X\in\{p,v,s,t\}.
+\]
+
+Therefore the files in this subfolder preserve the geometric theorems from PRs \#52--\#61 without silently identifying the historical \(s,t\) derivative coordinates with the later entropy-scaled tetrad.
+
+\hypertarget{reading-order}{%
+\section{Reading order}\label{reading-order}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{10\_lambda\_holonomy\_and\_branch\_memory.md}
+\item
+  \texttt{11\_noncommutative\_holonomy\_and\_factorization.md}
+\item
+  \texttt{12\_refinement\_and\_continuum\_length.md}
+\item
+  \texttt{13\_constrained\_variational\_length.md}
+\item
+  \texttt{14\_curvature\_flux\_no\_collapse.md}
+\item
+  \texttt{15\_primitive\_flux\_spectrum\_and\_obstruction.md}
+\end{enumerate}
+
+\hypertarget{status}{%
+\section{Status}\label{status}}
+
+\begin{verbatim}
+THERMODYNAMIC FIRST RESPONSE LAYER              HISTORICAL PROVENANCE
+CONNECTION FROM RESPONSE HIERARCHY              ADDITIONAL DATA / NOT UNIQUE
+UNITARY HOLONOMY-RATE OPERATOR                  PROVED
+STATIC LOGARITHM BRANCH MEMORY                  PROVED
+NONCOMMUTATIVE PATH-ORDER COLLISION             PROVED
+ADMISSIBLE FACTORIZATION WITH CROSS CURVATURE   PROVED
+REFINEMENT-STABLE LENGTH RIGIDITY                PROVED
+CONTINUUM AND REPARAMETERIZATION DESCENT         PROVED
+UNRESTRICTED HOMOTOPY INVARIANCE                DISPROVED
+CONSTRAINED VARIATIONAL LOWER BOUND             PROVED
+CURVATURE-FLUX NO-COLLAPSE                      PROVED ON COMPACT STRIPS
+INTEGER FLUX WITNESS FAMILY                     PROVED
+FIXED-RECTANGLE CANONICALITY                     DISPROVED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/thermodynamics/lambda\_geometry/README.md}\end{flushright}

@@ -1,0 +1,983 @@
+% source: RKF/theorems/foundation/F00I_NATIVE_DIRICHLET_ZETA_EULER_PRODUCT.md
+\hypertarget{f00-i-native-dirichlet-zeta-euler-product-and-von-mangoldt-derivative}{%
+\chapter{F00-I --- Native Dirichlet Zeta, Euler Product and von Mangoldt Derivative}\label{f00-i-native-dirichlet-zeta-euler-product-and-von-mangoldt-derivative}}
+
+\hypertarget{classification}{%
+\section{Classification}\label{classification}}
+
+\texttt{PROVED} on the native half-plane
+
+\[
+\operatorname{Re}_\Sigma(s)>1.
+\]
+
+\hypertarget{purpose}{%
+\section{Purpose}\label{purpose}}
+
+F00-G derives the native logarithm and powers of every positive natural scalar.
+F00-H derives native primes, unique factorization, the Möbius function and the
+von Mangoldt weight.
+
+This theorem constructs the zeta function in its initial domain without
+importing
+
+\begin{verbatim}
+the classical Riemann zeta function;
+the ordinary p-series or integral test;
+the classical Euler product;
+ordinary complex logarithms;
+Weierstrass convergence theorems;
+the classical von Mangoldt logarithmic derivative.
+\end{verbatim}
+
+The construction order is
+
+\begin{verbatim}
+native powers n^{-s}
+-> dyadic convergence
+-> native differentiability
+-> native Dirichlet convolution products
+-> finite prime Euler products
+-> infinite Euler product
+-> nonvanishing
+-> Möbius reciprocal
+-> von Mangoldt logarithmic derivative.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-half-plane-and-powers}{%
+\section{1. Native half-plane and powers}\label{native-half-plane-and-powers}}
+
+For
+
+\[
+s=\sigma+\iota_\Sigma\tau\in\mathbb C_\Sigma,
+\]
+
+define
+
+\[
+\operatorname{Re}_\Sigma(s)
+=\frac{s+s^\dagger}{2}=\sigma.
+\]
+
+For every positive natural \texttt{n}, F00-G defines
+
+\[
+\boxed{
+n^{-s}_\Sigma
+=
+\operatorname{Exp}_\Sigma
+\bigl(-s\operatorname{Log}_\Sigma(n)\bigr).
+}
+\]
+
+The subscript is suppressed below.
+
+\hypertarget{lemma-1.1-native-magnitude-of-a-dirichlet-atom}{%
+\subsection{Lemma 1.1 --- Native magnitude of a Dirichlet atom}\label{lemma-1.1-native-magnitude-of-a-dirichlet-atom}}
+
+For \texttt{s=sigma+iota\_Sigma\ tau},
+
+\[
+\boxed{
+(n^{-s})^\dagger n^{-s}=n^{-2\sigma}.
+}
+\]
+
+Hence
+
+\[
+|n^{-s}|_\Sigma=n^{-\sigma}.
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+Dagger covariance and the exponential addition law give
+
+\[
+\begin{aligned}
+(n^{-s})^\dagger n^{-s}
+&=
+\operatorname{Exp}_\Sigma
+(-s^\dagger\operatorname{Log}_\Sigma n)
+\operatorname{Exp}_\Sigma
+(-s\operatorname{Log}_\Sigma n)\\
+&=
+\operatorname{Exp}_\Sigma
+(-(s+s^\dagger)\operatorname{Log}_\Sigma n)\\
+&=n^{-2\sigma}.
+\end{aligned}
+\]
+
+The positive square root is \texttt{n\^{}\{-sigma\}}. ∎
+
+\hypertarget{lemma-1.2-multiplicativity}{%
+\subsection{Lemma 1.2 --- Multiplicativity}\label{lemma-1.2-multiplicativity}}
+
+For positive naturals \texttt{m,n},
+
+\[
+\boxed{(mn)^{-s}=m^{-s}n^{-s}.}
+\]
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Use
+
+\[
+\operatorname{Log}_\Sigma(mn)
+=
+\operatorname{Log}_\Sigma(m)+
+\operatorname{Log}_\Sigma(n)
+\]
+
+and the exponential addition law. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{dyadic-convergence}{%
+\section{2. Dyadic convergence}\label{dyadic-convergence}}
+
+For \texttt{k\textgreater{}=0}, let the native dyadic block be
+
+\[
+D_k=\{n\in\mathbb N_\Sigma:2^k\le n<2^{k+1}\}.
+\]
+
+It contains exactly \texttt{2\^{}k} natural scalars.
+
+\hypertarget{lemma-2.1-dyadic-block-estimate}{%
+\subsection{Lemma 2.1 --- Dyadic block estimate}\label{lemma-2.1-dyadic-block-estimate}}
+
+If \texttt{sigma=Re\_Sigma(s)\textgreater{}1}, then
+
+\[
+\boxed{
+\sum_{n\in D_k}|n^{-s}|_\Sigma
+\le
+2^{-k(\sigma-1)}.
+}
+\]
+
+\hypertarget{proof-2}{%
+\subsection{Proof}\label{proof-2}}
+
+For \texttt{n\ in\ D\_k}, monotonicity of the logarithm and negative radial exponent give
+
+\[
+n^{-\sigma}\le(2^k)^{-\sigma}=2^{-k\sigma}.
+\]
+
+There are \texttt{2\^{}k} terms. ∎
+
+\hypertarget{theorem-2.2-native-dirichlet-convergence}{%
+\subsection{Theorem 2.2 --- Native Dirichlet convergence}\label{theorem-2.2-native-dirichlet-convergence}}
+
+For every \texttt{s} with
+
+\[
+\operatorname{Re}_\Sigma(s)>1,
+\]
+
+the partial sums
+
+\[
+Z_{\Sigma,N}(s)=\sum_{n=1}^{N}n^{-s}
+\]
+
+are Cauchy in \texttt{C\_Sigma}.
+
+\hypertarget{proof-3}{%
+\subsection{Proof}\label{proof-3}}
+
+Choose radial \texttt{delta\textgreater{}0} such that
+
+\[
+\operatorname{Re}_\Sigma(s)\ge1+\delta.
+\]
+
+Every tail beginning beyond \texttt{2\^{}K} is bounded by
+
+\[
+\sum_{k=K}^{\infty}2^{-k\delta},
+\]
+
+which is a native convergent geometric tail. ∎
+
+\hypertarget{definition-2.3-native-dirichlet-zeta}{%
+\subsection{Definition 2.3 --- Native Dirichlet zeta}\label{definition-2.3-native-dirichlet-zeta}}
+
+For \texttt{Re\_Sigma(s)\textgreater{}1}, define
+
+\[
+\boxed{
+\zeta_\Sigma(s)
+=
+\sum_{n=1}^{\infty}n^{-s}.
+}
+\]
+
+This is the first definition of zeta in RH-Framework. No classical zeta
+function is referenced.
+
+\hypertarget{corollary-2.4-uniform-half-plane-tails}{%
+\subsection{Corollary 2.4 --- Uniform half-plane tails}\label{corollary-2.4-uniform-half-plane-tails}}
+
+For every radial \texttt{delta\textgreater{}0}, convergence is uniform in the native magnitude on
+
+\[
+\operatorname{Re}_\Sigma(s)\ge1+\delta.
+\]
+
+Indeed,
+
+\[
+\sup_{\operatorname{Re}_\Sigma(s)\ge1+\delta}
+\left|
+\sum_{n\ge2^K}n^{-s}
+\right|_\Sigma
+\le
+\frac{2^{-K\delta}}{1-2^{-\delta}}.
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{logarithmic-moment-convergence}{%
+\section{3. Logarithmic moment convergence}\label{logarithmic-moment-convergence}}
+
+\hypertarget{lemma-3.1-dyadic-logarithm-bound}{%
+\subsection{Lemma 3.1 --- Dyadic logarithm bound}\label{lemma-3.1-dyadic-logarithm-bound}}
+
+For \texttt{n\ in\ D\_k},
+
+\[
+\operatorname{Log}_\Sigma(n)
+\le
+(k+1)\operatorname{Log}_\Sigma(2).
+\]
+
+\hypertarget{proof-4}{%
+\subsection{Proof}\label{proof-4}}
+
+Because \texttt{n\textless{}2\^{}\{k+1\}}, strict monotonicity and the logarithmic power law give the
+result. ∎
+
+\hypertarget{lemma-3.2-polynomial-geometric-convergence}{%
+\subsection{Lemma 3.2 --- Polynomial-geometric convergence}\label{lemma-3.2-polynomial-geometric-convergence}}
+
+For every radial \texttt{0\textless{}q\textless{}1} and every fixed natural \texttt{r},
+
+\[
+\sum_{k=0}^{\infty}(k+1)^r q^k
+\]
+
+converges in \texttt{R\_Sigma}.
+
+\hypertarget{proof-5}{%
+\subsection{Proof}\label{proof-5}}
+
+Choose a native rational \texttt{q\textless{}rho\textless{}1}. For sufficiently large \texttt{k},
+
+\[
+(k+2)^r q^{k+1}
+\le
+\rho (k+1)^r q^k.
+\]
+
+This follows because
+
+\[
+q\left(1+\frac1{k+1}\right)^r
+\longrightarrow q<\rho
+\]
+
+by finite binomial expansion and the Archimedean order. The tail is then
+bounded by a geometric series of ratio \texttt{rho}. ∎
+
+\hypertarget{theorem-3.3-native-logarithmic-moment-series}{%
+\subsection{Theorem 3.3 --- Native logarithmic moment series}\label{theorem-3.3-native-logarithmic-moment-series}}
+
+For every fixed natural \texttt{r\textgreater{}=0},
+
+\[
+\sum_{n=1}^{\infty}
+\operatorname{Log}_\Sigma(n)^r n^{-s}
+\]
+
+converges absolutely and uniformly on every half-plane
+
+\[
+\operatorname{Re}_\Sigma(s)\ge1+\delta.
+\]
+
+\hypertarget{proof-6}{%
+\subsection{Proof}\label{proof-6}}
+
+On \texttt{D\_k}, the absolute block sum is bounded by
+
+\[
+(k+1)^r
+\operatorname{Log}_\Sigma(2)^r
+2^{-k\delta}.
+\]
+
+Apply Lemma 3.2. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-differentiability-of-zeta}{%
+\section{4. Native differentiability of zeta}\label{native-differentiability-of-zeta}}
+
+For each natural \texttt{n},
+
+\[
+\partial_\Sigma n^{-s}
+=-\operatorname{Log}_\Sigma(n)n^{-s}.
+\]
+
+This follows from the native Euler equation and chain rule.
+
+\hypertarget{theorem-4.1-native-zeta-derivative}{%
+\subsection{Theorem 4.1 --- Native zeta derivative}\label{theorem-4.1-native-zeta-derivative}}
+
+On \texttt{Re\_Sigma(s)\textgreater{}1}, the native derivative exists and
+
+\[
+\boxed{
+\zeta_\Sigma'(s)
+=-
+\sum_{n=1}^{\infty}
+\operatorname{Log}_\Sigma(n)n^{-s}.
+}
+\]
+
+\hypertarget{proof-7}{%
+\subsection{Proof}\label{proof-7}}
+
+Fix \texttt{s\_0} with
+
+\[
+\operatorname{Re}_\Sigma(s_0)>1.
+\]
+
+Choose \texttt{delta\textgreater{}0} so that
+
+\[
+\operatorname{Re}_\Sigma(s_0)
+\ge1+2\delta.
+\]
+
+For native \texttt{h} with \texttt{\textbar{}h\textbar{}\_Sigma\textless{}delta},
+
+\[
+\frac{n^{-(s_0+h)}-n^{-s_0}}{h}
+=
+n^{-s_0}
+\frac{
+\operatorname{Exp}_\Sigma(-h\operatorname{Log}_\Sigma n)-1
+}{h}.
+\]
+
+Subtract
+
+\[
+-\operatorname{Log}_\Sigma(n)n^{-s_0}.
+\]
+
+The factorial-tail estimate for \texttt{Exp\_Sigma} bounds the remainder by
+
+\[
+|h|_\Sigma
+\operatorname{Log}_\Sigma(n)^2
+n^{-(1+\delta)}
+\operatorname{Exp}_\Sigma
+(|h|_\Sigma\operatorname{Log}_\Sigma n).
+\]
+
+Since
+
+\[
+\operatorname{Exp}_\Sigma
+(|h|_\Sigma\operatorname{Log}_\Sigma n)
+=n^{|h|_\Sigma}
+\le n^\delta,
+\]
+
+the remainder is bounded by
+
+\[
+|h|_\Sigma
+\operatorname{Log}_\Sigma(n)^2
+n^{-(1+\delta)}.
+\]
+
+The majorant series converges by Theorem 3.3. Summing the remainder and then
+letting \texttt{h-\textgreater{}0} proves the displayed derivative formula directly. No imported
+uniform-limit differentiation theorem is used. ∎
+
+Repeated use of the same argument gives
+
+\[
+\boxed{
+\zeta_\Sigma^{(r)}(s)
+=(-1)^r
+\sum_{n=1}^{\infty}
+\operatorname{Log}_\Sigma(n)^r n^{-s}
+}
+\]
+
+for every finite natural \texttt{r}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{infinitude-of-native-primes}{%
+\section{5. Infinitude of native primes}\label{infinitude-of-native-primes}}
+
+\hypertarget{theorem-5.1-native-euclid-theorem}{%
+\subsection{Theorem 5.1 --- Native Euclid theorem}\label{theorem-5.1-native-euclid-theorem}}
+
+There are infinitely many native primes.
+
+\hypertarget{proof-8}{%
+\subsection{Proof}\label{proof-8}}
+
+Suppose the complete prime set were finite:
+
+\[
+p_1,\ldots,p_m.
+\]
+
+Put
+
+\[
+N=p_1p_2\cdots p_m+1.
+\]
+
+Then \texttt{N\textgreater{}1}, so F00-H gives a prime divisor \texttt{q\textbar{}N}. By completeness of the list,
+\texttt{q=p\_j} for some \texttt{j}. But \texttt{p\_j} divides the product and also \texttt{N}, so it divides
+
+\[
+N-p_1\cdots p_m=1,
+\]
+
+contradicting \texttt{p\_j\textgreater{}1}. ∎
+
+The native primes may therefore be listed increasingly as
+
+\[
+p_1<p_2<p_3<\cdots
+\]
+
+using the least-element property of the natural order.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-dirichlet-convolution-series}{%
+\section{6. Native Dirichlet convolution series}\label{native-dirichlet-convolution-series}}
+
+Let \texttt{a,b} be native arithmetic functions. Suppose
+
+\[
+\sum_{n\ge1}|a(n)|_\Sigma n^{-\sigma}
+\]
+
+and
+
+\[
+\sum_{n\ge1}|b(n)|_\Sigma n^{-\sigma}
+\]
+
+converge for some radial \texttt{sigma\textgreater{}1}.
+
+Define finite divisor convolution
+
+\[
+(a*b)(n)
+=
+\sum_{d|n}a(d)b(n/d).
+\]
+
+\hypertarget{theorem-6.1-native-dirichlet-multiplication}{%
+\subsection{Theorem 6.1 --- Native Dirichlet multiplication}\label{theorem-6.1-native-dirichlet-multiplication}}
+
+For \texttt{Re\_Sigma(s)\textgreater{}=sigma},
+
+\[
+\boxed{
+\left(
+\sum_{m\ge1}a(m)m^{-s}
+\right)
+\left(
+\sum_{n\ge1}b(n)n^{-s}
+\right)
+=
+\sum_{k\ge1}(a*b)(k)k^{-s}.
+}
+\]
+
+\hypertarget{proof-9}{%
+\subsection{Proof}\label{proof-9}}
+
+For finite rectangles of indices, distributivity and
+
+\[
+(mn)^{-s}=m^{-s}n^{-s}
+\]
+
+give the identity after grouping by \texttt{k=mn}.
+
+The unrestricted double tail is bounded by the product of the two absolute
+series tails. Hence the finite identities pass to the native Cauchy limit.
+Every coefficient group for fixed \texttt{k} is finite because the divisor set is
+finite. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{finite-euler-products}{%
+\section{7. Finite Euler products}\label{finite-euler-products}}
+
+For a native prime \texttt{p} and \texttt{Re\_Sigma(s)\textgreater{}1},
+
+\[
+|p^{-s}|_\Sigma=p^{-\sigma}<1.
+\]
+
+Thus the native geometric identity gives
+
+\[
+\boxed{
+(1-p^{-s})^{-1}
+=
+\sum_{j=0}^{\infty}p^{-js}.
+}
+\]
+
+For the first \texttt{m} primes, define
+
+\[
+Q_m(s)
+=
+\prod_{j=1}^{m}(1-p_j^{-s})^{-1}.
+\]
+
+\hypertarget{theorem-7.1-finite-prime-factor-expansion}{%
+\subsection{Theorem 7.1 --- Finite prime-factor expansion}\label{theorem-7.1-finite-prime-factor-expansion}}
+
+\[
+\boxed{
+Q_m(s)
+=
+\sum_{\substack{n\ge1\\
+\nu_n(p)=0\text{ for }p>p_m}}
+n^{-s}.
+}
+\]
+
+\hypertarget{proof-10}{%
+\subsection{Proof}\label{proof-10}}
+
+Expand the finite product of geometric series. A term is specified by one
+nonnegative exponent for each prime \texttt{p\_1,...,p\_m}, hence by the natural
+
+\[
+n=p_1^{a_1}\cdots p_m^{a_m}.
+\]
+
+Unique factorization from F00-H makes this correspondence bijective. Absolute
+convergence of the finite product of geometric series permits the finite-stage
+Cauchy limit in each exponent. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{infinite-euler-product}{%
+\section{8. Infinite Euler product}\label{infinite-euler-product}}
+
+\hypertarget{theorem-8.1-native-euler-product}{%
+\subsection{Theorem 8.1 --- Native Euler product}\label{theorem-8.1-native-euler-product}}
+
+For every \texttt{s} with \texttt{Re\_Sigma(s)\textgreater{}1},
+
+\[
+\boxed{
+\zeta_\Sigma(s)
+=
+\prod_{p\in\mathcal P_\Sigma}
+(1-p^{-s})^{-1}.
+}
+\]
+
+The product means the native limit of \texttt{Q\_m(s)}.
+
+\hypertarget{proof-11}{%
+\subsection{Proof}\label{proof-11}}
+
+The finite expansion contains exactly those natural numbers whose prime factors
+are at most \texttt{p\_m}. Every omitted natural has a prime factor greater than \texttt{p\_m}
+and is therefore itself greater than \texttt{p\_m}.
+
+Hence
+
+\[
+|\zeta_\Sigma(s)-Q_m(s)|_\Sigma
+\le
+\sum_{n>p_m}n^{-\sigma}.
+\]
+
+The native Dirichlet tail tends to zero by Theorem 2.2. ∎
+
+The convergence is uniform on every native half-plane
+
+\[
+\operatorname{Re}_\Sigma(s)\ge1+\delta.
+\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-nonvanishing}{%
+\section{9. Native nonvanishing}\label{native-nonvanishing}}
+
+Define the finite inverse products
+
+\[
+P_m(s)=\prod_{j=1}^{m}(1-p_j^{-s}).
+\]
+
+\hypertarget{lemma-9.1-product-tail-estimate}{%
+\subsection{Lemma 9.1 --- Product-tail estimate}\label{lemma-9.1-product-tail-estimate}}
+
+For native scalars \texttt{a\_j},
+
+\[
+\left|
+\prod_{j=r}^{m}(1-a_j)-1
+\right|_\Sigma
+\le
+\operatorname{Exp}_\Sigma
+\left(
+\sum_{j=r}^{m}|a_j|_\Sigma
+\right)-1.
+\]
+
+\hypertarget{proof-12}{%
+\subsection{Proof}\label{proof-12}}
+
+Expand the finite product. The absolute sum of all nonconstant monomials is at
+most
+
+\[
+\prod_{j=r}^{m}(1+|a_j|_\Sigma)-1.
+\]
+
+For positive radial \texttt{u}, the factorial exponential satisfies
+
+\[
+1+u\le\operatorname{Exp}_\Sigma(u).
+\]
+
+Therefore
+
+\[
+\prod_{j=r}^{m}(1+|a_j|_\Sigma)
+\le
+\operatorname{Exp}_\Sigma
+\left(
+\sum_{j=r}^{m}|a_j|_\Sigma
+\right).
+\]
+
+∎
+
+\hypertarget{theorem-9.2-native-zero-free-half-plane}{%
+\subsection{Theorem 9.2 --- Native zero-free half-plane}\label{theorem-9.2-native-zero-free-half-plane}}
+
+For \texttt{Re\_Sigma(s)\textgreater{}1},
+
+\[
+\boxed{
+\zeta_\Sigma(s)\ne0.
+}
+\]
+
+\hypertarget{proof-13}{%
+\subsection{Proof}\label{proof-13}}
+
+Because
+
+\[
+\sum_p|p^{-s}|_\Sigma
+\le
+\sum_{n\ge2}n^{-\sigma}<\infty,
+\]
+
+Lemma 9.1 shows that \texttt{P\_m(s)} is Cauchy. Let its limit be \texttt{P(s)}.
+
+For every \texttt{m},
+
+\[
+P_m(s)Q_m(s)=1.
+\]
+
+Theorem 8.1 gives \texttt{Q\_m(s)-\textgreater{}zeta\_Sigma(s)}. Continuity of multiplication in the
+completed cut field gives
+
+\[
+P(s)\zeta_\Sigma(s)=1.
+\]
+
+Thus \texttt{zeta\_Sigma(s)} is invertible and nonzero. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{muxf6bius-reciprocal}{%
+\section{10. Möbius reciprocal}\label{muxf6bius-reciprocal}}
+
+Because
+
+\[
+|\mu_\Sigma(n)|_\Sigma\le1,
+\]
+
+the series
+
+\[
+M_\Sigma(s)
+=
+\sum_{n=1}^{\infty}
+\mu_\Sigma(n)n^{-s}
+\]
+
+converges absolutely for \texttt{Re\_Sigma(s)\textgreater{}1}.
+
+\hypertarget{theorem-10.1-native-reciprocal-series}{%
+\subsection{Theorem 10.1 --- Native reciprocal series}\label{theorem-10.1-native-reciprocal-series}}
+
+\[
+\boxed{
+\frac{1}{\zeta_\Sigma(s)}
+=
+\sum_{n=1}^{\infty}
+\mu_\Sigma(n)n^{-s}.
+}
+\]
+
+\hypertarget{proof-14}{%
+\subsection{Proof}\label{proof-14}}
+
+Apply native Dirichlet multiplication to the constant arithmetic function
+\texttt{1(n)=1} and \texttt{mu\_Sigma}. F00-H proves
+
+\[
+(1*\mu_\Sigma)(n)
+=
+\begin{cases}
+1,&n=1,\\
+0,&n>1.
+\end{cases}
+\]
+
+Therefore
+
+\[
+\zeta_\Sigma(s)M_\Sigma(s)=1.
+\]
+
+Use Theorem 9.2. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{native-von-mangoldt-series}{%
+\section{11. Native von Mangoldt series}\label{native-von-mangoldt-series}}
+
+The series
+
+\[
+A_\Sigma(s)
+=
+\sum_{n=1}^{\infty}
+\Lambda_\Sigma(n)n^{-s}
+\]
+
+converges absolutely for \texttt{Re\_Sigma(s)\textgreater{}1} because
+
+\[
+0\le\Lambda_\Sigma(n)
+\le\operatorname{Log}_\Sigma(n)
+\]
+
+and Theorem 3.3 applies.
+
+\hypertarget{theorem-11.1-native-logarithmic-derivative}{%
+\subsection{Theorem 11.1 --- Native logarithmic derivative}\label{theorem-11.1-native-logarithmic-derivative}}
+
+For \texttt{Re\_Sigma(s)\textgreater{}1},
+
+\[
+\boxed{
+-
+\frac{\zeta_\Sigma'(s)}{\zeta_\Sigma(s)}
+=
+\sum_{n=1}^{\infty}
+\Lambda_\Sigma(n)n^{-s}.
+}
+\]
+
+\hypertarget{proof-15}{%
+\subsection{Proof}\label{proof-15}}
+
+F00-H gives the finite divisor identity
+
+\[
+\operatorname{Log}_\Sigma(n)
+=
+\sum_{d|n}\Lambda_\Sigma(d).
+\]
+
+Native Dirichlet multiplication therefore yields
+
+\[
+\begin{aligned}
+\zeta_\Sigma(s)A_\Sigma(s)
+&=
+\sum_{n=1}^{\infty}
+\left(
+\sum_{d|n}\Lambda_\Sigma(d)
+\right)n^{-s}\\
+&=
+\sum_{n=1}^{\infty}
+\operatorname{Log}_\Sigma(n)n^{-s}\\
+&=-\zeta_\Sigma'(s).
+\end{aligned}
+\]
+
+Multiply by the native inverse of \texttt{zeta\_Sigma(s)} from Theorem 9.2. ∎
+
+\hypertarget{corollary-11.2-prime-power-expansion}{%
+\subsection{Corollary 11.2 --- Prime-power expansion}\label{corollary-11.2-prime-power-expansion}}
+
+\[
+\boxed{
+-
+\frac{\zeta_\Sigma'(s)}{\zeta_\Sigma(s)}
+=
+\sum_{p\in\mathcal P_\Sigma}
+\sum_{k=1}^{\infty}
+\operatorname{Log}_\Sigma(p)p^{-ks}.
+}
+\]
+
+\hypertarget{proof-16}{%
+\subsection{Proof}\label{proof-16}}
+
+By definition \texttt{Lambda\_Sigma(n)} is nonzero exactly on prime powers, where its
+value is \texttt{Log\_Sigma(p)}. Unique factorization makes the indexing disjoint. ∎
+
+This is the native arithmetic source later used by the prime-Euler translation
+operator.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{finite-clock-and-prime-exponent-chart}{%
+\section{12. Finite clock and prime-exponent chart}\label{finite-clock-and-prime-exponent-chart}}
+
+Define the native logarithmic clock on the finite arithmetic span by
+
+\[
+H_{\log,\Sigma}e_n
+=
+\operatorname{Log}_\Sigma(n)e_n.
+\]
+
+The prime-exponent vector from F00-H satisfies
+
+\[
+\operatorname{Log}_\Sigma(n)
+=
+\sum_p\nu_n(p)\operatorname{Log}_\Sigma(p).
+\]
+
+Thus any later prime-torus or multicircle chart is forced to carry the native
+clock to the weighted prime generator. It is a representation of this arithmetic
+identity, not the source of zeta.
+
+For \texttt{Re\_Sigma(s)\textgreater{}1}, the native formal trace on the arithmetic basis is
+
+\[
+\sum_{n\ge1}
+\operatorname{Exp}_\Sigma
+(-sH_{\log,\Sigma})_{nn}
+=
+\zeta_\Sigma(s).
+\]
+
+Operator trace-class language is postponed until the native operator bridge is
+applied.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{coordinate-shadow}{%
+\section{13. Coordinate shadow}\label{coordinate-shadow}}
+
+Under a later faithful scalar chart preserving the cut exponential, logarithm
+and natural unit,
+
+\[
+\kappa(\zeta_\Sigma(s))
+=
+\sum_{n=1}^{\infty}n^{-\kappa(s)}
+\]
+
+for \texttt{Re\ kappa(s)\textgreater{}1}. The native Euler product, Möbius reciprocal and von
+Mangoldt derivative map to the familiar coordinate identities.
+
+The coordinate function is therefore a shadow of \texttt{zeta\_Sigma}; it is not an
+input to its construction.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{14. Claim boundary}\label{claim-boundary}}
+
+Proved here on \texttt{Re\_Sigma(s)\textgreater{}1}:
+
+\begin{verbatim}
+native convergence of sum n^{-s};
+uniform dyadic tail bounds;
+native differentiability and all finite derivatives;
+infinitude of native primes;
+Dirichlet-series multiplication under absolute convergence;
+finite prime-factor Euler expansions;
+infinite Euler product;
+zero-free half-plane;
+Möbius reciprocal series;
+von Mangoldt logarithmic derivative;
+prime-power expansion;
+native arithmetic logarithmic clock.
+\end{verbatim}
+
+Not proved here:
+
+\begin{verbatim}
+continuation beyond Re_Sigma(s)>1;
+a pole at s=1;
+Gamma factor;
+pi_Sigma;
+Gaussian Fourier self-duality;
+Poisson summation;
+theta inversion;
+functional equation;
+completed xi_Sigma;
+zero-sum explicit formula;
+Weil criterion;
+K0>=0;
+RH.
+\end{verbatim}
+
+No classical zeta theorem, Euler product, p-series test or analytic continuation
+is consumed. Continuation begins only after the native Fourier--Gaussian--Poisson
+chain is derived.
+
+\begin{flushright}\small\texttt{RKF/theorems/foundation/F00I\_NATIVE\_DIRICHLET\_ZETA\_EULER\_PRODUCT.md}\end{flushright}

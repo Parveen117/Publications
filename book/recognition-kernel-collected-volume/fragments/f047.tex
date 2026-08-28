@@ -1,0 +1,483 @@
+% source: RKF/theorum/45_directed_arithmetic_analytic_closure_theorem.md
+\hypertarget{directed-arithmetic-analytic-closure-theorem}{%
+\chapter{Directed Arithmetic-Analytic Closure Theorem}\label{directed-arithmetic-analytic-closure-theorem}}
+
+\hypertarget{purpose-and-source-lineage}{%
+\section{1. Purpose and source lineage}\label{purpose-and-source-lineage}}
+
+This theorem closes a gap left intentionally separate in the earlier flow and
+completion results: analytic truncation error and machine-arithmetic error are
+not the same object and must not be merged into one optimistic decimal.
+
+The construction consumes four already present ingredients:
+
+\begin{verbatim}
+Vedic Bhinna exact ratio / remainder discipline
+Vedic Madhava-Yuktibhasha corrected-tail grammar
+Theorem 43 observed-flow jet remainder
+Theorem 44 corrected body-tail transfer
+Theorem 28 finite-to-infinite outward completion
+NUMERICAL_PROOF_PROTOCOL exact / interval / ball arithmetic rule
+\end{verbatim}
+
+The Vedic source is used structurally: finite decimals and rational relations
+have an exact ratio carrier, while correction and untraversed remainder remain
+separate. The present theorem supplies the proof-bearing numerical layer needed
+for arbitrary-precision and validated interval/ball implementations.
+
+It does \textbf{not} assert that raw IEEE floating point becomes exact, that every
+external numerical package is validated, or that a centre value without an
+outward radius is proof-bearing.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-scalar-carrier}{%
+\section{2. Exact scalar carrier}\label{exact-scalar-carrier}}
+
+Let \(\mathbb Q\) denote the exact rational carrier. Integers embed in the
+usual way. A finite decimal token is interpreted before binary floating-point
+conversion.
+
+If the token has signed integer significand \(A\) and decimal scale \(m\),
+then
+
+\[
+\boxed{x=\frac{A}{10^m}\in\mathbb Q.}
+\tag{2.1}
+\]
+
+Scientific notation is absorbed into the power of ten before reduction.
+Therefore, for example,
+
+\[
+0.1=\frac1{10},\qquad
+0.7=\frac7{10},\qquad
+0.8=\frac45,
+\tag{2.2}
+\]
+
+and hence
+
+\[
+\boxed{0.1+0.7=0.8}
+\tag{2.3}
+\]
+
+exactly in the declared-value carrier.
+
+This is the Bhinna compatibility rule: decimal spelling and fractional form are
+two presentations of one exact rational relation whenever the declared value is
+a finite decimal.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{validated-enclosure-carrier}{%
+\section{3. Validated enclosure carrier}\label{validated-enclosure-carrier}}
+
+Let \(X\) be a normed vector space. A validated ball is
+
+\[
+\boxed{\mathbb B(c,\rho)=\{x\in X:\|x-c\|\le\rho\},\qquad \rho\ge0.}
+\tag{3.1}
+\]
+
+An exact value embeds as a zero-radius ball,
+
+\[
+\boxed{\iota(x)=\mathbb B(x,0).}
+\tag{3.2}
+\]
+
+Thus exact rational arithmetic and validated approximate arithmetic are not
+competing systems. The former is the zero-error sector of the latter.
+
+For ordered real scalars an interval \([a,b]\) is equivalent to the ball
+
+\[
+\mathbb B\!\left(\frac{a+b}{2},\frac{b-a}{2}\right).
+\tag{3.3}
+\]
+
+A numerical backend is \textbf{validated for one result} only when it supplies an
+outward enclosure known to contain the exact arithmetic target. A nearest-
+rounded floating-point centre with no proved radius is not such an enclosure.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{arithmetic-analytic-decomposition}{%
+\section{4. Arithmetic-analytic decomposition}\label{arithmetic-analytic-decomposition}}
+
+Let \(F\in X\) be the exact target. Suppose an analytic refinement gives
+
+\[
+\boxed{F=M_r+T_r}
+\tag{4.1}
+\]
+
+with a proved tail bound
+
+\[
+\boxed{\|T_r\|\le\tau_r.}
+\tag{4.2}
+\]
+
+Theorem 43 supplies one such \(\tau_r\) for bounded exponential flow, while
+Theorem 44 supplies the exact body-tail transfer under jet refinement.
+
+Let a numerical backend at arithmetic precision label \(p\) return
+\(\widehat M_{r,p}\) together with a proved outward arithmetic radius
+\(\rho_{r,p}\) satisfying
+
+\[
+\boxed{\|M_r-\widehat M_{r,p}\|\le\rho_{r,p}.}
+\tag{4.3}
+\]
+
+Define the typed arithmetic residue
+
+\[
+A_{r,p}:=M_r-\widehat M_{r,p}.
+\tag{4.4}
+\]
+
+Then the exact closure identity is
+
+\[
+\boxed{F=\widehat M_{r,p}+A_{r,p}+T_r.}
+\tag{4.5}
+\]
+
+\hypertarget{theorem-4.1-total-enclosure}{%
+\subsection{Theorem 4.1 (Total enclosure)}\label{theorem-4.1-total-enclosure}}
+
+Under (4.1)--(4.3),
+
+\[
+\boxed{
+\|F-\widehat M_{r,p}\|
+\le
+\rho_{r,p}+\tau_r.
+}
+\tag{4.6}
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+From (4.5),
+
+\[
+F-\widehat M_{r,p}=A_{r,p}+T_r.
+\]
+
+Apply the triangle inequality and the two declared bounds. \(\square\)
+
+The arithmetic radius and analytic tail are therefore distinct ledgers:
+
+\begin{verbatim}
+arithmetic radius   = error introduced by numerical representation/operations;
+analytic tail       = error from finite analytic/refinement depth.
+\end{verbatim}
+
+Neither may be hidden inside the other.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{lawful-correction-madhava-refinement}{%
+\section{5. Lawful correction / Madhava refinement}\label{lawful-correction-madhava-refinement}}
+
+Suppose a predeclared lawful correction \(C_r\) gives
+
+\[
+\boxed{F=M_r+C_r+S_r}
+\tag{5.1}
+\]
+
+with
+
+\[
+\|S_r\|\le\sigma_r.
+\tag{5.2}
+\]
+
+Let the backend enclose the corrected body,
+
+\[
+\|M_r+C_r-\widehat N_{r,p}\|\le\rho_{r,p}.
+\tag{5.3}
+\]
+
+Then
+
+\[
+\boxed{
+\|F-\widehat N_{r,p}\|
+\le
+\rho_{r,p}+\sigma_r.
+}
+\tag{5.4}
+\]
+
+A correction is useful when it reduces the proved remaining tail, but it is not
+licensed merely because it improves the displayed digits. This is the exact
+numerical consumption of the Madhava-Smriti rule from Theorem 44.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{three-ledger-refinement-identity}{%
+\section{6. Three-ledger refinement identity}\label{three-ledger-refinement-identity}}
+
+At two refinement states write
+
+\[
+F=\widehat M_r+A_r+T_r
+=\widehat M_{r+1}+A_{r+1}+T_{r+1}.
+\tag{6.1}
+\]
+
+Subtracting gives
+
+\[
+\boxed{
+(\widehat M_{r+1}-\widehat M_r)
++(A_{r+1}-A_r)
++(T_{r+1}-T_r)=0.
+}
+\tag{6.2}
+\]
+
+Thus every refinement increment is accounted for by three typed channels:
+
+\begin{verbatim}
+computed-body increment
++ arithmetic-residue increment
++ analytic-tail increment
+= 0.
+\end{verbatim}
+
+When arithmetic is exact, \(A_r=0\). When the analytic representation terminates
+exactly, \(T_r=0\). Exact finite proof is the simultaneous zero-radius / zero-tail
+sector.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{directed-precision-refinement-convergence}{%
+\section{7. Directed precision-refinement convergence}\label{directed-precision-refinement-convergence}}
+
+Use the product refinement label
+
+\[
+(r,p),
+\tag{7.1}
+\]
+
+where \(r\) is analytic depth and \(p\) is arithmetic precision. This is a
+directed comparison label, not physical time.
+
+\hypertarget{theorem-7.1-arithmetic-analytic-convergence}{%
+\subsection{Theorem 7.1 (Arithmetic-analytic convergence)}\label{theorem-7.1-arithmetic-analytic-convergence}}
+
+Assume
+
+\[
+\tau_r\longrightarrow0
+\tag{7.2}
+\]
+
+and choose a cofinal precision schedule \(p(r)\) such that
+
+\[
+\rho_{r,p(r)}\longrightarrow0.
+\tag{7.3}
+\]
+
+Then
+
+\[
+\boxed{
+\widehat M_{r,p(r)}\longrightarrow F.
+}
+\tag{7.4}
+\]
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+Equation (4.6) gives
+
+\[
+\|F-\widehat M_{r,p(r)}\|
+\le\rho_{r,p(r)}+\tau_r\to0.
+\]
+
+\(\square\)
+
+If a fixed arithmetic backend has a nonvanishing radius floor, this theorem
+does not claim convergence below that floor. More analytic terms cannot erase
+an unresolved arithmetic enclosure.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{independent-path-enclosure-test}{%
+\section{8. Independent-path enclosure test}\label{independent-path-enclosure-test}}
+
+Suppose two independent validated computations for the same exact target satisfy
+
+\[
+F\in\mathbb B(c_1,\rho_1),
+\qquad
+F\in\mathbb B(c_2,\rho_2).
+\tag{8.1}
+\]
+
+\hypertarget{theorem-8.1-certified-path-overlap-necessity}{%
+\subsection{Theorem 8.1 (Certified path-overlap necessity)}\label{theorem-8.1-certified-path-overlap-necessity}}
+
+Then
+
+\[
+\boxed{\|c_1-c_2\|\le\rho_1+\rho_2.}
+\tag{8.2}
+\]
+
+\hypertarget{proof-2}{%
+\subsubsection{Proof}\label{proof-2}}
+
+By the triangle inequality,
+
+\[
+\|c_1-c_2\|
+\le\|c_1-F\|+\|F-c_2\|
+\le\rho_1+\rho_2.
+\]
+
+\(\square\)
+
+Therefore disjoint certified balls cannot both be valid certificates for the
+same exact target. At least one target identity, adapter, or outward enclosure
+must be wrong. This is the numerical specialization of path-equality testing.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{strict-outward-threshold-promotion}{%
+\section{9. Strict outward threshold promotion}\label{strict-outward-threshold-promotion}}
+
+Let \(x\in\mathbb R\) be the exact scalar quantity whose strict upper threshold
+is \(\Theta\). Suppose a finite computation gives centre/upper surrogate \(u\),
+arithmetic radius \(\rho\), and analytic tail \(\tau\), with the proved
+consequence
+
+\[
+x\le u+\rho+\tau.
+\tag{9.1}
+\]
+
+Then the lawful promotion rule is
+
+\[
+\boxed{u+\rho+\tau<\Theta.}
+\tag{9.2}
+\]
+
+Equality is a boundary state, not a strict certificate:
+
+\[
+u+\rho+\tau=\Theta
+\quad\Longrightarrow\quad
+\text{no strict promotion}.
+\tag{9.3}
+\]
+
+For Theorem 28's normalized seam matrix this becomes
+
+\[
+\boxed{u_n+e_n<1,}
+\tag{9.4}
+\]
+
+where the completion error \(e_n\) may itself be decomposed into validated
+arithmetic and analytic/refinement components.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{backend-classes}{%
+\section{10. Backend classes}\label{backend-classes}}
+
+The theorem licenses the following proof roles:
+
+\begin{verbatim}
+EXACT_INTEGER / EXACT_RATIONAL
+    arithmetic radius rho = 0;
+
+EXACT_FINITE_DECIMAL
+    canonicalized to an exact rational before binary floating conversion;
+
+DIRECTED_INTERVAL / VALIDATED_BALL
+    backend supplies a proved outward enclosure;
+
+VALIDATED_LINEAR_ALGEBRA
+    solver residuals and conditioning/rounding propagation are included outward;
+
+RAW_NEAREST_FLOAT
+    centre/calibration only unless a separate proved outward radius is supplied.
+\end{verbatim}
+
+An implementation may promote from exact rational to validated ball arithmetic
+when exact numerator/denominator growth becomes computationally inefficient.
+That promotion is an embedding into a larger certified carrier, not a loss of
+proof discipline.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exact-finite-certificate}{%
+\section{11. Exact finite certificate}\label{exact-finite-certificate}}
+
+The accompanying proof packet uses only \texttt{fractions.Fraction} plus exact decimal
+token conversion through \texttt{decimal.Decimal}. It verifies:
+
+\begin{verbatim}
+0.1 + 0.7 = 0.8 exactly in the declared-value carrier;
+exact rational -> zero-radius ball embedding;
+strict / boundary / failed outward threshold cases;
+raw float without a radius classified non-proof-bearing;
+independent-ball overlap necessity and disjoint negative control;
+three-ledger refinement identity;
+arithmetic-radius + analytic-tail addition;
+correction-tail reduction fixture;
+directed total-error descent fixture;
+interval/ball compatibility;
+exact Bhinna-style rational representation.
+\end{verbatim}
+
+No NumPy, binary floating-point proof margin, fitted tolerance, or post-hoc
+correction is used by the certificate.
+
+Expected status:
+
+\begin{verbatim}
+PASS_DIRECTED_ARITHMETIC_ANALYTIC_CLOSURE_CANDIDATE
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{12. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+FINITE DECIMAL -> EXACT RATIONAL CARRIER               PROVED
+EXACT RATIONAL -> ZERO-RADIUS BALL EMBEDDING           PROVED
+ARITHMETIC + ANALYTIC TOTAL ENCLOSURE                  PROVED
+CORRECTED-BODY TOTAL ENCLOSURE                         PROVED
+THREE-LEDGER REFINEMENT IDENTITY                       PROVED
+DIRECTED PRECISION-REFINEMENT CONVERGENCE              PROVED
+INDEPENDENT CERTIFIED-BALL OVERLAP NECESSITY           PROVED
+STRICT OUTWARD THRESHOLD PROMOTION                     PROVED
+EXACT RATIONAL FINITE CERTIFICATE                      PROVIDED
+
+CORRECTNESS OF AN EXTERNAL BALL/INTERVAL LIBRARY        SEPARATE DEPENDENCY
+AUTOMATIC ROUNDING BOUND FOR ARBITRARY THIRD-PARTY CODE NOT CLAIMED
+RAW IEEE FLOAT AS PROOF WITHOUT OUTWARD ENCLOSURE       REJECTED
+UNIVERSAL NUMERICAL STABILITY                           NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/45\_directed\_arithmetic\_analytic\_closure\_theorem.md}\end{flushright}

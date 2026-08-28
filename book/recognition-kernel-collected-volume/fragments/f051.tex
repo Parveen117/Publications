@@ -1,0 +1,156 @@
+% source: RKF/theorum/T19_T20_odd_boundary_burden_certificate.md
+\hypertarget{t19t20-odd-boundary-burden-certificate}{%
+\chapter{T19/T20 Odd Boundary-Burden Certificate}\label{t19t20-odd-boundary-burden-certificate}}
+
+\hypertarget{source-provenance}{%
+\section{Source provenance}\label{source-provenance}}
+
+\begin{verbatim}
+source repository: Parveen117/MP
+primary PRs:       #276, #277
+main objects:      beta_partial^cut, S_(0,-)^full, L_partial, W_3^-
+\end{verbatim}
+
+\hypertarget{why-this-capsule-exists}{%
+\section{Why this capsule exists}\label{why-this-capsule-exists}}
+
+The zero-cut T03 route is the current terminal endpoint route in the cleaned paper. However, T19 and T20 are still important: they give an independent odd-sector sign certificate and an alternate single-sector route.
+
+They should not be deleted or treated as irrelevant. They are not the same theorem as T03.
+
+\hypertarget{t19-burden-inequality}{%
+\section{T19 burden inequality}\label{t19-burden-inequality}}
+
+T18 proves the boundary-burden equivalence
+
+\begin{verbatim}
+full odd sign  <=>  beta_partial^cut <= 1.
+\end{verbatim}
+
+T19 proves the endpoint bound
+
+\begin{verbatim}
+beta_partial^cut <= 0.9998319617060448 < 1.
+\end{verbatim}
+
+The strict reserve is
+
+\begin{verbatim}
+1 - beta_partial^cut >= 0.0001680382939552.
+\end{verbatim}
+
+The proof uses the exact endpoint-difference identity
+
+\begin{verbatim}
+beta_0 - beta_eta
+  = sum_j m_j eta / (s_j (s_j + eta)).
+\end{verbatim}
+
+The reconstructed Arb cut profile has
+
+\begin{verbatim}
+active cells                 2400
+prime-power events           78734
+step                         0.005
+near-zero slope-gap lower    28.96922744937062
+minimum positive source floor 0.0003621153431171327
+far-ray floor                0.15683586289723883
+\end{verbatim}
+
+At
+
+\begin{verbatim}
+eta                 1.5625e-5
+beta_eta^+          0.999773667408463
+shifted reserve     2.2633259153703733e-4
+\end{verbatim}
+
+the correction ledger is
+
+\begin{verbatim}
+first-cut correction    2.4184691966571344e-6
+active-band correction  2.9454791518469324e-6
+far-ray correction      5.293034923330094e-5
+total correction        5.829429758180501e-5
+\end{verbatim}
+
+Thus T19 proves
+
+\begin{verbatim}
+S_(0,-)^full - L_partial^dagger L_partial >= 0.
+\end{verbatim}
+
+on the declared native source carrier.
+
+\hypertarget{t20-strict-odd-single-sector-chain}{%
+\section{T20 strict odd single-sector chain}\label{t20-strict-odd-single-sector-chain}}
+
+T20 consumes T19 and adds source injectivity:
+
+\begin{verbatim}
+unshifted covariant cut flow
++ endpoint C1 regularization
++ Hardy active-band no-blindness
+    -> ker S_(0,-)^full = {0}
+\end{verbatim}
+
+Together with T18/T19:
+
+\begin{verbatim}
+T18 cut-square identity
++ T19 beta_partial^cut < 1
+    -> W_3^- is strictly positive on every nonzero odd core state.
+\end{verbatim}
+
+T20 then records the optional classical membrane:
+
+\begin{verbatim}
+strict odd Weil positivity
++ pinned odd-parity Weil implication
+    -> RH under the declared classical explicit-formula normalization.
+\end{verbatim}
+
+\hypertarget{relationship-to-the-cleaned-endpoint-paper}{%
+\section{Relationship to the cleaned endpoint paper}\label{relationship-to-the-cleaned-endpoint-paper}}
+
+T19/T20 are not required if the paper uses the zero-cut T03 endpoint as its terminal native theorem:
+
+\begin{verbatim}
+T03 source-Gram identity
+-> K_0 = R_Sigma^*(I-P_src)R_Sigma >= 0
+-> endpoint Schur closure.
+\end{verbatim}
+
+But T19/T20 are still valuable and should be included as an independent odd-burden certificate, because they show that the adverse odd boundary packet is subcritical by a direct cut/refinement estimate.
+
+\hypertarget{correct-dependency-placement}{%
+\section{Correct dependency placement}\label{correct-dependency-placement}}
+
+\begin{verbatim}
+Main terminal route:
+  positive-eta path equality
+  -> seam integer / five-matrix reduction
+  -> M3 accepted block
+  -> one-sector reduction
+  -> zero-cut T03 endpoint
+
+Independent odd-burden certificate:
+  T18 equivalence
+  -> T19 beta_partial^cut < 1
+  -> full odd sign
+  -> T20 strict odd positivity if ker S_(0,-)^full = 0
+\end{verbatim}
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+T19 beta_partial^cut < 1                 PROVED IN SOURCE PR
+T19 full odd completed-Weil sign          PROVED ON DECLARED NATIVE SOURCE CARRIER
+T20 strict odd positivity                 PROVED UNDER ITS SOURCE-INJECTIVITY CHAIN
+T20 odd-parity RH implication             CLASSICAL/PINNED INPUT WHERE USED
+T19/T20 as zero-cut T03 replacement       NOT IDENTIFIED
+T19/T20 as independent support            RETAINED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/T19\_T20\_odd\_boundary\_burden\_certificate.md}\end{flushright}

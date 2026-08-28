@@ -1,0 +1,563 @@
+% source: RKF/theorum/31_cut_variational_minimal_observer_theorem.md
+\hypertarget{cut-variational-minimal-observer-theorem}{%
+\chapter{Cut-Variational Minimal Observer Theorem}\label{cut-variational-minimal-observer-theorem}}
+
+\hypertarget{purpose}{%
+\section{1. Purpose}\label{purpose}}
+
+The Recognition-Seam programme must not assume a five-label observer merely
+because a later matrix happens to have size five. The observer has to be
+derived from the cut-memory object itself.
+
+The native order is
+
+\begin{verbatim}
+cut-generated memory lift
+-> target-relevant memory range
+-> observer action
+-> minimal faithful observer
+-> finite seam matrix.
+\end{verbatim}
+
+No classical determinant or preassembled Birman--Schwinger matrix is used to
+define the observer.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{recognition-complete-cut-memory}{%
+\section{2. Recognition-complete cut memory}\label{recognition-complete-cut-memory}}
+
+After recovered-middle identification and Recognition-Cauchy completion, let
+
+\[
+M:\mathcal H_{\rm rec}\longrightarrow\mathcal K_{\rm mem}
+\]
+
+be the cut-generated adverse memory lift. Its target-relevant memory space is
+
+\[
+\boxed{
+\mathcal E_\Sigma
+=
+\overline{\operatorname{Ran}M}.
+}
+\]
+
+The closure is taken only after the recognized and memory channels have been
+transported to one recovered carrier.
+
+An observer of rank \(\nu\) is a coisometry
+
+\[
+T:\mathcal K_{\rm mem}\longrightarrow\mathbb C^\nu,
+\qquad
+TT^*=I_\nu.
+\]
+
+Its recovered memory projector is
+
+\[
+P_T=T^*T.
+\]
+
+Thus \(P_T\) is the orthogonal projection onto \(\operatorname{Ran}T^*\).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{cut-observer-action}{%
+\section{3. Cut-observer action}\label{cut-observer-action}}
+
+\hypertarget{definition-3.1-operator-action}{%
+\subsection{Definition 3.1 (Operator action)}\label{definition-3.1-operator-action}}
+
+Define
+
+\[
+\boxed{
+\mathcal A_\Sigma^{\infty}(T;M)
+=
+\|(I-P_T)M\|^2.
+}
+\]
+
+This is the largest unrecognized cut-memory energy.
+
+When \(M\) is Hilbert--Schmidt, define the total cut action
+
+\[
+\boxed{
+\mathcal A_\Sigma^{2}(T;M)
+=
+\|(I-P_T)M\|_{\rm HS}^2.
+}
+\]
+
+Both actions are generated from the cut defect. They do not compare the
+observer with a desired answer.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{zero-action-is-exactly-target-faithfulness}{%
+\section{4. Zero action is exactly target faithfulness}\label{zero-action-is-exactly-target-faithfulness}}
+
+\hypertarget{theorem-4.1-cut-faithfulness-equivalence}{%
+\subsection{Theorem 4.1 (Cut-faithfulness equivalence)}\label{theorem-4.1-cut-faithfulness-equivalence}}
+
+For every bounded cut-memory lift \(M\) and every finite-rank coisometric
+observer \(T\), the following are equivalent:
+
+\[
+\mathcal A_\Sigma^{\infty}(T;M)=0,
+\]
+
+\[
+(I-P_T)M=0,
+\]
+
+\[
+M=P_TM=T^*TM,
+\]
+
+and
+
+\[
+\mathcal E_\Sigma
+\subseteq
+\operatorname{Ran}T^*.
+\]
+
+If \(M\) is Hilbert--Schmidt, these conditions are also equivalent to
+
+\[
+\mathcal A_\Sigma^{2}(T;M)=0.
+\]
+
+\hypertarget{proof}{%
+\subsubsection{Proof}\label{proof}}
+
+A norm is zero exactly when its argument is zero, so
+
+\[
+\mathcal A_\Sigma^{\infty}(T;M)=0
+\iff
+(I-P_T)M=0.
+\]
+
+Since \(P_T=T^*T\), this is equivalent to \(M=P_TM=T^*TM\). The latter holds
+exactly when every vector in \(\operatorname{Ran}M\), and therefore in its
+closure, lies in \(\operatorname{Ran}P_T=\operatorname{Ran}T^*\). The
+Hilbert--Schmidt assertion is identical. ∎
+
+Thus target faithfulness is a zero-action theorem, not an observer convention.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{minimal-faithful-observer-rank}{%
+\section{5. Minimal faithful observer rank}\label{minimal-faithful-observer-rank}}
+
+\hypertarget{theorem-5.1-minimal-observer-theorem}{%
+\subsection{Theorem 5.1 (Minimal observer theorem)}\label{theorem-5.1-minimal-observer-theorem}}
+
+Assume
+
+\[
+r_\Sigma
+=
+\dim\mathcal E_\Sigma
+<\infty.
+\]
+
+Then:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  every faithful observer has rank at least \(r_\Sigma\);
+\item
+  there exists a faithful observer of rank exactly \(r_\Sigma\);
+\item
+  consequently,
+\end{enumerate}
+
+\[
+\boxed{
+\min\{\operatorname{rank}T:\mathcal A_\Sigma^{\infty}(T;M)=0\}
+=r_\Sigma.
+}
+\]
+
+\hypertarget{proof-1}{%
+\subsubsection{Proof}\label{proof-1}}
+
+If \(T\) is faithful, Theorem 4.1 gives
+
+\[
+\mathcal E_\Sigma\subseteq\operatorname{Ran}T^*.
+\]
+
+Hence
+
+\[
+r_\Sigma\le\dim\operatorname{Ran}T^*=\operatorname{rank}T.
+\]
+
+Conversely choose an orthonormal basis of \(\mathcal E_\Sigma\) and let
+\(T^*:\mathbb C^{r_\Sigma}\to\mathcal K_{\rm mem}\) be the corresponding
+isometric inclusion. Then \(TT^*=I\), \(P_T\) projects onto
+\(\mathcal E_\Sigma\), and Theorem 4.1 gives zero action. ∎
+
+The number of labels is therefore generated by cut-memory dimension.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{variational-form}{%
+\section{6. Variational form}\label{variational-form}}
+
+Assume now that \(M\) is compact and Hilbert--Schmidt, with singular values
+
+\[
+s_1(M)\ge s_2(M)\ge\cdots\ge0.
+\]
+
+For a rank-\(\nu\) orthogonal projector \(P\), put
+
+\[
+\mathcal A_\nu(P;M)
+=
+\|(I-P)M\|_{\rm HS}^2.
+\]
+
+\hypertarget{theorem-6.1-cut-variational-observer-theorem}{%
+\subsection{Theorem 6.1 (Cut-variational observer theorem)}\label{theorem-6.1-cut-variational-observer-theorem}}
+
+Among all rank-\(\nu\) observers,
+
+\[
+\boxed{
+\inf_{\operatorname{rank}P=\nu}
+\mathcal A_\nu(P;M)
+=
+\sum_{j>\nu}s_j(M)^2.
+}
+\]
+
+A minimizer is the projector onto the first \(\nu\) left singular directions
+of \(M\).
+
+\hypertarget{proof-2}{%
+\subsubsection{Proof}\label{proof-2}}
+
+Let
+
+\[
+G=MM^*\ge0.
+\]
+
+For a rank-\(\nu\) orthogonal projector \(P\),
+
+\[
+\mathcal A_\nu(P;M)
+=
+\operatorname{Tr}(M^*(I-P)M)
+=
+\operatorname{Tr}G-\operatorname{Tr}(PG).
+\]
+
+The trace \(\operatorname{Tr}(PG)\) is maximized by selecting the eigenspaces of
+\(G\) with its \(\nu\) largest eigenvalues \(s_j(M)^2\). Subtracting from
+\(\operatorname{Tr}G=\sum_j s_j(M)^2\) gives the formula. ∎
+
+\hypertarget{corollary-6.2}{%
+\subsection{Corollary 6.2}\label{corollary-6.2}}
+
+\[
+\inf_{\operatorname{rank}P=\nu}
+\mathcal A_\nu(P;M)=0
+\iff
+\operatorname{rank}M\le\nu.
+\]
+
+Thus a positive minimum is an exact witness that the observer is missing cut
+memory.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{target-relative-source-restriction}{%
+\section{7. Target-relative source restriction}\label{target-relative-source-restriction}}
+
+Let
+
+\[
+A:X\longrightarrow Y
+\]
+
+be a source restriction and
+
+\[
+G:X\longrightarrow Z
+\]
+
+be the target readout. The target-relevant blind space is the image
+
+\[
+\boxed{
+\mathcal B_G(A)=G(\ker A)\subseteq Z.
+}
+\]
+
+Its dimension is
+
+\[
+\boxed{
+b_G(A)=\operatorname{rank}(G|_{\ker A}).}
+\]
+
+A repair bank
+
+\[
+L:X\longrightarrow\mathbb C^\nu
+\]
+
+is target-faithful relative to \(A\) when
+
+\[
+Ax=0,\quad Lx=0
+\quad\Longrightarrow\quad
+Gx=0.
+\]
+
+\hypertarget{theorem-7.1-target-relative-minimal-repair}{%
+\subsection{Theorem 7.1 (Target-relative minimal repair)}\label{theorem-7.1-target-relative-minimal-repair}}
+
+Every target-faithful repair bank satisfies
+
+\[
+\nu\ge b_G(A).
+\]
+
+There exists a repair bank with
+
+\[
+\nu=b_G(A).
+\]
+
+\hypertarget{proof-3}{%
+\subsubsection{Proof}\label{proof-3}}
+
+Only the restriction of \(L\) to \(\ker A\) can repair information lost by
+\(A\). Target faithfulness means
+
+\[
+\ker(L|_{\ker A})
+\subseteq
+\ker(G|_{\ker A}).
+\]
+
+Therefore \(L|_{\ker A}\) must separate the quotient
+
+\[
+\ker A/\ker(G|_{\ker A}),
+\]
+
+whose dimension equals \(b_G(A)\). Hence at least \(b_G(A)\) scalar channels
+are necessary. Choose coordinates on this quotient to obtain a repair bank of
+exactly that size. ∎
+
+This theorem derives the observer dimension from target-relative blindness, not
+from ambient dimension.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-exact-50455-calibration}{%
+\section{8. The exact 50/45/5 calibration}\label{the-exact-50455-calibration}}
+
+For the canonical ordered-product collapse
+
+\[
+A=\begin{pmatrix}I_{45}&0_{45\times5}\end{pmatrix}:
+\mathbb Q^{50}\to\mathbb Q^{45},
+\]
+
+one has
+
+\[
+\dim\ker A=5.
+\]
+
+The split-occurrence repair on this kernel is
+
+\[
+L_{\rm split}=
+\begin{pmatrix}
+-6&-6&0&0&0\\
+0&6&0&0&0\\
+0&0&-12&-6&0\\
+0&0&6&0&0\\
+0&0&0&0&2
+\end{pmatrix}
+\]
+
+with
+
+\[
+\det L_{\rm split}=-2592\ne0.
+\]
+
+Therefore the five blind coordinates are target-relevant and five repair labels
+are necessary and sufficient.
+
+This is the general RSC reason a five-label packet can be canonical. It is not
+yet the RH specialization.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{recognition-complete-transfer-of-observer-faithfulness}{%
+\section{9. Recognition-complete transfer of observer faithfulness}\label{recognition-complete-transfer-of-observer-faithfulness}}
+
+Let
+
+\[
+M_n\to M,
+\qquad
+P_n\to P
+\]
+
+in operator norm, where every \(P_n\) and \(P\) is an orthogonal observer
+projection. Define
+
+\[
+r_n=(I-P_n)M_n,
+\qquad
+r=(I-P)M.
+\]
+
+\hypertarget{theorem-9.1-faithfulness-transfer}{%
+\subsection{Theorem 9.1 (Faithfulness transfer)}\label{theorem-9.1-faithfulness-transfer}}
+
+\[
+\boxed{
+\|r-r_n\|
+\le
+\|M-M_n\|
++
+\|P-P_n\|\,\|M\|.
+}
+\]
+
+Consequently, if
+
+\[
+\|r_n\|\to0,
+\qquad
+M_n\to M,
+\qquad
+P_n\to P,
+\]
+
+then
+
+\[
+\boxed{(I-P)M=0.}
+\]
+
+\hypertarget{proof-4}{%
+\subsubsection{Proof}\label{proof-4}}
+
+Write
+
+\[
+r-r_n
+=(I-P)(M-M_n)+(P_n-P)M_n.
+\]
+
+Alternatively add and subtract \((I-P_n)M\); either expansion gives a bound
+that tends to zero under the stated hypotheses. Using the second expansion,
+
+\[
+r-r_n
+=(I-P_n)(M-M_n)+(P_n-P)M,
+\]
+
+which yields the displayed estimate. Since \(r_n\to0\), one obtains \(r=0\).
+∎
+
+This is the variational form of the no-hidden-complement theorem.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{seam-matrix-after-the-observer-is-derived}{%
+\section{10. Seam matrix after the observer is derived}\label{seam-matrix-after-the-observer-is-derived}}
+
+Let
+
+\[
+R>0
+\]
+
+be the cut-generated recognized reference, and let a faithful observer \(T\)
+produce
+
+\[
+A_\Sigma=TM.
+\]
+
+Only now define
+
+\[
+\boxed{
+B_\Sigma=A_\Sigma R^{-1}A_\Sigma^*.
+}
+\]
+
+The finite seam matrix is therefore downstream of the zero-action and minimal
+observer theorems.
+
+The lawful hierarchy is
+
+\begin{verbatim}
+cut memory M
+-> zero observer action
+-> minimal faithful rank
+-> target coordinates A_Sigma
+-> finite seam matrix B_Sigma.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{rh-specialization-gate}{%
+\section{11. RH specialization gate}\label{rh-specialization-gate}}
+
+For the completed-Weil object, the future specialization must prove that the
+native adverse memory lift has
+
+\[
+\dim\overline{\operatorname{Ran}M_{\rm Weil}}=5
+\]
+
+or, equivalently, that its target-relative source blindness has dimension five.
+Then five labels are necessary and sufficient by Theorems 5.1 and 7.1.
+
+This must be obtained from the native event lift and source restriction. It may
+not be inferred from a numerically observed five-dimensional matrix.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{claim-boundary}{%
+\section{12. Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+zero action iff target faithfulness                    PROVED
+minimal faithful observer rank = memory rank           PROVED
+Hilbert--Schmidt variational tail formula               PROVED
+target-relative minimal repair theorem                 PROVED
+50/45/5 exact calibration                              AVAILABLE
+faithfulness transfer under recognition completion     PROVED
+
+RH adverse memory rank exactly five                     NOT YET SPECIALIZED
+RH native observer action                               NOT YET BUILT
+RH finite seam matrix                                   NOT YET BUILT IN THIS STAGE
+RH                                                      NOT CLAIMED
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/31\_cut\_variational\_minimal\_observer\_theorem.md}\end{flushright}

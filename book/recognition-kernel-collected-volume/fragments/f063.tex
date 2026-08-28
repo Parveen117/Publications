@@ -1,0 +1,190 @@
+% source: RKF/theorum/thermodynamics/lambda_geometry/11_noncommutative_holonomy_and_irreducibility.md
+\hypertarget{noncommutative-holonomy-curvature-and-irreducibility}{%
+\chapter{Noncommutative Holonomy, Curvature, and Irreducibility}\label{noncommutative-holonomy-curvature-and-irreducibility}}
+
+\hypertarget{provenance}{%
+\section{Provenance}\label{provenance}}
+
+\begin{verbatim}
+source repository: Parveen117/MP
+source PR: #53
+source theorem: adapters/common/NONCOMMUTATIVE_PATH_ORDERED_HOLONOMY.md
+\end{verbatim}
+
+\hypertarget{seam-dagger-lift}{%
+\section{1. Seam-dagger lift}\label{seam-dagger-lift}}
+
+On
+
+\[
+\mathcal H=\mathbb C^2_{\mathrm{seam}}\otimes\mathbb C^2_{\mathrm{int}},
+\]
+
+let
+
+\[
+R^2=-I,
+\qquad K^2=I,
+\qquad RK=-KR,
+\qquad X^\sharp=KX^*K.
+\]
+
+If \(A(t)\in\mathfrak{su}(2)\) and \(\widetilde A(t)=I_2\otimes A(t)\), then
+
+\[
+\widetilde A(t)^\sharp=-\widetilde A(t).
+\]
+
+Consequently its transport is dagger-unitary:
+
+\[
+\widetilde U(t)^\sharp\widetilde U(t)=I.
+\]
+
+\hypertarget{noncommutative-path-order-theorem}{%
+\section{2. Noncommutative path-order theorem}\label{noncommutative-path-order-theorem}}
+
+For piecewise-constant segments,
+
+\[
+U_C=e^{\Delta t_NA_N}\cdots e^{\Delta t_1A_1}.
+\]
+
+For
+
+\[
+A_x=-i\alpha\sigma_x,
+\qquad
+A_z=-i\beta\sigma_z,
+\]
+
+one has
+
+\[
+[A_x,A_z]=2i\alpha\beta\sigma_y\neq0
+\]
+
+when \(\alpha\beta\neq0\). Therefore
+
+\[
+U_{xz}=e^{A_z}e^{A_x}
+\qquad\text{and}\qquad
+U_{zx}=e^{A_x}e^{A_z}
+\]
+
+need not coincide.
+
+\hypertarget{spectral-shadow-collision-theorem}{%
+\section{3. Spectral-shadow collision theorem}\label{spectral-shadow-collision-theorem}}
+
+Although \(U_{xz}\neq U_{zx}\),
+
+\[
+U_{zx}=e^{A_x}U_{xz}e^{-A_x}.
+\]
+
+Thus they are similar and have the same trace, determinant, characteristic polynomial, and eigenvalue multiset.
+
+Hence
+
+\[
+\boxed{\text{principal spectrum alone does not recover path order}.}
+\]
+
+The ordered segment word and commutator-curvature memory must remain part of the represented state.
+
+\hypertarget{small-square-curvature-theorem}{%
+\section{4. Small-square curvature theorem}\label{small-square-curvature-theorem}}
+
+For
+
+\[
+U_\square(\varepsilon)
+=e^{\varepsilon A_z}e^{\varepsilon A_x}
+ e^{-\varepsilon A_z}e^{-\varepsilon A_x},
+\]
+
+Baker-Campbell-Hausdorff expansion gives
+
+\[
+\boxed{
+U_\square(\varepsilon)
+=I+\varepsilon^2[A_z,A_x]+O(\varepsilon^3).
+}
+\]
+
+The first order-sensitive residue of the ordered square is therefore the commutator curvature.
+
+\hypertarget{common-commutant-irreducibility-theorem}{%
+\section{5. Common-commutant irreducibility theorem}\label{common-commutant-irreducibility-theorem}}
+
+For a star-closed finite operator family \(\mathcal F\subset M_2(\mathbb C)\), define
+
+\[
+\mathcal F'=\{X:XA=AX\text{ for every }A\in\mathcal F\}.
+\]
+
+Then
+
+\[
+\boxed{
+\mathcal F\text{ acts irreducibly}
+\iff
+\mathcal F'=\mathbb C I.
+}
+\]
+
+A single-axis family has a two-dimensional commutant and is reducible. The two-axis \(x/z\) Pauli family has scalar commutant and is irreducible.
+
+The verdict is invariant under constant \(SU(2)\) gauge conjugation.
+
+\hypertarget{three-distinct-notions}{%
+\section{6. Three distinct notions}\label{three-distinct-notions}}
+
+The source proves that the following must not be conflated:
+
+\[
+\text{representation irreducibility}
+\neq
+\text{composition-primitivity}
+\neq
+\text{arithmetic primality}.
+\]
+
+Each requires a separate theorem and a separate category of admissible decompositions.
+
+\hypertarget{nonmultiplicativity-of-local-factors}{%
+\section{7. Nonmultiplicativity of local factors}\label{nonmultiplicativity-of-local-factors}}
+
+For a supplied positive length,
+
+\[
+Z_C(s)=\det(I-e^{-s\ell_C}U_C)^{-1}.
+\]
+
+For noncommuting segments, the composed factor does not generally satisfy
+
+\[
+Z_{C_2\star C_1}=Z_{C_2}Z_{C_1}.
+\]
+
+Path ordering is therefore load-bearing data rather than cosmetic notation.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+DAGGER-SKEW INTERNAL CONNECTION LIFT       PROVED
+NONCOMMUTATIVE PATH-ORDER DIFFERENCE       PROVED
+EQUAL-SPECTRUM ORDER COLLISION             PROVED
+SMALL-SQUARE COMMUTATOR CURVATURE          PROVED
+COMMON-COMMUTANT IRREDUCIBILITY            PROVED
+GAUGE INVARIANCE OF IRREDUCIBILITY         PROVED
+NAIVE LOCAL-FACTOR MULTIPLICATION          DISPROVED
+
+CANONICAL CONTINUUM LAMBDA CONNECTION      OPEN
+COMPOSITION-PRIMITIVITY CATEGORY           OPEN AT THIS STAGE
+ARITHMETIC PRIME IDENTIFICATION            OPEN
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/thermodynamics/lambda\_geometry/11\_noncommutative\_holonomy\_and\_irreducibility.md}\end{flushright}

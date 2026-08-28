@@ -1,0 +1,207 @@
+% source: RH-Framework/notebooks/T01_NATIVE_FOUNDATION_JUPYTER.md
+\hypertarget{t01-native-foundation-jupyter-reproduction}{%
+\chapter{T01 Native Foundation --- Jupyter Reproduction}\label{t01-native-foundation-jupyter-reproduction}}
+
+This procedure uses Python cells only.
+
+\hypertarget{repository-path}{%
+\section{1. Repository path}\label{repository-path}}
+
+\begin{verbatim}
+from pathlib import Path
+import subprocess
+import sys
+
+RH_REPO = Path(
+    r"C:\Users\abc\Desktop\New Folder (2)\New folder\PROVISNAL RELATED\RH-Framework"
+).resolve()
+
+print("repository:", RH_REPO)
+\end{verbatim}
+
+Change only the path when the local folder differs.
+
+\hypertarget{git-audit}{%
+\section{2. Git audit}\label{git-audit}}
+
+\begin{verbatim}
+def run_git(repo: Path, *args: str) -> str:
+    completed = subprocess.run(
+        ["git", "-C", str(repo), *args],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return completed.stdout.strip()
+
+print("branch:", run_git(RH_REPO, "branch", "--show-current"))
+print("head:", run_git(RH_REPO, "rev-parse", "HEAD"))
+print("dirty:", repr(run_git(RH_REPO, "status", "--porcelain")))
+\end{verbatim}
+
+Expected branch:
+
+\begin{verbatim}
+agent/native-summability-reconstruction
+\end{verbatim}
+
+\hypertarget{install-the-package}{%
+\section{3. Install the package}\label{install-the-package}}
+
+\begin{verbatim}
+completed = subprocess.run(
+    [sys.executable, "-m", "pip", "install", "-e", str(RH_REPO)],
+    text=True,
+    capture_output=True,
+)
+print(completed.stdout)
+print(completed.stderr)
+print("return code:", completed.returncode)
+assert completed.returncode == 0
+\end{verbatim}
+
+\hypertarget{run-the-native-foundation-verifier}{%
+\section{4. Run the native foundation verifier}\label{run-the-native-foundation-verifier}}
+
+\begin{verbatim}
+completed = subprocess.run(
+    [
+        sys.executable,
+        str(RH_REPO / "tools" / "verify_native_foundation.py"),
+    ],
+    cwd=RH_REPO,
+    text=True,
+    capture_output=True,
+)
+print(completed.stdout)
+print(completed.stderr)
+print("return code:", completed.returncode)
+assert completed.returncode == 0
+\end{verbatim}
+
+Required status:
+
+\begin{verbatim}
+PASS_NATIVE_CUT_TAIL_AND_RECOGNITION_CAUCHY_COMPLETION_CORE
+\end{verbatim}
+
+Required certificate hash:
+
+\begin{verbatim}
+4e88898fc93010a6ba189f932817d0715298f106aff61528bb2e58acb8c6dbfd
+\end{verbatim}
+
+The verifier also confirms that the foundational module imports only:
+
+\begin{verbatim}
+__future__
+dataclasses
+fractions
+numbers
+typing
+\end{verbatim}
+
+\hypertarget{regenerate-the-certificate-independently}{%
+\section{5. Regenerate the certificate independently}\label{regenerate-the-certificate-independently}}
+
+\begin{verbatim}
+OUTPUT = (
+    RH_REPO
+    / "certificates"
+    / "T01_NATIVE_SUMMABILITY_REGENERATED.json"
+)
+
+completed = subprocess.run(
+    [
+        sys.executable,
+        "-m",
+        "rh_framework.native_summability_certificate",
+        "--output",
+        str(OUTPUT),
+    ],
+    cwd=RH_REPO,
+    text=True,
+    capture_output=True,
+)
+print(completed.stdout)
+print(completed.stderr)
+print("return code:", completed.returncode)
+assert completed.returncode == 0
+\end{verbatim}
+
+\hypertarget{compare-generated-and-committed-evidence}{%
+\section{6. Compare generated and committed evidence}\label{compare-generated-and-committed-evidence}}
+
+\begin{verbatim}
+import json
+
+COMMITTED = (
+    RH_REPO
+    / "certificates"
+    / "T01_NATIVE_SUMMABILITY_v0.1.json"
+)
+
+generated = json.loads(OUTPUT.read_text(encoding="utf-8"))
+committed = json.loads(COMMITTED.read_text(encoding="utf-8"))
+
+print("equal:", generated == committed)
+print("status:", generated["status"])
+print("hash:", generated["certificate_hash"])
+print("origin:", generated["foundational_origin"])
+print("actual MP adapter:", generated["theorem_classification"]["T01_D_actual_mp_path_groupoid_adapter"])
+
+assert generated == committed
+assert generated["foundational_origin"] == "NATIVE_DERIVED"
+assert generated["theorem_classification"]["riemann_hypothesis"] == "OPEN"
+\end{verbatim}
+
+\hypertarget{inspect-the-decisive-native-inequalities}{%
+\section{7. Inspect the decisive native inequalities}\label{inspect-the-decisive-native-inequalities}}
+
+\begin{verbatim}
+for key in [
+    "sample_a_tail_mass",
+    "sample_product_tail_mass",
+    "sample_a_recognition_energy",
+    "sample_product_recognition_energy",
+    "native_action_bound_left",
+    "native_action_bound_right",
+    "weighted_cauchy_schwarz_remainder",
+    "mass_tail_N4_M9",
+    "energy_tail_N4_M9",
+]:
+    print(key, generated["exact_metrics"][key])
+\end{verbatim}
+
+The required action inequality is witnessed by
+
+\begin{verbatim}
+native_action_bound_left <= native_action_bound_right
+\end{verbatim}
+
+with exact rational values, not floating-point tolerances.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+A passing run verifies the exact dense core and reproduces the certificate for:
+
+\begin{verbatim}
+native cut-tail completion;
+native recognition-Cauchy completion;
+native completed path action.
+\end{verbatim}
+
+It does not prove:
+
+\begin{verbatim}
+actual MP path-atlas identification;
+native continuous refinement measure;
+coordinate equivalence with ordinary ell1 or ell2;
+native state-packet generation;
+target faithfulness;
+Shunya;
+Riemann Hypothesis.
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RH-Framework/notebooks/T01\_NATIVE\_FOUNDATION\_JUPYTER.md}\end{flushright}

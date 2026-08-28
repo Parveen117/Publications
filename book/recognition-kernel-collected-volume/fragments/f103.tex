@@ -1,0 +1,280 @@
+% source: Publications/papers/cut-first-equivalence/THEOREM.md
+\hypertarget{the-cut-first-equivalence-theorem}{%
+\chapter{The Cut-First Equivalence Theorem}\label{the-cut-first-equivalence-theorem}}
+
+\emph{Candidate flagship statement of the recognition / cut-flow framework
+(arXiv:2603.20773). This document states the theorem, marks precisely
+which parts are certified and which are open, and maps every proof
+obligation to where its scaffolding lives.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{statement-plain-language}{%
+\section{Statement (plain language)}\label{statement-plain-language}}
+
+\begin{quote}
+Recognition/cut response reproduces classical thermodynamic response
+\textbf{exactly}. The classical laws --- Maxwell relations, Onsager
+reciprocity, the equilibrium invariant 𝓘 = 1 --- are the \textbf{memoryless
+limit} (χ → 1, equivalently dω = 0). The deviation from that limit is
+\textbf{exactly} the loop residue
+
+∮\_∂D ω = ∬\_D Ω,
+
+the integrated cut-loop curvature. Equilibrium is the flat face
+(Ω = 0); irreversibility is curvature (Ω ≠ 0); and the residue is the
+complete obstruction to flatness.
+\end{quote}
+
+In one line, of the Noether type --- \emph{a bridge identity between two
+independently computed quantities}:
+
+\begin{quote}
+\textbf{Classical thermodynamics is the memoryless sector of recognition
+thermodynamics, and ∬Ω is the obstruction.}
+\end{quote}
+
+\hypertarget{statement-precise}{%
+\section{Statement (precise)}\label{statement-precise}}
+
+Let (𝓜, J) be a regular response manifold carrying a cut involution
+J (J² = 1) and a memory dial χ, with entropy-weighted response
+one-form ω = λ\_p dp + λ\_v dv and curvature two-form Ω = dω. Then:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{(Memoryless limit.)} In the limit χ → 1 (equivalently dω = 0), the
+  cut-flow response coincides with classical thermodynamic response:
+  every Maxwell relation holds, the Onsager block is symmetric
+  (L\_pv = L\_vp), and the invariant 𝓘 = Γ\_c · Γ\_m = 1.
+\item
+  \textbf{(Residue.)} For any 2-cell D, the circulation of ω around ∂D
+  equals the curvature flux through D: ∮\_∂D ω = ∬\_D Ω, and this residue
+  vanishes iff the response is memoryless on D.
+\item
+  \textbf{(Completeness --- the two halves.)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{(S) Surjectivity.} Every classical response identity is realized
+    by some cut protocol: the cut grammar maps \emph{onto} the classical
+    response algebra. \textbf{✔ DISCHARGED by CFE-2} (rank equality, zero
+    cokernel, on the witness EOS; renaming test passed).
+  \item
+    \textbf{(U) Uniqueness.} ∬Ω is the \emph{unique} obstruction to the χ → 1
+    limit: no second, independent obstruction exists. \textbf{✔ DISCHARGED by
+    CFE-U} (the obstruction space --- the annihilator of the memoryless
+    responses in the declared algebra --- has dimension exactly 1, and the
+    loop-residue functional spans it; H¹ = 0 constructively; enlarged-
+    algebra control shows where the boundary sits).
+  \end{itemize}
+\end{enumerate}
+
+Parts (1) and (2) are the \textbf{certified core} (CFE-1). Part (S) is
+\textbf{certified} (CFE-2). Part (U) is \textbf{certified} (CFE-U). \textbf{All declared
+obligations of the theorem are now machine-certified on the witness EOS
+and its declared response algebra.} Continuum / general-manifold /
+general-EOS statements remain outside the certified scope, exactly as
+recorded in each capsule's claim boundary.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{what-is-certified-capsule-cfe-1}{%
+\section{What is certified: capsule CFE-1}\label{what-is-certified-capsule-cfe-1}}
+
+The capsule \texttt{certificates/cfe1\_cut\_first\_equivalence.py} proves, in
+\textbf{exact rational arithmetic} on an explicit witness equation of state,
+four blocks (pin \texttt{EXPECTED\_CFE1.sha256}, all tampers separate):
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & Memoryless limit is classical: at χ=1 the curvature vanishes on the whole grid, every Maxwell loop sums to exactly 0, the Onsager cross-asymmetry is exactly 0 & PASS \\
+\textbf{T2} & The residue is exact: ∮\_∂D ω = ∬\_D Ω as an identity in ℚ (boundary walk and area sum computed independently), witnessed at χ=7/5 with both sides = 32 & PASS \\
+\textbf{T3} & The obstruction is faithful: Ω = 0 on the grid \textbf{iff} χ = 1; the residue is strictly monotone in the memory dial μ = χ−1 (−32, −16, 0, +16, +32 across χ = 3/5 \ldots{} 7/5), zero exactly at μ=0, sign tracking sign(μ) & PASS \\
+\textbf{T4} & The equilibrium invariant: 𝓘 = Γ\_c·Γ\_m = 1 exactly at χ=1, departing exactly when χ≠1 & PASS \\
+\end{longtable}
+
+This maps Part (1) → T1+T4 and Part (2) → T2+T3. The residue's exact
+linearity in the memory dial (T3) is the machine witness that ∬Ω is a
+\emph{genuine} order parameter for irreversibility, not an artefact of the
+model.
+
+\hypertarget{what-is-certified-capsule-cfe-2-surjectivity}{%
+\section{What is certified: capsule CFE-2 (surjectivity)}\label{what-is-certified-capsule-cfe-2-surjectivity}}
+
+The capsule \texttt{certificates/cfe2\_surjectivity.py} discharges Part (S) --- the
+cut grammar maps \textbf{onto} the classical response algebra (pin
+\texttt{EXPECTED\_CFE2.sha256}):
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & All \textbf{four} Maxwell relations hold exactly as cut-closedness of a convex rational potential; a sheared non-potential field breaks them & PASS \\
+\textbf{T2} & The response-coefficient identities are cut identities: the ratio law κ\_T/κ\_S = C\_p/C\_v = γ and the Mayer relation C\_p−C\_v = T(U\_SV)²/(U\_SS·det), exact at every lattice point & PASS \\
+\textbf{T3} & \textbf{Surjectivity:} the cut grammar reconstructs the response fields by cut-native centered finite differences; their span has \textbf{exactly} the rank of the full classical response space (5 = 5), union adds nothing, \textbf{cokernel = 0}. Renaming test passed (rank 5 on random potentials; non-closed control separates) & PASS \\
+\textbf{T4} & Faithfulness: no cut form leaks outside the classical algebra --- the image sits \emph{exactly} on it & PASS \\
+\end{longtable}
+
+The key move in T3: the cut side is built by a \textbf{procedure independent}
+of the classical side --- finite differences of the potential (loops and
+differences only), not analytic partials --- and the two still span the
+same 5-dimensional space. That independence is what makes the rank
+equality a theorem rather than a restatement. \textbf{Recognition
+thermodynamics loses nothing classical.}
+
+\hypertarget{why-this-is-the-right-flagship}{%
+\section{Why this is the right flagship}\label{why-this-is-the-right-flagship}}
+
+Discourse-changing theorems are \textbf{bridge identities}: two quantities
+computed by different means that must be equal. Noether bridges symmetry
+↔ conserved current; Einstein bridges geometry ↔ stress-energy; Onsager
+bridges microscopic reversibility ↔ macroscopic transport symmetry;
+Landauer bridges information erasure ↔ heat. Cut-First Equivalence
+bridges \textbf{recognition/memory structure ↔ thermodynamic response
+geometry}, with a computable residue ∬Ω. It upgrades the second law's
+\emph{inequality} slot to an \emph{identity with a computable residue} --- on the
+witness EOS, certified.
+
+It is also the \textbf{parent} statement. Once established:
+- the \textbf{recognition-Noether} direction (bias phase φ as the generator
+of a conserved recognition current) becomes ``the conserved current of
+the memoryless symmetry'';
+- the \textbf{memory-completion} finding (no memory, no critical strip;
+certified at s=3,5 in \texttt{../lambda-seam-calibration/}) becomes ``the
+obstruction ∬Ω is non-trivial iff the memory channel is retained'';
+- the \textbf{seam-quantization} results (\textbar τ(χ)\textbar²=q, τ(χ₄)²=−4 ⇒ ι²=−1, in
+\texttt{../lambda-seam-calibration/}) become ``the obstruction takes quantized
+seam values.''
+
+One theorem organizes four, instead of four competing claims.
+
+\hypertarget{the-remaining-obligation-open-precisely-stated}{%
+\section{The remaining obligation (open, precisely stated)}\label{the-remaining-obligation-open-precisely-stated}}
+
+\textbf{(S) surjectivity is now discharged (CFE-2).} One obligation remains,
+\textbf{within the regular / certified regime, touching no RH / K0 / L0 / YM
+continuum gate}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{(U) Uniqueness.} That ∬Ω is the \emph{only} obstruction to χ → 1 --- that
+  no independent second obstruction can arise. Finite, well-posed,
+  gate-free; the natural certified attack is an obstruction-theoretic
+  rank argument (the response cohomology H²(response) is rank 1), the
+  same exact-rank machinery CFE-2 already uses.
+\end{itemize}
+
+A second, softer obligation is \textbf{generality beyond the witness EOS}:
+CFE-2's rank-equality argument is EOS-independent in \emph{form} (closed-form
+spaces on a 2-D compass) and passes the renaming test on random
+potentials, but a full statement quantifies over all admissible convex
+potentials.
+
+\hypertarget{proof-scaffolding-map}{%
+\section{Proof-scaffolding map}\label{proof-scaffolding-map}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Obligation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Scaffolding already in the corpus
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Part (1), memoryless limit & this capsule T1/T4; paper Corollary .1.1 (χ=1 ⇒ Onsager), contact-form Maxwell derivation, 𝓘=1 \\
+Part (2), residue = curvature & this capsule T2/T3; paper Stokes identity ∮ω=∬Ω (Eqs. for Ω=dω) \\
+Curvature = micro-correlator & paper Weighted Reciprocity (Eq. 22) + Microscopic Irreversibility theorem \\
+(S) surjectivity & \textbf{✔ CFE-2} --- rank equality (5=5), zero cokernel, renaming test passed \\
+(U) uniqueness & \textbf{to build} --- obstruction-theoretic argument that H²(response) is rank 1 \\
+quantized residue values (downstream) & \texttt{../lambda-seam-calibration/} LAM-1/LAM-2 (seam integers, Gauss-sum cuts) \\
+\end{longtable}
+
+\hypertarget{quantum-extension-capsule-cfe-q}{%
+\section{Quantum extension: capsule CFE-Q}\label{quantum-extension-capsule-cfe-q}}
+
+The same bridge identity has a \textbf{quantum realization}, certified on a
+dissipative-qubit witness (pin \texttt{EXPECTED\_CFEQ.sha256}):
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Certifies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{T1} & Markovian limit is flat: at χ=1 the qubit propagator is CP-divisible (memoryless) and the closed-cycle geometric residue is exactly 0 --- no holonomy & PASS \\
+\textbf{T2} & The geometric residue is exact (∮ω=∬Ω on the Bloch loop) and faithful: zero iff Markovian, strictly monotone in the memory dial --- a certified quantum \textbf{non-Markovianity measure} & PASS \\
+\textbf{T3} & Quarter-turn echo: the residue is the Berry-phase area form, and the Bloch rotation generator satisfies \textbf{J²=−I} --- the quantum instance of the derived seam phase \textbf{ι²=−1} (LAM-2 T1b) & PASS \\
+\textbf{T4} & CP-divisibility control: a χ≠1 propagator loses intermediate complete positivity at an explicit step --- genuinely non-Markovian, not a relabelling & PASS \\
+\end{longtable}
+
+The dictionary is exact: \textbf{memory dial χ ↔ non-Markovianity}, \textbf{∮ω=∬Ω ↔
+geometric (Berry) holonomy}, \textbf{χ=1 flat face ↔ CP-divisible Markovian
+limit}. The classical seam quantization (ι²=−1) and the quantum
+geometric phase are literally the same quarter turn.
+
+\textbf{Boundary:} CFE-Q is a \emph{witness}, not a general open-system theorem ---
+one qubit, one explicit rational dynamics. Generality beyond the qubit
+and the full open-system theorem are OPEN. \textbf{Quantum gravity is not
+touched} --- it is a horizon, exactly like the action-lifted field
+equations below, never a foundation.
+
+\hypertarget{honest-boundary}{%
+\section{Honest boundary}\label{honest-boundary}}
+
+The witness equation of state is an explicit rational model chosen so the
+arithmetic is exact. \textbf{The theorem is a claim about the structure}
+(one-form, curvature two-form, memory dial), \textbf{not about this one EOS} ---
+the EOS is the witness, not the theorem. The certified core establishes
+the memoryless-limit direction and the residue identity; it does \textbf{not}
+establish (S) or (U), and it makes no claim about the framework's open
+number-theory or Yang--Mills continuum gates. What the framework's genuine
+originality rests on is the \textbf{bridge to finite seam arithmetic} developed
+in the neighbouring Λ-seam capsules; this document's flagship should be
+read together with those.
+
+\begin{flushright}\small\texttt{Publications/papers/cut-first-equivalence/THEOREM.md}\end{flushright}

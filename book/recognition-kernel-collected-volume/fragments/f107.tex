@@ -1,0 +1,260 @@
+% source: Publications/papers/emk-ugd-algebra/README.md
+\hypertarget{emk-ugd-algebra-the-determinant-seam-ladder-emk-1}{%
+\chapter{EMK / UGD algebra --- the determinant seam ladder (EMK-1)}\label{emk-ugd-algebra-the-determinant-seam-ladder-emk-1}}
+
+The framework's \textbf{own algebraic core}, brought from the vault into the
+public certified corpus. Until now the Cut-First Equivalence capsules
+used an explicit rational equation of state as their witness --- a
+scaffold. This is the theory's native geometry instead.
+
+\hypertarget{the-primitive-algebra}{%
+\section{The primitive algebra}\label{the-primitive-algebra}}
+
+\begin{verbatim}
+K² = I      seam reflection
+R² = −I     circular phase transport (the quarter turn)
+RK = −KR    mixed rotation-cut parity,  (RK)² = I
+[R, K] = 2RK                             the UGD bracket
+\end{verbatim}
+
+A primitive block is \texttt{M\ =\ aI\ +\ bK\ +\ cR\ +\ dRK}.
+
+\hypertarget{the-determinant-identity}{%
+\section{The determinant identity}\label{the-determinant-identity}}
+
+\begin{quote}
+\textbf{det M = (a² − b²) + (c² − d²) = Δ∥ + Δ⊥}
+\end{quote}
+
+The determinant splits \textbf{additively} into a seam-compatible channel and
+a rotational / anti-seam channel, and the two close or fail
+\textbf{independently}.
+
+\hypertarget{certified-blocks}{%
+\section{Certified blocks}\label{certified-blocks}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & Primitive relations K²=I, R²=−I, RK=−KR, (RK)²=I, and the UGD bracket {[}R,K{]}=2RK & PASS \\
+T2 & The additive determinant identity on the full rational grid (2401 quadruples), two independent routes; \textbf{channel independence} exhibited --- each channel can vanish alone, and both can vanish while the operator is nonzero & PASS \\
+T3 & Seam projectors P±=(I±K)/2 idempotent/orthogonal/complete; \texttt{{[}A,K{]}=0} \textbf{iff} the mixing blocks vanish --- the commutator \emph{is} the seam-mixing detector & PASS \\
+T4 & Exact Schur identity + the quadratic determinant correction; \textbf{control:} both diagonal blocks have det 1 yet the quadratic residue is 1/6 --- first-order closure is provably incomplete & PASS \\
+T5 & Cut-commutator curvature \texttt{C\_iC\_x\ −\ C\_xC\_i\ =\ −Δx·Δi·{[}D\_x,D\_i{]}} exactly; path equality ⟺ vanishing commutator channel & PASS \\
+T6 & Winding index an exact integer, homotopy invariant (1, 1, 0 across scaled and off-origin loops) --- \textbf{non-healable curvature}, via rational circle parametrization and exact crossing counts, no trigonometry & PASS \\
+T7 & \textbf{Bridge to CFE:} a block is memoryless (commutes with K) \textbf{exactly} when rotation-free (c=d=0), and then det M = Δ∥ alone & PASS \\
+\end{longtable}
+
+\hypertarget{emk-2-cfe-rebuilt-on-this-algebra-and-the-ugd-multiplicative-law}{%
+\section{EMK-2 --- CFE rebuilt on this algebra, and the UGD multiplicative law}\label{emk-2-cfe-rebuilt-on-this-algebra-and-the-ugd-multiplicative-law}}
+
+EMK-1 T7 gave the licence; EMK-2 performs the replacement and retires the
+scaffold equation of state.
+
+\textbf{The algebra is ℤ/2-graded:} even (seam) sector \texttt{\{I,\ K\}}, odd
+(rotational) sector \texttt{\{R,\ RK\}}, with \texttt{even·even\ =\ even}, \texttt{odd·odd\ =\ even},
+\texttt{even·odd\ =\ odd}. The determinant channels read the two grades --- so
+\textbf{memory is the odd grade}, not a dial bolted onto a model.
+
+\textbf{The UGD multiplicative law lives in the seam channel.} In the Cayley
+coordinate \texttt{y\ =\ b/a}, even-sector composition is exactly
+
+\begin{verbatim}
+y₁ ⊕ y₂ = (y₁ + y₂) / (1 + y₁y₂)
+\end{verbatim}
+
+and under the native chart \texttt{x\ =\ (1+y)/(1−y)} this is precisely
+\texttt{Log\_Σ(x₁x₂)\ =\ Log\_Σ(x₁)\ +\ Log\_Σ(x₂)} --- the framework's own
+multiplicative-to-additive law (Recognition-Kernel-Framework, F00G
+Theorem 7.1). Certified with \textbf{no series, no transcendental evaluation
+and no floats}. The seam determinant channel is correspondingly
+multiplicative, \texttt{Δ∥(MN)\ =\ Δ∥(M)·Δ∥(N)}, while its coordinate is additive:
+the determinant split and the multiplicative law are one grading seen
+twice.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & The ℤ/2 grading, with explicit composition laws for each sector & PASS \\
+T2 & The multiplicative law in the Cayley chart, exact; seam channel multiplicative; naive-addition control separates & PASS \\
+T3 & CFE rebuilt natively: memoryless ⟺ even grade; zero curvature, zero residue & PASS \\
+T4 & Residue on the native carrier: ∮ω=∬Ω exact, zero iff even grade, strictly monotone in the odd amplitude & PASS \\
+T5 & \textbf{The dial was the odd grade:} under ρ = χ−1 the scaffold and native densities are identical --- the residues reproduce CFE-1's certified −32, −16, 0, +16, +32 exactly & PASS \\
+\end{longtable}
+
+\hypertarget{ugd-1-ugd-number}{%
+\section{UGD-1 --- UGD number}\label{ugd-1-ugd-number}}
+
+The most original layer: a \textbf{seam-aware analogue of positional notation}.
+A classical digit records a scalar at a scale. A UGD digit records
+\textbf{phase, scale index, and local seam charge}:
+
+\begin{verbatim}
+d_n = (φ_a, n, s)  ∈  Φ_K × ℤ × {−1, 0, 1}
+\end{verbatim}
+
+Phase is carried as an \textbf{exponent in ℤ/K} --- never evaluated as a root of
+unity --- and the scale base is an exact rational, so no transcendental
+arithmetic enters any verdict.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & Phase exponents form ℤ/K with the generator of full order; \textbf{at K=4 the generator has order 4 and its square is the half turn} --- the quarter turn, at the numeral level & PASS \\
+T2 & \textbf{Carry conservation:} phase overflow carries to the next scale, seam overflow returns to \{−1,0,1\} and is pushed to the ledger; total seam charge is conserved exactly (1296 digit pairs). Control: a clamping policy that drops overflow loses charge and separates & PASS \\
+T3 & Multiplication is \textbf{scale convolution} --- scale indices \emph{add}, phases multiply mod K, so π\_scale is multiplicative: the multiplicative-to-additive law at the numeral level & PASS \\
+T4 & The classical projection is \textbf{blind to seam}: null-seam recovers ordinary positional notation exactly, while three numerals share the projection 7 with total seam charges 0, 0, 2 & PASS \\
+T5 & \textbf{Cut-zero:} the neutral digit's neutrality is \emph{derived}, its projection and ledger are null --- yet it occupies a scale and carries a phase exponent, so it is distinct from the \emph{absence} of a numeral. Zero is the first cut & PASS \\
+T6 & λ-logic: negation \texttt{N(φ,σ,k)=(φ,−σ,−k)} is an involution; the seam predicate marks exactly \texttt{k≠0}; the null-seam trivial-phase limit recovers classical behaviour (36-point domain, exhaustive) & PASS \\
+\end{longtable}
+
+\textbf{UGD1-F1} --- the quarter turn now stands certified in \textbf{four} presentations:
+arithmetic (LAM-2 ι²=−1), quantum geometry (CFE-Q J²=−I), native algebra
+(EMK-1 R²=−I), and number (UGD-1 at K=4).
+
+\textbf{UGD1-F2} --- the carry discipline is a \emph{conservation law}; the ledger is
+load-bearing, not bookkeeping.
+
+\textbf{UGD1-F3} --- the classical projection is provably lossy: UGD numbers carry
+strictly more than their classical shadows.
+
+\hypertarget{emk-t1-the-master-tensor-and-recognition-time-sector}{%
+\section{EMK-T1 --- the master tensor and recognition-time sector}\label{emk-t1-the-master-tensor-and-recognition-time-sector}}
+
+An \textbf{honest} capsule. The vault's master-tensor appendix is largely a
+\emph{protocol}: the tensor tuple, the eight-channel RTC connection, the
+residue sectors, tolerances and commit policy are \textbf{declared structure},
+not derived results --- writing declarations into code certifies nothing.
+This capsule extracts only what carries mathematical content, and records
+the rest as declared.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Block
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T1 & \textbf{J is derived, not primitive:} in the primitive basis the cut-swap \emph{is} \texttt{K}, so \texttt{J²=I} and it coincides exactly with the geometry capsule's involution \texttt{(x,y)↦(y,x)} & PASS \\
+T2 & Channel curvature decomposition exact: \texttt{{[}ΣA\_μ,\ ΣA\_ν{]}} = per-channel curvatures + cross-channel commutators & PASS \\
+T3 & \textbf{The mixed term is necessary:} two channels with individually \emph{vanishing} curvature whose cross-commutator carries the entire master curvature --- a channel-by-channel audit is provably insufficient & PASS \\
+T4 & Closure is a real decision: the \emph{same} nonzero curvature is CLOSED when fully ledgered, OPEN when partly unledgered, and CLOSED again when the survivor is outside the active mask & PASS \\
+T5 & \textbf{Time closure ≠ clock equality:} identical clock reading (τ=7), different time-tensor content, nonzero temporal residue that closes only under a lawful ledger & PASS \\
+T6 & Determinant coupling \textbf{without logarithms:} the source's additive log-Det residue certified in multiplicative form; the coupling factor is exactly \texttt{1/det(T)} and the ledger cancels it exactly & PASS \\
+T7 & Presentation agreement, with the hypothesis shown load-bearing: a map that \emph{drops} a sector produces a different verdict & PASS \\
+\end{longtable}
+
+\textbf{EMKT1-F1} --- the geometry involution, the algebra's seam reflection and
+the tensor layer's cut-swap are \textbf{one derived object}.
+
+\textbf{EMKT1-F2} --- the mixed curvature term is necessary, not decorative.
+
+\textbf{EMKT1-F3} --- time closure is strictly stronger than clock equality --- the
+same shape as UGD-1's projection blindness: the visible coordinate never
+carries the whole state.
+
+\hypertarget{findings}{%
+\section{Findings}\label{findings}}
+
+\textbf{F1} --- the additive split is \emph{structure, not notation}: the channels are
+genuinely independent.
+
+\textbf{F2} --- first-order closure is provably incomplete; diagonal-block tests
+cannot certify recognition closure.
+
+\textbf{F3} --- the CFE memory dial and the EMK rotational determinant channel are
+the same object in two presentations, so CFE's witness EOS can be
+replaced by this native algebra.
+
+\textbf{EMK2-F1} --- memory \emph{is} the odd grade; the memory dial was never an extra
+parameter.
+
+\textbf{EMK2-F2} --- multiplication of native scalars is addition of seam
+coordinates; the determinant split and the UGD multiplicative law are one
+grading.
+
+\textbf{EMK2-F3} --- the scaffold retires without cost: every certified curvature
+and residue value is unchanged under ρ = χ−1.
+
+\hypertarget{provenance}{%
+\section{Provenance}\label{provenance}}
+
+Source: vault LaTeX --- the EMK algebraic core ladder I--VII and the UGD
+algebraic-operators appendix. \textbf{No executable version existed anywhere}
+in the corpus (checked Recognition-Kernel-Framework and RH-Framework:
+neither contains a UGD algebra implementation). This capsule is the first
+machine-checkable realization.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+Certified: the finite-dimensional theorem spine. \textbf{Not claimed:} the
+infinite-dimensional trace-class, essential-spectrum, Hurwitz-zeta,
+ξ-function or Hilbert--Pólya extensions --- the vault source explicitly
+defers those, and so does this capsule. CFE's (U) uniqueness stays open.
+No RH / K₀ / L₀ / YM continuum gate is touched; quantum gravity is not
+touched.
+
+\hypertarget{reproduce}{%
+\section{Reproduce}\label{reproduce}}
+
+\begin{verbatim}
+python papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py
+python papers/emk-ugd-algebra/certificates/emk2_native_carrier.py
+python papers/emk-ugd-algebra/certificates/ugd1_numerals.py
+python papers/emk-ugd-algebra/certificates/emkt1_master_tensor_and_time.py
+python -m pytest papers/emk-ugd-algebra/tests -v
+\end{verbatim}
+
+CI regenerates the certificate and fails on pin drift
+(\texttt{EXPECTED\_EMK1.sha256}, \texttt{EXPECTED\_EMK2.sha256}, \texttt{EXPECTED\_UGD1.sha256}, \texttt{EXPECTED\_EMKT1.sha256}).
+
+\begin{flushright}\small\texttt{Publications/papers/emk-ugd-algebra/README.md}\end{flushright}

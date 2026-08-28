@@ -1,0 +1,129 @@
+% source: RKF/theorum/thermodynamics/04_projection_defect_and_source_overlap.md
+\hypertarget{thermodynamic-projection-defect-and-source-overlap-theorems}{%
+\chapter{Thermodynamic Projection-Defect and Source-Overlap Theorems}\label{thermodynamic-projection-defect-and-source-overlap-theorems}}
+
+\hypertarget{projection-defect}{%
+\section{1. Projection defect}\label{projection-defect}}
+
+Let \(\mathcal R_{\mathrm{th}}\) be the span of the declared thermodynamic response vectors and let
+
+\[
+P_{\mathrm{th}}:\mathcal H\to\mathcal R_{\mathrm{th}}
+\]
+
+be the orthogonal projection.
+
+For \(v\in\mathcal H\), define the thermodynamic recognition defect
+
+\[
+\boxed{
+d_{\mathrm{th}}(v)=\|(I-P_{\mathrm{th}})v\|^2.
+}
+\]
+
+\hypertarget{theorem-1.1-thermodynamic-projection-defect}{%
+\section{Theorem 1.1 (thermodynamic projection defect)}\label{theorem-1.1-thermodynamic-projection-defect}}
+
+For every \(v\in\mathcal H\),
+
+\[
+\boxed{
+\|v\|^2
+=\|P_{\mathrm{th}}v\|^2+d_{\mathrm{th}}(v).
+}
+\]
+
+Moreover,
+
+\[
+\boxed{
+d_{\mathrm{th}}(v)=0
+\iff
+v\in\operatorname{Ran}P_{\mathrm{th}}.
+}
+\]
+
+\hypertarget{proof}{%
+\subsection{Proof}\label{proof}}
+
+The two vectors \(P_{\mathrm{th}}v\) and \((I-P_{\mathrm{th}})v\) are orthogonal. The first identity is Pythagoras. The second follows because a norm vanishes exactly on the zero vector. QED.
+
+This theorem records an exact limitation: a finite response frame cannot recognize a component outside its span.
+
+\hypertarget{thermodynamic-source-synthesis}{%
+\section{2. Thermodynamic source synthesis}\label{thermodynamic-source-synthesis}}
+
+Let
+
+\[
+S_{\mathrm{th}}:\mathbb C^m\to\mathcal H
+\]
+
+be the synthesis map of declared thermodynamic source vectors \(s_1,\ldots,s_m\), and define
+
+\[
+\boxed{
+G_{\mathrm{th}}=S_{\mathrm{th}}^*S_{\mathrm{th}}.
+}
+\]
+
+\hypertarget{theorem-2.1-source-overlap-gram-identity}{%
+\section{Theorem 2.1 (source-overlap Gram identity)}\label{theorem-2.1-source-overlap-gram-identity}}
+
+The matrix \(G_{\mathrm{th}}\) is positive semidefinite and
+
+\[
+(G_{\mathrm{th}})_{ij}=\langle s_i,s_j\rangle.
+\]
+
+For every coefficient vector \(c\in\mathbb C^m\),
+
+\[
+\boxed{
+c^*G_{\mathrm{th}}c=\|S_{\mathrm{th}}c\|^2\ge0.
+}
+\]
+
+Hence
+
+\[
+\ker G_{\mathrm{th}}=\ker S_{\mathrm{th}}.
+\]
+
+\hypertarget{proof-1}{%
+\subsection{Proof}\label{proof-1}}
+
+Directly,
+
+\[
+c^*G_{\mathrm{th}}c
+=c^*S_{\mathrm{th}}^*S_{\mathrm{th}}c
+=\|S_{\mathrm{th}}c\|^2.
+\]
+
+QED.
+
+\hypertarget{event-resolved-overlap}{%
+\section{3. Event-resolved overlap}\label{event-resolved-overlap}}
+
+If each recognition event \(e\) supplies a response synthesis \(S_{\mathrm{th},e}\), then the event-resolved overlap kernel is
+
+\[
+G_{e,f}=S_{\mathrm{th},e}^*S_{\mathrm{th},f}.
+\]
+
+The block matrix \((G_{e,f})_{e,f}\) is positive semidefinite because it is the Gram matrix of the total event synthesis.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+THERMODYNAMIC PROJECTION DEFECT                PROVED
+ZERO-DEFECT / VISIBLE-RANGE EQUIVALENCE        PROVED
+SOURCE-OVERLAP GRAM POSITIVITY                 PROVED
+EVENT-RESOLVED BLOCK GRAM POSITIVITY           PROVED
+FINITE RESPONSE FRAME COMPLETENESS             NOT AUTOMATIC
+THERMO SOURCE = ARITHMETIC SOURCE              NOT PROVED HERE
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/thermodynamics/04\_projection\_defect\_and\_source\_overlap.md}\end{flushright}

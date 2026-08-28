@@ -1,0 +1,688 @@
+% source: Publications/papers/yang-mills-certified-benchmark/LINEAGE.md
+\hypertarget{lineage-the-lambda-framework-yang-mills-manuscripts}{%
+\chapter{Lineage: the lambda-framework Yang-Mills manuscripts}\label{lineage-the-lambda-framework-yang-mills-manuscripts}}
+
+Two pre-framework manuscripts (``The Yang-Mills Mass Gap as a
+lambda-Topological Positivity Condition'', v1/v2) proposed a conditional
+route: IF a vacuum state omega\_0 exists on the observable algebra, THEN
+sector decorrelation (ACA) + local orthogonality (LO) + a Schur contraction
+estimate + kernel positivity force a mass gap (``Kill Lemma'').
+
+Ruling (mine, don't merge --- same doctrine as the morphic-calculus chapters):
+
+\begin{itemize}
+\tightlist
+\item
+  NOT imported: the vacuum conjecture, the ACA/LO ``first-principles'' proofs
+  (prose, tied to the retired lambda-RH citations), and any continuum claim.
+  Those documents remain uncertified lineage.
+\item
+  MINED: the Kill-Lemma SKELETON --- (block Schur estimate) + (positivity)
+  =\textgreater{} gap. YM-5 realizes exactly this skeleton on the theta-graph carrier,
+  unconditionally and machine-certified:
+  their Schur estimate -\textgreater{} U1/U2 block + off-block interval bounds
+  (off-block via the exact doubling m\_k\^{}2=m\_2k)
+  their kernel positivity -\textgreater{} certified character-coefficient positivity
+  (f\_j = 2 I\_\{2j+1\}/kappa \textgreater{} 0, positive series)
+  their Kill Lemma -\textgreater{} U3 Weyl bound + interlacing =\textgreater{} two-sided gap.
+\item
+  The old manuscripts' honest reduction (``vacuum exists =\textgreater{} gap'') maps onto
+  the still-open gates of MP adapters/yang\_mills/DEPENDENCY\_MAP.md; nothing
+  here advances those gates.
+\end{itemize}
+
+\hypertarget{ym-15-aug-22-2026-the-1d-block-transfer-dock-opened}{%
+\section{YM-15 (Aug 22 2026): the 1D block-transfer dock, opened}\label{ym-15-aug-22-2026-the-1d-block-transfer-dock-opened}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-14 T4 (the named object), YM-14 carrier conventions
+  (beta=2 Wilson T0, A-line basis, B-parity inertness), YM-3/4/14's exact
+  SU(2) pairing integral generalised to the convolution lemma
+  Int chi\_a(XA\^{}\{-1\})chi\_b(AY) = delta\_ab chi\_a(XY)/d\_a, YM-6 exact LDL
+  inertia, YM-7 inertia-bisection pattern.
+\item
+  SESSION LINEAGE: an earlier working session reached the chain topology,
+  the convolution formula (after two self-corrections) and exact spot
+  values at m = 4, 6, 8. This capsule replaces the spot checks by the
+  closed form for every m, with the formula machine-checked as a formal
+  polynomial identity (engine vs closed form, m = 2..8, all entries).
+\item
+  IMPORTS ZERO numerical claims; the m=4,6,8 spot values are superseded.
+\item
+  HONEST: A-line carrier only; the complement of W\_\{m+1\} grows with m and
+  is untouched. YM-16 (m-uniform complement bound) is the named next dock.
+\end{itemize}
+
+\hypertarget{ym-16-aug-22-2026-the-chain-dock-finite-volume-certified-death-volume-computed}{%
+\section{YM-16 (Aug 22 2026): the chain dock --- finite volume certified, death volume computed}\label{ym-16-aug-22-2026-the-chain-dock-finite-volume-certified-death-volume-computed}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-15 closed form (both M\_kappa and M\_\{2kappa\} on the chain
+  carrier), YM-6/14 Haynsworth dock, YM-5 doubling identity (survives the
+  bridge product verbatim), YM-1 Delta\_red (reappears as the exact
+  m-uniform UPPER bound on the chain gap via B-factorisation).
+\item
+  DIRECTION: the Millennium predicate is volume-uniformity. This capsule
+  certifies the chain gap for m \textless= m*(kappa) and PROVES the sup route
+  cannot go further (per-bridge price e\^{}kappa/f0 \textgreater{} 1 is exponential in m).
+  The wall is now a formula, not a mood: the obstruction is the use of
+  \textbar m\_kappa\textbar\_inf on the complement; its replacement (local/per-bridge
+  control in the content basis = certified strong-coupling cluster
+  radius, Osterwalder-Seiler shape) is YM-17.
+\item
+  IMPORTS ZERO external claims. Jentzsch anchor not used.
+\end{itemize}
+
+\hypertarget{ym-17-aug-22-2026-the-interleaving-seam}{%
+\section{YM-17 (Aug 22 2026): the interleaving seam}\label{ym-17-aug-22-2026-the-interleaving-seam}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-16 dock at m = 2 (the pair), YM-5 doubling (pairwise),
+  YM-15 closed form, singular-value Weyl inequality (classical, cited).
+\item
+  RESULT: half-chains are exactly volume-uniform (product spectrum); the
+  A-chain's entire volume problem is the vacuum-tracking inequality
+  lambda\_1(T) vs sigma\_1(X) sigma\_1(Y). Vacuum bracket per bridge now
+  O(kappa\^{}2) at both ends. No m-uniform chain gap claimed.
+\item
+  YM-18 named: certified Kotecky-Preiss radius for the interleaving
+  polymer gas (two-site pairs as monomers). This is the first capsule
+  whose next object is a classical convergence criterion rather than a
+  new carrier --- the program has reached the cluster-expansion wall with
+  its own coordinates.
+\end{itemize}
+
+\hypertarget{ym-18-calibration-aug-22-2026-vacuum-tracking-measured-cluster-dock-designed}{%
+\section{YM-18 calibration (Aug 22 2026): vacuum tracking measured, cluster dock designed}\label{ym-18-calibration-aug-22-2026-vacuum-tracking-measured-cluster-dock-designed}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-15 engine (generalised to multiple insertions per site),
+  YM-16 f0, YM-17 upper end. PC-1 precedent for ``calibration, not claim''.
+\item
+  MEASURED: the enlarged-carrier vacuum rate is m-independent to \textasciitilde1e-5
+  for m = 2..6 at every grid kappa. Evidence, not proof, that the
+  interleaved vacuum tracks a per-bridge rate.
+\item
+  DESIGNED, NOT EXECUTED: the Kotecky-Preiss dock (T3). Every line is an
+  obligation. YM-18 proper = discharging them.
+\end{itemize}
+
+\hypertarget{ym-19-aug-22-2026-the-dobrushin-dock-volume-uniform-gap-certified}{%
+\section{YM-19 (Aug 22 2026): the Dobrushin dock --- volume-uniform gap certified}\label{ym-19-aug-22-2026-the-dobrushin-dock-volume-uniform-gap-certified}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-9 heat-kernel family (time step a), YM-8 Perron floors
+  (simple positive vacuum), YM-16 B-factorisation (consistency control),
+  YM-5 exp two-route, YM-13 compound exp route (e\^{}\{-x\} = (e\textsuperscript{\{-x/n\})}n).
+\item
+  ANCHOR (CIRC-1, cited not rederived): Dobrushin uniqueness and the
+  Foellmer/Kuensch covariance decay (Georgii ch.~8). Same governance as
+  YM-8's Jentzsch anchor, which YM-12 later demoted; the program should
+  look for a square-sourced replacement of this anchor too.
+\item
+  STANDING CORRECTION: YM-17 T3's ``vacuum-tracking inequality'' is not a
+  sufficient reduction; recorded in the certificate. YM-18 retained as
+  calibration. The KP design (YM-18 T3) is superseded as the main route
+  but remains valid as an alternative.
+\item
+  CLOSES: volume-uniformity of the interacting gap on the bounded-degree
+  chain at strong coupling, fixed time step. Does NOT close cutoff
+  uniformity --- the Dobrushin condition degrades as a -\textgreater{} 0. That is now
+  the sharp wall, one level deeper than YM-9 left it.
+\end{itemize}
+
+\hypertarget{governance-aug-22-2026-owners-rule-no-classical-borrowing}{%
+\section{GOVERNANCE (Aug 22 2026, owner's rule): NO CLASSICAL BORROWING}\label{governance-aug-22-2026-owners-rule-no-classical-borrowing}}
+
+\begin{itemize}
+\tightlist
+\item
+  Owner's standing rule: the program proves with its own machinery
+  (EMK/UGD algebra, generalized Euler flow, seam calculus); classical
+  results are not imported as load-bearing anchors.
+\item
+  Applied: YM-19 T3 DEMOTED to ``anchored''; the m-uniform gap claim is
+  withdrawn until derived natively. YM-19 T1/T2 (exact, self-derived)
+  stand. YM-8's Jentzsch anchor was already demoted by YM-12 the same
+  way. Audit of YM-1..19: these were the only two borrowed anchors.
+\item
+  Standing obligation: a native replacement for correlation decay.
+\end{itemize}
+
+\hypertarget{ym-20-aug-22-2026-native-origin-audit-cayley-form}{%
+\section{YM-20 (Aug 22 2026): native origin audit + Cayley form}\label{ym-20-aug-22-2026-native-origin-audit-cayley-form}}
+
+\begin{itemize}
+\tightlist
+\item
+  READ for this capsule: Recognition-Kernel-Framework F00-E (native
+  Euler, circular-hyperbolic via sheet involution), F00-G (Cayley
+  coordinate, odd-series log, Exp(A(y))=(1+y)/(1-y)), RH-Framework T01
+  (cut-tail mass, recognition energy, native action bound) and its
+  NATIVE\_DERIVATION\_CONTAMINATION\_AUDIT (vocabulary adopted verbatim).
+\item
+  FINDING: the YM carrier is a coordinate shadow by the framework's own
+  standard (same class as RH T03-A); the counting layer is native; the
+  program's uniform bounds are Cayley exponentials of seam coordinates.
+\item
+  Framework-internal pins (F00-G 5.1/7.1, F00-E 2.1/6.2, T01-C) are
+  citations INSIDE the program, permitted as in EMK-2.
+\item
+  YM-21 named: native contraction replacing the decay anchor.
+\end{itemize}
+
+\hypertarget{ym-f1-aug-22-2026-the-chain-as-a-recognition-fabric-native-carrier}{%
+\section{YM-F1 (Aug 22 2026): the chain as a recognition fabric --- native carrier}\label{ym-f1-aug-22-2026-the-chain-as-a-recognition-fabric-native-carrier}}
+
+\begin{itemize}
+\tightlist
+\item
+  SOURCE (vault, read this session): APPENDIX\_DISCRETE\_HOLONOMY\_FABRICS\_AND\_
+  RECOGNITION\_STOKES --- the program's lattice objects (plaquettes, Wilson
+  action, gauge-fixed tree) are its fabric, face holonomy, face residue
+  and rails. Also read: generalized\_euler\_phase\_ratio\_space and
+  EULER\_INFORMATION\_CURVATURE\_DUALITY (no decay mechanism --- recorded),
+  mp\_gold/01 (YM-1..8's ancestor: MP PR\#30), gold/05 (curvature-to-seam-
+  index spectral-flow law), gold/06 (same-projection two-block bound).
+\item
+  CONSUMES: EMK-1 (Publications) determinant seam ladder; F00-E iota\_Sigma.
+\item
+  NEW NATIVE FACT: SU(2) is the unit sphere of the EMK primitive block
+  with iota-twisted seam channels --- the gauge group was inside the
+  framework's own algebra. EMK-1's channel witness (2,2,3,1) has split
+  determinant 8 untwisted and norm 18 twisted (test).
+\item
+  Carrier layer of YM-1..18 is now NATIVE except the declared Haar \textless-\textgreater{}
+  Phi\_Sigma identification. No number changed. No gap claimed.
+\end{itemize}
+
+\hypertarget{ym-21-aug-22-2026-the-tiling-law}{%
+\section{YM-21 (Aug 22 2026): the tiling law}\label{ym-21-aug-22-2026-the-tiling-law}}
+
+\begin{itemize}
+\tightlist
+\item
+  STANDING CORRECTION: YM-F1's ``native form of YM-21'' was ill-posed
+  (boundary closure never bounds interior residue --- the fabric
+  appendix's own principle); killed by witness (g, g\^{}\{-1\}) and replaced.
+\item
+  DERIVED, not docked: YM-15's compressed A-block is the leading-order
+  tiling transfer of the 2D fabric; YM-15/20's m-uniform bound is a
+  tiling count. Spatial decay exact via Stokes sub-telescoping.
+\item
+  OPEN: full-order time decay uniform in m = convergence of the
+  face-coefficient tiling expansion (native cluster statement).
+  Expansion parameter certified small and decreasing (r\_j ladder).
+\end{itemize}
+
+\hypertarget{ym-22-aug-22-2026-the-tiling-rate-survives-the-cutoff}{%
+\section{YM-22 (Aug 22 2026): the tiling rate survives the cutoff}\label{ym-22-aug-22-2026-the-tiling-rate-survives-the-cutoff}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-9 heat-kernel family + declared trajectory; YM-21 T3
+  tiling transfer (scalar in lambda); YM-20 native odd-series log.
+\item
+  RESULT: at leading tiling order the chain's rate per unit time is
+  uniform in m AND a along kappa = theta a, infimum exactly 3/4 - theta/2.
+  First native touch of the cutoff wall. Full order OPEN: in the limit
+  only j = 1/2 branching tilings survive (r\_j/a -\textgreater{} 0 for j \textgreater= 1).
+\item
+  Build note: I first wrote the convergence as approach-from-below; the
+  arithmetic showed approach-from-above (the limit is a uniform lower
+  bound) --- controls corrected to what the arithmetic says (YM-14 C4
+  lesson again).
+\item
+  CI LESSON (b2291d1 failed on hosted Tests, pins passed): YM-F1/YM-21
+  seeded the shared \texttt{random} module at import; in the full pytest run
+  the test order changed the stream and YM-F1's pinned demo drifted.
+  Fix: reseed inside run(). Pins unchanged. Rule: a pinned certificate
+  must be a pure function of its inputs, never of module import order.
+\end{itemize}
+
+\hypertarget{ym-23-aug-22-2026-the-weak-coupling-turn}{%
+\section{YM-23 (Aug 22 2026): the weak-coupling turn}\label{ym-23-aug-22-2026-the-weak-coupling-turn}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-F1 stereographic chart + quaternion product, YM-21/22
+  tiling rate, EMK-1 T5 cut-commutator curvature, RST-1 T4 flow loop,
+  F00-G Cayley/odd-series log (native tanh and log 2 = A(1/3)).
+\item
+  RESULT: exact boundary of the strong-coupling route; native
+  linearization with the commutator as the only curvature; exact
+  negative --- abelianized fabric has no volume-uniform gap. The
+  weak-coupling gap problem is now the commutator-residue transfer.
+\item
+  DECLARED, not certified: AF trajectory shape; harmonic excitation
+  relation. No weak-coupling gap claimed.
+\end{itemize}
+
+\hypertarget{ym-24-aug-22-2026-the-abelian-subfabric-and-the-non-abelian-residue}{%
+\section{YM-24 (Aug 22 2026): the abelian subfabric and the non-abelian residue}\label{ym-24-aug-22-2026-the-abelian-subfabric-and-the-non-abelian-residue}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-F1 quaternion chart, YM-23 soft mode, F00-E Thm 3.1/5.2
+  (native addition law / circular orbit), EMK-1 rotational determinant
+  channel, EMK-T2 (order is content).
+\item
+  RESULT: the commutator sector's exact structure --- abelian subfabrics
+  are copies of the native circle with additive Stokes; the non-abelian
+  residue is a Gram defect; the gapless soft mode is exactly abelian.
+  Weak-coupling gap, if any, lives in direction changes between
+  subfabrics. YM-25 named. No gap claimed.
+\end{itemize}
+
+\hypertarget{ym-25-aug-22-2026-the-direction-change-sector}{%
+\section{YM-25 (Aug 22 2026): the direction-change sector}\label{ym-25-aug-22-2026-the-direction-change-sector}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-10 multiplicity law, YM-9 semigroup, YM-F1 chart, YM-24
+  rotation, RST-2 squared-amplitude discipline, MP gold/01 (PR \#30
+  spin-network seed --- reopened here at weak coupling).
+\item
+  RESULT: time kernel and class-function carriers are both
+  direction-blind (exact); direction change = 6j recoupling with exact
+  rational squares 1/4 : 3/4. The weak-coupling gap is isolated to the
+  intertwiner transfer. YM-26 named. Frontier status declared.
+\end{itemize}
+
+\hypertarget{ym-26-aug-22-2026-dock-to-theorum28}{%
+\section{YM-26 (Aug 22 2026): dock to theorum/28}\label{ym-26-aug-22-2026-dock-to-theorum28}}
+
+\begin{itemize}
+\tightlist
+\item
+  OWNER'S CORRECTION recorded: the framework already has the finite-to-
+  infinite machinery (recognition-Cauchy + Smriti tails + outward
+  certificate u\_n + e\_n \textless{} 1). YM-16 was that theorem without its name.
+\item
+  RESULT: YM-16's dock re-certified as a lawful theorum/28 outward
+  certificate for m \textless= m*; the remaining obligation is theorum/28
+  hypothesis 3 (memory-channel Cauchy bound uniform in m), reduced via
+  the tiling law to the content-1/2 multi-insertion channel.
+\item
+  RULE going forward: before declaring any object ``infinite-dimensional
+  with no finite truncation'', check theorum/28's hypothesis list first.
+\end{itemize}
+
+\hypertarget{ym-27-aug-22-2026-dock-to-rh-framework-t01}{%
+\section{YM-27 (Aug 22 2026): dock to RH-Framework T01}\label{ym-27-aug-22-2026-dock-to-rh-framework-t01}}
+
+\begin{itemize}
+\tightlist
+\item
+  OWNER'S INSTRUCTION recorded: read RH-Framework, use and cite its
+  proved theorems rather than re-deriving. Cited: T01-A/B/C, E1/E3,
+  E4C, E5A/B (PROVED); E5C/E6 (OPEN); T03-A (CLASSICAL\_THEOREM\_IMPORT).
+\item
+  RESULT: sup route = T01-E4C exactly (obligation now a measured slack
+  factor); abelian subfabric = E5A packet with winding as memory; the
+  Haar shadow is RH's own T01-E6; recognition energy = vacuum form.
+\item
+  RULE: before any new derivation, check RH-Framework LEDGER and
+  theorum/ for a proved statement to cite.
+\end{itemize}
+
+\hypertarget{ym-28-aug-22-2026-t01-e4d-on-the-chain}{%
+\section{YM-28 (Aug 22 2026): T01-E4D on the chain}\label{ym-28-aug-22-2026-t01-e4d-on-the-chain}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: RH-Framework T01-E4D (PR \#19), YM-15 engine (extended to
+  content 8), YM-16 f\_0 normalisation, YM-18 measured rates, YM-27 slack.
+\item
+  RESULT: mean law exact on single insertions; deviation geometric and
+  per-insertion on basis states; E4D rate derives the measured slack.
+  Remaining: E4D-C on superpositions (quadratic form) = theorum/28
+  hypothesis 3. Build note: first run used unnormalised Bessel for f\_0
+  and a tamper test that could not bite; both corrected.
+\end{itemize}
+
+\hypertarget{ym-29-aug-22-2026-closed-form-vacuum-floor-for-every-m}{%
+\section{YM-29 (Aug 22 2026): closed-form vacuum floor for every m}\label{ym-29-aug-22-2026-closed-form-vacuum-floor-for-every-m}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-F1 fabric (faces as independent contents, T01-E1 product
+  content), YM-4 fusion rule, YM-15 lambda, YM-16 dock, YM-28 rates.
+\item
+  RESULT: face-independence lemma; single-face-excitation Rayleigh floor
+  in closed form for all m (Q\_m \textgreater{} 1, linear for large m). Honest: does
+  not move m*; the true-rate floor and the E4D-C quadratic form both
+  reduce to one missing engine --- exact rational 2-row (ladder)
+  recoupling evaluations. YM-30 named with that spec.
+\item
+  Build note: my first asymptotic claim (linear law visible at m=60)
+  was wrong --- the linear regime starts at m \textasciitilde{} 1/(4 lambda\^{}2 r\^{}2);
+  control corrected to m = 2000.
+\end{itemize}
+
+\hypertarget{ym-30-aug-22-2026-the-2-row-recoupling-engine}{%
+\section{YM-30 (Aug 22 2026): the 2-row recoupling engine}\label{ym-30-aug-22-2026-the-2-row-recoupling-engine}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: MP gold/01 spin-network seed (now executable), RST-2
+  squared-amplitude discipline (surds cancel by construction), YM-25
+  recoupling squares (reproduced), YM-15 chain (recovered as a limit).
+\item
+  RESULT: exact ladder evaluations; calibration shows the W\^{}\{1/2\}-
+  dressed vacuum floor is geometric in m at rate 0.002685/face (kappa
+  1/8), above the E4D excitation rate. YM-31 named: outward
+  certification (intervals, tail, Perron on the column transfer).
+\item
+  Build notes: my docstring claimed 1/d\_a for one plaquette; the engine
+  said 1/d\_a\^{}2 and the engine was right (three convolutions, one trace).
+  A brute-force label sum was 3\^{}\{3m-2\} evaluations --- replaced by
+  folding labels into the cut transfer (m = 6 in \textless{} 1 s).
+\end{itemize}
+
+\hypertarget{ym-31-aug-22-2026-outward-m-uniform-dressed-vacuum-floor}{%
+\section{YM-31 (Aug 22 2026): outward m-uniform dressed vacuum floor}\label{ym-31-aug-22-2026-outward-m-uniform-dressed-vacuum-floor}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-30 engine, YM-29 face independence, T01-B/C (projection
+  square, cut-square inequality) for rung positivity and log-convexity,
+  YM-28 E4D rate, theorum/28 item 6.
+\item
+  RESULT: lambda\_1(S\_m) \textgreater= FLOOR\_\{m0\} (rho\_lo / I\_hi)\^{}\{m-m0\} for all
+  m \textgreater= 6 at the true per-face rate; margin over the E4D excitation rate
+  certified positive at every grid kappa. First m-uniform statement of
+  the program that holds at the TRUE rate rather than a bracket.
+\item
+  Trial-state discipline: the truncation lives in the trial (no error),
+  the rung truncation is one-sided by positivity, the denominator is an
+  exact interval --- nothing is a shadow certificate.
+\end{itemize}
+
+\hypertarget{ym-32-aug-22-2026-dressed-single-insertion-energy}{%
+\section{YM-32 (Aug 22 2026): dressed single-insertion energy}\label{ym-32-aug-22-2026-dressed-single-insertion-energy}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-30/31 engine and trial discipline, YM-15 bracket,
+  YM-21 tiling law (KMS hopping explains the O(r\^{}2) excess over lambda).
+\item
+  RESULT: engine handles rung insertions (4-valent vertices by CG
+  reduction); the dressed J=1/2 excitation/vacuum ratio is an exact bulk
+  constant, uniform in m. Lower-bound-side only; item 3 still open.
+\item
+  Build note: predicted E\_bulk \textless{} lambda; engine gave E\_bulk \textgreater{} lambda by
+  O(r\^{}2). Claim corrected, certificate records the measured excess.
+\end{itemize}
+
+\hypertarget{ym-33-aug-22-2026-t-row-fabric-engine-and-the-exact-time-two-point-function}{%
+\section{YM-33 (Aug 22 2026): t-row fabric engine and the exact time two-point function}\label{ym-33-aug-22-2026-t-row-fabric-engine-and-the-exact-time-two-point-function}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-30/32 engine (generalised to t rails, 5-leg vertices by
+  two CG fusions), YM-31 trial discipline, YM-15 r for the r\^{}2 law.
+\item
+  RESULT: second order of the time expansion of the dressed excitation
+  ratio is an exact bulk constant, m-uniform, edges localised with
+  increments scaling as r\^{}2 per unit distance (certified window).
+\item
+  Build notes: (i) first run used w\_pt\^{}2 on the middle rail --- wrong: the
+  rail shared by two T0 factors carries W once; (ii) an apparent linear
+  drift of delta\_2 in m was the boundary at distance 2 --- at distances
+  3 and 4 it decays geometrically (1.3e-9, 1.6e-12 at kappa = 1/8).
+  Both corrected before pinning.
+\end{itemize}
+
+\hypertarget{ym-34-aug-22-2026-e4d-c-restated}{%
+\section{YM-34 (Aug 22 2026): E4D-C restated}\label{ym-34-aug-22-2026-e4d-c-restated}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: T01-E4C/E4D (RH), YM-16/26 exponential, YM-31 log-convexity.
+\item
+  RESULT: certified negative (unsmoothed iteration -\textgreater{} sup) and positive
+  (smoothed iteration -\textgreater{} spectral constant f\_0(1+delta)). The RH open
+  item E4D-C is replaced by the alternating-product gap statement; its
+  vacuum half is YM-31, its excitation half is the one open item.
+\item
+  RH-Framework ledger edit to follow as a PR.
+\end{itemize}
+
+\hypertarget{ym-37-aug-23-2026-the-space-transfer-m-uniformity-as-a-theorem}{%
+\section{YM-37 (Aug 23 2026): the space transfer --- m-uniformity as a theorem}\label{ym-37-aug-23-2026-the-space-transfer-m-uniformity-as-a-theorem}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-33 t-row engine (validated against, exactly), YM-F1
+  quaternion carrier, RKF theorum/53 (native LDL / weights) and
+  theorum/28 §7--9 (finite seam matrix, outward certificate), YM-15 r.
+\item
+  REFUSES, with witness: ``complement upper bound from T53 cut-square
+  weights''. T53 T4 bounds pivots by the diagonal; a block with every
+  diagonal ≤ μ can have λmax \textgreater{} μ. Item 3's upper half stays OPEN.
+\item
+  RESULT: every YM-33/36 quantity is ⟨boundary, M τ\^{}\{m−1\} boundary⟩ for
+  one column map τ = B\^{}\{-1\}M on the even conjugation-invariant sector
+  (dim 8 at t = 2, 52 at t = 3); σ\_1, σ\_2 bracketed by exact inertia
+  (Bareiss, integer minors); m-uniformity of ρ\_1(m,p) with an explicit
+  certified error; ρ\_1\^{}∞ = N\_11/σ\_1 bracketed two-sided.
+\item
+  Build notes: (i) the full invariant sector (dim 14) gave a rate \textasciitilde1.4 r ---
+  its σ\_2 mode is the total-flip-odd state x0+y0 that no quantity here
+  touches; the centre-of-SU(2) symmetry fixed it; (ii) exact rational
+  LDL at dim 52 did not terminate in 17 min (10\^{}9 face denominators in
+  B); replaced by fraction-free Bareiss with Jacobi sign rule, which
+  agrees with LDL at dim 8 and runs in seconds.
+\end{itemize}
+
+\hypertarget{standing-correction-to-ym-37-same-day-owners-audit-question}{%
+\section{STANDING CORRECTION to YM-37 (same day, owner's audit question)}\label{standing-correction-to-ym-37-same-day-owners-audit-question}}
+
+\begin{itemize}
+\tightlist
+\item
+  YM-37 T3's proof of the all-m bound uses the finite spectral
+  decomposition of the pencil (v\_k ``eigenvectors'') --- a CLASSICAL\_THEOREM\_IMPORT
+  by the framework's own audit vocabulary; T53 explicitly does not claim
+  weights = eigenvalues. Status of T3: ANCHORED (YM-19 precedent). The
+  inertia brackets, sector reduction, exact matches and all rationals
+  are unaffected; what is anchored is only the route from the brackets
+  to the for-all-m statement.
+\item
+  NAMED YM-38 (native replacement): n\_+(M - sigma B) = 1 + T53 gives a
+  one-positive-weight square d\_+ \textbar c\_+(x)\textbar\^{}2 with an explicit rational
+  witness row (codimension-1 negativity, no eigenvectors); top direction
+  by explicit-vector deflation (YM-8 lesson) with the defect
+  \textbar\textbar(B\^{}-1 M)w - theta w\textbar\textbar\_B tracked exactly; two-block recursion in the
+  theorum/28 Sec 9 outward-certificate shape. Same brackets expected.
+\item
+  Remaining declared shadow (unchanged, inherited): Haar \textless-\textgreater{} Phi\_Sigma
+  = RH T01-E5C/E6, OPEN.
+\end{itemize}
+
+\hypertarget{ym-38-aug-23-2026-native-m-uniformity-ym-37s-import-removed}{%
+\section{YM-38 (Aug 23 2026): native m-uniformity --- YM-37's import removed}\label{ym-38-aug-23-2026-native-m-uniformity-ym-37s-import-removed}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES (all framework-internal): T53 elimination (every count is a
+  sign pattern of native weights --- the quadratic-form ceiling needs no
+  eigenvalues), RH T01-C cut-square inequality, theorum/28 §3--5/§9
+  (recognized-channel Cauchy with declared geometric tail; outward
+  certificate beta = L \textless{} 1), theorum/54 §2 product bound (replaces all
+  exponentials), YM-8 deflation lesson (explicit vector, exact defect).
+\item
+  RESULT: \textbar ρ₁(m,p) − ρ\_c\textbar{} ≤ A·(L\^{}\{j−p₀\} + L\^{}\{j\_c−p₀\}) for ALL m,p with
+  j = min(p−1, m−p) ≥ p₀, in two certified regimes p₀ = 2 (all interior
+  p --- the YM-37 T3 scope) and p₀ = 12 (sharp); exact identities:
+  r\_w ⊥\_B w, U'BτU = U'MU, split step law. Coarse A beats the anchored
+  YM-37 constant (1.9e-8 vs 9.3e-7 at κ = 1/8). YM-37's standing
+  correction is RESOLVED: T3's statement now rests on this capsule.
+\item
+  CORRECTION of the YM-37 build note (narration ≠ arithmetic): the
+  LINEAGE entry above claimed the dim-52 inertia ran on fraction-free
+  Bareiss. Inspection of the committed file shows that patch never
+  applied --- the pinned YM-37 run used the NATIVE T53 elimination
+  throughout, dim 52 included. No Bareiss identity is in any
+  load-bearing path anywhere; the in-session timing note was about an
+  uncommitted experiment.
+\item
+  Build notes: (i) first error formula dropped the reference point's own
+  tail term A·L\^{}\{j\_c−p₀\} --- the exact table refused it ((30,15) outside);
+
+  \begin{enumerate}
+  \def\labelenumi{(\roman{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    a backwards extrapolation L\^{}\{j−p₀\} for j \textless{} p₀ was heuristic --- the
+    exact value at (30,10) refused it by 47×; replaced by the two-regime
+    structure, nothing claimed below p₀; (iii) a bracket comparison
+    against YM-37's 14-digit decimal strings needed the stored-precision
+    slack --- exact rationals vs rounded display.
+  \end{enumerate}
+\end{itemize}
+
+\hypertarget{ym-39-aug-23-2026-content-ladder-superselection-channel-ordering}{%
+\section{YM-39 (Aug 23 2026): content ladder --- superselection + channel ordering}\label{ym-39-aug-23-2026-content-ladder-superselection-channel-ordering}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-37 pencil/carrier, YM-38 native uniformity machinery
+  (applied verbatim per channel --- the derivation never used more of N
+  than its pencil norm and reference positivity), YM-33 engine
+  (cross-check of the exact vanishing), theorum/51 zero-residue sector
+  (the centre-even split), YM-22 (ladder collapse, named next step).
+\item
+  RESULT: (T1) centre Z2 of SU(2) superselects the fabric --- mixed
+  half-integer/integer fabric quantities vanish EXACTLY (zero matrix +
+  engine zeros; a same-parity pair is nonzero, so the vanishing bites
+  on parity); (T2) per-channel m-uniform bulk ratios with certified
+  bands; (T3) strict ordering rho\_1/2 \textgreater{} rho\_1 \textgreater{} rho\_3/2 WITH the
+  uniformity margins on both sides, all grid kappa --- the J = 1/2
+  channel is the lightest on the carrier for every m and interior p,
+  and no content \textgreater= 1 channel can mix into it. Session item (b) closed
+  at the carrier level.
+\item
+  Boundary: declared truncated faces/rung kernel (contents \textless= 1), so
+  chi\_3/2 is a composite channel here (data row, not a fundamental
+  claim); compressed statements; no operator upper bound; E4D-C OPEN.
+\item
+  Named next: the same ladder on the heat-kernel trajectory (YM-22),
+  where r\_j/a -\textgreater{} 0 for j \textgreater= 1 quantifies the collapse onto content 1/2.
+\end{itemize}
+
+\hypertarget{ym-40-aug-23-2026-heat-kernel-content-ladder-casimir-pinch}{%
+\section{YM-40 (Aug 23 2026): heat-kernel content ladder --- Casimir pinch}\label{ym-40-aug-23-2026-heat-kernel-content-ladder-casimir-pinch}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES: YM-22 trajectory (kappa = theta a, theta = 1/16; face-ladder
+  collapse), YM-37/38/39 machinery verbatim per a, YM-13 compound-
+  interest exp (via YM-19 exp\_neg), YM-1/F00-G odd-series log (log\_iv).
+  No new verdict types; nothing classical.
+\item
+  RESULT: (T1) centre superselection exact at every a on the family;
+  (T2) channel rates gamma\_c(a) = -Log(rho\_c)/a bracketed two-sided,
+  m-uniform bands included, with an independent exp-route re-enclosure
+  control; (T3) Delta\_gamma(a) \textgreater= 1 at every a AND the two-sided PINCH
+  \textbar Delta\_gamma(a) - 5/4\textbar{} \textless= eps(a), eps certified strictly decreasing
+  (6.4e-4, 1.6e-4, 7.0e-5, 2.0e-5): the channel spacing lands on the
+  free Casimir gap C\_1 - C\_1/2 in the cutoff direction; (T4) face
+  ladder r\_1/r\_1/2 strictly decreasing on the same grid (YM-22 tie).
+\item
+  Build notes: (i) first draft claimed monotone approach to 5/4 from
+  BELOW; the certified brackets cross 5/4 after a = 1 and approach from
+  above --- replaced by the pinch (YM-22's approach-direction lesson,
+  mirror image); gamma\_1/2 likewise crosses 3/4 along the family ---
+  the dressing term is signed; (ii) first run ground for 12+ minutes on
+  odd-series logs fed raw 100-digit rationals --- the standing YM-23 rule
+  (round outward BEFORE odd-series logs) applied, run time \textasciitilde4 min.
+\item
+  Boundary: order-1 dressed two-point on the carrier (compressed,
+  lower-bound side), NOT the operator gap; kernel contents \textless= 1 (no
+  chi\_3/2 Casimir claim); trajectory declared; E4D-C OPEN.
+\end{itemize}
+
+\hypertarget{ym-41-aug-23-2026-the-tools-dock-e4d-c-restated}{%
+\section{YM-41 (Aug 23 2026): the tools dock --- E4D-C restated}\label{ym-41-aug-23-2026-the-tools-dock-e4d-c-restated}}
+
+\begin{itemize}
+\tightlist
+\item
+  CONSUMES (cross-repo, YM-27 discipline --- cited by pin, re-verified on
+  this side): RKF theorum/74 (bfe40c2), theorum/75 (d185e86 + regrading
+  13b4315), theorum/76 (51afbcd), audit (3534418 + 8679f0b).
+\item
+  RE-VERIFIED on the Publications pencil: silence-channel contraction
+  beta\_sil \textless{} 1 at every kappa (values agree with RKF to the last printed
+  digit --- both roundings coincide at 1e-9); ladder law with the
+  discrimination check (tight, not loose); the seam-flow meter with the
+  per-bracket parity law (count route = det route); ladder identity
+  exact; superselection inside the meter ((0,1/2) slot empty).
+\item
+  CONSUMED BY PIN (not re-instantiated here): theorum/75's stationarity,
+  seam-count retention at Lambda = 3/2, 2, and the outward certificate
+  u + e \textless{} 1 for the untruncated column. Publications-side
+  re-instantiation = future work if wanted; the RKF certificate is the
+  derivation of record.
+\item
+  E4D-C LEDGER UPDATE: m eliminated (YM-37), content tail lawfully
+  released (theorum/75), contraction structural (theorum/74). The
+  alternating product's remaining open content is the t-DIRECTION ONLY.
+  NAMED YM-42: beta\_sil(t = 3) on the 52-dim even sector --- the t-ladder
+  of silence contractions --- and the t-uniform statement linking
+  beta\_sil(t) to the excitation/vacuum ratio limit. Clay/OS/continuum
+  gates unchanged, OPEN.
+\end{itemize}
+
+\hypertarget{ng-1-aug-23-2026-the-native-gap-statement}{%
+\section{NG-1 (Aug 23 2026): the native gap statement}\label{ng-1-aug-23-2026-the-native-gap-statement}}
+
+\begin{itemize}
+\tightlist
+\item
+  OWNER'S DECISION after asking whether the program was posing the wrong
+  question: pursue the framework's own gap theorem; declare the
+  translation to Clay as a separate open dictionary problem.
+\item
+  CONTAINS NO NEW NUMBERS. Fixes NG, fixes five refutation conditions,
+  re-labels the certified corpus against NG's obligation list.
+\item
+  CONTROLS are against pinned artifacts, not narration: every cited
+  capsule must exist and PASS; the teeth citations must have the stated
+  shape in the stored results; no capsule may claim Clay/OS/continuum
+  outside an open/boundary context. A test asserts C1 can fail.
+\item
+  HONEST POSITION RECORDED: scored against NG the program is not near
+  zero, but O4 (time) and O5 (cutoff) are where the difficulty lives and
+  no capsule has touched the chain's operator upper bound.
+\end{itemize}
+
+\begin{flushright}\small\texttt{Publications/papers/yang-mills-certified-benchmark/LINEAGE.md}\end{flushright}

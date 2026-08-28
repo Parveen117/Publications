@@ -1,0 +1,84 @@
+% source: RH-Framework/REVIEWER_CHECKLIST.md
+\hypertarget{reviewer-checklist}{%
+\chapter{Reviewer Checklist}\label{reviewer-checklist}}
+
+This repository separates theorem truth, foundational origin, executable evidence, and publication claims. Review them independently. Apparently one label was too convenient for civilization.
+
+\hypertarget{scope}{%
+\section{1. Scope}\label{scope}}
+
+Confirm that the pull request changes only verification-facing material in \texttt{RH-Framework}. Historical MP development and manuscript sources must remain outside the diff.
+
+\hypertarget{required-local-commands}{%
+\section{2. Required local commands}\label{required-local-commands}}
+
+\begin{verbatim}
+python -m pip install -e .
+python tools/check_text_integrity.py
+python tools/verify_native_foundation.py
+python tools/verify_t03.py
+\end{verbatim}
+
+The native verifier must reproduce all committed T01 certificates byte-for-byte. The T03 verifier must reproduce all source-independent classical-coordinate certificates.
+
+\hypertarget{native-foundation-checks}{%
+\section{3. Native-foundation checks}\label{native-foundation-checks}}
+
+Confirm that foundational native modules:
+
+\begin{itemize}
+\tightlist
+\item
+  use exact rational arithmetic;
+\item
+  contain no executable \texttt{float}, \texttt{complex}, NumPy, SciPy, logarithm, exponential, or \texttt{pi} dependency;
+\item
+  derive cut-tail, recognition, refinement, function, and rational UGD structures before ordinary functional-analysis coordinates;
+\item
+  preserve explicit open boundaries for actual positive scale, MP adapters, state packets, target faithfulness, Shunya, and RH.
+\end{itemize}
+
+\hypertarget{classical-shell-checks}{%
+\section{4. Classical-shell checks}\label{classical-shell-checks}}
+
+Classical coordinate theorems may remain \texttt{PROVED}, but their origin must be \texttt{CLASSICAL\_THEOREM\_IMPORT} or \texttt{CLASSICAL\_NUMERICAL\_SOURCE} where applicable. They must not be described as foundational native derivations.
+
+\hypertarget{certificates}{%
+\section{5. Certificates}\label{certificates}}
+
+For every committed certificate:
+
+\begin{itemize}
+\tightlist
+\item
+  regenerate it from source;
+\item
+  confirm deterministic canonical hashing;
+\item
+  inspect all false gates;
+\item
+  confirm theorem classifications use only \texttt{PROVED}, \texttt{DISPROVED}, or \texttt{OPEN};
+\item
+  confirm the certificate does not promote RH.
+\end{itemize}
+
+\hypertarget{private-source-gates}{%
+\section{6. Private-source gates}\label{private-source-gates}}
+
+T03-B, T03-C1, and T03-C2B require clean pinned MP worktrees. CI does not receive those worktrees, so absence of those results is an explicit open boundary rather than a CI failure.
+
+\hypertarget{merge-decision}{%
+\section{7. Merge decision}\label{merge-decision}}
+
+Merge only when:
+
+\begin{verbatim}
+all required CI jobs pass;
+committed certificates reproduce;
+no theorem classification drifts;
+foundational-origin labels are accurate;
+no private-source claim is promoted without evidence;
+open obligations are listed explicitly.
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RH-Framework/REVIEWER\_CHECKLIST.md}\end{flushright}

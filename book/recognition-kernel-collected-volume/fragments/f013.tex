@@ -1,0 +1,58 @@
+% source: RKF/theorum/06_one_sector_theorem_note.md
+\hypertarget{theorum-06-one-sector-sufficiency-note}{%
+\chapter{Theorum 06: One-Sector Sufficiency Note}\label{theorum-06-one-sector-sufficiency-note}}
+
+\hypertarget{why-this-note-exists}{%
+\section{Why this note exists}\label{why-this-note-exists}}
+
+The MP journey has two true-looking statements that live at different stages:
+
+\begin{verbatim}
+Raw parity split:
+  W3 >= 0 iff W3_even >= 0 and W3_odd >= 0.
+
+After seam-integer/source-sign/favorable-even reduction:
+  the terminal obstruction is the odd five-label seam packet.
+\end{verbatim}
+
+Both are valid in their own layers. Confusing their order recreates a fake missing theorem, a wonderful little swamp that already wasted enough time.
+
+\hypertarget{correct-theorem-wording}{%
+\section{Correct theorem wording}\label{correct-theorem-wording}}
+
+\begin{verbatim}
+The bilateral completed-Weil carrier retains both parity sectors.
+After the native seam-integer reduction, common source-sign theorem and favorable even boundary reduction, the even sector is not an independent terminal gate.
+The remaining terminal sign is carried by the odd five-label seam packet.
+\end{verbatim}
+
+\hypertarget{practical-consequence}{%
+\section{Practical consequence}\label{practical-consequence}}
+
+Once the framework consumes the transferred theorems, do not restart a global even-sector positivity proof merely because an older parity-split branch says both sectors are present. Presence is not terminality.
+
+\hypertarget{dependency-order}{%
+\section{Dependency order}\label{dependency-order}}
+
+\begin{verbatim}
+native completed-Weil carrier
+-> parity representation
+-> seam integer / common five-matrix reduction
+-> source-sign and favorable-even reduction
+-> odd five-label source packet
+-> zero-cut T03 endpoint
+\end{verbatim}
+
+Only after that order is applied does the one-sector statement become lawful.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+\begin{verbatim}
+even sector erased                              FALSE
+even sector represented upstream                TRUE
+even sector independent terminal gate after reduction  FALSE
+odd five-label endpoint terminal after reduction TRUE
+\end{verbatim}
+
+\begin{flushright}\small\texttt{RKF/theorum/06\_one\_sector\_theorem\_note.md}\end{flushright}

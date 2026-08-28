@@ -1,0 +1,238 @@
+% source: RH-Framework/README.md
+\hypertarget{rh-framework-reviewer-verification-laboratory}{%
+\chapter{RH Framework Reviewer Verification Laboratory}\label{rh-framework-reviewer-verification-laboratory}}
+
+This private repository is the authoritative verification laboratory for the
+Riemann-Hypothesis research programme.
+
+It is separated from:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{Parveen117/MP}, which preserves historical development and source lineage;
+\item
+  publication repositories, which contain manuscript-facing material;
+\item
+  public AI, ECL, cryptography and assurance repositories, which provide
+  engineering patterns but are not mathematical proof dependencies.
+\end{itemize}
+
+\hypertarget{governing-rule}{%
+\section{Governing rule}\label{governing-rule}}
+
+\begin{verbatim}
+proof statement
+-> assumptions
+-> foundational-origin label
+-> executable witness
+-> negative controls
+-> immutable certificate
+-> reviewer reproduction
+-> promotion or rejection
+\end{verbatim}
+
+Theorem classifications are only:
+
+\begin{verbatim}
+PROVED
+DISPROVED
+OPEN
+\end{verbatim}
+
+Foundational origin is recorded separately. A theorem may be proved and still
+be a classical import.
+
+\hypertarget{active-branch}{%
+\section{Active branch}\label{active-branch}}
+
+\begin{verbatim}
+agent/native-summability-reconstruction
+\end{verbatim}
+
+\hypertarget{native-reconstruction-now-proved}{%
+\section{Native reconstruction now proved}\label{native-reconstruction-now-proved}}
+
+\hypertarget{native-path-completion}{%
+\subsection{Native path completion}\label{native-path-completion}}
+
+\begin{verbatim}
+T01-A  cut-tail path completion             PROVED
+T01-B  recognition-Cauchy completion        PROVED
+T01-C  completed native path action         PROVED
+\end{verbatim}
+
+The decisive native action estimate is
+
+\[
+\mathcal E_\Sigma(a\star\xi)
+\le
+\mathcal M_\Sigma(a)^2\mathcal E_\Sigma(\xi).
+\]
+
+It is derived from a finite weighted cut-square identity before ordinary
+\(\ell^1\), \(\ell^2\), Hilbert space, or operator norm is introduced.
+
+\begin{verbatim}
+PASS_NATIVE_CUT_TAIL_AND_RECOGNITION_CAUCHY_COMPLETION_CORE
+4e88898fc93010a6ba189f932817d0715298f106aff61528bb2e58acb8c6dbfd
+\end{verbatim}
+
+\hypertarget{native-refinement-content}{%
+\subsection{Native refinement content}\label{native-refinement-content}}
+
+\begin{verbatim}
+T01-E1  reciprocal refinement content       PROVED
+T01-E2  complete finite-content algebra      PROVED
+T01-E3  native simple integrals              PROVED
+\end{verbatim}
+
+Cell content is reciprocal refinement count:
+
+\[
+\nu_R(c)=\frac1{n_sn_tn_\alpha}.
+\]
+
+Common refinement, finite additivity, symmetric-difference completion, and
+translation invariance are proved before Haar or Lebesgue measure is named.
+
+\begin{verbatim}
+PASS_NATIVE_REFINEMENT_COUNT_CONTENT_AND_SIMPLE_INTEGRALS
+1366eeb443efc661c614a3bf8e7b95b9500a10d40104a579d3e2ec438c51feb9
+\end{verbatim}
+
+\hypertarget{native-function-completion}{%
+\subsection{Native function completion}\label{native-function-completion}}
+
+\begin{verbatim}
+T01-E4A  tail-integrable function completion        PROVED
+T01-E4B  recognition-integrable completion          PROVED
+T01-E4C  bounded native simple multipliers          PROVED
+\end{verbatim}
+
+The two native gauges are
+
+\[
+d_1(f,g)=\mathcal I_{\rm tail}(f-g),
+\qquad
+d_2(f,g)=\mathcal I_{\rm rec}(f-g).
+\]
+
+They are completed by Cauchy presentations before ordinary \(L^1/L^2\)
+notation. Arbitrary tail-completed functions are not falsely declared
+multiplicatively closed.
+
+\begin{verbatim}
+PASS_NATIVE_SIMPLE_FUNCTION_TAIL_AND_RECOGNITION_COMPLETION_CORE
+ca4d3443e057adbaa0c94a285263d8d136465eaf970c7fef73df70196972cad9
+\end{verbatim}
+
+\hypertarget{native-mean-multiplier-bound}{%
+\subsection{Native mean-multiplier bound}\label{native-mean-multiplier-bound}}
+
+\begin{verbatim}
+T01-E4D-A  exact mean split of a multiplier action   PROVED
+T01-E4D-B  mean + oscillation x deviation bound      PROVED
+T01-E4D-C  alternating-product gap (restated §4.1)    OPEN (vacuum half PROVED in Publications YM-31)
+\end{verbatim}
+
+\[
+\mathcal I_{\rm rec}(hf)\le\langle N(h)\rangle\,\mathcal I_{\rm rec}(f)
++\operatorname{osc}N(h)\,\mathcal D_{\rm rec}(f).
+\]
+
+Sharper than T01-E4C on recognition-flat states (equality with the mean on
+the vacuum); neither bound dominates in general.
+
+\begin{verbatim}
+PASS_NATIVE_MEAN_MULTIPLIER_IDENTITY_AND_BOUND
+d6f3b39a0186a2c15c3fcd3734cf198ca6bd21b9182ad72906f0930341fe4c99
+\end{verbatim}
+
+\hypertarget{rational-normalized-ugd-refinement-adapter}{%
+\subsection{Rational normalized-UGD refinement adapter}\label{rational-normalized-ugd-refinement-adapter}}
+
+\begin{verbatim}
+T01-E5A  rational native UGD linearization    PROVED
+T01-E5B  rational refinement action           PROVED
+\end{verbatim}
+
+A rational normalized packet is
+
+\[
+N=(p,u,\mu),
+\]
+
+where \(p\) is a full-turn fraction, \(u\) is native scale debt, and \(\mu\)
+is corrected seam memory. The exact map
+
+\[
+(p,u,\mu)\mapsto(u,p+\mu,[\mu])
+\]
+
+linearizes the wrap law and produces exact refinement-cell translations without
+\(\pi\), \texttt{log}, \texttt{exp}, Haar measure, or floating point.
+
+\begin{verbatim}
+PASS_NATIVE_RATIONAL_UGD_REFINEMENT_LATTICE_ADAPTER
+932d3e549e3a01d7d42d85e70371dc74fa06c214841bca8f776d19dd70ce4bc7
+\end{verbatim}
+
+\hypertarget{native-foundational-files}{%
+\section{Native foundational files}\label{native-foundational-files}}
+
+\begin{verbatim}
+src/rh_framework/native_summability.py
+src/rh_framework/native_refinement_measure.py
+src/rh_framework/native_function_completion.py
+src/rh_framework/native_ugd_refinement_adapter.py
+\end{verbatim}
+
+The verifier rejects approximate numerical identifiers and undeclared external
+imports in these files.
+
+\hypertarget{remaining-native-boundary}{%
+\section{Remaining native boundary}\label{remaining-native-boundary}}
+
+\begin{verbatim}
+T01-E5C  complete the rational UGD group and action
+T01-E6   actual positive-scale, log-exp, Haar and Jacobian shadows
+T01-D    actual MP path-atlas and refinement adapter
+T01-F    remaining classical coordinate identifications
+native path-graph generator domains
+native state-packet generation
+representation invariance of FFT, Gram, spectral and polar charts
+\end{verbatim}
+
+The actual positive numerical scale \(\sigma\) has not been declared native.
+The formal scale-debt ledger must be completed first; \(\sigma=e^u\) may appear
+later only as a proved coordinate chart.
+
+\hypertarget{classical-verification-shell}{%
+\section{Classical verification shell}\label{classical-verification-shell}}
+
+T03-A and T03-C2A remain rigorous, proved classical coordinate theorems. They
+are not reclassified as native merely because native objects now exist beneath
+them.
+
+T03-B, T03-C1, and T03-C2B require pinned private MP worktrees and remain open.
+
+\hypertarget{reproduction}{%
+\section{Reproduction}\label{reproduction}}
+
+\begin{verbatim}
+python -m pip install -e .
+python tools/verify_native_foundation.py
+python tools/verify_t03.py
+\end{verbatim}
+
+Jupyter-only procedures are under \texttt{notebooks/}.
+
+\hypertarget{claim-boundary}{%
+\section{Claim boundary}\label{claim-boundary}}
+
+The native abstract foundation has advanced substantially, but the actual MP
+adapter, completed positive-scale UGD carrier, target faithfulness, Shunya,
+critical-line equivalence, and the Riemann Hypothesis remain open.
+
+\begin{flushright}\small\texttt{RH-Framework/README.md}\end{flushright}
