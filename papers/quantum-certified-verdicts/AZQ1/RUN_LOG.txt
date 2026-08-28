@@ -1,28 +1,9 @@
 Traceback (most recent call last):
   File "/home/runner/work/Publications/Publications/papers/quantum-certified-verdicts/AZQ1/run_azq1.py", line 28, in <module>
     print("targets:", [b.name() for b in provider.backends()])
-                                         ^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/quantum/qiskit/provider.py", line 112, in backends
-    status_by_target = self._get_workspace_target_status_map(name, provider_id)
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/quantum/qiskit/provider.py", line 217, in _get_workspace_target_status_map
-    target_statuses = self._workspace._get_target_status(name, provider_id)
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/quantum/workspace.py", line 663, in _get_target_status
-    return [
-           ^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/quantum/workspace.py", line 663, in <listcomp>
-    return [
-           ^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/core/paging.py", line 136, in __next__
-    return next(self._page_iterator)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/core/paging.py", line 82, in __next__
-    self._response = self._get_next(self.continuation_token)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/quantum/_client/operations/_operations.py", line 1569, in get_next
-    map_error(status_code=response.status_code, response=response, error_map=error_map)
-  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/core/exceptions.py", line 163, in map_error
-    raise error
-azure.core.exceptions.ClientAuthenticationError: Operation returned an invalid status 'Unauthorized'
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Publications/Publications/papers/quantum-certified-verdicts/AZQ1/run_azq1.py", line 28, in <listcomp>
+    print("targets:", [b.name() for b in provider.backends()])
+                       ^^^^^^^^
+TypeError: 'str' object is not callable
 exit=1
