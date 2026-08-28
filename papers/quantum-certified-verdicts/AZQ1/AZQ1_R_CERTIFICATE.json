@@ -1,0 +1,11 @@
+{
+  "_pin": "c3bcef121fa2d65ecf941c0928a4e0a80d38cfed898ee7d684695a650f34cb59",
+  "backends": {
+    "quantinuum.qpu.h2-1": {
+      "error": "\"Could not find target 'quantinuum.qpu.h2-1'. Please make sure the target name is valid and that the associated provider is added to your Workspace. To add a provider to your quantum workspace on the ",
+      "status": "NOT_EXECUTABLE"
+    }
+  },
+  "preregistration": "PREREGISTRATION.md",
+  "shots": 512
+}
