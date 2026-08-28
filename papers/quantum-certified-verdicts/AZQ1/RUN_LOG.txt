@@ -1,9 +1,36 @@
-Traceback (most recent call last):
-  File "/home/runner/work/Publications/Publications/papers/quantum-certified-verdicts/AZQ1/run_azq1.py", line 28, in <module>
-    print("targets:", [b.name() for b in provider.backends()])
-                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/Publications/Publications/papers/quantum-certified-verdicts/AZQ1/run_azq1.py", line 28, in <listcomp>
-    print("targets:", [b.name() for b in provider.backends()])
-                       ^^^^^^^^
-TypeError: 'str' object is not callable
-exit=1
+targets: ['quantinuum.sim.h2-1sc', 'quantinuum.sim.h2-1e', 'rigetti.sim.qvm']
+quantinuum.sim.h1-1e NOT_EXECUTABLE: "The 'quantinuum.sim.h1-1e' backend is not installed in your system, nor is it a valid target in your Azure Quantum work
+.....................rigetti.sim.qvm clean: W=0.0000 z=-3.2 -> NOT_FALSIFIED
+...............rigetti.sim.qvm corrupted: W=0.5000 z=+157.6 -> FALSIFIED_MEASUREMENT_CONTRACT
+{
+  "_pin": "efa57e84c4b0c7bbb141aaed701697ca0692343fc36f6231a2a307438b1fc8a4",
+  "backends": {
+    "quantinuum.sim.h1-1e": {
+      "error": "\"The 'quantinuum.sim.h1-1e' backend is not installed in your system, nor is it a valid target in your Azure Quantum workspace.\"",
+      "status": "NOT_EXECUTABLE"
+    },
+    "rigetti.sim.qvm": {
+      "clean": {
+        "W": 0.0,
+        "W_X": 0.0,
+        "W_Z": 0.0,
+        "p0": 0.01,
+        "verdict": "NOT_FALSIFIED",
+        "z": -3.2161210088294787
+      },
+      "corrupted": {
+        "W": 0.5,
+        "W_X": 0.0,
+        "W_Z": 1.0,
+        "p0": 0.01,
+        "verdict": "FALSIFIED_MEASUREMENT_CONTRACT",
+        "z": 157.58992943264445
+      }
+    }
+  },
+  "preregistration": "PREREGISTRATION.md",
+  "shots": 512
+}
+
+written AZQ1_CERTIFICATE.json — pin: efa57e84c4b0c7bbb141aaed701697ca0692343fc36f6231a2a307438b1fc8a4
+exit=0
