@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/runner/work/Publications/Publications/papers/quantum-certified-verdicts/AZQ1/run_azq1.py", line 17, in <module>
+    from azure.quantum.qiskit import AzureQuantumProvider
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/quantum/qiskit/__init__.py", line 8, in <module>
+    from .provider import AzureQuantumProvider, AzureQuantumJob
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/quantum/qiskit/provider.py", line 23, in <module>
+    from azure.quantum.qiskit.backends.backend import AzureBackendBase
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/quantum/qiskit/backends/__init__.py", line 8, in <module>
+    from azure.quantum.qiskit.backends.ionq import (
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/azure/quantum/qiskit/backends/ionq.py", line 10, in <module>
+    from qsharp import TargetProfile
+ModuleNotFoundError: No module named 'qsharp'
+exit=1
