@@ -14,11 +14,17 @@ jobs:
         env:
           AZQ_CONNECTION: ${{ secrets.AZQ_CONNECTION }}
         working-directory: papers/quantum-certified-verdicts/AZQ1
-        run: python run_azq1.py
-      - name: commit certificate
+        run: |
+          set +e
+          python run_azq1.py > RUN_LOG.txt 2>&1
+          echo "exit=$?" >> RUN_LOG.txt
+          tail -40 RUN_LOG.txt
+      - name: commit outputs (certificate or error log)
+        if: always()
         run: |
           git config user.name "Monty Dabas"
           git config user.email "Parveen117@users.noreply.github.com"
-          git add papers/quantum-certified-verdicts/AZQ1/AZQ1_CERTIFICATE.json
-          git commit -m "AZQ1 certificate: results as they fell (Actions run)" || echo "no change"
-          git push
+          git pull --rebase origin main || true
+          git add -f papers/quantum-certified-verdicts/AZQ1/AZQ1_CERTIFICATE.json papers/quantum-certified-verdicts/AZQ1/RUN_LOG.txt 2>/dev/null || true
+          git commit -m "AZQ1 run outputs (as they fell)" || echo "no change"
+          git push || true
