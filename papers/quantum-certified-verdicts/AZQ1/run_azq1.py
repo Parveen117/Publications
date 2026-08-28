@@ -10,14 +10,20 @@ back to this folder unchanged.
 """
 import hashlib
 import json
+import os
 import sys
 
 from azure.quantum import Workspace
 from azure.quantum.qiskit import AzureQuantumProvider
 from qiskit import QuantumCircuit
 
-RES_ID, LOC = sys.argv[1], (sys.argv[2] if len(sys.argv) > 2 else "eastus")
-ws = Workspace(resource_id=RES_ID, location=LOC)
+CONN = os.environ.get("AZQ_CONNECTION", "")
+if CONN:
+    ws = Workspace.from_connection_string(CONN)
+else:
+    RES_ID = sys.argv[1]
+    LOC = sys.argv[2] if len(sys.argv) > 2 else "eastus"
+    ws = Workspace(resource_id=RES_ID, location=LOC)
 provider = AzureQuantumProvider(ws)
 print("targets:", [b.name() for b in provider.backends()])
 
