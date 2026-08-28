@@ -4,7 +4,7 @@ Run inside Azure Cloud Shell:
   pip install --quiet azure-quantum qiskit qiskit-qir
   python run_azq1.py "<WORKSPACE_RESOURCE_ID>" eastus
 
-Targets (free tiers): quantinuum.sim.h1-1e (noisy emulator),
+Targets (free tiers): quantinuum.sim.h2-1e (noisy emulator),
 rigetti.sim.qvm (ideal QVM). Prints the certificate JSON; commit it
 back to this folder unchanged.
 """
@@ -33,7 +33,7 @@ def _bname(b):
 print("targets:", [_bname(b) for b in provider.backends()])
 
 SHOTS = 512
-P0 = {"quantinuum.sim.h1-1e": 0.05, "rigetti.sim.qvm": 0.01}
+P0 = {"quantinuum.sim.h2-1e": 0.05, "rigetti.sim.qvm": 0.01}
 
 
 def ghz(n=3, corrupt=False, xbasis=False):
@@ -89,7 +89,7 @@ def run(backend_name):
 
 cert = {"preregistration": "PREREGISTRATION.md", "shots": SHOTS,
         "backends": {}}
-for name in ("quantinuum.sim.h1-1e", "rigetti.sim.qvm"):
+for name in ("quantinuum.sim.h2-1e", "rigetti.sim.qvm"):
     try:
         cert["backends"][name] = run(name)
     except Exception as e:
