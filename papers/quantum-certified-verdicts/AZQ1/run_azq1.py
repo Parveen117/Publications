@@ -33,7 +33,11 @@ def _bname(b):
 print("targets:", [_bname(b) for b in provider.backends()])
 
 SHOTS = 512
-P0 = {"quantinuum.sim.h2-1e": 0.05, "rigetti.sim.qvm": 0.01}
+P0 = {"quantinuum.sim.h2-1e": 0.05, "rigetti.sim.qvm": 0.01,
+      "quantinuum.qpu.h2-1": 0.05}
+TARGETS = [t for t in os.environ.get(
+    "AZQ_TARGETS", "quantinuum.sim.h2-1e,rigetti.sim.qvm").split(",") if t]
+CERT_NAME = os.environ.get("AZQ_CERT", "AZQ1_CERTIFICATE.json")
 
 
 def ghz(n=3, corrupt=False, xbasis=False):
@@ -89,7 +93,7 @@ def run(backend_name):
 
 cert = {"preregistration": "PREREGISTRATION.md", "shots": SHOTS,
         "backends": {}}
-for name in ("quantinuum.sim.h2-1e", "rigetti.sim.qvm"):
+for name in TARGETS:
     try:
         cert["backends"][name] = run(name)
     except Exception as e:
@@ -101,6 +105,6 @@ body = json.dumps({k: v for k, v in cert.items() if k != "_pin"},
                   sort_keys=True)
 cert["_pin"] = hashlib.sha256(body.encode()).hexdigest()
 print(json.dumps(cert, indent=2, sort_keys=True))
-open("AZQ1_CERTIFICATE.json", "w").write(
+open(CERT_NAME, "w").write(
     json.dumps(cert, indent=2, sort_keys=True))
-print("\nwritten AZQ1_CERTIFICATE.json — pin:", cert["_pin"])
+print("\nwritten", CERT_NAME, "— pin:", cert["_pin"])

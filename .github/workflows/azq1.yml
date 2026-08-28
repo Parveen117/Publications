@@ -1,6 +1,13 @@
 name: azq1-quantum-rung
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: comma-separated Azure targets
+        default: quantinuum.sim.h2-1e,rigetti.sim.qvm
+      cert:
+        description: certificate filename
+        default: AZQ1_CERTIFICATE.json
 permissions:
   contents: write
 jobs:
@@ -15,6 +22,8 @@ jobs:
       - name: run preregistered AZQ1
         env:
           AZQ_CONNECTION: ${{ secrets.AZQ_CONNECTION }}
+          AZQ_TARGETS: ${{ inputs.targets }}
+          AZQ_CERT: ${{ inputs.cert }}
         working-directory: papers/quantum-certified-verdicts/AZQ1
         run: |
           set +e
@@ -26,7 +35,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for F in AZQ1_CERTIFICATE.json RUN_LOG.txt; do
+          for F in AZQ1_CERTIFICATE.json AZQ1_R_CERTIFICATE.json RUN_LOG.txt; do
             P="papers/quantum-certified-verdicts/AZQ1/$F"
             [ -f "$P" ] || continue
             B64=$(base64 -w0 "$P")
