@@ -25,7 +25,12 @@ else:
     LOC = sys.argv[2] if len(sys.argv) > 2 else "eastus"
     ws = Workspace(resource_id=RES_ID, location=LOC)
 provider = AzureQuantumProvider(ws)
-print("targets:", [b.name() for b in provider.backends()])
+def _bname(b):
+    n = getattr(b, "name", None)
+    return n if isinstance(n, str) else n()
+
+
+print("targets:", [_bname(b) for b in provider.backends()])
 
 SHOTS = 512
 P0 = {"quantinuum.sim.h1-1e": 0.05, "rigetti.sim.qvm": 0.01}
