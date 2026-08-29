@@ -1,0 +1,6 @@
+....................AZQ2-A E_ZZ: A=+0.992 B=+1.000 d=-0.008 z=-16.7 -> CONCORDANT
+.................AZQ2-A E_XX: A=+0.992 B=+1.000 d=-0.008 z=-16.7 -> CONCORDANT
+................AZQ2-B E_ZZ: A=+0.996 B=+1.000 d=-0.004 z=-24.6 -> CONCORDANT
+................AZQ2-B E_XX: A=+0.836 B=+1.000 d=-0.164 z=+2.6 -> CONCORDANT
+written AZQ2_CERTIFICATE.json — pin: 40e16187e0c73b121e9027147171051c08c1f474f35209f5769d785a58245fdb
+exit=0
