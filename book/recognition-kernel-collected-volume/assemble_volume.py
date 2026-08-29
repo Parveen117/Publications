@@ -12,7 +12,8 @@ import re
 import subprocess
 import sys
 
-ROOT = "/home/claude"
+import os as _os
+ROOT = _os.environ.get("BOOK_SOURCES_ROOT", _os.path.expanduser("~"))  # parent dir containing the three cloned repos
 OUT = os.path.join(ROOT, "book_build")
 FRAG = os.path.join(OUT, "fragments")
 os.makedirs(FRAG, exist_ok=True)
