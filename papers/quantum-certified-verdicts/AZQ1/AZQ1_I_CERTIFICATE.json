@@ -1,0 +1,24 @@
+{
+  "_pin": "c65ffbd5650ead0cc75d6852ec607e5b8029c4f40412e28f7ba2df91ff4a6d8f",
+  "backend": "ibm_kingston",
+  "preregistration": "PREREGISTRATION_I.md",
+  "rungs": {
+    "clean": {
+      "W": 0.328125,
+      "W_X": 0.3515625,
+      "W_Z": 0.3046875,
+      "p0": 0.05,
+      "verdict": "FALSIFIED_MEASUREMENT_CONTRACT",
+      "z": 40.83600062896
+    },
+    "corrupted": {
+      "W": 0.5498046875,
+      "W_X": 0.314453125,
+      "W_Z": 0.78515625,
+      "p0": 0.05,
+      "verdict": "FALSIFIED_MEASUREMENT_CONTRACT",
+      "z": 73.38435787184595
+    }
+  },
+  "shots": 512
+}
