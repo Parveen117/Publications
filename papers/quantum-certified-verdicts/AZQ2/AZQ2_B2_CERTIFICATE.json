@@ -1,0 +1,51 @@
+{
+  "AZQ2A_CLEAN": {
+    "E_XX": {
+      "E_A": 1.0,
+      "E_B": 1.0,
+      "d": 0.0,
+      "se_d": 1.976423537605237e-06,
+      "tau": 0.1,
+      "verdict": "CONCORDANT",
+      "z": -50596.44256269407
+    },
+    "E_ZZ": {
+      "E_A": 0.9921875,
+      "E_B": 1.0,
+      "d": -0.0078125,
+      "se_d": 0.005513471754582063,
+      "tau": 0.1,
+      "verdict": "CONCORDANT",
+      "z": -16.72040850184569
+    }
+  },
+  "AZQ2B_MISCALIBRATED": {
+    "E_XX": {
+      "E_A": 0.41015625,
+      "E_B": 1.0,
+      "d": -0.58984375,
+      "se_d": 0.04030576134535588,
+      "tau": 0.1,
+      "verdict": "DISCORDANT",
+      "z": 12.153194323829362
+    },
+    "E_ZZ": {
+      "E_A": 0.9921875,
+      "E_B": 1.0,
+      "d": -0.0078125,
+      "se_d": 0.005513471754582063,
+      "tau": 0.1,
+      "verdict": "CONCORDANT",
+      "z": -16.72040850184569
+    }
+  },
+  "_pin": "62e76106211e2ef56949edbad1362bfb10ac4b0a539975ba27f8eac6b54b8fc9",
+  "fault_angle_rad": 1.2,
+  "platforms": [
+    "quantinuum.sim.h2-1e",
+    "rigetti.sim.qvm"
+  ],
+  "preregistration": "PREREGISTRATION.md",
+  "shots": 512,
+  "tau": 0.1
+}
