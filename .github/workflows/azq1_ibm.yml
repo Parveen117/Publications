@@ -1,0 +1,47 @@
+name: azq1-ibm-real-hardware
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install --quiet qiskit qiskit-ibm-runtime
+      - name: run preregistered AZQ1-I
+        env:
+          IBM_TOKEN: ${{ secrets.IBM_TOKEN }}
+        working-directory: papers/quantum-certified-verdicts/AZQ1
+        run: |
+          set +e
+          python run_azq1_ibm.py > RUN_LOG_IBM.txt 2>&1
+          echo "exit=$?" >> RUN_LOG_IBM.txt
+          tail -30 RUN_LOG_IBM.txt
+      - name: upload outputs via contents API
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for F in AZQ1_I_CERTIFICATE.json RUN_LOG_IBM.txt; do
+            P="papers/quantum-certified-verdicts/AZQ1/$F"
+            [ -f "$P" ] || continue
+            B64=$(base64 -w0 "$P")
+            SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
+              "https://api.github.com/repos/${GITHUB_REPOSITORY}/contents/$P?ref=main" \
+              | python3 -c "import json,sys;d=json.load(sys.stdin);print(d.get('sha',''))")
+            BODY=$(python3 - "$B64" "$SHA" <<PYEOF
+          import json,sys
+          b64,sha=sys.argv[1],sys.argv[2]
+          d={"message":"AZQ1-I run outputs (as they fell)","content":b64,"branch":"main"}
+          if sha: d["sha"]=sha
+          print(json.dumps(d))
+          PYEOF
+          )
+            curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
+              -d "$BODY" "https://api.github.com/repos/${GITHUB_REPOSITORY}/contents/$P" \
+              | python3 -c "import json,sys;d=json.load(sys.stdin);print('$F ->', d.get('commit',{}).get('sha', d.get('message')))"
+          done
