@@ -17,6 +17,8 @@ re-runnable from this repository's CI at zero cost.
   and an injected phase-calibration fault is caught at z = +12.2 and
   localized to exactly the phase-sensitive observable.
 
+**Sibling evidence:** the [Quantum-Classical-public](https://github.com/Parveen117/Quantum-Classical-public) repository carries the programme's heaviest hardware result — a seven-qubit multi-ledger operator-memory benchmark with certified CROSS_BACKEND_REPLICATION across three real IBM QPUs (ibm_fez, ibm_kingston, ibm_marrakesh; 3/3 runs, all six per-run gates on every backend), with SHA-256 manifests and claim-scope documentation.
+
 The instrument measures execution quality across platforms — it does
 not rubber-stamp it. Every preregistration is git-timestamped before
 its run; every certificate carries a SHA-256 pin; workflows `azq1.yml`
