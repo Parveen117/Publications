@@ -1,5 +1,7 @@
 # AZQ1 — Cross-platform typed-verdict certification (GHZ parity chart)
 
+**Programme's heaviest hardware result (sibling repository):** a seven-qubit multi-ledger operator-memory benchmark with certified CROSS_BACKEND_REPLICATION across three real IBM QPUs — ibm_fez, ibm_kingston, ibm_marrakesh; 3/3 runs, all declared gates — in [Quantum-Classical-public](https://github.com/Parveen117/Quantum-Classical-public). The campaign below adds the auditor's quality-measurement proof on top of it.
+
 First certified rung of the RNKE-Q programme: the same preregistered
 audit — a GHZ state's parity chart, tested with a declared noise
 contract (p0 = 5%, 5 sigma) and a deliberately corrupted control —
