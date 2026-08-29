@@ -8,6 +8,12 @@ on:
       cert:
         description: certificate filename
         default: AZQ1_CERTIFICATE.json
+      workdir:
+        description: campaign folder
+        default: AZQ1
+      script:
+        description: runner script
+        default: run_azq1.py
 permissions:
   contents: write
 jobs:
@@ -24,10 +30,10 @@ jobs:
           AZQ_CONNECTION: ${{ secrets.AZQ_CONNECTION }}
           AZQ_TARGETS: ${{ inputs.targets }}
           AZQ_CERT: ${{ inputs.cert }}
-        working-directory: papers/quantum-certified-verdicts/AZQ1
+        working-directory: papers/quantum-certified-verdicts/${{ inputs.workdir }}
         run: |
           set +e
-          python run_azq1.py > RUN_LOG.txt 2>&1
+          python ${{ inputs.script }} > RUN_LOG.txt 2>&1
           echo "exit=$?" >> RUN_LOG.txt
           tail -40 RUN_LOG.txt
       - name: upload outputs via contents API
@@ -35,8 +41,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for F in AZQ1_CERTIFICATE.json AZQ1_R_CERTIFICATE.json RUN_LOG.txt; do
-            P="papers/quantum-certified-verdicts/AZQ1/$F"
+          for F in AZQ1_CERTIFICATE.json AZQ1_R_CERTIFICATE.json AZQ2_CERTIFICATE.json RUN_LOG.txt; do
+            P="papers/quantum-certified-verdicts/${{ inputs.workdir }}/$F"
             [ -f "$P" ] || continue
             B64=$(base64 -w0 "$P")
             SHA=$(curl -s -H "Authorization: token $GH_TOKEN"               "https://api.github.com/repos/${GITHUB_REPOSITORY}/contents/$P?ref=main"               | python3 -c "import json,sys;d=json.load(sys.stdin);print(d.get('sha',''))")
