@@ -1,0 +1,38 @@
+{
+  "_pin": "c60ddd71b53699c43f0e12b2296ce17b0df32f770a89ab2d86c23774898deaba",
+  "backend": "ibm_kingston",
+  "chain": [
+    48,
+    47,
+    57
+  ],
+  "chain_score": 0.017526404635272025,
+  "preregistration": "PREREGISTRATION_I2.md",
+  "readout_calibration": {
+    "000": {
+      "correct_fraction": 0.9921875
+    },
+    "111": {
+      "correct_fraction": 1.0
+    }
+  },
+  "rungs": {
+    "clean": {
+      "W": 0.03125,
+      "W_X": 0.025390625,
+      "W_Z": 0.037109375,
+      "p0": 0.05,
+      "verdict": "NOT_FALSIFIED",
+      "z": -2.7529888064467416
+    },
+    "corrupted": {
+      "W": 0.50390625,
+      "W_X": 0.025390625,
+      "W_Z": 0.982421875,
+      "p0": 0.05,
+      "verdict": "FALSIFIED_MEASUREMENT_CONTRACT",
+      "z": 66.6452706893982
+    }
+  },
+  "shots": 512
+}
