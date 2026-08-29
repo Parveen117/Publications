@@ -14,6 +14,9 @@ on:
       script:
         description: runner script
         default: run_azq1.py
+      angle:
+        description: AZQ2 fault angle (rad)
+        default: "0.60"
 permissions:
   contents: write
 jobs:
@@ -30,6 +33,7 @@ jobs:
           AZQ_CONNECTION: ${{ secrets.AZQ_CONNECTION }}
           AZQ_TARGETS: ${{ inputs.targets }}
           AZQ_CERT: ${{ inputs.cert }}
+          AZQ2_ANGLE: ${{ inputs.angle }}
         working-directory: papers/quantum-certified-verdicts/${{ inputs.workdir }}
         run: |
           set +e
@@ -41,7 +45,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for F in AZQ1_CERTIFICATE.json AZQ1_R_CERTIFICATE.json AZQ2_CERTIFICATE.json RUN_LOG.txt; do
+          for F in AZQ1_CERTIFICATE.json AZQ1_R_CERTIFICATE.json AZQ2_CERTIFICATE.json AZQ2_B2_CERTIFICATE.json RUN_LOG.txt; do
             P="papers/quantum-certified-verdicts/${{ inputs.workdir }}/$F"
             [ -f "$P" ] || continue
             B64=$(base64 -w0 "$P")

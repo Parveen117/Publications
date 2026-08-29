@@ -11,6 +11,8 @@ from qiskit import QuantumCircuit
 ws = Workspace.from_connection_string(os.environ["AZQ_CONNECTION"])
 provider = AzureQuantumProvider(ws)
 SHOTS, TAU, ZC = 512, 0.10, 3.0
+ANGLE = float(os.environ.get("AZQ2_ANGLE", "0.60"))
+CERT_NAME = os.environ.get("AZQ_CERT", "AZQ2_CERTIFICATE.json")
 A, B = "quantinuum.sim.h2-1e", "rigetti.sim.qvm"
 
 
@@ -19,7 +21,7 @@ def bell(xbasis=False, miscal=False):
     qc.h(0)
     qc.cx(0, 1)
     if miscal:
-        qc.rz(0.60, 0)
+        qc.rz(ANGLE, 0)
     if xbasis:
         qc.h(0)
         qc.h(1)
@@ -59,13 +61,13 @@ def concordance(rung, miscal_on_A):
     return out
 
 
-cert = {"platforms": [A, B], "shots": SHOTS, "tau": TAU,
+cert = {"platforms": [A, B], "shots": SHOTS, "tau": TAU, "fault_angle_rad": ANGLE,
         "preregistration": "PREREGISTRATION.md",
         "AZQ2A_CLEAN": concordance("AZQ2-A", False),
         "AZQ2B_MISCALIBRATED": concordance("AZQ2-B", True)}
 body = json.dumps({k: v for k, v in cert.items() if k != "_pin"},
                   sort_keys=True)
 cert["_pin"] = hashlib.sha256(body.encode()).hexdigest()
-open("AZQ2_CERTIFICATE.json", "w").write(
+open(CERT_NAME, "w").write(
     json.dumps(cert, indent=2, sort_keys=True))
-print("written AZQ2_CERTIFICATE.json — pin:", cert["_pin"])
+print("written", CERT_NAME, "— pin:", cert["_pin"])
