@@ -1,6 +1,10 @@
 name: azq1-ibm-real-hardware
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      script:
+        description: runner script
+        default: run_azq1_ibm.py
 permissions:
   contents: write
 jobs:
@@ -18,7 +22,7 @@ jobs:
         working-directory: papers/quantum-certified-verdicts/AZQ1
         run: |
           set +e
-          python run_azq1_ibm.py > RUN_LOG_IBM.txt 2>&1
+          python ${{ inputs.script }} > RUN_LOG_IBM.txt 2>&1
           echo "exit=$?" >> RUN_LOG_IBM.txt
           tail -30 RUN_LOG_IBM.txt
       - name: upload outputs via contents API
@@ -26,7 +30,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for F in AZQ1_I_CERTIFICATE.json RUN_LOG_IBM.txt; do
+          for F in AZQ1_I_CERTIFICATE.json AZQ1_I2_CERTIFICATE.json RUN_LOG_IBM.txt; do
             P="papers/quantum-certified-verdicts/AZQ1/$F"
             [ -f "$P" ] || continue
             B64=$(base64 -w0 "$P")
