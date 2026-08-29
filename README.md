@@ -2,6 +2,26 @@
 
 Public release repository for citable research outputs by Monty Dabas.
 
+## Latest certified result — real quantum hardware (Aug 29, 2026)
+
+**Cross-platform typed-verdict certification, executed from this
+repository's CI at zero cost** —
+[`papers/quantum-certified-verdicts/AZQ1/`](papers/quantum-certified-verdicts/AZQ1/):
+the same preregistered audit ran on a Quantinuum H2 trapped-ion
+emulator, Rigetti QVM, and a **real 156-qubit IBM Heron QPU
+(ibm_kingston)**. On the real machine the auditor **refused** to
+certify an uncorrected GHZ state (z = +40.8), **certified** the
+error-suppressed one (z = −2.8) under the identical unchanged
+contract, and cut the deliberately corrupted circuit both times
+(z = +73.4 / +66.6). Five pinned certificates, four preregistrations,
+single-shot no-retry discipline throughout. The instrument measures
+execution quality — it does not rubber-stamp it.
+
+Sibling certified programmes: battery-health falsification ladder with
+an independent-evaluator harness in
+[Energy](https://github.com/Parveen117/Energy) (flagship: preregistered
+aging-trend certification on six CALCE cells, combined p = 3.1e-11).
+
 ## Publication layout
 
 ```text
