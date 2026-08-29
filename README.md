@@ -1,26 +1,24 @@
 # Publications
 
-Public release repository for citable research outputs by Monty Dabas.
+Citable research outputs of **Monty Dabas / Celextrix Pvt Ltd**. One
+research foundation — the recognition-kernel theorem ladder — feeds
+several application programmes; this repository holds the papers and
+certified evidence common to all of them. **If you arrived here from a
+specific application, jump straight to your programme below.**
 
-## Latest certified result — real quantum hardware (Aug 29, 2026)
+## Programme index — find your lane
 
-**Cross-platform typed-verdict certification, executed from this
-repository's CI at zero cost** —
-[`papers/quantum-certified-verdicts/AZQ1/`](papers/quantum-certified-verdicts/AZQ1/):
-the same preregistered audit ran on a Quantinuum H2 trapped-ion
-emulator, Rigetti QVM, and a **real 156-qubit IBM Heron QPU
-(ibm_kingston)**. On the real machine the auditor **refused** to
-certify an uncorrected GHZ state (z = +40.8), **certified** the
-error-suppressed one (z = −2.8) under the identical unchanged
-contract, and cut the deliberately corrupted circuit both times
-(z = +73.4 / +66.6). Five pinned certificates, four preregistrations,
-single-shot no-retry discipline throughout. The instrument measures
-execution quality — it does not rubber-stamp it.
+| If you are evaluating... | Go to | Headline |
+| --- | --- | --- |
+| **RNKE-Q / quantum verification** (SINE, IIT Bombay) | [`papers/quantum-certified-verdicts/`](papers/quantum-certified-verdicts/) | Real 156-qubit IBM Heron QPU: auditor certified an error-suppressed GHZ state (z = -2.8), refused the uncorrected one (z = +40.8), cut corrupted circuits every time; cross-platform concordance with fault localization at z = +12.2 |
+| **Battery health certification** (IITM Pravartak) | [Energy repository](https://github.com/Parveen117/Energy) | Preregistered aging-trend certification on six CALCE cells, combined p = 3.1e-11, with an Ed25519 independent-evaluator harness |
+| **ATHENA navigation / SETU communications** (FITT, TIDES) | Patent estate + product repos | These tracks are patent- and product-led (PCT/IB2025/060887, PCT/IB2026/051695, PCT/IB2026/058465); this repository is their shared research foundation |
+| **The mathematics itself** | [`book/recognition-kernel-collected-volume/`](book/recognition-kernel-collected-volume/) + [Recognition-Kernel-Framework](https://github.com/Parveen117/Recognition-Kernel-Framework) | 600+ page collected theorem volume; 60+ certified theorems with stated claim boundaries |
+| **Thermodynamic response papers** | [`papers/`](papers/) + [Thermodynamics-Reproducibility](https://github.com/Parveen117/Thermodynamics-Reproducibility) | arXiv:2603.20773 and the T01 audit discipline every programme follows |
 
-Sibling certified programmes: battery-health falsification ladder with
-an independent-evaluator harness in
-[Energy](https://github.com/Parveen117/Energy) (flagship: preregistered
-aging-trend certification on six CALCE cells, combined p = 3.1e-11).
+**One discipline everywhere:** preregistration before data, SHA-256
+pins on every certificate, failed predictions published with
+mechanisms named, and CI that re-runs any result on demand.
 
 ## Publication layout
 
