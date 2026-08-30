@@ -20,15 +20,17 @@ The bound was fixed **before any job was submitted**
 submitted"): p0 = 0.05, binomial SE, threshold z = 5. The same numbers
 appear unchanged in every certificate.
 
-The stronger answer is the **teeth control**: under the *same*
-contract, the clean GHZ passed (z = −2.75 on `ibm_kingston`) and a
-circuit corrupted by construction (X inserted mid-chain,
-`run_azq1_i2.py`) failed at z = +66.6. A single fixed threshold that
-simultaneously admits the clean state and rejects the corrupted one is
-not a threshold that can be tuned to make "any execution pass" or
-"any execution fail". The reviewer read the corrupted control as an
-"uncorrected GHZ"; it is a deliberate falsification target, published
-as such.
+The z = +40.8 vs z = −2.8 pair the review cites is AZQ1-I (uncorrected
+clean GHZ) versus AZQ1-I2 (same contract, with error suppression that
+was itself **separately preregistered** in `PREREGISTRATION_I2.md`
+before its run). Note what actually happened in AZQ1-I: the clean-pass
+**prediction failed** — the auditor refused to certify the uncorrected
+state — and that failed prediction was **published as it fell**
+(`AZQ1_I_CERTIFICATE.json`). A bound tuned to "produce the prettiest
+story" does not cut its own headline run. The pair demonstrates the
+instrument measures state quality under one fixed contract rather than
+rubber-stamping executions; the corrupted teeth control additionally
+failed under both configurations (z = +73.4 and +66.6).
 
 ## 3. "Show raw counts, not z-scores"
 
