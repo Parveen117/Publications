@@ -1,14 +1,16 @@
-qiskit_runtime_service._discover_account:WARNING:2026-08-29 07:21:58,459: Loading account with the given token. A saved account will not be used.
-qiskit_runtime_service.__init__:WARNING:2026-08-29 07:22:00,704: Instance was not set at service instantiation. Free and trial plan instances will be prioritized. Based on the following filters: (tags: None, region: us-east, eu-de), and available plans: (open), the available account instances are: open-instance. If you need a specific instance set it explicitly either by using a saved account with a saved default instance or passing it in directly to QiskitRuntimeService(). Alternatively, pass instance='auto' or save it to your account for auto-selection without warning.
-qiskit_runtime_service.backends:WARNING:2026-08-29 07:22:00,704: Loading instance: open-instance, plan: open
-qiskit_runtime_service.backends:WARNING:2026-08-29 07:22:01,591: Loading instance: open-instance, plan: open
-qiskit_runtime_service.backends:WARNING:2026-08-29 07:22:02,586: Using instance: open-instance, plan: open
+qiskit_runtime_service._discover_account:WARNING:2026-08-30 16:48:49,222: Loading account with the given token. A saved account will not be used.
+qiskit_runtime_service.__init__:WARNING:2026-08-30 16:48:52,149: Instance was not set at service instantiation. Free and trial plan instances will be prioritized. Based on the following filters: (tags: None, region: us-east, eu-de), and available plans: (open), the available account instances are: open-instance. If you need a specific instance set it explicitly either by using a saved account with a saved default instance or passing it in directly to QiskitRuntimeService(). Alternatively, pass instance='auto' or save it to your account for auto-selection without warning.
+qiskit_runtime_service.backends:WARNING:2026-08-30 16:48:52,149: Loading instance: open-instance, plan: open
+qiskit_runtime_service.backends:WARNING:2026-08-30 16:48:52,891: Loading instance: open-instance, plan: open
+qiskit_runtime_service.backends:WARNING:2026-08-30 16:48:53,917: Using instance: open-instance, plan: open
 channel: ibm_quantum_platform
-backend: ibm_kingston
-chain (48, 47, 57) score 0.0175
-cal 000: correct 0.992
-cal 111: correct 1.000
-ibm_kingston clean: W=0.0312 z=-2.8 -> NOT_FALSIFIED
-ibm_kingston corrupted: W=0.5039 z=+66.6 -> FALSIFIED_MEASUREMENT_CONTRACT
-written AZQ1_I2_CERTIFICATE.json — pin: c60ddd71b53699c43f0e12b2296ce17b0df32f770a89ab2d86c23774898deaba
+backend: ibm_fez
+chain (21, 22, 23) score 0.0197
+PRECOMMIT pinned BEFORE submission: eb389cdd40ff195970f7682f69aad6411c8282cab3cd1d1345dc46ae703f958c
+derived p0 = 0.01974
+cal 000: correct 0.988
+cal 111: correct 0.992
+ibm_fez clean: W=0.0503 z=+28.1 -> FALSIFIED_MEASUREMENT_CONTRACT
+ibm_fez corrupted: W=0.5169 z=+457.4 -> FALSIFIED_MEASUREMENT_CONTRACT
+written AZQ1_I3_CERTIFICATE.json — pin: 718f9018da0515f3d58988bcc1a4a5b207e02d3d7f4fb1120bf83c0f6c23ece2
 exit=0
