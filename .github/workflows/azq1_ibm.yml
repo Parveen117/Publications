@@ -30,8 +30,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          for F in AZQ1_I_CERTIFICATE.json AZQ1_I2_CERTIFICATE.json RUN_LOG_IBM.txt; do
+          for F in AZQ1_I_CERTIFICATE.json AZQ1_I2_CERTIFICATE.json AZQ1_I3_CERTIFICATE.json AZQ1_I3_PRECOMMIT.json AZQ1_I3B_CERTIFICATE.json AZQ1_I3B_PRECOMMIT.json RUN_LOG_IBM.txt; do
             P="papers/quantum-certified-verdicts/AZQ1/$F"
+            [ -f "$F" ] || continue
             [ -f "$P" ] || continue
             B64=$(base64 -w0 "$P")
             SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
