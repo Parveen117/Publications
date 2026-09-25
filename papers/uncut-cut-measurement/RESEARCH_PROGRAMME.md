@@ -1,5 +1,9 @@
 # Research programme after v1.1
 
+## v1.7 operational milestone
+
+The [atom-interferometer audit](ATOM_INTERFEROMETER_AUDIT.md) supplies the concrete downstream map from U36's native stationary response to a declared detector phase. It ingests published aggregate observations and independently computes a simplified external Newtonian apparatus reference. The next native empirical gate requires frozen graph/weights/boundary, mass-source and force/phase calibration, complete apparatus uncertainty, and unused source configurations. Fitting one amplitude to the single published summary cannot count as validation. None of the v1.7 numerical reference results select a native law or derive the detector adapter.
+
 ## Foundational decision
 
 Keep both candidate starts explicit until a derivation distinguishes them:

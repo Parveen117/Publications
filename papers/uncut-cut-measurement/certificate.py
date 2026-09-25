@@ -21,6 +21,7 @@ from certificates import quantum_classical_bridge as qc_bridge
 from certificates import gravity_phase_translator as gp_bridge
 from certificates import pre_entropy_seam_return as sr_bridge
 from certificates import spin_holonomy_geometry_gate as sh_bridge
+from certificates import atom_interferometer_bridge as ai_bridge
 
 HERE = Path(__file__).resolve().parent
 BOUND_SOURCES = (
@@ -62,6 +63,10 @@ BOUND_SOURCES = (
     "GRAVITY_PHASE_TRANSLATOR.md", "certificates/gravity_phase_translator.py",
     "PRE_ENTROPY_SEAM_RETURN.md", "certificates/pre_entropy_seam_return.py",
     "SPIN_HOLONOMY_GEOMETRY_GATE.md", "certificates/spin_holonomy_geometry_gate.py",
+    "ATOM_INTERFEROMETER_AUDIT.md", "certificates/atom_interferometer_bridge.py",
+    "experiments/atom_interferometer_2014_inputs.json",
+    "experiments/atom_interferometer_reference.py",
+    "experiments/ATOM_INTERFEROMETER_REFERENCE.json",
 )
 
 
@@ -244,7 +249,7 @@ def controls():
 def build():
     domain, counts = finite_checks()
     body = {
-        "protocol": "UNCUT_CUT_MEASUREMENT_V1_6_SPIN_HOLONOMY_GEOMETRY_GATE",
+        "protocol": "UNCUT_CUT_MEASUREMENT_V1_7_ATOM_INTERFEROMETER_INTERFACE",
         "status": "PASS_FINITE_CHECKS",
         "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
         "domains": domain,
@@ -266,6 +271,7 @@ def build():
         "conditional_gravity_phase_translator": gp_bridge.run(),
         "pre_entropy_seam_return": sr_bridge.run(),
         "spin_holonomy_geometry_gate": sh_bridge.run(),
+        "conditional_atom_interferometer_interface": ai_bridge.run(),
         "source_sha256": {p: hashlib.sha256((HERE / p).read_bytes()).hexdigest()
                           for p in BOUND_SOURCES},
         "scope": {
@@ -275,6 +281,12 @@ def build():
             "conditional_phase_referenced_matrix_recovers_native_source_green_operator": True,
             "flat_local_transport_can_retain_global_minus_sector": True,
             "conditional_spin_vector_holonomy_gate_constructed": True,
+            "conditional_native_source_to_atom_phase_interface_constructed": True,
+            "atom_interferometer_written_interface": "ATOM_INTERFEROMETER_AUDIT.md AI-1 under declared instrument and physical calibration inputs; exact rational controls are distinct from the external numerical reference",
+            "published_atom_phase_summary_ingested": True,
+            "external_newtonian_reference_is_native_prediction": False,
+            "native_atom_interferometer_prediction_empirically_tested": False,
+            "numerical_reference_recomputed_by_exact_master_certificate": False,
             "minus_one_return_selects_conical_deficit_or_spin_connection": False,
             "spin_and_vector_probes_jointly_resolve_declared_examples": True,
             "unitary_holonomy_norm_detects_seam_memory": False,

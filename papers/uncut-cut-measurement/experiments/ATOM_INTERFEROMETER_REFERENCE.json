@@ -1,0 +1,41 @@
+{
+  "CF_phase_by_order_rad": [
+    0.5304489712,
+    0.5304493431,
+    0.5304493433
+  ],
+  "analytic_axial_cylinder_control": "PASS_NUMERICAL_CONTROL",
+  "authors_full_simulation_rad": 0.548105,
+  "classification": "EXTERNAL_REFERENCE_CONTROL_ONLY",
+  "comparison_is_held_out": false,
+  "last_successive_difference_below_1e_minus_8_rad": true,
+  "missing_native_validation_inputs": [
+    "native_graph_weights_boundary_frozen",
+    "mass_to_native_source_map_calibrated",
+    "force_to_acceleration_scale_calibrated",
+    "detector_and_trajectory_error_budget_complete",
+    "raw_shots_and_calibration_covariance_ingested",
+    "unused_configurations_reserved"
+  ],
+  "native_field_used_in_reference": false,
+  "native_validation": "NOT_EVALUATED",
+  "observed_aggregate_phase_rad": 0.54787,
+  "phase_components_rad": {
+    "C": [
+      0.1893869098,
+      -0.1743175891
+    ],
+    "F": [
+      -0.0744464093,
+      0.0922984351
+    ]
+  },
+  "quadrature_orders": [
+    12,
+    20,
+    28
+  ],
+  "relative_shortfall_percent": 3.179706,
+  "scientific_z_score_or_pass_computed": false,
+  "unmodelled_observed_minus_cylinders_rad": 0.0174206567
+}

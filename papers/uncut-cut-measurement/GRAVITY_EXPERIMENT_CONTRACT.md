@@ -5,6 +5,8 @@ Monty Dabas — v1.0, 25 September 2026.
 Status: **PROPOSED_PHYSICAL_CANDIDATE / NO_EMPIRICAL_DATA_INGESTED**.
 The version number labels this research packet, not physical validation.
 
+**v1.7 update:** [the atom-interferometer audit](ATOM_INTERFEROMETER_AUDIT.md) now ingests published aggregate phase summaries and implements a separate external numerical reference. No raw-shot dataset or empirical native prediction is available. The historical status above refers to this v1.0 contract; it is not a claim that the package lacks all published observations after v1.7.
+
 ## Target and independent calibrations
 
 The first target is the static source-dependent attractive response in U37.
