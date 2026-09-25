@@ -1,4 +1,4 @@
-# Claim ledger — v0.3
+# Claim ledger — v0.4
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -29,6 +29,10 @@ mathematics. Written proofs here do not imply priority.
 | U14 | Coarsest domain-aware closure stabilizes within N-q; exact repair alphabet is the maximum count of its classes per initial fibre | Fixed partial family; arbitrary deterministic repair maps; enabled-domain facts included in target | WRITTEN_PROOF; 20,646 exhaustive cases, all closed refining partitions compared, 30,392 smaller memory maps rejected |
 | U15 | Shortest common-domain output experiment, or shortest domain-aware output/query witness, with separate bounds | Two candidate states; availability witnesses require a justified observation interface | WRITTEN_PROOF; 369,944 pair/mode checks against backward distance relaxation; all prefixes validated |
 | U16 | Common-domain agreement need not be transitive or equal any observer's fibre relation; deterministic adaptation cannot separate an agreeing pair using only safe readouts | Partial family; deterministic policies use observed history, without hidden-state or availability access | WRITTEN_PROOF and W7 exact counterexample; adaptive statement is a general written argument, not exhaustive enumeration of policies |
+| U17 | Compatible bilinear form fields correspond exactly to root forms fixed by all rooted loop comparisons | Connected graph; rank-n carriers; invertible typed linear transports | WRITTEN_PROOF in GRAVITY_BEFORE_CURVATURE.md; 48 integer single-arrow cases, 1,296 candidate forms, 27 edge checks, 12 frame changes |
+| U18 | Complete chosen K-family selects a Lorentz-type form line; complete R-family selects a definite form line; their simultaneous invariant form is zero | Declared overlapping (0,i) EMK embeddings; nonzero nonsingular Cayley parameters; n is supplied | WRITTEN_PROOF; 24 K families in dimensions 2–5, 20 sector comparisons, 100 independent Cayley inversion checks; no physical signature-selection claim |
+| U19 | A full bilinear form descends through a linear cut iff its kernel lies in the form radical; transport requires an exact intertwiner | Surjective linear cut; symmetric form; stated target is full bilinear pairing | WRITTEN_PROOF; eight cut-form checks and W13's rejected false commutator |
+| U20 | Metric-compatible transport with a rank-matched invertible coframe and zero torsion induces Levi-Civita curvature by conjugation | Supplied smooth chart, internal form, connection and coframe; torsion equation holds | WRITTEN_PROOF of standard geometric adapter; 24 exact chart points checked by independent Christoffel/connection routes; no chart-emergence claim |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |
@@ -38,9 +42,17 @@ mathematics. Written proofs here do not imply priority.
 | W7 | Pairwise agreement on all commonly admitted words is not transitive | Four-state partial-arrow example | EXACT_COUNTEREXAMPLE; 0 agrees with 1 and 1 with 2, while word T separates 0 and 2 |
 | W8 | Availability distinction need not be an executable output distinction; restricting a domain can increase memory | Constant two-state cut; total identity versus a partial restriction | EXACT_COUNTEREXAMPLE; output search returns none, availability query separates, memory rises 1 to 2 |
 | W9 | Future permission differences can require memory even with constant actual readouts | Three-state partial chain; domain-aware target | EXACT_WITNESS; class counts 1,2,3, depth 2, memory 3; safe output distinction absent |
+| W10 | A selected K family fixes a form but permits nontrivial metric-preserving loop transport | Declared EMK candidate maps, rank 3/4 examples | EXACT_WITNESS; invariant form reconstructed without supplying it to solver |
+| W11 | The algebra permits distinct signature choices; the combined transport families have no nonzero common form | Same rank, different declared K/R families | EXACT_COUNTEREXAMPLE to signature selection by algebra alone |
+| W12 | Missing couplings leave metric reconstruction ambiguous | One K pair in a four-component carrier | EXACT_WITNESS; invariant symmetric solution dimension four |
+| W13 | Inadmissible compression can invent noncommutativity from a commuting native pair | Three-component cycle and square, lossy two-component projection | EXACT_COUNTEREXAMPLE; both exact transport descent gates reject |
+| W14 | Metric compatibility alone does not identify fibre and metric curvature | Flat coframe and A=uK dv | EXACT_COUNTEREXAMPLE; nonzero torsion, fibre curvature nonzero, metric curvature zero |
+| W15 | A supplied nonconstant coframe realizes a curved bridge; a constant one realizes a flat bridge | e=(du,f dv), A=f'K dv; f nonzero on the chart patch | EXACT_WITNESS and written identities; f remains an input |
+| W16 | A genuine memory-losing cut can faithfully carry a nondegenerate geometric target | Declared memory-extended K family; source form radical equals the discarded memory direction | WRITTEN_COROLLARY and exact n=2 example; memory-sensitive targets remain lost |
+| NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U17–U20 construct conditional representation bridges, not the physical identification |
 | S0 | Associative continuation alone implies no nontrivial symmetry | Three-state chain | EXACT_COUNTEREXAMPLE; every permutation tested for commutation |
-| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U16 |
-| ST0 | Spacetime is a derived optional representation | Need construction, hypotheses and physical interpretation of order, locality, dimension and metric | OPEN IN THIS PACKAGE; no new audit or promotion of other spacetime claims |
+| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U20 |
+| ST0 | Spacetime is a derived optional representation | Need construction and physical interpretation of order, locality, dimension and metric | OPEN; v0.4 derives an invariant form only for a selected transport sector and uses a supplied smooth chart for curvature |
 | A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U2/U6/U9 minimize representation memory, not nature's action |
 | CI0 | Cut ambiguity equals physical curvature or a universal information tensor | Need a typed adapter, invariant and scope-specific proof | OPEN; U7 alone is insufficient |
 | G0 | Complete quantum gravity; RH or Yang–Mills closure | Not premises of this package | NOT CLAIMED |
@@ -59,6 +71,13 @@ The v0.3 module adds all cuts and ordered pairs of partial endomaps through
 three states (20,646 cases), 369,944 pair/mode comparisons, and named W7 on
 four states. It does not exhaust all four-state partial families or certify
 an availability-reporting instrument. Total regression count: 37.
+
+The v0.4 module uses finite-dimensional linear carriers, whose state sets are
+not finite. It adds the declared rational cases in GRAVITY_BEFORE_CURVATURE.md,
+eight source pins and 13 regressions, bringing the package total to **50**.
+Its 1,296 candidate-form comparisons exhaust only the stated integer grid
+for 48 single-arrow matrices; they are not an exhaustive search of all forms
+or geometries. U20's general proof and its 24 sampled chart checks are distinct.
 
 The finite results are elementary self-contained mathematical consequences.
 Their role is to make the proposed programme precise and refutable; no priority

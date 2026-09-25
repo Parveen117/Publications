@@ -4,7 +4,7 @@
 papers, and the indicated native RSC sources.**
 
 The package is a useful finite operational development of existing principles.
-It is not twelve or sixteen independent foundational discoveries. Proposition
+It is not twenty independent foundational discoveries. Proposition
 numbers identify statements in this draft, not priority or scientific impact.
 In particular, U1 is already exactly Spectral I Theorem 18.1. The explicit
 classification below supersedes any ambiguous use of “new results” in earlier
@@ -24,6 +24,7 @@ versions to mean additions to this particular draft.
 | U3–U6/U8–U12: finite refinements, closure and diagnostic words | Related source principles above; standard finite-state methods below | Self-contained finite development and implementation. No claim of a new general minimization method. |
 | W5/W6 and the v0.3 W7–W9 controls | This package's named finite fixtures | Useful audit examples. These exact packaged fixtures were not located in the inspected earlier texts; no exhaustive global novelty claim is made. |
 | U13–U16 | Existing quotient/partial-transition methods; native composition discipline | Explicit domain-preserving formulation, two observation contracts, minimum memory and a failure of pairwise-safe equivalence. Added to this programme, not claimed globally unprecedented. |
+| U17–U20 | EMK algebra, existing curvature-separation controls, elementary invariant-form algebra and standard connection geometry | Conditional transport-to-metric reconstruction and an explicit curvature adapter. The particular multi-plane assembly is a new candidate assumption here, not a uniquely selected native law or a globally new method. |
 
 Spectral II additionally addresses sampling, noise/stability and completion.
 This exact finite model does not supersede those stronger analytical settings.
@@ -56,6 +57,15 @@ evidence. v0.3 additionally prevents a forbidden action from masquerading as a
 diagnostic observation and shows why pairwise safe agreement cannot always be
 the fibre relation of a single observer. This is a meaningful operational
 clarification within the programme.
+
+v0.4 adds the [gravity-before-curvature bridge](GRAVITY_BEFORE_CURVATURE.md).
+Its [eight-file audit](GRAVITY_SOURCE_PINS.json) distinguishes existing declared
+metrics and Lorentzian propagation symbols from solving invariant-form equations
+for a specified transport family. That conditional reconstruction is useful
+progress on this route. Its family selection still encodes substantial input:
+the K family yields an indefinite form, the R family a definite one. The curved
+coframe example is also supplied, not derived by a gravitational law. Neither
+this construction nor the standard Levi-Civita adapter is a priority claim.
 
 A larger foundational or physical claim needs an additional result: for
 example, a faithful construction linking the native seam data to instrument

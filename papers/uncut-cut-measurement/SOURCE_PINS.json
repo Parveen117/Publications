@@ -1,4 +1,18 @@
 {
+  "additional_representation_grammar": {
+    "U17_U19": [
+      "finite-dimensional rational linear carriers",
+      "invertible typed maps",
+      "symmetric bilinear forms",
+      "exact linear cuts"
+    ],
+    "U20": [
+      "supplied smooth chart",
+      "invertible coframe",
+      "metric-compatible connection",
+      "zero torsion"
+    ]
+  },
   "comparative_literature": [
     {
       "author": "John Hopcroft",
@@ -19,11 +33,12 @@
     }
   ],
   "extension_lineage": {
-    "dependency": "U13-U16 extend the declared finite presentation to partial arrows; exact source overlap recorded separately; no imported physical axiom",
-    "previous_public_version_commit": "63f3af3f294a0eac577fd61fb27c679dd11c67f0",
-    "source_document": "ADMISSIBLE_CONTINUATION.md",
-    "version": "0.3"
+    "dependency": "Additional finite-dimensional linear candidate sector; eight-source gravity audit; standard geometric adapter is post-cut and conditional",
+    "previous_public_version_commit": "376c5a3f95936f8b8aa66a9ca39911df2b00816a",
+    "source_document": "GRAVITY_BEFORE_CURVATURE.md",
+    "version": "0.4"
   },
+  "gravity_source_audit": "GRAVITY_SOURCE_PINS.json",
   "linear_representation_scope": "U7 only; complementary projections and composable transports",
   "mathematical_grammar": [
     "nonempty finite sets",

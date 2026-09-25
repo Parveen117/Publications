@@ -68,7 +68,7 @@ Each GitHub release is intended to be archived by Zenodo and assigned a version 
 
 **[Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation](papers/uncut-cut-measurement/)**
 starts a public research programme in which mathematical definitions and
-measurement descriptions are themselves cuts. Version 0.3 contains sixteen
+measurement descriptions are themselves cuts. Version 0.4 contains twenty
 written propositions covering target recovery, minimum repair memory,
 compatibility and clock-free continuation for entire families of arrows.
 It includes a shortest distinguishing-experiment construction, exhaustive
@@ -77,6 +77,10 @@ composition. It also separates observable availability from commonly admitted
 experiments and shows why pairwise safe agreement need not form a quotient.
 The novelty audit explicitly credits Spectral I/II, native RSC predecessors
 and established finite-state methods; proposition counts are not novelty claims.
+The gravity-before-curvature module reconstructs an invariant form from a
+declared EMK transport family and states the precise post-cut conditions for
+identifying transport curvature with metric curvature. Physical gravity,
+transport-sector selection and emergence of a spacetime remain open.
 Spacetime and the quantum/classical correspondence are explicit derivation
 targets. See the manuscript, claim ledger and reproducible certificate in the
 programme folder; the finite checks do not establish a complete physical theory.

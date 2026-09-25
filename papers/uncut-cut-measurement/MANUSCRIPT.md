@@ -1,7 +1,7 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
 **Monty Dabas**  
-Working manuscript v0.3 — 25 September 2026
+Working manuscript v0.4 — 25 September 2026
 
 ## Abstract
 
@@ -29,6 +29,11 @@ safe agreement. The [lineage audit](NOVELTY_AND_LINEAGE.md) identifies U1 as
 Spectral I Theorem 18.1, the linear minimum-repair predecessors in Spectral II,
 and established finite-state methods. Numbered propositions are not priority
 claims; this is an operational development of the existing programme.
+
+The v0.4 [gravity-before-curvature module](GRAVITY_BEFORE_CURVATURE.md) adds a
+conditional reconstruction of invariant bilinear forms from declared native
+algebra transports and an explicit post-cut curvature adapter. It separates
+this mathematical bridge from the unproved selection of a gravitational law.
 
 ## 1. The starting point includes its own limitation
 
@@ -447,3 +452,16 @@ domain-aware contract, shortest diagnostics under two contracts, and W7's
 obstruction to treating common-domain agreement as an equivalence relation.
 W8/W9 prevent undefined actions from being treated as negative or zero-valued
 measurements. An availability interface still requires operational justification.
+
+## 15. Conditional transport-to-geometry bridge (v0.4)
+
+[GRAVITY_BEFORE_CURVATURE.md](GRAVITY_BEFORE_CURVATURE.md) contains U17–U20.
+Its finite-dimensional linear candidate sector is additional representation
+data, distinct from the finite-state layer above. A selected EMK family fixes
+an invariant form up to scale; changing the sector changes its signature.
+Exact linear cuts have separate metric and transport descent conditions.
+On a supplied smooth chart, metric compatibility plus an invertible coframe
+and zero torsion identifies connection curvature with metric curvature.
+The choice of sector, rank, chart, coframe and physical dynamics has not been
+derived from uncut ground. Source audit and controls make those obligations
+explicit rather than importing a classical field equation as the answer.

@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 0.3, 25 September 2026.**
+**Monty Dabas — working research programme, version 0.4, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -11,14 +11,15 @@ it is not an input to the finite results here.
 Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
 [foundational manuscript](MANUSCRIPT.md),
 [family-continuation extension](FAMILY_CONTINUATION.md),
-[admissibility extension](ADMISSIBLE_CONTINUATION.md), and [claim ledger](CLAIMS.md).
+[admissibility extension](ADMISSIBLE_CONTINUATION.md),
+[gravity-before-curvature bridge](GRAVITY_BEFORE_CURVATURE.md), and [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
 
 **Lineage:** U1 already appears exactly in Spectral I Theorem 18.1; minimum
 repair has a linear counterpart in Spectral II Theorem 7.2; recovered middle
 identity is already required by RSC 27/30. Partition refinement is established
 mathematics. This package adds explicit finite formulations, operational
-distinctions and executable controls, not sixteen priority claims.
+distinctions and executable controls, not twenty priority claims.
 
 ## Foundational results U1–U7
 
@@ -85,10 +86,34 @@ availability query from executing a forbidden action, and shows that restricting
 a domain can increase domain-aware memory. **W9** gives delayed availability
 distinctions even when every actual readout is zero.
 
-Current local evidence: **37 regression tests**, plus **20,646 exhaustive
+The v0.3 evidence includes **37 regression tests**, plus **20,646 exhaustive
 cut/two-partial-arrow cases through three states**, **369,944 pair/mode diagnostic
 checks**, and the retained v0.1/v0.2 evidence. A model's availability flag is not
 automatically an observable; operational use needs a justified interface.
+
+## Added in v0.4: transport before metric and curvature
+
+[U17–U20](GRAVITY_BEFORE_CURVATURE.md) reconstruct compatible bilinear forms
+from declared invertible transports. A chosen EMK K-sector family determines
+diag(1,-1,...,-1) up to scale; four supplied components give a Lorentz-type
+1+3 signature. The R-sector instead determines a definite form, so the native
+algebra alone does not select a physical signature or a dimension.
+
+An exact cut must preserve the geometric target and intertwine the transports.
+A memory-extended example passes both gates: the cut discards a target-blind
+memory coordinate and recovers a nondegenerate quotient form.
+A counterexample shows that inadmissible compression can invent noncommutativity
+from a commuting native pair. With a separately supplied smooth coframe and a
+metric-compatible, torsion-free connection, the connection curvature becomes
+metric curvature by an explicit intertwiner. A valid curved chart is checked
+by two independent routes; a torsion control rejects a false identification.
+
+Current evidence: **50 regression tests**, 24 K-family reconstructions,
+1,296 integer-grid candidate-form comparisons, 24 supplied chart points and
+the retained earlier certificates. The new source audit pins eight files.
+The K maps are candidate algebraic transports, not asserted to be RKF 55's
+dagger-unitary flows. Selecting the gravitational sector, coframe, dynamics
+and shared quantum readout remains the next research problem.
 
 ## Reproduce
 
@@ -115,7 +140,9 @@ the inspected repository versions, not an independent certification of them.
 Uncut ground is a proposed primitive, not identified with the finite carrier.
 The carrier and its functions are declared mathematical representations.
 No spacetime metric, external clock, probability law, quantum state space,
-Hamiltonian or classical field equation is assumed by these finite propositions.
+Hamiltonian or classical field equation is assumed by U1–U19. U17–U19 introduce
+declared finite-dimensional linear carriers. U20 is a conditional geometric
+adapter on a supplied smooth chart with a coframe and connection.
 No physical quantum/classical correspondence, spacetime reconstruction, minimum
 action law, universal curvature-information identity or quantum-gravity closure
 has yet been derived by this package.

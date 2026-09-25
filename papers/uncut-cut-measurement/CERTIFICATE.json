@@ -102,7 +102,7 @@
     ],
     "scope": "All cuts and ordered pairs of partial endomaps through three states; W7 is a named four-state control. Availability queries require a separately justified interface; no physical instrument is certified."
   },
-  "arithmetic": "exact integer equality and finite enumeration; no floating point",
+  "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
   "checks": {
     "closed_refinement_comparisons": 8521,
     "common_target_triples": 3509,
@@ -113,6 +113,318 @@
     "represented_block_pairs": 6561,
     "smaller_memory_maps_rejected": 596,
     "symmetry_permutations": 6
+  },
+  "conditional_gravity_bridge": {
+    "checks": {
+      "basis_change_checks": 12,
+      "candidate_form_comparisons": 1296,
+      "cayley_two_route_checks": 100,
+      "cut_form_checks": 8,
+      "graph_edge_checks": 27,
+      "integer_single_transports": 48,
+      "lawful_memory_cut_examples": 1,
+      "sector_comparisons": 20,
+      "star_families": 24,
+      "warped_chart_points": 24
+    },
+    "controls": {
+      "W10_EMK_candidate_signature": {
+        "dimension": 4,
+        "form_up_to_scale": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-1"
+          ]
+        ],
+        "nontrivial_three_component_loop": [
+          [
+            "85/72",
+            "-5/9",
+            "7/24"
+          ],
+          [
+            "-1/18",
+            "5/9",
+            "5/6"
+          ],
+          [
+            "5/8",
+            "-1",
+            "5/8"
+          ]
+        ]
+      },
+      "W11_sector_nonselection": {
+        "K_form": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-1"
+          ]
+        ],
+        "R_form": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "combined_invariant_dimension": 0
+      },
+      "W12_incomplete_family": {
+        "dimension": 4,
+        "one_K_pair_invariant_dimension": 4
+      },
+      "W13_compression_artifact": {
+        "compressed_commutator": [
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "exact_descent": false,
+        "native_commutator": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "W14_torsion_blocks_identification": {
+        "at_u": 1,
+        "coframe": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "fibre_curvature": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "metric_curvature": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "torsion": [
+          "0",
+          "-1"
+        ]
+      },
+      "W15_valid_curved_adapter_at_zero": {
+        "fibre_curvature": [
+          [
+            "0",
+            "2"
+          ],
+          [
+            "2",
+            "0"
+          ]
+        ],
+        "metric": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "-1"
+          ]
+        ],
+        "riemann_uv": [
+          [
+            "0",
+            "2"
+          ],
+          [
+            "2",
+            "0"
+          ]
+        ],
+        "torsion": [
+          "0",
+          "0"
+        ],
+        "warp": "1"
+      },
+      "W16_lawful_memory_cut": {
+        "cut": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ]
+        ],
+        "memory_step": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "2"
+          ]
+        ],
+        "native_lift": [
+          [
+            "5/3",
+            "4/3",
+            "0"
+          ],
+          [
+            "4/3",
+            "5/3",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "2"
+          ]
+        ],
+        "quotient_form": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "-1"
+          ]
+        ],
+        "quotient_transport": [
+          [
+            "5/3",
+            "4/3"
+          ],
+          [
+            "4/3",
+            "5/3"
+          ]
+        ],
+        "source_form": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      }
+    },
+    "rational_encoding": "Fraction values are exact integer or p/q strings",
+    "scope": "Conditional linear transport and supplied smooth-chart checks. No physical gravity law, continuum emergence, selected dimension, quantum readout rule or empirical validation."
   },
   "controls": {
     "S0_transitive_not_nontrivial_symmetry": {
@@ -392,7 +704,7 @@
     },
     "status": "PASS_FINITE_CHECKS"
   },
-  "protocol": "UNCUT_CUT_MEASUREMENT_V0_3",
+  "protocol": "UNCUT_CUT_MEASUREMENT_V0_4",
   "represented_blocks": {
     "entry_alphabet": [
       -1,
@@ -408,30 +720,39 @@
     "availability_interface_physically_established": false,
     "empirical_validation": false,
     "formal_proof_assistant_verification": false,
-    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12 and ADMISSIBLE_CONTINUATION.md U13-U16, under their stated hypotheses; lineage and non-priority classifications in NOVELTY_AND_LINEAGE.md",
+    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16 and GRAVITY_BEFORE_CURVATURE.md U17-U20 under stated hypotheses; no priority claim for standard methods",
     "independent_review": false,
     "minimum_nature_action_derived": false,
+    "native_gravity_law_physically_identified": false,
     "physical_quantum_classical_derivation": false,
     "physical_spacetime_derivation": false,
+    "post_cut_smooth_chart_is_supplied": true,
+    "spacetime_dimension_derived": false,
+    "transport_sector_selected_by_native_law": false,
     "uncut_identified_with_finite_carrier": false
   },
   "source_sha256": {
     "ADMISSIBLE_CONTINUATION.md": "dd71c56c3bb1593d5cc5afb5fe66c118216be94c933b7961e3bb52cce445a3c5",
-    "CLAIMS.md": "84e46678c2085da36ffb456e289553a6dd6ea57cce07641abcb7ec31fbd13548",
+    "CLAIMS.md": "7c71bc55548a39e7c3e78529b05df497df62d47e805011373e95d8f182bc8f1d",
     "FAMILY_CONTINUATION.md": "847e994bf6ec2990f4727e7ac6b25374fd8d5aaa94914c7a668fff25c854e3db",
-    "MANUSCRIPT.md": "b9b1f4b23012f147d0f5a30ae1fa4a884b1bfd4364eee5544100a8c75989cb69",
-    "NOVELTY_AND_LINEAGE.md": "984c14592ae800f2e57813afb9a738e4b95a8441ceccf9b4ee47b49d958a3a5a",
-    "README.md": "235e20c69523b019b5a88cd44c068a8a2fd1c52550c89ce26d86c769b78402bd",
-    "RESEARCH_PROGRAMME.md": "d81408745757e52efc8216a0f41a28127a402c452fd414607257edc247ba2239",
-    "SOURCE_PINS.json": "889c20383ef528fe918eda51f7f6faef9f2dd9b767e886d16103e31246bec24c",
-    "certificate.py": "1e95c83202d8bf8c7fc302571b23281458a9a5523c6fb78d2ce9d6733b4143cb",
+    "GRAVITY_BEFORE_CURVATURE.md": "7232eab9a374a3ed610dc533347a8a3226d4c5b3911cd93a698801b316734442",
+    "GRAVITY_SOURCE_PINS.json": "0025efcc8048896b0e6a02b23df84beaf4bea2c46badce54d8c19865a03e2f95",
+    "MANUSCRIPT.md": "a95cee99c7f55ebe861d1ded782aa710fe1934354f789b19d6990873da7fdf32",
+    "NOVELTY_AND_LINEAGE.md": "a67877b7942fe9040955a5df534d5d4815c1372a538a2e3b30d7b340374aed10",
+    "README.md": "04e1145e48202d9d7f20ec11896ac25822b40cde561fd24cc4fbb210f1f62f43",
+    "RESEARCH_PROGRAMME.md": "ea6ffbd0ecb841ec2d3377dffebb0a03ced653567841f3b98a99e949e14d5fd2",
+    "SOURCE_PINS.json": "83811fbe301b92812bed1d3f0a28771c9163fbaf0bbd92392990aa134ef3bc7a",
+    "certificate.py": "8d359334008e9922d47b889d6009663269d8170073b92fab442796cfd9cad68c",
     "family_certificate.py": "91b949103dc086b271187894d6a1ce0c34328b91b1bfc361aa40fed42b74e429",
     "family_model.py": "db7e2505667eb7eb85bf7e6f75eee46348935f79875528e77f0eef3ed65a535a",
     "finite_model.py": "ff274cccdeb9ee5cc1e65db661bed733f114415c34d31f0bd3be75cc27df876a",
+    "gravity_certificate.py": "d38dc8b204669aeeb09c9dd4f0fbcc6786dcfd1c90a496a202a7efa6175781b7",
+    "gravity_model.py": "20346e44998ee42a655adf38b319e219d3f1dedf79b73993fa7d279355175cb7",
     "partial_certificate.py": "293e19c34558e84d140b0cef0fee857a77729a39410d645e01bad9676a742a04",
     "partial_model.py": "92bad02105884f4dc3c3e1da7415998eb2048f4c2c9e31c4bbd8a60678c7f270",
     "tests/test_family_model.py": "11d104afb3f7d9521718632b3768eb94c63e5e2e542ac091ed086179541e7d8d",
     "tests/test_finite_model.py": "5f53ea7ee064f5dbcab1523b22222638370c626aa25a0cd5858c5e82c3cb13ae",
+    "tests/test_gravity_model.py": "84d910732a1840ae12be4e9b76056c2b67c62f071356806b9c81013ee184893d",
     "tests/test_partial_model.py": "5c10db7f08c52d5c244eeddadc85506e6645bc8ecba3b22c1528f385510484d0"
   },
   "status": "PASS_FINITE_CHECKS"

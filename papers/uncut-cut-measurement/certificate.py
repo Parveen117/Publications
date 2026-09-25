@@ -8,6 +8,7 @@ from pathlib import Path
 import finite_model as fm
 import family_certificate
 import partial_certificate
+import gravity_certificate
 
 HERE = Path(__file__).resolve().parent
 BOUND_SOURCES = (
@@ -18,6 +19,8 @@ BOUND_SOURCES = (
     "tests/test_family_model.py",
     "NOVELTY_AND_LINEAGE.md", "ADMISSIBLE_CONTINUATION.md",
     "partial_model.py", "partial_certificate.py", "tests/test_partial_model.py",
+    "GRAVITY_BEFORE_CURVATURE.md", "GRAVITY_SOURCE_PINS.json",
+    "gravity_model.py", "gravity_certificate.py", "tests/test_gravity_model.py",
 )
 
 
@@ -200,20 +203,25 @@ def controls():
 def build():
     domain, counts = finite_checks()
     body = {
-        "protocol": "UNCUT_CUT_MEASUREMENT_V0_3",
+        "protocol": "UNCUT_CUT_MEASUREMENT_V0_4",
         "status": "PASS_FINITE_CHECKS",
-        "arithmetic": "exact integer equality and finite enumeration; no floating point",
+        "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
         "domains": domain,
         "represented_blocks": {"shape": [2, 2], "entry_alphabet": [-1, 0, 1]},
         "checks": counts,
         "controls": controls(),
         "family_continuation": family_certificate.build_checks(),
         "admissible_continuation": partial_certificate.build_checks(),
+        "conditional_gravity_bridge": gravity_certificate.build_checks(),
         "source_sha256": {p: hashlib.sha256((HERE / p).read_bytes()).hexdigest()
                           for p in BOUND_SOURCES},
         "scope": {
-            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12 and ADMISSIBLE_CONTINUATION.md U13-U16, under their stated hypotheses; lineage and non-priority classifications in NOVELTY_AND_LINEAGE.md",
+            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16 and GRAVITY_BEFORE_CURVATURE.md U17-U20 under stated hypotheses; no priority claim for standard methods",
             "availability_interface_physically_established": False,
+            "native_gravity_law_physically_identified": False,
+            "spacetime_dimension_derived": False,
+            "transport_sector_selected_by_native_law": False,
+            "post_cut_smooth_chart_is_supplied": True,
             "formal_proof_assistant_verification": False,
             "uncut_identified_with_finite_carrier": False,
             "physical_quantum_classical_derivation": False,

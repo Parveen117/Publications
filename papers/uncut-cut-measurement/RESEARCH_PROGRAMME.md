@@ -1,4 +1,4 @@
-# Research programme after v0.3
+# Research programme after v0.4
 
 ## Foundational decision
 
@@ -10,7 +10,7 @@ Keep both candidate starts explicit until a derivation distinguishes them:
   meaningful continuation relation; compatibility across further cuts constrains
   admissible laws.
 
-U1–U16 do not choose between them. Neither candidate identifies a labelled finite
+U1–U20 do not choose between them. Neither candidate identifies a labelled finite
 set, a quantum state vector or a spacetime point with uncut ground.
 
 ## Completed in v0.2: more than one admissible continuation
@@ -38,22 +38,38 @@ predecessors are recorded in [NOVELTY_AND_LINEAGE.md](NOVELTY_AND_LINEAGE.md).
 Evidence: 37 regressions overall and 20,646 exhaustive partial-family cases
 through three states, with independent diagnostic and quotient oracles.
 
-## Next research direction: gravity before curvature
+## Completed in v0.4: a conditional gravity-before-curvature bridge
 
 The author's next proposed direction is to define gravity through a native law
 prior to a spacetime or curvature representation, then derive curvature only
-after a suitable cut. This is a research hypothesis, not a result of U1–U16.
+after a suitable cut. Its physical identification remains a research hypothesis.
 The proposed bridge to quantum gravity must be constructed rather than inferred
 from the use of the words “uncut”, “seam” or “curvature”.
 
-Begin by auditing the repository's existing gravity, curvature and seam results
-at pinned versions so that inherited definitions are not presented as new.
-Then specify the candidate native data, composition rule and invariant without
-assuming a manifold, metric, external clock or gravitational field equation.
+[U17–U20](GRAVITY_BEFORE_CURVATURE.md) now reconstruct invariant forms from
+declared transports, separate signature choices, prove exact cut gates and
+state a conditional coframe/connection curvature adapter. The eight-source
+audit records the existing native and thermodynamic results. No gravitational
+field equation is assumed in the reconstruction.
 Even that mathematical specification is a presentation with declared
 distinctions; it is not direct access to an entirely distinction-free ground.
 
-The next derivation must address:
+The K-family construction gives a Lorentz-type form up to scale; the R family
+gives a definite form. A smooth coframe and zero torsion can turn compatible
+connection curvature into metric curvature, but both flat and curved supplied
+adapters pass. The selection of family, rank, coframe and dynamics remains open.
+Evidence: 50 package regressions and the exact rational domains in the certificate.
+
+## Next concrete derivation: select the native sector and adapter
+
+Derive a rule from declared native seam data that selects the relevant
+transports and their coupling pattern without inserting the desired metric
+signature as the criterion. Then derive or constrain the coframe/connection
+and an operational gravitational response. The existing K and R alternatives,
+missing-coupling example, inadmissible compression and torsion counterexample
+must remain controls that can reject a proposed selection rule.
+
+The remaining physical derivation must address:
 
 1. What makes the candidate law gravitational, rather than an arbitrary
    continuation rule or a renamed memory cost? State its operational target.
@@ -137,7 +153,7 @@ resolved within its stated hypotheses rather than hidden by a single symbol.
 
 ## Publication gates
 
-v0.3 is a public working draft with exact finite evidence. A later paper edition
+v0.4 is a public working draft with exact finite evidence. A later paper edition
 should add independently checked proofs, a complete empirical or physical
 identification where claimed, and a compiled manuscript matching its claim
 ledger. A GitHub release/DOI follows the repository's existing release rule;
