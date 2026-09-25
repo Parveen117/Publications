@@ -22,6 +22,7 @@ from certificates import gravity_phase_translator as gp_bridge
 from certificates import pre_entropy_seam_return as sr_bridge
 from certificates import spin_holonomy_geometry_gate as sh_bridge
 from certificates import atom_interferometer_bridge as ai_bridge
+from certificates import quantum_emk_local_geometry as qg_emk_bridge
 
 HERE = Path(__file__).resolve().parent
 BOUND_SOURCES = (
@@ -67,6 +68,7 @@ BOUND_SOURCES = (
     "experiments/atom_interferometer_2014_inputs.json",
     "experiments/atom_interferometer_reference.py",
     "experiments/ATOM_INTERFEROMETER_REFERENCE.json",
+    "QUANTUM_EMK_LOCAL_GEOMETRY.md", "certificates/quantum_emk_local_geometry.py",
 )
 
 
@@ -249,7 +251,7 @@ def controls():
 def build():
     domain, counts = finite_checks()
     body = {
-        "protocol": "UNCUT_CUT_MEASUREMENT_V1_7_ATOM_INTERFEROMETER_INTERFACE",
+        "protocol": "UNCUT_CUT_MEASUREMENT_V1_8_QUANTUM_EMK_LOCAL_GEOMETRY",
         "status": "PASS_FINITE_CHECKS",
         "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
         "domains": domain,
@@ -272,10 +274,11 @@ def build():
         "pre_entropy_seam_return": sr_bridge.run(),
         "spin_holonomy_geometry_gate": sh_bridge.run(),
         "conditional_atom_interferometer_interface": ai_bridge.run(),
+        "quantum_emk_local_geometry_bridge": qg_emk_bridge.run(),
         "source_sha256": {p: hashlib.sha256((HERE / p).read_bytes()).hexdigest()
                           for p in BOUND_SOURCES},
         "scope": {
-            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38, SHELL_CAPACITY_SELECTION.md U39-U41, THERMODYNAMIC_FOUNDATION_BRIDGE.md TF-1/TF-2, QUANTUM_CLASSICAL_BRIDGE.md QB-1/QB-3, GRAVITY_PHASE_TRANSLATOR.md GP-1/GP-2, PRE_ENTROPY_SEAM_RETURN.md SR-1/SR-2 and SPIN_HOLONOMY_GEOMETRY_GATE.md SH-1/SH-3 under stated hypotheses; no priority claim for standard Cayley inversion, Schur reduction, dephasing, thermodynamic contact geometry, flat nontrivial holonomy, spin double cover or conical deficit",
+            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38, SHELL_CAPACITY_SELECTION.md U39-U41, THERMODYNAMIC_FOUNDATION_BRIDGE.md TF-1/TF-2, QUANTUM_CLASSICAL_BRIDGE.md QB-1/QB-3, GRAVITY_PHASE_TRANSLATOR.md GP-1/GP-2, PRE_ENTROPY_SEAM_RETURN.md SR-1/SR-2, SPIN_HOLONOMY_GEOMETRY_GATE.md SH-1/SH-3 and QUANTUM_EMK_LOCAL_GEOMETRY.md QG-1/QG-5 under stated hypotheses; no priority claim for standard Cayley inversion, Schur reduction, dephasing, thermodynamic contact geometry, flat nontrivial holonomy, spin double cover or conical deficit",
             "conditional_thermodynamic_equilibrium_chart_from_source_cost": True,
             "conditional_finite_quantum_classical_bridge_from_one_graph": True,
             "conditional_phase_referenced_matrix_recovers_native_source_green_operator": True,
@@ -284,6 +287,12 @@ def build():
             "conditional_native_source_to_atom_phase_interface_constructed": True,
             "atom_interferometer_written_interface": "ATOM_INTERFEROMETER_AUDIT.md AI-1 under declared instrument and physical calibration inputs; exact rational controls are distinct from the external numerical reference",
             "published_atom_phase_summary_ingested": True,
+            "native_iota_representation_gate_constructed": True,
+            "response_plane_invariant_to_emk_local_two_jet_constructed": True,
+            "full_global_emk_metric_selected_from_native_law": False,
+            "physical_length_scale_for_emk_two_jet_derived": False,
+            "helical_sheet_memory_identified_with_physical_double_helix": False,
+            "physical_quantum_gravity_established": False,
             "external_newtonian_reference_is_native_prediction": False,
             "native_atom_interferometer_prediction_empirically_tested": False,
             "numerical_reference_recomputed_by_exact_master_certificate": False,
