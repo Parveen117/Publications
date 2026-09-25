@@ -1,5 +1,7 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
+**v1.5 research step:** [pre-entropy seam return and the gravity interface](PRE_ENTROPY_SEAM_RETURN.md) audits TVSP, thermodynamic/spacetime assumptions and cut grading; proves exact target-relative return and a flat-local/nontrivial-global control. The `+1/-1` return sector is typed separately from positive thermodynamic `I_th=1`. The finite certificate binds the new note and exact witness. Physical source selection, gravity and literal uncut observables remain open.
+
 **Monty Dabas — working research programme, version 1.1, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the

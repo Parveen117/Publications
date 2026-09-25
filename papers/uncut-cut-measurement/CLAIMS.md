@@ -124,6 +124,8 @@ mathematics. Written proofs here do not imply priority.
 | A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U36 supplies a declared stationary cost; W51 proves its conservative continuation does not force relaxation |
 | CI0 | Cut ambiguity equals physical curvature or a universal information tensor | Need a typed adapter, invariant and scope-specific proof | OPEN; U7 alone is insufficient |
 | G0 | Complete quantum gravity; RH or Yang–Mills closure | Not premises of this package | NOT CLAIMED |
+| SR-1 | A unitary sector return has nonnegative target-relative squared defect, while holonomy operator norm is blind to every unitary phase | Declared cut carrier, unitary loop continuation and target map | CONDITIONAL_WRITTEN_IDENTITY; exact +1/-1 checks; not an entropy or an uncut observable |
+| SR-2 | Local flatness can coexist with global -1 return, and principal endpoint +1 can hide integer phase winding | 3x3 torus sign transport; separate abelian path lift | EXACT_COUNTEREXAMPLES; global winding control consumes the prior RKF lift theorem; no physical metric or thermodynamic equivalence |
 
 ## Certification coverage
 
