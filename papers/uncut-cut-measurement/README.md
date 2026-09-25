@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 0.6, 25 September 2026.**
+**Monty Dabas — working research programme, version 0.7, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -14,7 +14,9 @@ Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
 [admissibility extension](ADMISSIBLE_CONTINUATION.md),
 [gravity-before-curvature bridge](GRAVITY_BEFORE_CURVATURE.md),
 [sector and coframe constraints](SECTOR_AND_COFRAME_SELECTION.md),
-[native grading and seam memory](NATIVE_GRADING_AND_SEAM_MEMORY.md), and [claim ledger](CLAIMS.md).
+[native grading and seam memory](NATIVE_GRADING_AND_SEAM_MEMORY.md),
+[native interaction and lawful cuts](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md),
+and [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
 
 **Lineage:** U1 already appears exactly in Spectral I Theorem 18.1; minimum
@@ -157,12 +159,36 @@ the minimum becomes **2m-n**. On a triangle those costs are two and three.
 An explicit hidden state produces distinct K/R candidate transcripts, making
 the model-level comparison concrete; physical instrument realization is open.
 
-Current evidence: **77 regressions**, rank checks on **771 connected graphs**
+The v0.6 evidence: **77 regressions**, rank checks on **771 connected graphs**
 through five vertices, **43** complete small-graph grading/observer/response
 checks and **154 exact endpoint reconstructions**. Earlier campaigns remain
-bound in the certificate, now covering **32 source files**. The direct-sum
+bound in its certificate, covering **32 source files**. The direct-sum
 repair has commuting separate-edge transports; native interaction between
 edges must be supplied before recovering a noncommutative gravity candidate.
+
+## Added in v0.7: genuine graded interaction and a lawful lossy quotient
+
+[U27–U29](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md) construct a declared
+antisymmetric mixing family between retained edge carriers. Together with
+local R controls it preserves one native cut grading, a positive form and a
+represented quarter-turn, while producing actual nonzero transport commutators.
+An explicit order test gives scalar outputs **0 and 16/25** for the same input.
+
+Exact real-linear cuts can discard whole interaction components. A proper
+**6-to-4 dimensional quotient** loses one unobserved component while preserving
+grading, the declared form target and nonzero interaction. Within a connected
+component, every nonzero exact closed readout needs its full relevant memory.
+A fixed transcript of **2m scalar readings** reconstructs m connected
+two-component carriers from one scalar readout; the linear count is minimal.
+
+Current evidence: **93 regressions**, all **75 interaction graphs on one through
+four channels**, **360 independent readout-closure comparisons**, **700 exact
+projection intertwiners**, and **167 minimal transcripts**. Their decoders pass
+1,298 basis-vector reconstructions. The certificate binds **37 source files**
+and retains every earlier campaign. Interaction graph and strengths remain
+declared; physical gravitational/quantum identification is still open. The
+full invariant bilinear form of a connected family is definite, so a Lorentzian
+geometric target requires a separate adapter.
 
 ## Reproduce
 
@@ -196,6 +222,8 @@ algebraic coupling results; U23 constrains a supplied homogeneous coframe class
 for a fixed connection on a supplied chart.
 U24–U26 are clock-free finite-dimensional grading and observer results with
 declared algebraic controls; no spacetime or physical field equation is used.
+U27–U29 add native-compatible real interaction, classified exact cuts and
+model-level response reconstruction under a declared control catalogue.
 No physical quantum/classical correspondence, spacetime reconstruction, minimum
 action law, universal curvature-information identity or quantum-gravity closure
 has yet been derived by this package.

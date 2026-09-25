@@ -330,3 +330,9 @@ compare predictions on shared readouts. Native grading repair, physical sector
 selection, spacetime emergence and quantum-gravity closure are distinct tasks.
 This step resolves the grading/memory problem for the declared assembly and
 identifies exactly what its direct-sum repair still cannot provide.
+
+**v0.7 continuation:** [U27–U29](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md) now
+construct a declared native-compatible inter-edge mixing family, classify its
+exact real-linear cuts, and give a proper lossy quotient preserving nonzero
+interaction. The coupling data and physical gravitational interpretation
+remain separate selection obligations.

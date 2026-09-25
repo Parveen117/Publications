@@ -1,4 +1,4 @@
-# Claim ledger — v0.6
+# Claim ledger — v0.7
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -39,6 +39,9 @@ mathematics. Written proofs here do not imply priority.
 | U24 | Zero-extended pair embeddings share a native K-even/R-odd involution iff the graph is a matching plus isolated vertices | Finite simple graph, usual real K/R embeddings, one common grading required | WRITTEN_PROOF in NATIVE_GRADING_AND_SEAM_MEMORY.md; full linear equations on 43 connected graphs through four vertices, plus disjoint-pair positive control |
 | U25 | Minimum additional linear memory for endpoint readout and grading closure is rank(CJQ), equal to n-2 for connected bipartite graphs and n-1 otherwise | Declared equal-weight endpoint-summing cut on 2m edge coordinates, local direct-sum grading J, unrestricted linear repair | WRITTEN_PROOF; rank formula on 771 connected graphs through five vertices; 43 explicit minimal observers, grading intertwiners and cut-memory rank comparisons |
 | U26 | Initial readout plus separately addressed nonzero edge R steps observes the whole edge carrier; minimum repair is 2m-n | Declared connected edge model; initial/readout transcripts refer to same input; all edge controls included | WRITTEN_PROOF; 43 addressed R families and 154 endpoint response inverses; actual measurement accessibility remains open |
+| U27 | Real antisymmetric inter-edge mixing and local R steps obey one EMK cut grading and have a genuine nonzero commutator; the family preserves a represented quarter-turn | Declared real m-channel carrier, interaction graph and nonzero Cayley parameters; real dagger is transpose | WRITTEN_PROOF in NATIVE_INTERACTION_AND_LAWFUL_CUTS.md; 490 grading/orthogonality and quarter-turn checks, direct ordered-response witness |
+| U28 | Common invariant real subspaces are sums of interaction components; minimum closed observer rank is 2 times the number of labels in components seen by C; invariant symmetric forms are scalar identities per component | All individually addressed local R and mixing controls included, nonzero parameters, real-linear finite carrier | WRITTEN_PROOF; 360 graph-versus-matrix closure comparisons, 700 projection intertwiners and 11 full invariant-form solves; proper lossy interacting quotient |
+| U29 | Two scalar readings per channel along a rooted tree reconstruct the connected carrier with a minimal fixed linear transcript | One first-coordinate readout, calibrated nonzero local/mixing controls, stated same-input transcript contract | WRITTEN_PROOF; 167 full-rank transcripts, 1,298 basis-vector decoder checks and chronological-word probes; physical preparation/readout not established |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |
@@ -65,9 +68,15 @@ mathematics. Written proofs here do not imply priority.
 | W24 | Grading-sufficient memory can still miss an addressed edge response | Triangle, grading-blind state (1,-1,-1,1,1,-1) | EXACT_COUNTEREXAMPLE; grading observer rank five, addressed-response rank six |
 | W25 | Declared K/R candidate steps give different signed transcripts on the same input | Triangle witness, addressed edge (0,1), known parameter 1/2 and calibration | EXACT_MODEL_PREDICTION; maximum coordinate separation 16/15; no physical realization claimed |
 | W26 | Compressing commuting native edge steps can invent a commutator | Direct-sum R steps, endpoint-summing cut and averaging section | EXACT_COUNTEREXAMPLE; specialized U19/W13 control, both descent gates reject |
-| NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U17–U26 construct conditional bridges and constrain assemblies; inter-edge native interaction and physical identification remain open |
+| W27 | Actual step order changes the readout before compression | Two linked carriers, parameters 1/2, input (0,0,0,1) | EXACT_MODEL_PREDICTION; outputs 0 and 16/25, nonidentity group commutator |
+| W28 | A genuine lossy quotient preserves grading, a declared form and nonzero interaction | Three carriers, mixing link (0,1), cut discards isolated carrier 2 | EXACT_WITNESS; source dimension six, target four, all step intertwiners pass |
+| W29 | A partial cut inside an interacting component fails exact descent | Two linked carriers, cut keeps only one | EXACT_COUNTEREXAMPLE; full closure needs two additional scalars |
+| W30 | Aggregate cancellation is not a blind interaction component | C=(1,0,-1,0), two unlinked individually controlled carriers | EXACT_COUNTEREXAMPLE; zero initial output becomes -2/5 after a local R step |
+| W31 | Connected energy-preserving interacting family has only a definite invariant form line | Full stated family on two carriers | EXACT_CONTROL and U28 form proof; no Lorentzian metric derived |
+| W32 | Dropping mixing or local R controls changes response observability | One scalar readout on two carriers | EXACT_COUNTEREXAMPLE; rank two for either reduced catalogue, rank four for the full connected family |
+| NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U27 constructs a native-compatible interacting candidate, but its physical selection and gravitational identification remain open |
 | S0 | Associative continuation alone implies no nontrivial symmetry | Three-state chain | EXACT_COUNTEREXAMPLE; every permutation tested for commutation |
-| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U26; model transcripts are not asserted jointly accessible quantum observables |
+| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U29; preserved represented quarter-turn does not establish a Born law or physical quantum readout |
 | ST0 | Spacetime is a derived optional representation | Need construction and physical interpretation of order, locality, dimension and metric | OPEN; coframe constraint remains conditional; v0.6 repairs native grading on a declared larger carrier but does not construct a spacetime |
 | A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U2/U6/U9 minimize representation memory, not nature's action |
 | CI0 | Cut ambiguity equals physical curvature or a universal information tensor | Need a typed adapter, invariant and scope-specific proof | OPEN; U7 alone is insufficient |
@@ -112,6 +121,16 @@ cut-memory ranks and complete addressed-R response ranks, including 154 exact
 endpoint inverses. No exhaustive enumeration of physical instruments or all
 native many-body assemblies is asserted. General repair principles are inherited;
 these calculations specialize them to the stated edge/readout model.
+
+The v0.7 module adds 16 regressions for a total of **93** and binds **37** source
+files. All 75 simple interaction graphs on one through four channel labels
+are checked at phase/mixing parameters 1/2. Evidence includes 490 orthogonality/
+grading checks, 490 quarter-turn commutations, 360 readout-closure comparisons,
+700 exact component projections, and 167 minimal transcripts with 1,298
+basis-vector reconstructions and signed-probe chronological checks. Full
+invariant-form nullspaces are separately solved on all 11 graphs through three
+channels. The campaign does not enumerate all parameters, instruments or
+possible native interaction laws.
 
 The finite results are elementary self-contained mathematical consequences.
 Their role is to make the proposed programme precise and refutable; no priority

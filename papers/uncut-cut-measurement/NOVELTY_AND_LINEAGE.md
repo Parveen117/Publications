@@ -1,10 +1,10 @@
 # Novelty assessment and source lineage
 
 **Audit date: 25 September 2026. Scope: this package, the pinned Spectral I/II
-papers, and the indicated native RSC, EMK, selection and grading sources.**
+papers, and the indicated native RSC, EMK, selection, grading and interaction sources.**
 
 The package is a useful finite operational development of existing principles.
-It does not establish twenty-six independent foundational discoveries. Proposition
+It does not establish twenty-nine independent foundational discoveries. Proposition
 numbers identify statements in this draft, not priority or scientific impact.
 In particular, U1 is already exactly Spectral I Theorem 18.1. The explicit
 classification below supersedes any ambiguous use of “new results” in earlier
@@ -27,6 +27,7 @@ versions to mean additions to this particular draft.
 | U17–U20 | EMK algebra, existing curvature-separation controls, elementary invariant-form algebra and standard connection geometry | Conditional transport-to-metric reconstruction and an explicit curvature adapter. The particular multi-plane assembly is a new candidate assumption here, not a uniquely selected native law or a globally new method. |
 | U21–U23 | U18, elementary signed-graph consistency, information-invariance Theorem I/J, RKF 31, and standard torsion/coframe equations | Complete criterion within a declared coupling class, a minimum-edge signature counterexample, and conditional coframe closure for a fixed homogeneous connection. Neither physical sector selection nor a new universal field equation is claimed. |
 | U24–U26 | RKF 41/48/55 native grading, Spectral II/RKF 31 linear repair, RSC exact descent | Common-grading obstruction for the declared overlapping embeddings; exact graph-specific memory ranks; separately addressed response reconstruction. General observability and rank-repair principles are inherited. |
+| U27–U29 | RKF 51/55 Cayley flow typing, RKF 48 common cut grading, EMK-T1 cross-channel commutators, prior exact descent and linear observability | Explicit native-compatible inter-edge mixing; classification of exact real cuts for its full control family; a minimal scalar transcript. No new claim for Cayley unitarity or the existence of mixed commutators. |
 
 Spectral II additionally addresses sampling, noise/stability and completion.
 This exact finite model does not supersede those stronger analytical settings.
@@ -91,6 +92,17 @@ are explicit model predictions, not experimental gravity evidence. Targeted
 search of the inspected native and publication sources did not locate this
 specific assembly calculation; that limited audit does not establish global
 priority or exhaustive absence from the user's repositories.
+
+v0.7 supplies [a declared interacting family and lawful cuts](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md).
+EMK-T1 already contains mixed-channel commutator identities, and RKF 51 already
+licenses anti-self-dagger Cayley steps. The added work specifies an inter-edge
+family satisfying those rules, classifies its invariant real subspaces and
+observation costs, and supplies a proper lossy interacting quotient plus a
+minimal finite scalar transcript. These are representation-level advances in
+this programme using established linear-algebra methods. The preserved
+represented quarter-turn and definite form do not by themselves constitute
+quantum theory or a physical gravitational field equation. No global priority
+claim follows from this targeted source audit.
 
 A larger foundational or physical claim needs an additional result: for
 example, a faithful construction linking the native seam data to instrument

@@ -68,7 +68,7 @@ Each GitHub release is intended to be archived by Zenodo and assigned a version 
 
 **[Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation](papers/uncut-cut-measurement/)**
 starts a public research programme in which mathematical definitions and
-measurement descriptions are themselves cuts. Version 0.6 contains twenty-six
+measurement descriptions are themselves cuts. Version 0.7 contains twenty-nine
 written propositions covering target recovery, minimum repair memory,
 compatibility and clock-free continuation for entire families of arrows.
 It includes a shortest distinguishing-experiment construction, exhaustive
@@ -85,9 +85,12 @@ The coupling extension classifies compatible K/R component graphs, rejects
 minimum edge count as a unique signature selector, and constrains a homogeneous
 coframe profile for a fixed connection. The native-grading extension proves an
 overlapping-pair obstruction and derives exact target-relative linear memory
-costs for a larger edge carrier. Current evidence includes 77 regressions,
-771 connected graph-memory checks, and retained earlier campaigns including
-646 signed coupling graphs and 240 independent curvature-matrix comparisons.
+costs for a larger edge carrier. The interaction extension supplies graded
+inter-edge mixing, classifies its exact cuts, and constructs a proper lossy
+quotient preserving nonzero interaction. Current evidence includes 93
+regressions, 75 interaction graphs and 167 minimal response transcripts, with
+the earlier graph-memory, signed-coupling and conditional curvature campaigns
+retained in the same source-bound certificate.
 Spacetime and the quantum/classical correspondence are explicit derivation
 targets. See the manuscript, claim ledger and reproducible certificate in the
 programme folder; the finite checks do not establish a complete physical theory.

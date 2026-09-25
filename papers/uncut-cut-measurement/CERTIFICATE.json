@@ -834,7 +834,142 @@
     "native_multi_pair_interaction_selected": false,
     "physical_instrument_or_gravity_identification": false
   },
-  "protocol": "UNCUT_CUT_MEASUREMENT_V0_6",
+  "native_interaction_and_lawful_cuts": {
+    "by_dimension": [
+      {
+        "channels": 1,
+        "connected": 1,
+        "graphs": 1
+      },
+      {
+        "channels": 2,
+        "connected": 1,
+        "graphs": 2
+      },
+      {
+        "channels": 3,
+        "connected": 4,
+        "graphs": 8
+      },
+      {
+        "channels": 4,
+        "connected": 38,
+        "graphs": 64
+      }
+    ],
+    "controls": {
+      "W27_actual_order_response": {
+        "R_then_mixing": "0",
+        "difference": "-16/25",
+        "group_commutator": [
+          [
+            "93/125",
+            "64/125",
+            "-24/125",
+            "-48/125"
+          ],
+          [
+            "-64/125",
+            "93/125",
+            "48/125",
+            "-24/125"
+          ],
+          [
+            "24/125",
+            "-48/125",
+            "93/125",
+            "-64/125"
+          ],
+          [
+            "48/125",
+            "24/125",
+            "64/125",
+            "93/125"
+          ]
+        ],
+        "initial_state": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "mixing_then_R": "16/25"
+      },
+      "W28_lossy_interacting_quotient": {
+        "grading_and_form_descend": true,
+        "lost_component": [
+          2
+        ],
+        "nonzero_target_commutator": [
+          [
+            "0",
+            "0",
+            "-8/25",
+            "-16/25"
+          ],
+          [
+            "0",
+            "0",
+            "16/25",
+            "-8/25"
+          ],
+          [
+            "-8/25",
+            "-16/25",
+            "0",
+            "0"
+          ],
+          [
+            "16/25",
+            "-8/25",
+            "0",
+            "0"
+          ]
+        ],
+        "source_dimension": 6,
+        "target_dimension": 4
+      },
+      "W29_cut_inside_connected_component": {
+        "exact_descent": false,
+        "minimum_extra": 2
+      },
+      "W30_cancellation_is_not_blind_component": {
+        "after_local_R": [
+          "-2/5"
+        ],
+        "closed_observer_rank": 4,
+        "initial": 0
+      },
+      "W31_connected_invariant_form": {
+        "Lorentz_signature_derived": false,
+        "nonzero_forms_definite": true,
+        "space_dimension": 1
+      },
+      "W32_missing_control": {
+        "full_connected_family_rank": 4,
+        "local_phases_only_rank": 2,
+        "mixing_only_rank": 2
+      }
+    },
+    "counts": {
+      "chronological_word_checks": 1298,
+      "component_projection_intertwiners": 700,
+      "connected_graphs": 44,
+      "decoder_basis_reconstructions": 1298,
+      "full_invariant_form_solves": 11,
+      "graded_orthogonal_steps": 490,
+      "interaction_graphs": 75,
+      "optimal_transcripts": 167,
+      "quarter_turn_commutations": 490,
+      "readout_closure_comparisons": 360
+    },
+    "coverage": "All simple interaction graphs on 1-4 two-component channels, phase=mixing=1/2. Every channel first-coordinate readout plus one aggregate row. Every root on connected graphs for minimal transcripts. Full symmetric-form nullspaces on 1-3 channels.",
+    "interaction_graph_and_strengths_supplied": true,
+    "native_rules_used": "Real anti-self-dagger generators, common J=I tensor K, exact Cayley steps; parameters are protocol labels, not a physical clock.",
+    "physical_gravity_identification": false,
+    "quantum_readout_or_instrument_realized": false
+  },
+  "protocol": "UNCUT_CUT_MEASUREMENT_V0_7",
   "represented_blocks": {
     "entry_alphabet": [
       -1,
@@ -851,14 +986,16 @@
     "coframe_profile_constrained_within_supplied_homogeneous_class": true,
     "empirical_validation": false,
     "formal_proof_assistant_verification": false,
-    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23 and NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26 under stated hypotheses; no priority claim for standard methods",
+    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26 and NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29 under stated hypotheses; no priority claim for standard methods",
+    "genuine_lossy_quotient_preserves_declared_interaction": true,
     "homogeneity_derived_from_native_law": false,
     "independent_review": false,
     "minimum_nature_action_derived": false,
     "model_response_transcript_physically_realized": false,
+    "native_compatible_inter_edge_candidate_constructed": true,
     "native_grading_repair_on_declared_edge_assembly": true,
     "native_gravity_law_physically_identified": false,
-    "native_inter_edge_interaction_derived": false,
+    "physical_inter_edge_law_selected_from_primitive": false,
     "physical_quantum_classical_derivation": false,
     "physical_spacetime_derivation": false,
     "post_cut_smooth_chart_is_supplied": true,
@@ -978,20 +1115,22 @@
   },
   "source_sha256": {
     "ADMISSIBLE_CONTINUATION.md": "dd71c56c3bb1593d5cc5afb5fe66c118216be94c933b7961e3bb52cce445a3c5",
-    "CLAIMS.md": "54c0fdb85cd0b7fef91b3005a9fb608702af4cd7413214b6e1dc191e8c4a745d",
+    "CLAIMS.md": "a7c7113e0360ad72aea20e26a33c53259d95521332b5fae8719616da4397e1b8",
     "FAMILY_CONTINUATION.md": "847e994bf6ec2990f4727e7ac6b25374fd8d5aaa94914c7a668fff25c854e3db",
     "GRADING_SOURCE_PINS.json": "670cc69d25bbb3f45b0dabdcda955e5acfaafb70ee605867201c9a047b0efe8c",
     "GRAVITY_BEFORE_CURVATURE.md": "9271e6063aac15382df8aeaff4ca39e28be92460687bc6bd54b60820ec90bbe5",
     "GRAVITY_SOURCE_PINS.json": "0025efcc8048896b0e6a02b23df84beaf4bea2c46badce54d8c19865a03e2f95",
+    "INTERACTION_SOURCE_PINS.json": "1b455519dbe92b83aa98012059ab1774e075c26279a03bcf81beeebbfa136bb1",
     "MANUSCRIPT.md": "a95cee99c7f55ebe861d1ded782aa710fe1934354f789b19d6990873da7fdf32",
-    "NATIVE_GRADING_AND_SEAM_MEMORY.md": "8d0b48ae37f74e17a3406ea1ecfb2f7fbb263291917c49275416489d8ec488f7",
-    "NOVELTY_AND_LINEAGE.md": "e40ca52e491b551c43fa12cf513de6f6920f43ad043a5c49d838759fe4a96b0b",
-    "README.md": "048a9e2b2943792e554b51ab48fba72d00397862e40dfa9a0030de25138c3c3f",
-    "RESEARCH_PROGRAMME.md": "2d01ac1441eb1b93a162ccd37ecc557aa013b2a27b4fdbe68141cce88cda6f0e",
+    "NATIVE_GRADING_AND_SEAM_MEMORY.md": "247c3f652cabacfaf9338c4900037baf8c5d6941fbdd56134ecace532174a051",
+    "NATIVE_INTERACTION_AND_LAWFUL_CUTS.md": "ac37333fb1aa315ffe41f6ad821bd1437ddb4a2270cc065f65820b270bb4ea69",
+    "NOVELTY_AND_LINEAGE.md": "e720b455ae3f3b1a8f8fe0433d181304054f975bf44321ad11d277e9044f637c",
+    "README.md": "6d579b75aaf9a292c80626986664ab8d254893d31574853d529bebcf79ae57e7",
+    "RESEARCH_PROGRAMME.md": "5109deb3083a24f7f15b9d492a16c415b99c73a4519d53aa4f452d72b57d60bc",
     "SECTOR_AND_COFRAME_SELECTION.md": "d9180edd7fef49f24116f5b28db8642463525f9b89030be2129185f25d10db5d",
     "SELECTION_SOURCE_PINS.json": "75cdff089cbad4ef638c64204147cdf9b3f8cb9688e742b8572afe3f4075f869",
     "SOURCE_PINS.json": "83811fbe301b92812bed1d3f0a28771c9163fbaf0bbd92392990aa134ef3bc7a",
-    "certificate.py": "27b36c60a46c443bf92434e48388364005fe0218ecffa990639858bbeb34dd30",
+    "certificate.py": "896446e58ed9551861356aedc4a071de590768d462c332514994dde1d0c107a3",
     "family_certificate.py": "91b949103dc086b271187894d6a1ce0c34328b91b1bfc361aa40fed42b74e429",
     "family_model.py": "db7e2505667eb7eb85bf7e6f75eee46348935f79875528e77f0eef3ed65a535a",
     "finite_model.py": "ff274cccdeb9ee5cc1e65db661bed733f114415c34d31f0bd3be75cc27df876a",
@@ -999,6 +1138,8 @@
     "grading_model.py": "b4921f85e348ee987d340660fc02bb20a9b3182e00e365bf8db3f30b686c4bf0",
     "gravity_certificate.py": "d38dc8b204669aeeb09c9dd4f0fbcc6786dcfd1c90a496a202a7efa6175781b7",
     "gravity_model.py": "20346e44998ee42a655adf38b319e219d3f1dedf79b73993fa7d279355175cb7",
+    "interaction_certificate.py": "22b0b7c67142150dce6be025313f85af5992928a671bb7c02f1b76e52489a3e9",
+    "interaction_model.py": "887708a90d5410f2da8200b28f441c5240e590f5bc8ac50e981d7433dc9b6335",
     "partial_certificate.py": "293e19c34558e84d140b0cef0fee857a77729a39410d645e01bad9676a742a04",
     "partial_model.py": "92bad02105884f4dc3c3e1da7415998eb2048f4c2c9e31c4bbd8a60678c7f270",
     "selection_certificate.py": "848ab2d0bc64e8057f4cec7e9fef4ae0e502b1392f5257985053292aa0ab7f66",
@@ -1007,6 +1148,7 @@
     "tests/test_finite_model.py": "5f53ea7ee064f5dbcab1523b22222638370c626aa25a0cd5858c5e82c3cb13ae",
     "tests/test_grading_model.py": "9740b5c92947daa3e58d64bc0bb4a00a74a1a0aa504ee5bef7988d8d7f6b6c07",
     "tests/test_gravity_model.py": "84d910732a1840ae12be4e9b76056c2b67c62f071356806b9c81013ee184893d",
+    "tests/test_interaction_model.py": "281072a97b92032b5c8f69bb42db970f6f1d06dca304dbc65396096d52323cf4",
     "tests/test_partial_model.py": "5c10db7f08c52d5c244eeddadc85506e6645bc8ecba3b22c1528f385510484d0",
     "tests/test_selection_model.py": "53a3f53df42bb6076f6862ca774991cd993263747ed3c8521032d32e91a65f0a"
   },

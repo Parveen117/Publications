@@ -1,4 +1,4 @@
-# Research programme after v0.6
+# Research programme after v0.7
 
 ## Foundational decision
 
@@ -10,7 +10,7 @@ Keep both candidate starts explicit until a derivation distinguishes them:
   meaningful continuation relation; compatibility across further cuts constrains
   admissible laws.
 
-U1–U26 do not choose between them. Neither candidate identifies a labelled finite
+U1–U29 do not choose between them. Neither candidate identifies a labelled finite
 set, a quantum state vector or a spacetime point with uncut ground.
 
 ## Completed in v0.2: more than one admissible continuation
@@ -97,19 +97,39 @@ local grading is not yet a construction of the interacting native carrier.
 Evidence: 77 regressions, 771 connected graph-rank checks, 43 full small-graph
 grading/observer/response checks and 154 endpoint response inverses.
 
-## Next concrete derivation: native inter-edge interaction and its lawful cut
+## Completed in v0.7: graded inter-edge interaction and exact cuts
 
-Construct a nontrivial interaction between retained edge carriers with a
-declared common native grading. A direct sum alone is insufficient. Specify
-which native arrows can change edge identity, which readouts they preserve,
-and what additional memory their closure requires. Use the W24 target change
-and W26 false-commutator controls to reject an inadequate observer.
+[U27–U29](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md) provide an explicit real
+anti-self-dagger mixing family with one common native cut grading. Its
+interaction with local R steps is genuinely noncommutative before compression.
+Whole unobserved interaction components can be cut away exactly; a six-to-four
+example preserves the nonzero interaction, grading and its declared form target.
 
-Then prove an exact intertwiner to any proposed geometric carrier. If local
-pure grading must be changed or a larger carrier retained, state that choice
-and its cost before evaluating a desired metric signature. The model-level
-sector transcripts are ready for a proposed instrument adapter; their actual
-preparation, protocol calibration and readout accessibility still need proof.
+A nonzero readout of a connected component requires all of that component's
+real information for exact closure under the full catalogue. A two-readings-
+per-channel protocol attains the scalar reconstruction minimum. The selected
+family also preserves a represented quarter-turn. This provides mathematical
+structure for a later shared representation, without a physical probability law.
+
+Evidence: 93 regressions, 75 interaction graphs, 360 closure comparisons,
+700 exact projection intertwiners and 167 minimal transcripts. The coupling
+graph and strengths are still candidate inputs. The complete invariant form
+of a connected family is definite; Lorentzian geometry is not obtained by
+renaming that form.
+
+## Next concrete derivation: a gravitational target and its representation
+
+Choose a native response target proposed to be gravitational, state what makes
+that interpretation operational, and justify the interaction data before
+fitting a desired signature or force law. The exact ordered responses and
+lawful quotient now provide a candidate test setting. Decide which target is
+preserved by a geometric readout and prove its adapter; the full positive
+invariant form cannot simply be identified with a Lorentzian metric.
+
+For a quantum reading of the same data, the represented quarter-turn and
+energy preservation must be extended by a justified preparation/readout law.
+Compare the two representations on a common target. Neither the scalar
+transcript nor the native commutator alone establishes that physical bridge.
 
 ## Remaining physical selection problem
 
@@ -208,7 +228,7 @@ resolved within its stated hypotheses rather than hidden by a single symbol.
 
 ## Publication gates
 
-v0.6 is a public working draft with exact finite evidence. A later paper edition
+v0.7 is a public working draft with exact finite evidence. A later paper edition
 should add independently checked proofs, a complete empirical or physical
 identification where claimed, and a compiled manuscript matching its claim
 ledger. A GitHub release/DOI follows the repository's existing release rule;
