@@ -1,4 +1,4 @@
-# Claim ledger — v0.1
+# Claim ledger — v0.2
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -15,14 +15,21 @@ independent review or physical validation.
 | U5 | Observed deterministic continuation exists iff next readouts are fibre-constant; lawful refinements intertwine | Declared total T on X; comparison maps well-defined | WRITTEN_PROOF; every endomap and cut through four states, plus every applicable refinement |
 | U6 | History refinement terminates by depth N-q and is the coarsest dynamically closed refinement | N presented states, q initial readouts; one deterministic T; unrestricted access to model signatures for the construction | WRITTEN_PROOF; exhaustive comparison against all closed refining partitions through four states |
 | U7 | R_delta_gamma - R_delta R_gamma = J_delta C_gamma | Declared composable linear transports; complementary cut projections | INHERITED_WRITTEN_PROOF from RSC; all scalar 2x2 block pairs with entries -1,0,1 checked |
+| U8 | Coarsest observer closed under every arrow in a declared family; termination by N-q | Finite nonempty X; finite family of total deterministic arrows; all words admitted | WRITTEN_PROOF in FAMILY_CONTINUATION.md; exhaustive pairs of arrows and cuts through three states; 17 extra four-state fixtures |
+| U9 | Minimum family repair alphabet equals maximum continuation-class count within an initial fibre; adding arrows cannot reduce it | Fixed X and initial cut; arbitrary deterministic repair channels permitted | WRITTEN_PROOF; smaller memory alphabets exhaustively rejected on checked cases |
+| U10 | All words descend; adjoining generated composites or identities preserves closure and memory cost | Same generated collection of endomaps; known arrow labels | WRITTEN_PROOF; generator and observed-composition checks; W5 separates invariant memory from generator-dependent depth |
+| U11 | Family closure is extensive, monotone, idempotent and preserves joint cuts; refinement maps intertwine | Same arrow family and carrier for all compared cuts | WRITTEN_PROOF; exhaustive cut pairs for two-arrow families through three states |
+| U12 | A shortest distinguishing word exists within depth N-q for inequivalent candidates; pair search terminates | Finite deterministic family; all words admissible and labels known | WRITTEN_PROOF; 33,206 candidate-pair checks against direct shortest-word enumeration |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |
 | W4 | One-step information can miss distinctions needed later | Four-state chain with declared cut | EXACT_WITNESS; depth 2, three repair labels, two bits |
+| W5 | Joining separate single-arrow sufficient observers can miss a distinction revealed by a mixed word | Four-state model with declared A, B and c | EXACT_COUNTEREXAMPLE; individual memory sizes 1 and 2; family size 3; shortest separating word (A,B) |
+| W6 | A finer initial observation can require more future-prediction memory | Three-state model; same T, different initial cuts | EXACT_COUNTEREXAMPLE; memory size rises from 1 to 2; does not contradict U3's fixed-target bound |
 | S0 | Associative continuation alone implies no nontrivial symmetry | Three-state chain | EXACT_COUNTEREXAMPLE; every permutation tested for commutation |
-| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 |
+| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U12 |
 | ST0 | Spacetime is a derived optional representation | Need construction, hypotheses and physical interpretation of order, locality, dimension and metric | OPEN IN THIS PACKAGE; no new audit or promotion of other spacetime claims |
-| A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U2/U6 minimize representation memory, not nature's action |
+| A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U2/U6/U9 minimize representation memory, not nature's action |
 | CI0 | Cut ambiguity equals physical curvature or a universal information tensor | Need a typed adapter, invariant and scope-specific proof | OPEN; U7 alone is insufficient |
 | G0 | Complete quantum gravity; RH or Yang–Mills closure | Not premises of this package | NOT CLAIMED |
 
@@ -30,7 +37,10 @@ independent review or physical validation.
 
 The certificate enumerates all finite cuts/targets up to renaming labels for
 1 <= |X| <= 4, all total endomaps on those carriers, and the specifically
-declared represented block family. Hashes bind sources and evidence. This
+declared represented block family. The extension separately enumerates all
+ordered pairs of arrows and cuts through three states (3,678 cases), plus
+17 declared four-state fixtures. It does not claim exhaustive two-arrow
+coverage on four-state carriers. Hashes bind sources and evidence. This
 coverage does not imply that a finite carrier models every physical possibility.
 
 The finite results are elementary self-contained mathematical consequences.

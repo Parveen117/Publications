@@ -1,4 +1,10 @@
 {
+  "extension_lineage": {
+    "dependency": "U8-U12 extend the finite U1-U6 definitions and proofs; no new physical axiom imported",
+    "previous_public_version_commit": "883ca33090664890fee0e22f1c10b383a859e8d4",
+    "source_document": "FAMILY_CONTINUATION.md",
+    "version": "0.2"
+  },
   "linear_representation_scope": "U7 only; complementary projections and composable transports",
   "mathematical_grammar": [
     "nonempty finite sets",
@@ -9,7 +15,7 @@
     "integer arithmetic"
   ],
   "method": "Local full source bytes matched Git blob SHAs in the pinned remote tree",
-  "new_propositions": "U1-U6 proved self-contained under declared finite assumptions",
+  "new_propositions": "U1-U6 and U8-U12 proved self-contained under declared finite assumptions",
   "pending_corrections": "https://github.com/Parveen117/Publications/pull/4",
   "pending_corrections_are_mathematical_dependencies": false,
   "physical_axioms_imported_into_U1_U6": [],

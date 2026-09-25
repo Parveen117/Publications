@@ -6,12 +6,15 @@ from itertools import combinations, permutations, product
 from pathlib import Path
 
 import finite_model as fm
+import family_certificate
 
 HERE = Path(__file__).resolve().parent
 BOUND_SOURCES = (
     "README.md", "MANUSCRIPT.md", "CLAIMS.md", "RESEARCH_PROGRAMME.md",
     "SOURCE_PINS.json", "finite_model.py", "certificate.py",
     "tests/test_finite_model.py",
+    "FAMILY_CONTINUATION.md", "family_model.py", "family_certificate.py",
+    "tests/test_family_model.py",
 )
 
 
@@ -194,17 +197,18 @@ def controls():
 def build():
     domain, counts = finite_checks()
     body = {
-        "protocol": "UNCUT_CUT_MEASUREMENT_V0_1",
+        "protocol": "UNCUT_CUT_MEASUREMENT_V0_2",
         "status": "PASS_FINITE_CHECKS",
         "arithmetic": "exact integer equality and finite enumeration; no floating point",
         "domains": domain,
         "represented_blocks": {"shape": [2, 2], "entry_alphabet": [-1, 0, 1]},
         "checks": counts,
         "controls": controls(),
+        "family_continuation": family_certificate.build_checks(),
         "source_sha256": {p: hashlib.sha256((HERE / p).read_bytes()).hexdigest()
                           for p in BOUND_SOURCES},
         "scope": {
-            "general_written_proofs": "MANUSCRIPT.md U1-U7, under their stated hypotheses",
+            "general_written_proofs": "MANUSCRIPT.md U1-U7 and FAMILY_CONTINUATION.md U8-U12, under their stated hypotheses",
             "formal_proof_assistant_verification": False,
             "uncut_identified_with_finite_carrier": False,
             "physical_quantum_classical_derivation": False,

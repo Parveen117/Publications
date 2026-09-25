@@ -137,7 +137,159 @@
       "target_partitions": 15
     }
   ],
-  "protocol": "UNCUT_CUT_MEASUREMENT_V0_1",
+  "family_continuation": {
+    "additional_four_state_scope": "W5; the U6 sharp-depth chain; identity pair on all 15 cuts",
+    "controls": {
+      "W5_mixed_words": {
+        "arrows": {
+          "A": [
+            0,
+            2,
+            2,
+            3
+          ],
+          "B": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "class_counts": [
+          2,
+          3,
+          4
+        ],
+        "depth_before_after_naming_composite": [
+          2,
+          1
+        ],
+        "diagnostic_candidates": [
+          0,
+          1
+        ],
+        "family_binary_bits": 2,
+        "family_closure": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial_cut": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "memory_sizes_A_B_family": [
+          1,
+          2,
+          3
+        ],
+        "naive_join": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "shortest_word": [
+          "A",
+          "B"
+        ],
+        "single_closures": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ]
+        ],
+        "unmixed_words_cannot_distinguish": true
+      },
+      "W6_initial_detail_can_increase_prediction_memory": {
+        "closures": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "coarse_cut": [
+          0,
+          0,
+          0
+        ],
+        "fine_cut": [
+          0,
+          0,
+          1
+        ],
+        "memory_sizes": [
+          1,
+          2
+        ],
+        "transition": [
+          0,
+          2,
+          2
+        ]
+      }
+    },
+    "counts": {
+      "closed_refinement_comparisons": 5835,
+      "cut_family_pairs_checked": 3695,
+      "diagnostic_pairs_checked": 33206,
+      "exhaustive_cut_family_pairs": 3678,
+      "four_state_fixtures": 17,
+      "generator_presentations_checked": 7390,
+      "joint_cut_comparisons": 18515,
+      "refinement_intertwiners_checked": 8857,
+      "smaller_memory_maps_rejected": 1544,
+      "subfamily_comparisons": 11084,
+      "word_descent_checks": 55403
+    },
+    "exhaustive_domains": [
+      {
+        "carrier_size": 1,
+        "cut_partitions": 1,
+        "ordered_two_arrow_families": 1,
+        "word_oracle_max_depth": 1
+      },
+      {
+        "carrier_size": 2,
+        "cut_partitions": 2,
+        "ordered_two_arrow_families": 16,
+        "word_oracle_max_depth": 2
+      },
+      {
+        "carrier_size": 3,
+        "cut_partitions": 5,
+        "ordered_two_arrow_families": 729,
+        "word_oracle_max_depth": 3
+      }
+    ],
+    "scope": {
+      "all_finite_words_admitted": true,
+      "arrow_labels_known_to_observer": true,
+      "general_proofs": "FAMILY_CONTINUATION.md U8-U12 under declared finite hypotheses",
+      "minimum_physical_action_derived": false,
+      "physical_memory_acquisition_derived": false,
+      "quantum_or_spacetime_identification": false
+    },
+    "status": "PASS_FINITE_CHECKS"
+  },
+  "protocol": "UNCUT_CUT_MEASUREMENT_V0_2",
   "represented_blocks": {
     "entry_alphabet": [
       -1,
@@ -152,7 +304,7 @@
   "scope": {
     "empirical_validation": false,
     "formal_proof_assistant_verification": false,
-    "general_written_proofs": "MANUSCRIPT.md U1-U7, under their stated hypotheses",
+    "general_written_proofs": "MANUSCRIPT.md U1-U7 and FAMILY_CONTINUATION.md U8-U12, under their stated hypotheses",
     "independent_review": false,
     "minimum_nature_action_derived": false,
     "physical_quantum_classical_derivation": false,
@@ -160,13 +312,17 @@
     "uncut_identified_with_finite_carrier": false
   },
   "source_sha256": {
-    "CLAIMS.md": "064b49411b203be4fdefe3943c972c0e198dd7fa01c1fa0c8addd05dda16a0a2",
-    "MANUSCRIPT.md": "a87fbb6557561f28f43cae83ba4cfb0c33f53d45b4ef848f61ccc811e874b286",
-    "README.md": "63bd92b3f9eabdbcc066dd5d1187cc98553fffc3baaf81c5ca73733cc02c038f",
-    "RESEARCH_PROGRAMME.md": "8bcd1ed94473103b69892761ba52e8f9dc6de26b01f8e320b9f37d7e8cc58758",
-    "SOURCE_PINS.json": "f9a22a135f1e07ed3fa26afab8ab3b6660060a0d507bf4937345a6876c21eb55",
-    "certificate.py": "c2eec8b25336c9c5dd9c8064b13be3abc89a9d63ab506ef83a9728b8d6f48931",
+    "CLAIMS.md": "15ea30b104c7c729765c30e520ba7cd2fd2d2968af8514c1a5cc1c5e90d38c64",
+    "FAMILY_CONTINUATION.md": "209c3d567ab1bd80f8fb473073cc748ba1210d97836f66ac3b0ae612fe134ab6",
+    "MANUSCRIPT.md": "3e7cc216d3676d5936bf2673794fc8dc5bd7699bb56c7ac02dc3ef2b75764caa",
+    "README.md": "b916651dfc10607f8ebbd4804fc5b7c2aba06375e90d9c74e5636b65b23a8148",
+    "RESEARCH_PROGRAMME.md": "f47fa3d279b0b4b10d483134255205a31df0888da058a5885584ac3ecb9cf15c",
+    "SOURCE_PINS.json": "2fb18996a53d778150f11c015edac6c0fa3eb843f39a05254bacfdfbc761f3cb",
+    "certificate.py": "48c7539f91c9b041b5a0f6e8434849244dec9d31a8d5ebdac4030e522baa1e92",
+    "family_certificate.py": "91b949103dc086b271187894d6a1ce0c34328b91b1bfc361aa40fed42b74e429",
+    "family_model.py": "db7e2505667eb7eb85bf7e6f75eee46348935f79875528e77f0eef3ed65a535a",
     "finite_model.py": "ff274cccdeb9ee5cc1e65db661bed733f114415c34d31f0bd3be75cc27df876a",
+    "tests/test_family_model.py": "11d104afb3f7d9521718632b3768eb94c63e5e2e542ac091ed086179541e7d8d",
     "tests/test_finite_model.py": "5f53ea7ee064f5dbcab1523b22222638370c626aa25a0cd5858c5e82c3cb13ae"
   },
   "status": "PASS_FINITE_CHECKS"

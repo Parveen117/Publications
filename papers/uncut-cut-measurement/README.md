@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 0.1, 25 September 2026.**
+**Monty Dabas — working research programme, version 0.2, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -8,10 +8,11 @@ must therefore retain its declared observational context and unresolved
 information. Spacetime is a possible derived representation of the programme;
 it is not an input to the finite results here.
 
-Read [the manuscript](MANUSCRIPT.md), then the [claim ledger](CLAIMS.md).
+Read [the foundational manuscript](MANUSCRIPT.md), the
+[family-continuation extension](FAMILY_CONTINUATION.md), then the [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
 
-## What this first version establishes
+## Foundational results U1–U7
 
 Within an explicitly declared finite presentation, the manuscript proves:
 
@@ -33,6 +34,34 @@ The inherited RSC cut-corner composition identity is restated and checked
 separately as a downstream linear representation. These are elementary finite
 derivations and a connection to the existing native framework, not a claim of
 priority for the underlying mathematical facts.
+
+## New in v0.2: memory for all admitted continuations
+
+[U8–U12](FAMILY_CONTINUATION.md) extend the construction to a declared finite
+family of arrows and every word they generate:
+
+- The coarsest observer closed under the whole family exists constructively.
+- Its minimum additional memory is exactly the largest number of distinct
+  continuation classes hidden behind a single initial readout.
+- Naming an already available composite as a new arrow changes neither that
+  partition nor its memory cost. Refinement depth can still change.
+- Closing two initial observations jointly agrees with joining their closures,
+  provided the admitted arrow family is the same.
+- A finite pair search finds a shortest experiment distinguishing two candidates,
+  or proves that no word in the declared family distinguishes them.
+
+**Separating example:** an observer sufficient for repeated A and an observer
+sufficient for repeated B can still miss a distinction revealed by A followed
+by B. In the four-state W5 example the family needs **three memory labels**,
+although the separate requirements are one and two. The shortest diagnostic
+word is (A,B). W6 shows why extra present detail can also increase the future
+prediction task rather than universally reducing its memory cost.
+
+Local evidence: **27 regression tests**, **3,678 exhaustive cut/two-arrow-family
+cases through three states**, 17 additional four-state fixtures, and 33,206
+candidate-pair diagnostic checks. The original v0.1 exhaustive domains are
+retained separately in the certificate. These counts are finite coverage,
+not a replacement for the written proofs.
 
 ## Reproduce
 

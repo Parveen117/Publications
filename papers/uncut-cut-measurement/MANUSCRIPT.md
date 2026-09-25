@@ -1,7 +1,7 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
 **Monty Dabas**  
-Working manuscript v0.1 — 25 September 2026
+Working manuscript v0.2 — 25 September 2026
 
 ## Abstract
 
@@ -17,8 +17,11 @@ refinement on which a declared clock-free transition closes. Counterexamples
 separate agreement from completeness, pairwise compatibility from global
 realizability, and continuation consistency from physical symmetry. The
 recognition-seam composition law connects the finite discussion to the existing
-native repository. The resulting programme seeks laws compatible across cuts;
-the physical derivation of quantum and classical descriptions remains open.
+native repository. The v0.2 companion extends closure to an entire declared
+family of arrows, proves its exact memory requirement, and constructs shortest
+distinguishing continuations. The resulting programme seeks laws compatible
+across cuts; the physical derivation of quantum and classical descriptions
+remains open.
 
 ## 1. The starting point includes its own limitation
 
@@ -299,8 +302,9 @@ The initial readout 0 conceals three distinct eventual histories, so three
 memory labels, or two fixed-length bits, are necessary and sufficient.
 
 For infinitely many possibilities, the finite termination argument does not
-apply. Multiple admissible transitions, nondeterminism, noisy observations,
-and operationally accessible memory each require their own extension.
+apply. A finite family of deterministic arrows is treated in
+[U8–U12](FAMILY_CONTINUATION.md). Nondeterminism, noisy observations, restricted
+word admissibility and operationally accessible memory require further work.
 
 ## 9. Connection to the native seam composition identity
 
@@ -396,3 +400,18 @@ All three are pinned to correction commit
 using the finite definitions above. U7 restates and proves the inherited
 composition identity. The exact certificate checks finite instances and
 counterexamples; it does not convert the physical proposals into theorems.
+
+## 13. Family continuation extension (v0.2)
+
+[FAMILY_CONTINUATION.md](FAMILY_CONTINUATION.md) contains U8–U12 with complete
+proofs. It derives a common closed observer and its exact minimum memory for
+all words in a declared family of finite deterministic arrows. It also proves
+compatibility under joint observation and invariance under adjoining an
+already generated composite, and supplies a shortest distinguishing word
+when two candidates have different future observations.
+
+The new W5 example separates per-arrow closure from closure under mixed words:
+the sequence A then B requires distinctions absent from both unmixed histories.
+W6 prevents the fixed-target refinement bound from being misapplied when the
+future-prediction target itself changes. All of these statements remain
+relative to a declared presentation and operationally available arrows.

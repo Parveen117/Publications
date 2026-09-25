@@ -1,4 +1,4 @@
-# Research programme after v0.1
+# Research programme after v0.2
 
 ## Foundational decision
 
@@ -10,23 +10,36 @@ Keep both candidate starts explicit until a derivation distinguishes them:
   meaningful continuation relation; compatibility across further cuts constrains
   admissible laws.
 
-U1–U7 do not choose between them. Neither candidate identifies a labelled finite
+U1–U12 do not choose between them. Neither candidate identifies a labelled finite
 set, a quantum state vector or a spacetime point with uncut ground.
 
-## Next concrete module: more than one admissible continuation
+## Completed in v0.2: more than one admissible continuation
 
-Extend U6 to a finite set of declared transition arrows. Refine a cut by all
-one-step successor signatures until every admitted arrow descends. Prove
-termination and coarseness for that declared family, and test whether discarding
-one arrow creates false closure. Define the construction with composition and
-recognition, without a clock parameter. A later extension can allow transition
-relations rather than deterministic arrows.
+[U8–U12](FAMILY_CONTINUATION.md) provide the coarsest common closed observer,
+exact repair memory, invariance under redundant composite generators, joint-cut
+compatibility and a shortest distinguishing experiment. W5 proves that testing
+each generator separately can miss a distinction revealed by a mixed word.
+W6 shows that a finer initial cut can ask a harder future-prediction question.
+
+Evidence includes 27 regression tests, 3,678 exhaustive cut/two-arrow cases
+through three states and 17 explicit four-state fixtures. The foundational
+v0.1 checks remain in the same source-bound certificate.
+
+## Next concrete module: which experiments are admissible?
+
+The present family model allows every word of total arrows on one carrier.
+Extend it to typed or partial arrows and recover the middle recognition state
+before composing. Record which interventions are enabled at a candidate state;
+an experiment that is undefined or forbidden cannot be used as a diagnostic
+witness. Prove a closure result that respects these restrictions, and distinguish
+inapplicability from a negative measurement. This connects directly to the
+native recovered-middle-identity requirement in pinned source S1.
 
 Acceptance conditions:
 
 1. The arrow family and target are fixed before assessing closure.
 2. Every claimed comparison map is well-defined on whole fibres.
-3. A counterexample must separate one-arrow closure from family closure.
+3. A counterexample must show how ignoring admissibility invents a false diagnostic word.
 4. Extra memory is operationally identified; a decoder is not an instrument.
 5. Exhaustive finite evidence and the general proof have separate statuses.
 
@@ -78,7 +91,7 @@ resolved within its stated hypotheses rather than hidden by a single symbol.
 
 ## Publication gates
 
-v0.1 is a public working draft with exact finite evidence. A later paper edition
+v0.2 is a public working draft with exact finite evidence. A later paper edition
 should add independently checked proofs, a complete empirical or physical
 identification where claimed, and a compiled manuscript matching its claim
 ledger. A GitHub release/DOI follows the repository's existing release rule;
