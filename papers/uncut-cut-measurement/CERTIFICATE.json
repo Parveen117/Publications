@@ -1389,7 +1389,71 @@
     "lifted_integer_endpoint_collision": 3,
     "positive_thermodynamic_closure_independent": true
   },
-  "protocol": "UNCUT_CUT_MEASUREMENT_V1_7_ATOM_INTERFEROMETER_INTERFACE",
+  "protocol": "UNCUT_CUT_MEASUREMENT_V1_8_QUANTUM_EMK_LOCAL_GEOMETRY",
+  "quantum_emk_local_geometry_bridge": {
+    "cut_controls": {
+      "Z_invariance_alone_preserves_chi": false,
+      "Z_invariant_lossy_cut_chi": "1",
+      "paired_repair_extra_scalar_channels_on_fixture": 2,
+      "uncut_chi": "1/2"
+    },
+    "emk_local_two_jet": {
+      "K_0": "-1/8",
+      "W_0": "1",
+      "W_1": "0",
+      "W_2": "1/4",
+      "global_warp_selected": false,
+      "kappa": "1/8",
+      "supplied_length_squared": "4"
+    },
+    "helical_guard": {
+      "physical_double_helix_identified": false,
+      "same_local_two_jet_different_sheet_memory": true,
+      "sheet_memory_is_local_metric_curvature": false
+    },
+    "native_iota_representation_fixture": {
+      "Z_skew_adjoint": true,
+      "Z_squared_minus_identity": true,
+      "wrong_identity_representation_rejected": true
+    },
+    "protocol": "QUANTUM_EMK_LOCAL_GEOMETRY_V1",
+    "response_plane": {
+      "A": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "G": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "GL2_label_invariance": true,
+      "chi": "1/2",
+      "det_A": "1",
+      "det_G": "2",
+      "gram_margin": "1",
+      "orientation_reversal_flips_A_not_chi": true
+    },
+    "scope": {
+      "physical_gravity_identified": false,
+      "physical_length_scale_derived": false,
+      "quantum_gravity_established": false,
+      "represented_iota_to_response_complex_structure": true,
+      "response_plane_invariant_to_emk_local_two_jet_adapter": true,
+      "spacetime_metric_derived": false
+    }
+  },
   "represented_blocks": {
     "entry_alphabet": [
       -1,
@@ -1422,8 +1486,10 @@
     "external_newtonian_reference_is_native_prediction": false,
     "flat_local_transport_can_retain_global_minus_sector": true,
     "formal_proof_assistant_verification": false,
-    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38, SHELL_CAPACITY_SELECTION.md U39-U41, THERMODYNAMIC_FOUNDATION_BRIDGE.md TF-1/TF-2, QUANTUM_CLASSICAL_BRIDGE.md QB-1/QB-3, GRAVITY_PHASE_TRANSLATOR.md GP-1/GP-2, PRE_ENTROPY_SEAM_RETURN.md SR-1/SR-2 and SPIN_HOLONOMY_GEOMETRY_GATE.md SH-1/SH-3 under stated hypotheses; no priority claim for standard Cayley inversion, Schur reduction, dephasing, thermodynamic contact geometry, flat nontrivial holonomy, spin double cover or conical deficit",
+    "full_global_emk_metric_selected_from_native_law": false,
+    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38, SHELL_CAPACITY_SELECTION.md U39-U41, THERMODYNAMIC_FOUNDATION_BRIDGE.md TF-1/TF-2, QUANTUM_CLASSICAL_BRIDGE.md QB-1/QB-3, GRAVITY_PHASE_TRANSLATOR.md GP-1/GP-2, PRE_ENTROPY_SEAM_RETURN.md SR-1/SR-2, SPIN_HOLONOMY_GEOMETRY_GATE.md SH-1/SH-3 and QUANTUM_EMK_LOCAL_GEOMETRY.md QG-1/QG-5 under stated hypotheses; no priority claim for standard Cayley inversion, Schur reduction, dephasing, thermodynamic contact geometry, flat nontrivial holonomy, spin double cover or conical deficit",
     "genuine_lossy_quotient_preserves_declared_interaction": true,
+    "helical_sheet_memory_identified_with_physical_double_helix": false,
     "homogeneity_derived_from_native_law": false,
     "independent_review": false,
     "lifted_winding_recovered_from_terminal_principal_holonomy": false,
@@ -1436,6 +1502,7 @@
     "native_coupling_values_selected_from_primitive": false,
     "native_grading_repair_on_declared_edge_assembly": true,
     "native_gravity_law_physically_identified": false,
+    "native_iota_representation_gate_constructed": true,
     "native_response_tensor_and_exact_cut_seam_constructed": true,
     "native_step_identified_with_physical_time": false,
     "native_tensor_identified_with_quantum_information_metric": false,
@@ -1446,13 +1513,16 @@
     "physical_gravity_experiment_passed": false,
     "physical_inter_edge_law_selected_from_primitive": false,
     "physical_inverse_square_derived_without_extra_hypotheses": false,
+    "physical_length_scale_for_emk_two_jet_derived": false,
     "physical_probe_universality_established": false,
     "physical_quantum_classical_derivation": false,
+    "physical_quantum_gravity_established": false,
     "physical_spacetime_derivation": false,
     "post_cut_smooth_chart_is_supplied": true,
     "published_atom_phase_summary_ingested": true,
     "quadratic_cost_and_shell_growth_selected_from_primitive": false,
     "quantum_density_channel_does_not_identify_native_source_response": true,
+    "response_plane_invariant_to_emk_local_two_jet_constructed": true,
     "spacetime_dimension_derived": false,
     "spin_and_vector_probes_jointly_resolve_declared_examples": true,
     "thermodynamic_equilibrium_invariant_identified_with_grading_sign": false,
@@ -1653,6 +1723,7 @@
     "PRE_ENTROPY_SEAM_RETURN.md": "2721e43d805dec88281080063f9faf8d47654698810abb5633bcc023bcef4179",
     "PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md": "5fa440c92789cc7aa0e21d996d6a97e70d59f4c87a876eafe74285205d7182cf",
     "QUANTUM_CLASSICAL_BRIDGE.md": "e7105a6e951e9eb363c22a27b433576a1b69a81fe8448f2a322b412ec9d9a068",
+    "QUANTUM_EMK_LOCAL_GEOMETRY.md": "b94c6e3b6eafb1a99bd10c2f2930fba5950ec02c70ee94b172a0aa14cef6693b",
     "README.md": "92e8826f24ecba2b12bca8cae65956db437c71f4e5ea22d3dc771e429a06bf7f",
     "RESEARCH_PROGRAMME.md": "4ce5c61b35a4c92c78e0ee247ee55e08ac7ecf9069a51f921f3dd382be618bfb",
     "RESPONSE_SOURCE_AUDIT.md": "454ada029b6bd819c43d6ea636289c164ebe9a7a21c6aa3601af93367f3a334e",
@@ -1667,11 +1738,12 @@
     "SPIN_HOLONOMY_GEOMETRY_GATE.md": "cb5ce021fa197e1590c3faf58f4e6e9b9352513da6c39c21379976a685fb3e41",
     "THERMODYNAMIC_FOUNDATION_BRIDGE.md": "a9bed547e21bfe7787d989d2f9d411aaa6f7f1ddddbeed787f0971d083e08e7b",
     "TRANSLATOR_REPO_AUDIT.md": "2b29dc46ab1c869927c4ff35b1e77613ba9b5b088b288ff5e4cb73be615b6e3f",
-    "certificate.py": "d4278e5131847aa6a7d47626d4ebe3af90535874900676a38aaa927585dad22e",
+    "certificate.py": "e3cb25eefbabd8c9b181429546c874ae4ae27cc58c135210a0c5c3f9fbe77029",
     "certificates/atom_interferometer_bridge.py": "ee50a00d8a2e19e10f730d006ca99dc87fbeaf1395b8451a525346fe4bf04e9a",
     "certificates/gravity_phase_translator.py": "aa6389f958489f4587d6f2214b4f236df213e7b295bf34a6c44922c12caa204a",
     "certificates/pre_entropy_seam_return.py": "0a3e04c33799dbadc6742a28ac6ec4ee6d815625c880e7983fe94b8a25389f87",
     "certificates/quantum_classical_bridge.py": "16504632b0dd05bcd0f0a2524a5d659aab458255311d5d2fcd9b3a7003586587",
+    "certificates/quantum_emk_local_geometry.py": "e94431e92ee91475b33c720b5ec08388be57a2cf4b68444d2d447c62205303d4",
     "certificates/spin_holonomy_geometry_gate.py": "ead8c432f690bb9ccdbe279f679d95a2edf81839e03f1dbb8e8617c86bc16d13",
     "certificates/thermodynamic_foundation_bridge.py": "e5f3632ae0b6e784dbfe7a8926df1dab7f4e1142c09e37b9b8884b7f34078650",
     "experiments/ATOM_INTERFEROMETER_REFERENCE.json": "dee3a1f2b0f23a1af41d0d42c70dda1c7d10a4278b442f29ae2abc53a0d04683",
