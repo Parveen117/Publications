@@ -1,0 +1,57 @@
+{
+  "version": "1.1",
+  "parent_commit": "57b4eb44a009e0a2d2b09bdd0c424d6d16e95e3e",
+  "method": "Full-file blob SHA matched remote immutable tree; SHA-256 recorded",
+  "source_files": [
+    {
+      "id": "GS1",
+      "repository": "Parveen117/Publications",
+      "commit": "57b4eb44a009e0a2d2b09bdd0c424d6d16e95e3e",
+      "path": "papers/uncut-cut-measurement/NATIVE_INTERACTION_AND_LAWFUL_CUTS.md",
+      "role": "U27 admits arbitrary supplied connected link graph; U28 invariant form and observer closure do not select the graph",
+      "git_blob_sha": "c72763d2ad7f01d356a74a92f3a29a56268e4903",
+      "sha256": "ac37333fb1aa315ffe41f6ad821bd1437ddb4a2270cc065f65820b270bb4ea69",
+      "url": "https://github.com/Parveen117/Publications/blob/57b4eb44a009e0a2d2b09bdd0c424d6d16e95e3e/papers/uncut-cut-measurement/NATIVE_INTERACTION_AND_LAWFUL_CUTS.md"
+    },
+    {
+      "id": "GS2",
+      "repository": "Parveen117/Publications",
+      "commit": "57b4eb44a009e0a2d2b09bdd0c424d6d16e95e3e",
+      "path": "papers/uncut-cut-measurement/SECTOR_AND_COFRAME_SELECTION.md",
+      "role": "U22 records graph/sector selection nonuniqueness",
+      "git_blob_sha": "dcf1bcaf722b72f5eb7f0633fd1b1a0bf84edf5c",
+      "sha256": "d9180edd7fef49f24116f5b28db8642463525f9b89030be2129185f25d10db5d",
+      "url": "https://github.com/Parveen117/Publications/blob/57b4eb44a009e0a2d2b09bdd0c424d6d16e95e3e/papers/uncut-cut-measurement/SECTOR_AND_COFRAME_SELECTION.md"
+    },
+    {
+      "id": "GS3",
+      "repository": "Parveen117/Publications",
+      "commit": "57b4eb44a009e0a2d2b09bdd0c424d6d16e95e3e",
+      "path": "papers/uncut-cut-measurement/SOURCE_RESPONSE_AND_GRAVITY_TESTS.md",
+      "role": "U36-U38 source cost, effective capacity and the need for independent ruler and shell response",
+      "git_blob_sha": "4659c1e4b2c3e2d0a4788606f0b1b71cf7c9991f",
+      "sha256": "eacbdd0aa9e1d2045a839ad65c22ee7bf2221512fef9b947c3d281d72694ffa3",
+      "url": "https://github.com/Parveen117/Publications/blob/57b4eb44a009e0a2d2b09bdd0c424d6d16e95e3e/papers/uncut-cut-measurement/SOURCE_RESPONSE_AND_GRAVITY_TESTS.md"
+    },
+    {
+      "id": "GS4",
+      "repository": "Parveen117/Publications",
+      "commit": "57b4eb44a009e0a2d2b09bdd0c424d6d16e95e3e",
+      "path": "papers/uncut-cut-measurement/source_response_model.py",
+      "role": "Exact grounded network and source-cost solver used as a consistency oracle",
+      "git_blob_sha": "dce0120f8e66799178e90e0efa5d1e5138466836",
+      "sha256": "e4a86cebca43d82ffd50f75e4b5300d2e61dfcc4355caa4daad2ca43701e5ab5",
+      "url": "https://github.com/Parveen117/Publications/blob/57b4eb44a009e0a2d2b09bdd0c424d6d16e95e3e/papers/uncut-cut-measurement/source_response_model.py"
+    }
+  ],
+  "external_premises": [],
+  "declared_parameters": [
+    "native graph",
+    "root",
+    "unit positive edge weights",
+    "optional coordinate rank",
+    "physical ruler when A is compared to r"
+  ],
+  "conclusion": "The current native axioms do not select quadratic capacity; rank-three lattice yields it asymptotically only after an extra graph premise",
+  "physical_experiment_or_spacetime_identification": false
+}

@@ -1,4 +1,4 @@
-# Research programme after v1.0
+# Research programme after v1.1
 
 ## Foundational decision
 
@@ -182,6 +182,29 @@ flux ledgers, 2,204 exact stationary eliminations, 96 radial profiles and 176
 pair-energy force checks. The certificate binds 60 files. The strict
 inverse-square-from-primitive challenge remains unsolved; the packet makes
 its missing assumptions and a discriminating physical test explicit.
+
+## Completed in v1.1: the precise obstruction to choosing quadratic capacity
+
+[U39-U41](SHELL_CAPACITY_SELECTION.md) isolate A(r), as requested. Two native
+graphs with the same 49 carriers, degree four and 98 equal-weight links have
+capacity sequences 4,12,20 and 4,6,6. Consequently the existing admissible
+generators, full-observer memory rank and invariant-form line do not select
+quadratic growth. No field equation or spacetime model is needed for this
+counterexample.
+
+In a separately supplied three-direction graph, exact channel counting gives
+C_3(n)=12n²+12n+6, hence quadratic leading capacity under constant independent
+spacing and weights. Neither the three directions nor physical distance are
+selected. The source field is also nonconstant on shell two; average potential
+drops differ from inverse aggregate capacity. Information-capacity upper
+bounds alone fail to force saturation.
+
+Evidence: 162 native tests, 16 exact lattice profiles with 40 edge-cut counts,
+12 regular-tree profiles with 30 counts, four rational source solutions and
+12 independent ball-flux checks. The certificate binds 65 files. The next
+capacity-specific theorem must select topology/weights from a native primitive
+without fitting the required exponent, then prove the observed shell response
+and independent ruler adapter.
 
 ## Next concrete gate: select or independently calibrate the physical adapter
 

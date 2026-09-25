@@ -175,3 +175,20 @@ calibrated; calibration must not be confused with a theorem selecting them.
 Likewise, v0.9's blindness in a selected observable is not automatically gauge
 equivalence of complete physical theories: its augmented readout separates
 the pair within the declared observation class.
+
+## v1.1 derivation audit of the shell capacity
+
+[U39-U41](SHELL_CAPACITY_SELECTION.md) address only the open exponent of
+effective shell capacity. Counting links on integer graphs is elementary
+combinatorics and not claimed as globally new. The contribution here is a
+same-cardinality, same-degree and same-weight countermodel within U27's native
+family; the explicit conditional d-direction count; and a rational source
+solution showing that aggregate cut capacity does not imply a local radial
+response. These locate the exact missing primitive graph-selection premise.
+
+The stronger statement "the current native rules derive physical A(r)~r²"
+is false in view of the finite countermodels. A richer future primitive may
+select three effective directions or an equivalent growth rule; asserting
+that selection from the number of displayed EMK matrices, a holographic
+upper bound or observer rank would add an unproved bridge. No priority over
+standard lattice combinatorics or graph-volume arguments is claimed.

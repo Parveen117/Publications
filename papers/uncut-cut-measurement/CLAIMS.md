@@ -1,4 +1,4 @@
-# Claim ledger — v1.0
+# Claim ledger — v1.1
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -51,6 +51,9 @@ mathematics. Written proofs here do not imply priority.
 | U36 | Declared quadratic source cost has a unique stationary response, native affine Cayley continuation, cut-flux ledger and exact stationary elimination | Positive grounded graph, linear source, independently aligned native coordinates; conservative flow does not imply settling | WRITTEN_PROOF in SOURCE_RESPONSE_AND_GRAVITY_TESTS.md; 86 weighted graphs, 332 source solutions, 2,204 cut flux and 2,204 stationary elimination checks |
 | U37 | Source-probe cross energy gives inverse-square finite-difference response iff calibrated shell capacity is quadratic in independently assigned radius | Shell-constant sector, quadratic cost, positive displacement calibration; source/probe physical adapters additional | CONDITIONAL_WRITTEN_PROOF; 96 radial profiles and 176 pair-energy force checks; other exponents remain allowed |
 | U38 | A nonlinear mismatch cost can duplicate inverse-square distance dependence while changing source-strength scaling; fitted radius can fake the exponent | Declared p>1 cost family, weak-probe first variation, fixed independent calibration | WRITTEN_PROOF and negative controls; 108 nonlinear scaling fixtures, 54 bounded-error ratio checks; physical source/distance comparison not performed |
+| U39 | Existing native graph/generator rules cannot select a unique shell-capacity exponent | Current U27 arbitrary supplied connected graph, unit positive link weights, common degree four and 49 carriers | WRITTEN_COUNTERMODEL in SHELL_CAPACITY_SELECTION.md; capacity 4,12,20 versus 4,6,6; equal rank/weight controls |
+| U40 | Supplied d-direction nearest-neighbour graph has exact combinatorial shell capacity with leading degree d-1; d=3 yields 12n²+12n+6 | Explicit three-direction integer graph, graph distance, unit weights; physical ruler separately calibrated | CONDITIONAL_WRITTEN_PROOF; 16 lattice profiles and 40 independent enumerated edge cuts; no primitive dimension selection |
+| U41 | Aggregate inverse capacity need not equal local or shell-mean response; shell equitability is sufficient for radial stationarity | Declared rooted grounded network and U36's positive source cost | WRITTEN_PROOF and exact rational counterexample: cubic second mean drop 13/378 versus 1/30; tree control radial |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |
@@ -102,6 +105,10 @@ mathematics. Written proofs here do not imply priority.
 | W49 | Erasing hidden coordinates without the effective cost changes source response | Chain stiffnesses 1,4,9 | EXACT_CONTROL; source effective stiffness 36/49 rather than 1 |
 | W50 | Fitting the ruler to the response can manufacture a distance exponent | A 1/n response relabelled by r=sqrt(n) | EXACT_CONTROL; independent calibration required |
 | W51 | Conservative source continuation does not imply relaxation | Nonstationary affine Cayley orbit | WRITTEN_NONCONVERGENCE_ARGUMENT; exact excess-cost preservation checks |
+| W52 | Same 49 carriers, degree four and equal coupling weights yield different rooted capacity profiles | Periodic square versus two-jump cyclic graph | EXACT_COUNTERMODEL; 4,12,20 versus 4,6,6 |
+| W53 | A three-direction unit graph has quadratic leading shell count, with linear and constant finite corrections | L1 nearest-neighbour graph | EXACT_IDENTITY; 12n²+12n+6, not pure 12n² at every graph radius |
+| W54 | Aggregate capacity counting alone does not determine the radial field | Grounded cubic ball, source at origin | EXACT_COUNTEREXAMPLE; unequal shell-two potentials and 13/378 versus 1/30 |
+| W55 | A quadratic upper capacity bound does not force quadratic saturation | One-dimensional rooted path, unit edges | EXACT_CONTROL; constant capacity 2 |
 | NP0 | Selected probes share one calibrated native U,V pair | Predeclared family, coordinates, preparations and readout; includes augmented direct response | MODEL AGREEMENT GATE; U34 proves its sufficiency in that family; physical universality and gravitational identity remain OPEN |
 | NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U36-U38 add an explicit source candidate and conditional inverse-square sector with a test contract; physical selection and validation remain open |
 | S0 | Associative continuation alone implies no nontrivial symmetry | Three-state chain | EXACT_COUNTEREXAMPLE; every permutation tested for commutation |

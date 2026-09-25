@@ -98,7 +98,11 @@ candidate, exact stationary cut elimination, and a conditional inverse-square
 shell sector. It separates a distance-law test from source-strength scaling
 and gives a physical experiment contract. Quadratic cost, capacity growth and
 physical source/ruler/readout adapters remain additional hypotheses; no gravity
-experiment has passed. Current evidence includes 152 native regressions,
+experiment has passed. The focused v1.1 capacity audit proves that the current
+native rules cannot select quadratic growth: same-size four-regular unit-weight
+graphs have distinct shell profiles. A declared three-direction graph has
+quadratic leading capacity, but its shell field is not pointwise radial.
+Current evidence includes 162 native regressions,
 2,204 stationary elimination checks, 100 parameter
 inversions and 2,700 noise-box enclosures, with
 the earlier graph-memory, signed-coupling and conditional curvature campaigns

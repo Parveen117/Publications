@@ -15,6 +15,7 @@ import interaction_certificate
 import response_certificate
 import identification_certificate
 import source_response_certificate
+import shell_growth_certificate
 
 HERE = Path(__file__).resolve().parent
 BOUND_SOURCES = (
@@ -47,6 +48,9 @@ BOUND_SOURCES = (
     "SOURCE_RESPONSE_AND_GRAVITY_TESTS.md", "GRAVITY_EXPERIMENT_CONTRACT.md",
     "SOURCE_RESPONSE_PINS.json", "source_response_model.py",
     "source_response_certificate.py", "tests/test_source_response_model.py",
+    "SHELL_CAPACITY_SELECTION.md", "SHELL_GROWTH_SOURCE_PINS.json",
+    "shell_growth_model.py", "shell_growth_certificate.py",
+    "tests/test_shell_growth_model.py",
 )
 
 
@@ -229,7 +233,7 @@ def controls():
 def build():
     domain, counts = finite_checks()
     body = {
-        "protocol": "UNCUT_CUT_MEASUREMENT_V1_0",
+        "protocol": "UNCUT_CUT_MEASUREMENT_V1_1",
         "status": "PASS_FINITE_CHECKS",
         "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
         "domains": domain,
@@ -245,10 +249,11 @@ def build():
         "native_response_tensor_and_cut_ledger": response_certificate.build_checks(),
         "calibrated_probe_identification": identification_certificate.build_checks(),
         "conditional_source_response_and_gravity_tests": source_response_certificate.build_checks(),
+        "shell_capacity_selection_audit": shell_growth_certificate.build_checks(),
         "source_sha256": {p: hashlib.sha256((HERE / p).read_bytes()).hexdigest()
                           for p in BOUND_SOURCES},
         "scope": {
-            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35 and SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38 under stated hypotheses; no priority claim for standard methods",
+            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38 and SHELL_CAPACITY_SELECTION.md U39-U41 under stated hypotheses; no priority claim for standard graph counting",
             "availability_interface_physically_established": False,
             "native_gravity_law_physically_identified": False,
             "spacetime_dimension_derived": False,
@@ -270,6 +275,10 @@ def build():
             "explicit_affine_source_cost_candidate_constructed": True,
             "conditional_inverse_square_shell_sector_constructed": True,
             "quadratic_cost_and_shell_growth_selected_from_primitive": False,
+            "current_native_axioms_cannot_select_quadratic_capacity": True,
+            "three_direction_lattice_has_quadratic_leading_capacity": True,
+            "three_direction_lattice_selected_from_native_primitive": False,
+            "cubic_shell_count_proves_pointwise_radial_response": False,
             "native_conservative_flow_proves_relaxation": False,
             "physical_inverse_square_derived_without_extra_hypotheses": False,
             "physical_gravity_experiment_passed": False,

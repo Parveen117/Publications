@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 1.0, 25 September 2026.**
+**Monty Dabas — working research programme, version 1.1, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -20,6 +20,7 @@ Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
 [calibrated probes and native identification](PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md),
 [source response and the inverse-square challenge](SOURCE_RESPONSE_AND_GRAVITY_TESTS.md),
 [physical experiment contract](GRAVITY_EXPERIMENT_CONTRACT.md),
+[shell-capacity derivation audit](SHELL_CAPACITY_SELECTION.md),
 [information/thermodynamics source audit](RESPONSE_SOURCE_AUDIT.md),
 and [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
@@ -287,6 +288,26 @@ eliminations**, **96 radial profiles**, **176 pair-energy force checks**,
 The certificate binds **60 source files** and retains all earlier evidence.
 The unconditional physical inverse-square challenge remains open; the exact
 conditional result and a falsifiable candidate test are now concrete.
+
+## Added in v1.1: does the primitive select A(r)?
+
+The [focused capacity audit](SHELL_CAPACITY_SELECTION.md) answers the requested
+inverse-square bottleneck. Two 49-carrier native graphs with the same degree
+four, 98 unit links and the same available generator rules have different
+shell-capacity profiles: **4,12,20** versus **4,6,6**. Thus the present native
+axioms do not select quadratic growth.
+
+On an explicitly supplied three-direction integer graph, direct counting
+does derive `C_3(n)=12n²+12n+6`, with quadratic leading growth. Three
+directions, their graph and the physical ruler remain supplied data. Moreover,
+the cubic graph's shell potential is not constant: its second mean drop is
+**13/378**, whereas inverse aggregate capacity is **1/30**. Shell-area
+counting alone cannot establish a local inverse-square measurement.
+
+The v1.1 certificate adds 10 focused regressions for **162** native tests,
+checks 16 integer-lattice and 12 regular-tree capacity profiles, and binds
+**65** source files including four new immutable repo pins. It states which
+additional native selection theorem would actually close the growth gap.
 
 ## Reproduce
 
