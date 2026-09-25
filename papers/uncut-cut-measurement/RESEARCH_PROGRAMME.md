@@ -38,7 +38,42 @@ predecessors are recorded in [NOVELTY_AND_LINEAGE.md](NOVELTY_AND_LINEAGE.md).
 Evidence: 37 regressions overall and 20,646 exhaustive partial-family cases
 through three states, with independent diagnostic and quotient oracles.
 
-## Next concrete module: realize the observation contract
+## Next research direction: gravity before curvature
+
+The author's next proposed direction is to define gravity through a native law
+prior to a spacetime or curvature representation, then derive curvature only
+after a suitable cut. This is a research hypothesis, not a result of U1–U16.
+The proposed bridge to quantum gravity must be constructed rather than inferred
+from the use of the words “uncut”, “seam” or “curvature”.
+
+Begin by auditing the repository's existing gravity, curvature and seam results
+at pinned versions so that inherited definitions are not presented as new.
+Then specify the candidate native data, composition rule and invariant without
+assuming a manifold, metric, external clock or gravitational field equation.
+Even that mathematical specification is a presentation with declared
+distinctions; it is not direct access to an entirely distinction-free ground.
+
+The next derivation must address:
+
+1. What makes the candidate law gravitational, rather than an arbitrary
+   continuation rule or a renamed memory cost? State its operational target.
+2. Which cuts admit a geometric representation, and under what hypotheses?
+   Construct the representation and define curvature within it. A finite
+   quotient by itself supplies neither a metric nor a curvature tensor.
+3. Which native distinctions the geometric representation preserves or loses,
+   and whether successive lawful cuts give compatible predictions.
+4. Whether a quantum representation of the same native data can be constructed
+   with its own readout law, and whether both representations actually agree
+   on a shared operational target. This is the proposed bridge to be proved.
+5. A counterexample or failed prediction that would reject the candidate bridge.
+   General applicability to all problems remains an unproved conjecture.
+
+The present finite observer theorems can audit loss and admissibility in such
+a bridge; they do not themselves identify the native gravitational law.
+U7's composition residue and U14's minimum memory must not be silently
+identified with physical curvature or nature's action.
+
+## Operational gate: realize the observation contract
 
 Select one pinned native finite packet and construct an explicit adapter from
 its recovered-state data to the partial domains used here. Declare the action
