@@ -350,6 +350,26 @@ including the new proof and independent Fraction witness; 162 prior native
 regressions remain. Physical detector frequencies, clock/action calibration,
 graph selection and quantum gravity are not implied by these finite claims.
 
+## Added in v1.4: gravity from coherent native phase, conditionally
+
+[GP-1 and GP-2](GRAVITY_PHASE_TRANSLATOR.md) stay on the gravity route.
+For a supplied positive grounded graph, known native step **and absolute
+phase reference**, exact Cayley inversion recovers its static source Green
+operator `H^{-1}` from the complete paired evolution. The same `H^{-1}` determines U36's
+source field, cross cost and candidate gravity-before-curvature response.
+
+The phase-erased classical shadow cannot perform that inversion. Two
+different positive grounded graphs give exactly the same classical
+two-site stochastic update `[[4/5,1/5],[1/5,4/5]]` at every erased step,
+but cross costs `-1/3` and `-5/8`. In fact their coherent matrices differ
+only by a global phase, so **every ordinary density-matrix experiment** also
+sees the same channel. A phase reference or independent source calibration
+is needed; an unknown native step leaves a second scale ambiguity. This is
+an exact conditional model translation and
+countermodel, not identification of physical gravity or physical `hbar`.
+The v1.4 master certificate source-binds **72** files and retains the
+162 native regressions plus prior foundation witnesses.
+
 ## Reproduce
 
 Python 3.11 or 3.12; standard library only. From the repository root:
@@ -359,6 +379,7 @@ python -m unittest discover -s papers/uncut-cut-measurement/tests -v
 python papers/uncut-cut-measurement/certificate.py --check
 python papers/uncut-cut-measurement/certificates/thermodynamic_foundation_bridge.py
 python papers/uncut-cut-measurement/certificates/quantum_classical_bridge.py
+python papers/uncut-cut-measurement/certificates/gravity_phase_translator.py
 ```
 
 The second command is read-only. It regenerates exact exhaustive checks in
