@@ -1,0 +1,173 @@
+\section{Logical dependencies, novelty, and falsifiable signatures}
+\label{sec:dependency-falsifiability}
+
+A broad theorem package is credible only when its dependency arrows are visible.  This section records which conclusions are intrinsic to equilibrium and Recognition geometry, which require additional dynamics, and which admit direct experimental rejection tests.
+
+\subsection{Dependency ladder}
+
+The logical layers used in this paper are:
+\begin{center}
+\begin{tabular}{p{0.10\textwidth}p{0.32\textwidth}p{0.46\textwidth}}
+\toprule
+Layer & Additional datum & Conclusion supplied\\
+\midrule
+$\mathsf L_0$ & Fundamental relation $U(S,V)$ and regular equilibrium chart & Legendre structure, Maxwell relations, constrained response identities\\
+$\mathsf L_1$ & Observation, target, lawful ledger & Recognition kernel, target-faithful completion, repair rank, decoder burden, loop residue\\
+$\mathsf L_2$ & Connection, graded jet carrier, self-adjoint cut & Finite and analytic response jets, cut sectors, commutator curvature, zero-mode projection\\
+$\mathsf L_3$ & Local-equilibrium map, constant-rank observation/target bundle maps, compatible transport & Thermodynamic Recognition quotient bundle, explicit field $\Phi_{\mathrm{th}}$, target-faithful transport square, induced connection and curvature, uniform source domination\\
+$\mathsf L_4$ & Lorentzian metric plus locality, symmetry, parity, and derivative-order contract & Minimal invariant Einstein--Hilbert plus quotient-gauge--field action class and its residual constitutive freedom\\
+$\mathsf L_5$ & Couplings and invariant potential within the classified action & Metric, gauge, and Recognition-field Euler--Lagrange equations\\
+$\mathsf L_6$ & Gauge-fixed coercive finite regulator & Exact finite partition function, Schwinger--Dyson and effective equations\\
+$\mathsf L_7$ & Renormalized anomaly-free continuum effective action & Quantum-effective metric, gauge, matter, and Ward equations\\
+$\mathsf L_8$ & Positive target-faithful physical Hessian and nuclear spectral test space & Continuum Gaussian measure, regulator removal, reflection positivity, unitary reconstruction, bosonic anomaly freedom\\
+$\mathsf L_9$ & Exact propagation, calibrated scale, and complete parallel transport & Metric and connection identification up to diffeomorphism and gauge\\
+$\mathsf L_{10}$ & Transverse slice, stable linearized decoder, derivative control, uncertainty bounds & Noise-stable local reconstruction and finite-error falsification threshold\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+No conclusion is promoted downward through this table.  In particular, $\mathsf L_0$--$\mathsf L_2$ do not by themselves produce a spacetime field.  Layer $\mathsf L_3$ constructs that field and its connection from pulled-back thermodynamic response jets.  Layer $\mathsf L_4$ classifies, but does not numerically calibrate, the minimal action inside an explicit local symmetry class.  Layer $\mathsf L_6$ does not imply nonlinear regulator removal, and the constructive $\mathsf L_8$ theorem does not assert nonlinear ultraviolet completion outside its positive quadratic sector.  The purpose of the ladder is not bureaucratic caution.  It prevents a lawful result at one layer from being mistaken for an existence or selection theorem at the next.
+
+\subsection{Novelty map}
+
+Several ingredients used later are established mathematical structures: Legendre thermodynamics, Stokes' theorem, quotient vector bundles, metric connections, Einstein--Hilbert variation, Yang--Mills variation, finite-dimensional Schwinger--Dyson integration by parts, Gaussian nuclear-space measures, and Osterwalder--Schrader reconstruction.  They are rederived where needed because their hypotheses and interfaces are load bearing, not because the paper claims to have rediscovered them.
+
+The framework-specific contributions are the target-relative blind quotient and canonical minimal completion; the exact repair-rank and decoder-burden statements; their thermodynamic finite-jet specialization; the intrinsic four-response bracket and its Pluecker constraint; the lawful ledger/open-residue separation; and the cut--flow--jet synthesis with analytic infinite-jet extension.  The spacetime bridge is also framework-specific: a local-equilibrium map pulls the response jets to spacetime; the target-relevant kernel quotient becomes the Recognition field bundle; compatible response transport descends to a connection; its curvature is the infinitesimal defect of the target-faithful transport square; and a bundle decoder gives uniform source domination and strict target no-blindness.  The action is not selected by a resemblance between curvature symbols.  It is classified within an explicit parity-even local low-derivative invariant class, while couplings and nonlinear potential remain separately typed.  Finally, the fixed-decoder spacetime theorem turns exact geometric identifiability into a finite-error reconstruction estimate.  Thus the novelty lies in the Recognition architecture and its exact interfaces.  Standard variational and constructive equations are consequences of the constructed carrier plus declared dynamical and analytic data.
+
+\subsection{Noise-stable Pluecker falsification test}
+
+The rank-two response-bracket theorem gives an algebraic constraint. A
+bracket reconstructed as a wedge of two estimated gradients obeys that
+constraint identically, regardless of gradient error. A finite-error
+falsification test therefore requires six independently observed bracket
+entries and an independently justified measurement-error budget.
+
+At a fixed state choose a local oriented coframe $(\alpha,\beta)$ with $\varpi=\alpha\wedge\beta$ and write
+\[
+\dd f_a=u_a\alpha+v_a\beta,
+\qquad
+u=(u_a)_{a=1}^4,
+\qquad
+v=(v_a)_{a=1}^4.
+\]
+To prevent the vector $u$ from being confused with the Greek letter $\nu$, write explicitly
+\[
+u:=(u_a)_{a=1}^4.
+\]
+Then
+\[
+B=uv^{\mathsf T}-vu^{\mathsf T}.
+\]
+Suppose estimated gradients give
+\[
+\widetilde u=u+\delta u,
+\qquad
+\widetilde v=v+\delta v,
+\qquad
+\norm{\delta u}\le\varepsilon_u,
+\qquad
+\norm{\delta v}\le\varepsilon_v,
+\]
+and set
+\[
+\widetilde B=\widetilde u\widetilde v^{\mathsf T}
+-\widetilde v\widetilde u^{\mathsf T}.
+\]
+For a skew matrix $C$, let
+\[
+\beta(C)=(C_{12},C_{13},C_{14},C_{23},C_{24},C_{34})\in\R^6
+\]
+and define its Pluecker residual
+\[
+\mathfrak P(C)
+=C_{12}C_{34}-C_{13}C_{24}+C_{14}C_{23}.
+\]
+
+\begin{theorem}[Noise-stable response-bracket test]
+\label{thm:noise-stable-pluecker}
+Define
+\begin{equation}
+E
+:=2\left(
+\varepsilon_u\norm{\widetilde v}
++\varepsilon_v\norm{\widetilde u}
++3\varepsilon_u\varepsilon_v
+\right),
+\qquad
+\eta_{\rm grad}:=\frac{E}{\sqrt2}.
+\label{eq:measured-bracket-error}
+\end{equation}
+Then
+\begin{align}
+\norm{\widetilde B-B}_{\mathrm F}&\le E,
+\label{eq:bracket-frobenius-error}\\
+\norm{\beta(\widetilde B)-\beta(B)}&\le\eta_{\rm grad},
+\label{eq:bracket-six-error}
+\end{align}
+and $\mathfrak P(\widetilde B)=0$ identically. Separately, let $C$ be an
+independently measured skew matrix whose six entries are not constrained to
+be a wedge during reconstruction. Suppose its declared measurement contract
+provides $\|\beta(C)-\beta(B)\|\le\eta$, with $\eta\ge0$ fixed independently
+of the observed Pluecker residual. Then
+\begin{equation}
+\abs{\mathfrak P(C)}
+\le
+\norm{\beta(C)}\,\eta
++\frac32\eta^2.
+\label{eq:pluecker-noise-bound}
+\end{equation}
+Consequently, an independently measured residual $|\mathfrak P(C)|$ larger than the right-hand side of \eqref{eq:pluecker-noise-bound} rejects the conjunction of the declared two-dimensional equilibrium chart, channel assignment, nondimensionalization, and error bounds at that state.
+\end{theorem}
+
+\begin{proof}
+Expanding the measured matrix gives
+\[
+\widetilde B-B
+=\delta u\,v^{\mathsf T}+u\,\delta v^{\mathsf T}
+-\delta v\,u^{\mathsf T}-v\,\delta u^{\mathsf T}
++\delta u\,\delta v^{\mathsf T}
+-\delta v\,\delta u^{\mathsf T}.
+\]
+For rank-one matrices, $\norm{ab^{\mathsf T}}_{\mathrm F}=\norm a\norm b$.  Hence
+\[
+\norm{\widetilde B-B}_{\mathrm F}
+\le2\left(
+\varepsilon_u\norm v
++\varepsilon_v\norm u
++\varepsilon_u\varepsilon_v
+\right).
+\]
+Using $\norm u\le\norm{\widetilde u}+\varepsilon_u$ and
+$\norm v\le\norm{\widetilde v}+\varepsilon_v$ gives \eqref{eq:bracket-frobenius-error}.  Since the difference is skew,
+\[
+\norm{\widetilde B-B}_{\mathrm F}^2
+=2\norm{\beta(\widetilde B)-\beta(B)}^2,
+\]
+which proves \eqref{eq:bracket-six-error}.
+
+Every wedge of two vectors has zero Pluecker residual, so this applies to
+$\widetilde B$ without a noise assumption. For the independent observation,
+let $b=\beta(B)$ and $e=\beta(C)-b$.  There is a symmetric orthogonal matrix $J_6$ pairing the coordinates $(1,6)$, $(2,5)$ and $(3,4)$ with signs $+,-,+$ such that
+\[
+\mathfrak P(B)=\frac12b^{\mathsf T}J_6b.
+\]
+Therefore
+\[
+\mathfrak P(C)-\mathfrak P(B)
+=b^{\mathsf T}J_6e+\frac12e^{\mathsf T}J_6e,
+\]
+so
+\[
+\abs{\mathfrak P(C)}
+\le\norm b\norm e+\frac12\norm e^2.
+\]
+Finally, $\norm b\le\norm{\beta(C)}+\norm e$ and $\norm e\le\eta$, which yields \eqref{eq:pluecker-noise-bound}.
+\end{proof}
+
+\begin{remark}[What a failed test means]
+The gradient-reconstructed $\widetilde B$ is a positive algebraic control,
+not a falsification measurement. For example, $C_{12}=C_{34}=1$ and all other
+independent entries zero gives $\mathfrak P(C)=1$, so independent observations
+can violate the wedge constraint. At zero declared error this is rejected.
+The theorem is a falsification test for the full declared measurement contract, not a detector of one preferred failure mechanism.  A violation can indicate departure from a smooth two-dimensional equilibrium regime, a hidden internal variable, incorrect constraints, unit or channel mismatch, or underestimated error.  The Recognition ledger then records which assumption failed instead of retroactively renaming the residual.
+\end{remark}

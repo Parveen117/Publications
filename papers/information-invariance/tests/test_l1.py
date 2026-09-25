@@ -177,10 +177,10 @@ def test_D3prime_negative_and_pinned():
 
 import micro_chi_characterisation as MC
 
-def test_theorem_N_and_O_proved():
+def test_theorem_N_and_O_finite_checks_pass():
     c = MC.build()
-    assert c["theorem_N_microscopic_characterisation"]["status"] == "PROVED"
-    assert c["theorem_O_curvature_is_sufficient_not_necessary"]["status"] == "PROVED"
+    assert c["theorem_N_microscopic_characterisation"]["status"] == "PASS_FINITE_CHECKS"
+    assert c["theorem_O_curvature_is_sufficient_not_necessary"]["status"] == "PASS_FINITE_CHECKS"
 
 def test_identity_and_both_directions():
     ch = MC.build()["theorem_N_microscopic_characterisation"]["checks"]
@@ -196,3 +196,25 @@ def test_experimental_logic_recorded():
 
 def test_micro_certificate_pinned():
     assert MC.build()["certificate_sha256"] == (ROOT / "certificates" / "EXPECTED_MICRO.sha256").read_text().strip()
+
+
+def test_indicator_basis_characterizes_all_weight_differences():
+    from fractions import Fraction as F
+    import itertools
+    theta = [1, 0, 3, 2]
+    ind = lambda k: [F(j == k) for j in range(4)]
+    for weights in itertools.product((F(1), F(2), F(3)), repeat=4):
+        differences = [MC.C_W(weights, theta, ind(k), ind(theta[k]))
+            - MC.C_W(weights, theta, ind(theta[k]), ind(k)) for k in range(4)]
+        assert differences == [weights[k] - weights[theta[k]] for k in range(4)]
+        assert (all(x == 0 for x in differences)
+                == all(x == 1 for x in MC.chi(weights, theta)))
+
+
+def test_coarse_zero_does_not_erase_nonzero_microscopic_response():
+    from fractions import Fraction as F
+    e = MC.theorem_O()["example"]
+    a = (F(e["asym_orbit1"]), F(e["asym_orbit2"]))
+    assert a == (2, -2) and sum(a) == 0
+    # The two-coordinate observer retains the target; the sum observer loses it.
+    assert a != (0, 0)

@@ -1,0 +1,35 @@
+{
+  "source": "https://arxiv.org/src/2603.20773v3",
+  "scope": "Repository correction edition; does not modify the arXiv record or certify all other claims.",
+  "original_files": {
+    "00README.json": "d1f6b1a71c9accb812ec5121d1fff7910c025ca7bb201948bacdb40941bc14e5",
+    "main.tex": "d2d06e73848cb231c055bda39317e8630d601e6ce878b84b09988cfe5b06f22e",
+    "sections/00_dependency_contract.tex": "571a70ca620ef96af89a75d2a7777a6560cf9babc2f6e83e3f92ae10f046e526",
+    "sections/01_foundations.tex": "e693803c14a6d72837fa1a25bb2c16248b33bb60c134ab591ca6274f6c454339",
+    "sections/01a_response_summary.tex": "611bad7032e766db32e538cfa7c500e4f17cc1e809c61368be795c0a524715f2",
+    "sections/02_recognition.tex": "9237a579c1fe31457a5444f35ad5df764f986356c5c3483bd14af568837b3ce2",
+    "sections/02a_measurement_operators.tex": "7c99352d3fcf68c56dd7958cb193537088e9219f57974ae5b71dad9cbefc19c8",
+    "sections/03_loop_and_cutflow.tex": "84c2397b5c647b83872282c9608cd3e71a60213da84f01159003c97bfff08d9e",
+    "sections/03a_thermodynamic_cut_realizations.tex": "8c5a35e444283ce82922736536b439dd1209e13e34d5dd44f177222ea76bdbd2",
+    "sections/04_capstone_and_examples.tex": "1a20d90bccedee177fd259266187fa725bdee1b3559c1c0f6aba35577a95c962",
+    "sections/05_conclusion_and_ledger.tex": "7e2ef7fbba789cf76974ac81942813cf1bb67cc99f413cbacfc2129ffee5003c",
+    "sections/05_proved_extensions.tex": "4d9fda01d005535821c3ae2eb71da502d02aa20b75de3f69d8abf35a122ebb11",
+    "sections/05a_curvature_and_analytic_relevance.tex": "393eaec9c6194435e38a51e6e0a399fef0b45e5bb5c3d561cc2dfb59ad16ef4f",
+    "sections/05b_extended_capstone.tex": "75d976bb8319b234078bce1cd4dc7ea9f7cb37ffe33a36b4d9de8240c7866f81",
+    "sections/05c_novelty_falsifiability.tex": "3d8a1acd4502ddd08ae1f4e96ef1c718db6bd31fbcff9423941c502bc7155153",
+    "sections/06a00_response_propagation_metric.tex": "0f2c319d975c914d7ec39f9ef35aed08a80ad54742f05650c25118ca185d0a20",
+    "sections/06a0_thermodynamic_recognition_square.tex": "f555e4326579a963a76345bf17bdd942f4f155ef4acb6946dcea6f5f762e5f21",
+    "sections/06a1_dynamical_nonselection.tex": "fa5ea981f7ffc4c28040df4adcd6d380fa254d47486f62c9f1447ce57bd6562c",
+    "sections/06a_spacetime_recognition_datum.tex": "249f33a2123bb4abeed930670ce21d887bd8930e933272d03cdac2256e0b4a03",
+    "sections/06b_classical_field_equations.tex": "a343509a201f0d5a43f7b15bd190b55b6851ae9bb668cfe47f9af83a06ecf06f",
+    "sections/06c_quantum_effective_equations.tex": "acc0eee52b4b89227eacca03f9f0ea9ded9719bf00ac1c6b892d3a7b6677e78e",
+    "sections/06d_constructive_continuum_and_identification.tex": "4dafb6aa9640bac391cd7e2cdef859d48e1479778082d691d84bfbecf1d729ab",
+    "sections/06e_noise_stable_spacetime_recognition.tex": "acddaf008feb3c046e1fc28bbb51920d16ed4649aea034e6d1a163cb7dc1d7fe",
+    "sections/references.tex": "7eefefb3ee44c09bd2ae956b352cc15d4f35da33cb3eba0e1f5737321cfc985e"
+  },
+  "corrected_files": [
+    "main.tex",
+    "sections/05c_novelty_falsifiability.tex",
+    "sections/05_conclusion_and_ledger.tex"
+  ]
+}

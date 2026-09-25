@@ -6,6 +6,17 @@ several application programmes; this repository holds the papers and
 certified evidence common to all of them. **If you arrived here from a
 specific application, jump straight to your programme below.**
 
+## Corrections and version scope
+
+[Corrections dated 2026-09-25](papers/corrections-2026-09-25/README.md) supersede
+identified statements in T50/T54, SPECTRAL 2 Corollary 16.2, information
+invariance, Morphic manuscripts and the thermodynamic Pluecker test.
+The [corrected thermo source edition](papers/thermodynamic-response-corrections/)
+includes the complete source and exact provenance. Archived PDFs and the
+collected volume retain their original edition identity; read them with the
+correction record. A finite certificate PASS is distinct from a general proof,
+formal verification, empirical support and independent review.
+
 ## Programme index — find your lane
 
 | If you are evaluating... | Go to | Headline |
@@ -37,20 +48,26 @@ papers/
 Author: Monty Dabas  
 ORCID: 0009-0005-6948-209X
 
-Claim boundary:
+Claim boundary reported by the latest source (not a fresh independent
+revalidation of its full numerical certificate):
 
 ```text
 SOURCE FLOOR S_(.01,-) >= .008 I               PROVED
 SOURCE INVERSE NORM <= 125                      PROVED
 RANK-AT-MOST-FIVE HERMITIAN REDUCTION           PROVED
 FINAL OUTWARD ACCEPTANCE THEOREM                PROVED
-ACTUAL OUTWARD FIVE-BY-FIVE VALUE               OPEN
-CONTROLLED eta_j -> 0                           OPEN
+ACTUAL FIXED-SHIFT FIVE-BY-FIVE VALUE           REPORTED CERTIFIED BY LATEST MP COMPANION
+UNSHIFTED ENDPOINT REDUCTION                    PROVED AS REDUCTION IN LATEST SOURCE
+ACTUAL ENDPOINT SIGN K0 >= 0                    OPEN
 RIEMANN HYPOTHESIS                              ABSTAIN
 ```
 
 The source manuscript is developed in `Parveen117/MP` on branch
-`agent/paper-source-floor-five-by-five-theorem` and draft PR #244.
+`agent/paper-source-floor-five-by-five-theorem` and draft PR #244. The source
+version used for this status reconciliation is commit
+`686b5506c7c2fedd53641dbf550218b60c996a13`, especially section 07l and
+A_claim_ledger. It reports the fixed-shift bound 0.8388901637561339 < 1;
+that bound alone does not establish the unshifted K0 sign or RH.
 
 ## Zenodo release rule
 

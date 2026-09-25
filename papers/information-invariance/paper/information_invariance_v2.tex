@@ -25,11 +25,12 @@ stationarity of the loop functional of the entropy-scaled accessibility
 one-form, and settle what follows from it. Three structural results are proved
 on finite charts with executable certificates: information invariance is
 equivalent to vanishing thermodynamic curvature and to exactness of the
-one-form, i.e.\ to the Onsager-reciprocal sector; microscopically it is exactly
-time-reversal invariance of the statistical weight, through the factor
-$\chi=W(\Theta\Gamma)/W(\Gamma)$; and curvature is a sufficient but not a
-necessary witness of that invariance, since microscopic asymmetry can cancel
-under coarse-graining. On the experimental side we prove that the loop area of a
+one-form, i.e.\ to the chart's Onsager-reciprocal sector. Microscopically,
+$\chi=W(\Theta\Gamma)/W(\Gamma)\equiv1$ is equivalent to symmetry of the full
+weighted correlation for all observables and implies information invariance.
+The converse requires a faithful coarse observation: microscopic asymmetry
+can cancel under coarse-graining. Nonzero coarse curvature therefore witnesses
+microscopic asymmetry, whereas zero curvature need not imply reversibility. On the experimental side we prove that the loop area of a
 \emph{single} thermal cycle decides nothing --- a flat chart with a one-time
 irreversible offset and a curved chart give equal first-cycle areas --- which we
 illustrate on our own graphene Raman data, where the measured loop does not
@@ -126,16 +127,33 @@ Theorem~\ref{thm:A} gives information invariance a microscopic reading, and one
 leg of the chain turns out to be one-directional.
 
 \begin{theorem}[Microscopic characterisation]\label{thm:N}
-On a finite phase space, with $C_W(f,g)=\sum_\Gamma W(\Gamma)f(\Gamma)g(\Theta\Gamma)$,
+On a finite phase space, let $W>0$, let $\Theta$ be an involution, and put $C_W(f,g)=\sum_\Gamma W(\Gamma)f(\Gamma)g(\Theta\Gamma)$. Then
 \begin{equation}
 C_W(f,g)-C_W(g,f)=\sum_\Gamma W(\Gamma)\bigl[1-\chi(\Gamma)\bigr]f(\Gamma)g(\Theta\Gamma),
 \end{equation}
 exactly, and the following are equivalent: $\chi\equiv1$; $C_W$ is symmetric for
-all observables; the antisymmetric response vanishes. Hence $\delta\cI=0$ is
-exactly time-reversal invariance of the statistical weight.
+all observables; the full microscopic antisymmetric response vanishes.
+These are not equivalences with the vanishing of a coarse image.
 \end{theorem}
+\begin{proof}
+Reindex the second correlation by $\Gamma\mapsto\Theta\Gamma$ to obtain the
+identity. If $\chi=1$, its right side vanishes. Conversely, take
+$f=\mathbf1_{\{a\}}$, $g=\mathbf1_{\{\Theta a\}}$; the antisymmetric
+correlation is $W(a)-W(\Theta a)$. Symmetry for every pair forces every such
+difference to vanish. Positivity of $W$ makes this equivalent to $\chi=1$.
+\end{proof}
+Writing the microscopic antisymmetric response as $A_W$ and the declared
+linear observation as $K$, the chain is
+\[
+\chi\equiv1\ \Longleftrightarrow\ A_W=0\ \Longrightarrow\
+K(A_W)=\Omega=0\ \Longleftrightarrow\ \delta\cI=0.
+\]
+The last equivalence uses Theorem~\ref{thm:A}'s chart hypotheses. Reversing
+the middle arrow requires $\ker K\cap\mathcal A_{\rm adm}=\{0\}$, where
+$\mathcal A_{\rm adm}$ is the declared space of admissible antisymmetric responses.
+Indeed, $K(A_W)=0$ then forces $A_W=0$.
 
-\begin{theorem}[Curvature is sufficient, not necessary]\label{thm:O}
+\begin{theorem}[Nonzero curvature witnesses microscopic asymmetry]\label{thm:O}
 $\chi\equiv1\Rightarrow\Omega=0$ always. The converse fails: for
 $\Theta=(01)(23)$ and $W=(3,1,1,3)$ the two orbit contributions are $+2$ and
 $-2$, so $\chi\neq1$ while the coarse-grained total vanishes.
@@ -320,7 +338,7 @@ conservation of the source.
 
 \subsection{The regulator scale (settled)}
 
-The finiteness claim usually attached to Conjecture~\ref{conj:grav} is
+The finiteness claim associated with the withdrawn emergent-gravity derivation is
 $\langle\cE(x)\cE(x')\rangle\sim(r^2+L_P^2)^{-1}$ with
 $L_P=\sqrt{\hbar G/c^3}$. Dimensional analysis decides its status.
 
@@ -364,11 +382,13 @@ departures~\cite{Aspelmeyer2014,Bassi2013}, not the agreement.
 
 \section{Summary of status}\label{sec:summary}
 
-Every claim below is either proved with a machine-checked certificate that is
-regenerated on each commit, or marked as a stated condition. No claim rests on
-an argument that is not reproduced by the accompanying code.
+The theorem statements below use the hypotheses and proofs in their cited
+sections. Executable certificates check declared finite instances and negative
+controls; they are not formal proofs of all quantified statements. Conditions
+and pending measurements remain explicitly identified.
 
-\begin{center}
+\begin{table*}[t]
+\centering
 \begin{tabular}{lll}
 \hline
 Statement & Status & Where\\
@@ -386,13 +406,14 @@ Minimal scale usage selects $n=2$ & proved & Thm~\ref{thm:J}\\
 One scalar cannot carry two polarisations & proved & Thm~\ref{thm:K}\\
 Clausius route imports $\hbar$ & proved & Thm~\ref{thm:L}\\
 Scalar source is not conserved & proved & Thm~\ref{thm:M}\\
-$\delta\cI=0\Leftrightarrow\chi\equiv1$ & proved & Thm~\ref{thm:N}\\
+Symmetric $C_W\Leftrightarrow\chi\equiv1$ & proved & Thm~\ref{thm:N}\\
 $\Omega=0$ does not imply $\chi\equiv1$ & proved & Thm~\ref{thm:O}\\
 Selection principle itself; $\lambda=L_\cE$ & stated condition & D1$'$\\
 Reversible curvature in graphene & measurement pending & Sec.~\ref{sec:empirical}\\
 \hline
 \end{tabular}
-\end{center}
+\caption{Claim status under the hypotheses of the cited results.}
+\end{table*}
 
 \section{Conclusion}
 
@@ -431,8 +452,8 @@ arXiv:2603.20773 [cond-mat.stat-mech] (2026).
 \bibitem{ThermoRepro} \texttt{Parveen117/Thermodynamics-Reproducibility},
 campaign \texttt{T02\_RAMAN\_THERMAL\_HYSTERESIS} (2026).
 \bibitem{PlanckCollab} Dimensional statements in Sec.~V use only $(M,L,T)$ exponents; the numerical illustration uses a vacuum energy density of order $10^{-9}$\,J\,m$^{-3}$.
-\bibitem{RKF-F00E} Recognition-Kernel Framework, \texttt{theorems/foundation/F00E\_NATIVE\_EULER\_FROM\_IOTA\_COMPLEX} (PROVED), Zenodo doi:10.5281/zenodo.21760119.
-\bibitem{RKF-41} Recognition-Kernel Framework, \texttt{theorum/41\_cut\_graded\_universal\_generator\_theorem} (certified, pin \texttt{34afc445\ldots}), \emph{ibid}.
+\bibitem{RKF-F00E} Recognition-Kernel Framework, \path{theorems/foundation/F00E_NATIVE_EULER_FROM_IOTA_COMPLEX.md} (PROVED), Zenodo doi:10.5281/zenodo.21760119.
+\bibitem{RKF-41} Recognition-Kernel Framework, \path{theorum/41_cut_graded_universal_generator_theorem.md} (certified, pin \texttt{34afc445\ldots}), \emph{ibid}.
 \bibitem{Jacobson1995} T.~Jacobson, Phys.\ Rev.\ Lett.\ \textbf{75}, 1260 (1995).
 \bibitem{Diosi1987} L.~Di\'osi, Phys.\ Lett.\ A \textbf{120}, 377 (1987).
 \bibitem{Penrose1996} R.~Penrose, Gen.\ Rel.\ Grav.\ \textbf{28}, 581 (1996).

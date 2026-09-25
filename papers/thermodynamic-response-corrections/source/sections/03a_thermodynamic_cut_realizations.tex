@@ -1,0 +1,61 @@
+\subsection{Concrete thermodynamic realizations of the cut}
+\label{sec:thermodynamic-cut-realizations}
+
+The algebraic cut $\mathsf J$ is not claimed to be a universal thermodynamic operation.  It represents a declared involutive comparison built into the experimental or constitutive protocol.  Three recurring realizations are canonical after the response channels have been nondimensionalized.
+
+\begin{proposition}[Three admissible thermodynamic cuts]
+Let $H$ be a Hilbert response carrier.
+
+\begin{enumerate}[label=(\roman*)]
+\item On a two-copy constraint carrier $H\oplus H$, the constraint-exchange cut
+\begin{equation}
+\mathsf J_{\mathrm{ex}}(u,v)=(v,u)
+\label{eq:constraint-exchange-cut}
+\end{equation}
+compares two declared constraint protocols, for example isobaric versus isochoric caloric channels or isentropic versus isothermal mechanical channels.
+
+\item On a finite jet carrier $\cJ_N=\bigoplus_{n=0}^NH_n$, the jet-parity cut
+\begin{equation}
+\mathsf J_{\mathrm{jet}}|_{H_n}=(-1)^n\id_{H_n}
+\label{eq:jet-parity-cut}
+\end{equation}
+separates even and odd response order.  Reversal of an analytic process parameter $t\mapsto-t$ acts by this cut on the formal response jet.
+
+\item On a pre/post carrier $H_-\oplus H_+$ with the two copies identified by a declared calibration, the comparison cut
+\begin{equation}
+\mathsf J_{\mathrm{pp}}(u_-,u_+)=(u_+,u_-)
+\label{eq:pre-post-cut}
+\end{equation}
+exchanges the two sides of a cycle, interface, or intervention.
+\end{enumerate}
+
+Each of these operators satisfies
+\[
+\mathsf J^*=\mathsf J=\mathsf J^{-1}.
+\]
+Therefore each is an admissible cut for the grading, BCH loop, and cut--adjoint theorems.
+\end{proposition}
+
+\begin{proof}
+The exchange operators are represented by the block matrix
+\[
+\begin{pmatrix}0&\id\\ \id&0\end{pmatrix},
+\]
+which is self-adjoint and squares to the identity.  The jet-parity operator is diagonal with real diagonal entries $\pm1$, so it is also a self-adjoint unitary involution.  The formal Taylor expansion
+\[
+\sum_{n=0}^N\frac{t^n}{n!}\xi_n
+\]
+changes under $t\mapsto-t$ by multiplying its $n$th layer by $(-1)^n$, proving the process-reversal interpretation.
+\end{proof}
+
+\begin{corollary}[Meaning of cut-even and cut-odd sectors]
+For $\mathsf J_{\mathrm{ex}}$ or $\mathsf J_{\mathrm{pp}}$, the cut-even sector contains response operators invariant under exchange, while the cut-odd sector records protocol asymmetry.  For $\mathsf J_{\mathrm{jet}}$, the cut-even sector preserves derivative parity and the cut-odd sector reverses it.  In every case the commutator
+\[
+[\mathbb G_{\mathrm e},\mathbb G_{\mathrm o}]
+\]
+measures failure of the symmetric and antisymmetric protocol sectors to evolve independently.
+\end{corollary}
+
+\begin{remark}[Legendre maps are not automatically cuts]
+A Legendre transform is a change of thermodynamic potential and chart, not by itself a self-adjoint involution on a fixed Hilbert carrier.  It becomes a cut only after the two chart representations are embedded in a common calibrated carrier and the resulting exchange operator is verified to satisfy $\mathsf J^*=\mathsf J=\mathsf J^{-1}$.  This distinction prevents chart notation from being mistaken for an operator identity.
+\end{remark}
