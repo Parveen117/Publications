@@ -22,6 +22,8 @@ Status: **source audit, not a new theorem or physical certificate**. Checked 202
 
 ## Precise next bridge obligation
 
+The [thermodynamic foundation bridge](THERMODYNAMIC_FOUNDATION_BRIDGE.md) now discharges one *conditional* equilibrium subproblem: U36's declared native quadratic cost, after exact hidden-channel elimination and an explicit entropy/volume/energy adapter, supplies a positive fundamental relation `U(S,V)` for the thermodynamic compass. Its exact rational witness verifies Maxwell and response identities. This does not yet discharge quantum preparation/readout, spacetime propagation, source universality or physical calibration.
+
 Give **one** declared native system with a state carrier `X`, evolution `T`, cut/observation `C`, and calibrated units. Provide both mappings from that same system:
 
 - a quantum adapter `(X,T,C) -> (rho,H,{M_i},p_i)` with positive normalized probabilities, specified readout `p_i`, and a measured or independently selected physical action scale if it claims physical `hbar`;
