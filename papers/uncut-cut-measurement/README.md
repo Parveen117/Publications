@@ -1,5 +1,7 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
+**v1.6 research step:** [spin/vector holonomy and geometry gate](SPIN_HOLONOMY_GEOMETRY_GATE.md). A scalar `-1` admits distinct flat spin and conical vector interpretations. The written bridge identifies the coframe, torsion, loop-scale and spin-cover inputs needed for holonomy to report metric curvature; exact controls are source-bound. A native spin connection, deficit angle, physical `hbar` and gravity remain unselected.
+
 **v1.5 research step:** [pre-entropy seam return and the gravity interface](PRE_ENTROPY_SEAM_RETURN.md) audits TVSP, thermodynamic/spacetime assumptions and cut grading; proves exact target-relative return and a flat-local/nontrivial-global control. The `+1/-1` return sector is typed separately from positive thermodynamic `I_th=1`. The finite certificate binds the new note and exact witness. Physical source selection, gravity and literal uncut observables remain open.
 
 **Monty Dabas — working research programme, version 1.1, 25 September 2026.**

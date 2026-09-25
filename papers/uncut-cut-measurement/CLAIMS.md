@@ -126,6 +126,9 @@ mathematics. Written proofs here do not imply priority.
 | G0 | Complete quantum gravity; RH or Yang–Mills closure | Not premises of this package | NOT CLAIMED |
 | SR-1 | A unitary sector return has nonnegative target-relative squared defect, while holonomy operator norm is blind to every unitary phase | Declared cut carrier, unitary loop continuation and target map | CONDITIONAL_WRITTEN_IDENTITY; exact +1/-1 checks; not an entropy or an uncut observable |
 | SR-2 | Local flatness can coexist with global -1 return, and principal endpoint +1 can hide integer phase winding | 3x3 torus sign transport; separate abelian path lift | EXACT_COUNTEREXAMPLES; global winding control consumes the prior RKF lift theorem; no physical metric or thermodynamic equivalence |
+| SH-1 | A scalar -1 has distinct flat spin and conical vector realizations; on a cone with deficit pi the vector return is -I and spin return is ±i | Declared spin double cover and spin structure; supplied 2D cone metric and deficit range | CONDITIONAL_NONSELECTION; exact quarter-turn and flat monodromy controls; no identification of native sign with spin connection |
+| SH-2 | Shrinking contractible-loop holonomy yields connection curvature, which becomes metric curvature under U20's coframe and torsion gates | Supplied smooth connection, oriented loop areas, nondegenerate coframe and compatible torsion-free connection | CONDITIONAL_STANDARD_GEOMETRIC_BRIDGE; exact f=1+u² rectangle coefficient; no physical gravitational source law |
+| SH-3 | Dimensionless sign/angle alone cannot select a numerical dimensionful hbar | Sign-only or angle-only return data, no physical action calibration | DIMENSIONAL_NONSELECTION; richer primitive not excluded |
 
 ## Certification coverage
 
