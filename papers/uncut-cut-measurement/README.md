@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 0.7, 25 September 2026.**
+**Monty Dabas — working research programme, version 0.8, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -16,6 +16,8 @@ Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
 [sector and coframe constraints](SECTOR_AND_COFRAME_SELECTION.md),
 [native grading and seam memory](NATIVE_GRADING_AND_SEAM_MEMORY.md),
 [native interaction and lawful cuts](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md),
+[native response tensor and cut ledger](NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md),
+[information/thermodynamics source audit](RESPONSE_SOURCE_AUDIT.md),
 and [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
 
@@ -181,14 +183,48 @@ component, every nonzero exact closed readout needs its full relevant memory.
 A fixed transcript of **2m scalar readings** reconstructs m connected
 two-component carriers from one scalar readout; the linear count is minimal.
 
-Current evidence: **93 regressions**, all **75 interaction graphs on one through
+The v0.7 evidence: **93 regressions**, all **75 interaction graphs on one through
 four channels**, **360 independent readout-closure comparisons**, **700 exact
 projection intertwiners**, and **167 minimal transcripts**. Their decoders pass
-1,298 basis-vector reconstructions. The certificate binds **37 source files**
+1,298 basis-vector reconstructions. That version binds **37 source files**
 and retains every earlier campaign. Interaction graph and strengths remain
 declared; physical gravitational/quantum identification is still open. The
 full invariant bilinear form of a connected family is definite, so a Lorentzian
 geometric target requires a separate adapter.
+
+## Added in v0.8: native response tensor and two cut ledgers
+
+[U30–U32](NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md) construct
+Q(Y)=Y^T Y-iY^T ZY from calibrated native response columns, with Z the
+represented quarter-turn. The tensor preserves both squared response size and
+an oriented pairing. It is covariant under a change of units only when its
+metric is transported too.
+
+A real coordinate cut always splits the real Gram form. Its **full complex
+ledger closes for every response catalogue exactly when the cut projector
+commutes with Z**. Otherwise an explicit imaginary cross-seam term remains;
+the minimum paired repair has rank([C;CZ])-rank(C) extra scalar channels.
+A half-channel cut needs one extra scalar. Preserving this tensor structure
+is weaker than closing the full interaction dynamics.
+
+For the signed order response L=UV-VU, CID-1's inherited total covariance gives
+a separate exact statistical information ledger and a nested-cut tower law.
+A two-channel response has L^T L=kappa I_4 with explicit positive kappa, so
+its exact squared norm needs the same input faithfulness as its signed vector.
+Zero mean, zero skew pairing and zero operator response are kept distinct.
+
+Current native evidence: **111 regressions**, **490 tensor transport checks**,
+**340 coordinate cuts**, **14 general readout repairs**, **90 exact response
+scale/quotient checks**, **405 covariance ledgers** and **1,620 nested ledgers**.
+The certificate binds **49 source files**, including the QTH correction.
+The adjacent CID/QTH suite has **50 passing tests**; CID-1's original certificate
+also passes read-only regeneration.
+
+The ten-source audit confirms the relevant existing work and uses the corrected
+thermodynamic paper at its pinned PR #4 commit. QTH-1 receives a targeted
+correction: noncommuting SLDs can have zero state-averaged commutator.
+Neither its declared quantum model nor a Lorentzian propagation law is
+imported into the native construction. Gravitational identification is open.
 
 ## Reproduce
 
@@ -224,10 +260,15 @@ U24–U26 are clock-free finite-dimensional grading and observer results with
 declared algebraic controls; no spacetime or physical field equation is used.
 U27–U29 add native-compatible real interaction, classified exact cuts and
 model-level response reconstruction under a declared control catalogue.
+U30–U32 construct a native response tensor, its cut seam, and a classical
+finite-ensemble covariance ledger with supplied positive weights. These weights
+are not a physical probability law derived from the uncut primitive.
 No physical quantum/classical correspondence, spacetime reconstruction, minimum
 action law, universal curvature-information identity or quantum-gravity closure
 has yet been derived by this package.
 
-This addition is independent of pending [correction PR #4](https://github.com/Parveen117/Publications/pull/4).
+No merge of [correction PR #4](https://github.com/Parveen117/Publications/pull/4)
+is required to run this package. The v0.8 source audit cites that correction
+edition at its immutable commit, with its open-PR status recorded.
 It uses pinned native sources and does not treat archived publication claims as
 new premises. See [SOURCE_PINS.json](SOURCE_PINS.json).

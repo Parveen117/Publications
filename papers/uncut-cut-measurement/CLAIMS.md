@@ -1,4 +1,4 @@
-# Claim ledger — v0.7
+# Claim ledger — v0.8
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -42,6 +42,9 @@ mathematics. Written proofs here do not imply priority.
 | U27 | Real antisymmetric inter-edge mixing and local R steps obey one EMK cut grading and have a genuine nonzero commutator; the family preserves a represented quarter-turn | Declared real m-channel carrier, interaction graph and nonzero Cayley parameters; real dagger is transpose | WRITTEN_PROOF in NATIVE_INTERACTION_AND_LAWFUL_CUTS.md; 490 grading/orthogonality and quarter-turn checks, direct ordered-response witness |
 | U28 | Common invariant real subspaces are sums of interaction components; minimum closed observer rank is 2 times the number of labels in components seen by C; invariant symmetric forms are scalar identities per component | All individually addressed local R and mixing controls included, nonzero parameters, real-linear finite carrier | WRITTEN_PROOF; 360 graph-versus-matrix closure comparisons, 700 projection intertwiners and 11 full invariant-form solves; proper lossy interacting quotient |
 | U29 | Two scalar readings per channel along a rooted tree reconstruct the connected carrier with a minimal fixed linear transcript | One first-coordinate readout, calibrated nonzero local/mixing controls, stated same-input transcript contract | WRITTEN_PROOF; 167 full-rank transcripts, 1,298 basis-vector decoder checks and chronological-word probes; physical preparation/readout not established |
+| U30 | Calibrated native responses define a Hermitian PSD tensor with exact grading conjugation, transport invariance and frame covariance | Real paired carrier, positive metric, represented quarter-turn; no physical probability law | WRITTEN_PROOF in NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md; direct complex Gram oracle and 490 transport checks |
+| U31 | Full tensor splits under every response catalogue iff the orthogonal cut commutes with Z; minimum paired repair is rank([C;CZ])-rank(C) | Real output-coordinate cut; quarter-turn Z squared equals -I; ambient metric transported with frame | WRITTEN_PROOF; 340 coordinate cuts, 14 general repairs, cross-seam and indefinite-gap controls |
+| U32 | Signed native responses obey inherited total covariance and tower ledgers; exact response and squared-norm recovery have the same input-kernel gate | Supplied finite ensemble or stated whole-carrier linear target; separate cut contracts | WRITTEN_PROOF; 405 ledgers, 1,620 tower checks, 90 exact scale/quotient checks; no gravitational identification |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |
@@ -74,9 +77,15 @@ mathematics. Written proofs here do not imply priority.
 | W30 | Aggregate cancellation is not a blind interaction component | C=(1,0,-1,0), two unlinked individually controlled carriers | EXACT_COUNTEREXAMPLE; zero initial output becomes -2/5 after a local R step |
 | W31 | Connected energy-preserving interacting family has only a definite invariant form line | Full stated family on two carriers | EXACT_CONTROL and U28 form proof; no Lorentzian metric derived |
 | W32 | Dropping mixing or local R controls changes response observability | One scalar readout on two carriers | EXACT_COUNTEREXAMPLE; rank two for either reduced catalogue, rank four for the full connected family |
+| W33 | A real half-channel cut loses an imaginary seam and can give an indefinite full-minus-visible tensor | One paired channel, identity response catalogue | EXACT_COUNTEREXAMPLE; determinant -1, exactly one extra scalar repairs it |
+| W34 | Paired tensor closure need not close the dynamics | Two interacting channels, one retained | EXACT_COUNTEREXAMPLE; Z descends, mixing does not |
+| W35 | Nonzero two-channel order response has a positive scalar Gram form of rank four | Nonzero finite Cayley parameters; explicit formula for kappa | WRITTEN_IDENTITY and exact controls; at parameters 1/2, kappa=64/125 |
+| W36 | A proper six-to-four quotient preserves the signed response | A linked pair and one isolated channel | EXACT_WITNESS; quotient response intertwiner |
+| W37 | Zero average does not mean zero response; the full Gram tensor loses an overall response sign | Opposite signed preparations/responses | EXACT_COUNTEREXAMPLES; nonzero covariance and equal tensors of L and -L |
+| W38 | Noncommuting SLDs may have zero antisymmetric state average | Declared qubit comparison at rho=I/2, SLDs sigma_x/sigma_y | EXACT_COUNTEREXAMPLE in corrected QTH-1 certificate and regression; no quantum axiom used to prove U30–U32 |
 | NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U27 constructs a native-compatible interacting candidate, but its physical selection and gravitational identification remain open |
 | S0 | Associative continuation alone implies no nontrivial symmetry | Three-state chain | EXACT_COUNTEREXAMPLE; every permutation tested for commutation |
-| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U29; preserved represented quarter-turn does not establish a Born law or physical quantum readout |
+| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U32; preserved represented quarter-turn does not establish a Born law or physical quantum readout |
 | ST0 | Spacetime is a derived optional representation | Need construction and physical interpretation of order, locality, dimension and metric | OPEN; coframe constraint remains conditional; v0.6 repairs native grading on a declared larger carrier but does not construct a spacetime |
 | A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U2/U6/U9 minimize representation memory, not nature's action |
 | CI0 | Cut ambiguity equals physical curvature or a universal information tensor | Need a typed adapter, invariant and scope-specific proof | OPEN; U7 alone is insufficient |
@@ -135,3 +144,21 @@ possible native interaction laws.
 The finite results are elementary self-contained mathematical consequences.
 Their role is to make the proposed programme precise and refutable; no priority
 claim is made for quotient factorization, finite refinement or memory counting.
+
+## v0.8 response and source correction coverage
+
+The native package adds 18 regressions for **111** total. Exact coverage adds
+490 tensor transport identities, all 340 real coordinate cuts through eight
+dimensions (30 preserve complete coordinate pairs), 14 noncoordinate repairs,
+90 signed-response scale/quotient comparisons, 405 finite-ensemble covariance
+ledgers and 1,620 nested ledgers. Pair-distance and iterative-closure oracles
+are independent of the conditional-mean and one-step repair constructions.
+There are **49 bound sources**, including six corrected CID/QTH surface files.
+
+CID-1's preexisting certificate matches its pinned digest read-only. Its
+20 tests and the corrected QTH-1's 30 tests pass separately from the native
+suite. The QTH correction replaces an invalid general converse with a checked
+maximally mixed counterexample and clarifies the difference identity.
+The ten external source pins record both current research and unmerged
+correction commits. Written proofs, finite PASS, source hashes, formal proofs,
+external review and empirical validation remain separate.

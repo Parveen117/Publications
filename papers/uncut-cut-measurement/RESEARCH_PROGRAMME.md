@@ -1,4 +1,4 @@
-# Research programme after v0.7
+# Research programme after v0.8
 
 ## Foundational decision
 
@@ -10,7 +10,7 @@ Keep both candidate starts explicit until a derivation distinguishes them:
   meaningful continuation relation; compatibility across further cuts constrains
   admissible laws.
 
-U1–U29 do not choose between them. Neither candidate identifies a labelled finite
+U1–U32 do not choose between them. Neither candidate identifies a labelled finite
 set, a quantum state vector or a spacetime point with uncut ground.
 
 ## Completed in v0.2: more than one admissible continuation
@@ -117,19 +117,42 @@ graph and strengths are still candidate inputs. The complete invariant form
 of a connected family is definite; Lorentzian geometry is not obtained by
 renaming that form.
 
-## Next concrete derivation: a gravitational target and its representation
+## Completed in v0.8: response tensor, information ledger and source audit
 
-Choose a native response target proposed to be gravitational, state what makes
-that interpretation operational, and justify the interaction data before
-fitting a desired signature or force law. The exact ordered responses and
-lawful quotient now provide a candidate test setting. Decide which target is
-preserved by a geometric readout and prove its adapter; the full positive
-invariant form cannot simply be identified with a Lorentzian metric.
+[U30–U32](NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md) choose an explicit signed
+order response from the native family and construct its Hermitian Gram tensor.
+A cut respecting the represented quarter-turn has an additive full tensor
+ledger; an incompatible real cut leaves an exact imaginary seam term.
+The minimum paired repair is computed. A second, statistical ledger applies
+the inherited total-covariance identity to the signed response and has an
+exact nested-cut law. The two kinds of cut must not be conflated.
 
-For a quantum reading of the same data, the represented quarter-turn and
-energy preservation must be extended by a justified preparation/readout law.
-Compare the two representations on a common target. Neither the scalar
-transcript nor the native commutator alone establishes that physical bridge.
+The information/curvature, EMK tensor, RKF covariance and thermo sources are
+audited and pinned. QTH-1 is corrected: zero state-averaged commutator does
+not imply commuting operators. The selected response is measurable under the
+declared same-input/signed-readout model contract, not yet a gravitational
+observable or an established physical instrument.
+
+Evidence: 111 native regressions, 340 coordinate cuts, 90 response scale and
+quotient checks, 405 covariance ledgers and 1,620 nested ledgers; 50 adjacent
+CID/QTH tests, with the QTH negative control included.
+
+## Next concrete derivation: physical response selection and readout
+
+The native order response Lx is now an explicit target. State a physical
+preparation/readout law and a gravitational response criterion that can
+distinguish it from rival native interactions. Graph and coupling choices
+still need justification. A positive Gram form and its oriented pairing
+cannot by themselves supply a Lorentzian metric or a force law.
+
+For a geometric reading, require the same signed target to satisfy the
+thermodynamic transport square and justify its smooth/propagation hypotheses.
+The thermo metric adapter assumes a Lorentzian principal symbol, so that
+assumption cannot count as a derivation of Lorentzian signature here.
+For a quantum reading, derive the operational probabilities and measurement
+map; a complex Gram tensor alone is insufficient. Compare both readings on
+the same calibrated target, preserving the raw signed record as well as its
+tensor. Noise and conditioning remain additional experimental obligations.
 
 ## Remaining physical selection problem
 

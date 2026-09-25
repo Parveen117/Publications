@@ -87,8 +87,12 @@ coframe profile for a fixed connection. The native-grading extension proves an
 overlapping-pair obstruction and derives exact target-relative linear memory
 costs for a larger edge carrier. The interaction extension supplies graded
 inter-edge mixing, classifies its exact cuts, and constructs a proper lossy
-quotient preserving nonzero interaction. Current evidence includes 93
-regressions, 75 interaction graphs and 167 minimal response transcripts, with
+quotient preserving nonzero interaction. The v0.8 response extension adds a native Hermitian tensor, an exact cut-seam
+ledger and an inherited covariance ledger for signed order responses. It audits
+the existing information/curvature and thermodynamic sources and corrects a
+QTH-1 state-average/commutator converse. Current evidence includes 111 native
+regressions, 50 adjacent CID/QTH tests, 340 coordinate cuts and 1,620 nested
+covariance ledgers, with
 the earlier graph-memory, signed-coupling and conditional curvature campaigns
 retained in the same source-bound certificate.
 Spacetime and the quantum/classical correspondence are explicit derivation

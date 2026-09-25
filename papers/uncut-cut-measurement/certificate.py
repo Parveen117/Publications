@@ -12,6 +12,7 @@ import gravity_certificate
 import selection_certificate
 import grading_certificate
 import interaction_certificate
+import response_certificate
 
 HERE = Path(__file__).resolve().parent
 BOUND_SOURCES = (
@@ -30,6 +31,15 @@ BOUND_SOURCES = (
     "grading_model.py", "grading_certificate.py", "tests/test_grading_model.py",
     "NATIVE_INTERACTION_AND_LAWFUL_CUTS.md", "INTERACTION_SOURCE_PINS.json",
     "interaction_model.py", "interaction_certificate.py", "tests/test_interaction_model.py",
+    "NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md", "RESPONSE_SOURCE_AUDIT.md",
+    "RESPONSE_SOURCE_PINS.json", "response_model.py", "response_certificate.py",
+    "tests/test_response_model.py",
+    "../curvature-information-duality/README.md",
+    "../curvature-information-duality/LINEAGE.md",
+    "../curvature-information-duality/certificates/qth1_quantum_recognition_information.py",
+    "../curvature-information-duality/certificates/QTH1_RESULT.json",
+    "../curvature-information-duality/certificates/EXPECTED_QTH1.sha256",
+    "../curvature-information-duality/tests/test_qth1.py",
 )
 
 
@@ -212,7 +222,7 @@ def controls():
 def build():
     domain, counts = finite_checks()
     body = {
-        "protocol": "UNCUT_CUT_MEASUREMENT_V0_7",
+        "protocol": "UNCUT_CUT_MEASUREMENT_V0_8",
         "status": "PASS_FINITE_CHECKS",
         "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
         "domains": domain,
@@ -225,10 +235,11 @@ def build():
         "sector_and_coframe_constraints": selection_certificate.build_checks(),
         "native_grading_and_seam_memory": grading_certificate.build_checks(),
         "native_interaction_and_lawful_cuts": interaction_certificate.build_checks(),
+        "native_response_tensor_and_cut_ledger": response_certificate.build_checks(),
         "source_sha256": {p: hashlib.sha256((HERE / p).read_bytes()).hexdigest()
                           for p in BOUND_SOURCES},
         "scope": {
-            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26 and NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29 under stated hypotheses; no priority claim for standard methods",
+            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29 and NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32 under stated hypotheses; no priority claim for standard methods",
             "availability_interface_physically_established": False,
             "native_gravity_law_physically_identified": False,
             "spacetime_dimension_derived": False,
@@ -240,6 +251,9 @@ def build():
             "physical_inter_edge_law_selected_from_primitive": False,
             "genuine_lossy_quotient_preserves_declared_interaction": True,
             "model_response_transcript_physically_realized": False,
+            "native_response_tensor_and_exact_cut_seam_constructed": True,
+            "native_tensor_identified_with_quantum_information_metric": False,
+            "antisymmetric_response_identified_with_connection_curvature": False,
             "post_cut_smooth_chart_is_supplied": True,
             "formal_proof_assistant_verification": False,
             "uncut_identified_with_finite_carrier": False,

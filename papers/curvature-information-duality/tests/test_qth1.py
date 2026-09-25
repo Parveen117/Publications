@@ -125,7 +125,7 @@ def test_symmetric_diagonal_is_the_qfi():
         assert s == q.qfi_closed_form(q.R0, dr)
 
 
-def test_obstruction_vanishes_exactly_for_commuting_slds():
+def test_commuting_slds_force_zero_antisymmetric_part():
     rho = q.bloch_state(q.R0)
     e1 = q.bloch_derivative((Fr(0), Fr(0), Fr(1, 4)))
     e2 = q.bloch_derivative((Fr(0), Fr(0), Fr(1, 2)))
@@ -135,7 +135,7 @@ def test_obstruction_vanishes_exactly_for_commuting_slds():
     assert a == 0
 
 
-def test_obstruction_nonzero_when_slds_do_not_commute():
+def test_declared_noncommuting_witness_has_nonzero_state_average():
     rho = q.bloch_state(q.R0)
     d1 = q.bloch_derivative((Fr(3, 5), Fr(4, 5), Fr(0)))
     d2 = q.bloch_derivative((Fr(4, 5), Fr(-3, 5), Fr(0)))
@@ -143,6 +143,18 @@ def test_obstruction_nonzero_when_slds_do_not_commute():
     assert q.msub(q.mmul(L1, L2), q.mmul(L2, L1)) != q.mzero()
     _, a = q.geometric_tensor(rho, d1, d2)
     assert a != 0
+
+
+def test_noncommuting_slds_can_have_zero_state_averaged_commutator():
+    rho = q.bloch_state((Fr(0), Fr(0), Fr(0)))
+    dx = q.bloch_derivative((Fr(1), Fr(0), Fr(0)))
+    dy = q.bloch_derivative((Fr(0), Fr(1), Fr(0)))
+    lx, ly = q.sld(rho, dx), q.sld(rho, dy)
+    comm = q.msub(q.mmul(lx, ly), q.mmul(ly, lx))
+    assert comm == q.mscale((Fr(0), Fr(2)), q.SZ)
+    assert comm != q.mzero()
+    assert q.trace(q.mmul(rho, comm)) == q.GZ
+    assert q.geometric_tensor(rho, dx, dy) == (Fr(0), Fr(0))
 
 
 # ---------------- T4: where the identity fails ----------------

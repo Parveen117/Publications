@@ -45,13 +45,22 @@
     "saturating_directions": [
       "(Fraction(3, 5), Fraction(4, 5), Fraction(0, 1))"
     ],
-    "statement": "Projective measurement along rational unit vectors gives an exact classical Fisher information, and CFI <= QFI holds on every sampled direction. The discard QFI - CFI is EXACTLY ZERO at the optimal direction (aligned with the state's motion) and strictly positive elsewhere; a fully coarse measurement discards everything. So the quantum recognition ledger is QFI = CFI + discard with discard >= 0 \u2014 an INEQUALITY with an exactly vanishing case, not the exact identity CID-1 certified classically",
+    "statement": "Projective measurement along rational unit vectors gives an exact classical Fisher information, and CFI <= QFI holds on every sampled direction. The discard QFI - CFI is EXACTLY ZERO at the optimal direction (aligned with the state's motion) and strictly positive elsewhere; a fully coarse measurement discards everything. So the quantum recognition ledger is QFI = CFI + discard with discard >= 0 \u2014 a nonnegative measurement gap with an exactly vanishing case, distinct from the conditional variance in CID-1",
     "verdict": "PASS"
   },
   "T3_one_tensor_two_halves": {
     "antisymmetric_offdiagonal": "-1/2",
     "commuting_pair_antisymmetric": "0",
-    "statement": "The quantum geometric tensor Q_ij = Tr(rho L_i L_j) splits EXACTLY into a real symmetric part (1/2)Tr(rho{L_i,L_j}) \u2014 the information metric, CID-1's object, whose diagonal is the quantum Fisher information \u2014 and an imaginary antisymmetric part (1/2i)Tr(rho[L_i,L_j]), the mean Uhlmann curvature, with exactly zero diagonal. Both are exact rationals. The antisymmetric part is nonzero EXACTLY when the two SLDs fail to commute in the state average, and vanishes exactly for a commuting pair: the obstruction to recognizing both parameters at once IS a curvature, in the sense CFE gives the word. One tensor, two halves already certified separately",
+    "noncommuting_zero_average_control": {
+      "SLDs": [
+        "sigma_x",
+        "sigma_y"
+      ],
+      "antisymmetric_part": "0",
+      "operator_commutator": "2i sigma_z",
+      "state": "I/2"
+    },
+    "statement": "The SLD Gram tensor Q_ij = Tr(rho L_i L_j) splits EXACTLY into a real symmetric part (1/2)Tr(rho{L_i,L_j}) \u2014 the SLD information matrix, whose diagonal is the quantum Fisher information \u2014 and an imaginary antisymmetric part (1/2i)Tr(rho[L_i,L_j]), the antisymmetric SLD pairing, with exactly zero diagonal. Both are exact rationals. The antisymmetric part equals the state-averaged commutator divided by 2i. Commuting SLDs force it to vanish; the converse is false. At rho=I/2, sigma_x and sigma_y do not commute but the averaged commutator vanishes. These identities alone do not identify connection curvature or characterize physical measurement attainability",
     "symmetric_offdiagonal": "0",
     "verdict": "PASS"
   },
@@ -62,7 +71,7 @@
   },
   "T5_commuting_face_restores_everything": {
     "commuting_face_discard": "0",
-    "statement": "On the commuting face \u2014 a fixed eigenbasis with only the eigenvalues moving \u2014 everything classical returns exactly: the SLDs commute, the mean Uhlmann curvature is exactly zero, the eigenbasis measurement is optimal with quantum discard exactly zero, and the quantum Fisher information equals the classical Fisher information computed by CID-1's route on the eigenvalue distribution. The quantum layer contains the classical one as its commuting face, exactly as classical thermodynamics is the memoryless face in CFE-1",
+    "statement": "On the commuting face \u2014 a fixed eigenbasis with only the eigenvalues moving \u2014 everything classical returns exactly: the SLDs commute, the antisymmetric SLD pairing is exactly zero, the eigenbasis measurement is optimal with quantum discard exactly zero, and the quantum Fisher information equals the classical Fisher information computed by CID-1's route on the eigenvalue distribution. The quantum layer contains the classical one as its commuting face, exactly as classical thermodynamics is the memoryless face in CFE-1",
     "verdict": "PASS"
   },
   "T6_monotonicity_under_channels": {
@@ -71,11 +80,11 @@
     "unitary_preserves": true,
     "verdict": "PASS"
   },
-  "answers": "the queued question left open by CID-1: whether the classical recognition ledger g = g_recognized + g_discarded survives quantum-ly. It does not \u2014 it becomes an inequality with exact saturation, and the commuting face restores the identity",
-  "capsule": "QTH-1: quantum recognition information \u2014 the ledger becomes an inequality",
+  "answers": "Classical total covariance remains an identity inside outcome data. The separate QFI-CFI measurement gap is nonnegative on the declared witnesses, and the chosen commuting family with eigenbasis measurement saturates it.",
+  "capsule": "QTH-1: quantum recognition information \u2014 a separate measurement gap",
   "claim_boundary": {
     "RH_K0_L0_YM": "not touched",
-    "berry_phase_identification": "NOT CLAIMED: that the antisymmetric part is a physical Berry phase; CFE-Q certifies the holonomy side separately",
+    "berry_phase_identification": "NOT CLAIMED: that zero antisymmetric part implies commuting SLDs, or that the antisymmetric part is a physical Berry phase; CFE-Q certifies the holonomy side separately",
     "no_thermodynamic_interpretation": "NOT CLAIMED: entropy production, work, or heat. The quantities certified are information-geometric",
     "not_claimed": "NOT CLAIMED: the general Braunstein-Caves attainability theorem, the Morozova-Chentsov classification of quantum Fisher metrics, Kubo-Mori/Bogoliubov metrics (which need logarithms and are never evaluated here), and multi-copy or asymptotic estimation statements",
     "quantum_gravity": "a horizon, not a claim",
@@ -84,7 +93,7 @@
   "companion_not_duplicate": "CFE-Q certified the Bloch/holonomy side of quantum CFE (Markovian limit flat, geometric residue faithful, quarter-turn echo). This capsule certifies the INFORMATION side, which CFE-Q does not touch",
   "provenance": {
     "companions": "CID-1 (classical ledger), CFE-Q (quantum holonomy witness), CFE-1/CFE-U (the memoryless-face and uniqueness shape)",
-    "finding": "QTH-F1 the recognition ledger is classically an identity and quantum-ly an inequality with exact saturation; QTH-F2 the quantum geometric tensor's symmetric half is CID-1's information metric and its antisymmetric half is a CFE-style curvature obstruction \u2014 one object, two capsules; QTH-F3 the commuting face restores the classical identity exactly, the same shape as CFE-1's memoryless limit",
+    "finding": "QTH-F1: a separate nonnegative measurement gap on the declared witnesses. QTH-F2: exact symmetric and antisymmetric parts of the SLD Gram tensor; a zero state average does not imply commuting operators. QTH-F3: the selected commuting family with eigenbasis measurement has zero measurement gap.",
     "prior_executable_version": "NONE \u2014 first quantum information capsule"
   }
 }

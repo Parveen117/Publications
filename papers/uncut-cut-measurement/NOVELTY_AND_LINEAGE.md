@@ -28,6 +28,7 @@ versions to mean additions to this particular draft.
 | U21–U23 | U18, elementary signed-graph consistency, information-invariance Theorem I/J, RKF 31, and standard torsion/coframe equations | Complete criterion within a declared coupling class, a minimum-edge signature counterexample, and conditional coframe closure for a fixed homogeneous connection. Neither physical sector selection nor a new universal field equation is claimed. |
 | U24–U26 | RKF 41/48/55 native grading, Spectral II/RKF 31 linear repair, RSC exact descent | Common-grading obstruction for the declared overlapping embeddings; exact graph-specific memory ranks; separately addressed response reconstruction. General observability and rank-repair principles are inherited. |
 | U27–U29 | RKF 51/55 Cayley flow typing, RKF 48 common cut grading, EMK-T1 cross-channel commutators, prior exact descent and linear observability | Explicit native-compatible inter-edge mixing; classification of exact real cuts for its full control family; a minimal scalar transcript. No new claim for Cayley unitarity or the existence of mixed commutators. |
+| U30–U32 | CID-1 total covariance, RKF 32 cut-memory Gram and target-faithfulness, QTH-1 SLD comparison, EMK-T1 mixed channels, LTB-1 non-identification, thermo transport square and unit typing | Explicit tensor and cut seam on the U27 response family; minimal paired repair and exact response scale. No priority claim for Gram, covariance or linear rank methods. QTH operator-commutation converse corrected. |
 
 Spectral II additionally addresses sampling, noise/stability and completion.
 This exact finite model does not supersede those stronger analytical settings.
@@ -126,3 +127,14 @@ at Recognition-Kernel-Framework commit `927cdb6ca98221c0b4285da953a2c8b689fb202c
 Those pins establish which texts were inspected; they do not certify every
 claim in those texts. The comparison has limited coverage and does not prove
 absence from every other repository file or the wider literature.
+
+## v0.8 source-directed continuation
+
+The user specifically requested the existing information–curvature, covariance,
+duality, tensor and thermodynamic results. [The audit](RESPONSE_SOURCE_AUDIT.md)
+locates and pins them instead of treating their programme as new.
+[U30–U32](NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md) extend the current interacting
+model with a positive/oriented response tensor and an explicit cross-seam
+ledger. It is not identified with QTH's SLD tensor or a spacetime curvature.
+The conditional covariance and observer-rank arguments are inherited. A
+physical response criterion selecting gravity remains the next open bridge.
