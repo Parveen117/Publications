@@ -29,6 +29,7 @@ versions to mean additions to this particular draft.
 | U24–U26 | RKF 41/48/55 native grading, Spectral II/RKF 31 linear repair, RSC exact descent | Common-grading obstruction for the declared overlapping embeddings; exact graph-specific memory ranks; separately addressed response reconstruction. General observability and rank-repair principles are inherited. |
 | U27–U29 | RKF 51/55 Cayley flow typing, RKF 48 common cut grading, EMK-T1 cross-channel commutators, prior exact descent and linear observability | Explicit native-compatible inter-edge mixing; classification of exact real cuts for its full control family; a minimal scalar transcript. No new claim for Cayley unitarity or the existence of mixed commutators. |
 | U30–U32 | CID-1 total covariance, RKF 32 cut-memory Gram and target-faithfulness, QTH-1 SLD comparison, EMK-T1 mixed channels, LTB-1 non-identification, thermo transport square and unit typing | Explicit tensor and cut seam on the U27 response family; minimal paired repair and exact response scale. No priority claim for Gram, covariance or linear rank methods. QTH operator-commutation converse corrected. |
+| U33–U35 | Spectral target-fibre/catalogue principles, LTB-1 predeclaration rule, thermo non-selection and calibrated/noise-stable identification, U27/U32 pair formulas | Explicit reciprocal fibre of the current order response, its one-readout repair, pair identification and bounded-error comparison. No priority claim for algebraic inversion or interval arithmetic. |
 
 Spectral II additionally addresses sampling, noise/stability and completion.
 This exact finite model does not supersede those stronger analytical settings.
@@ -138,3 +139,12 @@ model with a positive/oriented response tensor and an explicit cross-seam
 ledger. It is not identified with QTH's SLD tensor or a spacetime curvature.
 The conditional covariance and observer-rank arguments are inherited. A
 physical response criterion selecting gravity remains the next open bridge.
+
+## v0.9 identification before a physical universality claim
+
+The complete U32 signed response still has a two-branch ambiguity in the
+mixing parameter. [U33–U35](PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md)
+classify that fibre and repair it with a direct independently calibrated
+response. This is a new explicit result for the present model, under the
+earlier recognition/repair principles. It does not recertify all thermodynamics
+or derive a gravitational coupling from probe agreement alone.

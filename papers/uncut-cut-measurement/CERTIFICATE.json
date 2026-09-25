@@ -103,6 +103,170 @@
     "scope": "All cuts and ordered pairs of partial endomaps through three states; W7 is a named four-state control. Availability queries require a separately justified interface; no physical instrument is certified."
   },
   "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
+  "calibrated_probe_identification": {
+    "controls": {
+      "NP0_not_physical_selection": {
+        "gravity_identified": false,
+        "two_different_pairs_pass_internal_agreement": true
+      },
+      "W39_reciprocal_blindness": {
+        "mixings": [
+          "1/2",
+          "2"
+        ],
+        "phase": "1/2",
+        "reported_first": [
+          "-8/25",
+          "16/25",
+          "3/5"
+        ],
+        "reported_second": [
+          "-8/25",
+          "16/25",
+          "-3/5"
+        ],
+        "same_complete_order_matrix": true,
+        "same_tensor": true
+      },
+      "W40_augmented_probe_rejection": "SHARED_PAIR_REJECTED",
+      "W41_posthoc_output_fit": {
+        "different_native_response": true,
+        "fitted_residual_zero": true,
+        "independent_two_sided_calibration": false
+      },
+      "W42_hidden_native_extension": {
+        "extra_channel_R_readings": [
+          "3/5",
+          "12/13"
+        ],
+        "same_five_raw_readings": true
+      },
+      "W43_bounded_error": {
+        "direct_gap": "6/5",
+        "radius_one_tenth": "SHARED_PAIR_REJECTED",
+        "radius_three_fifths": "UNRESOLVED"
+      },
+      "W44_no_uniform_inverse_margin": {
+        "large_mixing": "INSUFFICIENT_RESOLUTION",
+        "weak_phase": "INSUFFICIENT_RESOLUTION"
+      }
+    },
+    "counts": {
+      "calibrated_frames": 300,
+      "distinct_reciprocal_collisions": 40,
+      "held_out_basis_predictions": 400,
+      "noisy_enclosures": 2700,
+      "pairwise_augmented_verdicts": 4950,
+      "pairwise_order_comparisons": 4950,
+      "parameter_pairs": 100,
+      "phase_error_bounds": 2700
+    },
+    "domains": {
+      "frames": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "2",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "5",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "7"
+          ]
+        ],
+        [
+          [
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "-2"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "generated_data": "synthetic exact native matrices",
+      "noise_offsets_per_statistic": [
+        -1,
+        0,
+        1
+      ],
+      "parameters": [
+        "-1/3",
+        "-1/2",
+        "-1",
+        "-2",
+        "-3",
+        "1/3",
+        "1/2",
+        "1",
+        "2",
+        "3"
+      ],
+      "raw_scalar_readings": 5,
+      "reported_error_radius": "1/10000",
+      "reported_statistics": 3
+    },
+    "scope": "U33-U35 under the declared oriented two-channel family; neither instrument realization nor physical gravitational universality is established",
+    "status": "PASS_FINITE_CHECKS"
+  },
   "checks": {
     "closed_refinement_comparisons": 8521,
     "common_target_triples": 3509,
@@ -1091,7 +1255,7 @@
     "scope": "U30-U32 written proofs are separate from these finite comparisons; no physical gravity or quantum readout law",
     "status": "PASS_FINITE_CHECKS"
   },
-  "protocol": "UNCUT_CUT_MEASUREMENT_V0_8",
+  "protocol": "UNCUT_CUT_MEASUREMENT_V0_9",
   "represented_blocks": {
     "entry_alphabet": [
       -1,
@@ -1106,21 +1270,25 @@
   "scope": {
     "antisymmetric_response_identified_with_connection_curvature": false,
     "availability_interface_physically_established": false,
+    "bounded_error_probe_rejection_constructed": true,
     "coframe_profile_constrained_within_supplied_homogeneous_class": true,
+    "declared_native_pair_identified_with_augmented_readout": true,
     "empirical_validation": false,
     "formal_proof_assistant_verification": false,
-    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29 and NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32 under stated hypotheses; no priority claim for standard methods",
+    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32 and PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35 under stated hypotheses; no priority claim for standard methods",
     "genuine_lossy_quotient_preserves_declared_interaction": true,
     "homogeneity_derived_from_native_law": false,
     "independent_review": false,
     "minimum_nature_action_derived": false,
     "model_response_transcript_physically_realized": false,
     "native_compatible_inter_edge_candidate_constructed": true,
+    "native_coupling_values_selected_from_primitive": false,
     "native_grading_repair_on_declared_edge_assembly": true,
     "native_gravity_law_physically_identified": false,
     "native_response_tensor_and_exact_cut_seam_constructed": true,
     "native_tensor_identified_with_quantum_information_metric": false,
     "physical_inter_edge_law_selected_from_primitive": false,
+    "physical_probe_universality_established": false,
     "physical_quantum_classical_derivation": false,
     "physical_spacetime_derivation": false,
     "post_cut_smooth_chart_is_supplied": true,
@@ -1246,25 +1414,27 @@
     "../curvature-information-duality/certificates/qth1_quantum_recognition_information.py": "f619d64e45f697db3764b6455c8413aef8daa668a968d363236e878c37a4040c",
     "../curvature-information-duality/tests/test_qth1.py": "b72cf1965bc6745f4aa29f8acaa3193f452a2801911ad5286148693ae4a6a316",
     "ADMISSIBLE_CONTINUATION.md": "dd71c56c3bb1593d5cc5afb5fe66c118216be94c933b7961e3bb52cce445a3c5",
-    "CLAIMS.md": "5cc942659c1326c02e8d09a8bfc8f7315caf65fb57a88ad246e53bdef2da5ec1",
+    "CLAIMS.md": "8ab2b0c1f07280af8e175eab3fda3640c6ba30233da9caa658f5dbcae28beb26",
     "FAMILY_CONTINUATION.md": "847e994bf6ec2990f4727e7ac6b25374fd8d5aaa94914c7a668fff25c854e3db",
     "GRADING_SOURCE_PINS.json": "670cc69d25bbb3f45b0dabdcda955e5acfaafb70ee605867201c9a047b0efe8c",
     "GRAVITY_BEFORE_CURVATURE.md": "9271e6063aac15382df8aeaff4ca39e28be92460687bc6bd54b60820ec90bbe5",
     "GRAVITY_SOURCE_PINS.json": "0025efcc8048896b0e6a02b23df84beaf4bea2c46badce54d8c19865a03e2f95",
+    "IDENTIFICATION_SOURCE_PINS.json": "44757fdfb25427fceced9efa6fb20e4d6df127babf33834bc88a8354b7710921",
     "INTERACTION_SOURCE_PINS.json": "1b455519dbe92b83aa98012059ab1774e075c26279a03bcf81beeebbfa136bb1",
     "MANUSCRIPT.md": "a95cee99c7f55ebe861d1ded782aa710fe1934354f789b19d6990873da7fdf32",
     "NATIVE_GRADING_AND_SEAM_MEMORY.md": "247c3f652cabacfaf9338c4900037baf8c5d6941fbdd56134ecace532174a051",
     "NATIVE_INTERACTION_AND_LAWFUL_CUTS.md": "ac37333fb1aa315ffe41f6ad821bd1437ddb4a2270cc065f65820b270bb4ea69",
     "NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md": "3ee3183f14e5f0a5978c1d591720c7bfb499528d71677ddb722ecbe8a19d1fbe",
-    "NOVELTY_AND_LINEAGE.md": "f80d9b3b9dae66a1b3f0a51b7471d4b4f2da7a25228d648e331f3f8e865957bc",
-    "README.md": "362a0ade37dc7524dff94747d1338ab39e5d711813bde1a05071a56e922457c5",
-    "RESEARCH_PROGRAMME.md": "159a67c181b1093f0b01fb29070741fa9e8c61946e89ffebabceee921758d4ad",
+    "NOVELTY_AND_LINEAGE.md": "d0c81dd7180f37b361ca288d1d88a7d541c4d862a15e7a78e251a9d44a6c8a16",
+    "PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md": "5fa440c92789cc7aa0e21d996d6a97e70d59f4c87a876eafe74285205d7182cf",
+    "README.md": "c0bdf88decc3ffdc5ca346db20096ab89bbb0a838e92c069aafd9b843059b246",
+    "RESEARCH_PROGRAMME.md": "ed63fc4ff8dc4ee7d4b4f4b2d5163d12419decf6ea390f472a91ff30213fbf24",
     "RESPONSE_SOURCE_AUDIT.md": "454ada029b6bd819c43d6ea636289c164ebe9a7a21c6aa3601af93367f3a334e",
     "RESPONSE_SOURCE_PINS.json": "1948b38ae80ad66abdfb0e7b21663abece5151dc1d587b0370b289ac19305927",
     "SECTOR_AND_COFRAME_SELECTION.md": "d9180edd7fef49f24116f5b28db8642463525f9b89030be2129185f25d10db5d",
     "SELECTION_SOURCE_PINS.json": "75cdff089cbad4ef638c64204147cdf9b3f8cb9688e742b8572afe3f4075f869",
     "SOURCE_PINS.json": "83811fbe301b92812bed1d3f0a28771c9163fbaf0bbd92392990aa134ef3bc7a",
-    "certificate.py": "406ee24a0f2db05fd8b7792ffddd04e01fae22eb5759af7735f11b33f4ca7921",
+    "certificate.py": "2ab923c551cf908b7b30f0c576e50793b191be760ca20218ee053dbac23763f5",
     "family_certificate.py": "91b949103dc086b271187894d6a1ce0c34328b91b1bfc361aa40fed42b74e429",
     "family_model.py": "db7e2505667eb7eb85bf7e6f75eee46348935f79875528e77f0eef3ed65a535a",
     "finite_model.py": "ff274cccdeb9ee5cc1e65db661bed733f114415c34d31f0bd3be75cc27df876a",
@@ -1272,6 +1442,8 @@
     "grading_model.py": "b4921f85e348ee987d340660fc02bb20a9b3182e00e365bf8db3f30b686c4bf0",
     "gravity_certificate.py": "d38dc8b204669aeeb09c9dd4f0fbcc6786dcfd1c90a496a202a7efa6175781b7",
     "gravity_model.py": "20346e44998ee42a655adf38b319e219d3f1dedf79b73993fa7d279355175cb7",
+    "identification_certificate.py": "2541dbccb648a76a546e953aaff3ed4f80ac65bde1669e8758794dbcddcc6edc",
+    "identification_model.py": "64bb78dfcac7c398b8e847fb9862023ebe2d4b59462332dce5eabd4511f1f00e",
     "interaction_certificate.py": "22b0b7c67142150dce6be025313f85af5992928a671bb7c02f1b76e52489a3e9",
     "interaction_model.py": "887708a90d5410f2da8200b28f441c5240e590f5bc8ac50e981d7433dc9b6335",
     "partial_certificate.py": "293e19c34558e84d140b0cef0fee857a77729a39410d645e01bad9676a742a04",
@@ -1284,6 +1456,7 @@
     "tests/test_finite_model.py": "5f53ea7ee064f5dbcab1523b22222638370c626aa25a0cd5858c5e82c3cb13ae",
     "tests/test_grading_model.py": "9740b5c92947daa3e58d64bc0bb4a00a74a1a0aa504ee5bef7988d8d7f6b6c07",
     "tests/test_gravity_model.py": "84d910732a1840ae12be4e9b76056c2b67c62f071356806b9c81013ee184893d",
+    "tests/test_identification_model.py": "539559d1d87f380b42fc9b092aff0758d66a98995b175848d8aa6a9f987bcb31",
     "tests/test_interaction_model.py": "281072a97b92032b5c8f69bb42db970f6f1d06dca304dbc65396096d52323cf4",
     "tests/test_partial_model.py": "5c10db7f08c52d5c244eeddadc85506e6645bc8ecba3b22c1528f385510484d0",
     "tests/test_response_model.py": "b79a1b1a867607eca91906a312671382517c6134dceea4eabbb00bcfa3699156",

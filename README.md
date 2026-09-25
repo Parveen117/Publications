@@ -90,9 +90,11 @@ inter-edge mixing, classifies its exact cuts, and constructs a proper lossy
 quotient preserving nonzero interaction. The v0.8 response extension adds a native Hermitian tensor, an exact cut-seam
 ledger and an inherited covariance ledger for signed order responses. It audits
 the existing information/curvature and thermodynamic sources and corrects a
-QTH-1 state-average/commutator converse. Current evidence includes 111 native
-regressions, 50 adjacent CID/QTH tests, 340 coordinate cuts and 1,620 nested
-covariance ledgers, with
+QTH-1 state-average/commutator converse. The v0.9 extension classifies an exact reciprocal ambiguity in the signed
+response and repairs it with one direct calibrated reading. It adds native
+pair identification, held-out response predictions and bounded-error probe
+comparison. Current evidence includes 130 native regressions, 100 parameter
+inversions and 2,700 noise-box enclosures, with
 the earlier graph-memory, signed-coupling and conditional curvature campaigns
 retained in the same source-bound certificate.
 Spacetime and the quantum/classical correspondence are explicit derivation

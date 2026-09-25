@@ -13,6 +13,7 @@ import selection_certificate
 import grading_certificate
 import interaction_certificate
 import response_certificate
+import identification_certificate
 
 HERE = Path(__file__).resolve().parent
 BOUND_SOURCES = (
@@ -40,6 +41,8 @@ BOUND_SOURCES = (
     "../curvature-information-duality/certificates/QTH1_RESULT.json",
     "../curvature-information-duality/certificates/EXPECTED_QTH1.sha256",
     "../curvature-information-duality/tests/test_qth1.py",
+    "PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md", "IDENTIFICATION_SOURCE_PINS.json",
+    "identification_model.py", "identification_certificate.py", "tests/test_identification_model.py",
 )
 
 
@@ -222,7 +225,7 @@ def controls():
 def build():
     domain, counts = finite_checks()
     body = {
-        "protocol": "UNCUT_CUT_MEASUREMENT_V0_8",
+        "protocol": "UNCUT_CUT_MEASUREMENT_V0_9",
         "status": "PASS_FINITE_CHECKS",
         "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
         "domains": domain,
@@ -236,10 +239,11 @@ def build():
         "native_grading_and_seam_memory": grading_certificate.build_checks(),
         "native_interaction_and_lawful_cuts": interaction_certificate.build_checks(),
         "native_response_tensor_and_cut_ledger": response_certificate.build_checks(),
+        "calibrated_probe_identification": identification_certificate.build_checks(),
         "source_sha256": {p: hashlib.sha256((HERE / p).read_bytes()).hexdigest()
                           for p in BOUND_SOURCES},
         "scope": {
-            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29 and NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32 under stated hypotheses; no priority claim for standard methods",
+            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32 and PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35 under stated hypotheses; no priority claim for standard methods",
             "availability_interface_physically_established": False,
             "native_gravity_law_physically_identified": False,
             "spacetime_dimension_derived": False,
@@ -254,6 +258,10 @@ def build():
             "native_response_tensor_and_exact_cut_seam_constructed": True,
             "native_tensor_identified_with_quantum_information_metric": False,
             "antisymmetric_response_identified_with_connection_curvature": False,
+            "declared_native_pair_identified_with_augmented_readout": True,
+            "bounded_error_probe_rejection_constructed": True,
+            "physical_probe_universality_established": False,
+            "native_coupling_values_selected_from_primitive": False,
             "post_cut_smooth_chart_is_supplied": True,
             "formal_proof_assistant_verification": False,
             "uncut_identified_with_finite_carrier": False,

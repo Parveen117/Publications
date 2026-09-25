@@ -1,4 +1,4 @@
-# Claim ledger — v0.8
+# Claim ledger — v0.9
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -45,6 +45,9 @@ mathematics. Written proofs here do not imply priority.
 | U30 | Calibrated native responses define a Hermitian PSD tensor with exact grading conjugation, transport invariance and frame covariance | Real paired carrier, positive metric, represented quarter-turn; no physical probability law | WRITTEN_PROOF in NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md; direct complex Gram oracle and 490 transport checks |
 | U31 | Full tensor splits under every response catalogue iff the orthogonal cut commutes with Z; minimum paired repair is rank([C;CZ])-rank(C) | Real output-coordinate cut; quarter-turn Z squared equals -I; ambient metric transported with frame | WRITTEN_PROOF; 340 coordinate cuts, 14 general repairs, cross-seam and indefinite-gap controls |
 | U32 | Signed native responses obey inherited total covariance and tower ledgers; exact response and squared-norm recovery have the same input-kernel gate | Supplied finite ensemble or stated whole-carrier linear target; separate cut contracts | WRITTEN_PROOF; 405 ledgers, 1,620 tower checks, 90 exact scale/quotient checks; no gravitational identification |
+| U33 | Complete order response determines phase t and mixing sine but has precisely s versus 1/s blindness; one direct reading repairs it | Oriented two-channel native pair, finite nonzero t,s, fixed calibration | WRITTEN_PROOF in PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md; 100 inversions, 4,950 pair comparisons and 40 nontrivial reciprocal collisions |
+| U34 | Equal augmented calibrated triples identify the same U,V pair and generated words across probes | Declared four-dimensional pair family; independent two-sided frames | WRITTEN_PROOF; 300 frame checks, 400 held-out basis predictions, post-hoc fit and hidden-channel controls |
+| U35 | Separated-denominator interval inversion encloses every compatible model; disjoint data/parameter boxes reject a shared pair | Independently justified finite error bounds; conditional model class; overlap is not acceptance | WRITTEN_PROOF; 2,700 enclosure and ratio-bound checks, small-signal and large-mixing margin controls |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |
@@ -83,9 +86,16 @@ mathematics. Written proofs here do not imply priority.
 | W36 | A proper six-to-four quotient preserves the signed response | A linked pair and one isolated channel | EXACT_WITNESS; quotient response intertwiner |
 | W37 | Zero average does not mean zero response; the full Gram tensor loses an overall response sign | Opposite signed preparations/responses | EXACT_COUNTEREXAMPLES; nonzero covariance and equal tensors of L and -L |
 | W38 | Noncommuting SLDs may have zero antisymmetric state average | Declared qubit comparison at rho=I/2, SLDs sigma_x/sigma_y | EXACT_COUNTEREXAMPLE in corrected QTH-1 certificate and regression; no quantum axiom used to prove U30–U32 |
+| W39 | Different native mixing laws can have identical full signed response and tensor | t=1/2, s=1/2 versus s=2 | EXACT_COUNTEREXAMPLE; direct c readings are 3/5 and -3/5 |
+| W40 | The augmented comparison rejects reciprocal probe disagreement | Fixed signed calibration and the W39 family | EXACT_CONTROL; SHARED_PAIR_REJECTED |
+| W41 | Post-hoc output decoding can force order-response agreement | Invertible native response Lp and fitted D=L0 Lp inverse | EXACT_COUNTEREXAMPLE; not the admissible independently fixed two-sided frame |
+| W42 | A hidden third native channel can differ while all five raw readings agree | Selected pair plus separately controlled unobserved channel | EXACT_COUNTEREXAMPLE; extra R readings 3/5 versus 12/13 |
+| W43 | A direct readout separates reciprocal laws with a finite error budget | W39 gap 6/5, explicit interval radii | EXACT_CONTROL; radius 1/10 rejects, radius 3/5 leaves the implemented comparison unresolved |
+| W44 | Exact inverse has no uniform denominator margin over all nonzero parameters | Weak phase and very large mixing examples | EXACT_CONTROL; INSUFFICIENT_RESOLUTION rather than false acceptance |
+| NP0 | Selected probes share one calibrated native U,V pair | Predeclared family, coordinates, preparations and readout; includes augmented direct response | MODEL AGREEMENT GATE; U34 proves its sufficiency in that family; physical universality and gravitational identity remain OPEN |
 | NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U27 constructs a native-compatible interacting candidate, but its physical selection and gravitational identification remain open |
 | S0 | Associative continuation alone implies no nontrivial symmetry | Three-state chain | EXACT_COUNTEREXAMPLE; every permutation tested for commutation |
-| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U32; preserved represented quarter-turn does not establish a Born law or physical quantum readout |
+| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U35; preserved represented quarter-turn does not establish a Born law or physical quantum readout |
 | ST0 | Spacetime is a derived optional representation | Need construction and physical interpretation of order, locality, dimension and metric | OPEN; coframe constraint remains conditional; v0.6 repairs native grading on a declared larger carrier but does not construct a spacetime |
 | A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U2/U6/U9 minimize representation memory, not nature's action |
 | CI0 | Cut ambiguity equals physical curvature or a universal information tensor | Need a typed adapter, invariant and scope-specific proof | OPEN; U7 alone is insufficient |
@@ -162,3 +172,21 @@ maximally mixed counterexample and clarifies the difference identity.
 The ten external source pins record both current research and unmerged
 correction commits. Written proofs, finite PASS, source hashes, formal proofs,
 external review and empirical validation remain separate.
+
+## v0.9 calibration and identification coverage
+
+The package adds 19 regressions for **130** total and binds **54 source files**.
+The new finite campaign uses ten signed nonzero rational parameters in each
+Cayley slot, giving 100 pairs, 4,950 pairwise order-matrix comparisons and
+exactly 40 distinct reciprocal collisions. The augmented decoder separates
+all distinct pairs. Its recovered operators predict 400 vector responses on
+the held-out e2/e4 preparations, and 300 known frames preserve the protocol.
+For each parameter pair, all 27 endpoint/centre perturbations at reported error
+radius 1/10000 are checked: 2,700 enclosures and 2,700 phase ratio bounds.
+
+The source audit pins six complete files (ID2 is used for its identification
+section). There is no exhaustive coverage of instruments, unknown native
+graphs, quantum measurements or physical probe species. NP0 is an internal
+agreement gate, not a proof of gravitational universality. Non-overlap can
+reject; overlap at finite error is unresolved. Exact certificates and written
+proofs are separate from formal verification, external review and experiment.

@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 0.8, 25 September 2026.**
+**Monty Dabas — working research programme, version 0.9, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -17,6 +17,7 @@ Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
 [native grading and seam memory](NATIVE_GRADING_AND_SEAM_MEMORY.md),
 [native interaction and lawful cuts](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md),
 [native response tensor and cut ledger](NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md),
+[calibrated probes and native identification](PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md),
 [information/thermodynamics source audit](RESPONSE_SOURCE_AUDIT.md),
 and [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
@@ -213,10 +214,10 @@ A two-channel response has L^T L=kappa I_4 with explicit positive kappa, so
 its exact squared norm needs the same input faithfulness as its signed vector.
 Zero mean, zero skew pairing and zero operator response are kept distinct.
 
-Current native evidence: **111 regressions**, **490 tensor transport checks**,
+The v0.8 native evidence: **111 regressions**, **490 tensor transport checks**,
 **340 coordinate cuts**, **14 general readout repairs**, **90 exact response
 scale/quotient checks**, **405 covariance ledgers** and **1,620 nested ledgers**.
-The certificate binds **49 source files**, including the QTH correction.
+That version binds **49 source files**, including the QTH correction.
 The adjacent CID/QTH suite has **50 passing tests**; CID-1's original certificate
 also passes read-only regeneration.
 
@@ -225,6 +226,35 @@ thermodynamic paper at its pinned PR #4 commit. QTH-1 receives a targeted
 correction: noncommuting SLDs can have zero state-averaged commutator.
 Neither its declared quantum model nor a Lorentzian propagation law is
 imported into the native construction. Gravitational identification is open.
+
+## Added in v0.9: identify the law behind the response
+
+[U33–U35](PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md) show that the full
+signed order response still forgets part of the selected continuation law:
+mixing parameters s and 1/s give the **same complete response matrix and
+tensor**, while their direct mixing readings differ. One independently
+calibrated direct response removes this ambiguity.
+
+For the oriented two-channel family, three reported statistics from five raw
+scalar readings recover both Cayley parameters exactly. The protocol has a
+necessary-and-sufficient model consistency gate. A calibrated cross-probe
+comparison then tests equality of the complete selected U,V pair, rather than
+only its order response. Matching probes do not by themselves select gravity
+or numerical coupling values.
+
+Finite-error interval decoding encloses every compatible parameter pair when
+its denominators have positive margins. Disjoint intervals reject a shared
+pair; overlap remains **UNRESOLVED**. A fitted output decoder and an unobserved
+third channel supply controls against false universality. The data here are
+synthetic; no physical probe measurement or probability law is invented.
+
+Current evidence: **130 native regressions**, **100 exact parameter inversions**,
+**4,950 pairwise response comparisons**, **40 distinct reciprocal collisions**,
+**400 held-out basis predictions**, **300 calibration-frame checks**, and
+**2,700 noise-box enclosures with phase-error bounds**. The certificate binds
+**54 source files** and retains earlier evidence, including the v0.8 QTH
+correction. Six immutable source pins credit the thermo identification,
+non-selection and decoder results alongside the native predecessors.
 
 ## Reproduce
 
@@ -263,6 +293,9 @@ model-level response reconstruction under a declared control catalogue.
 U30–U32 construct a native response tensor, its cut seam, and a classical
 finite-ensemble covariance ledger with supplied positive weights. These weights
 are not a physical probability law derived from the uncut primitive.
+U33–U35 identify a declared native control pair with independently calibrated
+readouts and bounded-error rejection. They neither select physical coupling
+values nor establish gravitational universality.
 No physical quantum/classical correspondence, spacetime reconstruction, minimum
 action law, universal curvature-information identity or quantum-gravity closure
 has yet been derived by this package.

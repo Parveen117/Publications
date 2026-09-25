@@ -1,4 +1,4 @@
-# Research programme after v0.8
+# Research programme after v0.9
 
 ## Foundational decision
 
@@ -10,7 +10,7 @@ Keep both candidate starts explicit until a derivation distinguishes them:
   meaningful continuation relation; compatibility across further cuts constrains
   admissible laws.
 
-U1–U32 do not choose between them. Neither candidate identifies a labelled finite
+U1–U35 do not choose between them. Neither candidate identifies a labelled finite
 set, a quantum state vector or a spacetime point with uncut ground.
 
 ## Completed in v0.2: more than one admissible continuation
@@ -137,22 +137,45 @@ Evidence: 111 native regressions, 340 coordinate cuts, 90 response scale and
 quotient checks, 405 covariance ledgers and 1,620 nested ledgers; 50 adjacent
 CID/QTH tests, with the QTH negative control included.
 
-## Next concrete derivation: physical response selection and readout
+## Completed in v0.9: calibrated native pair identification
 
-The native order response Lx is now an explicit target. State a physical
-preparation/readout law and a gravitational response criterion that can
-distinguish it from rival native interactions. Graph and coupling choices
-still need justification. A positive Gram form and its oriented pairing
-cannot by themselves supply a Lorentzian metric or a force law.
+[U33–U35](PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md) show that even the
+complete signed response and tensor forget the reciprocal mixing branch.
+A single additional direct response repairs it. Three reported statistics
+from five raw scalar readings identify the declared two-channel U,V pair.
+The inverse predicts held-out basis responses and is covariant under known
+preparation/readout frames.
 
-For a geometric reading, require the same signed target to satisfy the
-thermodynamic transport square and justify its smooth/propagation hypotheses.
-The thermo metric adapter assumes a Lorentzian principal symbol, so that
-assumption cannot count as a derivation of Lorentzian signature here.
-For a quantum reading, derive the operational probabilities and measurement
-map; a complex Gram tensor alone is insufficient. Compare both readings on
-the same calibrated target, preserving the raw signed record as well as its
-tensor. Noise and conditioning remain additional experimental obligations.
+The proposed NP0 gate tests agreement of this pair across calibrated probes;
+it does not select physical gravity or numerical values. A post-hoc decoder
+can fake agreement, and an unobserved extra native channel can differ.
+Finite-error interval decoding rejects separated candidates and retains
+UNRESOLVED when boxes overlap or inverse margins fail.
+
+Evidence: 130 native regressions, 100 parameter inversions, 4,950 response-pair
+comparisons with 40 reciprocal collisions, 400 held-out basis predictions,
+300 frame checks, and 2,700 error enclosures/phase bounds. Data are synthetic.
+
+## Next concrete derivation: choose and challenge a physical adapter
+
+Native target identification and a bounded-error comparison protocol now
+exist for a declared pair. A physical adapter must specify actual preparation,
+signed readout, independent coordinate calibration, and the physical source
+associated with the native control. It must declare which probe properties
+may vary while testing one common continuation law. NP0 supplies a comparison
+gate, but repeatability or cross-probe agreement alone cannot identify gravity.
+
+The finite theoretical programme can also extend the identification to a
+declared multi-channel graph and expose unobserved couplings before invoking
+universality. Any full-family claim must meet U28's observability obligations,
+not only the local pair protocol. Parameter and graph selection from primitive
+seam data remain open.
+
+For a geometric reading, retain the same calibrated signed target and justify
+the thermo transport square's smooth and propagation assumptions. Its
+Lorentzian principal symbol is still an input. For a quantum reading, supply
+the probability and instrument adapter; the present signed measurements and
+error boxes are not Born probabilities.
 
 ## Remaining physical selection problem
 

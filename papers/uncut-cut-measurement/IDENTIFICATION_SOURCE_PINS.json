@@ -1,0 +1,84 @@
+{
+  "version": "0.9",
+  "retrieved_and_verified": "2026-09-25",
+  "publication_parent_commit": "7695e4ff1f0e483f132251b7207e9de0f7199567",
+  "method": "Full-file SHA-256 and Git blob SHA matched pinned remote trees",
+  "sources": [
+    {
+      "id": "ID1",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex",
+      "role": "Residual dynamical non-selection: constitutive parameters are not selected by the Recognition square",
+      "git_blob_sha": "437f3de0ab8ed31af3fd9204210e0c3454126f91",
+      "sha256": "fa5ea981f7ffc4c28040df4adcd6d380fa254d47486f62c9f1447ce57bd6562c",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex"
+    },
+    {
+      "id": "ID2",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06d_constructive_continuum_and_identification.tex",
+      "role": "Identification section: complete transport and independent scale/gauge data identify the declared geometry; geometric inputs are not native premises here",
+      "git_blob_sha": "8658597620f809728e3a4710a5f976e4321d0c91",
+      "sha256": "4dafb6aa9640bac391cd7e2cdef859d48e1479778082d691d84bfbecf1d729ab",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06d_constructive_continuum_and_identification.tex"
+    },
+    {
+      "id": "ID3",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06e_noise_stable_spacetime_recognition.tex",
+      "role": "Fixed decoder, positive inverse margin, independently justified finite error budget",
+      "git_blob_sha": "2ec7032e33317f15d0456681f37b352ed1d3dbe6",
+      "sha256": "acddaf008feb3c046e1fc28bbb51920d16ed4649aea034e6d1a163cb7dc1d7fe",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06e_noise_stable_spacetime_recognition.tex"
+    },
+    {
+      "id": "ID4",
+      "repository": "Parveen117/Publications",
+      "commit": "7695e4ff1f0e483f132251b7207e9de0f7199567",
+      "path": "papers/emk-recognition-geometry/certificates/ltb1_thermodynamic_bridge.py",
+      "role": "Post-hoc ledgers and fits can erase every diagnostic",
+      "git_blob_sha": "6445956baea119933621beb17645a8276c78791f",
+      "sha256": "ef72bc26a82a4a0dc6db765d3321c2ac9d373addbb5abe30e23e600c3a030366",
+      "url": "https://github.com/Parveen117/Publications/blob/7695e4ff1f0e483f132251b7207e9de0f7199567/papers/emk-recognition-geometry/certificates/ltb1_thermodynamic_bridge.py"
+    },
+    {
+      "id": "ID5",
+      "repository": "Parveen117/Publications",
+      "commit": "7695e4ff1f0e483f132251b7207e9de0f7199567",
+      "path": "papers/uncut-cut-measurement/NATIVE_INTERACTION_AND_LAWFUL_CUTS.md",
+      "role": "U27 operators and parameter normalization; U29 signed transcript contract",
+      "git_blob_sha": "c72763d2ad7f01d356a74a92f3a29a56268e4903",
+      "sha256": "ac37333fb1aa315ffe41f6ad821bd1437ddb4a2270cc065f65820b270bb4ea69",
+      "url": "https://github.com/Parveen117/Publications/blob/7695e4ff1f0e483f132251b7207e9de0f7199567/papers/uncut-cut-measurement/NATIVE_INTERACTION_AND_LAWFUL_CUTS.md"
+    },
+    {
+      "id": "ID6",
+      "repository": "Parveen117/Publications",
+      "commit": "7695e4ff1f0e483f132251b7207e9de0f7199567",
+      "path": "papers/uncut-cut-measurement/NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md",
+      "role": "U30-U32 response tensor, signed target, and response scale law",
+      "git_blob_sha": "5251019b4d5417f49cb8aa8f48a36d32efe2ddae",
+      "sha256": "3ee3183f14e5f0a5978c1d591720c7bfb499528d71677ddb722ecbe8a19d1fbe",
+      "url": "https://github.com/Parveen117/Publications/blob/7695e4ff1f0e483f132251b7207e9de0f7199567/papers/uncut-cut-measurement/NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md"
+    }
+  ],
+  "source_boundary": "ID1-ID3 cite the still-open correction PR 4; their geometric assumptions are not imported into U33-U35. ID2 is used for its identification section.",
+  "declared_inputs": [
+    "Oriented two-channel native family with nonzero finite Cayley parameters",
+    "Independent preparation/readout calibration fixed before evaluation",
+    "Same-input signed response interface",
+    "Externally justified error radii including calibration and preparation errors"
+  ],
+  "physical_axioms_imported": [],
+  "data_type": "Synthetic exact rational fixtures; no empirical probe data",
+  "not_established": [
+    "Physical instrument realization",
+    "Gravitational meaning or universal matter coupling",
+    "Selection of parameter values or graph",
+    "Born rule or quantum measurement adapter",
+    "Uniform inverse bound over all nonzero parameters"
+  ]
+}
