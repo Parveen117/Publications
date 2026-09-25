@@ -1,0 +1,116 @@
+{
+  "version": "0.4",
+  "retrieved_and_verified": "2026-09-25",
+  "method": "Local full-file SHA-256 and Git blob SHA; blob SHAs matched pinned remote trees",
+  "publication_parent_commit": "376c5a3f95936f8b8aa66a9ca39911df2b00816a",
+  "native_main_checked": "86198d29cbf30390059079f38675c952e506ea9c",
+  "inherited_sources": "SOURCE_PINS.json S1/S2/S6 for recovered-identity and cut-memory discipline",
+  "sources": [
+    {
+      "id": "G1",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/48_emk_algebra_cut_graded_curvature_theorem.md",
+      "role": "EMK algebra and declared cut-graded curvature; physical adapter remains open",
+      "git_blob_sha": "34e34fe7ce04bacfcb474aefbec6606bcdca54a3",
+      "sha256": "e447ea282bd47ccbc62e718a8d9aab912d926a9239a662d2e02c5f58fa7563f1",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/48_emk_algebra_cut_graded_curvature_theorem.md"
+    },
+    {
+      "id": "G2",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/55_generalized_euler_emk_dock_theorem.md",
+      "role": "Generator typing: real K is not the positive-energy dagger-unitary flow generator; distinguishes K from iota K",
+      "git_blob_sha": "526e59f29e05dd265808be4bedcbe0f776a8ef12",
+      "sha256": "821039faf3c1edb692accd350c611a729560a2c000d014c486f47df2f3cb46ef",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/55_generalized_euler_emk_dock_theorem.md"
+    },
+    {
+      "id": "G3",
+      "repository": "Parveen117/Publications",
+      "commit": "376c5a3f95936f8b8aa66a9ca39911df2b00816a",
+      "path": "papers/emk-ugd-algebra/certificates/emk2_native_carrier.py",
+      "role": "Native K/R algebra and rational seam-sector composition; new star assembly is an additional candidate representation",
+      "git_blob_sha": "eaf3c3f65476f37165c75031fcd6cfb2cb66f710",
+      "sha256": "49d8548e7e3ccc2ce77bdc0f5a317b737f3bd37dc4d9e1f90c9f87852c37d1c0",
+      "url": "https://github.com/Parveen117/Publications/blob/376c5a3f95936f8b8aa66a9ca39911df2b00816a/papers/emk-ugd-algebra/certificates/emk2_native_carrier.py"
+    },
+    {
+      "id": "G4",
+      "repository": "Parveen117/Publications",
+      "commit": "376c5a3f95936f8b8aa66a9ca39911df2b00816a",
+      "path": "papers/emk-recognition-geometry/README.md",
+      "role": "EMK-G1 declared metric and recognition/metric-curvature separation; comparison only",
+      "git_blob_sha": "5aa32e20b1b8c74cccff7aab2b07cb682b7eb8fd",
+      "sha256": "bb7559a21a236b6d6bb00e69740453078c88eef73dc184d6b882a9f205cfcfae",
+      "url": "https://github.com/Parveen117/Publications/blob/376c5a3f95936f8b8aa66a9ca39911df2b00816a/papers/emk-recognition-geometry/README.md"
+    },
+    {
+      "id": "G5",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a00_response_propagation_metric.tex",
+      "role": "Comparison: Lorentzian principal symbol assumed before polarization; not a premise",
+      "git_blob_sha": "079a9c6616ad8ed8c2d52ddd4f545f6a79de2094",
+      "sha256": "0f2c319d975c914d7ec39f9ef35aed08a80ad54742f05650c25118ca185d0a20",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06a00_response_propagation_metric.tex"
+    },
+    {
+      "id": "G6",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a_spacetime_recognition_datum.tex",
+      "role": "Comparison: declared spacetime/action contract; not imported as a physical premise",
+      "git_blob_sha": "497bbba637fc212847cfbc5a8036d96c2f462799",
+      "sha256": "249f33a2123bb4abeed930670ce21d887bd8930e933272d03cdac2256e0b4a03",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06a_spacetime_recognition_datum.tex"
+    },
+    {
+      "id": "G7",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex",
+      "role": "Comparison: remaining constitutive potential and coupling freedom",
+      "git_blob_sha": "437f3de0ab8ed31af3fd9204210e0c3454126f91",
+      "sha256": "fa5ea981f7ffc4c28040df4adcd6d380fa254d47486f62c9f1447ce57bd6562c",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex"
+    },
+    {
+      "id": "G8",
+      "repository": "Parveen117/Publications",
+      "commit": "376c5a3f95936f8b8aa66a9ca39911df2b00816a",
+      "path": "papers/curvature-information-duality/README.md",
+      "role": "CID-1 section only: metric-free loop obstruction within its declared response algebra, not a universal spacetime curvature identification",
+      "git_blob_sha": "79ae551bc9591708a3ce277f9ef5236b7c40b8bc",
+      "sha256": "199cd8775ef5f3d5c5d4f8ec9dcc725e13dab9c730600d6d3845c64a53766fa2",
+      "url": "https://github.com/Parveen117/Publications/blob/376c5a3f95936f8b8aa66a9ca39911df2b00816a/papers/curvature-information-duality/README.md"
+    }
+  ],
+  "physical_axioms_imported": [],
+  "candidate_assumptions": [
+    "finite-dimensional linear response carriers",
+    "invertible typed transports",
+    "declared EMK star assembly and selected sector"
+  ],
+  "post_cut_geometric_adapter": [
+    "smooth chart and rank-matched coframe supplied",
+    "metric-compatible connection supplied",
+    "torsion-free equation checked"
+  ],
+  "not_established": [
+    "physical gravitational identification",
+    "selection of dimension or transport sector",
+    "coframe or connection selected by the primitive law",
+    "quantum readout law",
+    "empirical validation"
+  ],
+  "comparison_only_sources": [
+    "G4",
+    "G5",
+    "G6",
+    "G7",
+    "G8"
+  ],
+  "corrected_thermodynamic_edition": "Publications PR #4, open and unmerged when inspected"
+}

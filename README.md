@@ -63,3 +63,50 @@ Create a GitHub release only after:
 5. the repository is enabled in Zenodo's GitHub integration.
 
 Each GitHub release is intended to be archived by Zenodo and assigned a version DOI.
+
+## Foundations without primitive spacetime
+
+**[Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation](papers/uncut-cut-measurement/)**
+starts a public research programme in which mathematical definitions and
+measurement descriptions are themselves cuts. Version 0.7 contains twenty-nine
+written propositions covering target recovery, minimum repair memory,
+compatibility and clock-free continuation for entire families of arrows.
+It includes a shortest distinguishing-experiment construction, exhaustive
+finite checks and controls where separate transition memories fail under
+composition. It also separates observable availability from commonly admitted
+experiments and shows why pairwise safe agreement need not form a quotient.
+The novelty audit explicitly credits Spectral I/II, native RSC predecessors
+and established finite-state methods; proposition counts are not novelty claims.
+The gravity-before-curvature module reconstructs an invariant form from a
+declared EMK transport family and states the precise post-cut conditions for
+identifying transport curvature with metric curvature. Physical gravity,
+transport-sector selection and emergence of a spacetime remain open.
+The coupling extension classifies compatible K/R component graphs, rejects
+minimum edge count as a unique signature selector, and constrains a homogeneous
+coframe profile for a fixed connection. The native-grading extension proves an
+overlapping-pair obstruction and derives exact target-relative linear memory
+costs for a larger edge carrier. The interaction extension supplies graded
+inter-edge mixing, classifies its exact cuts, and constructs a proper lossy
+quotient preserving nonzero interaction. The v0.8 response extension adds a native Hermitian tensor, an exact cut-seam
+ledger and an inherited covariance ledger for signed order responses. It audits
+the existing information/curvature and thermodynamic sources and corrects a
+QTH-1 state-average/commutator converse. The v0.9 extension classifies an exact reciprocal ambiguity in the signed
+response and repairs it with one direct calibrated reading. It adds native
+pair identification, held-out response predictions and bounded-error probe
+comparison. The v1.0 extension supplies an explicit source-coupled native
+candidate, exact stationary cut elimination, and a conditional inverse-square
+shell sector. It separates a distance-law test from source-strength scaling
+and gives a physical experiment contract. Quadratic cost, capacity growth and
+physical source/ruler/readout adapters remain additional hypotheses; no gravity
+experiment has passed. The focused v1.1 capacity audit proves that the current
+native rules cannot select quadratic growth: same-size four-regular unit-weight
+graphs have distinct shell profiles. A declared three-direction graph has
+quadratic leading capacity, but its shell field is not pointwise radial.
+Current evidence includes 162 native regressions,
+2,204 stationary elimination checks, 100 parameter
+inversions and 2,700 noise-box enclosures, with
+the earlier graph-memory, signed-coupling and conditional curvature campaigns
+retained in the same source-bound certificate.
+Spacetime and the quantum/classical correspondence are explicit derivation
+targets. See the manuscript, claim ledger and reproducible certificate in the
+programme folder; the finite checks do not establish a complete physical theory.

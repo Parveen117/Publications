@@ -1,0 +1,68 @@
+{
+  "version": "0.7",
+  "retrieved_and_verified": "2026-09-25",
+  "publication_parent_commit": "7b9797bfe978afbfc34e3430a0ef69687545b72e",
+  "method": "Local full-file SHA-256 and Git blob SHA matched pinned remote trees",
+  "sources": [
+    {
+      "id": "I1",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/51_odd_channel_exchange_law_theorem.md",
+      "role": "Anti-self-dagger Cayley rule, real subcarrier, and parameter normalization h=2q",
+      "git_blob_sha": "d23e384f79b81512b8a19303f0c6f27fd63f9af9",
+      "sha256": "c515d45334e1010c75750f15c1f5b1518bc4817e4956b01a55dbbec6952e48e4",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/51_odd_channel_exchange_law_theorem.md"
+    },
+    {
+      "id": "I2",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/55_generalized_euler_emk_dock_theorem.md",
+      "role": "Native flow typing; distinguishes dagger grading from the EMK cut grading",
+      "git_blob_sha": "526e59f29e05dd265808be4bedcbe0f776a8ef12",
+      "sha256": "821039faf3c1edb692accd350c611a729560a2c000d014c486f47df2f3cb46ef",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/55_generalized_euler_emk_dock_theorem.md"
+    },
+    {
+      "id": "I3",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/48_emk_algebra_cut_graded_curvature_theorem.md",
+      "role": "Local K cut, R odd sector and algebraic commutator precedent",
+      "git_blob_sha": "34e34fe7ce04bacfcb474aefbec6606bcdca54a3",
+      "sha256": "e447ea282bd47ccbc62e718a8d9aab912d926a9239a662d2e02c5f58fa7563f1",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/48_emk_algebra_cut_graded_curvature_theorem.md"
+    },
+    {
+      "id": "I4",
+      "repository": "Parveen117/Publications",
+      "commit": "7b9797bfe978afbfc34e3430a0ef69687545b72e",
+      "path": "papers/emk-ugd-algebra/certificates/emkt1_master_tensor_and_time.py",
+      "role": "Audited T1-T3 and claim boundary: cut-swap equals K and cross-channel commutators already present; master tensor choices remain declared",
+      "git_blob_sha": "612786f2c91de005a62bfaca87f778a79060ce0a",
+      "sha256": "c32b977f25cb00edbfcb338e6028a6b0f3a1f0beae4f4f2737663c574c7a1dce",
+      "url": "https://github.com/Parveen117/Publications/blob/7b9797bfe978afbfc34e3430a0ef69687545b72e/papers/emk-ugd-algebra/certificates/emkt1_master_tensor_and_time.py"
+    }
+  ],
+  "inherited_sources": "GRADING_SOURCE_PINS.json and SOURCE_PINS.json: target-relative observer rank, native grading and exact descent",
+  "declared_model_inputs": [
+    "Real two-component edge carriers; not the full uncut ground",
+    "Interaction graph on retained channel labels",
+    "Individually addressed local R and antisymmetric channel mixing generators",
+    "Nonzero calibrated Cayley parameters and real signed linear readouts"
+  ],
+  "native_algebra_used": [
+    "Local I,K,R representation",
+    "Real anti-self-dagger Cayley rule",
+    "Common cut grading; dagger grading remains distinct"
+  ],
+  "physical_field_equations_imported": [],
+  "not_established": [
+    "Physical choice of interaction graph or coupling strengths",
+    "Born rule or physical realization of response transcripts",
+    "Physical spacetime or gravitational identification",
+    "Lorentzian metric from the full invariant bilinear form of this connected family"
+  ],
+  "novelty_boundary": "Cross-channel commutators, Cayley unitarity and target-relative linear observability have explicit predecessors; this module constructs and classifies one declared interacting family."
+}
