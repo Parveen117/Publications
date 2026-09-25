@@ -63,8 +63,18 @@ def run():
     # A measured pressure contaminated by +epsilon*S breaks exact closure.
     epsilon = F(1, 7)
     assert d[0][1] != -( -d[1][0] + epsilon)
-    print("PASS_EXACT_WITNESS TF-1 TF-2; Maxwell negative control rejected")
+    return {
+        "graph_vertices": 3,
+        "hidden_coordinates": 1,
+        "effective_hessian_determinant": "13/2",
+        "temperature_at_unit_chart": str(t),
+        "pressure_at_unit_chart": str(p),
+        "response_ratio": str(cp / cv),
+        "maxwell_perturbation_rejected": True,
+        "hidden_basis_invariant": True,
+        "physical_entropy_volume_identification_derived": False,
+    }
 
 
 if __name__ == "__main__":
-    run()
+    print("PASS_EXACT_WITNESS TF-1 TF-2; Maxwell negative control rejected", run())

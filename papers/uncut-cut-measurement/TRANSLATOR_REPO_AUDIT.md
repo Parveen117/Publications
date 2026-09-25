@@ -1,6 +1,6 @@
 # Quantum / gravity translator: cross-repository source audit
 
-Status: **source audit, not a new theorem or physical certificate**. Checked 2026-09-25. This note distinguishes objects defined in other manuscripts from objects derived from the uncut primitive. The v1.1 native certificate and its versioned claims remain the authoritative evidence for the current cut programme.
+Status: **source audit, not a new theorem or physical certificate**. Checked 2026-09-25. This note distinguishes objects defined in other manuscripts from objects derived from the uncut primitive. The v1.2 native certificate binds this note and the conditional thermodynamic foundation; its versioned claims delimit the current cut programme.
 
 ## Corrections to the proposed missing-vocabulary diagnosis
 

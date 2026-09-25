@@ -1,4 +1,4 @@
-# Claim ledger — v1.1
+# Claim ledger — v1.2 foundation bridge
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -54,6 +54,8 @@ mathematics. Written proofs here do not imply priority.
 | U39 | Existing native graph/generator rules cannot select a unique shell-capacity exponent | Current U27 arbitrary supplied connected graph, unit positive link weights, common degree four and 49 carriers | WRITTEN_COUNTERMODEL in SHELL_CAPACITY_SELECTION.md; capacity 4,12,20 versus 4,6,6; equal rank/weight controls |
 | U40 | Supplied d-direction nearest-neighbour graph has exact combinatorial shell capacity with leading degree d-1; d=3 yields 12n²+12n+6 | Explicit three-direction integer graph, graph distance, unit weights; physical ruler separately calibrated | CONDITIONAL_WRITTEN_PROOF; 16 lattice profiles and 40 independent enumerated edge cuts; no primitive dimension selection |
 | U41 | Aggregate inverse capacity need not equal local or shell-mean response; shell equitability is sufficient for radial stationarity | Declared rooted grounded network and U36's positive source cost | WRITTEN_PROOF and exact rational counterexample: cubic second mean drop 13/378 versus 1/30; tree control radial |
+| TF-1 | Stationary elimination of hidden graph coordinates constructs a positive quadratic equilibrium fundamental relation on two visible coordinates, with a Schur complement Hessian | U36 supplied grounded graph, positive quadratic cost and two selected visible coordinates | CONDITIONAL_WRITTEN_PROOF in THERMODYNAMIC_FOUNDATION_BRIDGE.md; source-bound exact rational graph witness and hidden-basis control; graph and cost law remain inputs |
+| TF-2 | If the two visible coordinates are physically calibrated as entropy and volume and the projected cost as energy, Maxwell/contact and response identities follow | TF-1 plus positive chart and independent entropy/volume/energy adapter | CONDITIONAL_WRITTEN_PROOF; source-bound exact rational witness gives T=1, P=8, Cp/Cv=Ks/Kt=35/26 and a planted Maxwell failure; physical adapter not derived |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |

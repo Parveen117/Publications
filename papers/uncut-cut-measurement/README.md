@@ -309,6 +309,28 @@ checks 16 integer-lattice and 12 regular-tree capacity profiles, and binds
 **65** source files including four new immutable repo pins. It states which
 additional native selection theorem would actually close the growth gap.
 
+## Added in v1.2: conditional thermodynamic foundation
+
+The [cross-repository translator audit](TRANSLATOR_REPO_AUDIT.md) identifies
+the already defined information loop functional and conditional complex-flow
+representation. It keeps the physical wavefunction, action scale and quantum
+readout obligations explicit.
+
+[TF-1 and TF-2](THERMODYNAMIC_FOUNDATION_BRIDGE.md) start from U36's declared
+grounded graph and positive quadratic source cost. An exact stationary cut
+eliminates hidden carriers, producing a two-coordinate positive equilibrium
+potential by Schur complement. **If** the two readings are independently
+calibrated as entropy and volume, and cost as energy, the thermodynamic contact
+identity, Maxwell relations and response identities follow. One exact rational
+graph witness has `T=1`, `P=8`, `Cp/Cv=Ks/Kt=35/26`. Its independent exact
+script checks hidden-basis invariance and rejects a planted Maxwell violation.
+
+This constructs the thermodynamic paper's equilibrium `U(S,V)` in a specified
+native model; the physical calibration, stationary preparation, spacetime
+propagation and quantum readout remain separate. The v1.2 source-bound
+certificate binds **68** files, including the proof, audit and finite witness.
+It retains **162** native regressions and the earlier exhaustive checks.
+
 ## Reproduce
 
 Python 3.11 or 3.12; standard library only. From the repository root:
@@ -316,6 +338,7 @@ Python 3.11 or 3.12; standard library only. From the repository root:
 ```bash
 python -m unittest discover -s papers/uncut-cut-measurement/tests -v
 python papers/uncut-cut-measurement/certificate.py --check
+python papers/uncut-cut-measurement/certificates/thermodynamic_foundation_bridge.py
 ```
 
 The second command is read-only. It regenerates exact exhaustive checks in
