@@ -68,12 +68,15 @@ Each GitHub release is intended to be archived by Zenodo and assigned a version 
 
 **[Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation](papers/uncut-cut-measurement/)**
 starts a public research programme in which mathematical definitions and
-measurement descriptions are themselves cuts. Version 0.2 contains twelve
+measurement descriptions are themselves cuts. Version 0.3 contains sixteen
 written propositions covering target recovery, minimum repair memory,
 compatibility and clock-free continuation for entire families of arrows.
 It includes a shortest distinguishing-experiment construction, exhaustive
 finite checks and controls where separate transition memories fail under
-composition.
+composition. It also separates observable availability from commonly admitted
+experiments and shows why pairwise safe agreement need not form a quotient.
+The novelty audit explicitly credits Spectral I/II, native RSC predecessors
+and established finite-state methods; proposition counts are not novelty claims.
 Spacetime and the quantum/classical correspondence are explicit derivation
 targets. See the manuscript, claim ledger and reproducible certificate in the
 programme folder; the finite checks do not establish a complete physical theory.

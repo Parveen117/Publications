@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 0.2, 25 September 2026.**
+**Monty Dabas — working research programme, version 0.3, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -8,9 +8,17 @@ must therefore retain its declared observational context and unresolved
 information. Spacetime is a possible derived representation of the programme;
 it is not an input to the finite results here.
 
-Read [the foundational manuscript](MANUSCRIPT.md), the
-[family-continuation extension](FAMILY_CONTINUATION.md), then the [claim ledger](CLAIMS.md).
+Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
+[foundational manuscript](MANUSCRIPT.md),
+[family-continuation extension](FAMILY_CONTINUATION.md),
+[admissibility extension](ADMISSIBLE_CONTINUATION.md), and [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
+
+**Lineage:** U1 already appears exactly in Spectral I Theorem 18.1; minimum
+repair has a linear counterpart in Spectral II Theorem 7.2; recovered middle
+identity is already required by RSC 27/30. Partition refinement is established
+mathematics. This package adds explicit finite formulations, operational
+distinctions and executable controls, not sixteen priority claims.
 
 ## Foundational results U1–U7
 
@@ -35,7 +43,7 @@ separately as a downstream linear representation. These are elementary finite
 derivations and a connection to the existing native framework, not a claim of
 priority for the underlying mathematical facts.
 
-## New in v0.2: memory for all admitted continuations
+## Added in v0.2: memory for all admitted total continuations
 
 [U8–U12](FAMILY_CONTINUATION.md) extend the construction to a declared finite
 family of arrows and every word they generate:
@@ -57,11 +65,30 @@ although the separate requirements are one and two. The shortest diagnostic
 word is (A,B). W6 shows why extra present detail can also increase the future
 prediction task rather than universally reducing its memory cost.
 
-Local evidence: **27 regression tests**, **3,678 exhaustive cut/two-arrow-family
+The v0.2 evidence comprises **3,678 exhaustive cut/two-arrow-family
 cases through three states**, 17 additional four-state fixtures, and 33,206
 candidate-pair diagnostic checks. The original v0.1 exhaustive domains are
 retained separately in the certificate. These counts are finite coverage,
 not a replacement for the written proofs.
+
+## Added in v0.3: partial arrows and valid experiments
+
+[U13–U16](ADMISSIBLE_CONTINUATION.md) separate an observer that must retain
+enabled-domain information from one restricted to actual experiments admitted
+at both candidates. Exact partial descent requires both whole-fibre domain
+agreement and next-readout agreement. Closure again gives a coarsest sufficient
+observer and an exact minimum repair alphabet under unrestricted repair maps.
+
+**W7** shows that agreement on all commonly admitted experiments need not be
+transitive, so it cannot always define observer fibres. **W8** separates an
+availability query from executing a forbidden action, and shows that restricting
+a domain can increase domain-aware memory. **W9** gives delayed availability
+distinctions even when every actual readout is zero.
+
+Current local evidence: **37 regression tests**, plus **20,646 exhaustive
+cut/two-partial-arrow cases through three states**, **369,944 pair/mode diagnostic
+checks**, and the retained v0.1/v0.2 evidence. A model's availability flag is not
+automatically an observable; operational use needs a justified interface.
 
 ## Reproduce
 

@@ -1,9 +1,28 @@
 {
+  "comparative_literature": [
+    {
+      "author": "John Hopcroft",
+      "role": "Historical partition-refinement comparison only; no physical premise, no optimized complexity claim",
+      "title": "An n log n Algorithm for Minimizing States in a Finite Automaton",
+      "url": "https://www.cs.cmu.edu/~cdm/resources/Hopcroft1971.pdf",
+      "year": 1971
+    },
+    {
+      "authors": [
+        "Antti Valmari",
+        "Petri Lehtinen"
+      ],
+      "role": "Partial-transition minimization precedent; acceptance-language equivalence is not automatically domain-aware equivalence",
+      "title": "Efficient Minimization of DFAs with Partial Transition Functions",
+      "url": "https://arxiv.org/abs/0802.2826v1",
+      "year": 2008
+    }
+  ],
   "extension_lineage": {
-    "dependency": "U8-U12 extend the finite U1-U6 definitions and proofs; no new physical axiom imported",
-    "previous_public_version_commit": "883ca33090664890fee0e22f1c10b383a859e8d4",
-    "source_document": "FAMILY_CONTINUATION.md",
-    "version": "0.2"
+    "dependency": "U13-U16 extend the declared finite presentation to partial arrows; exact source overlap recorded separately; no imported physical axiom",
+    "previous_public_version_commit": "63f3af3f294a0eac577fd61fb27c679dd11c67f0",
+    "source_document": "ADMISSIBLE_CONTINUATION.md",
+    "version": "0.3"
   },
   "linear_representation_scope": "U7 only; complementary projections and composable transports",
   "mathematical_grammar": [
@@ -15,10 +34,10 @@
     "integer arithmetic"
   ],
   "method": "Local full source bytes matched Git blob SHAs in the pinned remote tree",
-  "new_propositions": "U1-U6 and U8-U12 proved self-contained under declared finite assumptions",
   "pending_corrections": "https://github.com/Parveen117/Publications/pull/4",
   "pending_corrections_are_mathematical_dependencies": false,
   "physical_axioms_imported_into_U1_U6": [],
+  "physical_axioms_imported_into_finite_extensions": [],
   "publication_base_commit": "a3ff8e9f8e6afdea44c55557346e8b5fea0c5d22",
   "retrieved_and_checked": "2026-09-25",
   "sources": [
@@ -51,6 +70,37 @@
       "role": "Linear analogue of U2; no spectral or continuum premises consumed",
       "sha256": "408870812cf548d7fc42ecd5c242d1c454b678733c110096fe02c371194045ff",
       "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/31_cut_variational_minimal_observer_theorem.md"
+    },
+    {
+      "commit": "a3ff8e9f8e6afdea44c55557346e8b5fea0c5d22",
+      "git_blob_sha": "d4a622161988b94a1b522a579efdb47830e16bec",
+      "id": "S4",
+      "path": "SPECTRAL 1.pdf",
+      "repository": "Parveen117/Publications",
+      "role": "Exact predecessor of U1: Theorem 18.1; endpoint/history distinction in section 19",
+      "sha256": "792bb1234bcd63b460b1413445f6731d832cda47ca608e13b558f831081dde3b",
+      "url": "https://github.com/Parveen117/Publications/blob/a3ff8e9f8e6afdea44c55557346e8b5fea0c5d22/SPECTRAL%201.pdf"
+    },
+    {
+      "commit": "a3ff8e9f8e6afdea44c55557346e8b5fea0c5d22",
+      "git_blob_sha": "549a48bd8e536fc85abfb0bf5f3f5772d1d415d0",
+      "id": "S5",
+      "path": "SPECTRAL_2.pdf",
+      "repository": "Parveen117/Publications",
+      "role": "Linear minimum-probe analogue Theorem 7.2; fixed-catalogue restrictions sections 4.4-4.5; no continuum or physical premise",
+      "sha256": "b2333487bb7ff6a38c51f8ff6fd4dbe1fa49c96d6f11ffcb633bc94fecb2d4b6",
+      "url": "https://github.com/Parveen117/Publications/blob/a3ff8e9f8e6afdea44c55557346e8b5fea0c5d22/SPECTRAL_2.pdf"
+    },
+    {
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "git_blob_sha": "44e11da5eb16ef194f77e4157ba4c3559929ad1d",
+      "id": "S6",
+      "path": "theorum/30_stage15_exact_recognition_completion_certificate.md",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "role": "Existing recovered-middle-identity example section 3; motivates explicit domain gate without supplying a complete physical adapter",
+      "sha256": "adc201ab048c0ef7d36b48ec2acf6066a59e0e97de4f04cdd8ea55d4ea551997",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/30_stage15_exact_recognition_completion_certificate.md"
     }
-  ]
+  ],
+  "statement_lineage": "U1 exactly restates Spectral I Theorem 18.1; U7 inherits RSC; other finite propositions have self-contained proofs and no priority claim. See NOVELTY_AND_LINEAGE.md."
 }

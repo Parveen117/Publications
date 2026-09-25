@@ -4,7 +4,7 @@
 
 This extends U1–U7 in [MANUSCRIPT.md](MANUSCRIPT.md). All carriers below are
 declared finite presentations, not an identification of the uncut ground with
-a set. The new results concern exact deterministic arrows. No external clock,
+a set. The results added to this draft concern exact deterministic arrows. No external clock,
 spacetime metric, quantum probability or classical field equation is a premise.
 
 ## 1. The composition question
@@ -292,6 +292,12 @@ U8–U12 are self-contained proofs from the finite definitions and U1–U6.
 They are elementary closure and finite-observation results; no priority claim
 is made for these general mathematical methods. The named W5/W6 calculations
 are explicit controls for how the methods are applied in this programme.
+
+The v0.3 [lineage audit](NOVELTY_AND_LINEAGE.md) records the exact Spectral I
+predecessor of U1, the Spectral II minimum-repair analogue and established
+finite-state refinement methods. Partial arrows require the distinct contracts
+in [ADMISSIBLE_CONTINUATION.md](ADMISSIBLE_CONTINUATION.md); this module's total
+arrow results do not authorize execution of a forbidden operation.
 
 `family_certificate.py` exhaustively checks all ordered pairs of total arrows
 and all cut partitions on carriers of size one through three. It compares

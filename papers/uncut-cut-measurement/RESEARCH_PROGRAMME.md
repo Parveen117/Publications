@@ -1,4 +1,4 @@
-# Research programme after v0.2
+# Research programme after v0.3
 
 ## Foundational decision
 
@@ -10,7 +10,7 @@ Keep both candidate starts explicit until a derivation distinguishes them:
   meaningful continuation relation; compatibility across further cuts constrains
   admissible laws.
 
-U1–U12 do not choose between them. Neither candidate identifies a labelled finite
+U1–U16 do not choose between them. Neither candidate identifies a labelled finite
 set, a quantum state vector or a spacetime point with uncut ground.
 
 ## Completed in v0.2: more than one admissible continuation
@@ -25,23 +25,34 @@ Evidence includes 27 regression tests, 3,678 exhaustive cut/two-arrow cases
 through three states and 17 explicit four-state fixtures. The foundational
 v0.1 checks remain in the same source-bound certificate.
 
-## Next concrete module: which experiments are admissible?
+## Completed in v0.3: which experiments are admissible?
 
-The present family model allows every word of total arrows on one carrier.
-Extend it to typed or partial arrows and recover the middle recognition state
-before composing. Record which interventions are enabled at a candidate state;
-an experiment that is undefined or forbidden cannot be used as a diagnostic
-witness. Prove a closure result that respects these restrictions, and distinguish
-inapplicability from a negative measurement. This connects directly to the
-native recovered-middle-identity requirement in pinned source S1.
+[U13–U16](ADMISSIBLE_CONTINUATION.md) give exact partial descent, domain-aware
+closure and memory, diagnostics under two observation contracts, and the W7
+obstruction to making common-domain agreement an observer equivalence.
+W8/W9 separate unavailable operations from actual readouts. This is a finite
+representation of the earlier native composition discipline, not a construction
+of the full recovered-identity structure. The comparison and exact Spectral
+predecessors are recorded in [NOVELTY_AND_LINEAGE.md](NOVELTY_AND_LINEAGE.md).
 
-Acceptance conditions:
+Evidence: 37 regressions overall and 20,646 exhaustive partial-family cases
+through three states, with independent diagnostic and quotient oracles.
 
-1. The arrow family and target are fixed before assessing closure.
-2. Every claimed comparison map is well-defined on whole fibres.
-3. A counterexample must show how ignoring admissibility invents a false diagnostic word.
-4. Extra memory is operationally identified; a decoder is not an instrument.
-5. Exhaustive finite evidence and the general proof have separate statuses.
+## Next concrete module: realize the observation contract
+
+Select one pinned native finite packet and construct an explicit adapter from
+its recovered-state data to the partial domains used here. Declare the action
+catalogue and any availability-reporting channel before evaluating observations.
+If checking permission disturbs the state, represent the check as a permitted
+transition instead of a free oracle. Show which H_D distinctions the available
+channels can actually measure, with a negative control that cannot realize
+an abstract minimum-memory repair. Spectral II's existing catalogue criterion
+should be reused where applicable, not renamed as a new theorem.
+
+For an unresolved set of more than two candidates, require every proposed
+action to be permitted throughout the current candidate set; a pairwise witness
+alone is insufficient. Derive or reject an adaptive identification protocol
+under that contract before claiming measurement-level realization.
 
 ## Physical measurement adapter
 
@@ -91,7 +102,7 @@ resolved within its stated hypotheses rather than hidden by a single symbol.
 
 ## Publication gates
 
-v0.2 is a public working draft with exact finite evidence. A later paper edition
+v0.3 is a public working draft with exact finite evidence. A later paper edition
 should add independently checked proofs, a complete empirical or physical
 identification where claimed, and a compiled manuscript matching its claim
 ledger. A GitHub release/DOI follows the repository's existing release rule;

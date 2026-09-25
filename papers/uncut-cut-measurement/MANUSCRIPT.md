@@ -1,7 +1,7 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
 **Monty Dabas**  
-Working manuscript v0.2 — 25 September 2026
+Working manuscript v0.3 — 25 September 2026
 
 ## Abstract
 
@@ -22,6 +22,13 @@ family of arrows, proves its exact memory requirement, and constructs shortest
 distinguishing continuations. The resulting programme seeks laws compatible
 across cuts; the physical derivation of quantum and classical descriptions
 remains open.
+
+The v0.3 companion treats partial arrows, domain-preserving quotients and
+common-domain diagnostics. It exhibits failure of transitivity for pairwise
+safe agreement. The [lineage audit](NOVELTY_AND_LINEAGE.md) identifies U1 as
+Spectral I Theorem 18.1, the linear minimum-repair predecessors in Spectral II,
+and established finite-state methods. Numbered propositions are not priority
+claims; this is an operational development of the existing programme.
 
 ## 1. The starting point includes its own limitation
 
@@ -95,6 +102,9 @@ needed for g or for continuation. This is an operational use of the word
 
 ### Proposition U1 — Exact target descent
 
+This is the finite restatement of Spectral I Theorem 18.1 [S4], with a
+self-contained proof for this presentation.
+
 There is a function f: A -> V with g=f composed with c if and only if g is
 constant on each fibre of c. When it exists, f is unique on A=c(X).
 
@@ -153,8 +163,9 @@ giving the displayed minimum. □
 
 The construction proves existence of a distinguishing channel. It does not
 make g observable for free: a proposed instrument must actually implement m.
-The linear target-relative observer result in [S3] measures the analogous
-obstruction by rank on a blind subspace. U2 is a finite counting analogue;
+The linear target-relative observer results in Spectral II Theorem 7.2 [S5]
+and [S3] measure the analogous obstruction by rank on a blind subspace.
+U2 is a finite counting analogue;
 rank and finite alphabet cardinality are not interchanged.
 
 ## 5. Refinement and accumulated loss
@@ -303,8 +314,10 @@ memory labels, or two fixed-length bits, are necessary and sufficient.
 
 For infinitely many possibilities, the finite termination argument does not
 apply. A finite family of deterministic arrows is treated in
-[U8–U12](FAMILY_CONTINUATION.md). Nondeterminism, noisy observations, restricted
-word admissibility and operationally accessible memory require further work.
+[U8–U12](FAMILY_CONTINUATION.md). Finite partial-arrow admissibility is treated
+in [U13–U16](ADMISSIBLE_CONTINUATION.md). Nondeterminism, noisy observations,
+general history-dependent permission and operationally accessible memory require
+further work.
 
 ## 9. Connection to the native seam composition identity
 
@@ -384,8 +397,10 @@ and what additional observation will repair them.
 
 ## 12. Sources and provenance
 
-Only primary sources from this repository programme are used. Exact commits,
+Physical motivation comes from this repository programme. Exact native commits,
 paths and content digests appear in [SOURCE_PINS.json](SOURCE_PINS.json).
+External mathematical comparisons in NOVELTY_AND_LINEAGE.md clarify priority;
+they supply no imported physical axioms.
 
 - **[S1]** Recognition-Kernel-Framework, `theorum/27_rsc_primitive_to_completion_hierarchy.md`:
   pre-distinction ground, recovered identity and the placement of completion.
@@ -394,10 +409,18 @@ paths and content digests appear in [SOURCE_PINS.json](SOURCE_PINS.json).
 - **[S3]** Recognition-Kernel-Framework, `theorum/31_cut_variational_minimal_observer_theorem.md`:
   target-relative blindness and minimum linear repair. Its continuum and
   spectral statements are not premises of U1–U6.
+- **[S4]** Publications, `SPECTRAL 1.pdf`, Theorem 18.1: U1's exact earlier
+  factorization theorem; §19 distinguishes endpoint and history targets.
+- **[S5]** Publications, `SPECTRAL_2.pdf`, Theorem 7.2: minimum target-relevant
+  scalar probes; §4.4–4.5 includes restrictions on the probe catalogue.
+- **[S6]** Recognition-Kernel-Framework, `theorum/30_stage15_exact_recognition_completion_certificate.md`:
+  §3 rejects composition of equal shadows with mismatched native memory.
 
-All three are pinned to correction commit
+S1–S3 and S6 are pinned to correction commit
 `927cdb6ca98221c0b4285da953a2c8b689fb202c`. U1–U6 have self-contained proofs
-using the finite definitions above. U7 restates and proves the inherited
+using the finite definitions above; self-contained does not mean original.
+S4/S5 are pinned to Publications commit
+`a3ff8e9f8e6afdea44c55557346e8b5fea0c5d22`. U7 restates and proves the inherited
 composition identity. The exact certificate checks finite instances and
 counterexamples; it does not convert the physical proposals into theorems.
 
@@ -415,3 +438,12 @@ the sequence A then B requires distinctions absent from both unmixed histories.
 W6 prevents the fixed-target refinement bound from being misapplied when the
 future-prediction target itself changes. All of these statements remain
 relative to a declared presentation and operationally available arrows.
+
+## 14. Admissibility extension (v0.3)
+
+[ADMISSIBLE_CONTINUATION.md](ADMISSIBLE_CONTINUATION.md) contains U13–U16.
+It gives the exact partial-descent gate, closure and minimum memory under a
+domain-aware contract, shortest diagnostics under two contracts, and W7's
+obstruction to treating common-domain agreement as an equivalence relation.
+W8/W9 prevent undefined actions from being treated as negative or zero-valued
+measurements. An availability interface still requires operational justification.
