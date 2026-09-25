@@ -68,7 +68,7 @@ Each GitHub release is intended to be archived by Zenodo and assigned a version 
 
 **[Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation](papers/uncut-cut-measurement/)**
 starts a public research programme in which mathematical definitions and
-measurement descriptions are themselves cuts. Version 0.5 contains twenty-three
+measurement descriptions are themselves cuts. Version 0.6 contains twenty-six
 written propositions covering target recovery, minimum repair memory,
 compatibility and clock-free continuation for entire families of arrows.
 It includes a shortest distinguishing-experiment construction, exhaustive
@@ -83,8 +83,11 @@ identifying transport curvature with metric curvature. Physical gravity,
 transport-sector selection and emergence of a spacetime remain open.
 The coupling extension classifies compatible K/R component graphs, rejects
 minimum edge count as a unique signature selector, and constrains a homogeneous
-coframe profile for a fixed connection. Its evidence includes 63 regressions,
-646 connected coupling graphs and 240 independent curvature-matrix comparisons.
+coframe profile for a fixed connection. The native-grading extension proves an
+overlapping-pair obstruction and derives exact target-relative linear memory
+costs for a larger edge carrier. Current evidence includes 77 regressions,
+771 connected graph-memory checks, and retained earlier campaigns including
+646 signed coupling graphs and 240 independent curvature-matrix comparisons.
 Spacetime and the quantum/classical correspondence are explicit derivation
 targets. See the manuscript, claim ledger and reproducible certificate in the
 programme folder; the finite checks do not establish a complete physical theory.

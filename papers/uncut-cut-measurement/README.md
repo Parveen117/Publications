@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 0.5, 25 September 2026.**
+**Monty Dabas — working research programme, version 0.6, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -13,7 +13,8 @@ Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
 [family-continuation extension](FAMILY_CONTINUATION.md),
 [admissibility extension](ADMISSIBLE_CONTINUATION.md),
 [gravity-before-curvature bridge](GRAVITY_BEFORE_CURVATURE.md),
-[sector and coframe constraints](SECTOR_AND_COFRAME_SELECTION.md), and [claim ledger](CLAIMS.md).
+[sector and coframe constraints](SECTOR_AND_COFRAME_SELECTION.md),
+[native grading and seam memory](NATIVE_GRADING_AND_SEAM_MEMORY.md), and [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
 
 **Lineage:** U1 already appears exactly in Spectral I Theorem 18.1; minimum
@@ -132,11 +133,36 @@ patch. Both K and R sectors pass, so this conditional adapter does not select
 the physical sector, chart or homogeneity. No gravitational field equation is
 imported. The existing information-invariance nonselection result is credited.
 
-Current evidence: **63 regression tests**, all **646 connected K/R coupling
+The v0.5 evidence: **63 regression tests**, all **646 connected K/R coupling
 graphs on two through four labelled components** compared with a full
 invariant-form solver, and **240 independent curvature-matrix comparisons**
 at 48 supplied chart points. All earlier evidence is retained. The certificate
-binds 27 source files; the new provenance manifest pins four additional sources.
+binds 27 source files; that provenance manifest pins four selection sources.
+
+## Added in v0.6: native grading and the exact memory cost of gluing
+
+[U24–U26](NATIVE_GRADING_AND_SEAM_MEMORY.md) test whether the local native EMK
+grading survives the multi-pair assembly. Its cut J_E=K is distinct from a
+metric's signature partition. Overlapping zero-extended K/R pairs on a connected
+carrier with at least three components admit no common involution keeping each
+K even and each R odd. The earlier candidate invariant-form results remain
+valid; their native-grading identification was not established.
+
+A direct sum retaining both endpoint and edge identities does carry the local
+native grading. Summing endpoint copies into one vertex readout loses it.
+The exact minimum repair is **n-2 extra linear scalar channels for a connected
+bipartite graph, or n-1 otherwise**, when the target is grading closure.
+If the target includes separately addressed R-sector steps on all m edges,
+the minimum becomes **2m-n**. On a triangle those costs are two and three.
+An explicit hidden state produces distinct K/R candidate transcripts, making
+the model-level comparison concrete; physical instrument realization is open.
+
+Current evidence: **77 regressions**, rank checks on **771 connected graphs**
+through five vertices, **43** complete small-graph grading/observer/response
+checks and **154 exact endpoint reconstructions**. Earlier campaigns remain
+bound in the certificate, now covering **32 source files**. The direct-sum
+repair has commuting separate-edge transports; native interaction between
+edges must be supplied before recovering a noncommutative gravity candidate.
 
 ## Reproduce
 
@@ -168,6 +194,8 @@ declared finite-dimensional linear carriers. U20 is a conditional geometric
 adapter on a supplied smooth chart with a coframe and connection. U21/U22 are
 algebraic coupling results; U23 constrains a supplied homogeneous coframe class
 for a fixed connection on a supplied chart.
+U24–U26 are clock-free finite-dimensional grading and observer results with
+declared algebraic controls; no spacetime or physical field equation is used.
 No physical quantum/classical correspondence, spacetime reconstruction, minimum
 action law, universal curvature-information identity or quantum-gravity closure
 has yet been derived by this package.

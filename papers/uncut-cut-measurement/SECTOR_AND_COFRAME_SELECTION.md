@@ -37,6 +37,13 @@ As in U18, real K maps are candidate invertible algebraic transports. Their
 presence does not establish that they are the positive-energy dagger-unitary
 flows of RKF 55. The multi-component assembly remains an explicit hypothesis.
 
+**v0.6 clarification:** [U24–U26](NATIVE_GRADING_AND_SEAM_MEMORY.md) show that
+the sign partition reconstructed below is not automatically RKF 48's native
+grading. That local grading cannot be shared by overlapping zero-extended K/R
+pairs on this vertex carrier. A larger edge carrier retains it, at an exact
+target-relative memory cost; this does not invalidate U21's candidate matrix
+calculation or promote it to a native physical assembly.
+
 ## 2. U21 — connected coupling graph fixes a form exactly when cycles balance
 
 Let n >= 2 and let a connected simple undirected graph on {0,...,n-1} have

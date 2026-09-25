@@ -1,4 +1,4 @@
-# Claim ledger — v0.5
+# Claim ledger — v0.6
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -36,6 +36,9 @@ mathematics. Written proofs here do not imply priority.
 | U21 | Connected K/R component couplings admit a nonzero invariant form iff every cycle has even K parity; when admitted, the form line and signature are fixed by sign propagation | Declared connected simple coupling graph, one sector per edge, nonzero invertible Cayley steps; dimension supplied | WRITTEN_PROOF in SECTOR_AND_COFRAME_SELECTION.md; all 646 connected labelled graphs through four components compared to full symmetric invariant-form equations |
 | U22 | Exact compatibility plus minimum edge count does not select 1+3; even all-K trees can yield 2+2 | Four components, connected K/R graphs, normalized form; stated combinatorial objective | WRITTEN_PROOF and W17; application of established nonselection distinction, not a no-go for every possible native selector |
 | U23 | Fixed homogeneous star connection gives zero torsion iff b'=kappa a, fixing b from a and one initial value; explicit LC curvature follows | Supplied chart, constant nonzero kappa, K or R star, coframe class e=(a du,b dx^i), ab nonzero | WRITTEN_PROOF of conditional adapter; 48 rational chart points, 240 independent curvature comparisons; both sectors pass |
+| U24 | Zero-extended pair embeddings share a native K-even/R-odd involution iff the graph is a matching plus isolated vertices | Finite simple graph, usual real K/R embeddings, one common grading required | WRITTEN_PROOF in NATIVE_GRADING_AND_SEAM_MEMORY.md; full linear equations on 43 connected graphs through four vertices, plus disjoint-pair positive control |
+| U25 | Minimum additional linear memory for endpoint readout and grading closure is rank(CJQ), equal to n-2 for connected bipartite graphs and n-1 otherwise | Declared equal-weight endpoint-summing cut on 2m edge coordinates, local direct-sum grading J, unrestricted linear repair | WRITTEN_PROOF; rank formula on 771 connected graphs through five vertices; 43 explicit minimal observers, grading intertwiners and cut-memory rank comparisons |
+| U26 | Initial readout plus separately addressed nonzero edge R steps observes the whole edge carrier; minimum repair is 2m-n | Declared connected edge model; initial/readout transcripts refer to same input; all edge controls included | WRITTEN_PROOF; 43 addressed R families and 154 endpoint response inverses; actual measurement accessibility remains open |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |
@@ -56,10 +59,16 @@ mathematics. Written proofs here do not imply priority.
 | W18 | Odd K cycle destroys the invariant form; a balanced mixed triangle admits one | Three components; all-K versus two-K/one-R triangle | EXACT_COUNTEREXAMPLE and exact positive control |
 | W19 | A pointwise torsion zero need not give a patch solution for a fixed connection | a=kappa=1, b=1+u^2 | EXACT_COUNTEREXAMPLE; torsion coefficient 2u-1 vanishes at one point only |
 | W20 | Both K and R permit homogeneous coframe closure | Same n=3, kappa=1 and b=3+u; different declared sectors | EXACT_COUNTEREXAMPLE to selection by the torsion gate alone |
-| NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U17–U23 construct conditional representation bridges and constrain choices, not the physical identification |
+| W21 | Metric-sign involution and the local native EMK cut grade K differently | Same two-component generator matrices | EXACT_COUNTEREXAMPLE to identifying the involutions while keeping the generators fixed |
+| W22 | A forgotten difference between two endpoint copies returns to visible readout after grading | Three-vertex star, state (1,0,-1,0) | EXACT_COUNTEREXAMPLE to bare gluing as an exact grading quotient |
+| W23 | Three-vertex tree needs one extra grading channel; four-vertex trees need two | Declared endpoint readout and grading target | EXACT_WITNESS; repaired observer and intertwiner constructed |
+| W24 | Grading-sufficient memory can still miss an addressed edge response | Triangle, grading-blind state (1,-1,-1,1,1,-1) | EXACT_COUNTEREXAMPLE; grading observer rank five, addressed-response rank six |
+| W25 | Declared K/R candidate steps give different signed transcripts on the same input | Triangle witness, addressed edge (0,1), known parameter 1/2 and calibration | EXACT_MODEL_PREDICTION; maximum coordinate separation 16/15; no physical realization claimed |
+| W26 | Compressing commuting native edge steps can invent a commutator | Direct-sum R steps, endpoint-summing cut and averaging section | EXACT_COUNTEREXAMPLE; specialized U19/W13 control, both descent gates reject |
+| NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U17–U26 construct conditional bridges and constrain assemblies; inter-edge native interaction and physical identification remain open |
 | S0 | Associative continuation alone implies no nontrivial symmetry | Three-state chain | EXACT_COUNTEREXAMPLE; every permutation tested for commutation |
-| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U23 |
-| ST0 | Spacetime is a derived optional representation | Need construction and physical interpretation of order, locality, dimension and metric | OPEN; v0.5 constrains the coframe only within a supplied homogeneous adapter; smooth chart and physical signature selection remain inputs/obligations |
+| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U26; model transcripts are not asserted jointly accessible quantum observables |
+| ST0 | Spacetime is a derived optional representation | Need construction and physical interpretation of order, locality, dimension and metric | OPEN; coframe constraint remains conditional; v0.6 repairs native grading on a declared larger carrier but does not construct a spacetime |
 | A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U2/U6/U9 minimize representation memory, not nature's action |
 | CI0 | Cut ambiguity equals physical curvature or a universal information tensor | Need a typed adapter, invariant and scope-specific proof | OPEN; U7 alone is insufficient |
 | G0 | Complete quantum gravity; RH or Yang–Mills closure | Not premises of this package | NOT CLAIMED |
@@ -94,6 +103,15 @@ chart points and 240 curvature matrices by independent metric/connection routes.
 These domains are finite; they do not exhaust arbitrary transport families or
 coframes. The source-bound certificate now binds 27 files. A source hash is
 provenance, not independent verification of every claim in the source.
+
+The v0.6 module adds 14 regressions for a total of **77** and binds 32 source
+files. Its 1,098 simple graph enumerations include 771 connected cases for the
+grading-memory rank formula. The 43 connected graphs through four vertices
+add full common-grader linear equations, constructed minimal observers,
+cut-memory ranks and complete addressed-R response ranks, including 154 exact
+endpoint inverses. No exhaustive enumeration of physical instruments or all
+native many-body assemblies is asserted. General repair principles are inherited;
+these calculations specialize them to the stated edge/readout model.
 
 The finite results are elementary self-contained mathematical consequences.
 Their role is to make the proposed programme precise and refutable; no priority

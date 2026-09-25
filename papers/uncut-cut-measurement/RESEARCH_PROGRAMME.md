@@ -1,4 +1,4 @@
-# Research programme after v0.5
+# Research programme after v0.6
 
 ## Foundational decision
 
@@ -10,7 +10,7 @@ Keep both candidate starts explicit until a derivation distinguishes them:
   meaningful continuation relation; compatibility across further cuts constrains
   admissible laws.
 
-U1–U23 do not choose between them. Neither candidate identifies a labelled finite
+U1–U26 do not choose between them. Neither candidate identifies a labelled finite
 set, a quantum state vector or a spacetime point with uncut ground.
 
 ## Completed in v0.2: more than one admissible continuation
@@ -78,7 +78,40 @@ Chart, homogeneity, dimension, sector and kappa are still supplied.
 Evidence: 63 package regressions, 646 connected coupling graphs checked
 against a full invariant-form solver, and 240 independent curvature comparisons.
 
-## Next concrete derivation: justify the coupling data and compare predictions
+## Completed in v0.6: native grading and exact seam-memory repair
+
+[U24–U26](NATIVE_GRADING_AND_SEAM_MEMORY.md) expose the common-grading
+obligation. The native cut J_E=K is not the metric-sign involution. Overlapping
+zero-extended K/R pairs cannot all keep their native pure gradings under a
+single involution on a connected vertex carrier with n>=3.
+
+A direct sum retaining edge identities carries that grading; endpoint gluing
+then needs exactly n-2 extra linear channels for a bipartite graph, or n-1
+otherwise, to preserve grading continuations. Enlarging the action catalogue
+to separately addressed R steps raises the minimum to 2m-n. The triangle
+separates these targets and supplies explicit K/R candidate response transcripts.
+
+The repair has a material limit: separate-edge transports commute. A cut that
+creates a nonzero commutator from them fails the exact descent gate. Thus retaining
+local grading is not yet a construction of the interacting native carrier.
+Evidence: 77 regressions, 771 connected graph-rank checks, 43 full small-graph
+grading/observer/response checks and 154 endpoint response inverses.
+
+## Next concrete derivation: native inter-edge interaction and its lawful cut
+
+Construct a nontrivial interaction between retained edge carriers with a
+declared common native grading. A direct sum alone is insufficient. Specify
+which native arrows can change edge identity, which readouts they preserve,
+and what additional memory their closure requires. Use the W24 target change
+and W26 false-commutator controls to reject an inadequate observer.
+
+Then prove an exact intertwiner to any proposed geometric carrier. If local
+pure grading must be changed or a larger carrier retained, state that choice
+and its cost before evaluating a desired metric signature. The model-level
+sector transcripts are ready for a proposed instrument adapter; their actual
+preparation, protocol calibration and readout accessibility still need proof.
+
+## Remaining physical selection problem
 
 Derive a rule from declared native seam data that selects the relevant
 transports and their coupling pattern without inserting the desired metric
@@ -175,7 +208,7 @@ resolved within its stated hypotheses rather than hidden by a single symbol.
 
 ## Publication gates
 
-v0.5 is a public working draft with exact finite evidence. A later paper edition
+v0.6 is a public working draft with exact finite evidence. A later paper edition
 should add independently checked proofs, a complete empirical or physical
 identification where claimed, and a compiled manuscript matching its claim
 ledger. A GitHub release/DOI follows the repository's existing release rule;

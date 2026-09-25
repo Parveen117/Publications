@@ -1,10 +1,10 @@
 # Novelty assessment and source lineage
 
 **Audit date: 25 September 2026. Scope: this package, the pinned Spectral I/II
-papers, and the indicated native RSC, EMK and selection sources.**
+papers, and the indicated native RSC, EMK, selection and grading sources.**
 
 The package is a useful finite operational development of existing principles.
-It does not establish twenty-three independent foundational discoveries. Proposition
+It does not establish twenty-six independent foundational discoveries. Proposition
 numbers identify statements in this draft, not priority or scientific impact.
 In particular, U1 is already exactly Spectral I Theorem 18.1. The explicit
 classification below supersedes any ambiguous use of “new results” in earlier
@@ -26,6 +26,7 @@ versions to mean additions to this particular draft.
 | U13–U16 | Existing quotient/partial-transition methods; native composition discipline | Explicit domain-preserving formulation, two observation contracts, minimum memory and a failure of pairwise-safe equivalence. Added to this programme, not claimed globally unprecedented. |
 | U17–U20 | EMK algebra, existing curvature-separation controls, elementary invariant-form algebra and standard connection geometry | Conditional transport-to-metric reconstruction and an explicit curvature adapter. The particular multi-plane assembly is a new candidate assumption here, not a uniquely selected native law or a globally new method. |
 | U21–U23 | U18, elementary signed-graph consistency, information-invariance Theorem I/J, RKF 31, and standard torsion/coframe equations | Complete criterion within a declared coupling class, a minimum-edge signature counterexample, and conditional coframe closure for a fixed homogeneous connection. Neither physical sector selection nor a new universal field equation is claimed. |
+| U24–U26 | RKF 41/48/55 native grading, Spectral II/RKF 31 linear repair, RSC exact descent | Common-grading obstruction for the declared overlapping embeddings; exact graph-specific memory ranks; separately addressed response reconstruction. General observability and rank-repair principles are inherited. |
 
 Spectral II additionally addresses sampling, noise/stability and completion.
 This exact finite model does not supersede those stronger analytical settings.
@@ -78,6 +79,18 @@ additional constraints on this programme, using elementary graph algebra and
 standard geometry; this audit does not establish global novelty or prior absence
 from every repository paper. In particular, generic nonselection was already
 present in the information-invariance work.
+
+v0.6's [native grading analysis](NATIVE_GRADING_AND_SEAM_MEMORY.md) checks a
+previously unproved adapter in this package: whether the overlapping pair
+realization retains one native J_E grading. It does not under the stated
+embedding. A larger direct-sum model supplies the grading with exact readout
+memory costs; it also exposes the missing inter-edge interaction. The graph
+rank formula is an elementary specialization of prior target-relative linear
+repair, not a new universal memory theorem. The addressed-edge transcripts
+are explicit model predictions, not experimental gravity evidence. Targeted
+search of the inspected native and publication sources did not locate this
+specific assembly calculation; that limited audit does not establish global
+priority or exhaustive absence from the user's repositories.
 
 A larger foundational or physical claim needs an additional result: for
 example, a faithful construction linking the native seam data to instrument

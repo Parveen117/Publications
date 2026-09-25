@@ -352,6 +352,16 @@ have not selected it. Both choices obey the bridge, so the bridge does not
 determine the physical gravitational field. This identifies the next missing
 selection problem rather than hiding it in a metric ansatz.
 
+## v0.6 native-grading clarification
+
+[U24](NATIVE_GRADING_AND_SEAM_MEMORY.md) now proves that overlapping
+zero-extended K/R pairs cannot all retain RKF 48's local grading under one
+common involution on a connected carrier with at least three components.
+The invariant-form statements in this module remain valid for their declared
+candidate transports. Their metric-sign partition is not the native EMK cut.
+The larger grading-preserving assembly and its exact readout-memory costs are
+given in U25/U26; a native inter-edge interaction remains to be constructed.
+
 ## 8. Evidence, claim boundary and next research target
 
 `gravity_model.py` reconstructs invariant forms by rational row reduction,

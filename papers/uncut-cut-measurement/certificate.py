@@ -10,6 +10,7 @@ import family_certificate
 import partial_certificate
 import gravity_certificate
 import selection_certificate
+import grading_certificate
 
 HERE = Path(__file__).resolve().parent
 BOUND_SOURCES = (
@@ -24,6 +25,8 @@ BOUND_SOURCES = (
     "gravity_model.py", "gravity_certificate.py", "tests/test_gravity_model.py",
     "SECTOR_AND_COFRAME_SELECTION.md", "SELECTION_SOURCE_PINS.json",
     "selection_model.py", "selection_certificate.py", "tests/test_selection_model.py",
+    "NATIVE_GRADING_AND_SEAM_MEMORY.md", "GRADING_SOURCE_PINS.json",
+    "grading_model.py", "grading_certificate.py", "tests/test_grading_model.py",
 )
 
 
@@ -206,7 +209,7 @@ def controls():
 def build():
     domain, counts = finite_checks()
     body = {
-        "protocol": "UNCUT_CUT_MEASUREMENT_V0_5",
+        "protocol": "UNCUT_CUT_MEASUREMENT_V0_6",
         "status": "PASS_FINITE_CHECKS",
         "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
         "domains": domain,
@@ -217,16 +220,20 @@ def build():
         "admissible_continuation": partial_certificate.build_checks(),
         "conditional_gravity_bridge": gravity_certificate.build_checks(),
         "sector_and_coframe_constraints": selection_certificate.build_checks(),
+        "native_grading_and_seam_memory": grading_certificate.build_checks(),
         "source_sha256": {p: hashlib.sha256((HERE / p).read_bytes()).hexdigest()
                           for p in BOUND_SOURCES},
         "scope": {
-            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20 and SECTOR_AND_COFRAME_SELECTION.md U21-U23 under stated hypotheses; no priority claim for standard methods",
+            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23 and NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26 under stated hypotheses; no priority claim for standard methods",
             "availability_interface_physically_established": False,
             "native_gravity_law_physically_identified": False,
             "spacetime_dimension_derived": False,
             "transport_sector_selected_by_native_law": False,
             "coframe_profile_constrained_within_supplied_homogeneous_class": True,
             "homogeneity_derived_from_native_law": False,
+            "native_grading_repair_on_declared_edge_assembly": True,
+            "native_inter_edge_interaction_derived": False,
+            "model_response_transcript_physically_realized": False,
             "post_cut_smooth_chart_is_supplied": True,
             "formal_proof_assistant_verification": False,
             "uncut_identified_with_finite_carrier": False,
