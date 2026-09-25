@@ -1,0 +1,173 @@
+{
+  "arithmetic": "exact integer equality and finite enumeration; no floating point",
+  "checks": {
+    "closed_refinement_comparisons": 8521,
+    "common_target_triples": 3509,
+    "cut_target_pairs": 255,
+    "cut_transition_pairs": 3984,
+    "natural_transition_comparisons": 5701,
+    "refinement_target_triples": 967,
+    "represented_block_pairs": 6561,
+    "smaller_memory_maps_rejected": 596,
+    "symmetry_permutations": 6
+  },
+  "controls": {
+    "S0_transitive_not_nontrivial_symmetry": {
+      "commuting_permutations": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "transition": [
+        0,
+        0,
+        1
+      ]
+    },
+    "U3_strict_product": {
+      "actual": 2,
+      "product_bound": 4
+    },
+    "U7_memory_return": {
+      "U": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "V": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "memory_return": 1,
+      "visible_composite": 1,
+      "visible_step_product": 0
+    },
+    "W1_hidden_bit": {
+      "hidden_target_labels": 2,
+      "readout_only_recovery": false,
+      "visible_target_labels": 1
+    },
+    "W2_pairwise_not_global": {
+      "global_fibre": [],
+      "pair_witness_indices": {
+        "0,1": [
+          3
+        ],
+        "0,2": [
+          2
+        ],
+        "1,2": [
+          1
+        ]
+      },
+      "states": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    "W3_common_not_joint": {
+      "common_components": 1,
+      "joint_distinct_readouts": 4
+    },
+    "W4_delayed_history": {
+      "binary_bits": 2,
+      "class_counts": [
+        2,
+        3,
+        4
+      ],
+      "memory_labels": 3,
+      "stable_depth": 2
+    }
+  },
+  "domains": [
+    {
+      "carrier_size": 1,
+      "cut_partitions": 1,
+      "endomaps": 1,
+      "target_partitions": 1
+    },
+    {
+      "carrier_size": 2,
+      "cut_partitions": 2,
+      "endomaps": 4,
+      "target_partitions": 2
+    },
+    {
+      "carrier_size": 3,
+      "cut_partitions": 5,
+      "endomaps": 27,
+      "target_partitions": 5
+    },
+    {
+      "carrier_size": 4,
+      "cut_partitions": 15,
+      "endomaps": 256,
+      "target_partitions": 15
+    }
+  ],
+  "protocol": "UNCUT_CUT_MEASUREMENT_V0_1",
+  "represented_blocks": {
+    "entry_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "shape": [
+      2,
+      2
+    ]
+  },
+  "scope": {
+    "empirical_validation": false,
+    "formal_proof_assistant_verification": false,
+    "general_written_proofs": "MANUSCRIPT.md U1-U7, under their stated hypotheses",
+    "independent_review": false,
+    "minimum_nature_action_derived": false,
+    "physical_quantum_classical_derivation": false,
+    "physical_spacetime_derivation": false,
+    "uncut_identified_with_finite_carrier": false
+  },
+  "source_sha256": {
+    "CLAIMS.md": "064b49411b203be4fdefe3943c972c0e198dd7fa01c1fa0c8addd05dda16a0a2",
+    "MANUSCRIPT.md": "a87fbb6557561f28f43cae83ba4cfb0c33f53d45b4ef848f61ccc811e874b286",
+    "README.md": "63bd92b3f9eabdbcc066dd5d1187cc98553fffc3baaf81c5ca73733cc02c038f",
+    "RESEARCH_PROGRAMME.md": "8bcd1ed94473103b69892761ba52e8f9dc6de26b01f8e320b9f37d7e8cc58758",
+    "SOURCE_PINS.json": "f9a22a135f1e07ed3fa26afab8ab3b6660060a0d507bf4937345a6876c21eb55",
+    "certificate.py": "c2eec8b25336c9c5dd9c8064b13be3abc89a9d63ab506ef83a9728b8d6f48931",
+    "finite_model.py": "ff274cccdeb9ee5cc1e65db661bed733f114415c34d31f0bd3be75cc27df876a",
+    "tests/test_finite_model.py": "5f53ea7ee064f5dbcab1523b22222638370c626aa25a0cd5858c5e82c3cb13ae"
+  },
+  "status": "PASS_FINITE_CHECKS"
+}

@@ -63,3 +63,14 @@ Create a GitHub release only after:
 5. the repository is enabled in Zenodo's GitHub integration.
 
 Each GitHub release is intended to be archived by Zenodo and assigned a version DOI.
+
+## Foundations without primitive spacetime
+
+**[Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation](papers/uncut-cut-measurement/)**
+starts a public research programme in which mathematical definitions and
+measurement descriptions are themselves cuts. Version 0.1 contains written
+finite proofs of target recovery, minimum repair memory, compatibility and
+clock-free continuation, with exhaustive checks and negative controls.
+Spacetime and the quantum/classical correspondence are explicit derivation
+targets. See the manuscript, claim ledger and reproducible certificate in the
+programme folder; the finite checks do not establish a complete physical theory.

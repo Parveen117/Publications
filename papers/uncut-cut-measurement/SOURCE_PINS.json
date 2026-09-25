@@ -1,0 +1,50 @@
+{
+  "linear_representation_scope": "U7 only; complementary projections and composable transports",
+  "mathematical_grammar": [
+    "nonempty finite sets",
+    "equality",
+    "functions",
+    "composition",
+    "finite counting",
+    "integer arithmetic"
+  ],
+  "method": "Local full source bytes matched Git blob SHAs in the pinned remote tree",
+  "new_propositions": "U1-U6 proved self-contained under declared finite assumptions",
+  "pending_corrections": "https://github.com/Parveen117/Publications/pull/4",
+  "pending_corrections_are_mathematical_dependencies": false,
+  "physical_axioms_imported_into_U1_U6": [],
+  "publication_base_commit": "a3ff8e9f8e6afdea44c55557346e8b5fea0c5d22",
+  "retrieved_and_checked": "2026-09-25",
+  "sources": [
+    {
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "git_blob_sha": "a4a9311f8392912e34742b6f6da72b4773a5f8c1",
+      "id": "S1",
+      "path": "theorum/27_rsc_primitive_to_completion_hierarchy.md",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "role": "Conceptual hierarchy; not a completeness axiom",
+      "sha256": "6ae181f7478d767a437b7ce191a90ae422f36274e71882b4ce5988187556a066",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/27_rsc_primitive_to_completion_hierarchy.md"
+    },
+    {
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "git_blob_sha": "f596ca3c9f9540465b3ad55fd8baf2ea33e9ab26",
+      "id": "S2",
+      "path": "theorum/24_clock_free_recognition_seam_cut_calculus.md",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "role": "U7 inherited composition identity, reproved here",
+      "sha256": "3d7d70f5cd213378c32e90e3c88eb195b48a7ea9e69297353c2eaafd04dbb8b8",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/24_clock_free_recognition_seam_cut_calculus.md"
+    },
+    {
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "git_blob_sha": "f419b5750750cd87d06465c28b2fdf6202ef93b4",
+      "id": "S3",
+      "path": "theorum/31_cut_variational_minimal_observer_theorem.md",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "role": "Linear analogue of U2; no spectral or continuum premises consumed",
+      "sha256": "408870812cf548d7fc42ecd5c242d1c454b678733c110096fe02c371194045ff",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/31_cut_variational_minimal_observer_theorem.md"
+    }
+  ]
+}
