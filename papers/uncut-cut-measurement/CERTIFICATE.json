@@ -590,6 +590,30 @@
     "rational_encoding": "Fraction values are exact integer or p/q strings",
     "scope": "Conditional linear transport and supplied smooth-chart checks. No physical gravity law, continuum emergence, selected dimension, quantum readout rule or empirical validation."
   },
+  "conditional_quantum_classical_bridge": {
+    "coherent_site_2_after_two_steps": "16/25",
+    "grounded_graph_vertices": 2,
+    "one_step_transition": [
+      [
+        "4/5",
+        "1/5"
+      ],
+      [
+        "1/5",
+        "4/5"
+      ]
+    ],
+    "phase_erased_site_2_after_two_steps": "8/25",
+    "physical_clock_and_hbar_derived": false,
+    "physical_detector_frequency_law_derived": false,
+    "same_diagonal_different_future_control": true,
+    "seam_residue": "8/25",
+    "source_response": [
+      "4/3",
+      "5/3"
+    ],
+    "thermo_ratio": "4/3"
+  },
   "conditional_source_response_and_gravity_tests": {
     "W45_inverse_square_source_one": [
       "-1",
@@ -1308,7 +1332,7 @@
     "scope": "U30-U32 written proofs are separate from these finite comparisons; no physical gravity or quantum readout law",
     "status": "PASS_FINITE_CHECKS"
   },
-  "protocol": "UNCUT_CUT_MEASUREMENT_V1_2_FOUNDATION",
+  "protocol": "UNCUT_CUT_MEASUREMENT_V1_3_QUANTUM_CLASSICAL_BRIDGE",
   "represented_blocks": {
     "entry_alphabet": [
       -1,
@@ -1325,6 +1349,7 @@
     "availability_interface_physically_established": false,
     "bounded_error_probe_rejection_constructed": true,
     "coframe_profile_constrained_within_supplied_homogeneous_class": true,
+    "conditional_finite_quantum_classical_bridge_from_one_graph": true,
     "conditional_inverse_square_shell_sector_constructed": true,
     "conditional_thermodynamic_equilibrium_chart_from_source_cost": true,
     "cubic_shell_count_proves_pointwise_radial_response": false,
@@ -1333,7 +1358,7 @@
     "empirical_validation": false,
     "explicit_affine_source_cost_candidate_constructed": true,
     "formal_proof_assistant_verification": false,
-    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38, SHELL_CAPACITY_SELECTION.md U39-U41 and THERMODYNAMIC_FOUNDATION_BRIDGE.md TF-1/TF-2 under stated hypotheses; no priority claim for standard Schur reduction, thermodynamic contact geometry or graph counting",
+    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38, SHELL_CAPACITY_SELECTION.md U39-U41, THERMODYNAMIC_FOUNDATION_BRIDGE.md TF-1/TF-2 and QUANTUM_CLASSICAL_BRIDGE.md QB-1/QB-3 under stated hypotheses; no priority claim for standard Schur reduction, unitary Cayley geometry, dephasing or thermodynamic contact geometry",
     "genuine_lossy_quotient_preserves_declared_interaction": true,
     "homogeneity_derived_from_native_law": false,
     "independent_review": false,
@@ -1345,7 +1370,9 @@
     "native_grading_repair_on_declared_edge_assembly": true,
     "native_gravity_law_physically_identified": false,
     "native_response_tensor_and_exact_cut_seam_constructed": true,
+    "native_step_identified_with_physical_time": false,
     "native_tensor_identified_with_quantum_information_metric": false,
+    "physical_born_frequency_law_derived": false,
     "physical_entropy_volume_energy_adapter_derived": false,
     "physical_gravity_experiment_passed": false,
     "physical_inter_edge_law_selected_from_primitive": false,
@@ -1534,7 +1561,7 @@
     "../curvature-information-duality/certificates/qth1_quantum_recognition_information.py": "f619d64e45f697db3764b6455c8413aef8daa668a968d363236e878c37a4040c",
     "../curvature-information-duality/tests/test_qth1.py": "b72cf1965bc6745f4aa29f8acaa3193f452a2801911ad5286148693ae4a6a316",
     "ADMISSIBLE_CONTINUATION.md": "dd71c56c3bb1593d5cc5afb5fe66c118216be94c933b7961e3bb52cce445a3c5",
-    "CLAIMS.md": "73ab353d76ec43cf622e038397fea6795ade71c73d93ffbf044ae8631a873a0e",
+    "CLAIMS.md": "61d799391c851ec595c855f61e3b20db416f2114417fb770d554ea059d9d9fa2",
     "FAMILY_CONTINUATION.md": "847e994bf6ec2990f4727e7ac6b25374fd8d5aaa94914c7a668fff25c854e3db",
     "GRADING_SOURCE_PINS.json": "670cc69d25bbb3f45b0dabdcda955e5acfaafb70ee605867201c9a047b0efe8c",
     "GRAVITY_BEFORE_CURVATURE.md": "9271e6063aac15382df8aeaff4ca39e28be92460687bc6bd54b60820ec90bbe5",
@@ -1548,7 +1575,8 @@
     "NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md": "3ee3183f14e5f0a5978c1d591720c7bfb499528d71677ddb722ecbe8a19d1fbe",
     "NOVELTY_AND_LINEAGE.md": "9cf3687215bf503decdd647977da62ebe38d8b79aa41d62b8f01174b2eb3d536",
     "PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md": "5fa440c92789cc7aa0e21d996d6a97e70d59f4c87a876eafe74285205d7182cf",
-    "README.md": "fb7e8a2bc36209b1b4178c05dff04aec652fc842e482f0b5eecaf30774dc8be3",
+    "QUANTUM_CLASSICAL_BRIDGE.md": "e7105a6e951e9eb363c22a27b433576a1b69a81fe8448f2a322b412ec9d9a068",
+    "README.md": "b642c20ac4c4024517321819d0decaa9e20b5489bde06f4345ccc0b638328cf9",
     "RESEARCH_PROGRAMME.md": "88077a442da8aa494f89fc13656b836f9fcebc15ecddfb48ef624ae97d79a0bc",
     "RESPONSE_SOURCE_AUDIT.md": "454ada029b6bd819c43d6ea636289c164ebe9a7a21c6aa3601af93367f3a334e",
     "RESPONSE_SOURCE_PINS.json": "1948b38ae80ad66abdfb0e7b21663abece5151dc1d587b0370b289ac19305927",
@@ -1560,8 +1588,9 @@
     "SOURCE_RESPONSE_AND_GRAVITY_TESTS.md": "eacbdd0aa9e1d2045a839ad65c22ee7bf2221512fef9b947c3d281d72694ffa3",
     "SOURCE_RESPONSE_PINS.json": "98417cedc06e8c3120c412ee00797a2ca18c6951414fe46711492bb9851b17dd",
     "THERMODYNAMIC_FOUNDATION_BRIDGE.md": "a9bed547e21bfe7787d989d2f9d411aaa6f7f1ddddbeed787f0971d083e08e7b",
-    "TRANSLATOR_REPO_AUDIT.md": "83709e92115faaf7173c3bd45ebe75f112d96c0e27abfb97c2579ce064feb41c",
-    "certificate.py": "39bab15d2669b546381adc67cf24b0c2e9b5f1025b0ac72ceaf1a96dbd43752b",
+    "TRANSLATOR_REPO_AUDIT.md": "5dc639d6224ba52890c4f98a890bb74181285372362b9a2025b27c508e656379",
+    "certificate.py": "b0f9aa991624a24aff7e11200be5c0c633ff12d7d7f4700ff3236491919ab29d",
+    "certificates/quantum_classical_bridge.py": "16504632b0dd05bcd0f0a2524a5d659aab458255311d5d2fcd9b3a7003586587",
     "certificates/thermodynamic_foundation_bridge.py": "e5f3632ae0b6e784dbfe7a8926df1dab7f4e1142c09e37b9b8884b7f34078650",
     "family_certificate.py": "91b949103dc086b271187894d6a1ce0c34328b91b1bfc361aa40fed42b74e429",
     "family_model.py": "db7e2505667eb7eb85bf7e6f75eee46348935f79875528e77f0eef3ed65a535a",

@@ -1,6 +1,6 @@
 # Quantum / gravity translator: cross-repository source audit
 
-Status: **source audit, not a new theorem or physical certificate**. Checked 2026-09-25. This note distinguishes objects defined in other manuscripts from objects derived from the uncut primitive. The v1.2 native certificate binds this note and the conditional thermodynamic foundation; its versioned claims delimit the current cut programme.
+Status: **source audit, not a new theorem or physical certificate**. Checked 2026-09-25. This note distinguishes objects defined in other manuscripts from objects derived from the uncut primitive. The v1.3 native certificate binds this note, the thermodynamic foundation and a conditional finite quantum/classical bridge; its versioned claims delimit the current cut programme.
 
 ## Corrections to the proposed missing-vocabulary diagnosis
 
@@ -23,6 +23,8 @@ Status: **source audit, not a new theorem or physical certificate**. Checked 202
 ## Precise next bridge obligation
 
 The [thermodynamic foundation bridge](THERMODYNAMIC_FOUNDATION_BRIDGE.md) now discharges one *conditional* equilibrium subproblem: U36's declared native quadratic cost, after exact hidden-channel elimination and an explicit entropy/volume/energy adapter, supplies a positive fundamental relation `U(S,V)` for the thermodynamic compass. Its exact rational witness verifies Maxwell and response identities. This does not yet discharge quantum preparation/readout, spacetime propagation, source universality or physical calibration.
+
+The [quantum/classical finite bridge](QUANTUM_CLASSICAL_BRIDGE.md) constructs, on **one** supplied native graph, paired norm-preserving Cayley evolution, conditional quadratic detector weights, a phase-erased classical update and an exact seam-memory obstruction to identifying the coherent trajectory with its classical shadow. The detector event-frequency law and physical clock/action scale are not derived by this construction.
 
 Give **one** declared native system with a state carrier `X`, evolution `T`, cut/observation `C`, and calibrated units. Provide both mappings from that same system:
 

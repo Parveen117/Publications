@@ -331,6 +331,25 @@ propagation and quantum readout remain separate. The v1.2 source-bound
 certificate binds **68** files, including the proof, audit and finite witness.
 It retains **162** native regressions and the earlier exhaustive checks.
 
+## Added in v1.3: one native quantum/classical bridge
+
+[QB-1–QB-3](QUANTUM_CLASSICAL_BRIDGE.md) use **one** grounded graph for its
+stationary source/thermodynamic potential and its paired, norm-preserving
+native continuation. The represented quarter-turn identifies the centered
+real pairs with complex coordinates; the native Cayley map becomes unitary.
+Given a declared orthogonal detector and local quadratic norm-share rule,
+the same state has normalized squared-amplitude readings. A phase-erasing
+cut produces a doubly stochastic classical update. The cut residue is
+exactly the later effect of discarded off-diagonal seam memory.
+
+On the exact two-carrier witness, two coherent steps give site-2 weight
+**16/25**, while erasing phase after step one gives **8/25** under the same
+native evolution. Equal first-step visible probabilities can have different
+coherent futures. The v1.3 master certificate source-binds **70** files,
+including the new proof and independent Fraction witness; 162 prior native
+regressions remain. Physical detector frequencies, clock/action calibration,
+graph selection and quantum gravity are not implied by these finite claims.
+
 ## Reproduce
 
 Python 3.11 or 3.12; standard library only. From the repository root:
@@ -339,6 +358,7 @@ Python 3.11 or 3.12; standard library only. From the repository root:
 python -m unittest discover -s papers/uncut-cut-measurement/tests -v
 python papers/uncut-cut-measurement/certificate.py --check
 python papers/uncut-cut-measurement/certificates/thermodynamic_foundation_bridge.py
+python papers/uncut-cut-measurement/certificates/quantum_classical_bridge.py
 ```
 
 The second command is read-only. It regenerates exact exhaustive checks in

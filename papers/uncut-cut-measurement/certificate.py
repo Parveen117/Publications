@@ -17,6 +17,7 @@ import identification_certificate
 import source_response_certificate
 import shell_growth_certificate
 from certificates import thermodynamic_foundation_bridge as tf_bridge
+from certificates import quantum_classical_bridge as qc_bridge
 
 HERE = Path(__file__).resolve().parent
 BOUND_SOURCES = (
@@ -54,6 +55,7 @@ BOUND_SOURCES = (
     "tests/test_shell_growth_model.py",
     "TRANSLATOR_REPO_AUDIT.md", "THERMODYNAMIC_FOUNDATION_BRIDGE.md",
     "certificates/thermodynamic_foundation_bridge.py",
+    "QUANTUM_CLASSICAL_BRIDGE.md", "certificates/quantum_classical_bridge.py",
 )
 
 
@@ -236,7 +238,7 @@ def controls():
 def build():
     domain, counts = finite_checks()
     body = {
-        "protocol": "UNCUT_CUT_MEASUREMENT_V1_2_FOUNDATION",
+        "protocol": "UNCUT_CUT_MEASUREMENT_V1_3_QUANTUM_CLASSICAL_BRIDGE",
         "status": "PASS_FINITE_CHECKS",
         "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
         "domains": domain,
@@ -254,11 +256,15 @@ def build():
         "conditional_source_response_and_gravity_tests": source_response_certificate.build_checks(),
         "shell_capacity_selection_audit": shell_growth_certificate.build_checks(),
         "conditional_thermodynamic_foundation": tf_bridge.run(),
+        "conditional_quantum_classical_bridge": qc_bridge.run(),
         "source_sha256": {p: hashlib.sha256((HERE / p).read_bytes()).hexdigest()
                           for p in BOUND_SOURCES},
         "scope": {
-            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38, SHELL_CAPACITY_SELECTION.md U39-U41 and THERMODYNAMIC_FOUNDATION_BRIDGE.md TF-1/TF-2 under stated hypotheses; no priority claim for standard Schur reduction, thermodynamic contact geometry or graph counting",
+            "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38, SHELL_CAPACITY_SELECTION.md U39-U41, THERMODYNAMIC_FOUNDATION_BRIDGE.md TF-1/TF-2 and QUANTUM_CLASSICAL_BRIDGE.md QB-1/QB-3 under stated hypotheses; no priority claim for standard Schur reduction, unitary Cayley geometry, dephasing or thermodynamic contact geometry",
             "conditional_thermodynamic_equilibrium_chart_from_source_cost": True,
+            "conditional_finite_quantum_classical_bridge_from_one_graph": True,
+            "physical_born_frequency_law_derived": False,
+            "native_step_identified_with_physical_time": False,
             "physical_entropy_volume_energy_adapter_derived": False,
             "availability_interface_physically_established": False,
             "native_gravity_law_physically_identified": False,
