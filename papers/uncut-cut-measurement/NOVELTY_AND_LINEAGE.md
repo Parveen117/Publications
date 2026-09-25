@@ -148,3 +148,30 @@ classify that fibre and repair it with a direct independently calibrated
 response. This is a new explicit result for the present model, under the
 earlier recognition/repair principles. It does not recertify all thermodynamics
 or derive a gravitational coupling from probe agreement alone.
+
+## v1.0 source-response candidate and a two-variable gravity test
+
+[U36-U38](SOURCE_RESPONSE_AND_GRAVITY_TESTS.md) construct an explicit affine
+source continuation using local R generators and the existing mixing brackets.
+A selected quadratic mismatch cost gives a stationary cut-flux ledger and
+effective hidden-coordinate elimination. The quadratic minimization, incidence
+sum, Schur complement and radial conservation arguments are established
+mathematics; no general priority is claimed for them. The earlier morphic
+graph sector and native length-rigidity result are credited with their exact
+scope, without calling their supplied graph a derived physical space.
+
+The contribution to this programme is the explicit native generator/cost/source
+binding, its stationary-cut response, and the test separating an inverse-square
+distance profile from the source-strength law. A competing nonlinear cost
+duplicates the distance exponent and fails source proportionality. An onsite
+term changes the flux ledger; fitting distance from force can fake an exponent;
+conservative continuation does not prove settling.
+
+This is a proposed physical candidate with a conditional inverse-square sector
+and a concrete experimental contract. It is not an unconditional derivation
+of Newtonian gravity, an externally established new prediction, or a passed
+gravity experiment. Numerical couplings may legitimately be empirically
+calibrated; calibration must not be confused with a theorem selecting them.
+Likewise, v0.9's blindness in a selected observable is not automatically gauge
+equivalence of complete physical theories: its augmented readout separates
+the pair within the declared observation class.

@@ -1,4 +1,4 @@
-# Research programme after v0.9
+# Research programme after v1.0
 
 ## Foundational decision
 
@@ -156,7 +156,34 @@ Evidence: 130 native regressions, 100 parameter inversions, 4,950 response-pair
 comparisons with 40 reciprocal collisions, 400 held-out basis predictions,
 300 frame checks, and 2,700 error enclosures/phase bounds. Data are synthetic.
 
-## Next concrete derivation: choose and challenge a physical adapter
+## Completed in v1.0: an explicit source candidate and a gravity test contract
+
+U36 constructs a source-coupled affine native continuation from the existing
+local R and mixing-bracket generators. Its selected quadratic mismatch cost
+has a unique stationary response and exact cut-flux and hidden-coordinate
+elimination ledgers. Conservative continuation preserves excess cost; it
+does not establish relaxation from arbitrary initial conditions.
+
+U37 derives a finite-difference inverse-square interaction response in the
+sector with quadratic shell-capacity growth and an independent ruler. The
+growth law, quadratic cost and physical source/probe couplings remain
+constitutive hypotheses. U38 separates distance dependence from source
+proportionality: a cubic-cost/quartic-capacity model duplicates the distance
+exponent and fails the quadratic candidate's source-scaling test.
+
+The physical experiment contract now specifies independent calibration,
+held-out source/distance settings, sign, finite-body apparatus modelling and
+rejection under justified error bounds. Published inverse-square and
+equivalence-principle experiments are cited as benchmarks. No raw empirical
+data has been ingested and no physical test has passed.
+
+Evidence: 152 regressions, 86 weighted graphs, 332 source solutions, 2,204 cut
+flux ledgers, 2,204 exact stationary eliminations, 96 radial profiles and 176
+pair-energy force checks. The certificate binds 60 files. The strict
+inverse-square-from-primitive challenge remains unsolved; the packet makes
+its missing assumptions and a discriminating physical test explicit.
+
+## Next concrete gate: select or independently calibrate the physical adapter
 
 Native target identification and a bounded-error comparison protocol now
 exist for a declared pair. A physical adapter must specify actual preparation,

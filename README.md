@@ -93,7 +93,13 @@ the existing information/curvature and thermodynamic sources and corrects a
 QTH-1 state-average/commutator converse. The v0.9 extension classifies an exact reciprocal ambiguity in the signed
 response and repairs it with one direct calibrated reading. It adds native
 pair identification, held-out response predictions and bounded-error probe
-comparison. Current evidence includes 130 native regressions, 100 parameter
+comparison. The v1.0 extension supplies an explicit source-coupled native
+candidate, exact stationary cut elimination, and a conditional inverse-square
+shell sector. It separates a distance-law test from source-strength scaling
+and gives a physical experiment contract. Quadratic cost, capacity growth and
+physical source/ruler/readout adapters remain additional hypotheses; no gravity
+experiment has passed. Current evidence includes 152 native regressions,
+2,204 stationary elimination checks, 100 parameter
 inversions and 2,700 noise-box enclosures, with
 the earlier graph-memory, signed-coupling and conditional curvature campaigns
 retained in the same source-bound certificate.

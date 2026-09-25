@@ -1,4 +1,4 @@
-# Claim ledger — v0.9
+# Claim ledger — v1.0
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -48,6 +48,9 @@ mathematics. Written proofs here do not imply priority.
 | U33 | Complete order response determines phase t and mixing sine but has precisely s versus 1/s blindness; one direct reading repairs it | Oriented two-channel native pair, finite nonzero t,s, fixed calibration | WRITTEN_PROOF in PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md; 100 inversions, 4,950 pair comparisons and 40 nontrivial reciprocal collisions |
 | U34 | Equal augmented calibrated triples identify the same U,V pair and generated words across probes | Declared four-dimensional pair family; independent two-sided frames | WRITTEN_PROOF; 300 frame checks, 400 held-out basis predictions, post-hoc fit and hidden-channel controls |
 | U35 | Separated-denominator interval inversion encloses every compatible model; disjoint data/parameter boxes reject a shared pair | Independently justified finite error bounds; conditional model class; overlap is not acceptance | WRITTEN_PROOF; 2,700 enclosure and ratio-bound checks, small-signal and large-mixing margin controls |
+| U36 | Declared quadratic source cost has a unique stationary response, native affine Cayley continuation, cut-flux ledger and exact stationary elimination | Positive grounded graph, linear source, independently aligned native coordinates; conservative flow does not imply settling | WRITTEN_PROOF in SOURCE_RESPONSE_AND_GRAVITY_TESTS.md; 86 weighted graphs, 332 source solutions, 2,204 cut flux and 2,204 stationary elimination checks |
+| U37 | Source-probe cross energy gives inverse-square finite-difference response iff calibrated shell capacity is quadratic in independently assigned radius | Shell-constant sector, quadratic cost, positive displacement calibration; source/probe physical adapters additional | CONDITIONAL_WRITTEN_PROOF; 96 radial profiles and 176 pair-energy force checks; other exponents remain allowed |
+| U38 | A nonlinear mismatch cost can duplicate inverse-square distance dependence while changing source-strength scaling; fitted radius can fake the exponent | Declared p>1 cost family, weak-probe first variation, fixed independent calibration | WRITTEN_PROOF and negative controls; 108 nonlinear scaling fixtures, 54 bounded-error ratio checks; physical source/distance comparison not performed |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |
@@ -92,12 +95,19 @@ mathematics. Written proofs here do not imply priority.
 | W42 | A hidden third native channel can differ while all five raw readings agree | Selected pair plus separately controlled unobserved channel | EXACT_COUNTEREXAMPLE; extra R readings 3/5 versus 12/13 |
 | W43 | A direct readout separates reciprocal laws with a finite error budget | W39 gap 6/5, explicit interval radii | EXACT_CONTROL; radius 1/10 rejects, radius 3/5 leaves the implemented comparison unresolved |
 | W44 | Exact inverse has no uniform denominator margin over all nonzero parameters | Weak phase and very large mixing examples | EXACT_CONTROL; INSUFFICIENT_RESOLUTION rather than false acceptance |
+| W45 | Quadratic shell stiffness at uniform spacing gives exact inverse-square response | C_n=n^2; unit source/probe and independently fixed spacing | CONDITIONAL_EXACT_WITNESS; responses -1, -1/4, -1/9, -1/16 |
+| W46 | Same native generator rules admit different response exponents | C_n=n^alpha with alpha=0,1,2,3 | EXACT_NONSELECTION_CONTROL; no primitive choice of alpha=2 |
+| W47 | Inverse-square distance dependence can coexist with nonlinear source response | Cubic cost, quartic stiffness growth, weak probe | EXACT_CONTROL; source times four gives response times two |
+| W48 | Onsite pinning breaks the source-free conserved-flux law | Positive added diagonal stiffness | EXACT_CONTROL; outward currents 27/61, 20/61, 18/61 |
+| W49 | Erasing hidden coordinates without the effective cost changes source response | Chain stiffnesses 1,4,9 | EXACT_CONTROL; source effective stiffness 36/49 rather than 1 |
+| W50 | Fitting the ruler to the response can manufacture a distance exponent | A 1/n response relabelled by r=sqrt(n) | EXACT_CONTROL; independent calibration required |
+| W51 | Conservative source continuation does not imply relaxation | Nonstationary affine Cayley orbit | WRITTEN_NONCONVERGENCE_ARGUMENT; exact excess-cost preservation checks |
 | NP0 | Selected probes share one calibrated native U,V pair | Predeclared family, coordinates, preparations and readout; includes augmented direct response | MODEL AGREEMENT GATE; U34 proves its sufficiency in that family; physical universality and gravitational identity remain OPEN |
-| NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U27 constructs a native-compatible interacting candidate, but its physical selection and gravitational identification remain open |
+| NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U36-U38 add an explicit source candidate and conditional inverse-square sector with a test contract; physical selection and validation remain open |
 | S0 | Associative continuation alone implies no nontrivial symmetry | Three-state chain | EXACT_COUNTEREXAMPLE; every permutation tested for commutation |
 | Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U35; preserved represented quarter-turn does not establish a Born law or physical quantum readout |
 | ST0 | Spacetime is a derived optional representation | Need construction and physical interpretation of order, locality, dimension and metric | OPEN; coframe constraint remains conditional; v0.6 repairs native grading on a declared larger carrier but does not construct a spacetime |
-| A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U2/U6/U9 minimize representation memory, not nature's action |
+| A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U36 supplies a declared stationary cost; W51 proves its conservative continuation does not force relaxation |
 | CI0 | Cut ambiguity equals physical curvature or a universal information tensor | Need a typed adapter, invariant and scope-specific proof | OPEN; U7 alone is insufficient |
 | G0 | Complete quantum gravity; RH or Yang–Mills closure | Not premises of this package | NOT CLAIMED |
 
@@ -190,3 +200,21 @@ graphs, quantum measurements or physical probe species. NP0 is an internal
 agreement gate, not a proof of gravitational universality. Non-overlap can
 reject; overlap at finite error is unresolved. Exact certificates and written
 proofs are separate from formal verification, external review and experiment.
+
+## v1.0 conditional source-response coverage
+
+The package adds 22 regressions for **152** total and binds **60 source files**.
+The campaign considers every connected labelled graph on 2, 3 or 4 vertices,
+each with unit and a fixed rational nonuniform weight pattern: 86 networks.
+It checks 332 source solutions against edge-current sums, 2,204 cut-flux
+ledgers, 2,204 stationary eliminations including hidden-source constants,
+332 cost-completion identities and 86 source-coupled native affine laws.
+Independent radial formulas match 96 matrix solutions; 176 source-probe
+cross-energy differences match the claimed signed responses. There are 108
+nonlinear distance/source controls and 54 bounded-error ratio fixtures.
+
+Seven immutable repository sources are pinned. Two published experiments are
+benchmark references only: their raw data and apparatus models have not been
+ingested. The inverse-square sector assumes quadratic cost and calibrated
+quadratic shell capacity. It is not a primitive-only gravity derivation or
+an empirical PASS. The proposed physical protocol has no acquired data yet.

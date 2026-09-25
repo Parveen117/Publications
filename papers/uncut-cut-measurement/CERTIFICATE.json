@@ -590,6 +590,48 @@
     "rational_encoding": "Fraction values are exact integer or p/q strings",
     "scope": "Conditional linear transport and supplied smooth-chart checks. No physical gravity law, continuum emergence, selected dimension, quantum readout rule or empirical validation."
   },
+  "conditional_source_response_and_gravity_tests": {
+    "W45_inverse_square_source_one": [
+      "-1",
+      "-1/4",
+      "-1/9",
+      "-1/16"
+    ],
+    "W46_same_native_rules_other_exponents": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "W47_cubic_cost_quartic_capacity": "Same 1/n^2 drop, source times 4 gives response times 2",
+    "W48_onsite_flux": [
+      "27/61",
+      "20/61",
+      "18/61"
+    ],
+    "W49_naive_cut_stiffness": "1 versus correct effective 36/49",
+    "W50_posthoc_radius": "A 1/n profile becomes 1/r^2 under fitted r=sqrt(n); forbidden calibration",
+    "W51_no_relaxation": "Affine Cayley preserves excess cost; a nonstationary state does not settle",
+    "counts": {
+      "bounded_error_ratio_checks": 54,
+      "cut_flux_ledgers": 2204,
+      "energy_completions": 332,
+      "native_affine_laws": 86,
+      "nonlinear_scaling_controls": 108,
+      "pair_energy_force_checks": 176,
+      "radial_profiles": 96,
+      "source_solutions": 332,
+      "stationary_eliminations": 2204,
+      "weighted_graphs": 86
+    },
+    "data_type": "Synthetic exact rational fixtures, not laboratory observations",
+    "distance_control": "REJECTED",
+    "native_primitive_selects_quadratic_cost_or_quadratic_shell_growth": false,
+    "physical_gravity_test_passed": false,
+    "physical_inverse_square_law_derived_without_additional_hypotheses": false,
+    "quantum_gravity_established": false,
+    "source_control": "REJECTED"
+  },
   "controls": {
     "S0_transitive_not_nontrivial_symmetry": {
       "commuting_permutations": [
@@ -1255,7 +1297,7 @@
     "scope": "U30-U32 written proofs are separate from these finite comparisons; no physical gravity or quantum readout law",
     "status": "PASS_FINITE_CHECKS"
   },
-  "protocol": "UNCUT_CUT_MEASUREMENT_V0_9",
+  "protocol": "UNCUT_CUT_MEASUREMENT_V1_0",
   "represented_blocks": {
     "entry_alphabet": [
       -1,
@@ -1272,26 +1314,32 @@
     "availability_interface_physically_established": false,
     "bounded_error_probe_rejection_constructed": true,
     "coframe_profile_constrained_within_supplied_homogeneous_class": true,
+    "conditional_inverse_square_shell_sector_constructed": true,
     "declared_native_pair_identified_with_augmented_readout": true,
     "empirical_validation": false,
+    "explicit_affine_source_cost_candidate_constructed": true,
     "formal_proof_assistant_verification": false,
-    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32 and PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35 under stated hypotheses; no priority claim for standard methods",
+    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35 and SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38 under stated hypotheses; no priority claim for standard methods",
     "genuine_lossy_quotient_preserves_declared_interaction": true,
     "homogeneity_derived_from_native_law": false,
     "independent_review": false,
     "minimum_nature_action_derived": false,
     "model_response_transcript_physically_realized": false,
     "native_compatible_inter_edge_candidate_constructed": true,
+    "native_conservative_flow_proves_relaxation": false,
     "native_coupling_values_selected_from_primitive": false,
     "native_grading_repair_on_declared_edge_assembly": true,
     "native_gravity_law_physically_identified": false,
     "native_response_tensor_and_exact_cut_seam_constructed": true,
     "native_tensor_identified_with_quantum_information_metric": false,
+    "physical_gravity_experiment_passed": false,
     "physical_inter_edge_law_selected_from_primitive": false,
+    "physical_inverse_square_derived_without_extra_hypotheses": false,
     "physical_probe_universality_established": false,
     "physical_quantum_classical_derivation": false,
     "physical_spacetime_derivation": false,
     "post_cut_smooth_chart_is_supplied": true,
+    "quadratic_cost_and_shell_growth_selected_from_primitive": false,
     "spacetime_dimension_derived": false,
     "transport_sector_selected_by_native_law": false,
     "uncut_identified_with_finite_carrier": false
@@ -1414,10 +1462,11 @@
     "../curvature-information-duality/certificates/qth1_quantum_recognition_information.py": "f619d64e45f697db3764b6455c8413aef8daa668a968d363236e878c37a4040c",
     "../curvature-information-duality/tests/test_qth1.py": "b72cf1965bc6745f4aa29f8acaa3193f452a2801911ad5286148693ae4a6a316",
     "ADMISSIBLE_CONTINUATION.md": "dd71c56c3bb1593d5cc5afb5fe66c118216be94c933b7961e3bb52cce445a3c5",
-    "CLAIMS.md": "8ab2b0c1f07280af8e175eab3fda3640c6ba30233da9caa658f5dbcae28beb26",
+    "CLAIMS.md": "bea2b067c4273423203e2605ebf8a1e7e08831db76321aa2c8a33bc25b1bfe9a",
     "FAMILY_CONTINUATION.md": "847e994bf6ec2990f4727e7ac6b25374fd8d5aaa94914c7a668fff25c854e3db",
     "GRADING_SOURCE_PINS.json": "670cc69d25bbb3f45b0dabdcda955e5acfaafb70ee605867201c9a047b0efe8c",
     "GRAVITY_BEFORE_CURVATURE.md": "9271e6063aac15382df8aeaff4ca39e28be92460687bc6bd54b60820ec90bbe5",
+    "GRAVITY_EXPERIMENT_CONTRACT.md": "47d095b3c9e6959a967d8b8c6f912c42c104f8811a41d21f1546a8777f635b22",
     "GRAVITY_SOURCE_PINS.json": "0025efcc8048896b0e6a02b23df84beaf4bea2c46badce54d8c19865a03e2f95",
     "IDENTIFICATION_SOURCE_PINS.json": "44757fdfb25427fceced9efa6fb20e4d6df127babf33834bc88a8354b7710921",
     "INTERACTION_SOURCE_PINS.json": "1b455519dbe92b83aa98012059ab1774e075c26279a03bcf81beeebbfa136bb1",
@@ -1425,16 +1474,18 @@
     "NATIVE_GRADING_AND_SEAM_MEMORY.md": "247c3f652cabacfaf9338c4900037baf8c5d6941fbdd56134ecace532174a051",
     "NATIVE_INTERACTION_AND_LAWFUL_CUTS.md": "ac37333fb1aa315ffe41f6ad821bd1437ddb4a2270cc065f65820b270bb4ea69",
     "NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md": "3ee3183f14e5f0a5978c1d591720c7bfb499528d71677ddb722ecbe8a19d1fbe",
-    "NOVELTY_AND_LINEAGE.md": "d0c81dd7180f37b361ca288d1d88a7d541c4d862a15e7a78e251a9d44a6c8a16",
+    "NOVELTY_AND_LINEAGE.md": "cbfe114668bfa3dcdba232235e15325cf6896375b576968cf80c004100f30b8e",
     "PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md": "5fa440c92789cc7aa0e21d996d6a97e70d59f4c87a876eafe74285205d7182cf",
-    "README.md": "c0bdf88decc3ffdc5ca346db20096ab89bbb0a838e92c069aafd9b843059b246",
-    "RESEARCH_PROGRAMME.md": "ed63fc4ff8dc4ee7d4b4f4b2d5163d12419decf6ea390f472a91ff30213fbf24",
+    "README.md": "a982a18802d85f0963889adc8bc632183b842ea15031d6db33048936b9b617c1",
+    "RESEARCH_PROGRAMME.md": "c4b32783d531965e0ef2cc9a5a11f2c711a83e4bcae12d2e0f307f7f1b449a13",
     "RESPONSE_SOURCE_AUDIT.md": "454ada029b6bd819c43d6ea636289c164ebe9a7a21c6aa3601af93367f3a334e",
     "RESPONSE_SOURCE_PINS.json": "1948b38ae80ad66abdfb0e7b21663abece5151dc1d587b0370b289ac19305927",
     "SECTOR_AND_COFRAME_SELECTION.md": "d9180edd7fef49f24116f5b28db8642463525f9b89030be2129185f25d10db5d",
     "SELECTION_SOURCE_PINS.json": "75cdff089cbad4ef638c64204147cdf9b3f8cb9688e742b8572afe3f4075f869",
     "SOURCE_PINS.json": "83811fbe301b92812bed1d3f0a28771c9163fbaf0bbd92392990aa134ef3bc7a",
-    "certificate.py": "2ab923c551cf908b7b30f0c576e50793b191be760ca20218ee053dbac23763f5",
+    "SOURCE_RESPONSE_AND_GRAVITY_TESTS.md": "eacbdd0aa9e1d2045a839ad65c22ee7bf2221512fef9b947c3d281d72694ffa3",
+    "SOURCE_RESPONSE_PINS.json": "98417cedc06e8c3120c412ee00797a2ca18c6951414fe46711492bb9851b17dd",
+    "certificate.py": "360f1fa2607aa08a1fc01c28671d56b5f7e8a4eed97edb104c82995fa9dbcc9a",
     "family_certificate.py": "91b949103dc086b271187894d6a1ce0c34328b91b1bfc361aa40fed42b74e429",
     "family_model.py": "db7e2505667eb7eb85bf7e6f75eee46348935f79875528e77f0eef3ed65a535a",
     "finite_model.py": "ff274cccdeb9ee5cc1e65db661bed733f114415c34d31f0bd3be75cc27df876a",
@@ -1452,6 +1503,8 @@
     "response_model.py": "b69643e5bdf2fda27d52f5e3350e31beb839bc83160d358916d18e07206805a7",
     "selection_certificate.py": "848ab2d0bc64e8057f4cec7e9fef4ae0e502b1392f5257985053292aa0ab7f66",
     "selection_model.py": "8ec412bd382c28cd23f6f44f6ab789a77e957146860f4defa092470e2b93a0fa",
+    "source_response_certificate.py": "1d52e77a3282e59b976d07a10f50f119e6eb19d7ac199b24df417ff8db8f1d84",
+    "source_response_model.py": "e4a86cebca43d82ffd50f75e4b5300d2e61dfcc4355caa4daad2ca43701e5ab5",
     "tests/test_family_model.py": "11d104afb3f7d9521718632b3768eb94c63e5e2e542ac091ed086179541e7d8d",
     "tests/test_finite_model.py": "5f53ea7ee064f5dbcab1523b22222638370c626aa25a0cd5858c5e82c3cb13ae",
     "tests/test_grading_model.py": "9740b5c92947daa3e58d64bc0bb4a00a74a1a0aa504ee5bef7988d8d7f6b6c07",
@@ -1460,7 +1513,8 @@
     "tests/test_interaction_model.py": "281072a97b92032b5c8f69bb42db970f6f1d06dca304dbc65396096d52323cf4",
     "tests/test_partial_model.py": "5c10db7f08c52d5c244eeddadc85506e6645bc8ecba3b22c1528f385510484d0",
     "tests/test_response_model.py": "b79a1b1a867607eca91906a312671382517c6134dceea4eabbb00bcfa3699156",
-    "tests/test_selection_model.py": "53a3f53df42bb6076f6862ca774991cd993263747ed3c8521032d32e91a65f0a"
+    "tests/test_selection_model.py": "53a3f53df42bb6076f6862ca774991cd993263747ed3c8521032d32e91a65f0a",
+    "tests/test_source_response_model.py": "26d95ad1c2c716ef006e752392c236255e987e663a795a24392a9bbc2e285db2"
   },
   "status": "PASS_FINITE_CHECKS"
 }

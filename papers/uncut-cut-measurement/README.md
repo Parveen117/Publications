@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 0.9, 25 September 2026.**
+**Monty Dabas — working research programme, version 1.0, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -18,6 +18,8 @@ Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
 [native interaction and lawful cuts](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md),
 [native response tensor and cut ledger](NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md),
 [calibrated probes and native identification](PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md),
+[source response and the inverse-square challenge](SOURCE_RESPONSE_AND_GRAVITY_TESTS.md),
+[physical experiment contract](GRAVITY_EXPERIMENT_CONTRACT.md),
 [information/thermodynamics source audit](RESPONSE_SOURCE_AUDIT.md),
 and [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
@@ -248,13 +250,43 @@ pair; overlap remains **UNRESOLVED**. A fitted output decoder and an unobserved
 third channel supply controls against false universality. The data here are
 synthetic; no physical probe measurement or probability law is invented.
 
-Current evidence: **130 native regressions**, **100 exact parameter inversions**,
+v0.9 evidence: **130 native regressions**, **100 exact parameter inversions**,
 **4,950 pairwise response comparisons**, **40 distinct reciprocal collisions**,
 **400 held-out basis predictions**, **300 calibration-frame checks**, and
 **2,700 noise-box enclosures with phase-error bounds**. The certificate binds
 **54 source files** and retains earlier evidence, including the v0.8 QTH
 correction. Six immutable source pins credit the thermo identification,
 non-selection and decoder results alongside the native predecessors.
+
+## Added in v1.0: explicit source response and the inverse-square challenge
+
+U36 adds a **declared quadratic source-cost law**, with an affine continuation
+whose generator is assembled from U27's local R controls and mixing brackets.
+The stationary solution obeys an exact cut-flux ledger. Eliminating hidden
+field coordinates preserves that response only when the effective stiffness,
+source and constant cost are all retained. This stationary elimination does
+not claim a closed quotient of the entire addressed dynamics.
+
+U37 computes a source-probe interaction cost and its inward finite-difference
+response. It is inverse-square when effective shell capacity grows as the
+square of an independently calibrated radius. Other capacity exponents are
+also native-compatible. U38 shows why distance scaling alone is insufficient:
+a nonlinear cost can duplicate 1/r^2 while changing the source-strength law.
+
+The [physical test contract](GRAVITY_EXPERIMENT_CONTRACT.md) therefore tests
+both distance and source changes with independent calibration and held-out
+settings. It cites actual gravity experiments as benchmarks, without claiming
+their data have been fit. The primitive has not selected quadratic cost,
+quadratic capacity growth, a physical ruler or universal mass coupling. The
+conservative native continuation also does not imply minimum-cost settling.
+
+Current evidence: **152 native regression tests**, **86 weighted graphs**,
+**332 source solutions**, **2,204 cut-flux ledgers**, **2,204 stationary
+eliminations**, **96 radial profiles**, **176 pair-energy force checks**,
+**108 nonlinear scaling controls** and **54 bounded-error ratio checks**.
+The certificate binds **60 source files** and retains all earlier evidence.
+The unconditional physical inverse-square challenge remains open; the exact
+conditional result and a falsifiable candidate test are now concrete.
 
 ## Reproduce
 
