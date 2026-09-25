@@ -1,10 +1,10 @@
 # Novelty assessment and source lineage
 
 **Audit date: 25 September 2026. Scope: this package, the pinned Spectral I/II
-papers, and the indicated native RSC sources.**
+papers, and the indicated native RSC, EMK and selection sources.**
 
 The package is a useful finite operational development of existing principles.
-It is not twenty independent foundational discoveries. Proposition
+It does not establish twenty-three independent foundational discoveries. Proposition
 numbers identify statements in this draft, not priority or scientific impact.
 In particular, U1 is already exactly Spectral I Theorem 18.1. The explicit
 classification below supersedes any ambiguous use of “new results” in earlier
@@ -25,6 +25,7 @@ versions to mean additions to this particular draft.
 | W5/W6 and the v0.3 W7–W9 controls | This package's named finite fixtures | Useful audit examples. These exact packaged fixtures were not located in the inspected earlier texts; no exhaustive global novelty claim is made. |
 | U13–U16 | Existing quotient/partial-transition methods; native composition discipline | Explicit domain-preserving formulation, two observation contracts, minimum memory and a failure of pairwise-safe equivalence. Added to this programme, not claimed globally unprecedented. |
 | U17–U20 | EMK algebra, existing curvature-separation controls, elementary invariant-form algebra and standard connection geometry | Conditional transport-to-metric reconstruction and an explicit curvature adapter. The particular multi-plane assembly is a new candidate assumption here, not a uniquely selected native law or a globally new method. |
+| U21–U23 | U18, elementary signed-graph consistency, information-invariance Theorem I/J, RKF 31, and standard torsion/coframe equations | Complete criterion within a declared coupling class, a minimum-edge signature counterexample, and conditional coframe closure for a fixed homogeneous connection. Neither physical sector selection nor a new universal field equation is claimed. |
 
 Spectral II additionally addresses sampling, noise/stability and completion.
 This exact finite model does not supersede those stronger analytical settings.
@@ -66,6 +67,17 @@ progress on this route. Its family selection still encodes substantial input:
 the K family yields an indefinite form, the R family a definite one. The curved
 coframe example is also supplied, not derived by a gravitational law. Neither
 this construction nor the standard Levi-Civita adapter is a priority claim.
+
+v0.5 adds [coupling and coframe constraints](SECTOR_AND_COFRAME_SELECTION.md).
+The [four-file selection audit](SELECTION_SOURCE_PINS.json) locates the existing
+invariance/nonselection result and distinguishes observer minimization for a
+supplied target from selection of the target or law. The explicit K-star/K-chain/
+R-star tie rejects one minimality rule. A fixed homogeneous connection now
+constrains the coframe by b'=kappa a within the supplied ansatz. These are useful
+additional constraints on this programme, using elementary graph algebra and
+standard geometry; this audit does not establish global novelty or prior absence
+from every repository paper. In particular, generic nonselection was already
+present in the information-invariance work.
 
 A larger foundational or physical claim needs an additional result: for
 example, a faithful construction linking the native seam data to instrument

@@ -1,4 +1,4 @@
-# Claim ledger — v0.4
+# Claim ledger — v0.5
 
 The word **proof** below refers to the written argument under the manuscript's
 declared assumptions. **PASS_FINITE_CHECKS** refers only to the finite domains
@@ -33,6 +33,9 @@ mathematics. Written proofs here do not imply priority.
 | U18 | Complete chosen K-family selects a Lorentz-type form line; complete R-family selects a definite form line; their simultaneous invariant form is zero | Declared overlapping (0,i) EMK embeddings; nonzero nonsingular Cayley parameters; n is supplied | WRITTEN_PROOF; 24 K families in dimensions 2–5, 20 sector comparisons, 100 independent Cayley inversion checks; no physical signature-selection claim |
 | U19 | A full bilinear form descends through a linear cut iff its kernel lies in the form radical; transport requires an exact intertwiner | Surjective linear cut; symmetric form; stated target is full bilinear pairing | WRITTEN_PROOF; eight cut-form checks and W13's rejected false commutator |
 | U20 | Metric-compatible transport with a rank-matched invertible coframe and zero torsion induces Levi-Civita curvature by conjugation | Supplied smooth chart, internal form, connection and coframe; torsion equation holds | WRITTEN_PROOF of standard geometric adapter; 24 exact chart points checked by independent Christoffel/connection routes; no chart-emergence claim |
+| U21 | Connected K/R component couplings admit a nonzero invariant form iff every cycle has even K parity; when admitted, the form line and signature are fixed by sign propagation | Declared connected simple coupling graph, one sector per edge, nonzero invertible Cayley steps; dimension supplied | WRITTEN_PROOF in SECTOR_AND_COFRAME_SELECTION.md; all 646 connected labelled graphs through four components compared to full symmetric invariant-form equations |
+| U22 | Exact compatibility plus minimum edge count does not select 1+3; even all-K trees can yield 2+2 | Four components, connected K/R graphs, normalized form; stated combinatorial objective | WRITTEN_PROOF and W17; application of established nonselection distinction, not a no-go for every possible native selector |
+| U23 | Fixed homogeneous star connection gives zero torsion iff b'=kappa a, fixing b from a and one initial value; explicit LC curvature follows | Supplied chart, constant nonzero kappa, K or R star, coframe class e=(a du,b dx^i), ab nonzero | WRITTEN_PROOF of conditional adapter; 48 rational chart points, 240 independent curvature comparisons; both sectors pass |
 | W1 | One visible bit does not recover the other; cost depends on the target | Four presented pairs | EXACT_COUNTEREXAMPLE; named regression |
 | W2 | Pairwise realizability need not give global realizability | Four even-parity triples | EXACT_COUNTEREXAMPLE; all pair intersections and empty triple intersection checked |
 | W3 | Common scalar targets can be constant while joint readout is injective | Two coordinate cuts on four pairs | EXACT_COUNTEREXAMPLE; named regression and exhaustive common-target checks |
@@ -49,10 +52,14 @@ mathematics. Written proofs here do not imply priority.
 | W14 | Metric compatibility alone does not identify fibre and metric curvature | Flat coframe and A=uK dv | EXACT_COUNTEREXAMPLE; nonzero torsion, fibre curvature nonzero, metric curvature zero |
 | W15 | A supplied nonconstant coframe realizes a curved bridge; a constant one realizes a flat bridge | e=(du,f dv), A=f'K dv; f nonzero on the chart patch | EXACT_WITNESS and written identities; f remains an input |
 | W16 | A genuine memory-losing cut can faithfully carry a nondegenerate geometric target | Declared memory-extended K family; source form radical equals the discarded memory direction | WRITTEN_COROLLARY and exact n=2 example; memory-sensitive targets remain lost |
-| NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U17–U20 construct conditional representation bridges, not the physical identification |
+| W17 | K-star, K-path and R-star tie at the coupling minimum but give three different signatures | Four response components and three edges per graph | EXACT_COUNTEREXAMPLE; signatures (1,3), (2,2), (4,0) |
+| W18 | Odd K cycle destroys the invariant form; a balanced mixed triangle admits one | Three components; all-K versus two-K/one-R triangle | EXACT_COUNTEREXAMPLE and exact positive control |
+| W19 | A pointwise torsion zero need not give a patch solution for a fixed connection | a=kappa=1, b=1+u^2 | EXACT_COUNTEREXAMPLE; torsion coefficient 2u-1 vanishes at one point only |
+| W20 | Both K and R permit homogeneous coframe closure | Same n=3, kappa=1 and b=3+u; different declared sectors | EXACT_COUNTEREXAMPLE to selection by the torsion gate alone |
+| NG0 | A pregeometric recognition-transport law represents gravity before curvature | Need a selected native law, universal probe coupling and falsifiable gravitational predictions | PROPOSED; U17–U23 construct conditional representation bridges and constrain choices, not the physical identification |
 | S0 | Associative continuation alone implies no nontrivial symmetry | Three-state chain | EXACT_COUNTEREXAMPLE; every permutation tested for commutation |
-| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U20 |
-| ST0 | Spacetime is a derived optional representation | Need construction and physical interpretation of order, locality, dimension and metric | OPEN; v0.4 derives an invariant form only for a selected transport sector and uses a supplied smooth chart for curvature |
+| Q0 | Quantum and classical physics are representations of one uncut law | Need native probability, interference, observables, dynamics and physical adapters | OPEN; no quantum axiom imported into U1–U6 or U8–U23 |
+| ST0 | Spacetime is a derived optional representation | Need construction and physical interpretation of order, locality, dimension and metric | OPEN; v0.5 constrains the coframe only within a supplied homogeneous adapter; smooth chart and physical signature selection remain inputs/obligations |
 | A0 | Nature minimizes a cut cost along its continuation | Need an admissible path class, an independently defined action and a selection theorem or empirical test | OPEN; U2/U6/U9 minimize representation memory, not nature's action |
 | CI0 | Cut ambiguity equals physical curvature or a universal information tensor | Need a typed adapter, invariant and scope-specific proof | OPEN; U7 alone is insufficient |
 | G0 | Complete quantum gravity; RH or Yang–Mills closure | Not premises of this package | NOT CLAIMED |
@@ -78,6 +85,15 @@ eight source pins and 13 regressions, bringing the package total to **50**.
 Its 1,296 candidate-form comparisons exhaust only the stated integer grid
 for 48 single-arrow matrices; they are not an exhaustive search of all forms
 or geometries. U20's general proof and its 24 sampled chart checks are distinct.
+
+The v0.5 module adds 13 regressions, bringing the total to **63**. It enumerates
+759 simple labelled absent/K/R graphs on two through four vertices, compares
+all 646 connected cases against full invariant-form equations, and excludes
+113 disconnected cases from U21's scope. It checks 48 supplied homogeneous
+chart points and 240 curvature matrices by independent metric/connection routes.
+These domains are finite; they do not exhaust arbitrary transport families or
+coframes. The source-bound certificate now binds 27 files. A source hash is
+provenance, not independent verification of every claim in the source.
 
 The finite results are elementary self-contained mathematical consequences.
 Their role is to make the proposed programme precise and refutable; no priority

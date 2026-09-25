@@ -68,7 +68,7 @@ Each GitHub release is intended to be archived by Zenodo and assigned a version 
 
 **[Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation](papers/uncut-cut-measurement/)**
 starts a public research programme in which mathematical definitions and
-measurement descriptions are themselves cuts. Version 0.4 contains twenty
+measurement descriptions are themselves cuts. Version 0.5 contains twenty-three
 written propositions covering target recovery, minimum repair memory,
 compatibility and clock-free continuation for entire families of arrows.
 It includes a shortest distinguishing-experiment construction, exhaustive
@@ -81,6 +81,10 @@ The gravity-before-curvature module reconstructs an invariant form from a
 declared EMK transport family and states the precise post-cut conditions for
 identifying transport curvature with metric curvature. Physical gravity,
 transport-sector selection and emergence of a spacetime remain open.
+The coupling extension classifies compatible K/R component graphs, rejects
+minimum edge count as a unique signature selector, and constrains a homogeneous
+coframe profile for a fixed connection. Its evidence includes 63 regressions,
+646 connected coupling graphs and 240 independent curvature-matrix comparisons.
 Spacetime and the quantum/classical correspondence are explicit derivation
 targets. See the manuscript, claim ledger and reproducible certificate in the
 programme folder; the finite checks do not establish a complete physical theory.

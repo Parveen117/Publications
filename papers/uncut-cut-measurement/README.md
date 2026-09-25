@@ -1,6 +1,6 @@
 # Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
 
-**Monty Dabas — working research programme, version 0.4, 25 September 2026.**
+**Monty Dabas — working research programme, version 0.5, 25 September 2026.**
 
 The starting proposal is reflexive: definitions create distinctions, so the
 mathematical framework used to describe the uncut is itself a cut. A measurement
@@ -12,14 +12,15 @@ Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
 [foundational manuscript](MANUSCRIPT.md),
 [family-continuation extension](FAMILY_CONTINUATION.md),
 [admissibility extension](ADMISSIBLE_CONTINUATION.md),
-[gravity-before-curvature bridge](GRAVITY_BEFORE_CURVATURE.md), and [claim ledger](CLAIMS.md).
+[gravity-before-curvature bridge](GRAVITY_BEFORE_CURVATURE.md),
+[sector and coframe constraints](SECTOR_AND_COFRAME_SELECTION.md), and [claim ledger](CLAIMS.md).
 The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
 
 **Lineage:** U1 already appears exactly in Spectral I Theorem 18.1; minimum
 repair has a linear counterpart in Spectral II Theorem 7.2; recovered middle
 identity is already required by RSC 27/30. Partition refinement is established
 mathematics. This package adds explicit finite formulations, operational
-distinctions and executable controls, not twenty priority claims.
+distinctions and executable controls; proposition numbering is not a priority claim.
 
 ## Foundational results U1–U7
 
@@ -108,12 +109,34 @@ metric-compatible, torsion-free connection, the connection curvature becomes
 metric curvature by an explicit intertwiner. A valid curved chart is checked
 by two independent routes; a torsion control rejects a false identification.
 
-Current evidence: **50 regression tests**, 24 K-family reconstructions,
+The v0.4 evidence: **50 regression tests**, 24 K-family reconstructions,
 1,296 integer-grid candidate-form comparisons, 24 supplied chart points and
 the retained earlier certificates. The new source audit pins eight files.
 The K maps are candidate algebraic transports, not asserted to be RKF 55's
 dagger-unitary flows. Selecting the gravitational sector, coframe, dynamics
 and shared quantum readout remains the next research problem.
+
+## Added in v0.5: coupling constraints and conditional coframe closure
+
+[U21–U23](SECTOR_AND_COFRAME_SELECTION.md) extend the chosen star to connected
+component-coupling graphs. A nonzero invariant form exists precisely when every
+cycle has an even number of K edges; the coupling pattern then fixes its
+signature up to an overall sign. Exact compatibility plus the minimum number
+of couplings still admits 1+3, 2+2 and definite signatures on four components.
+This explicitly rejects that proposed sector-selection rule.
+
+There is a positive coframe constraint: for a supplied constant star connection
+and homogeneous coframe e=(a du,b dx^i), zero torsion is equivalent to
+**b'=kappa a**. Given a and an initial value, b is determined on a nondegenerate
+patch. Both K and R sectors pass, so this conditional adapter does not select
+the physical sector, chart or homogeneity. No gravitational field equation is
+imported. The existing information-invariance nonselection result is credited.
+
+Current evidence: **63 regression tests**, all **646 connected K/R coupling
+graphs on two through four labelled components** compared with a full
+invariant-form solver, and **240 independent curvature-matrix comparisons**
+at 48 supplied chart points. All earlier evidence is retained. The certificate
+binds 27 source files; the new provenance manifest pins four additional sources.
 
 ## Reproduce
 
@@ -142,7 +165,9 @@ The carrier and its functions are declared mathematical representations.
 No spacetime metric, external clock, probability law, quantum state space,
 Hamiltonian or classical field equation is assumed by U1–U19. U17–U19 introduce
 declared finite-dimensional linear carriers. U20 is a conditional geometric
-adapter on a supplied smooth chart with a coframe and connection.
+adapter on a supplied smooth chart with a coframe and connection. U21/U22 are
+algebraic coupling results; U23 constrains a supplied homogeneous coframe class
+for a fixed connection on a supplied chart.
 No physical quantum/classical correspondence, spacetime reconstruction, minimum
 action law, universal curvature-information identity or quantum-gravity closure
 has yet been derived by this package.

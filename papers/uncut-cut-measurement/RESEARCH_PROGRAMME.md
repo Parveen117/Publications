@@ -1,4 +1,4 @@
-# Research programme after v0.4
+# Research programme after v0.5
 
 ## Foundational decision
 
@@ -10,7 +10,7 @@ Keep both candidate starts explicit until a derivation distinguishes them:
   meaningful continuation relation; compatibility across further cuts constrains
   admissible laws.
 
-U1–U20 do not choose between them. Neither candidate identifies a labelled finite
+U1–U23 do not choose between them. Neither candidate identifies a labelled finite
 set, a quantum state vector or a spacetime point with uncut ground.
 
 ## Completed in v0.2: more than one admissible continuation
@@ -60,12 +60,34 @@ connection curvature into metric curvature, but both flat and curved supplied
 adapters pass. The selection of family, rank, coframe and dynamics remains open.
 Evidence: 50 package regressions and the exact rational domains in the certificate.
 
-## Next concrete derivation: select the native sector and adapter
+## Completed in v0.5: coupling criterion and conditional coframe closure
+
+[U21–U23](SECTOR_AND_COFRAME_SELECTION.md) give the exact cycle condition for
+the declared K/R coupling graphs and reconstruct the form line when it exists.
+The minimum-coupling selector fails explicitly: three-edge K-star, K-chain
+and R-star choices tie while giving distinct signatures. The information-
+invariance paper already separates invariance from selection; this extension
+credits that precedent instead of treating nonselection itself as new.
+
+For a fixed constant star connection and a supplied homogeneous coframe class,
+zero torsion now forces b'=kappa a. This determines the profile from the lapse
+and an initial value, rather than choosing an arbitrary profile and changing
+the connection to suit it. Both sectors satisfy the same closure equation.
+Chart, homogeneity, dimension, sector and kappa are still supplied.
+
+Evidence: 63 package regressions, 646 connected coupling graphs checked
+against a full invariant-form solver, and 240 independent curvature comparisons.
+
+## Next concrete derivation: justify the coupling data and compare predictions
 
 Derive a rule from declared native seam data that selects the relevant
 transports and their coupling pattern without inserting the desired metric
-signature as the criterion. Then derive or constrain the coframe/connection
-and an operational gravitational response. The existing K and R alternatives,
+signature as the criterion. The rule must distinguish the tied K-star, K-chain
+and R-star controls for a reason independently present in the native data.
+Name an operational target and compare rival transport predictions on it before
+fitting a metric or identifying a coupling as gravitational. Then justify or
+enlarge the homogeneous coframe class, with U23 as a conditional benchmark.
+The existing K and R alternatives,
 missing-coupling example, inadmissible compression and torsion counterexample
 must remain controls that can reject a proposed selection rule.
 
@@ -153,7 +175,7 @@ resolved within its stated hypotheses rather than hidden by a single symbol.
 
 ## Publication gates
 
-v0.4 is a public working draft with exact finite evidence. A later paper edition
+v0.5 is a public working draft with exact finite evidence. A later paper edition
 should add independently checked proofs, a complete empirical or physical
 identification where claimed, and a compiled manuscript matching its claim
 ledger. A GitHub release/DOI follows the repository's existing release rule;
