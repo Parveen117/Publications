@@ -1,0 +1,154 @@
+\subsection{Typing Recognition curvature against equilibrium thermodynamic curvature}
+\label{sec:curvature-typing}
+
+Several inequivalent curvatures occur in thermodynamics and field theory.  They must not be identified merely because the same word is used.
+
+\begin{definition}[Three curvature types]
+The paper distinguishes:
+\begin{enumerate}[label=(\roman*)]
+\item an equilibrium metric curvature $\mathcal R_{\mathrm{eq}}$, such as the scalar or tensor curvature of a declared Weinhold or Ruppeiner metric on the equilibrium state manifold;
+\item a response-transport curvature $F^{\mathrm{open}}=\dd(\omega-\ell)$ or its vector-bundle analogue, measuring the failure of a declared response transport and ledger to close;
+\item the spacetime quotient curvature $F_A$ induced by the target-faithful transport square on $E_{\RK}$.
+\end{enumerate}
+\end{definition}
+
+These objects live in different bundles and have different dimensions.  An equilibrium scalar curvature cannot be inserted into a force--flux law or gauge action without an explicit bundle map and unit calibration.
+
+\begin{proposition}[Typed curvature calibration]
+Let
+\[
+\mathfrak F
+=
+\mathfrak F_{\mathrm{open}}
+\oplus
+\mathfrak F_{\mathrm{eq}}
+\oplus
+\mathfrak F_{\mathrm{sp}}
+\]
+be a direct sum of the declared open-response, equilibrium-metric, and spacetime quotient-curvature carriers after lawful nondimensionalization.  Any constitutive production calibration
+\[
+\mathcal C:\mathfrak F\to\operatorname{Hom}(\R^m,\R^r)
+\]
+decomposes uniquely as
+\[
+\mathcal C(F_{\mathrm{open}},R_{\mathrm{eq}},F_A)
+=
+\mathcal C_{\mathrm{open}}F_{\mathrm{open}}
++
+\mathcal C_{\mathrm{eq}}R_{\mathrm{eq}}
++
+\mathcal C_{\mathrm{sp}}F_A
+\]
+when $\mathcal C$ is linear.  The positive production theorem then gives
+\[
+\sigma(X)
+=
+\norm{
+\mathcal C_{\mathrm{open}}F_{\mathrm{open}}X
++
+\mathcal C_{\mathrm{eq}}R_{\mathrm{eq}}X
++
+\mathcal C_{\mathrm{sp}}F_AX
+}^2
+\ge0.
+\]
+No individual curvature contribution is selected by geometry alone.
+\end{proposition}
+
+\begin{proof}
+The decomposition is the universal property of a direct sum.  The production identity is the calibrated curvature-to-production theorem applied to the combined typed curvature datum.
+\end{proof}
+
+\begin{remark}[Relation to Ruppeiner geometry]
+Ruppeiner curvature may be included through $\mathcal C_{\mathrm{eq}}$ when an equilibrium fluctuation metric and its physical calibration are declared.  The Recognition open curvature is not asserted to equal Ruppeiner curvature.  Their equality, proportionality, or coupling would be an additional constitutive theorem to be tested in a specified model.
+\end{remark}
+
+\subsection{When thermodynamic response seeds are analytic}
+\label{sec:analytic-seed-relevance}
+
+The analytic-vector assumption in the infinite-jet theorem is restrictive but not empty.  It holds locally for analytic constitutive laws and analytic process curves away from phase singularities, and it is automatic for bounded response generators.
+
+\begin{theorem}[Holomorphic constitutive criterion for analytic response seeds]
+\label{thm:holomorphic-response-seed}
+Let $H$ be a complex Hilbert response fibre and let
+\[
+\lambda:\{z\in\C:|z|<R\}\to H
+\]
+be holomorphic with
+\[
+\sup_{|z|<R}\norm{\lambda(z)}_H\le M.
+\]
+Let $D^n\Lambda:=\lambda^{(n)}(0)$.  Then for every $0<r<R$,
+\begin{equation}
+\sum_{n=0}^\infty
+\frac{r^{2n}}{(n!)^2}
+\norm{D^n\Lambda}_H^2
+\le
+\frac{M^2}{1-(r/R)^2}.
+\label{eq:holomorphic-analytic-bound}
+\end{equation}
+Hence $\Lambda\in\mathcal A_r(D)$ and the infinite response jet exists for $|t|<r$.
+\end{theorem}
+
+\begin{proof}
+The Hilbert-valued Cauchy estimate gives
+\[
+\norm{\lambda^{(n)}(0)}_H
+\le
+\frac{Mn!}{R^n}.
+\]
+Substitution yields
+\[
+\sum_{n=0}^\infty
+\frac{r^{2n}}{(n!)^2}
+\norm{D^n\Lambda}_H^2
+\le
+M^2\sum_{n=0}^\infty\left(\frac rR\right)^{2n},
+\]
+which is \eqref{eq:holomorphic-analytic-bound}.
+\end{proof}
+
+\begin{corollary}[Analytic constitutive thermodynamic processes]
+Suppose the fundamental relation $U(S,V)$ is real analytic on a stable chart and a real-analytic process curve
+\[
+t\longmapsto(S(t),V(t))
+\]
+remains in a compact subset on which all denominators in the response formulas are nonzero.  Then each response coordinate and the nondimensional response section $\widehat\Lambda(t)$ are real analytic in $t$.  After shrinking the interval, they admit a bounded holomorphic extension and satisfy the analytic-seed estimate of Theorem~\ref{thm:holomorphic-response-seed}.
+\end{corollary}
+
+\begin{proof}
+Derivatives, algebraic combinations, and reciprocals of nonvanishing real-analytic functions are real analytic.  Composition with a real-analytic curve preserves analyticity.  Local complexification supplies a holomorphic extension, and compactness after shrinking supplies a finite bound.
+\end{proof}
+
+\begin{corollary}[Ideal-gas and van der Waals analytic sectors]
+The ideal-gas response coordinates are analytic wherever $T>0$ and $V>0$.  The van der Waals response coordinates are analytic on every compact stable region satisfying
+\[
+V>b,
+\qquad
+\left(\frac{\partial P}{\partial V}\right)_T<0,
+\]
+and avoiding zeros of the heat capacities and bulk moduli.  Along every analytic process curve contained in such a region, the infinite response-jet theorem applies locally.
+\end{corollary}
+
+\begin{proposition}[Bounded-generator criterion]
+If $D\in\mathcal B(H)$ is bounded, then every $x\in H$ is an entire analytic seed:
+\begin{equation}
+\sum_{n=0}^\infty
+\frac{r^{2n}}{(n!)^2}\norm{D^nx}^2
+\le
+\norm x^2
+\sum_{n=0}^\infty
+\frac{(r\norm D)^{2n}}{(n!)^2}
+<\infty
+\label{eq:bounded-generator-entire}
+\end{equation}
+for every $r>0$.
+\end{proposition}
+
+\begin{proof}
+Use $\norm{D^nx}\le\norm D^n\norm x$ and convergence of the factorially damped scalar series.
+\end{proof}
+
+\begin{remark}[Failure at singular regimes]
+Near a spinodal, critical point, phase boundary, vanishing heat capacity, or any chart degeneration, the analytic radius may collapse and the response generator may cease to satisfy the required estimate.  The theorem then does not fail mysteriously; its domain certificate reports that the chosen infinite-jet representation is no longer lawful.
+\end{remark}

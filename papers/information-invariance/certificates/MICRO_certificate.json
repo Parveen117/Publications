@@ -1,14 +1,14 @@
 {
-  "certificate_sha256": "064cf2faf4f6ee420059bb7332902b4a846a31f6329454fa28c16a6deafa07e2",
+  "certificate_sha256": "1c63419e58ce3a257238a78275de4eb1868efc4fd66a796ebb613f40835c03ca",
   "chain": "delta I = 0  <=>  Omega = 0 (Theorem A)  <=  chi == 1 (Theorems N, O); the last arrow is one-directional.",
-  "claim_boundary": "Finite phase space, exact rational weights, linear coarse-graining. The continuum Green-Kubo statement of the companion work is cited, not re-derived.",
-  "consequence": "Information invariance has a microscopic reading: stationarity of the loop functional is time-reversal invariance of the statistical weight. And the predeclared cycle-2 test is not optional: neither a single loop area nor a null curvature result carries an inference by itself.",
+  "claim_boundary": "Finite regression checks only; the general indicator-observable proof is in Theorem N. Finite phase space, positive exact rational weights, linear coarse-graining. The continuum Green-Kubo statement of the companion work is cited, not re-derived.",
+  "consequence": "Time-reversal-invariant weights imply information invariance on the declared chart. Coarse information invariance alone does not characterize those weights; the reverse requires ker(K) intersect admissible antisymmetric responses = {0}.",
   "experimental_logic": {
     "Omega_nonzero_across_cycles": "implies chi != 1 \u2014 informative",
     "Omega_zero": "implies nothing about chi",
     "single_cycle_loop_area_nonzero": "implies nothing about Omega (Theorem B)"
   },
-  "protocol": "INFORMATION_INVARIANCE_MICRO_V1",
+  "protocol": "INFORMATION_INVARIANCE_MICRO_V2",
   "theorem_N_microscopic_characterisation": {
     "checks": {
       "chi_one_implies_symmetric": true,
@@ -16,8 +16,8 @@
       "identity_exact": true,
       "symmetric_for_all_implies_chi_one": true
     },
-    "reading": "delta I = 0 (equivalently Omega = 0, Theorem A) is exactly the statement that the statistical weight is invariant under time reversal.",
-    "status": "PROVED"
+    "reading": "Full microscopic correlation symmetry for every observable pair is equivalent to chi = 1. It implies coarse Omega = 0; the reverse requires a faithful observation.",
+    "status": "PASS_FINITE_CHECKS"
   },
   "theorem_O_curvature_is_sufficient_not_necessary": {
     "checks": {
@@ -51,6 +51,6 @@
       ]
     },
     "reading": "Omega = 0 does not imply chi = 1: microscopic irreversibility can cancel under coarse-graining. A null curvature measurement is uninformative; only Omega != 0 carries the inference.",
-    "status": "PROVED"
+    "status": "PASS_FINITE_CHECKS"
   }
 }

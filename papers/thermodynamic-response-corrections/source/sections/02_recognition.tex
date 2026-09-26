@@ -1,0 +1,228 @@
+\section{The intrinsic antisymmetric structure}
+
+\subsection{Jacobian brackets}
+
+Let $(x,y)$ be an oriented local chart on a two-dimensional manifold.  Define
+\[
+\{f,g\}_{x,y}
+:=\frac{\partial(f,g)}{\partial(x,y)}
+=f_xg_y-f_yg_x.
+\]
+
+\begin{proposition}[Jacobian-bracket algebra]
+For smooth functions $f,g,h$,
+\begin{align*}
+\{f,g\}_{x,y}&=-\{g,f\}_{x,y},\\
+\{f,gh\}_{x,y}&=g\{f,h\}_{x,y}+h\{f,g\}_{x,y},\\
+\{f,\{g,h\}\}+\{g,\{h,f\}\}+\{h,\{f,g\}\}&=0.
+\end{align*}
+Moreover,
+\[
+\dd f\wedge\dd g=\{f,g\}_{x,y}\,\dd x\wedge\dd y.
+\]
+\end{proposition}
+
+\begin{proof}
+The first, second, and final identities follow by direct expansion.  The Jacobi identity is the standard Poisson-bracket identity for the constant area form $\dd x\wedge\dd y$.
+\end{proof}
+
+The thermodynamic two-form relation \eqref{eq:fundamental-two-form} is therefore the intrinsic antisymmetric statement.  In the $(S,V)$ chart it reads
+\[
+\{T,S\}_{S,V}=\{P,V\}_{S,V}.
+\]
+
+\subsection{Why a universal skew response Jacobian does not follow}
+
+\begin{proposition}[No automatic skew $\lambda$-Jacobian]
+The response definitions \eqref{eq:lambda-caloric-def}--\eqref{eq:lambda-isothermal-def} and the Maxwell relations do not imply that a matrix of first derivatives of the response coordinates is skew-symmetric.
+\end{proposition}
+
+\begin{proof}
+The equilibrium manifold has dimension two, so $T,V,S,P$ cannot be used as four independent coordinates on an open subset of $\R^4$.  Any derivative matrix with four nominal columns depends on chart extensions off the equilibrium manifold and is therefore not intrinsic.
+
+Even in a legitimate two-dimensional chart, skew-symmetry is not automatic.  For an ideal gas with constant $C_P$, consider the response map
+\[
+F:(T,V)\longmapsto(\lambda_P(T,V),\lambda_V(T,V)).
+\]
+Its first component is
+\[
+\lambda_P(T,V)=-\frac{T}{C_P}
+\left(S_0+C_V\log\frac{T}{T_0}+R\log\frac{V}{V_0}\right).
+\]
+Thus $\partial_T\lambda_P$ is generically nonzero.  The $(1,1)$ entry of $DF$ is therefore nonzero, whereas every skew $2\times2$ matrix has zero diagonal.  Hence even this regular constitutive response map does not have an automatically skew Jacobian.
+\end{proof}
+
+A skew response sector can still be defined after additional data are supplied, for example an inner product and an involutive cut.  That is done rigorously in Section~\ref{sec:cut-flow-capstone}; it is a decomposition of an operator, not a consequence of Maxwell relations alone.
+
+\section{Recognition Kernel theorem}
+\label{sec:recognition-kernel}
+
+\subsection{Recognition datum and audit order}
+
+\begin{definition}[Recognition datum]
+A domain recognition datum is an interface contract
+\[
+\mathfrak R_d=(S_d,R_d,E_d,\tau_d,K_d;\Pi_d,L_d),
+\]
+where $S_d$ is the declared state space, $R_d$ is the observation or recognition map, $E_d$ is a lawful transition family indexed by $\tau_d$, $\Pi_d$ is the target, $L_d$ is prior lawful memory, and $K_d$ evaluates the unresolved residue or blind kernel.  The audit order is
+\[
+\text{state}\to\text{target}\to\text{lawful transition}
+\to\text{recognition}\to\text{open residue}
+\to\text{classification}.
+\]
+The tuple is not itself a theorem.  It prevents an observation, target, transition, or ledger from being changed after the residue is seen.  The theorem below is the bounded linear Hilbert-space realization of this contract, matching the public Recognition Kernel Framework reviewer archive \cite{DabasRKF}.
+\end{definition}
+
+\subsection{Blind quotient and canonical completion}
+
+Let $\cH,Y,Z$ be Hilbert spaces, let $\cA:\cH\to Y$ be a bounded observation map, and let $\Pi:\cH\to Z$ be a bounded target map.
+
+\begin{definition}[Recognition kernel and target-relevant blind quotient]
+Set
+\[
+N:=\Ker\cA,
+\qquad
+N_0:=\Ker\cA\cap\Ker\Pi,
+\qquad
+\cB(\cA;\Pi):=N/N_0.
+\]
+The subspace $N$ is the recognition kernel of the observation.  The quotient $\cB(\cA;\Pi)$ contains exactly those blind directions that remain relevant to the target.
+\end{definition}
+
+Because $\cA$ and $\Pi$ are bounded, $N$ and $N_0$ are closed.  Let $P_N$ denote the orthogonal projection onto $N$ and let $q_\Pi:N\to N/N_0$ be the Hilbert quotient map.
+
+\begin{theorem}[Canonical target-faithful completion]
+The augmented observation
+\begin{equation}
+\cA_\Pi^\sharp x
+:=\bigl(\cA x,q_\Pi P_Nx\bigr)
+\label{eq:canonical-completion}
+\end{equation}
+from $\cH$ to $Y\oplus\cB(\cA;\Pi)$ satisfies
+\begin{equation}
+\Ker\cA_\Pi^\sharp
+=\Ker\cA\cap\Ker\Pi.
+\label{eq:completion-kernel}
+\end{equation}
+Thus, relative to the declared Hilbert structure, the completion removes every target-relevant blind direction and no target-irrelevant blind direction.
+\end{theorem}
+
+\begin{proof}
+If $\cA_\Pi^\sharp x=0$, then $\cA x=0$, so $x\in N$ and $P_Nx=x$.  The second component gives $q_\Pi x=0$, hence $x\in N_0$.  Conversely, if $x\in N_0$, then both components in \eqref{eq:canonical-completion} vanish.
+\end{proof}
+
+\begin{theorem}[Minimum repair rank in finite dimension]
+Assume $\cH$ and $Z$ are finite dimensional over the common ground field.  Let $G:\cH\to W$ be any supplemental observation such that
+\[
+\Ker(\cA,G)\subseteq\Ker\Pi.
+\]
+Then
+\begin{equation}
+\dim W\ge\dim\cB(\cA;\Pi).
+\label{eq:min-repair-rank}
+\end{equation}
+The canonical quotient observation $q_\Pi P_N$ attains equality.
+\end{theorem}
+
+\begin{proof}
+Restrict $G$ to $N$.  If $x\in N$ and $Gx=0$, then $x\in\Ker(\cA,G)\subseteq\Ker\Pi$, so
+\[
+\Ker(G|_N)\subseteq N_0.
+\]
+Rank--nullity therefore gives
+\[
+\rank(G|_N)
+=\dim N-\dim\Ker(G|_N)
+\ge \dim N-\dim N_0
+=\dim(N/N_0).
+\]
+Since $\rank(G|_N)\le\dim W$, inequality \eqref{eq:min-repair-rank} follows.  The canonical quotient observation $q_\Pi P_N$ has codomain $N/N_0$ and kernel $N_0$ on $N$, so it attains equality.
+\end{proof}
+
+\subsection{Decoder burden}
+
+Let $L:\cH\to\C$ be a bounded target functional.  Define
+\begin{equation}
+\beta_{\cA}(L)
+:=\sup_{\cA x\ne0}
+\frac{|Lx|^2}{\norm{\cA x}^2},
+\label{eq:decoder-burden}
+\end{equation}
+with $\beta_{\cA}(L)=+\infty$ if $L$ does not vanish on $\Ker\cA$.
+
+\begin{theorem}[Minimum decoder and sharp burden]
+The following are equivalent:
+\begin{enumerate}[label=(\roman*)]
+\item $\beta_{\cA}(L)<\infty$;
+\item there exists a bounded functional $d$ on $\overline{\Ran\cA}$ such that $L=d\circ\cA$;
+\item there exists a unique vector $c_L\in\overline{\Ran\cA}$ such that
+\begin{equation}
+Lx=\ip{\cA x}{c_L}
+\quad\text{for every }x\in\cH.
+\label{eq:min-decoder}
+\end{equation}
+\end{enumerate}
+For this vector,
+\begin{equation}
+\beta_{\cA}(L)=\norm{c_L}^2.
+\label{eq:burden-norm}
+\end{equation}
+Moreover,
+\begin{equation}
+\cA^*\cA-L^*L\ge0
+\quad\Longleftrightarrow\quad
+\beta_{\cA}(L)\le1.
+\label{eq:reserve-equivalence}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Assume $\beta_{\cA}(L)<\infty$.  Define $d_0(\cA x)=Lx$ on $\Ran\cA$.  The definition is well posed because $L$ vanishes on $\Ker\cA$, and \eqref{eq:decoder-burden} gives
+\[
+|d_0(y)|\le\sqrt{\beta_{\cA}(L)}\norm{y}.
+\]
+Thus $d_0$ extends uniquely to $\overline{\Ran\cA}$.  The Riesz representation theorem gives a unique $c_L$ in that closed subspace satisfying \eqref{eq:min-decoder}.  The norm of the functional is $\norm{c_L}$, which proves \eqref{eq:burden-norm}.  The converse follows immediately from Cauchy--Schwarz.
+
+Finally,
+\[
+\ip{(\cA^*\cA-L^*L)x}{x}
+=\norm{\cA x}^2-|Lx|^2.
+\]
+This is nonnegative for all $x$ exactly when the ratio in \eqref{eq:decoder-burden} is at most one.
+\end{proof}
+
+\begin{remark}[Recognition is target-relative]
+An observation map need not be injective to be sufficient.  It is sufficient for $\Pi$ exactly when its blind kernel lies inside $\Ker\Pi$.  Demanding full injectivity when only a particular target matters can require unnecessary measurements; ignoring the target-relevant quotient can lose the theorem one intended to test.
+\end{remark}
+
+\section{Thermodynamic specialization of the Recognition Kernel}
+
+Let
+\[
+\Lambda
+=(\lambda_P,\lambda_V,\lambda_S,z_T,z_S,\lambda_T)
+\]
+be the response section.  Because the entries have different units, regard $\Lambda$ as a section of a direct sum of six one-dimensional unit bundles, or nondimensionalize each component against declared reference scales.
+
+For an integer $N\ge0$, let
+\[
+J_x^N(E_\Lambda)
+=\bigoplus_{n=0}^N\Sym^nT_x^*\cM\otimes E_{\Lambda,x}
+\]
+be the finite response-jet fibre at a state $x$, and let $j^N\Lambda(x)\in J_x^N(E_\Lambda)$ be the actual jet.  A linearized measurement protocol is a bounded map
+\[
+\cA_x:J_x^N(E_\Lambda)\longrightarrow Y,
+\qquad
+j^N\Lambda(x)\longmapsto y_x,
+\]
+while a desired constitutive or geometric quantity is represented by a bounded target map $\Pi_x:J_x^N(E_\Lambda)\to Z$.
+
+\begin{corollary}[Minimum thermodynamic probe theorem]
+At a fixed state and finite jet order, the minimum number of independent scalar supplemental probes required to make a finite-dimensional measurement protocol target-faithful is
+\[
+\dim\frac{\Ker\cA_x}
+{\Ker\cA_x\cap\Ker\Pi_x}.
+\]
+\end{corollary}
+
+This statement applies to any declared target: a heat-capacity ratio, a compressibility ratio, a derivative coefficient, a curvature component, or a cycle functional.  It does not assert that the same probes repair all targets simultaneously.

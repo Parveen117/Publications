@@ -21,10 +21,10 @@ Theorem N (microscopic characterisation).
     (ii) C_W is symmetric for every pair of observables;
     (iii) the antisymmetric part of the weighted response vanishes identically.
   ((ii) => (i) follows by taking indicator observables.)
-  So the Onsager-reciprocal sector is exactly the time-reversal-invariant-weight
-  sector, with no analytic hypotheses: this is finite bookkeeping.
+  Thus full microscopic correlation symmetry characterizes time-reversal
+  invariant weights. Coarse response symmetry needs a separate faithful observer.
 
-Theorem O (curvature is a sufficient, not a necessary, witness).
+Theorem O (nonzero curvature witnesses microscopic asymmetry).
   Let K be a linear coarse-graining from microscopic observable pairs to the
   chart, and let Omega be the image of the antisymmetric part.
     (a) chi == 1  ==>  Omega = 0. Always.
@@ -41,8 +41,9 @@ Theorem O (curvature is a sufficient, not a necessary, witness).
       one-cycle loop area != 0     =>  nothing about Omega
 
 Consequence for the paper. The definition of information invariance acquires a
-microscopic reading -- stationarity of the loop functional is time-reversal
-invariance of the statistical weight -- and the experimental logic is sharpened:
+microscopic sufficient condition -- time-reversal invariance of the weight
+implies stationarity of the coarse loop functional; the converse needs a
+faithful observer -- and the experimental logic is sharpened:
 the predeclared cycle-2 test is necessary because neither a single loop area nor
 a null result carries the inference by itself.
 
@@ -112,9 +113,9 @@ def theorem_N(rng, trials=40):
             diff = C_W(W2, theta, f, g) - C_W(W2, theta, g, f)
             if diff == 0: ch["symmetric_for_all_implies_chi_one"] = False
             if diff != W2[G0] - W2[theta[G0]]: ch["control_asymmetric_weight_breaks_symmetry"] = False
-    return {"status": "PROVED" if all(ch.values()) else "FAILED", "checks": ch,
-            "reading": ("delta I = 0 (equivalently Omega = 0, Theorem A) is exactly the statement that the "
-                        "statistical weight is invariant under time reversal.")}
+    return {"status": "PASS_FINITE_CHECKS" if all(ch.values()) else "FAILED", "checks": ch,
+            "reading": ("Full microscopic correlation symmetry for every observable pair is equivalent to chi = 1. "
+                        "It implies coarse Omega = 0; the reverse requires a faithful observation.")}
 
 
 def theorem_O():
@@ -140,7 +141,7 @@ def theorem_O():
         "coarse_grained_curvature_vanishes": Omega_image == 0,
         "sufficiency_direction_holds": suff,
     }
-    return {"status": "PROVED" if all(checks.values()) else "FAILED", "checks": checks,
+    return {"status": "PASS_FINITE_CHECKS" if all(checks.values()) else "FAILED", "checks": checks,
             "example": {"theta": theta, "W": [str(w) for w in W], "chi": [str(x) for x in X],
                         "asym_orbit1": str(asym_orbit1), "asym_orbit2": str(asym_orbit2),
                         "coarse_image": str(Omega_image)},
@@ -153,7 +154,7 @@ def build():
     rng = random.Random(20260819_3)
     N, O = theorem_N(rng), theorem_O()
     body = {
-        "protocol": "INFORMATION_INVARIANCE_MICRO_V1",
+        "protocol": "INFORMATION_INVARIANCE_MICRO_V2",
         "theorem_N_microscopic_characterisation": N,
         "theorem_O_curvature_is_sufficient_not_necessary": O,
         "chain": ("delta I = 0  <=>  Omega = 0 (Theorem A)  <=  chi == 1 (Theorems N, O); "
@@ -163,11 +164,11 @@ def build():
             "Omega_zero": "implies nothing about chi",
             "single_cycle_loop_area_nonzero": "implies nothing about Omega (Theorem B)",
         },
-        "consequence": ("Information invariance has a microscopic reading: stationarity of the loop "
-                        "functional is time-reversal invariance of the statistical weight. And the "
-                        "predeclared cycle-2 test is not optional: neither a single loop area nor a null "
-                        "curvature result carries an inference by itself."),
-        "claim_boundary": ("Finite phase space, exact rational weights, linear coarse-graining. The "
+        "consequence": ("Time-reversal-invariant weights imply information invariance on the declared chart. "
+                        "Coarse information invariance alone does not characterize those weights; "
+                        "the reverse requires ker(K) intersect admissible antisymmetric responses = {0}."),
+        "claim_boundary": ("Finite regression checks only; the general indicator-observable proof is in Theorem N. "
+                           "Finite phase space, positive exact rational weights, linear coarse-graining. The "
                            "continuum Green-Kubo statement of the companion work is cited, not re-derived."),
     }
     body["certificate_sha256"] = sha(body)

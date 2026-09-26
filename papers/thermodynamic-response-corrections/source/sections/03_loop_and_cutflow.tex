@@ -1,0 +1,371 @@
+\section{Loop recognition, lawful ledgers, and curvature}
+
+\subsection{Local ledger theorem}
+
+Let $D$ be an oriented smooth domain, let $V_0$ be a finite-dimensional vector space, and let $\omega,\ell\in\Omega^1(D;V_0)$.  The form $\omega$ is the measured response and $\ell$ is a prior lawful local ledger.  Define the open loop residue
+\begin{equation}
+G_{\omega,\ell}(\gamma)
+:=\oint_\gamma(\omega-\ell).
+\label{eq:open-loop-residue}
+\end{equation}
+
+\begin{definition}[Loop Recognition Kernel]
+The loop Recognition Kernel is
+\[
+\cK_{\omega,\ell}
+:=\{\gamma\text{ closed}:G_{\omega,\ell}(\gamma)=0\}.
+\]
+\end{definition}
+
+\begin{theorem}[Recognition--Stokes theorem]
+If $A\subset D$ is an oriented piecewise smooth two-chain, then
+\begin{equation}
+G_{\omega,\ell}(\partial A)
+=\int_A\dd(\omega-\ell).
+\label{eq:recognition-stokes}
+\end{equation}
+If $D$ is simply connected, the following are equivalent:
+\begin{enumerate}[label=(\roman*)]
+\item every closed loop belongs to $\cK_{\omega,\ell}$;
+\item $\dd(\omega-\ell)=0$;
+\item there exists a $V_0$-valued potential $\Phi$ with $\omega-\ell=\dd\Phi$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Equation \eqref{eq:recognition-stokes} is Stokes' theorem.  The implication (iii)$\Rightarrow$(i) is the fundamental theorem for line integrals, and (i)$\Rightarrow$(ii) follows by applying \eqref{eq:recognition-stokes} to arbitrarily small coordinate rectangles.  For (ii)$\Rightarrow$(iii), fix a base point and define $\Phi(x)$ by integrating $\omega-\ell$ along a path from the base point to $x$.  Closedness and simple connectivity make the integral path independent, and differentiation gives $\dd\Phi=\omega-\ell$.
+\end{proof}
+
+\begin{remark}[History-dependent memory]
+A genuinely history-dependent ledger need not be representable by a one-form on the equilibrium state manifold.  In that case the state must be enlarged by internal or memory variables.  Stokes' theorem is then applied on the enlarged state space.  Subtracting a path-dependent term after observing the loop, without declaring it as prior state data, is not a lawful closure argument.
+\end{remark}
+
+\subsection{Return classes}
+
+The residue accounting leads to four mutually distinguishable classes:
+\begin{enumerate}[label=\textbf{Class \Roman*:}]
+\item exact raw return, $\oint\omega=0$;
+\item lawfully transported return, $\oint\omega=\oint\ell$;
+\item memory-bearing return on an enlarged state space, with the memory component nonzero but fully ledgered;
+\item open obstruction, where $G_{\omega,\ell}$ exceeds the declared uncertainty or tolerance.
+\end{enumerate}
+
+These are classifications, not aliases.  A nonzero geometric loop integral is not automatically irreversible.
+
+\subsection{Onsager covariance and calibration}
+
+Let $X,J\in\R^m$ be thermodynamic forces and conjugate fluxes, with entropy-production rate in the linear irreversible-thermodynamic convention \cite{Onsager1,Onsager2,Casimir}
+\[
+\sigma=J^{\mathsf T}X,
+\qquad
+J=LX.
+\]
+
+\begin{theorem}[Covariance of reciprocal linear response]
+Let $B$ be invertible and transform the dual variables by
+\[
+J'=BJ,
+\qquad
+X'=B^{-\mathsf T}X.
+\]
+Then
+\[
+\sigma=J'^{\mathsf T}X',
+\qquad
+L'=BLB^{\mathsf T}.
+\]
+If $L=L^{\mathsf T}\ge0$, then $L'=L'^{\mathsf T}\ge0$.
+\end{theorem}
+
+\begin{proof}
+The pairing is invariant because
+\[
+J'^{\mathsf T}X'=J^{\mathsf T}B^{\mathsf T}B^{-\mathsf T}X=J^{\mathsf T}X.
+\]
+Since $X=B^{\mathsf T}X'$, one has
+\[
+J'=BLB^{\mathsf T}X'.
+\]
+Symmetry and positive semidefiniteness are preserved by congruence.
+\end{proof}
+
+\begin{corollary}[Frame asymmetry is not automatically nonreciprocity]
+A coefficient matrix that becomes asymmetric after a non-dual rescaling of forces or fluxes does not constitute an invariant violation of Onsager reciprocity.  A physical nonreciprocity claim must be made in a conjugate flux--force frame and must include the relevant Onsager--Casimir parity assumptions.
+\end{corollary}
+
+\begin{principle}[Curvature before entropy production]
+The equality
+\[
+\int_A\dd(\omega-\ell)=\int_A q_\sigma\,\dd A
+\]
+is not a geometric identity unless the constitutive density $q_\sigma$ and its units, sign, time orientation, and calibration are independently supplied.  Geometry determines the left-hand residue; thermodynamics determines whether and how it represents dissipation.
+\end{principle}
+
+\section{Finite Cut--Flow--Jet Recognition theorem}
+\label{sec:cut-flow-capstone}
+
+\subsection{Finite graded carrier and jet raiser}
+
+Let
+\[
+\cJ_N=\bigoplus_{n=0}^N H_n
+\]
+be a finite-dimensional graded Hilbert space, with inclusions $\iota_n:H_n\to\cJ_N$ and projections $\pi_n$.  A raising operator $\mathbb R$ satisfies
+\[
+\mathbb R(H_n)\subseteq H_{n+1},
+\qquad
+\mathbb R(H_N)=0.
+\]
+Hence $\mathbb R^{N+1}=0$.
+
+For a response bundle with connection $\nabla$, the holonomic jet realization is obtained when
+\begin{equation}
+\mathbb R^n\iota_0\Lambda
+=\iota_n\Sym\nabla^n\Lambda,
+\qquad 0\le n\le N.
+\label{eq:holonomic-raiser}
+\end{equation}
+This condition is part of the datum; a level shift by the identity alone certifies only combinatorial tower coefficients, not covariant derivatives.
+
+Let $\mathbb T$ preserve the grading and set
+\[
+\mathbb G=\mathbb T+\mathbb R.
+\]
+
+\begin{theorem}[Finite flow-generated jet tower]
+If $[\mathbb T,\mathbb R]=0$, then
+\begin{equation}
+\e^{t\mathbb G}=\e^{t\mathbb T}\e^{t\mathbb R}
+\label{eq:flow-factorization}
+\end{equation}
+and, for a holonomic seed,
+\begin{equation}
+\pi_n\e^{t\mathbb G}\iota_0\Lambda
+=\frac{t^n}{n!}\,
+\pi_n\e^{t\mathbb T}\iota_n\Sym\nabla^n\Lambda.
+\label{eq:jet-flow-formula}
+\end{equation}
+If the commutator is nonzero, then the first factorization defect is
+\begin{equation}
+\e^{t\mathbb T}\e^{t\mathbb R}
+=\exp\left(
+ t(\mathbb T+\mathbb R)
+ +\frac{t^2}{2}[\mathbb T,\mathbb R]
+ +O(t^3)
+\right).
+\label{eq:jet-bch}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Because $\mathbb R^{N+1}=0$,
+\[
+\e^{t\mathbb R}=\sum_{k=0}^N\frac{t^k}{k!}\mathbb R^k.
+\]
+Commutation gives \eqref{eq:flow-factorization}; projection to layer $n$ and \eqref{eq:holonomic-raiser} give \eqref{eq:jet-flow-formula}.  Equation \eqref{eq:jet-bch} is the Baker--Campbell--Hausdorff expansion, valid near $t=0$ for finite matrices.
+\end{proof}
+
+\subsection{Self-adjoint cut and unique grading}
+
+Let $\mathsf J$ be a self-adjoint unitary involution,
+\begin{equation}
+\mathsf J^*=\mathsf J=\mathsf J^{-1}.
+\label{eq:selfadjoint-cut}
+\end{equation}
+
+\begin{theorem}[Unique cut grading]
+Every operator $A$ on $\cJ_N$ decomposes uniquely as
+\[
+A=A_{\mathrm e}+A_{\mathrm o},
+\qquad
+A_{\mathrm e}=\frac12(A+\mathsf J A\mathsf J),
+\qquad
+A_{\mathrm o}=\frac12(A-\mathsf J A\mathsf J),
+\]
+with
+\[
+\mathsf J A_{\mathrm e}\mathsf J=A_{\mathrm e},
+\qquad
+\mathsf J A_{\mathrm o}\mathsf J=-A_{\mathrm o}.
+\]
+\end{theorem}
+
+\begin{proof}
+Direct substitution proves the parity relations and $A=A_{\mathrm e}+A_{\mathrm o}$.  If $A=B_{\mathrm e}+B_{\mathrm o}$ is another such decomposition, applying the two parity projectors gives $B_{\mathrm e}=A_{\mathrm e}$ and $B_{\mathrm o}=A_{\mathrm o}$.
+\end{proof}
+
+\subsection{Cut loop and commutator curvature}
+
+Set $U_t=\e^{t\mathbb G}$ and define
+\[
+\mathscr H_{\mathsf J}(t)
+:=\mathsf J U_t\mathsf J U_t.
+\]
+
+\begin{theorem}[Cut-loop expansion]
+For sufficiently small $t$, the principal logarithm is defined and
+\begin{equation}
+\log\mathscr H_{\mathsf J}(t)
+=2t\mathbb G_{\mathrm e}
++t^2[\mathbb G_{\mathrm e},\mathbb G_{\mathrm o}]
++O(t^3).
+\label{eq:cut-loop-expansion}
+\end{equation}
+Thus the cut-even generator is the first seam-preserving term, while
+\[
+\cR_{\mathrm{seam}}
+:=[\mathbb G_{\mathrm e},\mathbb G_{\mathrm o}]
+\]
+is the first noncommutative cut-loop curvature coefficient.
+\end{theorem}
+
+\begin{proof}
+Since
+\[
+\mathsf J\mathbb G\mathsf J
+=\mathbb G_{\mathrm e}-\mathbb G_{\mathrm o},
+\]
+one has
+\[
+\mathscr H_{\mathsf J}(t)
+=\e^{t(\mathbb G_{\mathrm e}-\mathbb G_{\mathrm o})}
+ \e^{t(\mathbb G_{\mathrm e}+\mathbb G_{\mathrm o})}.
+\]
+The BCH formula, with the remainder taken in operator norm, gives the sum $2t\mathbb G_{\mathrm e}$ and one half of the commutator
+\[
+\frac12 t^2
+[\mathbb G_{\mathrm e}-\mathbb G_{\mathrm o},
+ \mathbb G_{\mathrm e}+\mathbb G_{\mathrm o}]
+=t^2[\mathbb G_{\mathrm e},\mathbb G_{\mathrm o}],
+\]
+which proves \eqref{eq:cut-loop-expansion}.
+\end{proof}
+
+\begin{corollary}[Bilateral reconstruction for a cut-odd generator]
+If $\mathsf J\mathbb G\mathsf J=-\mathbb G$, then
+\[
+\mathsf J U_t\mathsf J=U_{-t}.
+\]
+With
+\[
+E_t=\frac12(U_t+U_{-t}),
+\qquad
+O_t=\frac12(U_t-U_{-t}),
+\]
+one has
+\[
+U_t=E_t+O_t,
+\qquad
+U_{-t}=E_t-O_t,
+\qquad
+E_t^2-O_t^2=\id.
+\]
+\end{corollary}
+
+\begin{proof}
+Conjugation of the exponential gives the first identity.  The reconstruction formulas are definitions, and
+\[
+E_t^2-O_t^2
+=\frac14\bigl[(U_t+U_{-t})^2-(U_t-U_{-t})^2\bigr]
+=\frac12(U_tU_{-t}+U_{-t}U_t)=\id.
+\]
+\end{proof}
+
+\subsection{Cut and adjoint bi-grading}
+
+\begin{theorem}[Cut--adjoint bi-grading]
+For $\sigma,\tau\in\{+1,-1\}$, define
+\begin{equation}
+A^{\sigma,\tau}
+:=\frac14\left(
+A+\sigma\mathsf J A\mathsf J
++\tau A^*
++\sigma\tau\mathsf J A^*\mathsf J
+\right).
+\label{eq:bigrading}
+\end{equation}
+Then
+\[
+A=\sum_{\sigma,\tau}A^{\sigma,\tau},
+\qquad
+\mathsf J A^{\sigma,\tau}\mathsf J=\sigma A^{\sigma,\tau},
+\qquad
+(A^{\sigma,\tau})^*=\tau A^{\sigma,\tau}.
+\]
+The four sectors are pairwise orthogonal in the real Hilbert--Schmidt inner product
+\[
+(A,B)_{\mathrm{HS},\R}:=\operatorname{Re}\tr(A^*B).
+\]
+\end{theorem}
+
+\begin{proof}
+Viewed on the underlying real vector space of operators with inner product $(\cdot,\cdot)_{\mathrm{HS},\R}$, cut conjugation and adjoint are commuting self-adjoint involutions.  Formula \eqref{eq:bigrading} is the product of their real spectral projectors.  The stated parity properties and real orthogonality follow.  The real qualification is essential: self-adjoint and skew-adjoint operators need not be orthogonal for the complex-valued Hilbert--Schmidt pairing.
+\end{proof}
+
+\begin{remark}[Required cut hypothesis]
+The self-adjointness in \eqref{eq:selfadjoint-cut} is essential.  An arbitrary algebraic involution $\mathsf J^2=\id$ need not commute with the adjoint operation, and then \eqref{eq:bigrading} need not have the claimed adjoint parity.
+\end{remark}
+
+\subsection{Closure and the clock-free Eye}
+
+Let $K=K^*$ and $U_t=\e^{-itK}$.  A single sampling time can contain stroboscopic fixed modes with $\e^{-it_0\lambda}=1$ even when $\lambda\ne0$.  The all-time average removes this ambiguity; this is the continuous mean-ergodic projection in spectral form \cite{ReedSimon}.
+
+\begin{theorem}[Clock-free Eye]
+The strong limit
+\begin{equation}
+P_{\Eye}
+=\operatorname*{s-lim}_{T\to\infty}
+\frac1T\int_0^T\e^{-itK}\,\dd t
+=E_K(\{0\})
+\label{eq:eye}
+\end{equation}
+exists and is the spectral projection onto $\Ker K$.
+\end{theorem}
+
+\begin{proof}
+For $x\in\cH$, the spectral theorem gives
+\[
+\frac1T\int_0^T\e^{-itK}x\,\dd t
+=\int_\R
+\left(\frac1T\int_0^T\e^{-it\lambda}\,\dd t\right)
+\dd E_K(\lambda)x.
+\]
+The scalar factor tends to $1$ at $\lambda=0$ and to $0$ otherwise, while its modulus is at most one.  Dominated convergence for the spectral measure gives the strong limit $E_K(\{0\})x$.
+\end{proof}
+
+\subsection{Representation invariance}
+
+\begin{proposition}[Unitary invariance]
+Let $W=\bigoplus_{n=0}^N W_n:\cJ_N\to\cJ_N'$ be a grade-preserving unitary.  Transport the inclusions, projections, seed, and operators by
+\[
+\iota_n'=W\iota_nW_n^*,\quad
+\pi_n'=W_n\pi_nW^*,\quad
+\Lambda'=W_0\Lambda,
+\]
+\[
+\mathbb R'=W\mathbb RW^*,\quad
+\mathbb T'=W\mathbb TW^*,\quad
+\mathsf J'=W\mathsf JW^*,\quad
+K'=WKW^*,
+\]
+and transport observations and scalar targets by
+\[
+\cA'=\cA W^*,\qquad
+\Pi'=\Pi W^*,\qquad
+L'=LW^*.
+\]
+Then cut grading, finite jet coefficients, cut-loop curvature, the Eye projection, blind-quotient dimension, and scalar decoder burden are preserved.
+\end{proposition}
+
+\begin{proof}
+All operator identities are preserved by unitary conjugation.  Grade preservation gives
+\[
+\pi_n'\e^{t\mathbb G'}\iota_0'\Lambda'
+=W_n\pi_n\e^{t\mathbb G}\iota_0\Lambda.
+\]
+Kernels are carried bijectively by $W$ and quotient dimensions are unchanged.  Spectral projections obey
+\[
+E_{K'}(\{0\})=WE_K(\{0\})W^*.
+\]
+The numerator and denominator in \eqref{eq:decoder-burden} are unchanged after the substitution $x'=Wx$.
+\end{proof}
