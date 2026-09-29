@@ -1,0 +1,87 @@
+# Important results: locations and preservation status
+
+Audit scope: the physics results discussed through this development thread, checked against Publications PR #5 head `3570175bef61df22c1c81beb67ff6befcb04b919` and PR #4 head `c1a35e0f509cd137d20f9504543f97b5ec7479fc` on 29 September 2026. This is not an assertion that every result in every prior conversation or repository has been copied here.
+
+Both PRs were open and unmerged at the audit. “In Publications” therefore does not mean “on main.” The current research branch is `research/uncut-cut-measurement-2026-09-25`.
+
+## What physics has been derived from the thermo construction?
+
+The starting data are a smooth, stable simple-compressible fundamental relation U(S,V), with T=U_S and P=-U_V. The compass organizes its regular Legendre charts; the first law and the equation of state are inputs to this construction. “Derived” below means a written deduction under the stated hypotheses, not a claim of experimental discovery or that the diagram alone selects a material.
+
+| Result | What the manuscript establishes | Hypotheses and status |
+|---|---|---|
+| Four Maxwell relations | Equality of mixed derivatives in the U, H, F and G potential charts; equivalently, the equilibrium contact two-form pulls back to zero. | **Derived** in [foundations](../thermodynamic-response-corrections/source/sections/01_foundations.tex), for smooth regular equilibrium charts. |
+| Thermal/mechanical response closure | C_P/C_V = K_S/K_T = kappa_T/kappa_S and Gamma_c Gamma_m = 1. | **Derived** from the same fundamental relation; K denotes bulk modulus and kappa its reciprocal compressibility. |
+| Six constrained response coordinates | The exact lambda_P, lambda_V, lambda_S, z_T, z_S and lambda_T formulas, with temperature, pressure and volume units kept explicit. | **Derived**; [response summary](../thermodynamic-response-corrections/source/sections/01a_response_summary.tex). |
+| Jacobian brackets and higher response tower | Bracket algebra; finite holonomic jets with factorial coefficients; an analytic infinite-jet extension. | **Proved under the declared connection, holonomicity and transport-commutation assumptions**; the infinite extension additionally needs a closed derivative and analytic seed. [Finite capstone](../thermodynamic-response-corrections/source/sections/04_capstone_and_examples.tex), [extension](../thermodynamic-response-corrections/source/sections/05b_extended_capstone.tex). |
+| Missing-measurement theorem | Target-relevant blind quotient and the minimum number of additional independent scalar probes at finite jet order. | **Derived for a supplied observation and target map**; [recognition theorem](../thermodynamic-response-corrections/source/sections/02_recognition.tex). |
+| Loop residue and curvature | Recognition–Stokes equates a loop residue, after its prior ledger is specified, with an area integral. | **Derived**; interpreting it as measured entropy production needs physical calibration. [Loop theorem](../thermodynamic-response-corrections/source/sections/03_loop_and_cutflow.tex). |
+| Onsager response covariance | The entropy-production pairing is invariant in dual force/flux frames; reciprocity and positivity, when present, are preserved. | **Covariance proved; physical reciprocity is not independently derived from the compass.** See below. |
+| Dissipative versus skew response | Only the symmetric part contributes to a real quadratic production rate; a declared positive calibration yields nonnegative production. | **Derived conditional response law**; [positive calibration theorem](../thermodynamic-response-corrections/source/sections/05_proved_extensions.tex). |
+| Response-plane iota, compatible transport and curvature | J_H squared equals -I; the declared Hessian metric has compatible transport and a curvature formula in third derivatives of U. | **Derived in the new [TC-1–TC-6 package](THEOREM.md)**; identifying this state-space geometry with physical time, quantum dynamics or gravity remains further work. |
+
+### Maxwell: all four, explicitly
+
+From dU=T dS-P dV and the regular Legendre transforms H=U+PV, F=U-TS and G=U+PV-TS,
+
+\[
+\left(\frac{\partial T}{\partial V}\right)_S
+=-\left(\frac{\partial P}{\partial S}\right)_V,
+\qquad
+\left(\frac{\partial T}{\partial P}\right)_S
+=\left(\frac{\partial V}{\partial S}\right)_P,
+\]
+\[
+\left(\frac{\partial S}{\partial V}\right)_T
+=\left(\frac{\partial P}{\partial T}\right)_V,
+\qquad
+\left(\frac{\partial S}{\partial P}\right)_T
+=-\left(\frac{\partial V}{\partial T}\right)_P.
+\]
+
+These are the standard thermodynamic Maxwell relations, reconstructed within the manuscript. They are not Maxwell's electromagnetic field equations.
+
+### Onsager: what is proved, and what remains
+
+For conjugate real forces X and fluxes j, declare j=LX and sigma=j^T X. Under an invertible dual-frame change j'=Bj, X'=B^{-T}X,
+
+\[
+L'=BLB^T,\qquad \sigma'=\sigma.
+\]
+
+Thus L=L^T positive semidefinite implies the same properties for L'. This is the manuscript's covariance theorem: its premise includes reciprocity. It does not supply a microscopic proof of that premise.
+
+Also write L=L_s+L_a, where L_s=(L+L^T)/2 and L_a=(L-L^T)/2. Since X^T L_a X=0,
+
+\[
+\sigma=X^T L_s X.
+\]
+
+For a supplied constitutive calibration C and skew A, the law L=C^T C+A therefore gives sigma=||CX||^2 >= 0. Neither positivity nor the compass removes A: for example, L=[[1,a],[-a,1]] has sigma=x^2+y^2 for every real a, but is reciprocal only at a=0. This is an algebraic counterexample to inferring reciprocity from positive production alone, not a microscopic material model.
+
+A physical Onsager or Onsager–Casimir theorem still needs a process model and the relevant time-reversal/parity assumptions. The present package does not yet derive those from native dynamics. It also does not yet derive Maxwell electromagnetism, a complete quantum/gravitational dynamics, or numerical alpha, hbar, c and G from the compass.
+
+## Earlier results and their locations
+
+| Result | Repository location | Preservation and scope |
+|---|---|---|
+| Corrected T–V–S–P compass, six responses, Jacobian tower and capstones | [Thermodynamic manuscript](../thermodynamic-response-corrections/README.md) | Already in PR #4; its exact subtree is also carried on this research branch, including the compiled PDF. The correction-control subtree is preserved with it. |
+| Native iota and factorial Euler flow | [RKF F00-E, immutable source](https://github.com/Parveen117/Recognition-Kernel-Framework/blob/86198d29cbf30390059079f38675c952e506ea9c/theorems/foundation/F00E_NATIVE_EULER_FROM_IOTA_COMPLEX.md) | Canonical theorem remains in Recognition-Kernel-Framework. The exact native scalar implementation consumed here is source-pinned and vendored with the helical witness. |
+| EMK metric, periodic gluing and helical sheet memory | [EMK geometry](../emk-recognition-geometry/README.md) | Already in Publications; local metric, global transport and retained sheet memory remain distinct. |
+| Native source response and conditional thermodynamic bridge | [Source response](../uncut-cut-measurement/SOURCE_RESPONSE_AND_GRAVITY_TESTS.md), [thermo bridge](../uncut-cut-measurement/THERMODYNAMIC_FOUNDATION_BRIDGE.md) | Already in PR #5; source law and physical calibrations retain their stated assumptions. |
+| Quantum–classical finite bridge v1.3 | [QB-1–QB-3](../uncut-cut-measurement/QUANTUM_CLASSICAL_BRIDGE.md) | Already in PR #5; coherent and phase-erased responses, with exact memory control. |
+| Gravity/phase translator v1.4 | [Translator](../uncut-cut-measurement/GRAVITY_PHASE_TRANSLATOR.md) | Already in PR #5; phase-reference requirement and projective ambiguity preserved. |
+| Pre-entropy return v1.5 | [Seam return](../uncut-cut-measurement/PRE_ENTROPY_SEAM_RETURN.md) | Already in PR #5; unitary memory and local/global distinction. |
+| Spin/vector geometry gate v1.6 | [Geometry gate](../uncut-cut-measurement/SPIN_HOLONOMY_GEOMETRY_GATE.md) | Already in PR #5; representation and loop-scale hypotheses remain explicit. |
+| Atom-interferometer audit v1.7 | [Audit](../uncut-cut-measurement/ATOM_INTERFEROMETER_AUDIT.md) | Already in PR #5; 0.530449 rad is the simplified external Newtonian reference, not a native empirical prediction. |
+| Quantum–EMK response-plane bridge v1.8 | [Local geometry](../uncut-cut-measurement/QUANTUM_EMK_LOCAL_GEOMETRY.md) | Already in PR #5; declared local metric adapter, scale and global-memory guard. |
+| Native helical source response NH-1–NH-4 | [Recovered proof](../uncut-cut-measurement/NATIVE_IOTA_HELICAL_RESPONSE.md) | Missing from PR #5 at audit; recovered now with code and pins. Sheet-local 2/3, sheet-summed 6/7, hidden contribution 4/21. |
+| Fine-structure coupling reduction R1 | [Downstream note](downstream/FINE_STRUCTURE_R1.md) | Previously delivered outside the repository; preserved now. Numerical alpha remains NOT DERIVED. |
+| Thermo response-plane iota from the previous discussion | [TC-1–TC-3](THEOREM.md) | Previously only in the conversation; now written, source-bound and executable. |
+| Thermo transport and cubic-response curvature | [TC-4–TC-6](THEOREM.md) | New in this repository development step; mathematical response metric and transport, without physical-clock/gravity identification. |
+
+## Verification boundaries
+
+The prior `papers/uncut-cut-measurement/CERTIFICATE.json`, its pin and its bound sources are retained unchanged. The new [certificate](CERTIFICATE.json) verifies the thermo package, the recovered helical controls and the conditional coupling controls. It does not silently extend the old master certificate's scope.
+
+The source-manifest rows establish where the bytes came from. Written proof status, finite computational PASS, proof-assistant status, independent review and experimental validation remain separate. Importing the corrected thermo source subtree does not merge PR #4, certify its entire manuscript afresh, or update the arXiv/Zenodo records.

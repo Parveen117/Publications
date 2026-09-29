@@ -1,0 +1,145 @@
+\subsection{Regulated quantum Recognition equations}
+\label{sec:quantum-recognition}
+
+A continuum quantum theory is not obtained by placing a hat on the classical fields. We first prove an exact finite-regulator theorem and then state the precise additional assumptions under which a continuum effective equation follows. The distinction between regulated identities and continuum gravitational quantization is standard in the canonical and gauge-fixed formulations \cite{DeWitt1967,FaddeevPopov1967}.
+
+Let $Q_N\cong\R^{d_N}$ be a gauge-fixed finite-dimensional regulator of metric, connection, and Recognition-field variables,
+\[
+q=(g_N,A_N,\Phi_N)\in Q_N.
+\]
+Let $S_N\in C^2(Q_N;\R)$ be a Euclidean regulated action satisfying
+\[
+S_N(q)\ge a\norm q^p-b
+\qquad(a>0,\ p>1),
+\]
+and assume that its first two derivatives have at most polynomial growth. For $\hbar>0$ and source $J\in Q_N^*$ define
+\begin{align}
+Z_N(J)
+&:=\int_{Q_N}
+\exp\left[-\frac{S_N(q)-J\cdot q}{\hbar}\right]\,\mathrm dq,
+\label{eq:regulated-partition}\\
+W_N(J)&:=\hbar\log Z_N(J),
+\qquad
+\bar q(J):=\nabla_JW_N(J).
+\label{eq:regulated-connected}
+\end{align}
+
+\begin{theorem}[Exact finite-regulator quantum field equation]
+\label{thm:finite-quantum-recognition}
+Under the stated hypotheses:
+\begin{enumerate}[label=(\roman*)]
+\item $Z_N(J)$ is finite for every finite source $J$;
+\item
+\[
+\nabla_JW_N(J)=\langle q\rangle_J,
+\qquad
+\nabla_J^2W_N(J)=\frac1\hbar\operatorname{Cov}_J(q);
+\]
+\item the exact Schwinger--Dyson equation is
+\begin{equation}
+\langle\nabla S_N(q)\rangle_J=J;
+\label{eq:finite-schwinger-dyson}
+\end{equation}
+\item wherever $J\mapsto\bar q(J)$ is locally invertible, the Legendre effective action
+\[
+\Gamma_N(\bar q):=J\cdot\bar q-W_N(J)
+\]
+satisfies
+\begin{equation}
+\nabla_{\bar q}\Gamma_N(\bar q)=J,
+\qquad
+\nabla_{\bar q}^2\Gamma_N
+=\hbar\operatorname{Cov}_J(q)^{-1}.
+\label{eq:finite-effective-equation}
+\end{equation}
+In particular, at zero source the exact regulated quantum field equation is
+\begin{equation}
+\nabla\Gamma_N(\bar q)=0.
+\label{eq:zero-source-quantum-equation}
+\end{equation}
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Coercivity with $p>1$ dominates the linear source term, so the integrand is integrable. Polynomial growth of the derivatives permits differentiation under the integral. Direct differentiation gives the expectation and covariance formulas. For every coordinate $q^i$, the boundary term in
+\[
+\int_{Q_N}\partial_i
+\exp\left[-\frac{S_N(q)-J\cdot q}{\hbar}\right]\mathrm dq
+\]
+vanishes by coercive decay. Expanding the derivative gives
+$\langle\partial_iS_N\rangle_J=J_i$, proving \eqref{eq:finite-schwinger-dyson}. Standard differentiation of the Legendre transform gives
+$\nabla_{\bar q}\Gamma_N=J$. Since
+$\partial\bar q/\partial J=\operatorname{Cov}_J(q)/\hbar$, inversion gives the Hessian formula. Setting $J=0$ gives \eqref{eq:zero-source-quantum-equation}.
+\end{proof}
+
+\begin{corollary}[Regulated quantum gravity and gauge equations]
+If the regulator coordinates split as $q=(g_N,A_N,\Phi_N)$, then \eqref{eq:zero-source-quantum-equation} is the exact system
+\[
+\frac{\partial\Gamma_N}{\partial g_N}=0,
+\qquad
+\frac{\partial\Gamma_N}{\partial A_N}=0,
+\qquad
+\frac{\partial\Gamma_N}{\partial\Phi_N}=0.
+\]
+Thus every finite gauge-fixed coercive Recognition regulator has genuine quantum-corrected metric, gauge, and matter equations. This statement does not assert regulator independence or a continuum limit.
+\end{corollary}
+
+\subsection{Continuum effective Recognition gravity}
+
+Assume now that a differentiable renormalized one-particle-irreducible effective action
+\[
+\Gamma[g,A,\Phi]
+=S_{\mathrm{ARK}}[g,A,\Phi]+\Gamma_{\mathrm q}[g,A,\Phi]
+\]
+has been constructed on an admissible continuum field space. Assume that it is invariant under the declared gauge group and diffeomorphisms and that the corresponding Ward identities are anomaly-free. Define the quantum correction tensors
+\begin{align}
+T^{\mathrm q}_{\mu\nu}
+&:=-\frac{2}{\sqrt{|g|}}
+\frac{\delta\Gamma_{\mathrm q}}{\delta g^{\mu\nu}},
+\label{eq:quantum-stress}\\
+J_{\mathrm q}^{\nu}
+&:=-\frac{1}{\sqrt{|g|}}
+\frac{\delta\Gamma_{\mathrm q}}{\delta A_\nu},
+\label{eq:quantum-current}\\
+Q_{\Phi}
+&:=-\frac{1}{\sqrt{|g|}}
+\frac{\delta\Gamma_{\mathrm q}}{\delta\Phi}.
+\label{eq:quantum-field-source}
+\end{align}
+
+\begin{theorem}[Quantum-effective Recognition gravity equation]
+\label{thm:quantum-effective-recognition}
+Every stationary point of the anomaly-free effective action satisfies
+\begin{align}
+G_{\mu\nu}+\Lambda_{\mathrm{cos}}g_{\mu\nu}
+&=\kappa\bigl(
+T^A_{\mu\nu}+T^\Phi_{\mu\nu}+T^{\mathrm q}_{\mu\nu}
+\bigr),
+\label{eq:quantum-recognition-einstein}\\
+D_{A\,\mu}F_A^{\mu\nu}
+&=g_{\RK}^2\bigl(J_\Phi^\nu+J_{\mathrm q}^\nu\bigr),
+\label{eq:quantum-recognition-gauge}\\
+D_A^\mu D_{A\,\mu}\Phi-\nabla V_{\RK}(\Phi)
+&=Q_\Phi.
+\label{eq:quantum-recognition-matter}
+\end{align}
+The Ward identities imply, on shell,
+\begin{align}
+D_{A\,\nu}(J_\Phi^\nu+J_{\mathrm q}^\nu)&=0,
+\label{eq:quantum-current-ward}\\
+\nabla^\mu(T^A_{\mu\nu}+T^\Phi_{\mu\nu}+T^{\mathrm q}_{\mu\nu})&=0.
+\label{eq:quantum-stress-ward}
+\end{align}
+\end{theorem}
+
+\begin{proof}
+Stationarity means that the three functional derivatives of $\Gamma$ vanish. The classical derivatives are those computed in Theorem~\ref{thm:classical-recognition-field-equations}; substituting \eqref{eq:quantum-stress}--\eqref{eq:quantum-field-source} gives \eqref{eq:quantum-recognition-einstein}--\eqref{eq:quantum-recognition-matter}. Gauge and diffeomorphism invariance of $\Gamma$ give the Ward identities. Their on-shell forms are \eqref{eq:quantum-current-ward}--\eqref{eq:quantum-stress-ward}.
+\end{proof}
+
+\begin{corollary}[Semiclassical Recognition gravity]
+If the metric is retained as a classical background while the Recognition gauge and matter sectors are integrated into $\Gamma_{\mathrm q}$, then \eqref{eq:quantum-recognition-einstein} is the semiclassical metric equation sourced by the renormalized quantum Recognition stress tensor.
+\end{corollary}
+
+\begin{remark}[Quantum claim boundary]
+The finite-regulator theorem is an actual finite-dimensional quantization result. The continuum theorem is a rigorous variational consequence of the stated existence, differentiability, invariance, and anomaly-free hypotheses on $\Gamma$. It does not by itself construct the continuum measure, prove renormalizability, remove the regulator, establish unitarity, or provide an ultraviolet completion of quantum gravity. Those are separate proof obligations rather than phrases to be stapled onto \eqref{eq:quantum-recognition-einstein}.
+\end{remark}

@@ -1,0 +1,34 @@
+name: Thermo compass foundations exact controls
+
+on:
+  push:
+    paths:
+      - 'papers/thermo-compass-foundations/**'
+      - 'papers/thermodynamic-response-corrections/**'
+      - 'papers/uncut-cut-measurement/**'
+      - 'papers/emk-recognition-geometry/certificates/**'
+      - '.github/workflows/thermo-compass-foundations.yml'
+  pull_request:
+    paths:
+      - 'papers/thermo-compass-foundations/**'
+      - 'papers/thermodynamic-response-corrections/**'
+      - 'papers/uncut-cut-measurement/**'
+      - 'papers/emk-recognition-geometry/certificates/**'
+      - '.github/workflows/thermo-compass-foundations.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  exact-controls:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Check thermo transport, recovered results and source pins
+        run: python papers/thermo-compass-foundations/verify.py --check

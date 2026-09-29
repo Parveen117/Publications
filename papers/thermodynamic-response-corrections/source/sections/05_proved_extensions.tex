@@ -1,0 +1,264 @@
+\section{Proved extensions beyond the finite capstone}
+\label{sec:proved-extensions}
+
+The finite capstone is not a terminal wall.  Several claims that were too strong in their original form admit precise strengthened versions once the missing geometric and analytic data are supplied.  This section proves three such extensions: a canonical skew four-channel response matrix, a positive curvature-to-production calibration theorem, and a closed unbounded infinite-jet raiser on analytic seeds.
+
+\subsection{Canonical skew four-channel response bracket}
+
+Let $\cM$ be an oriented two-dimensional manifold and let $\varpi\in\Omega^2(\cM)$ be a nowhere-vanishing area form.  For $f,g\in C^\infty(\cM)$, define the intrinsic bracket $\{f,g\}_\varpi$ by
+\begin{equation}
+\dd f\wedge\dd g
+=\{f,g\}_\varpi\,\varpi.
+\label{eq:area-bracket}
+\end{equation}
+For a four-channel response map
+\[
+F=(f_1,f_2,f_3,f_4):\cM\longrightarrow\R^4,
+\]
+define the response-bracket matrix
+\begin{equation}
+\mathbb B_\varpi(F)_{ab}
+:=\{f_a,f_b\}_\varpi,
+\qquad 1\le a,b\le4.
+\label{eq:response-bracket-matrix}
+\end{equation}
+
+\begin{theorem}[Universal skew four-channel bracket theorem]
+At every point of $\cM$, the matrix $\mathbb B_\varpi(F)$ has the following properties:
+\begin{enumerate}[label=(\roman*)]
+\item it is intrinsically defined by $(F,\varpi)$ and satisfies
+\[
+\mathbb B_\varpi(F)^{\mathsf T}=-\mathbb B_\varpi(F);
+\]
+\item its rank is at most two;
+\item its Pfaffian vanishes, equivalently
+\begin{equation}
+B_{12}B_{34}-B_{13}B_{24}+B_{14}B_{23}=0;
+\label{eq:plucker-response}
+\end{equation}
+\item for a constant change of response basis $C\in\mathrm{GL}(4,\R)$,
+\begin{equation}
+\mathbb B_\varpi(CF)
+=C\,\mathbb B_\varpi(F)\,C^{\mathsf T}.
+\label{eq:bracket-congruence}
+\end{equation}
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Choose a local oriented coframe $(\alpha,\beta)$ with $\varpi=\alpha\wedge\beta$.  Write
+\[
+\dd f_a=u_a\alpha+v_a\beta.
+\]
+Then
+\[
+\dd f_a\wedge\dd f_b
+=(u_av_b-v_au_b)\,\varpi,
+\]
+so, with $u=(u_a)_{a=1}^4$ and $v=(v_a)_{a=1}^4$,
+\begin{equation}
+\mathbb B_\varpi(F)=uv^{\mathsf T}-vu^{\mathsf T}.
+\label{eq:decomposable-bracket}
+\end{equation}
+This proves skew-symmetry and shows that the image lies in $\operatorname{span}\{u,v\}$, hence the rank is at most two.  A $4\times4$ skew matrix has determinant equal to the square of its Pfaffian.  Since the rank is at most two, its determinant and Pfaffian vanish, and expansion of the Pfaffian gives \eqref{eq:plucker-response}.  Finally, $\dd(CF)=C\,\dd F$ for constant $C$, and bilinearity of the wedge product gives \eqref{eq:bracket-congruence}.
+\end{proof}
+
+\begin{corollary}[Thermodynamic four-response matrix]
+Choose any four smooth response coordinates from the thermodynamic response section and nondimensionalize them against declared nonzero reference scales.  On every oriented equilibrium chart, for example with $\varpi=\dd S\wedge\dd V$, the resulting matrix \eqref{eq:response-bracket-matrix} is a canonical skew $4\times4$ response object satisfying the rank-two and Pluecker constraints above.
+\end{corollary}
+
+\begin{remark}[What has been recovered]
+The theorem does not resurrect the false claim that the ordinary derivative Jacobian of four dependent thermodynamic variables is universally skew.  It proves the stronger invariant statement that the pairwise area brackets of four response channels form a canonical skew matrix.  The distinction is structural rather than cosmetic: the matrix is a decomposable two-form in response space and therefore carries the exact algebraic signature \eqref{eq:plucker-response}.
+\end{remark}
+
+\subsection{Positive curvature calibration and entropy production}
+
+Let $\mathfrak F$ be a finite-dimensional inner-product space of declared open-curvature values, let $X\in\R^m$ be a thermodynamic force vector, and let
+\[
+\mathcal C:\mathfrak F\longrightarrow
+\operatorname{Hom}(\R^m,\R^r)
+\]
+be a prior constitutive calibration.  For $F\in\mathfrak F$, set
+\begin{equation}
+D(F):=\mathcal C(F)^{\mathsf T}\mathcal C(F),
+\label{eq:curvature-dissipation-operator}
+\end{equation}
+and let $A(F)^{\mathsf T}=-A(F)$ be an arbitrary reciprocal-odd or nondissipative response sector.  Define
+\[
+J_F(X):=\bigl(D(F)+A(F)\bigr)X.
+\]
+
+\begin{theorem}[Calibrated curvature-to-production theorem]
+The force--flux pairing satisfies
+\begin{equation}
+\sigma_F(X)
+:=J_F(X)^{\mathsf T}X
+=\norm{\mathcal C(F)X}^2
+\ge0.
+\label{eq:calibrated-production}
+\end{equation}
+Moreover:
+\begin{enumerate}[label=(\roman*)]
+\item $\sigma_F(X)=0$ exactly when $X\in\Ker\mathcal C(F)$;
+\item the skew sector $A(F)$ contributes identically zero to production;
+\item under a dual change of force--flux frame
+\[
+J'=QJ,
+\qquad
+X'=Q^{-\mathsf T}X,
+\]
+the production is invariant and the dissipative operator transforms by congruence,
+\[
+D'(F)=QD(F)Q^{\mathsf T};
+\]
+\item conversely, every nonnegative quadratic production law $q_F(X)$ is represented by a unique positive-semidefinite symmetric operator $D_F$, and it has the canonical factorization
+\[
+q_F(X)=\norm{D_F^{1/2}X}^2.
+\]
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Because $A(F)$ is skew-symmetric,
+\[
+X^{\mathsf T}A(F)X
+=-X^{\mathsf T}A(F)^{\mathsf T}X
+=-X^{\mathsf T}A(F)X,
+\]
+so this scalar is zero.  Therefore
+\[
+J_F(X)^{\mathsf T}X
+=X^{\mathsf T}\mathcal C(F)^{\mathsf T}\mathcal C(F)X
+=\norm{\mathcal C(F)X}^2,
+\]
+which proves nonnegativity and the zero criterion.  Frame invariance follows from
+\[
+J'^{\mathsf T}X'=J^{\mathsf T}X
+\]
+and substitution of $X=Q^{\mathsf T}X'$.  For the converse, polarization of the quadratic form gives a unique symmetric operator $D_F$ with $q_F(X)=X^{\mathsf T}D_FX$.  Nonnegativity for all $X$ is equivalent to $D_F\ge0$, and the finite-dimensional spectral theorem gives the unique positive square root $D_F^{1/2}$.
+\end{proof}
+
+\begin{corollary}[Integrated recognition-curvature production]
+Let $F^{\mathrm{open}}(x)$ be a measurable open-curvature field, let $X(x)$ be a measurable force field, and let $\mu$ be a positive measure on a process region $A$.  Whenever the following integral is finite,
+\begin{equation}
+\Sigma_{\mathrm{RK}}(A)
+:=\int_A
+\norm{\mathcal C(F^{\mathrm{open}}(x))X(x)}^2\,\dd\mu(x)
+\ge0.
+\label{eq:integrated-rk-production}
+\end{equation}
+It vanishes exactly when the calibrated curvature channel is invisible to the force field almost everywhere.
+\end{corollary}
+
+\begin{remark}[Mathematical theorem versus physical calibration]
+Equations \eqref{eq:calibrated-production}--\eqref{eq:integrated-rk-production} prove a rigorous curvature-generated nonnegative production law.  Geometry alone does not select $\mathcal C$, its physical units, or its time orientation.  Calling $\Sigma_{\mathrm{RK}}$ the measured thermodynamic entropy production therefore requires constitutive and experimental calibration, but once that calibration is declared, positivity and frame covariance are theorems rather than analogies.
+\end{remark}
+
+\subsection{Closed unbounded infinite-jet raiser on analytic seeds}
+
+Let $H$ be a Hilbert space and let $D:\mathcal D(D)\subset H\to H$ be densely defined and closed.  Define the completed infinite-jet carrier
+\[
+\cJ_\infty:=\ell^2(\N_0;H)
+\]
+with layer inclusions $\iota_n:H\to\cJ_\infty$.  Define the covariant raiser $\mathbb R_D$ by
+\begin{align}
+\mathcal D(\mathbb R_D)
+&:=\left\{u=(u_n)_{n\ge0}:
+ u_n\in\mathcal D(D),\ 
+ \sum_{n=0}^\infty\norm{Du_n}^2<\infty\right\},
+\label{eq:unbounded-raiser-domain}\\
+(\mathbb R_Du)_0&:=0,
+\qquad
+(\mathbb R_Du)_{n+1}:=Du_n.
+\label{eq:unbounded-raiser}
+\end{align}
+
+\begin{lemma}[Closedness of the infinite raiser]
+The operator $\mathbb R_D$ is densely defined and closed.  It is unbounded exactly when $D$ is unbounded.  For every $x\in\mathcal D(D^n)$,
+\begin{equation}
+\mathbb R_D^n\iota_0x
+=\iota_nD^nx.
+\label{eq:raiser-powers}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Finite sequences with entries in $\mathcal D(D)$ form a dense subspace of $\cJ_\infty$, so the domain is dense.  Suppose $u^{(k)}\to u$ and $\mathbb R_Du^{(k)}\to v$ in $\cJ_\infty$.  For every $n$, one has
+\[
+u_n^{(k)}\to u_n,
+\qquad
+Du_n^{(k)}\to v_{n+1}.
+\]
+Closedness of $D$ gives $u_n\in\mathcal D(D)$ and $Du_n=v_{n+1}$.  Since $v\in\cJ_\infty$, the square sum of the $Du_n$ is finite, proving $u\in\mathcal D(\mathbb R_D)$ and $\mathbb R_Du=v$.  If $D$ is bounded, then $\norm{\mathbb R_Du}\le\norm D\norm u$.  Conversely, restricting $\mathbb R_D$ to the zeroth layer shows that boundedness of $\mathbb R_D$ would imply boundedness of $D$.  Formula \eqref{eq:raiser-powers} follows by induction.
+\end{proof}
+
+For $r>0$, define the $r$-analytic seed space
+\begin{equation}
+\mathcal A_r(D)
+:=\left\{x\in\bigcap_{n\ge0}\mathcal D(D^n):
+\sum_{n=0}^\infty
+\frac{r^{2n}}{(n!)^2}\norm{D^nx}^2<\infty\right\}.
+\label{eq:analytic-seed-space}
+\end{equation}
+
+\begin{theorem}[Unbounded analytic infinite-jet theorem]
+If $x\in\mathcal A_r(D)$, then for every $t$ with $|t|<r$ the series
+\begin{equation}
+\Psi_x(t)
+:=\sum_{n=0}^\infty\frac{t^n}{n!}
+\mathbb R_D^n\iota_0x
+=\left(\frac{t^n}{n!}D^nx\right)_{n\ge0}
+\label{eq:analytic-infinite-jet}
+\end{equation}
+converges in $\cJ_\infty$.  The map $t\mapsto\Psi_x(t)$ is analytic, belongs to $\mathcal D(\mathbb R_D)$ for $|t|<r$, and is the unique $\cJ_\infty$-analytic solution of
+\begin{equation}
+\frac{\dd}{\dd t}\Psi_x(t)
+=\mathbb R_D\Psi_x(t),
+\qquad
+\Psi_x(0)=\iota_0x.
+\label{eq:infinite-jet-evolution}
+\end{equation}
+If $x\in\bigcap_{r>0}\mathcal A_r(D)$, the solution exists for every real or complex $t$.
+\end{theorem}
+
+\begin{proof}
+Equation \eqref{eq:raiser-powers} gives the displayed layer formula, and the norm identity
+\[
+\norm{\Psi_x(t)}^2
+=\sum_{n=0}^\infty
+\frac{|t|^{2n}}{(n!)^2}\norm{D^nx}^2
+\]
+proves convergence for $|t|<r$.  Fix $\rho$ with $|t|<\rho<r$.  The derivative and raised series are controlled by the same analytic-seed sum because
+\[
+n^2\left(\frac{\rho}{r}\right)^{2n}
+\]
+is bounded in $n$.  Hence termwise differentiation is valid in $\cJ_\infty$, $\Psi_x(t)\in\mathcal D(\mathbb R_D)$, and the component formula gives \eqref{eq:infinite-jet-evolution}.  If $Y(t)=\sum_{n\ge0}t^nY_n$ is another analytic solution with the same initial value, coefficient comparison gives
+\[
+(n+1)Y_{n+1}=\mathbb R_DY_n,
+\]
+so $Y_n=\mathbb R_D^n\iota_0x/n!$ and $Y=\Psi_x$.  Entire analytic seeds give convergence for every $t$.
+\end{proof}
+
+\begin{corollary}[Commuting transported infinite jet]
+Let $U_s$ be a strongly continuous unitary group on $H$ such that $U_s\mathcal D(D)\subseteq\mathcal D(D)$ and $DU_sx=U_sDx$ for $x\in\mathcal D(D)$.  Let $\mathbb U_s$ act diagonally on $\cJ_\infty$.  Then
+\begin{equation}
+\mathbb U_s\Psi_x(t)
+=\left(\frac{t^n}{n!}U_sD^nx\right)_{n\ge0}
+\label{eq:transported-infinite-jet}
+\end{equation}
+is the exact transported infinite jet, and $\mathbb U_s\mathbb R_D=\mathbb R_D\mathbb U_s$ on $\mathcal D(\mathbb R_D)$.
+\end{corollary}
+
+\begin{proof}
+The commutation hypothesis iterates to $D^nU_sx=U_sD^nx$.  Applying the diagonal unitary to \eqref{eq:analytic-infinite-jet} gives \eqref{eq:transported-infinite-jet}; componentwise evaluation proves commutation with the raiser.
+\end{proof}
+
+\begin{corollary}[Thermodynamic analytic-jet realization]
+Let $D=\nabla_X$ be a closed covariant derivative along a declared thermodynamic process field on a Hilbert completion of response sections.  Every response seed $\Lambda\in\mathcal A_r(\nabla_X)$ possesses the rigorous infinite response jet
+\[
+\left(\frac{t^n}{n!}\nabla_X^n\Lambda\right)_{n\ge0}
+\in\cJ_\infty,
+\qquad |t|<r.
+\]
+Thus the finite capstone extends to a closed unbounded infinite carrier on the analytic-seed domain.  What remains separate is generation of a global $C_0$-semigroup on the entire carrier without an analytic-vector restriction.
+\end{corollary}

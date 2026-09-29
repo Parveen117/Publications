@@ -1,0 +1,127 @@
+{
+  "boundaries": {
+    "alpha_hbar_c_G": "NOT_DERIVED",
+    "empirical_validation": "NOT_PERFORMED",
+    "geometry": "thermodynamic response metric, not identified with spacetime",
+    "independent_review": "NOT_CLAIMED",
+    "lean_or_other_proof_assistant": "NOT_PERFORMED",
+    "universal_proof": "THEOREM.md, not finite sampling"
+  },
+  "external_dependency_note": "External Git blob identities were checked against the immutable repository tree during publication. Offline verification checks local pinned sources and the vendored scalar; it does not fetch or reprove the external F00-E theorem.",
+  "protocol": "THERMO_COMPASS_FOUNDATIONS_R1",
+  "recovered": {
+    "downstream_alpha": {
+      "Z_eff": "25/6",
+      "alpha_physical_status": "NOT_DERIVED",
+      "checks": {
+        "completion_of_squares_cases": 125,
+        "full_source_solution_agrees": true,
+        "hidden_basis_invariance": true,
+        "memory_deletion_detected": true,
+        "physical_stiffness_change_detected": true,
+        "schur_coefficient": "25/6",
+        "sequential_elimination_agrees": true,
+        "visible_normalization_cases": 4
+      },
+      "gamma_q_squared_over_Z_eff": "24/25",
+      "matrix_status": "DECLARED_FIXTURE_NOT_NATIVE_VACUUM_SELECTION",
+      "status": "PASS_EXACT_FINITE_COUPLING_CONTROLS"
+    },
+    "helical": {
+      "consumed_source_files_checked": 3,
+      "energy_law_weights_and_pinning_selected_from_iota_alone": false,
+      "eta": "1/2",
+      "exact_hidden_sheet_contribution": "4/21",
+      "green_kernel": "(2/3)*(1/2)^abs(s)",
+      "green_l1_mass": "2",
+      "green_norm_square": "20/27",
+      "infinite_operator_claim_evidence": "written proof; finite checks are not a universal proof",
+      "native_scalar": "pinned NativeCutScalar, no Python complex or float",
+      "negative_controls": [
+        "wrong edge sign",
+        "wrong decay",
+        "sheet-local equals aggregate",
+        "missing iota in generator",
+        "square substituted for dagger norm"
+      ],
+      "physical_gravity_or_hbar_derived": false,
+      "recurrence_points_checked": 201,
+      "retained_G3_parameters": {
+        "alpha_mod_6": 3,
+        "beta": "2/5",
+        "q_integer": 2
+      },
+      "sheet_index_reduced_modulo_finite_size": false,
+      "sheet_local_response": "2/3",
+      "status": "PASS_NATIVE_HELICAL_EXACT_CONTROLS",
+      "three_site_sheet_summed_response": "6/7",
+      "two_circuit_fibre": [
+        0,
+        "4/5",
+        4
+      ],
+      "unitary_series_coefficients_checked_through_degree": 12,
+      "w": "1"
+    },
+    "native_iota_dagger_checks": 9,
+    "native_iota_intertwiner_pairs": 81
+  },
+  "source_sha256": {
+    "../emk-recognition-geometry/certificates/emkg2_global_quotient_holonomy.py": "22110bf90e40ab838759fe34f12048417043404b8f8e04ccfa93704bca97fd1c",
+    "../emk-recognition-geometry/certificates/emkg3_helical_sheet_memory.py": "0a627fc63eb9b00b79871fdb0f4c39abdb0b9373c714a458badc6cb9dee9bb65",
+    "../thermodynamic-response-corrections/source/sections/01_foundations.tex": "e693803c14a6d72837fa1a25bb2c16248b33bb60c134ab591ca6274f6c454339",
+    "../thermodynamic-response-corrections/source/sections/01a_response_summary.tex": "611bad7032e766db32e538cfa7c500e4f17cc1e809c61368be795c0a524715f2",
+    "../thermodynamic-response-corrections/source/sections/02_recognition.tex": "9237a579c1fe31457a5444f35ad5df764f986356c5c3483bd14af568837b3ce2",
+    "../thermodynamic-response-corrections/source/sections/03_loop_and_cutflow.tex": "84c2397b5c647b83872282c9608cd3e71a60213da84f01159003c97bfff08d9e",
+    "../thermodynamic-response-corrections/source/sections/04_capstone_and_examples.tex": "1a20d90bccedee177fd259266187fa725bdee1b3559c1c0f6aba35577a95c962",
+    "../thermodynamic-response-corrections/source/sections/05_proved_extensions.tex": "4d9fda01d005535821c3ae2eb71da502d02aa20b75de3f69d8abf35a122ebb11",
+    "../thermodynamic-response-corrections/source/sections/05b_extended_capstone.tex": "75d976bb8319b234078bce1cd4dc7ea9f7cb37ffe33a36b4d9de8240c7866f81",
+    "../uncut-cut-measurement/NATIVE_HELICAL_SOURCE_PINS.json": "2d9225dd91c92cef3b5f151323d75b747a4d236e75a8ac8b19af0b83fe8455ba",
+    "../uncut-cut-measurement/NATIVE_IOTA_HELICAL_RESPONSE.md": "1e0823daac754c44bad137de9515d0e0ee3adfdaa0de9435edc7b36e8a46b71f",
+    "../uncut-cut-measurement/certificates/native_helical_response.py": "2f63ab4026e0d50812b0f1ebb8ceba5f4c4086ba252d0c0f13451577f75c2fac",
+    "../uncut-cut-measurement/certificates/native_sources/native_summability.py": "c35b67e5eeedcb4dfc3532cc7073c30d889113cbf1421cef1cfc753d9d3843b7",
+    "README.md": "4cb6e9f680fc775bcdd31dfb01e8e2aa66e738563e967fda397a8d8e1fb07104",
+    "RECOVERY_MANIFEST.json": "927f5e938d4e6d14ae3f3247f79c2505af083b689dbbb33e9e64f854cf371e22",
+    "RESULTS_INDEX.md": "6dbb47ede8b257b044c20a3fc2f6cb2aa1ce4020922e55b1b259e62b5ccc2344",
+    "SOURCE_PINS.json": "a151eef3bc31a6a1e81da2126094cea6bc278dead8c0e753a30c75edbcba9448",
+    "THEOREM.md": "783caecc1d6d0156576f07d0fea4d3f14c9c4124d1a901aaa1ac0b48c54fd7c4",
+    "downstream/FINE_STRUCTURE_R1.md": "75cf83ae81e5c164ffb39f6fa941eeda510ac61003db8f9a8c6ce9f72482a66f",
+    "downstream/fine_structure_controls.py": "d0184b4fe35a450d907c38f17ab211ec86aaffd40d1af20318edaafbf5efc06e",
+    "model.py": "b80f6b40419b5a7eeac2e1218f1d07318525cef12168f2e02c4de2325962a747",
+    "verify.py": "98a5e67f61548bd89c31af49a37c859bac3b35323dad86dd3b18a64f262fdff3"
+  },
+  "status": "PASS_DECLARED_EXACT_AND_SOURCE_BOUND_CONTROLS",
+  "thermo": {
+    "counts": {
+      "cubic_curvature_fixtures": 243,
+      "direct_curvature_comparisons": 729,
+      "exact_transport_endpoints": 4,
+      "negative_controls": 5,
+      "normalized_phase_planes": 54,
+      "refusal_controls": 7,
+      "stable_hessians": 388
+    },
+    "curved_fixture": {
+      "H": [
+        [
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "5"
+        ]
+      ],
+      "K": "5/324"
+    },
+    "ideal_gas": {
+      "C_P": "5/2",
+      "C_V": "3/2",
+      "K_S": "10/9",
+      "K_T": "2/3"
+    },
+    "scope": "Written TC-1--TC-6 proofs plus finite exact controls; no physical constant or gravity validation.",
+    "status": "PASS_THERMO_COMPASS_EXACT_CONTROLS"
+  },
+  "upstream_local_pins_checked": 9
+}
