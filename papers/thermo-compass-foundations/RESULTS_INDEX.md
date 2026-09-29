@@ -4,6 +4,8 @@ Audit scope: the physics results discussed through this development thread, chec
 
 Both PRs were open and unmerged at the audit. “In Publications” therefore does not mean “on main.” The current research branch is `research/uncut-cut-measurement-2026-09-25`.
 
+**Subsequent development, 29 September 2026:** [Thermo phase field PF-1–PF-7](../thermo-phase-field/README.md) now supplies an explicit scalar phase connection, a two-channel local curvature representation, and a declared discrete Maxwell model with charge conservation, field energy and transverse propagation. Its rest-energy/inertial-mass result is conditional on a gapped dispersion and energy/momentum calibration. The inventory below records the original thermo-compass audit; the new package gives the updated field-development scope.
+
 ## What physics has been derived from the thermo construction?
 
 The starting data are a smooth, stable simple-compressible fundamental relation U(S,V), with T=U_S and P=-U_V. The compass organizes its regular Legendre charts; the first law and the equation of state are inputs to this construction. “Derived” below means a written deduction under the stated hypotheses, not a claim of experimental discovery or that the diagram alone selects a material.
@@ -79,6 +81,8 @@ A physical Onsager or Onsager–Casimir theorem still needs a process model and 
 | Fine-structure coupling reduction R1 | [Downstream note](downstream/FINE_STRUCTURE_R1.md) | Previously delivered outside the repository; preserved now. Numerical alpha remains NOT DERIVED. |
 | Thermo response-plane iota from the previous discussion | [TC-1–TC-3](THEOREM.md) | Previously only in the conversation; now written, source-bound and executable. |
 | Thermo transport and cubic-response curvature | [TC-4–TC-6](THEOREM.md) | New in this repository development step; mathematical response metric and transport, without physical-clock/gravity identification. |
+| Thermo phase-field and propagation bridge | [PF-1–PF-7](../thermo-phase-field/THEOREM.md) | Explicit U(1) response connection, local two-channel field representation, and Maxwell-form dynamics under a declared quadratic process law. Energy and two transverse modes checked; physical vacuum, universal c and numerical particle masses remain unselected. |
+| Action-lifted gauge and gravity reductions | [Corrected field equations](../thermodynamic-response-corrections/source/sections/06b_classical_field_equations.tex) | Already present in the corrected manuscript: variational equations and Einstein–Maxwell specialization with supplied action, metric and group hypotheses. This is distinct from a primitive-only derivation. |
 
 ## Verification boundaries
 

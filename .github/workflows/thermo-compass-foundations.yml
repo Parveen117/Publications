@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'papers/thermo-compass-foundations/**'
+      - 'papers/thermo-phase-field/**'
       - 'papers/thermodynamic-response-corrections/**'
       - 'papers/uncut-cut-measurement/**'
       - 'papers/emk-recognition-geometry/certificates/**'
@@ -11,6 +12,7 @@ on:
   pull_request:
     paths:
       - 'papers/thermo-compass-foundations/**'
+      - 'papers/thermo-phase-field/**'
       - 'papers/thermodynamic-response-corrections/**'
       - 'papers/uncut-cut-measurement/**'
       - 'papers/emk-recognition-geometry/certificates/**'
@@ -32,3 +34,5 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Check thermo transport, recovered results and source pins
         run: python papers/thermo-compass-foundations/verify.py --check
+      - name: Check phase field, conserved energy and propagation
+        run: python papers/thermo-phase-field/verify.py --check
