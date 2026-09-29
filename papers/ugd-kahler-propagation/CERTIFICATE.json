@@ -40,13 +40,15 @@
   },
   "boundaries": {
     "constants_G_c_Lambda_alpha_hbar": "NOT_PREDICTED",
-    "einstein_hilbert_action": "NOT_DERIVED",
+    "curved_spin_matter_coupling": "NOT_ESTABLISHED_HERE",
+    "einstein_hilbert_action": "CONDITIONAL_TRACE_ACTION_CLASS_REDUCTION_MG2_NOT_PRIMITIVE_SELECTION",
     "empirical_or_independent_review": "NOT_PERFORMED",
     "formal_proof_assistant": "NOT_PERFORMED",
     "full_seam_faithful_representation": "NOT_CLAIMED",
-    "lambda_to_propagation_coframe": "NOT_DERIVED",
+    "lambda_to_propagation_coframe": "NOT_SELECTED_BY_NATIVE_PROCESS",
     "physical_signature_selection": "NOT_DERIVED_FROM_NATIVE_AXIOMS",
-    "universal_proofs": "Written in GS/NP/CP notes; finite checks are not universal proofs"
+    "thermo_to_metric_variation": "EXPLICIT_LOCAL_CONSTITUTIVE_ADAPTER_MG5",
+    "universal_proofs": "Written in GS/NP/CP/MG notes; finite checks are not universal proofs"
   },
   "external_pins_scope": "External source read and blob identified during development on 2026-09-29; offline --check does not fetch or revalidate remote files. No external engine is copied or needed at runtime.",
   "geometry": {
@@ -121,8 +123,117 @@
     ],
     "monge_ampere_jet_checks": 9
   },
-  "local_upstream_pins_checked": 8,
-  "protocol": "UGD_KAHLER_PROPAGATION_R2",
+  "local_upstream_pins_checked": 11,
+  "metric_dynamics": {
+    "einstein": {
+      "algebraic_curvature_witnesses": [
+        {
+          "einstein": true,
+          "name": "constant_curvature",
+          "scalar": "8"
+        },
+        {
+          "einstein": false,
+          "name": "non_einstein",
+          "scalar": "60"
+        },
+        {
+          "einstein": true,
+          "name": "ricci_flat_weyl",
+          "scalar": "0"
+        }
+      ],
+      "holst_bianchi_variations": 432,
+      "independent_coframe_variations": 432,
+      "nonflat_weyl_scope": "Algebraic pointwise curvature witness, not a constructed global solution",
+      "pure_holst_does_not_impose_einstein": true
+    },
+    "maxwell_stress": {
+      "coupling_is_calibrated": true,
+      "coupling_square": "7/5",
+      "independent_metric_action_variations": 48,
+      "trace_free_stress_fixtures": 3
+    },
+    "nieh_yan": {
+      "boundary_term_cannot_be_omitted_pointwise": true,
+      "independent_first_jet_checks": 3
+    },
+    "restricted_variations": {
+      "conformal_trace_only_counterexamples": [
+        {
+          "ricci_diagonal": [
+            "3",
+            "1",
+            "1",
+            "1"
+          ],
+          "scalar": "0",
+          "t": "1"
+        },
+        {
+          "ricci_diagonal": [
+            "3/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "scalar": "0",
+          "t": "2"
+        },
+        {
+          "ricci_diagonal": [
+            "4/3",
+            "4/9",
+            "4/9",
+            "4/9"
+          ],
+          "scalar": "0",
+          "t": "3/2"
+        }
+      ],
+      "nonlinear_coordinate_pullback_ricci_zero": true
+    },
+    "thermo_coframe": {
+      "explicit_stable_channel_inverses": 16,
+      "number_of_channels_claimed_minimal": false,
+      "thermo_to_coframe_rank": 16,
+      "thermo_to_metric_rank": 10
+    },
+    "trace_class": {
+      "bivector_pairing_rank": 6,
+      "degree_four_words": 11,
+      "fourth_trace_entries": 512,
+      "real_multiplier_checks": 3,
+      "spin_vector_actions": 24,
+      "trace_word_controls": 66
+    },
+    "variation_ranks": {
+      "degenerate_metric_rank": 3,
+      "degenerate_torsion_rank": 18,
+      "nondegenerate_fixtures": [
+        {
+          "coframe_determinant": "1",
+          "lorentz_kernel_dimension": 6,
+          "metric_variation_rank": 10,
+          "torsion_equation_rank": 24
+        },
+        {
+          "coframe_determinant": "211/70",
+          "lorentz_kernel_dimension": 6,
+          "metric_variation_rank": 10,
+          "torsion_equation_rank": 24
+        },
+        {
+          "coframe_determinant": "31681/32000",
+          "lorentz_kernel_dimension": 6,
+          "metric_variation_rank": 10,
+          "torsion_equation_rank": 24
+        }
+      ],
+      "right_inverse_controls": 30
+    }
+  },
+  "protocol": "UGD_KAHLER_PROPAGATION_R3",
   "recovered": {
     "centralizer_commutators": "exact",
     "direct_Levi_Civita_vs_logdet_Ricci": [
@@ -184,16 +295,18 @@
   },
   "source_sha256": {
     "GEOMETRY_AND_SIGNATURE.md": "c84869fee581d1b407156592662934349df400ee30d79ffc777170ad5091cd4d",
+    "NATIVE_METRIC_DYNAMICS.md": "b42adbac04f790d0593da14fce6649a6a8a94eabe3d2c31588ae95ff71d07202",
     "NATIVE_PROPAGATION_ACTION.md": "6e96e62b7b15c63fba32122c2addfc2984c3007e08cf69cd5b08f4dbd08b3345",
-    "README.md": "b44558d8a3f549c009fff36b5a44864447b0964ed760d77081f2fcb6d4dae872",
-    "SOURCE_PINS.json": "7ca637d404e5b24c963c6b53f025026f245452ce5691da26aea6e5902773666d",
+    "README.md": "2df8dfc6ee8bade07840bef5cc5fe5329c041b029bc0f81f1b5ec0ba139a4b6f",
+    "SOURCE_PINS.json": "bf20f0364bf686aa9f15370f65d166654c28b4d278bd0a47d1198e9877ee1020",
     "THERMO_GAUGE_COMPLETION.md": "9ac35f4e6bd1fc4262ba9e3d6b1f5c7d251684618975380d29abc81f0ace9068",
     "history/RKF_UGD_Kahler_Einstein_Bridge.md": "f16fd197f62564d7daae4169f145099828d116ba588ddc583e3720bf765ab8ce",
     "history/verification.json": "965d1ac43bababce41ce59609f50f3f3b5a804f88d04049797859c8388ad9ed5",
     "history/verify_bridge.py": "ef84ae61e9113b211b0f9b698157063313f80130066d86b25493749f5d1f6098",
+    "metric_dynamics.py": "c1acb4227276ebcafe244e97c4911226fea50041fd8d5c57d8de09195100296c",
     "model.py": "e65af2feeb78483448b56ca50a4b85385245b097f684f73315f8ab7a4a0ef729",
     "thermo_gauge.py": "e518579c452ccef7ffbb405e029fe289938b99aa68f034bba375f109298c9a71",
-    "verify.py": "9dfe20009eacce6157ea87ac1f5fbd39f633e85303ef07e17c343fe845468e0d"
+    "verify.py": "e1add8b7f8ca02f71c5e80f1a4f3317e5db0f3e5ba5e168453e91fb76724d63f"
   },
   "status": "PASS_EXACT_CONDITIONAL_CONTROLS",
   "symbols": {

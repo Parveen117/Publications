@@ -1,6 +1,6 @@
 # UGD coefficient geometry and a variational propagation sector
 
-Author: Monty Dabas. Research development: R2, 30 September 2026.
+Author: Monty Dabas. Research development: R3, metric dynamics extension.
 
 This package preserves the earlier λ-Hessian/Kähler–Einstein development and
 extends it with an explicit action for a selected native-coefficient propagation
@@ -27,6 +27,17 @@ thermo channels are necessary and sufficient for this regular representation
 to include zero curvature. A two-channel counterexample demonstrates why
 field representation alone does not establish variational completeness.
 
+**R3: metric dynamics.** [MG-1–MG-8](NATIVE_METRIC_DYNAMICS.md) classify a
+declared native polynomial trace-action class into Palatini–Holst, cosmological
+and bulk-inactive terms. For nondegenerate coframes and nonzero Palatini
+coupling, connection/coframe variations give vacuum Einstein equations for
+every real Holst coefficient. Sixteen stable thermo channels explicitly supply
+all coframe variations and all ten metric variations. Adding the declared
+Maxwell law with independent gauge variations yields Einstein–Maxwell equations.
+The continuum, action class, constitutive adapter and coupling values remain
+inputs. This uses established first-order gravity, with primary references and
+explicit coefficient, rank and failure controls.
+
 | Result | Location | Scope |
 |---|---|---|
 | Native complex sector, transport compatibility, corrected H/S derivatives, Hessian lift and determinant–Einstein equivalence | [Recovered bridge](history/RKF_UGD_Kahler_Einstein_Bridge.md) | Original note preserved byte for byte; its historical manuscript references are identified as such. |
@@ -34,6 +45,7 @@ field representation alone does not establish variational completeness.
 | An explicit Lorentzian Einstein product and a failed gradient-reflection control | [Geometry and signature](GEOMETRY_AND_SIGNATURE.md), GS-5 | A standard product geometry with a freely chosen length scale. |
 | Clifford symbol, native variational multiplier, action, density drift, and the precise lower-order compatibility obstruction | [Propagation and action](NATIVE_PROPAGATION_ACTION.md), NP-1–NP-6 | A selected coefficient-sector field law, not selection of nature's dynamics. |
 | Positive response cone, native source current, explicit thermo connection chart and full gauge variations | [Thermo gauge completion](THERMO_GAUGE_COMPLETION.md), CP-1–CP-8 | Coupled equations follow from the declared gauge kinetic law and fixed backgrounds; no metric dynamics or physical constants are selected. |
+| Native curvature-action classification, full thermo metric variations, conditional Einstein and Einstein–Maxwell equations | [Metric dynamics](NATIVE_METRIC_DYNAMICS.md), MG-1–MG-8 | Explicit polynomial action class, independent Lorentz connection and a local constitutive adapter; not primitive-only selection or a prediction of couplings. |
 | Exact reproducible controls and source hashes | [Certificate](CERTIFICATE.json), [verifier](verify.py), [source pins](SOURCE_PINS.json) | Finite rational checks support the written proofs; they are not a proof assistant or empirical validation. |
 
 The current thermo programme starts with a stable fundamental relation U(S,V)
@@ -63,10 +75,10 @@ thermo compass and phase-field packages.
 
 ## Next unresolved derivation
 
-The potential-to-gauge-connection map and its admissible gauge variations now
-have a concrete realization in CP-5–CP-8. Derive or select the continuum
-propagation coefficients and their own dynamics from an explicit native
-process law. In particular, a λ-to-coframe map, a rule
-for admissible metric variations, and the coefficient of a curvature action
-are still missing. A prescribed Lorentzian principal symbol and a matter-field
-action do not supply those ingredients. G, c, Λ and α remain unpredicted.
+CP-5–CP-8 supply the gauge variation interface; MG-2–MG-5 now supply an explicit
+curvature-action class and a local thermo-to-coframe adapter with complete
+metric variations. What remains is physical selection of that class, adapter,
+connection and their scales by an explicit native process law. A covariant
+curved-spin-connection completion of the NP matter field also requires its own
+stress/torsion derivation. G, c, Λ and α remain unpredicted; sixteen thermo
+channels are sufficient here, not proved minimal.

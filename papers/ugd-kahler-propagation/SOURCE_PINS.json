@@ -52,12 +52,32 @@
       "path": "papers/ugd-kahler-propagation/model.py",
       "sha256": "e65af2feeb78483448b56ca50a4b85385245b097f684f73315f8ab7a4a0ef729",
       "source_commit": "08339e0c1dc1e517185784eff3c6230167696d86"
+    },
+    {
+      "git_blob_sha1": "04f8f3e092796712082396e717cc21d3559e3d09",
+      "path": "papers/ugd-kahler-propagation/THERMO_GAUGE_COMPLETION.md",
+      "sha256": "9ac35f4e6bd1fc4262ba9e3d6b1f5c7d251684618975380d29abc81f0ace9068",
+      "source_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355"
+    },
+    {
+      "git_blob_sha1": "43a294e841cccb7fecaf6e833af4406f9ff445ea",
+      "path": "papers/ugd-kahler-propagation/thermo_gauge.py",
+      "sha256": "e518579c452ccef7ffbb405e029fe289938b99aa68f034bba375f109298c9a71",
+      "source_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355"
+    },
+    {
+      "git_blob_sha1": "497bbba637fc212847cfbc5a8036d96c2f462799",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a_spacetime_recognition_datum.tex",
+      "sha256": "249f33a2123bb4abeed930670ce21d887bd8930e933272d03cdac2256e0b4a03",
+      "source_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355"
     }
   ],
-  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R2",
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R3",
   "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
   "r2_parent_commit": "08339e0c1dc1e517185784eff3c6230167696d86",
   "r2_scope": "CP-1--CP-8 consume the unchanged NP proof, matrix fixtures and PF phase theorem. Native response-cone signature and phase-current identities are algebraic; the continuum, gauge kinetic law, backgrounds and calibrations remain supplied.",
+  "r3_parent_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355",
+  "r3_scope": "MG-1--MG-8 consume the unchanged NP/CP representations, thermo chart and conditional field-equation/nonselection sources. Einstein reduction requires the declared polynomial trace-action class, nonzero Palatini coefficient, invertible coframe, independent Lorentz connection and complete variations. The sixteen-channel adapter is explicit constitutive input, not unique physical selection.",
   "recovered_artifacts": [
     {
       "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",
