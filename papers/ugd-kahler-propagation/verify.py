@@ -9,6 +9,7 @@ import subprocess
 import sys
 
 import model as m
+import thermo_gauge
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[1]
@@ -310,13 +311,14 @@ def generate():
     paths = sorted(str(p.relative_to(HERE)) for p in HERE.rglob('*')
                    if p.is_file() and '__pycache__' not in p.parts and p.suffix in ('.md', '.py', '.json')
                    and p.name != 'CERTIFICATE.json')
-    return dict(protocol='UGD_KAHLER_PROPAGATION_R1', status='PASS_EXACT_CONDITIONAL_CONTROLS',
+    return dict(protocol='UGD_KAHLER_PROPAGATION_R2', status='PASS_EXACT_CONDITIONAL_CONTROLS',
                 algebra=algebra_checks(), symbols=symbol_checks(), geometry=geometry_checks(),
                 balance=variable_balance_checks(), action=action_checks(), recovered=recovered,
+                thermo_gauge=thermo_gauge.run(),
                 local_upstream_pins_checked=len(pins['local_upstream_sources']),
                 external_pins_scope=pins['external_dependency_check_scope'],
                 source_sha256={p: hashlib.sha256((HERE/p).read_bytes()).hexdigest() for p in paths},
-                boundaries=dict(universal_proofs='Written in GS/NP notes; finite checks are not universal proofs',
+                boundaries=dict(universal_proofs='Written in GS/NP/CP notes; finite checks are not universal proofs',
                                 physical_signature_selection='NOT_DERIVED_FROM_NATIVE_AXIOMS',
                                 full_seam_faithful_representation='NOT_CLAIMED',
                                 lambda_to_propagation_coframe='NOT_DERIVED',
@@ -344,6 +346,7 @@ def main():
     print(json.dumps(dict(status=result['status'], mode='write' if args.write else 'check', sha256=digest,
                           source_files=len(result['source_sha256']),
                           action_variations=result['action']['independent_action_variations'],
+                          thermo_gauge_variations=result['thermo_gauge']['euler_lagrange']['exact_lagrangian_variations'],
                           symbol_checks=result['symbols']['covectors_checked']), sort_keys=True))
 
 

@@ -40,10 +40,24 @@
       "git_blob_sha1": "e12070f344fab8b39a77b6abe9f704c516668517",
       "path": "papers/thermodynamic-response-corrections/source/sections/06b_classical_field_equations.tex",
       "sha256": "a343509a201f0d5a43f7b15bd190b55b6851ae9bb668cfe47f9af83a06ecf06f"
+    },
+    {
+      "git_blob_sha1": "368212d54b3956d0a7e8886cda3dd8050ca3a997",
+      "path": "papers/ugd-kahler-propagation/NATIVE_PROPAGATION_ACTION.md",
+      "sha256": "6e96e62b7b15c63fba32122c2addfc2984c3007e08cf69cd5b08f4dbd08b3345",
+      "source_commit": "08339e0c1dc1e517185784eff3c6230167696d86"
+    },
+    {
+      "git_blob_sha1": "00398d7b0c7e33a267b53a94001b5592b20190a9",
+      "path": "papers/ugd-kahler-propagation/model.py",
+      "sha256": "e65af2feeb78483448b56ca50a4b85385245b097f684f73315f8ab7a4a0ef729",
+      "source_commit": "08339e0c1dc1e517185784eff3c6230167696d86"
     }
   ],
-  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R1",
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R2",
   "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
+  "r2_parent_commit": "08339e0c1dc1e517185784eff3c6230167696d86",
+  "r2_scope": "CP-1--CP-8 consume the unchanged NP proof, matrix fixtures and PF phase theorem. Native response-cone signature and phase-current identities are algebraic; the continuum, gauge kinetic law, backgrounds and calibrations remain supplied.",
   "recovered_artifacts": [
     {
       "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",
