@@ -5,6 +5,7 @@ on:
     paths:
       - 'papers/thermo-compass-foundations/**'
       - 'papers/thermo-phase-field/**'
+      - 'papers/ugd-kahler-propagation/**'
       - 'papers/thermodynamic-response-corrections/**'
       - 'papers/uncut-cut-measurement/**'
       - 'papers/emk-recognition-geometry/certificates/**'
@@ -13,6 +14,7 @@ on:
     paths:
       - 'papers/thermo-compass-foundations/**'
       - 'papers/thermo-phase-field/**'
+      - 'papers/ugd-kahler-propagation/**'
       - 'papers/thermodynamic-response-corrections/**'
       - 'papers/uncut-cut-measurement/**'
       - 'papers/emk-recognition-geometry/certificates/**'
@@ -36,3 +38,5 @@ jobs:
         run: python papers/thermo-compass-foundations/verify.py --check
       - name: Check phase field, conserved energy and propagation
         run: python papers/thermo-phase-field/verify.py --check
+      - name: Check Kahler geometry, Lorentzian symbol and native propagation action
+        run: python papers/ugd-kahler-propagation/verify.py --check

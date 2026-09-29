@@ -1,0 +1,207 @@
+{
+  "action": {
+    "gapped_generator_square": true,
+    "hamiltonian_witness": [
+      "1/2",
+      "-1/2"
+    ],
+    "incompatible_mass_erased": true,
+    "independent_action_variations": 36,
+    "norm_preserving_steps": [
+      {
+        "conserved_norm": "3035/36",
+        "step": "1/7"
+      },
+      {
+        "conserved_norm": "3035/36",
+        "step": "-2/9"
+      },
+      {
+        "conserved_norm": "3035/36",
+        "step": "3/11"
+      }
+    ],
+    "periodic_spacetime_sites": 9,
+    "real_field_components": 4,
+    "wrong_multiplier_rejected": true
+  },
+  "algebra": {
+    "clifford_pairs": 16,
+    "commutant_dimension": 2,
+    "full_cut_rank": 2,
+    "massive_skew_multiplier_dimension": 0,
+    "skew_multiplier_dimension": 1,
+    "spatial_pairs": 9,
+    "trace_gram_entries": 256
+  },
+  "balance": {
+    "missing_drift_failures": 15,
+    "variable_coefficient_jets": 15
+  },
+  "boundaries": {
+    "constants_G_c_Lambda_alpha_hbar": "NOT_PREDICTED",
+    "einstein_hilbert_action": "NOT_DERIVED",
+    "empirical_or_independent_review": "NOT_PERFORMED",
+    "formal_proof_assistant": "NOT_PERFORMED",
+    "full_seam_faithful_representation": "NOT_CLAIMED",
+    "lambda_to_propagation_coframe": "NOT_DERIVED",
+    "physical_signature_selection": "NOT_DERIVED_FROM_NATIVE_AXIOMS",
+    "universal_proofs": "Written in GS/NP notes; finite checks are not universal proofs"
+  },
+  "external_pins_scope": "External source read and blob identified during development on 2026-09-29; offline --check does not fetch or revalidate remote files. No external engine is copied or needed at runtime.",
+  "geometry": {
+    "existence_uniqueness": "Explicit solution and comparison proof in GS-4; not inferred from samples",
+    "gradient_reflection": {
+      "einstein": false,
+      "ricci_diagonal": [
+        "-1",
+        "1",
+        "-1",
+        "1"
+      ],
+      "scalar": "1"
+    },
+    "lorentzian_product_checks": [
+      {
+        "cosmological_coefficient": "-1/2",
+        "ell": "1",
+        "scalar": "-2",
+        "x1": "1",
+        "x2": "1"
+      },
+      {
+        "cosmological_coefficient": "-1/2",
+        "ell": "1",
+        "scalar": "-2",
+        "x1": "1",
+        "x2": "3/2"
+      },
+      {
+        "cosmological_coefficient": "-1/2",
+        "ell": "1",
+        "scalar": "-2",
+        "x1": "2/3",
+        "x2": "1"
+      },
+      {
+        "cosmological_coefficient": "-1/2",
+        "ell": "1",
+        "scalar": "-2",
+        "x1": "2/3",
+        "x2": "3/2"
+      },
+      {
+        "cosmological_coefficient": "-1/8",
+        "ell": "2",
+        "scalar": "-1/2",
+        "x1": "1",
+        "x2": "1"
+      },
+      {
+        "cosmological_coefficient": "-1/8",
+        "ell": "2",
+        "scalar": "-1/2",
+        "x1": "1",
+        "x2": "3/2"
+      },
+      {
+        "cosmological_coefficient": "-1/8",
+        "ell": "2",
+        "scalar": "-1/2",
+        "x1": "2/3",
+        "x2": "1"
+      },
+      {
+        "cosmological_coefficient": "-1/8",
+        "ell": "2",
+        "scalar": "-1/2",
+        "x1": "2/3",
+        "x2": "3/2"
+      }
+    ],
+    "monge_ampere_jet_checks": 9
+  },
+  "local_upstream_pins_checked": 6,
+  "protocol": "UGD_KAHLER_PROPAGATION_R1",
+  "recovered": {
+    "centralizer_commutators": "exact",
+    "direct_Levi_Civita_vs_logdet_Ricci": [
+      {
+        "det_hessian": "1",
+        "point": [
+          "0",
+          "0"
+        ],
+        "ricci_xx": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "det_hessian": "227/144",
+        "point": [
+          "1/3",
+          "1/2"
+        ],
+        "ricci_xx": [
+          [
+            "37296/51529",
+            "-12960/51529"
+          ],
+          [
+            "-12960/51529",
+            "-4410/51529"
+          ]
+        ]
+      },
+      {
+        "det_hessian": "11/4",
+        "point": [
+          "-1/2",
+          "1"
+        ],
+        "ricci_xx": [
+          [
+            "52/121",
+            "28/121"
+          ],
+          [
+            "28/121",
+            "10/121"
+          ]
+        ]
+      }
+    ],
+    "native_RKL_relations": "exact",
+    "nonflat_Einstein_example": "PASS, c=-1/2",
+    "status": "PASS"
+  },
+  "source_sha256": {
+    "GEOMETRY_AND_SIGNATURE.md": "c84869fee581d1b407156592662934349df400ee30d79ffc777170ad5091cd4d",
+    "NATIVE_PROPAGATION_ACTION.md": "6e96e62b7b15c63fba32122c2addfc2984c3007e08cf69cd5b08f4dbd08b3345",
+    "README.md": "34dfe934b485eb5a63dbac9dfc08e7bd95c4228d8e8b829da5e5a2e5303f3cf6",
+    "SOURCE_PINS.json": "0eb5cd8198c1fe713d03ce51c3071f3b3589ec2b62b747999db4235cfb893a39",
+    "history/RKF_UGD_Kahler_Einstein_Bridge.md": "f16fd197f62564d7daae4169f145099828d116ba588ddc583e3720bf765ab8ce",
+    "history/verification.json": "965d1ac43bababce41ce59609f50f3f3b5a804f88d04049797859c8388ad9ed5",
+    "history/verify_bridge.py": "ef84ae61e9113b211b0f9b698157063313f80130066d86b25493749f5d1f6098",
+    "model.py": "e65af2feeb78483448b56ca50a4b85385245b097f684f73315f8ab7a4a0ef729",
+    "verify.py": "87701fdd4eb6198f84e9c8ab93969978ce02e40d7d6e6e1556376993203f37ad"
+  },
+  "status": "PASS_EXACT_CONDITIONAL_CONTROLS",
+  "symbols": {
+    "constitutive_fixtures": 3,
+    "covectors_checked": 243,
+    "freely_calibrated_speed_roots": [
+      "1/2",
+      "3"
+    ],
+    "singular_coframe_rejected": true,
+    "split_null_cone_not_hyperbolic": true
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "external_dependency_check_scope": "External source read and blob identified during development on 2026-09-29; offline --check does not fetch or revalidate remote files. No external engine is copied or needed at runtime.",
+  "external_sources": [
+    {
+      "commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+      "git_blob_sha1": "86366ede2f152f19cbdf0d1dbf06b2e4c0971dad",
+      "path": "operator_foundation/theory/01_NATIVE_ALGEBRA.md",
+      "purpose": "Canonical engine ownership and native finite coefficient relations; K here equals K_can R.",
+      "repository": "Parveen117/Recognition-Kernel-Framework"
+    }
+  ],
+  "historical_scope": "Original bridge note and exact script/output are preserved byte for byte. Historical manuscript filenames in that note are provenance claims from its creation, not a fresh audit of all those files. Current local theorem dependencies are pinned above.",
+  "local_upstream_sources": [
+    {
+      "git_blob_sha1": "ee4d361588221a00f9dc23b3beb27b5d59a323d1",
+      "path": "papers/thermo-compass-foundations/THEOREM.md",
+      "sha256": "783caecc1d6d0156576f07d0fea4d3f14c9c4124d1a901aaa1ac0b48c54fd7c4"
+    },
+    {
+      "git_blob_sha1": "a6e80006f0e1543d8567b16574a5683c1048002f",
+      "path": "papers/thermo-phase-field/THEOREM.md",
+      "sha256": "717de52421b2609327dd1e95321fb14d5f91c138f8ef4c4d8c0c1d129f874a1c"
+    },
+    {
+      "git_blob_sha1": "eeab6b70e61d4cb21219afc64e83e87a95930aaf",
+      "path": "papers/uncut-cut-measurement/NATIVE_IOTA_HELICAL_RESPONSE.md",
+      "sha256": "1e0823daac754c44bad137de9515d0e0ee3adfdaa0de9435edc7b36e8a46b71f"
+    },
+    {
+      "git_blob_sha1": "079a9c6616ad8ed8c2d52ddd4f545f6a79de2094",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a00_response_propagation_metric.tex",
+      "sha256": "0f2c319d975c914d7ec39f9ef35aed08a80ad54742f05650c25118ca185d0a20"
+    },
+    {
+      "git_blob_sha1": "437f3de0ab8ed31af3fd9204210e0c3454126f91",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex",
+      "sha256": "fa5ea981f7ffc4c28040df4adcd6d380fa254d47486f62c9f1447ce57bd6562c"
+    },
+    {
+      "git_blob_sha1": "e12070f344fab8b39a77b6abe9f704c516668517",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06b_classical_field_equations.tex",
+      "sha256": "a343509a201f0d5a43f7b15bd190b55b6851ae9bb668cfe47f9af83a06ecf06f"
+    }
+  ],
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R1",
+  "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
+  "recovered_artifacts": [
+    {
+      "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",
+      "sha256": "f16fd197f62564d7daae4169f145099828d116ba588ddc583e3720bf765ab8ce"
+    },
+    {
+      "path": "history/verification.json",
+      "sha256": "965d1ac43bababce41ce59609f50f3f3b5a804f88d04049797859c8388ad9ed5"
+    },
+    {
+      "path": "history/verify_bridge.py",
+      "sha256": "ef84ae61e9113b211b0f9b698157063313f80130066d86b25493749f5d1f6098"
+    }
+  ]
+}
