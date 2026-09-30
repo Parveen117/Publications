@@ -4,6 +4,20 @@ Audit scope: the physics results discussed through this development thread, chec
 
 Both PRs were open and unmerged at the audit. “In Publications” therefore does not mean “on main.” The current research branch is `research/uncut-cut-measurement-2026-09-25`.
 
+**30 September 2026, correction to the development route:** the R9
+Einstein–Maxwell speed audit did not establish the requested full-native
+propagation bridge. The new [native UGD correction NC-1–NC-7](../native-ugd-propagation/THEOREM.md)
+imports the canonical RKF operator engine, Recognition-Seam and Morphic
+calculus, Madhava–Smriti refinement, original UGD numeral operations and EMK
+metric modules. It proves a retained-memory return law for the explicit
+arrow U=RZ, with x_(n+2)=-Z^2 x_n and U^4=Z^4 rather than 1; derives the
+chosen-clock term; and bounds the infinite native tail. It distinguishes
+bilateral sheet transport from a proper one-sided seam and numeral
+multiplication from arrow composition. The classical-sector results below
+remain conditional. Unique physical dynamics and numerical c are not
+derived. [Reproduction and the observed upstream pin limitation](../native-ugd-propagation/README.md)
+are recorded without changing canonical-engine pins.
+
 **Subsequent development, 29 September 2026:** [Thermo phase field PF-1–PF-7](../thermo-phase-field/README.md) now supplies an explicit scalar phase connection, a two-channel local curvature representation, and a declared discrete Maxwell model with charge conservation, field energy and transverse propagation. Its rest-energy/inertial-mass result is conditional on a gapped dispersion and energy/momentum calibration. The inventory below records the original thermo-compass audit; the new package gives the updated field-development scope.
 
 **Further development, 29 September 2026:** [UGD Kähler/signature and propagation action](../ugd-kahler-propagation/README.md) preserves the earlier bridge note and adds GS-1–GS-5 and NP-1–NP-6. These prove the even-index Kähler signature obstruction, solve an explicit convex Monge–Ampère boundary problem, verify a Lorentzian Einstein product with free scale, and reconstruct an action for a selected Clifford propagation law using its native volume multiplier. Weighted conservation fixes a symmetric drift; a mass-term counterexample shows that conservation alone does not guarantee the action. The continuum, constitutive law, density, and physical calibration remain inputs. No Einstein–Hilbert action or measured constants have been derived from native axioms. The original inventory below is retained as an audit record, not overwritten by a stronger physical claim.

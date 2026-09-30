@@ -2,6 +2,19 @@
 
 Author: Monty Dabas. Research development: R9, vacuum speed and physical calibration.
 
+**Development-route correction, 30 September 2026:** the conditional
+Einstein–Maxwell speed calculation below did not complete the requested
+derivation from the full native process. Continue with the source-bound
+[native UGD propagation correction](../native-ugd-propagation/README.md),
+[NC-1–NC-7](../native-ugd-propagation/THEOREM.md). It imports the canonical
+recognition operator engine and original UGD/EMK modules, retains returning
+cut memory and integer sheets, and applies the Recognition-Seam, Morphic and
+Madhava–Smriti calculi. The selected native example obeys
+`x_(n+2)=-Z^2 x_n`, with `U^4=Z^4`, not a sheet-erased identity.
+Its physical transition and clock selection remain open. The results below
+are preserved as conditional sector calculations, not a completed native
+selection of spacetime, dynamics or measured constants.
+
 This package preserves the earlier λ-Hessian/Kähler–Einstein development and
 extends it with an explicit action for a selected native-coefficient propagation
 law. It belongs to Publications PR #5 on
@@ -118,6 +131,7 @@ model. No quantum graviton or numerical dimensional constant is derived.
 
 | Result | Location | Scope |
 |---|---|---|
+| Source-bound recognition return, full integer sheets, Morphic clock term and Madhava–Smriti error bound | [Native correction](../native-ugd-propagation/THEOREM.md), NC-1–NC-7 | Explicit native example consuming the canonical engine and original UGD/EMK modules; a corrected derivation route, not unique physical dynamics or SI c. |
 | Native complex sector, transport compatibility, corrected H/S derivatives, Hessian lift and determinant–Einstein equivalence | [Recovered bridge](history/RKF_UGD_Kahler_Einstein_Bridge.md) | Original note preserved byte for byte; its historical manuscript references are identified as such. |
 | Even-index signature obstruction; hyperbolicity criterion; smooth Monge–Ampère benchmark with convex Dirichlet uniqueness and an inverse variational functional | [Geometry and signature](GEOMETRY_AND_SIGNATURE.md), GS-1–GS-4 | Written deductions with explicit hypotheses; not a general existence theorem. |
 | An explicit Lorentzian Einstein product and a failed gradient-reflection control | [Geometry and signature](GEOMETRY_AND_SIGNATURE.md), GS-5 | A standard product geometry with a freely chosen length scale. |
@@ -158,6 +172,13 @@ the recovered bridge script. CI checks this package alongside the existing
 thermo compass and phase-field packages.
 
 ## Next unresolved derivation
+
+The active next step is the native source/observer/clock/length interface in
+[NC-6](../native-ugd-propagation/THEOREM.md). It must preserve the returning
+memory corner, the integer sheet target, the nonaffine Morphic clock term
+and the Smriti tail. Recovering a known classical sector without that
+interface does not settle native selection. The obligations below remain
+valid inside their declared sectors.
 
 CP-5–CP-8 supply the gauge variation interface and MG-2–MG-5 the metric
 interface. LR supplies an explicit loop-process candidate, its continuum

@@ -1,0 +1,156 @@
+{
+  "protocol": "NATIVE_UGD_PROPAGATION_SOURCE_PINS_R1",
+  "publications_files": [
+    {
+      "path": "papers/emk-ugd-algebra/README.md",
+      "sha256": "f3328f4a8a76aedc3bf1c50c17288f634d7c16b021712e0a9494519e89f1cbba"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/certificates/ugd1_numerals.py",
+      "sha256": "23430ebc060a9a8dd1aab670392bcb82d46dd148c6a643bda87d61a4e206dc85"
+    },
+    {
+      "path": "papers/emk-recognition-geometry/README.md",
+      "sha256": "bb7559a21a236b6d6bb00e69740453078c88eef73dc184d6b882a9f205cfcfae"
+    },
+    {
+      "path": "papers/emk-recognition-geometry/certificates/emkg1_rotational_seam_metric.py",
+      "sha256": "a0a3d503ed4f17a3f2398dbde4c408c90cdfa14e16e8a171178319ec38029ab1"
+    },
+    {
+      "path": "papers/emk-recognition-geometry/certificates/emkg2_global_quotient_holonomy.py",
+      "sha256": "22110bf90e40ab838759fe34f12048417043404b8f8e04ccfa93704bca97fd1c"
+    },
+    {
+      "path": "papers/emk-recognition-geometry/certificates/emkg3_helical_sheet_memory.py",
+      "sha256": "0a627fc63eb9b00b79871fdb0f4c39abdb0b9373c714a458badc6cb9dee9bb65"
+    },
+    {
+      "path": "papers/emk-recognition-geometry/certificates/ugdg1_phase_scale_seam_geometry.py",
+      "sha256": "6d55c76004f9dcc37cab95f8f51566c947ac169c729685928a209caaf0e691af"
+    }
+  ],
+  "publications_parent_commit": "e46c5a2f7a62882271aebf79102a49db490c25ca",
+  "rkf_commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+  "rkf_files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "be3fc3383c3204dcb9a8444e156bd46cba52c523b2327e19dabb0c4bdaa089c4"
+    },
+    {
+      "path": "MATHEMATICS_INDEX.md",
+      "sha256": "f2d8b002c9cd8e431ab746cb72babfb5e443d6544735a76f5916f8bea79fc8a8"
+    },
+    {
+      "path": "MATHEMATICS_INDEX_2026_09_16.md",
+      "sha256": "b638fe2cdaae8f72f3a105a9b5f7cbdd34f46bff5b9777cc03bf3f90a5586dfc"
+    },
+    {
+      "path": "operator_foundation/CANONICAL_HOME.json",
+      "sha256": "6c5a7756ff220e7a9afa7fdb72151781f1777e2099880788f21a1e1b780ced39"
+    },
+    {
+      "path": "operator_foundation/README.md",
+      "sha256": "5fa13d4df90b33597e3c72d1860258d0492d8680583e7b7e3b2e13dddfc6bbc9"
+    },
+    {
+      "path": "operator_foundation/examples/emk_job.json",
+      "sha256": "fd3c9e50cb51050acb9c36b3123fbc4664870c621e5d73bb8763b1050b30c763"
+    },
+    {
+      "path": "operator_foundation/core/dependency_gate.cjs",
+      "sha256": "9a3bbecd03c159536dc17ca827d24d6e644d527adbf6da332460efbb45dbc8d1"
+    },
+    {
+      "path": "operator_foundation/core/native_laurent.cjs",
+      "sha256": "fc84abf52311f89ee3a7bb8c6883412e5f64a65812b0031804b44a2e660c0c8a"
+    },
+    {
+      "path": "operator_foundation/core/native_operator.cjs",
+      "sha256": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+    },
+    {
+      "path": "operator_foundation/core/native_paths.cjs",
+      "sha256": "cc59550c541c078a8b4643e8602691e147179db780e232a53162f604e812e14f"
+    },
+    {
+      "path": "operator_foundation/core/paninian_operator.cjs",
+      "sha256": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+    },
+    {
+      "path": "operator_foundation/core/weighted_completion.cjs",
+      "sha256": "a32af89f0ee013b918eaae67131b7b3c6e7cf39129fafb64c037cf30ac192f4b"
+    },
+    {
+      "path": "operator_foundation/core/workbench.cjs",
+      "sha256": "c12a3138cc326604a1149bc306b8cc338b9e9161516b610504ddbc7d59a1ea6d"
+    },
+    {
+      "path": "operator_foundation/theory/NATIVE_PRIMITIVE_ORDER.md",
+      "sha256": "f1f2fa357d41745445bcaf403784edbec6a17cbd78bc400cbd1229aa682c0fd9"
+    },
+    {
+      "path": "operator_foundation/theory/01_NATIVE_ALGEBRA.md",
+      "sha256": "ea07ab9f0f8a47e63f8ee973638669f596308cec4ed234ced7497a5f7539ecf5"
+    },
+    {
+      "path": "operator_foundation/theory/02_COMPLETION_AND_MEMORY.md",
+      "sha256": "d205729945231c81a035889709f0a217b5a0979ce5299bdf6ed2ea30a5b9c817"
+    },
+    {
+      "path": "operator_foundation/theory/NATIVE_LAURENT_JET_REPAIR.md",
+      "sha256": "7a9ae502453be6200844180da90790603195de80a1109dc13cb2449db419cd5c"
+    },
+    {
+      "path": "operator_foundation/theory/PANINIAN_OPERATOR_COMPILER.md",
+      "sha256": "cbeb9fd821bc134f4510408623fb1c723ab59a00237aa5b505d09cd4621c4eca"
+    },
+    {
+      "path": "operator_foundation/theory/AUTOMATIC_REGULAR_MODEL.md",
+      "sha256": "838a285acf97b05517eb1d3ac7602d249cacd735647c61adb67479797ec41b91"
+    },
+    {
+      "path": "operator_foundation/theory/WEIGHTED_OPERATOR_COMPLETION.md",
+      "sha256": "32a9d9965ba651c26cb9ea145f2205e97745f047be483659bf49fc853ba34d5d"
+    },
+    {
+      "path": "theorum/24_clock_free_recognition_seam_cut_calculus.md",
+      "sha256": "3d7d70f5cd213378c32e90e3c88eb195b48a7ea9e69297353c2eaafd04dbb8b8"
+    },
+    {
+      "path": "theorum/43_bilateral_jet_flow_recognition_capstone_theorem.md",
+      "sha256": "3322a037bd238a933d8c5fbfbe2add845ce1b8c0d76e47de599df357cfd8269a"
+    },
+    {
+      "path": "theorum/44_madhava_smriti_bilateral_jet_flow_closure_theorem.md",
+      "sha256": "343ed21e00cb574bbf237a6872033c4f738178cbe55ed0d8325fba9e2ae7a623"
+    },
+    {
+      "path": "theorum/morphic_calculus/README.md",
+      "sha256": "70f417c5c88d622157a1636ef27e1b475b89ca72d2cd39ed5a3c623d28765d18"
+    },
+    {
+      "path": "theorum/morphic_calculus/main.tex",
+      "sha256": "b8179549dc097417b10bde505c4025924c591702052fb1ef9b294d6077570c17"
+    },
+    {
+      "path": "theorum/morphic_calculus/RNKE_CERTIFICATE.json",
+      "sha256": "494b7c9fae0865bd19757b39edb8adee2b5f93ec66deef29acb13173a6e78d18"
+    },
+    {
+      "path": "theorum/morphic_algebra/main.tex",
+      "sha256": "41673c8ecf55b6208d0eb78c83593e9f3b2fe8b0f538d3ac6284f405c7cad3a3"
+    },
+    {
+      "path": "theorum/morphic_algebra/RNKE_CERTIFICATE.json",
+      "sha256": "3c8b02a6b86add8d4c803747b3000f1ad3f1fe0cf816f89b8674d309d5713830"
+    },
+    {
+      "path": "research/recognition_return/THEOREM.md",
+      "sha256": "a51aebc61709ce5ffdf10236e0cf602d29d2770da34e65a61b2b6e65cd1669d9"
+    }
+  ],
+  "rkf_repository": "Parveen117/Recognition-Kernel-Framework",
+  "runtime_contract": "Import the unchanged canonical engine using --rkf-root. No vendored arithmetic replacement. Python 3.11/3.12 for the unchanged geometry/numeral modules.",
+  "scope": "A source audit and specified native transport example, not a unique physical propagator or empirical constant prediction. Historical broad manuscript claims retain their separate RNKE status."
+}
