@@ -7,6 +7,9 @@ on:
       - 'papers/thermo-phase-field/**'
       - 'papers/ugd-kahler-propagation/**'
       - 'papers/native-ugd-propagation/**'
+      - 'papers/coherence-first-thermodynamics/**'
+      - 'papers/curvature-information-duality/**'
+      - 'papers/cut-first-equivalence/certificates/**'
       - 'papers/thermodynamic-response-corrections/**'
       - 'papers/uncut-cut-measurement/**'
       - 'papers/emk-recognition-geometry/certificates/**'
@@ -18,6 +21,9 @@ on:
       - 'papers/thermo-phase-field/**'
       - 'papers/ugd-kahler-propagation/**'
       - 'papers/native-ugd-propagation/**'
+      - 'papers/coherence-first-thermodynamics/**'
+      - 'papers/curvature-information-duality/**'
+      - 'papers/cut-first-equivalence/certificates/**'
       - 'papers/thermodynamic-response-corrections/**'
       - 'papers/uncut-cut-measurement/**'
       - 'papers/emk-recognition-geometry/certificates/**'
@@ -50,6 +56,8 @@ jobs:
           persist-credentials: false
       - name: Check native return, integer sheets, calculus and EMK geometry
         run: node papers/native-ugd-propagation/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
+      - name: Check coherence-first cuts, thermodynamic energy and information ledger
+        run: node papers/coherence-first-thermodynamics/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
       - name: Check thermo transport, recovered results and source pins
         run: python papers/thermo-compass-foundations/verify.py --check
       - name: Check phase field, conserved energy and propagation

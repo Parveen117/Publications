@@ -4,6 +4,19 @@ Audit scope: the physics results discussed through this development thread, chec
 
 Both PRs were open and unmerged at the audit. “In Publications” therefore does not mean “on main.” The current research branch is `research/uncut-cut-measurement-2026-09-25`.
 
+**30 September 2026, coherence-first thermodynamic construction:**
+[CF-1–CF-8](../coherence-first-thermodynamics/THEOREM.md) give an explicit
+native cut and energy model for dissolution of distinguishability at a centre.
+The declared formation energy W=kappa*r^nu+epsilon*s^2/2, 1<nu<2, has a
+stable punctured thermo chart, vanishing central formation energy and divergent
+local response density with finite integrated measure. Its anisotropic term
+generates radial rotation of energy-selected native seams and exactly
+computable response curvature. The isotropic control remains flat away from
+its singular apex. Original CID covariance routines realize the information
+ledger pointwise. Native cut order and returning memory are retained. This is
+a conditional construction from a proposed principle, not a unique physical
+law, infinite Shannon information, spacetime gravity or a measured constant.
+
 **30 September 2026, correction to the development route:** the R9
 Einstein–Maxwell speed audit did not establish the requested full-native
 propagation bridge. The new [native UGD correction NC-1–NC-7](../native-ugd-propagation/THEOREM.md)

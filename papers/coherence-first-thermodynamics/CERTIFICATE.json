@@ -1,0 +1,693 @@
+{
+  "native_checks": [
+    "native_distinction_plane",
+    "apertures_and_centre_direction_dependence",
+    "formation_record_reconstruction_and_returning_memory",
+    "energy_derived_seam_uses_native_square_law"
+  ],
+  "native_proofs": {
+    "cut_order": {
+      "input": {
+        "from": "*",
+        "terms": [
+          [
+            [
+              "R"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "R",
+              "K",
+              "K"
+            ],
+            [
+              "-1/4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "R",
+              "K"
+            ],
+            [
+              "1/4",
+              "0"
+            ]
+          ]
+        ],
+        "to": "*"
+      },
+      "output": {
+        "from": "*",
+        "terms": [],
+        "to": "*"
+      },
+      "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+      "protocol": "NATIVE_REWRITE_WITNESS_V1",
+      "steps": [
+        {
+          "coefficient": [
+            "1/4",
+            "0"
+          ],
+          "position": 0,
+          "rule": "KR",
+          "word": [
+            "K",
+            "R",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "-1/2",
+            "0"
+          ],
+          "position": 1,
+          "rule": "KK",
+          "word": [
+            "R",
+            "K",
+            "K"
+          ]
+        }
+      ]
+    },
+    "invisible": {
+      "input": {
+        "from": "*",
+        "terms": [
+          [
+            [
+              "R"
+            ],
+            [
+              "1/4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "R",
+              "K"
+            ],
+            [
+              "1/4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "R"
+            ],
+            [
+              "1/4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "R",
+              "K"
+            ],
+            [
+              "1/4",
+              "0"
+            ]
+          ]
+        ],
+        "to": "*"
+      },
+      "output": {
+        "from": "*",
+        "terms": [],
+        "to": "*"
+      },
+      "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+      "protocol": "NATIVE_REWRITE_WITNESS_V1",
+      "steps": [
+        {
+          "coefficient": [
+            "1/4",
+            "0"
+          ],
+          "position": 0,
+          "rule": "KR",
+          "word": [
+            "K",
+            "R",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "-1/4",
+            "0"
+          ],
+          "position": 1,
+          "rule": "KK",
+          "word": [
+            "R",
+            "K",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "1/4",
+            "0"
+          ],
+          "position": 0,
+          "rule": "KR",
+          "word": [
+            "K",
+            "R"
+          ]
+        }
+      ]
+    },
+    "return": {
+      "input": {
+        "from": "*",
+        "terms": [
+          [
+            [],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "R",
+              "R"
+            ],
+            [
+              "1/8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "R",
+              "R",
+              "K"
+            ],
+            [
+              "1/8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "R",
+              "K",
+              "R"
+            ],
+            [
+              "-1/8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "R",
+              "R"
+            ],
+            [
+              "1/8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "R",
+              "K",
+              "R",
+              "K"
+            ],
+            [
+              "-1/8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "R",
+              "R",
+              "K"
+            ],
+            [
+              "1/8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "R",
+              "K",
+              "R"
+            ],
+            [
+              "-1/8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "R",
+              "K",
+              "R",
+              "K"
+            ],
+            [
+              "-1/8",
+              "0"
+            ]
+          ]
+        ],
+        "to": "*"
+      },
+      "output": {
+        "from": "*",
+        "terms": [],
+        "to": "*"
+      },
+      "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+      "protocol": "NATIVE_REWRITE_WITNESS_V1",
+      "steps": [
+        {
+          "coefficient": [
+            "-1/8",
+            "0"
+          ],
+          "position": 0,
+          "rule": "KR",
+          "word": [
+            "K",
+            "R",
+            "K",
+            "R",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "1/8",
+            "0"
+          ],
+          "position": 1,
+          "rule": "KK",
+          "word": [
+            "R",
+            "K",
+            "K",
+            "R",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "-1/8",
+            "0"
+          ],
+          "position": 0,
+          "rule": "KR",
+          "word": [
+            "K",
+            "R",
+            "K",
+            "R"
+          ]
+        },
+        {
+          "coefficient": [
+            "1/8",
+            "0"
+          ],
+          "position": 1,
+          "rule": "RR",
+          "word": [
+            "K",
+            "R",
+            "R",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "1/8",
+            "0"
+          ],
+          "position": 1,
+          "rule": "KK",
+          "word": [
+            "R",
+            "K",
+            "K",
+            "R"
+          ]
+        },
+        {
+          "coefficient": [
+            "-1/8",
+            "0"
+          ],
+          "position": 1,
+          "rule": "KR",
+          "word": [
+            "R",
+            "K",
+            "R",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "1/8",
+            "0"
+          ],
+          "position": 0,
+          "rule": "RR",
+          "word": [
+            "R",
+            "R",
+            "K",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "1/8",
+            "0"
+          ],
+          "position": 1,
+          "rule": "RR",
+          "word": [
+            "K",
+            "R",
+            "R"
+          ]
+        },
+        {
+          "coefficient": [
+            "-1/8",
+            "0"
+          ],
+          "position": 1,
+          "rule": "KR",
+          "word": [
+            "R",
+            "K",
+            "R"
+          ]
+        },
+        {
+          "coefficient": [
+            "3/8",
+            "0"
+          ],
+          "position": 0,
+          "rule": "RR",
+          "word": [
+            "R",
+            "R",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "-1/4",
+            "0"
+          ],
+          "position": 0,
+          "rule": "KK",
+          "word": [
+            "K",
+            "K"
+          ]
+        },
+        {
+          "coefficient": [
+            "1/4",
+            "0"
+          ],
+          "position": 0,
+          "rule": "RR",
+          "word": [
+            "R",
+            "R"
+          ]
+        }
+      ]
+    }
+  },
+  "protocol": "COHERENCE_FIRST_THERMO_R1",
+  "rkf_commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+  "scope": {
+    "coherence_first_is_proposed_principle": true,
+    "constitutive_energy_declared": true,
+    "independent_proof_assistant": false,
+    "infinite_Shannon_information_derived": false,
+    "physical_clock_selected": false,
+    "spacetime_gravity_derived": false,
+    "upstream_engine_recertified": false
+  },
+  "source_sha256": {
+    "README.md": "1be78bc7170ffc02cc67440869ce08964dd495717f5dd94b5a1f5e411ae6a65a",
+    "SOURCE_PINS.json": "881ed4ba4041671d2bfd69f3181ed1966d003832f3a4a4ab1f983581c4028699",
+    "THEOREM.md": "a13616c39bed8bc453249beb4c71e7db73d338f5a0627ff1e75de9a5f7b4d0fb",
+    "controls.py": "7df675cebaf0fe3d03e738e33d2ea31f17d7eae1c212a983680d17e1d0b5e698",
+    "verify.cjs": "8212f31a5bfe5177122310ccb93b1a6e2e6bc14151e5a16bf0fe538804a20e52"
+  },
+  "status": "PASS_EXACT_CONDITIONAL_NATIVE_CONTROLS",
+  "thermo_and_information": {
+    "benchmark": [
+      {
+        "determinant": "1/2",
+        "formation": "2/3",
+        "r": "1",
+        "radial_response": "1"
+      },
+      {
+        "determinant": "8",
+        "formation": "1/96",
+        "r": "1/16",
+        "radial_response": "1/4"
+      }
+    ],
+    "cid_examples": [
+      {
+        "determinant": "8",
+        "t": "1/2"
+      },
+      {
+        "determinant": "8",
+        "t": "1/2"
+      },
+      {
+        "determinant": "8",
+        "t": "1/2"
+      },
+      {
+        "determinant": "8",
+        "t": "1/2"
+      },
+      {
+        "determinant": "8",
+        "t": "1/2"
+      },
+      {
+        "determinant": "8",
+        "t": "1/2"
+      },
+      {
+        "determinant": "1/2",
+        "t": "1"
+      },
+      {
+        "determinant": "1/2",
+        "t": "1"
+      },
+      {
+        "determinant": "1/2",
+        "t": "1"
+      },
+      {
+        "determinant": "1/2",
+        "t": "1"
+      },
+      {
+        "determinant": "1/2",
+        "t": "1"
+      },
+      {
+        "determinant": "1/2",
+        "t": "1"
+      },
+      {
+        "determinant": "1/32",
+        "t": "2"
+      },
+      {
+        "determinant": "1/32",
+        "t": "2"
+      },
+      {
+        "determinant": "1/32",
+        "t": "2"
+      },
+      {
+        "determinant": "1/32",
+        "t": "2"
+      },
+      {
+        "determinant": "1/32",
+        "t": "2"
+      },
+      {
+        "determinant": "1/32",
+        "t": "2"
+      }
+    ],
+    "counts": {
+      "cid_ledgers": 54,
+      "energy_jets": 216,
+      "full_christoffel_comparisons": 216,
+      "radial_rotation": 212,
+      "thermo_closures": 216
+    },
+    "curvature_signs": [
+      -1,
+      0,
+      1
+    ],
+    "fixed_outcome_probabilities": [
+      "1/4",
+      "1/4",
+      "1/8",
+      "1/8",
+      "1/4"
+    ],
+    "native_seams": [
+      {
+        "a": "-32/3",
+        "b": "0",
+        "squared_norm": "1024/9"
+      },
+      {
+        "a": "32/3",
+        "b": "0",
+        "squared_norm": "1024/9"
+      },
+      {
+        "a": "224/75",
+        "b": "-256/25",
+        "squared_norm": "1024/9"
+      },
+      {
+        "a": "-224/75",
+        "b": "256/25",
+        "squared_norm": "1024/9"
+      },
+      {
+        "a": "-32/3",
+        "b": "0",
+        "squared_norm": "1024/9"
+      },
+      {
+        "a": "224/75",
+        "b": "-256/25",
+        "squared_norm": "1024/9"
+      },
+      {
+        "a": "-125/12",
+        "b": "0",
+        "squared_norm": "15625/144"
+      },
+      {
+        "a": "131/12",
+        "b": "0",
+        "squared_norm": "17161/144"
+      },
+      {
+        "a": "971/300",
+        "b": "-256/25",
+        "squared_norm": "415201/3600"
+      },
+      {
+        "a": "-821/300",
+        "b": "256/25",
+        "squared_norm": "404449/3600"
+      },
+      {
+        "a": "-125/12",
+        "b": "0",
+        "squared_norm": "15625/144"
+      },
+      {
+        "a": "971/300",
+        "b": "-256/25",
+        "squared_norm": "415201/3600"
+      },
+      {
+        "a": "1/2",
+        "b": "0",
+        "squared_norm": "1/4"
+      },
+      {
+        "a": "3/2",
+        "b": "0",
+        "squared_norm": "9/4"
+      },
+      {
+        "a": "57/50",
+        "b": "-12/25",
+        "squared_norm": "153/100"
+      },
+      {
+        "a": "43/50",
+        "b": "12/25",
+        "squared_norm": "97/100"
+      },
+      {
+        "a": "1/2",
+        "b": "0",
+        "squared_norm": "1/4"
+      },
+      {
+        "a": "57/50",
+        "b": "-12/25",
+        "squared_norm": "153/100"
+      }
+    ],
+    "scope": {
+      "SI_c": false,
+      "global_fixed_statistic_Fisher_model": false,
+      "infinite_total_information": false,
+      "physical_gravity": false
+    }
+  }
+}
