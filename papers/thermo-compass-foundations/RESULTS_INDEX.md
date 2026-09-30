@@ -1,5 +1,18 @@
 # Important results: locations and preservation status
 
+## Native critical response and third probe — CR-1–CR-5
+
+[Critical-channel proof and controls](../native-critical-response/README.md)
+derive the simple pole of the native return operator's own inverse at exact
+cut closure. Its normalized coefficient is (1+2b)P−, visible only to a source
+and observer retaining the complementary channel. An exact scalar identity
+provides a stable normalized-response bound with the aperture error retained.
+The preceding two-reading fixture predicts a third response as the positive
+root of 55x²+56x−132=0, with no additional fitted parameter. This is a model
+prediction, not an experiment. The inverse return is not identified as a
+photon propagator; **numerical alpha remains NOT DERIVED**.
+
+
 ## Native interaction-strength identification — NI-1–NI-4
 
 [Symmetric-probe identification](../native-return-identification/README.md)

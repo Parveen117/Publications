@@ -1,0 +1,49 @@
+{
+  "protocol": "NATIVE_CRITICAL_RESPONSE_SOURCE_PINS_R1",
+  "rkf_commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+  "publications_parent_commit": "f4fc8c49b5e18e069cb9504106bdef3c2326dc3c",
+  "rkf_files": [
+    {
+      "path": "operator_foundation/CANONICAL_HOME.json",
+      "sha256": "6c5a7756ff220e7a9afa7fdb72151781f1777e2099880788f21a1e1b780ced39"
+    },
+    {
+      "path": "operator_foundation/core/native_operator.cjs",
+      "sha256": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+    },
+    {
+      "path": "operator_foundation/core/paninian_operator.cjs",
+      "sha256": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+    },
+    {
+      "path": "operator_foundation/theory/01_NATIVE_ALGEBRA.md",
+      "sha256": "ea07ab9f0f8a47e63f8ee973638669f596308cec4ed234ced7497a5f7539ecf5"
+    },
+    {
+      "path": "research/recognition_return/return_solver.cjs",
+      "sha256": "adfe2a69d04c387adf3a4809de0f9f57583843c249a87ba3ce7b9988d161009f"
+    },
+    {
+      "path": "research/recognition_return/r2/variable_return.cjs",
+      "sha256": "5f09ab7be28bf2ed24ddf525bc23d18aae8a19f2179c60d4ff8fd30f57c9fe73"
+    },
+    {
+      "path": "research/recognition_return/r2/THEOREM.md",
+      "sha256": "a37d51e38cf88fb65a7bc2239982a270bc59bdc4c6d4b6e10a6c369358d24bcc"
+    }
+  ],
+  "publications_files": [
+    {
+      "path": "papers/native-alpha-selection/THEOREM.md",
+      "sha256": "54152003202564b83b90dfa875731905bda242458b9e8d7887c3fdfbf4dce54c"
+    },
+    {
+      "path": "papers/native-return-identification/THEOREM.md",
+      "sha256": "5f960f4434d9203a56a8d43518d021fcf60b59785dace8ecebdf2dc19a9a2a35"
+    },
+    {
+      "path": "papers/native-return-identification/CERTIFICATE.json",
+      "sha256": "e81a2b12ceef78f93a1864530cfd4369d2197e1248cb08891a69e5f089ae3f82"
+    }
+  ]
+}
