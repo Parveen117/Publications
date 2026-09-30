@@ -148,9 +148,19 @@
       "path": "papers/ugd-kahler-propagation/perturbation_stability.py",
       "sha256": "1ded774543220643cd9e1e6eda62139a2fb028fafa450ab3aebd3e38907e8dd4",
       "source_commit": "52e15256540a6adc32f016efa352b3c5e23a58dd"
+    },
+    {
+      "git_blob_sha1": "55ccdf38db2706e978b12bc9b43ee732c741b1b0",
+      "path": "papers/ugd-kahler-propagation/ANISOTROPIC_COSMOLOGY.md",
+      "sha256": "ec077526914f46ae607e86ca85abee21729d7208834aec95b82a30255c630446"
+    },
+    {
+      "git_blob_sha1": "b1327efdd4797daea14536c22b459fe50e464474",
+      "path": "papers/ugd-kahler-propagation/anisotropic_cosmology.py",
+      "sha256": "7b9100a8e8246959c605d0aaf56f7313241c4ef6f1f8bc357fb393cb85699bc4"
     }
   ],
-  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R8",
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R9",
   "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
   "r2_parent_commit": "08339e0c1dc1e517185784eff3c6230167696d86",
   "r2_scope": "CP-1--CP-8 consume the unchanged NP proof, matrix fixtures and PF phase theorem. Native response-cone signature and phase-current identities are algebraic; the continuum, gauge kinetic law, backgrounds and calibrations remain supplied.",
@@ -215,6 +225,20 @@
     }
   ],
   "r8_scope": "BI-1--BI-8 consume unchanged GS/NP/CP/MG/LR/SM/CS/PS sources. General homogeneous Bianchi I expansion yields native spin-shear stress and a constant-eigenvalue volume-rescaled shear law. The rest sector has explicit volume, phase, nondiagonal coframe and torsion solutions, with nonlinear future shear decay. Linearization completes the five homogeneous anisotropic metric modes around CS. Diagonal spin alignment, selected scalar-readout nonuniqueness, a fixed parallel-frame 3/2 contact-phase/rotation relation and exact original-equation controls are retained. Full spatially varying Einstein-matter, general nonlinear stability and physical calibration remain open.",
+  "r9_parent_commit": "ae6c1c370ea7cf5ba801106f85aab6953ec81863",
+  "r9_primary_references": [
+    {
+      "scope": "Exact defining SI value of c; a definition, not a fitted experimental target.",
+      "url": "https://www.bipm.org/en/si-base-units/metre"
+    },
+    {
+      "arxiv": "https://arxiv.org/abs/1710.05834",
+      "institutional_pdf": "https://ntrs.nasa.gov/api/citations/20170011356/downloads/20170011356.pdf",
+      "scope": "Section 4.1 equation (1): historical emission-dependent GW170817 speed interval; numerical metadata in SPEED_REFERENCE_DATA.json. No raw-data reanalysis or latest-bound claim.",
+      "url": "https://doi.org/10.3847/2041-8213/aa920c"
+    }
+  ],
+  "r9_scope": "SC-1--SC-8 consume unchanged PF/GS/NP/CP/MG/LR/SM/CS/PS/BI sources. Exact gauge-quotient principal symbols in an Einstein vacuum with zero background spinor and field strength give two photon and two classical tensor polarizations on the shared metric cone, plus the same native matter wavefront. The conditional ratio c_GW/c_gamma=1 is consistent with the published GW170817 interval under its emission assumptions; it is inherited from Einstein-Maxwell and is not a new discriminator against GR. All positive native chart speeds remain admitted before constitutive/calibration selection. SI c is exactly defined, massive group speed differs from the wavefront, and finite-lattice dispersion remains separate. No primitive-only physical constant, general matter-background characteristic theorem, uniquely selected action or quantum graviton is claimed.",
   "recovered_artifacts": [
     {
       "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",

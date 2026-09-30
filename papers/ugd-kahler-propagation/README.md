@@ -1,6 +1,6 @@
 # UGD coefficient geometry and a variational propagation sector
 
-Author: Monty Dabas. Research development: R8, rotating shear and exact anisotropic cosmology.
+Author: Monty Dabas. Research development: R9, vacuum speed and physical calibration.
 
 This package preserves the earlier λ-Hessian/Kähler–Einstein development and
 extends it with an explicit action for a selected native-coefficient propagation
@@ -102,6 +102,20 @@ stress. The fixed parallel-frame contact phase/rotation ratio is 3/2 within
 this action. These results extend the source-bound model and credit classical
 Einstein–Dirac precedents; they do not select a physical action or constants.
 
+**R9: vacuum speed and calibration.** [SC-1–SC-8](SPEED_AND_CALIBRATION.md)
+derive the physical characteristic kernels of the existing common-metric
+vacuum action: two photon and two classical metric polarizations share its
+null cone. Thus c_GW/c_gamma=1 in the geometric-optics limit, consistent with
+the specified published GW170817 bound. This is an inherited Einstein–Maxwell
+prediction, not a new discriminator against GR or a primitive-only selection.
+Native matter shares the wavefront while a massive mode has a smaller group
+speed. An explicit admissible speed family and a different-metric control
+expose the unselected constitutive/clock/length inputs. The SI value of c is
+defined exactly, so choosing units to reproduce it is not an independent
+prediction. [Reference data](SPEED_REFERENCE_DATA.json) retain the external
+definition and the observation's emission assumptions separately from the
+model. No quantum graviton or numerical dimensional constant is derived.
+
 | Result | Location | Scope |
 |---|---|---|
 | Native complex sector, transport compatibility, corrected H/S derivatives, Hessian lift and determinant–Einstein equivalence | [Recovered bridge](history/RKF_UGD_Kahler_Einstein_Bridge.md) | Original note preserved byte for byte; its historical manuscript references are identified as such. |
@@ -115,6 +129,7 @@ Einstein–Dirac precedents; they do not select a physical action or constants.
 | Analytic coupled spinor/coframe/torsion family with full field-equation controls | [Coupled cosmological solution](COUPLED_COSMOLOGICAL_SOLUTION.md), CS-1–CS-8 | Neutral homogeneous rest sector with an isotropic metric and polarized torsion; exact positive-Lambda solution and scalar-readout counterexample, not general PDE existence or empirical cosmology. |
 | Coupled homogeneous linear stability, gradient leakage, and an exact spatial matter gain bound | [Perturbation stability](PERTURBATION_STABILITY.md), PS-1–PS-8 | All eight homogeneous matter components retained; spatial estimate holds on prescribed geometry. BI below adds homogeneous shear; full inhomogeneous gravity and general nonlinear stability remain open. |
 | Spin-shear stress, exact nondiagonal coframe, nonlinear rest-family isotropization and five homogeneous shear modes | [Anisotropic cosmology](ANISOTROPIC_COSMOLOGY.md), BI-1–BI-8 | General Bianchi I spatial metric; nonlinear solution restricted to homogeneous rest matter, with homogeneous linear completion around CS. Spatially varying gravity and general nonlinear stability remain open. |
+| Vacuum characteristic quotient, common speed ratio and calibration nonselection | [Speed and calibration](SPEED_AND_CALIBRATION.md), SC-1–SC-8 | Existing common-metric Einstein vacuum; inherited ratio 1 is consistent with a specified published bound. No primitive-only SI speed, new distinction from GR or quantum graviton is derived. |
 | Exact reproducible controls and source hashes | [Certificate](CERTIFICATE.json), [verifier](verify.py), [source pins](SOURCE_PINS.json) | Finite rational checks support the written proofs; they are not a proof assistant or empirical validation. |
 
 The current thermo programme starts with a stable fundamental relation U(S,V)
@@ -156,7 +171,10 @@ is selection of the module, readout, adapter, matter couplings,
 inverse-length scale and action normalization by an independently specified
 native process principle. Complete return records alone retain the LR-8 scale
 ambiguity, and the naive positive-Lambda Cartan coupling does not produce SM's
-mass term. G, c, Λ, α, hbar and particle masses remain unpredicted. Quantum
+mass term. SC now proves the conditional vacuum speed ratio and identifies
+the independent constitutive/calibration input needed for an operational
+native speed relation. G, c in SI, Λ, α, hbar and particle masses remain
+unpredicted from primitive laws; c's SI numeral is itself a definition. Quantum
 statistics, the generic spatially varying Einstein–matter Cauchy problem,
 full spatially inhomogeneous stability and nonlinear stability for general
 matter data remain open. Sixteen thermo

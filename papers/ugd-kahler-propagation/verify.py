@@ -15,6 +15,7 @@ import spin_matter
 import coupled_cosmology
 import perturbation_stability
 import anisotropic_cosmology
+import speed_calibration
 import thermo_gauge
 
 HERE = Path(__file__).resolve().parent
@@ -317,7 +318,7 @@ def generate():
     paths = sorted(str(p.relative_to(HERE)) for p in HERE.rglob('*')
                    if p.is_file() and '__pycache__' not in p.parts and p.suffix in ('.md', '.py', '.json')
                    and p.name != 'CERTIFICATE.json')
-    return dict(protocol='UGD_KAHLER_PROPAGATION_R8', status='PASS_EXACT_CONDITIONAL_CONTROLS',
+    return dict(protocol='UGD_KAHLER_PROPAGATION_R9', status='PASS_EXACT_CONDITIONAL_CONTROLS',
                 algebra=algebra_checks(), symbols=symbol_checks(), geometry=geometry_checks(),
                 balance=variable_balance_checks(), action=action_checks(), recovered=recovered,
                 thermo_gauge=thermo_gauge.run(),
@@ -327,10 +328,11 @@ def generate():
                 coupled_cosmology=coupled_cosmology.run(),
                 perturbation_stability=perturbation_stability.run(),
                 anisotropic_cosmology=anisotropic_cosmology.run(),
+                speed_calibration=speed_calibration.run(),
                 local_upstream_pins_checked=len(pins['local_upstream_sources']),
                 external_pins_scope=pins['external_dependency_check_scope'],
                 source_sha256={p: hashlib.sha256((HERE/p).read_bytes()).hexdigest() for p in paths},
-                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG/LR/SM/CS/PS/BI notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures and truncated series are not universal proofs',
+                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG/LR/SM/CS/PS/BI/SC notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures and truncated series are not universal proofs',
                                 physical_signature_selection='NOT_DERIVED_FROM_NATIVE_AXIOMS',
                                 full_seam_faithful_representation='NOT_CLAIMED',
                                 lambda_to_propagation_coframe='NOT_SELECTED_BY_NATIVE_PROCESS',
@@ -353,7 +355,11 @@ def generate():
                                 cosmological_benchmark='SUPPLIED_DIMENSIONLESS_PARAMETERS_NOT_PHYSICAL_CALIBRATION',
                                 geometric_regularization='NOT_CLAIMED; SINGULAR_PAST_ENDPOINT_WITH_DIVERGENT_TORSION',
                                 constants_G_c_Lambda_alpha_hbar='NOT_PREDICTED',
-                                empirical_or_independent_review='NOT_PERFORMED',
+                                vacuum_speed_ratio='c_GW/c_gamma=1_CONDITIONAL_ON_SHARED_METRIC_ACTION_SC6; NOT_PRIMITIVE_ONLY_OR_DISTINCT_FROM_GR',
+                                speed_calibration='NATIVE_WAVE_FAMILY_ADMITS_ALL_POSITIVE_SPEEDS; SI_c_IS_DEFINED_EXACT_NOT_A_FIT_TARGET',
+                                observational_comparison='SC7_CONSISTENT_WITH_PUBLISHED_GW170817_EMISSION_DEPENDENT_BOUND; NO_RAW_DATA_REANALYSIS_OR_NEW_EMPIRICAL_DISCRIMINATOR',
+                                empirical_or_independent_review='LITERATURE_CONSISTENCY_COMPARISON_SC7_ONLY; INDEPENDENT_EXPERIMENTAL_VALIDATION_AND_REVIEW_NOT_PERFORMED',
+                                quantum_graviton='NOT_DERIVED; SC4_TWO_CLASSICAL_TENSOR_POLARIZATIONS_ONLY',
                                 formal_proof_assistant='NOT_PERFORMED'))
 
 
@@ -392,6 +398,9 @@ def main():
                           anisotropic_coframe_equations=result['anisotropic_cosmology']['original']['coframe_equations'],
                           anisotropic_stress_forms=result['anisotropic_cosmology']['algebra']['universal_spatial_stress_forms'],
                           homogeneous_shear_mode_pairings=result['anisotropic_cosmology']['coframe']['five_shear_mode_pairings'],
+                          speed_ratio=result['speed_calibration']['comparison']['speed_ratio'],
+                          speed_observational_comparison=result['speed_calibration']['comparison']['comparison'],
+                          independent_principal_ricci_columns=result['speed_calibration']['characteristics']['independent_ricci_columns'],
                           symbol_checks=result['symbols']['covectors_checked']), sort_keys=True))
 
 

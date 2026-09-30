@@ -117,7 +117,7 @@
     "coupled_einstein_matter_PDE_existence": "EXPLICIT_HOMOGENEOUS_NEUTRAL_REST_FLRW_AND_GENERAL_BIANCHI_I_FAMILIES_CS_BI; GENERAL_CAUCHY_PROBLEM_OPEN",
     "curved_spin_matter_coupling": "CONDITIONAL_DOUBLED_REAL_CLASSICAL_ACTION_SM1_SM6",
     "einstein_hilbert_action": "CONDITIONAL_NATIVE_LOOP_LIMIT_LR1_LR4_NOT_PRIMITIVE_SELECTION",
-    "empirical_or_independent_review": "NOT_PERFORMED",
+    "empirical_or_independent_review": "LITERATURE_CONSISTENCY_COMPARISON_SC7_ONLY; INDEPENDENT_EXPERIMENTAL_VALIDATION_AND_REVIEW_NOT_PERFORMED",
     "formal_proof_assistant": "NOT_PERFORMED",
     "full_seam_faithful_representation": "NOT_CLAIMED",
     "geometric_regularization": "NOT_CLAIMED; SINGULAR_PAST_ENDPOINT_WITH_DIVERGENT_TORSION",
@@ -127,14 +127,18 @@
     "massive_multiplier_minimality": "TWO_COPIES_WITHIN_CONSTANT_SKEW_MULTIPLIERS_ON_FIXED_REAL_FOUR_MODULE_COPIES",
     "native_readout_and_module_selection": "NOT_DERIVED_FROM_PRIMITIVE_LAWS",
     "nonlinear_anisotropic_result": "EXACT_REST_BIANCHI_I_FAMILY_WITH_FUTURE_SHEAR_DECAY_BI3_BI6; NOT_GENERAL_NONLINEAR_STABILITY",
+    "observational_comparison": "SC7_CONSISTENT_WITH_PUBLISHED_GW170817_EMISSION_DEPENDENT_BOUND; NO_RAW_DATA_REANALYSIS_OR_NEW_EMPIRICAL_DISCRIMINATOR",
     "physical_particle_masses_and_quantum_statistics": "NOT_DERIVED",
     "physical_signature_selection": "NOT_DERIVED_FROM_NATIVE_AXIOMS",
+    "quantum_graviton": "NOT_DERIVED; SC4_TWO_CLASSICAL_TENSOR_POLARIZATIONS_ONLY",
     "rest_sector_gradient_closure": "FAILS_FOR_EVERY_NONZERO_WAVEVECTOR_PS4",
     "spatial_matter_stability": "GLOBAL_FUTURE_LINEAR_Hr_BOUND_ON_PRESCRIBED_CS_GEOMETRY_PS5_PS6; NOT_FULL_EINSTEIN_MATTER_PERTURBATIONS",
+    "speed_calibration": "NATIVE_WAVE_FAMILY_ADMITS_ALL_POSITIVE_SPEEDS; SI_c_IS_DEFINED_EXACT_NOT_A_FIT_TARGET",
     "spin_shear_rotation": "CONDITIONAL_NATIVE_STRESS_COMMUTATOR_AND_FIXED_PARALLEL_FRAME_PHASE_RELATION; NOT_QUANTUM_SPIN_OR_EMPIRICAL_CALIBRATION",
     "thermo_to_metric_variation": "EXPLICIT_LOCAL_CONSTITUTIVE_ADAPTER_MG5",
     "torsion_elimination": "FULL_CONNECTION_SOLUTION_FOR_ZERO_HOLST_WITH_CONTACT_TERM_RETAINED",
-    "universal_proofs": "Written in GS/NP/CP/MG/LR/SM/CS/PS/BI notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures and truncated series are not universal proofs"
+    "universal_proofs": "Written in GS/NP/CP/MG/LR/SM/CS/PS/BI/SC notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures and truncated series are not universal proofs",
+    "vacuum_speed_ratio": "c_GW/c_gamma=1_CONDITIONAL_ON_SHARED_METRIC_ACTION_SC6; NOT_PRIMITIVE_ONLY_OR_DISTINCT_FROM_GR"
   },
   "coupled_cosmology": {
     "benchmark": {
@@ -298,7 +302,7 @@
     ],
     "monge_ampere_jet_checks": 9
   },
-  "local_upstream_pins_checked": 24,
+  "local_upstream_pins_checked": 26,
   "loop_curvature": {
     "action_variation": {
       "compared_to": "Unchanged MG Einstein-tensor-checked action",
@@ -658,7 +662,7 @@
       "volume_phase_forcing_checked": true
     }
   },
-  "protocol": "UGD_KAHLER_PROPAGATION_R8",
+  "protocol": "UGD_KAHLER_PROPAGATION_R9",
   "recovered": {
     "centralizer_commutators": "exact",
     "direct_Levi_Civita_vs_logdet_Ricci": [
@@ -727,8 +731,10 @@
     "NATIVE_METRIC_DYNAMICS.md": "b42adbac04f790d0593da14fce6649a6a8a94eabe3d2c31588ae95ff71d07202",
     "NATIVE_PROPAGATION_ACTION.md": "6e96e62b7b15c63fba32122c2addfc2984c3007e08cf69cd5b08f4dbd08b3345",
     "PERTURBATION_STABILITY.md": "13c2300b776d4ba928aef2d521f5aa930bac7082ecc18a763ef4915e56acac47",
-    "README.md": "62765759afc5c90cf5433fc073d548737a34b9dd14404e1638f711aeefdd0aca",
-    "SOURCE_PINS.json": "159939f4057a7d26675a4825633db663a2994182adabc8a55ed2ed2f559328a7",
+    "README.md": "fe111f1321c3872ba17275f1e75197e0f59b8dd3f1becdacd2c4fb223f56ce34",
+    "SOURCE_PINS.json": "f2bea7b9ceaad26c484814e8a8163b99e5ac0aa78fa8645233d2f9467dce406a",
+    "SPEED_AND_CALIBRATION.md": "c967deda00b62f524a73744b7a0d77d18f59dd0c43ba6f812708c71a5709835d",
+    "SPEED_REFERENCE_DATA.json": "230c56f1e7b37f2c33fa0cbc3d6fa038798dc9701d77890da2b390078817baab",
     "THERMO_GAUGE_COMPLETION.md": "9ac35f4e6bd1fc4262ba9e3d6b1f5c7d251684618975380d29abc81f0ace9068",
     "anisotropic_cosmology.py": "7b9100a8e8246959c605d0aaf56f7313241c4ef6f1f8bc357fb393cb85699bc4",
     "coupled_cosmology.py": "14b3bf1382383367f8f89a62213e394f482a3122f08585c3cb46106e2b25cc52",
@@ -739,9 +745,75 @@
     "metric_dynamics.py": "c1acb4227276ebcafe244e97c4911226fea50041fd8d5c57d8de09195100296c",
     "model.py": "e65af2feeb78483448b56ca50a4b85385245b097f684f73315f8ab7a4a0ef729",
     "perturbation_stability.py": "1ded774543220643cd9e1e6eda62139a2fb028fafa450ab3aebd3e38907e8dd4",
+    "speed_calibration.py": "96b88beb851e8434c1a6ad11601c86e34f99aef8bed55be90ffd2b9c7bec3d2a",
     "spin_matter.py": "d4ae31786f3c032bc3123e872e2989efece96a1050a71a92257da5c38d67522b",
     "thermo_gauge.py": "e518579c452ccef7ffbb405e029fe289938b99aa68f034bba375f109298c9a71",
-    "verify.py": "998aa9b53af9b006a431e3920feafad23d7e187e735d7534dd4e2928a7fb86d2"
+    "verify.py": "2f15e6bf05e7bbc404daa133b78aef19ec99ba1902eece32b47d88e56c8d2c5b"
+  },
+  "speed_calibration": {
+    "calibration": {
+      "absolute_SI_speed": "NOT_DERIVED",
+      "admitted_native_speeds": [
+        "1/2",
+        "1",
+        "3"
+      ],
+      "calibration_fixture_units": "DECLARED_ABSTRACT_LENGTH_PER_TIME_NOT_MEASUREMENTS",
+      "calibration_fixture_values": [
+        "1",
+        "3",
+        "5/3"
+      ],
+      "countermodel_scope": "DIFFERENT_CONSTITUTIVE_METRICS; NOT_A_COUNTEREXAMPLE_TO_SHARED_METRIC_THEOREM",
+      "lattice_speed_squared": [
+        "1",
+        "4"
+      ]
+    },
+    "characteristics": {
+      "coframes": 3,
+      "independent_maxwell_columns": 84,
+      "independent_ricci_columns": 210,
+      "nonnull_covectors": 9,
+      "nonnull_ranks": {
+        "einstein": 6,
+        "maxwell": 3,
+        "native_matter": 8
+      },
+      "null_covectors": 12,
+      "null_ranks": {
+        "einstein": 4,
+        "maxwell": 1,
+        "native_matter": 4
+      },
+      "physical_null_polarizations": {
+        "classical_metric": 2,
+        "photon": 2
+      },
+      "quantum_graviton": "NOT_DERIVED",
+      "scope": "LINEARIZED_EINSTEIN_VACUUM_WITH_ZERO_BACKGROUND_MATTER_AND_FIELD_STRENGTH"
+    },
+    "comparison": {
+      "SI_value_status": "EXACT_DEFINING_CONSTANT_NOT_AN_INDEPENDENT_FIT_TARGET",
+      "comparison": "CONSISTENT_WITH_PUBLISHED_EMISSION_MODEL_DEPENDENT_BOUND",
+      "experimental_fit_parameters": 0,
+      "fractional_difference": "0",
+      "independent_discriminator_against_GR": false,
+      "origin": "CONDITIONAL_SHARED_METRIC_EINSTEIN_MAXWELL_REDUCTION; NOT_PRIMITIVE_ONLY_SELECTION",
+      "published_fractional_interval": [
+        "-3/1000000000000000",
+        "7/10000000000000000"
+      ],
+      "raw_data_reanalysis": false,
+      "source_lag_prediction": false,
+      "speed_ratio": "1"
+    },
+    "massive": {
+      "dispersion_cases": 4,
+      "group_front_distinction": "MASS_IS_LOWER_ORDER; FINITE_MOMENTUM_GROUP_SPEED_IS_SMALLER_IF_MASS_POSITIVE",
+      "on_shell_cases": 3,
+      "units": "NATIVE_DIMENSIONLESS_CHART; NO_HBAR_OR_PARTICLE_MASS_CALIBRATION"
+    }
   },
   "spin_matter": {
     "algebra": {
