@@ -11,6 +11,7 @@ import sys
 import model as m
 import metric_dynamics
 import loop_curvature
+import spin_matter
 import thermo_gauge
 
 HERE = Path(__file__).resolve().parent
@@ -313,16 +314,17 @@ def generate():
     paths = sorted(str(p.relative_to(HERE)) for p in HERE.rglob('*')
                    if p.is_file() and '__pycache__' not in p.parts and p.suffix in ('.md', '.py', '.json')
                    and p.name != 'CERTIFICATE.json')
-    return dict(protocol='UGD_KAHLER_PROPAGATION_R4', status='PASS_EXACT_CONDITIONAL_CONTROLS',
+    return dict(protocol='UGD_KAHLER_PROPAGATION_R5', status='PASS_EXACT_CONDITIONAL_CONTROLS',
                 algebra=algebra_checks(), symbols=symbol_checks(), geometry=geometry_checks(),
                 balance=variable_balance_checks(), action=action_checks(), recovered=recovered,
                 thermo_gauge=thermo_gauge.run(),
                 metric_dynamics=metric_dynamics.run(),
                 loop_curvature=loop_curvature.run(),
+                spin_matter=spin_matter.run(),
                 local_upstream_pins_checked=len(pins['local_upstream_sources']),
                 external_pins_scope=pins['external_dependency_check_scope'],
                 source_sha256={p: hashlib.sha256((HERE/p).read_bytes()).hexdigest() for p in paths},
-                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG/LR notes; coefficient ranks exhaust fixed linear problems; variable fixtures are not universal proofs',
+                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG/LR/SM notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures are not universal proofs',
                                 physical_signature_selection='NOT_DERIVED_FROM_NATIVE_AXIOMS',
                                 full_seam_faithful_representation='NOT_CLAIMED',
                                 lambda_to_propagation_coframe='NOT_SELECTED_BY_NATIVE_PROCESS',
@@ -331,7 +333,11 @@ def generate():
                                 loop_process='DECLARED_QUADRATIC_ORIENTED_READOUT_WITH_SUPPLIED_CONNECTION_AND_SCALE',
                                 cosmological_relation='Lambda=-12 sigma u^2; kappa Lambda=6/beta; NOT_PHYSICALLY_CALIBRATED',
                                 native_readout_and_module_selection='NOT_DERIVED_FROM_PRIMITIVE_LAWS',
-                                curved_spin_matter_coupling='NOT_ESTABLISHED_HERE',
+                                curved_spin_matter_coupling='CONDITIONAL_DOUBLED_REAL_CLASSICAL_ACTION_SM1_SM6',
+                                torsion_elimination='FULL_CONNECTION_SOLUTION_FOR_ZERO_HOLST_WITH_CONTACT_TERM_RETAINED',
+                                massive_multiplier_minimality='TWO_COPIES_WITHIN_CONSTANT_SKEW_MULTIPLIERS_ON_FIXED_REAL_FOUR_MODULE_COPIES',
+                                physical_particle_masses_and_quantum_statistics='NOT_DERIVED',
+                                coupled_einstein_matter_PDE_existence='NOT_ESTABLISHED_HERE',
                                 constants_G_c_Lambda_alpha_hbar='NOT_PREDICTED',
                                 empirical_or_independent_review='NOT_PERFORMED',
                                 formal_proof_assistant='NOT_PERFORMED'))
@@ -360,6 +366,9 @@ def main():
                           maxwell_metric_variations=result['metric_dynamics']['maxwell_stress']['independent_metric_action_variations'],
                           loop_seed_variations=result['loop_curvature']['action_variation']['independent_seed_coframe_variations'],
                           based_loop_controls=result['loop_curvature']['holonomy']['based_affine_connection_rectangles'],
+                          massive_matter_euler_components=result['spin_matter']['matter']['independent_euler_components'],
+                          matter_spin_variations=result['spin_matter']['sources']['independent_spin_variations'],
+                          torsion_hessian_rank=result['spin_matter']['torsion']['full_connection_hessian_rank'],
                           symbol_checks=result['symbols']['covectors_checked']), sort_keys=True))
 
 

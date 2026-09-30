@@ -100,9 +100,21 @@
       "path": "papers/uncut-cut-measurement/SPIN_HOLONOMY_GEOMETRY_GATE.md",
       "sha256": "cb5ce021fa197e1590c3faf58f4e6e9b9352513da6c39c21379976a685fb3e41",
       "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "2460ef79b6ef95efb7622d7ce39fdb34fcfdcb6f",
+      "path": "papers/ugd-kahler-propagation/NATIVE_LOOP_CURVATURE.md",
+      "sha256": "65279abc5c8ad30b710cbdfb52e7c280c14488cead0bc8e04b6cff0100483fe9",
+      "source_commit": "57df7045dcdd55999dd26ea39fd0a2827001f9af"
+    },
+    {
+      "git_blob_sha1": "d03bbaead3e530c2bc97cba54a6e65a05f8d96f3",
+      "path": "papers/ugd-kahler-propagation/loop_curvature.py",
+      "sha256": "d57a1ac955559f976a5c411cffb1d6d7535fa752622df17febbe6f925e653328",
+      "source_commit": "57df7045dcdd55999dd26ea39fd0a2827001f9af"
     }
   ],
-  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R4",
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R5",
   "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
   "r2_parent_commit": "08339e0c1dc1e517185784eff3c6230167696d86",
   "r2_scope": "CP-1--CP-8 consume the unchanged NP proof, matrix fixtures and PF phase theorem. Native response-cone signature and phase-current identities are algebraic; the continuum, gauge kinetic law, backgrounds and calibrations remain supplied.",
@@ -110,6 +122,20 @@
   "r3_scope": "MG-1--MG-8 consume the unchanged NP/CP representations, thermo chart and conditional field-equation/nonselection sources. Einstein reduction requires the declared polynomial trace-action class, nonzero Palatini coefficient, invertible coframe, independent Lorentz connection and complete variations. The sixteen-channel adapter is explicit constitutive input, not unique physical selection.",
   "r4_parent_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9",
   "r4_scope": "LR-1--LR-8 consume unchanged GS/NP/CP/MG and earlier return/holonomy distinctions. A declared oriented quadratic loop process yields a Cartan curvature-square action, compact matrix field law and conditional Einstein coefficient relations. The real-module enlargement, readout, continuum and scale remain supplied; complete return records retain a length-scale ambiguity.",
+  "r5_parent_commit": "57df7045dcdd55999dd26ea39fd0a2827001f9af",
+  "r5_primary_references": [
+    {
+      "arxiv": "https://arxiv.org/abs/gr-qc/0505081",
+      "scope": "Spin-source dependence of Holst/Immirzi effects; attribution only, not an offline dependency.",
+      "url": "https://doi.org/10.1103/PhysRevD.73.044013"
+    },
+    {
+      "arxiv": "https://arxiv.org/abs/hep-th/0507253",
+      "scope": "Established torsion-induced effective interactions and coupling choices; our commuting-field coefficients are derived locally.",
+      "url": "https://doi.org/10.1103/PhysRevD.72.104002"
+    }
+  ],
+  "r5_scope": "SM-1--SM-8 consume unchanged GS/NP/CP/MG/LR sources. Two copies of the fixed real module admit a mass-compatible skew multiplier. A declared classical commuting-field covariant minimal action yields matter, gauge, coframe and spin equations, with full algebraic connection elimination in the zero-Holst sector. The contact interaction is retained. Primitive selection, measured masses, quantum statistics and coupled-PDE existence are not established.",
   "recovered_artifacts": [
     {
       "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",
