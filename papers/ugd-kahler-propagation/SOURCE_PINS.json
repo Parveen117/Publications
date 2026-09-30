@@ -112,9 +112,21 @@
       "path": "papers/ugd-kahler-propagation/loop_curvature.py",
       "sha256": "d57a1ac955559f976a5c411cffb1d6d7535fa752622df17febbe6f925e653328",
       "source_commit": "57df7045dcdd55999dd26ea39fd0a2827001f9af"
+    },
+    {
+      "git_blob_sha1": "9d8f708d83297bef5ceca4a09e3ccdaf1acc49b1",
+      "path": "papers/ugd-kahler-propagation/NATIVE_MASSIVE_MATTER.md",
+      "sha256": "59874df732a965978e4199a3474a56c8437cfc65d104a717d47fc35a3ba38334",
+      "source_commit": "6263ae3cce1dc2fd2937a071c810428a57fe75b9"
+    },
+    {
+      "git_blob_sha1": "6bd28c73ad2266464518f1c27118e921707097ef",
+      "path": "papers/ugd-kahler-propagation/spin_matter.py",
+      "sha256": "d4ae31786f3c032bc3123e872e2989efece96a1050a71a92257da5c38d67522b",
+      "source_commit": "6263ae3cce1dc2fd2937a071c810428a57fe75b9"
     }
   ],
-  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R5",
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R6",
   "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
   "r2_parent_commit": "08339e0c1dc1e517185784eff3c6230167696d86",
   "r2_scope": "CP-1--CP-8 consume the unchanged NP proof, matrix fixtures and PF phase theorem. Native response-cone signature and phase-current identities are algebraic; the continuum, gauge kinetic law, backgrounds and calibrations remain supplied.",
@@ -136,6 +148,19 @@
     }
   ],
   "r5_scope": "SM-1--SM-8 consume unchanged GS/NP/CP/MG/LR sources. Two copies of the fixed real module admit a mass-compatible skew multiplier. A declared classical commuting-field covariant minimal action yields matter, gauge, coframe and spin equations, with full algebraic connection elimination in the zero-Holst sector. The contact interaction is retained. Primitive selection, measured masses, quantum statistics and coupled-PDE existence are not established.",
+  "r6_parent_commit": "6263ae3cce1dc2fd2937a071c810428a57fe75b9",
+  "r6_primary_references": [
+    {
+      "arxiv": "https://arxiv.org/abs/hep-th/0301129",
+      "scope": "Established homogeneous classical spinor cosmology; attribution, not an offline dependency.",
+      "url": "https://doi.org/10.1023/A:1025783118888"
+    },
+    {
+      "arxiv": "https://arxiv.org/abs/1212.0585",
+      "scope": "Einstein-Cartan-Holst spinor cosmologies and coupling-dependent effective interaction signs; attribution, not an offline dependency."
+    }
+  ],
+  "r6_scope": "CS-1--CS-8 consume unchanged GS/NP/CP/MG/LR/SM. The homogeneous neutral rest sector has an analytic positive-Lambda spinor/coframe/torsion solution, with its lapse constraint and full first-order equations retained. The positive stiff term is fixed by the SM action. A massless constant full-scalar solution has divergent torsion at its past endpoint. Parameters, module and action remain supplied; generic Cauchy existence, nonhomogeneous stability and physical calibration remain open.",
   "recovered_artifacts": [
     {
       "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",

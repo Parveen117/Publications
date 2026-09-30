@@ -12,6 +12,7 @@ import model as m
 import metric_dynamics
 import loop_curvature
 import spin_matter
+import coupled_cosmology
 import thermo_gauge
 
 HERE = Path(__file__).resolve().parent
@@ -314,17 +315,18 @@ def generate():
     paths = sorted(str(p.relative_to(HERE)) for p in HERE.rglob('*')
                    if p.is_file() and '__pycache__' not in p.parts and p.suffix in ('.md', '.py', '.json')
                    and p.name != 'CERTIFICATE.json')
-    return dict(protocol='UGD_KAHLER_PROPAGATION_R5', status='PASS_EXACT_CONDITIONAL_CONTROLS',
+    return dict(protocol='UGD_KAHLER_PROPAGATION_R6', status='PASS_EXACT_CONDITIONAL_CONTROLS',
                 algebra=algebra_checks(), symbols=symbol_checks(), geometry=geometry_checks(),
                 balance=variable_balance_checks(), action=action_checks(), recovered=recovered,
                 thermo_gauge=thermo_gauge.run(),
                 metric_dynamics=metric_dynamics.run(),
                 loop_curvature=loop_curvature.run(),
                 spin_matter=spin_matter.run(),
+                coupled_cosmology=coupled_cosmology.run(),
                 local_upstream_pins_checked=len(pins['local_upstream_sources']),
                 external_pins_scope=pins['external_dependency_check_scope'],
                 source_sha256={p: hashlib.sha256((HERE/p).read_bytes()).hexdigest() for p in paths},
-                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG/LR/SM notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures are not universal proofs',
+                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG/LR/SM/CS notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures are not universal proofs',
                                 physical_signature_selection='NOT_DERIVED_FROM_NATIVE_AXIOMS',
                                 full_seam_faithful_representation='NOT_CLAIMED',
                                 lambda_to_propagation_coframe='NOT_SELECTED_BY_NATIVE_PROCESS',
@@ -337,7 +339,10 @@ def generate():
                                 torsion_elimination='FULL_CONNECTION_SOLUTION_FOR_ZERO_HOLST_WITH_CONTACT_TERM_RETAINED',
                                 massive_multiplier_minimality='TWO_COPIES_WITHIN_CONSTANT_SKEW_MULTIPLIERS_ON_FIXED_REAL_FOUR_MODULE_COPIES',
                                 physical_particle_masses_and_quantum_statistics='NOT_DERIVED',
-                                coupled_einstein_matter_PDE_existence='NOT_ESTABLISHED_HERE',
+                                coupled_einstein_matter_PDE_existence='EXPLICIT_HOMOGENEOUS_NEUTRAL_REST_FAMILY_CS3_CS5; GENERAL_CAUCHY_PROBLEM_OPEN',
+                                cosmological_perturbation_stability='NOT_ESTABLISHED_OUTSIDE_HOMOGENEOUS_REST_ANSATZ',
+                                cosmological_benchmark='SUPPLIED_DIMENSIONLESS_PARAMETERS_NOT_PHYSICAL_CALIBRATION',
+                                geometric_regularization='NOT_CLAIMED; SINGULAR_PAST_ENDPOINT_WITH_DIVERGENT_TORSION',
                                 constants_G_c_Lambda_alpha_hbar='NOT_PREDICTED',
                                 empirical_or_independent_review='NOT_PERFORMED',
                                 formal_proof_assistant='NOT_PERFORMED'))
@@ -369,6 +374,9 @@ def main():
                           massive_matter_euler_components=result['spin_matter']['matter']['independent_euler_components'],
                           matter_spin_variations=result['spin_matter']['sources']['independent_spin_variations'],
                           torsion_hessian_rank=result['spin_matter']['torsion']['full_connection_hessian_rank'],
+                          coupled_solution_coframe_equations=result['coupled_cosmology']['coupled']['coframe_equations'],
+                          coupled_solution_cartan_equations=result['coupled_cosmology']['coupled']['cartan_equations'],
+                          coupled_solution_matter_equations=result['coupled_cosmology']['coupled']['matter_equations'],
                           symbol_checks=result['symbols']['covectors_checked']), sort_keys=True))
 
 

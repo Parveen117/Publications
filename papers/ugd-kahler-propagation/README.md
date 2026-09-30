@@ -1,6 +1,6 @@
 # UGD coefficient geometry and a variational propagation sector
 
-Author: Monty Dabas. Research development: R5, massive matter and torsion.
+Author: Monty Dabas. Research development: R6, explicit coupled cosmological solution.
 
 This package preserves the earlier λ-Hessian/Kähler–Einstein development and
 extends it with an explicit action for a selected native-coefficient propagation
@@ -65,6 +65,19 @@ identities and a failed cosmological-mass shortcut make the scope precise:
 particle masses, quantum statistics and a primitive action selection remain
 open.
 
+**R6: an explicit coupled solution.** [CS-1–CS-8](COUPLED_COSMOLOGICAL_SOLUTION.md)
+solve the neutral homogeneous rest sector of R5 with an FLRW metric and
+nonzero polarized torsion. The derived source has rho=m n+3 kappa n^2/16,
+p=3 kappa n^2/16 and n=n_0/a^3. A closed hyperbolic volume law and logarithmic
+native spinor phase solve the full first-order equations in LR's finite-scale
+positive-Lambda sector. An exact benchmark has a^3=exp(t)-1. The lapse
+constraint, all coframe/connection/matter components and effective stress are
+checked independently. In the massless member the full connection scalar is
+constant even while a torsion invariant diverges at the past endpoint. The
+model therefore supplies a solved family, not an automatic bounce, quantum
+cosmology or measured parameter prediction. General Cauchy existence and
+stability outside this homogeneous sector remain open.
+
 | Result | Location | Scope |
 |---|---|---|
 | Native complex sector, transport compatibility, corrected H/S derivatives, Hessian lift and determinant–Einstein equivalence | [Recovered bridge](history/RKF_UGD_Kahler_Einstein_Bridge.md) | Original note preserved byte for byte; its historical manuscript references are identified as such. |
@@ -75,6 +88,7 @@ open.
 | Native curvature-action classification, full thermo metric variations, conditional Einstein and Einstein–Maxwell equations | [Metric dynamics](NATIVE_METRIC_DYNAMICS.md), MG-1–MG-8 | Explicit polynomial action class, independent Lorentz connection and a local constitutive adapter; not primitive-only selection or a prediction of couplings. |
 | Quadratic native loop limit, compact matrix field equation, readout classification and cosmological sign/scale relations | [Loop curvature](NATIVE_LOOP_CURVATURE.md), LR-1–LR-8 | Declared local loop process, module and readout; explicit curved vacua and a scale ambiguity, not measured constants or a unique primitive process. |
 | Doubled massive action, covariant matter sources and full algebraic torsion elimination | [Massive matter](NATIVE_MASSIVE_MATTER.md), SM-1–SM-8 | Declared commuting classical field and minimal coupling in the zero-Holst sector; Einstein–Cartan reduction with the contact term retained, not quantum fermions or selected physical masses. |
+| Analytic coupled spinor/coframe/torsion family with full field-equation controls | [Coupled cosmological solution](COUPLED_COSMOLOGICAL_SOLUTION.md), CS-1–CS-8 | Neutral homogeneous rest sector with an isotropic metric and polarized torsion; exact positive-Lambda solution and scalar-readout counterexample, not general PDE existence or empirical cosmology. |
 | Exact reproducible controls and source hashes | [Certificate](CERTIFICATE.json), [verifier](verify.py), [source pins](SOURCE_PINS.json) | Finite rational checks support the written proofs; they are not a proof assistant or empirical validation. |
 
 The current thermo programme starts with a stable fundamental relation U(S,V)
@@ -106,13 +120,14 @@ thermo compass and phase-field packages.
 
 CP-5–CP-8 supply the gauge variation interface and MG-2–MG-5 the metric
 interface. LR supplies an explicit loop-process candidate, its continuum
-action and the resulting coefficient relations; SM now supplies a conditional
-massive matter action and its current, stress and torsion derivation. What
+action and the resulting coefficient relations; SM supplies a conditional
+massive matter action and its current, stress and torsion derivation. CS now
+constructs an analytic self-consistent family of these coupled fields. What
 remains is selection of the module, readout, adapter, matter couplings,
 inverse-length scale and action normalization by an independently specified
 native process principle. Complete return records alone retain the LR-8 scale
 ambiguity, and the naive positive-Lambda Cartan coupling does not produce SM's
 mass term. G, c, Λ, α, hbar and particle masses remain unpredicted. Quantum
-statistics and existence of solutions to the full coupled Einstein–matter PDE
-are not established. Sixteen thermo channels are sufficient here, not proved
-minimal.
+statistics, the generic spatially varying Einstein–matter Cauchy problem and
+stability outside CS's homogeneous rest sector remain open. Sixteen thermo
+channels are sufficient here, not proved minimal.

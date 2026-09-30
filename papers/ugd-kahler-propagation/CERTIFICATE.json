@@ -40,13 +40,16 @@
   },
   "boundaries": {
     "constants_G_c_Lambda_alpha_hbar": "NOT_PREDICTED",
+    "cosmological_benchmark": "SUPPLIED_DIMENSIONLESS_PARAMETERS_NOT_PHYSICAL_CALIBRATION",
+    "cosmological_perturbation_stability": "NOT_ESTABLISHED_OUTSIDE_HOMOGENEOUS_REST_ANSATZ",
     "cosmological_relation": "Lambda=-12 sigma u^2; kappa Lambda=6/beta; NOT_PHYSICALLY_CALIBRATED",
-    "coupled_einstein_matter_PDE_existence": "NOT_ESTABLISHED_HERE",
+    "coupled_einstein_matter_PDE_existence": "EXPLICIT_HOMOGENEOUS_NEUTRAL_REST_FAMILY_CS3_CS5; GENERAL_CAUCHY_PROBLEM_OPEN",
     "curved_spin_matter_coupling": "CONDITIONAL_DOUBLED_REAL_CLASSICAL_ACTION_SM1_SM6",
     "einstein_hilbert_action": "CONDITIONAL_NATIVE_LOOP_LIMIT_LR1_LR4_NOT_PRIMITIVE_SELECTION",
     "empirical_or_independent_review": "NOT_PERFORMED",
     "formal_proof_assistant": "NOT_PERFORMED",
     "full_seam_faithful_representation": "NOT_CLAIMED",
+    "geometric_regularization": "NOT_CLAIMED; SINGULAR_PAST_ENDPOINT_WITH_DIVERGENT_TORSION",
     "lambda_to_propagation_coframe": "NOT_SELECTED_BY_NATIVE_PROCESS",
     "loop_process": "DECLARED_QUADRATIC_ORIENTED_READOUT_WITH_SUPPLIED_CONNECTION_AND_SCALE",
     "massive_multiplier_minimality": "TWO_COPIES_WITHIN_CONSTANT_SKEW_MULTIPLIERS_ON_FIXED_REAL_FOUR_MODULE_COPIES",
@@ -55,7 +58,96 @@
     "physical_signature_selection": "NOT_DERIVED_FROM_NATIVE_AXIOMS",
     "thermo_to_metric_variation": "EXPLICIT_LOCAL_CONSTITUTIVE_ADAPTER_MG5",
     "torsion_elimination": "FULL_CONNECTION_SOLUTION_FOR_ZERO_HOLST_WITH_CONTACT_TERM_RETAINED",
-    "universal_proofs": "Written in GS/NP/CP/MG/LR/SM notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures are not universal proofs"
+    "universal_proofs": "Written in GS/NP/CP/MG/LR/SM/CS notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures are not universal proofs"
+  },
+  "coupled_cosmology": {
+    "benchmark": {
+      "interpretation": "Chosen dimensionless benchmark, not measured cosmological or particle constants",
+      "massless_constant_scalar_control": true,
+      "parameter_values": {
+        "Lambda": "1/3",
+        "Z": "4/3",
+        "conserved_number": "4/3",
+        "kappa": "1",
+        "loop_scale": "1/6",
+        "m": "1/2",
+        "readout_beta": "18"
+      },
+      "rows": [
+        {
+          "connection_scalar": "8/3",
+          "energy": "8/3",
+          "metric_scalar": "0",
+          "number_density": "8/3",
+          "pressure": "4/3",
+          "rate": "1",
+          "torsion_contraction": "-32/3",
+          "volume": "1/2",
+          "z": "3/2"
+        },
+        {
+          "connection_scalar": "2",
+          "energy": "1",
+          "metric_scalar": "4/3",
+          "number_density": "4/3",
+          "pressure": "1/3",
+          "rate": "2/3",
+          "torsion_contraction": "-8/3",
+          "volume": "1",
+          "z": "2"
+        },
+        {
+          "connection_scalar": "5/3",
+          "energy": "5/12",
+          "metric_scalar": "3/2",
+          "number_density": "2/3",
+          "pressure": "1/12",
+          "rate": "1/2",
+          "torsion_contraction": "-2/3",
+          "volume": "2",
+          "z": "3"
+        },
+        {
+          "connection_scalar": "3/2",
+          "energy": "3/16",
+          "metric_scalar": "35/24",
+          "number_density": "1/3",
+          "pressure": "1/48",
+          "rate": "5/12",
+          "torsion_contraction": "-1/6",
+          "volume": "4",
+          "z": "5"
+        }
+      ]
+    },
+    "coupled": {
+      "cartan_equations": 72,
+      "charged_zero_field_rejected": true,
+      "coframe_equations": 48,
+      "cosmological_sector": "positive Lambda, finite native return-scale and readout",
+      "effective_stress_components": 48,
+      "full_scalar_curvature_checks": 3,
+      "lapse_scale_variations": 6,
+      "matter_equations": 24,
+      "omitted_contorsion_nonzero_residuals": {
+        "cartan": 3,
+        "coframe": 6,
+        "matter": 2
+      },
+      "solution_jets": 3
+    },
+    "cubic": {
+      "cubic_components": 8,
+      "monomials_per_component": 120,
+      "rest_projector_rank": 4,
+      "rest_sector_preserved": true
+    },
+    "volume": {
+      "lapse_constraint_retained": true,
+      "off_constraint_propagation_checks": 16,
+      "positive_Lambda_volume_phase_checks": 72,
+      "zero_Lambda_contraction_checks": 36
+    }
   },
   "external_pins_scope": "External source read and blob identified during development on 2026-09-29; offline --check does not fetch or revalidate remote files. No external engine is copied or needed at runtime.",
   "geometry": {
@@ -130,7 +222,7 @@
     ],
     "monge_ampere_jet_checks": 9
   },
-  "local_upstream_pins_checked": 18,
+  "local_upstream_pins_checked": 20,
   "loop_curvature": {
     "action_variation": {
       "compared_to": "Unchanged MG Einstein-tensor-checked action",
@@ -421,7 +513,7 @@
       "right_inverse_controls": 30
     }
   },
-  "protocol": "UGD_KAHLER_PROPAGATION_R5",
+  "protocol": "UGD_KAHLER_PROPAGATION_R6",
   "recovered": {
     "centralizer_commutators": "exact",
     "direct_Levi_Civita_vs_logdet_Ricci": [
@@ -482,14 +574,16 @@
     "status": "PASS"
   },
   "source_sha256": {
+    "COUPLED_COSMOLOGICAL_SOLUTION.md": "fe54cf0474bb08386214989bc06f696dc2c9438aab2eab1709484d9fbed94301",
     "GEOMETRY_AND_SIGNATURE.md": "c84869fee581d1b407156592662934349df400ee30d79ffc777170ad5091cd4d",
     "NATIVE_LOOP_CURVATURE.md": "65279abc5c8ad30b710cbdfb52e7c280c14488cead0bc8e04b6cff0100483fe9",
     "NATIVE_MASSIVE_MATTER.md": "59874df732a965978e4199a3474a56c8437cfc65d104a717d47fc35a3ba38334",
     "NATIVE_METRIC_DYNAMICS.md": "b42adbac04f790d0593da14fce6649a6a8a94eabe3d2c31588ae95ff71d07202",
     "NATIVE_PROPAGATION_ACTION.md": "6e96e62b7b15c63fba32122c2addfc2984c3007e08cf69cd5b08f4dbd08b3345",
-    "README.md": "c35792915fa1085ac90e36b92a0f29ebc53d38e4f05391f1ec4c8f5b71c4a0b8",
-    "SOURCE_PINS.json": "6aa125ecfab4e89ea306e3b4b3b4d07e3650e92a5e7f18a26f1c7af910283ac5",
+    "README.md": "8b54f6164ea6ec9a06d2c3fa2008e91eb994535d55b42812b977a09553e3d846",
+    "SOURCE_PINS.json": "ea0505cb41e8c855f5d22ddb0412b3dd548565d0d8049d7831495cd234cb7d07",
     "THERMO_GAUGE_COMPLETION.md": "9ac35f4e6bd1fc4262ba9e3d6b1f5c7d251684618975380d29abc81f0ace9068",
+    "coupled_cosmology.py": "14b3bf1382383367f8f89a62213e394f482a3122f08585c3cb46106e2b25cc52",
     "history/RKF_UGD_Kahler_Einstein_Bridge.md": "f16fd197f62564d7daae4169f145099828d116ba588ddc583e3720bf765ab8ce",
     "history/verification.json": "965d1ac43bababce41ce59609f50f3f3b5a804f88d04049797859c8388ad9ed5",
     "history/verify_bridge.py": "ef84ae61e9113b211b0f9b698157063313f80130066d86b25493749f5d1f6098",
@@ -498,7 +592,7 @@
     "model.py": "e65af2feeb78483448b56ca50a4b85385245b097f684f73315f8ab7a4a0ef729",
     "spin_matter.py": "d4ae31786f3c032bc3123e872e2989efece96a1050a71a92257da5c38d67522b",
     "thermo_gauge.py": "e518579c452ccef7ffbb405e029fe289938b99aa68f034bba375f109298c9a71",
-    "verify.py": "e42c52c9e8025abfd7c5c8070ca385397ae61f976117da2769bec92dbc9911b6"
+    "verify.py": "80f73b045bbf2f17968d899e3e29c90140493648da48b3f533ae8705684c15ae"
   },
   "spin_matter": {
     "algebra": {
