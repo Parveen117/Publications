@@ -70,14 +70,46 @@
       "path": "papers/thermodynamic-response-corrections/source/sections/06a_spacetime_recognition_datum.tex",
       "sha256": "249f33a2123bb4abeed930670ce21d887bd8930e933272d03cdac2256e0b4a03",
       "source_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355"
+    },
+    {
+      "git_blob_sha1": "496a16bccd2f1b17f96b3763d4bdebb7c88a95b1",
+      "path": "papers/ugd-kahler-propagation/GEOMETRY_AND_SIGNATURE.md",
+      "sha256": "c84869fee581d1b407156592662934349df400ee30d79ffc777170ad5091cd4d",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "603a0e04a118ece4edcf4ea3df36b5142570e678",
+      "path": "papers/ugd-kahler-propagation/NATIVE_METRIC_DYNAMICS.md",
+      "sha256": "b42adbac04f790d0593da14fce6649a6a8a94eabe3d2c31588ae95ff71d07202",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "8bcf02ab4a355242d465644eaabc6c23a7e24241",
+      "path": "papers/ugd-kahler-propagation/metric_dynamics.py",
+      "sha256": "c1acb4227276ebcafe244e97c4911226fea50041fd8d5c57d8de09195100296c",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "9a17092625ff1e10b1dcb8560051c3c039bee7d8",
+      "path": "papers/uncut-cut-measurement/PRE_ENTROPY_SEAM_RETURN.md",
+      "sha256": "2721e43d805dec88281080063f9faf8d47654698810abb5633bcc023bcef4179",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "23410f13430d2c1ae0fbe50da6979dbd7a8012ad",
+      "path": "papers/uncut-cut-measurement/SPIN_HOLONOMY_GEOMETRY_GATE.md",
+      "sha256": "cb5ce021fa197e1590c3faf58f4e6e9b9352513da6c39c21379976a685fb3e41",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
     }
   ],
-  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R3",
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R4",
   "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
   "r2_parent_commit": "08339e0c1dc1e517185784eff3c6230167696d86",
   "r2_scope": "CP-1--CP-8 consume the unchanged NP proof, matrix fixtures and PF phase theorem. Native response-cone signature and phase-current identities are algebraic; the continuum, gauge kinetic law, backgrounds and calibrations remain supplied.",
   "r3_parent_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355",
   "r3_scope": "MG-1--MG-8 consume the unchanged NP/CP representations, thermo chart and conditional field-equation/nonselection sources. Einstein reduction requires the declared polynomial trace-action class, nonzero Palatini coefficient, invertible coframe, independent Lorentz connection and complete variations. The sixteen-channel adapter is explicit constitutive input, not unique physical selection.",
+  "r4_parent_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9",
+  "r4_scope": "LR-1--LR-8 consume unchanged GS/NP/CP/MG and earlier return/holonomy distinctions. A declared oriented quadratic loop process yields a Cartan curvature-square action, compact matrix field law and conditional Einstein coefficient relations. The real-module enlargement, readout, continuum and scale remain supplied; complete return records retain a length-scale ambiguity.",
   "recovered_artifacts": [
     {
       "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",

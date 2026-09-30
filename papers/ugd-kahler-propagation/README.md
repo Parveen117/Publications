@@ -1,6 +1,6 @@
 # UGD coefficient geometry and a variational propagation sector
 
-Author: Monty Dabas. Research development: R3, metric dynamics extension.
+Author: Monty Dabas. Research development: R4, native loop-curvature extension.
 
 This package preserves the earlier λ-Hessian/Kähler–Einstein development and
 extends it with an explicit action for a selected native-coefficient propagation
@@ -38,6 +38,19 @@ The continuum, action class, constitutive adapter and coupling values remain
 inputs. This uses established first-order gravity, with primary references and
 explicit coefficient, rank and failure controls.
 
+**R4: native loop curvature.** [LR-1–LR-8](NATIVE_LOOP_CURVATURE.md) derive a
+curvature-square continuum action from a declared oriented quadratic loop
+readout. Its compact matrix stationary law is D_A K(F)=0; for the unprojected
+readout it reduces to D_A{J,F}=0. The even/odd equations recover MG's torsion
+and Einstein equations. The coefficient relations are Lambda=-12 sigma u^2
+and kappa Lambda=6/beta. The original real-four module permits the negative-
+Lambda sector; one extra native R factor with R^2=-I supplies a real positive-
+Lambda sector. Explicit de Sitter/anti-de Sitter patches have flat combined
+Cartan transport and nonzero metric curvature. Exact readout-symmetry and
+identical-return scale controls keep primitive selection and physical
+calibration distinct from this conditional construction. The established
+MacDowell–Mansouri/Cartan mechanism is credited.
+
 | Result | Location | Scope |
 |---|---|---|
 | Native complex sector, transport compatibility, corrected H/S derivatives, Hessian lift and determinant–Einstein equivalence | [Recovered bridge](history/RKF_UGD_Kahler_Einstein_Bridge.md) | Original note preserved byte for byte; its historical manuscript references are identified as such. |
@@ -46,6 +59,7 @@ explicit coefficient, rank and failure controls.
 | Clifford symbol, native variational multiplier, action, density drift, and the precise lower-order compatibility obstruction | [Propagation and action](NATIVE_PROPAGATION_ACTION.md), NP-1–NP-6 | A selected coefficient-sector field law, not selection of nature's dynamics. |
 | Positive response cone, native source current, explicit thermo connection chart and full gauge variations | [Thermo gauge completion](THERMO_GAUGE_COMPLETION.md), CP-1–CP-8 | Coupled equations follow from the declared gauge kinetic law and fixed backgrounds; no metric dynamics or physical constants are selected. |
 | Native curvature-action classification, full thermo metric variations, conditional Einstein and Einstein–Maxwell equations | [Metric dynamics](NATIVE_METRIC_DYNAMICS.md), MG-1–MG-8 | Explicit polynomial action class, independent Lorentz connection and a local constitutive adapter; not primitive-only selection or a prediction of couplings. |
+| Quadratic native loop limit, compact matrix field equation, readout classification and cosmological sign/scale relations | [Loop curvature](NATIVE_LOOP_CURVATURE.md), LR-1–LR-8 | Declared local loop process, module and readout; explicit curved vacua and a scale ambiguity, not measured constants or a unique primitive process. |
 | Exact reproducible controls and source hashes | [Certificate](CERTIFICATE.json), [verifier](verify.py), [source pins](SOURCE_PINS.json) | Finite rational checks support the written proofs; they are not a proof assistant or empirical validation. |
 
 The current thermo programme starts with a stable fundamental relation U(S,V)
@@ -75,10 +89,12 @@ thermo compass and phase-field packages.
 
 ## Next unresolved derivation
 
-CP-5–CP-8 supply the gauge variation interface; MG-2–MG-5 now supply an explicit
-curvature-action class and a local thermo-to-coframe adapter with complete
-metric variations. What remains is physical selection of that class, adapter,
-connection and their scales by an explicit native process law. A covariant
-curved-spin-connection completion of the NP matter field also requires its own
-stress/torsion derivation. G, c, Λ and α remain unpredicted; sixteen thermo
-channels are sufficient here, not proved minimal.
+CP-5–CP-8 supply the gauge variation interface and MG-2–MG-5 the metric
+interface. LR now supplies an explicit loop-process candidate, its continuum
+action and the resulting coefficient relations. What remains is selection of
+the module, readout, adapter, inverse-length scale and action normalization by
+an independently specified native process principle. Complete return records
+alone retain the LR-8 scale ambiguity. A covariant curved-spin-connection
+completion of the NP matter field also requires its own stress/torsion
+derivation. G, c, Λ and α remain unpredicted; sixteen thermo channels are
+sufficient here, not proved minimal.

@@ -10,6 +10,7 @@ import sys
 
 import model as m
 import metric_dynamics
+import loop_curvature
 import thermo_gauge
 
 HERE = Path(__file__).resolve().parent
@@ -312,20 +313,24 @@ def generate():
     paths = sorted(str(p.relative_to(HERE)) for p in HERE.rglob('*')
                    if p.is_file() and '__pycache__' not in p.parts and p.suffix in ('.md', '.py', '.json')
                    and p.name != 'CERTIFICATE.json')
-    return dict(protocol='UGD_KAHLER_PROPAGATION_R3', status='PASS_EXACT_CONDITIONAL_CONTROLS',
+    return dict(protocol='UGD_KAHLER_PROPAGATION_R4', status='PASS_EXACT_CONDITIONAL_CONTROLS',
                 algebra=algebra_checks(), symbols=symbol_checks(), geometry=geometry_checks(),
                 balance=variable_balance_checks(), action=action_checks(), recovered=recovered,
                 thermo_gauge=thermo_gauge.run(),
                 metric_dynamics=metric_dynamics.run(),
+                loop_curvature=loop_curvature.run(),
                 local_upstream_pins_checked=len(pins['local_upstream_sources']),
                 external_pins_scope=pins['external_dependency_check_scope'],
                 source_sha256={p: hashlib.sha256((HERE/p).read_bytes()).hexdigest() for p in paths},
-                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG notes; finite checks are not universal proofs',
+                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG/LR notes; coefficient ranks exhaust fixed linear problems; variable fixtures are not universal proofs',
                                 physical_signature_selection='NOT_DERIVED_FROM_NATIVE_AXIOMS',
                                 full_seam_faithful_representation='NOT_CLAIMED',
                                 lambda_to_propagation_coframe='NOT_SELECTED_BY_NATIVE_PROCESS',
                                 thermo_to_metric_variation='EXPLICIT_LOCAL_CONSTITUTIVE_ADAPTER_MG5',
-                                einstein_hilbert_action='CONDITIONAL_TRACE_ACTION_CLASS_REDUCTION_MG2_NOT_PRIMITIVE_SELECTION',
+                                einstein_hilbert_action='CONDITIONAL_NATIVE_LOOP_LIMIT_LR1_LR4_NOT_PRIMITIVE_SELECTION',
+                                loop_process='DECLARED_QUADRATIC_ORIENTED_READOUT_WITH_SUPPLIED_CONNECTION_AND_SCALE',
+                                cosmological_relation='Lambda=-12 sigma u^2; kappa Lambda=6/beta; NOT_PHYSICALLY_CALIBRATED',
+                                native_readout_and_module_selection='NOT_DERIVED_FROM_PRIMITIVE_LAWS',
                                 curved_spin_matter_coupling='NOT_ESTABLISHED_HERE',
                                 constants_G_c_Lambda_alpha_hbar='NOT_PREDICTED',
                                 empirical_or_independent_review='NOT_PERFORMED',
@@ -353,6 +358,8 @@ def main():
                           thermo_gauge_variations=result['thermo_gauge']['euler_lagrange']['exact_lagrangian_variations'],
                           metric_action_variations=result['metric_dynamics']['einstein']['independent_coframe_variations'],
                           maxwell_metric_variations=result['metric_dynamics']['maxwell_stress']['independent_metric_action_variations'],
+                          loop_seed_variations=result['loop_curvature']['action_variation']['independent_seed_coframe_variations'],
+                          based_loop_controls=result['loop_curvature']['holonomy']['based_affine_connection_rectangles'],
                           symbol_checks=result['symbols']['covectors_checked']), sort_keys=True))
 
 
