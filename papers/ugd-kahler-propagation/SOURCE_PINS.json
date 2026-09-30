@@ -136,9 +136,21 @@
       "path": "papers/ugd-kahler-propagation/coupled_cosmology.py",
       "sha256": "14b3bf1382383367f8f89a62213e394f482a3122f08585c3cb46106e2b25cc52",
       "source_commit": "b1e7dd63f004ea749bf2c298cd21ef003ce73ec7"
+    },
+    {
+      "git_blob_sha1": "cb0cebc00c7bc74c79c7a101e1bd6b8928d645e1",
+      "path": "papers/ugd-kahler-propagation/PERTURBATION_STABILITY.md",
+      "sha256": "13c2300b776d4ba928aef2d521f5aa930bac7082ecc18a763ef4915e56acac47",
+      "source_commit": "52e15256540a6adc32f016efa352b3c5e23a58dd"
+    },
+    {
+      "git_blob_sha1": "3ce76bbc2db1c79a1f4a6c38959ac268ad61ca0b",
+      "path": "papers/ugd-kahler-propagation/perturbation_stability.py",
+      "sha256": "1ded774543220643cd9e1e6eda62139a2fb028fafa450ab3aebd3e38907e8dd4",
+      "source_commit": "52e15256540a6adc32f016efa352b3c5e23a58dd"
     }
   ],
-  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R7",
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R8",
   "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
   "r2_parent_commit": "08339e0c1dc1e517185784eff3c6230167696d86",
   "r2_scope": "CP-1--CP-8 consume the unchanged NP proof, matrix fixtures and PF phase theorem. Native response-cone signature and phase-current identities are algebraic; the continuum, gauge kinetic law, backgrounds and calibrations remain supplied.",
@@ -187,6 +199,22 @@
     }
   ],
   "r7_scope": "PS-1--PS-8 consume unchanged GS/NP/CP/MG/LR/SM/CS sources. All eight homogeneous matter components form a consistent FLRW ODE completion. The positive-Lambda CS background has bounded coupled homogeneous linear perturbations and a separate global future linear matter bound on its prescribed geometry. Nonzero spatial gradients leave the rest sector. The benchmark rescaled norm gain is bounded by sqrt(2) from t*=log(2); the massless zero-Lambda limit has secular relative growth. Full inhomogeneous Einstein-matter, anisotropic metric and nonlinear stability remain open; no empirical calibration or primitive selection is inferred.",
+  "r8_parent_commit": "52e15256540a6adc32f016efa352b3c5e23a58dd",
+  "r8_primary_references": [
+    {
+      "scope": "Henneaux, established classical Bianchi I spinor cosmologies; attribution, not an offline dependency.",
+      "url": "https://doi.org/10.1103/PhysRevD.21.857"
+    },
+    {
+      "scope": "Jantzen author-hosted primary paper on homogeneous Einstein-Dirac frame freedom and dynamics; explicitly credits the general Bianchi I solution to Henneaux.",
+      "url": "https://homepage.villanova.edu/robert.jantzen/research/articles/JMathPhys23_1137-1982-spinorsources.pdf"
+    },
+    {
+      "arxiv": "https://arxiv.org/abs/1409.4993",
+      "scope": "Saha, established nondiagonal spin stress and diagonal-metric restrictions. Our coefficients and full coframe solution are derived from the unchanged SM action."
+    }
+  ],
+  "r8_scope": "BI-1--BI-8 consume unchanged GS/NP/CP/MG/LR/SM/CS/PS sources. General homogeneous Bianchi I expansion yields native spin-shear stress and a constant-eigenvalue volume-rescaled shear law. The rest sector has explicit volume, phase, nondiagonal coframe and torsion solutions, with nonlinear future shear decay. Linearization completes the five homogeneous anisotropic metric modes around CS. Diagonal spin alignment, selected scalar-readout nonuniqueness, a fixed parallel-frame 3/2 contact-phase/rotation relation and exact original-equation controls are retained. Full spatially varying Einstein-matter, general nonlinear stability and physical calibration remain open.",
   "recovered_artifacts": [
     {
       "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",

@@ -14,6 +14,7 @@ import loop_curvature
 import spin_matter
 import coupled_cosmology
 import perturbation_stability
+import anisotropic_cosmology
 import thermo_gauge
 
 HERE = Path(__file__).resolve().parent
@@ -316,7 +317,7 @@ def generate():
     paths = sorted(str(p.relative_to(HERE)) for p in HERE.rglob('*')
                    if p.is_file() and '__pycache__' not in p.parts and p.suffix in ('.md', '.py', '.json')
                    and p.name != 'CERTIFICATE.json')
-    return dict(protocol='UGD_KAHLER_PROPAGATION_R7', status='PASS_EXACT_CONDITIONAL_CONTROLS',
+    return dict(protocol='UGD_KAHLER_PROPAGATION_R8', status='PASS_EXACT_CONDITIONAL_CONTROLS',
                 algebra=algebra_checks(), symbols=symbol_checks(), geometry=geometry_checks(),
                 balance=variable_balance_checks(), action=action_checks(), recovered=recovered,
                 thermo_gauge=thermo_gauge.run(),
@@ -325,10 +326,11 @@ def generate():
                 spin_matter=spin_matter.run(),
                 coupled_cosmology=coupled_cosmology.run(),
                 perturbation_stability=perturbation_stability.run(),
+                anisotropic_cosmology=anisotropic_cosmology.run(),
                 local_upstream_pins_checked=len(pins['local_upstream_sources']),
                 external_pins_scope=pins['external_dependency_check_scope'],
                 source_sha256={p: hashlib.sha256((HERE/p).read_bytes()).hexdigest() for p in paths},
-                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG/LR/SM/CS/PS notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures are not universal proofs',
+                boundaries=dict(universal_proofs='Written in GS/NP/CP/MG/LR/SM/CS/PS/BI notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures and truncated series are not universal proofs',
                                 physical_signature_selection='NOT_DERIVED_FROM_NATIVE_AXIOMS',
                                 full_seam_faithful_representation='NOT_CLAIMED',
                                 lambda_to_propagation_coframe='NOT_SELECTED_BY_NATIVE_PROCESS',
@@ -341,10 +343,12 @@ def generate():
                                 torsion_elimination='FULL_CONNECTION_SOLUTION_FOR_ZERO_HOLST_WITH_CONTACT_TERM_RETAINED',
                                 massive_multiplier_minimality='TWO_COPIES_WITHIN_CONSTANT_SKEW_MULTIPLIERS_ON_FIXED_REAL_FOUR_MODULE_COPIES',
                                 physical_particle_masses_and_quantum_statistics='NOT_DERIVED',
-                                coupled_einstein_matter_PDE_existence='EXPLICIT_HOMOGENEOUS_NEUTRAL_REST_FAMILY_CS3_CS5; GENERAL_CAUCHY_PROBLEM_OPEN',
-                                cosmological_perturbation_stability='LINEAR_COUPLED_HOMOGENEOUS_FLRW_PS2_PS3; FULL_INHOMOGENEOUS_GRAVITY_AND_ANISOTROPY_OPEN',
+                                coupled_einstein_matter_PDE_existence='EXPLICIT_HOMOGENEOUS_NEUTRAL_REST_FLRW_AND_GENERAL_BIANCHI_I_FAMILIES_CS_BI; GENERAL_CAUCHY_PROBLEM_OPEN',
+                                cosmological_perturbation_stability='LINEAR_COUPLED_HOMOGENEOUS_BIANCHI_I_PS2_PS3_BI6; SPATIALLY_INHOMOGENEOUS_GRAVITY_OPEN',
                                 spatial_matter_stability='GLOBAL_FUTURE_LINEAR_Hr_BOUND_ON_PRESCRIBED_CS_GEOMETRY_PS5_PS6; NOT_FULL_EINSTEIN_MATTER_PERTURBATIONS',
-                                homogeneous_matter_completion='ALL_EIGHT_COMPONENT_NONLINEAR_ODE_PS1; NONLINEAR_STABILITY_NOT_ESTABLISHED',
+                                homogeneous_matter_completion='ALL_EIGHT_COMPONENT_NONLINEAR_ODE_PS1_BI1_BI2; NONLINEAR_STABILITY_FOR_GENERAL_MATTER_NOT_ESTABLISHED',
+                                nonlinear_anisotropic_result='EXACT_REST_BIANCHI_I_FAMILY_WITH_FUTURE_SHEAR_DECAY_BI3_BI6; NOT_GENERAL_NONLINEAR_STABILITY',
+                                spin_shear_rotation='CONDITIONAL_NATIVE_STRESS_COMMUTATOR_AND_FIXED_PARALLEL_FRAME_PHASE_RELATION; NOT_QUANTUM_SPIN_OR_EMPIRICAL_CALIBRATION',
                                 rest_sector_gradient_closure='FAILS_FOR_EVERY_NONZERO_WAVEVECTOR_PS4',
                                 cosmological_benchmark='SUPPLIED_DIMENSIONLESS_PARAMETERS_NOT_PHYSICAL_CALIBRATION',
                                 geometric_regularization='NOT_CLAIMED; SINGULAR_PAST_ENDPOINT_WITH_DIVERGENT_TORSION',
@@ -385,6 +389,9 @@ def main():
                           perturbation_jacobian_columns=result['perturbation_stability']['linearization']['independent_cubic_jacobian_columns'],
                           homogeneous_metric_tangents=result['perturbation_stability']['coupled']['constrained_metric_tangent_checks'],
                           benchmark_future_rescaled_gain_squared=result['perturbation_stability']['bounds']['benchmark_future_rescaled_gain_squared'],
+                          anisotropic_coframe_equations=result['anisotropic_cosmology']['original']['coframe_equations'],
+                          anisotropic_stress_forms=result['anisotropic_cosmology']['algebra']['universal_spatial_stress_forms'],
+                          homogeneous_shear_mode_pairings=result['anisotropic_cosmology']['coframe']['five_shear_mode_pairings'],
                           symbol_checks=result['symbols']['covectors_checked']), sort_keys=True))
 
 
