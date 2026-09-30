@@ -1,5 +1,19 @@
 # Important results: locations and preservation status
 
+## Native cut transport and response clock — CT-1–CT-7
+
+[New proof and exact controls](../native-cut-energy-transport/README.md) take
+one declared conjugate-response attenuation protocol and derive its unique
+state semigroup, native additive clock, energy descent, inward radial motion,
+angular drift and native amplitude/rotation lift. Pure dagger-unitary
+conjugation cannot change the full distinction amplitude. Moving-cut memory,
+winding parity and the independent path derivative of the principal-response
+seam are retained. The response-halving benchmark gives r: 1→1/4,
+W: 2/3→1/12, det H: 1/2→2. These are exact model values, not measured
+constants. Physical process selection and an external space/clock adapter
+remain open; no unique fundamental action or gravity law is asserted.
+
+
 Audit scope: the physics results discussed through this development thread, checked against Publications PR #5 head `3570175bef61df22c1c81beb67ff6befcb04b919` and PR #4 head `c1a35e0f509cd137d20f9504543f97b5ec7479fc` on 29 September 2026. This is not an assertion that every result in every prior conversation or repository has been copied here.
 
 Both PRs were open and unmerged at the audit. “In Publications” therefore does not mean “on main.” The current research branch is `research/uncut-cut-measurement-2026-09-25`.
