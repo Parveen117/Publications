@@ -1,6 +1,6 @@
 # UGD coefficient geometry and a variational propagation sector
 
-Author: Monty Dabas. Research development: R6, explicit coupled cosmological solution.
+Author: Monty Dabas. Research development: R7, homogeneous stability and spatial matter bounds.
 
 This package preserves the earlier λ-Hessian/Kähler–Einstein development and
 extends it with an explicit action for a selected native-coefficient propagation
@@ -75,8 +75,19 @@ constraint, all coframe/connection/matter components and effective stress are
 checked independently. In the massless member the full connection scalar is
 constant even while a torsion invariant diverges at the past endpoint. The
 model therefore supplies a solved family, not an automatic bounce, quantum
-cosmology or measured parameter prediction. General Cauchy existence and
-stability outside this homogeneous sector remain open.
+cosmology or measured parameter prediction. General Cauchy existence remains
+open; the R7 extension below addresses two specified linear stability problems.
+
+**R7: perturbation bounds.** [PS-1–PS-8](PERTURBATION_STABILITY.md) extend the
+homogeneous equations to all eight matter components and prove bounded linear
+perturbations of the coupled expanding positive-Lambda FLRW sector. A separate
+linear matter problem on the prescribed CS geometry has a wavelength-independent
+Sobolev energy bound. For the benchmark starting at t*=log(2), its rescaled
+future norm gain is at most sqrt(2). Spatial gradients leave the rest sector,
+so all eight components are retained. The massless zero-Lambda limit supplies
+an explicit logarithmic relative-growth control. Full inhomogeneous
+Einstein–matter stability, anisotropic metric perturbations and nonlinear
+stability remain open.
 
 | Result | Location | Scope |
 |---|---|---|
@@ -89,6 +100,7 @@ stability outside this homogeneous sector remain open.
 | Quadratic native loop limit, compact matrix field equation, readout classification and cosmological sign/scale relations | [Loop curvature](NATIVE_LOOP_CURVATURE.md), LR-1–LR-8 | Declared local loop process, module and readout; explicit curved vacua and a scale ambiguity, not measured constants or a unique primitive process. |
 | Doubled massive action, covariant matter sources and full algebraic torsion elimination | [Massive matter](NATIVE_MASSIVE_MATTER.md), SM-1–SM-8 | Declared commuting classical field and minimal coupling in the zero-Holst sector; Einstein–Cartan reduction with the contact term retained, not quantum fermions or selected physical masses. |
 | Analytic coupled spinor/coframe/torsion family with full field-equation controls | [Coupled cosmological solution](COUPLED_COSMOLOGICAL_SOLUTION.md), CS-1–CS-8 | Neutral homogeneous rest sector with an isotropic metric and polarized torsion; exact positive-Lambda solution and scalar-readout counterexample, not general PDE existence or empirical cosmology. |
+| Coupled homogeneous linear stability, gradient leakage, and an exact spatial matter gain bound | [Perturbation stability](PERTURBATION_STABILITY.md), PS-1–PS-8 | All eight homogeneous matter components retained; spatial estimate holds on prescribed geometry. Full inhomogeneous gravity, anisotropic metric modes and nonlinear stability remain open. |
 | Exact reproducible controls and source hashes | [Certificate](CERTIFICATE.json), [verifier](verify.py), [source pins](SOURCE_PINS.json) | Finite rational checks support the written proofs; they are not a proof assistant or empirical validation. |
 
 The current thermo programme starts with a stable fundamental relation U(S,V)
@@ -122,12 +134,14 @@ CP-5–CP-8 supply the gauge variation interface and MG-2–MG-5 the metric
 interface. LR supplies an explicit loop-process candidate, its continuum
 action and the resulting coefficient relations; SM supplies a conditional
 massive matter action and its current, stress and torsion derivation. CS now
-constructs an analytic self-consistent family of these coupled fields. What
-remains is selection of the module, readout, adapter, matter couplings,
+constructs an analytic self-consistent family of these coupled fields. PS
+adds its coupled homogeneous linear stability and a prescribed-geometry
+spatial matter bound. What remains is selection of the module, readout, adapter, matter couplings,
 inverse-length scale and action normalization by an independently specified
 native process principle. Complete return records alone retain the LR-8 scale
 ambiguity, and the naive positive-Lambda Cartan coupling does not produce SM's
 mass term. G, c, Λ, α, hbar and particle masses remain unpredicted. Quantum
-statistics, the generic spatially varying Einstein–matter Cauchy problem and
-stability outside CS's homogeneous rest sector remain open. Sixteen thermo
+statistics, the generic spatially varying Einstein–matter Cauchy problem,
+full inhomogeneous or anisotropic metric stability and nonlinear stability
+remain open. Sixteen thermo
 channels are sufficient here, not proved minimal.

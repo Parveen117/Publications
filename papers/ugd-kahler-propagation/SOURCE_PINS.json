@@ -124,9 +124,21 @@
       "path": "papers/ugd-kahler-propagation/spin_matter.py",
       "sha256": "d4ae31786f3c032bc3123e872e2989efece96a1050a71a92257da5c38d67522b",
       "source_commit": "6263ae3cce1dc2fd2937a071c810428a57fe75b9"
+    },
+    {
+      "git_blob_sha1": "76accc76b205058df31985d23b4652f5689804b1",
+      "path": "papers/ugd-kahler-propagation/COUPLED_COSMOLOGICAL_SOLUTION.md",
+      "sha256": "fe54cf0474bb08386214989bc06f696dc2c9438aab2eab1709484d9fbed94301",
+      "source_commit": "b1e7dd63f004ea749bf2c298cd21ef003ce73ec7"
+    },
+    {
+      "git_blob_sha1": "07462f3c45c08d83dc63d89e6e19fd59e4f0f8eb",
+      "path": "papers/ugd-kahler-propagation/coupled_cosmology.py",
+      "sha256": "14b3bf1382383367f8f89a62213e394f482a3122f08585c3cb46106e2b25cc52",
+      "source_commit": "b1e7dd63f004ea749bf2c298cd21ef003ce73ec7"
     }
   ],
-  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R6",
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R7",
   "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
   "r2_parent_commit": "08339e0c1dc1e517185784eff3c6230167696d86",
   "r2_scope": "CP-1--CP-8 consume the unchanged NP proof, matrix fixtures and PF phase theorem. Native response-cone signature and phase-current identities are algebraic; the continuum, gauge kinetic law, backgrounds and calibrations remain supplied.",
@@ -161,6 +173,20 @@
     }
   ],
   "r6_scope": "CS-1--CS-8 consume unchanged GS/NP/CP/MG/LR/SM. The homogeneous neutral rest sector has an analytic positive-Lambda spinor/coframe/torsion solution, with its lapse constraint and full first-order equations retained. The positive stiff term is fixed by the SM action. A massless constant full-scalar solution has divergent torsion at its past endpoint. Parameters, module and action remain supplied; generic Cauchy existence, nonhomogeneous stability and physical calibration remain open.",
+  "r7_parent_commit": "b1e7dd63f004ea749bf2c298cd21ef003ce73ec7",
+  "r7_primary_references": [
+    {
+      "arxiv": "https://arxiv.org/abs/hep-th/0301129",
+      "scope": "Established homogeneous classical spinor cosmology; attribution only, not an offline dependency.",
+      "url": "https://doi.org/10.1023/A:1025783118888"
+    },
+    {
+      "institutional": "https://scholarworks.utrgv.edu/mss_fac/259/",
+      "scope": "Primary context for expanding-background Dirac existence and lifespan estimates. Its nonlinear theorems are not imported into the distinct CS model; PS derives its own linear estimates.",
+      "url": "https://doi.org/10.1007/s00028-022-00769-8"
+    }
+  ],
+  "r7_scope": "PS-1--PS-8 consume unchanged GS/NP/CP/MG/LR/SM/CS sources. All eight homogeneous matter components form a consistent FLRW ODE completion. The positive-Lambda CS background has bounded coupled homogeneous linear perturbations and a separate global future linear matter bound on its prescribed geometry. Nonzero spatial gradients leave the rest sector. The benchmark rescaled norm gain is bounded by sqrt(2) from t*=log(2); the massless zero-Lambda limit has secular relative growth. Full inhomogeneous Einstein-matter, anisotropic metric and nonlinear stability remain open; no empirical calibration or primitive selection is inferred.",
   "recovered_artifacts": [
     {
       "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",
