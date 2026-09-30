@@ -1,5 +1,18 @@
 # Important results: locations and preservation status
 
+## Native interaction-strength identification — NI-1–NI-4
+
+[Symmetric-probe identification](../native-return-identification/README.md)
+proves that two normalized symmetric response readings uniquely determine
+both the exact-cut cell parameter b and an unknown probe amplitude. Native
+finite-aperture intervals propagate into rational bounds on b. A derivative
+shape invariant removes multiplicative readout and affine input gains.
+Identical adjacent cells are incompatible with finite exact-cut closure;
+balanced directional scalar amplitudes leave b free. This identifies a
+parameter from supplied responses; it does not predict b from primitives or
+identify alpha. **Numerical alpha remains NOT DERIVED.**
+
+
 ## Fine-structure selection audit — AS-1–AS-5
 
 [Native return sensitivity and dressed source](../native-alpha-selection/README.md)

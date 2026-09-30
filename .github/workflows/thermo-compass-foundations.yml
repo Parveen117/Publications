@@ -10,6 +10,7 @@ on:
       - 'papers/coherence-first-thermodynamics/**'
       - 'papers/native-cut-energy-transport/**'
       - 'papers/native-alpha-selection/**'
+      - 'papers/native-return-identification/**'
       - 'papers/curvature-information-duality/**'
       - 'papers/cut-first-equivalence/certificates/**'
       - 'papers/thermodynamic-response-corrections/**'
@@ -26,6 +27,7 @@ on:
       - 'papers/coherence-first-thermodynamics/**'
       - 'papers/native-cut-energy-transport/**'
       - 'papers/native-alpha-selection/**'
+      - 'papers/native-return-identification/**'
       - 'papers/curvature-information-duality/**'
       - 'papers/cut-first-equivalence/certificates/**'
       - 'papers/thermodynamic-response-corrections/**'
@@ -66,6 +68,8 @@ jobs:
         run: node papers/native-cut-energy-transport/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
       - name: Check native alpha selection, return sensitivity and dressed source
         run: node papers/native-alpha-selection/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
+      - name: Check native response identification with retained aperture uncertainty
+        run: node papers/native-return-identification/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
       - name: Check thermo transport, recovered results and source pins
         run: python papers/thermo-compass-foundations/verify.py --check
       - name: Check phase field, conserved energy and propagation
