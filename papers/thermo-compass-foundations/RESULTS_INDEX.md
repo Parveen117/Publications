@@ -1,5 +1,18 @@
 # Important results: locations and preservation status
 
+## Fine-structure selection audit — AS-1–AS-5
+
+[Native return sensitivity and dressed source](../native-alpha-selection/README.md)
+uses the actual R2 paired-depth solver and WC5 engine. Exact cut closure leaves
+a positive cell parameter free: the same native aperture has slope 1/(1+2b).
+Full response jets and finite-aperture derivative enclosures are retained.
+The coupling reduction dresses both stiffness and source, and separates the
+pole residue from the hidden-source contact term. Current geometry, internal
+clock and source-free propagation do not select the relative action/source
+normalization. **Numerical alpha remains NOT DERIVED.** No measured constant
+or proximity search is an input; the missing selection law is stated explicitly.
+
+
 ## Native cut transport and response clock — CT-1–CT-7
 
 [New proof and exact controls](../native-cut-energy-transport/README.md) take
