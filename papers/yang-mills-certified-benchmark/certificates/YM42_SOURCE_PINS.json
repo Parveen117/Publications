@@ -1,0 +1,36 @@
+{
+  "local_inputs": [
+    "papers/yang-mills-certified-benchmark/YM42_SILENCE_TIME_LADDER.md",
+    "papers/yang-mills-certified-benchmark/certificates/ym42_silence_time_ladder.py",
+    "papers/yang-mills-certified-benchmark/tests/test_ym42_silence_time_ladder.py",
+    ".github/workflows/ym42-silence-time-ladder.yml"
+  ],
+  "publications_source_commit": "998c71ebf784ba181659912cbeabd63f8095c0e2",
+  "rkf_provenance": {
+    "commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+    "repository": "Parveen117/Recognition-Kernel-Framework",
+    "role": "written provenance; no RKF implementation copied; T75 is not instantiated for three rails",
+    "theorum/74_lopa_ledger_contraction_theorem.md": "git-blob:95a113f243c6286e9f5606750e2b1555f7a92c7d",
+    "theorum/75_selective_release_content_tail_theorem.md": "git-blob:c975c7c2c01cbc40d9f0503f54afab9a6c8cd610"
+  },
+  "schema": "ym42-source-pins-v1",
+  "source_boundary": "public repository sources only; rational moment shadow retained; no private source exported",
+  "upstream_sha256": {
+    "papers/yang-mills-certified-benchmark/certificates/ym15_chain_closed_form.py": "c802f3ddcee83f5ab0f4ab6087a68bc9d2f147091dd147943b374d52fcdb1e13",
+    "papers/yang-mills-certified-benchmark/certificates/ym16_chain_dock.py": "425489ae9f020f71fa8790fb5071878748c82e52c5f38e94ea7171939f1e9e43",
+    "papers/yang-mills-certified-benchmark/certificates/ym1_certified_gap.py": "1c1e1631f6d1793735b3f2403427bca0231bb21c3622e70da4e9ba175f4c9bda",
+    "papers/yang-mills-certified-benchmark/certificates/ym28_e4d_on_chain.py": "85a5e235c5ba428726fe83bc3916198978bd5ca39231c40addb52a6898088dcf",
+    "papers/yang-mills-certified-benchmark/certificates/ym2_theta_interacting_gap.py": "7867a545fa0a06515b93ac57e96cbbf984410d97633705af38bc1924824aaa9a",
+    "papers/yang-mills-certified-benchmark/certificates/ym30_recoupling_engine.py": "22762ca713b4c4c923c27ed43ba88880fd4efef9bc363c52eaa5f894cbbc4e0d",
+    "papers/yang-mills-certified-benchmark/certificates/ym31_uniform_floor.py": "4781c1cd1bf619328068a4a8a67d91cfc1d70d7e0e1191ac2abf495acb723d08",
+    "papers/yang-mills-certified-benchmark/certificates/ym32_dressed_excitation.py": "314673d124045be789f8b4313767d88c73dcd576790797830534ea7fc21a10cc",
+    "papers/yang-mills-certified-benchmark/certificates/ym33_t_row_engine.py": "b4d65d01c8ca7dd3c02f4372597d13f3a528286993c0b6a39adc61f698d65a89",
+    "papers/yang-mills-certified-benchmark/certificates/ym37_space_transfer.py": "b860dcc2510f533fcff04b1fb194974884e381b44417dcbbd109c47c780218b7",
+    "papers/yang-mills-certified-benchmark/certificates/ym38_native_uniformity.py": "8f0770391d2e0ee9adf322eef3615887196c14efde3081027b97b8423b8899e3",
+    "papers/yang-mills-certified-benchmark/certificates/ym3_crossing_direction.py": "9dae32ec90130bd192ee9fdca184b996311b0eb4350c8715755bb747c465922b",
+    "papers/yang-mills-certified-benchmark/certificates/ym41_tools_dock.py": "48d3b7cc44e146074fd307cd7dceedd1b9b2c994fa55eaedeb703ffc1c2e4c2c",
+    "papers/yang-mills-certified-benchmark/certificates/ym4_symmetry_protected.py": "a9e599c2fc4d5e50c88ee93aeb67a105f0e9bc98954655b5e9c82f0c19f7c13a",
+    "papers/yang-mills-certified-benchmark/certificates/ym5_two_sided_gap.py": "ac6389b6f9e396c44177d91c76bdc01188c5b2a1b49a6a38efb765fa9fcdbe80",
+    "papers/yang-mills-certified-benchmark/certificates/ym6_seam_integer_dock.py": "4e30b1a3d0bfe1c61c5b65237a291ff500a538589f820e1317d88cd716b8d037"
+  }
+}

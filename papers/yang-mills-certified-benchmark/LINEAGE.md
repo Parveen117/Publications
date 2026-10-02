@@ -458,3 +458,35 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - HONEST POSITION RECORDED: scored against NG the program is not near
   zero, but O4 (time) and O5 (cutoff) are where the difficulty lives and
   no capsule has touched the chain's operator upper bound.
+
+## YM-42 (2 October 2026): structural silence ball and the three-rail step
+
+- REUSE AUDIT: read the existing YM-12 positivity, YM-30/33/37 carrier,
+  YM-38 native contraction, YM-41 tools dock, NG-1 and RKF T74–76/audit.
+  The new work follows the explicitly named t=3 continuation. It is not
+  another positivity theorem, recoupling engine or fresh operator foundation.
+- GENERAL RESULT: two quadratic sign checks give the doubled complement
+  norm ceiling by a sum/difference congruence and Schur substitution.
+  With d=D/(W theta²), s=sigma/theta and 2s+4d<1, the structural silence
+  ball has radius²=4D/theta², floor theta(1-2d), and contraction
+  beta=(s+2d)/(1-2d). Starting from the constant channel gives a geometric
+  Cauchy tail for every spatial step, without choosing a radius from iterates.
+- INSTANCE: unchanged YM-37 even carrier, dimensions 8 and 52, same exact
+  rational face/rung definitions at kappa=1/8,1/4,1/2. Both complement signs
+  pass. Three-rail beta ceilings are 0.007132026236, 0.028765231931 and
+  0.118984522771. The t=2 doubled-ceiling route is independently cross-checked.
+- SCOPE CORRECTION: T75's content release is two-rail and retains declared
+  higher-content Gram-uniformity. It is not a t-uniform release theorem.
+  T3 spatial Cauchy convergence is not a time-gap operator bound. T5 proves
+  this with positive independent-column models whose spatial beta is zero
+  while the time ratio approaches one. This does not refute the YM family.
+  These qualifications supersede the historical 'content gone / t only'
+  shorthand above. Old certificate numbers and bytes remain preserved.
+- EVIDENCE: fresh Fraction arithmetic, native grading and independent
+  factorial moment checks, finite recurrence/tail checks, failure controls,
+  pinned inputs and a read-only default certificate check. Dedicated CI on
+  Python 3.11/3.12. Written proof is YM42_SILENCE_TIME_LADDER.md; the earlier
+  v1 PDF is not silently relabelled as containing this continuation.
+- NEXT: time-observable/operator control on every vacuum-orthogonal source,
+  with the required rail/content/family uniformity. E4D-C, DICT and the
+  interacting continuum remain open.
