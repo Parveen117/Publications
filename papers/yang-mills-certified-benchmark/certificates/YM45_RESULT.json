@@ -1,0 +1,431 @@
+{
+  "certificate_type": "YM45_TEMPORAL_BLOCK_UNIFORM_GAP",
+  "claim_status": "WRITTEN_ALL_SOURCE_GAP_UNIFORM_IN_FINITE_WIDTH_AND_FINE_TIME_STEP__SMALL_BRIDGE_WINDOW_WITHIN_DECLARED_HEAT_FUNCTIONAL_CHAIN__FIXED_WIDTH_TIME_LIMIT_GAP__NATIVE_DICTIONARY_AND_4D_CONTINUUM_OPEN",
+  "clipped_block_incidence": {
+    "clipped_layouts": 75,
+    "interior_incidence_checks": 910,
+    "weighted_outgoing_budget_checks": 1260
+  },
+  "evidence_scope": {
+    "finite_controls": "exact rational and outward intervals; binary fixtures are not SU(2)",
+    "general_proof": "written; not mechanically formalized",
+    "physical_clock_measure_and_4D_Clay": "not established",
+    "time_limit": "all t>0, fixed finite width; no infinite-volume construction",
+    "trajectory": "declared kappa(a)=theta*a; abs(theta)<1/1680; not AF derived",
+    "uniformity": "rate gamma independent of finite width m and 0<a<=1; prefactors need not be"
+  },
+  "free_bridge_coupling": {
+    "direct_path_marginal_checks": 12,
+    "matrix_power_identities": 25,
+    "segment_cost_upper": "5680444811429/1100586419201",
+    "skeleton_bridge_cases": 18,
+    "uniform_budget": "25/4"
+  },
+  "full_heat_and_parameters": {
+    "cells": [
+      {
+        "J": 11,
+        "R": "2",
+        "alpha_upper": "5101/11264",
+        "fine_step_budget_cases": 6,
+        "gamma_lower": "0.009001911435",
+        "gamma_upper": "0.009001911436",
+        "theta_abs": "1/8192",
+        "weighted_margin": "531/5632"
+      },
+      {
+        "J": 8,
+        "R": "4/3",
+        "alpha_upper": "41/64",
+        "fine_step_budget_cases": 6,
+        "gamma_lower": "0.005137179865",
+        "gamma_upper": "0.005137179866",
+        "theta_abs": "1/4096",
+        "weighted_margin": "7/48"
+      },
+      {
+        "J": 6,
+        "R": "21/20",
+        "alpha_upper": "349/384",
+        "fine_step_budget_cases": 6,
+        "gamma_lower": "0.001161670575",
+        "gamma_upper": "0.001161670576",
+        "theta_abs": "1/2048",
+        "weighted_margin": "117/2560"
+      },
+      {
+        "J": 5,
+        "R": "33/32",
+        "alpha_upper": "31/32",
+        "fine_step_budget_cases": 6,
+        "gamma_lower": "0.000879190247",
+        "gamma_upper": "0.000879190248",
+        "theta_abs": "1/1792",
+        "weighted_margin": "1/1024"
+      }
+    ],
+    "endpoint_budget_identity_checks": 150,
+    "full_heat_tail_at_six_upper": "0.044491286772",
+    "heat_ceiling": "21/20",
+    "heat_floor": "19/20",
+    "open_window": "abs(theta) < 1/1680",
+    "skeleton_overlap": "4/5"
+  },
+  "independent_joint_updates": {
+    "cases": [
+      {
+        "both_marginals_exact": true,
+        "different_left_boundary": false,
+        "pair_label_updates": 4608,
+        "recurrence_ceiling": "1.472860485037",
+        "weighted_mismatch_after": "1.167714625644",
+        "weighted_mismatch_before": "2.099785779213"
+      },
+      {
+        "both_marginals_exact": true,
+        "different_left_boundary": true,
+        "pair_label_updates": 4608,
+        "recurrence_ceiling": "2.639916346834",
+        "weighted_mismatch_after": "1.180666694963",
+        "weighted_mismatch_before": "2.100000000000"
+      }
+    ],
+    "states": 16,
+    "update_labels": 18
+  },
+  "input_sha256": {
+    ".github/workflows/ym44-time-refinement.yml": "3636907f96b99a57f5b096255aaf3d8575156abcff8bd32f2fa4d6473c3de164",
+    ".github/workflows/ym45-temporal-blocks.yml": "fd6855f24f12d525333f4a122c81687c03c3125d3e61b283f8a7555d0919c084",
+    "papers/emk-ugd-algebra/certificates/emkt2_time_ordered_transport.py": "2dc28deb6bfa898568c9c2cb949ae76932d0995106aa28bf9f01a8fae29fd993",
+    "papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md": "6998827129b6ec9881a4568b0cbf0d0a1d9fbd75a3553135b080238f38ed5ebb",
+    "papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md": "85a7c9e7a1022bea45878ac1530fb3007f27d395f96b098466dd30d7d8a2bad6",
+    "papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md": "f8cce21aa4d84774eb57b000fd068366e1a3007998e58c332a5596e04d9b7450",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM43.sha256": "de271d0d5786e05657ac0ef376eef09ee9a026cf11eb7dcd9c48348a88281f3e",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM44.sha256": "1ecffc8424337fdb01044169cee1dc67c86bbf24023c43dd188fc8a6a9b845d0",
+    "papers/yang-mills-certified-benchmark/certificates/YM43_RESULT.json": "a68fbb86a32ccc92e1196fa879df8cd0c33ef916f526942addbe3cdd28e1f798",
+    "papers/yang-mills-certified-benchmark/certificates/YM44_RESULT.json": "733e2d6d9aa679e83f525c5be47043d4f98b7c321d0ff2a7238538f631af49c2",
+    "papers/yang-mills-certified-benchmark/certificates/YM44_SOURCE_PINS.json": "5c587ea51c63b336ef091d0dba4c079bd989efd995e5a3e1c7cf09cde82e558c",
+    "papers/yang-mills-certified-benchmark/certificates/YM45_SOURCE_PINS.json": "0798a40983adb96f68f6e976b62b30ff377b113877b1a99c97bc01f3129234ad",
+    "papers/yang-mills-certified-benchmark/certificates/ym12_square_sourced.py": "c21dfff94dd511bb622083301d0e365e56bd59d2df45957d143185e3682da179",
+    "papers/yang-mills-certified-benchmark/certificates/ym15_chain_closed_form.py": "c802f3ddcee83f5ab0f4ab6087a68bc9d2f147091dd147943b374d52fcdb1e13",
+    "papers/yang-mills-certified-benchmark/certificates/ym16_chain_dock.py": "425489ae9f020f71fa8790fb5071878748c82e52c5f38e94ea7171939f1e9e43",
+    "papers/yang-mills-certified-benchmark/certificates/ym19_dobrushin_dock.py": "5dcea9a6b4d3eff098a460f7ea949740a2e8eb362e46377c0edb568dc982edab",
+    "papers/yang-mills-certified-benchmark/certificates/ym1_certified_gap.py": "1c1e1631f6d1793735b3f2403427bca0231bb21c3622e70da4e9ba175f4c9bda",
+    "papers/yang-mills-certified-benchmark/certificates/ym22_cutoff_tiling_rate.py": "49da5fd63398aa3a153822b014963475ec416cd8104dcab5c6809f68bd712712",
+    "papers/yang-mills-certified-benchmark/certificates/ym28_e4d_on_chain.py": "85a5e235c5ba428726fe83bc3916198978bd5ca39231c40addb52a6898088dcf",
+    "papers/yang-mills-certified-benchmark/certificates/ym2_theta_interacting_gap.py": "7867a545fa0a06515b93ac57e96cbbf984410d97633705af38bc1924824aaa9a",
+    "papers/yang-mills-certified-benchmark/certificates/ym30_recoupling_engine.py": "22762ca713b4c4c923c27ed43ba88880fd4efef9bc363c52eaa5f894cbbc4e0d",
+    "papers/yang-mills-certified-benchmark/certificates/ym31_uniform_floor.py": "4781c1cd1bf619328068a4a8a67d91cfc1d70d7e0e1191ac2abf495acb723d08",
+    "papers/yang-mills-certified-benchmark/certificates/ym32_dressed_excitation.py": "314673d124045be789f8b4313767d88c73dcd576790797830534ea7fc21a10cc",
+    "papers/yang-mills-certified-benchmark/certificates/ym33_t_row_engine.py": "b4d65d01c8ca7dd3c02f4372597d13f3a528286993c0b6a39adc61f698d65a89",
+    "papers/yang-mills-certified-benchmark/certificates/ym37_space_transfer.py": "b860dcc2510f533fcff04b1fb194974884e381b44417dcbbd109c47c780218b7",
+    "papers/yang-mills-certified-benchmark/certificates/ym3_crossing_direction.py": "9dae32ec90130bd192ee9fdca184b996311b0eb4350c8715755bb747c465922b",
+    "papers/yang-mills-certified-benchmark/certificates/ym40_hk_ladder.py": "7bdefc30a31c89e76701a388afd1ec03b7d404acbdae86a6c3a98aae48c7eb20",
+    "papers/yang-mills-certified-benchmark/certificates/ym43_native_time_transfer.py": "b075f65e639d3ee90698178d39bb1658559a5b195babf107804c09834411c4c8",
+    "papers/yang-mills-certified-benchmark/certificates/ym44_time_refinement.py": "96d93d76b6cca3d042f9daae98b4c54abbe23ec854bb05cb1775b9c9e1673069",
+    "papers/yang-mills-certified-benchmark/certificates/ym45_temporal_blocks.py": "8aca5d66d1ca56929fde95c7c4ae418eb3c448d4b1dca6a12ac35f2ad62b5b25",
+    "papers/yang-mills-certified-benchmark/certificates/ym4_symmetry_protected.py": "a9e599c2fc4d5e50c88ee93aeb67a105f0e9bc98954655b5e9c82f0c19f7c13a",
+    "papers/yang-mills-certified-benchmark/certificates/ym5_two_sided_gap.py": "ac6389b6f9e396c44177d91c76bdc01188c5b2a1b49a6a38efb765fa9fcdbe80",
+    "papers/yang-mills-certified-benchmark/certificates/ym6_seam_integer_dock.py": "4e30b1a3d0bfe1c61c5b65237a291ff500a538589f820e1317d88cd716b8d037",
+    "papers/yang-mills-certified-benchmark/certificates/ym9_uniform_heat_kernel.py": "63833e14f2485571e0b0b1cad61b383dbad7b8af15e80711047f84c680b39fd9",
+    "papers/yang-mills-certified-benchmark/tests/test_ym44_time_refinement.py": "440919f943bc179eed8569096092da168c80663afd2a3a46f4f635eb3c4c0b72",
+    "papers/yang-mills-certified-benchmark/tests/test_ym45_temporal_blocks.py": "725e85cfd8e29629c83ec04194d72150c3e5d9bb3308a8e6306a8221cae78360"
+  },
+  "negative_controls": {
+    "constant_per_step_ratio_rejected": true,
+    "endpoint_window_has_no_strict_unweighted_margin": true,
+    "fixed_fine_slice_count_rejected": true,
+    "future_bridge_factor_omission_rejected": true,
+    "invalid_block_dimensions_rejected": true,
+    "missing_temporal_tilt_would_admit_uncertified_cell": true,
+    "non_strict_weighted_gate_rejected": true,
+    "old_theta_one_sixteenth_not_promoted": true,
+    "single_spatial_neighbor_count_rejected": true,
+    "tilt_normalizer_omission_rejected": true,
+    "unclipped_block_coverage_rejected": true,
+    "vacuum_denominator_omission_rejected": true
+  },
+  "runtime_policy": "Python 3.12 only",
+  "tilted_conditionals": {
+    "normalizers_checked": true,
+    "one_spatial_coordinate_changes": 60,
+    "rational_tilt_log_budget": "1/4095",
+    "tilted_block_cases": 20
+  },
+  "vacuum_and_time_limit": {
+    "coarse_power_vacuum_checks": 33,
+    "fine_vacuum_ratio_ranges_decrease": true,
+    "fixed_width_limit_controls": [
+      {
+        "limiting_ratio_upper": "0.991038484465",
+        "m": 1,
+        "t": "1",
+        "theta_abs": "1/8192",
+        "transported_ratio_ceilings": [
+          "0.991038484465",
+          "0.991038484465",
+          "0.991038484465"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.947421240830",
+        "m": 1,
+        "t": "6",
+        "theta_abs": "1/8192",
+        "transported_ratio_ceilings": [
+          "0.947421240830",
+          "0.947421240830",
+          "0.947421240830"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.991038484465",
+        "m": 4,
+        "t": "1",
+        "theta_abs": "1/8192",
+        "transported_ratio_ceilings": [
+          "0.991312149939",
+          "0.991072688536",
+          "0.991042759910"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.947421240830",
+        "m": 4,
+        "t": "6",
+        "theta_abs": "1/8192",
+        "transported_ratio_ceilings": [
+          "0.951377085005",
+          "0.947914844018",
+          "0.947482927548"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.991038484465",
+        "m": 16,
+        "t": "1",
+        "theta_abs": "1/8192",
+        "transported_ratio_ceilings": [
+          "0.992411584174",
+          "0.991210018419",
+          "0.991059924593"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.947421240830",
+        "m": 16,
+        "t": "6",
+        "theta_abs": "1/8192",
+        "transported_ratio_ceilings": [
+          "0.967719804998",
+          "0.949935629146",
+          "0.947735184693"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.994875992877",
+        "m": 1,
+        "t": "1",
+        "theta_abs": "1/4096",
+        "transported_ratio_ceilings": [
+          "0.994875992877",
+          "0.994875992877",
+          "0.994875992877"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.969647108653",
+        "m": 1,
+        "t": "6",
+        "theta_abs": "1/4096",
+        "transported_ratio_ceilings": [
+          "0.969647108653",
+          "0.969647108653",
+          "0.969647108653"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.994875992877",
+        "m": 4,
+        "t": "1",
+        "theta_abs": "1/4096",
+        "transported_ratio_ceilings": [
+          "0.995424856093",
+          "0.994944584266",
+          "0.994884566543"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.969647108653",
+        "m": 4,
+        "t": "6",
+        "theta_abs": "1/4096",
+        "transported_ratio_ceilings": [
+          "0.977700839085",
+          "0.970650235962",
+          "0.969772443713"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.994875992877",
+        "m": 16,
+        "t": "1",
+        "theta_abs": "1/4096",
+        "transported_ratio_ceilings": [
+          "0.997639499842",
+          "0.995221013035",
+          "0.994919113871"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.969647108653",
+        "m": 16,
+        "t": "6",
+        "theta_abs": "1/4096",
+        "transported_ratio_ceilings": [
+          null,
+          "0.974853292645",
+          "0.970296380013"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.998839003903",
+        "m": 1,
+        "t": "1",
+        "theta_abs": "1/2048",
+        "transported_ratio_ceilings": [
+          "0.998839003903",
+          "0.998839003903",
+          "0.998839003903"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.993054210824",
+        "m": 1,
+        "t": "6",
+        "theta_abs": "1/2048",
+        "transported_ratio_ceilings": [
+          "0.993054210824",
+          "0.993054210824",
+          "0.993054210824"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.998839003903",
+        "m": 4,
+        "t": "1",
+        "theta_abs": "1/2048",
+        "transported_ratio_ceilings": [
+          "0.999940827486",
+          "0.998976665453",
+          "0.998856210560"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.993054210824",
+        "m": 4,
+        "t": "6",
+        "theta_abs": "1/2048",
+        "transported_ratio_ceilings": [
+          null,
+          "0.995103290881",
+          "0.993310115620"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.998839003903",
+        "m": 16,
+        "t": "1",
+        "theta_abs": "1/2048",
+        "transported_ratio_ceilings": [
+          null,
+          "0.999535619940",
+          "0.998926054362"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.993054210824",
+        "m": 16,
+        "t": "6",
+        "theta_abs": "1/2048",
+        "transported_ratio_ceilings": [
+          null,
+          null,
+          "0.994427709322"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.999121196127",
+        "m": 1,
+        "t": "1",
+        "theta_abs": "1/1792",
+        "transported_ratio_ceilings": [
+          "0.999121196127",
+          "0.999121196127",
+          "0.999121196127"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.994738747641",
+        "m": 1,
+        "t": "6",
+        "theta_abs": "1/1792",
+        "transported_ratio_ceilings": [
+          "0.994738747641",
+          "0.994738747641",
+          "0.994738747641"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.999121196127",
+        "m": 4,
+        "t": "1",
+        "theta_abs": "1/1792",
+        "transported_ratio_ceilings": [
+          null,
+          "0.999278613247",
+          "0.999140871912"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.994738747641",
+        "m": 4,
+        "t": "6",
+        "theta_abs": "1/1792",
+        "transported_ratio_ceilings": [
+          null,
+          "0.997088777838",
+          "0.995032198911"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.999121196127",
+        "m": 16,
+        "t": "1",
+        "theta_abs": "1/1792",
+        "transported_ratio_ceilings": [
+          null,
+          "0.999919149525",
+          "0.999220905478"
+        ]
+      },
+      {
+        "limiting_ratio_upper": "0.994738747641",
+        "m": 16,
+        "t": "6",
+        "theta_abs": "1/1792",
+        "transported_ratio_ceilings": [
+          null,
+          null,
+          "0.996329809424"
+        ]
+      }
+    ],
+    "refinement_counts": [
+      64,
+      4096,
+      262144
+    ]
+  },
+  "verdict": "PASS"
+}

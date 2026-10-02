@@ -1,11 +1,12 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-44](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md)
-constructs the full interacting time-refinement limit at every fixed finite
-chain width, with an explicit operator-norm error for all sources and contents.
-The trajectory and positive reference functional remain declared. A gap uniform
-in both spatial width and time cutoff, the measure dictionary and continuum
-remain open.
+Latest Yang–Mills continuation: [YM-45](papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md)
+proves a positive rate uniform in finite chain width and fine time step,
+for abs(theta)<1/1680 on the declared trajectory kappa(a)=theta a.
+Temporal blocks control every complementary source and all contents.
+The rate also survives [YM-44's fixed-width time limit](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md).
+The positive reference functional remains admitted; the native measure
+dictionary, infinite-volume construction and full 4D continuum remain open.
 Current YM verification uses **Python 3.12 only**.
 
 [YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)

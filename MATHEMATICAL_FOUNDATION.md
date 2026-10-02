@@ -22,6 +22,18 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-45: temporal-block uniform gap](papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md)
+compares conditioned bridges on blocks of J ceil(6/a) fine time slices.
+The coarse heat overlap survives refinement, while the bounded spatial tilt
+has a controlled finite block cost. Exact boundary counting and weighted
+coupling yield an all-source rate gamma>0 independent of finite width and
+0<a<=1 whenever abs(theta)<1/1680. A coarse-power construction supplies
+the fine-step vacuum. YM-43's cut-square extraction and ordering intertwiner
+give the actual transfer bound; YM-44 transports it to every fixed-width
+time limit. Eight written proofs, exact finite controls and ten tests retain
+the admitted heat/functional carrier. Infinite-volume construction, native
+measure/NCG identification and the 4D continuum are separate open tasks.
+
 [YM-44: full interacting time refinement](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md)
 uses the existing bridge-character identities to bound the commutator of heat
 transport with the interaction. Ordered insertion packets and an explicit
@@ -30,7 +42,8 @@ For every fixed finite width, all sources and contents obey the norm error
 3 b t Exp(b t) sqrt(mesh), with b=|theta|(m-1). It extends the old nilpotent
 EMK-T2 transport controls to this specified unbounded heat family; bounded
 WC2 calculus is not silently applied to the unbounded generator. The uniform
-volume/cutoff gap remains a separate premise in the proved gap-transport gate.
+volume/cutoff gap is a separate premise in that chapter's gap-transport gate;
+YM-45 now supplies it in the stated small-bridge window.
 The shared engine and previous certificates are unchanged; Python 3.12 only.
 
 [YM-43: native time-transfer bound](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)
