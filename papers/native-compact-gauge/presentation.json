@@ -1,0 +1,168 @@
+{
+  "tokens": [
+    "R1",
+    "K1",
+    "R2",
+    "K2"
+  ],
+  "rules": [
+    {
+      "id": "RR1",
+      "lhs": [
+        "R1",
+        "R1"
+      ],
+      "rhs": [
+        [
+          [],
+          -1
+        ]
+      ],
+      "source": "RKF EMK presentation in independent factor 1"
+    },
+    {
+      "id": "KK1",
+      "lhs": [
+        "K1",
+        "K1"
+      ],
+      "rhs": [
+        [
+          [],
+          1
+        ]
+      ],
+      "source": "RKF EMK presentation in independent factor 1"
+    },
+    {
+      "id": "KR1",
+      "lhs": [
+        "K1",
+        "R1"
+      ],
+      "rhs": [
+        [
+          [
+            "R1",
+            "K1"
+          ],
+          -1
+        ]
+      ],
+      "source": "RKF EMK presentation in independent factor 1"
+    },
+    {
+      "id": "RR2",
+      "lhs": [
+        "R2",
+        "R2"
+      ],
+      "rhs": [
+        [
+          [],
+          -1
+        ]
+      ],
+      "source": "RKF EMK presentation in independent factor 2"
+    },
+    {
+      "id": "KK2",
+      "lhs": [
+        "K2",
+        "K2"
+      ],
+      "rhs": [
+        [
+          [],
+          1
+        ]
+      ],
+      "source": "RKF EMK presentation in independent factor 2"
+    },
+    {
+      "id": "KR2",
+      "lhs": [
+        "K2",
+        "R2"
+      ],
+      "rhs": [
+        [
+          [
+            "R2",
+            "K2"
+          ],
+          -1
+        ]
+      ],
+      "source": "RKF EMK presentation in independent factor 2"
+    },
+    {
+      "id": "commute_R2_R1",
+      "lhs": [
+        "R2",
+        "R1"
+      ],
+      "rhs": [
+        [
+          [
+            "R1",
+            "R2"
+          ],
+          1
+        ]
+      ],
+      "source": "Declared independent tensor factors"
+    },
+    {
+      "id": "commute_R2_K1",
+      "lhs": [
+        "R2",
+        "K1"
+      ],
+      "rhs": [
+        [
+          [
+            "K1",
+            "R2"
+          ],
+          1
+        ]
+      ],
+      "source": "Declared independent tensor factors"
+    },
+    {
+      "id": "commute_K2_R1",
+      "lhs": [
+        "K2",
+        "R1"
+      ],
+      "rhs": [
+        [
+          [
+            "R1",
+            "K2"
+          ],
+          1
+        ]
+      ],
+      "source": "Declared independent tensor factors"
+    },
+    {
+      "id": "commute_K2_K1",
+      "lhs": [
+        "K2",
+        "K1"
+      ],
+      "rhs": [
+        [
+          [
+            "K1",
+            "K2"
+          ],
+          1
+        ]
+      ],
+      "source": "Declared independent tensor factors"
+    }
+  ]
+}

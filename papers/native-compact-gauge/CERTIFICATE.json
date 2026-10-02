@@ -1,0 +1,995 @@
+{
+  "canonical_engine_commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+  "groups": [
+    {
+      "basis_dimension": 16,
+      "basis_pairs": 256,
+      "exact_checks": 775,
+      "name": "native_tensor_carrier_and_positive_pairing",
+      "representation": "derived coefficient adapter, not primitive"
+    },
+    {
+      "centralizer_dimension": 4,
+      "compact_generators": 4,
+      "exact_checks": 38,
+      "name": "quaternion_and_action_compatible_centralizer"
+    },
+    {
+      "exact_checks": 483,
+      "independent_affine_jet_cases": 6,
+      "name": "native_connections_match_independent_color_jets"
+    },
+    {
+      "exact_checks": 60,
+      "finite_unitaries": 3,
+      "formal_order": 3,
+      "name": "finite_unitaries_readout_and_based_loop_sign",
+      "ordered_plaquettes": 9
+    },
+    {
+      "exact_checks": 1,
+      "name": "memory_balance_and_proof_controls"
+    }
+  ],
+  "independent_controls": {
+    "centralizer_dimensions": {
+      "four_real_copies": 4,
+      "two_real_copies": 1
+    },
+    "checks": {
+      "Clifford_relations": 16,
+      "affine_covariant_Bianchi": 384,
+      "commuting_gauge_spin_actions": 12,
+      "complete_Clifford_span": 1,
+      "connection_color_matrix_routes": 96,
+      "covariant_double_divergence": 6,
+      "exhaustive_centralizer_ranks": 2,
+      "exhaustive_invariant_form_rank": 1,
+      "gauge_action_connection_variations": 72,
+      "gauge_action_derivative_variations": 288,
+      "independent_source_variations": 48,
+      "invariant_form_basis": 2,
+      "kinetic_skew": 4,
+      "local_massive_action_covariance": 4,
+      "massive_bilinear": 1,
+      "noncompact_norm_witness": 1,
+      "off_shell_matter_Noether": 4,
+      "positive_pairing": 16,
+      "pure_gauge_cancellation": 1,
+      "quaternion_products": 9,
+      "skew_and_multiplier": 4,
+      "thermo_full_variation_rank": 2,
+      "thermo_inverse_stability": 3,
+      "variable_gauge_covariance": 96
+    },
+    "invariant_pairing_dimension": 2,
+    "negative_controls": [
+      "one_real_factor_has_no_three_skew_directions",
+      "K_is_not_a_compact_generator",
+      "positive_norm_not_GL_invariant",
+      "negative_square_trace_not_positive_on_full_EMK",
+      "drop_nonabelian_commutator",
+      "wrong_color_orientation",
+      "individually_exact_components_imply_flatness",
+      "ordinary_divergence_can_replace_covariant",
+      "coefficient_commutator_alone_is_curvature",
+      "omit_color_precession_in_matter_current",
+      "drop_inhomogeneous_connection_term_1",
+      "drop_inhomogeneous_connection_term_2",
+      "drop_inhomogeneous_connection_term_3",
+      "drop_inhomogeneous_connection_term_4",
+      "single_shared_channel_has_full_gauge_rank"
+    ],
+    "sha256": "7de016731a669620b5df6cbe53312b6627eb3c3ed4b957e9b1a97e33bd1b5d85",
+    "total": 1073
+  },
+  "native_exact_checks": 1357,
+  "native_negative_controls": {
+    "K1_preserves_massive_multiplier": true,
+    "altered_pin_rejected": true,
+    "altered_proof_rejected": true,
+    "discard_central_phase": true,
+    "off_diagonal_entries_are_required": true,
+    "reverse_transport_sign": true,
+    "subtract_curvatures_instead_of_connection_memory": true,
+    "swap_quaternion_orientation": true
+  },
+  "presentation_sha256": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+  "schema": "publications.native-compact-gauge.v1",
+  "scope": {
+    "Clay_dictionary_closed": false,
+    "YM_E4DC_closed": false,
+    "empirical_validation": false,
+    "exhaustive_finite_linear_problems": true,
+    "external_review": false,
+    "finite_exact_execution": true,
+    "gauge_group_physically_selected": false,
+    "general_written_proofs": true,
+    "independent_matrix_and_color_route": true,
+    "interacting_continuum_constructed": false,
+    "proof_assistant_formalized": false,
+    "quantum_fermions_constructed": false,
+    "quantum_gravity_completed": false,
+    "whole_engine_rerun": false
+  },
+  "source_pins_sha256": "a7310818904fffa2f10716de69eb08d771176a75e2029582969c92e07f6364f1",
+  "status": "PASS_NCG1_NCG8_SCOPED_EXACT_CONTROLS",
+  "word_replays": [
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R1",
+                "R1"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR1",
+            "word": [
+              "R1",
+              "R1"
+            ]
+          }
+        ]
+      },
+      "name": "R1 square"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R2",
+                "R2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR2",
+            "word": [
+              "R2",
+              "R2"
+            ]
+          }
+        ]
+      },
+      "name": "R2 square"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K1",
+                "K1"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KK1",
+            "word": [
+              "K1",
+              "K1"
+            ]
+          }
+        ]
+      },
+      "name": "K1 square"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K2",
+                "K2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KK2",
+            "word": [
+              "K2",
+              "K2"
+            ]
+          }
+        ]
+      },
+      "name": "K2 square"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "R1",
+                "K1"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K1",
+                "R1"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR1",
+            "word": [
+              "K1",
+              "R1"
+            ]
+          }
+        ]
+      },
+      "name": "first EMK anticommutation"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "R2",
+                "K2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K2",
+                "R2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR2",
+            "word": [
+              "K2",
+              "R2"
+            ]
+          }
+        ]
+      },
+      "name": "second EMK anticommutation"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R2",
+                "R2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR2",
+            "word": [
+              "R2",
+              "R2"
+            ]
+          }
+        ]
+      },
+      "name": "quaternion square 0"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R1",
+                "K2",
+                "R1",
+                "K2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 1,
+            "rule": "commute_K2_R1",
+            "word": [
+              "R1",
+              "K2",
+              "R1",
+              "K2"
+            ]
+          },
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR1",
+            "word": [
+              "R1",
+              "R1",
+              "K2",
+              "K2"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KK2",
+            "word": [
+              "K2",
+              "K2"
+            ]
+          }
+        ]
+      },
+      "name": "quaternion square 1"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R1",
+                "R2",
+                "K2",
+                "R1",
+                "R2",
+                "K2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 2,
+            "rule": "commute_K2_R1",
+            "word": [
+              "R1",
+              "R2",
+              "K2",
+              "R1",
+              "R2",
+              "K2"
+            ]
+          },
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 3,
+            "rule": "KR2",
+            "word": [
+              "R1",
+              "R2",
+              "R1",
+              "K2",
+              "R2",
+              "K2"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "position": 4,
+            "rule": "KK2",
+            "word": [
+              "R1",
+              "R2",
+              "R1",
+              "R2",
+              "K2",
+              "K2"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "position": 1,
+            "rule": "commute_R2_R1",
+            "word": [
+              "R1",
+              "R2",
+              "R1",
+              "R2"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR1",
+            "word": [
+              "R1",
+              "R1",
+              "R2",
+              "R2"
+            ]
+          },
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR2",
+            "word": [
+              "R2",
+              "R2"
+            ]
+          }
+        ]
+      },
+      "name": "quaternion square 2"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "R1",
+                "R2",
+                "K2"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R2",
+                "R1",
+                "K2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "commute_R2_R1",
+            "word": [
+              "R2",
+              "R1",
+              "K2"
+            ]
+          }
+        ]
+      },
+      "name": "oriented quaternion product"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "R2"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R1",
+                "K2",
+                "R1",
+                "R2",
+                "K2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 1,
+            "rule": "commute_K2_R1",
+            "word": [
+              "R1",
+              "K2",
+              "R1",
+              "R2",
+              "K2"
+            ]
+          },
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR1",
+            "word": [
+              "R1",
+              "R1",
+              "K2",
+              "R2",
+              "K2"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR2",
+            "word": [
+              "K2",
+              "R2",
+              "K2"
+            ]
+          },
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KK2",
+            "word": [
+              "R2",
+              "K2",
+              "K2"
+            ]
+          }
+        ]
+      },
+      "name": "second quaternion product"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "R1",
+                "K2"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R1",
+                "R2",
+                "K2",
+                "R2"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 2,
+            "rule": "KR2",
+            "word": [
+              "R1",
+              "R2",
+              "K2",
+              "R2"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "position": 1,
+            "rule": "RR2",
+            "word": [
+              "R1",
+              "R2",
+              "R2",
+              "K2"
+            ]
+          }
+        ]
+      },
+      "name": "third quaternion product"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "constant exact-coefficient curvature"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "rational native unitary"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "1ca03397b0a0b464c31f1db8e6e92dae57a33a10bae415df10c59e4f1afb2e68",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "balanced curvature on a constant frame"
+    }
+  ],
+  "written_results": [
+    {
+      "id": "NCG-1",
+      "sha256": "20aba5316655166731d284e80b04ad00b756784c9cbb41ce6c30969c8be181e0",
+      "title": "Positive native pairing and the one-factor limit"
+    },
+    {
+      "id": "NCG-2",
+      "sha256": "648161782b962be39461ecd6b3daa9dcdd841f6fbdd5e82fd360868fb7842204",
+      "title": "The action-compatible internal symmetry is U(n)"
+    },
+    {
+      "id": "NCG-3",
+      "sha256": "ae16abf43255210d568ba4ea961f3762dd142623d4d5945a17863c18de01e625",
+      "title": "Two native factors give the quaternion sector and U(2)"
+    },
+    {
+      "id": "NCG-4",
+      "sha256": "a1271ed7fb6a4dce2303ae6fbdc85ae2f3cd5d4cb48f9a9482af3ce57452698c",
+      "title": "Native non-Abelian curvature, balance and commuting sectors"
+    },
+    {
+      "id": "NCG-5",
+      "sha256": "30a1b7ad2c0ebb89914331ab23ec550f0edb70525f66fb713630457787338fb0",
+      "title": "Positive invariant readout and its remaining coefficients"
+    },
+    {
+      "id": "NCG-6",
+      "sha256": "274e67b3c9e6221b6332bf277977e7cf767b87811b3efa11b9da2baaa613b20a",
+      "title": "Variational curvature law and Gauss propagation"
+    },
+    {
+      "id": "NCG-7",
+      "sha256": "548f376129904e91101dd2b1cedec895c42e2397014927ef5a9bbdd01c4a116f",
+      "title": "A massive module with an actual non-Abelian source"
+    },
+    {
+      "id": "NCG-8",
+      "sha256": "c7dc8922a8ac1d1014435a10a91f53f07444b4217b43706ffddfa12677a4a2ed",
+      "title": "Complete coefficient variations and the Abelian-gradient trap"
+    }
+  ]
+}
