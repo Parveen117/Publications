@@ -22,6 +22,15 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-43: native time-transfer bound](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)
+derives local overlap, conditional-update and temporal-barrier estimates,
+constructs the positive vacuum with a geometric tail, and uses cut-square
+log-convexity to bound every complementary source. The result is uniform in
+finite chain width at three certified coarse heat-kernel cells, within the
+existing declared positive-functional carrier. It replaces the cited step
+of YM-19 on that route; it does not derive the reference functional from EMK
+or establish cutoff/continuum uniformity. Verification uses Python 3.12 only.
+
 [YM-42: structural silence contraction](papers/yang-mills-certified-benchmark/YM42_SILENCE_TIME_LADDER.md)
 extends the existing YM-37/38/41 and RKF T74 chain to the 52-dimensional
 three-rail carrier. Its general quadratic criterion proves a ball and an

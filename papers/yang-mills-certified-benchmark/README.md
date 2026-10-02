@@ -1,6 +1,37 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-42 (2 October 2026)
+## Current continuation: YM-43 (3 October 2026)
+
+[YM-43's proof](YM43_NATIVE_TIME_TRANSFER_BOUND.md) derives the missing
+time-direction estimate on the existing YM-19 coarse heat-kernel chain.
+The criterion `2 c_s + c_t (q + 1/q) < 1` gives a bound on **every**
+vacuum-orthogonal source, uniform in all finite chain widths and all
+transfer powers, within the declared positive-functional carrier.
+
+| a | kappa | normalized time-operator ratio <= |
+| --- | --- | --- |
+| 6 | 1/16 | 1/2 |
+| 8 | 1/8 | 1/4 |
+| 12 | 1/8 | 1/64 |
+
+Seven written results replace the cited comparison/extraction step with
+explicit positive-sum and cut-square arguments. The certificate verifies
+the parameter hypotheses, 2,964 strip-barrier checks, 64 common-part cases,
+192 path/transfer identities, 360 whole-row marginal comparisons, finite
+transfer controls and eight refusal groups. This is not a formal-assistant
+proof. The measure dictionary, original YM-42 Wilson-grid operator problem,
+cutoff uniformity, interacting continuum and Clay problem remain open.
+
+```bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym43_native_time_transfer.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym43_native_time_transfer.py -v
+```
+
+**Runtime policy: Python 3.12 only.** YM-42's workflow also now uses this
+single version; its runtime/proof input hashes are rebound with every
+mathematical output unchanged. Previous dual-runtime evidence is historical.
+
+## Previous continuation: YM-42 (2 October 2026)
 
 [YM-42's proof and scope correction](YM42_SILENCE_TIME_LADDER.md) continue
 the already-named t=3 step on YM-37's 52-dimensional even invariant carrier.
@@ -10,8 +41,9 @@ three-rail contraction ceilings are 0.007132026236, 0.028765231931 and
 0.118984522771. These are declared truncated rational instances.
 
 The exact counterexample in YM42-T5 proves that spatial contraction alone,
-even uniform in rail count, cannot establish a uniform time gap. The next
-operator estimate and the three-rail content release remain open. T75's
+even uniform in rail count, cannot establish a uniform time gap. The operator
+estimate on its original truncated Wilson grid and the three-rail content
+release remain open; YM-43 supplies a different, scoped heat-kernel route. T75's
 two-rail release retains its declared higher-content Gram-uniformity.
 The broad historical 'content gone / t only' shorthand is superseded by
 this scoped ledger; previous finite certificate bytes are unchanged.
@@ -23,7 +55,7 @@ python papers/yang-mills-certified-benchmark/certificates/ym42_silence_time_ladd
 python -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym42_silence_time_ladder.py -v
 ```
 
-The dedicated `ym42-silence-time-ladder.yml` workflow checks Python 3.11/3.12.
+The dedicated `ym42-silence-time-ladder.yml` workflow checks Python 3.12 only.
 The original v1 paper and historical capsules keep their versioned scopes;
 the current continuation and correction are in the linked written proof.
 
@@ -60,7 +92,8 @@ width budget.
 
 | Item | Status |
 |---|---|
-| **YM-42 structural silence ball, exact t=2/3 continuation, all-spatial-step Cauchy tail, and space/time non-implication witness** | PASS (scoped rational grid; time operator gap OPEN) |
+| **YM-43 local overlap to full time-operator bound; all finite chain widths and transfer powers in three coarse heat-kernel cells** | PROVED under declared positive-functional carrier; exact hypotheses/controls PASS; cutoff/DICT OPEN |
+| **YM-42 structural silence ball, exact t=2/3 continuation, all-spatial-step Cauchy tail, and space/time non-implication witness** | PASS (scoped rational grid; its time operator gap OPEN) |
 | YM-1 reduced gap enclosure (a=1, beta=2) | PASS (pinned) |
 | YM-2 interacting theta-graph gap, certified small coupling (kappa < Delta_red/6) | PASS (pinned) |
 | YM-3 first-order crossing direction: rank-one, A<->B transported, slope lambda_half/4 | PASS (pinned) |
@@ -79,7 +112,7 @@ width budget.
 | YM-16 chain dock: exact B-factorisation ⇒ gap(S_m) ≤ Δ_red for ALL m,κ (m-uniform upper bound, exact eigenvector); vacuum volume bracket f0^{m−1} ≤ λ₁ ≤ e^{κ(m−1)}; certified two-sided gap (ratio ≤ 9/10) of S_m for m ≤ m*(κ) — m*=13 (κ=1/8), 7 (1/4), 4 (1/2) — with m* computed exactly and matched by the dock; m*+1 refused. Sup route provably non-uniform: death volume has coordinates | PASS (pinned) |
 | YM-17 interleaving seam: m_κ = B_odd·B_even; each dressed half-chain is a tensor product of the two-site chain at 2κ ⇒ product spectrum ⇒ gap ratio EXACTLY m-uniform (pair ratio certified ≤ 9/10 at κ≤1/2; bracket [1,3] honest at κ=1); vacuum bracket narrowed to rate κ² (per-bridge upper end 0.125→0.030 at κ=1/8); whole volume problem reduced to ONE inequality: λ₁(T) vs σ₁(X)σ₁(Y) (vacuum tracking of interleaved halves) | PASS (pinned) |
 | YM-18 CALIBRATION + DESIGN: enlarged exact carrier W'_m (vacuum + sites + bridge-pairs, dim 2m) gives certified Rayleigh lower bounds on λ₁(T_A,m), m=2..6; per-bridge vacuum rate φ_m^lo is m-independent to ~1e-5 (0.002177 @κ=1/8, 0.008698 @1/4, 0.03461 @1/2) — vacuum tracking behaves as a clean per-bridge rate; bracket width = looseness of the upper end. Cluster dock DESIGNED (monomers = odd pairs at 2κ, activities = even bridges, KP on a line) — no claim | PASS (calibration, pinned) |
-| YM-19 Dobrushin dock — **DEMOTED to ANCHORED** (governance rule: no classical borrowing; T3 rests on a cited Dobrushin/Föllmer anchor, same fate as YM-8 Jentzsch). T1 (coefficient bound) and T2 (α<1 arithmetic) are native and stand; the m-uniform GAP claim is WITHDRAWN until derived natively. Was: on the bounded-overlap chain — Dobrushin coefficient C_ij ≤ 1−1/δ² (elementary, proved), δ_s = e^{2κ} exact, δ_t ≤ (1+S_a)/(1−S_a) certified; α = 2(1−1/δ_t²)+2(1−1/δ_s²) < 1 ⇒ (pinned anchor: Dobrushin/Föllmer/Künsch covariance decay; extraction lemma proved) λ₂/λ₁ ≤ α for EVERY m. Certified gap/step ≥ 0.263 (a=6,κ=1/16), ≥ 0.145 (a=8,κ=1/8, ON YM-9's trajectory θ=1/64), ≥ 0.235 (a=12,κ=1/8); refused at (6,1/8),(4,1/16),(10,1/4). Coupling ceiling of the route exact: κ < log2/4. STANDING CORRECTION to YM-17 T3 (vacuum tracking insufficient; correlation-decay route replaces it). NOT uniform in the cutoff (δ_t→∞ as a→0) | ANCHORED (pinned, not a native theorem) |
+| YM-19 Dobrushin dock — **historical capsule DEMOTED to ANCHORED; scoped replacement in [YM-43](YM43_NATIVE_TIME_TRANSFER_BOUND.md)** (governance rule: no classical borrowing; T3 rests on a cited Dobrushin/Föllmer anchor, same fate as YM-8 Jentzsch). T1 (coefficient bound) and T2 (α<1 arithmetic) are native and stand; the m-uniform GAP claim is WITHDRAWN until derived natively. Was: on the bounded-overlap chain — Dobrushin coefficient C_ij ≤ 1−1/δ² (elementary, proved), δ_s = e^{2κ} exact, δ_t ≤ (1+S_a)/(1−S_a) certified; α = 2(1−1/δ_t²)+2(1−1/δ_s²) < 1 ⇒ (pinned anchor: Dobrushin/Föllmer/Künsch covariance decay; extraction lemma proved) λ₂/λ₁ ≤ α for EVERY m. Certified gap/step ≥ 0.263 (a=6,κ=1/16), ≥ 0.145 (a=8,κ=1/8, ON YM-9's trajectory θ=1/64), ≥ 0.235 (a=12,κ=1/8); refused at (6,1/8),(4,1/16),(10,1/4). Coupling ceiling of the route exact: κ < log2/4. STANDING CORRECTION to YM-17 T3 (vacuum tracking insufficient; correlation-decay route replaces it). NOT uniform in the cutoff (δ_t→∞ as a→0) | ANCHORED (pinned, not a native theorem) |
 | YM-20 NATIVE ORIGIN AUDIT: machine-checked origin ledger for YM-1..19 in the framework's vocabulary (carrier = COORDINATE_SHADOW throughout; counting = NATIVE_DERIVED throughout; anchors: YM-8 and YM-19 demoted imports, YM-17 SV-Weyl as technique). CAYLEY FORM certified: YM-15 ceiling (1+r)/(1−r) and YM-19 δ_t are Exp_Σ(A_Σ(y)) (F00-G Thm 5.1 pinned) with seam coordinates r, S_a; native odd-series log agrees with YM-1 route to 1e-20; uniform gap in native form = −Log_Σ(λ) − A_Σ(r). Bessel coefficients = native factorial series (F00-E Lemma 2.1 shape); Haar identification = the shadow. NAMED YM-21: bridge-local recognition-energy contraction under the seam-involution flow (F00-E Thm 6.2) | PASS (pinned) |
 | **YM-F1 THE CHAIN AS A RECOGNITION FABRIC (native carrier)**: T1 SU(2) = unit sphere of the EMK block over C_Σ — span{I, R, ιK, ιRK} is Hamilton's quaternion algebra, det = Δ∥+Δ⊥ becomes the quaternion norm (twisted seam channels), χ½ = 2×identity-sector coefficient; T2 chain = ladder fabric, bridge faces = plaquette holonomies H_l = A_i⁻¹A_{i+1}; T3 Recognition-Stokes EXACT on the chain (interior rungs cancel, E_int = 0, orientation tamper bites); T4 action = sum of face residues ρ_l = 1−Tr H_l/2 ∈ [0,2], weight = Exp_Σ(κ(m−1))·Exp_Σ(−κΣρ). Source: vault fabric appendix + EMK-1 + F00-E. Remaining shadow: Haar ↔ Φ_Σ (declared). Native form of YM-21 posed on the fabric | PASS (pinned) |
 | YM-21 THE TILING LAW (native, on the fabric): STANDING CORRECTION to YM-F1's posed question (boundary residue cannot control face residue — witness g, g⁻¹, certified); the right object is the tiling. T2 Stokes sub-telescoping ⇒ YM-15 entry = r^{#faces crossed}: SPATIAL decay along the chain exactly geometric, rate −Log r, every m. T3 leading-order TIME two-point = (λ·KMS_m(r))^t, bracketed λ^t((1∓r)/(1±r))^t for every m ⇒ YM-15/20's uniform rate −Log λ − A_Σ(r) DERIVED as a tiling count (t=1..6, m=2..8 inside bracket). T4 remainder named natively: higher-content/branching tilings, expansion parameter = face-coefficient ladder r_j (certified decreasing: r_½ ≫ r_1 ≫ r_{3/2}); uniform convergence = native cluster statement | PASS (pinned) |
@@ -375,4 +408,4 @@ A governance capsule with **no new numbers**. Diagnosis behind it: every wall th
 
 **Teeth** (a statement with no refutation condition is a definition, not a theorem) — five ways to refute NG with a single certified counterexample: volume (R1, a route already died this way in YM-11), cutoff (R2, live — YM-23 shows the tiling route exits at a = 1/8), sector cascade (R3, the seam-flow meter is the instrument), a channel lighter than J = ½ (R4), and any verdict that survives its own tamper (R5).
 
-**Ledger re-scored against NG:** O1 single-member gap DELIVERED; O2 volume DELIVERED on the column (the chain's operator upper bound is **not** delivered); O3 content CONDITIONAL on T75's two-rail/tail contract; **O4 time operator bound OPEN (YM-42 supplies t=3 spatial contraction only)**; O5 cutoff PARTIAL (declared trajectory only, AF shape not modelled); O6 evidence standard IN FORCE; **DICT (translation to Clay) OPEN, separate problem** (RH T01-E5C/E6). Sharpened by today's finding: theorum/75's grading was built classically and then regraded natively with identical rationals — one classical-looking ingredient proved replaceable; whether the measure itself is, is exactly DICT. Pin `EXPECTED_NG1.sha256`.
+**Ledger re-scored against NG:** O1 single-member gap DELIVERED; O2 volume DELIVERED on the column (the chain's operator upper bound is **not** delivered); O3 content CONDITIONAL on T75's two-rail/tail contract on that route; **O4 time PARTIAL: YM-43 proves the operator bound in three coarse heat-kernel cells; the all-a claim remains OPEN**; O5 cutoff PARTIAL (declared trajectory only, AF shape not modelled); O6 evidence standard IN FORCE; **DICT (translation to Clay) OPEN, separate problem** (RH T01-E5C/E6). Sharpened by today's finding: theorum/75's grading was built classically and then regraded natively with identical rationals — one classical-looking ingredient proved replaceable; whether the measure itself is, is exactly DICT. Pin `EXPECTED_NG1.sha256`.
