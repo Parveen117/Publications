@@ -22,6 +22,18 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-47: joint volume/time local-history limit](papers/yang-mills-certified-benchmark/YM47_JOINT_LOCAL_HISTORY_LIMIT.md)
+normalizes each time step before accumulation, controls the vacuum change
+and rounds separated observation times on the full carrier. Summable
+one-boundary extensions construct the continuous-parameter volume limit;
+a logarithmic crop proves convergence of local vacuum histories at arbitrary
+relative volume/cutoff rates. Both iterated limits coincide throughout
+abs(theta)<1/1680. The positive history functional retains the correlation
+gap and reflection positivity. Eight written results, directed exact
+controls and twelve tests support this continuation. A strongly continuous
+infinite-volume time map/generator, native measure/NCG identification and
+the physical continuum remain open.
+
 [YM-46: infinite-volume state and time map](papers/yang-mills-certified-benchmark/YM46_INFINITE_VOLUME_STATE.md)
 adds spatial weights to YM-45's temporal blocks. Explicit local boundary
 tails construct a normalized positive functional on space-time local
@@ -31,8 +43,9 @@ composition of the normalized time maps. A normalized half-step bridge
 also constructs the actual square-sourced ordering. The positive-form
 completion inherits the all-source gap and regulated reflection positivity.
 Eight written results, exact controls and twelve tests retain the admitted
-heat-functional carrier. The boundary constants grow as the time step
-shrinks; a joint volume/time-cutoff Cauchy construction remains open.
+heat-functional carrier. Its boundary constants grow as the time step
+shrinks; YM-47 overcomes that estimate for local vacuum history readouts
+using normalization, summable spatial extensions and cropping.
 
 [YM-45: temporal-block uniform gap](papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md)
 compares conditioned bridges on blocks of J ceil(6/a) fine time slices.
@@ -44,8 +57,9 @@ the fine-step vacuum. YM-43's cut-square extraction and ordering intertwiner
 give the actual transfer bound; YM-44 transports it to every fixed-width
 time limit. Eight written proofs, exact finite controls and ten tests retain
 the admitted heat/functional carrier. YM-46 supplies the fixed-step
-infinite-volume construction. The joint cutoff limit, native measure/NCG
-identification and the 4D continuum remain separate open tasks.
+infinite-volume construction, and YM-47 joins the local-history limits.
+Continuous-time map/generator completion, native measure/NCG identification
+and the 4D continuum remain separate open tasks.
 
 [YM-44: full interacting time refinement](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md)
 uses the existing bridge-character identities to bound the commutator of heat

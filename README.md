@@ -1,14 +1,14 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-46](papers/yang-mills-certified-benchmark/YM46_INFINITE_VOLUME_STATE.md)
-constructs the infinite-volume positive local-observable state and normalized
-time map at each fixed 0<a<=1, for abs(theta)<1/1680 on the declared heat chain.
-The actual square-sourced ordering retains
-[YM-45's all-source gap](papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md)
-and regulated reflection positivity.
-The positive reference functional remains admitted. Connecting this volume
-limit to [YM-44's time limit](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md),
-the native measure dictionary and full 4D continuum remain open.
+Latest Yang–Mills continuation: [YM-47](papers/yang-mills-certified-benchmark/YM47_JOINT_LOCAL_HISTORY_LIMIT.md)
+joins spatial volume and time refinement for local vacuum history readouts,
+at arbitrary relative rates, for abs(theta)<1/1680 on the declared heat chain.
+Both iterated limits give the same positive history functional, retaining
+the correlation gap and reflection positivity. Per-step vacuum normalization
+and an explicit cropping estimate connect YM-44/45/46 without assuming
+that limits commute.
+The reference functional remains admitted. An infinite-volume continuous-time
+map/generator, the native measure dictionary and full 4D continuum remain open.
 Current YM verification uses **Python 3.12 only**.
 
 [YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)

@@ -649,3 +649,36 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - NEXT: a joint local-observable Cauchy estimate connecting the fixed-width
   time limit and fixed-a volume limit, with the native measure dictionary
   maintained as a separate obligation.
+
+## YM-47 (3 October 2026): joint volume/time local-history limit
+
+- SOURCE AUDIT: YM-44 full norm refinement, YM-45 common positive vacua
+  and normalized gap, YM-46 changed-face comparison and actual S ordering.
+  All 46 inherited/dependency source hashes are preserved. The canonical
+  RKF completion engine is reused, not forked.
+- NEW ESTIMATE: normalize each step before telescoping. The full operator
+  error is 6 b t sqrt(a) exp(2 b a). A residual/geometric-inverse argument
+  controls the finite-volume vacuum; positive-contraction polynomials
+  control rounding at separated real observation times.
+- JOINT CONSTRUCTION: sum continuous-time one-face extension errors,
+  including asymmetric intervals. Crop very large discrete volumes to
+  O(log(1/a)) padding while retaining unchanged near faces. The explicit
+  bound tends to zero at arbitrary relative rates of spatial exhaustion
+  and time refinement. Both iterated local-history limits coincide.
+- POSITIVE READOUTS: the resulting positive functional on the stated
+  history algebra/uniform completion retains the correlation gap and
+  reflection positivity throughout abs(theta)<1/1680. The reference
+  functional and linear trajectory remain admitted.
+- EVIDENCE: eight written results; four parameter cells, 16 spatial
+  budget checks, six rational vacuum comparisons, eight independent
+  three-time fixtures, 17 positive-contraction inequalities, 27 time
+  roundings, 54 geometric-tail identities, 490 asymmetric crops and
+  1,120 one-face width checks; ten refusal groups and twelve tests.
+  Finite controls are not a formal proof assistant or SU(2) replacement.
+- FORWARD CLARIFICATION: YM-46's displayed equation (1) omits a plus
+  between spatial and temporal forcing. Its proof and equation (2) add
+  them. YM-47 states the additive expression; prior bytes are unchanged.
+- NEXT: construct the infinite-volume continuous-time action and its
+  generator/domain, with time-collision continuity proved rather than
+  inferred from weak readouts. The native measure/NCG dictionary, physical
+  clock, spatial continuum, AF, Clay and QG remain distinct obligations.

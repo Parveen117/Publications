@@ -1,6 +1,45 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-46
+## Current continuation: YM-47
+
+[YM-47's written proof](YM47_JOINT_LOCAL_HISTORY_LIMIT.md) constructs the
+joint limit of local vacuum history readouts as the spatial interval grows
+and the time step decreases, with no restriction on their relative rates.
+It applies to the actual square-sourced S chain throughout
+abs(theta)<1/1680. Both iterated limits give the same positive functional
+on the stated history algebra and its uniform completion.
+
+Normalizing each step first improves the finite-width error to
+
+\[
+\|(S_{I,a}/\lambda_{I,a})^n-V_I(na)\|
+\leq6b_I(na)\sqrt a\,e^{2b_Ia}.
+\]
+
+An explicit vacuum estimate, separated-time rounding, summable one-face
+extensions and a logarithmic crop give the joint local Cauchy bound.
+The correlation gap and reflection positivity pass to the limit.
+The [certificate](certificates/YM47_RESULT.json) retains four parameter
+cells and checks 16 spatial budgets, six rational vacuum comparisons,
+eight independent three-time readouts, 17 positive-contraction bounds,
+27 off-grid time roundings, 54 exact tail identities, 490 asymmetric
+crops, 1,120 one-face width checks and ten refusal groups.
+Twelve focused tests use Python 3.12.
+
+**Remaining:** this is a positive history functional in a declared heat
+parameter. An infinite-volume strongly continuous time map/generator,
+continuity at time collisions, a countably additive path measure, physical
+clock, native measure/NCG dictionary and 4D continuum are not supplied.
+Written proofs and finite exact controls are distinct from mechanical
+formalization. The prior evidence is frozen; YM-47 explicitly clarifies
+the missing plus sign in YM-46's displayed boundary equation (1).
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym47_joint_history.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym47_joint_history.py -v
+~~~
+
+## Previous continuation: YM-46
 
 [YM-46's written proof](YM46_INFINITE_VOLUME_STATE.md) constructs the
 infinite-volume positive local-observable state at each fixed 0<a<=1
@@ -26,9 +65,9 @@ four joint rate cells and explicit Cauchy boxes; 27 weighted layouts,
 identities, 36 mixed-source powers and twelve refusal groups.
 Twelve new tests and 40 related tests pass on Python 3.12.
 
-**Remaining:** the boundary-error constants depend on a. This fixed-step
-volume construction and YM-44's fixed-width time construction are not yet
-identified by a joint Cauchy estimate. The state is a positive functional
+**Scope:** the boundary-error constants depend on a. YM-47 now identifies
+this fixed-step volume construction and YM-44's time construction for
+local vacuum history readouts. The state is a positive functional
 on local observables and their uniform completion; a primitive-derived
 measure, physical real-time evolution, native NCG dictionary and full
 4D continuum are not claimed. Finite fixtures control the written proof;
@@ -71,9 +110,10 @@ verification of an infinite theorem.
 **Scope:** the reference functional and linear trajectory remain admitted.
 The result does not cover the old theta=1/16 example, arbitrary interactions,
 the original truncated Wilson family or the full 4D gauge lattice.
-YM-46 now supplies the infinite-volume state/time map at fixed a. The joint
-cutoff limit, native measure/NCG dictionary and physical continuum remain
-open. The small per-step gap
+YM-46 supplies the infinite-volume state/time map at fixed a, and YM-47
+joins the local-history limits. Continuous-time map/generator completion,
+native measure/NCG identification and the physical continuum remain open.
+The small per-step gap
 vanishes as a tends to zero; the positive rate per unit-a stays bounded below.
 
 ~~~bash
@@ -213,8 +253,9 @@ width budget.
 
 | Item | Status |
 |---|---|
-| **YM-46 infinite-volume positive local state and normalized T/S time maps at fixed a, with inherited gap and regulated reflection positivity** | PROVED under the declared small-bridge heat-functional adapter; exact controls PASS; joint volume/time-cutoff limit, DICT and 4D continuum OPEN |
-| **YM-45 temporal-block gap, uniform in finite width and fine time step; same rate in every fixed-width time limit** | PROVED for abs(theta)<1/1680 on declared kappa=theta a full heat chain; YM-46 supplies fixed-a volume construction; joint limit, DICT and 4D continuum OPEN |
+| **YM-47 joint volume/time limit of local vacuum histories at arbitrary relative cutoff rates; both iterated limits coincide** | PROVED under the declared abs(theta)<1/1680 heat-functional adapter; positive history functional, correlation gap and reflection positivity retained; continuous-time map/generator, DICT and 4D continuum OPEN |
+| **YM-46 infinite-volume positive local state and normalized T/S time maps at fixed a, with inherited gap and regulated reflection positivity** | PROVED under the declared small-bridge heat-functional adapter; YM-47 joins local-history limits; exact controls PASS; DICT and 4D continuum OPEN |
+| **YM-45 temporal-block gap, uniform in finite width and fine time step; same rate in every fixed-width time limit** | PROVED for abs(theta)<1/1680 on declared kappa=theta a full heat chain; YM-46 supplies fixed-a volume construction, YM-47 the joint local-history limit; continuous-time map/generator, DICT and 4D continuum OPEN |
 | **YM-44 full interacting time refinement at every fixed finite width, with an all-content operator-norm tail, order-residue control and conditional normalized gap transport** | PROVED under declared heat/functional adapter and linear trajectory; YM-45 supplies its gap premise in a small-bridge window; DICT OPEN |
 | **YM-43 local overlap to full time-operator bound; all finite chain widths and transfer powers in three coarse heat-kernel cells** | PROVED under declared positive-functional carrier; exact hypotheses/controls PASS; cutoff/DICT OPEN |
 | **YM-42 structural silence ball, exact t=2/3 continuation, all-spatial-step Cauchy tail, and space/time non-implication witness** | PASS (scoped rational grid; its time operator gap OPEN) |
@@ -253,7 +294,7 @@ width budget.
 | YM-32 DRESSED SINGLE-INSERTION ENERGY, m-UNIFORM (engine extended to rung insertions via CG reduction of 4-valent vertices; validated: j=0 reproduces YM-30, one-rail insertion vanishes, reversal identity, mixed-rung tamper smaller): E_m(p) = ⟨W_ptχ½(A_p), T0 W_ptχ½(A_p)⟩/⟨W_pt,T0W_pt⟩ exact for m=2..7, all p — bulk value m-independent to < 1e-6, ends differ; E_bulk = 0.43368 / 0.43532 / 0.44171 at κ = 1/8, 1/4, 1/2, i.e. λ·(1 + 1.27e-3 / 5.05e-3 / 1.98e-2), inside YM-15's bracket (I first wrote 'below λ'; the engine corrected me). Dressed denominator factorises (rung insertion free) ⇒ the J=½ sector's dressed excitation/vacuum ratio is exactly E_bulk, uniformly in m — a certified LOWER bound on that sector's top, not an upper bound on λ₂ | PASS (pinned) |
 | YM-33 t-ROW FABRIC ENGINE + EXACT TIME TWO-POINT FUNCTION (owner's framing: time carries no infinity, only the flow λ^τ = Exp_Σ(−τ·gap); expand the space coupling only): general cut transfer over t rails with rungs contracted up the column (interior vertices 5-leg: two rungs, two faces, insertion — two CG fusions); validated: t=2 reproduces YM-32 exactly, t=1 the chain, 3-row fabrics rational with exact time reflection. Dressed sequence a_τ = ⟨φ, T''_pt^τ φ⟩ and vacuum z_τ exact for τ=1,2, m=5..8: ratio sequence ρ₁ = E_bulk (YM-32), ρ₂ ≥ ρ₁, and the SECOND-ORDER connected correction δ₂ = ρ₂ − ρ₁ is a BULK CONSTANT — 0.00076998 / 0.00305278 / 0.01178845 at κ = 1/8, 1/4, 1/2 — with boundary influence decaying geometrically: moving an end from distance 2→3 shifts δ₂ by 1.3e-9 (either end, identically), 3→4 by 1.6e-12, ratio certified in [r²/2, 2r²]. The framework's own strong-coupling series for the gap, order by order as exact rationals, m-uniform with exponentially localised edges. Lower-bound side (Rayleigh data) — item 3's upper bound still open | PASS (pinned) |
 | YM-34 E4D-C RESTATED (native Laplace principle): the iterated multiplier WITHOUT smoothing, q_n = ∫wⁿ/∫wⁿ⁻¹, is strictly increasing to sup w = e^{2κ} (certified n ≤ 60) — so E4D-C as written in the RH ledger (deviation control of the multiplier iterated on one state) is unprovable, and the exponential of YM-16/26 is this growth. WITH the time kernel between multiplications the ratio is nondecreasing (log-convexity) and converges to λ₁(K^{1/2}WK^{1/2}) = f₀(1+δ), δ = 0.003582 / 0.014032 / 0.051911 (κ=1/8,1/4,1/2) vs sup price 0.274 / 0.598 / 1.405. E4D-C is restated for the alternating product (K^{1/2}M_wK^{1/2})ⁿ: λ₂/λ₁ ≤ 1−δ_gap uniform in m — the vacuum side of this is YM-31; only the excitation side is open | PASS (pinned) |
-| Remaining: theorum/28 item 3 — the memory channel's OPERATOR norm (not basis-state norms) uniform in m, via the same engine (E4D-C quadratic form on content-½); with YM-31's floor the dock's e_n becomes (‖QTQ‖/FLOOR) and the sup numerator is the last exponential; (interval coefficients, content tail, Perron bound on the column transfer → m-uniform floor at rate ≥ 0.00268) and the E4D-C quadratic form on content-½ via the same engine; (exact rational ladder evaluations) — closes item 6 at the true rate AND item 3 (E4D-C quadratic form on content-½) in one build; E4D-C on SUPERPOSITIONS of content-½ basis states (a quadratic-form statement on the multi-insertion channel) = theorum/28 item 3 (content-½ multi-insertion memory channel, Cauchy-uniform in m); (weak) YM-27 the intertwiner (spin-network) transfer on the chain fabric — recoupling matrices as weak-coupling tiling weights, floor uniform in m? (declared: chain ~ O(4)-type rotor model in 1+1D, continuum gap at the frontier for every method); (strong) FULL-ORDER tiling convergence uniform in m and a (j=½ branching); (weak) the COMMUTATOR-RESIDUE TRANSFER on the fabric — does the non-abelian sector alone carry a gap; AF trajectory derivation; (convergence of the face-coefficient tiling expansion) — the cluster statement in fabric language; then (YM-43 replaces the cited comparison at three coarse heat-kernel cells; YM-44 constructs full time refinement at fixed width; YM-45 proves a width/fine-time uniform gap for abs(theta)<1/1680 on declared kappa=theta a using temporal blocks); YM-46 constructs the infinite-volume local state and normalized time map at each fixed a in that window; uniformity outside it and a joint volume/time-cutoff Cauchy construction remain; AF trajectory, tightness, OS, non-triviality, metric universality, 2D lattice, Clay | OPEN |
+| Remaining: theorum/28 item 3 — the memory channel's OPERATOR norm (not basis-state norms) uniform in m, via the same engine (E4D-C quadratic form on content-½); with YM-31's floor the dock's e_n becomes (‖QTQ‖/FLOOR) and the sup numerator is the last exponential; (interval coefficients, content tail, Perron bound on the column transfer → m-uniform floor at rate ≥ 0.00268) and the E4D-C quadratic form on content-½ via the same engine; (exact rational ladder evaluations) — closes item 6 at the true rate AND item 3 (E4D-C quadratic form on content-½) in one build; E4D-C on SUPERPOSITIONS of content-½ basis states (a quadratic-form statement on the multi-insertion channel) = theorum/28 item 3 (content-½ multi-insertion memory channel, Cauchy-uniform in m); (weak) YM-27 the intertwiner (spin-network) transfer on the chain fabric — recoupling matrices as weak-coupling tiling weights, floor uniform in m? (declared: chain ~ O(4)-type rotor model in 1+1D, continuum gap at the frontier for every method); (strong) FULL-ORDER tiling convergence uniform in m and a (j=½ branching); (weak) the COMMUTATOR-RESIDUE TRANSFER on the fabric — does the non-abelian sector alone carry a gap; AF trajectory derivation; (convergence of the face-coefficient tiling expansion) — the cluster statement in fabric language; then (YM-43 replaces the cited comparison at three coarse heat-kernel cells; YM-44 constructs full time refinement at fixed width; YM-45 proves a width/fine-time uniform gap for abs(theta)<1/1680 on declared kappa=theta a using temporal blocks); YM-46 constructs the infinite-volume local state and normalized time map at each fixed a in that window; YM-47 joins the local vacuum history limits at arbitrary relative cutoff rates; uniformity outside the window and continuous-time map/generator completion remain; AF trajectory, tightness, OS, non-triviality, metric universality, 2D lattice, Clay | OPEN |
 | (superseded as the main route) cluster dock YM-18 proper: certified Kotecký–Preiss radius for the interleaving polymer gas with two-site pairs as monomers; per-bridge/local control in the content basis — certified strong-coupling cluster radius), 2D lattice, AF trajectory, tightness, OS reconstruction, non-triviality, metric universality, Clay predicate | OPEN |
 | Continuum existence / mass gap | OPEN |
 
@@ -532,4 +573,4 @@ A governance capsule with **no new numbers**. Diagnosis behind it: every wall th
 
 **Teeth** (a statement with no refutation condition is a definition, not a theorem) — five ways to refute NG with a single certified counterexample: volume (R1, a route already died this way in YM-11), cutoff (R2, live — YM-23 shows the tiling route exits at a = 1/8), sector cascade (R3, the seam-flow meter is the instrument), a channel lighter than J = ½ (R4), and any verdict that survives its own tamper (R5).
 
-**Ledger re-scored against NG:** O1 single-member gap DELIVERED; O2 volume DELIVERED on the column and, by YM-45, for the small-bridge full heat chain; the original Wilson-family operator upper bound remains OPEN; O3 content CONDITIONAL on T75's two-rail/tail contract on that route; **O4 time DELIVERED on the declared full heat chain for abs(theta)<1/1680 and 0<a<=1 by YM-45; the generic NG/Wilson claim remains OPEN**; **O5 cutoff PARTIAL: YM-44 constructs full time refinement at fixed width, and YM-45 supplies the same width-independent gap rate on its small-bridge window; YM-46 constructs the fixed-a infinite-volume state/time map; the joint volume/time-cutoff limit, physical trajectory and AF remain OPEN**; O6 evidence standard IN FORCE; **DICT (translation to Clay) OPEN, separate problem** (RH T01-E5C/E6). Sharpened by today's finding: theorum/75's grading was built classically and then regraded natively with identical rationals — one classical-looking ingredient proved replaceable; whether the measure itself is, is exactly DICT. Pin `EXPECTED_NG1.sha256`.
+**Ledger re-scored against NG:** O1 single-member gap DELIVERED; O2 volume DELIVERED on the column and, by YM-45, for the small-bridge full heat chain; the original Wilson-family operator upper bound remains OPEN; O3 content CONDITIONAL on T75's two-rail/tail contract on that route; **O4 time DELIVERED on the declared full heat chain for abs(theta)<1/1680 and 0<a<=1 by YM-45; the generic NG/Wilson claim remains OPEN**; **O5 cutoff PARTIAL: YM-44 constructs full time refinement at fixed width, and YM-45 supplies the same width-independent gap rate on its small-bridge window; YM-46 constructs the fixed-a infinite-volume state/time map; YM-47 constructs the joint local-history limit; continuous-time map/generator, physical trajectory and AF remain OPEN**; O6 evidence standard IN FORCE; **DICT (translation to Clay) OPEN, separate problem** (RH T01-E5C/E6). Sharpened by today's finding: theorum/75's grading was built classically and then regraded natively with identical rationals — one classical-looking ingredient proved replaceable; whether the measure itself is, is exactly DICT. Pin `EXPECTED_NG1.sha256`.
