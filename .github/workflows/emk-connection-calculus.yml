@@ -1,0 +1,53 @@
+name: EMK native connection calculus
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - MATHEMATICAL_FOUNDATION.md
+      - papers/emk-ugd-algebra/**
+      - .github/workflows/emk-connection-calculus.yml
+  pull_request:
+    branches: [main]
+    paths:
+      - MATHEMATICAL_FOUNDATION.md
+      - papers/emk-ugd-algebra/**
+      - .github/workflows/emk-connection-calculus.yml
+
+permissions:
+  contents: read
+
+jobs:
+  native-connection:
+    name: Native connection identities and source integrity
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout publication adapter
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: publications
+          persist-credentials: false
+      - name: Checkout separately pinned canonical compiler
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: Parveen117/Recognition-Kernel-Framework
+          ref: 3cc5a33b05c16d59c90994ddda69dedc0d392424
+          path: rkf
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            operator_foundation/core/native_operator.cjs
+            operator_foundation/core/paninian_operator.cjs
+            operator_foundation/examples/emk_job.json
+            operator_foundation/CANONICAL_HOME.json
+            operator_foundation/theory/01_NATIVE_ALGEBRA.md
+      - name: Set up exact-tested runtime
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '24.19.0'
+          package-manager-cache: false
+      - name: Check source pins, identities, word replays and negative controls
+        run: |
+          node publications/papers/emk-ugd-algebra/certificates/connection_calculus.cjs \
+            --rkf-root rkf --check

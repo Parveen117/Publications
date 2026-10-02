@@ -1,5 +1,7 @@
 # Canonical operator-engine source
 
+Publication mathematics continues through [the Morphic/EMK/UGD foundation route](MATHEMATICAL_FOUNDATION.md) and [native connection calculus](papers/emk-ugd-algebra/CONNECTION_CALCULUS.md). This mathematical publication route consumes the engine named here; it does not create another engine implementation.
+
 26 September 2026. The owner selected Recognition Kernel Framework as the single active home of the shared native operator engine.
 
 **Repository:** `Parveen117/Recognition-Kernel-Framework`  
