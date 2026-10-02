@@ -608,3 +608,44 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   Dobrushin–Shlosman method; no external priority claim.
 - NEXT: construct the infinite-volume state/observable limit on this
   proved window, with the native measure/NCG dictionary a separate task.
+
+## YM-46 (3 October 2026): infinite-volume local state and normalized time map
+
+- SOURCE AUDIT: YM-33's finite-order boundary corrections, YM-35's local
+  commutator remainder, the distinct finite-rail spatial transfer, and
+  YM-43/45's constructive coupling, vacuum and all-source bound. The
+  existing square/ordering identities and completion discipline are reused.
+  No convergence of the old worldline expansion is assumed.
+- NEW APPLICATION PROOF: weights rho^(-spatial distance) q^(time distance)
+  on clipped temporal blocks give
+  beta=R[2/(epsilon J)+(112+56 rho) abs(theta) J]<1.
+  The gate still covers abs(theta)<1/1680. Explicit local boundary tails
+  construct a positive space-time functional at each fixed a, independent
+  of exhaustion/boundaries and unique within its local specification.
+- NORMALIZED EVOLUTION: finite-volume Doob readouts converge uniformly
+  on each local observable, with a bound valid at all integer times.
+  This proves the semigroup law on the uniform completion. A normalized
+  heat half-step bridge constructs the actual square-sourced ordering;
+  clipped half-edge blocks add one only to the time-boundary mismatch cost.
+- POSITIVE COMPLETION: invariance, self-daggerness and square positivity
+  pass to the infinite-volume positive form. YM-45's all-source rate
+  survives; so do normalized time-correlation decay and the regulated
+  site/bond reflection inequalities.
+- BOUNDARY: a positive local-observable functional is constructed, not
+  a primitive-derived reference measure or a physical real-time theory.
+  Its boundary budgets grow with 1/a. YM-44's fixed-width continuous-time
+  construction and this fixed-a volume construction have not been joined.
+  Native measure/NCG identification, AF, 4D continuum, Clay and QG stay open.
+- EVIDENCE: eight written results; four joint cells, four explicit Cauchy
+  boxes and 16 fine-step budgets; 27 layouts with 216 interior and 306
+  boundary checks; 24 finite strip readouts; 16 local conditionals;
+  84 bridge/entry checks, 40 path identities, twelve half-edge skeletons;
+  twelve reflection identities, 36 mixed-source powers, twelve refusal
+  groups and twelve focused tests. Forty related tests pass on Python 3.12.
+  These finite controls are not a formal proof assistant or SU(2) replacement.
+- PRESERVATION: 39 upstream hashes are bound. All preceding certificate
+  bytes and the canonical RKF engine remain unchanged. The established
+  Dobrushin–Shlosman/DLR lineage is credited; no priority claim.
+- NEXT: a joint local-observable Cauchy estimate connecting the fixed-width
+  time limit and fixed-a volume limit, with the native measure dictionary
+  maintained as a separate obligation.
