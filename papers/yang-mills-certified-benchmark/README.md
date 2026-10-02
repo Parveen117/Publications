@@ -1,6 +1,57 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-48
+## Current continuation: YM-49
+
+[YM-49's written proof](YM49_TIME_ZERO_OBSERVABLES.md) constructs bounded
+time-zero observables on YM-48's reflected carrier. A uniform energy
+multiplier bound controls the time-zero collision. It proves the norm
+bound, dagger/product laws and ordered coefficient-history readouts:
+
+\[
+\|M_0(F)\|\leq\|F\|_\infty,\qquad
+M_0(F)M_0(G)=M_0(FG),\qquad M_0(F)e=JF.
+\]
+
+The instantaneous-row compression has an exact positive closure test:
+
+\[
+C(2t)-C(t)^2=L(t)^\dagger L(t),\qquad
+L(t)=(I-JJ^\dagger)T(t)J.
+\]
+
+All these defects vanish exactly when the coefficient-history sector is
+its instantaneous row. Otherwise the retained complement obeys RKF's
+exact memory equation, now with gap-controlled tails and a lawful
+bounded Schur inverse. A same-chain source proves
+||[T(t),M_0(x_0)]e|| >= (1-exp(-gamma t))/2 > 0.
+This is an observable/time ordering result, not an identification with
+native gauge curvature.
+
+[The certificate](certificates/YM49_RESULT.json) binds eight written
+results, 48 independent time-zero path readouts, nine complex products,
+three dagger and three norm checks, three all-source form bounds,
+18 weighted product-energy controls, 35 collision/Cauchy controls,
+nine mixed-time defects, twelve positive memory-coefficient bounds,
+36 exact memory recursions, 108 memory-tail checks, three Schur inverses,
+twelve Schur-tail checks and twelve refusal groups.
+Seventeen new and 83 related tests pass on **Python 3.12 only**.
+
+**Scope:** the interacting chain's row defect is still unevaluated.
+The certificate's closing/nonclosing finite observers are controls,
+not evidence deciding that infinite-chain question. Coefficient-history
+density in the larger bounded-history completion is also separate.
+The admitted abs(theta)<1/1680 heat/reference-functional carrier is
+unchanged; native measure/NCG, physical gauge observables, clock,
+relativistic/spatial continuum, AF, Clay and QG remain open.
+The infinite proof is written, not mechanically formalized.
+All 60 inherited source hashes and the canonical RKF engine are preserved.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym49_time_zero.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym49_time_zero.py -v
+~~~
+
+## Previous continuation: YM-48
 
 [YM-48's written proof](YM48_REFLECTED_TIME_GENERATOR.md) constructs
 continuous heat-time action on the reflected positive-form completion of
@@ -29,8 +80,9 @@ quadratures, 35 coefficient identities, 108 integration-by-parts checks,
 twelve weighted energy controls and twelve refusal groups.
 Fourteen focused tests use Python 3.12 only.
 
-**Scope:** the carrier is the reflected history completion. The coefficient
-row embedding is not yet proved onto or invariant, and arbitrary future
+**Scope:** the carrier is the reflected history completion. YM-49 now
+supplies bounded time-zero coefficient observable action and a closure
+diagnostic. The row embedding is not yet proved onto or invariant, and arbitrary future
 multiplication does not preserve reflection-null histories. Native
 measure/NCG identification, physical gauge-observable selection, material
 time and the full 4D continuum remain open. The nonzero coefficient source
@@ -299,7 +351,8 @@ width budget.
 
 | Item | Status |
 |---|---|
-| **YM-48 reflected continuous-time action, self-adjoint generator/domain/core and gap; coefficient-row embedding and nonzero source** | PROVED on the declared small-bridge heat-functional carrier; complete instantaneous-row/physical observable identification, DICT and 4D continuum OPEN |
+| **YM-49 bounded time-zero coefficient observable representation, ordered readouts, positive row-closure defect and gap-controlled memory; nonzero time/observable commutator** | PROVED on the declared heat-functional carrier; actual chain row defect, full bounded-history density, physical observable/DICT and 4D continuum OPEN |
+| **YM-48 reflected continuous-time action, self-adjoint generator/domain/core and gap; coefficient-row embedding and nonzero source** | PROVED on the declared small-bridge heat-functional carrier; YM-49 supplies time-zero observable action; instantaneous-row/physical identification, DICT and 4D continuum OPEN |
 | **YM-47 joint volume/time limit of local vacuum histories at arbitrary relative cutoff rates; both iterated limits coincide** | PROVED under the declared abs(theta)<1/1680 heat-functional adapter; positive history functional, correlation gap and reflection positivity retained; YM-48 constructs the reflected time action/generator; full row identification, DICT and 4D continuum OPEN |
 | **YM-46 infinite-volume positive local state and normalized T/S time maps at fixed a, with inherited gap and regulated reflection positivity** | PROVED under the declared small-bridge heat-functional adapter; YM-47 joins local-history limits; exact controls PASS; DICT and 4D continuum OPEN |
 | **YM-45 temporal-block gap, uniform in finite width and fine time step; same rate in every fixed-width time limit** | PROVED for abs(theta)<1/1680 on declared kappa=theta a full heat chain; YM-46 supplies fixed-a volume construction, YM-47 the joint local-history limit; YM-48 constructs the reflected time action/generator; full row identification, DICT and 4D continuum OPEN |
