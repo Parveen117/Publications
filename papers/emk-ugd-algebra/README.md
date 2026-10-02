@@ -1,5 +1,9 @@
 # EMK / UGD algebra — the determinant seam ladder (EMK-1)
 
+Current continuation: [EMK-C1 — native connection and curvature calculus](CONNECTION_CALCULUS.md), with derived EMK direction operators, noncommuting-frame curvature, gauge covariance, Bianchi closure and observer descent. See the [common mathematical route](../../MATHEMATICAL_FOUNDATION.md). Cut grading, dagger grading and scalar radial/turn channels remain distinct; the full UGD numeral layer is not replaced by the EMK block.
+
+[![EMK native connection calculus](https://github.com/Parveen117/Publications/actions/workflows/emk-connection-calculus.yml/badge.svg?branch=main)](https://github.com/Parveen117/Publications/actions/workflows/emk-connection-calculus.yml)
+
 The framework's **own algebraic core**, brought from the vault into the
 public certified corpus. Until now the Cut-First Equivalence capsules
 used an explicit rational equation of state as their witness — a

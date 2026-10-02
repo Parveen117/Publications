@@ -1,5 +1,7 @@
 # Publications
 
+For common mathematical development, start with [Morphic/EMK/UGD mathematical foundation](MATHEMATICAL_FOUNDATION.md) and [EMK-C1: native connection and curvature calculus](papers/emk-ugd-algebra/CONNECTION_CALCULUS.md). Mathematical chapters develop here; current physical applications continue in [extra-ideas](https://github.com/Parveen117/extra-ideas). The shared engine is the single canonical RKF source linked below.
+
 Citable research outputs of **Monty Dabas / Celextrix Pvt Ltd**. One
 research foundation — the recognition-kernel theorem ladder — feeds
 several application programmes; this repository holds the papers and
