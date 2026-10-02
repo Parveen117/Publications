@@ -22,6 +22,18 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-46: infinite-volume state and time map](papers/yang-mills-certified-benchmark/YM46_INFINITE_VOLUME_STATE.md)
+adds spatial weights to YM-45's temporal blocks. Explicit local boundary
+tails construct a normalized positive functional on space-time local
+observables, unique within its declared conditional specification, at each
+fixed time step. Uniform convergence on each local row observable proves
+composition of the normalized time maps. A normalized half-step bridge
+also constructs the actual square-sourced ordering. The positive-form
+completion inherits the all-source gap and regulated reflection positivity.
+Eight written results, exact controls and twelve tests retain the admitted
+heat-functional carrier. The boundary constants grow as the time step
+shrinks; a joint volume/time-cutoff Cauchy construction remains open.
+
 [YM-45: temporal-block uniform gap](papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md)
 compares conditioned bridges on blocks of J ceil(6/a) fine time slices.
 The coarse heat overlap survives refinement, while the bounded spatial tilt
@@ -31,8 +43,9 @@ coupling yield an all-source rate gamma>0 independent of finite width and
 the fine-step vacuum. YM-43's cut-square extraction and ordering intertwiner
 give the actual transfer bound; YM-44 transports it to every fixed-width
 time limit. Eight written proofs, exact finite controls and ten tests retain
-the admitted heat/functional carrier. Infinite-volume construction, native
-measure/NCG identification and the 4D continuum are separate open tasks.
+the admitted heat/functional carrier. YM-46 supplies the fixed-step
+infinite-volume construction. The joint cutoff limit, native measure/NCG
+identification and the 4D continuum remain separate open tasks.
 
 [YM-44: full interacting time refinement](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md)
 uses the existing bridge-character identities to bound the commutator of heat

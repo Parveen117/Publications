@@ -1,12 +1,14 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-45](papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md)
-proves a positive rate uniform in finite chain width and fine time step,
-for abs(theta)<1/1680 on the declared trajectory kappa(a)=theta a.
-Temporal blocks control every complementary source and all contents.
-The rate also survives [YM-44's fixed-width time limit](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md).
-The positive reference functional remains admitted; the native measure
-dictionary, infinite-volume construction and full 4D continuum remain open.
+Latest Yang–Mills continuation: [YM-46](papers/yang-mills-certified-benchmark/YM46_INFINITE_VOLUME_STATE.md)
+constructs the infinite-volume positive local-observable state and normalized
+time map at each fixed 0<a<=1, for abs(theta)<1/1680 on the declared heat chain.
+The actual square-sourced ordering retains
+[YM-45's all-source gap](papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md)
+and regulated reflection positivity.
+The positive reference functional remains admitted. Connecting this volume
+limit to [YM-44's time limit](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md),
+the native measure dictionary and full 4D continuum remain open.
 Current YM verification uses **Python 3.12 only**.
 
 [YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)
