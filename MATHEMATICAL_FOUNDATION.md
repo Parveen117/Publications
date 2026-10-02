@@ -22,6 +22,20 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-48: reflected time action and generator](papers/yang-mills-certified-benchmark/YM48_REFLECTED_TIME_GENERATOR.md)
+uses YM-47's history functional to quotient the reflected null space and
+complete its positive pairing. Literal time translation is contractive,
+composes on the common history core, and extends strongly continuously.
+A Laplace resolvent with explicit cut/quadrature tails constructs the
+self-adjoint nonnegative generator, its domain and graph core. The
+all-source gap survives. A local Casimir/Leibniz energy identity gives an
+isometric time-zero coefficient-row embedding and a nonzero centered source
+with squared norm at least 5/32. Nine written results and fourteen tests
+retain the declared abs(theta)<1/1680 heat-functional adapter.
+Whether the row embedding exhausts the history carrier and supports the
+full required observable action remains open, alongside native measure/NCG
+identification and the physical continuum.
+
 [YM-47: joint volume/time local-history limit](papers/yang-mills-certified-benchmark/YM47_JOINT_LOCAL_HISTORY_LIMIT.md)
 normalizes each time step before accumulation, controls the vacuum change
 and rounds separated observation times on the full carrier. Summable
@@ -30,9 +44,10 @@ a logarithmic crop proves convergence of local vacuum histories at arbitrary
 relative volume/cutoff rates. Both iterated limits coincide throughout
 abs(theta)<1/1680. The positive history functional retains the correlation
 gap and reflection positivity. Eight written results, directed exact
-controls and twelve tests support this continuation. A strongly continuous
-infinite-volume time map/generator, native measure/NCG identification and
-the physical continuum remain open.
+controls and twelve tests support this continuation. YM-48 now constructs
+the continuous-time action/generator on the reflected completion; full row
+identification, native measure/NCG identification and the physical continuum
+remain open.
 
 [YM-46: infinite-volume state and time map](papers/yang-mills-certified-benchmark/YM46_INFINITE_VOLUME_STATE.md)
 adds spatial weights to YM-45's temporal blocks. Explicit local boundary
@@ -58,7 +73,8 @@ give the actual transfer bound; YM-44 transports it to every fixed-width
 time limit. Eight written proofs, exact finite controls and ten tests retain
 the admitted heat/functional carrier. YM-46 supplies the fixed-step
 infinite-volume construction, and YM-47 joins the local-history limits.
-Continuous-time map/generator completion, native measure/NCG identification
+YM-48 supplies the reflected continuous-time completion and its generator.
+Instantaneous-row observable identification, native measure/NCG identification
 and the 4D continuum remain separate open tasks.
 
 [YM-44: full interacting time refinement](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md)

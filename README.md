@@ -1,14 +1,15 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-47](papers/yang-mills-certified-benchmark/YM47_JOINT_LOCAL_HISTORY_LIMIT.md)
-joins spatial volume and time refinement for local vacuum history readouts,
-at arbitrary relative rates, for abs(theta)<1/1680 on the declared heat chain.
-Both iterated limits give the same positive history functional, retaining
-the correlation gap and reflection positivity. Per-step vacuum normalization
-and an explicit cropping estimate connect YM-44/45/46 without assuming
-that limits commute.
-The reference functional remains admitted. An infinite-volume continuous-time
-map/generator, the native measure dictionary and full 4D continuum remain open.
+Latest Yang–Mills continuation: [YM-48](papers/yang-mills-certified-benchmark/YM48_REFLECTED_TIME_GENERATOR.md)
+constructs a strongly continuous positive time action on YM-47's reflected
+history completion. Its nonnegative self-adjoint generator has an explicit
+domain, graph core and inherited all-source gap for abs(theta)<1/1680.
+Local coefficient observables embed at time zero; a centered single-site
+source has reflected norm squared at least 5/32, so the carrier has a
+nonzero excitation.
+The heat/reference functional remains admitted. Complete instantaneous-row
+observable identification, the native measure dictionary and full 4D continuum
+remain open; the coefficient excitation is not a physical particle claim.
 Current YM verification uses **Python 3.12 only**.
 
 [YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)

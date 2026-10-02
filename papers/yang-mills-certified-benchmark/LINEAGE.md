@@ -682,3 +682,38 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   generator/domain, with time-collision continuity proved rather than
   inferred from weak readouts. The native measure/NCG dictionary, physical
   clock, spatial continuum, AF, Clay and QG remain distinct obligations.
+
+## YM-48 (3 October 2026): reflected time action, generator and nonzero source
+
+- SOURCE AUDIT: YM-47 joint history limits, YM-45 finite normalized gap,
+  and the actual S continuation of YM-44/46. Read canonical RKF T28, WC2
+  and N08/N10/N11 at the pinned commit; the mass-completion and unbounded
+  generator scopes remain distinct. No shared engine is duplicated.
+- TIME ACTION: finite folding identifies reflected history forms.
+  Literal time translation preserves null histories, contracts, composes
+  and extends strongly continuously on their positive-form completion.
+  The same all-source gap passes to this common carrier.
+- GENERATOR: strong Laplace cut sums with explicit mesh and tail errors
+  construct a resolvent. Its common dense range is the generator domain;
+  the derivative characterization, closedness, positivity, self-adjointness
+  and a graph core are proved. The unique vacuum and H>=gamma Q follow.
+- LOCAL SOURCES: Casimir/Leibniz and the finite vacuum equation give a
+  width-independent local coefficient energy bound. Time-zero row sources
+  embed isometrically. Global symmetry fixes the one-site reference
+  marginal; the fundamental character has variance 1/4 and energy 3/16,
+  giving reflected squared norm >=5/32 at time 1/4. This is not a
+  separately established physical gauge-invariant particle.
+- EVIDENCE: nine written results; 48 reflected path identities, 30 mixed
+  source gap/composition checks, four null translations, eight two-sided
+  inverse checks, six resolvent identities, 24 generator/domain checks,
+  twelve outward quadratures, 35 coefficient identities, 108 integration
+  by parts identities, twelve weighted energy controls and twelve refusal
+  groups. Fourteen focused tests and 66 related tests pass on Python 3.12.
+  Exact finite fixtures support, but do not mechanically formalize, the proof.
+- PRESERVATION: 53 upstream source hashes and all older evidence remain
+  unchanged. Osterwalder--Schrader reconstruction is credited as lineage;
+  the full relativistic reconstruction axioms are not assumed or verified.
+- NEXT: identify the coefficient row completion with the whole reflected
+  history carrier, or retain its extra memory explicitly; prove the required
+  bounded observable action. Native measure/NCG, material clock, physical
+  gauge sector, relativistic/spatial continuum, AF, Clay and QG remain open.
