@@ -1,6 +1,6 @@
 # Mathematical foundation and development route
 
-Author: Monty Dabas. Updated: 2 October 2026.
+Author: Monty Dabas. Updated: 3 October 2026.
 
 The common mathematical foundation is **Morphic operator algebra and its recognition/cut calculus**. In standard subject terms this crosses associative noncommutative algebra, graded algebra, representation/module theory, Lie derivations, cocycle/path memory and noncommutative differential geometry. Completion adds functional analysis under stated norms. UGD adds a structured numeral and conserved-ledger layer. These are connected layers, not competing replacements for one another.
 
@@ -21,6 +21,17 @@ The common mathematical foundation is **Morphic operator algebra and its recogni
 The 2 October audit read the EMK/UGD publication guide and lineage, generalized-Euler dock, current operator contracts, Morphic status ledgers and selected derivation/clock/geometry source sections. It did not re-certify every manuscript claim. The collected volume records its own historical source manifest; it does not contain every later nested Morphic manuscript.
 
 ## Current mathematical continuation
+
+[YM-44: full interacting time refinement](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md)
+uses the existing bridge-character identities to bound the commutator of heat
+transport with the interaction. Ordered insertion packets and an explicit
+Smriti tail construct the full time limit on the declared linear trajectory.
+For every fixed finite width, all sources and contents obey the norm error
+3 b t Exp(b t) sqrt(mesh), with b=|theta|(m-1). It extends the old nilpotent
+EMK-T2 transport controls to this specified unbounded heat family; bounded
+WC2 calculus is not silently applied to the unbounded generator. The uniform
+volume/cutoff gap remains a separate premise in the proved gap-transport gate.
+The shared engine and previous certificates are unchanged; Python 3.12 only.
 
 [YM-43: native time-transfer bound](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)
 derives local overlap, conditional-update and temporal-barrier estimates,

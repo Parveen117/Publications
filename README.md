@@ -1,11 +1,15 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)
-derives an arbitrary-source time-transfer bound, uniform in finite chain
-width, at three coarse heat-kernel cells within the declared positive-functional
-carrier. The native measure dictionary and continuum remain open.
+Latest Yang–Mills continuation: [YM-44](papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md)
+constructs the full interacting time-refinement limit at every fixed finite
+chain width, with an explicit operator-norm error for all sources and contents.
+The trajectory and positive reference functional remain declared. A gap uniform
+in both spatial width and time cutoff, the measure dictionary and continuum
+remain open.
 Current YM verification uses **Python 3.12 only**.
 
+[YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)
+supplies the preceding width-uniform time bound at three coarse heat-kernel cells.
 [YM-42](papers/yang-mills-certified-benchmark/YM42_SILENCE_TIME_LADDER.md)
 supplies the preceding structural silence ball and spatial memory-tail result.
 
