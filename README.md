@@ -1,5 +1,9 @@
 # Publications
 
+New mathematical development: [Native compact gauge completion](papers/native-compact-gauge/README.md)
+derives the action-compatible U(2)/SU(2) sector from independent EMK factors,
+with native curvature, source and Gauss identities and scoped exact controls.
+
 For common mathematical development, start with [Morphic/EMK/UGD mathematical foundation](MATHEMATICAL_FOUNDATION.md) and [EMK-C1: native connection and curvature calculus](papers/emk-ugd-algebra/CONNECTION_CALCULUS.md). Mathematical chapters develop here; current physical applications continue in [extra-ideas](https://github.com/Parveen117/extra-ideas). The shared engine is the single canonical RKF source linked below.
 
 [Native thermodynamic curvature, NT-1 to NT-8](papers/native-thermodynamic-curvature/README.md) now connects the thermodynamic response paper and theorem register to that calculus: an exact EMK-to-Hessian intertwiner, ordered Smriti balance, observer-return curvature and the scoped Onsager-flatness criterion. The native edition includes written proofs, a compiled paper and independent exact controls.

@@ -22,6 +22,12 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[NCG-1 to NCG-8: native compact gauge completion](papers/native-compact-gauge/README.md)
+connects the massive-module U(1) construction to an explicit U(2)/SU(2)
+coefficient sector, classifies its positive invariant pairing, and supplies
+the native non-Abelian current/Gauss and complete-variation identities.
+The copy count, action class and physical gauge-group selection remain explicit.
+
 [NT-1 to NT-8: native thermodynamic curvature](papers/native-thermodynamic-curvature/README.md) consumes EMK-C1 and the actual thermo research edition. It constructs the positive native response element and its selected connection, proves the faithful Hessian/Riemann representation, and develops the non-Abelian Smriti balance, compression-return correction, scoped Onsager criterion and induced response-tower curvature. [The source map](papers/native-thermodynamic-curvature/SOURCE_MAP.md) records how the paper and all thermodynamic/lambda capsules are used without promoting their remaining physical or analytic obligations.
 
 [UGD-A0: the associative-carrier gate](papers/emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md) identifies a necessary next foundation contract: the historical carry operation conserves total seam charge but is not associative under strict digit/ledger equality. The charge quotient and the full UGD state must therefore remain distinct. A native associative lift or compatible quotient must be proved before treating that raw numeral container as the algebra underlying tensor calculus.
