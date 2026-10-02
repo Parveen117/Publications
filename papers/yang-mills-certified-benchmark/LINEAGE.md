@@ -565,3 +565,46 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - NEXT: a volume-uniform fine-step gap estimate, for example a justified
   temporal-block or content-sensitive bound, with its physical trajectory
   and measure/observable dictionary handled as separate obligations.
+
+## YM-45: a temporal-block gap uniform in width and fine time
+
+- SOURCE AUDIT: YM-19's full heat coefficient tail and positive-functional
+  adapter; YM-43's coupling, constructive vacuum, cut-square extraction and
+  X-dagger-X/XX-dagger ordering transport; YM-44's full norm refinement
+  and normalized gap-transport gate. The existing worldline/tiling route
+  was checked for overlap; its unproved convergence is not assumed.
+- NEW APPLICATION PROOF: blocks have ell=J ceil(6/a) fine slices, with
+  a ceil(6/a) in [6,7). Coarse overlap epsilon=4/5 controls conditioned
+  free bridges with expected mismatch at most r/epsilon. Bounded spatial
+  tilts give the outgoing influence budget
+  alpha<=2/(epsilon J)+168 abs(theta) J. Clipped labels preserve exact
+  removal counts at both temporal boundaries, including short strips.
+- GATE AND RATE: choose R>1 with R alpha<1. Weighted conditional updates
+  and even-moment extraction give gamma=Log(R)/(7J)>0, independent of
+  every finite width and 0<a<=1. J=5 proves the whole open interval
+  abs(theta)<1/1680. Four rational cells have independently bounded logs.
+  A coarse power constructs the fine-step vacuum; the bound is for the
+  actual square-sourced operator and includes the free B factors.
+- TIME LIMIT: YM-44's formerly conditional gap premise is supplied in
+  this window. Its normalized gate gives the same rate for U(t), every
+  t>0 at each finite width. A coarse-time vacuum also supplies the common
+  positive vacuum for small t. Refinement depth may still depend on width.
+- BOUNDARY: this is the declared kappa=theta a heat-functional chain, not
+  the full 4D gauge lattice or an AF-derived trajectory. The old theta=1/16
+  example is outside the new certificate. Failure at the window endpoint
+  is failure of the conservative budget, not proof of gap closure.
+  Infinite-volume state/observable construction, native measure/NCG DICT,
+  physical clocks, interacting continuum, Clay and quantum gravity remain open.
+- EVIDENCE: eight written results; 18 skeleton couplings, 12 directly
+  enumerated path marginals and 25 matrix-power identities; 20 tilted
+  blocks and 60 spatial-coordinate perturbations; 75 clipped layouts,
+  910 interior and 1,260 weighted incidence controls; two exact joint
+  update fixtures with 4,608 pair/label updates each; a coarse-power
+  vacuum control, 24 time-limit controls, 12 refusal groups and ten tests.
+  Finite binary fixtures are not SU(2) replacements or formal proofs.
+- PRESERVATION: 31 upstream input hashes are bound; all earlier certificate
+  bytes and the canonical RKF engine remain unchanged. Python 3.12 only.
+  Block-comparison lineage is credited to Rebeschini–van Handel and the
+  Dobrushin–Shlosman method; no external priority claim.
+- NEXT: construct the infinite-volume state/observable limit on this
+  proved window, with the native measure/NCG dictionary a separate task.
