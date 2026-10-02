@@ -2,6 +2,8 @@
 
 Current continuation: [EMK-C1 — native connection and curvature calculus](CONNECTION_CALCULUS.md), with derived EMK direction operators, noncommuting-frame curvature, gauge covariance, Bianchi closure and observer descent. See the [common mathematical route](../../MATHEMATICAL_FOUNDATION.md). Cut grading, dagger grading and scalar radial/turn channels remain distinct; the full UGD numeral layer is not replaced by the EMK block.
 
+[UGD-A0 — associative-carrier gate](UGD_ALGEBRA_CONTRACT.md) supplies an exact strict-equality counterexample for the historical carry operation while preserving its total-charge conservation result. This is a new scoped boundary, not a change to the old UGD-1 source or verdicts.
+
 [![EMK native connection calculus](https://github.com/Parveen117/Publications/actions/workflows/emk-connection-calculus.yml/badge.svg?branch=main)](https://github.com/Parveen117/Publications/actions/workflows/emk-connection-calculus.yml)
 
 The framework's **own algebraic core**, brought from the vault into the

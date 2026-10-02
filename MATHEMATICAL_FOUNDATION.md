@@ -22,6 +22,8 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[UGD-A0: the associative-carrier gate](papers/emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md) identifies a necessary next foundation contract: the historical carry operation conserves total seam charge but is not associative under strict digit/ledger equality. The charge quotient and the full UGD state must therefore remain distinct. A native associative lift or compatible quotient must be proved before treating that raw numeral container as the algebra underlying tensor calculus.
+
 [EMK-C1: Native connection and curvature calculus](papers/emk-ugd-algebra/CONNECTION_CALCULUS.md) develops the algebra into derived EMK direction operators, connection curvature for a noncommuting frame, gauge covariance, Bianchi closure, mixed-channel terms and observer descent. Each hypothesis is explicit. The finite certificate calls the canonical engine and preserves earlier certificate bytes.
 
 The sequence is:

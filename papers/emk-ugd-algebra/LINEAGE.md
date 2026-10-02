@@ -8,6 +8,8 @@ These are standard connection/Lie-algebra methods realized in a declared native 
 
 ## Origin
 
+UGD-A0 adds a 2 October audit of the unchanged UGD-1 implementation: an exact three-digit counterexample rules out associative carry addition under strict stored-state equality, while the charge quotient remains associative. Its proof and finite source checks distinguish a conserved target from full state recognition; they do not downgrade the earlier scoped conservation theorem or select a replacement seam rule.
+
 The EMK algebraic core ladder (I–VII) and the UGD algebraic-operators
 appendix exist in the provisional vault as LaTeX: definitions, theorems
 and proofs, written and reviewed but never executed. A search of the
