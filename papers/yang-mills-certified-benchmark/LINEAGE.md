@@ -490,3 +490,39 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - NEXT: time-observable/operator control on every vacuum-orthogonal source,
   with the required rail/content/family uniformity. E4D-C, DICT and the
   interacting continuum remain open.
+
+## YM-43 (3 October 2026): local overlap to the time operator bound
+
+- SOURCE AUDIT: YM-19 already has exact local influence and full heat-kernel
+  tail bounds. Its missing comparison step was a cited Dobrushin anchor;
+  that step is re-derived here, not bypassed by extending YM-42's spatial
+  contraction to a different assertion. YM-9/12 supply the existing square
+  factorization; YM-16 supplies the A/B factorization. No new engine.
+- SEVEN WRITTEN RESULTS: explicit common-part coupling; finite conditional
+  update comparison; temporal barrier q^r+q^(L-r); constructive vacuum with
+  a geometric Cauchy tail; arbitrary-source norm bound via log-convex even
+  moments; exact X-dagger-X/XX-dagger transport to the existing time operator;
+  and certified coarse parameter hypotheses.
+- GATE: 2 c_s+c_t(q+1/q)<1. The cells (a,kappa)=(6,1/16),(8,1/8),
+  (12,1/8) admit q=1/2,1/4,1/64. Thus the complementary time-transfer ratio
+  is at most q for all finite spatial widths and all transfer powers within
+  the declared positive-functional heat-kernel carrier. Every source is
+  covered; no individual finite probe is used as a complete operator bound.
+- BOUNDARY: this replaces the cited comparison/extraction step of YM-19
+  on this route and constructs its vacuum without a Jentzsch premise.
+  It does not derive the reference functional from native primitives. The
+  general comparison mechanism has Dobrushin lineage, explicitly credited;
+  no external novelty claim. Cutoff uniformity, the YM-42 Wilson-grid time
+  bound, generic E4D-C, NG for all a, DICT and continuum remain open.
+- EVIDENCE: exact coefficient/tail budgets; 2,964 barrier checks; 64 local
+  couplings; five joint conditional updates with preserved marginals;
+  192 path/transfer identities; 360 row-marginal comparisons; four independent
+  rational transfer fixtures; eight refusal groups and eight focused tests.
+  Written general proofs are not claimed formally verified by these fixtures.
+- OWNER'S RUNTIME CHOICE: Python 3.12 only for YM-42 and YM-43. The YM-42
+  certificate is deliberately rebound to the changed workflow/proof inputs;
+  its mathematical payload is verified unchanged against the preceding
+  certificate (15536e70...). No earlier capsule is regenerated or promoted.
+- NEXT: estimates that survive time refinement beyond the coarse positive
+  overlap regime, with the separate native measure/observable dictionary
+  retained as an explicit obligation.

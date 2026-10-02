@@ -1,0 +1,33 @@
+name: YM43 native time transfer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym43-native-time-transfer.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym43-native-time-transfer.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Rebuild exact native time-transfer evidence
+        run: python papers/yang-mills-certified-benchmark/certificates/ym43_native_time_transfer.py --check
+      - name: Test normalization, source scope and refusals
+        run: python -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym43_native_time_transfer.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark

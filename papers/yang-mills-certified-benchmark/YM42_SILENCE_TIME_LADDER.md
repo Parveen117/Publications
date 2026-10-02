@@ -248,7 +248,9 @@ python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -
 Python's standard library suffices. The default mode regenerates in memory
 and compares both the full result and its canonical SHA-256 to committed
 evidence; it does not rewrite an expected pin before checking it. Dedicated
-CI checks Python 3.11 and 3.12. `--write` is the explicit development mode.
+CI now checks Python 3.12 only, as requested on 3 October 2026. The
+previous dual-runtime result remains in the preceding commit; this runtime
+change does not alter the mathematical result. `--write` is the explicit development mode.
 
 The verifier binds this proof, its implementation, tests, workflow and source
 ledger; rebuilds the exact carrier; checks the independent native grading,

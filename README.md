@@ -1,9 +1,13 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-42](papers/yang-mills-certified-benchmark/YM42_SILENCE_TIME_LADDER.md)
-certifies native silence contraction on the existing three-rail carrier and
-proves an a priori geometric memory-tail criterion. The time-transfer operator
-gap remains open; spatial contraction alone is explicitly shown insufficient.
+Latest Yang–Mills continuation: [YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)
+derives an arbitrary-source time-transfer bound, uniform in finite chain
+width, at three coarse heat-kernel cells within the declared positive-functional
+carrier. The native measure dictionary and continuum remain open.
+Current YM verification uses **Python 3.12 only**.
+
+[YM-42](papers/yang-mills-certified-benchmark/YM42_SILENCE_TIME_LADDER.md)
+supplies the preceding structural silence ball and spatial memory-tail result.
 
 New mathematical development: [Native compact gauge completion](papers/native-compact-gauge/README.md)
 derives the action-compatible U(2)/SU(2) sector from independent EMK factors,
