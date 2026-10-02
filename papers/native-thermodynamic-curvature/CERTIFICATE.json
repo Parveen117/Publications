@@ -1,0 +1,580 @@
+{
+  "canonical_engine_commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+  "exact_native_and_matrix_identities": 1257,
+  "fixture": {
+    "Gaussian_marker": "5/324",
+    "native_coefficients": {
+      "K": "5/324",
+      "R": "-35/648",
+      "RK": "5/216"
+    },
+    "phase_curvature": "-5/108",
+    "scalar_ratio_closure": "1"
+  },
+  "groups": [
+    {
+      "exact_identities": 84,
+      "factor_cases": 12,
+      "name": "native_carrier_inverse_and_positive_factor",
+      "representation_basis_products": 16
+    },
+    {
+      "exact_identities": 770,
+      "fourth_order_jets_retained": true,
+      "independent_Christoffel_cases": 48,
+      "name": "native_response_connection_and_independent_Riemann_adapter",
+      "q_family_cases": 240
+    },
+    {
+      "coframe_cases": 12,
+      "derivative_directions": 24,
+      "exact_identities": 85,
+      "name": "native_phase_coframe_and_parallel_quarter_turn"
+    },
+    {
+      "exact_identities": 247,
+      "gauge_pairs": 108,
+      "ledger_samples": 12,
+      "name": "noncommuting_frame_and_ledger_balance",
+      "nonholonomic_pairs": 9
+    },
+    {
+      "constant_cut_pairs": 16,
+      "exact_identities": 22,
+      "failed_descent_witnesses": 1,
+      "moving_unitary_cut_cases": 1,
+      "name": "compression_return_and_moving_cut"
+    },
+    {
+      "exact_identities": 49,
+      "formal_order": 3,
+      "name": "ordered_plaquette_cut_loop_and_tower_action",
+      "ordered_word_cases": 12,
+      "tensor_dual_slot_cases": 1
+    },
+    {
+      "exact_identities": 0,
+      "name": "adversarial_proof_and_artifact_controls",
+      "rejected_alternatives": 15
+    }
+  ],
+  "independent_controls": {
+    "checks": [
+      {
+        "cases": 48,
+        "fourth_order_cancellation_cases": 48,
+        "name": "independent_full_Christoffel_differentiation",
+        "response_identity_cases": 48,
+        "torsion_cases": 48
+      },
+      {
+        "cases": 12,
+        "name": "transported_response_metric"
+      },
+      {
+        "name": "Onsager_derivative_and_Seam_Stokes_integrals",
+        "oriented_seam_loops": 18,
+        "variable_reciprocal_loops": 9
+      },
+      {
+        "cases": 1,
+        "name": "Onsager_dual_frame_covariance",
+        "nondual_change_rejected": true
+      }
+    ],
+    "rejected_false_alternatives": [
+      "same_point_response_determines_curvature",
+      "reciprocal_variable_response_is_always_flat",
+      "scalar_ratio_closure_implies_native_flatness",
+      "flat_bulk_erases_seam",
+      "nondual_force_flux_change_preserves_production"
+    ],
+    "sha256": "7cedfc2958d941b7fa0971152ba5b1c567e820317aa1629a0d30541a933f6422"
+  },
+  "presentation_sha256": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+  "rejected_false_alternatives": {
+    "balanced_flatness_does_not_erase_raw_curvature": true,
+    "compression_is_not_quotient_descent": true,
+    "connection_commutator_without_derivatives_rejected": true,
+    "corrupted_pin_rejected": true,
+    "corrupted_rewrite_rejected": true,
+    "degenerate_response_rejected": true,
+    "flat_ambient_connection_need_not_make_compression_flat": true,
+    "omitted_frame_term_rejected": true,
+    "omitting_return_term_changes_observer_curvature": true,
+    "opposite_oriented_curvatures_are_distinct": true,
+    "reversed_plaquette_sign_rejected": true,
+    "same_point_six_responses_do_not_determine_curvature": true,
+    "scalar_ratio_and_trace_flatness_inference_rejected": true,
+    "subtracting_two_raw_curvatures_is_not_ledger_balance": true,
+    "wrong_curvature_sign_rejected": true
+  },
+  "schema": "publications.native-thermodynamic-curvature.v1",
+  "scope": {
+    "external_review": false,
+    "finite_exact_native_execution": true,
+    "independent_full_Christoffel_route": true,
+    "local_artifact_hashes_checked": true,
+    "new_empirical_validation": false,
+    "original_register_wholesale_recertified": false,
+    "proof_assistant_formalized": false,
+    "universal_thermodynamic_constitutive_law_derived": false,
+    "written_proofs": true
+  },
+  "source_pins_sha256": "195bbdb372b8c9637ca727c0d9502bceee0d68307e6dda5802bd5faa19e9baf5",
+  "status": "PASS_NT1_NT8_FINITE_CONTROLS",
+  "word_replay_count": 11,
+  "word_replays": [
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R"
+            ]
+          }
+        ]
+      },
+      "name": "RR"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "K"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KK",
+            "word": [
+              "K",
+              "K"
+            ]
+          }
+        ]
+      },
+      "name": "KK"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "R"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "K",
+                "K"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R",
+                "K"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR",
+            "word": [
+              "K",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KK",
+            "word": [
+              "R",
+              "K",
+              "K"
+            ]
+          }
+        ]
+      },
+      "name": "KL orientation"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "K"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R",
+                "K"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "K",
+                "R"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KR",
+            "word": [
+              "R",
+              "K",
+              "R"
+            ]
+          },
+          {
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R",
+              "K"
+            ]
+          }
+        ]
+      },
+      "name": "diagonal commutator curvature"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "response inverse"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "curved fixture coefficients"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R"
+            ]
+          }
+        ]
+      },
+      "name": "native represented quarter turn"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "balanced open connection"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "retained raw curvature"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "complement return"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "moving cut in flat ambient carrier"
+    }
+  ],
+  "written_theorems": [
+    {
+      "id": "NT-1",
+      "sha256": "94affe3b141502700b38e0adfbda69842af6e05318acef1ffe29b5e291c88204",
+      "title": "Native response carrier and the six thermodynamic coordinates"
+    },
+    {
+      "id": "NT-2",
+      "sha256": "3a7badb09478d34eb12b5af0df5724c5f9c43dbe89a77e4e6160a6725f69bb36",
+      "title": "Curvature is the native transport-square defect"
+    },
+    {
+      "id": "NT-3",
+      "sha256": "b9f18641e0b746555e155d4c13cf182f17b48fef4ddfb77334622ed11f7789ed",
+      "title": "Select response transport and derive its native curvature"
+    },
+    {
+      "id": "NT-4",
+      "sha256": "5ea4010da759ad08789b8423ef35debd9fda84a24bba3b3c53db988edf2fbb7a",
+      "title": "Exact classical special case and an oriented native marker"
+    },
+    {
+      "id": "NT-5",
+      "sha256": "eef5cc77b356bf90a710d0a80f59859c2240fbb18091238e8336a3935116bb56",
+      "title": "Non-Abelian Smriti balance and its scalar seam sector"
+    },
+    {
+      "id": "NT-6",
+      "sha256": "ca6f758377f1e0d0bbb2338afb82566a8152fbe7d0aa9762c73ae29edca44a21",
+      "title": "What an observer retains: descent versus compression"
+    },
+    {
+      "id": "NT-7",
+      "sha256": "9fd69cdded76e670bfb8f9030db00822714949c3a7e4e8891c718c07b3ce0dfa",
+      "title": "The precise Onsager-flatness statement"
+    },
+    {
+      "id": "NT-8",
+      "sha256": "9e8e225e6d97f565d225ca045355f61ff7464dbf84c152752ee5cae2e89c8ecc",
+      "title": "Native response tower and the surviving theorem ledger"
+    }
+  ]
+}
