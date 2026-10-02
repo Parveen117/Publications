@@ -526,3 +526,42 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
 - NEXT: estimates that survive time refinement beyond the coarse positive
   overlap regime, with the separate native measure/observable dictionary
   retained as an explicit obligation.
+
+## YM-44 (3 October 2026): full interacting time refinement
+
+- SOURCE AUDIT: YM-9 already proves the free coefficient semigroup and a
+  fixed-graph sandwich gap. YM-22's refinement rate is leading tiling order;
+  YM-40 controls compressed channels. EMK-T2's ordered transport is an exact
+  nilpotent sector and explicitly excludes general refinement limits.
+  RKF's current and preserved mathematics registers, canonical engine home,
+  T28 completion and WC2 ordered-series/tail contract were read. Reuse those
+  results; do not apply bounded functional calculus to an unbounded L.
+- NEW APPLICATION PROOF: the two-end bridge identities K_s v=e^(-3s/2)v
+  and K_s v^2=1/4+e^(-4s)(v^2-1/4) give
+  ||[K_s,B]||<=b sqrt(3s), b=|theta|(m-1). Ordered insertion packets
+  construct U(t), with factorial Smriti tails and generator -L+theta M_V
+  on the finite-content core. Telescoping gives the full operator-norm
+  error 3 b t e^(bt) sqrt(mesh), for arbitrary positive partitions.
+- ORDER AND CURVATURE: the cubic symmetric-splitting residue is
+  -[A,[A,B]]/24-[B,[A,B]]/12. An independent positive two-state fixture
+  separates a coarse step from two half steps. This is the specified
+  transport-order defect, not an identification with NCG/Riemann curvature.
+  A slow spectator proves that noncommutation alone cannot certify a gap.
+- GAP TRANSPORT: a separate, strictly normalized perturbation gate transports
+  a supplied uniform fine-step gap to the constructed time limit. It does
+  not supply that missing gap. The constants in the refinement bound depend
+  on width; the full m/a-uniform gap, AF and native measure dictionary remain
+  open. The full 4D continuum, Clay and quantum gravity are not established.
+- EVIDENCE: 136 moment enclosures, 30 word identities and seven commuting
+  scalar degrees; 60 partition budgets and five factorial tails; 60
+  independent two-state refinement cases, 48 cross-route exponential entries
+  and two unequal-partition operator controls; three cut-square gap fixtures;
+  ten refusal groups and ten targeted tests. Written proofs are not
+  mechanically formalized by these finite controls.
+- PRESERVATION: all prior YM records and the shared RKF engine are unchanged.
+  This application's arithmetic consumes the existing Python helpers.
+  Product-formula lineage is credited to Trotter; no external priority claim.
+  Runtime is Python 3.12 only.
+- NEXT: a volume-uniform fine-step gap estimate, for example a justified
+  temporal-block or content-sensitive bound, with its physical trajectory
+  and measure/observable dictionary handled as separate obligations.
