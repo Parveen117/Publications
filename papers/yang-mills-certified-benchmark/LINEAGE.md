@@ -717,3 +717,40 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   history carrier, or retain its extra memory explicitly; prove the required
   bounded observable action. Native measure/NCG, material clock, physical
   gauge sector, relativistic/spatial continuum, AF, Clay and QG remain open.
+
+## YM-49 (3 October 2026): time-zero observables and a row-memory diagnostic
+
+- SOURCE AUDIT: YM-48's reflected carrier, generator, row embedding and
+  local energy; YM-47's finite-history limits and smoothing estimate.
+  Re-read RKF N08--N11 at commit 3cc5a33; T28/WC2 contracts are inherited.
+  N09 block memory is reused rather than claimed as new general algebra.
+- OBSERVABLE ACTION: a finite-volume form core and the ground-source
+  identity give a uniform product-energy bound. Positive-time smoothing
+  then controls time-zero insertions uniformly in volume. Null-space
+  preservation, the sharp sup-norm bound, dagger/product laws and
+  ordered coefficient-history readouts follow on H_ref.
+- ROW CLOSURE: R subset K subset H_ref are kept distinct. The positive
+  defect C(2t)-C(t)^2=L(t)^dagger L(t) vanishes at every time exactly when
+  R=K and the row dynamics closes. The actual interacting-chain defect
+  is not evaluated by the finite fixtures.
+- MEMORY: bounded T(s) blocks give the exact N09 equation, positive
+  return coefficients and geometric gap tails, including the initial
+  hidden source. Bounded Schur inversion retains its self-energy and
+  explicit tail. No unproved blocks of the unbounded H are used.
+- NONCOMMUTATION: the same one-site coefficient source yields
+  ||[T(t),M_0(x_0)]e|| >= (1-exp(-gamma t))/2 > 0.
+  This persists in the free case; it is not a native curvature or
+  physical gauge-invariant particle identification.
+- EVIDENCE: eight written results; 48 time-zero path checks, nine
+  complex products, three daggers, three norm bounds, three all-source
+  form bounds, 18 weighted energy checks, 35 collision/Cauchy checks,
+  nine mixed-time defects, twelve positive memory bounds, 36 recursions,
+  108 memory tails, three Schur inverses, twelve Schur tails and twelve
+  refusal groups. Seventeen new and 83 related tests pass on Python 3.12.
+- PRESERVATION: 60 inherited source hashes are frozen; no canonical
+  engine changed. Exact controls support the written infinite proof;
+  they do not mechanically formalize it.
+- NEXT: uniformly evaluate the actual chain's row defect. Establish
+  closure of the coefficient-history sector, or certify and retain
+  nonzero row memory. Full bounded-history density, native measure/NCG,
+  physical gauge sector/clock, 4D continuum, AF, Clay and QG remain open.

@@ -1,15 +1,16 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-48](papers/yang-mills-certified-benchmark/YM48_REFLECTED_TIME_GENERATOR.md)
-constructs a strongly continuous positive time action on YM-47's reflected
-history completion. Its nonnegative self-adjoint generator has an explicit
-domain, graph core and inherited all-source gap for abs(theta)<1/1680.
-Local coefficient observables embed at time zero; a centered single-site
-source has reflected norm squared at least 5/32, so the carrier has a
-nonzero excitation.
-The heat/reference functional remains admitted. Complete instantaneous-row
-observable identification, the native measure dictionary and full 4D continuum
-remain open; the coefficient excitation is not a physical particle claim.
+Latest Yang–Mills continuation: [YM-49](papers/yang-mills-certified-benchmark/YM49_TIME_ZERO_OBSERVABLES.md)
+constructs bounded time-zero coefficient observables on YM-48's reflected
+history carrier, including their product/dagger laws and ordered readouts.
+The positive defect C(2t)-C(t)^2 measures exactly the squared leakage from
+the instantaneous coefficient row; its vanishing characterizes row closure.
+The existing RKF memory equation gains this carrier and a gap-controlled
+tail. A same-chain source proves noncommutation of time and observable action.
+Seventeen new and 83 related tests pass.
+The heat/reference functional remains admitted on abs(theta)<1/1680.
+The actual infinite-chain row defect, native measure/NCG dictionary, physical
+gauge-observable selection and full 4D continuum remain open.
 Current YM verification uses **Python 3.12 only**.
 
 [YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)

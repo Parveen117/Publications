@@ -22,6 +22,21 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-49: time-zero observables and row-memory closure](papers/yang-mills-certified-benchmark/YM49_TIME_ZERO_OBSERVABLES.md)
+proves a volume-independent form multiplier bound and a controlled
+time-zero insertion limit on the existing reflected carrier. They supply
+a bounded unital dagger representation of local coefficient observables
+and their uniform completion, including ordered-history readouts.
+The row compression has the exact positive defect
+C(2t)-C(t)^2=L(t)^dagger L(t); vanishing at all times is equivalent to
+closure of the coefficient-history sector on its instantaneous row.
+RKF N09 is reused for the retained complement, with gap-controlled memory
+and bounded Schur-resolvent tails. A nonzero same-chain time/observable
+commutator is proved. Eight written results, seventeen new tests and 83
+related tests use Python 3.12. The actual chain's row-closure defect is
+not evaluated by the finite observer controls; full bounded-history
+density, native measure/NCG and physical identification remain open.
+
 [YM-48: reflected time action and generator](papers/yang-mills-certified-benchmark/YM48_REFLECTED_TIME_GENERATOR.md)
 uses YM-47's history functional to quotient the reflected null space and
 complete its positive pairing. Literal time translation is contractive,
@@ -32,9 +47,10 @@ all-source gap survives. A local Casimir/Leibniz energy identity gives an
 isometric time-zero coefficient-row embedding and a nonzero centered source
 with squared norm at least 5/32. Nine written results and fourteen tests
 retain the declared abs(theta)<1/1680 heat-functional adapter.
-Whether the row embedding exhausts the history carrier and supports the
-full required observable action remains open, alongside native measure/NCG
-identification and the physical continuum.
+YM-49 supplies bounded time-zero coefficient observable action. Whether
+the row embedding exhausts the coefficient-history sector is now an exact
+positive-defect test, still open on the interacting chain, alongside
+native measure/NCG identification and the physical continuum.
 
 [YM-47: joint volume/time local-history limit](papers/yang-mills-certified-benchmark/YM47_JOINT_LOCAL_HISTORY_LIMIT.md)
 normalizes each time step before accumulation, controls the vacuum change
