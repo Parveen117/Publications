@@ -1,0 +1,35 @@
+name: YM42 native silence time ladder
+
+on:
+  push:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym42-silence-time-ladder.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym42-silence-time-ladder.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Rebuild exact t2 and t3 certificates without changing evidence
+        run: python papers/yang-mills-certified-benchmark/certificates/ym42_silence_time_ladder.py --check
+      - name: Exercise refusal and independent route controls
+        run: python -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym42_silence_time_ladder.py -v
+      - name: Verify evidence was not rewritten
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark

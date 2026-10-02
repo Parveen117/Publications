@@ -22,6 +22,13 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-42: structural silence contraction](papers/yang-mills-certified-benchmark/YM42_SILENCE_TIME_LADDER.md)
+extends the existing YM-37/38/41 and RKF T74 chain to the 52-dimensional
+three-rail carrier. Its general quadratic criterion proves a ball and an
+explicit all-spatial-step Cauchy tail from the structural silence vector.
+An exact positive-model counterexample separates that result from a uniform
+time gap. The old transfer/positivity and canonical operator engines are reused.
+
 [NCG-1 to NCG-8: native compact gauge completion](papers/native-compact-gauge/README.md)
 connects the massive-module U(1) construction to an explicit U(2)/SU(2)
 coefficient sector, classifies its positive invariant pairing, and supplies

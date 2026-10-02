@@ -1,4 +1,33 @@
-# Yang–Mills Certified Benchmark (YM-1)
+# Yang–Mills certified programme
+
+## Current continuation: YM-42 (2 October 2026)
+
+[YM-42's proof and scope correction](YM42_SILENCE_TIME_LADDER.md) continue
+the already-named t=3 step on YM-37's 52-dimensional even invariant carrier.
+A general rational criterion gives a structural silence ball and a geometric
+Smriti tail for every spatial step. At kappa=1/8, 1/4, 1/2 the certified
+three-rail contraction ceilings are 0.007132026236, 0.028765231931 and
+0.118984522771. These are declared truncated rational instances.
+
+The exact counterexample in YM42-T5 proves that spatial contraction alone,
+even uniform in rail count, cannot establish a uniform time gap. The next
+operator estimate and the three-rail content release remain open. T75's
+two-rail release retains its declared higher-content Gram-uniformity.
+The broad historical 'content gone / t only' shorthand is superseded by
+this scoped ledger; previous finite certificate bytes are unchanged.
+
+Reproduce without rewriting evidence:
+
+```bash
+python papers/yang-mills-certified-benchmark/certificates/ym42_silence_time_ladder.py --check
+python -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym42_silence_time_ladder.py -v
+```
+
+The dedicated `ym42-silence-time-ladder.yml` workflow checks Python 3.11/3.12.
+The original v1 paper and historical capsules keep their versioned scopes;
+the current continuation and correction are in the linked written proof.
+
+## YM-1: historical starting point
 
 First rung of resuming the MP Yang–Mills adapter with the certified RNKE
 machinery: the reduced finite-cutoff gap of the SU(2) one-holonomy Wilson
@@ -31,6 +60,7 @@ width budget.
 
 | Item | Status |
 |---|---|
+| **YM-42 structural silence ball, exact t=2/3 continuation, all-spatial-step Cauchy tail, and space/time non-implication witness** | PASS (scoped rational grid; time operator gap OPEN) |
 | YM-1 reduced gap enclosure (a=1, beta=2) | PASS (pinned) |
 | YM-2 interacting theta-graph gap, certified small coupling (kappa < Delta_red/6) | PASS (pinned) |
 | YM-3 first-order crossing direction: rank-one, A<->B transported, slope lambda_half/4 | PASS (pinned) |
@@ -284,7 +314,7 @@ The alternating product `K^{1/2} M_w K^{1/2}` compressed to ALL superpositions o
 
 **(a) refused with witness.** theorum/53 T4 bounds cut-square *weights* (`d_k ≤ S_kk`); a block with every diagonal ≤ μ can still have λmax > μ (2×2 witness, exact). So "complement λmax from T53 weights" is not available; item 3's upper half stays OPEN.
 
-**What is a theorem.** Every YM-33/36 quantity is `⟨boundary, M τ^{m−1} boundary⟩` for one column map τ = B⁻¹M (native quaternion carrier: faces/rungs are class functions of products, so only dot products appear; Haar = rational S³ moments; cut space = harmonic degree ≤ 2 per rail). τ commutes with simultaneous conjugation and with the centre of SU(2) acting on all rails; both boundary vectors are even, so everything lives in the even invariant sector: dim 8 (t = 2), 52 (t = 3). Validated **exactly** against `ym33.fabric_partition`. σ₁, σ₂ of the symmetric pencil (M, B) bracketed by exact inertia (fraction-free Bareiss, Jacobi sign rule); q := σ₂/σ₁ certified:
+**What is a theorem.** Every YM-33/36 quantity is `⟨boundary, M τ^{m−1} boundary⟩` for one column map τ = B⁻¹M (native quaternion carrier: faces/rungs are class functions of products, so only dot products appear; Haar = rational S³ moments; cut space = harmonic degree ≤ 2 per rail). τ commutes with simultaneous conjugation and with the centre of SU(2) acting on all rails; both boundary vectors are even, so everything lives in the even invariant sector: dim 8 (t = 2), 52 (t = 3). Validated **exactly** against `ym33.fabric_partition`. σ₁, σ₂ of the symmetric pencil (M, B) bracketed by exact inertia (native T53 symmetric elimination; the earlier Bareiss narration was incorrect); q := σ₂/σ₁ certified:
 
 | κ | q (t = 2) | q/r² | q (t = 3) | q/r² | ρ₁^∞ (two-sided) | certified err, interior p ≥ 3 |
 |---|---|---|---|---|---|---|
@@ -292,7 +322,7 @@ The alternating product `K^{1/2} M_w K^{1/2}` compressed to ALL superpositions o
 | 1/4 | 0.0057991 | 1.492 | 0.0086057 | 2.215 | [0.4353154056078, 0.4353154056137] | 1.5e-5 |
 | 1/2 | 0.0226981 | 1.483 | 0.0334686 | 2.187 | [0.4417107170, 0.4417107229] | 2.6e-4 |
 
-so `|ρ₁(m,p) − ρ₁^∞| ≤ err(m,p)` for **every** m and interior p, with err explicit in σ₁, σ₂, ‖N‖_B, ‖e₀‖_B — YM-33's "bulk constant with geometric edges" is now certified with its rate (both q's lie in YM-33's measured window [r²/2, 2r²]), and ρ₁^∞ = N₁₁/σ₁ is a single-column Rayleigh quotient (YM-32's E_bulk reproduced to every digit). **Boundary:** fixed time order only; no complement bound; no m-uniform upper bound on the true gap — item 3's m-dependence is now a one-column pencil question, its upper half unchanged. Runtime ~16 min (own CI step). Pin `EXPECTED_YM37.sha256`. **Standing correction (same day):** T3's for-all-m route uses the finite spectral split — classical import; status ANCHORED pending YM-38. **Resolved by YM-38 (same day): the for-all-m statement now rests on the native route; see the YM-38 entry.**
+so `|ρ₁(m,p) − ρ₁^∞| ≤ err(m,p)` for **every** m and interior p, with err explicit in σ₁, σ₂, ‖N‖_B, ‖e₀‖_B — YM-33's "bulk constant with geometric edges" is now certified with its rate (both rates have the r² scale; the t=3 values lie above the earlier 2r² guessed ceiling), and ρ₁^∞ = N₁₁/σ₁ is a single-column Rayleigh quotient (YM-32's E_bulk reproduced to every digit). **Boundary:** fixed time order only; no complement bound; no m-uniform upper bound on the true gap — item 3's m-dependence is now a one-column pencil question, its upper half unchanged. Runtime ~16 min (own CI step). Pin `EXPECTED_YM37.sha256`. **Standing correction (same day):** T3's for-all-m route uses the finite spectral split — classical import; status ANCHORED pending YM-38. **Resolved by YM-38 (same day): the for-all-m statement now rests on the native route; see the YM-38 entry.**
 
 ## YM-38 — Native m-uniformity (YM-37's spectral import removed)
 
@@ -335,7 +365,7 @@ YM-39's ladder run along YM-22's family (heat-kernel time kernel, Wilson faces a
 
 ## YM-41 — The tools dock: E4D-C restated with the operator-branch tools
 
-The RKF operator-branch tools consumed by pin and re-verified on this repo's own pencil: **silence-channel contraction** β_sil < 1 at every κ (0.00256 / 0.01029 / 0.04173 — identical to RKF's digits, both roundings coincide at 1e-9), the **ladder law** f_{c+½}/f_c ≤ κ/(2(2c+2)) with the sharper-claim discrimination (tight to 0.07%), and the **seam-flow meter** (sector cascade on the column pencil, every bracket's count route agreeing with the native det route). Selective release (stationarity, seam-count retention, u+e < 1 for the untruncated column) consumed by pin — RKF theorum/75 is the derivation of record. **E4D-C after the dock:** m gone (YM-37), content tail gone (theorum/75), contraction structural (theorum/74) — the remaining open content of `K^{1/2}M_wK^{1/2}` is the **t-direction only**. Named YM-42: the t-ladder of silence contractions (β_sil at t = 3, 52-dim even sector) and the t-uniform statement. Pin `EXPECTED_YM41.sha256`.
+The RKF operator-branch tools consumed by pin and re-verified on this repo's own pencil: **silence-channel contraction** β_sil < 1 at every κ (0.00256 / 0.01029 / 0.04173 — identical to RKF's digits, both roundings coincide at 1e-9), the **ladder law** f_{c+½}/f_c ≤ κ/(2(2c+2)) with the sharper-claim discrimination (tight to 0.07%), and the **seam-flow meter** (sector cascade on the column pencil, every bracket's count route agreeing with the native det route). Selective release (stationarity, seam-count retention, u+e < 1 for the untruncated column) consumed by pin — RKF theorum/75 is the derivation of record. **Current scope correction:** YM-37/38 control spatial convergence on the declared column; T75 supplies a two-rail release conditional on its declared higher-content Gram budget. The time-transfer operator upper bound remains open. [YM-42](YM42_SILENCE_TIME_LADDER.md) now supplies the finite t=3 silence contraction, with an explicit non-implication witness showing why spatial contraction alone is insufficient. Neither t-uniformity nor a three-rail content release is claimed. Pin `EXPECTED_YM41.sha256`.
 
 ## NG-1 — The native gap statement, its teeth, and the dictionary declared open
 
@@ -345,4 +375,4 @@ A governance capsule with **no new numbers**. Diagnosis behind it: every wall th
 
 **Teeth** (a statement with no refutation condition is a definition, not a theorem) — five ways to refute NG with a single certified counterexample: volume (R1, a route already died this way in YM-11), cutoff (R2, live — YM-23 shows the tiling route exits at a = 1/8), sector cascade (R3, the seam-flow meter is the instrument), a channel lighter than J = ½ (R4), and any verdict that survives its own tamper (R5).
 
-**Ledger re-scored against NG:** O1 single-member gap DELIVERED; O2 volume DELIVERED on the column (the chain's operator upper bound is **not** delivered); O3 content DELIVERED; **O4 time OPEN — the whole remainder (YM-42)**; O5 cutoff PARTIAL (declared trajectory only, AF shape not modelled); O6 evidence standard IN FORCE; **DICT (translation to Clay) OPEN, separate problem** (RH T01-E5C/E6). Sharpened by today's finding: theorum/75's grading was built classically and then regraded natively with identical rationals — one classical-looking ingredient proved replaceable; whether the measure itself is, is exactly DICT. Pin `EXPECTED_NG1.sha256`.
+**Ledger re-scored against NG:** O1 single-member gap DELIVERED; O2 volume DELIVERED on the column (the chain's operator upper bound is **not** delivered); O3 content CONDITIONAL on T75's two-rail/tail contract; **O4 time operator bound OPEN (YM-42 supplies t=3 spatial contraction only)**; O5 cutoff PARTIAL (declared trajectory only, AF shape not modelled); O6 evidence standard IN FORCE; **DICT (translation to Clay) OPEN, separate problem** (RH T01-E5C/E6). Sharpened by today's finding: theorum/75's grading was built classically and then regraded natively with identical rationals — one classical-looking ingredient proved replaceable; whether the measure itself is, is exactly DICT. Pin `EXPECTED_NG1.sha256`.

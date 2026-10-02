@@ -1,5 +1,10 @@
 # Publications
 
+Latest Yang–Mills continuation: [YM-42](papers/yang-mills-certified-benchmark/YM42_SILENCE_TIME_LADDER.md)
+certifies native silence contraction on the existing three-rail carrier and
+proves an a priori geometric memory-tail criterion. The time-transfer operator
+gap remains open; spatial contraction alone is explicitly shown insufficient.
+
 New mathematical development: [Native compact gauge completion](papers/native-compact-gauge/README.md)
 derives the action-compatible U(2)/SU(2) sector from independent EMK factors,
 with native curvature, source and Gauss identities and scoped exact controls.

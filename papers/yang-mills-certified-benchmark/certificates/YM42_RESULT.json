@@ -1,0 +1,360 @@
+{
+  "certificate_type": "YM42_STRUCTURAL_SILENCE_TIME_LADDER",
+  "claims": {
+    "all_time_rails": "OPEN",
+    "continuum_or_Clay": "NOT_CLAIMED",
+    "native_measure_dictionary": "OPEN",
+    "operator_time_gap": "OPEN",
+    "structural_ball_and_Cauchy_tail_all_spatial_steps": "PROVED_UNDER_EXPLICIT_QUADRATIC_HYPOTHESES",
+    "t2_t3_declared_rational_grid": "CERTIFIED",
+    "t3_infinite_content_release": "OPEN"
+  },
+  "grid": {
+    "1/2": {
+      "t2": {
+        "W": "1000000000000000000/1064151562886082841",
+        "accepted": true,
+        "ball_left_upper_decimal": "0.171010454484",
+        "beta_upper_decimal": "0.087518612818",
+        "budget_exact": {
+          "ball_left": "2274763030099488308230224195209053/13301894536076035512500000000000000",
+          "beta": "2274763030099488308230224195209053/25991762859062087155832275804790947",
+          "d": "612026213089983869167724195209053/53207578144304142050000000000000000",
+          "floor": "25991762859062087155832275804790947/25000000000000000000000000000000000",
+          "radius_squared": "48962097047198709533417935616724240/1132418548792892723408238085114631281",
+          "s": "1/16",
+          "tail_prefactor_squared": "229704228652229029347636326228835781348351160156955462432485659006222162330270283914426308976280773265/17693916544993324056150887194318551246874621665533228807631268009554063144723100111140071053674003282481"
+        },
+        "complement_dimension": 7,
+        "defect_squared": "612026213089983869167724195209053/50000000000000000000000000000000000",
+        "dimension": 8,
+        "face_coefficients": {
+          "0": "1031577221/1000000000",
+          "1": "10580447/1000000000",
+          "1/2": "31906149/250000000"
+        },
+        "iterate_checks": 21,
+        "sigma_over_theta": "1/16",
+        "sign_checks": {
+          "B": [
+            7,
+            0,
+            0
+          ],
+          "sigma_B_minus_M": [
+            7,
+            0,
+            0
+          ],
+          "sigma_B_plus_M": [
+            7,
+            0,
+            0
+          ]
+        },
+        "theta": "1064151562886082841/1000000000000000000",
+        "wrong_theta_rejected": true
+      },
+      "t3": {
+        "W": "1000000000000000000000000000/1097754511964832076694564861",
+        "accepted": true,
+        "ball_left_upper_decimal": "0.225956754309",
+        "beta_upper_decimal": "0.118984522771",
+        "budget_exact": {
+          "ball_left": "1937851926183420733980370494582919713795083960573100922987049/8576207124725250599176287976562500000000000000000000000000000",
+          "beta": "1937851926183420733980370494582919713795083960573100922987049/16286588213857736789269241455612392786204916039426899077012951",
+          "d": "865826035592764409083334497512607213795083960573100922987049/34304828498901002396705151906250000000000000000000000000000000",
+          "floor": "16286588213857736789269241455612392786204916039426899077012951/15625000000000000000000000000000000000000000000000000000000000",
+          "radius_squared": "865826035592764409083334497512607213795083960573100922987049/9414570066712083211162609585222051812445181391687104070312500",
+          "s": "1/16",
+          "tail_prefactor_squared": "25518101668641316281578581847581368461156348907177019661648665497623220484342076301703929065729284819387567878279890315038702678279873228373548452239423990741005172109648896679830961/861480163044875134593624302173306384378333435870211878155464838287084507462177701236167252805159361801984771538295178352779453859070548828294284789388548808340382226443921746125000000"
+        },
+        "complement_dimension": 51,
+        "defect_squared": "865826035592764409083334497512607213795083960573100922987049/31250000000000000000000000000000000000000000000000000000000000",
+        "dimension": 52,
+        "face_coefficients": {
+          "0": "1031577221/1000000000",
+          "1": "10580447/1000000000",
+          "1/2": "31906149/250000000"
+        },
+        "iterate_checks": 21,
+        "sigma_over_theta": "1/16",
+        "sign_checks": {
+          "B": [
+            51,
+            0,
+            0
+          ],
+          "sigma_B_minus_M": [
+            51,
+            0,
+            0
+          ],
+          "sigma_B_plus_M": [
+            51,
+            0,
+            0
+          ]
+        },
+        "theta": "1097754511964832076694564861/1000000000000000000000000000",
+        "wrong_theta_rejected": true
+      }
+    },
+    "1/4": {
+      "t2": {
+        "W": "1000000000000000000/1015727095868102641",
+        "accepted": true,
+        "ball_left_upper_decimal": "0.042918542526",
+        "beta_upper_decimal": "0.021585205206",
+        "budget_exact": {
+          "ball_left": "2724595409925625254779966086361949/63482943491756415062500000000000000",
+          "beta": "2724595409925625254779966086361949/126225133557704592840923158913638051",
+          "d": "740753425808237284076841086361949/253931773967025660250000000000000000",
+          "floor": "126225133557704592840923158913638051/125000000000000000000000000000000000",
+          "radius_squared": "11852054812931796545229457381791184/1031701533280649773163117985311174881",
+          "s": "1/64",
+          "tail_prefactor_squared": "11802264583748753773547122161082119128761098838788327951109745166622462893437503195165597994483150553349/3933976711906770356574029285604894030306774872825499440597420816771682706486825220038933358432289691821481"
+        },
+        "complement_dimension": 7,
+        "defect_squared": "740753425808237284076841086361949/250000000000000000000000000000000000",
+        "dimension": 8,
+        "face_coefficients": {
+          "0": "1007832871/1000000000",
+          "1": "522871/200000000",
+          "1/2": "62826157/1000000000"
+        },
+        "iterate_checks": 21,
+        "sigma_over_theta": "1/64",
+        "sign_checks": {
+          "B": [
+            7,
+            0,
+            0
+          ],
+          "sigma_B_minus_M": [
+            7,
+            0,
+            0
+          ],
+          "sigma_B_plus_M": [
+            7,
+            0,
+            0
+          ]
+        },
+        "theta": "1015727095868102641/1000000000000000000",
+        "wrong_theta_rejected": true
+      },
+      "t3": {
+        "W": "1000000000000000000000000000/1023683155181242122001712311",
+        "accepted": true,
+        "ball_left_upper_decimal": "0.056795637670",
+        "beta_upper_decimal": "0.028765231931",
+        "budget_exact": {
+          "ball_left": "113556128066592761613788040310418746553957238172838081890237/1999381162463363519534594357421875000000000000000000000000000",
+          "beta": "113556128066592761613788040310418746553957238172838081890237/3947686858187114387440856748202764847196042761827161918109763",
+          "d": "51075466739612651628331966640985152803957238172838081890237/7997524649853454078138377429687500000000000000000000000000000",
+          "floor": "3947686858187114387440856748202764847196042761827161918109763/3906250000000000000000000000000000000000000000000000000000000",
+          "radius_squared": "51075466739612651628331966640985152803957238172838081890237/2046732816800435624164187997346339804215489875017501408203125",
+          "s": "1/64",
+          "tail_prefactor_squared": "88441322132047381111348707696628706184227343452135381556208046384518557834700785177144571946084918743525435365077108291073124754611110271284900614159947360185226649520203127949117/13372495740658331644754714564777045357023756422537344009069044221548948022935461120253118086648219659029541433766216422930259615680034447778674069941288379004327229983506242531250000"
+        },
+        "complement_dimension": 51,
+        "defect_squared": "51075466739612651628331966640985152803957238172838081890237/7812500000000000000000000000000000000000000000000000000000000",
+        "dimension": 52,
+        "face_coefficients": {
+          "0": "1007832871/1000000000",
+          "1": "522871/200000000",
+          "1/2": "62826157/1000000000"
+        },
+        "iterate_checks": 21,
+        "sigma_over_theta": "1/64",
+        "sign_checks": {
+          "B": [
+            51,
+            0,
+            0
+          ],
+          "sigma_B_minus_M": [
+            51,
+            0,
+            0
+          ],
+          "sigma_B_plus_M": [
+            51,
+            0,
+            0
+          ]
+        },
+        "theta": "1023683155181242122001712311/1000000000000000000000000000",
+        "wrong_theta_rejected": true
+      }
+    },
+    "1/8": {
+      "t2": {
+        "W": "62500000000000000/62744538228982801",
+        "accepted": true,
+        "ball_left_upper_decimal": "0.010740200592",
+        "beta_upper_decimal": "0.005377972844",
+        "budget_exact": {
+          "ball_left": "26955557064833865279753695625093/2509781529159312040000000000000000",
+          "beta": "26955557064833865279753695625093/5012215169450347340032746304374907",
+          "d": "7347888868276739967253695625093/10039126116637248160000000000000000",
+          "floor": "5012215169450347340032746304374907/5000000000000000000000000000000000",
+          "radius_squared": "183697221706918499181342390627325/62990033241092546717039986460889616",
+          "s": "1/256",
+          "tail_prefactor_squared": "4614896879109488205030588783368252506135245257672282148996424219952424348735314211445312493941983925/6261918169528870533511556457419951939615943004581816731502238171806813082364429728293391519302628620544"
+        },
+        "complement_dimension": 7,
+        "defect_squared": "7347888868276739967253695625093/10000000000000000000000000000000000",
+        "dimension": 8,
+        "face_coefficients": {
+          "0": "250488599/250000000",
+          "1": "651677/1000000000",
+          "1/2": "31290709/1000000000"
+        },
+        "iterate_checks": 21,
+        "sigma_over_theta": "1/256",
+        "sign_checks": {
+          "B": [
+            7,
+            0,
+            0
+          ],
+          "sigma_B_minus_M": [
+            7,
+            0,
+            0
+          ],
+          "sigma_B_plus_M": [
+            7,
+            0,
+            0
+          ]
+        },
+        "theta": "62744538228982801/62500000000000000",
+        "wrong_theta_rejected": true
+      },
+      "t3": {
+        "W": "15625000000000000000000000/15716791475879843017585799",
+        "accepted": true,
+        "ball_left_upper_decimal": "0.014218365669",
+        "beta_upper_decimal": "0.007132026236",
+        "budget_exact": {
+          "ball_left": "223467088334883578762297754843684687623257857497339366839543/15716791475879843017585799000000000000000000000000000000000000",
+          "beta": "223467088334883578762297754843684687623257857497339366839543/31332903296830113729984189299843815312376742142502660633160457",
+          "d": "100679654929572305187408700156184687623257857497339366839543/62867165903519372070343196000000000000000000000000000000000000",
+          "floor": "31332903296830113729984189299843815312376742142502660633160457/31250000000000000000000000000000000000000000000000000000000000",
+          "radius_squared": "100679654929572305187408700156184687623257857497339366839543/15809122194962514822530281302023778214935956893977664000000000",
+          "s": "1/256",
+          "tail_prefactor_squared": "646028331316327257145719907221326008605659052016888701009764034880383063374039318716487077089892429148362970167810941352799169625799895372303948230235035792963270559930904691542719/400000558646705389547931983099248798099102378604148535833352201706044086672663398111386564959049599474199669678813141294264171292589964982093774763150331718292696395450196992000000000"
+        },
+        "complement_dimension": 51,
+        "defect_squared": "100679654929572305187408700156184687623257857497339366839543/62500000000000000000000000000000000000000000000000000000000000",
+        "dimension": 52,
+        "face_coefficients": {
+          "0": "250488599/250000000",
+          "1": "651677/1000000000",
+          "1/2": "31290709/1000000000"
+        },
+        "iterate_checks": 21,
+        "sigma_over_theta": "1/256",
+        "sign_checks": {
+          "B": [
+            51,
+            0,
+            0
+          ],
+          "sigma_B_minus_M": [
+            51,
+            0,
+            0
+          ],
+          "sigma_B_plus_M": [
+            51,
+            0,
+            0
+          ]
+        },
+        "theta": "15716791475879843017585799/15625000000000000000000000",
+        "wrong_theta_rejected": true
+      }
+    }
+  },
+  "input_sha256": {
+    ".github/workflows/ym42-silence-time-ladder.yml": "d006d35718eb28b53a896ae3e24213693a41c13d8e25ed03400f79f6796e5527",
+    "papers/yang-mills-certified-benchmark/YM42_SILENCE_TIME_LADDER.md": "9960ee8eb49eca093b6cf93f75e248fd7695f312ba969bbd8c02bdd4caa58d46",
+    "papers/yang-mills-certified-benchmark/certificates/YM42_SOURCE_PINS.json": "44d95ac9ca6ae8ed8e4fd6a0b380113479e96f95c59375ae81b1909f3b02ffe4",
+    "papers/yang-mills-certified-benchmark/certificates/ym15_chain_closed_form.py": "c802f3ddcee83f5ab0f4ab6087a68bc9d2f147091dd147943b374d52fcdb1e13",
+    "papers/yang-mills-certified-benchmark/certificates/ym16_chain_dock.py": "425489ae9f020f71fa8790fb5071878748c82e52c5f38e94ea7171939f1e9e43",
+    "papers/yang-mills-certified-benchmark/certificates/ym1_certified_gap.py": "1c1e1631f6d1793735b3f2403427bca0231bb21c3622e70da4e9ba175f4c9bda",
+    "papers/yang-mills-certified-benchmark/certificates/ym28_e4d_on_chain.py": "85a5e235c5ba428726fe83bc3916198978bd5ca39231c40addb52a6898088dcf",
+    "papers/yang-mills-certified-benchmark/certificates/ym2_theta_interacting_gap.py": "7867a545fa0a06515b93ac57e96cbbf984410d97633705af38bc1924824aaa9a",
+    "papers/yang-mills-certified-benchmark/certificates/ym30_recoupling_engine.py": "22762ca713b4c4c923c27ed43ba88880fd4efef9bc363c52eaa5f894cbbc4e0d",
+    "papers/yang-mills-certified-benchmark/certificates/ym31_uniform_floor.py": "4781c1cd1bf619328068a4a8a67d91cfc1d70d7e0e1191ac2abf495acb723d08",
+    "papers/yang-mills-certified-benchmark/certificates/ym32_dressed_excitation.py": "314673d124045be789f8b4313767d88c73dcd576790797830534ea7fc21a10cc",
+    "papers/yang-mills-certified-benchmark/certificates/ym33_t_row_engine.py": "b4d65d01c8ca7dd3c02f4372597d13f3a528286993c0b6a39adc61f698d65a89",
+    "papers/yang-mills-certified-benchmark/certificates/ym37_space_transfer.py": "b860dcc2510f533fcff04b1fb194974884e381b44417dcbbd109c47c780218b7",
+    "papers/yang-mills-certified-benchmark/certificates/ym38_native_uniformity.py": "8f0770391d2e0ee9adf322eef3615887196c14efde3081027b97b8423b8899e3",
+    "papers/yang-mills-certified-benchmark/certificates/ym3_crossing_direction.py": "9dae32ec90130bd192ee9fdca184b996311b0eb4350c8715755bb747c465922b",
+    "papers/yang-mills-certified-benchmark/certificates/ym41_tools_dock.py": "48d3b7cc44e146074fd307cd7dceedd1b9b2c994fa55eaedeb703ffc1c2e4c2c",
+    "papers/yang-mills-certified-benchmark/certificates/ym42_silence_time_ladder.py": "66011edcfabdbb57cb860a359f65f4ba2adf52a6962011f9510d5755a42c280a",
+    "papers/yang-mills-certified-benchmark/certificates/ym4_symmetry_protected.py": "a9e599c2fc4d5e50c88ee93aeb67a105f0e9bc98954655b5e9c82f0c19f7c13a",
+    "papers/yang-mills-certified-benchmark/certificates/ym5_two_sided_gap.py": "ac6389b6f9e396c44177d91c76bdc01188c5b2a1b49a6a38efb765fa9fcdbe80",
+    "papers/yang-mills-certified-benchmark/certificates/ym6_seam_integer_dock.py": "4e30b1a3d0bfe1c61c5b65237a291ff500a538589f820e1317d88cd716b8d037",
+    "papers/yang-mills-certified-benchmark/tests/test_ym42_silence_time_ladder.py": "fe42d3c21bea2acb4c0e6481f65f574ed7606ba3ce00a4527b3d54ae567da4c2"
+  },
+  "native_grading_and_independent_moments": {
+    "Gram_inertia": [
+      14,
+      0,
+      1
+    ],
+    "exact_equalities": 1483,
+    "monomials": 15,
+    "radical": "sum x_i^2 - 1"
+  },
+  "negative_controls": {
+    "heavy_negative_complement": true,
+    "heavy_positive_complement": true,
+    "indefinite_Gram": true,
+    "noncontracting_complement": true,
+    "noninvariant_ball": true,
+    "nonsymmetric_pencil": true,
+    "zero_floor": true,
+    "zero_silence_norm": true
+  },
+  "prior_route_cross_checks": 9,
+  "rung_coefficients": {
+    "0": "1",
+    "1": "66872573/500000000",
+    "1/2": "216563713/500000000"
+  },
+  "time_blindness_control": {
+    "finite_positive_models": [
+      {
+        "beta_space": "0",
+        "delta": "1/2",
+        "time_ratio": "1/2"
+      },
+      {
+        "beta_space": "0",
+        "delta": "1/8",
+        "time_ratio": "7/8"
+      },
+      {
+        "beta_space": "0",
+        "delta": "1/64",
+        "time_ratio": "63/64"
+      },
+      {
+        "beta_space": "0",
+        "delta": "1/1024",
+        "time_ratio": "1023/1024"
+      }
+    ],
+    "scope": "refutes implication from spatial contraction alone; not a counterexample to NG or the YM family",
+    "universal_argument": "0<delta<1; beta_space=0 for all t, but rho_time=1-delta approaches 1"
+  },
+  "verdict": "PASS"
+}
