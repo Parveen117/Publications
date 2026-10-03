@@ -1,0 +1,45 @@
+\subsection{Residual dynamical non-selection after the minimal classification}
+\label{sec:dynamical-nonselection}
+
+The thermodynamic Recognition square constructs the field carrier and connection, and Theorem~\ref{thm:minimal-action-classification} classifies the action form inside a declared low-derivative symmetry class.  Those results still do not determine the numerical couplings or the nonlinear invariant potential.  The remaining non-selection is precise rather than total.
+
+\begin{theorem}[Residual dynamical non-selection]
+\label{thm:dynamical-nonselection}
+Fix the equilibrium data, the local-equilibrium map $\Theta$, the thermodynamic response-jet bundle, the observation and target maps, the quotient bundle $E_{\RK}$, the induced connection $A$, the cut data, the spacetime metric, and the minimal action class of Theorem~\ref{thm:minimal-action-classification}, but do not fix the fibre potential.  Let $W:E_{\RK}\to\R$ be a smooth nonconstant $G_{\RK}$-invariant fibre function.  For each $\lambda\in\R$, define
+\[
+V_\lambda(\Phi):=V_{\RK}(\Phi)+\lambda W(\Phi)
+\]
+and let $S_\lambda$ be the action \eqref{eq:ark-action} with $V_{\RK}$ replaced by $V_\lambda$.  Then all actions $S_\lambda$ have the same thermodynamic Recognition square, quotient carrier, gauge group, induced connection, cut sectors, target completion, jet carrier, and minimal derivative order, but their Euler--Lagrange equations contain
+\begin{align}
+D_A^\mu D_{A\,\mu}\Phi
+-\nabla V_{\RK}(\Phi)
+-\lambda\nabla W(\Phi)&=0,
+\label{eq:nonselection-field}\\
+T^{\Phi,\lambda}_{\mu\nu}
+&=T^\Phi_{\mu\nu}-\lambda W(\Phi)g_{\mu\nu}.
+\label{eq:nonselection-stress}
+\end{align}
+Whenever $\nabla W$ is nonzero somewhere, different values of $\lambda$ give inequivalent field equations.  Therefore the thermodynamic Recognition construction and the minimal-action classification determine the lawful field-theoretic architecture but not the full constitutive potential.
+\end{theorem}
+
+\begin{proof}
+Gauge invariance of $W$ ensures that every $S_\lambda$ has the same declared gauge and diffeomorphism symmetries.  The additional term changes neither the quotient construction nor its induced connection, observation square, cut, jet, or derivative order.  Variation with respect to $\Phi$ adds $-\lambda\nabla W$ to the field equation, while metric variation of $-\lambda W(\Phi)\,\mathrm{vol}_g$ adds $-\lambda W(\Phi)g_{\mu\nu}$ to the stress tensor.  If $\nabla W$ is nonzero, the equations differ for distinct $\lambda$.
+\end{proof}
+
+\begin{corollary}[Exact status of the spacetime equations]
+The logical chain is
+\[
+\begin{aligned}
+\text{thermodynamic response jets}
+&\longrightarrow \text{target-relevant quotient bundle},\\
+&\longrightarrow \text{induced connection and metric propagation},\\
+&\longrightarrow \text{minimal invariant action class},\\
+&\longrightarrow \text{Euler--Lagrange field equations}.
+\end{aligned}
+\]
+The first two arrows are Theorems~\ref{thm:thermodynamic-recognition-bundle}--\ref{thm:recognition-curvature-square-defect} and Theorem~\ref{thm:principal-symbol-recognition-metric}; the third is Theorem~\ref{thm:minimal-action-classification}; and the last is the variational theorem below.  Numerical couplings and the nonlinear invariant potential remain constitutive inputs.
+\end{corollary}
+
+\begin{remark}[Why the chosen action is used]
+Within the explicit parity-even local class that is linear in metric curvature, quadratic in $F_A$ and $D_A\Phi$, and free of nonminimal or mixed couplings, Equation~\eqref{eq:ark-action} is the classified minimal action, not an arbitrary imported benchmark.  Higher-curvature, nonminimal, parity-odd, alternative-potential, and nonlocal effective terms define different lawful action classes and must be audited separately.
+\end{remark}

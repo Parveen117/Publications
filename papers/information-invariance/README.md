@@ -17,7 +17,7 @@
 | `d3prime_emergent_einstein.py` | K (DOF no-go), L (Clausius route imports ħ), M (source not conserved) |
 | `d4_decoherence_audit.py` | H (printed rate is not a rate; repair is Diósi–Penrose) |
 | `d1_selection_principle.py` | I (invariance selects nothing), J (minimal scale usage selects n=2) |
-| `micro_chi_characterisation.py` | N (δ𝓘=0 ⟺ χ≡1), O (curvature sufficient, not necessary) |
+| `micro_chi_characterisation.py` | N (full correlation symmetry ⟺ χ≡1), O (χ≡1 ⇒ Ω=0; converse requires faithful observation) |
 
 Rule for this folder: a sentence may claim a result only if the ledger lists it as PROVED with a reproducing certificate. Everything else is written as a conjecture with its obligation.
 
@@ -25,3 +25,11 @@ Rule for this folder: a sentence may claim a result only if the ledger lists it 
 python papers/information-invariance/certificates/l1_certificates.py
 python -m pytest papers/information-invariance/tests
 ```
+
+## Correction, 2026-09-25
+
+Theorem N characterizes full microscopic correlation symmetry. Its implication
+to coarse information invariance reverses only for a faithful observer on the
+admissible antisymmetric response space. Theorem O supplies the cancellation
+counterexample. The MICRO certificate now reports PASS_FINITE_CHECKS; the
+general indicator-observable proof is written in the corrected paper.

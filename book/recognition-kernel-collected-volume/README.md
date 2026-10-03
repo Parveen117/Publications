@@ -1,5 +1,10 @@
 # The Recognition Kernel Framework — Collected Volume
 
+> **Edition notice, 2026-09-25:** This is a historical collected edition.
+> Read it with [the correction record](../../papers/corrections-2026-09-25/README.md),
+> which supersedes the identified formulas and claim scopes. The PDF and
+> generated fragments have not been silently relabelled as a corrected edition.
+
 Single-volume LaTeX compilation of the complete theorem ladders, theory
 documents, claim boundaries, and certified papers from three
 repositories: `Recognition-Kernel-Framework`, `RH-Framework`, and

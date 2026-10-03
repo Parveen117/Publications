@@ -1,0 +1,208 @@
+\section{Noise-stable spacetime Recognition and experimental reconstruction}
+\label{sec:noise-stable-spacetime}
+
+The exact identification theorem in Section~\ref{sec:metric-identification} determines the metric and connection from exact propagation, scale, and transport data.  Real observations are finite and noisy.  Recognition Kernel theory supplies the quantitative extension: after diffeomorphism and gauge directions are removed, a uniformly valid decoder converts finite data error into a bound on the physical quotient geometry.
+
+Let $u_0=(g_0,A_0)$ be a smooth background and let $\mathscr S$ be a local Hilbert slice transverse to the diffeomorphism--gauge orbit through $u_0$.  A tangent vector in $T_u\mathscr S$ therefore represents a physical metric--connection perturbation rather than a pure lawful symmetry.  Let $\mathscr D$ be a Hilbert data space containing finite-resolution encodings of characteristic propagation, pointwise scale, and parallel transport, and let
+\[
+\cO_{\mathrm{geom}}:\mathscr S\longrightarrow\mathscr D
+\]
+be the corresponding observation map.
+
+\begin{theorem}[Fixed-decoder spacetime Recognition theorem]
+\label{thm:fixed-decoder-spacetime}
+Let $B\subset\mathscr S$ be convex and suppose that $\cO_{\mathrm{geom}}$ is continuously Fr\'{e}chet differentiable on $B$.  Assume that there is a bounded linear decoder
+\[
+L:\mathscr D\longrightarrow\mathscr S
+\]
+and a number $0\le\delta<1$ such that, after identifying tangent spaces with the model Hilbert space of the slice,
+\begin{equation}
+\sup_{u\in B}
+\norm{\id_{\mathscr S}-L D\cO_{\mathrm{geom}}(u)}
+\le\delta.
+\label{eq:uniform-decoder-defect}
+\end{equation}
+Then $\cO_{\mathrm{geom}}$ is injective on $B$ and, for all $u_1,u_2\in B$,
+\begin{equation}
+\norm{u_1-u_2}_{\mathscr S}
+\le
+\frac{\norm L}{1-\delta}
+\norm{\cO_{\mathrm{geom}}(u_1)-\cO_{\mathrm{geom}}(u_2)}_{\mathscr D}.
+\label{eq:fixed-decoder-stability}
+\end{equation}
+Thus a single decoder that remains an approximate left inverse throughout the neighbourhood gives a quantitative target-faithful reconstruction theorem.
+\end{theorem}
+
+\begin{proof}
+Set $v=u_1-u_2$ and $u_t=u_2+tv$.  Convexity gives $u_t\in B$.  The fundamental theorem of calculus in Banach spaces yields
+\[
+\cO_{\mathrm{geom}}(u_1)-\cO_{\mathrm{geom}}(u_2)
+=
+\int_0^1D\cO_{\mathrm{geom}}(u_t)v\,\dd t.
+\]
+Applying $L$ and subtracting $v$ gives
+\[
+L\bigl(\cO_{\mathrm{geom}}(u_1)-\cO_{\mathrm{geom}}(u_2)\bigr)-v
+=
+\int_0^1
+\bigl(LD\cO_{\mathrm{geom}}(u_t)-\id\bigr)v\,\dd t.
+\]
+Therefore \eqref{eq:uniform-decoder-defect} implies
+\[
+\norm{
+L\bigl(\cO_{\mathrm{geom}}(u_1)-\cO_{\mathrm{geom}}(u_2)\bigr)-v
+}
+\le\delta\norm v.
+\]
+The reverse triangle inequality gives
+\[
+(1-\delta)\norm v
+\le
+\norm L\,
+\norm{\cO_{\mathrm{geom}}(u_1)-\cO_{\mathrm{geom}}(u_2)},
+\]
+which is \eqref{eq:fixed-decoder-stability}.  If the two observations agree, the right-hand side vanishes and $u_1=u_2$.
+\end{proof}
+
+\begin{corollary}[Background decoder and small-ball reconstruction]
+\label{cor:background-decoder-spacetime}
+Let
+\[
+T_0:=D\cO_{\mathrm{geom}}(u_0):\mathscr S\to\mathscr D
+\]
+be bounded below:
+\begin{equation}
+\norm{T_0h}_{\mathscr D}
+\ge\alpha_0\norm h_{\mathscr S},
+\qquad \alpha_0>0.
+\label{eq:background-observation-lower-bound}
+\end{equation}
+Then $T_0^*T_0\ge\alpha_0^2\id$ and the minimum-norm left inverse
+\begin{equation}
+L_0:=(T_0^*T_0)^{-1}T_0^*
+\label{eq:background-minimum-decoder}
+\end{equation}
+is bounded with
+\begin{equation}
+L_0T_0=\id,
+\qquad
+\norm{L_0}\le\frac1{\alpha_0}.
+\label{eq:background-decoder-norm}
+\end{equation}
+Suppose that on a convex neighbourhood $B$ one has
+\begin{equation}
+\sup_{u\in B}
+\norm{D\cO_{\mathrm{geom}}(u)-T_0}
+\le\eta
+<\alpha_0.
+\label{eq:derivative-closeness}
+\end{equation}
+Then
+\begin{equation}
+\norm{u_1-u_2}_{\mathscr S}
+\le
+\frac1{\alpha_0-\eta}
+\norm{\cO_{\mathrm{geom}}(u_1)-\cO_{\mathrm{geom}}(u_2)}_{\mathscr D}
+\label{eq:small-ball-geometric-stability}
+\end{equation}
+for all $u_1,u_2\in B$.
+\end{corollary}
+
+\begin{proof}
+Inequality \eqref{eq:background-observation-lower-bound} implies
+\[
+\langle T_0^*T_0h,h\rangle
+=\norm{T_0h}^2
+\ge\alpha_0^2\norm h^2,
+\]
+so $T_0^*T_0$ is boundedly invertible and \eqref{eq:background-minimum-decoder} is well defined.  It is the Moore--Penrose left inverse on $\Ran T_0$, extended by zero on $(\Ran T_0)^\perp$, and its norm is at most $1/\alpha_0$.
+
+For $u\in B$,
+\[
+\norm{\id-L_0D\cO_{\mathrm{geom}}(u)}
+=
+\norm{L_0(T_0-D\cO_{\mathrm{geom}}(u))}
+\le\frac{\eta}{\alpha_0}.
+\]
+Thus Theorem~\ref{thm:fixed-decoder-spacetime} applies with
+$\delta=\eta/\alpha_0$ and $\norm{L_0}\le1/\alpha_0$, giving
+\[
+\frac{\norm{L_0}}{1-\delta}
+\le
+\frac{1/\alpha_0}{1-\eta/\alpha_0}
+=
+\frac1{\alpha_0-\eta}.
+\]
+\end{proof}
+
+\begin{corollary}[Lipschitz derivative criterion]
+\label{cor:lipschitz-derivative-spacetime}
+If
+\begin{equation}
+\norm{D\cO_{\mathrm{geom}}(u)-D\cO_{\mathrm{geom}}(v)}
+\le L_D\norm{u-v}_{\mathscr S}
+\label{eq:geometric-derivative-lipschitz}
+\end{equation}
+near $u_0$, then on every convex ball $B_r(u_0)$ with
+\[
+L_Dr<\alpha_0
+\]
+one may take $\eta=L_Dr$ in Corollary~\ref{cor:background-decoder-spacetime}.  Hence
+\begin{equation}
+\norm{u_1-u_2}_{\mathscr S}
+\le
+\frac1{\alpha_0-L_Dr}
+\norm{\cO_{\mathrm{geom}}(u_1)-\cO_{\mathrm{geom}}(u_2)}_{\mathscr D}.
+\label{eq:lipschitz-small-ball-stability}
+\end{equation}
+\end{corollary}
+
+\begin{corollary}[Finite-error geometric reconstruction]
+\label{cor:finite-error-spacetime}
+Under the hypotheses of Corollary~\ref{cor:background-decoder-spacetime}, suppose measured data $d_i\in\mathscr D$ satisfy
+\[
+\norm{d_i-\cO_{\mathrm{geom}}(u_i)}_{\mathscr D}
+\le\varepsilon_i.
+\]
+Then
+\begin{equation}
+\norm{u_1-u_2}_{\mathscr S}
+\le
+\frac{
+\norm{d_1-d_2}_{\mathscr D}
++\varepsilon_1+\varepsilon_2
+}{\alpha_0-\eta}.
+\label{eq:noisy-geometric-reconstruction}
+\end{equation}
+In particular, if two models fit the same measured data to accuracy $\varepsilon$, then
+\begin{equation}
+\norm{u_1-u_2}_{\mathscr S}
+\le
+\frac{2\varepsilon}{\alpha_0-\eta}.
+\label{eq:same-data-geometric-bound}
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+The data errors give
+\[
+\norm{\cO_{\mathrm{geom}}(u_1)-\cO_{\mathrm{geom}}(u_2)}
+\le
+\norm{d_1-d_2}+\varepsilon_1+\varepsilon_2.
+\]
+Insert this estimate into \eqref{eq:small-ball-geometric-stability}.  The final statement is the case $d_1=d_2$ and $\varepsilon_1=\varepsilon_2=\varepsilon$.
+\end{proof}
+
+\begin{corollary}[Experimental Recognition Kernel criterion]
+At a background for which
+\[
+\Ker D\cO_{\mathrm{geom}}(u_0)
+=
+\text{the diffeomorphism--gauge tangent space}
+\]
+and the induced observation on a transverse slice satisfies the positive lower bound \eqref{eq:background-observation-lower-bound}, the geometric target is locally target-faithful and stably decodable.  A residual larger than the calibrated right-hand side of \eqref{eq:noisy-geometric-reconstruction} rejects at least one declared propagation, scale, transport, model-class, gauge-slice, or uncertainty assumption.
+\end{corollary}
+
+\begin{remark}[Experimental boundary]
+The theorem supplies a finite-error reconstruction contract and identifies the stability constants $\alpha_0$ and $\eta$ that an experiment or numerical protocol must estimate.  It does not claim that a particular instrument already measures complete characteristic or holonomy data, nor that the transverse lower bound is automatically positive.  Those are empirical and protocol-design obligations, now expressed as testable quantities rather than perfect-information prose.
+\end{remark}

@@ -1,0 +1,231 @@
+\section{From thermodynamic response jets to the spacetime Recognition bundle}
+\label{sec:thermodynamic-recognition-square}
+
+The spacetime fields used later are now constructed from the thermodynamic Recognition data rather than introduced as unrelated variables.  The construction is the bundle form of the quotient-adapter, compatibility-transfer, source-domination, and no-blindness principles of the Recognition Kernel framework \cite{DabasRKF}.
+
+\subsection{Local-equilibrium pullback and the target-relevant bundle}
+
+Let $\cM_{\mathrm{th}}$ be the admissible thermodynamic state manifold and let $E_\Lambda\to\cM_{\mathrm{th}}$ be the direct-sum unit bundle of the six response coordinates.  A smooth local-equilibrium state field on spacetime is a map
+\[
+\Theta:M\longrightarrow\cM_{\mathrm{th}}.
+\]
+For a fixed finite jet order $N$, define the pulled-back thermodynamic response-jet bundle
+\begin{equation}
+\cH^N_\Theta
+:=\Theta^*J^N(E_\Lambda)
+\longrightarrow M.
+\label{eq:thermodynamic-pullback-jet}
+\end{equation}
+Its distinguished response section is
+\[
+\mathbf j^N_\Theta
+:=\Theta^*(j^N\Lambda)\in\Gamma(\cH^N_\Theta).
+\]
+
+Let $\cY\to M$ and $\cZ\to M$ be metric vector bundles and let
+\[
+\cA:\cH^N_\Theta\to\cY,
+\qquad
+\Pi:\cH^N_\Theta\to\cZ
+\]
+be smooth bundle morphisms representing the local observation protocol and the declared target.  Assume that $\cA$ and the stacked map $(\cA,\Pi)$ have constant rank.  Set
+\begin{equation}
+\cN:=\Ker\cA,
+\qquad
+\cN_0:=\Ker\cA\cap\Ker\Pi
+=\Ker(\cA,\Pi).
+\label{eq:bundle-blind-subspaces}
+\end{equation}
+The constant-rank hypothesis makes $\cN$ and $\cN_0$ smooth subbundles.
+
+\begin{theorem}[Thermodynamic Recognition quotient-bundle theorem]
+\label{thm:thermodynamic-recognition-bundle}
+Under the hypotheses above, the fibrewise target-relevant blind quotient
+\begin{equation}
+E_{\RK}
+:=\cB(\cA;\Pi)
+:=\cN/\cN_0
+\longrightarrow M
+\label{eq:recognition-quotient-bundle}
+\end{equation}
+is a smooth metric vector bundle.  Let $P_{\cN}$ be the orthogonal projection onto $\cN$ and let $q:\cN\to E_{\RK}$ be the quotient map.  The canonical completed observation
+\begin{equation}
+\cA_\Pi^\sharp v
+:=\bigl(\cA v,qP_{\cN}v\bigr)
+:\cH^N_\Theta\longrightarrow\cY\oplus E_{\RK}
+\label{eq:bundle-canonical-completion}
+\end{equation}
+is a smooth bundle morphism satisfying
+\begin{equation}
+\Ker\cA_\Pi^\sharp=\cN_0.
+\label{eq:bundle-completion-kernel}
+\end{equation}
+The thermodynamic Recognition field is the explicit quotient section
+\begin{equation}
+\Phi_{\mathrm{th}}
+:=qP_{\cN}\mathbf j^N_\Theta
+\in\Gamma(E_{\RK}).
+\label{eq:thermodynamic-recognition-field}
+\end{equation}
+Thus $\Phi_{\mathrm{th}}(x)$ is precisely the target-relevant part of the local thermodynamic response jet that is invisible to the original observation at $x$.
+\end{theorem}
+
+\begin{proof}
+Constant rank of $\cA$ gives the smooth kernel subbundle $\cN$, while constant rank of $(\cA,\Pi)$ gives the smooth subbundle $\cN_0$.  The quotient of a finite-rank vector bundle by a smooth subbundle is a smooth vector bundle.  The metric on $\cH^N_\Theta$ identifies $\cN/\cN_0$ with the orthogonal complement $\cN\cap\cN_0^\perp$, providing a quotient metric and showing that $P_{\cN}$ and $q$ vary smoothly.
+
+If $\cA_\Pi^\sharp v=0$, then $\cA v=0$, hence $v\in\cN$ and $P_{\cN}v=v$.  The second component gives $qv=0$, so $v\in\cN_0$.  Conversely every $v\in\cN_0$ annihilates both components.  This proves \eqref{eq:bundle-completion-kernel}.  Applying the smooth morphism $qP_{\cN}$ to the pulled-back response jet gives \eqref{eq:thermodynamic-recognition-field}.
+\end{proof}
+
+\begin{corollary}[Target meaning of the spacetime Recognition field]
+\label{cor:recognition-field-meaning}
+The field $\Phi_{\mathrm{th}}$ vanishes exactly when the thermodynamic response jet has no target-relevant component hidden from the declared observation.  It is invariant under every unitary change of response representation that transports $\cA$, $\Pi$, and the fibre metric covariantly.
+\end{corollary}
+
+\subsection{The target-faithful transport square}
+
+Let $\nabla^{\cH}$, $\nabla^{\cY}$, and $\nabla^{\cZ}$ be metric connections on $\cH^N_\Theta$, $\cY$, and $\cZ$.  Assume that observation and target are parallel bundle morphisms:
+\begin{align}
+\nabla^{\cY}_X(\cA v)&=\cA(\nabla^{\cH}_Xv),
+\label{eq:observation-parallel}\\
+\nabla^{\cZ}_X(\Pi v)&=\Pi(\nabla^{\cH}_Xv)
+\label{eq:target-parallel}
+\end{align}
+for every vector field $X$ and smooth section $v$.  These identities imply that $\nabla^{\cH}$ preserves $\cN$ and $\cN_0$.
+
+\begin{theorem}[Target-faithful transport-square theorem]
+\label{thm:target-faithful-square}
+The connection $\nabla^{\cH}$ descends uniquely to a metric connection $\nabla^{\RK}$ on $E_{\RK}$ by
+\begin{equation}
+\nabla_X^{\RK}[v]
+:=[\nabla_X^{\cH}v],
+\qquad v\in\Gamma(\cN).
+\label{eq:quotient-connection}
+\end{equation}
+Let $U_\gamma^{\cH}$, $U_\gamma^{\cY}$, and $U_\gamma^{\RK}$ denote parallel transport along a piecewise smooth path $\gamma:x\to y$.  Then
+\begin{equation}
+\cA_{\Pi,y}^\sharp U_\gamma^{\cH}
+=
+\bigl(U_\gamma^{\cY}\oplus U_\gamma^{\RK}\bigr)
+\cA_{\Pi,x}^\sharp.
+\label{eq:target-faithful-square}
+\end{equation}
+Equivalently, the square
+\[
+\begin{array}{ccc}
+(\cH^N_\Theta)_x & \xrightarrow{\ U_\gamma^{\cH}\ } & (\cH^N_\Theta)_y\\[2mm]
+\Big\downarrow{\cA_{\Pi,x}^\sharp} &&
+\Big\downarrow{\cA_{\Pi,y}^\sharp}\\[2mm]
+\cY_x\oplus(E_{\RK})_x &
+\xrightarrow{\ U_\gamma^{\cY}\oplus U_\gamma^{\RK}\ } &
+\cY_y\oplus(E_{\RK})_y
+\end{array}
+\]
+commutes.  The transported Recognition field is therefore the quotient transport of the target-relevant thermodynamic response residue, not an independently named scalar field.
+\end{theorem}
+
+\begin{proof}
+If $v$ and $v+w$ represent the same quotient section, then $w\in\Gamma(\cN_0)$.  Preservation of $\cN_0$ implies $\nabla_X^{\cH}w\in\Gamma(\cN_0)$, so \eqref{eq:quotient-connection} is well defined.  Metric compatibility descends from the orthogonal realization $E_{\RK}\simeq\cN\cap\cN_0^\perp$.
+
+Equations \eqref{eq:observation-parallel}--\eqref{eq:target-parallel} integrate to the corresponding parallel-transport intertwining relations.  In particular, $U_\gamma^{\cH}$ maps $\cN_x$ unitarily onto $\cN_y$ and $\cN_{0,x}$ onto $\cN_{0,y}$, hence it induces $U_\gamma^{\RK}$.  Unitary transport also intertwines the orthogonal projections onto $\cN_x$ and $\cN_y$.  Applying these identities to the two components of \eqref{eq:bundle-canonical-completion} proves \eqref{eq:target-faithful-square}.
+\end{proof}
+
+\begin{theorem}[Recognition curvature as the infinitesimal square defect]
+\label{thm:recognition-curvature-square-defect}
+Let $F^{\cH}$ and $F^{\RK}$ be the curvatures of $\nabla^{\cH}$ and $\nabla^{\RK}$.  For $v\in\cN$,
+\begin{equation}
+F^{\RK}(X,Y)[v]
+=[F^{\cH}(X,Y)v].
+\label{eq:quotient-curvature}
+\end{equation}
+For an oriented infinitesimal rectangle $\square_\varepsilon(X,Y)$ based at $x$, the induced quotient holonomy satisfies
+\begin{equation}
+U^{\RK}_{\partial\square_\varepsilon(X,Y)}
+=\id+\varepsilon^2F^{\RK}_x(X,Y)+o(\varepsilon^2).
+\label{eq:small-loop-square-defect}
+\end{equation}
+Consequently, $F^{\RK}$ is exactly the leading failure of path-independent target-faithful thermodynamic reconstruction.  If $P\to M$ is the orthonormal frame bundle of $E_{\RK}$, the local connection form $A$ of $\nabla^{\RK}$ and its curvature $F_A$ are the spacetime Recognition connection and curvature used in the action below.
+\end{theorem}
+
+\begin{proof}
+Apply the definition of curvature to \eqref{eq:quotient-connection}.  Every commutator and Lie-bracket term passes to the quotient because $\cN_0$ is preserved, giving \eqref{eq:quotient-curvature}.  The small-loop expansion is the standard curvature expansion of parallel transport with the orientation convention fixed by $(X,Y)$.  The final statement is the usual equivalence between a metric vector-bundle connection and a principal connection on its orthonormal frame bundle.
+\end{proof}
+
+\subsection{Uniform source domination and strict target no-blindness}
+
+\begin{theorem}[Bundle decoder and source-domination theorem]
+\label{thm:bundle-source-domination}
+Assume the preceding constant-rank hypotheses.  There exists a unique smooth bundle morphism
+\[
+D_{\min}:\Ran\cA_\Pi^\sharp\longrightarrow\cZ
+\]
+with image-orthogonal minimum norm such that
+\begin{equation}
+\Pi=D_{\min}\cA_\Pi^\sharp.
+\label{eq:bundle-decoder-factorization}
+\end{equation}
+After extending $D_{\min}$ by zero on $(\Ran\cA_\Pi^\sharp)^\perp$, it is a smooth morphism $\cY\oplus E_{\RK}\to\cZ$.  Fibrewise,
+\begin{equation}
+\norm{D_{\min,x}}^2
+=\beta_{\cA_{\Pi,x}^\sharp}(\Pi_x),
+\label{eq:bundle-decoder-burden}
+\end{equation}
+where the right-hand side denotes the operator-valued analogue of the sharp decoder burden.  If
+\[
+\sup_{x\in M}\norm{D_{\min,x}}\le C<\infty,
+\]
+then the uniform source-domination estimate
+\begin{equation}
+\norm{\Pi_xv}
+\le C\norm{\cA_{\Pi,x}^\sharp v}
+\label{eq:uniform-source-domination}
+\end{equation}
+holds for every $x$ and $v$.  Hence no target-relevant mode is blind after canonical completion.  When the bundle maps and connections are parallel, $D_{\min}$ intertwines parallel transport.
+\end{theorem}
+
+\begin{proof}
+Equation \eqref{eq:bundle-completion-kernel} gives
+$\Ker\cA_\Pi^\sharp\subseteq\Ker\Pi$.  Therefore
+$D_0(\cA_\Pi^\sharp v):=\Pi v$ is well defined on the image.  Constant rank makes the image a smooth subbundle.  On each fibre, the minimum-norm decoder is obtained by restricting to $(\Ker\cA_\Pi^\sharp)^\perp$ and inverting $\cA_\Pi^\sharp$ onto its range; these inverses vary smoothly under constant rank.  This proves the smooth factorization and its uniqueness in the image-orthogonal class.  The operator norm is the sharp factorization constant, giving \eqref{eq:bundle-decoder-burden}; the uniform estimate follows immediately.  Parallelness of all maps makes both sides of \eqref{eq:bundle-decoder-factorization} transport-covariant, and uniqueness gives the intertwining property.
+\end{proof}
+
+\subsection{Why the minimal spacetime action has the stated form}
+
+The preceding theorems construct the fibre, field, connection, and curvature from thermodynamic response data.  They do not determine coupling constants or a nonlinear potential.  They do, however, sharply constrain the lowest-order local action once the usual locality and symmetry contract is declared.
+
+\begin{theorem}[Minimal invariant Recognition-action classification]
+\label{thm:minimal-action-classification}
+Let $E_{\RK}\to(M,g)$ be the metric quotient bundle from Theorem~\ref{thm:thermodynamic-recognition-bundle}, let $A$ be the induced metric connection, and let $\Phi=\Phi_{\mathrm{th}}$ or a dynamical section of the same bundle.  Consider real local Lagrangian densities that:
+\begin{enumerate}[label=(\roman*)]
+\item are invariant under diffeomorphisms and the orthogonal or unitary gauge group of $E_{\RK}$;
+\item are parity even and use no orientation tensor;
+\item depend on the metric curvature only linearly through complete metric contractions;
+\item are quadratic in $F_A$ and in $D_A\Phi$, with no mixed or nonminimal curvature couplings;
+\item contain no derivative-free field term except a smooth gauge-invariant potential.
+\end{enumerate}
+Then, up to a boundary term and constant normalizations, every such density is
+\begin{equation}
+\mathcal L
+=
+ aR_g+b
+-c\langle F_{A\,\mu\nu},F_A^{\mu\nu}\rangle
+-d\langle D_{A\,\mu}\Phi,D_A^\mu\Phi\rangle
+-V(\Phi),
+\label{eq:minimal-action-classification}
+\end{equation}
+where $a,b,c,d\in\R$ and $V$ is gauge invariant.  Positivity of the Euclidean quadratic gauge and field sectors requires $c,d>0$.  With
+\[
+a=\frac1{2\kappa},\qquad
+b=-\frac{\Lambda_{\mathrm{cos}}}{\kappa},\qquad
+c=\frac1{4g_{\RK}^2},\qquad
+d=\frac12,
+\]
+Equation~\eqref{eq:minimal-action-classification} is exactly the action density used in Section~\ref{sec:spacetime-action}.
+\end{theorem}
+
+\begin{proof}
+A complete metric contraction linear in the Riemann tensor reduces, by its algebraic symmetries, to a multiple of the scalar curvature; the derivative-free metric density is a constant multiple of $\mathrm{vol}_g$.  With the fixed invariant inner product on the adjoint bundle and parity-odd contractions excluded, the unique quadratic complete contraction of the gauge curvature is $\langle F_{\mu\nu},F^{\mu\nu}\rangle$.  With the fixed fibre metric, the unique quadratic complete contraction of one covariant derivative of $\Phi$ is $\langle D_\mu\Phi,D^\mu\Phi\rangle$.  The remaining derivative-free field contribution is a gauge-invariant function $V(\Phi)$.  Adding the independent coefficients gives \eqref{eq:minimal-action-classification}; integration by parts absorbs equivalent second-derivative representatives into a boundary term.  Euclidean positivity fixes the signs of the quadratic coefficients.
+\end{proof}
+
+\begin{remark}[Exact selection statement]
+The thermodynamic Recognition square selects the \emph{meaning} of $E_{\RK}$, $\Phi$, $A$, and $F_A$.  The locality, symmetry, parity, and derivative-order contract selects the minimal action form within the stated class.  Neither theorem fixes the numerical couplings or the invariant potential, and higher-curvature, nonminimal, parity-odd, or nonlocal actions lie outside this classification rather than being silently excluded from existence.
+\end{remark}

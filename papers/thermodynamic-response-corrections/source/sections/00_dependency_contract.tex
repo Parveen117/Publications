@@ -1,0 +1,39 @@
+\section{Reader contract and theorem dependency map}
+\label{sec:reader-contract}
+
+This paper is written primarily for readers in mathematical thermodynamics, functional analysis, inverse problems, differential geometry, and constructive field theory.  No reader is expected to treat the later spacetime sections as consequences of equilibrium notation alone.  The theorem chain is modular, and every arrow below names its additional datum.
+
+\begin{center}
+\small
+\begin{tabular}{p{0.19\textwidth}p{0.34\textwidth}p{0.36\textwidth}}
+\toprule
+Module & Input added & Output proved\\
+\midrule
+Equilibrium & $U(S,V)$, stable chart & Legendre structure, Maxwell and response identities\\
+Recognition & observation, target, ledger & blind quotient, minimal completion, decoder, residue\\
+Response geometry & area form, four channels & skew rank-two bracket, Pluecker identity and noise test\\
+Cut--Flow--Jet & connection, graded carrier, cut & finite/analytic jets, cut sectors, commutator curvature\\
+Recognition square & $\Theta$, constant-rank bundle maps, compatible transport & quotient field bundle, explicit $\Phi_{\mathrm{th}}$, connection, curvature, source domination\\
+Action lift & Lorentzian metric and minimal action contract & classified action form and residual constitutive freedom\\
+Classical dynamics & couplings and invariant potential & metric, gauge, matter, Bianchi, and conservation equations\\
+Finite quantum & coercive gauge-fixed regulator & exact Schwinger--Dyson and effective equations\\
+Constructive sector & positive ultrastatic physical Hessian & continuum Gaussian measure, OS positivity, unitarity, bosonic anomaly freedom\\
+Identification & propagation, scale, transport, decoder stability & exact and finite-error metric--connection reconstruction\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The central new interface is the \emph{thermodynamic Recognition square}:
+\begin{equation}
+\text{thermodynamic response jets}
+\longrightarrow
+E_{\RK}
+\longrightarrow
+(\Phi_{\mathrm{th}},A,F_A)
+\longrightarrow
+\text{classified action lift}.
+\label{eq:opening-recognition-chain}
+\end{equation}
+The first two arrows are construction theorems.  The final arrow requires the stated locality, symmetry, parity, and derivative-order contract.  Numerical couplings and the nonlinear potential remain constitutive data.  The quantum-effective equations remain conditional on the existence of the stated effective action, while the positive quadratic sector is constructed independently and nonperturbatively.
+
+The detailed novelty and falsifiability audit appears in Section~\ref{sec:dependency-falsifiability}.  Standard ingredients are identified there as standard.  The contribution claimed here is not the rediscovery of Einstein variation, Gaussian measures, or null-cone geometry; it is the target-relative Recognition architecture that connects them through explicit carriers, quotients, transport squares, decoder bounds, and claim boundaries.
