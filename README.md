@@ -1,6 +1,17 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-52](papers/yang-mills-certified-benchmark/YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
+Latest Yang–Mills continuation: [YM-53](papers/yang-mills-certified-benchmark/YM53_ANISOTROPIC_INTERACTING_GAP.md)
+extends the interacting chain to native anisotropic and rank-two heat.
+If every site's second tensor eigenvalue is at least beta>0,
+abs(theta)<beta/2400 suffices for a gap uniform in finite width and
+fine heat step. The proof permits unequal, differently oriented tensors,
+handles inadmissible short bridges, and carries the gap into each
+fixed-width time limit. Interacting energy uses the derived ground-source
+weight and obeys the same lower bound. Seven written results, eighteen
+new exact-control tests and 151 related tests use **Python 3.12 only**.
+The anisotropic joint/volume limit, physical selection and 4D/Clay remain open.
+
+Previous energy continuation: [YM-52](papers/yang-mills-certified-benchmark/YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
 connects the declared native heat protocol to derivative energy, discarded
 record variance and bounded-density entropy dissipation. For tensor
 eigenvalues a<=b<=c, its exact centered rate is min(tr(C)/4,a+b);
@@ -12,7 +23,7 @@ The known spectral formula is credited to Lauret; the native record
 bridge and observer selection conditions are explicit.
 Six written results and sixteen new tests use **Python 3.12 only**.
 Physical energy/time calibration, selection of the optimization objective
-and anisotropic interacting transfer remain open.
+remain open; YM53 develops the declared anisotropic chain extension.
 
 Previous tool audit: [YM-51](papers/yang-mills-certified-benchmark/YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md)
 audits 29 tool dependencies and identifies the heat protocol's symmetric
