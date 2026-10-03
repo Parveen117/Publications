@@ -22,6 +22,16 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[GE4: minimal observer-memory recovery](papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md)
+constructs the smallest positive-pairing linear realization of a probe's
+native response from exact word moments. A ceiling-based three-derivative
+test recovers GE3's one-memory law; a second native probe certifies two
+memory coordinates. A proved leakage bound controls approximate two-state
+recovery. Four written results and 14 new tests preserve GE1–GE3 evidence,
+with 62 tests on Python 3.12 only. Source admissibility and the ceiling
+are independently warranted inputs; unseen ambient modes, experimental
+derivative inference, actual interacting rows and 4D/Clay remain open.
+
 [GE3: returning memory under native refinement](papers/generalized-euler-evolution/GE3_RETURNING_MEMORY.md)
 connects the existing block-memory calculus to GE2's unequal-step internal
 clock. Retained and repeatedly reset observers have different certified

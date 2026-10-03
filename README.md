@@ -1,6 +1,16 @@
 # Publications
 
-Latest mathematical continuation: [GE3 — returning memory survives clock refinement](papers/generalized-euler-evolution/GE3_RETURNING_MEMORY.md)
+Latest mathematical continuation: [GE4 — recover minimal observer memory](papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md)
+reconstructs a probe's smallest linear memory model from native response
+moments. A known native generator ceiling makes three derivatives sufficient
+to recover GE3's complete one-memory law; a second native quadratic example
+needs two memory coordinates. A moment-rank construction and a quantitative
+two-state approximation bound distinguish exact and approximate recovery.
+Four written results and 14 new tests bring the Generalized Euler total to
+62 on **Python 3.12 only**. Invisible ambient modes and their gap remain
+unidentified; the actual interacting row and 4D/Clay gates stay open.
+
+Previous mathematical continuation: [GE3 — returning memory survives clock refinement](papers/generalized-euler-evolution/GE3_RETURNING_MEMORY.md)
 proves different retained-memory and repeated-reset limits from the same
 native rational arrows. An actual centered quadratic observer has visible
 law (exp(-tau/2)+exp(-tau))/2, while repeated reset gives exp(-3 tau/4).
