@@ -22,6 +22,18 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-53: anisotropic interacting gap](papers/yang-mills-certified-benchmark/YM53_ANISOTROPIC_INTERACTING_GAP.md)
+uses the second-eigenvalue floor b_i>=beta>0 to derive an all-content
+coarse heat-kernel floor. YM45's temporal blocks then give a full-source
+chain gap for abs(theta)<beta/2400, without requiring full isotropy or
+rank three. The finite-width norm time limit and ground-source weighted
+derivative energy inherit an explicit rate. Fine bridge support and
+zero-normalizer cases are handled explicitly. Seven written results and
+18 new tests preserve 103 upstream source files; Python 3.12 only.
+The anisotropic joint/volume limit and actual row closure remain further
+mathematical obligations. Physical protocol/clock/action selection and
+four-dimensional field theory are not inferred.
+
 [YM-52: native energy, discarded records and observer relaxation](papers/yang-mills-certified-benchmark/YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
 derives the derivative-energy and complementary record-variance balance
 of YM51's protocol, plus a bounded-positive-density entropy law.

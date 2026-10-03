@@ -796,6 +796,29 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   defect, larger bounded-history density, 4D/AF/Clay/QG. The new origin
   ledger keeps those choices distinct from the proved compact bridge.
 
+## YM-53 (3 October 2026): rank-two heat survives weak chain interaction
+
+- Reuses YM50--52's native coefficient/reference/protocol construction,
+  YM43--45's temporal comparison and norm-gap transport, and YM48's
+  ground-source energy argument. No canonical engine is replaced.
+- Extends to site-dependent tensors with second eigenvalue >=beta>0,
+  including rank two and unequal orientations. Casimir control of every
+  spin gives a coarse kernel floor at 9/beta, with a closed infinite tail.
+- Derives the sufficient window abs(theta)<beta/2400 and an explicit
+  full-source gap uniform in finite width and fine time steps. Admissible
+  short bridges are compared without dividing by zero normalizers.
+- Proves the fixed-width norm time limit with a trace-dependent error;
+  the interacting ground-source weighted native derivative energy has
+  the same Poincare lower bound. Clock rescaling remains explicit.
+- Credits the established Dobrushin--Shlosman block-comparison lineage
+  through Rebeschini--van Handel. The scope is the declared chain,
+  not a new general spectral theorem or a four-dimensional mass gap.
+- Evidence: seven written results, eighteen new and 151 related Python
+  3.12 tests, 103 preserved source pins, exact finite controls and outward
+  scalar bounds. No formal proof assistant or expert review is claimed.
+- Next obligations: anisotropic joint/volume limit and actual row closure;
+  physical protocol/state/clock/action selection, NCG measure, 4D/AF/Clay.
+
 ## YM-52 (3 October 2026): connect energy, discarded records and the observer gap
 
 - Reuses YM50's native coefficient/reference completion and YM51's general

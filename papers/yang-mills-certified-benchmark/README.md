@@ -1,6 +1,47 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-52
+## Current continuation: YM-53
+
+[YM-53's anisotropic interaction proof](YM53_ANISOTROPIC_INTERACTING_GAP.md)
+extends the declared open chain to site-dependent positive semidefinite
+native protocol tensors. Their ordered eigenvalues obey b_i>=beta>0;
+a_i may be zero and the orientations need not agree. The sufficient window
+
+\[
+|\theta|<\beta/2400
+\]
+
+provides an explicit full-source gap uniform in every finite width and
+0<h<=1/beta. An all-content coarse kernel bound replaces isotropy in the
+temporal-block argument. Short conditional bridges with zero normalizer
+are excluded lawfully, with grouped endpoint comparisons where required.
+The actual square-sourced transfer, fixed-width norm time limit and
+interacting ground-source derivative energy carry the same rate.
+
+For C=diag(0,3/2,3/2), theta=1/4096, J=8 and R=4/3,
+gamma=3 log(4/3)/160>0.00539403. This is a rigorous conservative lower
+bound in the declared chain, not a physical mass or a phase boundary.
+
+[The certificate](certificates/YM53_RESULT.json) and
+[source pins](certificates/YM53_SOURCE_PINS.json) bind seven written results,
+18 new tests, 108 finite spin inequalities, exact infinite-tail algebra,
+eight inhomogeneous two-site polynomial controls, twelve norm-gap
+transport cells and independent support/ground-energy fixtures. YM45's
+coupling controls are reused. All 151 related tests pass on **Python 3.12**.
+The 103 upstream pinned files are unchanged. General proofs are written,
+not mechanically formalized or externally expert-certified.
+
+The anisotropic infinite-volume/joint-cutoff construction and actual row
+closure remain open, as do physical clock/protocol/state/action selection,
+NCG quantum measure and 4D/AF/Clay. The old isotropic results retain their
+original scope and certificates.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym53_anisotropic_interaction.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym53_anisotropic_interaction.py -v
+~~~
+
+## Previous continuation: YM-52
 
 [YM-52's energy and observer proof](YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
 uses YM51's general symmetric protocol tensor C. It derives
@@ -41,7 +82,8 @@ physical observer objective or clock budget.
 inequalities, 40 polynomial energy matrices and six rational entropy
 enclosures. Current verification uses Python 3.12 only.
 The fixed isotropic interacting chain proofs remain unchanged.
-Anisotropic interacting estimates, physical selection and 4D/Clay remain open.
+YM53 supplies the declared anisotropic chain extension. Physical selection
+and 4D/Clay remain open.
 
 ## Previous continuation: YM-51
 
