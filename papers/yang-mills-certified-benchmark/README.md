@@ -1,6 +1,31 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-55
+## Current continuation: YM-56
+
+[YM-56's Hessian lambda family](YM56_LAMBDA_CURVATURE_GAP.md) connects
+the native selected response curvature to an exact symmetry-preserving
+compact gap. A cubic potential has trace-free response directions K and
+lambda L, curvature lambda R/2 at the reference state, and equal-count
+protocol tensor diag(1,lambda^2,0)/2. Its full centered free rate is
+min((1+lambda^2)/8, min(1,lambda^2)/2); it opens quadratically near zero.
+The squared evolution retains its involution symmetry throughout.
+
+Six written results include the integrable positive chart, exact sharp
+modes, recovery of GE2's normalized curvature formula, an explicit
+stronger fixed-profile YM55 gate, and a nonuniform-free-profile obstruction.
+The [certificate](certificates/YM56_RESULT.json) checks 9 Hessian jets,
+48 positivity corners, 306 polynomial symmetry identities and 108 exact
+spin-block inequalities. The 17 new and 58 targeted predecessor tests
+pass on **Python 3.12.14**; CI requires Python 3.12. The source manifest
+preserves 125 upstream files.
+No physical mass or four-dimensional continuum is identified.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym56_lambda_curvature_gap.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym56_lambda_curvature_gap.py -v
+```
+
+## Previous continuation: YM-55
 
 [YM-55's joint-history proof](YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
 closes the stationary anisotropic volume/time-limit obligation left by
