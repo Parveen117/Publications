@@ -1,0 +1,922 @@
+{
+  "actual_native_YM_actions": {
+    "checks": {
+      "inverse_equations": 24,
+      "native_cayley_isometries": 6,
+      "native_noncommuting_brackets": 3,
+      "native_positive_resolvents": 12,
+      "reference_pairing_contractions": 12
+    },
+    "degree_range": [
+      1,
+      3
+    ],
+    "reused_compact_gap_for_diagonal_rank_two": "1/2",
+    "rotated_rank_two_tensor": [
+      [
+        "576/625",
+        "168/625",
+        "0"
+      ],
+      [
+        "168/625",
+        "49/625",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ]
+  },
+  "certificate_type": "GE1_GENERALIZED_EULER_DOMAINS_AND_NATIVE_HEAT_DOCK",
+  "domain_counterexamples": {
+    "bilateral_complex_domain_controls": [
+      {
+        "decay_upper": "183939720585721160797761885081/500000000000000000000000000000",
+        "growth_lower": "339785228557380654420035933919/125000000000000000000000000000",
+        "negative_mode": -1,
+        "positive_mode": 1
+      },
+      {
+        "decay_upper": "9157819444367090146859010637/500000000000000000000000000000",
+        "growth_lower": "2729907501657211953905513060143/50000000000000000000000000000",
+        "negative_mode": -4,
+        "positive_mode": 4
+      },
+      {
+        "decay_upper": "112535174719259115462657/1000000000000000000000000000000",
+        "growth_lower": "4443055260253936280918280051511890239/500000000000000000000000000000",
+        "negative_mode": -16,
+        "positive_mode": 16
+      }
+    ],
+    "correct_complex_kernel_mode": 1,
+    "fixed_smooth_vector_forward_failure": [
+      {
+        "cutoff_and_step_count": 16,
+        "fixed_vector_coefficient_square_after_forward_steps": "256",
+        "m": 4
+      },
+      {
+        "cutoff_and_step_count": 64,
+        "fixed_vector_coefficient_square_after_forward_steps": "281474976710656",
+        "m": 8
+      },
+      {
+        "cutoff_and_step_count": 256,
+        "fixed_vector_coefficient_square_after_forward_steps": "26959946667150639794667015087019630673637144422540572481103610249216",
+        "m": 16
+      },
+      {
+        "cutoff_and_step_count": 1024,
+        "fixed_vector_coefficient_square_after_forward_steps": "9745314011399999080353382387875188310876226857595007526867906457212948690766426102465615065882010259225304916231408668183459169865203094046577987296312653419531277699956473029870789655490053648352799593479218378873685597925394874945746363615468965612827738803104277547081828589991914110976",
+        "m": 32
+      }
+    ],
+    "real_kernel_exclusion_checks": 17,
+    "smooth_nonanalytic_taylor_failure": [
+      {
+        "lower_bound": "16",
+        "order": 4,
+        "single_coefficient_term": "512/3"
+      },
+      {
+        "lower_bound": "65536",
+        "order": 8,
+        "single_coefficient_term": "8589934592/315"
+      },
+      {
+        "lower_bound": "281474976710656",
+        "order": 16,
+        "single_coefficient_term": "158456325028528675187087900672/638512875"
+      },
+      {
+        "lower_bound": "340282366920938463463374607431768211456",
+        "order": 32,
+        "single_coefficient_term": "231584178474632390847141970017375815706539969331281128078915168015826259279872/122529844256906551386796875"
+      }
+    ],
+    "wrong_mode_residual": [
+      "2",
+      "0"
+    ]
+  },
+  "evidence_scope": {
+    "YM_application": "existing free compact heat generator, graph domain and resolvent approximation",
+    "drafts": "partially corrected and scoped; not certified wholesale",
+    "finite_controls": "exact rational algebra and outward enclosures, not an infinite proof assistant",
+    "open": [
+      "general phase-ratio/seam dynamics",
+      "physical state and clock selection",
+      "Born law",
+      "RH",
+      "interacting row closure",
+      "4D Yang-Mills",
+      "Clay",
+      "quantum gravity"
+    ],
+    "written_theorems": [
+      "GE1-T1",
+      "GE1-T2",
+      "GE1-T3",
+      "GE1-T4",
+      "GE1-T5",
+      "GE1-T6"
+    ]
+  },
+  "heat_approximation": {
+    "independent_heat_enclosures": [
+      {
+        "bound_per_unit_norm": "3/128",
+        "degree": 1,
+        "error_upper": "57527876738641374215970710939/9000000000000000000000000000000",
+        "n": 1,
+        "rate": "1/2",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/512",
+        "degree": 1,
+        "error_upper": "2004390789974035239064244609721091/1185921000000000000000000000000000000",
+        "n": 4,
+        "rate": "1/2",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/2048",
+        "degree": 1,
+        "error_upper": "2521560920133147816722086038683874681407561821144267146441091/5880785850256519209198206471505921000000000000000000000000000000",
+        "n": 16,
+        "rate": "1/2",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/8192",
+        "degree": 1,
+        "error_upper": "30150606894549904365192822478903523488005647336799754021676662706316555624729118411465434994739609243026438868449758871788327598510904345162080615799853585968681455483629147867254580948547196413548931/280227896712083918435959841433521575347100548798243865420328905346893326638137451980756773649734404225744643495972272035447056904903124787047964915012967417609799124954152961000000000000000000000000000000",
+        "n": 64,
+        "rate": "1/2",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/8",
+        "degree": 1,
+        "error_upper": "180408020862099729188601395027/3000000000000000000000000000000",
+        "n": 1,
+        "rate": "1/2",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/32",
+        "degree": 1,
+        "error_upper": "116552341625412107735471250924049/6561000000000000000000000000000000",
+        "n": 4,
+        "rate": "1/2",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/128",
+        "degree": 1,
+        "error_upper": "9217150469717208690602808127245185017180161449071729/1977985201462558877934081000000000000000000000000000000",
+        "n": 16,
+        "rate": "1/2",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/512",
+        "degree": 1,
+        "error_upper": "1410885024548883152070868008379091414023413325796409156621338671108889713225227912264471111116935322121379325747995111364724604254117219531516135938974485119791729/1196028308964227080980935003027128337863399355588802303521522767899610473386661356519713324109606879890817511102217061088690040708014081000000000000000000000000000000",
+        "n": 64,
+        "rate": "1/2",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/32",
+        "degree": 2,
+        "error_upper": "10599608464297565877414866511/500000000000000000000000000000",
+        "n": 1,
+        "rate": "1",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/128",
+        "degree": 2,
+        "error_upper": "244889898546596999647567065865231/41760500000000000000000000000000000",
+        "n": 4,
+        "rate": "1",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/512",
+        "degree": 2,
+        "error_upper": "501354776451663472780608915053961937521204751/332708304591589920500000000000000000000000000000",
+        "n": 16,
+        "rate": "1",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/2048",
+        "degree": 2,
+        "error_upper": "3264096155590596414622670614205302000415869653397476672815300146108742049106213752531795599061977146663607044641471497194511763431138588304994689196898002941641074921654820006456911/8603791899630582839784336548356125994845913060010859917973702825373675482811707732506609669466776241337961048682615969929685332870728743700600529389363200500000000000000000000000000000",
+        "n": 64,
+        "rate": "1",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/2",
+        "degree": 2,
+        "error_upper": "132120558828557678404476229839/1000000000000000000000000000000",
+        "n": 1,
+        "rate": "1",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/8",
+        "degree": 2,
+        "error_upper": "41720558828557678404476229839/1000000000000000000000000000000",
+        "n": 4,
+        "rate": "1",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/32",
+        "degree": 2,
+        "error_upper": "545291999752894830219633077490658925118340804559/48661191875666868481000000000000000000000000000000",
+        "n": 16,
+        "rate": "1",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/128",
+        "degree": 2,
+        "error_upper": "325863412868794424765673650840743562232056260222256095663259476585151366628523829711305652437326402331383526689965390456759/114118142769882148906274093561553172432120935993802144418930963055608422146178781986236572265625000000000000000000000000000000",
+        "n": 64,
+        "rate": "1",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "27/512",
+        "degree": 1,
+        "error_upper": "248446754572393482721735322483/19000000000000000000000000000000",
+        "n": 1,
+        "rate": "3/4",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "27/2048",
+        "degree": 1,
+        "error_upper": "71349927023452859470373569122576497/20151121000000000000000000000000000000",
+        "n": 4,
+        "rate": "3/4",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "27/8192",
+        "degree": 1,
+        "error_upper": "370748020965094049700453337514062337882196149961119693447421821537/410011676846804218365826669073899947841000000000000000000000000000000",
+        "n": 16,
+        "rate": "3/4",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "27/32768",
+        "degree": 1,
+        "error_upper": "1250498220275293275255381933321114106241613387778772075875707366454213293179583027924271260643768359503524243810197619208431418779043867446191194668604722986572661230196798315589843971098878141809408804599585334036475937/5501845495382690660553248001518202454885821290417818665372431319451905718835125048445899964185384265312162404318766882249599803687165707017643760370696432922234072852828145574315939117853687041000000000000000000000000000000",
+        "n": 64,
+        "rate": "3/4",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "27/32",
+        "degree": 1,
+        "error_upper": "693434130812897050033674143399/7000000000000000000000000000000",
+        "n": 1,
+        "rate": "3/4",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "27/128",
+        "degree": 1,
+        "error_upper": "3976718480238222351062635434557297/130321000000000000000000000000000000",
+        "n": 4,
+        "rate": "3/4",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "27/512",
+        "degree": 1,
+        "error_upper": "1339188748416447439142864373947936335124761861623189133217/164890958756244164895763202881000000000000000000000000000000",
+        "n": 16,
+        "rate": "3/4",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "27/2048",
+        "degree": 1,
+        "error_upper": "58337436041829279632366699791494230153341779901612252687423296842013468265436148379079623105145278298997659831362763466819625101401000732728058886287003613091987176382999865657063777/28260829257358335787335623004032869260942126384214389967229171065559465326336052630783665072791033235684406889385096426168934201293714335217510971276360961000000000000000000000000000000",
+        "n": 64,
+        "rate": "3/4",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/8",
+        "degree": 2,
+        "error_upper": "180408020862099729188601395027/3000000000000000000000000000000",
+        "n": 1,
+        "rate": "2",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/32",
+        "degree": 2,
+        "error_upper": "116552341625412107735471250924049/6561000000000000000000000000000000",
+        "n": 4,
+        "rate": "2",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/128",
+        "degree": 2,
+        "error_upper": "9217150469717208690602808127245185017180161449071729/1977985201462558877934081000000000000000000000000000000",
+        "n": 16,
+        "rate": "2",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "3/512",
+        "degree": 2,
+        "error_upper": "1410885024548883152070868008379091414023413325796409156621338671108889713225227912264471111116935322121379325747995111364724604254117219531516135938974485119791729/1196028308964227080980935003027128337863399355588802303521522767899610473386661356519713324109606879890817511102217061088690040708014081000000000000000000000000000000",
+        "n": 64,
+        "rate": "2",
+        "time": "1/4"
+      },
+      {
+        "bound_per_unit_norm": "6",
+        "degree": 2,
+        "error_upper": "148498537572540481079500378771/750000000000000000000000000000",
+        "n": 1,
+        "rate": "2",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/2",
+        "degree": 2,
+        "error_upper": "1259460514458592989146510226817/20250000000000000000000000000000",
+        "n": 4,
+        "rate": "2",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/8",
+        "degree": 2,
+        "error_upper": "7673991152307639543958896919850770366889137/463255047212960250000000000000000000000000000",
+        "n": 16,
+        "rate": "2",
+        "time": "1"
+      },
+      {
+        "bound_per_unit_norm": "3/32",
+        "degree": 2,
+        "error_upper": "16099995400368431198922480250878098246189420649747550136384905259075593613172658982088569832321942181085668279571488432885297/3826768239546202855218061622239974974872216125243042000343300673243604867252621622987857707655680250000000000000000000000000000",
+        "n": 64,
+        "rate": "2",
+        "time": "1"
+      }
+    ],
+    "midpoint_heat_negative_diagonal": "-1/7",
+    "native_eigenmode_inverse_checks": 32,
+    "positive_resolvent_row_sums": [
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  "input_sha256": {
+    ".github/workflows/generalized-euler-evolution.yml": "7eebf5b36e8dd2f7552086011f8461703fc04d35ecfa599223194fdfc5c1e4ce",
+    ".github/workflows/ym44-time-refinement.yml": "3636907f96b99a57f5b096255aaf3d8575156abcff8bd32f2fa4d6473c3de164",
+    ".github/workflows/ym45-temporal-blocks.yml": "fd6855f24f12d525333f4a122c81687c03c3125d3e61b283f8a7555d0919c084",
+    ".github/workflows/ym46-infinite-volume.yml": "4a8efd13eaaea5b01598a4de70d1db9878aa9403413470e8b166a670383b35ff",
+    ".github/workflows/ym47-joint-history.yml": "f42637de45a643708e0568bb0836bc50a5e1279db203dbc958ba7cc6d7a69bf7",
+    ".github/workflows/ym48-reflected-time.yml": "3faa06c3fe600bc7242f9efeb4984faf16cab080135ecec60e8d4ba75ea89efb",
+    ".github/workflows/ym49-time-zero.yml": "19f7c3ccc965defcf2a0fb4403f3c52e7c553de1eab2c39f7b0b94c99f1615fe",
+    ".github/workflows/ym50-native-reference.yml": "38b5c08f179525418885aff304e16a49dd3190606c4b9838e00325fb556485e1",
+    ".github/workflows/ym51-heat-selection.yml": "48929d2462821742ce775f158b361b3d91677a54ffd2249b5cee8c082d866692",
+    ".github/workflows/ym52-energy-observer.yml": "ddc4b65128795331ffbdd79533f9da3d80b73a0f57c4a1d509c7f0f6ef57e1e6",
+    ".github/workflows/ym53-anisotropic-interaction.yml": "27fbec9858a24d4086334e840676754572694e41d16f679c1ff36f0a69c3246a",
+    ".github/workflows/ym54-response-protocol.yml": "0d92c9c51e99aa089ee5b255799bc726bce66ef60b1b57c1ded66bedefeb5641",
+    ".github/workflows/ym55-anisotropic-joint-limit.yml": "b50744d6155f9f4ac6c7e150ddb6174f0e14954145401200f0187f8f3be7f57f",
+    "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+    "papers/emk-ugd-algebra/certificates/emkt2_time_ordered_transport.py": "2dc28deb6bfa898568c9c2cb949ae76932d0995106aa28bf9f01a8fae29fd993",
+    "papers/generalized-euler-evolution/README.md": "654985a9a4a2a225ef1790a1e5b0aebb6feb8a40293c314ddb5bbb4fb905c8ba",
+    "papers/generalized-euler-evolution/SOURCE_AUDIT.md": "b2d44cb3732f505794a6e2091611030c93a4a1ad8058be5d4c96c6d1244abccb",
+    "papers/generalized-euler-evolution/THEOREM.md": "f3d6690e8ecdc49aa03f742a2beb7c8197228a5670c076f46287bae8321ca7d1",
+    "papers/generalized-euler-evolution/YM_DOCK.md": "b96d24ada6a291c15c3ea76a6fe49f60821ff71d3533e4fd749c2575df54532d",
+    "papers/generalized-euler-evolution/certificates/GE1_SOURCE_PINS.json": "39e72156c084badb35f8b52d16f2b6e536bf0cedaa55824a097fbc4b2450ed51",
+    "papers/generalized-euler-evolution/certificates/ge1_evolution.py": "f876b00c036f9144057fb050874c1e1be82af6e8b7b01ca169323107b7d39e8e",
+    "papers/generalized-euler-evolution/tests/test_ge1_evolution.py": "d607ca123fe9645db9ea9cbca3d9bf089c4235c47a55e00ac62bb27a1860934c",
+    "papers/native-compact-gauge/CERTIFICATE.json": "cf212fec0b9e09214f5081e73d6d836a5a220eed7809d1a82af0b22f0e675d12",
+    "papers/native-compact-gauge/EXPECTED.sha256": "aafbbbe313d800f39647d5f9389894e94a6840a282c9fc991521fbffe1a809f2",
+    "papers/native-compact-gauge/SOURCE_MAP.md": "497b9b9bfe1329dd1c6b57cd66e5230b6115a74070ef1bf9263e5b70307235ad",
+    "papers/native-compact-gauge/SOURCE_PINS.json": "a7310818904fffa2f10716de69eb08d771176a75e2029582969c92e07f6364f1",
+    "papers/native-compact-gauge/THEOREM.md": "45c0260c02ef0e0c3074d04bed5cf71f96a5002b0b572fd3370cdc04d3633b93",
+    "papers/native-thermodynamic-curvature/THEOREM.md": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29",
+    "papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md": "6998827129b6ec9881a4568b0cbf0d0a1d9fbd75a3553135b080238f38ed5ebb",
+    "papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md": "85a7c9e7a1022bea45878ac1530fb3007f27d395f96b098466dd30d7d8a2bad6",
+    "papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md": "f8cce21aa4d84774eb57b000fd068366e1a3007998e58c332a5596e04d9b7450",
+    "papers/yang-mills-certified-benchmark/YM46_INFINITE_VOLUME_STATE.md": "e24ee2e835d1ec3aa4f2bfd99513938a048244a1af06713fbaa3ed1179d83edb",
+    "papers/yang-mills-certified-benchmark/YM47_JOINT_LOCAL_HISTORY_LIMIT.md": "28ad69801382b74c555c077d2a734db67403a40197a1112cd510d2c024176416",
+    "papers/yang-mills-certified-benchmark/YM48_REFLECTED_TIME_GENERATOR.md": "206dcf72ef34d0067bb33ce1b7988d5ef590ad94ab1fd16431257f154d2d576c",
+    "papers/yang-mills-certified-benchmark/YM49_TIME_ZERO_OBSERVABLES.md": "b303b453be6e3b5d9d08ba75a15927e004be7f705d6b8f26966dc331742f44c2",
+    "papers/yang-mills-certified-benchmark/YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md": "5298c9a686e64b5fafbade55f0eaa2a8271de534d679f16529d498807b14e898",
+    "papers/yang-mills-certified-benchmark/YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md": "5b146b22e7e08bf724f3600a27441c831ce59c3db1e0e3ac994c0183ae4c9e2f",
+    "papers/yang-mills-certified-benchmark/YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md": "31f380cac4895f5a81da980f0e3c0d72a362e645af22fca5767d6cda8c1925ec",
+    "papers/yang-mills-certified-benchmark/YM53_ANISOTROPIC_INTERACTING_GAP.md": "e6cf190c671c75f2e0f10a8619b562e09d575a289cc6de155e5958eaf605a712",
+    "papers/yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md": "d55e967839c744259dc483decb668ae49f03d85dbf266185f4083f1e8c8fc601",
+    "papers/yang-mills-certified-benchmark/YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md": "103006933d7bd1e5fc94552256bdd1e64d3cd38c143ff3cdc791468efa922bca",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM27.sha256": "233ab78a832f7c450f319cae4cca66f96aaae3037cd67ecbf58429229d7b7f15",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM43.sha256": "de271d0d5786e05657ac0ef376eef09ee9a026cf11eb7dcd9c48348a88281f3e",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM44.sha256": "1ecffc8424337fdb01044169cee1dc67c86bbf24023c43dd188fc8a6a9b845d0",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM45.sha256": "ee1fe06a4a771643527fe4a6ac8cbe318c3fe3290230911c3915aa9bbf750842",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM46.sha256": "fa9427b3dfdbd7eded4ec15b74145f1d59e6d4cd4b4acce4d4f2ce92be5a9bf8",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM47.sha256": "f8c39961619df0158a29052c50ea22bc9738d685b583fe3717f55b84fd77ddd7",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM48.sha256": "826927ea900415cadeb505f1c7044756f09d31c3c4ffff5559cff043e9fc4de4",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM49.sha256": "90461e532cf6c436e5478f1eb12afebc545465a5edf55266532f59b90e8b6dfd",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM50.sha256": "0f2695eb80ab850aba69d6c7250e72dd96415f0cc402c349da90be8e8320f08b",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM51.sha256": "8ba70e780a842ef945f41b50a17f8024dcd20696553a58ee42abfa557f91a5bf",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM52.sha256": "685d0fd8f882011fe6f34b4709aecb752c3375dcf8fb22f75cdc3dd180e4674c",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM53.sha256": "c65efb1cd1456b61fbd291aab88217ce06082b7d94facfe2d3dee330330b2620",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM54.sha256": "4d56295ebb92f9494b5f18a5bd380eaf1a6d593b919c36e432e7da6603c6a9d3",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YM55.sha256": "49b991355ae2eae2823cba560c6aebd1c4e1a6703d62bd97eda119a15f2dc20a",
+    "papers/yang-mills-certified-benchmark/certificates/EXPECTED_YMF1.sha256": "ed6243a88d2daf8b80afa0ea56d84f16462b06a0fb3d1ef8f9567c565ff59252",
+    "papers/yang-mills-certified-benchmark/certificates/YM27_RESULT.json": "19e80ebca740bf48a550d69390368422a9379b81816fd2faea70a4af159e4699",
+    "papers/yang-mills-certified-benchmark/certificates/YM43_RESULT.json": "a68fbb86a32ccc92e1196fa879df8cd0c33ef916f526942addbe3cdd28e1f798",
+    "papers/yang-mills-certified-benchmark/certificates/YM44_RESULT.json": "733e2d6d9aa679e83f525c5be47043d4f98b7c321d0ff2a7238538f631af49c2",
+    "papers/yang-mills-certified-benchmark/certificates/YM44_SOURCE_PINS.json": "5c587ea51c63b336ef091d0dba4c079bd989efd995e5a3e1c7cf09cde82e558c",
+    "papers/yang-mills-certified-benchmark/certificates/YM45_RESULT.json": "437d3b85ea16703ab3dd7c23cac4cab7ed8c5616c3502c5b971fa9bab68ad502",
+    "papers/yang-mills-certified-benchmark/certificates/YM45_SOURCE_PINS.json": "0798a40983adb96f68f6e976b62b30ff377b113877b1a99c97bc01f3129234ad",
+    "papers/yang-mills-certified-benchmark/certificates/YM46_RESULT.json": "ea6750e49580001d089f73ceae1ed297380276c27088d93ee8377dc9f3702cf5",
+    "papers/yang-mills-certified-benchmark/certificates/YM46_SOURCE_PINS.json": "5a84b0ab3ce823a6f42cf4b43072a26f0b04a52b38ba4633fc69bbefcd6c44a0",
+    "papers/yang-mills-certified-benchmark/certificates/YM47_RESULT.json": "9e8578535dbf7094ad91908e697e86ee02a242213e32e23d685393c20487f712",
+    "papers/yang-mills-certified-benchmark/certificates/YM47_SOURCE_PINS.json": "700023a5a1b2238ea0474e1f4301d7d34bfcb098d6ba018e3587453f650617a1",
+    "papers/yang-mills-certified-benchmark/certificates/YM48_RESULT.json": "cc4f95e4f145b346be43aa06f3e2737414eeda4f40aaab80b5355abb484936bd",
+    "papers/yang-mills-certified-benchmark/certificates/YM48_SOURCE_PINS.json": "ecc02dfe38f7aa545bfabd4edfc65179d9ecda543fd4369fe24d82e767d4eea9",
+    "papers/yang-mills-certified-benchmark/certificates/YM49_RESULT.json": "1d93029e0431af21ec67d3527652b1bd54a04537ec4af2ac33ad96a5042365de",
+    "papers/yang-mills-certified-benchmark/certificates/YM49_SOURCE_PINS.json": "838be0e0ec7cc9d52ac830b955a104fbee239e17eebea9f205fc501e26ac5af9",
+    "papers/yang-mills-certified-benchmark/certificates/YM50_ORIGIN_LEDGER.json": "697b5134fc804fb5342d757e0c430c709ce7e93ace02bee8a0f986448016e21f",
+    "papers/yang-mills-certified-benchmark/certificates/YM50_RESULT.json": "f878c930c1490d5236d7d17d8b67c52988ffb63afafd3d97ab98d6a84b527eaf",
+    "papers/yang-mills-certified-benchmark/certificates/YM50_SOURCE_PINS.json": "e646b18eab0b04ee1d7a3ceef2cb229f1e69a9f4b6d4c82a10825fe39095b373",
+    "papers/yang-mills-certified-benchmark/certificates/YM51_DEPENDENCY_LEDGER.json": "404fc30a31d8b732207655e305b907797a3c25815273d4c135904ce855f16db5",
+    "papers/yang-mills-certified-benchmark/certificates/YM51_RESULT.json": "960bc233d26fd41f5b23dd801a57368db641d8243df4cc8d54a5f45fa8d2482f",
+    "papers/yang-mills-certified-benchmark/certificates/YM51_SOURCE_PINS.json": "38d89e1ed401fb5d7c1ec243ca560e8310f168a6186ca3831aa29faa15d2d961",
+    "papers/yang-mills-certified-benchmark/certificates/YM52_RESULT.json": "ee9e3e17b55ac4c05821c8a21495808161ec9c04456333d894950230de589325",
+    "papers/yang-mills-certified-benchmark/certificates/YM52_SOURCE_PINS.json": "f359b0d6f6a3cfa36fec3d5f1ffd7074dd515f2c086f1a06f89f9692569e5feb",
+    "papers/yang-mills-certified-benchmark/certificates/YM53_RESULT.json": "23ad5b289660b41ffc3ec82b818ca78c78bfbff975a42101023467aab14c60c0",
+    "papers/yang-mills-certified-benchmark/certificates/YM53_SOURCE_PINS.json": "34f5d543d8db0799f858d21e7e7bddc585ff2cfc74f3a63388c9e910a80fdda6",
+    "papers/yang-mills-certified-benchmark/certificates/YM54_RESULT.json": "f4f704ccc77f9505c5adb8d9bf3b0fc9ee9aecbb341b0ff749d377a3c9c9a1c0",
+    "papers/yang-mills-certified-benchmark/certificates/YM54_SOURCE_PINS.json": "49d3e2d080d7faa04906b97a24b2bb509cca0fa40cf48379c259f3cab93a3f05",
+    "papers/yang-mills-certified-benchmark/certificates/YM55_RESULT.json": "7b6c887a8295ebdd436750630af6ef8d43110d57e1c60cdd758599dd1a183977",
+    "papers/yang-mills-certified-benchmark/certificates/YM55_SOURCE_PINS.json": "a5604cbbd99067fa702ce83077b50ac0fccaf914a825407ef8ace5eb88d3c9d1",
+    "papers/yang-mills-certified-benchmark/certificates/YMF1_RESULT.json": "6d425637481f220c50207e342581fed671cd5160a2aeb1d312340981885d0d07",
+    "papers/yang-mills-certified-benchmark/certificates/ym12_square_sourced.py": "c21dfff94dd511bb622083301d0e365e56bd59d2df45957d143185e3682da179",
+    "papers/yang-mills-certified-benchmark/certificates/ym15_chain_closed_form.py": "c802f3ddcee83f5ab0f4ab6087a68bc9d2f147091dd147943b374d52fcdb1e13",
+    "papers/yang-mills-certified-benchmark/certificates/ym16_chain_dock.py": "425489ae9f020f71fa8790fb5071878748c82e52c5f38e94ea7171939f1e9e43",
+    "papers/yang-mills-certified-benchmark/certificates/ym19_dobrushin_dock.py": "5dcea9a6b4d3eff098a460f7ea949740a2e8eb362e46377c0edb568dc982edab",
+    "papers/yang-mills-certified-benchmark/certificates/ym1_certified_gap.py": "1c1e1631f6d1793735b3f2403427bca0231bb21c3622e70da4e9ba175f4c9bda",
+    "papers/yang-mills-certified-benchmark/certificates/ym22_cutoff_tiling_rate.py": "49da5fd63398aa3a153822b014963475ec416cd8104dcab5c6809f68bd712712",
+    "papers/yang-mills-certified-benchmark/certificates/ym27_rh_framework_dock.py": "e0360e90b135cf12d65c0d879d5ebeceb50cb77788f1485672d8547cea725201",
+    "papers/yang-mills-certified-benchmark/certificates/ym28_e4d_on_chain.py": "85a5e235c5ba428726fe83bc3916198978bd5ca39231c40addb52a6898088dcf",
+    "papers/yang-mills-certified-benchmark/certificates/ym2_theta_interacting_gap.py": "7867a545fa0a06515b93ac57e96cbbf984410d97633705af38bc1924824aaa9a",
+    "papers/yang-mills-certified-benchmark/certificates/ym30_recoupling_engine.py": "22762ca713b4c4c923c27ed43ba88880fd4efef9bc363c52eaa5f894cbbc4e0d",
+    "papers/yang-mills-certified-benchmark/certificates/ym31_uniform_floor.py": "4781c1cd1bf619328068a4a8a67d91cfc1d70d7e0e1191ac2abf495acb723d08",
+    "papers/yang-mills-certified-benchmark/certificates/ym32_dressed_excitation.py": "314673d124045be789f8b4313767d88c73dcd576790797830534ea7fc21a10cc",
+    "papers/yang-mills-certified-benchmark/certificates/ym33_t_row_engine.py": "b4d65d01c8ca7dd3c02f4372597d13f3a528286993c0b6a39adc61f698d65a89",
+    "papers/yang-mills-certified-benchmark/certificates/ym35_commutator_remainder.py": "a89402b375b670a2dcf539fa0635a7a358ff5cc5beada77d59878aeb6f448ac5",
+    "papers/yang-mills-certified-benchmark/certificates/ym37_space_transfer.py": "b860dcc2510f533fcff04b1fb194974884e381b44417dcbbd109c47c780218b7",
+    "papers/yang-mills-certified-benchmark/certificates/ym3_crossing_direction.py": "9dae32ec90130bd192ee9fdca184b996311b0eb4350c8715755bb747c465922b",
+    "papers/yang-mills-certified-benchmark/certificates/ym40_hk_ladder.py": "7bdefc30a31c89e76701a388afd1ec03b7d404acbdae86a6c3a98aae48c7eb20",
+    "papers/yang-mills-certified-benchmark/certificates/ym43_native_time_transfer.py": "b075f65e639d3ee90698178d39bb1658559a5b195babf107804c09834411c4c8",
+    "papers/yang-mills-certified-benchmark/certificates/ym44_time_refinement.py": "96d93d76b6cca3d042f9daae98b4c54abbe23ec854bb05cb1775b9c9e1673069",
+    "papers/yang-mills-certified-benchmark/certificates/ym45_temporal_blocks.py": "8aca5d66d1ca56929fde95c7c4ae418eb3c448d4b1dca6a12ac35f2ad62b5b25",
+    "papers/yang-mills-certified-benchmark/certificates/ym46_infinite_volume.py": "c83dcb525b35a8a862a10af2a1948579ba660c981e91f1d02ba28c7fd6bceb4d",
+    "papers/yang-mills-certified-benchmark/certificates/ym47_joint_history.py": "1e9e4698d2ee5d0d3b2a96a1f198b4fef8588c8dd0f20b8e0c82409a70fb5d89",
+    "papers/yang-mills-certified-benchmark/certificates/ym48_reflected_time.py": "e89b320e80413b6959558c440b9d1f45d45f7219d120fa0cc5a8625aeda71927",
+    "papers/yang-mills-certified-benchmark/certificates/ym49_time_zero.py": "499cef8132bdf29356fe9163c772dc519cc28cda77c2f6fdc1437933babb8834",
+    "papers/yang-mills-certified-benchmark/certificates/ym4_symmetry_protected.py": "a9e599c2fc4d5e50c88ee93aeb67a105f0e9bc98954655b5e9c82f0c19f7c13a",
+    "papers/yang-mills-certified-benchmark/certificates/ym50_native_reference.py": "8f29d2e304977c7b9824285f81756b9be1b8f1497817ce6b681c015969cf7f49",
+    "papers/yang-mills-certified-benchmark/certificates/ym51_heat_selection.py": "8e993c39763e826cf1847703e023697bf0f99d6036e718f29c4677142719a846",
+    "papers/yang-mills-certified-benchmark/certificates/ym52_energy_observer.py": "93f0ca18f5905ba324436f6482755df845f79d4c25c278db7fe9bb8c6ada4fb0",
+    "papers/yang-mills-certified-benchmark/certificates/ym53_anisotropic_interaction.py": "27c6e88cfc0d5428ec5107be42cae4478bc79f60cfd179104a8317177addb284",
+    "papers/yang-mills-certified-benchmark/certificates/ym54_response_protocol.py": "4882adc8f63f4cb5e7b21f28c73a3e0a3d75d85c72b8f2ba71c8a0c53d30d1b6",
+    "papers/yang-mills-certified-benchmark/certificates/ym55_anisotropic_joint_limit.py": "bb5d40ed839c57187cd0851e98007204c572fcf7595bfcc08411d2f4f7cc02f5",
+    "papers/yang-mills-certified-benchmark/certificates/ym5_two_sided_gap.py": "ac6389b6f9e396c44177d91c76bdc01188c5b2a1b49a6a38efb765fa9fcdbe80",
+    "papers/yang-mills-certified-benchmark/certificates/ym6_seam_integer_dock.py": "4e30b1a3d0bfe1c61c5b65237a291ff500a538589f820e1317d88cd716b8d037",
+    "papers/yang-mills-certified-benchmark/certificates/ym9_uniform_heat_kernel.py": "63833e14f2485571e0b0b1cad61b383dbad7b8af15e80711047f84c680b39fd9",
+    "papers/yang-mills-certified-benchmark/certificates/ymf1_chain_fabric.py": "205dcefde2b22f5bef17c2e920da8e7e37bf6e81abdf03fe6a278afac951d055",
+    "papers/yang-mills-certified-benchmark/tests/test_ym44_time_refinement.py": "440919f943bc179eed8569096092da168c80663afd2a3a46f4f635eb3c4c0b72",
+    "papers/yang-mills-certified-benchmark/tests/test_ym45_temporal_blocks.py": "725e85cfd8e29629c83ec04194d72150c3e5d9bb3308a8e6306a8221cae78360",
+    "papers/yang-mills-certified-benchmark/tests/test_ym46_infinite_volume.py": "4d6a7759c7e8f70e43cea6a11aea2f4fb2e0b269dc0848d01bfe9ccba02d6e62",
+    "papers/yang-mills-certified-benchmark/tests/test_ym47_joint_history.py": "aa0c57b65629fde33f4c2d67016dbf935ab1f6a5bc0d25724795c8db974908b5",
+    "papers/yang-mills-certified-benchmark/tests/test_ym48_reflected_time.py": "59070300c2d428873925557ae6b68e7b28d96c5ee34e742f3c40ee53aaf9750d",
+    "papers/yang-mills-certified-benchmark/tests/test_ym49_time_zero.py": "81b89842d27da76c5debb8193c3c6bb127930dd3373da23b222b5030de4c732b",
+    "papers/yang-mills-certified-benchmark/tests/test_ym50_native_reference.py": "d77a23c62c63808b5ac9e9c553a604f886697d0def9eca33f1b07b9566a571db",
+    "papers/yang-mills-certified-benchmark/tests/test_ym51_heat_selection.py": "6cc9148983fc1b044ea6af796ece28b84422ce7e68cc01924a05b9453f43ae61",
+    "papers/yang-mills-certified-benchmark/tests/test_ym52_energy_observer.py": "e5979c020f353b851b41cba4c38fc81e54b1fcbdb867f2b2ca6f99a04a464120",
+    "papers/yang-mills-certified-benchmark/tests/test_ym53_anisotropic_interaction.py": "8fecb3abb1a2b0c4e019d0ff34c52c2a040005378dd96bfd36fd2b2785143608",
+    "papers/yang-mills-certified-benchmark/tests/test_ym54_response_protocol.py": "d1d25593a4539c35b763f5300b295ff1a6fe722914611f503cb8d366a62c090d",
+    "papers/yang-mills-certified-benchmark/tests/test_ym55_anisotropic_joint_limit.py": "9bac0d7ec6ec6b5c8311006786536b2b5f1adee0ce44b0cc81fc873ff6a400d6"
+  },
+  "near_resonance": {
+    "infinite_gap_statement": "zero by the written Pell sequence proof; not finite sampling",
+    "near_resonant_modes": [
+      {
+        "gap_lower": "1/9",
+        "gap_upper": "1/4",
+        "m": 1,
+        "p": 1,
+        "pell_residue": -1,
+        "q": 1
+      },
+      {
+        "gap_lower": "1/49",
+        "gap_upper": "1/25",
+        "m": 2,
+        "p": 3,
+        "pell_residue": 1,
+        "q": 2
+      },
+      {
+        "gap_lower": "1/289",
+        "gap_upper": "1/144",
+        "m": 3,
+        "p": 7,
+        "pell_residue": -1,
+        "q": 5
+      },
+      {
+        "gap_lower": "1/1681",
+        "gap_upper": "1/841",
+        "m": 4,
+        "p": 17,
+        "pell_residue": 1,
+        "q": 12
+      },
+      {
+        "gap_lower": "1/9801",
+        "gap_upper": "1/4900",
+        "m": 5,
+        "p": 41,
+        "pell_residue": -1,
+        "q": 29
+      },
+      {
+        "gap_lower": "1/57121",
+        "gap_upper": "1/28561",
+        "m": 6,
+        "p": 99,
+        "pell_residue": 1,
+        "q": 70
+      },
+      {
+        "gap_lower": "1/332929",
+        "gap_upper": "1/166464",
+        "m": 7,
+        "p": 239,
+        "pell_residue": -1,
+        "q": 169
+      },
+      {
+        "gap_lower": "1/1940449",
+        "gap_upper": "1/970225",
+        "m": 8,
+        "p": 577,
+        "pell_residue": 1,
+        "q": 408
+      },
+      {
+        "gap_lower": "1/11309769",
+        "gap_upper": "1/5654884",
+        "m": 9,
+        "p": 1393,
+        "pell_residue": -1,
+        "q": 985
+      },
+      {
+        "gap_lower": "1/65918161",
+        "gap_upper": "1/32959081",
+        "m": 10,
+        "p": 3363,
+        "pell_residue": 1,
+        "q": 2378
+      },
+      {
+        "gap_lower": "1/384199201",
+        "gap_upper": "1/192099600",
+        "m": 11,
+        "p": 8119,
+        "pell_residue": -1,
+        "q": 5741
+      },
+      {
+        "gap_lower": "1/2239277041",
+        "gap_upper": "1/1119638521",
+        "m": 12,
+        "p": 19601,
+        "pell_residue": 1,
+        "q": 13860
+      },
+      {
+        "gap_lower": "1/13051463049",
+        "gap_upper": "1/6525731524",
+        "m": 13,
+        "p": 47321,
+        "pell_residue": -1,
+        "q": 33461
+      },
+      {
+        "gap_lower": "1/76069501249",
+        "gap_upper": "1/38034750625",
+        "m": 14,
+        "p": 114243,
+        "pell_residue": 1,
+        "q": 80782
+      },
+      {
+        "gap_lower": "1/443365544449",
+        "gap_upper": "1/221682772224",
+        "m": 15,
+        "p": 275807,
+        "pell_residue": -1,
+        "q": 195025
+      },
+      {
+        "gap_lower": "1/2584123765441",
+        "gap_upper": "1/1292061882721",
+        "m": 16,
+        "p": 665857,
+        "pell_residue": 1,
+        "q": 470832
+      },
+      {
+        "gap_lower": "1/15061377048201",
+        "gap_upper": "1/7530688524100",
+        "m": 17,
+        "p": 1607521,
+        "pell_residue": -1,
+        "q": 1136689
+      },
+      {
+        "gap_lower": "1/87784138523761",
+        "gap_upper": "1/43892069261881",
+        "m": 18,
+        "p": 3880899,
+        "pell_residue": 1,
+        "q": 2744210
+      },
+      {
+        "gap_lower": "1/511643454094369",
+        "gap_upper": "1/255821727047184",
+        "m": 19,
+        "p": 9369319,
+        "pell_residue": -1,
+        "q": 6625109
+      },
+      {
+        "gap_lower": "1/2982076586042449",
+        "gap_upper": "1/1491038293021225",
+        "m": 20,
+        "p": 22619537,
+        "pell_residue": 1,
+        "q": 15994428
+      },
+      {
+        "gap_lower": "1/17380816062160329",
+        "gap_upper": "1/8690408031080164",
+        "m": 21,
+        "p": 54608393,
+        "pell_residue": -1,
+        "q": 38613965
+      },
+      {
+        "gap_lower": "1/101302819786919521",
+        "gap_upper": "1/50651409893459761",
+        "m": 22,
+        "p": 131836323,
+        "pell_residue": 1,
+        "q": 93222358
+      },
+      {
+        "gap_lower": "1/590436102659356801",
+        "gap_upper": "1/295218051329678400",
+        "m": 23,
+        "p": 318281039,
+        "pell_residue": -1,
+        "q": 225058681
+      },
+      {
+        "gap_lower": "1/3441313796169221281",
+        "gap_upper": "1/1720656898084610641",
+        "m": 24,
+        "p": 768398401,
+        "pell_residue": 1,
+        "q": 543339720
+      }
+    ],
+    "nonconstant_rational_stationary_mode": [
+      2,
+      -1
+    ]
+  },
+  "phase_stability": {
+    "exact_isometry_and_reversal_checks": 32,
+    "independent_scalar_enclosures": [
+      {
+        "bound": "9/128",
+        "error_square_upper": "202351616958558679224399093789024250890663053634756007623264971754041137707191327824566390415809690757620669/48032816510395166889181312457815846057308878617122103636740297890629664270655501089684586496000000000000000000",
+        "frequency": "-3",
+        "n": 2,
+        "time": "-1/2"
+      },
+      {
+        "bound": "9/2048",
+        "error_square_upper": "223334321493651795293917210522377722436946291054874668666906801731325057477672720760093217305610612596060010305141206369141101/11686780981142484507860184675813043532529565439216291938490685049484461275273148381256745927088451485117588701184000000000000000000",
+        "frequency": "-3",
+        "n": 8,
+        "time": "-1/2"
+      },
+      {
+        "bound": "9/32768",
+        "error_square_upper": "228786952513970678834149154865231095399264657552298384784493696088492744817213722022901000780894348940607294154010061999409646800288383102031434290699544629247045661421740136934975968236985989324786715378261463299953795597000077113/3034815686492206235904240309702602719743626290400271138547435974032921523756475728318667431109937994840539943517051377427882704251544783648739421629966720525376826205089360176293431459453108927863116540741245724725870592000000000000000000",
+        "frequency": "-3",
+        "n": 32,
+        "time": "-1/2"
+      },
+      {
+        "bound": "9/128",
+        "error_square_upper": "202351616958558679224399093789024250890663053634756007623264971754041137707191327824566390415809690757620669/48032816510395166889181312457815846057308878617122103636740297890629664270655501089684586496000000000000000000",
+        "frequency": "-3",
+        "n": 2,
+        "time": "1/2"
+      },
+      {
+        "bound": "9/2048",
+        "error_square_upper": "223334321493651795293917210522377722436946291054874668666906801731325057477672720760093217305610612596060010305141206369141101/11686780981142484507860184675813043532529565439216291938490685049484461275273148381256745927088451485117588701184000000000000000000",
+        "frequency": "-3",
+        "n": 8,
+        "time": "1/2"
+      },
+      {
+        "bound": "9/32768",
+        "error_square_upper": "228786952513970678834149154865231095399264657552298384784493696088492744817213722022901000780894348940607294154010061999409646800288383102031434290699544629247045661421740136934975968236985989324786715378261463299953795597000077113/3034815686492206235904240309702602719743626290400271138547435974032921523756475728318667431109937994840539943517051377427882704251544783648739421629966720525376826205089360176293431459453108927863116540741245724725870592000000000000000000",
+        "frequency": "-3",
+        "n": 32,
+        "time": "1/2"
+      },
+      {
+        "bound": "1/3072",
+        "error_square_upper": "317746993400219145674713832965719751250703114794368480503556381128140358667919913895293114394709999546598851750496880321630106037996840213553355465501/3012703173618815376022070913742329326801952709986299403982131124090030483802799837102801146151042051649261841700956792021462690284116639744000000000000000000",
+        "frequency": "-1/2",
+        "n": 2,
+        "time": "-1/2"
+      },
+      {
+        "bound": "1/49152",
+        "error_square_upper": "5184541525021766465822658040830707141202185496652824658743643818809322503662719860057170647115476183979908954683925826696946298515682606356655815366639646896687013682301/12529102643015092248345470291031994220433686301181978737225579758894879335452182400361610015841841462030272319833371626058205441762393446879723812359235587538944000000000000000000",
+        "frequency": "-1/2",
+        "n": 8,
+        "time": "-1/2"
+      },
+      {
+        "bound": "1/786432",
+        "error_square_upper": "989303690138352878457739333344238881539259489355755224221297470425148099944453719479402147405913957233801921942160428946678925851112214829441450364788347391374155962541217600398602744291866327597361203101940263102280264958623568353573976607298019293908986580880577420002976346881202848332867869/611871090794690881001271170045571343190055548202694794235112170763371469615565653459078763618442748440169228902409268248205735413145774103625212796597125504875156421424888587627418695282916092621906548367000194548735019611584067545856688900607473126199248682375742269491150107921702977536000000000000000000",
+        "frequency": "-1/2",
+        "n": 32,
+        "time": "-1/2"
+      },
+      {
+        "bound": "1/3072",
+        "error_square_upper": "317746993400219145674713832965719751250703114794368480503556381128140358667919913895293114394709999546598851750496880321630106037996840213553355465501/3012703173618815376022070913742329326801952709986299403982131124090030483802799837102801146151042051649261841700956792021462690284116639744000000000000000000",
+        "frequency": "-1/2",
+        "n": 2,
+        "time": "1/2"
+      },
+      {
+        "bound": "1/49152",
+        "error_square_upper": "5184541525021766465822658040830707141202185496652824658743643818809322503662719860057170647115476183979908954683925826696946298515682606356655815366639646896687013682301/12529102643015092248345470291031994220433686301181978737225579758894879335452182400361610015841841462030272319833371626058205441762393446879723812359235587538944000000000000000000",
+        "frequency": "-1/2",
+        "n": 8,
+        "time": "1/2"
+      },
+      {
+        "bound": "1/786432",
+        "error_square_upper": "989303690138352878457739333344238881539259489355755224221297470425148099944453719479402147405913957233801921942160428946678925851112214829441450364788347391374155962541217600398602744291866327597361203101940263102280264958623568353573976607298019293908986580880577420002976346881202848332867869/611871090794690881001271170045571343190055548202694794235112170763371469615565653459078763618442748440169228902409268248205735413145774103625212796597125504875156421424888587627418695282916092621906548367000194548735019611584067545856688900607473126199248682375742269491150107921702977536000000000000000000",
+        "frequency": "-1/2",
+        "n": 32,
+        "time": "1/2"
+      },
+      {
+        "bound": "0",
+        "error_square_upper": "0",
+        "frequency": "0",
+        "n": 2,
+        "time": "-1/2"
+      },
+      {
+        "bound": "0",
+        "error_square_upper": "0",
+        "frequency": "0",
+        "n": 8,
+        "time": "-1/2"
+      },
+      {
+        "bound": "0",
+        "error_square_upper": "0",
+        "frequency": "0",
+        "n": 32,
+        "time": "-1/2"
+      },
+      {
+        "bound": "0",
+        "error_square_upper": "0",
+        "frequency": "0",
+        "n": 2,
+        "time": "1/2"
+      },
+      {
+        "bound": "0",
+        "error_square_upper": "0",
+        "frequency": "0",
+        "n": 8,
+        "time": "1/2"
+      },
+      {
+        "bound": "0",
+        "error_square_upper": "0",
+        "frequency": "0",
+        "n": 32,
+        "time": "1/2"
+      },
+      {
+        "bound": "1/48",
+        "error_square_upper": "151774796084646147512774980663994408574420544397171062230143335913330943480455595046487340230670721/376231850673650298975152491629840870038607356210866576287986197540650832857823759564800000000000000000",
+        "frequency": "2",
+        "n": 2,
+        "time": "-1/2"
+      },
+      {
+        "bound": "1/768",
+        "error_square_upper": "12082744047948698172087082328319012600444239151603848173025897074366698215288779616956618293300725858717063760347521/7160124032334059956168368676108963964339504582381857448121933594976211928918485539028455611826432691404800000000000000000",
+        "frequency": "2",
+        "n": 8,
+        "time": "-1/2"
+      },
+      {
+        "bound": "1/12288",
+        "error_square_upper": "342277960188849936847125495262766216532417540721932621753226325952305443096530346108343869930406186835681692207985059237945916820767289689312946031509211955227582008989178326102658030551237197451529852849249/51697383427844697782748494537907480067310783697538875905643538963566239713656197699481789138139237109012579674930496431652280634222820889347240052421995816521920514423332306595779829476473995211571200000000000000000",
+        "frequency": "2",
+        "n": 32,
+        "time": "-1/2"
+      },
+      {
+        "bound": "1/48",
+        "error_square_upper": "151774796084646147512774980663994408574420544397171062230143335913330943480455595046487340230670721/376231850673650298975152491629840870038607356210866576287986197540650832857823759564800000000000000000",
+        "frequency": "2",
+        "n": 2,
+        "time": "1/2"
+      },
+      {
+        "bound": "1/768",
+        "error_square_upper": "12082744047948698172087082328319012600444239151603848173025897074366698215288779616956618293300725858717063760347521/7160124032334059956168368676108963964339504582381857448121933594976211928918485539028455611826432691404800000000000000000",
+        "frequency": "2",
+        "n": 8,
+        "time": "1/2"
+      },
+      {
+        "bound": "1/12288",
+        "error_square_upper": "342277960188849936847125495262766216532417540721932621753226325952305443096530346108343869930406186835681692207985059237945916820767289689312946031509211955227582008989178326102658030551237197451529852849249/51697383427844697782748494537907480067310783697538875905643538963566239713656197699481789138139237109012579674930496431652280634222820889347240052421995816521920514423332306595779829476473995211571200000000000000000",
+        "frequency": "2",
+        "n": 32,
+        "time": "1/2"
+      }
+    ]
+  },
+  "refusals": {
+    "boolean_count": "rejected",
+    "float_frequency": "rejected",
+    "heat_as_phase": "rejected",
+    "indefinite_pairing": "rejected",
+    "negative_generator": "rejected",
+    "negative_graph_bound": "rejected",
+    "negative_heat_time": "rejected",
+    "negative_resolvent_step": "rejected",
+    "non_square_matrix": "rejected",
+    "noninteger_mode": "rejected",
+    "null_pairing": "rejected",
+    "phase_as_heat": "rejected",
+    "zero_count": "rejected",
+    "zero_pell_index": "rejected"
+  },
+  "runtime_policy": "Python 3.12 only",
+  "verdict": "PASS"
+}

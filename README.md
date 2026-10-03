@@ -1,5 +1,15 @@
 # Publications
 
+Latest mathematical tool: [GE1 — Generalized Euler evolution](papers/generalized-euler-evolution/README.md)
+audits two uncertified Euler/operator drafts and proves explicit generator
+domains, stable phase approximation, and a positive resolvent approximation
+for the existing native compact YM heat. An exact near-resonant example
+separates positive finite-cutoff decay from a uniform infinite-content gap.
+Six written results and 17 adversarial/exact tests use **Python 3.12 only**.
+This is a scoped mathematical development; no new interacting or Clay gap
+is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
+records corrections and unsupported physical claims explicitly.
+
 Latest Yang–Mills continuation: [YM-55](papers/yang-mills-certified-benchmark/YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
 constructs the joint volume/time limit of local vacuum histories for the
 native anisotropic interacting chain. A fixed profile with second-eigenvalue
