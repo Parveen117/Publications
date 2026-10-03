@@ -1,0 +1,47 @@
+{
+  "stage": "NM1",
+  "upstream_repository": "Parveen117/Publications",
+  "upstream_commit": "1b4fcd80a0cdb7ac6ad8da28a8a48dbd64957ff5",
+  "upstream_sha256": {
+    "papers/emk-ugd-algebra/README.md": "fb0e3bd4f3f35c522d3ce246fe107f1176078fe48c0dcd18c0e12fe903b05107",
+    "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+    "papers/emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md": "325a5d025874ac678d38ad7e20ca0cc1ddc68b9f9d267b93333829883cdf1932",
+    "papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py": "88c1f6b8aef1ef93f11d0a7dd813e2d39e6f9a6e37f2a627680c7f7848ed0bb0",
+    "papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md": "450858a9aa8e6349c77a7cae3636227e5ba720c62ac6282036c0a82413dda80a"
+  },
+  "upstream_git_blobs": {
+    "papers/emk-ugd-algebra/README.md": "33c86acf1cbff1238df18d34aa62bedc78d74161",
+    "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md": "d07f13191ce6443ca54966b0e751a585108254d2",
+    "papers/emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md": "edcfa572b688bbc1b9c07a9b8267f877248a39a7",
+    "papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py": "b483aa5f26c3ad2293e25565eaede11c6818f9e6",
+    "papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md": "3972af6b95a84f09b0624ffeacdd3a61780519b6"
+  },
+  "local_inputs": [
+    "papers/native-modular-observers/README.md",
+    "papers/native-modular-observers/THEOREMS.md",
+    "papers/native-modular-observers/SOURCE_AUDIT.md",
+    "papers/native-modular-observers/certificates/nm1_modular_observers.py",
+    "papers/native-modular-observers/tests/test_nm1_modular_observers.py",
+    ".github/workflows/native-modular-observers.yml"
+  ],
+  "runtime_modules": [
+    "papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py"
+  ],
+  "evidence_policy": "Five scoped written proofs with exact finite controls; not formal verification, external expert certification or a mock-modular completion.",
+  "classical_lineage": [
+    {
+      "author": "J. S. Milne",
+      "title": "Modular Functions and Modular Forms",
+      "version": "1.31 (2017)",
+      "url": "https://www.jmilne.org/math/CourseNotes/MF.pdf",
+      "role": "classical modular group and transformation-law attribution; proofs supplied locally"
+    },
+    {
+      "author": "Sander Zwegers",
+      "title": "Mock Theta Functions",
+      "year": 2002,
+      "url": "https://arxiv.org/abs/0807.4834",
+      "role": "analytic completion background; no analytic theorem imported into NM1"
+    }
+  ]
+}
