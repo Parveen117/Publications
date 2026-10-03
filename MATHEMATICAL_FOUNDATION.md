@@ -22,6 +22,21 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-54: response curvature to a counted protocol](papers/yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md)
+uses the existing NT positive factor, scale/shape split and commutator
+curvature. The two-direction shape Gram satisfies det G=16 f^2.
+Lifting shape words with the existing central iota gives four compact
+signed turn records, deriving a distinct three-by-three protocol tensor
+with spectrum {0,g_min(G)/4,g_max(G)/4}. Thus beta>=4 f^2/tau.
+Uniform curvature and response-budget bounds feed YM53's sufficient
+interacting window abs(theta)<f0^2/(600 T). The source thermo fixture,
+factor covariance, actual event moments and clock counterexamples have
+exact controls. Seven written results and twenty new tests preserve
+110 upstream files; all 171 related tests pass on Python 3.12.
+The protocol uses declared equal counts and frozen response jets; no
+physical clock, general variable-coefficient diffusion, anisotropic
+joint/volume state or four-dimensional gauge theory is inferred.
+
 [YM-53: anisotropic interacting gap](papers/yang-mills-certified-benchmark/YM53_ANISOTROPIC_INTERACTING_GAP.md)
 uses the second-eigenvalue floor b_i>=beta>0 to derive an all-content
 coarse heat-kernel floor. YM45's temporal blocks then give a full-source
