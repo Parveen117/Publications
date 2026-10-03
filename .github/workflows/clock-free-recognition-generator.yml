@@ -1,0 +1,39 @@
+name: GE2 Clock-free recognition generator
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/generalized-euler-evolution/**'
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/clock-free-recognition-generator.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'papers/generalized-euler-evolution/**'
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/clock-free-recognition-generator.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Rebuild typed record and intrinsic refinement evidence without writing
+        run: python -B papers/generalized-euler-evolution/certificates/ge2_clock_free.py --check
+      - name: Verify both Generalized Euler stages and adversarial controls
+        run: |
+          python -B papers/generalized-euler-evolution/certificates/ge1_evolution.py --check
+          python -B -m unittest discover -s papers/generalized-euler-evolution/tests -v
+      - name: Evidence stays read-only
+        run: git diff --exit-code -- papers/generalized-euler-evolution papers/yang-mills-certified-benchmark
