@@ -754,3 +754,44 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   closure of the coefficient-history sector, or certify and retain
   nonzero row memory. Full bounded-history density, native measure/NCG,
   physical gauge sector/clock, 4D continuum, AF, Clay and QG remain open.
+
+## YM-50 (3 October 2026): native counted reference and heat representation
+
+- SOURCE AUDIT: re-read RH's T01 ledger, stationary-path/cut-square
+  identity, finite count law, E4 completion and E5 boundary plus its
+  contamination audit at fd104f46; F00-E and RKF N11 at 3cc5a33;
+  NCG-1/3, YM-F1 and YM-27. The raw Phi_Sigma is stationary-path
+  extraction, not a name for any desired compact-group integral.
+- NEW T1--T4: a padded finite diagonal-kernel readout exactly realizes
+  a normalized twelve-letter quaternion-turn Cesaro average of Phi_Sigma.
+  Native finite tensor coefficient energy identifies its fixed space
+  algebraically. Finite elimination solves the Poisson equation and
+  proves the 2*B_p/N tail. The limit Phi_Q is positive, normalized,
+  invariant and unique on coefficient readouts, with derived moments.
+- NEW T5: only after that construction, uniqueness identifies Phi_Q
+  with the earlier SU(2) reference functional. The new positive-form
+  recognition completion and bounded multipliers have the old coefficient
+  carrier as an onto isometric representation.
+- NEW T6--T7: symmetric native turns construct the same free heat action
+  with finite-degree error 3*d^4*t^2/(8*n). The face-exponential law of
+  YM-F1 then intertwines the declared finite-chain transfers. Existing
+  fixed-volume limits and closed A_unif-generated history sectors are
+  transported by their equal readouts/pairings.
+- REFUSAL: this does not identify raw memory paths or invoke E4 falsely.
+  Adjacent endpoint records have squared differences
+  1/10-(1/50)*(43/75)^n, so they are not recognition-Cauchy. Single-axis
+  exploration, missing normalization, wrong clock factor and a
+  degree-uniform reading of the heat error all fail exact controls.
+- LINEAGE: invariant averaging and diffusion are established mathematical
+  ideas (Haar 1933, DOI 10.2307/1968346). The contribution here is the
+  explicit native-source construction and representation bridge for
+  this programme, not a priority claim for those general ideas.
+- EVIDENCE: eight written results, seventeen new and 100 related tests
+  on Python 3.12; 78 unchanged local source hashes and eight audited
+  external native source blobs. CI checks the local proof/source pins
+  and exact finite controls, not external theorem correctness. The
+  infinite proof is neither mechanically formalized nor expert-reviewed.
+- NEXT: physical sector/state/clock/trajectory selection remains open,
+  as do general RH E5C/E6, NCG quantum measure, the actual chain's row
+  defect, larger bounded-history density, 4D/AF/Clay/QG. The new origin
+  ledger keeps those choices distinct from the proved compact bridge.

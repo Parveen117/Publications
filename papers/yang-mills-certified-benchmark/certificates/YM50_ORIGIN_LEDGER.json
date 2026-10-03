@@ -1,0 +1,52 @@
+{
+  "schema": "ym50-native-origin-ledger-v1",
+  "canonical_native_inputs": {
+    "scalar_field": "F00-E cut-iota arithmetic, factorial exponential and radial Cauchy completion",
+    "carrier": "NCG-1/3 derived EMK quaternion sector; YM-F1 product/dagger matrix identification",
+    "finite_pairing": "RH T01-B stationary-path Phi_Sigma and cut-square identity",
+    "finite_normalization": "RH T01-E3 rational finite-count normalization, applied to the declared labelled atlas",
+    "completion_method": "RH T01-B and RKF N11 null quotient and recognition-Cauchy classes; no modification of the canonical engine"
+  },
+  "declared_choices": {
+    "sector": "One derived unit-quaternion EMK sector; its selection as a physical gauge sector is not proved",
+    "reference_protocol": "Six labelled idle records and three rational turns (3+4e_a)/5 with their daggers; Cesaro depth and padded finite counts",
+    "product_protocol": "Independent reference copies on a specified finite set of chain sites",
+    "heat_protocol": "Six equally counted symmetric turns Exp_Sigma(+/-epsilon e_a/2); epsilon=sqrt(6t/n)",
+    "interacting_law": "Existing bounded face-residue exponential, spatial chain and kappa(a)=theta*a with abs(theta)<1/1680"
+  },
+  "constructed_objects": {
+    "reference": "Phi_Q is the limit of normalized Phi_Sigma readouts on finite diagonal record kernels; 2*B_p/N polynomial tail",
+    "invariance": "Finite coefficient-energy fixed-space calculation and Poisson equation; no Haar integral used to construct Phi_Q",
+    "state_completion": "Positive Phi_Q pairing, null quotient and recognition completion of coefficient readouts",
+    "heat": "Symmetric native-turn limit with coefficient-degree bound 3*d^4*t^2/(8*n)",
+    "observables": "Bounded coefficient multipliers on the constructed completion"
+  },
+  "proved_comparisons": {
+    "reference": "Phi_Q equals the existing normalized invariant SU(2) reference functional on A_coeff and A_unif",
+    "carrier": "Onto isometry of coefficient completions intertwines bounded multipliers",
+    "evolution": "Same free heat action and declared finite-chain bridge transfers; existing fixed-volume limits are transported",
+    "histories": "Same local A_unif histories and reflected pairings; isometry of their closed generated history sectors"
+  },
+  "refused_identifications": {
+    "raw_path_functional": "Phi_Q is not silently identified with unnormalized Phi_Sigma on the full path algebra",
+    "raw_record_completion": "Endpoint records f_n have adjacent squared differences 1/10-(1/50)*(43/75)^n; they are not recognition-Cauchy",
+    "faithful_memory": "Equal quaternion endpoints do not identify distinct raw paths",
+    "hilbert_primitive": "Infinite Hilbert space is used as the proved representation of the new positive completion, not as its generating premise",
+    "physical_uniqueness": "The specified invariant reference and isotropic heat law do not select a unique physical state, clock or trajectory"
+  },
+  "open_obligations": [
+    "General RH E5C/E6 state-locked UGD refinement and integration dictionary",
+    "Physical gauge-sector, probability-state, clock and coupling-trajectory selection",
+    "Countable native path-measure extension",
+    "NCG classical action to quantum-field measure identification",
+    "Actual infinite-chain row-closure defect from YM49",
+    "Density in the larger arbitrary-bounded-history completion",
+    "Four-dimensional Yang-Mills identification, asymptotic freedom, Clay and quantum gravity"
+  ],
+  "evidence": {
+    "proof": "Written general proof, not mechanically formalized",
+    "computation": "Exact rational finite controls and outward rational heat enclosures",
+    "external_expert_review": "Not claimed",
+    "runtime": "Python 3.12 only"
+  }
+}

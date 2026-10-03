@@ -22,6 +22,26 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-50: native reference and heat bridge](papers/yang-mills-certified-benchmark/YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md)
+starts from the existing cut scalars, EMK quaternion sector and stationary
+path extraction. A specified finite diagonal-record readout constructs a
+positive normalized invariant functional with tail 2*B_p/N. Finite
+coefficient energy and elimination prove its stationary space and exact
+moments. It equals the old SU(2) reference functional on coefficient
+polynomials and their uniform completion. The positive recognition
+completion therefore has the old coefficient Hilbert space as a proved
+representation. Symmetric native turns construct the same free heat law
+with error 3*d^4*t^2/(8*n); the declared interacting transfers and closed
+coefficient-history sector are preserved. Eight written results, seventeen
+new and 100 related tests use Python 3.12. This closes the specified compact
+reference/heat bridge, while general RH E5C/E6, physical state/clock
+selection, NCG quantum measure and 4D remain open. Raw endpoint records
+are explicitly proved not to be recognition-Cauchy.
+
+Earlier references below to an admitted reference/heat adapter record the
+premises of those chapters. YM-50 now supplies this scoped representation
+bridge; it does not remove their physical or general integration obligations.
+
 [YM-49: time-zero observables and row-memory closure](papers/yang-mills-certified-benchmark/YM49_TIME_ZERO_OBSERVABLES.md)
 proves a volume-independent form multiplier bound and a controlled
 time-zero insertion limit on the existing reflected carrier. They supply
@@ -35,7 +55,7 @@ and bounded Schur-resolvent tails. A nonzero same-chain time/observable
 commutator is proved. Eight written results, seventeen new tests and 83
 related tests use Python 3.12. The actual chain's row-closure defect is
 not evaluated by the finite observer controls; full bounded-history
-density, native measure/NCG and physical identification remain open.
+density, general native integration/NCG and physical identification remain open.
 
 [YM-48: reflected time action and generator](papers/yang-mills-certified-benchmark/YM48_REFLECTED_TIME_GENERATOR.md)
 uses YM-47's history functional to quotient the reflected null space and
