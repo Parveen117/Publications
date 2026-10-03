@@ -796,6 +796,30 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   defect, larger bounded-history density, 4D/AF/Clay/QG. The new origin
   ledger keeps those choices distinct from the proved compact bridge.
 
+## YM-54 (3 October 2026): response curvature supplies a counted protocol floor
+
+- Reuses NT1--4's native positive response factor and selected connection,
+  EMK-C1, YM50's compact words, YM51's actual counts/refinement, YM52's
+  free spectrum and YM53's anisotropic interacting theorem. No new engine.
+- Separates scalar and shape response; proves det G=16 f^2. The compact
+  lift (iota K,iota L,R) supplies four equally counted signed turns.
+  Their distinct tensor C has nonzero spectrum spec(G)/4, hence
+  beta>=4 f^2/tau. Uniform source bounds give the sufficient window
+  abs(theta)<f0^2/(600 T), with an exact existing thermo example.
+- Freezes each site response jet before constructing its heat. Equal
+  counts, observer directions and clock are declared process choices.
+  Actual finite records with equal C can differ; idle records can alter
+  all heat rates without altering H or response curvature.
+- Credits Pennec--Fillard--Ayache for established positive-response
+  trace-metric/commutator geometry. RKF T51/T56/T75 explain operator
+  roles and boundaries; their conditional claims are not new premises.
+- Evidence: seven written results, twenty new and 171 related Python
+  3.12 tests, 110 unchanged upstream source pins and exact finite controls.
+  No formal proof assistant or external expert certification is claimed.
+- Open: physical response/protocol/state/clock/coupling selection,
+  variable-coefficient diffusion, anisotropic joint/volume construction,
+  actual row closure, NCG quantum measure and 4D/AF/Clay/QG.
+
 ## YM-53 (3 October 2026): rank-two heat survives weak chain interaction
 
 - Reuses YM50--52's native coefficient/reference/protocol construction,

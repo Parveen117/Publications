@@ -1,6 +1,47 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-53
+## Current continuation: YM-54
+
+[YM-54's response/protocol proof](YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md)
+connects NT's existing native curvature to an actual compact turn process.
+Remove the trace response, factor the positive H and express its two
+shape words as Y_i=p_i K+q_i L. The shape Gram G has det G=16 f^2.
+The compact lift iota Y_i supplies four equally counted signed turns;
+their second moment is the three-by-three tensor C=VV^T/2, while
+G=2V^TV. Consequently
+
+\[
+\beta_{\rm protocol}=\lambda_{\min}(G)/4\geq4 f^2/\tau,
+\qquad |\theta|<f_0^2/(600 T)
+\]
+
+is a sufficient YM53 interaction window when |f_i|>=f0>0 and tau_i<=T.
+The original curved thermo fixture gives beta_floor=5/234 and window
+abs(theta)<1/112320. At theta=1/262144, J=6, R=5/4 the inherited
+interacting rate exceeds 0.000079467076 in the declared heat clock.
+
+[The certificate](certificates/YM54_RESULT.json) and
+[source pins](certificates/YM54_SOURCE_PINS.json) bind seven written results,
+48 exact response jets, 16 independent coefficient generator replays,
+36 outward finite-turn refinement enclosures and the original potential's
+derivative replay. Twenty new and 171 related tests pass on **Python 3.12**.
+All 110 upstream pinned sources remain unchanged. The general proofs are
+written, not mechanically formalized or externally expert-certified.
+
+The source jet, two directions, equal signed counts, compact lift and
+heat clock remain explicit selections. Same curvature with growing
+shape trace can lose a uniform floor; inserting idle records changes
+the clock without changing response curvature. This chapter constructs
+a concrete source for YM53's hypotheses, not physical selection of the
+protocol or a physical mass. State-dependent diffusion, anisotropic
+joint/volume limits, actual row closure and 4D/Clay remain open.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym54_response_protocol.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym54_response_protocol.py -v
+~~~
+
+## Previous continuation: YM-53
 
 [YM-53's anisotropic interaction proof](YM53_ANISOTROPIC_INTERACTING_GAP.md)
 extends the declared open chain to site-dependent positive semidefinite

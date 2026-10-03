@@ -1,6 +1,18 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-53](papers/yang-mills-certified-benchmark/YM53_ANISOTROPIC_INTERACTING_GAP.md)
+Latest Yang–Mills continuation: [YM-54](papers/yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md)
+constructs a counted compact heat protocol from two native shape-response
+directions. Its second tensor eigenvalue obeys beta>=4 f^2/tau, where f
+is the existing response-curvature marker and tau is the shape-Gram trace.
+Uniform |f|>=f0>0 and tau<=T feed YM53's interacting window
+abs(theta)<f0^2/(600 T). The original curved thermo fixture gives an
+exact example. Seven written results, twenty new and 171 related tests
+use **Python 3.12 only**; 110 upstream sources retain their bytes.
+Equal signed counts, frozen response jets, directions and heat clock are
+declared choices. Physical selection, anisotropic joint/volume limits and
+4D/Clay remain open.
+
+Previous interacting continuation: [YM-53](papers/yang-mills-certified-benchmark/YM53_ANISOTROPIC_INTERACTING_GAP.md)
 extends the interacting chain to native anisotropic and rank-two heat.
 If every site's second tensor eigenvalue is at least beta>0,
 abs(theta)<beta/2400 suffices for a gap uniform in finite width and
