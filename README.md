@@ -1,6 +1,20 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-51](papers/yang-mills-certified-benchmark/YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md)
+Latest Yang–Mills continuation: [YM-52](papers/yang-mills-certified-benchmark/YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
+connects the declared native heat protocol to derivative energy, discarded
+record variance and bounded-density entropy dissipation. For tensor
+eigenvalues a<=b<=c, its exact centered rate is min(tr(C)/4,a+b);
+two noncommuting active directions suffice on this compact carrier.
+A sign-insensitive observer has rate a+b. At fixed trace, optimizing
+that even-observer rate selects isotropy with an explicit stability bound,
+whereas optimizing the full-observer rate leaves an anisotropic plateau.
+The known spectral formula is credited to Lauret; the native record
+bridge and observer selection conditions are explicit.
+Six written results and sixteen new tests use **Python 3.12 only**.
+Physical energy/time calibration, selection of the optimization objective
+and anisotropic interacting transfer remain open.
+
+Previous tool audit: [YM-51](papers/yang-mills-certified-benchmark/YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md)
 audits 29 tool dependencies and identifies the heat protocol's symmetric
 second moment as a remaining selection choice. The same native brackets,
 positive reference and all linear-coefficient decay can coexist with

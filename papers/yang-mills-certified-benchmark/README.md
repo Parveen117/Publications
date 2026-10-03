@@ -1,6 +1,49 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-51
+## Current continuation: YM-52
+
+[YM-52's energy and observer proof](YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
+uses YM51's general symmetric protocol tensor C. It derives
+
+\[
+\Phi(f^2)=\Phi((E_t f)^2)+\Phi\!\left(E_t(f^2)-(E_t f)^2\right),
+\qquad
+\partial_t\Phi((E_t f)^2)=-2\mathcal E_C(E_t f).
+\]
+
+Thus discarded record variance accounts exactly for the mean's lost
+squared distinction. A defined relative entropy satisfies
+H'(rho_t)=-Phi(Gamma_C(rho_t)/rho_t) for bounded positive densities.
+This is not a physical heat/work or energy-unit identification.
+
+The weighted native frame brackets derive the tensor cof(C). With
+0<=a<=b<=c its exact optimal centered relaxation rates are
+
+\[
+\gamma_{\rm full}=\min\{(a+b+c)/4,a+b\},\qquad
+\gamma_{\rm even}=a+b.
+\]
+
+Rank two is enough for positive relaxation. The old YM51 family has
+exact full rate min(3/4,2 eta). The classical positive-definite formula
+is credited to Lauret; finite native spin and polynomial energy controls
+support the written all-content proof, including singular tensors.
+
+For fixed trace s, the full gap is maximal for every c<=3s/4.
+The even-observer gap is maximal only at C=(s/3)I. A deficit epsilon
+below its maximum bounds the tensor's operator-norm anisotropy by
+2 epsilon. This conditional selection criterion does not fix the
+physical observer objective or clock budget.
+
+[The certificate](certificates/YM52_RESULT.json) and
+[source pins](certificates/YM52_SOURCE_PINS.json) bind six written results,
+16 new tests, independent word-variance controls, 108 finite spin gap
+inequalities, 40 polynomial energy matrices and six rational entropy
+enclosures. Current verification uses Python 3.12 only.
+The fixed isotropic interacting chain proofs remain unchanged.
+Anisotropic interacting estimates, physical selection and 4D/Clay remain open.
+
+## Previous continuation: YM-51
 
 [YM-51's audit and written proof](YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md)
 checks the tools used by the current YM route. The
@@ -464,6 +507,7 @@ width budget.
 | Item | Status |
 |---|---|
 | **YM-51 tool audit and native heat-selection boundary** | PROVED for specified symmetric turn protocols: same curvature/reference and linear decay do not select quadratic decay; fixed-law invariance forces C=cI; six-channel recovery and explicit refinement bound; physical selection OPEN |
+| **YM-52 energy, records and observer relaxation** | PROVED on the compact free protocol carrier: energy/noise and bounded-density entropy balances, cofactor bracket tensor, exact full/even rates including rank two; fixed-budget even-objective isotropy selector; physical objective/units and anisotropic interacting transfer OPEN |
 | **YM-50 counted native reference, positive completion and symmetric-turn heat bridge** | PROVED for the specified quaternion/readout protocol; coefficient reference, observables, declared transfers and closed coefficient-history sector intertwined; general UGD, physical selection, NCG quantum measure and 4D OPEN |
 | **YM-49 bounded time-zero coefficient observable representation, ordered readouts, positive row-closure defect and gap-controlled memory; nonzero time/observable commutator** | PROVED on the declared heat-functional carrier; YM-50 supplies its compact reference/heat bridge; actual chain row defect, full bounded-history density, physical observable/DICT and 4D continuum OPEN |
 | **YM-48 reflected continuous-time action, self-adjoint generator/domain/core and gap; coefficient-row embedding and nonzero source** | PROVED on the declared small-bridge heat-functional carrier; YM-49 supplies time-zero observable action; instantaneous-row/physical identification, DICT and 4D continuum OPEN |
