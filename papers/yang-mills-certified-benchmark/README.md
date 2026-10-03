@@ -1,6 +1,31 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-56
+## Current continuation: YM-57
+
+[YM-57's neighbour-turn proof](YM57_NEIGHBOUR_TURN_GAP.md) supplies a
+uniform finite-chain gap for a declared correlated kinetic model even
+when every local YM56 lambda vanishes. Opposite second-axis neighbour
+turns and a first-axis half-turn exactly reconstruct the missing local
+rotation. Compact averaging and product variance then give
+gap >= min(1/630, k/420) for every chain width N>=2 and edge rate k>0.
+The proof covers the completed coefficient space; finite spin checks
+are supporting controls.
+
+The chapter also proves why the original scalar overlap potential
+preserves a rank-one site's stationary invariant. The positive result
+uses a new specified kinetic interaction and does not import YM55's
+site-product history limit. A normalized single-update clock supplies
+an explicit vanishing-gap upper witness as width grows. Six written
+results and exact rational evidence are included. All 16 new and 33
+targeted predecessor tests pass on **Python 3.12.14**; CI requires
+Python 3.12. The manifest preserves 132 upstream files.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym57_neighbour_turn_gap.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym57_neighbour_turn_gap.py -v
+```
+
+## Previous continuation: YM-56
 
 [YM-56's Hessian lambda family](YM56_LAMBDA_CURVATURE_GAP.md) connects
 the native selected response curvature to an exact symmetry-preserving

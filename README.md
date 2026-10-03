@@ -42,7 +42,19 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-56](papers/yang-mills-certified-benchmark/YM56_LAMBDA_CURVATURE_GAP.md)
+Latest Yang–Mills continuation: [YM-57](papers/yang-mills-certified-benchmark/YM57_NEIGHBOUR_TURN_GAP.md)
+uses an exact neighbour-turn echo to recover each missing local rotation.
+For a declared correlated kinetic chain, it proves the width-uniform gap
+min(1/630, k/420) even when every on-site lambda is zero. The old scalar
+bond interaction preserves the lost-direction invariant and cannot be
+silently substituted for this transport. Six written results include the
+all-content compact averaging proof and a fixed-rate clock counterexample.
+All 16 new and 33 targeted predecessor tests passed on **Python 3.12.14**;
+CI requires Python 3.12, and 132 pinned upstream files are preserved. Correlated
+infinite-volume histories, adding the scalar interaction, physical gauge
+selection and the four-dimensional continuum remain open.
+
+Previous Yang–Mills continuation: [YM-56](papers/yang-mills-certified-benchmark/YM56_LAMBDA_CURVATURE_GAP.md)
 realizes a lambda-controlled native curvature with an explicit cubic Hessian
 potential. The selected compact protocol has exact free gap
 min((1+lambda^2)/8, min(1,lambda^2)/2), while an involution symmetry
