@@ -1,6 +1,16 @@
 # Publications
 
-Latest mathematical continuation: [GE2 — clock-free recognition generator](papers/generalized-euler-evolution/GE2_CLOCK_FREE_RECOGNITION_GENERATOR.md)
+Latest mathematical continuation: [GE3 — returning memory survives clock refinement](papers/generalized-euler-evolution/GE3_RETURNING_MEMORY.md)
+proves different retained-memory and repeated-reset limits from the same
+native rational arrows. An actual centered quadratic observer has visible
+law (exp(-tau/2)+exp(-tau))/2, while repeated reset gives exp(-3 tau/4).
+Its first derivative alone misses the nonzero second-order closure marker
+1/16. The finite-core memory kernel and unequal-step error bounds are
+explicit. Four written results and 13 new tests preserve GE1/GE2; all 48
+Generalized Euler tests use **Python 3.12 only**. The actual interacting
+row cut and general unbounded/moving-cut obligations remain open.
+
+Previous mathematical continuation: [GE2 — clock-free recognition generator](papers/generalized-euler-evolution/GE2_CLOCK_FREE_RECOGNITION_GENERATOR.md)
 starts from rational native arrows and retained record cuts. It derives
 the phase derivation and, for a symmetric independent record protocol,
 the existing heat generator as half the recognition-form loss density

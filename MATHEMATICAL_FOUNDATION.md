@@ -22,6 +22,17 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[GE3: returning memory under native refinement](papers/generalized-euler-evolution/GE3_RETURNING_MEMORY.md)
+connects the existing block-memory calculus to GE2's unequal-step internal
+clock. Retained and repeatedly reset observers have different certified
+limits. A native quadratic polynomial sector provides an exact nonclosing
+observer: initial visible rate 3/4, retained asymptotic rate 1/2, and
+second-order closure marker 1/16. The memory kernel, hidden initial source
+and Schur correction are derived on a fixed finite core. Four written
+results and 13 new tests preserve all GE1/GE2 evidence, with 48 tests on
+Python 3.12 only. This is a declared native observer, not a computation
+of the actual interacting infinite-chain row defect.
+
 [GE2: clock-free recognition generator](papers/generalized-euler-evolution/GE2_CLOCK_FREE_RECOGNITION_GENERATOR.md)
 constructs rational native arrows and an actual typed retained-record
 lift of the Recognition–Seam cut calculus. Its first variation is the
