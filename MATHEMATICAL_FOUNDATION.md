@@ -22,6 +22,17 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[GE1: Generalized Euler exponential domains](papers/generalized-euler-evolution/README.md)
+adds explicit graph-domain proofs and stable strong limits on specified
+native completions, while retaining the RH source's already developed
+Euler-scale carrier. It corrects the two
+uploaded drafts' sign/domain errors, proves reversible phase approximation
+and a positive implicit approximation of YM51's existing heat law, and gives
+a near-resonant zero-gap counterexample despite positive finite cutoffs.
+The phase carrier and the noncommuting YM carrier remain distinct.
+Six written results and 17 new tests use Python 3.12 only; this does not
+close general UGD/RH domains or the interacting/4D Yang–Mills gates.
+
 [YM-55: anisotropic joint history limit](papers/yang-mills-certified-benchmark/YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
 extends the native rank-two/interacting profile to a positive limit of
 local vacuum histories as volume grows and heat step vanishes, with no
