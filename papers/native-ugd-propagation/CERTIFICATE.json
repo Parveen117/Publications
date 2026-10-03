@@ -1,0 +1,1139 @@
+{
+  "checks": [
+    "canonical_engine_derives_EMK_basis",
+    "native_cut_before_representation",
+    "recognition_compression_retains_returning_memory",
+    "state_action_is_derived_and_intertwined",
+    "native_derivation_must_preserve_relations",
+    "full_sheet_carrier_is_infinite_and_charge_preserving",
+    "native_dagger_on_full_sheet_algebra",
+    "sheet_resolved_return_and_recurrence",
+    "clock_free_cut_differential_and_composition",
+    "Morphic_clock_second_derivative_retains_clock_curvature",
+    "independent_native_path_backend_keeps_the_fourth_sheet",
+    "proper_depth_seam_is_not_replaced_by_bilateral_sheet",
+    "Madhava_correction_transfers_exactly_from_Smriti",
+    "native_weighted_tail_bound_and_bilateral_parity",
+    "no_physical_adapter_in_native_identity_proof"
+  ],
+  "consumed_rkf_commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+  "consumed_sources_checked": 36,
+  "geometry": {
+    "helix": {
+      "four_step_full_return": false,
+      "four_step_visible_return": true,
+      "orbit": [
+        [
+          "0",
+          "0",
+          0
+        ],
+        [
+          "3/2",
+          "0",
+          1
+        ],
+        [
+          "3",
+          "0",
+          2
+        ],
+        [
+          "9/2",
+          "0",
+          3
+        ],
+        [
+          "0",
+          "0",
+          4
+        ]
+      ],
+      "phase_period": 6,
+      "phase_step": "3/2"
+    },
+    "metric": {
+      "admitted_clock_periods": [
+        "1",
+        "2"
+      ],
+      "base_coordinates": [
+        "u",
+        "v"
+      ],
+      "clock_free_chain_rule": true,
+      "composed_differential": "-13/150",
+      "fibre_coordinates": [
+        "phi",
+        "sigma",
+        "integer k"
+      ],
+      "physical_clock_selected": false,
+      "protocol_speed_squared": [
+        "25",
+        "25/4"
+      ],
+      "rows": [
+        {
+          "curvature": "0",
+          "kappa": "0",
+          "seam_length_squared": "25"
+        },
+        {
+          "curvature": "-3",
+          "kappa": "3",
+          "seam_length_squared": "25"
+        }
+      ],
+      "transition_differential": "5/6"
+    },
+    "numeral": {
+      "arrow_sum_exponent": 2,
+      "classical_projection": "3",
+      "correct_carry_charge": 2,
+      "distinct_seam_charges": [
+        1,
+        0
+      ],
+      "dropped_carry_charge": 1,
+      "equal_phase_content": true,
+      "numeral_multiplication_is_not_transport_composition": true,
+      "numeral_product_exponent": 1
+    }
+  },
+  "madhava_smriti": {
+    "correction_at_half": "1/384",
+    "formal_check_modulus": "t^13",
+    "infinite_tail_mass_bound_at_half_after_degree_four": "7/321120",
+    "physical_clock_interpretation": false,
+    "tail_bound_source": "WC1/WC2 completion plus the even native return coefficients"
+  },
+  "native": {
+    "EMK_basis": [
+      [],
+      [
+        "R"
+      ],
+      [
+        "K"
+      ],
+      [
+        "R",
+        "K"
+      ]
+    ],
+    "Morphic_clock_equation": "D_tau^2 x+(tau_double_prime/tau_prime^2) D_tau x+(Z^2/tau_prime^2) x=0",
+    "coefficient_field": "CUT_COMPLEX; RADIAL FIXTURES ARE REAL",
+    "derived_left_ideal_actions": {
+      "K": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ]
+        ]
+      ],
+      "R": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ]
+    },
+    "full_sheet_normal_language": "INFINITE_IRREDUCIBLE_LANGUAGE",
+    "minimum_added_state_channels": 1,
+    "path_backend_four_steps": [
+      {
+        "coefficient": [
+          "1",
+          "0"
+        ],
+        "from": "cut",
+        "sheet": "4",
+        "to": "cut"
+      }
+    ],
+    "proofs": {
+      "four_steps": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "fc68b0d25b2700fc09093f5de475301b6ad6121929b121d5f3567fa2c6b4f972",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "invisible_step": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "R"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "K"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R",
+                "K"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1/4",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR",
+            "word": [
+              "K",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/4",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KK",
+            "word": [
+              "R",
+              "K",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/4",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR",
+            "word": [
+              "K",
+              "R"
+            ]
+          }
+        ]
+      },
+      "memory_corner": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K"
+              ],
+              [
+                "1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "1/8",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R",
+                "K"
+              ],
+              [
+                "1/8",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "K",
+                "R"
+              ],
+              [
+                "-1/8",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R",
+                "R"
+              ],
+              [
+                "1/8",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "K",
+                "R",
+                "K"
+              ],
+              [
+                "-1/8",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R",
+                "R",
+                "K"
+              ],
+              [
+                "1/8",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R",
+                "K",
+                "R"
+              ],
+              [
+                "-1/8",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R",
+                "K",
+                "R",
+                "K"
+              ],
+              [
+                "-1/8",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "-1/8",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR",
+            "word": [
+              "K",
+              "R",
+              "K",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/8",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KK",
+            "word": [
+              "R",
+              "K",
+              "K",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/8",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR",
+            "word": [
+              "K",
+              "R",
+              "K",
+              "R"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/8",
+              "0"
+            ],
+            "position": 1,
+            "rule": "RR",
+            "word": [
+              "K",
+              "R",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/8",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KK",
+            "word": [
+              "R",
+              "K",
+              "K",
+              "R"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/8",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KR",
+            "word": [
+              "R",
+              "K",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/8",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R",
+              "K",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/8",
+              "0"
+            ],
+            "position": 1,
+            "rule": "RR",
+            "word": [
+              "K",
+              "R",
+              "R"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/8",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KR",
+            "word": [
+              "R",
+              "K",
+              "R"
+            ]
+          },
+          {
+            "coefficient": [
+              "3/8",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/4",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KK",
+            "word": [
+              "K",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/4",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R"
+            ]
+          }
+        ]
+      },
+      "sheet_return": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "Z",
+                "Z"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "Z",
+                "Z"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "Z",
+                "Z",
+                "K"
+              ],
+              [
+                "-1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "Z",
+                "Z",
+                "K"
+              ],
+              [
+                "-1/4",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "fc68b0d25b2700fc09093f5de475301b6ad6121929b121d5f3567fa2c6b4f972",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "-1/4",
+              "0"
+            ],
+            "position": 2,
+            "rule": "ZK",
+            "word": [
+              "K",
+              "Z",
+              "Z",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/4",
+              "0"
+            ],
+            "position": 1,
+            "rule": "ZK",
+            "word": [
+              "K",
+              "Z",
+              "K",
+              "Z"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/4",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KK",
+            "word": [
+              "K",
+              "K",
+              "Z",
+              "Z"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/4",
+              "0"
+            ],
+            "position": 1,
+            "rule": "ZK",
+            "word": [
+              "Z",
+              "Z",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/4",
+              "0"
+            ],
+            "position": 0,
+            "rule": "ZK",
+            "word": [
+              "Z",
+              "K",
+              "Z"
+            ]
+          }
+        ]
+      },
+      "visible_return": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K"
+              ],
+              [
+                "1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R",
+                "K"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R",
+                "R"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R",
+                "R",
+                "K"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1/4",
+              "0"
+            ],
+            "position": 1,
+            "rule": "RR",
+            "word": [
+              "K",
+              "R",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/4",
+              "0"
+            ],
+            "position": 1,
+            "rule": "RR",
+            "word": [
+              "K",
+              "R",
+              "R"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/4",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "-1/4",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KK",
+            "word": [
+              "K",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "1/4",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R"
+            ]
+          }
+        ]
+      }
+    },
+    "proper_seam_boundary": {
+      "from": "*",
+      "terms": [
+        [
+          [],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "S",
+            "T"
+          ],
+          [
+            "-1",
+            "0"
+          ]
+        ]
+      ],
+      "to": "*"
+    },
+    "recognition_recurrence": "x_(n+2)=-Z^2 x_n; U=R Z is the declared example",
+    "recognized_seed_returns": [
+      {
+        "from": "*",
+        "terms": [
+          [
+            [],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ],
+        "to": "*"
+      },
+      {
+        "from": "*",
+        "terms": [],
+        "to": "*"
+      },
+      {
+        "from": "*",
+        "terms": [
+          [
+            [
+              "Z",
+              "Z"
+            ],
+            [
+              "-1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "Z",
+              "Z"
+            ],
+            [
+              "-1/2",
+              "0"
+            ]
+          ]
+        ],
+        "to": "*"
+      },
+      {
+        "from": "*",
+        "terms": [],
+        "to": "*"
+      },
+      {
+        "from": "*",
+        "terms": [
+          [
+            [
+              "Z",
+              "Z",
+              "Z",
+              "Z"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "Z",
+              "Z",
+              "Z",
+              "Z"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ],
+        "to": "*"
+      },
+      {
+        "from": "*",
+        "terms": [],
+        "to": "*"
+      },
+      {
+        "from": "*",
+        "terms": [
+          [
+            [
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z"
+            ],
+            [
+              "-1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z"
+            ],
+            [
+              "-1/2",
+              "0"
+            ]
+          ]
+        ],
+        "to": "*"
+      },
+      {
+        "from": "*",
+        "terms": [],
+        "to": "*"
+      },
+      {
+        "from": "*",
+        "terms": [
+          [
+            [
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "K",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z",
+              "Z"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ],
+        "to": "*"
+      }
+    ],
+    "weighted_contract": {
+      "basis_finiteness_required": false,
+      "critical_pairs": 16,
+      "norm_kind": "real cut-gauge norm; bounded central cut-scalar action",
+      "presentation_sha256": "fc68b0d25b2700fc09093f5de475301b6ad6121929b121d5f3567fa2c6b4f972",
+      "primitive_hilbert_space": false,
+      "protocol": "RKF_WEIGHTED_RULE_CONTRACT_V1",
+      "rules": [
+        {
+          "left_mass": "1",
+          "right_mass": "1",
+          "rule": "RR"
+        },
+        {
+          "left_mass": "1",
+          "right_mass": "1",
+          "rule": "KK"
+        },
+        {
+          "left_mass": "1",
+          "right_mass": "1",
+          "rule": "KR"
+        },
+        {
+          "left_mass": "1",
+          "right_mass": "1",
+          "rule": "ZZi"
+        },
+        {
+          "left_mass": "1",
+          "right_mass": "1",
+          "rule": "ZiZ"
+        },
+        {
+          "left_mass": "1",
+          "right_mass": "1",
+          "rule": "ZR"
+        },
+        {
+          "left_mass": "1",
+          "right_mass": "1",
+          "rule": "ZK"
+        },
+        {
+          "left_mass": "1",
+          "right_mass": "1",
+          "rule": "ZiR"
+        },
+        {
+          "left_mass": "1",
+          "right_mass": "1",
+          "rule": "ZiK"
+        }
+      ],
+      "weights": {
+        "K": "1",
+        "R": "1",
+        "Z": "1",
+        "Zi": "1"
+      }
+    }
+  },
+  "protocol": "NATIVE_UGD_PROPAGATION_CORRECTION_R1",
+  "scope": {
+    "SI_c_predicted": false,
+    "arbitrary_UGD_numeral_multiplication_equals_arrow_composition": false,
+    "canonical_engine_full_master_recertified": false,
+    "chosen_finite_matrices_as_premise": false,
+    "complete_proper_seam_identified_with_sheet_translation": false,
+    "independent_formal_proof": false,
+    "native_arithmetic_reimplemented": false,
+    "primitive_Hilbert_space": false,
+    "quantum_gravity_proved": false,
+    "unique_physical_propagator_selected": false
+  },
+  "source_sha256": {
+    "README.md": "9aff385ccbffc4afc9f7ca050701a536fa485631b9b4e0edc7c78cd55f9060b4",
+    "SOURCE_PINS.json": "128588a28b3df9aef9ed3a7432085fb776ac5da0244cea6586d01d4667f792ba",
+    "THEOREM.md": "8c452ed73cbd6af7c73a3c4509fe722b71c3241f16483655e84b46326f6a82da",
+    "geometry_checks.py": "c44681dc9fdac5a03d545e133dd930507a4532bf54801fbf7345b59e70fbb31f",
+    "verify.cjs": "1b04ac687a9659a9173638e298f65bf9b27148964d71459a1790b351c07a0dd5"
+  },
+  "status": "PASS_SOURCE_BOUND_NATIVE_CONTROLS"
+}

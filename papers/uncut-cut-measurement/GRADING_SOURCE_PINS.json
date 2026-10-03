@@ -1,0 +1,68 @@
+{
+  "version": "0.6",
+  "retrieved_and_verified": "2026-09-25",
+  "publication_parent_commit": "e2be2980941246df9ba1dd5870e8c194aceab27b",
+  "native_main_checked": "86198d29cbf30390059079f38675c952e506ea9c",
+  "method": "Local full-file SHA-256 and Git blob SHA matched pinned remote recursive tree",
+  "sources": [
+    {
+      "id": "N1",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/41_cut_graded_universal_generator_theorem.md",
+      "role": "Grading requires one declared involution; component observer and aggregate distinction",
+      "git_blob_sha": "2fd898a5ffa26f0a5fbbed4ca1223dad3c230266",
+      "sha256": "2af3f302b1a4d5ba6365d126d3d7e3dabbd2401290efd0b3f0a781a14adbe99e",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/41_cut_graded_universal_generator_theorem.md"
+    },
+    {
+      "id": "N2",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/48_emk_algebra_cut_graded_curvature_theorem.md",
+      "role": "Canonical local EMK cut J_E=K; K even and R odd; diagonal-cut negative control",
+      "git_blob_sha": "34e34fe7ce04bacfcb474aefbec6606bcdca54a3",
+      "sha256": "e447ea282bd47ccbc62e718a8d9aab912d926a9239a662d2e02c5f58fa7563f1",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/48_emk_algebra_cut_graded_curvature_theorem.md"
+    },
+    {
+      "id": "N3",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/55_generalized_euler_emk_dock_theorem.md",
+      "role": "Native cut grading differs from dagger grading; R is a lawful flow generator and real K alone is not",
+      "git_blob_sha": "526e59f29e05dd265808be4bedcbe0f776a8ef12",
+      "sha256": "821039faf3c1edb692accd350c611a729560a2c000d014c486f47df2f3cb46ef",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/55_generalized_euler_emk_dock_theorem.md"
+    },
+    {
+      "id": "N4",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/31_cut_variational_minimal_observer_theorem.md",
+      "role": "Target-relative minimum observer rank; predecessor of the linear repair principle",
+      "git_blob_sha": "f419b5750750cd87d06465c28b2fdf6202ef93b4",
+      "sha256": "408870812cf548d7fc42ecd5c242d1c454b678733c110096fe02c371194045ff",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/31_cut_variational_minimal_observer_theorem.md"
+    }
+  ],
+  "inherited_sources": "SOURCE_PINS.json for Spectral II and RSC target-relative memory and exact descent",
+  "new_result_scope": [
+    "Common-grading obstruction for zero-extended overlapping K/R pairs",
+    "Exact minimum linear repair for the declared endpoint-summing cut",
+    "Separate grading and addressed-edge observation contracts"
+  ],
+  "additional_assumptions": [
+    "Connected finite simple graph with equal-weight endpoint readout",
+    "Direct sum of independent two-component native EMK representations",
+    "Unrestricted linear repair channels for rank minimum",
+    "Individually addressed nonzero R Cayley steps for full response recovery"
+  ],
+  "physical_field_equations_imported": [],
+  "not_established": [
+    "Physical instrument or simultaneous accessibility of the model transcript",
+    "Native interaction between distinct edge carriers",
+    "Physical metric signature, dimension or gravitational law"
+  ],
+  "novelty_boundary": "General kernel/rank repair and quotient-intertwiner principles are inherited. This finite assembly analysis is not a global priority claim."
+}

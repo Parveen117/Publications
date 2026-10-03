@@ -1,0 +1,256 @@
+{
+  "external_dependency_check_scope": "External source read and blob identified during development on 2026-09-29; offline --check does not fetch or revalidate remote files. No external engine is copied or needed at runtime.",
+  "external_sources": [
+    {
+      "commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+      "git_blob_sha1": "86366ede2f152f19cbdf0d1dbf06b2e4c0971dad",
+      "path": "operator_foundation/theory/01_NATIVE_ALGEBRA.md",
+      "purpose": "Canonical engine ownership and native finite coefficient relations; K here equals K_can R.",
+      "repository": "Parveen117/Recognition-Kernel-Framework"
+    }
+  ],
+  "historical_scope": "Original bridge note and exact script/output are preserved byte for byte. Historical manuscript filenames in that note are provenance claims from its creation, not a fresh audit of all those files. Current local theorem dependencies are pinned above.",
+  "local_upstream_sources": [
+    {
+      "git_blob_sha1": "ee4d361588221a00f9dc23b3beb27b5d59a323d1",
+      "path": "papers/thermo-compass-foundations/THEOREM.md",
+      "sha256": "783caecc1d6d0156576f07d0fea4d3f14c9c4124d1a901aaa1ac0b48c54fd7c4"
+    },
+    {
+      "git_blob_sha1": "a6e80006f0e1543d8567b16574a5683c1048002f",
+      "path": "papers/thermo-phase-field/THEOREM.md",
+      "sha256": "717de52421b2609327dd1e95321fb14d5f91c138f8ef4c4d8c0c1d129f874a1c"
+    },
+    {
+      "git_blob_sha1": "eeab6b70e61d4cb21219afc64e83e87a95930aaf",
+      "path": "papers/uncut-cut-measurement/NATIVE_IOTA_HELICAL_RESPONSE.md",
+      "sha256": "1e0823daac754c44bad137de9515d0e0ee3adfdaa0de9435edc7b36e8a46b71f"
+    },
+    {
+      "git_blob_sha1": "079a9c6616ad8ed8c2d52ddd4f545f6a79de2094",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a00_response_propagation_metric.tex",
+      "sha256": "0f2c319d975c914d7ec39f9ef35aed08a80ad54742f05650c25118ca185d0a20"
+    },
+    {
+      "git_blob_sha1": "437f3de0ab8ed31af3fd9204210e0c3454126f91",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex",
+      "sha256": "fa5ea981f7ffc4c28040df4adcd6d380fa254d47486f62c9f1447ce57bd6562c"
+    },
+    {
+      "git_blob_sha1": "e12070f344fab8b39a77b6abe9f704c516668517",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06b_classical_field_equations.tex",
+      "sha256": "a343509a201f0d5a43f7b15bd190b55b6851ae9bb668cfe47f9af83a06ecf06f"
+    },
+    {
+      "git_blob_sha1": "368212d54b3956d0a7e8886cda3dd8050ca3a997",
+      "path": "papers/ugd-kahler-propagation/NATIVE_PROPAGATION_ACTION.md",
+      "sha256": "6e96e62b7b15c63fba32122c2addfc2984c3007e08cf69cd5b08f4dbd08b3345",
+      "source_commit": "08339e0c1dc1e517185784eff3c6230167696d86"
+    },
+    {
+      "git_blob_sha1": "00398d7b0c7e33a267b53a94001b5592b20190a9",
+      "path": "papers/ugd-kahler-propagation/model.py",
+      "sha256": "e65af2feeb78483448b56ca50a4b85385245b097f684f73315f8ab7a4a0ef729",
+      "source_commit": "08339e0c1dc1e517185784eff3c6230167696d86"
+    },
+    {
+      "git_blob_sha1": "04f8f3e092796712082396e717cc21d3559e3d09",
+      "path": "papers/ugd-kahler-propagation/THERMO_GAUGE_COMPLETION.md",
+      "sha256": "9ac35f4e6bd1fc4262ba9e3d6b1f5c7d251684618975380d29abc81f0ace9068",
+      "source_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355"
+    },
+    {
+      "git_blob_sha1": "43a294e841cccb7fecaf6e833af4406f9ff445ea",
+      "path": "papers/ugd-kahler-propagation/thermo_gauge.py",
+      "sha256": "e518579c452ccef7ffbb405e029fe289938b99aa68f034bba375f109298c9a71",
+      "source_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355"
+    },
+    {
+      "git_blob_sha1": "497bbba637fc212847cfbc5a8036d96c2f462799",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a_spacetime_recognition_datum.tex",
+      "sha256": "249f33a2123bb4abeed930670ce21d887bd8930e933272d03cdac2256e0b4a03",
+      "source_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355"
+    },
+    {
+      "git_blob_sha1": "496a16bccd2f1b17f96b3763d4bdebb7c88a95b1",
+      "path": "papers/ugd-kahler-propagation/GEOMETRY_AND_SIGNATURE.md",
+      "sha256": "c84869fee581d1b407156592662934349df400ee30d79ffc777170ad5091cd4d",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "603a0e04a118ece4edcf4ea3df36b5142570e678",
+      "path": "papers/ugd-kahler-propagation/NATIVE_METRIC_DYNAMICS.md",
+      "sha256": "b42adbac04f790d0593da14fce6649a6a8a94eabe3d2c31588ae95ff71d07202",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "8bcf02ab4a355242d465644eaabc6c23a7e24241",
+      "path": "papers/ugd-kahler-propagation/metric_dynamics.py",
+      "sha256": "c1acb4227276ebcafe244e97c4911226fea50041fd8d5c57d8de09195100296c",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "9a17092625ff1e10b1dcb8560051c3c039bee7d8",
+      "path": "papers/uncut-cut-measurement/PRE_ENTROPY_SEAM_RETURN.md",
+      "sha256": "2721e43d805dec88281080063f9faf8d47654698810abb5633bcc023bcef4179",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "23410f13430d2c1ae0fbe50da6979dbd7a8012ad",
+      "path": "papers/uncut-cut-measurement/SPIN_HOLONOMY_GEOMETRY_GATE.md",
+      "sha256": "cb5ce021fa197e1590c3faf58f4e6e9b9352513da6c39c21379976a685fb3e41",
+      "source_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9"
+    },
+    {
+      "git_blob_sha1": "2460ef79b6ef95efb7622d7ce39fdb34fcfdcb6f",
+      "path": "papers/ugd-kahler-propagation/NATIVE_LOOP_CURVATURE.md",
+      "sha256": "65279abc5c8ad30b710cbdfb52e7c280c14488cead0bc8e04b6cff0100483fe9",
+      "source_commit": "57df7045dcdd55999dd26ea39fd0a2827001f9af"
+    },
+    {
+      "git_blob_sha1": "d03bbaead3e530c2bc97cba54a6e65a05f8d96f3",
+      "path": "papers/ugd-kahler-propagation/loop_curvature.py",
+      "sha256": "d57a1ac955559f976a5c411cffb1d6d7535fa752622df17febbe6f925e653328",
+      "source_commit": "57df7045dcdd55999dd26ea39fd0a2827001f9af"
+    },
+    {
+      "git_blob_sha1": "9d8f708d83297bef5ceca4a09e3ccdaf1acc49b1",
+      "path": "papers/ugd-kahler-propagation/NATIVE_MASSIVE_MATTER.md",
+      "sha256": "59874df732a965978e4199a3474a56c8437cfc65d104a717d47fc35a3ba38334",
+      "source_commit": "6263ae3cce1dc2fd2937a071c810428a57fe75b9"
+    },
+    {
+      "git_blob_sha1": "6bd28c73ad2266464518f1c27118e921707097ef",
+      "path": "papers/ugd-kahler-propagation/spin_matter.py",
+      "sha256": "d4ae31786f3c032bc3123e872e2989efece96a1050a71a92257da5c38d67522b",
+      "source_commit": "6263ae3cce1dc2fd2937a071c810428a57fe75b9"
+    },
+    {
+      "git_blob_sha1": "76accc76b205058df31985d23b4652f5689804b1",
+      "path": "papers/ugd-kahler-propagation/COUPLED_COSMOLOGICAL_SOLUTION.md",
+      "sha256": "fe54cf0474bb08386214989bc06f696dc2c9438aab2eab1709484d9fbed94301",
+      "source_commit": "b1e7dd63f004ea749bf2c298cd21ef003ce73ec7"
+    },
+    {
+      "git_blob_sha1": "07462f3c45c08d83dc63d89e6e19fd59e4f0f8eb",
+      "path": "papers/ugd-kahler-propagation/coupled_cosmology.py",
+      "sha256": "14b3bf1382383367f8f89a62213e394f482a3122f08585c3cb46106e2b25cc52",
+      "source_commit": "b1e7dd63f004ea749bf2c298cd21ef003ce73ec7"
+    },
+    {
+      "git_blob_sha1": "cb0cebc00c7bc74c79c7a101e1bd6b8928d645e1",
+      "path": "papers/ugd-kahler-propagation/PERTURBATION_STABILITY.md",
+      "sha256": "13c2300b776d4ba928aef2d521f5aa930bac7082ecc18a763ef4915e56acac47",
+      "source_commit": "52e15256540a6adc32f016efa352b3c5e23a58dd"
+    },
+    {
+      "git_blob_sha1": "3ce76bbc2db1c79a1f4a6c38959ac268ad61ca0b",
+      "path": "papers/ugd-kahler-propagation/perturbation_stability.py",
+      "sha256": "1ded774543220643cd9e1e6eda62139a2fb028fafa450ab3aebd3e38907e8dd4",
+      "source_commit": "52e15256540a6adc32f016efa352b3c5e23a58dd"
+    },
+    {
+      "git_blob_sha1": "55ccdf38db2706e978b12bc9b43ee732c741b1b0",
+      "path": "papers/ugd-kahler-propagation/ANISOTROPIC_COSMOLOGY.md",
+      "sha256": "ec077526914f46ae607e86ca85abee21729d7208834aec95b82a30255c630446"
+    },
+    {
+      "git_blob_sha1": "b1327efdd4797daea14536c22b459fe50e464474",
+      "path": "papers/ugd-kahler-propagation/anisotropic_cosmology.py",
+      "sha256": "7b9100a8e8246959c605d0aaf56f7313241c4ef6f1f8bc357fb393cb85699bc4"
+    }
+  ],
+  "protocol": "UGD_KAHLER_PROPAGATION_SOURCE_PINS_R9",
+  "publications_parent_commit": "18b65bf00e5069e533d2a83a3c910aa374e024e3",
+  "r2_parent_commit": "08339e0c1dc1e517185784eff3c6230167696d86",
+  "r2_scope": "CP-1--CP-8 consume the unchanged NP proof, matrix fixtures and PF phase theorem. Native response-cone signature and phase-current identities are algebraic; the continuum, gauge kinetic law, backgrounds and calibrations remain supplied.",
+  "r3_parent_commit": "f98224264db95cd7c4c824e6eef3433f46bbe355",
+  "r3_scope": "MG-1--MG-8 consume the unchanged NP/CP representations, thermo chart and conditional field-equation/nonselection sources. Einstein reduction requires the declared polynomial trace-action class, nonzero Palatini coefficient, invertible coframe, independent Lorentz connection and complete variations. The sixteen-channel adapter is explicit constitutive input, not unique physical selection.",
+  "r4_parent_commit": "416f91296ef7a4c77327b6baf19e6f0670522fc9",
+  "r4_scope": "LR-1--LR-8 consume unchanged GS/NP/CP/MG and earlier return/holonomy distinctions. A declared oriented quadratic loop process yields a Cartan curvature-square action, compact matrix field law and conditional Einstein coefficient relations. The real-module enlargement, readout, continuum and scale remain supplied; complete return records retain a length-scale ambiguity.",
+  "r5_parent_commit": "57df7045dcdd55999dd26ea39fd0a2827001f9af",
+  "r5_primary_references": [
+    {
+      "arxiv": "https://arxiv.org/abs/gr-qc/0505081",
+      "scope": "Spin-source dependence of Holst/Immirzi effects; attribution only, not an offline dependency.",
+      "url": "https://doi.org/10.1103/PhysRevD.73.044013"
+    },
+    {
+      "arxiv": "https://arxiv.org/abs/hep-th/0507253",
+      "scope": "Established torsion-induced effective interactions and coupling choices; our commuting-field coefficients are derived locally.",
+      "url": "https://doi.org/10.1103/PhysRevD.72.104002"
+    }
+  ],
+  "r5_scope": "SM-1--SM-8 consume unchanged GS/NP/CP/MG/LR sources. Two copies of the fixed real module admit a mass-compatible skew multiplier. A declared classical commuting-field covariant minimal action yields matter, gauge, coframe and spin equations, with full algebraic connection elimination in the zero-Holst sector. The contact interaction is retained. Primitive selection, measured masses, quantum statistics and coupled-PDE existence are not established.",
+  "r6_parent_commit": "6263ae3cce1dc2fd2937a071c810428a57fe75b9",
+  "r6_primary_references": [
+    {
+      "arxiv": "https://arxiv.org/abs/hep-th/0301129",
+      "scope": "Established homogeneous classical spinor cosmology; attribution, not an offline dependency.",
+      "url": "https://doi.org/10.1023/A:1025783118888"
+    },
+    {
+      "arxiv": "https://arxiv.org/abs/1212.0585",
+      "scope": "Einstein-Cartan-Holst spinor cosmologies and coupling-dependent effective interaction signs; attribution, not an offline dependency."
+    }
+  ],
+  "r6_scope": "CS-1--CS-8 consume unchanged GS/NP/CP/MG/LR/SM. The homogeneous neutral rest sector has an analytic positive-Lambda spinor/coframe/torsion solution, with its lapse constraint and full first-order equations retained. The positive stiff term is fixed by the SM action. A massless constant full-scalar solution has divergent torsion at its past endpoint. Parameters, module and action remain supplied; generic Cauchy existence, nonhomogeneous stability and physical calibration remain open.",
+  "r7_parent_commit": "b1e7dd63f004ea749bf2c298cd21ef003ce73ec7",
+  "r7_primary_references": [
+    {
+      "arxiv": "https://arxiv.org/abs/hep-th/0301129",
+      "scope": "Established homogeneous classical spinor cosmology; attribution only, not an offline dependency.",
+      "url": "https://doi.org/10.1023/A:1025783118888"
+    },
+    {
+      "institutional": "https://scholarworks.utrgv.edu/mss_fac/259/",
+      "scope": "Primary context for expanding-background Dirac existence and lifespan estimates. Its nonlinear theorems are not imported into the distinct CS model; PS derives its own linear estimates.",
+      "url": "https://doi.org/10.1007/s00028-022-00769-8"
+    }
+  ],
+  "r7_scope": "PS-1--PS-8 consume unchanged GS/NP/CP/MG/LR/SM/CS sources. All eight homogeneous matter components form a consistent FLRW ODE completion. The positive-Lambda CS background has bounded coupled homogeneous linear perturbations and a separate global future linear matter bound on its prescribed geometry. Nonzero spatial gradients leave the rest sector. The benchmark rescaled norm gain is bounded by sqrt(2) from t*=log(2); the massless zero-Lambda limit has secular relative growth. Full inhomogeneous Einstein-matter, anisotropic metric and nonlinear stability remain open; no empirical calibration or primitive selection is inferred.",
+  "r8_parent_commit": "52e15256540a6adc32f016efa352b3c5e23a58dd",
+  "r8_primary_references": [
+    {
+      "scope": "Henneaux, established classical Bianchi I spinor cosmologies; attribution, not an offline dependency.",
+      "url": "https://doi.org/10.1103/PhysRevD.21.857"
+    },
+    {
+      "scope": "Jantzen author-hosted primary paper on homogeneous Einstein-Dirac frame freedom and dynamics; explicitly credits the general Bianchi I solution to Henneaux.",
+      "url": "https://homepage.villanova.edu/robert.jantzen/research/articles/JMathPhys23_1137-1982-spinorsources.pdf"
+    },
+    {
+      "arxiv": "https://arxiv.org/abs/1409.4993",
+      "scope": "Saha, established nondiagonal spin stress and diagonal-metric restrictions. Our coefficients and full coframe solution are derived from the unchanged SM action."
+    }
+  ],
+  "r8_scope": "BI-1--BI-8 consume unchanged GS/NP/CP/MG/LR/SM/CS/PS sources. General homogeneous Bianchi I expansion yields native spin-shear stress and a constant-eigenvalue volume-rescaled shear law. The rest sector has explicit volume, phase, nondiagonal coframe and torsion solutions, with nonlinear future shear decay. Linearization completes the five homogeneous anisotropic metric modes around CS. Diagonal spin alignment, selected scalar-readout nonuniqueness, a fixed parallel-frame 3/2 contact-phase/rotation relation and exact original-equation controls are retained. Full spatially varying Einstein-matter, general nonlinear stability and physical calibration remain open.",
+  "r9_parent_commit": "ae6c1c370ea7cf5ba801106f85aab6953ec81863",
+  "r9_primary_references": [
+    {
+      "scope": "Exact defining SI value of c; a definition, not a fitted experimental target.",
+      "url": "https://www.bipm.org/en/si-base-units/metre"
+    },
+    {
+      "arxiv": "https://arxiv.org/abs/1710.05834",
+      "institutional_pdf": "https://ntrs.nasa.gov/api/citations/20170011356/downloads/20170011356.pdf",
+      "scope": "Section 4.1 equation (1): historical emission-dependent GW170817 speed interval; numerical metadata in SPEED_REFERENCE_DATA.json. No raw-data reanalysis or latest-bound claim.",
+      "url": "https://doi.org/10.3847/2041-8213/aa920c"
+    }
+  ],
+  "r9_scope": "SC-1--SC-8 consume unchanged PF/GS/NP/CP/MG/LR/SM/CS/PS/BI sources. Exact gauge-quotient principal symbols in an Einstein vacuum with zero background spinor and field strength give two photon and two classical tensor polarizations on the shared metric cone, plus the same native matter wavefront. The conditional ratio c_GW/c_gamma=1 is consistent with the published GW170817 interval under its emission assumptions; it is inherited from Einstein-Maxwell and is not a new discriminator against GR. All positive native chart speeds remain admitted before constitutive/calibration selection. SI c is exactly defined, massive group speed differs from the wavefront, and finite-lattice dispersion remains separate. No primitive-only physical constant, general matter-background characteristic theorem, uniquely selected action or quantum graviton is claimed.",
+  "recovered_artifacts": [
+    {
+      "path": "history/RKF_UGD_Kahler_Einstein_Bridge.md",
+      "sha256": "f16fd197f62564d7daae4169f145099828d116ba588ddc583e3720bf765ab8ce"
+    },
+    {
+      "path": "history/verification.json",
+      "sha256": "965d1ac43bababce41ce59609f50f3f3b5a804f88d04049797859c8388ad9ed5"
+    },
+    {
+      "path": "history/verify_bridge.py",
+      "sha256": "ef84ae61e9113b211b0f9b698157063313f80130066d86b25493749f5d1f6098"
+    }
+  ]
+}

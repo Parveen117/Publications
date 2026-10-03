@@ -130,6 +130,7 @@ specific application, jump straight to your programme below.**
 
 | If you are evaluating... | Go to | Headline |
 | --- | --- | --- |
+| **Thermo-led physics foundations** | [Thermo compass](papers/thermo-compass-foundations/) + [phase field](papers/thermo-phase-field/) + [geometry and propagation](papers/ugd-kahler-propagation/) + [metric dynamics](papers/ugd-kahler-propagation/NATIVE_METRIC_DYNAMICS.md) + [native loop curvature](papers/ugd-kahler-propagation/NATIVE_LOOP_CURVATURE.md) | Complete thermo gauge/metric variations, a quadratic native loop process and compact matrix field law, with conditional Einstein sectors and cosmological sign/scale relations; [results index](papers/thermo-compass-foundations/RESULTS_INDEX.md). Primitive selection and measured constants remain open. |
 | **RNKE-Q / quantum verification** (SINE, IIT Bombay) | [`papers/quantum-certified-verdicts/`](papers/quantum-certified-verdicts/) + [Quantum-Classical-public](https://github.com/Parveen117/Quantum-Classical-public) | Real 156-qubit IBM Heron QPU: auditor certified an error-suppressed GHZ state (z = -2.8), refused the uncorrected one (z = +40.8), cut corrupted circuits every time; cross-platform concordance with fault localization at z = +12.2; and a seven-qubit multi-ledger operator-memory benchmark with **CROSS_BACKEND_REPLICATION certified on three real IBM QPUs** (ibm_fez, ibm_kingston, ibm_marrakesh — 3/3 runs, all declared gates) |
 | **Battery health certification** (IITM Pravartak) | [Energy repository](https://github.com/Parveen117/Energy) | Preregistered aging-trend certification on six CALCE cells, combined p = 3.1e-11, with an Ed25519 independent-evaluator harness |
 | **ATHENA navigation / SETU communications** (FITT, TIDES) | Patent estate + product repos | These tracks are patent- and product-led (PCT/IB2025/060887, PCT/IB2026/051695, PCT/IB2026/058465); this repository is their shared research foundation |
@@ -183,3 +184,50 @@ Create a GitHub release only after:
 5. the repository is enabled in Zenodo's GitHub integration.
 
 Each GitHub release is intended to be archived by Zenodo and assigned a version DOI.
+
+## Foundations without primitive spacetime
+
+**[Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation](papers/uncut-cut-measurement/)**
+starts a public research programme in which mathematical definitions and
+measurement descriptions are themselves cuts. Version 0.7 contains twenty-nine
+written propositions covering target recovery, minimum repair memory,
+compatibility and clock-free continuation for entire families of arrows.
+It includes a shortest distinguishing-experiment construction, exhaustive
+finite checks and controls where separate transition memories fail under
+composition. It also separates observable availability from commonly admitted
+experiments and shows why pairwise safe agreement need not form a quotient.
+The novelty audit explicitly credits Spectral I/II, native RSC predecessors
+and established finite-state methods; proposition counts are not novelty claims.
+The gravity-before-curvature module reconstructs an invariant form from a
+declared EMK transport family and states the precise post-cut conditions for
+identifying transport curvature with metric curvature. Physical gravity,
+transport-sector selection and emergence of a spacetime remain open.
+The coupling extension classifies compatible K/R component graphs, rejects
+minimum edge count as a unique signature selector, and constrains a homogeneous
+coframe profile for a fixed connection. The native-grading extension proves an
+overlapping-pair obstruction and derives exact target-relative linear memory
+costs for a larger edge carrier. The interaction extension supplies graded
+inter-edge mixing, classifies its exact cuts, and constructs a proper lossy
+quotient preserving nonzero interaction. The v0.8 response extension adds a native Hermitian tensor, an exact cut-seam
+ledger and an inherited covariance ledger for signed order responses. It audits
+the existing information/curvature and thermodynamic sources and corrects a
+QTH-1 state-average/commutator converse. The v0.9 extension classifies an exact reciprocal ambiguity in the signed
+response and repairs it with one direct calibrated reading. It adds native
+pair identification, held-out response predictions and bounded-error probe
+comparison. The v1.0 extension supplies an explicit source-coupled native
+candidate, exact stationary cut elimination, and a conditional inverse-square
+shell sector. It separates a distance-law test from source-strength scaling
+and gives a physical experiment contract. Quadratic cost, capacity growth and
+physical source/ruler/readout adapters remain additional hypotheses; no gravity
+experiment has passed. The focused v1.1 capacity audit proves that the current
+native rules cannot select quadratic growth: same-size four-regular unit-weight
+graphs have distinct shell profiles. A declared three-direction graph has
+quadratic leading capacity, but its shell field is not pointwise radial.
+Current evidence includes 162 native regressions,
+2,204 stationary elimination checks, 100 parameter
+inversions and 2,700 noise-box enclosures, with
+the earlier graph-memory, signed-coupling and conditional curvature campaigns
+retained in the same source-bound certificate.
+Spacetime and the quantum/classical correspondence are explicit derivation
+targets. See the manuscript, claim ledger and reproducible certificate in the
+programme folder; the finite checks do not establish a complete physical theory.

@@ -1,0 +1,975 @@
+{
+  "action": {
+    "gapped_generator_square": true,
+    "hamiltonian_witness": [
+      "1/2",
+      "-1/2"
+    ],
+    "incompatible_mass_erased": true,
+    "independent_action_variations": 36,
+    "norm_preserving_steps": [
+      {
+        "conserved_norm": "3035/36",
+        "step": "1/7"
+      },
+      {
+        "conserved_norm": "3035/36",
+        "step": "-2/9"
+      },
+      {
+        "conserved_norm": "3035/36",
+        "step": "3/11"
+      }
+    ],
+    "periodic_spacetime_sites": 9,
+    "real_field_components": 4,
+    "wrong_multiplier_rejected": true
+  },
+  "algebra": {
+    "clifford_pairs": 16,
+    "commutant_dimension": 2,
+    "full_cut_rank": 2,
+    "massive_skew_multiplier_dimension": 0,
+    "skew_multiplier_dimension": 1,
+    "spatial_pairs": 9,
+    "trace_gram_entries": 256
+  },
+  "anisotropic_cosmology": {
+    "algebra": {
+      "axial_time_identity": true,
+      "conserved_spin_commutators": 6,
+      "trace_only_connection_directions": 6,
+      "universal_spatial_stress_forms": 54
+    },
+    "benchmark": {
+      "benchmark": [
+        {
+          "anisotropic_stress_square": "2048/21609",
+          "mean_rate": "13/21",
+          "shear_square": "16/49",
+          "volume": "7/4",
+          "z": "2"
+        },
+        {
+          "anisotropic_stress_square": "9/1250",
+          "mean_rate": "7/15",
+          "shear_square": "9/100",
+          "volume": "10/3",
+          "z": "3"
+        },
+        {
+          "anisotropic_stress_square": "625/1179648",
+          "mean_rate": "19/48",
+          "shear_square": "25/1024",
+          "volume": "32/5",
+          "z": "5"
+        },
+        {
+          "anisotropic_stress_square": "729/19668992",
+          "mean_rate": "61/168",
+          "shear_square": "81/12544",
+          "volume": "112/9",
+          "z": "9"
+        }
+      ],
+      "benchmark_future_axis_rotation": "(1/6) log(7/3)",
+      "benchmark_future_clock": "(1/2) log(7/3)",
+      "benchmark_future_contact_phase": "(1/4) log(7/3)",
+      "diagonal_spin_alignment_required": true,
+      "distinct_scaled_stress_norms": [
+        "0",
+        "2"
+      ],
+      "equal_volume_invariant": "D^2=3",
+      "full_spatially_inhomogeneous_stability": "NOT_ESTABLISHED"
+    },
+    "coframe": {
+      "exact_series_order": 6,
+      "five_shear_mode_pairings": 25,
+      "missing_rotation_control": true,
+      "noncommuting_coframe_series": 2
+    },
+    "original": {
+      "coframe_equations": 48,
+      "connection_equations": 72,
+      "effective_stress_components": 48,
+      "matter_equations": 24,
+      "nonrest_general_metric_jet": true,
+      "omitted_torque_nonzero_coframe_components": 9,
+      "solution_jets": 3
+    },
+    "volume": {
+      "contact_phase_rotation_ratio": "3/2",
+      "scope": "Ratio within the declared rest-sector action, not quantum spin or measured calibration",
+      "volume_constraint_and_clock_checks": 16,
+      "zero_shear_CS_limit": true
+    }
+  },
+  "balance": {
+    "missing_drift_failures": 15,
+    "variable_coefficient_jets": 15
+  },
+  "boundaries": {
+    "constants_G_c_Lambda_alpha_hbar": "NOT_PREDICTED",
+    "cosmological_benchmark": "SUPPLIED_DIMENSIONLESS_PARAMETERS_NOT_PHYSICAL_CALIBRATION",
+    "cosmological_perturbation_stability": "LINEAR_COUPLED_HOMOGENEOUS_BIANCHI_I_PS2_PS3_BI6; SPATIALLY_INHOMOGENEOUS_GRAVITY_OPEN",
+    "cosmological_relation": "Lambda=-12 sigma u^2; kappa Lambda=6/beta; NOT_PHYSICALLY_CALIBRATED",
+    "coupled_einstein_matter_PDE_existence": "EXPLICIT_HOMOGENEOUS_NEUTRAL_REST_FLRW_AND_GENERAL_BIANCHI_I_FAMILIES_CS_BI; GENERAL_CAUCHY_PROBLEM_OPEN",
+    "curved_spin_matter_coupling": "CONDITIONAL_DOUBLED_REAL_CLASSICAL_ACTION_SM1_SM6",
+    "einstein_hilbert_action": "CONDITIONAL_NATIVE_LOOP_LIMIT_LR1_LR4_NOT_PRIMITIVE_SELECTION",
+    "empirical_or_independent_review": "LITERATURE_CONSISTENCY_COMPARISON_SC7_ONLY; INDEPENDENT_EXPERIMENTAL_VALIDATION_AND_REVIEW_NOT_PERFORMED",
+    "formal_proof_assistant": "NOT_PERFORMED",
+    "full_seam_faithful_representation": "NOT_CLAIMED",
+    "geometric_regularization": "NOT_CLAIMED; SINGULAR_PAST_ENDPOINT_WITH_DIVERGENT_TORSION",
+    "homogeneous_matter_completion": "ALL_EIGHT_COMPONENT_NONLINEAR_ODE_PS1_BI1_BI2; NONLINEAR_STABILITY_FOR_GENERAL_MATTER_NOT_ESTABLISHED",
+    "lambda_to_propagation_coframe": "NOT_SELECTED_BY_NATIVE_PROCESS",
+    "loop_process": "DECLARED_QUADRATIC_ORIENTED_READOUT_WITH_SUPPLIED_CONNECTION_AND_SCALE",
+    "massive_multiplier_minimality": "TWO_COPIES_WITHIN_CONSTANT_SKEW_MULTIPLIERS_ON_FIXED_REAL_FOUR_MODULE_COPIES",
+    "native_readout_and_module_selection": "NOT_DERIVED_FROM_PRIMITIVE_LAWS",
+    "nonlinear_anisotropic_result": "EXACT_REST_BIANCHI_I_FAMILY_WITH_FUTURE_SHEAR_DECAY_BI3_BI6; NOT_GENERAL_NONLINEAR_STABILITY",
+    "observational_comparison": "SC7_CONSISTENT_WITH_PUBLISHED_GW170817_EMISSION_DEPENDENT_BOUND; NO_RAW_DATA_REANALYSIS_OR_NEW_EMPIRICAL_DISCRIMINATOR",
+    "physical_particle_masses_and_quantum_statistics": "NOT_DERIVED",
+    "physical_signature_selection": "NOT_DERIVED_FROM_NATIVE_AXIOMS",
+    "quantum_graviton": "NOT_DERIVED; SC4_TWO_CLASSICAL_TENSOR_POLARIZATIONS_ONLY",
+    "rest_sector_gradient_closure": "FAILS_FOR_EVERY_NONZERO_WAVEVECTOR_PS4",
+    "spatial_matter_stability": "GLOBAL_FUTURE_LINEAR_Hr_BOUND_ON_PRESCRIBED_CS_GEOMETRY_PS5_PS6; NOT_FULL_EINSTEIN_MATTER_PERTURBATIONS",
+    "speed_calibration": "NATIVE_WAVE_FAMILY_ADMITS_ALL_POSITIVE_SPEEDS; SI_c_IS_DEFINED_EXACT_NOT_A_FIT_TARGET",
+    "spin_shear_rotation": "CONDITIONAL_NATIVE_STRESS_COMMUTATOR_AND_FIXED_PARALLEL_FRAME_PHASE_RELATION; NOT_QUANTUM_SPIN_OR_EMPIRICAL_CALIBRATION",
+    "thermo_to_metric_variation": "EXPLICIT_LOCAL_CONSTITUTIVE_ADAPTER_MG5",
+    "torsion_elimination": "FULL_CONNECTION_SOLUTION_FOR_ZERO_HOLST_WITH_CONTACT_TERM_RETAINED",
+    "universal_proofs": "Written in GS/NP/CP/MG/LR/SM/CS/PS/BI/SC notes; coefficient ranks and complete polynomial coefficient checks exhaust their fixed algebraic problems; variable fixtures and truncated series are not universal proofs",
+    "vacuum_speed_ratio": "c_GW/c_gamma=1_CONDITIONAL_ON_SHARED_METRIC_ACTION_SC6; NOT_PRIMITIVE_ONLY_OR_DISTINCT_FROM_GR"
+  },
+  "coupled_cosmology": {
+    "benchmark": {
+      "interpretation": "Chosen dimensionless benchmark, not measured cosmological or particle constants",
+      "massless_constant_scalar_control": true,
+      "parameter_values": {
+        "Lambda": "1/3",
+        "Z": "4/3",
+        "conserved_number": "4/3",
+        "kappa": "1",
+        "loop_scale": "1/6",
+        "m": "1/2",
+        "readout_beta": "18"
+      },
+      "rows": [
+        {
+          "connection_scalar": "8/3",
+          "energy": "8/3",
+          "metric_scalar": "0",
+          "number_density": "8/3",
+          "pressure": "4/3",
+          "rate": "1",
+          "torsion_contraction": "-32/3",
+          "volume": "1/2",
+          "z": "3/2"
+        },
+        {
+          "connection_scalar": "2",
+          "energy": "1",
+          "metric_scalar": "4/3",
+          "number_density": "4/3",
+          "pressure": "1/3",
+          "rate": "2/3",
+          "torsion_contraction": "-8/3",
+          "volume": "1",
+          "z": "2"
+        },
+        {
+          "connection_scalar": "5/3",
+          "energy": "5/12",
+          "metric_scalar": "3/2",
+          "number_density": "2/3",
+          "pressure": "1/12",
+          "rate": "1/2",
+          "torsion_contraction": "-2/3",
+          "volume": "2",
+          "z": "3"
+        },
+        {
+          "connection_scalar": "3/2",
+          "energy": "3/16",
+          "metric_scalar": "35/24",
+          "number_density": "1/3",
+          "pressure": "1/48",
+          "rate": "5/12",
+          "torsion_contraction": "-1/6",
+          "volume": "4",
+          "z": "5"
+        }
+      ]
+    },
+    "coupled": {
+      "cartan_equations": 72,
+      "charged_zero_field_rejected": true,
+      "coframe_equations": 48,
+      "cosmological_sector": "positive Lambda, finite native return-scale and readout",
+      "effective_stress_components": 48,
+      "full_scalar_curvature_checks": 3,
+      "lapse_scale_variations": 6,
+      "matter_equations": 24,
+      "omitted_contorsion_nonzero_residuals": {
+        "cartan": 3,
+        "coframe": 6,
+        "matter": 2
+      },
+      "solution_jets": 3
+    },
+    "cubic": {
+      "cubic_components": 8,
+      "monomials_per_component": 120,
+      "rest_projector_rank": 4,
+      "rest_sector_preserved": true
+    },
+    "volume": {
+      "lapse_constraint_retained": true,
+      "off_constraint_propagation_checks": 16,
+      "positive_Lambda_volume_phase_checks": 72,
+      "zero_Lambda_contraction_checks": 36
+    }
+  },
+  "external_pins_scope": "External source read and blob identified during development on 2026-09-29; offline --check does not fetch or revalidate remote files. No external engine is copied or needed at runtime.",
+  "geometry": {
+    "existence_uniqueness": "Explicit solution and comparison proof in GS-4; not inferred from samples",
+    "gradient_reflection": {
+      "einstein": false,
+      "ricci_diagonal": [
+        "-1",
+        "1",
+        "-1",
+        "1"
+      ],
+      "scalar": "1"
+    },
+    "lorentzian_product_checks": [
+      {
+        "cosmological_coefficient": "-1/2",
+        "ell": "1",
+        "scalar": "-2",
+        "x1": "1",
+        "x2": "1"
+      },
+      {
+        "cosmological_coefficient": "-1/2",
+        "ell": "1",
+        "scalar": "-2",
+        "x1": "1",
+        "x2": "3/2"
+      },
+      {
+        "cosmological_coefficient": "-1/2",
+        "ell": "1",
+        "scalar": "-2",
+        "x1": "2/3",
+        "x2": "1"
+      },
+      {
+        "cosmological_coefficient": "-1/2",
+        "ell": "1",
+        "scalar": "-2",
+        "x1": "2/3",
+        "x2": "3/2"
+      },
+      {
+        "cosmological_coefficient": "-1/8",
+        "ell": "2",
+        "scalar": "-1/2",
+        "x1": "1",
+        "x2": "1"
+      },
+      {
+        "cosmological_coefficient": "-1/8",
+        "ell": "2",
+        "scalar": "-1/2",
+        "x1": "1",
+        "x2": "3/2"
+      },
+      {
+        "cosmological_coefficient": "-1/8",
+        "ell": "2",
+        "scalar": "-1/2",
+        "x1": "2/3",
+        "x2": "1"
+      },
+      {
+        "cosmological_coefficient": "-1/8",
+        "ell": "2",
+        "scalar": "-1/2",
+        "x1": "2/3",
+        "x2": "3/2"
+      }
+    ],
+    "monge_ampere_jet_checks": 9
+  },
+  "local_upstream_pins_checked": 26,
+  "loop_curvature": {
+    "action_variation": {
+      "compared_to": "Unchanged MG Einstein-tensor-checked action",
+      "independent_seed_coframe_variations": 96
+    },
+    "cartan_action": {
+      "even_cut_restores_holst_freedom": true,
+      "full_trace_has_zero_bulk_holst": true,
+      "independent_connection_jets": 12,
+      "three_weight_readout_reductions": 36
+    },
+    "coefficients": {
+      "intertwiner_constraint_rank": 62,
+      "intertwiner_dimension": 2,
+      "intertwiner_unknowns": 64,
+      "minimality_scope": "Two copies suffice and one copy fails, within copies of the fixed real-four module",
+      "real_embedding_product_checks": 64,
+      "representations": [
+        {
+          "lie_dimension": 10,
+          "name": "original_real_four",
+          "real_dimension": 4,
+          "square_sign": 1
+        },
+        {
+          "lie_dimension": 10,
+          "name": "extra_native_cut",
+          "real_dimension": 8,
+          "square_sign": 1
+        },
+        {
+          "lie_dimension": 10,
+          "name": "extra_native_return",
+          "real_dimension": 8,
+          "square_sign": -1
+        }
+      ]
+    },
+    "compact_equation": {
+      "bianchi_connection_jets": 4,
+      "includes_full_trace_and_projected_readouts": true,
+      "independent_compact_equation_splits": 12
+    },
+    "holonomy": {
+      "approximation_scope": "Exact Taylor coefficients; continuum convergence is proved in LR-1, not sampled",
+      "based_affine_connection_rectangles": 12,
+      "independent_four_volume_readouts": 4,
+      "inverse_series_order": 4
+    },
+    "invariant_forms": {
+      "representations": [
+        {
+          "full_cartan_constraint_rank": 54,
+          "full_cartan_invariant_dimension": 1,
+          "lorentz_constraint_rank": 52,
+          "lorentz_invariant_dimension": 3,
+          "name": "original_real_four",
+          "symmetric_unknowns": 55
+        },
+        {
+          "full_cartan_constraint_rank": 54,
+          "full_cartan_invariant_dimension": 1,
+          "lorentz_constraint_rank": 52,
+          "lorentz_invariant_dimension": 3,
+          "name": "extra_native_return",
+          "symmetric_unknowns": 55
+        }
+      ]
+    },
+    "selection": {
+      "finite_seed_zero_scale_is_characteristic_only": true,
+      "nonlorentz_readout_variation": "4",
+      "oriented_density_sign_control": [
+        "-2",
+        "2"
+      ],
+      "positive_norms": [
+        "2",
+        "2"
+      ],
+      "seed_and_readout_selection": "DECLARED_NOT_PRIMITIVE_DERIVED",
+      "unit_dilations": [
+        {
+          "cosmological": "3/16",
+          "dilation": "2",
+          "kappa": "4",
+          "unchanged_product": "3/4"
+        },
+        {
+          "cosmological": "1/3",
+          "dilation": "3/2",
+          "kappa": "9/4",
+          "unchanged_product": "3/4"
+        },
+        {
+          "cosmological": "27/4",
+          "dilation": "1/3",
+          "kappa": "1/9",
+          "unchanged_product": "3/4"
+        }
+      ]
+    },
+    "solutions": {
+      "explicit_metric_checks": [
+        {
+          "cartan_curvature_zero": true,
+          "coordinate": "1",
+          "cosmological": "-3",
+          "ell": "1",
+          "metric_curvature_nonzero": true,
+          "scalar": "-12",
+          "sector": "anti_de_Sitter"
+        },
+        {
+          "cartan_curvature_zero": true,
+          "coordinate": "2/3",
+          "cosmological": "-3",
+          "ell": "1",
+          "metric_curvature_nonzero": true,
+          "scalar": "-12",
+          "sector": "anti_de_Sitter"
+        },
+        {
+          "cartan_curvature_zero": true,
+          "coordinate": "1",
+          "cosmological": "-3/4",
+          "ell": "2",
+          "metric_curvature_nonzero": true,
+          "scalar": "-3",
+          "sector": "anti_de_Sitter"
+        },
+        {
+          "cartan_curvature_zero": true,
+          "coordinate": "2/3",
+          "cosmological": "-3/4",
+          "ell": "2",
+          "metric_curvature_nonzero": true,
+          "scalar": "-3",
+          "sector": "anti_de_Sitter"
+        },
+        {
+          "cartan_curvature_zero": true,
+          "coordinate": "1",
+          "cosmological": "3",
+          "ell": "1",
+          "metric_curvature_nonzero": true,
+          "scalar": "12",
+          "sector": "de_Sitter"
+        },
+        {
+          "cartan_curvature_zero": true,
+          "coordinate": "2/3",
+          "cosmological": "3",
+          "ell": "1",
+          "metric_curvature_nonzero": true,
+          "scalar": "12",
+          "sector": "de_Sitter"
+        },
+        {
+          "cartan_curvature_zero": true,
+          "coordinate": "1",
+          "cosmological": "3/4",
+          "ell": "2",
+          "metric_curvature_nonzero": true,
+          "scalar": "3",
+          "sector": "de_Sitter"
+        },
+        {
+          "cartan_curvature_zero": true,
+          "coordinate": "2/3",
+          "cosmological": "3/4",
+          "ell": "2",
+          "metric_curvature_nonzero": true,
+          "scalar": "3",
+          "sector": "de_Sitter"
+        }
+      ],
+      "nonzero_weyl_algebraic_controls": 2,
+      "weyl_scope": "Pointwise algebraic controls; the displayed conformal metrics are actual local solutions"
+    }
+  },
+  "metric_dynamics": {
+    "einstein": {
+      "algebraic_curvature_witnesses": [
+        {
+          "einstein": true,
+          "name": "constant_curvature",
+          "scalar": "8"
+        },
+        {
+          "einstein": false,
+          "name": "non_einstein",
+          "scalar": "60"
+        },
+        {
+          "einstein": true,
+          "name": "ricci_flat_weyl",
+          "scalar": "0"
+        }
+      ],
+      "holst_bianchi_variations": 432,
+      "independent_coframe_variations": 432,
+      "nonflat_weyl_scope": "Algebraic pointwise curvature witness, not a constructed global solution",
+      "pure_holst_does_not_impose_einstein": true
+    },
+    "maxwell_stress": {
+      "coupling_is_calibrated": true,
+      "coupling_square": "7/5",
+      "independent_metric_action_variations": 48,
+      "trace_free_stress_fixtures": 3
+    },
+    "nieh_yan": {
+      "boundary_term_cannot_be_omitted_pointwise": true,
+      "independent_first_jet_checks": 3
+    },
+    "restricted_variations": {
+      "conformal_trace_only_counterexamples": [
+        {
+          "ricci_diagonal": [
+            "3",
+            "1",
+            "1",
+            "1"
+          ],
+          "scalar": "0",
+          "t": "1"
+        },
+        {
+          "ricci_diagonal": [
+            "3/4",
+            "1/4",
+            "1/4",
+            "1/4"
+          ],
+          "scalar": "0",
+          "t": "2"
+        },
+        {
+          "ricci_diagonal": [
+            "4/3",
+            "4/9",
+            "4/9",
+            "4/9"
+          ],
+          "scalar": "0",
+          "t": "3/2"
+        }
+      ],
+      "nonlinear_coordinate_pullback_ricci_zero": true
+    },
+    "thermo_coframe": {
+      "explicit_stable_channel_inverses": 16,
+      "number_of_channels_claimed_minimal": false,
+      "thermo_to_coframe_rank": 16,
+      "thermo_to_metric_rank": 10
+    },
+    "trace_class": {
+      "bivector_pairing_rank": 6,
+      "degree_four_words": 11,
+      "fourth_trace_entries": 512,
+      "real_multiplier_checks": 3,
+      "spin_vector_actions": 24,
+      "trace_word_controls": 66
+    },
+    "variation_ranks": {
+      "degenerate_metric_rank": 3,
+      "degenerate_torsion_rank": 18,
+      "nondegenerate_fixtures": [
+        {
+          "coframe_determinant": "1",
+          "lorentz_kernel_dimension": 6,
+          "metric_variation_rank": 10,
+          "torsion_equation_rank": 24
+        },
+        {
+          "coframe_determinant": "211/70",
+          "lorentz_kernel_dimension": 6,
+          "metric_variation_rank": 10,
+          "torsion_equation_rank": 24
+        },
+        {
+          "coframe_determinant": "31681/32000",
+          "lorentz_kernel_dimension": 6,
+          "metric_variation_rank": 10,
+          "torsion_equation_rank": 24
+        }
+      ],
+      "right_inverse_controls": 30
+    }
+  },
+  "perturbation_stability": {
+    "bilinears": {
+      "conserved_number_and_bilinear_radius": true,
+      "general_bilinear_jets": 6,
+      "involutions": 3,
+      "universal_commutator_identities": 6
+    },
+    "bounds": {
+      "benchmark": [
+        {
+          "physical_gain_squared": "1",
+          "rescaled_gain_squared": "1",
+          "z": "2"
+        },
+        {
+          "physical_gain_squared": "2/3",
+          "rescaled_gain_squared": "4/3",
+          "z": "3"
+        },
+        {
+          "physical_gain_squared": "2/5",
+          "rescaled_gain_squared": "8/5",
+          "z": "5"
+        },
+        {
+          "physical_gain_squared": "2/9",
+          "rescaled_gain_squared": "16/9",
+          "z": "9"
+        }
+      ],
+      "benchmark_future_rescaled_gain_squared": "2",
+      "benchmark_physical_gain_squared": "2 exp(-t)",
+      "benchmark_start": "t*=log(2), a(t*)=1",
+      "full_inhomogeneous_metric_stability": "NOT_ESTABLISHED",
+      "gradient_leakage_ranks": [
+        4,
+        4,
+        4
+      ],
+      "integrated_gain_checks": 16,
+      "zero_Lambda_massless_shear_norms": [
+        "1",
+        "2",
+        "10"
+      ]
+    },
+    "coupled": {
+      "all_eight_homogeneous_components_accounted_for": true,
+      "constrained_metric_tangent_checks": 16,
+      "scope": "Linear homogeneous coupled FLRW sector; not anisotropic or inhomogeneous metric stability",
+      "transverse_energy_checks": 32
+    },
+    "homogeneous": {
+      "cartan_components": 48,
+      "coframe_components": 32,
+      "effective_stress_components": 32,
+      "matter_components": 16,
+      "nonlinear_completion": "Homogeneous FLRW metric with all eight matter components; not a solved general inhomogeneous PDE",
+      "nonrest_first_order_jets": 2
+    },
+    "linearization": {
+      "exact_symmetric_spectrum": "(+s,+s,-s,-s,0,0,0,0)",
+      "full_eight_component_frames": 16,
+      "independent_cubic_jacobian_columns": 128,
+      "positive_instantaneous_gain_witness": true,
+      "real_fourier_blocks": 32,
+      "volume_phase_forcing_checked": true
+    }
+  },
+  "protocol": "UGD_KAHLER_PROPAGATION_R9",
+  "recovered": {
+    "centralizer_commutators": "exact",
+    "direct_Levi_Civita_vs_logdet_Ricci": [
+      {
+        "det_hessian": "1",
+        "point": [
+          "0",
+          "0"
+        ],
+        "ricci_xx": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      },
+      {
+        "det_hessian": "227/144",
+        "point": [
+          "1/3",
+          "1/2"
+        ],
+        "ricci_xx": [
+          [
+            "37296/51529",
+            "-12960/51529"
+          ],
+          [
+            "-12960/51529",
+            "-4410/51529"
+          ]
+        ]
+      },
+      {
+        "det_hessian": "11/4",
+        "point": [
+          "-1/2",
+          "1"
+        ],
+        "ricci_xx": [
+          [
+            "52/121",
+            "28/121"
+          ],
+          [
+            "28/121",
+            "10/121"
+          ]
+        ]
+      }
+    ],
+    "native_RKL_relations": "exact",
+    "nonflat_Einstein_example": "PASS, c=-1/2",
+    "status": "PASS"
+  },
+  "source_sha256": {
+    "ANISOTROPIC_COSMOLOGY.md": "ec077526914f46ae607e86ca85abee21729d7208834aec95b82a30255c630446",
+    "COUPLED_COSMOLOGICAL_SOLUTION.md": "fe54cf0474bb08386214989bc06f696dc2c9438aab2eab1709484d9fbed94301",
+    "GEOMETRY_AND_SIGNATURE.md": "c84869fee581d1b407156592662934349df400ee30d79ffc777170ad5091cd4d",
+    "NATIVE_LOOP_CURVATURE.md": "65279abc5c8ad30b710cbdfb52e7c280c14488cead0bc8e04b6cff0100483fe9",
+    "NATIVE_MASSIVE_MATTER.md": "59874df732a965978e4199a3474a56c8437cfc65d104a717d47fc35a3ba38334",
+    "NATIVE_METRIC_DYNAMICS.md": "b42adbac04f790d0593da14fce6649a6a8a94eabe3d2c31588ae95ff71d07202",
+    "NATIVE_PROPAGATION_ACTION.md": "6e96e62b7b15c63fba32122c2addfc2984c3007e08cf69cd5b08f4dbd08b3345",
+    "PERTURBATION_STABILITY.md": "13c2300b776d4ba928aef2d521f5aa930bac7082ecc18a763ef4915e56acac47",
+    "README.md": "a4058115a4ec810a9aec8cbd19662564c4e724188450ec67d995be888eb805c7",
+    "SOURCE_PINS.json": "f2bea7b9ceaad26c484814e8a8163b99e5ac0aa78fa8645233d2f9467dce406a",
+    "SPEED_AND_CALIBRATION.md": "c967deda00b62f524a73744b7a0d77d18f59dd0c43ba6f812708c71a5709835d",
+    "SPEED_REFERENCE_DATA.json": "230c56f1e7b37f2c33fa0cbc3d6fa038798dc9701d77890da2b390078817baab",
+    "THERMO_GAUGE_COMPLETION.md": "9ac35f4e6bd1fc4262ba9e3d6b1f5c7d251684618975380d29abc81f0ace9068",
+    "anisotropic_cosmology.py": "7b9100a8e8246959c605d0aaf56f7313241c4ef6f1f8bc357fb393cb85699bc4",
+    "coupled_cosmology.py": "14b3bf1382383367f8f89a62213e394f482a3122f08585c3cb46106e2b25cc52",
+    "history/RKF_UGD_Kahler_Einstein_Bridge.md": "f16fd197f62564d7daae4169f145099828d116ba588ddc583e3720bf765ab8ce",
+    "history/verification.json": "965d1ac43bababce41ce59609f50f3f3b5a804f88d04049797859c8388ad9ed5",
+    "history/verify_bridge.py": "ef84ae61e9113b211b0f9b698157063313f80130066d86b25493749f5d1f6098",
+    "loop_curvature.py": "d57a1ac955559f976a5c411cffb1d6d7535fa752622df17febbe6f925e653328",
+    "metric_dynamics.py": "c1acb4227276ebcafe244e97c4911226fea50041fd8d5c57d8de09195100296c",
+    "model.py": "e65af2feeb78483448b56ca50a4b85385245b097f684f73315f8ab7a4a0ef729",
+    "perturbation_stability.py": "1ded774543220643cd9e1e6eda62139a2fb028fafa450ab3aebd3e38907e8dd4",
+    "speed_calibration.py": "96b88beb851e8434c1a6ad11601c86e34f99aef8bed55be90ffd2b9c7bec3d2a",
+    "spin_matter.py": "d4ae31786f3c032bc3123e872e2989efece96a1050a71a92257da5c38d67522b",
+    "thermo_gauge.py": "e518579c452ccef7ffbb405e029fe289938b99aa68f034bba375f109298c9a71",
+    "verify.py": "2f15e6bf05e7bbc404daa133b78aef19ec99ba1902eece32b47d88e56c8d2c5b"
+  },
+  "speed_calibration": {
+    "calibration": {
+      "absolute_SI_speed": "NOT_DERIVED",
+      "admitted_native_speeds": [
+        "1/2",
+        "1",
+        "3"
+      ],
+      "calibration_fixture_units": "DECLARED_ABSTRACT_LENGTH_PER_TIME_NOT_MEASUREMENTS",
+      "calibration_fixture_values": [
+        "1",
+        "3",
+        "5/3"
+      ],
+      "countermodel_scope": "DIFFERENT_CONSTITUTIVE_METRICS; NOT_A_COUNTEREXAMPLE_TO_SHARED_METRIC_THEOREM",
+      "lattice_speed_squared": [
+        "1",
+        "4"
+      ]
+    },
+    "characteristics": {
+      "coframes": 3,
+      "independent_maxwell_columns": 84,
+      "independent_ricci_columns": 210,
+      "nonnull_covectors": 9,
+      "nonnull_ranks": {
+        "einstein": 6,
+        "maxwell": 3,
+        "native_matter": 8
+      },
+      "null_covectors": 12,
+      "null_ranks": {
+        "einstein": 4,
+        "maxwell": 1,
+        "native_matter": 4
+      },
+      "physical_null_polarizations": {
+        "classical_metric": 2,
+        "photon": 2
+      },
+      "quantum_graviton": "NOT_DERIVED",
+      "scope": "LINEARIZED_EINSTEIN_VACUUM_WITH_ZERO_BACKGROUND_MATTER_AND_FIELD_STRENGTH"
+    },
+    "comparison": {
+      "SI_value_status": "EXACT_DEFINING_CONSTANT_NOT_AN_INDEPENDENT_FIT_TARGET",
+      "comparison": "CONSISTENT_WITH_PUBLISHED_EMISSION_MODEL_DEPENDENT_BOUND",
+      "experimental_fit_parameters": 0,
+      "fractional_difference": "0",
+      "independent_discriminator_against_GR": false,
+      "origin": "CONDITIONAL_SHARED_METRIC_EINSTEIN_MAXWELL_REDUCTION; NOT_PRIMITIVE_ONLY_SELECTION",
+      "published_fractional_interval": [
+        "-3/1000000000000000",
+        "7/10000000000000000"
+      ],
+      "raw_data_reanalysis": false,
+      "source_lag_prediction": false,
+      "speed_ratio": "1"
+    },
+    "massive": {
+      "dispersion_cases": 4,
+      "group_front_distinction": "MASS_IS_LOWER_ORDER; FINITE_MOMENTUM_GROUP_SPEED_IS_SMALLER_IF_MASS_POSITIVE",
+      "on_shell_cases": 3,
+      "units": "NATIVE_DIMENSIONLESS_CHART; NO_HBAR_OR_PARTICLE_MASS_CALIBRATION"
+    }
+  },
+  "spin_matter": {
+    "algebra": {
+      "benchmark": {
+        "axial_square": -864,
+        "pseudoscalar": 0,
+        "scalar": -12,
+        "vector": [
+          14,
+          -4,
+          0,
+          6
+        ],
+        "vector_square": -144
+      },
+      "commutant_rank": 60,
+      "commutant_unknowns": 64,
+      "fierz_identities": 2,
+      "naive_positive_Lambda_mass_identification_rejected": true,
+      "quartic_monomials_per_identity": 330,
+      "real_components": 8,
+      "rest_energy_witness": [
+        "-1",
+        "1"
+      ],
+      "skew_commutant_rank": 63
+    },
+    "covariance": {
+      "local_lorentz_jets": 2,
+      "nonzero_connection_inhomogeneities": 8,
+      "rotation_and_boost_checked": true
+    },
+    "matter": {
+      "gauge_source_components": 8,
+      "independent_euler_components": 16,
+      "local_phase_covariance_jets": 2,
+      "missing_torsion_trace_failures": 2,
+      "off_shell_noether_jets": 2
+    },
+    "sources": {
+      "independent_coframe_variations": 32,
+      "independent_spin_variations": 48
+    },
+    "torsion": {
+      "connection_unknowns": 24,
+      "effective_cubic_variations": 24,
+      "full_connection_hessian_rank": 24,
+      "quartic_action_checks": 3,
+      "rational_contact_densities": [
+        "-1205/784",
+        "-185/441",
+        "-5/8"
+      ],
+      "stationary_components": 72,
+      "torsion_trace_zero": true
+    }
+  },
+  "status": "PASS_EXACT_CONDITIONAL_CONTROLS",
+  "symbols": {
+    "constitutive_fixtures": 3,
+    "covectors_checked": 243,
+    "freely_calibrated_speed_roots": [
+      "1/2",
+      "3"
+    ],
+    "singular_coframe_rejected": true,
+    "split_null_cone_not_hyperbolic": true
+  },
+  "thermo_gauge": {
+    "boundaries": {
+      "continuum_and_metric": "SUPPLIED",
+      "current_mass_interpretation": "NOT_CLAIMED",
+      "gauge_kinetic_action": "DECLARED",
+      "global_or_coupled_well_posedness": "NOT_PROVED",
+      "physical_constants": "NOT_PREDICTED"
+    },
+    "cone": {
+      "cone_fixtures": 135,
+      "hermitian_dimension": 4,
+      "null_current_fixtures": 81,
+      "rational_thermo_example": {
+        "current": [
+          7,
+          -2,
+          0,
+          3
+        ],
+        "hessian": [
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            10
+          ]
+        ],
+        "norm": -36
+      },
+      "relative_phase_control": true,
+      "thermo_pair_decompositions": 24
+    },
+    "euler_lagrange": {
+      "exact_lagrangian_variations": 260,
+      "independent_jet_cases": 8,
+      "nonconserved_source_controls": 4,
+      "zero_field_counterexamples": [
+        {
+          "channels": 2,
+          "full_maxwell_equations_satisfied": false,
+          "map_equations_satisfied": true,
+          "rank": 2
+        },
+        {
+          "channels": 4,
+          "full_maxwell_equations_satisfied": false,
+          "map_equations_satisfied": false,
+          "rank": 4
+        }
+      ]
+    },
+    "gauge": {
+      "independent_source_variations": 60,
+      "local_gauge_jets": 15,
+      "off_shell_noether_identities": 15
+    },
+    "protocol": "THERMO_GAUGE_COMPLETION_CP1_CP8",
+    "ranks": {
+      "additional_rank_fixtures": 28,
+      "sharp_channel_table": [
+        {
+          "channels": 1,
+          "curvature_rank": 2,
+          "map_rank": 2
+        },
+        {
+          "channels": 2,
+          "curvature_rank": 4,
+          "map_rank": 4
+        },
+        {
+          "channels": 3,
+          "curvature_rank": 2,
+          "map_rank": 4
+        },
+        {
+          "channels": 4,
+          "curvature_rank": 0,
+          "map_rank": 4
+        }
+      ]
+    },
+    "thermo_chart": {
+      "exact_chart_fixtures": 9,
+      "origin_curvature": "-5/108",
+      "stable_inverse_and_gauge_gradient": true
+    }
+  }
+}

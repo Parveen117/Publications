@@ -1,0 +1,123 @@
+{
+  "version": "0.8",
+  "retrieved_and_verified": "2026-09-25",
+  "publication_parent_commit": "57ba90ad94b0471b90b7ad3ea0177d0778c22183",
+  "method": "Full-file SHA-256 and Git blob SHA matched immutable remote trees",
+  "sources": [
+    {
+      "id": "R1",
+      "repository": "Parveen117/Publications",
+      "commit": "57ba90ad94b0471b90b7ad3ea0177d0778c22183",
+      "path": "papers/curvature-information-duality/certificates/cid1_curvature_information_duality.py",
+      "role": "CID-1 total covariance and metric-independent residue in its declared response algebra",
+      "git_blob_sha": "26a53ac7ccaea524fee03f8a0a103a070f785303",
+      "sha256": "e4207d4d77ff71ff4014f05205f15600699fb516dc4ab7721f0fa07b3ba20186",
+      "url": "https://github.com/Parveen117/Publications/blob/57ba90ad94b0471b90b7ad3ea0177d0778c22183/papers/curvature-information-duality/certificates/cid1_curvature_information_duality.py"
+    },
+    {
+      "id": "R2",
+      "repository": "Parveen117/Publications",
+      "commit": "57ba90ad94b0471b90b7ad3ea0177d0778c22183",
+      "path": "papers/curvature-information-duality/certificates/qth1_quantum_recognition_information.py",
+      "role": "QTH-1 rational SLD tensor; state-average versus operator noncommutativity audited and corrected in this PR",
+      "git_blob_sha": "20e39eee4a4fb31b74b4f4b4b9be9feb05ffd868",
+      "sha256": "f661838ae5c169bb80c51e281e4252f1e3be55d51e2e488c23bc12a93a9bd4f6",
+      "url": "https://github.com/Parveen117/Publications/blob/57ba90ad94b0471b90b7ad3ea0177d0778c22183/papers/curvature-information-duality/certificates/qth1_quantum_recognition_information.py"
+    },
+    {
+      "id": "R3",
+      "repository": "Parveen117/Publications",
+      "commit": "57ba90ad94b0471b90b7ad3ea0177d0778c22183",
+      "path": "papers/curvature-information-duality/LINEAGE.md",
+      "role": "Public audit of vault appendix: information-curvature tensor declared, not certified wholesale",
+      "git_blob_sha": "fa79135f248746644e52c5d9f808fa7f588abf5c",
+      "sha256": "cde78cd3d3eb6a998ef3706aba95bf03dbad5077d435c52c34f2ddadb081ccca",
+      "url": "https://github.com/Parveen117/Publications/blob/57ba90ad94b0471b90b7ad3ea0177d0778c22183/papers/curvature-information-duality/LINEAGE.md"
+    },
+    {
+      "id": "R4",
+      "repository": "Parveen117/Publications",
+      "commit": "57ba90ad94b0471b90b7ad3ea0177d0778c22183",
+      "path": "papers/emk-ugd-algebra/certificates/emkt1_master_tensor_and_time.py",
+      "role": "Native K grading and mixed-channel expansion; master tensor choices remain declared",
+      "git_blob_sha": "612786f2c91de005a62bfaca87f778a79060ce0a",
+      "sha256": "c32b977f25cb00edbfcb338e6028a6b0f3a1f0beae4f4f2737663c574c7a1dce",
+      "url": "https://github.com/Parveen117/Publications/blob/57ba90ad94b0471b90b7ad3ea0177d0778c22183/papers/emk-ugd-algebra/certificates/emkt1_master_tensor_and_time.py"
+    },
+    {
+      "id": "R5",
+      "repository": "Parveen117/Publications",
+      "commit": "57ba90ad94b0471b90b7ad3ea0177d0778c22183",
+      "path": "papers/emk-recognition-geometry/certificates/ltb1_thermodynamic_bridge.py",
+      "role": "Skew response and transport curvature are distinct; constitutive maps must be declared before evaluation",
+      "git_blob_sha": "6445956baea119933621beb17645a8276c78791f",
+      "sha256": "ef72bc26a82a4a0dc6db765d3321c2ac9d373addbb5abe30e23e600c3a030366",
+      "url": "https://github.com/Parveen117/Publications/blob/57ba90ad94b0471b90b7ad3ea0177d0778c22183/papers/emk-recognition-geometry/certificates/ltb1_thermodynamic_bridge.py"
+    },
+    {
+      "id": "R6",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/32_cut_covariance_event_realization_theorem.md",
+      "role": "Event lift, cut-memory Gram identity, target-faithful observer; event construction must precede evaluating positivity",
+      "git_blob_sha": "6aa597095cf93a69be564ea1e3f49c1a1656c346",
+      "sha256": "c591711a0e6e66cddf4a5b598a99ea6198034d3192f4dcf0a2a76b6a3bdc2e0f",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/32_cut_covariance_event_realization_theorem.md"
+    },
+    {
+      "id": "R7",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/00_dependency_contract.tex",
+      "role": "Thermodynamic manuscript dependency contract and physical inputs",
+      "git_blob_sha": "308976a3084a93dcbcac1f80af77bdc7f08486bf",
+      "sha256": "571a70ca620ef96af89a75d2a7777a6560cf9babc2f6e83e3f92ae10f046e526",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/00_dependency_contract.tex"
+    },
+    {
+      "id": "R8",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a0_thermodynamic_recognition_square.tex",
+      "role": "Target-relevant quotient and transport-square/curvature adapter under explicit bundle hypotheses",
+      "git_blob_sha": "760c821f934a1ce4c18a05aee12746d93f8af8b0",
+      "sha256": "f555e4326579a963a76345bf17bdd942f4f155ef4acb6946dcea6f5f762e5f21",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06a0_thermodynamic_recognition_square.tex"
+    },
+    {
+      "id": "R9",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a00_response_propagation_metric.tex",
+      "role": "Metric reconstruction assumes scalar Lorentzian principal symbol and calibration",
+      "git_blob_sha": "079a9c6616ad8ed8c2d52ddd4f545f6a79de2094",
+      "sha256": "0f2c319d975c914d7ec39f9ef35aed08a80ad54742f05650c25118ca185d0a20",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06a00_response_propagation_metric.tex"
+    },
+    {
+      "id": "R10",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/01a_response_summary.tex",
+      "role": "Unit-typed response carrier; metric must transform with nonorthogonal changes of scale",
+      "git_blob_sha": "4d23dbb8447c3a4a1f446d232129c261bb16360f",
+      "sha256": "611bad7032e766db32e538cfa7c500e4f17cc1e809c61368be795c0a524715f2",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/01a_response_summary.tex"
+    }
+  ],
+  "correction_source_status": "Thermodynamic correction edition is pinned to open Publications PR 4; it is not asserted merged. R2 pins QTH-1 before the targeted correction included here.",
+  "physical_field_equations_imported": [],
+  "declared_inputs": [
+    "Finite native-compatible interaction family of U27",
+    "Calibrated signed response columns",
+    "Positive representation metric and represented quarter-turn",
+    "Cut and (for the statistical ledger only) positive finite ensemble weights"
+  ],
+  "not_established": [
+    "Born or instrument law",
+    "Physical gravitational identification",
+    "Spacetime or Lorentzian signature selection",
+    "Equality of a skew response pairing with connection curvature"
+  ],
+  "lineage": "Gram decomposition, total covariance and rank-based repair are inherited; no priority claim for these standard facts."
+}

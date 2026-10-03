@@ -30,3 +30,13 @@
   T5 and T1.
 - **Prior executable version:** NONE — first bridge capsule between
   the curvature and information layers.
+
+## QTH-1 scope correction, 25 September 2026
+
+The original T3 commuting and noncommuting witnesses remain valid. The
+overgeneralized converse has been removed: a nonzero SLD commutator can
+have zero state average, explicitly at rho=I/2 with Pauli x/y derivatives.
+QTH1_RESULT.json and its expected digest are regenerated with this negative
+control. A difference defined as QFI-CFI always gives an algebraic equality;
+its positivity and equality conditions are the substantive measurement claims.
+This correction does not derive a physical quantum theory from native inputs.

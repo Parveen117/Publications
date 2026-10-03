@@ -1,0 +1,82 @@
+name: Thermo compass foundations exact controls
+
+on:
+  push:
+    paths:
+      - 'papers/thermo-compass-foundations/**'
+      - 'papers/thermo-phase-field/**'
+      - 'papers/ugd-kahler-propagation/**'
+      - 'papers/native-ugd-propagation/**'
+      - 'papers/coherence-first-thermodynamics/**'
+      - 'papers/native-cut-energy-transport/**'
+      - 'papers/native-alpha-selection/**'
+      - 'papers/native-return-identification/**'
+      - 'papers/native-critical-response/**'
+      - 'papers/curvature-information-duality/**'
+      - 'papers/cut-first-equivalence/certificates/**'
+      - 'papers/thermodynamic-response-corrections/**'
+      - 'papers/uncut-cut-measurement/**'
+      - 'papers/emk-recognition-geometry/certificates/**'
+      - 'papers/emk-ugd-algebra/certificates/**'
+      - '.github/workflows/thermo-compass-foundations.yml'
+  pull_request:
+    paths:
+      - 'papers/thermo-compass-foundations/**'
+      - 'papers/thermo-phase-field/**'
+      - 'papers/ugd-kahler-propagation/**'
+      - 'papers/native-ugd-propagation/**'
+      - 'papers/coherence-first-thermodynamics/**'
+      - 'papers/native-cut-energy-transport/**'
+      - 'papers/native-alpha-selection/**'
+      - 'papers/native-return-identification/**'
+      - 'papers/native-critical-response/**'
+      - 'papers/curvature-information-duality/**'
+      - 'papers/cut-first-equivalence/certificates/**'
+      - 'papers/thermodynamic-response-corrections/**'
+      - 'papers/uncut-cut-measurement/**'
+      - 'papers/emk-recognition-geometry/certificates/**'
+      - 'papers/emk-ugd-algebra/certificates/**'
+      - '.github/workflows/thermo-compass-foundations.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  exact-controls:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+      - name: Read the pinned canonical recognition engine
+        uses: actions/checkout@v4
+        with:
+          repository: Parveen117/Recognition-Kernel-Framework
+          ref: 3cc5a33b05c16d59c90994ddda69dedc0d392424
+          path: .ci/recognition-kernel-framework
+          persist-credentials: false
+      - name: Check native return, integer sheets, calculus and EMK geometry
+        run: node papers/native-ugd-propagation/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
+      - name: Check coherence-first cuts, thermodynamic energy and information ledger
+        run: node papers/coherence-first-thermodynamics/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
+      - name: Check native cut transport, energy descent and internal clock
+        run: node papers/native-cut-energy-transport/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
+      - name: Check native alpha selection, return sensitivity and dressed source
+        run: node papers/native-alpha-selection/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
+      - name: Check native response identification with retained aperture uncertainty
+        run: node papers/native-return-identification/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
+      - name: Check native critical channels and third-probe prediction
+        run: node papers/native-critical-response/verify.cjs --rkf-root .ci/recognition-kernel-framework --check
+      - name: Check thermo transport, recovered results and source pins
+        run: python papers/thermo-compass-foundations/verify.py --check
+      - name: Check phase field, conserved energy and propagation
+        run: python papers/thermo-phase-field/verify.py --check
+      - name: Check Kahler geometry, Lorentzian symbol and native propagation action
+        run: python papers/ugd-kahler-propagation/verify.py --check

@@ -1,0 +1,430 @@
+# Physics from Cuts: Uncut Ground, Measurement and Lawful Continuation
+
+**v1.7 apparatus step:** [atom-interferometer evidence and native prediction interface](ATOM_INTERFEROMETER_AUDIT.md) connects U36's stationary field to a declared physical acceleration/phase adapter. A separate external Newtonian cylinder reference gives 0.5304493433 rad against the published 0.547870 rad total, with omitted apparatus contributions and no fitted parameters. This is a retrospective numerical reference, not a native prediction or empirical PASS. The audit identifies the missing graph, calibration, full uncertainty and unused-data inputs. Reproduce the floating-point reference separately with `python experiments/atom_interferometer_reference.py --check` (NumPy required).
+
+**v1.6 research step:** [spin/vector holonomy and geometry gate](SPIN_HOLONOMY_GEOMETRY_GATE.md). A scalar `-1` admits distinct flat spin and conical vector interpretations. The written bridge identifies the coframe, torsion, loop-scale and spin-cover inputs needed for holonomy to report metric curvature; exact controls are source-bound. A native spin connection, deficit angle, physical `hbar` and gravity remain unselected.
+
+**v1.5 research step:** [pre-entropy seam return and the gravity interface](PRE_ENTROPY_SEAM_RETURN.md) audits TVSP, thermodynamic/spacetime assumptions and cut grading; proves exact target-relative return and a flat-local/nontrivial-global control. The `+1/-1` return sector is typed separately from positive thermodynamic `I_th=1`. The finite certificate binds the new note and exact witness. Physical source selection, gravity and literal uncut observables remain open.
+
+**Monty Dabas — working research programme, version 1.1, 25 September 2026.**
+
+The starting proposal is reflexive: definitions create distinctions, so the
+mathematical framework used to describe the uncut is itself a cut. A measurement
+must therefore retain its declared observational context and unresolved
+information. Spacetime is a possible derived representation of the programme;
+it is not an input to the finite results here.
+
+Read the [novelty assessment](NOVELTY_AND_LINEAGE.md),
+[foundational manuscript](MANUSCRIPT.md),
+[family-continuation extension](FAMILY_CONTINUATION.md),
+[admissibility extension](ADMISSIBLE_CONTINUATION.md),
+[gravity-before-curvature bridge](GRAVITY_BEFORE_CURVATURE.md),
+[sector and coframe constraints](SECTOR_AND_COFRAME_SELECTION.md),
+[native grading and seam memory](NATIVE_GRADING_AND_SEAM_MEMORY.md),
+[native interaction and lawful cuts](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md),
+[native response tensor and cut ledger](NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md),
+[calibrated probes and native identification](PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md),
+[source response and the inverse-square challenge](SOURCE_RESPONSE_AND_GRAVITY_TESTS.md),
+[physical experiment contract](GRAVITY_EXPERIMENT_CONTRACT.md),
+[shell-capacity derivation audit](SHELL_CAPACITY_SELECTION.md),
+[information/thermodynamics source audit](RESPONSE_SOURCE_AUDIT.md),
+and [claim ledger](CLAIMS.md).
+The [research programme](RESEARCH_PROGRAMME.md) specifies the next derivations.
+
+**Lineage:** U1 already appears exactly in Spectral I Theorem 18.1; minimum
+repair has a linear counterpart in Spectral II Theorem 7.2; recovered middle
+identity is already required by RSC 27/30. Partition refinement is established
+mathematics. This package adds explicit finite formulations, operational
+distinctions and executable controls; proposition numbering is not a priority claim.
+
+## Foundational results U1–U7
+
+Within an explicitly declared finite presentation, the manuscript proves:
+
+1. A target can be recovered from a cut exactly when it is constant on every
+   readout fibre. A deterministic correction cannot create missing distinctions.
+2. The minimum extra memory alphabet is the maximum number of distinct target
+   values hidden behind one readout. This is a target-relative cost.
+3. Refinement reduces target ambiguity; sequential repair obeys a product bound,
+   which need not be an equality.
+4. A clock-free transition descends to observed dynamics exactly when equivalent
+   observations have equivalent next observations.
+5. Repeated distinction by future readouts terminates on a finite presentation
+   and constructs the coarsest dynamically closed refinement of a cut.
+6. Common scalar invariants may be trivial even when several cuts jointly
+   distinguish all presented states. Pairwise consistency need not give a global
+   state compatible with all observations.
+
+The inherited RSC cut-corner composition identity is restated and checked
+separately as a downstream linear representation. These are elementary finite
+derivations and a connection to the existing native framework, not a claim of
+priority for the underlying mathematical facts.
+
+## Added in v0.2: memory for all admitted total continuations
+
+[U8–U12](FAMILY_CONTINUATION.md) extend the construction to a declared finite
+family of arrows and every word they generate:
+
+- The coarsest observer closed under the whole family exists constructively.
+- Its minimum additional memory is exactly the largest number of distinct
+  continuation classes hidden behind a single initial readout.
+- Naming an already available composite as a new arrow changes neither that
+  partition nor its memory cost. Refinement depth can still change.
+- Closing two initial observations jointly agrees with joining their closures,
+  provided the admitted arrow family is the same.
+- A finite pair search finds a shortest experiment distinguishing two candidates,
+  or proves that no word in the declared family distinguishes them.
+
+**Separating example:** an observer sufficient for repeated A and an observer
+sufficient for repeated B can still miss a distinction revealed by A followed
+by B. In the four-state W5 example the family needs **three memory labels**,
+although the separate requirements are one and two. The shortest diagnostic
+word is (A,B). W6 shows why extra present detail can also increase the future
+prediction task rather than universally reducing its memory cost.
+
+The v0.2 evidence comprises **3,678 exhaustive cut/two-arrow-family
+cases through three states**, 17 additional four-state fixtures, and 33,206
+candidate-pair diagnostic checks. The original v0.1 exhaustive domains are
+retained separately in the certificate. These counts are finite coverage,
+not a replacement for the written proofs.
+
+## Added in v0.3: partial arrows and valid experiments
+
+[U13–U16](ADMISSIBLE_CONTINUATION.md) separate an observer that must retain
+enabled-domain information from one restricted to actual experiments admitted
+at both candidates. Exact partial descent requires both whole-fibre domain
+agreement and next-readout agreement. Closure again gives a coarsest sufficient
+observer and an exact minimum repair alphabet under unrestricted repair maps.
+
+**W7** shows that agreement on all commonly admitted experiments need not be
+transitive, so it cannot always define observer fibres. **W8** separates an
+availability query from executing a forbidden action, and shows that restricting
+a domain can increase domain-aware memory. **W9** gives delayed availability
+distinctions even when every actual readout is zero.
+
+The v0.3 evidence includes **37 regression tests**, plus **20,646 exhaustive
+cut/two-partial-arrow cases through three states**, **369,944 pair/mode diagnostic
+checks**, and the retained v0.1/v0.2 evidence. A model's availability flag is not
+automatically an observable; operational use needs a justified interface.
+
+## Added in v0.4: transport before metric and curvature
+
+[U17–U20](GRAVITY_BEFORE_CURVATURE.md) reconstruct compatible bilinear forms
+from declared invertible transports. A chosen EMK K-sector family determines
+diag(1,-1,...,-1) up to scale; four supplied components give a Lorentz-type
+1+3 signature. The R-sector instead determines a definite form, so the native
+algebra alone does not select a physical signature or a dimension.
+
+An exact cut must preserve the geometric target and intertwine the transports.
+A memory-extended example passes both gates: the cut discards a target-blind
+memory coordinate and recovers a nondegenerate quotient form.
+A counterexample shows that inadmissible compression can invent noncommutativity
+from a commuting native pair. With a separately supplied smooth coframe and a
+metric-compatible, torsion-free connection, the connection curvature becomes
+metric curvature by an explicit intertwiner. A valid curved chart is checked
+by two independent routes; a torsion control rejects a false identification.
+
+The v0.4 evidence: **50 regression tests**, 24 K-family reconstructions,
+1,296 integer-grid candidate-form comparisons, 24 supplied chart points and
+the retained earlier certificates. The new source audit pins eight files.
+The K maps are candidate algebraic transports, not asserted to be RKF 55's
+dagger-unitary flows. Selecting the gravitational sector, coframe, dynamics
+and shared quantum readout remains the next research problem.
+
+## Added in v0.5: coupling constraints and conditional coframe closure
+
+[U21–U23](SECTOR_AND_COFRAME_SELECTION.md) extend the chosen star to connected
+component-coupling graphs. A nonzero invariant form exists precisely when every
+cycle has an even number of K edges; the coupling pattern then fixes its
+signature up to an overall sign. Exact compatibility plus the minimum number
+of couplings still admits 1+3, 2+2 and definite signatures on four components.
+This explicitly rejects that proposed sector-selection rule.
+
+There is a positive coframe constraint: for a supplied constant star connection
+and homogeneous coframe e=(a du,b dx^i), zero torsion is equivalent to
+**b'=kappa a**. Given a and an initial value, b is determined on a nondegenerate
+patch. Both K and R sectors pass, so this conditional adapter does not select
+the physical sector, chart or homogeneity. No gravitational field equation is
+imported. The existing information-invariance nonselection result is credited.
+
+The v0.5 evidence: **63 regression tests**, all **646 connected K/R coupling
+graphs on two through four labelled components** compared with a full
+invariant-form solver, and **240 independent curvature-matrix comparisons**
+at 48 supplied chart points. All earlier evidence is retained. The certificate
+binds 27 source files; that provenance manifest pins four selection sources.
+
+## Added in v0.6: native grading and the exact memory cost of gluing
+
+[U24–U26](NATIVE_GRADING_AND_SEAM_MEMORY.md) test whether the local native EMK
+grading survives the multi-pair assembly. Its cut J_E=K is distinct from a
+metric's signature partition. Overlapping zero-extended K/R pairs on a connected
+carrier with at least three components admit no common involution keeping each
+K even and each R odd. The earlier candidate invariant-form results remain
+valid; their native-grading identification was not established.
+
+A direct sum retaining both endpoint and edge identities does carry the local
+native grading. Summing endpoint copies into one vertex readout loses it.
+The exact minimum repair is **n-2 extra linear scalar channels for a connected
+bipartite graph, or n-1 otherwise**, when the target is grading closure.
+If the target includes separately addressed R-sector steps on all m edges,
+the minimum becomes **2m-n**. On a triangle those costs are two and three.
+An explicit hidden state produces distinct K/R candidate transcripts, making
+the model-level comparison concrete; physical instrument realization is open.
+
+The v0.6 evidence: **77 regressions**, rank checks on **771 connected graphs**
+through five vertices, **43** complete small-graph grading/observer/response
+checks and **154 exact endpoint reconstructions**. Earlier campaigns remain
+bound in its certificate, covering **32 source files**. The direct-sum
+repair has commuting separate-edge transports; native interaction between
+edges must be supplied before recovering a noncommutative gravity candidate.
+
+## Added in v0.7: genuine graded interaction and a lawful lossy quotient
+
+[U27–U29](NATIVE_INTERACTION_AND_LAWFUL_CUTS.md) construct a declared
+antisymmetric mixing family between retained edge carriers. Together with
+local R controls it preserves one native cut grading, a positive form and a
+represented quarter-turn, while producing actual nonzero transport commutators.
+An explicit order test gives scalar outputs **0 and 16/25** for the same input.
+
+Exact real-linear cuts can discard whole interaction components. A proper
+**6-to-4 dimensional quotient** loses one unobserved component while preserving
+grading, the declared form target and nonzero interaction. Within a connected
+component, every nonzero exact closed readout needs its full relevant memory.
+A fixed transcript of **2m scalar readings** reconstructs m connected
+two-component carriers from one scalar readout; the linear count is minimal.
+
+The v0.7 evidence: **93 regressions**, all **75 interaction graphs on one through
+four channels**, **360 independent readout-closure comparisons**, **700 exact
+projection intertwiners**, and **167 minimal transcripts**. Their decoders pass
+1,298 basis-vector reconstructions. That version binds **37 source files**
+and retains every earlier campaign. Interaction graph and strengths remain
+declared; physical gravitational/quantum identification is still open. The
+full invariant bilinear form of a connected family is definite, so a Lorentzian
+geometric target requires a separate adapter.
+
+## Added in v0.8: native response tensor and two cut ledgers
+
+[U30–U32](NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md) construct
+Q(Y)=Y^T Y-iY^T ZY from calibrated native response columns, with Z the
+represented quarter-turn. The tensor preserves both squared response size and
+an oriented pairing. It is covariant under a change of units only when its
+metric is transported too.
+
+A real coordinate cut always splits the real Gram form. Its **full complex
+ledger closes for every response catalogue exactly when the cut projector
+commutes with Z**. Otherwise an explicit imaginary cross-seam term remains;
+the minimum paired repair has rank([C;CZ])-rank(C) extra scalar channels.
+A half-channel cut needs one extra scalar. Preserving this tensor structure
+is weaker than closing the full interaction dynamics.
+
+For the signed order response L=UV-VU, CID-1's inherited total covariance gives
+a separate exact statistical information ledger and a nested-cut tower law.
+A two-channel response has L^T L=kappa I_4 with explicit positive kappa, so
+its exact squared norm needs the same input faithfulness as its signed vector.
+Zero mean, zero skew pairing and zero operator response are kept distinct.
+
+The v0.8 native evidence: **111 regressions**, **490 tensor transport checks**,
+**340 coordinate cuts**, **14 general readout repairs**, **90 exact response
+scale/quotient checks**, **405 covariance ledgers** and **1,620 nested ledgers**.
+That version binds **49 source files**, including the QTH correction.
+The adjacent CID/QTH suite has **50 passing tests**; CID-1's original certificate
+also passes read-only regeneration.
+
+The ten-source audit confirms the relevant existing work and uses the corrected
+thermodynamic paper at its pinned PR #4 commit. QTH-1 receives a targeted
+correction: noncommuting SLDs can have zero state-averaged commutator.
+Neither its declared quantum model nor a Lorentzian propagation law is
+imported into the native construction. Gravitational identification is open.
+
+## Added in v0.9: identify the law behind the response
+
+[U33–U35](PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md) show that the full
+signed order response still forgets part of the selected continuation law:
+mixing parameters s and 1/s give the **same complete response matrix and
+tensor**, while their direct mixing readings differ. One independently
+calibrated direct response removes this ambiguity.
+
+For the oriented two-channel family, three reported statistics from five raw
+scalar readings recover both Cayley parameters exactly. The protocol has a
+necessary-and-sufficient model consistency gate. A calibrated cross-probe
+comparison then tests equality of the complete selected U,V pair, rather than
+only its order response. Matching probes do not by themselves select gravity
+or numerical coupling values.
+
+Finite-error interval decoding encloses every compatible parameter pair when
+its denominators have positive margins. Disjoint intervals reject a shared
+pair; overlap remains **UNRESOLVED**. A fitted output decoder and an unobserved
+third channel supply controls against false universality. The data here are
+synthetic; no physical probe measurement or probability law is invented.
+
+v0.9 evidence: **130 native regressions**, **100 exact parameter inversions**,
+**4,950 pairwise response comparisons**, **40 distinct reciprocal collisions**,
+**400 held-out basis predictions**, **300 calibration-frame checks**, and
+**2,700 noise-box enclosures with phase-error bounds**. The certificate binds
+**54 source files** and retains earlier evidence, including the v0.8 QTH
+correction. Six immutable source pins credit the thermo identification,
+non-selection and decoder results alongside the native predecessors.
+
+## Added in v1.0: explicit source response and the inverse-square challenge
+
+U36 adds a **declared quadratic source-cost law**, with an affine continuation
+whose generator is assembled from U27's local R controls and mixing brackets.
+The stationary solution obeys an exact cut-flux ledger. Eliminating hidden
+field coordinates preserves that response only when the effective stiffness,
+source and constant cost are all retained. This stationary elimination does
+not claim a closed quotient of the entire addressed dynamics.
+
+U37 computes a source-probe interaction cost and its inward finite-difference
+response. It is inverse-square when effective shell capacity grows as the
+square of an independently calibrated radius. Other capacity exponents are
+also native-compatible. U38 shows why distance scaling alone is insufficient:
+a nonlinear cost can duplicate 1/r^2 while changing the source-strength law.
+
+The [physical test contract](GRAVITY_EXPERIMENT_CONTRACT.md) therefore tests
+both distance and source changes with independent calibration and held-out
+settings. It cites actual gravity experiments as benchmarks, without claiming
+their data have been fit. The primitive has not selected quadratic cost,
+quadratic capacity growth, a physical ruler or universal mass coupling. The
+conservative native continuation also does not imply minimum-cost settling.
+
+Current evidence: **152 native regression tests**, **86 weighted graphs**,
+**332 source solutions**, **2,204 cut-flux ledgers**, **2,204 stationary
+eliminations**, **96 radial profiles**, **176 pair-energy force checks**,
+**108 nonlinear scaling controls** and **54 bounded-error ratio checks**.
+The certificate binds **60 source files** and retains all earlier evidence.
+The unconditional physical inverse-square challenge remains open; the exact
+conditional result and a falsifiable candidate test are now concrete.
+
+## Added in v1.1: does the primitive select A(r)?
+
+The [focused capacity audit](SHELL_CAPACITY_SELECTION.md) answers the requested
+inverse-square bottleneck. Two 49-carrier native graphs with the same degree
+four, 98 unit links and the same available generator rules have different
+shell-capacity profiles: **4,12,20** versus **4,6,6**. Thus the present native
+axioms do not select quadratic growth.
+
+On an explicitly supplied three-direction integer graph, direct counting
+does derive `C_3(n)=12n²+12n+6`, with quadratic leading growth. Three
+directions, their graph and the physical ruler remain supplied data. Moreover,
+the cubic graph's shell potential is not constant: its second mean drop is
+**13/378**, whereas inverse aggregate capacity is **1/30**. Shell-area
+counting alone cannot establish a local inverse-square measurement.
+
+The v1.1 certificate adds 10 focused regressions for **162** native tests,
+checks 16 integer-lattice and 12 regular-tree capacity profiles, and binds
+**65** source files including four new immutable repo pins. It states which
+additional native selection theorem would actually close the growth gap.
+
+## Added in v1.2: conditional thermodynamic foundation
+
+The [cross-repository translator audit](TRANSLATOR_REPO_AUDIT.md) identifies
+the already defined information loop functional and conditional complex-flow
+representation. It keeps the physical wavefunction, action scale and quantum
+readout obligations explicit.
+
+[TF-1 and TF-2](THERMODYNAMIC_FOUNDATION_BRIDGE.md) start from U36's declared
+grounded graph and positive quadratic source cost. An exact stationary cut
+eliminates hidden carriers, producing a two-coordinate positive equilibrium
+potential by Schur complement. **If** the two readings are independently
+calibrated as entropy and volume, and cost as energy, the thermodynamic contact
+identity, Maxwell relations and response identities follow. One exact rational
+graph witness has `T=1`, `P=8`, `Cp/Cv=Ks/Kt=35/26`. Its independent exact
+script checks hidden-basis invariance and rejects a planted Maxwell violation.
+
+This constructs the thermodynamic paper's equilibrium `U(S,V)` in a specified
+native model; the physical calibration, stationary preparation, spacetime
+propagation and quantum readout remain separate. The v1.2 source-bound
+certificate binds **68** files, including the proof, audit and finite witness.
+It retains **162** native regressions and the earlier exhaustive checks.
+
+## Added in v1.3: one native quantum/classical bridge
+
+[QB-1–QB-3](QUANTUM_CLASSICAL_BRIDGE.md) use **one** grounded graph for its
+stationary source/thermodynamic potential and its paired, norm-preserving
+native continuation. The represented quarter-turn identifies the centered
+real pairs with complex coordinates; the native Cayley map becomes unitary.
+Given a declared orthogonal detector and local quadratic norm-share rule,
+the same state has normalized squared-amplitude readings. A phase-erasing
+cut produces a doubly stochastic classical update. The cut residue is
+exactly the later effect of discarded off-diagonal seam memory.
+
+On the exact two-carrier witness, two coherent steps give site-2 weight
+**16/25**, while erasing phase after step one gives **8/25** under the same
+native evolution. Equal first-step visible probabilities can have different
+coherent futures. The v1.3 master certificate source-binds **70** files,
+including the new proof and independent Fraction witness; 162 prior native
+regressions remain. Physical detector frequencies, clock/action calibration,
+graph selection and quantum gravity are not implied by these finite claims.
+
+## Added in v1.4: gravity from coherent native phase, conditionally
+
+[GP-1 and GP-2](GRAVITY_PHASE_TRANSLATOR.md) stay on the gravity route.
+For a supplied positive grounded graph, known native step **and absolute
+phase reference**, exact Cayley inversion recovers its static source Green
+operator `H^{-1}` from the complete paired evolution. The same `H^{-1}` determines U36's
+source field, cross cost and candidate gravity-before-curvature response.
+
+The phase-erased classical shadow cannot perform that inversion. Two
+different positive grounded graphs give exactly the same classical
+two-site stochastic update `[[4/5,1/5],[1/5,4/5]]` at every erased step,
+but cross costs `-1/3` and `-5/8`. In fact their coherent matrices differ
+only by a global phase, so **every ordinary density-matrix experiment** also
+sees the same channel. A phase reference or independent source calibration
+is needed; an unknown native step leaves a second scale ambiguity. This is
+an exact conditional model translation and
+countermodel, not identification of physical gravity or physical `hbar`.
+The v1.4 master certificate source-binds **72** files and retains the
+162 native regressions plus prior foundation witnesses.
+
+## Reproduce
+
+Python 3.11 or 3.12; standard library only. From the repository root:
+
+```bash
+python -m unittest discover -s papers/uncut-cut-measurement/tests -v
+python papers/uncut-cut-measurement/certificate.py --check
+python papers/uncut-cut-measurement/certificates/thermodynamic_foundation_bridge.py
+python papers/uncut-cut-measurement/certificates/quantum_classical_bridge.py
+python papers/uncut-cut-measurement/certificates/gravity_phase_translator.py
+```
+
+The second command is read-only. It regenerates exact exhaustive checks in
+memory and compares both the committed certificate bytes and SHA-256 pin.
+It also binds the local manuscript, implementation, tests, source manifest,
+claim ledger and research programme. An intentional revision uses
+`certificate.py --write`, followed by review of the changed source and pin.
+
+`CERTIFICATE.json` records **PASS_FINITE_CHECKS** with the enumerated domains.
+The written proofs cover the hypotheses stated in the manuscript; Python
+enumeration is not formal verification of those proofs. Source pins identify
+the inspected repository versions, not an independent certification of them.
+
+## Scope of the physical programme
+
+Uncut ground is a proposed primitive, not identified with the finite carrier.
+The carrier and its functions are declared mathematical representations.
+No spacetime metric, external clock, probability law, quantum state space,
+Hamiltonian or classical field equation is assumed by U1–U19. U17–U19 introduce
+declared finite-dimensional linear carriers. U20 is a conditional geometric
+adapter on a supplied smooth chart with a coframe and connection. U21/U22 are
+algebraic coupling results; U23 constrains a supplied homogeneous coframe class
+for a fixed connection on a supplied chart.
+U24–U26 are clock-free finite-dimensional grading and observer results with
+declared algebraic controls; no spacetime or physical field equation is used.
+U27–U29 add native-compatible real interaction, classified exact cuts and
+model-level response reconstruction under a declared control catalogue.
+U30–U32 construct a native response tensor, its cut seam, and a classical
+finite-ensemble covariance ledger with supplied positive weights. These weights
+are not a physical probability law derived from the uncut primitive.
+U33–U35 identify a declared native control pair with independently calibrated
+readouts and bounded-error rejection. They neither select physical coupling
+values nor establish gravitational universality.
+No physical quantum/classical correspondence, spacetime reconstruction, minimum
+action law, universal curvature-information identity or quantum-gravity closure
+has yet been derived by this package.
+
+No merge of [correction PR #4](https://github.com/Parveen117/Publications/pull/4)
+is required to run this package. The v0.8 source audit cites that correction
+edition at its immutable commit, with its open-PR status recorded.
+It uses pinned native sources and does not treat archived publication claims as
+new premises. See [SOURCE_PINS.json](SOURCE_PINS.json).

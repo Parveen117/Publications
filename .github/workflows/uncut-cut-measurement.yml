@@ -1,0 +1,30 @@
+name: Uncut cut measurement finite checks
+
+on:
+  push:
+    paths:
+      - 'papers/uncut-cut-measurement/**'
+      - '.github/workflows/uncut-cut-measurement.yml'
+  pull_request:
+    paths:
+      - 'papers/uncut-cut-measurement/**'
+      - '.github/workflows/uncut-cut-measurement.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  finite-checks:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Check examples and invalid inputs
+        run: python -m unittest discover -s papers/uncut-cut-measurement/tests -v
+      - name: Recompute exact finite evidence and verify source pins
+        run: python papers/uncut-cut-measurement/certificate.py --check
