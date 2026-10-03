@@ -796,6 +796,24 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   defect, larger bounded-history density, 4D/AF/Clay/QG. The new origin
   ledger keeps those choices distinct from the proved compact bridge.
 
+## YM-52 (3 October 2026): connect energy, discarded records and the observer gap
+
+- Reuses YM50's native coefficient/reference completion and YM51's general
+  symmetric turn law; earlier certificates and canonical engines remain unchanged.
+- Reads the existing R18/R31, CF and PF energies before deriving the
+  anisotropic mean/record-variance and bounded-density entropy balances.
+- Derives the weighted frame-bracket tensor cof(C). Frame order defect
+  remains distinct from connection curvature and physical gauge field strength.
+- Gives exact full and even centered rates, including singular rank-two C;
+  credits Lauret's known positive-definite SU(2)/SO(3) spectral formulas.
+- Shows that full-observer maximin relaxation leaves a plateau of tensors,
+  while a fixed-budget even-observer objective uniquely selects isotropy.
+  A sharp factor-two stability bound controls near-optimal anisotropy.
+- The objective, clock and physical units are declared/unselected. No new
+  anisotropic interacting gap, actual row closure or four-dimensional
+  field-theory result is claimed. Six written results, sixteen new tests
+  and exact rational certificates use Python 3.12 only.
+
 ## YM-51 (3 October 2026): audit the tools before selecting further physics
 
 - USER DIRECTION: inspect whether native curvature requires changing the

@@ -22,6 +22,19 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-52: native energy, discarded records and observer relaxation](papers/yang-mills-certified-benchmark/YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
+derives the derivative-energy and complementary record-variance balance
+of YM51's protocol, plus a bounded-positive-density entropy law.
+The weighted order brackets produce cof(C). Exact centered relaxation
+is min(tr(C)/4,a+b), with rate a+b in the antipodally even sector.
+The positive-definite spectral formula has Lauret lineage; a native
+all-content proof and singular-tensor controls are included.
+At fixed trace, maximizing the even-sector worst-case rate uniquely
+selects isotropy and controls deviation from it; maximizing the full-sector
+rate does not. The observer objective and physical clock remain choices.
+This is a free compact energy/observer bridge, not an anisotropic
+interacting theorem or a derivation of physical joules.
+
 [YM-51: tool dependency and heat selection audit](papers/yang-mills-certified-benchmark/YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md)
 records 29 source-linked dependencies, including nine explicit selections
 and three open extensions. It reuses the existing tensor, curvature,
