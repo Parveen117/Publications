@@ -1,6 +1,42 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-54
+## Current continuation: YM-55
+
+[YM-55's joint-history proof](YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
+closes the stationary anisotropic volume/time-limit obligation left by
+YM53/YM54. Fix one infinite site profile with second eigenvalue at least
+beta>0 and trace at most M. For abs(theta)<beta/2400, local finite-volume
+vacuum histories have a unique joint limit as both spatial ends recede
+and the heat step vanishes, at unrestricted relative rates. Both iterated
+limits agree. Positivity, heat-time reflection positivity and the centered
+correlation rate survive. Rank-two and differently oriented sites are allowed.
+
+The proof adds the spatial block gate, checks singular bridge supports,
+controls normalized refinement with M, and gives an explicit logarithmic
+crop and summable tail. Native response bounds |f_i|>=f0 and tau_i<=T0
+provide beta=4 f0^2/T0 and M=T0/4. The rank-two example retains
+gamma=3 log(4/3)/160>0.00539403; the original thermo-source profile retains
+gamma>0.000079467076. These are rates in the declared heat clock.
+
+[The certificate](certificates/YM55_RESULT.json) and
+[source pins](certificates/YM55_SOURCE_PINS.json) bind seven written results,
+22 new tests, 64 singular midpoint path identities, 264 weighted incidence
+checks, six independent normalized history controls and explicit joint
+cutoff errors. The 62 targeted predecessor tests also pass; 117 upstream
+files remain unchanged. Runtime: **Python 3.12 only**. General proofs are
+written, not mechanically formalized or externally expert-certified.
+
+This is a fixed-profile chain history limit. It does not remove spatial
+lattice spacing or establish physical protocol/action/clock selection,
+moving interacting vacua, continuous-time row-Markov closure or 4D/Clay.
+Extra Ideas MP-2's evolving free response remains a separate result.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym55_anisotropic_joint_limit.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym55_anisotropic_joint_limit.py -v
+~~~
+
+## Previous continuation: YM-54
 
 [YM-54's response/protocol proof](YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md)
 connects NT's existing native curvature to an actual compact turn process.
@@ -33,8 +69,8 @@ heat clock remain explicit selections. Same curvature with growing
 shape trace can lose a uniform floor; inserting idle records changes
 the clock without changing response curvature. This chapter constructs
 a concrete source for YM53's hypotheses, not physical selection of the
-protocol or a physical mass. State-dependent diffusion, anisotropic
-joint/volume limits, actual row closure and 4D/Clay remain open.
+protocol or a physical mass. YM55 supplies the fixed-profile joint history
+limit. State-dependent diffusion, actual row closure and 4D/Clay remain open.
 
 ~~~bash
 python3.12 papers/yang-mills-certified-benchmark/certificates/ym54_response_protocol.py --check
@@ -72,10 +108,10 @@ coupling controls are reused. All 151 related tests pass on **Python 3.12**.
 The 103 upstream pinned files are unchanged. General proofs are written,
 not mechanically formalized or externally expert-certified.
 
-The anisotropic infinite-volume/joint-cutoff construction and actual row
-closure remain open, as do physical clock/protocol/state/action selection,
-NCG quantum measure and 4D/AF/Clay. The old isotropic results retain their
-original scope and certificates.
+YM55 supplies the fixed-profile anisotropic joint history construction
+under a uniform trace ceiling. Actual row closure, physical
+clock/protocol/state/action selection, NCG quantum measure and 4D/AF/Clay
+remain open. The old isotropic proofs and certificates keep their scope.
 
 ~~~bash
 python3.12 papers/yang-mills-certified-benchmark/certificates/ym53_anisotropic_interaction.py --check

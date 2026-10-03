@@ -1,0 +1,46 @@
+name: YM55 anisotropic joint history limit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/native-compact-gauge/**'
+      - 'papers/native-thermodynamic-curvature/THEOREM.md'
+      - '.github/workflows/ym55-anisotropic-joint-limit.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/native-compact-gauge/**'
+      - 'papers/native-thermodynamic-curvature/THEOREM.md'
+      - '.github/workflows/ym55-anisotropic-joint-limit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Rebuild exact joint-limit evidence without writing
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym55_anisotropic_joint_limit.py --check
+      - name: Test anisotropic gates, singular bridges, histories and cutoff bounds
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym55_anisotropic_joint_limit.py -v
+      - name: Replay unchanged response and interacting dependencies
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym53_anisotropic_interaction.py --check
+          python -B papers/yang-mills-certified-benchmark/certificates/ym54_response_protocol.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym53_anisotropic_interaction.py -v
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym54_response_protocol.py -v
+      - name: Evidence stays read-only
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark
+

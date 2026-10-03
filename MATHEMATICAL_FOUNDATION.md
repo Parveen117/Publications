@@ -22,6 +22,21 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-55: anisotropic joint history limit](papers/yang-mills-certified-benchmark/YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
+extends the native rank-two/interacting profile to a positive limit of
+local vacuum histories as volume grows and heat step vanishes, with no
+restriction on their relative rates. The profile stays fixed across
+cutoffs; its middle eigenvalue is bounded below and its trace above.
+YM53's all-content gap, YM46's weighted blocks and YM47's normalized
+logarithmic crop are audited for singular noncentral kernels. Native
+curvature and response-budget bounds supply both profile hypotheses.
+Heat-time reflection positivity and centered correlation decay survive.
+Seven written results, 22 new and 62 prior targeted tests preserve 117
+upstream sources, using Python 3.12 only. This closes the stated stationary
+anisotropic joint-history obligation. Continuous-time row closure, moving
+interacting vacua, physical selection and four-dimensional gauge theory
+remain separate.
+
 [YM-54: response curvature to a counted protocol](papers/yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md)
 uses the existing NT positive factor, scale/shape split and commutator
 curvature. The two-direction shape Gram satisfies det G=16 f^2.
@@ -45,9 +60,10 @@ rank three. The finite-width norm time limit and ground-source weighted
 derivative energy inherit an explicit rate. Fine bridge support and
 zero-normalizer cases are handled explicitly. Seven written results and
 18 new tests preserve 103 upstream source files; Python 3.12 only.
-The anisotropic joint/volume limit and actual row closure remain further
-mathematical obligations. Physical protocol/clock/action selection and
-four-dimensional field theory are not inferred.
+YM55 now supplies the fixed-profile joint history limit under an upper
+trace bound. Actual row closure remains a further mathematical obligation.
+Physical protocol/clock/action selection and four-dimensional field theory
+are not inferred.
 
 [YM-52: native energy, discarded records and observer relaxation](papers/yang-mills-certified-benchmark/YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
 derives the derivative-energy and complementary record-variance balance
