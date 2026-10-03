@@ -42,7 +42,19 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-55](papers/yang-mills-certified-benchmark/YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
+Latest Yang–Mills continuation: [YM-56](papers/yang-mills-certified-benchmark/YM56_LAMBDA_CURVATURE_GAP.md)
+realizes a lambda-controlled native curvature with an explicit cubic Hessian
+potential. The selected compact protocol has exact free gap
+min((1+lambda^2)/8, min(1,lambda^2)/2), while an involution symmetry
+survives for every lambda. Exact stationary and sharp modes identify the
+gap-closing event; GE2's existing normalized curvature law is recovered.
+A bounded fixed profile away from lambda=0 supplies a sharper direct
+YM55 interaction window. Six written results, 17 new and 58 targeted
+predecessor tests pass on **Python 3.12.14**; CI requires Python 3.12.
+The source manifest preserves 125 upstream files. Physical selection,
+actual row closure, spatial continuum and 4D/Clay remain open.
+
+Previous Yang–Mills continuation: [YM-55](papers/yang-mills-certified-benchmark/YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
 constructs the joint volume/time limit of local vacuum histories for the
 native anisotropic interacting chain. A fixed profile with second-eigenvalue
 floor beta>0, uniform trace ceiling M, and abs(theta)<beta/2400 admits
