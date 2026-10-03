@@ -22,6 +22,21 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[YM-51: tool dependency and heat selection audit](papers/yang-mills-certified-benchmark/YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md)
+records 29 source-linked dependencies, including nine explicit selections
+and three open extensions. It reuses the existing tensor, curvature,
+observer, metric, clock and completion tools. A native symmetric-turn
+protocol derives L_C=-sum C_ab D_aD_b and a finite-content refinement
+bound. Same-reference, same-bracket protocols can agree on every linear
+coefficient yet have arbitrarily slow quadratic decay. Covariance does
+not select isotropy; active invariance of the fixed law forces C=cI.
+Six quadratic readouts recover the full symmetric tensor, while c and
+the relative interaction theta/c retain their selection boundaries.
+Six written results, seventeen new and 117 related tests use Python 3.12.
+These are free-protocol comparisons, not a new interacting gap or a
+physical clock derivation. The audit does not replace canonical engines
+or certify every claim in the larger framework.
+
 [YM-50: native reference and heat bridge](papers/yang-mills-certified-benchmark/YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md)
 starts from the existing cut scalars, EMK quaternion sector and stationary
 path extraction. A specified finite diagonal-record readout constructs a

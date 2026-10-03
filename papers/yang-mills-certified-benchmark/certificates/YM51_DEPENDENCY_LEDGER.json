@@ -1,0 +1,435 @@
+{
+  "schema": "ym51-dependency-audit-v1",
+  "scope": "Current YM43-50 tool route and its native heat-selection boundary; not all framework mathematics",
+  "sources": {
+    "F00E": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/3cc5a33b05c16d59c90994ddda69dedc0d392424/theorems/foundation/F00E_NATIVE_EULER_FROM_IOTA_COMPLEX.md",
+    "N01_N06": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/3cc5a33b05c16d59c90994ddda69dedc0d392424/operator_foundation/theory/01_NATIVE_ALGEBRA.md",
+    "N09_N11": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/3cc5a33b05c16d59c90994ddda69dedc0d392424/operator_foundation/theory/02_COMPLETION_AND_MEMORY.md",
+    "R7": "https://github.com/Parveen117/extra-ideas/blob/65a3cc3824b8f38a52279c38e4af24e6fb3e0513/02-relational-response/EMK_TENSOR_CALCULUS_R7.md",
+    "R8": "https://github.com/Parveen117/extra-ideas/blob/65a3cc3824b8f38a52279c38e4af24e6fb3e0513/02-relational-response/CURVATURE_OBSERVATION_R8.md",
+    "R9": "https://github.com/Parveen117/extra-ideas/blob/65a3cc3824b8f38a52279c38e4af24e6fb3e0513/02-relational-response/CURVATURE_BALANCE_R9.md",
+    "R10": "https://github.com/Parveen117/extra-ideas/blob/65a3cc3824b8f38a52279c38e4af24e6fb3e0513/02-relational-response/NATIVE_CURVATURE_DESCENT_R10.md",
+    "R11": "https://github.com/Parveen117/extra-ideas/blob/65a3cc3824b8f38a52279c38e4af24e6fb3e0513/02-relational-response/SPECTRAL_CURVATURE_OBSERVER_R11.md",
+    "R13": "https://github.com/Parveen117/extra-ideas/blob/65a3cc3824b8f38a52279c38e4af24e6fb3e0513/02-relational-response/COMPLEMENT_MEMORY_NOISE_R13.md",
+    "R36": "https://github.com/Parveen117/extra-ideas/blob/65a3cc3824b8f38a52279c38e4af24e6fb3e0513/02-relational-response/NATIVE_CURVATURE_OBSERVER_R36.md",
+    "R41": "https://github.com/Parveen117/extra-ideas/blob/65a3cc3824b8f38a52279c38e4af24e6fb3e0513/02-relational-response/NATIVE_RELATIONAL_CLOCK_R41.md",
+    "EMKC1": "https://github.com/Parveen117/Publications/blob/5bc107afc495b2dbcc9c80abb68e357b4e5e477f/papers/emk-ugd-algebra/CONNECTION_CALCULUS.md",
+    "NT": "https://github.com/Parveen117/Publications/blob/5bc107afc495b2dbcc9c80abb68e357b4e5e477f/papers/native-thermodynamic-curvature/THEOREM.md",
+    "YM44": "https://github.com/Parveen117/Publications/blob/5bc107afc495b2dbcc9c80abb68e357b4e5e477f/papers/yang-mills-certified-benchmark/YM44_INTERACTING_TIME_REFINEMENT.md",
+    "YM45": "https://github.com/Parveen117/Publications/blob/5bc107afc495b2dbcc9c80abb68e357b4e5e477f/papers/yang-mills-certified-benchmark/YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md",
+    "YM47": "https://github.com/Parveen117/Publications/blob/5bc107afc495b2dbcc9c80abb68e357b4e5e477f/papers/yang-mills-certified-benchmark/YM47_JOINT_LOCAL_HISTORY_LIMIT.md",
+    "YM49": "https://github.com/Parveen117/Publications/blob/5bc107afc495b2dbcc9c80abb68e357b4e5e477f/papers/yang-mills-certified-benchmark/YM49_TIME_ZERO_OBSERVABLES.md",
+    "YM50": "https://github.com/Parveen117/Publications/blob/5bc107afc495b2dbcc9c80abb68e357b4e5e477f/papers/yang-mills-certified-benchmark/YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md",
+    "MORPHIC": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/3cc5a33b05c16d59c90994ddda69dedc0d392424/operator_foundation/sources/rkf_reference/theorum/morphic_calculus/CERTIFICATION_STATUS.md",
+    "YM51": "papers/yang-mills-certified-benchmark/YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md"
+  },
+  "nodes": [
+    {
+      "id": "scalars",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [],
+      "sources": [
+        "F00E"
+      ],
+      "contract": "Completed characteristic-zero cut field and factorial series",
+      "boundary": "No claim that every partial UGD numeral operation is a scalar-field product"
+    },
+    {
+      "id": "algebra",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "scalars"
+      ],
+      "sources": [
+        "N01_N06"
+      ],
+      "contract": "Lawful finite path composition, dagger and the admitted associative EMK sector",
+      "boundary": "Does not certify every historical Morphic overlay axiom"
+    },
+    {
+      "id": "typed_tensor",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "algebra"
+      ],
+      "sources": [
+        "R7"
+      ],
+      "contract": "Named central-field vector/dual slots; evaluation and induced Lie action",
+      "boundary": "Cross-carrier contractions need a bridge; not a universal noncommutative bimodule tensor construction"
+    },
+    {
+      "id": "raw_order_defect",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "algebra"
+      ],
+      "sources": [
+        "EMKC1"
+      ],
+      "contract": "Comparable derivative actions and their Lie commutator",
+      "boundary": "Raw frame mismatch is not automatically connection curvature",
+      "target_type": "FRAME_ORDER_DEFECT"
+    },
+    {
+      "id": "connection_data",
+      "status": "DECLARED_SELECTION",
+      "parents": [
+        "algebra"
+      ],
+      "sources": [
+        "EMKC1",
+        "NT"
+      ],
+      "contract": "Specified derivations and connection coefficients on a stated module",
+      "boundary": "Physical connection selection is not derived from the bare algebra"
+    },
+    {
+      "id": "connection_curvature",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "raw_order_defect",
+        "connection_data"
+      ],
+      "sources": [
+        "EMKC1",
+        "NT"
+      ],
+      "contract": "Curvature subtracts the direction-frame bracket; Bianchi and covariance follow",
+      "boundary": "Nonzero frame commutators can coexist with a flat connection",
+      "target_type": "CONNECTION_ORDER_DEFECT_RELATIVE_TO_FRAME"
+    },
+    {
+      "id": "observer_data",
+      "status": "DECLARED_SELECTION",
+      "parents": [
+        "algebra"
+      ],
+      "sources": [
+        "N01_N06",
+        "R8"
+      ],
+      "contract": "Declared target, readout and permitted continuation catalogue",
+      "boundary": "Changing the readout can change blindness and required memory"
+    },
+    {
+      "id": "observer_readout",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "connection_curvature",
+        "observer_data"
+      ],
+      "sources": [
+        "R8",
+        "R9",
+        "R10"
+      ],
+      "contract": "Exact compression/balance correction and descent/faithfulness tests",
+      "boundary": "A varying observer has extra derivative terms; no universal flattening",
+      "target_type": "TARGET_DEPENDENT_OBSERVED_CURVATURE"
+    },
+    {
+      "id": "curvature_target_recovery",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "observer_readout"
+      ],
+      "sources": [
+        "R11",
+        "N01_N06"
+      ],
+      "contract": "Target-family marked readouts and minimum linear repair",
+      "boundary": "Spectral equality alone and out-of-family probes do not certify flatness"
+    },
+    {
+      "id": "memory",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "algebra",
+        "observer_data"
+      ],
+      "sources": [
+        "N09_N11",
+        "R13",
+        "YM49"
+      ],
+      "contract": "Retain the complement and apply the bounded block-memory law",
+      "boundary": "Unbounded blocks require domains; actual infinite-chain row closure is not decided"
+    },
+    {
+      "id": "metric_protocol",
+      "status": "DECLARED_SELECTION",
+      "parents": [
+        "algebra",
+        "observer_data"
+      ],
+      "sources": [
+        "NT",
+        "R13",
+        "R36"
+      ],
+      "contract": "Specified response/preparation/continuation law and positive native pairing",
+      "boundary": "Distinct permitted experiments need not select the same metric"
+    },
+    {
+      "id": "response_metric",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "metric_protocol"
+      ],
+      "sources": [
+        "NT",
+        "R13",
+        "R36"
+      ],
+      "contract": "Positive response pairing or quadratic source distinguishability in the declared sector",
+      "boundary": "Not automatically a physical spacetime interval or a universal noise law"
+    },
+    {
+      "id": "dagger_adjoint",
+      "status": "PROVED_REPRESENTATION",
+      "parents": [
+        "algebra",
+        "response_metric"
+      ],
+      "sources": [
+        "N09_N11",
+        "NT"
+      ],
+      "contract": "Representation intertwines native dagger with adjoint for the specified positive pairing",
+      "boundary": "A raw algebraic involution does not choose every physical norm"
+    },
+    {
+      "id": "tangent_adapter",
+      "status": "DECLARED_SELECTION",
+      "parents": [
+        "connection_curvature",
+        "response_metric"
+      ],
+      "sources": [
+        "R10",
+        "NT"
+      ],
+      "contract": "Specified tangent map with connection intertwining and metric/torsion laws",
+      "boundary": "A curvature-value match at one point is insufficient"
+    },
+    {
+      "id": "riemann_comparison",
+      "status": "PROVED_REPRESENTATION",
+      "parents": [
+        "tangent_adapter"
+      ],
+      "sources": [
+        "R10",
+        "NT"
+      ],
+      "contract": "Riemann curvature is the stated tangent/Hessian representation",
+      "boundary": "Does not identify every native information fibre with spacetime"
+    },
+    {
+      "id": "reference_protocol",
+      "status": "DECLARED_SELECTION",
+      "parents": [
+        "algebra"
+      ],
+      "sources": [
+        "YM50"
+      ],
+      "contract": "Specified padded counted quaternion records and independent site copies",
+      "boundary": "No physical probability-state selector or full raw-path isometry"
+    },
+    {
+      "id": "reference_functional",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "reference_protocol"
+      ],
+      "sources": [
+        "YM50"
+      ],
+      "contract": "Positive normalized invariant Phi_Q with explicit polynomial tail",
+      "boundary": "General RH state-locked UGD integration is separate"
+    },
+    {
+      "id": "recognition_completion",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "reference_functional"
+      ],
+      "sources": [
+        "N09_N11",
+        "YM50"
+      ],
+      "contract": "Positive-form null quotient and recognition-Cauchy completion",
+      "boundary": "Raw endpoint records are not themselves recognition-Cauchy"
+    },
+    {
+      "id": "hilbert_representation",
+      "status": "PROVED_REPRESENTATION",
+      "parents": [
+        "recognition_completion"
+      ],
+      "sources": [
+        "YM50"
+      ],
+      "contract": "Onto isometry of coefficient completions and bounded multiplier intertwining",
+      "boundary": "No identification with every larger bounded-history carrier"
+    },
+    {
+      "id": "heat_protocol",
+      "status": "DECLARED_SELECTION",
+      "parents": [
+        "algebra"
+      ],
+      "sources": [
+        "YM50",
+        "YM51"
+      ],
+      "contract": "Finite symmetric turn records with declared weights/vectors",
+      "boundary": "Curvature and reference invariance do not select their second moment C"
+    },
+    {
+      "id": "heat_action",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "heat_protocol",
+        "recognition_completion"
+      ],
+      "sources": [
+        "YM50",
+        "YM51"
+      ],
+      "contract": "Native finite-content turn limit and positive generator L_C",
+      "boundary": "This is a specified symmetric local second-order class"
+    },
+    {
+      "id": "fixed_law_isotropy",
+      "status": "DECLARED_SELECTION",
+      "parents": [
+        "heat_protocol"
+      ],
+      "sources": [
+        "YM51"
+      ],
+      "contract": "Active conjugation invariance with the law held fixed",
+      "boundary": "Covariance transforms C and does not imply this hypothesis"
+    },
+    {
+      "id": "isotropic_form",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "heat_action",
+        "fixed_law_isotropy"
+      ],
+      "sources": [
+        "YM51"
+      ],
+      "contract": "The fixed-law hypothesis forces C=cI",
+      "boundary": "Positive c and its physical scale remain unselected"
+    },
+    {
+      "id": "clock_selector",
+      "status": "DECLARED_SELECTION",
+      "parents": [
+        "isotropic_form"
+      ],
+      "sources": [
+        "MORPHIC",
+        "R41",
+        "YM50",
+        "YM51"
+      ],
+      "contract": "A resolving clock and a specified coupling to this process",
+      "boundary": "Existing native relational clocks do not yet select physical YM time"
+    },
+    {
+      "id": "chain_action_and_trajectory",
+      "status": "DECLARED_SELECTION",
+      "parents": [
+        "heat_action",
+        "clock_selector"
+      ],
+      "sources": [
+        "YM44",
+        "YM45",
+        "YM50"
+      ],
+      "contract": "Existing spatial chain, face law and kappa(a)=theta*a in its strict window",
+      "boundary": "Changing c changes the relative interaction theta/c"
+    },
+    {
+      "id": "chain_limits_and_observables",
+      "status": "NATIVE_DERIVED_UNDER_CONTRACT",
+      "parents": [
+        "chain_action_and_trajectory",
+        "recognition_completion"
+      ],
+      "sources": [
+        "YM45",
+        "YM47",
+        "YM49",
+        "YM50"
+      ],
+      "contract": "Proved limits and observables on the existing isotropic abs(theta)<1/1680 family",
+      "boundary": "No automatic transport of its interacting gap to arbitrary C"
+    },
+    {
+      "id": "row_closure",
+      "status": "OPEN_EXTENSION",
+      "parents": [
+        "chain_limits_and_observables",
+        "memory"
+      ],
+      "sources": [
+        "YM49"
+      ],
+      "contract": "Evaluate the actual chain's positive two-time defect",
+      "boundary": "Finite closing/nonclosing fixtures do not decide the infinite chain"
+    },
+    {
+      "id": "general_ugd",
+      "status": "OPEN_EXTENSION",
+      "parents": [
+        "algebra",
+        "reference_functional"
+      ],
+      "sources": [
+        "YM50"
+      ],
+      "contract": "General RH E5C/E6 state-locked atlas and integration dictionary",
+      "boundary": "The compact counted-reference bridge is narrower"
+    },
+    {
+      "id": "physical_dictionary",
+      "status": "OPEN_EXTENSION",
+      "parents": [
+        "chain_limits_and_observables",
+        "riemann_comparison"
+      ],
+      "sources": [
+        "YM50",
+        "YM51"
+      ],
+      "contract": "Physical gauge/state/action/clock, NCG quantum measure and 4D identification",
+      "boundary": "No AF, Clay or quantum-gravity completion is claimed"
+    }
+  ],
+  "must_remain_selections": [
+    "connection_data",
+    "observer_data",
+    "metric_protocol",
+    "tangent_adapter",
+    "reference_protocol",
+    "heat_protocol",
+    "fixed_law_isotropy",
+    "clock_selector",
+    "chain_action_and_trajectory"
+  ],
+  "must_remain_open": [
+    "row_closure",
+    "general_ugd",
+    "physical_dictionary"
+  ],
+  "audit_decision": "Reuse established tools. Do not redefine curvature to remove selection assumptions. Test protocol second moments, fixed-law isotropy, clock and interaction ratio explicitly.",
+  "evidence_scope": "Source-linked dependency and type audit with exact witness controls. Written proof, not mechanical formalization or external expert certification."
+}

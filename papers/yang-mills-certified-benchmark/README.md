@@ -1,6 +1,62 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-50
+## Current continuation: YM-51
+
+[YM-51's audit and written proof](YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md)
+checks the tools used by the current YM route. The
+[dependency ledger](certificates/YM51_DEPENDENCY_LEDGER.json) records 29
+nodes, nine explicit selection assumptions and three open extensions.
+It preserves the existing native algebra, typed tensors, connection
+curvature, observer/memory corrections, response metrics and completion
+results. It does not recommend redefining every tool.
+
+The decisive witness is a family of symmetric native turn protocols with
+
+\[
+C_\eta=\operatorname{diag}(3-2\eta,\eta,\eta),\qquad
+L_C=-\sum_{a,b}C_{ab}D_aD_b,\qquad 0<\eta\leq1.
+\]
+
+Every member has the same Phi_Q, native derivative brackets and decay
+3/4 on all linear coefficients. But the same nonzero centered quadratic
+source has decay 2*eta. Every axis is sampled at each eta>0; nevertheless
+no positive decay rate is uniform as eta tends to zero. Curvature,
+reference invariance and linear probes do not select the heat law or gap.
+This does not change YM45's gap for its fixed isotropic chain.
+
+For protocol moments m2 and m4, the native refinement error on degree d is
+d^4*t^2*(m4+3*m2^2)/(96*n), recovering YM50's bound in its special case.
+Covariance transforms C along with the frame. An additional fixed-law
+invariance under four native conjugations forces C=cI. Six quadratic
+readouts recover unrestricted symmetric C; isotropy still leaves the
+clock scale c, and clock rescaling changes the relative interaction theta/c.
+These internal symmetries do not derive local gauge Ward laws or physical
+spatial isotropy.
+
+[The certificate](certificates/YM51_RESULT.json) binds six written results,
+25 protocol factorizations and 25 all-source finite energy controls,
+70 reference checks, twelve bracket identities, sixty covariant actions,
+24 linear-blindness checks, six quadratic witnesses, eighteen tensor
+recovery checks, fourteen independent labelled counts, 72 outward
+refinement enclosures and twelve clock-rescaling controls.
+Seventeen new and 117 related tests pass on **Python 3.12 only**.
+The test suite also rejects nine invalid dependency-ledger mutations.
+All 88 pinned upstream files and the canonical engines are preserved.
+
+**Scope:** the audit covers the current YM43--50 tool route. Fixed-law
+isotropy, physical clock/state/action selection, general RH E5C/E6,
+the actual chain's row closure, NCG quantum measure and 4D/AF/Clay/QG
+remain open. Alternative free protocols are not assigned the old
+interacting gap. Written proofs, exact controls and external expert
+certification remain distinct; neither formalization nor expert review
+is claimed.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym51_heat_selection.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym51_heat_selection.py -v
+~~~
+
+## Previous continuation: YM-50
 
 [YM-50's written proof](YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md) constructs
 the compact reference and heat law from specified native counted records.
@@ -407,6 +463,7 @@ width budget.
 
 | Item | Status |
 |---|---|
+| **YM-51 tool audit and native heat-selection boundary** | PROVED for specified symmetric turn protocols: same curvature/reference and linear decay do not select quadratic decay; fixed-law invariance forces C=cI; six-channel recovery and explicit refinement bound; physical selection OPEN |
 | **YM-50 counted native reference, positive completion and symmetric-turn heat bridge** | PROVED for the specified quaternion/readout protocol; coefficient reference, observables, declared transfers and closed coefficient-history sector intertwined; general UGD, physical selection, NCG quantum measure and 4D OPEN |
 | **YM-49 bounded time-zero coefficient observable representation, ordered readouts, positive row-closure defect and gap-controlled memory; nonzero time/observable commutator** | PROVED on the declared heat-functional carrier; YM-50 supplies its compact reference/heat bridge; actual chain row defect, full bounded-history density, physical observable/DICT and 4D continuum OPEN |
 | **YM-48 reflected continuous-time action, self-adjoint generator/domain/core and gap; coefficient-row embedding and nonzero source** | PROVED on the declared small-bridge heat-functional carrier; YM-49 supplies time-zero observable action; instantaneous-row/physical identification, DICT and 4D continuum OPEN |
