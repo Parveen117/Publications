@@ -1,6 +1,18 @@
 # Publications
 
-Latest mathematical tool: [GE1 — Generalized Euler evolution](papers/generalized-euler-evolution/README.md)
+Latest mathematical continuation: [GE2 — clock-free recognition generator](papers/generalized-euler-evolution/GE2_CLOCK_FREE_RECOGNITION_GENERATOR.md)
+starts from rational native arrows and retained record cuts. It derives
+the phase derivation and, for a symmetric independent record protocol,
+the existing heat generator as half the recognition-form loss density
+per unit intrinsic quadratic budget. Unequal-step refinement has an
+explicit error; native response curvature controls the inherited compact
+rate in this clock. Six written results, 18 new and 17 predecessor tests
+use **Python 3.12 only**. Physical protocol/clock selection, general
+returning memory and interacting/4D/Clay obligations remain open.
+See the [stage index](papers/generalized-euler-evolution/INDEX.md) and
+[source audit](papers/generalized-euler-evolution/GE2_SOURCE_AUDIT.md).
+
+Previous mathematical tool: [GE1 — Generalized Euler evolution](papers/generalized-euler-evolution/README.md)
 audits two uncertified Euler/operator drafts and proves explicit generator
 domains, stable phase approximation, and a positive resolvent approximation
 for the existing native compact YM heat. An exact near-resonant example

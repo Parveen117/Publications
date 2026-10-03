@@ -22,6 +22,19 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[GE2: clock-free recognition generator](papers/generalized-euler-evolution/GE2_CLOCK_FREE_RECOGNITION_GENERATOR.md)
+constructs rational native arrows and an actual typed retained-record
+lift of the Recognition–Seam cut calculus. Its first variation is the
+existing phase derivation. Symmetric independent records yield the heat
+generator as half the form-loss density in a quadratic history ledger;
+unequal-step refinements recover native heat with an explicit error.
+The heat generator has an energy product defect and is not the phase
+derivation. Native response curvature gives the already proved compact
+rate in the normalized record clock. Six written results and 18 new
+tests preserve GE1 and all older evidence, using Python 3.12 only.
+Process/observer selection and physical seconds are not derived; general
+returning memory and interacting/4D/Clay obligations remain separate.
+
 [GE1: Generalized Euler exponential domains](papers/generalized-euler-evolution/README.md)
 adds explicit graph-domain proofs and stable strong limits on specified
 native completions, while retaining the RH source's already developed
