@@ -1,16 +1,17 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-49](papers/yang-mills-certified-benchmark/YM49_TIME_ZERO_OBSERVABLES.md)
-constructs bounded time-zero coefficient observables on YM-48's reflected
-history carrier, including their product/dagger laws and ordered readouts.
-The positive defect C(2t)-C(t)^2 measures exactly the squared leakage from
-the instantaneous coefficient row; its vanishing characterizes row closure.
-The existing RKF memory equation gains this carrier and a gap-controlled
-tail. A same-chain source proves noncommutation of time and observable action.
-Seventeen new and 83 related tests pass.
-The heat/reference functional remains admitted on abs(theta)<1/1680.
-The actual infinite-chain row defect, native measure/NCG dictionary, physical
-gauge-observable selection and full 4D continuum remain open.
+Latest Yang–Mills continuation: [YM-50](papers/yang-mills-certified-benchmark/YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md)
+constructs a positive reference functional from normalized finite native
+Phi_Sigma record readouts, with an explicit polynomial convergence tail.
+Its recognition completion and symmetric-turn heat law are proved to
+represent the previously admitted SU(2) coefficient reference and heat
+action. Bounded observables and the declared small-bridge chain transfers
+are intertwined. Hilbert space enters as a representation of this
+constructed positive completion.
+Seventeen new and 100 related tests pass.
+The sector, counted protocol, heat clock and interacting trajectory remain
+declared choices. General UGD integration, physical state selection, the
+actual infinite-chain row defect, NCG quantum measure and 4D/Clay remain open.
 Current YM verification uses **Python 3.12 only**.
 
 [YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)

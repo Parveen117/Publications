@@ -1,6 +1,62 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-49
+## Current continuation: YM-50
+
+[YM-50's written proof](YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md) constructs
+the compact reference and heat law from specified native counted records.
+It uses the already derived EMK quaternion sector and canonical
+stationary-path Phi_Sigma. On finite diagonal record kernels,
+
+\[
+\varphi_N(p)=\frac{\Phi_\Sigma(D_{p,N})}{N12^{N-1}},
+\qquad
+|\varphi_N(p)-\Phi_Q(p)|\leq\frac{2B_p}{N}.
+\]
+
+Finite coefficient energy and a solved Poisson equation derive positivity,
+invariance, uniqueness and exact moments. Only then does comparison show
+Phi_Q=Phi_ref on coefficient polynomials and their uniform completion.
+The resulting recognition completion is isometric to the old coefficient
+carrier, with bounded observables intertwined. Hilbert space is this
+positive completion's representation.
+
+A six-turn native protocol also constructs the full coefficient heat law:
+
+\[
+\|S_{\sqrt{6t/n}}^n-\operatorname{Exp}_\Sigma(-tL)\|_d
+\leq\frac{3d^4t^2}{8n}.
+\]
+
+The existing bounded face weights, finite-chain transfers and their
+declared limiting coefficient histories agree under the representation.
+[The certificate](certificates/YM50_RESULT.json) binds eight written results,
+24 independent word-transfer checks, 18 padded trace checks, two complex
+pairings, five exact stationary spaces, 20 telescoping cases, 160 tail
+checks, 70 independently projected moments, 495 earlier-reference matches,
+140 invariance checks, 36 multiplier controls, 70 native Casimir identities,
+18 outward heat refinements and twelve refusal groups.
+Seventeen new and 100 related tests pass on **Python 3.12 only**.
+
+**Scope:** the sector, record protocol, independent reference copies,
+isotropic heat clock, chain and kappa(a)=theta*a remain specified choices.
+The [origin ledger](certificates/YM50_ORIGIN_LEDGER.json) records them.
+Raw endpoint records are not recognition-Cauchy; distinct paths may have
+the same observed endpoint. General RH E5C/E6, physical selection, the NCG
+quantum measure, the actual YM-49 row defect, full bounded-history density,
+4D, AF, Clay and QG remain open. The proof is written, not mechanically
+formalized or externally expert-certified. All 78 pinned upstream files
+and the shared RKF/RH engines are unchanged.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym50_native_reference.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym50_native_reference.py -v
+~~~
+
+Earlier admitted-reference statements retain their historical scope.
+YM-50 supplies the above compact bridge; the general integration and
+physical identification obligations remain separate.
+
+## Previous continuation: YM-49
 
 [YM-49's written proof](YM49_TIME_ZERO_OBSERVABLES.md) constructs bounded
 time-zero observables on YM-48's reflected carrier. A uniform energy
@@ -351,7 +407,8 @@ width budget.
 
 | Item | Status |
 |---|---|
-| **YM-49 bounded time-zero coefficient observable representation, ordered readouts, positive row-closure defect and gap-controlled memory; nonzero time/observable commutator** | PROVED on the declared heat-functional carrier; actual chain row defect, full bounded-history density, physical observable/DICT and 4D continuum OPEN |
+| **YM-50 counted native reference, positive completion and symmetric-turn heat bridge** | PROVED for the specified quaternion/readout protocol; coefficient reference, observables, declared transfers and closed coefficient-history sector intertwined; general UGD, physical selection, NCG quantum measure and 4D OPEN |
+| **YM-49 bounded time-zero coefficient observable representation, ordered readouts, positive row-closure defect and gap-controlled memory; nonzero time/observable commutator** | PROVED on the declared heat-functional carrier; YM-50 supplies its compact reference/heat bridge; actual chain row defect, full bounded-history density, physical observable/DICT and 4D continuum OPEN |
 | **YM-48 reflected continuous-time action, self-adjoint generator/domain/core and gap; coefficient-row embedding and nonzero source** | PROVED on the declared small-bridge heat-functional carrier; YM-49 supplies time-zero observable action; instantaneous-row/physical identification, DICT and 4D continuum OPEN |
 | **YM-47 joint volume/time limit of local vacuum histories at arbitrary relative cutoff rates; both iterated limits coincide** | PROVED under the declared abs(theta)<1/1680 heat-functional adapter; positive history functional, correlation gap and reflection positivity retained; YM-48 constructs the reflected time action/generator; full row identification, DICT and 4D continuum OPEN |
 | **YM-46 infinite-volume positive local state and normalized T/S time maps at fixed a, with inherited gap and regulated reflection positivity** | PROVED under the declared small-bridge heat-functional adapter; YM-47 joins local-history limits; exact controls PASS; DICT and 4D continuum OPEN |
