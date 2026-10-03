@@ -1,17 +1,17 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-50](papers/yang-mills-certified-benchmark/YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md)
-constructs a positive reference functional from normalized finite native
-Phi_Sigma record readouts, with an explicit polynomial convergence tail.
-Its recognition completion and symmetric-turn heat law are proved to
-represent the previously admitted SU(2) coefficient reference and heat
-action. Bounded observables and the declared small-bridge chain transfers
-are intertwined. Hilbert space enters as a representation of this
-constructed positive completion.
-Seventeen new and 100 related tests pass.
-The sector, counted protocol, heat clock and interacting trajectory remain
-declared choices. General UGD integration, physical state selection, the
-actual infinite-chain row defect, NCG quantum measure and 4D/Clay remain open.
+Latest Yang–Mills continuation: [YM-51](papers/yang-mills-certified-benchmark/YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md)
+audits 29 tool dependencies and identifies the heat protocol's symmetric
+second moment as a remaining selection choice. The same native brackets,
+positive reference and all linear-coefficient decay can coexist with
+arbitrarily slow quadratic decay. Curvature alone does not choose the heat
+law or its gap. Fixed-law internal invariance selects isotropy up to a
+scale; covariance alone does not. Six quadratic channels recover the
+general symmetric protocol tensor.
+Seventeen new and 117 related tests pass. YM-50's native reference bridge
+and the earlier fixed-protocol chain results remain unchanged.
+Physical isotropy/clock/action selection, general UGD integration, the actual
+row defect, NCG quantum measure and 4D/Clay remain open.
 Current YM verification uses **Python 3.12 only**.
 
 [YM-43](papers/yang-mills-certified-benchmark/YM43_NATIVE_TIME_TRANSFER_BOUND.md)

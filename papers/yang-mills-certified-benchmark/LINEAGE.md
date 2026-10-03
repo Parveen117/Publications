@@ -795,3 +795,43 @@ Ruling (mine, don't merge — same doctrine as the morphic-calculus chapters):
   as do general RH E5C/E6, NCG quantum measure, the actual chain's row
   defect, larger bounded-history density, 4D/AF/Clay/QG. The new origin
   ledger keeps those choices distinct from the proved compact bridge.
+
+## YM-51 (3 October 2026): audit the tools before selecting further physics
+
+- USER DIRECTION: inspect whether native curvature requires changing the
+  tools used downstream, rather than automatically advancing the next
+  physical claim. Scope is the current YM43--50 dependency route.
+- SOURCE AUDIT: F00-E, RKF N01--N11, EMK-C1, native thermo NT, Extra
+  R7--R13/R36/R41 and Morphic Calculus's status/clock sections. Existing
+  tensor, observer, metric, memory and clock results are reused. The
+  Morphic manuscript's open/overbroad status is not promoted.
+- LEDGER: 29 source-linked nodes distinguish native results under their
+  contracts, proved representations, nine explicit selections and three
+  open extensions. Curvature targets retain distinct types.
+- T1--T2: symmetric finite counted turns select a positive second-moment
+  tensor C and generator L_C. The finite-content error is
+  d^4*t^2*(m4+3*m2^2)/(96*n), with the exact YM50 special case.
+- T3: C_eta=diag(3-2eta,eta,eta) leaves the native frame, Phi_Q and every
+  linear decay rate unchanged. A centered quadratic source of squared
+  norm 1/12 decays at 2eta. Full support for each eta>0 does not give a
+  uniform rate across the family. The old isotropic interacting theorem
+  is unchanged and is not extended to these alternatives.
+- T4--T5: covariance is valid for all these tensors. Fixed-law active
+  invariance under four native conjugations forces C=cI. Six quadratic
+  channels recover the unrestricted symmetric tensor. These specialize
+  familiar invariant-form and target-recovery methods; no general
+  mathematical priority is claimed.
+- T6: isotropy leaves c; E_C(t)=E_I(ct). Rescaling the interacting
+  step also changes the relative parameter theta/c. Physical clock and
+  interaction selection remain separate from this exact identity.
+- EVIDENCE: six written results; seventeen new and 117 related Python
+  3.12 tests; 88 unchanged local source hashes, twelve additional
+  audited external sources and eight inherited YM50 source pins.
+  Exact native coefficient/count controls and outward refinement
+  enclosures support the written proof; no mechanical formalization
+  or external expert certification is claimed.
+- NEXT: establish or test a fixed-law internal isotropy selector, or
+  retain/recover C explicitly; connect the residual clock/interaction
+  ratio to a specified process. Actual chain row closure remains a
+  separate operator question. General UGD, NCG quantum measure,
+  physical spacetime, 4D/AF/Clay/QG remain open.
