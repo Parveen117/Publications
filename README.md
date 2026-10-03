@@ -1,6 +1,19 @@
 # Publications
 
-Latest Yang–Mills continuation: [YM-54](papers/yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md)
+Latest Yang–Mills continuation: [YM-55](papers/yang-mills-certified-benchmark/YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
+constructs the joint volume/time limit of local vacuum histories for the
+native anisotropic interacting chain. A fixed profile with second-eigenvalue
+floor beta>0, uniform trace ceiling M, and abs(theta)<beta/2400 admits
+independent rates of spatial exhaustion and heat refinement. The limit
+retains positivity, heat-time reflection positivity and exponential centered
+correlation decay. YM54's native curvature floor and response budget supply
+both required profile bounds. Rank two and differing site orientations are
+allowed; singular midpoint bridges are handled on admissible supports.
+Seven written results, 22 new and 62 prior targeted tests use **Python 3.12
+only**, preserving 117 upstream files. Physical selection, moving
+interacting vacua, continuous-time row closure and 4D/Clay remain open.
+
+Previous response continuation: [YM-54](papers/yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md)
 constructs a counted compact heat protocol from two native shape-response
 directions. Its second tensor eigenvalue obeys beta>=4 f^2/tau, where f
 is the existing response-curvature marker and tau is the shape-Gram trace.
@@ -9,8 +22,8 @@ abs(theta)<f0^2/(600 T). The original curved thermo fixture gives an
 exact example. Seven written results, twenty new and 171 related tests
 use **Python 3.12 only**; 110 upstream sources retain their bytes.
 Equal signed counts, frozen response jets, directions and heat clock are
-declared choices. Physical selection, anisotropic joint/volume limits and
-4D/Clay remain open.
+declared choices. YM55 supplies the fixed-profile anisotropic joint history
+limit; physical selection and 4D/Clay remain open.
 
 Previous interacting continuation: [YM-53](papers/yang-mills-certified-benchmark/YM53_ANISOTROPIC_INTERACTING_GAP.md)
 extends the interacting chain to native anisotropic and rank-two heat.
@@ -21,7 +34,8 @@ handles inadmissible short bridges, and carries the gap into each
 fixed-width time limit. Interacting energy uses the derived ground-source
 weight and obeys the same lower bound. Seven written results, eighteen
 new exact-control tests and 151 related tests use **Python 3.12 only**.
-The anisotropic joint/volume limit, physical selection and 4D/Clay remain open.
+YM55 adds the fixed-profile joint history limit under a uniform trace
+ceiling. Physical selection and 4D/Clay remain open.
 
 Previous energy continuation: [YM-52](papers/yang-mills-certified-benchmark/YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
 connects the declared native heat protocol to derivative energy, discarded
