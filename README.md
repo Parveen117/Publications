@@ -42,7 +42,21 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-66](papers/yang-mills-certified-benchmark/YM66_LOCAL_VACUUM_LIMIT.md)
+Latest Yang–Mills continuation: [YM-67](papers/yang-mills-certified-benchmark/YM67_POINTWISE_COARSE_VACUUM.md)
+uses the native heat kernel and ordered vacuum derivatives to bound the
+actual coarse log-gradient by 48 times the maximum plaquette coupling,
+independently of volume and product-link length. Positive density and
+second-derivative bounds upgrade fixed coarse marginals from L1 to C1
+convergence. Conditioning on finitely many exact coarse values is now
+defined pointwise; distant finite pins have decaying density, score and
+mutual-information bounds. The diagonal coarse drift has a uniform
+local energy estimate. Six written results and 30 new exact tests use
+**Python 3.12 only**; 93 targeted tests preserve 204 upstream files.
+Arbitrary growing exterior conditioning, full Schur-memory locality,
+time-zero Markov identification and the four-dimensional continuum
+remain open.
+
+Previous Yang–Mills continuation: [YM-66](papers/yang-mills-certified-benchmark/YM66_LOCAL_VACUUM_LIMIT.md)
 extends the existing gap to independently signed, bounded plaquette
 couplings. Integrating the spatial response controls distant boundary
 changes and proves a unique local vacuum limit in trace norm for all
