@@ -42,7 +42,19 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-62](papers/yang-mills-certified-benchmark/YM62_GAUGE_LATTICE_GAP.md)
+Latest Yang–Mills continuation: [YM-63](papers/yang-mills-certified-benchmark/YM63_SPATIAL_BLOCKING_SCALE.md)
+keeps the YM62 gauge Hamiltonian and constructs exact product-link spatial
+blocking. Free heat closes with clock factor b; the interaction returns
+through a nonzero memory term and an energy-dependent Schur operator.
+Two independent source recursions give the 2x2 Wilson-loop response
+(35/23328)theta^4+O(theta^6), distinct from the same-area 1x4 coefficient.
+Two-sided scaled gap bounds specify why spacing refinement alone does
+not produce a finite physical mass in the certified strong-coupling
+interior. Six written results and 32 new exact tests use **Python 3.12
+only**, preserving 175 upstream files. Repeated-block operator control,
+uniform large-loop estimates and the continuum R4 theory remain open.
+
+Previous Yang–Mills continuation: [YM-62](papers/yang-mills-certified-benchmark/YM62_GAUGE_LATTICE_GAP.md)
 puts native quaternion variables on links of a three-dimensional lattice
 with continuous heat time. The declared electric-Casimir/ordered-plaquette
 model has local Gauss symmetry and a volume-uniform interacting gap for
