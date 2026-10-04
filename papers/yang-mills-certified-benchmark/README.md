@@ -1,6 +1,50 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-59
+## Current continuation: YM-60
+
+[YM-60's interacting history proof](YM60_INTERACTING_HISTORIES_RESPONSE.md)
+retains the original scalar potential. At each finite width its actual
+positive vacuum gives a reversible ground-state transform. A local
+time-increment estimate is independent of width. Spatial averaging,
+compactness at rational times and mean-square continuity then construct
+subsequential interacting infinite-volume histories for every fixed
+real coupling. They are positive and reflection positive, with a
+nonnegative reconstructed heat Hamiltonian. This construction proves
+existence without assuming a unique or time-zero Markov limit.
+
+Common left/right native symmetries fix the coordinate second moments.
+The bulk overlap c lies between the negative one-sided energy derivatives;
+at differentiability points c=-e'(theta). The centered two-site readout
+q_0^a+sign(theta)q_1^a has normalized correlation bounded below by
+exp(-t m_trial), where
+
+\[
+ m_{\rm trial}=\frac{1+2k-k|c|}{8(1+|c|)}.
+\]
+
+At k=1,
+c=theta/2+(1123/11844)theta^3+O(|theta|^5), and
+m_trial=3/8-|theta|/4+theta^2/8-(5207/47376)|theta|^3+O(theta^4).
+This is an **upper spectral constraint**, not an interacting lower gap
+or an exact mass formula. The higher-order uniform energy tower and
+concave secants justify the differentiated asymptotic; a single
+undifferentiated remainder would not suffice.
+
+Six written results are supported by 24 new exact tests, including
+scalar cancellation, negative neighbouring form entries, physical
+endpoint corrections and explicit failures of moment-to-lower-gap and
+mixture-to-Markov inferences. All runs require **Python 3.12**; 153
+upstream files remain pinned. The dedicated workflow replays the 44
+YM59/YM58 tests as well. A uniform weighted Poincare inequality for the
+actual vacuum remains the precise lower-gap obligation. Physical gauge
+constraints, action/clock selection and the 4D continuum remain open.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym60_interacting_histories_response.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym60_interacting_histories_response.py -v
+```
+
+## Previous continuation: YM-59
 
 [YM-59's scalar response proof](YM59_SCALAR_VACUUM_RESPONSE.md) adds the
 original scalar overlap potential to the correlated native kinetic chain.

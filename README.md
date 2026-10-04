@@ -42,7 +42,20 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-59](papers/yang-mills-certified-benchmark/YM59_SCALAR_VACUUM_RESPONSE.md)
+Latest Yang–Mills continuation: [YM-60](papers/yang-mills-certified-benchmark/YM60_INTERACTING_HISTORIES_RESPONSE.md)
+constructs subsequential interacting infinite-volume histories for the
+original scalar overlap model at fixed coupling. Spatial averaging and
+a uniform local time estimate give continuous-time, positive,
+reflection-positive histories and a nonnegative reconstructed Hamiltonian.
+Exact native symmetries connect the scalar response c=-e'(theta), where
+the energy is differentiable, to the observable spectral upper bound
+m_trial=(1+2k-k|c|)/(8(1+|c|)). At k=1 its expansion begins
+3/8-|theta|/4+theta^2/8-(5207/47376)|theta|^3.
+Six written results and 24 new tests use **Python 3.12 only**; 153
+upstream files remain pinned. The interacting lower gap, uniqueness,
+time-zero Markov property, and physical 4D continuum remain open.
+
+Previous Yang–Mills continuation: [YM-59](papers/yang-mills-certified-benchmark/YM59_SCALAR_VACUUM_RESPONSE.md)
 retains the original scalar overlap interaction on the correlated kinetic
 chain and proves existence of its thermodynamic energy density. A local
 logarithmic Poisson tower gives volume-uniform energy-density asymptotics
