@@ -1,6 +1,33 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-63
+## Current continuation: YM-64
+
+[YM-64's vacuum-adapted tower](YM64_VACUUM_ADAPTED_TOWER.md) uses the
+actual interacting vacuum measure to define each spatial conditional
+expectation. The retained space contains the complete vacuum, so its
+hidden generator has the same volume-independent lower gap gamma(theta)
+at every finite block depth. A quadratic-form construction handles the
+generally unbounded coupling and gives an exact nested Schur identity
+at a fixed spectral parameter. Direct and successive blocks agree when
+the complete spectral family is retained.
+
+The inverse-response moments obey positive block Hankel constraints and
+0 <= M_(r,n) <= gamma^(-n) C_r. Their Taylor remainder and integrated
+memory tail have uniform bounds relative to coarse energy. These are
+not absolute norm or all-order spatial locality bounds. A physical
+coarse Wilson loop has first-order hidden leakage -32/75 at an explicit
+native rational configuration, preserved under a local gauge change.
+The leading return is spatially local; the complete spatial estimate
+and a nontrivial continuum trajectory remain open.
+
+Six written results and 32 new exact tests use **Python 3.12 only**.
+The dedicated workflow also replays 32 YM63 and 29 YM62 tests and their
+unchanged certificates, for 93 targeted tests. It preserves 183 upstream
+source files. The actual vacuum is used mathematically, not computed
+by a finite matrix surrogate. Neither continuum R4 construction nor a
+physical mass prediction is claimed. Pin: `EXPECTED_YM64.sha256`.
+
+## Previous continuation: YM-63
 
 [YM-63's spatial-blocking proof](YM63_SPATIAL_BLOCKING_SCALE.md) retains
 the actual YM62 link/plaquette Hamiltonian. Multiplying b fine links

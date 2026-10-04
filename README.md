@@ -42,7 +42,18 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-63](papers/yang-mills-certified-benchmark/YM63_SPATIAL_BLOCKING_SCALE.md)
+Latest Yang–Mills continuation: [YM-64](papers/yang-mills-certified-benchmark/YM64_VACUUM_ADAPTED_TOWER.md)
+uses the actual vacuum measure to make repeated product-link cuts retain
+the complete vacuum. The hidden gap is uniform in volume and finite block
+depth. Exact nested Schur reduction preserves the full spectral family;
+positive inverse-response moments have uniform energy-relative remainder
+and memory-tail bounds. A native physical loop supplies nonzero leakage
+-32/75 at a rational configuration. Six written results and 32 new exact
+tests use **Python 3.12 only**, preserving 183 upstream files. All-order
+spatial locality, constructive coarse-vacuum control and a nontrivial
+continuum trajectory remain open; no continuum mass gap is claimed.
+
+Previous Yang–Mills continuation: [YM-63](papers/yang-mills-certified-benchmark/YM63_SPATIAL_BLOCKING_SCALE.md)
 keeps the YM62 gauge Hamiltonian and constructs exact product-link spatial
 blocking. Free heat closes with clock factor b; the interaction returns
 through a nonzero memory term and an energy-dependent Schur operator.
