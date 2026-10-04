@@ -42,7 +42,20 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-65](papers/yang-mills-certified-benchmark/YM65_SPATIAL_RESPONSE_LOCALITY.md)
+Latest Yang–Mills continuation: [YM-66](papers/yang-mills-certified-benchmark/YM66_LOCAL_VACUUM_LIMIT.md)
+extends the existing gap to independently signed, bounded plaquette
+couplings. Integrating the spatial response controls distant boundary
+changes and proves a unique local vacuum limit in trace norm for all
+admissible exhaustions. Real-time locality and the Poisson representation
+also make the heat-history limit unique. Every fixed coarse marginal
+converges in L1, and every fixed inverse-response moment has one limit.
+The complete positive tower determines the spectrum visible to its
+readout. Six written results and 31 new exact tests use **Python 3.12
+only**; 90 targeted tests preserve 197 upstream files. Pointwise
+conditional-density and Schur-kernel estimates, time-zero Markov
+identification and the four-dimensional continuum remain open.
+
+Previous Yang–Mills continuation: [YM-65](papers/yang-mills-certified-benchmark/YM65_SPATIAL_RESPONSE_LOCALITY.md)
 adds volume-independent spatial decay for the actual gauge Hamiltonian's
 connected correlations and every fixed inverse-response order. Explicit
 plaquette incidence controls propagation without a spin cutoff; a normalized
