@@ -42,7 +42,20 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-60](papers/yang-mills-certified-benchmark/YM60_INTERACTING_HISTORIES_RESPONSE.md)
+Latest Yang–Mills continuation: [YM-61](papers/yang-mills-certified-benchmark/YM61_SOURCE_RESPONSE_COLLECTIVE.md)
+uses independent scalar sources to turn the local response tower into
+fixed-distance correlation expansions for the actual interacting model.
+At unit neighbour rate the leading coefficients at separations 1–4 are
+1/2, 11/24, 49/108 and 4853/10368. Native parity selects the first
+possible order, and exact completed-site elimination gives 52 local
+inverse witnesses. Collective coordinate probes have first spectral
+response matrix -J_1/4 for every k>0; the cubic response retains a
+noncommuting matrix anticommutator. A four-site readout strengthens the
+two-site upper constraint. Six written results and 24 new exact tests
+use **Python 3.12 only**, preserving 160 upstream files. Uniform tower
+convergence, an interacting lower gap and physical 4D claims remain open.
+
+Previous Yang–Mills continuation: [YM-60](papers/yang-mills-certified-benchmark/YM60_INTERACTING_HISTORIES_RESPONSE.md)
 constructs subsequential interacting infinite-volume histories for the
 original scalar overlap model at fixed coupling. Spatial averaging and
 a uniform local time estimate give continuous-time, positive,

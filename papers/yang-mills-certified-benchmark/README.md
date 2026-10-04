@@ -1,6 +1,56 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-60
+## Current continuation: YM-61
+
+[YM-61's source-response proof](YM61_SOURCE_RESPONSE_COLLECTIVE.md) makes
+independent scalar source directions explicit. The existing uniform
+fixed-order Poisson tower then yields spatial correlation coefficients
+for the actual eta=0 interacting model, using concave secants to justify
+the limit of each response. At unit neighbour rate,
+
+\[
+ c_2=(11/24)\theta^2+O(\theta^4),\quad
+ c_3=(49/108)\theta^3+O(|\theta|^5),\quad
+ c_4=(4853/10368)\theta^4+O(\theta^6).
+\]
+
+Site parity selects the first possible order. At that order a labelled
+cycle recursion applies, with completed sites averaged only after their
+last insertion. All 52 local inverse witnesses for separations 1–4 are
+exact; full-source inverse checks justify the elimination. The adjacent
+and separated endpoint rates remain distinct.
+
+Collective readouts combine these responses in a covariance matrix G_L
+and kinetic form M_L. Their generalized Rayleigh quotient gives an
+**upper spectral constraint**. For every positive neighbour rate k,
+
+\[
+ m_L=\frac{1+2k}{8}
+       -\frac12\cos\!\left(\frac{\pi}{L+1}\right)|\theta|
+       +O_L(\theta^2).
+\]
+
+The leading response matrix is exactly -J_1/4, independent of k. The
+unit-rate matrix is computed through cubic order and includes the
+noncommuting anticommutator J_1 J_2+J_2 J_1. The rational four-site
+readout (1,2,2,1) has upper constraint
+3/8-(2/5)|theta|+(73/400)theta^2-(1293529/11844000)|theta|^3+O(theta^4),
+improving the earlier two-site constraint at sufficiently small coupling.
+This is neither an exact mass nor a positive lower gap.
+
+Six written results, 24 new exact tests and 48 targeted YM60/YM59 tests
+use **Python 3.12**. The source manifest preserves 160 upstream files.
+The errors are uniform in volume at each fixed separation or window;
+they are not uniform in arbitrarily large separation. Infinite tower
+convergence, the full-vacuum Poincare inequality and physical 4D
+Yang–Mills obligations remain open.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym61_source_response_collective.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym61_source_response_collective.py -v
+```
+
+## Previous continuation: YM-60
 
 [YM-60's interacting history proof](YM60_INTERACTING_HISTORIES_RESPONSE.md)
 retains the original scalar potential. At each finite width its actual

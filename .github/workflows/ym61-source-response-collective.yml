@@ -1,0 +1,42 @@
+name: YM61 source response and collective probes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/native-compact-gauge/**'
+      - '.github/workflows/ym61-source-response-collective.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/native-compact-gauge/**'
+      - '.github/workflows/ym61-source-response-collective.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce exact source and collective evidence
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym61_source_response_collective.py --check
+      - name: Test the cycle recursion and noncommuting response matrices
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym61_source_response_collective.py -v
+      - name: Replay the unchanged interacting history and scalar sources
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym60_interacting_histories_response.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym60_interacting_histories_response.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym59_scalar_vacuum_response.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym59_scalar_vacuum_response.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark
