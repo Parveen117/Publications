@@ -42,7 +42,21 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-57](papers/yang-mills-certified-benchmark/YM57_NEIGHBOUR_TURN_GAP.md)
+Latest Yang–Mills continuation: [YM-58](papers/yang-mills-certified-benchmark/YM58_INFINITE_VOLUME_HISTORIES.md)
+constructs infinite-volume local histories for YM57's correlated kinetic
+chain. Correct marginal generators retain boundary-bond noise, and local
+heat histories stabilize exactly after one layer of neighbours. The
+centered L2 gap remains at least min(1/630, k/420). Positivity, heat-time
+reflection positivity and Markov composition hold for the full native
+configuration. The global-label turn approximation has a sufficient
+joint gate W_N/n -> 0; a fast-volume counterexample and a volume-first
+freezing bound rule out unrestricted refinement for that scheme.
+Six written results, 20 new tests and 33 predecessor tests use
+**Python 3.12.14**; the source manifest preserves 139 upstream files.
+Adding the scalar interaction, physical gauge selection and the
+four-dimensional continuum remain open.
+
+Previous Yang–Mills continuation: [YM-57](papers/yang-mills-certified-benchmark/YM57_NEIGHBOUR_TURN_GAP.md)
 uses an exact neighbour-turn echo to recover each missing local rotation.
 For a declared correlated kinetic chain, it proves the width-uniform gap
 min(1/630, k/420) even when every on-site lambda is zero. The old scalar
