@@ -1,0 +1,40 @@
+name: YM65 spatial response locality and bulk control
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym65-spatial-response-locality.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym65-spatial-response-locality.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce spatial response and bulk evidence
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym65_spatial_response_locality.py --check
+      - name: Test propagation filters inverse responses and bulk limits
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym65_spatial_response_locality.py -v
+      - name: Replay unchanged adapted blocking and gauge lattice results
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym64_vacuum_adapted_tower.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym64_vacuum_adapted_tower.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym62_gauge_lattice_gap.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym62_gauge_lattice_gap.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark
