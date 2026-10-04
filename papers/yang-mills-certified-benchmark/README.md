@@ -1,6 +1,38 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-57
+## Current continuation: YM-58
+
+[YM-58's infinite-volume history proof](YM58_INFINITE_VOLUME_HISTORIES.md)
+constructs consistent marginals for YM57's correlated kinetic model.
+Native derivatives preserve cylinder support; boundary-crossing bonds
+still contribute their endpoint noise. Once a finite chain contains
+the readout sites and their nearest neighbours, its heat histories
+equal the infinite-volume histories exactly. The centered L2 gap
+retains min(1/630, k/420), even with zero on-site YM56 lambda.
+
+The construction gives positive stationary histories, heat-time
+reflection positivity and Markov composition for the full native
+configuration. An exact adjacent-pair correlation distinguishes the
+correlated dynamics from independent site heat. The global-label
+discrete turn source has a sufficient joint gate W_N/n -> 0; taking
+volume first freezes local readouts, and a concrete N=n^2 sequence
+stays away from the correct heat limit. Exact heat stabilization is
+therefore kept distinct from finite-step volume dependence.
+
+Six written results are supported by 408 open-volume generator
+identities, 204 arbitrary-subset consistency identities, 128 multi-time
+coefficient identities and 15 rational matrix gap inequalities. The
+20 new and 33 targeted predecessor tests pass on **Python 3.12.14**;
+CI requires Python 3.12. The source manifest preserves 139 upstream
+files. Adding the scalar interaction, physical gauge action/clock
+selection, gauge constraints and the spatial/4D continuum remain open.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym58_infinite_volume_histories.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym58_infinite_volume_histories.py -v
+```
+
+## Previous continuation: YM-57
 
 [YM-57's neighbour-turn proof](YM57_NEIGHBOUR_TURN_GAP.md) supplies a
 uniform finite-chain gap for a declared correlated kinetic model even
