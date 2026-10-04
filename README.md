@@ -42,7 +42,19 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-64](papers/yang-mills-certified-benchmark/YM64_VACUUM_ADAPTED_TOWER.md)
+Latest Yang–Mills continuation: [YM-65](papers/yang-mills-certified-benchmark/YM65_SPATIAL_RESPONSE_LOCALITY.md)
+adds volume-independent spatial decay for the actual gauge Hamiltonian's
+connected correlations and every fixed inverse-response order. Explicit
+plaquette incidence controls propagation without a spin cutoff; a normalized
+Gaussian filter combines it with the YM62 gap. The source susceptibility
+is summable, giving a unique bulk plaquette mean, a locally Lipschitz
+derivative of the bulk energy, and a quantitative finite-volume error.
+Six written results and 30 new exact tests use **Python 3.12 only**;
+91 targeted tests preserve 190 upstream files. Blocked resolvent readouts
+inherit locality, while conditional coarse-vacuum and full Schur-kernel
+locality remain open. No four-dimensional continuum mass gap is claimed.
+
+Previous Yang–Mills continuation: [YM-64](papers/yang-mills-certified-benchmark/YM64_VACUUM_ADAPTED_TOWER.md)
 uses the actual vacuum measure to make repeated product-link cuts retain
 the complete vacuum. The hidden gap is uniform in volume and finite block
 depth. Exact nested Schur reduction preserves the full spectral family;

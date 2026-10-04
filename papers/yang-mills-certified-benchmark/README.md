@@ -1,6 +1,44 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-64
+## Current continuation: YM-65
+
+[YM-65's spatial-response proof](YM65_SPATIAL_RESPONSE_LOCALITY.md) applies
+bounded plaquette propagation to the actual full link Hilbert spaces.
+The native link-incidence row sum is sixteen, including the diagonal.
+Combining its propagation bound with the YM62 gap gives an explicit
+volume-independent spatial decay rate for connected correlations and
+every fixed inverse-response order throughout the certified coupling
+window. These are full-coupling bounds, not a truncated source expansion.
+
+Independent plaquette sources yield an absolutely summable susceptibility.
+A boundary tiling estimate then gives a unique bulk energy with locally
+Lipschitz derivative, a unique bulk plaquette mean, and an explicit
+finite-volume approximation error for that mean. At theta=1/16000 the
+spatial rate is greater than 0.1928159848815; it is a conservative decay
+bound, not a measured mass.
+
+YM64's exact nested identity transfers the response bounds to blocked
+resolvent readouts. A full-support rare-conditioning example explains
+why this does not yet prove conditional-vacuum or Schur-kernel locality.
+The estimate also constrains continuum trajectories that stay uniformly
+inside the certified window: polynomially normalized bounded readouts
+at fixed positive physical separation decorrelate as spacing vanishes.
+Full vacuum uniqueness, the conditional locality estimates and a
+nontrivial continuum construction remain open.
+
+Six written results and 30 new exact tests use **Python 3.12 only**.
+The dedicated workflow also replays the unchanged YM64 and YM62
+certificates and their 32 and 29 tests, for 91 targeted tests. The
+manifest preserves 190 upstream files. Finite arithmetic controls do
+not constitute formal proof verification or peer review.
+Pin: `EXPECTED_YM65.sha256`.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym65_spatial_response_locality.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym65_spatial_response_locality.py -v
+```
+
+## Previous continuation: YM-64
 
 [YM-64's vacuum-adapted tower](YM64_VACUUM_ADAPTED_TOWER.md) uses the
 actual interacting vacuum measure to define each spatial conditional
