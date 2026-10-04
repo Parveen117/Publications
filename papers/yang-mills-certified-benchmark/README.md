@@ -1,6 +1,44 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-66
+## Current continuation: YM-67
+
+[YM-67's pointwise coarse-vacuum proof](YM67_POINTWISE_COARSE_VACUUM.md)
+starts from YM66's actual interacting vacuum. A one-link native heat
+comparison and the differentiated eigenvalue equation give uniform
+first and ordered second derivative bounds without a representation
+cutoff. Choosing one fine pivot per coarse product transfers those
+bounds without multiplying them by the path length. In particular,
+the norm of each coarse log-gradient is at most 48 times the maximum
+absolute plaquette coupling throughout the inherited coupling window.
+
+Every fixed coarse marginal has a positive density floor. Its L1
+vacuum limit upgrades to uniform C1 convergence, so conditioning on
+finitely many exact coarse configurations has a canonical continuous
+version, including at probability-zero values. Native ball volumes
+convert spatial covariance decay into uniform density, log-gradient
+and mutual-information bounds for distant finite pins. These spatial
+constants depend on the size of the pinned set.
+
+The actual diagonal coarse generator also has a local drift bound
+relative to its form energy, independent of volume and, after clock
+normalization, block length. This controls its size; uniform locality
+under arbitrary growing exterior conditioning and locality of the full
+Schur memory kernel remain open. No time-zero Markov identification,
+four-dimensional continuum construction or physical mass is claimed.
+
+Six written results and 30 new exact tests use **Python 3.12 only**.
+The dedicated workflow replays the unchanged YM66 and YM64 certificates
+and their 31 and 32 tests, for 93 targeted tests. It preserves 204
+upstream source files. Finite arithmetic controls accompany full-space
+proofs and do not constitute formal verification or peer review.
+Pin: `EXPECTED_YM67.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym67_pointwise_coarse_vacuum.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym67_pointwise_coarse_vacuum.py -v
+~~~
+
+## Previous continuation: YM-66
 
 [YM-66's local-vacuum proof](YM66_LOCAL_VACUUM_LIMIT.md) extends the
 YM62 gap and YM65 response bounds to independent plaquette couplings
