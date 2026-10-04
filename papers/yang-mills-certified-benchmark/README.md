@@ -1,6 +1,45 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-61
+## Current continuation: YM-62
+
+[YM-62's gauge-lattice proof](YM62_GAUGE_LATTICE_GAP.md) places native
+quaternions on links of a three-dimensional spatial lattice and supplies
+continuous heat time. Its declared electric Casimir and ordered
+four-link plaquette potential commute with local gauge transformations.
+The Gauss-invariant sector contains the unique positive vacuum.
+
+A four-link extension of the existing temporal-block comparison gives
+
+\[
+ |\theta|<1/8000,\qquad
+ \bar\alpha=1/2+4000|\theta|,\qquad
+ \gamma=\frac1{50}\log\!\left(\frac{1+\bar\alpha^{-1}}2\right)>0.
+\]
+
+This is a sufficient volume-uniform lower gap in the stated electric
+normalization, including the physical sector. Fixed-volume norm
+refinement supplies continuous time. Periodic vacuum histories have
+subsequential infinite-volume limits; an inequality on every reflected
+positive-time cylinder transfers the same lower gap to their vacuum
+representations. The gauge-invariant plaquette variance stays above
+19/100, so those representations have nonzero physical excitations.
+Uniqueness of the subsequential state and a time-zero Markov limit
+are not inferred from reflection positivity.
+
+The closed-loop response starts with energy coefficient -1/12 per
+plaquette and susceptibility delta_pq/6. Six written results, 29 new
+exact tests and 66 targeted YM53/YM60/YM61 predecessor tests use
+**Python 3.12 only**. The manifest preserves 167 upstream files.
+This newly declared model has a fixed spatial lattice spacing: it
+does not solve the physical continuum R4/Clay problem or close the
+separate correlated-chain lower-gap obligation in YM61.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym62_gauge_lattice_gap.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym62_gauge_lattice_gap.py -v
+```
+
+## Previous continuation: YM-61
 
 [YM-61's source-response proof](YM61_SOURCE_RESPONSE_COLLECTIVE.md) makes
 independent scalar source directions explicit. The existing uniform
