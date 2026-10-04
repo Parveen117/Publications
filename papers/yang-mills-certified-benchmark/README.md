@@ -1,6 +1,52 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-62
+## Current continuation: YM-63
+
+[YM-63's spatial-blocking proof](YM63_SPATIAL_BLOCKING_SCALE.md) retains
+the actual YM62 link/plaquette Hamiltonian. Multiplying b fine links
+into one coarse link preserves the native product reference and gauge
+endpoint action. Its exact free heat clock is multiplied by b.
+The first-order compressed plaquette interaction vanishes, but its
+second-order return coefficient is theta^2 |P|/4. A Schur operator with
+bounded off-diagonal coupling supplies the actual finite-volume coarse
+vacuum equation, retaining its energy dependence and memory.
+
+The response tower now resolves planar surfaces. Link parity forces
+the first response order to equal rectangle area; a center-sign
+involution fixes the next possible order. Two independent exact
+recursions and a full two-face native polynomial contraction give
+
+\[
+ \langle W_{2\times2}\rangle_\theta
+       =(35/23328)\theta^4+O_\Lambda(\theta^6),\qquad
+ \langle W_{1\times4}\rangle_\theta
+       =(73/58320)\theta^4+O_\Lambda(\theta^6).
+\]
+
+Equal area retains different shape information. The errors are at
+fixed loop and finite volume; no uniform-area law follows. Matching
+only the coarse plaquette mean gives normalized coefficient
+(35/3888)theta^4. It is explicitly not an exact one-parameter
+renormalization flow, because the generated memory is nonzero.
+
+The physical trial loop also gives the upper gap constraint 100/19,
+alongside YM62's lower gamma. Under a declared energy clock kappa(a),
+both bounds scale by kappa. Explicit electric/magnetic coefficient
+matching shows that a trajectory with bare g tending to zero leaves
+the existing certified window. Uniform control of the generated
+operator and a nontrivial continuum trajectory are the next gates.
+
+Six written results, 32 new tests and 53 targeted YM62/YM61 predecessor
+tests use **Python 3.12 only**. The source manifest preserves 174
+inherited inputs and additionally pins GE3's memory theorem, for 175
+upstream files. No continuum R4 or physical mass is claimed.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym63_spatial_blocking_scale.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym63_spatial_blocking_scale.py -v
+```
+
+## Previous continuation: YM-62
 
 [YM-62's gauge-lattice proof](YM62_GAUGE_LATTICE_GAP.md) places native
 quaternions on links of a three-dimensional spatial lattice and supplies
