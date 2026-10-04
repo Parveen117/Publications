@@ -1,6 +1,49 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-65
+## Current continuation: YM-66
+
+[YM-66's local-vacuum proof](YM66_LOCAL_VACUUM_LIMIT.md) extends the
+YM62 gap and YM65 response bounds to independent plaquette couplings
+with a common maximum strictly below 1/8000. Straight interpolation
+between signed profiles and deleted faces stays uniformly gapped.
+The integrated inverse response gives an explicit trace-norm bound
+for the change of a local vacuum under distant Hamiltonian changes.
+
+All admissible open and periodic exhaustions therefore select the
+same locally normal vacuum state. This holds for every bounded local
+quantum observable. Norm control of the real-time dynamics, followed
+by the Poisson representation of vacuum-shifted heat, removes YM62's
+history subsequence ambiguity as well. The reconstructed representation
+retains its inherited gap and nonzero physical plaquette fluctuation.
+
+For any fixed finite collection of product-link blocks, the actual
+coarse marginal density converges in L1 with a spatial-buffer bound.
+Conditioning on a positive-probability finite event is controlled with
+an explicit inverse-probability factor. Exact continuous conditioning,
+log-density derivatives and the full Schur memory kernel need stronger
+estimates. No classification of all algebraic ground states or general
+time-zero Markov identification is claimed.
+
+Every fixed inverse-response order now has a unique infinite-volume
+limit. Its full positive moment tower determines the excitation
+spectral measure seen by a smooth local readout; successive moment
+ratios decrease to that readout's visible energy threshold. An invisible
+lower-level example shows why this is not automatically the full gap.
+The interacting spectral measure and a physical mass are not computed.
+
+Six written results and 31 new exact tests use **Python 3.12 only**.
+The dedicated workflow replays the unchanged YM65 and YM62 certificates
+and their 30 and 29 tests, for 90 targeted tests. It preserves 197
+upstream source files. The arithmetic controls accompany full-space
+proofs and are not a formal verifier or peer review.
+Pin: EXPECTED_YM66.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym66_local_vacuum_limit.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym66_local_vacuum_limit.py -v
+~~~
+
+## Previous continuation: YM-65
 
 [YM-65's spatial-response proof](YM65_SPATIAL_RESPONSE_LOCALITY.md) applies
 bounded plaquette propagation to the actual full link Hilbert spaces.
