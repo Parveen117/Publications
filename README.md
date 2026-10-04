@@ -42,7 +42,22 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-58](papers/yang-mills-certified-benchmark/YM58_INFINITE_VOLUME_HISTORIES.md)
+Latest Yang–Mills continuation: [YM-59](papers/yang-mills-certified-benchmark/YM59_SCALAR_VACUUM_RESPONSE.md)
+retains the original scalar overlap interaction on the correlated kinetic
+chain and proves existence of its thermodynamic energy density. A local
+logarithmic Poisson tower gives volume-uniform energy-density asymptotics
+at every fixed order. At unit neighbour rate,
+e(theta)=-theta^2/4-(1123/47376)theta^4+O(theta^6).
+The quartic term includes a nonzero contribution from scalar bonds
+connected by a kinetic bond. Six written results also give a cost for
+each excited site and uniform weak-interaction energy bounds.
+All 24 new and 36 targeted predecessor tests pass on **Python 3.12.14**;
+CI requires Python 3.12 and 146 upstream files remain pinned.
+Convergence of the infinite response series, a fixed nonzero-coupling
+uniform spectral gap and interacting histories remain open, as do
+physical gauge selection and the four-dimensional continuum.
+
+Previous Yang–Mills continuation: [YM-58](papers/yang-mills-certified-benchmark/YM58_INFINITE_VOLUME_HISTORIES.md)
 constructs infinite-volume local histories for YM57's correlated kinetic
 chain. Correct marginal generators retain boundary-bond noise, and local
 heat histories stabilize exactly after one layer of neighbours. The
