@@ -1,6 +1,44 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-58
+## Current continuation: YM-59
+
+[YM-59's scalar response proof](YM59_SCALAR_VACUUM_RESPONSE.md) adds the
+original scalar overlap potential to the correlated native kinetic chain.
+It proves that the thermodynamic energy density exists and constructs
+a local logarithmic Poisson recursion with a volume-uniform error bound
+for the energy density at each fixed order. At unit neighbour rate,
+
+\[
+e(\theta)=-\theta^2/4-(1123/47376)\theta^4+O(\theta^6).
+\]
+
+The bulk quadratic susceptibility is 1/2. The fourth-order coefficient
+is the sum of 7/240 from a repeated bond, -287/5640 from adjacent bonds,
+and -1/504 from scalar bonds connected by a kinetic bond. More distant
+pairs cancel exactly against vacuum normalization. Open and marginal
+boundary conventions have different finite corrections and the same
+bulk coefficient. Exact native inverse witnesses have dimensions 3,
+4 and 2; an independent logarithmic calculation and an assembled
+four-site calculation check the normalization and signs.
+
+Six written results include excitation-number coercivity, uniform
+weak-coupling energy and excitation-density bounds, and a nonperturbative
+thermodynamic energy limit. The proof controls every fixed order without
+claiming convergence of the infinite series. Its fifth-order remainder
+constant is finite and constructive but is not numerically evaluated.
+A fixed nonzero-coupling uniform spectral gap and interacting history
+limit remain separate obligations, together with physical gauge action,
+clock, constraints and the spatial/4D continuum.
+
+All 24 new and 36 targeted YM58/YM57 tests pass on **Python 3.12.14**;
+CI requires Python 3.12. The manifest preserves 146 upstream files.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym59_scalar_vacuum_response.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym59_scalar_vacuum_response.py -v
+```
+
+## Previous continuation: YM-58
 
 [YM-58's infinite-volume history proof](YM58_INFINITE_VOLUME_HISTORIES.md)
 constructs consistent marginals for YM57's correlated kinetic model.
