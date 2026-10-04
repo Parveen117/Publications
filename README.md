@@ -42,7 +42,20 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-61](papers/yang-mills-certified-benchmark/YM61_SOURCE_RESPONSE_COLLECTIVE.md)
+Latest Yang–Mills continuation: [YM-62](papers/yang-mills-certified-benchmark/YM62_GAUGE_LATTICE_GAP.md)
+puts native quaternion variables on links of a three-dimensional lattice
+with continuous heat time. The declared electric-Casimir/ordered-plaquette
+model has local Gauss symmetry and a volume-uniform interacting gap for
+|theta|<1/8000 in its stated normalization. The bound survives the
+physical-sector restriction and subsequential infinite-volume history
+limits; a uniform plaquette variance above 19/100 keeps those limits
+nontrivial. The closed-loop source susceptibility starts at delta_pq/6.
+Six written results and 29 new exact tests use **Python 3.12 only**,
+preserving 167 upstream files. This is a fixed-spacing 3+1 lattice result
+for a newly declared model; the spatial continuum/Clay theorem and the
+earlier correlated-chain lower-gap problem remain open.
+
+Previous Yang–Mills continuation: [YM-61](papers/yang-mills-certified-benchmark/YM61_SOURCE_RESPONSE_COLLECTIVE.md)
 uses independent scalar sources to turn the local response tower into
 fixed-distance correlation expansions for the actual interacting model.
 At unit neighbour rate the leading coefficients at separations 1–4 are
