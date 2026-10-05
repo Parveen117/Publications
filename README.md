@@ -60,7 +60,20 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-71](papers/yang-mills-certified-benchmark/YM71_INTERACTING_MEMORY_ENCLOSURES.md)
+Latest Yang–Mills continuation: [YM-72](papers/yang-mills-certified-benchmark/YM72_GROWING_BLOCK_MATRIX_MEMORY.md)
+extends interacting memory control to growing blocks and matrices of
+separated Wilson-loop readouts. For abs(theta)*r*N<=1e-8, the actual
+matrix response lies between 0.99 and 1.02 times its leading scalar
+profile times the identity, uniformly in admissible finite volume.
+Joint scaling gives a one-pole normalized profile, explicit finite-block
+corrections and a separate budget for each inverse-moment order.
+Selected loop correlations approach rate three on the block clock,
+while the full gap on that clock tends to zero. Five written results
+and 86 targeted **Python 3.12** tests preserve 239 upstream files.
+Persistent interaction, slow-mode retention, full spatial memory
+locality and the physical continuum trajectory remain open.
+
+Previous Yang–Mills continuation: [YM-71](papers/yang-mills-certified-benchmark/YM71_INTERACTING_MEMORY_ENCLOSURES.md)
 encloses the actual interacting Wilson memory independently of lattice
 volume. Exactly hidden weighted-electric trial vectors give a uniform
 leading-coefficient remainder. For r=3 and 0<abs(theta)<=1e-8, the full
