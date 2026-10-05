@@ -1,6 +1,45 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-74
+## Current continuation: YM-75
+
+[YM-75's RH source audit and spectral transfer](YM75_RH_SOURCE_RESOLVED_SPECTRAL_TRANSFER.md)
+reads the current MP, RH-Framework, RH-project and RKF source routes.
+It attributes the useful theorems, records the corrected source versions,
+and matches their hypotheses to the actual Yang–Mills electric cutoff.
+
+Preserving the matrix G>=BB* in C-z-G/(d-z) sharpens the full spectral
+enclosure without assuming that C and G commute. On the actual side-four
+lattice at theta=1/48, the same complete 241-dimensional cutoff now
+certifies **0.49069036<=Delta<=3.00712209** in bare units. Exact rational
+pivot signs account for every retained direction; the hidden Hilbert
+space remains untruncated.
+
+For a hidden solve S X=F, a finite trial X and residual R=F-SX give
+M=T_X+R* S^(-1) R, with T_X=F*X+X*F-X*SX. Thus
+T_X<=M<=T_X+R*R/s when S>=s>0. The error is a positive matrix and
+quadratic in the residual. RKF N10 also converts YM74's whole-band
+leakage zeta<1 into an exact decoder with norm at most
+(1-zeta)^(-1/2). The formula involves the unknown actual spectral
+projection and is an existence/conditioning theorem.
+
+Four written results, 29 new tests and 70 unchanged YM74/YM73 tests use
+**Python 3.12 only** and preserve 260 upstream files. The 17 selected
+external source records are pinned by commit and
+Git blob; the source repos and shared engine are unchanged. The RH-paper
+pointer is corrected to distinguish its source-reported closed fixed
+eta=.01 node from its open eta-zero sign. No RH result is promoted into
+a uniform Yang–Mills gap without its actual-model hypotheses.
+
+The positive finite physical continuum gap and nontrivial local
+four-dimensional field construction remain unproved.
+Pin: EXPECTED_YM75.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym75_rh_source_resolved_transfer.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym75_rh_source_resolved_transfer.py -v
+~~~
+
+## Previous continuation: YM-74
 
 [YM-74's all-coupling electric enclosures](YM74_ALL_COUPLING_ELECTRIC_ENCLOSURES.md)
 prove actual-model estimates beyond the previous small-theta window.

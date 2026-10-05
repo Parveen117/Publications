@@ -60,7 +60,20 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-74](papers/yang-mills-certified-benchmark/YM74_ALL_COUPLING_ELECTRIC_ENCLOSURES.md)
+Latest Yang–Mills continuation: [YM-75](papers/yang-mills-certified-benchmark/YM75_RH_SOURCE_RESOLVED_SPECTRAL_TRANSFER.md)
+audits the RH programme's current sources and applies their
+source-resolved spectral, residual-solve and stable-observer tools.
+Preserving the actual mixed source matrix tightens the side-four
+cube's gap at theta=1/48 to [0.49069036,3.00712209], with the same
+complete electric cutoff. A quadratic residual identity encloses
+the hidden memory, and RKF N10 gives a stable exact decoder on
+each actual bounded-energy band. The decoder's existence does not
+compute the unknown spectral band. Four written results use
+**Python 3.12**, with 99 targeted tests, and preserve 260 upstream files; 17 external source
+records are pinned by commit and Git blob. The uniform physical
+continuum gap and local 4D field construction remain unproved.
+
+Previous Yang–Mills continuation: [YM-74](papers/yang-mills-certified-benchmark/YM74_ALL_COUPLING_ELECTRIC_ENCLOSURES.md)
 proves actual-vacuum plaquette concentration in the weak-bare-coupling
 direction, uniformly in finite periodic volume. A complete electric
 cutoff supplies an independent hidden-energy floor and retains the
@@ -418,13 +431,18 @@ SOURCE FLOOR S_(.01,-) >= .008 I               PROVED
 SOURCE INVERSE NORM <= 125                      PROVED
 RANK-AT-MOST-FIVE HERMITIAN REDUCTION           PROVED
 FINAL OUTWARD ACCEPTANCE THEOREM                PROVED
-ACTUAL OUTWARD FIVE-BY-FIVE VALUE               OPEN
-CONTROLLED eta_j -> 0                           OPEN
+ACTUAL eta=.01 OUTWARD TOP <= .8388901637561339 SOURCE-REPORTED PROVED
+FIXED eta=.01 NATIVE SEAM CHARGE ZERO           SOURCE-REPORTED PROVED
+FIVE-LABEL eta-ZERO NORM DESCENT               SOURCE-REPORTED PROVED
+UNSHIFTED ENDPOINT K0 >= 0                     OPEN
 RIEMANN HYPOTHESIS                              ABSTAIN
 ```
 
-The source manuscript is developed in `Parveen117/MP` on branch
-`agent/paper-source-floor-five-by-five-theorem` and draft PR #244.
+The current source is `Parveen117/MP/main` at
+`b8dff4583952723a84b639fd91758d9e41c4f628`; historical PR #244 is closed.
+The [paper pointer](papers/representation-complete-native-seam-integer/README.md)
+records the 5 October 2026 source-status audit and pinned references.
+This index update does not replay the full RH numerical certification chain.
 
 ## Zenodo release rule
 
