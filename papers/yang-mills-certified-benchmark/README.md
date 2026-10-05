@@ -1,6 +1,33 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-69
+## Current continuation: YM-70
+
+[YM-70's spectral-memory proof](YM70_CERTIFIED_SPECTRAL_MEMORY.md)
+computes the actual square Wilson loop's four-rate leading memory at
+every block factor r>=3. For r=3 its rates are 9, 21/2, 25/2 and 13,
+and the static order-theta-squared coefficient is 113/4095, for the
+half-trace loop with free squared norm 1/4.
+
+For the full interacting response, exact inverse moments give positive
+rational upper and lower bounds at every positive Laplace parameter.
+A Chebyshev error bound controls the entire finite spectral band,
+including beyond the small-s Taylor disk. Singular moment matrices,
+physical-clock scaling and further same-parameter elimination are
+handled explicitly. The full interacting moments have not been computed;
+the four rates describe only the leading coefficient. The coupling
+window, full spatial memory locality and continuum gates remain open.
+
+Five written results, 27 new tests and 32 unchanged YM64 tests use
+**Python 3.12 only**, preserving 225 upstream files. The controls
+accompany the proofs and do not constitute formal proof verification.
+Pin: `EXPECTED_YM70.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym70_certified_spectral_memory.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym70_certified_spectral_memory.py -v
+~~~
+
+## Previous continuation: YM-69
 
 [YM-69's nearby-conditioned locality proof](YM69_NEARBY_CONDITIONED_LOCALITY.md)
 allows a finite nearby set to be pinned at any exact configuration while

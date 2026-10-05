@@ -60,7 +60,16 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-69](papers/yang-mills-certified-benchmark/YM69_NEARBY_CONDITIONED_LOCALITY.md)
+Latest Yang–Mills continuation: [YM-70](papers/yang-mills-certified-benchmark/YM70_CERTIFIED_SPECTRAL_MEMORY.md)
+computes four leading Wilson-memory rates and constructs positive rational
+enclosures of the full response from exact inverse moments. Quantitative
+error bounds extend beyond the small-energy Taylor disk, respect physical
+clock scaling and propagate through further elimination at the same
+spectral parameter. Five written results and 59 targeted **Python 3.12**
+tests preserve 225 upstream files. Full interacting moment computation,
+spatial memory locality and the continuum coupling trajectory remain open.
+
+Previous Yang–Mills continuation: [YM-69](papers/yang-mills-certified-benchmark/YM69_NEARBY_CONDITIONED_LOCALITY.md)
 controls distant exterior influence uniformly over every value of a finite
 set of exact nearby pins. Correct posterior averaging cancels the exterior
 denominator and extends conditional information, native score and diagonal
