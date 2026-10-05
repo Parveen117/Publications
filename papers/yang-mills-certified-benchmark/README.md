@@ -1,6 +1,45 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-71
+## Current continuation: YM-72
+
+[YM-72's growing-block matrix proof](YM72_GROWING_BLOCK_MATRIX_MEMORY.md)
+allows the block factor r and number N of separated Wilson-loop readouts
+to grow. The single product rho=abs(theta)*r*N controls the full
+interacting response matrix in their coefficient space. For r>=3 and
+0<rho<=1e-8, it lies between 0.99 and 1.02 times
+theta-squared times the leading free coefficient times the identity,
+at every nonnegative spectral parameter and every admissible finite
+volume. There is no upper bound on r or N, but theta must decrease.
+
+With s=r*z, r->infinity and rho->0, division by theta-squared yields
+the uniform relative profile 1/[12(z+3)] times the identity. The first
+finite-block correction is (z-1)/[24*r*(z+3)^2]. Each fixed inverse
+order n has the stronger sufficient budget abs(theta)*N*r^(n+1)->0.
+Positive matrix stencils give actual moment intervals without assuming
+that response matrices commute.
+
+Actual centered, covariance-normalized loop correlations also satisfy
+an explicit all-time error bound relative to exp(-3t) on the clock L/r.
+The full physical-sector gap on this clock is at most 100/(19r), so it
+tends to zero even as those selected observations retain rate three.
+This identifies loss of slow-mode sensitivity in that family. The
+normalized memory profile does not establish a nonvanishing physical
+interaction or the 4D continuum mass gap.
+
+Five written results, 31 new tests and 55 unchanged YM71/YM70 tests
+use **Python 3.12 only**, preserving 239 upstream files. Directed
+budgets, native geometry and exact matrix controls accompany the
+proofs; they are not proof-assistant verification. Fixed-coupling
+growing-block accuracy, full spatial memory locality, slow-mode
+retention and the physical continuum trajectory remain open.
+Pin: `EXPECTED_YM72.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym72_growing_block_matrix_memory.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym72_growing_block_matrix_memory.py -v
+~~~
+
+## Previous continuation: YM-71
 
 [YM-71's interacting-memory proof](YM71_INTERACTING_MEMORY_ENCLOSURES.md)
 turns YM70's leading Wilson coefficient into an enclosure of the actual
