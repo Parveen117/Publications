@@ -1,6 +1,40 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-75
+## Current continuation: YM-76
+
+[YM-76's local defects and weak-coupling dynamics](YM76_LOCAL_DEFECT_WEAK_COUPLING_DYNAMICS.md)
+gives an exact positive-square factorization of the actual gauge Hamiltonian,
+with an explicit nonnegative local gradient-mismatch remainder. The actual
+vacuum's electric energy and magnetic defect have two-sided weak-coupling
+bounds, uniformly in finite periodic volume.
+
+For the plaquette angle r=acos(W), an exact radial uncertainty identity
+proves Var(r) has order 1/sqrt(theta), while its centered state's Dirichlet
+energy is exactly one. First and second spectral moments force at least
+**1/3600** of its normalized weight into
+**[sqrt(theta)/45,80sqrt(theta)]** for theta>=25. This establishes actual
+nonvanishing microscopic states and nonconstant subsequential scalar heat
+dynamics; it does not construct a joint continuum field theory.
+
+The physical band has order 1/a. Its positive weight proves that this
+unfiltered normalized microscopic probe cannot have a norm-preserving,
+strongly continuous physical Hilbert-state limit reproducing its lattice
+heat correlations. A selected collective
+covariance direction supplies a precise sufficient target for bounded
+physical energy; neither that target nor a positive infrared gap is proved.
+
+Five written results, 32 new tests and 68 unchanged YM75/YM74 tests use
+**Python 3.12 only**, preserving 267 upstream files. The exact controls
+cover native geometry, radial integrals and spectral moments.
+The positive finite continuum mass gap and nontrivial local four-dimensional
+field construction remain open. Pin: EXPECTED_YM76.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym76_local_defect_weak_coupling_dynamics.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym76_local_defect_weak_coupling_dynamics.py -v
+~~~
+
+## Previous continuation: YM-75
 
 [YM-75's RH source audit and spectral transfer](YM75_RH_SOURCE_RESOLVED_SPECTRAL_TRANSFER.md)
 reads the current MP, RH-Framework, RH-project and RKF source routes.

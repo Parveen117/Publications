@@ -60,7 +60,20 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-75](papers/yang-mills-certified-benchmark/YM75_RH_SOURCE_RESOLVED_SPECTRAL_TRANSFER.md)
+Latest Yang–Mills continuation: [YM-76](papers/yang-mills-certified-benchmark/YM76_LOCAL_DEFECT_WEAK_COUPLING_DYNAMICS.md)
+factors the actual Hamiltonian into positive gradient squares and a local
+plaquette-defect remainder. It proves matching-order electric and magnetic
+vacuum bounds at weak bare coupling, and constructs an actual nonzero
+plaquette-angle excitation. At least 1/3600 of this state's spectral weight
+lies in the microscopic band [sqrt(theta)/45,80sqrt(theta)], uniformly in
+finite periodic volume. Its microscopic heat limits are nonconstant.
+The physical band scales as 1/a and forces ultraviolet mass escape for
+this unfiltered probe; collective covariance is a concrete next target.
+Five written results and 100 targeted **Python 3.12** tests preserve
+267 upstream files. The positive finite continuum mass gap and local
+four-dimensional field construction remain open.
+
+Previous Yang–Mills continuation: [YM-75](papers/yang-mills-certified-benchmark/YM75_RH_SOURCE_RESOLVED_SPECTRAL_TRANSFER.md)
 audits the RH programme's current sources and applies their
 source-resolved spectral, residual-solve and stable-observer tools.
 Preserving the actual mixed source matrix tightens the side-four
