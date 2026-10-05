@@ -1,0 +1,40 @@
+name: YM73 physical mass memory metric
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym73-physical-mass-memory-metric.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym73-physical-mass-memory-metric.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce physical gap brackets and actual slow-probe budgets
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym73_physical_mass_memory_metric.py --check
+      - name: Test full operator bounds, memory normalization and continuum counterexamples
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym73_physical_mass_memory_metric.py -v
+      - name: Replay unchanged growing-block and interacting-memory estimates
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym72_growing_block_matrix_memory.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym72_growing_block_matrix_memory.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym71_interacting_memory_enclosures.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym71_interacting_memory_enclosures.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark

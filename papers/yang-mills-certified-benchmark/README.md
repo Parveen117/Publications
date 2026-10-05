@@ -1,6 +1,50 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-72
+## Current continuation: YM-73
+
+[YM-73's physical-mass and memory-normalization proof](YM73_PHYSICAL_MASS_MEMORY_METRIC.md)
+targets the missing physical continuum step. For an explicitly declared
+finite observation cut inside the full physical space, let
+M0=B D^(-1) B-adjoint and M1=B D^(-2) B-adjoint. The harmonic extension
+has norm matrix Z=I+M1. Its correctly normalized physical energy is
+K=kappa Z^(-1/2) (C-M0) Z^(-1/2).
+
+If D>=d>0 is certified independently, h=kappa*d and
+m_eff=min spec K give the full-gap bracket
+m_eff*h/(m_eff+h)<=Delta_phys<=m_eff. Its lower bound is optimal
+given only m_eff and h. The normalized positive-parameter resolvent
+differs from (K+s)^(-1) by at most 1/h uniformly for s>0.
+Matrix interval inputs can certify the whole retained pencil.
+The hidden space is untruncated, and no simultaneous diagonalization
+of the memory matrices is assumed.
+
+For the actual interacting model, a microscopic plaquette probe has
+at least max(0,1-200/(57r)) of its spectral weight below block-clock
+energy 3/2. Adding it to YM72's large loops gives a Gram matrix between
+0.53 and 1.47 times the identity when r>=16 and abs(theta)*r*N<=1e-8.
+This restores one quantified slow component, not every low-energy sector.
+
+The physical calibration also gives
+Delta_phys>=80*sqrt(c_E*c_B*r*N)/a throughout that product-budget
+region. This trajectory has escaping spectrum as a->0. A different
+controlled coupling trajectory is needed for finite physical mass.
+The final gap-passage theorem is conditional on an independent hidden
+estimate, a convergent effective energy, a complete continuum state
+core and a surviving local state of bounded physical energy.
+Those weak-coupling and four-dimensional field inputs remain open.
+
+Five written results, 31 new tests and 59 unchanged YM72/YM71 tests
+use **Python 3.12 only**, preserving 246 upstream files. The exact
+finite matrix examples are algebraic checks, not evaluations of a
+Yang–Mills vacuum or proof-assistant verification.
+Pin: EXPECTED_YM73.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym73_physical_mass_memory_metric.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym73_physical_mass_memory_metric.py -v
+~~~
+
+## Previous continuation: YM-72
 
 [YM-72's growing-block matrix proof](YM72_GROWING_BLOCK_MATRIX_MEMORY.md)
 allows the block factor r and number N of separated Wilson-loop readouts
