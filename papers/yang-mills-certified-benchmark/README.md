@@ -1,6 +1,35 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-70
+## Current continuation: YM-71
+
+[YM-71's interacting-memory proof](YM71_INTERACTING_MEMORY_ENCLOSURES.md)
+turns YM70's leading Wilson coefficient into an enclosure of the actual
+interacting response on the unchanged spatial cut. Weighted one-link
+electric images give exactly hidden trial vectors; the differentiated
+vacuum equation bounds their residuals independently of lattice volume.
+For r=3 and 0<abs(theta)<=1e-8, the full response lies between 0.98 and
+1.07 times the leading four-rate function at every s>=0 and every
+admissible finite volume. The fixed-r leading remainder is O(abs(theta)^3)
+uniformly in volume, with explicit spectral-parameter dependence.
+
+Inverse-power residuals and positive Stieltjes finite differences also
+give computable intervals for actual scalar inverse moments. The bounds
+respect physical-clock scaling. Higher orders need smaller couplings
+for narrow intervals; the full interacting vacuum is not numerically
+computed. Growing blocks, spatial memory locality, interval Gram
+inversion and a continuum coupling trajectory remain open.
+
+Five written results, 28 new tests and 57 unchanged YM70/YM67 tests
+use **Python 3.12 only**, preserving 232 upstream files. Exact native
+and matrix controls accompany the proofs; they are not formal proof
+verification. Pin: `EXPECTED_YM71.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym71_interacting_memory_enclosures.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym71_interacting_memory_enclosures.py -v
+~~~
+
+## Previous continuation: YM-70
 
 [YM-70's spectral-memory proof](YM70_CERTIFIED_SPECTRAL_MEMORY.md)
 computes the actual square Wilson loop's four-rate leading memory at

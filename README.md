@@ -60,7 +60,17 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-70](papers/yang-mills-certified-benchmark/YM70_CERTIFIED_SPECTRAL_MEMORY.md)
+Latest Yang–Mills continuation: [YM-71](papers/yang-mills-certified-benchmark/YM71_INTERACTING_MEMORY_ENCLOSURES.md)
+encloses the actual interacting Wilson memory independently of lattice
+volume. Exactly hidden weighted-electric trial vectors give a uniform
+leading-coefficient remainder. For r=3 and 0<abs(theta)<=1e-8, the full
+response stays between 0.98 and 1.07 times the leading four-rate formula
+at every nonnegative spectral parameter. Scalar inverse-moment intervals
+and clock covariance are explicit. Five written results and 85 targeted
+**Python 3.12** tests preserve 232 upstream files. Growing-block control,
+full spatial memory locality and the continuum trajectory remain open.
+
+Previous Yang–Mills continuation: [YM-70](papers/yang-mills-certified-benchmark/YM70_CERTIFIED_SPECTRAL_MEMORY.md)
 computes four leading Wilson-memory rates and constructs positive rational
 enclosures of the full response from exact inverse moments. Quantitative
 error bounds extend beyond the small-energy Taylor disk, respect physical
