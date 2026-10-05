@@ -60,7 +60,21 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-73](papers/yang-mills-certified-benchmark/YM73_PHYSICAL_MASS_MEMORY_METRIC.md)
+Latest Yang–Mills continuation: [YM-74](papers/yang-mills-certified-benchmark/YM74_ALL_COUPLING_ELECTRIC_ENCLOSURES.md)
+proves actual-vacuum plaquette concentration in the weak-bare-coupling
+direction, uniformly in finite periodic volume. A complete electric
+cutoff supplies an independent hidden-energy floor and retains the
+entire bounded-energy physical subspace at every finite coupling.
+Finite native pencils enclose the full finite-volume gap to arbitrary
+accuracy without a vacuum ansatz. The actual side-four cube's complete
+241-dimensional cutoff gives 0.4904<Delta(1/48)<3.07874 in bare units,
+with its infinite-dimensional complement bounded. Six written results
+and 101 targeted **Python 3.12** tests preserve 253 upstream files.
+The limiting positive physical gap and nontrivial local four-dimensional
+field construction remain unproved; plaquette concentration does not
+establish either continuum result.
+
+Previous Yang–Mills continuation: [YM-73](papers/yang-mills-certified-benchmark/YM73_PHYSICAL_MASS_MEMORY_METRIC.md)
 derives a physical gap criterion from the static memory M0 and the
 normalization Z=I+M1. With an independently certified hidden physical
 floor h, the full gap lies between m_eff*h/(m_eff+h) and m_eff,
