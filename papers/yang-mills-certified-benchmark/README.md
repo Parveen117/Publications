@@ -1,6 +1,38 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-79
+## Current continuation: YM-80
+
+[YM-80's bounded phases and energy certificates](YM80_BOUNDED_PHASE_ENERGY_CERTIFICATES.md)
+proves an order-a reflected-norm lower certificate for a new smooth
+local phase exp(i lambda G), with bounded physical energy at fixed
+amplitude. Jensen's inequality retains a definite fraction of the
+source energy; an exact complex phase identity controls its second
+moment. Adjusting the regularizer improves the leading certified
+coefficient by more than fivefold. This concerns a new bounded source;
+YM79's order-a² result for the raw linear source remains unchanged.
+
+An actual-model ultraviolet packet theorem closes the amplitude
+loophole: choosing lambda² proportional to 1/a puts a fixed positive
+fraction of the norm at energies proportional to 1/a. The entire
+time-zero norm cannot survive in a strongly continuous physical-time
+limit. A labelled Ornstein–Uhlenbeck comparison shows complete escape
+is compatible with the moment data. A positive-time spectral criterion
+and a vacuum Hessian quadratic form specify what further estimate
+would suffice for genuine survival.
+
+Six written results, 29 new Python 3.12 tests, 147 unchanged tests,
+and exact certificates preserve 295 upstream inputs.
+The new lower certificate still tends to zero.
+Uniform local survival, full Euclidean covariance, Yang–Mills field
+identification and a positive continuum mass gap remain unproved.
+Pin: EXPECTED_YM80.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym80_bounded_phase_energy_certificates.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym80_bounded_phase_energy_certificates.py -v
+~~~
+
+## Previous continuation: YM-79
 
 [YM-79's local witnesses and survival certificates](YM79_LOCAL_WITNESSES_AND_SURVIVAL_CERTIFICATES.md)
 improves the original raw-angle source's certified reflected-norm lower
