@@ -1,6 +1,38 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-80
+## Current continuation: YM-81
+
+[YM-81's local third moments and vacuum response](YM81_LOCAL_THIRD_MOMENT_AND_VACUUM_RESPONSE.md)
+proves an exact nearest-neighbor structure for the actual smooth-source
+third-moment matrix. Native bridge bounds give the uniform spatial term
+c³ ||gradient f||²/2; the remaining term is kappa² t0 times the source
+energy. Thus one zero-momentum vacuum coefficient replaces the full
+nonlocal matrix as a sufficient continuum-survival target. Its required
+uniform bound is not yet proved.
+
+An exact Ward identity gives a two-sided vacuum-Hessian row estimate,
+with physical squared size between 3c²/(5a²) and 3c²/(2a²). These are
+vacuum identities; auxiliary score vectors are not claimed to be
+physical charged states. The second source moment need not be local.
+
+A two-resolvent positive-time filter removes both spectral endpoints.
+It yields an actual order-a³ lower norm certificate at fixed energy,
+and an actual side-four Wilson spectral packet with mass above 1/32
+in bare energies [1/32,32]. The corresponding physical band scales with
+kappa, so this finite-regulator result is not a continuum mass gap.
+
+Four written theorems, 26 new Python 3.12 tests, 176 unchanged tests,
+and exact certificates preserve 302 upstream inputs.
+Uniform continuum survival, local Yang–Mills field
+identification, Euclidean covariance and positive mass gap remain open.
+Pin: EXPECTED_YM81.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym81_local_third_moment_vacuum_response.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym81_local_third_moment_vacuum_response.py -v
+~~~
+
+## Previous continuation: YM-80
 
 [YM-80's bounded phases and energy certificates](YM80_BOUNDED_PHASE_ENERGY_CERTIFICATES.md)
 proves an order-a reflected-norm lower certificate for a new smooth
