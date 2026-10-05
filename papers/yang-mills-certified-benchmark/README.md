@@ -1,6 +1,36 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-67
+## Current continuation: YM-68
+
+[YM-68's averaged exterior-locality proof](YM68_AVERAGED_EXTERIOR_LOCALITY.md)
+removes the number of exterior pins from the spatial error bound in an
+averaged norm. Symmetric smoothing uses only the fixed target's native
+coordinates. The expected conditional total-variation error decays with
+rate 2rho/(3m+2), where m is the number of observed coarse links. The
+bound holds for an arbitrarily large finite exterior and for a countably
+infinite exterior in the unique vacuum limit.
+
+Conditional densities converge in target C1 almost surely along every
+fixed exterior exhaustion. Relative entropy and native integration by
+parts give exterior-size-independent mutual-information and mean-square
+score bounds, and control the conditional finite-target diagonal drift.
+The constructed coarse spatial tail is trivial. Exact smooth examples
+show why these averaged conclusions do not imply worst-case pin control
+or mixing after nearby conditioning; full Schur-memory locality and the
+four-dimensional continuum remain open.
+
+Five written results and 26 new tests use **Python 3.12 only**. The
+dedicated workflow replays unchanged YM67 and YM65 evidence and their
+30 tests each, for 86 targeted tests, preserving 211 upstream files.
+The checks accompany the proofs; they are not formal proof verification.
+Pin: `EXPECTED_YM68.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym68_averaged_exterior_locality.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym68_averaged_exterior_locality.py -v
+~~~
+
+## Previous continuation: YM-67
 
 [YM-67's pointwise coarse-vacuum proof](YM67_POINTWISE_COARSE_VACUUM.md)
 starts from YM66's actual interacting vacuum. A one-link native heat

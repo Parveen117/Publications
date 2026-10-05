@@ -42,7 +42,19 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-67](papers/yang-mills-certified-benchmark/YM67_POINTWISE_COARSE_VACUUM.md)
+Latest Yang–Mills continuation: [YM-68](papers/yang-mills-certified-benchmark/YM68_AVERAGED_EXTERIOR_LOCALITY.md)
+controls the averaged effect of an arbitrarily large or countably infinite
+distant exterior, with constants determined by the observed region.
+Target-only symmetric smoothing gives conditional total-variation decay;
+native integration by parts extends it to mean-square score and diagonal
+drift bounds. Infinite-exterior conditionals are C1 in the target almost
+surely, and the coarse spatial tail is trivial. Five written results,
+26 new tests and 60 unchanged predecessor tests use **Python 3.12 only**;
+211 upstream files are preserved. Worst-case exterior control, mixing
+after nearby conditioning, full Schur-memory locality and the 4D continuum
+remain open.
+
+Previous Yang–Mills continuation: [YM-67](papers/yang-mills-certified-benchmark/YM67_POINTWISE_COARSE_VACUUM.md)
 uses the native heat kernel and ordered vacuum derivatives to bound the
 actual coarse log-gradient by 48 times the maximum plaquette coupling,
 independently of volume and product-link length. Positive density and
