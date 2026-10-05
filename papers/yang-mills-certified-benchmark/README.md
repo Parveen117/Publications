@@ -1,6 +1,42 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-78
+## Current continuation: YM-79
+
+[YM-79's local witnesses and survival certificates](YM79_LOCAL_WITNESSES_AND_SURVIVAL_CERTIFICATES.md)
+improves the original raw-angle source's certified reflected-norm lower
+bound from a⁴ to a². An analytic regularizer preserves at least 9/10 of
+the mixed Dirichlet energy. A local third-moment commutator identity
+bounds the smooth witness's second physical moment by
+2^18 c² ||P_a f||²/a, uniformly in volume and theta>=25.
+The witness and its scale are explicit.
+
+Bounded phases exp(i lambda Psi) convert positive ordinary increment
+variance into positive reflected norm. This rescues the infrared
+endpoint that killed linear reflected states in YM78. For the selected
+source family, complete ultraviolet energy escape is now the precise
+obstruction to this nonlinear survival criterion. A pure infrared
+limit with all rational phase amplitudes has energies accumulating
+at zero, so rescue does not imply a mass gap.
+
+A vacuum enclosure and a finite resolvent residual give a computable
+certificate without knowing the vacuum exactly. In the actual
+untruncated side-four model at theta=1/48, the explicit local Wilson
+witness proves a reflected norm squared at least 32607/250000>13/100.
+This is a fixed-regulator statement.
+
+Four written results, **29 new Python 3.12 tests**, 118 unchanged tests,
+and exact certificates preserve 288 upstream inputs.
+The improved a² lower certificate still vanishes.
+Uniform local survival, full Euclidean covariance, Yang–Mills field
+identification and a positive continuum mass gap remain unproved.
+Pin: EXPECTED_YM79.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym79_local_witness_survival_certificates.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym79_local_witness_survival_certificates.py -v
+~~~
+
+## Previous continuation: YM-78
 
 [YM-78's stationary derivative fields and energy survival](YM78_STATIONARY_DERIVATIVE_AND_ENERGY_SURVIVAL.md)
 uses disjoint local plaquettes and exact block averages to obtain
