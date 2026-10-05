@@ -1,5 +1,13 @@
 # Publications
 
+Latest diagram-property development: [NSR2 — transfer the lambda/z properties](papers/native-symmetry-response/NSR2_CONJUGATE_DIAGRAM_PROPERTIES.md)
+replicates the six T–V–S–P response definitions on electromagnetic and other
+two-conjugate-pair diagrams. The four Legendre potentials, fixed-variable
+derivatives, signs, units, product identities and Jacobian rule transfer
+explicitly. A Born–Infeld example separates the constrained pairs; a
+charge–flux example shows their linear limit. Written proofs and exact
+**Python 3.12** checks preserve NSR1. See the [stage index](papers/native-symmetry-response/INDEX.md).
+
 Latest symmetry-response development: [NSR1 — electromagnetic response curvature](papers/native-symmetry-response/README.md)
 transfers the native thermodynamic response connection to a declared electromagnetic
 energy law. Six written results connect curvature to coupling and impedance,
