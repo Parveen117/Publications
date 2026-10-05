@@ -1,0 +1,42 @@
+name: YM83 actual vacuum conditional response
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym83-actual-vacuum-response.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym83-actual-vacuum-response.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce conditional vacuum and nonlinear response controls
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym83_actual_vacuum_response.py --check
+      - name: Check heat constants, projections, full finite spectra and response tails
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym83_actual_vacuum_response.py -v
+      - name: Replay unchanged direct predecessor evidence
+        run: |
+          python -B papers/nonlinear-spectral-blindness/certificates/nsb1_nonlinear_blindness.py --check
+          python -B -m unittest discover -s papers/nonlinear-spectral-blindness/tests -p 'test_nsb1*.py' -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym82_nonlinear_lattice_gap.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym82_nonlinear_lattice_gap.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code
