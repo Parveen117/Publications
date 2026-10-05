@@ -1,6 +1,40 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-76
+## Current continuation: YM-77
+
+[YM-77's physical smearing and continuum survival](YM77_PHYSICAL_SMEARING_AND_CONTINUUM_SURVIVAL.md)
+proves a pointwise physical energy bound for collective angle smears,
+using exact spatial cell averages. Reversibility gives uniform
+sub-Gaussian physical-time increments. Their anchored random distributions
+have common subsequential limits on three space coordinates and physical
+time, with reflection positivity and spatial translation invariance.
+
+The stationary-increment law admits reanchored time shifts. These
+reconstruct a strongly continuous nonnegative temporal Hamiltonian and
+vacuum, possibly a vacuum-only Hilbert space. A reflected-increment
+state has uniformly bounded norm, physical energy and inverse-energy
+moment. An explicit positive lower reflected norm would certify a
+nonzero finite physical-energy band; this lower bound remains unproved.
+
+A separate seven-channel SU(2) quaternion argument constructs an explicit
+actual global winding state with norm squared at least 1/5 and bare
+energy at most 3L. Hence **Delta_full,phys<=15 kappa L** at every coupling.
+For a=1/n, L=n², g²=n^(-4), c_E=c_B=1, the full physical gap is at most
+15/n, while YM76's local ultraviolet band moves to [n/45,80n].
+These winding states carry global center charges and do not bound the
+center-neutral local-observable continuum gap.
+
+Five written results, 29 new tests and 61 unchanged YM76/YM75 tests use
+**Python 3.12**, preserving 274 upstream files. The anchored limit may vanish; ordinary full spacetime
+covariance, local Yang–Mills field identification, and a positive
+continuum mass gap remain unproved. Pin: EXPECTED_YM77.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym77_physical_smearing_continuum_survival.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym77_physical_smearing_continuum_survival.py -v
+~~~
+
+## Previous continuation: YM-76
 
 [YM-76's local defects and weak-coupling dynamics](YM76_LOCAL_DEFECT_WEAK_COUPLING_DYNAMICS.md)
 gives an exact positive-square factorization of the actual gauge Hamiltonian,

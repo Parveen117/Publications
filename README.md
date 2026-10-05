@@ -60,7 +60,21 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-76](papers/yang-mills-certified-benchmark/YM76_LOCAL_DEFECT_WEAK_COUPLING_DYNAMICS.md)
+Latest Yang–Mills continuation: [YM-77](papers/yang-mills-certified-benchmark/YM77_PHYSICAL_SMEARING_AND_CONTINUUM_SURVIVAL.md)
+constructs physical smears with bounded energy and subsequential anchored
+space-time distribution limits with reflection positivity. Reanchored time
+shifts reconstruct a strongly continuous positive-energy temporal Hilbert
+space, possibly only the vacuum. An exact reflected-increment norm specifies
+the missing local survival test. Separately, seven global center channels
+give an explicit actual state and the all-coupling bound
+Delta_full,phys<=15 kappa L. An explicit growing-box weak-coupling trajectory
+has full lattice gaps tending to zero; its winding modes do not settle the
+local center-neutral continuum gap. Five written results and 90 targeted
+**Python 3.12** tests preserve 274 upstream files. Nontrivial local
+Yang–Mills fields, full spacetime covariance and a positive continuum mass
+gap remain unproved.
+
+Previous Yang–Mills continuation: [YM-76](papers/yang-mills-certified-benchmark/YM76_LOCAL_DEFECT_WEAK_COUPLING_DYNAMICS.md)
 factors the actual Hamiltonian into positive gradient squares and a local
 plaquette-defect remainder. It proves matching-order electric and magnetic
 vacuum bounds at weak bare coupling, and constructs an actual nonzero
