@@ -1,0 +1,46 @@
+name: YM80 bounded phase energy certificates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym80-bounded-phase-energy-certificates.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym80-bounded-phase-energy-certificates.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce actual phase energy and ultraviolet packet certificates
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym80_bounded_phase_energy_certificates.py --check
+      - name: Test phase chains, directed bounds and continuum scope
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym80_bounded_phase_energy_certificates.py -v
+      - name: Replay unchanged local witnesses and prior source dynamics
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym79_local_witness_survival_certificates.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym79_local_witness_survival_certificates.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym78_stationary_derivative_energy_survival.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym78_stationary_derivative_energy_survival.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym77_physical_smearing_continuum_survival.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym77_physical_smearing_continuum_survival.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym76_local_defect_weak_coupling_dynamics.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym76_local_defect_weak_coupling_dynamics.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym75_rh_source_resolved_transfer.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym75_rh_source_resolved_transfer.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark

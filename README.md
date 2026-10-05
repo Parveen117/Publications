@@ -60,7 +60,21 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-79](papers/yang-mills-certified-benchmark/YM79_LOCAL_WITNESSES_AND_SURVIVAL_CERTIFICATES.md)
+Latest Yang–Mills continuation: [YM-80](papers/yang-mills-certified-benchmark/YM80_BOUNDED_PHASE_ENERGY_CERTIFICATES.md)
+proves an order-a reflected-norm lower certificate for a new bounded
+smooth local phase at fixed physical energy. Jensen retention and an
+exact phase chain rule preserve correlated moment bounds; a different
+regularizer improves the leading coefficient by more than fivefold.
+Increasing the amplitude with the cutoff forces a fixed norm fraction
+into a physical energy band of order 1/a in the actual model, excluding
+preservation of the whole time-zero norm in a strongly continuous limit.
+A separated-time criterion and an exact vacuum Hessian matrix identify
+the remaining survival estimate. All 176 targeted Python 3.12 tests
+pass, and exact certificates preserve 295 upstream inputs.
+The order-a certificate still vanishes; uniform
+continuum survival, Yang–Mills field identification and mass gap remain open.
+
+Previous Yang–Mills continuation: [YM-79](papers/yang-mills-certified-benchmark/YM79_LOCAL_WITNESSES_AND_SURVIVAL_CERTIFICATES.md)
 constructs a smooth local witness that improves the original physical
 source's reflected-norm lower certificate from order a⁴ to order a².
 A local third-moment identity and explicit covariant derivative bounds
