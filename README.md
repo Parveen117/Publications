@@ -60,7 +60,22 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-78](papers/yang-mills-certified-benchmark/YM78_STATIONARY_DERIVATIVE_AND_ENERGY_SURVIVAL.md)
+Latest Yang–Mills continuation: [YM-79](papers/yang-mills-certified-benchmark/YM79_LOCAL_WITNESSES_AND_SURVIVAL_CERTIFICATES.md)
+constructs a smooth local witness that improves the original physical
+source's reflected-norm lower certificate from order a⁴ to order a².
+A local third-moment identity and explicit covariant derivative bounds
+control the witness without clustering or an assumed uniform gap.
+Bounded phase observables rescue infrared survival: nonzero ordinary
+increments imply a nonzero reflected phase state. Complete ultraviolet
+energy escape remains the obstruction for this source family; a pure
+infrared limit gives a gapless enlarged phase algebra.
+An explicit actual side-four Wilson witness certifies a reflected norm
+squared above 13/100 at theta=1/48. All 147 targeted Python 3.12 tests
+pass, and the certificates preserve 288
+upstream inputs. The a² bound still vanishes; a nontrivial local
+Yang–Mills continuum and positive mass gap remain unproved.
+
+Previous Yang–Mills continuation: [YM-78](papers/yang-mills-certified-benchmark/YM78_STATIONARY_DERIVATIVE_AND_ENERGY_SURVIVAL.md)
 constructs an actual local source with exactly positive physical energy,
 q_a=c||P_a f||², and stationary tempered derivative-field subsequences
 with sub-Gaussian moment bounds and odd time-reflection positivity.
