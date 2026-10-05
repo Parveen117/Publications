@@ -1,5 +1,17 @@
 # Publications
 
+Latest nonlinear physics development: [NSB1 — nonlinear spectral blindness and response flatness](papers/nonlinear-spectral-blindness/README.md)
+extends spectral blindness to finite nonlinear jets and mixed spectral
+words, with exact coordinate-marker recovery. Two strictly convex energies
+have the same entire Hessian eigenvalue field while one response geometry
+is flat and the other curved. A separate electromagnetic example matches
+wave speeds across all biases but separates calibrated curvature through
+impedance. Dual affine flatness, Maxwell integrability and response-metric
+curvature are distinguished explicitly. The packet includes a correction
+to the second spectral paper and a native gauge family showing why finite
+local derivatives alone cannot certify a uniform gap. There are 48 new
+**Python 3.12** tests; the original continuum Yang–Mills gap remains open.
+
 Latest diagram-property development: [NSR2 — transfer the lambda/z properties](papers/native-symmetry-response/NSR2_CONJUGATE_DIAGRAM_PROPERTIES.md)
 replicates the six T–V–S–P response definitions on electromagnetic and other
 two-conjugate-pair diagrams. The four Legendre potentials, fixed-variable
