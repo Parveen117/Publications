@@ -60,7 +60,21 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-72](papers/yang-mills-certified-benchmark/YM72_GROWING_BLOCK_MATRIX_MEMORY.md)
+Latest Yang–Mills continuation: [YM-73](papers/yang-mills-certified-benchmark/YM73_PHYSICAL_MASS_MEMORY_METRIC.md)
+derives a physical gap criterion from the static memory M0 and the
+normalization Z=I+M1. With an independently certified hidden physical
+floor h, the full gap lies between m_eff*h/(m_eff+h) and m_eff,
+where m_eff is the lowest generalized retained energy. The normalized
+resolvent error is at most 1/h. An actual microscopic plaquette probe
+restores quantified slow weight missing from the large-loop observations.
+The current calibrated YM72 trajectory instead has a gap diverging
+as the spacing shrinks. Five written results and 90 targeted
+**Python 3.12** tests preserve 246 upstream files. Weak-coupling
+whole-pencil estimates, independent hidden separation and local
+four-dimensional field construction remain open; the continuum
+passage theorem is conditional.
+
+Previous Yang–Mills continuation: [YM-72](papers/yang-mills-certified-benchmark/YM72_GROWING_BLOCK_MATRIX_MEMORY.md)
 extends interacting memory control to growing blocks and matrices of
 separated Wilson-loop readouts. For abs(theta)*r*N<=1e-8, the actual
 matrix response lies between 0.99 and 1.02 times its leading scalar
