@@ -1,6 +1,50 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-73
+## Current continuation: YM-74
+
+[YM-74's all-coupling electric enclosures](YM74_ALL_COUPLING_ELECTRIC_ENCLOSURES.md)
+prove actual-model estimates beyond the previous small-theta window.
+For every finite periodic cubic lattice of side at least four, the
+actual interacting vacuum satisfies
+1-mu(W_p)<=min(1,3/sqrt(2theta)+3/(16theta)). This is uniform in
+volume and controls the weak-bare-coupling direction theta->infinity.
+It follows from exact native product-trial integrals and a variational
+bound; the estimate concerns the actual vacuum, not the trial measure.
+
+A known electric spectral cutoff P_R supplies an independent hidden
+floor and an operator-norm bound for the loss of the entire bounded-energy
+physical subspace. Both conditions can be controlled on any prescribed
+sequence of finite regulators by an explicit growing cutoff. This does
+not assume an interacting gap or a known vacuum vector.
+
+The complete gauge-invariant finite pencil also encloses both lowest
+energies of the full Hamiltonian. Its total physical gap-interval width
+is at most 2*kappa*(abs(theta)*p)^2/(R-3-2*abs(theta)*p), when the
+denominator is positive. Native harmonic polynomials and a finite
+coupling shell give an exact finite construction. The hidden Hilbert
+space remains untruncated in the bound.
+
+For the actual side-four cube, the complete energy-three cutoff contains
+the constant, 192 plaquettes and 48 winding cycles. Its exact mixed norm
+and 241-dimensional pencil certify
+**0.4904<Delta(1/48)<3.07874** in bare energy units. This is an actual
+finite-volume gap enclosure, not a continuum mass prediction.
+
+Six written results, 39 new tests and 62 unchanged YM73/YM72 tests use
+**Python 3.12 only**, preserving 253 upstream files. Native Haar and
+graph calculations, directed rational intervals and independent matrix
+fixtures check the proof's computational ingredients; they are not
+proof-assistant verification. The uniform retained spectral cancellation,
+a surviving local state with finite positive physical energy and the
+nontrivial four-dimensional local field construction remain unproved.
+Pin: `EXPECTED_YM74.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym74_all_coupling_electric_enclosures.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym74_all_coupling_electric_enclosures.py -v
+~~~
+
+## Previous continuation: YM-73
 
 [YM-73's physical-mass and memory-normalization proof](YM73_PHYSICAL_MASS_MEMORY_METRIC.md)
 targets the missing physical continuum step. For an explicitly declared
