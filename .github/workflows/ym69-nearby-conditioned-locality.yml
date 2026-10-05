@@ -1,0 +1,40 @@
+name: YM69 nearby conditioned exterior locality
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym69-nearby-conditioned-locality.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - '.github/workflows/ym69-nearby-conditioned-locality.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce exact near-pin and posterior evidence
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym69_nearby_conditioned_locality.py --check
+      - name: Test posterior normalization and growing near sets
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym69_nearby_conditioned_locality.py -v
+      - name: Replay unchanged exterior and native-density results
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym68_averaged_exterior_locality.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym68_averaged_exterior_locality.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym67_pointwise_coarse_vacuum.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym67_pointwise_coarse_vacuum.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark

@@ -42,7 +42,17 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-68](papers/yang-mills-certified-benchmark/YM68_AVERAGED_EXTERIOR_LOCALITY.md)
+Latest Yang–Mills continuation: [YM-69](papers/yang-mills-certified-benchmark/YM69_NEARBY_CONDITIONED_LOCALITY.md)
+controls distant exterior influence uniformly over every value of a finite
+set of exact nearby pins. Correct posterior averaging cancels the exterior
+denominator and extends conditional information, native score and diagonal
+drift bounds to an infinite distant exterior. Sparse nearby sets may grow
+with separation, including an explicit n proportional to sqrt(R) regime.
+Five written results and 81 targeted **Python 3.12** tests preserve 218
+upstream files. Arbitrary growing collars, worst-case distant values,
+full Schur-memory locality and the four-dimensional continuum remain open.
+
+Previous Yang–Mills continuation: [YM-68](papers/yang-mills-certified-benchmark/YM68_AVERAGED_EXTERIOR_LOCALITY.md)
 controls the averaged effect of an arbitrarily large or countably infinite
 distant exterior, with constants determined by the observed region.
 Target-only symmetric smoothing gives conditional total-variation decay;
