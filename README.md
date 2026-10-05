@@ -60,7 +60,20 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-80](papers/yang-mills-certified-benchmark/YM80_BOUNDED_PHASE_ENERGY_CERTIFICATES.md)
+Latest Yang–Mills continuation: [YM-81](papers/yang-mills-certified-benchmark/YM81_LOCAL_THIRD_MOMENT_AND_VACUUM_RESPONSE.md)
+proves that the actual smooth-source third-moment matrix is exactly
+nearest neighbor. Its spatial-gradient contribution is uniformly bounded;
+the remaining sufficient survival condition reduces to one zero-momentum
+vacuum coefficient. An exact vacuum-Hessian row identity proves a
+two-sided physical squared-size bound of order 1/a². A two-resolvent
+positive-time window has an actual order-a³ norm certificate, and the
+actual side-four Wilson source has spectral mass above 1/32 in the bare
+band [1/32,32]. All 202 targeted Python 3.12 tests pass, and exact
+certificates preserve 302 upstream inputs.
+The zero-momentum continuum bound, Yang–Mills field construction and
+positive continuum mass gap remain unproved.
+
+Previous Yang–Mills continuation: [YM-80](papers/yang-mills-certified-benchmark/YM80_BOUNDED_PHASE_ENERGY_CERTIFICATES.md)
 proves an order-a reflected-norm lower certificate for a new bounded
 smooth local phase at fixed physical energy. Jensen retention and an
 exact phase chain rule preserve correlated moment bounds; a different
