@@ -60,7 +60,20 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-77](papers/yang-mills-certified-benchmark/YM77_PHYSICAL_SMEARING_AND_CONTINUUM_SURVIVAL.md)
+Latest Yang–Mills continuation: [YM-78](papers/yang-mills-certified-benchmark/YM78_STATIONARY_DERIVATIVE_AND_ENERGY_SURVIVAL.md)
+constructs an actual local source with exactly positive physical energy,
+q_a=c||P_a f||², and stationary tempered derivative-field subsequences
+with sub-Gaussian moment bounds and odd time-reflection positivity.
+An explicit reflected-norm lower bound is positive at each regulator
+but decays as a⁴. A rational frequency contrast and a resolvent witness
+identify the additional fixed-scale estimate needed for local survival.
+Local sources decouple exactly from charged winding sectors; the neutral
+side-four electric cut has 193 retained directions and preserves the
+previous gap enclosure. **118 targeted Python 3.12 tests** and certificates preserve 281
+upstream inputs. Nonzero reflected continuum states, Yang–Mills field
+identification and a positive continuum mass gap remain unproved.
+
+Previous Yang–Mills continuation: [YM-77](papers/yang-mills-certified-benchmark/YM77_PHYSICAL_SMEARING_AND_CONTINUUM_SURVIVAL.md)
 constructs physical smears with bounded energy and subsequential anchored
 space-time distribution limits with reflection positivity. Reanchored time
 shifts reconstruct a strongly continuous positive-energy temporal Hilbert

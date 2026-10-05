@@ -1,6 +1,39 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-77
+## Current continuation: YM-78
+
+[YM-78's stationary derivative fields and energy survival](YM78_STATIONARY_DERIVATIVE_AND_ENERGY_SURVIVAL.md)
+uses disjoint local plaquettes and exact block averages to obtain
+q_a=c||P_a f||², converging to c||f||²>0 for every nonzero fixed test.
+The physical energy floor is independent of coupling and growing volume.
+Time differentiation gives stationary tempered random-field subsequences,
+with global L² test-function bounds, sub-Gaussian moments, local H^(-s)
+regularity for s>2, and odd time-reflection positivity.
+
+A positive reflected-norm lower bound is proved for each regulator.
+Its certified value decays as a⁴, so it does not prove continuum survival.
+The difference between covariance multipliers at frequencies s and 2s
+is a rational positive diagnostic: a fixed positive lower value gives
+a nonzero reflected state. An exact dyadic sum accounts for all source
+energy while allowing escape to arbitrarily high or low scales.
+
+Local gauge-invariant sources decouple from charged center sectors.
+The side-four neutral electric cut reduces 241 directions to 193,
+with the existing gap enclosure unchanged. Neutral winding products
+are not automatically local observables.
+
+Five written results, **28 new Python 3.12 tests**, 90 unchanged tests,
+and exact replay controls preserve 281 upstream inputs. The stationary limit may vanish or carry only
+contact covariance in the selected linear sector. Full Euclidean
+covariance, local Yang–Mills field identification and a positive
+continuum mass gap remain unproved. Pin: EXPECTED_YM78.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym78_stationary_derivative_energy_survival.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym78_stationary_derivative_energy_survival.py -v
+~~~
+
+## Previous continuation: YM-77
 
 [YM-77's physical smearing and continuum survival](YM77_PHYSICAL_SMEARING_AND_CONTINUUM_SURVIVAL.md)
 proves a pointwise physical energy bound for collective angle smears,
