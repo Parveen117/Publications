@@ -1,0 +1,42 @@
+name: YM84 gauge resolved continuum scaling
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym84-gauge-resolved-scaling.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym84-gauge-resolved-scaling.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce response, gauge and physical scale controls
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym84_gauge_resolved_scaling.py --check
+      - name: Check character tails, gauge sectors, radial constants and continuum budgets
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym84_gauge_resolved_scaling.py -v
+      - name: Replay unchanged response and actual vacuum concentration inputs
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym83_actual_vacuum_response.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym83_actual_vacuum_response.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym76_local_defect_weak_coupling_dynamics.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym76_local_defect_weak_coupling_dynamics.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code
