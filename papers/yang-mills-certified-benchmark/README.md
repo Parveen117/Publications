@@ -1,6 +1,35 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-68
+## Current continuation: YM-69
+
+[YM-69's nearby-conditioned locality proof](YM69_NEARBY_CONDITIONED_LOCALITY.md)
+allows a finite nearby set to be pinned at any exact configuration while
+controlling an arbitrarily large or countably infinite distant exterior.
+Bayes reweighting cancels the exterior conditional denominator. The bound
+is uniform in all nearby pin values, with constants depending on their
+number and the fixed target, but not on the distant exterior's size.
+
+Conditional mutual information, native score energy and the target
+diagonal drift inherit this control. Infinite-exterior kernels use one
+exceptional null set common to every nearby configuration. The nearby
+set can grow as n=o(sqrt(R)); an explicit range for n~c sqrt(R) is also
+proved. This covers sparse growing pin sets, not arbitrary filled spatial
+collars. Worst-case distant values, full Schur-memory locality and the
+four-dimensional continuum remain open.
+
+Five written results and 25 new tests use **Python 3.12**. Exact
+posterior-normalization examples and directed large-distance arithmetic
+accompany the proof. The dedicated workflow replays unchanged YM68 and
+YM67 evidence with their 26 and 30 tests, for 81 targeted tests. The
+source manifest preserves 218 upstream files.
+Pin: `EXPECTED_YM69.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym69_nearby_conditioned_locality.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym69_nearby_conditioned_locality.py -v
+~~~
+
+## Previous continuation: YM-68
 
 [YM-68's averaged exterior-locality proof](YM68_AVERAGED_EXTERIOR_LOCALITY.md)
 removes the number of exterior pins from the spatial error bound in an
