@@ -1,0 +1,18 @@
+{
+  "base_publication_commit": "7bc141c21aa409b7a4718593603a2348730c00b7",
+  "base_publication_tree": "7f8162638e9ac75e9add4157c640135ac9a4f79a",
+  "sha256": {
+    ".github/workflows/nsr1-electromagnetic-response.yml": "2035c43bd7fb5b9979bb125060469ee8a6755a68d06d8dd4006167b0cdc5708b",
+    "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+    "papers/native-symmetry-response/MEASUREMENT.md": "c87c1ad38aae865523d4c7249f5f1e7d8ac1bc19a42485be69a15744c7f8a47e",
+    "papers/native-symmetry-response/README.md": "b71e1df1fc5ac0206e5f69b4ba8f5db22af4fdc7bdfb4d3fb8357dcd54be088a",
+    "papers/native-symmetry-response/SOURCE_MAP.md": "8cb4c879c5869264a8638e6817976a181df659049eb48b81c6d2b501c0efcbd5",
+    "papers/native-symmetry-response/THEOREMS.md": "be0cc61365fe300abf605ccf6c60e4967df515c9842383b2acb9bd612f51f7f3",
+    "papers/native-symmetry-response/certificates/nsr1_response.py": "eea1c665b8e4da13b6f3e2d02de77f0bfbceb5e789efcbdad5ccdf818af3d146",
+    "papers/native-symmetry-response/tests/test_nsr1_response.py": "8c131ae6312f4eca895718631b519f16a19c23109d58d62008d82925c15b5f61",
+    "papers/native-thermodynamic-curvature/SOURCE_MAP.md": "12793522839a603fecd749efb47cf04c252bd978df77298636b44586a8135422",
+    "papers/native-thermodynamic-curvature/THEOREM.md": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29",
+    "papers/native-thermodynamic-curvature/controls.py": "be14eb91b5c2d82daf56ee70f4dff4bd1f2ab8c62d52b76d921541a7a0758b23"
+  },
+  "stage": "NSR1"
+}
