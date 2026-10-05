@@ -1,5 +1,15 @@
 # Publications
 
+Latest symmetry-response development: [NSR1 — electromagnetic response curvature](papers/native-symmetry-response/README.md)
+transfers the native thermodynamic response connection to a declared electromagnetic
+energy law. Six written results connect curvature to coupling and impedance,
+reconstruct it from wave data across biases, derive symmetry selection rules,
+and show how internal-mode release can create curvature. Exact Born–Infeld and
+point-matched quadratic examples separate higher response from linear propagation.
+The packet includes a measurement protocol and **Python 3.12** exact controls.
+These are mathematical response diagnostics; experimental validation, optical
+phase identification and the Yang–Mills continuum remain separate tasks.
+
 Latest mathematical continuation: [GE4 — recover minimal observer memory](papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md)
 reconstructs a probe's smallest linear memory model from native response
 moments. A known native generator ceiling makes three derivatives sufficient
