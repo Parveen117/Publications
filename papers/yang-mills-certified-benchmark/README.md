@@ -1,6 +1,41 @@
 # Yang–Mills certified programme
 
-## Current continuation: YM-81
+## Current continuation: YM-82
+
+[YM-82's nonlinear lattice spectral gaps](YM82_NONLINEAR_LATTICE_SPECTRAL_GAPS.md)
+extends the existing bounded-interaction argument with weighted,
+centered plaquette oscillations. For the actual nonlinear potential
+theta W+lambda W² at theta=lambda=1/16000, the full quantum gap is
+greater than 7/2675 uniformly in volume, without a representation cut.
+The exact extrema certify a cell missed by the triangle bound.
+
+A stronger extension keeps arbitrary fixed nonlinear potentials inside
+disjoint quantum blocks and controls weak bridges by their actual
+Feynman–Kac kernels. An explicit selected-plaquette cosine Hamiltonian
+has gap greater than 1/8320 for every volume and nonlinear frequency,
+using its actual unknown vacuum. The bridge threshold depends on
+the internal oscillation; homogeneous large coupling is not covered.
+
+A conditional block Poincare theorem is proved with its classical
+lineage credited. A separately defined gauge-invariant nonlinear
+parent has gap at least 27/64 for every lattice volume and internal
+frequency, even though its pointwise Bakry curvature is negative
+somewhere. An actual-vacuum nonlinear Ward identity and native Haar
+response coefficients extend YM81. An exact quartic counterfamily
+has gaps at most 162 exp(-t/2), so nonlinearity alone is insufficient.
+
+Four written theorems, 26 new Python 3.12 tests, 202 unchanged tests,
+and exact certificates preserve 309 upstream inputs.
+The conditional estimates for the actual weak-coupling vacuum,
+nontrivial continuum field construction, Euclidean covariance and
+positive continuum mass gap remain unproved. Pin: EXPECTED_YM82.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym82_nonlinear_lattice_gap.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym82_nonlinear_lattice_gap.py -v
+~~~
+
+## Previous continuation: YM-81
 
 [YM-81's local third moments and vacuum response](YM81_LOCAL_THIRD_MOMENT_AND_VACUUM_RESPONSE.md)
 proves an exact nearest-neighbor structure for the actual smooth-source

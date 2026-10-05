@@ -60,7 +60,21 @@ This is a scoped mathematical development; no new interacting or Clay gap
 is claimed. The [draft audit](papers/generalized-euler-evolution/SOURCE_AUDIT.md)
 records corrections and unsupported physical claims explicitly.
 
-Latest Yang–Mills continuation: [YM-81](papers/yang-mills-certified-benchmark/YM81_LOCAL_THIRD_MOMENT_AND_VACUUM_RESPONSE.md)
+Latest Yang–Mills continuation: [YM-82](papers/yang-mills-certified-benchmark/YM82_NONLINEAR_LATTICE_SPECTRAL_GAPS.md)
+proves a gap greater than 1/8320 for an actual quantum lattice with
+strong nonlinear blocks and weak bridges, uniformly in volume and
+nonlinear frequency. A second explicit nonlinear plaquette cell has
+gap greater than 7/2675 by a weighted oscillation argument.
+A conditional block theorem also gives gap at least 27/64 for a
+separately defined gauge-invariant nonlinear parent despite failure
+of pointwise positive curvature. Exact nonlinear Ward/Haar identities
+and a quartic family with collapsing gaps identify both the method's
+strength and its necessary hypotheses. All 228 targeted Python 3.12
+tests pass, and certificates preserve 309 upstream inputs.
+The actual weak-coupling conditional
+bounds and four-dimensional continuum Yang–Mills gap remain open.
+
+Previous Yang–Mills continuation: [YM-81](papers/yang-mills-certified-benchmark/YM81_LOCAL_THIRD_MOMENT_AND_VACUUM_RESPONSE.md)
 proves that the actual smooth-source third-moment matrix is exactly
 nearest neighbor. Its spatial-gradient contribution is uniformly bounded;
 the remaining sufficient survival condition reduces to one zero-momentum
