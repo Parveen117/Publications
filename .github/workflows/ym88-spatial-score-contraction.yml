@@ -1,0 +1,43 @@
+name: YM88 spatial score contraction
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym88-spatial-score-contraction.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym88-spatial-score-contraction.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce actual small-coupling spatial bounds
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym88_spatial_score_contraction.py --check
+      - name: Check covariant tensors, native walks, full tails and the sweep metric
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym88_spatial_score_contraction.py -v
+      - name: Replay unchanged conditional energy and actual vacuum inputs
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym87_conditional_energy_transport.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym87_conditional_energy_transport.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym83_actual_vacuum_response.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym83_actual_vacuum_response.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym67_pointwise_coarse_vacuum.py --check
+      - name: Evidence remains read-only
+        run: git diff --exit-code
