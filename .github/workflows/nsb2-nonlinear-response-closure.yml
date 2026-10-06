@@ -1,0 +1,43 @@
+name: NSB2 nonlinear response closure
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/nonlinear-spectral-blindness/**'
+      - 'papers/emk-ugd-algebra/**'
+      - 'papers/native-symmetry-response/**'
+      - 'papers/native-thermodynamic-curvature/**'
+      - '.github/workflows/nsb2-nonlinear-response-closure.yml'
+  pull_request:
+    paths:
+      - 'papers/nonlinear-spectral-blindness/**'
+      - 'papers/emk-ugd-algebra/**'
+      - 'papers/native-symmetry-response/**'
+      - 'papers/native-thermodynamic-curvature/**'
+      - '.github/workflows/nsb2-nonlinear-response-closure.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Replay nonlinear response closure and inherited geometry
+        run: |
+          python -B papers/nonlinear-spectral-blindness/certificates/nsb2_nonlinear_response.py --check
+          python -B papers/nonlinear-spectral-blindness/certificates/nsb1_nonlinear_blindness.py --check
+          python -B -m unittest discover -s papers/nonlinear-spectral-blindness/tests -v
+      - name: Preserve the nonlinear Yang-Mills scope
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym82_nonlinear_lattice_gap.py --check
+      - name: All evidence remains read-only
+        run: git diff --exit-code
