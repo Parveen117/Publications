@@ -1,0 +1,43 @@
+name: YM93 Bochner continuation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym93-bochner-continuation.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym93-bochner-continuation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce the new actual Wilson continuation certificate
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym93_bochner_continuation.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym93_bochner_continuation.py -v
+      - name: Replay the unchanged tensor and corrected-flux inputs
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym88_spatial_score_contraction.py --check
+          python -B papers/yang-mills-certified-benchmark/certificates/ym91_conditional_memory_flux.py --check
+          python -B papers/yang-mills-certified-benchmark/certificates/ym92_wilson_flux_corrector.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym88_spatial_score_contraction.py -v
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym92_wilson_flux_corrector.py -v
+      - name: All evidence remains read-only
+        run: git diff --exit-code
