@@ -1,0 +1,13 @@
+{
+  "status": "PASS_SCOPED_ECP1",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "groups": 7,
+  "rational_loop_controls": 8,
+  "rejected_false_identities": 6,
+  "sha256": {
+    "THEOREM.md": "7f9f0b389867d44b43155c03046c43aac1bc066673aacc9e50ae89fdd17ae29d",
+    "verify.py": "6cd309e0aa0dd1a2ad314604f8ee856d6235d57178736dddb4d53b7bb0ad4fff"
+  },
+  "limitations": "Written general proofs plus exact finite/formal controls; no proof-assistant, independent review or physical validation."
+}
