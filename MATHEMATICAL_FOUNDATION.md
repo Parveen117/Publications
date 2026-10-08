@@ -286,3 +286,10 @@ This is a dependency order; existing advanced results remain available at their 
 **extra-ideas** hosts current physical applications and exploration. Its [R1–R46 register](https://github.com/Parveen117/extra-ideas/blob/main/CURRENT_STATUS.md) retains the existing derivations and corrections. Mathematical results first developed there are consumed by reference; their frozen historical proofs/pins are preserved. New common mathematical foundations should enter this publication route, with physics-specific hypotheses in the downstream adapter.
 
 Cut grading, scalar radial/turn splitting and dagger grading are distinct. The EMK two-by-two sector is one admitted representation; it is not the full UGD number or master-tensor structure. A finite PASS, a general written proof, a manuscript-status audit and physical validation are separate evidence.
+
+
+## Generator, observer and ordered evolution — 9 October 2026
+
+The corrected [universal-generator audit](papers/universal-generator-audit/README.md) links the existing RKF T41 cut grading to bilateral exponential channels, cut-loop order coefficients, closure and flow observers. It distinguishes generator parity from the event split S=R+D and from response-connection curvature. Its new finite lifted cost/memory model retains the decaying rate as a state, giving an autonomous composition law; rates and the physical dictionary remain declared inputs. The fresh scoped certificate verifies seven exact groups and rejects five false identities, without rerunning T41's historical certificate.
+
+[ECP1](papers/exponential-change-path-equivalence/README.md) supplies written proofs and exact controls for ordered exponential paths, the commuting special sector, Lie-response defects and frame-corrected native curvature. Neither packet establishes a physically universal generator or equates rationality with flatness.

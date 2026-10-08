@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SCOPED_UG_A1",
+  "python": "3.12.14",
+  "groups": 7,
+  "rejected_false_identities": 5,
+  "sha256": {
+    "README.md": "f709628b208121bd91c8f221a5ce58bb167698852d79792477711fcb84e263f1",
+    "verify.py": "eeb7b65a2528a4fdf3554cecf980e17d887b015947ff5f48e27579b276805960"
+  },
+  "scope": "Exact controls and written finite-flow derivation; T41 historical certificate not rerun; no universal physical generator claimed."
+}
