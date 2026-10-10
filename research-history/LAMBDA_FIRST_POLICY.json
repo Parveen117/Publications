@@ -1,0 +1,12 @@
+{
+  "original_head": "91ceca11c78a635ff18c6c5f8a18374caf5d7d92",
+  "original_tree": "0d93053ac655414156810ef8ba0c41bbb621ed81",
+  "base": "7ad1f7b6013da4f1d62d642f779f27bae41c9bcf",
+  "original_commits": [
+    "91ceca11c78a635ff18c6c5f8a18374caf5d7d92",
+    "9440357e0608403f0b395bf9b29b424493914388",
+    "46fb0f22f12142144d446296b97dfe90b91e1261"
+  ],
+  "bundle_sha256": "f190615e06eddbcbb84dd5544074b164455b72db464465afd8d8a5b940c0e715",
+  "method": "API snapshot plus original Git bundle; restore original IDs using git fetch research-history/lambda-first-policy.bundle refs/heads/docs/lambda-first-policy-2026-10-10:refs/heads/archive/lambda-first-original"
+}
