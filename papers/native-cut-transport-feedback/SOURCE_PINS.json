@@ -1,0 +1,137 @@
+{
+  "schema": "native-cut-transport-feedback-source-pins.v1",
+  "source_commit": "8a3a246e6fb015d0d7d1c65a6d078297a079d772",
+  "native_engine": {
+    "repository": "https://github.com/Parveen117/Recognition-Kernel-Framework",
+    "commit": "e8e3089745bf7dc0532d01c62a5f660f5658c6f0",
+    "upstream_directory": "operator_foundation/core",
+    "embedded_packet": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+    "embedded_directory": "Native_Phase_Word_Reconstruction/parent/parent/parent/parent/baseline/native/core",
+    "files": {
+      "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+      "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+    }
+  },
+  "records": [
+    {
+      "path": "papers/native-loop-concentration/verify.py",
+      "bytes": 4313,
+      "sha256": "75e7da5e0947d875a67f2590fb23addc1b4e0f2d6f31c52f811d0c4cf21ea620",
+      "purpose": "Frozen CID-D1/QG-R2 predecessor; full read-only replay includes its recursive source chain"
+    },
+    {
+      "path": "papers/native-loop-concentration/verify.cjs",
+      "bytes": 26530,
+      "sha256": "1466950a1f687e3c283ffa190f61abea5e7666782805f309b7728ee4bd6197a3",
+      "purpose": "Frozen CID-D1/QG-R2 predecessor; full read-only replay includes its recursive source chain"
+    },
+    {
+      "path": "papers/native-loop-concentration/SOURCE_PINS.json",
+      "bytes": 7535,
+      "sha256": "5420b96d4135b38c6e040341ddcfc69d268e79900baaca06779156e8ea4f3fae",
+      "purpose": "Frozen CID-D1/QG-R2 predecessor; full read-only replay includes its recursive source chain"
+    },
+    {
+      "path": "papers/native-loop-concentration/CERTIFICATE.json",
+      "bytes": 1465201,
+      "sha256": "b6147c4addf84bff375597703f90194148c98ffe1e8f387bccd4e47f8e194793",
+      "purpose": "Frozen CID-D1/QG-R2 predecessor; full read-only replay includes its recursive source chain"
+    },
+    {
+      "path": "papers/native-loop-concentration/EXPECTED.sha256",
+      "bytes": 83,
+      "sha256": "f0f88f753e2e69a06ae2e2aa3f8dcf4e5f3e0f8a85c6d9c4ec2cbe1adc2cc18c",
+      "purpose": "Frozen CID-D1/QG-R2 predecessor; full read-only replay includes its recursive source chain"
+    },
+    {
+      "path": "papers/native-loop-concentration/THEOREM.md",
+      "bytes": 15589,
+      "sha256": "51ef8bd077b9fc5f811513b5a661d4bfd8e48c3b89d5be57ed0223045d966a78",
+      "purpose": "Frozen CID-D1/QG-R2 predecessor; full read-only replay includes its recursive source chain"
+    },
+    {
+      "path": "papers/native-loop-concentration/CUT_INFORMATION_DYNAMICS.md",
+      "bytes": 11151,
+      "sha256": "f72327ad95193100d93dbccb217941ce2621fd3ebffba20af406b57d4ef4137c",
+      "purpose": "Frozen CID-D1/QG-R2 predecessor; full read-only replay includes its recursive source chain"
+    },
+    {
+      "path": "papers/native-loop-concentration/README.md",
+      "bytes": 6075,
+      "sha256": "5d218631287ee5c6dd8efb510098bd19f81eee7b32aa22397ce02032aaf932d8",
+      "purpose": "Frozen CID-D1/QG-R2 predecessor; full read-only replay includes its recursive source chain"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/verify.py",
+      "bytes": 7292,
+      "sha256": "c1b5269a0d557e2517e9a4b5a2d6c8ca2cf7c4f4283daeb8dfdf1478a737117c",
+      "purpose": "Pinned safe extraction helper; also validated by the predecessor chain"
+    },
+    {
+      "path": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+      "bytes": 2627956,
+      "sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+      "purpose": "Unchanged embedded native RKF engine"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/verify.py",
+      "bytes": 4316,
+      "sha256": "21c41e499838a13e918f702e8f23579c0fac716188d06fa1b18167cf8e44708c",
+      "purpose": "CID-D2 derivation, native implementation and coverage contract"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/verify.cjs",
+      "bytes": 16697,
+      "sha256": "5df48649db92c602dcbabf38aca5b207756873a3ec57a65d7f51214dffe48916",
+      "purpose": "CID-D2 derivation, native implementation and coverage contract"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/THEOREM.md",
+      "bytes": 13357,
+      "sha256": "4e023f2bb1df5e20e0d0395b25aae350dcb1e2ea4229a1d23b9d3deb54544632",
+      "purpose": "CID-D2 derivation, native implementation and coverage contract"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/README.md",
+      "bytes": 4038,
+      "sha256": "7bd6b6e6ed071a65045f9691a6d30a3bd7a2e3efd42218283413548532a609c1",
+      "purpose": "CID-D2 derivation, native implementation and coverage contract"
+    },
+    {
+      "path": ".github/workflows/native-cut-transport-feedback.yml",
+      "bytes": 3783,
+      "sha256": "51e58569ee7fe8f50f32ae4b5e7f74f0bed3a76334474191a011cd4a0ba49928",
+      "purpose": "Pinned Python 3.12 / Node 24.19.0 replay workflow"
+    },
+    {
+      "path": "papers/emk-recognition-geometry/README.md",
+      "bytes": 15438,
+      "sha256": "bb7559a21a236b6d6bb00e69740453078c88eef73dc184d6b882a9f205cfcfae",
+      "purpose": "Audited EMK-G3 visible return and lifted memory; no duplicate universal helix claim"
+    },
+    {
+      "path": "papers/emk-recognition-geometry/certificates/emkg3_helical_sheet_memory.py",
+      "bytes": 28672,
+      "sha256": "0a627fc63eb9b00b79871fdb0f4c39abdb0b9373c714a458badc6cb9dee9bb65",
+      "purpose": "Audited historical helix proof; not used as an alternative arithmetic engine"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md",
+      "bytes": 11107,
+      "sha256": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+      "purpose": "Covariant native derivative and curvature predecessor"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/certificates/emkt2_time_ordered_transport.py",
+      "bytes": 16517,
+      "sha256": "2dc28deb6bfa898568c9c2cb949ae76932d0995106aa28bf9f01a8fae29fd993",
+      "purpose": "Ordered transport predecessor; no scalar-exponential substitution"
+    },
+    {
+      "path": "papers/generalized-euler-evolution/THEOREM.md",
+      "bytes": 17429,
+      "sha256": "f3d6690e8ecdc49aa03f742a2beb7c8197228a5670c076f46287bae8321ca7d1",
+      "purpose": "Native finite-carrier exponential and inherited completion scope"
+    }
+  ]
+}

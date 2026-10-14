@@ -1,5 +1,14 @@
 # Publications
 
+Latest coupled dynamics: [CID-D2 — cut and transport evolve together](papers/native-cut-transport-feedback/README.md)
+derives an explicit information–curvature force from a selected native
+action. The cut and its generator exchange a conserved total of transport
+information, directional information and squared induced curvature. An
+exact two-strand rotating example returns its cut and generator after one
+cycle while its full transport returns after five. The action and weights
+are declared model data. 39 native certificates, 150 exact checks and 11
+negative controls pass, with the complete predecessor chain replayed.
+
 Latest structural equation: [CID-D1 — cut evolution, information and curvature](papers/native-loop-concentration/CUT_INFORMATION_DYNAMICS.md)
 derives one covariant cut tensor and a joint evolution equation for its
 symmetric information and antisymmetric curvature parts. In the rank-one

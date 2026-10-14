@@ -22,6 +22,16 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[CID-D2: coupled cut and transport feedback](papers/native-cut-transport-feedback/THEOREM.md)
+selects a dimensionless positive information/induced-curvature functional
+and derives its explicit variation. A native constrained action closes the
+pair `D_lambda P=[V,P]`, `D_lambda V=[P,H_I+H_C]`, preserving a combined
+transport-information/geometry total. An exact two-mode solution makes both
+the cut and its generator rotate, yet its accumulated transport needs five
+visible cycles to return. 39 native algebraic certificates, 150 checks and
+11 negative controls pass; CID-D1 and the full predecessor chain replay.
+The physical selection of the action, controls and weights remains open.
+
 [CID-D1: covariant cut–information–curvature dynamics](papers/native-loop-concentration/CUT_INFORMATION_DYNAMICS.md)
 constructs the tensor `Tr(P D_aP D_bP)` from a moving native cut and relates
 its antisymmetric part exactly to induced connection curvature. A covariant
