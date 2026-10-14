@@ -1,0 +1,248 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=20mm,top=18mm,bottom=19mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools}
+\usepackage{booktabs,tabularx,array,enumitem,microtype,xcolor,fancyhdr,hyperref}
+\definecolor{ink}{HTML}{172B40}\definecolor{teal}{HTML}{087F8C}
+\definecolor{muted}{HTML}{536572}\definecolor{wash}{HTML}{EFF5F7}
+\hypersetup{colorlinks=true,linkcolor=teal,urlcolor=teal,pdftitle={Native Phase Memory: Development Draft},pdfauthor={Research development for Monty}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\color{muted}RECOGNITION KERNEL / PHASE MEMORY}
+\fancyhead[R]{\small\color{muted}14 OCT 2026}
+\fancyfoot[L]{\small\color{muted}Development draft 0.7 \quad | \quad Testing and certification deferred}
+\fancyfoot[R]{\small\color{muted}\thepage}
+\setlength{\headheight}{14pt}\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlist[itemize]{leftmargin=16pt,itemsep=3pt,topsep=3pt}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\tabularxcolumn}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.17}
+\newcommand{\Id}{\mathbf 1}\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\pageheading}[2]{\vspace*{1mm}{\small\color{teal}\textbf{#1}}\par\vspace{2mm}{\LARGE\color{ink}\textbf{#2}}\par\vspace{3mm}}
+\newcommand{\blocktitle}[1]{\par\vspace{2mm}{\large\color{ink}\textbf{#1}}\par}
+\newcommand{\claim}[1]{\textbf{\color{teal}#1}}
+\newcommand{\notebox}[1]{\par\smallskip\noindent\colorbox{wash}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}}\par\smallskip}
+\begin{document}
+\pageheading{01 / DOCUMENT FIRST}{Native Phase Memory}
+{\large From a repeated circle reading to a retained winding record}
+
+\notebox{\textbf{Status: development draft.} This document develops the next mathematical construction, its proposed propositions and written arguments. New simulations, certificate generation and executable verification are deferred. The example is an analytic illustration, not a reported run.}
+
+The preceding \emph{Native Phase-Word Reconstruction} note recovered positive dimensionless Cayley coordinates $q,p$ from three loop responses and two oriented signs. Its remaining ambiguity is the next target: the available channel and loop readings identify the native transport angle modulo $\pi$.
+
+A circle endpoint records where an operation finishes. A path record can additionally retain how it arrived there. The mathematical task is to specify what information makes that extra record recoverable, rather than merely assigning an unknown integer a name.
+
+\blocktitle{Proposed development}
+Keep the native cut algebra and replace an isolated phase reading by an ordered sequence of oriented channel comparisons. At each step retain a local angle increment and an integer chart-transition record. With an initial phase anchor and a known increment bound, the sequence has a unique phase lift within the declared one-axis native family.
+\[
+\boxed{\text{oriented channel steps} + \text{initial anchor} + \text{increment bound}
+\ \longrightarrow\ \text{retained native phase lift}.}
+\]
+Physical time is not introduced into the primitive algebra. The index $j$ labels comparisons. A physical clock, source strength or geometric change can later supply a control parameter if its relation to the transport is specified.
+
+\begin{tabularx}{\linewidth}{@{}L{39mm}X@{}}\toprule
+Object & Role in the development\\\midrule
+Local operator & $U_j=a_j\Id+b_jR$, with $a_j^2+b_j^2=1$.\\
+Observable & Two oriented channel coefficients, combined as $z_j$.\\
+Local comparison & $z_jz_{j-1}^{\dagger}$ determines a short phase increment.\\
+Memory record & $m_j\in\mathbb Z$ stores half-turn crossings lost by the channel.\\
+Unresolved input & The initial anchor and an independently justified increment bound.\\
+Physical bridge & An explicit source-to-transport law, separate from reconstructing the native phase.\\\bottomrule
+\end{tabularx}
+
+This is a proposed reconstruction result for the specified family. It neither identifies an arbitrary global phase nor determines a gravitational coupling by itself. The purpose is to turn the earlier missing integer into a precise observation-and-memory problem.
+
+\newpage
+\pageheading{02 / WHAT IS OBSERVED}{A channel carries doubled native phase}
+Use the inherited generators
+\[
+R=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+K=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+Z=-RK=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+\]
+with $R^2=-\Id$, $K^2=\Id$, $RK=-KR$. For
+$U=a\Id+bR$, $a^2+b^2=1$, the inherited multiplication identity is
+\[
+U^{\dagger}KU=(a^2-b^2)K+2abZ.
+\]
+Define two calibrated oriented coefficients
+\[
+X=\frac12\tr(KU^{\dagger}KU)=a^2-b^2,\qquad
+Y=\frac12\tr(ZU^{\dagger}KU)=2ab,
+\]
+\[
+\boxed{z:=X+\iota Y=(a+\iota b)^2,\qquad zz^{\dagger}=1.}
+\]
+The coefficients use known comparator orientations, zero offsets and a common scale or a justified normalization. This interface asks for both coefficient values; the previous two sign readings alone are insufficient for an arbitrary sequence of local channel comparisons.
+
+For the second axis $V=c\Id+d(\iota K)$, use comparator $\iota R$ in place of $K$. It gives $X_G=c^2-d^2$, $Y_G=2cd$. Both axes can therefore carry the same construction independently.
+
+\blocktitle{Native phase convention}
+On a finite Cayley chart define
+\[
+\Phi(q)=2\int_0^q\frac{du}{1+u^2},\qquad
+\pi:=\lim_{q\to+\infty}\Phi(q).
+\]
+The integral is in the inherited native scalar completion. A unit pair
+$a+\iota b$ has native angle $\theta=\Phi(q)$ on this chart, continued by its path record. Squaring the pair doubles its angle, so $z$ retains $2\theta$ modulo $2\pi$, equivalently $\theta$ modulo $\pi$.
+
+\blocktitle{Why this observation interface is useful}
+It remains meaningful at $U=\Id$, where $X=1,Y=0$, and at $U=-\Id$, where the same reading occurs. It therefore avoids division by a loop response that could vanish at the beginning of a path. The distinction between those two operators must come from an anchored path and its bound, not from this single channel reading.
+
+If a frame is changed, transform $U,K,Z$ together. The traces then agree. Rotating the transport while silently keeping a different comparator convention would change the measurement contract.
+
+\newpage
+\pageheading{03 / LOCAL RECONSTRUCTION}{Extract the short increment natively}
+For consecutive unit channel readings $z_{j-1}=X_{j-1}+\iota Y_{j-1}$ and $z_j=X_j+\iota Y_j$, form
+\[
+z_jz_{j-1}^{\dagger}=C_j+\iota S_j,
+\]
+\[
+C_j=X_jX_{j-1}+Y_jY_{j-1},\qquad
+S_j=Y_jX_{j-1}-X_jY_{j-1},\qquad C_j^2+S_j^2=1.
+\]
+Assume an independently justified bound on the actual native angle change:
+\[
+\boxed{|\theta_j-\theta_{j-1}|<\pi/2.}
+\]
+This assumption excludes $C_j=-1$ and allows the local channel Cayley coordinate
+\[
+r_j:=\frac{S_j}{1+C_j}.
+\]
+The native Cayley identity gives
+\[
+C_j+\iota S_j=\frac{1+\iota r_j}{1-\iota r_j},
+\]
+so the short native transport increment is
+\[
+\boxed{\delta_j=\frac12\Phi(r_j)
+=\int_0^{r_j}\frac{du}{1+u^2}\ \in(-\pi/2,\pi/2).}
+\]
+Here $r_j$ is the Cayley coordinate of the \emph{channel increment}. It is not the Cayley coordinate of $U_jU_{j-1}^{\dagger}$; the factor $1/2$ accounts for the channel's doubled phase.
+
+\claim{Proposed proposition PM1: local uniqueness.}
+Within the declared interval, $\delta_j$ is the unique increment compatible with the two channel readings.
+
+\textbf{Argument.} The relative channel has angle $2(\theta_j-\theta_{j-1})$ modulo $2\pi$. Its finite Cayley representative has angle $\Phi(r_j)\in(-\pi,\pi)$. Two compatible transport increments differ by an integer multiple of $\pi$. Two such increments both lying in the open interval $(-\pi/2,\pi/2)$ cannot differ by a nonzero multiple of $\pi$. Therefore the displayed increment is unique.\hfill$\square$
+
+\blocktitle{The bound cannot be inferred from the ratio alone}
+The same ratio also fits $\delta_j+\pi n$ for any integer $n$. Seeing a small local representative is not evidence that the actual step was small. At $C_j=-1$, the two boundary increments $+\pi/2$ and $-\pi/2$ are indistinguishable. The strict bound, or a refined sequence with a justified bound, is part of the required information.
+
+No numerical integration is performed in this draft. The integral is retained symbolically as the native angle comparison.
+
+\newpage
+\pageheading{04 / THE MEMORY VARIABLE}{Lift the sequence and retain each crossing}
+Supply an initial native angle $\theta_0$ and apply PM1 at every observed step:
+\[
+\boxed{\widetilde\theta_j=\theta_0+\sum_{k=1}^{j}\delta_k.}
+\]
+Let $\varphi_j\in[0,\pi)$ be the canonical representative of the angle inferred from $z_j$. Define the integer record by
+\[
+\widetilde\theta_j=\varphi_j+\pi m_j.
+\]
+The update can be written without discarding a crossing:
+\[
+k_j\in\{-1,0,1\},\quad
+\delta_j=\varphi_j-\varphi_{j-1}+\pi k_j\in(-\pi/2,\pi/2),
+\qquad \boxed{m_j=m_{j-1}+k_j.}
+\]
+The strict bound makes the admissible $k_j$ unique. The integer is recovered from the sequence relative to the supplied initial record $m_0$.
+
+\claim{Proposed proposition PM2: anchored lift uniqueness.}
+In the fixed native one-axis family, an initial phase anchor and the step bounds determine one sampled phase lift compatible with all channel readings.
+
+\textbf{Argument.} At each step PM1 supplies a unique increment. Any two compatible lifts with the same initial value have identical first increments, then identical second increments, and so on. Induction gives equality at every sample. Equivalently, the canonical-chart difference and the unique integer correction determine each $m_j$.\hfill$\square$
+
+\blocktitle{A sufficient control condition}
+If a source-comparison coordinate $x$ is independently available and
+\[
+\left|\frac{d\theta}{dx}\right|\le B,
+\]
+then intervals satisfying $B|x_j-x_{j-1}|<\pi/2$ are sufficient. The bound $B$ can be a retained control specification; it must not be estimated solely by assuming that the unresolved winding was zero. Refining a finite set of readings without any bound cannot guarantee uniqueness.
+
+\blocktitle{Exactly what has been lifted}
+An identity channel alone does not provide the anchor $U_0=\Id$ rather than $-\Id$. The anchor must come from a specified initial preparation or an earlier retained record. With that anchor, the canonical native operator and $m_j$ reconstruct its sign through
+\[
+\widetilde U_j=(-1)^{m_j}U(\varphi_j),
+\]
+where $U(\varphi_j)$ denotes the canonical unit pair, including the identity at $\varphi_j=0$. The full integer also distinguishes paths whose final operators coincide after whole turns.
+
+Arbitrary factors $e^{\iota\gamma(x)}U(x)$ remain invisible to these channel readings. PM2 reconstructs the phase in the specified real unit-pair family; it does not recover an unrestricted additional global phase.
+
+\newpage
+\pageheading{05 / ANALYTIC ILLUSTRATION}{The endpoint returns; the record does not}
+Consider an anchored native path with increments $\delta_j=\pi/4$, so
+$\theta_j=j\pi/4$. Each increment lies strictly inside the required interval.
+The observable channel values cycle every four steps:
+\[
+z_j=1,\ \iota,\ -1,\ -\iota,\ 1,\ \ldots
+\]
+Every relative channel is $\iota$, hence $C_j=0$, $S_j=1$, $r_j=1$, and
+$\delta_j=\Phi(1)/2=\pi/4$.
+
+\begin{tabularx}{\linewidth}{@{}L{12mm}L{20mm}L{27mm}L{19mm}X@{}}\toprule
+$j$ & Channel $z_j$ & Chart $\varphi_j$ & Record $m_j$ & Lift $\widetilde\theta_j$\\\midrule
+0 & $1$ & $0$ & 0 & $0$\\
+1 & $\iota$ & $\pi/4$ & 0 & $\pi/4$\\
+2 & $-1$ & $\pi/2$ & 0 & $\pi/2$\\
+3 & $-\iota$ & $3\pi/4$ & 0 & $3\pi/4$\\
+4 & $1$ & $0$ & 1 & $\pi$\\
+5 & $\iota$ & $\pi/4$ & 1 & $5\pi/4$\\
+6 & $-1$ & $\pi/2$ & 1 & $3\pi/2$\\
+7 & $-\iota$ & $3\pi/4$ & 1 & $7\pi/4$\\
+8 & $1$ & $0$ & 2 & $2\pi$\\\bottomrule
+\end{tabularx}
+
+At steps $0,4,8$, the channel reading is identical. The native operators at these points are $\Id,-\Id,\Id$, respectively. The memory records $0,1,2$ distinguish the histories even when the endpoint operator itself returns.
+
+\notebox{\textbf{Interpretation.} The recovered object is the endpoint together with its anchored path record. The winding is not new information produced by an invariant: it is information retained from bounded oriented comparisons that an endpoint-only description discards.}
+
+\blocktitle{Why finite rational subdivisions cannot replace the bound}
+Suppose only a finite collection of controlled fractional exposures $f_j=n_j/D$ is observed, with integers $n_j$ and a common positive denominator $D$. Let the native source angle be $\theta$ and the corresponding channel angle be $2f_j\theta$.
+
+For every integer $k$, the alternative
+\[
+\theta'=\theta+\pi Dk
+\]
+changes each channel angle by $2\pi n_jk$. All those readings remain identical. Thus an arbitrary finite rational subdivision set leaves an unbounded alias family if no independent range or increment information is supplied.
+
+This establishes the need for the retained bound in the proposed protocol. It does not say that every possible observation scheme must use this particular bound.
+
+\newpage
+\pageheading{06 / PHYSICS DEVELOPMENT}{From the lift to a coupling comparison}
+Once the phase lift is available, a proposed source-to-transport relation can be compared across operations. For a specified source coordinate $x_j$ define
+\[
+\kappa_j:=\frac{\widetilde\theta_j-\widetilde\theta_{j-1}}{x_j-x_{j-1}}
+=\frac{\delta_j}{x_j-x_{j-1}},\qquad x_j\ne x_{j-1}.
+\]
+A constant-coupling model requires all $\kappa_j$ to agree. A changing coupling is retained as a sequence rather than absorbed into an assumed constant. Ratios $\kappa_j/\kappa_k$, when defined, survive a common affine change $x\mapsto ax+b$ with $a>0$.
+
+\blocktitle{The earlier time-comparison proposal}
+Keep the previous note's proposed phase dictionary
+\[
+\theta_Q=\kappa_Q\frac{\Delta}{\Theta},\qquad
+\theta_G=\frac{\zeta_{\rm ph}}{\Delta\Theta},
+\qquad \zeta_{\rm ph}=\kappa_G\frac{\hbar G}{c^5}.
+\]
+Here $\Delta$ and $\Theta$ are externally supplied duration comparisons, and the dictionary remains a proposed physical adapter. The phase-memory construction would replace its unspecified integers by the recovered records:
+\[
+\boxed{\kappa_{Q,j}=(\varphi_{Q,j}+\pi m_{Q,j})\frac{\Theta_j}{\Delta_j},}
+\]
+\[
+\boxed{\zeta_{{\rm ph},j}=(\varphi_{G,j}+\pi m_{G,j})\Delta_j\Theta_j.}
+\]
+These absolute formulas presume the zero-phase reference used by the dictionary; otherwise retain the corresponding phase offset. Their constancy across comparisons becomes a model requirement. Applying this construction to the gravitational axis still requires a realized source-to-transport map and a justified bound on that axis.
+
+\begin{tabularx}{\linewidth}{@{}L{38mm}X@{}}\toprule
+Question & What this draft contributes\\\midrule
+Which chart branch? & Inherits the earlier amplitude-and-sign reconstruction.\\
+How many half-turns? & Proposes recovery from an anchored sequence with known local bounds.\\
+Is the coupling fixed? & Defines local and repeated-comparison coupling records for the proposed source law.\\
+What sets the bound? & Remains an independent control or observation input; no value is invented.\\
+What is $G$? & Still inseparable from $\kappa_G$ in the displayed product without another relation.\\\bottomrule
+\end{tabularx}
+
+\blocktitle{Handoff for later certification}
+The next implementation should encode PM1, the integer update and PM2 in the native proof system; then examine chart crossings, zero responses and unresolved aliases. Noise-aware interval admission and a physical source realization remain later tasks. None of these tests or certificates is reported as completed in this draft.
+
+\textbf{Dependency:} \emph{Native Phase-Word Reconstruction}, v0.6, 14 October 2026, for the two-axis algebra, phase integral and prior reconstruction protocol. This document develops their next use; it does not replace that note or claim mathematical priority for phase unwrapping in general.
+\end{document}
