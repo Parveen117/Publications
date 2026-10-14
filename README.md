@@ -1,6 +1,23 @@
 # Publications
 
-Latest quantum-gravity development: [QG-R1 — native relative curvature without a clock](papers/native-relative-curvature/README.md)
+Latest structural equation: [CID-D1 — cut evolution, information and curvature](papers/native-loop-concentration/CUT_INFORMATION_DYNAMICS.md)
+derives one covariant cut tensor and a joint evolution equation for its
+symmetric information and antisymmetric curvature parts. In the rank-one
+two-mode sector, the information Gram determinant equals squared oriented
+cut curvature. The source generator remains an input; no physical field
+law is silently selected. This companion shares QG-R2's native certificate.
+
+Latest quantum-gravity development: [QG-R2 — many centres, one observation base](papers/native-loop-concentration/README.md)
+derives reference-correct loop fusion and a three-loop orientation readout.
+An exact family has diverging retained density while its combined loop is
+identically flat. Positive defect records, area budgets and a measured
+composition factor separate concentration from cancellation or record count.
+22 native certificates, 22 replays, 172 checks and 19 negative controls pass;
+QG-R1 and all inherited packets replay unchanged. The
+[proof](papers/native-loop-concentration/THEOREM.md) states the conditional
+regularity result and the remaining physical source/focusing obligation.
+
+Previous quantum-gravity development: [QG-R1 — native relative curvature without a clock](papers/native-relative-curvature/README.md)
 constructs a dimensionless source/reference loop-to-area quotient from four
 native scalar readings. Independent frames at the four vertices cancel
 exactly; the variable-field limit includes derivative curvature and a

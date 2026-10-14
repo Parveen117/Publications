@@ -1,0 +1,173 @@
+{
+  "schema": "native-loop-concentration-source-pins.v1",
+  "source_commit": "e5f2388d67943ce32ea0b3f6c2838da31fe52f28",
+  "native_engine": {
+    "repository": "https://github.com/Parveen117/Recognition-Kernel-Framework",
+    "commit": "e8e3089745bf7dc0532d01c62a5f660f5658c6f0",
+    "upstream_directory": "operator_foundation/core",
+    "embedded_packet": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+    "embedded_directory": "Native_Phase_Word_Reconstruction/parent/parent/parent/parent/baseline/native/core",
+    "files": {
+      "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+      "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+    }
+  },
+  "records": [
+    {
+      "path": "papers/native-relative-curvature/verify.py",
+      "bytes": 4233,
+      "sha256": "590b8b8417980cd101385376933418e3a6b51d8755b801d0cc07c5b3f42ec1b8",
+      "purpose": "Pinned QG-R1 mathematical predecessor and recursive replay"
+    },
+    {
+      "path": "papers/native-relative-curvature/verify.cjs",
+      "bytes": 29361,
+      "sha256": "38f3ae5febf0ec8a2c97229743145a8ae74dae59890ef6b60244732dc2f8fa4b",
+      "purpose": "Pinned QG-R1 mathematical predecessor and recursive replay"
+    },
+    {
+      "path": "papers/native-relative-curvature/SOURCE_PINS.json",
+      "bytes": 5218,
+      "sha256": "6f68474c3b2898a11c4b634a13d08c7116e292ed281f19cea687b906e5db0b40",
+      "purpose": "Pinned QG-R1 mathematical predecessor and recursive replay"
+    },
+    {
+      "path": "papers/native-relative-curvature/CERTIFICATE.json",
+      "bytes": 1461738,
+      "sha256": "8575bc635f9810885312dd731953ee04225ddffbeee7df58e99975613fbe5f44",
+      "purpose": "Pinned QG-R1 mathematical predecessor and recursive replay"
+    },
+    {
+      "path": "papers/native-relative-curvature/EXPECTED.sha256",
+      "bytes": 83,
+      "sha256": "248c4c3e590c377aab3cc9063ca0895d29d0fc92823e7240ee18f0837bc7747e",
+      "purpose": "Pinned QG-R1 mathematical predecessor and recursive replay"
+    },
+    {
+      "path": "papers/native-relative-curvature/THEOREM.md",
+      "bytes": 24180,
+      "sha256": "05520b64e0110a370b3f5e955513fddf5a511bd41fc1125be95ab194c12bc1ea",
+      "purpose": "Pinned QG-R1 mathematical predecessor and recursive replay"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/verify.py",
+      "bytes": 7292,
+      "sha256": "c1b5269a0d557e2517e9a4b5a2d6c8ca2cf7c4f4283daeb8dfdf1478a737117c",
+      "purpose": "Pinned safe extraction helper, also checked by QG-R1"
+    },
+    {
+      "path": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+      "bytes": 2627956,
+      "sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+      "purpose": "Unchanged embedded native engine"
+    },
+    {
+      "path": "papers/recognition-seam-topology/README.md",
+      "bytes": 9245,
+      "sha256": "08834cbaa54928bfbb70ddcffa06bef9bb276a397102a35f2e91ad4d691b80f1",
+      "purpose": "Existing orientation and cancellation/retention results"
+    },
+    {
+      "path": "papers/generalized-euler-evolution/GE3_RETURNING_MEMORY.md",
+      "bytes": 10099,
+      "sha256": "383616d0d924247813d331e61909bc36c6d2a33d8c34f80b389200d7b7a0c78a",
+      "purpose": "Existing retained-memory distinction; no dynamics imported"
+    },
+    {
+      "path": "papers/native-loop-concentration/THEOREM.md",
+      "bytes": 15589,
+      "sha256": "51ef8bd077b9fc5f811513b5a661d4bfd8e48c3b89d5be57ed0223045d966a78",
+      "purpose": "QG-R2 written proof and native implementation"
+    },
+    {
+      "path": "papers/native-loop-concentration/verify.py",
+      "bytes": 4313,
+      "sha256": "75e7da5e0947d875a67f2590fb23addc1b4e0f2d6f31c52f811d0c4cf21ea620",
+      "purpose": "QG-R2 written proof and native implementation"
+    },
+    {
+      "path": "papers/native-loop-concentration/verify.cjs",
+      "bytes": 26530,
+      "sha256": "1466950a1f687e3c283ffa190f61abea5e7666782805f309b7728ee4bd6197a3",
+      "purpose": "QG-R2 written proof and native implementation"
+    },
+    {
+      "path": "papers/native-loop-concentration/CUT_INFORMATION_DYNAMICS.md",
+      "bytes": 11151,
+      "sha256": "f72327ad95193100d93dbccb217941ce2621fd3ebffba20af406b57d4ef4137c",
+      "purpose": "CID-D1 cut tensor, evolution equation and written proof"
+    },
+    {
+      "path": "papers/curvature-information-duality/README.md",
+      "bytes": 6204,
+      "sha256": "199cd8775ef5f3d5c5d4f8ec9dcc725e13dab9c730600d6d3845c64a53766fa2",
+      "purpose": "Existing CID-1/QTH-1 duality and scope"
+    },
+    {
+      "path": "papers/curvature-information-duality/LINEAGE.md",
+      "bytes": 1946,
+      "sha256": "cde78cd3d3eb6a998ef3706aba95bf03dbad5077d435c52c34f2ddadb081ccca",
+      "purpose": "Audited lineage and declared appendix boundary"
+    },
+    {
+      "path": "papers/curvature-information-duality/certificates/cid1_curvature_information_duality.py",
+      "bytes": 24154,
+      "sha256": "e4207d4d77ff71ff4014f05205f15600699fb516dc4ab7721f0fa07b3ba20186",
+      "purpose": "Audited historical information/curvature proof source; not an alternate execution engine"
+    },
+    {
+      "path": "papers/curvature-information-duality/certificates/qth1_quantum_recognition_information.py",
+      "bytes": 28459,
+      "sha256": "f661838ae5c169bb80c51e281e4252f1e3be55d51e2e488c23bc12a93a9bd4f6",
+      "purpose": "Audited historical score tensor and normalization source"
+    },
+    {
+      "path": "papers/curvature-information-duality/certificates/CID1_RESULT.json",
+      "bytes": 5394,
+      "sha256": "f2fb93395131daf86a2075e54f1c1b8cb1bf17a10a2adc5f5a0f802543e1f2fc",
+      "purpose": "Frozen historical duality evidence"
+    },
+    {
+      "path": "papers/curvature-information-duality/certificates/QTH1_RESULT.json",
+      "bytes": 7131,
+      "sha256": "002f4f892c2f048227f97523dbbc508d5884fea64f828109f30ff3b00c49a40c",
+      "purpose": "Frozen historical information tensor evidence"
+    },
+    {
+      "path": "papers/curvature-information-duality/certificates/EXPECTED_CID1.sha256",
+      "bytes": 65,
+      "sha256": "96c07fd952e91c816794c8e13b69302c8240f578c7c5b65488d33ea261f1479c",
+      "purpose": "Historical evidence checksum"
+    },
+    {
+      "path": "papers/curvature-information-duality/certificates/EXPECTED_QTH1.sha256",
+      "bytes": 65,
+      "sha256": "296aaf7e801aef9b4660543cbb2c92bc0d244ed2ad28a45a652eaf913376cfb4",
+      "purpose": "Historical evidence checksum"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md",
+      "bytes": 11107,
+      "sha256": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+      "purpose": "Inherited covariant derivative and curvature identities"
+    },
+    {
+      "path": "papers/emk-recognition-geometry/README.md",
+      "bytes": 15438,
+      "sha256": "bb7559a21a236b6d6bb00e69740453078c88eef73dc184d6b882a9f205cfcfae",
+      "purpose": "Preserved geometry/recognition distinction"
+    },
+    {
+      "path": "papers/generalized-euler-evolution/THEOREM.md",
+      "bytes": 17429,
+      "sha256": "f3d6690e8ecdc49aa03f742a2beb7c8197228a5670c076f46287bae8321ca7d1",
+      "purpose": "Inherited native exponential and finite-core domain contract"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/certificates/emkt2_time_ordered_transport.py",
+      "bytes": 16517,
+      "sha256": "2dc28deb6bfa898568c9c2cb949ae76932d0995106aa28bf9f01a8fae29fd993",
+      "purpose": "Existing order-sensitive transport contract"
+    }
+  ]
+}

@@ -22,6 +22,24 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[CID-D1: covariant cut–information–curvature dynamics](papers/native-loop-concentration/CUT_INFORMATION_DYNAMICS.md)
+constructs the tensor `Tr(P D_aP D_bP)` from a moving native cut and relates
+its antisymmetric part exactly to induced connection curvature. A covariant
+transport equation evolves its information and curvature parts together.
+The rank-one score representation maps it to the earlier QTH tensor with
+factor four; the two-mode information-area equality and minimal-connection
+calibration are derived. Physical generator selection remains open.
+
+[QG-R2: many centres, one observation base](papers/native-loop-concentration/THEOREM.md)
+extends QG-R1 to reference-correct loop composition. Three-loop reconstruction
+requires an orientation record beyond pairwise scalar comparisons. A labelled
+positive-defect record reveals exact concentrating families whose combined
+loop cancels, while explicit area budgets distinguish increasing record count
+from a local concentration obstruction. Together with CID-D1, 22 native algebraic certificates,
+172 checks and 19 negative controls pass, with the full predecessor chain
+replayed. General finite-count and completion deductions have written proofs;
+physical focusing and gravitational source dynamics remain open.
+
 [QG-R1: native relative curvature without a clock](papers/native-relative-curvature/THEOREM.md)
 continues the native phase-current chain with a finite source/reference
 plaquette quotient. Four scalar readings determine the loop curvature
