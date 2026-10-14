@@ -22,6 +22,17 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[CID-D3: native coupling reconstruction](papers/native-coupling-reconstruction/THEOREM.md)
+finds exact action blindness in CID-D2's symmetric protocol: only
+`alpha+2 beta` affects the complete cut/generator/transport history.
+A deformed calibrated control makes the information and curvature forces
+independent. Initial-rest covariant cut acceleration then determines their
+coupling ratio under arbitrary regular local reparameterization. The
+factorized force Gram determinant and a second-preparation residual supply
+an exact observation design and prediction check. 25 native certificates,
+91 checks and 16 controls pass with the complete predecessor chain replayed.
+Physical action selection and noisy measurement reconstruction remain open.
+
 [CID-D2: coupled cut and transport feedback](papers/native-cut-transport-feedback/THEOREM.md)
 selects a dimensionless positive information/induced-curvature functional
 and derives its explicit variation. A native constrained action closes the

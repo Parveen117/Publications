@@ -163,7 +163,7 @@ In the rank-one two-mode sector, `C_ab=2 iota Omega_ab P`, so (6) becomes
 \[
 \boxed{\mathcal E=g_{\lambda\lambda}
  +\alpha\sum_a w_a g_{aa}
- +2\beta\sum_{a<b}h_{ab}\Omega_{ab}^{,2}.}\tag{7}
+ +2\beta\sum_{a<b}h_{ab}\Omega_{ab}^{2}.}\tag{7}
 \]
 
 This is a conserved combination of **transport information, directional

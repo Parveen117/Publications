@@ -87,8 +87,8 @@
     },
     {
       "path": "papers/native-cut-transport-feedback/THEOREM.md",
-      "bytes": 13357,
-      "sha256": "4e023f2bb1df5e20e0d0395b25aae350dcb1e2ea4229a1d23b9d3deb54544632",
+      "bytes": 13356,
+      "sha256": "47ea64afdca379cdc66c6655d4214531c89a63a8586d5a2564b11c3bb5479ee6",
       "purpose": "CID-D2 derivation, native implementation and coverage contract"
     },
     {

@@ -1,5 +1,15 @@
 # Publications
 
+Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)
+proves that the symmetric helical protocol sees only `alpha+2 beta`, even
+with full transport memory. A calibrated control deformation removes this
+ambiguity. Two initial-rest covariant acceleration readings recover the
+dimensionless ratio `beta/alpha` independently of regular operation-speed
+changes. The exact force Gram determinant identifies blind preparations,
+and a separate preparation tests the inferred ratio without refitting.
+25 native certificates, 91 checks and 16 negative controls pass; all
+examples are synthetic exact data and the full predecessor chain replays.
+
 Latest coupled dynamics: [CID-D2 — cut and transport evolve together](papers/native-cut-transport-feedback/README.md)
 derives an explicit information–curvature force from a selected native
 action. The cut and its generator exchange a conserved total of transport
