@@ -1,5 +1,15 @@
 # Publications
 
+Latest upload certification: [Native Phase Memory and Angular Current](papers/native-phase-observation-certification/README.md)
+now have 60 native algebraic certificates, 60 serialized replays, 373 exact
+checks and 25 negative controls. All six uploaded source packets rerun
+successfully, and all five separately uploaded PDFs match their source
+packets. The unchanged native engine runs under Node 24.19.0, with Python
+3.12 orchestration. [Claim coverage](papers/native-phase-observation-certification/CLAIM_COVERAGE.md)
+separates executable algebra from written general path/integration proofs
+and physical-adapter obligations. A reproducible read-only command and CI
+workflow accompany the frozen certificate.
+
 Latest mathematical continuation: [GE4 — recover minimal observer memory](papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md)
 reconstructs a probe's smallest linear memory model from native response
 moments. A known native generator ceiling makes three derivatives sufficient

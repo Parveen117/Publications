@@ -1,0 +1,125 @@
+{
+  "schema": "native-phase-observation-source-pins.v1",
+  "source_commit": "611acc114db445496de2b1101c22049fc5a95cfc",
+  "native_engine": {
+    "repository": "https://github.com/Parveen117/Recognition-Kernel-Framework",
+    "commit": "e8e3089745bf7dc0532d01c62a5f660f5658c6f0",
+    "upstream_directory": "operator_foundation/core",
+    "embedded_packet": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+    "embedded_directory": "Native_Phase_Word_Reconstruction/parent/parent/parent/parent/baseline/native/core",
+    "files": {
+      "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+      "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+    }
+  },
+  "records": [
+    {
+      "path": "Native_Phase_Memory_Development_Draft.tex",
+      "bytes": 15920,
+      "sha256": "e969514cf170fc96848d9f13d4748a0cee3cd2e52bea4cfe21fad131adbddb6e",
+      "purpose": "uploaded phase-memory manuscript"
+    },
+    {
+      "path": "Native_Angular_Current_Development_Draft.tex",
+      "bytes": 17949,
+      "sha256": "33ed241d8200ec6c788e0ae13497ab5662803592b0a2959b02576eaafbbddfd0",
+      "purpose": "uploaded angular-current manuscript"
+    },
+    {
+      "path": "papers/Clock_Free_Native_Lattice_Source.zip",
+      "bytes": 591965,
+      "sha256": "62837192eba35c88f29f66692490d105e70079ecb736678dc05a301e8335c59e",
+      "purpose": "uploaded reproducible source packet"
+    },
+    {
+      "path": "papers/Clock_Free_Cut_Quantisation_Source.zip",
+      "bytes": 1036640,
+      "sha256": "4f5c4485fa9888d1f65235f0fb71ac58c0f6640b98d1391141152e98e47fb579",
+      "purpose": "uploaded reproducible source packet"
+    },
+    {
+      "path": "papers/Clock_Free_Cut_Quantisation.pdf",
+      "bytes": 353441,
+      "sha256": "8bb3cb07d41fb0d51e8806fea4e6744389d71fc9de39b28559b9c820ab5d1319",
+      "purpose": "uploaded publication PDF; checked against packet"
+    },
+    {
+      "path": "papers/Clock_Free_Physics_Cubits_Source.zip",
+      "bytes": 1422014,
+      "sha256": "cde1ab214857390d26bb934b772b44c2a9bbd4e45c793126b13e592fa1dc93e1",
+      "purpose": "uploaded reproducible source packet"
+    },
+    {
+      "path": "papers/Clock_Free_Physics_Cubits.pdf",
+      "bytes": 352177,
+      "sha256": "f90c1b53ab3b680bc137f7c8ee595a3b2bbbe65fb90574c6e6cb0c73e87fd555",
+      "purpose": "uploaded publication PDF; checked against packet"
+    },
+    {
+      "path": "papers/Clock_Free_Scale_Compass_Source.zip",
+      "bytes": 1815263,
+      "sha256": "7857bf029f702af495926fe1bcc209e83f8411e4a176df1545db858f85ef8a53",
+      "purpose": "uploaded reproducible source packet"
+    },
+    {
+      "path": "papers/Clock_Free_Scale_Compass.pdf",
+      "bytes": 361356,
+      "sha256": "a3901bd2e7dfd0b50b90735b4810699628db8210a10cef01e90806fe513cee0c",
+      "purpose": "uploaded publication PDF; checked against packet"
+    },
+    {
+      "path": "papers/Clock_Relation_Reconstruction_Source.zip",
+      "bytes": 2220714,
+      "sha256": "eac0abaa58889998897a567c14fd7f411b348c2ddc73f1dbb23042844f380bbb",
+      "purpose": "uploaded reproducible source packet"
+    },
+    {
+      "path": "papers/Clock_Relation_Reconstruction.pdf",
+      "bytes": 365769,
+      "sha256": "34ab956ef79882fea3142f806609da54f6515fa4771c9e21e8766adf9b01a26f",
+      "purpose": "uploaded publication PDF; checked against packet"
+    },
+    {
+      "path": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+      "bytes": 2627956,
+      "sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+      "purpose": "uploaded reproducible source packet"
+    },
+    {
+      "path": "papers/Native_Phase_Word_Reconstruction.pdf",
+      "bytes": 345313,
+      "sha256": "bbae15768bfd31648783828191a3f0ae04d5245ad46efa269891180c48345a00",
+      "purpose": "uploaded publication PDF; checked against packet"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/verify.py",
+      "bytes": 7292,
+      "sha256": "c1b5269a0d557e2517e9a4b5a2d6c8ca2cf7c4f4283daeb8dfdf1478a737117c",
+      "purpose": "Python 3.12 orchestration"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/verify.cjs",
+      "bytes": 25734,
+      "sha256": "25156662b9f8e99f4b7b2bded55c00d2b8e4b6693b03bcd96c61f86c2a95987b",
+      "purpose": "native certificate and finite-control construction"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/CLAIM_COVERAGE.md",
+      "bytes": 13052,
+      "sha256": "7e492bf97b2362db0b940bab1fec2b51d04e41d4802b7ddf4140700985893be3",
+      "purpose": "written proofs, hypotheses and executable coverage"
+    },
+    {
+      "path": "papers/generalized-euler-evolution/GE2_CLOCK_FREE_RECOGNITION_GENERATOR.md",
+      "bytes": 15403,
+      "sha256": "4db33dbc2c9efa7841ff27a44faacc699ecda5ed2ae4cb09a39556c6047c1d34",
+      "purpose": "existing native phase and scalar integration dependency"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md",
+      "bytes": 11107,
+      "sha256": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+      "purpose": "existing full connection-curvature and flatness dependency"
+    }
+  ]
+}
