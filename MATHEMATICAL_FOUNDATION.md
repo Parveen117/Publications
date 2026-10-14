@@ -1,6 +1,6 @@
 # Mathematical foundation and development route
 
-Author: Monty Dabas. Updated: 3 October 2026.
+Author: Monty Dabas. Updated: 14 October 2026.
 
 The common mathematical foundation is **Morphic operator algebra and its recognition/cut calculus**. In standard subject terms this crosses associative noncommutative algebra, graded algebra, representation/module theory, Lie derivations, cocycle/path memory and noncommutative differential geometry. Completion adds functional analysis under stated norms. UGD adds a structured numeral and conserved-ledger layer. These are connected layers, not competing replacements for one another.
 
@@ -21,6 +21,21 @@ The common mathematical foundation is **Morphic operator algebra and its recogni
 The 2 October audit read the EMK/UGD publication guide and lineage, generalized-Euler dock, current operator contracts, Morphic status ledgers and selected derivation/clock/geometry source sections. It did not re-certify every manuscript claim. The collected volume records its own historical source manifest; it does not contain every later nested Morphic manuscript.
 
 ## Current mathematical continuation
+
+[QG-R1: native relative curvature without a clock](papers/native-relative-curvature/THEOREM.md)
+continues the native phase-current chain with a finite source/reference
+plaquette quotient. Four scalar readings determine the loop curvature
+contrast divided by relative-edge Gram area. Exact vertex-frame covariance,
+the full variable-field mixed jet and a third-channel curl reconstruction
+reuse EMK-C1 and the existing Gram-area method. A return-defect density
+adds an information-concentration criterion and conditional obstruction to
+smooth continuation, with chart poles and direction collapse distinguished.
+Forty-two native algebraic certificates, 327 checks and 21 negative controls pass; the previous phase
+certificate and all six uploaded packets are replayed unchanged. The C2
+limit has a written proof, while physical geometry, source realization and
+gravitational dynamics remain separate obligations. The
+[development route](papers/native-relative-curvature/README.md#quantum-gravity-development-route)
+records the sequence from the minimal clock-free lattice to this observable.
 
 [GE4: minimal observer-memory recovery](papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md)
 constructs the smallest positive-pairing linear realization of a probe's

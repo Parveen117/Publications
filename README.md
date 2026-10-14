@@ -1,5 +1,19 @@
 # Publications
 
+Latest quantum-gravity development: [QG-R1 — native relative curvature without a clock](papers/native-relative-curvature/README.md)
+constructs a dimensionless source/reference loop-to-area quotient from four
+native scalar readings. Independent frames at the four vertices cancel
+exactly; the variable-field limit includes derivative curvature and a
+recoverable third-channel curl. A bounded return-defect density now gives
+a concentration obstruction to smooth continuation under nondegenerate
+comparison, with separate controls for chart poles and collapsing directions.
+The finite curvature benchmark is 324/481; its return-defect density is 324/625.
+42 native certificates, 42 replays, 327 checks and 21 negative controls
+pass on Python 3.12 orchestration with the unchanged Node 24.19.0 engine;
+the preceding phase certificate and six source packets also replay.
+The [proof](papers/native-relative-curvature/THEOREM.md) specifies the
+nondegenerate chart, reference data and remaining gravitational-law target.
+
 Latest upload certification: [Native Phase Memory and Angular Current](papers/native-phase-observation-certification/README.md)
 now have 60 native algebraic certificates, 60 serialized replays, 373 exact
 checks and 25 negative controls. All six uploaded source packets rerun

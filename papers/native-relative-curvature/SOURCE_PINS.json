@@ -1,0 +1,119 @@
+{
+  "schema": "native-relative-curvature-source-pins.v1",
+  "source_commit": "93ac80c7f83b7b27e790baae450152b660d3281d",
+  "native_engine": {
+    "repository": "https://github.com/Parveen117/Recognition-Kernel-Framework",
+    "commit": "e8e3089745bf7dc0532d01c62a5f660f5658c6f0",
+    "upstream_directory": "operator_foundation/core",
+    "embedded_packet": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+    "embedded_directory": "Native_Phase_Word_Reconstruction/parent/parent/parent/parent/baseline/native/core",
+    "files": {
+      "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+      "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+    }
+  },
+  "records": [
+    {
+      "path": "papers/native-phase-observation-certification/verify.py",
+      "bytes": 7292,
+      "sha256": "c1b5269a0d557e2517e9a4b5a2d6c8ca2cf7c4f4283daeb8dfdf1478a737117c",
+      "purpose": "Pinned predecessor certification and proof scope"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/verify.cjs",
+      "bytes": 25734,
+      "sha256": "25156662b9f8e99f4b7b2bded55c00d2b8e4b6693b03bcd96c61f86c2a95987b",
+      "purpose": "Pinned predecessor certification and proof scope"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/SOURCE_PINS.json",
+      "bytes": 5198,
+      "sha256": "6075a17fb407ceaaf542bc94a8790b70a3a559228a3ab0d36baa1142e265847f",
+      "purpose": "Pinned predecessor certification and proof scope"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/CERTIFICATE.json",
+      "bytes": 1602935,
+      "sha256": "54f95cfd6b0e18f22e336aed045e4b6931c29c77cb8be1faaa8f5f3ed0a544f5",
+      "purpose": "Pinned predecessor certification and proof scope"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/EXPECTED.sha256",
+      "bytes": 83,
+      "sha256": "624cf1dd3603b1bcc65e6e9feb9bad6dc1e962c242bc4d62cb994f332fe06738",
+      "purpose": "Pinned predecessor certification and proof scope"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/CLAIM_COVERAGE.md",
+      "bytes": 13052,
+      "sha256": "7e492bf97b2362db0b940bab1fec2b51d04e41d4802b7ddf4140700985893be3",
+      "purpose": "Pinned predecessor certification and proof scope"
+    },
+    {
+      "path": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+      "bytes": 2627956,
+      "sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+      "purpose": "Unchanged native engine and phase-word source packet"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md",
+      "bytes": 11107,
+      "sha256": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+      "purpose": "Existing curvature, covariance and flatness theory"
+    },
+    {
+      "path": "papers/native-thermodynamic-curvature/THEOREM.md",
+      "bytes": 22913,
+      "sha256": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29",
+      "purpose": "Native cyclic scalar part and pairing"
+    },
+    {
+      "path": "papers/yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md",
+      "bytes": 16825,
+      "sha256": "d55e967839c744259dc483decb668ae49f03d85dbf266185f4083f1e8c8fc601",
+      "purpose": "Existing Gram and curvature-area methodology"
+    },
+    {
+      "path": "papers/emk-recognition-geometry/README.md",
+      "bytes": 15438,
+      "sha256": "bb7559a21a236b6d6bb00e69740453078c88eef73dc184d6b882a9f205cfcfae",
+      "purpose": "Preserved distinction between recognition and metric curvature"
+    },
+    {
+      "path": "papers/native-relative-curvature/THEOREM.md",
+      "bytes": 24180,
+      "sha256": "05520b64e0110a370b3f5e955513fddf5a511bd41fc1125be95ab194c12bc1ea",
+      "purpose": "QG-R1 written proof and native implementation"
+    },
+    {
+      "path": "papers/native-relative-curvature/verify.py",
+      "bytes": 4233,
+      "sha256": "590b8b8417980cd101385376933418e3a6b51d8755b801d0cc07c5b3f42ec1b8",
+      "purpose": "QG-R1 written proof and native implementation"
+    },
+    {
+      "path": "papers/native-relative-curvature/verify.cjs",
+      "bytes": 29361,
+      "sha256": "38f3ae5febf0ec8a2c97229743145a8ae74dae59890ef6b60244732dc2f8fa4b",
+      "purpose": "QG-R1 written proof and native implementation"
+    },
+    {
+      "path": "papers/information-invariance/README.md",
+      "bytes": 1694,
+      "sha256": "99c0eb282127e4fec5b3a3e5e308d7364c03f533cdfc38c75cb7f462b4718580",
+      "purpose": "Audited prior information definition and preserved physical claim boundaries"
+    },
+    {
+      "path": "papers/information-invariance/LEDGER.md",
+      "bytes": 8559,
+      "sha256": "508ed7840582789bb0076e2e9d2fa03eb5a159d0bcb669cfb2929c827463bd79",
+      "purpose": "Audited prior information definition and preserved physical claim boundaries"
+    },
+    {
+      "path": "papers/information-invariance/paper/information_invariance_v2.tex",
+      "bytes": 23225,
+      "sha256": "d546670059dbf69e8d9158ed035dbb4ef32567fa88f799dd3dc54a7692f60c74",
+      "purpose": "Audited prior information definition and preserved physical claim boundaries"
+    }
+  ]
+}
