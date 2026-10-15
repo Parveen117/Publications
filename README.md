@@ -1,18 +1,20 @@
 # Publications
 
-Latest quantum-gravity stage: [GCP-1 — quantum geometry controls propagation](papers/native-geometry-controlled-propagation/README.md).
-The geometry observable enters the derivative coefficient of one joint matter–geometry law.
-Its curved branch coframe, connection and operator curvature match exactly; the model has
-unitary evolution, finite propagation and reciprocal kinetic coupling. An exact variance
-obstruction explains when replacing quantum geometry by its mean loses propagation information.
-115 exact checks, 6 native word certificates/replays and 9 controls pass. The geometry
-profiles and mixing law remain selected; deriving their gravitational action and constraints
-is the next proof target. [Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
+Latest quantum-gravity stage: [AGD-1 — geometry dynamics from the native cut action](papers/native-action-geometry-dynamics/README.md).
+The inherited cut action and an explicit periodic quantization contract determine an
+infinite geometry generator. The same cut supplies the matter lapse observable.
+Written proofs establish joint self-adjointness, finite spatial propagation, a matter
+source for geometry momentum, and a finite-section error bound. 92 exact checks,
+8 native word certificates/replays and 8 negative controls pass. A global clock
+constraint is solved; local gravitational constraint closure remains open, with explicit
+parity and local-commutator obstructions. [Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
 
-Preceding bridge: [CCL-1 — common cone and rest invariant](papers/native-common-cone-limit/README.md)
-proves the shared-refinement propagation limit and the local-coupling cone bound.
-The integrated quantum-geometry chain is replayable with
-`python3 scripts/replay_quantum_geometry.py` on Python 3.12.
+Previous stage: [GCP-1 — quantum geometry controls propagation](papers/native-geometry-controlled-propagation/README.md)
+constructs the curved matter–metric interface and identifies the variance lost by mean geometry.
+[CCL-1 — common cone and rest invariant](papers/native-common-cone-limit/README.md)
+supplies the shared-refinement propagation limit. All 11 stages of the integrated
+quantum-geometry chain replay with `python3 scripts/replay_quantum_geometry.py`
+on Python 3.12; CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)
 proves that the symmetric helical protocol sees only `alpha+2 beta`, even

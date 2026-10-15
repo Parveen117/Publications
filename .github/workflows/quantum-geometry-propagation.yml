@@ -38,5 +38,7 @@ jobs:
         with:
           node-version: '24.19.0'
           package-manager-cache: false
+      - name: Replay inherited native cut action
+        run: python3 papers/native-cut-transport-feedback/verify.py --check
       - name: Replay source-bound quantum geometry chain
         run: python3 scripts/replay_quantum_geometry.py

@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 15 October 2026. Current stage: **GCP-1**.
+Updated 15 October 2026. Current stage: **AGD-1**.
 
 ## Working agreement
 
@@ -10,9 +10,9 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
-[GCP-1](papers/native-geometry-controlled-propagation/README.md) places an independent quantum geometry observable in matter's derivative coefficient. A bounded, genuinely curved Lorentzian branch family supplies the same propagation cone, connection and operator curvature. A joint linear law gives reciprocal matter–geometry coupling. Exact results identify the geometry variance lost by replacing the joint model with a single mean metric, and the invariant subspace condition under which that replacement becomes exact.
+[AGD-1](papers/native-action-geometry-dynamics/README.md) reduces the existing CID-D2 cut action to its consistent real-circle sector. An explicitly selected periodic canonical quantization determines an infinite geometry generator. The same cut overlap supplies the GCP lapse observable. Written proofs establish full joint self-adjointness, finite spatial propagation, a derived matter source for geometry momentum, and a factorial finite-section error bound.
 
-This closes the **construction of a causal quantum geometry-dependent propagation model**. The geometry profiles and mixing law remain selected. It does not yet close gravitational dynamical selection, refoliation constraints or the physical interacting continuum.
+This closes the **action-based geometry-generator construction under a declared quantization contract**. The action choice, quantum representation, lapse profile and coframe dictionary remain explicit inputs. A global parametrization constraint is solved, while concrete parity and local-commutator obstructions prevent a claim of local gravitational constraint closure. This is not yet physical quantum-gravity completion.
 
 ## Lineage to reuse
 
@@ -26,26 +26,27 @@ This closes the **construction of a causal quantum geometry-dependent propagatio
 | [N4H-1](papers/native-four-dimensional-hinge/README.md) | Actual four-dimensional Euclidean hinge metrics and lifted curvature | Lorentzian quantum dynamics not obtained by relabelling |
 | [MGH-1](papers/native-matter-geometry-holonomy/README.md) | Independent metric register, geometric phase and exact quantum witness | Phase interaction and metric mixing selected |
 | [CCL-1](papers/native-common-cone-limit/README.md) | Shared-refinement cone, local mixing and a conditional curved symbol | Shared scaling and physical dictionary explicit |
-| [GCP-1](papers/native-geometry-controlled-propagation/README.md) | Geometry controls derivative, connection and curvature; reciprocal coupling and exact reduction obstruction | Geometry action and constraints remain open |
+| [GCP-1](papers/native-geometry-controlled-propagation/README.md) | Geometry controls derivative, connection and curvature; reciprocal coupling and exact reduction obstruction | Geometry mixing and profiles selected |
+| [AGD-1](papers/native-action-geometry-dynamics/README.md) | Inherited cut action fixes an infinite geometry generator under an explicit quantization contract; joint existence, source law and finite-section bound | Global circle geometry; local gravitational constraints, physical action selection and lapse profile remain open |
 
 The earlier classical MG/SM action results are pinned and included as source snapshots in CCL-1. Reuse their existing classical coframe/source variation instead of proposing it as new. They do not supply the missing positive interacting quantum theory.
 
 ## Next proof target
 
-**Derive a compatible geometry generator from the source/action and close its constraints while retaining the GCP matter–metric interface.**
+**Derive a local dynamical coframe/source action and determine whether its constraints account for the residual `g R N f'` in AGD-1's naive local algebra.**
 
-The next packet should specify the following before claiming a dynamical completion:
+The inherited geometry generator is now available. The next packet must address the actual missing local structure:
 
-1. A geometry carrier and a source functional/action that determine the geometry transition law, including its free connection and boundary data.
-2. One joint state-independent quantum operation or generator, with a declared physical constraint subspace and proof that the dynamics preserves it. Auxiliary commuting constraints must not be called the gravitational constraint algebra.
-3. A controlled regime in which the geometry readout recovers the existing classical field equations, with a quantified error. The two-metric demo alone is not this limit.
-4. A clear account of locality and common geometry for all tested matter sectors; retain the return term when eliminating quantum geometry.
+1. Specify local geometry fields and their canonical data, rather than treating the single global circle coordinate as all gravitational degrees of freedom.
+2. Derive their transformation laws and constraints from a declared action. Show that the coupled dynamics preserves those constraints; neither the solved global clock constraint nor the uncoupled parity symmetry supplies this result.
+3. Retain the GCP matter–metric interface, the geometry source response and common spatial cone, or state precisely why their forms must change.
+4. Obtain a controlled classical field limit with an error estimate. AGD's homogeneous Fourier-truncation bound controls computation, not the gravitational classical limit.
 
 A complete physical claim additionally requires the intended 3+1 interacting limit, physically meaningful observables, stability/positivity on the physical sector and calibrated predictions. Work on one concrete missing theorem at a time; do not replace these gates by a completion percentage.
 
 ## Replay status
 
-At this update all eight newly integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) replayed unchanged. CCL-1's 69 exact fixture checks and 3 controls pass. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. CI replays the source-bound chain using the repository runner below.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. The repository runner replays all 11 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py
