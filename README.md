@@ -1,5 +1,17 @@
 # Publications
 
+Latest signalling research: [GSA-1 — conditional gravity information signalling](papers/native-gravity-signalling-audit/README.md).
+The earlier EGR/QGC nonlinear relaxation now has an explicit remote-steering
+test: under an additional branch-sensitive physical extension, two sender
+measurement bases yield receiver probabilities 4/5 and 9/10 at the specified
+mathematical count. The unconditional contrast is 1/10. This is not a result
+of the admitted affine model: local operations and retained local histories
+give zero remote contrast. MGH's joint interaction gives a separate 16/25
+reference signal but no spatial speed. Physical implementation, state-law
+consistency and a matched light-arrival comparison remain open. The packet
+passes 150 exact checks, 3 native proofs/replays and 7 controls; it does not
+claim physical faster-than-light transmission.
+
 Latest cut-first development: [CHD-1/2 — cut histories and minimal binary synthesis](papers/native-cut-generated-history/README.md).
 Scalar uncut observability is an explicit contract; a nontrivial cut generates
 a binary algebra. Successive projective cut interactions construct a coherent
@@ -76,7 +88,7 @@ coupled reflection-sector ratio and the calibrated logarithmic diagonal criterio
 explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
 supplies the curved matter–metric interface and
 [CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
-All 22 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+All 23 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
 CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)
