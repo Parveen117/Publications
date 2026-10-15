@@ -1,10 +1,10 @@
 {
   "protocol": "HCM1_SOURCE_PINS_V1",
   "files": {
-    "README.md": "f320d8f7373a881cdcc351cb14ef829642de915e2f4d9a3364b3f472cef15d29",
+    "README.md": "3042c00106bcc61894c3b7b49ae07d351281403280a994aea4e93e4c4e22936a",
     "THEOREM.md": "ad9e22824c5052c7a25a8b30b6039d845871cca872f0f3487c380a1726e1aa04",
-    "SOURCE_MAP.md": "6b1bdc07d08767d7ff310c06e0f222156abe7050cf8a61749c21cab66c67374b",
-    "verify.cjs": "dc9cf27bb6993950d793a4fe4306e9f66b3a661425ca3a4b94e830984766a295",
+    "SOURCE_MAP.md": "7684e28bc74e9a506fc31c56265a3a3050e859449830730f4f044aa7408c83a5",
+    "verify.cjs": "92c97c85c41f07b4d6c5a140e34fffd4090544958ae49f50d4fa3861e1b98a1f",
     "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
     "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
     "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
@@ -17,6 +17,11 @@
     "../yang-mills-certified-benchmark/certificates/ym50_native_reference.py": "8f29d2e304977c7b9824285f81756b9be1b8f1497817ce6b681c015969cf7f49",
     "../yang-mills-certified-benchmark/certificates/ym51_heat_selection.py": "8e993c39763e826cf1847703e023697bf0f99d6036e718f29c4677142719a846",
     "../yang-mills-certified-benchmark/certificates/ym54_response_protocol.py": "4882adc8f63f4cb5e7b21f28c73a3e0a3d75d85c72b8f2ba71c8a0c53d30d1b6",
-    "../yang-mills-certified-benchmark/certificates/YM54_RESULT.json": "f4f704ccc77f9505c5adb8d9bf3b0fc9ee9aecbb341b0ff749d377a3c9c9a1c0"
+    "../yang-mills-certified-benchmark/certificates/YM54_RESULT.json": "f4f704ccc77f9505c5adb8d9bf3b0fc9ee9aecbb341b0ff749d377a3c9c9a1c0",
+    "PHASE_RECORD.md": "de23fe39a2d55f8a89b5e063a720c31f631db1f40db9a6661cc4a12a155ab1ba",
+    "../emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md": "325a5d025874ac678d38ad7e20ca0cc1ddc68b9f9d267b93333829883cdf1932",
+    "../emk-ugd-algebra/certificates/ugd1_numerals.py": "23430ebc060a9a8dd1aab670392bcb82d46dd148c6a643bda87d61a4e206dc85",
+    "../emk-ugd-algebra/certificates/emk2_native_carrier.py": "49d8548e7e3ccc2ce77bdc0f5a317b737f3bd37dc4d9e1f90c9f87852c37d1c0",
+    "../native-phase-observation-certification/CLAIM_COVERAGE.md": "7e492bf97b2362db0b940bab1fec2b51d04e41d4802b7ddf4140700985893be3"
   }
 }

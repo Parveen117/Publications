@@ -1,6 +1,6 @@
 # Yang–Mills certified programme
 
-## Observer application: HCM-1
+## Observer application: HCM-1/2
 
 [HCM-1](../native-heat-observer-memory/README.md) applies the shared cut-record
 closure machinery to YM54's actual thermo-response-derived free heat generator.
@@ -9,7 +9,9 @@ strictly positive two-time defect with leading coefficient 1/2916. One extra
 channel closes its evolution; eliminating it gives memory kernel
 exp(-t/18)/2916 and a controlled memory-truncation bound. The source tensor is
 reconstructed and the coefficient generator independently differentiated.
-This evaluates a free single-site observer, not YM49's full interacting row.
+HCM-2 adds its conjugate-coupled complex response law and native EMK spectral
+sectors, with a reversible phase/scale/residual record and explicit UGD-interface
+boundaries. This evaluates a free single-site observer, not YM49's full interacting row.
 
 ## Current continuation: YM-55
 

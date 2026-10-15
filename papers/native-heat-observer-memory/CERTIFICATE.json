@@ -1,7 +1,7 @@
 {
   "protocol": "HCM1_SOURCE_HEAT_OBSERVER_MEMORY_V1",
   "status": "PASS_SOURCE_HEAT_OBSERVER_MEMORY",
-  "source_pins_sha256": "53ad64bf8069a955c7b09cfb6c886aeea0ccca18a84e69fe4e800b72eafa345b",
+  "source_pins_sha256": "04dbf04cae45550613233d600039cdb7f413f3a61c09d92f5ff9bcb184c2b9a7",
   "presentations": [
     {
       "name": "heat_phase_variables",
@@ -53,6 +53,500 @@
         "termination": "strict degree-lex decrease",
         "criticalPairs": 0,
         "resolutions": [],
+        "open": []
+      }
+    },
+    {
+      "name": "EMK_source_reflection",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "r",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "k",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "rr",
+            "lhs": [
+              "r",
+              "r"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "-1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Native circular generator"
+          },
+          {
+            "id": "kk",
+            "lhs": [
+              "k",
+              "k"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Native reflection"
+          },
+          {
+            "id": "kr",
+            "lhs": [
+              "k",
+              "r"
+            ],
+            "rhs": [
+              [
+                [
+                  "r",
+                  "k"
+                ],
+                [
+                  "-1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Native anti-commutation"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 4,
+        "resolutions": [
+          {
+            "word": [
+              "r",
+              "r",
+              "r"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              0,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "k",
+              "r",
+              "r"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              2,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r",
+                      "k",
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "r",
+                    "k",
+                    "r"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "kr",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "r",
+                    "r",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "rr",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "k",
+              "k",
+              "k"
+            ],
+            "first": [
+              1,
+              0
+            ],
+            "second": [
+              1,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "k",
+              "k",
+              "r"
+            ],
+            "first": [
+              1,
+              0
+            ],
+            "second": [
+              2,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "r",
+                      "k"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "r",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "kr",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "r",
+                    "k",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kk",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
         "open": []
       }
     }
@@ -182,6 +676,193 @@
               "0"
             ],
             "rule": "commute_1_0",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:source_reflection_square",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "k",
+              "k"
+            ],
+            [
+              "49",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "k",
+              "k"
+            ],
+            [
+              "168",
+              "0"
+            ]
+          ],
+          [
+            [
+              "k",
+              "r",
+              "k"
+            ],
+            [
+              "168",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "k",
+              "r",
+              "k"
+            ],
+            [
+              "576",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "625",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [],
+              [
+                "-625",
+                "0"
+              ]
+            ],
+            [
+              [
+                "k",
+                "k"
+              ],
+              [
+                "49",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "k",
+                "k"
+              ],
+              [
+                "168",
+                "0"
+              ]
+            ],
+            [
+              [
+                "k",
+                "r",
+                "k"
+              ],
+              [
+                "168",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "k",
+                "r",
+                "k"
+              ],
+              [
+                "576",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "r",
+              "k",
+              "r",
+              "k"
+            ],
+            "coefficient": [
+              "576",
+              "0"
+            ],
+            "rule": "kr",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "k",
+              "k"
+            ],
+            "coefficient": [
+              "-576",
+              "0"
+            ],
+            "rule": "rr",
+            "position": 0
+          },
+          {
+            "word": [
+              "k",
+              "r",
+              "k"
+            ],
+            "coefficient": [
+              "168",
+              "0"
+            ],
+            "rule": "kr",
+            "position": 0
+          },
+          {
+            "word": [
+              "k",
+              "k"
+            ],
+            "coefficient": [
+              "625",
+              "0"
+            ],
+            "rule": "kk",
             "position": 0
           }
         ],
@@ -455,6 +1136,478 @@
       "passed": true
     },
     {
+      "name": "phase:exact_EMK_generator",
+      "passed": true
+    },
+    {
+      "name": "phase:reflection",
+      "passed": true
+    },
+    {
+      "name": "phase:complementary_spectral_sectors",
+      "passed": true
+    },
+    {
+      "name": "phase:slow_sector_rate",
+      "passed": true
+    },
+    {
+      "name": "phase:fast_sector_rate",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:0",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:0",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:1",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:1",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:1",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:1",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:1",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:1",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:2",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:2",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:2",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:2",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:2",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:2",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:3",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:3",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:3",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:3",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:3",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:3",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:4",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:4",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:4",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:4",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:4",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:4",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:5",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:5",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:5",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:5",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:5",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:5",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:6",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:6",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:6",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:6",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:6",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:6",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:7",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:7",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:7",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:7",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:7",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:7",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:8",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:8",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:8",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:8",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:8",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:8",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:9",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:9",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:9",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:9",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:9",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:9",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:10",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:10",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:10",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:10",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:10",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:10",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:11",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:11",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:11",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:11",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:11",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:11",
+      "passed": true
+    },
+    {
+      "name": "record:zero_has_no_phase",
+      "passed": true
+    },
+    {
+      "name": "record:scale_boundary_half_open",
+      "passed": true
+    },
+    {
+      "name": "record:equal_discrete_labels",
+      "passed": true
+    },
+    {
+      "name": "phase:nonzero_initial_angular_velocity",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:0:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:0:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:0:0",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:0:0",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:0:3",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:0:3",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:1:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:1:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:1:0",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:1:0",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:1:3",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:1:3",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:2:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:2:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:2:0",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:2:0",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:2:3",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:2:3",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:3:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:3:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:3:0",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:3:0",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:3:3",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:3:3",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:0:0",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:0:1",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:0:2",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:0:3",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:1:0",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:1:1",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:1:2",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:1:3",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:2:0",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:2:1",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:2:2",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:2:3",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:3:0",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:3:1",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:3:2",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:3:3",
+      "passed": true
+    },
+    {
+      "name": "phase:source_keeps_zero",
+      "passed": true
+    },
+    {
       "name": "heat_phase_variables:confluence",
       "passed": true
     },
@@ -464,6 +1617,18 @@
     },
     {
       "name": "words:exact_two_time_variance:replay",
+      "passed": true
+    },
+    {
+      "name": "EMK_source:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:source_reflection_square",
+      "passed": true
+    },
+    {
+      "name": "words:source_reflection_square:replay",
       "passed": true
     }
   ],
@@ -502,6 +1667,50 @@
     },
     {
       "name": "controls:zero_memory_tail",
+      "rejected": true
+    },
+    {
+      "name": "phase:single_complex_scalar_generator",
+      "rejected": true
+    },
+    {
+      "name": "record:labels_recover_residual",
+      "rejected": true
+    },
+    {
+      "name": "record:visible_reading_recovers_hidden_phase",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:1:-2",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:1:0",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:1:3",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:3:-2",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:3:0",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:3:3",
+      "rejected": true
+    },
+    {
+      "name": "UGD_interface:numeral_product_equals_phase_composition",
+      "rejected": true
+    },
+    {
+      "name": "UGD_interface:neutral_digit_is_complex_zero",
       "rejected": true
     },
     {
@@ -711,6 +1920,258 @@
       "decay": "1/18",
       "tail_prefactor": "1/162"
     },
+    "phase_law": {
+      "alpha": [
+        "-65/1296",
+        "0"
+      ],
+      "beta": [
+        "7/1296",
+        "1/54"
+      ],
+      "reflection": [
+        [
+          [
+            "7/25",
+            "0"
+          ],
+          [
+            "24/25",
+            "0"
+          ]
+        ],
+        [
+          [
+            "24/25",
+            "0"
+          ],
+          [
+            "-7/25",
+            "0"
+          ]
+        ]
+      ],
+      "slow_projector": [
+        [
+          [
+            "16/25",
+            "0"
+          ],
+          [
+            "12/25",
+            "0"
+          ]
+        ],
+        [
+          [
+            "12/25",
+            "0"
+          ],
+          [
+            "9/25",
+            "0"
+          ]
+        ]
+      ],
+      "fast_projector": [
+        [
+          [
+            "9/25",
+            "0"
+          ],
+          [
+            "-12/25",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-12/25",
+            "0"
+          ],
+          [
+            "16/25",
+            "0"
+          ]
+        ]
+      ]
+    },
+    "phase_records": [
+      {
+        "input": [
+          "0",
+          "0"
+        ],
+        "record": {
+          "zero": true
+        }
+      },
+      {
+        "input": [
+          "1",
+          "0"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": 0,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      {
+        "input": [
+          "0",
+          "1"
+        ],
+        "record": {
+          "zero": false,
+          "a": 1,
+          "n": 0,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      {
+        "input": [
+          "-1",
+          "0"
+        ],
+        "record": {
+          "zero": false,
+          "a": 2,
+          "n": 0,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      {
+        "input": [
+          "0",
+          "-1"
+        ],
+        "record": {
+          "zero": false,
+          "a": 3,
+          "n": 0,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      {
+        "input": [
+          "1",
+          "1"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": 0,
+          "w": [
+            "1",
+            "1"
+          ]
+        }
+      },
+      {
+        "input": [
+          "-1",
+          "2"
+        ],
+        "record": {
+          "zero": false,
+          "a": 1,
+          "n": 1,
+          "w": [
+            "1",
+            "1/2"
+          ]
+        }
+      },
+      {
+        "input": [
+          "-3",
+          "-1"
+        ],
+        "record": {
+          "zero": false,
+          "a": 2,
+          "n": 1,
+          "w": [
+            "3/2",
+            "1/2"
+          ]
+        }
+      },
+      {
+        "input": [
+          "2",
+          "-3"
+        ],
+        "record": {
+          "zero": false,
+          "a": 3,
+          "n": 1,
+          "w": [
+            "3/2",
+            "1"
+          ]
+        }
+      },
+      {
+        "input": [
+          "1/16",
+          "1/32"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": -4,
+          "w": [
+            "1",
+            "1/2"
+          ]
+        }
+      },
+      {
+        "input": [
+          "16",
+          "24"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": 4,
+          "w": [
+            "1",
+            "3/2"
+          ]
+        }
+      },
+      {
+        "input": [
+          "2",
+          "0"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": 1,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      }
+    ],
     "bounds": [
       {
         "heat_ticks": "1",
@@ -740,14 +2201,17 @@
       "full_interacting_row_defect_evaluated": false,
       "physical_mass_gap": false,
       "RH_proved": false,
-      "QG_complete": false
+      "QG_complete": false,
+      "full_UGD_numeral_homomorphism": false,
+      "UGD_seam_identified_as_winding": false,
+      "source_UGD_implementation_rerun": false
     }
   },
   "summary": {
-    "exact_checks": 68,
-    "negative_controls": 10,
-    "native_presentations": 1,
-    "symbolic_certificates": 1,
-    "serialized_replays": 1
+    "exact_checks": 189,
+    "negative_controls": 21,
+    "native_presentations": 2,
+    "symbolic_certificates": 2,
+    "serialized_replays": 2
   }
 }

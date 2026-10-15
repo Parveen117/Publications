@@ -1,4 +1,4 @@
-# HCM-1 — Observer memory in the actual YM-54 free heat protocol
+# HCM-1/2 — Source-derived memory and phase-aware response transport
 
 The published thermo-response fixture gives C=diag(5/162,5/72,0).
 On an exact three-mode coefficient block its heat generator is tr(C)I-C.
@@ -11,9 +11,18 @@ This uses the existing source generator rather than a newly selected toy
 dynamics. The observer is selected explicitly. The result is for a free
 single-site coefficient block, not the full interacting instantaneous row.
 
-Replay: **68 exact checks, 1 native symbolic proof/replay and 10 negative controls**.
+HCM-2 encodes the retained readings as z=q+i h and derives the exact source
+law z'=(-65z+(7+24i)conjugate(z))/1296. A reversible quarter-turn/scale/residual
+record carries this law with explicit chart transitions. The residual contains
+necessary within-sector information; finite phase labels alone do not close.
+The native EMK reflection S=(7K+24RK)/25 recovers both inherited heat rates.
+The full historical UGD numeral algebra and its seam ledger are not identified
+with this response encoding; their operation and winding boundaries are explicit.
+
+Replay: **189 exact checks, 2 native symbolic proofs/replays and 21 negative controls**.
 
 - [Source-derived calculation, proofs and boundaries](THEOREM.md)
+- [Phase-aware record, EMK transport and UGD interface limits](PHASE_RECORD.md)
 - [Source map](SOURCE_MAP.md)
 - [Native certificate](CERTIFICATE.json)
 - Replay: `python3 papers/native-heat-observer-memory/run.py --check`

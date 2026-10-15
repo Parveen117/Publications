@@ -17,5 +17,13 @@ No microscopic protocol, interaction, clock, physical mass or observer law is
 fitted or inferred from the desired outcome. The infinite-dimensional source
 construction is a pinned dependency, not re-proved by these finite checks.
 
+HCM-2 also reads the unchanged UGD-1 implementation, UGD-A0 associative-carrier
+contract, EMK-2 grading and phase-observation CLAIM_COVERAGE.md. Quarter-turn
+labels and binary scale are reused; the new residual record is explicitly an
+adapter, not a claimed homomorphism of UGD's full numeral operations. The audit
+of mul_digits and ZERO_DIGIT is a pinned source/formula comparison, not a rerun
+of the historical Python implementation. Seam ledger and angular winding retain
+their distinct contracts. Analytic phase and no-winding arguments are written.
+
 SOURCE_PINS.json binds the exact files. Hashes establish reproducibility and
 integrity; they are not external expert or universal proof-assistant approval.
