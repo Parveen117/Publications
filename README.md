@@ -1,6 +1,15 @@
 # Publications
 
-Latest quantum-gravity research stage: [LNC-1 — classical local constraint closure](papers/native-local-normal-closure/README.md).
+Latest quantum-gravity research stage: [REC-1 — relational event-clock reduction](papers/native-relational-event-clock/README.md).
+LNC's selected homogeneous matter-free sector has a reduced Hamiltonian
+`H_red=L V(phi)/pi` and conserved records `L/pi` and `pi^2+2 W(phi)`, with `W'=V`.
+Normalized event readings lie on a diagonal, but identical endpoint comparisons
+can hide different interior evolution. Differentiable momentum readings recover
+the potential; two readings recover only its integral. Clock and global-winding
+limitations are explicit. 115 exact checks, 4 native proofs/replays and 13 controls pass.
+This is classical homogeneous reduction; full local quantization remains open.
+
+[LNC-1 — classical local constraint closure](papers/native-local-normal-closure/README.md):
 A selected canonical coframe-plus-scalar action supplies the previously missing
 normal geometry evolution. All three classical 1+1 constraint brackets close,
 including the massive LCF matter coupling, and preserve the constraint surface
@@ -23,7 +32,7 @@ coupled reflection-sector ratio and the calibrated logarithmic diagonal criterio
 explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
 supplies the curved matter–metric interface and
 [CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
-All 17 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+All 18 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
 CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)

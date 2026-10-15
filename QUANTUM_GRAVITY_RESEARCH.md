@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 15 October 2026. Current stage: **LNC-1**.
+Updated 15 October 2026. Current stage: **REC-1**.
 
 ## Working agreement
 
@@ -9,6 +9,12 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[REC-1](papers/native-relational-event-clock/README.md) reduces LNC's selected homogeneous, matter-free sector using the scalar phi as an event-clock, on `L>0`, `pi!=0`. Its Hamiltonian is `H_red=L V(phi)/pi`; `K=L/pi` and `M=pi^2+2 W(phi)` are weak Dirac observables for the single homogeneous constraint. Explicit complete observables at a clock reading have canonical bracket one. This does not reduce the full inhomogeneous constraint family.
+
+The equations derive a normalized diagonal comparison. Two explicit potentials give the same endpoint readings and invariant but different interior readings. A differentiable pi record identifies `V=-(pi^2)'/2`; endpoint data identify an integral only. This answers the event-comparison proposal without inferring a unique law from a 45-degree drawing. IRT's general calibration result is reused. The `V=0` baseline has constant length/momentum and a running scalar clock.
+
+The new periodic independent-coframe boundary choice is explicit. A varying proper length is incompatible with additionally imposing a smooth global single-angle cut of fixed winding; local cut charts alone do not resolve that obstruction. This global gluing obligation remains open. The packet also distinguishes algebraic closure from measurement completeness using a closed noncommutative matrix algebra with nonzero state uncertainty.
 
 [LNC-1](papers/native-local-normal-closure/README.md) closes the three local classical secondary-constraint brackets in a selected 1+1 canonical coframe-plus-scalar model. Its geometry density is `h_g=e*pi*p_phi+(e'/e)*phi'-phi''+e^2 V(phi)`, with spatial density `d_g=-e*pi'+p_phi*phi'`. Combined with LCF's massive matter generator, it gives `{D,D}=D`, `{D,H}=H`, `{H,H}=D` with the displayed densitized smearings. The proof holds for arbitrary smooth potential and admissible compact smearings, not just the finite fixtures.
 
@@ -38,6 +44,7 @@ All global-mode AGD/IRT/ZCR results remain frozen in their original scope. A phy
 | [RCG-1](papers/native-relational-cut-space/README.md) | Based cut geometry, rank-one overlap/cycle reconstruction, common-transport residual and its exact geometry-change law | Standard reconstruction method credited; operational geometry does not select physical spacetime or an interacting gravitational action |
 | [LCF-1](papers/native-local-coframe-covariance/README.md) | Cut-gradient coframe density, cancellation of mixed local residual, covariant matter action and local cut-source variation | Normal geometry transport, full constraints and quantum local-field completion remain open; regular spatial patch required |
 | [LNC-1](papers/native-local-normal-closure/README.md) | Selected canonical local geometry action closes all three classical 1+1 brackets with massive matter; source and constraint preservation retained | Extra scalar/action inputs explicit; physical reduction, quantum representation/anomalies, positivity and 3+1 extension open |
+| [REC-1](papers/native-relational-event-clock/README.md) | Homogeneous scalar-clock reduction, sector complete observables, derived comparison invariant and potential reconstruction from differentiated readings | Homogeneous matter-free branch only; clock failure and global winding explicit; full local quantum construction open |
 
 The earlier classical MG/SM action results are pinned and included as source snapshots in CCL-1. Reuse their existing classical coframe/source variation instead of proposing it as new. They do not supply the missing positive interacting quantum theory.
 
@@ -45,9 +52,9 @@ The earlier classical MG/SM action results are pinned and included as source sna
 
 **Construct the physical reduction and quantum constraint representation of the specified local model, and test anomalies and physical-sector positivity.**
 
-LNC resolves LCF's normal-bracket obligation within its explicit classical extension. The next work must:
+LNC resolves LCF's normal-bracket obligation within its explicit classical extension. REC supplies a homogeneous classical reduction as a comparison target; it does not supply the full physical sector. The next work must:
 
-1. Fix a working sector and boundary action. Start with `V=0` around the flat local vacuum as a declared baseline; closure alone does not privilege that potential. Compact-smearing algebra does not automatically provide a physical boundary Hamiltonian.
+1. Fix a local quantum working sector and its boundary contract. Start with `V=0` around the flat local vacuum as a declared baseline; closure alone does not privilege that potential. REC's periodic homogeneous model has no spatial boundary term, but does not settle other boundary actions or global cut gluing.
 2. Reduce or represent the constraints with an explicit physical matter adapter. LNC's commuting classical spinor fields are not quantized fermions, and kinematic cross-momentum energy is not positive.
 3. Calculate ordering/central terms and domain conditions rather than infer quantum closure from Poisson closure. Identify genuine physical observables and a positive physical inner product if the construction permits one.
 4. Retain the LCF source, local cut realization and UGD global-record conditions. Establish the enlarged model's controlled recovery separately from the old global AGD/ZCR model.
@@ -56,7 +63,7 @@ Physical 3+1 interactions and empirical calibration remain downstream obligation
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. The repository runner replays all 17 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. The repository runner replays all 18 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py
