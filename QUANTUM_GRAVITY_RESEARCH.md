@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 15 October 2026. Current stage: **REC-1**.
+Updated 15 October 2026. Current stage: **SRT-1**.
 
 ## Working agreement
 
@@ -9,6 +9,12 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[SRT-1](papers/native-singular-response-transport/README.md) retains the full axis-response record rather than infer it from a diagonal invariant. For a declared analytic chart `A(t)=diag(t^w_i)`, `C=A^-T H A^-1` extends analytically through zero exactly when each `H_ij` vanishes to order at least `w_i+w_j`. Its coefficient at that order gives `C_ij(0)`; higher boundary derivatives require correspondingly higher jets. A concrete two-axis family recovers cross-response from the first jet and second-axis response from the second jet. The collapsed point alone cannot do so.
+
+The packet reuses NT's response element, CRC's kernel criterion and the existing tower contracts. Its new contribution is the explicit singular-chart reconstruction criterion and minimal boundary jet depths. It includes diagonal ambiguity, positive-response loss, wrong scaling order and omitted frame-term controls. The signed TVSP/EM compass map uses a partial Legendre transform to preserve the potential differential. Transport of electromagnetic field equations additionally requires a differential-chain intertwiner; the current two-axis adapter is not yet that full field construction.
+
+These are analytic response-chart results. The weights have not been derived from cut dynamics; grade is not identified with quantum level, and chart rank loss is not identified with a physical curvature singularity. The latest step provides a concrete candidate record for testing against the local cut/matter model, with those identifications still open.
 
 [REC-1](papers/native-relational-event-clock/README.md) reduces LNC's selected homogeneous, matter-free sector using the scalar phi as an event-clock, on `L>0`, `pi!=0`. Its Hamiltonian is `H_red=L V(phi)/pi`; `K=L/pi` and `M=pi^2+2 W(phi)` are weak Dirac observables for the single homogeneous constraint. Explicit complete observables at a clock reading have canonical bracket one. This does not reduce the full inhomogeneous constraint family.
 
@@ -45,12 +51,15 @@ All global-mode AGD/IRT/ZCR results remain frozen in their original scope. A phy
 | [LCF-1](papers/native-local-coframe-covariance/README.md) | Cut-gradient coframe density, cancellation of mixed local residual, covariant matter action and local cut-source variation | Normal geometry transport, full constraints and quantum local-field completion remain open; regular spatial patch required |
 | [LNC-1](papers/native-local-normal-closure/README.md) | Selected canonical local geometry action closes all three classical 1+1 brackets with massive matter; source and constraint preservation retained | Extra scalar/action inputs explicit; physical reduction, quantum representation/anomalies, positivity and 3+1 extension open |
 | [REC-1](papers/native-relational-event-clock/README.md) | Homogeneous scalar-clock reduction, sector complete observables, derived comparison invariant and potential reconstruction from differentiated readings | Homogeneous matter-free branch only; clock failure and global winding explicit; full local quantum construction open |
+| [SRT-1](papers/native-singular-response-transport/README.md) | Analytic singular-response extension iff graded divisibility holds; minimal boundary jet record, signed thermo/EM adapter and finite differential-chain controls | Weights and frame declared; relation to actual cut dynamics, full Maxwell fields and physical quantum gravity open |
 
 The earlier classical MG/SM action results are pinned and included as source snapshots in CCL-1. Reuse their existing classical coframe/source variation instead of proposing it as new. They do not supply the missing positive interacting quantum theory.
 
 ## Next proof target
 
 **Construct the physical reduction and quantum constraint representation of the specified local model, and test anomalies and physical-sector positivity.**
+
+SRT supplies a response-record tool for this target. Its immediate integration gate is to derive the relevant axis weights and comparison frame from actual local cut/matter solutions, then test whether the resulting jet record obeys the local differential/constraint intertwiners. It does not replace the quantum representation obligation with a label change or a finite chart example.
 
 LNC resolves LCF's normal-bracket obligation within its explicit classical extension. REC supplies a homogeneous classical reduction as a comparison target; it does not supply the full physical sector. The next work must:
 
@@ -63,7 +72,7 @@ Physical 3+1 interactions and empirical calibration remain downstream obligation
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. The repository runner replays all 18 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. The repository runner replays all 19 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py
