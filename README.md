@@ -1,5 +1,14 @@
 # Publications
 
+Latest cut-first development: [CHD-1 — cut-generated histories and complete transfer](papers/native-cut-generated-history/README.md).
+Scalar uncut observability is an explicit contract; a nontrivial cut generates
+a binary algebra. Successive projective cut interactions construct a coherent
+history W with W*W=I, without an intervening Hamiltonian or assumed exponential.
+The full represented operator algebra is recoverable on the image, while a
+classical outcome ledger can lose relative phase. Cut-order discrepancy obeys
+Delta*Delta=4[B,A]*[B,A]. The protocol and measurement implementation are declared;
+physical time, full UGD arithmetic and quantum gravity are not derived here.
+
 Latest source-specific application: [HCM-1/2/3 — memory, phase and gain recovery](papers/native-heat-observer-memory/README.md).
 YM54's thermo-response tensor supplies the actual free heat generator and an
 exact two-channel memory repair. Its phase-aware response record retains the
@@ -61,7 +70,7 @@ coupled reflection-sector ratio and the calibrated logarithmic diagonal criterio
 explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
 supplies the curved matter–metric interface and
 [CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
-All 21 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+All 22 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
 CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)

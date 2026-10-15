@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 15 October 2026. Current stage: **SRT-1**.
+Updated 15 October 2026. Current cut-first development: **CHD-1**; the local quantum-gravity constraint target remains open.
 
 ## Working agreement
 
@@ -9,6 +9,14 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[CHD-1](papers/native-cut-generated-history/README.md) treats the uncut level as a declared scalar observable algebra, with no independent observable distinction. Linear unital transports act trivially there. A nontrivial projection supplies a binary algebra; successive specified projective cut interactions construct an isometric history `W`, with `W*W=I`, without an intervening source Hamiltonian, physical time or exponential. The entire represented input operator algebra is faithfully transported into the image corner and decoded by `W*`. This is an explicit complete coherent-record construction, reusing standard measurement dilation; it is not yet a full UGD numeral representation.
+
+Its exact information boundary matters: a classical history of all outcomes and conditional states can lose cross-branch phases. On the inherited CLD fixture, different input phases give identical classical histories but distinct recoverable coherent records. Matched two-cut orders obey `Delta*Delta=4[B,A]*[B,A]`, evaluated as `(576/625)I`. The actual A-B-A projective protocol has final A-return probability `337/625`; a repeated A cut does not force change. Protocol choice and the projective implementation remain declared. The cut order supplies an algebraic obstruction, not a newly identified spacetime curvature tensor.
+
+The resulting next interface is to derive or calibrate a cut protocol on the selected local matter/geometry sector and show that its retained maps preserve the physical constraints and observable algebra. Zero observable distinction is not geometric zero dimension, and does not assert the nonexistence of an inaccessible source. MZC and HCM remain available as sector/recovery tools. The pre-existing LNC/REC quantum representation gate below is not discharged by the new encoding.
+
+## Earlier geometric and constraint results
 
 [SRT-1](papers/native-singular-response-transport/README.md) retains the full axis-response record rather than infer it from a diagonal invariant. For a declared analytic chart `A(t)=diag(t^w_i)`, `C=A^-T H A^-1` extends analytically through zero exactly when each `H_ij` vanishes to order at least `w_i+w_j`. Its coefficient at that order gives `C_ij(0)`; higher boundary derivatives require correspondingly higher jets. A concrete two-axis family recovers cross-response from the first jet and second-axis response from the second jet. The collapsed point alone cannot do so.
 
@@ -61,6 +69,8 @@ The earlier classical MG/SM action results are pinned and included as source sna
 
 **Construct the physical reduction and quantum constraint representation of the specified local model, and test anomalies and physical-sector positivity.**
 
+CHD supplies a cut-generated record map instead of assuming pre-cut evolution. To integrate it here, specify cuts and their implementation from this model and prove constraint/observable compatibility on the retained image. Complete coherent transfer alone does not choose the cuts or a gravitational coupling law. No prime-phase extraction is required for this interface.
+
 SRT supplies a response-record tool for this target. Its immediate integration gate is to derive the relevant axis weights and comparison frame from actual local cut/matter solutions, then test whether the resulting jet record obeys the local differential/constraint intertwiners. It does not replace the quantum representation obligation with a label change or a finite chart example.
 
 LNC resolves LCF's normal-bracket obligation within its explicit classical extension. REC supplies a homogeneous classical reduction as a comparison target; it does not supply the full physical sector. The next work must:
@@ -74,7 +84,7 @@ Physical 3+1 interactions and empirical calibration remain downstream obligation
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. The repository runner replays all 21 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1 adds 251 exact checks, 5 native word proofs/replays and 25 controls for cut-generated coherent histories, complete algebra transfer and classical phase-loss obstructions. The repository runner replays all 22 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py

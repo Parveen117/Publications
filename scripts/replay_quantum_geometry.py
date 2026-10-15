@@ -29,6 +29,7 @@ stages = [
     'native-singular-response-transport',
     'native-moving-zero-covariance',
     'native-heat-observer-memory',
+    'native-cut-generated-history',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)

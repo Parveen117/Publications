@@ -1,0 +1,18 @@
+{
+  "protocol": "CHD1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "288e71048b3ae1d9d46ae7942d718362b9945c16b89ac322a7ff48bf9810ba17",
+    "THEOREM.md": "b75643d84d600c2fd7a2bc7b6de4fae18886a7d02df3d9d348c34f924489c1d6",
+    "SOURCE_MAP.md": "8d93c7a041e6eb34b690b8224d51f114f74a632f4e575a4052e1452b0a8a9f98",
+    "verify.cjs": "456b7b13692deec2f945bc628e1f710ca5956fbbd7eb2f6b24d1fff9842378b8",
+    "run.py": "4d700b19015e55b35a63fa1d9eb6da7b958b919d8be8e79e65e96e093d54b44f",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-moving-zero-covariance/sources/T23.md": "384ef9e3278fd56c212403db54072542c9a94033de7d402d2044694b01805908",
+    "../native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "../native-cut-local-dynamics/THEOREM.md": "620ae9906bafa18a7a196097c3b26873d72e1ec3d851500e5c5eecefb0ba9271",
+    "../native-relational-cut-space/THEOREM.md": "b692cd897860249ae33931c0383f0f0a5ea400e8a83f8239d2caa2e7eaffbb12",
+    "../native-quantum-gravity-consistency/THEOREM.md": "4a431b5ad31d7981d7d505159c756db213dc6faac47d48534c911f20ad831335",
+    "../native-heat-observer-memory/PHASE_RECORD.md": "de23fe39a2d55f8a89b5e063a720c31f631db1f40db9a6661cc4a12a155ab1ba"
+  }
+}
