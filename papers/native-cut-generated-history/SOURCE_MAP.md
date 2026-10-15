@@ -21,3 +21,19 @@ here are self-contained specializations; no novelty claim is made for them.
 The source hashes bind the local statements actually used. Some historical
 documents refer to material not present in this checkout; that material is
 not treated as inspected or as an extra proved premise.
+
+CHD-2 reuses CRC's minimal linear record theorem and native rowClosure without
+renaming them as new discoveries. Exact completion of the square and the
+rank lower bound for a positive Gram factor are standard linear algebra.
+The thermo matrix H is read directly from the pinned YM54_RESULT.json;
+HCM's B*B=2H factor is checked independently against the new weighted factor.
+The new module uses only unchanged native matrix/scalar/rewrite engines.
+
+For the square-root construction boundary, the explicit external adapter is
+J.S. Milne, *Fields and Galois Theory* (2022), Theorem 1.37, Corollaries
+1.38–1.39 and the degree tower law:
+https://www.jmilne.org/math/Books/FT0.pdf
+(read 15 October 2026). This standard result limits generation by rational
+arithmetic and square-root steps; it does not prohibit finite symbolic
+storage of a cubic root. Native companion-matrix certificates do not claim
+to certify the entire field theory theorem or supply UGD root arithmetic.

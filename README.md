@@ -1,6 +1,6 @@
 # Publications
 
-Latest cut-first development: [CHD-1 — cut-generated histories and complete transfer](papers/native-cut-generated-history/README.md).
+Latest cut-first development: [CHD-1/2 — cut histories and minimal binary synthesis](papers/native-cut-generated-history/README.md).
 Scalar uncut observability is an explicit contract; a nontrivial cut generates
 a binary algebra. Successive projective cut interactions construct a coherent
 history W with W*W=I, without an intervening Hamiltonian or assumed exponential.
@@ -8,6 +8,12 @@ The full represented operator algebra is recoverable on the image, while a
 classical outcome ledger can lose relative phase. Cut-order discrepancy obeys
 Delta*Delta=4[B,A]*[B,A]. The protocol and measurement implementation are declared;
 physical time, full UGD arithmetic and quantum gravity are not derived here.
+The positive-quadratic synthesis target is now closed: rank r requires r linear
+scalar amplitude channels, r-1 binary merges and depth ceil(log2 r). Exact
+weights avoid approximate roots. Invariant-preserving operations descend to a
+weighted isometry; future cut sufficiency reuses CRC's minimal row closure.
+A fixed branch metric is conserved iff it commutes with the cut. Combined
+packet: 348 exact checks, 8 native symbolic proofs/replays and 36 controls.
 
 Latest source-specific application: [HCM-1/2/3 — memory, phase and gain recovery](papers/native-heat-observer-memory/README.md).
 YM54's thermo-response tensor supplies the actual free heat generator and an

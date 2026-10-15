@@ -1,4 +1,4 @@
-# CHD-1 — Cut-generated histories and complete retained information
+# CHD-1/2 — Cut histories, binary synthesis and complete retained information
 
 15 October 2026. A continuation of T23, CRC, CLD, RCG and QGC, using the
 unchanged native exact operator and word-rewrite engines.
@@ -24,11 +24,25 @@ exactly recoverable. These probabilities use the explicitly declared standard
 projective instrument; the cut predicate alone does not select an instrument.
 
 - [Definitions, proofs, exact example and remaining physics](THEOREM.md)
+- [Minimal binary synthesis, invariant transport and exact root records](BINARY_INVARIANT_SYNTHESIS.md)
 - [Reuse and external attribution](SOURCE_MAP.md)
 - [Native certificate](CERTIFICATE.json)
 - Replay: `python3 papers/native-cut-generated-history/run.py --check`
 
-Replay: **251 exact checks, 5 native symbolic certificates/replays and 25
+CHD-2 closes the finite positive-quadratic synthesis problem. A rank-r source
+form has exactly r necessary and sufficient linear scalar amplitude channels,
+with positive rational weights. A balanced Pythagorean tree uses r-1 merges
+and depth ceil(log2 r). These are amplitude channels, not a classical bit count.
+The root-free factorization preserves signs/phases in its full record; a
+specified invariant-preserving operation descends to a weighted isometry.
+CRC's existing row closure gives the larger minimum if later cuts expose
+initially invisible directions. A fixed branch metric H survives a binary
+projective cut on every input exactly when [P,H]=0. The complete coherent
+observable W H W* is always recoverable on the image, a different contract.
+Exact root descriptors are distinguished from finite positional expansions
+and from square-root-only arithmetic; standard field-degree results are cited.
+
+Combined replay: **348 exact checks, 8 native symbolic certificates/replays and 36
 negative controls**. The integrated research runner now has 22 stages.
 
 The general finite-history statements have written proofs; exact fixtures and
