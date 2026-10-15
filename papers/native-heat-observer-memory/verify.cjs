@@ -139,6 +139,53 @@ for(let a=0;a<4;a++)for(let b=0;b<4;b++)ck('UGD_label:cyclic_composition:'+a+':'
 no('UGD_interface:numeral_product_equals_phase_composition',!phase(1*1).eq(phase(1).mul(phase(1))));
 no('UGD_interface:neutral_digit_is_complex_zero',!phase(0).zero());
 const zeroSource=new N.Cut(0,0);ck('phase:source_keeps_zero',alpha.mul(zeroSource).add(beta.mul(zeroSource.dagger())).zero());
+// HCM-3: source powers (9,4), prime-valuation audit, and rational correction.
+function valuations(value){const r=f(value);assert.ok(r.n>0n);const out={};for(const [raw,sign]of [[r.n,1],[r.d,-1]]){let n=raw;for(let p=2n;p*p<=n;p++){while(n%p===0n){out[String(p)]=(out[String(p)]||0)+sign;n/=p;}}if(n>1n)out[String(n)]=(out[String(n)]||0)+sign;}return out;}
+const rationalPower=(value,n)=>n>=0?f(value).pow(n):f(1).div(f(value).pow(-n));
+const cutPower=(value,n)=>{let result=N.ONE;for(let j=0;j<n;j++)result=result.mul(value);return result;};
+const gainTransfer=u=>N.add(sc(Ps,f(u).pow(4)),sc(Pf,f(u).pow(9)));
+const common_gain_records=[];
+for(const u0 of ['1','1/2','2/3','9/10','16/25','7/12']){
+ const gain=f(u0),fast=gain.pow(9),slow=gain.pow(4),recovered=fast.div(slow.pow(2)),vp=valuations(gain),va=valuations(fast),vb=valuations(slow);
+ ck('gain:compatibility:'+u0,fast.pow(4).eq(slow.pow(9)));
+ ck('gain:root_free_recovery:'+u0,recovered.eq(gain));
+ let rebuilt=f(1);
+ for(const prime of new Set([...Object.keys(vp),...Object.keys(va),...Object.keys(vb)])){
+  ck('prime:exponents_match:'+u0+':'+prime,4*(va[prime]||0)===9*(vb[prime]||0));
+  ck('prime:Bezout_recovery:'+u0+':'+prime,(va[prime]||0)-2*(vb[prime]||0)===(vp[prime]||0));
+  rebuilt=rebuilt.mul(rationalPower(prime,vp[prime]||0));
+ }
+ ck('prime:reconstructs_rational:'+u0,rebuilt.eq(gain));
+ const Tu=gainTransfer(gain),Ti=N.inverse(Tu),expected=N.add(sc(Ps,rationalPower(gain,-4)),sc(Pf,rationalPower(gain,-9)));
+ ck('correction:spectral_inverse:'+u0,eq(Ti,expected));
+ ck('correction:identity:'+u0,eq(mm(Ti,Tu),I2));
+ const uhat=gain.mul('3/4'),relative=mm(N.inverse(gainTransfer(uhat)),Tu);
+ ck('correction:clock_mismatch_eigenvalues:'+u0,eq(relative,N.add(sc(Ps,f('4/3').pow(4)),sc(Pf,f('4/3').pow(9)))));
+ common_gain_records.push({u:gain,fast,slow,valuations:vp,fast_valuations:va,slow_valuations:vb,transfer:Tu,inverse:Ti,noise_amplification:rationalPower(gain,-9)});
+}
+no('prime:same_support_implies_compatible_gains',!f('1/2').pow(4).eq(f('1/4').pow(9)));
+no('gain:zero_supports_inverse',rejects(()=>N.ZERO.div(N.ZERO)));
+for(const [j,z0]of [N.IOTA,N.IOTA.neg(),new N.Cut('3/5','4/5'),new N.Cut('1/2','1/3')].entries()){
+ const fast=cutPower(z0,9),slow=cutPower(z0,4),recovered=fast.div(cutPower(slow,2));
+ ck('paired_phase:compatibility:'+j,cutPower(fast,4).eq(cutPower(slow,9)));
+ ck('paired_phase:unique_endpoint_recovery:'+j,recovered.eq(z0));
+}
+ck('paired_phase:noncoprime_collision',cutPower(N.IOTA,2).eq(cutPower(N.IOTA.neg(),2))&&cutPower(N.IOTA,4).eq(cutPower(N.IOTA.neg(),4)));
+no('paired_phase:noncoprime_map_is_injective',!N.IOTA.eq(N.IOTA.neg()));
+no('paired_phase:single_fourth_power_recovers_phase',!N.ONE.eq(N.IOTA)&&cutPower(N.ONE,4).eq(cutPower(N.IOTA,4)));
+// An explicitly chosen, noncanonical prime character: both 2 and 3 map to i.
+const primeCharacter=r=>{const ex=valuations(r);return phase(Object.values(ex).reduce((a,b)=>a+b,0));};
+ck('prime_phase:chosen_character_multiplicative',primeCharacter(6).eq(primeCharacter(2).mul(primeCharacter(3))));
+no('prime_phase:character_is_faithful',primeCharacter(2).eq(primeCharacter(3))&&!f(2).eq(3));
+no('prime_phase:finite_phase_keeps_prime_powers',primeCharacter(16).eq(primeCharacter(1)));
+const halfTransfer=gainTransfer('1/2'),halfInverse=N.inverse(halfTransfer),initialReadout=m([[1,0]]),correctedReadout=mm(initialReadout,halfInverse);
+ck('reference:rational_transfer',eq(halfTransfer,sc(m([[521,372],[372,304]]),'1/12800')));
+ck('reference:rational_correction',eq(correctedReadout,m([['4864/25','-5952/25']])));
+ck('reference:premeasurement_target_recovered',eq(mm(correctedReadout,halfTransfer),initialReadout));
+const fastUnit=m([['3/5'],['-4/5']]);
+ck('reference:fast_error_unit_norm',mm(dg(fastUnit),fastUnit)[0][0].eq(1));
+ck('reference:noise_bound_is_attained',eq(mm(halfInverse,fastUnit),sc(fastUnit,512)));
+no('reference:correction_requires_only_current_visible_channel',!correctedReadout[0][1].zero());
 function register(name,tokens){const rules=[];for(let j=1;j<tokens.length;j++)for(let i=0;i<j;i++)rules.push({id:'commute_'+j+'_'+i,lhs:[tokens[j],tokens[i]],rhs:[[[tokens[i],tokens[j]],1]],source:'Central scalar coefficients in the retained heat block'});const s=new M.Presentation({tokens,rules}),audit=s.audit();ck(name+':confluence',audit.status==='CONFLUENT_BY_CHECKED_DIAMONDS');presentations.push({name,spec:s.spec(),audit});systems.set(s.hash(),s);return s;}
 function prove(name,lhs,rhs){const s=lhs.system,r=s.reduce(lhs.minus(rhs),{witness:true});ck(name,r.normal.terms.size===0);const certificate=JSON.parse(JSON.stringify(r.certificate));ck(name+':replay',s.replay(certificate));proofs.push({name,lhs:lhs.toJSON(),rhs:rhs.toJSON(),certificate});}
 const ring=register('heat_phase_variables',['x','y']),x=ring.word(['x']),y=ring.word(['y']),a=x.scale('9/25').plus(y.scale('16/25'));
@@ -147,10 +194,13 @@ const emk=new M.Presentation({tokens:['r','k'],rules:[{id:'rr',lhs:['r','r'],rhs
 ck('EMK_source:confluence',audit.status==='CONFLUENT_BY_CHECKED_DIAMONDS');presentations.push({name:'EMK_source_reflection',spec:emk.spec(),audit});systems.set(emk.hash(),emk);
 const reflection=emk.word(['k']).scale(7).plus(emk.word(['r','k']).scale(24));
 prove('words:source_reflection_square',reflection.times(reflection),emk.word([]).scale(625));
+const inverseSystem=new M.Presentation({tokens:['u','v'],rules:[{id:'uv',lhs:['u','v'],rhs:[[[],1]],source:'Nonzero common gain and its inverse'},{id:'vu',lhs:['v','u'],rhs:[[[],1]],source:'Nonzero common gain and its inverse'}]}),inverseAudit=inverseSystem.audit();
+ck('gain_inverse:confluence',inverseAudit.status==='CONFLUENT_BY_CHECKED_DIAMONDS');presentations.push({name:'common_gain_Bezout',spec:inverseSystem.spec(),audit:inverseAudit});systems.set(inverseSystem.hash(),inverseSystem);
+prove('words:source_gain_Bezout_inverse',inverseSystem.word([...Array(9).fill('u'),...Array(8).fill('v')]),inverseSystem.word(['u']));
 const chosen=proofs[0],bad=JSON.parse(JSON.stringify(chosen.certificate));bad.steps[0].coefficient=['991','0'];
 no('integrity:corrupted_symbolic_witness',rejects(()=>systems.get(chosen.certificate.presentation).replay(bad)));
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
-const payload={protocol:'HCM1_SOURCE_HEAT_OBSERVER_MEMORY_V1',status:'PASS_SOURCE_HEAT_OBSERVER_MEMORY',source_pins_sha256:hash(fs.readFileSync(path.join(__dirname,'SOURCE_PINS.json'))),presentations,proofs,checks,negative_controls,results:{source_tensor:C,heat_block:Lambda,observer:u,retained_observer:O,retained_generator:descended,closure,hidden_initial_reading_derivative:'1/54',defect_leading_coefficient:'1/2916',memory_kernel:{amplitude:'1/2916',decay:'1/18',tail_prefactor:'1/162'},phase_law:{alpha,beta,reflection:S,slow_projector:Ps,fast_projector:Pf},phase_records,bounds,scope:{actual_source:'published YM54 free thermo fixture',observer:'declared mixed adjoint coefficient channel',full_interacting_row_defect_evaluated:false,physical_mass_gap:false,RH_proved:false,QG_complete:false,full_UGD_numeral_homomorphism:false,UGD_seam_identified_as_winding:false,source_UGD_implementation_rerun:false}},summary:{exact_checks:checks.length,negative_controls:negative_controls.length,native_presentations:presentations.length,symbolic_certificates:proofs.length,serialized_replays:proofs.length}};
+const payload={protocol:'HCM1_SOURCE_HEAT_OBSERVER_MEMORY_V1',status:'PASS_SOURCE_HEAT_OBSERVER_MEMORY',source_pins_sha256:hash(fs.readFileSync(path.join(__dirname,'SOURCE_PINS.json'))),presentations,proofs,checks,negative_controls,results:{source_tensor:C,heat_block:Lambda,observer:u,retained_observer:O,retained_generator:descended,closure,hidden_initial_reading_derivative:'1/54',defect_leading_coefficient:'1/2916',memory_kernel:{amplitude:'1/2916',decay:'1/18',tail_prefactor:'1/162'},phase_law:{alpha,beta,reflection:S,slow_projector:Ps,fast_projector:Pf},phase_records,common_gain_records,correctedReadout,bounds,scope:{actual_source:'published YM54 free thermo fixture',observer:'declared mixed adjoint coefficient channel',full_interacting_row_defect_evaluated:false,physical_mass_gap:false,RH_proved:false,QG_complete:false,full_UGD_numeral_homomorphism:false,UGD_seam_identified_as_winding:false,source_UGD_implementation_rerun:false}},summary:{exact_checks:checks.length,negative_controls:negative_controls.length,native_presentations:presentations.length,symbolic_certificates:proofs.length,serialized_replays:proofs.length}};
 const bytes=JSON.stringify(payload,null,2)+'\n',sha=hash(bytes),file=path.join(__dirname,'CERTIFICATE.json');
 if(process.argv.includes('--write')){fs.writeFileSync(file,bytes);fs.writeFileSync(path.join(__dirname,'EXPECTED.sha256'),sha+'  CERTIFICATE.json\n');}else{assert.equal(fs.readFileSync(file,'utf8'),bytes);assert.equal(fs.readFileSync(path.join(__dirname,'EXPECTED.sha256'),'utf8'),sha+'  CERTIFICATE.json\n');}
 console.log(JSON.stringify({status:payload.status,...payload.summary,sha256:sha}));

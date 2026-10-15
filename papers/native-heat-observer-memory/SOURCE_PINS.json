@@ -1,10 +1,10 @@
 {
   "protocol": "HCM1_SOURCE_PINS_V1",
   "files": {
-    "README.md": "3042c00106bcc61894c3b7b49ae07d351281403280a994aea4e93e4c4e22936a",
+    "README.md": "47f0f624edc15644d9dea4a6676ce0cd7c7902cf9c1c3d66a9cc8f9769fa7842",
     "THEOREM.md": "ad9e22824c5052c7a25a8b30b6039d845871cca872f0f3487c380a1726e1aa04",
-    "SOURCE_MAP.md": "7684e28bc74e9a506fc31c56265a3a3050e859449830730f4f044aa7408c83a5",
-    "verify.cjs": "92c97c85c41f07b4d6c5a140e34fffd4090544958ae49f50d4fa3861e1b98a1f",
+    "SOURCE_MAP.md": "2c87bbd8ff9c80df8247c2ee428d7d03858b1d64f4bf333e1bbf993491eae3de",
+    "verify.cjs": "c6001e9028586b5b54e100f6b841d376f102a3eaa356c758307cb49b43540deb",
     "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
     "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
     "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
@@ -22,6 +22,7 @@
     "../emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md": "325a5d025874ac678d38ad7e20ca0cc1ddc68b9f9d267b93333829883cdf1932",
     "../emk-ugd-algebra/certificates/ugd1_numerals.py": "23430ebc060a9a8dd1aab670392bcb82d46dd148c6a643bda87d61a4e206dc85",
     "../emk-ugd-algebra/certificates/emk2_native_carrier.py": "49d8548e7e3ccc2ce77bdc0f5a317b737f3bd37dc4d9e1f90c9f87852c37d1c0",
-    "../native-phase-observation-certification/CLAIM_COVERAGE.md": "7e492bf97b2362db0b940bab1fec2b51d04e41d4802b7ddf4140700985893be3"
+    "../native-phase-observation-certification/CLAIM_COVERAGE.md": "7e492bf97b2362db0b940bab1fec2b51d04e41d4802b7ddf4140700985893be3",
+    "PRIME_CLOCK_MAP.md": "4a15f88921e45409f4ca782587ec3b96d99589e1a0e2ab6f89b4b93e166dfb8d"
   }
 }

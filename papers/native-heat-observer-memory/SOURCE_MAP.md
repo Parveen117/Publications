@@ -25,5 +25,13 @@ of mul_digits and ZERO_DIGIT is a pinned source/formula comparison, not a rerun
 of the historical Python implementation. Seam ledger and angular winding retain
 their distinct contracts. Analytic phase and no-winding arguments are written.
 
+HCM-3 extracts the primitive exponent pair (9,4) from the same inherited heat
+rates. Bezout recovery, unique prime factorization and spectral correction/error
+estimates are standard methods applied to this source. The symbolic complex
+gain extension is distinguished from its positive-real heat parameter and from
+HCM-2's measured response phase. Factorization is only a small-instance audit;
+the root-free gain estimator does not require it. Physical calibration remains
+an explicit assumption, not a consequence of choosing a rational parameter.
+
 SOURCE_PINS.json binds the exact files. Hashes establish reproducibility and
 integrity; they are not external expert or universal proof-assistant approval.

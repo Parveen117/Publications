@@ -1,4 +1,4 @@
-# HCM-1/2 — Source-derived memory and phase-aware response transport
+# HCM-1/2/3 — Source memory, phase records and common-gain recovery
 
 The published thermo-response fixture gives C=diag(5/162,5/72,0).
 On an exact three-mode coefficient block its heat generator is tr(C)I-C.
@@ -19,10 +19,17 @@ The native EMK reflection S=(7K+24RK)/25 recovers both inherited heat rates.
 The full historical UGD numeral algebra and its seam ledger are not identified
 with this response encoding; their operation and winding boundaries are explicit.
 
-Replay: **189 exact checks, 2 native symbolic proofs/replays and 21 negative controls**.
+HCM-3 uses the source's coprime gains A=u^9, B=u^4 to recover u=A/B^2 without
+roots. Prime valuations give an optional multiplicity audit. The paired-phase
+theorem is distinguished from the actual heat response phase. Rational u gives
+an exact rational transfer/corrected readout, with explicit clock/noise bounds;
+the u=1/2 inverse has worst-case amplification 512.
+
+Replay: **265 exact checks, 3 native symbolic proofs/replays and 28 negative controls**.
 
 - [Source-derived calculation, proofs and boundaries](THEOREM.md)
 - [Phase-aware record, EMK transport and UGD interface limits](PHASE_RECORD.md)
+- [Coprime gains, prime audits and rational reference correction](PRIME_CLOCK_MAP.md)
 - [Source map](SOURCE_MAP.md)
 - [Native certificate](CERTIFICATE.json)
 - Replay: `python3 papers/native-heat-observer-memory/run.py --check`

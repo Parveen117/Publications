@@ -1,14 +1,14 @@
 # Publications
 
-Latest source-specific application: [HCM-1/2 — heat memory and phase records](papers/native-heat-observer-memory/README.md).
-YM54's thermo-response tensor supplies the actual free heat generator. Its mixed
-observer needs one hidden channel; the memory kernel is exp(-t/18)/2916. The
-retained complex record obeys z'=(-65z+(7+24i)conjugate(z))/1296. Native EMK
-sectors recover the inherited rates, and a quarter-turn/scale/residual adapter
-reconstructs both channels with explicit chart transport. Finite phase labels
-alone do not suffice; no full UGD numeral homomorphism is asserted.
-189 exact checks, 2 native proofs/replays and 21 controls pass. The full
-interacting Yang–Mills row and physical quantum gravity remain open.
+Latest source-specific application: [HCM-1/2/3 — memory, phase and gain recovery](papers/native-heat-observer-memory/README.md).
+YM54's thermo-response tensor supplies the actual free heat generator and an
+exact two-channel memory repair. Its phase-aware response record retains the
+within-sector residual. The spectral gains A=u^9, B=u^4 now give root-free
+recovery u=A/B^2, with a prime-multiplicity audit and rational reference
+correction. At u=1/2 the inverse can amplify noise by 512; calibration and
+error bounds are explicit. The gain parameter's phase is distinct from the
+measured response phase. 265 exact checks, 3 native proofs/replays and 28
+controls pass. Full interacting Yang–Mills, RH and physical QG remain open.
 
 Latest QG-to-RH application: [MZC-1/2/3 — moving zero, circular sectors and common equilibrium](papers/native-moving-zero-covariance/README.md).
 A declared spectral sector defines admissibility. Stack its leakage record with

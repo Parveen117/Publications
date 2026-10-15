@@ -1,7 +1,7 @@
 {
   "protocol": "HCM1_SOURCE_HEAT_OBSERVER_MEMORY_V1",
   "status": "PASS_SOURCE_HEAT_OBSERVER_MEMORY",
-  "source_pins_sha256": "04dbf04cae45550613233d600039cdb7f413f3a61c09d92f5ff9bcb184c2b9a7",
+  "source_pins_sha256": "abffa1581ea9a25bcdd95e8338d891c264253f65f426f81e27344b412cc8e477",
   "presentations": [
     {
       "name": "heat_phase_variables",
@@ -549,6 +549,248 @@
         ],
         "open": []
       }
+    },
+    {
+      "name": "common_gain_Bezout",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "u",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "uv",
+            "lhs": [
+              "u",
+              "v"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Nonzero common gain and its inverse"
+          },
+          {
+            "id": "vu",
+            "lhs": [
+              "v",
+              "u"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Nonzero common gain and its inverse"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 2,
+        "resolutions": [
+          {
+            "word": [
+              "v",
+              "u",
+              "v"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              1,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "u",
+              "v",
+              "u"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              1,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
     }
   ],
   "proofs": [
@@ -864,6 +1106,266 @@
             ],
             "rule": "kk",
             "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:source_gain_Bezout_inverse",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "u"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "v",
+                "v",
+                "v",
+                "v",
+                "v",
+                "v",
+                "v",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 8
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 7
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 6
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 5
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 4
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 3
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 2
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 1
           }
         ],
         "output": {
@@ -1608,6 +2110,298 @@
       "passed": true
     },
     {
+      "name": "gain:compatibility:1",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:1",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:1",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:1",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:1",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:1",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:1/2",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:1/2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:1/2:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:1/2:2",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:1/2",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:1/2",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:1/2",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:1/2",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:2/3",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:2/3",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:2/3:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:2/3:2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:2/3:3",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:2/3:3",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:2/3",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:2/3",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:2/3",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:2/3",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:9/10",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:9/10",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:9/10:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:9/10:2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:9/10:3",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:9/10:3",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:9/10:5",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:9/10:5",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:9/10",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:9/10",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:9/10",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:9/10",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:16/25",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:16/25",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:16/25:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:16/25:2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:16/25:5",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:16/25:5",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:16/25",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:16/25",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:16/25",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:16/25",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:7/12",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:7/12",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:7/12:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:7/12:2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:7/12:3",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:7/12:3",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:7/12:7",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:7/12:7",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:7/12",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:7/12",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:7/12",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:7/12",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:compatibility:0",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:unique_endpoint_recovery:0",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:compatibility:1",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:unique_endpoint_recovery:1",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:compatibility:2",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:unique_endpoint_recovery:2",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:compatibility:3",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:unique_endpoint_recovery:3",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:noncoprime_collision",
+      "passed": true
+    },
+    {
+      "name": "prime_phase:chosen_character_multiplicative",
+      "passed": true
+    },
+    {
+      "name": "reference:rational_transfer",
+      "passed": true
+    },
+    {
+      "name": "reference:rational_correction",
+      "passed": true
+    },
+    {
+      "name": "reference:premeasurement_target_recovered",
+      "passed": true
+    },
+    {
+      "name": "reference:fast_error_unit_norm",
+      "passed": true
+    },
+    {
+      "name": "reference:noise_bound_is_attained",
+      "passed": true
+    },
+    {
       "name": "heat_phase_variables:confluence",
       "passed": true
     },
@@ -1629,6 +2423,18 @@
     },
     {
       "name": "words:source_reflection_square:replay",
+      "passed": true
+    },
+    {
+      "name": "gain_inverse:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:source_gain_Bezout_inverse",
+      "passed": true
+    },
+    {
+      "name": "words:source_gain_Bezout_inverse:replay",
       "passed": true
     }
   ],
@@ -1711,6 +2517,34 @@
     },
     {
       "name": "UGD_interface:neutral_digit_is_complex_zero",
+      "rejected": true
+    },
+    {
+      "name": "prime:same_support_implies_compatible_gains",
+      "rejected": true
+    },
+    {
+      "name": "gain:zero_supports_inverse",
+      "rejected": true
+    },
+    {
+      "name": "paired_phase:noncoprime_map_is_injective",
+      "rejected": true
+    },
+    {
+      "name": "paired_phase:single_fourth_power_recovers_phase",
+      "rejected": true
+    },
+    {
+      "name": "prime_phase:character_is_faithful",
+      "rejected": true
+    },
+    {
+      "name": "prime_phase:finite_phase_keeps_prime_powers",
+      "rejected": true
+    },
+    {
+      "name": "reference:correction_requires_only_current_visible_channel",
       "rejected": true
     },
     {
@@ -2172,6 +3006,386 @@
         }
       }
     ],
+    "common_gain_records": [
+      {
+        "u": "1",
+        "fast": "1",
+        "slow": "1",
+        "valuations": {},
+        "fast_valuations": {},
+        "slow_valuations": {},
+        "transfer": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "1"
+      },
+      {
+        "u": "1/2",
+        "fast": "1/512",
+        "slow": "1/16",
+        "valuations": {
+          "2": -1
+        },
+        "fast_valuations": {
+          "2": -9
+        },
+        "slow_valuations": {
+          "2": -4
+        },
+        "transfer": [
+          [
+            [
+              "521/12800",
+              "0"
+            ],
+            [
+              "93/3200",
+              "0"
+            ]
+          ],
+          [
+            [
+              "93/3200",
+              "0"
+            ],
+            [
+              "19/800",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "4864/25",
+              "0"
+            ],
+            [
+              "-5952/25",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-5952/25",
+              "0"
+            ],
+            [
+              "8336/25",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "512"
+      },
+      {
+        "u": "2/3",
+        "fast": "512/19683",
+        "slow": "16/81",
+        "valuations": {
+          "2": 1,
+          "3": -1
+        },
+        "fast_valuations": {
+          "2": 9,
+          "3": -9
+        },
+        "slow_valuations": {
+          "2": 4,
+          "3": -4
+        },
+        "transfer": [
+          [
+            [
+              "7424/54675",
+              "0"
+            ],
+            [
+              "13504/164025",
+              "0"
+            ]
+          ],
+          [
+            [
+              "13504/164025",
+              "0"
+            ],
+            [
+              "43184/492075",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "218619/12800",
+              "0"
+            ],
+            [
+              "-51273/3200",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-51273/3200",
+              "0"
+            ],
+            [
+              "21141/800",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "19683/512"
+      },
+      {
+        "u": "9/10",
+        "fast": "387420489/1000000000",
+        "slow": "6561/10000",
+        "valuations": {
+          "2": -1,
+          "3": 2,
+          "5": -1
+        },
+        "fast_valuations": {
+          "2": -9,
+          "3": 18,
+          "5": -9
+        },
+        "slow_valuations": {
+          "2": -4,
+          "3": 8,
+          "5": -4
+        },
+        "transfer": [
+          [
+            [
+              "13984384401/25000000000",
+              "0"
+            ],
+            [
+              "806038533/6250000000",
+              "0"
+            ]
+          ],
+          [
+            [
+              "806038533/6250000000",
+              "0"
+            ],
+            [
+              "756476739/1562500000",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "81990400/43046721",
+              "0"
+            ],
+            [
+              "-65521600/129140163",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-65521600/129140163",
+              "0"
+            ],
+            [
+              "852576400/387420489",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "1000000000/387420489"
+      },
+      {
+        "u": "16/25",
+        "fast": "68719476736/3814697265625",
+        "slow": "65536/390625",
+        "valuations": {
+          "2": 4,
+          "5": -2
+        },
+        "fast_valuations": {
+          "2": 36,
+          "5": -18
+        },
+        "slow_valuations": {
+          "2": 16,
+          "5": -8
+        },
+        "transfer": [
+          [
+            [
+              "10858475290624/95367431640625",
+              "0"
+            ],
+            [
+              "6855366279168/95367431640625",
+              "0"
+            ]
+          ],
+          [
+            [
+              "6855366279168/95367431640625",
+              "0"
+            ],
+            [
+              "6859511627776/95367431640625",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "1635435015625/68719476736",
+              "0"
+            ],
+            [
+              "-408611671875/17179869184",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-408611671875/17179869184",
+              "0"
+            ],
+            [
+              "161803890625/4294967296",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "3814697265625/68719476736"
+      },
+      {
+        "u": "7/12",
+        "fast": "40353607/5159780352",
+        "slow": "2401/20736",
+        "valuations": {
+          "2": -2,
+          "3": -1,
+          "7": 1
+        },
+        "fast_valuations": {
+          "2": -18,
+          "3": -9,
+          "7": 9
+        },
+        "slow_valuations": {
+          "2": -8,
+          "3": -4,
+          "7": 4
+        },
+        "transfer": [
+          [
+            [
+              "44099167/573308928",
+              "0"
+            ],
+            [
+              "22283681/429981696",
+              "0"
+            ]
+          ],
+          [
+            [
+              "22283681/429981696",
+              "0"
+            ],
+            [
+              "15056671/322486272",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "2080567296/40353607",
+              "0"
+            ],
+            [
+              "-2309409792/40353607",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-2309409792/40353607",
+              "0"
+            ],
+            [
+              "3427723008/40353607",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "5159780352/40353607"
+      }
+    ],
+    "correctedReadout": [
+      [
+        [
+          "4864/25",
+          "0"
+        ],
+        [
+          "-5952/25",
+          "0"
+        ]
+      ]
+    ],
     "bounds": [
       {
         "heat_ticks": "1",
@@ -2208,10 +3422,10 @@
     }
   },
   "summary": {
-    "exact_checks": 189,
-    "negative_controls": 21,
-    "native_presentations": 2,
-    "symbolic_certificates": 2,
-    "serialized_replays": 2
+    "exact_checks": 265,
+    "negative_controls": 28,
+    "native_presentations": 3,
+    "symbolic_certificates": 3,
+    "serialized_replays": 3
   }
 }
