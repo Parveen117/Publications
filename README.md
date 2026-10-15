@@ -1,19 +1,19 @@
 # Publications
 
-Latest quantum-gravity stage: [AGD-1 — geometry dynamics from the native cut action](papers/native-action-geometry-dynamics/README.md).
-The inherited cut action and an explicit periodic quantization contract determine an
-infinite geometry generator. The same cut supplies the matter lapse observable.
-Written proofs establish joint self-adjointness, finite spatial propagation, a matter
-source for geometry momentum, and a finite-section error bound. 92 exact checks,
-8 native word certificates/replays and 8 negative controls pass. A global clock
-constraint is solved; local gravitational constraint closure remains open, with explicit
-parity and local-commutator obstructions. [Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
+Latest quantum-gravity stage: [ZCR-1 — fixed reference and classical-metric recovery](papers/native-zero-reference-recovery/README.md).
+A finite-width circle preparation in the full spatially varying AGD model approaches
+flat-metric matter propagation with an explicit finite-time error bound. Geometry evolves
+throughout. Exact packet moments give a sufficient preparation/action-scale budget;
+changing the zero label alone leaves observation-sector leakage unchanged.
+169 exact checks, 11 native word certificates/replays and 13 negative controls pass.
+The recovered metric is classical; the matter equation remains quantum, and local
+gravitational constraint closure remains open. [Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
 
-Previous stage: [GCP-1 — quantum geometry controls propagation](papers/native-geometry-controlled-propagation/README.md)
-constructs the curved matter–metric interface and identifies the variance lost by mean geometry.
-[CCL-1 — common cone and rest invariant](papers/native-common-cone-limit/README.md)
-supplies the shared-refinement propagation limit. All 11 stages of the integrated
-quantum-geometry chain replay with `python3 scripts/replay_quantum_geometry.py`
+[AGD-1](papers/native-action-geometry-dynamics/README.md) derives the infinite geometry generator
+from the inherited cut action under a declared quantization contract.
+[GCP-1](papers/native-geometry-controlled-propagation/README.md) supplies the curved
+matter–metric interface; [CCL-1](papers/native-common-cone-limit/README.md) supplies the common-cone limit.
+All 12 stages of the integrated chain replay with `python3 scripts/replay_quantum_geometry.py`
 on Python 3.12; CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)

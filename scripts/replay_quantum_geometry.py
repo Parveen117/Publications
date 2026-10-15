@@ -19,6 +19,7 @@ stages = [
     'native-common-cone-limit',
     'native-geometry-controlled-propagation',
     'native-action-geometry-dynamics',
+    'native-zero-reference-recovery',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
