@@ -10,6 +10,8 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+(Philosophical speculation: gravity imagined as a conscious presence awaiting observation, with information travelling through it faster than light. This is a speculative metaphor, not a derived or experimentally established claim of this research.)
+
 [CHD-2](papers/native-cut-generated-history/BINARY_INVARIANT_SYNTHESIS.md) closes the declared finite positive-quadratic synthesis problem. A rank-r form has a minimal r-channel linear amplitude record with positive rational weights; a binary Pythagorean tree needs r-1 merges and depth ceil(log2 r). The record is faithful on the quotient by the form's kernel, and every form-preserving linear map descends to a weighted isometry. Additional cut operations can increase the minimum; CRC's established closure gives the exact enlargement, with a source example 1 -> 2. Channels retain phase/sign, unlike a total squared amount; these counts are not finite bit lengths for arbitrary real values.
 
 The direct CHD-to-source compatibility test is now explicit: the same branch-local metric H is conserved by a projective binary cut exactly when [P,H]=0. CHD's full coherent observable W H W* remains recoverable even when that test fails. On the inherited thermo H, phase-related source values 122/25 and 74/25 both become 98/25 under the fixed branch-metric readout; coherent transport preserves them. Standard factorization, CRC closure and field-degree results are attributed. General root descriptors and binary storage are not identified with generation using square roots alone.
