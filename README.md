@@ -1,5 +1,19 @@
 # Publications
 
+Latest quantum-gravity stage: [GCP-1 — quantum geometry controls propagation](papers/native-geometry-controlled-propagation/README.md).
+The geometry observable enters the derivative coefficient of one joint matter–geometry law.
+Its curved branch coframe, connection and operator curvature match exactly; the model has
+unitary evolution, finite propagation and reciprocal kinetic coupling. An exact variance
+obstruction explains when replacing quantum geometry by its mean loses propagation information.
+115 exact checks, 6 native word certificates/replays and 9 controls pass. The geometry
+profiles and mixing law remain selected; deriving their gravitational action and constraints
+is the next proof target. [Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
+
+Preceding bridge: [CCL-1 — common cone and rest invariant](papers/native-common-cone-limit/README.md)
+proves the shared-refinement propagation limit and the local-coupling cone bound.
+The integrated quantum-geometry chain is replayable with
+`python3 scripts/replay_quantum_geometry.py` on Python 3.12.
+
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)
 proves that the symmetric helical protocol sees only `alpha+2 beta`, even
 with full transport memory. A calibrated control deformation removes this
@@ -26,7 +40,7 @@ two-mode sector, the information Gram determinant equals squared oriented
 cut curvature. The source generator remains an input; no physical field
 law is silently selected. This companion shares QG-R2's native certificate.
 
-Latest quantum-gravity development: [QG-R2 — many centres, one observation base](papers/native-loop-concentration/README.md)
+Earlier quantum-gravity development: [QG-R2 — many centres, one observation base](papers/native-loop-concentration/README.md)
 derives reference-correct loop fusion and a three-loop orientation readout.
 An exact family has diverging retained density while its combined loop is
 identically flat. Positive defect records, area budgets and a measured

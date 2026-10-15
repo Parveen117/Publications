@@ -1,0 +1,55 @@
+{
+  "protocol": "MGH1_SOURCE_PINS_V1",
+  "repository_base": "fc4619637f9417ecd0f0105bae995fab9cc3d9bd",
+  "native_engine": {
+    "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  },
+  "native_archive_sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+  "packet_files": {
+    "README.md": "fbdd060b60b2093efdf4aea4e7e84da234e4610d0e81d1d8b7a8902ec1ee5ce4",
+    "THEOREM.md": "77f7e0eb5da1c27b815445f9e494fe2ce267b92d9c8a8d4d3196b97bbe316df4",
+    "DEMO.md": "bc6e03cf1e643710b0af5d207b475661916a362787704de50ed04465488c8bb5",
+    "verify.cjs": "cab4b6ca22cf754816aca6e25ef99090ba0aad64fa605c8d418d8072042cdd4a",
+    "run.py": "df442577d7f03f58ab71d3ded0fcc0d117bc0b4c6935b596102340cd999a6567"
+  },
+  "predecessor_files": {
+    "papers/native-four-dimensional-hinge/README.md": "413389441339957379c86481fa88be9659b5f7d22dc58a72a03a04f2ad264a0c",
+    "papers/native-four-dimensional-hinge/THEOREM.md": "59bd0b15b51d1a5b10f159e8d6c1d00c62823711e7940fba93b60a0273eaaad2",
+    "papers/native-four-dimensional-hinge/verify.cjs": "255a77815bfea4810aa047fb334be6c8f469aa6944154446a3e138a185308578",
+    "papers/native-four-dimensional-hinge/run.py": "0c30dc70fcce4d159284e0b747e36d5d245a49cac71d0e871829d948dfc3d6c7",
+    "papers/native-four-dimensional-hinge/SOURCE_PINS.json": "0699a0eef952f6ebe965688bc871bf5fa9d7527527c60383cd210b8d82585017",
+    "papers/native-four-dimensional-hinge/CERTIFICATE.json": "fe6b6ed35bc55656add884f3be5deeba380ee5ef4a3e8fe1c9c015059107a986",
+    "papers/native-four-dimensional-hinge/EXPECTED.sha256": "38c94a8efbe36ac8b50b2debbb7765bf91f1e76a5b3d7635afe411b04c478642",
+    "papers/native-quantum-gravity-consistency/README.md": "aded4e7e6bc7b6a43a035744a4d5bae0722e6f3efdc0e44500f200fd0cbcbc09",
+    "papers/native-quantum-gravity-consistency/THEOREM.md": "4a431b5ad31d7981d7d505159c756db213dc6faac47d48534c911f20ad831335",
+    "papers/native-quantum-gravity-consistency/verify.cjs": "5582ab3acc0a5eaed1245ed2eaaf8fc90cf5e7643dc8eb0ad684c1771f98fb49",
+    "papers/native-quantum-gravity-consistency/run.py": "0e44b030d03429dfb228d44c017c9abed2d15766e35534fec422f830cc6aa91b",
+    "papers/native-quantum-gravity-consistency/SOURCE_PINS.json": "6c24a1b9b430e93dea1c25a10dc38abac3f37563e2448e2285058d27b5729964",
+    "papers/native-quantum-gravity-consistency/CERTIFICATE.json": "141b485a82eebd655061fd96b21e6353f1a26f5b493af53f0c0a1fadaa6dd570",
+    "papers/native-quantum-gravity-consistency/EXPECTED.sha256": "672415788e120ddd3ce56628bd243f1e9e9626c913b31e9d10fd456034aac58a",
+    "papers/native-cut-record-completeness/README.md": "a4596ffd3708fedbc2267d796ffebd139dc5e9cd686daa1cbd71093d265e4cad",
+    "papers/native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "papers/native-cut-record-completeness/verify.cjs": "8f13dac008dc1cc239d0e5946a780fddb08c060e67d573e77320a65456563168",
+    "papers/native-cut-record-completeness/run.py": "79999d3d6c41f5099362abe207b13206d3ff06dfdef8078a0078674115e9e1e0",
+    "papers/native-cut-record-completeness/SOURCE_PINS.json": "b339bb72550c27a8e7db1a6ae361df6b5de56092aa65b49ec7b73b7a3e48f602",
+    "papers/native-cut-record-completeness/CERTIFICATE.json": "40d4487297fc8843ead9e4989be63a8957c50d2b0c94bf6df4d5b17ce86a8651",
+    "papers/native-cut-record-completeness/EXPECTED.sha256": "e70ef0de5dd35058fa837a1d9043399def4fdb9114c688829aa6116a7a51d2e3",
+    "papers/native-jacobian-cut-certification/THEOREM.md": "6240606cb6ad10514f16132592b46a1929703316879da543c62353f0244101ee",
+    "papers/curvature-information-duality/README.md": "199cd8775ef5f3d5c5d4f8ec9dcc725e13dab9c730600d6d3845c64a53766fa2"
+  },
+  "primary_references": [
+    {
+      "title": "The Entanglement Timescale",
+      "author": "I-Sheng Yang",
+      "url": "https://arxiv.org/abs/1707.05792",
+      "use": "Established context for variance-controlled entanglement. The finite formulas in this packet are derived explicitly."
+    },
+    {
+      "title": "Separability Criterion for Density Matrices",
+      "author": "Asher Peres",
+      "url": "https://arxiv.org/abs/quant-ph/9604005",
+      "use": "Established partial-transpose criterion. The particular witness and its positivity argument are supplied locally."
+    }
+  ]
+}

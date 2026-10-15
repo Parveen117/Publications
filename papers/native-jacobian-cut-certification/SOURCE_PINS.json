@@ -1,0 +1,99 @@
+{
+  "protocol": "NJC1_SOURCE_PINS_V1",
+  "repository_base": "fc4619637f9417ecd0f0105bae995fab9cc3d9bd",
+  "native_engine": {
+    "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  },
+  "native_archive_sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+  "packet_files": {
+    "README.md": "f53f9cadb2929dd14a4281f047944258c90ce699f4df11c58446c30da3934e18",
+    "THEOREM.md": "6240606cb6ad10514f16132592b46a1929703316879da543c62353f0244101ee",
+    "CLAIM_AUDIT.md": "650cd50fd7b2254b76a04ad759e8d01c34301a9cd622e3355abe9c30bb4fb033",
+    "verify.cjs": "8645e48d3d568a4a13536cbfd9b245e3eb9482bbdc5e93f38740be44ab5717a8",
+    "run.py": "dca24713895055fb6d45a14152150ab018367cfaf9b3e70100bd90457f45096b"
+  },
+  "predecessor_files": {
+    "papers/native-loop-concentration/CUT_INFORMATION_DYNAMICS.md": "f72327ad95193100d93dbccb217941ce2621fd3ebffba20af406b57d4ef4137c",
+    "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+    "papers/emk-recognition-geometry/README.md": "bb7559a21a236b6d6bb00e69740453078c88eef73dc184d6b882a9f205cfcfae"
+  },
+  "uploaded_inputs": [
+    {
+      "filename": "sine correction jacobian.tex",
+      "bytes": 9274,
+      "sha256": "eaf1b935a2ec632823267c4f07a43b4063f88fdf8cee28e08f744c58d203eeee",
+      "kind": "TeX manuscript"
+    },
+    {
+      "filename": "emk_tensor_jacobian.tex",
+      "bytes": 18246,
+      "sha256": "516d0e4ed5e582be04fe30942f995460c09020ba49e9f08dcf53003f9d68c5c6",
+      "kind": "TeX manuscript"
+    },
+    {
+      "filename": "cut-graded-lambda-jacobian-tower",
+      "bytes": 214,
+      "sha256": "23cdf8186a9291719ee133e83d65a8187445f03d49b50d4e742cc9539867fd43",
+      "kind": "Git reflog pointer"
+    },
+    {
+      "filename": "circular-hyperbolic-jacobian-semigroup-bridge(1)",
+      "bytes": 214,
+      "sha256": "cd7de216c79f3d82dc06f8d16dbdf1a0038b71da7435025c95990b797486c947",
+      "kind": "Git reflog pointer"
+    },
+    {
+      "filename": "circular-hyperbolic-jacobian-semigroup-bridge",
+      "bytes": 169,
+      "sha256": "b31736421ab95534f26967f0b93935fc56f809d5ae712433668314567fb8adfd",
+      "kind": "Git reflog pointer"
+    },
+    {
+      "filename": "JACOBIAN SERIES.tex",
+      "bytes": 16666,
+      "sha256": "3d0d1c8767bfdb6ff590b134230984c06be73d22fce515352609ecdf7e20573f",
+      "kind": "TeX manuscript"
+    },
+    {
+      "filename": "extended exponential.tex",
+      "bytes": 10625,
+      "sha256": "e80d041f47d3d5d62acdb05e62ef23bab837a6aac3f9c3a5331b465d35155c1c",
+      "kind": "TeX manuscript"
+    },
+    {
+      "filename": "expo jacobian series.tex",
+      "bytes": 14387,
+      "sha256": "94c9efb2c4b77f5ab325bcaa4c636af2abfd391c427d90c373e705e1ad8e9dc3",
+      "kind": "TeX manuscript"
+    }
+  ],
+  "recovered_tower": {
+    "repository": "Parveen117/Recognition-Kernel-Framework",
+    "commit": "9f5792ee62ce3a1a71d9ed242ff9cb10e6745f3e",
+    "git_blobs": {
+      "theorum/42_cut_graded_lambda_jacobian_tower_theorem.md": "b7850a2b059dfc0e072f9c423fefacff5233c287",
+      "proof_lab/cut_graded_lambda_jacobian_tower.py": "b899ec01f622f4a0479c78e19b72349dd82c3bba",
+      "proof_lab/test_cut_graded_lambda_jacobian_tower.py": "985e4e655275893535f3fc55e261173f48184b99",
+      "proof_lab/cut_graded_universal_generator.py": "17201a45a047e79dbc6fdc029a476ca545c64290",
+      "proof_lab/CUT_GRADED_LAMBDA_JACOBIAN_TOWER_EXPECTED.sha256": "667a966445d4f575eed421e98d457525967c2eee"
+    },
+    "legacy_run": {
+      "python": "3.12",
+      "tests": 10,
+      "status": "PASS",
+      "payload_sha256": "3d8db4f085a3b624192c45b9f6e0356b600834193967bc89478381b53ae44a3a",
+      "arithmetic": "historical fractions.Fraction; not counted as native certificate"
+    }
+  },
+  "recovered_bridge": {
+    "repository": "Parveen117/MP",
+    "commit": "b4f14ef4e41c6e2a18918d7322fd1b4968230a90",
+    "git_blobs": {
+      "programmes/circular_hyperbolic_jacobian_semigroup_bridge/CIRCULAR_HYPERBOLIC_JACOBIAN_SEMIGROUP_BRIDGE_THEOREM.md": "9bac9e0a30474dc07a6fd2ea3203253ce7e1e636",
+      "scripts/circular_hyperbolic_jacobian_semigroup_bridge.py": "2d3f959c98139a9a486a3d062a6d657b47ec39b2",
+      "tests/test_circular_hyperbolic_jacobian_semigroup_bridge.py": "4163ddc2678c8c30dd26d79548f624fd874bf8ee"
+    },
+    "source_status": "Theorem and source/tests read; legacy SymPy suite not run; native algebra port executed in this packet"
+  }
+}
