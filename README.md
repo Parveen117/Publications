@@ -1,16 +1,17 @@
 # Publications
 
-Latest quantum-gravity stage: [RCG-1 — relational cut space](papers/native-relational-cut-space/README.md).
-A family of observation cuts defines dimensionless overlap distances and oriented
-cycle readings. Common transport preserves this geometry; an exact reconstructed
-generator and its residual distinguish common frame motion from relational change.
-A distance-blind deformation and an information-erasing measurement show why
-measurement nonclosure alone cannot imply an invariant physical space.
-108 exact checks, 9 native algebraic certificates/replays and 10 controls pass.
-The rank-one reconstruction uses the explicitly cited standard Gram/cycle method;
-physical spacetime and gravitational constraints remain further obligations.
+Latest quantum-gravity stage: [LCF-1 — cut-induced local coframe and matter source](papers/native-local-coframe-covariance/README.md).
+On a regular spatial circle-cut patch, the existing relational metric gives
+`e_cut=|partial_x theta|/2`. Its density transformation cancels AGD's mixed local
+residual exactly. The covariant matter action yields the fixed-N cut source
+`partial_s p_theta|matter = partial_x(NJ)/2`. The spatial/spatial and spatial/normal
+brackets close; the normal/normal bracket still lacks geometry-field transport.
+95 exact checks, 8 native algebraic certificates/replays and 17 controls pass.
+EMK covariance and the UGD carrier/ledger distinctions are explicitly reused.
 [Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
 
+[RCG-1](papers/native-relational-cut-space/README.md) supplies relational cut
+geometry, oriented cycle records and the common-transport residual.
 [CLD-1](papers/native-cut-local-dynamics/README.md) supplies the moving-cut
 connection, return-memory law and AGD rotating-reflection calculation.
 [IRT-1](papers/native-invariant-ratio-transport/README.md) supplies the exact
@@ -20,7 +21,7 @@ coupled reflection-sector ratio and the calibrated logarithmic diagonal criterio
 explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
 supplies the curved matter–metric interface and
 [CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
-All 15 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+All 16 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
 CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)

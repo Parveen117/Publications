@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 15 October 2026. Current stage: **RCG-1**.
+Updated 15 October 2026. Current stage: **LCF-1**.
 
 ## Working agreement
 
@@ -10,13 +10,11 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
-[RCG-1](papers/native-relational-cut-space/README.md) develops a candidate **operational space of cut relations**. Cuts are transported to a common comparison carrier; their dimensionless overlap distances and oriented cycle readings are invariant under common unitary transport. The finite rank-one record reconstructs the labelled family up to common unitary, with the established Gram/cycle method explicitly credited and proved in the packet. The local metric is the already derived CID cut-sensitivity metric normalized by rank.
+[LCF-1](papers/native-local-coframe-covariance/README.md) addresses AGD's actual mixed local obstruction. RCG/CID's metric coefficient yields a coframe density on regular spatial cut patches; for the circle, `e_cut=|partial_x theta|/2`. Its derived transformation `delta_f e=(f e)'` cancels the mixed residual in `A_N(e)=C D_N+gRNe`. EMK-C1's full covariance contract is used directly. The UGD-A0 carrier restriction and UGD-G1 phase/scale/sheet distinctions are retained rather than replacing native associative operator arithmetic by raw carry addition.
 
-The common-generator normal equation `sum [[K,P_j],P_j] = sum [X_j,P_j]` reconstructs a shared infinitesimal transport. Its best-fit residual vanishes exactly when that one generator explains every cut tangent. Residuals drive distance and cycle changes and are frame covariant. This is stronger than separately finding a generator for each cut. Fitting CLD's defects separates common detector motion from individual source-reading conservation.
+The enlarged spatial/spatial and spatial/normal brackets close exactly. The normal/normal bracket still differs by the coframe-field direction `V_(NM'-MN')`. This identifies the next missing term, rather than declaring a complete constraint algebra. A spatially covariant matter action supplies `J=i eta g psi*R psi`; on an oriented circle-cut patch its fixed-N variation gives matter force `partial_x(NJ)/2` on the cut momentum.
 
-The exact controls matter: two cut triples have identical distances but different oriented cycles; another has all pair-distance derivatives zero but cycle derivative `720i/4225` and residual squared `3600/25621`. A nonselective measurement erases squared separation `288/625`. Thus measurement nonclosure does not by itself prove a conserved physical space. The construction has a specified reversible operation class, comparison paths and phase-sensitive record requirements.
-
-CLD's AGD moving-reflection result, IRT's fixed reflection invariant and ZCR's flat-metric recovery remain available unchanged. Physical spatial structure and its constraint algebra have not been derived from the operational geometry alone.
+The local cut-field interpretation is additional structure: a spatially constant cut has zero sensitivity metric and cannot supply this nondegenerate coframe. AGD's global quantum geometry is not silently promoted to a local quantum field. Its established dynamics, IRT reflection invariant and ZCR recovery estimates remain frozen and scoped to their original models.
 
 ## Lineage to reuse
 
@@ -36,25 +34,26 @@ CLD's AGD moving-reflection result, IRT's fixed reflection invariant and ZCR's f
 | [IRT-1](papers/native-invariant-ratio-transport/README.md) | Coupled reflection-weight ratio, classification of the common geometry invariant algebra, and calibrated rate/diagonal theorem | Specified invariant algebra is not a complete state record or local gravitational constraint algebra |
 | [CLD-1](papers/native-cut-local-dynamics/README.md) | Changing-cut memory, finite covariant closure/conditioning budget, and AGD moving-reflection criterion | Cut-relative locality is not spatial locality; infinite memory norm estimates and local gravitational constraints are not proved |
 | [RCG-1](papers/native-relational-cut-space/README.md) | Based cut geometry, rank-one overlap/cycle reconstruction, common-transport residual and its exact geometry-change law | Standard reconstruction method credited; operational geometry does not select physical spacetime or an interacting gravitational action |
+| [LCF-1](papers/native-local-coframe-covariance/README.md) | Cut-gradient coframe density, cancellation of mixed local residual, covariant matter action and local cut-source variation | Normal geometry transport, full constraints and quantum local-field completion remain open; regular spatial patch required |
 
 The earlier classical MG/SM action results are pinned and included as source snapshots in CCL-1. Reuse their existing classical coframe/source variation instead of proposing it as new. They do not supply the missing positive interacting quantum theory.
 
 ## Next proof target
 
-**Derive a local dynamical coframe/source action and determine whether its constraints account for the residual `g R N f'` in AGD-1's naive local algebra.**
+**Derive normal evolution of the local geometry from an admitted action so that it supplies LCF's missing `V_(NM'-MN')`, and prove preservation of the full constraints.**
 
-CLD fixes cut-local dynamics and RCG adds a family-level relational geometry/transport test. The inherited geometry generator is available. Spatial locality is a separate obligation: specify how operational directions couple to spatial matter fields, and keep the common-transport residual explicit while addressing the missing field structure:
+LCF resolves the specified mixed covariance defect; it does not yet provide the normal geometry generator. The next work must:
 
-1. Specify local geometry fields and their canonical data, rather than treating the single global circle coordinate as all gravitational degrees of freedom.
-2. Derive their transformation laws and constraints from a declared action. Show that the coupled dynamics preserves those constraints; neither the solved global clock constraint nor the uncoupled parity symmetry supplies this result.
-3. Retain the GCP matter–metric interface, geometry source response and common spatial cone, and determine whether IRT's reflection invariant survives the local extension. State explicitly any changes to the observable/transport contract.
-4. Preserve or extend ZCR's controlled flat-metric recovery to a general curved evolving classical field. ZCR controls matter propagation within the selected model; it does not yet recover classical gravitational dynamics. AGD's homogeneous Fourier-truncation estimate separately controls computation.
+1. Specify the local cut-field canonical/quantum data and a geometry action, retaining the derived fixed-N matter source and distinguishing independent coframes from composite cut coframes.
+2. Compute all brackets with the resulting geometry-field normal action. Remove or consistently reinterpret the explicit normal obstruction without dropping an observable field direction.
+3. Retain the GCP coframe/matter interface and RCG comparison/phase records. Treat degenerate cut-gradient patches and global UGD sheet records explicitly where they enter.
+4. Establish domain, positivity and controlled classical-field recovery for the enlarged model; the prior global AGD/ZCR results do not automatically prove these local-field claims.
 
-A complete physical claim additionally requires the intended 3+1 interacting limit, physically meaningful observables, stability/positivity on the physical sector and calibrated predictions. Work on one concrete missing theorem at a time; do not replace these gates by a completion percentage.
+A complete physical claim still requires the intended 3+1 interacting limit, physically meaningful observables and calibrated predictions. Work on the specific missing normal-evolution theorem rather than reporting a completion percentage.
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. The repository runner replays all 15 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. The repository runner replays all 16 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py

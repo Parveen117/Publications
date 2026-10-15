@@ -23,6 +23,7 @@ stages = [
     'native-invariant-ratio-transport',
     'native-cut-local-dynamics',
     'native-relational-cut-space',
+    'native-local-coframe-covariance',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
