@@ -7,6 +7,13 @@ directions. The actual next-observation Schur sign is invariant under lawful
 acquired-frame changes. 108 exact checks, 3 native proof replays and 10 controls
 pass. RH's universal source/innovation positivity remains open.
 
+The [MZC-2 circular-sector extension](papers/native-moving-zero-covariance/CIRCULAR_SECTORS.md)
+reuses SE26/SE29: positivity is absence of lower-arc spectral support of the
+actual circular comparison operator. It distinguishes algebra grading from
+spectral sign and retains mixed blocks. Circular composition alone need not
+preserve the positive arc. Combined packet: 139 checks, 3 native proof replays
+and 14 controls pass; the actual RH sector exclusion remains open.
+
 Latest quantum-gravity research stage: [SRT-1 — graded singular-response transport](papers/native-singular-response-transport/README.md).
 Axis response survives a specified singular chart when its graded record is retained:
 the `(i,j)` entry requires vanishing order `w_i+w_j`, and its coefficient at that

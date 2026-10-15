@@ -16,6 +16,14 @@ Local predecessors, unchanged:
 - CRC-1: target-relative record sufficiency and hidden information.
 - CLD-1: moving-cut covariance and transport-generated residual.
 - SRT-1: graded axis response and the derivative connection term.
+- UGD-1: cyclic phase/scale/seam numeral and finite structural logic.
+- UGD-A0: strict numeral equality versus an associative operator carrier.
+- EMK-2: even/odd native algebra grading, distinct from spectral sign.
+
+MZC-2 explicitly reuses SE26 Theorem 3's Cayley representation and SE29
+Theorem 4's missing spectral-sector criterion. Its addition is their integration
+with the moving-zero discussion, reducing-sector gate and exact composition
+controls. No separate discovery of those existing source theorems is claimed.
 
 The integration is the moving-balance/source-sign audit and a block proof of the acquired-frame Schur-sign law. SE49 Theorem 4, equation (49.12), already supplies its real upper-triangular LDL-pivot version. We reuse that result explicitly; the complex block form and moving-cut connection are the scope here. Standard invertible covariance and completion of the square are credited; no claim of priority for these elementary identities is made.
 

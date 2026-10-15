@@ -60,6 +60,38 @@ no('innovation:positive_diagonal_implies_positive_extension',!f(0).le(schur(N.ma
 const nullComplement=N.matrix([[2,1,1],[1,3,2],[1,2,'7/5']]),v=N.matrix([['-1/5'],['-3/5'],[1]]);
 ck('innovation:threshold_null_witness',N.isZero(mm(nullComplement,v)));
 ck('innovation:completed_square_center',eq(mm(A,Ai,b),b));
+// MZC-2: circular operators retain oriented sectors, not only 0/1 membership.
+const cayley=(H,a=1)=>mm(N.add(sc(I,a),sc(H,N.IOTA)),N.inverse(N.sub(sc(I,a),sc(H,N.IOTA))));
+const uncayley=(V,a=1)=>sc(mm(N.sub(V,I),N.inverse(N.add(V,I))),N.IOTA.neg().mul(a));
+const imag=V=>sc(N.sub(V,dg(V)),N.IOTA.neg().div(2));
+const circular_cases=[{name:'positive',H:N.matrix([[2,0],[0,1]])},{name:'mixed',H:N.matrix([[1,2],[2,1]])},{name:'zero_and_positive',H:Hp}];
+for(const {name,H}of circular_cases)for(const a of ['1','3/2']){
+ const V=cayley(H,a),R=N.inverse(N.sub(sc(I,a),sc(H,N.IOTA)));
+ ck('circle:unitary:'+name+':'+a,eq(mm(dg(V),V),I));
+ ck('circle:inverse:'+name+':'+a,eq(uncayley(V,a),H));
+ ck('circle:oriented_form:'+name+':'+a,eq(imag(V),sc(mm(dg(R),H,R),f(a).mul(2))));
+}
+ck('circle:marked_zero',N.isZero(mm(N.sub(cayley(Hp),I),e1)));
+const Vm=cayley(D),Pminus=N.matrix([[0,0],[0,1]]),rotation=N.matrix([['3/5','-4/5'],['4/5','3/5']]);
+const Pmoved=mm(rotation,Pminus,dg(rotation)),Vmoved=mm(rotation,Vm,dg(rotation));
+ck('sector:unitary_frame',eq(mm(dg(rotation),rotation),I));
+ck('sector:projector_transported',eq(mm(Pmoved,Pmoved),Pmoved));
+ck('sector:reducing_sector',eq(mm(Pmoved,Vmoved),mm(Vmoved,Pmoved)));
+ck('sector:lower_phase_retained',eq(mm(Vmoved,Pmoved),sc(Pmoved,N.IOTA.neg())));
+ck('sector:lower_rank_retained',N.rank(Pmoved)===1);
+const cross=N.matrix([[1,2],[2,1]]),negative=N.matrix([[1],[-1]]);
+ck('sector:first_diagonal_positive',mm(dg(e1),cross,e1)[0][0].eq(1));
+ck('sector:second_diagonal_positive',mm(dg(e2),cross,e2)[0][0].eq(1));
+no('sector:positive_compressions_imply_positive_full_form',mm(dg(negative),cross,negative)[0][0].eq(-2));
+no('sector:cut_sectors_automatically_reduce_source',!N.isZero(N.commutator(Pminus,cross)));
+const Upositive=cayley(sc(I,2)),Uproduct=mm(Upositive,Upositive),Usum=cayley(sc(I,4));
+ck('circle:positive_initial_phase',eq(imag(Upositive),sc(I,'4/5')));
+ck('circle:product_remains_unitary',eq(mm(dg(Uproduct),Uproduct),I));
+ck('circle:product_negative_phase',eq(imag(Uproduct),sc(I,'-24/25')));
+ck('circle:product_source_reading',eq(uncayley(Uproduct),sc(I,'-4/3')));
+ck('circle:source_sum_positive_phase',eq(imag(Usum),sc(I,'8/17')));
+no('circle:positive_arc_closed_under_composition',!eq(Uproduct,Usum));
+no('circle:chart_boundary_is_finite_zero',rejects(()=>uncayley(sc(I,-1))));
 function register(name,spec){const s=new M.Presentation(spec),audit=s.audit();ck(name+':confluence',audit.status==='CONFLUENT_BY_CHECKED_DIAMONDS');presentations.push({name,spec:s.spec(),audit});systems.set(s.hash(),s);return s;}
 function prove(name,lhs,rhs){const s=lhs.system,r=s.reduce(lhs.minus(rhs),{witness:true});ck(name,r.normal.terms.size===0);const certificate=JSON.parse(JSON.stringify(r.certificate));ck(name+':replay',s.replay(certificate));proofs.push({name,lhs:lhs.toJSON(),rhs:rhs.toJSON(),certificate});}
 const inv=register('invertible_transport',{tokens:['c','u','v','x'],rules:[{id:'uv',lhs:['u','v'],rhs:[[[],1]],source:'U inverse V'},{id:'vu',lhs:['v','u'],rhs:[[[],1]],source:'V inverse U'}]});

@@ -1,7 +1,7 @@
 {
   "protocol": "MZC1_MOVING_ZERO_COVARIANCE_V1",
   "status": "PASS_NATIVE_MOVING_ZERO_COVARIANCE",
-  "source_pins_sha256": "512c05ea6783c93fec02f57356b75625ff374d96d4b2c0830b3ea5c886df4a48",
+  "source_pins_sha256": "344b2c107a446b19915b32522f474f8c7990208a287f326374122d9c41d6a4bd",
   "presentations": [
     {
       "name": "invertible_transport",
@@ -5099,6 +5099,130 @@
       "passed": true
     },
     {
+      "name": "circle:unitary:positive:1",
+      "passed": true
+    },
+    {
+      "name": "circle:inverse:positive:1",
+      "passed": true
+    },
+    {
+      "name": "circle:oriented_form:positive:1",
+      "passed": true
+    },
+    {
+      "name": "circle:unitary:positive:3/2",
+      "passed": true
+    },
+    {
+      "name": "circle:inverse:positive:3/2",
+      "passed": true
+    },
+    {
+      "name": "circle:oriented_form:positive:3/2",
+      "passed": true
+    },
+    {
+      "name": "circle:unitary:mixed:1",
+      "passed": true
+    },
+    {
+      "name": "circle:inverse:mixed:1",
+      "passed": true
+    },
+    {
+      "name": "circle:oriented_form:mixed:1",
+      "passed": true
+    },
+    {
+      "name": "circle:unitary:mixed:3/2",
+      "passed": true
+    },
+    {
+      "name": "circle:inverse:mixed:3/2",
+      "passed": true
+    },
+    {
+      "name": "circle:oriented_form:mixed:3/2",
+      "passed": true
+    },
+    {
+      "name": "circle:unitary:zero_and_positive:1",
+      "passed": true
+    },
+    {
+      "name": "circle:inverse:zero_and_positive:1",
+      "passed": true
+    },
+    {
+      "name": "circle:oriented_form:zero_and_positive:1",
+      "passed": true
+    },
+    {
+      "name": "circle:unitary:zero_and_positive:3/2",
+      "passed": true
+    },
+    {
+      "name": "circle:inverse:zero_and_positive:3/2",
+      "passed": true
+    },
+    {
+      "name": "circle:oriented_form:zero_and_positive:3/2",
+      "passed": true
+    },
+    {
+      "name": "circle:marked_zero",
+      "passed": true
+    },
+    {
+      "name": "sector:unitary_frame",
+      "passed": true
+    },
+    {
+      "name": "sector:projector_transported",
+      "passed": true
+    },
+    {
+      "name": "sector:reducing_sector",
+      "passed": true
+    },
+    {
+      "name": "sector:lower_phase_retained",
+      "passed": true
+    },
+    {
+      "name": "sector:lower_rank_retained",
+      "passed": true
+    },
+    {
+      "name": "sector:first_diagonal_positive",
+      "passed": true
+    },
+    {
+      "name": "sector:second_diagonal_positive",
+      "passed": true
+    },
+    {
+      "name": "circle:positive_initial_phase",
+      "passed": true
+    },
+    {
+      "name": "circle:product_remains_unitary",
+      "passed": true
+    },
+    {
+      "name": "circle:product_negative_phase",
+      "passed": true
+    },
+    {
+      "name": "circle:product_source_reading",
+      "passed": true
+    },
+    {
+      "name": "circle:source_sum_positive_phase",
+      "passed": true
+    },
+    {
       "name": "invertible_transport:confluence",
       "passed": true
     },
@@ -5166,6 +5290,22 @@
     },
     {
       "name": "innovation:positive_diagonal_implies_positive_extension",
+      "rejected": true
+    },
+    {
+      "name": "sector:positive_compressions_imply_positive_full_form",
+      "rejected": true
+    },
+    {
+      "name": "sector:cut_sectors_automatically_reduce_source",
+      "rejected": true
+    },
+    {
+      "name": "circle:positive_arc_closed_under_composition",
+      "rejected": true
+    },
+    {
+      "name": "circle:chart_boundary_is_finite_zero",
       "rejected": true
     },
     {
@@ -5306,8 +5446,8 @@
     }
   },
   "summary": {
-    "exact_checks": 108,
-    "negative_controls": 10,
+    "exact_checks": 139,
+    "negative_controls": 14,
     "native_presentations": 2,
     "symbolic_certificates": 3,
     "serialized_replays": 3

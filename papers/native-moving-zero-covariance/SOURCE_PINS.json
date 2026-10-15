@@ -1,10 +1,10 @@
 {
   "protocol": "MZC1_SOURCE_PINS_V1",
   "files": {
-    "README.md": "8cdf02ef4ea3f7c6fd2863ecf3dd9037f84bc8d55011eae5075f66c256b7e806",
+    "README.md": "1b8fa0abd40143b82f4b61e446eb00c1cd5f864bfdf41b6b74d87a3df0852a12",
     "THEOREM.md": "11a3a370192493f543b357d9701cd3d09e6386aa37079b927946304b000d1b0a",
-    "SOURCE_MAP.md": "f489225e22f107fc173cf964e4d5b5a247095d73c9d20c94c91ac9d2d044d405",
-    "verify.cjs": "71b1c3ede2cbfde02cd8c3d36a6e6bd1abc229b247b6fb7f1a23e7cb6950a69e",
+    "SOURCE_MAP.md": "3a1ba46d551189247c77a9d31c84584ed04d1aec7f2e70ad949ca9cc2460b303",
+    "verify.cjs": "799eadbf00b56cf8ebecc7b0c511ca32bd201e2d71c1b52ba27e03bae385e1d6",
     "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
     "sources/SE26.md": "baf4664ebb7e3348836bfe4773b50a12c914287d858d67a7093262eecc0219bb",
     "sources/SE29.md": "2fe350af6f3ea0abc4946199de8be4ec33898bc46272e9d42813d2d42bcbdb2f",
@@ -14,6 +14,10 @@
     "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
     "../native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
     "../native-cut-local-dynamics/THEOREM.md": "620ae9906bafa18a7a196097c3b26873d72e1ec3d851500e5c5eecefb0ba9271",
-    "../native-singular-response-transport/THEOREM.md": "70c53f74c96c0a33e1eb435ed43c9f5ecb7811380337a4b3a17a75a588b23a46"
+    "../native-singular-response-transport/THEOREM.md": "70c53f74c96c0a33e1eb435ed43c9f5ecb7811380337a4b3a17a75a588b23a46",
+    "CIRCULAR_SECTORS.md": "a21108b701778e59d10357839b2dcd2f311707291a5738c8841c53d401ae705f",
+    "../emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md": "325a5d025874ac678d38ad7e20ca0cc1ddc68b9f9d267b93333829883cdf1932",
+    "../emk-ugd-algebra/certificates/ugd1_numerals.py": "23430ebc060a9a8dd1aab670392bcb82d46dd148c6a643bda87d61a4e206dc85",
+    "../emk-ugd-algebra/certificates/emk2_native_carrier.py": "49d8548e7e3ccc2ce77bdc0f5a317b737f3bd37dc4d9e1f90c9f87852c37d1c0"
   }
 }
