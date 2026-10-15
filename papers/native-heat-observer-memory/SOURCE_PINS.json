@@ -1,0 +1,22 @@
+{
+  "protocol": "HCM1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "f320d8f7373a881cdcc351cb14ef829642de915e2f4d9a3364b3f472cef15d29",
+    "THEOREM.md": "ad9e22824c5052c7a25a8b30b6039d845871cca872f0f3487c380a1726e1aa04",
+    "SOURCE_MAP.md": "6b1bdc07d08767d7ff310c06e0f222156abe7050cf8a61749c21cab66c67374b",
+    "verify.cjs": "dc9cf27bb6993950d793a4fe4306e9f66b3a661425ca3a4b94e830984766a295",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "../native-moving-zero-covariance/SECTOR_EQUILIBRIUM.md": "be3a90133ba787465b33cbfe3ab6324452edf406b8a4349cfdb3ad685053c7b2",
+    "../yang-mills-certified-benchmark/YM49_TIME_ZERO_OBSERVABLES.md": "b303b453be6e3b5d9d08ba75a15927e004be7f705d6b8f26966dc331742f44c2",
+    "../yang-mills-certified-benchmark/YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md": "5298c9a686e64b5fafbade55f0eaa2a8271de534d679f16529d498807b14e898",
+    "../yang-mills-certified-benchmark/YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md": "5b146b22e7e08bf724f3600a27441c831ce59c3db1e0e3ac994c0183ae4c9e2f",
+    "../yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md": "d55e967839c744259dc483decb668ae49f03d85dbf266185f4083f1e8c8fc601",
+    "../yang-mills-certified-benchmark/certificates/ym50_native_reference.py": "8f29d2e304977c7b9824285f81756b9be1b8f1497817ce6b681c015969cf7f49",
+    "../yang-mills-certified-benchmark/certificates/ym51_heat_selection.py": "8e993c39763e826cf1847703e023697bf0f99d6036e718f29c4677142719a846",
+    "../yang-mills-certified-benchmark/certificates/ym54_response_protocol.py": "4882adc8f63f4cb5e7b21f28c73a3e0a3d75d85c72b8f2ba71c8a0c53d30d1b6",
+    "../yang-mills-certified-benchmark/certificates/YM54_RESULT.json": "f4f704ccc77f9505c5adb8d9bf3b0fc9ee9aecbb341b0ff749d377a3c9c9a1c0"
+  }
+}

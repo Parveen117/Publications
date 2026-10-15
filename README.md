@@ -1,5 +1,13 @@
 # Publications
 
+Latest source-specific application: [HCM-1 — heat-observer memory](papers/native-heat-observer-memory/README.md).
+YM54's published thermo-response tensor supplies the actual free heat generator.
+A selected mixed coefficient observer fails one-channel closure: its two-time
+defect has leading coefficient 1/2916. One extra retained channel closes the
+law exactly, with memory kernel exp(-t/18)/2916 and an explicit truncation bound.
+68 exact checks, 1 native proof/replay and 10 controls pass. This is a free
+single-site coefficient block; the full interacting row-closure gate stays open.
+
 Latest QG-to-RH application: [MZC-1/2/3 — moving zero, circular sectors and common equilibrium](papers/native-moving-zero-covariance/README.md).
 A declared spectral sector defines admissibility. Stack its leakage record with
 the cut as `D=(C,I-P)`. Native operation closure computes the largest carrier
@@ -51,7 +59,7 @@ coupled reflection-sector ratio and the calibrated logarithmic diagonal criterio
 explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
 supplies the curved matter–metric interface and
 [CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
-All 20 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+All 21 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
 CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)
