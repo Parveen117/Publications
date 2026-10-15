@@ -1,20 +1,21 @@
 # Publications
 
-Latest quantum-gravity stage: [ZCR-1 — fixed reference and classical-metric recovery](papers/native-zero-reference-recovery/README.md).
-A finite-width circle preparation in the full spatially varying AGD model approaches
-flat-metric matter propagation with an explicit finite-time error bound. Geometry evolves
-throughout. Exact packet moments give a sufficient preparation/action-scale budget;
-changing the zero label alone leaves observation-sector leakage unchanged.
-169 exact checks, 11 native word certificates/replays and 13 negative controls pass.
-The recovered metric is classical; the matter equation remains quantum, and local
-gravitational constraint closure remains open. [Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
+Latest quantum-gravity stage: [IRT-1 — dimensionless invariant ratios under transport](papers/native-invariant-ratio-transport/README.md).
+Reflection-sector weights are exactly conserved by the full coupled AGD operator;
+their example ratio is `1/2`. A written infinite-dimensional proof classifies the
+common bounded geometry observable algebra as the span of identity and reflection.
+The packet also derives the all-state ratio criterion and specifies when equal
+relative rates appear as a 45-degree log diagonal. 103 exact checks, 9 native word
+certificates/replays and 16 controls pass. Local gravitational constraints remain open.
+[Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
 
-[AGD-1](papers/native-action-geometry-dynamics/README.md) derives the infinite geometry generator
-from the inherited cut action under a declared quantization contract.
-[GCP-1](papers/native-geometry-controlled-propagation/README.md) supplies the curved
-matter–metric interface; [CCL-1](papers/native-common-cone-limit/README.md) supplies the common-cone limit.
-All 12 stages of the integrated chain replay with `python3 scripts/replay_quantum_geometry.py`
-on Python 3.12; CI also replays the inherited CID-D2 action packet.
+[ZCR-1](papers/native-zero-reference-recovery/README.md) supplies controlled flat-metric recovery;
+[AGD-1](papers/native-action-geometry-dynamics/README.md) derives geometry dynamics under its
+explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
+supplies the curved matter–metric interface and
+[CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
+All 13 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)
 proves that the symmetric helical protocol sees only `alpha+2 beta`, even
