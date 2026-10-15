@@ -1,0 +1,2613 @@
+{
+  "protocol": "RCG1_RELATIONAL_CUT_SPACE_AND_COMMON_TRANSPORT_V1",
+  "status": "PASS_NATIVE_RELATIONAL_CUT_GEOMETRY_AND_TRANSPORT_RESIDUAL",
+  "scope": "Finite exact native matrices and word witnesses with separate written reconstruction and transport proofs. Candidate operational geometry, not a physical spacetime or gravity derivation.",
+  "source_pins_sha256": "fbfa5fdb01d89e425f93ec6f0b79332ffd41d9acbd6e17c7dadb27d1d56772e2",
+  "presentations": [
+    {
+      "name": "cut_relations",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "p",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "q",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "k",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "a",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "pp",
+            "lhs": [
+              "p",
+              "p"
+            ],
+            "rhs": [
+              [
+                [
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "First cut idempotence"
+          },
+          {
+            "id": "qq",
+            "lhs": [
+              "q",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Second cut idempotence"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 2,
+        "resolutions": [
+          {
+            "word": [
+              "p",
+              "p",
+              "p"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              0,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pp",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pp",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "q"
+            ],
+            "first": [
+              1,
+              0
+            ],
+            "second": [
+              1,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "q",
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "q",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "qq",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "q",
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "q",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "qq",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    },
+    {
+      "name": "unitary_comparison",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "p",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "q",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "u",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "uv",
+            "lhs": [
+              "u",
+              "v"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Unitary and inverse"
+          },
+          {
+            "id": "vu",
+            "lhs": [
+              "v",
+              "u"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Inverse and unitary"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "2a85c7ee4d78422e0e773cb28e6e3419941111f3531b800dbd11266b2b761277",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 2,
+        "resolutions": [
+          {
+            "word": [
+              "v",
+              "u",
+              "v"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              1,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "2a85c7ee4d78422e0e773cb28e6e3419941111f3531b800dbd11266b2b761277",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "2a85c7ee4d78422e0e773cb28e6e3419941111f3531b800dbd11266b2b761277",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "u",
+              "v",
+              "u"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              1,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "2a85c7ee4d78422e0e773cb28e6e3419941111f3531b800dbd11266b2b761277",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "2a85c7ee4d78422e0e773cb28e6e3419941111f3531b800dbd11266b2b761277",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "words:distance_square",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "q",
+              "q"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "qq",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:double_commutator",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "p",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "k",
+              "p"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "k",
+              "p",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "k",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "k",
+              "p"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "p",
+                "k"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "k",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "k"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "k",
+                "p",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "k",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "k"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:pinching_idempotence",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "a"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "a",
+              "p"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "a",
+              "p"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "a",
+              "p",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "a",
+              "p"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "a",
+              "p",
+              "p"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "a",
+              "p",
+              "p"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "a"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "a",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "a",
+              "p"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "p",
+                "a"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "a",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "a"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "a",
+                "p"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "a",
+                "p",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "a",
+                "p"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "a",
+                "p",
+                "p"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "a",
+                "p",
+                "p"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "p",
+              "a",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "a",
+              "p"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 0
+          },
+          {
+            "word": [
+              "a",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "a"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:pinching_offdiagonal_zero",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "a",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "a"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "a",
+              "p"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "a",
+              "p",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "a",
+              "p"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "a",
+              "p",
+              "p"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "a",
+              "p",
+              "p"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "p",
+                "a"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "a",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "a"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "a",
+                "p"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "a",
+                "p",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "a",
+                "p"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "a",
+                "p",
+                "p"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "a",
+                "p",
+                "p"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "p",
+              "a",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "a",
+              "p"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 0
+          },
+          {
+            "word": [
+              "a",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "a"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:complete_block_record",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:common_generator_pair",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "q",
+              "k"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "k",
+              "p",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "q",
+              "k"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "k",
+              "p",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:common_generator_cycle",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "q",
+              "a",
+              "k"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "k",
+              "p",
+              "q",
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "q",
+              "a",
+              "k"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "k",
+              "p",
+              "q",
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ccbc30dffdee2f286740f920f8a17fe022e0078ba4c36372918a023c78b16a1e",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:transport_product",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "p",
+              "v",
+              "u",
+              "q",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "p",
+              "q",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "2a85c7ee4d78422e0e773cb28e6e3419941111f3531b800dbd11266b2b761277",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "u",
+                "p",
+                "q",
+                "v"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "p",
+                "v",
+                "u",
+                "q",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "u",
+              "p",
+              "v",
+              "u",
+              "q",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "vu",
+            "position": 2
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:transport_commutator",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "p",
+              "v",
+              "u",
+              "q",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "q",
+              "v",
+              "u",
+              "p",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "p",
+              "q",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "q",
+              "p",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "2a85c7ee4d78422e0e773cb28e6e3419941111f3531b800dbd11266b2b761277",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "u",
+                "p",
+                "q",
+                "v"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "q",
+                "p",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "p",
+                "v",
+                "u",
+                "q",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "q",
+                "v",
+                "u",
+                "p",
+                "v"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "u",
+              "q",
+              "v",
+              "u",
+              "p",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "vu",
+            "position": 2
+          },
+          {
+            "word": [
+              "u",
+              "p",
+              "v",
+              "u",
+              "q",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "vu",
+            "position": 2
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "cuts:rank_one:0",
+      "passed": true
+    },
+    {
+      "name": "geometry:distance_overlap:0:0",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_pair_agreement:0:0",
+      "passed": true
+    },
+    {
+      "name": "geometry:distance_overlap:0:1",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_pair_agreement:0:1",
+      "passed": true
+    },
+    {
+      "name": "geometry:distance_overlap:0:2",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_pair_agreement:0:2",
+      "passed": true
+    },
+    {
+      "name": "cuts:rank_one:1",
+      "passed": true
+    },
+    {
+      "name": "geometry:distance_overlap:1:0",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_pair_agreement:1:0",
+      "passed": true
+    },
+    {
+      "name": "geometry:distance_overlap:1:1",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_pair_agreement:1:1",
+      "passed": true
+    },
+    {
+      "name": "geometry:distance_overlap:1:2",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_pair_agreement:1:2",
+      "passed": true
+    },
+    {
+      "name": "cuts:rank_one:2",
+      "passed": true
+    },
+    {
+      "name": "geometry:distance_overlap:2:0",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_pair_agreement:2:0",
+      "passed": true
+    },
+    {
+      "name": "geometry:distance_overlap:2:1",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_pair_agreement:2:1",
+      "passed": true
+    },
+    {
+      "name": "geometry:distance_overlap:2:2",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_pair_agreement:2:2",
+      "passed": true
+    },
+    {
+      "name": "geometry:overlap01",
+      "passed": true
+    },
+    {
+      "name": "geometry:overlap02",
+      "passed": true
+    },
+    {
+      "name": "geometry:overlap12",
+      "passed": true
+    },
+    {
+      "name": "geometry:positive_cycle",
+      "passed": true
+    },
+    {
+      "name": "geometry:mirror_cycle",
+      "passed": true
+    },
+    {
+      "name": "reconstruct:tree_gauge_gram",
+      "passed": true
+    },
+    {
+      "name": "reconstruct:non_tree_edge_from_cycle",
+      "passed": true
+    },
+    {
+      "name": "reconstruct:span_rank",
+      "passed": true
+    },
+    {
+      "name": "reconstruct:unitary_lift",
+      "passed": true
+    },
+    {
+      "name": "reconstruct:all_cuts:0",
+      "passed": true
+    },
+    {
+      "name": "reconstruct:all_cuts:1",
+      "passed": true
+    },
+    {
+      "name": "reconstruct:all_cuts:2",
+      "passed": true
+    },
+    {
+      "name": "frame:independent_links:0",
+      "passed": true
+    },
+    {
+      "name": "frame:independent_links:1",
+      "passed": true
+    },
+    {
+      "name": "frame:independent_links:2",
+      "passed": true
+    },
+    {
+      "name": "path:alternate_distance",
+      "passed": true
+    },
+    {
+      "name": "path:commuting_loop",
+      "passed": true
+    },
+    {
+      "name": "fit:common_generator_recovered",
+      "passed": true
+    },
+    {
+      "name": "fit:common_residual_zero",
+      "passed": true
+    },
+    {
+      "name": "fit:normal_equation",
+      "passed": true
+    },
+    {
+      "name": "fit:three_visible_generator_directions",
+      "passed": true
+    },
+    {
+      "name": "fit:scalar_gauge_invisible",
+      "passed": true
+    },
+    {
+      "name": "fit:source_reading_changes",
+      "passed": true
+    },
+    {
+      "name": "fit:rigid_overlap_derivative:0:1",
+      "passed": true
+    },
+    {
+      "name": "fit:rigid_overlap_derivative:0:2",
+      "passed": true
+    },
+    {
+      "name": "fit:rigid_overlap_derivative:1:2",
+      "passed": true
+    },
+    {
+      "name": "fit:rigid_cycle_derivative",
+      "passed": true
+    },
+    {
+      "name": "strain:valid_cut_tangent:0",
+      "passed": true
+    },
+    {
+      "name": "strain:valid_cut_tangent:1",
+      "passed": true
+    },
+    {
+      "name": "strain:valid_cut_tangent:2",
+      "passed": true
+    },
+    {
+      "name": "strain:pair_blind:0:1",
+      "passed": true
+    },
+    {
+      "name": "strain:residual_drives_overlap:0:1",
+      "passed": true
+    },
+    {
+      "name": "strain:budget:0:1",
+      "passed": true
+    },
+    {
+      "name": "strain:pair_blind:0:2",
+      "passed": true
+    },
+    {
+      "name": "strain:residual_drives_overlap:0:2",
+      "passed": true
+    },
+    {
+      "name": "strain:budget:0:2",
+      "passed": true
+    },
+    {
+      "name": "strain:pair_blind:1:2",
+      "passed": true
+    },
+    {
+      "name": "strain:residual_drives_overlap:1:2",
+      "passed": true
+    },
+    {
+      "name": "strain:budget:1:2",
+      "passed": true
+    },
+    {
+      "name": "strain:cycle_changes",
+      "passed": true
+    },
+    {
+      "name": "strain:residual_drives_cycle",
+      "passed": true
+    },
+    {
+      "name": "strain:normal_equation",
+      "passed": true
+    },
+    {
+      "name": "strain:orthogonal_residual:0",
+      "passed": true
+    },
+    {
+      "name": "strain:orthogonal_residual:1",
+      "passed": true
+    },
+    {
+      "name": "strain:orthogonal_residual:2",
+      "passed": true
+    },
+    {
+      "name": "strain:fixed_two_force_scalar_gauge",
+      "passed": true
+    },
+    {
+      "name": "strain:time_dependent_frame_generator",
+      "passed": true
+    },
+    {
+      "name": "strain:frame_invariant_residual",
+      "passed": true
+    },
+    {
+      "name": "strain:frame_covariant_components:0",
+      "passed": true
+    },
+    {
+      "name": "strain:frame_covariant_components:1",
+      "passed": true
+    },
+    {
+      "name": "strain:frame_covariant_components:2",
+      "passed": true
+    },
+    {
+      "name": "CLD:known_source_shift",
+      "passed": true
+    },
+    {
+      "name": "CLD:source_shift_same_residual",
+      "passed": true
+    },
+    {
+      "name": "changing:residual_drives_distance:0:1",
+      "passed": true
+    },
+    {
+      "name": "changing:nontrivial_budget:0:1",
+      "passed": true
+    },
+    {
+      "name": "changing:nonzero_distance_rate",
+      "passed": true
+    },
+    {
+      "name": "changing:residual_drives_distance:0:2",
+      "passed": true
+    },
+    {
+      "name": "changing:nontrivial_budget:0:2",
+      "passed": true
+    },
+    {
+      "name": "changing:residual_drives_distance:1:2",
+      "passed": true
+    },
+    {
+      "name": "changing:nontrivial_budget:1:2",
+      "passed": true
+    },
+    {
+      "name": "changing:cycle_derivative",
+      "passed": true
+    },
+    {
+      "name": "measurement:pinching_idempotent",
+      "passed": true
+    },
+    {
+      "name": "measurement:orthogonal_split",
+      "passed": true
+    },
+    {
+      "name": "measurement:pythagoras",
+      "passed": true
+    },
+    {
+      "name": "measurement:initial_separation",
+      "passed": true
+    },
+    {
+      "name": "measurement:erased_separation",
+      "passed": true
+    },
+    {
+      "name": "measurement:identical_outputs",
+      "passed": true
+    },
+    {
+      "name": "cut_relations:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:distance_square",
+      "passed": true
+    },
+    {
+      "name": "words:distance_square:replay",
+      "passed": true
+    },
+    {
+      "name": "words:double_commutator",
+      "passed": true
+    },
+    {
+      "name": "words:double_commutator:replay",
+      "passed": true
+    },
+    {
+      "name": "words:pinching_idempotence",
+      "passed": true
+    },
+    {
+      "name": "words:pinching_idempotence:replay",
+      "passed": true
+    },
+    {
+      "name": "words:pinching_offdiagonal_zero",
+      "passed": true
+    },
+    {
+      "name": "words:pinching_offdiagonal_zero:replay",
+      "passed": true
+    },
+    {
+      "name": "words:complete_block_record",
+      "passed": true
+    },
+    {
+      "name": "words:complete_block_record:replay",
+      "passed": true
+    },
+    {
+      "name": "words:common_generator_pair",
+      "passed": true
+    },
+    {
+      "name": "words:common_generator_pair:replay",
+      "passed": true
+    },
+    {
+      "name": "words:common_generator_cycle",
+      "passed": true
+    },
+    {
+      "name": "words:common_generator_cycle:replay",
+      "passed": true
+    },
+    {
+      "name": "unitary_comparison:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:transport_product",
+      "passed": true
+    },
+    {
+      "name": "words:transport_product:replay",
+      "passed": true
+    },
+    {
+      "name": "words:transport_commutator",
+      "passed": true
+    },
+    {
+      "name": "words:transport_commutator:replay",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "geometry:distances_classify_unitary_cut_orbit",
+      "rejected": true
+    },
+    {
+      "name": "reconstruct:mirror_non_tree_edge_agrees",
+      "rejected": true
+    },
+    {
+      "name": "frame:ignore_comparison_link",
+      "rejected": true
+    },
+    {
+      "name": "path:arbitrary_loop_is_path_independent",
+      "rejected": true
+    },
+    {
+      "name": "strain:pair_derivatives_zero_implies_common_transport",
+      "rejected": true
+    },
+    {
+      "name": "strain:individual_transport_means_joint_transport",
+      "rejected": true
+    },
+    {
+      "name": "strain:single_cut_motion_is_rigid_family",
+      "rejected": true
+    },
+    {
+      "name": "measurement:outputs_are_still_pure_cuts",
+      "rejected": true
+    },
+    {
+      "name": "measurement:cut_dependence_implies_geometry_invariance",
+      "rejected": true
+    },
+    {
+      "name": "integrity:corrupted_word_proof",
+      "rejected": true
+    }
+  ],
+  "results": {
+    "reconstruction": {
+      "overlaps": [
+        "9/25",
+        "9/25",
+        "337/625"
+      ],
+      "oriented_cycle": [
+        "81/625",
+        "144/625"
+      ],
+      "mirror_cycle": [
+        "81/625",
+        "-144/625"
+      ],
+      "recovered_unitary": [
+        [
+          [
+            "3/13",
+            "36/65"
+          ],
+          [
+            "-4/13",
+            "-48/65"
+          ]
+        ],
+        [
+          [
+            "4/13",
+            "48/65"
+          ],
+          [
+            "3/13",
+            "36/65"
+          ]
+        ]
+      ],
+      "span_dimension": 2
+    },
+    "paths": {
+      "same_path_distance_squared": "0",
+      "changed_path_distance_squared": "576/625"
+    },
+    "common_transport": {
+      "rigid_generator": [
+        [
+          [
+            "0",
+            "-4/7"
+          ],
+          [
+            "-3/5",
+            "2/3"
+          ]
+        ],
+        [
+          [
+            "3/5",
+            "2/3"
+          ],
+          [
+            "0",
+            "4/7"
+          ]
+        ]
+      ],
+      "rigid_residual_squared": "0",
+      "distance_blind_generator_fit": [
+        [
+          [
+            "0",
+            "-12685/102484"
+          ],
+          [
+            "0",
+            "-2520/25621"
+          ]
+        ],
+        [
+          [
+            "0",
+            "-2520/25621"
+          ],
+          [
+            "0",
+            "12685/102484"
+          ]
+        ]
+      ],
+      "distance_blind_residual_squared": "3600/25621",
+      "distance_blind_cycle_derivative": [
+        "0",
+        "144/845"
+      ],
+      "normal_matrix": [
+        [
+          [
+            "56201478/17850625",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "27446496/17850625",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "6",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "27446496/17850625",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "50902272/17850625",
+            "0"
+          ]
+        ]
+      ]
+    },
+    "measurement": {
+      "before_distance_squared": "288/625",
+      "after_distance_squared": "0",
+      "common_output": [
+        [
+          [
+            "9/25",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "16/25",
+            "0"
+          ]
+        ]
+      ]
+    }
+  },
+  "summary": {
+    "exact_checks": 108,
+    "negative_controls": 10,
+    "native_presentations": 2,
+    "symbolic_certificates": 9,
+    "serialized_replays": 9
+  }
+}
