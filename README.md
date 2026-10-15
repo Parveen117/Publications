@@ -1,20 +1,22 @@
 # Publications
 
-Latest quantum-gravity stage: [IRT-1 — dimensionless invariant ratios under transport](papers/native-invariant-ratio-transport/README.md).
-Reflection-sector weights are exactly conserved by the full coupled AGD operator;
-their example ratio is `1/2`. A written infinite-dimensional proof classifies the
-common bounded geometry observable algebra as the span of identity and reflection.
-The packet also derives the all-state ratio criterion and specifies when equal
-relative rates appear as a 45-degree log diagonal. 103 exact checks, 9 native word
-certificates/replays and 16 controls pass. Local gravitational constraints remain open.
+Latest quantum-gravity stage: [CLD-1 — dynamics after the observation cut](papers/native-cut-local-dynamics/README.md).
+Here local means the retained information sector after a cut. The packet derives
+the moving-cut closure defect, exact return-memory law and conditional-reading
+budget, then evaluates rotating reflection detectors in the full AGD model.
+167 exact checks, 15 native word certificates/replays and 14 controls pass.
+The infinite common-core argument is written separately from finite certificates;
+spatial gravitational constraints remain open.
 [Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
 
+[IRT-1](papers/native-invariant-ratio-transport/README.md) supplies the exact
+coupled reflection-sector ratio and the calibrated logarithmic diagonal criterion.
 [ZCR-1](papers/native-zero-reference-recovery/README.md) supplies controlled flat-metric recovery;
 [AGD-1](papers/native-action-geometry-dynamics/README.md) derives geometry dynamics under its
 explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
 supplies the curved matter–metric interface and
 [CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
-All 13 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+All 14 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
 CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)

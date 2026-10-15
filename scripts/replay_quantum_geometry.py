@@ -21,6 +21,7 @@ stages = [
     'native-action-geometry-dynamics',
     'native-zero-reference-recovery',
     'native-invariant-ratio-transport',
+    'native-cut-local-dynamics',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
