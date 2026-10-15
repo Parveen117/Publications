@@ -1,0 +1,19 @@
+{
+  "protocol": "MZC1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "8cdf02ef4ea3f7c6fd2863ecf3dd9037f84bc8d55011eae5075f66c256b7e806",
+    "THEOREM.md": "11a3a370192493f543b357d9701cd3d09e6386aa37079b927946304b000d1b0a",
+    "SOURCE_MAP.md": "f489225e22f107fc173cf964e4d5b5a247095d73c9d20c94c91ac9d2d044d405",
+    "verify.cjs": "71b1c3ede2cbfde02cd8c3d36a6e6bd1abc229b247b6fb7f1a23e7cb6950a69e",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "sources/SE26.md": "baf4664ebb7e3348836bfe4773b50a12c914287d858d67a7093262eecc0219bb",
+    "sources/SE29.md": "2fe350af6f3ea0abc4946199de8be4ec33898bc46272e9d42813d2d42bcbdb2f",
+    "sources/SE49.md": "36b0e0b37594d7112b24fb58fb401f521912eb6baf6d487094ddf0449c725b4f",
+    "sources/T23.md": "384ef9e3278fd56c212403db54072542c9a94033de7d402d2044694b01805908",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "../native-cut-local-dynamics/THEOREM.md": "620ae9906bafa18a7a196097c3b26873d72e1ec3d851500e5c5eecefb0ba9271",
+    "../native-singular-response-transport/THEOREM.md": "70c53f74c96c0a33e1eb435ed43c9f5ecb7811380337a4b3a17a75a588b23a46"
+  }
+}

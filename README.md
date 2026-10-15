@@ -1,5 +1,12 @@
 # Publications
 
+Latest QG-to-RH application: [MZC-1 — moving zero covariance](papers/native-moving-zero-covariance/README.md).
+The balance set transports with the cut while numerical zero stays zero.
+Retaining the signed form and metric preserves negative as well as positive
+directions. The actual next-observation Schur sign is invariant under lawful
+acquired-frame changes. 108 exact checks, 3 native proof replays and 10 controls
+pass. RH's universal source/innovation positivity remains open.
+
 Latest quantum-gravity research stage: [SRT-1 — graded singular-response transport](papers/native-singular-response-transport/README.md).
 Axis response survives a specified singular chart when its graded record is retained:
 the `(i,j)` entry requires vanishing order `w_i+w_j`, and its coefficient at that
@@ -41,7 +48,7 @@ coupled reflection-sector ratio and the calibrated logarithmic diagonal criterio
 explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
 supplies the curved matter–metric interface and
 [CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
-All 19 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+All 20 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
 CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)

@@ -27,6 +27,7 @@ stages = [
     'native-local-normal-closure',
     'native-relational-event-clock',
     'native-singular-response-transport',
+    'native-moving-zero-covariance',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
