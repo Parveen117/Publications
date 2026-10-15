@@ -1,7 +1,7 @@
 {
   "protocol": "MZC1_MOVING_ZERO_COVARIANCE_V1",
   "status": "PASS_NATIVE_MOVING_ZERO_COVARIANCE",
-  "source_pins_sha256": "344b2c107a446b19915b32522f474f8c7990208a287f326374122d9c41d6a4bd",
+  "source_pins_sha256": "f816a8c082b0cb080a6f2c29c0b20b96b6740a5abce23cfd8a6b9e0f4c9bdd0c",
   "presentations": [
     {
       "name": "invertible_transport",
@@ -5223,6 +5223,226 @@
       "passed": true
     },
     {
+      "name": "common:classifier_unitary",
+      "passed": true
+    },
+    {
+      "name": "common:allowed_upper_arc",
+      "passed": true
+    },
+    {
+      "name": "common:excluded_lower_arc",
+      "passed": true
+    },
+    {
+      "name": "common:skew_generator:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:initial_dimension:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:persistent_dimension:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:descended_record_exists:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:descended_identity:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:initial_cut_and_sector:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:rational_step_unitary:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:moving_cut_zero:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:moving_sector_admissible:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:Krylov_span_matches_native_closure:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:basis_dimension:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:complete_kernel_basis:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:generator_preserves_carrier:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:finite_step_preserves_carrier:internal_circle",
+      "passed": true
+    },
+    {
+      "name": "common:fixed_frame_zero_with_internal_motion",
+      "passed": true
+    },
+    {
+      "name": "common:entire_initial_carrier_persists",
+      "passed": true
+    },
+    {
+      "name": "common:skew_generator:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:initial_dimension:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:persistent_dimension:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:descended_record_exists:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:descended_identity:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:initial_cut_and_sector:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:rational_step_unitary:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:moving_cut_zero:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:moving_sector_admissible:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:Krylov_span_matches_native_closure:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:basis_dimension:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:complete_kernel_basis:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:generator_preserves_carrier:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:finite_step_preserves_carrier:one_leaking_direction",
+      "passed": true
+    },
+    {
+      "name": "common:skew_generator:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:initial_dimension:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:persistent_dimension:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:descended_record_exists:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:descended_identity:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:initial_cut_and_sector:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:rational_step_unitary:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:moving_cut_zero:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:moving_sector_admissible:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:Krylov_span_matches_native_closure:coupled_planes",
+      "passed": true
+    },
+    {
+      "name": "common:first_jet_zero",
+      "passed": true
+    },
+    {
+      "name": "common:skew_generator:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:initial_dimension:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:persistent_dimension:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:descended_record_exists:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:descended_identity:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:initial_cut_and_sector:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:rational_step_unitary:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:moving_cut_zero:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:moving_sector_admissible:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:Krylov_span_matches_native_closure:cut_changes_inside_allowed_arc",
+      "passed": true
+    },
+    {
+      "name": "common:allowed_sector_preserved_but_cut_changes",
+      "passed": true
+    },
+    {
       "name": "invertible_transport:confluence",
       "passed": true
     },
@@ -5306,6 +5526,38 @@
     },
     {
       "name": "circle:chart_boundary_is_finite_zero",
+      "rejected": true
+    },
+    {
+      "name": "common:initial_equilibrium_implies_persistence:one_leaking_direction",
+      "rejected": true
+    },
+    {
+      "name": "common:entire_initial_carrier_is_invariant:one_leaking_direction",
+      "rejected": true
+    },
+    {
+      "name": "common:initial_equilibrium_implies_persistence:coupled_planes",
+      "rejected": true
+    },
+    {
+      "name": "common:entire_initial_carrier_is_invariant:coupled_planes",
+      "rejected": true
+    },
+    {
+      "name": "common:first_jet_suffices",
+      "rejected": true
+    },
+    {
+      "name": "common:initial_equilibrium_implies_persistence:cut_changes_inside_allowed_arc",
+      "rejected": true
+    },
+    {
+      "name": "common:entire_initial_carrier_is_invariant:cut_changes_inside_allowed_arc",
+      "rejected": true
+    },
+    {
+      "name": "common:sector_preservation_implies_cut_equilibrium",
       "rejected": true
     },
     {
@@ -5436,18 +5688,879 @@
         ]
       }
     ],
+    "common_equilibrium_results": [
+      {
+        "name": "internal_circle",
+        "initial_dimension": 2,
+        "persistent_dimension": 2,
+        "closure_ranks": [
+          1
+        ],
+        "defect_record": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "closed_record": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "descended_generator": [
+          [
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "kernel_basis": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "finite_step": [
+          [
+            [
+              "4/5",
+              "0"
+            ],
+            [
+              "-3/5",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "3/5",
+              "0"
+            ],
+            [
+              "4/5",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "fixed_defect_after_step": [
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "one_leaking_direction",
+        "initial_dimension": 2,
+        "persistent_dimension": 1,
+        "closure_ranks": [
+          1,
+          2
+        ],
+        "defect_record": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "closed_record": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "descended_generator": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "kernel_basis": [
+          [
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "finite_step": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "4/5",
+              "0"
+            ],
+            [
+              "-3/5",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "3/5",
+              "0"
+            ],
+            [
+              "4/5",
+              "0"
+            ]
+          ]
+        ],
+        "fixed_defect_after_step": [
+          [
+            [
+              "3/5",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "3/5",
+              "0"
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "coupled_planes",
+        "initial_dimension": 2,
+        "persistent_dimension": 0,
+        "closure_ranks": [
+          1,
+          2,
+          3
+        ],
+        "defect_record": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "closed_record": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "descended_generator": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "kernel_basis": null,
+        "finite_step": [
+          [
+            [
+              "9/11",
+              "0"
+            ],
+            [
+              "-6/11",
+              "0"
+            ],
+            [
+              "2/11",
+              "0"
+            ]
+          ],
+          [
+            [
+              "6/11",
+              "0"
+            ],
+            [
+              "7/11",
+              "0"
+            ],
+            [
+              "-6/11",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2/11",
+              "0"
+            ],
+            [
+              "6/11",
+              "0"
+            ],
+            [
+              "9/11",
+              "0"
+            ]
+          ]
+        ],
+        "fixed_defect_after_step": [
+          [
+            [
+              "2/11",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2/11",
+              "0"
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "cut_changes_inside_allowed_arc",
+        "initial_dimension": 1,
+        "persistent_dimension": 0,
+        "closure_ranks": [
+          2,
+          3
+        ],
+        "defect_record": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "closed_record": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "descended_generator": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "kernel_basis": null,
+        "finite_step": [
+          [
+            [
+              "4/5",
+              "0"
+            ],
+            [
+              "-3/5",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "3/5",
+              "0"
+            ],
+            [
+              "4/5",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "fixed_defect_after_step": [
+          [
+            [
+              "-3/5",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ]
+      }
+    ],
     "scope": {
       "examples": "exact synthetic controls; no new zeta data",
       "RH_proved": false,
       "QG_complete": false,
       "analytic_RH_bridge_certified": false,
-      "general_proofs": "THEOREM.md",
-      "source_RH_certificate_rerun": false
+      "general_proofs": [
+        "THEOREM.md",
+        "CIRCULAR_SECTORS.md",
+        "SECTOR_EQUILIBRIUM.md"
+      ],
+      "source_RH_certificate_rerun": false,
+      "independent_RH_generator_identified": false
     }
   },
   "summary": {
-    "exact_checks": 139,
-    "negative_controls": 14,
+    "exact_checks": 194,
+    "negative_controls": 22,
     "native_presentations": 2,
     "symbolic_certificates": 3,
     "serialized_replays": 3

@@ -92,6 +92,59 @@ ck('circle:product_source_reading',eq(uncayley(Uproduct),sc(I,'-4/3')));
 ck('circle:source_sum_positive_phase',eq(imag(Usum),sc(I,'8/17')));
 no('circle:positive_arc_closed_under_composition',!eq(Uproduct,Usum));
 no('circle:chart_boundary_is_finite_zero',rejects(()=>uncayley(sc(I,-1))));
+// MZC-3: combine the declared sector defect and cut, then reuse CRC row closure.
+const I3=N.identity(3),Ps=N.matrix([[1,0,0],[0,1,0],[0,0,0]]),Qs=N.sub(I3,Ps);
+const classifier=sc(N.sub(Ps,Qs),N.IOTA),c3=N.matrix([[0,0,1]]);
+const g12=N.matrix([[0,-1,0],[1,0,0],[0,0,0]]),g23=N.matrix([[0,0,0],[0,0,-1],[0,1,0]]);
+const col1=N.matrix([[1],[0],[0]]),col2=N.matrix([[0],[1],[0]]);
+ck('common:classifier_unitary',eq(mm(dg(classifier),classifier),I3));
+ck('common:allowed_upper_arc',eq(mm(classifier,Ps),sc(Ps,N.IOTA)));
+ck('common:excluded_lower_arc',eq(mm(classifier,Qs),sc(Qs,N.IOTA.neg())));
+const common_cases=[
+ {name:'internal_circle',C:c3,G:g12,initial:2,persistent:2,x:col1,basis:N.matrix([[1,0],[0,1],[0,0]])},
+ {name:'one_leaking_direction',C:c3,G:g23,initial:2,persistent:1,x:col2,basis:col1},
+ {name:'coupled_planes',C:c3,G:N.add(g12,g23),initial:2,persistent:0,x:col1},
+ {name:'cut_changes_inside_allowed_arc',C:N.matrix([[1,0,0]]),G:g12,initial:1,persistent:0,x:col2}
+];
+const common_equilibrium_results=[];
+for(const fixture of common_cases){
+ const {name,C,G,x}=fixture,defect=C.concat(Qs),closure=N.rowClosure(defect,[G]),O=closure.observer;
+ const B=N.descendedAction(G,O),W=N.cayley(G,'1/3'),wx=mm(W,x),Ct=mm(C,dg(W)),Pt=mm(W,Ps,dg(W));
+ ck('common:skew_generator:'+name,N.isZero(N.add(G,dg(G))));
+ ck('common:initial_dimension:'+name,3-N.rank(defect)===fixture.initial);
+ ck('common:persistent_dimension:'+name,3-closure.rank===fixture.persistent);
+ ck('common:descended_record_exists:'+name,B!==null);
+ ck('common:descended_identity:'+name,eq(mm(O,G),mm(B,O)));
+ ck('common:initial_cut_and_sector:'+name,N.isZero(mm(defect,x)));
+ ck('common:rational_step_unitary:'+name,eq(mm(dg(W),W),I3));
+ ck('common:moving_cut_zero:'+name,N.isZero(mm(Ct,wx)));
+ ck('common:moving_sector_admissible:'+name,eq(mm(Pt,wx),wx));
+ const powers=defect.concat(mm(defect,G),mm(defect,G,G));
+ ck('common:Krylov_span_matches_native_closure:'+name,N.rank(powers)===closure.rank&&N.rank(powers.concat(O))===closure.rank);
+ if(fixture.basis){
+  const E=fixture.basis,Pe=mm(E,dg(E));
+  ck('common:basis_dimension:'+name,N.rank(E)===fixture.persistent);
+  ck('common:complete_kernel_basis:'+name,N.isZero(mm(O,E)));
+  ck('common:generator_preserves_carrier:'+name,eq(mm(Pe,G,E),mm(G,E)));
+  ck('common:finite_step_preserves_carrier:'+name,eq(mm(Pe,W,E),mm(W,E)));
+ }
+ if(name==='internal_circle'){
+  ck('common:fixed_frame_zero_with_internal_motion',N.isZero(mm(defect,wx))&&!eq(wx,x));
+  ck('common:entire_initial_carrier_persists',N.descendedAction(G,N.rref(defect).basis)!==null);
+ }else{
+  no('common:initial_equilibrium_implies_persistence:'+name,!N.isZero(mm(defect,wx)));
+  no('common:entire_initial_carrier_is_invariant:'+name,N.descendedAction(G,N.rref(defect).basis)===null);
+ }
+ if(name==='coupled_planes'){
+  ck('common:first_jet_zero',N.isZero(mm(defect,G,x)));
+  no('common:first_jet_suffices',!N.isZero(mm(defect,G,G,x)));
+ }
+ if(name==='cut_changes_inside_allowed_arc'){
+  ck('common:allowed_sector_preserved_but_cut_changes',N.isZero(N.commutator(G,Ps))&&eq(mm(Ps,wx),wx));
+  no('common:sector_preservation_implies_cut_equilibrium',!N.isZero(mm(C,wx)));
+ }
+ common_equilibrium_results.push({name,initial_dimension:fixture.initial,persistent_dimension:fixture.persistent,closure_ranks:closure.ranks,defect_record:defect,closed_record:O,descended_generator:B,kernel_basis:fixture.basis||null,finite_step:W,fixed_defect_after_step:mm(defect,wx)});
+}
 function register(name,spec){const s=new M.Presentation(spec),audit=s.audit();ck(name+':confluence',audit.status==='CONFLUENT_BY_CHECKED_DIAMONDS');presentations.push({name,spec:s.spec(),audit});systems.set(s.hash(),s);return s;}
 function prove(name,lhs,rhs){const s=lhs.system,r=s.reduce(lhs.minus(rhs),{witness:true});ck(name,r.normal.terms.size===0);const certificate=JSON.parse(JSON.stringify(r.certificate));ck(name+':replay',s.replay(certificate));proofs.push({name,lhs:lhs.toJSON(),rhs:rhs.toJSON(),certificate});}
 const inv=register('invertible_transport',{tokens:['c','u','v','x'],rules:[{id:'uv',lhs:['u','v'],rhs:[[[],1]],source:'U inverse V'},{id:'vu',lhs:['v','u'],rhs:[[[],1]],source:'V inverse U'}]});
@@ -106,7 +159,7 @@ prove('words:Schur_denominator_cleared',Ap.times(dp).minus(sq(bp)),sq(p).times(s
 const chosen=proofs[0],bad=JSON.parse(JSON.stringify(chosen.certificate));bad.steps[0].coefficient=['991','0'];
 no('integrity:tampered_proof_rejected',rejects(()=>systems.get(chosen.certificate.presentation).replay(bad)));
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
-const payload={protocol:'MZC1_MOVING_ZERO_COVARIANCE_V1',status:'PASS_NATIVE_MOVING_ZERO_COVARIANCE',source_pins_sha256:hash(fs.readFileSync(path.join(__dirname,'SOURCE_PINS.json'))),presentations,proofs,checks,negative_controls,results:{reciprocal,innovation_results,scope:{examples:'exact synthetic controls; no new zeta data',RH_proved:false,QG_complete:false,analytic_RH_bridge_certified:false,general_proofs:'THEOREM.md',source_RH_certificate_rerun:false}},summary:{exact_checks:checks.length,negative_controls:negative_controls.length,native_presentations:presentations.length,symbolic_certificates:proofs.length,serialized_replays:proofs.length}};
+const payload={protocol:'MZC1_MOVING_ZERO_COVARIANCE_V1',status:'PASS_NATIVE_MOVING_ZERO_COVARIANCE',source_pins_sha256:hash(fs.readFileSync(path.join(__dirname,'SOURCE_PINS.json'))),presentations,proofs,checks,negative_controls,results:{reciprocal,innovation_results,common_equilibrium_results,scope:{examples:'exact synthetic controls; no new zeta data',RH_proved:false,QG_complete:false,analytic_RH_bridge_certified:false,general_proofs:['THEOREM.md','CIRCULAR_SECTORS.md','SECTOR_EQUILIBRIUM.md'],source_RH_certificate_rerun:false,independent_RH_generator_identified:false}},summary:{exact_checks:checks.length,negative_controls:negative_controls.length,native_presentations:presentations.length,symbolic_certificates:proofs.length,serialized_replays:proofs.length}};
 const bytes=JSON.stringify(payload,null,2)+'\n',sha=hash(bytes),file=path.join(__dirname,'CERTIFICATE.json');
 if(process.argv.includes('--write')){fs.writeFileSync(file,bytes);fs.writeFileSync(path.join(__dirname,'EXPECTED.sha256'),sha+'  CERTIFICATE.json\n');}else{assert.equal(fs.readFileSync(file,'utf8'),bytes);assert.equal(fs.readFileSync(path.join(__dirname,'EXPECTED.sha256'),'utf8'),sha+'  CERTIFICATE.json\n');}
 console.log(JSON.stringify({status:payload.status,...payload.summary,sha256:sha}));

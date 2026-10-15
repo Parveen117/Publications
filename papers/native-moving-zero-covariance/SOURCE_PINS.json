@@ -1,10 +1,10 @@
 {
   "protocol": "MZC1_SOURCE_PINS_V1",
   "files": {
-    "README.md": "1b8fa0abd40143b82f4b61e446eb00c1cd5f864bfdf41b6b74d87a3df0852a12",
+    "README.md": "5f31316e29c91bbdfc7138f41e2780b6c3226454fcc3e8c3f4167f922f6aee54",
     "THEOREM.md": "11a3a370192493f543b357d9701cd3d09e6386aa37079b927946304b000d1b0a",
-    "SOURCE_MAP.md": "3a1ba46d551189247c77a9d31c84584ed04d1aec7f2e70ad949ca9cc2460b303",
-    "verify.cjs": "799eadbf00b56cf8ebecc7b0c511ca32bd201e2d71c1b52ba27e03bae385e1d6",
+    "SOURCE_MAP.md": "92784b50d695d38d01703017651d2a16eca1bdcd3bc2ececcd1eced599cf41b1",
+    "verify.cjs": "a9c4f104ebfd7de895ed89adcc79e0a5f40f523e73b732a91bb5dc11e342d944",
     "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
     "sources/SE26.md": "baf4664ebb7e3348836bfe4773b50a12c914287d858d67a7093262eecc0219bb",
     "sources/SE29.md": "2fe350af6f3ea0abc4946199de8be4ec33898bc46272e9d42813d2d42bcbdb2f",
@@ -18,6 +18,7 @@
     "CIRCULAR_SECTORS.md": "a21108b701778e59d10357839b2dcd2f311707291a5738c8841c53d401ae705f",
     "../emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md": "325a5d025874ac678d38ad7e20ca0cc1ddc68b9f9d267b93333829883cdf1932",
     "../emk-ugd-algebra/certificates/ugd1_numerals.py": "23430ebc060a9a8dd1aab670392bcb82d46dd148c6a643bda87d61a4e206dc85",
-    "../emk-ugd-algebra/certificates/emk2_native_carrier.py": "49d8548e7e3ccc2ce77bdc0f5a317b737f3bd37dc4d9e1f90c9f87852c37d1c0"
+    "../emk-ugd-algebra/certificates/emk2_native_carrier.py": "49d8548e7e3ccc2ce77bdc0f5a317b737f3bd37dc4d9e1f90c9f87852c37d1c0",
+    "SECTOR_EQUILIBRIUM.md": "be3a90133ba787465b33cbfe3ab6324452edf406b8a4349cfdb3ad685053c7b2"
   }
 }

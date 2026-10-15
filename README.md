@@ -1,18 +1,14 @@
 # Publications
 
-Latest QG-to-RH application: [MZC-1 — moving zero covariance](papers/native-moving-zero-covariance/README.md).
-The balance set transports with the cut while numerical zero stays zero.
-Retaining the signed form and metric preserves negative as well as positive
-directions. The actual next-observation Schur sign is invariant under lawful
-acquired-frame changes. 108 exact checks, 3 native proof replays and 10 controls
-pass. RH's universal source/innovation positivity remains open.
-
-The [MZC-2 circular-sector extension](papers/native-moving-zero-covariance/CIRCULAR_SECTORS.md)
-reuses SE26/SE29: positivity is absence of lower-arc spectral support of the
-actual circular comparison operator. It distinguishes algebra grading from
-spectral sign and retains mixed blocks. Circular composition alone need not
-preserve the positive arc. Combined packet: 139 checks, 3 native proof replays
-and 14 controls pass; the actual RH sector exclusion remains open.
+Latest QG-to-RH application: [MZC-1/2/3 — moving zero, circular sectors and common equilibrium](papers/native-moving-zero-covariance/README.md).
+A declared spectral sector defines admissibility. Stack its leakage record with
+the cut as `D=(C,I-P)`. Native operation closure computes the largest carrier
+where fixed and co-moving observers retain the same equilibrium:
+`E_infinity = intersection ker(D G^k)`. Exact cases retain two, one or zero
+dimensions; a first-order balance can leak at the next response level.
+Combined packet: 194 exact checks, 3 native proof replays and 22 controls pass.
+SE26/SE29/SE49 and CRC results are reused. An independent RH generator and
+universal source-sector exclusion remain open; no new zeta data is claimed.
 
 Latest quantum-gravity research stage: [SRT-1 — graded singular-response transport](papers/native-singular-response-transport/README.md).
 Axis response survives a specified singular chart when its graded record is retained:

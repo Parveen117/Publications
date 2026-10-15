@@ -27,5 +27,11 @@ controls. No separate discovery of those existing source theorems is claimed.
 
 The integration is the moving-balance/source-sign audit and a block proof of the acquired-frame Schur-sign law. SE49 Theorem 4, equation (49.12), already supplies its real upper-triangular LDL-pivot version. We reuse that result explicitly; the complex block form and moving-cut connection are the scope here. Standard invertible covariance and completion of the square are credited; no claim of priority for these elementary identities is made.
 
+MZC-3 reuses CRC-1 section 2's row-closure and descended-action theorem. It
+applies that theorem to the joint record D=(C,I-P_Sigma), so both cut equilibrium
+and spectral-sector admissibility are retained. The finite-generator fixtures
+are declared controls, not independently extracted RH dynamics. The general
+finite-dimensional formula also uses Cayley-Hamilton and matrix exponentiation.
+
 `SOURCE_PINS.json` binds the packet, source snapshots, engines and predecessor theorem files. `CERTIFICATE.json` binds those pins and deterministic native witnesses. SHA-256 provides reproducibility/integrity, not an independent mathematical truth guarantee.
 
