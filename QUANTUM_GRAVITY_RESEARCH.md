@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 15 October 2026. Current stage: **LCF-1**.
+Updated 15 October 2026. Current stage: **LNC-1**.
 
 ## Working agreement
 
@@ -10,11 +10,13 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
-[LCF-1](papers/native-local-coframe-covariance/README.md) addresses AGD's actual mixed local obstruction. RCG/CID's metric coefficient yields a coframe density on regular spatial cut patches; for the circle, `e_cut=|partial_x theta|/2`. Its derived transformation `delta_f e=(f e)'` cancels the mixed residual in `A_N(e)=C D_N+gRNe`. EMK-C1's full covariance contract is used directly. The UGD-A0 carrier restriction and UGD-G1 phase/scale/sheet distinctions are retained rather than replacing native associative operator arithmetic by raw carry addition.
+[LNC-1](papers/native-local-normal-closure/README.md) closes the three local classical secondary-constraint brackets in a selected 1+1 canonical coframe-plus-scalar model. Its geometry density is `h_g=e*pi*p_phi+(e'/e)*phi'-phi''+e^2 V(phi)`, with spatial density `d_g=-e*pi'+p_phi*phi'`. Combined with LCF's massive matter generator, it gives `{D,D}=D`, `{D,H}=H`, `{H,H}=D` with the displayed densitized smearings. The proof holds for arbitrary smooth potential and admissible compact smearings, not just the finite fixtures.
 
-The enlarged spatial/spatial and spatial/normal brackets close exactly. The normal/normal bracket still differs by the coframe-field direction `V_(NM'-MN')`. This identifies the next missing term, rather than declaring a complete constraint algebra. A spatially covariant matter action supplies `J=i eta g psi*R psi`; on an oriented circle-cut patch its fixed-N variation gives matter force `partial_x(NJ)/2` on the cut momentum.
+The geometry now has normal evolution `dot e|N=N e p_phi`. The existing matter source `-NJ` survives in coframe momentum evolution, and the local circle-cut variation remains `-(NJ)'/2`. The full canonical bracket supplies the geometry direction missing from LCF's matter-only normal action. Smooth solutions preserve the constraint surface under the stated boundary contract.
 
-The local cut-field interpretation is additional structure: a spatially constant cut has zero sensitivity metric and cannot supply this nondegenerate coframe. AGD's global quantum geometry is not silently promoted to a local quantum field. Its established dynamics, IRT reflection invariant and ZCR recovery estimates remain frozen and scoped to their original models.
+The new canonical pair, scalar and action ansatz are selected structure of a known dilaton-type construction; uniqueness from native cut information is not asserted. An exact control gives two closed theories with the same initial constraint data but accelerations `0` and `-1`. Symmetry/closure does not select the physical potential. Classical commuting matter fields, not physical quantized fermions, are used. Positivity, quantum anomalies and local quantum-field completion remain open.
+
+All global-mode AGD/IRT/ZCR results remain frozen in their original scope. A physical 3+1 theory is not obtained by renaming this local 1+1 construction.
 
 ## Lineage to reuse
 
@@ -35,25 +37,26 @@ The local cut-field interpretation is additional structure: a spatially constant
 | [CLD-1](papers/native-cut-local-dynamics/README.md) | Changing-cut memory, finite covariant closure/conditioning budget, and AGD moving-reflection criterion | Cut-relative locality is not spatial locality; infinite memory norm estimates and local gravitational constraints are not proved |
 | [RCG-1](papers/native-relational-cut-space/README.md) | Based cut geometry, rank-one overlap/cycle reconstruction, common-transport residual and its exact geometry-change law | Standard reconstruction method credited; operational geometry does not select physical spacetime or an interacting gravitational action |
 | [LCF-1](papers/native-local-coframe-covariance/README.md) | Cut-gradient coframe density, cancellation of mixed local residual, covariant matter action and local cut-source variation | Normal geometry transport, full constraints and quantum local-field completion remain open; regular spatial patch required |
+| [LNC-1](papers/native-local-normal-closure/README.md) | Selected canonical local geometry action closes all three classical 1+1 brackets with massive matter; source and constraint preservation retained | Extra scalar/action inputs explicit; physical reduction, quantum representation/anomalies, positivity and 3+1 extension open |
 
 The earlier classical MG/SM action results are pinned and included as source snapshots in CCL-1. Reuse their existing classical coframe/source variation instead of proposing it as new. They do not supply the missing positive interacting quantum theory.
 
 ## Next proof target
 
-**Derive normal evolution of the local geometry from an admitted action so that it supplies LCF's missing `V_(NM'-MN')`, and prove preservation of the full constraints.**
+**Construct the physical reduction and quantum constraint representation of the specified local model, and test anomalies and physical-sector positivity.**
 
-LCF resolves the specified mixed covariance defect; it does not yet provide the normal geometry generator. The next work must:
+LNC resolves LCF's normal-bracket obligation within its explicit classical extension. The next work must:
 
-1. Specify the local cut-field canonical/quantum data and a geometry action, retaining the derived fixed-N matter source and distinguishing independent coframes from composite cut coframes.
-2. Compute all brackets with the resulting geometry-field normal action. Remove or consistently reinterpret the explicit normal obstruction without dropping an observable field direction.
-3. Retain the GCP coframe/matter interface and RCG comparison/phase records. Treat degenerate cut-gradient patches and global UGD sheet records explicitly where they enter.
-4. Establish domain, positivity and controlled classical-field recovery for the enlarged model; the prior global AGD/ZCR results do not automatically prove these local-field claims.
+1. Fix a working sector and boundary action. Start with `V=0` around the flat local vacuum as a declared baseline; closure alone does not privilege that potential. Compact-smearing algebra does not automatically provide a physical boundary Hamiltonian.
+2. Reduce or represent the constraints with an explicit physical matter adapter. LNC's commuting classical spinor fields are not quantized fermions, and kinematic cross-momentum energy is not positive.
+3. Calculate ordering/central terms and domain conditions rather than infer quantum closure from Poisson closure. Identify genuine physical observables and a positive physical inner product if the construction permits one.
+4. Retain the LCF source, local cut realization and UGD global-record conditions. Establish the enlarged model's controlled recovery separately from the old global AGD/ZCR model.
 
-A complete physical claim still requires the intended 3+1 interacting limit, physically meaningful observables and calibrated predictions. Work on the specific missing normal-evolution theorem rather than reporting a completion percentage.
+Physical 3+1 interactions and empirical calibration remain downstream obligations. The model-choice ledger must distinguish selected assumptions, derived identities and independent predictions.
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. The repository runner replays all 16 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. The repository runner replays all 17 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py

@@ -1,0 +1,16 @@
+{
+  "protocol": "LNC1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "7e82c401a8aec90ce83b86a595ca023216192382e55b3a347db766d16189c378",
+    "THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7",
+    "verify.cjs": "192fa4c01408bf7b257e11667ef38450b821bd39f724eae44a38e42fec719d64",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-coframe-covariance/THEOREM.md": "70f5e2c0e2c9948664421d364441c51ab1a455e0cfc1f88784b99313a11e156c",
+    "../native-local-coframe-covariance/verify.cjs": "cc4f7d54c4f5f617e5781842dea727a7afb486b15ca0e5ae42fbe0fcd64d12b4",
+    "../native-relational-cut-space/THEOREM.md": "b692cd897860249ae33931c0383f0f0a5ea400e8a83f8239d2caa2e7eaffbb12",
+    "../native-quantum-gravity-consistency/THEOREM.md": "4a431b5ad31d7981d7d505159c756db213dc6faac47d48534c911f20ad831335",
+    "../emk-ugd-algebra/CONNECTION_CALCULUS.md": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9"
+  }
+}

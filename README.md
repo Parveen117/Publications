@@ -1,15 +1,17 @@
 # Publications
 
-Latest quantum-gravity stage: [LCF-1 — cut-induced local coframe and matter source](papers/native-local-coframe-covariance/README.md).
-On a regular spatial circle-cut patch, the existing relational metric gives
-`e_cut=|partial_x theta|/2`. Its density transformation cancels AGD's mixed local
-residual exactly. The covariant matter action yields the fixed-N cut source
-`partial_s p_theta|matter = partial_x(NJ)/2`. The spatial/spatial and spatial/normal
-brackets close; the normal/normal bracket still lacks geometry-field transport.
-95 exact checks, 8 native algebraic certificates/replays and 17 controls pass.
-EMK covariance and the UGD carrier/ledger distinctions are explicitly reused.
+Latest quantum-gravity research stage: [LNC-1 — classical local constraint closure](papers/native-local-normal-closure/README.md).
+A selected canonical coframe-plus-scalar action supplies the previously missing
+normal geometry evolution. All three classical 1+1 constraint brackets close,
+including the massive LCF matter coupling, and preserve the constraint surface
+along smooth solutions. Closure leaves the potential arbitrary: two constrained
+initial examples give different coframe accelerations. Quantum completion is open.
+66 exact checks, 4 native algebraic certificates/replays and 14 controls pass.
+The added canonical fields and dilaton-type action ansatz are explicit inputs.
 [Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
 
+[LCF-1](papers/native-local-coframe-covariance/README.md) derives the cut-induced
+coframe density, mixed covariance repair and local matter-source variation.
 [RCG-1](papers/native-relational-cut-space/README.md) supplies relational cut
 geometry, oriented cycle records and the common-transport residual.
 [CLD-1](papers/native-cut-local-dynamics/README.md) supplies the moving-cut
@@ -21,7 +23,7 @@ coupled reflection-sector ratio and the calibrated logarithmic diagonal criterio
 explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
 supplies the curved matter–metric interface and
 [CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
-All 16 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+All 17 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
 CI also replays the inherited CID-D2 action packet.
 
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)
