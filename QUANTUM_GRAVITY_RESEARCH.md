@@ -10,6 +10,18 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+User-directed operator tool development, 16 October: [TLM-1](papers/native-tvsp-lambda-matrices/THEOREM.md)
+replaces the paused generic layered-matrix proposal with actual TVSP-generated
+response layers. One finite matrix retains the response jets; its spectrum
+can remain unchanged while the source curvature changes. The exact source
+keeps reading 5 and gives curvature 5 mu²/324. First context layers recover
+the selected curvature; all layers of one scalar reading need not suffice.
+This is a mathematical tool for future geometry readouts. It does not
+advance the LMD continuum domains or establish physical space quantization.
+The generic unpublished draft was preserved outside the checkout and is not
+an imported dependency. Continue this tool from its source contract; the
+physical geometry obligations below remain unchanged.
+
 [LMD-1](papers/native-logarithmic-material-density/THEOREM.md) constructs
 an explicitly different reduced representation that supports every
 smooth local material-circle flow. The Fourier covariance

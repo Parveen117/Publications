@@ -7,6 +7,7 @@ verified source results rather than a new collection of unrelated examples.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| TVSP-generated finite entry layers and curvature readout | Constructed in one declared source context | TLM-T1 through TLM-T5 | Exact point recovery, faithful algebraic matrix encoding and selected Hessian curvature; no positive jet *-representation or physical space quantization |
 | Finite quadratic-observer representation and verification | Closed within the declared finite contract | CHD-1/2/3; finalized eight-page manuscript v1.0 | Quadratic observables, calibrated finite carrier, declared linear transport and retained coherent record |
 | Regular homogeneous V=0 matter-free quantum geometry sector | Closed for the selected quantization | HQS-T1 through HQS-T5; HQS-1 native packet | Product ordering; regular-clock averaging; both momentum signs; selected reduced Fourier matching and physical observable domains |
 | Local V=0 matter-free quantum constraint algebra | Closed for the selected reversed-vacuum current representation | LQA-T1 through LQA-T6; LQA-1 native packet | Positive kinematic norm and all-mode commutators on a common algebraic domain; no physical state-space closure |

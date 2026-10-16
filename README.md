@@ -1,5 +1,13 @@
 # Publications
 
+Latest operator development: [TLM-1 — TVSP lambda-layered matrices](papers/native-tvsp-lambda-matrices/README.md).
+Every entry retains source-generated response layers in an explicit local
+context. Associative composition and exact ordinary recovery are proved.
+A single finite matrix exposes higher layers invisible to its spectrum;
+the source example keeps the reading 5 while curvature is 5 mu²/324.
+This is a response/operator record, not physical space quantization or a
+new closure of 3+1 quantum gravity.
+
 Latest quantum development: [LQA-1 — local constraint algebra and positive kinematics](papers/native-local-quantum-anomaly/README.md).
 For the actual periodic V=0 matter-free LNC source, an explicit reversed
 negative-sign oscillator vacuum gives anomaly-free local quantum constraint
