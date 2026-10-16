@@ -1,7 +1,7 @@
 {
-  "protocol": "RDE1_RESIDUAL_DIFF_ERGODICITY_V1",
+  "protocol": "RDE1_RESIDUAL_DIFF_ERGODICITY_V2",
   "status": "PASS_FINITE_WITNESSES_FOR_VP_DIVERGENCE_CLOSURE",
-  "source_pins_sha256": "14ddf102f5e5c37e3d76fb0e0ad9b6531a4c3748ef6fb767fcf7592cdce346ac",
+  "source_pins_sha256": "d73fa71a56a3e4cb4fead31a163f00f2d7e01eaeff91f8cbc8fcbf168e569abb",
   "checks": [
     {
       "name": "commutator_fourier_formula:sharp:00K4",
@@ -80,6 +80,10 @@
       "passed": true
     },
     {
+      "name": "uK_assembly_matches_vp_of_phi",
+      "passed": true
+    },
+    {
       "name": "vp_band_norm_decreases:16",
       "passed": true
     },
@@ -140,6 +144,10 @@
       "passed": true
     },
     {
+      "name": "weighted_divergence_functional_has_zero_mean",
+      "passed": true
+    },
+    {
       "name": "sector_commutant_dimension_two",
       "passed": true
     },
@@ -170,6 +178,26 @@
     {
       "name": "isometric_spectator_contract_holds_for_equal_weights",
       "passed": true
+    },
+    {
+      "name": "positive_weights_give_full_rank",
+      "passed": true
+    },
+    {
+      "name": "zero_weight_form_quotient_keeps_supported_sector",
+      "passed": true
+    },
+    {
+      "name": "zero_form_has_trivial_quotient",
+      "passed": true
+    },
+    {
+      "name": "kinematic_model_simultaneously_invariant",
+      "passed": true
+    },
+    {
+      "name": "slotwise_factored_form_has_rank_one",
+      "passed": true
     }
   ],
   "negative_controls": [
@@ -179,6 +207,10 @@
     },
     {
       "name": "gradient_cancellation_without_commuting_derivative",
+      "rejected": true
+    },
+    {
+      "name": "uK_assembly_without_derivative_factor",
       "rejected": true
     },
     {
@@ -206,11 +238,27 @@
       "rejected": true
     },
     {
+      "name": "plain_flow_preserves_gaussian_measure",
+      "rejected": true
+    },
+    {
       "name": "rescaling_W_intertwines_sign_mixing_observable",
       "rejected": true
     },
     {
       "name": "isometric_spectator_contract_holds_for_unequal_weights",
+      "rejected": true
+    },
+    {
+      "name": "zero_weight_W_is_invertible",
+      "rejected": true
+    },
+    {
+      "name": "kinematic_model_slotwise_invariant",
+      "rejected": true
+    },
+    {
+      "name": "simultaneously_invariant_form_has_rank_one",
       "rejected": true
     }
   ],
@@ -236,12 +284,14 @@
   },
   "results": {
     "continuum_proofs_machine_certified": false,
+    "audited": "2026-10-16 five-point audit; see ../AUDIT.md",
+    "invariant_measures": "nu_2 quasi-invariant, not invariant; no finite invariant measure << nu_2 (written proof, Prop. M)",
     "ergodicity_claim": "written proof in ERGODICITY.md, not certified here",
     "sharp_dirichlet_D12_route": "band norm does not decay in witness; L1 divergence of sharp sums not decided",
     "vallee_poussin_D12_route": "band norm decays in witness; continuum estimate written"
   },
   "summary": {
-    "exact_checks": 42,
-    "negative_controls": 10
+    "exact_checks": 49,
+    "negative_controls": 15
   }
 }

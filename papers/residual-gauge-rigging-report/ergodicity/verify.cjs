@@ -33,6 +33,13 @@ ck('multiplier_fixes_constants',vp(4)(0).eq(1)&&sharp(4)(0).eq(1));
 {const phi=us[1],D=Ds[1],m=vp(5);
  const lhs=sub(conv(D,der(apply(m,phi))),apply(m,conv(D,der(phi))));ck('gradient_cancellation_identity',meq(lhs,comm(D,m,der(phi))));
  no('gradient_cancellation_without_commuting_derivative',!meq(sub(conv(D,apply(m,phi)),apply(m,conv(D,der(phi)))),comm(D,m,der(phi))));}
+// W1b (audit point 3): coefficient assembly of u_K needs the derivative factor k.
+// Model alpha=1/2 (e_k(alpha)=(-1)^k exact), I=id: c_k=(-1)^k G_k; e_k'(chi) ~ k e_k(alpha) e_k.
+{const G=trig([[1,'1/3'],[-1,'1/3'],[2,'-1/7'],[-2,'-1/7'],[5,'2/5'],[-5,'2/5']]);
+ const m=vp(3),sgn=k=>(k%2||k%2===-1)?f(-1):ONE;
+ const asm=withD=>{const r=new Map();for(const[k,g]of G){let t=m(k).mul(sgn(k)).mul(g).mul(sgn(k));if(withD)t=t.mul(k);r.set(k,(r.get(k)||Z).add(t));}return r;};
+ ck('uK_assembly_matches_vp_of_phi',meq(asm(true),apply(m,der(G))));
+ no('uK_assembly_without_derivative_factor',!meq(asm(false),apply(m,der(G))));}
 // W2: band norm with the borderline coefficient profile |u_q| = q^-4 (u in H^s for s<7/2 only)
 const borderline=Q=>{const u=new Map();for(let q=1;q<=Q;q++){const v=f(1).div(f(q).pow(4));u.set(q,v);u.set(-q,v);}return u;};
 const h4norm2=v=>[...v].reduce((s,[p,c])=>s.add(w4(p).mul(c.pow(2))),Z);
@@ -83,6 +90,13 @@ no('closure_one_direction_leaves_constants_only',nullity([2,2],[0],[2,2])!==1);
 ck('closure_one_direction_nullity_counts_functions_of_x2',nullity([2,2],[0],[2,2])===4);
 no('closure_with_undoubled_score_keeps_constants',nullity([2,2],[0,1],[1,1])!==1);
 ck('closure_with_undoubled_score_kills_constants',nullity([2,2],[0,1],[1,1])===0);
+// W3b (audit point 1): the weighted divergence functional is invariant (zero mean),
+// while the plain flow does not preserve the Gaussian measure (Liouville fails).
+{const E=(a,b)=>mom(2,a).mul(mom(2,b));
+ const dMean=(a,b,j)=>{const d=j===0?a:b;return d>0?(j===0?E(a-1,b).mul(d):E(a,b-1).mul(d)):Z;};
+ const skMean=(a,b,j)=>(j===0?E(a+1,b):E(a,b+1)).div(2).sub(dMean(a,b,j));
+ ck('weighted_divergence_functional_has_zero_mean',monos(4).every(([a,b])=>skMean(a,b,0).zero()&&skMean(a,b,1).zero()));
+ no('plain_flow_preserves_gaussian_measure',!(dMean(1,0,0).zero()&&dMean(3,0,0).zero()));}
 // ---- W4: sign sectors, commutant, populations and unitary rescaling --------
 const blk=(A,B)=>{const z=[[0,0],[0,0]];return N.matrix([...A.map((r,i)=>[...r,...z[i]]),...B.map((r,i)=>[...z[i],...r])]);};
 const sx=[[0,1],[1,0]],sz=[[1,0],[0,-1]],I2=[[1,0],[0,1]],O2=[[0,0],[0,0]];
@@ -102,11 +116,24 @@ no('rescaling_W_intertwines_sign_mixing_observable',!N.equal(N.mul(W,mix),N.mul(
 const e3=[0,0,1,0],norm=(B,x)=>N.mul(N.matrix([x]),N.mul(B,N.dagger(N.matrix([x]))))[0][0].rad;
 ck('isometric_spectator_contract_holds_for_equal_weights',norm(Bw(1,1),e3).eq(1));
 no('isometric_spectator_contract_holds_for_unequal_weights',!norm(Bw(1,4),e3).eq(1));
+// ---- W5 (audit point 2): zero-weight sectors are quotients, not rescalings ----
+ck('positive_weights_give_full_rank',N.rank(Bw(1,4))===4);
+ck('zero_weight_form_quotient_keeps_supported_sector',N.rank(Bw(1,0))===2);
+ck('zero_form_has_trivial_quotient',N.rank(Bw(0,0))===0);
+no('zero_weight_W_is_invertible',N.rank(N.matrix([[1,0,0,0],[0,1,0,0],[0,0,0,0],[0,0,0,0]]))!==4);
+// ---- W6 (audit point 4): simultaneous invariance does not force factorization ----
+{const U=N.matrix(sx),I2m=N.identity(2),ell=N.matrix([[1,1]]);
+ ck('kinematic_model_simultaneously_invariant',N.equal(N.mul(N.dagger(U),N.mul(I2m,U)),I2m));
+ no('kinematic_model_slotwise_invariant',!N.equal(N.mul(N.dagger(U),I2m),I2m));
+ ck('slotwise_factored_form_has_rank_one',N.rank(N.mul(N.dagger(ell),ell))===1);
+ no('simultaneously_invariant_form_has_rank_one',N.rank(I2m)!==1);}
 // ---- certificate ------------------------------------------------------------
 const sha=sha0;
-const payload={protocol:'RDE1_RESIDUAL_DIFF_ERGODICITY_V1',status:'PASS_FINITE_WITNESSES_FOR_VP_DIVERGENCE_CLOSURE',
+const payload={protocol:'RDE1_RESIDUAL_DIFF_ERGODICITY_V2',status:'PASS_FINITE_WITNESSES_FOR_VP_DIVERGENCE_CLOSURE',
  source_pins_sha256:sha(fs.readFileSync(path.join(__dirname,'SOURCE_PINS.json'))),checks,negative_controls,measurements,
- results:{continuum_proofs_machine_certified:false,ergodicity_claim:'written proof in ERGODICITY.md, not certified here',
+ results:{continuum_proofs_machine_certified:false,
+  audited:'2026-10-16 five-point audit; see ../AUDIT.md',
+  invariant_measures:'nu_2 quasi-invariant, not invariant; no finite invariant measure << nu_2 (written proof, Prop. M)',ergodicity_claim:'written proof in ERGODICITY.md, not certified here',
   sharp_dirichlet_D12_route:'band norm does not decay in witness; L1 divergence of sharp sums not decided',
   vallee_poussin_D12_route:'band norm decays in witness; continuum estimate written'},
  summary:{exact_checks:checks.length,negative_controls:negative_controls.length}};

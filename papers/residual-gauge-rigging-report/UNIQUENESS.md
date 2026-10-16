@@ -16,6 +16,9 @@ curvature are out of scope; that is the other researcher's track.
 > contract (BC); and Section 3's claim that the sector ratio is "not
 > observable through any declared MPQ observable" is **withdrawn**: sign
 > projections do measure sector populations. See `ERGODICITY.md` Section 5.
+> `ERGODICITY.md` was audited and revised later the same day (quasi-invariance
+> versus invariant measures, zero-weight sectors, coefficient conventions,
+> the (BC) contract and slotwise invariance); the change list is `AUDIT.md`.
 
 Labels: **[P]** proved here; **[D]** taken from RGR-1, with the step audited
 below; **[E]** external theorem; **[C]** open or conjectural.
