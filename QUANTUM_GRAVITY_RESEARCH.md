@@ -10,6 +10,34 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Quantum-state realization, 16 October:
+[QRT-1](papers/native-quantum-response-transport/THEOREM.md) supplies the
+actual LMD Hilbert-space intertwiner requested after TET. Two existing
+commuting positive density observables generate filtered states with
+covariance Hessian H. Their response frame E satisfies H=E*E and
+H^(-1)E*partial_i E=(1/2)H^(-1)partial_i H, exactly TET's connection.
+Projection transport K is unitary on the whole existing sector and obeys
+K E(0)=E(t)U_TET(t), with the joint density polynomial domains preserved.
+
+This is an actual response-subspace construction, not an added qubit or
+an identification of the two orientation sectors. Its fixed rank-one
+response detector has loop probability sin²(Phi), where Phi is integrated
+oriented response curvature. Three small spectral cells prepare a normal
+state of the actual unbinned density with 1/8<kappa<3/8. Uniform moment
+bounds prove this continuum statement; finite native fixtures do not
+evaluate the density cell probabilities or assign curvature to the vacuum.
+A fixed detector at 45 degrees in the orthonormal response plane gives
+1/2+(1/2)sin(2Phi), resolving the orientation sign for sufficiently small
+loops. QRT replays 123 exact checks, 7 symbolic certificates and 28 negative
+controls; the integrated quantum-geometry chain now contains 45 stages.
+
+The source-positive quantum response/transport bridge is now constructed.
+Its metric is covariance geometry on observer-control space. Identification
+with the original material metric exp(2r) dz², a specified original
+density/current coupling that implements K, and the associated current
+domains remain explicit next obligations. The old LMD inverse-geometry
+and 3+1 endpoints below are preserved.
+
 User-directed source-transport continuation, 16 October:
 [TET-1](papers/native-tvsp-exponential-transport/THEOREM.md) connects the
 actual TLM source layers to exponential observer transport. H jets through
