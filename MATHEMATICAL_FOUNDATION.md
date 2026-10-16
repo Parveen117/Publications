@@ -22,6 +22,17 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[QRT-1: quantum density-response transport](papers/native-quantum-response-transport/THEOREM.md)
+realizes the TET connection inside LMD's existing positive Hilbert space.
+The covariance metric is the Gram matrix of actual response vectors, and
+its selected strain connection is exactly their projected connection.
+Projection parallel transport gives a unitary intertwiner and explicit
+preservation of joint density polynomial domains. A quantitative spectral
+cell preparation proves nonzero curvature for the actual unbinned density;
+finite comparison models are distinguished from that continuum argument.
+This is response/control geometry, with no inferred material metric or
+new canonical operator engine.
+
 [TET-1: TVSP exponential observer transport](papers/native-tvsp-exponential-transport/THEOREM.md)
 continues the actual TLM source into transport. Source jets through N
 determine transport jets through N; compatible moving observers and positive

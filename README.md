@@ -1,5 +1,13 @@
 # Publications
 
+Latest quantum-response development: [QRT-1 — physical states realize TVSP transport](papers/native-quantum-response-transport/README.md).
+Existing LMD density observables generate normalized states whose covariance
+metric induces exactly the TVSP connection. An explicit full-Hilbert-space
+unitary intertwines their response vectors with TET transport and preserves
+the stated density domains. An actual unbinned prepared density state has
+response curvature between 1/8 and 3/8. Fixed response detectors read its
+loop holonomy. Identification with material/spacetime geometry remains open.
+
 Latest source-transport development: [TET-1 — TVSP exponential observer transport](papers/native-tvsp-exponential-transport/README.md).
 Retained source layers generate ordered transport and metric-compatible
 observation cuts. The existing TVSP source has exact straight-path
