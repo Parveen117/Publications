@@ -45,12 +45,37 @@ verified source results rather than a new collection of unrelated examples.
 | Residual gauge density and doubled-covariance functional | Constructed on an explicit stronger test topology | RGR-T1 through RGR-T4 | Conditional Fourier determinant and rough-profile contraction proved before applying Ramer; kinematic covariance unchanged; full finite-group invariance and compatible common core |
 | Selected positive full source gauge sector and MPQ recovery | Constructed for the explicit rank-one pairing | RGR-T5; IGQ-T6 | Nonzero invariant functional, derived positive norm and onto MPQ spectral-domain intertwiner; one channel for this form, not classification of the whole invariant dual |
 | Uniqueness/completeness of residual gauge physical pairing | Open beyond the Gaussian scale family | RGR-T4/T5 | Covariance scale 2 is forced within the stated Gaussian integration family; additional distributions, positive forms and larger observable contracts remain unclassified |
+| Resolved original material geometry measurement | Constructed under an additional coherent-state POVM contract | RMG-T1 through RMG-T3 | Normalized probabilities on existing physical space; bounded geometry readings, dense r/m moment domains and positive self-adjoint m mean operators; no sharp continuum r field or new source apparatus |
+| Raw point geometry at unlimited resolution and fixed hbar | Obstructed for this measurement prescription | RMG-T4 | Vacuum r_N point laws are not tight; conjugate variance grows as hbar N^9/9; not a no-go for all renormalized geometry |
+| Mean circumference and controlled classical geometry recovery | Vacuum mean length diverges already at N=0; bounded readings recover classically | RMG-T4/T5 | hbar N^15 -> 0 suffices for C^2 profile and probabilistic coframe/length recovery; unbounded moments need not converge |
 | Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD core; RGR selected rigging | Nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
+
+RMG-1 applies a specified finite-resolution coherent-state joint
+measurement to the already constructed positive physical space. Its
+nonlinear outputs are the original reduced profiles, not just the
+adapted chart. The normalization, moment domains, positive momentum
+mean operators and phase-sensitive reading are explicit. Source global
+P feedback and reference momentum reconstruction are retained.
+
+This prescription fails to produce a raw point continuum geometry at
+fixed hbar: vacuum r readings escape every bounded interval. A separate
+tail calculation gives infinite vacuum mean circumference even at N=0.
+Bounded geometry measurements remain valid. The sufficient simultaneous
+limit hbar N^15 -> 0 instead recovers smooth classical geometry in C^2
+and bounded continuous geometry statistics. Thus the next composite
+task has a precise obstruction and recovery budget; continuum quantum
+geometry is not marked closed.
+
+The external agent keeps the independent full residual-Diff invariant
+dual/uniqueness task. No duplicate classification or merge of its report
+branch occurs in this development.
+
+### Previous RGR endpoint
 
 RGR-1 constructs the nonzero generalized physical functional that was
 missing at the CGD endpoint. The actual angular Jacobian cancels a
@@ -115,9 +140,12 @@ or enlarge this sector. The full kernel must not be declared one-channel
 just because the exhibited rank-one positive form has that quotient.
 Another source ordering needs its own domain and comparison.
 
-Separately define any desired nonlinear quantum geometry in the original
-r,m variables; complete classical coordinates do not automatically define
-their quantum composites. Source selection of the covariance, critical
+On the geometry track, reuse RMG's normalized resolved measurements and
+its obstruction. Construct a fixed-hbar coarse/renormalized composite
+prescription and controlled length domain, or establish a broader no-go
+with stated hypotheses. The external agent separately owns actual
+residual-Diff completeness/uniqueness; do not repeat the selected
+existence construction. Source selection of the covariance, critical
 patches, fully local apparatus, physical 3+1 recovery and calibration remain
 explicit. Reuse the existing states, domains, cutoff and measurement proofs
 rather than adding new model ingredients or restarting reduction.
