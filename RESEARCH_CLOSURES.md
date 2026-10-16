@@ -16,45 +16,49 @@ verified source results rather than a new collection of unrelated examples.
 | Regular physical measure with inherited observable contract | Unique up to normalization | LSC-T5 | Requires momentum-multiplier compatibility, the fixed HQS Q expression and its full-line matching; constraints alone do not fix the measure |
 | Complementary P=0,K!=0 physical clock sector | Closed for the declared quantization | CCS-T1 through CCS-T4 | Actual local affine reduction; universal all-mode dressing; positive physical norm; self-adjoint reduced scalar observables; selected matching |
 | Common physical completion of both noncritical axes | Closed for one punctured-plane averaging prescription | CCS-T5 | H_P direct_sum H_K; relative weights selected by common normalization, not forced by constraints |
-| Extension of that unchanged average through the joint origin | Obstructed on nonzero-origin smooth tests | CCS-T6 | Positive logarithmic divergence; optional separate rank-one form has no canonical clock; physical gluing open |
-| Full local physical quantum LNC construction | Open | LSC classifies the test-dual kernel; LPS/CCS supply both open-axis physical norms and local classical reductions | Critical origin, quantum fields beyond gauge-slice observables, alternative representation selection, matter and potentials remain open |
+| Extension of the unchanged average through the joint origin | Obstructed on nonzero-origin smooth tests | CCS-T6; COS-T3 through COS-T5 | Exact logarithmic coefficient; no single normalization retains both scales; positive all-test extension cannot retain the old momentum adjoints |
+| Critical classical orbit quotient and observable separation | Closed under the smooth connected-gauge contract | COS-T1 and COS-T2 | Labels (Q_0,Phi) remain distinct orbits; globally continuous Dirac observables cannot distinguish them; restricted two-form zero |
+| Normalized origin average and maximal finite regular test domain | Closed for the declared Gaussian prescription | COS-T3 and COS-T4 | Origin quotient C; unscaled finite domain e_0=0 retains H_P direct_sum H_K; separate quotient maps, free relative assembly normalization |
+| Global weak Dirac dilation algebra | Constructed with self-adjoint physical realizations | COS-T6 | D_P=P Q_*, D_K=K Phi_av; affine commutators and explicit domains; zero origin action; no branch coupling or physical time law |
+| Full local physical quantum LNC construction | Open | LSC kernel classification; LPS/CCS regular sectors; COS critical quotient, two-scale option and global dilations | Full observable selection, inter-stratum coupling, stratum-only origin labels, quantum fields, alternative representations, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-CCS-1 proves the smooth on-shell dichotomy directly from the original
-current ODEs. Nonzero P forces the LPS nowhere-zero-current branch; P=0
-forces p=phi'=0. On the latter branch the actual gauge vector fields remain
-nonzero. Explicit affine-connection straightening removes local q,k profiles,
-and K!=0 permits the geometry clock q=tau. Its reduced pair is (Phi,K).
+COS-1 derives an explicit critical geometric invariant from the actual local
+source and classifies all smooth P=K=0 gauge orbits by (Q_0,Phi). The zero
+restricted two-form does not collapse those original gauge orbits. Exact
+regular gauge-equivalent sequences prove that globally continuous invariant
+observables cannot distinguish the critical labels; the orbit quotient is
+non-Hausdorff.
 
-The complementary oscillator state has the closed expression
-exp[-sum U_n V_n/(2n)] per chirality and is K independent. Its Fock norm
-diverges, but the specified contraction/average has positive physical norm
-L^2(dK/|K|). The scalar observable includes the weight correction and an
-explicit self-adjoint full-line domain. These are reduced relational
-observables of the actual local constraints, with a test-quotient intertwiner.
+The Gaussian average has leading term log(1/epsilon) times the positive
+origin-evaluation form. Its normalized limit has completion C. The maximal
+smooth domain with finite unscaled norm is e_0(f)=0, whose completion is the
+unchanged H_P direct_sum H_K. A filtered direct sum retains the two rates
+with separate quotient maps. Neither one scalar normalization nor a positive
+all-test extension preserving the old momentum adjoints retains both norms.
+The explicit subtraction control pinpoints the lost adjoint relation.
 
-One common scalar average completes the punctured two-axis sector to
-H_P direct_sum H_K. Its positive Gaussian regularization diverges
-logarithmically at the joint origin for nonzero-origin tests. A separate
-positive rank-one origin form is possible, but cannot be identified with
-that divergent limit or carry the same canonical pairs. All frozen
-predecessor packets remain unchanged; the analytic proofs are separate
-from the finite native certificate.
+The same Q_0 formula coincides with LPS's regular Q. Its product with P,
+and K times the mean scalar, give global weak Dirac dilations. Their quantum
+operators iP partial_P and iK partial_K have explicit self-adjoint logarithmic
+coordinate domains and act by zero on the origin. This supplies a concrete
+observable algebra for the filtered option. All predecessor packets remain
+frozen; written analytic proofs are distinct from finite native witnesses.
 
 ## Next decisive obligation
 
-Determine the classical critical-origin quotient and its admissible physical
-observable/domain contract. Reuse CCS's obstruction before proposing an
-extension of the common average. Physical selection/gluing of an origin
-sector and a direct quantum relational-field construction beyond reduced
-gauge-slice observables remain open. Reuse the completed oscillator
-classification; do not reopen it based on finite-level searches.
-Potential, quantized matter, global cut gluing and physical 3+1 recovery
-have their own unresolved obligations.
+Extend the source-derived physical observable algebra on common domains and
+determine whether any inter-stratum coupling can preserve the declared
+positivity and adjoint contracts. Keep the two-scale rigging distinction
+visible. Faithful quantization of the stratum-only critical labels is a
+separate observable choice, not a property of the normalized origin line.
+Direct quantum relational fields, potential, quantized matter, global cut
+gluing and physical 3+1 recovery remain open. Do not reopen the completed
+oscillator classification or average divergence with finite-level searches.
 
 ## Evidence convention
 
