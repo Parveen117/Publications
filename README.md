@@ -1,5 +1,13 @@
 # Publications
 
+Latest source-control development: [DCD-1 — density and coherent cuts generate transport](papers/native-density-cut-dynamics/README.md).
+The quantum response generator is exactly [Pi+Q/2, dot(theta).X].
+Smooth preparations retain nonzero curvature while preserving original
+current domains. Density and declared coherent-cut phases implement the
+transport with an error bound; the old configuration-preserving flow
+class cannot supply the same small-loop state/response action. Conjugate
+information is proved necessary to recover the original material metric.
+
 Latest quantum-response development: [QRT-1 — physical states realize TVSP transport](papers/native-quantum-response-transport/README.md).
 Existing LMD density observables generate normalized states whose covariance
 metric induces exactly the TVSP connection. An explicit full-Hilbert-space
