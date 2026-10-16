@@ -48,12 +48,38 @@ verified source results rather than a new collection of unrelated examples.
 | Resolved original material geometry measurement | Constructed under an additional coherent-state POVM contract | RMG-T1 through RMG-T3 | Normalized probabilities on existing physical space; bounded geometry readings, dense r/m moment domains and positive self-adjoint m mean operators; no sharp continuum r field or new source apparatus |
 | Raw point geometry at unlimited resolution and fixed hbar | Obstructed for this measurement prescription | RMG-T4 | Vacuum r_N point laws are not tight; conjugate variance grows as hbar N^9/9; not a no-go for all renormalized geometry |
 | Mean circumference and controlled classical geometry recovery | Vacuum mean length diverges already at N=0; bounded readings recover classically | RMG-T4/T5 | hbar N^15 -> 0 suffices for C^2 profile and probabilistic coframe/length recovery; unbounded moments need not converge |
+| Countable continuum measurement and fixed-hbar coarse source geometry | Constructed under the declared resolvent response | CMG-T1 through CMG-T3 | Exact RMG finite marginals, H^3/C^2 outcomes for all normal states, normalized threshold/rejection effects and controlled finite-bin instruments; scale is selected |
+| Accepted circumference mean operator and physical domain | Positive self-adjoint operator constructed from a dense closed form | CMG-T4 | Vacuum and finite Hermite states have all finite accepted-length moments; no guarantee for every normal state; rejection probability is retained |
+| Removal of coarse geometry calibrations | Obstructed for the raw measurement prescription | CMG-T5 | Removing threshold restores infinite vacuum mean length even after smoothing; removing response scale at fixed hbar destroys accepted point tightness |
+| Classical recovery of actual accepted-length moments | Proved under a sufficient resolution/noise budget | CMG-T6 | hbar ell^(-15) -> 0 and fixed threshold below classical minimum density; acceptance tends to one; no fixed-hbar calibration-free field limit |
 | Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD core; RGR selected rigging | Nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
+
+CMG-1 extends the finite RMG coherent measurements to one normalized
+countable POVM on the same physical Hilbert space. A stated resolvent
+response produces coarse source geometry with a Fourier cutoff limit
+at fixed hbar, for all normal states. A stated minimum density threshold
+returns either the original inverse-chart geometry or a recorded
+no-reading flag; rejected runs and their probabilities are not erased.
+
+The accepted circumference now has a densely defined closed positive
+form and a self-adjoint mean operator. The vacuum and finite Hermite
+states have finite moments of every finite order. A sufficient
+hbar ell^(-15) -> 0 classical limit recovers actual length moments,
+in addition to profiles and bounded statistics.
+
+Two separate obstructions remain proved: smoothing alone leaves the
+vacuum mean length infinite, while removing spatial response at fixed
+hbar destroys point tightness even among accepted runs. The result
+therefore closes a declared coarse detector/domain construction, not
+calibration-independent quantum geometry. Fable continues its disjoint
+residual-Diff ergodicity task; its latest report is not a merged dependency.
+
+### Previous RMG endpoint
 
 RMG-1 applies a specified finite-resolution coherent-state joint
 measurement to the already constructed positive physical space. Its
@@ -140,10 +166,12 @@ or enlarge this sector. The full kernel must not be declared one-channel
 just because the exhibited rank-one positive form has that quotient.
 Another source ordering needs its own domain and comparison.
 
-On the geometry track, reuse RMG's normalized resolved measurements and
-its obstruction. Construct a fixed-hbar coarse/renormalized composite
-prescription and controlled length domain, or establish a broader no-go
-with stated hypotheses. The external agent separately owns actual
+On the geometry track, reuse CMG's countable measurement, cutoff limit
+and dense accepted-length domain. Establish source/calibration
+compatibility and whether a justified resolution-independent observable
+survives, or prove a broader obstruction with stated hypotheses. Avoid
+restarting with an unrelated selected detector. The external agent owns
+Condition (L) and the required spectator-form repair for actual
 residual-Diff completeness/uniqueness; do not repeat the selected
 existence construction. Source selection of the covariance, critical
 patches, fully local apparatus, physical 3+1 recovery and calibration remain
