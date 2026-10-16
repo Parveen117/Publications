@@ -1,0 +1,21 @@
+{
+  "protocol": "JED1_SOURCE_PINS_V1",
+  "branch_base_commit": "4b4a1c4c3b2d51b6f202a4b88c41b05f606f66e9",
+  "tlm1_commit": "babb4fb1922bd91c2eadc82abd4b9538a19745d0",
+  "tet1_commit": "9a0621637b2cc12fb57eb6fd36e56daef8cf5f34",
+  "qrt1_commit_interface_only": "59c68caac773a6c086c16d3c5c565cd7275cb266",
+  "files": {
+    "verify.cjs": "64cd282ed0bf73f7d6ccc2cddabd6404926c80d9ce2d2c5e820b62cfa66bd928",
+    "run.py": "2082f5ad324d01f6037aed24c58befce3bbaecaa75554bb63dab6e7e213370b4",
+    "../JET_ENTRY_DUALS.md": "510796ffe73f24f3999fca7c6d483a658ab264f4fb4073b26ce0090a9c3c137a",
+    "../../native-tvsp-lambda-matrices/THEOREM.md": "859dff20097e1d9377c79b2763fe6e73436b70f191ac8fea04f6a587b08e0c00",
+    "../../native-tvsp-lambda-matrices/tvsp_adapter.cjs": "cf752edd50741e738328c97f5f4bebefde58f0cb213def34dd6f9d4ffc525bf3",
+    "../../native-tvsp-lambda-matrices/SOURCE_PINS.json": "b987300c34d89d13e1d7ccb56e25ea56c67edb1b3621498bb48227071c76fa6d",
+    "../../native-tvsp-exponential-transport/THEOREM.md": "a5de5a5819d0223e9e988eda5fd2ea6e587f27a1a2edd433c417d74cda472d44",
+    "../../native-tvsp-exponential-transport/transport_adapter.cjs": "ea7e1cc3e627d20324fe0fefc63a17a21b18f2d17113054224d129dd0e9d25fd",
+    "../../native-tvsp-exponential-transport/SOURCE_PINS.json": "e9232b980a9cbd69af2ea0007deba65ceb695c378722f08b71213fae3e7e33c4",
+    "../../native-quantum-response-transport/THEOREM.md": "47505e224fb13b2f5668cd8fde21bf4f258a39b55b624bcd9cea82df6b52e326",
+    "../../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

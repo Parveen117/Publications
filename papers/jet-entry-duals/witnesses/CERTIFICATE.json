@@ -1,0 +1,653 @@
+{
+  "protocol": "JED1_JET_ENTRY_DUALS_V1",
+  "status": "PASS_FINITE_WITNESSES_FOR_JET_ENTRY_DUALS",
+  "source_pins_sha256": "28bfb25fe764de8f4eec1092063d34e812b897a7dfb39c01d0a79a27f0a39b87",
+  "checks": [
+    {
+      "name": "dimension:d_N:1",
+      "passed": true
+    },
+    {
+      "name": "T1_formal_coordinates_nilpotent_nonzero:1",
+      "passed": true
+    },
+    {
+      "name": "T1_ideal_acts_nilpotently_with_index_N_plus_1:1",
+      "passed": true
+    },
+    {
+      "name": "T1_common_kernel_of_layers_is_top_degree:1",
+      "passed": true
+    },
+    {
+      "name": "T1_top_degree_vectors_carry_observer_eigenvalue:1",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_positive_on_squares:1:[[2,1],[1,1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_hermitian:1:[[2,1],[1,1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_positive_on_squares:1:[[1,0],[0,3]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_hermitian:1:[[1,0],[0,3]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_positive_on_squares:1:[[1,[0,1]],[[0,-1],1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_hermitian:1:[[1,[0,1]],[[0,-1],1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_every_layer_reading_functional_violates_positivity:1",
+      "passed": true
+    },
+    {
+      "name": "T2_the_observer_itself_is_positive_on_the_same_elements:1",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_is_cyclic:1",
+      "passed": true
+    },
+    {
+      "name": "T3_sampled_jets_are_unitary:1",
+      "passed": true
+    },
+    {
+      "name": "T3_unitary_jet_dagger_is_inverse:1",
+      "passed": true
+    },
+    {
+      "name": "T3_sampled_jets_are_invertible:1",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_invariant_under_all_sampled_frame_jets:1",
+      "passed": true
+    },
+    {
+      "name": "T3_conjugation_actually_moves_the_record:1",
+      "passed": true
+    },
+    {
+      "name": "T3_signed_permutations_force_the_trace_on_M2:1",
+      "passed": true
+    },
+    {
+      "name": "T3_invariant_linear_dual_has_dimension_d:1",
+      "passed": true
+    },
+    {
+      "name": "T3_layer_traces_vanish_on_all_differences:1",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_of_TLM_source_is_7_plus_mu_eps_v:1",
+      "passed": true
+    },
+    {
+      "name": "T3_trace_state_is_layer_blind_on_TLM_source:1",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_separates_mu_from_minus_mu:1",
+      "passed": true
+    },
+    {
+      "name": "T3_jordan_type_detects_a_nonzero_layer:1",
+      "passed": true
+    },
+    {
+      "name": "T4_substitutions_are_unital_star_homomorphisms_fixing_the_observer:1",
+      "passed": true
+    },
+    {
+      "name": "T4_substitutions_are_automorphisms_full_rank:1",
+      "passed": true
+    },
+    {
+      "name": "T4_shear_inverse_composes_to_identity:1",
+      "passed": true
+    },
+    {
+      "name": "T4_curved_chart_inverse_through_depth_N:1",
+      "passed": true
+    },
+    {
+      "name": "T4_SL2_chart_jets_leave_only_the_observer:1",
+      "passed": true
+    },
+    {
+      "name": "T4_rotations_leave_exactly_the_Laplacian_tower:1",
+      "passed": true
+    },
+    {
+      "name": "T4_Laplacian_readings_are_independent_of_the_observer:1",
+      "passed": true
+    },
+    {
+      "name": "T4_layer_coefficients_are_point_derivatives:1",
+      "passed": true
+    },
+    {
+      "name": "dimension:d_N:2",
+      "passed": true
+    },
+    {
+      "name": "T1_formal_coordinates_nilpotent_nonzero:2",
+      "passed": true
+    },
+    {
+      "name": "T1_ideal_acts_nilpotently_with_index_N_plus_1:2",
+      "passed": true
+    },
+    {
+      "name": "T1_common_kernel_of_layers_is_top_degree:2",
+      "passed": true
+    },
+    {
+      "name": "T1_top_degree_vectors_carry_observer_eigenvalue:2",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_positive_on_squares:2:[[2,1],[1,1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_hermitian:2:[[2,1],[1,1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_positive_on_squares:2:[[1,0],[0,3]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_hermitian:2:[[1,0],[0,3]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_positive_on_squares:2:[[1,[0,1]],[[0,-1],1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_hermitian:2:[[1,[0,1]],[[0,-1],1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_every_layer_reading_functional_violates_positivity:2",
+      "passed": true
+    },
+    {
+      "name": "T2_the_observer_itself_is_positive_on_the_same_elements:2",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_is_cyclic:2",
+      "passed": true
+    },
+    {
+      "name": "T3_sampled_jets_are_unitary:2",
+      "passed": true
+    },
+    {
+      "name": "T3_unitary_jet_dagger_is_inverse:2",
+      "passed": true
+    },
+    {
+      "name": "T3_sampled_jets_are_invertible:2",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_invariant_under_all_sampled_frame_jets:2",
+      "passed": true
+    },
+    {
+      "name": "T3_conjugation_actually_moves_the_record:2",
+      "passed": true
+    },
+    {
+      "name": "T3_signed_permutations_force_the_trace_on_M2:2",
+      "passed": true
+    },
+    {
+      "name": "T3_invariant_linear_dual_has_dimension_d:2",
+      "passed": true
+    },
+    {
+      "name": "T3_layer_traces_vanish_on_all_differences:2",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_of_TLM_source_is_7_plus_mu_eps_v:2",
+      "passed": true
+    },
+    {
+      "name": "T3_trace_state_is_layer_blind_on_TLM_source:2",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_separates_mu_from_minus_mu:2",
+      "passed": true
+    },
+    {
+      "name": "T3_jordan_type_detects_a_nonzero_layer:2",
+      "passed": true
+    },
+    {
+      "name": "T4_substitutions_are_unital_star_homomorphisms_fixing_the_observer:2",
+      "passed": true
+    },
+    {
+      "name": "T4_substitutions_are_automorphisms_full_rank:2",
+      "passed": true
+    },
+    {
+      "name": "T4_shear_inverse_composes_to_identity:2",
+      "passed": true
+    },
+    {
+      "name": "T4_curved_chart_inverse_through_depth_N:2",
+      "passed": true
+    },
+    {
+      "name": "T4_SL2_chart_jets_leave_only_the_observer:2",
+      "passed": true
+    },
+    {
+      "name": "T4_rotations_leave_exactly_the_Laplacian_tower:2",
+      "passed": true
+    },
+    {
+      "name": "T4_Laplacian_readings_are_independent_of_the_observer:2",
+      "passed": true
+    },
+    {
+      "name": "T4_layer_coefficients_are_point_derivatives:2",
+      "passed": true
+    },
+    {
+      "name": "dimension:d_N:3",
+      "passed": true
+    },
+    {
+      "name": "T1_formal_coordinates_nilpotent_nonzero:3",
+      "passed": true
+    },
+    {
+      "name": "T1_ideal_acts_nilpotently_with_index_N_plus_1:3",
+      "passed": true
+    },
+    {
+      "name": "T1_common_kernel_of_layers_is_top_degree:3",
+      "passed": true
+    },
+    {
+      "name": "T1_top_degree_vectors_carry_observer_eigenvalue:3",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_positive_on_squares:3:[[2,1],[1,1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_hermitian:3:[[2,1],[1,1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_positive_on_squares:3:[[1,0],[0,3]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_hermitian:3:[[1,0],[0,3]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_positive_on_squares:3:[[1,[0,1]],[[0,-1],1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_point_state_is_hermitian:3:[[1,[0,1]],[[0,-1],1]]",
+      "passed": true
+    },
+    {
+      "name": "T2_every_layer_reading_functional_violates_positivity:3",
+      "passed": true
+    },
+    {
+      "name": "T2_the_observer_itself_is_positive_on_the_same_elements:3",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_is_cyclic:3",
+      "passed": true
+    },
+    {
+      "name": "T3_sampled_jets_are_unitary:3",
+      "passed": true
+    },
+    {
+      "name": "T3_unitary_jet_dagger_is_inverse:3",
+      "passed": true
+    },
+    {
+      "name": "T3_sampled_jets_are_invertible:3",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_invariant_under_all_sampled_frame_jets:3",
+      "passed": true
+    },
+    {
+      "name": "T3_conjugation_actually_moves_the_record:3",
+      "passed": true
+    },
+    {
+      "name": "T3_signed_permutations_force_the_trace_on_M2:3",
+      "passed": true
+    },
+    {
+      "name": "T3_invariant_linear_dual_has_dimension_d:3",
+      "passed": true
+    },
+    {
+      "name": "T3_layer_traces_vanish_on_all_differences:3",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_of_TLM_source_is_7_plus_mu_eps_v:3",
+      "passed": true
+    },
+    {
+      "name": "T3_trace_state_is_layer_blind_on_TLM_source:3",
+      "passed": true
+    },
+    {
+      "name": "T3_jet_trace_separates_mu_from_minus_mu:3",
+      "passed": true
+    },
+    {
+      "name": "T3_jordan_type_detects_a_nonzero_layer:3",
+      "passed": true
+    },
+    {
+      "name": "T4_substitutions_are_unital_star_homomorphisms_fixing_the_observer:3",
+      "passed": true
+    },
+    {
+      "name": "T4_substitutions_are_automorphisms_full_rank:3",
+      "passed": true
+    },
+    {
+      "name": "T4_shear_inverse_composes_to_identity:3",
+      "passed": true
+    },
+    {
+      "name": "T4_curved_chart_inverse_through_depth_N:3",
+      "passed": true
+    },
+    {
+      "name": "T4_SL2_chart_jets_leave_only_the_observer:3",
+      "passed": true
+    },
+    {
+      "name": "T4_rotations_leave_exactly_the_Laplacian_tower:3",
+      "passed": true
+    },
+    {
+      "name": "T4_Laplacian_readings_are_independent_of_the_observer:3",
+      "passed": true
+    },
+    {
+      "name": "T4_layer_coefficients_are_point_derivatives:3",
+      "passed": true
+    },
+    {
+      "name": "T5_dependency_TET_T6_equal_transport_jets_through_N:1",
+      "passed": true
+    },
+    {
+      "name": "T5_dependency_TET_T6_first_difference_is_minus_eta_half:1",
+      "passed": true
+    },
+    {
+      "name": "T5_exact_endpoint_is_diag_two_thirds_one:1",
+      "passed": true
+    },
+    {
+      "name": "T5_dependency_TET_T6_equal_transport_jets_through_N:2",
+      "passed": true
+    },
+    {
+      "name": "T5_dependency_TET_T6_first_difference_is_minus_eta_half:2",
+      "passed": true
+    },
+    {
+      "name": "T5_exact_endpoint_is_diag_two_thirds_one:2",
+      "passed": true
+    },
+    {
+      "name": "T5_dependency_TET_T6_equal_transport_jets_through_N:3",
+      "passed": true
+    },
+    {
+      "name": "T5_dependency_TET_T6_first_difference_is_minus_eta_half:3",
+      "passed": true
+    },
+    {
+      "name": "T5_exact_endpoint_is_diag_two_thirds_one:3",
+      "passed": true
+    },
+    {
+      "name": "T5_analytic_affine_path_tower_matches_closed_form",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "T1_a_nonzero_value_of_eps_defines_a_character:1",
+      "rejected": true
+    },
+    {
+      "name": "T1_a_layer_coefficient_is_multiplicative:1",
+      "rejected": true
+    },
+    {
+      "name": "T1_layers_act_trivially_on_the_regular_module:1",
+      "rejected": true
+    },
+    {
+      "name": "T1_a_degree_zero_vector_is_a_common_eigenvector:1",
+      "rejected": true
+    },
+    {
+      "name": "T2_nonnegativity_on_fixture_squares_certifies_positivity:1",
+      "rejected": true
+    },
+    {
+      "name": "T3_offdiagonal_layer_coefficient_is_frame_invariant:1",
+      "rejected": true
+    },
+    {
+      "name": "T3_jet_trace_invariant_under_independent_in_out_frames:1",
+      "rejected": true
+    },
+    {
+      "name": "T3_frame_jets_cut_the_invariant_dual_below_d:1",
+      "rejected": true
+    },
+    {
+      "name": "T3_ordinary_trace_of_regular_encoding_reads_layers:1",
+      "rejected": true
+    },
+    {
+      "name": "T3_jordan_type_reads_the_layer_value:1",
+      "rejected": true
+    },
+    {
+      "name": "T3_a_linear_congruence_invariant_of_the_metric_record_exists:1",
+      "rejected": true
+    },
+    {
+      "name": "T4_singular_linear_part_is_an_automorphism:1",
+      "rejected": true
+    },
+    {
+      "name": "T4_a_substitution_moving_the_point_respects_the_quotient:1",
+      "rejected": true
+    },
+    {
+      "name": "T1_a_nonzero_value_of_eps_defines_a_character:2",
+      "rejected": true
+    },
+    {
+      "name": "T1_a_layer_coefficient_is_multiplicative:2",
+      "rejected": true
+    },
+    {
+      "name": "T1_layers_act_trivially_on_the_regular_module:2",
+      "rejected": true
+    },
+    {
+      "name": "T1_a_degree_zero_vector_is_a_common_eigenvector:2",
+      "rejected": true
+    },
+    {
+      "name": "T2_nonnegativity_on_fixture_squares_certifies_positivity:2",
+      "rejected": true
+    },
+    {
+      "name": "T3_offdiagonal_layer_coefficient_is_frame_invariant:2",
+      "rejected": true
+    },
+    {
+      "name": "T3_jet_trace_invariant_under_independent_in_out_frames:2",
+      "rejected": true
+    },
+    {
+      "name": "T3_frame_jets_cut_the_invariant_dual_below_d:2",
+      "rejected": true
+    },
+    {
+      "name": "T3_ordinary_trace_of_regular_encoding_reads_layers:2",
+      "rejected": true
+    },
+    {
+      "name": "T3_jordan_type_reads_the_layer_value:2",
+      "rejected": true
+    },
+    {
+      "name": "T3_a_linear_congruence_invariant_of_the_metric_record_exists:2",
+      "rejected": true
+    },
+    {
+      "name": "T4_singular_linear_part_is_an_automorphism:2",
+      "rejected": true
+    },
+    {
+      "name": "T4_a_substitution_moving_the_point_respects_the_quotient:2",
+      "rejected": true
+    },
+    {
+      "name": "T4_rotation_invariant_Laplacian_reading_survives_a_shear:2",
+      "rejected": true
+    },
+    {
+      "name": "T4_a_compact_frame_group_collapses_the_dual_to_the_observer:2",
+      "rejected": true
+    },
+    {
+      "name": "T1_a_nonzero_value_of_eps_defines_a_character:3",
+      "rejected": true
+    },
+    {
+      "name": "T1_a_layer_coefficient_is_multiplicative:3",
+      "rejected": true
+    },
+    {
+      "name": "T1_layers_act_trivially_on_the_regular_module:3",
+      "rejected": true
+    },
+    {
+      "name": "T1_a_degree_zero_vector_is_a_common_eigenvector:3",
+      "rejected": true
+    },
+    {
+      "name": "T2_nonnegativity_on_fixture_squares_certifies_positivity:3",
+      "rejected": true
+    },
+    {
+      "name": "T3_offdiagonal_layer_coefficient_is_frame_invariant:3",
+      "rejected": true
+    },
+    {
+      "name": "T3_jet_trace_invariant_under_independent_in_out_frames:3",
+      "rejected": true
+    },
+    {
+      "name": "T3_frame_jets_cut_the_invariant_dual_below_d:3",
+      "rejected": true
+    },
+    {
+      "name": "T3_ordinary_trace_of_regular_encoding_reads_layers:3",
+      "rejected": true
+    },
+    {
+      "name": "T3_jordan_type_reads_the_layer_value:3",
+      "rejected": true
+    },
+    {
+      "name": "T3_a_linear_congruence_invariant_of_the_metric_record_exists:3",
+      "rejected": true
+    },
+    {
+      "name": "T4_singular_linear_part_is_an_automorphism:3",
+      "rejected": true
+    },
+    {
+      "name": "T4_a_substitution_moving_the_point_respects_the_quotient:3",
+      "rejected": true
+    },
+    {
+      "name": "T4_rotation_invariant_Laplacian_reading_survives_a_shear:3",
+      "rejected": true
+    },
+    {
+      "name": "T4_a_compact_frame_group_collapses_the_dual_to_the_observer:3",
+      "rejected": true
+    },
+    {
+      "name": "T5_truncated_tower_evaluated_at_the_endpoint_gives_the_transport:1",
+      "rejected": true
+    },
+    {
+      "name": "T5_truncated_tower_evaluated_at_the_endpoint_gives_the_transport:2",
+      "rejected": true
+    },
+    {
+      "name": "T5_truncated_tower_evaluated_at_the_endpoint_gives_the_transport:3",
+      "rejected": true
+    }
+  ],
+  "results": {
+    "continuum_proofs_machine_certified": false,
+    "theorem_1": "written proof in JET_ENTRY_DUALS.md: every irreducible representation of M_m(J_N) factors through the degree-zero observer",
+    "theorem_2": "written proof: every positive functional on M_m(J_N) factors through the observer; no state reads a layer",
+    "theorem_3": "written proof: the frame-invariant linear dual is exactly the layer traces (dimension d_N)",
+    "theorem_4": "written proof: under chart jets containing SL(2) the invariant linear dual is the observer alone; under rotations alone the Laplacian tower survives",
+    "theorem_5": "written proof plus TET-T6 dependency: the complete smooth tower does not determine finite transport; the analytic tower does"
+  },
+  "summary": {
+    "exact_checks": 112,
+    "negative_controls": 46
+  }
+}
