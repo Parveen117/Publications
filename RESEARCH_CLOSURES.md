@@ -31,51 +31,55 @@ verified source results rather than a new collection of unrelated examples.
 | Dynamical material-window classical extension | Closed for the selected regular canonical reference model | MRF-T1 and MRF-T2 | Local h_ref=(phi'/p)rho Z', d_ref=rho Z'; all-smearing closure and exact residual cancellation; reference momentum must respond |
 | Complete regular material-coordinate physical quotient | Constructed as a canonical profile field theory | MRF-T3 | Gauge-invariant r(z),m(z), integral m delta r; global degree-one rod and nonzero-current patch; no quantum measure inferred |
 | Material-window feedback and classical RPM comparison | Closed for the declared pulse model | MRF-T4 and MRF-T5 | Exact pointer recovery from homogeneous initial data; nonconstant windows excite profiles; global-P probe remains nonlocal; P-independent alternative has supported response |
-| Quantum representation of the extended material/profile field theory | Open | MRF physical classical reduction | Positive norm, continuum/regulator contract, observable domains and extended quantum constraints required; vacuum anomaly cancellation does not transfer automatically |
-| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA smooth value algebra; RPM apparatus; RAL lift; MRF classical reference field | Quantum profile representation, fully local apparatus, unreduced extended quantum closure/dynamics, inter-branch coupling, full quantum fields, general ordering, alternative representations, matter and potentials remain open |
+| Canonical source bridge and exact material-profile pulse | Closed classically on the frozen regular MRF patch | MPQ-T1 and MPQ-T2 | Explicit commuting gauge momenta; global physical chart makes every G_w linear; no automatic quantum lift of the nonlinear map |
+| Positive continuum reduced profile representation and domains | Constructed for the declared Gaussian affine contract | MPQ-T3 and MPQ-T4 | Complete separating adapted classical chart, smeared self-adjoint quantum observables and strong cutoff limit; covariance and orientation contract selected, raw nonlinear geometry not supplied |
+| Material-profile clock physical norm and quantum measurement | Closed for that reduced representation and ideal apparatus | MPQ-T5 and MPQ-T6 | Derived clock quotient, generalized histories, normalized instrument, exact conjugate backreaction and coherent classical limit; no unreduced source averaging inferred |
+| Identification with the inherited orientation-mixing RPM quantization | Obstructed under an orientation-and-probe preserving intertwiner | MPQ-T7 | New probe preserves the orientation blocks; old F mixes sign(P); classical readout recovery remains valid |
+| Quantum closure of the original extended local constraints | Open | MPQ explicit classical canonical bridge; MRF action | Common domains, inverse-current ordering, reference quantum modes and comparison of the physical quotient required; old vacuum cancellation does not transfer |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ reduced quantum profiles | Unreduced extended quantum closure, nonlinear quantum geometry, fully local apparatus, inter-branch coupling, general ordering, representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-MRF-1 introduces a dynamical material coordinate Z and unrestricted momentum
-rho with local reference densities (phi'/p)rho Z' and rho Z'. The complete
-classical constraint algebra closes for arbitrary smooth smearings. In the
-coupling integral p a(c,P)w(Z), the canonical reference variation exactly
-cancels the fixed-window residual. Reference momentum feedback is necessary.
+MPQ-1 keeps the MRF action and probe fixed. An explicit canonical source
+map Abelianizes the classical constraints on the regular patch. A second,
+global physical chart (y,j) makes G_w=integral w j and solves the entire
+reduced pulse exactly, including reconstruction of global-P feedback.
 
-A complete regular gauge reduction gives physical profiles r(z),m(z),
-canonical one-form integral m delta r, and reconstructed rho=m'-m r'.
-The reference adds actual field degrees of freedom. It is not a pure gauge
-copy of the previous vacuum theory.
+A specified correlated Gaussian measure for log|j| yields a positive
+continuum affine representation with self-adjoint smeared observables.
+Finite Fourier marginals embed isometrically and their probes and pulse
+unitaries converge to the continuum operators. Clock averaging derives
+the physical norm conditional on this reduced representation. The pointer
+instrument, conjugate-profile backreaction, phase distinction and coherent
+classical recovery are explicit. These are general written proofs; native
+certificates are finite witnesses, not their replacement.
 
-The reduced apparatus equations retain all feedback. Normalized material
-windows on homogeneous initial data reproduce the exact classical RPM
-pointer shift, but nonconstant windows excite physical profiles already
-at first order. The original measuring function has global P feedback;
-a P-independent alternative has spatially supported reduced response.
-The pointer and pulse clock still are global apparatus pairs.
-
-General constraint, quotient and continuation results have written proofs;
-native certificates test exact finite identities. Every predecessor remains
-frozen. No continuum quantum norm, new anomaly cancellation, positive-energy
-matter identification or calibrated physical apparatus is claimed.
+This quantization retains separate orientations. An intertwiner identifying
+orientation and probe with old GOA/RPM is impossible. Neither agreement of
+the classical readout nor the abstract separability of Hilbert spaces
+supplies that quantum equivalence. Nonlinear point geometry and the
+original extended quantum source constraints are not constructed here.
+Every predecessor packet remains frozen. No physical 3+1 closure is claimed.
 
 ## Next decisive obligation
 
-Construct a positive quantum representation of MRF's physical profile
-algebra with explicit observable domains and a controlled continuum or
-regularization contract. The new reference has physical field modes, so
-old homogeneous states and vacuum anomaly cancellation cannot silently
-serve as the full quantum construction. Compare quantization after reduction
-with the extended local constraints, or identify a precise obstruction.
+Stay with the frozen MRF model. Starting with MPQ's explicit canonical
+source bridge, define the original H_tilde,D_tilde quantum operators on a
+justified common domain, including inverse p and reference modes. Compare
+the resulting physical quotient with MPQ's reduced Gaussian affine theory,
+or prove an obstruction for a specified source ordering/representation.
+The restricted gauge chart and nonlinear canonical map cannot simply be
+declared unitarily equivalent to unrestricted canonical gauge momenta.
 
-Retain the distinction between classical pointer-readout recovery and
-recovery of full dynamics or quantum states. Global-P feedback, critical
-patches, a fully local apparatus, physical 3+1 recovery and calibration
-remain explicit additional obligations. Reuse the completed regular source,
-reference and physical-reduction results.
+Separately define any desired nonlinear quantum geometry in the original
+r,m variables; complete classical coordinates do not automatically define
+their quantum composites. Source selection of the covariance, critical
+patches, fully local apparatus, physical 3+1 recovery and calibration remain
+explicit. Reuse the existing states, domains, cutoff and measurement proofs
+rather than adding new model ingredients or restarting reduction.
 
 ## Evidence convention
 
