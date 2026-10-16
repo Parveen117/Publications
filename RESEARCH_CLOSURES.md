@@ -20,45 +20,48 @@ verified source results rather than a new collection of unrelated examples.
 | Critical classical orbit quotient and observable separation | Closed under the smooth connected-gauge contract | COS-T1 and COS-T2 | Labels (Q_0,Phi) remain distinct orbits; globally continuous Dirac observables cannot distinguish them; restricted two-form zero |
 | Normalized origin average and maximal finite regular test domain | Closed for the declared Gaussian prescription | COS-T3 and COS-T4 | Origin quotient C; unscaled finite domain e_0=0 retains H_P direct_sum H_K; separate quotient maps, free relative assembly normalization |
 | Global weak Dirac dilation algebra | Constructed with self-adjoint physical realizations | COS-T6 | D_P=P Q_*, D_K=K Phi_av; affine commutators and explicit domains; zero origin action; no branch coupling or physical time law |
-| Full local physical quantum LNC construction | Open | LSC kernel classification; LPS/CCS regular sectors; COS critical quotient, two-scale option and global dilations | Full observable selection, inter-stratum coupling, stratum-only origin labels, quantum fields, alternative representations, matter and potentials remain open |
+| Globally smooth classical Dirac value algebra | Classified for the selected smooth source | GOA-T1 and GOA-T2 | Values c+Pa and c+Kb with one critical constant; smooth periodic Hamiltonian lifts; finite classical flows preserve branch and sign |
+| Quantum orientation mixing and phase readout | Constructed for explicit self-adjoint nonlinear probes | GOA-T4 and GOA-T5 | Inherited full-line matching and symmetric reduced ordering; contrast -3/50, small-unitary-parameter coefficient 1/768; no physical time law |
+| Minimal and enlarged completed quantum observable algebras | Classified for the declared generators and double-commutant completion | GOA-T3 and GOA-T6 | Five affine blocks become three branch blocks; orientation phase readable; inter-branch/origin coupling not constructed |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA smooth value algebra and phase-sensitive quantum probes | Physical implementation/dynamics, inter-branch coupling, full quantum fields, general ordering, alternative representations, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-COS-1 derives an explicit critical geometric invariant from the actual local
-source and classifies all smooth P=K=0 gauge orbits by (Q_0,Phi). The zero
-restricted two-form does not collapse those original gauge orbits. Exact
-regular gauge-equivalent sequences prove that globally continuous invariant
-observables cannot distinguish the critical labels; the orbit quotient is
-non-Hausdorff.
+GOA-1 classifies every globally smooth classical Dirac observable value by
+c+P a(Q,P) on K=0 and c+K b(Phi,K) on P=0. A periodic primitive of k-K
+provides smooth full-local Hamiltonian representatives with exact canonical
+zero-mode brackets. Classical finite regular observable flows preserve
+momentum orientation and branch.
 
-The Gaussian average has leading term log(1/epsilon) times the positive
-origin-evaluation form. Its normalized limit has completion C. The maximal
-smooth domain with finite unscaled norm is e_0(f)=0, whose completion is the
-unchanged H_P direct_sum H_K. A filtered direct sum retains the two rates
-with separate quotient maps. Neither one scalar normalization nor a positive
-all-test extension preserving the old momentum adjoints retains both norms.
-The explicit subtraction control pinpoints the lost adjoint relation.
+The minimal affine quantum algebra has five orientation/origin blocks.
+A source-allowed nonlinear observable P[1+(1/2)cos Q_sharp], with declared
+symmetric reduced ordering, is self-adjoint on Dom P and has explicit
+momentum shifts that mix the two P signs. The K counterpart is constructed
+independently. Exact normalized physical packets give phase contrast -3/50
+and small-observable-parameter orientation-transition coefficient 1/768.
+The source vacuum clock Hamiltonian remains zero.
 
-The same Q_0 formula coincides with LPS's regular Q. Its product with P,
-and K times the mean scalar, give global weak Dirac dilations. Their quantum
-operators iP partial_P and iK partial_K have explicit self-adjoint logarithmic
-coordinate domains and act by zero on the origin. This supplies a concrete
-observable algebra for the filtered option. All predecessor packets remain
-frozen; written analytic proofs are distinct from finite native witnesses.
+The enlarged double-commutant algebra is B(H_P) direct_sum B(H_K)
+direct_sum C_origin, with center C^3. Thus relative orientation phase is
+measurable under this larger source-derived observable contract. The result
+does not supply P-to-K or regular-to-origin transitions, a general quantum
+ordering of all smooth observables, or calibrated gravitational dynamics.
+All predecessor packets and physical norms remain unchanged. General proofs
+and finite native witnesses retain separate scope.
 
 ## Next decisive obligation
 
-Extend the source-derived physical observable algebra on common domains and
-determine whether any inter-stratum coupling can preserve the declared
-positivity and adjoint contracts. Keep the two-scale rigging distinction
-visible. Faithful quantization of the stratum-only critical labels is a
-separate observable choice, not a property of the normalized origin line.
-Direct quantum relational fields, potential, quantized matter, global cut
-gluing and physical 3+1 recovery remain open. Do not reopen the completed
-oscillator classification or average divergence with finite-level searches.
+Derive an actual physical implementation or source-selected dynamical law
+for the nonlinear observer family, or extend beyond the V=0 matter-free
+source and recheck constraints, reduction and positivity. Inter-branch or
+origin coupling requires a source representative, physical operator/domain
+and two-scale rigging compatibility; arbitrary matrices are insufficient.
+Direct kinematic relational fields, quantized matter, global cut gluing and
+physical 3+1 recovery remain open. Reuse the completed kernel, critical
+quotient and smooth observable classifications.
 
 ## Evidence convention
 
