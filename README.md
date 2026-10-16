@@ -1,6 +1,18 @@
 # Publications
 
-Latest quantum construction: [HQS-1 — positive regular homogeneous quantum geometry](papers/native-homogeneous-quantum-sector/README.md).
+Latest quantum development: [LQA-1 — local constraint algebra and positive kinematics](papers/native-local-quantum-anomaly/README.md).
+For the actual periodic V=0 matter-free LNC source, an explicit reversed
+negative-sign oscillator vacuum gives anomaly-free local quantum constraint
+commutators on a common dense domain with positive kinematic norm. The
+inherited null derivative term and homogeneous PK=0 equation are retained.
+The conventional vacuum instead gives c=2 per chirality; a possible linear
+counterterm is classified but not adopted because its zero-mode equation
+changes. Physical constraint states and a positive physical inner product
+remain open; the finite-polynomial test domain has zero strong common kernel.
+407 exact checks, 9 native symbolic proofs/replays and 25 negative controls.
+[Closure ledger](RESEARCH_CLOSURES.md).
+
+Completed homogeneous construction: [HQS-1 — positive regular homogeneous quantum geometry](papers/native-homogeneous-quantum-sector/README.md).
 REC's V=0 matter-free constraint now has a self-adjoint realization,
 positive group-averaged physical measure dp/|p|, explicit reduced-space
 equivalence and self-adjoint length and dilation observables, with length

@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 16 October 2026. New selected homogeneous quantum-sector completion: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
+Updated 16 October 2026. New local quantum constraint-algebra construction: **LQA-1**. Selected homogeneous physical quantum sector: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
@@ -9,6 +9,31 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[LQA-1](papers/native-local-quantum-anomaly/THEOREM.md) derives the chiral
+current representation of the actual periodic V=0, matter-free LNC source.
+The original null improvement does not cancel the c=2 anomaly in the
+conventional oscillator vacuum. Equal left/right central charges cancel
+in the DD and HH brackets but add in DH. No scalar zero-mode shift repairs
+the unchanged strong all-mode constraints in that representation.
+
+A different, explicitly selected vacuum reverses the negative-sign
+oscillator ordering. Its two current contributions are +1 and -1, so the
+original local constraints close without a central term. This representation
+has a positive kinematic Fock inner product, a common dense invariant
+algebraic domain, and the original homogeneous PK=0 zero-mode equation.
+The null improvement is retained, not dropped. This adapts standard
+free-current/Virasoro methods; it is not discovery of a new anomaly mechanism.
+
+The physical distinction is essential: no nonzero strong common kernel
+exists inside the finite-polynomial test domain. Generalized or completed
+physical states, their inner product, observable domains and equivalence to
+HQS remain to be constructed. The mode grading is unbounded in both directions
+and is not identified with physical energy. A separate linear-counterterm
+family closes iff r*s=gamma=-1/12 (hbar=1), but shifts the homogeneous
+equation to PK-pi/3=0; it is documented and not adopted. The reversed-vacuum
+representation is the next working candidate. All predecessor packets and
+the finalized CHD manuscript remain frozen.
 
 [HQS-1](papers/native-homogeneous-quantum-sector/THEOREM.md) quantizes the
 regular homogeneous V=0, matter-free sector inherited from LNC/REC. The
@@ -120,7 +145,7 @@ The earlier classical MG/SM action results are pinned and included as source sna
 
 ## Next proof target
 
-**Construct the inhomogeneous quantum constraint representation of the specified local model, and calculate ordering/central terms on a common domain.** HQS-1 now supplies the regular homogeneous V=0 positive quantum comparison sector; it does not settle the full local algebra.
+**Construct the physical state space of LQA's anomaly-free reversed-vacuum constraints.** The local algebra and positive kinematic norm are now explicit. The algebraic test domain has no nonzero common strong kernel, so an appropriate extension/rigging or equivalent reduction must be justified. Derive the physical inner product and observable domains, then compare with HQS; a matching zero-mode equation alone is insufficient.
 
 CHD supplies a cut-generated record map instead of assuming pre-cut evolution. To integrate it here, specify cuts and their implementation from this model and prove constraint/observable compatibility on the retained image. Complete coherent transfer alone does not choose the cuts or a gravitational coupling law. No prime-phase extraction is required for this interface.
 
@@ -128,16 +153,16 @@ SRT supplies a response-record tool for this target. Its immediate integration g
 
 LNC resolves LCF's normal-bracket obligation within its explicit classical extension. REC supplies a homogeneous classical reduction as a comparison target; it does not supply the full physical sector. The next work must:
 
-1. Fix a local quantum working sector and its boundary contract. Start with `V=0` around the flat local vacuum as a declared baseline; closure alone does not privilege that potential. REC's periodic homogeneous model has no spatial boundary term, but does not settle other boundary actions or global cut gluing.
-2. Reduce or represent the constraints with an explicit physical matter adapter. LNC's commuting classical spinor fields are not quantized fermions, and kinematic cross-momentum energy is not positive.
-3. Calculate ordering/central terms and domain conditions rather than infer quantum closure from Poisson closure. Identify genuine physical observables and a positive physical inner product if the construction permits one.
+1. Retain LQA's declared V=0, matter-free periodic source while solving its quantum constraints on a justified extension of the common test domain. Do not identify positive kinematic norm with a positive physical solution space.
+2. Establish physical observables, a rigging/reduced inner product and the homogeneous comparison with HQS. The reversed representation has unbounded mode grading; a physical clock/energy interpretation must be derived separately.
+3. Extend only after the vacuum physical sector is controlled: nonzero potential and a physical matter adapter need their own ordering, anomaly and domain analysis. LNC's commuting classical spinor fields are not already quantized fermions.
 4. Retain the LCF source, local cut realization and UGD global-record conditions. Establish the enlarged model's controlled recovery separately from the old global AGD/ZCR model.
 
 Physical 3+1 interactions and empirical calibration remain downstream obligations. The model-choice ledger must distinguish selected assumptions, derived identities and independent predictions.
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. HQS-1 adds 147 exact checks, 10 native word proofs/replays and 14 controls for the selected homogeneous quantum sector and physical observer interface. The repository runner replays all 24 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. HQS-1 adds 147 exact checks, 10 native word proofs/replays and 14 controls for the selected homogeneous quantum sector and physical observer interface. LQA-1 adds 407 exact checks, 9 native word proofs/replays and 25 controls for the two local current representations, central terms, counterterm classification and positive kinematic alternative. The repository runner replays all 25 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py
