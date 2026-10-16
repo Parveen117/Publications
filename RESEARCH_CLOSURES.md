@@ -26,48 +26,52 @@ verified source results rather than a new collection of unrelated examples.
 | Added ideal clock constraint and apparatus physical norm | Closed for the stated reduced extension | RPM-T1 and RPM-T2 | C=W Pi_T W^*; explicit domain, generalized histories, positive group average and Dirac readout; ideal clock and coupling supplied |
 | Physical phase measurement instrument and readout statistics | Constructed for the chosen Gaussian pointer | RPM-T3 and RPM-T4 | Normalized instrument, contrast -3 kappa/50, exact variances and finite-run bound; no local source derivation or calibration |
 | CHD record interface for the physical pointer | Closed on the specified coherent image | RPM-T5 | Isometry, corner operation recovery and binned instrument; classical records do not retain all coherences |
-| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA smooth value algebra; RPM ideal reduced apparatus | Local apparatus source derivation/dynamics, inter-branch coupling, full quantum fields, general ordering, alternative representations, matter and potentials remain open |
+| Regular unreduced classical apparatus lift | Closed for the explicit global-pair extension on the current patch | RAL-T1 through RAL-T3 | Exact local constraint-ideal bracket, first-class action, geometry feedback and exact RPM P-sector recovery after reduction; quantization choices retained |
+| Fixed-coordinate-window localization of that coupling | Obstructed for every nonconstant prescribed window | RAL-T4 | Nonzero w' residual on the common constraint surface; dynamical material references and modified constraints are outside this no-go scope |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA smooth value algebra; RPM apparatus; RAL regular classical lift | Spatially local apparatus source, unreduced extended quantum closure/dynamics, inter-branch coupling, full quantum fields, general ordering, alternative representations, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-RPM-1 constructs an explicit ideal clock/pointer extension around GOA's
-self-adjoint physical F. The clock constraint C=W Pi_T W^* is self-adjoint
-on its displayed conjugate domain. Its group-average form yields a positive
-physical Hilbert space H tensor L^2(pointer), with generalized histories
-and clock-slice-independent physical norm.
+RAL-1 derives a regular unreduced canonical apparatus action whose new
+C_T=E+g Pi G_a closes with every old local chiral constraint. The coupling
+G_a=integral p a(c,P) has an explicit off-shell bracket in the local
+constraint ideal. Its functional derivatives retain geometry backreaction,
+including the global P-dependence that is needed for the correct Q flow.
 
-The relational pointer shift is X+kappa F. The Gaussian instrument is
-normalized, completely positive, and preserves the inherited three branch
-blocks. The GOA phase pair now has an explicit readout: mean contrast
--3 kappa/50, observable variances 23863/80000 and 24807/80000, and a
-conservative independent-repeat discrimination bound. The CHD coherent
-record identities apply to this actual declared instrument. Discarding the
-pointer attenuates F-spectral coherences; preserving F probabilities is not
-preserving all observables.
+Reducing the old local gauge constraints yields exactly RPM's P-sector
+clock/pointer model, with no approximation. Under the inherited reduced
+quantization it therefore recovers the established self-adjoint clock
+constraint, positive norm, instrument and phase readout. A separate
+quantization of all unreduced extended generators is still open.
 
-This is an added apparatus model after gravitational reduction. Its clock,
-global pulse coupling and preparations are choices. Full local apparatus
-constraint closure, source-derived dynamics and empirical calibration are
-not supplied. The vacuum Hamiltonian and all frozen predecessors remain
-unchanged. Native certificates check finite identities; the continuum
-rigging, self-adjointness and measure statements have written proofs.
+A nonconstant fixed spatial window produces a residual proportional to
+w' even on the common constraint surface. The chosen positive measuring
+function is weak Dirac under all local smearings iff the window is constant.
+This proves failure of that fixed-window localization attempt, not failure
+of dynamical material references or all localized apparatus constructions.
+
+The new consistent action uses global apparatus pairs and a global momentum
+inside the coupling; its current chart covers only the regular P branch.
+All predecessors remain frozen. General written proofs and finite native
+witnesses have separate scope.
 
 ## Next decisive obligation
 
-Derive a local apparatus/matter extension of the LNC action and its complete
-first-class constraints/backreaction, then establish a controlled reduction
-to RPM's ideal coupling or a precise obstruction. Recheck quantum anomaly,
-physical norms and domains for that extended source. Merely adding a weak
-Dirac observable to unreduced generators is insufficient. The ideal clock
-and global pulse in RPM do not close this local implementation gate.
+Introduce a dynamical spatial reference/apparatus field with its canonical
+momenta and constraints. Derive cancellation of RAL's window residual and
+full first-class closure/backreaction, then establish a controlled reduction
+to RAL/RPM or a precise obstruction. Recheck quantum anomaly, domains and
+physical norms for the unreduced extended field theory. A prescribed window
+or formal weak observable alone does not supply those dynamics.
 
-Inter-branch/origin coupling still requires a source representative, physical
-operator/domain and two-scale rigging compatibility. Direct kinematic fields,
-potentials, quantized matter, global cut gluing and physical 3+1 recovery
-remain open. Reuse LSC/COS/GOA and RPM rather than repeating their proofs.
+The exact regular classical lift does not cover critical-branch source
+coupling or select the clock, pulse and quantum matching uniquely. Direct
+kinematic fields, potentials, quantized matter, global cut gluing and
+physical 3+1 recovery remain open. Reuse the completed source, physical
+sector, observable and apparatus results instead of repeating their proofs.
 
 ## Evidence convention
 
