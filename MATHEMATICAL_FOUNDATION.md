@@ -1,6 +1,6 @@
 # Mathematical foundation and development route
 
-Author: Monty Dabas. Updated: 14 October 2026.
+Author: Monty Dabas. Updated: 16 October 2026.
 
 The common mathematical foundation is **Morphic operator algebra and its recognition/cut calculus**. In standard subject terms this crosses associative noncommutative algebra, graded algebra, representation/module theory, Lie derivations, cocycle/path memory and noncommutative differential geometry. Completion adds functional analysis under stated norms. UGD adds a structured numeral and conserved-ledger layer. These are connected layers, not competing replacements for one another.
 
@@ -21,6 +21,17 @@ The common mathematical foundation is **Morphic operator algebra and its recogni
 The 2 October audit read the EMK/UGD publication guide and lineage, generalized-Euler dock, current operator contracts, Morphic status ledgers and selected derivation/clock/geometry source sections. It did not re-certify every manuscript claim. The collected volume records its own historical source manifest; it does not contain every later nested Morphic manuscript.
 
 ## Current mathematical continuation
+
+[PCR-1: phase/current response coordinates](papers/native-phase-current-response/THEOREM.md)
+adds existing density phases to the fixed prepared response family.
+Actual Cameron--Martin means give p_i=beta_i m_i, so four ensemble means
+identify the family globally. The quantum tensor has complex rank two
+and a positive four-real-control metric; its Berry curvature is exactly
+(1/h)sum d(log m_i) wedge dp_i. Current graph cores, source-lift domains
+and the mixed-loop phase are explicit. A separate coherent comparison
+recovers smeared classical conjugate data and a homogeneous material
+label. Standard Kähler geometry is credited; no sharp pointwise quantum
+material metric or spacetime interpretation is inferred.
 
 [DCD-1: density and coherent-cut dynamics](papers/native-density-cut-dynamics/THEOREM.md)
 derives the exact source generator [Pi+Q/2, dot(theta).X], including its
