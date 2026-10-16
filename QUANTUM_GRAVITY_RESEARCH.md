@@ -10,6 +10,16 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+**Manuscript closure, 16 October 2026.** The integrated eight-page paper
+[Cut-Generated Information Transport and Complete Observer Verification](papers/native-cut-generated-history/manuscript/paper.pdf)
+is finalized as version 1.0, with editable LaTeX, bibliography and a provenance
+manifest. It closes the finite quadratic-observer verification study; it does
+not close physical quantum gravity, the local quantum-constraint target or
+the FTL state-law/arrival-time obligations. This manuscript supersedes the
+earlier chapter as the current integrated write-up for this mathematical
+scope. The historical chapter and all certified source proofs are preserved.
+No journal submission or publication is implied.
+
 [CHD-3](papers/native-cut-generated-history/CIRCULAR_OBSERVER_COMPLETION.md) closes the finite quadratic-observer verification project. A calibrated n-channel complex carrier has a minimum complete family of n^2 fixed scalar quadratic readings for an unrestricted Hermitian observable. The probes are axes and two-coordinate circular positions (3/5,4/5), (3/5,4iota/5); an explicit rational inverse recovers every matrix entry. Real-symmetric forms require n(n+1)/2 readings; known trace supplies one datum. These counts are not bit lengths or universal pure-state tomography bounds.
 
 The same complete family certifies T*G_out T=G_in if and only if every probe defect vanishes, and positive metrics give the left decoder G_in^(-1)T*G_out. Applying CHD's coherent history W transports the complete observable certificate on its known image corner. The inherited thermo source reconstructs from (2,5,122/25,98/25); fixed classical branch readout loses the off-diagonal entry, detected by a -24/25 circular reading defect. Common-frame covariance and a deterministic reconstruction error bound are proved. Norm preservation alone neither recovers a nonlinear erased record nor forces a flat transport loop.

@@ -1,5 +1,12 @@
 # Publications
 
+Finalized paper: [Cut-Generated Information Transport and Complete Observer Verification](papers/native-cut-generated-history/manuscript/paper.pdf)
+([LaTeX and reproducibility](papers/native-cut-generated-history/manuscript/README.md)).
+The eight-page manuscript closes the finite quadratic-observer verification
+study as a mathematical foundation for quantum-gravity research. It includes
+the integrated theorem, proofs, exact source example and certificate record;
+physical gravitational dynamics and FTL remain outside its completion claim.
+
 Completed mathematical project: [CHD-3 — complete circular-observer verification](papers/native-cut-generated-history/CIRCULAR_OBSERVER_COMPLETION.md).
 Every Hermitian observable on n complex channels is reconstructed by an
 explicit minimum family of n^2 fixed quadratic readings at calibrated
