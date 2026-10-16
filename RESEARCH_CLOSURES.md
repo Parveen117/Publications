@@ -7,6 +7,9 @@ verified source results rather than a new collection of unrelated examples.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| Actual finite-order positivity on continuous anchor intervals | Uniform source-error and polynomial-pullback certificate proved and executed | LAT-T3 through LAT-T5 | Both 3x3 forms on rho in [17/20,23/20], both 4x4 on [11/12,13/12]; finite order over a continuum is not all derivative orders |
+| Exact source layer flow and positive-model anchor semigroup | Hierarchy, coordinate/weight transport and invariant model poles/residues derived | LAT-T1/T2 | Finite hierarchy needs a next source layer; model poles are not identified xi zeros or physical masses |
+| Actual source tower through derivative 19 | Both 10x10 forms and 210 binomial readings positive | LAT-T5 and native certificate | At reference s=29; unfitted s=31 response error below 4.160e-35; no all-order source conclusion |
 | Sharp next-layer continuation and width transport | Necessary and sufficient two-layer windows and exact width recurrence proved | LCW-T1 through LCW-T3 | Universal membership of actual xi derivatives remains open; admissible chosen moments do not identify the source |
 | Actual single-point extension through derivative 17 | Both 9x9 forms and 171 binomial readings positive | LCW-T4/T5 and native certificate | Unfitted s=31 error below 1.412e-31; next c_18 window computed but actual derivative not evaluated; no physical identification |
 | Single-point infinite-layer cut condition | All-order determinant/binomial RH criterion and conditional strong cut limit proved | ILC-T1 through ILC-T3 | Actual universal source inequalities remain open; derivative depth, wave iteration and averaging have distinct limits |

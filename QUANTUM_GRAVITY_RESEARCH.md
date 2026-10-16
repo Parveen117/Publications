@@ -10,6 +10,37 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Moving single-point source anchor, 17 October:
+[LAT-1](papers/native-layer-anchor-transport/THEOREM.md) derives the
+actual logarithmic-anchor moment and binomial hierarchies directly by
+differentiation. A fractional-linear spectral map with normalized
+weight change forms an exact positive-model semigroup; its poles,
+residues and rational response are invariant. The hierarchy requires
+the next layer and is not an autonomous finite all-order sign proof.
+
+A source disk bound and differentiated Taylor-tail estimate now give
+unconditional actual-source positivity over complete anchor intervals.
+Polynomial pullback controls the transported metric and both matrix
+errors. Native certification proves both 3x3 forms for every
+rho=b/a_0 in [17/20,23/20], which includes the full original-source
+interval s=27 through 31, and both 4x4 forms on [11/12,13/12].
+These are uniform analytic certificates, not sampling-grid claims.
+The attempted wider 3x3 interval [5/6,7/6] is inconclusive under this
+sufficient bound, not an actual source counterexample.
+
+Fresh actual layers 18 and 19 pass the LCW windows, giving ten
+positive confluent directions and all 210 binomial readings at s=29.
+The independent s=31 value and derivative lie in the transfer forecast.
+The ten-direction response error is positive and below 4.160e-35;
+the independent analytic bound is below 9.131e-28. Ten-dimensional
+positivity is not claimed throughout the continuous intervals.
+
+LAT validation: 61 exact checks, 3 symbolic certificates, 14 negative
+controls and 27 source pins. The integrated replay has 54 stages.
+Predecessor packets and engines are unchanged. All-depth RH, physical
+time, mass, Maxwell dynamics, quantum gravity and global eta remain
+outside the proved finite source transport result.
+
 Single-point layer continuation, 17 October:
 [LCW-1](papers/native-layer-continuation-window/THEOREM.md) derives
 necessary and sufficient windows for the next two derivatives from

@@ -22,6 +22,17 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[LAT-1: moving source anchors and continuous positivity](papers/native-layer-anchor-transport/THEOREM.md)
+derives dot c_n=(n+c_1)c_n-(n+1)c_(n+1) along logarithmic anchor
+motion. The finite positive model has an exact fractional-linear
+transport with invariant poles/residues and a required weight tilt.
+A complete source disk majorant and differentiated tail estimate,
+combined with polynomial pullback, give a sufficient matrix certificate
+for actual positivity at every anchor in an interval. It is executed
+at orders three and four, while twenty actual derivatives at the
+reference anchor certify ten directions. No finite closure of the
+hierarchy or all-order source positivity is inferred.
+
 [LCW-1: sharp two-layer continuation](papers/native-layer-continuation-window/THEOREM.md)
 derives the exact even and odd Schur windows from the retained moment
 forms. A finite Gram congruence proves their positive width and its
