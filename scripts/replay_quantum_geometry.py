@@ -34,6 +34,7 @@ stages = [
     'native-homogeneous-quantum-sector',
     'native-local-quantum-anomaly',
     'native-local-physical-sector',
+    'native-local-sector-classification',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)

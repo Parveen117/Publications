@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 16 October 2026. New selected regular local physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
+Updated 16 October 2026. New complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
@@ -10,6 +10,30 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+[LSC-1](papers/native-local-sector-classification/THEOREM.md) closes the
+remaining oscillator-sector classification for the fixed LQA representation.
+An explicit operator D_N obeys Im<v,D_N v> >= N||v||^2 on every positive
+oscillator level. Thus no extra primary exists and the vacuum descendants
+span the entire Fock module for every real zero mode, without importing a
+Kac determinant. This is an all-level written proof, not an extrapolation
+from finite Gram checks.
+
+On compact smooth zero modes times finite oscillator tests, every continuous
+solution bra is F composed with a smooth descendant reduction rho, where
+F=U(a_0)delta(b_0)+delta(a_0)V(b_0). The two axis contributions overlap only
+by a transferable multiple of delta(a_0)delta(b_0). On P!=0 the pairing has
+oscillator multiplicity one and all remaining freedom is a distribution
+in P times delta(K). The singular axis is algebraically classified; its
+physical norm, clock and observables are not yet constructed.
+
+LSC also separates measure freedom from representation freedom. Positive
+rigging forms compatible with momentum multipliers are positive measures.
+Symmetry of the fixed HQS Q=i[partial_P-1/(2P)] forces c_+/|P| and c_-/|P|
+on the two signs. Its specified full-line H^1 matching forces c_+=c_-;
+normalization then gives the LPS/HQS measure. This is uniqueness under the
+inherited observable contract, not selection by the constraints alone.
+
+
 [LPS-1](papers/native-local-physical-sector/THEOREM.md) constructs a nonzero
 generalized all-mode solution family for LQA's unchanged reversed-vacuum
 constraints. Writing each chiral constraint as A_m(u)-A_-m(w), with auxiliary
@@ -18,8 +42,10 @@ The auxiliary intercepts cancel; the local constraint central charge stays
 zero. The paired states have divergent Fock norm, but a declared oscillator
 contraction followed by HQS regular-clock averaging gives a positive physical
 quotient L^2(dP/|P|). An explicit surjective unitary intertwines HQS physical
-states, norms and the specified self-adjoint observable domains. This is a
-selected rigging sector, not a complete kernel classification or unique measure.
+states, norms and the specified self-adjoint observable domains. LSC-1 now
+proves this oscillator pairing exhaustive on the regular
+test dual and gives conditional measure uniqueness; the singular physical
+sector and uniqueness across other quantizations remain open.
 
 [LPS-2](papers/native-local-physical-sector/LOCAL_GEOMETRY.md) then derives
 a regular reduction of the full classical local constraints. On the patch
@@ -50,13 +76,15 @@ The null improvement is retained, not dropped. This adapts standard
 free-current/Virasoro methods; it is not discovery of a new anomaly mechanism.
 
 The physical distinction is essential: no nonzero strong common kernel
-exists inside the finite-polynomial test domain. LPS-1 now supplies a selected generalized
-physical sector, its norm, observable domains and HQS intertwiner; the
-complete physical kernel and a unique quantization remain unclassified. The mode grading is unbounded in both directions
+exists inside the finite-polynomial test domain. LPS-1 supplies its regular
+generalized physical sector, norm, observable domains and HQS intertwiner.
+LSC-1 now classifies the complete continuous test-dual kernel in this
+representation; the singular branch still lacks a physical quantization.
+The mode grading is unbounded in both directions
 and is not identified with physical energy. A separate linear-counterterm
 family closes iff r*s=gamma=-1/12 (hbar=1), but shifts the homogeneous
 equation to PK-pi/3=0; it is documented and not adopted. The reversed-vacuum
-representation is the next working candidate. All predecessor packets and
+representation is the one used in LPS and LSC. All predecessor packets and
 the finalized CHD manuscript remain frozen.
 
 [HQS-1](papers/native-homogeneous-quantum-sector/THEOREM.md) quantizes the
@@ -169,13 +197,13 @@ The earlier classical MG/SM action results are pinned and included as source sna
 
 ## Next proof target
 
-**Classify the remaining local solution sectors and rigging freedom, and
-extend the relational geometry beyond reduction.** LPS-1/2 closes the chosen
-regular vacuum-cyclic sector and identifies its classical local geometry.
-Determine what additional modules/intertwiners the constraints admit, which
-physical principle selects the rigging prescription, and how quantum local
-relational field operators act. The nonvanishing-current patch boundary and
-P=0 need separate treatment; the HQS full-line domain matching is still selected.
+**Construct quantum relational fields and determine the physical status of
+the singular axis.** LSC-1 classifies the full continuous test-dual kernel
+of the present representation. LPS-1/2 plus the retained observable contract
+now give an exhaustive regular oscillator dressing and a measure fixed up
+to scale. The a_0=0 distributional branch needs its own clock, norm and
+observable construction. A direct relational field operator before reduction
+and extensions to interactions remain separate targets.
 
 CHD supplies a cut-generated record map instead of assuming pre-cut evolution. To integrate it here, specify cuts and their implementation from this model and prove constraint/observable compatibility on the retained image. Complete coherent transfer alone does not choose the cuts or a gravitational coupling law. No prime-phase extraction is required for this interface.
 
@@ -183,23 +211,21 @@ SRT supplies a response-record tool for this target. Its immediate integration g
 
 LNC resolves LCF's normal-bracket obligation within its explicit classical extension. REC supplies a homogeneous classical reduction as a comparison target; it does not supply the full physical sector. The next work must:
 
-1. Preserve LPS's selected all-mode solution sector and positive physical
-   norm. Classify additional cyclic modules and intertwiners without inferring
-   completeness from finite Gram matrices or the homogeneous equation.
-2. Use LPS-2's actual local reduction when constructing relational observables.
-   Distinguish its nowhere-zero-current classical patch from the whole P!=0
-   quantum momentum sector, and distinguish reduced length from a pointwise
-   quantum-field exponential. Analyze clock/patch boundaries separately.
-3. Extend to nonzero potential or quantized matter only with their own
-   ordering, anomaly, physical-domain and positivity arguments.
-4. Retain the LCF source, local cut realization and UGD global gluing contract.
-   Physical interactions and predictions still require their own derivation.
+1. Reuse LSC's all-level cyclicity and full dual-kernel theorem. Do not
+   repeat a search for extra oscillator primaries in this fixed real-momentum
+   representation; the theorem rules them out.
+2. Decide the physical role of the singular a_0=0 branch and origin-supported
+   distribution jets. Algebraic solution status is not a positive physical norm.
+3. Construct quantum relational fields using LPS-2's actual local geometry.
+   Keep its classical patch restriction and the chosen quantum matching visible.
+4. Treat potential, physical matter, ordering/anomalies and global cut gluing
+   as new obligations rather than consequences of the vacuum classification.
 
 Physical 3+1 interactions and empirical calibration remain downstream obligations. The model-choice ledger must distinguish selected assumptions, derived identities and independent predictions.
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. HQS-1 adds 147 exact checks, 10 native word proofs/replays and 14 controls for the selected homogeneous quantum sector and physical observer interface. LQA-1 adds 407 exact checks, 9 native word proofs/replays and 25 controls for the two local current representations, central terms, counterterm classification and positive kinematic alternative. LPS-1/2 adds finite descendant-pairing and regular local-reduction witnesses; see its certificate for exact counts. The repository runner replays all 26 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. HQS-1 adds 147 exact checks, 10 native word proofs/replays and 14 controls for the selected homogeneous quantum sector and physical observer interface. LQA-1 adds 407 exact checks, 9 native word proofs/replays and 25 controls for the two local current representations, central terms, counterterm classification and positive kinematic alternative. LPS-1/2 adds finite descendant-pairing and regular local-reduction witnesses; see its certificate for exact counts. LSC-1 adds the all-level primary/dual classification and conditional measure proof, with finite native witnesses recorded in its certificate. The repository runner replays all 27 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py

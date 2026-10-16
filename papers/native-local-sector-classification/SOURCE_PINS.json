@@ -1,0 +1,19 @@
+{
+  "protocol": "LSC1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "2e31782373acb683cdf1499935ab891e70e91865c337dbd377ca427f4b9b7bd7",
+    "THEOREM.md": "cb06e50e7a3e2dfb5c640bc4a9877e5805b06a9fab8a434eaa23e82f63321acb",
+    "SOURCE_MAP.md": "7fcc3d4ddb6a344e3cc18b6800cf6496883f19e2114ec886390379e96f39cb1e",
+    "verify.cjs": "375fad615bc362bf57bfed8d978742a6b1060918691fd19daf52b468bd135368",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "oscillator_fixture.cjs": "6266269fcb67399837205e2b146b37ad30b38cd4ecf7aa6d08561d530e6fe317",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-physical-sector/THEOREM.md": "3cf95547e8f6b818735e1735afdad4e46b0d8b8485c50cb06ae6b8af49ba1fad",
+    "../native-local-physical-sector/LOCAL_GEOMETRY.md": "b7fc2781cf8dd78a3f82b111c2fa5e2a8a6a01a69627becc2134c7c7bd824def",
+    "../native-local-physical-sector/verify.cjs": "a5065ff2fcc766f7e96de4f45834b13b09e8514b466a409bebf50b13940ad8da",
+    "../native-local-physical-sector/CERTIFICATE.json": "445b0c315918a48721e3b1830dadea83f6762a07ba44e7b8430b9ab7b2bc5b1e",
+    "../native-local-quantum-anomaly/THEOREM.md": "59bafe822249b5d9284667393e04b11f7bdbad76655819ee22a5b7dcd7ae8785",
+    "../native-homogeneous-quantum-sector/THEOREM.md": "083e699c04bcd5769ff35b56050f771d5d53a3613ecf750ac57205ad1bddee88"
+  }
+}

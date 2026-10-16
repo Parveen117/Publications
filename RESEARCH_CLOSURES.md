@@ -10,46 +10,45 @@ verified source results rather than a new collection of unrelated examples.
 | Finite quadratic-observer representation and verification | Closed within the declared finite contract | CHD-1/2/3; finalized eight-page manuscript v1.0 | Quadratic observables, calibrated finite carrier, declared linear transport and retained coherent record |
 | Regular homogeneous V=0 matter-free quantum geometry sector | Closed for the selected quantization | HQS-T1 through HQS-T5; HQS-1 native packet | Product ordering; regular-clock averaging; both momentum signs; selected reduced Fourier matching and physical observable domains |
 | Local V=0 matter-free quantum constraint algebra | Closed for the selected reversed-vacuum current representation | LQA-T1 through LQA-T6; LQA-1 native packet | Positive kinematic norm and all-mode commutators on a common algebraic domain; no physical state-space closure |
-| Selected regular local physical solution sector | Closed for the declared pairing and averaging prescription | LPS-T1 through LPS-T4 | All Fourier constraints solved in test dual; positive physical quotient and HQS observable intertwiner; kernel completeness and unique rigging not claimed |
+| Selected regular local physical solution sector | Closed for the declared pairing and averaging prescription | LPS-T1 through LPS-T4 | All Fourier constraints solved in test dual; positive physical quotient and HQS observable intertwiner; LSC now proves regular oscillator completeness and conditional measure uniqueness; other quantizations remain separate |
 | Classical regular local reduction and relational circumference | Closed on the nowhere-zero-current patch | LPS-T5 through LPS-T7 | Actual local gauge reduction to (Q,P); reduced quantization of relational length; pointwise quantum field operator not constructed |
-| Full local physical quantum LNC construction | Open | LPS-1/2 supplies a selected positive local solution sector with classical relational geometry | Additional sectors, unique rigging, quantum relational fields, singular patches, matter and potentials remain open |
+| Full continuous test-dual kernel of the fixed real-zero-mode representation | Closed for compact smooth zero modes times finite oscillator tests | LSC-T1 through LSC-T4 | All-level cyclicity; one-dimensional fiber kernel iff a_0 b_0=0; complete distributional axis decomposition; not other representations |
+| Regular physical measure with inherited observable contract | Unique up to normalization | LSC-T5 | Requires momentum-multiplier compatibility, the fixed HQS Q expression and its full-line matching; constraints alone do not fix the measure |
+| Full local physical quantum LNC construction | Open | LSC classifies the test-dual kernel; LPS supplies regular physical norm and classical relational geometry | Singular-axis physical quantization, quantum relational fields, alternative representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-LPS-1 turns LQA's anomaly-free algebra into a nonzero generalized physical
-solution sector. The key is an explicit descendant pairing of two auxiliary
-c=7 positive modules inside each chirality. Their 1/4 shifts cancel from
-the source constraints. The pairing is a continuous test-dual functional,
-not a normalizable Fock state. A declared pairing contraction followed by
-regular-clock averaging derives a positive physical quotient with dP/|P|.
-A surjective unitary recovers HQS states, norms and self-adjoint observables.
-The mechanism is standard Ishibashi/contragredient pairing applied and proved
-for these exact improved currents; its novelty is not inflated.
+LSC-1 proves that no additional positive-level primary exists in either
+auxiliary real-momentum oscillator factor: its explicit D_N has imaginary
+part bounded below by N times the identity. Induction then proves that
+vacuum descendants span every oscillator level, with strictly positive
+Gram matrices for all real zero modes. This avoids importing an external
+irreducibility theorem and does not infer all-level invertibility from tests.
 
-LPS-2 derives the regular reduction of the full local classical constraints.
-On the nowhere-zero A_+,A_- patch, C=q-log|A_+A_-|/2 and P are weak Dirac
-invariants. Independent circle-density straightening gives the homogeneous
-slice Q=C+log|P| and reduced one-form P dQ. Its relational circumference
-L_ref exp(Q) has the positive reduced quantization already defined in LPS-1.
-The raw circumference fails the normal-gauge invariance test. Thus the
-length now has a source-specific classical relational meaning, without
-asserting a pointwise quantum exponential or inverse-current construction.
+Moving descendant words through the local constraint equations classifies
+the complete continuous test-dual kernel. Its scalar vacuum coefficient is
+F=U(a_0)delta(b_0)+delta(a_0)V(b_0), with just a shared-origin redundancy.
+The regular P!=0 branch has exactly the LPS oscillator dressing and arbitrary
+P-distribution amplitude; no transverse delta derivatives or shifted K shells
+remain. The singular axis is classified algebraically, not physically completed.
+
+For positive rigging forms respecting momentum multipliers, keeping the fixed
+HQS Q observable forces the density c_sign/|P|. Keeping its full-line matching
+forces the sign constants equal. Thus the regular physical norm is fixed
+up to normalization under that observable contract; constraints alone still
+permit other measures. All frozen predecessors remain unchanged.
 
 ## Next decisive obligation
 
-Classify additional physical solution modules and the rigging ambiguity;
-construct quantum relational field observables and examine singular patch
-boundaries. The positive LPS sector is selected, not proved exhaustive.
-Its averaging weight and full-line matching inherit HQS's declared choices.
-Neither the all-level written proofs nor the finite native certificates
-identify the unbounded constraint grading with physical energy.
-
-Nonzero potential, quantized matter, global gluing and physical 3+1 recovery
-remain separate obligations. No percentage completion or full QG claim is
-inferred from these sector closures. Frozen predecessor packets are unchanged.
+Construct quantum relational field observables and determine the physical
+norm/clock/observable interpretation of the singular axis. Reuse the completed
+oscillator classification; do not reopen it based on finite-level searches.
+Selection among different quantum representations and matching contracts
+remains a physical input. Potential, quantized matter, global cut gluing and
+physical 3+1 recovery have their own unresolved obligations.
 
 ## Evidence convention
 
