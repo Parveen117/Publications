@@ -1,0 +1,33 @@
+{
+  "protocol": "POS1_SOURCE_PINS_V1",
+  "repository_parent": "7f1a8b9704d3ddc57f7ec079e55bf0efb34f2a0a",
+  "files": {
+    "README.md": "2940e11fb80a2176b0323c0b215cb2f676a036292a4aa3d19a7ee3d4da1667a8",
+    "THEOREM.md": "d5823c0cbcabb793a012cd55f6fab96deedab64120abbc1feadcdcbe4893c89a",
+    "SOURCE_MAP.md": "8e5f99faee441e4874334b7df3aa7791132539a0f885e0755f2d5588e5d54039",
+    "USAGE.md": "9d6e9c5a2abd01f898ac9f051dc5b87a4736322a3eb917cf971e4538667cd593",
+    "observer_adapter.cjs": "b04c5c5346fbfaf1dec5cbaee5c875b3644abd0a1a0fdf5a55ac11fb4138f40f",
+    "verify.cjs": "4457491c7b9e17d77b952e41c632e3f08cf949aa1f01ed93bd1b03aea57558ac",
+    "run.py": "8345661546afd80b4596095212173c60a186d0c99e35cf275b93ab7985c15b08",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-modular-observers/THEOREMS.md": "4216980e239248a720802e4b59a0e4b3294a53d0f9a82f1748bb8ac42456615c",
+    "../native-modular-observers/SOURCE_AUDIT.md": "ab04f7463d426e394c8de461c37108a8b6ef0c4ee4e6f5a179f750b5110bc7ff",
+    "../native-modular-observers/certificates/NM1_SOURCE_PINS.json": "f2d08020e00b0338bd33b8ba91979bab0b2eb6cd456f12d727014afb70198781",
+    "../emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py": "88c1f6b8aef1ef93f11d0a7dd813e2d39e6f9a6e37f2a627680c7f7848ed0bb0",
+    "../native-thermodynamic-curvature/THEOREM.md": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29",
+    "../native-thermodynamic-curvature/SOURCE_PINS.json": "195bbdb372b8c9637ca727c0d9502bceee0d68307e6dda5802bd5faa19e9baf5",
+    "../native-cut-generated-history/THEOREM.md": "b75643d84d600c2fd7a2bc7b6de4fae18886a7d02df3d9d348c34f924489c1d6",
+    "../native-cut-generated-history/BINARY_INVARIANT_SYNTHESIS.md": "17607b1e8d18f07c6ea1cc286c6d258155efca244c0e78b56a765a6a6c7e58a1",
+    "../native-cut-generated-history/SOURCE_PINS.json": "7e7f122d3e6393d565a60a6b9e21db7edee11e51b3f0bb24b8146f49572e36c5",
+    "../native-tvsp-lambda-matrices/THEOREM.md": "859dff20097e1d9377c79b2763fe6e73436b70f191ac8fea04f6a587b08e0c00",
+    "../native-tvsp-lambda-matrices/tvsp_adapter.cjs": "cf752edd50741e738328c97f5f4bebefde58f0cb213def34dd6f9d4ffc525bf3",
+    "../native-tvsp-lambda-matrices/SOURCE_PINS.json": "b987300c34d89d13e1d7ccb56e25ea56c67edb1b3621498bb48227071c76fa6d",
+    "../native-tvsp-exponential-transport/THEOREM.md": "a5de5a5819d0223e9e988eda5fd2ea6e587f27a1a2edd433c417d74cda472d44",
+    "../native-tvsp-exponential-transport/transport_adapter.cjs": "ea7e1cc3e627d20324fe0fefc63a17a21b18f2d17113054224d129dd0e9d25fd",
+    "../native-tvsp-exponential-transport/SOURCE_PINS.json": "e9232b980a9cbd69af2ea0007deba65ceb695c378722f08b71213fae3e7e33c4",
+    "../native-wick-calibrated-geometry/THEOREM.md": "0864597baa1f2dc29587c3911b491ebae99b77c4ad8c0bf65378f2c1d8e2c892",
+    "../native-wick-calibrated-geometry/SOURCE_PINS.json": "4ccb250cba9cd05a749a640f8720e4401dfd3d6a4ca9c60a726924cf5b8b31ae",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

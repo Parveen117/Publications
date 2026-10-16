@@ -56,6 +56,7 @@ stages = [
     'native-density-cut-dynamics',
     'native-phase-current-response',
     'native-wick-calibrated-geometry',
+    'native-prime-observer-sectors',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)

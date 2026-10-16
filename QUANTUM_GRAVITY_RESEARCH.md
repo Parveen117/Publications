@@ -10,6 +10,34 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+User-directed prime-observer bridge, 16 October:
+[POS-1](papers/native-prime-observer-sectors/THEOREM.md) derives the
+precise elementary-observer content of the prime proposal. In NM1's
+declared lattice, the existing seam projectors and shear generate the
+integer matrix ring. Its finite additive congruence observers are
+Lambda/nLambda, and they are elementary exactly when n is prime.
+Composites remain stable but have invariant primary factors and prime
+layers. Exact transport retains inter-layer carries. The coordinate
+content gcd(a,b) is a complete nonzero modular-orbit invariant, with
+valuations recoverable from the prime-depth zero readings.
+
+Coherent records and fiber-uniform coarse embeddings intertwine the
+modular action. The complex permutation register remains reducible even
+at a prime. After the explicit NM1-to-TET frame change, the arithmetic
+hierarchy is transported on moving lattices; the actual TET nonzero
+curvature obstructs preservation of any fixed lattice by every small
+loop. This is pathwise arithmetic compatibility, not an LMD-state map.
+
+Compatible positive energy families have arbitrary scales and can lose
+their lower bound with depth while retaining exact coarse intertwining.
+Thus the prime observer contract does not determine physical mass or a
+uniform gap. The next gate for that proposed physical identification is
+a source-selected energy coupling to the material sector, with retained
+holonomy. WCG's separate detector-flow obligation below remains open.
+
+POS validation: 118 exact checks, 8 symbolic certificates and 35 negative
+controls, with 27 source pins. The integrated replay contains 49 stages.
+
 Wick-calibrated material measurement, 16 October:
 [WCG-1](papers/native-wick-calibrated-geometry/THEOREM.md) constructs the
 nonlinear material observable left open by PCR. The existing countable
