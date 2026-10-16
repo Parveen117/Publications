@@ -7,6 +7,7 @@ verified source results rather than a new collection of unrelated examples.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| TVSP source layers to exponential observer transport | Constructed for the declared positive source connection | TET-T1 through TET-T6 | Retained transport jets, positive cut bridge, exact source paths, ordered correction and loop curvature; physical trajectory and continuum quantum-sector identification remain open |
 | TVSP-generated finite entry layers and curvature readout | Constructed in one declared source context | TLM-T1 through TLM-T5 | Exact point recovery, faithful algebraic matrix encoding and selected Hessian curvature; no positive jet *-representation or physical space quantization |
 | Finite quadratic-observer representation and verification | Closed within the declared finite contract | CHD-1/2/3; finalized eight-page manuscript v1.0 | Quadratic observables, calibrated finite carrier, declared linear transport and retained coherent record |
 | Regular homogeneous V=0 matter-free quantum geometry sector | Closed for the selected quantization | HQS-T1 through HQS-T5; HQS-1 native packet | Product ordering; regular-clock averaging; both momentum signs; selected reduced Fourier matching and physical observable domains |

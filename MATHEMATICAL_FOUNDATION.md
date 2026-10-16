@@ -22,6 +22,18 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[TET-1: TVSP exponential observer transport](papers/native-tvsp-exponential-transport/THEOREM.md)
+continues the actual TLM source into transport. Source jets through N
+determine transport jets through N; compatible moving observers and positive
+cuts satisfy the EGR transport contract after an explicit metric frame
+change. The existing affine Hessian source gives exact straight-path
+exponentials, while its curved path has ordering correction t³ F_sv(0)/6.
+The finite loop is an integrated curvature rotation in the oriented
+rank-two frame. Actual response tensors retain their source variation.
+Stable TVSP potentials prove that finite layers alone cannot determine a
+nonzero endpoint; interval residual bounds provide controlled approximation.
+No new operator engine or continuum quantum geometry representation is added.
+
 [TLM-1: TVSP lambda-layered matrices](papers/native-tvsp-lambda-matrices/THEOREM.md)
 implements the corrected entry-layer proposal using NT's actual six-response
 section and NJC's typed tower hypotheses. Finite holonomic jets form an

@@ -1,5 +1,14 @@
 # Publications
 
+Latest source-transport development: [TET-1 — TVSP exponential observer transport](papers/native-tvsp-exponential-transport/README.md).
+Retained source layers generate ordered transport and metric-compatible
+observation cuts. The existing TVSP source has exact straight-path
+exponentials and a curved-path cubic ordering correction F_sv(0)/6.
+A retained base observer detects loop curvature; a co-moving comparison
+stays invariant. Finite jets have a proved endpoint boundary and a
+conditional residual error bound. This connects the source to EGR's cut
+transport contract; the continuum quantum geometry domains are unchanged.
+
 Latest operator development: [TLM-1 — TVSP lambda-layered matrices](papers/native-tvsp-lambda-matrices/README.md).
 Every entry retains source-generated response layers in an explicit local
 context. Associative composition and exact ordinary recovery are proved.
