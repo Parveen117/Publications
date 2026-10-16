@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 16 October 2026. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
+Updated 16 October 2026. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
@@ -9,6 +9,42 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[IGQ-1](papers/native-inverse-gauge-quantization/THEOREM.md) constructs
+the actual finite source gauge transformations in a selected positive
+continuum representation. Two monotone embeddings F_+,F_- give the exact
+chiral moment maps T_+=F_+'Pi_+ and T_-=-F_-'Pi_-. Their inverse maps
+carry independent left diffeomorphism actions. The common integer lift
+identification and real relative zero mode are retained. The physical
+conjugate needs an explicit correction linear in the gauge momenta off
+shell; its physical value is unchanged. The strongly invariant probe
+representative differs by the classical constraint ideal. Its quantum
+representative/ordering choice is explicit.
+
+A direct forward-embedding Gaussian lift is impossible under its specified
+configuration contract: every non-rigid smooth circle diffeomorphism makes
+the measure mutually singular. A path quadratic-variation statistic proves
+this generally; finite Gaussian marginal densities do not prevent the
+obstruction. Inverse embeddings with the same log-derivative covariance
+instead satisfy the checked Cameron--Martin, Hilbert--Schmidt and inverse
+hypotheses of Ramer's theorem. They give a quasi-invariant measure and an
+ordinary, nonprojective unitary representation of the full finite gauge
+group. Each smooth one-parameter flow has a specified self-adjoint domain.
+This does not supply a common domain for all mixed infinitesimal products.
+
+The normalizable invariant space is zero, already for one relative-rotation
+subgroup. Its generalized states nevertheless have an explicit positive
+averaged quotient, obtained by a unitary half-density change to translation
+on the real relative coordinate. This subgroup is not normal; its averaging
+cannot be iterated into full gauge reduction without further proof.
+
+The MPQ physical observables and pulse commute with this finite gauge
+representation on the kinematic product. A positive full gauge rigging with
+exactly one surviving channel would recover MPQ's physical space, domains
+and measurement instrument. That rigging and its channel count have not
+been proved. The next target is the common invariant gauge test space,
+its full distributional kernel and positive physical pairing. The old
+vacuum anomaly result, or the partial rotation average, cannot fill this gap.
 
 [MPQ-1](papers/native-material-profile-quantization/THEOREM.md) freezes
 MRF's source and pulse and constructs a selected positive continuum
@@ -51,12 +87,12 @@ cross-orientation matrix element. The one-mode model is a separate cutoff,
 not an invariant normalizable homogeneous subspace of the full continuum.
 
 This closes the reduced state/observable/pulse problem under the stated
-contract. Next in the same frozen model: construct the original unreduced
-H_tilde,D_tilde quantum operators and domains using the explicit source
-bridge, and compare their physical quotient with this representation or
-prove an ordering-specific obstruction. Original nonlinear quantum
-geometry r,m, reference composites, critical patches, source-selected
-measure, local apparatus and physical 3+1 calibration remain open.
+contract. IGQ now supplies a finite source gauge representation and each
+flow's generator after an explicit canonical change. Its full common-domain
+algebra and positive full gauge quotient remain to be compared with MPQ.
+Original nonlinear quantum geometry r,m, reference composites, critical
+patches, source-selected measure, local apparatus and physical 3+1
+calibration remain open.
 
 [MRF-1](papers/native-material-reference-field/THEOREM.md) resolves RAL's
 fixed-window obstruction by adding a specified dynamical material map Z(x)
@@ -439,20 +475,25 @@ The earlier classical MG/SM action results are pinned and included as source sna
 
 ## Next proof target
 
-**Quantize the original extended local constraints and compare their
-physical quotient with MPQ's reduced continuum representation.** Keep the
-MRF model fixed. MPQ supplies positive states, smeared observable domains,
-the continuum pulse limit and a physical clock norm, plus an explicit
-classical source Abelianization. Use that map to confront inverse-current
-ordering, reference quantum modes and common domains; do not infer a
-quantum unitary from a nonlinear classical canonical transformation.
-The old vacuum anomaly calculation is not a substitute. Original nonlinear
-geometry also needs a composite-operator construction. Keep the chosen
-Gaussian covariance, sign contract, global pointer and P-dependent feedback
+**Construct the full physical reduction of IGQ's source gauge representation
+and compare it with MPQ.** Keep the MRF model and the declared canonical
+representative fixed. Start with IGQ's actual quasi-invariant measure and
+finite unitaries. Establish a dense invariant test space for mixed generator
+products, identify its full generalized constraint kernel, and derive a
+positive rigging with controlled channel count. Individual Stone domains
+and the positive rotation-subgroup average do not imply those results.
+Do not restart the disproved forward-coordinate Gaussian lift or silently
+insert an infinite-dimensional Haar measure. IGQ-T6 states the precise
+one-channel criterion for recovery of MPQ's physical observables and norm.
+
+The old vacuum anomaly calculation does not transfer to the reference
+fields. Original nonlinear geometry and a differently ordered original
+probe still require operator constructions and comparisons. Keep the
+chosen covariance, sign contract, global pointer and P-dependent feedback
 visible. Critical patches, fully local apparatus and physical 3+1 recovery
 remain separate obligations.
 
-RPM-T5 applies the existing CHD coherent record map to the declared Gaussian pointer instrument, with physical image-corner compatibility. RAL/MRF supply the classical source coupling; an unreduced quantum source realization of that instrument remains open. Complete coherent transfer does not choose a gravitational coupling law. No prime-phase extraction is required for this interface.
+RPM-T5 applies the existing CHD coherent record map to the declared Gaussian pointer instrument, with physical image-corner compatibility. RAL/MRF supply the classical source coupling; IGQ supplies a finite-gauge-compatible kinematic realization of the selected representative. Its derivation by full source physical reduction remains open. Complete coherent transfer does not choose a gravitational coupling law. No prime-phase extraction is required for this interface.
 
 SRT supplies a response-record tool for this target. Its immediate integration gate is to derive the relevant axis weights and comparison frame from actual local cut/matter solutions, then test whether the resulting jet record obeys the local differential/constraint intertwiners. It does not replace the quantum representation obligation with a label change or a finite chart example.
 
@@ -465,10 +506,10 @@ LNC resolves LCF's normal-bracket obligation within its explicit classical exten
    Orientation coupling is now constructed under the specified reduced
    ordering; inter-branch coupling still needs a source representative,
    physical domain and compatibility with the rigging/adjoint contract.
-3. Reuse MRF's reduction and MPQ's positive reduced representation, domains,
-   cutoff limit and clock measurement. Construct the original extended
-   quantum constraints and their physical comparison; retain the explicit
-   sign/probe obstruction to the old homogeneous matching. Reduced
+3. Reuse MRF's reduction, MPQ's reduced representation and IGQ's finite
+   gauge construction. Prove the full common-domain algebra and positive
+   gauge reduction; determine its channels before identifying it with MPQ.
+   Retain the sign/probe obstruction to old homogeneous matching. Reduced
    observables do not yet construct original kinematic field operators.
 4. Treat potential, physical matter, ordering/anomalies and global cut gluing
    as new obligations rather than consequences of the vacuum classification.
@@ -477,7 +518,7 @@ Physical 3+1 interactions and empirical calibration remain downstream obligation
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. HQS-1 adds 147 exact checks, 10 native word proofs/replays and 14 controls for the selected homogeneous quantum sector and physical observer interface. LQA-1 adds 407 exact checks, 9 native word proofs/replays and 25 controls for the two local current representations, central terms, counterterm classification and positive kinematic alternative. LPS-1/2 adds finite descendant-pairing and regular local-reduction witnesses; see its certificate for exact counts. LSC-1 adds the all-level primary/dual classification and conditional measure proof, with finite native witnesses recorded in its certificate. CCS-1 adds 688 finite exact checks, 5 native word proofs/replays and 20 controls for the complementary clock, universal dressing, two-axis completion and origin obstruction. COS-1 adds 275 finite exact checks, 3 native word proofs/replays and 27 controls for the critical invariant, averaging scales, domain/adjoint obstructions and global dilation algebra. GOA-1 adds 192 finite exact checks, 3 native word proofs/replays and 14 controls for smooth observable closure, periodic lifts, phase contrast, orientation mixing and the algebra centers. RPM-1 adds 84 finite exact checks, 5 native word proofs/replays and 11 controls for the full shifted packet moments, pointer statistics, measurement disturbance and coherent record identities; its clock rigging and operator-domain proofs are written analytic results. RAL-1 adds 105 finite exact checks, 4 native word proofs/replays and 11 controls for the regular constraint-ideal bracket, global momentum feedback, exact reduced flow and fixed-window obstruction; its arbitrary-smearing and reduction theorems are written separately. MRF-1 adds 96 finite exact checks, 4 native word proofs/replays and 21 controls for the reference algebra, material-window cancellation, physical-profile reconstruction and backreaction; its full quotient and continuation results are written proofs. MPQ-1 adds 283 finite exact checks, 9 native word proofs/replays and 21 controls for canonical source/profile maps, Gaussian adjoints, affine and pulse identities, covariance coefficients and the quantum comparison obstruction; its continuum, domain, rigging and semiclassical theorems are written separately. The repository runner replays all 34 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. HQS-1 adds 147 exact checks, 10 native word proofs/replays and 14 controls for the selected homogeneous quantum sector and physical observer interface. LQA-1 adds 407 exact checks, 9 native word proofs/replays and 25 controls for the two local current representations, central terms, counterterm classification and positive kinematic alternative. LPS-1/2 adds finite descendant-pairing and regular local-reduction witnesses; see its certificate for exact counts. LSC-1 adds the all-level primary/dual classification and conditional measure proof, with finite native witnesses recorded in its certificate. CCS-1 adds 688 finite exact checks, 5 native word proofs/replays and 20 controls for the complementary clock, universal dressing, two-axis completion and origin obstruction. COS-1 adds 275 finite exact checks, 3 native word proofs/replays and 27 controls for the critical invariant, averaging scales, domain/adjoint obstructions and global dilation algebra. GOA-1 adds 192 finite exact checks, 3 native word proofs/replays and 14 controls for smooth observable closure, periodic lifts, phase contrast, orientation mixing and the algebra centers. RPM-1 adds 84 finite exact checks, 5 native word proofs/replays and 11 controls for the full shifted packet moments, pointer statistics, measurement disturbance and coherent record identities; its clock rigging and operator-domain proofs are written analytic results. RAL-1 adds 105 finite exact checks, 4 native word proofs/replays and 11 controls for the regular constraint-ideal bracket, global momentum feedback, exact reduced flow and fixed-window obstruction; its arbitrary-smearing and reduction theorems are written separately. MRF-1 adds 96 finite exact checks, 4 native word proofs/replays and 21 controls for the reference algebra, material-window cancellation, physical-profile reconstruction and backreaction; its full quotient and continuation results are written proofs. MPQ-1 adds 283 finite exact checks, 9 native word proofs/replays and 21 controls for canonical source/profile maps, Gaussian adjoints, affine and pulse identities, covariance coefficients and the quantum comparison obstruction; its continuum, domain, rigging and semiclassical theorems are written separately. IGQ-1 adds 147 finite exact checks, 5 native word proofs/replays and 24 controls for source embedding moment maps, off-shell conjugate signs, Fourier remainder bounds, exact path-variation contrast, weighted unitary group laws and partial-rotation coordinates; its quasi-invariance, self-adjointness and partial-rigging theorems are written separately. The repository runner replays all 35 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py

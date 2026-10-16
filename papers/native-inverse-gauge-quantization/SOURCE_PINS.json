@@ -1,0 +1,18 @@
+{
+  "protocol": "IGQ1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "a35c127a5f6bed519c7da6613ba19cc405bdcff35a0faeef54c7de803b544d02",
+    "THEOREM.md": "c7780e54a54774ae80288200c3f51fd95081e1a3601f82a39ab4418af969741d",
+    "SOURCE_MAP.md": "4be08eaa4f5043ed400c1ef4b4b8398c10744e01bd7762fab24244e42429fd9e",
+    "verify.cjs": "b60efb24f85a380ae0433f7255cee7f972e0fec311d1fe1cfb90b3f0b8a68a5f",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-material-reference-field/THEOREM.md": "2efecdf36d8931e4a6748ba83c4be19495eb717a58d21110935eeb0cdeeedadd",
+    "../native-material-reference-field/CERTIFICATE.json": "ab9a8825ee065114014fe8b08cc412db7b8ec7ec3a29b577dc2ea9bdac7493a8",
+    "../native-material-profile-quantization/THEOREM.md": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0",
+    "../native-material-profile-quantization/CERTIFICATE.json": "37409ca775803390b54b268ab5e247621d7d55ee5ffe0dd2428d702d400e2648",
+    "../native-relational-pointer-measurement/THEOREM.md": "b69daf19e305812f8dc63e59957f3f98a9bd7d67473e4598991355c6d0a6bbd9",
+    "../native-local-quantum-anomaly/THEOREM.md": "59bafe822249b5d9284667393e04b11f7bdbad76655819ee22a5b7dcd7ae8785"
+  }
+}

@@ -35,44 +35,55 @@ verified source results rather than a new collection of unrelated examples.
 | Positive continuum reduced profile representation and domains | Constructed for the declared Gaussian affine contract | MPQ-T3 and MPQ-T4 | Complete separating adapted classical chart, smeared self-adjoint quantum observables and strong cutoff limit; covariance and orientation contract selected, raw nonlinear geometry not supplied |
 | Material-profile clock physical norm and quantum measurement | Closed for that reduced representation and ideal apparatus | MPQ-T5 and MPQ-T6 | Derived clock quotient, generalized histories, normalized instrument, exact conjugate backreaction and coherent classical limit; no unreduced source averaging inferred |
 | Identification with the inherited orientation-mixing RPM quantization | Obstructed under an orientation-and-probe preserving intertwiner | MPQ-T7 | New probe preserves the orientation blocks; old F mixes sign(P); classical readout recovery remains valid |
-| Quantum closure of the original extended local constraints | Open | MPQ explicit classical canonical bridge; MRF action | Common domains, inverse-current ordering, reference quantum modes and comparison of the physical quotient required; old vacuum cancellation does not transfer |
-| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ reduced quantum profiles | Unreduced extended quantum closure, nonlinear quantum geometry, fully local apparatus, inter-branch coupling, general ordering, representation selection, matter and potentials remain open |
+| Source embedding chart and strongly invariant probe representative | Constructed on the frozen regular MRF patch | IGQ-T1 | Actual source moment maps, common integer lift quotient and off-shell physical-conjugate correction; probe differs by the classical constraint ideal, quantum representative choice declared |
+| Direct forward-embedding Gaussian gauge lift | Obstructed for every non-rigid smooth circle diffeomorphism | IGQ-T2 | Specified log-derivative covariance and configuration multiplication contract; path variation proves singularity, despite nonsingular finite marginals; other measure classes remain possible |
+| Finite source gauge unitaries in inverse embeddings | Constructed for the selected positive continuum measure | IGQ-T3 and IGQ-T4 | Ramer hypotheses checked, genuine finite group law and each flow's self-adjoint domain; no common differentiated core or LQA intertwiner inferred |
+| Normalizable gauge kernel and positive partial rigging | Normalizable kernel zero; relative-rotation generalized quotient constructed | IGQ-T5 | Subgroup average is positive but rotations are not normal; no iterative full gauge reduction follows |
+| Full common-domain source algebra and physical gauge reduction | Open | IGQ-T4 through IGQ-T6; MRF action and MPQ physical comparison | Common mixed-product domain, full generalized kernel, positive rigging and channel count required; MPQ recovery is conditional on one gauge channel |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ reduced profiles; IGQ finite gauge representation | Full common-domain source algebra and gauge rigging, nonlinear quantum geometry, fully local apparatus, inter-branch coupling, general ordering, representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-MPQ-1 keeps the MRF action and probe fixed. An explicit canonical source
-map Abelianizes the classical constraints on the regular patch. A second,
-global physical chart (y,j) makes G_w=integral w j and solves the entire
-reduced pulse exactly, including reconstruction of global-P feedback.
+IGQ-1 keeps the MRF action and uses MPQ's canonical source map. Two
+monotone embeddings convert the original chiral constraints into exact
+cotangent moment maps. The off-shell correction to the physical conjugate
+is explicit. A strongly invariant representative of the same classical
+physical probe differs by the constraint ideal; its quantum ordering and
+representative choice are recorded rather than identified with every
+ordering of the original nonlinear fields.
 
-A specified correlated Gaussian measure for log|j| yields a positive
-continuum affine representation with self-adjoint smeared observables.
-Finite Fourier marginals embed isometrically and their probes and pulse
-unitaries converge to the continuum operators. Clock averaging derives
-the physical norm conditional on this reduced representation. The pointer
-instrument, conjugate-profile backreaction, phase distinction and coherent
-classical recovery are explicit. These are general written proofs; native
-certificates are finite witnesses, not their replacement.
+The direct forward-coordinate Gaussian attempt fails: a measurable path
+variation changes under every non-rigid gauge diffeomorphism and proves
+mutual singularity. Inverse coordinates instead give Cameron--Martin
+shifts with Hilbert--Schmidt derivatives and invertible maps, satisfying
+Ramer's criterion. The resulting gauge representation is positive and
+unitary, with an exact finite group law and explicit Stone domains for
+individual smooth flows. A common differentiated domain is not asserted.
 
-This quantization retains separate orientations. An intertwiner identifying
-orientation and probe with old GOA/RPM is impossible. Neither agreement of
-the classical readout nor the abstract separability of Hilbert spaces
-supplies that quantum equivalence. Nonlinear point geometry and the
-original extended quantum source constraints are not constructed here.
-Every predecessor packet remains frozen. No physical 3+1 closure is claimed.
+The kinematic invariant subspace is zero. A relative-rotation subgroup
+still admits positive averaging and generalized physical states, showing
+why the zero normalizable kernel is not a physical-nonexistence theorem.
+That subgroup is not normal, and its quotient cannot be used to impose
+all other constraints without further work. A conditional product-rigging
+criterion identifies exactly what would recover MPQ's physical norm and
+observables. Full gauge rigging has not been constructed. Every predecessor
+packet remains frozen. No physical 3+1 closure is claimed. Continuum
+theorems are written proofs; the native certificates check finite witnesses.
 
 ## Next decisive obligation
 
-Stay with the frozen MRF model. Starting with MPQ's explicit canonical
-source bridge, define the original H_tilde,D_tilde quantum operators on a
-justified common domain, including inverse p and reference modes. Compare
-the resulting physical quotient with MPQ's reduced Gaussian affine theory,
-or prove an obstruction for a specified source ordering/representation.
-The restricted gauge chart and nonlinear canonical map cannot simply be
-declared unitarily equivalent to unrestricted canonical gauge momenta.
+Stay with the frozen MRF model and IGQ's inverse-embedding representation.
+Construct a common invariant test space for the finite gauge unitaries
+and mixed infinitesimal constraints. Classify its full generalized kernel,
+derive a positive gauge pairing, and determine the surviving channel count.
+Apply IGQ-T6 only after its hypotheses hold to compare the physical quotient
+with MPQ. Individual self-adjoint generators, formal anomaly cancellation
+and the rotation-subgroup average are not substitutes for this step.
+Do not restart the disproved forward Gaussian lift or assume a gauge Haar
+measure. A different source ordering needs its own domain and comparison.
 
 Separately define any desired nonlinear quantum geometry in the original
 r,m variables; complete classical coordinates do not automatically define

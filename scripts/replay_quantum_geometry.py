@@ -42,6 +42,7 @@ stages = [
     'native-regular-apparatus-lift',
     'native-material-reference-field',
     'native-material-profile-quantization',
+    'native-inverse-gauge-quantization',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
