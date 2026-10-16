@@ -1,5 +1,17 @@
 # Publications
 
+Completed mathematical project: [CHD-3 — complete circular-observer verification](papers/native-cut-generated-history/CIRCULAR_OBSERVER_COMPLETION.md).
+Every Hermitian observable on n complex channels is reconstructed by an
+explicit minimum family of n^2 fixed quadratic readings at calibrated
+circular positions. The same probes give an iff certificate for all-input
+linear invariant transport, with a left decoder for positive metrics.
+Coherent cut histories preserve the complete observer certificate; copying
+the metric to classical branches can fail. Exact reconstruction, minimum
+counts, frame covariance and a finite-error bound are proved under the
+declared quadratic observation contract. This specializes standard
+polarization/informational completeness using the native engines and
+existing source fixtures; it does not supply a gravitational dynamics law.
+
 Latest signalling research: [GSA-1 — conditional gravity information signalling](papers/native-gravity-signalling-audit/README.md).
 The earlier EGR/QGC nonlinear relaxation now has an explicit remote-steering
 test: under an additional branch-sensitive physical extension, two sender
@@ -12,7 +24,7 @@ consistency and a matched light-arrival comparison remain open. The packet
 passes 150 exact checks, 3 native proofs/replays and 7 controls; it does not
 claim physical faster-than-light transmission.
 
-Latest cut-first development: [CHD-1/2 — cut histories and minimal binary synthesis](papers/native-cut-generated-history/README.md).
+Cut-first project: [CHD-1/2/3 — histories, binary synthesis and complete verification](papers/native-cut-generated-history/README.md).
 Scalar uncut observability is an explicit contract; a nontrivial cut generates
 a binary algebra. Successive projective cut interactions construct a coherent
 history W with W*W=I, without an intervening Hamiltonian or assumed exponential.
@@ -25,7 +37,7 @@ scalar amplitude channels, r-1 binary merges and depth ceil(log2 r). Exact
 weights avoid approximate roots. Invariant-preserving operations descend to a
 weighted isometry; future cut sufficiency reuses CRC's minimal row closure.
 A fixed branch metric is conserved iff it commutes with the cut. Combined
-packet: 348 exact checks, 8 native symbolic proofs/replays and 36 controls.
+packet: 594 exact checks, 12 native symbolic proofs/replays and 89 controls.
 
 Latest source-specific application: [HCM-1/2/3 — memory, phase and gain recovery](papers/native-heat-observer-memory/README.md).
 YM54's thermo-response tensor supplies the actual free heat generator and an

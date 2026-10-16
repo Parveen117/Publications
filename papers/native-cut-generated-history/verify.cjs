@@ -135,10 +135,14 @@ no('integrity:corrupted_rewrite_witness',rejects(()=>system.replay(bad)));
 const binary=require('./binary_synthesis.cjs');
 checks.push(...binary.checks);negative_controls.push(...binary.negative_controls);
 proofs.push(...binary.proofs);presentations.push(...binary.presentations);
+const circular=require('./circular_observer.cjs');
+checks.push(...circular.checks);negative_controls.push(...circular.negative_controls);
+proofs.push(...circular.proofs);presentations.push(...circular.presentations);
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
 const payload={protocol:'CHD1_CUT_GENERATED_HISTORY_V1',status:'PASS_CUT_GENERATED_HISTORY',source_pins_sha256:hash(fs.readFileSync(path.join(__dirname,'SOURCE_PINS.json'))),presentations,proofs,checks,negative_controls,results:{observable_algebra_dimensions:dimensions,history_records:records,source_cut:B,probabilities,final_return_probability:survival,order_records:orderRecords,scope:{uncut_scalar_algebra:'declared observable contract',cut_schedule:'declared',projective_implementation:'selected standard instrument',precut_source_evolution_used:false,physical_time_derived:false,arbitrary_depth:'written induction; finite certificates separately scoped',full_UGD_homomorphism:false,spacetime_dimension_derived:false,quantum_gravity_complete:false}},summary:{exact_checks:checks.length,negative_controls:negative_controls.length,native_presentations:presentations.length,symbolic_certificates:proofs.length,serialized_replays:proofs.length}};
-payload.protocol='CHD2_CUT_HISTORY_BINARY_SYNTHESIS_V1';
+payload.protocol='CHD3_COMPLETE_CIRCULAR_OBSERVER_VERIFICATION_V1';
 payload.results.binary_synthesis=binary.results;
+payload.results.circular_observer=circular.results;
 const bytes=JSON.stringify(payload,null,2)+'\n',sha=hash(bytes),file=path.join(__dirname,'CERTIFICATE.json');
 if(process.argv.includes('--write')){fs.writeFileSync(file,bytes);fs.writeFileSync(path.join(__dirname,'EXPECTED.sha256'),sha+'  CERTIFICATE.json\n');}
 else{assert.equal(fs.readFileSync(file,'utf8'),bytes);assert.equal(fs.readFileSync(path.join(__dirname,'EXPECTED.sha256'),'utf8'),sha+'  CERTIFICATE.json\n');}

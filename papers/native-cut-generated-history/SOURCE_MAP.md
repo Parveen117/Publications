@@ -37,3 +37,22 @@ https://www.jmilne.org/math/Books/FT0.pdf
 arithmetic and square-root steps; it does not prohibit finite symbolic
 storage of a cubic root. Native companion-matrix certificates do not claim
 to certify the entire field theory theorem or supply UGD root arithmetic.
+
+CHD-3 reuses the frozen CHD-1 history isometry, CHD-2 weighted record,
+source Cayley transport and fixed branch-metric obstruction. Its additional
+result is an explicit complete circular observer interface, with rational
+dual witnesses and exact source-bound verification. The original THEOREM.md,
+BINARY_INVARIANT_SYNTHESIS.md and binary_synthesis.cjs are unchanged.
+
+Polarization, Hermitian dimension counting and informational completeness are
+standard mathematics. Context and attribution: A. J. Scott, *Tight
+informationally complete quantum measurements*, J. Phys. A 39, 13507 (2006),
+https://arxiv.org/abs/quant-ph/0604049 (abstract inspected 16 October 2026).
+The CHD probes are separately accessible projectors, not a claimed tight
+frame or SIC-POVM. Their inverse and minimum-count proof are given directly.
+For why low-rank assumptions change the tomography target, see C. H. Baldwin,
+I. H. Deutsch and A. Kalev, *Informational completeness in bounded-rank
+quantum-state tomography*, https://arxiv.org/abs/1510.02736 (abstract inspected
+16 October 2026). CHD-3 makes no universal n^2 lower bound for pure states.
+The source-specific composition and native certificates are the deliverable;
+general tomography is not claimed as a new discovery.
