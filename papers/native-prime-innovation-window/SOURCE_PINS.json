@@ -1,0 +1,26 @@
+{
+  "protocol": "PIW1_SOURCE_PINS_V1",
+  "repository_parent": "ab7c44cabf73b23898038deb0f649aa1d5de3669",
+  "files": {
+    "README.md": "71372172aaf301b5a2d74b339e608898f65dc3d82835265c55ac70250881a5d0",
+    "THEOREM.md": "4fe5245e0cbe1f0932b0bb8125bdff63f5990045505b348292140bef2d24d3c2",
+    "SOURCE_EVALUATION.md": "a9e17c1a6c30c74a13ff20daa7388faa3939fd9da0d55454029ca43915d9524d",
+    "SOURCE_MAP.md": "4a63f506a4e456b79d79fbe76e88e3814527179f609f1f722812a9335d08c430",
+    "USAGE.md": "acca5f18f68bd9fc12c9ad6586cf08b92bcd5b2367af2e401adf0611592cd27f",
+    "full_source.cjs": "0a31da302a467333f005d77bb30e3d21a0bfcca7a2cc8aea91696bb15d78ed30",
+    "window_adapter.cjs": "4a0bcd7155c530fa9a97346482c1f7ce1b515a1701dceee84a78a55d29d3fefc",
+    "verify.cjs": "87af1b4de2f82e41ef9d7a2f66bd94d6d905443dcd09ad227e52e5a53b8aba5b",
+    "run.py": "4220c784c321168b7ad6f8e559d70e1f9cc79d78c34866b0436a042b2818cf93",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-prime-observation-closure/THEOREM.md": "de5bb0386f5ef1cbc367d1ed37afcfaf61587b62ad1468b7800b3ce1fc9c4308",
+    "../native-prime-observation-closure/SOURCE_MAP.md": "0d01f1e1ed36f16d2f6fb26adc62bf51f53edbe3abc5c36b4cdf8eb7a79fc69a",
+    "../native-prime-observation-closure/SOURCE_PINS.json": "c4782e63013001f86abef6c58356f67267513b6cac777882cb932cda1eb2d5cd",
+    "../native-prime-observation-closure/CERTIFICATE.json": "d465df02b9bb4a33aa6e2e677cb53f09f404a5bd1a1214a0f12e9a1c9e32d202",
+    "../native-prime-observation-closure/observation_adapter.cjs": "ddb8385edb0cec94b6634bfd8f1f08189dd5eb6a7b236d439f001b9ca51a9c0b",
+    "../native-prime-observation-closure/sources/SE48.md": "0891b8f9c31cd5f4675efa94b50dd30382c12fe53d03fbc389baa0768e815d04",
+    "../native-prime-observation-closure/sources/SE49_RESULT.json": "eabe10a9c83726ba81a756bbecca8d26daf77f0d8d13314d6855e1bdd5fda539",
+    "../native-moving-zero-covariance/sources/SE49.md": "36b0e0b37594d7112b24fb58fb401f521912eb6baf6d487094ddf0449c725b4f",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

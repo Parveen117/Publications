@@ -1,12 +1,13 @@
 # Research closure ledger
 
-16 October 2026. A closure below applies only to its named target and
+17 October 2026. A closure below applies only to its named target and
 assumptions. It is not a blanket endorsement of all research repositories.
 The active priority is the quantum-gravity construction, proceeding from
 verified source results rather than a new collection of unrelated examples.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| Exact next-source acceptance and new prime direction | Sharp value/slope windows and covariant normalization proved; prime 29 accepted | PIW-T1 through PIW-T4 | Complete native source tails retained, nine selected prime directions positive, unfitted prime 31 error below 3e-17; all-order signs and full V24-plus-new positivity remain open |
 | Prime-content centre from three equal source readings | Automatic closure fails in the declared metric point model; good-prime local lifting is exact | POC-T1/T2 | Unique metric circumcentre need not be integral; determinant units give compatible local solutions, while bad-prime first layers may not lift |
 | Prime-sampled recovery of the actual RH response | All-order criterion and conditional convergence proved; eight-prime finite replay positive | POC-T3 through POC-T5, citing SE48/SE49 | Prime analytic density is established, but universal actual innovation positivity remains open; existing V24 subset only, no RH proof, improved global eta or physical identification |
 | Prime elementary additive observers in the inherited integral adapter | Classified exactly under the stated NM1 lattice and full modular action | POS-T1 through POS-T3 | Simple iff modulus prime; composites stable, carried prime layers and invariant coordinate content; module simplicity is not complex irreducibility or physical particle stability |

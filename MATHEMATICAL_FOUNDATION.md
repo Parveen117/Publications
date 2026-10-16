@@ -1,6 +1,6 @@
 # Mathematical foundation and development route
 
-Author: Monty Dabas. Updated: 16 October 2026.
+Author: Monty Dabas. Updated: 17 October 2026.
 
 The common mathematical foundation is **Morphic operator algebra and its recognition/cut calculus**. In standard subject terms this crosses associative noncommutative algebra, graded algebra, representation/module theory, Lie derivations, cocycle/path memory and noncommutative differential geometry. Completion adds functional analysis under stated norms. UGD adds a structured numeral and conserved-ledger layer. These are connected layers, not competing replacements for one another.
 
@@ -21,6 +21,19 @@ The common mathematical foundation is **Morphic operator algebra and its recogni
 The 2 October audit read the EMK/UGD publication guide and lineage, generalized-Euler dock, current operator contracts, Morphic status ledgers and selected derivation/clock/geometry source sections. It did not re-certify every manuscript claim. The collected volume records its own historical source manifest; it does not contain every later nested Morphic manuscript.
 
 ## Current mathematical continuation
+
+[PIW-1: sharp source innovation windows](papers/native-prime-innovation-window/THEOREM.md)
+factors the next-step two-sign budget into delta(1-kappa delta),
+where delta is the actual new value minus the old finite response.
+It derives the exact value interval, independently required derivative
+interval and their dimensionless coordinates. Retained-source congruence
+preserves them. A determinant transfer factor removes the forced old
+interpolation zeros and gives a strict slope cone for the normalized
+actual residual. A fresh native complete-source jet at prime 29 passes
+both new signs and both nine-dimensional forms, with independent prime
+31 response error below 3e-17. The explicit source tails use credited
+analytic identities; neither a finite sign nor the factorization proves
+their universal validity at all subsequent primes.
 
 [POC-1: equal-reading centres and prime-sampled source recovery](papers/native-prime-observation-closure/THEOREM.md)
 makes the three-prime centre proposal precise in the retained TET metric.
