@@ -10,6 +10,39 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+User-directed three-prime observation and RH source continuation,
+16 October: [POC-1](papers/native-prime-observation-closure/THEOREM.md)
+tests equal squared-distance readings in the unchanged TET metric.
+The prime-content inputs (2,0), (0,3), (5,0) have centre
+(145/54,44/27), so automatic prime-centre closure fails in this declared
+point model. At every prime not dividing the centre system's determinant,
+the centre has unique compatible readings through all prime-power depths.
+The explicit bad-prime example has three solutions modulo 3 and none
+modulo 9. A centre does not select its ambient prime observer.
+
+The strongest relevant RH source results are pinned and cited: SE26's
+common-mode distinction, SE48's actual spectral pencil and SE49's
+innovation/convergence theorem. Prime observations have sufficient
+analytic uniqueness density because their reciprocals diverge. The
+result is an equivalent RH criterion: both actual source pencils, or
+both actual Schur innovations, must stay positive at every odd-prime
+bank order. Under that premise the responses converge to actual q,
+with a compact-uniform bound by a power of 1/log(p_N+1).
+
+The finite replay selects original s=3,5,7,11,13,17,19,23 from the
+existing complete SE49 V24 archive. Both 8x8 forms are positive; the
+independent held-out s=27 response error is below 10^-15. Original
+special-function tails are inherited, not freshly recomputed. The
+all-order positivity theorem remains open, and no global eta, physical
+mass or quantum-gravity closure follows from this finite selection.
+MP's marker-completeness and recursive-residue results are cited for
+their precise completeness boundaries. The next RH obligation is the
+full-source sign control of subsequent and ultimately all prime steps.
+
+POC validation: 52 exact checks, 4 symbolic certificates, 26 negative
+controls, 28 source pins and 4 upstream blob identities. The integrated
+replay now contains 50 stages. Predecessor proof packets are unchanged.
+
 User-directed prime-observer bridge, 16 October:
 [POS-1](papers/native-prime-observer-sectors/THEOREM.md) derives the
 precise elementary-observer content of the prime proposal. In NM1's
@@ -36,7 +69,8 @@ a source-selected energy coupling to the material sector, with retained
 holonomy. WCG's separate detector-flow obligation below remains open.
 
 POS validation: 118 exact checks, 8 symbolic certificates and 35 negative
-controls, with 27 source pins. The integrated replay contains 49 stages.
+controls, with 27 source pins. At that stage the integrated replay
+contained 49 stages.
 
 Wick-calibrated material measurement, 16 October:
 [WCG-1](papers/native-wick-calibrated-geometry/THEOREM.md) constructs the

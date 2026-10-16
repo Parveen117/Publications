@@ -22,6 +22,19 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[POC-1: equal-reading centres and prime-sampled source recovery](papers/native-prime-observation-closure/THEOREM.md)
+makes the three-prime centre proposal precise in the retained TET metric.
+Prime-content points need not have an integral centre. Good primes give
+unique compatible local centres by a determinant-unit condition, while
+first-layer solutions at bad primes can fail to lift. On the separate
+actual RH response, SE48/SE49's pencil and Schur signs are reused on odd
+prime s-readings. An elementary Euler-product bound supplies the missing
+analytic sampling density, yielding an all-order RH criterion and a
+conditional compact-uniform response limit. Eight prime directions from
+the old complete V24 source boxes have strict native interval pivots and
+held-out error below 10^-15. This does not prove the universal signs or
+identify arithmetic centres with zeta zeros or physical particles.
+
 [POS-1: prime elementary observer sectors](papers/native-prime-observer-sectors/THEOREM.md)
 classifies all additive congruence observers stable under NM1's chosen
 integral seam/shear action: Lambda/nLambda is nonzero simple exactly at

@@ -1,0 +1,64 @@
+{
+  "protocol": "POC1_SOURCE_PINS_V1",
+  "repository_parent": "4b4a1c4c3b2d51b6f202a4b88c41b05f606f66e9",
+  "files": {
+    "README.md": "34e4b16305877adc8d91d3a2f3f28c62ecad808991c7355c9a7ed2beaa0a1b5d",
+    "THEOREM.md": "de5bb0386f5ef1cbc367d1ed37afcfaf61587b62ad1468b7800b3ce1fc9c4308",
+    "SOURCE_MAP.md": "0d01f1e1ed36f16d2f6fb26adc62bf51f53edbe3abc5c36b4cdf8eb7a79fc69a",
+    "USAGE.md": "31cfd56b0bf8a341f3c0eca48177c9e8676d4444c04d4c5ca0f6ba4d807a3a5f",
+    "observation_adapter.cjs": "ddb8385edb0cec94b6634bfd8f1f08189dd5eb6a7b236d439f001b9ca51a9c0b",
+    "verify.cjs": "07276ef119d9622f334a8c86ee64b27009edd6217c413084d4c9294c19d4111a",
+    "run.py": "2a1418345fe4d600cee6d097fb485551c786ecf926c58b22c78b020d3d59b7ff",
+    "sources/SE48.md": "0891b8f9c31cd5f4675efa94b50dd30382c12fe53d03fbc389baa0768e815d04",
+    "sources/SE49_RESULT.json": "eabe10a9c83726ba81a756bbecca8d26daf77f0d8d13314d6855e1bdd5fda539",
+    "sources/MP_OBSERVER_MARKERS.md": "c044ef0b15e04bef85277680e17401c3c55b2c0ad89d971d9553f469eac728e4",
+    "sources/MP_RECURSIVE_RESIDUE.md": "1ef668a850bbf51150e47a233b90294ce707d87941de1cdf4855d6e1d51c9196",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-prime-observer-sectors/THEOREM.md": "d5823c0cbcabb793a012cd55f6fab96deedab64120abbc1feadcdcbe4893c89a",
+    "../native-prime-observer-sectors/observer_adapter.cjs": "b04c5c5346fbfaf1dec5cbaee5c875b3644abd0a1a0fdf5a55ac11fb4138f40f",
+    "../native-prime-observer-sectors/SOURCE_PINS.json": "8ae43624f1e562c898f1e0be5798e599959aa516cdbc7d42400d60a891c5ab92",
+    "../native-tvsp-exponential-transport/THEOREM.md": "a5de5a5819d0223e9e988eda5fd2ea6e587f27a1a2edd433c417d74cda472d44",
+    "../native-tvsp-exponential-transport/transport_adapter.cjs": "ea7e1cc3e627d20324fe0fefc63a17a21b18f2d17113054224d129dd0e9d25fd",
+    "../native-tvsp-exponential-transport/SOURCE_PINS.json": "e9232b980a9cbd69af2ea0007deba65ceb695c378722f08b71213fae3e7e33c4",
+    "../native-tvsp-lambda-matrices/THEOREM.md": "859dff20097e1d9377c79b2763fe6e73436b70f191ac8fea04f6a587b08e0c00",
+    "../native-tvsp-lambda-matrices/tvsp_adapter.cjs": "cf752edd50741e738328c97f5f4bebefde58f0cb213def34dd6f9d4ffc525bf3",
+    "../native-tvsp-lambda-matrices/SOURCE_PINS.json": "b987300c34d89d13e1d7ccb56e25ea56c67edb1b3621498bb48227071c76fa6d",
+    "../native-moving-zero-covariance/THEOREM.md": "11a3a370192493f543b357d9701cd3d09e6386aa37079b927946304b000d1b0a",
+    "../native-moving-zero-covariance/SOURCE_MAP.md": "92784b50d695d38d01703017651d2a16eca1bdcd3bc2ececcd1eced599cf41b1",
+    "../native-moving-zero-covariance/SOURCE_PINS.json": "f816a8c082b0cb080a6f2c29c0b20b96b6740a5abce23cfd8a6b9e0f4c9bdd0c",
+    "../native-moving-zero-covariance/sources/SE26.md": "baf4664ebb7e3348836bfe4773b50a12c914287d858d67a7093262eecc0219bb",
+    "../native-moving-zero-covariance/sources/SE49.md": "36b0e0b37594d7112b24fb58fb401f521912eb6baf6d487094ddf0449c725b4f",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  },
+  "external_snapshots": [
+    {
+      "local_path": "sources/SE48.md",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "4faee4f9467e7c7e889ec46b5347a579f44f61e9",
+      "source_path": "papers/rkf_completed_weil_endpoint/development/SE48_DIAGONAL_SPECTRAL_PENCIL.md",
+      "git_blob_sha1": "5c6df40a87829cf0d02690760f87168b1623d295"
+    },
+    {
+      "local_path": "sources/SE49_RESULT.json",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "4faee4f9467e7c7e889ec46b5347a579f44f61e9",
+      "source_path": "proof_lab/OBSERVER_INNOVATION_CONVERGENCE_RESULT.json",
+      "git_blob_sha1": "e026b379f1be2b2019d3046edfaf2c4a68b0c4ef"
+    },
+    {
+      "local_path": "sources/MP_OBSERVER_MARKERS.md",
+      "repository": "Parveen117/MP",
+      "commit": "0cb1aeec0f236f0876bc7aaf222db6719e461f68",
+      "source_path": "programmes/observer_marked_spectral_separation/OBSERVER_MARKED_SPECTRAL_SEPARATION_THEOREM.md",
+      "git_blob_sha1": "e8d5585824d89628f250e5f613a6e8ee62b57bf1"
+    },
+    {
+      "local_path": "sources/MP_RECURSIVE_RESIDUE.md",
+      "repository": "Parveen117/MP",
+      "commit": "24c48053102dd772ad24518d6ddc865163150d0c",
+      "source_path": "programmes/recursive_observer_residue_descent/RECURSIVE_OBSERVER_RESIDUE_DESCENT_THEOREM.md",
+      "git_blob_sha1": "4ed6ab6d8a97feb50d98c849e32f569d6a4e9205"
+    }
+  ]
+}
