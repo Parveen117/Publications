@@ -14,41 +14,47 @@ verified source results rather than a new collection of unrelated examples.
 | Classical regular local reduction and relational circumference | Closed on the nowhere-zero-current patch | LPS-T5 through LPS-T7 | Actual local gauge reduction to (Q,P); reduced quantization of relational length; pointwise quantum field operator not constructed |
 | Full continuous test-dual kernel of the fixed real-zero-mode representation | Closed for compact smooth zero modes times finite oscillator tests | LSC-T1 through LSC-T4 | All-level cyclicity; one-dimensional fiber kernel iff a_0 b_0=0; complete distributional axis decomposition; not other representations |
 | Regular physical measure with inherited observable contract | Unique up to normalization | LSC-T5 | Requires momentum-multiplier compatibility, the fixed HQS Q expression and its full-line matching; constraints alone do not fix the measure |
-| Full local physical quantum LNC construction | Open | LSC classifies the test-dual kernel; LPS supplies regular physical norm and classical relational geometry | Singular-axis physical quantization, quantum relational fields, alternative representation selection, matter and potentials remain open |
+| Complementary P=0,K!=0 physical clock sector | Closed for the declared quantization | CCS-T1 through CCS-T4 | Actual local affine reduction; universal all-mode dressing; positive physical norm; self-adjoint reduced scalar observables; selected matching |
+| Common physical completion of both noncritical axes | Closed for one punctured-plane averaging prescription | CCS-T5 | H_P direct_sum H_K; relative weights selected by common normalization, not forced by constraints |
+| Extension of that unchanged average through the joint origin | Obstructed on nonzero-origin smooth tests | CCS-T6 | Positive logarithmic divergence; optional separate rank-one form has no canonical clock; physical gluing open |
+| Full local physical quantum LNC construction | Open | LSC classifies the test-dual kernel; LPS/CCS supply both open-axis physical norms and local classical reductions | Critical origin, quantum fields beyond gauge-slice observables, alternative representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-LSC-1 proves that no additional positive-level primary exists in either
-auxiliary real-momentum oscillator factor: its explicit D_N has imaginary
-part bounded below by N times the identity. Induction then proves that
-vacuum descendants span every oscillator level, with strictly positive
-Gram matrices for all real zero modes. This avoids importing an external
-irreducibility theorem and does not infer all-level invertibility from tests.
+CCS-1 proves the smooth on-shell dichotomy directly from the original
+current ODEs. Nonzero P forces the LPS nowhere-zero-current branch; P=0
+forces p=phi'=0. On the latter branch the actual gauge vector fields remain
+nonzero. Explicit affine-connection straightening removes local q,k profiles,
+and K!=0 permits the geometry clock q=tau. Its reduced pair is (Phi,K).
 
-Moving descendant words through the local constraint equations classifies
-the complete continuous test-dual kernel. Its scalar vacuum coefficient is
-F=U(a_0)delta(b_0)+delta(a_0)V(b_0), with just a shared-origin redundancy.
-The regular P!=0 branch has exactly the LPS oscillator dressing and arbitrary
-P-distribution amplitude; no transverse delta derivatives or shifted K shells
-remain. The singular axis is classified algebraically, not physically completed.
+The complementary oscillator state has the closed expression
+exp[-sum U_n V_n/(2n)] per chirality and is K independent. Its Fock norm
+diverges, but the specified contraction/average has positive physical norm
+L^2(dK/|K|). The scalar observable includes the weight correction and an
+explicit self-adjoint full-line domain. These are reduced relational
+observables of the actual local constraints, with a test-quotient intertwiner.
 
-For positive rigging forms respecting momentum multipliers, keeping the fixed
-HQS Q observable forces the density c_sign/|P|. Keeping its full-line matching
-forces the sign constants equal. Thus the regular physical norm is fixed
-up to normalization under that observable contract; constraints alone still
-permit other measures. All frozen predecessors remain unchanged.
+One common scalar average completes the punctured two-axis sector to
+H_P direct_sum H_K. Its positive Gaussian regularization diverges
+logarithmically at the joint origin for nonzero-origin tests. A separate
+positive rank-one origin form is possible, but cannot be identified with
+that divergent limit or carry the same canonical pairs. All frozen
+predecessor packets remain unchanged; the analytic proofs are separate
+from the finite native certificate.
 
 ## Next decisive obligation
 
-Construct quantum relational field observables and determine the physical
-norm/clock/observable interpretation of the singular axis. Reuse the completed
-oscillator classification; do not reopen it based on finite-level searches.
-Selection among different quantum representations and matching contracts
-remains a physical input. Potential, quantized matter, global cut gluing and
-physical 3+1 recovery have their own unresolved obligations.
+Determine the classical critical-origin quotient and its admissible physical
+observable/domain contract. Reuse CCS's obstruction before proposing an
+extension of the common average. Physical selection/gluing of an origin
+sector and a direct quantum relational-field construction beyond reduced
+gauge-slice observables remain open. Reuse the completed oscillator
+classification; do not reopen it based on finite-level searches.
+Potential, quantized matter, global cut gluing and physical 3+1 recovery
+have their own unresolved obligations.
 
 ## Evidence convention
 
