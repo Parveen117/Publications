@@ -1,5 +1,15 @@
 # Publications
 
+Latest prime-observation development: [POC-1 — equal-reading centres and prime-sampled source recovery](papers/native-prime-observation-closure/README.md).
+The retained source metric gives an exact three-point centre, while an
+explicit prime-content example rules out automatic prime-centre closure.
+Good-prime local centres lift uniquely; bad-prime layers can fail to lift.
+Citing SE48/SE49, the actual RH response has a prime-sampled all-order
+positivity criterion and conditional recovery bound. Eight prime readings
+from the existing complete V24 archive pass outward positivity replay,
+with held-out response error below 10^-15. All-order positivity and the
+physical mass/spacetime identification remain open.
+
 Latest arithmetic-observer development: [POS-1 — prime elementary observers](papers/native-prime-observer-sectors/README.md).
 The existing integral seam/shear adapter selects prime moduli exactly as
 elementary finite additive observers. Prime-power layers retain carries,
