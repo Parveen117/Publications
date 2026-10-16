@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 16 October 2026. Completed finite quadratic-observer verification project: **CHD-1/2/3**. Signalling audit **GSA-1** and the local quantum-gravity constraint target retain their stated open obligations.
+Updated 16 October 2026. New selected homogeneous quantum-sector completion: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
@@ -9,6 +9,31 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[HQS-1](papers/native-homogeneous-quantum-sector/THEOREM.md) quantizes the
+regular homogeneous V=0, matter-free sector inherited from LNC/REC. The
+canonical variables q=log(L/L_ref), p=L pi give C=p k. Product ordering
+has a self-adjoint joint-spectral constraint and a complete unitary gauge
+group. Averaging on the declared p!=0 test sector derives the positive
+physical measure dp/|p|. An explicit unitary map to reduced quantization
+provides self-adjoint length and dilation operators, positive length, and the exact
+affine relation [L,P]=iL on a common core.
+
+The physical momentum-space log-length operator includes the necessary
+weight term i[partial_p-1/(2p)] and a selected full-line matching domain.
+Ordinary half-line momentum instead has deficiency indices (1,0), so it
+cannot be adopted as a self-adjoint observable in that scalar representation.
+Both clock orientations are retained; the singular p=0 constraint sector
+and alternative gluing choices remain separate. The reduced V=0 geometry
+is static in phi, consistent with REC, not a propagating gravitational model.
+
+The completed CHD observer theorem now acts on an explicit normalizable
+physical packet span. Its first and second momentum compressions differ
+from a closed finite dynamics by (1/12)I; the full momentum closure is
+infinite. General self-adjointness, averaging and domain statements have
+written proofs, with finite native arithmetic/rewrite certificates scoped
+separately. This is a selected homogeneous quantum-sector closure, not
+quantization of the full local constraint family.
 
 **Manuscript closure, 16 October 2026.** The integrated eight-page paper
 [Cut-Generated Information Transport and Complete Observer Verification](papers/native-cut-generated-history/manuscript/paper.pdf)
@@ -95,7 +120,7 @@ The earlier classical MG/SM action results are pinned and included as source sna
 
 ## Next proof target
 
-**Construct the physical reduction and quantum constraint representation of the specified local model, and test anomalies and physical-sector positivity.**
+**Construct the inhomogeneous quantum constraint representation of the specified local model, and calculate ordering/central terms on a common domain.** HQS-1 now supplies the regular homogeneous V=0 positive quantum comparison sector; it does not settle the full local algebra.
 
 CHD supplies a cut-generated record map instead of assuming pre-cut evolution. To integrate it here, specify cuts and their implementation from this model and prove constraint/observable compatibility on the retained image. Complete coherent transfer alone does not choose the cuts or a gravitational coupling law. No prime-phase extraction is required for this interface.
 
@@ -112,7 +137,7 @@ Physical 3+1 interactions and empirical calibration remain downstream obligation
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. The repository runner replays all 23 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. HQS-1 adds 147 exact checks, 10 native word proofs/replays and 14 controls for the selected homogeneous quantum sector and physical observer interface. The repository runner replays all 24 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py

@@ -31,6 +31,7 @@ stages = [
     'native-heat-observer-memory',
     'native-cut-generated-history',
     'native-gravity-signalling-audit',
+    'native-homogeneous-quantum-sector',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
