@@ -1,0 +1,19 @@
+{
+  "protocol": "NCS1_SOURCE_PINS_V1",
+  "rgr_dependency_commit": "d9c70208520f53f31d93bd94c3190f48b34acb4c",
+  "branch_base_commit": "97bb7fe4ddccff1a5371689ecc2055b409606048",
+  "files": {
+    "verify.cjs": "f93ae898c885f86979ad1e10cd49797b3183b15474a0e73267ffb6689acb130e",
+    "run.py": "2082f5ad324d01f6037aed24c58befce3bbaecaa75554bb63dab6e7e213370b4",
+    "../NUMBER_CIRCLE.md": "a123994706c8b8f126c52a3f44de5633e0dcdfa2c3f88be5f950af2fc5904046",
+    "../../residual-gauge-rigging-report/ERGODICITY.md": "451abde6159e174ab9f46109d3b37c0d6fab2e3e4ee938ea6079a47c1616d11d",
+    "../../residual-gauge-rigging-report/UNIQUENESS.md": "e7512b4721b10fb4370eb4ed074f1ed0f1fa4baae7de9805a95db70766dae469",
+    "../../native-residual-gauge-rigging/THEOREM.md": "8ff94808f326a81bac1c72a39641607e086240e32e35b2e107861ff5ea07ab83",
+    "../../native-inverse-gauge-quantization/THEOREM.md": "c7780e54a54774ae80288200c3f51fd95081e1a3601f82a39ab4418af969741d",
+    "../../native-central-gauge-domain/THEOREM.md": "d70f48a5fe713b421e9ea2035f638fd2eab7be4dce211b6d39c994334473da0a",
+    "../../native-angular-calibration/THEOREM.md": "22b0663fa55b7ccbd6b6d238a75ea266e2cf85fc3f168d62ceaf2753af87705b",
+    "../../native-moving-zero-covariance/CIRCULAR_SECTORS.md": "a21108b701778e59d10357839b2dcd2f311707291a5738c8841c53d401ae705f",
+    "../../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

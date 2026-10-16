@@ -1,0 +1,198 @@
+{
+  "protocol": "NCS1_NUMBER_CIRCLE_SECTORS_V1",
+  "status": "PASS_FINITE_WITNESSES_FOR_NUMBER_CIRCLE_SECTORS",
+  "source_pins_sha256": "ea9f4843480d7e3cf209d292a9e6018fa1a9d163d86a18dafdff2f30fd80e33d",
+  "checks": [
+    {
+      "name": "W1_S_transpose_S_is_2I",
+      "passed": true
+    },
+    {
+      "name": "W1_det_S_positive_rotation_not_reflection",
+      "passed": true
+    },
+    {
+      "name": "W1_S_squared_is_2_times_quarter_turn",
+      "passed": true
+    },
+    {
+      "name": "W1_S_fourth_is_minus_4I_eighth_is_16I",
+      "passed": true
+    },
+    {
+      "name": "W1_S_is_sqrt2_times_I_minus_A_over_sqrt2",
+      "passed": true
+    },
+    {
+      "name": "W1_invariant_c2_plus_d2_equals_o2_plus_x2",
+      "passed": true
+    },
+    {
+      "name": "W1_inverse_recovers_o_and_x",
+      "passed": true
+    },
+    {
+      "name": "W1_d_zero_iff_o_equals_x",
+      "passed": true
+    },
+    {
+      "name": "W1_complex_form_multiplication_by_unit_circle_point",
+      "passed": true
+    },
+    {
+      "name": "W1_common_shift_fixes_d_opposite_shift_fixes_c",
+      "passed": true
+    },
+    {
+      "name": "W2_cayley_points_are_rotations",
+      "passed": true
+    },
+    {
+      "name": "W2_frame_composition_middle_frame_cancels",
+      "passed": true
+    },
+    {
+      "name": "W2_cayley_tangent_addition",
+      "passed": true
+    },
+    {
+      "name": "W2_q_type_operator_depends_only_on_angle_difference",
+      "passed": true
+    },
+    {
+      "name": "W2_q_type_operator_commutes_with_generator",
+      "passed": true
+    },
+    {
+      "name": "W2_two_frame_angles_diagonalize_a_non_q_operator",
+      "passed": true
+    },
+    {
+      "name": "W3_sector_compressions_positive",
+      "passed": true
+    },
+    {
+      "name": "W3_cd_frame_reduces_the_mixed_block",
+      "passed": true
+    },
+    {
+      "name": "W3_block_convention_M12_maps_sector2_to_sector1",
+      "passed": true
+    },
+    {
+      "name": "W4_T_labels_H_D_equal_S_on_(T_minus,T_plus)",
+      "passed": true
+    },
+    {
+      "name": "W4_Q_labels_common_is_minus_D_disagreement_is_minus_H",
+      "passed": true
+    },
+    {
+      "name": "W4_diagonal_flow_direction_is_D",
+      "passed": true
+    },
+    {
+      "name": "W5_F21_has_order_21",
+      "passed": true
+    },
+    {
+      "name": "W5_F21_every_element_is_a_square",
+      "passed": true
+    },
+    {
+      "name": "W5_full_product_action_single_orbit_invariant_dim_1",
+      "passed": true
+    },
+    {
+      "name": "W5_diagonal_action_has_n_orbits_invariant_dim_21",
+      "passed": true
+    },
+    {
+      "name": "W5_rho_is_diagonal_invariant",
+      "passed": true
+    },
+    {
+      "name": "W5_rho_is_a_complete_diagonal_invariant",
+      "passed": true
+    },
+    {
+      "name": "W5_H_type_acts_on_rho_by_h_minus_2_conjugated",
+      "passed": true
+    },
+    {
+      "name": "W5_diagonal_plus_H_type_generate_full_product",
+      "passed": true
+    },
+    {
+      "name": "W5_adding_H_type_collapses_comparison_to_one_channel",
+      "passed": true
+    },
+    {
+      "name": "W5_S3_control_generated_subgroup_index_2",
+      "passed": true
+    },
+    {
+      "name": "W5_S3_control_two_orbits_labelled_by_sign_of_rho",
+      "passed": true
+    },
+    {
+      "name": "W5_abelian_toy_diagonal_invariant_is_difference",
+      "passed": true
+    },
+    {
+      "name": "W5_invariant_positive_form_rank_21_diagonal_vs_1_full",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "W1_disagreement_alone_recovers_inputs",
+      "rejected": true
+    },
+    {
+      "name": "W1_unscaled_S_preserves_the_quadratic_reading",
+      "rejected": true
+    },
+    {
+      "name": "W2_mismatched_middle_frames_compose",
+      "rejected": true
+    },
+    {
+      "name": "W2_generic_operator_depends_only_on_angle_difference",
+      "rejected": true
+    },
+    {
+      "name": "W2_one_common_angle_diagonalizes_it",
+      "rejected": true
+    },
+    {
+      "name": "W3_positive_compressions_imply_positive_operator",
+      "rejected": true
+    },
+    {
+      "name": "W3_block_order_is_irrelevant",
+      "rejected": true
+    },
+    {
+      "name": "W4_chiral_sign_is_irrelevant_to_which_is_common",
+      "rejected": true
+    },
+    {
+      "name": "W5_H_type_preserves_rho",
+      "rejected": true
+    },
+    {
+      "name": "W5_H_type_generation_holds_without_square_generation",
+      "rejected": true
+    }
+  ],
+  "results": {
+    "continuum_proofs_machine_certified": false,
+    "comparison_theorem": "written proof in NUMBER_CIRCLE.md section 5: momentum-constraint (diagonal) invariant dual is infinite-dimensional; full G_c dual is C ell",
+    "diagonal_classification": "Conjecture C4 (Delta-invariants are exactly functions of rho) is not decided"
+  },
+  "summary": {
+    "exact_checks": 35,
+    "negative_controls": 10
+  }
+}
