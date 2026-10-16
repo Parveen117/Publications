@@ -10,6 +10,38 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+User-directed infinite-layer cut continuation, 17 October:
+[ILC-1](papers/native-infinite-layer-cut/THEOREM.md) makes the
+single-point proposal precise using the actual source's normalized
+derivative layers. The two confluent Hankel forms are the retained
+L/J kernels' derivative limits. Their all-order positivity, equivalently
+nonnegativity of all alternating binomial readings, is an RH criterion
+at one regular point. Binomial multiplicities give normalized binary
+record weights. The universal actual-source inequalities remain open.
+
+Under that premise the acquired polynomial pairing gives a positive
+contraction. Its finite compressions yield padded cuts converging
+strongly to an exact two-channel projection. Two reflections yield a
+unitary rotation and wave recurrence. A co-transported observer retains
+its reading; nonfixed unaveraged states do not converge in norm, while
+Cesaro averages extract fixed modes. Infinite derivative depth, wave
+iteration and averaging are explicitly different operations. No Maxwell
+field or physical propagation speed is identified by this construction.
+
+The new complete native evaluation at original s=29 provides 16 layers
+through derivative order 15. Both 8x8 forms and all 136 available
+binomial readings are strictly positive. The finite layer spectrum lies
+in (1/10000,81/100). At independently evaluated, unfitted s=31 the
+response error is positive and below 6e-28; a separate unconditional
+analytic bound is below 6.025e-22. All Euler, Gamma and omitted-tail
+contributions are retained. This is an eight-direction confluent bank,
+not an extension of the nine-prime bank or the whole old V24.
+
+ILC validation: 63 exact checks, 6 symbolic certificates, 17 negative
+controls and 24 source pins. The integrated replay now has 52 stages.
+The all-order source condition, global eta and physical mass/spacetime
+identification remain open. Predecessor packets are unchanged.
+
 Prime-source innovation window and new actual direction, 17 October:
 [PIW-1](papers/native-prime-innovation-window/THEOREM.md) continues the
 specific RH gate left by POC. For delta=q(x)-q_N(x), it proves
@@ -32,7 +64,7 @@ is not certified by this selected-bank calculation. The global shift,
 all-order RH signs and physical mass/spacetime identification remain open.
 
 PIW validation: 51 exact checks, 4 symbolic certificates, 16 negative
-controls and 20 source pins. The integrated replay now has 51 stages.
+controls and 20 source pins. At that stage the integrated replay had 51 stages.
 The new source evaluator uses only native rational outward arithmetic;
 Python 3.12 remains I/O orchestration. Predecessor packets are unchanged.
 

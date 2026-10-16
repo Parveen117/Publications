@@ -1,5 +1,15 @@
 # Publications
 
+Latest infinite-layer continuation: [ILC-1 — single-point layers, combinatorial readings and a positive cut](papers/native-infinite-layer-cut/README.md).
+The two confluent source forms and all alternating binomial readings
+give equivalent all-order RH conditions at one regular point. Under
+that premise, finite derivative compressions yield cuts converging
+strongly to an exact two-channel projection. Two reflections generate
+norm-preserving wave transport with an invariant carried observer.
+Sixteen actual layers at s=29 certify both 8x8 forms and 136 binomial
+readings; unfitted s=31 response error is below 6e-28. The universal
+source condition and electromagnetic identification remain open.
+
 Latest prime-source continuation: [PIW-1 — sharp innovation windows and a new complete prime reading](papers/native-prime-innovation-window/README.md).
 The two acceptance signs factor as x alpha+beta=delta(1-kappa delta).
 This gives a sharp value interval and an independent slope interval,
