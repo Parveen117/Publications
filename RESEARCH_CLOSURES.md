@@ -42,13 +42,40 @@ verified source results rather than a new collection of unrelated examples.
 | Central integer gauge quotient and residual group action | Closed for the explicit weighted sequence average | CGD-T1 | Positive periodization, completed H_c and full remaining gauge-group intertwiner; central normal subgroup, no new physical periodic-clock assumption |
 | Full continuous invariant dual of the weighted zero-mode test space | Exactly zero for Phi_Z | CGD-T2 | Exact topological coinvariants; all relative-coordinate polynomial decay weights included; stronger residual shape/angle test topologies are not excluded |
 | Common source core and all-smearing quantum H/D algebra | Closed after the proved central gauge reduction | CGD-T3 and CGD-T4 | C6 extension and stated Shimomura density theorem; common mixed-product domain, essential self-adjointness for real smearings, zero central term; separate original nonlinear field operators and other orderings not constructed |
-| Positive full source gauge reduction | Open | CGD-T2/T5; IGQ-T6; MPQ comparison | Stronger residual test topology, nonzero invariant distributions, positive pairing and channel count required; MPQ recovery remains conditional on one gauge channel |
-| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD common source core | Full positive residual gauge rigging, nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
+| Residual gauge density and doubled-covariance functional | Constructed on an explicit stronger test topology | RGR-T1 through RGR-T4 | Conditional Fourier determinant and rough-profile contraction proved before applying Ramer; kinematic covariance unchanged; full finite-group invariance and compatible common core |
+| Selected positive full source gauge sector and MPQ recovery | Constructed for the explicit rank-one pairing | RGR-T5; IGQ-T6 | Nonzero invariant functional, derived positive norm and onto MPQ spectral-domain intertwiner; one channel for this form, not classification of the whole invariant dual |
+| Uniqueness/completeness of residual gauge physical pairing | Open beyond the Gaussian scale family | RGR-T4/T5 | Covariance scale 2 is forced within the stated Gaussian integration family; additional distributions, positive forms and larger observable contracts remain unclassified |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD core; RGR selected rigging | Nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
+
+RGR-1 constructs the nonzero generalized physical functional that was
+missing at the CGD endpoint. The actual angular Jacobian cancels a
+computed conditional shape determinant. A continuous finite energy
+difference on H^3 configurations, together with a checked Fourier
+contraction limit, identifies the existing square-root density with the
+ordinary density of a doubled-covariance Gaussian. Integration against
+that second measure is continuous on a specified stronger complete test
+space and invariant under the entire residual gauge group.
+
+An explicit common constraint core supports differentiation of the
+functional. Its selected positive rank-one form has quotient C. Tensoring
+with MPQ gives an actual onto physical map and a unitary intertwining
+the norm, maximal spectral domains and chosen measurement instrument.
+The central-periodization intertwiner also lifts the functional to the
+full finite source group before central reduction. Kinematic covariance,
+source action and every predecessor packet are unchanged.
+
+This is a selected physical-sector construction. It does not prove that
+every invariant distribution lies in that sector or that every positive
+pairing must select it. The Gaussian scale-family uniqueness is explicitly
+limited. General continuum arguments and the external Gaussian theorem
+are distinct from the exact native regression witnesses.
+
+### Previous CGD endpoint
 
 CGD-1 uses the central integer relative-lift subgroup already present in
 IGQ's actual connected source gauge group. Its positive sequence average
@@ -80,15 +107,13 @@ physical 3+1 closure is claimed.
 
 ## Next decisive obligation
 
-Stay with the frozen MRF/IGQ model and CGD's actual central quotient and
-common source core. Construct a stronger residual shape/angle test space
-preserved by the gauge action; classify its invariant distributions and
-derive a positive pairing with controlled channel count. CGD-T2 rules
-out the unrefined rapid-zero-mode topology, not every stronger rigging.
-Smooth-vector density alone supplies no nonzero invariant distribution.
-Use CGD-T5/IGQ-T6 only after the one-channel hypotheses are proved.
-Do not restart forward Gaussian quantization or insert a gauge Haar
-measure. Another source ordering needs its own domain and comparison.
+Reuse RGR's selected full source physical pairing and its actual MPQ
+norm/observable intertwiner. Independently review the conditional
+determinant and rough Gaussian contraction proof, then investigate the
+complete invariant dual and the observable conditions that might select
+or enlarge this sector. The full kernel must not be declared one-channel
+just because the exhibited rank-one positive form has that quotient.
+Another source ordering needs its own domain and comparison.
 
 Separately define any desired nonlinear quantum geometry in the original
 r,m variables; complete classical coordinates do not automatically define
