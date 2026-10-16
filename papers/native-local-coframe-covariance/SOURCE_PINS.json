@@ -1,0 +1,21 @@
+{
+  "protocol": "LCF1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "476be0a98265984d482c68184b1fc5f17e6cb7b924757a1a74ffdb5eef7a6cc0",
+    "THEOREM.md": "70f5e2c0e2c9948664421d364441c51ab1a455e0cfc1f88784b99313a11e156c",
+    "verify.cjs": "cc4f7d54c4f5f617e5781842dea727a7afb486b15ca0e5ae42fbe0fcd64d12b4",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../emk-ugd-algebra/README.md": "fb0e3bd4f3f35c522d3ce246fe107f1176078fe48c0dcd18c0e12fe903b05107",
+    "../emk-ugd-algebra/CONNECTION_CALCULUS.md": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+    "../emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md": "325a5d025874ac678d38ad7e20ca0cc1ddc68b9f9d267b93333829883cdf1932",
+    "../emk-recognition-geometry/README.md": "bb7559a21a236b6d6bb00e69740453078c88eef73dc184d6b882a9f205cfcfae",
+    "../native-loop-concentration/CUT_INFORMATION_DYNAMICS.md": "f72327ad95193100d93dbccb217941ce2621fd3ebffba20af406b57d4ef4137c",
+    "../native-relational-cut-space/THEOREM.md": "b692cd897860249ae33931c0383f0f0a5ea400e8a83f8239d2caa2e7eaffbb12",
+    "../native-action-geometry-dynamics/THEOREM.md": "6b2077516d830ac44121107a75d4fa9af2ce39ab764713b71814866c379a8c47",
+    "../native-action-geometry-dynamics/verify.cjs": "ac3e2b7b21a9d6e9c852fa9052759f20a9ea75bd33aa8438aef1945905e84ab2",
+    "../native-geometry-controlled-propagation/THEOREM.md": "a06fa36e7657cbac8b672f1f50f2bfe60985c6edb74235f869ac297c884a5a56",
+    "../native-quantum-gravity-consistency/THEOREM.md": "4a431b5ad31d7981d7d505159c756db213dc6faac47d48534c911f20ad831335"
+  }
+}

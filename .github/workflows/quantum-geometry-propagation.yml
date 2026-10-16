@@ -1,0 +1,44 @@
+name: Quantum geometry propagation proof replay
+
+on:
+  push:
+    branches: [main, 'codex/quantum-geometry-propagation-*']
+    paths:
+      - 'papers/native-*/**'
+      - 'papers/Native_Phase_Word_Reconstruction_Source.zip'
+      - 'scripts/replay_quantum_geometry.py'
+      - '.github/workflows/quantum-geometry-propagation.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'papers/native-*/**'
+      - 'papers/Native_Phase_Word_Reconstruction_Source.zip'
+      - 'scripts/replay_quantum_geometry.py'
+      - '.github/workflows/quantum-geometry-propagation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Native engine runtime
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '24.19.0'
+          package-manager-cache: false
+      - name: Replay inherited native cut action
+        run: python3 papers/native-cut-transport-feedback/verify.py --check
+      - name: Replay source-bound quantum geometry chain
+        run: python3 scripts/replay_quantum_geometry.py

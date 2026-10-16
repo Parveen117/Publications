@@ -1,0 +1,15 @@
+{
+  "protocol": "AGD1_SOURCE_PINS_V1",
+  "files": {
+    "THEOREM.md": "6b2077516d830ac44121107a75d4fa9af2ce39ab764713b71814866c379a8c47",
+    "verify.cjs": "ac3e2b7b21a9d6e9c852fa9052759f20a9ea75bd33aa8438aef1945905e84ab2",
+    "run.py": "00ea1b81623f119756c21158ca6bab397c1b2258a780c0bfdd0bf5b7a1967b9f",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-cut-transport-feedback/THEOREM.md": "47ea64afdca379cdc66c6655d4214531c89a63a8586d5a2564b11c3bb5479ee6",
+    "../native-cut-transport-feedback/CERTIFICATE.json": "e22175f417bc95556055005cf6503b206937667306602f722c9458146e56862f",
+    "../native-geometry-controlled-propagation/THEOREM.md": "a06fa36e7657cbac8b672f1f50f2bfe60985c6edb74235f869ac297c884a5a56",
+    "../native-geometry-controlled-propagation/CERTIFICATE.json": "35c73f854e9526aabd3394c5dbf1aca597c673e75d515fedd95dd29f29c8da88",
+    "README.md": "bfeb51d6c5fad12d36941873f92fa1e955cda8168de59381d6e8fb4dafe0ce0f"
+  }
+}

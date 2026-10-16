@@ -1,0 +1,29 @@
+{
+  "protocol": "EGR1_SOURCE_PINS_V1",
+  "repository_base": "fc4619637f9417ecd0f0105bae995fab9cc3d9bd",
+  "native_engine": {
+    "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  },
+  "native_archive_sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+  "packet_files": {
+    "README.md": "d9a5b80d0ecf349add785a4423f30b148262543df4bf7cb355e62cd787fb39be",
+    "THEOREM.md": "3c14dc1ad2f06ec5b3804ec6a126f3c56c59e698ba18ca5967c272db99375a69",
+    "run.py": "0c30dc70fcce4d159284e0b747e36d5d245a49cac71d0e871829d948dfc3d6c7",
+    "verify.cjs": "d73cf615bbd18ead56ddacac4e1002ea30dcd24044a552446f9d43abd8661854"
+  },
+  "predecessor_files": {
+    "papers/native-four-dimensional-hinge/THEOREM.md": "59bd0b15b51d1a5b10f159e8d6c1d00c62823711e7940fba93b60a0273eaaad2",
+    "papers/native-four-dimensional-hinge/CERTIFICATE.json": "fe6b6ed35bc55656add884f3be5deeba380ee5ef4a3e8fe1c9c015059107a986",
+    "papers/native-cut-transport-feedback/THEOREM.md": "47ea64afdca379cdc66c6655d4214531c89a63a8586d5a2564b11c3bb5479ee6",
+    "papers/native-jacobian-cut-certification/THEOREM.md": "6240606cb6ad10514f16132592b46a1929703316879da543c62353f0244101ee",
+    "papers/generalized-euler-evolution/THEOREM.md": "f3d6690e8ecdc49aa03f742a2beb7c8197228a5670c076f46287bae8321ca7d1",
+    "papers/native-relative-curvature/THEOREM.md": "05520b64e0110a370b3f5e955513fddf5a511bd41fc1125be95ab194c12bc1ea"
+  },
+  "primary_reference": {
+    "title": "Canonical linearized Regge calculus: Counting lattice gravitons with Pachner moves",
+    "author": "Philipp A. Hohn",
+    "doi": "10.1103/PhysRevD.91.124034",
+    "use": "Established linearized Regge gauge context; no imported matrix coefficients or nonlinear constraint proof."
+  }
+}

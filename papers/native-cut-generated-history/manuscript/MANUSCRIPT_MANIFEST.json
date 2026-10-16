@@ -1,0 +1,22 @@
+{
+  "protocol": "CHD_MANUSCRIPT_V1_PROVENANCE",
+  "date": "2026-10-16",
+  "evidence_commit": "ac291f7aefea5b6f3d0eaf7f7679e83625341285",
+  "scope": "Finalized finite quadratic-observer verification manuscript; not physical QG completion",
+  "sha256": {
+    "papers/native-cut-generated-history/manuscript/README.md": "75ee68b7fa93fb0ac3e1057215ba12a68aad2f228e91e722a9ae559c1bcaf201",
+    "papers/native-cut-generated-history/manuscript/build.py": "a285609cca1c54ac3a97ca8d4fe7c7c18a7003def8313af70688c3fbfd06e77d",
+    "papers/native-cut-generated-history/manuscript/paper.pdf": "19ae627e986553c20de3e045d9107d7658034033956c4052430aadf92839d5f9",
+    "papers/native-cut-generated-history/manuscript/paper.tex": "9bc870ffbe45dddfc5f866df4440c116c959d890bf3109a40012ade8d1aff454",
+    "papers/native-cut-generated-history/THEOREM.md": "b75643d84d600c2fd7a2bc7b6de4fae18886a7d02df3d9d348c34f924489c1d6",
+    "papers/native-cut-generated-history/BINARY_INVARIANT_SYNTHESIS.md": "17607b1e8d18f07c6ea1cc286c6d258155efca244c0e78b56a765a6a6c7e58a1",
+    "papers/native-cut-generated-history/CIRCULAR_OBSERVER_COMPLETION.md": "9ad8a199ab4e011131991be8daf469add67647dfad2e1d142ce195a9e842c697",
+    "papers/native-cut-generated-history/SOURCE_MAP.md": "3230a7a8a89688d8d2543ef5058e2b2b64e95baf4acb11392353d92ab2cfe37a",
+    "papers/native-cut-generated-history/SOURCE_PINS.json": "7e7f122d3e6393d565a60a6b9e21db7edee11e51b3f0bb24b8146f49572e36c5",
+    "papers/native-cut-generated-history/CERTIFICATE.json": "91cdbd7de3c0b640f7dcd9b3f6022ef509e58cc72675c8d05298ab532c069c4b",
+    "papers/native-cut-generated-history/EXPECTED.sha256": "de05a7ce7c54bada4138f65eb3f5bde77d23164667cb0b9b9f4cd0a18d2cb72e",
+    "papers/native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "papers/native-local-normal-closure/THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7",
+    "papers/native-gravity-signalling-audit/THEOREM.md": "c3c5a819e8edef1b94129d8873c67c3018a0e280755d13b6a4976e7a056ad627"
+  }
+}

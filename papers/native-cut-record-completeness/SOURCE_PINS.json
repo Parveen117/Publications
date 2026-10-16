@@ -1,0 +1,42 @@
+{
+  "protocol": "CRC1_SOURCE_PINS_V1",
+  "repository_base": "fc4619637f9417ecd0f0105bae995fab9cc3d9bd",
+  "native_engine": {
+    "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  },
+  "native_archive_sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+  "packet_files": {
+    "README.md": "a4596ffd3708fedbc2267d796ffebd139dc5e9cd686daa1cbd71093d265e4cad",
+    "THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "run.py": "79999d3d6c41f5099362abe207b13206d3ff06dfdef8078a0078674115e9e1e0",
+    "verify.cjs": "8f13dac008dc1cc239d0e5946a780fddb08c060e67d573e77320a65456563168"
+  },
+  "predecessor_files": {
+    "papers/native-exponential-gravity-response/README.md": "d9a5b80d0ecf349add785a4423f30b148262543df4bf7cb355e62cd787fb39be",
+    "papers/native-exponential-gravity-response/THEOREM.md": "3c14dc1ad2f06ec5b3804ec6a126f3c56c59e698ba18ca5967c272db99375a69",
+    "papers/native-exponential-gravity-response/verify.cjs": "d73cf615bbd18ead56ddacac4e1002ea30dcd24044a552446f9d43abd8661854",
+    "papers/native-exponential-gravity-response/run.py": "0c30dc70fcce4d159284e0b747e36d5d245a49cac71d0e871829d948dfc3d6c7",
+    "papers/native-exponential-gravity-response/SOURCE_PINS.json": "650ebb72a22447b712bb7cb3ba2df96e9b640fb317734cd743bfeff4c8c6f788",
+    "papers/native-exponential-gravity-response/CERTIFICATE.json": "59f857b682d14611d08c26f163730a0973ed8a599cd76db8a57e27e63a129184",
+    "papers/native-exponential-gravity-response/EXPECTED.sha256": "30a13942f8109c16c2a6c77028c6dd7d0f96eec56415155b5555cfee0c41d557",
+    "papers/native-nonlinear-gravity-continuation/README.md": "283f4d494b79ee037144b994084cb5d9ee068a1387f6f7f1d4fa7612a49b0d67",
+    "papers/native-nonlinear-gravity-continuation/THEOREM.md": "22b48d8dfe834ba5b85c927923ee32138407216487e395ff303c5694c420a8ba",
+    "papers/native-nonlinear-gravity-continuation/verify.cjs": "7061b5bca356b2b63fda9cd65ea52d30961402c53f0e1977847d4489ae21fab7",
+    "papers/native-nonlinear-gravity-continuation/run.py": "d41afd4129b515bc3b6f11ea21a8bd70932cd2138674c87f1a3cf77d538c5015",
+    "papers/native-nonlinear-gravity-continuation/SOURCE_PINS.json": "817ae7da1a5f2d82e21204f3776a3961d4c7571304f0485299fbd971da451176",
+    "papers/native-nonlinear-gravity-continuation/CERTIFICATE.json": "00b7f69b8dcbd5999a0abeda36a45285b05ac04641bce2bfdc36fc1b928b9e19",
+    "papers/native-nonlinear-gravity-continuation/EXPECTED.sha256": "c25b608c5f616f600600ce9a1f197fafa696f9d24266b58a67de74f05d39c83c",
+    "papers/native-jacobian-cut-certification/THEOREM.md": "6240606cb6ad10514f16132592b46a1929703316879da543c62353f0244101ee",
+    "papers/native-modular-observers/THEOREMS.md": "4216980e239248a720802e4b59a0e4b3294a53d0f9a82f1748bb8ac42456615c",
+    "papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md": "450858a9aa8e6349c77a7cae3636227e5ba720c62ac6282036c0a82413dda80a",
+    "papers/native-loop-concentration/THEOREM.md": "51ef8bd077b9fc5f811513b5a661d4bfd8e48c3b89d5be57ed0223045d966a78",
+    "papers/native-four-dimensional-hinge/THEOREM.md": "59bd0b15b51d1a5b10f159e8d6c1d00c62823711e7940fba93b60a0273eaaad2"
+  },
+  "primary_reference": {
+    "author": "Domenico D'Alessandro",
+    "title": "On Quantum State Observability and Measurement",
+    "url": "https://arxiv.org/abs/quant-ph/0307127",
+    "use": "Established observability context. Concrete identities and coefficients are derived locally using the existing native engine."
+  }
+}

@@ -1,5 +1,137 @@
 # Publications
 
+Latest quantum development: [LQA-1 — local constraint algebra and positive kinematics](papers/native-local-quantum-anomaly/README.md).
+For the actual periodic V=0 matter-free LNC source, an explicit reversed
+negative-sign oscillator vacuum gives anomaly-free local quantum constraint
+commutators on a common dense domain with positive kinematic norm. The
+inherited null derivative term and homogeneous PK=0 equation are retained.
+The conventional vacuum instead gives c=2 per chirality; a possible linear
+counterterm is classified but not adopted because its zero-mode equation
+changes. Physical constraint states and a positive physical inner product
+remain open; the finite-polynomial test domain has zero strong common kernel.
+407 exact checks, 9 native symbolic proofs/replays and 25 negative controls.
+[Closure ledger](RESEARCH_CLOSURES.md).
+
+Completed homogeneous construction: [HQS-1 — positive regular homogeneous quantum geometry](papers/native-homogeneous-quantum-sector/README.md).
+REC's V=0 matter-free constraint now has a self-adjoint realization,
+positive group-averaged physical measure dp/|p|, explicit reduced-space
+equivalence and self-adjoint length and dilation observables, with length
+positive and domains explicit. The
+ordinary half-line momentum obstruction is proved; the CHD observer
+certificate is realized on normalizable physical packets. This closes the
+selected regular homogeneous quantization, not the full local or physical
+3+1 QG construction. [Closure ledger](RESEARCH_CLOSURES.md).
+
+Finalized paper: [Cut-Generated Information Transport and Complete Observer Verification](papers/native-cut-generated-history/manuscript/paper.pdf)
+([LaTeX and reproducibility](papers/native-cut-generated-history/manuscript/README.md)).
+The eight-page manuscript closes the finite quadratic-observer verification
+study as a mathematical foundation for quantum-gravity research. It includes
+the integrated theorem, proofs, exact source example and certificate record;
+physical gravitational dynamics and FTL remain outside its completion claim.
+
+Completed mathematical project: [CHD-3 — complete circular-observer verification](papers/native-cut-generated-history/CIRCULAR_OBSERVER_COMPLETION.md).
+Every Hermitian observable on n complex channels is reconstructed by an
+explicit minimum family of n^2 fixed quadratic readings at calibrated
+circular positions. The same probes give an iff certificate for all-input
+linear invariant transport, with a left decoder for positive metrics.
+Coherent cut histories preserve the complete observer certificate; copying
+the metric to classical branches can fail. Exact reconstruction, minimum
+counts, frame covariance and a finite-error bound are proved under the
+declared quadratic observation contract. This specializes standard
+polarization/informational completeness using the native engines and
+existing source fixtures; it does not supply a gravitational dynamics law.
+
+Latest signalling research: [GSA-1 — conditional gravity information signalling](papers/native-gravity-signalling-audit/README.md).
+The earlier EGR/QGC nonlinear relaxation now has an explicit remote-steering
+test: under an additional branch-sensitive physical extension, two sender
+measurement bases yield receiver probabilities 4/5 and 9/10 at the specified
+mathematical count. The unconditional contrast is 1/10. This is not a result
+of the admitted affine model: local operations and retained local histories
+give zero remote contrast. MGH's joint interaction gives a separate 16/25
+reference signal but no spatial speed. Physical implementation, state-law
+consistency and a matched light-arrival comparison remain open. The packet
+passes 150 exact checks, 3 native proofs/replays and 7 controls; it does not
+claim physical faster-than-light transmission.
+
+Cut-first project: [CHD-1/2/3 — histories, binary synthesis and complete verification](papers/native-cut-generated-history/README.md).
+Scalar uncut observability is an explicit contract; a nontrivial cut generates
+a binary algebra. Successive projective cut interactions construct a coherent
+history W with W*W=I, without an intervening Hamiltonian or assumed exponential.
+The full represented operator algebra is recoverable on the image, while a
+classical outcome ledger can lose relative phase. Cut-order discrepancy obeys
+Delta*Delta=4[B,A]*[B,A]. The protocol and measurement implementation are declared;
+physical time, full UGD arithmetic and quantum gravity are not derived here.
+The positive-quadratic synthesis target is now closed: rank r requires r linear
+scalar amplitude channels, r-1 binary merges and depth ceil(log2 r). Exact
+weights avoid approximate roots. Invariant-preserving operations descend to a
+weighted isometry; future cut sufficiency reuses CRC's minimal row closure.
+A fixed branch metric is conserved iff it commutes with the cut. Combined
+packet: 594 exact checks, 12 native symbolic proofs/replays and 89 controls.
+
+Latest source-specific application: [HCM-1/2/3 — memory, phase and gain recovery](papers/native-heat-observer-memory/README.md).
+YM54's thermo-response tensor supplies the actual free heat generator and an
+exact two-channel memory repair. Its phase-aware response record retains the
+within-sector residual. The spectral gains A=u^9, B=u^4 now give root-free
+recovery u=A/B^2, with a prime-multiplicity audit and rational reference
+correction. At u=1/2 the inverse can amplify noise by 512; calibration and
+error bounds are explicit. The gain parameter's phase is distinct from the
+measured response phase. 265 exact checks, 3 native proofs/replays and 28
+controls pass. Full interacting Yang–Mills, RH and physical QG remain open.
+
+Latest QG-to-RH application: [MZC-1/2/3 — moving zero, circular sectors and common equilibrium](papers/native-moving-zero-covariance/README.md).
+A declared spectral sector defines admissibility. Stack its leakage record with
+the cut as `D=(C,I-P)`. Native operation closure computes the largest carrier
+where fixed and co-moving observers retain the same equilibrium:
+`E_infinity = intersection ker(D G^k)`. Exact cases retain two, one or zero
+dimensions; a first-order balance can leak at the next response level.
+Combined packet: 194 exact checks, 3 native proof replays and 22 controls pass.
+SE26/SE29/SE49 and CRC results are reused. An independent RH generator and
+universal source-sector exclusion remain open; no new zeta data is claimed.
+
+Latest quantum-gravity research stage: [SRT-1 — graded singular-response transport](papers/native-singular-response-transport/README.md).
+Axis response survives a specified singular chart when its graded record is retained:
+the `(i,j)` entry requires vanishing order `w_i+w_j`, and its coefficient at that
+order recovers the boundary response. First and second jets reconstruct a full
+symmetric response hidden by a collapsed point reading. Signed thermo/EM potential
+mapping and derivative-transport conditions are explicit.
+143 exact checks, 5 native proofs/replays and 21 controls pass. The scaling weights
+are selected; physical singularity resolution and quantum gravity remain open.
+
+[REC-1 — relational event-clock reduction](papers/native-relational-event-clock/README.md):
+LNC's selected homogeneous matter-free sector has a reduced Hamiltonian
+`H_red=L V(phi)/pi` and conserved records `L/pi` and `pi^2+2 W(phi)`, with `W'=V`.
+Normalized event readings lie on a diagonal, but identical endpoint comparisons
+can hide different interior evolution. Differentiable momentum readings recover
+the potential; two readings recover only its integral. Clock and global-winding
+limitations are explicit. 115 exact checks, 4 native proofs/replays and 13 controls pass.
+This is classical homogeneous reduction; full local quantization remains open.
+
+[LNC-1 — classical local constraint closure](papers/native-local-normal-closure/README.md):
+A selected canonical coframe-plus-scalar action supplies the previously missing
+normal geometry evolution. All three classical 1+1 constraint brackets close,
+including the massive LCF matter coupling, and preserve the constraint surface
+along smooth solutions. Closure leaves the potential arbitrary: two constrained
+initial examples give different coframe accelerations. Quantum completion is open.
+66 exact checks, 4 native algebraic certificates/replays and 14 controls pass.
+The added canonical fields and dilaton-type action ansatz are explicit inputs.
+[Canonical research record](QUANTUM_GRAVITY_RESEARCH.md).
+
+[LCF-1](papers/native-local-coframe-covariance/README.md) derives the cut-induced
+coframe density, mixed covariance repair and local matter-source variation.
+[RCG-1](papers/native-relational-cut-space/README.md) supplies relational cut
+geometry, oriented cycle records and the common-transport residual.
+[CLD-1](papers/native-cut-local-dynamics/README.md) supplies the moving-cut
+connection, return-memory law and AGD rotating-reflection calculation.
+[IRT-1](papers/native-invariant-ratio-transport/README.md) supplies the exact
+coupled reflection-sector ratio and the calibrated logarithmic diagonal criterion.
+[ZCR-1](papers/native-zero-reference-recovery/README.md) supplies controlled flat-metric recovery;
+[AGD-1](papers/native-action-geometry-dynamics/README.md) derives geometry dynamics under its
+explicit quantization contract. [GCP-1](papers/native-geometry-controlled-propagation/README.md)
+supplies the curved matter–metric interface and
+[CCL-1](papers/native-common-cone-limit/README.md) the common-cone limit.
+All 24 stages replay with `python3 scripts/replay_quantum_geometry.py` on Python 3.12;
+CI also replays the inherited CID-D2 action packet.
+
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)
 proves that the symmetric helical protocol sees only `alpha+2 beta`, even
 with full transport memory. A calibrated control deformation removes this
@@ -26,7 +158,7 @@ two-mode sector, the information Gram determinant equals squared oriented
 cut curvature. The source generator remains an input; no physical field
 law is silently selected. This companion shares QG-R2's native certificate.
 
-Latest quantum-gravity development: [QG-R2 — many centres, one observation base](papers/native-loop-concentration/README.md)
+Earlier quantum-gravity development: [QG-R2 — many centres, one observation base](papers/native-loop-concentration/README.md)
 derives reference-correct loop fusion and a three-loop orientation readout.
 An exact family has diverging retained density while its combined loop is
 identically flat. Positive defect records, area budgets and a measured
