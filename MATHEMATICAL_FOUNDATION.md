@@ -22,6 +22,17 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[TLM-1: TVSP lambda-layered matrices](papers/native-tvsp-lambda-matrices/THEOREM.md)
+implements the corrected entry-layer proposal using NT's actual six-response
+section and NJC's typed tower hypotheses. Finite holonomic jets form an
+associative matrix calculus with exact point-observer recovery. Their regular
+matrix encoding retains all layers but its spectrum sees only the point
+matrix. In a parameterized NT Hessian source, the mechanical reading remains
+5 while the selected curvature is 5 mu²/324. First context jets suffice for
+that curvature, while the entire scalar reading germ does not. The formal
+jet algebra is not a faithful positive bounded-operator *-algebra, and its
+grading is not physical space quantization. The canonical engine is unchanged.
+
 [CID-D3: native coupling reconstruction](papers/native-coupling-reconstruction/THEOREM.md)
 finds exact action blindness in CID-D2's symmetric protocol: only
 `alpha+2 beta` affects the complete cut/generator/transport history.

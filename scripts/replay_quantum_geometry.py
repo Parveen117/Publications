@@ -50,6 +50,7 @@ stages = [
     'native-material-detector-dilation',
     'native-material-reference-momentum',
     'native-logarithmic-material-density',
+    'native-tvsp-lambda-matrices',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
