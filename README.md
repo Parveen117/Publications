@@ -1,5 +1,13 @@
 # Publications
 
+Latest phase/current development: [PCR-1 — phase and current complete density-response coordinates](papers/native-phase-current-response/README.md).
+Original current means recover the density-blind phase exactly:
+p_i=beta_i m_i. Four ensemble means identify the fixed prepared family,
+with Berry form (1/h)sum d(log m_i) wedge dp_i. The source lift retains
+TVSP transport and controlled current domains. A separate coherent
+comparison supplies conjugate material data and a homogeneous classical
+label; a pointwise quantum metric and spacetime dynamics remain open.
+
 Latest source-control development: [DCD-1 — density and coherent cuts generate transport](papers/native-density-cut-dynamics/README.md).
 The quantum response generator is exactly [Pi+Q/2, dot(theta).X].
 Smooth preparations retain nonzero curvature while preserving original

@@ -54,6 +54,7 @@ stages = [
     'native-tvsp-exponential-transport',
     'native-quantum-response-transport',
     'native-density-cut-dynamics',
+    'native-phase-current-response',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)

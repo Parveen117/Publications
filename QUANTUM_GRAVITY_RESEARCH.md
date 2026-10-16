@@ -10,6 +10,38 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Phase/current continuation, 16 October:
+[PCR-1](papers/native-phase-current-response/THEOREM.md) supplies the
+conjugate-sensitive extension required by DCD. In the fixed prepared
+family exp(-i beta.X/h)psi_theta, actual original currents P_i=D(k_i)
+give p_i=beta_i m_i. The four ensemble means (m,p) identify the family
+globally; density statistics alone remain independent of beta.
+
+The quantum tensor has complex rank two and a positive metric on four
+real controls. Its Kähler normalization is F_Berry=-2 omega, and measured
+coordinates q_i=log m_i,p_i give F_Berry=(1/h)sum dq_i wedge dp_i.
+These are expectation coordinates, not four spacetime dimensions or
+sharp canonical operators. Standard quantum/Kähler geometry is credited.
+
+The exact phase-conjugated source lift retains the TVSP response
+intertwiner. Its Schrödinger equation holds on the common density domain;
+for each original current A it preserves Dom A intersect Dom T. A mixed
+amplitude/phase rectangle has a nonzero Berry holonomy. The uncorrected
+lift's dynamical phase cancels that phase on its base state, so a coherent
+comparison and phase calibration are required to expose it.
+
+A separate phase-pulsed coherent family supplies smeared classical
+conjugate material data with vanishing variances as h tends to zero.
+Its homogeneous specialization has beta=<D(1)>/<T> and classical label
+r=Y^(-1)(beta). It does not inherit the DCD preparation's curvature
+enclosure or define a sharp finite-h material-metric operator. The next
+obligation is a conjugate-sensitive quantum observable for the nonlinear
+material inverse, with stated resolution and continuum/domain limit.
+The original pointwise LMD inverse and full 3+1 source remain open.
+
+PCR validation: 247 exact checks, 14 symbolic certificates and 35 negative
+controls. The integrated quantum-geometry replay contains 47 stages.
+
 Source-control continuation, 16 October:
 [DCD-1](papers/native-density-cut-dynamics/THEOREM.md) derives
 B=[Q',Q]=[Pi+Q/2, dot(theta).X] from the actual density response source.
