@@ -39,51 +39,56 @@ verified source results rather than a new collection of unrelated examples.
 | Direct forward-embedding Gaussian gauge lift | Obstructed for every non-rigid smooth circle diffeomorphism | IGQ-T2 | Specified log-derivative covariance and configuration multiplication contract; path variation proves singularity, despite nonsingular finite marginals; other measure classes remain possible |
 | Finite source gauge unitaries in inverse embeddings | Constructed for the selected positive continuum measure | IGQ-T3 and IGQ-T4 | Ramer hypotheses checked, genuine finite group law and each flow's self-adjoint domain; no common differentiated core or LQA intertwiner inferred |
 | Normalizable gauge kernel and positive partial rigging | Normalizable kernel zero; relative-rotation generalized quotient constructed | IGQ-T5 | Subgroup average is positive but rotations are not normal; no iterative full gauge reduction follows |
-| Full common-domain source algebra and physical gauge reduction | Open | IGQ-T4 through IGQ-T6; MRF action and MPQ physical comparison | Common mixed-product domain, full generalized kernel, positive rigging and channel count required; MPQ recovery is conditional on one gauge channel |
-| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ reduced profiles; IGQ finite gauge representation | Full common-domain source algebra and gauge rigging, nonlinear quantum geometry, fully local apparatus, inter-branch coupling, general ordering, representation selection, matter and potentials remain open |
+| Central integer gauge quotient and residual group action | Closed for the explicit weighted sequence average | CGD-T1 | Positive periodization, completed H_c and full remaining gauge-group intertwiner; central normal subgroup, no new physical periodic-clock assumption |
+| Full continuous invariant dual of the weighted zero-mode test space | Exactly zero for Phi_Z | CGD-T2 | Exact topological coinvariants; all relative-coordinate polynomial decay weights included; stronger residual shape/angle test topologies are not excluded |
+| Common source core and all-smearing quantum H/D algebra | Closed after the proved central gauge reduction | CGD-T3 and CGD-T4 | C6 extension and stated Shimomura density theorem; common mixed-product domain, essential self-adjointness for real smearings, zero central term; separate original nonlinear field operators and other orderings not constructed |
+| Positive full source gauge reduction | Open | CGD-T2/T5; IGQ-T6; MPQ comparison | Stronger residual test topology, nonzero invariant distributions, positive pairing and channel count required; MPQ recovery remains conditional on one gauge channel |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD common source core | Full positive residual gauge rigging, nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-IGQ-1 keeps the MRF action and uses MPQ's canonical source map. Two
-monotone embeddings convert the original chiral constraints into exact
-cotangent moment maps. The off-shell correction to the physical conjugate
-is explicit. A strongly invariant representative of the same classical
-physical probe differs by the constraint ideal; its quantum ordering and
-representative choice are recorded rather than identified with every
-ordering of the original nonlinear fields.
+CGD-1 uses the central integer relative-lift subgroup already present in
+IGQ's actual connected source gauge group. Its positive sequence average
+is explicit, and the entire remaining gauge group descends to the quotient.
+This supplies a valid reduction step that the nonnormal real-rotation
+subgroup could not supply.
 
-The direct forward-coordinate Gaussian attempt fails: a measurable path
-variation changes under every non-rigid gauge diffeomorphism and proves
-mutual singularity. Inverse coordinates instead give Cameron--Martin
-shifts with Hilbert--Schmidt derivatives and invertible maps, satisfying
-Ramer's criterion. The resulting gauge representation is positive and
-unitary, with an exact finite group law and explicit Stone domains for
-individual smooth flows. A common differentiated domain is not asserted.
+The descended representation extends continuously to finite-C6 circle
+diffeomorphisms. The stated published smooth-vector theorem supplies a
+dense common invariant source core. Real source smearings are essentially
+self-adjoint there, and the actual chiral/H/D quantum algebra closes for
+arbitrary smooth smearings without a central term. This is after proved
+central gauge reduction and under the recorded canonical quantization;
+it does not assert equivalence to every original-field ordering.
 
-The kinematic invariant subspace is zero. A relative-rotation subgroup
-still admits positive averaging and generalized physical states, showing
-why the zero normalizable kernel is not a physical-nonexistence theorem.
-That subgroup is not normal, and its quotient cannot be used to impose
-all other constraints without further work. A conditional product-rigging
-criterion identifies exactly what would recover MPQ's physical norm and
-observables. Full gauge rigging has not been constructed. Every predecessor
-packet remains frozen. No physical 3+1 closure is claimed. Continuum
-theorems are written proofs; the native certificates check finite witnesses.
+The full continuous invariant dual on the chosen rapid-sequence topology
+is exactly zero: the central coinvariants are the residual Hilbert space,
+which has no full invariant vector. Hence that topology admits no nonzero
+continuous full Dirac rigging. Stronger residual test topologies remain
+possible and necessary for a further generalized construction. This is
+not a theorem of physical-state nonexistence in all completions.
+
+MPQ's physical observables and apparatus pass exactly through the central
+quotient on their spectator factor. Their recovery by complete source
+reduction still needs the residual positive pairing and channel count.
+Every predecessor remains frozen. General analytic proofs and the stated
+external theorem input are separate from finite native witnesses. No
+physical 3+1 closure is claimed.
 
 ## Next decisive obligation
 
-Stay with the frozen MRF model and IGQ's inverse-embedding representation.
-Construct a common invariant test space for the finite gauge unitaries
-and mixed infinitesimal constraints. Classify its full generalized kernel,
-derive a positive gauge pairing, and determine the surviving channel count.
-Apply IGQ-T6 only after its hypotheses hold to compare the physical quotient
-with MPQ. Individual self-adjoint generators, formal anomaly cancellation
-and the rotation-subgroup average are not substitutes for this step.
-Do not restart the disproved forward Gaussian lift or assume a gauge Haar
-measure. A different source ordering needs its own domain and comparison.
+Stay with the frozen MRF/IGQ model and CGD's actual central quotient and
+common source core. Construct a stronger residual shape/angle test space
+preserved by the gauge action; classify its invariant distributions and
+derive a positive pairing with controlled channel count. CGD-T2 rules
+out the unrefined rapid-zero-mode topology, not every stronger rigging.
+Smooth-vector density alone supplies no nonzero invariant distribution.
+Use CGD-T5/IGQ-T6 only after the one-channel hypotheses are proved.
+Do not restart forward Gaussian quantization or insert a gauge Haar
+measure. Another source ordering needs its own domain and comparison.
 
 Separately define any desired nonlinear quantum geometry in the original
 r,m variables; complete classical coordinates do not automatically define
