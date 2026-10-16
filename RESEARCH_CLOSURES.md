@@ -62,12 +62,40 @@ verified source results rather than a new collection of unrelated examples.
 | Raw joint-detector estimate of the total charge | No tight vacuum continuum law, even after scalar subtraction | MRM-T4 | Correct finite first-moment operator but explicit Laplace convolution concentration bound; does not obstruct the valid spectral charge observable or every alternative estimator |
 | Nonconstant local Weyl-current vacuum domain | Obstructed for the specified cutoff with scalar or linear counterterms | MRM-T5 | General second-chaos norm divergence; does not exclude other domains, strong resolvent limits or all renormalizations |
 | Canonical non-rigid physical material-flow implementation | Obstructed in the selected physical Gaussian measure class | MRM-T6, reusing IGQ-T2 | Full configuration spectral action is singular; equivalent density weights and spectator multiplicities do not fix it; other representations and the distinct inverse-embedding source gauge action are outside this obstruction |
-| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD core; RGR selected rigging | Nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
+| Local material flows in an alternative reduced representation | Constructed with self-adjoint Stone domains | LMD-T1/T2/T5 | Logarithmic scalar covariance and exact Gaussian-equivalence proof; different configuration measure class from MPQ; not an equivalence of the old quantum observable contracts |
+| Renormalized material density and corrected flow law | Constructed in the declared L2 regime | LMD-T3/T4 | Positive Wick random measure for dimensionless 0<hbar<1; exact density covariance requires 1+hbar/2 instead of the classical shift 1; no pointwise density function |
+| Corrected local-current feedback and classical recovery | Closed for the selected reduced observable contract | LMD-T5/T6 | Mass spectral subspaces justify domains and pulse balance; smooth coherent current and smeared density concentrate classically; original inverse geometry and independently ordered unreduced comparison remain open |
+| Automatic extension of the scalar logarithmic prescription to spatial 3D | Obstructed by an explicit volume-preserving shear | LMD-T7 | T^3 Fourier-ray variance ratio 1/27 gives singular measures; no exclusion of tensor gravity or other representations, and no 3+1 gravitational constraint construction |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD core; RGR selected rigging; LMD alternative local flow/density | Nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
+
+LMD-1 supplies a selected alternative to the representation obstructed
+by MRM: an actual continuum Gaussian local-flow action, its self-adjoint
+generators and a positive Wick density measure. The exact density law
+requires a stated quantum shift 1+hbar/2. Domain-controlled feedback and
+coherent classical recovery follow. The old MPQ/RGR contract remains
+frozen; its configuration representation is not unitarily identified
+with the new one, and its pointwise inverse geometry is not recovered.
+
+The 3D shear calculation is an explicit obstruction to extending this
+particular scalar covariance to arbitrary spatial diffeomorphisms.
+It is not a full 3+1 construction or a no-go for other gravity models.
+Known Gaussian-equivalence and multiplicative-chaos methods are credited.
+
+The native packet has 103 exact checks, 8 symbolic proofs/replays and
+28 negative controls; all 42 integrated stages pass locally.
+These finite checks are distinct from the written analytic proofs.
+Fable's separate bridge at 97bb7fe was read and replayed: its core-closure
+classification is useful under its dependencies, while full-Psi density
+and three listed corrections remain outstanding. No uniqueness result
+from that unmerged report is imported. Its next prompt is in LMD's
+FABLE_REVIEW.md; Codex continues the physical-geometry track.
+
+### Previous MRM endpoint
 
 MRM-1 constructs an original source charge beyond the J-density algebra:
 the total reference momentum has a self-adjoint domain, spectrum,

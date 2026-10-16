@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 16 October 2026. Physical reference momentum and local-flow obstruction: **MRM-1**. Material joint-detector source lift and calibration: **MDD-1**. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
+Updated 16 October 2026. Alternative local-flow representation and renormalized density: **LMD-1**. Physical reference momentum and local-flow obstruction: **MRM-1**. Material joint-detector source lift and calibration: **MDD-1**. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
@@ -9,6 +9,58 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[LMD-1](papers/native-logarithmic-material-density/THEOREM.md) constructs
+an explicitly different reduced representation that supports every
+smooth local material-circle flow. The Fourier covariance
+lambda_n=1/(2|n|) cancels MRM's leading local-current divergence;
+the written Gaussian-equivalence proof supplies actual finite unitaries
+and self-adjoint local Stone generators. The old smooth MPQ/RGR
+quantization is preserved, with no configuration-observable equivalence
+to the new distribution-valued Gaussian representation asserted.
+
+In the declared dimensionless L2 range 0<hbar<1, a Wick exponential
+gives a positive random density measure and self-adjoint smeared
+readings J_h(w). Its exact transformation forces the coefficient
+1+hbar/2 in s -> s composed with g + (1+hbar/2) log g'. Keeping the
+classical coefficient 1 instead produces a different density weight.
+The corrected local current has a finite coherent-state variance,
+the original smeared density-pulse balance on specified physical
+domains, and controlled classical recovery. This is an explicit
+quantum correction within a selected alternative quantization.
+
+An actual three-spatial-dimensional diagnostic is also proved:
+a volume-preserving integer shear of T^3 changes the variance of an
+infinite Fourier ray by 1/27 for the isotropic scalar logarithmic
+covariance. Its Gaussian measures are mutually singular. Thus this
+scalar prescription does not automatically extend to all spatial
+diffeomorphisms; the result does not exclude tensor or other gravity
+representations, and does not construct the 3+1 constraints.
+
+Next geometry obligation: reconstruct a specified original geometric
+observable from the renormalized measure and its conjugate current,
+with a domain and classical limit, or identify exactly which inverse
+chart operation obstructs that reconstruction. The quantum correction
+also needs comparison with an independently ordered unreduced source
+construction. Original pointwise metric/curvature and physical 3+1
+quantum gravity remain open.
+
+Validation: 103 native exact checks, 8 symbolic proofs/replays and
+28 negative controls; all 42 integrated stages pass locally.
+Written analytic proofs carry the continuum, domain and measure claims;
+the established Gaussian equivalence and multiplicative-chaos inputs
+are cited separately in the packet's source map.
+
+Fable's bridge at 97bb7fe4ddccff1a5371689ecc2055b409606048 was read
+and replayed separately (12 exact checks, 5 negative controls).
+Its useful endpoint locates extra infinitesimal solutions in the
+annihilator of the core closure under its declared dependencies.
+Full-test-space density remains open; three precise corrections and
+the disjoint follow-up prompt are recorded in
+[FABLE_REVIEW.md](papers/native-logarithmic-material-density/FABLE_REVIEW.md).
+The external branch is unmerged and supplies no new LMD proof dependency.
+
+### Preserved MRM endpoint
 
 [MRM-1](papers/native-material-reference-momentum/THEOREM.md) derives
 the original source reference current rho=-d'+d s' and constructs its

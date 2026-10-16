@@ -1,0 +1,2779 @@
+{
+  "protocol": "LMD1_LOGARITHMIC_MATERIAL_DENSITY_V1",
+  "status": "PASS_SELECTED_LOCAL_FLOW_AND_RENORMALIZED_DENSITY",
+  "source_pins_sha256": "4e2e269216fdb3577341ec31c34b59a2ea9888115451ce8d600b87bd376d841a",
+  "checks": [
+    {
+      "name": "confluent:f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+      "passed": true
+    },
+    {
+      "name": "Wick_density_corrected_weight",
+      "passed": true
+    },
+    {
+      "name": "Wick_density_corrected_weight:replay",
+      "passed": true
+    },
+    {
+      "name": "uncorrected_flow_has_half_h_weight",
+      "passed": true
+    },
+    {
+      "name": "uncorrected_flow_has_half_h_weight:replay",
+      "passed": true
+    },
+    {
+      "name": "corrected_local_density_commutator",
+      "passed": true
+    },
+    {
+      "name": "corrected_local_density_commutator:replay",
+      "passed": true
+    },
+    {
+      "name": "Wick_mean_exponent",
+      "passed": true
+    },
+    {
+      "name": "Wick_mean_exponent:replay",
+      "passed": true
+    },
+    {
+      "name": "Wick_two_point_exponent",
+      "passed": true
+    },
+    {
+      "name": "Wick_two_point_exponent:replay",
+      "passed": true
+    },
+    {
+      "name": "same_sign_critical_entry_cancellation",
+      "passed": true
+    },
+    {
+      "name": "same_sign_critical_entry_cancellation:replay",
+      "passed": true
+    },
+    {
+      "name": "opposite_sign_critical_entry_square",
+      "passed": true
+    },
+    {
+      "name": "opposite_sign_critical_entry_square:replay",
+      "passed": true
+    },
+    {
+      "name": "opposite_sign_sum_induction",
+      "passed": true
+    },
+    {
+      "name": "opposite_sign_sum_induction:replay",
+      "passed": true
+    },
+    {
+      "name": "unique_critical_power_in_fixture:0",
+      "passed": true
+    },
+    {
+      "name": "unique_critical_power_in_fixture:1/4",
+      "passed": true
+    },
+    {
+      "name": "unique_critical_power_in_fixture:1/2",
+      "passed": true
+    },
+    {
+      "name": "unique_critical_power_in_fixture:1",
+      "passed": true
+    },
+    {
+      "name": "unique_critical_power_in_fixture:4",
+      "passed": true
+    },
+    {
+      "name": "MRM_smooth_covariance_coefficient_recovered",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:0:1",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:0:1",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:0:2",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:0:2",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:0:3",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:0:3",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:0:4",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:0:4",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:0:8",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:0:8",
+      "passed": true
+    },
+    {
+      "name": "critical_linear_norm_sum:0",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:1:1",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:1:2",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:1:2",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:1:3",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:1:3",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:1:4",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:1:4",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:1:8",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:1:8",
+      "passed": true
+    },
+    {
+      "name": "critical_linear_norm_sum:1",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:2:1",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:2:2",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:2:3",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:2:3",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:2:4",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:2:4",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_partial_bound:2:8",
+      "passed": true
+    },
+    {
+      "name": "critical_HS_exact_finite_support_sum:2:8",
+      "passed": true
+    },
+    {
+      "name": "critical_linear_norm_sum:2",
+      "passed": true
+    },
+    {
+      "name": "first_sine_HS_exact",
+      "passed": true
+    },
+    {
+      "name": "second_sine_HS_exact",
+      "passed": true
+    },
+    {
+      "name": "same_sign_entry_exact_zero:1:2",
+      "passed": true
+    },
+    {
+      "name": "same_sign_entry_exact_zero:2:7",
+      "passed": true
+    },
+    {
+      "name": "same_sign_entry_exact_zero:-1:-3",
+      "passed": true
+    },
+    {
+      "name": "same_sign_entry_exact_zero:-4:-2",
+      "passed": true
+    },
+    {
+      "name": "opposite_sign_entry_square:-1:1",
+      "passed": true
+    },
+    {
+      "name": "opposite_sign_entry_square:-1:3",
+      "passed": true
+    },
+    {
+      "name": "opposite_sign_entry_square:-2:4",
+      "passed": true
+    },
+    {
+      "name": "complete_logarithmic_point_variance:1",
+      "passed": true
+    },
+    {
+      "name": "Wick_mean_normalization:1",
+      "passed": true
+    },
+    {
+      "name": "complete_logarithmic_point_variance:2",
+      "passed": true
+    },
+    {
+      "name": "Wick_mean_normalization:2",
+      "passed": true
+    },
+    {
+      "name": "complete_logarithmic_point_variance:4",
+      "passed": true
+    },
+    {
+      "name": "Wick_mean_normalization:4",
+      "passed": true
+    },
+    {
+      "name": "complete_logarithmic_point_variance:8",
+      "passed": true
+    },
+    {
+      "name": "Wick_mean_normalization:8",
+      "passed": true
+    },
+    {
+      "name": "complete_logarithmic_point_variance:16",
+      "passed": true
+    },
+    {
+      "name": "Wick_mean_normalization:16",
+      "passed": true
+    },
+    {
+      "name": "density_exponent_exactly_one:1/4",
+      "passed": true
+    },
+    {
+      "name": "local_coherent_mean_correction:1/4",
+      "passed": true
+    },
+    {
+      "name": "local_vacuum_variance_from_HS:1/4",
+      "passed": true
+    },
+    {
+      "name": "L2_moment_integrability_margin:1/4",
+      "passed": true
+    },
+    {
+      "name": "density_exponent_exactly_one:1/3",
+      "passed": true
+    },
+    {
+      "name": "local_coherent_mean_correction:1/3",
+      "passed": true
+    },
+    {
+      "name": "local_vacuum_variance_from_HS:1/3",
+      "passed": true
+    },
+    {
+      "name": "L2_moment_integrability_margin:1/3",
+      "passed": true
+    },
+    {
+      "name": "density_exponent_exactly_one:1/2",
+      "passed": true
+    },
+    {
+      "name": "local_coherent_mean_correction:1/2",
+      "passed": true
+    },
+    {
+      "name": "local_vacuum_variance_from_HS:1/2",
+      "passed": true
+    },
+    {
+      "name": "L2_moment_integrability_margin:1/2",
+      "passed": true
+    },
+    {
+      "name": "density_exponent_exactly_one:3/4",
+      "passed": true
+    },
+    {
+      "name": "local_coherent_mean_correction:3/4",
+      "passed": true
+    },
+    {
+      "name": "local_vacuum_variance_from_HS:3/4",
+      "passed": true
+    },
+    {
+      "name": "L2_moment_integrability_margin:3/4",
+      "passed": true
+    },
+    {
+      "name": "centered_second_chaos_mean",
+      "passed": true
+    },
+    {
+      "name": "first_second_chaos_orthogonal",
+      "passed": true
+    },
+    {
+      "name": "centered_second_chaos_norm_two",
+      "passed": true
+    },
+    {
+      "name": "3D_shear_inverse",
+      "passed": true
+    },
+    {
+      "name": "3D_shear_covector_image",
+      "passed": true
+    },
+    {
+      "name": "3D_shear_covector_length_squared",
+      "passed": true
+    },
+    {
+      "name": "3D_shear_unimodular_triangular_diagonal",
+      "passed": true
+    },
+    {
+      "name": "3D_logarithmic_ray_variance_ratio:1",
+      "passed": true
+    },
+    {
+      "name": "3D_logarithmic_ray_variance_ratio:2",
+      "passed": true
+    },
+    {
+      "name": "3D_logarithmic_ray_variance_ratio:5",
+      "passed": true
+    },
+    {
+      "name": "3D_logarithmic_ray_variance_ratio:17",
+      "passed": true
+    },
+    {
+      "name": "distinct_ray_second_moments",
+      "passed": true
+    },
+    {
+      "name": "Fable_complement_form_positive_projection",
+      "passed": true
+    },
+    {
+      "name": "Fable_complement_form_kills_both_constraint_slots",
+      "passed": true
+    },
+    {
+      "name": "Fable_complement_form_zero_on_core",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "minus_half_h_instead_of_plus",
+      "rejected": true
+    },
+    {
+      "name": "omit_quantum_density_feedback",
+      "rejected": true
+    },
+    {
+      "name": "wrong_covariance_diagonal_sign",
+      "rejected": true
+    },
+    {
+      "name": "drop_measure_Jacobian",
+      "rejected": true
+    },
+    {
+      "name": "normal_ordering_subtracts_full_variance",
+      "rejected": true
+    },
+    {
+      "name": "old_MPQ_covariance_cancels_same_sign:1",
+      "rejected": true
+    },
+    {
+      "name": "old_MPQ_covariance_cancels_same_sign:2",
+      "rejected": true
+    },
+    {
+      "name": "old_MPQ_covariance_cancels_same_sign:4",
+      "rejected": true
+    },
+    {
+      "name": "drop_constant_mode_HS_contribution",
+      "rejected": true
+    },
+    {
+      "name": "zero_local_vacuum_charge",
+      "rejected": true
+    },
+    {
+      "name": "omit_zero_mode_variance:1",
+      "rejected": true
+    },
+    {
+      "name": "omit_zero_mode_variance:2",
+      "rejected": true
+    },
+    {
+      "name": "omit_zero_mode_variance:4",
+      "rejected": true
+    },
+    {
+      "name": "omit_zero_mode_variance:8",
+      "rejected": true
+    },
+    {
+      "name": "omit_zero_mode_variance:16",
+      "rejected": true
+    },
+    {
+      "name": "classical_shift_preserves_new_density_weight:1/4",
+      "rejected": true
+    },
+    {
+      "name": "classical_shift_preserves_new_density_weight:1/3",
+      "rejected": true
+    },
+    {
+      "name": "classical_shift_preserves_new_density_weight:1/2",
+      "rejected": true
+    },
+    {
+      "name": "classical_shift_preserves_new_density_weight:3/4",
+      "rejected": true
+    },
+    {
+      "name": "L2_bound_includes_endpoint_h_one",
+      "rejected": true
+    },
+    {
+      "name": "second_chaos_is_a_scalar_counterterm",
+      "rejected": true
+    },
+    {
+      "name": "volume_preservation_implies_orthogonality",
+      "rejected": true
+    },
+    {
+      "name": "3D_ray_covariance_preserved:1",
+      "rejected": true
+    },
+    {
+      "name": "3D_ray_covariance_preserved:2",
+      "rejected": true
+    },
+    {
+      "name": "3D_ray_covariance_preserved:5",
+      "rejected": true
+    },
+    {
+      "name": "3D_ray_covariance_preserved:17",
+      "rejected": true
+    },
+    {
+      "name": "Fable_unrestricted_full_space_two_weight_claim",
+      "rejected": true
+    },
+    {
+      "name": "corrupted_Paninian_certificate",
+      "rejected": true
+    }
+  ],
+  "presentations": [
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "h",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "a",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "l",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "vp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "w",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "wp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "q",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "p",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "n",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "scalar_1_0",
+            "lhs": [
+              "a",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "a"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_2_0",
+            "lhs": [
+              "l",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_2_1",
+            "lhs": [
+              "l",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_3_0",
+            "lhs": [
+              "v",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_3_1",
+            "lhs": [
+              "v",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_3_2",
+            "lhs": [
+              "v",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_4_0",
+            "lhs": [
+              "vp",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "vp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_4_1",
+            "lhs": [
+              "vp",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "vp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_4_2",
+            "lhs": [
+              "vp",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "vp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_4_3",
+            "lhs": [
+              "vp",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "vp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_5_0",
+            "lhs": [
+              "w",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "w"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_5_1",
+            "lhs": [
+              "w",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "w"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_5_2",
+            "lhs": [
+              "w",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "w"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_5_3",
+            "lhs": [
+              "w",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "w"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_5_4",
+            "lhs": [
+              "w",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "w"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_6_0",
+            "lhs": [
+              "wp",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "wp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_6_1",
+            "lhs": [
+              "wp",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "wp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_6_2",
+            "lhs": [
+              "wp",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "wp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_6_3",
+            "lhs": [
+              "wp",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "wp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_6_4",
+            "lhs": [
+              "wp",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "wp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_6_5",
+            "lhs": [
+              "wp",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "wp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_7_0",
+            "lhs": [
+              "q",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_7_1",
+            "lhs": [
+              "q",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_7_2",
+            "lhs": [
+              "q",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_7_3",
+            "lhs": [
+              "q",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_7_4",
+            "lhs": [
+              "q",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_7_5",
+            "lhs": [
+              "q",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_7_6",
+            "lhs": [
+              "q",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_8_0",
+            "lhs": [
+              "p",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_8_1",
+            "lhs": [
+              "p",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_8_2",
+            "lhs": [
+              "p",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_8_3",
+            "lhs": [
+              "p",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_8_4",
+            "lhs": [
+              "p",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_8_5",
+            "lhs": [
+              "p",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_8_6",
+            "lhs": [
+              "p",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_8_7",
+            "lhs": [
+              "p",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_9_0",
+            "lhs": [
+              "n",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_9_1",
+            "lhs": [
+              "n",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_9_2",
+            "lhs": [
+              "n",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_9_3",
+            "lhs": [
+              "n",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_9_4",
+            "lhs": [
+              "n",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_9_5",
+            "lhs": [
+              "n",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_9_6",
+            "lhs": [
+              "n",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_9_7",
+            "lhs": [
+              "n",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "scalar_9_8",
+            "lhs": [
+              "n",
+              "p"
+            ],
+            "rhs": [
+              [
+                [
+                  "p",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          }
+        ]
+      },
+      "audit": {
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "criticalPairs": 120,
+        "resolved": 120,
+        "open": 0,
+        "full_audit_sha256": "d1ead6bd6c7eb49904cbf5b2bba2a7bbfa0c85aeb0c3d40b648546b97fb1ab7f"
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "Wick_density_corrected_weight",
+      "presentation_sha256": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "uncorrected_flow_has_half_h_weight",
+      "presentation_sha256": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "corrected_local_density_commutator",
+      "presentation_sha256": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h",
+              "v",
+              "wp"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h",
+              "v",
+              "wp"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "Wick_mean_exponent",
+      "presentation_sha256": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "Wick_two_point_exponent",
+      "presentation_sha256": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "same_sign_critical_entry_cancellation",
+      "presentation_sha256": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "q",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "q"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "q"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "scalar_8_7",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "opposite_sign_critical_entry_square",
+      "presentation_sha256": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "p"
+            ],
+            [
+              "1/4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "q"
+            ],
+            [
+              "3/4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "q",
+                "p"
+              ],
+              [
+                "1/4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "q"
+              ],
+              [
+                "-1/4",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "q"
+            ],
+            "coefficient": [
+              "-1/4",
+              "0"
+            ],
+            "rule": "scalar_8_7",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "opposite_sign_sum_induction",
+      "presentation_sha256": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "n"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "n"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f79d8f4adf16aea2c3d1b1697ebe303774d2526120f2a82ce58a2c92112592ac",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "kind": "power_covariance_leading_coefficient",
+      "p": "0",
+      "coefficient_over_k": "-1"
+    },
+    {
+      "kind": "power_covariance_leading_coefficient",
+      "p": "1/4",
+      "coefficient_over_k": "-1/2"
+    },
+    {
+      "kind": "power_covariance_leading_coefficient",
+      "p": "1/2",
+      "coefficient_over_k": "0"
+    },
+    {
+      "kind": "power_covariance_leading_coefficient",
+      "p": "1",
+      "coefficient_over_k": "1"
+    },
+    {
+      "kind": "power_covariance_leading_coefficient",
+      "p": "4",
+      "coefficient_over_k": "7"
+    },
+    {
+      "kind": "smooth_trigonometric_window",
+      "coefficients": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/2"
+        ]
+      ],
+      "HS_squared_over_4pi_squared": "1/8",
+      "b_C_squared_over_4pi_squared": "1"
+    },
+    {
+      "kind": "smooth_trigonometric_window",
+      "coefficients": [
+        [
+          "2/5",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-1/2"
+        ]
+      ],
+      "HS_squared_over_4pi_squared": "3/4",
+      "b_C_squared_over_4pi_squared": "8"
+    },
+    {
+      "kind": "smooth_trigonometric_window",
+      "coefficients": [
+        [
+          "1/3",
+          "0"
+        ],
+        [
+          "0",
+          "-1/2"
+        ],
+        [
+          "1/3",
+          "0"
+        ],
+        [
+          "0",
+          "1/5"
+        ]
+      ],
+      "HS_squared_over_4pi_squared": "503/600",
+      "b_C_squared_over_4pi_squared": "1997/225"
+    },
+    {
+      "kind": "coherent_sine_window",
+      "h": "1/4",
+      "a_h": "9/8",
+      "mean_over_2pi": "3/8",
+      "classical_over_2pi": "1/3",
+      "variance_over_4pi_squared": "893/9216"
+    },
+    {
+      "kind": "coherent_sine_window",
+      "h": "1/3",
+      "a_h": "7/6",
+      "mean_over_2pi": "7/18",
+      "classical_over_2pi": "1/3",
+      "variance_over_4pi_squared": "5/36"
+    },
+    {
+      "kind": "coherent_sine_window",
+      "h": "1/2",
+      "a_h": "5/4",
+      "mean_over_2pi": "5/12",
+      "classical_over_2pi": "1/3",
+      "variance_over_4pi_squared": "275/1152"
+    },
+    {
+      "kind": "coherent_sine_window",
+      "h": "3/4",
+      "a_h": "11/8",
+      "mean_over_2pi": "11/24",
+      "classical_over_2pi": "1/3",
+      "variance_over_4pi_squared": "1325/3072"
+    },
+    {
+      "kind": "three_dimensional_torus_shear",
+      "A": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "-2",
+            "0"
+          ],
+          [
+            "-2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "inverse_transpose": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "2",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "2",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "ray_image": [
+        [
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "2",
+            "0"
+          ]
+        ]
+      ],
+      "variance_ratio": "1/27",
+      "scope": "integer spatial diffeomorphism and exact coefficients; measure singularity uses the written infinite-ray law"
+    },
+    {
+      "kind": "Fable_W11_complement_control",
+      "positive_form": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "core_projection": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "scope": "does not refute the correctly restricted core theorem"
+    }
+  ],
+  "results": {
+    "representation": "explicit alternative reduced logarithmic Gaussian; old MPQ preserved",
+    "quantum_parameter_range": "0<hbar<1 in the chosen dimensionless normalization (L2 range)",
+    "critical_power_for_same_sign_vacuum_cancellation": "p=1/2 for lambda_n=c*|n|^(-2p)",
+    "smooth_material_circle_flows_quasi_invariant": true,
+    "real_local_generators_self_adjoint_by_Stone": true,
+    "density": "Wick random measure with positive smeared spectral observables",
+    "canonical_density_weight_requires": "a_h=1+hbar/2",
+    "old_classical_shift_has_exact_same_density_law": false,
+    "corrected_local_density_pulse_feedback": true,
+    "coherent_smeared_classical_recovery": true,
+    "full_cutoff_strong_resolvent_theorem_claimed": false,
+    "equivalence_to_old_MPQ_configuration_representation": false,
+    "original_pointwise_metric_reconstructed": false,
+    "three_dimensional_scalar_shear_variance_ratio": "1/27; mutually singular by written SLLN proof",
+    "all_three_dimensional_gravity_representations_excluded": false,
+    "source_3plus1_gravitational_constraints_constructed": false,
+    "Fable_bridge_review": "core-closure bridge useful under dependencies; full-Psi density unresolved; three corrections recorded",
+    "Fable_uniqueness_imported_as_new_dependency": false,
+    "continuum_proofs_machine_certified": false
+  },
+  "summary": {
+    "exact_checks": 103,
+    "symbolic_certificates": 8,
+    "negative_controls": 28
+  }
+}
