@@ -1,0 +1,86 @@
+{
+  "protocol": "RDB1_CONSTRAINT_BRIDGE_V1",
+  "status": "PASS_FINITE_WITNESSES_FOR_CONSTRAINT_BRIDGE",
+  "source_pins_sha256": "efe751f36f1dd8ab984901063db6792249d588600992cf88e18cdb04a50d290e",
+  "checks": [
+    {
+      "name": "conjugation_closed_class_generates_simple_A5",
+      "passed": true
+    },
+    {
+      "name": "nonsimple_A4_normal_closure_is_proper_V4",
+      "passed": true
+    },
+    {
+      "name": "solution_space_dimension_is_one_plus_codim",
+      "passed": true
+    },
+    {
+      "name": "constraint_images_span_kernel_of_ell_on_W",
+      "passed": true
+    },
+    {
+      "name": "cylinder_two_point_error_at_least_half",
+      "passed": true
+    },
+    {
+      "name": "triangle_identity_abs_t_plus_abs_1_minus_t_at_least_1",
+      "passed": true
+    },
+    {
+      "name": "F_annihilates_all_generator_images",
+      "passed": true
+    },
+    {
+      "name": "flow_invariance_from_infinitesimal_annihilation",
+      "passed": true
+    },
+    {
+      "name": "slot_annihilated_forms_live_on_ell_block",
+      "passed": true
+    },
+    {
+      "name": "sector_symmetry_forces_diagonal_weights",
+      "passed": true
+    },
+    {
+      "name": "sign_mixing_collapses_weights_to_one",
+      "passed": true
+    },
+    {
+      "name": "trichotomy_ranks_2_1_0",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "normal_closure_is_whole_group_without_simplicity",
+      "rejected": true
+    },
+    {
+      "name": "functional_with_F_e2_nonzero_solves_constraints",
+      "rejected": true
+    },
+    {
+      "name": "two_coordinate_function_also_blocked",
+      "rejected": true
+    },
+    {
+      "name": "partial_annihilation_gives_flow_invariance",
+      "rejected": true
+    },
+    {
+      "name": "zero_weight_member_has_full_block_rank",
+      "rejected": true
+    }
+  ],
+  "results": {
+    "continuum_proofs_machine_certified": false,
+    "bridge": "written proof in BRIDGE.md: K_inf = C ell (+) annihilator of closure(D); yes on the core",
+    "density_of_D_in_19": "not decided; equivalent open approximation problem recorded in BRIDGE.md 5(e)"
+  },
+  "summary": {
+    "exact_checks": 12,
+    "negative_controls": 5
+  }
+}
