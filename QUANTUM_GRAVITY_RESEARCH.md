@@ -10,6 +10,41 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Wick-calibrated material measurement, 16 October:
+[WCG-1](papers/native-wick-calibrated-geometry/THEOREM.md) constructs the
+nonlinear material observable left open by PCR. The existing countable
+coherent detector is adapted to the same LMD covariance. Its measured
+Wick mass has Gaussian parameter 2h and satisfies the exact conditional
+identity E_probe N_(s+probe)=M_s. For 0<h<1/2 this proves equality of
+the full positive density first-moment form with the original M(w).
+The current first moment is D(k), and its second-moment domain is exactly
+Dom D(k). These jointly noisy readings do not form a sharp joint PVM.
+
+Positive heat smoothing at ell>0 gives the original material inverse,
+including its global P normalization, as smooth outcomes of a normalized
+POVM. Bounded metric functions act on every state. A recorded minimum
+density threshold gives a positive self-adjoint circumference mean on a
+dense domain, with finite accepted moments on finite Hermite vectors.
+Positive mass cutoffs and bounded geometry effects converge; unbounded
+strong-resolvent convergence is not inferred from them.
+
+PCR's actual nonlinear density-phase-pulsed coherent states recover the
+smooth classical material profiles in H3/C2 probability when ell->0 and
+h ell^-8->0. Density and conjugate squared-error rates are O(h ell^-7)
+and O(h ell^-8). Their current law is generally non-Gaussian, so bounded
+reading convergence does not imply convergence of mean length.
+
+The fixed-h vacuum has infinite ungated mean length at every ell, and
+its raw point r laws are non-tight as ell vanishes. The next obligation
+is a compatible material-flow law for detector and resolution, or a
+justified composite prescription beyond this raw point obstruction.
+Exact first-moment calibration alone does not provide that covariance:
+the doubled detector measure and the system have different Wick flow
+corrections. The full 3+1 quantum-gravity source remains open.
+
+WCG validation: 354 exact checks, 15 symbolic certificates and 50 negative
+controls. The integrated quantum-geometry chain contains 48 stages.
+
 Phase/current continuation, 16 October:
 [PCR-1](papers/native-phase-current-response/THEOREM.md) supplies the
 conjugate-sensitive extension required by DCD. In the fixed prepared

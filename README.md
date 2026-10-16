@@ -1,5 +1,13 @@
 # Publications
 
+Latest material-observable development: [WCG-1 — Wick-calibrated joint geometry readings](papers/native-wick-calibrated-geometry/README.md).
+A joint detector in the same LMD sector has exactly the original Wick
+density and current first moments. Its measured mass gives smooth material
+geometry at fixed spatial resolution, bounded metric operators and a
+thresholded self-adjoint circumference mean. PCR's phase states recover
+classical profiles when h ell^-8 tends to zero. Fixed-h raw point geometry
+and ungated vacuum mean length have explicit obstructions.
+
 Latest phase/current development: [PCR-1 — phase and current complete density-response coordinates](papers/native-phase-current-response/README.md).
 Original current means recover the density-blind phase exactly:
 p_i=beta_i m_i. Four ensemble means identify the fixed prepared family,
