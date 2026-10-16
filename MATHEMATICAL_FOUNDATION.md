@@ -22,6 +22,17 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[WCG-1: Wick-calibrated material observables](papers/native-wick-calibrated-geometry/THEOREM.md)
+adapts the existing countable coherent detector to LMD and proves the
+conditional measured-mass identity E_probe N_(s+probe)=M_s. The joint
+measurement has exact density-form and current-moment domains. Positive
+heat convolution gives the original nonlinear material inverse as a
+normalized POVM with bounded metric operators and a thresholded positive
+self-adjoint length mean. PCR's actual phase-pulsed coherent states give
+H3/C2 classical recovery for h ell^-8->0. Full detector material-flow
+covariance and the fixed-h raw point inverse remain unresolved; no new
+general anti-Wick quantization or spacetime geometry is claimed.
+
 [PCR-1: phase/current response coordinates](papers/native-phase-current-response/THEOREM.md)
 adds existing density phases to the fixed prepared response family.
 Actual Cameron--Martin means give p_i=beta_i m_i, so four ensemble means
