@@ -22,6 +22,18 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[ILC-1: single-point infinite layers and a positive cut](papers/native-infinite-layer-cut/THEOREM.md)
+replaces separated observations by normalized derivatives at one point.
+The inherited L/J kernels give two confluent Hankel forms. Their
+all-order positivity, equivalently nonnegative alternating binomial
+readings, is a one-point RH criterion. The acquired polynomial pairing
+then gives a positive contraction, a strongly convergent sequence of
+padded cuts and a two-reflection wave law. Sixteen complete actual
+layers at s=29 certify the finite eight-direction version and a
+separate s=31 response error below 6e-28. Classical compact moment,
+dilation and spectral methods are credited and their required arguments
+are supplied. No finite jet establishes the universal inequalities.
+
 [PIW-1: sharp source innovation windows](papers/native-prime-innovation-window/THEOREM.md)
 factors the next-step two-sign budget into delta(1-kappa delta),
 where delta is the actual new value minus the old finite response.

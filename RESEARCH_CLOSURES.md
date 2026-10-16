@@ -7,6 +7,8 @@ verified source results rather than a new collection of unrelated examples.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| Single-point infinite-layer cut condition | All-order determinant/binomial RH criterion and conditional strong cut limit proved | ILC-T1 through ILC-T3 | Actual universal source inequalities remain open; derivative depth, wave iteration and averaging have distinct limits |
+| Actual finite derivative tower and cut-wave realization | Sixteen source layers, both 8x8 forms and 136 binomial readings positive | ILC-T3 through ILC-T5 | Complete source tails retained; unfitted s=31 error below 6e-28; finite spectrum is not a uniform mass gap or electromagnetic identification |
 | Exact next-source acceptance and new prime direction | Sharp value/slope windows and covariant normalization proved; prime 29 accepted | PIW-T1 through PIW-T4 | Complete native source tails retained, nine selected prime directions positive, unfitted prime 31 error below 3e-17; all-order signs and full V24-plus-new positivity remain open |
 | Prime-content centre from three equal source readings | Automatic closure fails in the declared metric point model; good-prime local lifting is exact | POC-T1/T2 | Unique metric circumcentre need not be integral; determinant units give compatible local solutions, while bad-prime first layers may not lift |
 | Prime-sampled recovery of the actual RH response | All-order criterion and conditional convergence proved; eight-prime finite replay positive | POC-T3 through POC-T5, citing SE48/SE49 | Prime analytic density is established, but universal actual innovation positivity remains open; existing V24 subset only, no RH proof, improved global eta or physical identification |
