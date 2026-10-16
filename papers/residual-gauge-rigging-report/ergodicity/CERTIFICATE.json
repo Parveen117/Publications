@@ -1,0 +1,247 @@
+{
+  "protocol": "RDE1_RESIDUAL_DIFF_ERGODICITY_V1",
+  "status": "PASS_FINITE_WITNESSES_FOR_VP_DIVERGENCE_CLOSURE",
+  "source_pins_sha256": "14ddf102f5e5c37e3d76fb0e0ad9b6531a4c3748ef6fb767fcf7592cdce346ac",
+  "checks": [
+    {
+      "name": "commutator_fourier_formula:sharp:00K4",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:vp:00K4",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:sharp:00K6",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:vp:00K6",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:sharp:01K4",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:vp:01K4",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:sharp:01K6",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:vp:01K6",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:sharp:10K4",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:vp:10K4",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:sharp:10K6",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:vp:10K6",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:sharp:11K4",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:vp:11K4",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:sharp:11K6",
+      "passed": true
+    },
+    {
+      "name": "commutator_fourier_formula:vp:11K6",
+      "passed": true
+    },
+    {
+      "name": "multiplier_commutes_with_derivative",
+      "passed": true
+    },
+    {
+      "name": "multiplier_fixes_constants",
+      "passed": true
+    },
+    {
+      "name": "gradient_cancellation_identity",
+      "passed": true
+    },
+    {
+      "name": "vp_band_norm_decreases:16",
+      "passed": true
+    },
+    {
+      "name": "vp_band_norm_decreases:32",
+      "passed": true
+    },
+    {
+      "name": "vp_band_norm_decreases:64",
+      "passed": true
+    },
+    {
+      "name": "vp_band_norm_decreases:128",
+      "passed": true
+    },
+    {
+      "name": "lemma3_vp_commutator_bound:8",
+      "passed": true
+    },
+    {
+      "name": "lemma3_vp_commutator_bound:16",
+      "passed": true
+    },
+    {
+      "name": "lemma3_vp_commutator_bound:32",
+      "passed": true
+    },
+    {
+      "name": "lemma3_vp_commutator_bound:64",
+      "passed": true
+    },
+    {
+      "name": "lemma3_vp_commutator_bound:128",
+      "passed": true
+    },
+    {
+      "name": "vp_band_norm_times_K_bounded",
+      "passed": true
+    },
+    {
+      "name": "sharp_band_norm_bounded_below_by_one",
+      "passed": true
+    },
+    {
+      "name": "vp_truncation_error_decreases",
+      "passed": true
+    },
+    {
+      "name": "closure_all_directions_leaves_constants_only",
+      "passed": true
+    },
+    {
+      "name": "closure_one_direction_nullity_counts_functions_of_x2",
+      "passed": true
+    },
+    {
+      "name": "closure_with_undoubled_score_kills_constants",
+      "passed": true
+    },
+    {
+      "name": "sector_commutant_dimension_two",
+      "passed": true
+    },
+    {
+      "name": "sign_mixing_observable_collapses_commutant",
+      "passed": true
+    },
+    {
+      "name": "population_depends_on_sector_weights",
+      "passed": true
+    },
+    {
+      "name": "rescaling_W_implements_weighted_form",
+      "passed": true
+    },
+    {
+      "name": "rescaling_W_intertwines_declared_observable:0",
+      "passed": true
+    },
+    {
+      "name": "rescaling_W_intertwines_declared_observable:1",
+      "passed": true
+    },
+    {
+      "name": "rescaling_W_intertwines_declared_observable:2",
+      "passed": true
+    },
+    {
+      "name": "isometric_spectator_contract_holds_for_equal_weights",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "commutator_formula_with_reversed_multiplier_difference",
+      "rejected": true
+    },
+    {
+      "name": "gradient_cancellation_without_commuting_derivative",
+      "rejected": true
+    },
+    {
+      "name": "sharp_band_norm_decays_like_vp:16",
+      "rejected": true
+    },
+    {
+      "name": "sharp_band_norm_decays_like_vp:32",
+      "rejected": true
+    },
+    {
+      "name": "sharp_band_norm_decays_like_vp:64",
+      "rejected": true
+    },
+    {
+      "name": "sharp_band_norm_decays_like_vp:128",
+      "rejected": true
+    },
+    {
+      "name": "closure_one_direction_leaves_constants_only",
+      "rejected": true
+    },
+    {
+      "name": "closure_with_undoubled_score_keeps_constants",
+      "rejected": true
+    },
+    {
+      "name": "rescaling_W_intertwines_sign_mixing_observable",
+      "rejected": true
+    },
+    {
+      "name": "isometric_spectator_contract_holds_for_unequal_weights",
+      "rejected": true
+    }
+  ],
+  "measurements": {
+    "band_norm_H4_squared": {
+      "profile": "u_hat(q)=|q|^-4, D=cos(2 pi x), exact rational recorded via sha256, truncated decimal shown",
+      "sharp": {
+        "8": "1.554767969",
+        "16": "1.136071388",
+        "32": "1.034335539",
+        "64": "1.008669575",
+        "128": "1.002181230"
+      },
+      "vallee_poussin": {
+        "8": "0.046414036",
+        "16": "0.007467620",
+        "32": "0.001410647",
+        "64": "0.000297908",
+        "128": "0.000067731"
+      },
+      "exact_sha256": "5d7c6e170a38f0b512b7e6dbd5538c8b054b850f98cd90ccd312f9729649c436"
+    }
+  },
+  "results": {
+    "continuum_proofs_machine_certified": false,
+    "ergodicity_claim": "written proof in ERGODICITY.md, not certified here",
+    "sharp_dirichlet_D12_route": "band norm does not decay in witness; L1 divergence of sharp sums not decided",
+    "vallee_poussin_D12_route": "band norm decays in witness; continuum estimate written"
+  },
+  "summary": {
+    "exact_checks": 42,
+    "negative_controls": 10
+  }
+}

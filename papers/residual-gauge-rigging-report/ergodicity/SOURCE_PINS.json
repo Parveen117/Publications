@@ -1,0 +1,17 @@
+{
+  "protocol": "RDE1_SOURCE_PINS_V1",
+  "rgr_dependency_commit": "d9c70208520f53f31d93bd94c3190f48b34acb4c",
+  "files": {
+    "verify.cjs": "1954a65844618af243b33cf73f13fb2a5b3d4585c1ee830e7783c3b51c1ff1d6",
+    "run.py": "2082f5ad324d01f6037aed24c58befce3bbaecaa75554bb63dab6e7e213370b4",
+    "../ERGODICITY.md": "c8eee4c315ef79da3cbb179b45995d145b61333328be434384cc78ae85a65ceb",
+    "../UNIQUENESS.md": "f92f1784f0636ad45197b642386328b64971f58b77a520d0a793db755cb429d7",
+    "../REPORT.md": "1740cb188e96fc14c75c1e0a91110510417f27afab397d18ba2fb98c18a2869d",
+    "../../native-residual-gauge-rigging/THEOREM.md": "8ff94808f326a81bac1c72a39641607e086240e32e35b2e107861ff5ea07ab83",
+    "../../native-residual-gauge-rigging/SOURCE_PINS.json": "32126c1d48d8fe91b7d2f66270e6b073f327dc5c2e9bd781215ac69a61934897",
+    "../../native-material-profile-quantization/THEOREM.md": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0",
+    "../../native-central-gauge-domain/THEOREM.md": "d70f48a5fe713b421e9ea2035f638fd2eab7be4dce211b6d39c994334473da0a",
+    "../../native-inverse-gauge-quantization/THEOREM.md": "c7780e54a54774ae80288200c3f51fd95081e1a3601f82a39ab4418af969741d",
+    "../../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+  }
+}

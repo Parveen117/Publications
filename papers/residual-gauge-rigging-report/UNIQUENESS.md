@@ -7,6 +7,16 @@ whose packet `papers/native-residual-gauge-rigging` (RGR-1) is treated as a
 neither is any other frozen packet. Nonlinear geometry observables and
 curvature are out of scope; that is the other researcher's track.
 
+> **Update, 16 October 2026 (same day, later).** `ERGODICITY.md` now proves
+> ergodicity of G_c on (X_c, nu_2) (Theorem E) by a divergence closure with
+> de la Vallee Poussin weights, so U(b),(d) apply unconditionally. Condition
+> (L) below, stated with sharp partial sums, is superseded as a route and
+> remains undecided as stated (`ERGODICITY.md` Section 4). Theorem S is
+> superseded by Theorem S' there, with an explicit domain/boundedness
+> contract (BC); and Section 3's claim that the sector ratio is "not
+> observable through any declared MPQ observable" is **withdrawn**: sign
+> projections do measure sector populations. See `ERGODICITY.md` Section 5.
+
 Labels: **[P]** proved here; **[D]** taken from RGR-1, with the step audited
 below; **[E]** external theorem; **[C]** open or conjectural.
 
