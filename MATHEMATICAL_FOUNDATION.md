@@ -22,6 +22,16 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[LCW-1: sharp two-layer continuation](papers/native-layer-continuation-window/THEOREM.md)
+derives the exact even and odd Schur windows from the retained moment
+forms. A finite Gram congruence proves their positive width and its
+reciprocal-inverse identity. The normalized source positions give an
+exact width recurrence and a factor-at-most-1/16 contraction per pair.
+These are classical canonical moment coordinates, with a self-contained
+finite derivation. Actual layers through derivative 17 pass both windows
+and both 9x9 forms. The source-specific all-depth membership remains
+open; selecting an admissible continuation does not establish it.
+
 [ILC-1: single-point infinite layers and a positive cut](papers/native-infinite-layer-cut/THEOREM.md)
 replaces separated observations by normalized derivatives at one point.
 The inherited L/J kernels give two confluent Hankel forms. Their

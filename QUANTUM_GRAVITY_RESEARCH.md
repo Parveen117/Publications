@@ -10,6 +10,31 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Single-point layer continuation, 17 October:
+[LCW-1](papers/native-layer-continuation-window/THEOREM.md) derives
+necessary and sufficient windows for the next two derivatives from
+both retained positive forms. A finite Gram congruence proves
+1/W=e^T(A^-1+B^-1)e and the exact odd budget
+(x-L)(U-x)/(U-L). The new two Schur pivots split that budget.
+Canonical positions p,theta give W_next=W p(1-p)theta(1-theta)<=W/16.
+These scalar positions are not primes, spectral values or wave angles.
+
+A fresh complete native derivative evaluation through order 17 at s=29
+passes the two source windows, with positions in (0.170,0.171) and
+(0.145,0.146). Both 9x9 forms and all 171 binomial readings are positive.
+The inherited cut construction therefore has nine polynomial directions
+and eighteen dilation channels. At unfitted s=31 the response error is
+positive and below 1.412e-31; the independent finite analytic bound is
+below 7.417e-25. The next c_18 window has width in
+(2.144e-13,2.145e-13), but c_18 itself has not been evaluated here.
+
+LCW validation: 67 exact checks, 4 symbolic certificates, 15 negative
+controls. The integrated replay has 53 stages. The universal actual
+window membership is still the all-order RH obligation. No fixed
+precision, positive uniform mass gap, Maxwell equation or physical
+spacetime identification follows from the shrinking window law.
+All predecessor packets and native engines remain unchanged.
+
 User-directed infinite-layer cut continuation, 17 October:
 [ILC-1](papers/native-infinite-layer-cut/THEOREM.md) makes the
 single-point proposal precise using the actual source's normalized

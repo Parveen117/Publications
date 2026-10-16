@@ -1,6 +1,15 @@
 # Publications
 
-Latest infinite-layer continuation: [ILC-1 — single-point layers, combinatorial readings and a positive cut](papers/native-infinite-layer-cut/README.md).
+Latest layer continuation: [LCW-1 — sharp next-layer windows](papers/native-layer-continuation-window/README.md).
+An exact Gram/Schur identity gives necessary and sufficient intervals
+for the next two layers and the width law W_next=W p(1-p) theta(1-theta),
+so each accepted pair contracts the window by at least a factor of 16.
+Actual derivatives 16 and 17 pass, giving nine positive confluent
+directions, 171 positive binomial readings and unfitted s=31 error below
+1.412e-31. The next c_18 window is computed but its actual membership,
+the universal RH condition and physical identification remain open.
+
+Predecessor infinite-layer continuation: [ILC-1 — single-point layers, combinatorial readings and a positive cut](papers/native-infinite-layer-cut/README.md).
 The two confluent source forms and all alternating binomial readings
 give equivalent all-order RH conditions at one regular point. Under
 that premise, finite derivative compressions yield cuts converging

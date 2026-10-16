@@ -7,6 +7,8 @@ verified source results rather than a new collection of unrelated examples.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| Sharp next-layer continuation and width transport | Necessary and sufficient two-layer windows and exact width recurrence proved | LCW-T1 through LCW-T3 | Universal membership of actual xi derivatives remains open; admissible chosen moments do not identify the source |
+| Actual single-point extension through derivative 17 | Both 9x9 forms and 171 binomial readings positive | LCW-T4/T5 and native certificate | Unfitted s=31 error below 1.412e-31; next c_18 window computed but actual derivative not evaluated; no physical identification |
 | Single-point infinite-layer cut condition | All-order determinant/binomial RH criterion and conditional strong cut limit proved | ILC-T1 through ILC-T3 | Actual universal source inequalities remain open; derivative depth, wave iteration and averaging have distinct limits |
 | Actual finite derivative tower and cut-wave realization | Sixteen source layers, both 8x8 forms and 136 binomial readings positive | ILC-T3 through ILC-T5 | Complete source tails retained; unfitted s=31 error below 6e-28; finite spectrum is not a uniform mass gap or electromagnetic identification |
 | Exact next-source acceptance and new prime direction | Sharp value/slope windows and covariant normalization proved; prime 29 accepted | PIW-T1 through PIW-T4 | Complete native source tails retained, nine selected prime directions positive, unfitted prime 31 error below 3e-17; all-order signs and full V24-plus-new positivity remain open |
