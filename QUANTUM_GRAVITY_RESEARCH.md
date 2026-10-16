@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 16 October 2026. Material joint-detector source lift and calibration: **MDD-1**. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
+Updated 16 October 2026. Physical reference momentum and local-flow obstruction: **MRM-1**. Material joint-detector source lift and calibration: **MDD-1**. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
@@ -9,6 +9,55 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[MRM-1](papers/native-material-reference-momentum/THEOREM.md) derives
+the original source reference current rho=-d'+d s' and constructs its
+total as a self-adjoint physical observable on the selected RGR/MPQ
+space. It supplies an explicit spectral domain, a polynomial graph
+core, spectrum 2 pi hbar Z, strong resolvent cutoff convergence,
+an additional ideal spectral pointer and a positive clock quotient.
+The exact unchanged J-pulse balance is
+U^*R U=R-kappa Pi J(w'), and coherent states recover the classical
+charge with variance of order hbar. The charge is phase-sensitive;
+it has not been identified with physical energy.
+
+Operator existence and joint-detector reconstruction now separate
+sharply. MDD's raw product estimate of this total has the correct
+finite first-moment operator, but its vacuum laws escape every fixed
+bounded interval as the cutoff grows. The spectral charge law of
+the vacuum is instead delta_0. Thus divergent joint-readout noise
+does not establish nonexistence of the physical observable.
+
+For every nonconstant local window, the natural Weyl-current cutoff
+has a divergent vacuum second-chaos component, not removable by
+scalar or linear counterterms. Separately, applying frozen IGQ-T2's
+path-statistic proof to physical log density rules out a unitary
+implementer of its exact non-rigid material flow in this Gaussian
+measure class. Other domains/renormalizations are not excluded by
+the vacuum argument; other representations are not excluded by
+the finite-flow theorem. The inverse-embedding source gauge action
+and selected rigging are unchanged.
+
+Next geometry obligation: justify a representation/observable contract
+that supports the desired local source composites, or construct a
+specific renormalized geometric observable without claiming the
+obstructed canonical flow. Local metric/curvature fields and the full
+physical quantum-gravity construction remain open.
+
+Validation: 157 native exact checks, 10 symbolic proofs/replays and
+25 negative controls; all 41 integrated stages pass locally.
+Written analytic proofs carry the continuum, domain and measure claims.
+
+Fable's corrections at a9f44d5645448cc97dbc78418fd60cae09a90e96
+have been read and replayed separately (49 exact checks, 15 negative
+controls). They are unmerged and are not new MRM dependencies.
+Its disjoint next task is to prove or refute the equivalence between
+the continuous infinitesimal constraint kernel and the finite-group
+invariant dual, including density and differentiability in the FULL
+source test topology. The complete prompt is
+[here](papers/native-material-reference-momentum/FABLE_NEXT_PROMPT.md).
+
+### Preserved MDD endpoint
 
 [MDD-1](papers/native-material-detector-dilation/THEOREM.md) derives an
 explicit additional apparatus for the RMG/CMG measurement. A matched

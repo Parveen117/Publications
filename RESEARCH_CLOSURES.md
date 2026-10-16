@@ -57,12 +57,43 @@ verified source results rather than a new collection of unrelated examples.
 | Relational joint-apparatus norm and physical instruments | Constructed with controlled finite-bin cutoff limits | MDD-T4 | Positive clock quotient, specified domains and actual probe instrument; terminal quadrature PVM declared; not necessarily the earlier square-root instrument |
 | Joint-readout noise and original J-density calibration | Exact within the selected representation and preparation | MDD-T5 | Added variance product hbar^2/4 per matched mode; calibrated J first-moment form equals the original observable; noisy POVM differs from spectral measurement |
 | Resolution-independent smooth adapted readings | Constructed on the full unconditioned detector record | MDD-T5 | Known inverse filter acts on smooth test functions; inverse high-mode gain unbounded; retaining rejected records required; no sharp nonlinear point geometry inferred |
+| Total physical material-reference momentum | Self-adjoint observable constructed on the selected physical space | MRM-T1/T2 | Exact source current, polynomial graph core, full spectral domain, spectrum 2 pi hbar Z and strong resolvent cutoff; not positive energy or an added gauge constraint |
+| Charge feedback, ideal spectral readout and classical recovery | Closed under the stated reduced apparatus contract | MRM-T3 | Exact unchanged J-pulse balance, positive clock quotient, phase-sensitive charge law and coherent variance of order hbar; classical source lift is local on the regular patch, quantum ordering chosen after reduction |
+| Raw joint-detector estimate of the total charge | No tight vacuum continuum law, even after scalar subtraction | MRM-T4 | Correct finite first-moment operator but explicit Laplace convolution concentration bound; does not obstruct the valid spectral charge observable or every alternative estimator |
+| Nonconstant local Weyl-current vacuum domain | Obstructed for the specified cutoff with scalar or linear counterterms | MRM-T5 | General second-chaos norm divergence; does not exclude other domains, strong resolvent limits or all renormalizations |
+| Canonical non-rigid physical material-flow implementation | Obstructed in the selected physical Gaussian measure class | MRM-T6, reusing IGQ-T2 | Full configuration spectral action is singular; equivalent density weights and spectator multiplicities do not fix it; other representations and the distinct inverse-embedding source gauge action are outside this obstruction |
 | Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD core; RGR selected rigging | Nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
+
+MRM-1 constructs an original source charge beyond the J-density algebra:
+the total reference momentum has a self-adjoint domain, spectrum,
+controlled cutoff, exact apparatus feedback and coherent classical
+recovery. Its ideal spectral measurement can distinguish conjugate-phase
+states with identical J laws.
+
+The same quantity's raw MDD joint-record product has no tight vacuum
+continuum limit. This measurement obstruction is separated from the
+existence of the charge operator. Nonconstant local windows additionally
+have a divergent second-chaos vacuum cutoff and, under the exact finite
+canonical-flow contract, a Gaussian measure-class obstruction. The latter
+reuses the frozen IGQ proof in the physical factor. No blanket local
+observable nonexistence or change to the source gauge representation
+is asserted.
+
+All frozen packets remain unchanged. The native regression packet has
+157 exact checks, 10 symbolic certificates/replays and 25 negative
+controls; all 41 integrated stages pass locally. Continuum proofs
+remain separately written and scoped. Fable's corrected external report
+at a9f44d5 was read and replayed, without a merge or new uniqueness
+dependency. Its next task is the infinitesimal-constraint to finite-group
+invariant-dual bridge in the full source test topology; Codex continues
+physical geometry and observable representation choices.
+
+### Previous MDD endpoint
 
 MDD-1 turns the prescribed joint geometry POVM into an explicit additional
 apparatus construction. A finite classical source lift, feedback equations,

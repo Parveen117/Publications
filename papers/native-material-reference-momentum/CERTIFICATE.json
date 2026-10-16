@@ -1,0 +1,5328 @@
+{
+  "protocol": "MRM1_MATERIAL_REFERENCE_MOMENTUM_V1",
+  "status": "PASS_TOTAL_CHARGE_AND_SCOPED_LOCAL_OBSTRUCTIONS",
+  "source_pins_sha256": "d65736543a3a25af45a9ae6c265497d5f177808c4d77463f6f30c0734287904c",
+  "checks": [
+    {
+      "name": "confluent:60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+      "passed": true
+    },
+    {
+      "name": "total_charge_configuration_cosine",
+      "passed": true
+    },
+    {
+      "name": "total_charge_configuration_cosine:replay",
+      "passed": true
+    },
+    {
+      "name": "total_charge_configuration_sine",
+      "passed": true
+    },
+    {
+      "name": "total_charge_configuration_sine:replay",
+      "passed": true
+    },
+    {
+      "name": "total_charge_momentum_cosine",
+      "passed": true
+    },
+    {
+      "name": "total_charge_momentum_cosine:replay",
+      "passed": true
+    },
+    {
+      "name": "total_charge_momentum_sine",
+      "passed": true
+    },
+    {
+      "name": "total_charge_momentum_sine:replay",
+      "passed": true
+    },
+    {
+      "name": "total_charge_symmetric_order",
+      "passed": true
+    },
+    {
+      "name": "total_charge_symmetric_order:replay",
+      "passed": true
+    },
+    {
+      "name": "total_charge_radial_configuration_invariant",
+      "passed": true
+    },
+    {
+      "name": "total_charge_radial_configuration_invariant:replay",
+      "passed": true
+    },
+    {
+      "name": "confluent:b88cf1064abad8b5eb085306ee8b17bcc91fe42525051a091527cafbffc9ca8d",
+      "passed": true
+    },
+    {
+      "name": "source_current_smearing_bracket_density",
+      "passed": true
+    },
+    {
+      "name": "source_current_smearing_bracket_density:replay",
+      "passed": true
+    },
+    {
+      "name": "reference_current_weight_two_and_gsecond_cancellation",
+      "passed": true
+    },
+    {
+      "name": "reference_current_weight_two_and_gsecond_cancellation:replay",
+      "passed": true
+    },
+    {
+      "name": "equal_pair_Gaussian_score_cancellation",
+      "passed": true
+    },
+    {
+      "name": "equal_pair_Gaussian_score_cancellation:replay",
+      "passed": true
+    },
+    {
+      "name": "confluent:73e94942d13fbd33c44a238a2f2a1363a0943fb0329c49b6f289cfd20ff0af2d",
+      "passed": true
+    },
+    {
+      "name": "all_n_local_current_lower_bound_polynomial",
+      "passed": true
+    },
+    {
+      "name": "all_n_local_current_lower_bound_polynomial:replay",
+      "passed": true
+    },
+    {
+      "name": "all_n_shifted_polynomial_coefficients_positive",
+      "passed": true
+    },
+    {
+      "name": "general_local_current_asymptotic_7k",
+      "passed": true
+    },
+    {
+      "name": "paired_covariance_rotation:3/5:1/16",
+      "passed": true
+    },
+    {
+      "name": "paired_covariance_rotation:3/5:1/625",
+      "passed": true
+    },
+    {
+      "name": "paired_covariance_rotation:5/13:1/16",
+      "passed": true
+    },
+    {
+      "name": "paired_covariance_rotation:5/13:1/625",
+      "passed": true
+    },
+    {
+      "name": "coherent_positive_variance:1:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_phase_pair_opposite_means:1:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_variance_linear_in_h:1:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_positive_variance:1:1/5",
+      "passed": true
+    },
+    {
+      "name": "coherent_phase_pair_opposite_means:1:1/5",
+      "passed": true
+    },
+    {
+      "name": "coherent_variance_linear_in_h:1:1/5",
+      "passed": true
+    },
+    {
+      "name": "coherent_positive_variance:2:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_phase_pair_opposite_means:2:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_variance_linear_in_h:2:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_positive_variance:2:1/5",
+      "passed": true
+    },
+    {
+      "name": "coherent_phase_pair_opposite_means:2:1/5",
+      "passed": true
+    },
+    {
+      "name": "coherent_variance_linear_in_h:2:1/5",
+      "passed": true
+    },
+    {
+      "name": "coherent_positive_variance:5:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_phase_pair_opposite_means:5:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_variance_linear_in_h:5:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_positive_variance:5:1/5",
+      "passed": true
+    },
+    {
+      "name": "coherent_phase_pair_opposite_means:5:1/5",
+      "passed": true
+    },
+    {
+      "name": "coherent_variance_linear_in_h:5:1/5",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1:0",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1:1",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1:2",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1:3",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1:4",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1:6",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1:8",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1/3:0",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1/3:1",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1/3:2",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1/3:3",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1/3:4",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1/3:6",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:0:1/3:8",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1:0",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1:1",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1:2",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1:3",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1:4",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1:6",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1:8",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1/3:0",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1/3:1",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1/3:2",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1/3:3",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1/3:4",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1/3:6",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:1:1/3:8",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1:0",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1:1",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1:2",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1:3",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1:4",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1:6",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1:8",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1/3:0",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1/3:1",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1/3:2",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1/3:3",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1/3:4",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1/3:6",
+      "passed": true
+    },
+    {
+      "name": "Laplace_difference_product_moment:7:1/3:8",
+      "passed": true
+    },
+    {
+      "name": "joint_charge_vacuum_variance_sum:1",
+      "passed": true
+    },
+    {
+      "name": "joint_charge_vacuum_variance_sum:2",
+      "passed": true
+    },
+    {
+      "name": "joint_charge_vacuum_variance_sum:4",
+      "passed": true
+    },
+    {
+      "name": "joint_charge_vacuum_variance_sum:8",
+      "passed": true
+    },
+    {
+      "name": "joint_charge_vacuum_variance_sum:16",
+      "passed": true
+    },
+    {
+      "name": "joint_charge_vacuum_variance_sum:32",
+      "passed": true
+    },
+    {
+      "name": "second_chaos_norm_is_twice_HS:2",
+      "passed": true
+    },
+    {
+      "name": "second_chaos_norm_is_twice_HS:3",
+      "passed": true
+    },
+    {
+      "name": "local_S_Hermitian:1",
+      "passed": true
+    },
+    {
+      "name": "local_HS_lower_bound:1",
+      "passed": true
+    },
+    {
+      "name": "local_S_coefficient_formula:1",
+      "passed": true
+    },
+    {
+      "name": "local_linear_vacuum_norm:1",
+      "passed": true
+    },
+    {
+      "name": "constant_window_second_chaos_zero:1",
+      "passed": true
+    },
+    {
+      "name": "local_S_Hermitian:2",
+      "passed": true
+    },
+    {
+      "name": "local_HS_lower_bound:2",
+      "passed": true
+    },
+    {
+      "name": "local_S_coefficient_formula:2",
+      "passed": true
+    },
+    {
+      "name": "local_linear_vacuum_norm:2",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:2:1",
+      "passed": true
+    },
+    {
+      "name": "constant_window_second_chaos_zero:2",
+      "passed": true
+    },
+    {
+      "name": "local_S_Hermitian:4",
+      "passed": true
+    },
+    {
+      "name": "local_HS_lower_bound:4",
+      "passed": true
+    },
+    {
+      "name": "local_S_coefficient_formula:4",
+      "passed": true
+    },
+    {
+      "name": "local_linear_vacuum_norm:4",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:4:1",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:4:2",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:4:3",
+      "passed": true
+    },
+    {
+      "name": "constant_window_second_chaos_zero:4",
+      "passed": true
+    },
+    {
+      "name": "local_S_Hermitian:8",
+      "passed": true
+    },
+    {
+      "name": "local_HS_lower_bound:8",
+      "passed": true
+    },
+    {
+      "name": "local_S_coefficient_formula:8",
+      "passed": true
+    },
+    {
+      "name": "local_linear_vacuum_norm:8",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:8:1",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:8:2",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:8:3",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:8:4",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:8:5",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:8:6",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:8:7",
+      "passed": true
+    },
+    {
+      "name": "constant_window_second_chaos_zero:8",
+      "passed": true
+    },
+    {
+      "name": "local_S_Hermitian:16",
+      "passed": true
+    },
+    {
+      "name": "local_HS_lower_bound:16",
+      "passed": true
+    },
+    {
+      "name": "local_S_coefficient_formula:16",
+      "passed": true
+    },
+    {
+      "name": "local_linear_vacuum_norm:16",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:1",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:2",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:3",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:4",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:5",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:6",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:7",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:8",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:9",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:10",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:11",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:12",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:13",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:14",
+      "passed": true
+    },
+    {
+      "name": "local_adjacent_entry_bound:16:15",
+      "passed": true
+    },
+    {
+      "name": "constant_window_second_chaos_zero:16",
+      "passed": true
+    },
+    {
+      "name": "centered_square_orthogonal_to_constant",
+      "passed": true
+    },
+    {
+      "name": "centered_square_orthogonal_to_linear",
+      "passed": true
+    },
+    {
+      "name": "centered_square_nonzero",
+      "passed": true
+    },
+    {
+      "name": "IGQ_nonrigid_variation_factor",
+      "passed": true
+    },
+    {
+      "name": "rigid_translation_variation_factor",
+      "passed": true
+    },
+    {
+      "name": "IGQ_bridge_amplitude_defect:1",
+      "passed": true
+    },
+    {
+      "name": "IGQ_bridge_amplitude_defect:2",
+      "passed": true
+    },
+    {
+      "name": "IGQ_bridge_amplitude_defect:4",
+      "passed": true
+    },
+    {
+      "name": "IGQ_bridge_amplitude_defect:8",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "reversed_total_charge_sign",
+      "rejected": true
+    },
+    {
+      "name": "sum_instead_of_angular_difference",
+      "rejected": true
+    },
+    {
+      "name": "omit_log_derivative_from_r_transport",
+      "rejected": true
+    },
+    {
+      "name": "wrong_smearing_Witt_sign",
+      "rejected": true
+    },
+    {
+      "name": "local_asymptotic_coefficient_one",
+      "rejected": true
+    },
+    {
+      "name": "local_asymptotic_coefficient_eight",
+      "rejected": true
+    },
+    {
+      "name": "unequal_pair_covariance_rotation:3/5",
+      "rejected": true
+    },
+    {
+      "name": "unequal_pair_covariance_rotation:5/13",
+      "rejected": true
+    },
+    {
+      "name": "charge_is_positive_energy",
+      "rejected": true
+    },
+    {
+      "name": "joint_charge_law_equals_spectral_vacuum:1",
+      "rejected": true
+    },
+    {
+      "name": "joint_charge_law_equals_spectral_vacuum:2",
+      "rejected": true
+    },
+    {
+      "name": "joint_charge_law_equals_spectral_vacuum:4",
+      "rejected": true
+    },
+    {
+      "name": "joint_charge_law_equals_spectral_vacuum:8",
+      "rejected": true
+    },
+    {
+      "name": "joint_charge_law_equals_spectral_vacuum:16",
+      "rejected": true
+    },
+    {
+      "name": "joint_charge_law_equals_spectral_vacuum:32",
+      "rejected": true
+    },
+    {
+      "name": "Gaussian_instead_of_Laplace_fourth_moment",
+      "rejected": true
+    },
+    {
+      "name": "omit_centering_trace",
+      "rejected": true
+    },
+    {
+      "name": "local_scalar_subtraction_removes_second_chaos:1",
+      "rejected": true
+    },
+    {
+      "name": "local_scalar_subtraction_removes_second_chaos:2",
+      "rejected": true
+    },
+    {
+      "name": "local_scalar_subtraction_removes_second_chaos:4",
+      "rejected": true
+    },
+    {
+      "name": "local_scalar_subtraction_removes_second_chaos:8",
+      "rejected": true
+    },
+    {
+      "name": "local_scalar_subtraction_removes_second_chaos:16",
+      "rejected": true
+    },
+    {
+      "name": "linear_counterterm_cancels_centered_quadratic",
+      "rejected": true
+    },
+    {
+      "name": "omit_time_change_in_quadratic_variation",
+      "rejected": true
+    },
+    {
+      "name": "corrupted_Paninian_certificate",
+      "rejected": true
+    }
+  ],
+  "presentations": [
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "sc",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "ss",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "dc",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "ds",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "weyl_ss_sc",
+            "lhs": [
+              "ss",
+              "sc"
+            ],
+            "rhs": [
+              [
+                [
+                  "sc",
+                  "ss"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D_i,S_j]=i delta_ij, independent real Fourier modes"
+          },
+          {
+            "id": "weyl_dc_sc",
+            "lhs": [
+              "dc",
+              "sc"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "0",
+                  "1"
+                ]
+              ],
+              [
+                [
+                  "sc",
+                  "dc"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D_i,S_j]=i delta_ij, independent real Fourier modes"
+          },
+          {
+            "id": "weyl_dc_ss",
+            "lhs": [
+              "dc",
+              "ss"
+            ],
+            "rhs": [
+              [
+                [
+                  "ss",
+                  "dc"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D_i,S_j]=i delta_ij, independent real Fourier modes"
+          },
+          {
+            "id": "weyl_ds_sc",
+            "lhs": [
+              "ds",
+              "sc"
+            ],
+            "rhs": [
+              [
+                [
+                  "sc",
+                  "ds"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D_i,S_j]=i delta_ij, independent real Fourier modes"
+          },
+          {
+            "id": "weyl_ds_ss",
+            "lhs": [
+              "ds",
+              "ss"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "0",
+                  "1"
+                ]
+              ],
+              [
+                [
+                  "ss",
+                  "ds"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D_i,S_j]=i delta_ij, independent real Fourier modes"
+          },
+          {
+            "id": "weyl_ds_dc",
+            "lhs": [
+              "ds",
+              "dc"
+            ],
+            "rhs": [
+              [
+                [
+                  "dc",
+                  "ds"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D_i,S_j]=i delta_ij, independent real Fourier modes"
+          }
+        ]
+      },
+      "audit": {
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "criticalPairs": 4,
+        "resolved": 4,
+        "open": 0,
+        "full_audit_sha256": "4868449c6f6fe5e68fc3e3ba9a82fdb364e208d9c3fc48c3385999788c12e1b8"
+      }
+    },
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "w",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "wp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "vp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "d",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "dp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "sp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "m",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "mp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "rp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "gp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "gpp",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "l",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "order_1_0",
+            "lhs": [
+              "wp",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "wp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_2_0",
+            "lhs": [
+              "v",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_2_1",
+            "lhs": [
+              "v",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_3_0",
+            "lhs": [
+              "vp",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "vp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_3_1",
+            "lhs": [
+              "vp",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "vp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_3_2",
+            "lhs": [
+              "vp",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "vp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_4_0",
+            "lhs": [
+              "d",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "d"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_4_1",
+            "lhs": [
+              "d",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "d"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_4_2",
+            "lhs": [
+              "d",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "d"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_4_3",
+            "lhs": [
+              "d",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "d"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_5_0",
+            "lhs": [
+              "dp",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "dp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_5_1",
+            "lhs": [
+              "dp",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "dp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_5_2",
+            "lhs": [
+              "dp",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "dp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_5_3",
+            "lhs": [
+              "dp",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "dp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_5_4",
+            "lhs": [
+              "dp",
+              "d"
+            ],
+            "rhs": [
+              [
+                [
+                  "d",
+                  "dp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_6_0",
+            "lhs": [
+              "sp",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "sp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_6_1",
+            "lhs": [
+              "sp",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "sp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_6_2",
+            "lhs": [
+              "sp",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "sp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_6_3",
+            "lhs": [
+              "sp",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "sp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_6_4",
+            "lhs": [
+              "sp",
+              "d"
+            ],
+            "rhs": [
+              [
+                [
+                  "d",
+                  "sp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_6_5",
+            "lhs": [
+              "sp",
+              "dp"
+            ],
+            "rhs": [
+              [
+                [
+                  "dp",
+                  "sp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_7_0",
+            "lhs": [
+              "m",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "m"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_7_1",
+            "lhs": [
+              "m",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "m"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_7_2",
+            "lhs": [
+              "m",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "m"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_7_3",
+            "lhs": [
+              "m",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "m"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_7_4",
+            "lhs": [
+              "m",
+              "d"
+            ],
+            "rhs": [
+              [
+                [
+                  "d",
+                  "m"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_7_5",
+            "lhs": [
+              "m",
+              "dp"
+            ],
+            "rhs": [
+              [
+                [
+                  "dp",
+                  "m"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_7_6",
+            "lhs": [
+              "m",
+              "sp"
+            ],
+            "rhs": [
+              [
+                [
+                  "sp",
+                  "m"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_8_0",
+            "lhs": [
+              "mp",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "mp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_8_1",
+            "lhs": [
+              "mp",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "mp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_8_2",
+            "lhs": [
+              "mp",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "mp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_8_3",
+            "lhs": [
+              "mp",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "mp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_8_4",
+            "lhs": [
+              "mp",
+              "d"
+            ],
+            "rhs": [
+              [
+                [
+                  "d",
+                  "mp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_8_5",
+            "lhs": [
+              "mp",
+              "dp"
+            ],
+            "rhs": [
+              [
+                [
+                  "dp",
+                  "mp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_8_6",
+            "lhs": [
+              "mp",
+              "sp"
+            ],
+            "rhs": [
+              [
+                [
+                  "sp",
+                  "mp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_8_7",
+            "lhs": [
+              "mp",
+              "m"
+            ],
+            "rhs": [
+              [
+                [
+                  "m",
+                  "mp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_9_0",
+            "lhs": [
+              "rp",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "rp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_9_1",
+            "lhs": [
+              "rp",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "rp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_9_2",
+            "lhs": [
+              "rp",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "rp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_9_3",
+            "lhs": [
+              "rp",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "rp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_9_4",
+            "lhs": [
+              "rp",
+              "d"
+            ],
+            "rhs": [
+              [
+                [
+                  "d",
+                  "rp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_9_5",
+            "lhs": [
+              "rp",
+              "dp"
+            ],
+            "rhs": [
+              [
+                [
+                  "dp",
+                  "rp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_9_6",
+            "lhs": [
+              "rp",
+              "sp"
+            ],
+            "rhs": [
+              [
+                [
+                  "sp",
+                  "rp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_9_7",
+            "lhs": [
+              "rp",
+              "m"
+            ],
+            "rhs": [
+              [
+                [
+                  "m",
+                  "rp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_9_8",
+            "lhs": [
+              "rp",
+              "mp"
+            ],
+            "rhs": [
+              [
+                [
+                  "mp",
+                  "rp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_0",
+            "lhs": [
+              "gp",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_1",
+            "lhs": [
+              "gp",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_2",
+            "lhs": [
+              "gp",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_3",
+            "lhs": [
+              "gp",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_4",
+            "lhs": [
+              "gp",
+              "d"
+            ],
+            "rhs": [
+              [
+                [
+                  "d",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_5",
+            "lhs": [
+              "gp",
+              "dp"
+            ],
+            "rhs": [
+              [
+                [
+                  "dp",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_6",
+            "lhs": [
+              "gp",
+              "sp"
+            ],
+            "rhs": [
+              [
+                [
+                  "sp",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_7",
+            "lhs": [
+              "gp",
+              "m"
+            ],
+            "rhs": [
+              [
+                [
+                  "m",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_8",
+            "lhs": [
+              "gp",
+              "mp"
+            ],
+            "rhs": [
+              [
+                [
+                  "mp",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_10_9",
+            "lhs": [
+              "gp",
+              "rp"
+            ],
+            "rhs": [
+              [
+                [
+                  "rp",
+                  "gp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_0",
+            "lhs": [
+              "gpp",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_1",
+            "lhs": [
+              "gpp",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_2",
+            "lhs": [
+              "gpp",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_3",
+            "lhs": [
+              "gpp",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_4",
+            "lhs": [
+              "gpp",
+              "d"
+            ],
+            "rhs": [
+              [
+                [
+                  "d",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_5",
+            "lhs": [
+              "gpp",
+              "dp"
+            ],
+            "rhs": [
+              [
+                [
+                  "dp",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_6",
+            "lhs": [
+              "gpp",
+              "sp"
+            ],
+            "rhs": [
+              [
+                [
+                  "sp",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_7",
+            "lhs": [
+              "gpp",
+              "m"
+            ],
+            "rhs": [
+              [
+                [
+                  "m",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_8",
+            "lhs": [
+              "gpp",
+              "mp"
+            ],
+            "rhs": [
+              [
+                [
+                  "mp",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_9",
+            "lhs": [
+              "gpp",
+              "rp"
+            ],
+            "rhs": [
+              [
+                [
+                  "rp",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_11_10",
+            "lhs": [
+              "gpp",
+              "gp"
+            ],
+            "rhs": [
+              [
+                [
+                  "gp",
+                  "gpp"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_0",
+            "lhs": [
+              "l",
+              "w"
+            ],
+            "rhs": [
+              [
+                [
+                  "w",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_1",
+            "lhs": [
+              "l",
+              "wp"
+            ],
+            "rhs": [
+              [
+                [
+                  "wp",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_2",
+            "lhs": [
+              "l",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_3",
+            "lhs": [
+              "l",
+              "vp"
+            ],
+            "rhs": [
+              [
+                [
+                  "vp",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_4",
+            "lhs": [
+              "l",
+              "d"
+            ],
+            "rhs": [
+              [
+                [
+                  "d",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_5",
+            "lhs": [
+              "l",
+              "dp"
+            ],
+            "rhs": [
+              [
+                [
+                  "dp",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_6",
+            "lhs": [
+              "l",
+              "sp"
+            ],
+            "rhs": [
+              [
+                [
+                  "sp",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_7",
+            "lhs": [
+              "l",
+              "m"
+            ],
+            "rhs": [
+              [
+                [
+                  "m",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_8",
+            "lhs": [
+              "l",
+              "mp"
+            ],
+            "rhs": [
+              [
+                [
+                  "mp",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_9",
+            "lhs": [
+              "l",
+              "rp"
+            ],
+            "rhs": [
+              [
+                [
+                  "rp",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_10",
+            "lhs": [
+              "l",
+              "gp"
+            ],
+            "rhs": [
+              [
+                [
+                  "gp",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          },
+          {
+            "id": "order_12_11",
+            "lhs": [
+              "l",
+              "gpp"
+            ],
+            "rhs": [
+              [
+                [
+                  "gpp",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          }
+        ]
+      },
+      "audit": {
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "criticalPairs": 286,
+        "resolved": 286,
+        "open": 0,
+        "full_audit_sha256": "614fe3cccd10db4c338f261f0b18c5f60ca90ba792c91bad80524643a71b1355"
+      }
+    },
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "x",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "k",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "order_1_0",
+            "lhs": [
+              "k",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "k"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar polynomial variables"
+          }
+        ]
+      },
+      "audit": {
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "criticalPairs": 0,
+        "resolved": 0,
+        "open": 0,
+        "full_audit_sha256": "81fac66505689db1b82bb20b1a19a2d9cfb3a182b7804fb9ab84d8beaccd9ede"
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "total_charge_configuration_cosine",
+      "presentation_sha256": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "sc",
+              "sc",
+              "ds"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "sc",
+              "ss",
+              "dc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "sc",
+              "ds",
+              "sc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "dc",
+              "sc"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "ss"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "ss"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "sc",
+                "sc",
+                "ds"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "sc",
+                "ss",
+                "dc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "sc",
+                "ds",
+                "sc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "dc",
+                "sc"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "ss",
+              "dc",
+              "sc"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_dc_sc",
+            "position": 1
+          },
+          {
+            "word": [
+              "ss",
+              "sc",
+              "dc"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_ss_sc",
+            "position": 0
+          },
+          {
+            "word": [
+              "sc",
+              "ds",
+              "sc"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_sc",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "total_charge_configuration_sine",
+      "presentation_sha256": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "sc",
+              "ds",
+              "ss"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "sc",
+              "ds"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "ss",
+              "dc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "dc",
+              "ss"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "sc"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "sc"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "sc",
+                "ds",
+                "ss"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "sc",
+                "ds"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "ss",
+                "dc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "dc",
+                "ss"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "ss",
+              "dc",
+              "ss"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_dc_ss",
+            "position": 1
+          },
+          {
+            "word": [
+              "ss",
+              "sc",
+              "ds"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_ss_sc",
+            "position": 0
+          },
+          {
+            "word": [
+              "sc",
+              "ds",
+              "ss"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_ss",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "total_charge_momentum_cosine",
+      "presentation_sha256": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "sc",
+              "ds",
+              "dc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "dc",
+              "dc"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "dc",
+              "sc",
+              "ds"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "dc",
+              "ss",
+              "dc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "ds"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "ds"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "sc",
+                "ds",
+                "dc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "dc",
+                "dc"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "dc",
+                "sc",
+                "ds"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "dc",
+                "ss",
+                "dc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "dc",
+              "ss",
+              "dc"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_dc_ss",
+            "position": 0
+          },
+          {
+            "word": [
+              "dc",
+              "sc",
+              "ds"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_dc_sc",
+            "position": 0
+          },
+          {
+            "word": [
+              "sc",
+              "ds",
+              "dc"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_dc",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "total_charge_momentum_sine",
+      "presentation_sha256": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "sc",
+              "ds",
+              "ds"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "dc",
+              "ds"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ds",
+              "sc",
+              "ds"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ds",
+              "ss",
+              "dc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "dc"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "dc"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "sc",
+                "ds",
+                "ds"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "dc",
+                "ds"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ds",
+                "sc",
+                "ds"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ds",
+                "ss",
+                "dc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "ds",
+              "ss",
+              "dc"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_ss",
+            "position": 0
+          },
+          {
+            "word": [
+              "ds",
+              "sc",
+              "ds"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_ds_sc",
+            "position": 0
+          },
+          {
+            "word": [
+              "ss",
+              "ds",
+              "dc"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_dc",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "total_charge_symmetric_order",
+      "presentation_sha256": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "dc",
+              "ss"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ds",
+              "sc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "sc",
+              "ds"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "dc"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "sc",
+                "ds"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "dc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "dc",
+                "ss"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ds",
+                "sc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "ds",
+              "sc"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_sc",
+            "position": 0
+          },
+          {
+            "word": [
+              "dc",
+              "ss"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_dc_ss",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "total_charge_radial_configuration_invariant",
+      "presentation_sha256": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "sc",
+              "sc",
+              "sc",
+              "ds"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "sc",
+              "sc",
+              "ss",
+              "dc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "sc",
+              "ds",
+              "sc",
+              "sc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "sc",
+              "ds",
+              "ss",
+              "ss"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "ss",
+              "sc",
+              "ds"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "ss",
+              "ss",
+              "dc"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "dc",
+              "sc",
+              "sc"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "ss",
+              "dc",
+              "ss",
+              "ss"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "60d807fd28c9b698b4647aaa3f8705f2adc30517002cf02988ac4d81f306f92b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "sc",
+                "sc",
+                "sc",
+                "ds"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "sc",
+                "sc",
+                "ss",
+                "dc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "sc",
+                "ds",
+                "sc",
+                "sc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "sc",
+                "ds",
+                "ss",
+                "ss"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "ss",
+                "sc",
+                "ds"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "ss",
+                "ss",
+                "dc"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "dc",
+                "sc",
+                "sc"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "ss",
+                "dc",
+                "ss",
+                "ss"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "ss",
+              "dc",
+              "ss",
+              "ss"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_dc_ss",
+            "position": 1
+          },
+          {
+            "word": [
+              "ss",
+              "dc",
+              "sc",
+              "sc"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_dc_sc",
+            "position": 1
+          },
+          {
+            "word": [
+              "ss",
+              "ss",
+              "dc",
+              "ss"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_dc_ss",
+            "position": 2
+          },
+          {
+            "word": [
+              "ss",
+              "ss",
+              "sc",
+              "ds"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_ss_sc",
+            "position": 1
+          },
+          {
+            "word": [
+              "ss",
+              "sc",
+              "dc",
+              "sc"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_ss_sc",
+            "position": 0
+          },
+          {
+            "word": [
+              "ss",
+              "sc",
+              "ss",
+              "ds"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_ss_sc",
+            "position": 0
+          },
+          {
+            "word": [
+              "sc",
+              "ds",
+              "ss",
+              "ss"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_ss",
+            "position": 1
+          },
+          {
+            "word": [
+              "sc",
+              "ds",
+              "sc",
+              "sc"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_sc",
+            "position": 1
+          },
+          {
+            "word": [
+              "sc",
+              "ss",
+              "ds",
+              "ss"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_ss",
+            "position": 2
+          },
+          {
+            "word": [
+              "sc",
+              "ss",
+              "dc",
+              "sc"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_dc_sc",
+            "position": 2
+          },
+          {
+            "word": [
+              "sc",
+              "ss",
+              "sc",
+              "dc"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "weyl_ss_sc",
+            "position": 1
+          },
+          {
+            "word": [
+              "sc",
+              "sc",
+              "ds",
+              "sc"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "weyl_ds_sc",
+            "position": 2
+          },
+          {
+            "word": [
+              "ss",
+              "sc"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "weyl_ss_sc",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "source_current_smearing_bracket_density",
+      "presentation_sha256": "b88cf1064abad8b5eb085306ee8b17bcc91fe42525051a091527cafbffc9ca8d",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "w",
+              "dp",
+              "vp"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "wp",
+              "v",
+              "dp"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "wp",
+              "vp",
+              "d"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "wp",
+              "d",
+              "vp"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "w",
+              "dp",
+              "v",
+              "sp"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "w",
+              "sp",
+              "v",
+              "dp"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "w",
+              "sp",
+              "vp",
+              "d"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "wp",
+              "d",
+              "v",
+              "sp"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "dp",
+              "w",
+              "vp"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "dp",
+              "v",
+              "wp"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "d",
+              "sp",
+              "w",
+              "vp"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "d",
+              "sp",
+              "v",
+              "wp"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "b88cf1064abad8b5eb085306ee8b17bcc91fe42525051a091527cafbffc9ca8d",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "w",
+                "dp",
+                "vp"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "wp",
+                "v",
+                "dp"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "wp",
+                "vp",
+                "d"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "wp",
+                "d",
+                "vp"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "dp",
+                "w",
+                "vp"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "dp",
+                "v",
+                "wp"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "w",
+                "dp",
+                "v",
+                "sp"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "w",
+                "sp",
+                "v",
+                "dp"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "w",
+                "sp",
+                "vp",
+                "d"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "wp",
+                "d",
+                "v",
+                "sp"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "d",
+                "sp",
+                "w",
+                "vp"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "d",
+                "sp",
+                "v",
+                "wp"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "d",
+              "sp",
+              "v",
+              "wp"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_2_1",
+            "position": 2
+          },
+          {
+            "word": [
+              "d",
+              "sp",
+              "wp",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_6_1",
+            "position": 1
+          },
+          {
+            "word": [
+              "d",
+              "sp",
+              "w",
+              "vp"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_6_0",
+            "position": 1
+          },
+          {
+            "word": [
+              "d",
+              "wp",
+              "sp",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_4_1",
+            "position": 0
+          },
+          {
+            "word": [
+              "d",
+              "w",
+              "sp",
+              "vp"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_4_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "wp",
+              "d",
+              "sp",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_6_2",
+            "position": 2
+          },
+          {
+            "word": [
+              "w",
+              "sp",
+              "vp",
+              "d"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_6_3",
+            "position": 1
+          },
+          {
+            "word": [
+              "w",
+              "sp",
+              "v",
+              "dp"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_6_2",
+            "position": 1
+          },
+          {
+            "word": [
+              "w",
+              "dp",
+              "v",
+              "sp"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_5_2",
+            "position": 1
+          },
+          {
+            "word": [
+              "w",
+              "d",
+              "sp",
+              "vp"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_6_3",
+            "position": 2
+          },
+          {
+            "word": [
+              "w",
+              "d",
+              "vp",
+              "sp"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_4_3",
+            "position": 1
+          },
+          {
+            "word": [
+              "w",
+              "vp",
+              "sp",
+              "d"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_6_4",
+            "position": 2
+          },
+          {
+            "word": [
+              "w",
+              "v",
+              "sp",
+              "dp"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_6_5",
+            "position": 2
+          },
+          {
+            "word": [
+              "dp",
+              "v",
+              "wp"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_2_1",
+            "position": 1
+          },
+          {
+            "word": [
+              "dp",
+              "wp",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_5_1",
+            "position": 0
+          },
+          {
+            "word": [
+              "dp",
+              "w",
+              "vp"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_5_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "wp",
+              "dp",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_5_2",
+            "position": 1
+          },
+          {
+            "word": [
+              "wp",
+              "d",
+              "vp"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_4_3",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "reference_current_weight_two_and_gsecond_cancellation",
+      "presentation_sha256": "b88cf1064abad8b5eb085306ee8b17bcc91fe42525051a091527cafbffc9ca8d",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "mp",
+              "gp",
+              "gp"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "m",
+              "rp",
+              "gp",
+              "gp"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "mp",
+              "gp",
+              "gp"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "m",
+              "rp",
+              "gp",
+              "gp"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "b88cf1064abad8b5eb085306ee8b17bcc91fe42525051a091527cafbffc9ca8d",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "equal_pair_Gaussian_score_cancellation",
+      "presentation_sha256": "b88cf1064abad8b5eb085306ee8b17bcc91fe42525051a091527cafbffc9ca8d",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "d",
+              "m",
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "m",
+              "d",
+              "l"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "b88cf1064abad8b5eb085306ee8b17bcc91fe42525051a091527cafbffc9ca8d",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "d",
+                "m",
+                "l"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "m",
+                "d",
+                "l"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "m",
+              "d",
+              "l"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_7_4",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "all_n_local_current_lower_bound_polynomial",
+      "presentation_sha256": "73e94942d13fbd33c44a238a2f2a1363a0943fb0329c49b6f289cfd20ff0af2d",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "193",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x"
+            ],
+            [
+              "1041",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x"
+            ],
+            [
+              "2084",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "2292",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "1570",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "702",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "204",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "36",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "193",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x"
+            ],
+            [
+              "1041",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x"
+            ],
+            [
+              "2084",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "2292",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "1570",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "702",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "204",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "36",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "73e94942d13fbd33c44a238a2f2a1363a0943fb0329c49b6f289cfd20ff0af2d",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "kind": "all_n_and_all_k_polynomials",
+      "positive_coefficients": [
+        "193",
+        "1041",
+        "2084",
+        "2292",
+        "1570",
+        "702",
+        "204",
+        "36",
+        "3"
+      ],
+      "general_numerator": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "k"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "k"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "k",
+              "k"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "k"
+            ],
+            [
+              "18",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "k",
+              "k"
+            ],
+            [
+              "36",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "24",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "k"
+            ],
+            [
+              "20",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "k",
+              "k"
+            ],
+            [
+              "60",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "80",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "60",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "24",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "k"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "k",
+              "k"
+            ],
+            [
+              "28",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "56",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "70",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "56",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "28",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "normalization": "S/(2 pi), covariance square root (1+n^2)^(-2)"
+    },
+    {
+      "kind": "coherent_phase_pair",
+      "mode": 1,
+      "h": "1",
+      "mean_over_2pi": "-2/7",
+      "variance_over_4pi_squared": "12625/7056",
+      "same_configuration_law": true
+    },
+    {
+      "kind": "coherent_phase_pair",
+      "mode": 1,
+      "h": "1/5",
+      "mean_over_2pi": "-2/7",
+      "variance_over_4pi_squared": "2525/7056",
+      "same_configuration_law": true
+    },
+    {
+      "kind": "coherent_phase_pair",
+      "mode": 2,
+      "h": "1",
+      "mean_over_2pi": "-4/7",
+      "variance_over_4pi_squared": "76562824/275625",
+      "same_configuration_law": true
+    },
+    {
+      "kind": "coherent_phase_pair",
+      "mode": 2,
+      "h": "1/5",
+      "mean_over_2pi": "-4/7",
+      "variance_over_4pi_squared": "76562824/1378125",
+      "same_configuration_law": true
+    },
+    {
+      "kind": "coherent_phase_pair",
+      "mode": 5,
+      "h": "1",
+      "mean_over_2pi": "-10/7",
+      "variance_over_4pi_squared": "255813154107625/201526416",
+      "same_configuration_law": true
+    },
+    {
+      "kind": "coherent_phase_pair",
+      "mode": 5,
+      "h": "1/5",
+      "mean_over_2pi": "-10/7",
+      "variance_over_4pi_squared": "51162630821525/201526416",
+      "same_configuration_law": true
+    },
+    {
+      "kind": "joint_charge_vacuum",
+      "modes": 1,
+      "variance_over_h_squared_4pi_squared": "2",
+      "last_mode_density_sup_times_2pi_h": "1/2"
+    },
+    {
+      "kind": "joint_charge_vacuum",
+      "modes": 2,
+      "variance_over_h_squared_4pi_squared": "10",
+      "last_mode_density_sup_times_2pi_h": "1/4"
+    },
+    {
+      "kind": "joint_charge_vacuum",
+      "modes": 4,
+      "variance_over_h_squared_4pi_squared": "60",
+      "last_mode_density_sup_times_2pi_h": "1/8"
+    },
+    {
+      "kind": "joint_charge_vacuum",
+      "modes": 8,
+      "variance_over_h_squared_4pi_squared": "408",
+      "last_mode_density_sup_times_2pi_h": "1/16"
+    },
+    {
+      "kind": "joint_charge_vacuum",
+      "modes": 16,
+      "variance_over_h_squared_4pi_squared": "2992",
+      "last_mode_density_sup_times_2pi_h": "1/32"
+    },
+    {
+      "kind": "joint_charge_vacuum",
+      "modes": 32,
+      "variance_over_h_squared_4pi_squared": "22880",
+      "last_mode_density_sup_times_2pi_h": "1/64"
+    },
+    {
+      "kind": "local_current_vacuum",
+      "cutoff": 1,
+      "HS_squared_over_4pi_squared": "1/64",
+      "first_chaos_norm_over_h_4pi_squared": "2",
+      "second_chaos_norm_over_h_squared_4pi_squared": "1/128"
+    },
+    {
+      "kind": "local_current_vacuum",
+      "cutoff": 2,
+      "HS_squared_over_4pi_squared": "176137/20000",
+      "first_chaos_norm_over_h_4pi_squared": "2",
+      "second_chaos_norm_over_h_squared_4pi_squared": "176137/40000"
+    },
+    {
+      "kind": "local_current_vacuum",
+      "cutoff": 4,
+      "HS_squared_over_4pi_squared": "29414944837/835210000",
+      "first_chaos_norm_over_h_4pi_squared": "2",
+      "second_chaos_norm_over_h_squared_4pi_squared": "29414944837/1670420000"
+    },
+    {
+      "kind": "local_current_vacuum",
+      "cutoff": 8,
+      "HS_squared_over_4pi_squared": "1206387012592648931992453/13970952390507003125000",
+      "first_chaos_norm_over_h_4pi_squared": "2",
+      "second_chaos_norm_over_h_squared_4pi_squared": "1206387012592648931992453/27941904781014006250000"
+    },
+    {
+      "kind": "local_current_vacuum",
+      "cutoff": 16,
+      "HS_squared_over_4pi_squared": "3999568759712553654268470897197746574894602318636646781859591100883950008597669/21549611378153240094000530802593980964025351760333980302092953667445251562500",
+      "first_chaos_norm_over_h_4pi_squared": "2",
+      "second_chaos_norm_over_h_squared_4pi_squared": "3999568759712553654268470897197746574894602318636646781859591100883950008597669/43099222756306480188001061605187961928050703520667960604185907334890503125000"
+    },
+    {
+      "kind": "reused_IGQ_variation",
+      "nonrigid_factor": "4587/1024",
+      "rigid_factor": "1",
+      "scope": "exact coefficient only; singularity is the written measurable path-statistic proof"
+    }
+  ],
+  "results": {
+    "physical_space": "unchanged selected RGR/MPQ Gaussian physical representation",
+    "source_reference_current": "rho=-d_prime+d*s_prime",
+    "total_charge_self_adjoint_with_spectral_domain": true,
+    "spectrum": "2*pi*hbar*Z, both signs; not identified as energy",
+    "total_charge_cutoff_strong_resolvent": true,
+    "density_pulse_feedback": "U^* R U=R-kappa*Pi*J(w_prime)",
+    "ideal_charge_spectral_pointer_and_positive_clock_norm": true,
+    "coherent_classical_recovery": true,
+    "raw_joint_detector_total_charge_vacuum_laws_tight": false,
+    "local_Weyl_current_vacuum_domain_limit": false,
+    "scalar_or_linear_counterterms_remove_second_chaos": false,
+    "nonrigid_canonical_material_flow_unitary_in_selected_measure_class": false,
+    "local_observable_nonexistence_in_every_representation": false,
+    "all_alternative_operator_domains_or_renormalizations_excluded": false,
+    "source_inverse_embedding_gauge_representation_changed": false,
+    "new_material_relabelling_constraint_imposed": false,
+    "physical_energy_identified": false,
+    "full_local_geometry_or_curvature_constructed": false,
+    "residual_gauge_uniqueness_assumed": false,
+    "physical_three_plus_one_gravity_closed": false,
+    "continuum_proofs_machine_certified": false
+  },
+  "summary": {
+    "exact_checks": 157,
+    "symbolic_certificates": 10,
+    "negative_controls": 25
+  }
+}
