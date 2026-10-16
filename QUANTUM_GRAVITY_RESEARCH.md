@@ -10,6 +10,34 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+User-directed source-transport continuation, 16 October:
+[TET-1](papers/native-tvsp-exponential-transport/THEOREM.md) connects the
+actual TLM source layers to exponential observer transport. H jets through
+N determine U jets through N. U^T H U=H_0 and the inverse-transported
+observer preserve their pairing; an H-orthogonal cut becomes the exact
+EGR unitary cut contract in an orthonormal frame. This is a carrier and
+transport connection, not an identification with EGR's Regge source coupling.
+
+The existing source gives closed straight-path transport. On gamma=(t,t²),
+discarding ordering produces the exact cubic defect t³ F_sv(0)/6.
+Small-loop comparison against a retained base observer detects the same
+curvature, while a fully co-moving observer cancels that reading. In the
+oriented two-dimensional frame the finite return is the exponential of
+integrated curvature. Actual response tensors need not be parallel.
+
+Stable holonomic TVSP sources with equal finite response/context jets can
+have different finite endpoint transports. Written residual bounds give
+controlled approximation only when interval bounds are supplied. This
+closes the stated source-layer/observer-transport bridge, leaving physical
+path selection and an intertwiner to the LMD/MPQ continuum quantum sector
+as explicit further obligations. The physical geometry endpoint below is
+preserved.
+
+TET validation: 302 exact native checks, 7 symbolic certificates/replays,
+43 negative controls and all 44 integrated stages pass locally. The inherited
+cut-action replay also passes. The six written theorems carry the general
+analytic statements; exact fixtures and source pins make the checks replayable.
+
 User-directed operator tool development, 16 October: [TLM-1](papers/native-tvsp-lambda-matrices/THEOREM.md)
 replaces the paused generic layered-matrix proposal with actual TVSP-generated
 response layers. One finite matrix retains the response jets; its spectrum

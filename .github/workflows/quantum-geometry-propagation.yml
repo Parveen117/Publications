@@ -2,14 +2,14 @@ name: Quantum geometry propagation proof replay
 
 on:
   push:
-    branches: [main, 'codex/quantum-geometry-propagation-*', 'codex/tvsp-lambda-matrices-*']
+    branches: [main, 'codex/quantum-geometry-propagation-*', 'codex/tvsp-lambda-matrices-*', 'codex/tvsp-exponential-transport-*']
     paths:
       - 'papers/native-*/**'
       - 'papers/Native_Phase_Word_Reconstruction_Source.zip'
       - 'scripts/replay_quantum_geometry.py'
       - '.github/workflows/quantum-geometry-propagation.yml'
   pull_request:
-    branches: [main, 'codex/quantum-geometry-propagation-*']
+    branches: [main, 'codex/quantum-geometry-propagation-*', 'codex/tvsp-lambda-matrices-*']
     paths:
       - 'papers/native-*/**'
       - 'papers/Native_Phase_Word_Reconstruction_Source.zip'
