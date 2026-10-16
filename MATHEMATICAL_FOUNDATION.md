@@ -22,6 +22,19 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[POS-1: prime elementary observer sectors](papers/native-prime-observer-sectors/THEOREM.md)
+classifies all additive congruence observers stable under NM1's chosen
+integral seam/shear action: Lambda/nLambda is nonzero simple exactly at
+prime n. Matrix units are supplied by the existing seam projectors.
+CRT, prime-power carries and invariant gcd content give the exact nested
+observer structure. Coherent quotient records and uniform coarse-sector
+embeddings are equivariant. The faithful TET frame adapter preserves this
+hierarchy pathwise, while actual nonzero source curvature obstructs a
+parallel fixed lattice. Same-observer arbitrary-energy families, including
+resolution-compatible families without a uniform gap, leave mass selection
+open. Standard algebra is credited; no prime-selected physical mass or
+continuum-state identification follows from additive module simplicity.
+
 [WCG-1: Wick-calibrated material observables](papers/native-wick-calibrated-geometry/THEOREM.md)
 adapts the existing countable coherent detector to LMD and proves the
 conditional measured-mass identity E_probe N_(s+probe)=M_s. The joint

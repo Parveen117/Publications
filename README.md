@@ -1,5 +1,14 @@
 # Publications
 
+Latest arithmetic-observer development: [POS-1 — prime elementary observers](papers/native-prime-observer-sectors/README.md).
+The existing integral seam/shear adapter selects prime moduli exactly as
+elementary finite additive observers. Prime-power layers retain carries,
+and prime-depth records recover invariant coordinate content. Coherent
+records and coarse embeddings preserve the modular transport. The actual
+TVSP transport carries the hierarchy on moving lattices; nonzero curvature
+obstructs a fixed lattice. Arbitrary compatible energy scales show why
+this arithmetic result alone does not determine physical mass.
+
 Latest material-observable development: [WCG-1 — Wick-calibrated joint geometry readings](papers/native-wick-calibrated-geometry/README.md).
 A joint detector in the same LMD sector has exactly the original Wick
 density and current first moments. Its measured mass gives smooth material
