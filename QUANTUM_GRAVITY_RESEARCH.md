@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 16 October 2026. Alternative local-flow representation and renormalized density: **LMD-1**. Physical reference momentum and local-flow obstruction: **MRM-1**. Material joint-detector source lift and calibration: **MDD-1**. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
+Updated 17 October 2026. Alternative local-flow representation and renormalized density: **LMD-1**. Physical reference momentum and local-flow obstruction: **MRM-1**. Material joint-detector source lift and calibration: **MDD-1**. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
@@ -9,6 +9,32 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+Prime-source innovation window and new actual direction, 17 October:
+[PIW-1](papers/native-prime-innovation-window/THEOREM.md) continues the
+specific RH gate left by POC. For delta=q(x)-q_N(x), it proves
+x alpha+beta=delta(1-kappa delta), with kappa>0. The exact value
+window is 0<delta<1/kappa; the actual derivative must independently
+occupy a strict derived interval. The value and slope positions are
+dimensionless and invariant under old-source congruence with the
+observation columns co-transported. A determinant normalization removes
+the old double interpolation zeros and exposes a Riccati-type source
+residual inequality for the remaining all-order task.
+
+A new complete native xi jet at original s=29 includes Gamma, pole,
+Euler-prime and all omitted-tail contributions. It extends the selected
+eight-prime bank to nine strictly positive directions. Its value and
+slope positions lie respectively in (0.140,0.141) and (0.142,0.143).
+At independently computed, unfitted s=31 the response error is positive
+and less than 3e-17. An independent s=23 computation agrees with the
+old source value and derivative. The whole old V24 plus the new direction
+is not certified by this selected-bank calculation. The global shift,
+all-order RH signs and physical mass/spacetime identification remain open.
+
+PIW validation: 51 exact checks, 4 symbolic certificates, 16 negative
+controls and 20 source pins. The integrated replay now has 51 stages.
+The new source evaluator uses only native rational outward arithmetic;
+Python 3.12 remains I/O orchestration. Predecessor packets are unchanged.
 
 User-directed three-prime observation and RH source continuation,
 16 October: [POC-1](papers/native-prime-observation-closure/THEOREM.md)
@@ -40,8 +66,9 @@ their precise completeness boundaries. The next RH obligation is the
 full-source sign control of subsequent and ultimately all prime steps.
 
 POC validation: 52 exact checks, 4 symbolic certificates, 26 negative
-controls, 28 source pins and 4 upstream blob identities. The integrated
-replay now contains 50 stages. Predecessor proof packets are unchanged.
+controls, 28 source pins and 4 upstream blob identities. At that stage
+the integrated replay contained 50 stages. Predecessor proof packets
+were unchanged.
 
 User-directed prime-observer bridge, 16 October:
 [POS-1](papers/native-prime-observer-sectors/THEOREM.md) derives the

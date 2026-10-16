@@ -1,5 +1,14 @@
 # Publications
 
+Latest prime-source continuation: [PIW-1 — sharp innovation windows and a new complete prime reading](papers/native-prime-innovation-window/README.md).
+The two acceptance signs factor as x alpha+beta=delta(1-kappa delta).
+This gives a sharp value interval and an independent slope interval,
+with dimensionless coordinates invariant under retained-source basis
+changes. A determinant normalization exposes the remaining residual
+slope condition. A fresh complete s=29 source jet extends the prime
+bank to nine positive directions; unfitted s=31 error is below 3e-17.
+All omitted source tails are retained. All-order RH signs remain open.
+
 Latest prime-observation development: [POC-1 — equal-reading centres and prime-sampled source recovery](papers/native-prime-observation-closure/README.md).
 The retained source metric gives an exact three-point centre, while an
 explicit prime-content example rules out automatic prime-centre closure.
