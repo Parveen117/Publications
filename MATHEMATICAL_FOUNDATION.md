@@ -22,6 +22,15 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[DCD-1: density and coherent-cut dynamics](papers/native-density-cut-dynamics/THEOREM.md)
+derives the exact source generator [Pi+Q/2, dot(theta).X], including its
+uniquely required two-cut weights. Smooth bounded-mass states preserve
+the nonzero QRT curvature and the original current domains. A convergent
+four-pulse construction supplies a declared coherent-control realization;
+a cubic-moment obstruction excludes the old configuration-normalizing
+flow class from the same small-loop state/response task. Density-only
+material-metric reconstruction is excluded by conjugate-phase blindness.
+
 [QRT-1: quantum density-response transport](papers/native-quantum-response-transport/THEOREM.md)
 realizes the TET connection inside LMD's existing positive Hilbert space.
 The covariance metric is the Gram matrix of actual response vectors, and

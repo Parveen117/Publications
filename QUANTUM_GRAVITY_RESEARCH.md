@@ -10,6 +10,33 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Source-control continuation, 16 October:
+[DCD-1](papers/native-density-cut-dynamics/THEOREM.md) derives
+B=[Q',Q]=[Pi+Q/2, dot(theta).X] from the actual density response source.
+The weights 1 and 1/2 are forced within the two-cut ansatz; a state-only
+test misses the second weight. The same unitary transports the filtered
+base state and the TVSP response frame.
+
+Smooth cell preparations with a bounded total-density support keep
+1/8<kappa<3/8 and establish preservation of every fixed original material-
+current and Cameron--Martin momentum domain. A four-pulse product of
+original density phases and declared coherent-cut phases converges to
+the transport in operator norm, with explicit finite-cycle and moving-
+path error bounds. Merely measuring a cut does not supply its phase gate.
+
+The old configuration-normalizing density/current flows cannot realize
+the same sufficiently small nontrivial loop even if their extension
+outside the base and response subspace is allowed to differ. The proof
+uses the actual nonzero cubic response moment. A separate phase-blindness
+theorem proves that density-response geometry cannot determine the old
+material metric, which also needs conjugate data. This identifies the
+required next extension: a specified coherent source interaction or a
+conjugate-sensitive response family, with its actual geometric domains.
+
+DCD validation: 143 exact checks, 13 symbolic certificates and 23 negative
+controls. The integrated quantum-geometry replay now contains 46 stages.
+The original LMD pointwise inverse and 3+1 endpoints remain open.
+
 Quantum-state realization, 16 October:
 [QRT-1](papers/native-quantum-response-transport/THEOREM.md) supplies the
 actual LMD Hilbert-space intertwiner requested after TET. Two existing

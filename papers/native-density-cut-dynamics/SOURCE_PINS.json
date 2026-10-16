@@ -1,0 +1,30 @@
+{
+  "protocol": "DCD1_SOURCE_PINS_V1",
+  "repository_parent": "59c68caac773a6c086c16d3c5c565cd7275cb266",
+  "files": {
+    "README.md": "4f0fe4f293582b39906bc75d9968ea38f58c2f004805c86288d0d1c0ac813352",
+    "THEOREM.md": "6f8714d3ceef321a2d75c34bea244c2eba4db0291c8e395d213de297ad052e89",
+    "SOURCE_MAP.md": "370f425e51374c827628f8c20df3f1fd476746abd102ca90443f81fb3edfd9cb",
+    "USAGE.md": "e663c59ce1e29697bdf5516f0b88690544946a67e25880a0c9470d584c79f459",
+    "density_cut_adapter.cjs": "aca84ac09c03c9cec673507dd6c9a6a47bf31b46cc4671b8f43822e38cb5e568",
+    "verify.cjs": "dc99d03eafb0a7dc494c9103ac44e8a43de4cad181796726a78dc6a83957502b",
+    "run.py": "c058f730efca184bb6232cf17b68c1e0dbddcc50d38b919360e2686796a5ebbb",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-quantum-response-transport/THEOREM.md": "47505e224fb13b2f5668cd8fde21bf4f258a39b55b624bcd9cea82df6b52e326",
+    "../native-quantum-response-transport/response_adapter.cjs": "3e952c1300d776ba0f440d1b459473869bab34e961f8dd8518221e31440afbef",
+    "../native-quantum-response-transport/SOURCE_PINS.json": "973737f8d608d416cae120ff2addcea1ef85f62eefd1e1caab9b4eaecec798d8",
+    "../native-logarithmic-material-density/THEOREM.md": "f22d8bdbe771add46809f155085f62db015a9d3b349eea391a412e3d82c546bf",
+    "../native-logarithmic-material-density/SOURCE_MAP.md": "9c841656181d114bd417fab0666e3e5774ef547e80b0ad2dce6b65eb5cd54bb4",
+    "../native-logarithmic-material-density/SOURCE_PINS.json": "4e2e269216fdb3577341ec31c34b59a2ea9888115451ce8d600b87bd376d841a",
+    "../native-tvsp-exponential-transport/THEOREM.md": "a5de5a5819d0223e9e988eda5fd2ea6e587f27a1a2edd433c417d74cda472d44",
+    "../native-tvsp-exponential-transport/transport_adapter.cjs": "ea7e1cc3e627d20324fe0fefc63a17a21b18f2d17113054224d129dd0e9d25fd",
+    "../native-tvsp-exponential-transport/SOURCE_PINS.json": "e9232b980a9cbd69af2ea0007deba65ceb695c378722f08b71213fae3e7e33c4",
+    "../native-tvsp-lambda-matrices/tvsp_adapter.cjs": "cf752edd50741e738328c97f5f4bebefde58f0cb213def34dd6f9d4ffc525bf3",
+    "../native-tvsp-lambda-matrices/SOURCE_PINS.json": "b987300c34d89d13e1d7ccb56e25ea56c67edb1b3621498bb48227071c76fa6d",
+    "../native-material-reference-field/THEOREM.md": "2efecdf36d8931e4a6748ba83c4be19495eb717a58d21110935eeb0cdeeedadd",
+    "../native-material-profile-quantization/THEOREM.md": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0",
+    "../native-resolved-material-geometry/THEOREM.md": "290f90dd010493aee033349c125354bb99a4e1aa0edd3ee034fed4db13326f20",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}
