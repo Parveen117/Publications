@@ -28,50 +28,54 @@ verified source results rather than a new collection of unrelated examples.
 | CHD record interface for the physical pointer | Closed on the specified coherent image | RPM-T5 | Isometry, corner operation recovery and binned instrument; classical records do not retain all coherences |
 | Regular unreduced classical apparatus lift | Closed for the explicit global-pair extension on the current patch | RAL-T1 through RAL-T3 | Exact local constraint-ideal bracket, first-class action, geometry feedback and exact RPM P-sector recovery after reduction; quantization choices retained |
 | Fixed-coordinate-window localization of that coupling | Obstructed for every nonconstant prescribed window | RAL-T4 | Nonzero w' residual on the common constraint surface; dynamical material references and modified constraints are outside this no-go scope |
-| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA smooth value algebra; RPM apparatus; RAL regular classical lift | Spatially local apparatus source, unreduced extended quantum closure/dynamics, inter-branch coupling, full quantum fields, general ordering, alternative representations, matter and potentials remain open |
+| Dynamical material-window classical extension | Closed for the selected regular canonical reference model | MRF-T1 and MRF-T2 | Local h_ref=(phi'/p)rho Z', d_ref=rho Z'; all-smearing closure and exact residual cancellation; reference momentum must respond |
+| Complete regular material-coordinate physical quotient | Constructed as a canonical profile field theory | MRF-T3 | Gauge-invariant r(z),m(z), integral m delta r; global degree-one rod and nonzero-current patch; no quantum measure inferred |
+| Material-window feedback and classical RPM comparison | Closed for the declared pulse model | MRF-T4 and MRF-T5 | Exact pointer recovery from homogeneous initial data; nonconstant windows excite profiles; global-P probe remains nonlocal; P-independent alternative has supported response |
+| Quantum representation of the extended material/profile field theory | Open | MRF physical classical reduction | Positive norm, continuum/regulator contract, observable domains and extended quantum constraints required; vacuum anomaly cancellation does not transfer automatically |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA smooth value algebra; RPM apparatus; RAL lift; MRF classical reference field | Quantum profile representation, fully local apparatus, unreduced extended quantum closure/dynamics, inter-branch coupling, full quantum fields, general ordering, alternative representations, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-RAL-1 derives a regular unreduced canonical apparatus action whose new
-C_T=E+g Pi G_a closes with every old local chiral constraint. The coupling
-G_a=integral p a(c,P) has an explicit off-shell bracket in the local
-constraint ideal. Its functional derivatives retain geometry backreaction,
-including the global P-dependence that is needed for the correct Q flow.
+MRF-1 introduces a dynamical material coordinate Z and unrestricted momentum
+rho with local reference densities (phi'/p)rho Z' and rho Z'. The complete
+classical constraint algebra closes for arbitrary smooth smearings. In the
+coupling integral p a(c,P)w(Z), the canonical reference variation exactly
+cancels the fixed-window residual. Reference momentum feedback is necessary.
 
-Reducing the old local gauge constraints yields exactly RPM's P-sector
-clock/pointer model, with no approximation. Under the inherited reduced
-quantization it therefore recovers the established self-adjoint clock
-constraint, positive norm, instrument and phase readout. A separate
-quantization of all unreduced extended generators is still open.
+A complete regular gauge reduction gives physical profiles r(z),m(z),
+canonical one-form integral m delta r, and reconstructed rho=m'-m r'.
+The reference adds actual field degrees of freedom. It is not a pure gauge
+copy of the previous vacuum theory.
 
-A nonconstant fixed spatial window produces a residual proportional to
-w' even on the common constraint surface. The chosen positive measuring
-function is weak Dirac under all local smearings iff the window is constant.
-This proves failure of that fixed-window localization attempt, not failure
-of dynamical material references or all localized apparatus constructions.
+The reduced apparatus equations retain all feedback. Normalized material
+windows on homogeneous initial data reproduce the exact classical RPM
+pointer shift, but nonconstant windows excite physical profiles already
+at first order. The original measuring function has global P feedback;
+a P-independent alternative has spatially supported reduced response.
+The pointer and pulse clock still are global apparatus pairs.
 
-The new consistent action uses global apparatus pairs and a global momentum
-inside the coupling; its current chart covers only the regular P branch.
-All predecessors remain frozen. General written proofs and finite native
-witnesses have separate scope.
+General constraint, quotient and continuation results have written proofs;
+native certificates test exact finite identities. Every predecessor remains
+frozen. No continuum quantum norm, new anomaly cancellation, positive-energy
+matter identification or calibrated physical apparatus is claimed.
 
 ## Next decisive obligation
 
-Introduce a dynamical spatial reference/apparatus field with its canonical
-momenta and constraints. Derive cancellation of RAL's window residual and
-full first-class closure/backreaction, then establish a controlled reduction
-to RAL/RPM or a precise obstruction. Recheck quantum anomaly, domains and
-physical norms for the unreduced extended field theory. A prescribed window
-or formal weak observable alone does not supply those dynamics.
+Construct a positive quantum representation of MRF's physical profile
+algebra with explicit observable domains and a controlled continuum or
+regularization contract. The new reference has physical field modes, so
+old homogeneous states and vacuum anomaly cancellation cannot silently
+serve as the full quantum construction. Compare quantization after reduction
+with the extended local constraints, or identify a precise obstruction.
 
-The exact regular classical lift does not cover critical-branch source
-coupling or select the clock, pulse and quantum matching uniquely. Direct
-kinematic fields, potentials, quantized matter, global cut gluing and
-physical 3+1 recovery remain open. Reuse the completed source, physical
-sector, observable and apparatus results instead of repeating their proofs.
+Retain the distinction between classical pointer-readout recovery and
+recovery of full dynamics or quantum states. Global-P feedback, critical
+patches, a fully local apparatus, physical 3+1 recovery and calibration
+remain explicit additional obligations. Reuse the completed regular source,
+reference and physical-reduction results.
 
 ## Evidence convention
 
