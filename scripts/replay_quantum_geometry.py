@@ -47,6 +47,7 @@ stages = [
     'native-residual-gauge-rigging',
     'native-resolved-material-geometry',
     'native-coarse-material-geometry',
+    'native-material-detector-dilation',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)

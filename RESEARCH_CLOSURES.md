@@ -52,12 +52,40 @@ verified source results rather than a new collection of unrelated examples.
 | Accepted circumference mean operator and physical domain | Positive self-adjoint operator constructed from a dense closed form | CMG-T4 | Vacuum and finite Hermite states have all finite accepted-length moments; no guarantee for every normal state; rejection probability is retained |
 | Removal of coarse geometry calibrations | Obstructed for the raw measurement prescription | CMG-T5 | Removing threshold restores infinite vacuum mean length even after smoothing; removing response scale at fixed hbar destroys accepted point tightness |
 | Classical recovery of actual accepted-length moments | Proved under a sufficient resolution/noise budget | CMG-T6 | hbar ell^(-15) -> 0 and fixed threshold below classical minimum density; acceptance tends to one; no fixed-hbar calibration-free field limit |
+| Joint geometry readout from the frozen J-only apparatus | Obstructed within the decomposable-interaction class | MDD-T1 | All effects are configuration multipliers; independent probes and arbitrary probe-only processing do not recover conjugate phase; other system controls excluded |
+| Additional joint-detector source lift and quantum dilation | Constructed under a matched Gaussian probe contract | MDD-T2 and MDD-T3 | Finite classical first-class lift and feedback; countable reduced quantum rotation realizes exactly RMG/CMG; no local detector or all-unreduced-ordering claim |
+| Relational joint-apparatus norm and physical instruments | Constructed with controlled finite-bin cutoff limits | MDD-T4 | Positive clock quotient, specified domains and actual probe instrument; terminal quadrature PVM declared; not necessarily the earlier square-root instrument |
+| Joint-readout noise and original J-density calibration | Exact within the selected representation and preparation | MDD-T5 | Added variance product hbar^2/4 per matched mode; calibrated J first-moment form equals the original observable; noisy POVM differs from spectral measurement |
+| Resolution-independent smooth adapted readings | Constructed on the full unconditioned detector record | MDD-T5 | Known inverse filter acts on smooth test functions; inverse high-mode gain unbounded; retaining rejected records required; no sharp nonlinear point geometry inferred |
 | Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD core; RGR selected rigging | Nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
+
+MDD-1 turns the prescribed joint geometry POVM into an explicit additional
+apparatus construction. A finite classical source lift, feedback equations,
+matched Gaussian probe, countable reduced rotation and complementary
+output readout reproduce RMG/CMG exactly. The clock physical norm and
+induced finite-bin instruments, including their cutoff limits, are stated.
+
+It proves that the unchanged J-only interactions cannot produce that
+phase-sensitive readout. The extra coupling is therefore required within
+the specified protocol class. Noise and a Gaussian bias correction now
+calibrate the joint detector against the original J observable. Smooth
+adapted readings have an exact resolution-independent full-record law;
+this uses an inverse filter unbounded on high modes and does not erase
+rejection probabilities or establish sharp metric/curvature fields.
+
+All frozen packets remain unchanged. The native regression packet has
+272 exact checks, 11 symbolic certificates/replays and 18 negative
+controls; analytic proofs and continuum claims are separate. The
+integrated runner passes all 40 stages locally. Fable's ergodicity
+report is under a disjoint correction/audit task, with no merge or new
+uniqueness dependency in this pass.
+
+### Previous CMG endpoint
 
 CMG-1 extends the finite RMG coherent measurements to one normalized
 countable POVM on the same physical Hilbert space. A stated resolvent

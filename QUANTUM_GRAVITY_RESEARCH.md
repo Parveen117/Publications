@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 16 October 2026. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
+Updated 16 October 2026. Material joint-detector source lift and calibration: **MDD-1**. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
@@ -9,6 +9,47 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[MDD-1](papers/native-material-detector-dilation/THEOREM.md) derives an
+explicit additional apparatus for the RMG/CMG measurement. A matched
+Gaussian probe, canonical mixing pulse and complementary commuting
+output readings realize exactly the same POVM. Finite mode couplings
+have a first-class classical lift through the actual MPQ source chart,
+with system feedback retained. Their reduced quantum rotations have a
+countable limit, a positive relational clock norm and convergent
+finite-bin apparatus instruments.
+
+The frozen J-only interaction class cannot access the conjugate phase
+needed for this measurement: all its effects are configuration
+multipliers. The new interaction is therefore an explicit added resource.
+Its added-noise variances have mode product hbar^2/4. Full-record smooth
+adapted readings are independent of response scale after known
+deconvolution; a Gaussian bias correction recovers exactly the original
+J-density first-moment form. These are noisy readings, not simultaneous
+sharp system observables or stable unlimited-resolution inversion.
+
+The new source lift is finite and classical; the quantum construction is
+after reduction. A local material detector, derived probe preparation,
+and all nonlinear unreduced quantum orderings remain open. The CMG
+point-geometry and ungated-length obstructions are unchanged. Next:
+nonlinear source-geometric observables beyond J with a justified smeared
+or distributional continuum definition, physical domains, compatible
+dynamics and controlled classical recovery.
+
+Validation: 272 native exact checks, 11 symbolic proofs/replays and
+18 negative controls; all 40 integrated stages pass locally. Continuum,
+source and domain results have written proofs separately scoped from
+finite certificates.
+
+Fable's ERGODICITY.md now supplies a weighted-divergence ergodicity
+argument on its separate branch. Review identified corrections to the
+ordinary invariant-measure claim, zero sector weights and a derivative
+factor, plus contracts to clarify. The complete follow-up prompt is
+[here](papers/native-material-detector-dilation/FABLE_REVIEW_PROMPT.md).
+The report remains unmerged and is not a dependency of MDD. Fable owns
+ergodicity/rigging audit; Codex owns nonlinear geometry and apparatus.
+
+### Preserved CMG endpoint
 
 [CMG-1](papers/native-coarse-material-geometry/THEOREM.md) constructs a
 countable coherent-state measurement whose finite marginals are exactly
@@ -30,14 +71,9 @@ This is a specified coarse measurement contract. Smoothing alone leaves
 the ungated vacuum mean length infinite; removing the response scale
 at fixed hbar still destroys point tightness. Thus the response scale
 and threshold have not been removed or derived from gravitational laws.
-The next geometry gate is source/calibration compatibility and a justified
-resolution-independent observable or an explicit obstruction to it.
-
-Fable's separate report 943182d reduces invariant-functional classification
-on the stated RGR test space to residual-Diff ergodicity. Its next assigned
-work is Condition (L), plus repair of Theorem S's form-domain and
-sign-weight claims. That branch is not merged or used as a new dependency
-here. The geometry and gauge-completeness tasks remain distinct.
+The then-open source/calibration gate is addressed by MDD under its new
+explicit apparatus contract. Resolution-independent nonlinear metric
+and curvature observables remain beyond that result.
 
 ### Preserved RMG endpoint
 
