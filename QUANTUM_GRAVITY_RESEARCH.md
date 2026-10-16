@@ -1,6 +1,6 @@
 # Quantum gravity: canonical research record
 
-Updated 16 October 2026. New smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
+Updated 16 October 2026. New ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
@@ -9,6 +9,34 @@ The research belongs in this repository: derivations, code, source pins, certifi
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+[RPM-1](papers/native-relational-pointer-measurement/THEOREM.md) supplies an
+explicit ideal measurement extension of the already reduced physical theory.
+It adds an ideal full-line clock, a canonical pointer and a chosen global
+pulse coupling F tensor Pi for GOA's self-adjoint nonlinear observable.
+The new clock constraint is C=W Pi_T W^* on W H^1. Its group-averaged form
+is <Rf,Rh>, with Rf=integral W(T)^*f(T)dT, so its physical completion is the
+inherited gravitational H tensor L^2(pointer). Generalized solution norms
+are independent of the chosen clock slice. This is a derived physical norm
+for the added constraint, not an inference from kinematic positivity.
+
+The domain-controlled relational pointer is X_out=X+kappa F. A Gaussian
+pointer produces the normalized physical instrument K_x=phi_sigma(x-kappa F),
+which preserves the three branch blocks and their selected rigging scales.
+The exact GOA phase pair has pointer mean contrast -3 kappa/50 and observable
+variances 23863/80000 and 24807/80000. Its readout variance is
+sigma^2+kappa^2 Var(F). A conservative Chebyshev bound establishes finite-run
+distinguishability under known preparation and calibration assumptions.
+CHD's coherent isometry and image-corner operation recovery now apply to
+this specified physical instrument; a classical pointer record does not
+retain the full coherent inverse.
+
+The apparatus is an explicit extra model, constructed after gravitational
+reduction. No localized matter coupling, full local apparatus/gravity
+constraint closure, source-selected time law or empirical calibration has
+been derived. The inherited vacuum reduced Hamiltonian remains zero; T is
+not identified with its scalar or geometry clocks. The next gate is a local
+source derivation or a controlled approximation to this apparatus model.
 
 [GOA-1](papers/native-global-observable-algebra/THEOREM.md) classifies the
 complete globally smooth classical Dirac value algebra of the selected
@@ -295,18 +323,19 @@ The earlier classical MG/SM action results are pinned and included as source sna
 
 ## Next proof target
 
-**Derive physical implementation or dynamics for the now-explicit observer
-family, or extend the source beyond the vacuum baseline.** GOA-1 classifies
-the globally smooth classical observable values and constructs a nonlinear
-self-adjoint quantum probe with exact phase contrast. Reuse its three-block
-completed quantum algebra and the COS two-scale rigging distinction.
-A physical operation implementing that probe, a source-selected time law,
-or P/K/origin coupling requires additional derivation. Arbitrary off-diagonal
-Hilbert-space matrices do not establish such a coupling. Nonzero potential,
-quantized matter and direct kinematic relational fields remain separate
-construction targets.
+**Derive a local apparatus/matter source whose controlled reduction gives
+RPM's measurement coupling, or establish the obstruction.** RPM-1 closes
+only the ideal added-clock measurement model: its constraint, positive norm,
+physical instrument, exact statistics and coherent record interface. GOA's
+three-block algebra and COS's separate rigging scales remain the inputs.
+The next derivation must specify a local action and apparatus variables,
+recheck first-class constraints/backreaction, and establish quantum anomaly,
+physical domains and a controlled limit before claiming source implementation.
+A weak classical Dirac representative alone does not justify adding a
+coupling to the unreduced quantum generators. Inter-branch/origin coupling,
+nonzero potential and direct kinematic fields remain separate obligations.
 
-CHD supplies a cut-generated record map instead of assuming pre-cut evolution. To integrate it here, specify cuts and their implementation from this model and prove constraint/observable compatibility on the retained image. Complete coherent transfer alone does not choose the cuts or a gravitational coupling law. No prime-phase extraction is required for this interface.
+RPM-T5 now applies the existing CHD coherent record map to the declared Gaussian pointer instrument, with physical image-corner compatibility. Deriving the pulse and readout from the local source is still open. Complete coherent transfer does not choose a gravitational coupling law. No prime-phase extraction is required for this interface.
 
 SRT supplies a response-record tool for this target. Its immediate integration gate is to derive the relevant axis weights and comparison frame from actual local cut/matter solutions, then test whether the resulting jet record obeys the local differential/constraint intertwiners. It does not replace the quantum representation obligation with a label change or a finite chart example.
 
@@ -319,8 +348,8 @@ LNC resolves LCF's normal-bracket obligation within its explicit classical exten
    Orientation coupling is now constructed under the specified reduced
    ordering; inter-branch coupling still needs a source representative,
    physical domain and compatibility with the rigging/adjoint contract.
-3. Develop physical implementation or dynamics for GOA's nonlinear
-   observable family, using the LPS/CCS local reductions.
+3. Derive a local source implementation or controlled recovery of RPM's
+   ideal pointer coupling, using the LPS/CCS reductions and GOA observable.
    Keep the smooth-field hypotheses and chosen quantum matching visible;
    reduced gauge-slice observables do not yet construct kinematic field operators.
 4. Treat potential, physical matter, ordering/anomalies and global cut gluing
@@ -330,7 +359,7 @@ Physical 3+1 interactions and empirical calibration remain downstream obligation
 
 ## Replay status
 
-The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. HQS-1 adds 147 exact checks, 10 native word proofs/replays and 14 controls for the selected homogeneous quantum sector and physical observer interface. LQA-1 adds 407 exact checks, 9 native word proofs/replays and 25 controls for the two local current representations, central terms, counterterm classification and positive kinematic alternative. LPS-1/2 adds finite descendant-pairing and regular local-reduction witnesses; see its certificate for exact counts. LSC-1 adds the all-level primary/dual classification and conditional measure proof, with finite native witnesses recorded in its certificate. CCS-1 adds 688 finite exact checks, 5 native word proofs/replays and 20 controls for the complementary clock, universal dressing, two-axis completion and origin obstruction. COS-1 adds 275 finite exact checks, 3 native word proofs/replays and 27 controls for the critical invariant, averaging scales, domain/adjoint obstructions and global dilation algebra. GOA-1 adds 192 finite exact checks, 3 native word proofs/replays and 14 controls for smooth observable closure, periodic lifts, phase contrast, orientation mixing and the algebra centers. The repository runner replays all 30 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
+The eight integrated predecessor packets (NJC-1, angular calibration, EGR-1, EGR-2, CRC-1, QGC-1, N4H-1, MGH-1) remain frozen. CCL-1 has 69 exact fixture checks and 3 controls. GCP-1 has 115 exact checks, 6 native word proofs/replays and 9 controls. AGD-1 adds 92 exact checks, 8 native word proofs/replays and 8 controls. ZCR-1 adds 169 exact checks, 11 native word proofs/replays and 13 controls. IRT-1 adds 103 exact checks, 9 native word proofs/replays and 16 controls. CLD-1 adds 167 exact checks, 15 native word proofs/replays and 14 controls. RCG-1 adds 108 exact checks, 9 native word proofs/replays and 10 controls. LCF-1 adds 95 exact checks, 8 native word proofs/replays and 17 controls. LNC-1 adds 66 exact checks, 4 native word proofs/replays and 14 controls. REC-1 adds 115 exact checks, 4 native word proofs/replays and 13 controls. SRT-1 adds 143 exact checks, 5 native word proofs/replays and 21 controls. MZC-1/2/3 adds 194 exact checks, 3 native word proofs/replays and 22 controls for moving-zero covariance, sector admissibility and common equilibrium. HCM-1/2/3 adds 265 exact checks, 3 native proofs/replays and 28 controls on the inherited YM54 heat source, phase-record adapter and common-gain recovery. CHD-1/2/3 adds 594 exact checks, 12 native word proofs/replays and 89 controls for cut-generated coherent histories, minimal binary synthesis and complete circular-observer verification, including exact reconstruction, minimum probes and transport defects. GSA-1 adds 150 exact checks, 3 native proofs/replays and 7 controls for the conditional steering mechanism and local/joint-operation signal audit. HQS-1 adds 147 exact checks, 10 native word proofs/replays and 14 controls for the selected homogeneous quantum sector and physical observer interface. LQA-1 adds 407 exact checks, 9 native word proofs/replays and 25 controls for the two local current representations, central terms, counterterm classification and positive kinematic alternative. LPS-1/2 adds finite descendant-pairing and regular local-reduction witnesses; see its certificate for exact counts. LSC-1 adds the all-level primary/dual classification and conditional measure proof, with finite native witnesses recorded in its certificate. CCS-1 adds 688 finite exact checks, 5 native word proofs/replays and 20 controls for the complementary clock, universal dressing, two-axis completion and origin obstruction. COS-1 adds 275 finite exact checks, 3 native word proofs/replays and 27 controls for the critical invariant, averaging scales, domain/adjoint obstructions and global dilation algebra. GOA-1 adds 192 finite exact checks, 3 native word proofs/replays and 14 controls for smooth observable closure, periodic lifts, phase contrast, orientation mixing and the algebra centers. RPM-1 adds 84 finite exact checks, 5 native word proofs/replays and 11 controls for the full shifted packet moments, pointer statistics, measurement disturbance and coherent record identities; its clock rigging and operator-domain proofs are written analytic results. The repository runner replays all 31 stages read-only; CI separately replays the source CID-D2 action packet. Analytic proofs and their assumptions are documented beside the finite certificates.
 
 ```sh
 python3 scripts/replay_quantum_geometry.py

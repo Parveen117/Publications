@@ -23,45 +23,51 @@ verified source results rather than a new collection of unrelated examples.
 | Globally smooth classical Dirac value algebra | Classified for the selected smooth source | GOA-T1 and GOA-T2 | Values c+Pa and c+Kb with one critical constant; smooth periodic Hamiltonian lifts; finite classical flows preserve branch and sign |
 | Quantum orientation mixing and phase readout | Constructed for explicit self-adjoint nonlinear probes | GOA-T4 and GOA-T5 | Inherited full-line matching and symmetric reduced ordering; contrast -3/50, small-unitary-parameter coefficient 1/768; no physical time law |
 | Minimal and enlarged completed quantum observable algebras | Classified for the declared generators and double-commutant completion | GOA-T3 and GOA-T6 | Five affine blocks become three branch blocks; orientation phase readable; inter-branch/origin coupling not constructed |
-| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA smooth value algebra and phase-sensitive quantum probes | Physical implementation/dynamics, inter-branch coupling, full quantum fields, general ordering, alternative representations, matter and potentials remain open |
+| Added ideal clock constraint and apparatus physical norm | Closed for the stated reduced extension | RPM-T1 and RPM-T2 | C=W Pi_T W^*; explicit domain, generalized histories, positive group average and Dirac readout; ideal clock and coupling supplied |
+| Physical phase measurement instrument and readout statistics | Constructed for the chosen Gaussian pointer | RPM-T3 and RPM-T4 | Normalized instrument, contrast -3 kappa/50, exact variances and finite-run bound; no local source derivation or calibration |
+| CHD record interface for the physical pointer | Closed on the specified coherent image | RPM-T5 | Isometry, corner operation recovery and binned instrument; classical records do not retain all coherences |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA smooth value algebra; RPM ideal reduced apparatus | Local apparatus source derivation/dynamics, inter-branch coupling, full quantum fields, general ordering, alternative representations, matter and potentials remain open |
 | Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
 | Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
 | RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
 
 ## What changed in this pass
 
-GOA-1 classifies every globally smooth classical Dirac observable value by
-c+P a(Q,P) on K=0 and c+K b(Phi,K) on P=0. A periodic primitive of k-K
-provides smooth full-local Hamiltonian representatives with exact canonical
-zero-mode brackets. Classical finite regular observable flows preserve
-momentum orientation and branch.
+RPM-1 constructs an explicit ideal clock/pointer extension around GOA's
+self-adjoint physical F. The clock constraint C=W Pi_T W^* is self-adjoint
+on its displayed conjugate domain. Its group-average form yields a positive
+physical Hilbert space H tensor L^2(pointer), with generalized histories
+and clock-slice-independent physical norm.
 
-The minimal affine quantum algebra has five orientation/origin blocks.
-A source-allowed nonlinear observable P[1+(1/2)cos Q_sharp], with declared
-symmetric reduced ordering, is self-adjoint on Dom P and has explicit
-momentum shifts that mix the two P signs. The K counterpart is constructed
-independently. Exact normalized physical packets give phase contrast -3/50
-and small-observable-parameter orientation-transition coefficient 1/768.
-The source vacuum clock Hamiltonian remains zero.
+The relational pointer shift is X+kappa F. The Gaussian instrument is
+normalized, completely positive, and preserves the inherited three branch
+blocks. The GOA phase pair now has an explicit readout: mean contrast
+-3 kappa/50, observable variances 23863/80000 and 24807/80000, and a
+conservative independent-repeat discrimination bound. The CHD coherent
+record identities apply to this actual declared instrument. Discarding the
+pointer attenuates F-spectral coherences; preserving F probabilities is not
+preserving all observables.
 
-The enlarged double-commutant algebra is B(H_P) direct_sum B(H_K)
-direct_sum C_origin, with center C^3. Thus relative orientation phase is
-measurable under this larger source-derived observable contract. The result
-does not supply P-to-K or regular-to-origin transitions, a general quantum
-ordering of all smooth observables, or calibrated gravitational dynamics.
-All predecessor packets and physical norms remain unchanged. General proofs
-and finite native witnesses retain separate scope.
+This is an added apparatus model after gravitational reduction. Its clock,
+global pulse coupling and preparations are choices. Full local apparatus
+constraint closure, source-derived dynamics and empirical calibration are
+not supplied. The vacuum Hamiltonian and all frozen predecessors remain
+unchanged. Native certificates check finite identities; the continuum
+rigging, self-adjointness and measure statements have written proofs.
 
 ## Next decisive obligation
 
-Derive an actual physical implementation or source-selected dynamical law
-for the nonlinear observer family, or extend beyond the V=0 matter-free
-source and recheck constraints, reduction and positivity. Inter-branch or
-origin coupling requires a source representative, physical operator/domain
-and two-scale rigging compatibility; arbitrary matrices are insufficient.
-Direct kinematic relational fields, quantized matter, global cut gluing and
-physical 3+1 recovery remain open. Reuse the completed kernel, critical
-quotient and smooth observable classifications.
+Derive a local apparatus/matter extension of the LNC action and its complete
+first-class constraints/backreaction, then establish a controlled reduction
+to RPM's ideal coupling or a precise obstruction. Recheck quantum anomaly,
+physical norms and domains for that extended source. Merely adding a weak
+Dirac observable to unreduced generators is insufficient. The ideal clock
+and global pulse in RPM do not close this local implementation gate.
+
+Inter-branch/origin coupling still requires a source representative, physical
+operator/domain and two-scale rigging compatibility. Direct kinematic fields,
+potentials, quantized matter, global cut gluing and physical 3+1 recovery
+remain open. Reuse LSC/COS/GOA and RPM rather than repeating their proofs.
 
 ## Evidence convention
 

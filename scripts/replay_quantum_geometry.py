@@ -38,6 +38,7 @@ stages = [
     'native-complementary-clock-sector',
     'native-critical-origin-sector',
     'native-global-observable-algebra',
+    'native-relational-pointer-measurement',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
