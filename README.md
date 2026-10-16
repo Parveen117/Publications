@@ -1,6 +1,16 @@
 # Publications
 
-Latest layer continuation: [LCW-1 — sharp next-layer windows](papers/native-layer-continuation-window/README.md).
+Latest source-anchor continuation: [LAT-1 — exact layer flow and continuous source positivity](papers/native-layer-anchor-transport/README.md).
+Moving the anchor a=a_0 exp(tau) gives an exact derivative hierarchy.
+A positive finite model transports by a fractional-linear coordinate
+and weight change, preserving its poles, residues and rational response.
+A uniform complete-source error bound now certifies both actual 3x3
+forms throughout rho in [17/20,23/20], including original s=27 through
+31, and both 4x4 forms on [11/12,13/12]. At s=29, twenty actual layers
+certify ten directions and 210 binomial readings. Infinite-depth RH
+signs and physical identification remain open.
+
+Predecessor layer continuation: [LCW-1 — sharp next-layer windows](papers/native-layer-continuation-window/README.md).
 An exact Gram/Schur identity gives necessary and sufficient intervals
 for the next two layers and the width law W_next=W p(1-p) theta(1-theta),
 so each accepted pair contracts the window by at least a factor of 16.

@@ -61,6 +61,7 @@ stages = [
     'native-prime-innovation-window',
     'native-infinite-layer-cut',
     'native-layer-continuation-window',
+    'native-layer-anchor-transport',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
