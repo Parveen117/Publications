@@ -8,6 +8,8 @@ the derived structure.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| Two-sided actual five-reading source and graded matrix reflection | Exact paired source involution and all-finite-depth similarity proved | VSR-T1/T4/T5 | mu is the inherited signed deformation; source-specific symmetry; uncarried off-cut readings need not agree |
+| VTPS Maxwell matrix and diagonal curved source metric | Actual Legendre chart and carried connection derived | VSR-T2/T3 | Response matrix is indefinite; acquired metric is positive; Q^(-1)dQ retains curvature 125/324 at mu=+5 and -5 |
 | Actual infinite analytic scalar return | Entire function and explicit rational remainder proved | LAR-T1/T2 | Uses unconditional LAA Cauchy bound; positive/unitary realization is an additional condition |
 | Full use of retained source coefficients | Degree-36 partial polynomial and missing-coefficient error proved | LAR-T3/T4 | Nine readings from existing c0..c19; no new derivative, RH proof or physical identification |
 | Exact wave state and correlation depth bands | State horizon d and scalar horizon 2d proved, d=M-N | LWP-T1/T2/T3 | Strict first failures; 300 actual return readings and 27 first increments 2^(4M-3)h_M; correlations are signed amplitudes |

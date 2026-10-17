@@ -543,3 +543,13 @@ terms. This conclusion uses no all-order positivity. Identifying the
 function with the infinite weighted-channel unitary return retains the
 inherited all-order criterion. An entire nonunitary counterexample prevents
 the two statements from being conflated.
+
+## Actual source reflection and VTPS chart — VSR-1
+
+[VSR-T1 through T5](papers/native-vtps-source-reflection/THEOREM.md) establish
+cut equivariance for the actual five-reading source, including affine
+calibration of its thermodynamic fields. Legendre response, positive metric
+and connection are transformed with their own tensor types. The diagonal
+VTPS metric retains the source curvature; reselecting a diagonal strain
+connection would erase it. All finite regular jet matrices carry the
+two-sided source relation through a degree-parity similarity.
