@@ -1,6 +1,26 @@
 # Publications
 
-Latest RH development: [UCB-1 — compatible unions of actual observer banks](RH_OBSERVER_BANK_UNION.md).
+Latest RH development: [RCD-1 — residual completion and dual observer transport](RH_RESIDUAL_COMPLETION.md).
+The complete actual residual factors into the squared interpolation
+factor and an explicitly filtered source response. Its rational filter
+is invariant under native anchor transport. Any hypothetical off-line
+pole survives; its residue in the original residual stays unchanged.
+On UCB's extra-position range, the filtered response is strictly
+positive throughout [a/2,3a/2]. At every fitted position q and q'
+match exactly, but q''-q_A'' has explicit strictly positive lower
+and upper bounds. This supplies the next-layer excess above the
+finite probability model's second moment.
+Integrating the residual gives an exact multiplicative source correction,
+an explicit amplitude bound, and an additive normalization law for
+its potential. Dual reflection gives the critical-line reality/parity
+law; it does not make the residual vanish. This correction retains
+the actual source and is not an independent finite-data reconstruction.
+A mock-modular identification and global zero exclusion remain open.
+Quantitative bank and support-window ranges are unchanged.
+Written proofs only; no scientific computation, source replay,
+independent agent, or workflow dispatch.
+
+Preceding RH development: [UCB-1 — compatible unions of actual observer banks](RH_OBSERVER_BANK_UNION.md).
 Every distinct-position bank in [a/2,3a/2] has both actual source
 pencils positive when its total size is at most floor(N_*(a)/12),
 N_*(a)=floor(e^(-4) sqrt(a)/(4 pi))>=128.
