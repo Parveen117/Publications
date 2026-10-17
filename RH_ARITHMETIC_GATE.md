@@ -295,10 +295,13 @@ in (11) is essential.
 
 This is a written derivation added to the existing repository, not a
 new numerical certificate or replay stage. No scientific computation
-has been executed locally or on GitHub for this note. Previous engines,
-source data, certificate files and workflow definitions are unchanged.
-Existing passing CI applies to the previously tested source, and is not
-presented as machine verification of the new written arguments.
+was executed locally, and no scientific replay was manually launched.
+The repository's broadly triggered existing workflows nevertheless ran
+automatically on the initial documentation push and pull request. Those
+runs are not new arithmetic evidence or machine verification of this
+note. Previous engines, source data, certificate files and workflow
+definitions are unchanged. The execution-record correction is a
+skip-CI documentation commit to avoid another automatic replay.
 No independent agent was used.
 
 Classical source formulas, compact moment theory and the identity
