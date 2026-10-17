@@ -1,6 +1,22 @@
 # Publications
 
-Latest RH development: [PCM-1 — prime cuts and arithmetic memory response](RH_PRIME_CUT_MEMORY.md).
+Latest RH development: [FCP-1 — finite-cut error and a wider positive prime window](RH_FINITE_CUT_POSITIVITY.md).
+On the unchanged real even family with zero constant and cosh(x/2)
+moments, the actual source has Q_xi[g]>=||g||^2/6000 for L<=111/200.
+This extends TPW's half-width 11/20 using sharper Gamma constants,
+a wider quadratic kernel bound and a joint prime-2/prime-3 cap estimate.
+The restricted compact norm is at most 24000/24001.
+A general finite-matrix enclosure retains both geometric prime-record
+error and unresolved source-memory residual. At record depth K=35,
+the discarded prime probabilities remain positive while their combined
+source-error bound is below 1/12000 in the new restricted window.
+Earlier stronger margins remain available in their earlier ranges.
+The unrestricted positive range and all-width RH obligation are unchanged.
+Written analytic proofs only; no scientific computation, replay or
+workflow dispatch. The finite-matrix enclosure has not been evaluated
+to certify a new unrestricted window.
+
+Preceding RH development: [PCM-1 — prime cuts and arithmetic memory response](RH_PRIME_CUT_MEMORY.md).
 Normalized exponential prime-power packets have an explicit coherent cut
 whose return reproduces the actual prime resolvent with its exact scale.
 The complete prime--Gamma source is a signed balance of those event
