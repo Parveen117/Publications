@@ -1,6 +1,18 @@
 # Publications
 
-Latest observer continuation: [LOT-1 — observer transport and the depth boundary](papers/native-layer-observer-transport/README.md).
+Latest wave continuation: [LWP-1 — exact wave horizons and exponential readings](papers/native-layer-wave-propagation/README.md).
+With d extra carrier directions, the full wave state is exact for d
+steps and its old-observer correlation for 2d steps. The first
+unresolved return is exactly 2^(4M-3)h_M. The source cut and channel
+reflection generate a unitary exponential with separate state and
+correlation error bounds. Twenty retained layers give a common
+normalized exponential-return radius 1/20! at parameter1 for every
+compatible positive finite extension. Three anchors certify 300 wave
+readings, 27 first return increments and nine exponential enclosures.
+Infinite source positivity remains open; physical interpretation is
+not predetermined.
+
+Predecessor observer continuation: [LOT-1 — observer transport and the depth boundary](papers/native-layer-observer-transport/README.md).
 The acquired channel metric gives an isometric observer transport and
 an exact rank-one update of nested cut ranges. The added boundary has
 old-space weight p_N=h_N/W_N, exactly the previous continuation-window

@@ -2,14 +2,14 @@ name: Quantum geometry propagation proof replay
 
 on:
   push:
-    branches: [main, 'codex/quantum-geometry-propagation-*', 'codex/tvsp-lambda-matrices-*', 'codex/tvsp-exponential-transport-*', 'codex/quantum-response-transport-*', 'codex/density-cut-dynamics-*', 'codex/phase-current-response-*', 'codex/wick-calibrated-geometry-*', 'codex/prime-observer-sectors-*', 'codex/prime-observation-closure-*', 'codex/prime-innovation-window-*', 'codex/infinite-layer-cut-*', 'codex/layer-continuation-window-*', 'codex/layer-anchor-transport-*', 'codex/layer-anchor-atlas-*', 'codex/layer-depth-compatibility-*', 'codex/layer-observer-transport-*']
+    branches: [main, 'codex/quantum-geometry-propagation-*', 'codex/tvsp-lambda-matrices-*', 'codex/tvsp-exponential-transport-*', 'codex/quantum-response-transport-*', 'codex/density-cut-dynamics-*', 'codex/phase-current-response-*', 'codex/wick-calibrated-geometry-*', 'codex/prime-observer-sectors-*', 'codex/prime-observation-closure-*', 'codex/prime-innovation-window-*', 'codex/infinite-layer-cut-*', 'codex/layer-continuation-window-*', 'codex/layer-anchor-transport-*', 'codex/layer-anchor-atlas-*', 'codex/layer-depth-compatibility-*', 'codex/layer-observer-transport-*', 'codex/layer-wave-propagation-*']
     paths:
       - 'papers/native-*/**'
       - 'papers/Native_Phase_Word_Reconstruction_Source.zip'
       - 'scripts/replay_quantum_geometry.py'
       - '.github/workflows/quantum-geometry-propagation.yml'
   pull_request:
-    branches: [main, 'codex/quantum-geometry-propagation-*', 'codex/tvsp-lambda-matrices-*', 'codex/tvsp-exponential-transport-*', 'codex/quantum-response-transport-*', 'codex/density-cut-dynamics-*', 'codex/phase-current-response-*', 'codex/wick-calibrated-geometry-*', 'codex/prime-observer-sectors-*', 'codex/prime-observation-closure-*', 'codex/prime-innovation-window-*', 'codex/infinite-layer-cut-*', 'codex/layer-continuation-window-*', 'codex/layer-anchor-transport-*', 'codex/layer-anchor-atlas-*', 'codex/layer-depth-compatibility-*', 'codex/layer-observer-transport-*']
+    branches: [main, 'codex/quantum-geometry-propagation-*', 'codex/tvsp-lambda-matrices-*', 'codex/tvsp-exponential-transport-*', 'codex/quantum-response-transport-*', 'codex/density-cut-dynamics-*', 'codex/phase-current-response-*', 'codex/wick-calibrated-geometry-*', 'codex/prime-observer-sectors-*', 'codex/prime-observation-closure-*', 'codex/prime-innovation-window-*', 'codex/infinite-layer-cut-*', 'codex/layer-continuation-window-*', 'codex/layer-anchor-transport-*', 'codex/layer-anchor-atlas-*', 'codex/layer-depth-compatibility-*', 'codex/layer-observer-transport-*', 'codex/layer-wave-propagation-*']
     paths:
       - 'papers/native-*/**'
       - 'papers/Native_Phase_Word_Reconstruction_Source.zip'
