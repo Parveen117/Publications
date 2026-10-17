@@ -1,6 +1,17 @@
 # Publications
 
-Latest RH continuation: [SQR-1 — square-root source banks and positive layer innovations](RH_SQUARE_ROOT_BANKS.md).
+Latest RH continuation: [BRR-1 — boundary matching and square-root observer return](RH_BOUNDARY_OBSERVER_RETURN.md).
+A moving wave window recovers the entire reference zero-chart germ
+from the infinite-anchor boundary. Relative polynomial filters retain
+the source weights and reduce fixed-bank, fixed-accuracy return from
+order sqrt(rho) log(rho) to order sqrt(rho).
+Combined with SQR, any hypothetical first negative bank lies between
+positive constant multiples of sqrt(a). Positivity along any schedule
+M/sqrt(rho) tending to infinity is now sufficient for RH; the required
+positivity at every scaled width remains open.
+Written proofs only; no scientific computation or replay is added.
+
+Preceding RH continuation: [SQR-1 — square-root source banks and positive layer innovations](RH_SQUARE_ROOT_BANKS.md).
 The actual folded-transfer Hankel banks are unconditionally positive
 through size max(1,floor(kappa sqrt(a))), with explicit
 kappa=exp(-9)/(2pi). A bound on the full wave generating function
