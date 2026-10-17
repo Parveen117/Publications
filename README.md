@@ -1,6 +1,17 @@
 # Publications
 
-Latest RH continuation: [BRR-1 — boundary matching and square-root observer return](RH_BOUNDARY_OBSERVER_RETURN.md).
+Latest RH continuation: [CWF-1 — critical wave forms and finite prime windows](RH_CRITICAL_WAVE_FORMS.md).
+Smooth native wave profiles at square-root depth converge to an exact
+boundary source form. Its arithmetic expression is classical Weil
+positivity, with prime powers n<exp(2L) in a window of half-width L.
+An explicit finite-detector adapter proves that positivity for all
+real even compact profiles is equivalent to RH. SQR supplies a
+boundary margin of at least 1/4 in its small window, which lies before
+the first prime threshold. The complete arithmetic inequality at every
+width remains unproved; transport alone does not supply its new signs.
+Written proofs only; no scientific computation or replay is added.
+
+Preceding RH continuation: [BRR-1 — boundary matching and square-root observer return](RH_BOUNDARY_OBSERVER_RETURN.md).
 A moving wave window recovers the entire reference zero-chart germ
 from the infinite-anchor boundary. Relative polynomial filters retain
 the source weights and reduce fixed-bank, fixed-accuracy return from
