@@ -1,6 +1,22 @@
 # Publications
 
-Latest RH development: [RBP-1 — finite-anchor positivity for relational observer banks](RH_RELATIONAL_BANK_POSITIVITY.md).
+Latest RH development: [CSS-1 — curvature-square symmetry and the critical line](RH_CURVATURE_SQUARE_SYMMETRY.md).
+The exact QG adjoint identity and NT-3's metric-compatible half
+coefficient are recovered with their distinct assumptions. On the actual
+RH source, the native square is -4y(1-y)I. Its modewise reality at
+one anchor can miss the exceptional circle gamma^2+delta^2=a;
+a second anchor or the first anchor derivative removes this ambiguity.
+The folded curvature response has no cancelled poles, and all-order
+curvature-bank positivity at two distinct anchors is equivalent to RH.
+Curvature moments, their normalized first derivatives and c_1 recover
+the complete source pairing through an explicit complementary block.
+RBP's finite positivity transfers to that block by exact congruence.
+The universal reality/positivity premise remains unproved; real
+symmetric aggregate readings alone are automatic and insufficient.
+No new quantitative range or physical curvature identification is claimed.
+Written proofs only; no scientific computation, replay or workflow dispatch.
+
+Preceding RH development: [RBP-1 — finite-anchor positivity for relational observer banks](RH_RELATIONAL_BANK_POSITIVITY.md).
 A direct wave Toeplitz bound establishes simultaneous positivity of
 H_N, A_N and B_N through N<=floor(e^(-4) sqrt(a)/(4 pi)).
 This strengthens SQR's retained unshifted constant and supplies both
