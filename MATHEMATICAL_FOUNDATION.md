@@ -22,6 +22,20 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[LOT-1: observer transport and the depth boundary](papers/native-layer-observer-transport/THEOREM.md)
+uses G_N=diag(A_N,B_N) to represent the inherited cut without matrix
+square roots. Channel-wise polynomial inclusion is isometric; embedded
+cut ranges are nested, with one exact orthogonal boundary projection
+per new direction. Its old-space compression has eigenvalue
+p_N=h_N/W_N, the LCW even canonical moment position. Co-carried
+observer readings are invariant. The new full cut instead adds
+h_N|ell^T(x-z)|^2, while compressed wave norm loss has eigenvalue
+4p_N(1-p_N). Every fixed polynomial pair has exact cut-action
+saturation after one extra direction. Under all-order positivity, the
+embedded cuts converge monotonically and strongly in the intrinsic
+weighted completion. This different isometric transport leaves the
+LDC obstruction for natural H_N-doubled inclusion intact.
+
 [LDC-1: stable observer records across changing depth](papers/native-layer-depth-compatibility/THEOREM.md)
 proves that the natural polynomial inclusion compresses Y_(N+1) to
 Y_N but leaves a positive rank-one square defect with sole eigenvalue

@@ -1,6 +1,16 @@
 # Publications
 
-Latest source-depth continuation: [LDC-1 — stable observer records across changing depth](papers/native-layer-depth-compatibility/README.md).
+Latest observer continuation: [LOT-1 — observer transport and the depth boundary](papers/native-layer-observer-transport/README.md).
+The acquired channel metric gives an isometric observer transport and
+an exact rank-one update of nested cut ranges. The added boundary has
+old-space weight p_N=h_N/W_N, exactly the previous continuation-window
+position. Co-carried observer readings and channel norms are preserved;
+the newly enlarged cut adds its explicit boundary reading. Compressed
+wave norm loss is 4p_N(1-p_N). The existing three jets certify 27 finite
+transitions. A monotone strong cut limit follows conditionally from
+all-order source positivity; physical interpretation remains open.
+
+Predecessor source-depth continuation: [LDC-1 — stable observer records across changing depth](papers/native-layer-depth-compatibility/README.md).
 Increasing the carrier preserves every resolved binary word probability,
 while a strictly positive rank-one boundary changes the finite cut.
 The same boundary norm gives the first newly resolved even moment and

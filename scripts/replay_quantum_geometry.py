@@ -64,6 +64,7 @@ stages = [
     'native-layer-anchor-transport',
     'native-layer-anchor-atlas',
     'native-layer-depth-compatibility',
+    'native-layer-observer-transport',
 ]
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
