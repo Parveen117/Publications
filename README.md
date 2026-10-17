@@ -1,6 +1,19 @@
 # Publications
 
-Latest RH continuation: [CWF-1 — critical wave forms and finite prime windows](RH_CRITICAL_WAVE_FORMS.md).
+Latest RH continuation: [PTE-1 — prime transport energy and monotone defect flow](RH_PRIME_TRANSPORT_ENERGY.md).
+A root-normalized prime resolvent combines all prime powers into an
+exact observer norm. The complete source is positive difference-energy
+minus an explicit scalar term. Boundary coercivity extends the
+analytic positive window to L<=1/32 with margin at least 1/16.
+Every finite window has a positive compact operator K_L; RH requires
+||K_L||<=1 for all L. A monotone coupling counts negative directions
+without cancellation, while its ordinary Fredholm index is always zero.
+The universal norm bound remains unproved, and the enlarged window
+is still before the first prime threshold. No larger uniform
+finite-bank positivity range is claimed.
+Written proofs only; no scientific computation or replay is added.
+
+Preceding RH continuation: [CWF-1 — critical wave forms and finite prime windows](RH_CRITICAL_WAVE_FORMS.md).
 Smooth native wave profiles at square-root depth converge to an exact
 boundary source form. Its arithmetic expression is classical Weil
 positivity, with prime powers n<exp(2L) in a window of half-width L.
