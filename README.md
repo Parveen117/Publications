@@ -1,5 +1,12 @@
 # Publications
 
+Latest RH continuation: [positivity for large difference order](RH_LARGE_DIFFERENCE_TAIL.md).
+A moving height cutoff and the full source remainder prove D_(r,k)>0
+for k>=10^9(r+1)^3 log^3(2r+2). Combined with the preceding rectangle,
+all k are now covered in the first ten million scalar binomial rows.
+The remaining RH condition is an explicit finite middle range in each
+higher row, with the row index still unbounded. No numerical replay is added.
+
 Latest RH continuation: [positive layer sectors at unbounded depth](RH_POSITIVE_LAYER_SECTORS.md).
 A written proof combines the unchanged actual xi product with the published
 Platt–Trudgian finite-height theorem and retained source bounds. It proves
