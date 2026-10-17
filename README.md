@@ -1,5 +1,12 @@
 # Publications
 
+Latest RH proof attempt: [exact arithmetic gate and remaining gap](RH_ARITHMETIC_GATE.md).
+The actual xi layers are decomposed into rational, Gamma and prime-power
+terms at arbitrary finite order. An exact two-by-two determinant rules out
+primewise moment positivity; the full all-order arithmetic inequality
+remains open. This written derivation adds no numerical replay stage and
+does not claim an RH proof.
+
 Latest VTPS continuation: [VSR-1 — two-sided reflection of the actual five-reading source](papers/native-vtps-source-reflection/README.md).
 
 Latest analytic continuation: [LAR-1 — entire source return and explicit infinite-tail bounds](papers/native-layer-analytic-return/README.md).
