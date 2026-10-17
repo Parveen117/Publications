@@ -1,6 +1,17 @@
 # Publications
 
-Latest RH continuation: [OQD-1 — observer removal and faithful cut descent](RH_OBSERVER_QUOTIENT_DESCENT.md).
+Latest RH continuation: [RFT-1 — native reflection transfer and the regular zero chart](RH_REFLECTION_TRANSFER.md).
+The exact fold (2I+W+W^(-1))/4=yI recovers the original source
+moments and identifies their reflection-positivity condition.
+Two specified wave-reflection tests have unconditionally negative
+two-by-two determinants at sufficiently large anchors.
+Exponential boosts preserve the source sign gate. The existing
+local lambda-zero chart is regular, while the positive infinite-anchor
+limit has zero decay threshold and a consistent cut. All-order
+actual transfer positivity remains equivalent to RH and open.
+Written proofs only; no scientific computation or replay is added.
+
+Preceding RH continuation: [OQD-1 — observer removal and faithful cut descent](RH_OBSERVER_QUOTIENT_DESCENT.md).
 The actual polynomial source has zero radical: no nonzero direction
 is invisible to every layer observer. Finite positive banks can
 still miss a hypothetical negative residual, given by an exact
