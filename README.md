@@ -1,5 +1,17 @@
 # Publications
 
+Latest infinity/cut continuation: [NIF-1 — the actual source at infinite anchor](RH_INFINITY_CUT_FIXED_POINT.md).
+The normalized actual xi response tends to (1+z)^(-1/2), with a
+fixed-order correction, without assuming RH. Its limiting moments are
+arcsine moments and form a stationary law under LAT anchor transport.
+Each fixed finite source cut tends to an explicit Chebyshev cut,
+including a five-direction matrix; the two seed cut readings tend to
+1/2 and 1/pi. A cut-generated exponential and an exact scalar-on-cut
+test specify when a reading is universal across states. The order of
+limits matters: the limiting law loses some finite-source information,
+and the fixed-anchor all-order RH condition remains open.
+Written proofs only; no new numerical computation or replay is added.
+
 Latest RH continuation: [finite observer detection and one Hankel tower](RH_FINITE_OBSERVER_DETECTOR.md).
 A hypothetical off-line pair produces a finite 2x2 compression with
 negative determinant, with an explicit sufficient depth from its isolation data.
