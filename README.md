@@ -1,6 +1,26 @@
 # Publications
 
-Latest RH development: [FWT-1 — faithful continuous waves and finite-cut information](RH_FAITHFUL_WAVE_TRANSPORT.md).
+Latest RH development: [MCW-1 — mixed channels and the unrestricted quarter window](RH_MIXED_CHANNEL_WINDOW.md).
+The complete real even source is strictly positive for L <= 1/4,
+extending PRW's unrestricted half-width 1/5 by a factor 5/4.
+No constant, quadratic, or cosh moment is set to zero.
+The polynomial Gamma correction has an exact constant/quadratic
+coupling matrix; its negative part is bounded explicitly.
+A two-channel sufficient gate retains the pole-profile error
+and all active prime correlations within its stated kernel range.
+A sharper rational lower weight for the logarithmic boundary
+gives the full-source margin 667/2000000 > 1/3000.
+The associated compact norm is at most 8100/8101, extending
+the range where GCC guarantees finite positive certificates.
+PRW's stronger margin on L <= 1/5 and FCP's separate
+two-moment restricted range L <= 111/200 remain available.
+The new endpoint is still before the first prime threshold.
+No unrestricted window with an active prime, arbitrary-width
+positivity, full-wave growth bound, or RH closure is established.
+Written derivations only; no scientific computation, independent
+agent, source replay, or workflow dispatch.
+
+Preceding RH development: [FWT-1 — faithful continuous waves and finite-cut information](RH_FAITHFUL_WAVE_TRANSPORT.md).
 A carried growing-step limit of the native cut wave gives a continuous
 actual-source response. Its exact Laplace reading recovers q/q(a)
 and retains every source pole with a nonzero residue.
