@@ -1,6 +1,23 @@
 # Publications
 
-Latest RH development: [CCI-1 — conjugate cancellation and the source negative index](RH_CONJUGATE_CANCELLATION_INDEX.md).
+Latest RH development: [MOP-1 — one probability model for multiple actual observers](RH_MULTI_OBSERVER_PROBABILITY.md).
+Both actual dyadic source pencils are now positive with explicit
+Newton-coordinate margins. The retained N/8 prefix remains valid
+for N>=128; for N=N_*(a)>=2048 the proved range grows to N/6,
+where N_*(a)=floor(e^(-4) sqrt(a)/(4 pi)).
+The acquired common positive finite spectrum matches actual q and q'
+at every retained observer position. Its probability weights obey
+one exact normalized transport law, preserving the model poles and
+residues across observers. A complete-source analytic bound controls
+the held-out response throughout [a,3a/2] by
+6 sqrt(a) M_a 36^(-m), with M_a stated explicitly in the note.
+The eventual dyadic prefix coefficient improves by 4/3.
+These are finite-model eigenvalues; actual-zero identification and
+all-order source positivity remain separate obligations. The support
+windows are unchanged. Written proofs only; no scientific computation,
+source replay or workflow dispatch.
+
+Preceding RH development: [CCI-1 — conjugate cancellation and the source negative index](RH_CONJUGATE_CANCELLATION_INDEX.md).
 The actual weighted cancellation gives real readings but retains an
 exact negative product defect from the imaginary component. A faithful
 positive-minus-negative decomposition keeps this record in the source.
