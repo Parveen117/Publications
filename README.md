@@ -1,6 +1,13 @@
 # Publications
 
-Latest RH continuation: [a quadratic threshold from phase cancellation](RH_QUADRATIC_PHASE_WINDOW.md).
+Latest RH continuation: [verified-height overlap and a sharper phase tail](RH_VERIFIED_HEIGHT_OVERLAP.md).
+The written proof gives positivity for k<=T^2 r/(10a) and for
+k>=100(r+1)^2 log(2r+2), using the retained a=3249/4 and T=3*10^12.
+Their overlap covers every k in each scalar binomial row r<10^17.
+The remaining RH condition is one explicit middle band in higher rows;
+the row index remains unbounded. No numerical replay is added.
+
+Preceding RH continuation: [a quadratic threshold from phase cancellation](RH_QUADRATIC_PHASE_WINDOW.md).
 The written derivation proves D_(r,k)>0 for
 k>=10^8(r+1)^2 log^3(2r+2), improving the preceding cubic threshold.
 Together with the retained finite rectangle, it covers all k in the
