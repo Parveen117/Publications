@@ -12,6 +12,21 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Actual five-reading source in VTPS coordinates, 17 October:
+[VSR-1](papers/native-vtps-source-reflection/THEOREM.md) proves the exact
+paired reflection (mu,v,theta)->(-mu,-v,-theta) for the existing TLM cubic
+source. At mu=+5 and -5, its cut reading is 5 and curvature is 125/324.
+Odd metric/response jet layers change sign; their finite matrix records
+are similar through the explicit degree-parity involution.
+
+The actual (V,T) chart has a symmetric (P,S) Maxwell response matrix and
+a distinct positive diagonal metric. The transported connection, including
+Q^(-1)dQ, retains nonzero curvature. Three exact off-cut mirror pairs retain
+the distinction between raw and calibrated readings. GitHub verifies the
+immutable predecessor run and unchanged source bytes, reuses its 59 stages,
+and executes only this new 60th stage.
+
+
 Unconditional entire source return, 17 October:
 [LAR-1](papers/native-layer-analytic-return/THEOREM.md) applies the
 retained LAA Cauchy bound to the LWP binomial exponential series. The

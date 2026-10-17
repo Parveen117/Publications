@@ -1,5 +1,7 @@
 # Publications
 
+Latest VTPS continuation: [VSR-1 — two-sided reflection of the actual five-reading source](papers/native-vtps-source-reflection/README.md).
+
 Latest analytic continuation: [LAR-1 — entire source return and explicit infinite-tail bounds](papers/native-layer-analytic-return/README.md).
 
 Latest wave continuation: [LWP-1 — exact wave horizons and exponential readings](papers/native-layer-wave-propagation/README.md).
