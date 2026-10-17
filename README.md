@@ -1,6 +1,21 @@
 # Publications
 
-Latest RH continuation: [CEM-1 — native cut equilibrium and source memory](RH_CUT_EQUILIBRIUM_MEMORY.md).
+Latest RH continuation: [SPT-1 — shunya potential and nonlinear cut transport](RH_SHUNYA_POTENTIAL.md).
+The native quadratic phi_y=(r^2+y(1-y)h^2)/2 generates every
+pointwise polynomial invariant of the specified two-channel flow.
+Functions of phi_y give exact nonlinear Hamiltonian transport,
+including the exponential potential F_eta(s)=(exp(eta s)-1)/eta.
+Its source potential combines the retained pairing and CEM memory.
+Repeated nonlinear cuts have an exact rescaled second response;
+positivity on every polynomial profile remains RH-equivalent.
+The TVSP corner structure is expressed by a common contact one-form,
+with Maxwell relations following from the supplied exact potential
+at every regular derivative depth. Compatible jets retain the
+conservation identity; corner values and individual layers may vary.
+A positive real-fiber TVSP test source does not prove arithmetic
+source positivity. RH remains unproved; no scientific replay is added.
+
+Preceding RH continuation: [CEM-1 — native cut equilibrium and source memory](RH_CUT_EQUILIBRIUM_MEMORY.md).
 For the retained native wave, A=(W-W^(-1))/2 has PAP=0 but
 no nonzero stationary polynomial state. Its specified exponential
 continuation freezes under repeated cuts. The exact rescaled
