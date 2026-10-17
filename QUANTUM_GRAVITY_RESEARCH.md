@@ -4,11 +4,26 @@ Updated 17 October 2026. Alternative local-flow representation and renormalized 
 
 ## Working agreement
 
+From 17 October 2026, scientific execution runs on GitHub Actions. Reuse passing GitHub results; do not duplicate them locally or launch independent audit agents without a new request. Local derivation, editing, Git and artifact/hash I/O continue.
+
 The research belongs in this repository: derivations, code, source pins, certificates, rejected stronger claims and the next exact obligation. Chat reports summarize repository work; standalone documents do not substitute for it. Continue autonomously from the strongest verified endpoint, reuse previous results, and avoid parallel duplicate research. The active continuation follows the actual source, cut and observer relations. Physical interpretation remains open; electromagnetic, Yang--Mills or other identifications are to emerge from derived structure rather than be selected as a destination in advance.
 
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+Unconditional entire source return, 17 October:
+[LAR-1](papers/native-layer-analytic-return/THEOREM.md) applies the
+retained LAA Cauchy bound to the LWP binomial exponential series. The
+actual infinite scalar return exists as an entire function without an
+all-order positivity assumption. It has an explicit rational tail bound.
+Every occurrence of c_1,...,c_19 is retained in a degree-36 polynomial;
+all unknown contributions are bounded separately. Three existing source
+anchors support nine declared readings with no fresh derivative.
+The positive/unitary realization and the sharper LWP radius still require
+their stated positivity hypotheses. GitHub emits the 59th-stage certificate
+and run provenance; importing those bytes does not repeat scientific work.
+
 
 Exact wave horizons and exponential readings, 17 October:
 [LWP-1](papers/native-layer-wave-propagation/THEOREM.md) extends

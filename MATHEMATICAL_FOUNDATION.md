@@ -531,3 +531,15 @@ This is a dependency order; existing advanced results remain available at their 
 **extra-ideas** hosts current physical applications and exploration. Its [R1–R46 register](https://github.com/Parveen117/extra-ideas/blob/main/CURRENT_STATUS.md) retains the existing derivations and corrections. Mathematical results first developed there are consumed by reference; their frozen historical proofs/pins are preserved. New common mathematical foundations should enter this publication route, with physics-specific hypotheses in the downstream adapter.
 
 Cut grading, scalar radial/turn splitting and dagger grading are distinct. The EMK two-by-two sector is one admitted representation; it is not the full UGD number or master-tensor structure. A finite PASS, a general written proof, a manuscript-status audit and physical validation are separate evidence.
+
+## Entire source return — LAR-1
+
+[LAR-T1 through T4](papers/native-layer-analytic-return/THEOREM.md)
+separate analytic existence from positive realization. The source Cauchy
+estimate bounds D_(j+1,j) geometrically, so the even factorial denominator
+makes the actual return entire. A finite polynomial retains every known
+coefficient contribution, and a positive rational budget covers all missing
+terms. This conclusion uses no all-order positivity. Identifying the
+function with the infinite weighted-channel unitary return retains the
+inherited all-order criterion. An entire nonunitary counterexample prevents
+the two statements from being conflated.

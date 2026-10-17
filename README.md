@@ -1,5 +1,7 @@
 # Publications
 
+Latest analytic continuation: [LAR-1 — entire source return and explicit infinite-tail bounds](papers/native-layer-analytic-return/README.md).
+
 Latest wave continuation: [LWP-1 — exact wave horizons and exponential readings](papers/native-layer-wave-propagation/README.md).
 With d extra carrier directions, the full wave state is exact for d
 steps and its old-observer correlation for 2d steps. The first
