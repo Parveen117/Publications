@@ -1,6 +1,17 @@
 # Publications
 
-Latest RH continuation: [QRI-1 — quadrant signs, invariant ratios and growing banks](RH_REFLECTION_RATIO_GATE.md).
+Latest RH continuation: [CWR-1 — native cut-wave detection and accelerated return](RH_CUT_WAVE_RETURN.md).
+The two cut channels give one exact actual-source wave return whose
+generating function is a transformed xi'/xi. An uncancelled pole makes
+its exponential growth detect every hypothetical off-line zero, while
+a scaled infinite-anchor limit recovers the maximal horizontal
+displacement. Wave-polynomial observers reduce sufficient return
+depth to order sqrt(rho) log rho and give a smaller growing-bank
+criterion equivalent to RH. The actual all-step wave bound and the
+required growing-bank positivity remain open. Written proofs only;
+no scientific computation, source evaluation or replay is added.
+
+Preceding RH continuation: [QRI-1 — quadrant signs, invariant ratios and growing banks](RH_REFLECTION_RATIO_GATE.md).
 All four Maxwell charts are reconciled with the actual VTPS source,
 and a normalized Schur ratio identifies exactly which reflection signs
 cancel. For the actual xi response, the first infinity correction
