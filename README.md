@@ -1,6 +1,26 @@
 # Publications
 
-Latest RH development: [RCD-1 — residual completion and dual observer transport](RH_RESIDUAL_COMPLETION.md).
+Latest RH development: [FWT-1 — faithful continuous waves and finite-cut information](RH_FAITHFUL_WAVE_TRANSPORT.md).
+A carried growing-step limit of the native cut wave gives a continuous
+actual-source response. Its exact Laplace reading recovers q/q(a)
+and retains every source pole with a nonzero residue.
+The continuous wave's growth exponent is the same horizontal defect
+D_xi already detected by CWR's discrete wave. Global boundedness,
+the unit-amplitude bound, and positive definiteness are equivalent
+to RH; none is established here for the full actual wave.
+Anchor changes have an exact composing exponential-convolution law.
+Each positive finite model has unitary transport and observable states,
+but its completeness is limited to its own retained model.
+On RCD's extra-position range, the wave error has a vanishing zeroth
+damped moment and a strictly positive next moment with explicit bounds.
+The error takes both signs. Rational-frequency examples show that
+a finite-cut residual does not by itself diagnose irrationality.
+Exact full-wave recovery alone does not imply RH or stable recovery
+from noisy finite data. Quantitative bank and support-window ranges
+are unchanged. Written proofs only; no scientific computation,
+independent agent, source replay, or workflow dispatch.
+
+Preceding RH development: [RCD-1 — residual completion and dual observer transport](RH_RESIDUAL_COMPLETION.md).
 The complete actual residual factors into the squared interpolation
 factor and an explicitly filtered source response. Its rational filter
 is invariant under native anchor transport. Any hypothetical off-line
