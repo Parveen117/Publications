@@ -1,6 +1,18 @@
 # Publications
 
-Latest RH development: [ASM-1 — arithmetic source memory and finite cut reduction](RH_ARITHMETIC_SEAM_REDUCTION.md).
+Latest RH development: [PCM-1 — prime cuts and arithmetic memory response](RH_PRIME_CUT_MEMORY.md).
+Normalized exponential prime-power packets have an explicit coherent cut
+whose return reproduces the actual prime resolvent with its exact scale.
+The complete prime--Gamma source is a signed balance of those event
+channels. Prime-resolved source columns feed ASM's memory with all cross-terms
+retained. An exact prime-insertion identity supplies the returned-memory
+correction, symmetric mixed responses and a negative-square response
+Hessian. Complete insertion ledgers give the same endpoint in every order.
+The all-width endpoint sign remains open; local probabilities and order
+agreement do not establish it. No new positive window or RH proof is claimed.
+Written proofs only; no scientific computation, replay or workflow dispatch.
+
+Preceding RH development: [ASM-1 — arithmetic source memory and finite cut reduction](RH_ARITHMETIC_SEAM_REDUCTION.md).
 For every finite support width, an explicit Gamma--Legendre bound makes
 the sufficiently high unresolved modes strictly positive. The remaining
 sign is exactly a finite Schur complement with the full memory term
