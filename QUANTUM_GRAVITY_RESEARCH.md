@@ -4,11 +4,41 @@ Updated 17 October 2026. Alternative local-flow representation and renormalized 
 
 ## Working agreement
 
-The research belongs in this repository: derivations, code, source pins, certificates, rejected stronger claims and the next exact obligation. Chat reports summarize repository work; standalone documents do not substitute for it. Continue autonomously from the strongest verified endpoint, reuse previous results, and avoid parallel duplicate research. The goal is a rigorous quantum-gravity construction, not a growing count of loosely connected examples.
+The research belongs in this repository: derivations, code, source pins, certificates, rejected stronger claims and the next exact obligation. Chat reports summarize repository work; standalone documents do not substitute for it. Continue autonomously from the strongest verified endpoint, reuse previous results, and avoid parallel duplicate research. The active continuation follows the actual source, cut and observer relations. Physical interpretation remains open; electromagnetic, Yang--Mills or other identifications are to emerge from derived structure rather than be selected as a destination in advance.
 
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+Observer compatibility across source depth, 17 October:
+[LDC-1](papers/native-layer-depth-compatibility/THEOREM.md) proves
+that the natural inclusion compresses the next Y to the previous Y,
+while one nonzero orthogonal direction produces a rank-one square
+defect. Its invariant nonzero eigenvalue is h_N/h_(N-1) in (0,1/4).
+The monic norm h_N also controls the first new even moment and the
+exact positive response increment at every real lambda>-1 away from
+zero. Thus the new direction has an explicit observable contribution.
+
+Every binary word probability of length m is unchanged once the
+certified carrier has 2N-1>=m. Count records are consistent under
+uniform bit deletion, factorial readings retain the same c_r, and
+adjacent sample means have squared discrepancy
+(c_1-c_2)/(m(m+1)). Under the all-order source premise their specified
+conditional Bernoulli realization converges in L2 with squared error
+(c_1-c_2)/m. Carrier depth, record length and wave iteration remain
+different operations.
+
+Strict carrier growth prevents exact natural cut and wave
+intertwining: compression of the deeper cut has a nonzero positive
+defect. Stable record probabilities therefore coexist with changing
+finite cuts. No equality of arbitrary coherent amplitudes is asserted.
+The retained twenty-layer jets at s=29,31,33 certify 27 transitions,
+54 adjacent couplings and source records through length nineteen.
+LDC validation: 217 exact checks, 2 symbolic certificates, 14 negative
+controls and 24 source pins. It adds the 56th integrated stage.
+No predecessor packet or engine is changed, and no new derivative is
+manufactured. The next infinite-depth obligation remains actual-source
+positivity at unbounded order. Physical interpretation is open.
 
 Connected source-anchor atlas, 17 October:
 [LAA-1](papers/native-layer-anchor-atlas/THEOREM.md) replaces the

@@ -22,6 +22,19 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[LDC-1: stable observer records across changing depth](papers/native-layer-depth-compatibility/THEOREM.md)
+proves that the natural polynomial inclusion compresses Y_(N+1) to
+Y_N but leaves a positive rank-one square defect with sole eigenvalue
+h_N/h_(N-1) in (0,1/4). The same monic norm h_N appears in an exact
+positive determinant formula for f_(N+1)-f_N. Source word probabilities
+of length m stabilize whenever 2N-1>=m; deletion preserves factorial
+readings and gives squared discrepancy (c_1-c_2)/(m(m+1)). Strict
+growth prevents exact natural cut or wave intertwining, despite this
+record invariance. Under the all-order source premise, the specified
+conditional Bernoulli record process has L2 error (c_1-c_2)/m.
+The native execution verifies 27 source transitions and 54 record
+couplings using existing jets, without another derivative evaluation.
+
 [LAA-1: connected source atlas and retained remainder](papers/native-layer-anchor-atlas/THEOREM.md)
 derives an exact positive differentiated geometric-tail formula valid
 for every retained derivative inside the source disk. Finite Taylor

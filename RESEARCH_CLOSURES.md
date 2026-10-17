@@ -2,11 +2,15 @@
 
 17 October 2026. A closure below applies only to its named target and
 assumptions. It is not a blanket endorsement of all research repositories.
-The active priority is the quantum-gravity construction, proceeding from
-verified source results rather than a new collection of unrelated examples.
+The active continuation follows source depth, acquired pairings and
+observer readings. Physical interpretation remains open and follows
+the derived structure.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| Exact source compatibility across carrier depth | Isometric compression, rank-one boundary and positive determinant innovation proved | LDC-T1/T2 | 27 actual finite transitions; unbounded actual-source positivity remains open |
+| Stable finite observer records and consistent deletion | Word probabilities stabilize through length 2N-1; factorial readings and adjacent squared-error law proved | LDC-T3 | 54 actual adjacent couplings through length19; L2 limit with error (c_1-c_2)/m is conditional on all-order source positivity |
+| Natural inclusion intertwines all finite cuts or waves | Obstructed under strict source growth | LDC-T4 | Deeper cut compression has nonzero positive defect; specified record probabilities still stabilize exactly; physical interpretation open |
 | Connected actual-source positivity atlas | Six uniform certificates glue at fixed order | LAA-T3 through LAA-T5 | Both 3x3 forms for every real s in [27,35], both 4x4 on [28,34]; ten directions only at s=29,31,33; no all-depth or physical propagation claim |
 | Finite-jet recentering with retained source error | Exact positive differentiated tail and polynomial composition proved | LAA-T1/T2 | Original source, degree and cumulative disk budget retained; a shifted polynomial is not a new exact source jet; fresh source evaluations enable legitimate restart |
 | Fresh twenty-layer source jets at s=31 and s=33 | Both 10x10 forms and all 210 binomial readings positive at each | LAA-T5 and native certificate | Composite source label allowed; rebuilt rational models differ, s=33 fit has unfitted s=35 error below 1.971e-35; no identification of their poles with source zeros |

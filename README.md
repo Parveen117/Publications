@@ -1,6 +1,16 @@
 # Publications
 
-Latest source-anchor continuation: [LAA-1 — connected source atlas and retained remainder](papers/native-layer-anchor-atlas/README.md).
+Latest source-depth continuation: [LDC-1 — stable observer records across changing depth](papers/native-layer-depth-compatibility/README.md).
+Increasing the carrier preserves every resolved binary word probability,
+while a strictly positive rank-one boundary changes the finite cut.
+The same boundary norm gives the first newly resolved even moment and
+an exact positive rational-response increment. Deleting one bit preserves
+factorial observer readings, with squared discrepancy
+(c_1-c_2)/(m(m+1)). Three retained jets certify 27 depth transitions
+and 54 adjacent record couplings. The infinite record limit requires
+the actual all-order source condition; physical interpretation stays open.
+
+Predecessor source-anchor continuation: [LAA-1 — connected source atlas and retained remainder](papers/native-layer-anchor-atlas/README.md).
 An exact positive differentiated-tail formula controls every retained
 layer after an anchor move. The polynomial composition law preserves
 its original source and error budget until a fresh source evaluation.
