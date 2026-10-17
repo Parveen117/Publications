@@ -1,6 +1,24 @@
 # Publications
 
-Latest RH development: [GCC-1 — Gamma cuts and finite certificate completeness](RH_GAMMA_CUT_CERTIFICATES.md).
+Latest RH development: [PRW-1 — pole recovery and the unrestricted positive window](RH_POLE_RECOVERY_WINDOW.md).
+Retaining the actual pole square and its controlled cosh-profile error
+extends the positive range for the full real even source from L<=1/32
+to L<=1/5, with q_L[g]>=||g||^2/300. No zero-mean or cosh-neutrality
+condition is imposed. A boundary-weighted rank-one integral controls
+the constant channel, and the full compact norm is at most 810/811.
+A prime-aware scalar gate is proved for subsequent windows.
+The accompanying technical notes treat relations as primary and
+numbers as coordinate readings: normalized cut probabilities admit
+cos^2(theta), sin^2(theta) coordinates, with relative phase and source
+cross-terms retained. An angle also encodes the proved source margin.
+The new unrestricted endpoint is still before the first prime.
+FCP's larger two-moment restricted range remains distinct, and the
+all-width RH obligation remains unproved. GCC now supplies existence
+of finite positive certificates throughout the enlarged full range;
+no finite matrix size or numerical certificate is evaluated.
+Written proofs only; no scientific computation, replay or workflow dispatch.
+
+Preceding RH development: [GCC-1 — Gamma cuts and finite certificate completeness](RH_GAMMA_CUT_CERTIFICATES.md).
 A positive-separation Gamma cut gives a bounded lower source whose
 spectral bottom converges upward to the actual arithmetic source bottom.
 For this bounded source, finite-mode memory residuals converge to zero.
