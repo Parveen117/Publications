@@ -1,6 +1,23 @@
 # Publications
 
-Latest RH development: [ZMR-1 — zero-chart memory and reference-motion recovery](RH_ZERO_MEMORY_RECOVERY.md).
+Latest RH development: [CPL-1 — cut-phase records and infinite exponential flow](RH_CUT_PHASE_LEDGER.md).
+The native two-reflection cut-wave now has a specified logarithmic
+phase record and an exponential that reproduces every integer step.
+Each repetition retains its log-amplitude and unwrapped angle;
+the earlier skew-generator exponential advances by sin(theta),
+whereas this interpolation advances by the actual angle theta.
+The complete balanced reading is entire, and its exact growth
+rate is CWR's retained reciprocal-wave defect.
+For a positive source, the long-flow mean is zero while each
+frequency-selected memory and the mean square remain nonzero;
+the reading has no endpoint limit. This holds in each certified
+positive finite model and is conditional on RH for the full source.
+The scaled infinitesimal per-step record retains delta+i*gamma.
+No all-source zero-growth bound, curvature law, numerical phase
+record or RH proof is claimed. Written derivations only; no
+scientific computation, independent agent or workflow dispatch.
+
+Preceding RH development: [ZMR-1 — zero-chart memory and reference-motion recovery](RH_ZERO_MEMORY_RECOVERY.md).
 The complete local germ of a native constant cut-return, together
 with its first anchor derivative as a germ, determines the missing
 orientation channel, every actual source moment, and the complete
