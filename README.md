@@ -1,6 +1,19 @@
 # Publications
 
-Latest RH continuation: [PTE-1 — prime transport energy and monotone defect flow](RH_PRIME_TRANSPORT_ENERGY.md).
+Latest RH continuation: [FPW-1 — a first-prime window with fixed neutral moments](RH_FIRST_PRIME_WINDOW.md).
+For real even tests with zero constant and cosh(x/2) moments, the
+actual source has Q_xi[g]>=||g||^2/250 for L<=2/5. This crosses
+the first prime threshold: n=2 is active and bounded using disjoint
+support caps. An explicit Legendre estimate and the exact Gamma
+boundary energy supply the margin. The same two conditions at
+every width retain an RH equivalence, proved by a finite-detector
+adapter. The restricted compact operator has norm at most 800/801
+in the stated window. This is a restricted-family result; positivity
+at all widths and a larger unrestricted window remain unproved.
+No larger uniform finite-bank positivity range is claimed.
+Written proofs only; no scientific computation or replay is added.
+
+Preceding RH continuation: [PTE-1 — prime transport energy and monotone defect flow](RH_PRIME_TRANSPORT_ENERGY.md).
 A root-normalized prime resolvent combines all prime powers into an
 exact observer norm. The complete source is positive difference-energy
 minus an explicit scalar term. Boundary coercivity extends the
