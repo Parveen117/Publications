@@ -1,6 +1,20 @@
 # Publications
 
-Latest RH continuation: [TPW-1 — quadratic kernel cancellation and a two-prime window](RH_TWO_PRIME_WINDOW.md).
+Latest RH continuation: [CEM-1 — native cut equilibrium and source memory](RH_CUT_EQUILIBRIUM_MEMORY.md).
+For the retained native wave, A=(W-W^(-1))/2 has PAP=0 but
+no nonzero stationary polynomial state. Its specified exponential
+continuation freezes under repeated cuts. The exact rescaled
+second-order source response is M_a(f,h)=L_a[y(1-y)fh] at every
+cut count; it is covariant under joint transport and has zero radical.
+Its finite matrices are (c_(i+j+1)-c_(i+j+2)), whose positivity
+at every size is equivalent to RH and remains unproved.
+Complete value and first-response readings separate both channels.
+The same cut permits arbitrary rescaling of transport time, so
+these identities alone select no physical propagation speed.
+The classical Zeno mechanism is attributed; the explicit native
+specialization is proved without source positivity or computation.
+
+Preceding RH continuation: [TPW-1 — quadratic kernel cancellation and a two-prime window](RH_TWO_PRIME_WINDOW.md).
 On the unchanged real even family with zero constant and cosh(x/2)
 moments, the actual source has Q_xi[g]>=||g||^2/500 for L<=11/20.
 Both primes 2 and 3 are active at the endpoint. A quadratic Gamma
