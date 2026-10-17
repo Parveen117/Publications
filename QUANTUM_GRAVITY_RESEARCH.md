@@ -10,6 +10,40 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Connected source-anchor atlas, 17 October:
+[LAA-1](papers/native-layer-anchor-atlas/THEOREM.md) replaces the
+previous geometric differentiated-tail estimate by an exact positive
+rational expression. It is valid at every retained derivative inside
+the original source disk. Finite polynomial transport has an exact
+composition law, but its source ledger must retain the original jet,
+normalization, degree and cumulative error until a valid restart.
+Explicit source comparisons reject erasing the remainder on a shift.
+
+Fresh complete jets through order 19 at s=31 and s=33 both have
+positive 10x10 forms and 210 positive binomial readings. Together
+with retained s=29, six overlapping analytic certificates give both
+actual 3x3 forms for every real s in [27,35] and both 4x4 forms for
+every real s in [28,34]. The inherited cut has six or eight channels
+on those respective intervals. Ten directions are certified at the
+three printed anchors, not throughout the union. Composite source
+label s=33 is allowed by this derivative-source criterion.
+
+The 29->31->33 source forecast agrees exactly with the direct
+29->33 ledger. Fresh s=31 evaluation lowers every remainder budget
+at s=33, although high-layer forecast bounds remain broad. At
+unfitted s=35 the three rebuilt finite models have disjoint response
+intervals and satisfy the inherited unconditional source bound.
+The s=33 fit's positive error is below 1.971e-35. Agreement of actual
+source charts on overlaps does not identify different finite models.
+
+LAA validation: 85 exact checks, 2 symbolic certificates, 19 negative
+controls and 28 source pins. The integrated replay now has 55 stages.
+Predecessor packets and engines remain unchanged. The next exact
+infinite-layer obligation is control of actual derivatives at
+unbounded depth, through LCW windows or the equivalent ILC signs.
+Finite anchor coverage does not close RH, physical mass, Maxwell
+dynamics, physical time, quantum gravity or improve global eta.
+
 Moving single-point source anchor, 17 October:
 [LAT-1](papers/native-layer-anchor-transport/THEOREM.md) derives the
 actual logarithmic-anchor moment and binomial hierarchies directly by

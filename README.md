@@ -1,6 +1,17 @@
 # Publications
 
-Latest source-anchor continuation: [LAT-1 — exact layer flow and continuous source positivity](papers/native-layer-anchor-transport/README.md).
+Latest source-anchor continuation: [LAA-1 — connected source atlas and retained remainder](papers/native-layer-anchor-atlas/README.md).
+An exact positive differentiated-tail formula controls every retained
+layer after an anchor move. The polynomial composition law preserves
+its original source and error budget until a fresh source evaluation.
+Fresh twenty-layer jets at s=31 and s=33 extend the continuous actual
+3x3 positivity interval to every real s in [27,35] and the 4x4 interval
+to [28,34]. Ten directions are certified at each of s=29,31,33.
+Independent finite models have different rational responses; the
+s=33 fit has unfitted s=35 error below 1.971e-35. Infinite-depth RH
+signs and physical identification remain open.
+
+Predecessor source-anchor continuation: [LAT-1 — exact layer flow and continuous source positivity](papers/native-layer-anchor-transport/README.md).
 Moving the anchor a=a_0 exp(tau) gives an exact derivative hierarchy.
 A positive finite model transports by a fractional-linear coordinate
 and weight change, preserving its poles, residues and rational response.
