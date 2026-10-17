@@ -1,6 +1,27 @@
 # Publications
 
-Latest RH development: [GRR-1 — global Gamma remainders and quantitative source return](RH_GAMMA_REMAINDER_RETURN.md).
+Latest RH development: [ZMR-1 — zero-chart memory and reference-motion recovery](RH_ZERO_MEMORY_RECOVERY.md).
+The complete local germ of a native constant cut-return, together
+with its first anchor derivative as a germ, determines the missing
+orientation channel, every actual source moment, and the complete
+meromorphic response. The fixed-reference scalar alone can lose
+the distinction between y and 1-y, even with its source scale.
+Cut-memory transport has an exact source-derived connection and
+an extra inverse-square-root coordinate Jacobian compared with
+ordinary source-pairing transport; its observer weight has power
+3/2 rather than 1/2. All carried memory signs are preserved.
+The recovered jets give an explicit two-block memory matrix
+congruent to the retained RH-equivalent source memory matrices.
+Its all-depth positivity remains unproved.
+A finite comparison source has a bounded, positive-definite
+constant cut-return but an explicit negative memory direction.
+It is not xi or an RH counterexample; it separates recovery and
+stable scalar readings from complete-source positivity.
+GRR's source windows and first-prime certificate status are unchanged.
+Written derivations only; no scientific computation, independent
+agent, source replay, finite certificate evaluation, or workflow dispatch.
+
+Preceding RH development: [GRR-1 — global Gamma remainders and quantitative source return](RH_GAMMA_REMAINDER_RETURN.md).
 A global Gamma-kernel comparison has an exact positive remainder.
 Its complete-form gain more than triples the guaranteed margin
 on the existing full even window L <= 1/4: q_L[g] >= ||g||^2/850.
