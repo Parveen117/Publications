@@ -1,6 +1,23 @@
 # Publications
 
-Latest RH development: [CPL-1 — cut-phase records and infinite exponential flow](RH_CUT_PHASE_LEDGER.md).
+Latest RH development: [PWC-1 — probability tightness and faithful wave closure](RH_PROBABILITY_WAVE_CLOSURE.md).
+At one fixed reference, convergence of normalized positive finite
+responses to the actual source forces convergence of every layer
+moment, prevents probability escaping to infinite frequency, and
+gives locally uniform convergence to the faithful actual wave.
+Kernel positivity then passes to that limit and implies RH.
+The source-convergence premise remains unproved and is RH-equivalent.
+An explicit wave-error bound separates the probability tail,
+finite polynomial approximation, and amplified layer-moment error.
+A fixed-reference normalization identity retains both residuals.
+The existing moving-window size budget leaves its Schwarz product
+bounded away from zero at fixed source positions, so that estimate
+does not establish the required convergence. This is a limitation
+of the estimate, not a lower bound on the actual error.
+No RH proof or numerical certificate is claimed. Written proofs
+only; no scientific computation, agent, replay or workflow dispatch.
+
+Preceding RH development: [CPL-1 — cut-phase records and infinite exponential flow](RH_CUT_PHASE_LEDGER.md).
 The native two-reflection cut-wave now has a specified logarithmic
 phase record and an exponential that reproduces every integer step.
 Each repetition retains its log-amplitude and unwrapped angle;
