@@ -1,6 +1,24 @@
 # Publications
 
-Latest RH development: [MOP-1 — one probability model for multiple actual observers](RH_MULTI_OBSERVER_PROBABILITY.md).
+Latest RH development: [UCB-1 — compatible unions of actual observer banks](RH_OBSERVER_BANK_UNION.md).
+Every distinct-position bank in [a/2,3a/2] has both actual source
+pencils positive when its total size is at most floor(N_*(a)/12),
+N_*(a)=floor(e^(-4) sqrt(a)/(4 pi))>=128.
+A common rational-basis estimate includes all mixed readings and
+gives explicit spacing-normalized margins for both Schur innovations.
+Covered subbanks have exact composing isometries and operator
+compressions into one positive finite union carrier. A one-position
+extension gives strict spectral interlacing. With one extra position
+available, each finite response lies below actual q throughout the
+interval, with a strict error off its own probes and the uniform
+upper bound 9 sqrt(a) C_A 4^(-m), where C_A is explicit in the note.
+This supplies actual finite mixed signs and source error signs.
+MOP's larger dyadic N/6 range remains distinct. The unlimited
+compatible source bank and identification of every model pole with
+an actual zero remain open. Written proofs only; no scientific
+computation, source replay, or workflow dispatch.
+
+Preceding RH development: [MOP-1 — one probability model for multiple actual observers](RH_MULTI_OBSERVER_PROBABILITY.md).
 Both actual dyadic source pencils are now positive with explicit
 Newton-coordinate margins. The retained N/8 prefix remains valid
 for N>=128; for N=N_*(a)>=2048 the proved range grows to N/6,
