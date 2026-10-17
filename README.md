@@ -1,5 +1,12 @@
 # Publications
 
+Latest RH continuation: [positive layer sectors at unbounded depth](RH_POSITIVE_LAYER_SECTORS.md).
+A written proof combines the unchanged actual xi product with the published
+Platt–Trudgian finite-height theorem and retained source bounds. It proves
+D_(r,k)>0 for every r>=1 and 0<=k<=60r, hence c_n>0 at every depth, plus
+a separate finite rectangle. All-order matrix positivity and RH remain open
+outside the proved index regions. No new numerical computation is performed.
+
 Latest RH proof attempt: [exact arithmetic gate and remaining gap](RH_ARITHMETIC_GATE.md).
 The actual xi layers are decomposed into rational, Gamma and prime-power
 terms at arbitrary finite order. An exact two-by-two determinant rules out
