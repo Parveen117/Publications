@@ -1,6 +1,24 @@
 # Publications
 
-Latest RH development: [RLO-1 — relational observers and coincident source readings](RH_RELATIONAL_OBSERVER_CONFLUENCE.md).
+Latest RH development: [RBP-1 — finite-anchor positivity for relational observer banks](RH_RELATIONAL_BANK_POSITIVITY.md).
+A direct wave Toeplitz bound establishes simultaneous positivity of
+H_N, A_N and B_N through N<=floor(e^(-4) sqrt(a)/(4 pi)).
+This strengthens SQR's retained unshifted constant and supplies both
+positive-form premises of the native finite cut. The acquired carrier
+has positive nodes and weights and matches c_0 through c_(2N-1).
+Its positive rational kernel retains an explicit omitted-moment error.
+For N(a)=floor(e^(-4) sqrt(a)/(4 pi))>=128, every actual dyadic
+relational prefix of size m<=floor(N(a)/8) is strictly positive,
+with normalized determinant at least (24 ell 49^m)^(-m),
+where ell=log(sqrt(a)/(2 pi)). The proof controls the Newton matrices
+directly, avoiding amplification by small observer spacings.
+Thus the actual relational range grows explicitly with sqrt(a).
+The all-size finite-anchor RH condition and the universal-width
+return requirement remain open; support windows are unchanged.
+Written proofs only; no scientific computation, source replay
+or workflow dispatch.
+
+Preceding RH development: [RLO-1 — relational observers and coincident source readings](RH_RELATIONAL_OBSERVER_CONFLUENCE.md).
 An exact divided-difference kernel relates actual xi-source readings
 at different observer positions. Newton observer changes retain its
 inertia, and its determinant divided by the squared spacing Vandermonde
