@@ -1,13 +1,20 @@
 # Publications
 
-Latest RH continuation: [positivity for large difference order](RH_LARGE_DIFFERENCE_TAIL.md).
+Latest RH continuation: [a quadratic threshold from phase cancellation](RH_QUADRATIC_PHASE_WINDOW.md).
+The written derivation proves D_(r,k)>0 for
+k>=10^8(r+1)^2 log^3(2r+2), improving the preceding cubic threshold.
+Together with the retained finite rectangle, it covers all k in the
+first 50 billion scalar binomial rows. Higher rows still have an
+unsettled middle range, so RH remains open. No numerical replay is added.
+
+Preceding RH continuation: [positivity for large difference order](RH_LARGE_DIFFERENCE_TAIL.md).
 A moving height cutoff and the full source remainder prove D_(r,k)>0
 for k>=10^9(r+1)^3 log^3(2r+2). Combined with the preceding rectangle,
 all k are now covered in the first ten million scalar binomial rows.
 The remaining RH condition is an explicit finite middle range in each
 higher row, with the row index still unbounded. No numerical replay is added.
 
-Latest RH continuation: [positive layer sectors at unbounded depth](RH_POSITIVE_LAYER_SECTORS.md).
+Preceding RH continuation: [positive layer sectors at unbounded depth](RH_POSITIVE_LAYER_SECTORS.md).
 A written proof combines the unchanged actual xi product with the published
 Platt–Trudgian finite-height theorem and retained source bounds. It proves
 D_(r,k)>0 for every r>=1 and 0<=k<=60r, hence c_n>0 at every depth, plus
