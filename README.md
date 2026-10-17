@@ -1,6 +1,17 @@
 # Publications
 
-Latest RH continuation: [CWR-1 — native cut-wave detection and accelerated return](RH_CUT_WAVE_RETURN.md).
+Latest RH continuation: [OQD-1 — observer removal and faithful cut descent](RH_OBSERVER_QUOTIENT_DESCENT.md).
+The actual polynomial source has zero radical: no nonzero direction
+is invisible to every layer observer. Finite positive banks can
+still miss a hypothetical negative residual, given by an exact
+Schur decomposition. Compressing the native cut preserves the
+entire original source pairing, so the quotient retains the RH
+positivity condition. An exactly matching probability law is
+equivalent to RH, and distinct prime anchors remain distinguishable
+after normalization. Written proofs only; no scientific computation,
+source evaluation or replay is added.
+
+Preceding RH continuation: [CWR-1 — native cut-wave detection and accelerated return](RH_CUT_WAVE_RETURN.md).
 The two cut channels give one exact actual-source wave return whose
 generating function is a transformed xi'/xi. An uncancelled pole makes
 its exponential growth detect every hypothetical off-line zero, while
