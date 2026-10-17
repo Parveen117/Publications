@@ -1,6 +1,19 @@
 # Publications
 
-Latest RH continuation: [SPT-1 — shunya potential and nonlinear cut transport](RH_SHUNYA_POTENTIAL.md).
+Latest RH assessment: [CLA-1 — closure audit of the shunya-potential route](RH_CLOSURE_AUDIT.md).
+The current argument does not prove RH. An explicit normalized, faithful
+comparison source preserves the native potential, transport and cut
+freezing but has a negative memory direction. Arbitrarily long finite
+moment prefixes can agree with a positive source while a higher-degree
+negative direction remains. For the exponential family, negative
+directions survive every finite deformation and cut count with a
+specified amplitude choice. These are limitations of source-independent
+arguments, not counterexamples to RH or substitutes for the actual
+arithmetic source. The remaining requirement is all-profile positivity
+for that actual source. TPW's restricted two-prime window is unchanged.
+Written proofs only; no scientific computation or replay is added.
+
+Preceding RH continuation: [SPT-1 — shunya potential and nonlinear cut transport](RH_SHUNYA_POTENTIAL.md).
 The native quadratic phi_y=(r^2+y(1-y)h^2)/2 generates every
 pointwise polynomial invariant of the specified two-channel flow.
 Functions of phi_y give exact nonlinear Hamiltonian transport,
