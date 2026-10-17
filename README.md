@@ -1,6 +1,27 @@
 # Publications
 
-Latest RH development: [OPC-1 — one retained source channel across the first prime](RH_FIRST_PRIME_ONE_CHANNEL.md).
+Latest RH development: [GRR-1 — global Gamma remainders and quantitative source return](RH_GAMMA_REMAINDER_RETURN.md).
+A global Gamma-kernel comparison has an exact positive remainder.
+Its complete-form gain more than triples the guaranteed margin
+on the existing full even window L <= 1/4: q_L[g] >= ||g||^2/850.
+The unrestricted support interval is unchanged.
+Through L <= 7/20, the mean-zero pole-subtracted margin improves
+to 93383/1440000 > 2/31, and the actual tail inverse norm is
+below 31/2. The exact pole return has 0 <= kappa < 1/4160.
+At the first-prime endpoint, a proved positive source surplus
+allows the old comparison's complete returned scalar to be
+as low as -1/1600 in a sufficient certificate. The note gives
+its outward residual test; that premise is not established.
+The all-width positive-tail prescription loses the earlier
+exp(-L) penalty in its harmonic-energy coefficient, improving
+the displayed sufficient size growth. The retained finite
+Schur block still requires its sign proof.
+No full-family first-prime extension, all-width source positivity,
+evaluated certificate, or RH closure is claimed.
+Written derivations only; no scientific computation, independent
+agent, source replay, or workflow dispatch.
+
+Preceding RH development: [OPC-1 — one retained source channel across the first prime](RH_FIRST_PRIME_ONE_CHANNEL.md).
 At L = 7/20, prime 2 is active and its signed correlation is
 absorbed by a proved logarithmic boundary surplus.
 For every L <= 7/20, the complete mean-zero even family has
