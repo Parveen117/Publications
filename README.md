@@ -1,6 +1,22 @@
 # Publications
 
-Latest RH development: [CSS-1 — curvature-square symmetry and the critical line](RH_CURVATURE_SQUARE_SYMMETRY.md).
+Latest RH development: [CCI-1 — conjugate cancellation and the source negative index](RH_CONJUGATE_CANCELLATION_INDEX.md).
+The actual weighted cancellation gives real readings but retains an
+exact negative product defect from the imaginary component. A faithful
+positive-minus-negative decomposition keeps this record in the source.
+Simultaneous interpolation and a controlled tail isolate any finite
+selection of hypothetical off-line pairs into a negative-definite bank,
+with an explicit sufficient degree and observer-basis margin.
+The supremum of the actual Hankel negative eigenvalue counts equals
+the number of distinct off-critical zero quartets. This count is
+unchanged by source anchor or faithful observer-coordinate changes,
+and CSS's complete curvature/derivative block retains it exactly.
+No actual off-line zero or negative source matrix is exhibited.
+Proving that the count is zero remains RH; the existing quantitative
+positive ranges are unchanged. Written proofs only; no scientific
+computation, source replay or workflow dispatch.
+
+Preceding RH development: [CSS-1 — curvature-square symmetry and the critical line](RH_CURVATURE_SQUARE_SYMMETRY.md).
 The exact QG adjoint identity and NT-3's metric-compatible half
 coefficient are recovered with their distinct assumptions. On the actual
 RH source, the native square is -4y(1-y)I. Its modewise reality at
