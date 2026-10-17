@@ -1,6 +1,18 @@
 # Publications
 
-Latest RH continuation: [MOR-1 — moving observers return finite-anchor signs](RH_MOVING_OBSERVER_RETURN.md).
+Latest RH continuation: [QRI-1 — quadrant signs, invariant ratios and growing banks](RH_REFLECTION_RATIO_GATE.md).
+All four Maxwell charts are reconciled with the actual VTPS source,
+and a normalized Schur ratio identifies exactly which reflection signs
+cancel. For the actual xi response, the first infinity correction
+couples opposite Chebyshev parities. Its uniform remainder proves
+unconditional unshifted Hankel positivity through a size proportional
+to log a at sufficiently large anchors, with a quadratic even/odd
+ratio correction. A hypothetical negative direction must therefore
+move to at least logarithmic depth, while MOR retains its linear
+upper detection bound. The RH-required growing-bank schedule remains
+open. Written proofs only; no new scientific computation or replay.
+
+Preceding RH continuation: [MOR-1 — moving observers return finite-anchor signs](RH_MOVING_OBSERVER_RETURN.md).
 An explicit weighted observer preserves the actual source polynomial
 pairing across every outward anchor move. Finite polynomial observers
 return whole moment banks with a proved error controlled by retained
