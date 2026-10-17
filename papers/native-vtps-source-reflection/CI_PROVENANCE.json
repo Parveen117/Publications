@@ -1,0 +1,30 @@
+{
+  "protocol": "VSR1_GITHUB_INCREMENTAL_V1",
+  "repository": "Parveen117/Publications",
+  "run_id": "38999215693",
+  "run_attempt": "1",
+  "source_head_sha": "4aea9b444b3c1b910d7515a30deba38298e44033",
+  "checkout_commit": "4e0e96e805dc1becb4bba737720d03579f979713",
+  "source_tree": "4f2fed642f2968e4071dc1f873db8ea27f81bb35",
+  "predecessor_commit": "0c98adf69682f6fee48be85dcbcb7667d77dea2e",
+  "predecessor_tested_commit": "724c8a6a58a4a6955a53dbc4999f1630f0a64e27",
+  "predecessor_run_id": 38997057551,
+  "reused_stages": 59,
+  "executed_stages": 1,
+  "predecessor_sources_unchanged": true,
+  "outputs": {
+    "SOURCE_PINS.json": "fe116e063f03c5351811558862ad5d71ecaa6e4da9c5472fa45fa56dba82c6ee",
+    "CERTIFICATE.json": "b8ffcfdd6c44202174de8be098af36e4771a8c3319260113a55fc7d9bbfe4eb7",
+    "EXPECTED.sha256": "0d17ceb01824be4492c53d8836f451767d66db6ff863c09d64ec94235731bd7c"
+  },
+  "report": {
+    "status": "PASS_VSR1_VTPS_SOURCE_REFLECTION",
+    "exact_checks": 93,
+    "symbolic_certificates": 0,
+    "negative_controls": 17,
+    "source_deformations": 4,
+    "off_cut_mirror_pairs": 3,
+    "sha256": "b8ffcfdd6c44202174de8be098af36e4771a8c3319260113a55fc7d9bbfe4eb7"
+  },
+  "scope": "59 immutable passing stages reused; new stage executed on GitHub; import commit not freshly replayed"
+}
