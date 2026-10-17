@@ -1,6 +1,22 @@
 # Publications
 
-Latest RH development: [FCP-1 — finite-cut error and a wider positive prime window](RH_FINITE_CUT_POSITIVITY.md).
+Latest RH development: [GCC-1 — Gamma cuts and finite certificate completeness](RH_GAMMA_CUT_CERTIFICATES.md).
+A positive-separation Gamma cut gives a bounded lower source whose
+spectral bottom converges upward to the actual arithmetic source bottom.
+For this bounded source, finite-mode memory residuals converge to zero.
+Every strictly positive fixed window therefore admits a finite positive
+certificate with prime-record and memory errors retained; every negative
+window admits a finite polynomial witness with an outward upper bound.
+Strict spectral brackets have finite certificates. Applying the positive
+construction to q_j+||g||^2/r gives an exact RH criterion: such a finite
+certificate must exist for every positive integer width j and tolerance
+index r. No infinite-dimensional inverse enters the certificate data.
+Those all-width inequalities remain unproved; completeness of the
+certificate mechanism does not establish their signs. Positive windows
+are unchanged. Written proofs only; no scientific computation, replay
+or workflow dispatch.
+
+Preceding RH development: [FCP-1 — finite-cut error and a wider positive prime window](RH_FINITE_CUT_POSITIVITY.md).
 On the unchanged real even family with zero constant and cosh(x/2)
 moments, the actual source has Q_xi[g]>=||g||^2/6000 for L<=111/200.
 This extends TPW's half-width 11/20 using sharper Gamma constants,
