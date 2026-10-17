@@ -1,6 +1,23 @@
 # Publications
 
-Latest RH development: [PRW-1 — pole recovery and the unrestricted positive window](RH_POLE_RECOVERY_WINDOW.md).
+Latest RH development: [RLO-1 — relational observers and coincident source readings](RH_RELATIONAL_OBSERVER_CONFLUENCE.md).
+An exact divided-difference kernel relates actual xi-source readings
+at different observer positions. Newton observer changes retain its
+inertia, and its determinant divided by the squared spacing Vandermonde
+has a regular coincident limit equal to the shifted source Hankel bank.
+An explicit 8N^2 h bound transfers strict finite signs to separated
+observers. At any one finite anchor, positivity on the fixed dyadic
+observer sequence is equivalent to RH. A hypothetical negative source
+direction would persist in arbitrarily tight finite observer clusters.
+The infinite-anchor kernel has a closed positive Cauchy determinant;
+its joint fixed-N, zero-spacing limit is 2^(-N(2N-1)).
+The Gamma infinity-minus-infinity reading has an exact correction
+(||g||^2/2) log(rho) when the relative cutoff is changed.
+The all-size finite-anchor sign remains unproved. The full and
+restricted positive support windows are unchanged. Written proofs only;
+no scientific computation, source replay or workflow dispatch.
+
+Preceding RH development: [PRW-1 — pole recovery and the unrestricted positive window](RH_POLE_RECOVERY_WINDOW.md).
 Retaining the actual pole square and its controlled cosh-profile error
 extends the positive range for the full real even source from L<=1/32
 to L<=1/5, with q_L[g]>=||g||^2/300. No zero-mean or cosh-neutrality
