@@ -8,6 +8,9 @@ the derived structure.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| Weighted-channel observer transport and nested cut update | Isometric transport and one exact boundary projection per direction proved | LOT-T1/T2 | Different embedding from LDC natural doubled-H inclusion; co-carried readings preserved, new full-cut reading includes a boundary term |
+| Continuation-window position as boundary overlap | p_N=h_N/W_N equals the sole nonzero compressed-boundary eigenvalue | LOT-T3/T4 | 27 actual transitions; compressed wave loss is 4p_N(1-p_N), not the full transport discrepancy 4p_N |
+| Exact fixed-polynomial saturation and increasing cut limit | One additional direction suffices for a fixed polynomial pair; conditional strong limit proved | LOT-T5/T6 | Actual all-order source positivity is still required for the infinite completion; no operator-norm or physical identification claim |
 | Exact source compatibility across carrier depth | Isometric compression, rank-one boundary and positive determinant innovation proved | LDC-T1/T2 | 27 actual finite transitions; unbounded actual-source positivity remains open |
 | Stable finite observer records and consistent deletion | Word probabilities stabilize through length 2N-1; factorial readings and adjacent squared-error law proved | LDC-T3 | 54 actual adjacent couplings through length19; L2 limit with error (c_1-c_2)/m is conditional on all-order source positivity |
 | Natural inclusion intertwines all finite cuts or waves | Obstructed under strict source growth | LDC-T4 | Deeper cut compression has nonzero positive defect; specified record probabilities still stabilize exactly; physical interpretation open |

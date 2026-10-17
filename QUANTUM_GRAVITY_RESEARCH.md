@@ -10,6 +10,35 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Observer transport and the depth boundary, 17 October:
+[LOT-1](papers/native-layer-observer-transport/THEOREM.md) represents
+the inherited cut rationally in G_N=diag(A_N,B_N). The natural
+coefficient inclusion is isometric in these channel pairings and
+embeds the old cut range inside the new one. Their exact difference
+is one orthogonal boundary projection. Its compression to the old
+observer space has sole nonzero eigenvalue p_N=h_N/W_N, identifying
+the LCW continuation position with a cut-overlap measurement.
+
+Co-carried observers preserve their readings and the two channel
+norms stay fixed. Measuring the newly enlarged cut adds the explicit
+term h_N|ell^T(x-z)|^2. Thus nesting does not imply full cut
+intertwining or invariant readings for an observer that was changed.
+The compressed wave has squared-norm loss eigenvalue 4p_N(1-p_N);
+the full-wave transport discrepancy instead has squared norm 4p_N.
+The metric change is explicit and does not evade LDC-T4.
+
+For any fixed polynomial pair, the cut action is exact after one
+additional direction. Under all-order actual-source positivity, the
+padded cuts are increasing orthogonal projections with a strong
+limit on L2(y nu) plus L2((1-y)nu). No uniform endpoint gap or
+unjustified inverse square root is needed. The actual all-order
+positivity premise remains open.
+
+LOT validation: 181 exact checks, 2 symbolic certificates, 20 negative
+controls and 25 source pins; 27 actual transitions from the same
+three retained jets, with no new derivatives. It adds the 57th
+integrated stage. Physical interpretation remains open.
+
 Observer compatibility across source depth, 17 October:
 [LDC-1](papers/native-layer-depth-compatibility/THEOREM.md) proves
 that the natural inclusion compresses the next Y to the previous Y,
