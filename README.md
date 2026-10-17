@@ -1,6 +1,21 @@
 # Publications
 
-Latest RH continuation: [BPC-1 — boundary energy and paired prime caps](RH_BOUNDARY_PRIME_CAPS.md).
+Latest RH continuation: [TPW-1 — quadratic kernel cancellation and a two-prime window](RH_TWO_PRIME_WINDOW.md).
+On the unchanged real even family with zero constant and cosh(x/2)
+moments, the actual source has Q_xi[g]>=||g||^2/500 for L<=11/20.
+Both primes 2 and 3 are active at the endpoint. A quadratic Gamma
+kernel bound has an exact correlation-moment cancellation, and
+the joint weighted estimate uses the large boundary energy on
+the prime-3 caps to control both prime terms there. The restricted
+compact norm is at most 2000/2001 in this range.
+The general polynomial identity retains higher-degree moment
+residuals explicitly; it does not add new moment conditions.
+BPC's stronger margin 1/80 for L<=1/2 remains available.
+All-width RH positivity, a larger unrestricted positive window and
+a larger uniform finite-bank positivity range remain unproved.
+Written proofs only; no scientific computation or replay is added.
+
+Preceding RH continuation: [BPC-1 — boundary energy and paired prime caps](RH_BOUNDARY_PRIME_CAPS.md).
 For the unchanged real even family with zero constant and cosh(x/2)
 moments, the actual source has Q_xi[g]>=||g||^2/80 for L<=1/2.
 A position-dependent Gamma lower weight is even and log-convex.
