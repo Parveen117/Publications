@@ -1,6 +1,20 @@
 # Publications
 
-Latest RH continuation: [FPW-1 — a first-prime window with fixed neutral moments](RH_FIRST_PRIME_WINDOW.md).
+Latest RH continuation: [BPC-1 — boundary energy and paired prime caps](RH_BOUNDARY_PRIME_CAPS.md).
+For the unchanged real even family with zero constant and cosh(x/2)
+moments, the actual source has Q_xi[g]>=||g||^2/80 for L<=1/2.
+A position-dependent Gamma lower weight is even and log-convex.
+It bounds the product of the two energies in each translated prime
+pair, extending FPW's first-prime range without adding constraints.
+The restricted compact norm is at most 256/257 in the new range.
+The note also proves a finite sufficient interval-boundary test and
+a general weighted comparison for the full active-prime sum.
+Prime 2 is active at the endpoint; prime 3 is still beyond it.
+The all-width RH condition, a larger unrestricted positive window
+and a larger uniform finite-bank positivity range remain unproved.
+Written proofs only; no scientific computation or replay is added.
+
+Preceding RH continuation: [FPW-1 — a first-prime window with fixed neutral moments](RH_FIRST_PRIME_WINDOW.md).
 For real even tests with zero constant and cosh(x/2) moments, the
 actual source has Q_xi[g]>=||g||^2/250 for L<=2/5. This crosses
 the first prime threshold: n=2 is active and bounded using disjoint
