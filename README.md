@@ -1,6 +1,26 @@
 # Publications
 
-Latest RH development: [MCW-1 — mixed channels and the unrestricted quarter window](RH_MIXED_CHANNEL_WINDOW.md).
+Latest RH development: [OPC-1 — one retained source channel across the first prime](RH_FIRST_PRIME_ONE_CHANNEL.md).
+At L = 7/20, prime 2 is active and its signed correlation is
+absorbed by a proved logarithmic boundary surplus.
+For every L <= 7/20, the complete mean-zero even family has
+q_L[g] - ell(g)^2 >= (18863/300000)||g||^2 > ||g||^2/16
+for nonzero g. The cosh moment is arbitrary.
+This proves a coercive complement to the constant observer,
+so the full source has an exact one-scalar Schur sign condition
+with all unresolved memory retained. Its sign is not established.
+Returning the actual pole gives s = alpha_0 - mu +
+(p - nu)^2/(1 + kappa), with 0 <= kappa < 1/4000.
+A change of representative within the unit-mean fibre preserves
+the returned potential; an outward residual enclosure retains
+the unresolved error. No trial or certificate is evaluated.
+MCW's full-family positive interval L <= 1/4 and FCP's separate
+two-moment interval L <= 111/200 remain unchanged.
+The new mean-zero result is not a full-family extension or RH
+closure. Written derivations only; no scientific computation,
+independent agent, source replay, or workflow dispatch.
+
+Preceding RH development: [MCW-1 — mixed channels and the unrestricted quarter window](RH_MIXED_CHANNEL_WINDOW.md).
 The complete real even source is strictly positive for L <= 1/4,
 extending PRW's unrestricted half-width 1/5 by a factor 5/4.
 No constant, quadratic, or cosh moment is set to zero.
