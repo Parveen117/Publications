@@ -8,6 +8,8 @@ the derived structure.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| Actual infinite analytic scalar return | Entire function and explicit rational remainder proved | LAR-T1/T2 | Uses unconditional LAA Cauchy bound; positive/unitary realization is an additional condition |
+| Full use of retained source coefficients | Degree-36 partial polynomial and missing-coefficient error proved | LAR-T3/T4 | Nine readings from existing c0..c19; no new derivative, RH proof or physical identification |
 | Exact wave state and correlation depth bands | State horizon d and scalar horizon 2d proved, d=M-N | LWP-T1/T2/T3 | Strict first failures; 300 actual return readings and 27 first increments 2^(4M-3)h_M; correlations are signed amplitudes |
 | Source-defined continuous exponential and finite error | Skew generator [P,Z], unitary group and separate factorial bounds proved | LWP-T4/T5 | Nine finite exponential return enclosures; normalized radius1/20! at M10,tau1; tau is not identified physical time and exp(L) need not equal W |
 | Infinite exponential transport | Conditional uniform-compact strong convergence proved | LWP-T6 | Actual all-order positivity remains required; finite common intervals do not assert that all source extensions exist |
