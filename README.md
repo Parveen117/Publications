@@ -1,5 +1,16 @@
 # Publications
 
+Latest RH continuation: [MOR-1 — moving observers return finite-anchor signs](RH_MOVING_OBSERVER_RETURN.md).
+An explicit weighted observer preserves the actual source polynomial
+pairing across every outward anchor move. Finite polynomial observers
+return whole moment banks with a proved error controlled by retained
+depth divided by anchor ratio. Fixed accuracy needs at most linear
+depth growth; any hypothetical negative witness persists in linearly
+growing banks. Positivity along an unbounded sequence of banks whose
+size divided by anchor ratio tends to infinity is equivalent to RH.
+The required growing-bank positivity remains open. Written proofs only;
+no numerical source evaluation or scientific replay is added.
+
 Latest infinity/cut continuation: [NIF-1 — the actual source at infinite anchor](RH_INFINITY_CUT_FIXED_POINT.md).
 The normalized actual xi response tends to (1+z)^(-1/2), with a
 fixed-order correction, without assuming RH. Its limiting moments are
@@ -12,7 +23,7 @@ limits matters: the limiting law loses some finite-source information,
 and the fixed-anchor all-order RH condition remains open.
 Written proofs only; no new numerical computation or replay is added.
 
-Latest RH continuation: [finite observer detection and one Hankel tower](RH_FINITE_OBSERVER_DETECTOR.md).
+Preceding RH continuation: [finite observer detection and one Hankel tower](RH_FINITE_OBSERVER_DETECTOR.md).
 A hypothetical off-line pair produces a finite 2x2 compression with
 negative determinant, with an explicit sufficient depth from its isolation data.
 For the actual source, RH is equivalent to positivity of every unshifted
