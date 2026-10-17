@@ -1,6 +1,14 @@
 # Publications
 
-Latest RH continuation: [an exact high-zero envelope and verified-height frontier](RH_VERIFIED_HEIGHT_FRONTIER.md).
+Latest RH continuation: [finite observer detection and one Hankel tower](RH_FINITE_OBSERVER_DETECTOR.md).
+A hypothetical off-line pair produces a finite 2x2 compression with
+negative determinant, with an explicit sufficient depth from its isolation data.
+For the actual source, RH is equivalent to positivity of every unshifted
+Hankel matrix H_N=(c_(i+j)). Comparison products show that counts, symmetry,
+finite-height data, and the anchor budget alone do not force this positivity.
+No actual negative witness or new positive index region is asserted.
+
+Preceding RH continuation: [an exact high-zero envelope and verified-height frontier](RH_VERIFIED_HEIGHT_FRONTIER.md).
 A decreasing high-zero envelope gives a row-dependent positive frontier
 in the kernel peak height G=sqrt(ak/r), including G<=0.99T.
 Combined with the retained tail, this covers every k in scalar rows
