@@ -22,6 +22,19 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[LAA-1: connected source atlas and retained remainder](papers/native-layer-anchor-atlas/THEOREM.md)
+derives an exact positive differentiated geometric-tail formula valid
+for every retained derivative inside the source disk. Finite Taylor
+transport composes exactly, while actual-source forecasts keep their
+original jet, normalization, degree and cumulative displacement.
+Recentring a polynomial cannot erase its source error. Fresh complete
+jets at s=31 and s=33 supply legitimate restarts. Six overlapping
+uniform certificates prove both actual 3x3 forms throughout s in
+[27,35] and both 4x4 forms throughout [28,34]. Same-anchor cuts agree
+on overlaps; separately rebuilt finite rational models generally do
+not agree as functions. All-order source signs remain the independent
+RH obligation. Anchor coverage at fixed order cannot replace it.
+
 [LAT-1: moving source anchors and continuous positivity](papers/native-layer-anchor-transport/THEOREM.md)
 derives dot c_n=(n+c_1)c_n-(n+1)c_(n+1) along logarithmic anchor
 motion. The finite positive model has an exact fractional-linear
