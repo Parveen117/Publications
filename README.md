@@ -1,6 +1,13 @@
 # Publications
 
-Latest RH continuation: [verified-height overlap and a sharper phase tail](RH_VERIFIED_HEIGHT_OVERLAP.md).
+Latest RH continuation: [an exact high-zero envelope and verified-height frontier](RH_VERIFIED_HEIGHT_FRONTIER.md).
+A decreasing high-zero envelope gives a row-dependent positive frontier
+in the kernel peak height G=sqrt(ak/r), including G<=0.99T.
+Combined with the retained tail, this covers every k in scalar rows
+r<10^18. The remaining RH condition is an explicit unbounded height band;
+the verified zero height T is unchanged. No numerical replay is added.
+
+Preceding RH continuation: [verified-height overlap and a sharper phase tail](RH_VERIFIED_HEIGHT_OVERLAP.md).
 The written proof gives positivity for k<=T^2 r/(10a) and for
 k>=100(r+1)^2 log(2r+2), using the retained a=3249/4 and T=3*10^12.
 Their overlap covers every k in each scalar binomial row r<10^17.
