@@ -22,6 +22,20 @@ The 2 October audit read the EMK/UGD publication guide and lineage, generalized-
 
 ## Current mathematical continuation
 
+[LWP-1: wave horizons and exponential readings](papers/native-layer-wave-propagation/THEOREM.md)
+derives exact state propagation through M-N steps and exact old-state
+correlations through 2(M-N) steps, with strict boundary witnesses.
+The first unresolved constant-seed wave return at k=2M-1 changes by
+2^(4M-3)h_M. The source skew generator [P,Z]=(W-W^sharp)/2 has
+norm at most one and yields a unitary exponential. Its finite-depth
+state and correlation errors have different factorial-tail orders.
+A sharper common first-channel return interval uses only
+D_(j+1,j), j<M, and has normalized radius |tau|^(2M)/(2M)!.
+The infinite strong limit, uniform on bounded parameter sets, remains
+conditional on all-order actual-source positivity. The exponential
+is not identified with a logarithmic interpolation of W or with
+physical time.
+
 [LOT-1: observer transport and the depth boundary](papers/native-layer-observer-transport/THEOREM.md)
 uses G_N=diag(A_N,B_N) to represent the inherited cut without matrix
 square roots. Channel-wise polynomial inclusion is isometric; embedded

@@ -8,6 +8,9 @@ the derived structure.
 
 | Target | Verdict | Evidence | Exact boundary |
 |---|---|---|---|
+| Exact wave state and correlation depth bands | State horizon d and scalar horizon 2d proved, d=M-N | LWP-T1/T2/T3 | Strict first failures; 300 actual return readings and 27 first increments 2^(4M-3)h_M; correlations are signed amplitudes |
+| Source-defined continuous exponential and finite error | Skew generator [P,Z], unitary group and separate factorial bounds proved | LWP-T4/T5 | Nine finite exponential return enclosures; normalized radius1/20! at M10,tau1; tau is not identified physical time and exp(L) need not equal W |
+| Infinite exponential transport | Conditional uniform-compact strong convergence proved | LWP-T6 | Actual all-order positivity remains required; finite common intervals do not assert that all source extensions exist |
 | Weighted-channel observer transport and nested cut update | Isometric transport and one exact boundary projection per direction proved | LOT-T1/T2 | Different embedding from LDC natural doubled-H inclusion; co-carried readings preserved, new full-cut reading includes a boundary term |
 | Continuation-window position as boundary overlap | p_N=h_N/W_N equals the sole nonzero compressed-boundary eigenvalue | LOT-T3/T4 | 27 actual transitions; compressed wave loss is 4p_N(1-p_N), not the full transport discrepancy 4p_N |
 | Exact fixed-polynomial saturation and increasing cut limit | One additional direction suffices for a fixed polynomial pair; conditional strong limit proved | LOT-T5/T6 | Actual all-order source positivity is still required for the infinite completion; no operator-norm or physical identification claim |

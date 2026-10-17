@@ -10,6 +10,34 @@ Preserve frozen predecessor packets. Distinguish an algebraic proof, a written a
 
 ## Current result
 
+Exact wave horizons and exponential readings, 17 October:
+[LWP-1](papers/native-layer-wave-propagation/THEOREM.md) extends
+LOT polynomial transport to repeated forward and inverse waves.
+For old pairs of degree below N, a carrier M resolves the full
+state through |k|<=M-N. Correlations against old polynomial
+observers remain exact through |k|<=2(M-N). The different degree
+counts are proved and strict first-failure witnesses are retained.
+For the first-channel constant seed, the first unresolved return
+changes by exactly 2^(4M-3)h_M at step2M-1.
+
+The skew part L=[P,Z]=(W-W^sharp)/2 is bounded by one in the
+acquired pairing. Its unitary exponential exp(tau L) has separate
+factorial-tail bounds for state and correlation comparisons. It
+is a specified source-defined flow, not a uniquely selected physical
+clock or the logarithm of W. A sharper constant-seed enclosure uses
+the ten binomial readings D_(j+1,j), j=0,...,9. At tau=1 its
+normalized Taylor remainder radius is exactly 1/20!; the printed
+interval also retains the original source uncertainty. Every
+compatible certified deeper finite carrier lies in this common
+interval. Infinite extension still requires all-order positivity.
+
+LWP validation: 528 exact checks, 3 symbolic certificates, 19 negative
+controls and 25 source pins. The three retained actual jets certify
+300 resolved wave returns, 27 first boundary return increments and
+nine exponential enclosures. No new derivative or engine change is
+used. This is the 58th integrated replay stage. Physical
+interpretation remains open.
+
 Observer transport and the depth boundary, 17 October:
 [LOT-1](papers/native-layer-observer-transport/THEOREM.md) represents
 the inherited cut rationally in G_N=diag(A_N,B_N). The natural
