@@ -1,0 +1,26 @@
+{
+  "protocol": "LCT1_SOURCE_PINS_V1",
+  "branch_base_commit": "167eee544a2c5cfb5cef5b8032c82ac26a4b2e0d",
+  "jed_t5_reference": "claude/jet-entry-development@72d6530a2b85cd34d73a6da70517e43037b7c61e",
+  "files": {
+    "verify.cjs": "2da96b1667b968d6b91353615faad35db40d7f2a8520167d62c1e82da11f3028",
+    "run.py": "2082f5ad324d01f6037aed24c58befce3bbaecaa75554bb63dab6e7e213370b4",
+    "THEOREM.md": "231d1ca672000c96e8577a8e9efac87ccc01fc095b22def4bbd58c2f2c693fa7",
+    "SOURCE_MAP.md": "a3d887fb3736ec8533875cf9f7cd38f0a0333e1a183166070d1c3d2004772dce",
+    "README.md": "a15ff5060d3e0593556759ee988be70d6f81c3a4ee57dad44daf83f9cfad62d2",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-infinite-layer-cut/THEOREM.md": "cd1239bcccaacad152f8aa77be4d84ff63a801e6aac11a54d67a78d3ce8af592",
+    "../native-layer-continuation-window/THEOREM.md": "453d353e313f8a8097a1d335b2a5b3720f50e06ee3d896156f9b1c3d8c34ae28",
+    "../native-layer-anchor-transport/THEOREM.md": "404ee66f04b430575308f47ea83e7ebbb956e1886b41a0bbbbc7b7f53367ad0a",
+    "../native-layer-anchor-atlas/THEOREM.md": "c1e7e356fd78310f427bd6809b22bbf6f02847fa930eb1d7be0414131deb2605",
+    "../native-layer-depth-compatibility/THEOREM.md": "77e0d1a3138e6b7697eec72de339f69c750d09a8ea623cf3a41edba8b1e91484",
+    "../native-layer-observer-transport/THEOREM.md": "b32d618bfb47c5f24f6b231eca4f26b60299b8a38efe574c23a913cedeb0846a",
+    "../../RH_FINITE_OBSERVER_DETECTOR.md": "af0f40623484e9589e11c4e960494583a270aedadb0ad4e64e4f7eb1de904929",
+    "../../RH_CLOSURE_AUDIT.md": "bf1e367322608bb03d4b741c3ee14d87206ac511d4bfa34d5f227d66711b6cfb",
+    "../../RH_RELATIONAL_OBSERVER_CONFLUENCE.md": "9910742878536d832099f19d75397c9e7f86426b06abaa6441d9875a9cf2bb80",
+    "../../RH_CONJUGATE_CANCELLATION_INDEX.md": "a27c87647590c13fc6a07e877314809883912428414007f889afe7b9e5343df5",
+    "../../RH_RESIDUAL_COMPLETION.md": "25b6160af945c6a3c185fc54ce6a15fc2f6f3b4d0f293cb105d5cccecdbed077",
+    "../../RH_FAITHFUL_WAVE_TRANSPORT.md": "759994ca9344d060f74452a4314122dba2d506ec66b15fa76c9cc332d2126b80",
+    "../../RH_SHUNYA_POTENTIAL.md": "7fe7136fa7553ec64d011200658c60e7d6ad1788329c7a3d9505f2b8b9497315"
+  }
+}

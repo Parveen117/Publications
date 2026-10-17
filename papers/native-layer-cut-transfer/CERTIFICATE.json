@@ -1,0 +1,2629 @@
+{
+ "protocol": "LCT1_LAYER_CUT_TRANSFER_V1",
+ "scope": "Finite exact regression witnesses for LCT-1. Algebraic identities on finite rational and Gaussian-rational bilinear sources. Not a certificate about the xi source, not an all-depth statement.",
+ "engine": "papers/native-common-cone-limit/native_engine/native_operator.cjs (Cut = Q + iota Q), unchanged",
+ "counts": {
+  "checks": 389,
+  "negative_controls": 65
+ },
+ "checks": [
+  {
+   "name": "T1 S1_positive_six_point: generator preserves normalization sum Dw = 0",
+   "passed": true
+  },
+  {
+   "name": "T1 S1_positive_six_point: d c_0/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S1_positive_six_point: d c_1/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S1_positive_six_point: d c_2/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S1_positive_six_point: d c_3/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S1_positive_six_point: d c_4/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S1_positive_six_point: d c_5/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S1_positive_six_point: d c_6/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S1_positive_six_point: d c_7/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S1_positive_six_point: d c_8/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: generator preserves normalization sum Dw = 0",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: d c_0/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: d c_1/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: d c_2/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: d c_3/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: d c_4/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: d c_5/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: d c_6/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: d c_7/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S2_indefinite_real: d c_8/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: generator preserves normalization sum Dw = 0",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: d c_0/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: d c_1/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: d c_2/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: d c_3/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: d c_4/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: d c_5/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: d c_6/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: d c_7/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3_conjugate_pair_comparison: d c_8/d log a = (n+c_1)c_n-(n+1)c_(n+1)",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_0 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_1 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_2 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_3 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_4 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_5 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_6 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_7 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_8 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_9 real",
+   "passed": true
+  },
+  {
+   "name": "T1 S3: conjugate cancellation makes c_10 real",
+   "passed": true
+  },
+  {
+   "name": "T1 transport: Moebius chart u -> rho u/(1+(rho-1)u) gives the b-chart spectral values",
+   "passed": true
+  },
+  {
+   "name": "T1 transport: weight tilt w/(1+(rho-1)u), renormalized, gives the b-chart weights",
+   "passed": true
+  },
+  {
+   "name": "T1 transport: the tilt total is the normalization cocycle q(b)/q(a)",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=1: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=1: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=1: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=1: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=1: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=1 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=1 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=1 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=1 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=1 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=1 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=1 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=1 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=1: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=1: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=1: f_(N+2)-f_N vanishes to order 2N",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=1: composed one-step maps equal the direct N->N+2 transfer",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=1 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=2: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=2: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=2: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=2: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=2: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=2 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=2 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=2 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=2 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=2 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=2 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=2 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=2 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=2: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=2: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=2: f_(N+2)-f_N vanishes to order 2N",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=2: composed one-step maps equal the direct N->N+2 transfer",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=2 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=3: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=3: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=3: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=3: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=3: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=3 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=3 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=3 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=3 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=3 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=3 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=3 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=3 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=3: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=3: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=3: f_(N+2)-f_N vanishes to order 2N",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=3: composed one-step maps equal the direct N->N+2 transfer",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=3 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=4: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=4: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=4: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=4: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=4: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=4 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=4 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=4 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=4 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=4 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=4 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=4 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=4 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=4: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=4: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=4: f_(N+2)-f_N vanishes to order 2N",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=4: composed one-step maps equal the direct N->N+2 transfer",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=4 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=5: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=5: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=5: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=5: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S1_positive_six_point N=5: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=5 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=5 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=5 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=5 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=5 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=5 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=5 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1_positive_six_point N=5 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=5: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S1_positive_six_point N=5: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S1_positive_six_point N=5 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=1: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=1: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=1: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=1: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=1: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=1 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=1 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=1 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=1 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=1 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=1 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=1 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=1 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=1: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=1: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=1: f_(N+2)-f_N vanishes to order 2N",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=1: composed one-step maps equal the direct N->N+2 transfer",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=1 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=2: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=2: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=2: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=2: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=2: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=2 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=2 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=2 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=2 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=2 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=2 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=2 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=2 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=2: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=2: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=2: f_(N+2)-f_N vanishes to order 2N",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=2: composed one-step maps equal the direct N->N+2 transfer",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=2 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=3: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=3: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=3: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=3: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S2_indefinite_real N=3: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=3 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=3 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=3 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=3 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=3 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=3 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=3 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S2_indefinite_real N=3 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=3: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S2_indefinite_real N=3: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S2_indefinite_real N=3 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=1: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=1: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=1: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=1: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=1: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=1 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=1 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=1 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=1 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=1 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=1 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=1 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=1 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=1: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=1: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=1: f_(N+2)-f_N vanishes to order 2N",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=1: composed one-step maps equal the direct N->N+2 transfer",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=1 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=2: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=2: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=2: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=2: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=2: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=2 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=2 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=2 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=2 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=2 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=2 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=2 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=2 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=2: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=2: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=2: f_(N+2)-f_N vanishes to order 2N",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=2: composed one-step maps equal the direct N->N+2 transfer",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=2 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=3: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=3: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=3: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=3: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=3: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=3 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=3 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=3 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=3 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=3 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=3 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=3 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=3 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=3: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=3: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=3: f_(N+2)-f_N vanishes to order 2N",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=3: composed one-step maps equal the direct N->N+2 transfer",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=3 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=4: (f-R_N/Q_N) Q_N^2 = lambda^(2N) E_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=4: Q_N(0)=1 and deg Q_N=N, deg R_N<=N-1",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=4: Q_N has real coefficients",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=4: E_N(0)=L[P_N^2]=h_N",
+   "passed": true
+  },
+  {
+   "name": "T2 S3_conjugate_pair_comparison N=4: h_N = det H_(N+1)/det H_N",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=4 k=0: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=4 k=0: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=4 k=1: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=4 k=1: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=4 k=2: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=4 k=2: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=4 k=3: e_(N,k) = sum p_i p_j c_(i+j+k)",
+   "passed": true
+  },
+  {
+   "name": "T3 S3_conjugate_pair_comparison N=4 k=3: c_(2N+k) recovered from e_(N,k) and lower layers",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=4: E_N Q_(N+1)^2 = h_N Q_N Q_(N+1) + lambda^2 Q_N^2 E_(N+1)",
+   "passed": true
+  },
+  {
+   "name": "T4 S3_conjugate_pair_comparison N=4: R_(N+1)Q_N - R_N Q_(N+1) = h_N lambda^(2N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=-1/2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=-1/2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=-1/3: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=-1/3: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=2: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=2: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=-3/4: f-f_N = K_N E_N with K_N>=0",
+   "passed": true
+  },
+  {
+   "name": "T5 S3_conjugate_pair_comparison N=4 lambda=-3/4: sign(f-f_N)=sign(E_N)",
+   "passed": true
+  },
+  {
+   "name": "T3 S1 saturation: six support points give h_6 = 0",
+   "passed": true
+  },
+  {
+   "name": "T3 S1 saturation: E_6 = 0 identically, so f = f_6 exactly",
+   "passed": true
+  },
+  {
+   "name": "T5 S1 positive source: every cut correction is positive on both sides of the plane",
+   "passed": true
+  }
+ ],
+ "negative_controls": [
+  {
+   "name": "T1 control: the untilted transported weights are not the b-chart weights",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S1_positive_six_point N=1: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=1: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=1: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=1: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S1_positive_six_point N=1: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S1_positive_six_point N=2: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=2: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=2: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=2: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S1_positive_six_point N=2: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S1_positive_six_point N=3: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=3: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=3: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=3: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S1_positive_six_point N=3: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S1_positive_six_point N=4: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=4: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=4: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=4: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S1_positive_six_point N=4: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S1_positive_six_point N=5: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=5: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=5: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S1_positive_six_point N=5: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S1_positive_six_point N=5: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S2_indefinite_real N=1: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2_indefinite_real N=1: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2_indefinite_real N=1: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2_indefinite_real N=1: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S2_indefinite_real N=1: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S2_indefinite_real N=2: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2_indefinite_real N=2: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2_indefinite_real N=2: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2_indefinite_real N=2: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S2_indefinite_real N=2: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S2_indefinite_real N=3: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2_indefinite_real N=3: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2_indefinite_real N=3: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2_indefinite_real N=3: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S2_indefinite_real N=3: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S3_conjugate_pair_comparison N=1: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=1: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=1: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=1: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S3_conjugate_pair_comparison N=1: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S3_conjugate_pair_comparison N=2: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=2: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=2: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=2: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S3_conjugate_pair_comparison N=2: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S3_conjugate_pair_comparison N=3: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=3: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=3: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=3: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S3_conjugate_pair_comparison N=3: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T4 control S3_conjugate_pair_comparison N=4: a wrong reference-plane innovation h_N+1/1000 breaks the step",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=4: the cut alone does not transfer the tower, f-f_N != 0 at lambda=1/2",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=4: flatness order 2N-1 instead of 2N fails the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3_conjugate_pair_comparison N=4: an unsquared factor lambda^(2N)/Q_N fails",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S3_conjugate_pair_comparison N=4: a non-orthogonal cut polynomial breaks the factorization",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S1: no orthogonal P_7 exists (det H_7 = 0); the cut depth cannot exceed the support",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S2: the universal factor K_N>=0 does not give a sign, the indefinite real source has a negative correction",
+   "rejected": true
+  },
+  {
+   "name": "T5 control S3: the conjugate-pair comparison source has a negative correction although every moment is real",
+   "rejected": true
+  },
+  {
+   "name": "T2 control S3: replacing the bilinear w P(u)^2 by w |P(u)|^2 breaks the factorization",
+   "rejected": true
+  }
+ ],
+ "records": {
+  "sources": {
+   "S1_positive_six_point": {
+    "points": [
+     [
+      "1/2",
+      "0"
+     ],
+     [
+      "1/3",
+      "0"
+     ],
+     [
+      "1/5",
+      "0"
+     ],
+     [
+      "2/7",
+      "0"
+     ],
+     [
+      "3/4",
+      "0"
+     ],
+     [
+      "1/11",
+      "0"
+     ]
+    ],
+    "weights": [
+     [
+      "1/10",
+      "0"
+     ],
+     [
+      "1/5",
+      "0"
+     ],
+     [
+      "3/10",
+      "0"
+     ],
+     [
+      "1/10",
+      "0"
+     ],
+     [
+      "1/5",
+      "0"
+     ],
+     [
+      "1/10",
+      "0"
+     ]
+    ],
+    "cuts": [
+     {
+      "N": 1,
+      "h_N": [
+       "25600639/533610000",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "1",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "2104/5775",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": 1
+       }
+      ]
+     },
+     {
+      "N": 2,
+      "h_N": [
+       "292432144919/194286321447680",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "25600639/533610000",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "106626490681/118274952180",
+        "0"
+       ],
+       [
+        "23297903807/157699936240",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": 1
+       }
+      ]
+     },
+     {
+      "N": 3,
+      "h_N": [
+       "17709491893349/526377860854200000",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "292432144919/4049630323200000",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "8363374220961461/6755182547628900",
+        "0"
+       ],
+       [
+        "85068854745799081/202655476428867000",
+        "0"
+       ],
+       [
+        "1293311838261379/33775912738144500",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": 1
+       }
+      ]
+     },
+     {
+      "N": 4,
+      "h_N": [
+       "97189986399938793/199213598277140807778880",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "17709491893349/7289334581760000000000",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "9922045462192445287/6299974646139973260",
+        "0"
+       ],
+       [
+        "790207005416916468673/970196095505555882040",
+        "0"
+       ],
+       [
+        "77395722284043122219/485098047752777941020",
+        "0"
+       ],
+       [
+        "1551776238104502533/161699349250925980340",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": 1
+       }
+      ]
+     },
+     {
+      "N": 5,
+      "h_N": [
+       "414448164/881909135851296455",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "3599629125923659/3036945510107580825600000000000",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "31052971581991669021/16630286561767304580",
+        "0"
+       ],
+       [
+        "13973493737972789709/11086857707844869720",
+        "0"
+       ],
+       [
+        "47835099773470308/125987019407328065",
+        "0"
+       ],
+       [
+        "1667960412207716377/33260573123534609160",
+        "0"
+       ],
+       [
+        "2494595966806717/1108685770784486972",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": 1
+       }
+      ]
+     }
+    ]
+   },
+   "S2_indefinite_real": {
+    "points": [
+     [
+      "1/2",
+      "0"
+     ],
+     [
+      "1/3",
+      "0"
+     ],
+     [
+      "1/5",
+      "0"
+     ],
+     [
+      "3/4",
+      "0"
+     ]
+    ],
+    "weights": [
+     [
+      "3/5",
+      "0"
+     ],
+     [
+      "3/5",
+      "0"
+     ],
+     [
+      "-2/5",
+      "0"
+     ],
+     [
+      "1/5",
+      "0"
+     ]
+    ],
+    "cuts": [
+     {
+      "N": 1,
+      "h_N": [
+       "-22/1875",
+       "0"
+      ],
+      "h_sign": -1,
+      "det_H_N": [
+       "1",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "57/100",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": -1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": -1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": -1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": -1
+       },
+       {
+        "lambda": "2",
+        "E_sign": -1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": -1
+       }
+      ]
+     },
+     {
+      "N": 2,
+      "h_N": [
+       "240167/25344000",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "-22/1875",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "97/10560",
+        "0"
+       ],
+       [
+        "-13007/42240",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "2",
+        "E_sign": -1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": 1
+       }
+      ]
+     },
+     {
+      "N": 3,
+      "h_N": [
+       "363/9606680",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "-240167/2160000000",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "19205929/14410020",
+        "0"
+       ],
+       [
+        "2950397/5764008",
+        "0"
+       ],
+       [
+        "506911/9606680",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": 1
+       }
+      ]
+     }
+    ]
+   },
+   "S3_conjugate_pair_comparison": {
+    "points": [
+     [
+      "1/2",
+      "1/2"
+     ],
+     [
+      "1/2",
+      "-1/2"
+     ],
+     [
+      "1/4",
+      "0"
+     ],
+     [
+      "1/8",
+      "0"
+     ],
+     [
+      "1/16",
+      "0"
+     ]
+    ],
+    "weights": [
+     [
+      "1/8",
+      "-1/8"
+     ],
+     [
+      "1/8",
+      "1/8"
+     ],
+     [
+      "1/4",
+      "0"
+     ],
+     [
+      "1/4",
+      "0"
+     ],
+     [
+      "1/4",
+      "0"
+     ]
+    ],
+    "cuts": [
+     {
+      "N": 1,
+      "h_N": [
+       "67/4096",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "1",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "23/64",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": -1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": -1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": -1
+       }
+      ]
+     },
+     {
+      "N": 2,
+      "h_N": [
+       "-488545/2195456",
+       "0"
+      ],
+      "h_sign": -1,
+      "det_H_N": [
+       "67/4096",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "-3135/1072",
+        "0"
+       ],
+       [
+        "-10261/8576",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": -1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": -1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": -1
+       }
+      ]
+     },
+     {
+      "N": 3,
+      "h_N": [
+       "111908675/204910624768",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "-488545/134217728",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "1737473/1563344",
+        "0"
+       ],
+       [
+        "945741/1563344",
+        "0"
+       ],
+       [
+        "6017623/100054016",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": 1
+       }
+      ]
+     },
+     {
+      "N": 4,
+      "h_N": [
+       "14365125/9387580063744",
+       "0"
+      ],
+      "h_sign": 1,
+      "det_H_N": [
+       "-559543375/281474976710656",
+       "0"
+      ],
+      "Q_N": [
+       [
+        "1",
+        "0"
+       ],
+       [
+        "93997037/71621552",
+        "0"
+       ],
+       [
+        "476038837/572972416",
+        "0"
+       ],
+       [
+        "400116311/2291889664",
+        "0"
+       ],
+       [
+        "20980543/2291889664",
+        "0"
+       ]
+      ],
+      "side_signs_of_E_N": [
+       {
+        "lambda": "1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-1/3",
+        "E_sign": 1
+       },
+       {
+        "lambda": "2",
+        "E_sign": 1
+       },
+       {
+        "lambda": "-3/4",
+        "E_sign": 1
+       }
+      ]
+     }
+    ]
+   }
+  }
+ }
+}
