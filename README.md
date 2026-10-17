@@ -1,6 +1,16 @@
 # Publications
 
-Latest RH continuation: [RFT-1 — native reflection transfer and the regular zero chart](RH_REFLECTION_TRANSFER.md).
+Latest RH continuation: [SQR-1 — square-root source banks and positive layer innovations](RH_SQUARE_ROOT_BANKS.md).
+The actual folded-transfer Hankel banks are unconditionally positive
+through size max(1,floor(kappa sqrt(a))), with explicit
+kappa=exp(-9)/(2pi). A bound on the full wave generating function
+replaces exponential coefficient loss by a linear matrix remainder.
+Every covered next-layer Schur innovation has a positive lower bound.
+This improves the previous logarithmic positive range; the
+square-root-log schedule sufficient for RH remains open.
+Written proofs only; no scientific computation or replay is added.
+
+Preceding RH continuation: [RFT-1 — native reflection transfer and the regular zero chart](RH_REFLECTION_TRANSFER.md).
 The exact fold (2I+W+W^(-1))/4=yI recovers the original source
 moments and identifies their reflection-positivity condition.
 Two specified wave-reflection tests have unconditionally negative
