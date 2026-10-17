@@ -1,6 +1,19 @@
 # Publications
 
-Latest RH assessment: [CLA-1 — closure audit of the shunya-potential route](RH_CLOSURE_AUDIT.md).
+Latest RH development: [ASM-1 — arithmetic source memory and finite cut reduction](RH_ARITHMETIC_SEAM_REDUCTION.md).
+For every finite support width, an explicit Gamma--Legendre bound makes
+the sufficiently high unresolved modes strictly positive. The remaining
+sign is exactly a finite Schur complement with the full memory term
+retained. Nested eliminations preserve the same variational potential.
+Finite trial matrices have an explicit residual enclosure for the memory
+correction. This constructs the positive tail of an actual-source square
+lift; positivity of the remaining matrices at every width is still the
+RH-equivalent obligation. Their dimension depends on the window, and
+their exact memory initially contains an infinite-dimensional inverse.
+No new positive window or RH proof is claimed. Written proofs only;
+no scientific computation, replay or workflow dispatch is added.
+
+Preceding RH assessment: [CLA-1 — closure audit of the shunya-potential route](RH_CLOSURE_AUDIT.md).
 The current argument does not prove RH. An explicit normalized, faithful
 comparison source preserves the native potential, transport and cut
 freezing but has a negative memory direction. Arbitrarily long finite
