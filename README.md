@@ -1,22 +1,29 @@
 # Publications
 
 Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
-BRT-T36--T39 extend the working written result to L<=1761/5000:
-every admitted real even profile satisfies q_L[g] >= ||g||^2/30000.
-On [7/20,1761/5000], the returned scalar exceeds
-52751/900000000 > 7/120000.
-There is no mean-zero or cosh-neutrality restriction.
-Specified signed prime and logarithmic readings are combined
-before taking their norm. Projection accounting retains the entire
-higher tail; the complete inverse penalty is below 146689/900000000.
-The actual trial value exceeds 277/1250000 on that same band.
-Every source column and the nonzero residual remain included;
-no common sign is assumed for all higher cross pairings.
-This supersedes the former margins 1/130000 through 44/125
-and 1/50000 through 351/1000. The stronger 1/25000 through
-7001/20000 is retained.
+BRT-T40--T43 give an exact joint prime-2/prime-3 operator norm
+on (log 3)/2<L<=log 2. Its allowance is smaller than the
+sum of separate cap costs by more than 1/10.
+At L=11/20, the entire tail after polynomial degrees
+0,2,4,6,8 has a uniform positive bound 3/40, including
+all diagnostic prime couplings in [0,1]^2. The specified
+separate-cap estimate was negative; the joint estimate
+is positive. The five-dimensional returned source retains the complete
+memory and mixed prime terms. Its matrix sign is unproved,
+so this is not a new unrestricted positive interval.
+Common rescaling of reading labels preserves their ratios;
+that Gram identity alone adds no source positivity.
+
+The unrestricted working written result from BRT-T39 remains
+L<=1761/5000, with q_L[g] >= ||g||^2/30000 for every
+admitted real even profile. On [7/20,1761/5000], the returned
+scalar exceeds 52751/900000000 > 7/120000.
+The stronger 1/25000 through 7001/20000 is retained.
+There is no mean-zero or cosh-neutrality restriction
+on these full-family conclusions.
 Earlier sections preserve their failed bounds and intermediate results.
-Positivity beyond the new interval and all-width positivity/RH
+The returned matrix sign at 11/20, positivity beyond the
+established unrestricted interval, and all-width positivity/RH
 remain open; no new independent assumption is added.
 Written derivations only; no independent certification, scientific
 computation, agent, numerical simulation, replay or workflow dispatch.

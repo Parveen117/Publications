@@ -2,9 +2,24 @@
 
 Monty · 18 October 2026.
 
-Written continuation through BRT-T39, based on branch head
-81a0238c89af1b6aa3ccd617d62284f28634dd95.
-The latest full-family result is
+Written continuation through BRT-T43, based on branch head
+6187d53a0549eb843aec572a58c52d9bf1ed5011.
+
+T40--T43 establish a joint prime-block estimate at a larger
+support width. For (log 3)/2<L<=log 2,
+the combined prime-2/prime-3 operator has exact norm
+\[
+\Lambda_{23}=\frac{a_3+\sqrt{a_3^2+4a_2^2}}4,
+\qquad \frac{a_2+a_3}{2}-\Lambda_{23}>\frac1{10}.
+\]
+At L_*=11/20 this makes the entire tail after degrees
+0,2,4,6,8 uniformly positive with bound 3/40, including
+every diagnostic prime coupling in [0,1]^2. The complete
+memory remains in the five-dimensional returned source.
+The sign of that source matrix has not been established,
+so this is not a new unrestricted positive interval.
+
+The latest full-family result remains T39:
 \[
 \boxed{
 0<L\le\frac{1761}{5000}
@@ -14,32 +29,23 @@ q_L[g]\ge\frac1{30000}\|g\|^2
 }
 \]
 On 7/20<=L<=1761/5000, the returned scalar exceeds
-52751/900000000>7/120000. T36 establishes boundary absorption
-for the larger caps using a sharper actual prime coefficient.
-T37 combines specified signed prime and main-column readings
-before taking their norm. T38 bounds the entire infinite
-complement after accounting for the retained projections.
-T39 subtracts the complete residual penalty and obtains the
-stronger margin on the wider interval.
+52751/900000000>7/120000. The stronger 1/25000 through
+7001/20000 and DWE's 1/1700 on its smaller interval remain
+valid. No mean-zero or cosh-neutrality restriction is imposed
+on these full-family conclusions.
 
-The prior 1/130000 margin through 44/125 and 1/50000
-through 351/1000 are superseded. The stronger 1/25000
-through 7001/20000 remains valid, as does DWE's 1/1700
-on its smaller interval. No mean-zero or cosh-neutrality
-restriction is imposed on these full-family conclusions.
+Earlier sections preserve historical trials, failed bounds,
+observer/transport audits and intermediate intervals.
+T40's common-scale Gram identity is an equivalent description
+of relational readings; it is not the quantitative advance.
+The new estimate comes from the exact shared support of the
+two actual truncated prime operators. Their memory and mixed
+terms survive the finite cut.
 
-Earlier sections preserve their historical trials, failed
-sufficient bounds, observer/transport audits and intermediate
-intervals. The new estimates hold throughout the enlarged
-band; old cap constants are not extrapolated. The particular
-nonpolynomial test (93) remains unassessed and is not needed.
-
-The actual prime-2 term, all low-mode couplings and the complete
-nonzero logarithmic residual remain in the estimates.
-Only specified low prime readings have assigned signs; no sign
-is assumed for every higher cross pairing. Positivity beyond
-the stated finite interval and all-width positivity/RH remain
-open. No new independent assumption is introduced.
+Positivity beyond the stated unrestricted interval, the
+returned matrix sign at L_*, and all-width positivity/RH
+remain open. No new independent assumption is introduced.
+The particular nonpolynomial test (93) remains unassessed.
 These are working written proofs, not independently certified
 results. GitHub metadata alone is not mathematical certification.
 
@@ -4580,38 +4586,442 @@ No new independent assumption is added. No independent
 certification, scientific computation, numerical simulation,
 certificate replay, subagent or workflow dispatch is performed.
 
+
+## BRT-T40. Multiplicative readings preserve ratios, not missing source signs
+
+For a real zero-extended profile g, let T_u denote full-line
+translation, T_ug(x)=g(x-u). For any finite list of positive
+labels m_1,...,m_k define its observation Gram matrix by
+\[
+\boxed{
+G_g(m_i,m_j)
+=\langle T_{\log m_i}g,T_{\log m_j}g\rangle
+=C_g(\log(m_i/m_j)),\qquad
+G_g(Mm_i,Mm_j)=G_g(m_i,m_j)\quad(M>0).
+}
+\tag{165}
+\]
+It is positive semidefinite, since for real coefficients c_i,
+\[
+\sum_{i,j}c_ic_jG_g(m_i,m_j)
+=\left\|\sum_i c_iT_{\log m_i}g\right\|^2\ge0.
+\]
+The common multiplier gives one common unitary translation.
+This proves (165) without assuming positivity of the signed
+arithmetic source. For example, the pair M,2M reads C_g(log 2);
+a single large prime does not by itself contain that reading.
+Common rescaling adds no independent correlations. Adding
+new ratios can add constraints between existing readings.
+
+The useful support pattern below has relative positions
+\[
+\boxed{
+1,\quad \frac32,\quad 2,\quad 3;
+\qquad
+2,\quad 3,\quad 4,\quad 6
+\text{ after multiplication by }2.
+}
+\tag{166}
+\]
+These are observation labels, not four active arithmetic
+source terms. In the window used below only prime powers
+2 and 3 contribute. The labels 4 and 6 do not insert new
+source penalties, and the ratio 3/2 is not declared a prime.
+
+This common-scale invariance is the elementary translation
+Gram identity. It is not a newly proved positivity theorem.
+It also does not identify translation of a full-line reading
+bank with changing the physical support I or enlarging L.
+The quantitative gain below uses the actual truncated prime
+operators and their shared support, not Gram positivity alone.
+
+## BRT-T41. The two active primes have an exact joint norm
+
+Write
+\[
+u=\log2,\quad v=\log3,\quad d=v-u,\qquad
+a=\frac{u}{\sqrt2},\quad b=\frac{v}{\sqrt3}.
+\]
+For this section suppose v/2<L<=u. Precisely prime powers
+2 and 3 are active; at L=u the shift log 4=2L still has
+zero overlap. Use PCM's positive-sign convention
+\[
+\begin{aligned}
+(\mathcal P_2g)(x)&=\frac a2\bigl(g(x-u)+g(x+u)\bigr),\\
+(\mathcal P_3g)(x)&=\frac b2\bigl(g(x-v)+g(x+v)\bigr),\\
+\mathcal P_{23}&=\mathcal P_2+\mathcal P_3,\qquad
+\langle g,\mathcal P_{23}g\rangle=aC_g(u)+bC_g(v).
+\end{aligned}
+\tag{167}
+\]
+All outside values are zero. The actual source subtracts
+this operator. The sign convention does not assert that
+the operator itself is positive semidefinite.
+
+Put epsilon=2L-v>0 and A=(-L,L-v). Since 8<9,
+\[
+0<\epsilon\le2u-v<d,\qquad 3u<2v.
+\]
+The four translates A, A+d, A+u, A+v are disjoint up to
+endpoints. Indeed their successive offsets differ by
+d, 2u-v, d, all at least epsilon. For each x in A the
+ordered path and its operator matrix are
+\[
+\boxed{
+(x+u,\ x,\ x+v,\ x+d),\qquad
+M_{23}=\frac12
+\begin{pmatrix}
+0&a&0&0\\
+a&0&b&0\\
+0&b&0&a\\
+0&0&a&0
+\end{pmatrix}.
+}
+\tag{168}
+\]
+The first and last edges have length u; the middle edge
+has length v.
+
+Here the path accounts for every interaction with these
+four intervals. A v-edge must have its left endpoint
+in A, so both endpoints are already included. Each
+vertex can have at most one u-neighbor because 2u>=2L.
+The two displayed u-edges give that neighbor for all
+four vertices. Thus no further u-edge leaves the union.
+Nor can a v-edge connect an inner vertex to a new point:
+that would require 2L>2v-u, whereas 2L<=2u<2v-u.
+This last observation also follows from the disjoint
+description of all v-edge endpoints A and A+v.
+On the complement there are no v-edges, only isolated
+u-pairs and isolated vertices.
+
+Translation preserves Lebesgue measure. Consequently
+the operator is an orthogonal direct integral of the
+four-by-four matrices (168), together with two-by-two
+u-pair matrices and zero components. No smoothness or
+pointwise sign of g is required for this L2 decomposition.
+
+Path reversal splits (168) into symmetric and
+antisymmetric two-dimensional sectors. On a symmetric
+vector (c,e,e,c), the eigenvalue equations are
+lambda c=ae/2 and lambda e=ac/2+be/2.
+The four eigenvalues are
+\[
+\pm\frac{\sqrt{b^2+4a^2}+b}{4},
+\qquad
+\pm\frac{\sqrt{b^2+4a^2}-b}{4}.
+\]
+The largest absolute value exceeds a/2, the norm of an
+isolated u-pair. Hence
+\[
+\boxed{
+\|\mathcal P_{23}\|
+=\Lambda_{23}:=\frac{b+\sqrt{b^2+4a^2}}4,\qquad
+|aC_g(u)+bC_g(v)|\le\Lambda_{23}\|g\|^2.
+}
+\tag{169}
+\]
+The exact norm remains valid on the real even subspace.
+For sharpness, choose a nonzero smooth compact function
+chi on A symmetric under x -> -x-v. Multiply a positive
+symmetric top eigenvector (c,e,e,c) of (168) by chi(x)
+on the four path intervals, and set g=0 elsewhere.
+Reflection reverses the path and preserves chi, so g is
+even. It is a smooth compact test in I and satisfies
+P_23 g=Lambda_23 g. Thus sharpness uses the established
+source core, not an unproved domain for a new ansatz.
+
+The separate disjoint-cap estimate would give (a+b)/2.
+The exact improvement is
+\[
+\boxed{
+\Delta(a,b)=\frac{a+b}{2}-\Lambda_{23}
+=\frac{2a+b-\sqrt{b^2+4a^2}}4>\frac1{10}.
+}
+\tag{170}
+\]
+For the explicit rational threshold in (170), TPW-T3/T5
+give log 2>27/40 and log 3>263/240>21/20.
+Since sqrt 2<3/2 and sqrt 3<7/4,
+a>9/20 and b>3/5. Each partial derivative of Delta is
+strictly positive for a,b>0: they are
+(2-4a/sqrt(b^2+4a^2))/4 and
+(1-b/sqrt(b^2+4a^2))/4. Therefore
+\[
+\Delta(a,b)>
+\Delta(9/20,3/5)
+=\frac{3/2-\sqrt{117/100}}4>\frac1{10},
+\]
+where the last inequality follows from 117/100<121/100.
+This compares the norm of the combined signed reading
+with the sum of separate operator norm allowances.
+
+We will also use an explicit rational upper bound.
+The retained estimates a<1/2 and
+log 3<11/10, sqrt 3>5/3 give b<33/50<2/3.
+Monotonicity of the expression in (169) gives
+\[
+\boxed{
+\Lambda_{23}<
+\frac{2+\sqrt{13}}{12}<\frac{15}{32};
+\qquad
+\|t_2\mathcal P_2+t_3\mathcal P_3\|
+\le\Lambda_{23}\quad(0\le t_2,t_3\le1).
+}
+\tag{171}
+\]
+Here sqrt 13<29/8. The coupling bound follows from the
+same path matrices with a,b replaced by t_2a,t_3b;
+their norm formula is nondecreasing in these nonnegative
+weights. QED.
+
+The strict lower endpoint L>v/2 matters. At L=v/2 the
+v-caps are empty and the norm is a/2. Arbitrarily narrow
+nonempty caps support the localized tests above, so no
+continuity in operator norm across this support threshold
+has been assumed. For L>u, additional chains and prime
+powers occur; (169) is not extrapolated to that range.
+
+## BRT-T42. The joint bound makes a specified polynomial tail positive
+
+Now fix L_*=11/20. TPW's rational inequalities place
+v/2<L_*<u. On the unchanged form domain D_(L_*), define
+the diagnostic coupling family
+\[
+q_t[g]=\ell(g)^2+\frac{\Omega_0}{2}\|g\|^2
++\int_0^\infty k(z)(\|g\|^2-C_g(z))\,dz
+-t_2aC_g(u)-t_3bC_g(v),\quad t\in[0,1]^2.
+\tag{172}
+\]
+Its actual arithmetic endpoint is t=(1,1).
+The changes in t are bounded self-adjoint perturbations;
+the form and operator domains are common.
+
+Use the degree labels of this note, rather than ASM's
+index counting the even modes:
+\[
+\boxed{
+V_5=\operatorname{span}\{\phi_0,\phi_2,\phi_4,\phi_6,\phi_8\},
+\quad
+\phi_{2j}(x)=\sqrt{\frac{4j+1}{2L_*}}P_{2j}(x/L_*),
+\quad Q_5=I-P_5.
+}
+\tag{173}
+\]
+For h in Q_5 D_(L_*), its mean m_0 vanishes. GRR-T1/T2,
+with its fixed comparison parameter 1/2, gives
+\[
+\begin{aligned}
+q_t[h]\ge{}&
+B_*(L_*)\|h\|^2+J_{L_*}[h]
++\int_Iw_{L_*}(x)|h(x)|^2\,dx+\ell(h)^2\\
+&-\langle h,(t_2\mathcal P_2+t_3\mathcal P_3)h\rangle,\\
+B_*(L)&=\frac{\Omega_0}{2}+F(2L)+\frac12\log2
++\frac{47L}{96}-\frac{5L^3}{36},\\
+w_L(x)&=-\frac14\log(1-(x/L)^2)\ge0 .
+\end{aligned}
+\tag{174}
+\]
+Indeed GRR's polynomial is 47/192-5z^2/96.
+Its two finite moment corrections are
+-47m_0^2/384+5m_0m_2/96, which vanish here.
+The remaining Gamma integral is nonnegative on the same
+closed domain. The pole square and boundary multiplier
+are displayed before any lower estimate discards them.
+
+TPW-T3 supplies Omega_0/2>-2689/1000,
+F(11/10)>59/50 and log 2>693/1000. At L_*,
+\[
+\frac{47L_*}{96}-\frac{5L_*^3}{36}
+=\frac{14179}{57600}>\frac{49}{200}.
+\]
+Consequently
+\[
+\boxed{
+B_*(L_*)>
+-\frac{2689}{1000}+\frac{59}{50}
++\frac{693}{2000}+\frac{49}{200}
+=-\frac{367}{400}.
+}
+\tag{175}
+\]
+ASM-T1's scale-invariant Legendre energy bound gives
+J_(L_*)[h]>=H_10||h||^2/2 on this complement.
+Since H_10=7381/2520, (171), (174) and (175) imply
+\[
+\boxed{
+q_t[h]\ge\frac{3943}{50400}\|h\|^2
+>\frac3{40}\|h\|^2
+\quad(h\ne0,\ h\in Q_5D_{L_*},\ t\in[0,1]^2).
+}
+\tag{176}
+\]
+The first displayed coefficient follows from
+7381/5040-367/400-15/32=3943/50400;
+the proof in fact gives a strict first inequality for
+nonzero h. The corresponding closed tail operators obey
+C_5(t)>=3I/40 uniformly on the coupling square.
+
+For a concrete comparison, using the same Gamma and
+Legendre bounds but the separate allowances a<1/2,
+b<2/3 would give only
+\[
+\boxed{
+\frac{H_{10}}2-\frac{367}{400}-\frac7{12}
+=-\frac{229}{6300}<0.
+}
+\tag{177}
+\]
+Replacing that allowance 7/12 by the proved joint
+allowance 15/32 improves this particular lower bound
+by 11/96 and makes it positive. Equation (177) records
+failure of that specified estimate, not negativity of
+the true tail. QED.
+
+This is a quantitative improvement for a specified
+polynomial cut. ASM already proved that some finite
+cut has a positive tail at every fixed width. TPW
+already proved positivity through L_* on its family
+with the two neutral readings m_0=ell=0. Neither
+earlier result is being claimed anew. Five is not a
+minimal cut dimension or a universal observer count.
+Its advantage here is that the five retained columns
+are explicit admitted polynomial columns. The full
+family still retains all five coordinates and their
+coupling to the infinite tail.
+
+## BRT-T43. The improved tail bound retains the complete returned memory
+
+At L_* let U:R^5 -> V_5 synthesize the normalized modes
+in (173), and let T(t) be the source operator of (172).
+Define the actual source blocks
+\[
+\begin{gathered}
+A(t)=U^*T(t)U,\qquad B(t)=Q_5T(t)U,\qquad
+C(t)=C_5(t),\\
+E(t)=U-C(t)^{-1}B(t),\qquad
+\mathsf S(t)=A(t)-B(t)^*C(t)^{-1}B(t),\\
+\boxed{0<C(t)^{-1}\preceq\frac{40}{3}I.}
+\end{gathered}
+\tag{178}
+\]
+ASM-T2 admits every column of U to the operator domain.
+The restricted inverse maps into the tail operator
+domain. Since the coupling columns are bounded, the
+usual block domain argument also admits E(t) to the
+full source domain: its pairing against a tail test
+is represented in L2, and its retained pairing is
+finite dimensional. Thus these source expressions do
+not require a postulated logarithmic trial domain.
+
+For any five-column operator-domain trial Z satisfying
+P_5Z=U, put R=Q_5T(t)Z. Completing the same tail square
+as ASM-T3/T5 gives
+\[
+\boxed{
+\begin{aligned}
+\mathsf S(t)&=Z^*T(t)Z-R^*C(t)^{-1}R,\\
+Z^*T(t)Z-\frac{40}{3}R^*R
+&\preceq\mathsf S(t)\preceq Z^*T(t)Z.
+\end{aligned}
+}
+\tag{179}
+\]
+For completeness, write Z=U+Y with Q_5Y=Y.
+Then R=B+CY. Expansion of
+R^*C^{-1}R cancels exactly the mixed terms and Y^*CY
+in Z^*TZ, leaving A-B^*C^{-1}B. Inequality (178)
+proves the enclosure. No component of R is omitted.
+
+The same bound controls a simultaneous insertion of
+both primes. Write bold 0=(0,0), bold 1=(1,1),
+V=P_23, E_0=E(bold 0), and D=Q_5VE_0. PCM-T4 gives
+\[
+\boxed{
+\mathsf S(\mathbf1)=\mathsf S(\mathbf0)
+-E_0^*\mathcal P_{23}E_0
+-D^*C(\mathbf1)^{-1}D,
+\quad
+0\preceq D^*C(\mathbf1)^{-1}D
+\preceq\frac{40}{3}D^*D.
+}
+\tag{180}
+\]
+One can also bound the latter matrix directly by
+\[
+\boxed{
+\frac{40}{3}D^*D
+\preceq\frac{40}{3}\Lambda_{23}^2 E_0^*E_0
+\preceq\frac{375}{128}E_0^*E_0.
+}
+\tag{181}
+\]
+Here projection is contractive, (169) bounds V, and
+(40/3)(15/32)^2=375/128. This last coarse enclosure is
+optional; (180) retains the actual joint column D.
+If D_i=Q_5P_iE_0 for i=2,3, then
+D^*D=D_2^*D_2+D_3^*D_3+D_2^*D_3+D_3^*D_2.
+The cross terms have not been silently replaced by
+independent scalar costs. The direct term in (180)
+need not have either fixed sign.
+
+These are the existing exact source-memory identities
+with a new explicit tail constant, not a new positivity
+criterion inferred from coordinate invariance. They
+show where the joint prime improvement enters the same
+returned-source lower bound. Neither the entries of
+S(bold 1) nor a positive lower matrix in (179) or (180)
+have been established here. In particular (181) alone
+does not establish their sign.
+
+**Gate accounting.** The exact two-prime operator norm,
+its improvement over separate cap costs, and positivity
+of this specified infinite polynomial tail at L_*
+are closed in the working written derivation.
+The five-dimensional returned source sign at L_*
+and all-width positivity/RH remain unresolved.
+The unrestricted interval in (164) is unchanged.
+No new independent assumption is added.
+
 ## Scope and continuation
 
-The current unrestricted interval is (164):
+The current unrestricted interval remains (164):
 0<L<=1761/5000, with margin 1/30000. Equation (163) gives
 s_L>52751/900000000>7/120000 on the upper band
 [7/20,1761/5000]. The stronger margin 1/25000 through
 7001/20000 and DWE's 1/1700 on L<=1/4+1/47600
 are retained.
 
-The advance is a quantitative estimate of the complete source
-return. T36 uses a_2<99/200 to prove boundary absorption
-on caps d_L<1/31 and retains C_L>=D_L+3I/5000.
-T37 proves the relevant signed prime readings and combines
-them with the main source column; the positive sixth
-logarithmic reading meets an actual negative prime reading.
-T38 accounts for degrees 0,2,4,6 before bounding the complete
-higher prime tail. It restores the full Gamma and pole columns
-and obtains an inverse penalty below 146689/900000000.
-T39 separately retains the larger prime-form allowance,
-giving a trial value above 277/1250000 and a positive return.
+T36--T39 obtained that result by keeping specified signed
+prime readings with the main column, accounting for the
+retained projections, and bounding every remaining Gamma,
+pole and prime residual contribution. Those constants were
+proved on their stated band and are not extrapolated here.
 
-This does not infer positivity from cancellation alone.
-No common sign is asserted for the infinite higher tail,
-and no residual is made zero. The improved margin follows
-only after every source column and the complete inverse
-penalty have been included.
+T40--T43 instead improve a joint prime-block estimate.
+For (log 3)/2<L<=log 2, the actual truncated prime-2 and
+prime-3 operators split into disjoint four-vertex paths,
+isolated prime-2 pairs and zero components. Their exact
+joint norm (169) improves the separate cap allowance
+by more than 1/10. This is an estimate of the actual
+signed source term. Common rescaling of observation
+labels supplies no additional source information.
 
-The constants are established on [7/20,1761/5000].
-Further enlargement requires reassessing these same source
-and residual terms, including any additional active prime
-powers. A finite positive margin does not prove an all-width
-bound or supply indefinite iteration.
+At L_*=11/20, that norm bound and the retained Gamma
+comparison give the uniform tail bound (176) after
+degrees 0,2,4,6,8. The specified separate-cap estimate
+(177) was negative; the new joint estimate is positive.
+ASM's finite reduction is then available with the explicit
+inverse bound 40/3. Equations (179)--(181) retain the
+whole inverse residual and both-prime cross terms.
+
+The sign of the five-dimensional returned source at L_*
+has not been established. Its positive tail is not a
+positive full source, and the exact memory identities
+are not new positivity theorems. TPW's existing restricted
+two-neutral-moment result remains distinct. No minimum
+number of observers, arbitrary-width prime-chain formula,
+or indefinite extension is asserted.
 
 The original quadratic trial and its failed sufficient bounds
 remain historical evidence. T9's finite-polynomial exact
@@ -4624,7 +5034,7 @@ and estimates on the stated domain. They are not identified
 with native EMK curvature, Riemann curvature, a physical
 field or a universal cut law. A co-carried observer change
 preserves the full pairing; actual support enlargement
-changes the source terms treated in the width estimates.
+changes the source terms and support graph.
 
 Only this note and its README entry change. The work is
 written mathematical derivation plus exact repository-content
@@ -4634,8 +5044,10 @@ agent, certificate replay or workflow dispatch is performed.
 The commit uses [skip ci]. The PR remains draft, stacked
 on #137, and unmerged.
 
-**Gate accounting.** Unrestricted positivity through
-1761/5000 is closed in the working written proof, and the
-guaranteed margin at the former frontier is stronger.
-Positivity beyond that interval and all-width positivity/RH
-remain open. No new independent assumption is added.
+**Gate accounting.** The joint two-prime norm and the
+specified positive polynomial-tail bound at L_* are
+closed in the working written derivation. The unrestricted
+positive interval stays at 1761/5000. The returned matrix
+sign at L_*, positivity beyond the established unrestricted
+interval, and all-width positivity/RH remain open.
+No new independent assumption is added.
