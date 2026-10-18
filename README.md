@@ -1,6 +1,17 @@
 # Publications
 
-Latest RH development: [SFA-1 — actual source flow and the acceleration gate](RH_SOURCE_FLOW_ACCELERATION.md).
+Latest RH development: [DWE-1 — quantified dilation extension of the positive source window](RH_DILATION_WINDOW_EXTENSION.md).
+GRR's full-family margin at L=1/4 gives an explicit small extension
+to L <= 1/4 + 1/47600, with margin 1/1700 and no neutral-moment
+restriction. The proof bounds the actual Gamma-energy and pole
+losses under norm-preserving dilation. The new interval is still
+below the first-prime threshold; the first-prime scalar sign and
+all-width positivity remain unproved. This is a quantitative
+continuity result, not a global closure argument.
+Written derivations only; no scientific computation, independent
+agent, numerical certificate, replay or workflow dispatch.
+
+Preceding RH development: [SFA-1 — actual source flow and the acceleration gate](RH_SOURCE_FLOW_ACCELERATION.md).
 The retained anchor hierarchy gives coupled mean/fluctuation equations
 and an exact generator carrying each finite source pairing invariantly.
 A first finite-anchor positivity loss requires a pole in its compressed
