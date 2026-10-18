@@ -1280,6 +1280,198 @@ task is chi_(7/20)<=1, equivalently s_(7/20)>=0; all-width positivity
 remains open. This audit supplies no improved numerical bound and
 is not labelled a new positivity theorem.
 
+## Co-moving observer matching — MOR return and the compact-wave limit
+
+This continues the angle audit by explicitly pulling CWF's observers
+back through MOR's transport. The observer is a function with a source
+pairing and normalization, not an isolated coordinate point. The result
+is a matching identity, not a new positivity theorem or a new sign bound.
+
+Use [MOR-T2](RH_MOVING_OBSERVER_RETURN.md),
+[CWF-T1](RH_CRITICAL_WAVE_FORMS.md), and the same actual source.
+Here q(a)=X'(a)/X(a) is the logarithmic derivative, distinct from q_L.
+Set
+\[
+a=b^2=\rho a_0,\quad q_0=q(a_0)>0,\quad
+z_\mu=\frac{a_0}{a_0+\mu},\quad
+w^0_\mu=\frac{\nu_\mu}{q_0(a_0+\mu)}.
+\]
+The wave polynomial P_(b,g) is precisely CWF (4), for a real even
+smooth compact profile g. Define
+\[
+d_\rho(z)=1+(\rho-1)z,\qquad
+\zeta_\rho(z)=\frac{\rho z}{d_\rho(z)}.
+\]
+At every actual source point,
+\[
+d_\rho(z_\mu)=\frac{a+\mu}{a_0+\mu},\qquad
+\zeta_\rho(z_\mu)=y_a(\mu).
+\tag{55}
+\]
+All these values are nonzero. Since Re(z_mu)>0, Re(d_rho(z_mu))>0;
+choose the square root continuously from rho=1 in that half-plane.
+
+For a polynomial P at anchor a, its pulled-back reading is
+\[
+(\mathcal I_\rho P)(z)
+=d_\rho(z)^{-1/2}P(\zeta_\rho(z)).
+\tag{56}
+\]
+This is the inverse MOR formula on the actual source: from
+1-r y_a=1/d_rho(z_mu), MOR gives
+(O_rho p)(y_a)=sqrt(d_rho(z_mu)) p(z_mu).
+Thus (56) carries the observer weight as well as its argument.
+
+**Domain distinction.** Formula (56) is not generally a polynomial,
+nor holomorphic on a neighborhood of the entire closed unit disk:
+its possible singular point is -1/(rho-1). We do not invoke MOR's
+polynomial statement on an inadmissible input. Instead all ensuing
+identities are proved directly on source values with absolute
+convergence. They require no extension of the polynomial operator
+domain or a guessed logarithmic trial.
+
+Define the positive error-control norm on source-value sequences by
+\[
+\|F\|_{\rm abs}^2=\sum_\mu |w^0_\mu|\,|F(z_\mu)|^2.
+\]
+On its finite-norm sequences the original bilinear source pairing is
+\[
+B_0(F,H)=\sum_\mu w^0_\mu F(z_\mu)H(z_\mu),\qquad
+|B_0(F,H)|\le\|F\|_{\rm abs}\|H\|_{\rm abs}.
+\tag{57}
+\]
+Absolute values in the norm control convergence only; they do not
+replace the signed/complex weights or bilinear products in B_0.
+Conjugation-compatible sequences give real pairings.
+
+### Exact finite-anchor matching with the observer carried
+
+Normalize the returned wave by
+\[
+F_{b,g}(z)=\sqrt{a q_0}\,
+d_\rho(z)^{-1/2}P_{b,g}(\zeta_\rho(z)).
+\]
+Then, before taking any limit,
+\[
+\boxed{
+B_0(F_{b,g},F_{b,h})
+=a q(a)\,\mathcal L_a[P_{b,g}P_{b,h}].
+}
+\tag{58}
+\]
+Indeed termwise cancellation gives
+\[
+w^0_\mu(aq_0)d_\rho(z_\mu)^{-1}
+=\frac{a\nu_\mu}{a+\mu}.
+\]
+These are exactly the CWF-normalized source coefficients.
+For each fixed b, the polynomials are bounded on the actual support
+|y_a|<1 and sum nu_mu/|a+mu| is finite, proving absolute convergence.
+In particular
+\[
+\|F_{b,g}\|_{\rm abs}^2
+=\sum_\mu\frac{a\nu_\mu}{|a+\mu|}
+ |P_{b,g}(y_a(\mu))|^2<\infty.
+\tag{59}
+\]
+
+### The co-moving limit exists with all source weights retained
+
+For each fixed actual source point the limit is
+\[
+F_g(z_\mu)=\sqrt{q_0(a_0+\mu)}\,\widehat g(v_\mu),
+\qquad \mu=v_\mu^2.
+\tag{60}
+\]
+This follows from a/d_rho(z_mu)->a_0+mu and CWF's
+P_(b,g)(y_a(mu))->hat(g)(v_mu). Root branches agree by
+continuation from the positive real source case, or by their
+arguments in the right half-plane.
+
+The limit is not merely pointwise. CWF's absolute tail estimate
+(8), applied to g twice, gives for b>=R>=2
+\[
+\sum_{\gamma>R}|w^0_\mu|\,|F_{b,g}(z_\mu)|^2
+\le C_g\,\frac{\log R}{R^3}.
+\tag{61}
+\]
+For the limit,
+\[
+|w^0_\mu|\,|F_g(z_\mu)|^2
+=\nu_\mu|\widehat g(v_\mu)|^2,
+\]
+whose tail tends to zero by the smooth compact profile's Fourier
+decay and the retained zero-count estimate. There are finitely
+many source terms below each R; on those, pointwise convergence
+is norm convergence. On the tail use
+|F_b-F|^2<=2|F_b|^2+2|F|^2 and (61).
+First increasing R and then b proves
+\[
+\|F_{b,g}-F_g\|_{\rm abs}\longrightarrow0.
+\tag{62}
+\]
+Continuity of B_0 therefore gives the fully matched identity
+\[
+\boxed{
+B_0(F_g,F_h)
+=\sum_\mu\nu_\mu\widehat g(v_\mu)\widehat h(v_\mu)
+=\mathscr Q_\xi(g,h)=q_L(g,h).
+}
+\tag{63}
+\]
+The last equality is CWF/PTE's arithmetic-source identity on the
+smooth core, with polarization for g,h.
+
+Thus the compact-window source is precisely the paired reading
+of the limiting, explicitly co-moving observer at the reference
+anchor. This is not a fixed-degree arcsine limit with the observer
+left behind. In reference coordinates F_(b,g) itself varies with b;
+it is not a fixed polynomial p simply being transported outward.
+A fixed p carried by MOR keeps B_0(p,h) exactly, whereas CWF's
+growing wave family converges to (63). These are compatible but
+different families of preparations/readings.
+
+### What this establishes for the current window and what it does not
+
+The identities hold for every fixed smooth profile in every
+finite L. The actual closed form q_L is the retained extension
+from that core. Consequently positivity on that core and on D_L
+are equivalent: the forward direction follows by form closure,
+and the reverse direction by restriction. A strictly negative
+closed-form vector would also have negative smooth approximants.
+This is sufficient to match the sign question for the existing
+BRT operator-domain trials. No absolute-source evaluation formula
+for every nonsmooth BRT trial is asserted without a separate
+continuity proof; (60)--(62) were proved for smooth compact inputs.
+
+The comparison preserves every cross pairing of those profiles,
+not just their norms or one coordinate reading. Under an additional
+faithful frame change carrying the pairing, both sides of (63)
+remain the same scalar. No source sign is created by the pullback.
+A positive absolute error norm in (57) does not establish positivity
+of B_0, just as a Pythagorean reference circle does not establish
+positivity of the tested source form.
+
+MOR moves the anchor a while carrying source coordinates and
+observer weights. [DWE](RH_DILATION_WINDOW_EXTENSION.md) instead
+changes support width with U_r g(x)=r^(-1/2)g(x/r); its actual
+correlations become C_g(u/r), and its kernel and pole readings
+change. Exact MOR covariance cannot replace those physical-source
+dilation differences by zero. In particular it cannot transport a
+proved small-L margin into L=7/20 without the additional estimates
+already required by DWE.
+
+**Gate accounting.** The specified MOR/CWF co-moving matching is
+now explicit, including the nonpolynomial pullback domain and a
+source-weighted convergence proof using the retained CWF estimate.
+No frozen-observer sign defect is present in this construction.
+This resolves that matching question, not the first-prime positivity
+inequality or all-width positivity. No new independent assumption,
+new numerical sign bound, EMK angle identification, state-dependent
+cut law or sheet-gluing premise has been introduced. Verification is
+written derivation review; no scientific computation, simulation,
+certificate replay, subagent or workflow dispatch is performed.
+
 ## Scope and continuation
 
 The established outputs are an explicit boundary-selected correction,
