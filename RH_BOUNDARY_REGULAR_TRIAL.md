@@ -957,6 +957,164 @@ assumption is added. These are written derivations, not independently
 validated certificates; no simulation, scientific computation,
 certificate replay, independent agent or workflow dispatch is used.
 
+## BRT-T13. Boundary surplus improves the coupled second and fourth modes
+
+The previous refinement left the degree-four denominator unchanged.
+Here retain the boundary surplus already proved for the actual prime
+source, instead of discarding it in T7 and T11. No new trial is used.
+
+For degree-indexed normalized Legendre polynomials, define the
+auxiliary odd functions phi_1 and phi_3 on I by the same formula
+phi_n=sqrt((2n+1)/(2L)) P_n(x/L). They are used only to read
+s h, where s=x/L and h is even; they are not added to the
+even source domain. For mean-zero h let h_n=<h,phi_n>.
+Since v_*(x)=s^2/(4-2s^2)>=s^2/4, Bessel's inequality gives
+\[
+\begin{aligned}
+\int_I v_*h^2
+&\ge\frac14\|s h\|^2\\
+&\ge\frac14\left[
+ \left(\frac2{\sqrt{15}}h_2\right)^2+
+ \left(\frac3{\sqrt{35}}h_2+\frac4{\sqrt{63}}h_4\right)^2
+ \right]\\
+&=(h_2,h_4)M(h_2,h_4)^{\mathsf T},\\
+M&=\begin{pmatrix}
+11/84&1/(7\sqrt5)\\
+1/(7\sqrt5)&4/63
+\end{pmatrix}.
+\end{aligned}
+\tag{44}
+\]
+Indeed the normalized recurrence gives
+s phi_1=phi_0/sqrt(3)+2 phi_2/sqrt(15) and
+s phi_3=3 phi_2/sqrt(35)+4 phi_4/sqrt(63).
+The phi_0 reading vanishes because h is mean-zero.
+Higher even coefficients cannot affect either of these two
+odd readings. Multiplication by s is bounded on L2, so the
+argument requires no regularity or additional domain assumption.
+
+Combining (44) with the retained T11 inequality yields
+\[
+\boxed{
+C\succeq K:=A\oplus\delta_6 I_{R_6},\qquad
+A=\begin{pmatrix}
+\delta+11/84&1/(7\sqrt5)\\
+1/(7\sqrt5)&\delta_4+4/63
+\end{pmatrix}.
+}
+\tag{45}
+\]
+The direct sum describes the comparison K only, not C.
+The actual source still couples the low modes to the tail.
+The boundary surplus in (44) is what remains after OPC-T2
+absorbs the actual signed prime term; that term has not been
+counted twice or removed from the source.
+
+There is a simple diagonal lower bound for this retained matrix:
+\[
+M\succeq\operatorname{diag}(1/30,1/60).
+\tag{46}
+\]
+To check it, the diagonal entries of the difference are
+41/420 and 59/1260, and its determinant is
+\[
+\frac{41\cdot59}{420\cdot1260}-\frac1{245}
+=\frac{259}{529200}>0.
+\]
+Thus A and K are strictly positive.
+
+Write a=delta+11/84, d=delta_4+4/63 and c=1/(7 sqrt(5)).
+For the same complete residual r_* as before, the new error bound is
+\[
+\boxed{
+\begin{aligned}
+E_{\rm bdry}
+&=\frac{d r_2^2-2c r_2r_4+a r_4^2}{ad-c^2}
+ +\frac{\|R_6r_*\|^2}{\delta_6},\\
+s_L&\ge q_L[g_*]-E_{\rm bdry}.
+\end{aligned}
+}
+\tag{47}
+\]
+This is an explicit inverse of the proved comparison, not a
+truncation or substitution for the actual source inverse.
+The variational inverse-order argument in T7 proves (47)
+from (45), without any commutativity premise.
+
+**Quantitative gain for the actual residual.** Equation (46) implies
+\[
+E_{\rm bdry}\le
+E_{\rm diag}:=
+\frac{r_2^2}{\delta+1/30}
++\frac{r_4^2}{\delta_4+1/60}
++\frac{\|R_6r_*\|^2}{\delta_6}\le E_6.
+\]
+In fact, the known nonzero fourth reading forces a strict gain:
+\[
+\begin{aligned}
+E_6-E_{\rm bdry}
+&\ge E_6-E_{\rm diag}\\
+&\ge
+\frac{1/60}{\delta_4(\delta_4+1/60)}r_4^2
+>\frac19\frac9{10000}=\frac1{10000}.
+\end{aligned}
+\tag{48}
+\]
+Here delta_4<3/8 and delta_4+1/60<2/5, so the product
+in the denominator is less than 3/20. T8 supplies r_4^2>9/10000.
+This estimate is independent of the sign and size of r_2.
+Together with T12,
+\[
+\boxed{
+E_{\rm bound}-E_{\rm bdry}>\frac3{25000}.
+}
+\tag{49}
+\]
+Thus the lower certificate improves by this amount relative
+to (21), with the source, trial, and residual all fixed.
+
+**Full-certificate assessment, including the mixed term.**
+It would be incorrect to drop the mixed term in (47) when
+seeking a lower bound on E_bdry. Instead complete its square:
+\[
+\frac{d r_2^2-2c r_2r_4+a r_4^2}{ad-c^2}
+=\frac{r_4^2}{d}
++\frac{d}{ad-c^2}
+ \left(r_2-\frac c d r_4\right)^2
+\ge\frac{r_4^2}{d}.
+\tag{50}
+\]
+Since delta_4<3/8 and 4/63<1/8, d<1/2. Therefore
+\[
+E_{\rm bdry}>\frac9{5000},\qquad
+\boxed{
+\frac{34733}{24000000}-E_{\rm bdry}
+<-\frac{8467}{24000000}<0.
+}
+\tag{51}
+\]
+This proves that even the coupled boundary comparison cannot
+pass when paired only with the currently proved trial margin.
+It does not determine the sign of q_L[g_*]-E_bdry or s_L.
+
+The practical distinction from T12 is that degree four has now
+actually been strengthened, with a controlled mixed second-mode
+term, and the failure assessment survives that strengthening.
+The next missing input for this route is a sharper outward
+trial-value and residual enclosure, or a stronger comparison
+than (45); no sign closure is claimed from the gain alone.
+A trial correction must still be assessed through its entire
+residual-subtracted certificate.
+
+**Gate accounting.** Closed here: a coupled boundary-surplus
+inverse estimate with actual-residual improvement exceeding
+1/10000 beyond T11, and a proof that the old trial-margin test
+still fails for that estimate. Open: quantitative positivity
+at L=7/20 and all-width positivity. No new independent assumption.
+The proof uses finite written algebra, Bessel's inequality and
+inverse form order; no scientific computation, simulation,
+certificate replay, subagent or workflow dispatch is performed.
+
 ## Scope and continuation
 
 The established outputs are an explicit boundary-selected correction,
@@ -964,6 +1122,7 @@ its exact overlap polynomial, the strict prime penalty bound (7),
 a bounded full source column, the positive trial bound (14), and the
 stronger mode-resolved residual certificate (21), and the proved
 failure of the specific threshold (22) for this trial. T9--T10 add a proof that finite polynomial corrections cannot make the exact residual vanish, with an explicit endpoint-preserving quartic family. T11--T12 then use the explicit endpoint logarithm to prove a sixth-mode residual below -1/200 and reduce the same inverse-error upper bound by more than 1/50000. The refined conservative certificate still fails by (43); this is not a positivity closure.
+T13 retains the boundary surplus in a coupled second/fourth-mode comparison and reduces the error upper bound by a further amount greater than 1/10000. Its full mixed-term assessment still fails with the current conservative trial margin, as (51) records.
 No new positive source interval is claimed. DWE's previously proved
 unrestricted interval remains unchanged.
 
