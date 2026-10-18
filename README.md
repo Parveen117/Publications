@@ -1,5 +1,21 @@
 # Publications
 
+Latest cross-programme written continuation:
+[RYM-1 — transfer the RH residual hierarchy to the actual Yang–Mills source](RH_YM_WEIGHTED_MEMORY_TRANSFER.md).
+At the same side-four lattice, theta=1/48 and complete 241-dimensional
+electric cut used by YM75, retaining the actual spin-one plaquette
+source at electric energy eight improves the bare gap enclosure from
+[0.49069036,3.00712209] to **[0.49072844,3.00712209]**.
+The full hidden inverse and every remaining source component are
+bounded; the proof is a written rational Schur-inertia argument.
+The note audits the current YM93 branch separately, distinguishes
+prime source weights from physical masses, and identifies why the
+Haar electric estimate cannot simply replace the vacuum-weighted
+conditional estimate. No new volume-uniform or continuum gap is claimed.
+No scientific computation, replay or workflow dispatch is performed.
+No new independent assumption is added.
+
+
 Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
 BRT-T52--T55 make the positivity-transfer rule explicit.
 Prime-group containment alone gives no source sign.
