@@ -1,6 +1,21 @@
 # Publications
 
-Latest RH development: [DSG-1 — exact residual-slope gate for dense observer extension](RH_DENSE_OBSERVER_SLOPE_GATE.md).
+Latest RH development: [ORR-1 — exact observer recursion and inverse-residual curvature](RH_OBSERVER_RESIDUAL_RECURSION.md).
+The complete filtered residual now has an exact update after an
+accepted actual observer. Two explicit mixed-observer kernels
+determine the next bank's signs; each remaining margin is the old
+diagonal margin minus a squared mixed contribution.
+A confluent second observer yields exact third-derivative tests.
+Within UCB's existing two-extra-position range, these tests have
+strict quantitative margins, and the inverse residual is increasing,
+strictly concave, and has positive third derivative throughout the
+interval. All mixed terms and source residuals are retained.
+The finite size budget is unchanged. The unrestricted dense
+positive extension and RH closure remain open.
+Written proofs only; no scientific computation, numerical source
+evaluation, independent agent, replay or workflow dispatch.
+
+Preceding RH development: [DSG-1 — exact residual-slope gate for dense observer extension](RH_DENSE_OBSERVER_SLOPE_GATE.md).
 The earlier far-step sufficient test forces geometric spacing and
 therefore cannot supply the required divergent sampling sum.
 An exact replacement factors both original source Schur innovations
