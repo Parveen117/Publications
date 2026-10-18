@@ -16,7 +16,7 @@ proves q_L[g_*] > 34733/24000000 > 1/700 and improves the residual
 penalty separately on degree-two and higher modes. The sign of the
 complete certificate is NOT established. The further degree-four
 residual bound in T8 proves that the sufficient threshold (22), using
-the established lower trial margin, cannot hold for this fixed trial. There is no new unrestricted positive interval,
+the established lower trial margin, cannot hold for this fixed trial. T9 also proves that no nonzero finite polynomial trial can cancel the complete residual; T10 checks an endpoint-preserving quartic correction. There is no new unrestricted positive interval,
 first-prime closure, RH proof, or claim that this trial is optimal.
 
 ## Actual source and domain
@@ -628,13 +628,132 @@ bounds do not satisfy its stated sufficient threshold. The
 degree-four residual identifies a concrete obstruction in this
 attempt; it does not create a new independent RH condition.
 
+## BRT-T9. No nonzero polynomial trial cancels the complete residual
+
+At the fixed first-prime window L=7/20, let p be any nonzero
+real even polynomial on I, extended by zero. Then
+\[
+\boxed{Q_0T_Lp\ne0.}
+\tag{32}
+\]
+More strongly, this residual has infinitely many nonzero even
+Legendre coefficients. This statement concerns finite polynomial
+trials for the retained source, not every possible observer.
+
+**Proof.** In a sufficiently small one-sided neighborhood of x=L,
+the exact operator in T4 has the form
+\[
+(T_Lp)(x)=-\frac14p(x)\log(L-x)+A_p(x),
+\tag{33}
+\]
+where A_p is real analytic across x=L.
+
+To verify this regularity, k(t)=1/(2t)+j(t), with j real analytic
+on a neighborhood of [0,2L], implies
+F(t)=-(1/2)log(t)+f(t), where f is analytic at zero.
+The endpoint multiplier in T4 therefore contributes exactly
+the logarithm displayed in (33); F(L+x) is analytic near x=L.
+
+In the singular interior integral, p(x)-p(y) is divisible by
+x-y. Splitting the integral at y=x leaves integrals of
+polynomials with polynomial endpoints, hence a polynomial in x.
+The remaining interior integrals have kernels j(x-y) and j(y-x)
+on the two respective subintervals. These are analytic integrands
+with analytic endpoints, and extend analytically near x=L.
+
+The pole term and Omega term are analytic. Because
+0<u_2<2L, on a sufficiently small neighborhood to the left of L
+the first prime translate is p(x-u_2), strictly inside its support,
+while the other translate is zero. Thus their sum also has an
+analytic extension near L. This proves (33). The extension here
+is of the interior formula; it does not assert smoothness of
+the zero-extended trial across its support boundary.
+
+A nonzero polynomial has a finite order m>=0 of vanishing at L:
+p(L-d)=c d^m+O(d^(m+1)), c nonzero. The m-th derivative of
+p(L-d)log d has a nonzero logarithmic divergence as d decreases
+to zero. An analytic A_p cannot cancel it. Consequently T_Lp
+cannot agree with a constant, or with any polynomial, on that
+one-sided neighborhood.
+
+ASM admits p to the operator domain. If Q_0T_Lp=0 in L2,
+T_Lp would equal a constant almost everywhere, and then everywhere
+on the interior neighborhood by continuity, a contradiction.
+If Q_0T_Lp had only finitely many Legendre coefficients, it would
+instead equal a polynomial almost everywhere, giving the same
+contradiction. Evenness restricts these coefficients to even
+degrees. QED.
+
+For a polynomial p with <p,phi_0>=1, the exact return identity
+therefore gives the strict, source-specific statement
+\[
+\boxed{q_L[p]-s_L
+=\langle Q_0T_Lp,C^{-1}Q_0T_Lp\rangle>0.}
+\tag{34}
+\]
+Strict positivity follows from C>=delta I and injectivity of its
+positive inverse. This does not give a uniform positive lower
+bound for the error over all polynomial trials. In particular,
+it does not establish a minimum probability, prohibit convergence,
+or imply that a finite rigorous certificate is impossible.
+
+## BRT-T10. A quartic correction preserves endpoints but not exact closure
+
+The endpoint-preserving mean-zero quartic direction is
+\[
+\psi=\phi_4-\frac3{\sqrt5}\phi_2
+=\frac{21}{8\sqrt{2L}}(1-(x/L)^2)(1-5(x/L)^2).
+\tag{35}
+\]
+Thus p_tau=g_*+tau psi has <p_tau,phi_0>=1 and vanishes at both
+endpoints for every real tau. Its norm is
+\[
+\|p_\tau\|^2=\frac65+\frac65\tau+\frac{14}{5}\tau^2.
+\]
+These identities follow directly from the orthonormal Legendre
+coefficients. T9 applies to every p_tau: no choice of this
+coefficient, or of finitely many polynomial coefficients, cancels
+the complete residual.
+
+For clarity about what such a correction can accomplish, set
+a=q_L[psi]>0 and beta=<psi,r_*>. Exact polarization gives
+\[
+q_L[p_\tau]=q_L[g_*]+2\tau\beta+\tau^2a,\qquad
+Q_0T_Lp_\tau=r_*+\tau C\psi.
+\tag{36}
+\]
+The positive mean-zero bound ensures a>0. The scalar
+tau=-beta/a minimizes the trial value along this line and removes
+the residual reading against psi. It does not remove the complete
+residual or necessarily maximize a conservative lower certificate.
+Indeed,
+\[
+q_L[p_\tau]-
+\langle r_*+\tau C\psi,C^{-1}(r_*+\tau C\psi)\rangle=s_L
+\tag{37}
+\]
+for every tau: both quadratic changes cancel exactly.
+
+No coefficient beta, optimized lower bound, or new positivity
+interval is asserted here. The useful conclusion is narrower:
+finite polynomial exact-residual closure is ruled out, while
+positivity certification by a rigorously bounded nonzero residual
+remains possible.
+
+**Gate accounting.** This closes the proposed route of making
+all source memory vanish by finitely many polynomial corrections.
+It neither closes the residual-positivity gate nor adds a new
+independent hypothesis to RH. The required task remains a signed
+bound on the same exact returned scalar; it does not require
+that every residual coefficient vanish.
+
 ## Scope and continuation
 
 The established outputs are an explicit boundary-selected correction,
 its exact overlap polynomial, the strict prime penalty bound (7),
 a bounded full source column, the positive trial bound (14), and the
 stronger mode-resolved residual certificate (21), and the proved
-failure of the specific threshold (22) for this trial.
+failure of the specific threshold (22) for this trial. T9--T10 add a proof that finite polynomial corrections cannot make the exact residual vanish, with an explicit endpoint-preserving quartic family. This is not a quantitative positivity bound.
 No new positive source interval is claimed. DWE's previously proved
 unrestricted interval remains unchanged.
 
