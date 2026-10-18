@@ -1,6 +1,22 @@
 # Publications
 
-Latest RH development: [PWC-1 — probability tightness and faithful wave closure](RH_PROBABILITY_WAVE_CLOSURE.md).
+Latest RH development: [NOE-1 — infinite positive observer banks and source identification](RH_NESTED_OBSERVER_EXTENSION.md).
+Every positive finite actual-source bank admits every sufficiently
+distant next observation; explicit Schur gates retain both signs.
+This constructs an infinite nested positive bank while retaining
+the fixed reference, all old readings, derivatives and mixed pairings.
+Every unbounded nested chain of this kind has a locally uniform
+response limit and a tight, convergent positive probability wave.
+Source identification remains separate: an exact actual-xi construction
+keeps a nonzero deficit at a specified fixed position despite all
+those properties. This is a non-recovery example, not an RH counterexample.
+A positive nested extension with divergent sum of reciprocal square-root
+positions does identify the source and implies RH; constructing such
+a sufficiently dense extension remains open.
+Written existence and analytic proofs only; no new numerical dataset,
+scientific computation, independent agent, replay or workflow dispatch.
+
+Preceding RH development: [PWC-1 — probability tightness and faithful wave closure](RH_PROBABILITY_WAVE_CLOSURE.md).
 At one fixed reference, convergence of normalized positive finite
 responses to the actual source forces convergence of every layer
 moment, prevents probability escaping to infinite frequency, and
