@@ -1,6 +1,23 @@
 # Publications
 
-Latest RH development: [NOE-1 — infinite positive observer banks and source identification](RH_NESTED_OBSERVER_EXTENSION.md).
+Latest RH development: [DSG-1 — exact residual-slope gate for dense observer extension](RH_DENSE_OBSERVER_SLOPE_GATE.md).
+The earlier far-step sufficient test forces geometric spacing and
+therefore cannot supply the required divergent sampling sum.
+An exact replacement factors both original source Schur innovations
+by their known interpolation zeros. Its inverse-residual derivative
+window has no imposed minimum spacing ratio and is unchanged by
+coordinate changes on the old bank.
+Within UCB's existing finite range, both normalized margins are
+strictly positive through coincident-observer limits. The complete
+filtered residual decreases while its product with source position
+increases; an explicit enclosure controls the third residual derivative
+at every fitted position.
+The finite bank-size range is unchanged. An unlimited positive
+extension with divergent coverage, and hence RH closure, remains open.
+Written derivations only; no scientific computation, independent
+agent, new numerical certificate, replay or workflow dispatch.
+
+Preceding RH development: [NOE-1 — infinite positive observer banks and source identification](RH_NESTED_OBSERVER_EXTENSION.md).
 Every positive finite actual-source bank admits every sufficiently
 distant next observation; explicit Schur gates retain both signs.
 This constructs an infinite nested positive bank while retaining
