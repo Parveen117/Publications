@@ -4,10 +4,11 @@ Latest RH development: [BRT-1 — a boundary-regular quadratic first-prime trial
 The explicit correction h = phi_2/sqrt(5) makes the retained trial
 vanish at both endpoints. Its exact overlap is cubic in the cap
 width, giving an actual prime-2 penalty below 3/1000000 at L=7/20.
-The complete source column is bounded, and the trial value and
-full residual certificate are explicit. The certificate's sign
-has not been established; no new unrestricted positive interval
-or RH closure is claimed.
+The complete source column is bounded. The actual trial value is
+proved greater than 34733/24000000 > 1/700, and a mode-resolved
+residual bound retains the stronger higher-mode coercivity.
+The residual-subtracted certificate's sign remains unproved;
+no new unrestricted positive interval or RH closure is claimed.
 Written derivations only; no scientific computation, independent
 agent, numerical source evaluation, replay or workflow dispatch.
 

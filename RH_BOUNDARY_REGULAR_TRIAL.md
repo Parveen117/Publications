@@ -11,8 +11,10 @@ first-prime correlation cubic in the small overlap width.
 
 At L=7/20 the retained prime-2 penalty on this trial is strictly less
 than 3/1000000. The complete source value and the residual entering
-GRR's certificate are given explicitly. The sign of that certificate
-is NOT established. There is no new unrestricted positive interval,
+GRR's certificate are given explicitly. A follow-up written estimate
+proves q_L[g_*] > 34733/24000000 > 1/700 and improves the residual
+penalty separately on degree-two and higher modes. The sign of the
+complete certificate is NOT established. There is no new unrestricted positive interval,
 first-prime closure, RH proof, or claim that this trial is optimal.
 
 ## Actual source and domain
@@ -277,11 +279,186 @@ here. A negative lower endpoint would only mean this certificate
 has failed; it would not prove that the actual source is negative.
 There is no assertion that this particular quadratic trial will pass.
 
+## BRT-T6. The specified trial has a strictly positive actual source value
+
+At L=7/20, without a numerical source evaluation,
+\[
+\boxed{
+q_L[g_*]>\frac{34733}{24000000}>\frac1{700}.
+}
+\tag{14}
+\]
+This is positivity for one specified trial, not for every source
+profile. In particular, (14) alone is not a lower bound for s_L.
+
+**Proof.** Let b_old be GRR's older MCW comparison, retaining
+its actual prime term. MCW-T1 gives
+\[
+\begin{aligned}
+\mathfrak b_{\rm old}[g]={}&
+B_L N_g+J_L[g]+\int_I w_L g^2+\ell(g)^2\\
+&-\frac3{25}m_0(g)^2+\frac1{25}m_0(g)m_2(g)
+-a_2C_g(u_2),\\
+w_L(x)={}&-\frac14\log(1-(x/L)^2).
+\end{aligned}
+\tag{15}
+\]
+OPC-T3's displayed rational estimates give
+B_L>-206137/300000 at this endpoint.
+
+For the trial (3), direct integration and its two Legendre
+coefficients yield
+\[
+\begin{gathered}
+N_{g_*}=\frac65,\quad
+m_0^2=2L,\quad m_0m_2=\frac{2L^3}{5},\quad J_L[g_*]=\frac3{20},\\
+\int_I w_Lg_*^2=\frac{47}{100}-\frac35\log2
+>\frac{676}{12500}.
+\end{gathered}
+\tag{16}
+\]
+For the last identity, substitute x=Ls and use
+\[
+\begin{aligned}
+\int_0^1\log(1-s^2)\,ds&=2\log2-2,\\
+\int_0^1s^2\log(1-s^2)\,ds&=\frac23\log2-\frac89,\\
+\int_0^1s^4\log(1-s^2)\,ds&=\frac25\log2-\frac{46}{75}.
+\end{aligned}
+\]
+These follow by integration by parts with an endpoint cutoff
+and polynomial division; the logarithmic endpoint terms cancel
+before the cutoff is removed. Multiply their combination with
+coefficients 1,-2,1 by -9/16. The strict bound in (16) uses
+OPC's retained log2<1733/2500.
+
+The trial is nonnegative. Since cosh(x/2)>=1+x^2/8,
+\[
+\ell(g_*)^2\ge m_0^2+\frac14m_0m_2
+=2L+\frac{L^3}{10}.
+\tag{17}
+\]
+The additional square of m_2/8 is nonnegative and may be dropped.
+Combine (7), (15)--(17) at L=7/20:
+\[
+\begin{aligned}
+\mathfrak b_{\rm old}[g_*]
+>{}&-\frac{206137}{250000}+\frac3{20}
++\frac{676}{12500}+\frac7{10}+\frac{343}{80000}\\
+&-\frac{21}{250}+\frac{343}{500000}
+-\frac3{1000000}
+=\frac{201}{400000}.
+\end{aligned}
+\tag{18}
+\]
+
+GRR-T3's exact comparison difference is
+\[
+\mathfrak b_*[g]-\mathfrak b_{\rm old}[g]
+=d_LN_g-\frac{\Delta A}{2}m_0^2+\Delta Bm_0m_2,
+\]
+with
+\[
+d_L=\frac{14203}{7200000},\quad
+\Delta A=\frac{23}{4800},\quad
+\Delta B=\frac{29}{2400}.
+\]
+On this trial that difference is exactly
+\[
+\frac{14203}{6000000}-\frac{161}{96000}
++\frac{9947}{48000000}
+=\frac{14357}{16000000}.
+\tag{19}
+\]
+Finally GRR-T2 gives
+q_L[g]>=b_*[g]+(91/2304000)N_g.
+Using N_g=6/5, (18)--(19) give
+\[
+q_L[g_*]>
+\frac{201}{400000}+\frac{14357}{16000000}
++\frac{91}{1920000}
+=\frac{34733}{24000000}.
+\]
+The comparison with 1/700 follows from
+34733*700=24313100>24000000. QED.
+
+## BRT-T7. Higher residual modes admit a smaller error coefficient
+
+At L=7/20 let P_2 be projection onto phi_2 within the complete
+mean-zero space, and set
+\[
+\delta=\frac{93383}{1440000},\qquad
+\delta_4=\delta+\frac7{24}=\frac{513383}{1440000}.
+\]
+Then the actual positive mean-zero block obeys the form inequality
+\[
+\boxed{C\succeq D:=\delta P_2+\delta_4(I-P_2)>0.}
+\tag{20}
+\]
+This does not assert that C is diagonal or commutes with P_2.
+
+**Proof.** Retain the Legendre energy rather than replacing all
+of it by its least mean-zero eigenvalue. OPC-T2 absorbs the
+actual prime correlation into the boundary weight. On mean-zero
+profiles the mixed ordinary-moment terms vanish. The exact
+GRR comparison gain is d_L times the norm squared. Consequently,
+by the same scalar bounds as GRR-T5,
+\[
+q_L[h]\ge
+\delta\|h\|^2+
+\left(J_L[h]-\frac34\|h\|^2\right)
++\int_Iv_*h^2+\ell(h)^2 .
+\]
+The last two terms are nonnegative. MCW-T2's retained Legendre
+inequality gives
+J_L[h] >= (3/4)||P_2h||^2+(25/24)||(I-P_2)h||^2.
+This proves (20) on the core and then on the closed form domain.
+QED.
+
+For r_* in (12), write eta=<r_*,phi_2> and
+r_perp=r_*-eta phi_2. Inverse order gives the stronger
+complete-source certificate
+\[
+\boxed{
+s_L\ge q_L[g_*]
+-\frac{1440000}{93383}\eta^2
+-\frac{1440000}{513383}\|r_{\perp}\|^2.
+}
+\tag{21}
+\]
+The degree-two coefficient is below 31/2; the higher-mode
+coefficient is below 20/7. Thus both improve (13).
+
+No commutativity premise is needed. For example the variational
+identity
+\[
+\langle r,C^{-1}r\rangle
+=\sup_h(2\langle r,h\rangle-\langle h,Ch\rangle)
+\le\sup_h(2\langle r,h\rangle-\langle h,Dh\rangle)
+=\langle r,D^{-1}r\rangle
+\]
+proves the inverse comparison, with the first supremum understood
+on the form domain and the second over the mean-zero L2 space.
+All actual mixed couplings remain in C and in the source residual.
+
+Combining (14) and (21), a sufficient explicit condition is
+\[
+\boxed{
+\frac{1440000}{93383}\eta^2+
+\frac{1440000}{513383}\|r_\perp\|^2
+\le\frac{34733}{24000000}.
+}
+\tag{22}
+\]
+The left side has not been bounded by this threshold in this note.
+The positive trial reading in (14) is a completed part of the
+calculation; the residual subtraction is the part still open.
+
 ## Scope and continuation
 
 The established outputs are an explicit boundary-selected correction,
 its exact overlap polynomial, the strict prime penalty bound (7),
-a bounded full source column, and the concrete residual data (13).
+a bounded full source column, the positive trial bound (14), and the
+stronger mode-resolved residual certificate (21).
 No new positive source interval is claimed. DWE's previously proved
 unrestricted interval remains unchanged.
 
@@ -289,14 +466,15 @@ The trial is an ordinary source profile. Its quadratic shape is not
 identified with EMK connection curvature, a physical field, or a
 universal cut law. Its usefulness is justified by (6) and (10).
 
-The source-specific remaining task is a signed enclosure of (13), or
+The source-specific remaining task is a signed enclosure of (21), or
 a better admitted trial if that endpoint is negative. Boundary
 regularity and a small prime term cannot replace that calculation.
 Even a first-prime certificate would leave the all-width RH task open.
 
 Only this note and its README entry change. Validation consists of
-written polynomial integration, source polarization, boundary limits,
-and immutable-content readback. No scientific computation, numerical
+written polynomial and logarithmic integration, rational comparisons,
+source polarization, boundary limits, inverse form order, and
+immutable-content readback. No scientific computation, numerical
 source evaluation, independent agent, certificate replay or workflow
 dispatch is performed. The commit uses [skip ci]. The PR is a draft
 stacked on #137 and remains unmerged.
