@@ -1,23 +1,29 @@
 # Publications
 
 Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
-BRT-T44--T47 group primitive-prime powers and shared
-observation ratios. On log 2<L<=log 3-(log 2)/2,
-the actual source terms 2,3,4 have an exact seven-point
-support reduction with labels 6,8,9,12,16,18,24.
-Their joint operator norm is below 3/5, saving more
-than 1/5 against the sum of exact separate norms.
-The coefficient for 4=2^2 remains log 2/2.
-Multiplying the bank by a large common anchor preserves
-ratios; it neither inserts new source primes nor adds
-independent information.
+BRT-T48--T51 improve the same complete source-minus-memory
+bound at L=3/4. Nested grouping of the seven-point prime
+component preserves its explicit returned boundary form.
+Bounding that full return sharpens the joint norm from
+the allowance 3/5 to 59/100. This identity is not a new
+positivity theorem.
 
-At L=3/4, the infinite complement after polynomial
-degrees 0,2,...,14 has bound 131/32000>1/250.
-The complete eight-dimensional returned source retains
-its inverse residual and all mixed prime-memory terms.
-Its sign remains unproved. The five-dimensional returned
-source at L=11/20 from T40--T43 also remains unresolved.
+Optimizing the Gamma comparison together with its
+retained positive surplus gives parameter nu=L.
+The combined infinite-tail bound after polynomial
+degrees 0,2,...,14 is 2429/128000>1/53.
+The inverse-residual allowance falls from 250 to 53.
+For the same admitted trial, its complete lower matrix
+therefore improves by 197 R*R. The polynomial trial's
+improvement is positive definite; its nonzero residual
+and every mixed prime-memory term remain included.
+The improved lower matrix's sign is still unproved.
+
+T44--T47 retain the 2,3,4 grouping with observation
+labels 6,8,9,12,16,18,24. Common rescaling preserves
+ratios and adds no independent source information.
+The returned source matrices at 11/20 and 3/4
+both remain unresolved.
 
 The unrestricted working written result from BRT-T39 remains
 L<=1761/5000, with q_L[g] >= ||g||^2/30000 for every

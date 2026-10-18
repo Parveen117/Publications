@@ -2,29 +2,41 @@
 
 Monty · 18 October 2026.
 
-Written continuation through BRT-T47, based on branch head
-729b74252ef45245e7d7120fa6bd633d0768b8c0.
+Written continuation through BRT-T51, based on branch head
+ac3b54cb281e9f3af121c5f53e31f83509ed3b06.
 
-T44--T47 organize actual source translations by primitive-prime
-powers and shared observation ratios. In the support range
-log 2<L<=log 3-(log 2)/2, the active terms 2,3,4 have an exact
-seven-point support decomposition. Its bank labels are
-6,8,9,12,16,18,24; multiplying all labels by a common large
-anchor preserves the readings but adds no source term.
-The joint operator norm is below 3/5, saving more than 1/5
-against the sum of exact individual operator norms.
+T48--T51 sharpen the same complete source-minus-memory
+bound at L=3/4. Nested elimination of the seven-point
+prime group preserves an explicit two-boundary quadratic
+form. Keeping its full return improves the actual
+joint prime norm from the allowance 3/5 to 59/100.
 
-At L=3/4 the resulting infinite tail after polynomial
-degrees 0,2,...,14 has a uniform bound 131/32000>1/250.
-The complete eight-dimensional returned source retains
-every inverse-residual and mixed prime-memory term.
-Its sign has not been established.
+The Gamma comparison is optimized together with its
+retained positive remainder. Within this uniform family,
+the best fixed parameter is the support width itself.
+Combining both improvements gives
+\[
+\boxed{
+C_8(t)\succeq\frac{2429}{128000}I\succ\frac1{53}I,
+\qquad C_8(t)^{-1}\preceq53I
+\quad(t\in[0,1]^3,\ L=3/4).
+}
+\]
+For the same admitted trial Z and full residual R,
+the lower returned matrix improves by exactly
+197 R^*R when its former inverse allowance 250
+is replaced by 53. For the polynomial trial U_8
+that improvement is positive definite. Its residual
+is nonzero and retained; the improved source matrix's
+sign has not been established.
 
-T40--T43 retain the earlier joint prime-2/prime-3 norm
-and positive tail after degrees 0,2,4,6,8 at L=11/20.
-The returned five-dimensional source sign there also
-remains unresolved. These larger-window tail results
-do not extend the unrestricted positive interval.
+T44--T47 retain the prime-power chain grouping and
+seven-point support decomposition for active terms
+2,3,4 on log 2<L<=log 3-(log 2)/2. T40--T43 retain
+the five-mode complement at L=11/20. The returned
+source signs at both larger windows remain unresolved.
+The nested-group identity is not a new positivity
+theorem, and no unrestricted interval is added here.
 
 The latest full-family result remains T39:
 \[
@@ -43,17 +55,18 @@ on these full-family conclusions.
 
 Earlier sections preserve historical trials, failed bounds,
 observer/transport audits and intermediate intervals.
-The new quantitative estimates use actual source weights,
-shared support and domain-admitted profiles. Common-scale
-Gram invariance alone is not a positivity theorem.
+All quantitative estimates use actual source weights,
+the established domain and complete residual memory.
+Common rescaling of reading labels alone adds no
+independent source information.
 
-Positivity beyond the stated unrestricted interval, the
-returned matrix signs at 11/20 and 3/4, and all-width
-positivity/RH remain open. No new independent assumption
-is introduced. The particular nonpolynomial test (93)
-remains unassessed. These are working written proofs,
-not independently certified results. GitHub metadata
-alone is not mathematical certification.
+Positivity beyond the stated unrestricted interval,
+the returned matrix signs at 11/20 and 3/4, and
+all-width positivity/RH remain open. No new independent
+assumption is introduced. The particular nonpolynomial
+test (93) remains unassessed. These are working written
+proofs, not independently certified results. GitHub
+metadata alone is not mathematical certification.
 
 ## Actual source and domain
 
@@ -5474,6 +5487,395 @@ interval (164) is unchanged, and all-width
 positivity/RH remains open.
 No new independent assumption is added.
 
+
+## BRT-T48. Nested groups preserve one returned boundary form
+
+Use the seven-point matrix M_7 from (186), with boundary
+labels 6 and 24. The other five labels are internal.
+Let rho>a/2 be a diagnostic spectral parameter and set
+H(rho)=rho I-M_7. It is not assumed that H(rho) is positive.
+
+The internal block D(rho) consists of the isolated middle
+triangle label 12 and the two arm pairs (18,9), (8,16):
+\[
+D(\rho)=[\rho]\oplus
+\begin{pmatrix}\rho&-a/2\\-a/2&\rho\end{pmatrix}
+\oplus
+\begin{pmatrix}\rho&-a/2\\-a/2&\rho\end{pmatrix}\succ0.
+\]
+Its exact Schur return to the two boundary labels is
+\[
+\boxed{
+K(\rho)=
+\begin{pmatrix}
+\rho-\dfrac{a^2}{4\rho}
+-\dfrac{b^2\rho}{4\rho^2-a^2}
+&
+-\dfrac c2-\dfrac{a^2}{4\rho}\\[3pt]
+-\dfrac c2-\dfrac{a^2}{4\rho}
+&
+\rho-\dfrac{a^2}{4\rho}
+-\dfrac{b^2\rho}{4\rho^2-a^2}
+\end{pmatrix}.
+}
+\tag{198}
+\]
+The term a^2/(4rho) appears both on the diagonal and
+off the diagonal because the two boundary points share
+label 12. Each arm returns b^2 rho/(4rho^2-a^2) to
+its attached endpoint. These terms are retained memory,
+not independent edge costs.
+
+More precisely, for a boundary vector v in R^2,
+\[
+\boxed{
+\min_{y\in\mathbb R^5}(v,y)^TH(\rho)(v,y)
+=v^TK(\rho)v.
+}
+\tag{199}
+\]
+This follows by completing the positive D(rho) square.
+Eliminating the outer arm points first, then the inner
+arm points, then label 12 gives the same minimum as
+eliminating all five internal coordinates at once.
+Indeed each procedure minimizes the same quadratic
+function over the same internal variables; the
+positive internal block makes every such conditional
+minimum lawful and uniquely attained.
+
+Thus the quantity preserved by these nested groups
+is the returned boundary quadratic form at a fixed
+rho, with the same boundary and source data.
+Equation (199) is the finite support-graph version
+of ASM-T4's coherent nested-cut identity. It is not
+a new positivity theorem or an additional global
+invariant supplied merely by renaming the groups.
+
+The symmetric and antisymmetric boundary readings
+diagonalize K. Its smaller eigenvalue is
+\[
+\begin{aligned}
+f(\rho)&=\rho-\frac c2-\frac{a^2}{2\rho}
+-\frac{b^2\rho}{4\rho^2-a^2},\\
+f_{\rm anti}(\rho)&=
+\rho+\frac c2-\frac{b^2\rho}{4\rho^2-a^2}
+=f(\rho)+c+\frac{a^2}{2\rho},\\
+\det H(\rho)&=
+\rho(\rho^2-a^2/4)^2\det K(\rho).
+\end{aligned}
+\tag{200}
+\]
+The internal block is positive, so H(rho) is positive
+exactly when K(rho) is positive, equivalently f(rho)>0.
+This recovers the root equation (187) with its entire
+nested return intact.
+
+Common rescaling of observation labels preserves
+this relative component and K; relabeling its two
+boundary coordinates conjugates K by that permutation.
+This statement concerns the same relative support
+component. It does not physically shift an interval
+without its boundary, change L, insert another prime,
+or identify rho with a native curvature parameter.
+Changing the retained boundary also changes the
+returned matrix and requires its own elimination law.
+
+## BRT-T49. The nested return sharpens the joint prime bound
+
+On the same support band (185), the exact joint norm
+satisfies the stronger bound
+\[
+\boxed{
+\lambda_7<\frac{59}{100},\qquad
+\left\|\sum_{n=2,3,4}t_n\mathcal P_n\right\|
+\le\lambda_7<\frac{59}{100}
+\quad(0\le t_n\le1).
+}
+\tag{201}
+\]
+This improves the former 3/5 allowance for the
+same source and support; no new prime grouping is
+assumed outside the seven-point band.
+
+Here is a written rational estimate of the actual
+returned boundary form. TPW-T3/T5 give
+\[
+\boxed{
+a<\frac{123}{250},\quad a^2<\frac{243}{1000},\qquad
+b<\frac{159}{250},\quad b^2<\frac{81}{200},\qquad
+\frac c2<\frac{1733}{10000}.
+}
+\tag{202}
+\]
+For b, use log 3<11/10 and sqrt 3>173/100 to obtain
+b<110/173<159/250. The square bound follows by
+squaring this positive upper bound. The bound for
+a is TPW's a/2<123/500; its displayed square
+bound is weaker. Finally c/2=(log 2)/4.
+
+Set rho=59/100. For the return through label 12,
+\[
+\frac{a^2}{2\rho}
+<\frac{243}{1180}<\frac{103}{500}.
+\]
+For the complete return through either arm,
+\[
+4\rho^2-a^2>\frac{5747}{5000}>\frac87,\qquad
+b^2\rho<\frac{4779}{20000}<\frac6{25},
+\]
+so
+\[
+\frac{b^2\rho}{4\rho^2-a^2}<\frac{21}{100}.
+\]
+Inserting these three complete returns in (200) gives
+\[
+f(59/100)>
+\frac{59}{100}-\frac{1733}{10000}
+-\frac{103}{500}-\frac{21}{100}
+=\frac7{10000}>0.
+\]
+Therefore K(59/100) and H(59/100) are positive.
+By (187), or by the norm characterization in T45,
+lambda_7<59/100. Lowering nonnegative edge weights
+preserves the norm upper bound, as already proved
+for the diagnostic cube in T45. QED.
+
+The positive K here bounds the arithmetic translation
+operator. It is not the returned matrix of the full
+Gamma/pole/scalar/prime source. That separate source
+return is retained below.
+
+## BRT-T50. Optimize the Gamma comparison together with its positive return
+
+Let nu>0 be GRR's fixed kernel-comparison parameter.
+It is independent of the prime coefficients and
+diagnostic couplings. At any fixed finite L, let q_t
+be the GRR source with every active prime term carrying
+its diagnostic coupling. For mean-zero even g in the
+established source domain, define
+\[
+\begin{aligned}
+B_\nu(L)&=\frac{\Omega_0}{2}+F(2L)+\frac12\log2
++\frac L2-\frac{\nu L}{48}
+-\frac{L^3}{12}-\frac{L^3}{36\nu},\\
+\varepsilon(L,\nu)&=
+\frac{(2L-\nu)^3-(L-\nu)^3}{576\nu}.
+\end{aligned}
+\]
+GRR-T1/T2, including its retained positive remainder,
+give
+\[
+\boxed{
+\begin{aligned}
+q_t[g]\ge{}&
+\bigl(B_\nu(L)+\varepsilon(L,\nu)\bigr)\|g\|^2
++J_L[g]+\int_Iw_L|g|^2+\ell(g)^2\\
+&-\left\langle g,\sum_n t_n\mathcal P_n g\right\rangle .
+\end{aligned}
+}
+\tag{203}
+\]
+Every active prime power is included in the last sum.
+Here the two polynomial moment corrections vanish
+because m_0(g)=0. The positive surplus is the same
+Gamma remainder from GRR, retained on L<=u<=2L
+using N_g-C_g(u)>=N_g/2. It is not an extra source
+term and is not counted a second time.
+
+Adding that surplus before choosing nu gives
+\[
+\begin{aligned}
+\mathcal G_\nu(L)&:=B_\nu(L)+\varepsilon(L,\nu)\\
+&=\frac{\Omega_0}{2}+F(2L)+\frac12\log2
++\frac L2-\frac{L^3}{12}-\frac{L^2}{64}
+-\frac L{64}\left(\nu+\frac{L^2}{\nu}\right),\\
+\boxed{
+\mathcal G_L(L)-\mathcal G_\nu(L)
+=\frac{L(\nu-L)^2}{64\nu}\ge0.
+}
+\end{aligned}
+\tag{204}
+\]
+Thus nu=L maximizes this particular uniform
+comparison, with the displayed positive remainder
+included. The maximizer is a fixed parameter for
+each declared width and does not depend on g.
+No nonlinear trial-dependent source is introduced.
+This is optimality within the stated comparison
+family, not optimality among all possible Gamma
+estimates.
+
+To verify (204), expand the numerator of epsilon
+as 7L^3-9L^2 nu+3L nu^2. Its contributions combine
+with -nu L/48 and -L^3/(36nu) to give
+-L nu/64 and -L^3/(64nu), respectively.
+The difference from nu=L is the displayed square.
+QED.
+
+At L=3/4 the width-dependent polynomial-plus-surplus
+contribution is
+\[
+\frac L2-\frac{L^3}{12}-\frac{3L^2}{64}
+=\frac{321}{1024}.
+\]
+The previous T46 contribution was 79/256=316/1024,
+so the new uniform source allowance gains 5/1024.
+For comparison, retaining GRR's surplus while still
+choosing nu=1/2 gives 639/2048; choosing nu=L raises
+it to 642/2048. The parameter improvement alone is
+3/2048, and the rest of the gain restores the
+previously dropped positive remainder.
+
+## BRT-T51. The same full residual now has inverse allowance 53
+
+Keep L_dagger=3/4, the same eight retained modes
+of degrees 0,2,...,14, and the same actual source
+family q_t from T46. No source, domain, trial
+normalization or cut dimension changes.
+
+For h in Q_8D_(3/4), apply (203)--(204) with
+nu=L=3/4, retain J>=H_16||h||^2/2, and use (201).
+The old scalar bounds (192), before their polynomial
+addition, give
+Omega_0/2+F(3/2)+(log 2)/2>-2789/2000.
+Also H_16/2>169/100. Therefore
+\[
+\boxed{
+q_t[h]\ge
+\frac{2429}{128000}\|h\|^2
+>\frac1{53}\|h\|^2
+\quad(0\ne h\in Q_8D_{3/4},\ t\in[0,1]^3).
+}
+\tag{205}
+\]
+The rational coefficient is
+\[
+\frac{169}{100}-\frac{2789}{2000}
++\frac{321}{1024}-\frac{59}{100}
+=\frac{2429}{128000}.
+\]
+It exceeds 1/53 because 2429(53)=128737>128000.
+Relative to (193), the exact change in this lower
+coefficient is
+\[
+\frac{2429}{128000}
+=\frac{131}{32000}+\frac1{100}+\frac5{1024}.
+\]
+The two positive increments come from the sharper
+complete prime return and the Gamma comparison
+with its positive remainder, respectively.
+
+The same tail operators consequently obey
+\[
+\boxed{
+C_8(t)\succeq\frac{2429}{128000}I,\qquad
+0<C_8(t)^{-1}\preceq\frac{128000}{2429}I
+\preceq53I.
+}
+\tag{206}
+\]
+For the same admitted column trial Z, with
+P_8Z=U_8 and its full R=Q_8T(t)Z, define
+\[
+\begin{aligned}
+\mathcal L_{250}(Z,t)&=Z^*T(t)Z-250R^*R,\\
+\mathcal L_{53}(Z,t)&=Z^*T(t)Z-53R^*R .
+\end{aligned}
+\]
+The exact source return and improved lower matrix are
+\[
+\boxed{
+\begin{aligned}
+\mathcal L_{53}(Z,t)
+&\preceq\mathsf S_8(t)
+=Z^*T(t)Z-R^*C_8(t)^{-1}R,\\
+\mathcal L_{53}(Z,t)-\mathcal L_{250}(Z,t)
+&=197R^*R\succeq0.
+\end{aligned}
+}
+\tag{207}
+\]
+Thus this continuation quantitatively improves the
+same source-minus-complete-memory estimate. It
+does not choose a correction merely because its
+trial value falls. Every residual direction and
+mixed prime-memory pairing remains.
+
+For the concrete admitted polynomial trial Z=U_8,
+the improvement is positive definite, not merely
+semidefinite. To see this, put B_8(t)=Q_8T(t)U_8.
+Every nonzero retained vector produces a nonzero
+polynomial p of degree at most 14. The endpoint
+argument in T9 extends to this source:
+\[
+\boxed{
+T(t)p(x)=-\frac14p(x)\log(L-x)+A_{p,t}(x)
+\quad\text{near }x=L,\qquad
+\ker B_8(t)=\{0\}.
+}
+\tag{208}
+\]
+Here A_(p,t) is analytic across L as an extension
+of the one-sided interior formula. The Gamma and
+pole terms have the same local form as in T9.
+For each active shift log 2, log 3, log 4<2L,
+the inward translate of p is an interior polynomial
+near L and the outward translate is zero there.
+Multiplying these analytic contributions by t_n
+does not alter the boundary logarithm.
+
+A nonzero p has finite endpoint vanishing order,
+so some derivative of p(x)log(L-x) still diverges
+logarithmically. Thus T(t)p cannot be a polynomial
+near L. If Q_8T(t)p=0, it would instead agree
+almost everywhere with an element of V_8, hence
+with a polynomial throughout that interior
+neighborhood by continuity, a contradiction.
+This proves injectivity and B_8(t)^*B_8(t)>0.
+
+Consequently (207) gives the strict matrix improvement
+197 B_8(t)^*B_8(t)>0 for that fixed polynomial trial.
+No rational lower eigenvalue for this Gram matrix
+has been established. The statement is for this
+fixed finite cut; it does not assert an error floor
+over all polynomial trials or increasing cut sizes.
+Residual cancellation remains unnecessary.
+
+The simultaneous prime insertion bound also improves.
+With the same E_0 and D=D_2+D_3+D_4 as in (197),
+\[
+\boxed{
+0\preceq D^*C_8(\mathbf1)^{-1}D
+\preceq53D^*D
+\preceq53\lambda_7^2E_0^*E_0
+\preceq\frac{184493}{10000}E_0^*E_0
+\preceq19E_0^*E_0.
+}
+\tag{209}
+\]
+This replaces the former coarse allowance 90.
+The bound involving the actual D^*D retains all
+cross terms and is preferable to the last scalar
+allowance when estimating entries.
+
+Neither (207)'s improved lower matrix nor the
+exact S_8(1) has been shown positive semidefinite
+here. A strict improvement of a lower matrix
+does not by itself determine its sign. The
+comparison parameter optimization and nested
+return identity do not supply that missing sign.
+
+**Gate accounting.** The explicit nested boundary
+return, sharper joint norm, optimized Gamma
+comparison with retained surplus, and reduction
+of the full residual allowance from 250 to 53
+are closed in the working written derivation.
+The same returned source sign at 3/4 remains
+open, as does the retained sign at 11/20.
+The unrestricted interval (164) is unchanged;
+all-width positivity/RH remains unresolved.
+No new independent assumption is added.
+
 ## Scope and continuation
 
 The current unrestricted interval remains (164):
@@ -5481,61 +5883,68 @@ The current unrestricted interval remains (164):
 s_L>52751/900000000>7/120000 on the upper band
 [7/20,1761/5000]. The stronger margin 1/25000 through
 7001/20000 and DWE's 1/1700 on L<=1/4+1/47600
-are retained. T36--T39's full-source and residual
-constants are not extrapolated beyond their stated band.
+are retained. T36--T39's constants are not extrapolated
+beyond their stated band.
 
-T40--T43 gave an exact two-prime joint norm and the
-positive five-mode complement at 11/20. T44--T47
-extend the grouping method to the next active prime
-power, 4=2^2, with its actual coefficient log 2/2.
-A single primitive-prime family has the chain matrices
-(182)--(183). When different families share observation
-points, their joint support must also be retained.
+T40--T43 gave the two-prime joint norm and the
+five-mode complement at 11/20. T44--T47 established
+prime-power chain grouping, the seven-point support
+decomposition for terms 2,3,4, and the eight-mode
+complement at 3/4. Those source identities, support
+restrictions and actual coefficients remain unchanged.
 
-On log 2<L<=log 3-(log 2)/2 the complete 2,3,4 block
-splits into the seven-point components (186), four-point
-paths and isolated prime-2 pairs. Its exact norm is
-characterized by (187), and is below 3/5. This saves
-more than 1/5 against the exact separate operator costs
-and more than 1/10 even after powers of 2 are grouped
-first. These are quantitative bounds for the actual
-signed arithmetic contribution.
+T48--T51 improve the estimate at that same 3/4 window.
+The exact boundary matrix (198) retains both arm
+returns and the shared middle-point return. Nested
+elimination preserves that matrix's quadratic form
+for fixed boundary and source data; this is ASM's
+coherent-cut identity applied to the explicit graph.
+It does not infer a new positive source from an
+invariant label.
 
-The labels 6,8,9,12,16,18,24 express the shared ratios.
-Multiplying them by a large common anchor preserves
-their readings. The composite labels neither insert
-new source primes nor increase independent information.
-No intrinsic classification of all prime numbers or
-finite-component decomposition at every width is claimed.
+Bounding the complete boundary return gives
+lambda_7<59/100. Independently, adding GRR's uniform
+positive surplus before optimizing its comparison
+parameter gives the exact loss formula (204).
+Its maximizer is nu=L. Neither step changes the
+actual arithmetic source or suppresses its residual.
 
-At L=3/4 the joint bound gives the eight-mode complement
-estimate (193). With the same Gamma and Legendre lower
-constants, the separate estimate (194) is negative.
-The new positive tail gives inverse bound 250 and
-the complete returned-source enclosure (196).
-The cross-memory terms in (197) survive grouping.
+The combined tail bound is 2429/128000>1/53.
+Consequently the same admitted trial's complete
+lower matrix improves by 197 R^*R relative to
+the former allowance 250. For the polynomial trial
+U_8, the endpoint logarithm proves that this
+improvement is positive definite. No quantitative
+lower eigenvalue of its residual Gram has been
+established. The full grouped insertion memory
+allowance also improves from 90 to below 19,
+while its actual mixed columns remain preferable
+to that coarse scalar allowance.
 
-The retained source matrices at 11/20 and 3/4 have
-not been bounded to determine their signs. These are
-larger-window instances of the existing all-width
-source problem, not additional assumptions. A positive
-tail is not full-source positivity, and an exact memory
-identity is not a new positivity theorem. The different
-cut dimensions at the two widths are not minimal or
-universal observer counts.
+The signs of the improved lower matrix and exact
+returned source at 3/4 remain unproved. The retained
+source at 11/20 remains unresolved as well. A strict
+increase of a lower matrix does not determine its
+sign. These are instances of the original all-width
+problem, not additional independent assumptions.
 
-The original quadratic trial and its failed sufficient bounds
-remain historical evidence. T9's finite-polynomial exact
-residual-cancellation obstruction still applies to the
-successful quartic shape. T16's nonpolynomial correction
-remains available; its particular test (93) is unassessed.
+Common multiplication of the bank labels preserves
+relative readings but introduces no new prime source.
+Neither a universal finite support graph nor a
+minimal observer count is asserted. The original
+quadratic trial and its failed sufficient bounds
+remain historical evidence. T9's finite-polynomial
+residual obstruction is compatible with a rigorous
+finite positivity bound. T16's particular
+nonpolynomial test (93) remains unassessed.
 
-The polynomial and comparison operators are source profiles
-and estimates on the stated domain. They are not identified
-with native EMK curvature, Riemann curvature, a physical
-field or a universal cut law. A co-carried observer change
-preserves the full pairing; actual support enlargement
-changes the source terms and support graph.
+These operators and comparisons use the stated
+arithmetic-source domain. They are not identified
+with native EMK curvature, Riemann curvature,
+a physical field or a universal cut law.
+Co-carried coordinate changes preserve the full
+pairing; support enlargement changes the source
+and must respect its newly active translations.
 
 Only this note and its README entry change. The work is
 written mathematical derivation plus exact repository-content
@@ -5545,11 +5954,11 @@ agent, certificate replay or workflow dispatch is performed.
 The commit uses [skip ci]. The PR remains draft, stacked
 on #137, and unmerged.
 
-**Gate accounting.** Prime-power chain grouping, the
-joint seven-point norm, and the specified positive
-eight-mode complement at 3/4 are closed in the working
-written derivation. The unrestricted positive interval
-stays at 1761/5000. Returned matrix signs at 11/20 and
-3/4, positivity beyond the established unrestricted
-interval, and all-width positivity/RH remain open.
-No new independent assumption is added.
+**Gate accounting.** The explicit nested return and
+same-window quantitative improvement of the complete
+residual allowance from 250 to 53 are closed in the
+working written derivation. The unrestricted positive
+interval stays at 1761/5000. Returned source signs at
+11/20 and 3/4, positivity beyond the established
+unrestricted interval, and all-width positivity/RH
+remain open. No new independent assumption is added.
