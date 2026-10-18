@@ -1,6 +1,20 @@
 # Publications
 
-Latest RH development: [APD-1 — observer aperture and enlarged positive banks](RH_OBSERVER_APERTURE_DEPTH.md).
+Latest RH development: [SFA-1 — actual source flow and the acceleration gate](RH_SOURCE_FLOW_ACCELERATION.md).
+The retained anchor hierarchy gives coupled mean/fluctuation equations
+and an exact generator carrying each finite source pairing invariantly.
+A first finite-anchor positivity loss requires a pole in its compressed
+boundary reading; a quantitative determinant bound holds on the already
+proved finite range.
+Old forms and their first derivatives do not determine the next odd
+layer. That layer is recovered exactly from an old reading's acceleration,
+turning LCW's sharp extension test into a two-sided acceleration window.
+The universal boundary control and acceleration signs remain unproved.
+APD's finite ranges are retained; no RH closure is claimed.
+Written derivations only; no scientific computation, numerical source
+evaluation, independent agent, replay or workflow dispatch.
+
+Preceding RH development: [APD-1 — observer aperture and enlarged positive banks](RH_OBSERVER_APERTURE_DEPTH.md).
 The guaranteed arbitrary-bank size on the same interval [a/2,3a/2]
 increases from floor(N*/12) to floor(N*/9) for N* >= 2048,
 retaining both actual source signs and all mixed readings.
