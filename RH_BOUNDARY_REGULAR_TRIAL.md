@@ -1115,6 +1115,171 @@ The proof uses finite written algebra, Bessel's inequality and
 inverse form order; no scientific computation, simulation,
 certificate replay, subagent or workflow dispatch is performed.
 
+## Observer-angle audit — two-sided ratios and quarter-turn signs
+
+Monty requested a check of whether the pending sign is merely a
+one-chart reading artifact: multiple observer readings, two-sided
+ratios, and a coordinate sign flip at a quarter turn must be retained.
+This audit examines the repository's written identities at
+e19719811b9cdfb9a13ff0bd3a8dcc96d36d20a7. It does not replay
+certificates or independently validate the entire RH programme.
+
+### What is already in the native/source chain
+
+- [IRT-1](papers/native-invariant-ratio-transport/THEOREM.md),
+  sections 1--2: invariance is relative to specified transport.
+  A co-transformed source, numerator and denominator preserve the
+  ratio. Its declared denominator is positive and nonzero; the note
+  does not license evaluating the same quotient at a zero denominator.
+  A calibrated log-diagonal is not an arbitrary physical angle.
+- [CHD-3](papers/native-cut-generated-history/CIRCULAR_OBSERVER_COMPLETION.md),
+  sections 1 and 5: Pythagoras normalizes circular probes.
+  Observer, form and reference metric transform together:
+  p'=Sp, H'=S^(-*)HS^(-1), so p'^*H'p'=p^*Hp.
+  Probe normalization does not assume positivity of the tested H.
+- [QRI-1](RH_REFLECTION_RATIO_GATE.md), T1--T3:
+  the raw thermodynamic response Hessian and the transported source
+  metric need not have the same signature. Axis reflection changes
+  the cross coefficient b to -b while leaving b^2/(ac) unchanged.
+  For an actual source bank the normalized coupling criterion is
+  retained explicitly. This already addresses quadrant signs; it
+  is not a new positivity result of the present audit.
+- [OQD-1](RH_OBSERVER_QUOTIENT_DESCENT.md), T4:
+  the two-channel cut satisfies
+  G_a(Jf,Jh)=B_a(f,h) exactly. Its retained diagonal carries the
+  whole original polynomial pairing, not an unsigned half of it.
+- [SPT-1](RH_SHUNYA_POTENTIAL.md), T1--T2:
+  the invariant potential is (r^2+y(1-y)h^2)/2. Applying the actual
+  source functional preserves the invariant identity, but does not
+  make that functional positive. Its products at complex source
+  points remain bilinear.
+- [CWF-1](RH_CRITICAL_WAVE_FORMS.md), T1--T2:
+  the compact-wave form is the specified positive-normalization
+  limit of native polynomial pairings and has the full prime,
+  Gamma and pole formula. This is a fixed-profile limit, not a
+  claimed invertible frame change between all carriers.
+- [PTE-1](RH_PRIME_TRANSPORT_ENERGY.md), T2, and ASM:
+  the same source is exactly E_L[g]-c_L||g||^2, and this identity
+  is retained on the closed source domain. In particular the
+  subtraction is not the sign of one chosen coordinate reading.
+
+Within this inspected chain, no step replaces a carried pairing
+by the sign of one coordinate projection, or turns a bilinear
+complex-source square into an absolute square. No missing-quadrant
+sign correction was identified. This is a scoped identity audit,
+not a claim that every source theorem has been fully re-proved.
+The EMK geometry README also explicitly separates recognition
+curvature, metric curvature and global sheet memory; none of
+these is silently identified with the source form here.
+
+### The current unresolved condition is already a two-sided ratio
+
+At L=7/20, OPC-T6 gives alpha=q_L[phi_0]>17/200, and the
+mean-zero block C is strictly positive. Define
+\[
+\beta=\langle b,C^{-1}b\rangle\ge0,\qquad
+\chi_L=\frac{\beta}{\alpha}.
+\]
+Then the exact existing Schur identity says
+\[
+\boxed{
+s_L=\alpha(1-\chi_L),\qquad
+q_L\ge0\ \Longleftrightarrow\ \chi_L\le1.
+}
+\tag{52}
+\]
+This is QRI's normalized coupling ratio in the current scalar/
+complete-complement split. It is an equivalent interpretation,
+not a new positivity theorem. No bound chi_L<=1 is supplied here.
+
+Reversing the constant observer orientation sends b to -b,
+leaves alpha and beta unchanged, and therefore leaves chi_L and
+the sign of s_L unchanged. An invertible coordinate change in the
+complement, with its form carried by congruence, likewise preserves
+the inverse contraction beta. Equivalently beta is the supremum
+of 2<b,h>-q_L[h] over the complement; a bijective reparameterization
+does not change that supremum. The source form domain and selected
+observer functional must be carried as well.
+Changing the selected physical observer/complement is different:
+the numerical ratio need not be unchanged under that operation,
+although a faithful coordinate presentation preserves source inertia.
+
+If s_L is nonzero, the reciprocal retention ratio is
+alpha/s_L=1/(1-chi_L). It is undefined when s_L=0.
+A reciprocal-chart singularity is not permission to replace
+s_L by its absolute value. The bounded ratio chi_L remains defined
+there because alpha is strictly positive.
+
+### A complete angular calculation, including 90 degrees
+
+When beta>0 let
+\[
+u=\frac{C^{-1}b}{\sqrt{\beta}}.
+\]
+It is an admitted mean-zero operator-domain vector, with
+q_L[u]=1 and <b,u>=sqrt(beta). The two-dimensional source form
+on span{phi_0,u}, normalized by its positive diagonal entries,
+is exactly
+\[
+\begin{pmatrix}1&\sqrt{\chi_L}\\
+\sqrt{\chi_L}&1\end{pmatrix}.
+\]
+For the circular reference preparation
+\[
+g_\theta=\frac{\cos\theta}{\sqrt{\alpha}}\phi_0
++\sin\theta\,u,
+\]
+the positive reference energy alpha c^2+q_L[h] equals one
+by Pythagoras, whereas the actual source is
+\[
+\boxed{q_L[g_\theta]=1+\sqrt{\chi_L}\sin(2\theta).}
+\tag{53}
+\]
+Thus both quadrants and the mixed term are included. At pi/2,
+the constant-coordinate reading is zero but q_L[g_(pi/2)]=1.
+After crossing pi/2 the mixed term changes sign; this does not
+by itself change the sign of the complete expression.
+
+Over all angles its least value is 1-sqrt(chi_L).
+Every remaining mean-zero vector decomposes into a multiple of u
+and a C-orthogonal vector z; <b,z>=0 and q_L[z]>=0.
+Thus the angular test in this coupled plane, together with the
+positive remainder, yields exactly (52), not a further condition.
+If beta=0, positivity of C^-1 implies b=0, and the source already
+splits as alpha c^2+q_L[h]>0 for nonzero states.
+
+The angle in (53) is defined using this stated positive reference
+energy. It has not been identified with an EMK sheet angle or a
+TVSP compass angle. Nor does a zero coordinate projection imply
+absence of all observer readings: the other coordinate survives.
+An observer-frame rotation carrying the state and form together
+preserves the full reading; varying theta in (53) instead selects
+different preparations in the fixed source.
+
+### Another exact ratio retaining the source subtraction
+
+For every nonzero admitted g, PTE gives c_L>0 and
+\[
+\mathcal R_L(g)=\frac{\mathcal E_L[g]}{c_L\|g\|^2},\qquad
+q_L[g]=c_L\|g\|^2(\mathcal R_L(g)-1).
+\tag{54}
+\]
+Both numerator and denominator are positive, but the required
+condition is R_L(g)>=1 for every g, not just positivity of the
+ratio. The ratio is invariant under nonzero scalar rescaling of g
+and passive coordinate changes carrying both forms. It is not
+asserted constant under arbitrary changes of physical preparation.
+
+**Audit conclusion and gate accounting.** Quarter-turn coordinate
+sign changes and two-sided invariant ratios are already compatible
+with the retained source. They do not remove its signed comparison
+against one. The proposed one-chart sign-artifact explanation was
+not supported by the inspected matching identities. No new
+independent gate or assumption is introduced. The same unresolved
+task is chi_(7/20)<=1, equivalently s_(7/20)>=0; all-width positivity
+remains open. This audit supplies no improved numerical bound and
+is not labelled a new positivity theorem.
+
 ## Scope and continuation
 
 The established outputs are an explicit boundary-selected correction,
