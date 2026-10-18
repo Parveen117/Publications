@@ -1,28 +1,32 @@
 # Publications
 
 Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
-BRT-T48--T51 improve the same complete source-minus-memory
-bound at L=3/4. Nested grouping of the seven-point prime
-component preserves its explicit returned boundary form.
-Bounding that full return sharpens the joint norm from
-the allowance 3/5 to 59/100. This identity is not a new
-positivity theorem.
+BRT-T52--T55 make the positivity-transfer rule explicit.
+Prime-group containment alone gives no source sign.
+The actual seven-point prime comparison has a coherent
+edge-square factorization with one shared diagonal budget.
 
-Optimizing the Gamma comparison together with its
-retained positive surplus gives parameter nu=L.
-The combined infinite-tail bound after polynomial
-degrees 0,2,...,14 is 2429/128000>1/53.
-The inverse-residual allowance falls from 250 to 53.
-For the same admitted trial, its complete lower matrix
-therefore improves by 197 R*R. The polynomial trial's
-improvement is positive definite; its nonzero residual
-and every mixed prime-memory term remain included.
-The improved lower matrix's sign is still unproved.
+At the same L=3/4 window, retaining the complete
+Legendre hierarchy replaces the uniform inverse-residual
+allowance 53 by 53 for degree 16, 40/3 for degree 18,
+and 8 for the entire remaining even tail.
+The first controlled comparison level propagates to
+all higher levels by a proved positive increment.
+The source is not assumed diagonal, and the inverse
+comparison requires no commutation.
 
-T44--T47 retain the 2,3,4 grouping with observation
-labels 6,8,9,12,16,18,24. Common rescaling preserves
-ratios and adds no independent source information.
-The returned source matrices at 11/20 and 3/4
+For the same admitted trial, the complete lower matrix
+improves by (119/3) r_18* r_18 + 45 R_(>=20)* R_(>=20).
+Every residual mode and mixed prime-memory term remains.
+The polynomial trial's improvement is positive definite;
+the improved source matrix's sign remains unproved.
+Attempting to retain only seven modes fails in this
+specific comparison: its degree-14 coefficient is below
+-1/25. This does not show a negative actual source.
+
+T48--T51 retain the joint prime norm below 59/100
+and the optimized Gamma comparison with its positive
+surplus. Returned source matrices at 11/20 and 3/4
 both remain unresolved.
 
 The unrestricted working written result from BRT-T39 remains

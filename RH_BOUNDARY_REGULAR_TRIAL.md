@@ -2,41 +2,52 @@
 
 Monty · 18 October 2026.
 
-Written continuation through BRT-T51, based on branch head
-ac3b54cb281e9f3af121c5f53e31f83509ed3b06.
+Written continuation through BRT-T55, based on branch head
+3d3212bb83de89017c53a79d012a7aaf511331b2.
 
-T48--T51 sharpen the same complete source-minus-memory
-bound at L=3/4. Nested elimination of the seven-point
-prime group preserves an explicit two-boundary quadratic
-form. Keeping its full return improves the actual
-joint prime norm from the allowance 3/5 to 59/100.
+T52--T55 make the valid positivity-transfer rule explicit.
+Containment in a larger prime-generated group alone gives
+no source sign. The actual seven-point prime comparison
+does have a coherent edge-square factorization, with the
+shared diagonal budget counted once.
 
-The Gamma comparison is optimized together with its
-retained positive remainder. Within this uniform family,
-the best fixed parameter is the support width itself.
-Combining both improvements gives
+At the unchanged L=3/4 window, retaining the complete
+Legendre hierarchy improves the inverse-residual estimate:
 \[
 \boxed{
-C_8(t)\succeq\frac{2429}{128000}I\succ\frac1{53}I,
-\qquad C_8(t)^{-1}\preceq53I
-\quad(t\in[0,1]^3,\ L=3/4).
+R^*C_8(t)^{-1}R
+\preceq
+53\,r_{16}^*r_{16}
++\frac{40}{3}r_{18}^*r_{18}
++8\,R_{\ge20}^*R_{\ge20}.
 }
 \]
-For the same admitted trial Z and full residual R,
-the lower returned matrix improves by exactly
-197 R^*R when its former inverse allowance 250
-is replaced by 53. For the polynomial trial U_8
-that improvement is positive definite. Its residual
-is nonzero and retained; the improved source matrix's
-sign has not been established.
+Here R is the full residual of the same admitted trial,
+r_16 and r_18 are its degree-16 and degree-18 readings,
+and R_(>=20) contains every remaining even mode.
+The stronger infinite weighted estimate is (218).
+No commutation with the actual source is assumed.
 
-T44--T47 retain the prime-power chain grouping and
-seven-point support decomposition for active terms
-2,3,4 on log 2<L<=log 3-(log 2)/2. T40--T43 retain
-the five-mode complement at L=11/20. The returned
-source signs at both larger windows remain unresolved.
-The nested-group identity is not a new positivity
-theorem, and no unrestricted interval is added here.
+Compared with the former uniform allowance 53, the
+complete lower matrix improves by
+(119/3) r_18^*r_18 + 45 R_(>=20)^*R_(>=20).
+For the polynomial trial U_8 this improvement is
+positive definite. The residual is nonzero and fully
+retained; the improved source matrix's sign is unproved.
+
+The first controlled comparison level propagates to
+every higher level by the positive increment (215).
+Attempting to lower the retained count from eight
+to seven fails for this particular comparison:
+its degree-14 coefficient is below -1/25.
+This is not a negative actual-source test or a claim
+that no stronger seven-mode estimate exists.
+
+T48--T51 retain the sharper joint prime norm 59/100,
+the Gamma comparison optimized with its positive
+surplus, and the scalar inverse allowance 53.
+The returned source signs at 11/20 and 3/4 remain
+unresolved. No unrestricted interval is added here.
 
 The latest full-family result remains T39:
 \[
@@ -57,8 +68,8 @@ Earlier sections preserve historical trials, failed bounds,
 observer/transport audits and intermediate intervals.
 All quantitative estimates use actual source weights,
 the established domain and complete residual memory.
-Common rescaling of reading labels alone adds no
-independent source information.
+Common rescaling or containment of reading labels
+alone adds no positivity.
 
 Positivity beyond the stated unrestricted interval,
 the returned matrix signs at 11/20 and 3/4, and
@@ -5876,6 +5887,329 @@ The unrestricted interval (164) is unchanged;
 all-width positivity/RH remains unresolved.
 No new independent assumption is added.
 
+
+## BRT-T52. Containment requires a coherent positivity transfer
+
+For a finite set of primes S, the generated multiplicative
+group is
+\[
+G(S)=\left\{\prod_{p\in S}p^{k_p}:k_p\in\mathbb Z\right\}
+\subset\mathbb Q_{>0}^{\times}.
+\tag{210}
+\]
+Multiplication adds exponents and inversion negates them,
+so this is a group; S contained in T implies
+G(S) contained in G(T). The set of primes itself is not
+closed under multiplication. None of these containment
+facts controls the sign of the arithmetic source.
+
+Even two positive one-coordinate restrictions do not
+force a positive joint form: x^2+y^2+4xy restricts to a
+positive square on each axis but takes value -2 at
+(1,-1). This is only a counterexample to the proposed
+logical implication, not a negative test for q_L.
+
+There is, however, a precise local-to-joint rule for the
+actual nonnegative edge weights in (186). For any
+symmetric zero-diagonal matrix M with nonnegative
+entries and any positive vector w,
+\[
+\boxed{
+\begin{aligned}
+x^T(\rho I-M)x
+={}&\sum_{i<j}M_{ij}w_iw_j
+\left(\frac{x_i}{w_i}-\frac{x_j}{w_j}\right)^2\\
+&+\sum_i\left(\rho-\frac{(Mw)_i}{w_i}\right)x_i^2.
+\end{aligned}
+}
+\tag{211}
+\]
+Expanding each edge square gives its two diagonal
+terms and -2M_ij x_i x_j, proving the identity.
+If the final diagonal coefficients are nonnegative,
+these smallest edge contributions assemble to a
+positive semidefinite whole. Their common diagonal
+budget is counted once, even at a shared point.
+Separate positive block tests with incompatible
+budgets do not supply this conclusion.
+
+This rule is concrete for M=M_7 and rho=59/100.
+In the order 6,12,24,18,9,8,16, use
+\[
+w=(1,q,1,r,s,r,s),\qquad
+q=\frac a\rho,\quad
+r=\frac{2b\rho}{4\rho^2-a^2},\quad
+s=\frac{ar}{2\rho}.
+\]
+These entries are positive. At the five internal
+vertices (Mw)_i=rho w_i. At the two boundary
+vertices, rho-(Mw)_i/w_i=f(rho), where T49 proved
+f(rho)>7/10000. Thus (211) becomes the exact
+factorization
+\[
+\boxed{
+x^T(\rho I-M_7)x
+=\sum_{i<j}(M_7)_{ij}w_iw_j
+\left(\frac{x_i}{w_i}-\frac{x_j}{w_j}\right)^2
++f(\rho)(x_6^2+x_{24}^2).
+}
+\tag{212}
+\]
+Here subscripts 6 and 24 are the observation labels.
+If this expression vanishes, the endpoint readings
+vanish and all connected edge ratios x_i/w_i are
+equal. The seven-point graph is connected, so x=0.
+Hence the comparison is positive definite.
+
+The edge squares can be grouped into the triangle
+and the two arms, or subdivided and regrouped;
+their sum and shared boundary budget remain the
+same. Principal subcomponents inherit this positive
+comparison. Lowering any active nonnegative edge
+weight leaves a nonnegative budget using the same w,
+so the diagnostic coupling family is covered too.
+
+This is a verified transfer from elementary edge
+squares to this joint prime comparison. It explains
+the valid part of the smallest-block intuition.
+It does not prove positivity of the full source:
+the comparison bounds the subtracted prime operator
+by rho I, and the Gamma, scalar, pole and complete
+returned memory still have to be included.
+The identity itself is an explicit factorization
+of the already established prime comparison, not
+a new RH positivity theorem.
+
+## BRT-T53. One controlled tail level propagates to every higher level
+
+Keep L=3/4, the eight retained modes of degrees
+0,2,...,14, and all diagnostic couplings t in [0,1]^3.
+Use degree labels phi_(2j), and put
+\[
+\begin{gathered}
+\delta=\frac{2429}{128000},\qquad
+d_j=\delta+\frac{H_{2j}-H_{16}}2\quad(j\ge8),\\
+\mathcal D\phi_{2j}=d_j\phi_{2j}
+\quad\text{on }Q_8H_L.
+\end{gathered}
+\tag{213}
+\]
+The positive diagonal operator D is defined by its
+closed quadratic form, with domain consisting of
+the sequences for which sum d_j|h_j|^2 is finite.
+It is a comparison operator, not an assertion that
+the actual C_8(t) is diagonal.
+
+Retaining ASM's full Legendre energy bound, rather
+than replacing every level by H_16, gives
+\[
+\boxed{
+q_t[h]\ge
+\sum_{j\ge8}d_j|\langle h,\phi_{2j}\rangle|^2,
+\qquad C_8(t)\succeq\mathcal D
+\quad(h\in Q_8D_L).
+}
+\tag{214}
+\]
+Indeed T50--T51 and the full prime comparison give
+\[
+q_t[h]\ge
+J_L[h]+\left(-\frac{3969}{2000}
++\frac{321}{1024}\right)\|h\|^2.
+\]
+ASM-T1 gives J_L[h]>=sum H_(2j)|h_j|^2/2.
+The coefficient at degree 16 exceeds delta because
+H_16/2>169/100; subtracting H_16/2 at every higher
+level yields exactly (213)--(214).
+This also proves that the source form domain is
+contained in the displayed comparison form domain.
+No equality of those domains is required.
+
+The propagation rule is explicit:
+\[
+\boxed{
+d_8=\delta>0,\qquad
+d_{j+1}-d_j
+=\frac1{2(2j+1)}+\frac1{2(2j+2)}>0.
+}
+\tag{215}
+\]
+Thus the first controlled tail level and a proved
+positive increment control every higher level,
+including the infinite complement. This implication
+uses the same global source comparison, which has
+already bounded all prime couplings. It is not
+inferred from subgroup containment or separate
+diagonal readings of the actual source.
+
+For later use,
+\[
+\boxed{
+d_8>\frac1{53},\qquad
+d_9>\frac3{40},\qquad
+d_j>\frac18\quad(j\ge10).
+}
+\tag{216}
+\]
+The first inequality is T51. For the second,
+delta>3/160 and
+(H_18-H_16)/2=35/612>9/160.
+For the third,
+(H_20-H_18)/2=39/760>1/20,
+and 3/40+1/20=1/8. Monotonicity then covers all
+j>=10. QED.
+
+The modes here are comparison-energy levels,
+not individual primes or intrinsic prime classes.
+The transfer rule has a specified source and
+width, and does not extend the support band.
+
+## BRT-T54. Retain that hierarchy in the complete inverse residual
+
+The form inequality (214) implies
+\[
+\boxed{
+0<C_8(t)^{-1}\preceq\mathcal D^{-1},\qquad
+\langle r,C_8(t)^{-1}r\rangle
+\le\sum_{j\ge8}\frac{|\langle r,\phi_{2j}\rangle|^2}{d_j}.
+}
+\tag{217}
+\]
+No commutation of C_8(t) with the Legendre projections
+is assumed. To prove the inverse comparison, use
+\[
+\langle r,C_8(t)^{-1}r\rangle
+=\sup_{h\in Q_8D_L}\{2\langle r,h\rangle-q_t[h]\}.
+\]
+Replacing q_t by its smaller comparison form and
+enlarging the supremum to that form's domain yields
+<r,D^(-1)r>. The positive lower bound for D makes
+this finite and proves (217).
+
+For an admitted column trial Z with P_8Z=U_8, let
+R=Q_8T(t)Z be its full residual as before. Write
+r_16=phi_16^*R and r_18=phi_18^*R for its two row
+readings, and
+\[
+R_{\ge20}
+=\left(I-P_8-|\phi_{16}\rangle\langle\phi_{16}|
+-|\phi_{18}\rangle\langle\phi_{18}|\right)R .
+\]
+Then
+\[
+\boxed{
+\begin{aligned}
+R^*C_8(t)^{-1}R
+&\preceq\sum_{j\ge8}d_j^{-1}
+(\phi_{2j}^*R)^*(\phi_{2j}^*R)\\
+&\preceq
+53\,r_{16}^*r_{16}
++\frac{40}{3}r_{18}^*r_{18}
++8\,R_{\ge20}^*R_{\ge20}
+=:\mathcal E_{\rm hier}(R).
+\end{aligned}
+}
+\tag{218}
+\]
+The infinite series is a finite-matrix norm-convergent
+sum: every residual column is in L2, its squared
+coefficient sum is finite, and d_j^(-1)<=delta^(-1).
+Thus every higher residual mode is included.
+The coarse three-level bound uses (216).
+
+The complete lower source matrix is now
+\[
+\boxed{
+\begin{aligned}
+\mathcal L_{\rm hier}(Z,t)
+&:=Z^*T(t)Z-\mathcal E_{\rm hier}(R)
+\preceq\mathsf S_8(t),\\
+\mathcal L_{\rm hier}(Z,t)-\mathcal L_{53}(Z,t)
+&=\frac{119}{3}r_{18}^*r_{18}
++45R_{\ge20}^*R_{\ge20}\succeq0.
+\end{aligned}
+}
+\tag{219}
+\]
+This follows from the unchanged exact identity
+S_8=Z^*TZ-R^*C_8^(-1)R and the orthogonal decomposition
+R^*R=r_16^*r_16+r_18^*r_18+R_(>=20)^*R_(>=20).
+It is a quantitative improvement for the same
+source, cut and trial, retaining its nonzero residual.
+
+For the polynomial trial Z=U_8 this improvement is
+positive definite. If R_(>=20)v vanished for a nonzero
+retained vector v, then T(t)U_8v would be a polynomial
+of degree at most 18. The endpoint logarithm in (208)
+rules out agreement with any polynomial for this
+nonzero polynomial input. Therefore R_(>=20) is
+injective, and its finite Gram is positive definite.
+No rational lower eigenvalue for that Gram is claimed.
+
+The simultaneous prime insertion bound has the
+same refinement: in (209), replace 53 D^*D by
+E_hier(D), with D=D_2+D_3+D_4 unchanged.
+Every row Gram of D and the full higher residual
+Gram retain all mixed D_i^*D_j terms. Splitting into
+orthogonal comparison levels does not assert that
+those prime columns are independent. QED.
+
+This hierarchy permits progressively sharper inverse
+weights without adding retained source coordinates.
+The actual source is not diagonalized and no
+residual component is discarded. The entries of
+the improved complete lower matrix have not yet
+been bounded to establish its sign.
+
+## BRT-T55. The same comparison fails one level below the controlled tail
+
+It is useful to test the proposed downward shortcut
+explicitly. With only seven retained polynomial
+modes, degrees 0,2,...,12, the complement includes
+degree 14. The diagonal comparison used above
+has coefficient there
+\[
+\boxed{
+\beta_{14}
+=\frac{H_{14}}2-\frac{3969}{2000}
++\frac{321}{1024}
+<-\frac{5251}{128000}<-\frac1{25}.
+}
+\tag{220}
+\]
+Indeed H_14/2=1171733/720720<163/100, and
+163/100-3969/2000+321/1024=-5251/128000.
+The admitted profile phi_14 therefore has a
+negative reading in this particular lower
+comparison. This comparison cannot certify
+a positive seven-mode complement.
+
+This does not prove q_t[phi_14]<0, does not
+exclude a stronger seven-mode estimate, and
+does not make eight a universal minimum number
+of observers. It identifies the exact limit
+of the current propagation argument.
+
+Above degree 16, (215) propagates positivity to
+every higher comparison level because the full
+couplings have already been bounded. Below that
+threshold, containment supplies no missing sign.
+The eight retained coordinates and their complete
+returned memory must still be assessed together.
+
+**Gate accounting.** The actual prime comparison
+has an explicit coherent edge-square transfer;
+the complete infinite tail has a proved upward
+propagation rule; and its inverse residual
+allowances improve from uniform 53 to 53,40/3,8
+on the stated levels. These are closed in the
+working written derivation. The attempted
+seven-mode shortcut fails at the explicit lower
+coefficient (220). Returned source signs at
+11/20 and 3/4 and all-width positivity/RH remain
+open; the unrestricted interval (164) is unchanged.
+No new independent assumption is added.
+
 ## Scope and continuation
 
 The current unrestricted interval remains (164):
@@ -5883,59 +6217,63 @@ The current unrestricted interval remains (164):
 s_L>52751/900000000>7/120000 on the upper band
 [7/20,1761/5000]. The stronger margin 1/25000 through
 7001/20000 and DWE's 1/1700 on L<=1/4+1/47600
-are retained. T36--T39's constants are not extrapolated
+are retained. Those constants are not extrapolated
 beyond their stated band.
 
-T40--T43 gave the two-prime joint norm and the
-five-mode complement at 11/20. T44--T47 established
-prime-power chain grouping, the seven-point support
-decomposition for terms 2,3,4, and the eight-mode
-complement at 3/4. Those source identities, support
-restrictions and actual coefficients remain unchanged.
+T40--T47 established the two-prime and seven-point
+source groupings, with positive complements at
+11/20 and 3/4. T48--T51 sharpened the latter window's
+joint prime allowance to 59/100 and optimized the
+Gamma comparison with its retained positive surplus.
+The scalar tail inverse allowance fell from 250 to 53.
 
-T48--T51 improve the estimate at that same 3/4 window.
-The exact boundary matrix (198) retains both arm
-returns and the shared middle-point return. Nested
-elimination preserves that matrix's quadratic form
-for fixed boundary and source data; this is ASM's
-coherent-cut identity applied to the explicit graph.
-It does not infer a new positive source from an
-invariant label.
+T52--T55 retain that same source, support, trial
+normalization and eight-dimensional cut. Group
+containment alone has no positivity implication.
+The actual prime comparison has the coherent
+edge-square factorization (212), which gives a
+lawful assembly rule with one shared budget.
+It is a factorization of an established comparison,
+not a new full-source positivity theorem.
 
-Bounding the complete boundary return gives
-lambda_7<59/100. Independently, adding GRR's uniform
-positive surplus before optimizing its comparison
-parameter gives the exact loss formula (204).
-Its maximizer is nu=L. Neither step changes the
-actual arithmetic source or suppresses its residual.
+Keeping ASM's entire Legendre energy hierarchy
+gives the diagonal comparison (213)--(215).
+Its first positive tail level and explicit positive
+increments control every higher level. This uses
+a global bound on the actual couplings and does
+not assume that the source itself is diagonal.
 
-The combined tail bound is 2429/128000>1/53.
-Consequently the same admitted trial's complete
-lower matrix improves by 197 R^*R relative to
-the former allowance 250. For the polynomial trial
-U_8, the endpoint logarithm proves that this
-improvement is positive definite. No quantitative
-lower eigenvalue of its residual Gram has been
-established. The full grouped insertion memory
-allowance also improves from 90 to below 19,
-while its actual mixed columns remain preferable
-to that coarse scalar allowance.
+The inverse comparison (217) requires no commutation.
+It gives the complete residual allowances 53,40/3,8
+on degree 16, degree 18 and the entire remaining
+even tail, respectively. The same trial's lower
+returned matrix improves by the explicit positive
+Gram expression (219). For the polynomial trial
+U_8, its higher residual remains injective by the
+endpoint logarithm, making that improvement strict.
 
-The signs of the improved lower matrix and exact
-returned source at 3/4 remain unproved. The retained
-source at 11/20 remains unresolved as well. A strict
-increase of a lower matrix does not determine its
-sign. These are instances of the original all-width
-problem, not additional independent assumptions.
+The attempted seven-mode shortcut fails at the
+explicit comparison coefficient (220), below -1/25.
+This says nothing negative about the true source
+at degree 14 and does not rule out a stronger
+reduction. It records where the current transfer
+estimate stops.
 
-Common multiplication of the bank labels preserves
-relative readings but introduces no new prime source.
-Neither a universal finite support graph nor a
-minimal observer count is asserted. The original
-quadratic trial and its failed sufficient bounds
-remain historical evidence. T9's finite-polynomial
-residual obstruction is compatible with a rigorous
-finite positivity bound. T16's particular
+The complete lower matrix and exact returned
+source at 3/4 have not been shown positive.
+The retained source at 11/20 also remains
+unresolved. A strictly improved lower matrix
+does not determine its sign. These remain
+instances of the original all-width problem.
+
+The group of positive rational ratios generated
+by a set of primes organizes observations; it
+does not change their actual source coefficients.
+No universal finite support graph, smallest
+observer count, or all-width induction is asserted.
+T9's finite-polynomial residual obstruction remains
+compatible with finite positivity bounds; residual
+cancellation is unnecessary. T16's particular
 nonpolynomial test (93) remains unassessed.
 
 These operators and comparisons use the stated
@@ -5954,11 +6292,12 @@ agent, certificate replay or workflow dispatch is performed.
 The commit uses [skip ci]. The PR remains draft, stacked
 on #137, and unmerged.
 
-**Gate accounting.** The explicit nested return and
-same-window quantitative improvement of the complete
-residual allowance from 250 to 53 are closed in the
-working written derivation. The unrestricted positive
-interval stays at 1761/5000. Returned source signs at
-11/20 and 3/4, positivity beyond the established
-unrestricted interval, and all-width positivity/RH
-remain open. No new independent assumption is added.
+**Gate accounting.** The coherent prime-comparison
+factorization, infinite-tail upward propagation and
+sharper full inverse-residual weights are closed in
+the working written derivation. The seven-mode
+shortcut fails for the specified lower comparison.
+Returned source signs at 11/20 and 3/4 and
+all-width positivity/RH remain open; the unrestricted
+interval stays at 1761/5000.
+No new independent assumption is added.
