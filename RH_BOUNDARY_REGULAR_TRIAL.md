@@ -2,44 +2,46 @@
 
 Monty · 18 October 2026.
 
-Written continuation through BRT-T35, based on branch head
-a1318c974a291ce220f86d448d79ef5377403167.
+Written continuation through BRT-T39, based on branch head
+81a0238c89af1b6aa3ccd617d62284f28634dd95.
 The latest full-family result is
 \[
 \boxed{
-0<L\le\frac{44}{125}
+0<L\le\frac{1761}{5000}
 \quad\Longrightarrow\quad
-q_L[g]\ge\frac1{130000}\|g\|^2
+q_L[g]\ge\frac1{30000}\|g\|^2
 \quad(g\in D_L).
 }
 \]
-On 7/20<=L<=44/125, the returned scalar exceeds
-607/45000000>1/75000. T32 keeps the positive scalar derivative
-in the mean-zero comparison and justifies the larger caps.
-T33 integrates their affine profile to bound the complete
-prime column. T34 extracts more positive Gamma energy from
-the actual large-shift overlap. T35 combines these estimates
-with every residual mode before deriving the source sign.
+On 7/20<=L<=1761/5000, the returned scalar exceeds
+52751/900000000>7/120000. T36 establishes boundary absorption
+for the larger caps using a sharper actual prime coefficient.
+T37 combines specified signed prime and main-column readings
+before taking their norm. T38 bounds the entire infinite
+complement after accounting for the retained projections.
+T39 subtracts the complete residual penalty and obtains the
+stronger margin on the wider interval.
 
-The stronger prior margins remain valid: 1/50000 through
-351/1000, 1/25000 through 7001/20000, and DWE's
-1/1700 on its smaller interval. No mean-zero or cosh-neutrality
+The prior 1/130000 margin through 44/125 and 1/50000
+through 351/1000 are superseded. The stronger 1/25000
+through 7001/20000 remains valid, as does DWE's 1/1700
+on its smaller interval. No mean-zero or cosh-neutrality
 restriction is imposed on these full-family conclusions.
 
 Earlier sections preserve their historical trials, failed
 sufficient bounds, observer/transport audits and intermediate
-intervals. The new estimates are established throughout the
-enlarged band, without extrapolating the old cap constants.
-The particular nonpolynomial test (93) remains unassessed
-and is not needed for the current result.
+intervals. The new estimates hold throughout the enlarged
+band; old cap constants are not extrapolated. The particular
+nonpolynomial test (93) remains unassessed and is not needed.
 
 The actual prime-2 term, all low-mode couplings and the complete
 nonzero logarithmic residual remain in the estimates.
-Positivity beyond the stated finite interval and all-width
-positivity/RH remain open. No new independent assumption
-is introduced. These are working written proofs, not
-independently certified results. GitHub metadata alone is
-not mathematical certification.
+Only specified low prime readings have assigned signs; no sign
+is assumed for every higher cross pairing. Positivity beyond
+the stated finite interval and all-width positivity/RH remain
+open. No new independent assumption is introduced.
+These are working written proofs, not independently certified
+results. GitHub metadata alone is not mathematical certification.
 
 ## Actual source and domain
 
@@ -4126,32 +4128,490 @@ No new independent assumption is added. No independent
 certification, scientific computation, numerical simulation,
 certificate replay, subagent or workflow dispatch is performed.
 
+## BRT-T36. The actual prime coefficient permits a wider boundary comparison
+
+For T36--T39 use
+\[
+L_0=\frac7{20},\qquad L_3=\frac{1761}{5000},
+\qquad 0\le h=L-L_0\le\frac{11}{5000}.
+\]
+Keep the admitted quartic p_L, its unit constant reading,
+the unchanged source T_L, and r_L=Q_0^(L)T_Lp_L.
+No new trial or domain assumption is introduced.
+
+Only prime 2 is active: log2<2L_0 and 2L_3<1<log3.
+The caps remain disjoint since L_3<log2. OPC-T2 retains
+6931/10000<log2<1733/2500. Since d_L=2-(log2)/L
+increases with L,
+\[
+\boxed{
+\frac{19}{1000}<\frac{17}{875}<d_L
+<\frac{113}{3522}<\frac1{31}.
+}
+\tag{148}
+\]
+The lower bound uses L=L_0 and log2<1733/2500; the upper
+bound uses L=L_3 and log2>6931/10000.
+
+### A sharper arithmetic coefficient absorbs these caps
+
+The elementary inequalities
+sqrt(2)>140/99 and log2<7/10 give
+\[
+a_2=\frac{\log2}{\sqrt2}<\frac{99}{200}.
+\]
+The square-root inequality follows from 19600<19602.
+Also log2>27/40 and sqrt(2)<3/2 give a_2>9/20;
+this lower bound will be used for a signed residual reading.
+
+Use the increasing function W(t)=w(t)-t/(4-2t) from T29.
+On a prime cap, |x|/L>30/31. At t_0=(30/31)^2,
+\[
+1-t_0=\frac{61}{961},\qquad
+\frac{t_0}{4-2t_0}=\frac{225}{511}<\frac{441}{1000}.
+\]
+Since log(1+y)<y,
+\[
+\begin{aligned}
+W(t_0)
+&=\log2-\frac14\log(976/961)-\frac{225}{511}\\
+&>\frac{6931}{10000}-\frac{15}{3844}
+-\frac{441}{1000}
+>\frac{99}{400}>\frac{a_2}{2}.
+\end{aligned}
+\]
+Thus w_L-(a_2/2)1_(mathcal C_L)>=v_L on the new caps,
+and W>=0 handles their complement. The actual prime has
+been absorbed using its proved coefficient, without assuming
+that W exceeds 1/4 on these larger caps.
+
+All premises of T32's scalar derivative bound remain valid:
+k(2L)<100/91 and L^2<1/8. Consequently C_L>=K_L-2hI.
+Together with K_L>=D_L+I/200, this proves
+\[
+\boxed{
+C_L\succeq\mathcal D_L+\frac3{5000}I
+\quad(L_0\le L\le L_3).
+}
+\tag{149}
+\]
+This comparison holds on the full mean-zero form domain.
+
+### Remainder and pole bounds on the same band
+
+For u<=2L_3, u^2<1/2 and u<71/100 still hold. The full
+kernel proof of (129), not merely its old stated interval,
+therefore gives R_0(u)<1/800 and
+\[
+J_R(L)<\frac1{6250}+\frac{2h}{800}
+\le\frac{331}{2000000}<\frac1{6000}.
+\]
+Hence the complete Gamma-remainder column has D_L-inverse
+norm below 11/10000. The pole proof also retains
+L^2<1/8, sqrt(2L)<6/7 and the same positive shape and
+moments; its complete correction norm is below 1/6000.
+
+The lower kernel estimate (122) remains valid since
+cosh(u)<4/3. Every step of T34's large-shift overlap proof
+then applies on this band: its polynomial coefficients increase
+with L, while the shape itself is unchanged. Thus
+\[
+\langle p_L,\mathcal R_Lp_L\rangle>\frac9{100000}
+\]
+on the enlarged band as well. No remainder is counted twice.
+
+## BRT-T37. Signed prime readings are combined before taking the norm
+
+Put d=d_L, A=2/35 and B=11/7. On 0<=t<=1/31,
+the actual cap polynomial satisfies both bounds
+\[
+A+\frac{10}{7}t\le F_c(t)\le A+Bt.
+\tag{150}
+\]
+For the lower bound, the remaining quadratic factor is
+39/14-(7/2)t+(7/8)t^2>0 on this interval.
+For the upper bound, use
+10/7+39/(14*31)+7/(8*31^3)<11/7.
+
+Write pi_n=<Pp_L,phi_n^(L)> for an even degree n.
+The exact signed prime reading is
+\[
+\pi_n=-\frac{a_2\sqrt{2n+1}}2
+\int_0^d F_c(t)P_n(1-d+t)\,dt.
+\tag{151}
+\]
+The orientation and sign here come from the actual negative
+translation column. Define V(d)=Ad+(5/7)d^2. Equation (150)
+gives integral_0^d F_c>=V(d), and (148) gives
+\[
+V(d)>V(19/1000)=\frac{1881}{1400000}
+>\frac{13}{10000}.
+\]
+For upper estimates,
+\[
+I_1(d):=Ad+\frac B2d^2
+\le\frac2{1085}+\frac{11}{13454}<\frac{27}{10000}.
+\]
+The two endpoint fractions are respectively less than
+185/100000 and 82/100000.
+
+### The relevant low prime readings have proved negative signs
+
+The polynomial identities
+P_2'=3P_1, P_4'=7P_3+3P_1 and
+P_6'=11P_5+7P_3+3P_1, together with |P_j|<=1,
+give, for 30/31<=s<=1,
+\[
+P_2(s)\ge\frac{28}{31},\qquad
+P_4(s)\ge\frac{21}{31},\qquad
+P_6(s)\ge\frac{10}{31}.
+\tag{152}
+\]
+These follow by integrating each derivative bound back from
+P_n(1)=1. In particular pi_2, pi_4 and pi_6 are negative.
+No common sign is asserted for all higher prime readings.
+
+For degree two, (151) and sqrt(5)<9/4 give
+\[
+-\frac{243}{160000}<\pi_2<0.
+\]
+The exact main-column formulas (114) and their derivative
+bounds from T30 give on this wider band
+\[
+-\frac{57}{100000}<R_2(L)<\frac{406}{100000},
+\qquad
+-\frac{271}{100000}<R_4(L)<0.
+\]
+Consequently, using sqrt(5)>11/5,
+\[
+-\frac{13}{50000}<r_{L,2}^{(0)}<\frac{37}{20000},
+\qquad
+-\frac{91}{100000}<r_{L,4}^{(0)}<0.
+\]
+Combining the signed second readings, rather than adding
+their separate absolute upper bounds, yields
+\[
+|r_{L,2}^{(0)}+\pi_2|<\frac{37}{20000}.
+\tag{153}
+\]
+Indeed 13/50000+243/160000=1423/800000
+is less than 37/20000.
+
+### A cap slope improves the fourth prime reading
+
+On [30/31,1], P_4''>0 and
+P_4'(30/31)=512550/59582>8. Therefore
+\[
+0<P_4(1-y)\le1-8y\quad(0<=y<=1/31).
+\]
+Inserting this and (150) in (151) bounds its integral by
+\[
+J(d)=Ad+\left(\frac B2-4A\right)d^2-\frac{4B}{3}d^3.
+\]
+This polynomial is increasing on [0,1/31], since
+J'(d)=A+(B-8A)d-4Bd^2>=A-4B/31^2>0.
+At the endpoint,
+\[
+J(1/31)
+=I_1(1/31)-\frac8{33635}-\frac{44}{625611}
+<\frac{27}{10000}-\frac{23+7}{100000}
+=\frac{12}{5000}.
+\]
+Thus |pi_4|<(3/4)J(d)<9/5000. It follows that
+\[
+|r_{L,4}^{(0)}+\pi_4|
+<\frac{271}{100000}<\frac{11}{4000}.
+\tag{154}
+\]
+
+### The sixth logarithmic reading is partly cancelled by the actual prime
+
+The main-column sixth reading is positive and explicit:
+\[
+r_{L,6}^{(0)}
+=t_6+\frac{L^2\sqrt{13}}{308880},\qquad
+t_6=\frac{2\sqrt{13}}{3465}.
+\]
+Using 18/5<sqrt(13)<181/50 and L^2<1/8,
+\[
+\frac1{500}<r_{L,6}^{(0)}
+<\frac{209}{100000}+\frac1{600000}
+<\frac{21}{10000}.
+\]
+Meanwhile a_2>9/20, sqrt(13)>18/5, (152) and V(d)>13/10000
+give a strictly positive lower bound on its opposite prime
+reading:
+\[
+|\pi_6|>
+\frac{81}{100}\frac{10}{31}\frac{13}{10000}
+>\frac3{10000}.
+\]
+The upper bound from (151) is |pi_6|<27/10000.
+Therefore
+\[
+-\frac7{10000}<r_{L,6}^{(0)}+\pi_6<\frac9{5000},
+\qquad
+\boxed{|r_{L,6}^{(0)}+\pi_6|<\frac9{5000}.}
+\tag{155}
+\]
+This is an actual signed arithmetic cancellation in this
+specified component. The complete residual has not vanished;
+the Gamma remainder and pole correction are restored in T38.
+
+## BRT-T38. Projection accounting retains and controls the entire higher tail
+
+Let R_8 project onto the even Legendre degrees n>=8.
+The main-column polynomial terms have degree at most six.
+The infinite logarithmic estimate in (104) thus gives directly
+\[
+\|R_8r_L^{(0)}\|^2<\frac1{120050},
+\qquad
+\|R_8r_L^{(0)}\|<\frac{29}{10000}.
+\tag{156}
+\]
+
+For the prime tail, first subtract the already retained
+degrees 0,2,4,6 from its exact L2 norm. Define
+\[
+\kappa_0=1,\quad\kappa_2=\frac{28}{31},\quad
+\kappa_4=\frac{21}{31},\quad\kappa_6=\frac{10}{31},
+\qquad
+K=\sum_{n=0,2,4,6}(2n+1)\kappa_n^2
+=\frac{10150}{961}.
+\]
+Thus 10<K<11. Write b=5/7 and
+\[
+U_2(d)=A^2d+ABd^2+\frac{B^2}{3}d^3,\qquad
+U(d)=U_2(d)-K(Ad+bd^2)^2.
+\]
+Disjointness of the caps, the exact readings (151),
+and their positive polynomial lower bounds (152) give
+\[
+\begin{aligned}
+\|R_8Pp_L\|^2
+&=\frac{a_2^2}{4}
+\left[
+\int_0^dF_c(t)^2dt
+-\sum_{n=0,2,4,6}(2n+1)
+\left(\int_0^dF_c(t)P_n(1-d+t)dt\right)^2
+\right]\\
+&\le\frac{a_2^2}{4}U(d).
+\end{aligned}
+\tag{157}
+\]
+This is norm accounting for the infinite complement, not
+a truncation of it or an invariance assumption for T_L.
+
+### The entire upper comparison is increasing on the cap range
+
+Differentiate the declared polynomial U:
+\[
+U'(d)=A^2+2(AB-KA^2)d+(B^2-6KAb)d^2-4Kb^2d^3.
+\]
+Here AB-KA^2>0. Since K<11, the other coefficients give
+\[
+U'(d)\ge
+A^2-\frac{11}{49}d^2-\frac{1100}{49}d^3
+\ge A^2-\frac{1441}{1459759}>0.
+\]
+The last step uses A^2>3/1000 and
+1441/1459759<1/1000. Thus U(0)=0 and U is positive
+and increasing for 0<d<=1/31.
+
+At that endpoint,
+\[
+U_2(1/31)
+=\frac4{37975}+\frac{22}{235445}
++\frac{121}{4379277}
+<\frac{106+94+28}{1000000}.
+\]
+Also V(1/31)=2/1085+5/6727>1/400: its terms exceed
+18/10000 and 7/10000. Since K>10,
+\[
+U(d)\le U(1/31)
+<\frac{228}{1000000}-\frac1{16000}
+=\frac{331}{2000000}.
+\]
+Using a_2<1/2 in (157) therefore yields
+\[
+\boxed{
+\|R_8Pp_L\|^2<\frac{331}{32000000}
+<\left(\frac{33}{10000}\right)^2.
+}
+\tag{158}
+\]
+All higher prime modes survive in this upper bound.
+No sign is required for their individual cross pairings.
+Equations (156)--(158) imply
+\[
+\|R_8(r_L^{(0)}+Pp_L)\|<\frac{31}{5000}.
+\]
+
+### Combine orthogonal blocks, then restore the remaining source columns
+
+Set v_L=r_L^(0)+Q_0^(L)Pp_L. Using (153)--(155) and
+the complete higher-tail estimate,
+\[
+\begin{aligned}
+\|v_L\|_{\mathcal D_L^{-1}}^2
+&<\frac{20}{3}\left(\frac{37}{20000}\right)^2
++\frac{10}{3}\left(\frac{11}{4000}\right)^2
++2\left(\frac9{5000}\right)^2
++2\left(\frac{31}{5000}\right)^2\\
+&=\frac{78831}{600000000}
+<\left(\frac{23}{2000}\right)^2.
+\end{aligned}
+\tag{159}
+\]
+Only orthogonal projections of the comparison norm are used.
+The actual operator is neither diagonalized nor assumed to
+commute with these projections.
+
+Restore the full Gamma and pole columns from T36:
+\[
+r_L=v_L+Q_0^{(L)}\mathcal R_Lp_L+e_{{\rm pole},L},
+\qquad
+\|r_L\|_{\mathcal D_L^{-1}}
+<\frac{23}{2000}+\frac{11}{10000}+\frac1{6000}
+=\frac{383}{30000}.
+\]
+By (149) and inverse form order, the complete penalty is
+\[
+\boxed{
+\langle r_L,C_L^{-1}r_L\rangle
+<\frac{146689}{900000000}<\frac1{6000}.
+}
+\tag{160}
+\]
+This improves (144)'s upper penalty on a larger interval.
+The improvement uses proved signed readings and projection
+accounting; it does not assert that conjugation, rotation
+or a sign convention establishes positivity.
+
+## BRT-T39. Both the positive interval and its frontier margin improve
+
+The actual prime-form allowance must also be enlarged.
+The same affine cap bound, now valid for d<1/31, gives
+\[
+\begin{aligned}
+a_2C_{p_L}(\log2)
+&<\frac14\left(\frac{A^2}{31}
++\frac{AB}{31^2}+\frac{B^2}{6\cdot31^3}\right)\\
+&=\frac14\left(\frac4{37975}+\frac{22}{235445}
++\frac{121}{8758554}\right)
+<\frac{54}{1000000}.
+\end{aligned}
+\tag{161}
+\]
+The three fractions are less than 106, 94 and 14,
+respectively, in units of 1/1000000.
+
+Let mathcal B_3(L) be (124) with its constant prime
+allowance replaced by 54/1000000. Equation (161) justifies
+it throughout the new band. Its derivative is still (125),
+and T31's proof still gives mathcal B_3'(L)>-1/50,
+because R_0(2L)<1/800. At L_0 its value exceeds
+1013/5000000-27/1000000.
+
+Add the actual remainder lower bound 9/100000 from T36
+once and integrate the derivative estimate:
+\[
+\boxed{
+q_L[p_L]>
+\frac{1013}{5000000}-\frac{27}{1000000}
++\frac9{100000}-\frac h{50}
+\ge\frac{277}{1250000}.
+}
+\tag{162}
+\]
+The complete inverse subtraction now yields
+\[
+\boxed{
+s_L>
+\frac{277}{1250000}-\frac{146689}{900000000}
+=\frac{52751}{900000000}>\frac7{120000}
+\quad(L_0\le L\le L_3).
+}
+\tag{163}
+\]
+For the final strict comparison, 7/120000=52500/900000000.
+
+The full-family conclusion is
+\[
+\boxed{
+0<L\le\frac{1761}{5000},\quad g\in D_L
+\quad\Longrightarrow\quad
+q_L[g]\ge\frac1{30000}\|g\|^2.
+}
+\tag{164}
+\]
+No mean-zero or cosh-neutrality restriction is imposed.
+
+Indeed (149) gives C_L>2I/31, and the last bound in (160)
+implies
+\[
+\|C_L^{-1}r_L\|^2<\frac{31}{12000}
+<\left(\frac2{25}\right)^2.
+\]
+As before, ||p_L-phi_0^(L)||<13/25, so the original return
+rho_L has norm below 3/5. For g=c phi_0^(L)+h_0 and
+z=h_0+c rho_L, the exact source square and norm bound are
+\[
+q_L[g]=s_Lc^2+\|C_L^{1/2}z\|^2,\qquad
+\|g\|^2\le(43/25)c^2+2\|z\|^2.
+\]
+The comparisons (43/25)/30000<7/120000 and
+2/30000<2/31 prove (164) on the band. Support inclusion
+and retained source-form closure give all smaller widths.
+
+The new margin 1/30000 supersedes the former 1/130000
+through 44/125 and 1/50000 through 351/1000.
+The stronger 1/25000 through 7001/20000 remains available,
+as does DWE's 1/1700 on its smaller interval.
+
+**Scope and gate accounting.** The working written proof
+now closes positivity through 1761/5000, with a stronger
+uniform margin at the former frontier. Every infinite tail
+and every actual source column is retained. Only the specified
+low-mode cancellations were used; no sign was assigned to
+all higher cross pairings. Positivity beyond this finite interval
+and all-width positivity/RH remain unresolved.
+No new independent assumption is added. No independent
+certification, scientific computation, numerical simulation,
+certificate replay, subagent or workflow dispatch is performed.
+
 ## Scope and continuation
 
-The current unrestricted interval is (147):
-0<L<=44/125, with margin 1/130000. Equation (146) gives
-s_L>607/45000000>1/75000 on the upper band [7/20,44/125].
-The stronger margins 1/50000 through 351/1000,
-1/25000 through 7001/20000, and DWE's 1/1700 on
-L<=1/4+1/47600 are retained.
+The current unrestricted interval is (164):
+0<L<=1761/5000, with margin 1/30000. Equation (163) gives
+s_L>52751/900000000>7/120000 on the upper band
+[7/20,1761/5000]. The stronger margin 1/25000 through
+7001/20000 and DWE's 1/1700 on L<=1/4+1/47600
+are retained.
 
-The advance has been assessed through the complete source
-return. T32 lowers the mean-zero scalar width loss from 4h
-to 2h and proves boundary absorption for caps d_L<1/32.
-T33 integrates the cap profile before bounding the complete
-prime column, obtaining 13/2000 on this wider band.
-T34 uses the actual quartic's smaller overlap at large shifts
-to improve its positive Gamma contribution from 1/16000
-to 9/100000; the old contribution is replaced, not added twice.
-T35 obtains a complete inverse penalty below 121/562500
-and a trial lower value above 1143/5000000.
+The advance is a quantitative estimate of the complete source
+return. T36 uses a_2<99/200 to prove boundary absorption
+on caps d_L<1/31 and retains C_L>=D_L+3I/5000.
+T37 proves the relevant signed prime readings and combines
+them with the main source column; the positive sixth
+logarithmic reading meets an actual negative prime reading.
+T38 accounts for degrees 0,2,4,6 before bounding the complete
+higher prime tail. It restores the full Gamma and pole columns
+and obtains an inverse penalty below 146689/900000000.
+T39 separately retains the larger prime-form allowance,
+giving a trial value above 277/1250000 and a positive return.
 
-The new constants are proved on [7/20,44/125].
-Further enlargement requires a quantitative reassessment
-of these same actual source and residual terms. They are not
-silently extrapolated, and any further active prime powers
-must be retained. No all-width bound follows from the finite
-positive margin established here.
+This does not infer positivity from cancellation alone.
+No common sign is asserted for the infinite higher tail,
+and no residual is made zero. The improved margin follows
+only after every source column and the complete inverse
+penalty have been included.
+
+The constants are established on [7/20,1761/5000].
+Further enlargement requires reassessing these same source
+and residual terms, including any additional active prime
+powers. A finite positive margin does not prove an all-width
+bound or supply indefinite iteration.
 
 The original quadratic trial and its failed sufficient bounds
 remain historical evidence. T9's finite-polynomial exact
@@ -4175,6 +4635,7 @@ The commit uses [skip ci]. The PR remains draft, stacked
 on #137, and unmerged.
 
 **Gate accounting.** Unrestricted positivity through
-44/125 is closed in the working written proof.
+1761/5000 is closed in the working written proof, and the
+guaranteed margin at the former frontier is stronger.
 Positivity beyond that interval and all-width positivity/RH
 remain open. No new independent assumption is added.
