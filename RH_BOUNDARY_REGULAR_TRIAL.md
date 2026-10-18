@@ -14,7 +14,9 @@ than 3/1000000. The complete source value and the residual entering
 GRR's certificate are given explicitly. A follow-up written estimate
 proves q_L[g_*] > 34733/24000000 > 1/700 and improves the residual
 penalty separately on degree-two and higher modes. The sign of the
-complete certificate is NOT established. There is no new unrestricted positive interval,
+complete certificate is NOT established. The further degree-four
+residual bound in T8 proves that the sufficient threshold (22), using
+the established lower trial margin, cannot hold for this fixed trial. There is no new unrestricted positive interval,
 first-prime closure, RH proof, or claim that this trial is optimal.
 
 ## Actual source and domain
@@ -449,16 +451,190 @@ Combining (14) and (21), a sufficient explicit condition is
 }
 \tag{22}
 \]
-The left side has not been bounded by this threshold in this note.
-The positive trial reading in (14) is a completed part of the
-calculation; the residual subtraction is the part still open.
+T8 below proves that the left side exceeds this threshold for the
+fixed quadratic trial. Thus this particular sufficient test fails.
+The exact returned scalar and the sign of (21) remain undetermined.
+
+## BRT-T8. The stated sufficient threshold fails for this quadratic trial
+
+Let
+\[
+\phi_4(x)=\frac3{\sqrt{2L}}P_4(x/L),\qquad
+P_4(s)=\frac{35s^4-30s^2+3}{8},
+\quad L=\frac7{20}.
+\]
+The actual residual (12) satisfies
+\[
+\boxed{\langle r_*,\phi_4\rangle<-\frac3{100}.}
+\tag{23}
+\]
+Consequently the left side of the sufficient condition (22),
+denoted E_bound, obeys
+\[
+\boxed{
+E_{\rm bound}>\frac9{5000}>
+\frac{34733}{24000000}.
+}
+\tag{24}
+\]
+Thus (22) cannot hold for the fixed trial g_*.
+
+This conclusion is about the particular sufficient test formed
+from the established lower trial margin and the inverse upper
+bound. It does NOT show s_L<0, and it does NOT show that the
+stronger expression q_L[g_*]-E_bound in (21) is negative.
+A sharper trial-value bound or inverse estimate could change
+that assessment. The exact error <r_*,C^{-1}r_*> is not being
+lower-bounded by E_bound.
+
+**Step 1: bound the Gamma remainder on the actual interval.**
+GRR-T1 gives
+\[
+j(u)=\frac14-\frac u{48}-\frac{u^2}{32}+R_0(u),
+\qquad R_0(u)=\frac{E(u)}{2\sinh u}\ge0.
+\]
+Its positive entire-series coefficients, for m>=2, are bounded
+above respectively by 1/[24(2m-1)!] and 1/[16(2m-1)!].
+Indeed the remaining parts of each displayed numerator in
+GRR (7) are negative. Summing gives
+\[
+E(u)\le\left(\frac u{24}+\frac{u^2}{16}\right)(\sinh u-u).
+\]
+Using sinh(u)>=u and
+sinh(u)-u<=u^3 cosh(u)/6, we obtain
+\[
+0\le R_0(u)\le
+\left(\frac{u^3}{288}+\frac{u^4}{192}\right)\cosh u.
+\]
+For 0<=u<=7/10,
+cosh(u)<=1/(1-u^2/2)<=200/151<4/3. Therefore
+\[
+\boxed{
+0\le R_0(u)\le\frac{14063}{4320000}<\frac1{300}.
+}
+\tag{25}
+\]
+All bounds are on a finite interval; no polynomial approximation
+is integrated to infinity.
+
+**Step 2: compute the degree-four Gamma reading.**
+The Gamma operator can equivalently be written on I as
+\[
+G_\Gamma g=
+\left(F(2L)+\frac12\log2+\int_0^{2L}j(u)\,du\right)g
++J_{\rm op}g+w_Lg
+-\frac12\int_I j(|x-y|)g(y)\,dy .
+\tag{26}
+\]
+This follows by splitting the kernel at 2L and using the retained
+logarithmic decomposition; J_op is the operator of J_L.
+
+For g_*, both g_* and J_op g_* have degree at most two.
+Their projections on phi_4 vanish. The exact logarithmic reading is
+\[
+\langle\phi_4,w_Lg_*\rangle
+=\frac92\int_0^1P_4(s)(1-s^2)
+       \left[-\frac14\log(1-s^2)\right]ds
+=-\frac9{280}.
+\tag{27}
+\]
+For verification, the two integrals with P_4 and s^2P_4,
+respectively, are 1/40 and 9/280; their difference is -1/140.
+They follow by the same elementary logarithmic integrals as
+in T6, adding
+integral_0^1 s^6 log(1-s^2) ds=(2/7)log2-352/735.
+
+The constant and u^2 parts of j in (26) produce polynomials
+of degree at most two and again vanish under phi_4.
+For the u part, put V(x)=integral_I |x-y|g_*(y)dy.
+Since V''=2g_*,
+\[
+V(x)=\text{constant}+A_Lx^2-\frac{A_L}{6L^2}x^4,
+\qquad
+\langle\phi_4,V\rangle=-\frac{2L^2}{105}.
+\]
+The u coefficient in the operator is +1/96, so its contribution
+is -L^2/5040. Consequently
+\[
+\langle\phi_4,G_\Gamma g_*\rangle
+=-\frac9{280}-\frac{L^2}{5040}
+-\frac12\int_I\int_I
+ \phi_4(x)R_0(|x-y|)g_*(y)\,dy\,dx .
+\tag{28}
+\]
+Here ||g_*||_1=sqrt(2L) and ||phi_4||_1<=sqrt(2L).
+Equation (25) bounds the absolute double-integral contribution
+including its factor 1/2 by
+\[
+\frac{L}{300}=\frac7{6000}.
+\tag{29}
+\]
+
+**Step 3: retain the pole and the actual prime.**
+Orthogonality removes the constant and quadratic terms of cosh
+from <phi_4,cosh(x/2)>. Its remaining Taylor term is bounded by
+x^4 cosh(L/2)/384. Also p_*<1: for example
+p_*<=sqrt(2L)cosh(L/2) and cosh(7/40)<11/10.
+Using L<2/5, cosh(L/2)<6/5 and ||phi_4||_1<1 yields
+\[
+|p_*\langle\phi_4,\cosh(x/2)\rangle|<\frac1{12500}.
+\tag{30}
+\]
+
+For the prime term use |P_4(s)|<=1 on [-1,1], which follows
+directly from its endpoint and stationary values. Put
+d_2=(2L-u_2)/L<1/50 as in T2. Either translated profile has
+integral at most A_L L d_2^2 over its overlap with I:
+the exact endpoint-cap integral is A_L L(d_2^2-d_2^3/3).
+Hence
+\[
+\left|\frac{a_2}{2}
+\langle\phi_4,g_*(\cdot-u_2)+g_*(\cdot+u_2)\rangle\right|
+\le\frac{9a_2}{4}d_2^2<\frac9{20000}.
+\tag{31}
+\]
+The constant Omega term has zero phi_4 projection.
+The mean subtraction in (12) also has zero projection.
+Combining (28)--(31) and dropping the negative -L^2/5040 gives
+\[
+\langle r_*,\phi_4\rangle
+<-\frac9{280}+\frac7{6000}+\frac1{12500}+\frac9{20000}
+=-\frac9{280}+\frac{509}{300000}<-\frac3{100}.
+\]
+The last comparison follows from
+509/300000<3/1400=9/280-3/100. This proves (23).
+
+**Step 4: assess the existing sufficient condition.**
+The vector phi_4 is a unit vector orthogonal to both phi_0
+and phi_2. Thus ||r_perp||^2>9/10000.
+Since delta_4=513383/1440000<1/2,
+\[
+E_{\rm bound}
+=\delta^{-1}\eta^2+\delta_4^{-1}\|r_\perp\|^2
+>2\frac9{10000}=\frac9{5000}.
+\]
+Finally 9/5000=43200/24000000>34733/24000000.
+This proves (24). In fact the lower certificate formed using
+only the proved trial margin is strictly below
+\[
+\frac{34733}{24000000}-E_{\rm bound}
+<-\frac{8467}{24000000}.
+\]
+
+**Gate accounting.** No new assumption has been added. The
+original residual-positivity task is still open. The specified
+quadratic trial and the current conservative margin/inverse
+bounds do not satisfy its stated sufficient threshold. The
+degree-four residual identifies a concrete obstruction in this
+attempt; it does not create a new independent RH condition.
 
 ## Scope and continuation
 
 The established outputs are an explicit boundary-selected correction,
 its exact overlap polynomial, the strict prime penalty bound (7),
 a bounded full source column, the positive trial bound (14), and the
-stronger mode-resolved residual certificate (21).
+stronger mode-resolved residual certificate (21), and the proved
+failure of the specific threshold (22) for this trial.
 No new positive source interval is claimed. DWE's previously proved
 unrestricted interval remains unchanged.
 
@@ -466,8 +642,10 @@ The trial is an ordinary source profile. Its quadratic shape is not
 identified with EMK connection curvature, a physical field, or a
 universal cut law. Its usefulness is justified by (6) and (10).
 
-The source-specific remaining task is a signed enclosure of (21), or
-a better admitted trial if that endpoint is negative. Boundary
+The source-specific remaining task is a sharper signed enclosure of
+(21), a sharper inverse comparison, or a better admitted trial.
+T8 does not determine the sign of (21); it rules out passing (22)
+with the existing lower trial margin. Boundary
 regularity and a small prime term cannot replace that calculation.
 Even a first-prime certificate would leave the all-width RH task open.
 

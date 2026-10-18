@@ -7,8 +7,10 @@ width, giving an actual prime-2 penalty below 3/1000000 at L=7/20.
 The complete source column is bounded. The actual trial value is
 proved greater than 34733/24000000 > 1/700, and a mode-resolved
 residual bound retains the stronger higher-mode coercivity.
-The residual-subtracted certificate's sign remains unproved;
-no new unrestricted positive interval or RH closure is claimed.
+The degree-four residual is proved below -3/100, ruling out the
+stated sufficient threshold for this fixed trial and current bounds.
+The actual returned scalar remains undetermined; no new unrestricted
+positive interval or RH closure is claimed.
 Written derivations only; no scientific computation, independent
 agent, numerical source evaluation, replay or workflow dispatch.
 
