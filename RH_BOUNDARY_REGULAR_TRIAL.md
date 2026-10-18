@@ -1472,6 +1472,159 @@ cut law or sheet-gluing premise has been introduced. Verification is
 written derivation review; no scientific computation, simulation,
 certificate replay, subagent or workflow dispatch is performed.
 
+## BRT-T14. A stronger trial margin and its complete-certificate assessment
+
+Return to the quantitative source track with the same admitted g_*.
+Retaining the exact profile in the Gamma remainder and recovering
+discarded scalar tail surplus gives
+\[
+\boxed{
+q_L[g_*]>m_{\rm new}:=\frac{28967}{16000000}
+>\frac9{5000}.
+}
+\tag{64}
+\]
+The complete sufficient certificate using T13 nevertheless still
+fails, as proved below. This is an improved trial lower bound,
+not a positive lower bound for s_L.
+
+**Step 1: retain the trial's exact remainder integral.**
+Put f(u)=N_(g_*)-C_(g_*)(u) for 0<=u<=2L. T2 gives, with z=u/L,
+\[
+f(u)=\frac32z^2-\frac34z^3+\frac3{80}z^5\ge0.
+\]
+Its three needed moments at L=7/20 are
+\[
+X=\int_0^{2L}f(u)\,du=\frac{49}{100},\qquad
+Z=\int_0^{2L}u f(u)\,du=\frac{231}{1000},\qquad
+Y=\int_0^{2L}u^2 f(u)\,du=\frac{2401}{20000}.
+\tag{65}
+\]
+For X and Y the retained GRR moment identities give
+X=2LN-m_0^2/2 and Y=(8/3)L^3N-m_0m_2, using T6's
+N=6/5, m_0^2=2L, m_0m_2=2L^3/5.
+For Z, direct polynomial integration gives
+\[
+Z=L^2\left(6-\frac{24}{5}+\frac{24}{35}\right)
+=\frac{66}{35}L^2=\frac{231}{1000}.
+\]
+
+GRR's exact comparison remainder at parameter 1/2 is
+Delta_*(u)=(u-1/2)^2/48+R_0(u), with R_0(u)>=0.
+Therefore
+\[
+\begin{aligned}
+q_L[g_*]-\mathfrak b_*[g_*]
+&\ge\frac1{48}\int_0^{2L}(u-1/2)^2 f(u)\,du\\
+&=\frac1{48}\left(Y-Z+\frac X4\right)
+=\frac1{48}\frac{231}{20000}
+=\frac{77}{320000}.
+\end{aligned}
+\tag{66}
+\]
+This REPLACES T6's coarser 91/1920000 contribution; it is not
+added to it. The kernel remainder is integrated only on its
+declared finite interval, and the signed prime term remains in
+the comparison exactly as before.
+
+**Step 2: sharpen the tail lower bound without source evaluation.**
+In OPC-T1, z=tanh(7/40)<(99/100)(7/40). Its bound on
+-(1/2)log z used only -log(1-1/100)>1/100.
+The positive logarithm series improves that step to
+\[
+-\log(1-1/100)>\frac1{100}+\frac1{20000}.
+\]
+Keeping every other OPC-T1 estimate unchanged therefore gives
+\[
+F(7/10)>
+\frac{149}{100}+\frac{989}{8100000}+\frac1{40000}.
+\tag{67}
+\]
+The earlier BRT-T6 bound used only F>149/100.
+Since the coefficient of F in the trial comparison is N=6/5,
+(67) strengthens (18) by
+\[
+\frac65\left(\frac{989}{8100000}+\frac1{40000}\right)
+=\frac{989}{6750000}+\frac3{100000}.
+\tag{68}
+\]
+No other Gamma or scalar bound is changed or counted twice.
+
+**Step 3: combine with the unchanged complete comparison.**
+T6's comparison difference (19) still contributes
+14357/16000000. Equations (18), (66), and (68) give
+\[
+q_L[g_*]>
+\frac{201}{400000}+\frac{14357}{16000000}
++\frac{77}{320000}+\frac{989}{6750000}+\frac3{100000}.
+\tag{69}
+\]
+Here 989/6750000>7/50000, since 989>945.
+Replacing that term by this smaller rational bound yields
+\[
+q_L[g_*]>
+\frac{8040+14357+3850+2240+480}{16000000}
+=\frac{28967}{16000000}.
+\]
+Also 9/5000=28800/16000000, proving (64).
+Relative to the old proved margin,
+\[
+m_{\rm new}-\frac{34733}{24000000}
+=\frac{17435}{48000000}>0.
+\tag{70}
+\]
+Every step is written polynomial integration or a displayed
+rational/series inequality, not an independent scientific computation.
+
+**Step 4: assess the complete mixed inverse expression.**
+T13's completion of the square proves
+\[
+E_{\rm bdry}\ge\frac{r_4^2}{d},\qquad
+d=\delta_4+\frac4{63}.
+\]
+Use the slightly sharper rational denominator comparison
+\[
+\delta_4=\frac{513383}{1440000}<\frac9{25},\qquad
+d<\frac9{25}+\frac4{63}
+=\frac{667}{1575}<\frac37.
+\]
+Together with T8's r_4^2>9/10000 this gives
+\[
+\boxed{E_{\rm bdry}>\frac{21}{10000}.}
+\tag{71}
+\]
+In particular, despite the increased trial margin, the corresponding
+sufficient lower certificate still obeys
+\[
+\boxed{
+m_{\rm new}-E_{\rm bdry}
+<\frac{28967-33600}{16000000}
+=-\frac{4633}{16000000}<0.
+}
+\tag{72}
+\]
+This is not an assertion that q_L[g_*]-E_bdry<0, nor that s_L<0:
+the actual trial value may exceed its proved lower margin.
+It decisively rules out using the specific improved margin (64)
+with this comparison to claim positivity.
+
+**Decision for continuation.** The next priority is a trial or
+inverse treatment that addresses the fourth-mode residual, assessed
+through the full lower certificate. Merely presenting (64) as
+source positivity would be wrong. For the present comparison to
+pass, its trial margin must exceed at least the necessary floor
+21/10000 in (71), and must also cover the other retained terms.
+No success is guaranteed by crossing that floor alone.
+The present fixed-trial estimate is therefore not being declared
+an indefinitely sufficient route based on successive small gains.
+
+**Gate accounting.** Improved: the actual trial lower bound.
+Assessed and failed: its pairing with the current complete coupled
+inverse upper bound, by the explicit amount in (72). Unresolved:
+s_(7/20)>=0 and all-width positivity. No new independent assumption
+or new gate is introduced. No scientific computation, simulation,
+certificate replay, subagent or workflow dispatch is performed.
+
 ## Scope and continuation
 
 The established outputs are an explicit boundary-selected correction,
