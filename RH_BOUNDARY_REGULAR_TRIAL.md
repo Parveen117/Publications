@@ -11,9 +11,10 @@ first-prime correlation cubic in the small overlap width.
 
 At L=7/20 the retained prime-2 penalty on this trial is strictly less
 than 3/1000000. The complete source value and the residual entering
-GRR's certificate are given explicitly. A follow-up written estimate
-proves q_L[g_*] > 34733/24000000 > 1/700 and improves the residual
-penalty separately on degree-two and higher modes. The sign of the
+GRR's certificate are given explicitly. The latest written estimate
+proves q_L[g_*] > 48823/16000000 > 3/1000. Earlier sections retain
+the successive historical margins and improve the residual penalty
+on separate modes and through a coupled inverse comparison. The sign of the
 complete certificate is NOT established. The further degree-four
 residual bound in T8 proves that the sufficient threshold (22), using
 the established lower trial margin, cannot hold for this fixed trial. T9 also proves that no nonzero finite polynomial trial can cancel the complete residual; T10 checks an endpoint-preserving quartic correction. There is no new unrestricted positive interval,
@@ -1881,12 +1882,12 @@ s_L>m_{\rm new}-\widehat E+\frac{B^2}{B+N}.
 \tag{85}
 \]
 The correction gain is proved strictly positive and is defined
-by finite source quantities on a proved domain. Its magnitude
-has not been enclosed sufficiently to determine the sign of
-(85). In particular, (77) proves that the uncorrected expression
-is below -4633/16000000. The correction must recover the actual
-deficit widehat E-m_new, which is greater than that amount;
-a gain merely greater than zero does not suffice.
+by finite source quantities on a proved domain. T17 below now
+settles the sign of the right-hand side of (85): the gain cannot rescue m_new, and that
+specific lower certificate is strictly negative. It is retained
+here as the assessed old-margin test, not as a still-unevaluated
+condition. T18 supplies a stronger source-value input and states
+the current unresolved certificate in (93).
 
 This is a constructed certificate-improving step, not a new
 positivity theorem or a claimed successful window. No assertion
@@ -1899,12 +1900,393 @@ greater than 1/2000000, and an explicit step maximizing and
 strictly improving the complete lower certificate on that
 direction. Assessed and failed: the strengthened inverse
 comparison paired with m_new before the correction, by (77).
-Unresolved: a sufficient magnitude for the gain in (85), the
-first-prime scalar's sign, and all-width positivity. The gain
-assessment is part of the same original sign obligation, not
-a new independent RH assumption. No scientific computation,
+The later T17 assessment rules out sufficient gain for (85);
+the stronger-input test in T18, the first-prime scalar's sign,
+and all-width positivity remain unresolved. This is the same
+original sign obligation, not a new independent RH assumption. No scientific computation,
 numerical simulation, certificate replay, subagent or workflow
 dispatch is performed.
+
+## BRT-T17. Actual inverse memory rules out rescuing the old trial margin
+
+T16 improved the complete certificate, but positivity requires
+a sufficiently large gain. Here the actual inverse memory,
+rather than just an inverse-comparison expression, has a
+proved lower bound:
+\[
+\boxed{
+\langle r_*,C^{-1}r_*\rangle>\frac1{500}.
+}
+\tag{86}
+\]
+Consequently the T16 gain cannot rescue T14's margin
+m_new=28967/16000000. This is a restriction on that certificate's
+input margin, not a negative-source result.
+
+### A scalar enclosure with the cancelling terms kept together
+
+Define, only in T17--T18,
+\[
+\mathfrak d=-\frac{\Omega_0}{2}-F(7/10),\qquad
+x=\frac7{40},\quad z_0=\tanh x.
+\]
+We will use the written rational enclosure
+\[
+\boxed{
+\frac{11953}{10000}<\mathfrak d
+<\frac{1435169}{1200000}<\frac{299}{250}.
+}
+\tag{87}
+\]
+In particular, no separate rounding of the cancelling pi/4
+terms is needed.
+
+Here are the scalar details. [FCP's](RH_FINITE_CUT_POSITIVITY.md) integral identity for the
+Euler constant also supplies a lower bound:
+\[
+H_n-\log n-\frac1{2n}+\frac1{12n^2}-\frac1{120n^4}
+<\gamma_E
+<H_n-\log n-\frac1{2n}+\frac1{12n^2}.
+\]
+For the additional lower estimate, the positive entire series
+\[
+x\cosh x-(1+x^2/3-x^4/45)\sinh x
+=\sum_{m\ge3}
+\frac{16m(m-1)(m-2)(m+2)}{45(2m+1)!}x^{2m+1}>0
+\]
+proves coth x>1/x+x/3-x^3/45. Substitution of x=t/2 gives
+\[
+\frac1t-\frac1{e^t-1}<\frac12-\frac t{12}+\frac{t^3}{720}.
+\]
+Integrate this inequality in FCP's retained Laplace identity.
+At n=4 the resulting two-sided estimate is
+\[
+\frac{60319}{30720}-2\log2<\gamma_E
+<\frac{377}{192}-2\log2.
+\]
+Using F(7/10)=-(1/2)log z_0+pi/4-arctan z_0, the pi/4
+terms cancel exactly and hence
+\[
+\frac{60319}{61440}+\frac12\log(2\pi z_0)+\arctan z_0
+<\mathfrak d
+<\frac{377}{384}+\frac12\log(2\pi z_0)+\arctan z_0.
+\]
+
+For the lower side, tanh x>x-x^3/3 gives
+z_0>33257/192000. This elementary tanh inequality follows by
+integrating (tanh x)'=1-tanh^2 x>1-x^2.
+PRW's pi/4>7853/10000 then yields
+\[
+2\pi z_0>
+\frac{261167221}{240000000}>\frac{136}{125}.
+\]
+The positive atanh series and the alternating arctan series give
+\[
+\frac12\log(2\pi z_0)>\frac{11}{261},\qquad
+\arctan z_0>z_0-\frac{z_0^3}{3}
+>x-\frac{2x^3}{3}=\frac{16457}{96000}.
+\]
+Therefore
+\[
+\mathfrak d>
+\frac{60319}{61440}+\frac{11}{261}+\frac{16457}{96000}
+=\frac{239}{200}+\frac{43729}{133632000}
+>\frac{11953}{10000}.
+\]
+
+For the upper side, OPC gives z_0<693/4000 and pi<22/7,
+so 2 pi z_0<1089/1000. For t=89/1000,
+\[
+\log(1+t)<t-t^2/2+t^3/3<\frac{853}{10000}.
+\]
+Also z_0>33257/192000>433/2500 gives
+z_0^3/3>173/100000, while z_0^5/5<x^5/5<1/30000.
+Thus
+\[
+\arctan z_0<
+\frac{693}{4000}-\frac{173}{100000}+\frac1{30000}.
+\]
+Combining the upper estimates gives
+\[
+\mathfrak d<
+\frac{377}{384}+\frac{853}{20000}
++\frac{693}{4000}-\frac{173}{100000}+\frac1{30000}
+=\frac{1435169}{1200000}<\frac{299}{250}.
+\]
+This proves (87) by written rational and series comparisons.
+
+### A positive second-mode residual reading
+
+The same actual quadratic trial satisfies
+\[
+\boxed{r_2=\langle r_*,\phi_2\rangle>\frac1{125}.}
+\tag{88}
+\]
+To control the Gamma remainder, integrate T8's pointwise
+R_0 bound on the actual finite interval:
+\[
+J_R:=\int_0^{7/10}R_0(u)\,du
+\le\frac{(7/10)^4}{864}+\frac{(7/10)^5}{720}
+=\frac{55223}{108000000}<\frac1{1900}.
+\]
+Its positive bounded form is
+integral_0^(2L) R_0(u)(N_g-C_g(u)) du, and its operator
+mathcal R obeys 0<=mathcal R<=2 J_R I. Therefore
+\[
+|\langle\phi_2,\mathcal Rg_*\rangle|
+\le2J_R\sqrt{6/5}<\frac{11}{9500}.
+\]
+
+For j_0(u)=1/4-u/48-u^2/32,
+\[
+J_0:=\int_0^{7/10}j_0(u)\,du=\frac{15967}{96000}.
+\]
+Projecting (26) and the scalar Omega term on phi_2 gives,
+before the pole, prime and R_0 terms,
+\[
+\frac1{\sqrt5}\left(
+\mathfrak d-J_0-\frac{61}{60}
++\frac{L^2}{112}+\frac{L^3}{48}\right).
+\]
+For verification, the logarithmic multiplier contributes
+\[
+\langle\phi_2,w_Lg_*\rangle
+=\frac1{\sqrt5}\left(\frac{\log2}{2}-\frac4{15}\right);
+\]
+its log2 term cancels the scalar log2 term in (26).
+The |x-y| convolution contributes L^2/(112 sqrt(5)),
+and the (x-y)^2 convolution contributes L^3/(48 sqrt(5)).
+These follow respectively from
+<phi_2,V>=6L^2/(7 sqrt(5)) for T8's polynomial V and
+<phi_2,x^2>=sqrt(2L) 2L^2/(3 sqrt(5)).
+
+The pole reading is bounded below by L^3/(6 sqrt(5)).
+Indeed ell(g_*)>=sqrt(2L), and
+\[
+\langle\phi_2,\cosh(x/2)\rangle
+\ge\frac{\sqrt{2L}L^2}{12\sqrt5}.
+\]
+Every higher even Taylor term has nonnegative phi_2 integral,
+since integral_-1^1 P_2(s)s^(2m) ds
+=4m/((2m+1)(2m+3)) for m>=1.
+
+The endpoint-cap argument in T8, now with normalization sqrt(5),
+bounds the absolute prime contribution by
+3 sqrt(5)/20000<27/80000. Consequently
+\[
+r_2>
+\frac1{\sqrt5}\left(\mathfrak d-\frac{450761}{384000}\right)
+-\frac{11}{9500}-\frac{27}{80000}.
+\]
+By (87), the parenthesis exceeds 171/8000; since
+sqrt(5)<9/4, its quotient exceeds 19/2000.
+Also
+\[
+\frac{11}{9500}+\frac{27}{80000}
+=\frac{2273}{1520000}<\frac3{2000}.
+\]
+This proves r_2>16/2000=1/125.
+
+### An upper energy bound for the existing quartic direction
+
+Use T10's admitted mean-zero polynomial
+\[
+\psi=\phi_4-\frac3{\sqrt5}\phi_2,\qquad
+A_\psi=q_L[\psi].
+\]
+Then
+\[
+\boxed{0<A_\psi<\frac45.}
+\tag{89}
+\]
+Positivity follows from the already proved mean-zero coercivity.
+For the upper bound, direct polynomial and logarithmic integration
+gives
+\[
+\|\psi\|^2=\frac{14}{5},\qquad J_L[\psi]=\frac{287}{120},
+\qquad
+\int_I w_L\psi^2=\frac{2299}{1800}-\frac75\log2.
+\]
+For the last identity, use
+psi=(21/(8 sqrt(2L)))(1-6s^2+5s^4), s=x/L.
+The square has coefficients 1,-12,46,-60,25 in degrees
+0,2,4,6,8. The logarithmic moment in degree eight needed in
+addition to T6/T8 is
+\[
+\int_0^1s^8w(s)\,ds=\frac{563}{5670}-\frac{\log2}{18}.
+\]
+It follows by the same polynomial-division integration;
+substitution of the five moments gives the displayed value.
+
+The constant and u^2 convolution pieces of j_0 vanish on this
+even mean-zero profile. The u piece is nonpositive:
+\[
+\int_I\int_I |x-y|\psi(x)\psi(y)\,dx\,dy
+=-2\int_I\left(\int_{-L}^x\psi(y)\,dy\right)^2dx\le0.
+\]
+Combining the scalar term with the logarithmic multiplier
+cancels log2 and bounds all non-remainder Gamma/scalar terms by
+\[
+\frac{14}{5}\left(-\mathfrak d+\frac{15967}{96000}\right)
++\frac{287}{120}+\frac{2299}{1800}
+<
+\frac{567787}{720000}<\frac{79}{100},
+\]
+where the weaker consequence mathfrak d>239/200 of (87)
+already suffices.
+
+The R_0 form contributes at most
+2J_R ||psi||^2<14/4750<3/1000.
+Since psi has mean zero and
+cosh(L/2)-1<=49/3151<1/60,
+\[
+\ell(\psi)^2
+\le\|\psi\|^2(2L)(1/60)^2
+=\frac{49}{90000}<\frac1{1000}.
+\]
+Finally |psi(x)|<=7g_*(x) on I. T2 therefore gives the actual
+signed prime term the upper bound
+\[
+-a_2 C_\psi(u_2)\le a_2|C_\psi(u_2)|
+\le49a_2C_{g_*}(u_2)<\frac{147}{1000000}<\frac1{1000}.
+\]
+Altogether
+A_psi<79/100+3/1000+1/1000+1/1000=159/200<4/5.
+This proves (89) with the pole, prime and remainder retained.
+
+### Actual inverse-memory lower bound and the optimized-gain ceiling
+
+Let beta=<psi,r_*>=r_4-(3/sqrt(5))r_2. T8, (88), and
+3/sqrt(5)>4/3 imply
+\[
+\beta<-\frac3{100}-\frac4{375}
+=-\frac{61}{1500}<-\frac1{25}.
+\]
+Cauchy--Schwarz in the positive C form now gives
+\[
+\langle r_*,C^{-1}r_*\rangle
+\ge\frac{\beta^2}{A_\psi}>
+\frac{(1/25)^2}{4/5}=\frac1{500}.
+\]
+This proves (86). It is a lower bound for the actual inverse
+memory; it is not obtained by treating an inverse upper
+comparison as a lower estimate.
+
+Write G=B^2/(B+N) for T16's correction gain. Since (83) is
+a lower bound for the same exact scalar,
+\[
+q_L[g_*]-\widehat E+G
+\le s_L=q_L[g_*]-\langle r_*,C^{-1}r_*\rangle .
+\]
+It follows that
+\[
+\boxed{
+G<\widehat E-\frac1{500},\qquad
+m_{\rm new}-\widehat E+G
+<-\frac{3033}{16000000}<0.
+}
+\tag{90}
+\]
+Thus even the optimized nonpolynomial step cannot pass the
+certificate formed by propagating the particular old margin
+m_new. There is no need to enclose its nested source integrals
+more tightly to decide that specific question.
+
+More generally, changing the trial and propagating this same
+base margin through exact quadratic differences cannot overcome
+this obstruction, even with the exact residual inverse:
+the best such lower value is
+m_new-<r_*,C^{-1}r_*>. Directly deriving a stronger lower
+trial value is a different input and is not excluded.
+
+**Scope.** Neither s_L<0 nor q_L[g_*]-widehat E+G<0 follows.
+The actual trial value was replaced by a strict lower margin
+in (90). T18 below improves precisely that input.
+
+## BRT-T18. Keeping the scalar cancellation yields a substantially stronger trial margin
+
+The scalar enclosure (87) also improves the actual trial value:
+\[
+\boxed{
+q_L[g_*]>
+m_{\rm sharp}:=\frac{48823}{16000000}>\frac3{1000}.
+}
+\tag{91}
+\]
+Relative to T14 this is a gain of
+\[
+m_{\rm sharp}-m_{\rm new}=\frac{1241}{1000000}.
+\tag{92}
+\]
+This is a stronger source-value lower bound for the same trial;
+it is not itself a positive lower bound for s_L.
+
+For completeness, derive it directly from the exact source.
+Set f=N_(g_*)-C_(g_*) on (0,2L). T14's exact moments are
+X=49/100, Z=231/1000 and Y=2401/20000.
+The singular-kernel part has the exact value
+\[
+J_L[g_*]+\frac12\log2\,\|g_*\|^2+\int_Iw_Lg_*^2
+=\frac3{20}+\frac{47}{100}=\frac{31}{50}.
+\]
+The two log2 terms cancel before any bound is taken. GRR's
+exact expansion k=1/(2u)+1/4-u/48-u^2/32+R_0 and R_0>=0 give
+\[
+\begin{aligned}
+q_L[g_*]
+&\ge\ell(g_*)^2-\frac65\mathfrak d
++\frac{31}{50}+\frac X4-\frac Z{48}-\frac Y{32}
+-a_2 C_{g_*}(u_2)\\
+&>\frac{920463}{640000}-\frac65\mathfrak d
+-\frac3{1000000}.
+\end{aligned}
+\]
+The last line uses the same pole lower bound
+ell(g_*)^2>=2L+L^3/10 and prime bound as T6.
+The finite polynomial terms are used only on (0,2L);
+the tail remains in mathfrak d. Substitution of (87) gives
+\[
+q_L[g_*]>
+\frac{920463}{640000}
+-\frac{1435169}{1000000}-\frac3{1000000}
+=\frac{48823}{16000000}.
+\]
+Since 48823>48000, this proves (91).
+The R_0 remainder was dropped as nonnegative in this derivation;
+no earlier remainder contribution is added a second time.
+
+The currently strengthened corrected certificate is therefore
+\[
+\boxed{
+s_L>
+\frac{48823}{16000000}-\widehat E+\frac{B^2}{B+N}.
+}
+\tag{93}
+\]
+Its sign remains undetermined. T17's obstruction applies to
+m_new, not automatically to m_sharp. Conversely, the fact that
+m_sharp exceeds 1/500 does not bound the actual inverse memory
+from above, and does not establish (93)'s positivity.
+
+**Continuation decision.** The old-margin correction test has
+been resolved negatively by (90), so it should not be retried.
+The source-value input has now been strengthened by (91).
+The remaining quantitative work is to bound the complete
+residual penalty after correction against this stronger input,
+retaining both low-mode mixing and the logarithmic tail.
+This remains the same first-prime sign problem, not a new
+independent condition or an all-width conclusion.
+
+**Gate accounting.** Established: a lower bound greater than
+1/500 for the actual inverse memory; a rigorous ceiling on the
+T16 gain that rules out rescuing the old margin; and the
+stronger trial margin (91). Unresolved: the sign of (93),
+first-prime positivity, and all-width positivity. No new
+independent assumption is added. All estimates are written
+source identities, polynomial/logarithmic integrations and
+rational series comparisons. No scientific computation,
+simulation, certificate replay, subagent or workflow dispatch
+is performed.
 
 ## Scope and continuation
 
@@ -1913,8 +2295,8 @@ its exact overlap polynomial, the strict prime penalty bound (7),
 a bounded full source column, the positive trial bound (14), and the
 stronger mode-resolved residual certificate (21), and the proved
 failure of the specific threshold (22) for this trial. T9--T10 add a proof that finite polynomial corrections cannot make the exact residual vanish, with an explicit endpoint-preserving quartic family. T11--T12 then use the explicit endpoint logarithm to prove a sixth-mode residual below -1/200 and reduce the same inverse-error upper bound by more than 1/50000. The refined conservative certificate still fails by (43); this is not a positivity closure.
-T13 retains the boundary surplus in a coupled second/fourth-mode comparison and reduces the error upper bound by a further amount greater than 1/10000. Its full mixed-term assessment still fails with the current conservative trial margin, as (51) records.
-T14 improves the actual trial lower margin to 28967/16000000 but proves that its pairing with the current coupled inverse comparison still fails. T15 retains unused scalar source surplus and lowers that inverse bound by more than 1/2000000; its uncorrected margin certificate still fails. T16 proves the operator domain of a concrete nonpolynomial residual correction and derives the step that maximizes the full lower certificate on that direction, with exact positive gain B^2/(B+N). The size of that gain needed for positivity is not yet established.
+T13 retains the boundary surplus in a coupled second/fourth-mode comparison and reduces the error upper bound by a further amount greater than 1/10000. Its full mixed-term assessment fails with the then-proved conservative trial margin, as (51) records.
+T14 improves the actual trial lower margin to 28967/16000000 but proves that its pairing with the current coupled inverse comparison still fails. T15 retains unused scalar source surplus and lowers that inverse bound by more than 1/2000000; its uncorrected margin certificate still fails. T16 proves the operator domain of a concrete nonpolynomial residual correction and derives the step that maximizes the full lower certificate on that direction, with exact positive gain B^2/(B+N). T17 now proves that even this optimized gain cannot rescue the old T14 margin, using an actual inverse-memory lower bound greater than 1/500. T18 then improves the trial margin by 1241/1000000 through an exact scalar cancellation; the sign of the updated complete certificate (93) remains unresolved.
 No new positive source interval is claimed. DWE's previously proved
 unrestricted interval remains unchanged.
 
@@ -1922,11 +2304,11 @@ The trial is an ordinary source profile. Its quadratic shape is not
 identified with EMK connection curvature, a physical field, or a
 universal cut law. Its usefulness is justified by (6) and (10).
 
-The source-specific remaining task is a sharper signed enclosure of
-(21), a sharper inverse comparison, or a better admitted trial.
-T8 does not determine the sign of (21); it rules out passing (22)
-with the existing lower trial margin. Boundary
-regularity and a small prime term cannot replace that calculation.
+The current source-specific remaining task is a signed enclosure of
+the complete corrected bound (93), or another fully assessed bound
+for the same returned scalar. T17 settles the old-margin test
+negatively; T18 improves its source-value input. Boundary regularity
+and a small prime term cannot replace the remaining calculation.
 Even a first-prime certificate would leave the all-width RH task open.
 
 Only this note and its README entry change. Validation consists of
