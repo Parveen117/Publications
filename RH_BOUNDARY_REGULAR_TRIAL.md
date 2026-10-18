@@ -2,22 +2,29 @@
 
 Monty · 18 October 2026.
 
-Written continuation through BRT-T43, based on branch head
-6187d53a0549eb843aec572a58c52d9bf1ed5011.
+Written continuation through BRT-T47, based on branch head
+729b74252ef45245e7d7120fa6bd633d0768b8c0.
 
-T40--T43 establish a joint prime-block estimate at a larger
-support width. For (log 3)/2<L<=log 2,
-the combined prime-2/prime-3 operator has exact norm
-\[
-\Lambda_{23}=\frac{a_3+\sqrt{a_3^2+4a_2^2}}4,
-\qquad \frac{a_2+a_3}{2}-\Lambda_{23}>\frac1{10}.
-\]
-At L_*=11/20 this makes the entire tail after degrees
-0,2,4,6,8 uniformly positive with bound 3/40, including
-every diagnostic prime coupling in [0,1]^2. The complete
-memory remains in the five-dimensional returned source.
-The sign of that source matrix has not been established,
-so this is not a new unrestricted positive interval.
+T44--T47 organize actual source translations by primitive-prime
+powers and shared observation ratios. In the support range
+log 2<L<=log 3-(log 2)/2, the active terms 2,3,4 have an exact
+seven-point support decomposition. Its bank labels are
+6,8,9,12,16,18,24; multiplying all labels by a common large
+anchor preserves the readings but adds no source term.
+The joint operator norm is below 3/5, saving more than 1/5
+against the sum of exact individual operator norms.
+
+At L=3/4 the resulting infinite tail after polynomial
+degrees 0,2,...,14 has a uniform bound 131/32000>1/250.
+The complete eight-dimensional returned source retains
+every inverse-residual and mixed prime-memory term.
+Its sign has not been established.
+
+T40--T43 retain the earlier joint prime-2/prime-3 norm
+and positive tail after degrees 0,2,4,6,8 at L=11/20.
+The returned five-dimensional source sign there also
+remains unresolved. These larger-window tail results
+do not extend the unrestricted positive interval.
 
 The latest full-family result remains T39:
 \[
@@ -36,18 +43,17 @@ on these full-family conclusions.
 
 Earlier sections preserve historical trials, failed bounds,
 observer/transport audits and intermediate intervals.
-T40's common-scale Gram identity is an equivalent description
-of relational readings; it is not the quantitative advance.
-The new estimate comes from the exact shared support of the
-two actual truncated prime operators. Their memory and mixed
-terms survive the finite cut.
+The new quantitative estimates use actual source weights,
+shared support and domain-admitted profiles. Common-scale
+Gram invariance alone is not a positivity theorem.
 
 Positivity beyond the stated unrestricted interval, the
-returned matrix sign at L_*, and all-width positivity/RH
-remain open. No new independent assumption is introduced.
-The particular nonpolynomial test (93) remains unassessed.
-These are working written proofs, not independently certified
-results. GitHub metadata alone is not mathematical certification.
+returned matrix signs at 11/20 and 3/4, and all-width
+positivity/RH remain open. No new independent assumption
+is introduced. The particular nonpolynomial test (93)
+remains unassessed. These are working written proofs,
+not independently certified results. GitHub metadata
+alone is not mathematical certification.
 
 ## Actual source and domain
 
@@ -4983,6 +4989,491 @@ and all-width positivity/RH remain unresolved.
 The unrestricted interval in (164) is unchanged.
 No new independent assumption is added.
 
+
+## BRT-T44. Group source translations by prime-power chains and shared ratios
+
+Use the full source with every active prime power as in GRR-1.
+For a prime p write tau=log p and let W=2L. Its complete
+primitive-prime contribution, before subtraction from the
+source, is
+\[
+\begin{aligned}
+\mathcal P^{(p)}_L
+&=\frac12\sum_{k\tau<W}\frac{\log p}{p^{k/2}}
+\bigl(T_{k\tau}+T_{-k\tau}\bigr)\big|_I,\\
+N_p&=\left\lceil\frac W\tau\right\rceil,\qquad
+(M^{(p)}_n)_{ij}
+=\begin{cases}
+0,&i=j,\\
+\dfrac{\log p}{2p^{|i-j|/2}},&i\ne j,
+\end{cases}\quad 0\le i,j<n .
+\end{aligned}
+\tag{182}
+\]
+The translations use zero outside I. If N_p=1 the matrix
+is zero and the prime is inactive. The strict support
+cutoff is respected at W/tau an integer.
+
+There is an exact chain decomposition and norm formula:
+\[
+\boxed{
+\mathcal P^{(p)}_L
+\simeq\int^\oplus M^{(p)}_{n(r)}\,dr,\qquad
+\|\mathcal P^{(p)}_L\|=\|M^{(p)}_{N_p}\|.
+}
+\tag{183}
+\]
+To prove it, shift the interval to (0,W), and write each
+point uniquely as r+j tau with 0<r<tau, j a nonnegative
+integer, omitting empty fibres and endpoints of measure
+zero. The fibre contains precisely the n(r) points still
+in (0,W). A p^k translation connects indices differing
+by k, with the coefficient in (182). Translation
+preserves measure, so the L2 norm and quadratic form
+split over these fibres. The largest occurring length
+is ceil(W/tau), and occurs for a set of r of positive
+measure, including when W/tau is an integer.
+
+The matrices of smaller size are principal submatrices.
+For each symmetric matrix with nonnegative entries,
+|z^TMz|<=|z|^TM|z|. Thus its operator norm is its largest
+nonnegative Rayleigh value, and these norms increase
+under principal inclusion. This proves (183).
+For N_p>=2 the top eigenvector can be chosen strictly
+positive: take the absolute value of a maximizing
+vector, and use the positive off-diagonal entries in
+its eigenvalue equation. Multiply that eigenvector by a nonnegative smooth
+cutoff supported in a subinterval of r on which the
+chain length is N_p. This gives a smooth compact
+source test attaining the norm. Reflection commutes
+with the operator; adding its reflected test yields
+a nonzero real even test with the same eigenvalue.
+The domain statement therefore uses the existing
+smooth core. The zero case N_p=1 is immediate. QED.
+
+This is a useful classification of the source
+translations at a declared width: powers of one
+primitive prime share a chain. Distinct prime families
+must then be joined where their observation points
+coincide. A product or quotient of two bank labels
+is a reading ratio; it is not automatically another
+source coefficient.
+
+For instance, the seven labels
+\[
+\boxed{
+\mathcal B=\{6,8,9,12,16,18,24\},\qquad
+\{6,12,24\},\quad\{6,18,9\},\quad\{24,8,16\}
+}
+\tag{184}
+\]
+form a triangle with ratios 2,2,4 and two attached
+two-edge paths with ratios 3,2. The subgroups share
+the labels 6 and 24. Multiplying every label by any
+M>0 preserves all ratios by (165). M may itself be
+a large prime; in that case all seven multiples are
+composite observation labels and add no source terms.
+
+The classification is by ratios, shared vertices
+and allowed support, not a new partition of all
+prime numbers into intrinsic classes. The next
+active source after 2 and 3 is 4=2^2, whose weight
+is log 2/2, not log 4/2. The explicit joint result
+below retains that weight and the exact support.
+No claim that all multi-prime support components
+are finite at arbitrary widths follows from (183).
+
+## BRT-T45. The 2,3,4 source block has an exact seven-point reduction
+
+Keep u=log 2, v=log 3 and put
+\[
+\begin{gathered}
+u<L\le v-\frac u2,\quad W=2L,\quad
+\epsilon=W-2u,\quad w=2u-v,\quad h=2v-3u,\quad d=v-u=w+h,\\
+a=\frac{u}{\sqrt2},\quad b=\frac{v}{\sqrt3},\quad
+c=\frac u2,\qquad
+\mathcal P_{234}=\mathcal P_2+\mathcal P_3+\mathcal P_4,\\
+(\mathcal P_4g)(x)=\frac c2\bigl(g(x-2u)+g(x+2u)\bigr).
+\end{gathered}
+\tag{185}
+\]
+Here the subscript 2,3,4 labels an individual active
+prime power. The full primitive-prime-2 operator
+in (182) is P_2+P_4 on this range. Precisely 2,3,4
+are active, since 4<e^W<=9/2<5.
+
+The elementary inequalities 8<9 and 27<32 give
+0<h<w, and 0<epsilon<=h. In the shifted interval
+(0,W), the following disjoint components exhaust
+all source translations, up to endpoints:
+
+- For x in (0,epsilon), a seven-point component at
+  x plus the offsets 0,u,2u,v,d,w,u+w.
+- For x in (epsilon,w), a four-point component at
+  x plus the offsets u,0,v,d, with the path (168).
+- For x in (w+epsilon,d), an isolated u-pair
+  x,x+u. This last family is empty if epsilon=h.
+
+The seven-point offsets, in increasing order,
+are 0,w,d,u,u+w,v,2u. Their multiplicative labels
+are 1,4/3,3/2,2,8/3,3,4, which become (184)
+after multiplication by 6. In the path-and-triangle
+order 0,u,2u,v,d,w,u+w, their matrix is
+\[
+\boxed{
+M_7=\frac12
+\begin{pmatrix}
+0&a&c&b&0&0&0\\
+a&0&a&0&0&0&0\\
+c&a&0&0&0&b&0\\
+b&0&0&0&a&0&0\\
+0&0&0&a&0&0&0\\
+0&0&b&0&0&0&a\\
+0&0&0&0&0&a&0
+\end{pmatrix}.
+}
+\tag{186}
+\]
+
+Here is a direct support check. All 2u-edges have
+left endpoint x in (0,epsilon), and are the long
+edges of the displayed triangles. All v-edges have
+left endpoint in (0,w+epsilon). Partitioning this
+interval into (0,epsilon), (epsilon,w),
+(w,w+epsilon) places each such edge in exactly one
+seven-point or four-point component. At a seven-point
+component, the u-edges are exactly
+(0,u), (u,2u), (v,d), (w,w+u), with x added.
+Any additional v-edge would require x>h or
+x<epsilon-h, outside its base interval apart from
+null endpoints. Any additional u-edge at an arm
+would require x>w or x<epsilon-w, also impossible.
+The only 2u-edge is the displayed one.
+
+For x in (epsilon,w), the four-point component
+has u-edges (0,u), (d,v) and v-edge (0,v).
+The strict inequalities x>epsilon and x<w rule
+out a second u-step at either end; the inequalities
+epsilon<=h and w<d rule out additional v-edges.
+No 2u-edge touches it. Finally x in (w+epsilon,d)
+and x+u have only their mutual u-edge.
+
+For completeness the intervals fill (0,W):
+in increasing order the seven-point base intervals
+start at 0,w,d,u,u+w,v,2u; the four-point intervals
+fill (epsilon,w), (d+epsilon,u), (u+epsilon,u+w),
+(v+epsilon,2u); the pair intervals fill
+(w+epsilon,d) and (u+w+epsilon,v).
+All omitted or shared endpoints have measure zero.
+Thus no interaction crosses between the components.
+
+The exact norm is
+\[
+\boxed{
+\|\mathcal P_{234}\|=\lambda_7,\qquad
+\lambda_7-\frac c2-\frac{a^2}{2\lambda_7}
+-\frac{b^2\lambda_7}{4\lambda_7^2-a^2}=0,
+\quad \lambda_7>\frac a2.
+}
+\tag{187}
+\]
+There is exactly one root in that range: the left
+side tends to minus infinity at a/2 from above,
+tends to plus infinity at infinity, and has derivative
+\[
+1+\frac{a^2}{2\lambda^2}
++\frac{b^2(4\lambda^2+a^2)}{(4\lambda^2-a^2)^2}>0.
+\]
+To identify it with the norm without a numerical
+eigenvalue calculation, assign a reflection-symmetric
+positive vector on (186) with values
+(p,q,p,r,s,r,s), where
+\[
+p=1,\quad q=\frac a\lambda,\quad
+r=\frac{2b\lambda}{4\lambda^2-a^2},\quad
+s=\frac{ar}{2\lambda}.
+\]
+Its eigenvalue equations reduce exactly to (187).
+For any positive vector z with Mz=lambda z and any
+real y, applying
+2|y_i y_j|<=(z_j/z_i)y_i^2+(z_i/z_j)y_j^2
+to every edge gives |y^TMy|<=lambda||y||^2.
+Hence this eigenvalue is the full norm of M_7.
+The four-point matrix (168) and isolated pair are
+principal submatrices, so their norms are no larger.
+
+The norm is attained on real even smooth compact
+tests. Choose a smooth function chi on (0,epsilon)
+symmetric under x -> epsilon-x and multiply the
+positive vector above by chi along the seven
+translated intervals. In original coordinates
+reflection reverses the two triangle endpoints
+and exchanges the two arms; chi and the vector
+are preserved. This supplies a nonzero even
+source-core test. It proves (187) on the same
+space used for the source, not only on unrestricted
+point values.
+
+A rational bound suffices for the next source estimate:
+\[
+\boxed{
+\lambda_7<\frac35,\qquad
+\left\|\sum_{n=2,3,4}t_n\mathcal P_n\right\|
+\le\lambda_7<\frac35\quad(0\le t_n\le1).
+}
+\tag{188}
+\]
+Indeed a<1/2, c<7/20, and b<16/25.
+The last estimate follows from log 3<11/10 and
+sqrt 3>55/32, whose square is smaller than 3.
+Use the positive vector
+\[
+z=(1,5/6,1,2/3,5/18,2/3,5/18).
+\]
+At a triangle endpoint the corresponding row of M_7z
+is less than
+\[
+\frac7{40}+\frac5{24}+\frac{16}{75}
+=\frac{179}{300}<\frac35.
+\]
+At the middle triangle vertex it is a<1/2=(3/5)(5/6).
+At an inner arm vertex it is less than
+8/25+5/72<2/5=(3/5)(2/3).
+At an outer arm vertex it is less than
+1/6=(3/5)(5/18).
+The weighted edge inequality just used proves
+||M_7||<3/5. Lowering any nonnegative edge weight
+preserves this bound, as does passage to its
+principal four-point and pair blocks. More precisely
+the same inequality with the positive eigenvector
+in (187) gives the uniform bound by lambda_7.
+
+This is a genuine improvement over separate costs:
+\[
+\boxed{
+\|\mathcal P_2\|+\|\mathcal P_3\|+\|\mathcal P_4\|
+=\frac{3u}{4}+\frac b2,\qquad
+\frac{3u}{4}+\frac b2-\lambda_7>\frac15.
+}
+\tag{189}
+\]
+On this range the u-operator has chains of length
+at most three, and its three-point norm is a/sqrt 2=u/2.
+The v- and 2u-operators each consist of disjoint
+pairs with norms b/2 and c/2=u/4.
+These maximal chains and pairs occur on intervals
+of positive measure, so these are exact norms.
+Since u>2/3 and b>3/5, their sum exceeds 4/5;
+(188) proves the claimed saving.
+
+Even grouping powers of 2 first still leaves a
+strict loss if the prime-3 norm is then added:
+\[
+\|\mathcal P_2+\mathcal P_4\|
+=\frac{c+\sqrt{c^2+8a^2}}4
+=\frac{u(1+\sqrt{17})}{8},\qquad
+\|\mathcal P_2+\mathcal P_4\|+\frac b2-\lambda_7
+>\frac7{60}>\frac1{10}.
+\tag{190}
+\]
+The three-point triangle gives the first equality
+by its reflection-symmetric two-dimensional sector.
+The lower estimate uses sqrt 17>4, u>2/3 and
+b>3/5. Thus shared points between distinct
+primitive-prime families yield additional gain
+beyond grouping powers of one prime. QED.
+
+The upper support boundary in (185) is essential.
+Beyond it, extra v-edges connect the displayed
+components; this seven-point decomposition cannot
+be extrapolated. At its lower boundary epsilon=0
+the seven-point fibres disappear. No continuity
+of the operator norm across that threshold is used.
+
+## BRT-T46. A positive eight-mode complement at L=3/4
+
+Fix L_dagger=3/4. TPW-T3 gives
+log(9/2)>451/300>3/2 and log 2<7/10<3/4.
+Thus this endpoint lies strictly in (185).
+Only source terms 2,3,4 are active. Let q_t be the
+full Gamma/pole/scalar source minus
+sum_(n=2,3,4) t_n a_n C_g(log n), with t in [0,1]^3.
+Here a_4=log 2/2. The actual source has all t_n=1.
+Independent diagnostic couplings are only a bounded
+perturbation family; the primitive-prime insertion
+family is the subfamily t_2=t_4.
+
+At this width retain the eight normalized even
+polynomials of degrees 0,2,...,14. Denote their span
+by V_8, projection by P_8 and complement by Q_8.
+ASM admits their source columns and preserves the
+form domain under this cut. For h in Q_8D_(L_dagger),
+m_0(h)=0. The same exact GRR comparison behind (174)
+gives
+\[
+q_t[h]\ge
+\left(B_*(L_\dagger)+\frac{H_{16}}2-\frac35\right)\|h\|^2,
+\qquad
+B_*(L_\dagger)=\frac{\Omega_0}{2}+F(3/2)
++\frac12\log2+\frac{79}{256}.
+\tag{191}
+\]
+The polynomial contribution is exactly
+47(3/4)/96-5(3/4)^3/36=79/256.
+The pole square, boundary multiplier and positive
+Gamma remainder have been dropped only after their
+nonnegative signs and the vanishing m_0 corrections
+are recorded, as in T42. Equation (188) treats all
+active prime terms jointly.
+
+A short written lower bound for the full Gamma tail
+is sufficient. Expanding the positive geometric
+series of k and integrating term by term gives
+\[
+F(3/2)=\sum_{j\ge0}
+\frac{e^{-(2j+1/2)3/2}}{2j+1/2}
+>2t+\frac25t^5,\qquad t=e^{-3/4}.
+\]
+The alternating exponential series gives
+\[
+t\ge
+1-\frac34+\frac9{32}-\frac{27}{384}
++\frac{81}{6144}-\frac{243}{122880}
+=\frac{58017}{122880}>\frac{47}{100}.
+\]
+Also (47/100)^2>11/50, so
+(47/100)^5>5687/250000>1/50. Therefore
+\[
+\boxed{
+F(3/2)>\frac{237}{250},\qquad
+B_*(L_\dagger)>-\frac{2789}{2000}+\frac{79}{256}.
+}
+\tag{192}
+\]
+The second inequality uses the retained
+Omega_0/2>-2689/1000 and log 2>693/1000.
+This is an analytic tail estimate, not numerical
+source evaluation.
+
+Finally
+\[
+H_{16}=\frac{2436559}{720720}>\frac{169}{50}.
+\]
+The last comparison follows, for example, from
+50(2436559)-169(720720)=26270>0.
+Combining it with (191)--(192) gives
+\[
+\boxed{
+q_t[h]\ge\frac{131}{32000}\|h\|^2
+>\frac1{250}\|h\|^2
+\quad(0\ne h\in Q_8D_{3/4},\ t\in[0,1]^3).
+}
+\tag{193}
+\]
+The rational difference used here is
+\[
+\frac{169}{100}-\frac{2789}{2000}
++\frac{79}{256}-\frac35=\frac{131}{32000}.
+\]
+The estimates actually make the first inequality
+strict for nonzero h.
+
+For comparison, the separate bounds
+||P_2||<7/20, ||P_3||<8/25, ||P_4||<7/40
+sum to 169/200. With exactly the same Gamma and
+Legendre lower constants, they give only
+\[
+\frac{169}{100}-\frac{2789}{2000}
++\frac{79}{256}-\frac{169}{200}
+=-\frac{7709}{32000}<0.
+\tag{194}
+\]
+The joint allowance improves this specified lower
+estimate by 49/200 and makes it positive.
+Equation (194) is failure of that estimate, not
+negativity of the true tail. QED.
+
+No eight additional moment conditions have been
+imposed on the full source family. They define the
+complement in a decomposition of every admitted
+profile; the retained eight coordinates and all
+their mixed terms remain in the returned source.
+Eight is not claimed to be the smallest possible
+cut or an intrinsic observer count.
+
+## BRT-T47. Shared prime groups retain their cross-memory terms
+
+At L_dagger, let U_8 synthesize V_8 and define the
+source blocks A_8(t), B_8(t), C_8(t) exactly as in
+(178), with Q_8 in place of Q_5. Equation (193) gives
+\[
+\boxed{
+C_8(t)\succeq\frac1{250}I,\qquad
+0<C_8(t)^{-1}\preceq250I,\qquad
+\mathsf S_8(t)=A_8(t)-B_8(t)^*C_8(t)^{-1}B_8(t).
+}
+\tag{195}
+\]
+For every admitted operator-domain column trial Z
+with P_8Z=U_8, put R=Q_8T(t)Z. The existing exact
+residual identity and the new quantitative bound are
+\[
+\boxed{
+\mathsf S_8(t)=Z^*T(t)Z-R^*C_8(t)^{-1}R,\qquad
+Z^*T(t)Z-250R^*R\preceq\mathsf S_8(t)
+\preceq Z^*T(t)Z.
+}
+\tag{196}
+\]
+Every inverse-residual direction is included.
+The polynomial trial Z=U_8 is admitted; improved
+trials must be assessed by this complete lower
+matrix, not by their source values alone.
+
+To insert the three active powers as one group, put
+E_0=U_8-C_8(0)^{-1}B_8(0) and
+D_n=Q_8P_n E_0 for n=2,3,4. Set D=D_2+D_3+D_4.
+PCM's unchanged insertion identity gives
+\[
+\begin{aligned}
+\mathsf S_8(\mathbf1)
+&=\mathsf S_8(\mathbf0)-E_0^*\mathcal P_{234}E_0
+-D^*C_8(\mathbf1)^{-1}D,\\
+0\preceq D^*C_8(\mathbf1)^{-1}D
+&\preceq250D^*D
+\preceq250\lambda_7^2E_0^*E_0
+\preceq90E_0^*E_0.
+\end{aligned}
+\tag{197}
+\]
+The last coarse bound follows from lambda_7<3/5;
+the preceding D^*D retains the actual column and
+is preferable whenever its entries can be bounded.
+In particular D^*D contains every D_i^*D_j term.
+Grouping 2 with 4 first and then inserting 3 gives
+the same exact endpoint only when all intermediate
+returned-memory terms are carried. Simply adding
+the group costs discards those cross terms.
+No sign is assigned to the direct source term.
+
+Equations (195)--(197) are ASM/PCM identities with
+the new tail constant. The entries of S_8(1) and
+the lower matrix in (196) have not been bounded
+to establish their sign here. The scalar 90 is
+only an inverse-memory allowance; it is not a
+positivity margin or a successful full-source test.
+
+**Gate accounting.** Prime-power chain grouping,
+the exact seven-point source reduction, the
+quantitative joint norm improvement, and the
+specified positive eight-mode complement at 3/4
+are closed in the working written derivation.
+The returned source matrices at 11/20 and 3/4
+remain unresolved. The unrestricted positive
+interval (164) is unchanged, and all-width
+positivity/RH remains open.
+No new independent assumption is added.
+
 ## Scope and continuation
 
 The current unrestricted interval remains (164):
@@ -4990,38 +5481,48 @@ The current unrestricted interval remains (164):
 s_L>52751/900000000>7/120000 on the upper band
 [7/20,1761/5000]. The stronger margin 1/25000 through
 7001/20000 and DWE's 1/1700 on L<=1/4+1/47600
-are retained.
+are retained. T36--T39's full-source and residual
+constants are not extrapolated beyond their stated band.
 
-T36--T39 obtained that result by keeping specified signed
-prime readings with the main column, accounting for the
-retained projections, and bounding every remaining Gamma,
-pole and prime residual contribution. Those constants were
-proved on their stated band and are not extrapolated here.
+T40--T43 gave an exact two-prime joint norm and the
+positive five-mode complement at 11/20. T44--T47
+extend the grouping method to the next active prime
+power, 4=2^2, with its actual coefficient log 2/2.
+A single primitive-prime family has the chain matrices
+(182)--(183). When different families share observation
+points, their joint support must also be retained.
 
-T40--T43 instead improve a joint prime-block estimate.
-For (log 3)/2<L<=log 2, the actual truncated prime-2 and
-prime-3 operators split into disjoint four-vertex paths,
-isolated prime-2 pairs and zero components. Their exact
-joint norm (169) improves the separate cap allowance
-by more than 1/10. This is an estimate of the actual
-signed source term. Common rescaling of observation
-labels supplies no additional source information.
+On log 2<L<=log 3-(log 2)/2 the complete 2,3,4 block
+splits into the seven-point components (186), four-point
+paths and isolated prime-2 pairs. Its exact norm is
+characterized by (187), and is below 3/5. This saves
+more than 1/5 against the exact separate operator costs
+and more than 1/10 even after powers of 2 are grouped
+first. These are quantitative bounds for the actual
+signed arithmetic contribution.
 
-At L_*=11/20, that norm bound and the retained Gamma
-comparison give the uniform tail bound (176) after
-degrees 0,2,4,6,8. The specified separate-cap estimate
-(177) was negative; the new joint estimate is positive.
-ASM's finite reduction is then available with the explicit
-inverse bound 40/3. Equations (179)--(181) retain the
-whole inverse residual and both-prime cross terms.
+The labels 6,8,9,12,16,18,24 express the shared ratios.
+Multiplying them by a large common anchor preserves
+their readings. The composite labels neither insert
+new source primes nor increase independent information.
+No intrinsic classification of all prime numbers or
+finite-component decomposition at every width is claimed.
 
-The sign of the five-dimensional returned source at L_*
-has not been established. Its positive tail is not a
-positive full source, and the exact memory identities
-are not new positivity theorems. TPW's existing restricted
-two-neutral-moment result remains distinct. No minimum
-number of observers, arbitrary-width prime-chain formula,
-or indefinite extension is asserted.
+At L=3/4 the joint bound gives the eight-mode complement
+estimate (193). With the same Gamma and Legendre lower
+constants, the separate estimate (194) is negative.
+The new positive tail gives inverse bound 250 and
+the complete returned-source enclosure (196).
+The cross-memory terms in (197) survive grouping.
+
+The retained source matrices at 11/20 and 3/4 have
+not been bounded to determine their signs. These are
+larger-window instances of the existing all-width
+source problem, not additional assumptions. A positive
+tail is not full-source positivity, and an exact memory
+identity is not a new positivity theorem. The different
+cut dimensions at the two widths are not minimal or
+universal observer counts.
 
 The original quadratic trial and its failed sufficient bounds
 remain historical evidence. T9's finite-polynomial exact
@@ -5044,10 +5545,11 @@ agent, certificate replay or workflow dispatch is performed.
 The commit uses [skip ci]. The PR remains draft, stacked
 on #137, and unmerged.
 
-**Gate accounting.** The joint two-prime norm and the
-specified positive polynomial-tail bound at L_* are
-closed in the working written derivation. The unrestricted
-positive interval stays at 1761/5000. The returned matrix
-sign at L_*, positivity beyond the established unrestricted
+**Gate accounting.** Prime-power chain grouping, the
+joint seven-point norm, and the specified positive
+eight-mode complement at 3/4 are closed in the working
+written derivation. The unrestricted positive interval
+stays at 1761/5000. Returned matrix signs at 11/20 and
+3/4, positivity beyond the established unrestricted
 interval, and all-width positivity/RH remain open.
 No new independent assumption is added.

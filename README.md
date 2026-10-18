@@ -1,18 +1,23 @@
 # Publications
 
 Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
-BRT-T40--T43 give an exact joint prime-2/prime-3 operator norm
-on (log 3)/2<L<=log 2. Its allowance is smaller than the
-sum of separate cap costs by more than 1/10.
-At L=11/20, the entire tail after polynomial degrees
-0,2,4,6,8 has a uniform positive bound 3/40, including
-all diagnostic prime couplings in [0,1]^2. The specified
-separate-cap estimate was negative; the joint estimate
-is positive. The five-dimensional returned source retains the complete
-memory and mixed prime terms. Its matrix sign is unproved,
-so this is not a new unrestricted positive interval.
-Common rescaling of reading labels preserves their ratios;
-that Gram identity alone adds no source positivity.
+BRT-T44--T47 group primitive-prime powers and shared
+observation ratios. On log 2<L<=log 3-(log 2)/2,
+the actual source terms 2,3,4 have an exact seven-point
+support reduction with labels 6,8,9,12,16,18,24.
+Their joint operator norm is below 3/5, saving more
+than 1/5 against the sum of exact separate norms.
+The coefficient for 4=2^2 remains log 2/2.
+Multiplying the bank by a large common anchor preserves
+ratios; it neither inserts new source primes nor adds
+independent information.
+
+At L=3/4, the infinite complement after polynomial
+degrees 0,2,...,14 has bound 131/32000>1/250.
+The complete eight-dimensional returned source retains
+its inverse residual and all mixed prime-memory terms.
+Its sign remains unproved. The five-dimensional returned
+source at L=11/20 from T40--T43 also remains unresolved.
 
 The unrestricted working written result from BRT-T39 remains
 L<=1761/5000, with q_L[g] >= ||g||^2/30000 for every
@@ -22,9 +27,8 @@ The stronger 1/25000 through 7001/20000 is retained.
 There is no mean-zero or cosh-neutrality restriction
 on these full-family conclusions.
 Earlier sections preserve their failed bounds and intermediate results.
-The returned matrix sign at 11/20, positivity beyond the
-established unrestricted interval, and all-width positivity/RH
-remain open; no new independent assumption is added.
+No new unrestricted interval or all-width positivity/RH
+is claimed; no new independent assumption is added.
 Written derivations only; no independent certification, scientific
 computation, agent, numerical simulation, replay or workflow dispatch.
 
