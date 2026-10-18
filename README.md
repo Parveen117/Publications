@@ -1,27 +1,30 @@
 # Publications
 
-Latest RH development: [BRT-1 — a boundary-regular quadratic first-prime trial](RH_BOUNDARY_REGULAR_TRIAL.md).
-The explicit correction h = phi_2/sqrt(5) makes the retained trial
-vanish at both endpoints. Its exact overlap is cubic in the cap
-width, giving an actual prime-2 penalty below 3/1000000 at L=7/20.
-The complete source column is bounded. The actual trial value is
-proved greater than 34733/24000000 > 1/700, and a mode-resolved
-residual bound retains the stronger higher-mode coercivity.
-The degree-four residual is proved below -3/100, ruling out the
-stated sufficient threshold for this fixed trial and current bounds.
-The actual returned scalar remains undetermined; no new unrestricted
-positive interval or RH closure is claimed.
+Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
+Written estimates for an explicit quartic trial at L=7/20 give
+q_L[p] > 1/5000 and a complete inverse-residual penalty < 1/5184.
+Thus the returned scalar satisfies s_(7/20) > 1/150000.
+The full arithmetic source obeys q_L[g] >= ||g||^2/260000 for
+every 0<L<=7/20 and every admitted real even profile, with no
+mean-zero or cosh-neutrality restriction.
+The trial's nonzero endpoint values, infinite logarithmic residual,
+low-mode mixing and actual negative prime-2 term are all retained.
+BRT-T19--T21 contain the proof; earlier sections preserve the
+failed tests and intermediate bounds.
+This closes the first-prime window in the working written proof.
+All-width positivity and RH remain open; no new independent
+assumption is added.
 Written derivations only; no scientific computation, independent
-agent, numerical source evaluation, replay or workflow dispatch.
+agent, numerical simulation, certificate replay or workflow dispatch.
 
 Preceding RH development: [DWE-1 — quantified dilation extension of the positive source window](RH_DILATION_WINDOW_EXTENSION.md).
-GRR's full-family margin at L=1/4 gives an explicit small extension
-to L <= 1/4 + 1/47600, with margin 1/1700 and no neutral-moment
-restriction. The proof bounds the actual Gamma-energy and pole
-losses under norm-preserving dilation. The new interval is still
-below the first-prime threshold; the first-prime scalar sign and
-all-width positivity remain unproved. This is a quantitative
-continuity result, not a global closure argument.
+GRR's full-family margin at L=1/4 gives the smaller interval
+L <= 1/4 + 1/47600, with margin 1/1700 and no neutral-moment
+restriction. This stronger margin on that smaller interval is
+retained. DWE bounds the actual Gamma-energy and pole losses
+under norm-preserving dilation. Its historical first-prime
+status is superseded by BRT-T19--T21 above; all-width positivity
+remains open.
 Written derivations only; no scientific computation, independent
 agent, numerical certificate, replay or workflow dispatch.
 

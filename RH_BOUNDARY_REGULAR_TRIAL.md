@@ -1,24 +1,36 @@
-# BRT-1 — A boundary-regular quadratic trial for the first-prime source
+# BRT-1 — Full-source positivity through the first-prime window
 
 Monty · 18 October 2026.
 
-Written continuation at 31df5fe6b71be4b134d5a15677fe910912a4d63b.
-This note chooses one explicit nonzero correction to the constant
-observer, rather than introducing another unspecified trial. The
-correction cancels the trial's endpoint values, removes the divergent
-logarithmic boundary term in its source column, and makes its actual
-first-prime correlation cubic in the small overlap width.
+Written continuation through BRT-T21, based on branch head
+06dfad2975ed96884acbac820830daba2ee827bc.
+The latest result is a complete residual-subtracted lower bound
+at L=7/20. The explicit quartic trial (94) satisfies
+\[
+q_L[p]>\frac1{5000},\qquad
+\langle Q_0T_Lp,C^{-1}Q_0T_Lp\rangle<\frac1{5184}.
+\]
+Consequently
+\[
+s_{7/20}>\frac{23}{3240000}>\frac1{150000},\qquad
+q_L[g]\ge\frac1{260000}\|g\|^2
+\quad(0<L\le7/20,\ g\in D_L).
+\]
+The full-family estimate has no mean-zero or cosh-neutrality
+restriction. The quartic trial has nonzero endpoint values:
+its logarithmic source column and infinitely many residual
+coefficients are retained and bounded, not cancelled.
 
-At L=7/20 the retained prime-2 penalty on this trial is strictly less
-than 3/1000000. The complete source value and the residual entering
-GRR's certificate are given explicitly. The latest written estimate
-proves q_L[g_*] > 48823/16000000 > 3/1000. Earlier sections retain
-the successive historical margins and improve the residual penalty
-on separate modes and through a coupled inverse comparison. The sign of the
-complete certificate is NOT established. The further degree-four
-residual bound in T8 proves that the sufficient threshold (22), using
-the established lower trial margin, cannot hold for this fixed trial. T9 also proves that no nonzero finite polynomial trial can cancel the complete residual; T10 checks an endpoint-preserving quartic correction. There is no new unrestricted positive interval,
-first-prime closure, RH proof, or claim that this trial is optimal.
+T1--T18 record the preceding quadratic-trial investigation,
+failed sufficient tests, observer/transport audits and partial
+improvements. Their statements that the first-prime gate was
+open describe those historical stages. T19--T21 now settle
+that gate by another fully assessed trial; the sign of the
+particular nonpolynomial test (93) is not claimed.
+
+All-width positivity and RH remain open. No new independent
+assumption is introduced. These are written proofs in the
+working source chain, not independently validated certificates.
 
 ## Actual source and domain
 
@@ -1925,7 +1937,7 @@ input margin, not a negative-source result.
 
 ### A scalar enclosure with the cancelling terms kept together
 
-Define, only in T17--T18,
+Define, for T17 and the subsequent source estimates,
 \[
 \mathfrak d=-\frac{\Omega_0}{2}-F(7/10),\qquad
 x=\frac7{40},\quad z_0=\tanh x.
@@ -2288,33 +2300,571 @@ rational series comparisons. No scientific computation,
 simulation, certificate replay, subagent or workflow dispatch
 is performed.
 
+## BRT-T19. An explicit quartic trial has a usable positive source margin
+
+Fix L=7/20 and, in this continuation, set
+\[
+\boxed{
+p(x)=\phi_0 f(x/L),\qquad
+f(s)=1-\frac87P_2(s)+\frac15P_4(s)
+=\frac{461}{280}-\frac{69}{28}s^2+\frac78s^4.
+}
+\tag{94}
+\]
+This is a particular polynomial, not an unevaluated quartic family.
+Its coefficients are assessed below through the complete residual.
+ASM admits its zero extension to the source operator domain.
+It has constant reading one and
+\[
+p=\phi_0-\frac8{7\sqrt5}\phi_2+\frac1{15}\phi_4,\qquad
+\|p\|^2=\frac{13954}{11025},\qquad
+\|p-\phi_0\|^2=\frac{2929}{11025}.
+\]
+The polynomial f decreases as a function of s^2 on [0,1]:
+its derivative there is at most -5/7. Hence
+f(s)>=f(1)=2/35>0. Its endpoint values are nonzero.
+The logarithmic source column is therefore retained, not
+asserted bounded or removed.
+
+The actual trial value satisfies
+\[
+\boxed{
+q_L[p]>\frac{1013}{5000000}>\frac1{5000}.
+}
+\tag{95}
+\]
+
+### Pole, finite-kernel and boundary terms
+
+Continue to use mathfrak d from (87) and
+j_0(u)=1/4-u/48-u^2/32, with
+J_0=integral_0^(2L) j_0=15967/96000.
+For this unit-mean trial,
+\[
+m_0=\sqrt{2L},\qquad
+m_2=\sqrt{2L}\,\frac{19L^2}{105}.
+\]
+Nonnegativity of p implies
+\[
+\ell(p)^2\ge(m_0+m_2/8)^2
+=2L+\frac{19L^3}{210}+\frac{m_2^2}{64}.
+\]
+The last contribution obeys
+\[
+\frac{m_2^2}{64}
+=\frac{6067327}{1128960000000}>\frac1{200000}.
+\]
+
+The singular-kernel part, including its boundary term, is exactly
+\[
+\begin{aligned}
+\mathcal J_p
+&:=J_L[p]+\frac12\log2\,\|p\|^2+\int_Iw_Lp^2\\
+&=\frac12+\frac{1376}{3675}+\frac{1091}{141750}
+-\frac4{21}+\frac1{100}-\frac4{245}
+=\frac{194287}{283500}.
+\end{aligned}
+\tag{96}
+\]
+For a direct check, the diagonal entries of the multiplier
+w_L+(log2)/2 on phi_0,phi_2,phi_4 are
+1/2,41/60,1739/2520. Its off-diagonal entries are
+sqrt(5)/12,3/40,3 sqrt(5)/28. Combine these with the
+Legendre energies 0,3/4,25/24 and the coefficients in (94).
+These entries follow from the same polynomial/logarithmic
+integrals used above; T20 also gives the general off-diagonal
+identity. No logarithm is rounded before its cancellation.
+
+The constant convolution part of j_0 contributes -L/4.
+Its quadratic convolution part contributes m_0m_2/32
+=19L^3/1680. For the linear part put
+\[
+H(s)=\int_0^s f(t)\,dt
+=\frac{461s-230s^3+49s^5}{280}.
+\]
+Direct integration gives
+\[
+\int_0^1H^2
+=\frac1{78400}\left(
+\frac{212521}{3}-\frac{212060}{5}
++\frac{98078}{7}-\frac{22540}{9}+\frac{2401}{11}
+\right)<\frac{513}{1000}.
+\]
+For example the numerator in parentheses is less than
+70841-42412+14012-2504+219=40156, and
+40156/78400<513/1000.
+The distance-kernel identity, using H(1)=1, is
+\[
+\int_0^{2L}u C_p(u)\,du
+=L^2\left(1-\int_0^1H^2\right)>\frac{487L^2}{1000}.
+\]
+It follows either by integrating twice the |x-y| kernel,
+or from its cumulative-integral formula. The linear convolution
+contribution is therefore greater than
+487L^2/48000=23863/19200000.
+
+### Actual prime-2 term
+
+Write d=(2L-u_2)/L<1/50 and F_c(t)=f(1-t) for 0<=t<=d.
+Here F_c is a cap polynomial, distinct from the Gamma tail F.
+Its exact expansion is
+\[
+F_c(t)=\frac2{35}+\frac{10}{7}t+\frac{39}{14}t^2
+-\frac72t^3+\frac78t^4.
+\]
+On this cap,
+\[
+0<F_c(t)\le A+B t,\qquad A=\frac2{35},\quad B=\frac{11}{7}.
+\]
+Indeed the coefficient after factoring out t is at most
+10/7+39/700+7/1000000<11/7.
+Since the two endpoints are paired by the prime displacement,
+\[
+C_p(u_2)=\frac12\int_0^d F_c(t)F_c(d-t)\,dt.
+\]
+Using a_2<1/2 and the affine cap bound gives
+\[
+\begin{aligned}
+0<a_2 C_p(u_2)
+&<\frac14\left(\frac{A^2}{50}+\frac{AB}{2500}
++\frac{B^2}{750000}\right)\\
+&=\frac{3841}{147000000}<\frac{27}{1000000}.
+\end{aligned}
+\tag{97}
+\]
+This bounds the actual negative prime term; it is not omitted.
+
+### Complete lower source bound
+
+The R_0 kernel remainder contributes a nonnegative quadratic
+form, so it can be dropped for this lower estimate.
+Combining the preceding identities gives
+\[
+\begin{aligned}
+q_L[p]>{}&
+(-\mathfrak d+J_0)\frac{13954}{11025}
++\frac{194287}{283500}
++\frac{168931}{240000}-\frac7{80}\\
+&+\frac{6517}{13440000}
++\frac{23863}{19200000}
++\frac1{200000}-\frac{27}{1000000}.
+\end{aligned}
+\tag{98}
+\]
+All polynomial-kernel contributions are restricted to (0,2L);
+the Gamma tail and scalar remain in mathfrak d.
+
+For an outward rational check, (87) yields
+\[
+(-\mathfrak d+J_0)\frac{13954}{11025}
+>-\frac{11494202834}{8820000000}
+>-\frac{13031977}{10000000}.
+\]
+The other positive fractions in (98), in their displayed order,
+are greater than
+6853156/10000000, 7038791/10000000,
+4848/10000000, and 12428/10000000.
+The exact negative constant is -875000/10000000;
+the last two terms are 50/10000000 and -270/10000000.
+Thus (98) is strictly greater than
+\[
+\frac{-13031977+6853156+7038791-875000
+      +4848+12428+50-270}{10000000}
+=\frac{2026}{10000000}.
+\]
+This proves (95) entirely by the written source comparison.
+
+## BRT-T20. The quartic trial's complete inverse residual is smaller than its margin
+
+Let r=Q_0 T_Lp be the complete actual residual of (94).
+We prove
+\[
+\boxed{
+\langle r,C^{-1}r\rangle
+\le\|r\|_{\mathcal D^{-1}}^2
+<\left(\frac{829}{60000}\right)^2
+<\frac1{5184}.
+}
+\tag{99}
+\]
+The bounded comparison here is
+\[
+\mathcal D=\frac3{20}P_2+\frac3{10}P_4+\frac12R_6,
+\quad
+\|v\|_{\mathcal D^{-1}}^2
+=\frac{20}{3}v_2^2+\frac{10}{3}v_4^2+2\|R_6v\|^2.
+\tag{100}
+\]
+This comparison is a lower bound for C, not a diagonalization
+of the source. To check it, T13's low matrix A has
+a>19/100, d>41/100 and c^2=1/245. The diagonal entries of
+A-diag(3/20,3/10) exceed 1/25 and 11/100, and its
+determinant exceeds 11/2500-1/245>0. Also delta_6>1/2.
+Thus C>=K>=mathcal D, and the variational inverse-order
+argument gives the first inequality of (99).
+
+We bound four complete residual components in the norm (100).
+There is no truncation of the logarithmic tail.
+
+### Main column and its exact low-mode coefficients
+
+Define r^(0) by using j_0 in place of j in (26), retaining
+the actual scalar mathfrak d and the full logarithmic multiplier,
+and using m_0(1+x^2/8) for the pole column. Omit only R_0 and
+the prime in this intermediate definition. Their full columns,
+and the pole difference, are restored below.
+
+The exact second-mode coefficient is
+\[
+\begin{aligned}
+\sqrt5\,r^{(0)}_2={}&
+\frac{19}{42}+\frac{343}{48000}+\frac{343}{384000}
++\frac{491}{432000}
+-\frac87\left(-\mathfrak d+\frac{51189}{32000}\right).
+\end{aligned}
+\tag{101}
+\]
+The four positive terms are respectively the logarithmic
+off-diagonal readings, the approximate pole, the u^2
+convolution, and the u convolution.
+For example, if V(x)=integral_I |x-y|p(y)dy, then V''=2p and
+\[
+V(x)=\phi_0L^2\left(
+\frac{461}{280}s^2-\frac{23}{56}s^4+\frac7{120}s^6
+\right)+\text{constant}.
+\]
+This verifies the last term by direct projection.
+Inserting the two endpoints of (87) into (101) gives
+\[
+-\frac{68323}{120960000}
+<\sqrt5\,r^{(0)}_2
+<\frac{124369}{604800000}.
+\]
+These bounds imply
+\[
+|r^{(0)}_2|<\frac3{10000}.
+\]
+
+Similarly,
+\[
+3r^{(0)}_4=
+\frac9{40}-\frac{18}{49}
++\frac15\left(-\mathfrak d+\frac{15967}{96000}
++\frac{1091}{630}\right)-\frac{17}{176000}.
+\tag{102}
+\]
+The parentheses lie between 702/1000 and 703/1000 by (87).
+The resulting rational bounds give
+-21/10000<3r^(0)_4<0, and hence
+\[
+|r^{(0)}_4|<\frac7{10000}.
+\]
+
+### The infinite logarithmic tail
+
+For even n>m>=0,
+\[
+\int_0^1P_n(s)P_m(s)w(s)\,ds
+=\frac1{2(n-m)(n+m+1)}.
+\tag{103}
+\]
+To verify it, apply the Legendre equations to the Wronskian
+(1-s^2)(P_n'P_m-P_m'P_n), integrate against w, and use
+w'=s/(2(1-s^2)). The endpoint Wronskian times w tends to zero.
+The remaining integral is
+(1/2)integral_0^1 s(P_n'P_m-P_m'P_n) ds.
+Its value is 1/2: integrate the first term by parts and use
+orthogonality of P_n to the lower-degree even polynomials
+P_m+sP_m' and sP_m'. This proves (103).
+
+The exact logarithmic coefficient of T_Lp at even n>=6 is
+\[
+t_n=\frac{\sqrt{2n+1}}2\left(
+\frac1{n(n+1)}-\frac{8/7}{(n-2)(n+3)}
++\frac{1/5}{(n-4)(n+5)}
+\right).
+\]
+Writing t=n(n+1), this becomes
+\[
+t_n=
+\frac{\sqrt{2n+1}(t^2-76t+2100)}
+ {35t(t-6)(t-20)}.
+\]
+The numerator is (t-38)^2+656>0. For t>=42 it is smaller
+than (t-6)(t-20), because 1980-50t<0. Consequently
+\[
+0<t_n<\frac{\sqrt{2n+1}}{35n(n+1)},\qquad
+t_6=\frac{2\sqrt{13}}{3465}.
+\]
+For even n>=8 the decreasing sequence
+1/n^2-1/(n+1)^2 can be paired with its preceding odd term.
+Therefore
+\[
+\begin{aligned}
+\sum_{n=6,8,\ldots}t_n^2
+&<\frac{52}{12006225}
++\frac1{1225}\,\frac12\sum_{n=7}^\infty
+ \left(\frac1{n^2}-\frac1{(n+1)^2}\right)\\
+&=\frac{52}{12006225}+\frac1{120050}
+<\frac{127}{10000000}.
+\end{aligned}
+\tag{104}
+\]
+For the last rational comparison the two fractions are less
+than 434/100000000 and 834/100000000, respectively.
+Thus the logarithmic-tail norm is less than 357/100000.
+
+The u convolution in j_0 has one additional tail coefficient,
+only in degree six, equal to
+343 sqrt(13)/864864000<1/600000.
+It follows from V above and
+integral_0^1 P_6(s)s^6 ds=16/3003.
+All other main-column terms have degree at most four. Hence
+\[
+\|R_6r^{(0)}\|<
+\frac{357}{100000}+\frac1{600000}
+=\frac{2143}{600000}.
+\]
+Combining this with (101)--(102) gives
+\[
+\|r^{(0)}\|_{\mathcal D^{-1}}^2
+<
+\frac{20}{3}\left(\frac3{10000}\right)^2
++\frac{10}{3}\left(\frac7{10000}\right)^2
++2\left(\frac{2143}{600000}\right)^2
+=\frac{9988898}{360000000000}
+<\left(\frac{53}{10000}\right)^2.
+\tag{105}
+\]
+
+### Restoring the full Gamma remainder
+
+The operator mathcal R of the finite R_0 form satisfies
+||mathcal R||<=2J_R<1/950 by T17.
+Also ||p||=sqrt(13954/11025)<8/7, and
+||mathcal D^(-1/2)||=sqrt(20/3)<8/3.
+Mean subtraction contracts L2. Thus
+\[
+\|Q_0\mathcal Rp\|_{\mathcal D^{-1}}
+<\frac83\frac1{950}\frac87
+=\frac{64}{19950}<\frac{13}{4000}.
+\tag{106}
+\]
+
+### Restoring the actual prime column
+
+Let Pp=-(a_2/2)(p(x-u_2)+p(x+u_2)) on I, with zero
+extension as always. The two caps are disjoint. In addition
+to the affine bound used for the form, the exact cap polynomial
+satisfies
+\[
+F_c(t)\le\frac3{35}+\frac{39}{35000}
++\frac7{50000000}<\frac7{80}
+\qquad(0<=t<=d<1/50).
+\]
+Since |P_2|,|P_4|<=1 on [-1,1], cap integration yields
+\[
+\|Pp\|^2<\frac{49}{5120000},\qquad
+|\langle Pp,\phi_2\rangle|<\frac{7\sqrt5}{16000},
+\qquad
+|\langle Pp,\phi_4\rangle|<\frac{21}{16000}.
+\]
+For example the norm bound is
+(a_2^2/4) integral_0^d F_c(t)^2 dt
+<d(7/80)^2/16. The coefficient bound for degree n is
+a_2 sqrt(2n+1) integral_0^d F_c(t)dt/2.
+
+The complete weighted norm, including its tail, is bounded by
+\[
+\begin{aligned}
+\|Q_0Pp\|_{\mathcal D^{-1}}^2
+&\le2\|Pp\|^2+\frac{14}{3}
+ |\langle Pp,\phi_2\rangle|^2
++\frac43|\langle Pp,\phi_4\rangle|^2\\
+&<\frac{9947}{384000000}
+<\left(\frac{51}{10000}\right)^2 .
+\end{aligned}
+\tag{107}
+\]
+The low-mode weights here are essential; the prime column is
+not bounded solely by its small form value (97).
+
+### Restoring the exact pole column
+
+Write R_c(x)=cosh(x/2)-1-x^2/8.
+The difference from the approximate pole, after mean subtraction,
+is
+\[
+e_{\rm pole}=(\ell(p)-m_0)\,Q_0(x^2/8)+\ell(p)Q_0R_c.
+\]
+Nonnegativity of p, the exact m_2, and
+cosh(L/2)<64/63 give
+\[
+0\le\ell(p)-m_0\le\frac{m_2}{8}\cosh(L/2)
+<\frac3{1000},\qquad \ell(p)<1.
+\]
+Also
+\[
+\|Q_0(x^2/8)\|=\frac{\sqrt{2L}L^2}{12\sqrt5}<\frac1{192},
+\quad
+\|Q_0R_c\|\le\|R_c\|
+\le\frac{\sqrt{2L}L^4\cosh(L/2)}{384}<\frac1{24192}.
+\]
+Consequently
+\[
+\|e_{\rm pole}\|_{\mathcal D^{-1}}
+<\frac83\left(\frac1{64000}+\frac1{24192}\right)
+=\frac1{24000}+\frac1{9072}<\frac1{6000}.
+\tag{108}
+\]
+
+The actual residual is exactly
+r=r^(0)+Q_0 mathcal Rp+Q_0Pp+e_pole.
+The triangle inequality in the single positive norm (100),
+using (105)--(108), now gives
+\[
+\|r\|_{\mathcal D^{-1}}
+<
+\frac{53}{10000}+\frac{13}{4000}
++\frac{51}{10000}+\frac1{6000}
+=\frac{829}{60000}<\frac1{72}.
+\]
+Squaring proves (99). Every tail and every source term has been
+restored before this final comparison.
+
+## BRT-T21. First-prime positivity and the unrestricted window through 7/20
+
+For the actual source at the endpoint,
+\[
+\boxed{
+s_{7/20}>\frac1{5000}-\frac1{5184}
+=\frac{23}{3240000}>\frac1{150000}>0.
+}
+\tag{109}
+\]
+Indeed the admitted trial (94) has unit constant reading,
+so the exact identity is
+s_L=q_L[p]-<r,C^{-1}r>. Apply (95) and (99).
+This is a positive lower bound for the returned scalar,
+not merely a positive trial value.
+
+The corresponding full-family coercivity can be made explicit:
+\[
+\boxed{
+0<L\le\frac7{20},\qquad g\in D_L
+\quad\Longrightarrow\quad
+q_L[g]\ge\frac1{260000}\|g\|^2.
+}
+\tag{110}
+\]
+There is no mean-zero or cosh-neutrality restriction in (110).
+
+Here are the normalization details at the endpoint. Let
+rho=C^(-1)b be the original mean-zero minimizing return.
+Since r=b+C(p-phi_0),
+\[
+\rho=C^{-1}r-(p-\phi_0).
+\]
+The already proved delta>2/31 and (99) imply
+\[
+\|C^{-1}r\|^2
+\le\delta^{-1}\langle r,C^{-1}r\rangle
+<\frac{31}{10368}<\left(\frac2{25}\right)^2.
+\]
+Also ||p-phi_0||^2=2929/11025<(13/25)^2. Thus ||rho||<3/5.
+For arbitrary g=c phi_0+h, h mean-zero, source square completion
+gives
+\[
+q_L[g]=s_Lc^2+
+\|C^{1/2}(h+c\rho)\|^2
+\ge s_Lc^2+\delta\|h+c\rho\|^2.
+\]
+On the other hand,
+\[
+\|g\|^2
+=c^2+\|h\|^2
+\le\frac{43}{25}c^2+2\|h+c\rho\|^2.
+\]
+The comparisons
+(43/25)/260000<1/150000 and
+2/260000<2/31 prove (110) at L=7/20.
+
+A smaller supported smooth profile has exactly the same source
+value and norm after zero extension into the endpoint window.
+Every prime displacement outside its own support contributes
+zero correlation. The endpoint estimate therefore holds on
+every smaller smooth core, and source-form closure extends it
+to D_L. This is the usual support inclusion of the actual source;
+no dilation law, change of observer, or extra prime assumption
+is introduced.
+
+**Scope and gate accounting.** The first-prime positivity gate
+at L=7/20 is closed by the written estimates (95), (99), and
+(109). The unrestricted positive interval extends to 7/20,
+with the explicit margin in (110). Earlier stronger margins on
+smaller intervals remain available. The particular nonpolynomial
+test (93) need not be evaluated to obtain this result; its sign
+is not being claimed.
+
+All-width positivity, and therefore the RH task, remains open.
+The positive scalar does not make the complete residual zero:
+the polynomial obstruction in T9 still applies. The endpoint
+logarithm, all higher even modes, the signed prime term and
+the source's low/tail couplings were retained in the estimates.
+No new independent assumption is added. These are written
+proofs in the working source chain, not independently validated
+certificates. No scientific computation, numerical simulation,
+certificate replay, subagent or workflow dispatch is performed.
+
+
 ## Scope and continuation
 
-The established outputs are an explicit boundary-selected correction,
-its exact overlap polynomial, the strict prime penalty bound (7),
-a bounded full source column, the positive trial bound (14), and the
-stronger mode-resolved residual certificate (21), and the proved
-failure of the specific threshold (22) for this trial. T9--T10 add a proof that finite polynomial corrections cannot make the exact residual vanish, with an explicit endpoint-preserving quartic family. T11--T12 then use the explicit endpoint logarithm to prove a sixth-mode residual below -1/200 and reduce the same inverse-error upper bound by more than 1/50000. The refined conservative certificate still fails by (43); this is not a positivity closure.
-T13 retains the boundary surplus in a coupled second/fourth-mode comparison and reduces the error upper bound by a further amount greater than 1/10000. Its full mixed-term assessment fails with the then-proved conservative trial margin, as (51) records.
-T14 improves the actual trial lower margin to 28967/16000000 but proves that its pairing with the current coupled inverse comparison still fails. T15 retains unused scalar source surplus and lowers that inverse bound by more than 1/2000000; its uncorrected margin certificate still fails. T16 proves the operator domain of a concrete nonpolynomial residual correction and derives the step that maximizes the full lower certificate on that direction, with exact positive gain B^2/(B+N). T17 now proves that even this optimized gain cannot rescue the old T14 margin, using an actual inverse-memory lower bound greater than 1/500. T18 then improves the trial margin by 1241/1000000 through an exact scalar cancellation; the sign of the updated complete certificate (93) remains unresolved.
-No new positive source interval is claimed. DWE's previously proved
-unrestricted interval remains unchanged.
+The current quantitative result is (109): a strictly positive
+returned scalar at L=7/20, obtained by subtracting an upper bound
+for the complete inverse residual from a lower bound for the
+actual source value. Equation (110) extends full-family coercivity
+to every support window 0<L<=7/20. The prior DWE margin 1/1700
+on L<=1/4+1/47600 remains a stronger local margin on its smaller
+interval.
 
-The trial is an ordinary source profile. Its quadratic shape is not
-identified with EMK connection curvature, a physical field, or a
-universal cut law. Its usefulness is justified by (6) and (10).
+The original quadratic trial remains useful historical evidence.
+T8, T13--T15 and T17 identify specific conservative certificates
+that fail; they do not prove a negative source. T9's finite
+polynomial exact-cancellation obstruction still applies to (94).
+T16's admitted nonpolynomial correction and its exact gain remain
+valid, while the sign of its particular stronger-margin test (93)
+has not been assessed. That sign is no longer necessary for the
+first-prime result, which follows from T19--T21.
 
-The current source-specific remaining task is a signed enclosure of
-the complete corrected bound (93), or another fully assessed bound
-for the same returned scalar. T17 settles the old-margin test
-negatively; T18 improves its source-value input. Boundary regularity
-and a small prime term cannot replace the remaining calculation.
-Even a first-prime certificate would leave the all-width RH task open.
+The successful quartic trial is not the endpoint-preserving
+one-parameter family of T10. Its nonzero endpoint value restores
+a logarithmic source column; the explicit infinite-tail estimate
+(104) shows why this is admissible and quantitatively manageable.
+Every signed source term, including prime 2, is included in (99).
+Small prime correlation alone is not used as a residual bound.
 
-Only this note and its README entry change. Validation consists of
-written polynomial and logarithmic integration, rational comparisons,
-source polarization, boundary limits, inverse form order, and
-immutable-content readback. No scientific computation, numerical
-source evaluation, independent agent, certificate replay or workflow
-dispatch is performed. The commit uses [skip ci]. The PR is a draft
-stacked on #137 and remains unmerged.
+This result concerns the actual arithmetic form under its stated
+domain and normalization. It does not identify the trial polynomial
+or the positive comparison operator with native EMK curvature,
+Riemann curvature, a physical field or a universal cut law.
+A co-carried observer change preserves the full source pairing;
+it does not supply the new numerical margins by itself.
+
+The next research task is extension beyond 7/20 with quantitative
+control of the actual signed source, retaining its memory and
+any further active prime powers. No all-width control or RH
+closure follows from the finite interval proved here.
+
+Only this note and its README entry change. Validation consists
+of written polynomial/logarithmic integration, rational comparisons,
+source polarization, inverse form order and immutable-content
+readback. No scientific computation, numerical simulation,
+independent agent, certificate replay or workflow dispatch is
+performed. The commit uses [skip ci]. The PR remains a draft
+stacked on #137 and is not merged.
+
+**Gate accounting.** Closed by the working written proof:
+first-prime positivity at L=7/20 and unrestricted positivity
+through that window. Open: all-width positivity and RH.
+The particular test (93) remains unassessed. No new independent
+assumption is added.
