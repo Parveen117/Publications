@@ -1,21 +1,21 @@
 # Publications
 
 Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
-Written estimates for an explicit quartic trial at L=7/20 give
-q_L[p] > 1/5000 and a complete inverse-residual penalty < 1/5184.
-Thus the returned scalar satisfies s_(7/20) > 1/150000.
-The full arithmetic source obeys q_L[g] >= ||g||^2/260000 for
-every 0<L<=7/20 and every admitted real even profile, with no
-mean-zero or cosh-neutrality restriction.
-The trial's nonzero endpoint values, infinite logarithmic residual,
-low-mode mixing and actual negative prime-2 term are all retained.
-BRT-T19--T21 contain the proof; earlier sections preserve the
-failed tests and intermediate bounds.
-This closes the first-prime window in the working written proof.
+BRT-T22--T24 extend the working written result to
+L <= 7/20 + 1/1000000, with full-family margin 1/520000
+and returned scalar > 1/300000 on the new part of the interval.
+The stronger T21 margin 1/260000 through L=7/20 remains valid.
+There is no mean-zero or cosh-neutrality restriction.
+The width estimates retain the actual moving prime caps,
+low-mode coupling and the complete infinite logarithmic residual.
+A uniform inverse comparison and residual estimate hold on
+the larger band through 7001/20000, but the trial-margin loss
+does not establish positivity at that band's endpoint.
+Earlier sections preserve the failed tests and intermediate bounds.
 All-width positivity and RH remain open; no new independent
 assumption is added.
-Written derivations only; no scientific computation, independent
-agent, numerical simulation, certificate replay or workflow dispatch.
+Written derivations only; no independent certification, scientific
+computation, agent, numerical simulation, replay or workflow dispatch.
 
 Preceding RH development: [DWE-1 — quantified dilation extension of the positive source window](RH_DILATION_WINDOW_EXTENSION.md).
 GRR's full-family margin at L=1/4 gives the smaller interval
