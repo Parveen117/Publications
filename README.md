@@ -1,6 +1,17 @@
 # Publications
 
-Latest RH development: [DWE-1 — quantified dilation extension of the positive source window](RH_DILATION_WINDOW_EXTENSION.md).
+Latest RH development: [BRT-1 — a boundary-regular quadratic first-prime trial](RH_BOUNDARY_REGULAR_TRIAL.md).
+The explicit correction h = phi_2/sqrt(5) makes the retained trial
+vanish at both endpoints. Its exact overlap is cubic in the cap
+width, giving an actual prime-2 penalty below 3/1000000 at L=7/20.
+The complete source column is bounded, and the trial value and
+full residual certificate are explicit. The certificate's sign
+has not been established; no new unrestricted positive interval
+or RH closure is claimed.
+Written derivations only; no scientific computation, independent
+agent, numerical source evaluation, replay or workflow dispatch.
+
+Preceding RH development: [DWE-1 — quantified dilation extension of the positive source window](RH_DILATION_WINDOW_EXTENSION.md).
 GRR's full-family margin at L=1/4 gives an explicit small extension
 to L <= 1/4 + 1/47600, with margin 1/1700 and no neutral-moment
 restriction. The proof bounds the actual Gamma-energy and pole
