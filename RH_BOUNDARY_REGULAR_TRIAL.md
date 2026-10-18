@@ -2,41 +2,46 @@
 
 Monty · 18 October 2026.
 
-Written continuation through BRT-T24, based on branch head
-b245c1f070bc19cbb18543baf2e93b77c6c6c4a4.
-The latest estimates extend unrestricted positivity to
+Written continuation through BRT-T27, based on branch head
+2dea5b7aec51b2e613929b8dd690d22e821ca4ca.
+The latest result closes the whole previously unresolved
+comparison band:
 \[
 \boxed{
-0<L\le\frac7{20}+\frac1{1000000}
+0<L\le\frac{7001}{20000}
+=\frac7{20}+\frac1{20000}
 \quad\Longrightarrow\quad
-q_L[g]\ge\frac1{520000}\|g\|^2
+q_L[g]\ge\frac1{25000}\|g\|^2
 \quad(g\in D_L).
 }
 \]
-On the new part of this interval the returned scalar is
-greater than 1/300000. T22--T24 retain the actual moving
-prime caps, low-mode coupling and complete logarithmic residual.
-They give a uniform residual bound on a somewhat larger band
-and an explicit trial-margin loss; that loss does not prove
-positivity at the larger band's endpoint.
+On 7/20<=L<=7001/20000 the returned scalar exceeds 7/100000.
+T25 retains a positive Gamma-remainder contribution that the
+trial-value estimates had discarded. T26 keeps the cancelling
+source derivatives together, reducing the proved width-loss
+coefficient from 6 to 3/100. T27 combines these improvements
+with the unchanged complete inverse-residual bound.
 
-T19--T21 previously established s_(7/20)>1/150000 and the
-stronger margin 1/260000 for all 0<L<=7/20. Those estimates
-remain valid. The quartic trial has nonzero endpoint values
-and a nonzero infinite residual; neither is removed.
+The older negative lower estimate (120) remains a record of
+that bound's failure, not a negative source result. The actual
+sign at its endpoint is now settled by the stronger estimate
+(127). The earlier BRT full-family margins on smaller intervals
+are superseded by (128); DWE's stronger local margin remains
+available on its much smaller interval.
 
-T1--T18 preserve the earlier quadratic-trial investigation,
-failed sufficient tests and observer/transport audits. Their
-open first-prime statuses describe those historical stages.
-The sign of the particular nonpolynomial test (93) remains
-unassessed and is not needed for T19--T24.
+T1--T24 preserve the earlier trials, failed sufficient tests,
+observer/transport audits and partial improvements. Their
+open-gate statements describe their historical stages.
+The particular nonpolynomial test (93) remains unassessed
+and is not needed for the current conclusion.
 
-No mean-zero or cosh-neutrality restriction is imposed on
-the full-family conclusions. All-width positivity and RH
-remain open. No new independent assumption is introduced.
-These are working written proofs, not independently certified
-results. GitHub metadata or a successful documentation check
-alone is not mathematical certification.
+The actual prime-2 term and complete nonzero logarithmic
+residual remain in the estimates. No mean-zero or cosh-neutrality
+restriction is imposed on the full-family conclusion.
+All-width positivity and RH remain open. No new independent
+assumption is introduced. These are working written proofs,
+not independently certified results. GitHub metadata alone
+is not mathematical certification.
 
 ## Actual source and domain
 
@@ -3161,58 +3166,287 @@ No independent certification, scientific computation, numerical
 simulation, certificate replay, subagent or workflow dispatch
 is performed.
 
+## BRT-T25. The discarded Gamma remainder supplies a uniform positive margin
+
+Keep the width band L_0=7/20<=L<=L_cap=7001/20000
+and the actual source conventions of T22--T24. The finite
+remainder operator used in T20 and T23 has quadratic form
+\[
+\langle g,\mathcal R_Lg\rangle
+=\int_0^{2L}R_0(u)(\|g\|^2-C_g(u))\,du.
+\]
+It is already a bounded positive operator. Here its lower
+bound is made quantitative:
+\[
+\boxed{
+\langle g,\mathcal R_Lg\rangle
+\ge c_R(L)\|g\|^2,\qquad
+c_R(L)=\frac{7L^4}{8192}+\frac{31L^5}{4096}
+>\frac1{20000}.
+}
+\tag{121}
+\]
+This is a contribution of the existing arithmetic kernel,
+not an additional positive source assumption.
+
+### Two positive kernel coefficients suffice
+
+GRR-T1 gives R_0(u)=E(u)/(2 sinh u), with positive entire
+coefficients of E from degree four onward. Its first two
+terms are exactly
+\[
+E(u)\ge\frac7{5760}u^4+\frac5{768}u^5.
+\]
+On 0<u<=2L_cap, T23 gives cosh(u)<4/3, while
+sinh(u)<=u cosh(u). Consequently
+\[
+\boxed{
+R_0(u)\ge\frac7{15360}u^3+\frac5{2048}u^4.
+}
+\tag{122}
+\]
+The equality at u=0 is understood by continuity.
+
+For L<=u<=2L, the two translated overlap caps are disjoint.
+Thus |C_g(u)|<=||g||^2/2 and
+||g||^2-C_g(u)>=||g||^2/2. Retaining only this displacement
+range and then integrating (122) gives
+\[
+\begin{aligned}
+\langle g,\mathcal R_Lg\rangle
+&\ge\frac{\|g\|^2}{2}
+\int_L^{2L}\left(\frac7{15360}u^3+\frac5{2048}u^4\right)\,du\\
+&=\left(\frac{7L^4}{8192}+\frac{31L^5}{4096}\right)\|g\|^2.
+\end{aligned}
+\]
+The coefficient increases with L. At L_0,
+\[
+c_R(L_0)=\frac{689087}{13107200000}
+>\frac{655360}{13107200000}=\frac1{20000}.
+\]
+This proves (121), including on the full source form domain;
+the remainder itself is bounded on L2.
+
+For the fixed quartic shape, N=13954/11025>5/4.
+Therefore the actual trial's previously discarded contribution
+has the uniform bound
+\[
+\boxed{\langle p_L,\mathcal R_Lp_L\rangle>\frac1{16000}.}
+\tag{123}
+\]
+T19 and T23 dropped this entire term in their trial-value
+lower bounds. It can be added there once. Their complete
+residual bounds already include the full remainder column;
+those bounds are kept unchanged below.
+
+## BRT-T26. Keeping the source cancellation reduces the width loss by a factor of 200
+
+Define a particular lower comparison for the same normalized
+quartic trial:
+\[
+\begin{aligned}
+\mathcal B(L)={}&
+N\bigl(-\mathfrak d(L)+J_0(L)\bigr)
++\frac{194287}{283500}+\frac{7L}{4}
++\frac{57L^3}{560}\\
+&+\frac{361L^5}{352800}
++\frac{487L^2}{48000}-\frac{27}{1000000}.
+\end{aligned}
+\tag{124}
+\]
+Here mathfrak d(L)=-Omega_0/2-F(2L) and
+J_0(L)=integral_0^(2L)j_0(u)du, exactly as in T23.
+For every width in the stated band,
+\[
+q_L[p_L]\ge\mathcal B(L)
++\langle p_L,\mathcal R_Lp_L\rangle.
+\]
+This uses the same actual prime bound as (97), valid uniformly
+because d_L<1/50. The logarithmic energy is (96).
+The pole lower bound is
+2L+19L^3/210+361L^5/352800; combining it with the
+constant and quadratic convolution terms gives 7L/4
+and 57L^3/560. The linear convolution lower bound is
+487L^2/48000. Thus (124) retains exactly the terms already
+used in T19, without rounding the positive width dependence
+away. In particular mathcal B(L_0)>1013/5000000.
+
+The exact kernel identity gives
+\[
+\frac{d}{dL}(-\mathfrak d(L)+J_0(L))
+=-2(k(2L)-j_0(2L))
+=-\frac1{2L}-2R_0(2L).
+\]
+Hence
+\[
+\begin{aligned}
+\mathcal B'(L)={}&
+-\frac{N}{2L}-2N R_0(2L)+\frac74
++\frac{171L^2}{560}\\
+&+\frac{361L^4}{70560}+\frac{487L}{24000}.
+\end{aligned}
+\tag{125}
+\]
+This derivative is of the declared scalar lower comparison.
+No derivative formula for the full source inverse, no operator
+norm continuity of prime translation, and no sign of the
+actual s_L derivative are asserted.
+
+The rational bounds
+\[
+\frac54<N<\frac{19}{15}<\frac43,\qquad
+R_0(2L)<\frac1{200},\qquad L\ge\frac7{20}
+\]
+now suffice. Retain the positive quadratic and linear terms
+in (125), and drop only the positive L^4 term:
+\[
+\begin{aligned}
+\mathcal B'(L)
+&>-\frac{38}{21}-\frac1{75}+\frac74
++\frac{1197}{32000}+\frac{3409}{480000}\\
+&=-\frac{23813}{840000}>-\frac3{100}.
+\end{aligned}
+\]
+The bound on R_0 here is its already proved upper bound:
+the negative endpoint-remainder term in (125) has not
+been discarded.
+
+Integrate on [L_0,L] and add the positive remainder (123).
+The actual trial value therefore satisfies
+\[
+\boxed{
+q_L[p_L]>
+\frac{1013}{5000000}+\frac1{16000}
+-\frac3{100}(L-L_0)
+=\frac{2651}{10000000}-\frac3{100}(L-L_0).
+}
+\tag{126}
+\]
+The previous loss coefficient was 6; it is now 3/100.
+This comparison improves the full returned-scalar lower bound
+because the complete inverse-residual penalty from (113)
+remains valid for the same actual p_L and r_L.
+
+The improvement does not follow from changing sign conventions
+or rotating the observer. It follows from retaining the positive
+source contribution and the cancelling width derivatives in
+the actual scalar and pole terms.
+
+## BRT-T27. The whole former comparison band is now positive
+
+Use the unchanged complete residual estimate (113) together
+with (126). Since L-L_0<=1/20000,
+\[
+\begin{aligned}
+s_L
+&=q_L[p_L]-\langle r_L,C_L^{-1}r_L\rangle\\
+&>\frac{2651}{10000000}
+-\frac3{2000000}-\frac1{5184}\\
+&=\frac{659}{2500000}-\frac1{5184}
+>\frac7{100000}.
+\end{aligned}
+\tag{127}
+\]
+For the last rational comparison,
+659/2500000-7/100000=121/625000, and
+121*5184=627264>625000.
+Thus the entire band [7/20,7001/20000], including the endpoint
+where the old lower estimate (120) failed, has positive
+returned scalar in the working written proof.
+
+The full-family conclusion is
+\[
+\boxed{
+0<L\le\frac{7001}{20000}
+=\frac7{20}+\frac1{20000},\qquad g\in D_L
+\quad\Longrightarrow\quad
+q_L[g]\ge\frac1{25000}\|g\|^2.
+}
+\tag{128}
+\]
+There is no mean-zero or cosh-neutrality restriction.
+
+For completeness, T24's normalization remains unchanged:
+C_L>2I/31, ||rho_L||<3/5, and for
+g=c phi_0^(L)+h_0, z=h_0+c rho_L,
+\[
+q_L[g]=s_Lc^2+\|C_L^{1/2}z\|^2,\qquad
+\|g\|^2\le(43/25)c^2+2\|z\|^2.
+\]
+Now (43/25)/25000<7/100000 and
+2/25000<2/31. These comparisons prove (128) on the band.
+Zero extension of smaller smooth profiles into its endpoint,
+followed by the retained source-form closure, proves it for
+every smaller L. The previous BRT full-family margins on their smaller
+intervals are superseded by this stronger bound. DWE's
+1/1700 margin remains stronger on its much smaller interval.
+
+The old bound (120) still correctly records failure of that
+particular conservative estimate. Its failure no longer leaves
+the source sign at L_cap open: (127) resolves it with a stronger
+lower bound. The complete residual remains nonzero, with all
+higher even modes, the Gamma remainder, the pole correction
+and the signed prime-2 column included.
+
+**Scope and gate accounting.** The formerly open larger-band
+positivity gate at L_cap is closed by this working written
+derivation. The unrestricted positive interval is (128).
+Beyond that endpoint, the cap-width and residual constants
+must be established again; none are extrapolated here.
+All-width positivity and RH remain open. No new independent
+assumption is added. No independent certification, scientific
+computation, numerical simulation, certificate replay, subagent
+or workflow dispatch is performed.
+
 ## Scope and continuation
 
-The current unrestricted interval is (119):
-0<L<=7/20+1/1000000, with margin 1/520000. The stronger
-T21 margin 1/260000 through 7/20 and DWE margin 1/1700 on
-L<=1/4+1/47600 remain available on their respective intervals.
+The current unrestricted result is (128):
+0<L<=7001/20000, with margin 1/25000. On the upper band
+[7/20,7001/20000], (127) gives s_L>7/100000.
+DWE's margin 1/1700 remains stronger on its smaller interval
+L<=1/4+1/47600.
 
-T22 preserves a strict mean-zero comparison throughout
-[7/20,7001/20000]. T23 controls the complete quartic residual
-on that whole band while bounding the trial-value loss by
-6(L-7/20). The resulting varying lower bound (117) proves
-the extension in T24. At the larger band's endpoint it equals
--487/5000000-1/5184, so this bound fails to establish positivity
-there. It does not imply that the actual source is negative.
-The next quantitative task is to improve the actual trial
-margin or its width dependence, assessing the complete return.
+The advance over T24 has two explicit sources. T25 retains
+more than 1/16000 of the quartic trial's actual Gamma-remainder
+energy. T26 reduces the width loss in its scalar lower bound
+from 6h to 3h/100 by keeping the source and pole derivatives
+together. The actual residual and its previously proved inverse
+upper bound are unchanged. Thus the full lower endpoint
+improves without deleting residual memory or minimizing the
+trial value alone.
 
-The original quadratic trial remains useful historical evidence.
-T8, T13--T15 and T17 identify specific sufficient bounds
-that fail; they do not prove a negative source. T9's finite
-polynomial exact-cancellation obstruction still applies.
-T16's admitted nonpolynomial correction remains available;
-the sign of its particular test (93) is still unassessed.
+T24's negative bound at L_cap remains a correct failure
+assessment of that particular estimate. It is superseded
+as a source-sign assessment by T27's positive lower bound.
+No infinite-width conclusion follows from this finite result.
+The next task is to carry or sharpen the actual prime-cap,
+source and residual estimates beyond L_cap. The constants
+proved only for d_L<1/50 are not extrapolated past their
+stated domain, and additional prime powers must be retained
+whenever they become active.
 
-The successful quartic trial is not T10's endpoint-preserving
-family. Its nonzero endpoint value produces a logarithmic
-source column. The infinite-tail estimate and all three
-restored source columns are retained in both the endpoint
-proof and the new width estimates. Small prime correlation
-is never used as a substitute for a complete residual bound.
+The original quadratic trial and its failed bounds remain
+historical evidence. T9's finite-polynomial exact-cancellation
+obstruction still applies to the successful quartic trial.
+T16's nonpolynomial correction remains available; the sign
+of its particular test (93) is still unassessed.
 
-This result concerns the actual arithmetic form on its stated
-domain. It does not identify the polynomial or comparison
-operator with native EMK curvature, Riemann curvature, a
-physical field or a universal cut law. A co-carried observer
-change preserves the full pairing. Actual support enlargement
-changes F(2L), the pole and the normalized prime displacement;
-T22--T24 bound those changes explicitly.
+The polynomial and comparison operators are source profiles
+and estimates on the stated domain. They are not identified
+with native EMK curvature, Riemann curvature, a physical
+field or a universal cut law. A co-carried observer change
+preserves the full pairing; actual support enlargement changes
+the source terms treated in T22--T26.
 
-The finite margin is consumed by the extension. Repeating the
-same estimate does not replenish it or prove all-width positivity.
-Further active prime powers must be retained whenever they enter.
+Only this note and its README entry change. The work is written
+mathematical derivation plus exact repository-content and metadata
+verification. No independent certification, scientific computation,
+numerical simulation, independent agent, certificate replay or
+workflow dispatch is performed. The commit uses [skip ci].
+The PR remains draft, stacked on #137, and unmerged.
 
-Only this note and its README entry change. The work consists
-of written mathematical derivation and exact repository-content
-and metadata verification. No independent certification,
-scientific computation, numerical simulation, independent agent,
-certificate replay or workflow dispatch is performed. The commit
-uses [skip ci]. The PR remains draft, stacked on #137, and unmerged.
-
-**Gate accounting.** The working written proof extends
-unrestricted positivity to 7/20+1/1000000. Positivity beyond
-that interval and all-width positivity/RH remain open.
-The particular test (93) is still unassessed. No new independent
-assumption is added.
+**Gate accounting.** Positivity on the whole formerly open
+comparison band is closed in the working written proof.
+The unrestricted interval is now 0<L<=7001/20000. Positivity
+beyond it and all-width positivity/RH remain open.
+No new independent assumption is added.

@@ -1,17 +1,17 @@
 # Publications
 
 Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
-BRT-T22--T24 extend the working written result to
-L <= 7/20 + 1/1000000, with full-family margin 1/520000
-and returned scalar > 1/300000 on the new part of the interval.
-The stronger T21 margin 1/260000 through L=7/20 remains valid.
+BRT-T25--T27 close the whole previous comparison band:
+for every 0<L<=7001/20000 = 7/20 + 1/20000 and every admitted
+real even profile, q_L[g] >= ||g||^2/25000.
+On [7/20,7001/20000], the returned scalar exceeds 7/100000.
 There is no mean-zero or cosh-neutrality restriction.
-The width estimates retain the actual moving prime caps,
-low-mode coupling and the complete infinite logarithmic residual.
-A uniform inverse comparison and residual estimate hold on
-the larger band through 7001/20000, but the trial-margin loss
-does not establish positivity at that band's endpoint.
-Earlier sections preserve the failed tests and intermediate bounds.
+The proof restores a previously discarded Gamma-remainder margin
+and reduces the trial-value width-loss coefficient from 6 to 3/100,
+while retaining the unchanged complete inverse-residual penalty.
+The actual prime-2 column, low-mode coupling and infinite logarithmic
+residual are included. The older failed lower bound is preserved
+as history; a stronger estimate now settles its endpoint.
 All-width positivity and RH remain open; no new independent
 assumption is added.
 Written derivations only; no independent certification, scientific
