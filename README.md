@@ -1,6 +1,20 @@
 # Publications
 
-Latest RH development: [ORR-1 — exact observer recursion and inverse-residual curvature](RH_OBSERVER_RESIDUAL_RECURSION.md).
+Latest RH development: [APD-1 — observer aperture and enlarged positive banks](RH_OBSERVER_APERTURE_DEPTH.md).
+The guaranteed arbitrary-bank size on the same interval [a/2,3a/2]
+increases from floor(N*/12) to floor(N*/9) for N* >= 2048,
+retaining both actual source signs and all mixed readings.
+A variable-aperture source bound also admits floor(N*/6) arbitrary
+positions in [2a/3,4a/3] for N* >= 256.
+An explicit narrower interval admits the full known finite
+polynomial budget N*. ORR's residual and curvature margins carry
+to each new range, with their extra-position budgets retained.
+These are finite improvements. An unlimited compatible positive
+bank identifying the actual source, and RH closure, remain open.
+Written proofs only; no scientific computation, numerical source
+evaluation, independent agent, replay or workflow dispatch.
+
+Preceding RH development: [ORR-1 — exact observer recursion and inverse-residual curvature](RH_OBSERVER_RESIDUAL_RECURSION.md).
 The complete filtered residual now has an exact update after an
 accepted actual observer. Two explicit mixed-observer kernels
 determine the next bank's signs; each remaining margin is the old
