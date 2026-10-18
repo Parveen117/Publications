@@ -747,13 +747,223 @@ independent hypothesis to RH. The required task remains a signed
 bound on the same exact returned scalar; it does not require
 that every residual coefficient vanish.
 
+## BRT-T11. Retaining the next Legendre level strictly improves the same certificate
+
+Keep the trial g_* and its complete residual unchanged. Use degree
+indexing phi_n=sqrt((2n+1)/(2L)) P_n(x/L) for even n, and write
+r_n=<r_*,phi_n>. Let P_4 project onto phi_4 and let
+R_6=I-P_2-P_4 on the mean-zero space. Put
+\[
+\delta_6=\delta+\frac{19}{40}
+=\frac{777383}{1440000},\qquad
+D_6=\delta P_2+\delta_4P_4+\delta_6R_6.
+\]
+Then, as closed-form inequalities,
+\[
+C\succeq D_6\succeq D,\qquad
+s_L\ge q_L[g_*]-E_6,
+\quad
+E_6=\frac{r_2^2}{\delta}
++\frac{r_4^2}{\delta_4}
++\frac{\|R_6r_*\|^2}{\delta_6}.
+\tag{38}
+\]
+In particular, T12 below proves the quantitative improvement
+\[
+\boxed{
+E_{\rm bound}-E_6>\frac1{50000},\qquad
+q_L[g_*]-E_6>
+q_L[g_*]-E_{\rm bound}+\frac1{50000}.
+}
+\tag{39}
+\]
+This improves the lower certificate for the same exact returned
+scalar. It is not a new positivity theorem or a change of source.
+
+**Coercivity proof.** Before T7 discards the higher Legendre energy,
+it establishes
+\[
+q_L[h]\ge\delta\|h\|^2+
+J_L[h]-\frac34\|h\|^2+\int_Iv_*h^2+\ell(h)^2.
+\]
+ASM's retained energy inequality is
+\[
+J_L[h]\ge\frac12\sum_{n=2,4,\ldots}H_n
+|\langle h,\phi_n\rangle|^2 .
+\]
+Since H_2/2=3/4, H_4/2=25/24 and H_6/2=49/40,
+and H_n increases, dropping the last two nonnegative terms
+proves C>=D_6. The argument holds on the closed form domain.
+The variational inverse comparison used in T7 gives (38);
+no invariance of the mode subspaces under C is assumed.
+
+The same argument also retains the entire diagonal comparison
+with entries d_n=delta+H_n/2-3/4. For every finite even N>=4,
+a finite outward expression is
+\[
+E^{(N)}
+=\sum_{\substack{2\le n\le N\\n\ {\rm even}}}\frac{r_n^2}{d_n}
++\frac{\|r_*-\sum_{2\le n\le N,\ n\ {\rm even}}r_n\phi_n\|^2}
+ {d_{N+2}},
+\qquad s_L\ge q_L[g_*]-E^{(N)}.
+\tag{40}
+\]
+These expressions decrease under refinement; E^(4)=E_6.
+The inequality is derived using a bounded, finitely stepped
+comparison operator, so no unproved operator-domain assertion
+for a new trial or an unbounded inverse product is needed.
+The full diagonal comparison has form domain given by the
+weighted coefficient sum; source-form domination puts every
+source-form vector in that domain. No convergence rate for
+unweighted source residuals is claimed.
+
+## BRT-T12. The endpoint logarithm forces a quantitative sixth-mode gain
+
+At the fixed window,
+\[
+\boxed{r_6=\langle r_*,\phi_6\rangle<-\frac1{200}.}
+\tag{41}
+\]
+
+**Exact logarithmic reading.** For even n>=2, elementary
+Legendre integration gives
+\[
+I_n:=\int_0^1P_n(s)\left[-\frac14\log(1-s^2)\right]ds
+=\frac1{2n(n+1)}.
+\]
+For completeness, multiply the Legendre equation
+((1-s^2)P_n')'+n(n+1)P_n=0 by log(1-s^2)
+and integrate with an endpoint cutoff. The boundary term tends
+to zero; integration by parts reduces the logarithmic integral
+to -2 integral_0^1 s P_n'(s) ds / [n(n+1)].
+For even n>=2, integral_0^1 P_n=0 and P_n(1)=1, giving
+integral_0^1 P_n log(1-s^2)=-2/[n(n+1)].
+This proves the displayed I_n.
+
+The two applications of the recurrence for sP_n give
+\[
+s^2P_6=\frac{56}{195}P_8+
+\left(\frac{49}{195}+\frac{36}{143}\right)P_6+
+\frac{30}{143}P_4.
+\]
+Consequently
+\[
+\begin{aligned}
+\int_0^1(1-s^2)P_6(s)w(s)\,ds
+&=\frac1{84}-\frac{56}{195\cdot144}
+-\left(\frac{49}{195}+\frac{36}{143}\right)\frac1{84}
+-\frac{30}{143\cdot40}\\
+&=-\frac1{756},\\
+\langle\phi_6,w_Lg_*\rangle&=-\frac{\sqrt{13}}{504}.
+\end{aligned}
+\tag{42}
+\]
+Here w(s)=-log(1-s^2)/4.
+
+**Remaining source terms.** In (26), the scalar multiple of g_*
+and J_op g_* have degree at most two. The constant and u^2
+parts of j give polynomials of degree at most two. The u part
+gives the polynomial V of degree four displayed in T8.
+All of them are orthogonal to phi_6. Hence
+\[
+\langle\phi_6,G_\Gamma g_*\rangle
+=-\frac{\sqrt{13}}{504}
+-\frac12\int_I\int_I\phi_6(x)R_0(|x-y|)g_*(y)\,dy\,dx.
+\]
+Because ||phi_6||_1<=sqrt(2L), exactly the same remainder bound
+(25) gives absolute error at most 7/6000.
+
+The pole error is less than 1/12500 by the proof of (30):
+phi_6 is orthogonal to the constant and quadratic terms,
+||phi_6||_1<=sqrt(2L)<1, and p_*<1. No sharper Taylor
+remainder is needed. The Omega term and mean subtraction vanish
+in this reading.
+
+The actual prime term is bounded by the same endpoint-cap
+integration as (31), now with the normalization sqrt(13):
+\[
+\left|\frac{a_2}{2}
+\langle\phi_6,g_*(\cdot-u_2)+g_*(\cdot+u_2)\rangle\right|
+\le\frac{3a_2\sqrt{13}}4d_2^2
+<\frac{3\sqrt{13}}{20000}<\frac3{5000}.
+\]
+The bound |P_6(s)|<=1 used here follows, for example, by
+expanding the polynomial identity
+P_6(s)=pi^{-1} integral_0^pi
+(s+i sqrt(1-s^2) cos(theta))^6 dtheta.
+The integrand's base has modulus at most one on [-1,1];
+the identity itself follows by the finite binomial expansion.
+No numerical evaluation is involved.
+
+Since sqrt(13)>18/5,
+\[
+r_6<
+-\frac1{140}+\frac7{6000}+\frac1{12500}+\frac3{5000}
+=-\frac1{140}+\frac{277}{150000}
+<-\frac1{200}.
+\]
+The last inequality uses 277/150000<3/1400.
+This proves (41).
+
+**Quantitative inverse-bound reduction.** Subtract the two
+explicit comparison expressions:
+\[
+E_{\rm bound}-E_6
+=\left(\frac1{\delta_4}-\frac1{\delta_6}\right)
+ \|R_6r_*\|^2 .
+\]
+Now delta_6-delta_4=11/60, delta_4<3/8 and delta_6<9/16.
+Thus
+\[
+\frac1{\delta_4}-\frac1{\delta_6}
+>\frac{11/60}{27/128}=\frac{352}{405}>\frac45,
+\qquad
+\|R_6r_*\|^2\ge r_6^2>\frac1{40000}.
+\]
+Their product proves (39). The endpoint logarithm has supplied
+a concrete nonzero residual reading and a strict quantified
+improvement; residual memory has not been set to zero.
+
+**Assessment of the full lower certificate.** The improvement
+does not rescue the old conservative trial margin. T8 still gives
+\[
+E_6\ge\frac{r_4^2}{\delta_4}>
+\frac9{10000\delta_4}>\frac9{5000}.
+\]
+Therefore the explicitly assessed conservative lower bound obeys
+\[
+\boxed{
+\frac{34733}{24000000}-E_6<
+-\frac{8467}{24000000}<0.
+}
+\tag{43}
+\]
+This is a failed sufficient lower certificate, not a negative
+upper bound for s_L. Neither the sign of q_L[g_*]-E_6 nor the
+sign of s_L is established. Even refining all degrees above four
+in (40) leaves this same obstruction when paired only with the
+trial margin (14), because the degree-four denominator is unchanged.
+Further work must improve the degree-four inverse treatment,
+the proved trial-value margin, or the admitted trial together with
+its complete residual penalty. Merely refining degrees >=6 cannot
+make that particular margin pass.
+
+**Gate accounting.** Closed here: an explicit source-specific
+reduction exceeding 1/50000 in the inverse-error upper bound,
+and the assessment that this refinement still cannot pass with
+the current conservative trial margin. Open: the first-prime
+returned scalar's sign and all-width positivity. No new independent
+assumption is added. These are written derivations, not independently
+validated certificates; no simulation, scientific computation,
+certificate replay, independent agent or workflow dispatch is used.
+
 ## Scope and continuation
 
 The established outputs are an explicit boundary-selected correction,
 its exact overlap polynomial, the strict prime penalty bound (7),
 a bounded full source column, the positive trial bound (14), and the
 stronger mode-resolved residual certificate (21), and the proved
-failure of the specific threshold (22) for this trial. T9--T10 add a proof that finite polynomial corrections cannot make the exact residual vanish, with an explicit endpoint-preserving quartic family. This is not a quantitative positivity bound.
+failure of the specific threshold (22) for this trial. T9--T10 add a proof that finite polynomial corrections cannot make the exact residual vanish, with an explicit endpoint-preserving quartic family. T11--T12 then use the explicit endpoint logarithm to prove a sixth-mode residual below -1/200 and reduce the same inverse-error upper bound by more than 1/50000. The refined conservative certificate still fails by (43); this is not a positivity closure.
 No new positive source interval is claimed. DWE's previously proved
 unrestricted interval remains unchanged.
 
