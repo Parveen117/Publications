@@ -2,35 +2,36 @@
 
 Monty · 18 October 2026.
 
-Written continuation through BRT-T31, based on branch head
-6263c9092a0ae07ba20f91d80371b7478aaaa61b.
+Written continuation through BRT-T35, based on branch head
+a1318c974a291ce220f86d448d79ef5377403167.
 The latest full-family result is
 \[
 \boxed{
-0<L\le\frac{351}{1000}
+0<L\le\frac{44}{125}
 \quad\Longrightarrow\quad
-q_L[g]\ge\frac1{50000}\|g\|^2
+q_L[g]\ge\frac1{130000}\|g\|^2
 \quad(g\in D_L).
 }
 \]
-On 7/20<=L<=351/1000, the returned scalar exceeds 3/80000.
-T28 sharpens the complete Gamma-remainder upper bound.
-T29 establishes boundary absorption and prime-column bounds
-for the larger caps d_L<1/39. T30 controls the full residual
-on the wider band. T31 subtracts that penalty from a newly
-justified trial-value lower bound.
+On 7/20<=L<=44/125, the returned scalar exceeds
+607/45000000>1/75000. T32 keeps the positive scalar derivative
+in the mean-zero comparison and justifies the larger caps.
+T33 integrates their affine profile to bound the complete
+prime column. T34 extracts more positive Gamma energy from
+the actual large-shift overlap. T35 combines these estimates
+with every residual mode before deriving the source sign.
 
-The stronger T27 margin 1/25000 remains valid through
-7001/20000. DWE's margin 1/1700 also remains available
-on its smaller interval. No mean-zero or cosh-neutrality
+The stronger prior margins remain valid: 1/50000 through
+351/1000, 1/25000 through 7001/20000, and DWE's
+1/1700 on its smaller interval. No mean-zero or cosh-neutrality
 restriction is imposed on these full-family conclusions.
 
 Earlier sections preserve their historical trials, failed
 sufficient bounds, observer/transport audits and intermediate
-intervals. The constants formerly proved only for d_L<1/50
-are not extrapolated: T28--T31 establish new estimates
-on the enlarged band. The particular nonpolynomial test (93)
-remains unassessed and is not needed for the current result.
+intervals. The new estimates are established throughout the
+enlarged band, without extrapolating the old cap constants.
+The particular nonpolynomial test (93) remains unassessed
+and is not needed for the current result.
 
 The actual prime-2 term, all low-mode couplings and the complete
 nonzero logarithmic residual remain in the estimates.
@@ -3769,27 +3770,383 @@ No new independent assumption is added. No independent
 certification, scientific computation, numerical simulation,
 certificate replay, subagent or workflow dispatch is performed.
 
+## BRT-T32. Sharper scalar drift retains the inverse comparison through 44/125
+
+For T32--T35 put
+\[
+L_0=\frac7{20},\qquad L_2=\frac{44}{125},
+\qquad 0\le h=L-L_0\le\frac1{500}.
+\]
+Keep the same admitted normalized quartic p_L from T23,
+the actual source T_L and residual r_L=Q_0^(L)T_Lp_L.
+All comparisons below apply on this entire band.
+
+Only prime 2 is active: log2<2L_0 and
+2L_2=88/125<1<log3. Also L_2<log2, so the prime caps
+remain disjoint. Their normalized width satisfies
+\[
+d_L=\frac{2L-\log2}{L}
+<\frac{109}{3520}<\frac1{32}.
+\]
+These are newly justified caps, not an extrapolation of
+the former 1/39 cap bound.
+
+### Boundary absorption
+
+Use the increasing difference W(t)=w(t)-t/(4-2t) from T29.
+On a prime cap, |x|/L>31/32. At t_0=(31/32)^2,
+\[
+1-t_0=\frac{63}{1024},\qquad
+\frac{t_0}{4-2t_0}=\frac{961}{2174}<\frac49.
+\]
+Since log(1+y)>y/(1+y) for y>0,
+\[
+W(t_0)>
+\log2+\frac14\log(64/63)-\frac49
+>\frac{6931}{10000}+\frac1{256}-\frac49
+>\frac14.
+\]
+Thus, using a_2/2<1/4, the same actual-prime absorption
+w_L-(a_2/2)1_(mathcal C_L)>=v_L holds on the wider caps.
+Away from the caps it follows from W>=0. This retains the
+signed prime before forming the mean-zero comparison.
+
+### The scalar loss is less than 2h
+
+The scalar in T22 is
+\[
+B_*(L)=\frac{\Omega_0}{2}+F(2L)+\frac12\log2
++\frac{47L}{96}-\frac{5L^3}{36}.
+\]
+Keep its positive polynomial derivative when bounding its loss.
+Since k(2L)<100/91 and L^2<1/8,
+\[
+B_*'(L)
+=-2k(2L)+\frac{47}{96}-\frac{5L^2}{12}
+>-\frac{200}{91}+\frac7{16}>-2.
+\]
+Consequently B_*(L)+3/4>=delta-2h. Retaining T13's
+higher Legendre and boundary readings gives
+C_L>=K_L-2hI, with K_L expressed in the width-L basis.
+The matrix slack K_L>=D_L+I/200 proved in T29 is
+independent of L. Therefore
+\[
+\boxed{
+C_L\succeq\mathcal D_L+\frac1{1000}I
+\quad(L_0\le L\le L_2).
+}
+\tag{140}
+\]
+Indeed 1/200-2/500=1/1000. The same form-core argument
+extends this bound to the complete mean-zero form domain.
+No continuity in operator norm of prime translation is assumed.
+
+### The full Gamma and pole upper bounds persist
+
+For u<=2L_2, one still has u^2<1/2 and u<71/100.
+Every premise of the coefficient proof of (129) therefore
+holds on this larger displacement interval. In particular
+R_0(u)<1/800 and
+\[
+J_R(L)<\frac1{6250}+\frac{2h}{800}
+\le\frac{33}{200000}<\frac1{6000}.
+\]
+It follows exactly as in (131) that the complete remainder
+column obeys
+\[
+\|Q_0^{(L)}\mathcal R_Lp_L\|_{\mathcal D_L^{-1}}
+<\frac{11}{10000}.
+\]
+The pole proof also retains all its premises:
+L^2<1/8, sqrt(2L)<6/7, cosh(L/2)<64/63, positivity
+of the unchanged shape, and its exact second moment.
+Hence the full pole-correction norm remains below 1/6000.
+The lower kernel bound (122) remains valid as well.
+These bounds have been checked on the enlarged band;
+their old stated ranges are not silently extended.
+
+## BRT-T33. Integrated cap bounds control the complete prime column
+
+For the actual cap polynomial F_c and 0<=t<=1/32,
+\[
+0<F_c(t)\le A+Bt,\qquad A=\frac2{35},\quad B=\frac{11}{7}.
+\]
+To prove the affine bound, the coefficient after factoring
+out t is at most
+10/7+39/(14*32)+7/(8*32^3)<11/7.
+Use the cap integrals themselves, instead of replacing
+the whole cap by its maximum.
+
+The actual prime form satisfies
+\[
+\begin{aligned}
+a_2C_{p_L}(\log2)
+&<\frac14\left(\frac{A^2}{32}
++\frac{AB}{32^2}+\frac{B^2}{6\cdot32^3}\right)\\
+&=\frac14\left(\frac1{9800}+\frac{11}{125440}
++\frac{121}{9633792}\right)
+<\frac{51}{1000000}.
+\end{aligned}
+\]
+The three fractions inside the parentheses are respectively
+less than 103/1000000, 88/1000000 and 13/1000000.
+
+For the full prime column define the two upper integrals
+\[
+\begin{aligned}
+I_1&=\int_0^{1/32}(A+Bt)\,dt
+=\frac1{560}+\frac{11}{14336}<\frac{13}{5000},\\
+I_2&=\int_0^{1/32}(A+Bt)^2\,dt
+=\frac1{9800}+\frac{11}{125440}+\frac{121}{4816896}
+<\frac{216}{1000000}.
+\end{aligned}
+\]
+For I_1, bound the two terms by 9/5000 and 4/5000.
+For I_2, bound them by 41/400000, 11/125000 and
+51/2000000, whose sum is 216/1000000.
+
+Disjointness of the caps and a_2<1/2 give
+\[
+\|Pp_L\|^2<\frac{I_2}{16},\qquad
+|\langle Pp_L,\phi_n^{(L)}\rangle|
+<\frac{\sqrt{2n+1}}4 I_1\quad(n=2,4).
+\]
+Using the tail weight 2 and adding the excess low-mode
+weights, as in (107), yields
+\[
+\begin{aligned}
+\|Q_0^{(L)}Pp_L\|_{\mathcal D_L^{-1}}^2
+&<\frac{I_2}{8}+\frac{53}{24}I_1^2\\
+&<\frac{27}{1000000}+\frac{8957}{600000000}
+=\frac{25157}{600000000}\\
+&<\frac{25350}{600000000}
+=\left(\frac{13}{2000}\right)^2.
+\end{aligned}
+\]
+Thus the two distinct estimates are
+\[
+\boxed{
+a_2C_{p_L}(\log2)<\frac{51}{1000000},\qquad
+\|Q_0^{(L)}Pp_L\|_{\mathcal D_L^{-1}}<\frac{13}{2000}.
+}
+\tag{141}
+\]
+The second includes every prime-column tail mode. Its bound
+is smaller than (134)'s 69/10000 despite the wider caps,
+because the affine profile was integrated before estimating
+the norm. The small prime form has not been substituted
+for the full column.
+
+## BRT-T34. The actual quartic overlap restores more positive Gamma energy
+
+For this same trial, a stronger lower bound than (123) is
+\[
+\boxed{
+\langle p_L,\mathcal R_Lp_L\rangle>\frac9{100000}
+\quad(L_0\le L\le L_2).
+}
+\tag{142}
+\]
+This replaces the former 1/16000 lower bound for the same
+contribution; the two are not added together.
+
+Write N=13954/11025>5/4. As before, for L<=u<=2L,
+C_(p_L)(u)<=N/2. On the shorter range 3L/2<=u<=2L,
+both arguments in the overlap have absolute normalized
+coordinate at least 1/2, and the overlap length is at most L/2.
+The shape f is positive and decreasing in |s|, with
+\[
+f(1/2)=\frac{4861}{4480}<\frac{11}{10}.
+\]
+It follows directly that
+\[
+0\le C_{p_L}(u)\le\frac{121}{400}
+<\frac5{16}<\frac N4
+\quad(3L/2\le u\le2L).
+\]
+Thus N-C is at least N/2 on [L,2L], with an additional
+N/4 on [3L/2,2L]. Outside these ranges it remains
+nonnegative. Integrate the lower kernel polynomial (122):
+\[
+\begin{aligned}
+\langle p_L,\mathcal R_Lp_L\rangle
+&\ge N c_R(L)
++\frac N4\int_{3L/2}^{2L}
+\left(\frac7{15360}u^3+\frac5{2048}u^4\right)\,du\\
+&=N c_R(L)
++N\left(\frac{245L^4}{786432}
++\frac{781L^5}{262144}\right).
+\end{aligned}
+\]
+All three coefficients increase with L. At L_0,
+\[
+c_R(L_0)=\frac{689087}{13107200000}
+>\frac{21}{400000},
+\]
+since 689087>688128=21*32768. Also, using N>5/4,
+\[
+\begin{aligned}
+N\frac{245L_0^4}{786432}
+&>\frac{2941225}{503316480000}>\frac{29}{5000000},\\
+N\frac{781L_0^5}{262144}
+&>\frac{65631335}{3355443200000}>\frac{39}{2000000}.
+\end{aligned}
+\]
+Consequently the entire remainder contribution is greater than
+\[
+\frac{21}{320000}+\frac{29}{5000000}+\frac{39}{2000000}
+=\frac{3637}{40000000}>\frac9{100000}.
+\]
+This proves (142) by integrating the retained actual-kernel
+lower bound against a proved overlap loss. It neither
+changes the source nor assumes that its residual vanishes.
+
+## BRT-T35. The complete returned scalar is positive through 44/125
+
+The exact main-column readings (114) still satisfy the
+derivative bounds from T30:
+0<R_2'(L)<7/4 and -3/10<R_4'(L)<0.
+Their proof uses L<3/8 and R_0(2L)<1/800, both valid here.
+For h<=1/500, the same initial enclosures give
+\[
+-\frac{57}{100000}<R_2(L)<\frac{371}{100000},
+\qquad
+-\frac{53}{20000}<R_4(L)<0.
+\]
+Since sqrt(5)>11/5,
+\[
+|r_{L,2}^{(0)}|<\frac{17}{10000},\qquad
+|r_{L,4}^{(0)}|<\frac9{10000}.
+\]
+Every logarithmic tail coefficient remains in the unchanged
+sequence (103)--(104). Its norm is below 357/100000;
+the additional sixth coefficient is still below 1/600000
+because L^2<1/8. Therefore
+\[
+\begin{aligned}
+\|r_L^{(0)}\|_{\mathcal D_L^{-1}}^2
+&<\frac{20}{3}\left(\frac{17}{10000}\right)^2
++\frac{10}{3}\left(\frac9{10000}\right)^2
++2\left(\frac{2143}{600000}\right)^2\\
+&=\frac{17092898}{360000000000}
+<\left(\frac{69}{10000}\right)^2.
+\end{aligned}
+\tag{143}
+\]
+Restore the full Gamma remainder, prime column and pole
+correction, using T32 and (141):
+\[
+\|r_L\|_{\mathcal D_L^{-1}}
+<\frac{69}{10000}+\frac{11}{10000}
++\frac{13}{2000}+\frac1{6000}
+=\frac{11}{750}.
+\]
+Inverse form order from (140) gives the complete penalty bound
+\[
+\boxed{
+\langle r_L,C_L^{-1}r_L\rangle<\frac{121}{562500}.
+}
+\tag{144}
+\]
+
+### Trial value with the same enlarged caps
+
+Let mathcal B_2(L) denote (124) with its constant prime
+allowance 27/1000000 replaced by 51/1000000.
+Equation (141) justifies this lower comparison on the whole
+new band. Its derivative is still (125); the argument of
+T31 still gives mathcal B_2'(L)>-1/50, since the endpoint
+remainder is bounded above by 1/800.
+
+At L_0, mathcal B_2 exceeds 1013/5000000-24/1000000.
+Add (142) once, then integrate the derivative bound:
+\[
+\boxed{
+q_L[p_L]>
+\frac{1013}{5000000}-\frac{24}{1000000}
++\frac9{100000}-\frac h{50}
+\ge\frac{1143}{5000000}.
+}
+\tag{145}
+\]
+Every signed prime and endpoint-remainder loss is retained.
+Subtract (144) from (145) in the exact returned-scalar identity:
+\[
+\boxed{
+s_L>\frac{1143}{5000000}-\frac{121}{562500}
+=\frac{607}{45000000}>\frac1{75000}
+\quad(L_0\le L\le L_2).
+}
+\tag{146}
+\]
+
+### Full-family bound
+
+The resulting unrestricted source estimate is
+\[
+\boxed{
+0<L\le\frac{44}{125},\quad g\in D_L
+\quad\Longrightarrow\quad
+q_L[g]\ge\frac1{130000}\|g\|^2.
+}
+\tag{147}
+\]
+There is no mean-zero or cosh-neutrality restriction.
+
+Indeed (140) implies C_L>2I/31, and (144) gives
+\[
+\|C_L^{-1}r_L\|^2
+<\frac{3751}{1125000}<\left(\frac2{25}\right)^2.
+\]
+The original return
+rho_L=C_L^(-1)r_L-(p_L-phi_0^(L)) therefore still has norm
+below 3/5. For g=c phi_0^(L)+h_0 and z=h_0+c rho_L,
+the same exact square completion gives
+\[
+q_L[g]=s_Lc^2+\|C_L^{1/2}z\|^2,\qquad
+\|g\|^2\le(43/25)c^2+2\|z\|^2.
+\]
+Now (43/25)/130000<1/75000 and 2/130000<2/31,
+proving (147) on [L_0,L_2]. Support inclusion and the retained
+source-form closure give every smaller width.
+
+The stronger margins 1/50000 through 351/1000 and
+1/25000 through 7001/20000 remain valid, as does the
+earlier DWE margin on its smaller interval. The new wider
+interval is obtained by accepting a smaller uniform margin,
+not by claiming that the source margin increases with width.
+
+**Scope and gate accounting.** The working written estimates
+close positivity through 44/125. The full source and nonzero
+residual have been assessed on that same band: integrated
+prime caps, a sharper mean-zero scalar drift, and the actual
+large-shift overlap supply the improvement. Positivity beyond
+this finite interval and all-width positivity/RH remain open.
+No new independent assumption is added. No independent
+certification, scientific computation, numerical simulation,
+certificate replay, subagent or workflow dispatch is performed.
+
 ## Scope and continuation
 
-The current unrestricted interval is (139):
-0<L<=351/1000, with margin 1/50000. Equation (138) gives
-s_L>3/80000 on the upper band [7/20,351/1000].
-The stronger margin 1/25000 through 7001/20000 and
-DWE's 1/1700 on L<=1/4+1/47600 are retained.
+The current unrestricted interval is (147):
+0<L<=44/125, with margin 1/130000. Equation (146) gives
+s_L>607/45000000>1/75000 on the upper band [7/20,44/125].
+The stronger margins 1/50000 through 351/1000,
+1/25000 through 7001/20000, and DWE's 1/1700 on
+L<=1/4+1/47600 are retained.
 
 The advance has been assessed through the complete source
-return. T28 isolates the first two exact kernel coefficients
-before bounding the remaining series. This reduces the
-Gamma-remainder column bound to 11/10000. T29 controls
-the larger prime caps using the monotone difference w_L-v_L,
-and retains a positive mean-zero comparison.
-T30 allows the larger prime-column and low-mode bounds,
-includes the full logarithmic tail, and obtains an inverse
-penalty below 1/5100. T31 keeps the signed prime allowance
-and endpoint-remainder loss in the source-value estimate;
-its resulting trial lower bound exceeds 2341/10000000.
+return. T32 lowers the mean-zero scalar width loss from 4h
+to 2h and proves boundary absorption for caps d_L<1/32.
+T33 integrates the cap profile before bounding the complete
+prime column, obtaining 13/2000 on this wider band.
+T34 uses the actual quartic's smaller overlap at large shifts
+to improve its positive Gamma contribution from 1/16000
+to 9/100000; the old contribution is replaced, not added twice.
+T35 obtains a complete inverse penalty below 121/562500
+and a trial lower value above 1143/5000000.
 
-The new constants are proved on [7/20,351/1000].
+The new constants are proved on [7/20,44/125].
 Further enlargement requires a quantitative reassessment
 of these same actual source and residual terms. They are not
 silently extrapolated, and any further active prime powers
@@ -3818,6 +4175,6 @@ The commit uses [skip ci]. The PR remains draft, stacked
 on #137, and unmerged.
 
 **Gate accounting.** Unrestricted positivity through
-351/1000 is closed in the working written proof.
+44/125 is closed in the working written proof.
 Positivity beyond that interval and all-width positivity/RH
 remain open. No new independent assumption is added.

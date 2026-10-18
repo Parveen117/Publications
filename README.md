@@ -1,19 +1,22 @@
 # Publications
 
 Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
-BRT-T28--T31 extend the working written result to L<=351/1000:
-every admitted real even profile satisfies q_L[g] >= ||g||^2/50000.
-On [7/20,351/1000], the returned scalar exceeds 3/80000.
+BRT-T32--T35 extend the working written result to L<=44/125:
+every admitted real even profile satisfies q_L[g] >= ||g||^2/130000.
+On [7/20,44/125], the returned scalar exceeds
+607/45000000 > 1/75000.
 There is no mean-zero or cosh-neutrality restriction.
-A sharper Gamma-remainder bound and newly proved larger-cap
-estimates control the complete inverse residual by 1/5100,
-while the actual trial value exceeds 2341/10000000 on that band.
+Integrated prime-cap bounds and sharper mean-zero scalar drift
+control the complete inverse residual by 121/562500.
+A smaller actual overlap at large shifts restores positive Gamma
+energy; the full trial value exceeds 1143/5000000.
 The signed prime-2 column, low-mode couplings and infinite
 logarithmic tail remain included.
-The stronger prior margin 1/25000 through 7001/20000 is retained.
+The stronger margins 1/50000 through 351/1000 and
+1/25000 through 7001/20000 are retained.
 Earlier sections preserve their failed bounds and intermediate results.
-All-width positivity and RH remain open; no new independent
-assumption is added.
+Positivity beyond the new interval and all-width positivity/RH
+remain open; no new independent assumption is added.
 Written derivations only; no independent certification, scientific
 computation, agent, numerical simulation, replay or workflow dispatch.
 
