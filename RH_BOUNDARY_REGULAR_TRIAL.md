@@ -1625,6 +1625,287 @@ s_(7/20)>=0 and all-width positivity. No new independent assumption
 or new gate is introduced. No scientific computation, simulation,
 certificate replay, subagent or workflow dispatch is performed.
 
+## BRT-T15. Retained scalar surplus strengthens the same inverse comparison
+
+The trial and complete residual remain g_* and r_*. T14's
+sharper tail bound also applies to the mean-zero comparison:
+the coefficient of F(2L) there is the norm squared. In addition,
+GRR-T2's uniform remainder was not consumed in constructing
+T13's K. Thus, on the source mean-zero form domain,
+\[
+C\succeq K+\sigma I,\qquad
+\sigma=\frac{989}{8100000}+\frac1{40000}
+       +\frac{91}{2304000}>\frac{11}{60000}.
+\tag{73}
+\]
+The first two terms are the scalar tail surplus in T14; the last
+is GRR's uniform remainder at L=7/20. The profile-specific
+remainder in (66) is used for the trial value only. It is not
+inserted as a uniform mean-zero estimate.
+
+For the displayed rational comparison,
+989/8100000>61/500000 and 91/2304000>39/1000000.
+Consequently sigma>93/500000>11/60000.
+Define the bounded positive comparison
+\[
+\widehat K=K+\frac1{6000}I.
+\]
+Then
+\[
+\boxed{C\succeq\widehat K+\frac1{60000}I.}
+\tag{74}
+\]
+This retains a strict source surplus after strengthening K.
+
+Put epsilon=1/6000, a_+=a+epsilon, d_+=d+epsilon and
+kappa=delta_6+epsilon, using T13's a,d,c. The improved complete
+inverse bound is
+\[
+\begin{aligned}
+\widehat E
+&=\langle r_*,\widehat K^{-1}r_*\rangle\\
+&=\frac{d_+r_2^2-2cr_2r_4+a_+r_4^2}{a_+d_+-c^2}
+ +\frac{\|R_6r_*\|^2}{\kappa},\\
+s_L&\ge q_L[g_*]-\widehat E.
+\end{aligned}
+\tag{75}
+\]
+For this actual residual its improvement is quantitative:
+\[
+\boxed{E_{\rm bdry}-\widehat E>\frac1{2000000}.}
+\tag{76}
+\]
+
+Indeed c<1/15, delta<1/15, and d<3/7. The two row sums
+of the positive-entry matrix A are bounded above by
+111/420 and 52/105, respectively, both less than 1/2.
+Since delta_6>1/2, it follows that
+||K||=delta_6<27/50 and ||widehat K||<11/20.
+The shifted comparison operators commute with each other;
+no commutation with C is asserted. Their exact inverse
+difference and T8 give
+\[
+\begin{aligned}
+E_{\rm bdry}-\widehat E
+&=\epsilon\langle r_*,K^{-1}\widehat K^{-1}r_*\rangle\\
+&\ge\frac{\epsilon}{\|K\|\,\|\widehat K\|}\|r_*\|^2
+>\frac{1}{6000}\frac{1000}{297}\frac9{10000}
+=\frac1{1980000}>\frac1{2000000}.
+\end{aligned}
+\]
+
+This scalar improvement still does not rescue the proved trial
+margin. Since d<667/1575 and
+1/6000<8/1575, one has d_+<3/7. Completing the same mixed
+square as in (50) proves
+\[
+\boxed{
+\widehat E\ge\frac{r_4^2}{d_+}>\frac{21}{10000},
+\qquad
+m_{\rm new}-\widehat E<-\frac{4633}{16000000}.
+}
+\tag{77}
+\]
+Thus (76) is not being presented as a sufficient resolution.
+The bound (77) concerns the specific proved margin and comparison,
+not the sign of q_L[g_*]-widehat E or of s_L.
+
+## BRT-T16. An admitted nonpolynomial correction improves the full certificate
+
+Here a correction is selected by the complete lower certificate,
+rather than by minimizing the trial value alone. Its domain is
+proved before applying the source operator a second time.
+
+### Domain of the source-adapted direction
+
+Every real even function v that is Holder continuous of exponent
+1/2 on the closed interval, then extended by zero, belongs to
+D_L and to Dom(T_L). Its source column is ASM (16), interpreted
+almost everywhere.
+
+To see form-domain membership, a bounded Holder profile has
+\[
+\|v-T_uv\|_2^2=O(u)\qquad(u\downarrow0):
+\]
+the interior Holder difference gives O(u), and the endpoint
+strips created by zero extension also give O(u). This is
+integrable against k(u)=O(1/u). The assertion concerns the
+declared closure domain, not merely a finite formal integral:
+cut v off in strips of width e at the endpoints. For the removed
+part v_e, the cutoff Lipschitz bound and the Holder bound give
+\[
+\|v_e\|_2^2=O(e),\qquad
+\|v_e-T_uv_e\|_2^2\le C\min(u,e).
+\]
+For u<=e, the cutoff difference contributes O(u^2/e)<=O(u);
+the internal profile difference and the endpoint-crossing strips
+also contribute O(u). For u>=e use the support/norm bound.
+Therefore its Gamma energy is O(e(1+|log e|)), tending to zero.
+Each cutoff profile can then be approximated by even smooth
+compact profiles. Mollification converges in L2; its uniform
+Holder bound supplies an integrable dominating translation
+estimate near u=0. This proves membership in D_L.
+
+In ASM's column formula, the interior singular integral is
+bounded by a constant times
+integral_0^(2L) u^(-1/2) du. The boundary term is a bounded
+profile times F(L-x)+F(L+x), which belongs to L2.
+The pole and the finite prime translations are bounded in L2.
+Thus the formula defines a vector in H_L. Polarization against
+the smooth core and form-core density prove membership in
+Dom(T_L), including identification of this vector as T_Lv.
+
+The particular W and r_* in (10)--(12) have this Holder
+regularity. Near either endpoint, write
+F(t)=-(1/2)log t plus an analytic function. Since g_* vanishes
+linearly, the only nonsmooth boundary products have the form
+t log t times a smooth function, which is Holder of every
+exponent below one. Also j is analytic through its removable
+value at zero, so the remaining integral term in (10) is
+Lipschitz. The zero-extended translated g_* terms are Lipschitz.
+Mean subtraction preserves the Holder property.
+
+Define the concrete mean-zero correction direction
+\[
+\boxed{
+z=\widehat K^{-1}r_*
+=z_2\phi_2+z_4\phi_4+\kappa^{-1}R_6r_*,
+\quad
+\binom{z_2}{z_4}
+=\begin{pmatrix}a_+&c\\c&d_+\end{pmatrix}^{-1}
+ \binom{r_2}{r_4}.
+}
+\tag{78}
+\]
+This is a scalar multiple of r_* plus a finite polynomial.
+The preceding argument therefore proves
+\[
+z\in Q_0H_L\cap\operatorname{Dom}(T_L)
+\subset\operatorname{Dom}(C),\qquad Cz=Q_0T_Lz.
+\]
+T9's infinitely many residual coefficients also show that z is
+nonpolynomial. There is no assumed membership of an arbitrary
+logarithmic ansatz. Equation (78) uses only the explicit residual
+and the inverse of the proved bounded comparison, not C^{-1}.
+
+### Optimize the complete lower certificate on this direction
+
+Set
+\[
+\begin{gathered}
+E=\langle r_*,z\rangle=\widehat E,\qquad
+v=Cz-r_*,\\
+B=q_L[z]-E=\langle z,v\rangle,\qquad
+N=\langle v,\widehat K^{-1}v\rangle .
+\end{gathered}
+\tag{79}
+\]
+These quantities are finite by the domain proof. They are
+specified by the actual source integrals; the signed prime,
+the pole and all source couplings remain in Cz. They require
+no inverse of the unknown C.
+
+The retained strict surplus (74) gives the source-specific bound
+\[
+\boxed{
+B\ge\frac1{60000}\|z\|^2>0.
+}
+\tag{80}
+\]
+Here r_4 is nonzero by T8, so r_* and z are nonzero. It follows
+that v is nonzero, N>0, and
+\[
+\boxed{t_{\rm opt}=\frac{B}{B+N}\in(0,1),\qquad p_{\rm opt}=g_*-t_{\rm opt}z}
+\tag{81}
+\]
+is a specified admitted nonpolynomial trial with constant
+reading one. 
+For arbitrary real t write p_t=g_*-tz and r_t=r_*-tCz.
+Define its complete lower certificate by
+\[
+\mathcal L(t)=q_L[p_t]
+-\langle r_t,\widehat K^{-1}r_t\rangle.
+\]
+Then
+\[
+\boxed{
+\mathcal L(t)=q_L[g_*]-E+2tB-t^2(B+N).
+}
+\tag{82}
+\]
+In particular t_{\rm opt} is the unique maximizing step on this line and
+\[
+\boxed{
+s_L\ge\mathcal L(t_{\rm opt})
+=q_L[g_*]-\widehat E+\frac{B^2}{B+N}.
+}
+\tag{83}
+\]
+This is a strict improvement of the full lower certificate for
+the same returned scalar, with its exact gain displayed.
+In combination with (76), it improves the T13 certificate by
+more than 1/2000000, plus the strictly positive gain in (83).
+
+For a direct check, q_L[z]=E+B and Cz=r_*+v, so
+\[
+\begin{aligned}
+q_L[p_t]&=q_L[g_*]-2tE+t^2(E+B),\\
+\langle r_t,\widehat K^{-1}r_t\rangle
+&=E-2t(E+B)+t^2(E+2B+N).
+\end{aligned}
+\]
+Subtracting proves (82). This accounts for the entire residual,
+including its mixed terms. It does not infer improvement merely
+from a smaller q_L[p_t].
+
+There is also a precise comparison with trial-value minimization.
+Weighted Cauchy--Schwarz gives B^2<=EN. Therefore
+\[
+\boxed{
+t_{\rm opt}=\frac{B}{B+N}\le\frac{E}{E+B}=t_{\rm trial},
+}
+\tag{84}
+\]
+where t_trial minimizes q_L[p_t]. Equality requires v to be a
+scalar multiple of r_*; it is not assumed. This explains why
+minimizing the trial value is generally a different operation
+from maximizing a conservative lower certificate.
+
+### Quantitative result and unresolved sign
+
+Using the proved margin from T14, the new rigorous lower bound is
+\[
+\boxed{
+s_L>m_{\rm new}-\widehat E+\frac{B^2}{B+N}.
+}
+\tag{85}
+\]
+The correction gain is proved strictly positive and is defined
+by finite source quantities on a proved domain. Its magnitude
+has not been enclosed sufficiently to determine the sign of
+(85). In particular, (77) proves that the uncorrected expression
+is below -4633/16000000. The correction must recover the actual
+deficit widehat E-m_new, which is greater than that amount;
+a gain merely greater than zero does not suffice.
+
+This is a constructed certificate-improving step, not a new
+positivity theorem or a claimed successful window. No assertion
+is made that its complete residual vanishes. No residual
+component is discarded or required to vanish.
+
+**Gate accounting.** Established: the nonpolynomial direction's
+source-operator domain, a quantitative inverse-bound improvement
+greater than 1/2000000, and an explicit step maximizing and
+strictly improving the complete lower certificate on that
+direction. Assessed and failed: the strengthened inverse
+comparison paired with m_new before the correction, by (77).
+Unresolved: a sufficient magnitude for the gain in (85), the
+first-prime scalar's sign, and all-width positivity. The gain
+assessment is part of the same original sign obligation, not
+a new independent RH assumption. No scientific computation,
+numerical simulation, certificate replay, subagent or workflow
+dispatch is performed.
+
 ## Scope and continuation
 
 The established outputs are an explicit boundary-selected correction,
@@ -1633,6 +1914,7 @@ a bounded full source column, the positive trial bound (14), and the
 stronger mode-resolved residual certificate (21), and the proved
 failure of the specific threshold (22) for this trial. T9--T10 add a proof that finite polynomial corrections cannot make the exact residual vanish, with an explicit endpoint-preserving quartic family. T11--T12 then use the explicit endpoint logarithm to prove a sixth-mode residual below -1/200 and reduce the same inverse-error upper bound by more than 1/50000. The refined conservative certificate still fails by (43); this is not a positivity closure.
 T13 retains the boundary surplus in a coupled second/fourth-mode comparison and reduces the error upper bound by a further amount greater than 1/10000. Its full mixed-term assessment still fails with the current conservative trial margin, as (51) records.
+T14 improves the actual trial lower margin to 28967/16000000 but proves that its pairing with the current coupled inverse comparison still fails. T15 retains unused scalar source surplus and lowers that inverse bound by more than 1/2000000; its uncorrected margin certificate still fails. T16 proves the operator domain of a concrete nonpolynomial residual correction and derives the step that maximizes the full lower certificate on that direction, with exact positive gain B^2/(B+N). The size of that gain needed for positivity is not yet established.
 No new positive source interval is claimed. DWE's previously proved
 unrestricted interval remains unchanged.
 
