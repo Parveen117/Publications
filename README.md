@@ -1,13 +1,95 @@
 # Publications
 
-Latest RH development: [DWE-1 — quantified dilation extension of the positive source window](RH_DILATION_WINDOW_EXTENSION.md).
-GRR's full-family margin at L=1/4 gives an explicit small extension
-to L <= 1/4 + 1/47600, with margin 1/1700 and no neutral-moment
-restriction. The proof bounds the actual Gamma-energy and pole
-losses under norm-preserving dilation. The new interval is still
-below the first-prime threshold; the first-prime scalar sign and
-all-width positivity remain unproved. This is a quantitative
-continuity result, not a global closure argument.
+Latest RH continuation: [BRT-T60--T63 — complete-source positivity through L=11/20](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t60-an-exact-source-column-with-a-bounded-polynomial-remainder).
+
+The working computer-assisted result is **q_L[g] >= 10^(-11)||g||^2
+for every admitted real even g and every 0<L<=11/20**. It extends
+the earlier 1761/5000 endpoint; stronger earlier margins on their
+smaller intervals are retained.
+
+The actual returned sign at 11/20 is now supplied. T56--T59 bound
+the infinite complement; T60--T63 combine that bound with fixed
+rational trial columns, analytic kernel and cosh remainder bounds,
+the complete residual Gram, 220-digit directed arithmetic, and an
+exact rational positive-matrix witness. Both actual prime terms
+and all higher residual modes remain.
+
+The [reproducible packet](proof_lab/rh_l055/README.md) contains the
+standard-library verifier, fixed trial, full interval evidence and
+seven passing rejection controls. This is a new deterministic
+computation, not a replay of an earlier certificate. It is a working
+computer-assisted proof pending external review.
+
+**Still open:** the returned sign at L=3/4 and all-width positivity/RH.
+No RH proof or universal observer count is claimed. The earlier
+entries below record their status at their respective stages.
+
+Latest cross-programme written continuation:
+[RYM-1 — transfer the RH residual hierarchy to the actual Yang–Mills source](RH_YM_WEIGHTED_MEMORY_TRANSFER.md).
+At the same side-four lattice, theta=1/48 and complete 241-dimensional
+electric cut used by YM75, retaining the actual spin-one plaquette
+source at electric energy eight improves the bare gap enclosure from
+[0.49069036,3.00712209] to **[0.49072844,3.00712209]**.
+The full hidden inverse and every remaining source component are
+bounded; the proof is a written rational Schur-inertia argument.
+The note audits the current YM93 branch separately, distinguishes
+prime source weights from physical masses, and identifies why the
+Haar electric estimate cannot simply replace the vacuum-weighted
+conditional estimate. No new volume-uniform or continuum gap is claimed.
+No scientific computation, replay or workflow dispatch is performed.
+No new independent assumption is added.
+
+
+Previous RH development through T55: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
+BRT-T52--T55 make the positivity-transfer rule explicit.
+Prime-group containment alone gives no source sign.
+The actual seven-point prime comparison has a coherent
+edge-square factorization with one shared diagonal budget.
+
+At the same L=3/4 window, retaining the complete
+Legendre hierarchy replaces the uniform inverse-residual
+allowance 53 by 53 for degree 16, 40/3 for degree 18,
+and 8 for the entire remaining even tail.
+The first controlled comparison level propagates to
+all higher levels by a proved positive increment.
+The source is not assumed diagonal, and the inverse
+comparison requires no commutation.
+
+For the same admitted trial, the complete lower matrix
+improves by (119/3) r_18* r_18 + 45 R_(>=20)* R_(>=20).
+Every residual mode and mixed prime-memory term remains.
+The polynomial trial's improvement is positive definite;
+the improved source matrix's sign remains unproved.
+Attempting to retain only seven modes fails in this
+specific comparison: its degree-14 coefficient is below
+-1/25. This does not show a negative actual source.
+
+T48--T51 retain the joint prime norm below 59/100
+and the optimized Gamma comparison with its positive
+surplus. Returned source matrices at 11/20 and 3/4
+both remain unresolved.
+
+The unrestricted working written result from BRT-T39 remains
+L<=1761/5000, with q_L[g] >= ||g||^2/30000 for every
+admitted real even profile. On [7/20,1761/5000], the returned
+scalar exceeds 52751/900000000 > 7/120000.
+The stronger 1/25000 through 7001/20000 is retained.
+There is no mean-zero or cosh-neutrality restriction
+on these full-family conclusions.
+Earlier sections preserve their failed bounds and intermediate results.
+No new unrestricted interval or all-width positivity/RH
+is claimed; no new independent assumption is added.
+Written derivations only; no independent certification, scientific
+computation, agent, numerical simulation, replay or workflow dispatch.
+
+Preceding RH development: [DWE-1 — quantified dilation extension of the positive source window](RH_DILATION_WINDOW_EXTENSION.md).
+GRR's full-family margin at L=1/4 gives the smaller interval
+L <= 1/4 + 1/47600, with margin 1/1700 and no neutral-moment
+restriction. This stronger margin on that smaller interval is
+retained. DWE bounds the actual Gamma-energy and pole losses
+under norm-preserving dilation. Its historical first-prime
+status is superseded by BRT-T19--T21 above; all-width positivity
+remains open.
 Written derivations only; no scientific computation, independent
 agent, numerical certificate, replay or workflow dispatch.
 
