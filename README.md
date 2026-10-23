@@ -1,6 +1,38 @@
 # Publications
 
-Latest RH continuation: [BRT-T60--T63 — complete-source positivity through L=11/20](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t60-an-exact-source-column-with-a-bounded-polynomial-remainder).
+Latest RH continuation: [BRT-T64--T68 — complete-source positivity through L=3/4](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
+
+The working computer-assisted result is **q_L[g] >= 9*10^(-18)||g||^2
+for every admitted real even g and every 0<L<=3/4**, with the three
+active prime powers 2, 3, 4 at their actual weights. It closes the
+returned-sign question at 3/4 left open since BRT-T46 and extends the
+11/20 endpoint; stronger earlier margins on their smaller intervals
+are retained.
+
+Two independent complement routes certify the same sign: one through
+T53's three-prime graph comparison (eight retained modes), one through
+the new width-dependent comparison T64 that spends the Gamma boundary
+energy on the outer prime caps (fourteen retained modes). T65 encloses
+an explicit degree-22 profile with Rayleigh quotient 3.2*10^(-12),
+which is why no uniform inverse allowance could have closed this width
+and why the fixed minimizing-tail trials can. T66--T67 give the
+analytic bounds, the complete residual Gram charged level by level,
+and exact rational positive-matrix witnesses at shift 10^(-16).
+
+The [reproducible packet](proof_lab/rh_l075/README.md) contains the
+single standard-library verifier, five packet directories (both L=3/4
+routes, the L=3/4 near-null enclosure, an L=5/8 two-prime instance of
+T64, and a control that reproduces the L=11/20 witness byte for byte),
+all evidence files and passing rejection controls. These are new
+deterministic computations, not replays. The result is a working
+computer-assisted proof pending external review.
+
+**Still open:** widths beyond 3/4 (the same three prime powers up to
+(log 5)/2, then prime power 5), and all-width positivity/RH. No RH
+proof or universal observer count is claimed. The earlier entries
+below record their status at their respective stages.
+
+Previous RH development through T63: [BRT-T60--T63 — complete-source positivity through L=11/20](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t60-an-exact-source-column-with-a-bounded-polynomial-remainder).
 
 The working computer-assisted result is **q_L[g] >= 10^(-11)||g||^2
 for every admitted real even g and every 0<L<=11/20**. It extends

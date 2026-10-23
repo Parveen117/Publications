@@ -1,0 +1,13 @@
+{
+  "L": "3/4",
+  "active_prime_powers": [2, 3, 4],
+  "retained_modes": 8,
+  "kernel_degree": 200,
+  "cosh_terms": 12,
+  "complement": {"rule": "declared", "base_level": 8, "base_value": "2429/128000", "explicit_levels": 16,
+                 "source": "BRT-T53 (213)-(216) with BRT-T54 (217)-(218): d_j = 2429/128000 + (H_{2j}-H_16)/2, j>=8"},
+  "margin": "1/10000000000000000",
+  "rational_grid_digits": 24,
+  "rational_rounding_allowance": "1/10000000000000000000000",
+  "declared_family_bound": "1/100000000000000000000"
+}

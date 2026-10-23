@@ -1,34 +1,40 @@
-# BRT-1 — Full-source positivity through L=11/20
+# BRT-1 — Full-source positivity through L=3/4
 
-Monty · 18 October 2026. Updated 23 October 2026 through BRT-T63.
+Monty · 18 October 2026. Updated 23 October 2026 through BRT-T68.
 
 The current working computer-assisted result is
 \[
  \boxed{
- 0<L\le\frac{11}{20}
+ 0<L\le\frac34
  \quad\Longrightarrow\quad
- q_L[g]\ge10^{-11}\|g\|^2
+ q_L[g]\ge9.0\cdot10^{-18}\,\|g\|^2
  \quad(g\in D_L).
  }
 \]
 It covers the complete admitted real even family, with no neutral
-moment or finite-mode restriction. Earlier stronger margins on
-smaller intervals remain valid.
+moment or finite-mode restriction, and the three active prime
+powers 2, 3, 4 at their actual weights. Earlier stronger margins on
+smaller intervals remain valid; in particular q_L[g] >= 10^(-11)||g||^2
+for 0<L<=11/20 (T63).
 
-T56--T59 supply the boundary-weighted prime estimate and positive
-infinite complement. T60--T63 now certify the actual returned
-matrix at L=11/20 using fixed rational polynomial columns, analytic
-kernel remainder bounds, directed integration, and a separate exact
-rational matrix sign check. Both actual primes, the logarithmic
-boundary term and the complete infinite residual are retained.
+T56--T63 supplied the complement bound and the actual returned
+matrix at L=11/20. T64--T68 now do the same at L=3/4 by two
+independent complement routes (T53's three-prime graph comparison
+and the new width-dependent boundary-energy comparison T64), after
+T65 locates the returned-sign question at this width below
+10^(-11). Both actual prime terms, the prime power 4, the
+logarithmic boundary term and the complete infinite residual are
+retained.
 
-The [reproducible packet](proof_lab/rh_l055/README.md) contains the
-standard-library verifier, fixed trial and 220-digit evidence.
-This is a new deterministic computation. Historical sections below
-retain their status at the time of writing; their statements that
-11/20 is unresolved are superseded by T60--T63.
+The [reproducible packet](proof_lab/rh_l075/README.md) contains the
+standard-library verifier, the fixed trials, the configuration of
+each run and the 220-digit evidence. The L=11/20 packet
+[proof_lab/rh_l055](proof_lab/rh_l055/README.md) is unchanged and is
+reproduced by the new verifier as a control. Historical sections
+below retain their status at the time of writing; their statements
+that 11/20 or 3/4 is unresolved are superseded by T60--T68.
 
-The L=3/4 returned sign and all-width positivity/RH remain open.
+Widths beyond 3/4 and all-width positivity/RH remain open.
 No new independent mathematical assumption is introduced.
 The result is a working computer-assisted proof, pending external
 review; it is not a formal proof-assistant certification.
@@ -6806,47 +6812,369 @@ weights at t=(1,1); it does not assert positivity for every
 diagnostic coupling merely because its complement is positive.
 It is a bounded-support result, not all-width positivity or RH.
 
+## BRT-T64. A width-dependent complement comparison with boundary-energy allocation
+
+23 October 2026. Fix 0<L<1 and the actual source (1) with every
+prime power n in N_L carrying its weight a_n=Lambda(n)/sqrt(n).
+Write u_n=log n, and call n *cap-disjoint* at width L when
+L<u_n<2L: its two overlap caps E_(u_n) in (221) are then disjoint.
+For such n put
+\[
+w_n(L)=w_{\min}(L,u_n)=\frac14\log\frac{L^2}{u_n(2L-u_n)}>0,
+\qquad
+\rho_n(L)=\frac{a_n}{2w_n(L)} .
+\tag{255}
+\]
+Let f_n in [0,1] be chosen for the cap-disjoint n with
+\[
+\sum_{n\ \text{cap-disjoint}} f_n\rho_n(L)\le1 .
+\tag{256}
+\]
+Define the width constant and the complement constant
+\[
+\boxed{
+\begin{aligned}
+\mathcal G_L&=\frac{\Omega_0}2+F(2L)+\frac12\log2
++\frac L2-\frac{L^3}{12}-\frac{3L^2}{64},\\
+d_{L,N}&=\mathcal G_L+\frac{H_{2N}}2
+-\sum_{n\ \text{cap-disjoint}}(1-f_n)\frac{a_n}2
+-\sum_{n\ \text{not cap-disjoint}}a_n .
+\end{aligned}
+}
+\tag{257}
+\]
+Then for every N>=1 and every h in Q_N D_L,
+\[
+\boxed{
+q_L[h]\ge
+\sum_{j\ge N}\Bigl(d_{L,N}+\frac{H_{2j}-H_{2N}}2\Bigr)
+|\langle h,\phi_{2j}\rangle|^2
++\ell(h)^2 ,
+\qquad
+C_N\succeq\mathcal D_{L,N},
+}
+\tag{258}
+\]
+where D_(L,N) is the positive diagonal comparison operator with
+levels d_(L,j)=d_(L,N)+(H_(2j)-H_(2N))/2, j>=N, on Q_N. The
+levels are strictly increasing in j, so the inverse comparison
+(217)--(218) holds with these levels: for any admitted column
+trial Z with P_N Z=U_N and complete residual R=Q_N T Z,
+\[
+R^*C_N^{-1}R\preceq
+\sum_{j=N}^{N+m-1}\frac{r_{2j}^*r_{2j}}{d_{L,j}}
++\frac1{d_{L,N+m}}\,R_{\ge2(N+m)}^*R_{\ge2(N+m)}
+\qquad(m\ge0).
+\tag{259}
+\]
+
+**Proof.** Every h in Q_N D_L with N>=1 is mean-zero, so T50's
+(203)--(204) with nu=L give
+\[
+q_L[h]\ge\mathcal G_L\|h\|^2+J_L[h]+\mathcal W_L[h]
++\ell(h)^2-\sum_na_nC_h(u_n).
+\]
+For a cap-disjoint n, (222) gives both
+|C_h(u_n)|<=||h||^2/2 and
+|C_h(u_n)|<=(2w_n)^(-1) integral over E_(u_n) of w_L|h|^2,
+the latter at most W_L[h]/(2w_n). Splitting a_nC_h(u_n) into the
+fractions f_n and 1-f_n and using (256),
+\[
+\sum_na_n|C_h(u_n)|\le\mathcal W_L[h]
++\sum_{\text{cap-disjoint}}(1-f_n)\frac{a_n}2\|h\|^2
++\sum_{\text{other}}a_n\|h\|^2 ,
+\]
+where the last sum uses only unitarity of each translation. The
+boundary energy is therefore spent at most once. ASM (14) gives
+J_L[h]>=sum_j H_(2j)|<h,phi_(2j)>|^2/2, and completeness on Q_N
+gives (258). Monotonicity of the levels and the inverse-order
+argument of T54 give (259). QED.
+
+The greedy allocation that spends the boundary energy on the
+cap-disjoint primes in decreasing order of w_n(L) maximizes the
+saving in (257) among all allocations satisfying (256), since the
+saving per unit of boundary energy spent on n is exactly w_n(L).
+The verifier evaluates (255)--(257) with directed arithmetic and
+records every quantity in `complement_report`.
+
+Two instances. At L=5/8 both active primes 2 and 3 are
+cap-disjoint. The outer cap belongs to prime 3, on which the whole
+boundary energy is spent; prime 3 is then charged to the norm only
+for the remaining fraction 0.327 of a_3/2, and prime 2 for
+the full a_2/2 (its caps are too shallow to use). Then
+d_(5/8,5)>0.1390. The packet `l0625_route` certifies the complete
+source there with N=5 (T68 below). At L=3/4 the prime powers 3 and 4
+are cap-disjoint and prime 2 is not (log 2<3/4). The greedy
+allocation spends 0.545 of the boundary energy on prime
+power 4 (fully) and the remainder on prime 3, which is charged to the
+norm for the fraction 0.913; prime 2 is charged in full. Then
+\[
+d_{3/4,8}<0,\qquad d_{3/4,14}>0.1123,\qquad
+d_{3/4,24}>0.3781 .
+\tag{260}
+\]
+With eight retained modes this rule fails and T53's three-prime
+graph comparison (213) is the available route; with fourteen
+retained modes both routes are available and they treat the primes
+by different arguments. That is the point of carrying both below.
+
+## BRT-T65. The returned matrix at 3/4 is a 10^(-12)-scale sign question
+
+Keep L=3/4 and t=(1,1,1). The packet `near_null` fixes three real
+even profiles g_1, g_2, g_3 as rational combinations of
+P_0,...,P_22 (denominator 10^12), with g_1 having the coefficient
+vector
+\[
+(497403908704,\,-10^{12},\,805924272529,\,-420265991666,\,
+142477108546,\,-26075763174,\,-1112135580,\,2264373717,\,
+-759468193,\,181654611,\,-52514923,\,21006257)\cdot10^{-12}
+\tag{261}
+\]
+on P_0, P_2, ..., P_22 of x/L. The verifier encloses
+q[g_i]=<g_i,T g_i> two-sidedly with (240)'s operator error:
+\[
+\boxed{
+\frac{q[g_1]}{\|g_1\|^2}\in[3.2049\cdot10^{-12},\,3.2050\cdot10^{-12}],\qquad
+\frac{q[g_2]}{\|g_2\|^2}\in[1.8468\cdot10^{-8},\,1.8469\cdot10^{-8}],\qquad
+\frac{q[g_3]}{\|g_3\|^2}\in[5.0527\cdot10^{-5},\,5.0528\cdot10^{-5}].
+}
+\tag{262}
+\]
+All three values are positive. Since alpha^*S_N alpha is the
+minimum of q over the fibre P_N g=alpha, and g_1 has
+|P_Ng_1|^2>=0.9977||g_1||^2 for every N>=4 (exact rational
+check on (261)), the normalized returned matrix satisfies
+\[
+\boxed{
+\lambda_{\min}(\mathsf S_N(\mathbf1))<3.3\cdot10^{-12}
+\qquad(N\ge4),
+}
+\tag{263}
+\]
+and already S_3 has a direction below 3.4*10^(-12). The three
+displayed quotients fall by four orders of magnitude each; the
+24-mode candidate exploration behind the trials indicates a
+smallest direction near 2*10^(-15), but only (262)--(263) are
+certified.
+
+This locates the difficulty that T46--T55 met. Their complete
+inverse allowances 250, 53 and the hierarchy 53, 40/3, 8 multiply
+residual Gram traces of order 10^(-1) to 10^(-3) uniformly; no such
+bound can resolve a sign of size 10^(-12). A certificate at this
+width must therefore produce a residual that is itself below
+10^(-12) along the direction of (261). The fixed trials below do
+that, not by a smaller allowance but because the minimizing tail
+is nearly exact along that direction: on it, T g is nearly a
+multiple of g, so the complete residual Q_N T Z nearly vanishes
+there while remaining of order 10^(-1) elsewhere. T67 measures
+exactly this.
+
+## BRT-T66. Operator and analytic bounds at L=3/4
+
+The actual operator on its polynomial domain is (236) with
+\[
+\mathcal P_{234}=\frac{a}{2}(S_u+S_{-u})+\frac b2(S_v+S_{-v})
++\frac{a_4}2(S_{w}+S_{-w}),\qquad
+w=\log4,\quad a_4=\frac{\log2}2 ,
+\tag{264}
+\]
+and c_L=-(gamma_E+log(3 pi/2))/2. The proof of (236) is unchanged:
+(237) holds for every s>0 and the three translations are bounded.
+The prime-2 caps overlap at this width; nothing in (236) uses cap
+disjointness.
+
+Replace j by its degree-200 Taylor polynomial j_200 from (238) and
+h=cosh(x/2) by its twelve even Taylor terms h_24. Cauchy's bound
+|j_m|<=5/2^m on |z|=2 and the geometric tail with ratio L give
+\[
+\boxed{
+\sup_{0\le s\le3/2}|j-j_{200}|\le20\Bigl(\frac34\Bigr)^{201},\qquad
+\sup_{|x|\le3/4}|h-h_{24}|\le\frac{2(3/8)^{24}}{24!},\qquad
+\|T-\overline T\|\le\epsilon:=L\epsilon_j+8L\epsilon_h<1.158\cdot10^{-24} .
+}
+\tag{265}
+\]
+The Schur and rank-one arguments of T60 apply verbatim. In the
+variable y=(x+L)/(2L) the translated polynomials switch on and off
+at the seven-piece partition
+\[
+0<1-w'<1-v'<u'<1-u'<v'<w'<1,\qquad
+u'=\frac u{2L},\ v'=\frac v{2L},\ w'=\frac w{2L},
+\tag{266}
+\]
+whose order the verifier checks with directed arithmetic; the
+identities (242)--(244) are then used piece by piece exactly as in
+T61.
+
+## BRT-T67. Fixed trials with the level-by-level complement charge
+
+**T53 route.** The packet `t53_route` fixes a rational 24-by-8 array
+(denominator 10^14) with identity on the first eight rows; the
+columns Z_0,...,Z_7 are combinations of P_0,...,P_46 of x/L. The
+complete residual Gram (245) is computed with N=8. The complement
+inverse is charged by (218) extended through the hierarchy (213):
+explicit levels j=8,...,23 with weights 1/d_j,
+d_j=2429/128000+(H_(2j)-H_16)/2, and every level j>=24 with the
+single weight 1/d_24<1.80. With Delta as in (246) using
+kappa_max=128000/2429,
+\[
+\widetilde{\mathsf S}_8\succeq\overline A-\mathcal E_{\rm hier}(\overline R)-\Delta I_8=:M,
+\qquad
+\epsilon<1.158\cdot10^{-24},\quad \Delta<2.360\cdot10^{-23},\quad
+t_z<2.401,\quad t_r<0.01214 .
+\tag{267}
+\]
+Here t_r is the complete residual Gram trace. Its charged part,
+tr E_hier(bar R)<0.02176, is what enters M; the first sixteen
+levels contribute only the rational rounding of the trial.
+
+The directed entry enclosure gives a rational symmetric matrix
+Q=10^(-24)-grid rounding of M with ||M-Q||<10^(-22) (maximum
+absolute row sum of the enclosure errors). Exact rational LDL^T of
+Q-(10^(-22)+10^(-16))I has eight positive pivots, the smallest
+exceeding 2.07*10^(-10). The interval LDL^T of M-10^(-16)I also passes.
+Consequently
+\[
+\boxed{
+\widetilde{\mathsf S}_8(\mathbf1)\succeq10^{-16}I_8
+\qquad\text{(unnormalized coordinates, T53 complement).}
+}
+\tag{268}
+\]
+The near-null direction of T65 is retained inside these eight
+coordinates, so (268) is a sign statement at the scale (263)
+demands; it is not contradicted by (263), which bounds the same
+smallest eigenvalue from above.
+
+**Boundary route.** The packet `boundary_route` fixes a 24-by-14
+array with identity on the first fourteen rows and uses T64's
+levels d_(3/4,j), j>=14, with explicit levels 14,...,23 and tail
+weight 1/d_(3/4,24)<2.65. With the same epsilon,
+\[
+\Delta<8.088\cdot10^{-24},\qquad t_z<2.585,\qquad t_r<0.02370,\qquad
+\operatorname{tr}\mathcal E_{\rm hier}(\overline R)<0.06267,
+\]
+and the same two sign checks pass with the same shift:
+\[
+\boxed{
+\widetilde{\mathsf S}_{14}(\mathbf1)\succeq10^{-16}I_{14}
+\qquad\text{(unnormalized coordinates, T64 complement).}
+}
+\tag{269}
+\]
+The two routes share the operator, the trial construction and the
+residual identity; they differ in the complement comparison, which
+is the only place where the prime terms are bounded rather than
+integrated. (268) relies on T41--T53's three-prime graph comparison,
+(269) on T50, (222) and (14) alone.
+
+## BRT-T68. The complete source is positive through L=3/4
+
+For the original real even closed source family,
+\[
+\boxed{
+ 0<L\le\frac34
+ \quad\Longrightarrow\quad
+ q_L[g]\ge\mu\|g\|^2
+ \quad\text{for every }g\in D_L,
+ \qquad \mu=9.0\cdot10^{-18} ,
+}
+\tag{270}
+\]
+with no mean-zero, polynomial, finite-mode or endpoint restriction
+on g. The two certificates give the two values
+mu_T53=7.28*10^(-18) and mu_B=9.02*10^(-18); (270) states the larger.
+
+**Proof at the endpoint.** Keep L=3/4 and the T53 route. Every g in
+D_L is uniquely g=E alpha+z with E=Z-C_8^(-1)R and z in Q_8D_L, and
+\[
+q_L[g]=\alpha^*\widetilde{\mathsf S}_8\alpha+\langle z,C_8z\rangle
+\ge10^{-16}|\alpha|^2+\frac{2429}{128000}\|z\|^2 .
+\]
+For the lift norm use C_8^(-1)<=D^(-1) in form order:
+||C_8^(-1)R alpha||<=||C_8^(-1/2)|| ||C_8^(-1/2)R alpha||
+<=sqrt(kappa_max) sqrt(alpha^*R^*C_8^(-1)R alpha), and
+R^*C_8^(-1)R<=E_hier(R), whose trace is at most
+tr E_hier(bar R)+kappa_max(2 epsilon sqrt(t_z t_r)+epsilon^2 t_z).
+The packet records ||E||<2.63. Since
+||g||^2<=2||E||^2|alpha|^2+2||z||^2, the endpoint bound follows with
+mu_T53=min(10^(-16)/(2||E||^2), 2429/256000). The boundary route is
+identical with d_(3/4,14) in place of 2429/128000 and gives mu_B.
+For any smaller L the argument of T63 applies unchanged: the source
+formula depends on g alone, prime terms with no overlap vanish
+automatically, and zero extension places D_L inside the endpoint
+family. QED.
+
+The window result at L=5/8 in the packet `l0625_route` (N=5, T64
+levels, margin 10^(-12), all-function bound 1.87*10^(-13)) is a
+two-prime instance of the same machinery and is subsumed by (270)
+except for its larger constant.
+
+**Dependencies.** The declared source and domain; ASM's Legendre
+energy bound (14); T50 (203)--(204) and T56 (222) for T64 and
+the boundary route; T53 (213)--(216) and T54 (217)--(218) for the
+T53 route; the analytic bounds (265); the exact residual identity;
+and the supplied directed-arithmetic implementation. The packet is
+reproducible evidence, not independent external certification.
+
+**Closed in this continuation.** The actual returned sign at 3/4
+by two complement routes, the all-function estimate (270), the
+general-width complement comparison T64, and the quantitative
+location (262)--(263) of the sign problem at this width.
+
+**Unresolved.** Widths beyond 3/4: on (3/4, (log 5)/2) the same
+three prime powers are active but T53's constants are specific to
+3/4 and T64's caps must be re-evaluated; at 2L>log 5 the prime
+power 5 activates. All-width positivity/RH remain open. No
+percentage of an RH proof follows from this bounded-window advance.
+
 ## Scope and continuation
 
-T60--T63 extend the unrestricted working positive interval from
-0<L<=1761/5000 to 0<L<=11/20, with the explicit new margin 10^(-11).
-The earlier 1/30000 margin on its smaller interval and all earlier
-stronger local margins remain valid.
+T64--T68 extend the unrestricted working positive interval from
+0<L<=11/20 to 0<L<=3/4, with the explicit all-function margin
+9*10^(-18) at the new endpoint. The 10^(-11) margin on (0,11/20], the
+1/30000 margin on its smaller interval and all earlier stronger local
+margins remain valid.
 
-At the new endpoint, T57 bounds the actual infinite complement by
-1871/6300. A fixed rational 12-by-5 trial and the full residual Gram
-then give a positive five-coordinate lower matrix. A rigorous
-operator remainder and all arithmetic enclosure errors have been
-subtracted before checking its sign. Exact rational LDL^T provides
-the final finite sign witness. T63 transfers that sign to every
-admitted profile and to every smaller support width.
+At the new endpoint two complement comparisons are available and
+both are used: T53's three-prime graph comparison with eight retained
+modes, and T64's width-dependent boundary-energy comparison with
+fourteen retained modes. T65 shows that the returned matrix at this
+width has a direction below 3.3*10^(-12), so the sign is decided not
+by a smaller inverse allowance but by fixed trials whose complete
+residual nearly vanishes along that direction. Rigorous operator
+remainders, every level of the complement inverse, and all arithmetic
+enclosure errors are subtracted before checking the sign; exact
+rational LDL^T provides each finite sign witness, and T68 transfers
+the sign to every admitted profile and every smaller support width.
 
 The source/domain distinction from native curvature is unchanged.
-Co-carried coordinate changes preserve a pairing; the sign here
-comes from an explicit arithmetic-source inequality. The retained
-Legendre count is not a universal observer count or MP's separate
-five-label eta-zero carrier.
+The retained Legendre counts are not universal observer counts or
+MP's separate five-label eta-zero carrier.
 
-The L=3/4 prime grouping, optimized Gamma comparison and inverse
-costs 53,40/3,8 remain available. Its actual returned sign has not
-been closed. The boundary cap argument by itself supplies neither
-an all-width induction nor a budget for all active prime powers.
-
-This continuation changes this note and its README entry and adds
-proof_lab/rh_l055/{README.md,verify.py,trial.json,result-220.json}.
-The separate Yang--Mills note and earlier certificates are unchanged.
-The PR remains draft and unmerged, with [skip ci]. New deterministic
-candidate exploration and interval certification are explicitly
-distinguished from the written-only preceding continuation.
+This continuation changes this note, its README entry, and adds
+proof_lab/rh_l075/ (one verifier, five packet directories with their
+configurations, fixed trials and evidence). The L=11/20 packet is
+unchanged. The separate Yang--Mills note and earlier certificates are
+unchanged. The PR is draft and unmerged, with [skip ci]. New
+deterministic candidate exploration (truncated minimizing tails of the
+24-mode operator matrix) and interval certification are explicitly
+distinguished.
 
 **Closed in the working derivation and accompanying computation:**
-the actual returned sign at 11/20 and the full-family estimate (251).
+the actual returned sign at 3/4 by two routes, the all-function
+estimate (270), the general-width comparison T64, and the enclosure
+(262)--(263).
 
-**Unresolved:** the actual returned sign at 3/4 and all-width
-positivity/RH. No percentage of an RH proof follows from this
-bounded-window advance.
+**Unresolved:** widths in (3/4, (log 5)/2) keep the same three prime
+powers but need the comparison constants re-evaluated (T64 applies
+with recomputed caps; T53's constants are specific to 3/4); beyond
+(log 5)/2 the prime power 5 activates; and all-width positivity/RH.
+No percentage of an RH proof follows from this bounded-window
+advance.
 
 **Dependencies:** the declared source/domain and inherited
-Gamma/Legendre and Schur results, the analytic estimates above, and
-the supplied directed-arithmetic implementation. The packet is
-reproducible evidence, not independent external certification.
+Gamma/Legendre and Schur results, T50, T53--T54, T56 (222), the
+analytic estimates above, and the supplied directed-arithmetic
+implementation. The packet is reproducible evidence, not independent
+external certification.

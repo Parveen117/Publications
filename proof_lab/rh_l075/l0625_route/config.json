@@ -1,0 +1,13 @@
+{
+  "L": "5/8",
+  "active_prime_powers": [2, 3],
+  "retained_modes": 5,
+  "kernel_degree": 120,
+  "cosh_terms": 10,
+  "complement": {"rule": "boundary_split", "explicit_levels": 11,
+                 "source": "T50 (203)-(204) with nu=L, T56 (222), ASM (14); greedy boundary allocation"},
+  "margin": "1/1000000000000",
+  "rational_grid_digits": 20,
+  "rational_rounding_allowance": "1/1000000000000000000",
+  "declared_family_bound": "1/100000000000000"
+}
