@@ -1,25 +1,28 @@
 # Publications
 
-Latest RH continuation: [BRT-T56--T59 — boundary-weighted prime absorption](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t56-a-newly-active-prime-is-small-relative-to-boundary-energy).
-At L=11/20, the actual prime-3 cap reading is bounded by 5/18
-of the existing Gamma boundary energy. The resulting positive
-complement constants after three, four and five retained even
-modes are respectively 23/400, 67/350 and 1871/6300, uniformly
-on the same diagnostic coupling square.
+Latest RH continuation: [BRT-T60--T63 — complete-source positivity through L=11/20](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t60-an-exact-source-column-with-a-bounded-polynomial-remainder).
 
-For the same five-column trial and complete residual, the
-inverse-error coefficient improves from 40/3 to 6300/1871.
-A full Legendre-weighted version retains all higher modes
-and mixed prime-memory terms. Exact nested elimination also
-reduces the remaining sign to a three-dimensional returned
-matrix. This is not the separate five-source eta-zero carrier.
+The working computer-assisted result is **q_L[g] >= 10^(-11)||g||^2
+for every admitted real even g and every 0<L<=11/20**. It extends
+the earlier 1761/5000 endpoint; stronger earlier margins on their
+smaller intervals are retained.
 
-The actual returned signs at 11/20 and 3/4 remain open.
-The unrestricted full-family positive interval is still
-0<L<=1761/5000 with margin 1/30000. No new independent
-assumption, numerical source evaluation, simulation, certificate
-replay, subagent or workflow dispatch is added. Working written
-proofs and repository readback are not independent certification.
+The actual returned sign at 11/20 is now supplied. T56--T59 bound
+the infinite complement; T60--T63 combine that bound with fixed
+rational trial columns, analytic kernel and cosh remainder bounds,
+the complete residual Gram, 220-digit directed arithmetic, and an
+exact rational positive-matrix witness. Both actual prime terms
+and all higher residual modes remain.
+
+The [reproducible packet](proof_lab/rh_l055/README.md) contains the
+standard-library verifier, fixed trial, full interval evidence and
+seven passing rejection controls. This is a new deterministic
+computation, not a replay of an earlier certificate. It is a working
+computer-assisted proof pending external review.
+
+**Still open:** the returned sign at L=3/4 and all-width positivity/RH.
+No RH proof or universal observer count is claimed. The earlier
+entries below record their status at their respective stages.
 
 Latest cross-programme written continuation:
 [RYM-1 — transfer the RH residual hierarchy to the actual Yang–Mills source](RH_YM_WEIGHTED_MEMORY_TRANSFER.md).

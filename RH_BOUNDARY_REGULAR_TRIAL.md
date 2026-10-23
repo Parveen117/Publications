@@ -1,48 +1,37 @@
-# BRT-1 — Full-source positivity through the first-prime window
+# BRT-1 — Full-source positivity through L=11/20
 
-Monty · 18 October 2026. Updated 23 October 2026 through BRT-T59.
+Monty · 18 October 2026. Updated 23 October 2026 through BRT-T63.
 
-Current continuation: boundary-weighted prime absorption at L=11/20.
-The prime-3 overlap occupies narrow endpoint caps. T56 bounds its
-actual signed reading by 5/18 of the retained Gamma boundary energy,
-rather than charging its full operator norm to every source vector.
-
-T57 proves, uniformly on the same diagnostic coupling square,
-\[
- C_3(t)\succeq\frac{23}{400}I,\qquad
- C_4(t)\succeq\frac{67}{350}I,\qquad
- C_5(t)\succeq\frac{1871}{6300}I .
-\]
-All higher even modes and both actual prime terms remain. T58 lowers
-the five-column inverse-residual coefficient from 40/3 to 6300/1871,
-with a further complete Legendre-weighted enclosure. For the same
-trial, the scalar lower certificate improves by 55940 R*R/5613.
-
-T59 gives an exact three-dimensional returned sign problem at this
-width, and its coherent relation to the five-dimensional matrix.
-This is a smaller source-specific cut with a proved positive
-complement, not a sign proof for the remaining returned matrix.
-It is distinct from MP's five-source eta-zero endpoint construction.
-
-The latest full-family positive interval remains T39:
+The current working computer-assisted result is
 \[
  \boxed{
- 0<L\le\frac{1761}{5000}
+ 0<L\le\frac{11}{20}
  \quad\Longrightarrow\quad
- q_L[g]\ge\frac1{30000}\|g\|^2
+ q_L[g]\ge10^{-11}\|g\|^2
  \quad(g\in D_L).
  }
 \]
-There is no mean-zero or cosh-neutrality restriction on this
-full-family conclusion. Stronger earlier margins on their smaller
-intervals remain valid. No new unrestricted interval is claimed.
+It covers the complete admitted real even family, with no neutral
+moment or finite-mode restriction. Earlier stronger margins on
+smaller intervals remain valid.
 
-The T52--T55 results at L=3/4 are preserved. Returned source signs
-at L=11/20 and L=3/4, and all-width positivity/RH, remain open.
-No new independent assumption is introduced. These are working
-written proofs, not independently certified results. No numerical
-source evaluation, simulation, certificate replay, subagent or
-workflow dispatch is used in this continuation.
+T56--T59 supply the boundary-weighted prime estimate and positive
+infinite complement. T60--T63 now certify the actual returned
+matrix at L=11/20 using fixed rational polynomial columns, analytic
+kernel remainder bounds, directed integration, and a separate exact
+rational matrix sign check. Both actual primes, the logarithmic
+boundary term and the complete infinite residual are retained.
+
+The [reproducible packet](proof_lab/rh_l055/README.md) contains the
+standard-library verifier, fixed trial and 220-digit evidence.
+This is a new deterministic computation. Historical sections below
+retain their status at the time of writing; their statements that
+11/20 is unresolved are superseded by T60--T63.
+
+The L=3/4 returned sign and all-width positivity/RH remain open.
+No new independent mathematical assumption is introduced.
+The result is a working computer-assisted proof, pending external
+review; it is not a formal proof-assistant certification.
 
 ## Actual source and domain
 
@@ -6476,64 +6465,388 @@ or (232). Merely checking the retained block A_3, A_5 or H
 does not do so. Neither actual returned sign has been
 evaluated or proved in this continuation.
 
+
+## BRT-T60. An exact source column with a bounded polynomial remainder
+
+23 October 2026. Fix L=11/20 and the actual couplings t=(1,1).
+Only prime powers 2 and 3 are active. Write u=log 2, v=log 3,
+a=u/sqrt(2), b=v/sqrt(3), and let all translations use zero extension.
+For this continuation, the unnormalized retained columns are
+psi_j(x)=P_(2j)(x/L), j=0,...,4. Their squared norms are
+n_j=2L/(4j+1). Thus the matrices below are congruent to, but do not
+have the same numerical eigenvalues as, the earlier normalized matrices.
+
+Put j(s)=k(s)-1/(2s), with j(0)=1/4, and let W denote
+multiplication by w_L from (221). The actual operator on its
+polynomial domain is
+\[
+\boxed{
+\begin{aligned}
+T&=J_{\rm op}+W+c_LI+|h\rangle\langle h|
+       -\frac12K_j-\mathcal P_{23},\\
+c_L&=-\frac12\{\gamma_E+\log(2\pi L)\},\qquad h(x)=\cosh(x/2),\\
+(K_jf)(x)&=\int_{-L}^{L}j(|x-y|)f(y)\,dy,\qquad
+J_{\rm op}P_n(x/L)=\frac{H_n}{2}P_n(x/L).
+\end{aligned}
+}
+\tag{236}
+\]
+Here P_23 is the same signed-source subtraction operator
+a(S_u+S_(-u))/2+b(S_v+S_(-v))/2; neither prime is suppressed.
+
+**Proof.** The Gamma column is the one used in T4. Split its
+integral into 1/(2s) and j(s). Since
+F(s)=atanh(exp(-s/2))+atan(exp(-s/2)),
+\[
+F(s)+\int_0^s j(r)\,dr
+ =\log2+\frac\pi4-\frac12\log s .
+\tag{237}
+\]
+Both sides have derivative -1/(2s), and their constants agree
+as s decreases to zero. Adding the two endpoint diagonal terms
+and Omega_0/2 gives exactly c_L+w_L. The remaining integral is
+-K_j/2 and ASM's singular Legendre operator is J_op. This proves
+(236) with the original scalar constant retained.
+
+For a finite and rigorously bounded evaluation, define
+j_48(s)=sum_(m=0)^48 j_m s^m by the exact rational recurrence
+\[
+\begin{aligned}
+f_n&=\frac12\left\{\frac1{2^nn!}
+ -\sum_{q=1}^{\lfloor n/2\rfloor}
+       \frac{2f_{n-2q}}{(2q+1)!}\right\},\qquad
+j_m=f_{m+1},\\
+(j_0,j_1,j_2,j_3,j_4)
+ &=\left(\frac14,-\frac1{48},-\frac1{32},
+                  \frac7{11520},\frac5{1536}\right).
+\end{aligned}
+\tag{238}
+\]
+Indeed sum f_n z^n=e^(z/2)/(2 sinh(z)/z). Also put
+h_16(x)=sum_(r=0)^8 (x/2)^(2r)/(2r)!.
+Then
+\[
+\boxed{
+\begin{aligned}
+\sup_{0\le s\le11/10}|j(s)-j_{48}(s)|
+ &\le\epsilon_j:=\frac{100}{9}\left(\frac{11}{20}\right)^{49},\\
+\sup_{|x|\le11/20}|h(x)-h_{16}(x)|
+ &\le\epsilon_h:=\frac{2(11/40)^{18}}{18!}.
+\end{aligned}
+}
+\tag{239}
+\]
+For the first estimate, on |z|<=2 one has
+|sinh(z)/z-1|<=sinh(2)/2-1<5/6. For example, the first four
+terms of sinh(2) sum to 1142/315 and its remaining tail is
+at most (4/2835)/(1-1/25), giving sinh(2)<11/3.
+Together with e<3, this gives |j(z)|<5 on |z|=2.
+Cauchy's coefficient estimate and the geometric tail with
+ratio 11/20 give (239). The cosh estimate follows from its
+positive Taylor tail, whose successive-term ratio is below 1/2.
+
+Let bar(T) be (236) with only j and h replaced by j_48 and h_16.
+It keeps W, c_L and both actual prime translations. Schur's
+kernel bound and the rank-one difference identity give
+\[
+\boxed{
+ \|T-\overline T\|\le
+ \epsilon:=L\epsilon_j+8L\epsilon_h
+ <\frac{1159}{10^{15}}.
+}
+\tag{240}
+\]
+For the rank-one part use ||h||,||h_16||<=2 sqrt(2L) and
+||h-h_16||<=sqrt(2L) epsilon_h. The difference is a bounded
+operator on H_L. The unbounded logarithmic multiplier and
+the source domain have not been approximated away. QED.
+
+## BRT-T61. A fixed rational trial encloses the complete returned matrix
+
+The packet [proof_lab/rh_l055](proof_lab/rh_l055/README.md) fixes
+a rational 12-by-5 coefficient array c in trial.json, with common
+denominator 10^14. It defines
+\[
+ Z_k(x)=\sum_{j=0}^{11}c_{jk}\psi_j(x),\qquad
+ c_{jk}=\delta_{jk}\ (0\le j,k<5),\qquad
+ P_5Z=(\psi_0,\ldots,\psi_4).
+\tag{241}
+\]
+The trial is a finite choice of admitted columns, not a truncation
+of the source space. Its origin was a numerical candidate search;
+its coefficients are now fixed rationals. Candidate quadrature
+and floating-point eigenvalues play no role in the certificate.
+
+Here are the analytic integration identities used by the verifier.
+Set y=(x+L)/(2L), so
+P_n(2y-1)=sum_(r=0)^n (-1)^(n+r) binom(n,r) binom(n+r,r)y^r.
+For nonnegative integers m,r,
+\[
+\int_0^1|y-s|^m s^r\,ds
+=\sum_{i=0}^{m}
+ \frac{(-1)^i\binom mi}{m-i+r+1}y^i
+ +(1-(-1)^m)\frac{m!r!}{(m+r+1)!}y^{m+r+1}.
+\tag{242}
+\]
+This follows by splitting the integral at s=y and integrating
+the binomial expansion. Thus the nonsingular kernel columns
+are exact polynomials before constant enclosures.
+
+The boundary weight is -[log4+log y+log(1-y)]/4. With n=r+1,
+the necessary moments, all over [0,1], are
+\[
+\begin{aligned}
+\int y^r\,dy&=\frac1n,&
+\int y^r\log y\,dy&=-\frac1{n^2},&
+\int y^r\log(1-y)\,dy&=-\frac{H_n}{n},\\
+\int y^r(\log y)^2\,dy&=\frac2{n^3},&
+\int y^r(\log(1-y))^2\,dy&=\frac{H_n^2+H_n^{(2)}}n,\\
+\int y^r\log y\log(1-y)\,dy
+ &=\frac{H_n}{n^2}+\frac{H_n^{(2)}}n-\frac{\pi^2}{6n}.
+\end{aligned}
+\tag{243}
+\]
+These follow by differentiating the beta integral, or by
+integrating the convergent logarithmic series. The necessary
+weighted piecewise moments use the exact primitives
+\[
+\begin{aligned}
+\int y^r\log y\,dy
+ &=y^n\left(\frac{\log y}{n}-\frac1{n^2}\right),\\
+\int y^r\log(1-y)\,dy
+ &=\frac{(y^n-1)\log(1-y)-\sum_{k=1}^{n}y^k/k}{n}.
+\end{aligned}
+\tag{244}
+\]
+Endpoint limits are taken analytically. The five pieces have
+endpoints 0, 1-v/(2L), 1-u/(2L), u/(2L), v/(2L), 1.
+On each piece the translated polynomials are retained exactly.
+All physical integrals carry the factor 2L.
+
+Write bar(R)=Q_5 bar(T)Z. Its full Gram, not a sampled tail Gram, is
+\[
+\begin{aligned}
+\overline A_{ij}&=\langle Z_i,\overline T Z_j\rangle,\qquad
+B_{ki}=\langle\psi_k,\overline T Z_i\rangle,\\
+\overline G_{ij}
+ &=\langle\overline T Z_i,\overline T Z_j\rangle
+        -\sum_{k=0}^{4}\frac{B_{ki}B_{kj}}{n_k}
+   =(\overline R^*\overline R)_{ij},\\
+t_z&=\operatorname{tr}(Z^*Z),\qquad
+t_r=\operatorname{tr}\overline G,\qquad
+\kappa=\frac{6300}{1871}.
+\end{aligned}
+\tag{245}
+\]
+In particular W^2, both prime columns, and every mixed product
+are integrated. No projection of the remaining residual to
+finitely many Legendre modes is made.
+
+Let tilde(S)_5 be the actual returned matrix in the unnormalized
+coordinates (241). T58 and (240) imply
+\[
+\boxed{
+\begin{aligned}
+\widetilde{\mathsf S}_5
+ &\succeq\overline A-\kappa\overline G-\Delta I_5=:M,\\
+\Delta&\ge
+ \epsilon t_z+\kappa\left(2\epsilon\sqrt{t_zt_r}
+                                  +\epsilon^2t_z\right).
+\end{aligned}
+}
+\tag{246}
+\]
+The value of Delta in the packet is one fixed outward decimal
+upper bound, hence an exact rational. To prove (246), use
+||Z||<=sqrt(t_z), ||bar(R)||<=sqrt(t_r), and
+||R-bar(R)||<=epsilon sqrt(t_z). The two Gram matrices differ
+in operator norm by at most
+2 epsilon sqrt(t_z t_r)+epsilon^2 t_z. Apply T58 to the actual
+R=Q_5TZ and bound the remaining source-column difference.
+This proves (246) for the full operator. QED.
+
+## BRT-T62. Directed integration and an exact rational positive witness
+
+The accompanying standard-library verifier evaluates (238)--(246)
+with 220-digit directed Decimal intervals and exact Fraction
+arithmetic. It produces the committed result-220.json. In particular,
+\[
+\boxed{
+ \epsilon<1.159\,10^{-12},\qquad
+ \Delta<2.485\,10^{-12},\qquad
+ t_z<\frac{17}{10},\qquad t_r<\frac1{250}.
+}
+\tag{247}
+\]
+All displayed decimal endpoints in the evidence are exact decimal
+rationals. They enclose constants; they are not empirical error bars.
+
+For auditability, the exact rational witness is Q=10^(-18) times
+the symmetric integer matrix
+\[
+\boxed{
+\begin{pmatrix}
+62347687989954241&61132422349207165&43318504512546330&-3720756156001538&11422107949888666\\
+61132422349207165&60227209299108499&43564718753023856&-1353734009149340&13473160425239606\\
+43318504512546330&43564718753023856&37571822221109323&17820509294298464&14390988184388402\\
+-3720756156001538&-1353734009149340&17820509294298464&59738985484053935&11221692700169019\\
+11422107949888666&13473160425239606&14390988184388402&11221692700169019&35613995099809425
+\end{pmatrix}.
+}
+\tag{248}
+\]
+The exact entry-enclosure errors have maximum absolute row sum
+less than 10^(-17). Therefore ||M-Q||<10^(-17), using symmetry.
+Exact rational LDL^T elimination of
+Q-(10^(-17)+10^(-10))I has five positive pivots. Their complete
+fractions are in result-220.json; conservative lower bounds in
+order are
+\[
+ \left(\frac6{100},\frac2{10000},\frac3{1000},
+                   \frac1{10000},\frac5{100000}\right).
+\tag{249}
+\]
+They can also be checked directly from the integer matrix (248).
+The verifier separately performs interval LDL^T on M-10^(-10)I.
+Both sign checks pass. Consequently
+\[
+\boxed{
+ \widetilde{\mathsf S}_5\succeq10^{-10}I_5 .
+}
+\tag{250}
+\]
+This numerical margin refers to the unnormalized coefficient
+coordinates. If D=diag(sqrt(n_j)), then tilde(S)_5=D S_5 D for
+the earlier normalized matrix. Hence its sign agrees with S_5,
+and T59 also gives the positive sign of the actual S_3 at this width.
+
+**Constant and rounding enclosure.** Pi is enclosed by Machin's
+identity with 110 alternating terms for each arctangent and a
+first-omitted-term bound. Euler's constant is enclosed using
+H_1024-log(1024)-1/(2*1024), the first 32 Bernoulli corrections,
+and the absolute next correction as remainder. The positive-real
+digamma expansion has remainder bounded by that first neglected
+term; see [DLMF 5.11(i)--(ii)](https://dlmf.nist.gov/5.11).
+Bernoulli numbers and all polynomial coefficients are rational.
+
+Arithmetic endpoints use ROUND_FLOOR and ROUND_CEILING.
+Logarithms and square roots use correctly rounded Decimal
+operations expanded by one adjacent representable number on each
+side; see the [Python 3.12 Decimal specification](https://docs.python.org/3.12/library/decimal.html).
+Binary float input is rejected by the interval constructor.
+There is no numerical quadrature in this verification.
+
+Seven rejection controls cover an indefinite matrix with positive
+diagonal, omitted residual debt, a zero pivot, a negative direction,
+inflated uncertainty, an interval inverse containing zero, and
+binary float input. The packet records all seven passing. These
+checks test the verifier's decisions; they do not constitute
+external mathematical review or a machine-checked formal proof.
+
+This is a new deterministic computer-assisted certificate.
+It does not replay any earlier certificate. Its mathematical
+dependencies are the declared source/domain, T57's tail bound,
+the exact residual identity, and the analytic bounds proved above.
+
+## BRT-T63. The complete source is positive through L=11/20
+
+For the original real even closed source family,
+\[
+\boxed{
+ 0<L\le\frac{11}{20}
+ \quad\Longrightarrow\quad
+ q_L[g]\ge10^{-11}\|g\|^2
+ \quad\text{for every }g\in D_L.
+}
+\tag{251}
+\]
+There is no mean-zero, cosh-neutrality, polynomial, finite-mode,
+or endpoint-cancellation restriction on g in this conclusion.
+
+**Proof at the endpoint.** Keep L=11/20. Equations (240),
+(245), (247) give, with the outward bounds in the packet,
+\[
+ \|Z\|<\frac43,\qquad
+ \|R\|\le\sqrt{t_r}+\epsilon\sqrt{t_z}<\frac8{125},\qquad
+ \|C_5^{-1}\|\le\kappa<\frac72 .
+\tag{252}
+\]
+The exact minimizing lift E=Z-C_5^(-1)R therefore obeys
+\[
+ \|E\|<\frac43+\frac72\frac8{125}
+       =\frac{584}{375}<\frac85,\qquad P_5E=(\psi_0,\ldots,\psi_4).
+\tag{253}
+\]
+Every g in D_L has the unique form g=E alpha+z with z in Q_5D_L.
+The exact completed-square identity and T57 yield
+\[
+\begin{aligned}
+q_L[g]
+ &=\alpha^*\widetilde{\mathsf S}_5\alpha
+                    +\|C_5^{1/2}z\|^2\\
+ &\ge10^{-10}|\alpha|^2+\frac{1871}{6300}\|z\|^2,\\
+\|g\|^2&\le\frac{128}{25}|\alpha|^2+2\|z\|^2.
+\end{aligned}
+\tag{254}
+\]
+Since (128/25)10^(-11)<10^(-10) and
+2*10^(-11)<1871/6300, this proves (251) at L=11/20.
+
+For any smaller L, zero extension includes its even smooth core
+in the endpoint source family. The source formula depends on g,
+not on a chosen containing interval: prime terms with no overlap
+are automatically zero. Apply the endpoint bound on that core,
+then pass to D_L by the inherited form closure. This proves the
+entire interval in (251). The earlier stronger margins on their
+smaller intervals remain valid. QED.
+
+The positive complement and the finite returned sign have now
+both been supplied at 11/20. The result uses the actual prime
+weights at t=(1,1); it does not assert positivity for every
+diagnostic coupling merely because its complement is positive.
+It is a bounded-support result, not all-width positivity or RH.
+
 ## Scope and continuation
 
-The unrestricted full-family interval remains (164):
-0<L<=1761/5000, with margin 1/30000. The larger-width source
-signs are not inferred from positivity of their complements.
+T60--T63 extend the unrestricted working positive interval from
+0<L<=1761/5000 to 0<L<=11/20, with the explicit new margin 10^(-11).
+The earlier 1/30000 margin on its smaller interval and all earlier
+stronger local margins remain valid.
 
-The new T56--T59 results at L=11/20 use the source's existing
-Gamma boundary multiplier. The prime-3 cap reading costs at
-most 5/18 of that multiplier, while prime 2 costs at most
-||g||^2/4. This gives a positive full complement after three
-retained even modes and a stronger five-mode complement.
+At the new endpoint, T57 bounds the actual infinite complement by
+1871/6300. A fixed rational 12-by-5 trial and the full residual Gram
+then give a positive five-coordinate lower matrix. A rigorous
+operator remainder and all arithmetic enclosure errors have been
+subtracted before checking its sign. Exact rational LDL^T provides
+the final finite sign witness. T63 transfers that sign to every
+admitted profile and to every smaller support width.
 
-For the same five-column trial and full residual, (230)--(232)
-replace the uniform inverse allowance 40/3 by 6300/1871 and
-retain a stronger infinite hierarchy. The exact remaining sign
-can alternatively be expressed by S_3(1,1)>=0 through (235).
-The two eliminated intermediate modes and every infinite-tail
-coupling remain in that returned matrix.
+The source/domain distinction from native curvature is unchanged.
+Co-carried coordinate changes preserve a pairing; the sign here
+comes from an explicit arithmetic-source inequality. The retained
+Legendre count is not a universal observer count or MP's separate
+five-label eta-zero carrier.
 
-The relative cap coefficient in (223) vanishes as a single
-translation first acquires overlap. This controls its cost
-relative to the carried boundary energy. It does not supply
-an all-width induction, a bound for all simultaneously active
-prime powers, or positivity of the full source at L=11/20.
-Once boundary energy has been allocated, it cannot be spent
-again independently on another term.
+The L=3/4 prime grouping, optimized Gamma comparison and inverse
+costs 53,40/3,8 remain available. Its actual returned sign has not
+been closed. The boundary cap argument by itself supplies neither
+an all-width induction nor a budget for all active prime powers.
 
-The earlier L=3/4 seven-point grouping, joint prime norm below
-59/100, optimized Gamma comparison and weighted inverse costs
-53,40/3,8 are unchanged. The seven-mode shortcut there still
-fails for the stated comparison; that failure is not evidence
-of a negative actual source. The three-mode estimate at 11/20
-has a different support geometry and does not contradict it.
+This continuation changes this note and its README entry and adds
+proof_lab/rh_l055/{README.md,verify.py,trial.json,result-220.json}.
+The separate Yang--Mills note and earlier certificates are unchanged.
+The PR remains draft and unmerged, with [skip ci]. New deterministic
+candidate exploration and interval certification are explicitly
+distinguished from the written-only preceding continuation.
 
-The source/domain distinction from native curvature is
-unchanged. Co-carried coordinate changes preserve an existing
-pairing; source positivity requires the retained arithmetic
-inequality. Neither these Legendre cuts nor their dimensions
-are identified with MP's separate five-label endpoint carrier.
+**Closed in the working derivation and accompanying computation:**
+the actual returned sign at 11/20 and the full-family estimate (251).
 
-Only RH_BOUNDARY_REGULAR_TRIAL.md and its README entry change
-in this continuation. Earlier certificates and the separate
-Yang--Mills transfer note are unchanged. The PR stays draft
-and unmerged, with [skip ci]. Written derivation and exact
-repository-content checks are separate from independent
-mathematical certification.
+**Unresolved:** the actual returned sign at 3/4 and all-width
+positivity/RH. No percentage of an RH proof follows from this
+bounded-window advance.
 
-**Closed in the working written derivation:** boundary-weighted
-control of a newly active prime, the three/four/five-mode
-positive complement bounds at 11/20, the improved complete
-inverse-residual enclosure and the exact nested three-mode
-sign target.
-
-**Unresolved:** positivity of that actual returned matrix,
-the full source signs at 11/20 and 3/4, and all-width
-positivity/RH. No actual lower-certificate matrix has been
-numerically evaluated in this continuation.
-
-**New independent assumptions:** none; the declared source,
-domain, inherited Gamma/Legendre bounds and actual prime
-coefficients are retained.
+**Dependencies:** the declared source/domain and inherited
+Gamma/Legendre and Schur results, the analytic estimates above, and
+the supplied directed-arithmetic implementation. The packet is
+reproducible evidence, not independent external certification.
