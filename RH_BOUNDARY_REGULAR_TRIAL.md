@@ -1,13 +1,13 @@
-# BRT-1 — Full-source positivity through L=3/4
+# BRT-1 — Full-source positivity through L=4/5
 
-Monty · 18 October 2026. Updated 23 October 2026 through BRT-T68.
+Monty · 18 October 2026. Updated 23 October 2026 through BRT-T69.
 
 The current working computer-assisted result is
 \[
  \boxed{
- 0<L\le\frac34
+ 0<L\le\frac45
  \quad\Longrightarrow\quad
- q_L[g]\ge9.0\cdot10^{-18}\,\|g\|^2
+ q_L[g]\ge8.8\cdot10^{-22}\,\|g\|^2
  \quad(g\in D_L).
  }
 \]
@@ -15,16 +15,16 @@ It covers the complete admitted real even family, with no neutral
 moment or finite-mode restriction, and the three active prime
 powers 2, 3, 4 at their actual weights. Earlier stronger margins on
 smaller intervals remain valid; in particular q_L[g] >= 10^(-11)||g||^2
-for 0<L<=11/20 (T63).
+for 0<L<=11/20 (T63) and q_L[g] >= 9*10^(-18)||g||^2 for 0<L<=3/4 (T68).
 
 T56--T63 supplied the complement bound and the actual returned
-matrix at L=11/20. T64--T68 now do the same at L=3/4 by two
-independent complement routes (T53's three-prime graph comparison
-and the new width-dependent boundary-energy comparison T64), after
-T65 locates the returned-sign question at this width below
-10^(-11). Both actual prime terms, the prime power 4, the
-logarithmic boundary term and the complete infinite residual are
-retained.
+matrix at L=11/20. T64--T68 do the same at L=3/4 by two independent
+complement routes (T53's three-prime graph comparison and the new
+width-dependent boundary-energy comparison T64), after T65 locates
+the returned-sign question at that width below 10^(-11). T69 carries
+the T64 route to L=4/5, the last rational step inside the three-prime
+regime 2L<log 5. All three actual prime powers, the logarithmic
+boundary term and the complete infinite residual are retained.
 
 The [reproducible packet](proof_lab/rh_l075/README.md) contains the
 standard-library verifier, the fixed trials, the configuration of
@@ -32,9 +32,9 @@ each run and the 220-digit evidence. The L=11/20 packet
 [proof_lab/rh_l055](proof_lab/rh_l055/README.md) is unchanged and is
 reproduced by the new verifier as a control. Historical sections
 below retain their status at the time of writing; their statements
-that 11/20 or 3/4 is unresolved are superseded by T60--T68.
+that 11/20 or 3/4 is unresolved are superseded by T60--T69.
 
-Widths beyond 3/4 and all-width positivity/RH remain open.
+Widths beyond (log 5)/2 and all-width positivity/RH remain open.
 No new independent mathematical assumption is introduced.
 The result is a working computer-assisted proof, pending external
 review; it is not a formal proof-assistant certification.
@@ -7128,16 +7128,93 @@ three prime powers are active but T53's constants are specific to
 power 5 activates. All-width positivity/RH remain open. No
 percentage of an RH proof follows from this bounded-window advance.
 
+## BRT-T69. The complete source is positive through L=4/5
+
+23 October 2026. The three-prime regime ends at 2L=log 5, that is
+L=(log 5)/2=0.8047...; L=4/5 is a rational width inside it, with the
+same active prime powers 2, 3, 4 and 2L=8/5<log 5 verified by the
+verifier with directed arithmetic (log 5>1.6094). T53's constants do
+not apply here; the T64 comparison does.
+
+**Complement at 4/5 (T64).** Prime powers 3 and 4 are cap-disjoint,
+prime 2 is not. The greedy allocation spends 0.900 of the boundary
+energy on prime power 4 and the remainder on prime 3, which is charged
+to the norm for the fraction 0.989; prime 2 is charged in full.
+Then
+\[
+d_{4/5,16}>0.1197,\qquad d_{4/5,30}>0.4303 .
+\tag{271}
+\]
+
+**Operator and bounds.** (236) with (264) at L=4/5 and
+c_L=-(gamma_E+log(8 pi/5))/2. The kernel is replaced by j_300 and
+cosh(x/2) by h_24; with the geometric tail ratio 4/5,
+\[
+\sup_{0\le s\le8/5}|j-j_{300}|\le25\Bigl(\frac45\Bigr)^{301},\qquad
+\|T-\overline T\|\le\epsilon<1.353\cdot10^{-28} .
+\tag{272}
+\]
+The seven-piece partition (266) has the same order at this width.
+
+**Near-null scale.** The packet `near_null_08` fixes three profiles
+as rational combinations of P_0,...,P_46 (denominator 10^14) and
+encloses their Rayleigh quotients as in T65:
+\[
+\frac{q[g_1]}{\|g_1\|^2}\in[8.7641\cdot10^{-18},\,8.7642\cdot10^{-18}],\qquad
+\frac{q[g_2]}{\|g_2\|^2}\in[4.8721\cdot10^{-12},\,4.8722\cdot10^{-12}],\qquad
+\frac{q[g_3]}{\|g_3\|^2}\in[3.3748\cdot10^{-7},\,3.3749\cdot10^{-7}],
+\tag{272a}
+\]
+with |P_Ng_1|^2>=0.9958||g_1||^2 for every N>=4 (exact rational
+check), so lambda_min(S_N(1))<8.9*10^(-18) for N>=4 in normalized
+coordinates. The certified sign below therefore has to be, and is,
+resolved at the shift 10^(-20) in the unnormalized coordinates.
+
+**Fixed trial and witness.** The packet `l08_route` fixes a rational
+30-by-16 array (denominator 10^14, identity on the first 16
+rows; columns are combinations of P_0,...,P_58 of x/L), charges the
+complete residual Gram with explicit levels 16,...,29 and tail
+weight 1/d_(4/5,30)<2.33, and subtracts
+\[
+\Delta<9.797\cdot10^{-28},\qquad t_z<2.818,\qquad t_r<0.02491,\qquad
+\operatorname{tr}\mathcal E_{\rm hier}(\overline R)<0.05787 .
+\tag{273}
+\]
+Interval LDL^T of M-10^(-20)I and exact rational LDL^T of the
+10^(-30)-grid rounding Q-(10^(-28)+10^(-20))I both pass, the
+smallest exact pivot exceeding 2.53*10^(-5). Hence
+\[
+\boxed{
+\widetilde{\mathsf S}_{16}(\mathbf1)\succeq10^{-20}\,I
+\quad\text{(unnormalized coordinates)},\qquad
+0<L\le\frac45\ \Longrightarrow\ q_L[g]\ge8.8\cdot10^{-22}\,\|g\|^2
+\quad(g\in D_L).
+}
+\tag{274}
+\]
+The proof of (274) is that of T68 with d_(4/5,16) in place of
+2429/128000 and the recorded lift bound ||E||<2.38. QED.
+
+The width 4/5 lies 0.0047 below the end (log 5)/2 of the three-prime
+regime; that sliver is not certified here. Beyond (log 5)/2 the prime
+power 5 activates and every comparison constant changes, although T64
+itself is stated for any active prime set: evaluated numerically (not
+certified), at L=17/20 it gives d_(L,N)>0 from N=20 on (about 0.03 at
+N=20, 0.12 at N=24), with the outer cap of prime power 5 absorbing the
+whole boundary energy, and at L=9/10 from N=28 on. So the route does
+not end at (log 5)/2, but its retained-mode count, its arithmetic
+cost and the near-null scale (T65, (272a)) all grow quickly with the
+width. The T53 route is not available at 4/5.
+
 ## Scope and continuation
 
-T64--T68 extend the unrestricted working positive interval from
-0<L<=11/20 to 0<L<=3/4, with the explicit all-function margin
-9*10^(-18) at the new endpoint. The 10^(-11) margin on (0,11/20], the
-1/30000 margin on its smaller interval and all earlier stronger local
-margins remain valid.
+T64--T69 extend the unrestricted working positive interval from
+0<L<=11/20 to 0<L<=4/5, with the explicit all-function margins
+9*10^(-18) at 3/4 and 8.8*10^(-22) at 4/5. The 10^(-11) margin on
+(0,11/20], the 1/30000 margin on its smaller interval and all earlier
+stronger local margins remain valid.
 
-At the new endpoint two complement comparisons are available and
-both are used: T53's three-prime graph comparison with eight retained
+At 3/4 two complement comparisons are available and both are used: T53's three-prime graph comparison with eight retained
 modes, and T64's width-dependent boundary-energy comparison with
 fourteen retained modes. T65 shows that the returned matrix at this
 width has a direction below 3.3*10^(-12), so the sign is decided not
@@ -7152,8 +7229,13 @@ The source/domain distinction from native curvature is unchanged.
 The retained Legendre counts are not universal observer counts or
 MP's separate five-label eta-zero carrier.
 
+At 4/5 only the T64 comparison is available; T69 uses it with sixteen
+retained modes and a thirty-mode trial. The near-null enclosure at 4/5
+(packet `near_null_08`) shows the returned matrix there has a direction
+below 8.9*10^(-18).
+
 This continuation changes this note, its README entry, and adds
-proof_lab/rh_l075/ (one verifier, five packet directories with their
+proof_lab/rh_l075/ (one verifier, seven packet directories with their
 configurations, fixed trials and evidence). The L=11/20 packet is
 unchanged. The separate Yang--Mills note and earlier certificates are
 unchanged. The PR is draft and unmerged, with [skip ci]. New
@@ -7162,14 +7244,13 @@ deterministic candidate exploration (truncated minimizing tails of the
 distinguished.
 
 **Closed in the working derivation and accompanying computation:**
-the actual returned sign at 3/4 by two routes, the all-function
-estimate (270), the general-width comparison T64, and the enclosure
-(262)--(263).
+the actual returned sign at 3/4 by two routes and at 4/5 by the T64
+route, the all-function estimates (270) and (274), the general-width
+comparison T64, and the enclosures (262)--(263) and at 4/5.
 
-**Unresolved:** widths in (3/4, (log 5)/2) keep the same three prime
-powers but need the comparison constants re-evaluated (T64 applies
-with recomputed caps; T53's constants are specific to 3/4); beyond
-(log 5)/2 the prime power 5 activates; and all-width positivity/RH.
+**Unresolved:** the remaining sliver (4/5, (log 5)/2) of the
+three-prime regime; beyond (log 5)/2 the prime power 5 activates and
+every comparison constant changes; and all-width positivity/RH.
 No percentage of an RH proof follows from this bounded-window
 advance.
 
