@@ -1,15 +1,15 @@
 # Publications
 
-Latest RH continuation: [BRT-T64--T69 — complete-source positivity through L=4/5](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
+Latest RH continuation: [BRT-T64--T70 — complete-source positivity through L=17/20](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
 
-The working computer-assisted result is **q_L[g] >= 8.8*10^(-22)||g||^2
-for every admitted real even g and every 0<L<=4/5**, with the three
-active prime powers 2, 3, 4 at their actual weights (and
-q_L[g] >= 9*10^(-18)||g||^2 on 0<L<=3/4). It closes the returned-sign
-question at 3/4 left open since BRT-T46, extends the 11/20 endpoint,
-and reaches the last rational step inside the three-prime regime
-2L<log 5; stronger earlier margins on their smaller intervals are
-retained.
+The working computer-assisted result is **q_L[g] >= 6.2*10^(-25)||g||^2
+for every admitted real even g and every 0<L<=17/20**, with the four
+active prime powers 2, 3, 4, 5 at their actual weights (and
+q_L[g] >= 8.8*10^(-22)||g||^2 on 0<L<=4/5, q_L[g] >= 9*10^(-18)||g||^2 on
+0<L<=3/4). It closes the returned-sign question at 3/4 left open since
+BRT-T46, extends the 11/20 endpoint, and crosses the activation of the
+prime power 5 at 2L=log 5; stronger earlier margins on their smaller
+intervals are retained.
 
 Two independent complement routes certify the same sign: one through
 T53's three-prime graph comparison (eight retained modes), one through
@@ -21,19 +21,22 @@ and why the fixed minimizing-tail trials can. T66--T67 give the
 analytic bounds, the complete residual Gram charged level by level,
 and exact rational positive-matrix witnesses at shift 10^(-16). T69
 repeats the T64 route at L=4/5 (sixteen retained modes, thirty-mode
-trial, kernel degree 300) at shift 10^(-20).
+trial, kernel degree 300) at shift 10^(-20), and T70 at L=17/20 with
+four active prime powers (twenty-four retained modes, thirty-six-mode
+trial, kernel degree 400) at shift 10^(-23).
 
 The [reproducible packet](proof_lab/rh_l075/README.md) contains the
-single standard-library verifier, seven packet directories (both L=3/4
-routes, the L=4/5 route, near-null enclosures at 3/4 and 4/5, an L=5/8
-two-prime instance of T64, and a control that reproduces the L=11/20
-witness byte for byte),
+single standard-library verifier, ten packet directories (both L=3/4
+routes, the L=4/5 and L=17/20 routes, near-null enclosures at 3/4, 4/5
+and 17/20, a near-null enclosure at the uncertified width 9/10, an
+L=5/8 two-prime instance of T64, and a control that reproduces the
+L=11/20 witness byte for byte),
 all evidence files and passing rejection controls. These are new
 deterministic computations, not replays. The result is a working
 computer-assisted proof pending external review.
 
-**Still open:** widths beyond 4/5 (the sliver up to (log 5)/2, then
-prime power 5), and all-width positivity/RH. No RH
+**Still open:** widths beyond 17/20 (the four-prime regime continues
+to 2L=log 7), and all-width positivity/RH. No RH
 proof or universal observer count is claimed. The earlier entries
 below record their status at their respective stages.
 
