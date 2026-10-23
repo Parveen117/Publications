@@ -1,5 +1,26 @@
 # Publications
 
+Latest RH continuation: [BRT-T56--T59 — boundary-weighted prime absorption](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t56-a-newly-active-prime-is-small-relative-to-boundary-energy).
+At L=11/20, the actual prime-3 cap reading is bounded by 5/18
+of the existing Gamma boundary energy. The resulting positive
+complement constants after three, four and five retained even
+modes are respectively 23/400, 67/350 and 1871/6300, uniformly
+on the same diagnostic coupling square.
+
+For the same five-column trial and complete residual, the
+inverse-error coefficient improves from 40/3 to 6300/1871.
+A full Legendre-weighted version retains all higher modes
+and mixed prime-memory terms. Exact nested elimination also
+reduces the remaining sign to a three-dimensional returned
+matrix. This is not the separate five-source eta-zero carrier.
+
+The actual returned signs at 11/20 and 3/4 remain open.
+The unrestricted full-family positive interval is still
+0<L<=1761/5000 with margin 1/30000. No new independent
+assumption, numerical source evaluation, simulation, certificate
+replay, subagent or workflow dispatch is added. Working written
+proofs and repository readback are not independent certification.
+
 Latest cross-programme written continuation:
 [RYM-1 — transfer the RH residual hierarchy to the actual Yang–Mills source](RH_YM_WEIGHTED_MEMORY_TRANSFER.md).
 At the same side-four lattice, theta=1/48 and complete 241-dimensional
@@ -16,7 +37,7 @@ No scientific computation, replay or workflow dispatch is performed.
 No new independent assumption is added.
 
 
-Latest RH development: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
+Previous RH development through T55: [BRT-1 — full-source positivity through the first-prime window](RH_BOUNDARY_REGULAR_TRIAL.md).
 BRT-T52--T55 make the positivity-transfer rule explicit.
 Prime-group containment alone gives no source sign.
 The actual seven-point prime comparison has a coherent

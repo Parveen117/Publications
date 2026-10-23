@@ -1,83 +1,48 @@
 # BRT-1 — Full-source positivity through the first-prime window
 
-Monty · 18 October 2026.
+Monty · 18 October 2026. Updated 23 October 2026 through BRT-T59.
 
-Written continuation through BRT-T55, based on branch head
-3d3212bb83de89017c53a79d012a7aaf511331b2.
+Current continuation: boundary-weighted prime absorption at L=11/20.
+The prime-3 overlap occupies narrow endpoint caps. T56 bounds its
+actual signed reading by 5/18 of the retained Gamma boundary energy,
+rather than charging its full operator norm to every source vector.
 
-T52--T55 make the valid positivity-transfer rule explicit.
-Containment in a larger prime-generated group alone gives
-no source sign. The actual seven-point prime comparison
-does have a coherent edge-square factorization, with the
-shared diagonal budget counted once.
-
-At the unchanged L=3/4 window, retaining the complete
-Legendre hierarchy improves the inverse-residual estimate:
+T57 proves, uniformly on the same diagnostic coupling square,
 \[
-\boxed{
-R^*C_8(t)^{-1}R
-\preceq
-53\,r_{16}^*r_{16}
-+\frac{40}{3}r_{18}^*r_{18}
-+8\,R_{\ge20}^*R_{\ge20}.
-}
+ C_3(t)\succeq\frac{23}{400}I,\qquad
+ C_4(t)\succeq\frac{67}{350}I,\qquad
+ C_5(t)\succeq\frac{1871}{6300}I .
 \]
-Here R is the full residual of the same admitted trial,
-r_16 and r_18 are its degree-16 and degree-18 readings,
-and R_(>=20) contains every remaining even mode.
-The stronger infinite weighted estimate is (218).
-No commutation with the actual source is assumed.
+All higher even modes and both actual prime terms remain. T58 lowers
+the five-column inverse-residual coefficient from 40/3 to 6300/1871,
+with a further complete Legendre-weighted enclosure. For the same
+trial, the scalar lower certificate improves by 55940 R*R/5613.
 
-Compared with the former uniform allowance 53, the
-complete lower matrix improves by
-(119/3) r_18^*r_18 + 45 R_(>=20)^*R_(>=20).
-For the polynomial trial U_8 this improvement is
-positive definite. The residual is nonzero and fully
-retained; the improved source matrix's sign is unproved.
+T59 gives an exact three-dimensional returned sign problem at this
+width, and its coherent relation to the five-dimensional matrix.
+This is a smaller source-specific cut with a proved positive
+complement, not a sign proof for the remaining returned matrix.
+It is distinct from MP's five-source eta-zero endpoint construction.
 
-The first controlled comparison level propagates to
-every higher level by the positive increment (215).
-Attempting to lower the retained count from eight
-to seven fails for this particular comparison:
-its degree-14 coefficient is below -1/25.
-This is not a negative actual-source test or a claim
-that no stronger seven-mode estimate exists.
-
-T48--T51 retain the sharper joint prime norm 59/100,
-the Gamma comparison optimized with its positive
-surplus, and the scalar inverse allowance 53.
-The returned source signs at 11/20 and 3/4 remain
-unresolved. No unrestricted interval is added here.
-
-The latest full-family result remains T39:
+The latest full-family positive interval remains T39:
 \[
-\boxed{
-0<L\le\frac{1761}{5000}
-\quad\Longrightarrow\quad
-q_L[g]\ge\frac1{30000}\|g\|^2
-\quad(g\in D_L).
-}
+ \boxed{
+ 0<L\le\frac{1761}{5000}
+ \quad\Longrightarrow\quad
+ q_L[g]\ge\frac1{30000}\|g\|^2
+ \quad(g\in D_L).
+ }
 \]
-On 7/20<=L<=1761/5000, the returned scalar exceeds
-52751/900000000>7/120000. The stronger 1/25000 through
-7001/20000 and DWE's 1/1700 on its smaller interval remain
-valid. No mean-zero or cosh-neutrality restriction is imposed
-on these full-family conclusions.
+There is no mean-zero or cosh-neutrality restriction on this
+full-family conclusion. Stronger earlier margins on their smaller
+intervals remain valid. No new unrestricted interval is claimed.
 
-Earlier sections preserve historical trials, failed bounds,
-observer/transport audits and intermediate intervals.
-All quantitative estimates use actual source weights,
-the established domain and complete residual memory.
-Common rescaling or containment of reading labels
-alone adds no positivity.
-
-Positivity beyond the stated unrestricted interval,
-the returned matrix signs at 11/20 and 3/4, and
-all-width positivity/RH remain open. No new independent
-assumption is introduced. The particular nonpolynomial
-test (93) remains unassessed. These are working written
-proofs, not independently certified results. GitHub
-metadata alone is not mathematical certification.
+The T52--T55 results at L=3/4 are preserved. Returned source signs
+at L=11/20 and L=3/4, and all-width positivity/RH, remain open.
+No new independent assumption is introduced. These are working
+written proofs, not independently certified results. No numerical
+source evaluation, simulation, certificate replay, subagent or
+workflow dispatch is used in this continuation.
 
 ## Actual source and domain
 
@@ -6210,94 +6175,365 @@ coefficient (220). Returned source signs at
 open; the unrestricted interval (164) is unchanged.
 No new independent assumption is added.
 
+## BRT-T56. A newly active prime is small relative to boundary energy
+
+23 October 2026. This continuation uses the same arithmetic source
+and form domain. It retains a part of the Gamma boundary energy
+that the uniform operator-norm estimate in T42 discarded.
+
+For L<u<2L, put
+\[
+\begin{gathered}
+E_u=(-L,L-u)\ \cup\ (u-L,L),\\
+\mathcal W_L[g]=\int_I w_L(x)|g(x)|^2\,dx,\qquad
+w_L(x)=-\frac14\log(1-(x/L)^2),\\
+w_{\min}(L,u)=\frac14
+ \log\frac{L^2}{u(2L-u)}>0 .
+\end{gathered}
+\tag{221}
+\]
+The two intervals are disjoint. For every admitted real profile,
+\[
+\boxed{
+ |C_g(u)|\le\frac12\int_{E_u}|g|^2
+ \le\frac{1}{2w_{\min}(L,u)}
+              \int_{E_u}w_L|g|^2 .
+}
+\tag{222}
+\]
+Indeed write C_g(u) as the integral of g(x)g(x+u) on
+(-L,L-u), apply 2|rs|<=r^2+s^2 and change variables in the
+second square. On E_u one has |x|>=u-L, giving the displayed
+minimum of w_L. This argument imposes no pointwise sign on g.
+
+For a fixed positive translation weight a_u, (222) gives
+\[
+\boxed{
+ |a_u C_g(u)|\le
+ \rho_u(L)\mathcal W_L[g],\qquad
+ \rho_u(L)=
+ \frac{2a_u}{\log[L^2/(u(2L-u))]}
+ \longrightarrow0
+ \quad\left(L\downarrow\frac u2\right).
+}
+\tag{223}
+\]
+At L=u/2 the overlap is empty. The limiting statement is about
+this relative form coefficient, with the weight w_L carried
+with its window. It is not operator-norm continuity of the
+truncated translation on L2. In particular it is compatible
+with T41's operator-norm jump at prime activation.
+
+The weighted integral is finite on D_L. The retained logarithmic
+decomposition (GRR equation (4)) has nonnegative J_L and boundary
+terms; its difference from the Gamma form on a finite interval
+is a bounded quadratic form. The inequalities therefore extend
+from the smooth core to the same closed form domain. No new
+boundary condition or trial regularity is assumed.
+
+Specialize now to L_*=11/20, v=log 3 and b=v/sqrt 3.
+The positive atanh series gives the explicit lower bound
+\[
+\log3=\sum_{j=0}^{\infty}\frac{1}{(2j+1)4^j}
+>
+1+\frac1{12}+\frac1{80}+\frac1{448}
+=\frac{7379}{6720}>\frac{549}{500}.
+\tag{224}
+\]
+The last cross-product difference is
+7379*500-549*6720=220>0. Together with the retained
+log 3<11/10, this locates the nonempty prime-3 overlap.
+On its two caps,
+\[
+\frac{|x|}{L_*}>\frac{274}{275},\qquad
+1-(x/L_*)^2<\frac{549}{75625}<\frac1{128}.
+\]
+The last comparison follows from 549*128=70272<75625.
+Since log 2>693/1000, already used in T42,
+\[
+ w_{L_*}(x)>
+ \frac{\log128}{4}=\frac{7\log2}{4}>
+ \frac{4851}{4000}>\frac65 .
+\]
+Also b<2/3 by T41. Consequently
+\[
+\boxed{
+ |bC_g(v)|
+ \le\frac{5}{18}\int_{E_v}w_{L_*}|g|^2
+ \le\frac{5}{18}\mathcal W_{L_*}[g].
+}
+\tag{225}
+\]
+This spends at most 5/18 of the existing boundary energy.
+It does not simultaneously spend the whole joint prime norm
+from (171). The rest of the boundary energy remains available.
+
+## BRT-T57. Positive tails after three, four or five retained modes
+
+Keep the actual diagnostic family q_t in (172), t in [0,1]^2,
+at exactly L_*=11/20. Since log 2>L_*, its two translation caps
+are disjoint as well. With a=(log 2)/sqrt 2<1/2, (222)'s first
+inequality gives |aC_g(log 2)|<=||g||^2/4.
+
+For any mean-zero h in D_(L_*), the two moment terms in GRR's
+polynomial comparison vanish. Retain (174)--(175), charge
+prime 2 to the norm and prime 3 to (225). This yields
+\[
+\boxed{
+ q_t[h]\ge
+ J_{L_*}[h]-\frac{467}{400}\|h\|^2
+ +\frac{13}{18}\mathcal W_{L_*}[h]+\ell(h)^2 .
+}
+\tag{226}
+\]
+Here 467/400=367/400+1/4. The nonnegative unused Gamma
+remainder is dropped only once. There is no cancellation
+assumption between the two prime readings.
+
+For an integer N>=1 define
+\[
+ V_N=\operatorname{span}\{\phi_0,\phi_2,\ldots,\phi_{2N-2}\},
+ \quad Q_N=I-P_N,\qquad
+ d_N=\frac{H_{2N}}2-\frac{467}{400}.
+\]
+ASM's Legendre energy bound, in this note's degree notation,
+then gives
+\[
+\boxed{
+ q_t[h]\ge
+ \sum_{j\ge N}\left(\frac{H_{2j}}2-\frac{467}{400}\right)
+       |\langle h,\phi_{2j}\rangle|^2
+ +\frac{13}{18}\mathcal W_{L_*}[h]+\ell(h)^2
+ \ge d_N\|h\|^2
+ \quad(h\in Q_ND_{L_*}).
+}
+\tag{227}
+\]
+The series inequality follows first for finite projections;
+the nonnegative remainder energy and form closure give the
+full statement. All higher even modes are retained.
+
+In particular, the positive restricted source operators obey
+\[
+\boxed{
+ C_3(t)\succeq\frac{23}{400}I,\qquad
+ C_4(t)\succeq\frac{67}{350}I,\qquad
+ C_5(t)\succeq\frac{1871}{6300}I
+ \quad(t\in[0,1]^2).
+}
+\tag{228}
+\]
+The rational identities are
+\[
+\begin{aligned}
+ \frac{H_6}{2}-\frac{467}{400}
+ &=\frac{49}{40}-\frac{467}{400}=\frac{23}{400},\\
+ \frac{H_8}{2}-\frac{467}{400}
+ &=\frac{761}{560}-\frac{467}{400}=\frac{67}{350},\\
+ \frac{H_{10}}{2}-\frac{467}{400}
+ &=\frac{7381}{5040}-\frac{467}{400}=\frac{1871}{6300}.
+\end{aligned}
+\tag{229}
+\]
+Closedness, density and the self-adjoint restricted operators
+are those of ASM-T1--T3; the polynomial cuts preserve the form
+domain. The source and every actual prime weight are unchanged.
+
+With only two retained modes this particular comparison gives
+d_2=-151/1200. That is a failed lower estimate, not a negative
+actual-source direction. Three is a sufficient retained count
+for this estimate at this width, not a claimed universal or
+minimal observer count.
+
+## BRT-T58. The same five-column residual has a smaller complete cost
+
+Use the five retained columns and notation A(t), B(t), C(t),
+S(t), Z and R from (178)--(179). Equation (228) replaces the
+earlier scalar inverse allowance by
+\[
+\boxed{
+ 0<C(t)^{-1}\preceq\frac{6300}{1871}I,\qquad
+ Z^*T(t)Z-\frac{6300}{1871}R^*R
+ \preceq\mathsf S(t)\preceq Z^*T(t)Z .
+}
+\tag{230}
+\]
+This is the existing exact identity
+S=Z*TZ-R*C^(-1)R, with a stronger bound for the same C.
+The trial must still satisfy P_5Z=U and have operator-domain
+columns. The residual R=Q_5T(t)Z is complete.
+
+Relative to (179), for the same admitted Z the lower matrix
+improves by exactly
+\[
+\boxed{
+ \left(\frac{40}{3}-\frac{6300}{1871}\right)R^*R
+ =\frac{55940}{5613}R^*R\succeq0 .
+}
+\tag{231}
+\]
+The new scalar coefficient is 945/3742 of the former one.
+Strict improvement in a given retained direction requires
+its residual column to be nonzero. A smaller error allowance
+does not establish that the improved lower matrix is positive.
+
+There is also a stronger weighted version. Define the positive
+diagonal comparison on Q_5H by
+\[
+ \mathcal D_5\phi_{2j}
+ =\left(\frac{H_{2j}}2-\frac{467}{400}\right)\phi_{2j},
+ \qquad j\ge5 ,
+\]
+with its maximal diagonal form domain. Equation (227) means
+C(t)>=D_5 in form order, including the needed domain inclusion.
+The inverse quadratic-form variational principle therefore gives
+C(t)^(-1)<=D_5^(-1), without a commutation assumption. If
+r_(2j)=<phi_(2j),R> is a row on the five retained coordinates,
+\[
+\boxed{
+ R^*C(t)^{-1}R
+ \preceq
+ \sum_{j=5}^{\infty}
+ \frac{r_{2j}^*r_{2j}}{H_{2j}/2-467/400}
+ \preceq\frac{6300}{1871}R^*R .
+}
+\tag{232}
+\]
+The series converges in finite-matrix norm: its weights are
+bounded by 6300/1871 and all five residual columns lie in L2.
+Every component of a combined source is squared together in
+each row, so mixed prime-memory terms remain.
+
+For example, the exact simultaneous insertion identity (180),
+with D=Q_5 P_23 E_0, now has the enclosure
+\[
+\boxed{
+ \mathsf S(\mathbf1)\succeq
+ \mathsf S(\mathbf0)-E_0^*\mathcal P_{23}E_0
+ -\frac{6300}{1871}D^*D .
+}
+\tag{233}
+\]
+The direct signed term is not assigned an artificial sign,
+and D_2*D_3+D_3*D_2 is not dropped. Equation (232) can sharpen
+the same complete D further. These are quantitative uses of
+the inherited inverse-order and Schur identities.
+
+## BRT-T59. An exact three-dimensional sign target at this width
+
+For N=3,4,5 use the actual source blocks A_N(t), B_N(t),
+C_N(t) and synthesis U_N defined as in ASM-T3. All their
+infinite inverses exist by (228). Put
+\[
+ \mathsf S_N(t)=A_N(t)-B_N(t)^*C_N(t)^{-1}B_N(t).
+\]
+Then, on the entire original test family,
+\[
+\boxed{
+ q_t\ge0\text{ on }D_{L_*}
+ \quad\Longleftrightarrow\quad
+ \mathsf S_3(t)\succeq0
+ \quad\Longleftrightarrow\quad
+ \mathsf S_5(t)\succeq0 .
+}
+\tag{234}
+\]
+In particular the full source has at most three negative
+directions at this fixed width. This is not a claim that any
+negative direction exists or that none exists.
+
+To exhibit the exact relation, split the five-coordinate
+returned matrix into degrees (0,2,4) and (6,8):
+\[
+ \mathsf S_5(t)=
+ \begin{pmatrix}H(t)&F(t)^*\\F(t)&D(t)\end{pmatrix}.
+\]
+Then
+\[
+\boxed{
+ D(t)\succeq\frac{23}{400}I_2,\qquad
+ \mathsf S_3(t)=H(t)-F(t)^*D(t)^{-1}F(t).
+}
+\tag{235}
+\]
+For the first assertion minimize q_t over Q_5 at fixed
+degree-(6,8) coordinates b. Every candidate lies in Q_3D_L,
+so (228) gives
+q_t>=23(||b||^2+||h||^2)/400>=23||b||^2/400.
+The attained minimum is b*D(t)b. For the second assertion,
+minimize first over Q_5 and then over the remaining two
+coordinates. ASM's coherent fibre-minimization identity
+identifies this with minimization over all of Q_3. No memory
+is omitted when the two intermediate coordinates are removed.
+
+The three-coordinate carrier is the Legendre cut at L=11/20.
+It is not the separate five-source eta-zero endpoint carrier
+in MP, and it does not change that route's assumptions.
+
+The next sign task is now explicit: establish S_3(1,1)>=0,
+or establish a positive five-column lower matrix in (230)
+or (232). Merely checking the retained block A_3, A_5 or H
+does not do so. Neither actual returned sign has been
+evaluated or proved in this continuation.
+
 ## Scope and continuation
 
-The current unrestricted interval remains (164):
-0<L<=1761/5000, with margin 1/30000. Equation (163) gives
-s_L>52751/900000000>7/120000 on the upper band
-[7/20,1761/5000]. The stronger margin 1/25000 through
-7001/20000 and DWE's 1/1700 on L<=1/4+1/47600
-are retained. Those constants are not extrapolated
-beyond their stated band.
+The unrestricted full-family interval remains (164):
+0<L<=1761/5000, with margin 1/30000. The larger-width source
+signs are not inferred from positivity of their complements.
 
-T40--T47 established the two-prime and seven-point
-source groupings, with positive complements at
-11/20 and 3/4. T48--T51 sharpened the latter window's
-joint prime allowance to 59/100 and optimized the
-Gamma comparison with its retained positive surplus.
-The scalar tail inverse allowance fell from 250 to 53.
+The new T56--T59 results at L=11/20 use the source's existing
+Gamma boundary multiplier. The prime-3 cap reading costs at
+most 5/18 of that multiplier, while prime 2 costs at most
+||g||^2/4. This gives a positive full complement after three
+retained even modes and a stronger five-mode complement.
 
-T52--T55 retain that same source, support, trial
-normalization and eight-dimensional cut. Group
-containment alone has no positivity implication.
-The actual prime comparison has the coherent
-edge-square factorization (212), which gives a
-lawful assembly rule with one shared budget.
-It is a factorization of an established comparison,
-not a new full-source positivity theorem.
+For the same five-column trial and full residual, (230)--(232)
+replace the uniform inverse allowance 40/3 by 6300/1871 and
+retain a stronger infinite hierarchy. The exact remaining sign
+can alternatively be expressed by S_3(1,1)>=0 through (235).
+The two eliminated intermediate modes and every infinite-tail
+coupling remain in that returned matrix.
 
-Keeping ASM's entire Legendre energy hierarchy
-gives the diagonal comparison (213)--(215).
-Its first positive tail level and explicit positive
-increments control every higher level. This uses
-a global bound on the actual couplings and does
-not assume that the source itself is diagonal.
+The relative cap coefficient in (223) vanishes as a single
+translation first acquires overlap. This controls its cost
+relative to the carried boundary energy. It does not supply
+an all-width induction, a bound for all simultaneously active
+prime powers, or positivity of the full source at L=11/20.
+Once boundary energy has been allocated, it cannot be spent
+again independently on another term.
 
-The inverse comparison (217) requires no commutation.
-It gives the complete residual allowances 53,40/3,8
-on degree 16, degree 18 and the entire remaining
-even tail, respectively. The same trial's lower
-returned matrix improves by the explicit positive
-Gram expression (219). For the polynomial trial
-U_8, its higher residual remains injective by the
-endpoint logarithm, making that improvement strict.
+The earlier L=3/4 seven-point grouping, joint prime norm below
+59/100, optimized Gamma comparison and weighted inverse costs
+53,40/3,8 are unchanged. The seven-mode shortcut there still
+fails for the stated comparison; that failure is not evidence
+of a negative actual source. The three-mode estimate at 11/20
+has a different support geometry and does not contradict it.
 
-The attempted seven-mode shortcut fails at the
-explicit comparison coefficient (220), below -1/25.
-This says nothing negative about the true source
-at degree 14 and does not rule out a stronger
-reduction. It records where the current transfer
-estimate stops.
+The source/domain distinction from native curvature is
+unchanged. Co-carried coordinate changes preserve an existing
+pairing; source positivity requires the retained arithmetic
+inequality. Neither these Legendre cuts nor their dimensions
+are identified with MP's separate five-label endpoint carrier.
 
-The complete lower matrix and exact returned
-source at 3/4 have not been shown positive.
-The retained source at 11/20 also remains
-unresolved. A strictly improved lower matrix
-does not determine its sign. These remain
-instances of the original all-width problem.
+Only RH_BOUNDARY_REGULAR_TRIAL.md and its README entry change
+in this continuation. Earlier certificates and the separate
+Yang--Mills transfer note are unchanged. The PR stays draft
+and unmerged, with [skip ci]. Written derivation and exact
+repository-content checks are separate from independent
+mathematical certification.
 
-The group of positive rational ratios generated
-by a set of primes organizes observations; it
-does not change their actual source coefficients.
-No universal finite support graph, smallest
-observer count, or all-width induction is asserted.
-T9's finite-polynomial residual obstruction remains
-compatible with finite positivity bounds; residual
-cancellation is unnecessary. T16's particular
-nonpolynomial test (93) remains unassessed.
+**Closed in the working written derivation:** boundary-weighted
+control of a newly active prime, the three/four/five-mode
+positive complement bounds at 11/20, the improved complete
+inverse-residual enclosure and the exact nested three-mode
+sign target.
 
-These operators and comparisons use the stated
-arithmetic-source domain. They are not identified
-with native EMK curvature, Riemann curvature,
-a physical field or a universal cut law.
-Co-carried coordinate changes preserve the full
-pairing; support enlargement changes the source
-and must respect its newly active translations.
+**Unresolved:** positivity of that actual returned matrix,
+the full source signs at 11/20 and 3/4, and all-width
+positivity/RH. No actual lower-certificate matrix has been
+numerically evaluated in this continuation.
 
-Only this note and its README entry change. The work is
-written mathematical derivation plus exact repository-content
-and metadata verification. No independent certification,
-scientific computation, numerical simulation, independent
-agent, certificate replay or workflow dispatch is performed.
-The commit uses [skip ci]. The PR remains draft, stacked
-on #137, and unmerged.
-
-**Gate accounting.** The coherent prime-comparison
-factorization, infinite-tail upward propagation and
-sharper full inverse-residual weights are closed in
-the working written derivation. The seven-mode
-shortcut fails for the specified lower comparison.
-Returned source signs at 11/20 and 3/4 and
-all-width positivity/RH remain open; the unrestricted
-interval stays at 1761/5000.
-No new independent assumption is added.
+**New independent assumptions:** none; the declared source,
+domain, inherited Gamma/Legendre bounds and actual prime
+coefficients are retained.
