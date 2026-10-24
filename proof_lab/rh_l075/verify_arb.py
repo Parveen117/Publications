@@ -122,8 +122,17 @@ def dot(cs,vec):
 # ---------------------------------------------------------------- config
 here=PACKET
 config=json.loads((here/'config.json').read_text())
-L=F(config['L']); assert 0<L<1
+L=F(config['L']); assert 0<L
 N=int(config['retained_modes']); K=int(config['kernel_degree']); COSH_TERMS=int(config['cosh_terms'])
+# Kernel Taylor tail: |j_m| <= SUP / R^m by Cauchy on |z|=R, where j is analytic
+# for |z| < pi.  Default R=2, SUP=5 is BRT-T60 (239).  The option R=5/2,
+# SUP=16/5 is BRT-T72: on |z|=5/2, |sinh z|^2 = sinh^2 x + sin^2 y >= sin^2(5/2)
+# (for |y|>=2 directly, for |y|<2 because then |x|>=3/2 and sinh^2(3/2)>4),
+# so |j| <= e^(5/4)/(2 sin(5/2)) + 1/5 < 16/5.  Both need 2L < R.
+kt=config.get('kernel_tail',{'radius':'2','sup':'5'})
+KT_R=F(kt['radius']); KT_SUP=F(kt['sup'])
+assert (KT_R,KT_SUP) in [(F(2),F(5)),(F(5,2),F(16,5))]
+assert 2*L<KT_R
 complement=config['complement']
 HLEV=int(complement['explicit_levels']); assert HLEV>=0
 MARGIN=F(config['margin']); assert MARGIN>0
@@ -319,7 +328,7 @@ if MATRIX_MODE:
     Path(MATRIX_OUT).write_text(json.dumps(out)+'\n')
     print('matrices written',MATRIX_OUT);sys.exit(0)
 
-ej=I(5*L**(K+1)/(1-L))
+ej=I(KT_SUP*(2*L/KT_R)**(K+1)/(1-2*L/KT_R))
 ec=I(2*(L/2)**(2*COSH_TERMS)/F(factorial(2*COSH_TERMS)))
 epsilon=L*ej+8*L*ec
 
@@ -332,7 +341,7 @@ if RAYLEIGH_MODE:
             'q_upper':str(_dec(upper,UP)),'q_lower':str(_dec(lower,DN)),
             'rayleigh_upper':str(_dec(upper/n2.lo,UP)),'rayleigh_lower':str(_dec(lower/n2.hi,DN))})
     result={'status':'RAYLEIGH_ENCLOSURE','engine':'arb','arb_precision_bits':BITS,'python':sys.version.split()[0],'decimal_precision':PREC,'L':str(L),
-        'active_prime_powers':[n for n,_,_ in PRIMES],'trial_modes':M,'columns':NCOL,'kernel_degree':K,'cosh_terms':COSH_TERMS,
+        'active_prime_powers':[n for n,_,_ in PRIMES],'trial_modes':M,'columns':NCOL,'kernel_degree':K,'cosh_terms':COSH_TERMS,'kernel_tail_radius':str(KT_R),'kernel_tail_sup':str(KT_SUP),
         'operator_error':epsilon.json(),'trial_sha256':hashlib.sha256(trial_path.read_bytes()).hexdigest(),
         'config_sha256':hashlib.sha256((here/'config.json').read_bytes()).hexdigest(),
         'code_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'columns_report':report,
@@ -472,7 +481,7 @@ assert all(v for k,v in controls.items() if k!='uniform_allowance_run_recorded')
 
 result={'status':'PASS_FIXED_WINDOW_LOWER_MATRIX' if passed else 'INCONCLUSIVE','engine':'arb','arb_precision_bits':BITS,
     'python':sys.version.split()[0],'decimal_precision':PREC,'L':str(L),'active_prime_powers':[n for n,_,_ in PRIMES],
-    'retained_modes':N,'trial_modes':M,'kernel_degree':K,'cosh_terms':COSH_TERMS,
+    'retained_modes':N,'trial_modes':M,'kernel_degree':K,'cosh_terms':COSH_TERMS,'kernel_tail_radius':str(KT_R),'kernel_tail_sup':str(KT_SUP),
     'complement_rule':complement_rule,'complement_base_level':J0,'complement_base_value':str(D0),'complement_report':complement_report if complement_rule!='declared' else None,'complement_levels':[[k,str(d)] for k,d in levels],'complement_tail_level':N+HLEV,'complement_tail_value':str(dlevel(N+HLEV)),
     'kappa_max':str(kappa_max),'trial_sha256':hashlib.sha256(trial_path.read_bytes()).hexdigest(),
     'config_sha256':hashlib.sha256((here/'config.json').read_bytes()).hexdigest(),

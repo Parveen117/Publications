@@ -1,49 +1,57 @@
 # Publications
 
-Latest RH continuation: [BRT-T64--T71 — complete-source positivity through L=9/10](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
+Latest RH continuation: [BRT-T64--T73 — complete-source positivity through L=19/20](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
 
-The working computer-assisted result is **q_L[g] >= 4.8*10^(-28)||g||^2
-for every admitted real even g and every 0<L<=9/10**, with the four
+The working computer-assisted result is **q_L[g] >= 4.9*10^(-32)||g||^2
+for every admitted real even g and every 0<L<=19/20**, with the four
 active prime powers 2, 3, 4, 5 at their actual weights (and
+q_L[g] >= 4.8*10^(-28)||g||^2 on 0<L<=9/10,
 q_L[g] >= 6.2*10^(-25)||g||^2 on 0<L<=17/20,
 q_L[g] >= 8.8*10^(-22)||g||^2 on 0<L<=4/5, q_L[g] >= 9*10^(-18)||g||^2 on
 0<L<=3/4). It closes the returned-sign question at 3/4 left open since
-BRT-T46, extends the 11/20 endpoint, and crosses the activation of the
-prime power 5 at 2L=log 5; stronger earlier margins on their smaller
-intervals are retained.
+BRT-T46, extends the 11/20 endpoint, crosses the activation of the
+prime power 5 at 2L=log 5, and reaches the end of the four-prime
+regime (2L=log 7 at L=0.973); stronger earlier margins on their
+smaller intervals are retained.
 
-Two independent complement routes certify the same sign: one through
-T53's three-prime graph comparison (eight retained modes), one through
-the new width-dependent comparison T64 that spends the Gamma boundary
-energy on the outer prime caps (fourteen retained modes). T65 encloses
-an explicit degree-22 profile with Rayleigh quotient 3.2*10^(-12),
-which is why no uniform inverse allowance could have closed this width
-and why the fixed minimizing-tail trials can. T66--T67 give the
-analytic bounds, the complete residual Gram charged level by level,
-and exact rational positive-matrix witnesses at shift 10^(-16). T69
-repeats the T64 route at L=4/5 (sixteen retained modes, thirty-mode
-trial, kernel degree 300) at shift 10^(-20), and T70 at L=17/20 with
-four active prime powers (twenty-four retained modes, thirty-six-mode
-trial, kernel degree 400) at shift 10^(-23); T71 at L=9/10 (thirty
-retained modes, fifty-two-mode trial, kernel degree 700) at shift
-10^(-26), produced with the packet's second, ball-arithmetic engine,
-which reproduces all six earlier witnesses byte for byte and turns
-hours of directed-Decimal arithmetic into minutes.
+Two independent complement routes certify the same sign at 3/4: one
+through T53's three-prime graph comparison (eight retained modes), one
+through the new width-dependent comparison T64 that spends the Gamma
+boundary energy on the outer prime caps (fourteen retained modes). T65
+encloses an explicit degree-22 profile with Rayleigh quotient
+3.2*10^(-12), which is why no uniform inverse allowance could have
+closed this width and why the fixed minimizing-tail trials can.
+T66--T67 give the analytic bounds, the complete residual Gram charged
+level by level, and exact rational positive-matrix witnesses at shift
+10^(-16). T69 repeats the T64 route at L=4/5 (sixteen retained modes,
+thirty-mode trial, kernel degree 300) at shift 10^(-20), T70 at
+L=17/20 with four active prime powers (twenty-four retained modes,
+thirty-six-mode trial, kernel degree 400) at shift 10^(-23), T71 at
+L=9/10 (thirty retained modes, fifty-two-mode trial, kernel degree
+700) at shift 10^(-26), and T73 at L=19/20 (forty retained modes,
+sixty-four-mode trial, 320-digit balls) at shift 10^(-30), after T72
+proves the kernel remainder bound with Cauchy radius 5/2 (|j|<=16/5 on
+|z|=5/2) that frees the verifier from the L<1 restriction of T60's
+radius-2 bound. The certificates from 9/10 on were produced with the
+packet's second, ball-arithmetic engine, which reproduces all six
+earlier witnesses byte for byte and turns hours of directed-Decimal
+arithmetic into minutes.
 
 The [reproducible packet](proof_lab/rh_l075/README.md) contains the
-two engines of one verifier, eleven packet directories (both L=3/4
-routes, the L=4/5, 17/20 and 9/10 routes, near-null enclosures at 3/4,
-4/5, 17/20 and 9/10, an
-L=5/8 two-prime instance of T64, and a control that reproduces the
-L=11/20 witness byte for byte),
+two engines of one verifier, thirteen packet directories (both L=3/4
+routes, the L=4/5, 17/20, 9/10 and 19/20 routes, near-null enclosures
+at 3/4, 4/5, 17/20, 9/10 and 19/20, an L=5/8 two-prime instance of
+T64, and a control that reproduces the L=11/20 witness byte for byte),
 all evidence files and passing rejection controls. These are new
 deterministic computations, not replays. The result is a working
 computer-assisted proof pending external review.
 
-**Still open:** widths beyond 9/10 (the four-prime regime ends at
-2L=log 7, L=0.973), and all-width positivity/RH. No RH
-proof or universal observer count is claimed. The earlier entries
-below record their status at their respective stages.
+**Still open:** widths beyond 19/20 (the prime 7 activates at
+L=0.973; at L=1 the T64 complement needs about forty-eight retained
+modes and the near-null scale is about 10^(-30)), and all-width
+positivity/RH. No RH proof or universal observer count is claimed.
+The earlier entries below record their status at their respective
+stages.
 
 Previous RH development through T63: [BRT-T60--T63 — complete-source positivity through L=11/20](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t60-an-exact-source-column-with-a-bounded-polynomial-remainder).
 
