@@ -1,0 +1,310 @@
+# Research closure ledger
+
+17 October 2026. A closure below applies only to its named target and
+assumptions. It is not a blanket endorsement of all research repositories.
+The active continuation follows source depth, acquired pairings and
+observer readings. Physical interpretation remains open and follows
+the derived structure.
+
+| Target | Verdict | Evidence | Exact boundary |
+|---|---|---|---|
+| Two-sided actual five-reading source and graded matrix reflection | Exact paired source involution and all-finite-depth similarity proved | VSR-T1/T4/T5 | mu is the inherited signed deformation; source-specific symmetry; uncarried off-cut readings need not agree |
+| VTPS Maxwell matrix and diagonal curved source metric | Actual Legendre chart and carried connection derived | VSR-T2/T3 | Response matrix is indefinite; acquired metric is positive; Q^(-1)dQ retains curvature 125/324 at mu=+5 and -5 |
+| Actual infinite analytic scalar return | Entire function and explicit rational remainder proved | LAR-T1/T2 | Uses unconditional LAA Cauchy bound; positive/unitary realization is an additional condition |
+| Full use of retained source coefficients | Degree-36 partial polynomial and missing-coefficient error proved | LAR-T3/T4 | Nine readings from existing c0..c19; no new derivative, RH proof or physical identification |
+| Exact wave state and correlation depth bands | State horizon d and scalar horizon 2d proved, d=M-N | LWP-T1/T2/T3 | Strict first failures; 300 actual return readings and 27 first increments 2^(4M-3)h_M; correlations are signed amplitudes |
+| Source-defined continuous exponential and finite error | Skew generator [P,Z], unitary group and separate factorial bounds proved | LWP-T4/T5 | Nine finite exponential return enclosures; normalized radius1/20! at M10,tau1; tau is not identified physical time and exp(L) need not equal W |
+| Infinite exponential transport | Conditional uniform-compact strong convergence proved | LWP-T6 | Actual all-order positivity remains required; finite common intervals do not assert that all source extensions exist |
+| Weighted-channel observer transport and nested cut update | Isometric transport and one exact boundary projection per direction proved | LOT-T1/T2 | Different embedding from LDC natural doubled-H inclusion; co-carried readings preserved, new full-cut reading includes a boundary term |
+| Continuation-window position as boundary overlap | p_N=h_N/W_N equals the sole nonzero compressed-boundary eigenvalue | LOT-T3/T4 | 27 actual transitions; compressed wave loss is 4p_N(1-p_N), not the full transport discrepancy 4p_N |
+| Exact fixed-polynomial saturation and increasing cut limit | One additional direction suffices for a fixed polynomial pair; conditional strong limit proved | LOT-T5/T6 | Actual all-order source positivity is still required for the infinite completion; no operator-norm or physical identification claim |
+| Exact source compatibility across carrier depth | Isometric compression, rank-one boundary and positive determinant innovation proved | LDC-T1/T2 | 27 actual finite transitions; unbounded actual-source positivity remains open |
+| Stable finite observer records and consistent deletion | Word probabilities stabilize through length 2N-1; factorial readings and adjacent squared-error law proved | LDC-T3 | 54 actual adjacent couplings through length19; L2 limit with error (c_1-c_2)/m is conditional on all-order source positivity |
+| Natural inclusion intertwines all finite cuts or waves | Obstructed under strict source growth | LDC-T4 | Deeper cut compression has nonzero positive defect; specified record probabilities still stabilize exactly; physical interpretation open |
+| Connected actual-source positivity atlas | Six uniform certificates glue at fixed order | LAA-T3 through LAA-T5 | Both 3x3 forms for every real s in [27,35], both 4x4 on [28,34]; ten directions only at s=29,31,33; no all-depth or physical propagation claim |
+| Finite-jet recentering with retained source error | Exact positive differentiated tail and polynomial composition proved | LAA-T1/T2 | Original source, degree and cumulative disk budget retained; a shifted polynomial is not a new exact source jet; fresh source evaluations enable legitimate restart |
+| Fresh twenty-layer source jets at s=31 and s=33 | Both 10x10 forms and all 210 binomial readings positive at each | LAA-T5 and native certificate | Composite source label allowed; rebuilt rational models differ, s=33 fit has unfitted s=35 error below 1.971e-35; no identification of their poles with source zeros |
+| Actual finite-order positivity on continuous anchor intervals | Uniform source-error and polynomial-pullback certificate proved and executed | LAT-T3 through LAT-T5 | Both 3x3 forms on rho in [17/20,23/20], both 4x4 on [11/12,13/12]; finite order over a continuum is not all derivative orders |
+| Exact source layer flow and positive-model anchor semigroup | Hierarchy, coordinate/weight transport and invariant model poles/residues derived | LAT-T1/T2 | Finite hierarchy needs a next source layer; model poles are not identified xi zeros or physical masses |
+| Actual source tower through derivative 19 | Both 10x10 forms and 210 binomial readings positive | LAT-T5 and native certificate | At reference s=29; unfitted s=31 response error below 4.160e-35; no all-order source conclusion |
+| Sharp next-layer continuation and width transport | Necessary and sufficient two-layer windows and exact width recurrence proved | LCW-T1 through LCW-T3 | Universal membership of actual xi derivatives remains open; admissible chosen moments do not identify the source |
+| Actual single-point extension through derivative 17 | Both 9x9 forms and 171 binomial readings positive | LCW-T4/T5 and native certificate | Unfitted s=31 error below 1.412e-31; next c_18 window computed but actual derivative not evaluated; no physical identification |
+| Single-point infinite-layer cut condition | All-order determinant/binomial RH criterion and conditional strong cut limit proved | ILC-T1 through ILC-T3 | Actual universal source inequalities remain open; derivative depth, wave iteration and averaging have distinct limits |
+| Actual finite derivative tower and cut-wave realization | Sixteen source layers, both 8x8 forms and 136 binomial readings positive | ILC-T3 through ILC-T5 | Complete source tails retained; unfitted s=31 error below 6e-28; finite spectrum is not a uniform mass gap or electromagnetic identification |
+| Exact next-source acceptance and new prime direction | Sharp value/slope windows and covariant normalization proved; prime 29 accepted | PIW-T1 through PIW-T4 | Complete native source tails retained, nine selected prime directions positive, unfitted prime 31 error below 3e-17; all-order signs and full V24-plus-new positivity remain open |
+| Prime-content centre from three equal source readings | Automatic closure fails in the declared metric point model; good-prime local lifting is exact | POC-T1/T2 | Unique metric circumcentre need not be integral; determinant units give compatible local solutions, while bad-prime first layers may not lift |
+| Prime-sampled recovery of the actual RH response | All-order criterion and conditional convergence proved; eight-prime finite replay positive | POC-T3 through POC-T5, citing SE48/SE49 | Prime analytic density is established, but universal actual innovation positivity remains open; existing V24 subset only, no RH proof, improved global eta or physical identification |
+| Prime elementary additive observers in the inherited integral adapter | Classified exactly under the stated NM1 lattice and full modular action | POS-T1 through POS-T3 | Simple iff modulus prime; composites stable, carried prime layers and invariant coordinate content; module simplicity is not complex irreducibility or physical particle stability |
+| Arithmetic observer compatibility with curved TVSP transport | Constructed pathwise on moving lattices; fixed-lattice small-loop requirement obstructed | POS-T4 | Faithful NM1-to-TET frame map, full hierarchy intertwining, explicit holonomy conditions; no physical selection of the lattice or LMD embedding |
+| Mass or uniform energy gap from prime observer structure alone | Underdetermined by explicit compatible countermodels | POS-T5 | Arbitrary positive gaps and coherent depth-compatible vanishing-gap families; a source-selected physical energy/mass coupling remains open |
+| Source-calibrated nonlinear material measurement in LMD | Constructed at fixed spatial resolution, 0<h<1/2 | WCG-T1 through WCG-T5 | Exact Wick-density form and current domain, normalized geometry POVM, bounded metric and thresholded self-adjoint length; PCR-state h ell^-8 classical recovery; fixed-h raw point and ungated-mean obstructions; full detector flow covariance and spacetime remain open |
+| Phase-sensitive observer coordinates for the prepared density-response family | Constructed for the specified four-control family | PCR-T1 through PCR-T5 | Exact original-current means, global family identification, Kähler/Berry normalization and observed Darboux coordinates; controlled source lift and separate coherent material comparison; arbitrary-state tomography, finite-sample precision, pointwise quantum inverse and spacetime remain open |
+| Quantum response transport generated by density and coherent cuts | Constructed with declared coherent phase controls | DCD-T1 through DCD-T6 | Exact generator, unique two-cut weights, original current domains and pulse error bound; old flow-class obstruction and density-only material-metric nonidentifiability; laboratory control and conjugate-sensitive geometry remain open |
+| TVSP transport realized on existing quantum density-response states | Constructed in the selected LMD representation | QRT-T1 through QRT-T5 | Actual state-space intertwiner, unitary lift, density domains and nonzero unbinned response curvature; material/spacetime identification and source dynamical implementation remain open |
+| TVSP source layers to exponential observer transport | Constructed for the declared positive source connection | TET-T1 through TET-T6 | Retained transport jets, positive cut bridge, exact source paths, ordered correction and loop curvature; physical trajectory and continuum quantum-sector identification remain open |
+| TVSP-generated finite entry layers and curvature readout | Constructed in one declared source context | TLM-T1 through TLM-T5 | Exact point recovery, faithful algebraic matrix encoding and selected Hessian curvature; no positive jet *-representation or physical space quantization |
+| Finite quadratic-observer representation and verification | Closed within the declared finite contract | CHD-1/2/3; finalized eight-page manuscript v1.0 | Quadratic observables, calibrated finite carrier, declared linear transport and retained coherent record |
+| Regular homogeneous V=0 matter-free quantum geometry sector | Closed for the selected quantization | HQS-T1 through HQS-T5; HQS-1 native packet | Product ordering; regular-clock averaging; both momentum signs; selected reduced Fourier matching and physical observable domains |
+| Local V=0 matter-free quantum constraint algebra | Closed for the selected reversed-vacuum current representation | LQA-T1 through LQA-T6; LQA-1 native packet | Positive kinematic norm and all-mode commutators on a common algebraic domain; no physical state-space closure |
+| Selected regular local physical solution sector | Closed for the declared pairing and averaging prescription | LPS-T1 through LPS-T4 | All Fourier constraints solved in test dual; positive physical quotient and HQS observable intertwiner; LSC now proves regular oscillator completeness and conditional measure uniqueness; other quantizations remain separate |
+| Classical regular local reduction and relational circumference | Closed on the nowhere-zero-current patch | LPS-T5 through LPS-T7 | Actual local gauge reduction to (Q,P); reduced quantization of relational length; pointwise quantum field operator not constructed |
+| Full continuous test-dual kernel of the fixed real-zero-mode representation | Closed for compact smooth zero modes times finite oscillator tests | LSC-T1 through LSC-T4 | All-level cyclicity; one-dimensional fiber kernel iff a_0 b_0=0; complete distributional axis decomposition; not other representations |
+| Regular physical measure with inherited observable contract | Unique up to normalization | LSC-T5 | Requires momentum-multiplier compatibility, the fixed HQS Q expression and its full-line matching; constraints alone do not fix the measure |
+| Complementary P=0,K!=0 physical clock sector | Closed for the declared quantization | CCS-T1 through CCS-T4 | Actual local affine reduction; universal all-mode dressing; positive physical norm; self-adjoint reduced scalar observables; selected matching |
+| Common physical completion of both noncritical axes | Closed for one punctured-plane averaging prescription | CCS-T5 | H_P direct_sum H_K; relative weights selected by common normalization, not forced by constraints |
+| Extension of the unchanged average through the joint origin | Obstructed on nonzero-origin smooth tests | CCS-T6; COS-T3 through COS-T5 | Exact logarithmic coefficient; no single normalization retains both scales; positive all-test extension cannot retain the old momentum adjoints |
+| Critical classical orbit quotient and observable separation | Closed under the smooth connected-gauge contract | COS-T1 and COS-T2 | Labels (Q_0,Phi) remain distinct orbits; globally continuous Dirac observables cannot distinguish them; restricted two-form zero |
+| Normalized origin average and maximal finite regular test domain | Closed for the declared Gaussian prescription | COS-T3 and COS-T4 | Origin quotient C; unscaled finite domain e_0=0 retains H_P direct_sum H_K; separate quotient maps, free relative assembly normalization |
+| Global weak Dirac dilation algebra | Constructed with self-adjoint physical realizations | COS-T6 | D_P=P Q_*, D_K=K Phi_av; affine commutators and explicit domains; zero origin action; no branch coupling or physical time law |
+| Globally smooth classical Dirac value algebra | Classified for the selected smooth source | GOA-T1 and GOA-T2 | Values c+Pa and c+Kb with one critical constant; smooth periodic Hamiltonian lifts; finite classical flows preserve branch and sign |
+| Quantum orientation mixing and phase readout | Constructed for explicit self-adjoint nonlinear probes | GOA-T4 and GOA-T5 | Inherited full-line matching and symmetric reduced ordering; contrast -3/50, small-unitary-parameter coefficient 1/768; no physical time law |
+| Minimal and enlarged completed quantum observable algebras | Classified for the declared generators and double-commutant completion | GOA-T3 and GOA-T6 | Five affine blocks become three branch blocks; orientation phase readable; inter-branch/origin coupling not constructed |
+| Added ideal clock constraint and apparatus physical norm | Closed for the stated reduced extension | RPM-T1 and RPM-T2 | C=W Pi_T W^*; explicit domain, generalized histories, positive group average and Dirac readout; ideal clock and coupling supplied |
+| Physical phase measurement instrument and readout statistics | Constructed for the chosen Gaussian pointer | RPM-T3 and RPM-T4 | Normalized instrument, contrast -3 kappa/50, exact variances and finite-run bound; no local source derivation or calibration |
+| CHD record interface for the physical pointer | Closed on the specified coherent image | RPM-T5 | Isometry, corner operation recovery and binned instrument; classical records do not retain all coherences |
+| Regular unreduced classical apparatus lift | Closed for the explicit global-pair extension on the current patch | RAL-T1 through RAL-T3 | Exact local constraint-ideal bracket, first-class action, geometry feedback and exact RPM P-sector recovery after reduction; quantization choices retained |
+| Fixed-coordinate-window localization of that coupling | Obstructed for every nonconstant prescribed window | RAL-T4 | Nonzero w' residual on the common constraint surface; dynamical material references and modified constraints are outside this no-go scope |
+| Dynamical material-window classical extension | Closed for the selected regular canonical reference model | MRF-T1 and MRF-T2 | Local h_ref=(phi'/p)rho Z', d_ref=rho Z'; all-smearing closure and exact residual cancellation; reference momentum must respond |
+| Complete regular material-coordinate physical quotient | Constructed as a canonical profile field theory | MRF-T3 | Gauge-invariant r(z),m(z), integral m delta r; global degree-one rod and nonzero-current patch; no quantum measure inferred |
+| Material-window feedback and classical RPM comparison | Closed for the declared pulse model | MRF-T4 and MRF-T5 | Exact pointer recovery from homogeneous initial data; nonconstant windows excite profiles; global-P probe remains nonlocal; P-independent alternative has supported response |
+| Canonical source bridge and exact material-profile pulse | Closed classically on the frozen regular MRF patch | MPQ-T1 and MPQ-T2 | Explicit commuting gauge momenta; global physical chart makes every G_w linear; no automatic quantum lift of the nonlinear map |
+| Positive continuum reduced profile representation and domains | Constructed for the declared Gaussian affine contract | MPQ-T3 and MPQ-T4 | Complete separating adapted classical chart, smeared self-adjoint quantum observables and strong cutoff limit; covariance and orientation contract selected, raw nonlinear geometry not supplied |
+| Material-profile clock physical norm and quantum measurement | Closed for that reduced representation and ideal apparatus | MPQ-T5 and MPQ-T6 | Derived clock quotient, generalized histories, normalized instrument, exact conjugate backreaction and coherent classical limit; no unreduced source averaging inferred |
+| Identification with the inherited orientation-mixing RPM quantization | Obstructed under an orientation-and-probe preserving intertwiner | MPQ-T7 | New probe preserves the orientation blocks; old F mixes sign(P); classical readout recovery remains valid |
+| Source embedding chart and strongly invariant probe representative | Constructed on the frozen regular MRF patch | IGQ-T1 | Actual source moment maps, common integer lift quotient and off-shell physical-conjugate correction; probe differs by the classical constraint ideal, quantum representative choice declared |
+| Direct forward-embedding Gaussian gauge lift | Obstructed for every non-rigid smooth circle diffeomorphism | IGQ-T2 | Specified log-derivative covariance and configuration multiplication contract; path variation proves singularity, despite nonsingular finite marginals; other measure classes remain possible |
+| Finite source gauge unitaries in inverse embeddings | Constructed for the selected positive continuum measure | IGQ-T3 and IGQ-T4 | Ramer hypotheses checked, genuine finite group law and each flow's self-adjoint domain; no common differentiated core or LQA intertwiner inferred |
+| Normalizable gauge kernel and positive partial rigging | Normalizable kernel zero; relative-rotation generalized quotient constructed | IGQ-T5 | Subgroup average is positive but rotations are not normal; no iterative full gauge reduction follows |
+| Central integer gauge quotient and residual group action | Closed for the explicit weighted sequence average | CGD-T1 | Positive periodization, completed H_c and full remaining gauge-group intertwiner; central normal subgroup, no new physical periodic-clock assumption |
+| Full continuous invariant dual of the weighted zero-mode test space | Exactly zero for Phi_Z | CGD-T2 | Exact topological coinvariants; all relative-coordinate polynomial decay weights included; stronger residual shape/angle test topologies are not excluded |
+| Common source core and all-smearing quantum H/D algebra | Closed after the proved central gauge reduction | CGD-T3 and CGD-T4 | C6 extension and stated Shimomura density theorem; common mixed-product domain, essential self-adjointness for real smearings, zero central term; separate original nonlinear field operators and other orderings not constructed |
+| Residual gauge density and doubled-covariance functional | Constructed on an explicit stronger test topology | RGR-T1 through RGR-T4 | Conditional Fourier determinant and rough-profile contraction proved before applying Ramer; kinematic covariance unchanged; full finite-group invariance and compatible common core |
+| Selected positive full source gauge sector and MPQ recovery | Constructed for the explicit rank-one pairing | RGR-T5; IGQ-T6 | Nonzero invariant functional, derived positive norm and onto MPQ spectral-domain intertwiner; one channel for this form, not classification of the whole invariant dual |
+| Uniqueness/completeness of residual gauge physical pairing | Open beyond the Gaussian scale family | RGR-T4/T5 | Covariance scale 2 is forced within the stated Gaussian integration family; additional distributions, positive forms and larger observable contracts remain unclassified |
+| Resolved original material geometry measurement | Constructed under an additional coherent-state POVM contract | RMG-T1 through RMG-T3 | Normalized probabilities on existing physical space; bounded geometry readings, dense r/m moment domains and positive self-adjoint m mean operators; no sharp continuum r field or new source apparatus |
+| Raw point geometry at unlimited resolution and fixed hbar | Obstructed for this measurement prescription | RMG-T4 | Vacuum r_N point laws are not tight; conjugate variance grows as hbar N^9/9; not a no-go for all renormalized geometry |
+| Mean circumference and controlled classical geometry recovery | Vacuum mean length diverges already at N=0; bounded readings recover classically | RMG-T4/T5 | hbar N^15 -> 0 suffices for C^2 profile and probabilistic coframe/length recovery; unbounded moments need not converge |
+| Countable continuum measurement and fixed-hbar coarse source geometry | Constructed under the declared resolvent response | CMG-T1 through CMG-T3 | Exact RMG finite marginals, H^3/C^2 outcomes for all normal states, normalized threshold/rejection effects and controlled finite-bin instruments; scale is selected |
+| Accepted circumference mean operator and physical domain | Positive self-adjoint operator constructed from a dense closed form | CMG-T4 | Vacuum and finite Hermite states have all finite accepted-length moments; no guarantee for every normal state; rejection probability is retained |
+| Removal of coarse geometry calibrations | Obstructed for the raw measurement prescription | CMG-T5 | Removing threshold restores infinite vacuum mean length even after smoothing; removing response scale at fixed hbar destroys accepted point tightness |
+| Classical recovery of actual accepted-length moments | Proved under a sufficient resolution/noise budget | CMG-T6 | hbar ell^(-15) -> 0 and fixed threshold below classical minimum density; acceptance tends to one; no fixed-hbar calibration-free field limit |
+| Joint geometry readout from the frozen J-only apparatus | Obstructed within the decomposable-interaction class | MDD-T1 | All effects are configuration multipliers; independent probes and arbitrary probe-only processing do not recover conjugate phase; other system controls excluded |
+| Additional joint-detector source lift and quantum dilation | Constructed under a matched Gaussian probe contract | MDD-T2 and MDD-T3 | Finite classical first-class lift and feedback; countable reduced quantum rotation realizes exactly RMG/CMG; no local detector or all-unreduced-ordering claim |
+| Relational joint-apparatus norm and physical instruments | Constructed with controlled finite-bin cutoff limits | MDD-T4 | Positive clock quotient, specified domains and actual probe instrument; terminal quadrature PVM declared; not necessarily the earlier square-root instrument |
+| Joint-readout noise and original J-density calibration | Exact within the selected representation and preparation | MDD-T5 | Added variance product hbar^2/4 per matched mode; calibrated J first-moment form equals the original observable; noisy POVM differs from spectral measurement |
+| Resolution-independent smooth adapted readings | Constructed on the full unconditioned detector record | MDD-T5 | Known inverse filter acts on smooth test functions; inverse high-mode gain unbounded; retaining rejected records required; no sharp nonlinear point geometry inferred |
+| Total physical material-reference momentum | Self-adjoint observable constructed on the selected physical space | MRM-T1/T2 | Exact source current, polynomial graph core, full spectral domain, spectrum 2 pi hbar Z and strong resolvent cutoff; not positive energy or an added gauge constraint |
+| Charge feedback, ideal spectral readout and classical recovery | Closed under the stated reduced apparatus contract | MRM-T3 | Exact unchanged J-pulse balance, positive clock quotient, phase-sensitive charge law and coherent variance of order hbar; classical source lift is local on the regular patch, quantum ordering chosen after reduction |
+| Raw joint-detector estimate of the total charge | No tight vacuum continuum law, even after scalar subtraction | MRM-T4 | Correct finite first-moment operator but explicit Laplace convolution concentration bound; does not obstruct the valid spectral charge observable or every alternative estimator |
+| Nonconstant local Weyl-current vacuum domain | Obstructed for the specified cutoff with scalar or linear counterterms | MRM-T5 | General second-chaos norm divergence; does not exclude other domains, strong resolvent limits or all renormalizations |
+| Canonical non-rigid physical material-flow implementation | Obstructed in the selected physical Gaussian measure class | MRM-T6, reusing IGQ-T2 | Full configuration spectral action is singular; equivalent density weights and spectator multiplicities do not fix it; other representations and the distinct inverse-embedding source gauge action are outside this obstruction |
+| Local material flows in an alternative reduced representation | Constructed with self-adjoint Stone domains | LMD-T1/T2/T5 | Logarithmic scalar covariance and exact Gaussian-equivalence proof; different configuration measure class from MPQ; not an equivalence of the old quantum observable contracts |
+| Renormalized material density and corrected flow law | Constructed in the declared L2 regime | LMD-T3/T4 | Positive Wick random measure for dimensionless 0<hbar<1; exact density covariance requires 1+hbar/2 instead of the classical shift 1; no pointwise density function |
+| Corrected local-current feedback and classical recovery | Closed for the selected reduced observable contract | LMD-T5/T6 | Mass spectral subspaces justify domains and pulse balance; smooth coherent current and smeared density concentrate classically; original inverse geometry and independently ordered unreduced comparison remain open |
+| Automatic extension of the scalar logarithmic prescription to spatial 3D | Obstructed by an explicit volume-preserving shear | LMD-T7 | T^3 Fourier-ray variance ratio 1/27 gives singular measures; no exclusion of tensor gravity or other representations, and no 3+1 gravitational constraint construction |
+| Full local physical quantum LNC construction | Open | LSC kernel; LPS/CCS sectors; COS critical quotient; GOA observables; RPM apparatus; RAL lift; MRF reference; MPQ profiles; IGQ gauge representation; CGD core; RGR selected rigging; LMD alternative local flow/density | Nonlinear quantum geometry and ordering comparison, fully local apparatus, inter-branch coupling, representation selection, matter and potentials remain open |
+| Physical 3+1 quantum gravity | Open | No complete construction or calibrated gravitational experiment supplied | Dynamics, physical identification, constraints, controlled limits and distinguishing observations remain required |
+| Faster-than-light gravitational information transfer | Conditional mathematical mechanism only | GSA-1 | Branch-sensitive law is additional; no physical implementation or matched light-arrival result |
+| RH and Yang--Mills claims elsewhere | Not adjudicated in this pass | No new cross-repository proof audit claimed | Requires their own source-level obligation ledger |
+
+## What changed in this pass
+
+LMD-1 supplies a selected alternative to the representation obstructed
+by MRM: an actual continuum Gaussian local-flow action, its self-adjoint
+generators and a positive Wick density measure. The exact density law
+requires a stated quantum shift 1+hbar/2. Domain-controlled feedback and
+coherent classical recovery follow. The old MPQ/RGR contract remains
+frozen; its configuration representation is not unitarily identified
+with the new one, and its pointwise inverse geometry is not recovered.
+
+The 3D shear calculation is an explicit obstruction to extending this
+particular scalar covariance to arbitrary spatial diffeomorphisms.
+It is not a full 3+1 construction or a no-go for other gravity models.
+Known Gaussian-equivalence and multiplicative-chaos methods are credited.
+
+The native packet has 103 exact checks, 8 symbolic proofs/replays and
+28 negative controls; all 42 integrated stages pass locally.
+These finite checks are distinct from the written analytic proofs.
+Fable's separate bridge at 97bb7fe was read and replayed: its core-closure
+classification is useful under its dependencies, while full-Psi density
+and three listed corrections remain outstanding. No uniqueness result
+from that unmerged report is imported. Its next prompt is in LMD's
+FABLE_REVIEW.md; Codex continues the physical-geometry track.
+
+### Previous MRM endpoint
+
+MRM-1 constructs an original source charge beyond the J-density algebra:
+the total reference momentum has a self-adjoint domain, spectrum,
+controlled cutoff, exact apparatus feedback and coherent classical
+recovery. Its ideal spectral measurement can distinguish conjugate-phase
+states with identical J laws.
+
+The same quantity's raw MDD joint-record product has no tight vacuum
+continuum limit. This measurement obstruction is separated from the
+existence of the charge operator. Nonconstant local windows additionally
+have a divergent second-chaos vacuum cutoff and, under the exact finite
+canonical-flow contract, a Gaussian measure-class obstruction. The latter
+reuses the frozen IGQ proof in the physical factor. No blanket local
+observable nonexistence or change to the source gauge representation
+is asserted.
+
+All frozen packets remain unchanged. The native regression packet has
+157 exact checks, 10 symbolic certificates/replays and 25 negative
+controls; all 41 integrated stages pass locally. Continuum proofs
+remain separately written and scoped. Fable's corrected external report
+at a9f44d5 was read and replayed, without a merge or new uniqueness
+dependency. Its next task is the infinitesimal-constraint to finite-group
+invariant-dual bridge in the full source test topology; Codex continues
+physical geometry and observable representation choices.
+
+### Previous MDD endpoint
+
+MDD-1 turns the prescribed joint geometry POVM into an explicit additional
+apparatus construction. A finite classical source lift, feedback equations,
+matched Gaussian probe, countable reduced rotation and complementary
+output readout reproduce RMG/CMG exactly. The clock physical norm and
+induced finite-bin instruments, including their cutoff limits, are stated.
+
+It proves that the unchanged J-only interactions cannot produce that
+phase-sensitive readout. The extra coupling is therefore required within
+the specified protocol class. Noise and a Gaussian bias correction now
+calibrate the joint detector against the original J observable. Smooth
+adapted readings have an exact resolution-independent full-record law;
+this uses an inverse filter unbounded on high modes and does not erase
+rejection probabilities or establish sharp metric/curvature fields.
+
+All frozen packets remain unchanged. The native regression packet has
+272 exact checks, 11 symbolic certificates/replays and 18 negative
+controls; analytic proofs and continuum claims are separate. The
+integrated runner passes all 40 stages locally. Fable's ergodicity
+report is under a disjoint correction/audit task, with no merge or new
+uniqueness dependency in this pass.
+
+### Previous CMG endpoint
+
+CMG-1 extends the finite RMG coherent measurements to one normalized
+countable POVM on the same physical Hilbert space. A stated resolvent
+response produces coarse source geometry with a Fourier cutoff limit
+at fixed hbar, for all normal states. A stated minimum density threshold
+returns either the original inverse-chart geometry or a recorded
+no-reading flag; rejected runs and their probabilities are not erased.
+
+The accepted circumference now has a densely defined closed positive
+form and a self-adjoint mean operator. The vacuum and finite Hermite
+states have finite moments of every finite order. A sufficient
+hbar ell^(-15) -> 0 classical limit recovers actual length moments,
+in addition to profiles and bounded statistics.
+
+Two separate obstructions remain proved: smoothing alone leaves the
+vacuum mean length infinite, while removing spatial response at fixed
+hbar destroys point tightness even among accepted runs. The result
+therefore closes a declared coarse detector/domain construction, not
+calibration-independent quantum geometry. Fable continues its disjoint
+residual-Diff ergodicity task; its latest report is not a merged dependency.
+
+### Previous RMG endpoint
+
+RMG-1 applies a specified finite-resolution coherent-state joint
+measurement to the already constructed positive physical space. Its
+nonlinear outputs are the original reduced profiles, not just the
+adapted chart. The normalization, moment domains, positive momentum
+mean operators and phase-sensitive reading are explicit. Source global
+P feedback and reference momentum reconstruction are retained.
+
+This prescription fails to produce a raw point continuum geometry at
+fixed hbar: vacuum r readings escape every bounded interval. A separate
+tail calculation gives infinite vacuum mean circumference even at N=0.
+Bounded geometry measurements remain valid. The sufficient simultaneous
+limit hbar N^15 -> 0 instead recovers smooth classical geometry in C^2
+and bounded continuous geometry statistics. Thus the next composite
+task has a precise obstruction and recovery budget; continuum quantum
+geometry is not marked closed.
+
+The external agent keeps the independent full residual-Diff invariant
+dual/uniqueness task. No duplicate classification or merge of its report
+branch occurs in this development.
+
+### Previous RGR endpoint
+
+RGR-1 constructs the nonzero generalized physical functional that was
+missing at the CGD endpoint. The actual angular Jacobian cancels a
+computed conditional shape determinant. A continuous finite energy
+difference on H^3 configurations, together with a checked Fourier
+contraction limit, identifies the existing square-root density with the
+ordinary density of a doubled-covariance Gaussian. Integration against
+that second measure is continuous on a specified stronger complete test
+space and invariant under the entire residual gauge group.
+
+An explicit common constraint core supports differentiation of the
+functional. Its selected positive rank-one form has quotient C. Tensoring
+with MPQ gives an actual onto physical map and a unitary intertwining
+the norm, maximal spectral domains and chosen measurement instrument.
+The central-periodization intertwiner also lifts the functional to the
+full finite source group before central reduction. Kinematic covariance,
+source action and every predecessor packet are unchanged.
+
+This is a selected physical-sector construction. It does not prove that
+every invariant distribution lies in that sector or that every positive
+pairing must select it. The Gaussian scale-family uniqueness is explicitly
+limited. General continuum arguments and the external Gaussian theorem
+are distinct from the exact native regression witnesses.
+
+### Previous CGD endpoint
+
+CGD-1 uses the central integer relative-lift subgroup already present in
+IGQ's actual connected source gauge group. Its positive sequence average
+is explicit, and the entire remaining gauge group descends to the quotient.
+This supplies a valid reduction step that the nonnormal real-rotation
+subgroup could not supply.
+
+The descended representation extends continuously to finite-C6 circle
+diffeomorphisms. The stated published smooth-vector theorem supplies a
+dense common invariant source core. Real source smearings are essentially
+self-adjoint there, and the actual chiral/H/D quantum algebra closes for
+arbitrary smooth smearings without a central term. This is after proved
+central gauge reduction and under the recorded canonical quantization;
+it does not assert equivalence to every original-field ordering.
+
+The full continuous invariant dual on the chosen rapid-sequence topology
+is exactly zero: the central coinvariants are the residual Hilbert space,
+which has no full invariant vector. Hence that topology admits no nonzero
+continuous full Dirac rigging. Stronger residual test topologies remain
+possible and necessary for a further generalized construction. This is
+not a theorem of physical-state nonexistence in all completions.
+
+MPQ's physical observables and apparatus pass exactly through the central
+quotient on their spectator factor. Their recovery by complete source
+reduction still needs the residual positive pairing and channel count.
+Every predecessor remains frozen. General analytic proofs and the stated
+external theorem input are separate from finite native witnesses. No
+physical 3+1 closure is claimed.
+
+## Next decisive obligation
+
+Reuse RGR's selected full source physical pairing and its actual MPQ
+norm/observable intertwiner. Independently review the conditional
+determinant and rough Gaussian contraction proof, then investigate the
+complete invariant dual and the observable conditions that might select
+or enlarge this sector. The full kernel must not be declared one-channel
+just because the exhibited rank-one positive form has that quotient.
+Another source ordering needs its own domain and comparison.
+
+On the geometry track, reuse CMG's countable measurement, cutoff limit
+and dense accepted-length domain. Establish source/calibration
+compatibility and whether a justified resolution-independent observable
+survives, or prove a broader obstruction with stated hypotheses. Avoid
+restarting with an unrelated selected detector. The external agent owns
+Condition (L) and the required spectator-form repair for actual
+residual-Diff completeness/uniqueness; do not repeat the selected
+existence construction. Source selection of the covariance, critical
+patches, fully local apparatus, physical 3+1 recovery and calibration remain
+explicit. Reuse the existing states, domains, cutoff and measurement proofs
+rather than adding new model ingredients or restarting reduction.
+
+## Evidence convention
+
+Each closure keeps its assumptions, general written proof, finite executable
+witnesses, negative controls and unresolved physical identifications together.
+Standard theorems are credited. A passed numerical or algebraic replay
+does not upgrade a model choice into a derived law, or a finite fixture into
+a continuum proof-assistant certificate.

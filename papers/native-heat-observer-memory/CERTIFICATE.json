@@ -1,0 +1,3431 @@
+{
+  "protocol": "HCM1_SOURCE_HEAT_OBSERVER_MEMORY_V1",
+  "status": "PASS_SOURCE_HEAT_OBSERVER_MEMORY",
+  "source_pins_sha256": "abffa1581ea9a25bcdd95e8338d891c264253f65f426f81e27344b412cc8e477",
+  "presentations": [
+    {
+      "name": "heat_phase_variables",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "x",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "y",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "commute_1_0",
+            "lhs": [
+              "y",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "y"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Central scalar coefficients in the retained heat block"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "55c48e973ac7ae3a1a826645d58b46a8fb5f16f2aafb0e22c8e79364aba98763",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 0,
+        "resolutions": [],
+        "open": []
+      }
+    },
+    {
+      "name": "EMK_source_reflection",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "r",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "k",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "rr",
+            "lhs": [
+              "r",
+              "r"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "-1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Native circular generator"
+          },
+          {
+            "id": "kk",
+            "lhs": [
+              "k",
+              "k"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Native reflection"
+          },
+          {
+            "id": "kr",
+            "lhs": [
+              "k",
+              "r"
+            ],
+            "rhs": [
+              [
+                [
+                  "r",
+                  "k"
+                ],
+                [
+                  "-1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Native anti-commutation"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 4,
+        "resolutions": [
+          {
+            "word": [
+              "r",
+              "r",
+              "r"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              0,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "k",
+              "r",
+              "r"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              2,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r",
+                      "k",
+                      "r"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "r",
+                    "k",
+                    "r"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "kr",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "r",
+                    "r",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "rr",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "k",
+              "k",
+              "k"
+            ],
+            "first": [
+              1,
+              0
+            ],
+            "second": [
+              1,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "k",
+              "k",
+              "r"
+            ],
+            "first": [
+              1,
+              0
+            ],
+            "second": [
+              2,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "r",
+                      "k"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "r",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "kr",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "r",
+                    "k",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kk",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "r"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    },
+    {
+      "name": "common_gain_Bezout",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "u",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "uv",
+            "lhs": [
+              "u",
+              "v"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Nonzero common gain and its inverse"
+          },
+          {
+            "id": "vu",
+            "lhs": [
+              "v",
+              "u"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Nonzero common gain and its inverse"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 2,
+        "resolutions": [
+          {
+            "word": [
+              "v",
+              "u",
+              "v"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              1,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "u",
+              "v",
+              "u"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              1,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "words:exact_two_time_variance",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x",
+              "x"
+            ],
+            [
+              "144/625",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "y"
+            ],
+            [
+              "-144/625",
+              "0"
+            ]
+          ],
+          [
+            [
+              "y",
+              "x"
+            ],
+            [
+              "-144/625",
+              "0"
+            ]
+          ],
+          [
+            [
+              "y",
+              "y"
+            ],
+            [
+              "144/625",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x",
+              "x"
+            ],
+            [
+              "144/625",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "y"
+            ],
+            [
+              "-288/625",
+              "0"
+            ]
+          ],
+          [
+            [
+              "y",
+              "y"
+            ],
+            [
+              "144/625",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "55c48e973ac7ae3a1a826645d58b46a8fb5f16f2aafb0e22c8e79364aba98763",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "x",
+                "y"
+              ],
+              [
+                "144/625",
+                "0"
+              ]
+            ],
+            [
+              [
+                "y",
+                "x"
+              ],
+              [
+                "-144/625",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "y",
+              "x"
+            ],
+            "coefficient": [
+              "-144/625",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:source_reflection_square",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "k",
+              "k"
+            ],
+            [
+              "49",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "k",
+              "k"
+            ],
+            [
+              "168",
+              "0"
+            ]
+          ],
+          [
+            [
+              "k",
+              "r",
+              "k"
+            ],
+            [
+              "168",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "k",
+              "r",
+              "k"
+            ],
+            [
+              "576",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "625",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "cac051354932cf57103d11c0b148d0b71545a7052ced8b08797b2ae2816fd173",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [],
+              [
+                "-625",
+                "0"
+              ]
+            ],
+            [
+              [
+                "k",
+                "k"
+              ],
+              [
+                "49",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "k",
+                "k"
+              ],
+              [
+                "168",
+                "0"
+              ]
+            ],
+            [
+              [
+                "k",
+                "r",
+                "k"
+              ],
+              [
+                "168",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "k",
+                "r",
+                "k"
+              ],
+              [
+                "576",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "r",
+              "k",
+              "r",
+              "k"
+            ],
+            "coefficient": [
+              "576",
+              "0"
+            ],
+            "rule": "kr",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "k",
+              "k"
+            ],
+            "coefficient": [
+              "-576",
+              "0"
+            ],
+            "rule": "rr",
+            "position": 0
+          },
+          {
+            "word": [
+              "k",
+              "r",
+              "k"
+            ],
+            "coefficient": [
+              "168",
+              "0"
+            ],
+            "rule": "kr",
+            "position": 0
+          },
+          {
+            "word": [
+              "k",
+              "k"
+            ],
+            "coefficient": [
+              "625",
+              "0"
+            ],
+            "rule": "kk",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:source_gain_Bezout_inverse",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "934b414f242ce4cd232ba656b23540ca7eb05eb3b34aa96f6fcf1868b3dc04b8",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "u"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "u",
+                "v",
+                "v",
+                "v",
+                "v",
+                "v",
+                "v",
+                "v",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 8
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 7
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 6
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 5
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 4
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "u",
+              "v",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 3
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "u",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 2
+          },
+          {
+            "word": [
+              "u",
+              "u",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "source:published_H",
+      "passed": true
+    },
+    {
+      "name": "source:factor",
+      "passed": true
+    },
+    {
+      "name": "source:shape_self_adjoint:0",
+      "passed": true
+    },
+    {
+      "name": "source:shape_self_adjoint:1",
+      "passed": true
+    },
+    {
+      "name": "source:published_vectors",
+      "passed": true
+    },
+    {
+      "name": "source:published_protocol_tensor",
+      "passed": true
+    },
+    {
+      "name": "source:actual_heat_block",
+      "passed": true
+    },
+    {
+      "name": "basis:centered:0",
+      "passed": true
+    },
+    {
+      "name": "basis:reference_Gram:0:0",
+      "passed": true
+    },
+    {
+      "name": "basis:reference_Gram:0:1",
+      "passed": true
+    },
+    {
+      "name": "basis:reference_Gram:0:2",
+      "passed": true
+    },
+    {
+      "name": "basis:centered:1",
+      "passed": true
+    },
+    {
+      "name": "basis:reference_Gram:1:0",
+      "passed": true
+    },
+    {
+      "name": "basis:reference_Gram:1:1",
+      "passed": true
+    },
+    {
+      "name": "basis:reference_Gram:1:2",
+      "passed": true
+    },
+    {
+      "name": "basis:centered:2",
+      "passed": true
+    },
+    {
+      "name": "basis:reference_Gram:2:0",
+      "passed": true
+    },
+    {
+      "name": "basis:reference_Gram:2:1",
+      "passed": true
+    },
+    {
+      "name": "basis:reference_Gram:2:2",
+      "passed": true
+    },
+    {
+      "name": "block:source_differential_intertwiner:0:0",
+      "passed": true
+    },
+    {
+      "name": "block:source_differential_intertwiner:0:1",
+      "passed": true
+    },
+    {
+      "name": "block:source_differential_intertwiner:0:2",
+      "passed": true
+    },
+    {
+      "name": "block:source_differential_intertwiner:1:0",
+      "passed": true
+    },
+    {
+      "name": "block:source_differential_intertwiner:1:1",
+      "passed": true
+    },
+    {
+      "name": "block:source_differential_intertwiner:1:2",
+      "passed": true
+    },
+    {
+      "name": "observer:orthonormal_rows",
+      "passed": true
+    },
+    {
+      "name": "observer:source_rates_in_retained_frame",
+      "passed": true
+    },
+    {
+      "name": "observer:minimal_rank_two",
+      "passed": true
+    },
+    {
+      "name": "observer:blind_third_direction",
+      "passed": true
+    },
+    {
+      "name": "observer:complete_repair_span",
+      "passed": true
+    },
+    {
+      "name": "observer:repaired_generator",
+      "passed": true
+    },
+    {
+      "name": "observer:exact_intertwiner",
+      "passed": true
+    },
+    {
+      "name": "leakage:initial_zero",
+      "passed": true
+    },
+    {
+      "name": "leakage:first_derivative",
+      "passed": true
+    },
+    {
+      "name": "defect:leading_coefficient",
+      "passed": true
+    },
+    {
+      "name": "defect:source_rate_difference",
+      "passed": true
+    },
+    {
+      "name": "defect:variance_coefficient",
+      "passed": true
+    },
+    {
+      "name": "memory:kernel_amplitude",
+      "passed": true
+    },
+    {
+      "name": "memory:decay_rate",
+      "passed": true
+    },
+    {
+      "name": "memory:integrated_tail_constant",
+      "passed": true
+    },
+    {
+      "name": "memory:hidden_initial_coefficient",
+      "passed": true
+    },
+    {
+      "name": "memory:strict_positive_heat_determinant",
+      "passed": true
+    },
+    {
+      "name": "memory:full_source_resolvent_matches_kernel:1/2",
+      "passed": true
+    },
+    {
+      "name": "memory:hidden_source_transfer_matches:1/2",
+      "passed": true
+    },
+    {
+      "name": "memory:full_source_resolvent_matches_kernel:1",
+      "passed": true
+    },
+    {
+      "name": "memory:hidden_source_transfer_matches:1",
+      "passed": true
+    },
+    {
+      "name": "memory:full_source_resolvent_matches_kernel:3",
+      "passed": true
+    },
+    {
+      "name": "memory:hidden_source_transfer_matches:3",
+      "passed": true
+    },
+    {
+      "name": "bounds:positive_gap:1",
+      "passed": true
+    },
+    {
+      "name": "bounds:lower_budget:1",
+      "passed": true
+    },
+    {
+      "name": "bounds:upper_budget:1",
+      "passed": true
+    },
+    {
+      "name": "bounds:increasing_enclosure:1",
+      "passed": true
+    },
+    {
+      "name": "bounds:positive_gap:6",
+      "passed": true
+    },
+    {
+      "name": "bounds:lower_budget:6",
+      "passed": true
+    },
+    {
+      "name": "bounds:upper_budget:6",
+      "passed": true
+    },
+    {
+      "name": "bounds:increasing_enclosure:6",
+      "passed": true
+    },
+    {
+      "name": "bounds:positive_gap:12",
+      "passed": true
+    },
+    {
+      "name": "bounds:lower_budget:12",
+      "passed": true
+    },
+    {
+      "name": "bounds:upper_budget:12",
+      "passed": true
+    },
+    {
+      "name": "bounds:increasing_enclosure:12",
+      "passed": true
+    },
+    {
+      "name": "bounds:one_tick_lower",
+      "passed": true
+    },
+    {
+      "name": "controls:eigenchannel_closed:1,0,0,0,0,0",
+      "passed": true
+    },
+    {
+      "name": "controls:eigenchannel_closed:0,0,1,0,0,0",
+      "passed": true
+    },
+    {
+      "name": "controls:eigenchannel_closed:0,0,0,0,1,0",
+      "passed": true
+    },
+    {
+      "name": "controls:isotropic_channel_closed",
+      "passed": true
+    },
+    {
+      "name": "phase:exact_EMK_generator",
+      "passed": true
+    },
+    {
+      "name": "phase:reflection",
+      "passed": true
+    },
+    {
+      "name": "phase:complementary_spectral_sectors",
+      "passed": true
+    },
+    {
+      "name": "phase:slow_sector_rate",
+      "passed": true
+    },
+    {
+      "name": "phase:fast_sector_rate",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:0",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:0",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:1",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:1",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:1",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:1",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:1",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:1",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:2",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:2",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:2",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:2",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:2",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:2",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:3",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:3",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:3",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:3",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:3",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:3",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:4",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:4",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:4",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:4",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:4",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:4",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:5",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:5",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:5",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:5",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:5",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:5",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:6",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:6",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:6",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:6",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:6",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:6",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:7",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:7",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:7",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:7",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:7",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:7",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:8",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:8",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:8",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:8",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:8",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:8",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:9",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:9",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:9",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:9",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:9",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:9",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:10",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:10",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:10",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:10",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:10",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:10",
+      "passed": true
+    },
+    {
+      "name": "record:round_trip:11",
+      "passed": true
+    },
+    {
+      "name": "phase:actual_source_intertwiner:11",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_sector:11",
+      "passed": true
+    },
+    {
+      "name": "record:canonical_scale:11",
+      "passed": true
+    },
+    {
+      "name": "phase:radial_rate:11",
+      "passed": true
+    },
+    {
+      "name": "phase:angular_rate:11",
+      "passed": true
+    },
+    {
+      "name": "record:zero_has_no_phase",
+      "passed": true
+    },
+    {
+      "name": "record:scale_boundary_half_open",
+      "passed": true
+    },
+    {
+      "name": "record:equal_discrete_labels",
+      "passed": true
+    },
+    {
+      "name": "phase:nonzero_initial_angular_velocity",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:0:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:0:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:0:0",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:0:0",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:0:3",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:0:3",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:1:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:1:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:1:0",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:1:0",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:1:3",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:1:3",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:2:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:2:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:2:0",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:2:0",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:2:3",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:2:3",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:3:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:3:-2",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:3:0",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:3:0",
+      "passed": true
+    },
+    {
+      "name": "chart:generator_intertwiner:3:3",
+      "passed": true
+    },
+    {
+      "name": "chart:transition_preserves_decoding:3:3",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:0:0",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:0:1",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:0:2",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:0:3",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:1:0",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:1:1",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:1:2",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:1:3",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:2:0",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:2:1",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:2:2",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:2:3",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:3:0",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:3:1",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:3:2",
+      "passed": true
+    },
+    {
+      "name": "UGD_label:cyclic_composition:3:3",
+      "passed": true
+    },
+    {
+      "name": "phase:source_keeps_zero",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:1",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:1",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:1",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:1",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:1",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:1",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:1/2",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:1/2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:1/2:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:1/2:2",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:1/2",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:1/2",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:1/2",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:1/2",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:2/3",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:2/3",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:2/3:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:2/3:2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:2/3:3",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:2/3:3",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:2/3",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:2/3",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:2/3",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:2/3",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:9/10",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:9/10",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:9/10:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:9/10:2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:9/10:3",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:9/10:3",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:9/10:5",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:9/10:5",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:9/10",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:9/10",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:9/10",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:9/10",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:16/25",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:16/25",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:16/25:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:16/25:2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:16/25:5",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:16/25:5",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:16/25",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:16/25",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:16/25",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:16/25",
+      "passed": true
+    },
+    {
+      "name": "gain:compatibility:7/12",
+      "passed": true
+    },
+    {
+      "name": "gain:root_free_recovery:7/12",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:7/12:2",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:7/12:2",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:7/12:3",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:7/12:3",
+      "passed": true
+    },
+    {
+      "name": "prime:exponents_match:7/12:7",
+      "passed": true
+    },
+    {
+      "name": "prime:Bezout_recovery:7/12:7",
+      "passed": true
+    },
+    {
+      "name": "prime:reconstructs_rational:7/12",
+      "passed": true
+    },
+    {
+      "name": "correction:spectral_inverse:7/12",
+      "passed": true
+    },
+    {
+      "name": "correction:identity:7/12",
+      "passed": true
+    },
+    {
+      "name": "correction:clock_mismatch_eigenvalues:7/12",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:compatibility:0",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:unique_endpoint_recovery:0",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:compatibility:1",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:unique_endpoint_recovery:1",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:compatibility:2",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:unique_endpoint_recovery:2",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:compatibility:3",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:unique_endpoint_recovery:3",
+      "passed": true
+    },
+    {
+      "name": "paired_phase:noncoprime_collision",
+      "passed": true
+    },
+    {
+      "name": "prime_phase:chosen_character_multiplicative",
+      "passed": true
+    },
+    {
+      "name": "reference:rational_transfer",
+      "passed": true
+    },
+    {
+      "name": "reference:rational_correction",
+      "passed": true
+    },
+    {
+      "name": "reference:premeasurement_target_recovered",
+      "passed": true
+    },
+    {
+      "name": "reference:fast_error_unit_norm",
+      "passed": true
+    },
+    {
+      "name": "reference:noise_bound_is_attained",
+      "passed": true
+    },
+    {
+      "name": "heat_phase_variables:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:exact_two_time_variance",
+      "passed": true
+    },
+    {
+      "name": "words:exact_two_time_variance:replay",
+      "passed": true
+    },
+    {
+      "name": "EMK_source:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:source_reflection_square",
+      "passed": true
+    },
+    {
+      "name": "words:source_reflection_square:replay",
+      "passed": true
+    },
+    {
+      "name": "gain_inverse:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:source_gain_Bezout_inverse",
+      "passed": true
+    },
+    {
+      "name": "words:source_gain_Bezout_inverse:replay",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "observer:single_channel_autonomous",
+      "rejected": true
+    },
+    {
+      "name": "observer:projector_is_spectral",
+      "rejected": true
+    },
+    {
+      "name": "memory:omit_kernel_changes_actual_resolvent:1/2",
+      "rejected": true
+    },
+    {
+      "name": "memory:omit_kernel_changes_actual_resolvent:1",
+      "rejected": true
+    },
+    {
+      "name": "memory:omit_kernel_changes_actual_resolvent:3",
+      "rejected": true
+    },
+    {
+      "name": "controls:positive_heat_implies_every_observer_closes",
+      "rejected": true
+    },
+    {
+      "name": "controls:zero_initial_readout_means_no_future_signal",
+      "rejected": true
+    },
+    {
+      "name": "controls:discard_hidden_initial_data",
+      "rejected": true
+    },
+    {
+      "name": "controls:zero_memory_tail",
+      "rejected": true
+    },
+    {
+      "name": "phase:single_complex_scalar_generator",
+      "rejected": true
+    },
+    {
+      "name": "record:labels_recover_residual",
+      "rejected": true
+    },
+    {
+      "name": "record:visible_reading_recovers_hidden_phase",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:1:-2",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:1:0",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:1:3",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:3:-2",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:3:0",
+      "rejected": true
+    },
+    {
+      "name": "chart:omit_conjugate_phase_factor:3:3",
+      "rejected": true
+    },
+    {
+      "name": "UGD_interface:numeral_product_equals_phase_composition",
+      "rejected": true
+    },
+    {
+      "name": "UGD_interface:neutral_digit_is_complex_zero",
+      "rejected": true
+    },
+    {
+      "name": "prime:same_support_implies_compatible_gains",
+      "rejected": true
+    },
+    {
+      "name": "gain:zero_supports_inverse",
+      "rejected": true
+    },
+    {
+      "name": "paired_phase:noncoprime_map_is_injective",
+      "rejected": true
+    },
+    {
+      "name": "paired_phase:single_fourth_power_recovers_phase",
+      "rejected": true
+    },
+    {
+      "name": "prime_phase:character_is_faithful",
+      "rejected": true
+    },
+    {
+      "name": "prime_phase:finite_phase_keeps_prime_powers",
+      "rejected": true
+    },
+    {
+      "name": "reference:correction_requires_only_current_visible_channel",
+      "rejected": true
+    },
+    {
+      "name": "integrity:corrupted_symbolic_witness",
+      "rejected": true
+    }
+  ],
+  "results": {
+    "source_tensor": [
+      [
+        [
+          "5/162",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "5/72",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "heat_block": [
+      [
+        [
+          "5/72",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "5/162",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "65/648",
+          "0"
+        ]
+      ]
+    ],
+    "observer": [
+      [
+        [
+          "3/5",
+          "0"
+        ],
+        [
+          "4/5",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "retained_observer": [
+      [
+        [
+          "3/5",
+          "0"
+        ],
+        [
+          "4/5",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "-4/5",
+          "0"
+        ],
+        [
+          "3/5",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ]
+    ],
+    "retained_generator": [
+      [
+        [
+          "-29/648",
+          "0"
+        ],
+        [
+          "1/54",
+          "0"
+        ]
+      ],
+      [
+        [
+          "1/54",
+          "0"
+        ],
+        [
+          "-1/18",
+          "0"
+        ]
+      ]
+    ],
+    "closure": {
+      "observer": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "rank": 2,
+      "ranks": [
+        1,
+        2
+      ],
+      "extra": 1
+    },
+    "hidden_initial_reading_derivative": "1/54",
+    "defect_leading_coefficient": "1/2916",
+    "memory_kernel": {
+      "amplitude": "1/2916",
+      "decay": "1/18",
+      "tail_prefactor": "1/162"
+    },
+    "phase_law": {
+      "alpha": [
+        "-65/1296",
+        "0"
+      ],
+      "beta": [
+        "7/1296",
+        "1/54"
+      ],
+      "reflection": [
+        [
+          [
+            "7/25",
+            "0"
+          ],
+          [
+            "24/25",
+            "0"
+          ]
+        ],
+        [
+          [
+            "24/25",
+            "0"
+          ],
+          [
+            "-7/25",
+            "0"
+          ]
+        ]
+      ],
+      "slow_projector": [
+        [
+          [
+            "16/25",
+            "0"
+          ],
+          [
+            "12/25",
+            "0"
+          ]
+        ],
+        [
+          [
+            "12/25",
+            "0"
+          ],
+          [
+            "9/25",
+            "0"
+          ]
+        ]
+      ],
+      "fast_projector": [
+        [
+          [
+            "9/25",
+            "0"
+          ],
+          [
+            "-12/25",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-12/25",
+            "0"
+          ],
+          [
+            "16/25",
+            "0"
+          ]
+        ]
+      ]
+    },
+    "phase_records": [
+      {
+        "input": [
+          "0",
+          "0"
+        ],
+        "record": {
+          "zero": true
+        }
+      },
+      {
+        "input": [
+          "1",
+          "0"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": 0,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      {
+        "input": [
+          "0",
+          "1"
+        ],
+        "record": {
+          "zero": false,
+          "a": 1,
+          "n": 0,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      {
+        "input": [
+          "-1",
+          "0"
+        ],
+        "record": {
+          "zero": false,
+          "a": 2,
+          "n": 0,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      {
+        "input": [
+          "0",
+          "-1"
+        ],
+        "record": {
+          "zero": false,
+          "a": 3,
+          "n": 0,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      },
+      {
+        "input": [
+          "1",
+          "1"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": 0,
+          "w": [
+            "1",
+            "1"
+          ]
+        }
+      },
+      {
+        "input": [
+          "-1",
+          "2"
+        ],
+        "record": {
+          "zero": false,
+          "a": 1,
+          "n": 1,
+          "w": [
+            "1",
+            "1/2"
+          ]
+        }
+      },
+      {
+        "input": [
+          "-3",
+          "-1"
+        ],
+        "record": {
+          "zero": false,
+          "a": 2,
+          "n": 1,
+          "w": [
+            "3/2",
+            "1/2"
+          ]
+        }
+      },
+      {
+        "input": [
+          "2",
+          "-3"
+        ],
+        "record": {
+          "zero": false,
+          "a": 3,
+          "n": 1,
+          "w": [
+            "3/2",
+            "1"
+          ]
+        }
+      },
+      {
+        "input": [
+          "1/16",
+          "1/32"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": -4,
+          "w": [
+            "1",
+            "1/2"
+          ]
+        }
+      },
+      {
+        "input": [
+          "16",
+          "24"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": 4,
+          "w": [
+            "1",
+            "3/2"
+          ]
+        }
+      },
+      {
+        "input": [
+          "2",
+          "0"
+        ],
+        "record": {
+          "zero": false,
+          "a": 0,
+          "n": 1,
+          "w": [
+            "1",
+            "0"
+          ]
+        }
+      }
+    ],
+    "common_gain_records": [
+      {
+        "u": "1",
+        "fast": "1",
+        "slow": "1",
+        "valuations": {},
+        "fast_valuations": {},
+        "slow_valuations": {},
+        "transfer": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "1"
+      },
+      {
+        "u": "1/2",
+        "fast": "1/512",
+        "slow": "1/16",
+        "valuations": {
+          "2": -1
+        },
+        "fast_valuations": {
+          "2": -9
+        },
+        "slow_valuations": {
+          "2": -4
+        },
+        "transfer": [
+          [
+            [
+              "521/12800",
+              "0"
+            ],
+            [
+              "93/3200",
+              "0"
+            ]
+          ],
+          [
+            [
+              "93/3200",
+              "0"
+            ],
+            [
+              "19/800",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "4864/25",
+              "0"
+            ],
+            [
+              "-5952/25",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-5952/25",
+              "0"
+            ],
+            [
+              "8336/25",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "512"
+      },
+      {
+        "u": "2/3",
+        "fast": "512/19683",
+        "slow": "16/81",
+        "valuations": {
+          "2": 1,
+          "3": -1
+        },
+        "fast_valuations": {
+          "2": 9,
+          "3": -9
+        },
+        "slow_valuations": {
+          "2": 4,
+          "3": -4
+        },
+        "transfer": [
+          [
+            [
+              "7424/54675",
+              "0"
+            ],
+            [
+              "13504/164025",
+              "0"
+            ]
+          ],
+          [
+            [
+              "13504/164025",
+              "0"
+            ],
+            [
+              "43184/492075",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "218619/12800",
+              "0"
+            ],
+            [
+              "-51273/3200",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-51273/3200",
+              "0"
+            ],
+            [
+              "21141/800",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "19683/512"
+      },
+      {
+        "u": "9/10",
+        "fast": "387420489/1000000000",
+        "slow": "6561/10000",
+        "valuations": {
+          "2": -1,
+          "3": 2,
+          "5": -1
+        },
+        "fast_valuations": {
+          "2": -9,
+          "3": 18,
+          "5": -9
+        },
+        "slow_valuations": {
+          "2": -4,
+          "3": 8,
+          "5": -4
+        },
+        "transfer": [
+          [
+            [
+              "13984384401/25000000000",
+              "0"
+            ],
+            [
+              "806038533/6250000000",
+              "0"
+            ]
+          ],
+          [
+            [
+              "806038533/6250000000",
+              "0"
+            ],
+            [
+              "756476739/1562500000",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "81990400/43046721",
+              "0"
+            ],
+            [
+              "-65521600/129140163",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-65521600/129140163",
+              "0"
+            ],
+            [
+              "852576400/387420489",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "1000000000/387420489"
+      },
+      {
+        "u": "16/25",
+        "fast": "68719476736/3814697265625",
+        "slow": "65536/390625",
+        "valuations": {
+          "2": 4,
+          "5": -2
+        },
+        "fast_valuations": {
+          "2": 36,
+          "5": -18
+        },
+        "slow_valuations": {
+          "2": 16,
+          "5": -8
+        },
+        "transfer": [
+          [
+            [
+              "10858475290624/95367431640625",
+              "0"
+            ],
+            [
+              "6855366279168/95367431640625",
+              "0"
+            ]
+          ],
+          [
+            [
+              "6855366279168/95367431640625",
+              "0"
+            ],
+            [
+              "6859511627776/95367431640625",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "1635435015625/68719476736",
+              "0"
+            ],
+            [
+              "-408611671875/17179869184",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-408611671875/17179869184",
+              "0"
+            ],
+            [
+              "161803890625/4294967296",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "3814697265625/68719476736"
+      },
+      {
+        "u": "7/12",
+        "fast": "40353607/5159780352",
+        "slow": "2401/20736",
+        "valuations": {
+          "2": -2,
+          "3": -1,
+          "7": 1
+        },
+        "fast_valuations": {
+          "2": -18,
+          "3": -9,
+          "7": 9
+        },
+        "slow_valuations": {
+          "2": -8,
+          "3": -4,
+          "7": 4
+        },
+        "transfer": [
+          [
+            [
+              "44099167/573308928",
+              "0"
+            ],
+            [
+              "22283681/429981696",
+              "0"
+            ]
+          ],
+          [
+            [
+              "22283681/429981696",
+              "0"
+            ],
+            [
+              "15056671/322486272",
+              "0"
+            ]
+          ]
+        ],
+        "inverse": [
+          [
+            [
+              "2080567296/40353607",
+              "0"
+            ],
+            [
+              "-2309409792/40353607",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-2309409792/40353607",
+              "0"
+            ],
+            [
+              "3427723008/40353607",
+              "0"
+            ]
+          ]
+        ],
+        "noise_amplification": "5159780352/40353607"
+      }
+    ],
+    "correctedReadout": [
+      [
+        [
+          "4864/25",
+          "0"
+        ],
+        [
+          "-5952/25",
+          "0"
+        ]
+      ]
+    ],
+    "bounds": [
+      {
+        "heat_ticks": "1",
+        "defect_lower": "4489/15116544",
+        "defect_upper": "1/2916",
+        "series_lower": "2743079706945306061330842229880137880735852795862629445422449304281925851063248698826125879321776874527070793722873015687611026461266719313270249/8841695803403531301628550907412903204547465261924423474041241086905844259833383715344628512611495242954120237123385410957126895201366815922039291904",
+        "series_upper": "24570867148504846993605381202854335482843099969603450937345562841449498304515337393278782879126174197460091525735182184798728739663550316809/79198622046184924063517952113229649320663337139272217028138338332259709316822680502781234748047978580201943948763754867439007622453277872881664"
+      },
+      {
+        "heat_ticks": "6",
+        "defect_lower": "49/11664",
+        "defect_upper": "1/81",
+        "series_lower": "1382955729713285180348135554442677474999473755220994081051898233441752160758584462987021224005925211417672641561/203580343274098947237761489591156651669429406923299846814063931759126949934051292150826685057381487179701363408896",
+        "series_upper": "4212768379590173032367961769128608480139838115617945476351454786711538220154777079643803143091359855535564209/620147712919951922704262401913857559291917508982236923330655915204459856275116441688922500996206202188751437824"
+      },
+      {
+        "heat_ticks": "12",
+        "defect_lower": "1/729",
+        "defect_upper": "4/81",
+        "series_lower": "1008322683583133991444410938986478159917625931930045684548279019198533423661119014081734446661512422289/66841042937039419441891275475798057643864027249320538157805530650007157352040409447407394787400987181056",
+        "series_upper": "5080472683352462101739500043160867962890084379073164279776231869917951252227652704495389558341401/336781169656608078247955426447026985877551054877597716321743589530456868734938407380488485238472704"
+      }
+    ],
+    "scope": {
+      "actual_source": "published YM54 free thermo fixture",
+      "observer": "declared mixed adjoint coefficient channel",
+      "full_interacting_row_defect_evaluated": false,
+      "physical_mass_gap": false,
+      "RH_proved": false,
+      "QG_complete": false,
+      "full_UGD_numeral_homomorphism": false,
+      "UGD_seam_identified_as_winding": false,
+      "source_UGD_implementation_rerun": false
+    }
+  },
+  "summary": {
+    "exact_checks": 265,
+    "negative_controls": 28,
+    "native_presentations": 3,
+    "symbolic_certificates": 3,
+    "serialized_replays": 3
+  }
+}

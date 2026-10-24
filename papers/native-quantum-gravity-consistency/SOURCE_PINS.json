@@ -1,0 +1,73 @@
+{
+  "protocol": "QGC1_SOURCE_PINS_V1",
+  "repository_base": "fc4619637f9417ecd0f0105bae995fab9cc3d9bd",
+  "native_engine": {
+    "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  },
+  "native_archive_sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+  "packet_files": {
+    "README.md": "aded4e7e6bc7b6a43a035744a4d5bae0722e6f3efdc0e44500f200fd0cbcbc09",
+    "THEOREM.md": "4a431b5ad31d7981d7d505159c756db213dc6faac47d48534c911f20ad831335",
+    "PREDICTIONS.md": "3bb67adee5faee682118a76856d14d417f7aab899cec9b1b0c887c0b9f76fa51",
+    "CHAPTER.md": "8b4bf6c45ec8f404123474c8386b5ec065d0d378080f7f6d92338b1f46e8ebab",
+    "verify.cjs": "5582ab3acc0a5eaed1245ed2eaaf8fc90cf5e7643dc8eb0ad684c1771f98fb49",
+    "run.py": "0e44b030d03429dfb228d44c017c9abed2d15766e35534fec422f830cc6aa91b"
+  },
+  "predecessor_files": {
+    "papers/native-cut-record-completeness/README.md": "a4596ffd3708fedbc2267d796ffebd139dc5e9cd686daa1cbd71093d265e4cad",
+    "papers/native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "papers/native-cut-record-completeness/verify.cjs": "8f13dac008dc1cc239d0e5946a780fddb08c060e67d573e77320a65456563168",
+    "papers/native-cut-record-completeness/run.py": "79999d3d6c41f5099362abe207b13206d3ff06dfdef8078a0078674115e9e1e0",
+    "papers/native-cut-record-completeness/SOURCE_PINS.json": "b339bb72550c27a8e7db1a6ae361df6b5de56092aa65b49ec7b73b7a3e48f602",
+    "papers/native-cut-record-completeness/CERTIFICATE.json": "40d4487297fc8843ead9e4989be63a8957c50d2b0c94bf6df4d5b17ce86a8651",
+    "papers/native-cut-record-completeness/EXPECTED.sha256": "e70ef0de5dd35058fa837a1d9043399def4fdb9114c688829aa6116a7a51d2e3",
+    "papers/native-nonlinear-gravity-continuation/README.md": "283f4d494b79ee037144b994084cb5d9ee068a1387f6f7f1d4fa7612a49b0d67",
+    "papers/native-nonlinear-gravity-continuation/THEOREM.md": "22b48d8dfe834ba5b85c927923ee32138407216487e395ff303c5694c420a8ba",
+    "papers/native-nonlinear-gravity-continuation/verify.cjs": "7061b5bca356b2b63fda9cd65ea52d30961402c53f0e1977847d4489ae21fab7",
+    "papers/native-nonlinear-gravity-continuation/run.py": "d41afd4129b515bc3b6f11ea21a8bd70932cd2138674c87f1a3cf77d538c5015",
+    "papers/native-nonlinear-gravity-continuation/SOURCE_PINS.json": "817ae7da1a5f2d82e21204f3776a3961d4c7571304f0485299fbd971da451176",
+    "papers/native-nonlinear-gravity-continuation/CERTIFICATE.json": "00b7f69b8dcbd5999a0abeda36a45285b05ac04641bce2bfdc36fc1b928b9e19",
+    "papers/native-nonlinear-gravity-continuation/EXPECTED.sha256": "c25b608c5f616f600600ce9a1f197fafa696f9d24266b58a67de74f05d39c83c",
+    "papers/native-exponential-gravity-response/README.md": "d9a5b80d0ecf349add785a4423f30b148262543df4bf7cb355e62cd787fb39be",
+    "papers/native-exponential-gravity-response/THEOREM.md": "3c14dc1ad2f06ec5b3804ec6a126f3c56c59e698ba18ca5967c272db99375a69",
+    "papers/native-exponential-gravity-response/verify.cjs": "d73cf615bbd18ead56ddacac4e1002ea30dcd24044a552446f9d43abd8661854",
+    "papers/native-exponential-gravity-response/run.py": "0c30dc70fcce4d159284e0b747e36d5d245a49cac71d0e871829d948dfc3d6c7",
+    "papers/native-exponential-gravity-response/SOURCE_PINS.json": "650ebb72a22447b712bb7cb3ba2df96e9b640fb317734cd743bfeff4c8c6f788",
+    "papers/native-exponential-gravity-response/CERTIFICATE.json": "59f857b682d14611d08c26f163730a0973ed8a599cd76db8a57e27e63a129184",
+    "papers/native-exponential-gravity-response/EXPECTED.sha256": "30a13942f8109c16c2a6c77028c6dd7d0f96eec56415155b5555cfee0c41d557",
+    "papers/native-coupling-reconstruction/THEOREM.md": "928658e05419234419e17cc70003f55d7be88cbcbe7bcc51c4565d9c4757cdb9",
+    "papers/native-cut-transport-feedback/THEOREM.md": "47ea64afdca379cdc66c6655d4214531c89a63a8586d5a2564b11c3bb5479ee6",
+    "papers/native-jacobian-cut-certification/THEOREM.md": "6240606cb6ad10514f16132592b46a1929703316879da543c62353f0244101ee",
+    "papers/native-four-dimensional-hinge/THEOREM.md": "59bd0b15b51d1a5b10f159e8d6c1d00c62823711e7940fba93b60a0273eaaad2",
+    "papers/curvature-information-duality/README.md": "199cd8775ef5f3d5c5d4f8ec9dcc725e13dab9c730600d6d3845c64a53766fa2"
+  },
+  "primary_references": [
+    {
+      "title": "The no-signaling condition and quantum dynamics",
+      "url": "https://arxiv.org/abs/quant-ph/0102125",
+      "use": "Established mixture-linearity context; local obstruction proved independently under explicit premises."
+    },
+    {
+      "title": "Approximate joint measurements of qubit observables",
+      "url": "https://arxiv.org/abs/0706.1415",
+      "use": "Prior art for joint measurements; no novelty claim for quantum instruments or measurement uncertainty."
+    },
+    {
+      "title": "A Spin Entanglement Witness for Quantum Gravity",
+      "url": "https://arxiv.org/abs/1707.06050",
+      "use": "Example of a physically specified experimental proposal, not experimental evidence for the native model."
+    },
+    {
+      "title": "Gravitationally-induced entanglement between two massive particles is sufficient evidence of quantum effects in gravity",
+      "url": "https://arxiv.org/abs/1707.06036",
+      "use": "Physical test context under declared assumptions."
+    },
+    {
+      "title": "Peer Review \u2014 Nature Physics",
+      "url": "https://www.nature.com/nphys/editorial-policies/peer-review",
+      "accessed": "2026-10-14",
+      "use": "Publication criteria only; no claim of submission or acceptance."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "protocol": "RCG1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "090aeb3e918704d28556305e62f53d90401c4c699c16134cf242732d63121700",
+    "THEOREM.md": "b692cd897860249ae33931c0383f0f0a5ea400e8a83f8239d2caa2e7eaffbb12",
+    "verify.cjs": "e3ce95cbdbef524df76d39eee88d7d85f4e757825ec6255292ababfc380fd1f2",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "../native-relative-curvature/THEOREM.md": "05520b64e0110a370b3f5e955513fddf5a511bd41fc1125be95ab194c12bc1ea",
+    "../native-loop-concentration/CUT_INFORMATION_DYNAMICS.md": "f72327ad95193100d93dbccb217941ce2621fd3ebffba20af406b57d4ef4137c",
+    "../native-cut-local-dynamics/THEOREM.md": "620ae9906bafa18a7a196097c3b26873d72e1ec3d851500e5c5eecefb0ba9271",
+    "../native-invariant-ratio-transport/THEOREM.md": "421ab43b4a0a7845053e7053580866d04f8dd0dcf92ee65185d53679c9385649"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "protocol": "ILC1_SOURCE_PINS_V1",
+  "repository_parent": "200c2697d14323b46b0087774cbcbdea0505bc85",
+  "files": {
+    "README.md": "045450082ae4f3578ceb9375af046a063e9fd6161285046f6cffa3fc6feb729f",
+    "THEOREM.md": "cd1239bcccaacad152f8aa77be4d84ff63a801e6aac11a54d67a78d3ce8af592",
+    "SOURCE_EVALUATION.md": "1b2fd6e184a5f0c6964ffc103ac28b51ace792134a68af92e9428f0974555cad",
+    "SOURCE_MAP.md": "856f8702e95abf5944aa60caf616bf55e65ccc40a6d869d7d0b2993ea4b710de",
+    "USAGE.md": "d00b5da7a4f0d01306a6efe070f7673429067496df31c495de5ca795c01807c0",
+    "source_layers.cjs": "a46967d9992a50fb4f52839130b05540126d247633f68752e5ebca949f754a07",
+    "layer_adapter.cjs": "0df60e3c6a1d6e1633a06e74bee46fc4cbeb8617f85e3f7c1b037a9510f77f99",
+    "verify.cjs": "8410ffaf88ab7512271f4ecc6f4dba9dce341f5fbdb302f8680fddb584156567",
+    "run.py": "4220c784c321168b7ad6f8e559d70e1f9cc79d78c34866b0436a042b2818cf93",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-prime-innovation-window/THEOREM.md": "4fe5245e0cbe1f0932b0bb8125bdff63f5990045505b348292140bef2d24d3c2",
+    "../native-prime-innovation-window/SOURCE_PINS.json": "3d9bc8bf901f60eec66e14b3be42d397a6fc4f3e7fd8da0995abfe396f6c2dbc",
+    "../native-prime-innovation-window/CERTIFICATE.json": "20e0e48c6f184a1ff4b6b210811ba8fc50f24fc0d7eb72c76b814bd3561fe4cc",
+    "../native-prime-innovation-window/full_source.cjs": "0a31da302a467333f005d77bb30e3d21a0bfcca7a2cc8aea91696bb15d78ed30",
+    "../native-prime-innovation-window/window_adapter.cjs": "4a0bcd7155c530fa9a97346482c1f7ce1b515a1701dceee84a78a55d29d3fefc",
+    "../native-prime-observation-closure/THEOREM.md": "de5bb0386f5ef1cbc367d1ed37afcfaf61587b62ad1468b7800b3ce1fc9c4308",
+    "../native-prime-observation-closure/SOURCE_PINS.json": "c4782e63013001f86abef6c58356f67267513b6cac777882cb932cda1eb2d5cd",
+    "../native-prime-observation-closure/observation_adapter.cjs": "ddb8385edb0cec94b6634bfd8f1f08189dd5eb6a7b236d439f001b9ca51a9c0b",
+    "../native-prime-observation-closure/sources/SE48.md": "0891b8f9c31cd5f4675efa94b50dd30382c12fe53d03fbc389baa0768e815d04",
+    "../native-moving-zero-covariance/sources/SE49.md": "36b0e0b37594d7112b24fb58fb401f521912eb6baf6d487094ddf0449c725b4f",
+    "../native-tvsp-exponential-transport/THEOREM.md": "a5de5a5819d0223e9e988eda5fd2ea6e587f27a1a2edd433c417d74cda472d44",
+    "../native-cut-generated-history/THEOREM.md": "b75643d84d600c2fd7a2bc7b6de4fae18886a7d02df3d9d348c34f924489c1d6",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "stage": "CCL-1",
+  "extra_ideas_commit": "4aad5a0ec0fbdac727894ad0c315ed822cc0350e",
+  "publications_classical_commit": "f0f1c1650e914b7eaf3bf64ddb7df9f543c92a56",
+  "native_archive_sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+  "predecessors": {
+    "native-matter-geometry-holonomy/THEOREM.md": "77f7e0eb5da1c27b815445f9e494fe2ce267b92d9c8a8d4d3196b97bbe316df4",
+    "native-cut-transport-feedback/THEOREM.md": "47ea64afdca379cdc66c6655d4214531c89a63a8586d5a2564b11c3bb5479ee6"
+  },
+  "packet_files": {
+    "THEOREM.tex": "0e6f0b170d81b59cc6282859f60a4a5e1ed5b8ee1a7c73f17d35e3cad38b9dd1",
+    "verify.cjs": "1504bb402b284471bacaeff8d2740890b3b408f62e11976fa1104852988bab9a",
+    "run.py": "7dffba927e89bf088c657246d49069439cd5c91630a71dfde14fb474dd41938c",
+    "README.md": "460f0a0ecc64a48a27653709edecb4ae291c97da49f0a0eb869be9d5370ab603",
+    "native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "sources/CID_D2.md": "47ea64afdca379cdc66c6655d4214531c89a63a8586d5a2564b11c3bb5479ee6",
+    "sources/IN1.md": "1a338248be5caa56abd0e22fbf113b4c491954ced91abee630c6446c4eff9e09",
+    "sources/MG.md": "b42adbac04f790d0593da14fce6649a6a8a94eabe3d2c31588ae95ff71d07202",
+    "sources/MGH1.md": "77f7e0eb5da1c27b815445f9e494fe2ce267b92d9c8a8d4d3196b97bbe316df4",
+    "sources/PR1.md": "306ec0c1738d3f7b9e2783e5a7081b12f9d67337260d5cbe9b8e0a7392291359",
+    "sources/PR2.md": "3b050f7418dd30bebcea267fdbbc2ddb991c87ac91cde64bf86bce5069dc74c5",
+    "sources/SM.md": "59874df732a965978e4199a3474a56c8437cfc65d104a717d47fc35a3ba38334"
+  }
+}

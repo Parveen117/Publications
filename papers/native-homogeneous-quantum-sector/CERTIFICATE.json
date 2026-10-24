@@ -1,0 +1,3221 @@
+{
+  "protocol": "HQS1_REGULAR_HOMOGENEOUS_QUANTUM_SECTOR_V1",
+  "status": "PASS_SELECTED_REGULAR_HOMOGENEOUS_QUANTUM_SECTOR",
+  "source_pins_sha256": "898dd5e8aaff691c52fd26bb4cea6a4c40ffa7527eaf85e5818927067366c16a",
+  "presentations": [
+    {
+      "name": "homogeneous_affine_constraint_core",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "l",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "q",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "p",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "k",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "ql",
+            "lhs": [
+              "q",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "q and L_ref exp(q) commute on the common core"
+          },
+          {
+            "id": "pl",
+            "lhs": [
+              "p",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l"
+                ],
+                [
+                  "0",
+                  "-1"
+                ]
+              ],
+              [
+                [
+                  "l",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "p=-i partial_q acting on L_ref exp(q)"
+          },
+          {
+            "id": "pq",
+            "lhs": [
+              "p",
+              "q"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "0",
+                  "-1"
+                ]
+              ],
+              [
+                [
+                  "q",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Canonical log-length representation on the common core"
+          },
+          {
+            "id": "kl",
+            "lhs": [
+              "k",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "k"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Independent scalar-clock and geometry coordinates"
+          },
+          {
+            "id": "kq",
+            "lhs": [
+              "k",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "k"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Independent scalar-clock and geometry coordinates"
+          },
+          {
+            "id": "kp",
+            "lhs": [
+              "k",
+              "p"
+            ],
+            "rhs": [
+              [
+                [
+                  "p",
+                  "k"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Independent scalar-clock and geometry coordinates"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 4,
+        "resolutions": [
+          {
+            "word": [
+              "p",
+              "q",
+              "l"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              2,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "l",
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "l",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pl",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "l",
+                    "p",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pq",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "l",
+                      "q"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "l",
+                      "q",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "q",
+                      "p",
+                      "l"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "q",
+                    "p",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pl",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "q",
+                    "l",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "ql",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "q",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "0",
+                    "-1"
+                  ],
+                  "rule": "ql",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "l",
+                      "q"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "l",
+                      "q",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "k",
+              "q",
+              "l"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              4,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "l",
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "l",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kl",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "l",
+                    "k",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kq",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "q",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "q",
+                      "k",
+                      "l"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "q",
+                    "k",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kl",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "q",
+                    "l",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "ql",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "q",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "k",
+              "p",
+              "l"
+            ],
+            "first": [
+              1,
+              1
+            ],
+            "second": [
+              5,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "l"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "k",
+                      "l",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "l",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kl",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "l",
+                    "k",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kp",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "k",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "0",
+                    "-1"
+                  ],
+                  "rule": "kl",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "k"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "l",
+                      "p",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "k",
+                      "l"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "k",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kl",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "p",
+                    "l",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pl",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "k"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "l",
+                      "p",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "k",
+              "p",
+              "q"
+            ],
+            "first": [
+              2,
+              1
+            ],
+            "second": [
+              5,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "k",
+                      "q",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "q",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kq",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "q",
+                    "k",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kp",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "q",
+                      "p",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "k",
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "k",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "kq",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "p",
+                    "q",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pq",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "q",
+                      "p",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "affine_commutator",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "l"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "l",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "l"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "canonical_log_pair",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "q",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "q"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "q"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pq",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "constraint_log_weak",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "p",
+              "k"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "k",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "k"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "k"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "q",
+                "p",
+                "k"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "k",
+                "q"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "k",
+              "q"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "kq",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "q",
+              "k"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pq",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "constraint_length_weak",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "p",
+              "k"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "k",
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "k"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l",
+                "k"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "l",
+                "p",
+                "k"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "k",
+                "l"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "k",
+              "l"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "kl",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "l",
+              "k"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "constraint_dilation_strong",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "p",
+              "k"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "k",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "p",
+                "p",
+                "k"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "k",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "k",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "kp",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "constraint_ordering_independent_factors",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "k",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "p",
+                "k"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "k",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "k",
+              "p"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "kp",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "dilation_nested_1",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "l",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "l"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "dilation_nested_2",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "p",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "l",
+              "p"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "l",
+                "p",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "l",
+                "p"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "l"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "l",
+              "p"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "pl",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "dilation_nested_3",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "p",
+              "p",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "l",
+              "p",
+              "p"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "l",
+              "p"
+            ],
+            [
+              "-3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "p",
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "l",
+                "p",
+                "p",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "l",
+                "p",
+                "p"
+              ],
+              [
+                "3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "l",
+                "p"
+              ],
+              [
+                "-3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "p",
+                "l"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "p",
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 2
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "l",
+              "p"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "l",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "pl",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "l",
+              "p"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "pl",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "dilation_nested_4",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "p",
+              "p",
+              "p",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "l",
+              "p",
+              "p",
+              "p"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "l",
+              "p",
+              "p"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "p",
+              "l",
+              "p"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "p",
+              "p",
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "622ec6f90aee7be722b93842421fadea5a29bf43d34ff5c6f758a8d54c5b7afb",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "l",
+                "p",
+                "p",
+                "p",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "l",
+                "p",
+                "p",
+                "p"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "l",
+                "p",
+                "p"
+              ],
+              [
+                "6",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "p",
+                "l",
+                "p"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "p",
+                "p",
+                "l"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "p",
+              "p",
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 3
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "p",
+              "l",
+              "p"
+            ],
+            "coefficient": [
+              "-3",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 2
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "l",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "3",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "l",
+              "p",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "pl",
+            "position": 2
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "l",
+              "p"
+            ],
+            "coefficient": [
+              "0",
+              "2"
+            ],
+            "rule": "pl",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "l",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "pl",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "l",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pl",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "l"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "pl",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "source:canonical:1/2:-2",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:1/2:-2",
+      "passed": true
+    },
+    {
+      "name": "source:clock:1/2:-2",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:1/2:-2",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:1/2:-2",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:1/2:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:1/2:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:clock:1/2:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:1/2:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:1/2:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:1/2:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:1/2:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:clock:1/2:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:1/2:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:1/2:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:1/2:3",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:1/2:3",
+      "passed": true
+    },
+    {
+      "name": "source:clock:1/2:3",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:1/2:3",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:1/2:3",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:1:-2",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:1:-2",
+      "passed": true
+    },
+    {
+      "name": "source:clock:1:-2",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:1:-2",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:1:-2",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:1:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:1:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:clock:1:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:1:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:1:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:1:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:1:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:clock:1:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:1:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:1:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:1:3",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:1:3",
+      "passed": true
+    },
+    {
+      "name": "source:clock:1:3",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:1:3",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:1:3",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:3:-2",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:3:-2",
+      "passed": true
+    },
+    {
+      "name": "source:clock:3:-2",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:3:-2",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:3:-2",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:3:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:3:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:clock:3:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:3:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:3:-3/5",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:3:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:3:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:clock:3:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:3:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:3:4/5",
+      "passed": true
+    },
+    {
+      "name": "source:canonical:3:3",
+      "passed": true
+    },
+    {
+      "name": "source:constraint:3:3",
+      "passed": true
+    },
+    {
+      "name": "source:clock:3:3",
+      "passed": true
+    },
+    {
+      "name": "source:zero_potential_stationary:3:3",
+      "passed": true
+    },
+    {
+      "name": "source:weak_length:3:3",
+      "passed": true
+    },
+    {
+      "name": "measure:positive:-3",
+      "passed": true
+    },
+    {
+      "name": "measure:Jacobian:-3",
+      "passed": true
+    },
+    {
+      "name": "measure:unitary_rescaling:-3",
+      "passed": true
+    },
+    {
+      "name": "measure:symmetric_connection:-3",
+      "passed": true
+    },
+    {
+      "name": "measure:positive:-3/5",
+      "passed": true
+    },
+    {
+      "name": "measure:Jacobian:-3/5",
+      "passed": true
+    },
+    {
+      "name": "measure:unitary_rescaling:-3/5",
+      "passed": true
+    },
+    {
+      "name": "measure:symmetric_connection:-3/5",
+      "passed": true
+    },
+    {
+      "name": "measure:positive:1/2",
+      "passed": true
+    },
+    {
+      "name": "measure:Jacobian:1/2",
+      "passed": true
+    },
+    {
+      "name": "measure:unitary_rescaling:1/2",
+      "passed": true
+    },
+    {
+      "name": "measure:symmetric_connection:1/2",
+      "passed": true
+    },
+    {
+      "name": "measure:positive:2",
+      "passed": true
+    },
+    {
+      "name": "measure:Jacobian:2",
+      "passed": true
+    },
+    {
+      "name": "measure:unitary_rescaling:2",
+      "passed": true
+    },
+    {
+      "name": "measure:symmetric_connection:2",
+      "passed": true
+    },
+    {
+      "name": "affine:monomial_commutator:-2",
+      "passed": true
+    },
+    {
+      "name": "affine:half_density_transform:-2",
+      "passed": true
+    },
+    {
+      "name": "affine:monomial_commutator:-1",
+      "passed": true
+    },
+    {
+      "name": "affine:half_density_transform:-1",
+      "passed": true
+    },
+    {
+      "name": "affine:monomial_commutator:0",
+      "passed": true
+    },
+    {
+      "name": "affine:half_density_transform:0",
+      "passed": true
+    },
+    {
+      "name": "affine:monomial_commutator:1/2",
+      "passed": true
+    },
+    {
+      "name": "affine:half_density_transform:1/2",
+      "passed": true
+    },
+    {
+      "name": "affine:monomial_commutator:1",
+      "passed": true
+    },
+    {
+      "name": "affine:half_density_transform:1",
+      "passed": true
+    },
+    {
+      "name": "affine:monomial_commutator:3",
+      "passed": true
+    },
+    {
+      "name": "affine:half_density_transform:3",
+      "passed": true
+    },
+    {
+      "name": "domain:plus_i:deficiency_equation",
+      "passed": true
+    },
+    {
+      "name": "domain:plus_i:exponential_decay",
+      "passed": true
+    },
+    {
+      "name": "domain:minus_i:deficiency_equation",
+      "passed": true
+    },
+    {
+      "name": "domain:minus_i:exponential_decay",
+      "passed": true
+    },
+    {
+      "name": "finite:commutator_trace_zero",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:Gram",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:first_moment",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:second_moment",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:compression_defect",
+      "passed": true
+    },
+    {
+      "name": "operation_closure:moment_Gram_rank:0",
+      "passed": true
+    },
+    {
+      "name": "operation_closure:moment_Gram_rank:1",
+      "passed": true
+    },
+    {
+      "name": "operation_closure:moment_Gram_rank:2",
+      "passed": true
+    },
+    {
+      "name": "operation_closure:moment_Gram_rank:3",
+      "passed": true
+    },
+    {
+      "name": "operation_closure:moment_Gram_rank:4",
+      "passed": true
+    },
+    {
+      "name": "operation_closure:moment_Gram_rank:5",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:0:positive_norm",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:0:mean",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:0:second",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:0:variance",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:0:sign_probabilities",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:1:positive_norm",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:1:mean",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:1:second",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:1:variance",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:1:sign_probabilities",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:2:positive_norm",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:2:mean",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:2:second",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:2:variance",
+      "passed": true
+    },
+    {
+      "name": "physical_packets:2:sign_probabilities",
+      "passed": true
+    },
+    {
+      "name": "physical_cut_history:isometry",
+      "passed": true
+    },
+    {
+      "name": "physical_cut_history:observable_decoder",
+      "passed": true
+    },
+    {
+      "name": "physical_observer:reading:0",
+      "passed": true
+    },
+    {
+      "name": "physical_observer:reading:1",
+      "passed": true
+    },
+    {
+      "name": "physical_observer:reading:2",
+      "passed": true
+    },
+    {
+      "name": "physical_observer:reading:3",
+      "passed": true
+    },
+    {
+      "name": "physical_observer:source_readings",
+      "passed": true
+    },
+    {
+      "name": "physical_observer:full_reconstruction",
+      "passed": true
+    },
+    {
+      "name": "words:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:affine_commutator",
+      "passed": true
+    },
+    {
+      "name": "words:affine_commutator:replay",
+      "passed": true
+    },
+    {
+      "name": "words:canonical_log_pair",
+      "passed": true
+    },
+    {
+      "name": "words:canonical_log_pair:replay",
+      "passed": true
+    },
+    {
+      "name": "words:constraint_log_weak",
+      "passed": true
+    },
+    {
+      "name": "words:constraint_log_weak:replay",
+      "passed": true
+    },
+    {
+      "name": "words:constraint_length_weak",
+      "passed": true
+    },
+    {
+      "name": "words:constraint_length_weak:replay",
+      "passed": true
+    },
+    {
+      "name": "words:constraint_dilation_strong",
+      "passed": true
+    },
+    {
+      "name": "words:constraint_dilation_strong:replay",
+      "passed": true
+    },
+    {
+      "name": "words:constraint_ordering_independent_factors",
+      "passed": true
+    },
+    {
+      "name": "words:constraint_ordering_independent_factors:replay",
+      "passed": true
+    },
+    {
+      "name": "words:dilation_nested_1",
+      "passed": true
+    },
+    {
+      "name": "words:dilation_nested_1:replay",
+      "passed": true
+    },
+    {
+      "name": "words:dilation_nested_2",
+      "passed": true
+    },
+    {
+      "name": "words:dilation_nested_2:replay",
+      "passed": true
+    },
+    {
+      "name": "words:dilation_nested_3",
+      "passed": true
+    },
+    {
+      "name": "words:dilation_nested_3:replay",
+      "passed": true
+    },
+    {
+      "name": "words:dilation_nested_4",
+      "passed": true
+    },
+    {
+      "name": "words:dilation_nested_4:replay",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "source:clock_regular_at_zero",
+      "rejected": true
+    },
+    {
+      "name": "source:potential_omitted_without_selection",
+      "rejected": true
+    },
+    {
+      "name": "measure:naive_derivative_symmetric:-3",
+      "rejected": true
+    },
+    {
+      "name": "measure:naive_derivative_symmetric:-3/5",
+      "rejected": true
+    },
+    {
+      "name": "measure:naive_derivative_symmetric:1/2",
+      "rejected": true
+    },
+    {
+      "name": "measure:naive_derivative_symmetric:2",
+      "rejected": true
+    },
+    {
+      "name": "measure:signed_Jacobian_is_positive",
+      "rejected": true
+    },
+    {
+      "name": "domain:ordinary_half_line_momentum_self_adjoint",
+      "rejected": true
+    },
+    {
+      "name": "finite:positive_Hermitian_exact_affine_representation",
+      "rejected": true
+    },
+    {
+      "name": "physical_packets:span_is_momentum_invariant",
+      "rejected": true
+    },
+    {
+      "name": "physical_observer:classical_sign_record_contains_relative_phase",
+      "rejected": true
+    },
+    {
+      "name": "words:length_strongly_commutes_with_full_constraint",
+      "rejected": true
+    },
+    {
+      "name": "words:log_length_strongly_commutes_with_full_constraint",
+      "rejected": true
+    },
+    {
+      "name": "integrity:corrupted_native_witness",
+      "rejected": true
+    }
+  ],
+  "results": {
+    "source": {
+      "constraint": "C=L*pi*k, V=0, matter=0",
+      "canonical_log_pair": "q=log(L/L_ref), p=L*pi",
+      "action_unit": "hbar=1 declared"
+    },
+    "physical_measure": "dp/abs(p)",
+    "jacobians": [
+      {
+        "p": "-3",
+        "weight": "1/3",
+        "connection": "1/6"
+      },
+      {
+        "p": "-3/5",
+        "weight": "5/3",
+        "connection": "5/6"
+      },
+      {
+        "p": "1/2",
+        "weight": "2",
+        "connection": "-1"
+      },
+      {
+        "p": "2",
+        "weight": "1/2",
+        "connection": "-1/4"
+      }
+    ],
+    "half_line_deficiencies": [
+      {
+        "name": "plus_i",
+        "gamma": -1,
+        "eigenvalue": [
+          "0",
+          "1"
+        ],
+        "square_integrable": true
+      },
+      {
+        "name": "minus_i",
+        "gamma": 1,
+        "eigenvalue": [
+          "0",
+          "-1"
+        ],
+        "square_integrable": false
+      }
+    ],
+    "packet_moments": [
+      {
+        "coefficients": [
+          [
+            [
+              "3/5",
+              "0"
+            ]
+          ],
+          [
+            [
+              "4/5",
+              "0"
+            ]
+          ]
+        ],
+        "norm": [
+          "1",
+          "0"
+        ],
+        "mean": [
+          "-21/50",
+          "0"
+        ],
+        "second": [
+          "7/3",
+          "0"
+        ],
+        "variance": [
+          "16177/7500",
+          "0"
+        ]
+      },
+      {
+        "coefficients": [
+          [
+            [
+              "3/5",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-4/5",
+              "0"
+            ]
+          ]
+        ],
+        "norm": [
+          "1",
+          "0"
+        ],
+        "mean": [
+          "-21/50",
+          "0"
+        ],
+        "second": [
+          "7/3",
+          "0"
+        ],
+        "variance": [
+          "16177/7500",
+          "0"
+        ]
+      },
+      {
+        "coefficients": [
+          [
+            [
+              "3/5",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "4/5"
+            ]
+          ]
+        ],
+        "norm": [
+          "1",
+          "0"
+        ],
+        "mean": [
+          "-21/50",
+          "0"
+        ],
+        "second": [
+          "7/3",
+          "0"
+        ],
+        "variance": [
+          "16177/7500",
+          "0"
+        ]
+      }
+    ],
+    "compressed_P": [
+      [
+        [
+          "3/2",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "-3/2",
+          "0"
+        ]
+      ]
+    ],
+    "compressed_P2": [
+      [
+        [
+          "7/3",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "7/3",
+          "0"
+        ]
+      ]
+    ],
+    "momentum_closure_ranks": [
+      {
+        "degree": 0,
+        "rank": 1
+      },
+      {
+        "degree": 1,
+        "rank": 2
+      },
+      {
+        "degree": 2,
+        "rank": 3
+      },
+      {
+        "degree": 3,
+        "rank": 4
+      },
+      {
+        "degree": 4,
+        "rank": 5
+      },
+      {
+        "degree": 5,
+        "rank": 6
+      }
+    ],
+    "circular_readings": [
+      "2",
+      "5",
+      "122/25",
+      "98/25"
+    ],
+    "scope": {
+      "self_adjointness_and_group_averaging": "written analytic proofs, not finite matrix inference",
+      "singular_p_zero_sector_included": false,
+      "physical_norm_positive": true,
+      "reduced_geometry_observable_matching": "selected full-line Fourier representation",
+      "quantization_unique": false,
+      "relational_evolution": "identity for this V=0 matter-free sector",
+      "full_local_constraint_quantization": false,
+      "physical_3plus1_quantum_gravity_complete": false,
+      "physical_FTL": false
+    }
+  },
+  "summary": {
+    "exact_checks": 147,
+    "symbolic_certificates": 10,
+    "serialized_replays": 10,
+    "negative_controls": 14,
+    "native_presentations": 1
+  }
+}

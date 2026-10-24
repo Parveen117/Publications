@@ -1,0 +1,5531 @@
+{
+  "protocol": "AGD1_NATIVE_ACTION_GEOMETRY_DYNAMICS_V1",
+  "status": "PASS_ACTION_DERIVATION_NATIVE_PROOFS_AND_FINITE_CONTROLS",
+  "scope": "Inherited cut-action reduction under a declared periodic canonical quantization contract. Written full-domain self-adjointness, locality and finite-section error proofs. Exact native symbolic/finite checks and explicit constraint rejections; not a completed physical quantum-gravity theory.",
+  "source_pins_sha256": "a18a28bb690022714fce3e4711a83022cc49ede786e7fa93094be8f767929596",
+  "presentations": [
+    {
+      "name": "circle_momentum",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "u",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "h",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "p",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "uv",
+            "lhs": [
+              "u",
+              "v"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Unitary circle shift"
+          },
+          {
+            "id": "vu",
+            "lhs": [
+              "v",
+              "u"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Unitary circle shift"
+          },
+          {
+            "id": "hu",
+            "lhs": [
+              "h",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Central action unit"
+          },
+          {
+            "id": "hv",
+            "lhs": [
+              "h",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Central action unit"
+          },
+          {
+            "id": "ph",
+            "lhs": [
+              "p",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Central action unit"
+          },
+          {
+            "id": "pu",
+            "lhs": [
+              "p",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ],
+              [
+                [
+                  "u",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "p u = u(p+eta)"
+          },
+          {
+            "id": "pv",
+            "lhs": [
+              "p",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "h"
+                ],
+                [
+                  "-1",
+                  "0"
+                ]
+              ],
+              [
+                [
+                  "v",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "p u_dagger = u_dagger(p-eta)"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 8,
+        "resolutions": [
+          {
+            "word": [
+              "v",
+              "u",
+              "v"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              1,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "u",
+              "v",
+              "u"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              1,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "h",
+              "u",
+              "v"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              2,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u",
+                      "h",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "u",
+                    "h",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "hv",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "u",
+                    "v",
+                    "h"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "uv",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "p",
+              "u",
+              "v"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              5,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u",
+                      "h",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "u",
+                      "p",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "u",
+                    "p",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pv",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "u",
+                    "h",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "hv",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "u",
+                    "v",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "uv",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "h",
+              "v",
+              "u"
+            ],
+            "first": [
+              1,
+              1
+            ],
+            "second": [
+              3,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "h",
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "v",
+                    "h",
+                    "u"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "hu",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "v",
+                    "u",
+                    "h"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "vu",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "p",
+              "v",
+              "u"
+            ],
+            "first": [
+              1,
+              1
+            ],
+            "second": [
+              6,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "h",
+                      "u"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "v",
+                      "p",
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "v",
+                    "p",
+                    "u"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pu",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "v",
+                    "h",
+                    "u"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "hu",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "v",
+                    "u",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "vu",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "p",
+              "h",
+              "u"
+            ],
+            "first": [
+              2,
+              1
+            ],
+            "second": [
+              4,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "u",
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "u",
+                    "h"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pu",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "u",
+                    "p",
+                    "h"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "ph",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u",
+                      "h",
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "u",
+                      "h",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "h",
+                      "p",
+                      "u"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "h",
+                    "p",
+                    "u"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pu",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "h",
+                    "u",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "hu",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "h",
+                    "u",
+                    "h"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "hu",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "u",
+                      "h",
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "u",
+                      "h",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "p",
+              "h",
+              "v"
+            ],
+            "first": [
+              3,
+              1
+            ],
+            "second": [
+              4,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "v",
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "v",
+                    "h"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pv",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "v",
+                    "p",
+                    "h"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "ph",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "h",
+                      "h"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "v",
+                      "h",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "h",
+                      "p",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "h",
+                    "p",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pv",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "h",
+                    "v",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "hv",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "h",
+                    "v",
+                    "h"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "hv",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "h",
+                      "h"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "v",
+                      "h",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    },
+    {
+      "name": "cut_circle_metric",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "c",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "sn",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "circle",
+            "lhs": [
+              "sn",
+              "sn"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ],
+              [
+                [
+                  "c",
+                  "c"
+                ],
+                [
+                  "-1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Real cut circle"
+          },
+          {
+            "id": "central_1_0",
+            "lhs": [
+              "sn",
+              "c"
+            ],
+            "rhs": [
+              [
+                [
+                  "c",
+                  "sn"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Declared central coefficients"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "957c8aa75e8e7eee288e2e5f45e8f98359611ded60c49b6edeeffb6b291aed01",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 2,
+        "resolutions": [
+          {
+            "word": [
+              "sn",
+              "sn",
+              "sn"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              0,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "957c8aa75e8e7eee288e2e5f45e8f98359611ded60c49b6edeeffb6b291aed01",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "sn"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "c",
+                      "c",
+                      "sn"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "sn"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "c",
+                      "c",
+                      "sn"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "957c8aa75e8e7eee288e2e5f45e8f98359611ded60c49b6edeeffb6b291aed01",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "sn"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "sn",
+                      "c",
+                      "c"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "sn",
+                    "c",
+                    "c"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "central_1_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "c",
+                    "sn",
+                    "c"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "central_1_0",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "sn"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "c",
+                      "c",
+                      "sn"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "sn",
+              "sn",
+              "c"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              1,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "957c8aa75e8e7eee288e2e5f45e8f98359611ded60c49b6edeeffb6b291aed01",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "c"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "c",
+                      "c",
+                      "c"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "c"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "c",
+                      "c",
+                      "c"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "957c8aa75e8e7eee288e2e5f45e8f98359611ded60c49b6edeeffb6b291aed01",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "sn",
+                      "c",
+                      "sn"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "sn",
+                    "c",
+                    "sn"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "central_1_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "c",
+                    "sn",
+                    "sn"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "circle",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "c"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "c",
+                      "c",
+                      "c"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    },
+    {
+      "name": "legendre",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "p",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": []
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "cb32b3b8650470211de9c090678101385887baaac3fca806f1d48ae7cf9ea0cf",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 0,
+        "resolutions": [],
+        "open": []
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "action:circle_potential",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "10",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "u"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "u"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "u"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "v"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "v",
+                "u"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "v",
+              "u"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "vu",
+            "position": 0
+          },
+          {
+            "word": [
+              "u",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "geometry:momentum_source",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "u",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "v",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "u",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "v",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "u",
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "u",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "v",
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "v",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h",
+              "u",
+              "u"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h",
+              "v",
+              "v"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "u",
+                "u",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "v",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "v",
+                "u",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "v",
+                "v",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h",
+                "u",
+                "u"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h",
+                "v",
+                "v"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "u",
+                "u"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "u",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "v",
+                "u"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "v",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pv",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "v",
+              "u"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "vu",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "u",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "u",
+              "u"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pu",
+            "position": 0
+          },
+          {
+            "word": [
+              "h",
+              "v",
+              "v"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "hv",
+            "position": 0
+          },
+          {
+            "word": [
+              "h",
+              "u",
+              "u"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "hu",
+            "position": 0
+          },
+          {
+            "word": [
+              "v",
+              "p",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pv",
+            "position": 1
+          },
+          {
+            "word": [
+              "v",
+              "h",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "hv",
+            "position": 1
+          },
+          {
+            "word": [
+              "v",
+              "u",
+              "p"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "vu",
+            "position": 0
+          },
+          {
+            "word": [
+              "u",
+              "p",
+              "u"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pu",
+            "position": 1
+          },
+          {
+            "word": [
+              "u",
+              "h",
+              "u"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "hu",
+            "position": 1
+          },
+          {
+            "word": [
+              "u",
+              "v",
+              "p"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "uv",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "geometry:kinetic_shift_commutator",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "p",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "h",
+              "h"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "h",
+              "p"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "u",
+                "h",
+                "h"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "h",
+                "p"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "p",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "u"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "p",
+              "u"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pu",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "u",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pu",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "u",
+              "h"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pu",
+            "position": 0
+          },
+          {
+            "word": [
+              "u",
+              "p",
+              "h"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "ph",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "geometry:inverse_shift_commutator",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "v",
+              "p",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "p",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "v",
+              "h",
+              "h"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "h",
+              "p"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "v",
+                "h",
+                "h"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "v",
+                "h",
+                "p"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "v",
+                "p",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "p",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "p",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pv",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "v",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pv",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "v",
+              "h"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pv",
+            "position": 0
+          },
+          {
+            "word": [
+              "v",
+              "p",
+              "h"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "ph",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "source:lapse_momentum_commutator",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "u",
+              "p"
+            ],
+            [
+              "-3/20",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "p"
+            ],
+            [
+              "-3/20",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "u"
+            ],
+            [
+              "3/20",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "v"
+            ],
+            [
+              "3/20",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h",
+              "u"
+            ],
+            [
+              "3/20",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h",
+              "v"
+            ],
+            [
+              "-3/20",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ae7825e3afa506bd1a35626f172b9cc326d9ad8510161daab981267bd4779a0b",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "u",
+                "p"
+              ],
+              [
+                "-3/20",
+                "0"
+              ]
+            ],
+            [
+              [
+                "v",
+                "p"
+              ],
+              [
+                "-3/20",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h",
+                "u"
+              ],
+              [
+                "-3/20",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h",
+                "v"
+              ],
+              [
+                "3/20",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "u"
+              ],
+              [
+                "3/20",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "v"
+              ],
+              [
+                "3/20",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "v"
+            ],
+            "coefficient": [
+              "3/20",
+              "0"
+            ],
+            "rule": "pv",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "u"
+            ],
+            "coefficient": [
+              "3/20",
+              "0"
+            ],
+            "rule": "pu",
+            "position": 0
+          },
+          {
+            "word": [
+              "h",
+              "v"
+            ],
+            "coefficient": [
+              "3/20",
+              "0"
+            ],
+            "rule": "hv",
+            "position": 0
+          },
+          {
+            "word": [
+              "h",
+              "u"
+            ],
+            "coefficient": [
+              "-3/20",
+              "0"
+            ],
+            "rule": "hu",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "action:kinetic_metric",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "c",
+              "c"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "sn",
+              "sn"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "957c8aa75e8e7eee288e2e5f45e8f98359611ded60c49b6edeeffb6b291aed01",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [],
+              [
+                "-1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "c",
+                "c"
+              ],
+              [
+                "1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "sn",
+                "sn"
+              ],
+              [
+                "1/2",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "sn",
+              "sn"
+            ],
+            "coefficient": [
+              "1/2",
+              "0"
+            ],
+            "rule": "circle",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "action:potential_split",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "10",
+              "0"
+            ]
+          ],
+          [
+            [
+              "c",
+              "c"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "10",
+              "0"
+            ]
+          ],
+          [
+            [
+              "c",
+              "c"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "957c8aa75e8e7eee288e2e5f45e8f98359611ded60c49b6edeeffb6b291aed01",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "action:legendre_inertia",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "cb32b3b8650470211de9c090678101385887baaac3fca806f1d48ae7cf9ea0cf",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "action:cut:1:0",
+      "passed": true
+    },
+    {
+      "name": "action:inertia:1:0",
+      "passed": true
+    },
+    {
+      "name": "action:information:1:0",
+      "passed": true
+    },
+    {
+      "name": "action:curvature:1:0",
+      "passed": true
+    },
+    {
+      "name": "action:potential:1:0",
+      "passed": true
+    },
+    {
+      "name": "lapse:cut_overlap:1:0",
+      "passed": true
+    },
+    {
+      "name": "action:cut:-1:0",
+      "passed": true
+    },
+    {
+      "name": "action:inertia:-1:0",
+      "passed": true
+    },
+    {
+      "name": "action:information:-1:0",
+      "passed": true
+    },
+    {
+      "name": "action:curvature:-1:0",
+      "passed": true
+    },
+    {
+      "name": "action:potential:-1:0",
+      "passed": true
+    },
+    {
+      "name": "lapse:cut_overlap:-1:0",
+      "passed": true
+    },
+    {
+      "name": "action:cut:0:1",
+      "passed": true
+    },
+    {
+      "name": "action:inertia:0:1",
+      "passed": true
+    },
+    {
+      "name": "action:information:0:1",
+      "passed": true
+    },
+    {
+      "name": "action:curvature:0:1",
+      "passed": true
+    },
+    {
+      "name": "action:potential:0:1",
+      "passed": true
+    },
+    {
+      "name": "lapse:cut_overlap:0:1",
+      "passed": true
+    },
+    {
+      "name": "action:cut:3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "action:inertia:3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "action:information:3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "action:curvature:3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "action:potential:3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "lapse:cut_overlap:3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "action:cut:5/13:12/13",
+      "passed": true
+    },
+    {
+      "name": "action:inertia:5/13:12/13",
+      "passed": true
+    },
+    {
+      "name": "action:information:5/13:12/13",
+      "passed": true
+    },
+    {
+      "name": "action:curvature:5/13:12/13",
+      "passed": true
+    },
+    {
+      "name": "action:potential:5/13:12/13",
+      "passed": true
+    },
+    {
+      "name": "lapse:cut_overlap:5/13:12/13",
+      "passed": true
+    },
+    {
+      "name": "action:cut:-3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "action:inertia:-3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "action:information:-3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "action:curvature:-3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "action:potential:-3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "lapse:cut_overlap:-3/5:4/5",
+      "passed": true
+    },
+    {
+      "name": "finite:open_shift_commutator",
+      "passed": true
+    },
+    {
+      "name": "finite:upper_boundary_defect",
+      "passed": true
+    },
+    {
+      "name": "finite:lower_boundary_defect",
+      "passed": true
+    },
+    {
+      "name": "finite:cyclic_shift_unitarity",
+      "passed": true
+    },
+    {
+      "name": "finite:cyclic_commutator_defect",
+      "passed": true
+    },
+    {
+      "name": "source:normalized_pure_preparation",
+      "passed": true
+    },
+    {
+      "name": "source:joint_Hermitian",
+      "passed": true
+    },
+    {
+      "name": "source:force_operator_identity",
+      "passed": true
+    },
+    {
+      "name": "source:first_sine",
+      "passed": true
+    },
+    {
+      "name": "source:second_sine",
+      "passed": true
+    },
+    {
+      "name": "source:momentum_rate",
+      "passed": true
+    },
+    {
+      "name": "source:geometry_energy_rate",
+      "passed": true
+    },
+    {
+      "name": "source:matter_energy_rate",
+      "passed": true
+    },
+    {
+      "name": "source:total_energy_conservation",
+      "passed": true
+    },
+    {
+      "name": "variance:mean_lapse",
+      "passed": true
+    },
+    {
+      "name": "variance:lapse",
+      "passed": true
+    },
+    {
+      "name": "variance:momentum",
+      "passed": true
+    },
+    {
+      "name": "variance:source_derivative",
+      "passed": true
+    },
+    {
+      "name": "variance:uncertainty_product",
+      "passed": true
+    },
+    {
+      "name": "constraint:geometry_parity_symmetry",
+      "passed": true
+    },
+    {
+      "name": "constraint:exact_parity_leak",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:DD:0,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:AA:0,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:DA_with_residual:0,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:massless_special_case:0,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:DD:1,0,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:AA:1,0,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:DA_with_residual:1,0,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:massless_special_case:1,0,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:DD:1,2,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:AA:1,2,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:DA_with_residual:1,2,1",
+      "passed": true
+    },
+    {
+      "name": "local_constraint:massless_special_case:1,2,1",
+      "passed": true
+    },
+    {
+      "name": "truncation:matching_power_before_exit:0",
+      "passed": true
+    },
+    {
+      "name": "truncation:matching_power_before_exit:1",
+      "passed": true
+    },
+    {
+      "name": "truncation:matching_power_before_exit:2",
+      "passed": true
+    },
+    {
+      "name": "truncation:rational_error_ceiling",
+      "passed": true
+    },
+    {
+      "name": "circle_momentum:confluence",
+      "passed": true
+    },
+    {
+      "name": "action:circle_potential",
+      "passed": true
+    },
+    {
+      "name": "action:circle_potential:replay",
+      "passed": true
+    },
+    {
+      "name": "geometry:momentum_source",
+      "passed": true
+    },
+    {
+      "name": "geometry:momentum_source:replay",
+      "passed": true
+    },
+    {
+      "name": "geometry:kinetic_shift_commutator",
+      "passed": true
+    },
+    {
+      "name": "geometry:kinetic_shift_commutator:replay",
+      "passed": true
+    },
+    {
+      "name": "geometry:inverse_shift_commutator",
+      "passed": true
+    },
+    {
+      "name": "geometry:inverse_shift_commutator:replay",
+      "passed": true
+    },
+    {
+      "name": "source:lapse_momentum_commutator",
+      "passed": true
+    },
+    {
+      "name": "source:lapse_momentum_commutator:replay",
+      "passed": true
+    },
+    {
+      "name": "cut_circle_metric:confluence",
+      "passed": true
+    },
+    {
+      "name": "action:kinetic_metric",
+      "passed": true
+    },
+    {
+      "name": "action:kinetic_metric:replay",
+      "passed": true
+    },
+    {
+      "name": "action:potential_split",
+      "passed": true
+    },
+    {
+      "name": "action:potential_split:replay",
+      "passed": true
+    },
+    {
+      "name": "legendre:confluence",
+      "passed": true
+    },
+    {
+      "name": "action:legendre_inertia",
+      "passed": true
+    },
+    {
+      "name": "action:legendre_inertia:replay",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "finite:open_shift_is_unitary",
+      "rejected": true
+    },
+    {
+      "name": "finite:cyclic_shift_exact_canonical_relation",
+      "rejected": true
+    },
+    {
+      "name": "constraint:coupled_parity_preserved",
+      "rejected": true
+    },
+    {
+      "name": "local_constraint:massive_naive_closure:0,1",
+      "rejected": true
+    },
+    {
+      "name": "local_constraint:massive_naive_closure:1,0,1",
+      "rejected": true
+    },
+    {
+      "name": "local_constraint:massive_naive_closure:1,2,1",
+      "rejected": true
+    },
+    {
+      "name": "truncation:claim_no_boundary_error",
+      "rejected": true
+    },
+    {
+      "name": "integrity:corrupted_word_proof",
+      "rejected": true
+    }
+  ],
+  "results": {
+    "action": {
+      "inertia": "1/2",
+      "potential": "8-2*cos(2*theta)",
+      "circle_fixtures": [
+        {
+          "cosine": "1",
+          "sine": "0",
+          "kinetic_metric": "1/2",
+          "information_potential": "4",
+          "curvature_potential": "2",
+          "overlap": "0"
+        },
+        {
+          "cosine": "-1",
+          "sine": "0",
+          "kinetic_metric": "1/2",
+          "information_potential": "4",
+          "curvature_potential": "2",
+          "overlap": "1"
+        },
+        {
+          "cosine": "0",
+          "sine": "1",
+          "kinetic_metric": "1/2",
+          "information_potential": "6",
+          "curvature_potential": "4",
+          "overlap": "1/2"
+        },
+        {
+          "cosine": "3/5",
+          "sine": "4/5",
+          "kinetic_metric": "1/2",
+          "information_potential": "132/25",
+          "curvature_potential": "82/25",
+          "overlap": "1/5"
+        },
+        {
+          "cosine": "5/13",
+          "sine": "12/13",
+          "kinetic_metric": "1/2",
+          "information_potential": "964/169",
+          "curvature_potential": "626/169",
+          "overlap": "4/13"
+        },
+        {
+          "cosine": "-3/5",
+          "sine": "4/5",
+          "kinetic_metric": "1/2",
+          "information_potential": "132/25",
+          "curvature_potential": "82/25",
+          "overlap": "4/5"
+        }
+      ]
+    },
+    "source": {
+      "eta": "1",
+      "k": "2",
+      "direction": "1",
+      "a": "3/5",
+      "initial_density": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1/2"
+          ],
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "geometry_H": [
+        [
+          [
+            "33",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "24",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "17",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "12",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "9",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "8",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "9",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "12",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "17",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "24",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "33",
+            "0"
+          ]
+        ]
+      ],
+      "matter_H": [
+        [
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "-13/5",
+            "0"
+          ]
+        ]
+      ],
+      "force_operator": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ],
+          [
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ],
+          [
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ],
+          [
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ],
+          [
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ],
+          [
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ],
+          [
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ],
+          [
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ],
+          [
+            "0",
+            "-2"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ],
+          [
+            "0",
+            "-2"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "momentum_rate": "-3/10",
+      "geometry_energy_rate": "-3/10",
+      "matter_energy_rate": "3/10",
+      "mean_lapse": "13/10",
+      "lapse_variance": "9/200",
+      "momentum_variance": "1/4",
+      "uncertainty_lower": "9/1600"
+    },
+    "constraints": {
+      "uncoupled_parity_preserved": true,
+      "coupled_parity_preserved": false,
+      "even_initial_leak_squared": "9/50",
+      "clock_constraint": "global p_s+H only; not local gravitational constraints"
+    },
+    "truncation": {
+      "eta": "1",
+      "g": "0",
+      "k": "1",
+      "a": "3/5",
+      "s": "1/10",
+      "initial_radius": 1,
+      "retained_radius": 11,
+      "minimum_exit_insertions": 6,
+      "bounded_offdiagonal_norm": "23/10",
+      "t": "23/100",
+      "certified_norm_error": "148035889/120000000000000",
+      "scope": "Homogeneous fixed spatial mode; written Dyson-band proof supplies the infinite comparison."
+    }
+  },
+  "summary": {
+    "exact_checks": 92,
+    "negative_controls": 8,
+    "native_presentations": 3,
+    "symbolic_certificates": 8,
+    "serialized_replays": 8
+  }
+}

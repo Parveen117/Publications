@@ -1,0 +1,2633 @@
+{
+  "protocol": "GSA1_CONDITIONAL_GRAVITY_SIGNALLING_AUDIT_V1",
+  "status": "PASS_CONDITIONAL_SIGNALLING_AUDIT_NOT_PHYSICAL_FTL",
+  "source_pins_sha256": "9136da3db2c8c73bc2aee652172ffc9ddffd48c6f4556f8af1093364c54a6482",
+  "presentations": [
+    {
+      "name": "separate_registers",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "p",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "b",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "pp",
+            "lhs": [
+              "p",
+              "p"
+            ],
+            "rhs": [
+              [
+                [
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Sender orthogonal cut"
+          },
+          {
+            "id": "bp",
+            "lhs": [
+              "b",
+              "p"
+            ],
+            "rhs": [
+              [
+                [
+                  "p",
+                  "b"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Receiver effect acts on a separate tensor register"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "b7fb073fa3dc8a59e448b0f0ed92056cfbfa33495d147cf54463b6684c7bb3d2",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 2,
+        "resolutions": [
+          {
+            "word": [
+              "p",
+              "p",
+              "p"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              0,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "b7fb073fa3dc8a59e448b0f0ed92056cfbfa33495d147cf54463b6684c7bb3d2",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pp",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "b7fb073fa3dc8a59e448b0f0ed92056cfbfa33495d147cf54463b6684c7bb3d2",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pp",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "b",
+              "p",
+              "p"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              1,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "b7fb073fa3dc8a59e448b0f0ed92056cfbfa33495d147cf54463b6684c7bb3d2",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "b",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "b",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "bp",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "b"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "b7fb073fa3dc8a59e448b0f0ed92056cfbfa33495d147cf54463b6684c7bb3d2",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "b",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "b",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "bp",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "p",
+                    "p",
+                    "b"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pp",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "b"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    },
+    {
+      "name": "source_pure_circle",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "g",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "z",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "x",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "commute_1_0",
+            "lhs": [
+              "z",
+              "g"
+            ],
+            "rhs": [
+              [
+                [
+                  "g",
+                  "z"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting real branch coordinates and fixed source coefficient"
+          },
+          {
+            "id": "commute_2_0",
+            "lhs": [
+              "x",
+              "g"
+            ],
+            "rhs": [
+              [
+                [
+                  "g",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting real branch coordinates and fixed source coefficient"
+          },
+          {
+            "id": "commute_2_1",
+            "lhs": [
+              "x",
+              "z"
+            ],
+            "rhs": [
+              [
+                [
+                  "z",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting real branch coordinates and fixed source coefficient"
+          },
+          {
+            "id": "circle",
+            "lhs": [
+              "x",
+              "x"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ],
+              [
+                [
+                  "z",
+                  "z"
+                ],
+                [
+                  "-1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Pure real cut unit circle"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 4,
+        "resolutions": [
+          {
+            "word": [
+              "x",
+              "z",
+              "g"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              2,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "x",
+                      "g",
+                      "z"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "x",
+                    "g",
+                    "z"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "g",
+                    "x",
+                    "z"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_1",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "g",
+                      "z",
+                      "x"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "z",
+                      "x",
+                      "g"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "z",
+                    "x",
+                    "g"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_0",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "z",
+                    "g",
+                    "x"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_1_0",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "g",
+                      "z",
+                      "x"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "x",
+              "x",
+              "g"
+            ],
+            "first": [
+              1,
+              1
+            ],
+            "second": [
+              3,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "x",
+                      "g",
+                      "x"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "x",
+                    "g",
+                    "x"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "g",
+                    "x",
+                    "x"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "circle",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "g"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "g",
+                      "z",
+                      "z"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "g"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "z",
+                      "z",
+                      "g"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "z",
+                    "z",
+                    "g"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "commute_1_0",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "z",
+                    "g",
+                    "z"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "commute_1_0",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "g"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "g",
+                      "z",
+                      "z"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "x",
+              "x",
+              "z"
+            ],
+            "first": [
+              2,
+              1
+            ],
+            "second": [
+              3,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "x",
+                      "z",
+                      "x"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "x",
+                    "z",
+                    "x"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_1",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "z",
+                    "x",
+                    "x"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "circle",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "z"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "z",
+                      "z",
+                      "z"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "z"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "z",
+                      "z",
+                      "z"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "z"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "z",
+                      "z",
+                      "z"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "x",
+              "x",
+              "x"
+            ],
+            "first": [
+              3,
+              0
+            ],
+            "second": [
+              3,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "x"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "z",
+                      "z",
+                      "x"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "x"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "z",
+                      "z",
+                      "x"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "x"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "x",
+                      "z",
+                      "z"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "x",
+                    "z",
+                    "z"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "commute_2_1",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "z",
+                    "x",
+                    "z"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "commute_2_1",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "x"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "z",
+                      "z",
+                      "x"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "words:local_cut_receiver_null",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "b"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "b"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "b",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "b",
+              "p"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "b"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "b7fb073fa3dc8a59e448b0f0ed92056cfbfa33495d147cf54463b6684c7bb3d2",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "p",
+                "b"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "b",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "b",
+                "p"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "b",
+              "p"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "bp",
+            "position": 1
+          },
+          {
+            "word": [
+              "p",
+              "p",
+              "b"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "pp",
+            "position": 0
+          },
+          {
+            "word": [
+              "b",
+              "p"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "bp",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:pure_circle_preserved",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "z",
+              "g",
+              "z",
+              "x",
+              "x"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "g",
+              "z",
+              "z",
+              "x"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "z",
+                "g",
+                "z",
+                "x",
+                "x"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "x",
+                "g",
+                "z",
+                "z",
+                "x"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "x",
+              "g",
+              "z",
+              "z",
+              "x"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "commute_2_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "z",
+              "g",
+              "z",
+              "x",
+              "x"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "g",
+              "x",
+              "z",
+              "z",
+              "x"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "commute_2_1",
+            "position": 1
+          },
+          {
+            "word": [
+              "g",
+              "z",
+              "x",
+              "z",
+              "x"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "commute_2_1",
+            "position": 2
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:logistic_square_equation",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "z",
+              "g",
+              "z",
+              "x",
+              "x"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "g",
+              "z",
+              "z"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "g",
+              "z",
+              "z",
+              "z",
+              "z"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "1efbee3d57dbde6451d3dddb2e2709ae25a7eaa36b634931e1320ac0d28ca751",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "g",
+                "z",
+                "z"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "g",
+                "z",
+                "z",
+                "z",
+                "z"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "z",
+                "g",
+                "z",
+                "x",
+                "x"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "z",
+              "g",
+              "z",
+              "x",
+              "x"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "g",
+              "z",
+              "z",
+              "x",
+              "x"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "circle",
+            "position": 3
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "steering:source_pure_positive_cut",
+      "passed": true
+    },
+    {
+      "name": "steering:Z_weights",
+      "passed": true
+    },
+    {
+      "name": "steering:X_weights",
+      "passed": true
+    },
+    {
+      "name": "steering:Z_conditional_cuts",
+      "passed": true
+    },
+    {
+      "name": "steering:X_conditional_cuts",
+      "passed": true
+    },
+    {
+      "name": "steering:unconditional_marginals_equal",
+      "passed": true
+    },
+    {
+      "name": "source:QGC_common_density",
+      "passed": true
+    },
+    {
+      "name": "source:QGC_steering_ensemble:Z:0",
+      "passed": true
+    },
+    {
+      "name": "source:QGC_steering_ensemble:Z:1",
+      "passed": true
+    },
+    {
+      "name": "source:QGC_steering_ensemble:X:0",
+      "passed": true
+    },
+    {
+      "name": "source:QGC_steering_ensemble:X:1",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:complete",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_0_0",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_0_1",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_0_2",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_0_3",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_1_0",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_1_1",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_1_2",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_1_3",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_2_0",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_2_1",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_2_2",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_2_3",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_3_0",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_3_1",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_3_2",
+      "passed": true
+    },
+    {
+      "name": "local:Z_measurement:basis_3_3",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:complete",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_0_0",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_0_1",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_0_2",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_0_3",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_1_0",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_1_1",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_1_2",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_1_3",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_2_0",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_2_1",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_2_2",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_2_3",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_3_0",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_3_1",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_3_2",
+      "passed": true
+    },
+    {
+      "name": "local:X_measurement:basis_3_3",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:complete",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_0_0",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_0_1",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_0_2",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_0_3",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_1_0",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_1_1",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_1_2",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_1_3",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_2_0",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_2_1",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_2_2",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_2_3",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_3_0",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_3_1",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_3_2",
+      "passed": true
+    },
+    {
+      "name": "local:QGC_filter:basis_3_3",
+      "passed": true
+    },
+    {
+      "name": "local:damping:complete",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_0_0",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_0_1",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_0_2",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_0_3",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_1_0",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_1_1",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_1_2",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_1_3",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_2_0",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_2_1",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_2_2",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_2_3",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_3_0",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_3_1",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_3_2",
+      "passed": true
+    },
+    {
+      "name": "local:damping:basis_3_3",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:complete",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_0_0",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_0_1",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_0_2",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_0_3",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_1_0",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_1_1",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_1_2",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_1_3",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_2_0",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_2_1",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_2_2",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_2_3",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_3_0",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_3_1",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_3_2",
+      "passed": true
+    },
+    {
+      "name": "local:CHD_history:basis_3_3",
+      "passed": true
+    },
+    {
+      "name": "local:coherent_history_isometry",
+      "passed": true
+    },
+    {
+      "name": "local:coherent_receiver_unchanged",
+      "passed": true
+    },
+    {
+      "name": "local:coherent_receiver_effect_intertwiner",
+      "passed": true
+    },
+    {
+      "name": "candidate:stationary_Z_ensemble",
+      "passed": true
+    },
+    {
+      "name": "candidate:source_velocity_reproduced",
+      "passed": true
+    },
+    {
+      "name": "candidate:Z_contrast_rate",
+      "passed": true
+    },
+    {
+      "name": "candidate:probability_contrast_rate",
+      "passed": true
+    },
+    {
+      "name": "trajectory:3/5:unit_circle",
+      "passed": true
+    },
+    {
+      "name": "trajectory:3/5:closed_form_z",
+      "passed": true
+    },
+    {
+      "name": "trajectory:3/5:closed_form_x",
+      "passed": true
+    },
+    {
+      "name": "trajectory:3/5:actual_source_derivative:1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:3/5:trace_zero:1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:3/5:actual_source_derivative:-1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:3/5:trace_zero:-1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:3/5:derivative_closed_form",
+      "passed": true
+    },
+    {
+      "name": "trajectory:4/5:unit_circle",
+      "passed": true
+    },
+    {
+      "name": "trajectory:4/5:closed_form_z",
+      "passed": true
+    },
+    {
+      "name": "trajectory:4/5:closed_form_x",
+      "passed": true
+    },
+    {
+      "name": "trajectory:4/5:actual_source_derivative:1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:4/5:trace_zero:1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:4/5:actual_source_derivative:-1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:4/5:trace_zero:-1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:4/5:derivative_closed_form",
+      "passed": true
+    },
+    {
+      "name": "trajectory:12/13:unit_circle",
+      "passed": true
+    },
+    {
+      "name": "trajectory:12/13:closed_form_z",
+      "passed": true
+    },
+    {
+      "name": "trajectory:12/13:closed_form_x",
+      "passed": true
+    },
+    {
+      "name": "trajectory:12/13:actual_source_derivative:1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:12/13:trace_zero:1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:12/13:actual_source_derivative:-1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:12/13:trace_zero:-1",
+      "passed": true
+    },
+    {
+      "name": "trajectory:12/13:derivative_closed_form",
+      "passed": true
+    },
+    {
+      "name": "trajectory:exact_count_prefactor",
+      "passed": true
+    },
+    {
+      "name": "candidate:finite_X_density",
+      "passed": true
+    },
+    {
+      "name": "candidate:finite_Z_density",
+      "passed": true
+    },
+    {
+      "name": "candidate:finite_probability_contrast",
+      "passed": true
+    },
+    {
+      "name": "candidate:linearized_response_contrast",
+      "passed": true
+    },
+    {
+      "name": "candidate:affine_repair_has_zero_contrast",
+      "passed": true
+    },
+    {
+      "name": "joint:published_operation_reproduced",
+      "passed": true
+    },
+    {
+      "name": "joint:unitary",
+      "passed": true
+    },
+    {
+      "name": "joint:no_signal_before_interaction",
+      "passed": true
+    },
+    {
+      "name": "joint:reference_output_zero",
+      "passed": true
+    },
+    {
+      "name": "joint:reference_output_one",
+      "passed": true
+    },
+    {
+      "name": "joint:Heisenberg_signal_formula",
+      "passed": true
+    },
+    {
+      "name": "joint:exact_signal_norm_square",
+      "passed": true
+    },
+    {
+      "name": "joint:optimal_geometry_positive_cut",
+      "passed": true
+    },
+    {
+      "name": "joint:attained_maximum_contrast",
+      "passed": true
+    },
+    {
+      "name": "separate_registers:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:local_cut_receiver_null",
+      "passed": true
+    },
+    {
+      "name": "words:local_cut_receiver_null:replay",
+      "passed": true
+    },
+    {
+      "name": "source_pure_circle:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:pure_circle_preserved",
+      "passed": true
+    },
+    {
+      "name": "words:pure_circle_preserved:replay",
+      "passed": true
+    },
+    {
+      "name": "words:logistic_square_equation",
+      "passed": true
+    },
+    {
+      "name": "words:logistic_square_equation:replay",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "postselection:conditional_difference_is_unconditional_signal",
+      "rejected": true
+    },
+    {
+      "name": "postselection:unit_probability_outcomes",
+      "rejected": true
+    },
+    {
+      "name": "local:coherent_retention_alone_sends_a_bit",
+      "rejected": true
+    },
+    {
+      "name": "candidate:affine_density_only_extension",
+      "rejected": true
+    },
+    {
+      "name": "joint:interaction_is_sender_only",
+      "rejected": true
+    },
+    {
+      "name": "joint:reference_contrast_is_optimal",
+      "rejected": true
+    },
+    {
+      "name": "integrity:corrupted_symbolic_witness",
+      "rejected": true
+    }
+  ],
+  "results": {
+    "source": [
+      [
+        [
+          "4/5",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "2/5",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "2/5",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1/5",
+          "0"
+        ]
+      ]
+    ],
+    "receiver_common_density": [
+      [
+        [
+          "4/5",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1/5",
+          "0"
+        ]
+      ]
+    ],
+    "steering": {
+      "Z": [
+        {
+          "weight": [
+            "4/5",
+            "0"
+          ],
+          "state": [
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ]
+        },
+        {
+          "weight": [
+            "1/5",
+            "0"
+          ],
+          "state": [
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        }
+      ],
+      "X": [
+        {
+          "weight": [
+            "1/2",
+            "0"
+          ],
+          "state": [
+            [
+              [
+                "4/5",
+                "0"
+              ],
+              [
+                "2/5",
+                "0"
+              ]
+            ],
+            [
+              [
+                "2/5",
+                "0"
+              ],
+              [
+                "1/5",
+                "0"
+              ]
+            ]
+          ]
+        },
+        {
+          "weight": [
+            "1/2",
+            "0"
+          ],
+          "state": [
+            [
+              [
+                "4/5",
+                "0"
+              ],
+              [
+                "-2/5",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-2/5",
+                "0"
+              ],
+              [
+                "1/5",
+                "0"
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    "candidate": {
+      "initial_probability_contrast_rate": "888/29375",
+      "trajectories": [
+        {
+          "z": "3/5",
+          "x": "4/5",
+          "u": "1",
+          "zdot": "1776/29375",
+          "xdot": "-1332/29375"
+        },
+        {
+          "z": "4/5",
+          "x": "3/5",
+          "u": "81/256",
+          "zdot": "1332/29375",
+          "xdot": "-1776/29375"
+        },
+        {
+          "z": "12/13",
+          "x": "5/13",
+          "u": "25/256",
+          "zdot": "2220/103259",
+          "xdot": "-5328/103259"
+        }
+      ],
+      "finite_count": "(235/74)*log(256/81)",
+      "finite_X_density": [
+        [
+          [
+            "9/10",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1/10",
+            "0"
+          ]
+        ]
+      ],
+      "finite_Z_density": [
+        [
+          [
+            "4/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1/5",
+            "0"
+          ]
+        ]
+      ],
+      "finite_probability_contrast": [
+        "1/10",
+        "0"
+      ],
+      "linearized_response_contrast": "1/50",
+      "required_extra_premise": "componentwise nonlinear physical evolution of remotely prepared branches without delivered labels"
+    },
+    "joint_control": {
+      "operation": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "9/25",
+            "12/25"
+          ],
+          [
+            "16/25",
+            "-12/25"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "16/25",
+            "-12/25"
+          ],
+          [
+            "9/25",
+            "12/25"
+          ]
+        ]
+      ],
+      "signal_operator": [
+        [
+          [
+            "16/25",
+            "0"
+          ],
+          [
+            "0",
+            "12/25"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "-12/25"
+          ],
+          [
+            "-16/25",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-16/25",
+            "0"
+          ],
+          [
+            "0",
+            "-12/25"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "12/25"
+          ],
+          [
+            "16/25",
+            "0"
+          ]
+        ]
+      ],
+      "reference_contrast": "16/25",
+      "maximal_effect_contrast": "4/5",
+      "optimal_geometry": [
+        [
+          [
+            "9/10",
+            "0"
+          ],
+          [
+            "0",
+            "3/10"
+          ]
+        ],
+        [
+          [
+            "0",
+            "-3/10"
+          ],
+          [
+            "1/10",
+            "0"
+          ]
+        ]
+      ]
+    },
+    "scope": {
+      "local_affine_remote_signal": false,
+      "nonlinear_steering_extension_has_mathematical_signal": true,
+      "nonlinear_law_admitted_as_affine_quantum_dynamics": false,
+      "physical_distance_supplied": false,
+      "physical_clock_calibrated": false,
+      "physical_FTL_demonstrated": false,
+      "consciousness_mechanism_derived": false,
+      "quantum_gravity_complete": false
+    }
+  },
+  "summary": {
+    "exact_checks": 150,
+    "negative_controls": 7,
+    "native_presentations": 2,
+    "symbolic_certificates": 3,
+    "serialized_replays": 3
+  }
+}

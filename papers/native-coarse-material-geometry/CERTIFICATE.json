@@ -1,0 +1,3103 @@
+{
+  "protocol": "CMG1_COARSE_MATERIAL_GEOMETRY_V1",
+  "status": "PASS_CONTINUUM_COARSE_GEOMETRY_WITH_DECLARED_THRESHOLD",
+  "source_pins_sha256": "cfca060e96c6506b62955a4f40f0e8f8fb5dd68d0da9d7732cb942fee68e7c2b",
+  "checks": [
+    {
+      "name": "scalar_presentation_confluent",
+      "passed": true
+    },
+    {
+      "name": "complex_Gaussian_generating_exponent",
+      "passed": true
+    },
+    {
+      "name": "complex_Gaussian_generating_exponent:replay",
+      "passed": true
+    },
+    {
+      "name": "positive_power_difference_factorization",
+      "passed": true
+    },
+    {
+      "name": "positive_power_difference_factorization:replay",
+      "passed": true
+    },
+    {
+      "name": "filter_scale_comparison",
+      "passed": true
+    },
+    {
+      "name": "filter_scale_comparison:replay",
+      "passed": true
+    },
+    {
+      "name": "tail_comparison_numerator",
+      "passed": true
+    },
+    {
+      "name": "tail_comparison_numerator:replay",
+      "passed": true
+    },
+    {
+      "name": "all_n_tail_numerator_bound",
+      "passed": true
+    },
+    {
+      "name": "all_n_tail_numerator_bound:replay",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_tail_bound_coefficient:0",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_tail_bound_coefficient:1",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_tail_bound_coefficient:2",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_tail_bound_coefficient:3",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_tail_bound_coefficient:4",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_tail_bound_coefficient:5",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_tail_bound_coefficient:6",
+      "passed": true
+    },
+    {
+      "name": "nonnegative_tail_bound_coefficient:7",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:0:0",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:0:1",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:0:2",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:0:3",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:0:4",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:0:5",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:0:6",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:1:0",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:1:1",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:1:2",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:1:3",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:1:4",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:1:5",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:1:6",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:2:0",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:2:1",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:2:2",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:2:3",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:2:4",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:2:5",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:2:6",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:3:0",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:3:1",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:3:2",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:3:3",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:3:4",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:3:5",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:3:6",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:4:0",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:4:1",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:4:2",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:4:3",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:4:4",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:4:5",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:4:6",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:5:0",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:5:1",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:5:2",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:5:3",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:5:4",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:5:5",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:5:6",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:6:0",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:6:1",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:6:2",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:6:3",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:6:4",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:6:5",
+      "passed": true
+    },
+    {
+      "name": "Hermite_Bargmann_Gram:6:6",
+      "passed": true
+    },
+    {
+      "name": "two_mode_marginal_orthogonality",
+      "passed": true
+    },
+    {
+      "name": "unused_mode_offdiagonal_vanishes",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:1",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:1",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1:1",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1:1",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:2",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:2",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1:2",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1:2",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:3",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:3",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1:3",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1:3",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:4",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:4",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1:4",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1:4",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:5",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:5",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:6",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:6",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:7",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:7",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:8",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:8",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:9",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:9",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:10",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:10",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:11",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:11",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:12",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:12",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:13",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:13",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:14",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:14",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:15",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:15",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:16",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:16",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:17",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:17",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:18",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:18",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:19",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:19",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:20",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:20",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:21",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:21",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:22",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:22",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:23",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:23",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1:24",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1:24",
+      "passed": true
+    },
+    {
+      "name": "zero_mode_retained:1",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:1",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:1",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1/2:1",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1/2:1",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:2",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:2",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1/2:2",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1/2:2",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:3",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:3",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1/2:3",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1/2:3",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:4",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:4",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1/2:4",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1/2:4",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:5",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:5",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:6",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:6",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:7",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:7",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:8",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:8",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:9",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:9",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:10",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:10",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:11",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:11",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:12",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:12",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:13",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:13",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:14",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:14",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:15",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:15",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:16",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:16",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:17",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:17",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:18",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:18",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:19",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:19",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:20",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:20",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:21",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:21",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:22",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:22",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:23",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:23",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/2:24",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/2:24",
+      "passed": true
+    },
+    {
+      "name": "zero_mode_retained:1/2",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:1",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:1",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1/4:1",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1/4:1",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:2",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:2",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1/4:2",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1/4:2",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:3",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:3",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1/4:3",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1/4:3",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:4",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:4",
+      "passed": true
+    },
+    {
+      "name": "strict_contraction:1/4:4",
+      "passed": true
+    },
+    {
+      "name": "filtered_joint_noise_product:1/4:4",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:5",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:5",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:6",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:6",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:7",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:7",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:8",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:8",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:9",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:9",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:10",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:10",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:11",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:11",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:12",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:12",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:13",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:13",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:14",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:14",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:15",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:15",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:16",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:16",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:17",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:17",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:18",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:18",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:19",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:19",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:20",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:20",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:21",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:21",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:22",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:22",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:23",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:23",
+      "passed": true
+    },
+    {
+      "name": "filter_tail_bound:1/4:24",
+      "passed": true
+    },
+    {
+      "name": "classical_scale_bound:1/4:24",
+      "passed": true
+    },
+    {
+      "name": "zero_mode_retained:1/4",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_momentum_covariance:0",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_configuration_covariance:0",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_momentum_covariance:1",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_configuration_covariance:1",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_momentum_covariance:2",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_configuration_covariance:2",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_momentum_covariance:3",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_configuration_covariance:3",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_momentum_covariance:4",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_configuration_covariance:4",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_momentum_covariance:5",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_configuration_covariance:5",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_momentum_covariance:6",
+      "passed": true
+    },
+    {
+      "name": "ell_one_filtered_configuration_covariance:6",
+      "passed": true
+    },
+    {
+      "name": "length_weights_normalized:-1",
+      "passed": true
+    },
+    {
+      "name": "length_weights_positive:-1",
+      "passed": true
+    },
+    {
+      "name": "length_between_theta_extrema:-1",
+      "passed": true
+    },
+    {
+      "name": "length_weights_normalized:1",
+      "passed": true
+    },
+    {
+      "name": "length_weights_positive:1",
+      "passed": true
+    },
+    {
+      "name": "length_between_theta_extrema:1",
+      "passed": true
+    },
+    {
+      "name": "accepted_inverse_density_bound:1/4:1",
+      "passed": true
+    },
+    {
+      "name": "accepted_inverse_density_bound:1/4:2",
+      "passed": true
+    },
+    {
+      "name": "accepted_inverse_density_bound:1/4:5",
+      "passed": true
+    },
+    {
+      "name": "accepted_inverse_density_bound:1/2:1",
+      "passed": true
+    },
+    {
+      "name": "accepted_inverse_density_bound:1/2:2",
+      "passed": true
+    },
+    {
+      "name": "accepted_inverse_density_bound:1/2:5",
+      "passed": true
+    },
+    {
+      "name": "accepted_inverse_density_bound:1:1",
+      "passed": true
+    },
+    {
+      "name": "accepted_inverse_density_bound:1:2",
+      "passed": true
+    },
+    {
+      "name": "accepted_inverse_density_bound:1:5",
+      "passed": true
+    },
+    {
+      "name": "joint_classical_scale:2",
+      "passed": true
+    },
+    {
+      "name": "joint_classical_scale:4",
+      "passed": true
+    },
+    {
+      "name": "joint_classical_scale:8",
+      "passed": true
+    },
+    {
+      "name": "joint_classical_scale:16",
+      "passed": true
+    },
+    {
+      "name": "detector_analysis_isometry",
+      "passed": true
+    },
+    {
+      "name": "success_plus_rejection_normalized",
+      "passed": true
+    },
+    {
+      "name": "length_mean_selfadjoint",
+      "passed": true
+    },
+    {
+      "name": "length_mean_positive_diagonal",
+      "passed": true
+    },
+    {
+      "name": "accepted_conditional_mean_first_state",
+      "passed": true
+    },
+    {
+      "name": "accepted_conditional_mean_second_state",
+      "passed": true
+    },
+    {
+      "name": "mixed_state_conditional_reading",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "wrong_complex_Gaussian_normalization",
+      "rejected": true
+    },
+    {
+      "name": "wrong_filter_scale_sign",
+      "rejected": true
+    },
+    {
+      "name": "complex_variance_one_per_real_axis:1",
+      "rejected": true
+    },
+    {
+      "name": "complex_variance_one_per_real_axis:2",
+      "rejected": true
+    },
+    {
+      "name": "complex_variance_one_per_real_axis:3",
+      "rejected": true
+    },
+    {
+      "name": "complex_variance_one_per_real_axis:4",
+      "rejected": true
+    },
+    {
+      "name": "smoothing_is_canonical_coordinate_change",
+      "rejected": true
+    },
+    {
+      "name": "filter_commutes_with_nonlinear_inverse",
+      "rejected": true
+    },
+    {
+      "name": "omit_inverse_covariance_in_momentum_noise",
+      "rejected": true
+    },
+    {
+      "name": "omit_global_P_from_length:-1",
+      "rejected": true
+    },
+    {
+      "name": "omit_global_P_from_length:1",
+      "rejected": true
+    },
+    {
+      "name": "threshold_bound_without_acceptance",
+      "rejected": true
+    },
+    {
+      "name": "fixed_hbar_removes_scale:2",
+      "rejected": true
+    },
+    {
+      "name": "fixed_hbar_removes_scale:4",
+      "rejected": true
+    },
+    {
+      "name": "fixed_hbar_removes_scale:8",
+      "rejected": true
+    },
+    {
+      "name": "fixed_hbar_removes_scale:16",
+      "rejected": true
+    },
+    {
+      "name": "conditional_mean_is_linear_observable",
+      "rejected": true
+    },
+    {
+      "name": "discard_rejection_probability",
+      "rejected": true
+    },
+    {
+      "name": "mean_operator_spectrum_is_POVM",
+      "rejected": true
+    },
+    {
+      "name": "corrupted_native_replay",
+      "rejected": true
+    }
+  ],
+  "presentations": [
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "t",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "s",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "A",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "B",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "q",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "x",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "n",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "commute_1_0",
+            "lhs": [
+              "s",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "s"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_2_0",
+            "lhs": [
+              "A",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "A"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_2_1",
+            "lhs": [
+              "A",
+              "s"
+            ],
+            "rhs": [
+              [
+                [
+                  "s",
+                  "A"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_3_0",
+            "lhs": [
+              "B",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "B"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_3_1",
+            "lhs": [
+              "B",
+              "s"
+            ],
+            "rhs": [
+              [
+                [
+                  "s",
+                  "B"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_3_2",
+            "lhs": [
+              "B",
+              "A"
+            ],
+            "rhs": [
+              [
+                [
+                  "A",
+                  "B"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_4_0",
+            "lhs": [
+              "q",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_4_1",
+            "lhs": [
+              "q",
+              "s"
+            ],
+            "rhs": [
+              [
+                [
+                  "s",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_4_2",
+            "lhs": [
+              "q",
+              "A"
+            ],
+            "rhs": [
+              [
+                [
+                  "A",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_4_3",
+            "lhs": [
+              "q",
+              "B"
+            ],
+            "rhs": [
+              [
+                [
+                  "B",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_5_0",
+            "lhs": [
+              "x",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_5_1",
+            "lhs": [
+              "x",
+              "s"
+            ],
+            "rhs": [
+              [
+                [
+                  "s",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_5_2",
+            "lhs": [
+              "x",
+              "A"
+            ],
+            "rhs": [
+              [
+                [
+                  "A",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_5_3",
+            "lhs": [
+              "x",
+              "B"
+            ],
+            "rhs": [
+              [
+                [
+                  "B",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_5_4",
+            "lhs": [
+              "x",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_6_0",
+            "lhs": [
+              "n",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_6_1",
+            "lhs": [
+              "n",
+              "s"
+            ],
+            "rhs": [
+              [
+                [
+                  "s",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_6_2",
+            "lhs": [
+              "n",
+              "A"
+            ],
+            "rhs": [
+              [
+                [
+                  "A",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_6_3",
+            "lhs": [
+              "n",
+              "B"
+            ],
+            "rhs": [
+              [
+                [
+                  "B",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_6_4",
+            "lhs": [
+              "n",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          },
+          {
+            "id": "commute_6_5",
+            "lhs": [
+              "n",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting Gaussian generating parameters and positive scalar filter bounds"
+          }
+        ]
+      },
+      "audit": {
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "criticalPairs": 35,
+        "resolved": 35,
+        "open": 0,
+        "full_audit_sha256": "95105bc63065cc0d102d96da2e56ed57091fa6249f64da8b7779fe320e5d47cb"
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "complex_Gaussian_generating_exponent",
+      "presentation_sha256": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "t",
+              "s"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s",
+              "t"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "t",
+              "s"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "t",
+                "s"
+              ],
+              [
+                "-1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "s",
+                "t"
+              ],
+              [
+                "1/2",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "s",
+              "t"
+            ],
+            "coefficient": [
+              "1/2",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "positive_power_difference_factorization",
+      "presentation_sha256": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "A",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "A",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "A",
+              "B",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "A",
+              "B",
+              "B",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "A",
+              "B",
+              "B",
+              "B",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "A",
+              "B",
+              "B",
+              "B",
+              "B",
+              "A",
+              "A"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "A",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "A"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "A",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "B",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "B",
+              "B",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "B",
+              "B",
+              "B",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "B",
+              "B",
+              "B",
+              "B",
+              "A",
+              "A",
+              "A"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "A",
+              "A"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "A"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "A",
+                "B",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "A",
+                "B",
+                "B",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "A",
+                "B",
+                "B",
+                "B",
+                "A",
+                "A",
+                "A"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "A",
+                "B",
+                "B",
+                "B",
+                "B",
+                "A",
+                "A"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "A",
+                "B",
+                "B",
+                "B",
+                "B",
+                "B",
+                "A"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "A",
+                "B",
+                "B",
+                "B",
+                "B",
+                "B",
+                "B"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "B",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "B",
+                "B",
+                "A",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "B",
+                "B",
+                "B",
+                "A",
+                "A",
+                "A",
+                "A"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "B",
+                "B",
+                "B",
+                "B",
+                "A",
+                "A",
+                "A"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "B",
+                "B",
+                "B",
+                "B",
+                "B",
+                "A",
+                "A"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "B",
+                "B",
+                "B",
+                "B",
+                "B",
+                "B",
+                "A"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 5
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "A",
+              "B"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 4
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "B",
+              "B",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 4
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "B",
+              "A",
+              "B",
+              "B"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 3
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "B",
+              "A",
+              "B",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 3
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "B",
+              "A",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 3
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "A",
+              "B",
+              "B",
+              "B"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 2
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "A",
+              "B",
+              "B",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 2
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "A",
+              "B",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 2
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "B",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 2
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "A",
+              "B",
+              "B",
+              "B",
+              "B"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 1
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "A",
+              "B",
+              "B",
+              "B",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 1
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "A",
+              "B",
+              "B",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 1
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "A",
+              "B",
+              "A",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 1
+          },
+          {
+            "word": [
+              "B",
+              "B",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 1
+          },
+          {
+            "word": [
+              "B",
+              "A",
+              "B",
+              "B",
+              "B",
+              "B",
+              "B"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 0
+          },
+          {
+            "word": [
+              "B",
+              "A",
+              "B",
+              "B",
+              "B",
+              "B",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 0
+          },
+          {
+            "word": [
+              "B",
+              "A",
+              "B",
+              "B",
+              "B",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 0
+          },
+          {
+            "word": [
+              "B",
+              "A",
+              "B",
+              "B",
+              "A",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 0
+          },
+          {
+            "word": [
+              "B",
+              "A",
+              "B",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 0
+          },
+          {
+            "word": [
+              "B",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A",
+              "A"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_2",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "filter_scale_comparison",
+      "presentation_sha256": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "tail_comparison_numerator",
+      "presentation_sha256": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "n"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "n"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "all_n_tail_numerator_bound",
+      "presentation_sha256": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x"
+            ],
+            [
+              "448",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x"
+            ],
+            [
+              "2016",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "3920",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "4200",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "2604",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "882",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "127",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x"
+            ],
+            [
+              "448",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x"
+            ],
+            [
+              "2016",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "3920",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "4200",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "2604",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "882",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x",
+              "x"
+            ],
+            [
+              "127",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "30a366165fadf5a28c4c4b83c7103b2fd0dce7bf2fd01600067cdb3e6dec39d7",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "kind": "general_tail_bound_polynomial",
+      "substitution": "x=n^2-1>=0",
+      "coefficients": [
+        "0",
+        "448",
+        "2016",
+        "3920",
+        "4200",
+        "2604",
+        "882",
+        "127"
+      ],
+      "conclusion": "(1+n^2)^7 <= 128 n^14 for n>=1"
+    },
+    {
+      "kind": "finite_H3_covariance_budget_h1",
+      "ell": "1",
+      "cutoff": 24,
+      "configuration": "3176322693418931622523510305191902012144037805300079764524148925139805176312298843631319971429357971357535054962712031803938005324319702039382611132576472480709933012841366162773448807609737302857137742961535995986232414525954703141512203430632445100204598631137497385550977/1581980113751239148491155430538260946892868597136599891311357966991809005319550209318160977790839011020684702373576453339590183755707908185545136010398450357558352600329499104645075601473773371675778569780596484698127559554838957429236104691616606667994431680102539062500000",
+      "conjugate": "1133209490218517752517417021697/737821351017004497130684636970",
+      "scope": "finite sums only; infinite tails bounded analytically in theorem"
+    },
+    {
+      "kind": "finite_H3_covariance_budget_h1",
+      "ell": "1/2",
+      "cutoff": 24,
+      "configuration": "65845238880133428371686864268363996115093909867070181165219385413438538994536231859751284021408450530317314557089924041375569026883203885800099269245468152959731034226157848186805723561705847396031136641138930927311822351/28154607399318286420467715238148564230970593232478344494921259464389949119038472171559855790163047287924150236026028088481901347356819485230489206957600861999955502370966401448191004849517487117251268785476684570312500000",
+      "conjugate": "48385164638722639228896627344860949868413698328347372381561587466300480597799702008033876707524876181847185471934572525781517808786975703379388725141166824802935086586031165405777062928231261982946029667203287/4845751949565748202572823816847039352124497815091137715923728951930115494944077864927814606806497928850854840349634203397884647222632099544089920215646723604131009508415834087690473302864074707031250000000",
+      "scope": "finite sums only; infinite tails bounded analytically in theorem"
+    },
+    {
+      "kind": "finite_H3_covariance_budget_h1",
+      "ell": "1/4",
+      "cutoff": 24,
+      "configuration": "623364227805691217795506450468218178188791609494453086581220346839194727939431997592625564802482767740411934311088974373828291467396820794470905437358575014466192107765811362874843052706618948976294728373884787/184542670820841608395109542524258021749768522356545659822265163904592213171835702741074851440955090941942539930365050245709936772266665057687039933048188488159085234861349372767082223791985111236572265625000000",
+      "conjugate": "15740298815602269060546617800348098902333178555234775107010843749433435715992963821531341870101824207256788280338454431614378328445536193809876737865093895891544795544648336164669592384235452658143/78090612812259397867560258403440681430702860327041714733774408715871499267093183853661457982548197692257332440587056982025211816411645070945914213776278710774026242670762875195312500000000",
+      "scope": "finite sums only; infinite tails bounded analytically in theorem"
+    },
+    {
+      "kind": "finite_flagged_detector",
+      "analysis": [
+        [
+          [
+            "3/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "4/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "success": [
+        [
+          [
+            "9/25",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ]
+      ],
+      "reject": [
+        [
+          [
+            "16/25",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "length_mean": [
+        [
+          [
+            "18/25",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "5",
+            "0"
+          ]
+        ]
+      ],
+      "length_second_moment": [
+        [
+          [
+            "36/25",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "25",
+            "0"
+          ]
+        ]
+      ],
+      "mixed_conditional_mean": "143/34"
+    }
+  ],
+  "results": {
+    "physical_space": "unchanged selected RGR/MPQ quotient",
+    "countable_POVM_and_finite_marginals": true,
+    "filter": "(I+ell^2 Lambda)^(-4)",
+    "threshold": "min exp(u_ell)>=delta with rejection probability retained",
+    "fixed_hbar_coarse_C2_profiles": true,
+    "all_normal_states_have_profile_outcomes_or_rejection": true,
+    "positive_length_mean_operator_dense_domain": true,
+    "vacuum_accepted_length_moments_finite": true,
+    "all_normal_states_have_finite_length_moments": false,
+    "ungated_vacuum_mean_length": "infinite even after smoothing",
+    "fixed_hbar_zero_response_scale_point_limit": false,
+    "classical_mean_length_recovery": "hbar ell^(-15) -> 0, fixed threshold below classical minimum |j|",
+    "response_scale_and_threshold_derived_from_source": false,
+    "sharp_continuum_r_operator": false,
+    "spacetime_curvature_operator": false,
+    "residual_gauge_completeness_assumed": false,
+    "physical_three_plus_one_gravity_closed": false,
+    "continuum_proofs_machine_certified": false
+  },
+  "summary": {
+    "exact_checks": 281,
+    "symbolic_certificates": 5,
+    "negative_controls": 20
+  }
+}

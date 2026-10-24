@@ -1,0 +1,19 @@
+{
+  "protocol": "RGR1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "18050d27722039a197f03ead88064d4b3f5805951aee8bafbc637fed7dd9048c",
+    "THEOREM.md": "8ff94808f326a81bac1c72a39641607e086240e32e35b2e107861ff5ea07ab83",
+    "SOURCE_MAP.md": "56aef583bc1b979d931d6e4c2d4a76b5fc41a346d8903b9cf2ec0d6d3a29acc5",
+    "verify.cjs": "d2716c08d745279019b9a9b96ec3b58a349edc24ed7a80464b4241096893040e",
+    "run.py": "2082f5ad324d01f6037aed24c58befce3bbaecaa75554bb63dab6e7e213370b4",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-central-gauge-domain/THEOREM.md": "d70f48a5fe713b421e9ea2035f638fd2eab7be4dce211b6d39c994334473da0a",
+    "../native-central-gauge-domain/CERTIFICATE.json": "9704439d7b5063ccbf99900c5a894a3bd0074d4d6deb11e2da51fc8742d65094",
+    "../native-inverse-gauge-quantization/THEOREM.md": "c7780e54a54774ae80288200c3f51fd95081e1a3601f82a39ab4418af969741d",
+    "../native-inverse-gauge-quantization/CERTIFICATE.json": "50f0fcfffc615842a7ac0f8abe7f4a47905c47fe8664e3eab08873129752ac0c",
+    "../native-material-profile-quantization/THEOREM.md": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0",
+    "../native-material-profile-quantization/CERTIFICATE.json": "37409ca775803390b54b268ab5e247621d7d55ee5ffe0dd2428d702d400e2648",
+    "../native-material-reference-field/THEOREM.md": "2efecdf36d8931e4a6748ba83c4be19495eb717a58d21110935eeb0cdeeedadd"
+  }
+}

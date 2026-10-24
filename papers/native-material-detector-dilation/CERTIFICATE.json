@@ -1,0 +1,4291 @@
+{
+  "protocol": "MDD1_MATERIAL_DETECTOR_DILATION_V1",
+  "status": "PASS_SOURCE_LIFT_JOINT_DETECTOR_AND_CALIBRATION",
+  "source_pins_sha256": "7f6dd668e434a82c03a4b8a9f1334b09fc8f7653b06aa2ba905e0a220f4eb74d",
+  "checks": [
+    {
+      "name": "confluent:e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+      "passed": true
+    },
+    {
+      "name": "commuting_joint_readings",
+      "passed": true
+    },
+    {
+      "name": "commuting_joint_readings:replay",
+      "passed": true
+    },
+    {
+      "name": "source_feedback_s",
+      "passed": true
+    },
+    {
+      "name": "source_feedback_s:replay",
+      "passed": true
+    },
+    {
+      "name": "source_feedback_d",
+      "passed": true
+    },
+    {
+      "name": "source_feedback_d:replay",
+      "passed": true
+    },
+    {
+      "name": "probe_feedback_a",
+      "passed": true
+    },
+    {
+      "name": "probe_feedback_a:replay",
+      "passed": true
+    },
+    {
+      "name": "probe_feedback_b",
+      "passed": true
+    },
+    {
+      "name": "probe_feedback_b:replay",
+      "passed": true
+    },
+    {
+      "name": "opposite_ancilla_noise_commutator",
+      "passed": true
+    },
+    {
+      "name": "opposite_ancilla_noise_commutator:replay",
+      "passed": true
+    },
+    {
+      "name": "confluent:25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_density_kernel_completion",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_density_kernel_completion:replay",
+      "passed": true
+    },
+    {
+      "name": "probe_score_cancels_in_rotation",
+      "passed": true
+    },
+    {
+      "name": "probe_score_cancels_in_rotation:replay",
+      "passed": true
+    },
+    {
+      "name": "density_first_moment_exponent",
+      "passed": true
+    },
+    {
+      "name": "density_first_moment_exponent:replay",
+      "passed": true
+    },
+    {
+      "name": "density_second_moment_exponent",
+      "passed": true
+    },
+    {
+      "name": "density_second_moment_exponent:replay",
+      "passed": true
+    },
+    {
+      "name": "two_mode_noise_Cauchy_Schwarz_remainder",
+      "passed": true
+    },
+    {
+      "name": "two_mode_noise_Cauchy_Schwarz_remainder:replay",
+      "passed": true
+    },
+    {
+      "name": "balanced_kernel_density_Jacobian",
+      "passed": true
+    },
+    {
+      "name": "rotation_unitarity:3/5",
+      "passed": true
+    },
+    {
+      "name": "rotation_symplectic:3/5",
+      "passed": true
+    },
+    {
+      "name": "rescaled_readout:3/5",
+      "passed": true
+    },
+    {
+      "name": "readouts_commute:3/5",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:3/5:1:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:3/5:1:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:3/5:1:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:3/5:1:1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:3/5:1:1",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:3/5:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:3/5:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:3/5:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:3/5:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:3/5:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:3/5:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:3/5:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:3/5:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:3/5:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:3/5:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:3/5:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:3/5:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:3/5:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:3/5:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:3/5:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:3/5:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:3/5:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:3/5:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:3/5:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:3/5:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:3/5:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:3/5:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:3/5:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:3/5:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:3/5:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "rotation_unitarity:5/13",
+      "passed": true
+    },
+    {
+      "name": "rotation_symplectic:5/13",
+      "passed": true
+    },
+    {
+      "name": "rescaled_readout:5/13",
+      "passed": true
+    },
+    {
+      "name": "readouts_commute:5/13",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:5/13:1:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:5/13:1:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:5/13:1:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:5/13:1:1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:5/13:1:1",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:5/13:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:5/13:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:5/13:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:5/13:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:5/13:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:5/13:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:5/13:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:5/13:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:5/13:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:5/13:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:5/13:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:5/13:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:5/13:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:5/13:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:5/13:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:5/13:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:5/13:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:5/13:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:5/13:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:5/13:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:5/13:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:5/13:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:5/13:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:5/13:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:5/13:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "rotation_unitarity:8/17",
+      "passed": true
+    },
+    {
+      "name": "rotation_symplectic:8/17",
+      "passed": true
+    },
+    {
+      "name": "rescaled_readout:8/17",
+      "passed": true
+    },
+    {
+      "name": "readouts_commute:8/17",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:8/17:1:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:8/17:1:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:8/17:1:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:8/17:1:1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:8/17:1:1",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:8/17:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:8/17:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:8/17:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:8/17:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:8/17:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:8/17:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:8/17:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:8/17:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:8/17:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:8/17:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:8/17:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:8/17:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:8/17:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:8/17:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:8/17:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:8/17:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:8/17:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:8/17:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:8/17:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:8/17:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "matched_covariance_invariant:8/17:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "configuration_added_noise:8/17:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "momentum_added_noise:8/17:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:8/17:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "vacuum_total_product_bound:8/17:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_u_variance:0",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_v_variance:0",
+      "passed": true
+    },
+    {
+      "name": "balanced_added_noise_product:0",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:0:0",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:0:0",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:0:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:0:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:0:2",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:0:2",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:0:3",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:0:3",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:0:4",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:0:4",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:0:5",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:0:5",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:0:6",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:0:6",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:0:7",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:0:7",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:0:8",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:0:8",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_u_variance:1",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_v_variance:1",
+      "passed": true
+    },
+    {
+      "name": "balanced_added_noise_product:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:1:0",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:1:0",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:1:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:1:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:1:2",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:1:2",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:1:3",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:1:3",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:1:4",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:1:4",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:1:5",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:1:5",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:1:6",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:1:6",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:1:7",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:1:7",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:1:8",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:1:8",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_u_variance:2",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_v_variance:2",
+      "passed": true
+    },
+    {
+      "name": "balanced_added_noise_product:2",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:2:0",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:2:0",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:2:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:2:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:2:2",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:2:2",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:2:3",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:2:3",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:2:4",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:2:4",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:2:5",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:2:5",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:2:6",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:2:6",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:2:7",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:2:7",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:2:8",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:2:8",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_u_variance:3",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_v_variance:3",
+      "passed": true
+    },
+    {
+      "name": "balanced_added_noise_product:3",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:3:0",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:3:0",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:3:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:3:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:3:2",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:3:2",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:3:3",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:3:3",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:3:4",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:3:4",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:3:5",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:3:5",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:3:6",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:3:6",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:3:7",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:3:7",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:3:8",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:3:8",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_u_variance:4",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_v_variance:4",
+      "passed": true
+    },
+    {
+      "name": "balanced_added_noise_product:4",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:4:0",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:4:0",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:4:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:4:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:4:2",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:4:2",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:4:3",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:4:3",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:4:4",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:4:4",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:4:5",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:4:5",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:4:6",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:4:6",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:4:7",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:4:7",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:4:8",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:4:8",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_u_variance:5",
+      "passed": true
+    },
+    {
+      "name": "balanced_CMG_v_variance:5",
+      "passed": true
+    },
+    {
+      "name": "balanced_added_noise_product:5",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:5:0",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:5:0",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:5:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:5:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:5:2",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:5:2",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:5:3",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:5:3",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:5:4",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:5:4",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:5:5",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:5:5",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:5:6",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:5:6",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:5:7",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:5:7",
+      "passed": true
+    },
+    {
+      "name": "configuration_gaussian_moment:5:8",
+      "passed": true
+    },
+    {
+      "name": "momentum_gaussian_moment:5:8",
+      "passed": true
+    },
+    {
+      "name": "phase_blind_multiplier:1,0",
+      "passed": true
+    },
+    {
+      "name": "phase_blind_multiplier:0,1",
+      "passed": true
+    },
+    {
+      "name": "phase_blind_multiplier:2/7,5/9",
+      "passed": true
+    },
+    {
+      "name": "phase_sensitive_effect_first_state",
+      "passed": true
+    },
+    {
+      "name": "phase_sensitive_effect_second_state",
+      "passed": true
+    },
+    {
+      "name": "configuration_smearing_exact_calibration:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_smearing_exact_calibration:1",
+      "passed": true
+    },
+    {
+      "name": "inverse_high_mode_gain:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_smearing_exact_calibration:1/2",
+      "passed": true
+    },
+    {
+      "name": "momentum_smearing_exact_calibration:1/2",
+      "passed": true
+    },
+    {
+      "name": "inverse_high_mode_gain:1/2",
+      "passed": true
+    },
+    {
+      "name": "configuration_smearing_exact_calibration:1/4",
+      "passed": true
+    },
+    {
+      "name": "momentum_smearing_exact_calibration:1/4",
+      "passed": true
+    },
+    {
+      "name": "inverse_high_mode_gain:1/4",
+      "passed": true
+    },
+    {
+      "name": "strictly_growing_inverse_gain:1",
+      "passed": true
+    },
+    {
+      "name": "strictly_growing_inverse_gain:2",
+      "passed": true
+    },
+    {
+      "name": "strictly_growing_inverse_gain:3",
+      "passed": true
+    },
+    {
+      "name": "instrument_effects_agree",
+      "passed": true
+    },
+    {
+      "name": "instrument_effects_normalized",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "same_sign_momentum_output",
+      "rejected": true
+    },
+    {
+      "name": "no_ancilla_joint_sharp_readout",
+      "rejected": true
+    },
+    {
+      "name": "read_without_source_backreaction",
+      "rejected": true
+    },
+    {
+      "name": "wrong_density_bias_subtraction",
+      "rejected": true
+    },
+    {
+      "name": "output_second_moment_is_sharp",
+      "rejected": true
+    },
+    {
+      "name": "omit_kernel_output_Jacobian",
+      "rejected": true
+    },
+    {
+      "name": "same_sign_rotation_rows",
+      "rejected": true
+    },
+    {
+      "name": "unmatched_probe_covariance_preserves_product_measure",
+      "rejected": true
+    },
+    {
+      "name": "half_of_CMG_momentum_variance",
+      "rejected": true
+    },
+    {
+      "name": "density_record_separates_phase_pair",
+      "rejected": true
+    },
+    {
+      "name": "same_smearing_ignores_response:1",
+      "rejected": true
+    },
+    {
+      "name": "same_smearing_ignores_response:1/2",
+      "rejected": true
+    },
+    {
+      "name": "same_smearing_ignores_response:1/4",
+      "rejected": true
+    },
+    {
+      "name": "uniform_unit_noise_gain_for_inverse",
+      "rejected": true
+    },
+    {
+      "name": "erase_rejected_adapted_record",
+      "rejected": true
+    },
+    {
+      "name": "conditional_mean_equals_unconditional",
+      "rejected": true
+    },
+    {
+      "name": "same_effects_force_same_instrument",
+      "rejected": true
+    },
+    {
+      "name": "corrupted_Paninian_certificate",
+      "rejected": true
+    }
+  ],
+  "presentations": [
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "s",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "a",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "d",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "b",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "order_a_s",
+            "lhs": [
+              "a",
+              "s"
+            ],
+            "rhs": [
+              [
+                [
+                  "s",
+                  "a"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D,S]=i and independent matched probe [B,A]=i; h=1"
+          },
+          {
+            "id": "order_d_s",
+            "lhs": [
+              "d",
+              "s"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "0",
+                  "1"
+                ]
+              ],
+              [
+                [
+                  "s",
+                  "d"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D,S]=i and independent matched probe [B,A]=i; h=1"
+          },
+          {
+            "id": "order_d_a",
+            "lhs": [
+              "d",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "d"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D,S]=i and independent matched probe [B,A]=i; h=1"
+          },
+          {
+            "id": "order_b_s",
+            "lhs": [
+              "b",
+              "s"
+            ],
+            "rhs": [
+              [
+                [
+                  "s",
+                  "b"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D,S]=i and independent matched probe [B,A]=i; h=1"
+          },
+          {
+            "id": "order_b_a",
+            "lhs": [
+              "b",
+              "a"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "0",
+                  "1"
+                ]
+              ],
+              [
+                [
+                  "a",
+                  "b"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D,S]=i and independent matched probe [B,A]=i; h=1"
+          },
+          {
+            "id": "order_b_d",
+            "lhs": [
+              "b",
+              "d"
+            ],
+            "rhs": [
+              [
+                [
+                  "d",
+                  "b"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "MPQ [D,S]=i and independent matched probe [B,A]=i; h=1"
+          }
+        ]
+      },
+      "audit": {
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "criticalPairs": 4,
+        "resolved": 4,
+        "open": 0,
+        "full_audit_sha256": "e63590a464fdf80dd46d4be88e49d0333a34fc4aed59fb983eb95793ca54def7"
+      }
+    },
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "x",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "u",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "q",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "r",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "t",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "l",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "h",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "scalar_1_0",
+            "lhs": [
+              "u",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_2_0",
+            "lhs": [
+              "v",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_2_1",
+            "lhs": [
+              "v",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_3_0",
+            "lhs": [
+              "q",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_3_1",
+            "lhs": [
+              "q",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_3_2",
+            "lhs": [
+              "q",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_4_0",
+            "lhs": [
+              "r",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "r"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_4_1",
+            "lhs": [
+              "r",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "r"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_4_2",
+            "lhs": [
+              "r",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "r"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_4_3",
+            "lhs": [
+              "r",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "r"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_5_0",
+            "lhs": [
+              "t",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_5_1",
+            "lhs": [
+              "t",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_5_2",
+            "lhs": [
+              "t",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_5_3",
+            "lhs": [
+              "t",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_5_4",
+            "lhs": [
+              "t",
+              "r"
+            ],
+            "rhs": [
+              [
+                [
+                  "r",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_6_0",
+            "lhs": [
+              "l",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_6_1",
+            "lhs": [
+              "l",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_6_2",
+            "lhs": [
+              "l",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_6_3",
+            "lhs": [
+              "l",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_6_4",
+            "lhs": [
+              "l",
+              "r"
+            ],
+            "rhs": [
+              [
+                [
+                  "r",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_6_5",
+            "lhs": [
+              "l",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_7_0",
+            "lhs": [
+              "h",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_7_1",
+            "lhs": [
+              "h",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_7_2",
+            "lhs": [
+              "h",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_7_3",
+            "lhs": [
+              "h",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_7_4",
+            "lhs": [
+              "h",
+              "r"
+            ],
+            "rhs": [
+              [
+                [
+                  "r",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_7_5",
+            "lhs": [
+              "h",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          },
+          {
+            "id": "scalar_7_6",
+            "lhs": [
+              "h",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar kernel, filter and covariance variables"
+          }
+        ]
+      },
+      "audit": {
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "criticalPairs": 56,
+        "resolved": 56,
+        "open": 0,
+        "full_audit_sha256": "48d43dd77f8c1fa0432055b26122f0e323fa3068a53fcd2bd20ba4458a9958e7"
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "commuting_joint_readings",
+      "presentation_sha256": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "s",
+              "d"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s",
+              "b"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "a",
+              "d"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "a",
+              "b"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "d",
+              "s"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "d",
+              "a"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "b",
+              "s"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "b",
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "s",
+                "d"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "s",
+                "b"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "a",
+                "d"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "a",
+                "b"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "d",
+                "s"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "d",
+                "a"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "b",
+                "s"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "b",
+                "a"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "b",
+              "a"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_b_a",
+            "position": 0
+          },
+          {
+            "word": [
+              "b",
+              "s"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_b_s",
+            "position": 0
+          },
+          {
+            "word": [
+              "d",
+              "a"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_d_a",
+            "position": 0
+          },
+          {
+            "word": [
+              "d",
+              "s"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "order_d_s",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "source_feedback_s",
+      "presentation_sha256": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "s",
+              "s",
+              "b"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ],
+          [
+            [
+              "s",
+              "d",
+              "a"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "s",
+              "b",
+              "s"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "d",
+              "a",
+              "s"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "a"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "s",
+                "s",
+                "b"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "s",
+                "d",
+                "a"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "s",
+                "b",
+                "s"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "d",
+                "a",
+                "s"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "d",
+              "a",
+              "s"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "order_a_s",
+            "position": 1
+          },
+          {
+            "word": [
+              "d",
+              "s",
+              "a"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "order_d_s",
+            "position": 0
+          },
+          {
+            "word": [
+              "s",
+              "b",
+              "s"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "order_b_s",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "source_feedback_d",
+      "presentation_sha256": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "s",
+              "b",
+              "d"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "d",
+              "s",
+              "b"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ],
+          [
+            [
+              "d",
+              "a",
+              "d"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ],
+          [
+            [
+              "d",
+              "d",
+              "a"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "b"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "b"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "s",
+                "b",
+                "d"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "d",
+                "s",
+                "b"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "d",
+                "a",
+                "d"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "d",
+                "d",
+                "a"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "d",
+              "d",
+              "a"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "order_d_a",
+            "position": 1
+          },
+          {
+            "word": [
+              "d",
+              "s",
+              "b"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "order_d_s",
+            "position": 0
+          },
+          {
+            "word": [
+              "s",
+              "b",
+              "d"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "order_b_d",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "probe_feedback_a",
+      "presentation_sha256": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "s",
+              "b",
+              "a"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "a",
+              "s",
+              "b"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ],
+          [
+            [
+              "a",
+              "d",
+              "a"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "d",
+              "a",
+              "a"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "s"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "s"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "s",
+                "b",
+                "a"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "a",
+                "s",
+                "b"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "a",
+                "d",
+                "a"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "d",
+                "a",
+                "a"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "d",
+              "a",
+              "a"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "order_d_a",
+            "position": 0
+          },
+          {
+            "word": [
+              "a",
+              "s",
+              "b"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "order_a_s",
+            "position": 0
+          },
+          {
+            "word": [
+              "s",
+              "b",
+              "a"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "order_b_a",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "probe_feedback_b",
+      "presentation_sha256": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "s",
+              "b",
+              "b"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "d",
+              "a",
+              "b"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ],
+          [
+            [
+              "b",
+              "s",
+              "b"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ],
+          [
+            [
+              "b",
+              "d",
+              "a"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "d"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "d"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "s",
+                "b",
+                "b"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "d",
+                "a",
+                "b"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "b",
+                "s",
+                "b"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "b",
+                "d",
+                "a"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "b",
+              "d",
+              "a"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "order_d_a",
+            "position": 1
+          },
+          {
+            "word": [
+              "b",
+              "a",
+              "d"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "order_b_a",
+            "position": 0
+          },
+          {
+            "word": [
+              "b",
+              "s",
+              "b"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "order_b_s",
+            "position": 0
+          },
+          {
+            "word": [
+              "d",
+              "a",
+              "b"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "order_d_a",
+            "position": 0
+          },
+          {
+            "word": [
+              "a",
+              "b",
+              "d"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "order_b_d",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "opposite_ancilla_noise_commutator",
+      "presentation_sha256": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a",
+              "b"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "b",
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "0",
+              "1"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "e3db5708b969fe317c32e114eda93a241224b687ab8f6884bcb92f9687129b60",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [],
+              [
+                "0",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "a",
+                "b"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "b",
+                "a"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "b",
+              "a"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "order_b_a",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "Gaussian_density_kernel_completion",
+      "presentation_sha256": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x",
+              "x"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "u"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "x"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x",
+              "x"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "u"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "x",
+                "u"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "x"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "u",
+              "x"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "scalar_1_0",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "probe_score_cancels_in_rotation",
+      "presentation_sha256": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x",
+              "u",
+              "l"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "x",
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "x",
+                "u",
+                "l"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "x",
+                "l"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "u",
+              "x",
+              "l"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "scalar_1_0",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "density_first_moment_exponent",
+      "presentation_sha256": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "density_second_moment_exponent",
+      "presentation_sha256": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "two_mode_noise_Cauchy_Schwarz_remainder",
+      "presentation_sha256": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x",
+              "x",
+              "v",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "x",
+              "q",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "v",
+              "x",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "v",
+              "u",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "u",
+              "v",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "u",
+              "q",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "q",
+              "x",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "q",
+              "u",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x",
+              "q",
+              "x",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "q",
+              "u",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "v",
+              "x",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "v",
+              "u",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "25aa7e7b80ba309d22bb7784f38cdb3122c7e6ca0b6dc122b2bd8f4893c0d48c",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "x",
+                "x",
+                "v",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "x",
+                "x",
+                "q",
+                "q"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "x",
+                "v",
+                "x",
+                "v"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "x",
+                "v",
+                "u",
+                "q"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "x",
+                "q",
+                "x",
+                "q"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "x",
+                "q",
+                "u",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "u",
+                "v",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "u",
+                "q",
+                "q"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "v",
+                "x",
+                "q"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "v",
+                "u",
+                "v"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "q",
+                "x",
+                "v"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "u",
+                "q",
+                "u",
+                "q"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "u",
+              "q",
+              "u",
+              "q"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "scalar_3_1",
+            "position": 1
+          },
+          {
+            "word": [
+              "u",
+              "q",
+              "x",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "scalar_3_0",
+            "position": 1
+          },
+          {
+            "word": [
+              "u",
+              "v",
+              "u",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "scalar_2_1",
+            "position": 1
+          },
+          {
+            "word": [
+              "u",
+              "v",
+              "x",
+              "q"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "scalar_2_0",
+            "position": 1
+          },
+          {
+            "word": [
+              "u",
+              "x",
+              "q",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "scalar_1_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "u",
+              "x",
+              "v",
+              "q"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "scalar_1_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "x",
+              "q",
+              "u",
+              "v"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "scalar_3_1",
+            "position": 1
+          },
+          {
+            "word": [
+              "x",
+              "q",
+              "x",
+              "q"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "scalar_3_0",
+            "position": 1
+          },
+          {
+            "word": [
+              "x",
+              "v",
+              "u",
+              "q"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "scalar_2_1",
+            "position": 1
+          },
+          {
+            "word": [
+              "x",
+              "v",
+              "x",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "scalar_2_0",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "kind": "rational_mixing",
+      "cosine": "3/5",
+      "sine": "4/5",
+      "rotation": [
+        [
+          [
+            "3/5",
+            "0"
+          ],
+          [
+            "4/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-4/5",
+            "0"
+          ],
+          [
+            "3/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/5",
+            "0"
+          ],
+          [
+            "4/5",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-4/5",
+            "0"
+          ],
+          [
+            "3/5",
+            "0"
+          ]
+        ]
+      ],
+      "rescaled_readout": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "4/3",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "-3/4",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "kind": "rational_mixing",
+      "cosine": "5/13",
+      "sine": "12/13",
+      "rotation": [
+        [
+          [
+            "5/13",
+            "0"
+          ],
+          [
+            "12/13",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-12/13",
+            "0"
+          ],
+          [
+            "5/13",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "5/13",
+            "0"
+          ],
+          [
+            "12/13",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-12/13",
+            "0"
+          ],
+          [
+            "5/13",
+            "0"
+          ]
+        ]
+      ],
+      "rescaled_readout": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "12/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "-5/12",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "kind": "rational_mixing",
+      "cosine": "8/17",
+      "sine": "15/17",
+      "rotation": [
+        [
+          [
+            "8/17",
+            "0"
+          ],
+          [
+            "15/17",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-15/17",
+            "0"
+          ],
+          [
+            "8/17",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "8/17",
+            "0"
+          ],
+          [
+            "15/17",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-15/17",
+            "0"
+          ],
+          [
+            "8/17",
+            "0"
+          ]
+        ]
+      ],
+      "rescaled_readout": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "15/8",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "-8/15",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "kind": "finite_phase_blindness_analogy",
+      "first": [
+        [
+          [
+            "3/5",
+            "0"
+          ]
+        ],
+        [
+          [
+            "4/5",
+            "0"
+          ]
+        ]
+      ],
+      "second": [
+        [
+          [
+            "3/5",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-4/5",
+            "0"
+          ]
+        ]
+      ],
+      "phase_effect": [
+        [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "1/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "1/2",
+            "0"
+          ]
+        ]
+      ],
+      "probabilities": [
+        "49/50",
+        "1/50"
+      ],
+      "scope": "finite information witness, not a continuum CCR realization"
+    }
+  ],
+  "results": {
+    "physical_space": "selected RGR/MPQ with a prepared matched Gaussian probe",
+    "J_only_apparatus_phase_blind": true,
+    "finite_classical_first_class_source_lift": true,
+    "source_backreaction_retained": true,
+    "countable_rotation_and_CMG_POVM_identity": true,
+    "positive_clock_physical_norm": true,
+    "finite_bin_apparatus_instruments_converge": true,
+    "noise_product_per_mode": "hbar^2/4 for added variances",
+    "smooth_adapted_full_record_resolution_independence": true,
+    "original_J_density_mean_calibrated": true,
+    "existing_J_only_apparatus_realizes_joint_POVM": false,
+    "probe_covariance_and_readout_derived_from_gravity": false,
+    "local_material_detector_constructed": false,
+    "unreduced_nonlinear_quantum_orderings_closed": false,
+    "sharp_continuum_r_or_curvature_constructed": false,
+    "ungated_vacuum_mean_length": "still infinite",
+    "calibration_free_nonlinear_geometry": false,
+    "residual_gauge_uniqueness_assumed": false,
+    "physical_three_plus_one_gravity_closed": false,
+    "continuum_proofs_machine_certified": false
+  },
+  "summary": {
+    "exact_checks": 272,
+    "symbolic_certificates": 11,
+    "negative_controls": 18
+  }
+}

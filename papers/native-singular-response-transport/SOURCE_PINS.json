@@ -1,0 +1,17 @@
+{
+  "protocol": "SRT1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "b2c1e6552d0ecefc0571703f132501f8ec9b5ea5df99ae226b55711a22de6881",
+    "THEOREM.md": "70c53f74c96c0a33e1eb435ed43c9f5ecb7811380337a4b3a17a75a588b23a46",
+    "verify.cjs": "6fa013cb3f9ee3239ca13da09f53d1b0db2dc8ad34783e70c9f9ef28e12d86d4",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "../native-thermodynamic-curvature/THEOREM.md": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29",
+    "../native-thermodynamic-curvature/SOURCE_MAP.md": "12793522839a603fecd749efb47cf04c252bd978df77298636b44586a8135422",
+    "../native-jacobian-cut-certification/THEOREM.md": "6240606cb6ad10514f16132592b46a1929703316879da543c62353f0244101ee",
+    "../native-cut-local-dynamics/THEOREM.md": "620ae9906bafa18a7a196097c3b26873d72e1ec3d851500e5c5eecefb0ba9271",
+    "../native-relational-event-clock/THEOREM.md": "fabe0ba35389a8c85dc123359831ffda1faa7872d035dbba5e1a9caee1c38077"
+  }
+}

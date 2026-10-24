@@ -1,0 +1,7491 @@
+{
+  "protocol": "QRT1_QUANTUM_RESPONSE_TRANSPORT_V1",
+  "status": "PASS_QRT1_QUANTUM_RESPONSE_TRANSPORT",
+  "source_parent": "9a0621637b2cc12fb57eb6fd36e56daef8cf5f34",
+  "checks": [
+    {
+      "name": "source:state_normalization:primary",
+      "passed": true
+    },
+    {
+      "name": "source:raw_state_norm_is_partition:primary",
+      "passed": true
+    },
+    {
+      "name": "source:centered_frame_orthogonal_to_state:primary",
+      "passed": true
+    },
+    {
+      "name": "source:response_Gram_is_covariance:primary",
+      "passed": true
+    },
+    {
+      "name": "source:exact_point_covariance:primary",
+      "passed": true
+    },
+    {
+      "name": "source:point_means:primary",
+      "passed": true
+    },
+    {
+      "name": "source:strict_covariance_determinant:primary",
+      "passed": true
+    },
+    {
+      "name": "source:third_derivatives_are_negative_cumulants:primary",
+      "passed": true
+    },
+    {
+      "name": "source:derived_connection_half_factor:primary:s",
+      "passed": true
+    },
+    {
+      "name": "source:connection_from_response_frame:primary:s",
+      "passed": true
+    },
+    {
+      "name": "source:normalized_state_derivative:primary:s",
+      "passed": true
+    },
+    {
+      "name": "source:base_line_Berry_connection_zero:primary:s",
+      "passed": true
+    },
+    {
+      "name": "source:derived_connection_half_factor:primary:v",
+      "passed": true
+    },
+    {
+      "name": "source:connection_from_response_frame:primary:v",
+      "passed": true
+    },
+    {
+      "name": "source:normalized_state_derivative:primary:v",
+      "passed": true
+    },
+    {
+      "name": "source:base_line_Berry_connection_zero:primary:v",
+      "passed": true
+    },
+    {
+      "name": "projection:idempotence:primary",
+      "passed": true
+    },
+    {
+      "name": "projection:self_adjoint:primary",
+      "passed": true
+    },
+    {
+      "name": "projection:fixes_response_frame:primary",
+      "passed": true
+    },
+    {
+      "name": "projection:orthogonal_to_base_state:primary",
+      "passed": true
+    },
+    {
+      "name": "projection:categorical_complement_only_in_three_atom_fixture:primary",
+      "passed": true
+    },
+    {
+      "name": "projection:rank_two_trace:primary",
+      "passed": true
+    },
+    {
+      "name": "curvature:NT_commutator_equals_cumulant_formula:primary",
+      "passed": true
+    },
+    {
+      "name": "curvature:whole_retained_categorical_family_quarter:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:projection_derivative_tangent:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:generator_anti_adjoint:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:generator_moves_projection:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:response_frame_horizontal_identity:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:ambient_ODE:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:ambient_unitarity:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:ambient_inverse_unitarity:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:exact_response_intertwiner:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:projector_intertwiner:primary",
+      "passed": true
+    },
+    {
+      "name": "Kato:response_metric_transport:primary",
+      "passed": true
+    },
+    {
+      "name": "curvature:actual_source_loop_sign:primary",
+      "passed": true
+    },
+    {
+      "name": "source:state_normalization:permuted",
+      "passed": true
+    },
+    {
+      "name": "source:raw_state_norm_is_partition:permuted",
+      "passed": true
+    },
+    {
+      "name": "source:centered_frame_orthogonal_to_state:permuted",
+      "passed": true
+    },
+    {
+      "name": "source:response_Gram_is_covariance:permuted",
+      "passed": true
+    },
+    {
+      "name": "source:exact_point_covariance:permuted",
+      "passed": true
+    },
+    {
+      "name": "source:point_means:permuted",
+      "passed": true
+    },
+    {
+      "name": "source:strict_covariance_determinant:permuted",
+      "passed": true
+    },
+    {
+      "name": "source:third_derivatives_are_negative_cumulants:permuted",
+      "passed": true
+    },
+    {
+      "name": "source:derived_connection_half_factor:permuted:s",
+      "passed": true
+    },
+    {
+      "name": "source:connection_from_response_frame:permuted:s",
+      "passed": true
+    },
+    {
+      "name": "source:normalized_state_derivative:permuted:s",
+      "passed": true
+    },
+    {
+      "name": "source:base_line_Berry_connection_zero:permuted:s",
+      "passed": true
+    },
+    {
+      "name": "source:derived_connection_half_factor:permuted:v",
+      "passed": true
+    },
+    {
+      "name": "source:connection_from_response_frame:permuted:v",
+      "passed": true
+    },
+    {
+      "name": "source:normalized_state_derivative:permuted:v",
+      "passed": true
+    },
+    {
+      "name": "source:base_line_Berry_connection_zero:permuted:v",
+      "passed": true
+    },
+    {
+      "name": "projection:idempotence:permuted",
+      "passed": true
+    },
+    {
+      "name": "projection:self_adjoint:permuted",
+      "passed": true
+    },
+    {
+      "name": "projection:fixes_response_frame:permuted",
+      "passed": true
+    },
+    {
+      "name": "projection:orthogonal_to_base_state:permuted",
+      "passed": true
+    },
+    {
+      "name": "projection:categorical_complement_only_in_three_atom_fixture:permuted",
+      "passed": true
+    },
+    {
+      "name": "projection:rank_two_trace:permuted",
+      "passed": true
+    },
+    {
+      "name": "curvature:NT_commutator_equals_cumulant_formula:permuted",
+      "passed": true
+    },
+    {
+      "name": "curvature:whole_retained_categorical_family_quarter:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:projection_derivative_tangent:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:generator_anti_adjoint:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:generator_moves_projection:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:response_frame_horizontal_identity:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:ambient_ODE:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:ambient_unitarity:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:ambient_inverse_unitarity:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:exact_response_intertwiner:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:projector_intertwiner:permuted",
+      "passed": true
+    },
+    {
+      "name": "Kato:response_metric_transport:permuted",
+      "passed": true
+    },
+    {
+      "name": "curvature:actual_source_loop_sign:permuted",
+      "passed": true
+    },
+    {
+      "name": "categorical:curvature_quarter:1/3,1/3,1/3",
+      "passed": true
+    },
+    {
+      "name": "categorical:determinant_identity:1/3,1/3,1/3",
+      "passed": true
+    },
+    {
+      "name": "categorical:equal_weight_H",
+      "passed": true
+    },
+    {
+      "name": "categorical:equal_weight_u3",
+      "passed": true
+    },
+    {
+      "name": "categorical:equal_weight_Delta",
+      "passed": true
+    },
+    {
+      "name": "categorical:equal_weight_D",
+      "passed": true
+    },
+    {
+      "name": "categorical:curvature_quarter:1/9,4/9,4/9",
+      "passed": true
+    },
+    {
+      "name": "categorical:determinant_identity:1/9,4/9,4/9",
+      "passed": true
+    },
+    {
+      "name": "categorical:curvature_quarter:4/9,1/9,4/9",
+      "passed": true
+    },
+    {
+      "name": "categorical:determinant_identity:4/9,1/9,4/9",
+      "passed": true
+    },
+    {
+      "name": "categorical:curvature_quarter:1/6,1/3,1/2",
+      "passed": true
+    },
+    {
+      "name": "categorical:determinant_identity:1/6,1/3,1/2",
+      "passed": true
+    },
+    {
+      "name": "categorical:curvature_quarter:1/10,3/10,3/5",
+      "passed": true
+    },
+    {
+      "name": "categorical:determinant_identity:1/10,3/10,3/5",
+      "passed": true
+    },
+    {
+      "name": "generic_support:response_Gram",
+      "passed": true
+    },
+    {
+      "name": "generic_support:covariance_cumulant_curvature",
+      "passed": true
+    },
+    {
+      "name": "observer:forty_five_degree_projector",
+      "passed": true
+    },
+    {
+      "name": "observer:declared_response_rotation_unitary:1",
+      "passed": true
+    },
+    {
+      "name": "observer:pplus_equals_half_plus_cs:1",
+      "passed": true
+    },
+    {
+      "name": "observer:exact_pplus:1",
+      "passed": true
+    },
+    {
+      "name": "observer:exact_p2:1",
+      "passed": true
+    },
+    {
+      "name": "observer:declared_response_rotation_unitary:-1",
+      "passed": true
+    },
+    {
+      "name": "observer:pplus_equals_half_plus_cs:-1",
+      "passed": true
+    },
+    {
+      "name": "observer:exact_pplus:-1",
+      "passed": true
+    },
+    {
+      "name": "observer:exact_p2:-1",
+      "passed": true
+    },
+    {
+      "name": "observer:fixed_diagonal_detector_distinguishes_sign",
+      "passed": true
+    },
+    {
+      "name": "unbinned:half_width",
+      "passed": true
+    },
+    {
+      "name": "unbinned:covariance_error",
+      "passed": true
+    },
+    {
+      "name": "unbinned:third_central_error",
+      "passed": true
+    },
+    {
+      "name": "unbinned:covariance_entry_margin",
+      "passed": true
+    },
+    {
+      "name": "unbinned:third_central_entry_margin",
+      "passed": true
+    },
+    {
+      "name": "unbinned:positive_covariance_determinant_margin",
+      "passed": true
+    },
+    {
+      "name": "unbinned:negative_cumulant_determinant_margin",
+      "passed": true
+    },
+    {
+      "name": "unbinned:curvature_lower_strictly_above_eighth",
+      "passed": true
+    },
+    {
+      "name": "unbinned:curvature_upper_strictly_below_three_eighths",
+      "passed": true
+    },
+    {
+      "name": "domain:redundant_observable_covariance_singular",
+      "passed": true
+    },
+    {
+      "name": "words:confluent:typed_response_projection",
+      "passed": true
+    },
+    {
+      "name": "words:response_projection_idempotent",
+      "passed": true
+    },
+    {
+      "name": "words:replay:response_projection_idempotent",
+      "passed": true
+    },
+    {
+      "name": "words:response_projection_fixes_frame",
+      "passed": true
+    },
+    {
+      "name": "words:replay:response_projection_fixes_frame",
+      "passed": true
+    },
+    {
+      "name": "words:confluent:Kato_projection_tangent",
+      "passed": true
+    },
+    {
+      "name": "words:projection_sandwich_derivative_zero",
+      "passed": true
+    },
+    {
+      "name": "words:replay:projection_sandwich_derivative_zero",
+      "passed": true
+    },
+    {
+      "name": "words:Kato_double_commutator_is_projection_derivative",
+      "passed": true
+    },
+    {
+      "name": "words:replay:Kato_double_commutator_is_projection_derivative",
+      "passed": true
+    },
+    {
+      "name": "words:Kato_generator_anti_adjoint",
+      "passed": true
+    },
+    {
+      "name": "words:replay:Kato_generator_anti_adjoint",
+      "passed": true
+    },
+    {
+      "name": "words:confluent:categorical_curvature",
+      "passed": true
+    },
+    {
+      "name": "words:categorical_Delta_equals_pqr",
+      "passed": true
+    },
+    {
+      "name": "words:replay:categorical_Delta_equals_pqr",
+      "passed": true
+    },
+    {
+      "name": "words:categorical_D_equals_minus_Delta_squared",
+      "passed": true
+    },
+    {
+      "name": "words:replay:categorical_D_equals_minus_Delta_squared",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "source:delete_partition_normalization:primary",
+      "rejected": true
+    },
+    {
+      "name": "source:covariance_is_raw_second_moment:primary",
+      "rejected": true
+    },
+    {
+      "name": "source:drop_connection_half:primary:s",
+      "rejected": true
+    },
+    {
+      "name": "source:reverse_connection_sign:primary:s",
+      "rejected": true
+    },
+    {
+      "name": "source:drop_connection_half:primary:v",
+      "rejected": true
+    },
+    {
+      "name": "source:reverse_connection_sign:primary:v",
+      "rejected": true
+    },
+    {
+      "name": "curvature:zero_base_Berry_forces_zero_response_curvature:primary",
+      "rejected": true
+    },
+    {
+      "name": "Kato:coordinate_transport_is_Euclidean_unitary:primary",
+      "rejected": true
+    },
+    {
+      "name": "Kato:response_space_is_extra_qubit:primary",
+      "rejected": true
+    },
+    {
+      "name": "curvature:actual_source_loop_flat:primary",
+      "rejected": true
+    },
+    {
+      "name": "source:delete_partition_normalization:permuted",
+      "rejected": true
+    },
+    {
+      "name": "source:covariance_is_raw_second_moment:permuted",
+      "rejected": true
+    },
+    {
+      "name": "source:drop_connection_half:permuted:s",
+      "rejected": true
+    },
+    {
+      "name": "source:reverse_connection_sign:permuted:s",
+      "rejected": true
+    },
+    {
+      "name": "source:drop_connection_half:permuted:v",
+      "rejected": true
+    },
+    {
+      "name": "source:reverse_connection_sign:permuted:v",
+      "rejected": true
+    },
+    {
+      "name": "curvature:zero_base_Berry_forces_zero_response_curvature:permuted",
+      "rejected": true
+    },
+    {
+      "name": "Kato:coordinate_transport_is_Euclidean_unitary:permuted",
+      "rejected": true
+    },
+    {
+      "name": "Kato:response_space_is_extra_qubit:permuted",
+      "rejected": true
+    },
+    {
+      "name": "curvature:actual_source_loop_flat:permuted",
+      "rejected": true
+    },
+    {
+      "name": "generic_support:all_positive_sources_have_quarter_curvature",
+      "rejected": true
+    },
+    {
+      "name": "observer:p2_recovers_orientation_sign",
+      "rejected": true
+    },
+    {
+      "name": "unbinned:unbounded_window_size_is_certified",
+      "rejected": true
+    },
+    {
+      "name": "domain:singular_response_inverse",
+      "rejected": true
+    },
+    {
+      "name": "domain:unnormalized_initial_amplitudes",
+      "rejected": true
+    },
+    {
+      "name": "domain:nonpositive_observable",
+      "rejected": true
+    },
+    {
+      "name": "domain:invent_source_jet_depth",
+      "rejected": true
+    },
+    {
+      "name": "domain:zero_depth_derivative",
+      "rejected": true
+    }
+  ],
+  "presentations": [
+    {
+      "name": "typed_response_projection",
+      "spec": {
+        "objects": [
+          "response",
+          "ambient"
+        ],
+        "tokens": [
+          {
+            "name": "e",
+            "from": "response",
+            "to": "ambient",
+            "charge": "0"
+          },
+          {
+            "name": "f",
+            "from": "ambient",
+            "to": "response",
+            "charge": "0"
+          },
+          {
+            "name": "h",
+            "from": "response",
+            "to": "response",
+            "charge": "0"
+          },
+          {
+            "name": "j",
+            "from": "response",
+            "to": "response",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "response_Gram",
+            "lhs": [
+              "f",
+              "e"
+            ],
+            "rhs": [
+              [
+                [
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "f=E adjoint and H=E adjoint E"
+          },
+          {
+            "id": "metric_right_inverse",
+            "lhs": [
+              "h",
+              "j"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "j=H inverse"
+          },
+          {
+            "id": "metric_left_inverse",
+            "lhs": [
+              "j",
+              "h"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "j=H inverse"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "155ef70d465c17fd99571a509525bc52d433a092a8043a512d4e5114aecb6269",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 2,
+        "resolutions": [
+          {
+            "word": [
+              "j",
+              "h",
+              "j"
+            ],
+            "first": [
+              1,
+              1
+            ],
+            "second": [
+              2,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "155ef70d465c17fd99571a509525bc52d433a092a8043a512d4e5114aecb6269",
+              "input": {
+                "from": "response",
+                "to": "response",
+                "terms": [
+                  [
+                    [
+                      "j"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "response",
+                "to": "response",
+                "terms": [
+                  [
+                    [
+                      "j"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "155ef70d465c17fd99571a509525bc52d433a092a8043a512d4e5114aecb6269",
+              "input": {
+                "from": "response",
+                "to": "response",
+                "terms": [
+                  [
+                    [
+                      "j"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "response",
+                "to": "response",
+                "terms": [
+                  [
+                    [
+                      "j"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "h",
+              "j",
+              "h"
+            ],
+            "first": [
+              1,
+              0
+            ],
+            "second": [
+              2,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "155ef70d465c17fd99571a509525bc52d433a092a8043a512d4e5114aecb6269",
+              "input": {
+                "from": "response",
+                "to": "response",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "response",
+                "to": "response",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "155ef70d465c17fd99571a509525bc52d433a092a8043a512d4e5114aecb6269",
+              "input": {
+                "from": "response",
+                "to": "response",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [],
+              "output": {
+                "from": "response",
+                "to": "response",
+                "terms": [
+                  [
+                    [
+                      "h"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    },
+    {
+      "name": "Kato_projection_tangent",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "q",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "d",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "projection",
+            "lhs": [
+              "q",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Q squared equals Q"
+          },
+          {
+            "id": "projection_tangent",
+            "lhs": [
+              "d",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "d"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ],
+              [
+                [
+                  "q",
+                  "d"
+                ],
+                [
+                  "-1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "derivative of Q squared equals Q"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 2,
+        "resolutions": [
+          {
+            "word": [
+              "q",
+              "q",
+              "q"
+            ],
+            "first": [
+              0,
+              0
+            ],
+            "second": [
+              0,
+              1
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "q",
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "q",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "projection",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "q",
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "q",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "projection",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "d",
+              "q",
+              "q"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              1,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "d",
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "d",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "projection_tangent",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "d"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "q",
+                      "d"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "d",
+                      "q"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "q",
+                      "d",
+                      "q"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "q",
+                    "d",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "-1",
+                    "0"
+                  ],
+                  "rule": "projection_tangent",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "q",
+                    "q",
+                    "d"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "projection",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "d",
+                    "q"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "projection_tangent",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "d"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ],
+                  [
+                    [
+                      "q",
+                      "d"
+                    ],
+                    [
+                      "-1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    },
+    {
+      "name": "categorical_curvature",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "q",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "r",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "central_probabilities",
+            "lhs": [
+              "r",
+              "q"
+            ],
+            "rhs": [
+              [
+                [
+                  "q",
+                  "r"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting categorical probabilities"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "f3b09ae1c0e93769b89103746c309a42030c24ea47dbc68d7666a120f017b1d6",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 0,
+        "resolutions": [],
+        "open": []
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "response_projection_idempotent",
+      "presentation_hash": "155ef70d465c17fd99571a509525bc52d433a092a8043a512d4e5114aecb6269",
+      "lhs": {
+        "from": "ambient",
+        "to": "ambient",
+        "terms": [
+          [
+            [
+              "e",
+              "j",
+              "f",
+              "e",
+              "j",
+              "f"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "ambient",
+        "to": "ambient",
+        "terms": [
+          [
+            [
+              "e",
+              "j",
+              "f"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "155ef70d465c17fd99571a509525bc52d433a092a8043a512d4e5114aecb6269",
+        "input": {
+          "from": "ambient",
+          "to": "ambient",
+          "terms": [
+            [
+              [
+                "e",
+                "j",
+                "f"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "e",
+                "j",
+                "f",
+                "e",
+                "j",
+                "f"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "e",
+              "j",
+              "f",
+              "e",
+              "j",
+              "f"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "response_Gram",
+            "position": 2
+          },
+          {
+            "word": [
+              "e",
+              "j",
+              "h",
+              "j",
+              "f"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "metric_right_inverse",
+            "position": 2
+          }
+        ],
+        "output": {
+          "from": "ambient",
+          "to": "ambient",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "response_projection_fixes_frame",
+      "presentation_hash": "155ef70d465c17fd99571a509525bc52d433a092a8043a512d4e5114aecb6269",
+      "lhs": {
+        "from": "response",
+        "to": "ambient",
+        "terms": [
+          [
+            [
+              "e",
+              "j",
+              "f",
+              "e"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "response",
+        "to": "ambient",
+        "terms": [
+          [
+            [
+              "e"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "155ef70d465c17fd99571a509525bc52d433a092a8043a512d4e5114aecb6269",
+        "input": {
+          "from": "response",
+          "to": "ambient",
+          "terms": [
+            [
+              [
+                "e"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "e",
+                "j",
+                "f",
+                "e"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "e",
+              "j",
+              "f",
+              "e"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "response_Gram",
+            "position": 2
+          },
+          {
+            "word": [
+              "e",
+              "j",
+              "h"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "metric_left_inverse",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "response",
+          "to": "ambient",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "projection_sandwich_derivative_zero",
+      "presentation_hash": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "d",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "q",
+                "d",
+                "q"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "q",
+              "d",
+              "q"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "projection_tangent",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "d"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "projection",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "Kato_double_commutator_is_projection_derivative",
+      "presentation_hash": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "q",
+              "d"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "d",
+              "q"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "d",
+              "q",
+              "q"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "d"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "d"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "d"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "d",
+                "q"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "d",
+                "q",
+                "q"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "d",
+              "q",
+              "q"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "projection",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "d",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "projection_tangent",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "d"
+            ],
+            "coefficient": [
+              "3",
+              "0"
+            ],
+            "rule": "projection",
+            "position": 0
+          },
+          {
+            "word": [
+              "d",
+              "q"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "projection_tangent",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "Kato_generator_anti_adjoint",
+      "presentation_hash": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "d"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "d",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "d"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "d",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "b6196599ee044b215e6751b809fc98cb08c72b749206a786f045f602e54ff1ca",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "categorical_Delta_equals_pqr",
+      "presentation_hash": "f3b09ae1c0e93769b89103746c309a42030c24ea47dbc68d7666a120f017b1d6",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f3b09ae1c0e93769b89103746c309a42030c24ea47dbc68d7666a120f017b1d6",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "categorical_D_equals_minus_Delta_squared",
+      "presentation_hash": "f3b09ae1c0e93769b89103746c309a42030c24ea47dbc68d7666a120f017b1d6",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "-3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            [
+              "-3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r",
+              "r",
+              "r"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "9",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "-3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "q",
+              "r",
+              "r",
+              "r",
+              "r"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            [
+              "-6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "q"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "q"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "f3b09ae1c0e93769b89103746c309a42030c24ea47dbc68d7666a120f017b1d6",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "r",
+                "r"
+              ],
+              [
+                "3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "q",
+                "r",
+                "r",
+                "r"
+              ],
+              [
+                "-3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "r",
+                "r",
+                "r"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "10",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "-3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "r",
+                "r"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "r",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "r",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "q",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-6",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "r",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "r",
+                "q",
+                "r",
+                "q"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "-3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "q",
+                "r",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "q",
+                "r",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "q",
+                "r",
+                "r",
+                "r",
+                "r"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "q",
+                "r",
+                "r",
+                "r"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "r",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "r",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-5",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-6",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "q",
+                "r",
+                "r",
+                "r"
+              ],
+              [
+                "-6",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r",
+                "q"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "r",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "q",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "q",
+                "r",
+                "q",
+                "q",
+                "r",
+                "q"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "q",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "6",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "r",
+                "q",
+                "q",
+                "r"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r",
+                "q"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "q",
+                "r",
+                "q",
+                "r",
+                "r",
+                "r"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "q",
+                "r",
+                "r",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "r",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "q",
+                "r",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "q",
+                "q",
+                "r",
+                "r",
+                "r"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r",
+                "q",
+                "r"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "q",
+                "r",
+                "q",
+                "r",
+                "r",
+                "q",
+                "r",
+                "q"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "q",
+                "q",
+                "q",
+                "r",
+                "r"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "r",
+                "r",
+                "q",
+                "r",
+                "q",
+                "q",
+                "r",
+                "q"
+              ],
+              [
+                "4",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 3
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-5",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 3
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "6",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "6",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 3
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 3
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "5",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "6",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "3",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-6",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "r",
+              "r",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 5
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 4
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 3
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 3
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "3",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-3",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "q",
+              "r",
+              "r",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 5
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 4
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-3",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-6",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 3
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "q",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-3",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "r",
+              "r",
+              "q"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 4
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 3
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "3",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "r",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "3",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r",
+              "r"
+            ],
+            "coefficient": [
+              "-3",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          },
+          {
+            "word": [
+              "q",
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 2
+          },
+          {
+            "word": [
+              "r",
+              "q",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 0
+          },
+          {
+            "word": [
+              "q",
+              "r",
+              "q",
+              "r"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "central_probabilities",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "kind": "finite_exact_spectral_comparison_only",
+      "label": "primary",
+      "amplitudes": [
+        "1/3",
+        "2/3",
+        "2/3"
+      ],
+      "atoms": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "weights": [
+        [
+          "1/9",
+          "0"
+        ],
+        [
+          "4/9",
+          "0"
+        ],
+        [
+          "4/9",
+          "0"
+        ]
+      ],
+      "point_moments": {
+        "atoms": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ],
+        "weights": [
+          [
+            "1/9",
+            "0"
+          ],
+          [
+            "4/9",
+            "0"
+          ],
+          [
+            "4/9",
+            "0"
+          ]
+        ],
+        "means": [
+          [
+            "13/9",
+            "0"
+          ],
+          [
+            "13/9",
+            "0"
+          ]
+        ],
+        "H": [
+          [
+            [
+              "20/81",
+              "0"
+            ],
+            [
+              "-16/81",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-16/81",
+              "0"
+            ],
+            [
+              "20/81",
+              "0"
+            ]
+          ]
+        ],
+        "raw": [
+          [
+            [
+              "7/3",
+              "0"
+            ],
+            [
+              "17/9",
+              "0"
+            ]
+          ],
+          [
+            [
+              "17/9",
+              "0"
+            ],
+            [
+              "7/3",
+              "0"
+            ]
+          ]
+        ],
+        "third": [
+          [
+            "20/729",
+            "0"
+          ],
+          [
+            "-16/729",
+            "0"
+          ],
+          [
+            "-16/729",
+            "0"
+          ],
+          [
+            "20/729",
+            "0"
+          ]
+        ],
+        "u3": [
+          [
+            "-20/729",
+            "0"
+          ],
+          [
+            "16/729",
+            "0"
+          ],
+          [
+            "16/729",
+            "0"
+          ],
+          [
+            "-20/729",
+            "0"
+          ]
+        ],
+        "Delta": [
+          "16/729",
+          "0"
+        ],
+        "D": [
+          "-256/531441",
+          "0"
+        ],
+        "curvature": [
+          "1/4",
+          "0"
+        ]
+      },
+      "point_response_frame": [
+        [
+          [
+            "-4/27",
+            "0"
+          ],
+          [
+            "-4/27",
+            "0"
+          ]
+        ],
+        [
+          [
+            "10/27",
+            "0"
+          ],
+          [
+            "-8/27",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-8/27",
+            "0"
+          ],
+          [
+            "10/27",
+            "0"
+          ]
+        ]
+      ],
+      "point_response_projection": [
+        [
+          [
+            "8/9",
+            "0"
+          ],
+          [
+            "-2/9",
+            "0"
+          ],
+          [
+            "-2/9",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-2/9",
+            "0"
+          ],
+          [
+            "5/9",
+            "0"
+          ],
+          [
+            "-4/9",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-2/9",
+            "0"
+          ],
+          [
+            "-4/9",
+            "0"
+          ],
+          [
+            "5/9",
+            "0"
+          ]
+        ]
+      ],
+      "K": {
+        "order": 3,
+        "height": 3,
+        "width": 3,
+        "coefficients": [
+          [
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1/9",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-1/9",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-2/9",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "2/9",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "-1/162",
+                "0"
+              ],
+              [
+                "-1/324",
+                "0"
+              ],
+              [
+                "8/81",
+                "0"
+              ]
+            ],
+            [
+              [
+                "1/324",
+                "0"
+              ],
+              [
+                "-5/162",
+                "0"
+              ],
+              [
+                "37/162",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-10/81",
+                "0"
+              ],
+              [
+                "-37/162",
+                "0"
+              ],
+              [
+                "-2/81",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "1/2916",
+                "0"
+              ],
+              [
+                "53/1944",
+                "0"
+              ],
+              [
+                "61/1458",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-5/1944",
+                "0"
+              ],
+              [
+                "149/2916",
+                "0"
+              ],
+              [
+                "1/324",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-23/1458",
+                "0"
+              ],
+              [
+                "-5/324",
+                "0"
+              ],
+              [
+                "37/729",
+                "0"
+              ]
+            ]
+          ]
+        ]
+      },
+      "U": {
+        "order": 3,
+        "height": 2,
+        "width": 2,
+        "coefficients": [
+          [
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "1/18",
+                "0"
+              ],
+              [
+                "-2/9",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-2/9",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "-7/72",
+                "0"
+              ],
+              [
+                "-5/162",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-2/9",
+                "0"
+              ],
+              [
+                "23/162",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "-487/3888",
+                "0"
+              ],
+              [
+                "157/2916",
+                "0"
+              ]
+            ],
+            [
+              [
+                "22/243",
+                "0"
+              ],
+              [
+                "-118/729",
+                "0"
+              ]
+            ]
+          ]
+        ]
+      },
+      "loop_coefficient": [
+        [
+          [
+            "4/81",
+            "0"
+          ],
+          [
+            "-5/81",
+            "0"
+          ]
+        ],
+        [
+          [
+            "5/81",
+            "0"
+          ],
+          [
+            "-4/81",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "kind": "finite_exact_spectral_comparison_only",
+      "label": "permuted",
+      "amplitudes": [
+        "2/3",
+        "1/3",
+        "2/3"
+      ],
+      "atoms": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "weights": [
+        [
+          "4/9",
+          "0"
+        ],
+        [
+          "1/9",
+          "0"
+        ],
+        [
+          "4/9",
+          "0"
+        ]
+      ],
+      "point_moments": {
+        "atoms": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ],
+        "weights": [
+          [
+            "4/9",
+            "0"
+          ],
+          [
+            "1/9",
+            "0"
+          ],
+          [
+            "4/9",
+            "0"
+          ]
+        ],
+        "means": [
+          [
+            "10/9",
+            "0"
+          ],
+          [
+            "13/9",
+            "0"
+          ]
+        ],
+        "H": [
+          [
+            [
+              "8/81",
+              "0"
+            ],
+            [
+              "-4/81",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-4/81",
+              "0"
+            ],
+            [
+              "20/81",
+              "0"
+            ]
+          ]
+        ],
+        "raw": [
+          [
+            [
+              "4/3",
+              "0"
+            ],
+            [
+              "14/9",
+              "0"
+            ]
+          ],
+          [
+            [
+              "14/9",
+              "0"
+            ],
+            [
+              "7/3",
+              "0"
+            ]
+          ]
+        ],
+        "third": [
+          [
+            "56/729",
+            "0"
+          ],
+          [
+            "-28/729",
+            "0"
+          ],
+          [
+            "-4/729",
+            "0"
+          ],
+          [
+            "20/729",
+            "0"
+          ]
+        ],
+        "u3": [
+          [
+            "-56/729",
+            "0"
+          ],
+          [
+            "28/729",
+            "0"
+          ],
+          [
+            "4/729",
+            "0"
+          ],
+          [
+            "-20/729",
+            "0"
+          ]
+        ],
+        "Delta": [
+          "16/729",
+          "0"
+        ],
+        "D": [
+          "-256/531441",
+          "0"
+        ],
+        "curvature": [
+          "1/4",
+          "0"
+        ]
+      },
+      "point_response_frame": [
+        [
+          [
+            "-2/27",
+            "0"
+          ],
+          [
+            "-8/27",
+            "0"
+          ]
+        ],
+        [
+          [
+            "8/27",
+            "0"
+          ],
+          [
+            "-4/27",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-2/27",
+            "0"
+          ],
+          [
+            "10/27",
+            "0"
+          ]
+        ]
+      ],
+      "point_response_projection": [
+        [
+          [
+            "5/9",
+            "0"
+          ],
+          [
+            "-2/9",
+            "0"
+          ],
+          [
+            "-4/9",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-2/9",
+            "0"
+          ],
+          [
+            "8/9",
+            "0"
+          ],
+          [
+            "-2/9",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-4/9",
+            "0"
+          ],
+          [
+            "-2/9",
+            "0"
+          ],
+          [
+            "5/9",
+            "0"
+          ]
+        ]
+      ],
+      "K": {
+        "order": 3,
+        "height": 3,
+        "width": 3,
+        "coefficients": [
+          [
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1/9",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-1/9",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-1/9",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1/9",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "-1/162",
+                "0"
+              ],
+              [
+                "-7/324",
+                "0"
+              ],
+              [
+                "35/162",
+                "0"
+              ]
+            ],
+            [
+              [
+                "7/324",
+                "0"
+              ],
+              [
+                "-1/81",
+                "0"
+              ],
+              [
+                "43/324",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-37/162",
+                "0"
+              ],
+              [
+                "-43/324",
+                "0"
+              ],
+              [
+                "-1/162",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "7/2916",
+                "0"
+              ],
+              [
+                "65/1944",
+                "0"
+              ],
+              [
+                "67/2916",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-17/1944",
+                "0"
+              ],
+              [
+                "25/1458",
+                "0"
+              ],
+              [
+                "-23/648",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-17/2916",
+                "0"
+              ],
+              [
+                "7/648",
+                "0"
+              ],
+              [
+                "43/2916",
+                "0"
+              ]
+            ]
+          ]
+        ]
+      },
+      "U": {
+        "order": 3,
+        "height": 2,
+        "width": 2,
+        "coefficients": [
+          [
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "7/18",
+                "0"
+              ],
+              [
+                "-2/9",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "-1/18",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "-7/72",
+                "0"
+              ],
+              [
+                "-4/81",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-1/18",
+                "0"
+              ],
+              [
+                "53/648",
+                "0"
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                "-385/3888",
+                "0"
+              ],
+              [
+                "169/2916",
+                "0"
+              ]
+            ],
+            [
+              [
+                "19/972",
+                "0"
+              ],
+              [
+                "-511/11664",
+                "0"
+              ]
+            ]
+          ]
+        ]
+      },
+      "loop_coefficient": [
+        [
+          [
+            "1/81",
+            "0"
+          ],
+          [
+            "-5/81",
+            "0"
+          ]
+        ],
+        [
+          [
+            "2/81",
+            "0"
+          ],
+          [
+            "-1/81",
+            "0"
+          ]
+        ]
+      ]
+    },
+    {
+      "kind": "exact_probability_cumulant_model",
+      "probabilities": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "moments": {
+        "atoms": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ],
+        "weights": [
+          [
+            "1/3",
+            "0"
+          ],
+          [
+            "1/3",
+            "0"
+          ],
+          [
+            "1/3",
+            "0"
+          ]
+        ],
+        "means": [
+          [
+            "4/3",
+            "0"
+          ],
+          [
+            "4/3",
+            "0"
+          ]
+        ],
+        "H": [
+          [
+            [
+              "2/9",
+              "0"
+            ],
+            [
+              "-1/9",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-1/9",
+              "0"
+            ],
+            [
+              "2/9",
+              "0"
+            ]
+          ]
+        ],
+        "raw": [
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "5/3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "5/3",
+              "0"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ],
+        "third": [
+          [
+            "2/27",
+            "0"
+          ],
+          [
+            "-1/27",
+            "0"
+          ],
+          [
+            "-1/27",
+            "0"
+          ],
+          [
+            "2/27",
+            "0"
+          ]
+        ],
+        "u3": [
+          [
+            "-2/27",
+            "0"
+          ],
+          [
+            "1/27",
+            "0"
+          ],
+          [
+            "1/27",
+            "0"
+          ],
+          [
+            "-2/27",
+            "0"
+          ]
+        ],
+        "Delta": [
+          "1/27",
+          "0"
+        ],
+        "D": [
+          "-1/729",
+          "0"
+        ],
+        "curvature": [
+          "1/4",
+          "0"
+        ]
+      }
+    },
+    {
+      "kind": "exact_probability_cumulant_model",
+      "probabilities": [
+        "1/9",
+        "4/9",
+        "4/9"
+      ],
+      "moments": {
+        "atoms": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ],
+        "weights": [
+          [
+            "1/9",
+            "0"
+          ],
+          [
+            "4/9",
+            "0"
+          ],
+          [
+            "4/9",
+            "0"
+          ]
+        ],
+        "means": [
+          [
+            "13/9",
+            "0"
+          ],
+          [
+            "13/9",
+            "0"
+          ]
+        ],
+        "H": [
+          [
+            [
+              "20/81",
+              "0"
+            ],
+            [
+              "-16/81",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-16/81",
+              "0"
+            ],
+            [
+              "20/81",
+              "0"
+            ]
+          ]
+        ],
+        "raw": [
+          [
+            [
+              "7/3",
+              "0"
+            ],
+            [
+              "17/9",
+              "0"
+            ]
+          ],
+          [
+            [
+              "17/9",
+              "0"
+            ],
+            [
+              "7/3",
+              "0"
+            ]
+          ]
+        ],
+        "third": [
+          [
+            "20/729",
+            "0"
+          ],
+          [
+            "-16/729",
+            "0"
+          ],
+          [
+            "-16/729",
+            "0"
+          ],
+          [
+            "20/729",
+            "0"
+          ]
+        ],
+        "u3": [
+          [
+            "-20/729",
+            "0"
+          ],
+          [
+            "16/729",
+            "0"
+          ],
+          [
+            "16/729",
+            "0"
+          ],
+          [
+            "-20/729",
+            "0"
+          ]
+        ],
+        "Delta": [
+          "16/729",
+          "0"
+        ],
+        "D": [
+          "-256/531441",
+          "0"
+        ],
+        "curvature": [
+          "1/4",
+          "0"
+        ]
+      }
+    },
+    {
+      "kind": "exact_probability_cumulant_model",
+      "probabilities": [
+        "4/9",
+        "1/9",
+        "4/9"
+      ],
+      "moments": {
+        "atoms": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ],
+        "weights": [
+          [
+            "4/9",
+            "0"
+          ],
+          [
+            "1/9",
+            "0"
+          ],
+          [
+            "4/9",
+            "0"
+          ]
+        ],
+        "means": [
+          [
+            "10/9",
+            "0"
+          ],
+          [
+            "13/9",
+            "0"
+          ]
+        ],
+        "H": [
+          [
+            [
+              "8/81",
+              "0"
+            ],
+            [
+              "-4/81",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-4/81",
+              "0"
+            ],
+            [
+              "20/81",
+              "0"
+            ]
+          ]
+        ],
+        "raw": [
+          [
+            [
+              "4/3",
+              "0"
+            ],
+            [
+              "14/9",
+              "0"
+            ]
+          ],
+          [
+            [
+              "14/9",
+              "0"
+            ],
+            [
+              "7/3",
+              "0"
+            ]
+          ]
+        ],
+        "third": [
+          [
+            "56/729",
+            "0"
+          ],
+          [
+            "-28/729",
+            "0"
+          ],
+          [
+            "-4/729",
+            "0"
+          ],
+          [
+            "20/729",
+            "0"
+          ]
+        ],
+        "u3": [
+          [
+            "-56/729",
+            "0"
+          ],
+          [
+            "28/729",
+            "0"
+          ],
+          [
+            "4/729",
+            "0"
+          ],
+          [
+            "-20/729",
+            "0"
+          ]
+        ],
+        "Delta": [
+          "16/729",
+          "0"
+        ],
+        "D": [
+          "-256/531441",
+          "0"
+        ],
+        "curvature": [
+          "1/4",
+          "0"
+        ]
+      }
+    },
+    {
+      "kind": "exact_probability_cumulant_model",
+      "probabilities": [
+        "1/6",
+        "1/3",
+        "1/2"
+      ],
+      "moments": {
+        "atoms": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ],
+        "weights": [
+          [
+            "1/6",
+            "0"
+          ],
+          [
+            "1/3",
+            "0"
+          ],
+          [
+            "1/2",
+            "0"
+          ]
+        ],
+        "means": [
+          [
+            "4/3",
+            "0"
+          ],
+          [
+            "3/2",
+            "0"
+          ]
+        ],
+        "H": [
+          [
+            [
+              "2/9",
+              "0"
+            ],
+            [
+              "-1/6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-1/6",
+              "0"
+            ],
+            [
+              "1/4",
+              "0"
+            ]
+          ]
+        ],
+        "raw": [
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "11/6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "11/6",
+              "0"
+            ],
+            [
+              "5/2",
+              "0"
+            ]
+          ]
+        ],
+        "third": [
+          [
+            "2/27",
+            "0"
+          ],
+          [
+            "-1/18",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "u3": [
+          [
+            "-2/27",
+            "0"
+          ],
+          [
+            "1/18",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "Delta": [
+          "1/36",
+          "0"
+        ],
+        "D": [
+          "-1/1296",
+          "0"
+        ],
+        "curvature": [
+          "1/4",
+          "0"
+        ]
+      }
+    },
+    {
+      "kind": "exact_probability_cumulant_model",
+      "probabilities": [
+        "1/10",
+        "3/10",
+        "3/5"
+      ],
+      "moments": {
+        "atoms": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ],
+        "weights": [
+          [
+            "1/10",
+            "0"
+          ],
+          [
+            "3/10",
+            "0"
+          ],
+          [
+            "3/5",
+            "0"
+          ]
+        ],
+        "means": [
+          [
+            "13/10",
+            "0"
+          ],
+          [
+            "8/5",
+            "0"
+          ]
+        ],
+        "H": [
+          [
+            [
+              "21/100",
+              "0"
+            ],
+            [
+              "-9/50",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-9/50",
+              "0"
+            ],
+            [
+              "6/25",
+              "0"
+            ]
+          ]
+        ],
+        "raw": [
+          [
+            [
+              "19/10",
+              "0"
+            ],
+            [
+              "19/10",
+              "0"
+            ]
+          ],
+          [
+            [
+              "19/10",
+              "0"
+            ],
+            [
+              "14/5",
+              "0"
+            ]
+          ]
+        ],
+        "third": [
+          [
+            "21/250",
+            "0"
+          ],
+          [
+            "-9/125",
+            "0"
+          ],
+          [
+            "9/250",
+            "0"
+          ],
+          [
+            "-6/125",
+            "0"
+          ]
+        ],
+        "u3": [
+          [
+            "-21/250",
+            "0"
+          ],
+          [
+            "9/125",
+            "0"
+          ],
+          [
+            "-9/250",
+            "0"
+          ],
+          [
+            "6/125",
+            "0"
+          ]
+        ],
+        "Delta": [
+          "9/500",
+          "0"
+        ],
+        "D": [
+          "-81/250000",
+          "0"
+        ],
+        "curvature": [
+          "1/4",
+          "0"
+        ]
+      }
+    },
+    {
+      "kind": "generic_four_atom_curvature_comparison",
+      "support": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "moments": {
+        "atoms": [
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "3",
+              "0"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ]
+        ],
+        "weights": [
+          [
+            "1/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "0"
+          ],
+          [
+            "1/4",
+            "0"
+          ]
+        ],
+        "means": [
+          [
+            "7/4",
+            "0"
+          ],
+          [
+            "2",
+            "0"
+          ]
+        ],
+        "H": [
+          [
+            [
+              "11/16",
+              "0"
+            ],
+            [
+              "3/4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "3/4",
+              "0"
+            ],
+            [
+              "3/2",
+              "0"
+            ]
+          ]
+        ],
+        "raw": [
+          [
+            [
+              "15/4",
+              "0"
+            ],
+            [
+              "17/4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "17/4",
+              "0"
+            ],
+            [
+              "11/2",
+              "0"
+            ]
+          ]
+        ],
+        "third": [
+          [
+            "9/32",
+            "0"
+          ],
+          [
+            "5/8",
+            "0"
+          ],
+          [
+            "9/8",
+            "0"
+          ],
+          [
+            "3/2",
+            "0"
+          ]
+        ],
+        "u3": [
+          [
+            "-9/32",
+            "0"
+          ],
+          [
+            "-5/8",
+            "0"
+          ],
+          [
+            "-9/8",
+            "0"
+          ],
+          [
+            "-3/2",
+            "0"
+          ]
+        ],
+        "Delta": [
+          "15/32",
+          "0"
+        ],
+        "D": [
+          "-129/1024",
+          "0"
+        ],
+        "curvature": [
+          "43/300",
+          "0"
+        ]
+      },
+      "connection_curvature": [
+        "43/300",
+        "0"
+      ]
+    },
+    {
+      "kind": "orthonormal_response_plane_fixed_detector",
+      "projector": [
+        [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "1/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "1/2",
+            "0"
+          ]
+        ]
+      ],
+      "readings": [
+        {
+          "sign": 1,
+          "c": [
+            "3/5",
+            "0"
+          ],
+          "s": [
+            "4/5",
+            "0"
+          ],
+          "pplus": [
+            "49/50",
+            "0"
+          ],
+          "p2": [
+            "16/25",
+            "0"
+          ]
+        },
+        {
+          "sign": -1,
+          "c": [
+            "3/5",
+            "0"
+          ],
+          "s": [
+            "-4/5",
+            "0"
+          ],
+          "pplus": [
+            "1/50",
+            "0"
+          ],
+          "p2": [
+            "16/25",
+            "0"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "exact_rational_bound_for_analytic_unbinned_preparation",
+      "assumptions": [
+        "three positive-mass spectral cells",
+        "coordinate half-width delta",
+        "equal normalized cell probabilities",
+        "analytically established moment-error bounds"
+      ],
+      "bounds": {
+        "delta": "1/10000",
+        "covarianceError": "1/2500",
+        "thirdError": "3/5000",
+        "delta0": "1/27",
+        "deltaLower": "2473/67500",
+        "deltaUpper": "2527/67500",
+        "determinantMagnitude": "1/729",
+        "determinantError": "1/6000",
+        "determinantLower": "1757/1458000",
+        "determinantUpper": "2243/1458000",
+        "curvatureLower": "784375/3648988",
+        "curvatureUpper": "7009375/24462916"
+      }
+    }
+  ],
+  "scope": {
+    "exact_examples": "finite positive spectral comparison models with rational amplitudes or probabilities",
+    "continuum": "only rational propagation of separately proved unbinned support/preparation bounds",
+    "normalized_actual_response_Gram": true,
+    "derived_connection_factor_one_half": true,
+    "Kato_unitary_response_intertwiner": true,
+    "base_line_Berry_distinct_from_response_curvature": true,
+    "extra_qubit_added": false,
+    "coordinate_U_Euclidean_unitary": false,
+    "finite_models_prove_GMC_support": false,
+    "spacetime_curvature_established": false,
+    "quantum_gravity_closed": false,
+    "universal_claims_from_finite_checks": false
+  },
+  "summary": {
+    "exact_checks": 123,
+    "symbolic_certificates": 7,
+    "negative_controls": 28
+  }
+}
