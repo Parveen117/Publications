@@ -1,17 +1,17 @@
-# RH positivity at L=3/4, 4/5, 17/20, 9/10 and 19/20: reproducible fixed-source certificates
+# RH positivity at L=3/4, 4/5, 17/20, 9/10, 19/20 and 1: reproducible fixed-source certificates
 
 Monty · 23 October 2026, updated 24 October 2026
 
-This packet supports [BRT-T64--T73](../../RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
+This packet supports [BRT-T64--T74](../../RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
 For the real even closed source family declared there, with every
 active prime power carrying its actual weight Lambda(n)/sqrt(n)
-(2, 3, 4 at L=3/4 and 4/5; 2, 3, 4, 5 at L=17/20, 9/10 and 19/20),
-the results are
+(2, 3, 4 at L=3/4 and 4/5; 2, 3, 4, 5 at L=17/20, 9/10 and 19/20;
+2, 3, 4, 5, 7 at L=1), the results are
 
 \[
 0<L\le L_0 \ \Longrightarrow\ q_L[g]\ge\mu_{L_0}\|g\|^2
 \quad(g\in D_L),\qquad
-L_0\in\{3/4,\ 4/5,\ 17/20,\ 9/10,\ 19/20\},
+L_0\in\{3/4,\ 4/5,\ 17/20,\ 9/10,\ 19/20,\ 1\},
 \]
 
 with the explicit margins recorded in each certificate
@@ -38,6 +38,8 @@ One verifier, several packet directories:
 | `near_null_09/` | `--packet near_null_09 --rayleigh` | L=9/10, two-sided enclosure of three fixed profiles (BRT-T71); not a positivity statement |
 | `l095_route/` | `--packet l095_route` (Arb engine) | L=19/20, N=40 retained modes, sixty-four-mode trial, kernel degree 300 with the radius-5/2 remainder bound of BRT-T72, `boundary_split` rule (BRT-T73) |
 | `near_null_095/` | `--packet near_null_095 --rayleigh` (Arb engine) | L=19/20, two-sided enclosure of three fixed profiles (BRT-T73); not a positivity statement |
+| `l1_route/` | `--packet l1_route` (Arb engine) | L=1, five active prime powers 2, 3, 4, 5, 7, N=56 retained modes, eighty-mode trial (denominator 10^18), kernel degree 400 with the BRT-T72 bound, fourteen cosh terms, `boundary_split` rule (BRT-T74) |
+| `near_null_1/` | `--packet near_null_1 --rayleigh` (Arb engine) | L=1, two-sided enclosure of three fixed profiles (BRT-T74); not a positivity statement |
 | `l0625_route/` | `--packet l0625_route` | L=5/8, N=5, `boundary_split` rule; two-prime control for the same rule |
 | `l055_control/` | `--packet l055_control` | L=11/20, N=5, the `rh_l055` trial and declared T57 constant re-run through this verifier; reproduces the exact rational witness of that packet |
 
@@ -69,22 +71,24 @@ python3 proof_lab/rh_l075/verify.py 160 --packet proof_lab/rh_l075/near_null_085
 python3 proof_lab/rh_l075/verify.py 160 --packet proof_lab/rh_l075/near_null_09 --rayleigh
 ~~~
 
-The L=9/10 and 19/20 certificates and the 19/20 near-null enclosure
-were produced with the Arb engine (`pip install python-flint`):
+The L=9/10, 19/20 and 1 certificates and the 19/20 and 1 near-null
+enclosures were produced with the Arb engine (`pip install python-flint`):
 
 ~~~sh
 python3 proof_lab/rh_l075/verify_arb.py 260 --packet proof_lab/rh_l075/l09_route
 python3 proof_lab/rh_l075/verify_arb.py 320 --packet proof_lab/rh_l075/l095_route
 python3 proof_lab/rh_l075/verify_arb.py 200 --packet proof_lab/rh_l075/near_null_095 --rayleigh
+python3 proof_lab/rh_l075/verify_arb.py 420 --packet proof_lab/rh_l075/l1_route
+python3 proof_lab/rh_l075/verify_arb.py 300 --packet proof_lab/rh_l075/near_null_1 --rayleigh
 ~~~
 
 `verify.py` accepts the `l09_route` packet (it would need of the order
 of days). It does not read the `kernel_tail` key: on `l095_route` and
 `near_null_095` it would apply T60's radius-2 remainder bound, whose
 value at degree 300 and ratio 19/20 is of the order 10^(-5), far above
-the 10^(-30) shift, so those two packets are certified by the Arb
-engine only (and `verify.py` stops at L<1 in any case). Every other
-packet runs on both engines.
+the 10^(-30) shift, and it asserts L<1, which rejects `l1_route` and
+`near_null_1`; those four packets are certified by the Arb engine
+only. Every other packet runs on both engines.
 
 Run without -O or PYTHONOPTIMIZE: assertions are part of the verifier.
 Each command reads the packet's `config.json` and `trial.json` and writes
@@ -93,8 +97,9 @@ first if you want to preserve the committed evidence byte for byte.
 The two L=3/4 certificate runs take of the order of half an hour each
 on one core, the L=4/5 run of the order of two hours and the L=17/20
 run of the order of five hours; the others take minutes. On the Arb
-engine the L=9/10 run takes about sixteen minutes and the L=19/20 run
-about ten minutes at 320 digits; the rest take seconds.
+engine the L=9/10 run takes about sixteen minutes, the L=19/20 run
+about ten minutes at 320 digits and the L=1 run about twenty-three
+minutes at 420 digits; the rest take seconds.
 
 A successful certificate run exits with status zero, prints
 PASS_FIXED_WINDOW_LOWER_MATRIX, reports both the interval shifted sign
@@ -112,11 +117,14 @@ Trials: `t53_route` and `boundary_route` both use 24 unnormalized even
 Legendre modes P_0, P_2, ..., P_46 of x/L, denominator 10^14; the first
 N rows are the identity. `l08_route` uses 30 modes P_0, ..., P_58 with
 N=16, `l085_route` 36 modes P_0, ..., P_70 with N=24, `l09_route` 52
-modes P_0, ..., P_102 with N=30, and `l095_route` 64 modes
-P_0, ..., P_126 with N=40. The remaining
+modes P_0, ..., P_102 with N=30, `l095_route` 64 modes
+P_0, ..., P_126 with N=40, and `l1_route` 80 modes P_0, ..., P_158
+with N=56 and denominator 10^18 (at the 10^(-30) near-null scale of
+that width a 10^(-14) rounding of the tail would cost more than the
+margin). The remaining
 rows are a fixed rational rounding of the truncated minimizing tail of
-the 24-, 30-, 36-, 52- or 64-mode operator matrix found by preliminary
-numerical candidate exploration. That
+the 24-, 30-, 36-, 52-, 64- or 80-mode operator matrix found by
+preliminary numerical candidate exploration. That
 exploration is not a proof dependency: the verifier accepts the fixed
 trial and charges every residual mode. A different trial can fail the
 sufficient certificate without disproving positivity.
@@ -132,23 +140,25 @@ The all-function bound `full_family_lower_bound` is stated for
 The operator is BRT-T60's (236) with the subtraction
 sum_n a_n (S_(log n)+S_(-log n))/2 over every active prime power. Only
 the regular kernel j and cosh(x/2) are replaced, by a degree-200
-(L=3/4), degree-300 (L=4/5 and 19/20), degree-400 (L=17/20) or
-degree-700 (L=9/10) Taylor polynomial and twelve even Taylor terms;
-BRT-T66, T69, T70, T71 and T73 bound the combined operator error
-epsilon. The kernel remainder uses T60's radius-2 Cauchy bound
-(geometric ratio L) up to 9/10 and, at 19/20, T72's radius-5/2 bound
-|j|<=16/5 (ratio 4L/5), selected by the packet key
-`kernel_tail` = {radius, sup} with the two admitted pairs (2, 5) and
-(5/2, 16/5).
+(L=3/4), degree-300 (L=4/5 and 19/20), degree-400 (L=17/20 and 1) or
+degree-700 (L=9/10) Taylor polynomial and twelve (fourteen at L=1)
+even Taylor terms; BRT-T66, T69, T70, T71, T73 and T74 bound the
+combined operator error epsilon. The kernel remainder uses T60's
+radius-2 Cauchy bound (geometric ratio L) up to 9/10 and, from 19/20
+on, T72's radius-5/2 bound |j|<=16/5 (ratio 4L/5), selected by the
+packet key `kernel_tail` = {radius, sup} with the two admitted pairs
+(2, 5) and (5/2, 16/5).
 Logarithmic endpoint integrals, the square of the boundary multiplier,
 and every mixed prime term are integrated analytically on the pieces
 of y=(x+L)/(2L) cut at s_n'=log n/(2L) and 1-s_n' for every active n:
-seven pieces at L=3/4 and 4/5, nine at L=17/20, 9/10 and 19/20. The
-prime-2 translation caps overlap at every width; the piecewise
-integration does not use cap disjointness. At L=4/5 the verifier
-checks log 5 > 2L = 8/5 with directed arithmetic, so the prime power 5
-is not active; at L=17/20, 9/10 and 19/20 it checks log 5 < 2L < log 7,
-so exactly 2, 3, 4, 5 are active.
+seven pieces at L=3/4 and 4/5, nine at L=17/20, 9/10 and 19/20,
+eleven at L=1. The prime-2 translation caps overlap at every width;
+the piecewise integration does not use cap disjointness. The verifier
+classifies every prime power below 64 against 2L with directed
+arithmetic: at L=4/5 log 5 > 8/5, so the prime power 5 is not active;
+at L=17/20, 9/10 and 19/20 log 5 < 2L < log 7, so exactly 2, 3, 4, 5
+are active; at L=1 log 7 < 2 < log 8, so exactly 2, 3, 4, 5, 7 are
+active.
 
 The residual Gram is the complete one,
 (bar T Z)^*(bar T Z) - (P_N bar T Z)^*(P_N bar T Z). The complement
@@ -218,6 +228,7 @@ Rayleigh-quotient enclosures overlap.
 | l085_route | 17/20 | 24, 36, 400 | ~7.5 h | 169 s | yes |
 | l09_route | 9/10 | 30, 52, 700 | not run (days) | ~16 min | — |
 | l095_route | 19/20 | 40, 64, 300 (T72 bound) | not run (T72 bound is Arb-only) | ~10 min | — |
+| l1_route | 1 | 56, 80, 400 (T72 bound) | not run (asserts L<1) | ~23 min | — |
 
 Reproduce with the Arb engine from the repository root, for example
 
@@ -228,11 +239,12 @@ python3 proof_lab/rh_l075/verify_arb.py 230 --packet proof_lab/rh_l075/l085_rout
 
 The L=9/10 certificate (`l09_route`, BRT-T71) was produced with the Arb
 engine; the Decimal engine accepts the same packet and would need of
-the order of a few days on one core for it. The L=19/20 certificate
-(`l095_route`, BRT-T73) and its near-null enclosure use the
-`kernel_tail` option (radius 5/2, sup 16/5; BRT-T72), which the frozen
-Decimal engine does not implement, so they are Arb-only; the option
-changes one scalar (epsilon_j) and nothing else in the pipeline.
+the order of a few days on one core for it. The L=19/20 and L=1
+certificates (`l095_route`, BRT-T73; `l1_route`, BRT-T74) and their
+near-null enclosures use the `kernel_tail` option (radius 5/2, sup
+16/5; BRT-T72), which the frozen Decimal engine does not implement,
+so they are Arb-only; the option changes one scalar (epsilon_j) and
+nothing else in the pipeline.
 
 ## Independent cross-check of the analytic pipeline
 
@@ -261,9 +273,9 @@ enclosures and the exact rational sign check remain the certificate.
 ## Scope
 
 Fresh deterministic certificates for the fixed actual source at L=3/4,
-4/5, 17/20, 9/10 and 19/20. No earlier certificate is replayed. The
+4/5, 17/20, 9/10, 19/20 and 1. No earlier certificate is replayed. The
 result is positivity on the bounded supports (0,3/4], (0,4/5],
-(0,17/20], (0,9/10] and (0,19/20]; widths beyond 19/20 (where the
-prime 7 activates at L=0.973) and all-width positivity/RH remain
+(0,17/20], (0,9/10], (0,19/20] and (0,1]; widths beyond 1 (where the
+prime power 8 activates at L=1.040) and all-width positivity/RH remain
 separate open tasks. No percentage completion of an
 RH proof is inferred.

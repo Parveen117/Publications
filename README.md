@@ -1,17 +1,18 @@
 # Publications
 
-Latest RH continuation: [BRT-T64--T73 — complete-source positivity through L=19/20](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
+Latest RH continuation: [BRT-T64--T74 — complete-source positivity through L=1](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
 
-The working computer-assisted result is **q_L[g] >= 4.9*10^(-32)||g||^2
-for every admitted real even g and every 0<L<=19/20**, with the four
-active prime powers 2, 3, 4, 5 at their actual weights (and
+The working computer-assisted result is **q_L[g] >= 4.0*10^(-33)||g||^2
+for every admitted real even g and every 0<L<=1**, with the five
+prime powers 2, 3, 4, 5, 7 below e^2 at their actual weights (and
+q_L[g] >= 4.9*10^(-32)||g||^2 on 0<L<=19/20,
 q_L[g] >= 4.8*10^(-28)||g||^2 on 0<L<=9/10,
 q_L[g] >= 6.2*10^(-25)||g||^2 on 0<L<=17/20,
 q_L[g] >= 8.8*10^(-22)||g||^2 on 0<L<=4/5, q_L[g] >= 9*10^(-18)||g||^2 on
 0<L<=3/4). It closes the returned-sign question at 3/4 left open since
-BRT-T46, extends the 11/20 endpoint, crosses the activation of the
-prime power 5 at 2L=log 5, and reaches the end of the four-prime
-regime (2L=log 7 at L=0.973); stronger earlier margins on their
+BRT-T46, extends the 11/20 endpoint, crosses the activations of the
+prime power 5 at 2L=log 5 and of the prime 7 at 2L=log 7 (L=0.973),
+and reaches the unit width L=1; stronger earlier margins on their
 smaller intervals are retained.
 
 Two independent complement routes certify the same sign at 3/4: one
@@ -32,24 +33,28 @@ L=9/10 (thirty retained modes, fifty-two-mode trial, kernel degree
 sixty-four-mode trial, 320-digit balls) at shift 10^(-30), after T72
 proves the kernel remainder bound with Cauchy radius 5/2 (|j|<=16/5 on
 |z|=5/2) that frees the verifier from the L<1 restriction of T60's
-radius-2 bound. The certificates from 9/10 on were produced with the
+radius-2 bound, and T74 at L=1 with five active prime powers
+(fifty-six retained modes, eighty-mode trial, 420-digit balls) at
+shift 10^(-31). The certificates from 9/10 on were produced with the
 packet's second, ball-arithmetic engine, which reproduces all six
 earlier witnesses byte for byte and turns hours of directed-Decimal
 arithmetic into minutes.
 
 The [reproducible packet](proof_lab/rh_l075/README.md) contains the
-two engines of one verifier, thirteen packet directories (both L=3/4
-routes, the L=4/5, 17/20, 9/10 and 19/20 routes, near-null enclosures
-at 3/4, 4/5, 17/20, 9/10 and 19/20, an L=5/8 two-prime instance of
-T64, and a control that reproduces the L=11/20 witness byte for byte),
+two engines of one verifier, fifteen packet directories (both L=3/4
+routes, the L=4/5, 17/20, 9/10, 19/20 and 1 routes, near-null
+enclosures at 3/4, 4/5, 17/20, 9/10, 19/20 and 1, an L=5/8 two-prime
+instance of T64, and a control that reproduces the L=11/20 witness
+byte for byte),
 all evidence files and passing rejection controls. These are new
 deterministic computations, not replays. The result is a working
 computer-assisted proof pending external review.
 
-**Still open:** widths beyond 19/20 (the prime 7 activates at
-L=0.973; at L=1 the T64 complement needs about forty-eight retained
-modes and the near-null scale is about 10^(-30)), and all-width
-positivity/RH. No RH proof or universal observer count is claimed.
+**Still open:** widths beyond 1 (the prime power 8 activates at
+L=1.040; the T64 complement needs about sixty-one retained modes at
+L=1.05 and about one hundred and sixty at L=1.1, where the prime 3
+stops being cap-disjoint, so a sharper complement comparison is the
+next analytic task), and all-width positivity/RH. No RH proof or universal observer count is claimed.
 The earlier entries below record their status at their respective
 stages.
 

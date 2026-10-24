@@ -1,24 +1,26 @@
-# BRT-1 — Full-source positivity through L=19/20
+# BRT-1 — Full-source positivity through L=1
 
-Monty · 18 October 2026. Updated 24 October 2026 through BRT-T73.
+Monty · 18 October 2026. Updated 24 October 2026 through BRT-T74.
 
 The current working computer-assisted result is
 \[
  \boxed{
- 0<L\le\frac{19}{20}
+ 0<L\le1
  \quad\Longrightarrow\quad
- q_L[g]\ge4.9\cdot10^{-32}\,\|g\|^2
+ q_L[g]\ge4.0\cdot10^{-33}\,\|g\|^2
  \quad(g\in D_L).
  }
 \]
 It covers the complete admitted real even family, with no neutral
-moment or finite-mode restriction, and the four active prime
-powers 2, 3, 4, 5 at their actual weights. Earlier stronger margins on
+moment or finite-mode restriction, and the five prime powers 2, 3,
+4, 5, 7 below e^2 at their actual weights (the prime 7 is active
+for L>0.973). Earlier stronger margins on
 smaller intervals remain valid; in particular q_L[g] >= 10^(-11)||g||^2
 for 0<L<=11/20 (T63), q_L[g] >= 9*10^(-18)||g||^2 for 0<L<=3/4 (T68),
 q_L[g] >= 8.8*10^(-22)||g||^2 for 0<L<=4/5 (T69),
-q_L[g] >= 6.2*10^(-25)||g||^2 for 0<L<=17/20 (T70) and
-q_L[g] >= 4.8*10^(-28)||g||^2 for 0<L<=9/10 (T71).
+q_L[g] >= 6.2*10^(-25)||g||^2 for 0<L<=17/20 (T70),
+q_L[g] >= 4.8*10^(-28)||g||^2 for 0<L<=9/10 (T71) and
+q_L[g] >= 4.9*10^(-32)||g||^2 for 0<L<=19/20 (T73).
 
 T56--T63 supplied the complement bound and the actual returned
 matrix at L=11/20. T64--T68 do the same at L=3/4 by two independent
@@ -27,9 +29,10 @@ width-dependent boundary-energy comparison T64), after T65 locates
 the returned-sign question at that width below 10^(-11). T69 carries
 the T64 route to L=4/5 inside the three-prime regime, T70 carries
 it to L=17/20, where the prime power 5 is active, T71 to L=9/10
-with the ball-arithmetic engine of the packet, and T73 to L=19/20
+with the ball-arithmetic engine of the packet, T73 to L=19/20
 after T72 enlarges the Cauchy radius of the kernel remainder bound
-(the only analytic estimate of T60 that was tied to L<1). All active
+(the only analytic estimate of T60 that was tied to L<1), and T74 to
+the unit width L=1, where the prime 7 is active. All active
 prime powers, the logarithmic boundary term and the complete infinite
 residual are retained at every width.
 
@@ -39,7 +42,7 @@ each run and the evidence files. The L=11/20 packet
 [proof_lab/rh_l055](proof_lab/rh_l055/README.md) is unchanged and is
 reproduced by the new verifier as a control. Historical sections
 below retain their status at the time of writing; their statements
-that 11/20 or 3/4 is unresolved are superseded by T60--T73.
+that 11/20 or 3/4 is unresolved are superseded by T60--T74.
 
 ## Actual source and domain
 
@@ -7516,12 +7519,113 @@ the retained-mode count 40, and the all-function margin
 4.9*10^(-32); the next width, L=1, carries the five prime powers
 2, 3, 4, 5, 7.
 
+## BRT-T74. Five active prime powers: the complete source is positive through L=1
+
+24 October 2026. At L=1 the prime 7 is active (log 7<2<log 8, both
+checked by the verifier, which classifies every prime power below 64
+against 2L with directed arithmetic), so the source carries the five
+translations 2, 3, 4, 5, 7 with weights a_2, a_3, a_4, a_5 as in T70
+and a_7=log7/sqrt7. This is the first certified width past the end of
+the four-prime regime (2L=log 7, L=0.973) and the first with L>=1,
+admitted by T72 and by the width remark there. The T64 route is used
+with fifty-six retained modes, an eighty-mode fixed rational trial
+(P_0,...,P_158 of x/L, denominator 10^18), kernel degree 400
+with the T72 remainder, fourteen cosh terms, and 420-digit
+balls.
+
+**Complement at 1 (T64).** Prime powers 3, 4, 5 and 7 are cap-disjoint
+(log 3>1), prime 2 is not. The greedy allocation spends the fraction
+0.654 of the boundary energy on the outermost cap, prime 7,
+which is fully absorbed, and the remainder on prime power 5, which
+covers the fraction 0.111 of its cap; prime powers 4 and 3 (a_4/2,
+a_3/2) and prime 2 (a_2) are charged to the norm. Then
+\[
+d_{1,56}>0.1186,\qquad d_{1,80}>0.2963 .
+\tag{294}
+\]
+
+**Operator and bounds.** (236) with the five-term subtraction
+\[
+\mathcal P_{23457}=\sum_{n\in\{2,3,4,5,7\}}\frac{a_n}2(S_{\log n}+S_{-\log n}),
+\qquad c_1=-\frac12\bigl(\gamma_E+\log(2\pi)\bigr),
+\tag{295}
+\]
+the kernel replaced by j_400 and cosh(x/2) by h_28. By
+(287) with 4L/5=4/5 and by the positive cosh tail (successive-term
+ratio below (1/4)/(28+1)(28+2)),
+\[
+\sup_{0\le s\le2}|j-j_{400}|\le16\Bigl(\frac45\Bigr)^{401},\qquad
+\sup_{|x|\le1}|h-h_{28}|\le\frac{2\,(1/2)^{28}}{28!},\qquad
+\|T-\overline T\|\le\epsilon<2.176\cdot10^{-37} .
+\tag{296}
+\]
+In y=(x+L)/(2L) the translated polynomials switch at the eleven-piece
+partition
+\[
+0<1-w_7'<1-w_5'<1-w_4'<u'<1-v'<v'<1-u'<w_4'<w_5'<w_7'<1,
+\qquad w_7'=\frac{\log7}{2},
+\tag{297}
+\]
+sorted and separated by the verifier; (242)--(244) apply piece by
+piece.
+
+**Near-null scale.** The packet `near_null_1` encloses three fixed
+profiles (rational combinations of P_0,...,P_122, denominator
+10^22):
+\[
+\frac{q[g_1]}{\|g_1\|^2}\in[2.9736\cdot10^{-30},\,2.9737\cdot10^{-30}],\qquad
+\frac{q[g_2]}{\|g_2\|^2}\in[1.1135\cdot10^{-23},\,1.1136\cdot10^{-23}],\qquad
+\frac{q[g_3]}{\|g_3\|^2}\in[7.1830\cdot10^{-18},\,7.1831\cdot10^{-18}],
+\tag{298}
+\]
+with |P_Ng_1|^2>=0.9789||g_1||^2 for N>=4, so
+lambda_min(S_N(1))<3.04\cdot10^{-30} for N>=4 in normalized coordinates.
+At this scale the 10^(-14) rounding grid of the earlier trials is no
+longer admissible: rounding the minimizing tail by delta costs about
+delta^*C delta in the certified form, of the order 10^(-27) at that
+grid, which is why the trial below is rounded to 10^(-18).
+
+**Fixed trial and witness.** The packet `l1_route` fixes a rational
+80-by-56 array (denominator 10^18, identity on the first 56
+rows), charges the complete residual Gram with explicit levels
+56,...,79 and tail weight 1/d_(1,80)<3.38, and
+subtracts
+\[
+\Delta<2.946\cdot10^{-36},\qquad t_z<4.138,\qquad t_r<0.07517,\qquad
+\operatorname{tr}\mathcal E_{\rm hier}(\overline R)<0.2537 .
+\tag{299}
+\]
+Interval LDL^T of M-10^(-31)I and exact rational LDL^T of the
+10^(-46)-grid rounding Q-(10^(-44)+10^(-31))I both pass,
+the smallest exact pivot exceeding 1.74\cdot10^{-7}. Hence
+\[
+\boxed{
+\widetilde{\mathsf S}_{56}(\mathbf1)\succeq10^{-31}\,I
+\quad\text{(unnormalized coordinates)},\qquad
+0<L\le1\ \Longrightarrow\ q_L[g]\ge4.0\cdot10^{-33}\,\|g\|^2
+\quad(g\in D_L).
+}
+\tag{300}
+\]
+The proof of (300) is that of T68 with d_(1,56) and the recorded
+lift bound ||E||<3.50. QED.
+
+The complete source on the unit support (-1,1), with the five prime
+powers below e^2 at their actual weights, is therefore positive on the
+whole admitted family, with margin 4.0*10^(-33). The certified near-null
+scale has reached 10^(-30). The retained-mode count 56 is close to
+the T64 requirement d_(1,N)>0: from (294) and the exact harmonic
+differences, d_(1,45)>0.0098, while a float evaluation of (257) gives
+d_(1,44) about -0.0013, so the route has no room below forty-five
+retained modes at this width. The next regime boundary is 2L=log 8,
+L=1.040.
+
 ## Scope and continuation
 
-T64--T73 extend the unrestricted working positive interval from
-0<L<=11/20 to 0<L<=19/20, with the explicit all-function margins
+T64--T74 extend the unrestricted working positive interval from
+0<L<=11/20 to 0<L<=1, with the explicit all-function margins
 9*10^(-18) at 3/4, 8.8*10^(-22) at 4/5, 6.2*10^(-25) at 17/20,
-4.8*10^(-28) at 9/10 and 4.9*10^(-32) at 19/20. The
+4.8*10^(-28) at 9/10, 4.9*10^(-32) at 19/20 and 4.0*10^(-33) at 1. The
 10^(-11) margin on
 (0,11/20], the 1/30000 margin on its smaller interval and all earlier
 stronger local margins remain valid.
@@ -7541,24 +7645,25 @@ The source/domain distinction from native curvature is unchanged.
 The retained Legendre counts are not universal observer counts or
 MP's separate five-label eta-zero carrier.
 
-At 4/5, 17/20, 9/10 and 19/20 only the T64 comparison is available;
+At 4/5, 17/20, 9/10, 19/20 and 1 only the T64 comparison is available;
 T69 uses it with sixteen retained modes and a thirty-mode trial, T70
 with twenty-four retained modes and a thirty-six-mode trial, T71 with
-thirty retained modes and a fifty-two-mode trial, and T73 with forty
-retained modes and a sixty-four-mode trial, the last two on the
+thirty retained modes and a fifty-two-mode trial, T73 with forty
+retained modes and a sixty-four-mode trial, and T74 with fifty-six
+retained modes and an eighty-mode trial, the last three on the
 ball-arithmetic engine (both engines agree byte for byte on all six
 earlier certificates). T72 replaces T60's kernel remainder bound,
 whose Cauchy radius 2 confined every certificate to L<1, by the radius
 5/2 and the bound |j|<=16/5 on that circle, which admits every width
 below 5/4. The near-null
 enclosures (packets `near_null_08`, `near_null_085`, `near_null_09`,
-`near_null_095`) show the returned
+`near_null_095`, `near_null_1`) show the returned
 matrix has a direction below 8.9*10^(-18) at 4/5, below
-2.3*10^(-20) at 17/20, below 2.7*10^(-23) at 9/10 and below
-1.4*10^(-26) at 19/20.
+2.3*10^(-20) at 17/20, below 2.7*10^(-23) at 9/10, below
+1.4*10^(-26) at 19/20 and below 3.1*10^(-30) at 1.
 
 This continuation changes this note, its README entry, and adds
-proof_lab/rh_l075/ (two engines of one verifier, thirteen packet
+proof_lab/rh_l075/ (two engines of one verifier, fifteen packet
 directories with their configurations, fixed trials and evidence). The L=11/20 packet is
 unchanged. The separate Yang--Mills note and earlier certificates are
 unchanged. The PR is draft and unmerged, with [skip ci]. New
@@ -7568,20 +7673,21 @@ distinguished.
 
 **Closed in the working derivation and accompanying computation:**
 the actual returned sign at 3/4 by two routes and at 4/5, 17/20,
-9/10 and 19/20 by the T64 route, the all-function estimates (270),
-(274), (281), (286) and (293), the general-width comparison T64, the
-kernel remainder lemma T72, and the enclosures
-(262)--(263), (272a), (279), (284) and (291).
+9/10, 19/20 and 1 by the T64 route, the all-function estimates (270),
+(274), (281), (286), (293) and (300), the general-width comparison
+T64, the kernel remainder lemma T72, and the enclosures
+(262)--(263), (272a), (279), (284), (291) and (298).
 
-**Unresolved:** widths beyond 19/20, and all-width positivity/RH.
-The four-prime regime ends at 2L=log 7, L=0.973, where the prime 7
-activates; at L=1 the T64 levels are positive only from about
-forty-eight retained modes (d_(1,48) is about 0.04, d_(1,56) about
-0.12), the exploration near-null scale is about 3*10^(-30), and the
-polynomial arithmetic needs several hundred more digits than at 19/20.
-Beyond about L=1.05 the T64 charge outgrows the available H_(2N)/2 at
-every practical mode count, so a sharper complement comparison is
-needed there.
+**Unresolved:** widths beyond 1, and all-width positivity/RH.
+The five-prime regime ends at 2L=log 8, L=1.040, where the prime
+power 8 activates; at L=1.05 a float evaluation of (257) gives
+positive T64 levels from about sixty-one retained modes, and at
+L=1.1 the prime 3 stops being cap-disjoint (log 3<1.1), its charge
+doubles to a_3, and the T64 level needs about one hundred and sixty
+retained modes. A sharper complement comparison than T64 is
+needed well before L=1.1; the near-null scale, which has fallen by
+about three to four orders of magnitude per 0.05 of width, is the
+other growing cost.
 No percentage of an RH proof follows from this bounded-window
 advance.
 
