@@ -151,6 +151,50 @@ and a check that the residual debt actually charged is nonzero. A
 further line records whether the uniform allowance 1/d_N alone would
 also have passed; it is recorded, not asserted, in either direction.
 
+## Two engines: directed Decimal and Arb ball arithmetic
+
+`verify.py` is the standard-library reference engine (directed Decimal
+endpoints, hand-proved enclosures of pi, Euler's constant and the
+arctangent series). `verify_arb.py` is a second implementation of the
+same certificate on FLINT/Arb ball arithmetic through `python-flint`
+(0.9.0): every quantity is a midpoint-radius ball with outward rounding
+done by the library, polynomial products run in Arb's compiled
+polynomial arithmetic, and pi, Euler's constant, logarithms, exp, sqrt
+and arctan are Arb's certified enclosures. The exact lower and upper
+bounds handed to the exact rational LDL^T are exact dyadic numbers
+below and above the whole ball. The analytic pipeline, the complement
+rule, the level-by-level residual charge, the rational rounding
+allowance, the shift, the all-function transfer and all controls are
+the same code, line for line where the arithmetic allows.
+
+Both engines were run on every packet directory and both results are
+committed (`result-<digits>.json` from verify.py, `result-arb-<digits>.json`
+from verify_arb.py; `rayleigh-*.json` likewise). For all six
+certificates the exact rational witness matrices and the exact shifted
+pivots are byte-for-byte identical between the two engines; the ball
+enclosures are strictly inside the Decimal enclosures; the four
+Rayleigh-quotient enclosures overlap.
+
+| Packet | L | N, M, K | verify.py | verify_arb.py | witness identical |
+|---|---|---|---|---|---|
+| l055_control | 11/20 | 5, 12, 48 | 17 s | 0.4 s | yes |
+| l0625_route | 5/8 | 5, 16, 120 | ~4 min | 1.3 s | yes |
+| t53_route | 3/4 | 8, 24, 200 | ~12 min | 9 s | yes |
+| boundary_route | 3/4 | 14, 24, 200 | ~22 min | 16 s | yes |
+| l08_route | 4/5 | 16, 30, 300 | ~82 min | 50 s | yes |
+| l085_route | 17/20 | 24, 36, 400 | ~7.5 h | 169 s | yes |
+
+Reproduce with the Arb engine from the repository root, for example
+
+~~~sh
+pip install python-flint
+python3 proof_lab/rh_l075/verify_arb.py 230 --packet proof_lab/rh_l075/l085_route
+~~~
+
+The L=9/10 certificate (`l09_route`, BRT-T71) was produced with the Arb
+engine; the Decimal engine accepts the same packet and would need of
+the order of a few days on one core for it.
+
 ## Independent cross-check of the analytic pipeline
 
 `crosscheck_quadrature.py` (SciPy, binary floats; not part of the

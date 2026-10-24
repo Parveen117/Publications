@@ -1,10 +1,11 @@
 # Publications
 
-Latest RH continuation: [BRT-T64--T70 — complete-source positivity through L=17/20](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
+Latest RH continuation: [BRT-T64--T71 — complete-source positivity through L=9/10](RH_BOUNDARY_REGULAR_TRIAL.md#brt-t64-a-width-dependent-complement-comparison-with-boundary-energy-allocation).
 
-The working computer-assisted result is **q_L[g] >= 6.2*10^(-25)||g||^2
-for every admitted real even g and every 0<L<=17/20**, with the four
+The working computer-assisted result is **q_L[g] >= 4.8*10^(-28)||g||^2
+for every admitted real even g and every 0<L<=9/10**, with the four
 active prime powers 2, 3, 4, 5 at their actual weights (and
+q_L[g] >= 6.2*10^(-25)||g||^2 on 0<L<=17/20,
 q_L[g] >= 8.8*10^(-22)||g||^2 on 0<L<=4/5, q_L[g] >= 9*10^(-18)||g||^2 on
 0<L<=3/4). It closes the returned-sign question at 3/4 left open since
 BRT-T46, extends the 11/20 endpoint, and crosses the activation of the
@@ -23,20 +24,24 @@ and exact rational positive-matrix witnesses at shift 10^(-16). T69
 repeats the T64 route at L=4/5 (sixteen retained modes, thirty-mode
 trial, kernel degree 300) at shift 10^(-20), and T70 at L=17/20 with
 four active prime powers (twenty-four retained modes, thirty-six-mode
-trial, kernel degree 400) at shift 10^(-23).
+trial, kernel degree 400) at shift 10^(-23); T71 at L=9/10 (thirty
+retained modes, fifty-two-mode trial, kernel degree 700) at shift
+10^(-26), produced with the packet's second, ball-arithmetic engine,
+which reproduces all six earlier witnesses byte for byte and turns
+hours of directed-Decimal arithmetic into minutes.
 
 The [reproducible packet](proof_lab/rh_l075/README.md) contains the
-single standard-library verifier, ten packet directories (both L=3/4
-routes, the L=4/5 and L=17/20 routes, near-null enclosures at 3/4, 4/5
-and 17/20, a near-null enclosure at the uncertified width 9/10, an
+two engines of one verifier, eleven packet directories (both L=3/4
+routes, the L=4/5, 17/20 and 9/10 routes, near-null enclosures at 3/4,
+4/5, 17/20 and 9/10, an
 L=5/8 two-prime instance of T64, and a control that reproduces the
 L=11/20 witness byte for byte),
 all evidence files and passing rejection controls. These are new
 deterministic computations, not replays. The result is a working
 computer-assisted proof pending external review.
 
-**Still open:** widths beyond 17/20 (the four-prime regime continues
-to 2L=log 7), and all-width positivity/RH. No RH
+**Still open:** widths beyond 9/10 (the four-prime regime ends at
+2L=log 7, L=0.973), and all-width positivity/RH. No RH
 proof or universal observer count is claimed. The earlier entries
 below record their status at their respective stages.
 
