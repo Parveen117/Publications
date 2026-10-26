@@ -36,7 +36,13 @@ Future-release immutability was enabled and verified again after reloading Setti
 - Authenticated GitHub integration was synchronized and reloaded. All 17 research repositories are enabled; the profile repository remains off.
 - `quantum-classical-provisional` was disabled despite having an earlier DOI. Automatic archiving is now enabled.
 - [Publications v3.3, DOI 10.5281/zenodo.22164767](https://zenodo.org/records/22164767) now has a dated provenance note linking to the evidence index and repository provenance at commit `8101092ded133333a6c96a9fd5883631149cd600`.
-- A before/after comparison of the public record API found only the `notes` metadata field changed. The original title, authors, version, publication date, rights metadata and file descriptors/checksum were preserved. No replacement archive or new DOI was created in this pass.
+- A before/after comparison of the public record API found only the `notes` metadata field changed. The original title, authors, version, publication date, rights metadata and file descriptors/checksum were preserved. No replacement archive or new DOI was created in that earlier administration pass. The subsequent collection deposit is recorded below.
+
+## Published collection snapshot — 26 October 2026
+
+[Version 2026.10.26, DOI 10.5281/zenodo.23671480](https://zenodo.org/records/23671480) archives **17 public research repositories and 3,252 tracked files** at pinned commits. All seven published attachments were downloaded and matched byte for byte; every source file, Git commit object and reconstructed root tree passed verification. See [COLLECTION_ARCHIVE.md](COLLECTION_ARCHIVE.md) for exact scope, commits, checksums and the verification receipt.
+
+This independently versioned collection preserves current source snapshots and original rights/credits. It leaves the earlier per-repository DOI families unchanged. Scientific suites were not rerun for this archival operation; repository administration remains a separate, partially completed rollout.
 
 ## Remaining administration
 
@@ -51,4 +57,4 @@ Complete the pending branch, tag and future-release controls using the verified 
 - [Machine-readable receipt, live rule IDs and archive checksum](administration/2026-10-26/status.json)
 - [Release metadata and rights checklist](REPOSITORY_MAINTENANCE.md)
 
-The next archival release still requires accurate release-specific citation metadata, resolution of the recorded license discrepancies, and the repository's existing release checks. A provenance note documents traceability; it does not turn a historical archive into a new code snapshot or establish scientific correctness or legal priority.
+The next scientific or repository-specific release still requires accurate release-specific citation metadata, resolution of the recorded license discrepancies, and the repository's existing release checks. A provenance note documents traceability; it does not turn a historical archive into a new code snapshot or establish scientific correctness or legal priority.

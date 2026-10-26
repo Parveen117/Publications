@@ -1,0 +1,226 @@
+{
+  "title": "Recognition Kernel Public Research Collection: Source Snapshot, 26 October 2026",
+  "version": "2026.10.26",
+  "snapshot_date": "2026-10-26",
+  "doi": "10.5281/zenodo.23671480",
+  "summary": {
+    "repositories": 17,
+    "tracked_files": 3252,
+    "source_bytes": 84041177
+  },
+  "archive_sha256": "d71f1cca40750cb4fd0cc18be76b1b9257df55ac18f87232672790c3b71c63de",
+  "repositories": [
+    {
+      "repository": "Parveen117/Artificial-intelligence",
+      "url": "https://github.com/Parveen117/Artificial-intelligence",
+      "default_branch": "main",
+      "commit": "2c9171d3db407af05211224f60c6ea444885cb5e",
+      "root_tree": "dc04cc45b150c9f85fb8a17dcbed78255f5a1336",
+      "tracked_files": 192
+    },
+    {
+      "repository": "Parveen117/quantum-classical-provisional",
+      "url": "https://github.com/Parveen117/quantum-classical-provisional",
+      "default_branch": "master",
+      "commit": "1881e8fdaeefffaa64e55ffe700d8fb67370ad60",
+      "root_tree": "6c138196a33e2f699ea0021fa36d186e8a36160c",
+      "tracked_files": 143
+    },
+    {
+      "repository": "Parveen117/Cryptography-Recognition-Ledger-Systems",
+      "url": "https://github.com/Parveen117/Cryptography-Recognition-Ledger-Systems",
+      "default_branch": "main",
+      "commit": "31f91bca0a9df3802f9646012356e361b537c577",
+      "root_tree": "2122f12ac7dd3a8566e73881b6b0a323d27bcadd",
+      "tracked_files": 79
+    },
+    {
+      "repository": "Parveen117/IEL-Information-Entropy-Ledger",
+      "url": "https://github.com/Parveen117/IEL-Information-Entropy-Ledger",
+      "default_branch": "main",
+      "commit": "6ee9c04d981524e0a3dbfa9c05614599d8073240",
+      "root_tree": "c74fc0d5c90ccc04f26cf603ab1513450479fc16",
+      "tracked_files": 21
+    },
+    {
+      "repository": "Parveen117/Atomic-validation-public",
+      "url": "https://github.com/Parveen117/Atomic-validation-public",
+      "default_branch": "main",
+      "commit": "c1dd8c13381084ef5b8e9787eccb8d217fb3098f",
+      "root_tree": "3947847d06b8427ebaf2d4e72eaf224c472d6cc6",
+      "tracked_files": 135
+    },
+    {
+      "repository": "Parveen117/EMK-material-response-public",
+      "url": "https://github.com/Parveen117/EMK-material-response-public",
+      "default_branch": "main",
+      "commit": "688d97ba5e022ff4bc4c5e56f291fa937743e0b1",
+      "root_tree": "6813daf1a5f85566928ed69af7faf68c6e5592fe",
+      "tracked_files": 44
+    },
+    {
+      "repository": "Parveen117/Quantum-Classical-public",
+      "url": "https://github.com/Parveen117/Quantum-Classical-public",
+      "default_branch": "main",
+      "commit": "a472bf493b42ac79c52bc1785de71a7e50169abe",
+      "root_tree": "d3d0dae01e379d8de9781487f8c815cc05a5f31d",
+      "tracked_files": 61
+    },
+    {
+      "repository": "Parveen117/ECL-pulic",
+      "url": "https://github.com/Parveen117/ECL-pulic",
+      "default_branch": "main",
+      "commit": "3965adfa94114e37dab51d9d278c0d38add10bbf",
+      "root_tree": "db4c9dc8940ec7be656f3494146b447061a4d175",
+      "tracked_files": 36
+    },
+    {
+      "repository": "Parveen117/recognition-seam-calculus",
+      "url": "https://github.com/Parveen117/recognition-seam-calculus",
+      "default_branch": "main",
+      "commit": "7d27d754d1165f06e8e5c61596e4fcfff9bee655",
+      "root_tree": "c446bf938a974cf3581517d7617379d4cc5374d5",
+      "tracked_files": 43
+    },
+    {
+      "repository": "Parveen117/Publications",
+      "url": "https://github.com/Parveen117/Publications",
+      "default_branch": "main",
+      "commit": "24fa49bbd081e0e0bd7bf38e27ef882ad20b511f",
+      "root_tree": "4623e309eaa467d3f00a730939104fcb872d0a8f",
+      "tracked_files": 752
+    },
+    {
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework",
+      "default_branch": "main",
+      "commit": "30906d7f154d181525bbf74d7a70b97dd4d33350",
+      "root_tree": "be58ad540a20c24e7a89f7c4589d5746d076beb6",
+      "tracked_files": 1076
+    },
+    {
+      "repository": "Parveen117/Thermodynamics-Reproducibility",
+      "url": "https://github.com/Parveen117/Thermodynamics-Reproducibility",
+      "default_branch": "main",
+      "commit": "22b991f0951f2c203d8717c66f993116354ab350",
+      "root_tree": "735a6b53d7b51709fbd8420ea5a8142108074c69",
+      "tracked_files": 86
+    },
+    {
+      "repository": "Parveen117/Red-team-Challenge",
+      "url": "https://github.com/Parveen117/Red-team-Challenge",
+      "default_branch": "main",
+      "commit": "4a013bdf28d672472820338c377b3ea24072778b",
+      "root_tree": "f7e09b1da5d3e780bbd8ca9193ffe634e148a8ae",
+      "tracked_files": 105
+    },
+    {
+      "repository": "Parveen117/RNKE-GATE",
+      "url": "https://github.com/Parveen117/RNKE-GATE",
+      "default_branch": "main",
+      "commit": "1ff7b05ab480b5b1cb4daff19629cece2b06b246",
+      "root_tree": "31d8b0f31595460012528796d7de97704553979d",
+      "tracked_files": 28
+    },
+    {
+      "repository": "Parveen117/Bio-tech",
+      "url": "https://github.com/Parveen117/Bio-tech",
+      "default_branch": "main",
+      "commit": "e87ae723dceeb021ea63c2c62d7050f837298ef4",
+      "root_tree": "b3244e35829e0377755241b8f7bffc38096b98c0",
+      "tracked_files": 18
+    },
+    {
+      "repository": "Parveen117/Energy",
+      "url": "https://github.com/Parveen117/Energy",
+      "default_branch": "main",
+      "commit": "cf84c39bd62fc9c635456123233ffe69a47820d9",
+      "root_tree": "1daeaf65384883d14c56795bf2df0a62d956654a",
+      "tracked_files": 40
+    },
+    {
+      "repository": "Parveen117/extra-ideas",
+      "url": "https://github.com/Parveen117/extra-ideas",
+      "default_branch": "main",
+      "commit": "1e257be48fe530b752fece411716118418f9cabb",
+      "root_tree": "21957b29d4da3c40885c8fc240ebfce37b0ec4d9",
+      "tracked_files": 393
+    }
+  ],
+  "status": "published_and_download_verified",
+  "record_id": 23671480,
+  "concept_doi": "10.5281/zenodo.23671479",
+  "record_url": "https://zenodo.org/records/23671480",
+  "record_created_at": "2026-10-26T17:23:48.955279+00:00",
+  "record_updated_at": "2026-10-26T17:23:49.336628+00:00",
+  "verified_at": "2026-10-26T17:25:37.048260+00:00",
+  "files": [
+    {
+      "filename": "SHA256SUMS.txt",
+      "size_bytes": 519,
+      "zenodo_checksum": "md5:64ed7f7e9bca71bd5f07aac3deb89bb7",
+      "sha256": "5dc0b824caaaf145240a61263dc56d9cec24c3f88613356f9a63991aec0ce6c7",
+      "download_url": "https://zenodo.org/api/records/23671480/files/SHA256SUMS.txt/content",
+      "matches_uploaded_original": true
+    },
+    {
+      "filename": "verify_collection.py",
+      "size_bytes": 3102,
+      "zenodo_checksum": "md5:7b9d5a7b985ff7346b1c4680de7b9eef",
+      "sha256": "aeb4f4e587fa0a2fbf3bd8eeb4511ae6ea621339de8cc1af20ddd4bf8de6110c",
+      "download_url": "https://zenodo.org/api/records/23671480/files/verify_collection.py/content",
+      "matches_uploaded_original": true
+    },
+    {
+      "filename": "RIGHTS.md",
+      "size_bytes": 3517,
+      "zenodo_checksum": "md5:c21c775487f867483d59d06d6b612276",
+      "sha256": "85c94b901fb32583e26973370838bdbe65afb62a2030bfacb815464a73aba25c",
+      "download_url": "https://zenodo.org/api/records/23671480/files/RIGHTS.md/content",
+      "matches_uploaded_original": true
+    },
+    {
+      "filename": "MANIFEST.json",
+      "size_bytes": 1125397,
+      "zenodo_checksum": "md5:0243f31b6788b598b40bd24eecb2dc0c",
+      "sha256": "126fe0cd66c7a76bbc92f5dcadb766122944b367bda7a14d010a571bbde07984",
+      "download_url": "https://zenodo.org/api/records/23671480/files/MANIFEST.json/content",
+      "matches_uploaded_original": true
+    },
+    {
+      "filename": "README.md",
+      "size_bytes": 7855,
+      "zenodo_checksum": "md5:d8585c07b8c7797b6b5fecbccfa3468a",
+      "sha256": "b358919f9d5bc0cd6b4be8bd60ba557574d4b489dd65ca6909bbead032cdfe22",
+      "download_url": "https://zenodo.org/api/records/23671480/files/README.md/content",
+      "matches_uploaded_original": true
+    },
+    {
+      "filename": "recognition-kernel-public-research-2026.10.26.zip",
+      "size_bytes": 34859914,
+      "zenodo_checksum": "md5:d2b31a0a8c96fe0fcaf1a223bd0c4985",
+      "sha256": "d71f1cca40750cb4fd0cc18be76b1b9257df55ac18f87232672790c3b71c63de",
+      "download_url": "https://zenodo.org/api/records/23671480/files/recognition-kernel-public-research-2026.10.26.zip/content",
+      "matches_uploaded_original": true
+    },
+    {
+      "filename": "VERIFICATION.json",
+      "size_bytes": 190,
+      "zenodo_checksum": "md5:de9afe36594da5f5b88f2c3a383cd514",
+      "sha256": "9f2cb01dbf0458b7e492e3b318e9605243b7013ba8598713c4e0a3452a319cbc",
+      "download_url": "https://zenodo.org/api/records/23671480/files/VERIFICATION.json/content",
+      "matches_uploaded_original": true
+    }
+  ],
+  "archive_integrity": {
+    "status": "PASS",
+    "repositories": 17,
+    "tracked_files": 3252,
+    "doi": "10.5281/zenodo.23671480",
+    "zip_sha256": "d71f1cca40750cb4fd0cc18be76b1b9257df55ac18f87232672790c3b71c63de"
+  },
+  "negative_control": "PASS: a modified manifest SHA-256 was rejected",
+  "scientific_tests_rerun": false,
+  "individual_repository_doi_families_updated": false,
+  "note": "Independent collection covering the pinned public source snapshots; not a scientific release certification or a legal determination of priority."
+}

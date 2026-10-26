@@ -17,7 +17,13 @@ The list below describes target settings. Consult the administration status rece
 
 Public repositories remain readable and forkable. These controls protect the canonical repository; they do not prevent copies. Reuse rights remain those of the applicable existing licenses and notices.
 
-## Before the next Zenodo release
+## Published collection snapshot — 26 October 2026
+
+[Version 2026.10.26, DOI 10.5281/zenodo.23671480](https://zenodo.org/records/23671480) archives **17 public research repositories and 3,252 tracked files** at pinned commits. All seven published attachments were downloaded and matched byte for byte; every source file, Git commit object and reconstructed root tree passed verification. See [COLLECTION_ARCHIVE.md](COLLECTION_ARCHIVE.md) for exact scope, commits, checksums and the verification receipt.
+
+This independently versioned collection preserves current source snapshots and original rights/credits. It leaves the earlier per-repository DOI families unchanged. Scientific suites were not rerun for this archival operation; repository administration remains a separate, partially completed rollout.
+
+## Before the next repository-specific Zenodo release
 
 - Link each new scientific claim to its exact files, assumptions, reproduction command and current review status. Archive only work that has passed that repository's existing release gates.
 - Preserve existing archived versions. Use a new release for new content or corrections; never move an old release tag to the new commit.

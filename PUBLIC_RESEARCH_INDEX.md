@@ -1,11 +1,17 @@
 # Public research evidence index
 
+## Published collection snapshot — 26 October 2026
+
+[Version 2026.10.26, DOI 10.5281/zenodo.23671480](https://zenodo.org/records/23671480) archives **17 public research repositories and 3,252 tracked files** at pinned commits. All seven published attachments were downloaded and matched byte for byte; every source file, Git commit object and reconstructed root tree passed verification. See [COLLECTION_ARCHIVE.md](COLLECTION_ARCHIVE.md) for exact scope, commits, checksums and the verification receipt.
+
+This independently versioned collection preserves current source snapshots and original rights/credits. It leaves the earlier per-repository DOI families unchanged. Scientific suites were not rerun for this archival operation; repository administration remains a separate, partially completed rollout.
+
 [Administration and Zenodo update status](ADMINISTRATION_STATUS.md): applied controls, exact rule IDs, and remaining rollout work.
 
 This index connects **18 public repositories** to exact content snapshots and verified archive records, observed on **2026-10-26 UTC**.
 It is a map of attributable research records, not a blanket claim that every result is externally reviewed or that priority has been legally established.
 
-## Repository → exact version → archive
+## Historical baseline → exact version → earlier archive
 
 The baseline is the default-branch commit immediately before this provenance update. A version DOI covers only its archived content.
 “Not verified” means no record was verified in this audit, not that no archive exists.

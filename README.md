@@ -1,5 +1,7 @@
 # Publications
 
+> **[Published source collection — 17 repos, 3,252 files](https://zenodo.org/records/23671480)** · DOI [10.5281/zenodo.23671480](https://doi.org/10.5281/zenodo.23671480) · [Exact commits and verification](COLLECTION_ARCHIVE.md). Snapshot: 26 October 2026.
+
 > **[Public research evidence index](PUBLIC_RESEARCH_INDEX.md)** · **Research record:** [Dated snapshot, content hashes and archive links](RESEARCH_PROVENANCE.md) · [Canonical repository governance](GOVERNANCE.md). Cite the exact version used.
 
 
