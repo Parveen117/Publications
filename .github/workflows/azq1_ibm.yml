@@ -6,12 +6,14 @@ on:
         description: runner script
         default: run_azq1_ibm.py
 permissions:
-  contents: write
+  contents: read
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -25,28 +27,17 @@ jobs:
           python ${{ inputs.script }} > RUN_LOG_IBM.txt 2>&1
           echo "exit=$?" >> RUN_LOG_IBM.txt
           tail -30 RUN_LOG_IBM.txt
-      - name: upload outputs via contents API
+      - name: Preserve run outputs for owner review
         if: always()
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          for F in AZQ1_I_CERTIFICATE.json AZQ1_I2_CERTIFICATE.json AZQ1_I3_CERTIFICATE.json AZQ1_I3_PRECOMMIT.json AZQ1_I3B_CERTIFICATE.json AZQ1_I3B_PRECOMMIT.json RUN_LOG_IBM.txt; do
-            P="papers/quantum-certified-verdicts/AZQ1/$F"
-            [ -f "$F" ] || continue
-            [ -f "$P" ] || continue
-            B64=$(base64 -w0 "$P")
-            SHA=$(curl -s -H "Authorization: token $GH_TOKEN" \
-              "https://api.github.com/repos/${GITHUB_REPOSITORY}/contents/$P?ref=main" \
-              | python3 -c "import json,sys;d=json.load(sys.stdin);print(d.get('sha',''))")
-            BODY=$(python3 - "$B64" "$SHA" <<PYEOF
-          import json,sys
-          b64,sha=sys.argv[1],sys.argv[2]
-          d={"message":"AZQ1-I run outputs (as they fell)","content":b64,"branch":"main"}
-          if sha: d["sha"]=sha
-          print(json.dumps(d))
-          PYEOF
-          )
-            curl -s -X PUT -H "Authorization: token $GH_TOKEN" \
-              -d "$BODY" "https://api.github.com/repos/${GITHUB_REPOSITORY}/contents/$P" \
-              | python3 -c "import json,sys;d=json.load(sys.stdin);print('$F ->', d.get('commit',{}).get('sha', d.get('message')))"
-          done
+        uses: actions/upload-artifact@v4
+        with:
+          name: azq1-ibm-outputs-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            papers/quantum-certified-verdicts/AZQ1/AZQ1_I_CERTIFICATE.json
+            papers/quantum-certified-verdicts/AZQ1/AZQ1_I2_CERTIFICATE.json
+            papers/quantum-certified-verdicts/AZQ1/AZQ1_I3_CERTIFICATE.json
+            papers/quantum-certified-verdicts/AZQ1/AZQ1_I3_PRECOMMIT.json
+            papers/quantum-certified-verdicts/AZQ1/AZQ1_I3B_CERTIFICATE.json
+            papers/quantum-certified-verdicts/AZQ1/AZQ1_I3B_PRECOMMIT.json
+            papers/quantum-certified-verdicts/AZQ1/RUN_LOG_IBM.txt
+          if-no-files-found: warn
