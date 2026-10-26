@@ -1,5 +1,7 @@
 # Public research evidence index
 
+[Administration and Zenodo update status](ADMINISTRATION_STATUS.md): applied controls, exact rule IDs, and remaining rollout work.
+
 This index connects **18 public repositories** to exact content snapshots and verified archive records, observed on **2026-10-26 UTC**.
 It is a map of attributable research records, not a blanket claim that every result is externally reviewed or that priority has been legally established.
 

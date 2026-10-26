@@ -1,0 +1,738 @@
+{
+  "schema_version": 1,
+  "observed_date_utc": "2026-10-26",
+  "receipt_prepared_at_utc": "2026-10-26T16:19:38.309694+00:00",
+  "scope": "The 18 listed public repositories only. No private repository publication or permission change.",
+  "completion": "partial",
+  "new_rulesets_created": 9,
+  "preexisting_rulesets_preserved": [
+    20662589
+  ],
+  "future_release_immutability_enabled_and_reloaded": [
+    "Artificial-intelligence",
+    "Publications",
+    "Quantum-Classical-public",
+    "quantum-classical-provisional"
+  ],
+  "repositories": [
+    {
+      "repository": "Parveen117/Artificial-intelligence",
+      "default_branch": "main",
+      "rulesets": [
+        {
+          "id": 25894272,
+          "name": "Preserve canonical branch history",
+          "target": "branch",
+          "source_type": "Repository",
+          "source": "Parveen117/Artificial-intelligence",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~DEFAULT_BRANCH"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5Kd3tuzgGLHYA",
+          "created_at": "2026-10-26T21:36:50.479+05:30",
+          "updated_at": "2026-10-26T21:36:50.503+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/Artificial-intelligence/rulesets/25894272"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/Artificial-intelligence/rules/25894272"
+            }
+          }
+        },
+        {
+          "id": 25894317,
+          "name": "Preserve published tag snapshots",
+          "target": "tag",
+          "source_type": "Repository",
+          "source": "Parveen117/Artificial-intelligence",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~ALL"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            },
+            {
+              "type": "update"
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5Kd3tuzgGLHa0",
+          "created_at": "2026-10-26T21:37:34.299+05:30",
+          "updated_at": "2026-10-26T21:37:34.334+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/Artificial-intelligence/rulesets/25894317"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/Artificial-intelligence/rules/25894317"
+            }
+          }
+        }
+      ],
+      "future_release_immutability": {
+        "enabled": true,
+        "verification": "fresh authenticated GitHub Settings page"
+      },
+      "human_collaborator_audit": {
+        "count": 0,
+        "invited_collaborators": false,
+        "verification": "authenticated Manage access page"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/quantum-classical-provisional",
+      "default_branch": "master",
+      "rulesets": [
+        {
+          "id": 25893756,
+          "name": "Preserve canonical branch history",
+          "target": "branch",
+          "source_type": "Repository",
+          "source": "Parveen117/quantum-classical-provisional",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~DEFAULT_BRANCH"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5KtponzgGLG3w",
+          "created_at": "2026-10-26T21:29:26.515+05:30",
+          "updated_at": "2026-10-26T21:29:26.540+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/quantum-classical-provisional/rulesets/25893756"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/quantum-classical-provisional/rules/25893756"
+            }
+          }
+        },
+        {
+          "id": 25894113,
+          "name": "Preserve published tag snapshots",
+          "target": "tag",
+          "source_type": "Repository",
+          "source": "Parveen117/quantum-classical-provisional",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~ALL"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            },
+            {
+              "type": "update"
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5KtponzgGLHOE",
+          "created_at": "2026-10-26T21:33:46.411+05:30",
+          "updated_at": "2026-10-26T21:33:46.461+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/quantum-classical-provisional/rulesets/25894113"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/quantum-classical-provisional/rules/25894113"
+            }
+          }
+        }
+      ],
+      "future_release_immutability": {
+        "enabled": true,
+        "verification": "fresh authenticated GitHub Settings page"
+      },
+      "human_collaborator_audit": {
+        "count": 0,
+        "invited_collaborators": false,
+        "verification": "authenticated Manage access page"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Cryptography-Recognition-Ledger-Systems",
+      "default_branch": "main",
+      "rulesets": [
+        {
+          "id": 25894526,
+          "name": "Preserve canonical branch history",
+          "target": "branch",
+          "source_type": "Repository",
+          "source": "Parveen117/Cryptography-Recognition-Ledger-Systems",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~DEFAULT_BRANCH"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5NS_iFzgGLHn4",
+          "created_at": "2026-10-26T21:40:30.900+05:30",
+          "updated_at": "2026-10-26T21:40:30.940+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/Cryptography-Recognition-Ledger-Systems/rulesets/25894526"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/Cryptography-Recognition-Ledger-Systems/rules/25894526"
+            }
+          }
+        }
+      ],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/IEL-Information-Entropy-Ledger",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Atomic-validation-public",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/EMK-material-response-public",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Quantum-Classical-public",
+      "default_branch": "main",
+      "rulesets": [
+        {
+          "id": 25891525,
+          "name": "Preserve canonical branch history",
+          "target": "branch",
+          "source_type": "Repository",
+          "source": "Parveen117/Quantum-Classical-public",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~DEFAULT_BRANCH"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5NhoSzzgGLEsU",
+          "created_at": "2026-10-26T21:00:25.111+05:30",
+          "updated_at": "2026-10-26T21:00:25.147+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/Quantum-Classical-public/rulesets/25891525"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/Quantum-Classical-public/rules/25891525"
+            }
+          }
+        },
+        {
+          "id": 25893094,
+          "name": "Preserve published tag snapshots",
+          "target": "tag",
+          "source_type": "Repository",
+          "source": "Parveen117/Quantum-Classical-public",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~ALL"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            },
+            {
+              "type": "update"
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5NhoSzzgGLGOY",
+          "created_at": "2026-10-26T21:20:50.435+05:30",
+          "updated_at": "2026-10-26T21:20:50.499+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/Quantum-Classical-public/rulesets/25893094"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/Quantum-Classical-public/rules/25893094"
+            }
+          }
+        }
+      ],
+      "future_release_immutability": {
+        "enabled": true,
+        "verification": "fresh authenticated GitHub Settings page"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/ECL-pulic",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/recognition-seam-calculus",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Publications",
+      "default_branch": "main",
+      "rulesets": [
+        {
+          "id": 25890100,
+          "name": "Preserve canonical branch history",
+          "target": "branch",
+          "source_type": "Repository",
+          "source": "Parveen117/Publications",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~DEFAULT_BRANCH"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5ObRcezgGLDTQ",
+          "created_at": "2026-10-26T20:41:02.318+05:30",
+          "updated_at": "2026-10-26T20:41:02.351+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/Publications/rulesets/25890100"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/Publications/rules/25890100"
+            }
+          }
+        },
+        {
+          "id": 25890492,
+          "name": "Preserve published tag snapshots",
+          "target": "tag",
+          "source_type": "Repository",
+          "source": "Parveen117/Publications",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~ALL"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            },
+            {
+              "type": "update"
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5ObRcezgGLDrw",
+          "created_at": "2026-10-26T20:45:42.314+05:30",
+          "updated_at": "2026-10-26T20:45:42.345+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/Publications/rulesets/25890492"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/Publications/rules/25890492"
+            }
+          }
+        }
+      ],
+      "future_release_immutability": {
+        "enabled": true,
+        "verification": "fresh authenticated GitHub Settings page"
+      },
+      "human_collaborator_audit": {
+        "count": 0,
+        "invited_collaborators": false,
+        "verification": "authenticated Manage access page"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Thermodynamics-Reproducibility",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Red-team-Challenge",
+      "default_branch": "main",
+      "rulesets": [
+        {
+          "id": 20662589,
+          "name": "Red-Team Main Protection",
+          "target": "branch",
+          "source_type": "Repository",
+          "source": "Parveen117/Red-team-Challenge",
+          "enforcement": "active",
+          "conditions": {
+            "ref_name": {
+              "exclude": [],
+              "include": [
+                "~DEFAULT_BRANCH"
+              ]
+            }
+          },
+          "rules": [
+            {
+              "type": "deletion"
+            },
+            {
+              "type": "non_fast_forward"
+            },
+            {
+              "type": "pull_request",
+              "parameters": {
+                "required_approving_review_count": 0,
+                "dismiss_stale_reviews_on_push": false,
+                "required_reviewers": [],
+                "require_code_owner_review": false,
+                "require_last_push_approval": false,
+                "required_review_thread_resolution": false,
+                "require_extra_approval_for_unattributed_changes": true,
+                "allowed_merge_methods": [
+                  "merge",
+                  "squash",
+                  "rebase"
+                ]
+              }
+            },
+            {
+              "type": "required_status_checks",
+              "parameters": {
+                "strict_required_status_checks_policy": false,
+                "do_not_enforce_on_create": false,
+                "required_status_checks": [
+                  {
+                    "context": "challenge (3.11)",
+                    "integration_id": 15368
+                  },
+                  {
+                    "context": "challenge (3.12)",
+                    "integration_id": 15368
+                  }
+                ]
+              }
+            }
+          ],
+          "node_id": "RRS_lACqUmVwb3NpdG9yec5PIbj0zgE7ST0",
+          "created_at": "2026-08-11T01:12:08.018+05:30",
+          "updated_at": "2026-08-11T01:27:57.834+05:30",
+          "bypass_actors": [],
+          "current_user_can_bypass": "never",
+          "_links": {
+            "self": {
+              "href": "https://api.github.com/repos/Parveen117/Red-team-Challenge/rulesets/20662589"
+            },
+            "html": {
+              "href": "https://github.com/Parveen117/Red-team-Challenge/rules/20662589"
+            }
+          }
+        }
+      ],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/RNKE-GATE",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Bio-tech",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Energy",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    },
+    {
+      "repository": "Parveen117/Parveen117",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": false
+    },
+    {
+      "repository": "Parveen117/extra-ideas",
+      "default_branch": "main",
+      "rulesets": [],
+      "future_release_immutability": {
+        "enabled": null,
+        "verification": "not applied or re-audited in this administration pass"
+      },
+      "human_collaborator_audit": {
+        "count": null,
+        "verification": "pending"
+      },
+      "zenodo_auto_archive_enabled": true
+    }
+  ],
+  "zenodo": {
+    "integration_verified_after_reload": true,
+    "enabled_research_repository_count": 17,
+    "changed_integration": {
+      "repository": "Parveen117/quantum-classical-provisional",
+      "before": false,
+      "after": true
+    },
+    "profile_repository": {
+      "repository": "Parveen117/Parveen117",
+      "enabled": false,
+      "changed": false
+    },
+    "updated_record": {
+      "id": 22164767,
+      "doi": "10.5281/zenodo.22164767",
+      "url": "https://zenodo.org/records/22164767",
+      "metadata_fields_changed": [
+        "notes"
+      ],
+      "updated_at_utc": "2026-10-26T15:46:25.514059+00:00",
+      "original_publication_date": "2026-07-29",
+      "version": "v3.3",
+      "files_unchanged": true,
+      "file_receipts": [
+        {
+          "key": "Parveen117/Publications-v3.3.zip",
+          "size": 8899264,
+          "checksum": "md5:377ba514501a624aa28aa25a38fbc4f3"
+        }
+      ],
+      "notes": "<p>Provenance note added 2026-10-26. This DOI continues to identify the original v3.3 archive. The public evidence index records repository baseline commits, file SHA-256 inventories, and checks of archived release files: https://github.com/Parveen117/Publications/blob/8101092ded133333a6c96a9fd5883631149cd600/PUBLIC_RESEARCH_INDEX.md . The corresponding repository manifest is https://github.com/Parveen117/Publications/blob/8101092ded133333a6c96a9fd5883631149cd600/RESEARCH_PROVENANCE.md . These provenance records document content and traceability; they do not establish peer review, scientific correctness, or legal priority.</p>"
+    },
+    "new_doi_or_archive_created": false
+  },
+  "remaining": [
+    "Complete branch/tag/release controls where the per-repository table has no verified completion.",
+    "Complete collaborator, invitation, app, deploy-key and workflow-setting administration audits; do not infer owner-only access from CODEOWNERS.",
+    "Resolve citation and rights metadata for the intended next release before publishing a new archive.",
+    "Create and verify any new release/archive only after its existing scientific release gates pass."
+  ],
+  "execution_limit": "Repeated browser Runtime.evaluate, Input.dispatchMouseEvent and accessibility timeouts interrupted the remaining rollout. No completion is inferred from an attempted action."
+}
