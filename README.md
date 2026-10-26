@@ -1,5 +1,8 @@
 # Publications
 
+> **[Public research evidence index](PUBLIC_RESEARCH_INDEX.md)** · **Research record:** [Dated snapshot, content hashes and archive links](RESEARCH_PROVENANCE.md) · [Canonical repository governance](GOVERNANCE.md). Cite the exact version used.
+
+
 Latest observation theorem: [CID-D3 — recover the information–curvature coupling ratio](papers/native-coupling-reconstruction/README.md)
 proves that the symmetric helical protocol sees only `alpha+2 beta`, even
 with full transport memory. A calibrated control deformation removes this
