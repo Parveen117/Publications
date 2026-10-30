@@ -1,5 +1,9 @@
 # Research closure ledger
 
+## 30 October 2026: nonuniform geometry in a declared two-window sector
+
+[Two-window geometric readout](papers/native-nonuniform-geometric-readout/THEOREM.md): written construction conditional on LMD, with a stated Gaussian shape filter and cone Fourier POVM. The joint unsharp readout reconstructs an outcome coframe with global P feedback; its constant-plus-cosine density pulse law is exact and its bounded-reading classical limit recovers that nonconstant conjugate sector. A source witness proves the old global ratio misses genuine circumference change. Sixteen native rational checks and five negative controls validate finite diagnostics only. The full local inverse, compatible refinement, arbitrary material-flow covariance, finite-mean length domains, apparatus, curvature and 3+1 gravity remain open. No new NRQC execution or continuum simulation is claimed. Frozen predecessor packets are unchanged.
+
 ## 30 October 2026: endogenous global-angle POVM
 
 [Radial geometric readout](papers/native-radial-geometric-readout/THEOREM.md): constructed on the existing positive LMD space with a stated ideal Fourier-compression POVM. Written derivation supplies radial factorization, phase-sensitive geometry probabilities, material-flow covariance, uniform-probe pulse evolution and the constant-y source classical limit. The standard half-line sharp-ratio obstruction is reused, not claimed as new. A supplied global angle is replaced by a state-dependent outcome; the measurement choice remains an assumption. The analytic Cauchy witness has infinite raw mean length. Local angle reconstruction, nonuniform-pulse geometry, a finite-mean length domain, local apparatus, spacetime curvature and 3+1 gravity remain open. No new execution or certificate replay accompanies this packet.

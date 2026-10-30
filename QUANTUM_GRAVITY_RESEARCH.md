@@ -1,5 +1,11 @@
 # Quantum gravity: canonical research record
 
+## 30 October 2026: a nonuniform two-window geometry readout
+
+[Nonuniform geometric readout](papers/native-nonuniform-geometric-readout/THEOREM.md) derives the old radial POVM's exact shape-dependent response to an arbitrary density pulse, then constructs a different normalized joint POVM resolving a constant and a cosine conjugate coefficient on the same LMD space. A Gaussian reading of the density-shape coefficient supplies the compatible unsharp configuration information. The outcome coframe retains the original global P feedback. Exact pulse translation and a localized classical-limit argument recover genuinely nonconstant source profiles in span{1,cos(2 pi z)}, with arbitrary smooth positive classical density.
+
+The source witness has zero radial-average shift but strictly increased circumference for every nonzero cosine pulse; locally L(beta)=1+9 beta^2/16+27 beta^4/1024+O(beta^6). Dropping P feedback gives the wrong quadratic coefficient. Sixteen native exact finite checks and five negative controls pass; they check source expansions and algebra, not the continuum POVM. The measurement and its resolution are explicit additional choices. Arbitrary-profile refinement, compatibility across resolutions and all-material-flow covariance remain the next obligations; raw finite-mean length, apparatus, pointwise metric, spacetime curvature and 3+1 gravity are not established. The previous NRQC pilot is unchanged; this packet does not execute the new POVM in the calculator.
+
 ## 30 October 2026: state-dependent radial angle and geometry readout
 
 [Radial geometric readout](papers/native-radial-geometric-readout/THEOREM.md) factors the existing positive LMD space by total Wick mass and normalized shape. The total affine conjugate D(1) becomes the half-line dilation generator; its symmetrized mass ratio has the known unequal-deficiency obstruction to a sharp self-adjoint realization. A stated zero-extension/Fourier POVM supplies a normalized global angle reading instead. Its coframe law distinguishes phases invisible to density-only measurements, is covariant under the existing material flows, has the exact uniform-density-pulse shift, and recovers the original constant-y source geometry in the bounded-reading classical limit.

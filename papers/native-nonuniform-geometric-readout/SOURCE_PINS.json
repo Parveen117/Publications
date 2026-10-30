@@ -1,0 +1,33 @@
+{
+  "parent": "3b487951ccf5c4939a8c0249b435c904f47fedfe",
+  "sources": {
+    "papers/native-logarithmic-material-density/THEOREM.md": {
+      "git_blob": "3d1e7627083a5b9806add989d72b3277c706265f",
+      "sha256": "f22d8bdbe771add46809f155085f62db015a9d3b349eea391a412e3d82c546bf"
+    },
+    "papers/native-material-profile-quantization/THEOREM.md": {
+      "git_blob": "9d30dad27bb83fe5c534643a4f08ac1e94a055fb",
+      "sha256": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0"
+    },
+    "papers/native-resolved-material-geometry/THEOREM.md": {
+      "git_blob": "bece2c5a79584515a3a17851ca9178e7fb8d3ce3",
+      "sha256": "290f90dd010493aee033349c125354bb99a4e1aa0edd3ee034fed4db13326f20"
+    },
+    "papers/native-radial-geometric-readout/THEOREM.md": {
+      "git_blob": "5b6720e38e9514be490396a22ecc34cc15d041fe",
+      "sha256": "be3585b532d514ddcbff446a2ef55b95b8f59e5f333a70ee8647e85569417393"
+    },
+    "papers/native-nrqc-gravity-bridge/BOUNDED_COFRAME.md": {
+      "git_blob": "7f76c8239bd67f012ec1568fe11168d6123608b3",
+      "sha256": "bdbf94958f44fa9cd095b2e82a0e736855f1b5e30a2b4bf2bad549a44f45a0f0"
+    },
+    "papers/native-common-cone-limit/native_engine/native_operator.cjs": {
+      "git_blob": "7b188defee82aa0edafc586eb3091baf0ceb6900",
+      "sha256": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+    }
+  },
+  "new_executables": {
+    "papers/native-nonuniform-geometric-readout/verify_source.cjs": "ae63f278b7e9553fa1cfdf03e7176353a4ed1858571149d2ae786922e3ac878f",
+    "papers/native-nonuniform-geometric-readout/run_validation.py": "7c08772a474e243587118d74c2b242e56bf57556d57eb6faeb5d79247c2f67b5"
+  }
+}

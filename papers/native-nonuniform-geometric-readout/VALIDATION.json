@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "author": "Monty",
+  "date": "2026-10-30",
+  "scope": "finite rational source jets and selected algebraic diagnostics; no continuum POVM execution",
+  "arithmetic": "unchanged native-common-cone-limit/native_engine/native_operator.cjs F and matrix operations",
+  "truncation_order": 6,
+  "checks": 16,
+  "negative_controls": 5,
+  "check_names": [
+    "inverse_chart_ODE_coefficients_through_degree_5",
+    "Theta_first_derivative_3_over_2",
+    "Theta_second_derivative_zero",
+    "Theta_third_derivative_minus_9_over_8",
+    "Theta_fifth_derivative_189_over_32",
+    "inverse_a_product_is_one",
+    "independent_half_angle_solution_checks_inverse_a",
+    "circle_moments_0_2_4_6",
+    "source_P_quadratic_coefficient_1_over_8",
+    "source_L_quadratic_coefficient_9_over_16",
+    "source_length_even_through_degree_6",
+    "independent_second_derivative_matches_jet",
+    "coframe_cosine_linear_response_3_over_4",
+    "two_window_projection_recovers_constant_and_cosine",
+    "radial_average_misses_nonzero_cosine_profile",
+    "second_harmonic_has_zero_two_window_projection"
+  ],
+  "negative_control_names": [
+    "freezing_global_P_changes_quadratic_length",
+    "radial_only_prediction_L_equals_1_fails",
+    "using_affine_D_as_canonical_p_fails",
+    "reversing_pulse_sign_reverses_detectable_harmonic",
+    "omitting_removed_cosine_Wick_variance_detected"
+  ],
+  "coefficients": {
+    "Theta": [
+      "0",
+      "3/2",
+      "0",
+      "-3/16",
+      "0",
+      "63/1280",
+      "0"
+    ],
+    "P": [
+      "2/3",
+      "0",
+      "1/8",
+      "0",
+      "-3/512",
+      "0",
+      "1/8192"
+    ],
+    "length": [
+      "1",
+      "0",
+      "9/16",
+      "0",
+      "27/1024",
+      "0",
+      "-261/16384"
+    ],
+    "coframe_cosine_reading": [
+      "0",
+      "3/4",
+      "0",
+      "27/128",
+      "0",
+      "-63/2048",
+      "0"
+    ]
+  },
+  "independently_derived_length_second_derivative": "9/8",
+  "omitted_global_feedback_quadratic": "3/4",
+  "remainder_bound_proved_by_execution": false,
+  "continuum_theorems_proved_by_execution": false,
+  "quantum_expected_length_computed": false,
+  "nrqc_executed": false,
+  "hardware_executed": false
+}
