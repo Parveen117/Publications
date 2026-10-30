@@ -1,5 +1,10 @@
 # Research closure ledger
 
+## 30 October 2026: bounded coframe contract and executed moment encoding
+
+- [Prescribed-angle normalized coframe](papers/native-nrqc-gravity-bridge/BOUNDED_COFRAME.md): constructed as a bounded multiplication reading with covariance of the calibrated family, strong cutoff convergence and the correct source classical limit, conditional on LMD. Circumference has explicit bounds set by the supplied smooth angle profile; its constant-profile case has fixed total length. It is a stated readout contract, not a construction of the quantum conjugate angle, a derived length scale or spacetime curvature.
+- [NRQC covariance pilot](papers/native-nrqc-gravity-bridge/EXECUTABLE_PILOT.md): 44 finite checks and 12 negative controls pass for three source points, four finite states and two backends. Error to the LMD vacuum moments is bounded entrywise by 10^-5. Other finite states only test the adapter. No continuum dynamics, implementation of the coframe readout, memory advantage or computational speed advantage is established.
+
 ## 30 October 2026: NRQC feasibility result
 
 The [analytic current–density bridge](papers/native-nrqc-gravity-bridge/ANALYTIC_BRIDGE.md) derives the vacuum covariance of one specified LMD current/window pair. Its finite-h complex rank is 2; a single pure qubit can reproduce only the leading limiting tensor. A three-level moment representation is explicit, but its continuum coefficients and weighted controls are not a completed NRQC gravity adapter. Status: written conditional derivation; no new execution, performance advantage, physical identification or geometric-reconstruction closure. Frozen closure decisions below are unchanged.

@@ -1,0 +1,108 @@
+{
+  "nrqc_commit": "fdd39048a6ddaa2dd78aa3197c274d7766f31a0e",
+  "python": "3.12.14",
+  "node": "v24.22.1",
+  "source_sha256": {
+    "source_interval.cjs": "5a35334b44714ab723126389fa61a50ac2dbbf94adf550c0e3dba2c0913b8751",
+    "verify_pilot.cjs": "8cbf4455c87874590589b2a4782c3a948e8be0ea85d98e6ac3c19bbbfd77a196",
+    "run_pilot.py": "769db7687bdf1056c44fbe0cd3f0ea91a9005a35650f743069efee1f1518ec2d",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+  },
+  "execution": [
+    {
+      "state": "vacuum",
+      "backend": "stabilizer",
+      "command_wall_seconds": 0.4204281819984317
+    },
+    {
+      "state": "vacuum",
+      "backend": "observer",
+      "command_wall_seconds": 0.4718220630002179
+    },
+    {
+      "state": "flipped",
+      "backend": "stabilizer",
+      "command_wall_seconds": 0.46277290800026094
+    },
+    {
+      "state": "flipped",
+      "backend": "observer",
+      "command_wall_seconds": 0.40463186600027257
+    },
+    {
+      "state": "bell",
+      "backend": "stabilizer",
+      "command_wall_seconds": 0.4288475360008306
+    },
+    {
+      "state": "bell",
+      "backend": "observer",
+      "command_wall_seconds": 0.4467492100011441
+    },
+    {
+      "state": "complex_product",
+      "backend": "stabilizer",
+      "command_wall_seconds": 0.3996676229999139
+    },
+    {
+      "state": "complex_product",
+      "backend": "observer",
+      "command_wall_seconds": 0.45316244599962374
+    }
+  ],
+  "timings": [
+    {
+      "repeat": 0,
+      "engine": "native",
+      "wall_seconds": 0.15084672400007548
+    },
+    {
+      "repeat": 0,
+      "engine": "nrqc",
+      "wall_seconds": 0.49790219199894636
+    },
+    {
+      "repeat": 1,
+      "engine": "nrqc",
+      "wall_seconds": 0.45045862199913245
+    },
+    {
+      "repeat": 1,
+      "engine": "native",
+      "wall_seconds": 0.1252044510001724
+    },
+    {
+      "repeat": 2,
+      "engine": "native",
+      "wall_seconds": 0.14895658000023104
+    },
+    {
+      "repeat": 2,
+      "engine": "nrqc",
+      "wall_seconds": 0.5028515560006781
+    },
+    {
+      "repeat": 3,
+      "engine": "nrqc",
+      "wall_seconds": 0.5020047380003234
+    },
+    {
+      "repeat": 3,
+      "engine": "native",
+      "wall_seconds": 0.24609119900014775
+    },
+    {
+      "repeat": 4,
+      "engine": "native",
+      "wall_seconds": 0.1487406309988728
+    },
+    {
+      "repeat": 4,
+      "engine": "nrqc",
+      "wall_seconds": 0.44500279600106296
+    }
+  ],
+  "timing_boundary": "cold local subprocess wall time; shared continuum preparation excluded from both; NRQC weighted assembly measured separately; no scaling inference",
+  "memory_comparison": "not measured; no memory advantage claim",
+  "hardware_called": false
+}

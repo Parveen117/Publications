@@ -1,5 +1,11 @@
 # Quantum gravity: canonical research record
 
+## 30 October 2026: executed NRQC pilot and a restricted bounded coframe
+
+The [executable pilot](papers/native-nrqc-gravity-bridge/EXECUTABLE_PILOT.md) now evaluates the previous current–density bridge. The remaining density variance has a closed gamma-function expression with native rational enclosures. At dimensionless h=1/4,1/2,3/4, two unchanged NRQC backends match independent finite matrices; 44 checks and 12 negative controls pass. The finite tensor's entrywise source error is bounded by 10^-5. This is a supplied-moment encoding, not a continuum dynamics solver. The small cold-process comparison favors the direct native baseline; no computational advantage is established.
+
+[BOUNDED_COFRAME.md](papers/native-nrqc-gravity-bridge/BOUNDED_COFRAME.md) separately constructs a bounded normalized-measure coframe on the existing LMD space for a prescribed smooth angle profile. It has a strong cutoff limit, a stated flow covariance of the calibrated family and the correct source classical limit. Circumference lies between exp(min theta) and exp(max theta); for a constant profile it is the selected exp(theta0). The quantum angle is not reconstructed from the conjugate distribution. The covariance pilot does not simulate this new normalized-measure observable. Next: quantitative state/measure preparation and cutoff errors for that reading, or a justified construction of the endogenous conjugate geometry. The original 3+1 gate remains open.
+
 ## 30 October 2026: analytic NRQC comparison
 
 [Current–density covariance bridge](papers/native-nrqc-gravity-bridge/ANALYTIC_BRIDGE.md) derives a two-direction response tensor from the frozen LMD operators, including its signed cross term and a strict finite-h determinant bound. A single pure qubit matches the leading semiclassical tensor but cannot match the finite-h complex rank. An explicit three-level/two-qubit moment representation is given; it supplies no full operator or dynamics equivalence. This is a written derivation conditional on LMD, with no new calculator run, certificate replay or performance claim. Original geometric-observable reconstruction and 3+1 gravity remain open. The prior results below are preserved.

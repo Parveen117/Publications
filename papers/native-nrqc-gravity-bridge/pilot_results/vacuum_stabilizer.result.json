@@ -1,0 +1,2248 @@
+{
+  "answers": [
+    {
+      "algebraically_exact": true,
+      "execution_seconds": 0.01585519099899102,
+      "geometry": {
+        "complex_gram_rank": 2,
+        "contract": "CID-D2 finite rank-one cut; B_a=-i H_a; X_a=[B_a,P]",
+        "curvature": [
+          [
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ],
+          [
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ],
+          [
+            {
+              "decimal": "-1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "-1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "-1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "-1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "-1"
+            },
+            {
+              "decimal": "-1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "-1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "-1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "-1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "-1"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ],
+          [
+            {
+              "decimal": "-1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "-1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "-1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "-1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "-1"
+            },
+            {
+              "decimal": "-1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "-1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "-1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "-1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "-1"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ],
+          [
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ],
+          [
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ]
+        ],
+        "dependencies": {
+          "basis_indices": [
+            0,
+            2,
+            4
+          ],
+          "coordinates": [
+            [
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              }
+            ],
+            [
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              }
+            ],
+            [
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              }
+            ]
+          ],
+          "full_tensor_reconstruction_exact": true,
+          "nullspace": [
+            [
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "-1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              }
+            ],
+            [
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "-1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              }
+            ],
+            [
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "-1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              }
+            ]
+          ]
+        },
+        "history_scope": "Circuit retained in request; final-cut tensor does not reconstruct transport history",
+        "means": [
+          {
+            "decimal": "0.0000000000000",
+            "decimal_enclosure": {
+              "lower": "0.000000000000",
+              "maximum_absolute_display_error": "0",
+              "method": "integer-square-root bounds and outward rational rounding",
+              "upper": "0.000000000000"
+            },
+            "exact": {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            "expression": "0"
+          },
+          {
+            "decimal": "0.0000000000000",
+            "decimal_enclosure": {
+              "lower": "0.000000000000",
+              "maximum_absolute_display_error": "0",
+              "method": "integer-square-root bounds and outward rational rounding",
+              "upper": "0.000000000000"
+            },
+            "exact": {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            "expression": "0"
+          },
+          {
+            "decimal": "0.0000000000000",
+            "decimal_enclosure": {
+              "lower": "0.000000000000",
+              "maximum_absolute_display_error": "0",
+              "method": "integer-square-root bounds and outward rational rounding",
+              "upper": "0.000000000000"
+            },
+            "exact": {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            "expression": "0"
+          },
+          {
+            "decimal": "0.0000000000000",
+            "decimal_enclosure": {
+              "lower": "0.000000000000",
+              "maximum_absolute_display_error": "0",
+              "method": "integer-square-root bounds and outward rational rounding",
+              "upper": "0.000000000000"
+            },
+            "exact": {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            "expression": "0"
+          },
+          {
+            "decimal": "0.0000000000000",
+            "decimal_enclosure": {
+              "lower": "0.000000000000",
+              "maximum_absolute_display_error": "0",
+              "method": "integer-square-root bounds and outward rational rounding",
+              "upper": "0.000000000000"
+            },
+            "exact": {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            "expression": "0"
+          },
+          {
+            "decimal": "0.0000000000000",
+            "decimal_enclosure": {
+              "lower": "0.000000000000",
+              "maximum_absolute_display_error": "0",
+              "method": "integer-square-root bounds and outward rational rounding",
+              "upper": "0.000000000000"
+            },
+            "exact": {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            "expression": "0"
+          }
+        ],
+        "metric": [
+          [
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ],
+          [
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ],
+          [
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ],
+          [
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            }
+          ],
+          [
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            }
+          ],
+          [
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "0.0000000000000",
+              "decimal_enclosure": {
+                "lower": "0.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "0.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "0",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "0"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            },
+            {
+              "decimal": "1.0000000000000",
+              "decimal_enclosure": {
+                "lower": "1.000000000000",
+                "maximum_absolute_display_error": "0",
+                "method": "integer-square-root bounds and outward rational rounding",
+                "upper": "1.000000000000"
+              },
+              "exact": {
+                "basis": "1,sqrt(2),i,i*sqrt(2)",
+                "coefficients": [
+                  "1",
+                  "0",
+                  "0",
+                  "0"
+                ]
+              },
+              "expression": "1"
+            }
+          ]
+        ],
+        "real_tangent_rank": 3,
+        "scalar_evaluations": 13,
+        "tensor": [
+          [
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "1",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "1",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          ],
+          [
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "1",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "1",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          ],
+          [
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "-1",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "-1",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          ],
+          [
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "-1",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "-1",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          ],
+          [
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          ],
+          [
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "basis": "1,sqrt(2),i,i*sqrt(2)",
+              "coefficients": [
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          ]
+        ]
+      },
+      "id": "pauli_basis",
+      "kind": "geometry",
+      "statistics": {
+        "completed_scalar_evaluations": 13,
+        "maxima": {
+          "max_coefficient_bits": 1,
+          "peak_generators": 0,
+          "peak_terms": 1
+        },
+        "work_totals": {
+          "row_products": 0,
+          "term_visits": 0
+        }
+      },
+      "status": "completed"
+    }
+  ],
+  "backend": "stabilizer",
+  "circuit_sha256": "c763f80116d744a719705c65e8f4cd3b72d6e6d069c4912920557648c51c3a30",
+  "evidence_class": "LOCAL_IDEAL_CALCULATION",
+  "execution_seconds": 0.01593909000075655,
+  "gates": 0,
+  "hardware_job_id": null,
+  "input_state": "all_zero",
+  "limits_per_scalar_evaluation": {
+    "max_coefficient_bits": 4096,
+    "max_generators": 2056,
+    "max_work": 10000000
+  },
+  "n_qubits": 2,
+  "peak_worker_rss_bytes": 24670208,
+  "peak_worker_rss_source": "Linux /proc/self/status VmHWM, including imports/setup",
+  "request_sha256": "7c6886c4bde15bfdff98d3cae66f2135f065a9db24b66020fe8f4876c9372b32",
+  "schema": "nrqc-calculator-result-v1",
+  "status": "completed",
+  "timeout_seconds": 20.0,
+  "wall_seconds": 0.22053340499951446
+}
