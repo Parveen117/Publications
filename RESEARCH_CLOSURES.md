@@ -1,5 +1,9 @@
 # Research closure ledger
 
+## 30 October 2026: refinement obstruction and ordered source recovery
+
+[Geometry refinement and dynamics](papers/native-geometry-refinement-dynamics/THEOREM.md): exact refinement of the complete sharp-residual records is obstructed for the stated finite-mode measurement family. Compatibility of geometry-only marginals remains unresolved. Every finite Fourier family has a normalized measurement and an exact bounded-length derivative under resolved density pulses, with the original P feedback. Arbitrary smooth source profiles and prescribed pulse evolution are recovered in the ordered classical-then-refinement limit. Fixed-h continuum geometry, all-material-flow covariance, finite-mean length domains, local apparatus and autonomous gravitational/3+1 dynamics remain open. Status: written conditional derivations only; no new numerical execution or certificate replay. The existing CMG common-parent construction is a credited different-representation precedent, not a new LMD closure.
+
 ## 30 October 2026: nonuniform geometry in a declared two-window sector
 
 [Two-window geometric readout](papers/native-nonuniform-geometric-readout/THEOREM.md): written construction conditional on LMD, with a stated Gaussian shape filter and cone Fourier POVM. The joint unsharp readout reconstructs an outcome coframe with global P feedback; its constant-plus-cosine density pulse law is exact and its bounded-reading classical limit recovers that nonconstant conjugate sector. A source witness proves the old global ratio misses genuine circumference change. Sixteen native rational checks and five negative controls validate finite diagnostics only. The full local inverse, compatible refinement, arbitrary material-flow covariance, finite-mean length domains, apparatus, curvature and 3+1 gravity remain open. No new NRQC execution or continuum simulation is claimed. Frozen predecessor packets are unchanged.

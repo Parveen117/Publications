@@ -1,5 +1,11 @@
 # Quantum gravity: canonical research record
 
+## 30 October 2026: refinement boundary and bounded source dynamics
+
+[Geometry refinement and dynamics](papers/native-geometry-refinement-dynamics/THEOREM.md) resolves the next complete-record consistency test. The predecessor's sharp residual configuration record prevents exact joint refinement when a conjugate mode is added; an explicit Gaussian-overlap translation operator proves the conflict using the standard sharp-marginal commutation criterion. This is a limitation of that measurement prescription, not a no-go for quantum geometry or even for its coframe-only marginals.
+
+The same packet extends the mass-chart POVM to every finite Fourier family and derives an exact operator-norm evolution equation for the bounded length reading L/(1+L) under density pulses in the resolved span. The original global P feedback is included. Arbitrary smooth source profiles and prescribed smooth pulse orbits are recovered by taking h->0 first and then refining the Fourier family, with an explicit nonlinear coframe stability bound. These written results do not give a fixed-h quantum continuum, a joint quantum trajectory, autonomous gravitational dynamics or 3+1 gravity. No numerical calculation, certificate replay or new NRQC execution accompanies the packet. The next design requirement is a common noisy parent without sharp residual/conjugate conflict, or a proof for the geometry-only marginals; the older CMG parent in MPQ is credited but not silently transferred to LMD.
+
 ## 30 October 2026: a nonuniform two-window geometry readout
 
 [Nonuniform geometric readout](papers/native-nonuniform-geometric-readout/THEOREM.md) derives the old radial POVM's exact shape-dependent response to an arbitrary density pulse, then constructs a different normalized joint POVM resolving a constant and a cosine conjugate coefficient on the same LMD space. A Gaussian reading of the density-shape coefficient supplies the compatible unsharp configuration information. The outcome coframe retains the original global P feedback. Exact pulse translation and a localized classical-limit argument recover genuinely nonconstant source profiles in span{1,cos(2 pi z)}, with arbitrary smooth positive classical density.
