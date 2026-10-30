@@ -1,5 +1,11 @@
 # Quantum gravity: canonical research record
 
+## 30 October 2026: state-dependent radial angle and geometry readout
+
+[Radial geometric readout](papers/native-radial-geometric-readout/THEOREM.md) factors the existing positive LMD space by total Wick mass and normalized shape. The total affine conjugate D(1) becomes the half-line dilation generator; its symmetrized mass ratio has the known unequal-deficiency obstruction to a sharp self-adjoint realization. A stated zero-extension/Fourier POVM supplies a normalized global angle reading instead. Its coframe law distinguishes phases invisible to density-only measurements, is covariant under the existing material flows, has the exact uniform-density-pulse shift, and recovers the original constant-y source geometry in the bounded-reading classical limit.
+
+An exact analytic witness with identical density laws gives probabilities 1/4, 1/2 and 3/4 for circumference above the reference value. These are formula-derived predictions, not NRQC or hardware outputs. The witness also has infinite raw mean circumference, so bounded readings and probability laws are not promoted to finite-mean length operators. The new ingredient is a declared ideal measurement prescription. A local angle field, nonuniform-pulse geometry, apparatus and gravitational dynamics remain open; no external completeness theorem is imported. The next source-specific obligation is the nonuniform pulse, where a single radial angle loses information.
+
 ## 30 October 2026: executed NRQC pilot and a restricted bounded coframe
 
 The [executable pilot](papers/native-nrqc-gravity-bridge/EXECUTABLE_PILOT.md) now evaluates the previous current–density bridge. The remaining density variance has a closed gamma-function expression with native rational enclosures. At dimensionless h=1/4,1/2,3/4, two unchanged NRQC backends match independent finite matrices; 44 checks and 12 negative controls pass. The finite tensor's entrywise source error is bounded by 10^-5. This is a supplied-moment encoding, not a continuum dynamics solver. The small cold-process comparison favors the direct native baseline; no computational advantage is established.

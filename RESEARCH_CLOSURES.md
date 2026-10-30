@@ -1,5 +1,9 @@
 # Research closure ledger
 
+## 30 October 2026: endogenous global-angle POVM
+
+[Radial geometric readout](papers/native-radial-geometric-readout/THEOREM.md): constructed on the existing positive LMD space with a stated ideal Fourier-compression POVM. Written derivation supplies radial factorization, phase-sensitive geometry probabilities, material-flow covariance, uniform-probe pulse evolution and the constant-y source classical limit. The standard half-line sharp-ratio obstruction is reused, not claimed as new. A supplied global angle is replaced by a state-dependent outcome; the measurement choice remains an assumption. The analytic Cauchy witness has infinite raw mean length. Local angle reconstruction, nonuniform-pulse geometry, a finite-mean length domain, local apparatus, spacetime curvature and 3+1 gravity remain open. No new execution or certificate replay accompanies this packet.
+
 ## 30 October 2026: bounded coframe contract and executed moment encoding
 
 - [Prescribed-angle normalized coframe](papers/native-nrqc-gravity-bridge/BOUNDED_COFRAME.md): constructed as a bounded multiplication reading with covariance of the calibrated family, strong cutoff convergence and the correct source classical limit, conditional on LMD. Circumference has explicit bounds set by the supplied smooth angle profile; its constant-profile case has fixed total length. It is a stated readout contract, not a construction of the quantum conjugate angle, a derived length scale or spacetime curvature.

@@ -1,0 +1,25 @@
+{
+  "parent": "cf72a467522b3516d3c3c5531c7666ff2da96a2c",
+  "sources": {
+    "papers/native-logarithmic-material-density/THEOREM.md": {
+      "git_blob": "3d1e7627083a5b9806add989d72b3277c706265f",
+      "sha256": "f22d8bdbe771add46809f155085f62db015a9d3b349eea391a412e3d82c546bf"
+    },
+    "papers/native-material-profile-quantization/THEOREM.md": {
+      "git_blob": "9d30dad27bb83fe5c534643a4f08ac1e94a055fb",
+      "sha256": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0"
+    },
+    "papers/native-resolved-material-geometry/THEOREM.md": {
+      "git_blob": "bece2c5a79584515a3a17851ca9178e7fb8d3ce3",
+      "sha256": "290f90dd010493aee033349c125354bb99a4e1aa0edd3ee034fed4db13326f20"
+    },
+    "papers/native-homogeneous-quantum-sector/THEOREM.md": {
+      "git_blob": "f479ebfebd5ee10d82881eabc54731049ffc583e",
+      "sha256": "083e699c04bcd5769ff35b56050f771d5d53a3613ecf750ac57205ad1bddee88"
+    },
+    "papers/native-nrqc-gravity-bridge/BOUNDED_COFRAME.md": {
+      "git_blob": "7f76c8239bd67f012ec1568fe11168d6123608b3",
+      "sha256": "bdbf94958f44fa9cd095b2e82a0e736855f1b5e30a2b4bf2bad549a44f45a0f0"
+    }
+  }
+}

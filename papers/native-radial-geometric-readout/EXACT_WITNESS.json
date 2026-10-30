@@ -1,0 +1,24 @@
+{
+  "kind": "analytic_formula_not_execution",
+  "source": "THEOREM.md equations (12)-(13)",
+  "measurement_contract": "fixed zero-extension/Fourier POVM; constant-y source geometry comparison",
+  "dimensionless_h": "1/2",
+  "a": "1",
+  "radial_state": "sqrt(2a) exp(-a*x) exp(-i*b*x/h), x>0",
+  "same_configuration_law_for_all_b": true,
+  "same_total_mass_density": "2a exp(-2a*x), x>0",
+  "fixed_readout": "ell=exp(Theta(y)); Theta=Y^{-1} from the frozen source",
+  "event": "dimensionless circumference ell > 1",
+  "probability_formula": "1/2+atan(b/(a*h))/pi",
+  "cases": [
+    {"b": "-1/2", "b_over_a_h": "-1", "probability": "1/4"},
+    {"b": "0", "b_over_a_h": "0", "probability": "1/2"},
+    {"b": "1/2", "b_over_a_h": "1", "probability": "3/4"}
+  ],
+  "y_distribution": "Cauchy with location b and scale a*h; the mean is undefined",
+  "raw_mean_circumference": "infinite for these example states",
+  "bounded_threshold_probability": "well-defined",
+  "fresh_nrqc_execution": false,
+  "hardware_observation": false,
+  "full_quantum_gravity_claim": false
+}
