@@ -1,0 +1,930 @@
+{
+  "status": "PASS",
+  "checks": 379,
+  "negative_controls": 25,
+  "check_names": [
+    "vacuum_observer:independent_Pauli_covariance",
+    "vacuum_observer:independent_Pauli_means",
+    "vacuum_observer:weighted_covariance:1/8",
+    "vacuum_observer:weighted_means:1/8",
+    "vacuum_observer:shear_covariance:h=1/8:t=-1",
+    "vacuum_observer:shear_means:h=1/8:t=-1",
+    "vacuum_observer:shear_covariance:h=1/8:t=-1/2",
+    "vacuum_observer:shear_means:h=1/8:t=-1/2",
+    "vacuum_observer:shear_covariance:h=1/8:t=0",
+    "vacuum_observer:shear_means:h=1/8:t=0",
+    "vacuum_observer:shear_covariance:h=1/8:t=1/2",
+    "vacuum_observer:shear_means:h=1/8:t=1/2",
+    "vacuum_observer:shear_covariance:h=1/8:t=1",
+    "vacuum_observer:shear_means:h=1/8:t=1",
+    "vacuum_observer:weighted_covariance:1/4",
+    "vacuum_observer:weighted_means:1/4",
+    "vacuum_observer:shear_covariance:h=1/4:t=-1",
+    "vacuum_observer:shear_means:h=1/4:t=-1",
+    "vacuum_observer:shear_covariance:h=1/4:t=-1/2",
+    "vacuum_observer:shear_means:h=1/4:t=-1/2",
+    "vacuum_observer:shear_covariance:h=1/4:t=0",
+    "vacuum_observer:shear_means:h=1/4:t=0",
+    "vacuum_observer:shear_covariance:h=1/4:t=1/2",
+    "vacuum_observer:shear_means:h=1/4:t=1/2",
+    "vacuum_observer:shear_covariance:h=1/4:t=1",
+    "vacuum_observer:shear_means:h=1/4:t=1",
+    "vacuum_observer:weighted_covariance:3/8",
+    "vacuum_observer:weighted_means:3/8",
+    "vacuum_observer:shear_covariance:h=3/8:t=-1",
+    "vacuum_observer:shear_means:h=3/8:t=-1",
+    "vacuum_observer:shear_covariance:h=3/8:t=-1/2",
+    "vacuum_observer:shear_means:h=3/8:t=-1/2",
+    "vacuum_observer:shear_covariance:h=3/8:t=0",
+    "vacuum_observer:shear_means:h=3/8:t=0",
+    "vacuum_observer:shear_covariance:h=3/8:t=1/2",
+    "vacuum_observer:shear_means:h=3/8:t=1/2",
+    "vacuum_observer:shear_covariance:h=3/8:t=1",
+    "vacuum_observer:shear_means:h=3/8:t=1",
+    "vacuum_clifford_t:independent_Pauli_covariance",
+    "vacuum_clifford_t:independent_Pauli_means",
+    "vacuum_clifford_t:weighted_covariance:1/8",
+    "vacuum_clifford_t:weighted_means:1/8",
+    "vacuum_clifford_t:shear_covariance:h=1/8:t=-1",
+    "vacuum_clifford_t:shear_means:h=1/8:t=-1",
+    "vacuum_clifford_t:shear_covariance:h=1/8:t=-1/2",
+    "vacuum_clifford_t:shear_means:h=1/8:t=-1/2",
+    "vacuum_clifford_t:shear_covariance:h=1/8:t=0",
+    "vacuum_clifford_t:shear_means:h=1/8:t=0",
+    "vacuum_clifford_t:shear_covariance:h=1/8:t=1/2",
+    "vacuum_clifford_t:shear_means:h=1/8:t=1/2",
+    "vacuum_clifford_t:shear_covariance:h=1/8:t=1",
+    "vacuum_clifford_t:shear_means:h=1/8:t=1",
+    "vacuum_clifford_t:weighted_covariance:1/4",
+    "vacuum_clifford_t:weighted_means:1/4",
+    "vacuum_clifford_t:shear_covariance:h=1/4:t=-1",
+    "vacuum_clifford_t:shear_means:h=1/4:t=-1",
+    "vacuum_clifford_t:shear_covariance:h=1/4:t=-1/2",
+    "vacuum_clifford_t:shear_means:h=1/4:t=-1/2",
+    "vacuum_clifford_t:shear_covariance:h=1/4:t=0",
+    "vacuum_clifford_t:shear_means:h=1/4:t=0",
+    "vacuum_clifford_t:shear_covariance:h=1/4:t=1/2",
+    "vacuum_clifford_t:shear_means:h=1/4:t=1/2",
+    "vacuum_clifford_t:shear_covariance:h=1/4:t=1",
+    "vacuum_clifford_t:shear_means:h=1/4:t=1",
+    "vacuum_clifford_t:weighted_covariance:3/8",
+    "vacuum_clifford_t:weighted_means:3/8",
+    "vacuum_clifford_t:shear_covariance:h=3/8:t=-1",
+    "vacuum_clifford_t:shear_means:h=3/8:t=-1",
+    "vacuum_clifford_t:shear_covariance:h=3/8:t=-1/2",
+    "vacuum_clifford_t:shear_means:h=3/8:t=-1/2",
+    "vacuum_clifford_t:shear_covariance:h=3/8:t=0",
+    "vacuum_clifford_t:shear_means:h=3/8:t=0",
+    "vacuum_clifford_t:shear_covariance:h=3/8:t=1/2",
+    "vacuum_clifford_t:shear_means:h=3/8:t=1/2",
+    "vacuum_clifford_t:shear_covariance:h=3/8:t=1",
+    "vacuum_clifford_t:shear_means:h=3/8:t=1",
+    "bell_observer:independent_Pauli_covariance",
+    "bell_observer:independent_Pauli_means",
+    "bell_observer:weighted_covariance:1/8",
+    "bell_observer:weighted_means:1/8",
+    "bell_observer:shear_covariance:h=1/8:t=-1",
+    "bell_observer:shear_means:h=1/8:t=-1",
+    "bell_observer:shear_covariance:h=1/8:t=-1/2",
+    "bell_observer:shear_means:h=1/8:t=-1/2",
+    "bell_observer:shear_covariance:h=1/8:t=0",
+    "bell_observer:shear_means:h=1/8:t=0",
+    "bell_observer:shear_covariance:h=1/8:t=1/2",
+    "bell_observer:shear_means:h=1/8:t=1/2",
+    "bell_observer:shear_covariance:h=1/8:t=1",
+    "bell_observer:shear_means:h=1/8:t=1",
+    "bell_observer:weighted_covariance:1/4",
+    "bell_observer:weighted_means:1/4",
+    "bell_observer:shear_covariance:h=1/4:t=-1",
+    "bell_observer:shear_means:h=1/4:t=-1",
+    "bell_observer:shear_covariance:h=1/4:t=-1/2",
+    "bell_observer:shear_means:h=1/4:t=-1/2",
+    "bell_observer:shear_covariance:h=1/4:t=0",
+    "bell_observer:shear_means:h=1/4:t=0",
+    "bell_observer:shear_covariance:h=1/4:t=1/2",
+    "bell_observer:shear_means:h=1/4:t=1/2",
+    "bell_observer:shear_covariance:h=1/4:t=1",
+    "bell_observer:shear_means:h=1/4:t=1",
+    "bell_observer:weighted_covariance:3/8",
+    "bell_observer:weighted_means:3/8",
+    "bell_observer:shear_covariance:h=3/8:t=-1",
+    "bell_observer:shear_means:h=3/8:t=-1",
+    "bell_observer:shear_covariance:h=3/8:t=-1/2",
+    "bell_observer:shear_means:h=3/8:t=-1/2",
+    "bell_observer:shear_covariance:h=3/8:t=0",
+    "bell_observer:shear_means:h=3/8:t=0",
+    "bell_observer:shear_covariance:h=3/8:t=1/2",
+    "bell_observer:shear_means:h=3/8:t=1/2",
+    "bell_observer:shear_covariance:h=3/8:t=1",
+    "bell_observer:shear_means:h=3/8:t=1",
+    "bell_clifford_t:independent_Pauli_covariance",
+    "bell_clifford_t:independent_Pauli_means",
+    "bell_clifford_t:weighted_covariance:1/8",
+    "bell_clifford_t:weighted_means:1/8",
+    "bell_clifford_t:shear_covariance:h=1/8:t=-1",
+    "bell_clifford_t:shear_means:h=1/8:t=-1",
+    "bell_clifford_t:shear_covariance:h=1/8:t=-1/2",
+    "bell_clifford_t:shear_means:h=1/8:t=-1/2",
+    "bell_clifford_t:shear_covariance:h=1/8:t=0",
+    "bell_clifford_t:shear_means:h=1/8:t=0",
+    "bell_clifford_t:shear_covariance:h=1/8:t=1/2",
+    "bell_clifford_t:shear_means:h=1/8:t=1/2",
+    "bell_clifford_t:shear_covariance:h=1/8:t=1",
+    "bell_clifford_t:shear_means:h=1/8:t=1",
+    "bell_clifford_t:weighted_covariance:1/4",
+    "bell_clifford_t:weighted_means:1/4",
+    "bell_clifford_t:shear_covariance:h=1/4:t=-1",
+    "bell_clifford_t:shear_means:h=1/4:t=-1",
+    "bell_clifford_t:shear_covariance:h=1/4:t=-1/2",
+    "bell_clifford_t:shear_means:h=1/4:t=-1/2",
+    "bell_clifford_t:shear_covariance:h=1/4:t=0",
+    "bell_clifford_t:shear_means:h=1/4:t=0",
+    "bell_clifford_t:shear_covariance:h=1/4:t=1/2",
+    "bell_clifford_t:shear_means:h=1/4:t=1/2",
+    "bell_clifford_t:shear_covariance:h=1/4:t=1",
+    "bell_clifford_t:shear_means:h=1/4:t=1",
+    "bell_clifford_t:weighted_covariance:3/8",
+    "bell_clifford_t:weighted_means:3/8",
+    "bell_clifford_t:shear_covariance:h=3/8:t=-1",
+    "bell_clifford_t:shear_means:h=3/8:t=-1",
+    "bell_clifford_t:shear_covariance:h=3/8:t=-1/2",
+    "bell_clifford_t:shear_means:h=3/8:t=-1/2",
+    "bell_clifford_t:shear_covariance:h=3/8:t=0",
+    "bell_clifford_t:shear_means:h=3/8:t=0",
+    "bell_clifford_t:shear_covariance:h=3/8:t=1/2",
+    "bell_clifford_t:shear_means:h=3/8:t=1/2",
+    "bell_clifford_t:shear_covariance:h=3/8:t=1",
+    "bell_clifford_t:shear_means:h=3/8:t=1",
+    "controlled_s_observer:independent_Pauli_covariance",
+    "controlled_s_observer:independent_Pauli_means",
+    "controlled_s_observer:weighted_covariance:1/8",
+    "controlled_s_observer:weighted_means:1/8",
+    "controlled_s_observer:shear_covariance:h=1/8:t=-1",
+    "controlled_s_observer:shear_means:h=1/8:t=-1",
+    "controlled_s_observer:shear_covariance:h=1/8:t=-1/2",
+    "controlled_s_observer:shear_means:h=1/8:t=-1/2",
+    "controlled_s_observer:shear_covariance:h=1/8:t=0",
+    "controlled_s_observer:shear_means:h=1/8:t=0",
+    "controlled_s_observer:shear_covariance:h=1/8:t=1/2",
+    "controlled_s_observer:shear_means:h=1/8:t=1/2",
+    "controlled_s_observer:shear_covariance:h=1/8:t=1",
+    "controlled_s_observer:shear_means:h=1/8:t=1",
+    "controlled_s_observer:weighted_covariance:1/4",
+    "controlled_s_observer:weighted_means:1/4",
+    "controlled_s_observer:shear_covariance:h=1/4:t=-1",
+    "controlled_s_observer:shear_means:h=1/4:t=-1",
+    "controlled_s_observer:shear_covariance:h=1/4:t=-1/2",
+    "controlled_s_observer:shear_means:h=1/4:t=-1/2",
+    "controlled_s_observer:shear_covariance:h=1/4:t=0",
+    "controlled_s_observer:shear_means:h=1/4:t=0",
+    "controlled_s_observer:shear_covariance:h=1/4:t=1/2",
+    "controlled_s_observer:shear_means:h=1/4:t=1/2",
+    "controlled_s_observer:shear_covariance:h=1/4:t=1",
+    "controlled_s_observer:shear_means:h=1/4:t=1",
+    "controlled_s_observer:weighted_covariance:3/8",
+    "controlled_s_observer:weighted_means:3/8",
+    "controlled_s_observer:shear_covariance:h=3/8:t=-1",
+    "controlled_s_observer:shear_means:h=3/8:t=-1",
+    "controlled_s_observer:shear_covariance:h=3/8:t=-1/2",
+    "controlled_s_observer:shear_means:h=3/8:t=-1/2",
+    "controlled_s_observer:shear_covariance:h=3/8:t=0",
+    "controlled_s_observer:shear_means:h=3/8:t=0",
+    "controlled_s_observer:shear_covariance:h=3/8:t=1/2",
+    "controlled_s_observer:shear_means:h=3/8:t=1/2",
+    "controlled_s_observer:shear_covariance:h=3/8:t=1",
+    "controlled_s_observer:shear_means:h=3/8:t=1",
+    "controlled_s_clifford_t:independent_Pauli_covariance",
+    "controlled_s_clifford_t:independent_Pauli_means",
+    "controlled_s_clifford_t:weighted_covariance:1/8",
+    "controlled_s_clifford_t:weighted_means:1/8",
+    "controlled_s_clifford_t:shear_covariance:h=1/8:t=-1",
+    "controlled_s_clifford_t:shear_means:h=1/8:t=-1",
+    "controlled_s_clifford_t:shear_covariance:h=1/8:t=-1/2",
+    "controlled_s_clifford_t:shear_means:h=1/8:t=-1/2",
+    "controlled_s_clifford_t:shear_covariance:h=1/8:t=0",
+    "controlled_s_clifford_t:shear_means:h=1/8:t=0",
+    "controlled_s_clifford_t:shear_covariance:h=1/8:t=1/2",
+    "controlled_s_clifford_t:shear_means:h=1/8:t=1/2",
+    "controlled_s_clifford_t:shear_covariance:h=1/8:t=1",
+    "controlled_s_clifford_t:shear_means:h=1/8:t=1",
+    "controlled_s_clifford_t:weighted_covariance:1/4",
+    "controlled_s_clifford_t:weighted_means:1/4",
+    "controlled_s_clifford_t:shear_covariance:h=1/4:t=-1",
+    "controlled_s_clifford_t:shear_means:h=1/4:t=-1",
+    "controlled_s_clifford_t:shear_covariance:h=1/4:t=-1/2",
+    "controlled_s_clifford_t:shear_means:h=1/4:t=-1/2",
+    "controlled_s_clifford_t:shear_covariance:h=1/4:t=0",
+    "controlled_s_clifford_t:shear_means:h=1/4:t=0",
+    "controlled_s_clifford_t:shear_covariance:h=1/4:t=1/2",
+    "controlled_s_clifford_t:shear_means:h=1/4:t=1/2",
+    "controlled_s_clifford_t:shear_covariance:h=1/4:t=1",
+    "controlled_s_clifford_t:shear_means:h=1/4:t=1",
+    "controlled_s_clifford_t:weighted_covariance:3/8",
+    "controlled_s_clifford_t:weighted_means:3/8",
+    "controlled_s_clifford_t:shear_covariance:h=3/8:t=-1",
+    "controlled_s_clifford_t:shear_means:h=3/8:t=-1",
+    "controlled_s_clifford_t:shear_covariance:h=3/8:t=-1/2",
+    "controlled_s_clifford_t:shear_means:h=3/8:t=-1/2",
+    "controlled_s_clifford_t:shear_covariance:h=3/8:t=0",
+    "controlled_s_clifford_t:shear_means:h=3/8:t=0",
+    "controlled_s_clifford_t:shear_covariance:h=3/8:t=1/2",
+    "controlled_s_clifford_t:shear_means:h=3/8:t=1/2",
+    "controlled_s_clifford_t:shear_covariance:h=3/8:t=1",
+    "controlled_s_clifford_t:shear_means:h=3/8:t=1",
+    "controlled_s_dagger_observer:independent_Pauli_covariance",
+    "controlled_s_dagger_observer:independent_Pauli_means",
+    "controlled_s_dagger_observer:weighted_covariance:1/8",
+    "controlled_s_dagger_observer:weighted_means:1/8",
+    "controlled_s_dagger_observer:shear_covariance:h=1/8:t=-1",
+    "controlled_s_dagger_observer:shear_means:h=1/8:t=-1",
+    "controlled_s_dagger_observer:shear_covariance:h=1/8:t=-1/2",
+    "controlled_s_dagger_observer:shear_means:h=1/8:t=-1/2",
+    "controlled_s_dagger_observer:shear_covariance:h=1/8:t=0",
+    "controlled_s_dagger_observer:shear_means:h=1/8:t=0",
+    "controlled_s_dagger_observer:shear_covariance:h=1/8:t=1/2",
+    "controlled_s_dagger_observer:shear_means:h=1/8:t=1/2",
+    "controlled_s_dagger_observer:shear_covariance:h=1/8:t=1",
+    "controlled_s_dagger_observer:shear_means:h=1/8:t=1",
+    "controlled_s_dagger_observer:weighted_covariance:1/4",
+    "controlled_s_dagger_observer:weighted_means:1/4",
+    "controlled_s_dagger_observer:shear_covariance:h=1/4:t=-1",
+    "controlled_s_dagger_observer:shear_means:h=1/4:t=-1",
+    "controlled_s_dagger_observer:shear_covariance:h=1/4:t=-1/2",
+    "controlled_s_dagger_observer:shear_means:h=1/4:t=-1/2",
+    "controlled_s_dagger_observer:shear_covariance:h=1/4:t=0",
+    "controlled_s_dagger_observer:shear_means:h=1/4:t=0",
+    "controlled_s_dagger_observer:shear_covariance:h=1/4:t=1/2",
+    "controlled_s_dagger_observer:shear_means:h=1/4:t=1/2",
+    "controlled_s_dagger_observer:shear_covariance:h=1/4:t=1",
+    "controlled_s_dagger_observer:shear_means:h=1/4:t=1",
+    "controlled_s_dagger_observer:weighted_covariance:3/8",
+    "controlled_s_dagger_observer:weighted_means:3/8",
+    "controlled_s_dagger_observer:shear_covariance:h=3/8:t=-1",
+    "controlled_s_dagger_observer:shear_means:h=3/8:t=-1",
+    "controlled_s_dagger_observer:shear_covariance:h=3/8:t=-1/2",
+    "controlled_s_dagger_observer:shear_means:h=3/8:t=-1/2",
+    "controlled_s_dagger_observer:shear_covariance:h=3/8:t=0",
+    "controlled_s_dagger_observer:shear_means:h=3/8:t=0",
+    "controlled_s_dagger_observer:shear_covariance:h=3/8:t=1/2",
+    "controlled_s_dagger_observer:shear_means:h=3/8:t=1/2",
+    "controlled_s_dagger_observer:shear_covariance:h=3/8:t=1",
+    "controlled_s_dagger_observer:shear_means:h=3/8:t=1",
+    "controlled_s_dagger_clifford_t:independent_Pauli_covariance",
+    "controlled_s_dagger_clifford_t:independent_Pauli_means",
+    "controlled_s_dagger_clifford_t:weighted_covariance:1/8",
+    "controlled_s_dagger_clifford_t:weighted_means:1/8",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/8:t=-1",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/8:t=-1",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/8:t=-1/2",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/8:t=-1/2",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/8:t=0",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/8:t=0",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/8:t=1/2",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/8:t=1/2",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/8:t=1",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/8:t=1",
+    "controlled_s_dagger_clifford_t:weighted_covariance:1/4",
+    "controlled_s_dagger_clifford_t:weighted_means:1/4",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/4:t=-1",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/4:t=-1",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/4:t=-1/2",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/4:t=-1/2",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/4:t=0",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/4:t=0",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/4:t=1/2",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/4:t=1/2",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=1/4:t=1",
+    "controlled_s_dagger_clifford_t:shear_means:h=1/4:t=1",
+    "controlled_s_dagger_clifford_t:weighted_covariance:3/8",
+    "controlled_s_dagger_clifford_t:weighted_means:3/8",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=3/8:t=-1",
+    "controlled_s_dagger_clifford_t:shear_means:h=3/8:t=-1",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=3/8:t=-1/2",
+    "controlled_s_dagger_clifford_t:shear_means:h=3/8:t=-1/2",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=3/8:t=0",
+    "controlled_s_dagger_clifford_t:shear_means:h=3/8:t=0",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=3/8:t=1/2",
+    "controlled_s_dagger_clifford_t:shear_means:h=3/8:t=1/2",
+    "controlled_s_dagger_clifford_t:shear_covariance:h=3/8:t=1",
+    "controlled_s_dagger_clifford_t:shear_means:h=3/8:t=1",
+    "source_A:1/8",
+    "source_B_enclosure:1/8",
+    "source_cross_sign:1/8",
+    "source_positive_Gram:1/8",
+    "actual_variance_error_bound:h=1/8:t=-1",
+    "actual_variance_error_bound:h=1/8:t=-1/2",
+    "actual_variance_error_bound:h=1/8:t=0",
+    "zero_pulse_common_variance:1/8",
+    "actual_variance_error_bound:h=1/8:t=1/2",
+    "actual_variance_error_bound:h=1/8:t=1",
+    "source_A:1/4",
+    "source_B_enclosure:1/4",
+    "source_cross_sign:1/4",
+    "source_positive_Gram:1/4",
+    "actual_variance_error_bound:h=1/4:t=-1",
+    "actual_variance_error_bound:h=1/4:t=-1/2",
+    "actual_variance_error_bound:h=1/4:t=0",
+    "zero_pulse_common_variance:1/4",
+    "actual_variance_error_bound:h=1/4:t=1/2",
+    "actual_variance_error_bound:h=1/4:t=1",
+    "source_A:3/8",
+    "source_B_enclosure:3/8",
+    "source_cross_sign:3/8",
+    "source_positive_Gram:3/8",
+    "actual_variance_error_bound:h=3/8:t=-1",
+    "actual_variance_error_bound:h=3/8:t=-1/2",
+    "actual_variance_error_bound:h=3/8:t=0",
+    "zero_pulse_common_variance:3/8",
+    "actual_variance_error_bound:h=3/8:t=1/2",
+    "actual_variance_error_bound:h=3/8:t=1",
+    "cutoff_positive_error:h=1/8:N=0",
+    "cutoff_positive_error:h=1/8:N=1",
+    "cutoff_strict_progress:h=1/8:N=1",
+    "cutoff_positive_error:h=1/8:N=2",
+    "cutoff_strict_progress:h=1/8:N=2",
+    "cutoff_positive_error:h=1/8:N=4",
+    "cutoff_strict_progress:h=1/8:N=4",
+    "cutoff_positive_error:h=1/8:N=8",
+    "cutoff_strict_progress:h=1/8:N=8",
+    "cutoff_positive_error:h=1/8:N=16",
+    "cutoff_strict_progress:h=1/8:N=16",
+    "cutoff_N1_independent_Bessel_overlap:1/8",
+    "cutoff_positive_error:h=1/4:N=0",
+    "cutoff_positive_error:h=1/4:N=1",
+    "cutoff_strict_progress:h=1/4:N=1",
+    "cutoff_positive_error:h=1/4:N=2",
+    "cutoff_strict_progress:h=1/4:N=2",
+    "cutoff_positive_error:h=1/4:N=4",
+    "cutoff_strict_progress:h=1/4:N=4",
+    "cutoff_positive_error:h=1/4:N=8",
+    "cutoff_strict_progress:h=1/4:N=8",
+    "cutoff_positive_error:h=1/4:N=16",
+    "cutoff_strict_progress:h=1/4:N=16",
+    "cutoff_N1_independent_Bessel_overlap:1/4",
+    "cutoff_positive_error:h=3/8:N=0",
+    "cutoff_positive_error:h=3/8:N=1",
+    "cutoff_strict_progress:h=3/8:N=1",
+    "cutoff_positive_error:h=3/8:N=2",
+    "cutoff_strict_progress:h=3/8:N=2",
+    "cutoff_positive_error:h=3/8:N=4",
+    "cutoff_strict_progress:h=3/8:N=4",
+    "cutoff_positive_error:h=3/8:N=8",
+    "cutoff_strict_progress:h=3/8:N=8",
+    "cutoff_positive_error:h=3/8:N=16",
+    "cutoff_strict_progress:h=3/8:N=16",
+    "cutoff_N1_independent_Bessel_overlap:3/8",
+    "bounded_characteristic_jet:h=1/8:t=-1",
+    "bounded_characteristic_jet:h=1/8:t=1/2",
+    "bounded_characteristic_jet:h=1/8:t=1",
+    "bounded_characteristic_jet:h=1/4:t=-1",
+    "bounded_characteristic_jet:h=1/4:t=1/2",
+    "bounded_characteristic_jet:h=1/4:t=1",
+    "bounded_characteristic_jet:h=3/8:t=-1",
+    "bounded_characteristic_jet:h=3/8:t=1/2",
+    "bounded_characteristic_jet:h=3/8:t=1"
+  ],
+  "negative_control_names": [
+    "naive_density_shift_variance:h=1/8:t=-1",
+    "naive_density_shift_variance:h=1/8:t=-1/2",
+    "naive_density_shift_variance:h=1/8:t=1/2",
+    "naive_density_shift_variance:h=1/8:t=1",
+    "finite_encoding_not_affine_representation:1/8",
+    "missing_measurement_noise:1/8",
+    "reversed_imaginary_cross:1/8",
+    "naive_density_shift_variance:h=1/4:t=-1",
+    "naive_density_shift_variance:h=1/4:t=-1/2",
+    "naive_density_shift_variance:h=1/4:t=1/2",
+    "naive_density_shift_variance:h=1/4:t=1",
+    "finite_encoding_not_affine_representation:1/4",
+    "missing_measurement_noise:1/4",
+    "reversed_imaginary_cross:1/4",
+    "naive_density_shift_variance:h=3/8:t=-1",
+    "naive_density_shift_variance:h=3/8:t=-1/2",
+    "naive_density_shift_variance:h=3/8:t=1/2",
+    "naive_density_shift_variance:h=3/8:t=1",
+    "finite_encoding_not_affine_representation:3/8",
+    "missing_measurement_noise:3/8",
+    "reversed_imaginary_cross:3/8",
+    "phase_dagger_state_is_observable",
+    "naive_bounded_sine_response:1/8",
+    "naive_bounded_sine_response:1/4",
+    "naive_bounded_sine_response:3/8"
+  ],
+  "source_values": [
+    {
+      "h": "1/8",
+      "actual_variance_t1": "0.203696078",
+      "naive_variance_t1": "0.387700192",
+      "gap_t1": "0.184004114"
+    },
+    {
+      "h": "1/4",
+      "actual_variance_t1": "0.450200192",
+      "naive_variance_t1": "1.071052652",
+      "gap_t1": "0.620852459"
+    },
+    {
+      "h": "3/8",
+      "actual_variance_t1": "0.764428414",
+      "naive_variance_t1": "2.917333272",
+      "gap_t1": "2.152904858"
+    }
+  ],
+  "bounded_response": [
+    {
+      "h": "1/8",
+      "k": "2",
+      "sine_response_slope_gap": {
+        "lower": "26694375339003853697646427283080874979094040145852556588893137111521267763820583256665419626096504888675516878421463074437118560909650100461930549960138730713438925733366951649959073395266561/5803213055994852044245001941410289400982513342090448156034764064332786591469171098404916138674392605805516026145681687501012671773120537699087746542921408972882308009358786560000000000000000000",
+        "upper": "168059084659933353539040628509240283923858094614989459500617719828714294444074529330420637959488403812043763502794158514748637325487642345240948361845898062940178932924902506102119210086610385265361/36535137529592544448412891569684585197007030059149667376561674366383731194984864564204335594993027748704756043069481558376734691301441528932847604170908725015876896199531638722396160000000000000000000"
+      },
+      "display_gap": "0.004599930"
+    },
+    {
+      "h": "1/4",
+      "k": "2",
+      "sine_response_slope_gap": {
+        "lower": "88531512460473385511162410616774308626019215781479826263497663841100677780455388667436735836936492593532670822642027667601319048305492601084581672741083924745269884161/5439458559429217053536818084706484321555486956959962712516313898568318087249728120217150321376040574341173567485405161920895975578239583321287399833600000000000000000000",
+        "upper": "3128826926460070995859559088891660169760357698110962962560996348664230147223253729615234165248500589733358690501168385767374674203830917179617371999895485462541048915232985237/192238039689024419519031284381729928982314330579889043067611842607454614560787118087352981085886341932002654642568129590306273719123462169474363070749616373760000000000000000000"
+      },
+      "display_gap": "0.016275795"
+    },
+    {
+      "h": "3/8",
+      "k": "2",
+      "sine_response_slope_gap": {
+        "lower": "19885014741984951492386195603650030503874271000896724327387951749337837812755101290622874311503679953617290035122017969544951947019951839126383497418255989795756762043849761/612903282085337375503124676608212722181309140172868731807154805176953773660661456559001846982435722786029478579155593789570874807034871103775266877011394560000000000000000000",
+        "upper": "10307094164918099077553077094055233252368074794556324380952276450393042577552800051454786191157556384341909579649752438861608250765551928565566047664800861325172330707631616656803221/317689070106786109282384136362026643016863397221835753369862462411189226125944395082704439211333585878578629028664137441970331212412817026651483547251557162549248000000000000000000000"
+      },
+      "display_gap": "0.032443968"
+    }
+  ],
+  "cutoff_moments": [
+    {
+      "h": "1/8",
+      "rows": [
+        {
+          "N": 0,
+          "I_N": {
+            "lower": "1369892422368862165331299/1208925819614629174706176",
+            "upper": "1369892422368862165331419/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "9728981116903194469289/1208925819614629174706176",
+            "upper": "2432245600306762186671/302231454903657293676544"
+          },
+          "display_I_N": "1.133148453",
+          "display_L2_error_squared": "0.008047625"
+        },
+        {
+          "N": 1,
+          "I_N": {
+            "lower": "85953049539830120270583/75557863725914323419136",
+            "upper": "1375248792637281924329505/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "4372610848483435471203/1208925819614629174706176",
+            "upper": "4372612132807289748655/1208925819614629174706176"
+          },
+          "display_I_N": "1.137579138",
+          "display_L2_error_squared": "0.003616939"
+        },
+        {
+          "N": 2,
+          "I_N": {
+            "lower": "688379830310434830324231/604462909807314587353088",
+            "upper": "688379830310434830324401/604462909807314587353088"
+          },
+          "mass_L2_error_squared": {
+            "lower": "1430871432447849575953/604462909807314587353088",
+            "upper": "2861744149219553429521/1208925819614629174706176"
+          },
+          "display_I_N": "1.138828899",
+          "display_L2_error_squared": "0.002367178"
+        },
+        {
+          "N": 4,
+          "I_N": {
+            "lower": "1377891085533548566985925/1208925819614629174706176",
+            "upper": "172236385691693570873309/151115727451828646838272"
+          },
+          "mass_L2_error_squared": {
+            "lower": "432579488054198203559/302231454903657293676544",
+            "upper": "865159618270323546029/604462909807314587353088"
+          },
+          "display_I_N": "1.139764792",
+          "display_L2_error_squared": "0.001431285"
+        },
+        {
+          "N": 8,
+          "I_N": {
+            "lower": "689312488681722576389389/604462909807314587353088",
+            "upper": "1378624977363445152779751/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "996426122320207020957/1208925819614629174706176",
+            "upper": "996427406644061299205/1208925819614629174706176"
+          },
+          "display_I_N": "1.140371853",
+          "display_L2_error_squared": "0.000824224"
+        },
+        {
+          "N": 16,
+          "I_N": {
+            "lower": "344765678555265234220841/302231454903657293676544",
+            "upper": "689531357110530468442599/604462909807314587353088"
+          },
+          "mass_L2_error_squared": {
+            "lower": "279344632352211457755/604462909807314587353088",
+            "upper": "558690549028277194619/1208925819614629174706176"
+          },
+          "display_I_N": "1.140733940",
+          "display_L2_error_squared": "0.000462137"
+        }
+      ]
+    },
+    {
+      "h": "1/4",
+      "rows": [
+        {
+          "N": 0,
+          "I_N": {
+            "lower": "1552291479275243623054267/1208925819614629174706176",
+            "upper": "776145739637621811527195/604462909807314587353088"
+          },
+          "mass_L2_error_squared": {
+            "lower": "49777247056337091360441/1208925819614629174706176",
+            "upper": "49777253022323543341681/1208925819614629174706176"
+          },
+          "display_I_N": "1.284025416",
+          "display_L2_error_squared": "0.041174776"
+        },
+        {
+          "N": 1,
+          "I_N": {
+            "lower": "1576640942639358346456825/1208925819614629174706176",
+            "upper": "1576640942639358346457013/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "12713891846111183978909/604462909807314587353088",
+            "upper": "25427789658208819939123/1208925819614629174706176"
+          },
+          "display_I_N": "1.304166820",
+          "display_L2_error_squared": "0.021033372"
+        },
+        {
+          "N": 2,
+          "I_N": {
+            "lower": "12377598233551281256043/9444732965739290427392",
+            "upper": "1584332573894564000773879/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "2217019054627089205119/151115727451828646838272",
+            "upper": "4434039600750791405611/302231454903657293676544"
+          },
+          "display_I_N": "1.310529188",
+          "display_L2_error_squared": "0.014671003"
+        },
+        {
+          "N": 4,
+          "I_N": {
+            "lower": "1590523732788664090888545/1208925819614629174706176",
+            "upper": "1590523732788664090889163/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "2886248385729155881417/302231454903657293676544",
+            "upper": "11544999508903075507403/1208925819614629174706176"
+          },
+          "display_I_N": "1.315650395",
+          "display_L2_error_squared": "0.009549797"
+        },
+        {
+          "N": 8,
+          "I_N": {
+            "lower": "1594868395939822215494421/1208925819614629174706176",
+            "upper": "1594868395939822215495533/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "3600165195879249459649/604462909807314587353088",
+            "upper": "7200336357744950901527/1208925819614629174706176"
+          },
+          "display_I_N": "1.319244216",
+          "display_L2_error_squared": "0.005955976"
+        },
+        {
+          "N": 16,
+          "I_N": {
+            "lower": "1597682013342820340853931/1208925819614629174706176",
+            "upper": "1597682013342820340856045/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "2193356494380186779393/604462909807314587353088",
+            "upper": "4386718954746825542017/1208925819614629174706176"
+          },
+          "display_I_N": "1.321571586",
+          "display_L2_error_squared": "0.003628606"
+        }
+      ]
+    },
+    {
+      "h": "3/8",
+      "rows": [
+        {
+          "N": 0,
+          "I_N": {
+            "lower": "1758976688449557794867075/1208925819614629174706176",
+            "upper": "879488344224778897433597/604462909807314587353088"
+          },
+          "mass_L2_error_squared": {
+            "lower": "36853194805526732771555/302231454903657293676544",
+            "upper": "147412795196404601688233/1208925819614629174706176"
+          },
+          "display_I_N": "1.454991414",
+          "display_L2_error_squared": "0.121936999"
+        },
+        {
+          "N": 1,
+          "I_N": {
+            "lower": "1821361347447458181344423/1208925819614629174706176",
+            "upper": "910680673723729090672309/604462909807314587353088"
+          },
+          "mass_L2_error_squared": {
+            "lower": "21257030056051636152199/302231454903657293676544",
+            "upper": "85028136198504215210885/1208925819614629174706176"
+          },
+          "display_I_N": "1.506594795",
+          "display_L2_error_squared": "0.070333619"
+        },
+        {
+          "N": 2,
+          "I_N": {
+            "lower": "1843296879349199331246385/1208925819614629174706176",
+            "upper": "921648439674599665623387/604462909807314587353088"
+          },
+          "mass_L2_error_squared": {
+            "lower": "3943286770154087169165/75557863725914323419136",
+            "upper": "63092604296763065308923/1208925819614629174706176"
+          },
+          "display_I_N": "1.524739441",
+          "display_L2_error_squared": "0.052188972"
+        },
+        {
+          "N": 4,
+          "I_N": {
+            "lower": "931116218522729637733259/604462909807314587353088",
+            "upper": "1862232437045459275467185/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "44157030626205450486229/1208925819614629174706176",
+            "upper": "22078523300251560544395/604462909807314587353088"
+          },
+          "display_I_N": "1.540402567",
+          "display_L2_error_squared": "0.036525846"
+        },
+        {
+          "N": 8,
+          "I_N": {
+            "lower": "1876584661159159434183781/1208925819614629174706176",
+            "upper": "117286541322447464636565/75557863725914323419136"
+          },
+          "mass_L2_error_squared": {
+            "lower": "14902403256252645884187/604462909807314587353088",
+            "upper": "29804822486802962371527/1208925819614629174706176"
+          },
+          "display_I_N": "1.552274449",
+          "display_L2_error_squared": "0.024653964"
+        },
+        {
+          "N": 16,
+          "I_N": {
+            "lower": "471666522874247137938751/302231454903657293676544",
+            "upper": "1886666091496988551757457/1208925819614629174706176"
+          },
+          "mass_L2_error_squared": {
+            "lower": "19723376174676174195957/1208925819614629174706176",
+            "upper": "1232712009310865300019/75557863725914323419136"
+          },
+          "display_I_N": "1.560613613",
+          "display_L2_error_squared": "0.016314800"
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "h": "1/8",
+      "t": "-1",
+      "encoded_measured_variance": "7338924583721593/36028797018963968",
+      "certified_error_bound": "2983759863540767/1208925819614629174706176",
+      "actual": {
+        "lower": "61563361899262627128417/302231454903657293676544",
+        "upper": "246253448881374362790943/1208925819614629174706176"
+      },
+      "naive": {
+        "lower": "468700770442865863127791/1208925819614629174706176",
+        "upper": "117175194102213078777227/302231454903657293676544"
+      }
+    },
+    {
+      "h": "1/8",
+      "t": "-1/2",
+      "encoded_measured_variance": "14094323909163601/144115188075855872",
+      "certified_error_bound": "6863113106418719/4835703278458516698824704",
+      "actual": {
+        "lower": "118231759693698369692769/1208925819614629174706176",
+        "upper": "472927040059117333048351/4835703278458516698824704"
+      },
+      "naive": {
+        "lower": "695374361620608833385199/4835703278458516698824704",
+        "upper": "173843591896648821341579/1208925819614629174706176"
+      }
+    },
+    {
+      "h": "1/8",
+      "t": "0",
+      "encoded_measured_variance": "281474971893417/4503599627370496",
+      "certified_error_bound": "4817239/4503599627370496",
+      "actual": {
+        "lower": "1/16",
+        "upper": "1/16"
+      },
+      "naive": {
+        "lower": "1/16",
+        "upper": "1/16"
+      }
+    },
+    {
+      "h": "1/8",
+      "t": "1/2",
+      "encoded_measured_variance": "14094323909163601/144115188075855872",
+      "certified_error_bound": "6863113106418719/4835703278458516698824704",
+      "actual": {
+        "lower": "118231759693698369692769/1208925819614629174706176",
+        "upper": "472927040059117333048351/4835703278458516698824704"
+      },
+      "naive": {
+        "lower": "695374361620608833385199/4835703278458516698824704",
+        "upper": "173843591896648821341579/1208925819614629174706176"
+      }
+    },
+    {
+      "h": "1/8",
+      "t": "1",
+      "encoded_measured_variance": "7338924583721593/36028797018963968",
+      "certified_error_bound": "2983759863540767/1208925819614629174706176",
+      "actual": {
+        "lower": "61563361899262627128417/302231454903657293676544",
+        "upper": "246253448881374362790943/1208925819614629174706176"
+      },
+      "naive": {
+        "lower": "468700770442865863127791/1208925819614629174706176",
+        "upper": "117175194102213078777227/302231454903657293676544"
+      }
+    },
+    {
+      "h": "1/4",
+      "t": "-1",
+      "encoded_measured_variance": "32440342711238601/72057594037927936",
+      "certified_error_bound": "838572750503307/302231454903657293676544",
+      "actual": {
+        "lower": "544258634168780186546927/1208925819614629174706176",
+        "upper": "136064660033691659632011/302231454903657293676544"
+      },
+      "naive": {
+        "lower": "647411593987970406026535/604462909807314587353088",
+        "upper": "647411611512176948492083/604462909807314587353088"
+      }
+    },
+    {
+      "h": "1/4",
+      "t": "-1/2",
+      "encoded_measured_variance": "59461940475461577/288230376151711744",
+      "certified_error_bound": "838572750503307/1208925819614629174706176",
+      "actual": {
+        "lower": "997605816524266127061743/4835703278458516698824704",
+        "upper": "249401455622563144760715/1208925819614629174706176"
+      },
+      "naive": {
+        "lower": "874085185165713376283943/2417851639229258349412352",
+        "upper": "874085202689919918749491/2417851639229258349412352"
+      }
+    },
+    {
+      "h": "1/4",
+      "t": "0",
+      "encoded_measured_variance": "1/8",
+      "certified_error_bound": "0",
+      "actual": {
+        "lower": "1/8",
+        "upper": "1/8"
+      },
+      "naive": {
+        "lower": "1/8",
+        "upper": "1/8"
+      }
+    },
+    {
+      "h": "1/4",
+      "t": "1/2",
+      "encoded_measured_variance": "59461940475461577/288230376151711744",
+      "certified_error_bound": "838572750503307/1208925819614629174706176",
+      "actual": {
+        "lower": "997605816524266127061743/4835703278458516698824704",
+        "upper": "249401455622563144760715/1208925819614629174706176"
+      },
+      "naive": {
+        "lower": "874085185165713376283943/2417851639229258349412352",
+        "upper": "874085202689919918749491/2417851639229258349412352"
+      }
+    },
+    {
+      "h": "1/4",
+      "t": "1",
+      "encoded_measured_variance": "32440342711238601/72057594037927936",
+      "certified_error_bound": "838572750503307/302231454903657293676544",
+      "actual": {
+        "lower": "544258634168780186546927/1208925819614629174706176",
+        "upper": "136064660033691659632011/302231454903657293676544"
+      },
+      "naive": {
+        "lower": "647411593987970406026535/604462909807314587353088",
+        "upper": "647411611512176948492083/604462909807314587353088"
+      }
+    },
+    {
+      "h": "3/8",
+      "t": "-1",
+      "encoded_measured_variance": "55082872184130493/72057594037927936",
+      "certified_error_bound": "2668881784714763/302231454903657293676544",
+      "actual": {
+        "lower": "462068619617389260752323/604462909807314587353088",
+        "upper": "231034313802269048026635/302231454903657293676544"
+      },
+      "naive": {
+        "lower": "3526839442538454067443415/1208925819614629174706176",
+        "upper": "3526839593732874212680481/1208925819614629174706176"
+      }
+    },
+    {
+      "h": "3/8",
+      "t": "-1/2",
+      "encoded_measured_variance": "11951908603258529/36028797018963968",
+      "certified_error_bound": "2687322985969163/1208925819614629174706176",
+      "actual": {
+        "lower": "802079006384003716138435/2417851639229258349412352",
+        "upper": "401039507185576275719691/1208925819614629174706176"
+      },
+      "naive": {
+        "lower": "4206860216071682978215639/4835703278458516698824704",
+        "upper": "4206860367266103123452705/4835703278458516698824704"
+      }
+    },
+    {
+      "h": "3/8",
+      "t": "0",
+      "encoded_measured_variance": "13510798880645913/72057594037927936",
+      "certified_error_bound": "1465575/72057594037927936",
+      "actual": {
+        "lower": "3/16",
+        "upper": "3/16"
+      },
+      "naive": {
+        "lower": "3/16",
+        "upper": "3/16"
+      }
+    },
+    {
+      "h": "3/8",
+      "t": "1/2",
+      "encoded_measured_variance": "11951908603258529/36028797018963968",
+      "certified_error_bound": "2687322985969163/1208925819614629174706176",
+      "actual": {
+        "lower": "802079006384003716138435/2417851639229258349412352",
+        "upper": "401039507185576275719691/1208925819614629174706176"
+      },
+      "naive": {
+        "lower": "4206860216071682978215639/4835703278458516698824704",
+        "upper": "4206860367266103123452705/4835703278458516698824704"
+      }
+    },
+    {
+      "h": "3/8",
+      "t": "1",
+      "encoded_measured_variance": "55082872184130493/72057594037927936",
+      "certified_error_bound": "2668881784714763/302231454903657293676544",
+      "actual": {
+        "lower": "462068619617389260752323/604462909807314587353088",
+        "upper": "231034313802269048026635/302231454903657293676544"
+      },
+      "naive": {
+        "lower": "3526839442538454067443415/1208925819614629174706176",
+        "upper": "3526839593732874212680481/1208925819614629174706176"
+      }
+    }
+  ],
+  "scope": "Eight fresh NRQC finite executions; three conditional source points and five pulse times; four states, two engines. Only vacuum encodes source moments.",
+  "continuum_pulse_simulated": false,
+  "hardware_called": false,
+  "advantage_established": false,
+  "analytic_advancement": "Exact characteristic function and bounded sine linear-response witness, proved separately; formal finite jet check is not a proof of the continuum result."
+}

@@ -1,5 +1,11 @@
 # Quantum gravity: canonical research record
 
+## 30 October 2026: executed LMD pulse diagnostics and exact marginal law
+
+[Pulse characteristic law](papers/native-lmd-pulse-characteristic/THEOREM.md) extends the common-parent variance diagnostic to the exact vacuum marginal Phi_t(k)=exp(-h k^2/4) chi_h((2t/h)sinh(hk/2)). A bounded sine reading already separates the actual pulse from an additive classical label update at linear response. The zero-mode translation proof uses bounded unitary matrix elements; it does not assume all mass moments. The L2 source martingale gives an explicit Fourier-cutoff error budget and uniform convergence of the smooth marginal densities.
+
+[Fresh execution](papers/native-lmd-pulse-characteristic/EXECUTION.md): eight NRQC runs on the pinned existing observer/clifford_t engines, with 379 checks and 25 negative controls passing. Three source points and five times compare finite encoded moments against independent exact matrices; non-Clifford phase states check the adapter. Native interval calculations also evaluate mass-cutoff errors at N=0,1,2,4,8,16. Only the vacuum encodes source moments. The finite controls cannot represent the affine commutator, and the applied moment shear is not an executed continuum pulse. No hardware or performance advantage is claimed. Next: a certified evaluation of E exp(i a J_N), including quadrature/state/gate errors, then nonuniform and joint readouts. The frozen calibration, geometry-domain and physical-gravity obligations remain open.
+
 ## 30 October 2026: a common noisy LMD parent with density calibration
 
 [LMD common parent](papers/native-lmd-common-parent/THEOREM.md) addresses the sharp-residual refinement obstruction by a different measurement: every adapted-coordinate mode has noise from the start, and all finite marginals come from one countable Gaussian isometry. The existing CMG method is credited and implemented analytically with LMD's actual covariance. The noisy configuration has covariance 2h C; its Wick subtraction must be h K_N. In the declared L2 range 0<h<1/2, the resulting outcome measure has the original J_h(w) as its exact positive first-moment form.

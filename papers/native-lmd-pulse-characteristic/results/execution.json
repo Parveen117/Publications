@@ -1,0 +1,56 @@
+{
+  "nrqc_commit": "fdd39048a6ddaa2dd78aa3197c274d7766f31a0e",
+  "python": "3.12.14",
+  "node": "v24.22.1",
+  "execution": [
+    {
+      "state": "vacuum",
+      "backend": "observer",
+      "command_wall_seconds": 0.5941841929998191
+    },
+    {
+      "state": "vacuum",
+      "backend": "clifford_t",
+      "command_wall_seconds": 0.47813726700042025
+    },
+    {
+      "state": "bell",
+      "backend": "observer",
+      "command_wall_seconds": 0.5078535850007029
+    },
+    {
+      "state": "bell",
+      "backend": "clifford_t",
+      "command_wall_seconds": 0.4565968540009635
+    },
+    {
+      "state": "controlled_s",
+      "backend": "observer",
+      "command_wall_seconds": 0.5741494760004571
+    },
+    {
+      "state": "controlled_s",
+      "backend": "clifford_t",
+      "command_wall_seconds": 0.46088172000236227
+    },
+    {
+      "state": "controlled_s_dagger",
+      "backend": "observer",
+      "command_wall_seconds": 0.577224586999364
+    },
+    {
+      "state": "controlled_s_dagger",
+      "backend": "clifford_t",
+      "command_wall_seconds": 0.6310971550010436
+    }
+  ],
+  "source_sha256": {
+    "source_intervals.cjs": "d707ddd977a0a2a43eb3d137f8f27ab3d6405f176b3bafddf2565bc858fec686",
+    "verify.cjs": "f4ae74c9366d2b803c9d30a6911c986453d0cd964a02379d2163b9edde8b5566",
+    "run_validation.py": "d5ac88413cac25a56a2f65e2106e60060a180810ac604a5aed6578674634426d",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+  },
+  "hardware_called": false,
+  "benchmark_claim": false,
+  "boundary": "NRQC computes finite Pauli means/covariances; native JS assembles supplied source controls and pulse shears."
+}
