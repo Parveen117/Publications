@@ -1,5 +1,13 @@
 # Quantum gravity: canonical research record
 
+## 30 October 2026: a common noisy LMD parent with density calibration
+
+[LMD common parent](papers/native-lmd-common-parent/THEOREM.md) addresses the sharp-residual refinement obstruction by a different measurement: every adapted-coordinate mode has noise from the start, and all finite marginals come from one countable Gaussian isometry. The existing CMG method is credited and implemented analytically with LMD's actual covariance. The noisy configuration has covariance 2h C; its Wick subtraction must be h K_N. In the declared L2 range 0<h<1/2, the resulting outcome measure has the original J_h(w) as its exact positive first-moment form.
+
+Smoothing that measure itself and the conjugate labels at ell>0 gives compatible fixed-h continuum coarse geometry, with strong bounded-readout cutoff limits and the original global P feedback. Actual density-pulse dynamics has an explicit finite normal-ordered generator and a strong cutoff limit on this parent. A vacuum variance identity rejects a naive classical shift by the measured density, despite its correct mean. Coherent classical profiles and prescribed pulse orbits recover under ell->0, h ell^(-8)->0; accepted-length moment recovery has the additional stated unpulsed coherent-family hypothesis. The ungated vacuum mean length remains infinite. Optional density rejection supplies a dense closed accepted-length form, following CMG's credited method.
+
+Status: written conditional derivations, with no new numerical calculation, certificate replay or NRQC execution. This closes the common-parent and fixed-h *coarse* measurement gates under the declared noise/range/resolution choices; it does not remove ell at fixed h or preserve the incompatible earlier records. General material-flow covariance still requires a detector-noise/calibration audit: the physical and noisy-measure affine coefficients differ. Local apparatus, autonomous gravitational dynamics, spacetime curvature and physical 3+1 gravity remain open.
+
 ## 30 October 2026: refinement boundary and bounded source dynamics
 
 [Geometry refinement and dynamics](papers/native-geometry-refinement-dynamics/THEOREM.md) resolves the next complete-record consistency test. The predecessor's sharp residual configuration record prevents exact joint refinement when a conjugate mode is added; an explicit Gaussian-overlap translation operator proves the conflict using the standard sharp-marginal commutation criterion. This is a limitation of that measurement prescription, not a no-go for quantum geometry or even for its coframe-only marginals.
