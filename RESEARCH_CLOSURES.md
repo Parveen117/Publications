@@ -1,5 +1,10 @@
 # Research closure ledger
 
+## 30 October 2026: NRQC feasibility result
+
+The [analytic current–density bridge](papers/native-nrqc-gravity-bridge/ANALYTIC_BRIDGE.md) derives the vacuum covariance of one specified LMD current/window pair. Its finite-h complex rank is 2; a single pure qubit can reproduce only the leading limiting tensor. A three-level moment representation is explicit, but its continuum coefficients and weighted controls are not a completed NRQC gravity adapter. Status: written conditional derivation; no new execution, performance advantage, physical identification or geometric-reconstruction closure. Frozen closure decisions below are unchanged.
+
+
 16 October 2026. A closure below applies only to its named target and
 assumptions. It is not a blanket endorsement of all research repositories.
 The active priority is the quantum-gravity construction, proceeding from
