@@ -1,5 +1,11 @@
 # Quantum gravity: canonical research record
 
+## 30 October 2026: first certified executable uniform-pulse marginal solver
+
+[Certified pulse solver](papers/native-lmd-certified-pulse-solver/THEOREM.md) now evaluates the previous characteristic expectation, with a complete continuum error bound conditional on the frozen LMD/common-parent construction. Gaussian-bin conditional masses preserve the first moment exactly; conditional-mean cancellation improves the characteristic error to (a^2/2) times the residual mass variance. Both Gaussian tails are retained. NRQC supplies exact cyclotomic phase-readout nodes; native rational intervals assemble the expectation and verify it against independent Taylor trig calculations. This is an executable bounded-measurement solver, not a full field-state or pulse-evolution circuit.
+
+[Execution](papers/native-lmd-certified-pulse-solver/EXECUTION.md): nine fresh NRQC requests, 286 checks and four negative controls pass. Eight of twelve actual-model cases meet a probability halfwidth of 1/200, including five nonzero-pulse cases. At h=1/8,t=1/4,k=2, actual and naive cosine '+' probability intervals are disjoint: [0.880368744,0.881274763] versus [0.872931701,0.877491417]. Four cases return explicitly wider certified enclosures. Nested partition checks expose the remaining nonzero-mode variance floor; additional source modes, not just more zero-mode bins, are needed for the next accuracy step. Nonuniform/joint geometry, general states, detector covariance and physical/autonomous gravity remain open. No hardware or advantage claim is made.
+
 ## 30 October 2026: executed LMD pulse diagnostics and exact marginal law
 
 [Pulse characteristic law](papers/native-lmd-pulse-characteristic/THEOREM.md) extends the common-parent variance diagnostic to the exact vacuum marginal Phi_t(k)=exp(-h k^2/4) chi_h((2t/h)sinh(hk/2)). A bounded sine reading already separates the actual pulse from an additive classical label update at linear response. The zero-mode translation proof uses bounded unitary matrix elements; it does not assume all mass moments. The L2 source martingale gives an explicit Fourier-cutoff error budget and uniform convergence of the smooth marginal densities.

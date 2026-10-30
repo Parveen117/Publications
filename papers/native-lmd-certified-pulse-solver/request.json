@@ -1,0 +1,10 @@
+{
+  "schema": "lmd-certified-uniform-pulse-v1",
+  "h": ["1/8", "1/4", "3/8"],
+  "times": ["-1/4", "0", "1/4", "1/2"],
+  "k": "2",
+  "central_bins": [32, 64, 128],
+  "central_radius": "2",
+  "maximum_probability_halfwidth": "1/200",
+  "include_naive_comparison": true
+}

@@ -1,5 +1,9 @@
 # Research closure ledger
 
+## 30 October 2026: executable certified continuum expectation gate
+
+[Uniform-pulse solver](papers/native-lmd-certified-pulse-solver/THEOREM.md) closes a first executable bounded-marginal expectation gate within the frozen LMD/common-parent contract. Conditional mass averaging supplies a quadratic source-error bound; a native interval solver uses nine actual NRQC phase requests and an independent trig baseline. [Execution](papers/native-lmd-certified-pulse-solver/EXECUTION.md): 286 checks, four negative controls; eight of twelve actual-model cases meet a 1/200 probability halfwidth, with finite-time disjoint actual/naive intervals at the declared h=1/8 witnesses. Four cases remain above tolerance and are labeled accordingly. The next numerical obligation is nonzero-mode source compression; full field evolution, nonuniform/joint geometry, general states, detector covariance and physical gravity remain unclosed. All predecessor packets are frozen.
+
 ## 30 October 2026: executed pulse-moment contract and bounded dynamics witness
 
 [LMD pulse characteristic](papers/native-lmd-pulse-characteristic/THEOREM.md) derives the exact all-t,k vacuum v_0 characteristic function on the selected common parent, a bounded sine linear-response separation from the naive additive label rule, and a source-cutoff error transfer to smooth marginal densities. [Execution](papers/native-lmd-pulse-characteristic/EXECUTION.md) records eight fresh NRQC runs, 379 checks and 25 negative controls, plus native certified mass-cutoff moments. The finite two-qubit encoding checks supplied source moments and explicitly fails the full affine commutator; it does not simulate the continuum pulse. The characteristic expectation still needs a certified executable solver. Existing measurement/calibration, domain, smoothing-removal, autonomous-gravity and physical 3+1 obligations are unchanged. Frozen predecessors are preserved.

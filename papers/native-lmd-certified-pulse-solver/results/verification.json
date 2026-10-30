@@ -1,0 +1,573 @@
+{
+  "status": "PASS",
+  "checks": 286,
+  "negative_controls": 4,
+  "check_names": [
+    "NRQC_vs_native_cos:0",
+    "NRQC_vs_native_sin:0",
+    "NRQC_phase_normalization:0",
+    "NRQC_vs_native_cos:1",
+    "NRQC_vs_native_sin:1",
+    "NRQC_phase_normalization:1",
+    "NRQC_vs_native_cos:2",
+    "NRQC_vs_native_sin:2",
+    "NRQC_phase_normalization:2",
+    "NRQC_vs_native_cos:3",
+    "NRQC_vs_native_sin:3",
+    "NRQC_phase_normalization:3",
+    "NRQC_vs_native_cos:4",
+    "NRQC_vs_native_sin:4",
+    "NRQC_phase_normalization:4",
+    "NRQC_vs_native_cos:5",
+    "NRQC_vs_native_sin:5",
+    "NRQC_phase_normalization:5",
+    "NRQC_vs_native_cos:6",
+    "NRQC_vs_native_sin:6",
+    "NRQC_phase_normalization:6",
+    "NRQC_vs_native_cos:7",
+    "NRQC_vs_native_sin:7",
+    "NRQC_phase_normalization:7",
+    "NRQC_vs_native_cos:8",
+    "NRQC_vs_native_sin:8",
+    "NRQC_phase_normalization:8",
+    "NRQC_vs_native_cos:9",
+    "NRQC_vs_native_sin:9",
+    "NRQC_phase_normalization:9",
+    "NRQC_vs_native_cos:10",
+    "NRQC_vs_native_sin:10",
+    "NRQC_phase_normalization:10",
+    "NRQC_vs_native_cos:11",
+    "NRQC_vs_native_sin:11",
+    "NRQC_phase_normalization:11",
+    "NRQC_vs_native_cos:12",
+    "NRQC_vs_native_sin:12",
+    "NRQC_phase_normalization:12",
+    "NRQC_vs_native_cos:13",
+    "NRQC_vs_native_sin:13",
+    "NRQC_phase_normalization:13",
+    "NRQC_vs_native_cos:14",
+    "NRQC_vs_native_sin:14",
+    "NRQC_phase_normalization:14",
+    "NRQC_vs_native_cos:15",
+    "NRQC_vs_native_sin:15",
+    "NRQC_phase_normalization:15",
+    "NRQC_vs_native_cos:16",
+    "NRQC_vs_native_sin:16",
+    "NRQC_phase_normalization:16",
+    "partition_probability:1/8:32",
+    "partition_mass_mean:1/8:32",
+    "partition_residual_budget:1/8:32",
+    "assembled_phase_cos:1/8:-393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:32",
+    "assembled_phase_sin:1/8:-393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:32",
+    "partition_probability:1/4:32",
+    "partition_mass_mean:1/4:32",
+    "partition_residual_budget:1/4:32",
+    "assembled_phase_cos:1/4:-1/2:32",
+    "assembled_phase_sin:1/4:-1/2:32",
+    "partition_probability:1/8:64",
+    "partition_mass_mean:1/8:64",
+    "partition_residual_budget:1/8:64",
+    "assembled_phase_cos:1/8:-393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:64",
+    "assembled_phase_sin:1/8:-393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:64",
+    "partition_probability:1/4:64",
+    "partition_mass_mean:1/4:64",
+    "partition_residual_budget:1/4:64",
+    "assembled_phase_cos:1/4:-1/2:64",
+    "assembled_phase_sin:1/4:-1/2:64",
+    "partition_probability:1/8:128",
+    "partition_mass_mean:1/8:128",
+    "partition_residual_budget:1/8:128",
+    "assembled_phase_cos:1/8:-393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:128",
+    "assembled_phase_sin:1/8:-393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:128",
+    "partition_probability:1/4:128",
+    "partition_mass_mean:1/4:128",
+    "partition_residual_budget:1/4:128",
+    "assembled_phase_cos:1/4:-1/2:128",
+    "assembled_phase_sin:1/4:-1/2:128",
+    "assembled_phase_cos:1/8:0:32",
+    "assembled_phase_sin:1/8:0:32",
+    "assembled_phase_cos:1/4:0:32",
+    "assembled_phase_sin:1/4:0:32",
+    "zero_pulse_cos:1/8:32",
+    "zero_pulse_sin:1/8:32",
+    "assembled_phase_cos:1/8:0:64",
+    "assembled_phase_sin:1/8:0:64",
+    "assembled_phase_cos:1/4:0:64",
+    "assembled_phase_sin:1/4:0:64",
+    "zero_pulse_cos:1/8:64",
+    "zero_pulse_sin:1/8:64",
+    "assembled_phase_cos:1/8:0:128",
+    "assembled_phase_sin:1/8:0:128",
+    "assembled_phase_cos:1/4:0:128",
+    "assembled_phase_sin:1/4:0:128",
+    "zero_pulse_cos:1/8:128",
+    "zero_pulse_sin:1/8:128",
+    "assembled_phase_cos:1/8:393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:32",
+    "assembled_phase_sin:1/8:393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:32",
+    "assembled_phase_cos:1/4:1/2:32",
+    "assembled_phase_sin:1/4:1/2:32",
+    "assembled_phase_cos:1/8:393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:64",
+    "assembled_phase_sin:1/8:393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:64",
+    "assembled_phase_cos:1/4:1/2:64",
+    "assembled_phase_sin:1/4:1/2:64",
+    "assembled_phase_cos:1/8:393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:128",
+    "assembled_phase_sin:1/8:393341320627343472427969126932872781060338333896073082681/784637716923335095479473677900958302012794430558004314112:128",
+    "assembled_phase_cos:1/4:1/2:128",
+    "assembled_phase_sin:1/4:1/2:128",
+    "assembled_phase_cos:1/8:393341320627343472427969126932872781060338333896073082681/392318858461667547739736838950479151006397215279002157056:32",
+    "assembled_phase_sin:1/8:393341320627343472427969126932872781060338333896073082681/392318858461667547739736838950479151006397215279002157056:32",
+    "assembled_phase_cos:1/4:1:32",
+    "assembled_phase_sin:1/4:1:32",
+    "assembled_phase_cos:1/8:393341320627343472427969126932872781060338333896073082681/392318858461667547739736838950479151006397215279002157056:64",
+    "assembled_phase_sin:1/8:393341320627343472427969126932872781060338333896073082681/392318858461667547739736838950479151006397215279002157056:64",
+    "assembled_phase_cos:1/4:1:64",
+    "assembled_phase_sin:1/4:1:64",
+    "assembled_phase_cos:1/8:393341320627343472427969126932872781060338333896073082681/392318858461667547739736838950479151006397215279002157056:128",
+    "assembled_phase_sin:1/8:393341320627343472427969126932872781060338333896073082681/392318858461667547739736838950479151006397215279002157056:128",
+    "assembled_phase_cos:1/4:1:128",
+    "assembled_phase_sin:1/4:1:128",
+    "assembled_phase_cos:1/4:-1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:32",
+    "assembled_phase_sin:1/4:-1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:32",
+    "partition_probability:1/2:32",
+    "partition_mass_mean:1/2:32",
+    "partition_residual_budget:1/2:32",
+    "assembled_phase_cos:1/2:-1/2:32",
+    "assembled_phase_sin:1/2:-1/2:32",
+    "assembled_phase_cos:1/4:-1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:64",
+    "assembled_phase_sin:1/4:-1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:64",
+    "partition_probability:1/2:64",
+    "partition_mass_mean:1/2:64",
+    "partition_residual_budget:1/2:64",
+    "assembled_phase_cos:1/2:-1/2:64",
+    "assembled_phase_sin:1/2:-1/2:64",
+    "assembled_phase_cos:1/4:-1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:128",
+    "assembled_phase_sin:1/4:-1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:128",
+    "partition_probability:1/2:128",
+    "partition_mass_mean:1/2:128",
+    "partition_residual_budget:1/2:128",
+    "assembled_phase_cos:1/2:-1/2:128",
+    "assembled_phase_sin:1/2:-1/2:128",
+    "assembled_phase_cos:1/4:0:32",
+    "assembled_phase_sin:1/4:0:32",
+    "assembled_phase_cos:1/2:0:32",
+    "assembled_phase_sin:1/2:0:32",
+    "zero_pulse_cos:1/4:32",
+    "zero_pulse_sin:1/4:32",
+    "assembled_phase_cos:1/4:0:64",
+    "assembled_phase_sin:1/4:0:64",
+    "assembled_phase_cos:1/2:0:64",
+    "assembled_phase_sin:1/2:0:64",
+    "zero_pulse_cos:1/4:64",
+    "zero_pulse_sin:1/4:64",
+    "assembled_phase_cos:1/4:0:128",
+    "assembled_phase_sin:1/4:0:128",
+    "assembled_phase_cos:1/2:0:128",
+    "assembled_phase_sin:1/2:0:128",
+    "zero_pulse_cos:1/4:128",
+    "zero_pulse_sin:1/4:128",
+    "assembled_phase_cos:1/4:1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:32",
+    "assembled_phase_sin:1/4:1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:32",
+    "assembled_phase_cos:1/2:1/2:32",
+    "assembled_phase_sin:1/2:1/2:32",
+    "assembled_phase_cos:1/4:1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:64",
+    "assembled_phase_sin:1/4:1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:64",
+    "assembled_phase_cos:1/2:1/2:64",
+    "assembled_phase_sin:1/2:1/2:64",
+    "assembled_phase_cos:1/4:1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:128",
+    "assembled_phase_sin:1/4:1585673212216603271397480161971592007150906639997053924377/3138550867693340381917894711603833208051177722232017256448:128",
+    "assembled_phase_cos:1/2:1/2:128",
+    "assembled_phase_sin:1/2:1/2:128",
+    "assembled_phase_cos:1/4:1585673212216603271397480161971592007150906639997053924377/1569275433846670190958947355801916604025588861116008628224:32",
+    "assembled_phase_sin:1/4:1585673212216603271397480161971592007150906639997053924377/1569275433846670190958947355801916604025588861116008628224:32",
+    "assembled_phase_cos:1/2:1:32",
+    "assembled_phase_sin:1/2:1:32",
+    "assembled_phase_cos:1/4:1585673212216603271397480161971592007150906639997053924377/1569275433846670190958947355801916604025588861116008628224:64",
+    "assembled_phase_sin:1/4:1585673212216603271397480161971592007150906639997053924377/1569275433846670190958947355801916604025588861116008628224:64",
+    "assembled_phase_cos:1/2:1:64",
+    "assembled_phase_sin:1/2:1:64",
+    "assembled_phase_cos:1/4:1585673212216603271397480161971592007150906639997053924377/1569275433846670190958947355801916604025588861116008628224:128",
+    "assembled_phase_sin:1/4:1585673212216603271397480161971592007150906639997053924377/1569275433846670190958947355801916604025588861116008628224:128",
+    "assembled_phase_cos:1/2:1:128",
+    "assembled_phase_sin:1/2:1:128",
+    "partition_probability:3/8:32",
+    "partition_mass_mean:3/8:32",
+    "partition_residual_budget:3/8:32",
+    "assembled_phase_cos:3/8:-6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:32",
+    "assembled_phase_sin:3/8:-6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:32",
+    "partition_probability:3/4:32",
+    "partition_mass_mean:3/4:32",
+    "partition_residual_budget:3/4:32",
+    "assembled_phase_cos:3/4:-1/2:32",
+    "assembled_phase_sin:3/4:-1/2:32",
+    "partition_probability:3/8:64",
+    "partition_mass_mean:3/8:64",
+    "partition_residual_budget:3/8:64",
+    "assembled_phase_cos:3/8:-6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:64",
+    "assembled_phase_sin:3/8:-6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:64",
+    "partition_probability:3/4:64",
+    "partition_mass_mean:3/4:64",
+    "partition_residual_budget:3/4:64",
+    "assembled_phase_cos:3/4:-1/2:64",
+    "assembled_phase_sin:3/4:-1/2:64",
+    "partition_probability:3/8:128",
+    "partition_mass_mean:3/8:128",
+    "partition_residual_budget:3/8:128",
+    "assembled_phase_cos:3/8:-6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:128",
+    "assembled_phase_sin:3/8:-6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:128",
+    "partition_probability:3/4:128",
+    "partition_mass_mean:3/4:128",
+    "partition_residual_budget:3/4:128",
+    "assembled_phase_cos:3/4:-1/2:128",
+    "assembled_phase_sin:3/4:-1/2:128",
+    "assembled_phase_cos:3/8:0:32",
+    "assembled_phase_sin:3/8:0:32",
+    "assembled_phase_cos:3/4:0:32",
+    "assembled_phase_sin:3/4:0:32",
+    "zero_pulse_cos:3/8:32",
+    "zero_pulse_sin:3/8:32",
+    "assembled_phase_cos:3/8:0:64",
+    "assembled_phase_sin:3/8:0:64",
+    "assembled_phase_cos:3/4:0:64",
+    "assembled_phase_sin:3/4:0:64",
+    "zero_pulse_cos:3/8:64",
+    "zero_pulse_sin:3/8:64",
+    "assembled_phase_cos:3/8:0:128",
+    "assembled_phase_sin:3/8:0:128",
+    "assembled_phase_cos:3/4:0:128",
+    "assembled_phase_sin:3/4:0:128",
+    "zero_pulse_cos:3/8:128",
+    "zero_pulse_sin:3/8:128",
+    "assembled_phase_cos:3/8:6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:32",
+    "assembled_phase_sin:3/8:6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:32",
+    "assembled_phase_cos:3/4:1/2:32",
+    "assembled_phase_sin:3/4:1/2:32",
+    "assembled_phase_cos:3/8:6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:64",
+    "assembled_phase_sin:3/8:6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:64",
+    "assembled_phase_cos:3/4:1/2:64",
+    "assembled_phase_sin:3/4:1/2:64",
+    "assembled_phase_cos:3/8:6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:128",
+    "assembled_phase_sin:3/8:6425259212081548436770363043587008789933813328303283561335/12554203470773361527671578846415332832204710888928069025792:128",
+    "assembled_phase_cos:3/4:1/2:128",
+    "assembled_phase_sin:3/4:1/2:128",
+    "assembled_phase_cos:3/8:12850518424163096873540726087174017579867626656606567122669/12554203470773361527671578846415332832204710888928069025792:32",
+    "assembled_phase_sin:3/8:12850518424163096873540726087174017579867626656606567122669/12554203470773361527671578846415332832204710888928069025792:32",
+    "assembled_phase_cos:3/4:1:32",
+    "assembled_phase_sin:3/4:1:32",
+    "assembled_phase_cos:3/8:12850518424163096873540726087174017579867626656606567122669/12554203470773361527671578846415332832204710888928069025792:64",
+    "assembled_phase_sin:3/8:12850518424163096873540726087174017579867626656606567122669/12554203470773361527671578846415332832204710888928069025792:64",
+    "assembled_phase_cos:3/4:1:64",
+    "assembled_phase_sin:3/4:1:64",
+    "assembled_phase_cos:3/8:12850518424163096873540726087174017579867626656606567122669/12554203470773361527671578846415332832204710888928069025792:128",
+    "assembled_phase_sin:3/8:12850518424163096873540726087174017579867626656606567122669/12554203470773361527671578846415332832204710888928069025792:128",
+    "assembled_phase_cos:3/4:1:128",
+    "assembled_phase_sin:3/4:1:128",
+    "nested_partition_progress:1/8:64",
+    "nested_partition_progress:1/8:128",
+    "nested_partition_progress:1/4:64",
+    "nested_partition_progress:1/4:128",
+    "nested_partition_progress:1/2:64",
+    "nested_partition_progress:1/2:128",
+    "nested_partition_progress:3/8:64",
+    "nested_partition_progress:3/8:128",
+    "nested_partition_progress:3/4:64",
+    "nested_partition_progress:3/4:128",
+    "time_reversal_cos:1/8:0",
+    "time_reversal_sin:1/8:0",
+    "time_reversal_cos:1/8:1",
+    "time_reversal_sin:1/8:1",
+    "time_reversal_cos:1/8:2",
+    "time_reversal_sin:1/8:2",
+    "time_reversal_cos:1/4:0",
+    "time_reversal_sin:1/4:0",
+    "time_reversal_cos:1/4:1",
+    "time_reversal_sin:1/4:1",
+    "time_reversal_cos:1/4:2",
+    "time_reversal_sin:1/4:2",
+    "time_reversal_cos:3/8:0",
+    "time_reversal_sin:3/8:0",
+    "time_reversal_cos:3/8:1",
+    "time_reversal_sin:3/8:1",
+    "time_reversal_cos:3/8:2",
+    "time_reversal_sin:3/8:2"
+  ],
+  "negative_control_names": [
+    "naive_classical_density_shift",
+    "reversing_pulse_sign_changes_sine",
+    "omitting_detector_overlap_factor",
+    "phase_orientation_detected"
+  ],
+  "scope": "Certified continuum uniform-vacuum marginal expectations conditional on the frozen LMD/common-parent theorem. Native conditional-expectation solver with exact NRQC phase-node queries.",
+  "requested_probability_halfwidth": "1/200",
+  "cases_certified_within_tolerance": 8,
+  "total_cases": 12,
+  "summary": [
+    {
+      "h": "1/8",
+      "t": "-1/4",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.880368744",
+        "0.881274763"
+      ],
+      "actual_sin_plus": [
+        "0.291428288",
+        "0.292334307"
+      ],
+      "naive_cos_plus": [
+        "0.872931701",
+        "0.877491417"
+      ],
+      "separation": {
+        "cos": true,
+        "sin": true
+      },
+      "tolerance": "certified_within_requested_halfwidth"
+    },
+    {
+      "h": "1/8",
+      "t": "0",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.941248451",
+        "0.941248452"
+      ],
+      "actual_sin_plus": [
+        "0.500000000",
+        "0.500000000"
+      ],
+      "naive_cos_plus": [
+        "0.941248451",
+        "0.941248452"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": false
+      },
+      "tolerance": "certified_within_requested_halfwidth"
+    },
+    {
+      "h": "1/8",
+      "t": "1/4",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.880368744",
+        "0.881274763"
+      ],
+      "actual_sin_plus": [
+        "0.707665693",
+        "0.708571712"
+      ],
+      "naive_cos_plus": [
+        "0.872931701",
+        "0.877491417"
+      ],
+      "separation": {
+        "cos": true,
+        "sin": true
+      },
+      "tolerance": "certified_within_requested_halfwidth"
+    },
+    {
+      "h": "1/8",
+      "t": "1/2",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.723750532",
+        "0.727364357"
+      ],
+      "actual_sin_plus": [
+        "0.844641372",
+        "0.848255197"
+      ],
+      "naive_cos_plus": [
+        "0.712600290",
+        "0.730828904"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": true
+      },
+      "tolerance": "certified_within_requested_halfwidth"
+    },
+    {
+      "h": "1/4",
+      "t": "-1/4",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.827928675",
+        "0.832037081"
+      ],
+      "actual_sin_plus": [
+        "0.317734286",
+        "0.321842692"
+      ],
+      "naive_cos_plus": [
+        "0.808011752",
+        "0.837640911"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": false
+      },
+      "tolerance": "certified_within_requested_halfwidth"
+    },
+    {
+      "h": "1/4",
+      "t": "0",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.889400391",
+        "0.889400392"
+      ],
+      "actual_sin_plus": [
+        "0.500000000",
+        "0.500000000"
+      ],
+      "naive_cos_plus": [
+        "0.889400391",
+        "0.889400392"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": false
+      },
+      "tolerance": "certified_within_requested_halfwidth"
+    },
+    {
+      "h": "1/4",
+      "t": "1/4",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.827928675",
+        "0.832037081"
+      ],
+      "actual_sin_plus": [
+        "0.678157308",
+        "0.682265714"
+      ],
+      "naive_cos_plus": [
+        "0.808011752",
+        "0.837640911"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": false
+      },
+      "tolerance": "certified_within_requested_halfwidth"
+    },
+    {
+      "h": "1/4",
+      "t": "1/2",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.684321785",
+        "0.700746361"
+      ],
+      "actual_sin_plus": [
+        "0.774610662",
+        "0.791035239"
+      ],
+      "naive_cos_plus": [
+        "0.641356712",
+        "0.759864301"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": false
+      },
+      "tolerance": "certified_enclosure_tolerance_not_met"
+    },
+    {
+      "h": "3/8",
+      "t": "-1/4",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.780280412",
+        "0.791352807"
+      ],
+      "actual_sin_plus": [
+        "0.338979191",
+        "0.350051587"
+      ],
+      "naive_cos_plus": [
+        "0.708268692",
+        "0.852573234"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": false
+      },
+      "tolerance": "certified_enclosure_tolerance_not_met"
+    },
+    {
+      "h": "3/8",
+      "t": "0",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.843644639",
+        "0.843644640"
+      ],
+      "actual_sin_plus": [
+        "0.500000000",
+        "0.500000000"
+      ],
+      "naive_cos_plus": [
+        "0.843644639",
+        "0.843644640"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": false
+      },
+      "tolerance": "certified_within_requested_halfwidth"
+    },
+    {
+      "h": "3/8",
+      "t": "1/4",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.780280412",
+        "0.791352807"
+      ],
+      "actual_sin_plus": [
+        "0.649948413",
+        "0.661020809"
+      ],
+      "naive_cos_plus": [
+        "0.708268692",
+        "0.852573234"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": false
+      },
+      "tolerance": "certified_enclosure_tolerance_not_met"
+    },
+    {
+      "h": "3/8",
+      "t": "1/2",
+      "k": "2",
+      "actual_cos_plus": [
+        "0.645785189",
+        "0.690066787"
+      ],
+      "actual_sin_plus": [
+        "0.709046229",
+        "0.753327826"
+      ],
+      "naive_cos_plus": [
+        "0.398898506",
+        "0.976108692"
+      ],
+      "separation": {
+        "cos": false,
+        "sin": false
+      },
+      "tolerance": "certified_enclosure_tolerance_not_met"
+    }
+  ],
+  "phase_error_bound": "583121084568000664230982043198763270574887210387248669/150650441649280338332058946156983993986456530667136828309504",
+  "hardware_called": false,
+  "full_field_circuit_executed": false,
+  "advantage_claimed": false
+}
