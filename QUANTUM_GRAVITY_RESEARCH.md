@@ -1,5 +1,13 @@
 # Quantum gravity: canonical research record
 
+## 31 October 2026: full mass-law certificate closes the selected uniform accuracy gate
+
+[Exact-mass marginal](papers/native-lmd-exact-mass-marginal/THEOREM.md) audits and applies Rémy's proved circular GMC total-mass law to the existing LMD covariance, retaining the independent zero mode and Wick normalization. This is a new, explicitly credited analytic dependency. A native rational conditional solver includes all spatial contributions to this scalar law, with positive Gamma cell integrals and both endpoint tails. The physical source, pulse, detector and target tolerance are unchanged; an eight-mode or full field-state circuit is not claimed.
+
+[Frozen execution](papers/native-lmd-exact-mass-marginal/EXECUTION.md): 239 checks and ten negative controls pass in 87.976 s, with zero new NRQC requests and nine pinned phase outputs reused. The remaining h=3/8,t=1/2,k=2 case now has cosine '+' probability [0.670953808,0.671586342] and sine '+' probability [0.721602998,0.722235532]. Its halfwidth falls from about 1.30166 to at most 0.031626657 percentage points. Both refinements meet the original 1/200 target. With eleven retained predecessor certifications, all twelve original cases now meet that selected accuracy; only four cases, including controls, were newly executed. Two matched mass moments are demonstrably insufficient to replace the full-law theorem.
+
+The [next gate](papers/native-lmd-exact-mass-marginal/NEXT_STEP.md) is a nonuniform positive source w=1+e cos(2 pi z). Its exact second moment is I(h)[1+e^2 h/(2(2-h))], so unchanged uniform-law sampling is already excluded. This note is an analytic target and mismatch witness, not an executed weighted solver. Joint geometry and currents, calibration covariance, domains, fixed-h smoothing removal, autonomous gravity and physical 3+1 dynamics remain open. All predecessor packets below remain frozen.
+
 ## 31 October 2026: first spatial-mode conditioning and the relative-phase boundary
 
 [First-mode source refinement](papers/native-lmd-first-mode-pulse-solver/THEOREM.md) now includes the first nonzero sine/cosine pair in the existing uniform-pulse expectation solver. Its common orientation integrates out for total mass, leaving the zero mode and one radial variable. Positive Poisson/Gamma cell masses retain every tail; the complete quadratic source-error certificate includes higher modes and both binning errors. The original source, pulse, detector and target tolerance are unchanged. Nine pinned predecessor NRQC phase outputs are reused; there are no fresh calculator or hardware requests.

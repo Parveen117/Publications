@@ -1,5 +1,13 @@
 # Research closure ledger
 
+## 31 October 2026: selected uniform-pulse probability accuracy completed
+
+[Exact-mass marginal](papers/native-lmd-exact-mass-marginal/THEOREM.md) closes the last of the original twelve selected probability cases at halfwidth 1/200, conditional on the frozen LMD/common-parent construction and a newly credited external theorem: Rémy's circular GMC total-mass law. Covariance, zero mode, Wick subtraction and circle normalization are explicitly audited. The native solver uses positive conditional cells with no discarded tails and the prior phase engine; it is a scalar expectation computation, not a whole-field quantum circuit.
+
+[Execution](papers/native-lmd-exact-mass-marginal/EXECUTION.md): 239 checks and ten negative controls pass; four cases and two refinements, 87.976 s native runtime, zero fresh NRQC requests, nine reused outputs. The remaining case's halfwidth is at most 0.031626657 percentage points, versus about 1.30166 in the predecessor. The 12/12 total combines eleven retained certifications with this one new original-case success. A moment-matched counterexample is rejected, preserving the distinction between a full-law theorem and moment checks.
+
+The uniform marginal accuracy gate is closed for these inputs and dependencies. A nonuniform source's different second moment supplies a [specific next boundary](papers/native-lmd-exact-mass-marginal/NEXT_STEP.md). Nonuniform/joint geometry, calibration, domains, autonomous gravity, physical 3+1 dynamics and hardware realization remain open. Frozen predecessor evidence is unchanged.
+
 ## 31 October 2026: three accuracy cases closed by first-mode conditioning
 
 [First-mode conditional solver](papers/native-lmd-first-mode-pulse-solver/THEOREM.md) adds the first spatial Gaussian pair to the unchanged uniform-vacuum expectation. The radial reduction, positive Poisson/Gamma cell identities and full variance decomposition have written derivations. [Execution](papers/native-lmd-first-mode-pulse-solver/EXECUTION.md): 234 checks, eight negative controls, three of four earlier wide cases newly within probability halfwidth 1/200. Eight retained predecessor passes plus these three give 11/12; the final case remains tolerance-not-met. Nine earlier NRQC outputs are reused, with no fresh calculator/hardware calls. All predecessor packets remain frozen.

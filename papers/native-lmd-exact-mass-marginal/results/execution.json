@@ -1,0 +1,24 @@
+{
+  "boundary": "Native scalar mass-law solver using an explicitly credited theorem and pinned NRQC phase outputs; no field-state circuit or new gravitational dynamics.",
+  "ci_dispatched": false,
+  "fresh_nrqc_requests": 0,
+  "frozen_parent": "ace56a0a3faa21708e4a6779c8e4a8f02dab70e0",
+  "hardware_called": false,
+  "native_solver_seconds": 87.97588803700091,
+  "new_external_dependency": "Remy arXiv:1710.06897v3 Theorem 1.1 equation 1.9; beta^2=2h; independent zero mode retained",
+  "node": "v24.22.1",
+  "nrqc_commit": "fdd39048a6ddaa2dd78aa3197c274d7766f31a0e",
+  "protocol_commit": "5fde12e85080a1f086295c8234d2922d1d27271f",
+  "python": "3.12.14",
+  "reused_nrqc_requests": 9,
+  "source_sha256": {
+    "SOURCE_AUDIT.md": "f4d59916d6d3a70694cee027dd36d69bd51fd46d284792f04ae8e3ea068dd2b0",
+    "SOURCE_PINS.json": "ed74a06e59bdd1e552fed52ee781a8134cd50ffefbca5bbd37e3a5a98624dc59",
+    "THEOREM.md": "0d6f341b9d1f10a2109b87b2ea2cd2cf64f41d5e4b279232f3604febabe609b3",
+    "request.json": "f4d937ce2eb67a73a4ae3da3bf73eea95bf3721218cb5d71a57c4ef3282eae72",
+    "run.py": "13de8195ee41087c33218ecc6fc876ee9919a40a421962dd9b7269bab2999eeb",
+    "solve.cjs": "9a2fbc6ee3fbdd2424891117bf9577a47e296d248b603af8dfc1642a3cc0901c",
+    "source.cjs": "c1d136e7eb7e8a4673feb82b28a1848d6423d446c12323b66fd87d2ff39d5cae",
+    "verify.cjs": "66f830b0b6f64fc55d8b34e3d253f18a0841c302349331bc401f1143a1750127"
+  }
+}

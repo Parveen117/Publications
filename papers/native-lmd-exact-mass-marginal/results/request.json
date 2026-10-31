@@ -1,0 +1,21 @@
+{
+  "schema": "lmd-exact-total-mass-marginal-v1",
+  "cases": [
+    {"id": "remaining", "h": "3/8", "t": "1/2", "k": "2"},
+    {"id": "reverse", "h": "3/8", "t": "-1/2", "k": "2"},
+    {"id": "overlap", "h": "1/8", "t": "1/4", "k": "2"},
+    {"id": "zero", "h": "3/8", "t": "0", "k": "2"}
+  ],
+  "partitions": [
+    {"q_bins": 32, "subdivisions_per_octave": 2},
+    {"q_bins": 64, "subdivisions_per_octave": 4}
+  ],
+  "q_radius": "2",
+  "exponential_octaves": [-16, 4],
+  "gamma_integral_endpoint": "64",
+  "gamma_series_max_index": 384,
+  "maximum_probability_halfwidth": "1/200",
+  "new_external_dependency": "Remy arXiv:1710.06897v3 Theorem 1.1 equation 1.9; beta^2=2h; independent zero mode retained",
+  "nrqc_phase_data": "reuse all nine original pinned phase outputs; zero new requests",
+  "selection": "remaining accuracy case plus time reversal, one predecessor overlap and zero pulse; frozen before evaluation"
+}
