@@ -1,5 +1,13 @@
 # Quantum gravity: canonical research record
 
+## 31 October 2026: nonuniform source readout and a joint mass-harmonic route
+
+[Nonuniform pulse solver](papers/native-lmd-nonuniform-pulse-solver/THEOREM.md) implements w=1+e cos(2 pi z) on the existing LMD source and total-label detector. Its conditional source retains the angle relative to the profile; positive half-Gamma radial cells and an ordinary-Bessel angular integral preserve the modulation's effect. The complete certificate includes omitted spatial modes and both finite source partitions. The mean label response remains t while its variance changes with the profile.
+
+[Frozen execution](papers/native-lmd-nonuniform-pulse-solver/EXECUTION.md): 266 checks and eleven negative controls pass in 351.998 s. Eight of nine cases meet halfwidth 1/200 at both refinements, including four of five primary nonuniform cases. At h=1/8,t=1/2,k=2, e=3/4 gives sine '+' probability [0.840676900,0.843121654], disjoint from the uniform [0.844775485,0.846462258]. The e=1/2 comparison overlaps and is retained without a separation claim. The difficult h=3/8,t=1/2,e=1/2 case remains tolerance-unmet at <=1.503753890 percentage points halfwidth; its ideal first-mode budget already exceeds target. Nine old NRQC phase outputs are reused, with no new calculator or hardware requests.
+
+A separate [post-run analytic derivation](papers/native-lmd-nonuniform-pulse-solver/EXACT_JOINT_LAW.md) applies the credited Chhaibi--Najnudel measure-valued theorem with audited normalization. It obtains the joint law of total mass and the first Fourier mass, including their dependence, and a positive-cell solver contract without a Fourier cutoff term. This is a written conditional result under a new external theorem; that representation has not been numerically executed here. Its implementation is the next target. The prior uniform 12/12 evidence remains frozen. Joint detector/geometry laws, calibration, domains, autonomous gravity, physical 3+1 dynamics and hardware realization remain open.
+
 ## 31 October 2026: full mass-law certificate closes the selected uniform accuracy gate
 
 [Exact-mass marginal](papers/native-lmd-exact-mass-marginal/THEOREM.md) audits and applies Rémy's proved circular GMC total-mass law to the existing LMD covariance, retaining the independent zero mode and Wick normalization. This is a new, explicitly credited analytic dependency. A native rational conditional solver includes all spatial contributions to this scalar law, with positive Gamma cell integrals and both endpoint tails. The physical source, pulse, detector and target tolerance are unchanged; an eight-mode or full field-state circuit is not claimed.

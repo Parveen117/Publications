@@ -1,0 +1,21 @@
+{
+  "schema": "lmd-nonuniform-first-mode-pulse-v1",
+  "cases": [
+    {"id": "small_h", "h": "1/8", "t": "1/2", "k": "2", "e": "1/2"},
+    {"id": "middle_h", "h": "1/4", "t": "1/4", "k": "2", "e": "1/2"},
+    {"id": "large_h", "h": "3/8", "t": "1/4", "k": "2", "e": "1/2"},
+    {"id": "difficult", "h": "3/8", "t": "1/2", "k": "2", "e": "1/2"},
+    {"id": "strong_modulation", "h": "1/8", "t": "1/2", "k": "2", "e": "3/4"},
+    {"id": "amplitude_sign", "h": "1/8", "t": "1/2", "k": "2", "e": "-1/2"},
+    {"id": "time_reverse", "h": "1/8", "t": "-1/2", "k": "2", "e": "1/2"},
+    {"id": "zero_pulse", "h": "1/8", "t": "0", "k": "2", "e": "1/2"},
+    {"id": "uniform_reference", "h": "1/8", "t": "1/2", "k": "2", "e": "0"}
+  ],
+  "partitions": [{"q_bins": 64, "radial_bins": 16}, {"q_bins": 128, "radial_bins": 32}],
+  "q_radius": "2", "radial_endpoint": "16", "gamma_mixture_max_index": 32,
+  "angular_series_rules": [["1",16],["4",24],["16",40],["32",64]],
+  "angular_large_argument_fallback": "[-1,1]; retain and record cell weight",
+  "maximum_probability_halfwidth": "1/200",
+  "nrqc_phase_data": "reuse nine pinned outputs, zero fresh requests",
+  "selection": "nine cases and both refinements frozen before evaluation; retain unmet tolerance and overlapping comparisons"
+}

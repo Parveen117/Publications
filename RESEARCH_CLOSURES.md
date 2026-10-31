@@ -1,5 +1,11 @@
 # Research closure ledger
 
+## 31 October 2026: first nonuniform source certificate and bounded profile witness
+
+[Nonuniform marginal solver](papers/native-lmd-nonuniform-pulse-solver/THEOREM.md) is executable for the selected positive first-harmonic source family on the unchanged LMD/common-parent model. Its phase-retaining source conditional, half-Gamma cell integrals, angular Bessel average and complete error budget have written derivations. [Execution](papers/native-lmd-nonuniform-pulse-solver/EXECUTION.md): 266 checks and eleven negative controls pass; eight of nine cases (four of five primary nonuniform cases) meet halfwidth 1/200. A strong modulation has a sine '+' enclosure disjoint from the uniform source at equal integrated strength. A weaker comparison remains overlapping. The difficult case remains wider, with a documented first-mode certificate obstacle. Nine old phase outputs are reused; no fresh NRQC/hardware calls or advantage claim.
+
+[Exact joint source law](papers/native-lmd-nonuniform-pulse-solver/EXACT_JOINT_LAW.md): written derivation of (total mass, first Fourier mass) under the newly credited Chhaibi--Najnudel theorem and an explicit source-normalization audit. Mass/shape dependence is retained; an independent-shape shortcut is rejected analytically. A positive Gamma/Beta cell contract is supplied, but its numerical implementation and qualification remain open. This result is not used by the frozen first-mode run and does not close its unmet tolerance retrospectively. Joint detector/geometry laws, calibration, domains, autonomous gravity, physical 3+1 dynamics and hardware remain separate obligations. All predecessor packets are preserved.
+
 ## 31 October 2026: selected uniform-pulse probability accuracy completed
 
 [Exact-mass marginal](papers/native-lmd-exact-mass-marginal/THEOREM.md) closes the last of the original twelve selected probability cases at halfwidth 1/200, conditional on the frozen LMD/common-parent construction and a newly credited external theorem: Rémy's circular GMC total-mass law. Covariance, zero mode, Wick subtraction and circle normalization are explicitly audited. The native solver uses positive conditional cells with no discarded tails and the prior phase engine; it is a scalar expectation computation, not a whole-field quantum circuit.
