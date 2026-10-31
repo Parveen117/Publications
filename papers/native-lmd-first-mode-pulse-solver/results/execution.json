@@ -1,0 +1,23 @@
+{
+  "boundary": "Native two-variable conditional solver using pinned prior NRQC phase outputs; no field-state circuit or new gravitational dynamics.",
+  "ci_dispatched": false,
+  "fresh_nrqc_requests": 0,
+  "frozen_parent": "13389614767542792097c189dcf6e11747806b42",
+  "hardware_called": false,
+  "native_solver_seconds": 82.7302700679993,
+  "node": "v24.22.1",
+  "nrqc_commit": "fdd39048a6ddaa2dd78aa3197c274d7766f31a0e",
+  "protocol_commit": "917d68f28da80bb7d4a8c8690ce43b686c0b4d7c",
+  "python": "3.12.14",
+  "reused_nrqc_requests": 9,
+  "source_sha256": {
+    "SOURCE_PINS.json": "1326167c2b3c96721b63f27fbefb3dc21d8e5d8686d8ec95b7562d85334c67d4",
+    "THEOREM.md": "644d4d5eb4c0a4c39e493c20be4bfb1425f7cc7800fbf4c015d07ae93bb77389",
+    "phase.cjs": "e71d1723dd810f199715c264063dbb5ecbcddbfe496386d2c481814ce6b2683d",
+    "request.json": "a5c62fa9da0ba51baf56d981ddb492fd7433b98db85f599b94ae82f6f731ad9f",
+    "run.py": "14fb9b5b56c09c0724d013b40218221b068068601b9a1477a7c292238e4357a9",
+    "solve.cjs": "251b9e53d8eceacf68d493e42f7e7299ad0aece9ee2956998b149488e322de71",
+    "source.cjs": "2e8c2525b486fb96b23332ad6f32803b2aad3a800c7b3e7864f48e1619c0176c",
+    "verify.cjs": "649885a598a7793e6fb911a15efe693e0edf4cfd44e8662116aeabfb0cbbe6d3"
+  }
+}
