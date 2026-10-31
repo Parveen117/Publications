@@ -1,0 +1,21 @@
+{
+  "schema": "lmd-first-spatial-mode-pulse-v1",
+  "cases": [
+    {"h": "1/4", "t": "1/2", "k": "2"},
+    {"h": "3/8", "t": "-1/4", "k": "2"},
+    {"h": "3/8", "t": "1/4", "k": "2"},
+    {"h": "3/8", "t": "1/2", "k": "2"}
+  ],
+  "partitions": [
+    {"q_bins": 64, "radial_bins": 16},
+    {"q_bins": 128, "radial_bins": 32}
+  ],
+  "q_radius": "2",
+  "radial_endpoint": "16",
+  "poisson_max_index": 32,
+  "bessel_max_index": 32,
+  "maximum_probability_halfwidth": "1/200",
+  "nrqc_phase_data": "reuse all nine pinned predecessor results; no new requests",
+  "selection": "four previously unresolved cases, fixed before evaluation; no source-family or tolerance changes",
+  "baseline": "128-bin predecessor results, unchanged; earlier eight passes retained with predecessor provenance"
+}
