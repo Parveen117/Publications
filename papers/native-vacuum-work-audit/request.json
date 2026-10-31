@@ -1,0 +1,412 @@
+{
+  "schema": "nrqc-calculator-v1",
+  "n_qubits": 10,
+  "backend": "cyclotomic64",
+  "decimal_places": 24,
+  "operations": [
+    [
+      "p16",
+      [
+        1
+      ]
+    ],
+    [
+      "h",
+      [
+        2
+      ]
+    ],
+    [
+      "s",
+      [
+        2
+      ]
+    ],
+    [
+      "h",
+      [
+        2
+      ]
+    ],
+    [
+      "h",
+      [
+        3
+      ]
+    ],
+    [
+      "s",
+      [
+        3
+      ]
+    ],
+    [
+      "h",
+      [
+        3
+      ]
+    ],
+    [
+      "h",
+      [
+        3
+      ]
+    ],
+    [
+      "sdg",
+      [
+        3
+      ]
+    ],
+    [
+      "h",
+      [
+        3
+      ]
+    ],
+    [
+      "h",
+      [
+        4
+      ]
+    ],
+    [
+      "t",
+      [
+        4
+      ]
+    ],
+    [
+      "h",
+      [
+        4
+      ]
+    ],
+    [
+      "h",
+      [
+        5
+      ]
+    ],
+    [
+      "t",
+      [
+        5
+      ]
+    ],
+    [
+      "h",
+      [
+        5
+      ]
+    ],
+    [
+      "h",
+      [
+        5
+      ]
+    ],
+    [
+      "tdg",
+      [
+        5
+      ]
+    ],
+    [
+      "h",
+      [
+        5
+      ]
+    ],
+    [
+      "h",
+      [
+        6
+      ]
+    ],
+    [
+      "p16",
+      [
+        6
+      ]
+    ],
+    [
+      "h",
+      [
+        6
+      ]
+    ],
+    [
+      "h",
+      [
+        7
+      ]
+    ],
+    [
+      "p16",
+      [
+        7
+      ]
+    ],
+    [
+      "h",
+      [
+        7
+      ]
+    ],
+    [
+      "h",
+      [
+        7
+      ]
+    ],
+    [
+      "p16dg",
+      [
+        7
+      ]
+    ],
+    [
+      "h",
+      [
+        7
+      ]
+    ],
+    [
+      "h",
+      [
+        8
+      ]
+    ],
+    [
+      "sdg",
+      [
+        8
+      ]
+    ],
+    [
+      "h",
+      [
+        8
+      ]
+    ],
+    [
+      "h",
+      [
+        9
+      ]
+    ],
+    [
+      "s",
+      [
+        9
+      ]
+    ],
+    [
+      "h",
+      [
+        9
+      ]
+    ],
+    [
+      "h",
+      [
+        9
+      ]
+    ],
+    [
+      "s",
+      [
+        9
+      ]
+    ],
+    [
+      "h",
+      [
+        9
+      ]
+    ]
+  ],
+  "queries": [
+    {
+      "id": "idle_Z",
+      "kind": "expectation",
+      "paulis": {
+        "0": "Z"
+      }
+    },
+    {
+      "id": "idle_Y",
+      "kind": "expectation",
+      "paulis": {
+        "0": "Y"
+      }
+    },
+    {
+      "id": "ground_phase_Z",
+      "kind": "expectation",
+      "paulis": {
+        "1": "Z"
+      }
+    },
+    {
+      "id": "ground_phase_Y",
+      "kind": "expectation",
+      "paulis": {
+        "1": "Y"
+      }
+    },
+    {
+      "id": "drive_s_Z",
+      "kind": "expectation",
+      "paulis": {
+        "2": "Z"
+      }
+    },
+    {
+      "id": "drive_s_Y",
+      "kind": "expectation",
+      "paulis": {
+        "2": "Y"
+      }
+    },
+    {
+      "id": "return_s_Z",
+      "kind": "expectation",
+      "paulis": {
+        "3": "Z"
+      }
+    },
+    {
+      "id": "return_s_Y",
+      "kind": "expectation",
+      "paulis": {
+        "3": "Y"
+      }
+    },
+    {
+      "id": "drive_t_Z",
+      "kind": "expectation",
+      "paulis": {
+        "4": "Z"
+      }
+    },
+    {
+      "id": "drive_t_Y",
+      "kind": "expectation",
+      "paulis": {
+        "4": "Y"
+      }
+    },
+    {
+      "id": "return_t_Z",
+      "kind": "expectation",
+      "paulis": {
+        "5": "Z"
+      }
+    },
+    {
+      "id": "return_t_Y",
+      "kind": "expectation",
+      "paulis": {
+        "5": "Y"
+      }
+    },
+    {
+      "id": "drive_p16_Z",
+      "kind": "expectation",
+      "paulis": {
+        "6": "Z"
+      }
+    },
+    {
+      "id": "drive_p16_Y",
+      "kind": "expectation",
+      "paulis": {
+        "6": "Y"
+      }
+    },
+    {
+      "id": "return_p16_Z",
+      "kind": "expectation",
+      "paulis": {
+        "7": "Z"
+      }
+    },
+    {
+      "id": "return_p16_Y",
+      "kind": "expectation",
+      "paulis": {
+        "7": "Y"
+      }
+    },
+    {
+      "id": "opposite_Z",
+      "kind": "expectation",
+      "paulis": {
+        "8": "Z"
+      }
+    },
+    {
+      "id": "opposite_Y",
+      "kind": "expectation",
+      "paulis": {
+        "8": "Y"
+      }
+    },
+    {
+      "id": "wrong_return_Z",
+      "kind": "expectation",
+      "paulis": {
+        "9": "Z"
+      }
+    },
+    {
+      "id": "wrong_return_Y",
+      "kind": "expectation",
+      "paulis": {
+        "9": "Y"
+      }
+    },
+    {
+      "id": "normalization",
+      "kind": "expectation",
+      "paulis": {}
+    },
+    {
+      "id": "drive_s_excited",
+      "kind": "probability",
+      "outcomes": {
+        "2": 1
+      }
+    },
+    {
+      "id": "drive_t_excited",
+      "kind": "probability",
+      "outcomes": {
+        "4": 1
+      }
+    },
+    {
+      "id": "drive_p16_excited",
+      "kind": "probability",
+      "outcomes": {
+        "6": 1
+      }
+    },
+    {
+      "id": "opposite_excited",
+      "kind": "probability",
+      "outcomes": {
+        "8": 1
+      }
+    },
+    {
+      "id": "wrong_return_excited",
+      "kind": "probability",
+      "outcomes": {
+        "9": 1
+      }
+    }
+  ]
+}
