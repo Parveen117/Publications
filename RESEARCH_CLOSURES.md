@@ -1,5 +1,9 @@
 # Research closure ledger
 
+## 31 October 2026: finite work-accounting calibration, no vacuum-extraction closure
+
+[Vacuum-work audit](papers/native-vacuum-work-audit/README.md): one fresh NRQC request, ten finite calibration cases, 50 checks and six negative controls pass. A supplied positive-gap Hamiltonian gives exact zero net gain for three complete ideal drive/recovery cycles. Basis covariance and absolute-offset independence of cycle work are verified; omitted drive energy and nonclosed cycles are detected. These are finite implementation checks under an added Hamiltonian. No physical load, vacuum-field model, gravity energy generator or zero-point energy extraction is demonstrated. The physical energy/coupling/reset/backreaction construction remains open, alongside the existing QG obligations. Prior certificates and the pending joint-law solver are preserved.
+
 ## 31 October 2026: first nonuniform source certificate and bounded profile witness
 
 [Nonuniform marginal solver](papers/native-lmd-nonuniform-pulse-solver/THEOREM.md) is executable for the selected positive first-harmonic source family on the unchanged LMD/common-parent model. Its phase-retaining source conditional, half-Gamma cell integrals, angular Bessel average and complete error budget have written derivations. [Execution](papers/native-lmd-nonuniform-pulse-solver/EXECUTION.md): 266 checks and eleven negative controls pass; eight of nine cases (four of five primary nonuniform cases) meet halfwidth 1/200. A strong modulation has a sine '+' enclosure disjoint from the uniform source at equal integrated strength. A weaker comparison remains overlapping. The difficult case remains wider, with a documented first-mode certificate obstacle. Nine old phase outputs are reused; no fresh NRQC/hardware calls or advantage claim.

@@ -1,5 +1,11 @@
 # Quantum gravity: canonical research record
 
+## 31 October 2026: vacuum-work feasibility and an explicit energy-model boundary
+
+[Finite work audit](papers/native-vacuum-work-audit/README.md) checks the proposal to extract zero-point energy using observer dynamics. One fresh pinned NRQC request executes ten calibration cases; 50 checks and six negative controls pass. For the supplied Hamiltonian E_off I+Delta(I-Z)/2, driven pi/2, pi/4 and pi/8 rotations increase bare energy; their inverses return exactly to the ground state, with zero net ideal cycle gain. Passive co-transformation of state and energy observable preserves energy. Omitting drive input, changing only the state, counting an absolute offset as work, or failing to return the state produces the expected false-gain or open-cycle controls.
+
+This is a declared finite energy-accounting calibration, not an energy Hamiltonian derived from LMD or a physical vacuum/gravity simulation. The prior dimensionless source/detector probabilities do not imply work extraction. A physical generator, actuator, load, reset account and backreaction remain required. Driven vacuum-correlated conversion and information-assisted recovery are research directions with external or prepared resources; vacuum-only net-power extraction is not established. No hardware or CI was called. The nonuniform/joint-law work and every earlier packet remain unchanged.
+
 ## 31 October 2026: nonuniform source readout and a joint mass-harmonic route
 
 [Nonuniform pulse solver](papers/native-lmd-nonuniform-pulse-solver/THEOREM.md) implements w=1+e cos(2 pi z) on the existing LMD source and total-label detector. Its conditional source retains the angle relative to the profile; positive half-Gamma radial cells and an ordinary-Bessel angular integral preserve the modulation's effect. The complete certificate includes omitted spatial modes and both finite source partitions. The mean label response remains t while its variance changes with the profile.

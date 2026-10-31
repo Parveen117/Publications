@@ -1,0 +1,698 @@
+{
+  "status": "PASS",
+  "checks": 50,
+  "negative_controls": 6,
+  "check_names": [
+    "normalization_exact",
+    "Z_vs_Taylor:idle",
+    "Y_vs_Taylor:idle",
+    "co_transformed_energy:idle",
+    "ground_or_closed_cycle_exact:idle",
+    "Z_vs_Taylor:ground_phase",
+    "Y_vs_Taylor:ground_phase",
+    "co_transformed_energy:ground_phase",
+    "ground_or_closed_cycle_exact:ground_phase",
+    "Z_vs_Taylor:drive_s",
+    "Y_vs_Taylor:drive_s",
+    "co_transformed_energy:drive_s",
+    "independent_probability_query:drive_s",
+    "Z_vs_Taylor:return_s",
+    "Y_vs_Taylor:return_s",
+    "co_transformed_energy:return_s",
+    "ground_or_closed_cycle_exact:return_s",
+    "Z_vs_Taylor:drive_t",
+    "Y_vs_Taylor:drive_t",
+    "co_transformed_energy:drive_t",
+    "independent_probability_query:drive_t",
+    "Z_vs_Taylor:return_t",
+    "Y_vs_Taylor:return_t",
+    "co_transformed_energy:return_t",
+    "ground_or_closed_cycle_exact:return_t",
+    "Z_vs_Taylor:drive_p16",
+    "Y_vs_Taylor:drive_p16",
+    "co_transformed_energy:drive_p16",
+    "independent_probability_query:drive_p16",
+    "Z_vs_Taylor:return_p16",
+    "Y_vs_Taylor:return_p16",
+    "co_transformed_energy:return_p16",
+    "ground_or_closed_cycle_exact:return_p16",
+    "Z_vs_Taylor:opposite",
+    "Y_vs_Taylor:opposite",
+    "co_transformed_energy:opposite",
+    "independent_probability_query:opposite",
+    "Z_vs_Taylor:wrong_return",
+    "Y_vs_Taylor:wrong_return",
+    "co_transformed_energy:wrong_return",
+    "independent_probability_query:wrong_return",
+    "drive_cost_positive:s",
+    "return_ground_exact:s",
+    "drive_cost_positive:t",
+    "return_ground_exact:t",
+    "drive_cost_positive:p16",
+    "return_ground_exact:p16",
+    "pi_over_two_cost_exact",
+    "direction_same_energy",
+    "direction_opposite_phase"
+  ],
+  "negative_control_names": [
+    "omit_drive_debit_creates_false_gain:s",
+    "omit_drive_debit_creates_false_gain:t",
+    "omit_drive_debit_creates_false_gain:p16",
+    "state_only_rotation_is_not_passive_basis_change",
+    "wrong_return_does_not_close_cycle",
+    "absolute_offset_is_not_extractable_work"
+  ],
+  "cases": [
+    {
+      "id": "idle",
+      "theta_pi": "0",
+      "z": {
+        "lower": "1",
+        "upper": "1",
+        "display_lower": "1.000000000",
+        "display_upper": "1.000000000"
+      },
+      "y": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "co_moving_excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "0",
+            "upper": "0",
+            "display_lower": "0.000000000",
+            "display_upper": "0.000000000"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "1/2",
+            "upper": "1/2",
+            "display_lower": "0.500000000",
+            "display_upper": "0.500000000"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "100",
+            "upper": "100",
+            "display_lower": "100.000000000",
+            "display_upper": "100.000000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ground_phase",
+      "theta_pi": "0",
+      "z": {
+        "lower": "1",
+        "upper": "1",
+        "display_lower": "1.000000000",
+        "display_upper": "1.000000000"
+      },
+      "y": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "co_moving_excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "0",
+            "upper": "0",
+            "display_lower": "0.000000000",
+            "display_upper": "0.000000000"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "1/2",
+            "upper": "1/2",
+            "display_lower": "0.500000000",
+            "display_upper": "0.500000000"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "100",
+            "upper": "100",
+            "display_lower": "100.000000000",
+            "display_upper": "100.000000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive_s",
+      "theta_pi": "1/2",
+      "z": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "y": {
+        "lower": "-1",
+        "upper": "-1",
+        "display_lower": "-1.000000000",
+        "display_upper": "-1.000000000"
+      },
+      "excitation": {
+        "lower": "1/2",
+        "upper": "1/2",
+        "display_lower": "0.500000000",
+        "display_upper": "0.500000000"
+      },
+      "co_moving_excitation": {
+        "lower": "-527/3138550867693340381917894711603833208051177722232017256448",
+        "upper": "1053/6277101735386680763835789423207666416102355444464034512896",
+        "display_lower": "-0.000000001",
+        "display_upper": "0.000000001"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "1/2",
+            "upper": "1/2",
+            "display_lower": "0.500000000",
+            "display_upper": "0.500000000"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "1",
+            "upper": "1",
+            "display_lower": "1.000000000",
+            "display_upper": "1.000000000"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "201/2",
+            "upper": "201/2",
+            "display_lower": "100.500000000",
+            "display_upper": "100.500000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "return_s",
+      "theta_pi": "0",
+      "z": {
+        "lower": "1",
+        "upper": "1",
+        "display_lower": "1.000000000",
+        "display_upper": "1.000000000"
+      },
+      "y": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "co_moving_excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "0",
+            "upper": "0",
+            "display_lower": "0.000000000",
+            "display_upper": "0.000000000"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "1/2",
+            "upper": "1/2",
+            "display_lower": "0.500000000",
+            "display_upper": "0.500000000"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "100",
+            "upper": "100",
+            "display_lower": "100.000000000",
+            "display_upper": "100.000000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive_t",
+      "theta_pi": "1/4",
+      "z": {
+        "lower": "176776695296636881100211/250000000000000000000000",
+        "upper": "141421356237309504880169/200000000000000000000000",
+        "display_lower": "0.707106781",
+        "display_upper": "0.707106782"
+      },
+      "y": {
+        "lower": "-141421356237309504880169/200000000000000000000000",
+        "upper": "-176776695296636881100211/250000000000000000000000",
+        "display_lower": "-0.707106782",
+        "display_upper": "-0.707106781"
+      },
+      "excitation": {
+        "lower": "28726883314014271085884528552755897059779328133183150233/196159429230833773869868419475239575503198607639501078528",
+        "upper": "919260266048456674748308052239056399253320418156572411291/6277101735386680763835789423207666416102355444464034512896",
+        "display_lower": "0.146446609",
+        "display_upper": "0.146446610"
+      },
+      "co_moving_excitation": {
+        "lower": "-2764989674535077096833419505685/6129982163463555433433388108601236734474956488734408704",
+        "upper": "401807944141462116795438504469447/1569275433846670190958947355801916604025588861116008628224",
+        "display_lower": "-0.000000001",
+        "display_upper": "0.000000001"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "28726883314014271085884528552755897059779328133183150233/196159429230833773869868419475239575503198607639501078528",
+            "upper": "919260266048456674748308052239056399253320418156572411291/6277101735386680763835789423207666416102355444464034512896",
+            "display_lower": "0.146446609",
+            "display_upper": "0.146446610"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "126806597929431158020818738290375684811378631952933689497/196159429230833773869868419475239575503198607639501078528",
+            "upper": "4057811133741797056666202763842889607304498140388589667739/6277101735386680763835789423207666416102355444464034512896",
+            "display_lower": "0.646446609",
+            "display_upper": "0.646446610"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "19644669806397391658072726476076713447379640092083291003033/196159429230833773869868419475239575503198607639501078528",
+            "upper": "628629433804716533058327250373005698009488864864560023700891/6277101735386680763835789423207666416102355444464034512896",
+            "display_lower": "100.146446609",
+            "display_upper": "100.146446610"
+          }
+        }
+      ]
+    },
+    {
+      "id": "return_t",
+      "theta_pi": "0",
+      "z": {
+        "lower": "1",
+        "upper": "1",
+        "display_lower": "1.000000000",
+        "display_upper": "1.000000000"
+      },
+      "y": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "co_moving_excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "0",
+            "upper": "0",
+            "display_lower": "0.000000000",
+            "display_upper": "0.000000000"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "1/2",
+            "upper": "1/2",
+            "display_lower": "0.500000000",
+            "display_upper": "0.500000000"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "100",
+            "upper": "100",
+            "display_lower": "100.000000000",
+            "display_upper": "100.000000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "drive_p16",
+      "theta_pi": "1/8",
+      "z": {
+        "lower": "923879532511286756128183/1000000000000000000000000",
+        "upper": "115484941563910844516023/125000000000000000000000",
+        "display_lower": "0.923879532",
+        "display_upper": "0.923879533"
+      },
+      "y": {
+        "lower": "-19134171618254488586423/50000000000000000000000",
+        "upper": "-382683432365089771728459/1000000000000000000000000",
+        "display_lower": "-0.382683433",
+        "display_upper": "-0.382683432"
+      },
+      "excitation": {
+        "lower": "7465873727685114320895739747593882044673567573302801957/196159429230833773869868419475239575503198607639501078528",
+        "upper": "119453979642961829134333405236935959384968040120200633229/3138550867693340381917894711603833208051177722232017256448",
+        "display_lower": "0.038060233",
+        "display_upper": "0.038060234"
+      },
+      "co_moving_excitation": {
+        "lower": "-2369640485865584345861962784346495/6277101735386680763835789423207666416102355444464034512896",
+        "upper": "432768460310787654632029513721071/1569275433846670190958947355801916604025588861116008628224",
+        "display_lower": "-0.000000001",
+        "display_upper": "0.000000001"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "7465873727685114320895739747593882044673567573302801957/196159429230833773869868419475239575503198607639501078528",
+            "upper": "119453979642961829134333405236935959384968040120200633229/3138550867693340381917894711603833208051177722232017256448",
+            "display_lower": "0.038060233",
+            "display_upper": "0.038060234"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "105545588343102001255829949485213669796272871393053341221/196159429230833773869868419475239575503198607639501078528",
+            "upper": "1688729413489632020093280761038852563410556901236209261453/3138550867693340381917894711603833208051177722232017256448",
+            "display_lower": "0.538060233",
+            "display_upper": "0.538060234"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "19623408796811062501307737687271551432364534331523410654757/196159429230833773869868419475239575503198607639501078528",
+            "upper": "313974540748977000020923804565620256764502740263321926278029/3138550867693340381917894711603833208051177722232017256448",
+            "display_lower": "100.038060233",
+            "display_upper": "100.038060234"
+          }
+        }
+      ]
+    },
+    {
+      "id": "return_p16",
+      "theta_pi": "0",
+      "z": {
+        "lower": "1",
+        "upper": "1",
+        "display_lower": "1.000000000",
+        "display_upper": "1.000000000"
+      },
+      "y": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "co_moving_excitation": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "0",
+            "upper": "0",
+            "display_lower": "0.000000000",
+            "display_upper": "0.000000000"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "1/2",
+            "upper": "1/2",
+            "display_lower": "0.500000000",
+            "display_upper": "0.500000000"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "100",
+            "upper": "100",
+            "display_lower": "100.000000000",
+            "display_upper": "100.000000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "opposite",
+      "theta_pi": "-1/2",
+      "z": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "y": {
+        "lower": "1",
+        "upper": "1",
+        "display_lower": "1.000000000",
+        "display_upper": "1.000000000"
+      },
+      "excitation": {
+        "lower": "1/2",
+        "upper": "1/2",
+        "display_lower": "0.500000000",
+        "display_upper": "0.500000000"
+      },
+      "co_moving_excitation": {
+        "lower": "-527/3138550867693340381917894711603833208051177722232017256448",
+        "upper": "1053/6277101735386680763835789423207666416102355444464034512896",
+        "display_lower": "-0.000000001",
+        "display_upper": "0.000000001"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "1/2",
+            "upper": "1/2",
+            "display_lower": "0.500000000",
+            "display_upper": "0.500000000"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "1",
+            "upper": "1",
+            "display_lower": "1.000000000",
+            "display_upper": "1.000000000"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "201/2",
+            "upper": "201/2",
+            "display_lower": "100.500000000",
+            "display_upper": "100.500000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrong_return",
+      "theta_pi": "1",
+      "z": {
+        "lower": "-1",
+        "upper": "-1",
+        "display_lower": "-1.000000000",
+        "display_upper": "-1.000000000"
+      },
+      "y": {
+        "lower": "0",
+        "upper": "0",
+        "display_lower": "0.000000000",
+        "display_upper": "0.000000000"
+      },
+      "excitation": {
+        "lower": "1",
+        "upper": "1",
+        "display_lower": "1.000000000",
+        "display_upper": "1.000000000"
+      },
+      "co_moving_excitation": {
+        "lower": "-14267/3138550867693340381917894711603833208051177722232017256448",
+        "upper": "3567/784637716923335095479473677900958302012794430558004314112",
+        "display_lower": "-0.000000001",
+        "display_upper": "0.000000001"
+      },
+      "absolute_energies": [
+        {
+          "offset": "0",
+          "energy": {
+            "lower": "1",
+            "upper": "1",
+            "display_lower": "1.000000000",
+            "display_upper": "1.000000000"
+          }
+        },
+        {
+          "offset": "1/2",
+          "energy": {
+            "lower": "3/2",
+            "upper": "3/2",
+            "display_lower": "1.500000000",
+            "display_upper": "1.500000000"
+          }
+        },
+        {
+          "offset": "100",
+          "energy": {
+            "lower": "101",
+            "upper": "101",
+            "display_lower": "101.000000000",
+            "display_upper": "101.000000000"
+          }
+        }
+      ]
+    }
+  ],
+  "cycles": [
+    {
+      "id": "s",
+      "drive_work": {
+        "lower": "1/2",
+        "upper": "1/2",
+        "display_lower": "0.500000000",
+        "display_upper": "0.500000000"
+      },
+      "ideally_recoverable_work": {
+        "lower": "1/2",
+        "upper": "1/2",
+        "display_lower": "0.500000000",
+        "display_upper": "0.500000000"
+      },
+      "net_external_gain_exact": "0",
+      "exact_reason": "W_recover-W_drive=E_initial-E_return; exact return Z=1",
+      "physical_load_measured": false
+    },
+    {
+      "id": "t",
+      "drive_work": {
+        "lower": "28726883314014271085884528552755897059779328133183150233/196159429230833773869868419475239575503198607639501078528",
+        "upper": "919260266048456674748308052239056399253320418156572411291/6277101735386680763835789423207666416102355444464034512896",
+        "display_lower": "0.146446609",
+        "display_upper": "0.146446610"
+      },
+      "ideally_recoverable_work": {
+        "lower": "28726883314014271085884528552755897059779328133183150233/196159429230833773869868419475239575503198607639501078528",
+        "upper": "919260266048456674748308052239056399253320418156572411291/6277101735386680763835789423207666416102355444464034512896",
+        "display_lower": "0.146446609",
+        "display_upper": "0.146446610"
+      },
+      "net_external_gain_exact": "0",
+      "exact_reason": "W_recover-W_drive=E_initial-E_return; exact return Z=1",
+      "physical_load_measured": false
+    },
+    {
+      "id": "p16",
+      "drive_work": {
+        "lower": "7465873727685114320895739747593882044673567573302801957/196159429230833773869868419475239575503198607639501078528",
+        "upper": "119453979642961829134333405236935959384968040120200633229/3138550867693340381917894711603833208051177722232017256448",
+        "display_lower": "0.038060233",
+        "display_upper": "0.038060234"
+      },
+      "ideally_recoverable_work": {
+        "lower": "7465873727685114320895739747593882044673567573302801957/196159429230833773869868419475239575503198607639501078528",
+        "upper": "119453979642961829134333405236935959384968040120200633229/3138550867693340381917894711603833208051177722232017256448",
+        "display_lower": "0.038060233",
+        "display_upper": "0.038060234"
+      },
+      "net_external_gain_exact": "0",
+      "exact_reason": "W_recover-W_drive=E_initial-E_return; exact return Z=1",
+      "physical_load_measured": false
+    }
+  ],
+  "fresh_nrqc_requests": 1,
+  "hardware_called": false,
+  "gravity_hamiltonian_derived": false,
+  "vacuum_work_extraction_demonstrated": false,
+  "scope": "Finite supplied Hamiltonian energy-accounting calibration; inverse energy recovery is ideal, not a measured load."
+}
