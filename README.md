@@ -1,5 +1,9 @@
 # Publications
 
+<!-- patent-status-notice:start -->
+> **Patent pending — rights reserved.** The repository owner confirms filed PCT and/or provisional patent applications in the related invention portfolio. This notice applies to subject matter supported by the applicable pending filings. Public disclosure is not intended to waive patent rights. Existing licences and permissions remain effective. See [PATENT_NOTICE.md](PATENT_NOTICE.md).
+<!-- patent-status-notice:end -->
+
 > **[Published source collection — 17 repos, 3,252 files](https://zenodo.org/records/23671480)** · DOI [10.5281/zenodo.23671480](https://doi.org/10.5281/zenodo.23671480) · [Exact commits and verification](COLLECTION_ARCHIVE.md). Snapshot: 26 October 2026.
 
 > **[Public research evidence index](PUBLIC_RESEARCH_INDEX.md)** · **Research record:** [Dated snapshot, content hashes and archive links](RESEARCH_PROVENANCE.md) · [Canonical repository governance](GOVERNANCE.md). Cite the exact version used.
