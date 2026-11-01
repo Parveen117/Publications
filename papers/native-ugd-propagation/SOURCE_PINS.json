@@ -3,7 +3,7 @@
   "publications_files": [
     {
       "path": "papers/emk-ugd-algebra/README.md",
-      "sha256": "f3328f4a8a76aedc3bf1c50c17288f634d7c16b021712e0a9494519e89f1cbba"
+      "sha256": "fb0e3bd4f3f35c522d3ce246fe107f1176078fe48c0dcd18c0e12fe903b05107"
     },
     {
       "path": "papers/emk-ugd-algebra/certificates/ugd1_numerals.py",
