@@ -1,6 +1,14 @@
 # Lineage — EMK / UGD algebra
 
+## EMK-C1 continuation — 2 October 2026
+
+[Native connection calculus](CONNECTION_CALCULUS.md) consumes the existing EMK relations, Morphic derivation programme and generalized Euler/EMK dock. It proves the connection identities for an explicit associative native-algebra and direction-frame contract, including frame-corrected curvature, gauge covariance, Bianchi identity, mixed channels and observer descent. The finite adapter uses RKF's unchanged symbolic compiler. It adds 2,090 exact symbolic identity checks, twelve observer intertwining checks, 14 word replays and seven recorded negative controls; it preserves the earlier certificates.
+
+These are standard connection/Lie-algebra methods realized in a declared native sector, without an external priority claim. This result does not close the full historical Morphic manuscript, select a physical frame/metric/clock or derive the master tensor's declared protocols. Its written general proofs and finite implementation certificate have distinct scopes.
+
 ## Origin
+
+UGD-A0 adds a 2 October audit of the unchanged UGD-1 implementation: an exact three-digit counterexample rules out associative carry addition under strict stored-state equality, while the charge quotient remains associative. Its proof and finite source checks distinguish a conserved target from full state recognition; they do not downgrade the earlier scoped conservation theorem or select a replacement seam rule.
 
 The EMK algebraic core ladder (I–VII) and the UGD algebraic-operators
 appendix exist in the provisional vault as LaTeX: definitions, theorems

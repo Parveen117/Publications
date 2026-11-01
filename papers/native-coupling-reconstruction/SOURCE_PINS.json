@@ -1,0 +1,119 @@
+{
+  "schema": "native-coupling-reconstruction-source-pins.v1",
+  "source_commit": "7f2346c175a6278ee7d6c489953b24851cb92257",
+  "native_engine": {
+    "repository": "https://github.com/Parveen117/Recognition-Kernel-Framework",
+    "commit": "e8e3089745bf7dc0532d01c62a5f660f5658c6f0",
+    "upstream_directory": "operator_foundation/core",
+    "embedded_packet": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+    "embedded_directory": "Native_Phase_Word_Reconstruction/parent/parent/parent/parent/baseline/native/core",
+    "files": {
+      "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+      "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+    }
+  },
+  "records": [
+    {
+      "path": "papers/native-cut-transport-feedback/verify.py",
+      "bytes": 4316,
+      "sha256": "21c41e499838a13e918f702e8f23579c0fac716188d06fa1b18167cf8e44708c",
+      "purpose": "CID-D2 predecessor with documented Eq. 7 typography repair; native mathematics unchanged and fully replayed"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/verify.cjs",
+      "bytes": 16697,
+      "sha256": "5df48649db92c602dcbabf38aca5b207756873a3ec57a65d7f51214dffe48916",
+      "purpose": "CID-D2 predecessor with documented Eq. 7 typography repair; native mathematics unchanged and fully replayed"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/SOURCE_PINS.json",
+      "bytes": 6355,
+      "sha256": "ea3f4ea29b58aa7c6dabca0d6f0353f3d00d5596fda886200ced16d528ff7356",
+      "purpose": "CID-D2 predecessor with documented Eq. 7 typography repair; native mathematics unchanged and fully replayed"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/CERTIFICATE.json",
+      "bytes": 928451,
+      "sha256": "e22175f417bc95556055005cf6503b206937667306602f722c9458146e56862f",
+      "purpose": "CID-D2 predecessor with documented Eq. 7 typography repair; native mathematics unchanged and fully replayed"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/EXPECTED.sha256",
+      "bytes": 83,
+      "sha256": "b2e00d3a2222e1bce5bad7d6e8ec95745df3644cd806a04bfdc2201477373dae",
+      "purpose": "CID-D2 predecessor with documented Eq. 7 typography repair; native mathematics unchanged and fully replayed"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/THEOREM.md",
+      "bytes": 13356,
+      "sha256": "47ea64afdca379cdc66c6655d4214531c89a63a8586d5a2564b11c3bb5479ee6",
+      "purpose": "CID-D2 predecessor with documented Eq. 7 typography repair; native mathematics unchanged and fully replayed"
+    },
+    {
+      "path": "papers/native-cut-transport-feedback/README.md",
+      "bytes": 4038,
+      "sha256": "7bd6b6e6ed071a65045f9691a6d30a3bd7a2e3efd42218283413548532a609c1",
+      "purpose": "CID-D2 predecessor with documented Eq. 7 typography repair; native mathematics unchanged and fully replayed"
+    },
+    {
+      "path": "papers/native-phase-observation-certification/verify.py",
+      "bytes": 7292,
+      "sha256": "c1b5269a0d557e2517e9a4b5a2d6c8ca2cf7c4f4283daeb8dfdf1478a737117c",
+      "purpose": "Pinned safe extraction helper, also checked recursively"
+    },
+    {
+      "path": "papers/Native_Phase_Word_Reconstruction_Source.zip",
+      "bytes": 2627956,
+      "sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+      "purpose": "Unchanged embedded native RKF engine"
+    },
+    {
+      "path": "papers/native-coupling-reconstruction/verify.py",
+      "bytes": 4293,
+      "sha256": "ff87713c41afda9eb0f0e9f843617b16826b77022ca9f337e463d860a65397fc",
+      "purpose": "CID-D3 proof, native implementation and claim coverage"
+    },
+    {
+      "path": "papers/native-coupling-reconstruction/verify.cjs",
+      "bytes": 18605,
+      "sha256": "2d9b000548d9c9a24ba857242e7d1bc86d33fc119da651b8c114b544f618774e",
+      "purpose": "CID-D3 proof, native implementation and claim coverage"
+    },
+    {
+      "path": "papers/native-coupling-reconstruction/THEOREM.md",
+      "bytes": 11744,
+      "sha256": "928658e05419234419e17cc70003f55d7be88cbcbe7bcc51c4565d9c4757cdb9",
+      "purpose": "CID-D3 proof, native implementation and claim coverage"
+    },
+    {
+      "path": "papers/native-coupling-reconstruction/README.md",
+      "bytes": 4223,
+      "sha256": "dd42492d6f2b2cf2776d723a2a20ee53aec467bbc5f34dabaa29b2e3b55beff4",
+      "purpose": "CID-D3 proof, native implementation and claim coverage"
+    },
+    {
+      "path": ".github/workflows/native-coupling-reconstruction.yml",
+      "bytes": 4168,
+      "sha256": "098118ad8d8386ff30b96a51266f6d90d8c7740292a886d7b1e837a3fea4c491",
+      "purpose": "Pinned Python 3.12 / Node 24.19.0 workflow"
+    },
+    {
+      "path": "papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md",
+      "bytes": 11647,
+      "sha256": "450858a9aa8e6349c77a7cae3636227e5ba720c62ac6282036c0a82413dda80a",
+      "purpose": "Audited prior native Gram recovery and observability discipline; no duplicate general realization claim"
+    },
+    {
+      "path": "papers/native-loop-concentration/CUT_INFORMATION_DYNAMICS.md",
+      "bytes": 11151,
+      "sha256": "f72327ad95193100d93dbccb217941ce2621fd3ebffba20af406b57d4ef4137c",
+      "purpose": "Inherited information and induced-curvature tensor"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md",
+      "bytes": 11107,
+      "sha256": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+      "purpose": "Inherited covariant derivative and variable-frame transformation rules"
+    }
+  ]
+}

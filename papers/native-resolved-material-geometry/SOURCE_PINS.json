@@ -1,0 +1,18 @@
+{
+  "protocol": "RMG1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "bf8bb438f2c75c47a36b900a8ebb621e5b0034694d613b160a0c2b519c9f616c",
+    "THEOREM.md": "290f90dd010493aee033349c125354bb99a4e1aa0edd3ee034fed4db13326f20",
+    "SOURCE_MAP.md": "290bf544a4996a8ef3e07bb1fcb9a28ca003e555682335e6e6a258d96bf78015",
+    "verify.cjs": "47717286cd444b4d14ffd8890fa48194d849dd2129f417433881f14a0e1b5893",
+    "run.py": "2082f5ad324d01f6037aed24c58befce3bbaecaa75554bb63dab6e7e213370b4",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-residual-gauge-rigging/THEOREM.md": "8ff94808f326a81bac1c72a39641607e086240e32e35b2e107861ff5ea07ab83",
+    "../native-residual-gauge-rigging/CERTIFICATE.json": "febb970dfe3fa2be6c6d1ab5ee4a6fbb87390ab62791903dbf73cbdc8d126d5d",
+    "../native-material-profile-quantization/THEOREM.md": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0",
+    "../native-material-profile-quantization/CERTIFICATE.json": "37409ca775803390b54b268ab5e247621d7d55ee5ffe0dd2428d702d400e2648",
+    "../native-material-reference-field/THEOREM.md": "2efecdf36d8931e4a6748ba83c4be19495eb717a58d21110935eeb0cdeeedadd",
+    "../native-local-normal-closure/THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schema": "publications.native-compact-gauge.pins.v1",
+  "rkf": {
+    "repository": "Parveen117/Recognition-Kernel-Framework",
+    "commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+    "files": [
+      {
+        "path": "operator_foundation/CANONICAL_HOME.json",
+        "git_blob_sha": "f22847fe52944214912fa66524d0edb1fc2448a4",
+        "sha256": "6c5a7756ff220e7a9afa7fdb72151781f1777e2099880788f21a1e1b780ced39"
+      },
+      {
+        "path": "operator_foundation/core/native_operator.cjs",
+        "git_blob_sha": "7b188defee82aa0edafc586eb3091baf0ceb6900",
+        "sha256": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+      },
+      {
+        "path": "operator_foundation/core/paninian_operator.cjs",
+        "git_blob_sha": "39d0cc2d2c0b42db319b02f4cd29c045910edbbc",
+        "sha256": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+      },
+      {
+        "path": "operator_foundation/examples/emk_job.json",
+        "git_blob_sha": "7a6eb17ecc8ddefc145645cd9bbfdf66361c6ecb",
+        "sha256": "fd3c9e50cb51050acb9c36b3123fbc4664870c621e5d73bb8763b1050b30c763"
+      },
+      {
+        "path": "operator_foundation/theory/01_NATIVE_ALGEBRA.md",
+        "git_blob_sha": "86366ede2f152f19cbdf0d1dbf06b2e4c0971dad",
+        "sha256": "ea07ab9f0f8a47e63f8ee973638669f596308cec4ed234ced7497a5f7539ecf5"
+      }
+    ]
+  },
+  "physics": {
+    "repository": "Parveen117/Publications",
+    "commit": "f0f1c1650e914b7eaf3bf64ddb7df9f543c92a56",
+    "files": [
+      {
+        "path": "papers/ugd-kahler-propagation/NATIVE_LOOP_CURVATURE.md",
+        "git_blob_sha": "2460ef79b6ef95efb7622d7ce39fdb34fcfdcb6f",
+        "sha256": "65279abc5c8ad30b710cbdfb52e7c280c14488cead0bc8e04b6cff0100483fe9"
+      },
+      {
+        "path": "papers/ugd-kahler-propagation/NATIVE_MASSIVE_MATTER.md",
+        "git_blob_sha": "9d8f708d83297bef5ceca4a09e3ccdaf1acc49b1",
+        "sha256": "59874df732a965978e4199a3474a56c8437cfc65d104a717d47fc35a3ba38334"
+      },
+      {
+        "path": "papers/ugd-kahler-propagation/NATIVE_METRIC_DYNAMICS.md",
+        "git_blob_sha": "603a0e04a118ece4edcf4ea3df36b5142570e678",
+        "sha256": "b42adbac04f790d0593da14fce6649a6a8a94eabe3d2c31588ae95ff71d07202"
+      },
+      {
+        "path": "papers/ugd-kahler-propagation/NATIVE_PROPAGATION_ACTION.md",
+        "git_blob_sha": "368212d54b3956d0a7e8886cda3dd8050ca3a997",
+        "sha256": "6e96e62b7b15c63fba32122c2addfc2984c3007e08cf69cd5b08f4dbd08b3345"
+      },
+      {
+        "path": "papers/ugd-kahler-propagation/THERMO_GAUGE_COMPLETION.md",
+        "git_blob_sha": "04f8f3e092796712082396e717cc21d3559e3d09",
+        "sha256": "9ac35f4e6bd1fc4262ba9e3d6b1f5c7d251684618975380d29abc81f0ace9068"
+      }
+    ]
+  },
+  "baseline_publication_commit": "d98c2644ab1512024861e12d5468f32028903cdf",
+  "reused_publication_inputs": [
+    {
+      "path": "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md",
+      "git_blob_sha": "d07f13191ce6443ca54966b0e751a585108254d2",
+      "sha256": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9"
+    },
+    {
+      "path": "papers/native-thermodynamic-curvature/THEOREM.md",
+      "git_blob_sha": "980fab7844d990329c4390b5b52f55ffbb34de63",
+      "sha256": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29"
+    }
+  ],
+  "local_inputs": [
+    {
+      "path": "papers/native-compact-gauge/THEOREM.md",
+      "git_blob_sha": "bb174acf6c31066b617ce94e0f64708911cd0015",
+      "sha256": "45c0260c02ef0e0c3074d04bed5cf71f96a5002b0b572fd3370cdc04d3633b93"
+    },
+    {
+      "path": "papers/native-compact-gauge/README.md",
+      "git_blob_sha": "5e63c41811211d0f76474d83183cf229aff171b8",
+      "sha256": "c08e361103bed3de0edf62245e58ccf348eb9c5227efee4180bccbecdbd4e97f"
+    },
+    {
+      "path": "papers/native-compact-gauge/SOURCE_MAP.md",
+      "git_blob_sha": "98d20fc166c5146ba13cbbbe8f81796a97b151e7",
+      "sha256": "497b9b9bfe1329dd1c6b57cd66e5230b6115a74070ef1bf9263e5b70307235ad"
+    },
+    {
+      "path": "papers/native-compact-gauge/presentation.json",
+      "git_blob_sha": "4e73ab216a10e238921e11490ece9db53fc94404",
+      "sha256": "12e256ae67f860f62f0d17b83d7e4a00d931e2daa4e6323f6eaa86c8096bdc9d"
+    },
+    {
+      "path": "papers/native-compact-gauge/controls.py",
+      "git_blob_sha": "af9bae4938d4d6a6d66bbc2856f5c5a01cee1a17",
+      "sha256": "b22dad76b4dac80f0f0975765c969a2b2738012c04972687dd460fe7cbe8a480"
+    },
+    {
+      "path": "papers/native-compact-gauge/verify.cjs",
+      "git_blob_sha": "9a125965286946864955ad184d0d65d9d8e72020",
+      "sha256": "77aab7d232a263addeff3a8930f5706c13e94d6079cabebc5471837a5949e69b"
+    },
+    {
+      "path": "papers/native-compact-gauge/verify.sh",
+      "git_blob_sha": "ceccd5eb6f1229a36c6a01bb73c5890a3f5ff8e4",
+      "sha256": "07526a532e33eed8be200fb5a83e1201755979b49072cb790a794a25131ade57"
+    },
+    {
+      "path": ".github/workflows/native-compact-gauge.yml",
+      "git_blob_sha": "c4a11b244ee4c8e4a08141f643fd6e49b0078f12",
+      "sha256": "57a4898ccf005631be0af7f5ca0f4c0ee3d339a42975f8241b2fc805c064c8a6"
+    }
+  ]
+}

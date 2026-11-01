@@ -1,0 +1,33 @@
+{
+  "protocol": "LAT1_SOURCE_PINS_V1",
+  "repository_parent": "d1654412a0bd6f572d688eb7986bbb5ebdb74ed1",
+  "files": {
+    "README.md": "3b5337362fe178333f69e88cb05e5ceb66e3fdd052c091780061e12cd9115438",
+    "THEOREM.md": "404ee66f04b430575308f47ea83e7ebbb956e1886b41a0bbbbc7b7f53367ad0a",
+    "SOURCE_EVALUATION.md": "b422721258b52311a76cc0d92e57d2512bd29fa0dab08fa9db26ac9466543de7",
+    "SOURCE_MAP.md": "811942e51f5db025b35f6b868347d500ffb417dce0901dbafd18a5c41b287920",
+    "USAGE.md": "4b01dd0f8988ee2e47a4b542decad16adfba6020aff0f7314675659de3308690",
+    "anchor_adapter.cjs": "fabe3bfc08f7b28d63a757482dc5d862f6e52e8e3a51f8bd7dab77b9cf064d31",
+    "verify.cjs": "13f92fba664b8d861fe3298b874a588c7a36b487d252bd24087c4dd5c9052394",
+    "run.py": "4220c784c321168b7ad6f8e559d70e1f9cc79d78c34866b0436a042b2818cf93",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-layer-continuation-window/THEOREM.md": "453d353e313f8a8097a1d335b2a5b3720f50e06ee3d896156f9b1c3d8c34ae28",
+    "../native-layer-continuation-window/continuation_adapter.cjs": "3470429a697e5ca7fa4b14144afd74d5c9c03aa0722a3781ab880c96b1279037",
+    "../native-layer-continuation-window/CERTIFICATE.json": "1a736ede7efce10245bbdb71bbc550b070aec8326119281016bd4760f5b1d30a",
+    "../native-layer-continuation-window/SOURCE_PINS.json": "037d9a2e75bcb03483cc7466e9285ff9638801e08edfa584ef3b923e19e2efd7",
+    "../native-infinite-layer-cut/THEOREM.md": "cd1239bcccaacad152f8aa77be4d84ff63a801e6aac11a54d67a78d3ce8af592",
+    "../native-infinite-layer-cut/source_layers.cjs": "a46967d9992a50fb4f52839130b05540126d247633f68752e5ebca949f754a07",
+    "../native-infinite-layer-cut/layer_adapter.cjs": "0df60e3c6a1d6e1633a06e74bee46fc4cbeb8617f85e3f7c1b037a9510f77f99",
+    "../native-infinite-layer-cut/SOURCE_PINS.json": "511556849d0c8b978b7c7cbb5f16fc036f79ab383ab78641f63fca8ca292de2b",
+    "../native-prime-innovation-window/full_source.cjs": "0a31da302a467333f005d77bb30e3d21a0bfcca7a2cc8aea91696bb15d78ed30",
+    "../native-prime-innovation-window/window_adapter.cjs": "4a0bcd7155c530fa9a97346482c1f7ce1b515a1701dceee84a78a55d29d3fefc",
+    "../native-prime-innovation-window/CERTIFICATE.json": "20e0e48c6f184a1ff4b6b210811ba8fc50f24fc0d7eb72c76b814bd3561fe4cc",
+    "../native-prime-innovation-window/SOURCE_PINS.json": "3d9bc8bf901f60eec66e14b3be42d397a6fc4f3e7fd8da0995abfe396f6c2dbc",
+    "../native-prime-observation-closure/observation_adapter.cjs": "ddb8385edb0cec94b6634bfd8f1f08189dd5eb6a7b236d439f001b9ca51a9c0b",
+    "../native-prime-observation-closure/SOURCE_PINS.json": "c4782e63013001f86abef6c58356f67267513b6cac777882cb932cda1eb2d5cd",
+    "../native-prime-observer-sectors/observer_adapter.cjs": "b04c5c5346fbfaf1dec5cbaee5c875b3644abd0a1a0fdf5a55ac11fb4138f40f",
+    "../native-moving-zero-covariance/sources/SE49.md": "36b0e0b37594d7112b24fb58fb401f521912eb6baf6d487094ddf0449c725b4f",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

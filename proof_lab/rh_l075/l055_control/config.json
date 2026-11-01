@@ -1,0 +1,12 @@
+{
+  "L": "11/20",
+  "active_prime_powers": [2, 3],
+  "retained_modes": 5,
+  "kernel_degree": 48,
+  "cosh_terms": 9,
+  "complement": {"base_level": 5, "base_value": "1871/6300", "explicit_levels": 0, "source": "BRT-T57 (227)-(228)"},
+  "margin": "1/10000000000",
+  "rational_grid_digits": 18,
+  "rational_rounding_allowance": "1/100000000000000000",
+  "declared_family_bound": "1/100000000000"
+}

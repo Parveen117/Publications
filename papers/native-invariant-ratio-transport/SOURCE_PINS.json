@@ -1,0 +1,16 @@
+{
+  "protocol": "IRT1_SOURCE_PINS_V1",
+  "files": {
+    "THEOREM.md": "421ab43b4a0a7845053e7053580866d04f8dd0dcf92ee65185d53679c9385649",
+    "verify.cjs": "b411196ef8e79a1d6c8ba697d7e782b4aae982f73ae83fc3f5857e98b4c36ec4",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-action-geometry-dynamics/THEOREM.md": "6b2077516d830ac44121107a75d4fa9af2ce39ab764713b71814866c379a8c47",
+    "../native-action-geometry-dynamics/CERTIFICATE.json": "22af0b5f980c2204d69c5c2d389a3322fbe3d4cbbc05ebb67ad045746327a64a",
+    "../native-angular-calibration/THEOREM.md": "22b0663fa55b7ccbd6b6d238a75ea266e2cf85fc3f168d62ceaf2753af87705b",
+    "../native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "../native-quantum-gravity-consistency/THEOREM.md": "4a431b5ad31d7981d7d505159c756db213dc6faac47d48534c911f20ad831335",
+    "README.md": "5d74a9578c44ff1ae6a30952aedca395167cd49567914222ff6744dd998fad3f"
+  }
+}

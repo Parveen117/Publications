@@ -1,0 +1,38 @@
+{
+  "protocol": "N4H1_SOURCE_PINS_V1",
+  "repository_base": "fc4619637f9417ecd0f0105bae995fab9cc3d9bd",
+  "native_engine": {
+    "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  },
+  "native_archive_sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+  "packet_files": {
+    "README.md": "413389441339957379c86481fa88be9659b5f7d22dc58a72a03a04f2ad264a0c",
+    "THEOREM.md": "59bd0b15b51d1a5b10f159e8d6c1d00c62823711e7940fba93b60a0273eaaad2",
+    "run.py": "0c30dc70fcce4d159284e0b747e36d5d245a49cac71d0e871829d948dfc3d6c7",
+    "verify.cjs": "255a77815bfea4810aa047fb334be6c8f469aa6944154446a3e138a185308578"
+  },
+  "predecessor_files": {
+    "papers/native-jacobian-cut-certification/THEOREM.md": "6240606cb6ad10514f16132592b46a1929703316879da543c62353f0244101ee",
+    "papers/native-jacobian-cut-certification/CERTIFICATE.json": "8b1d29d0eb0856d4eb2b3f1bd4553a5164d4e60814a027ab4c48ac532c2f0811",
+    "papers/native-loop-concentration/CUT_INFORMATION_DYNAMICS.md": "f72327ad95193100d93dbccb217941ce2621fd3ebffba20af406b57d4ef4137c",
+    "papers/native-cut-transport-feedback/THEOREM.md": "47ea64afdca379cdc66c6655d4214531c89a63a8586d5a2564b11c3bb5479ee6",
+    "papers/native-coupling-reconstruction/THEOREM.md": "928658e05419234419e17cc70003f55d7be88cbcbe7bcc51c4565d9c4757cdb9"
+  },
+  "primary_references": [
+    {
+      "title": "Regge calculus from a new angle",
+      "authors": "Bahr and Dittrich",
+      "arxiv": "0907.4325",
+      "url": "https://arxiv.org/abs/0907.4325",
+      "use": "Standard Regge and Schlaefli identities, not a novelty claim."
+    },
+    {
+      "title": "(Broken) Gauge Symmetries and Constraints in Regge Calculus",
+      "authors": "Bahr and Dittrich",
+      "arxiv": "0905.1670",
+      "url": "https://arxiv.org/abs/0905.1670",
+      "use": "Boundary variation and limits of exact discrete gauge symmetry."
+    }
+  ]
+}

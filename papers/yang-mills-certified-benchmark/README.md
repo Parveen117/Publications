@@ -1,4 +1,613 @@
-# Yang–Mills Certified Benchmark (YM-1)
+# Yang–Mills certified programme
+
+## Observer application: HCM-1/2/3
+
+[HCM-1](../native-heat-observer-memory/README.md) applies the shared cut-record
+closure machinery to YM54's actual thermo-response-derived free heat generator.
+On an exact three-mode coefficient block, a declared mixed observer has a
+strictly positive two-time defect with leading coefficient 1/2916. One extra
+channel closes its evolution; eliminating it gives memory kernel
+exp(-t/18)/2916 and a controlled memory-truncation bound. The source tensor is
+reconstructed and the coefficient generator independently differentiated.
+HCM-2 adds its conjugate-coupled complex response law and native EMK spectral
+sectors, with a reversible phase/scale/residual record and explicit UGD-interface
+boundaries. HCM-3 derives root-free common-gain recovery from the coprime rate
+pair and rational reference corrections with explicit noise/clock-error budgets.
+This evaluates a free single-site observer, not YM49's full interacting row.
+
+## Current continuation: YM-55
+
+[YM-55's joint-history proof](YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
+closes the stationary anisotropic volume/time-limit obligation left by
+YM53/YM54. Fix one infinite site profile with second eigenvalue at least
+beta>0 and trace at most M. For abs(theta)<beta/2400, local finite-volume
+vacuum histories have a unique joint limit as both spatial ends recede
+and the heat step vanishes, at unrestricted relative rates. Both iterated
+limits agree. Positivity, heat-time reflection positivity and the centered
+correlation rate survive. Rank-two and differently oriented sites are allowed.
+
+The proof adds the spatial block gate, checks singular bridge supports,
+controls normalized refinement with M, and gives an explicit logarithmic
+crop and summable tail. Native response bounds |f_i|>=f0 and tau_i<=T0
+provide beta=4 f0^2/T0 and M=T0/4. The rank-two example retains
+gamma=3 log(4/3)/160>0.00539403; the original thermo-source profile retains
+gamma>0.000079467076. These are rates in the declared heat clock.
+
+[The certificate](certificates/YM55_RESULT.json) and
+[source pins](certificates/YM55_SOURCE_PINS.json) bind seven written results,
+22 new tests, 64 singular midpoint path identities, 264 weighted incidence
+checks, six independent normalized history controls and explicit joint
+cutoff errors. The 62 targeted predecessor tests also pass; 117 upstream
+files remain unchanged. Runtime: **Python 3.12 only**. General proofs are
+written, not mechanically formalized or externally expert-certified.
+
+This is a fixed-profile chain history limit. It does not remove spatial
+lattice spacing or establish physical protocol/action/clock selection,
+moving interacting vacua, continuous-time row-Markov closure or 4D/Clay.
+Extra Ideas MP-2's evolving free response remains a separate result.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym55_anisotropic_joint_limit.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym55_anisotropic_joint_limit.py -v
+~~~
+
+## Previous continuation: YM-54
+
+[YM-54's response/protocol proof](YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md)
+connects NT's existing native curvature to an actual compact turn process.
+Remove the trace response, factor the positive H and express its two
+shape words as Y_i=p_i K+q_i L. The shape Gram G has det G=16 f^2.
+The compact lift iota Y_i supplies four equally counted signed turns;
+their second moment is the three-by-three tensor C=VV^T/2, while
+G=2V^TV. Consequently
+
+\[
+\beta_{\rm protocol}=\lambda_{\min}(G)/4\geq4 f^2/\tau,
+\qquad |\theta|<f_0^2/(600 T)
+\]
+
+is a sufficient YM53 interaction window when |f_i|>=f0>0 and tau_i<=T.
+The original curved thermo fixture gives beta_floor=5/234 and window
+abs(theta)<1/112320. At theta=1/262144, J=6, R=5/4 the inherited
+interacting rate exceeds 0.000079467076 in the declared heat clock.
+
+[The certificate](certificates/YM54_RESULT.json) and
+[source pins](certificates/YM54_SOURCE_PINS.json) bind seven written results,
+48 exact response jets, 16 independent coefficient generator replays,
+36 outward finite-turn refinement enclosures and the original potential's
+derivative replay. Twenty new and 171 related tests pass on **Python 3.12**.
+All 110 upstream pinned sources remain unchanged. The general proofs are
+written, not mechanically formalized or externally expert-certified.
+
+The source jet, two directions, equal signed counts, compact lift and
+heat clock remain explicit selections. Same curvature with growing
+shape trace can lose a uniform floor; inserting idle records changes
+the clock without changing response curvature. This chapter constructs
+a concrete source for YM53's hypotheses, not physical selection of the
+protocol or a physical mass. YM55 supplies the fixed-profile joint history
+limit. State-dependent diffusion, actual row closure and 4D/Clay remain open.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym54_response_protocol.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym54_response_protocol.py -v
+~~~
+
+## Previous continuation: YM-53
+
+[YM-53's anisotropic interaction proof](YM53_ANISOTROPIC_INTERACTING_GAP.md)
+extends the declared open chain to site-dependent positive semidefinite
+native protocol tensors. Their ordered eigenvalues obey b_i>=beta>0;
+a_i may be zero and the orientations need not agree. The sufficient window
+
+\[
+|\theta|<\beta/2400
+\]
+
+provides an explicit full-source gap uniform in every finite width and
+0<h<=1/beta. An all-content coarse kernel bound replaces isotropy in the
+temporal-block argument. Short conditional bridges with zero normalizer
+are excluded lawfully, with grouped endpoint comparisons where required.
+The actual square-sourced transfer, fixed-width norm time limit and
+interacting ground-source derivative energy carry the same rate.
+
+For C=diag(0,3/2,3/2), theta=1/4096, J=8 and R=4/3,
+gamma=3 log(4/3)/160>0.00539403. This is a rigorous conservative lower
+bound in the declared chain, not a physical mass or a phase boundary.
+
+[The certificate](certificates/YM53_RESULT.json) and
+[source pins](certificates/YM53_SOURCE_PINS.json) bind seven written results,
+18 new tests, 108 finite spin inequalities, exact infinite-tail algebra,
+eight inhomogeneous two-site polynomial controls, twelve norm-gap
+transport cells and independent support/ground-energy fixtures. YM45's
+coupling controls are reused. All 151 related tests pass on **Python 3.12**.
+The 103 upstream pinned files are unchanged. General proofs are written,
+not mechanically formalized or externally expert-certified.
+
+YM55 supplies the fixed-profile anisotropic joint history construction
+under a uniform trace ceiling. Actual row closure, physical
+clock/protocol/state/action selection, NCG quantum measure and 4D/AF/Clay
+remain open. The old isotropic proofs and certificates keep their scope.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym53_anisotropic_interaction.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym53_anisotropic_interaction.py -v
+~~~
+
+## Previous continuation: YM-52
+
+[YM-52's energy and observer proof](YM52_ENERGY_NOISE_AND_OBSERVER_GAP.md)
+uses YM51's general symmetric protocol tensor C. It derives
+
+\[
+\Phi(f^2)=\Phi((E_t f)^2)+\Phi\!\left(E_t(f^2)-(E_t f)^2\right),
+\qquad
+\partial_t\Phi((E_t f)^2)=-2\mathcal E_C(E_t f).
+\]
+
+Thus discarded record variance accounts exactly for the mean's lost
+squared distinction. A defined relative entropy satisfies
+H'(rho_t)=-Phi(Gamma_C(rho_t)/rho_t) for bounded positive densities.
+This is not a physical heat/work or energy-unit identification.
+
+The weighted native frame brackets derive the tensor cof(C). With
+0<=a<=b<=c its exact optimal centered relaxation rates are
+
+\[
+\gamma_{\rm full}=\min\{(a+b+c)/4,a+b\},\qquad
+\gamma_{\rm even}=a+b.
+\]
+
+Rank two is enough for positive relaxation. The old YM51 family has
+exact full rate min(3/4,2 eta). The classical positive-definite formula
+is credited to Lauret; finite native spin and polynomial energy controls
+support the written all-content proof, including singular tensors.
+
+For fixed trace s, the full gap is maximal for every c<=3s/4.
+The even-observer gap is maximal only at C=(s/3)I. A deficit epsilon
+below its maximum bounds the tensor's operator-norm anisotropy by
+2 epsilon. This conditional selection criterion does not fix the
+physical observer objective or clock budget.
+
+[The certificate](certificates/YM52_RESULT.json) and
+[source pins](certificates/YM52_SOURCE_PINS.json) bind six written results,
+16 new tests, independent word-variance controls, 108 finite spin gap
+inequalities, 40 polynomial energy matrices and six rational entropy
+enclosures. Current verification uses Python 3.12 only.
+The fixed isotropic interacting chain proofs remain unchanged.
+YM53 supplies the declared anisotropic chain extension. Physical selection
+and 4D/Clay remain open.
+
+## Previous continuation: YM-51
+
+[YM-51's audit and written proof](YM51_TOOL_DEPENDENCY_AND_HEAT_SELECTION.md)
+checks the tools used by the current YM route. The
+[dependency ledger](certificates/YM51_DEPENDENCY_LEDGER.json) records 29
+nodes, nine explicit selection assumptions and three open extensions.
+It preserves the existing native algebra, typed tensors, connection
+curvature, observer/memory corrections, response metrics and completion
+results. It does not recommend redefining every tool.
+
+The decisive witness is a family of symmetric native turn protocols with
+
+\[
+C_\eta=\operatorname{diag}(3-2\eta,\eta,\eta),\qquad
+L_C=-\sum_{a,b}C_{ab}D_aD_b,\qquad 0<\eta\leq1.
+\]
+
+Every member has the same Phi_Q, native derivative brackets and decay
+3/4 on all linear coefficients. But the same nonzero centered quadratic
+source has decay 2*eta. Every axis is sampled at each eta>0; nevertheless
+no positive decay rate is uniform as eta tends to zero. Curvature,
+reference invariance and linear probes do not select the heat law or gap.
+This does not change YM45's gap for its fixed isotropic chain.
+
+For protocol moments m2 and m4, the native refinement error on degree d is
+d^4*t^2*(m4+3*m2^2)/(96*n), recovering YM50's bound in its special case.
+Covariance transforms C along with the frame. An additional fixed-law
+invariance under four native conjugations forces C=cI. Six quadratic
+readouts recover unrestricted symmetric C; isotropy still leaves the
+clock scale c, and clock rescaling changes the relative interaction theta/c.
+These internal symmetries do not derive local gauge Ward laws or physical
+spatial isotropy.
+
+[The certificate](certificates/YM51_RESULT.json) binds six written results,
+25 protocol factorizations and 25 all-source finite energy controls,
+70 reference checks, twelve bracket identities, sixty covariant actions,
+24 linear-blindness checks, six quadratic witnesses, eighteen tensor
+recovery checks, fourteen independent labelled counts, 72 outward
+refinement enclosures and twelve clock-rescaling controls.
+Seventeen new and 117 related tests pass on **Python 3.12 only**.
+The test suite also rejects nine invalid dependency-ledger mutations.
+All 88 pinned upstream files and the canonical engines are preserved.
+
+**Scope:** the audit covers the current YM43--50 tool route. Fixed-law
+isotropy, physical clock/state/action selection, general RH E5C/E6,
+the actual chain's row closure, NCG quantum measure and 4D/AF/Clay/QG
+remain open. Alternative free protocols are not assigned the old
+interacting gap. Written proofs, exact controls and external expert
+certification remain distinct; neither formalization nor expert review
+is claimed.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym51_heat_selection.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym51_heat_selection.py -v
+~~~
+
+## Previous continuation: YM-50
+
+[YM-50's written proof](YM50_NATIVE_REFERENCE_HEAT_BRIDGE.md) constructs
+the compact reference and heat law from specified native counted records.
+It uses the already derived EMK quaternion sector and canonical
+stationary-path Phi_Sigma. On finite diagonal record kernels,
+
+\[
+\varphi_N(p)=\frac{\Phi_\Sigma(D_{p,N})}{N12^{N-1}},
+\qquad
+|\varphi_N(p)-\Phi_Q(p)|\leq\frac{2B_p}{N}.
+\]
+
+Finite coefficient energy and a solved Poisson equation derive positivity,
+invariance, uniqueness and exact moments. Only then does comparison show
+Phi_Q=Phi_ref on coefficient polynomials and their uniform completion.
+The resulting recognition completion is isometric to the old coefficient
+carrier, with bounded observables intertwined. Hilbert space is this
+positive completion's representation.
+
+A six-turn native protocol also constructs the full coefficient heat law:
+
+\[
+\|S_{\sqrt{6t/n}}^n-\operatorname{Exp}_\Sigma(-tL)\|_d
+\leq\frac{3d^4t^2}{8n}.
+\]
+
+The existing bounded face weights, finite-chain transfers and their
+declared limiting coefficient histories agree under the representation.
+[The certificate](certificates/YM50_RESULT.json) binds eight written results,
+24 independent word-transfer checks, 18 padded trace checks, two complex
+pairings, five exact stationary spaces, 20 telescoping cases, 160 tail
+checks, 70 independently projected moments, 495 earlier-reference matches,
+140 invariance checks, 36 multiplier controls, 70 native Casimir identities,
+18 outward heat refinements and twelve refusal groups.
+Seventeen new and 100 related tests pass on **Python 3.12 only**.
+
+**Scope:** the sector, record protocol, independent reference copies,
+isotropic heat clock, chain and kappa(a)=theta*a remain specified choices.
+The [origin ledger](certificates/YM50_ORIGIN_LEDGER.json) records them.
+Raw endpoint records are not recognition-Cauchy; distinct paths may have
+the same observed endpoint. General RH E5C/E6, physical selection, the NCG
+quantum measure, the actual YM-49 row defect, full bounded-history density,
+4D, AF, Clay and QG remain open. The proof is written, not mechanically
+formalized or externally expert-certified. All 78 pinned upstream files
+and the shared RKF/RH engines are unchanged.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym50_native_reference.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym50_native_reference.py -v
+~~~
+
+Earlier admitted-reference statements retain their historical scope.
+YM-50 supplies the above compact bridge; the general integration and
+physical identification obligations remain separate.
+
+## Previous continuation: YM-49
+
+[YM-49's written proof](YM49_TIME_ZERO_OBSERVABLES.md) constructs bounded
+time-zero observables on YM-48's reflected carrier. A uniform energy
+multiplier bound controls the time-zero collision. It proves the norm
+bound, dagger/product laws and ordered coefficient-history readouts:
+
+\[
+\|M_0(F)\|\leq\|F\|_\infty,\qquad
+M_0(F)M_0(G)=M_0(FG),\qquad M_0(F)e=JF.
+\]
+
+The instantaneous-row compression has an exact positive closure test:
+
+\[
+C(2t)-C(t)^2=L(t)^\dagger L(t),\qquad
+L(t)=(I-JJ^\dagger)T(t)J.
+\]
+
+All these defects vanish exactly when the coefficient-history sector is
+its instantaneous row. Otherwise the retained complement obeys RKF's
+exact memory equation, now with gap-controlled tails and a lawful
+bounded Schur inverse. A same-chain source proves
+||[T(t),M_0(x_0)]e|| >= (1-exp(-gamma t))/2 > 0.
+This is an observable/time ordering result, not an identification with
+native gauge curvature.
+
+[The certificate](certificates/YM49_RESULT.json) binds eight written
+results, 48 independent time-zero path readouts, nine complex products,
+three dagger and three norm checks, three all-source form bounds,
+18 weighted product-energy controls, 35 collision/Cauchy controls,
+nine mixed-time defects, twelve positive memory-coefficient bounds,
+36 exact memory recursions, 108 memory-tail checks, three Schur inverses,
+twelve Schur-tail checks and twelve refusal groups.
+Seventeen new and 83 related tests pass on **Python 3.12 only**.
+
+**Scope:** the interacting chain's row defect is still unevaluated.
+The certificate's closing/nonclosing finite observers are controls,
+not evidence deciding that infinite-chain question. Coefficient-history
+density in the larger bounded-history completion is also separate.
+The admitted abs(theta)<1/1680 heat/reference-functional carrier is
+unchanged; native measure/NCG, physical gauge observables, clock,
+relativistic/spatial continuum, AF, Clay and QG remain open.
+The infinite proof is written, not mechanically formalized.
+All 60 inherited source hashes and the canonical RKF engine are preserved.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym49_time_zero.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym49_time_zero.py -v
+~~~
+
+## Previous continuation: YM-48
+
+[YM-48's written proof](YM48_REFLECTED_TIME_GENERATOR.md) constructs
+continuous heat-time action on the reflected positive-form completion of
+YM-47's histories. Literal translation descends through the null space,
+is contractive and composes, and extends strongly continuously.
+Its positive self-adjoint semigroup has a nonnegative self-adjoint generator:
+
+\[
+R_\lambda=\int_0^\infty e^{-\lambda t}T(t)\,dt,\qquad
+\mathcal D(H)=\operatorname{Ran}R_\lambda,\qquad
+HR_\lambda=I-\lambda R_\lambda,\qquad H\geq\gamma Q.
+\]
+
+The resolvent has explicit time-cut and quadrature tails. Its range on
+finite histories is a graph core. A local coefficient energy identity
+also constructs an isometric time-zero row embedding. The centered
+fundamental character at heat time 1/4 has reflected norm squared at
+least **5/32**, proving a nonzero excitation in this interacting carrier.
+The full prior abs(theta)<1/1680 window is retained.
+
+[The certificate](certificates/YM48_RESULT.json) binds nine written results:
+48 independent reflected path identities, 30 mixed-source gap/composition
+checks, four translated null controls, eight two-sided inverse checks,
+six resolvent identities, 24 generator-domain/gap checks, twelve outward
+quadratures, 35 coefficient identities, 108 integration-by-parts checks,
+twelve weighted energy controls and twelve refusal groups.
+Fourteen focused tests use Python 3.12 only.
+
+**Scope:** the carrier is the reflected history completion. YM-49 now
+supplies bounded time-zero coefficient observable action and a closure
+diagnostic. The row embedding is not yet proved onto or invariant, and arbitrary future
+multiplication does not preserve reflection-null histories. Native
+measure/NCG identification, physical gauge-observable selection, material
+time and the full 4D continuum remain open. The nonzero coefficient source
+is not a physical particle or Clay nontriviality certificate. The general
+proof is written, not mechanically formalized; the canonical RKF engine
+and all prior evidence remain unchanged.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym48_reflected_time.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym48_reflected_time.py -v
+~~~
+
+## Previous continuation: YM-47
+
+[YM-47's written proof](YM47_JOINT_LOCAL_HISTORY_LIMIT.md) constructs the
+joint limit of local vacuum history readouts as the spatial interval grows
+and the time step decreases, with no restriction on their relative rates.
+It applies to the actual square-sourced S chain throughout
+abs(theta)<1/1680. Both iterated limits give the same positive functional
+on the stated history algebra and its uniform completion.
+
+Normalizing each step first improves the finite-width error to
+
+\[
+\|(S_{I,a}/\lambda_{I,a})^n-V_I(na)\|
+\leq6b_I(na)\sqrt a\,e^{2b_Ia}.
+\]
+
+An explicit vacuum estimate, separated-time rounding, summable one-face
+extensions and a logarithmic crop give the joint local Cauchy bound.
+The correlation gap and reflection positivity pass to the limit.
+The [certificate](certificates/YM47_RESULT.json) retains four parameter
+cells and checks 16 spatial budgets, six rational vacuum comparisons,
+eight independent three-time readouts, 17 positive-contraction bounds,
+27 off-grid time roundings, 54 exact tail identities, 490 asymmetric
+crops, 1,120 one-face width checks and ten refusal groups.
+Twelve focused tests use Python 3.12.
+
+**Scope:** this is a positive history functional in a declared heat
+parameter. YM-48 now constructs its reflected continuous-time action and
+generator, with time-zero continuity for local coefficient row sources.
+Full instantaneous-row identification, arbitrary bounded time-collision
+claims, a countably additive path measure, physical clock, native measure/NCG
+dictionary and 4D continuum remain open.
+Written proofs and finite exact controls are distinct from mechanical
+formalization. The prior evidence is frozen; YM-47 explicitly clarifies
+the missing plus sign in YM-46's displayed boundary equation (1).
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym47_joint_history.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym47_joint_history.py -v
+~~~
+
+## Previous continuation: YM-46
+
+[YM-46's written proof](YM46_INFINITE_VOLUME_STATE.md) constructs the
+infinite-volume positive local-observable state at each fixed 0<a<=1
+on the declared full heat chain, for abs(theta)<1/1680. Explicit spatial
+and temporal boundary tails prove independence of boundaries/exhaustion
+and uniqueness within the stated local conditional specification.
+
+The normalized time map converges uniformly on every local row observable,
+with its discrete semigroup law proved. A normalized heat half-step bridge
+constructs the actual square-sourced S ordering as well as the convenient
+T ordering. The completed positive forms retain YM-45's all-source rate:
+
+\[
+\|Q(P_a^\sigma)^nQ\|\leq e^{-\gamma an},\qquad \sigma=T,S.
+\]
+
+Regulated site- and bond-reflection positivity also pass to the limit.
+The [certificate](certificates/YM46_RESULT.json) binds eight written results:
+four joint rate cells and explicit Cauchy boxes; 27 weighted layouts,
+216 interior and 306 boundary controls; 24 independent strip readouts;
+16 local-specification conditionals; 84 normalized bridge/entry checks,
+40 path identities and twelve half-edge skeletons; twelve reflection
+identities, 36 mixed-source powers and twelve refusal groups.
+Twelve new tests and 40 related tests pass on Python 3.12.
+
+**Scope:** the boundary-error constants depend on a. YM-47 now identifies
+this fixed-step volume construction and YM-44's time construction for
+local vacuum history readouts. The state is a positive functional
+on local observables and their uniform completion; a primitive-derived
+measure, physical real-time evolution, native NCG dictionary and full
+4D continuum are not claimed. Finite fixtures control the written proof;
+they are not SU(2) replacements or mechanical formalization.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym46_infinite_volume.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym46_infinite_volume.py -v
+~~~
+
+**Runtime policy: Python 3.12 only.** Earlier evidence bytes are preserved.
+
+## Previous continuation: YM-45
+
+[YM-45's written proof](YM45_TEMPORAL_BLOCK_UNIFORM_GAP.md) establishes
+the missing fine-time gap in an explicit small-bridge window:
+
+\[
+|\theta|<1/1680,\quad\kappa(a)=\theta a
+\quad\Longrightarrow\quad
+\|Q_a(S_a/\lambda_a)Q_a\|\leq e^{-\gamma a}
+\]
+
+for every finite spatial width m and every 0<a<=1, with gamma>0 independent
+of both. All sources and full coefficient contents are covered. For example,
+at abs(theta)=1/4096, gamma=Log(4/3)/56>=0.005137179865.
+The same rate passes to YM-44's normalized time-limit operator for all t>0
+at each finite width.
+
+Eight written results supply conditioned bridge coupling, bounded tilt
+costs, clipped-block counting, weighted memory comparison, fine-step vacuum
+construction, all-source extraction, the open parameter interval and
+time-limit transport. The [certificate](certificates/YM45_RESULT.json)
+records 75 clipped layouts, exact conditioned path/marginal controls,
+two joint block updates with preserved marginals, four rate cells,
+24 time-limit controls and twelve refusal groups. Ten targeted tests pass.
+These are written proofs plus exact finite evidence, not a formal-assistant
+verification of an infinite theorem.
+
+**Scope:** the reference functional and linear trajectory remain admitted.
+The result does not cover the old theta=1/16 example, arbitrary interactions,
+the original truncated Wilson family or the full 4D gauge lattice.
+YM-46 supplies the infinite-volume state/time map at fixed a, and YM-47
+joins the local-history limits. YM-48 supplies the reflected time
+action/generator; full row identification, native measure/NCG identification
+and the physical continuum remain open.
+The small per-step gap
+vanishes as a tends to zero; the positive rate per unit-a stays bounded below.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym45_temporal_blocks.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym45_temporal_blocks.py -v
+~~~
+
+**Runtime policy: Python 3.12 only.** All prior certificate bytes are preserved.
+
+## Previous continuation: YM-44 (3 October 2026)
+
+[YM-44's written proof](YM44_INTERACTING_TIME_REFINEMENT.md) constructs the
+full interacting time limit on the declared trajectory kappa(a)=theta a.
+For every fixed finite width m, every source and all contents,
+
+\[
+\|S_{h_n}\cdots S_{h_1}-U(t)\|
+\leq 3bt\,e^{bt}\sqrt{\max_j h_j},
+\qquad b=|\theta|(m-1),\quad t=\sum_j h_j.
+\]
+
+The heat/bridge commutator bound follows from two exact character identities.
+The generator on the finite-content core is -L+theta M_V. Ordered insertion
+tails, a cubic order-residue identity and a correctly normalized conditional
+gap-transport gate make the refinement assumptions and remaining gap explicit.
+YM-9's fixed-graph result, YM-22's leading tiling rate and EMK-T2's nilpotent
+transport are reused at their original scopes.
+
+The [certificate](certificates/YM44_RESULT.json) records 136 character-moment
+enclosures, 30 ordered-word identities, 60 refinement cases, 48 independent
+exponential-entry comparisons, unequal partitions and ten refusal groups.
+Ten targeted tests pass on Python 3.12. General proofs are written, not
+mechanically formalized; finite two-state controls are not an SU(2) substitute.
+
+**At the YM-44 stage:** the gap uniform in width and time cutoff was missing.
+YM-45 now supplies it only in its stated small-bridge window. A physical
+trajectory, the native measure/NCG dictionary and the interacting continuum
+remain open. The refinement error depends on width; YM-43's three coarse
+cells do not by themselves furnish the fine-step gap premise.
+
+~~~bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym44_time_refinement.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym44_time_refinement.py -v
+~~~
+
+**Runtime policy: Python 3.12 only.** Previous certificate bytes are preserved.
+
+## Previous continuation: YM-43 (3 October 2026)
+
+[YM-43's proof](YM43_NATIVE_TIME_TRANSFER_BOUND.md) derives the missing
+time-direction estimate on the existing YM-19 coarse heat-kernel chain.
+The criterion `2 c_s + c_t (q + 1/q) < 1` gives a bound on **every**
+vacuum-orthogonal source, uniform in all finite chain widths and all
+transfer powers, within the declared positive-functional carrier.
+
+| a | kappa | normalized time-operator ratio <= |
+| --- | --- | --- |
+| 6 | 1/16 | 1/2 |
+| 8 | 1/8 | 1/4 |
+| 12 | 1/8 | 1/64 |
+
+Seven written results replace the cited comparison/extraction step with
+explicit positive-sum and cut-square arguments. The certificate verifies
+the parameter hypotheses, 2,964 strip-barrier checks, 64 common-part cases,
+192 path/transfer identities, 360 whole-row marginal comparisons, finite
+transfer controls and eight refusal groups. This is not a formal-assistant
+proof. The measure dictionary, original YM-42 Wilson-grid operator problem,
+cutoff uniformity, interacting continuum and Clay problem remain open.
+
+```bash
+python3.12 papers/yang-mills-certified-benchmark/certificates/ym43_native_time_transfer.py --check
+python3.12 -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym43_native_time_transfer.py -v
+```
+
+**Runtime policy: Python 3.12 only.** YM-42's workflow also now uses this
+single version; its runtime/proof input hashes are rebound with every
+mathematical output unchanged. Previous dual-runtime evidence is historical.
+
+## Previous continuation: YM-42 (2 October 2026)
+
+[YM-42's proof and scope correction](YM42_SILENCE_TIME_LADDER.md) continue
+the already-named t=3 step on YM-37's 52-dimensional even invariant carrier.
+A general rational criterion gives a structural silence ball and a geometric
+Smriti tail for every spatial step. At kappa=1/8, 1/4, 1/2 the certified
+three-rail contraction ceilings are 0.007132026236, 0.028765231931 and
+0.118984522771. These are declared truncated rational instances.
+
+The exact counterexample in YM42-T5 proves that spatial contraction alone,
+even uniform in rail count, cannot establish a uniform time gap. The operator
+estimate on its original truncated Wilson grid and the three-rail content
+release remain open; YM-43 supplies a different, scoped heat-kernel route. T75's
+two-rail release retains its declared higher-content Gram-uniformity.
+The broad historical 'content gone / t only' shorthand is superseded by
+this scoped ledger; previous finite certificate bytes are unchanged.
+
+Reproduce without rewriting evidence:
+
+```bash
+python papers/yang-mills-certified-benchmark/certificates/ym42_silence_time_ladder.py --check
+python -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym42_silence_time_ladder.py -v
+```
+
+The dedicated `ym42-silence-time-ladder.yml` workflow checks Python 3.12 only.
+The original v1 paper and historical capsules keep their versioned scopes;
+the current continuation and correction are in the linked written proof.
+
+## YM-1: historical starting point
 
 First rung of resuming the MP Yang–Mills adapter with the certified RNKE
 machinery: the reduced finite-cutoff gap of the SU(2) one-holonomy Wilson
@@ -31,6 +640,17 @@ width budget.
 
 | Item | Status |
 |---|---|
+| **YM-51 tool audit and native heat-selection boundary** | PROVED for specified symmetric turn protocols: same curvature/reference and linear decay do not select quadratic decay; fixed-law invariance forces C=cI; six-channel recovery and explicit refinement bound; physical selection OPEN |
+| **YM-52 energy, records and observer relaxation** | PROVED on the compact free protocol carrier: energy/noise and bounded-density entropy balances, cofactor bracket tensor, exact full/even rates including rank two; fixed-budget even-objective isotropy selector; physical objective/units and anisotropic interacting transfer OPEN |
+| **YM-50 counted native reference, positive completion and symmetric-turn heat bridge** | PROVED for the specified quaternion/readout protocol; coefficient reference, observables, declared transfers and closed coefficient-history sector intertwined; general UGD, physical selection, NCG quantum measure and 4D OPEN |
+| **YM-49 bounded time-zero coefficient observable representation, ordered readouts, positive row-closure defect and gap-controlled memory; nonzero time/observable commutator** | PROVED on the declared heat-functional carrier; YM-50 supplies its compact reference/heat bridge; actual chain row defect, full bounded-history density, physical observable/DICT and 4D continuum OPEN |
+| **YM-48 reflected continuous-time action, self-adjoint generator/domain/core and gap; coefficient-row embedding and nonzero source** | PROVED on the declared small-bridge heat-functional carrier; YM-49 supplies time-zero observable action; instantaneous-row/physical identification, DICT and 4D continuum OPEN |
+| **YM-47 joint volume/time limit of local vacuum histories at arbitrary relative cutoff rates; both iterated limits coincide** | PROVED under the declared abs(theta)<1/1680 heat-functional adapter; positive history functional, correlation gap and reflection positivity retained; YM-48 constructs the reflected time action/generator; full row identification, DICT and 4D continuum OPEN |
+| **YM-46 infinite-volume positive local state and normalized T/S time maps at fixed a, with inherited gap and regulated reflection positivity** | PROVED under the declared small-bridge heat-functional adapter; YM-47 joins local-history limits; exact controls PASS; DICT and 4D continuum OPEN |
+| **YM-45 temporal-block gap, uniform in finite width and fine time step; same rate in every fixed-width time limit** | PROVED for abs(theta)<1/1680 on declared kappa=theta a full heat chain; YM-46 supplies fixed-a volume construction, YM-47 the joint local-history limit; YM-48 constructs the reflected time action/generator; full row identification, DICT and 4D continuum OPEN |
+| **YM-44 full interacting time refinement at every fixed finite width, with an all-content operator-norm tail, order-residue control and conditional normalized gap transport** | PROVED under declared heat/functional adapter and linear trajectory; YM-45 supplies its gap premise in a small-bridge window; DICT OPEN |
+| **YM-43 local overlap to full time-operator bound; all finite chain widths and transfer powers in three coarse heat-kernel cells** | PROVED under declared positive-functional carrier; exact hypotheses/controls PASS; cutoff/DICT OPEN |
+| **YM-42 structural silence ball, exact t=2/3 continuation, all-spatial-step Cauchy tail, and space/time non-implication witness** | PASS (scoped rational grid; its time operator gap OPEN) |
 | YM-1 reduced gap enclosure (a=1, beta=2) | PASS (pinned) |
 | YM-2 interacting theta-graph gap, certified small coupling (kappa < Delta_red/6) | PASS (pinned) |
 | YM-3 first-order crossing direction: rank-one, A<->B transported, slope lambda_half/4 | PASS (pinned) |
@@ -49,7 +669,7 @@ width budget.
 | YM-16 chain dock: exact B-factorisation ⇒ gap(S_m) ≤ Δ_red for ALL m,κ (m-uniform upper bound, exact eigenvector); vacuum volume bracket f0^{m−1} ≤ λ₁ ≤ e^{κ(m−1)}; certified two-sided gap (ratio ≤ 9/10) of S_m for m ≤ m*(κ) — m*=13 (κ=1/8), 7 (1/4), 4 (1/2) — with m* computed exactly and matched by the dock; m*+1 refused. Sup route provably non-uniform: death volume has coordinates | PASS (pinned) |
 | YM-17 interleaving seam: m_κ = B_odd·B_even; each dressed half-chain is a tensor product of the two-site chain at 2κ ⇒ product spectrum ⇒ gap ratio EXACTLY m-uniform (pair ratio certified ≤ 9/10 at κ≤1/2; bracket [1,3] honest at κ=1); vacuum bracket narrowed to rate κ² (per-bridge upper end 0.125→0.030 at κ=1/8); whole volume problem reduced to ONE inequality: λ₁(T) vs σ₁(X)σ₁(Y) (vacuum tracking of interleaved halves) | PASS (pinned) |
 | YM-18 CALIBRATION + DESIGN: enlarged exact carrier W'_m (vacuum + sites + bridge-pairs, dim 2m) gives certified Rayleigh lower bounds on λ₁(T_A,m), m=2..6; per-bridge vacuum rate φ_m^lo is m-independent to ~1e-5 (0.002177 @κ=1/8, 0.008698 @1/4, 0.03461 @1/2) — vacuum tracking behaves as a clean per-bridge rate; bracket width = looseness of the upper end. Cluster dock DESIGNED (monomers = odd pairs at 2κ, activities = even bridges, KP on a line) — no claim | PASS (calibration, pinned) |
-| YM-19 Dobrushin dock — **DEMOTED to ANCHORED** (governance rule: no classical borrowing; T3 rests on a cited Dobrushin/Föllmer anchor, same fate as YM-8 Jentzsch). T1 (coefficient bound) and T2 (α<1 arithmetic) are native and stand; the m-uniform GAP claim is WITHDRAWN until derived natively. Was: on the bounded-overlap chain — Dobrushin coefficient C_ij ≤ 1−1/δ² (elementary, proved), δ_s = e^{2κ} exact, δ_t ≤ (1+S_a)/(1−S_a) certified; α = 2(1−1/δ_t²)+2(1−1/δ_s²) < 1 ⇒ (pinned anchor: Dobrushin/Föllmer/Künsch covariance decay; extraction lemma proved) λ₂/λ₁ ≤ α for EVERY m. Certified gap/step ≥ 0.263 (a=6,κ=1/16), ≥ 0.145 (a=8,κ=1/8, ON YM-9's trajectory θ=1/64), ≥ 0.235 (a=12,κ=1/8); refused at (6,1/8),(4,1/16),(10,1/4). Coupling ceiling of the route exact: κ < log2/4. STANDING CORRECTION to YM-17 T3 (vacuum tracking insufficient; correlation-decay route replaces it). NOT uniform in the cutoff (δ_t→∞ as a→0) | ANCHORED (pinned, not a native theorem) |
+| YM-19 Dobrushin dock — **historical capsule DEMOTED to ANCHORED; scoped replacement in [YM-43](YM43_NATIVE_TIME_TRANSFER_BOUND.md)** (governance rule: no classical borrowing; T3 rests on a cited Dobrushin/Föllmer anchor, same fate as YM-8 Jentzsch). T1 (coefficient bound) and T2 (α<1 arithmetic) are native and stand; the m-uniform GAP claim is WITHDRAWN until derived natively. Was: on the bounded-overlap chain — Dobrushin coefficient C_ij ≤ 1−1/δ² (elementary, proved), δ_s = e^{2κ} exact, δ_t ≤ (1+S_a)/(1−S_a) certified; α = 2(1−1/δ_t²)+2(1−1/δ_s²) < 1 ⇒ (pinned anchor: Dobrushin/Föllmer/Künsch covariance decay; extraction lemma proved) λ₂/λ₁ ≤ α for EVERY m. Certified gap/step ≥ 0.263 (a=6,κ=1/16), ≥ 0.145 (a=8,κ=1/8, ON YM-9's trajectory θ=1/64), ≥ 0.235 (a=12,κ=1/8); refused at (6,1/8),(4,1/16),(10,1/4). Coupling ceiling of the route exact: κ < log2/4. STANDING CORRECTION to YM-17 T3 (vacuum tracking insufficient; correlation-decay route replaces it). NOT uniform in the cutoff (δ_t→∞ as a→0) | ANCHORED (pinned, not a native theorem) |
 | YM-20 NATIVE ORIGIN AUDIT: machine-checked origin ledger for YM-1..19 in the framework's vocabulary (carrier = COORDINATE_SHADOW throughout; counting = NATIVE_DERIVED throughout; anchors: YM-8 and YM-19 demoted imports, YM-17 SV-Weyl as technique). CAYLEY FORM certified: YM-15 ceiling (1+r)/(1−r) and YM-19 δ_t are Exp_Σ(A_Σ(y)) (F00-G Thm 5.1 pinned) with seam coordinates r, S_a; native odd-series log agrees with YM-1 route to 1e-20; uniform gap in native form = −Log_Σ(λ) − A_Σ(r). Bessel coefficients = native factorial series (F00-E Lemma 2.1 shape); Haar identification = the shadow. NAMED YM-21: bridge-local recognition-energy contraction under the seam-involution flow (F00-E Thm 6.2) | PASS (pinned) |
 | **YM-F1 THE CHAIN AS A RECOGNITION FABRIC (native carrier)**: T1 SU(2) = unit sphere of the EMK block over C_Σ — span{I, R, ιK, ιRK} is Hamilton's quaternion algebra, det = Δ∥+Δ⊥ becomes the quaternion norm (twisted seam channels), χ½ = 2×identity-sector coefficient; T2 chain = ladder fabric, bridge faces = plaquette holonomies H_l = A_i⁻¹A_{i+1}; T3 Recognition-Stokes EXACT on the chain (interior rungs cancel, E_int = 0, orientation tamper bites); T4 action = sum of face residues ρ_l = 1−Tr H_l/2 ∈ [0,2], weight = Exp_Σ(κ(m−1))·Exp_Σ(−κΣρ). Source: vault fabric appendix + EMK-1 + F00-E. Remaining shadow: Haar ↔ Φ_Σ (declared). Native form of YM-21 posed on the fabric | PASS (pinned) |
 | YM-21 THE TILING LAW (native, on the fabric): STANDING CORRECTION to YM-F1's posed question (boundary residue cannot control face residue — witness g, g⁻¹, certified); the right object is the tiling. T2 Stokes sub-telescoping ⇒ YM-15 entry = r^{#faces crossed}: SPATIAL decay along the chain exactly geometric, rate −Log r, every m. T3 leading-order TIME two-point = (λ·KMS_m(r))^t, bracketed λ^t((1∓r)/(1±r))^t for every m ⇒ YM-15/20's uniform rate −Log λ − A_Σ(r) DERIVED as a tiling count (t=1..6, m=2..8 inside bracket). T4 remainder named natively: higher-content/branching tilings, expansion parameter = face-coefficient ladder r_j (certified decreasing: r_½ ≫ r_1 ≫ r_{3/2}); uniform convergence = native cluster statement | PASS (pinned) |
@@ -66,7 +686,7 @@ width budget.
 | YM-32 DRESSED SINGLE-INSERTION ENERGY, m-UNIFORM (engine extended to rung insertions via CG reduction of 4-valent vertices; validated: j=0 reproduces YM-30, one-rail insertion vanishes, reversal identity, mixed-rung tamper smaller): E_m(p) = ⟨W_ptχ½(A_p), T0 W_ptχ½(A_p)⟩/⟨W_pt,T0W_pt⟩ exact for m=2..7, all p — bulk value m-independent to < 1e-6, ends differ; E_bulk = 0.43368 / 0.43532 / 0.44171 at κ = 1/8, 1/4, 1/2, i.e. λ·(1 + 1.27e-3 / 5.05e-3 / 1.98e-2), inside YM-15's bracket (I first wrote 'below λ'; the engine corrected me). Dressed denominator factorises (rung insertion free) ⇒ the J=½ sector's dressed excitation/vacuum ratio is exactly E_bulk, uniformly in m — a certified LOWER bound on that sector's top, not an upper bound on λ₂ | PASS (pinned) |
 | YM-33 t-ROW FABRIC ENGINE + EXACT TIME TWO-POINT FUNCTION (owner's framing: time carries no infinity, only the flow λ^τ = Exp_Σ(−τ·gap); expand the space coupling only): general cut transfer over t rails with rungs contracted up the column (interior vertices 5-leg: two rungs, two faces, insertion — two CG fusions); validated: t=2 reproduces YM-32 exactly, t=1 the chain, 3-row fabrics rational with exact time reflection. Dressed sequence a_τ = ⟨φ, T''_pt^τ φ⟩ and vacuum z_τ exact for τ=1,2, m=5..8: ratio sequence ρ₁ = E_bulk (YM-32), ρ₂ ≥ ρ₁, and the SECOND-ORDER connected correction δ₂ = ρ₂ − ρ₁ is a BULK CONSTANT — 0.00076998 / 0.00305278 / 0.01178845 at κ = 1/8, 1/4, 1/2 — with boundary influence decaying geometrically: moving an end from distance 2→3 shifts δ₂ by 1.3e-9 (either end, identically), 3→4 by 1.6e-12, ratio certified in [r²/2, 2r²]. The framework's own strong-coupling series for the gap, order by order as exact rationals, m-uniform with exponentially localised edges. Lower-bound side (Rayleigh data) — item 3's upper bound still open | PASS (pinned) |
 | YM-34 E4D-C RESTATED (native Laplace principle): the iterated multiplier WITHOUT smoothing, q_n = ∫wⁿ/∫wⁿ⁻¹, is strictly increasing to sup w = e^{2κ} (certified n ≤ 60) — so E4D-C as written in the RH ledger (deviation control of the multiplier iterated on one state) is unprovable, and the exponential of YM-16/26 is this growth. WITH the time kernel between multiplications the ratio is nondecreasing (log-convexity) and converges to λ₁(K^{1/2}WK^{1/2}) = f₀(1+δ), δ = 0.003582 / 0.014032 / 0.051911 (κ=1/8,1/4,1/2) vs sup price 0.274 / 0.598 / 1.405. E4D-C is restated for the alternating product (K^{1/2}M_wK^{1/2})ⁿ: λ₂/λ₁ ≤ 1−δ_gap uniform in m — the vacuum side of this is YM-31; only the excitation side is open | PASS (pinned) |
-| Remaining: theorum/28 item 3 — the memory channel's OPERATOR norm (not basis-state norms) uniform in m, via the same engine (E4D-C quadratic form on content-½); with YM-31's floor the dock's e_n becomes (‖QTQ‖/FLOOR) and the sup numerator is the last exponential; (interval coefficients, content tail, Perron bound on the column transfer → m-uniform floor at rate ≥ 0.00268) and the E4D-C quadratic form on content-½ via the same engine; (exact rational ladder evaluations) — closes item 6 at the true rate AND item 3 (E4D-C quadratic form on content-½) in one build; E4D-C on SUPERPOSITIONS of content-½ basis states (a quadratic-form statement on the multi-insertion channel) = theorum/28 item 3 (content-½ multi-insertion memory channel, Cauchy-uniform in m); (weak) YM-27 the intertwiner (spin-network) transfer on the chain fabric — recoupling matrices as weak-coupling tiling weights, floor uniform in m? (declared: chain ~ O(4)-type rotor model in 1+1D, continuum gap at the frontier for every method); (strong) FULL-ORDER tiling convergence uniform in m and a (j=½ branching); (weak) the COMMUTATOR-RESIDUE TRANSFER on the fabric — does the non-abelian sector alone carry a gap; AF trajectory derivation; (convergence of the face-coefficient tiling expansion) — the cluster statement in fabric language; then (replace the borrowed decay anchor by program machinery — square-sourcing/seam count/flow generator; generalized Euler flow and EMK/UGD sections to be read first); then uniformity in the CUTOFF a→0 of the volume-uniform gap (Dobrushin degrades as the heat kernel sharpens) — this is now the sharp wall; AF trajectory, tightness, OS, non-triviality, metric universality, 2D lattice, Clay | OPEN |
+| Remaining: theorum/28 item 3 — the memory channel's OPERATOR norm (not basis-state norms) uniform in m, via the same engine (E4D-C quadratic form on content-½); with YM-31's floor the dock's e_n becomes (‖QTQ‖/FLOOR) and the sup numerator is the last exponential; (interval coefficients, content tail, Perron bound on the column transfer → m-uniform floor at rate ≥ 0.00268) and the E4D-C quadratic form on content-½ via the same engine; (exact rational ladder evaluations) — closes item 6 at the true rate AND item 3 (E4D-C quadratic form on content-½) in one build; E4D-C on SUPERPOSITIONS of content-½ basis states (a quadratic-form statement on the multi-insertion channel) = theorum/28 item 3 (content-½ multi-insertion memory channel, Cauchy-uniform in m); (weak) YM-27 the intertwiner (spin-network) transfer on the chain fabric — recoupling matrices as weak-coupling tiling weights, floor uniform in m? (declared: chain ~ O(4)-type rotor model in 1+1D, continuum gap at the frontier for every method); (strong) FULL-ORDER tiling convergence uniform in m and a (j=½ branching); (weak) the COMMUTATOR-RESIDUE TRANSFER on the fabric — does the non-abelian sector alone carry a gap; AF trajectory derivation; (convergence of the face-coefficient tiling expansion) — the cluster statement in fabric language; then (YM-43 replaces the cited comparison at three coarse heat-kernel cells; YM-44 constructs full time refinement at fixed width; YM-45 proves a width/fine-time uniform gap for abs(theta)<1/1680 on declared kappa=theta a using temporal blocks); YM-46 constructs the infinite-volume local state and normalized time map at each fixed a in that window; YM-47 joins the local vacuum history limits at arbitrary relative cutoff rates; YM-48 constructs the reflected continuous-time generator and a nonzero coefficient source; uniformity outside the window and full instantaneous-row/observable identification remain; AF trajectory, tightness, OS, non-triviality, metric universality, 2D lattice, Clay | OPEN |
 | (superseded as the main route) cluster dock YM-18 proper: certified Kotecký–Preiss radius for the interleaving polymer gas with two-site pairs as monomers; per-bridge/local control in the content basis — certified strong-coupling cluster radius), 2D lattice, AF trajectory, tightness, OS reconstruction, non-triviality, metric universality, Clay predicate | OPEN |
 | Continuum existence / mass gap | OPEN |
 
@@ -284,7 +904,7 @@ The alternating product `K^{1/2} M_w K^{1/2}` compressed to ALL superpositions o
 
 **(a) refused with witness.** theorum/53 T4 bounds cut-square *weights* (`d_k ≤ S_kk`); a block with every diagonal ≤ μ can still have λmax > μ (2×2 witness, exact). So "complement λmax from T53 weights" is not available; item 3's upper half stays OPEN.
 
-**What is a theorem.** Every YM-33/36 quantity is `⟨boundary, M τ^{m−1} boundary⟩` for one column map τ = B⁻¹M (native quaternion carrier: faces/rungs are class functions of products, so only dot products appear; Haar = rational S³ moments; cut space = harmonic degree ≤ 2 per rail). τ commutes with simultaneous conjugation and with the centre of SU(2) acting on all rails; both boundary vectors are even, so everything lives in the even invariant sector: dim 8 (t = 2), 52 (t = 3). Validated **exactly** against `ym33.fabric_partition`. σ₁, σ₂ of the symmetric pencil (M, B) bracketed by exact inertia (fraction-free Bareiss, Jacobi sign rule); q := σ₂/σ₁ certified:
+**What is a theorem.** Every YM-33/36 quantity is `⟨boundary, M τ^{m−1} boundary⟩` for one column map τ = B⁻¹M (native quaternion carrier: faces/rungs are class functions of products, so only dot products appear; Haar = rational S³ moments; cut space = harmonic degree ≤ 2 per rail). τ commutes with simultaneous conjugation and with the centre of SU(2) acting on all rails; both boundary vectors are even, so everything lives in the even invariant sector: dim 8 (t = 2), 52 (t = 3). Validated **exactly** against `ym33.fabric_partition`. σ₁, σ₂ of the symmetric pencil (M, B) bracketed by exact inertia (native T53 symmetric elimination; the earlier Bareiss narration was incorrect); q := σ₂/σ₁ certified:
 
 | κ | q (t = 2) | q/r² | q (t = 3) | q/r² | ρ₁^∞ (two-sided) | certified err, interior p ≥ 3 |
 |---|---|---|---|---|---|---|
@@ -292,7 +912,7 @@ The alternating product `K^{1/2} M_w K^{1/2}` compressed to ALL superpositions o
 | 1/4 | 0.0057991 | 1.492 | 0.0086057 | 2.215 | [0.4353154056078, 0.4353154056137] | 1.5e-5 |
 | 1/2 | 0.0226981 | 1.483 | 0.0334686 | 2.187 | [0.4417107170, 0.4417107229] | 2.6e-4 |
 
-so `|ρ₁(m,p) − ρ₁^∞| ≤ err(m,p)` for **every** m and interior p, with err explicit in σ₁, σ₂, ‖N‖_B, ‖e₀‖_B — YM-33's "bulk constant with geometric edges" is now certified with its rate (both q's lie in YM-33's measured window [r²/2, 2r²]), and ρ₁^∞ = N₁₁/σ₁ is a single-column Rayleigh quotient (YM-32's E_bulk reproduced to every digit). **Boundary:** fixed time order only; no complement bound; no m-uniform upper bound on the true gap — item 3's m-dependence is now a one-column pencil question, its upper half unchanged. Runtime ~16 min (own CI step). Pin `EXPECTED_YM37.sha256`. **Standing correction (same day):** T3's for-all-m route uses the finite spectral split — classical import; status ANCHORED pending YM-38. **Resolved by YM-38 (same day): the for-all-m statement now rests on the native route; see the YM-38 entry.**
+so `|ρ₁(m,p) − ρ₁^∞| ≤ err(m,p)` for **every** m and interior p, with err explicit in σ₁, σ₂, ‖N‖_B, ‖e₀‖_B — YM-33's "bulk constant with geometric edges" is now certified with its rate (both rates have the r² scale; the t=3 values lie above the earlier 2r² guessed ceiling), and ρ₁^∞ = N₁₁/σ₁ is a single-column Rayleigh quotient (YM-32's E_bulk reproduced to every digit). **Boundary:** fixed time order only; no complement bound; no m-uniform upper bound on the true gap — item 3's m-dependence is now a one-column pencil question, its upper half unchanged. Runtime ~16 min (own CI step). Pin `EXPECTED_YM37.sha256`. **Standing correction (same day):** T3's for-all-m route uses the finite spectral split — classical import; status ANCHORED pending YM-38. **Resolved by YM-38 (same day): the for-all-m statement now rests on the native route; see the YM-38 entry.**
 
 ## YM-38 — Native m-uniformity (YM-37's spectral import removed)
 
@@ -335,7 +955,7 @@ YM-39's ladder run along YM-22's family (heat-kernel time kernel, Wilson faces a
 
 ## YM-41 — The tools dock: E4D-C restated with the operator-branch tools
 
-The RKF operator-branch tools consumed by pin and re-verified on this repo's own pencil: **silence-channel contraction** β_sil < 1 at every κ (0.00256 / 0.01029 / 0.04173 — identical to RKF's digits, both roundings coincide at 1e-9), the **ladder law** f_{c+½}/f_c ≤ κ/(2(2c+2)) with the sharper-claim discrimination (tight to 0.07%), and the **seam-flow meter** (sector cascade on the column pencil, every bracket's count route agreeing with the native det route). Selective release (stationarity, seam-count retention, u+e < 1 for the untruncated column) consumed by pin — RKF theorum/75 is the derivation of record. **E4D-C after the dock:** m gone (YM-37), content tail gone (theorum/75), contraction structural (theorum/74) — the remaining open content of `K^{1/2}M_wK^{1/2}` is the **t-direction only**. Named YM-42: the t-ladder of silence contractions (β_sil at t = 3, 52-dim even sector) and the t-uniform statement. Pin `EXPECTED_YM41.sha256`.
+The RKF operator-branch tools consumed by pin and re-verified on this repo's own pencil: **silence-channel contraction** β_sil < 1 at every κ (0.00256 / 0.01029 / 0.04173 — identical to RKF's digits, both roundings coincide at 1e-9), the **ladder law** f_{c+½}/f_c ≤ κ/(2(2c+2)) with the sharper-claim discrimination (tight to 0.07%), and the **seam-flow meter** (sector cascade on the column pencil, every bracket's count route agreeing with the native det route). Selective release (stationarity, seam-count retention, u+e < 1 for the untruncated column) consumed by pin — RKF theorum/75 is the derivation of record. **Current scope correction:** YM-37/38 control spatial convergence on the declared column; T75 supplies a two-rail release conditional on its declared higher-content Gram budget. The time-transfer operator upper bound remains open. [YM-42](YM42_SILENCE_TIME_LADDER.md) now supplies the finite t=3 silence contraction, with an explicit non-implication witness showing why spatial contraction alone is insufficient. Neither t-uniformity nor a three-rail content release is claimed. Pin `EXPECTED_YM41.sha256`.
 
 ## NG-1 — The native gap statement, its teeth, and the dictionary declared open
 
@@ -345,4 +965,4 @@ A governance capsule with **no new numbers**. Diagnosis behind it: every wall th
 
 **Teeth** (a statement with no refutation condition is a definition, not a theorem) — five ways to refute NG with a single certified counterexample: volume (R1, a route already died this way in YM-11), cutoff (R2, live — YM-23 shows the tiling route exits at a = 1/8), sector cascade (R3, the seam-flow meter is the instrument), a channel lighter than J = ½ (R4), and any verdict that survives its own tamper (R5).
 
-**Ledger re-scored against NG:** O1 single-member gap DELIVERED; O2 volume DELIVERED on the column (the chain's operator upper bound is **not** delivered); O3 content DELIVERED; **O4 time OPEN — the whole remainder (YM-42)**; O5 cutoff PARTIAL (declared trajectory only, AF shape not modelled); O6 evidence standard IN FORCE; **DICT (translation to Clay) OPEN, separate problem** (RH T01-E5C/E6). Sharpened by today's finding: theorum/75's grading was built classically and then regraded natively with identical rationals — one classical-looking ingredient proved replaceable; whether the measure itself is, is exactly DICT. Pin `EXPECTED_NG1.sha256`.
+**Ledger re-scored against NG:** O1 single-member gap DELIVERED; O2 volume DELIVERED on the column and, by YM-45, for the small-bridge full heat chain; the original Wilson-family operator upper bound remains OPEN; O3 content CONDITIONAL on T75's two-rail/tail contract on that route; **O4 time DELIVERED on the declared full heat chain for abs(theta)<1/1680 and 0<a<=1 by YM-45; the generic NG/Wilson claim remains OPEN**; **O5 cutoff PARTIAL: YM-44 constructs full time refinement at fixed width, and YM-45 supplies the same width-independent gap rate on its small-bridge window; YM-46 constructs the fixed-a infinite-volume state/time map; YM-47 constructs the joint local-history limit; YM-48 constructs the reflected generator and coefficient-row embedding; full row/observable identification, physical trajectory and AF remain OPEN**; O6 evidence standard IN FORCE; **DICT (translation to Clay) OPEN, separate problem** (RH T01-E5C/E6). Sharpened by today's finding: theorum/75's grading was built classically and then regraded natively with identical rationals — one classical-looking ingredient proved replaceable; whether the measure itself is, is exactly DICT. Pin `EXPECTED_NG1.sha256`.

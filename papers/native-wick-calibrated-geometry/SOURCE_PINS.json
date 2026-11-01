@@ -1,0 +1,30 @@
+{
+  "protocol": "WCG1_SOURCE_PINS_V1",
+  "repository_parent": "82b362b94f460cc4679bdc51ebc9cee5af9a4beb",
+  "files": {
+    "README.md": "60ea4b145cdc25c81c1ec7a6b62bda6d2367736dae1785b41fc87349d37c5957",
+    "THEOREM.md": "0864597baa1f2dc29587c3911b491ebae99b77c4ad8c0bf65378f2c1d8e2c892",
+    "SOURCE_MAP.md": "992398fd4ca39d1a5415a8db7cf7a90b2ce034659b238aac87a473d2d1eff68d",
+    "USAGE.md": "605ce9e7aebdfc5462b2d8df3c429ea7fb1f35c5aa8e2b6ca3ebafaab07642dd",
+    "wick_geometry_adapter.cjs": "082e72093fbca84553e504efb31d8222e41b985e83c1f2ef35329ccb89e45788",
+    "verify.cjs": "81b35925a09cbadf61331b8aeb776359dfd0809ae96aec6ebfd7ea3a3369472b",
+    "run.py": "c058f730efca184bb6232cf17b68c1e0dbddcc50d38b919360e2686796a5ebbb",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-phase-current-response/THEOREM.md": "e83f6bda2938c4bb39ac056dbd93ae3b441eebe205ecd2f0048977c681d513ff",
+    "../native-phase-current-response/SOURCE_PINS.json": "33c28ec6a2c7227feec3166092023c93c72f1c0dac3f7a20e456d6f225797f54",
+    "../native-logarithmic-material-density/THEOREM.md": "f22d8bdbe771add46809f155085f62db015a9d3b349eea391a412e3d82c546bf",
+    "../native-logarithmic-material-density/SOURCE_MAP.md": "9c841656181d114bd417fab0666e3e5774ef547e80b0ad2dce6b65eb5cd54bb4",
+    "../native-logarithmic-material-density/SOURCE_PINS.json": "4e2e269216fdb3577341ec31c34b59a2ea9888115451ce8d600b87bd376d841a",
+    "../native-coarse-material-geometry/THEOREM.md": "3a7563fd123499a6638086f01b3f3d554c8b064e849bf554913f0cfd9e1cc97e",
+    "../native-coarse-material-geometry/SOURCE_MAP.md": "9769db75300896f2053247dc52f48f76f362fabd98ee24662ef6a6080296aeb5",
+    "../native-coarse-material-geometry/SOURCE_PINS.json": "cfca060e96c6506b62955a4f40f0e8f8fb5dd68d0da9d7732cb942fee68e7c2b",
+    "../native-material-detector-dilation/THEOREM.md": "0736167397da80f2f88fe7f6eb0695ebd57d7a1315ef218f8be41556e53a6a65",
+    "../native-material-detector-dilation/SOURCE_MAP.md": "4fa6a89b22ed36fa750ec72b0ce74f82f8e103491ca0aee8a31dce0676c1c754",
+    "../native-material-detector-dilation/SOURCE_PINS.json": "7f6dd668e434a82c03a4b8a9f1334b09fc8f7653b06aa2ba905e0a220f4eb74d",
+    "../native-material-reference-field/THEOREM.md": "2efecdf36d8931e4a6748ba83c4be19495eb717a58d21110935eeb0cdeeedadd",
+    "../native-material-profile-quantization/THEOREM.md": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0",
+    "../native-resolved-material-geometry/THEOREM.md": "290f90dd010493aee033349c125354bb99a4e1aa0edd3ee034fed4db13326f20",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

@@ -1,0 +1,5939 @@
+{
+  "protocol": "RGR1_RESIDUAL_GAUGE_RIGGING_V1",
+  "status": "PASS_SELECTED_POSITIVE_FULL_GAUGE_RIGGING",
+  "source_pins_sha256": "32126c1d48d8fe91b7d2f66270e6b073f327dc5c2e9bd781215ac69a61934897",
+  "checks": [
+    {
+      "name": "scalar_jet_presentation_confluent",
+      "passed": true
+    },
+    {
+      "name": "fourth_derivative_chain_rule",
+      "passed": true
+    },
+    {
+      "name": "fourth_derivative_chain_rule:replay",
+      "passed": true
+    },
+    {
+      "name": "rough_cross_term_integration_by_parts",
+      "passed": true
+    },
+    {
+      "name": "rough_cross_term_integration_by_parts:replay",
+      "passed": true
+    },
+    {
+      "name": "conditional_trace_integration_by_parts",
+      "passed": true
+    },
+    {
+      "name": "conditional_trace_integration_by_parts:replay",
+      "passed": true
+    },
+    {
+      "name": "finite_quadratic_energy_cocycle",
+      "passed": true
+    },
+    {
+      "name": "finite_quadratic_energy_cocycle:replay",
+      "passed": true
+    },
+    {
+      "name": "full_logarithmic_Jacobian_cancellation",
+      "passed": true
+    },
+    {
+      "name": "full_logarithmic_Jacobian_cancellation:replay",
+      "passed": true
+    },
+    {
+      "name": "paired_Fourier_trace_at_identity:-8",
+      "passed": true
+    },
+    {
+      "name": "angle_plus_shape_divergence_zero:-8",
+      "passed": true
+    },
+    {
+      "name": "paired_Fourier_trace_at_identity:-5",
+      "passed": true
+    },
+    {
+      "name": "angle_plus_shape_divergence_zero:-5",
+      "passed": true
+    },
+    {
+      "name": "paired_Fourier_trace_at_identity:-2",
+      "passed": true
+    },
+    {
+      "name": "angle_plus_shape_divergence_zero:-2",
+      "passed": true
+    },
+    {
+      "name": "paired_Fourier_trace_at_identity:-1",
+      "passed": true
+    },
+    {
+      "name": "angle_plus_shape_divergence_zero:-1",
+      "passed": true
+    },
+    {
+      "name": "paired_Fourier_trace_at_identity:1",
+      "passed": true
+    },
+    {
+      "name": "angle_plus_shape_divergence_zero:1",
+      "passed": true
+    },
+    {
+      "name": "paired_Fourier_trace_at_identity:2",
+      "passed": true
+    },
+    {
+      "name": "angle_plus_shape_divergence_zero:2",
+      "passed": true
+    },
+    {
+      "name": "paired_Fourier_trace_at_identity:5",
+      "passed": true
+    },
+    {
+      "name": "angle_plus_shape_divergence_zero:5",
+      "passed": true
+    },
+    {
+      "name": "paired_Fourier_trace_at_identity:8",
+      "passed": true
+    },
+    {
+      "name": "angle_plus_shape_divergence_zero:8",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_shape_trace:2",
+      "passed": true
+    },
+    {
+      "name": "Hilbert_Schmidt_square_trace_fixture:2",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_shape_trace:3",
+      "passed": true
+    },
+    {
+      "name": "Hilbert_Schmidt_square_trace_fixture:3",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_shape_trace:4",
+      "passed": true
+    },
+    {
+      "name": "Hilbert_Schmidt_square_trace_fixture:4",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_shape_trace:5",
+      "passed": true
+    },
+    {
+      "name": "Hilbert_Schmidt_square_trace_fixture:5",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_shape_trace:6",
+      "passed": true
+    },
+    {
+      "name": "Hilbert_Schmidt_square_trace_fixture:6",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_shape_trace:7",
+      "passed": true
+    },
+    {
+      "name": "Hilbert_Schmidt_square_trace_fixture:7",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_shape_trace:8",
+      "passed": true
+    },
+    {
+      "name": "Hilbert_Schmidt_square_trace_fixture:8",
+      "passed": true
+    },
+    {
+      "name": "finite_trace_boundary_identity:1",
+      "passed": true
+    },
+    {
+      "name": "finite_determinant_log_sum:1",
+      "passed": true
+    },
+    {
+      "name": "finite_trace_boundary_identity:2",
+      "passed": true
+    },
+    {
+      "name": "finite_determinant_log_sum:2",
+      "passed": true
+    },
+    {
+      "name": "finite_trace_boundary_identity:3",
+      "passed": true
+    },
+    {
+      "name": "finite_determinant_log_sum:3",
+      "passed": true
+    },
+    {
+      "name": "finite_trace_boundary_identity:4",
+      "passed": true
+    },
+    {
+      "name": "finite_determinant_log_sum:4",
+      "passed": true
+    },
+    {
+      "name": "finite_trace_boundary_identity:5",
+      "passed": true
+    },
+    {
+      "name": "finite_determinant_log_sum:5",
+      "passed": true
+    },
+    {
+      "name": "finite_trace_boundary_identity:6",
+      "passed": true
+    },
+    {
+      "name": "finite_determinant_log_sum:6",
+      "passed": true
+    },
+    {
+      "name": "finite_trace_boundary_identity:7",
+      "passed": true
+    },
+    {
+      "name": "finite_determinant_log_sum:7",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_comparison_divergence_zero",
+      "passed": true
+    },
+    {
+      "name": "comparison_score_is_half_energy_derivative",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:0:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:0:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:0:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:0:0",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:0:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:0:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:0:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:0:1",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:0:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:0:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:0:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:0:2",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:0:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:0:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:0:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:0:3",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:0:4",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:0:4",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:0:4",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:0:4",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:0:5",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:0:5",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:0:5",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:0:5",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:0:6",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:0:6",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:0:6",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:0:6",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:1:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:1:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:1:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:1:0",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:1:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:1:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:1:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:1:1",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:1:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:1:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:1:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:1:2",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:1:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:1:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:1:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:1:3",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:1:4",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:1:4",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:1:4",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:1:4",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:1:5",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:1:5",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:1:5",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:1:5",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:2:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:2:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:2:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:2:0",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:2:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:2:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:2:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:2:1",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:2:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:2:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:2:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:2:2",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:2:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:2:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:2:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:2:3",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:2:4",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:2:4",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:2:4",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:2:4",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:3:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:3:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:3:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:3:0",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:3:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:3:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:3:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:3:1",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:3:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:3:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:3:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:3:2",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:3:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:3:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:3:3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:3:3",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:4:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:4:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:4:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:4:0",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:4:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:4:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:4:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:4:1",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:4:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:4:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:4:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:4:2",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:5:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:5:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:5:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:5:0",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:5:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:5:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:5:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:5:1",
+      "passed": true
+    },
+    {
+      "name": "doubled_Gaussian_Ward:6:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:1:6:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:2:6:0",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_integration_by_parts:3:6:0",
+      "passed": true
+    },
+    {
+      "name": "selected_rigging_Gram_rank_one",
+      "passed": true
+    },
+    {
+      "name": "selected_normalization",
+      "passed": true
+    },
+    {
+      "name": "nontrivial_null_test",
+      "passed": true
+    },
+    {
+      "name": "null_test_has_nonzero_kinematic_norm",
+      "passed": true
+    },
+    {
+      "name": "positive_physical_diagonal:0",
+      "passed": true
+    },
+    {
+      "name": "positive_physical_diagonal:1",
+      "passed": true
+    },
+    {
+      "name": "positive_physical_diagonal:2",
+      "passed": true
+    },
+    {
+      "name": "positive_physical_diagonal:3",
+      "passed": true
+    },
+    {
+      "name": "positive_physical_diagonal:4",
+      "passed": true
+    },
+    {
+      "name": "spectator_quotient_onto",
+      "passed": true
+    },
+    {
+      "name": "physical_observable_intertwiner:179",
+      "passed": true
+    },
+    {
+      "name": "physical_observable_intertwiner:180",
+      "passed": true
+    },
+    {
+      "name": "physical_observable_intertwiner:181",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "omit_angular_Jacobian",
+      "rejected": true
+    },
+    {
+      "name": "omit_regularized_determinant",
+      "rejected": true
+    },
+    {
+      "name": "wrong_fourth_derivative_coefficient",
+      "rejected": true
+    },
+    {
+      "name": "omit_half_in_cross_integration_by_parts",
+      "rejected": true
+    },
+    {
+      "name": "omit_energy_cross_term",
+      "rejected": true
+    },
+    {
+      "name": "finite_cutoff_captures_unresolved_smearing",
+      "rejected": true
+    },
+    {
+      "name": "wrong_Gaussian_scale:1",
+      "rejected": true
+    },
+    {
+      "name": "wrong_Gaussian_scale:3",
+      "rejected": true
+    },
+    {
+      "name": "wrong_Gaussian_scale:4",
+      "rejected": true
+    },
+    {
+      "name": "omit_half_density_score",
+      "rejected": true
+    },
+    {
+      "name": "double_score_instead_of_half",
+      "rejected": true
+    },
+    {
+      "name": "kinematic_norm_equals_physical_norm",
+      "rejected": true
+    },
+    {
+      "name": "corrupted_native_replay",
+      "rejected": true
+    }
+  ],
+  "presentations": [
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "k",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "s1",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "s2",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "s3",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "s4",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "h1",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "h2",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "h3",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "h4",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "h5",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "x",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "u",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "t",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "H",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "dH",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "L",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "J",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "commute_1_0",
+            "lhs": [
+              "s1",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "s1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_2_0",
+            "lhs": [
+              "s2",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "s2"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_2_1",
+            "lhs": [
+              "s2",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "s2"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_3_0",
+            "lhs": [
+              "s3",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "s3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_3_1",
+            "lhs": [
+              "s3",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "s3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_3_2",
+            "lhs": [
+              "s3",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "s3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_4_0",
+            "lhs": [
+              "s4",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "s4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_4_1",
+            "lhs": [
+              "s4",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "s4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_4_2",
+            "lhs": [
+              "s4",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "s4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_4_3",
+            "lhs": [
+              "s4",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "s4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_5_0",
+            "lhs": [
+              "h1",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "h1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_5_1",
+            "lhs": [
+              "h1",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "h1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_5_2",
+            "lhs": [
+              "h1",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "h1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_5_3",
+            "lhs": [
+              "h1",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "h1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_5_4",
+            "lhs": [
+              "h1",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "h1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_6_0",
+            "lhs": [
+              "h2",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "h2"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_6_1",
+            "lhs": [
+              "h2",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "h2"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_6_2",
+            "lhs": [
+              "h2",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "h2"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_6_3",
+            "lhs": [
+              "h2",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "h2"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_6_4",
+            "lhs": [
+              "h2",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "h2"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_6_5",
+            "lhs": [
+              "h2",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "h2"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_7_0",
+            "lhs": [
+              "h3",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "h3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_7_1",
+            "lhs": [
+              "h3",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "h3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_7_2",
+            "lhs": [
+              "h3",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "h3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_7_3",
+            "lhs": [
+              "h3",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "h3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_7_4",
+            "lhs": [
+              "h3",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "h3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_7_5",
+            "lhs": [
+              "h3",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "h3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_7_6",
+            "lhs": [
+              "h3",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "h3"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_8_0",
+            "lhs": [
+              "h4",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "h4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_8_1",
+            "lhs": [
+              "h4",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "h4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_8_2",
+            "lhs": [
+              "h4",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "h4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_8_3",
+            "lhs": [
+              "h4",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "h4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_8_4",
+            "lhs": [
+              "h4",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "h4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_8_5",
+            "lhs": [
+              "h4",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "h4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_8_6",
+            "lhs": [
+              "h4",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "h4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_8_7",
+            "lhs": [
+              "h4",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "h4"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_9_0",
+            "lhs": [
+              "h5",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "h5"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_9_1",
+            "lhs": [
+              "h5",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "h5"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_9_2",
+            "lhs": [
+              "h5",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "h5"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_9_3",
+            "lhs": [
+              "h5",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "h5"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_9_4",
+            "lhs": [
+              "h5",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "h5"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_9_5",
+            "lhs": [
+              "h5",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "h5"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_9_6",
+            "lhs": [
+              "h5",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "h5"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_9_7",
+            "lhs": [
+              "h5",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "h5"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_9_8",
+            "lhs": [
+              "h5",
+              "h4"
+            ],
+            "rhs": [
+              [
+                [
+                  "h4",
+                  "h5"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_0",
+            "lhs": [
+              "x",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_1",
+            "lhs": [
+              "x",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_2",
+            "lhs": [
+              "x",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_3",
+            "lhs": [
+              "x",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_4",
+            "lhs": [
+              "x",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_5",
+            "lhs": [
+              "x",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_6",
+            "lhs": [
+              "x",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_7",
+            "lhs": [
+              "x",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_8",
+            "lhs": [
+              "x",
+              "h4"
+            ],
+            "rhs": [
+              [
+                [
+                  "h4",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_10_9",
+            "lhs": [
+              "x",
+              "h5"
+            ],
+            "rhs": [
+              [
+                [
+                  "h5",
+                  "x"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_0",
+            "lhs": [
+              "u",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_1",
+            "lhs": [
+              "u",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_2",
+            "lhs": [
+              "u",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_3",
+            "lhs": [
+              "u",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_4",
+            "lhs": [
+              "u",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_5",
+            "lhs": [
+              "u",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_6",
+            "lhs": [
+              "u",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_7",
+            "lhs": [
+              "u",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_8",
+            "lhs": [
+              "u",
+              "h4"
+            ],
+            "rhs": [
+              [
+                [
+                  "h4",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_9",
+            "lhs": [
+              "u",
+              "h5"
+            ],
+            "rhs": [
+              [
+                [
+                  "h5",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_11_10",
+            "lhs": [
+              "u",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "u"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_0",
+            "lhs": [
+              "v",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_1",
+            "lhs": [
+              "v",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_2",
+            "lhs": [
+              "v",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_3",
+            "lhs": [
+              "v",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_4",
+            "lhs": [
+              "v",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_5",
+            "lhs": [
+              "v",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_6",
+            "lhs": [
+              "v",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_7",
+            "lhs": [
+              "v",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_8",
+            "lhs": [
+              "v",
+              "h4"
+            ],
+            "rhs": [
+              [
+                [
+                  "h4",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_9",
+            "lhs": [
+              "v",
+              "h5"
+            ],
+            "rhs": [
+              [
+                [
+                  "h5",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_10",
+            "lhs": [
+              "v",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_12_11",
+            "lhs": [
+              "v",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_0",
+            "lhs": [
+              "t",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_1",
+            "lhs": [
+              "t",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_2",
+            "lhs": [
+              "t",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_3",
+            "lhs": [
+              "t",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_4",
+            "lhs": [
+              "t",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_5",
+            "lhs": [
+              "t",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_6",
+            "lhs": [
+              "t",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_7",
+            "lhs": [
+              "t",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_8",
+            "lhs": [
+              "t",
+              "h4"
+            ],
+            "rhs": [
+              [
+                [
+                  "h4",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_9",
+            "lhs": [
+              "t",
+              "h5"
+            ],
+            "rhs": [
+              [
+                [
+                  "h5",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_10",
+            "lhs": [
+              "t",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_11",
+            "lhs": [
+              "t",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_13_12",
+            "lhs": [
+              "t",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "t"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_0",
+            "lhs": [
+              "H",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_1",
+            "lhs": [
+              "H",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_2",
+            "lhs": [
+              "H",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_3",
+            "lhs": [
+              "H",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_4",
+            "lhs": [
+              "H",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_5",
+            "lhs": [
+              "H",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_6",
+            "lhs": [
+              "H",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_7",
+            "lhs": [
+              "H",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_8",
+            "lhs": [
+              "H",
+              "h4"
+            ],
+            "rhs": [
+              [
+                [
+                  "h4",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_9",
+            "lhs": [
+              "H",
+              "h5"
+            ],
+            "rhs": [
+              [
+                [
+                  "h5",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_10",
+            "lhs": [
+              "H",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_11",
+            "lhs": [
+              "H",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_12",
+            "lhs": [
+              "H",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_14_13",
+            "lhs": [
+              "H",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "H"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_0",
+            "lhs": [
+              "dH",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_1",
+            "lhs": [
+              "dH",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_2",
+            "lhs": [
+              "dH",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_3",
+            "lhs": [
+              "dH",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_4",
+            "lhs": [
+              "dH",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_5",
+            "lhs": [
+              "dH",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_6",
+            "lhs": [
+              "dH",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_7",
+            "lhs": [
+              "dH",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_8",
+            "lhs": [
+              "dH",
+              "h4"
+            ],
+            "rhs": [
+              [
+                [
+                  "h4",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_9",
+            "lhs": [
+              "dH",
+              "h5"
+            ],
+            "rhs": [
+              [
+                [
+                  "h5",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_10",
+            "lhs": [
+              "dH",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_11",
+            "lhs": [
+              "dH",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_12",
+            "lhs": [
+              "dH",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_13",
+            "lhs": [
+              "dH",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_15_14",
+            "lhs": [
+              "dH",
+              "H"
+            ],
+            "rhs": [
+              [
+                [
+                  "H",
+                  "dH"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_0",
+            "lhs": [
+              "L",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_1",
+            "lhs": [
+              "L",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_2",
+            "lhs": [
+              "L",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_3",
+            "lhs": [
+              "L",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_4",
+            "lhs": [
+              "L",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_5",
+            "lhs": [
+              "L",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_6",
+            "lhs": [
+              "L",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_7",
+            "lhs": [
+              "L",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_8",
+            "lhs": [
+              "L",
+              "h4"
+            ],
+            "rhs": [
+              [
+                [
+                  "h4",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_9",
+            "lhs": [
+              "L",
+              "h5"
+            ],
+            "rhs": [
+              [
+                [
+                  "h5",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_10",
+            "lhs": [
+              "L",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_11",
+            "lhs": [
+              "L",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_12",
+            "lhs": [
+              "L",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_13",
+            "lhs": [
+              "L",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_14",
+            "lhs": [
+              "L",
+              "H"
+            ],
+            "rhs": [
+              [
+                [
+                  "H",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_16_15",
+            "lhs": [
+              "L",
+              "dH"
+            ],
+            "rhs": [
+              [
+                [
+                  "dH",
+                  "L"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_0",
+            "lhs": [
+              "J",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_1",
+            "lhs": [
+              "J",
+              "s1"
+            ],
+            "rhs": [
+              [
+                [
+                  "s1",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_2",
+            "lhs": [
+              "J",
+              "s2"
+            ],
+            "rhs": [
+              [
+                [
+                  "s2",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_3",
+            "lhs": [
+              "J",
+              "s3"
+            ],
+            "rhs": [
+              [
+                [
+                  "s3",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_4",
+            "lhs": [
+              "J",
+              "s4"
+            ],
+            "rhs": [
+              [
+                [
+                  "s4",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_5",
+            "lhs": [
+              "J",
+              "h1"
+            ],
+            "rhs": [
+              [
+                [
+                  "h1",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_6",
+            "lhs": [
+              "J",
+              "h2"
+            ],
+            "rhs": [
+              [
+                [
+                  "h2",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_7",
+            "lhs": [
+              "J",
+              "h3"
+            ],
+            "rhs": [
+              [
+                [
+                  "h3",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_8",
+            "lhs": [
+              "J",
+              "h4"
+            ],
+            "rhs": [
+              [
+                [
+                  "h4",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_9",
+            "lhs": [
+              "J",
+              "h5"
+            ],
+            "rhs": [
+              [
+                [
+                  "h5",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_10",
+            "lhs": [
+              "J",
+              "x"
+            ],
+            "rhs": [
+              [
+                [
+                  "x",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_11",
+            "lhs": [
+              "J",
+              "u"
+            ],
+            "rhs": [
+              [
+                [
+                  "u",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_12",
+            "lhs": [
+              "J",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_13",
+            "lhs": [
+              "J",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_14",
+            "lhs": [
+              "J",
+              "H"
+            ],
+            "rhs": [
+              [
+                [
+                  "H",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_15",
+            "lhs": [
+              "J",
+              "dH"
+            ],
+            "rhs": [
+              [
+                [
+                  "dH",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          },
+          {
+            "id": "commute_17_16",
+            "lhs": [
+              "J",
+              "L"
+            ],
+            "rhs": [
+              [
+                [
+                  "L",
+                  "J"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar jets and energy/determinant variables"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 816,
+        "resolved": 816,
+        "open": 0,
+        "full_audit_sha256": "9306b417a46c734b770a2b5bcc75d1ff25c0fe71c70c0de8856b3f57ccabee0f"
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "fourth_derivative_chain_rule",
+      "presentation_sha256": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h1",
+              "k",
+              "s3"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h1",
+              "k",
+              "s1",
+              "s2"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h1",
+              "k",
+              "s2",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h2",
+              "k",
+              "k",
+              "s2"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h2",
+              "k",
+              "s2",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h1",
+              "k",
+              "s1",
+              "s1",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h2",
+              "k",
+              "k",
+              "s1",
+              "s1"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h2",
+              "k",
+              "s1",
+              "k",
+              "s1"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h2",
+              "k",
+              "s1",
+              "s1",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h3",
+              "k",
+              "k",
+              "k",
+              "s1"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h3",
+              "k",
+              "k",
+              "s1",
+              "k"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h3",
+              "k",
+              "s1",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h4",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h1",
+              "k",
+              "s3"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h1",
+              "k",
+              "s1",
+              "s2"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h2",
+              "k",
+              "k",
+              "s2"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h1",
+              "k",
+              "s1",
+              "s1",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h2",
+              "k",
+              "k",
+              "s1",
+              "s1"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h3",
+              "k",
+              "k",
+              "k",
+              "s1"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h4",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "h1",
+                "k",
+                "s1",
+                "s2"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h1",
+                "k",
+                "s2",
+                "s1"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h2",
+                "k",
+                "k",
+                "s2"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h2",
+                "k",
+                "s2",
+                "k"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h2",
+                "k",
+                "k",
+                "s1",
+                "s1"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h2",
+                "k",
+                "s1",
+                "k",
+                "s1"
+              ],
+              [
+                "3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h2",
+                "k",
+                "s1",
+                "s1",
+                "k"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h3",
+                "k",
+                "k",
+                "k",
+                "s1"
+              ],
+              [
+                "-3",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h3",
+                "k",
+                "k",
+                "s1",
+                "k"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h3",
+                "k",
+                "s1",
+                "k",
+                "k"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "h3",
+              "k",
+              "s1",
+              "k",
+              "k"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 2
+          },
+          {
+            "word": [
+              "h3",
+              "k",
+              "k",
+              "s1",
+              "k"
+            ],
+            "coefficient": [
+              "3",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 3
+          },
+          {
+            "word": [
+              "h2",
+              "k",
+              "s1",
+              "s1",
+              "k"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 3
+          },
+          {
+            "word": [
+              "h2",
+              "k",
+              "s1",
+              "k",
+              "s1"
+            ],
+            "coefficient": [
+              "4",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 2
+          },
+          {
+            "word": [
+              "h2",
+              "k",
+              "s2",
+              "k"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_2_0",
+            "position": 2
+          },
+          {
+            "word": [
+              "h1",
+              "k",
+              "s2",
+              "s1"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_2_1",
+            "position": 2
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "rough_cross_term_integration_by_parts",
+      "presentation_sha256": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h1",
+              "k",
+              "s3",
+              "s4"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h1",
+              "k",
+              "s4",
+              "s3"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s1",
+              "s3"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s2",
+              "s2"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "k",
+              "s3"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h1",
+              "k",
+              "s1",
+              "s2"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h2",
+              "k",
+              "k",
+              "s2"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h1",
+              "k",
+              "s1",
+              "s3",
+              "s3"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h2",
+              "k",
+              "k",
+              "s3",
+              "s3"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s1",
+              "s1",
+              "s2"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s1",
+              "s2",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s2",
+              "s1",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "k",
+              "s1",
+              "s2"
+            ],
+            [
+              "14",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "k",
+              "s2",
+              "s1"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "s1",
+              "k",
+              "s2"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h3",
+              "k",
+              "k",
+              "k",
+              "s2"
+            ],
+            [
+              "10",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h1",
+              "k",
+              "s1",
+              "s1",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h2",
+              "k",
+              "k",
+              "s1",
+              "s1"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h3",
+              "k",
+              "k",
+              "k",
+              "s1"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h4",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s1",
+              "s1",
+              "s1",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "k",
+              "s1",
+              "s1",
+              "s1"
+            ],
+            [
+              "8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "s1",
+              "k",
+              "s1",
+              "s1"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h3",
+              "k",
+              "k",
+              "k",
+              "s1",
+              "s1"
+            ],
+            [
+              "13",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h3",
+              "k",
+              "k",
+              "s1",
+              "k",
+              "s1"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h3",
+              "k",
+              "s1",
+              "k",
+              "k",
+              "s1"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h4",
+              "k",
+              "k",
+              "k",
+              "k",
+              "s1"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h4",
+              "k",
+              "k",
+              "k",
+              "s1",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h4",
+              "k",
+              "k",
+              "s1",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h4",
+              "k",
+              "s1",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h5",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "s4",
+              "h1",
+              "k",
+              "s3"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s1",
+              "s3"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s2",
+              "s2"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "k",
+              "s3"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h1",
+              "k",
+              "s1",
+              "s2"
+            ],
+            [
+              "3",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h2",
+              "k",
+              "k",
+              "s2"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h1",
+              "k",
+              "s1",
+              "s3",
+              "s3"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "h2",
+              "k",
+              "k",
+              "s3",
+              "s3"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s1",
+              "s1",
+              "s2"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s1",
+              "s2",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s2",
+              "s1",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "k",
+              "s1",
+              "s2"
+            ],
+            [
+              "14",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "k",
+              "s2",
+              "s1"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "s1",
+              "k",
+              "s2"
+            ],
+            [
+              "4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h3",
+              "k",
+              "k",
+              "k",
+              "s2"
+            ],
+            [
+              "10",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h1",
+              "k",
+              "s1",
+              "s1",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h2",
+              "k",
+              "k",
+              "s1",
+              "s1"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h3",
+              "k",
+              "k",
+              "k",
+              "s1"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s4",
+              "h4",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h1",
+              "k",
+              "s1",
+              "s1",
+              "s1",
+              "s1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "k",
+              "s1",
+              "s1",
+              "s1"
+            ],
+            [
+              "8",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h2",
+              "k",
+              "s1",
+              "k",
+              "s1",
+              "s1"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h3",
+              "k",
+              "k",
+              "k",
+              "s1",
+              "s1"
+            ],
+            [
+              "13",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h3",
+              "k",
+              "k",
+              "s1",
+              "k",
+              "s1"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h3",
+              "k",
+              "s1",
+              "k",
+              "k",
+              "s1"
+            ],
+            [
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h4",
+              "k",
+              "k",
+              "k",
+              "k",
+              "s1"
+            ],
+            [
+              "7",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h4",
+              "k",
+              "k",
+              "k",
+              "s1",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h4",
+              "k",
+              "k",
+              "s1",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h4",
+              "k",
+              "s1",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "s3",
+              "h5",
+              "k",
+              "k",
+              "k",
+              "k",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "s4",
+                "h1",
+                "k",
+                "s3"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h1",
+                "k",
+                "s3",
+                "s4"
+              ],
+              [
+                "1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h1",
+                "k",
+                "s4",
+                "s3"
+              ],
+              [
+                "1/2",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "h1",
+              "k",
+              "s4",
+              "s3"
+            ],
+            "coefficient": [
+              "1/2",
+              "0"
+            ],
+            "rule": "commute_4_3",
+            "position": 2
+          },
+          {
+            "word": [
+              "h1",
+              "k",
+              "s3",
+              "s4"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_5_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "s4",
+              "h1",
+              "k",
+              "s3"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_5_0",
+            "position": 1
+          },
+          {
+            "word": [
+              "s4",
+              "k",
+              "h1",
+              "s3"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_4_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "k",
+              "h1",
+              "s3",
+              "s4"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_5_3",
+            "position": 1
+          },
+          {
+            "word": [
+              "k",
+              "s4",
+              "h1",
+              "s3"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_5_3",
+            "position": 2
+          },
+          {
+            "word": [
+              "k",
+              "s4",
+              "s3",
+              "h1"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_4_3",
+            "position": 1
+          },
+          {
+            "word": [
+              "k",
+              "s3",
+              "h1",
+              "s4"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_5_4",
+            "position": 2
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "conditional_trace_integration_by_parts",
+      "presentation_sha256": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "H"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "dH"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "t",
+              "dH"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "H"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "dH"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "t",
+              "dH"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "finite_quadratic_energy_cocycle",
+      "presentation_sha256": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x",
+              "u"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "v"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "v"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "x",
+              "u"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "x",
+              "v"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "u",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "u"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "u",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "v",
+                "u"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "v",
+              "u"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_12_11",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "full_logarithmic_Jacobian_cancellation",
+      "presentation_sha256": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "8d76176c6967a0156306973cb56f067e139c0d0a30d6465e3d35fcde75678d68",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "kind": "identity_profile_sine_flow",
+      "cutoff": 2,
+      "trace": [
+        "-1",
+        "0"
+      ],
+      "square_trace": [
+        "0",
+        "0"
+      ],
+      "scope": "exact finite matrix; written trace limit in theorem remains analytic"
+    },
+    {
+      "kind": "identity_profile_sine_flow",
+      "cutoff": 3,
+      "trace": [
+        "-1",
+        "0"
+      ],
+      "square_trace": [
+        "-1/6",
+        "0"
+      ],
+      "scope": "exact finite matrix; written trace limit in theorem remains analytic"
+    },
+    {
+      "kind": "identity_profile_sine_flow",
+      "cutoff": 4,
+      "trace": [
+        "-1",
+        "0"
+      ],
+      "square_trace": [
+        "-1/4",
+        "0"
+      ],
+      "scope": "exact finite matrix; written trace limit in theorem remains analytic"
+    },
+    {
+      "kind": "identity_profile_sine_flow",
+      "cutoff": 5,
+      "trace": [
+        "-1",
+        "0"
+      ],
+      "square_trace": [
+        "-3/10",
+        "0"
+      ],
+      "scope": "exact finite matrix; written trace limit in theorem remains analytic"
+    },
+    {
+      "kind": "identity_profile_sine_flow",
+      "cutoff": 6,
+      "trace": [
+        "-1",
+        "0"
+      ],
+      "square_trace": [
+        "-1/3",
+        "0"
+      ],
+      "scope": "exact finite matrix; written trace limit in theorem remains analytic"
+    },
+    {
+      "kind": "identity_profile_sine_flow",
+      "cutoff": 7,
+      "trace": [
+        "-1",
+        "0"
+      ],
+      "square_trace": [
+        "-5/14",
+        "0"
+      ],
+      "scope": "exact finite matrix; written trace limit in theorem remains analytic"
+    },
+    {
+      "kind": "identity_profile_sine_flow",
+      "cutoff": 8,
+      "trace": [
+        "-1",
+        "0"
+      ],
+      "square_trace": [
+        "-3/8",
+        "0"
+      ],
+      "scope": "exact finite matrix; written trace limit in theorem remains analytic"
+    },
+    {
+      "kind": "finite_nonlinear_Ward_defect",
+      "covariance_scale": 1,
+      "test": "x",
+      "defect_divided_by_i": "-1",
+      "scope": "finite divergence-free comparison only"
+    },
+    {
+      "kind": "finite_nonlinear_Ward_defect",
+      "covariance_scale": 3,
+      "test": "x",
+      "defect_divided_by_i": "2",
+      "scope": "finite divergence-free comparison only"
+    },
+    {
+      "kind": "finite_nonlinear_Ward_defect",
+      "covariance_scale": 4,
+      "test": "x",
+      "defect_divided_by_i": "5",
+      "scope": "finite divergence-free comparison only"
+    }
+  ],
+  "results": {
+    "kinematic_covariance_unchanged": true,
+    "continuous_Radon_Nikodym_formula": "exp[-Delta_g_inverse/(2c)]",
+    "full_nonzero_invariant_functional": "integration on continuous tests against nu_2 tensor nu_2",
+    "physical_pairing": "rank-one positive form from ell",
+    "selected_gauge_quotient_dimension": 1,
+    "full_invariant_dual_classified": false,
+    "Gaussian_scale_uniqueness": "c=2 within the stated covariance family only",
+    "common_constraint_core_constructed": true,
+    "MPQ_physical_norm_and_spectral_domains_intertwined": true,
+    "original_nonlinear_field_ordering_constructed": false,
+    "physical_three_plus_one_gravity_closed": false,
+    "continuum_proofs_machine_certified": false
+  },
+  "summary": {
+    "exact_checks": 182,
+    "symbolic_certificates": 5,
+    "negative_controls": 13
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "publications.ugd-a0-pins.v1",
+  "historical_source_commit": "e1dc4e3773f063f14e56cf30222c8e8a504519cd",
+  "local_inputs": [
+    {
+      "path": "papers/emk-ugd-algebra/certificates/ugd1_numerals.py",
+      "sha256": "23430ebc060a9a8dd1aab670392bcb82d46dd148c6a643bda87d61a4e206dc85",
+      "git_blob_sha": "c833e6d1f85772dea171906ac11135976ac06b09"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md",
+      "sha256": "325a5d025874ac678d38ad7e20ca0cc1ddc68b9f9d267b93333829883cdf1932",
+      "git_blob_sha": "edcfa572b688bbc1b9c07a9b8267f877248a39a7"
+    },
+    {
+      "path": "papers/emk-ugd-algebra/certificates/ugd_algebra_contract.py",
+      "sha256": "7aeff2eea82a192c8d1729aef7d8e4afa37229e9894aa075e1aa44035e8ee16a",
+      "git_blob_sha": "9c404d19f0abb553e86092bc1fe4401e3a130fcb"
+    }
+  ]
+}

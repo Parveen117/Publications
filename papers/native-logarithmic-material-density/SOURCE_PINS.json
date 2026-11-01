@@ -1,0 +1,19 @@
+{
+  "protocol": "LMD1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "a14b25f17b80b66ceb66cddbc3b6179c10f0177c925c40b1990c00e18b754250",
+    "THEOREM.md": "f22d8bdbe771add46809f155085f62db015a9d3b349eea391a412e3d82c546bf",
+    "SOURCE_MAP.md": "9c841656181d114bd417fab0666e3e5774ef547e80b0ad2dce6b65eb5cd54bb4",
+    "FABLE_REVIEW.md": "67b7345ec72d642b8e29074390ca7d2422080388a18f656460c979c1932ebf4f",
+    "verify.cjs": "e03092c41617f98d4f2ddfca596224075896229bddabf41d3f5beba211311302",
+    "run.py": "900af80e13d0a213e342f0a900400838ccc7a2b7aa28d1fe2535cbac4c22abd2",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-material-reference-field/THEOREM.md": "2efecdf36d8931e4a6748ba83c4be19495eb717a58d21110935eeb0cdeeedadd",
+    "../native-material-profile-quantization/THEOREM.md": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0",
+    "../native-material-reference-momentum/THEOREM.md": "96329f7ce452fc044494a44254a1d3db82015af36d3560627f01e5646f0abf34",
+    "../native-material-reference-momentum/CERTIFICATE.json": "b1768f4556b4fa399c666428bd7b5b218193930e0911520dce2a133afe0507fd",
+    "../native-residual-gauge-rigging/THEOREM.md": "8ff94808f326a81bac1c72a39641607e086240e32e35b2e107861ff5ea07ab83",
+    "../native-central-gauge-domain/THEOREM.md": "d70f48a5fe713b421e9ea2035f638fd2eab7be4dce211b6d39c994334473da0a"
+  }
+}

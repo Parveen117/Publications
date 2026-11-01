@@ -1,0 +1,41 @@
+name: YM52 native energy and observer relaxation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/native-compact-gauge/**'
+      - 'papers/native-thermodynamic-curvature/THEOREM.md'
+      - 'papers/emk-ugd-algebra/CONNECTION_CALCULUS.md'
+      - 'papers/emk-ugd-algebra/certificates/emkt2_time_ordered_transport.py'
+      - '.github/workflows/ym52-energy-observer.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/native-compact-gauge/**'
+      - 'papers/native-thermodynamic-curvature/THEOREM.md'
+      - 'papers/emk-ugd-algebra/CONNECTION_CALCULUS.md'
+      - 'papers/emk-ugd-algebra/certificates/emkt2_time_ordered_transport.py'
+      - '.github/workflows/ym52-energy-observer.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Rebuild exact energy and observer evidence without writing
+        run: python papers/yang-mills-certified-benchmark/certificates/ym52_energy_observer.py --check
+      - name: Test energy, records, rank, entropy and observer selection
+        run: python -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym52_energy_observer.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark

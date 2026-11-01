@@ -1,0 +1,18 @@
+{
+  "protocol": "HQS1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "ff5d95808ebd851d5c37adb1a3e60641eb26b62a8ac2e1621bc7928080e01bb2",
+    "THEOREM.md": "083e699c04bcd5769ff35b56050f771d5d53a3613ecf750ac57205ad1bddee88",
+    "SOURCE_MAP.md": "bfe702d87f0e31a6c079734459cb524617ad22344ea711f99c601d5f8c544069",
+    "verify.cjs": "5defe344f60a4e533a3f1e5122e1acdeab43a978c453fffe1d09d6e169089e80",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-normal-closure/THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7",
+    "../native-relational-event-clock/THEOREM.md": "fabe0ba35389a8c85dc123359831ffda1faa7872d035dbba5e1a9caee1c38077",
+    "../native-relational-event-clock/CERTIFICATE.json": "b23d716674e3096b4646307b4fc8b4bd6f1ea12f9fca2d43195085520ebc8d54",
+    "../native-cut-generated-history/THEOREM.md": "b75643d84d600c2fd7a2bc7b6de4fae18886a7d02df3d9d348c34f924489c1d6",
+    "../native-cut-generated-history/CIRCULAR_OBSERVER_COMPLETION.md": "9ad8a199ab4e011131991be8daf469add67647dfad2e1d142ce195a9e842c697",
+    "../native-cut-generated-history/CERTIFICATE.json": "91cdbd7de3c0b640f7dcd9b3f6022ef509e58cc72675c8d05298ab532c069c4b"
+  }
+}

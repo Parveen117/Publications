@@ -1,0 +1,19 @@
+{
+  "protocol": "GOA1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "27f84a3743029f5166eeb41c3bdae09c4a6e42f559b9019a72ae500a16c0b430",
+    "THEOREM.md": "d150cd2ec9429ce04ae3221bbc6df6636e16cb29367fba73660cc023af2865b3",
+    "SOURCE_MAP.md": "dfe8c79f31a8343f7665ef489bde232f68173ff93b98bb3f5e601e12120e99c9",
+    "verify.cjs": "a85b7489430c8111b8e034ee3e9480207786ad69a75899ee49e61effc090414c",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-normal-closure/THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7",
+    "../native-local-sector-classification/THEOREM.md": "cb06e50e7a3e2dfb5c640bc4a9877e5805b06a9fab8a434eaa23e82f63321acb",
+    "../native-local-physical-sector/THEOREM.md": "3cf95547e8f6b818735e1735afdad4e46b0d8b8485c50cb06ae6b8af49ba1fad",
+    "../native-local-physical-sector/LOCAL_GEOMETRY.md": "b7fc2781cf8dd78a3f82b111c2fa5e2a8a6a01a69627becc2134c7c7bd824def",
+    "../native-complementary-clock-sector/THEOREM.md": "475ba0d86355bcf10a8ef78c3af08faff912ae6925ba5a20232bbdc84c9f05b4",
+    "../native-critical-origin-sector/THEOREM.md": "525cd993de1b70742c2e983c14f5f70c7710ca6b2a4651be02181ef663343c00",
+    "../native-critical-origin-sector/CERTIFICATE.json": "0c8fcc7fb04743f4e2fc88b2a4ccd536a2d00a784aaf22f9cce113057e4ceeb6"
+  }
+}

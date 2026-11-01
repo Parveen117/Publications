@@ -1,0 +1,76 @@
+{
+  "certificate_type": "NM1_NATIVE_MODULAR_OBSERVERS",
+  "controls": {
+    "automorphy_point_pairs": 192,
+    "cocycle_triples": 1728,
+    "completion_control": "f(z)=z has corrections -z and 1-z at weight zero",
+    "finite_RK_group_order": 8,
+    "history_limit": "R^0=R^4 even after the sign is retained",
+    "integer_matrices_factored": 116,
+    "lattice_index": 2,
+    "native_T": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "-1/2",
+        "3/2"
+      ]
+    ],
+    "native_basis_comparisons": 81,
+    "nonsplitting_witness": "both lifts of [R] square to -I",
+    "sign_lift_minimum_labels_per_fiber": 2,
+    "sign_product_pairs": 729,
+    "trace_return_witness": {
+      "after": [
+        2,
+        0
+      ],
+      "before": [
+        2,
+        2
+      ]
+    }
+  },
+  "scope": {
+    "certification": "written proofs and exact finite controls, not formal or external expert certification",
+    "choices": [
+      "rational lattice S Z^2",
+      "projective observer",
+      "classical analytic adapter in T4-T5"
+    ],
+    "curvature": "no identification of section cocycle with connection curvature",
+    "novelty": "native docking and explicit controls; classical theory is credited",
+    "open": [
+      "native selection of lattice and observer",
+      "history generating function",
+      "half-integral multiplier",
+      "mock theta shadow and completion",
+      "RH",
+      "Yang-Mills/Clay"
+    ],
+    "written_results": [
+      "NM1-T1",
+      "NM1-T2",
+      "NM1-T3",
+      "NM1-T4",
+      "NM1-T5"
+    ]
+  },
+  "source_sha256": {
+    ".github/workflows/native-modular-observers.yml": "fd061e9053cb0c4173c779fd6ef710062717b3ec528b7c700fae056cf0e4e69b",
+    "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9",
+    "papers/emk-ugd-algebra/README.md": "fb0e3bd4f3f35c522d3ce246fe107f1176078fe48c0dcd18c0e12fe903b05107",
+    "papers/emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md": "325a5d025874ac678d38ad7e20ca0cc1ddc68b9f9d267b93333829883cdf1932",
+    "papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py": "88c1f6b8aef1ef93f11d0a7dd813e2d39e6f9a6e37f2a627680c7f7848ed0bb0",
+    "papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md": "450858a9aa8e6349c77a7cae3636227e5ba720c62ac6282036c0a82413dda80a",
+    "papers/native-modular-observers/README.md": "7162c5f41aead6ecaa58925cb1d8fc33309cd1f8666b233d3581fbbba0588a44",
+    "papers/native-modular-observers/SOURCE_AUDIT.md": "ab04f7463d426e394c8de461c37108a8b6ef0c4ee4e6f5a179f750b5110bc7ff",
+    "papers/native-modular-observers/THEOREMS.md": "4216980e239248a720802e4b59a0e4b3294a53d0f9a82f1748bb8ac42456615c",
+    "papers/native-modular-observers/certificates/NM1_SOURCE_PINS.json": "f2d08020e00b0338bd33b8ba91979bab0b2eb6cd456f12d727014afb70198781",
+    "papers/native-modular-observers/certificates/nm1_modular_observers.py": "97453aa1b7b03557c1dc31af2e1905668996459ce62cce0ecedb23bceb6b52bf",
+    "papers/native-modular-observers/tests/test_nm1_modular_observers.py": "4a5277ce4c26ffd88f6cdc82bf318d2b1b6f639a456b260dfe0a56b4b878829c"
+  },
+  "verdict": "PASS"
+}

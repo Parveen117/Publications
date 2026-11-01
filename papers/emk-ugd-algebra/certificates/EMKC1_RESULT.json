@@ -1,0 +1,667 @@
+{
+  "canonical_engine_commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+  "checks": [
+    {
+      "derivative_commutator_instances": 36,
+      "exact_identities": 50,
+      "frame_directions": 3,
+      "name": "EMK_frame_and_derived_direction_operators",
+      "passed": true
+    },
+    {
+      "basis_product_instances": 48,
+      "exact_identities": 48,
+      "name": "native_Leibniz_on_algebra_basis",
+      "passed": true
+    },
+    {
+      "connection_samples": 27,
+      "cut_turn_coefficients_retained": true,
+      "exact_identities": 1264,
+      "module_curvature_instances": 972,
+      "name": "regular_module_connection_and_curvature",
+      "passed": true
+    },
+    {
+      "connection_samples": 27,
+      "exact_identities": 660,
+      "gauge_curvature_instances": 243,
+      "gauge_module_instances": 324,
+      "name": "gauge_covariance_in_native_words",
+      "passed": true
+    },
+    {
+      "EMK_connection_samples": 27,
+      "exact_identities": 39,
+      "name": "Bianchi_and_noncommuting_frame_correction",
+      "nonunimodular_frame_control": true,
+      "passed": true
+    },
+    {
+      "exact_identities": 28,
+      "name": "mixed_channel_closure",
+      "passed": true
+    },
+    {
+      "connection_descent_instances": 3,
+      "curvature_descent_instances": 9,
+      "exact_identities": 0,
+      "name": "observer_descent_and_curvature_blindness",
+      "noninvariant_kernel_control": true,
+      "nonzero_native_curvature_with_flat_observation": true,
+      "passed": true
+    },
+    {
+      "exact_identities": 1,
+      "name": "boundary_and_mutation_controls",
+      "passed": true
+    }
+  ],
+  "exact_check_groups": 8,
+  "exact_identities": 2090,
+  "presentation_sha256": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+  "rejected_false_alternatives": {
+    "altered_source_pin_rejected": true,
+    "altered_word_certificate_rejected": true,
+    "frame_free_Bianchi_rejected": true,
+    "gauge_conjugation_without_derivative_rejected": true,
+    "noncommuting_frame_is_not_extra_connection_curvature": true,
+    "omitted_mixed_commutator_rejected": true,
+    "wrong_EMK_frame_sign_rejected": true
+  },
+  "schema": "publications.emkc1.v1",
+  "scope": {
+    "UGD_numeral_layer_replaced": false,
+    "finite_native_EMK_execution": true,
+    "formal_proof_assistant_verified": false,
+    "full_Morphic_manuscript_certified": false,
+    "infinite_domain_control_proved": false,
+    "physical_clock_selected": false,
+    "physical_frame_or_metric_selected": false,
+    "written_general_connection_identities": true
+  },
+  "source_pins_sha256": "bf3cc47a47d0f23ce8071666e3176ec96fd548ec4eb6f1cc712879eb001d037b",
+  "status": "PASS_EMKC1_NATIVE_CONNECTION_CALCULUS",
+  "symbolic_replay_count": 14,
+  "symbolic_replays": [
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "R",
+                "K"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR",
+            "word": [
+              "K",
+              "R"
+            ]
+          }
+        ]
+      },
+      "name": "R-K bracket",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "R"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "K",
+                "K"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "R",
+                "K"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KR",
+            "word": [
+              "K",
+              "R",
+              "K"
+            ]
+          },
+          {
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KK",
+            "word": [
+              "R",
+              "K",
+              "K"
+            ]
+          }
+        ]
+      },
+      "name": "K-RK bracket",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [
+                "K"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R",
+                "K"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "K",
+                "R"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 1,
+            "rule": "KR",
+            "word": [
+              "R",
+              "K",
+              "R"
+            ]
+          },
+          {
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R",
+              "K"
+            ]
+          }
+        ]
+      },
+      "name": "RK-R bracket",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R"
+            ]
+          }
+        ]
+      },
+      "name": "primitive RR",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "K",
+                "K"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "position": 0,
+            "rule": "KK",
+            "word": [
+              "K",
+              "K"
+            ]
+          }
+        ]
+      },
+      "name": "primitive KK",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "scaled connection curvature",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "-1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "-1/2",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "-1/2",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R"
+            ]
+          }
+        ]
+      },
+      "name": "two-sided gauge inverse left",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [
+            [
+              [],
+              [
+                "-1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "R",
+                "R"
+              ],
+              [
+                "-1/2",
+                "0"
+              ]
+            ]
+          ],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": [
+          {
+            "coefficient": [
+              "-1/2",
+              "0"
+            ],
+            "position": 0,
+            "rule": "RR",
+            "word": [
+              "R",
+              "R"
+            ]
+          }
+        ]
+      },
+      "name": "two-sided gauge inverse right",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "pure gauge flat word",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "affine derivative residue",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "affine frame repair",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "affine Bianchi closure",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "mixed curvature word",
+      "replay": "REPLAY_MATCH"
+    },
+    {
+      "certificate": {
+        "input": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "output": {
+          "from": "*",
+          "terms": [],
+          "to": "*"
+        },
+        "presentation": "4fbd5d6376447e9e91faff1126ddd7ef0c50f81fbe43972de3f76f602d624043",
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "steps": []
+      },
+      "name": "zero connection curved-frame control",
+      "replay": "REPLAY_MATCH"
+    }
+  ],
+  "written_sections": [
+    {
+      "id": "C1",
+      "sha256": "e681ccd4a69c42a3f92a80932d0d818d32cf4ad634e2293759cdebea0ba3c61a",
+      "title": "Direction frame and derived EMK derivatives"
+    },
+    {
+      "id": "C2",
+      "sha256": "d73b2f6a4066f5f76f0703cbff9e0282745c39fe1683cf90fd3335fddcf4548f",
+      "title": "Connection and its correctly typed curvature"
+    },
+    {
+      "id": "C3",
+      "sha256": "cb4cf0fec4420f3dc3f9fdc7f4726f7e465a18b6c9e66cbc26cdc1104d0b7f1e",
+      "title": "Gauge transport and curvature covariance"
+    },
+    {
+      "id": "C4",
+      "sha256": "67c77dfce2ff26bbe46307e715193009ef4db885e4522d9850fc917cb9e4754a",
+      "title": "Bianchi identity with a noncommuting frame"
+    },
+    {
+      "id": "C5",
+      "sha256": "c06688bb9b826948fd4c1979d52ba131fcac387c910ea2aa5f2e77e528749e31",
+      "title": "Mixed channels are part of curvature"
+    },
+    {
+      "id": "C6",
+      "sha256": "1e4c5849ad8927b16956053a444712026c8bc2e84e10bcb22b1c82ee201473e6",
+      "title": "Observation of curvature requires descent and faithfulness"
+    },
+    {
+      "id": "C7",
+      "sha256": "de26f5a32c40b03eb5cfdc68b34fa04f561476062471aea71cd922955051759c",
+      "title": "Classical comparison and next native obligations"
+    }
+  ]
+}
