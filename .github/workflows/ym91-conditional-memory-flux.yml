@@ -1,0 +1,40 @@
+name: YM91 conditional memory flux
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym91-conditional-memory-flux.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym91-conditional-memory-flux.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce conditional memory and exact native flux controls
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym91_conditional_memory_flux.py --check
+      - name: Check flux constraints, full tails, and scope
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym91_conditional_memory_flux.py -v
+      - name: Replay unchanged memory and Poisson inputs
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym90_gauge_memory_bound.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym90_gauge_memory_bound.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym87_conditional_energy_transport.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym87_conditional_energy_transport.py -v

@@ -79,15 +79,505 @@ The [executable pilot](papers/native-nrqc-gravity-bridge/EXECUTABLE_PILOT.md) no
 [Current–density covariance bridge](papers/native-nrqc-gravity-bridge/ANALYTIC_BRIDGE.md) derives a two-direction response tensor from the frozen LMD operators, including its signed cross term and a strict finite-h determinant bound. A single pure qubit matches the leading semiclassical tensor but cannot match the finite-h complex rank. An explicit three-level/two-qubit moment representation is given; it supplies no full operator or dynamics equivalence. This is a written derivation conditional on LMD, with no new calculator run, certificate replay or performance claim. Original geometric-observable reconstruction and 3+1 gravity remain open. The prior results below are preserved.
 
 
-Updated 16 October 2026. Alternative local-flow representation and renormalized density: **LMD-1**. Physical reference momentum and local-flow obstruction: **MRM-1**. Material joint-detector source lift and calibration: **MDD-1**. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
+Updated 17 October 2026. Alternative local-flow representation and renormalized density: **LMD-1**. Physical reference momentum and local-flow obstruction: **MRM-1**. Material joint-detector source lift and calibration: **MDD-1**. Continuum coarse geometry and accepted-length domains: **CMG-1**. Resolved geometry, continuum obstruction and controlled classical recovery: **RMG-1**. Selected positive full gauge rigging and MPQ recovery: **RGR-1**. Central gauge reduction and common source core: **CGD-1**. Source finite gauge unitaries and inverse-embedding measure: **IGQ-1**. Selected positive continuum reduced profile quantization: **MPQ-1**. Dynamical material reference and physical profile reduction: **MRF-1**. Regular-source apparatus lift and localization obstruction: **RAL-1**. Ideal relational pointer extension: **RPM-1**. Smooth observable algebra and quantum orientation mixing: **GOA-1**. Critical-origin and two-scale construction: **COS-1**. Complementary clock and two-axis physical completion: **CCS-1**. Complete test-dual kernel and conditional measure uniqueness: **LSC-1**. Regular physical sector and geometric reduction: **LPS-1/2**. Local constraint algebra: **LQA-1**. Homogeneous comparison: **HQS-1**. Completed finite quadratic-observer verification: **CHD-1/2/3**. The full local physical quantum-gravity construction and physical FTL remain open. See the [closure ledger](RESEARCH_CLOSURES.md).
 
 ## Working agreement
 
-The research belongs in this repository: derivations, code, source pins, certificates, rejected stronger claims and the next exact obligation. Chat reports summarize repository work; standalone documents do not substitute for it. Continue autonomously from the strongest verified endpoint, reuse previous results, and avoid parallel duplicate research. The goal is a rigorous quantum-gravity construction, not a growing count of loosely connected examples.
+From 17 October 2026, scientific execution runs on GitHub Actions. Reuse passing GitHub results; do not duplicate them locally or launch independent audit agents without a new request. Local derivation, editing, Git and artifact/hash I/O continue.
+
+The research belongs in this repository: derivations, code, source pins, certificates, rejected stronger claims and the next exact obligation. Chat reports summarize repository work; standalone documents do not substitute for it. Continue autonomously from the strongest verified endpoint, reuse previous results, and avoid parallel duplicate research. The active continuation follows the actual source, cut and observer relations. Physical interpretation remains open; electromagnetic, Yang--Mills or other identifications are to emerge from derived structure rather than be selected as a destination in advance.
 
 Preserve frozen predecessor packets. Distinguish an algebraic proof, a written analytic theorem, a selected model and a physical identification. No certificate count by itself closes a continuum or physical claim. Use Python 3.12 for orchestration and the existing native arithmetic/rewrite engines for the scientific fixtures.
 
 ## Current result
+
+Actual five-reading source in VTPS coordinates, 17 October:
+[VSR-1](papers/native-vtps-source-reflection/THEOREM.md) proves the exact
+paired reflection (mu,v,theta)->(-mu,-v,-theta) for the existing TLM cubic
+source. At mu=+5 and -5, its cut reading is 5 and curvature is 125/324.
+Odd metric/response jet layers change sign; their finite matrix records
+are similar through the explicit degree-parity involution.
+
+The actual (V,T) chart has a symmetric (P,S) Maxwell response matrix and
+a distinct positive diagonal metric. The transported connection, including
+Q^(-1)dQ, retains nonzero curvature. Three exact off-cut mirror pairs retain
+the distinction between raw and calibrated readings. GitHub verifies the
+immutable predecessor run and unchanged source bytes, reuses its 59 stages,
+and executes only this new 60th stage.
+
+
+Unconditional entire source return, 17 October:
+[LAR-1](papers/native-layer-analytic-return/THEOREM.md) applies the
+retained LAA Cauchy bound to the LWP binomial exponential series. The
+actual infinite scalar return exists as an entire function without an
+all-order positivity assumption. It has an explicit rational tail bound.
+Every occurrence of c_1,...,c_19 is retained in a degree-36 polynomial;
+all unknown contributions are bounded separately. Three existing source
+anchors support nine declared readings with no fresh derivative.
+The positive/unitary realization and the sharper LWP radius still require
+their stated positivity hypotheses. GitHub emits the 59th-stage certificate
+and run provenance; importing those bytes does not repeat scientific work.
+
+
+Exact wave horizons and exponential readings, 17 October:
+[LWP-1](papers/native-layer-wave-propagation/THEOREM.md) extends
+LOT polynomial transport to repeated forward and inverse waves.
+For old pairs of degree below N, a carrier M resolves the full
+state through |k|<=M-N. Correlations against old polynomial
+observers remain exact through |k|<=2(M-N). The different degree
+counts are proved and strict first-failure witnesses are retained.
+For the first-channel constant seed, the first unresolved return
+changes by exactly 2^(4M-3)h_M at step2M-1.
+
+The skew part L=[P,Z]=(W-W^sharp)/2 is bounded by one in the
+acquired pairing. Its unitary exponential exp(tau L) has separate
+factorial-tail bounds for state and correlation comparisons. It
+is a specified source-defined flow, not a uniquely selected physical
+clock or the logarithm of W. A sharper constant-seed enclosure uses
+the ten binomial readings D_(j+1,j), j=0,...,9. At tau=1 its
+normalized Taylor remainder radius is exactly 1/20!; the printed
+interval also retains the original source uncertainty. Every
+compatible certified deeper finite carrier lies in this common
+interval. Infinite extension still requires all-order positivity.
+
+LWP validation: 528 exact checks, 3 symbolic certificates, 19 negative
+controls and 25 source pins. The three retained actual jets certify
+300 resolved wave returns, 27 first boundary return increments and
+nine exponential enclosures. No new derivative or engine change is
+used. This is the 58th integrated replay stage. Physical
+interpretation remains open.
+
+Observer transport and the depth boundary, 17 October:
+[LOT-1](papers/native-layer-observer-transport/THEOREM.md) represents
+the inherited cut rationally in G_N=diag(A_N,B_N). The natural
+coefficient inclusion is isometric in these channel pairings and
+embeds the old cut range inside the new one. Their exact difference
+is one orthogonal boundary projection. Its compression to the old
+observer space has sole nonzero eigenvalue p_N=h_N/W_N, identifying
+the LCW continuation position with a cut-overlap measurement.
+
+Co-carried observers preserve their readings and the two channel
+norms stay fixed. Measuring the newly enlarged cut adds the explicit
+term h_N|ell^T(x-z)|^2. Thus nesting does not imply full cut
+intertwining or invariant readings for an observer that was changed.
+The compressed wave has squared-norm loss eigenvalue 4p_N(1-p_N);
+the full-wave transport discrepancy instead has squared norm 4p_N.
+The metric change is explicit and does not evade LDC-T4.
+
+For any fixed polynomial pair, the cut action is exact after one
+additional direction. Under all-order actual-source positivity, the
+padded cuts are increasing orthogonal projections with a strong
+limit on L2(y nu) plus L2((1-y)nu). No uniform endpoint gap or
+unjustified inverse square root is needed. The actual all-order
+positivity premise remains open.
+
+LOT validation: 181 exact checks, 2 symbolic certificates, 20 negative
+controls and 25 source pins; 27 actual transitions from the same
+three retained jets, with no new derivatives. It adds the 57th
+integrated stage. Physical interpretation remains open.
+
+Observer compatibility across source depth, 17 October:
+[LDC-1](papers/native-layer-depth-compatibility/THEOREM.md) proves
+that the natural inclusion compresses the next Y to the previous Y,
+while one nonzero orthogonal direction produces a rank-one square
+defect. Its invariant nonzero eigenvalue is h_N/h_(N-1) in (0,1/4).
+The monic norm h_N also controls the first new even moment and the
+exact positive response increment at every real lambda>-1 away from
+zero. Thus the new direction has an explicit observable contribution.
+
+Every binary word probability of length m is unchanged once the
+certified carrier has 2N-1>=m. Count records are consistent under
+uniform bit deletion, factorial readings retain the same c_r, and
+adjacent sample means have squared discrepancy
+(c_1-c_2)/(m(m+1)). Under the all-order source premise their specified
+conditional Bernoulli realization converges in L2 with squared error
+(c_1-c_2)/m. Carrier depth, record length and wave iteration remain
+different operations.
+
+Strict carrier growth prevents exact natural cut and wave
+intertwining: compression of the deeper cut has a nonzero positive
+defect. Stable record probabilities therefore coexist with changing
+finite cuts. No equality of arbitrary coherent amplitudes is asserted.
+The retained twenty-layer jets at s=29,31,33 certify 27 transitions,
+54 adjacent couplings and source records through length nineteen.
+LDC validation: 217 exact checks, 2 symbolic certificates, 14 negative
+controls and 24 source pins. It adds the 56th integrated stage.
+No predecessor packet or engine is changed, and no new derivative is
+manufactured. The next infinite-depth obligation remains actual-source
+positivity at unbounded order. Physical interpretation is open.
+
+Connected source-anchor atlas, 17 October:
+[LAA-1](papers/native-layer-anchor-atlas/THEOREM.md) replaces the
+previous geometric differentiated-tail estimate by an exact positive
+rational expression. It is valid at every retained derivative inside
+the original source disk. Finite polynomial transport has an exact
+composition law, but its source ledger must retain the original jet,
+normalization, degree and cumulative error until a valid restart.
+Explicit source comparisons reject erasing the remainder on a shift.
+
+Fresh complete jets through order 19 at s=31 and s=33 both have
+positive 10x10 forms and 210 positive binomial readings. Together
+with retained s=29, six overlapping analytic certificates give both
+actual 3x3 forms for every real s in [27,35] and both 4x4 forms for
+every real s in [28,34]. The inherited cut has six or eight channels
+on those respective intervals. Ten directions are certified at the
+three printed anchors, not throughout the union. Composite source
+label s=33 is allowed by this derivative-source criterion.
+
+The 29->31->33 source forecast agrees exactly with the direct
+29->33 ledger. Fresh s=31 evaluation lowers every remainder budget
+at s=33, although high-layer forecast bounds remain broad. At
+unfitted s=35 the three rebuilt finite models have disjoint response
+intervals and satisfy the inherited unconditional source bound.
+The s=33 fit's positive error is below 1.971e-35. Agreement of actual
+source charts on overlaps does not identify different finite models.
+
+LAA validation: 85 exact checks, 2 symbolic certificates, 19 negative
+controls and 28 source pins. The integrated replay now has 55 stages.
+Predecessor packets and engines remain unchanged. The next exact
+infinite-layer obligation is control of actual derivatives at
+unbounded depth, through LCW windows or the equivalent ILC signs.
+Finite anchor coverage does not close RH, physical mass, Maxwell
+dynamics, physical time, quantum gravity or improve global eta.
+
+Moving single-point source anchor, 17 October:
+[LAT-1](papers/native-layer-anchor-transport/THEOREM.md) derives the
+actual logarithmic-anchor moment and binomial hierarchies directly by
+differentiation. A fractional-linear spectral map with normalized
+weight change forms an exact positive-model semigroup; its poles,
+residues and rational response are invariant. The hierarchy requires
+the next layer and is not an autonomous finite all-order sign proof.
+
+A source disk bound and differentiated Taylor-tail estimate now give
+unconditional actual-source positivity over complete anchor intervals.
+Polynomial pullback controls the transported metric and both matrix
+errors. Native certification proves both 3x3 forms for every
+rho=b/a_0 in [17/20,23/20], which includes the full original-source
+interval s=27 through 31, and both 4x4 forms on [11/12,13/12].
+These are uniform analytic certificates, not sampling-grid claims.
+The attempted wider 3x3 interval [5/6,7/6] is inconclusive under this
+sufficient bound, not an actual source counterexample.
+
+Fresh actual layers 18 and 19 pass the LCW windows, giving ten
+positive confluent directions and all 210 binomial readings at s=29.
+The independent s=31 value and derivative lie in the transfer forecast.
+The ten-direction response error is positive and below 4.160e-35;
+the independent analytic bound is below 9.131e-28. Ten-dimensional
+positivity is not claimed throughout the continuous intervals.
+
+LAT validation: 61 exact checks, 3 symbolic certificates, 14 negative
+controls and 27 source pins. The integrated replay has 54 stages.
+Predecessor packets and engines are unchanged. All-depth RH, physical
+time, mass, Maxwell dynamics, quantum gravity and global eta remain
+outside the proved finite source transport result.
+
+Single-point layer continuation, 17 October:
+[LCW-1](papers/native-layer-continuation-window/THEOREM.md) derives
+necessary and sufficient windows for the next two derivatives from
+both retained positive forms. A finite Gram congruence proves
+1/W=e^T(A^-1+B^-1)e and the exact odd budget
+(x-L)(U-x)/(U-L). The new two Schur pivots split that budget.
+Canonical positions p,theta give W_next=W p(1-p)theta(1-theta)<=W/16.
+These scalar positions are not primes, spectral values or wave angles.
+
+A fresh complete native derivative evaluation through order 17 at s=29
+passes the two source windows, with positions in (0.170,0.171) and
+(0.145,0.146). Both 9x9 forms and all 171 binomial readings are positive.
+The inherited cut construction therefore has nine polynomial directions
+and eighteen dilation channels. At unfitted s=31 the response error is
+positive and below 1.412e-31; the independent finite analytic bound is
+below 7.417e-25. The next c_18 window has width in
+(2.144e-13,2.145e-13), but c_18 itself has not been evaluated here.
+
+LCW validation: 67 exact checks, 4 symbolic certificates, 15 negative
+controls. The integrated replay has 53 stages. The universal actual
+window membership is still the all-order RH obligation. No fixed
+precision, positive uniform mass gap, Maxwell equation or physical
+spacetime identification follows from the shrinking window law.
+All predecessor packets and native engines remain unchanged.
+
+User-directed infinite-layer cut continuation, 17 October:
+[ILC-1](papers/native-infinite-layer-cut/THEOREM.md) makes the
+single-point proposal precise using the actual source's normalized
+derivative layers. The two confluent Hankel forms are the retained
+L/J kernels' derivative limits. Their all-order positivity, equivalently
+nonnegativity of all alternating binomial readings, is an RH criterion
+at one regular point. Binomial multiplicities give normalized binary
+record weights. The universal actual-source inequalities remain open.
+
+Under that premise the acquired polynomial pairing gives a positive
+contraction. Its finite compressions yield padded cuts converging
+strongly to an exact two-channel projection. Two reflections yield a
+unitary rotation and wave recurrence. A co-transported observer retains
+its reading; nonfixed unaveraged states do not converge in norm, while
+Cesaro averages extract fixed modes. Infinite derivative depth, wave
+iteration and averaging are explicitly different operations. No Maxwell
+field or physical propagation speed is identified by this construction.
+
+The new complete native evaluation at original s=29 provides 16 layers
+through derivative order 15. Both 8x8 forms and all 136 available
+binomial readings are strictly positive. The finite layer spectrum lies
+in (1/10000,81/100). At independently evaluated, unfitted s=31 the
+response error is positive and below 6e-28; a separate unconditional
+analytic bound is below 6.025e-22. All Euler, Gamma and omitted-tail
+contributions are retained. This is an eight-direction confluent bank,
+not an extension of the nine-prime bank or the whole old V24.
+
+ILC validation: 63 exact checks, 6 symbolic certificates, 17 negative
+controls and 24 source pins. The integrated replay now has 52 stages.
+The all-order source condition, global eta and physical mass/spacetime
+identification remain open. Predecessor packets are unchanged.
+
+Prime-source innovation window and new actual direction, 17 October:
+[PIW-1](papers/native-prime-innovation-window/THEOREM.md) continues the
+specific RH gate left by POC. For delta=q(x)-q_N(x), it proves
+x alpha+beta=delta(1-kappa delta), with kappa>0. The exact value
+window is 0<delta<1/kappa; the actual derivative must independently
+occupy a strict derived interval. The value and slope positions are
+dimensionless and invariant under old-source congruence with the
+observation columns co-transported. A determinant normalization removes
+the old double interpolation zeros and exposes a Riccati-type source
+residual inequality for the remaining all-order task.
+
+A new complete native xi jet at original s=29 includes Gamma, pole,
+Euler-prime and all omitted-tail contributions. It extends the selected
+eight-prime bank to nine strictly positive directions. Its value and
+slope positions lie respectively in (0.140,0.141) and (0.142,0.143).
+At independently computed, unfitted s=31 the response error is positive
+and less than 3e-17. An independent s=23 computation agrees with the
+old source value and derivative. The whole old V24 plus the new direction
+is not certified by this selected-bank calculation. The global shift,
+all-order RH signs and physical mass/spacetime identification remain open.
+
+PIW validation: 51 exact checks, 4 symbolic certificates, 16 negative
+controls and 20 source pins. At that stage the integrated replay had 51 stages.
+The new source evaluator uses only native rational outward arithmetic;
+Python 3.12 remains I/O orchestration. Predecessor packets are unchanged.
+
+User-directed three-prime observation and RH source continuation,
+16 October: [POC-1](papers/native-prime-observation-closure/THEOREM.md)
+tests equal squared-distance readings in the unchanged TET metric.
+The prime-content inputs (2,0), (0,3), (5,0) have centre
+(145/54,44/27), so automatic prime-centre closure fails in this declared
+point model. At every prime not dividing the centre system's determinant,
+the centre has unique compatible readings through all prime-power depths.
+The explicit bad-prime example has three solutions modulo 3 and none
+modulo 9. A centre does not select its ambient prime observer.
+
+The strongest relevant RH source results are pinned and cited: SE26's
+common-mode distinction, SE48's actual spectral pencil and SE49's
+innovation/convergence theorem. Prime observations have sufficient
+analytic uniqueness density because their reciprocals diverge. The
+result is an equivalent RH criterion: both actual source pencils, or
+both actual Schur innovations, must stay positive at every odd-prime
+bank order. Under that premise the responses converge to actual q,
+with a compact-uniform bound by a power of 1/log(p_N+1).
+
+The finite replay selects original s=3,5,7,11,13,17,19,23 from the
+existing complete SE49 V24 archive. Both 8x8 forms are positive; the
+independent held-out s=27 response error is below 10^-15. Original
+special-function tails are inherited, not freshly recomputed. The
+all-order positivity theorem remains open, and no global eta, physical
+mass or quantum-gravity closure follows from this finite selection.
+MP's marker-completeness and recursive-residue results are cited for
+their precise completeness boundaries. The next RH obligation is the
+full-source sign control of subsequent and ultimately all prime steps.
+
+POC validation: 52 exact checks, 4 symbolic certificates, 26 negative
+controls, 28 source pins and 4 upstream blob identities. At that stage
+the integrated replay contained 50 stages. Predecessor proof packets
+were unchanged.
+
+User-directed prime-observer bridge, 16 October:
+[POS-1](papers/native-prime-observer-sectors/THEOREM.md) derives the
+precise elementary-observer content of the prime proposal. In NM1's
+declared lattice, the existing seam projectors and shear generate the
+integer matrix ring. Its finite additive congruence observers are
+Lambda/nLambda, and they are elementary exactly when n is prime.
+Composites remain stable but have invariant primary factors and prime
+layers. Exact transport retains inter-layer carries. The coordinate
+content gcd(a,b) is a complete nonzero modular-orbit invariant, with
+valuations recoverable from the prime-depth zero readings.
+
+Coherent records and fiber-uniform coarse embeddings intertwine the
+modular action. The complex permutation register remains reducible even
+at a prime. After the explicit NM1-to-TET frame change, the arithmetic
+hierarchy is transported on moving lattices; the actual TET nonzero
+curvature obstructs preservation of any fixed lattice by every small
+loop. This is pathwise arithmetic compatibility, not an LMD-state map.
+
+Compatible positive energy families have arbitrary scales and can lose
+their lower bound with depth while retaining exact coarse intertwining.
+Thus the prime observer contract does not determine physical mass or a
+uniform gap. The next gate for that proposed physical identification is
+a source-selected energy coupling to the material sector, with retained
+holonomy. WCG's separate detector-flow obligation below remains open.
+
+POS validation: 118 exact checks, 8 symbolic certificates and 35 negative
+controls, with 27 source pins. At that stage the integrated replay
+contained 49 stages.
+
+Wick-calibrated material measurement, 16 October:
+[WCG-1](papers/native-wick-calibrated-geometry/THEOREM.md) constructs the
+nonlinear material observable left open by PCR. The existing countable
+coherent detector is adapted to the same LMD covariance. Its measured
+Wick mass has Gaussian parameter 2h and satisfies the exact conditional
+identity E_probe N_(s+probe)=M_s. For 0<h<1/2 this proves equality of
+the full positive density first-moment form with the original M(w).
+The current first moment is D(k), and its second-moment domain is exactly
+Dom D(k). These jointly noisy readings do not form a sharp joint PVM.
+
+Positive heat smoothing at ell>0 gives the original material inverse,
+including its global P normalization, as smooth outcomes of a normalized
+POVM. Bounded metric functions act on every state. A recorded minimum
+density threshold gives a positive self-adjoint circumference mean on a
+dense domain, with finite accepted moments on finite Hermite vectors.
+Positive mass cutoffs and bounded geometry effects converge; unbounded
+strong-resolvent convergence is not inferred from them.
+
+PCR's actual nonlinear density-phase-pulsed coherent states recover the
+smooth classical material profiles in H3/C2 probability when ell->0 and
+h ell^-8->0. Density and conjugate squared-error rates are O(h ell^-7)
+and O(h ell^-8). Their current law is generally non-Gaussian, so bounded
+reading convergence does not imply convergence of mean length.
+
+The fixed-h vacuum has infinite ungated mean length at every ell, and
+its raw point r laws are non-tight as ell vanishes. The next obligation
+is a compatible material-flow law for detector and resolution, or a
+justified composite prescription beyond this raw point obstruction.
+Exact first-moment calibration alone does not provide that covariance:
+the doubled detector measure and the system have different Wick flow
+corrections. The full 3+1 quantum-gravity source remains open.
+
+WCG validation: 354 exact checks, 15 symbolic certificates and 50 negative
+controls. The integrated quantum-geometry chain contains 48 stages.
+
+Phase/current continuation, 16 October:
+[PCR-1](papers/native-phase-current-response/THEOREM.md) supplies the
+conjugate-sensitive extension required by DCD. In the fixed prepared
+family exp(-i beta.X/h)psi_theta, actual original currents P_i=D(k_i)
+give p_i=beta_i m_i. The four ensemble means (m,p) identify the family
+globally; density statistics alone remain independent of beta.
+
+The quantum tensor has complex rank two and a positive metric on four
+real controls. Its Kähler normalization is F_Berry=-2 omega, and measured
+coordinates q_i=log m_i,p_i give F_Berry=(1/h)sum dq_i wedge dp_i.
+These are expectation coordinates, not four spacetime dimensions or
+sharp canonical operators. Standard quantum/Kähler geometry is credited.
+
+The exact phase-conjugated source lift retains the TVSP response
+intertwiner. Its Schrödinger equation holds on the common density domain;
+for each original current A it preserves Dom A intersect Dom T. A mixed
+amplitude/phase rectangle has a nonzero Berry holonomy. The uncorrected
+lift's dynamical phase cancels that phase on its base state, so a coherent
+comparison and phase calibration are required to expose it.
+
+A separate phase-pulsed coherent family supplies smeared classical
+conjugate material data with vanishing variances as h tends to zero.
+Its homogeneous specialization has beta=<D(1)>/<T> and classical label
+r=Y^(-1)(beta). It does not inherit the DCD preparation's curvature
+enclosure or define a sharp finite-h material-metric operator. The next
+obligation is a conjugate-sensitive quantum observable for the nonlinear
+material inverse, with stated resolution and continuum/domain limit.
+The original pointwise LMD inverse and full 3+1 source remain open.
+
+PCR validation: 247 exact checks, 14 symbolic certificates and 35 negative
+controls. The integrated quantum-geometry replay contains 47 stages.
+
+Source-control continuation, 16 October:
+[DCD-1](papers/native-density-cut-dynamics/THEOREM.md) derives
+B=[Q',Q]=[Pi+Q/2, dot(theta).X] from the actual density response source.
+The weights 1 and 1/2 are forced within the two-cut ansatz; a state-only
+test misses the second weight. The same unitary transports the filtered
+base state and the TVSP response frame.
+
+Smooth cell preparations with a bounded total-density support keep
+1/8<kappa<3/8 and establish preservation of every fixed original material-
+current and Cameron--Martin momentum domain. A four-pulse product of
+original density phases and declared coherent-cut phases converges to
+the transport in operator norm, with explicit finite-cycle and moving-
+path error bounds. Merely measuring a cut does not supply its phase gate.
+
+The old configuration-normalizing density/current flows cannot realize
+the same sufficiently small nontrivial loop even if their extension
+outside the base and response subspace is allowed to differ. The proof
+uses the actual nonzero cubic response moment. A separate phase-blindness
+theorem proves that density-response geometry cannot determine the old
+material metric, which also needs conjugate data. This identifies the
+required next extension: a specified coherent source interaction or a
+conjugate-sensitive response family, with its actual geometric domains.
+
+DCD validation: 143 exact checks, 13 symbolic certificates and 23 negative
+controls. The integrated quantum-geometry replay now contains 46 stages.
+The original LMD pointwise inverse and 3+1 endpoints remain open.
+
+Quantum-state realization, 16 October:
+[QRT-1](papers/native-quantum-response-transport/THEOREM.md) supplies the
+actual LMD Hilbert-space intertwiner requested after TET. Two existing
+commuting positive density observables generate filtered states with
+covariance Hessian H. Their response frame E satisfies H=E*E and
+H^(-1)E*partial_i E=(1/2)H^(-1)partial_i H, exactly TET's connection.
+Projection transport K is unitary on the whole existing sector and obeys
+K E(0)=E(t)U_TET(t), with the joint density polynomial domains preserved.
+
+This is an actual response-subspace construction, not an added qubit or
+an identification of the two orientation sectors. Its fixed rank-one
+response detector has loop probability sin²(Phi), where Phi is integrated
+oriented response curvature. Three small spectral cells prepare a normal
+state of the actual unbinned density with 1/8<kappa<3/8. Uniform moment
+bounds prove this continuum statement; finite native fixtures do not
+evaluate the density cell probabilities or assign curvature to the vacuum.
+A fixed detector at 45 degrees in the orthonormal response plane gives
+1/2+(1/2)sin(2Phi), resolving the orientation sign for sufficiently small
+loops. QRT replays 123 exact checks, 7 symbolic certificates and 28 negative
+controls; the integrated quantum-geometry chain now contains 45 stages.
+
+The source-positive quantum response/transport bridge is now constructed.
+Its metric is covariance geometry on observer-control space. Identification
+with the original material metric exp(2r) dz², a specified original
+density/current coupling that implements K, and the associated current
+domains remain explicit next obligations. The old LMD inverse-geometry
+and 3+1 endpoints below are preserved.
+
+User-directed source-transport continuation, 16 October:
+[TET-1](papers/native-tvsp-exponential-transport/THEOREM.md) connects the
+actual TLM source layers to exponential observer transport. H jets through
+N determine U jets through N. U^T H U=H_0 and the inverse-transported
+observer preserve their pairing; an H-orthogonal cut becomes the exact
+EGR unitary cut contract in an orthonormal frame. This is a carrier and
+transport connection, not an identification with EGR's Regge source coupling.
+
+The existing source gives closed straight-path transport. On gamma=(t,t²),
+discarding ordering produces the exact cubic defect t³ F_sv(0)/6.
+Small-loop comparison against a retained base observer detects the same
+curvature, while a fully co-moving observer cancels that reading. In the
+oriented two-dimensional frame the finite return is the exponential of
+integrated curvature. Actual response tensors need not be parallel.
+
+Stable holonomic TVSP sources with equal finite response/context jets can
+have different finite endpoint transports. Written residual bounds give
+controlled approximation only when interval bounds are supplied. This
+closes the stated source-layer/observer-transport bridge, leaving physical
+path selection and an intertwiner to the LMD/MPQ continuum quantum sector
+as explicit further obligations. The physical geometry endpoint below is
+preserved.
+
+TET validation: 302 exact native checks, 7 symbolic certificates/replays,
+43 negative controls and all 44 integrated stages pass locally. The inherited
+cut-action replay also passes. The six written theorems carry the general
+analytic statements; exact fixtures and source pins make the checks replayable.
+
+User-directed operator tool development, 16 October: [TLM-1](papers/native-tvsp-lambda-matrices/THEOREM.md)
+replaces the paused generic layered-matrix proposal with actual TVSP-generated
+response layers. One finite matrix retains the response jets; its spectrum
+can remain unchanged while the source curvature changes. The exact source
+keeps reading 5 and gives curvature 5 mu²/324. First context layers recover
+the selected curvature; all layers of one scalar reading need not suffice.
+This is a mathematical tool for future geometry readouts. It does not
+advance the LMD continuum domains or establish physical space quantization.
+The generic unpublished draft was preserved outside the checkout and is not
+an imported dependency. Continue this tool from its source contract; the
+physical geometry obligations below remain unchanged.
 
 [LMD-1](papers/native-logarithmic-material-density/THEOREM.md) constructs
 an explicitly different reduced representation that supports every

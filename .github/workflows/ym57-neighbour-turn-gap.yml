@@ -1,0 +1,41 @@
+name: YM57 neighbour turn gap
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/native-compact-gauge/**'
+      - '.github/workflows/ym57-neighbour-turn-gap.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/native-compact-gauge/**'
+      - '.github/workflows/ym57-neighbour-turn-gap.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce exact neighbour-turn evidence
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym57_neighbour_turn_gap.py --check
+      - name: Test echoes, invariant modes, energy and clock bounds
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym57_neighbour_turn_gap.py -v
+      - name: Replay the unchanged local source
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym56_lambda_curvature_gap.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym56_lambda_curvature_gap.py -v
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym52_energy_observer.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code -- papers/yang-mills-certified-benchmark

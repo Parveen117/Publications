@@ -15,7 +15,969 @@ boundaries. HCM-3 derives root-free common-gain recovery from the coprime rate
 pair and rational reference corrections with explicit noise/clock-error budgets.
 This evaluates a free single-site observer, not YM49's full interacting row.
 
-## Current continuation: YM-55
+## Current continuation: YM-82
+
+[YM-82's nonlinear lattice spectral gaps](YM82_NONLINEAR_LATTICE_SPECTRAL_GAPS.md)
+extends the existing bounded-interaction argument with weighted,
+centered plaquette oscillations. For the actual nonlinear potential
+theta W+lambda W² at theta=lambda=1/16000, the full quantum gap is
+greater than 7/2675 uniformly in volume, without a representation cut.
+The exact extrema certify a cell missed by the triangle bound.
+
+A stronger extension keeps arbitrary fixed nonlinear potentials inside
+disjoint quantum blocks and controls weak bridges by their actual
+Feynman–Kac kernels. An explicit selected-plaquette cosine Hamiltonian
+has gap greater than 1/8320 for every volume and nonlinear frequency,
+using its actual unknown vacuum. The bridge threshold depends on
+the internal oscillation; homogeneous large coupling is not covered.
+
+A conditional block Poincare theorem is proved with its classical
+lineage credited. A separately defined gauge-invariant nonlinear
+parent has gap at least 27/64 for every lattice volume and internal
+frequency, even though its pointwise Bakry curvature is negative
+somewhere. An actual-vacuum nonlinear Ward identity and native Haar
+response coefficients extend YM81. An exact quartic counterfamily
+has gaps at most 162 exp(-t/2), so nonlinearity alone is insufficient.
+
+Four written theorems, 26 new Python 3.12 tests, 202 unchanged tests,
+and exact certificates preserve 309 upstream inputs.
+The conditional estimates for the actual weak-coupling vacuum,
+nontrivial continuum field construction, Euclidean covariance and
+positive continuum mass gap remain unproved. Pin: EXPECTED_YM82.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym82_nonlinear_lattice_gap.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym82_nonlinear_lattice_gap.py -v
+~~~
+
+## Previous continuation: YM-81
+
+[YM-81's local third moments and vacuum response](YM81_LOCAL_THIRD_MOMENT_AND_VACUUM_RESPONSE.md)
+proves an exact nearest-neighbor structure for the actual smooth-source
+third-moment matrix. Native bridge bounds give the uniform spatial term
+c³ ||gradient f||²/2; the remaining term is kappa² t0 times the source
+energy. Thus one zero-momentum vacuum coefficient replaces the full
+nonlocal matrix as a sufficient continuum-survival target. Its required
+uniform bound is not yet proved.
+
+An exact Ward identity gives a two-sided vacuum-Hessian row estimate,
+with physical squared size between 3c²/(5a²) and 3c²/(2a²). These are
+vacuum identities; auxiliary score vectors are not claimed to be
+physical charged states. The second source moment need not be local.
+
+A two-resolvent positive-time filter removes both spectral endpoints.
+It yields an actual order-a³ lower norm certificate at fixed energy,
+and an actual side-four Wilson spectral packet with mass above 1/32
+in bare energies [1/32,32]. The corresponding physical band scales with
+kappa, so this finite-regulator result is not a continuum mass gap.
+
+Four written theorems, 26 new Python 3.12 tests, 176 unchanged tests,
+and exact certificates preserve 302 upstream inputs.
+Uniform continuum survival, local Yang–Mills field
+identification, Euclidean covariance and positive mass gap remain open.
+Pin: EXPECTED_YM81.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym81_local_third_moment_vacuum_response.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym81_local_third_moment_vacuum_response.py -v
+~~~
+
+## Previous continuation: YM-80
+
+[YM-80's bounded phases and energy certificates](YM80_BOUNDED_PHASE_ENERGY_CERTIFICATES.md)
+proves an order-a reflected-norm lower certificate for a new smooth
+local phase exp(i lambda G), with bounded physical energy at fixed
+amplitude. Jensen's inequality retains a definite fraction of the
+source energy; an exact complex phase identity controls its second
+moment. Adjusting the regularizer improves the leading certified
+coefficient by more than fivefold. This concerns a new bounded source;
+YM79's order-a² result for the raw linear source remains unchanged.
+
+An actual-model ultraviolet packet theorem closes the amplitude
+loophole: choosing lambda² proportional to 1/a puts a fixed positive
+fraction of the norm at energies proportional to 1/a. The entire
+time-zero norm cannot survive in a strongly continuous physical-time
+limit. A labelled Ornstein–Uhlenbeck comparison shows complete escape
+is compatible with the moment data. A positive-time spectral criterion
+and a vacuum Hessian quadratic form specify what further estimate
+would suffice for genuine survival.
+
+Six written results, 29 new Python 3.12 tests, 147 unchanged tests,
+and exact certificates preserve 295 upstream inputs.
+The new lower certificate still tends to zero.
+Uniform local survival, full Euclidean covariance, Yang–Mills field
+identification and a positive continuum mass gap remain unproved.
+Pin: EXPECTED_YM80.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym80_bounded_phase_energy_certificates.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym80_bounded_phase_energy_certificates.py -v
+~~~
+
+## Previous continuation: YM-79
+
+[YM-79's local witnesses and survival certificates](YM79_LOCAL_WITNESSES_AND_SURVIVAL_CERTIFICATES.md)
+improves the original raw-angle source's certified reflected-norm lower
+bound from a⁴ to a². An analytic regularizer preserves at least 9/10 of
+the mixed Dirichlet energy. A local third-moment commutator identity
+bounds the smooth witness's second physical moment by
+2^18 c² ||P_a f||²/a, uniformly in volume and theta>=25.
+The witness and its scale are explicit.
+
+Bounded phases exp(i lambda Psi) convert positive ordinary increment
+variance into positive reflected norm. This rescues the infrared
+endpoint that killed linear reflected states in YM78. For the selected
+source family, complete ultraviolet energy escape is now the precise
+obstruction to this nonlinear survival criterion. A pure infrared
+limit with all rational phase amplitudes has energies accumulating
+at zero, so rescue does not imply a mass gap.
+
+A vacuum enclosure and a finite resolvent residual give a computable
+certificate without knowing the vacuum exactly. In the actual
+untruncated side-four model at theta=1/48, the explicit local Wilson
+witness proves a reflected norm squared at least 32607/250000>13/100.
+This is a fixed-regulator statement.
+
+Four written results, **29 new Python 3.12 tests**, 118 unchanged tests,
+and exact certificates preserve 288 upstream inputs.
+The improved a² lower certificate still vanishes.
+Uniform local survival, full Euclidean covariance, Yang–Mills field
+identification and a positive continuum mass gap remain unproved.
+Pin: EXPECTED_YM79.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym79_local_witness_survival_certificates.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym79_local_witness_survival_certificates.py -v
+~~~
+
+## Previous continuation: YM-78
+
+[YM-78's stationary derivative fields and energy survival](YM78_STATIONARY_DERIVATIVE_AND_ENERGY_SURVIVAL.md)
+uses disjoint local plaquettes and exact block averages to obtain
+q_a=c||P_a f||², converging to c||f||²>0 for every nonzero fixed test.
+The physical energy floor is independent of coupling and growing volume.
+Time differentiation gives stationary tempered random-field subsequences,
+with global L² test-function bounds, sub-Gaussian moments, local H^(-s)
+regularity for s>2, and odd time-reflection positivity.
+
+A positive reflected-norm lower bound is proved for each regulator.
+Its certified value decays as a⁴, so it does not prove continuum survival.
+The difference between covariance multipliers at frequencies s and 2s
+is a rational positive diagnostic: a fixed positive lower value gives
+a nonzero reflected state. An exact dyadic sum accounts for all source
+energy while allowing escape to arbitrarily high or low scales.
+
+Local gauge-invariant sources decouple from charged center sectors.
+The side-four neutral electric cut reduces 241 directions to 193,
+with the existing gap enclosure unchanged. Neutral winding products
+are not automatically local observables.
+
+Five written results, **28 new Python 3.12 tests**, 90 unchanged tests,
+and exact replay controls preserve 281 upstream inputs. The stationary limit may vanish or carry only
+contact covariance in the selected linear sector. Full Euclidean
+covariance, local Yang–Mills field identification and a positive
+continuum mass gap remain unproved. Pin: EXPECTED_YM78.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym78_stationary_derivative_energy_survival.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym78_stationary_derivative_energy_survival.py -v
+~~~
+
+## Previous continuation: YM-77
+
+[YM-77's physical smearing and continuum survival](YM77_PHYSICAL_SMEARING_AND_CONTINUUM_SURVIVAL.md)
+proves a pointwise physical energy bound for collective angle smears,
+using exact spatial cell averages. Reversibility gives uniform
+sub-Gaussian physical-time increments. Their anchored random distributions
+have common subsequential limits on three space coordinates and physical
+time, with reflection positivity and spatial translation invariance.
+
+The stationary-increment law admits reanchored time shifts. These
+reconstruct a strongly continuous nonnegative temporal Hamiltonian and
+vacuum, possibly a vacuum-only Hilbert space. A reflected-increment
+state has uniformly bounded norm, physical energy and inverse-energy
+moment. An explicit positive lower reflected norm would certify a
+nonzero finite physical-energy band; this lower bound remains unproved.
+
+A separate seven-channel SU(2) quaternion argument constructs an explicit
+actual global winding state with norm squared at least 1/5 and bare
+energy at most 3L. Hence **Delta_full,phys<=15 kappa L** at every coupling.
+For a=1/n, L=n², g²=n^(-4), c_E=c_B=1, the full physical gap is at most
+15/n, while YM76's local ultraviolet band moves to [n/45,80n].
+These winding states carry global center charges and do not bound the
+center-neutral local-observable continuum gap.
+
+Five written results, 29 new tests and 61 unchanged YM76/YM75 tests use
+**Python 3.12**, preserving 274 upstream files. The anchored limit may vanish; ordinary full spacetime
+covariance, local Yang–Mills field identification, and a positive
+continuum mass gap remain unproved. Pin: EXPECTED_YM77.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym77_physical_smearing_continuum_survival.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym77_physical_smearing_continuum_survival.py -v
+~~~
+
+## Previous continuation: YM-76
+
+[YM-76's local defects and weak-coupling dynamics](YM76_LOCAL_DEFECT_WEAK_COUPLING_DYNAMICS.md)
+gives an exact positive-square factorization of the actual gauge Hamiltonian,
+with an explicit nonnegative local gradient-mismatch remainder. The actual
+vacuum's electric energy and magnetic defect have two-sided weak-coupling
+bounds, uniformly in finite periodic volume.
+
+For the plaquette angle r=acos(W), an exact radial uncertainty identity
+proves Var(r) has order 1/sqrt(theta), while its centered state's Dirichlet
+energy is exactly one. First and second spectral moments force at least
+**1/3600** of its normalized weight into
+**[sqrt(theta)/45,80sqrt(theta)]** for theta>=25. This establishes actual
+nonvanishing microscopic states and nonconstant subsequential scalar heat
+dynamics; it does not construct a joint continuum field theory.
+
+The physical band has order 1/a. Its positive weight proves that this
+unfiltered normalized microscopic probe cannot have a norm-preserving,
+strongly continuous physical Hilbert-state limit reproducing its lattice
+heat correlations. A selected collective
+covariance direction supplies a precise sufficient target for bounded
+physical energy; neither that target nor a positive infrared gap is proved.
+
+Five written results, 32 new tests and 68 unchanged YM75/YM74 tests use
+**Python 3.12 only**, preserving 267 upstream files. The exact controls
+cover native geometry, radial integrals and spectral moments.
+The positive finite continuum mass gap and nontrivial local four-dimensional
+field construction remain open. Pin: EXPECTED_YM76.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym76_local_defect_weak_coupling_dynamics.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym76_local_defect_weak_coupling_dynamics.py -v
+~~~
+
+## Previous continuation: YM-75
+
+[YM-75's RH source audit and spectral transfer](YM75_RH_SOURCE_RESOLVED_SPECTRAL_TRANSFER.md)
+reads the current MP, RH-Framework, RH-project and RKF source routes.
+It attributes the useful theorems, records the corrected source versions,
+and matches their hypotheses to the actual Yang–Mills electric cutoff.
+
+Preserving the matrix G>=BB* in C-z-G/(d-z) sharpens the full spectral
+enclosure without assuming that C and G commute. On the actual side-four
+lattice at theta=1/48, the same complete 241-dimensional cutoff now
+certifies **0.49069036<=Delta<=3.00712209** in bare units. Exact rational
+pivot signs account for every retained direction; the hidden Hilbert
+space remains untruncated.
+
+For a hidden solve S X=F, a finite trial X and residual R=F-SX give
+M=T_X+R* S^(-1) R, with T_X=F*X+X*F-X*SX. Thus
+T_X<=M<=T_X+R*R/s when S>=s>0. The error is a positive matrix and
+quadratic in the residual. RKF N10 also converts YM74's whole-band
+leakage zeta<1 into an exact decoder with norm at most
+(1-zeta)^(-1/2). The formula involves the unknown actual spectral
+projection and is an existence/conditioning theorem.
+
+Four written results, 29 new tests and 70 unchanged YM74/YM73 tests use
+**Python 3.12 only** and preserve 260 upstream files. The 17 selected
+external source records are pinned by commit and
+Git blob; the source repos and shared engine are unchanged. The RH-paper
+pointer is corrected to distinguish its source-reported closed fixed
+eta=.01 node from its open eta-zero sign. No RH result is promoted into
+a uniform Yang–Mills gap without its actual-model hypotheses.
+
+The positive finite physical continuum gap and nontrivial local
+four-dimensional field construction remain unproved.
+Pin: EXPECTED_YM75.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym75_rh_source_resolved_transfer.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym75_rh_source_resolved_transfer.py -v
+~~~
+
+## Previous continuation: YM-74
+
+[YM-74's all-coupling electric enclosures](YM74_ALL_COUPLING_ELECTRIC_ENCLOSURES.md)
+prove actual-model estimates beyond the previous small-theta window.
+For every finite periodic cubic lattice of side at least four, the
+actual interacting vacuum satisfies
+1-mu(W_p)<=min(1,3/sqrt(2theta)+3/(16theta)). This is uniform in
+volume and controls the weak-bare-coupling direction theta->infinity.
+It follows from exact native product-trial integrals and a variational
+bound; the estimate concerns the actual vacuum, not the trial measure.
+
+A known electric spectral cutoff P_R supplies an independent hidden
+floor and an operator-norm bound for the loss of the entire bounded-energy
+physical subspace. Both conditions can be controlled on any prescribed
+sequence of finite regulators by an explicit growing cutoff. This does
+not assume an interacting gap or a known vacuum vector.
+
+The complete gauge-invariant finite pencil also encloses both lowest
+energies of the full Hamiltonian. Its total physical gap-interval width
+is at most 2*kappa*(abs(theta)*p)^2/(R-3-2*abs(theta)*p), when the
+denominator is positive. Native harmonic polynomials and a finite
+coupling shell give an exact finite construction. The hidden Hilbert
+space remains untruncated in the bound.
+
+For the actual side-four cube, the complete energy-three cutoff contains
+the constant, 192 plaquettes and 48 winding cycles. Its exact mixed norm
+and 241-dimensional pencil certify
+**0.4904<Delta(1/48)<3.07874** in bare energy units. This is an actual
+finite-volume gap enclosure, not a continuum mass prediction.
+
+Six written results, 39 new tests and 62 unchanged YM73/YM72 tests use
+**Python 3.12 only**, preserving 253 upstream files. Native Haar and
+graph calculations, directed rational intervals and independent matrix
+fixtures check the proof's computational ingredients; they are not
+proof-assistant verification. The uniform retained spectral cancellation,
+a surviving local state with finite positive physical energy and the
+nontrivial four-dimensional local field construction remain unproved.
+Pin: `EXPECTED_YM74.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym74_all_coupling_electric_enclosures.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym74_all_coupling_electric_enclosures.py -v
+~~~
+
+## Previous continuation: YM-73
+
+[YM-73's physical-mass and memory-normalization proof](YM73_PHYSICAL_MASS_MEMORY_METRIC.md)
+targets the missing physical continuum step. For an explicitly declared
+finite observation cut inside the full physical space, let
+M0=B D^(-1) B-adjoint and M1=B D^(-2) B-adjoint. The harmonic extension
+has norm matrix Z=I+M1. Its correctly normalized physical energy is
+K=kappa Z^(-1/2) (C-M0) Z^(-1/2).
+
+If D>=d>0 is certified independently, h=kappa*d and
+m_eff=min spec K give the full-gap bracket
+m_eff*h/(m_eff+h)<=Delta_phys<=m_eff. Its lower bound is optimal
+given only m_eff and h. The normalized positive-parameter resolvent
+differs from (K+s)^(-1) by at most 1/h uniformly for s>0.
+Matrix interval inputs can certify the whole retained pencil.
+The hidden space is untruncated, and no simultaneous diagonalization
+of the memory matrices is assumed.
+
+For the actual interacting model, a microscopic plaquette probe has
+at least max(0,1-200/(57r)) of its spectral weight below block-clock
+energy 3/2. Adding it to YM72's large loops gives a Gram matrix between
+0.53 and 1.47 times the identity when r>=16 and abs(theta)*r*N<=1e-8.
+This restores one quantified slow component, not every low-energy sector.
+
+The physical calibration also gives
+Delta_phys>=80*sqrt(c_E*c_B*r*N)/a throughout that product-budget
+region. This trajectory has escaping spectrum as a->0. A different
+controlled coupling trajectory is needed for finite physical mass.
+The final gap-passage theorem is conditional on an independent hidden
+estimate, a convergent effective energy, a complete continuum state
+core and a surviving local state of bounded physical energy.
+Those weak-coupling and four-dimensional field inputs remain open.
+
+Five written results, 31 new tests and 59 unchanged YM72/YM71 tests
+use **Python 3.12 only**, preserving 246 upstream files. The exact
+finite matrix examples are algebraic checks, not evaluations of a
+Yang–Mills vacuum or proof-assistant verification.
+Pin: EXPECTED_YM73.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym73_physical_mass_memory_metric.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym73_physical_mass_memory_metric.py -v
+~~~
+
+## Previous continuation: YM-72
+
+[YM-72's growing-block matrix proof](YM72_GROWING_BLOCK_MATRIX_MEMORY.md)
+allows the block factor r and number N of separated Wilson-loop readouts
+to grow. The single product rho=abs(theta)*r*N controls the full
+interacting response matrix in their coefficient space. For r>=3 and
+0<rho<=1e-8, it lies between 0.99 and 1.02 times
+theta-squared times the leading free coefficient times the identity,
+at every nonnegative spectral parameter and every admissible finite
+volume. There is no upper bound on r or N, but theta must decrease.
+
+With s=r*z, r->infinity and rho->0, division by theta-squared yields
+the uniform relative profile 1/[12(z+3)] times the identity. The first
+finite-block correction is (z-1)/[24*r*(z+3)^2]. Each fixed inverse
+order n has the stronger sufficient budget abs(theta)*N*r^(n+1)->0.
+Positive matrix stencils give actual moment intervals without assuming
+that response matrices commute.
+
+Actual centered, covariance-normalized loop correlations also satisfy
+an explicit all-time error bound relative to exp(-3t) on the clock L/r.
+The full physical-sector gap on this clock is at most 100/(19r), so it
+tends to zero even as those selected observations retain rate three.
+This identifies loss of slow-mode sensitivity in that family. The
+normalized memory profile does not establish a nonvanishing physical
+interaction or the 4D continuum mass gap.
+
+Five written results, 31 new tests and 55 unchanged YM71/YM70 tests
+use **Python 3.12 only**, preserving 239 upstream files. Directed
+budgets, native geometry and exact matrix controls accompany the
+proofs; they are not proof-assistant verification. Fixed-coupling
+growing-block accuracy, full spatial memory locality, slow-mode
+retention and the physical continuum trajectory remain open.
+Pin: `EXPECTED_YM72.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym72_growing_block_matrix_memory.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym72_growing_block_matrix_memory.py -v
+~~~
+
+## Previous continuation: YM-71
+
+[YM-71's interacting-memory proof](YM71_INTERACTING_MEMORY_ENCLOSURES.md)
+turns YM70's leading Wilson coefficient into an enclosure of the actual
+interacting response on the unchanged spatial cut. Weighted one-link
+electric images give exactly hidden trial vectors; the differentiated
+vacuum equation bounds their residuals independently of lattice volume.
+For r=3 and 0<abs(theta)<=1e-8, the full response lies between 0.98 and
+1.07 times the leading four-rate function at every s>=0 and every
+admissible finite volume. The fixed-r leading remainder is O(abs(theta)^3)
+uniformly in volume, with explicit spectral-parameter dependence.
+
+Inverse-power residuals and positive Stieltjes finite differences also
+give computable intervals for actual scalar inverse moments. The bounds
+respect physical-clock scaling. Higher orders need smaller couplings
+for narrow intervals; the full interacting vacuum is not numerically
+computed. Growing blocks, spatial memory locality, interval Gram
+inversion and a continuum coupling trajectory remain open.
+
+Five written results, 28 new tests and 57 unchanged YM70/YM67 tests
+use **Python 3.12 only**, preserving 232 upstream files. Exact native
+and matrix controls accompany the proofs; they are not formal proof
+verification. Pin: `EXPECTED_YM71.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym71_interacting_memory_enclosures.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym71_interacting_memory_enclosures.py -v
+~~~
+
+## Previous continuation: YM-70
+
+[YM-70's spectral-memory proof](YM70_CERTIFIED_SPECTRAL_MEMORY.md)
+computes the actual square Wilson loop's four-rate leading memory at
+every block factor r>=3. For r=3 its rates are 9, 21/2, 25/2 and 13,
+and the static order-theta-squared coefficient is 113/4095, for the
+half-trace loop with free squared norm 1/4.
+
+For the full interacting response, exact inverse moments give positive
+rational upper and lower bounds at every positive Laplace parameter.
+A Chebyshev error bound controls the entire finite spectral band,
+including beyond the small-s Taylor disk. Singular moment matrices,
+physical-clock scaling and further same-parameter elimination are
+handled explicitly. The full interacting moments have not been computed;
+the four rates describe only the leading coefficient. The coupling
+window, full spatial memory locality and continuum gates remain open.
+
+Five written results, 27 new tests and 32 unchanged YM64 tests use
+**Python 3.12 only**, preserving 225 upstream files. The controls
+accompany the proofs and do not constitute formal proof verification.
+Pin: `EXPECTED_YM70.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym70_certified_spectral_memory.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym70_certified_spectral_memory.py -v
+~~~
+
+## Previous continuation: YM-69
+
+[YM-69's nearby-conditioned locality proof](YM69_NEARBY_CONDITIONED_LOCALITY.md)
+allows a finite nearby set to be pinned at any exact configuration while
+controlling an arbitrarily large or countably infinite distant exterior.
+Bayes reweighting cancels the exterior conditional denominator. The bound
+is uniform in all nearby pin values, with constants depending on their
+number and the fixed target, but not on the distant exterior's size.
+
+Conditional mutual information, native score energy and the target
+diagonal drift inherit this control. Infinite-exterior kernels use one
+exceptional null set common to every nearby configuration. The nearby
+set can grow as n=o(sqrt(R)); an explicit range for n~c sqrt(R) is also
+proved. This covers sparse growing pin sets, not arbitrary filled spatial
+collars. Worst-case distant values, full Schur-memory locality and the
+four-dimensional continuum remain open.
+
+Five written results and 25 new tests use **Python 3.12**. Exact
+posterior-normalization examples and directed large-distance arithmetic
+accompany the proof. The dedicated workflow replays unchanged YM68 and
+YM67 evidence with their 26 and 30 tests, for 81 targeted tests. The
+source manifest preserves 218 upstream files.
+Pin: `EXPECTED_YM69.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym69_nearby_conditioned_locality.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym69_nearby_conditioned_locality.py -v
+~~~
+
+## Previous continuation: YM-68
+
+[YM-68's averaged exterior-locality proof](YM68_AVERAGED_EXTERIOR_LOCALITY.md)
+removes the number of exterior pins from the spatial error bound in an
+averaged norm. Symmetric smoothing uses only the fixed target's native
+coordinates. The expected conditional total-variation error decays with
+rate 2rho/(3m+2), where m is the number of observed coarse links. The
+bound holds for an arbitrarily large finite exterior and for a countably
+infinite exterior in the unique vacuum limit.
+
+Conditional densities converge in target C1 almost surely along every
+fixed exterior exhaustion. Relative entropy and native integration by
+parts give exterior-size-independent mutual-information and mean-square
+score bounds, and control the conditional finite-target diagonal drift.
+The constructed coarse spatial tail is trivial. Exact smooth examples
+show why these averaged conclusions do not imply worst-case pin control
+or mixing after nearby conditioning; full Schur-memory locality and the
+four-dimensional continuum remain open.
+
+Five written results and 26 new tests use **Python 3.12 only**. The
+dedicated workflow replays unchanged YM67 and YM65 evidence and their
+30 tests each, for 86 targeted tests, preserving 211 upstream files.
+The checks accompany the proofs; they are not formal proof verification.
+Pin: `EXPECTED_YM68.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym68_averaged_exterior_locality.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym68_averaged_exterior_locality.py -v
+~~~
+
+## Previous continuation: YM-67
+
+[YM-67's pointwise coarse-vacuum proof](YM67_POINTWISE_COARSE_VACUUM.md)
+starts from YM66's actual interacting vacuum. A one-link native heat
+comparison and the differentiated eigenvalue equation give uniform
+first and ordered second derivative bounds without a representation
+cutoff. Choosing one fine pivot per coarse product transfers those
+bounds without multiplying them by the path length. In particular,
+the norm of each coarse log-gradient is at most 48 times the maximum
+absolute plaquette coupling throughout the inherited coupling window.
+
+Every fixed coarse marginal has a positive density floor. Its L1
+vacuum limit upgrades to uniform C1 convergence, so conditioning on
+finitely many exact coarse configurations has a canonical continuous
+version, including at probability-zero values. Native ball volumes
+convert spatial covariance decay into uniform density, log-gradient
+and mutual-information bounds for distant finite pins. These spatial
+constants depend on the size of the pinned set.
+
+The actual diagonal coarse generator also has a local drift bound
+relative to its form energy, independent of volume and, after clock
+normalization, block length. This controls its size; uniform locality
+under arbitrary growing exterior conditioning and locality of the full
+Schur memory kernel remain open. No time-zero Markov identification,
+four-dimensional continuum construction or physical mass is claimed.
+
+Six written results and 30 new exact tests use **Python 3.12 only**.
+The dedicated workflow replays the unchanged YM66 and YM64 certificates
+and their 31 and 32 tests, for 93 targeted tests. It preserves 204
+upstream source files. Finite arithmetic controls accompany full-space
+proofs and do not constitute formal verification or peer review.
+Pin: `EXPECTED_YM67.sha256`.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym67_pointwise_coarse_vacuum.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym67_pointwise_coarse_vacuum.py -v
+~~~
+
+## Previous continuation: YM-66
+
+[YM-66's local-vacuum proof](YM66_LOCAL_VACUUM_LIMIT.md) extends the
+YM62 gap and YM65 response bounds to independent plaquette couplings
+with a common maximum strictly below 1/8000. Straight interpolation
+between signed profiles and deleted faces stays uniformly gapped.
+The integrated inverse response gives an explicit trace-norm bound
+for the change of a local vacuum under distant Hamiltonian changes.
+
+All admissible open and periodic exhaustions therefore select the
+same locally normal vacuum state. This holds for every bounded local
+quantum observable. Norm control of the real-time dynamics, followed
+by the Poisson representation of vacuum-shifted heat, removes YM62's
+history subsequence ambiguity as well. The reconstructed representation
+retains its inherited gap and nonzero physical plaquette fluctuation.
+
+For any fixed finite collection of product-link blocks, the actual
+coarse marginal density converges in L1 with a spatial-buffer bound.
+Conditioning on a positive-probability finite event is controlled with
+an explicit inverse-probability factor. Exact continuous conditioning,
+log-density derivatives and the full Schur memory kernel need stronger
+estimates. No classification of all algebraic ground states or general
+time-zero Markov identification is claimed.
+
+Every fixed inverse-response order now has a unique infinite-volume
+limit. Its full positive moment tower determines the excitation
+spectral measure seen by a smooth local readout; successive moment
+ratios decrease to that readout's visible energy threshold. An invisible
+lower-level example shows why this is not automatically the full gap.
+The interacting spectral measure and a physical mass are not computed.
+
+Six written results and 31 new exact tests use **Python 3.12 only**.
+The dedicated workflow replays the unchanged YM65 and YM62 certificates
+and their 30 and 29 tests, for 90 targeted tests. It preserves 197
+upstream source files. The arithmetic controls accompany full-space
+proofs and are not a formal verifier or peer review.
+Pin: EXPECTED_YM66.sha256.
+
+~~~sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym66_local_vacuum_limit.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym66_local_vacuum_limit.py -v
+~~~
+
+## Previous continuation: YM-65
+
+[YM-65's spatial-response proof](YM65_SPATIAL_RESPONSE_LOCALITY.md) applies
+bounded plaquette propagation to the actual full link Hilbert spaces.
+The native link-incidence row sum is sixteen, including the diagonal.
+Combining its propagation bound with the YM62 gap gives an explicit
+volume-independent spatial decay rate for connected correlations and
+every fixed inverse-response order throughout the certified coupling
+window. These are full-coupling bounds, not a truncated source expansion.
+
+Independent plaquette sources yield an absolutely summable susceptibility.
+A boundary tiling estimate then gives a unique bulk energy with locally
+Lipschitz derivative, a unique bulk plaquette mean, and an explicit
+finite-volume approximation error for that mean. At theta=1/16000 the
+spatial rate is greater than 0.1928159848815; it is a conservative decay
+bound, not a measured mass.
+
+YM64's exact nested identity transfers the response bounds to blocked
+resolvent readouts. A full-support rare-conditioning example explains
+why this does not yet prove conditional-vacuum or Schur-kernel locality.
+The estimate also constrains continuum trajectories that stay uniformly
+inside the certified window: polynomially normalized bounded readouts
+at fixed positive physical separation decorrelate as spacing vanishes.
+Full vacuum uniqueness, the conditional locality estimates and a
+nontrivial continuum construction remain open.
+
+Six written results and 30 new exact tests use **Python 3.12 only**.
+The dedicated workflow also replays the unchanged YM64 and YM62
+certificates and their 32 and 29 tests, for 91 targeted tests. The
+manifest preserves 190 upstream files. Finite arithmetic controls do
+not constitute formal proof verification or peer review.
+Pin: `EXPECTED_YM65.sha256`.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym65_spatial_response_locality.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym65_spatial_response_locality.py -v
+```
+
+## Previous continuation: YM-64
+
+[YM-64's vacuum-adapted tower](YM64_VACUUM_ADAPTED_TOWER.md) uses the
+actual interacting vacuum measure to define each spatial conditional
+expectation. The retained space contains the complete vacuum, so its
+hidden generator has the same volume-independent lower gap gamma(theta)
+at every finite block depth. A quadratic-form construction handles the
+generally unbounded coupling and gives an exact nested Schur identity
+at a fixed spectral parameter. Direct and successive blocks agree when
+the complete spectral family is retained.
+
+The inverse-response moments obey positive block Hankel constraints and
+0 <= M_(r,n) <= gamma^(-n) C_r. Their Taylor remainder and integrated
+memory tail have uniform bounds relative to coarse energy. These are
+not absolute norm or all-order spatial locality bounds. A physical
+coarse Wilson loop has first-order hidden leakage -32/75 at an explicit
+native rational configuration, preserved under a local gauge change.
+The leading return is spatially local; the complete spatial estimate
+and a nontrivial continuum trajectory remain open.
+
+Six written results and 32 new exact tests use **Python 3.12 only**.
+The dedicated workflow also replays 32 YM63 and 29 YM62 tests and their
+unchanged certificates, for 93 targeted tests. It preserves 183 upstream
+source files. The actual vacuum is used mathematically, not computed
+by a finite matrix surrogate. Neither continuum R4 construction nor a
+physical mass prediction is claimed. Pin: `EXPECTED_YM64.sha256`.
+
+## Previous continuation: YM-63
+
+[YM-63's spatial-blocking proof](YM63_SPATIAL_BLOCKING_SCALE.md) retains
+the actual YM62 link/plaquette Hamiltonian. Multiplying b fine links
+into one coarse link preserves the native product reference and gauge
+endpoint action. Its exact free heat clock is multiplied by b.
+The first-order compressed plaquette interaction vanishes, but its
+second-order return coefficient is theta^2 |P|/4. A Schur operator with
+bounded off-diagonal coupling supplies the actual finite-volume coarse
+vacuum equation, retaining its energy dependence and memory.
+
+The response tower now resolves planar surfaces. Link parity forces
+the first response order to equal rectangle area; a center-sign
+involution fixes the next possible order. Two independent exact
+recursions and a full two-face native polynomial contraction give
+
+\[
+ \langle W_{2\times2}\rangle_\theta
+       =(35/23328)\theta^4+O_\Lambda(\theta^6),\qquad
+ \langle W_{1\times4}\rangle_\theta
+       =(73/58320)\theta^4+O_\Lambda(\theta^6).
+\]
+
+Equal area retains different shape information. The errors are at
+fixed loop and finite volume; no uniform-area law follows. Matching
+only the coarse plaquette mean gives normalized coefficient
+(35/3888)theta^4. It is explicitly not an exact one-parameter
+renormalization flow, because the generated memory is nonzero.
+
+The physical trial loop also gives the upper gap constraint 100/19,
+alongside YM62's lower gamma. Under a declared energy clock kappa(a),
+both bounds scale by kappa. Explicit electric/magnetic coefficient
+matching shows that a trajectory with bare g tending to zero leaves
+the existing certified window. Uniform control of the generated
+operator and a nontrivial continuum trajectory are the next gates.
+
+Six written results, 32 new tests and 53 targeted YM62/YM61 predecessor
+tests use **Python 3.12 only**. The source manifest preserves 174
+inherited inputs and additionally pins GE3's memory theorem, for 175
+upstream files. No continuum R4 or physical mass is claimed.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym63_spatial_blocking_scale.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym63_spatial_blocking_scale.py -v
+```
+
+## Previous continuation: YM-62
+
+[YM-62's gauge-lattice proof](YM62_GAUGE_LATTICE_GAP.md) places native
+quaternions on links of a three-dimensional spatial lattice and supplies
+continuous heat time. Its declared electric Casimir and ordered
+four-link plaquette potential commute with local gauge transformations.
+The Gauss-invariant sector contains the unique positive vacuum.
+
+A four-link extension of the existing temporal-block comparison gives
+
+\[
+ |\theta|<1/8000,\qquad
+ \bar\alpha=1/2+4000|\theta|,\qquad
+ \gamma=\frac1{50}\log\!\left(\frac{1+\bar\alpha^{-1}}2\right)>0.
+\]
+
+This is a sufficient volume-uniform lower gap in the stated electric
+normalization, including the physical sector. Fixed-volume norm
+refinement supplies continuous time. Periodic vacuum histories have
+subsequential infinite-volume limits; an inequality on every reflected
+positive-time cylinder transfers the same lower gap to their vacuum
+representations. The gauge-invariant plaquette variance stays above
+19/100, so those representations have nonzero physical excitations.
+Uniqueness of the subsequential state and a time-zero Markov limit
+are not inferred from reflection positivity.
+
+The closed-loop response starts with energy coefficient -1/12 per
+plaquette and susceptibility delta_pq/6. Six written results, 29 new
+exact tests and 66 targeted YM53/YM60/YM61 predecessor tests use
+**Python 3.12 only**. The manifest preserves 167 upstream files.
+This newly declared model has a fixed spatial lattice spacing: it
+does not solve the physical continuum R4/Clay problem or close the
+separate correlated-chain lower-gap obligation in YM61.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym62_gauge_lattice_gap.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym62_gauge_lattice_gap.py -v
+```
+
+## Previous continuation: YM-61
+
+[YM-61's source-response proof](YM61_SOURCE_RESPONSE_COLLECTIVE.md) makes
+independent scalar source directions explicit. The existing uniform
+fixed-order Poisson tower then yields spatial correlation coefficients
+for the actual eta=0 interacting model, using concave secants to justify
+the limit of each response. At unit neighbour rate,
+
+\[
+ c_2=(11/24)\theta^2+O(\theta^4),\quad
+ c_3=(49/108)\theta^3+O(|\theta|^5),\quad
+ c_4=(4853/10368)\theta^4+O(\theta^6).
+\]
+
+Site parity selects the first possible order. At that order a labelled
+cycle recursion applies, with completed sites averaged only after their
+last insertion. All 52 local inverse witnesses for separations 1–4 are
+exact; full-source inverse checks justify the elimination. The adjacent
+and separated endpoint rates remain distinct.
+
+Collective readouts combine these responses in a covariance matrix G_L
+and kinetic form M_L. Their generalized Rayleigh quotient gives an
+**upper spectral constraint**. For every positive neighbour rate k,
+
+\[
+ m_L=\frac{1+2k}{8}
+       -\frac12\cos\!\left(\frac{\pi}{L+1}\right)|\theta|
+       +O_L(\theta^2).
+\]
+
+The leading response matrix is exactly -J_1/4, independent of k. The
+unit-rate matrix is computed through cubic order and includes the
+noncommuting anticommutator J_1 J_2+J_2 J_1. The rational four-site
+readout (1,2,2,1) has upper constraint
+3/8-(2/5)|theta|+(73/400)theta^2-(1293529/11844000)|theta|^3+O(theta^4),
+improving the earlier two-site constraint at sufficiently small coupling.
+This is neither an exact mass nor a positive lower gap.
+
+Six written results, 24 new exact tests and 48 targeted YM60/YM59 tests
+use **Python 3.12**. The source manifest preserves 160 upstream files.
+The errors are uniform in volume at each fixed separation or window;
+they are not uniform in arbitrarily large separation. Infinite tower
+convergence, the full-vacuum Poincare inequality and physical 4D
+Yang–Mills obligations remain open.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym61_source_response_collective.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym61_source_response_collective.py -v
+```
+
+## Previous continuation: YM-60
+
+[YM-60's interacting history proof](YM60_INTERACTING_HISTORIES_RESPONSE.md)
+retains the original scalar potential. At each finite width its actual
+positive vacuum gives a reversible ground-state transform. A local
+time-increment estimate is independent of width. Spatial averaging,
+compactness at rational times and mean-square continuity then construct
+subsequential interacting infinite-volume histories for every fixed
+real coupling. They are positive and reflection positive, with a
+nonnegative reconstructed heat Hamiltonian. This construction proves
+existence without assuming a unique or time-zero Markov limit.
+
+Common left/right native symmetries fix the coordinate second moments.
+The bulk overlap c lies between the negative one-sided energy derivatives;
+at differentiability points c=-e'(theta). The centered two-site readout
+q_0^a+sign(theta)q_1^a has normalized correlation bounded below by
+exp(-t m_trial), where
+
+\[
+ m_{\rm trial}=\frac{1+2k-k|c|}{8(1+|c|)}.
+\]
+
+At k=1,
+c=theta/2+(1123/11844)theta^3+O(|theta|^5), and
+m_trial=3/8-|theta|/4+theta^2/8-(5207/47376)|theta|^3+O(theta^4).
+This is an **upper spectral constraint**, not an interacting lower gap
+or an exact mass formula. The higher-order uniform energy tower and
+concave secants justify the differentiated asymptotic; a single
+undifferentiated remainder would not suffice.
+
+Six written results are supported by 24 new exact tests, including
+scalar cancellation, negative neighbouring form entries, physical
+endpoint corrections and explicit failures of moment-to-lower-gap and
+mixture-to-Markov inferences. All runs require **Python 3.12**; 153
+upstream files remain pinned. The dedicated workflow replays the 44
+YM59/YM58 tests as well. A uniform weighted Poincare inequality for the
+actual vacuum remains the precise lower-gap obligation. Physical gauge
+constraints, action/clock selection and the 4D continuum remain open.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym60_interacting_histories_response.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym60_interacting_histories_response.py -v
+```
+
+## Previous continuation: YM-59
+
+[YM-59's scalar response proof](YM59_SCALAR_VACUUM_RESPONSE.md) adds the
+original scalar overlap potential to the correlated native kinetic chain.
+It proves that the thermodynamic energy density exists and constructs
+a local logarithmic Poisson recursion with a volume-uniform error bound
+for the energy density at each fixed order. At unit neighbour rate,
+
+\[
+e(\theta)=-\theta^2/4-(1123/47376)\theta^4+O(\theta^6).
+\]
+
+The bulk quadratic susceptibility is 1/2. The fourth-order coefficient
+is the sum of 7/240 from a repeated bond, -287/5640 from adjacent bonds,
+and -1/504 from scalar bonds connected by a kinetic bond. More distant
+pairs cancel exactly against vacuum normalization. Open and marginal
+boundary conventions have different finite corrections and the same
+bulk coefficient. Exact native inverse witnesses have dimensions 3,
+4 and 2; an independent logarithmic calculation and an assembled
+four-site calculation check the normalization and signs.
+
+Six written results include excitation-number coercivity, uniform
+weak-coupling energy and excitation-density bounds, and a nonperturbative
+thermodynamic energy limit. The proof controls every fixed order without
+claiming convergence of the infinite series. Its fifth-order remainder
+constant is finite and constructive but is not numerically evaluated.
+A fixed nonzero-coupling uniform spectral gap and interacting history
+limit remain separate obligations, together with physical gauge action,
+clock, constraints and the spatial/4D continuum.
+
+All 24 new and 36 targeted YM58/YM57 tests pass on **Python 3.12.14**;
+CI requires Python 3.12. The manifest preserves 146 upstream files.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym59_scalar_vacuum_response.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym59_scalar_vacuum_response.py -v
+```
+
+## Previous continuation: YM-58
+
+[YM-58's infinite-volume history proof](YM58_INFINITE_VOLUME_HISTORIES.md)
+constructs consistent marginals for YM57's correlated kinetic model.
+Native derivatives preserve cylinder support; boundary-crossing bonds
+still contribute their endpoint noise. Once a finite chain contains
+the readout sites and their nearest neighbours, its heat histories
+equal the infinite-volume histories exactly. The centered L2 gap
+retains min(1/630, k/420), even with zero on-site YM56 lambda.
+
+The construction gives positive stationary histories, heat-time
+reflection positivity and Markov composition for the full native
+configuration. An exact adjacent-pair correlation distinguishes the
+correlated dynamics from independent site heat. The global-label
+discrete turn source has a sufficient joint gate W_N/n -> 0; taking
+volume first freezes local readouts, and a concrete N=n^2 sequence
+stays away from the correct heat limit. Exact heat stabilization is
+therefore kept distinct from finite-step volume dependence.
+
+Six written results are supported by 408 open-volume generator
+identities, 204 arbitrary-subset consistency identities, 128 multi-time
+coefficient identities and 15 rational matrix gap inequalities. The
+20 new and 33 targeted predecessor tests pass on **Python 3.12.14**;
+CI requires Python 3.12. The source manifest preserves 139 upstream
+files. Adding the scalar interaction, physical gauge action/clock
+selection, gauge constraints and the spatial/4D continuum remain open.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym58_infinite_volume_histories.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym58_infinite_volume_histories.py -v
+```
+
+## Previous continuation: YM-57
+
+[YM-57's neighbour-turn proof](YM57_NEIGHBOUR_TURN_GAP.md) supplies a
+uniform finite-chain gap for a declared correlated kinetic model even
+when every local YM56 lambda vanishes. Opposite second-axis neighbour
+turns and a first-axis half-turn exactly reconstruct the missing local
+rotation. Compact averaging and product variance then give
+gap >= min(1/630, k/420) for every chain width N>=2 and edge rate k>0.
+The proof covers the completed coefficient space; finite spin checks
+are supporting controls.
+
+The chapter also proves why the original scalar overlap potential
+preserves a rank-one site's stationary invariant. The positive result
+uses a new specified kinetic interaction and does not import YM55's
+site-product history limit. A normalized single-update clock supplies
+an explicit vanishing-gap upper witness as width grows. Six written
+results and exact rational evidence are included. All 16 new and 33
+targeted predecessor tests pass on **Python 3.12.14**; CI requires
+Python 3.12. The manifest preserves 132 upstream files.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym57_neighbour_turn_gap.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym57_neighbour_turn_gap.py -v
+```
+
+## Previous continuation: YM-56
+
+[YM-56's Hessian lambda family](YM56_LAMBDA_CURVATURE_GAP.md) connects
+the native selected response curvature to an exact symmetry-preserving
+compact gap. A cubic potential has trace-free response directions K and
+lambda L, curvature lambda R/2 at the reference state, and equal-count
+protocol tensor diag(1,lambda^2,0)/2. Its full centered free rate is
+min((1+lambda^2)/8, min(1,lambda^2)/2); it opens quadratically near zero.
+The squared evolution retains its involution symmetry throughout.
+
+Six written results include the integrable positive chart, exact sharp
+modes, recovery of GE2's normalized curvature formula, an explicit
+stronger fixed-profile YM55 gate, and a nonuniform-free-profile obstruction.
+The [certificate](certificates/YM56_RESULT.json) checks 9 Hessian jets,
+48 positivity corners, 306 polynomial symmetry identities and 108 exact
+spin-block inequalities. The 17 new and 58 targeted predecessor tests
+pass on **Python 3.12.14**; CI requires Python 3.12. The source manifest
+preserves 125 upstream files.
+No physical mass or four-dimensional continuum is identified.
+
+```sh
+python3.12 -B papers/yang-mills-certified-benchmark/certificates/ym56_lambda_curvature_gap.py --check
+python3.12 -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym56_lambda_curvature_gap.py -v
+```
+
+## Previous continuation: YM-55
 
 [YM-55's joint-history proof](YM55_ANISOTROPIC_JOINT_HISTORY_LIMIT.md)
 closes the stationary anisotropic volume/time-limit obligation left by

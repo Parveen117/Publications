@@ -1,0 +1,31 @@
+{
+  "protocol": "QRT1_SOURCE_PINS_V1",
+  "repository_parent": "9a0621637b2cc12fb57eb6fd36e56daef8cf5f34",
+  "files": {
+    "README.md": "ca6dd1e3aa7506ee35ef634adf9cff612fe06e2ac72d64aaea5215b09a9ebb0c",
+    "THEOREM.md": "47505e224fb13b2f5668cd8fde21bf4f258a39b55b624bcd9cea82df6b52e326",
+    "SOURCE_MAP.md": "cdb54084aa8a6ca40fd8af61355332829bd9a564cceeecafa8ceea23a316ba95",
+    "USAGE.md": "05806a86d3d4ef7ce3413b3e3a41f860704713ec58b283c383e6c373b9743f7d",
+    "response_adapter.cjs": "3e952c1300d776ba0f440d1b459473869bab34e961f8dd8518221e31440afbef",
+    "verify.cjs": "da3d52beafef65dc9b88159aa77cf62138330bc08d1a74858063086fb1535101",
+    "run.py": "21ba3c600b3cad15324a5da07a64b130e1098d7898a013d1ca8f5deb0f27f2da",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-logarithmic-material-density/THEOREM.md": "f22d8bdbe771add46809f155085f62db015a9d3b349eea391a412e3d82c546bf",
+    "../native-logarithmic-material-density/SOURCE_MAP.md": "9c841656181d114bd417fab0666e3e5774ef547e80b0ad2dce6b65eb5cd54bb4",
+    "../native-logarithmic-material-density/SOURCE_PINS.json": "4e2e269216fdb3577341ec31c34b59a2ea9888115451ce8d600b87bd376d841a",
+    "../native-tvsp-exponential-transport/THEOREM.md": "a5de5a5819d0223e9e988eda5fd2ea6e587f27a1a2edd433c417d74cda472d44",
+    "../native-tvsp-exponential-transport/transport_adapter.cjs": "ea7e1cc3e627d20324fe0fefc63a17a21b18f2d17113054224d129dd0e9d25fd",
+    "../native-tvsp-exponential-transport/SOURCE_PINS.json": "e9232b980a9cbd69af2ea0007deba65ceb695c378722f08b71213fae3e7e33c4",
+    "../native-tvsp-lambda-matrices/THEOREM.md": "859dff20097e1d9377c79b2763fe6e73436b70f191ac8fea04f6a587b08e0c00",
+    "../native-tvsp-lambda-matrices/tvsp_adapter.cjs": "cf752edd50741e738328c97f5f4bebefde58f0cb213def34dd6f9d4ffc525bf3",
+    "../native-tvsp-lambda-matrices/SOURCE_PINS.json": "b987300c34d89d13e1d7ccb56e25ea56c67edb1b3621498bb48227071c76fa6d",
+    "../native-thermodynamic-curvature/THEOREM.md": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29",
+    "../native-thermodynamic-curvature/SOURCE_MAP.md": "12793522839a603fecd749efb47cf04c252bd978df77298636b44586a8135422",
+    "../native-exponential-gravity-response/THEOREM.md": "3c14dc1ad2f06ec5b3804ec6a126f3c56c59e698ba18ca5967c272db99375a69",
+    "../native-exponential-gravity-response/SOURCE_PINS.json": "650ebb72a22447b712bb7cb3ba2df96e9b640fb317734cd743bfeff4c8c6f788",
+    "../native-material-reference-field/THEOREM.md": "2efecdf36d8931e4a6748ba83c4be19495eb717a58d21110935eeb0cdeeedadd",
+    "../native-resolved-material-geometry/THEOREM.md": "290f90dd010493aee033349c125354bb99a4e1aa0edd3ee034fed4db13326f20",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

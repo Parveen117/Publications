@@ -1,4 +1,4 @@
-"""Read-only replay of the integrated quantum geometry research chain."""
+"""Read-only replay of all integrated stages; incremental CI is separately scoped."""
 from pathlib import Path
 import json
 import subprocess
@@ -50,7 +50,27 @@ stages = [
     'native-material-detector-dilation',
     'native-material-reference-momentum',
     'native-logarithmic-material-density',
+    'native-tvsp-lambda-matrices',
+    'native-tvsp-exponential-transport',
+    'native-quantum-response-transport',
+    'native-density-cut-dynamics',
+    'native-phase-current-response',
+    'native-wick-calibrated-geometry',
+    'native-prime-observer-sectors',
+    'native-prime-observation-closure',
+    'native-prime-innovation-window',
+    'native-infinite-layer-cut',
+    'native-layer-continuation-window',
+    'native-layer-anchor-transport',
+    'native-layer-anchor-atlas',
+    'native-layer-depth-compatibility',
+    'native-layer-observer-transport',
+    'native-layer-wave-propagation',
+    'native-layer-analytic-return',
+    'native-vtps-source-reflection',
 ]
+if len(sys.argv) != 1:
+    raise SystemExit('Full replay is read-only; new-stage generation uses its scoped ci.py')
 for stage in stages:
     proc = subprocess.run([sys.executable, str(root / 'papers' / stage / 'run.py'), '--check'], cwd=root, text=True, capture_output=True)
     if proc.returncode:

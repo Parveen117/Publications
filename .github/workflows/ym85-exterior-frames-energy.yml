@@ -1,0 +1,42 @@
+name: YM85 exterior frames and physical energy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym85-exterior-frames-energy.yml'
+  pull_request:
+    paths:
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'papers/nonlinear-spectral-blindness/**'
+      - '.github/workflows/ym85-exterior-frames-energy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce exterior reference and energy controls
+        run: python -B papers/yang-mills-certified-benchmark/certificates/ym85_exterior_frames_energy.py --check
+      - name: Check gauge transport, conditional norms and energy domains
+        run: python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym85_exterior_frames_energy.py -v
+      - name: Replay unchanged gauge response and concentration inputs
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym84_gauge_resolved_scaling.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym84_gauge_resolved_scaling.py -v
+          python -B papers/yang-mills-certified-benchmark/certificates/ym76_local_defect_weak_coupling_dynamics.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym76_local_defect_weak_coupling_dynamics.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code
