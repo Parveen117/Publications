@@ -1,0 +1,23 @@
+{
+  "boundary": "One nonuniform source and a total-label marginal, with retained relative angle and a complete first-mode error certificate; no full field-state circuit or autonomous gravity.",
+  "ci_dispatched": false,
+  "fresh_nrqc_requests": 0,
+  "frozen_parent": "ca080861d646774ad94a8e48be668194a8086d59",
+  "hardware_called": false,
+  "native_solver_seconds": 351.9976024410007,
+  "node": "v24.22.1",
+  "nrqc_commit": "fdd39048a6ddaa2dd78aa3197c274d7766f31a0e",
+  "protocol_commit": "bb04408a16c52b165872eaea95c915fad7795c76",
+  "python": "3.12.14",
+  "reused_nrqc_requests": 9,
+  "source_sha256": {
+    "SOURCE_MAP.md": "bdd0da4e26131d3bc35e8c6c4728e0fb1d6440706446b5e8db4ad20feed714db",
+    "SOURCE_PINS.json": "94e1b7032dee857f2a6558a0b8aa9d28c71367c61dc5a2e8e65d7a30867e4d29",
+    "THEOREM.md": "f580d75a66259e2d4676a922fd75365d2070250a3a4521870cd91d8c05cff1cf",
+    "request.json": "d75d29440499be7f970560d9f174caaeeb507a837b704f664c1099f9743b8811",
+    "run.py": "e67a38713299c7c6d01885455b33254dcb9a3787fee8788fc4c8ce009fd6f852",
+    "solve.cjs": "72b2b12783519ba314b50abf465f028346ef477dd2672797cf7fdff703e786cc",
+    "source.cjs": "9e6ba83f81bf64fb27d696de5c69a2aaed16fda781b6d8b17eea31aa1a51ad2a",
+    "verify.cjs": "ca6ec6d878d3537704e3f83e31430ad010ea33e7de80f080f45ef31b194017ff"
+  }
+}

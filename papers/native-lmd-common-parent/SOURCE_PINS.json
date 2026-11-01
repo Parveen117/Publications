@@ -1,0 +1,35 @@
+{
+  "parent": "349175122103717730fce423ce7728695f566d9f",
+  "sources": {
+    "papers/native-logarithmic-material-density/THEOREM.md": {
+      "git_blob": "3d1e7627083a5b9806add989d72b3277c706265f",
+      "sha256": "f22d8bdbe771add46809f155085f62db015a9d3b349eea391a412e3d82c546bf"
+    },
+    "papers/native-coarse-material-geometry/THEOREM.md": {
+      "git_blob": "e0c3db1ca987c6bb90b32a4dad79afd9514d5657",
+      "sha256": "3a7563fd123499a6638086f01b3f3d554c8b064e849bf554913f0cfd9e1cc97e"
+    },
+    "papers/native-resolved-material-geometry/THEOREM.md": {
+      "git_blob": "bece2c5a79584515a3a17851ca9178e7fb8d3ce3",
+      "sha256": "290f90dd010493aee033349c125354bb99a4e1aa0edd3ee034fed4db13326f20"
+    },
+    "papers/native-material-profile-quantization/THEOREM.md": {
+      "git_blob": "9d30dad27bb83fe5c534643a4f08ac1e94a055fb",
+      "sha256": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0"
+    },
+    "papers/native-geometry-refinement-dynamics/THEOREM.md": {
+      "git_blob": "b0c2280e06c1522922a19ea6ec17c05dff5345ed",
+      "sha256": "172fc98661ca3e27d1d738f89888a54be2fea3db2516de9a7bfc6f6504273741"
+    },
+    "papers/native-nonuniform-geometric-readout/THEOREM.md": {
+      "git_blob": "90e7446357a82dbfa05a7b0d6a0a27672fc52c5b",
+      "sha256": "5950c0cfbcab3988f530b3d0ca2417ba0b39428ca5240bc4f69c4ff5e0d3dd1f"
+    },
+    "papers/native-material-detector-dilation/THEOREM.md": {
+      "git_blob": "70ad112c4c50afd678694c371cadf9d538caaa7c",
+      "sha256": "0736167397da80f2f88fe7f6eb0695ebd57d7a1315ef218f8be41556e53a6a65"
+    }
+  },
+  "proof_status": "Written conditional derivations; no new scientific execution.",
+  "range": "Density and geometry: 0<h<1/2, spatial smoothing ell>0."
+}

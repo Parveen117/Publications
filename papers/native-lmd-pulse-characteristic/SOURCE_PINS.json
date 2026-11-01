@@ -1,0 +1,30 @@
+{
+  "parent": "70aef2535a1c124a410e4a4bf96780236ca25c23",
+  "sources": {
+    "papers/native-logarithmic-material-density/THEOREM.md": {
+      "git_blob": "3d1e7627083a5b9806add989d72b3277c706265f",
+      "sha256": "f22d8bdbe771add46809f155085f62db015a9d3b349eea391a412e3d82c546bf"
+    },
+    "papers/native-lmd-common-parent/THEOREM.md": {
+      "git_blob": "5ddff0585b20d65ededa07a5acca0f7fcc8c79cd",
+      "sha256": "20fb1e60765a0f8ae1b6030b72365e6909dd8b6337ddbfb0c99cb8287fb6c299"
+    },
+    "papers/native-nrqc-gravity-bridge/source_interval.cjs": {
+      "git_blob": "b5618c02d5dc7ec670375c7b67ae1cdcce4f5f94",
+      "sha256": "5a35334b44714ab723126389fa61a50ac2dbbf94adf550c0e3dba2c0913b8751"
+    },
+    "papers/native-common-cone-limit/native_engine/native_operator.cjs": {
+      "git_blob": "7b188defee82aa0edafc586eb3091baf0ceb6900",
+      "sha256": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+    }
+  },
+  "calculator": {
+    "repository": "Parveen117/quantum-classical-provisional",
+    "commit": "fdd39048a6ddaa2dd78aa3197c274d7766f31a0e",
+    "files": {
+      "native_relational_qc/calculator.py": "019dfa25703f3766aeed8a53259984927ae64f0b87670e594b0a606fc407c62b",
+      "native_relational_qc/emk_tensor.py": "8decb85142fe5e55e895af0daaf9c1a688366b476ea6fe11ddab322034393707"
+    }
+  },
+  "evidence": "Fresh finite NRQC executions and native source intervals; separate conditional analytic proofs."
+}

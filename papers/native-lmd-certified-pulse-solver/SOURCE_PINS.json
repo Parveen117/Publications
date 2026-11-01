@@ -1,0 +1,34 @@
+{
+  "parent": "ce60e932bb46142eafeef304c099c15ea89ad088",
+  "sources": {
+    "papers/native-logarithmic-material-density/THEOREM.md": {
+      "git_blob": "3d1e7627083a5b9806add989d72b3277c706265f",
+      "sha256": "f22d8bdbe771add46809f155085f62db015a9d3b349eea391a412e3d82c546bf"
+    },
+    "papers/native-lmd-common-parent/THEOREM.md": {
+      "git_blob": "5ddff0585b20d65ededa07a5acca0f7fcc8c79cd",
+      "sha256": "20fb1e60765a0f8ae1b6030b72365e6909dd8b6337ddbfb0c99cb8287fb6c299"
+    },
+    "papers/native-lmd-pulse-characteristic/THEOREM.md": {
+      "git_blob": "13f05a61d5f2cc035d304f562def58c974a19f26",
+      "sha256": "a534d862a030a9c483d83836dd2fe3c0a7bdf4856233d6de0ca8785b4a545025"
+    },
+    "papers/native-lmd-pulse-characteristic/results/source_intervals.json": {
+      "git_blob": "a1224b48ddb2375f2776d050c48c72b4db50ac44",
+      "sha256": "e2158e7483c5bc6cae2c0e5e7ce85acbd231bcd29f5121790d920e1679327a73"
+    },
+    "papers/native-common-cone-limit/native_engine/native_operator.cjs": {
+      "git_blob": "7b188defee82aa0edafc586eb3091baf0ceb6900",
+      "sha256": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+    }
+  },
+  "calculator": {
+    "repository": "Parveen117/quantum-classical-provisional",
+    "commit": "fdd39048a6ddaa2dd78aa3197c274d7766f31a0e",
+    "files": {
+      "native_relational_qc/calculator.py": "019dfa25703f3766aeed8a53259984927ae64f0b87670e594b0a606fc407c62b",
+      "native_relational_qc/cyclotomic64.py": "8fc9c42627feee330b00f1b56559031cc442746e830081eae09f535115d74e52",
+      "native_relational_qc/phase_backend.py": "b47a5cfe04449a5def450aa3170ff11697436705427da83050f4aee08345dd98"
+    }
+  }
+}

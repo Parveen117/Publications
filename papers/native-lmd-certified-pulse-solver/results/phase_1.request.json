@@ -1,0 +1,80 @@
+{
+  "schema": "nrqc-calculator-v1",
+  "n_qubits": 2,
+  "backend": "cyclotomic64",
+  "decimal_places": 24,
+  "operations": [
+    [
+      "h",
+      [
+        0
+      ]
+    ],
+    [
+      "p64",
+      [
+        0
+      ]
+    ],
+    [
+      "p64",
+      [
+        0
+      ]
+    ],
+    [
+      "h",
+      [
+        1
+      ]
+    ],
+    [
+      "p64",
+      [
+        1
+      ]
+    ],
+    [
+      "p64",
+      [
+        1
+      ]
+    ],
+    [
+      "p64",
+      [
+        1
+      ]
+    ]
+  ],
+  "queries": [
+    {
+      "id": "phase_2_X",
+      "kind": "expectation",
+      "paulis": {
+        "0": "X"
+      }
+    },
+    {
+      "id": "phase_2_Y",
+      "kind": "expectation",
+      "paulis": {
+        "0": "Y"
+      }
+    },
+    {
+      "id": "phase_3_X",
+      "kind": "expectation",
+      "paulis": {
+        "1": "X"
+      }
+    },
+    {
+      "id": "phase_3_Y",
+      "kind": "expectation",
+      "paulis": {
+        "1": "Y"
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "nrqc_commit": "fdd39048a6ddaa2dd78aa3197c274d7766f31a0e",
+  "python": "3.12.14",
+  "node": "v24.22.1",
+  "executions": [
+    {
+      "block": 0,
+      "phase_indices": [
+        0,
+        1
+      ],
+      "command_wall_seconds": 4.017418916002498
+    },
+    {
+      "block": 1,
+      "phase_indices": [
+        2,
+        3
+      ],
+      "command_wall_seconds": 0.6563359740030137
+    },
+    {
+      "block": 2,
+      "phase_indices": [
+        4,
+        5
+      ],
+      "command_wall_seconds": 0.737590769000235
+    },
+    {
+      "block": 3,
+      "phase_indices": [
+        6,
+        7
+      ],
+      "command_wall_seconds": 5.8390000439976575
+    },
+    {
+      "block": 4,
+      "phase_indices": [
+        8,
+        9
+      ],
+      "command_wall_seconds": 6.4534689229985815
+    },
+    {
+      "block": 5,
+      "phase_indices": [
+        10,
+        11
+      ],
+      "command_wall_seconds": 5.21006915900216
+    },
+    {
+      "block": 6,
+      "phase_indices": [
+        12,
+        13
+      ],
+      "command_wall_seconds": 6.649719990000449
+    },
+    {
+      "block": 7,
+      "phase_indices": [
+        14,
+        15
+      ],
+      "command_wall_seconds": 1.613849057997868
+    },
+    {
+      "block": 8,
+      "phase_indices": [
+        16
+      ],
+      "command_wall_seconds": 11.069090958000743
+    }
+  ],
+  "native_solver_command_seconds": 272.9157219749977,
+  "source_sha256": {
+    "interval.cjs": "e30044526501c5fce5200dc00f3b263aaba4cf1684a2e50e59aa4e13e4be43ae",
+    "solve.cjs": "87bc9c2e369b2a7a96aa8b5c0e481c308904b8da2d68c967c8a188d83254f2a7",
+    "run_solver.py": "622021d54903edefa563e7b80f900b70a73290b593aeae58ba12d9d388297e17",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-lmd-pulse-characteristic/results/source_intervals.json": "e2158e7483c5bc6cae2c0e5e7ce85acbd231bcd29f5121790d920e1679327a73"
+  },
+  "boundary": "Native conditional-expectation solver and error bounds; NRQC computes exact phase-readout nodes. No field state preparation or full time-evolution circuit.",
+  "hardware_called": false,
+  "advantage_claimed": false
+}
