@@ -1,0 +1,16 @@
+{
+  "protocol": "ZCR1_SOURCE_PINS_V1",
+  "files": {
+    "THEOREM.md": "44e4f61fc98c5f85df865e0876ccb72dc758365a4e34c2e2e29edb3ffe34385e",
+    "verify.cjs": "cbe95c49c8d9e4e7fc7316ffc3351f1611df72e6d84a22161411d7fb8ca33cfc",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-action-geometry-dynamics/THEOREM.md": "6b2077516d830ac44121107a75d4fa9af2ce39ab764713b71814866c379a8c47",
+    "../native-action-geometry-dynamics/CERTIFICATE.json": "22af0b5f980c2204d69c5c2d389a3322fbe3d4cbbc05ebb67ad045746327a64a",
+    "../native-geometry-controlled-propagation/THEOREM.md": "a06fa36e7657cbac8b672f1f50f2bfe60985c6edb74235f869ac297c884a5a56",
+    "../generalized-euler-evolution/GE3_RETURNING_MEMORY.md": "383616d0d924247813d331e61909bc36c6d2a33d8c34f80b389200d7b7a0c78a",
+    "../generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md": "450858a9aa8e6349c77a7cae3636227e5ba720c62ac6282036c0a82413dda80a",
+    "README.md": "07211ed84774d559aaadfb14294f7cff29a54bf7a1f2d54f96a3a365ea8b925a"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "protocol": "LPS1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "1d3f45ea1961de8ecd0f57f7e685939f7e8eb2edba7546362dfdfa136e503960",
+    "THEOREM.md": "3cf95547e8f6b818735e1735afdad4e46b0d8b8485c50cb06ae6b8af49ba1fad",
+    "SOURCE_MAP.md": "91115e4279da5d237c62265bbec58aee48883bd667259df669d2a12dbef7a984",
+    "verify.cjs": "a5065ff2fcc766f7e96de4f45834b13b09e8514b466a409bebf50b13940ad8da",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-quantum-anomaly/THEOREM.md": "59bafe822249b5d9284667393e04b11f7bdbad76655819ee22a5b7dcd7ae8785",
+    "../native-local-quantum-anomaly/CERTIFICATE.json": "a84b3ff4d857a2ec42dd3d2549dc537f2a620a3d3593564ef1934812553928b7",
+    "../native-local-quantum-anomaly/verify.cjs": "c54fd52886019203e913f3f6251d0cd8f61088b9dede8b65367ad6ad467b42df",
+    "../native-homogeneous-quantum-sector/THEOREM.md": "083e699c04bcd5769ff35b56050f771d5d53a3613ecf750ac57205ad1bddee88",
+    "../native-homogeneous-quantum-sector/CERTIFICATE.json": "997e56fb4629f0eb0a915b9c4a17a3381b527ef0986e21d84ab828856d7834f7",
+    "LOCAL_GEOMETRY.md": "b7fc2781cf8dd78a3f82b111c2fa5e2a8a6a01a69627becc2134c7c7bd824def"
+  }
+}

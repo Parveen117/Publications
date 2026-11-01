@@ -1,0 +1,26 @@
+{
+  "protocol": "VSR1_PIN_INPUTS_V1",
+  "parent": "0c98adf69682f6fee48be85dcbcb7667d77dea2e",
+  "files": [
+    "README.md",
+    "THEOREM.md",
+    "SOURCE_MAP.md",
+    "USAGE.md",
+    "reflection_adapter.cjs",
+    "verify.cjs",
+    "run.py",
+    "ci.py",
+    "PIN_INPUTS.json",
+    "../../OPERATOR_FOUNDATION.md",
+    "../native-tvsp-lambda-matrices/tvsp_adapter.cjs",
+    "../native-tvsp-lambda-matrices/THEOREM.md",
+    "../native-tvsp-lambda-matrices/SOURCE_PINS.json",
+    "../native-tvsp-lambda-matrices/CERTIFICATE.json",
+    "../native-tvsp-exponential-transport/THEOREM.md",
+    "../native-tvsp-exponential-transport/SOURCE_PINS.json",
+    "../native-jacobian-cut-certification/THEOREM.md",
+    "../native-thermodynamic-curvature/THEOREM.md",
+    "../native-common-cone-limit/native_engine/native_operator.cjs",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs"
+  ]
+}

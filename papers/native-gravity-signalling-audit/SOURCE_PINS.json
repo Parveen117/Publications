@@ -1,0 +1,19 @@
+{
+  "protocol": "GSA1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "dd3ef15828ded55b6f2d4294cf558719149c7d81a7581b8be04ec42473b31cb9",
+    "THEOREM.md": "c3c5a819e8edef1b94129d8873c67c3018a0e280755d13b6a4976e7a056ad627",
+    "SOURCE_MAP.md": "e6f47d65f9308622eab519404df86ecbcc20fbaef0f0e769535007aeaad1a81a",
+    "verify.cjs": "db2f63f29b76000cf3fb93e8521ba4b93c0991b397786bb81949b7e1cdffdd95",
+    "run.py": "8cb3af7162b03f2a0a42c019ab965927b4ebac5105b635b7760d15cff59a8c42",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-quantum-gravity-consistency/THEOREM.md": "4a431b5ad31d7981d7d505159c756db213dc6faac47d48534c911f20ad831335",
+    "../native-quantum-gravity-consistency/CERTIFICATE.json": "141b485a82eebd655061fd96b21e6353f1a26f5b493af53f0c0a1fadaa6dd570",
+    "../native-matter-geometry-holonomy/THEOREM.md": "77f7e0eb5da1c27b815445f9e494fe2ce267b92d9c8a8d4d3196b97bbe316df4",
+    "../native-matter-geometry-holonomy/DEMO.md": "bc6e03cf1e643710b0af5d207b475661916a362787704de50ed04465488c8bb5",
+    "../native-matter-geometry-holonomy/CERTIFICATE.json": "63941f4a1f22c698387cd3a90fb46e75bbee073069a0543c1b9cfa6dab9c9291",
+    "../native-geometry-controlled-propagation/THEOREM.md": "a06fa36e7657cbac8b672f1f50f2bfe60985c6edb74235f869ac297c884a5a56",
+    "../native-cut-generated-history/THEOREM.md": "b75643d84d600c2fd7a2bc7b6de4fae18886a7d02df3d9d348c34f924489c1d6"
+  }
+}

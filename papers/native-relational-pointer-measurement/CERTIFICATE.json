@@ -1,0 +1,1624 @@
+{
+  "protocol": "RPM1_RELATIONAL_POINTER_MEASUREMENT_V1",
+  "status": "PASS_IDEAL_RELATIONAL_POINTER_EXTENSION",
+  "source_pins_sha256": "767dee675c1c35b70639d42bce6c9c4892b389c8ceb9d2662c87450c793f26a3",
+  "checks": [
+    {
+      "name": "P_packet_normalized",
+      "passed": true
+    },
+    {
+      "name": "M_packet_normalized",
+      "passed": true
+    },
+    {
+      "name": "packets_orthogonal",
+      "passed": true
+    },
+    {
+      "name": "GOA_plus_mean",
+      "passed": true
+    },
+    {
+      "name": "GOA_minus_mean",
+      "passed": true
+    },
+    {
+      "name": "GOA_cross_F",
+      "passed": true
+    },
+    {
+      "name": "F_cross_adjoint",
+      "passed": true
+    },
+    {
+      "name": "full_F_plus_second_moment",
+      "passed": true
+    },
+    {
+      "name": "full_F_minus_second_moment",
+      "passed": true
+    },
+    {
+      "name": "full_F_cross_second_moment",
+      "passed": true
+    },
+    {
+      "name": "central_cross_integral_P",
+      "passed": true
+    },
+    {
+      "name": "central_cross_integral_M",
+      "passed": true
+    },
+    {
+      "name": "phase_packet_norm:1",
+      "passed": true
+    },
+    {
+      "name": "phase_mean:1",
+      "passed": true
+    },
+    {
+      "name": "phase_second_moment:1",
+      "passed": true
+    },
+    {
+      "name": "phase_variance:1",
+      "passed": true
+    },
+    {
+      "name": "second_moment_via_F_squared:1",
+      "passed": true
+    },
+    {
+      "name": "phase_packet_norm:-1",
+      "passed": true
+    },
+    {
+      "name": "phase_mean:-1",
+      "passed": true
+    },
+    {
+      "name": "phase_second_moment:-1",
+      "passed": true
+    },
+    {
+      "name": "phase_variance:-1",
+      "passed": true
+    },
+    {
+      "name": "second_moment_via_F_squared:-1",
+      "passed": true
+    },
+    {
+      "name": "inherited_phase_contrast",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:-2:1/4",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:-2:1/4",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:-2:1",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:-2:1",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:-2:4",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:-2:4",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:1/2:1/4",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:1/2:1/4",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:1/2:1",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:1/2:1",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:1/2:4",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:1/2:4",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:1:1/4",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:1:1/4",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:1:1",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:1:1",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:1:4",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:1:4",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:3:1/4",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:3:1/4",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:3:1",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:3:1",
+      "passed": true
+    },
+    {
+      "name": "nonzero_pointer_contrast:3:4",
+      "passed": true
+    },
+    {
+      "name": "Chebyshev_coefficient:3:4",
+      "passed": true
+    },
+    {
+      "name": "unit_pointer_worst_variance",
+      "passed": true
+    },
+    {
+      "name": "unit_pointer_error_bound",
+      "passed": true
+    },
+    {
+      "name": "thirty_thousand_run_bound_below_one_twentieth",
+      "passed": true
+    },
+    {
+      "name": "zero_coupling_mean_contrast",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:-2:-1:1/2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:-2:-1:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:-2:2:1/2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:-2:2:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:0:-1:1/2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:0:-1:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:0:2:1/2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:0:2:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:3:-1:1/2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:3:-1:2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:3:2:1/2",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_overlap_completed_square:3:2:2",
+      "passed": true
+    },
+    {
+      "name": "finite_Kraus_normalization",
+      "passed": true
+    },
+    {
+      "name": "finite_preparation_isometry",
+      "passed": true
+    },
+    {
+      "name": "finite_image_projection",
+      "passed": true
+    },
+    {
+      "name": "finite_image_product",
+      "passed": true
+    },
+    {
+      "name": "finite_image_adjoint",
+      "passed": true
+    },
+    {
+      "name": "finite_inverse_on_coherent_image",
+      "passed": true
+    },
+    {
+      "name": "finite_image_identity_is_R",
+      "passed": true
+    },
+    {
+      "name": "finite_channel_off_diagonal_attenuation",
+      "passed": true
+    },
+    {
+      "name": "finite_channel_diagonal_preservation",
+      "passed": true
+    },
+    {
+      "name": "confluence:0",
+      "passed": true
+    },
+    {
+      "name": "pointer_Heisenberg_derivative",
+      "passed": true
+    },
+    {
+      "name": "pointer_Heisenberg_derivative:replay",
+      "passed": true
+    },
+    {
+      "name": "second_pointer_commutator_zero",
+      "passed": true
+    },
+    {
+      "name": "second_pointer_commutator_zero:replay",
+      "passed": true
+    },
+    {
+      "name": "measured_observable_commutator_zero",
+      "passed": true
+    },
+    {
+      "name": "measured_observable_commutator_zero:replay",
+      "passed": true
+    },
+    {
+      "name": "confluence:1",
+      "passed": true
+    },
+    {
+      "name": "coherent_corner_multiplication",
+      "passed": true
+    },
+    {
+      "name": "coherent_corner_multiplication:replay",
+      "passed": true
+    },
+    {
+      "name": "coherent_corner_recovery",
+      "passed": true
+    },
+    {
+      "name": "coherent_corner_recovery:replay",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "omit_second_moment_interference:1",
+      "rejected": true
+    },
+    {
+      "name": "omit_second_moment_interference:-1",
+      "rejected": true
+    },
+    {
+      "name": "two_packet_compression_preserves_F_second_moment",
+      "rejected": true
+    },
+    {
+      "name": "phase_mixture_equals_either_pure_readout",
+      "rejected": true
+    },
+    {
+      "name": "zero_coupling_distinguishes_phase",
+      "rejected": true
+    },
+    {
+      "name": "opposite_pointer_shift_sign_is_same_prediction",
+      "rejected": true
+    },
+    {
+      "name": "wrong_Gaussian_dephasing_denominator",
+      "rejected": true
+    },
+    {
+      "name": "image_identity_is_whole_record_identity",
+      "rejected": true
+    },
+    {
+      "name": "coarse_effect_identity_forces_identity_instrument",
+      "rejected": true
+    },
+    {
+      "name": "individual_Kraus_operator_is_projector",
+      "rejected": true
+    },
+    {
+      "name": "wrong_pointer_commutator_sign",
+      "rejected": true
+    }
+  ],
+  "presentations": [
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "F",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "X",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "p",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "XF",
+            "lhs": [
+              "X",
+              "F"
+            ],
+            "rhs": [
+              [
+                [
+                  "F",
+                  "X"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "separate system and pointer tensor factors"
+          },
+          {
+            "id": "pF",
+            "lhs": [
+              "p",
+              "F"
+            ],
+            "rhs": [
+              [
+                [
+                  "F",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "separate system and pointer tensor factors"
+          },
+          {
+            "id": "pX",
+            "lhs": [
+              "p",
+              "X"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "0",
+                  "-1"
+                ]
+              ],
+              [
+                [
+                  "X",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Pi=-i partial_X on Schwartz pointer core"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "9ca4b331b3a449dbd871378070353bd5c856ae8f1098328d2a0663389941225a",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 1,
+        "resolutions": [
+          {
+            "word": [
+              "p",
+              "X",
+              "F"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              2,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "9ca4b331b3a449dbd871378070353bd5c856ae8f1098328d2a0663389941225a",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "F",
+                      "X"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "F",
+                    "X"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pF",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "F",
+                    "p",
+                    "X"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pX",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "F"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "F",
+                      "X",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "9ca4b331b3a449dbd871378070353bd5c856ae8f1098328d2a0663389941225a",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "F"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "X",
+                      "p",
+                      "F"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "X",
+                    "p",
+                    "F"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "pF",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "X",
+                    "F",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "XF",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "F"
+                    ],
+                    [
+                      "0",
+                      "-1"
+                    ]
+                  ],
+                  [
+                    [
+                      "F",
+                      "X",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    },
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "a",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "b",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "W",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "Wd",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "isometry",
+            "lhs": [
+              "Wd",
+              "W"
+            ],
+            "rhs": [
+              [
+                [],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "RPM-T3/T5 physical record isometry"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "49aac441ff9cc0f1488f8ab2198df65572fb9bca38454ac84d5fe891f46cad09",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 0,
+        "resolutions": [],
+        "open": []
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "pointer_Heisenberg_derivative",
+      "presentation_sha256": "9ca4b331b3a449dbd871378070353bd5c856ae8f1098328d2a0663389941225a",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "F",
+              "p",
+              "X"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "X",
+              "F",
+              "p"
+            ],
+            [
+              "0",
+              "-1"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "F"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "9ca4b331b3a449dbd871378070353bd5c856ae8f1098328d2a0663389941225a",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "F"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "F",
+                "p",
+                "X"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "X",
+                "F",
+                "p"
+              ],
+              [
+                "0",
+                "-1"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "X",
+              "F",
+              "p"
+            ],
+            "coefficient": [
+              "0",
+              "-1"
+            ],
+            "rule": "XF",
+            "position": 0
+          },
+          {
+            "word": [
+              "F",
+              "p",
+              "X"
+            ],
+            "coefficient": [
+              "0",
+              "1"
+            ],
+            "rule": "pX",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "second_pointer_commutator_zero",
+      "presentation_sha256": "9ca4b331b3a449dbd871378070353bd5c856ae8f1098328d2a0663389941225a",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "F",
+              "p",
+              "F",
+              "p",
+              "X"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "F",
+              "p",
+              "X",
+              "F",
+              "p"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "X",
+              "F",
+              "p",
+              "F",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "9ca4b331b3a449dbd871378070353bd5c856ae8f1098328d2a0663389941225a",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "F",
+                "p",
+                "F",
+                "p",
+                "X"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "F",
+                "p",
+                "X",
+                "F",
+                "p"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "X",
+                "F",
+                "p",
+                "F",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "X",
+              "F",
+              "p",
+              "F",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "XF",
+            "position": 0
+          },
+          {
+            "word": [
+              "F",
+              "p",
+              "X",
+              "F",
+              "p"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "XF",
+            "position": 2
+          },
+          {
+            "word": [
+              "F",
+              "p",
+              "F",
+              "p",
+              "X"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pF",
+            "position": 1
+          },
+          {
+            "word": [
+              "F",
+              "p",
+              "F",
+              "X",
+              "p"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "pF",
+            "position": 1
+          },
+          {
+            "word": [
+              "F",
+              "X",
+              "p",
+              "F",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pF",
+            "position": 2
+          },
+          {
+            "word": [
+              "F",
+              "X",
+              "F",
+              "p",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "XF",
+            "position": 1
+          },
+          {
+            "word": [
+              "F",
+              "F",
+              "p",
+              "p",
+              "X"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pX",
+            "position": 3
+          },
+          {
+            "word": [
+              "F",
+              "F",
+              "p",
+              "X",
+              "p"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "pX",
+            "position": 2
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "measured_observable_commutator_zero",
+      "presentation_sha256": "9ca4b331b3a449dbd871378070353bd5c856ae8f1098328d2a0663389941225a",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "F",
+              "F",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "F",
+              "p",
+              "F"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "9ca4b331b3a449dbd871378070353bd5c856ae8f1098328d2a0663389941225a",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "F",
+                "F",
+                "p"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "F",
+                "p",
+                "F"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "F",
+              "p",
+              "F"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "pF",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "coherent_corner_multiplication",
+      "presentation_sha256": "49aac441ff9cc0f1488f8ab2198df65572fb9bca38454ac84d5fe891f46cad09",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "W",
+              "a",
+              "Wd",
+              "W",
+              "b",
+              "Wd"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "W",
+              "a",
+              "b",
+              "Wd"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "49aac441ff9cc0f1488f8ab2198df65572fb9bca38454ac84d5fe891f46cad09",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "W",
+                "a",
+                "b",
+                "Wd"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "W",
+                "a",
+                "Wd",
+                "W",
+                "b",
+                "Wd"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "W",
+              "a",
+              "Wd",
+              "W",
+              "b",
+              "Wd"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "isometry",
+            "position": 2
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "coherent_corner_recovery",
+      "presentation_sha256": "49aac441ff9cc0f1488f8ab2198df65572fb9bca38454ac84d5fe891f46cad09",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "Wd",
+              "W",
+              "a",
+              "Wd",
+              "W"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "49aac441ff9cc0f1488f8ab2198df65572fb9bca38454ac84d5fe891f46cad09",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "a"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "Wd",
+                "W",
+                "a",
+                "Wd",
+                "W"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "Wd",
+              "W",
+              "a",
+              "Wd",
+              "W"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "isometry",
+            "position": 0
+          },
+          {
+            "word": [
+              "a",
+              "Wd",
+              "W"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "isometry",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "kind": "GOA_full_shifted_packet_moments",
+      "moments": [
+        {
+          "sign": 1,
+          "mean": "-59/200",
+          "second_moment": "1233/3200",
+          "variance": "23863/80000",
+          "action": [
+            [
+              0,
+              [
+                [
+                  "-1/5",
+                  "0"
+                ],
+                [
+                  "8/5",
+                  "0"
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  "-3/20",
+                  "0"
+                ],
+                [
+                  "3/10",
+                  "0"
+                ]
+              ]
+            ],
+            [
+              -1,
+              [
+                [
+                  "3/20",
+                  "0"
+                ],
+                [
+                  "19/10",
+                  "0"
+                ]
+              ]
+            ],
+            [
+              -2,
+              [
+                [
+                  "1/5",
+                  "0"
+                ],
+                [
+                  "2/5",
+                  "0"
+                ]
+              ]
+            ]
+          ]
+        },
+        {
+          "sign": -1,
+          "mean": "-47/200",
+          "second_moment": "1169/3200",
+          "variance": "24807/80000",
+          "action": [
+            [
+              0,
+              [
+                [
+                  "1/5",
+                  "0"
+                ],
+                [
+                  "4/5",
+                  "0"
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  "-3/20",
+                  "0"
+                ],
+                [
+                  "3/10",
+                  "0"
+                ]
+              ]
+            ],
+            [
+              -1,
+              [
+                [
+                  "3/20",
+                  "0"
+                ],
+                [
+                  "-13/10",
+                  "0"
+                ]
+              ]
+            ],
+            [
+              -2,
+              [
+                [
+                  "-1/5",
+                  "0"
+                ],
+                [
+                  "-2/5",
+                  "0"
+                ]
+              ]
+            ]
+          ]
+        }
+      ],
+      "contrast": "-3/50",
+      "finite_run_error_bound": "104807/2160000",
+      "finite_run_count": 30000
+    },
+    {
+      "kind": "finite_instrument_analogue_not_spectral_truncation",
+      "K0": [
+        [
+          [
+            "3/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "4/5",
+            "0"
+          ]
+        ]
+      ],
+      "K1": [
+        [
+          [
+            "4/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/5",
+            "0"
+          ]
+        ]
+      ],
+      "V": [
+        [
+          [
+            "3/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "4/5",
+            "0"
+          ]
+        ],
+        [
+          [
+            "4/5",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "3/5",
+            "0"
+          ]
+        ]
+      ],
+      "off_diagonal_multiplier": "24/25"
+    }
+  ],
+  "results": {
+    "clock_constraint": "W Pi_T W^* with domain W H^1",
+    "rigging_form": "<integral W^*f, integral W^*h>",
+    "physical_completion": "inherited gravitational H tensor L^2(pointer)",
+    "pointer_instrument": "K_x=phi_sigma(x-kappa F)",
+    "phase_pointer_contrast": "-3 kappa/50",
+    "observable_variances": [
+      "23863/80000",
+      "24807/80000"
+    ],
+    "added_ideal_clock_and_global_coupling": true,
+    "local_LNC_apparatus_derivation": false,
+    "source_selected_gravity_dynamics": false,
+    "physical_calibration": false,
+    "inter_branch_coupling": false,
+    "continuum_proofs_machine_certified": false
+  },
+  "summary": {
+    "exact_checks": 84,
+    "symbolic_certificates": 5,
+    "negative_controls": 11
+  }
+}
