@@ -1,0 +1,53 @@
+name: NSB1 nonlinear spectral blindness
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/nonlinear-spectral-blindness/**'
+      - 'papers/native-symmetry-response/**'
+      - 'papers/native-thermodynamic-curvature/**'
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'SPECTRAL 1.pdf'
+      - 'SPECTRAL_2.pdf'
+      - '.github/workflows/nsb1-nonlinear-spectral-blindness.yml'
+  pull_request:
+    paths:
+      - 'papers/nonlinear-spectral-blindness/**'
+      - 'papers/native-symmetry-response/**'
+      - 'papers/native-thermodynamic-curvature/**'
+      - 'papers/yang-mills-certified-benchmark/**'
+      - 'SPECTRAL 1.pdf'
+      - 'SPECTRAL_2.pdf'
+      - '.github/workflows/nsb1-nonlinear-spectral-blindness.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Reproduce nonlinear spectra, response geometry and gauge controls
+        run: python -B papers/nonlinear-spectral-blindness/certificates/nsb1_nonlinear_blindness.py --check
+      - name: Independent nonlinear and adversarial tests
+        run: python -B -m unittest discover -s papers/nonlinear-spectral-blindness/tests -v
+      - name: Replay unchanged diagram and response geometry evidence
+        run: |
+          python -B papers/native-symmetry-response/certificates/nsr1_response.py --check
+          python -B papers/native-symmetry-response/certificates/nsr2_diagram_properties.py --check
+          python -B -m unittest discover -s papers/native-symmetry-response/tests -v
+      - name: Replay nonlinear quantum lattice evidence
+        run: |
+          python -B papers/yang-mills-certified-benchmark/certificates/ym82_nonlinear_lattice_gap.py --check
+          python -B -m unittest discover -s papers/yang-mills-certified-benchmark/tests -p test_ym82_nonlinear_lattice_gap.py -v
+      - name: Evidence remains read-only
+        run: git diff --exit-code -- papers/nonlinear-spectral-blindness papers/native-symmetry-response papers/native-thermodynamic-curvature papers/yang-mills-certified-benchmark
