@@ -1,0 +1,15 @@
+{
+  "protocol": "REC1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "6077017d869a7520344eb97a8f9d024447b86ae71f972a16a91f989a7b64e6e6",
+    "THEOREM.md": "fabe0ba35389a8c85dc123359831ffda1faa7872d035dbba5e1a9caee1c38077",
+    "verify.cjs": "81c70fde9ed813649be41484c01eedd3fe7c22bb204ab2800472910a83fa6330",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-normal-closure/THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7",
+    "../native-local-normal-closure/verify.cjs": "192fa4c01408bf7b257e11667ef38450b821bd39f724eae44a38e42fec719d64",
+    "../native-local-coframe-covariance/THEOREM.md": "70f5e2c0e2c9948664421d364441c51ab1a455e0cfc1f88784b99313a11e156c",
+    "../native-invariant-ratio-transport/THEOREM.md": "421ab43b4a0a7845053e7053580866d04f8dd0dcf92ee65185d53679c9385649"
+  }
+}

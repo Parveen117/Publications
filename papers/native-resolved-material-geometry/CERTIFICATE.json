@@ -1,0 +1,3394 @@
+{
+  "protocol": "RMG1_RESOLVED_MATERIAL_GEOMETRY_V1",
+  "status": "PASS_RESOLVED_GEOMETRY_AND_SCOPED_OBSTRUCTION",
+  "source_pins_sha256": "ce2c80eb3879f099728097b8f81c15b504c177589c9325a31248bf07bd144c3b",
+  "checks": [
+    {
+      "name": "scalar_presentation_confluent",
+      "passed": true
+    },
+    {
+      "name": "reference_constraint_inverse_chart",
+      "passed": true
+    },
+    {
+      "name": "reference_constraint_inverse_chart:replay",
+      "passed": true
+    },
+    {
+      "name": "adapted_reference_momentum",
+      "passed": true
+    },
+    {
+      "name": "adapted_reference_momentum:replay",
+      "passed": true
+    },
+    {
+      "name": "joint_configuration_variance",
+      "passed": true
+    },
+    {
+      "name": "joint_configuration_variance:replay",
+      "passed": true
+    },
+    {
+      "name": "added_noise_uncertainty_product",
+      "passed": true
+    },
+    {
+      "name": "added_noise_uncertainty_product:replay",
+      "passed": true
+    },
+    {
+      "name": "all_N_noise_budget_recurrence:4",
+      "passed": true
+    },
+    {
+      "name": "all_N_noise_budget_recurrence:4:replay",
+      "passed": true
+    },
+    {
+      "name": "noise_budget_initial_value:4",
+      "passed": true
+    },
+    {
+      "name": "noise_budget_degree:4",
+      "passed": true
+    },
+    {
+      "name": "noise_budget_leading_coefficient:4",
+      "passed": true
+    },
+    {
+      "name": "all_N_noise_budget_recurrence:7",
+      "passed": true
+    },
+    {
+      "name": "all_N_noise_budget_recurrence:7:replay",
+      "passed": true
+    },
+    {
+      "name": "noise_budget_initial_value:7",
+      "passed": true
+    },
+    {
+      "name": "noise_budget_degree:7",
+      "passed": true
+    },
+    {
+      "name": "noise_budget_leading_coefficient:7",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:0",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:0",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:0",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:1",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:1",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:1",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:1",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:1",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:1",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:2",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:2",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:2",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:2",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:2",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:2",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:3",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:3",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:3",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:3",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:3",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:3",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:4",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:4",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:4",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:4",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:4",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:4",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:5",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:5",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:5",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:5",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:5",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:5",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:6",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:6",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:6",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:6",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:6",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:6",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:7",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:7",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:7",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:7",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:7",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:7",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:8",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:8",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:8",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:8",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:8",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:8",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:9",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:9",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:9",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:9",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:9",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:9",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:10",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:10",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:10",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:10",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:10",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:10",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:11",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:11",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:11",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:11",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:11",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:11",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:12",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:12",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:12",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:12",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:12",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:12",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:13",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:13",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:13",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:13",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:13",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:13",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:14",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:14",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:14",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:14",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:14",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:14",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:15",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:15",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:15",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:15",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:15",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:15",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:16",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:16",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:16",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:16",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:16",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:16",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:17",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:17",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:17",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:17",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:17",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:17",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:18",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:18",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:18",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:18",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:18",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:18",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:19",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:19",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:19",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:19",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:19",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:19",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:20",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:20",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:20",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:20",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:20",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:20",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:21",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:21",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:21",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:21",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:21",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:21",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:22",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:22",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:22",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:22",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:22",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:22",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:23",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:23",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:23",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:23",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:23",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:23",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:24",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:24",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:24",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:24",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:24",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:24",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:25",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:25",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:25",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:25",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:25",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:25",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:26",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:26",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:26",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:26",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:26",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:26",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:27",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:27",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:27",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:27",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:27",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:27",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:28",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:28",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:28",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:28",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:28",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:28",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:29",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:29",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:29",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:29",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:29",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:29",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:30",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:30",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:30",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:30",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:30",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:30",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:31",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:31",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:31",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:31",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:31",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:31",
+      "passed": true
+    },
+    {
+      "name": "point_noise_sum:32",
+      "passed": true
+    },
+    {
+      "name": "H3_noise_sum:32",
+      "passed": true
+    },
+    {
+      "name": "configuration_H3_trace_bounded:32",
+      "passed": true
+    },
+    {
+      "name": "N9_lower_bound:32",
+      "passed": true
+    },
+    {
+      "name": "N15_upper_bound:32",
+      "passed": true
+    },
+    {
+      "name": "simultaneous_limit_budget:32",
+      "passed": true
+    },
+    {
+      "name": "total_noise_product:1:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:1:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_fourth_configuration_moment:1:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_mixed_fourth_moment:1:1",
+      "passed": true
+    },
+    {
+      "name": "total_noise_product:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_fourth_configuration_moment:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_mixed_fourth_moment:1:1/3",
+      "passed": true
+    },
+    {
+      "name": "total_noise_product:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_fourth_configuration_moment:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_mixed_fourth_moment:1/16:1",
+      "passed": true
+    },
+    {
+      "name": "total_noise_product:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_fourth_configuration_moment:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_mixed_fourth_moment:1/16:1/3",
+      "passed": true
+    },
+    {
+      "name": "total_noise_product:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_fourth_configuration_moment:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_mixed_fourth_moment:1/625:1",
+      "passed": true
+    },
+    {
+      "name": "total_noise_product:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "added_noise_product:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_fourth_configuration_moment:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "Gaussian_mixed_fourth_moment:1/625:1/3",
+      "passed": true
+    },
+    {
+      "name": "source_reference_constraint:-1:1/2",
+      "passed": true
+    },
+    {
+      "name": "measuring_density_reconstructed:-1:1/2",
+      "passed": true
+    },
+    {
+      "name": "momentum_sign_retained:-1:1/2",
+      "passed": true
+    },
+    {
+      "name": "source_reference_constraint:-1:1",
+      "passed": true
+    },
+    {
+      "name": "measuring_density_reconstructed:-1:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_sign_retained:-1:1",
+      "passed": true
+    },
+    {
+      "name": "source_reference_constraint:-1:3/2",
+      "passed": true
+    },
+    {
+      "name": "measuring_density_reconstructed:-1:3/2",
+      "passed": true
+    },
+    {
+      "name": "momentum_sign_retained:-1:3/2",
+      "passed": true
+    },
+    {
+      "name": "source_reference_constraint:1:1/2",
+      "passed": true
+    },
+    {
+      "name": "measuring_density_reconstructed:1:1/2",
+      "passed": true
+    },
+    {
+      "name": "momentum_sign_retained:1:1/2",
+      "passed": true
+    },
+    {
+      "name": "source_reference_constraint:1:1",
+      "passed": true
+    },
+    {
+      "name": "measuring_density_reconstructed:1:1",
+      "passed": true
+    },
+    {
+      "name": "momentum_sign_retained:1:1",
+      "passed": true
+    },
+    {
+      "name": "source_reference_constraint:1:3/2",
+      "passed": true
+    },
+    {
+      "name": "measuring_density_reconstructed:1:3/2",
+      "passed": true
+    },
+    {
+      "name": "momentum_sign_retained:1:3/2",
+      "passed": true
+    },
+    {
+      "name": "global_P_feedback_preserves_canonical_one_form",
+      "passed": true
+    },
+    {
+      "name": "finite_POVM_analysis_isometry",
+      "passed": true
+    },
+    {
+      "name": "compressed_real_reading_is_selfadjoint",
+      "passed": true
+    },
+    {
+      "name": "measurement_variance_is_positive_Gram",
+      "passed": true
+    },
+    {
+      "name": "variance_defect_nonzero",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "drop_reference_profile_derivative",
+      "rejected": true
+    },
+    {
+      "name": "drop_measurement_configuration_noise",
+      "rejected": true
+    },
+    {
+      "name": "use_C_instead_of_inverse_C_for_momentum",
+      "rejected": true
+    },
+    {
+      "name": "fixed_hbar_has_vanishing_noise",
+      "rejected": true
+    },
+    {
+      "name": "hbar_N9_condition_implies_H3_budget",
+      "rejected": true
+    },
+    {
+      "name": "erase_joint_measurement_noise:1:1",
+      "rejected": true
+    },
+    {
+      "name": "erase_joint_measurement_noise:1:1/3",
+      "rejected": true
+    },
+    {
+      "name": "erase_joint_measurement_noise:1/16:1",
+      "rejected": true
+    },
+    {
+      "name": "erase_joint_measurement_noise:1/16:1/3",
+      "rejected": true
+    },
+    {
+      "name": "erase_joint_measurement_noise:1/625:1",
+      "rejected": true
+    },
+    {
+      "name": "erase_joint_measurement_noise:1/625:1/3",
+      "rejected": true
+    },
+    {
+      "name": "freeze_global_P_in_log_variation",
+      "rejected": true
+    },
+    {
+      "name": "POVM_second_moment_is_square_of_mean",
+      "rejected": true
+    },
+    {
+      "name": "coherent_frame_effect_is_projection",
+      "rejected": true
+    },
+    {
+      "name": "all_compressed_geometry_readings_commute",
+      "rejected": true
+    },
+    {
+      "name": "corrupt_symbolic_certificate",
+      "rejected": true
+    }
+  ],
+  "presentations": [
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "j",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "a",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "b",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "y1",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "u1",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v1",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "h",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "l",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "n",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "commute_1_0",
+            "lhs": [
+              "a",
+              "j"
+            ],
+            "rhs": [
+              [
+                [
+                  "j",
+                  "a"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_2_0",
+            "lhs": [
+              "b",
+              "j"
+            ],
+            "rhs": [
+              [
+                [
+                  "j",
+                  "b"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_2_1",
+            "lhs": [
+              "b",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "b"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_3_0",
+            "lhs": [
+              "y1",
+              "j"
+            ],
+            "rhs": [
+              [
+                [
+                  "j",
+                  "y1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_3_1",
+            "lhs": [
+              "y1",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "y1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_3_2",
+            "lhs": [
+              "y1",
+              "b"
+            ],
+            "rhs": [
+              [
+                [
+                  "b",
+                  "y1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_4_0",
+            "lhs": [
+              "u1",
+              "j"
+            ],
+            "rhs": [
+              [
+                [
+                  "j",
+                  "u1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_4_1",
+            "lhs": [
+              "u1",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "u1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_4_2",
+            "lhs": [
+              "u1",
+              "b"
+            ],
+            "rhs": [
+              [
+                [
+                  "b",
+                  "u1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_4_3",
+            "lhs": [
+              "u1",
+              "y1"
+            ],
+            "rhs": [
+              [
+                [
+                  "y1",
+                  "u1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_5_0",
+            "lhs": [
+              "v",
+              "j"
+            ],
+            "rhs": [
+              [
+                [
+                  "j",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_5_1",
+            "lhs": [
+              "v",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_5_2",
+            "lhs": [
+              "v",
+              "b"
+            ],
+            "rhs": [
+              [
+                [
+                  "b",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_5_3",
+            "lhs": [
+              "v",
+              "y1"
+            ],
+            "rhs": [
+              [
+                [
+                  "y1",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_5_4",
+            "lhs": [
+              "v",
+              "u1"
+            ],
+            "rhs": [
+              [
+                [
+                  "u1",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_6_0",
+            "lhs": [
+              "v1",
+              "j"
+            ],
+            "rhs": [
+              [
+                [
+                  "j",
+                  "v1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_6_1",
+            "lhs": [
+              "v1",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "v1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_6_2",
+            "lhs": [
+              "v1",
+              "b"
+            ],
+            "rhs": [
+              [
+                [
+                  "b",
+                  "v1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_6_3",
+            "lhs": [
+              "v1",
+              "y1"
+            ],
+            "rhs": [
+              [
+                [
+                  "y1",
+                  "v1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_6_4",
+            "lhs": [
+              "v1",
+              "u1"
+            ],
+            "rhs": [
+              [
+                [
+                  "u1",
+                  "v1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_6_5",
+            "lhs": [
+              "v1",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "v1"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_7_0",
+            "lhs": [
+              "h",
+              "j"
+            ],
+            "rhs": [
+              [
+                [
+                  "j",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_7_1",
+            "lhs": [
+              "h",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_7_2",
+            "lhs": [
+              "h",
+              "b"
+            ],
+            "rhs": [
+              [
+                [
+                  "b",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_7_3",
+            "lhs": [
+              "h",
+              "y1"
+            ],
+            "rhs": [
+              [
+                [
+                  "y1",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_7_4",
+            "lhs": [
+              "h",
+              "u1"
+            ],
+            "rhs": [
+              [
+                [
+                  "u1",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_7_5",
+            "lhs": [
+              "h",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_7_6",
+            "lhs": [
+              "h",
+              "v1"
+            ],
+            "rhs": [
+              [
+                [
+                  "v1",
+                  "h"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_8_0",
+            "lhs": [
+              "l",
+              "j"
+            ],
+            "rhs": [
+              [
+                [
+                  "j",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_8_1",
+            "lhs": [
+              "l",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_8_2",
+            "lhs": [
+              "l",
+              "b"
+            ],
+            "rhs": [
+              [
+                [
+                  "b",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_8_3",
+            "lhs": [
+              "l",
+              "y1"
+            ],
+            "rhs": [
+              [
+                [
+                  "y1",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_8_4",
+            "lhs": [
+              "l",
+              "u1"
+            ],
+            "rhs": [
+              [
+                [
+                  "u1",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_8_5",
+            "lhs": [
+              "l",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_8_6",
+            "lhs": [
+              "l",
+              "v1"
+            ],
+            "rhs": [
+              [
+                [
+                  "v1",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_8_7",
+            "lhs": [
+              "l",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "l"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_9_0",
+            "lhs": [
+              "n",
+              "j"
+            ],
+            "rhs": [
+              [
+                [
+                  "j",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_9_1",
+            "lhs": [
+              "n",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_9_2",
+            "lhs": [
+              "n",
+              "b"
+            ],
+            "rhs": [
+              [
+                [
+                  "b",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_9_3",
+            "lhs": [
+              "n",
+              "y1"
+            ],
+            "rhs": [
+              [
+                [
+                  "y1",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_9_4",
+            "lhs": [
+              "n",
+              "u1"
+            ],
+            "rhs": [
+              [
+                [
+                  "u1",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_9_5",
+            "lhs": [
+              "n",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_9_6",
+            "lhs": [
+              "n",
+              "v1"
+            ],
+            "rhs": [
+              [
+                [
+                  "v1",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_9_7",
+            "lhs": [
+              "n",
+              "h"
+            ],
+            "rhs": [
+              [
+                [
+                  "h",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          },
+          {
+            "id": "commute_9_8",
+            "lhs": [
+              "n",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "n"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting classical output jets and Gaussian variance symbols"
+          }
+        ]
+      },
+      "audit": {
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "criticalPairs": 120,
+        "resolved": 120,
+        "open": 0,
+        "full_audit_sha256": "4596dc21706246dc3ef1accb1d69395f75ed1f4df7db9b9bc668bfb89da35faf"
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "reference_constraint_inverse_chart",
+      "presentation_sha256": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "j",
+              "a",
+              "y1"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a",
+              "j",
+              "y1"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "j",
+                "a",
+                "y1"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "a",
+                "j",
+                "y1"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "a",
+              "j",
+              "y1"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "adapted_reference_momentum",
+      "presentation_sha256": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a",
+              "v1"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "a",
+              "v",
+              "u1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a",
+              "v1"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "a",
+              "v",
+              "u1"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "joint_configuration_variance",
+      "presentation_sha256": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h",
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "l",
+              "h"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h",
+              "l"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "h",
+                "l"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "l",
+                "h"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "l",
+              "h"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_8_7",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "added_noise_uncertainty_product",
+      "presentation_sha256": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h",
+              "l",
+              "h"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "h",
+              "h",
+              "l"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "h",
+                "h",
+                "l"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "h",
+                "l",
+                "h"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "h",
+              "l",
+              "h"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_8_7",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "all_N_noise_budget_recurrence:4",
+      "presentation_sha256": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "32",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n"
+            ],
+            [
+              "128",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n"
+            ],
+            [
+              "256",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "320",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "272",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "160",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "64",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "16",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "32",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n"
+            ],
+            [
+              "128",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n"
+            ],
+            [
+              "256",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "320",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "272",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "160",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "64",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "16",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "all_N_noise_budget_recurrence:7",
+      "presentation_sha256": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "256",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n"
+            ],
+            [
+              "1792",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n"
+            ],
+            [
+              "6272",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "14336",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "23744",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "30016",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "29792",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "23552",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "14896",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "7504",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "2968",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "896",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "196",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "28",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "256",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n"
+            ],
+            [
+              "1792",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n"
+            ],
+            [
+              "6272",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "14336",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "23744",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "30016",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "29792",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "23552",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "14896",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "7504",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "2968",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "896",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "196",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "28",
+              "0"
+            ]
+          ],
+          [
+            [
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n",
+              "n"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "09262bcd260f699fdb45e870cbb31f715375168cef32c35824ef3c2cd3a46db5",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "kind": "exact_noise_budget_polynomial",
+      "power": 4,
+      "coefficients": [
+        "1",
+        "107/35",
+        "4",
+        "52/9",
+        "6",
+        "82/15",
+        "4",
+        "52/21",
+        "1",
+        "2/9"
+      ],
+      "scope": "recurrence and base prove the finite sum identity; continuum use remains written analysis"
+    },
+    {
+      "kind": "exact_noise_budget_polynomial",
+      "power": 7,
+      "coefficients": [
+        "1",
+        "9091/2145",
+        "7",
+        "143/15",
+        "21",
+        "553/15",
+        "35",
+        "451/15",
+        "35",
+        "33",
+        "21",
+        "1939/165",
+        "7",
+        "133/39",
+        "1",
+        "2/15"
+      ],
+      "scope": "recurrence and base prove the finite sum identity; continuum use remains written analysis"
+    },
+    {
+      "kind": "vacuum_noise",
+      "cutoff": 0,
+      "point_momentum_variance_h1": "1/2",
+      "H3_momentum_noise_h1": "1/2",
+      "H3_configuration_noise_h1": "2"
+    },
+    {
+      "kind": "vacuum_noise",
+      "cutoff": 1,
+      "point_momentum_variance_h1": "33/2",
+      "H3_momentum_noise_h1": "257/2",
+      "H3_configuration_noise_h1": "4"
+    },
+    {
+      "kind": "vacuum_noise",
+      "cutoff": 2,
+      "point_momentum_variance_h1": "1283/2",
+      "H3_momentum_noise_h1": "156507/2",
+      "H3_configuration_noise_h1": "24/5"
+    },
+    {
+      "kind": "vacuum_noise",
+      "cutoff": 4,
+      "point_momentum_variance_h1": "188325/2",
+      "H3_momentum_noise_h1": "840833853/2",
+      "H3_configuration_noise_h1": "462/85"
+    },
+    {
+      "kind": "vacuum_noise",
+      "cutoff": 8,
+      "point_momentum_variance_h1": "53051849/2",
+      "H3_momentum_noise_h1": "11573723989721/2",
+      "H3_configuration_noise_h1": "1193594/204425"
+    },
+    {
+      "kind": "vacuum_noise",
+      "cutoff": 16,
+      "point_momentum_variance_h1": "20303918481/2",
+      "H3_momentum_noise_h1": "243341467004140849/2",
+      "H3_configuration_noise_h1": "51957710897036388562/8567317517805721025"
+    },
+    {
+      "kind": "vacuum_noise",
+      "cutoff": 32,
+      "point_momentum_variance_h1": "9007827120929/2",
+      "H3_momentum_noise_h1": "6352117478253280979041/2",
+      "H3_configuration_noise_h1": "11662052452295945611390986234088274307813338/1885944212732742756719190202495685750568925"
+    },
+    {
+      "kind": "finite_dilation_only",
+      "isometry": [
+        [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "1/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "-1/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "1/2"
+          ]
+        ],
+        [
+          [
+            "1/2",
+            "0"
+          ],
+          [
+            "0",
+            "-1/2"
+          ]
+        ]
+      ],
+      "mean": [
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "-1/4",
+            "-1/4"
+          ]
+        ],
+        [
+          [
+            "-1/4",
+            "1/4"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "second_moment": [
+        [
+          [
+            "5/2",
+            "0"
+          ],
+          [
+            "3/4",
+            "-3/4"
+          ]
+        ],
+        [
+          [
+            "3/4",
+            "3/4"
+          ],
+          [
+            "5/2",
+            "0"
+          ]
+        ]
+      ],
+      "positive_variance_defect": [
+        [
+          [
+            "19/8",
+            "0"
+          ],
+          [
+            "3/4",
+            "-3/4"
+          ]
+        ],
+        [
+          [
+            "3/4",
+            "3/4"
+          ],
+          [
+            "19/8",
+            "0"
+          ]
+        ]
+      ]
+    }
+  ],
+  "results": {
+    "physical_space": "unchanged RGR selected MPQ quotient",
+    "added_contract": "finite-resolution coherent-state joint measurement",
+    "normalized_geometry_POVM": true,
+    "positive_momentum_mean_form_domains": true,
+    "sharp_original_r_field_constructed": false,
+    "fixed_hbar_raw_point_geometry_limit": false,
+    "obstruction_scope": "this POVM in the physical vacuum; not all composite prescriptions",
+    "vacuum_mean_length_N0": "infinite",
+    "controlled_classical_C2_limit": "hbar N^15 -> 0",
+    "point_conjugate_variance_asymptotic": "hbar N^9/9",
+    "spacetime_curvature_operator_constructed": false,
+    "gauge_dual_completeness_classified": false,
+    "physical_three_plus_one_gravity_closed": false,
+    "continuum_proofs_machine_certified": false
+  },
+  "summary": {
+    "exact_checks": 261,
+    "symbolic_certificates": 6,
+    "negative_controls": 16
+  }
+}

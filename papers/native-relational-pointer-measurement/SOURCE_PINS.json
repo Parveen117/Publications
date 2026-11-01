@@ -1,0 +1,20 @@
+{
+  "protocol": "RPM1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "92ff5e3c623b4c4eb394ce248a28fd5c1c501dd859f14c76a5a37dd8be0da92c",
+    "THEOREM.md": "b69daf19e305812f8dc63e59957f3f98a9bd7d67473e4598991355c6d0a6bbd9",
+    "SOURCE_MAP.md": "73db7fa681a3095928e15af4790cb5ef3cc6ee85e65bb6c3a45637a389556f17",
+    "verify.cjs": "fc4e446a5b1d192d49f7398e52156557a13a069c3e306d0c4269561c91b9ee62",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-quantum-anomaly/THEOREM.md": "59bafe822249b5d9284667393e04b11f7bdbad76655819ee22a5b7dcd7ae8785",
+    "../native-local-sector-classification/THEOREM.md": "cb06e50e7a3e2dfb5c640bc4a9877e5805b06a9fab8a434eaa23e82f63321acb",
+    "../native-local-physical-sector/THEOREM.md": "3cf95547e8f6b818735e1735afdad4e46b0d8b8485c50cb06ae6b8af49ba1fad",
+    "../native-complementary-clock-sector/THEOREM.md": "475ba0d86355bcf10a8ef78c3af08faff912ae6925ba5a20232bbdc84c9f05b4",
+    "../native-critical-origin-sector/THEOREM.md": "525cd993de1b70742c2e983c14f5f70c7710ca6b2a4651be02181ef663343c00",
+    "../native-global-observable-algebra/THEOREM.md": "d150cd2ec9429ce04ae3221bbc6df6636e16cb29367fba73660cc023af2865b3",
+    "../native-global-observable-algebra/CERTIFICATE.json": "8180eb34b7956882e41249e451415dea5fc143f2bd0c8c6a10a2545e9f7e54e2",
+    "../native-cut-generated-history/THEOREM.md": "b75643d84d600c2fd7a2bc7b6de4fae18886a7d02df3d9d348c34f924489c1d6"
+  }
+}

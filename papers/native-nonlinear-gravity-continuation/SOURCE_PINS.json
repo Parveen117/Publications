@@ -1,0 +1,33 @@
+{
+  "protocol": "EGR2_SOURCE_PINS_V1",
+  "repository_base": "fc4619637f9417ecd0f0105bae995fab9cc3d9bd",
+  "native_engine": {
+    "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  },
+  "native_archive_sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+  "packet_files": {
+    "README.md": "283f4d494b79ee037144b994084cb5d9ee068a1387f6f7f1d4fa7612a49b0d67",
+    "THEOREM.md": "22b48d8dfe834ba5b85c927923ee32138407216487e395ff303c5694c420a8ba",
+    "run.py": "d41afd4129b515bc3b6f11ea21a8bd70932cd2138674c87f1a3cf77d538c5015",
+    "verify.cjs": "7061b5bca356b2b63fda9cd65ea52d30961402c53f0e1977847d4489ae21fab7"
+  },
+  "predecessor_files": {
+    "papers/native-exponential-gravity-response/README.md": "d9a5b80d0ecf349add785a4423f30b148262543df4bf7cb355e62cd787fb39be",
+    "papers/native-exponential-gravity-response/THEOREM.md": "3c14dc1ad2f06ec5b3804ec6a126f3c56c59e698ba18ca5967c272db99375a69",
+    "papers/native-exponential-gravity-response/verify.cjs": "d73cf615bbd18ead56ddacac4e1002ea30dcd24044a552446f9d43abd8661854",
+    "papers/native-exponential-gravity-response/run.py": "0c30dc70fcce4d159284e0b747e36d5d245a49cac71d0e871829d948dfc3d6c7",
+    "papers/native-exponential-gravity-response/SOURCE_PINS.json": "650ebb72a22447b712bb7cb3ba2df96e9b640fb317734cd743bfeff4c8c6f788",
+    "papers/native-exponential-gravity-response/CERTIFICATE.json": "59f857b682d14611d08c26f163730a0973ed8a599cd76db8a57e27e63a129184",
+    "papers/native-exponential-gravity-response/EXPECTED.sha256": "30a13942f8109c16c2a6c77028c6dd7d0f96eec56415155b5555cfee0c41d557"
+  },
+  "primary_reference": {
+    "title": "(Broken) Gauge Symmetries and Constraints in Regge Calculus",
+    "authors": [
+      "Benjamin Bahr",
+      "Bianca Dittrich"
+    ],
+    "url": "https://arxiv.org/abs/0905.1670",
+    "use": "Background on finite Regge gauge symmetry; no coefficients or source-branch theorem imported."
+  }
+}

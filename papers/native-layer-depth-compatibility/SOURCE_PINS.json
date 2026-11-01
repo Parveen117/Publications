@@ -1,0 +1,30 @@
+{
+  "protocol": "LDC1_SOURCE_PINS_V1",
+  "repository_parent": "e05800d68fbbcce229785cb303e6bf6b59cef086",
+  "files": {
+    "README.md": "5aaa0c6e2e40ded208140c2bb16183fe149b126afea28cdda1a93053f089d19a",
+    "THEOREM.md": "77e0d1a3138e6b7697eec72de339f69c750d09a8ea623cf3a41edba8b1e91484",
+    "SOURCE_EVALUATION.md": "01ff5d8b4489e7294dd4564d07545a1e83177cb34745682aeed60468e4a65528",
+    "SOURCE_MAP.md": "c07ce5292172119fd73a754ba0fedaabedb62b212f1c75aa108bc13c210c2208",
+    "USAGE.md": "fdd37ded31bd91dcae89dd07fe2ff95d4904d81ab9fd9304c3cd313b4541244e",
+    "depth_adapter.cjs": "bf8da60c2bfd0b3950e38214c27fc78bc64af04e1141a2e29c63d79f50f3705d",
+    "verify.cjs": "248210eebf6edc5bedd22dc2e22ed27a361c87a2457c883e81ae452b7377e5c3",
+    "run.py": "4220c784c321168b7ad6f8e559d70e1f9cc79d78c34866b0436a042b2818cf93",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-layer-anchor-atlas/THEOREM.md": "c1e7e356fd78310f427bd6809b22bbf6f02847fa930eb1d7be0414131deb2605",
+    "../native-layer-anchor-atlas/CERTIFICATE.json": "ee43c13fbeff0f33479e36c52ca4a9add0478d62c84dd2dd29df81f9ec621a97",
+    "../native-layer-anchor-atlas/SOURCE_PINS.json": "b3ab3b69662d16192262967bbc860d54099d9b24d3b9aedb73e5d3a01858821c",
+    "../native-infinite-layer-cut/THEOREM.md": "cd1239bcccaacad152f8aa77be4d84ff63a801e6aac11a54d67a78d3ce8af592",
+    "../native-infinite-layer-cut/layer_adapter.cjs": "0df60e3c6a1d6e1633a06e74bee46fc4cbeb8617f85e3f7c1b037a9510f77f99",
+    "../native-infinite-layer-cut/SOURCE_PINS.json": "511556849d0c8b978b7c7cbb5f16fc036f79ab383ab78641f63fca8ca292de2b",
+    "../native-layer-continuation-window/THEOREM.md": "453d353e313f8a8097a1d335b2a5b3720f50e06ee3d896156f9b1c3d8c34ae28",
+    "../native-layer-continuation-window/continuation_adapter.cjs": "3470429a697e5ca7fa4b14144afd74d5c9c03aa0722a3781ab880c96b1279037",
+    "../native-layer-continuation-window/SOURCE_PINS.json": "037d9a2e75bcb03483cc7466e9285ff9638801e08edfa584ef3b923e19e2efd7",
+    "../native-prime-innovation-window/window_adapter.cjs": "4a0bcd7155c530fa9a97346482c1f7ce1b515a1701dceee84a78a55d29d3fefc",
+    "../native-prime-innovation-window/SOURCE_PINS.json": "3d9bc8bf901f60eec66e14b3be42d397a6fc4f3e7fd8da0995abfe396f6c2dbc",
+    "../native-prime-observation-closure/observation_adapter.cjs": "ddb8385edb0cec94b6634bfd8f1f08189dd5eb6a7b236d439f001b9ca51a9c0b",
+    "../native-prime-observation-closure/SOURCE_PINS.json": "c4782e63013001f86abef6c58356f67267513b6cac777882cb932cda1eb2d5cd",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

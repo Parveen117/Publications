@@ -1,0 +1,26 @@
+{
+ "L": "1",
+ "active_prime_powers": [
+  2,
+  3,
+  4,
+  5,
+  7
+ ],
+ "retained_modes": 56,
+ "kernel_degree": 400,
+ "cosh_terms": 14,
+ "kernel_tail": {
+  "radius": "5/2",
+  "sup": "16/5"
+ },
+ "complement": {
+  "rule": "boundary_split",
+  "explicit_levels": 24,
+  "source": "BRT-T64: T50 (203)-(204) with nu=L, T56 (222) cap bound, ASM (14) Legendre energy, greedy boundary-energy allocation"
+ },
+ "margin": "1/10000000000000000000000000000000",
+ "rational_grid_digits": 46,
+ "rational_rounding_allowance": "1/100000000000000000000000000000000000000000000",
+ "declared_family_bound": "1/100000000000000000000000000000000000"
+}

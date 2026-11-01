@@ -1,0 +1,18 @@
+{
+  "protocol": "COS1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "82c18b8a23b2990247450e7f0536b8892e7137a9596fe09f370cb8a38605c090",
+    "THEOREM.md": "525cd993de1b70742c2e983c14f5f70c7710ca6b2a4651be02181ef663343c00",
+    "SOURCE_MAP.md": "868059ab5e93265026a0daa236c5c6448d9e8e9149cfeaee6f0ca7b824026a4b",
+    "verify.cjs": "ce477142a78a6a0f6410442be818a9c038b75ed78ebd029faf5cbc99dab163d0",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-normal-closure/THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7",
+    "../native-local-sector-classification/THEOREM.md": "cb06e50e7a3e2dfb5c640bc4a9877e5805b06a9fab8a434eaa23e82f63321acb",
+    "../native-local-sector-classification/oscillator_fixture.cjs": "6266269fcb67399837205e2b146b37ad30b38cd4ecf7aa6d08561d530e6fe317",
+    "../native-local-physical-sector/LOCAL_GEOMETRY.md": "b7fc2781cf8dd78a3f82b111c2fa5e2a8a6a01a69627becc2134c7c7bd824def",
+    "../native-complementary-clock-sector/THEOREM.md": "475ba0d86355bcf10a8ef78c3af08faff912ae6925ba5a20232bbdc84c9f05b4",
+    "../native-complementary-clock-sector/CERTIFICATE.json": "8fdc07b0ed1a1de135768c3e3f4abadb200bf0095714100ec91e374cdf9c492a"
+  }
+}

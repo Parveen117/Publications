@@ -1,0 +1,308 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=20mm,top=18mm,bottom=19mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools}
+\usepackage{booktabs,tabularx,array,enumitem,microtype,xcolor,fancyhdr,hyperref}
+\definecolor{ink}{HTML}{172B40}\definecolor{teal}{HTML}{087F8C}
+\definecolor{muted}{HTML}{536572}\definecolor{wash}{HTML}{EFF5F7}
+\hypersetup{colorlinks=true,linkcolor=teal,urlcolor=teal,pdftitle={Native Angular Current: Development Draft},pdfauthor={Research development for Monty}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\color{muted}RECOGNITION KERNEL / ANGULAR CURRENT}
+\fancyhead[R]{\small\color{muted}14 OCT 2026}
+\fancyfoot[L]{\small\color{muted}Development draft 0.8 \quad | \quad Testing and certification deferred}
+\fancyfoot[R]{\small\color{muted}\thepage}
+\setlength{\headheight}{14pt}\setlength{\parindent}{0pt}\setlength{\parskip}{5pt}
+\setlist[itemize]{leftmargin=16pt,itemsep=3pt,topsep=3pt}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\tabularxcolumn}[1]{>{\raggedright\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.16}
+\newcommand{\Id}{\mathbf 1}\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\pageheading}[2]{\vspace*{1mm}{\small\color{teal}\textbf{#1}}\par\vspace{2mm}{\LARGE\color{ink}\textbf{#2}}\par\vspace{3mm}}
+\newcommand{\blocktitle}[1]{\par\vspace{2mm}{\large\color{ink}\textbf{#1}}\par}
+\newcommand{\claim}[1]{\textbf{\color{teal}#1}}
+\newcommand{\notebox}[1]{\par\smallskip\noindent\colorbox{wash}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}}\par\smallskip}
+\begin{document}
+\pageheading{01 / THE NEXT OBSERVABLE}{Native Angular Current}
+{\large Recover phase accumulation through a ratio of oriented changes}
+
+\notebox{\textbf{Development draft.} The present work is a document-first derivation. Its propositions, observation interfaces and analytic examples are written for later review. No new simulation, experimental result or machine certificate is reported.}
+
+The phase-memory draft reconstructed a sampled phase path when an initial anchor and a strict bound on each phase step were supplied. The unresolved question is whether the bound can be replaced by another observation. This draft proposes measuring accumulated angular change directly.
+
+For two continuously differentiable, oriented comparison readings $X,Y$, with
+$X^2+Y^2>0$, define
+\[
+\boxed{\Omega[X,Y]:=\frac{X\,dY-Y\,dX}{2(X^2+Y^2)}.}
+\]
+This is a differential comparison: it assigns an angular increment to a change of the readings. Along a control path $x$, it means
+\[
+\Omega=\omega(x)\,dx,\qquad
+\omega(x)=\frac{XY'-YX'}{2(X^2+Y^2)}.
+\]
+The index or control $x$ need not be physical time. The factor $1/2$ compensates for the doubled phase of the native channel observable. Paths, gains and frame factors below are assumed continuously differentiable on each segment under consideration.
+
+\blocktitle{What the proposed construction adds}
+\begin{tabularx}{\linewidth}{@{}L{40mm}X@{}}\toprule
+Missing input & Proposed replacement or retained record\\\midrule
+Unknown phase-step bound & A directly available angular-current integral along the path.\\
+Unknown shared gain & Cancels between the numerator and denominator of $\Omega$, even when the gain varies.\\
+Rotating observer frame & Subtract a co-observed reference current carrying the same frame rotation.\\
+Lost half-turn count & Recover from the accumulated phase and the endpoint chart representative.\\
+Two noncommuting controls & Their currents determine the leading ordered-loop response under a specified local transport law.\\\bottomrule
+\end{tabularx}
+
+The observation requirement changes: a finite set of endpoint readings does not itself supply an exact current integral. The next physical task is to realize that additional measurement or supply a controlled approximation. The draft does not infer hidden turns from unchanged data.
+
+\newpage
+\pageheading{02 / NATIVE DERIVATION}{The unknown gain cancels exactly}
+For the inherited one-axis native family
+\[
+U=a\Id+bR,\qquad R^2=-\Id,\qquad a^2+b^2=1,
+\]
+the two oriented channel coefficients are
+$X_0=a^2-b^2$, $Y_0=2ab$. In the native cut field,
+\[
+z=X_0+\iota Y_0=(a+\iota b)^2,\qquad \iota^2=-1.
+\]
+Suppose a detector supplies $X=\rho X_0$, $Y=\rho Y_0$, where $\rho(x)>0$ is unknown and may change along the path. Then
+\[
+X\,dY-Y\,dX
+=\rho^2(X_0\,dY_0-Y_0\,dX_0),
+\quad X^2+Y^2=\rho^2.
+\]
+The terms involving $d\rho$ cancel. Expanding the unit-pair expressions gives
+\[
+X_0\,dY_0-Y_0\,dX_0=2(a\,db-b\,da),
+\]
+and hence
+\[
+\boxed{\Omega[X,Y]=a\,db-b\,da.}
+\]
+
+\claim{Proposed proposition AC1: native phase current.}
+With the inherited phase convention
+\[
+a=\frac{1-q^2}{1+q^2},\qquad b=\frac{2q}{1+q^2},\qquad
+\Phi(q)=2\int_0^q\frac{du}{1+u^2},
+\]
+substitution gives
+\[
+a\,db-b\,da=\frac{2\,dq}{1+q^2}=d\Phi(q).
+\]
+Thus $\Omega=d\theta$ on every finite chart. The expression in $X,Y$ remains valid when the Cayley chart has a pole, provided the two readings do not vanish together.
+
+\blocktitle{The same quantity is an operator coefficient}
+Differentiating $a^2+b^2=1$ yields $a\,da+b\,db=0$, so
+\[
+U^{\dagger}dU=(a\,db-b\,da)R=R\Omega,
+\qquad \Omega=-\frac12\tr(RU^{\dagger}dU).
+\]
+This gives the current both a readout definition and a native operator meaning. The readout formula avoids requiring direct access to $U$ or an individual global-phase reference.
+
+The cancellation requires a common multiplicative gain on the two coordinates. Unknown offsets, unequal coordinate gains or an unrecorded change of their orientation are different distortions and need their own calibration. No normalization is defined at $X=Y=0$.
+
+\newpage
+\pageheading{03 / INTEGRATION AND MEMORY}{Replace a speed bound by accumulated current}
+Let $w=X+\iota Y$ be continuously differentiable and nonzero along a path. If the current is available over the entire path, define the phase lift from a supplied anchor compatible with the initial normalized channel:
+\[
+\boxed{\widetilde\theta(x)=\theta_0+\int_{x_0}^{x}\Omega[w].}
+\]
+For a path in the native one-axis family, AC1 gives its actual native phase continuation. No prior numerical upper bound on $|d\theta/dx|$ is needed for this exact integral construction.
+
+\claim{Proposed proposition AC2: uniqueness with current data.}
+Two continuously differentiable native phase lifts with the same initial value and the same angular current coincide along the path.
+
+\textbf{Argument.} Their difference has zero differential. On a connected parameter interval it is constant; the common initial value makes that constant zero. This uses the inherited scalar integration and connected-path calculus.\hfill$\square$
+
+If the normalized channel supplies the endpoint representative
+$\varphi(x)\in[0,\pi)$, the retained integer is
+\[
+\boxed{m(x)=\frac{\widetilde\theta(x)-\varphi(x)}{\pi}\in\mathbb Z.}
+\]
+Its integer character follows from channel compatibility. If noisy readings or an incorrect current produce a noninteger residual, one must retain uncertainty or reject compatibility rather than silently rounding it into a certified winding.
+
+\blocktitle{Closed-channel circulation}
+When the normalized channel returns to its initial value,
+\[
+\oint\Omega=\pi\nu,\qquad \nu\in\mathbb Z.
+\]
+This follows by continuing local phase charts around the path: the final channel is identical, so its doubled angle changes by $2\pi\nu$. If the native unit-pair operator itself also returns to exactly its initial value, $\nu$ is even. An odd $\nu$ corresponds to the native operator ending at its negative while the channel has already closed.
+
+\blocktitle{What must actually be observed}
+An exact accumulated current is stronger information than finitely many samples of $X,Y$, or finitely many derivative readings. A practical estimate from sampled data requires an error model, a function class or resolution bounds. The exact observation contract here could instead be supplied by a mechanism that accumulates oriented change; no such physical implementation is claimed in this draft.
+
+The native phase anchor remains necessary. Arbitrary extra global phases multiplying $U$ cancel in the channel and are not recovered. AC2 concerns the angle in the declared native one-axis family.
+
+\newpage
+\pageheading{04 / THE OBSERVER IN THE COMPARISON}{Subtract the common frame current}
+Write a nonzero comparison pair as the native cut scalar $w=X+\iota Y$. Then
+\[
+\Omega[w]=\frac{\operatorname{turn}(w^{\dagger}dw)}{2w^{\dagger}w},
+\]
+where $\operatorname{turn}(A+\iota B)=B$. The cut product rule yields
+\[
+\boxed{\Omega[uv]=\Omega[u]+\Omega[v],\qquad
+\Omega[w^{\dagger}]=-\Omega[w],\qquad\Omega[\rho]=0}
+\]
+for nonzero $u,v$ and positive real $\rho$. These identities also reproduce the varying-gain cancellation directly.
+
+Let $z_S$ and $z_R$ be ideal source and reference channel readings. Suppose the observed pairs have the specified frame law
+\[
+w_S=\rho_Sg\,z_S,\qquad w_R=\rho_Rg\,z_R,
+\qquad \rho_S,\rho_R>0,\quad g\ne0.
+\]
+The shared cut factor $g(x)$ may carry a changing scale and a rotating two-coordinate frame. The gains $\rho_S,\rho_R$ may vary independently.
+
+\claim{Proposed proposition AC3: relative current invariance.}
+The comparison
+\[
+\boxed{\Omega_{S:R}:=\Omega[w_S]-\Omega[w_R]
+=\Omega[w_Sw_R^{\dagger}]
+=\Omega[z_S]-\Omega[z_R]}
+\]
+is unchanged by that shared observer factor and by both independent positive gains.
+
+\textbf{Argument.} Apply the product rule to the two observed pairs. Both expressions contain $\Omega[g]$, which cancels in their difference; the positive gains contribute zero. Conjugation changes the sign of the reference current, giving the middle expression.\hfill$\square$
+
+For native channel phases $\theta_S,\theta_R$ this becomes
+\[
+\Omega_{S:R}=d(\theta_S-\theta_R),
+\]
+\[
+\theta_S(x)-\theta_R(x)=\theta_S(x_0)-\theta_R(x_0)
++\int_{x_0}^{x}\Omega_{S:R}.
+\]
+If the reference phase is known, the source lift follows. If it is unknown, the result is a relative lift, and the reference phase remains a record rather than being set to zero without evidence.
+
+\blocktitle{The scope of the observer law}
+This is a common rotation-and-scale transformation of the two measured coordinates. It is not a statement that arbitrary non-Abelian changes of all operator axes cancel in one scalar subtraction. Non-common distortions or separate unknown offsets require further information.
+
+The earlier sign protocol used fixed oriented comparators. This proposed interface makes a particular moving-frame correction explicit by measuring a reference alongside the source.
+
+\newpage
+\pageheading{05 / WHY THE NEW DATA MATTER}{Finite jets still leave invisible turns}
+The current proposal must not be read as claiming that a few measured derivatives determine every hidden turn. An explicit analytic construction shows the remaining distinction between finite jet data and accumulated current.
+
+Let $r\ge1$ be a chosen derivative order and define the polynomial
+\[
+h_r(x)=\frac{\displaystyle\int_0^x t^r(1-t)^r\,dt}
+{\displaystyle\int_0^1 t^r(1-t)^r\,dt},\qquad 0\le x\le1.
+\]
+Its endpoint values and derivatives obey
+\[
+h_r(0)=0,\quad h_r(1)=1,\qquad
+h_r^{(k)}(0)=h_r^{(k)}(1)=0\quad(1\le k\le r).
+\]
+The derivative $h_r'$ is a constant multiple of $x^r(1-x)^r$, which proves the vanishing claims. For example, $h_1(x)=3x^2-2x^3$.
+
+Denote the native unit-circle pair of angle $\phi$ by $C_{\Sigma}(\phi)$. Compare the two paths
+\[
+\theta_A(x)=0,\qquad\theta_B(x)=\pi h_r(x),
+\]
+\[
+z_A(x)=1,\qquad z_B(x)=C_{\Sigma}(2\pi h_r(x)).
+\]
+At both endpoints, the channel values agree and all channel derivatives through order $r$ agree. Yet
+\[
+\boxed{\int_0^1\Omega[z_A]=0,\qquad
+\int_0^1\Omega[z_B]=\pi.}
+\]
+Thus even matching endpoint jets of any prescribed finite order does not determine the half-turn memory. Replacing $\pi h_r$ by $2\pi h_r$ also makes the native endpoint operators agree, while a full turn remains hidden in the path.
+
+\blocktitle{The same obstruction for finitely many samples}
+Given finitely many sample locations, choose an open gap between adjacent samples. A rescaled $h_r$ can perform the turn within that gap, joined to constant phases before and after it. The resulting path is $C^r$, matches the prescribed channel jets at every sample, and adds one half-turn to the phase record. Higher smoothness can be supplied by choosing a higher-order transition when required.
+
+Consequently, finite samples and finite-order jets alone do not give a universal replacement for the old increment bound. A known function class, an appropriate global regularity bound or a genuinely accumulated observation adds information that those samples lack.
+
+\notebox{\textbf{Development consequence.} The proposed route has identified the required extra observable: angular accumulation. It has not obtained that observable for free from finite endpoint data. This distinction tells the next instrument or operator construction exactly what it must retain.}
+
+\newpage
+\pageheading{06 / TWO NATIVE AXES}{Current area controls the commutator response}
+Retain the inherited generators
+\[
+R^2=J^2=-\Id,\qquad RJ=-JR,\qquad J=\iota K.
+\]
+Suppose two calibrated or reference-corrected phase currents are available on a two-coordinate control domain:
+\[
+\Omega_Q=\alpha_x\,dx+\alpha_y\,dy,\qquad
+\Omega_G=\beta_x\,dx+\beta_y\,dy.
+\]
+Attach them to a \emph{specified elementary transport law} whose first-order generators at a base point are
+\[
+A_x=R\alpha_x+J\beta_x,\qquad
+A_y=R\alpha_y+J\beta_y.
+\]
+This is an explicit control protocol, not an inference that every realization of the measured endpoints must have these generators.
+
+\claim{Proposed proposition AC4: ordered-loop coefficient.}
+For real central first-order increments $\varepsilon,\eta$, with
+$\varepsilon^2=\eta^2=0$, form the frozen-generator word
+\[
+H=(\Id-\eta A_y)(\Id-\varepsilon A_x)
+(\Id+\eta A_y)(\Id+\varepsilon A_x).
+\]
+Native multiplication gives
+\[
+H=\Id-\varepsilon\eta[A_x,A_y],
+\]
+\[
+[A_x,A_y]=2RJ\,\mathcal J,
+\qquad \mathcal J:=\alpha_x\beta_y-\alpha_y\beta_x.
+\]
+Therefore the oriented commutator coefficient is
+\[
+\boxed{\mathcal K_{xy}=-2RJ\,\mathcal J,
+\qquad H=\Id+\varepsilon\eta\mathcal K_{xy}.}
+\]
+The sign follows the displayed word order; reversing the loop reverses it. The scalar $\mathcal J$ is the oriented area spanned by the two phase currents in the control coordinates.
+
+If the currents are locally $d\theta_Q,d\theta_G$, then
+\[
+\mathcal J=
+\frac{\partial\theta_Q}{\partial x}\frac{\partial\theta_G}{\partial y}
+-\frac{\partial\theta_Q}{\partial y}\frac{\partial\theta_G}{\partial x}.
+\]
+Thus locally exact scalar phase currents can still drive a nonzero noncommuting operator loop. If their two control directions are dependent, $\mathcal J=0$ and this leading loop coefficient vanishes, despite the noncommutation of $R,J$ themselves.
+
+For a spatially varying transport field, a complete plaquette construction must also include changes of the generators along its edges. AC4 identifies the commutator contribution under the stated protocol. It is not yet a continuum gravitational field equation. A transport defined solely as differences of one globally specified endpoint operator can instead be flat; the actual composition rule matters.
+
+\newpage
+\pageheading{07 / ANALYTIC EXAMPLE AND PHYSICAL TARGET}{Count the turns, then compare the coupling}
+Consider a dimensionless control $x\in[0,1]$ and native phase
+$\theta_Q(x)=3\pi x$, anchored at zero. Let a rotating detector frame and two unknown positive gains produce
+\[
+w_Q=\rho_Q(x)C_{\Sigma}(6\pi x+\psi(x)),\qquad
+w_R=\rho_R(x)C_{\Sigma}(\psi(x)).
+\]
+The reference has fixed native source phase before the shared frame rotation. The current identities give, symbolically,
+\[
+\Omega[w_Q]=3\pi\,dx+\tfrac12d\psi,\qquad
+\Omega[w_R]=\tfrac12d\psi,
+\]
+\[
+\boxed{\Omega_{Q:R}=3\pi\,dx,\qquad
+\int_0^1\Omega_{Q:R}=3\pi.}
+\]
+The endpoint channel returns to its initial value, but the anchored phase record is $m=3$. Both unknown gains and the shared rotating frame have cancelled. This is a written analytic example, not a numerical or hardware result.
+
+\blocktitle{Connect the reconstructed phase to a declared source law}
+For a known reference, recover $\theta_Q$ and $\theta_G$ by their anchored current integrals. The earlier proposed time-comparison dictionary would then give
+\[
+\kappa_Q=\theta_Q\frac{\Theta}{\Delta},\qquad
+\zeta_{\rm ph}=\theta_G\Delta\Theta,
+\qquad\zeta_{\rm ph}=\kappa_G\frac{\hbar G}{c^5}.
+\]
+The duration comparisons $\Delta,\Theta$, the zero-phase convention and the source-to-transport dictionary are additional inputs. The current construction removes the missing-turn ambiguity only when its observation and reference contracts are supplied. It still does not separate $\kappa_G$ from $G$.
+
+For a general additive source coordinate $x$, the local coupling is
+$\kappa(x)=\Omega/dx$. The inherited Cayley relation becomes
+\[
+\frac{dq}{dx}=\frac{\kappa(x)}{2}(1+q^2).
+\]
+The ratio $2q'/(1+q^2)$ is therefore a local coupling comparison, rather than an assumed constant numerator scale. At a chart pole, use the channel current expression instead.
+
+\blocktitle{Where the next work starts}
+The needed construction is now precise: an observer/reference device or native accumulator that records the relative angular integral with controlled error. Once that interface is specified, its currents can feed the ordered two-axis loop law. The next work should address that realization and the full variable-field transport, before claiming physical gravity dynamics.
+
+\textbf{Dependencies and scope.} This draft builds on \emph{Native Phase-Word Reconstruction} v0.6 and \emph{Native Phase Memory} v0.7, both dated 14 October 2026. Angular derivatives and winding integrals are established mathematical constructions; the development here is their explicit use with the native channel, gain, observer and commutator contracts. Proof-system certification and tests remain deferred.
+\end{document}

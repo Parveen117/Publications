@@ -1,0 +1,813 @@
+{
+  "recorded_at_utc": "2026-10-26T14:24:22.218045+00:00",
+  "repositories": [
+    {
+      "repository": "Parveen117/Artificial-intelligence",
+      "default_branch": "main",
+      "baseline_commit": "fd43eb69328aaed8fb2468c592a2f4a527cc8605",
+      "baseline_tree": "e328bd81a46338520fab65f201b83b457c653b02",
+      "files": 186,
+      "manifest_sha256": "6b62bcf6dbc71179ed9209adf8a1e3219531f4af06d72459b30f75c44dc778c2",
+      "latest_observed_published_release": {
+        "tag": "v1.0.3",
+        "published_at": "2026-08-20T03:14:53Z",
+        "url": "https://github.com/Parveen117/Artificial-intelligence/releases/tag/v1.0.3",
+        "immutable": false,
+        "tag_object": {
+          "sha": "7bb6fba989558fb055a812f1f72fa9b4e737b73c",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/Artificial-intelligence/git/commits/7bb6fba989558fb055a812f1f72fa9b4e737b73c"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/Artificial-intelligence",
+        "record_id": 22020873,
+        "doi": "10.5281/zenodo.22020873",
+        "concept_doi": "10.5281/zenodo.21300178",
+        "version": "v1.0.3",
+        "record_created_at": "2026-08-20T03:14:57.098504+00:00",
+        "record_modified_at": "2026-08-20T03:14:57.286477+00:00",
+        "metadata_license": {
+          "id": "cc-by-4.0"
+        },
+        "record_url": "https://zenodo.org/records/22020873",
+        "metadata_url": "https://zenodo.org/api/records/22020873",
+        "archive_files": [
+          {
+            "filename": "Parveen117/Artificial-intelligence-v1.0.3.zip",
+            "size_bytes": 409404,
+            "download_url": "https://zenodo.org/api/records/22020873/files/Parveen117/Artificial-intelligence-v1.0.3.zip/content",
+            "zenodo_checksum": "md5:ab89cff017aa375ef52ecacf8c1304a8",
+            "sha256": "35739ce1100815de987d24e4f1657a3b532fb9b3548ebcf67203355d0917a0db",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 184,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:20:50.800822+00:00",
+        "release_commit": "7bb6fba989558fb055a812f1f72fa9b4e737b73c",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/quantum-classical-provisional",
+      "default_branch": "master",
+      "baseline_commit": "284302e1a65b6dfcc8b63531833394976bd4f331",
+      "baseline_tree": "ba58fefded547a6b1e612869213e02236766e447",
+      "files": 136,
+      "manifest_sha256": "16f6ff7eb6cc57f51c1e133b0a99188981dd40df75748e0aae43fc9e9813be27",
+      "latest_observed_published_release": {
+        "tag": "v1.0",
+        "published_at": "2026-10-18T14:58:00Z",
+        "url": "https://github.com/Parveen117/quantum-classical-provisional/releases/tag/v1.0",
+        "immutable": false,
+        "tag_object": {
+          "sha": "2a9eaf3e54e56236f1a92caf0a799f2e953ec125",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/quantum-classical-provisional/git/commits/2a9eaf3e54e56236f1a92caf0a799f2e953ec125"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/quantum-classical-provisional",
+        "record_id": 23454293,
+        "doi": "10.5281/zenodo.23454293",
+        "concept_doi": "10.5281/zenodo.23454292",
+        "version": "v1.0",
+        "record_created_at": "2026-10-18T14:58:04.751920+00:00",
+        "record_modified_at": "2026-10-18T14:58:04.989825+00:00",
+        "metadata_license": {
+          "id": "cc-by-4.0"
+        },
+        "record_url": "https://zenodo.org/records/23454293",
+        "metadata_url": "https://zenodo.org/api/records/23454293",
+        "archive_files": [
+          {
+            "filename": "Parveen117/quantum-classical-provisional-v1.0.zip",
+            "size_bytes": 705359,
+            "download_url": "https://zenodo.org/api/records/23454293/files/Parveen117/quantum-classical-provisional-v1.0.zip/content",
+            "zenodo_checksum": "md5:f58dbbd1b8f4c4cca35bc35ea8932329",
+            "sha256": "39f6cd4060cdae7fc92534e41f9245b1821f24a4a9e7634f23a6e1adca9205be",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 143,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:20:50.811600+00:00",
+        "release_commit": "2a9eaf3e54e56236f1a92caf0a799f2e953ec125",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/Cryptography-Recognition-Ledger-Systems",
+      "default_branch": "main",
+      "baseline_commit": "2cc47c53f453e49c92f8d4bdb9d1f49408239405",
+      "baseline_tree": "96c285a59233768d70b9cf811e8c3bd0bf8800bf",
+      "files": 73,
+      "manifest_sha256": "b52157e71e0d832d94aaa0c40b919e1c58929829401afb2c0ba75fff69d33bb0",
+      "latest_observed_published_release": {
+        "tag": "v1.0.2",
+        "published_at": "2026-07-12T05:31:55Z",
+        "url": "https://github.com/Parveen117/Cryptography-Recognition-Ledger-Systems/releases/tag/v1.0.2",
+        "immutable": false,
+        "tag_object": {
+          "sha": "8ff03f1ab9982ead43590d72a41cdd190e915b40",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/Cryptography-Recognition-Ledger-Systems/git/commits/8ff03f1ab9982ead43590d72a41cdd190e915b40"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/Cryptography-Recognition-Ledger-Systems",
+        "record_id": 21318108,
+        "doi": "10.5281/zenodo.21318108",
+        "concept_doi": "10.5281/zenodo.21301064",
+        "version": "v1.0.2",
+        "record_created_at": "2026-07-12T05:32:00.009060+00:00",
+        "record_modified_at": "2026-07-14T18:33:01.893622+00:00",
+        "metadata_license": null,
+        "record_url": "https://zenodo.org/records/21318108",
+        "metadata_url": "https://zenodo.org/api/records/21318108",
+        "archive_files": [
+          {
+            "filename": "Parveen117/Cryptography-Recognition-Ledger-Systems-v1.0.2.zip",
+            "size_bytes": 587291,
+            "download_url": "https://zenodo.org/api/records/21318108/files/Parveen117/Cryptography-Recognition-Ledger-Systems-v1.0.2.zip/content",
+            "zenodo_checksum": "md5:d4091770fb92f6549b5999b819b62e15",
+            "sha256": "facd0db7cf9a24906f3e6119842a203018d0329fe1022ba537356485bca8ae82",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 73,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:20:59.690494+00:00",
+        "release_commit": "8ff03f1ab9982ead43590d72a41cdd190e915b40",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/IEL-Information-Entropy-Ledger",
+      "default_branch": "main",
+      "baseline_commit": "4d2b2895905c492a4a397f46df9f5563ef214915",
+      "baseline_tree": "46e066f14d70c032fc2a9f8919fe59d9283bf560",
+      "files": 15,
+      "manifest_sha256": "91ab1378851d162dfdf016c3eb8fc6d5d62e390e2cd01be83e52f24f11873bac",
+      "latest_observed_published_release": {
+        "tag": "v1.0.1",
+        "published_at": "2026-07-12T05:31:57Z",
+        "url": "https://github.com/Parveen117/IEL-Information-Entropy-Ledger/releases/tag/v1.0.1",
+        "immutable": false,
+        "tag_object": {
+          "sha": "b269a81b8a22324b1ad5ffc6475d8865fe98c0f3",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/IEL-Information-Entropy-Ledger/git/commits/b269a81b8a22324b1ad5ffc6475d8865fe98c0f3"
+        }
+      },
+      "zenodo_archive": null
+    },
+    {
+      "repository": "Parveen117/Atomic-validation-public",
+      "default_branch": "main",
+      "baseline_commit": "947a00425966aeda730d6a665e119db785f46f17",
+      "baseline_tree": "777f95293dee8cf3dd61873b658b14207f396ea3",
+      "files": 129,
+      "manifest_sha256": "44357db7eadec42807af9f31240d22686509aef0bcfb6629ad3c5f23d04265c8",
+      "latest_observed_published_release": {
+        "tag": "v4.1",
+        "published_at": "2026-08-20T03:17:13Z",
+        "url": "https://github.com/Parveen117/Atomic-validation-public/releases/tag/v4.1",
+        "immutable": false,
+        "tag_object": {
+          "sha": "947a00425966aeda730d6a665e119db785f46f17",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/Atomic-validation-public/git/commits/947a00425966aeda730d6a665e119db785f46f17"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/Atomic-validation-public",
+        "record_id": 22020900,
+        "doi": "10.5281/zenodo.22020900",
+        "concept_doi": "10.5281/zenodo.21317145",
+        "version": "v4.1",
+        "record_created_at": "2026-08-20T03:17:18.522067+00:00",
+        "record_modified_at": "2026-08-20T03:17:18.729409+00:00",
+        "metadata_license": {
+          "id": "cc-by-4.0"
+        },
+        "record_url": "https://zenodo.org/records/22020900",
+        "metadata_url": "https://zenodo.org/api/records/22020900",
+        "archive_files": [
+          {
+            "filename": "Parveen117/Atomic-validation-public-v4.1.zip",
+            "size_bytes": 4116558,
+            "download_url": "https://zenodo.org/api/records/22020900/files/Parveen117/Atomic-validation-public-v4.1.zip/content",
+            "zenodo_checksum": "md5:f16ce57cc46cf8c03458b79d2a46af71",
+            "sha256": "185cc80e682849d3e58f3dfde819dc5c44bcb8a1368d40c7692d2bf8780f0399",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 129,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:21:00.344272+00:00",
+        "release_commit": "947a00425966aeda730d6a665e119db785f46f17",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/EMK-material-response-public",
+      "default_branch": "main",
+      "baseline_commit": "5dfd7f2cbdcd7fe7559ae2334c495dea947fa175",
+      "baseline_tree": "e0dc3ecd571696aeddcfea66f3873bd6bdab79e1",
+      "files": 38,
+      "manifest_sha256": "605d0f03c29245680b13e8622d373a33bf2f3ca5ef0e2939bd4c545bdeffd6a6",
+      "latest_observed_published_release": {
+        "tag": "v1.0.0",
+        "published_at": "2026-07-13T16:52:07Z",
+        "url": "https://github.com/Parveen117/EMK-material-response-public/releases/tag/v1.0.0",
+        "immutable": false,
+        "tag_object": {
+          "sha": "5dfd7f2cbdcd7fe7559ae2334c495dea947fa175",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/EMK-material-response-public/git/commits/5dfd7f2cbdcd7fe7559ae2334c495dea947fa175"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/EMK-material-response-public",
+        "record_id": 21342322,
+        "doi": "10.5281/zenodo.21342322",
+        "concept_doi": "10.5281/zenodo.21342321",
+        "version": "v1.0.0",
+        "record_created_at": "2026-07-13T16:52:16.585179+00:00",
+        "record_modified_at": "2026-07-13T16:53:17.226563+00:00",
+        "metadata_license": null,
+        "record_url": "https://zenodo.org/records/21342322",
+        "metadata_url": "https://zenodo.org/api/records/21342322",
+        "archive_files": [
+          {
+            "filename": "Parveen117/EMK-material-response-public-v1.0.0.zip",
+            "size_bytes": 58794,
+            "download_url": "https://zenodo.org/api/records/21342322/files/Parveen117/EMK-material-response-public-v1.0.0.zip/content",
+            "zenodo_checksum": "md5:4827e77a400ea6dd750ff12bb64cd716",
+            "sha256": "630f7606063c7229631f514a023f9024bb94a39b92a615e5e8c862fd0dc920c0",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 38,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:21:06.500523+00:00",
+        "release_commit": "5dfd7f2cbdcd7fe7559ae2334c495dea947fa175",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/Quantum-Classical-public",
+      "default_branch": "main",
+      "baseline_commit": "4998bb83365cb72e45229ef56e33465cd21370db",
+      "baseline_tree": "7fe14d0d47d18588ac53aec32249197f7efd63cd",
+      "files": 55,
+      "manifest_sha256": "7daecfe61211b3d82f6fe9d9b6f307afde7bc32b8fce3792739cd6df6a2b5d98",
+      "latest_observed_published_release": {
+        "tag": "v1.0.0",
+        "published_at": "2026-07-14T18:32:16Z",
+        "url": "https://github.com/Parveen117/Quantum-Classical-public/releases/tag/v1.0.0",
+        "immutable": false,
+        "tag_object": {
+          "sha": "d68b4981f44eadbefd4425ee3861a5e139d76713",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/Quantum-Classical-public/git/commits/d68b4981f44eadbefd4425ee3861a5e139d76713"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/Quantum-Classical-public",
+        "record_id": 21363261,
+        "doi": "10.5281/zenodo.21363261",
+        "concept_doi": "10.5281/zenodo.21363260",
+        "version": "v1.0.0",
+        "record_created_at": "2026-07-14T18:32:20.711003+00:00",
+        "record_modified_at": "2026-07-14T18:33:30.635169+00:00",
+        "metadata_license": null,
+        "record_url": "https://zenodo.org/records/21363261",
+        "metadata_url": "https://zenodo.org/api/records/21363261",
+        "archive_files": [
+          {
+            "filename": "Parveen117/Quantum-Classical-public-v1.0.0.zip",
+            "size_bytes": 136623,
+            "download_url": "https://zenodo.org/api/records/21363261/files/Parveen117/Quantum-Classical-public-v1.0.0.zip/content",
+            "zenodo_checksum": "md5:e7f0b640e42c627f970e8bc7b7d1ded5",
+            "sha256": "f4ea8ec3d6b16bf2b3fb1301cf024bb17bd047b24db2145916b4e79b822e5c44",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 55,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:21:13.189651+00:00",
+        "release_commit": "d68b4981f44eadbefd4425ee3861a5e139d76713",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/ECL-pulic",
+      "default_branch": "main",
+      "baseline_commit": "421742b8135f0245b612e1a57e0e6b3d5dc79d9a",
+      "baseline_tree": "111d89a150d6209a5555687f0ef2497a88ec9b47",
+      "files": 30,
+      "manifest_sha256": "3d519ad45c8803678b6de57bd1c2e51fcaf81969f5cba7ded8a7989a15563846",
+      "latest_observed_published_release": {
+        "tag": "v1.0.0",
+        "published_at": "2026-07-14T20:10:27Z",
+        "url": "https://github.com/Parveen117/ECL-pulic/releases/tag/v1.0.0",
+        "immutable": false,
+        "tag_object": {
+          "sha": "421742b8135f0245b612e1a57e0e6b3d5dc79d9a",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/ECL-pulic/git/commits/421742b8135f0245b612e1a57e0e6b3d5dc79d9a"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/ECL-pulic",
+        "record_id": 21364277,
+        "doi": "10.5281/zenodo.21364277",
+        "concept_doi": "10.5281/zenodo.21364276",
+        "version": "v1.0.0",
+        "record_created_at": "2026-07-14T20:10:31.654164+00:00",
+        "record_modified_at": "2026-07-14T20:29:52.956030+00:00",
+        "metadata_license": null,
+        "record_url": "https://zenodo.org/records/21364277",
+        "metadata_url": "https://zenodo.org/api/records/21364277",
+        "archive_files": [
+          {
+            "filename": "Parveen117/ECL-pulic-v1.0.0.zip",
+            "size_bytes": 37475,
+            "download_url": "https://zenodo.org/api/records/21364277/files/Parveen117/ECL-pulic-v1.0.0.zip/content",
+            "zenodo_checksum": "md5:5aafc7a4a24fc9d1c3d32f47869f1dee",
+            "sha256": "f1c2aa45557303bc93244e2b875400a5032282494828139c23df8acfae3419d0",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 30,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:21:05.399365+00:00",
+        "release_commit": "421742b8135f0245b612e1a57e0e6b3d5dc79d9a",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/recognition-seam-calculus",
+      "default_branch": "main",
+      "baseline_commit": "cafb4a5134be51df3ebd7bb2368ada6b61f1953a",
+      "baseline_tree": "470f38143c4cecb10034935c5e9ef3edcad85456",
+      "files": 37,
+      "manifest_sha256": "4b784a635b2cd7b59295993de11349b39e10b513306750610b4c61383603d9e3",
+      "latest_observed_published_release": {
+        "tag": "V3.0.1",
+        "published_at": "2026-08-04T05:12:36Z",
+        "url": "https://github.com/Parveen117/recognition-seam-calculus/releases/tag/V3.0.1",
+        "immutable": false,
+        "tag_object": {
+          "sha": "cafb4a5134be51df3ebd7bb2368ada6b61f1953a",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/recognition-seam-calculus/git/commits/cafb4a5134be51df3ebd7bb2368ada6b61f1953a"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/recognition-seam-calculus",
+        "record_id": 21784741,
+        "doi": "10.5281/zenodo.21784741",
+        "concept_doi": "10.5281/zenodo.21597453",
+        "version": "V3.0.1",
+        "record_created_at": "2026-08-04T05:12:40.570171+00:00",
+        "record_modified_at": "2026-08-04T05:12:40.805955+00:00",
+        "metadata_license": {
+          "id": "bsd-3-clause"
+        },
+        "record_url": "https://zenodo.org/records/21784741",
+        "metadata_url": "https://zenodo.org/api/records/21784741",
+        "archive_files": [
+          {
+            "filename": "Parveen117/recognition-seam-calculus-V3.0.1.zip",
+            "size_bytes": 31622,
+            "download_url": "https://zenodo.org/api/records/21784741/files/Parveen117/recognition-seam-calculus-V3.0.1.zip/content",
+            "zenodo_checksum": "md5:43af6f586f4a3a6f85c91e9b697e36cb",
+            "sha256": "2f494484b3b9135582b7f9dc658c53a9a141250f448292c670f457f1e60a1525",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 37,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:20:50.817039+00:00",
+        "release_commit": "cafb4a5134be51df3ebd7bb2368ada6b61f1953a",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/Publications",
+      "default_branch": "main",
+      "baseline_commit": "b7323b72928a6300bf915c38482822c79812960a",
+      "baseline_tree": "4b7d1fa9d725e19636728a70b8e9f52fa287a9bf",
+      "files": 739,
+      "manifest_sha256": "e55e43efee247aeb4f9551fbf4970ad9250aaf60717d37e69d7afc7094f9cf8d",
+      "latest_observed_published_release": {
+        "tag": "v3.3",
+        "published_at": "2026-08-29T17:50:43Z",
+        "url": "https://github.com/Parveen117/Publications/releases/tag/v3.3",
+        "immutable": false,
+        "tag_object": {
+          "sha": "75aeb2cb941e8e85dcd29bd912c8a24f1ef9fa5f",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/Publications/git/commits/75aeb2cb941e8e85dcd29bd912c8a24f1ef9fa5f"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/Publications",
+        "record_id": 22164767,
+        "doi": "10.5281/zenodo.22164767",
+        "concept_doi": "10.5281/zenodo.21672717",
+        "version": "v3.3",
+        "record_created_at": "2026-08-29T17:50:46.820818+00:00",
+        "record_modified_at": "2026-08-29T17:50:47.032997+00:00",
+        "metadata_license": {
+          "id": "cc-by-4.0"
+        },
+        "record_url": "https://zenodo.org/records/22164767",
+        "metadata_url": "https://zenodo.org/api/records/22164767",
+        "archive_files": [
+          {
+            "filename": "Parveen117/Publications-v3.3.zip",
+            "size_bytes": 8899264,
+            "download_url": "https://zenodo.org/api/records/22164767/files/Parveen117/Publications-v3.3.zip/content",
+            "zenodo_checksum": "md5:377ba514501a624aa28aa25a38fbc4f3",
+            "sha256": "b7c23affe3436fbef8de84dd66abf6cb0b854d25977b5a44235e8392b07339d1",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 502,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:21:13.327083+00:00",
+        "release_commit": "75aeb2cb941e8e85dcd29bd912c8a24f1ef9fa5f",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "default_branch": "main",
+      "baseline_commit": "e8e3089745bf7dc0532d01c62a5f660f5658c6f0",
+      "baseline_tree": "cc7d681dc5b871eb5591d57c94fe81d8841730ef",
+      "files": 1070,
+      "manifest_sha256": "7d1a868c68ddcd3bcf5611df9b4851c73b674f569d2163329adf74008d5d409c",
+      "latest_observed_published_release": {
+        "tag": "v3.1",
+        "published_at": "2026-08-08T15:41:23Z",
+        "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/releases/tag/v3.1",
+        "immutable": true,
+        "tag_object": {
+          "sha": "1e4b75eebe634e6de3472aa25d9a0b557da39715",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/Recognition-Kernel-Framework/git/commits/1e4b75eebe634e6de3472aa25d9a0b557da39715"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/Recognition-Kernel-Framework",
+        "record_id": 21852749,
+        "doi": "10.5281/zenodo.21852749",
+        "concept_doi": "10.5281/zenodo.21760118",
+        "version": "v3.1",
+        "record_created_at": "2026-08-08T15:41:27.847484+00:00",
+        "record_modified_at": "2026-08-08T15:41:28.044125+00:00",
+        "metadata_license": {
+          "id": "cc-by-4.0"
+        },
+        "record_url": "https://zenodo.org/records/21852749",
+        "metadata_url": "https://zenodo.org/api/records/21852749",
+        "archive_files": [
+          {
+            "filename": "Parveen117/Recognition-Kernel-Framework-v3.1.zip",
+            "size_bytes": 582011,
+            "download_url": "https://zenodo.org/api/records/21852749/files/Parveen117/Recognition-Kernel-Framework-v3.1.zip/content",
+            "zenodo_checksum": "md5:24eeab4b66c8042e5a673e985a0be27e",
+            "sha256": "40a9b4884f0162bd2af67b8b560401521376ad1a62397f9c4a7901af96e7a39e",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 209,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:20:50.799210+00:00",
+        "release_commit": "1e4b75eebe634e6de3472aa25d9a0b557da39715",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/Thermodynamics-Reproducibility",
+      "default_branch": "main",
+      "baseline_commit": "118596980f3dfd72329a3966c867867bf51fb99a",
+      "baseline_tree": "64f80adab0a117d2503d402d2343bc7b9ed97eac",
+      "files": 79,
+      "manifest_sha256": "002aa4df32ffca8e064838017489984a39636b997352bbca8f39df99cefdf2de",
+      "latest_observed_published_release": {
+        "tag": "v1.0",
+        "published_at": "2026-08-10T23:00:03Z",
+        "url": "https://github.com/Parveen117/Thermodynamics-Reproducibility/releases/tag/v1.0",
+        "immutable": false,
+        "tag_object": {
+          "sha": "0429666809243eec2ae9283f663d9e29dbf65b84",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/Thermodynamics-Reproducibility/git/commits/0429666809243eec2ae9283f663d9e29dbf65b84"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/Thermodynamics-Reproducibility",
+        "record_id": 21879729,
+        "doi": "10.5281/zenodo.21879729",
+        "concept_doi": "10.5281/zenodo.21879728",
+        "version": "v1.0",
+        "record_created_at": "2026-08-10T23:00:08.302474+00:00",
+        "record_modified_at": "2026-08-10T23:00:08.610593+00:00",
+        "metadata_license": {
+          "id": "cc-by-4.0"
+        },
+        "record_url": "https://zenodo.org/records/21879729",
+        "metadata_url": "https://zenodo.org/api/records/21879729",
+        "archive_files": [
+          {
+            "filename": "Parveen117/Thermodynamics-Reproducibility-v1.0.zip",
+            "size_bytes": 64591,
+            "download_url": "https://zenodo.org/api/records/21879729/files/Parveen117/Thermodynamics-Reproducibility-v1.0.zip/content",
+            "zenodo_checksum": "md5:e696c76831546527ffe241233762e678",
+            "sha256": "71626246720d2c3c44b0ead7f0cf23dfd460fa9bc1cd9b43dabb408961a54126",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 39,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:20:50.809924+00:00",
+        "release_commit": "0429666809243eec2ae9283f663d9e29dbf65b84",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/Red-team-Challenge",
+      "default_branch": "main",
+      "baseline_commit": "78c374d9d2b5c52967366dfb7cba28a3ea226b4e",
+      "baseline_tree": "f5e4722bd7bfcd90023440f000a89001dc56645e",
+      "files": 98,
+      "manifest_sha256": "9edb55ede55cd55f45bc225fd1fc7a65e80112b6f5219962123f7266cd63f8ea",
+      "latest_observed_published_release": {
+        "tag": "v1.0.2",
+        "published_at": "2026-08-20T03:20:29Z",
+        "url": "https://github.com/Parveen117/Red-team-Challenge/releases/tag/v1.0.2",
+        "immutable": false,
+        "tag_object": {
+          "sha": "78c374d9d2b5c52967366dfb7cba28a3ea226b4e",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/Red-team-Challenge/git/commits/78c374d9d2b5c52967366dfb7cba28a3ea226b4e"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/Red-team-Challenge",
+        "record_id": 22020946,
+        "doi": "10.5281/zenodo.22020946",
+        "concept_doi": "10.5281/zenodo.21892246",
+        "version": "v1.0.2",
+        "record_created_at": "2026-08-20T03:20:33.206999+00:00",
+        "record_modified_at": "2026-08-20T03:20:33.362492+00:00",
+        "metadata_license": {
+          "id": "cc-by-4.0"
+        },
+        "record_url": "https://zenodo.org/records/22020946",
+        "metadata_url": "https://zenodo.org/api/records/22020946",
+        "archive_files": [
+          {
+            "filename": "Parveen117/Red-team-Challenge-v1.0.2.zip",
+            "size_bytes": 178458,
+            "download_url": "https://zenodo.org/api/records/22020946/files/Parveen117/Red-team-Challenge-v1.0.2.zip/content",
+            "zenodo_checksum": "md5:d57c4f931dad92e9277bafd3b1596392",
+            "sha256": "4b0e38f9fc447806441915c43e1928ff45cff1fa212de757e7ab4e6ea43d6688",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 98,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:20:50.794218+00:00",
+        "release_commit": "78c374d9d2b5c52967366dfb7cba28a3ea226b4e",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/RNKE-GATE",
+      "default_branch": "main",
+      "baseline_commit": "206af48cae62dc39966f92e17c87d66d4a18d6f2",
+      "baseline_tree": "36ad3a02162e6386dbcdd2225f08eb094e859fef",
+      "files": 21,
+      "manifest_sha256": "5415ab2a2adb33e613b9d3a77403685941dfb273725d69b8b6757894d499694d",
+      "latest_observed_published_release": {
+        "tag": "v1.1",
+        "published_at": "2026-08-28T11:31:40Z",
+        "url": "https://github.com/Parveen117/RNKE-GATE/releases/tag/v1.1",
+        "immutable": false,
+        "tag_object": {
+          "sha": "206af48cae62dc39966f92e17c87d66d4a18d6f2",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/RNKE-GATE/git/commits/206af48cae62dc39966f92e17c87d66d4a18d6f2"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/RNKE-GATE",
+        "record_id": 22143545,
+        "doi": "10.5281/zenodo.22143545",
+        "concept_doi": "10.5281/zenodo.22143544",
+        "version": "v1.1",
+        "record_created_at": "2026-08-28T11:31:45.264382+00:00",
+        "record_modified_at": "2026-08-28T11:40:19.014081+00:00",
+        "metadata_license": null,
+        "record_url": "https://zenodo.org/records/22143545",
+        "metadata_url": "https://zenodo.org/api/records/22143545",
+        "archive_files": [
+          {
+            "filename": "Parveen117/RNKE-GATE-v1.1.zip",
+            "size_bytes": 42947,
+            "download_url": "https://zenodo.org/api/records/22143545/files/Parveen117/RNKE-GATE-v1.1.zip/content",
+            "zenodo_checksum": "md5:c01d78da83da4ee55e373f71439869b7",
+            "sha256": "a968a4ac582e7b3591dcd89b20e13e40e64dc2d7e69ba168a0d1e4aff550deee",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 21,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:21:06.745239+00:00",
+        "release_commit": "206af48cae62dc39966f92e17c87d66d4a18d6f2",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/Bio-tech",
+      "default_branch": "main",
+      "baseline_commit": "12adfe0f1da26cc4ce992837df003928e1a49217",
+      "baseline_tree": "a6474392e7084877fb9ca0a6fefc2113df8d577f",
+      "files": 11,
+      "manifest_sha256": "4f8eb7540a8c08507bf110d5f3d783f0ef41e55b3c0641da3910dc808d2cd9b9",
+      "latest_observed_published_release": null,
+      "zenodo_archive": null
+    },
+    {
+      "repository": "Parveen117/Energy",
+      "default_branch": "main",
+      "baseline_commit": "59f7d96fff4d52520eb9fb3de74a2b7f78a0e370",
+      "baseline_tree": "a4ca392b68d73096aa211e1659b5cbc117c17613",
+      "files": 33,
+      "manifest_sha256": "f2120243f060c53475a98acccd0e72d165ccba6d3c4b29edc6b3b68186c753a5",
+      "latest_observed_published_release": {
+        "tag": "v1.1",
+        "published_at": "2026-08-28T11:29:45Z",
+        "url": "https://github.com/Parveen117/Energy/releases/tag/v1.1",
+        "immutable": false,
+        "tag_object": {
+          "sha": "6faff197bdc952cee24314806d72e8b87c9005c1",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/Energy/git/commits/6faff197bdc952cee24314806d72e8b87c9005c1"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/Energy",
+        "record_id": 22143520,
+        "doi": "10.5281/zenodo.22143520",
+        "concept_doi": "10.5281/zenodo.22143519",
+        "version": "v1.1",
+        "record_created_at": "2026-08-28T11:29:49.789773+00:00",
+        "record_modified_at": "2026-08-28T11:34:12.812347+00:00",
+        "metadata_license": null,
+        "record_url": "https://zenodo.org/records/22143520",
+        "metadata_url": "https://zenodo.org/api/records/22143520",
+        "archive_files": [
+          {
+            "filename": "Parveen117/Energy-v1.1.zip",
+            "size_bytes": 64951,
+            "download_url": "https://zenodo.org/api/records/22143520/files/Parveen117/Energy-v1.1.zip/content",
+            "zenodo_checksum": "md5:7db7b516297e15cacb7c05f85975110a",
+            "sha256": "7b64a12dfb6286615026e997d8d3ee5b45973070828b8bf2d2bf1d3f790cab0a",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 33,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:21:12.546444+00:00",
+        "release_commit": "6faff197bdc952cee24314806d72e8b87c9005c1",
+        "status": "verified"
+      }
+    },
+    {
+      "repository": "Parveen117/Parveen117",
+      "default_branch": "main",
+      "baseline_commit": "665933059b55c7975f39e4e5df48f6c74ac4b604",
+      "baseline_tree": "7b7d0fad703c52970ef94546ea055f1b832f0749",
+      "files": 1,
+      "manifest_sha256": "0b74a64e5ed7c04188de147602da7f712768ab065d7d487e2297d15c73b8b241",
+      "latest_observed_published_release": null,
+      "zenodo_archive": null
+    },
+    {
+      "repository": "Parveen117/extra-ideas",
+      "default_branch": "main",
+      "baseline_commit": "bf0bb2cc8085e7e0f10b037091877c8199774a4e",
+      "baseline_tree": "36d482cd06320a4479a4bd155a0e91169146c23e",
+      "files": 386,
+      "manifest_sha256": "cb3ad6abc0f8488d958d0842e8eb3d1f6930943829bf3f72ecb6e7cad97412a0",
+      "latest_observed_published_release": {
+        "tag": "v0.1",
+        "published_at": "2026-10-02T11:01:17Z",
+        "url": "https://github.com/Parveen117/extra-ideas/releases/tag/v0.1",
+        "immutable": false,
+        "tag_object": {
+          "sha": "452fbe05797d642bd3c72fefb631c1ad61db78a9",
+          "type": "commit",
+          "url": "https://api.github.com/repos/Parveen117/extra-ideas/git/commits/452fbe05797d642bd3c72fefb631c1ad61db78a9"
+        }
+      },
+      "zenodo_archive": {
+        "repository": "Parveen117/extra-ideas",
+        "record_id": 23101219,
+        "doi": "10.5281/zenodo.23101219",
+        "concept_doi": "10.5281/zenodo.23095638",
+        "version": "v0.1",
+        "record_created_at": "2026-10-02T11:01:21.939138+00:00",
+        "record_modified_at": "2026-10-02T11:01:22.073572+00:00",
+        "metadata_license": {
+          "id": "cc-by-4.0"
+        },
+        "record_url": "https://zenodo.org/records/23101219",
+        "metadata_url": "https://zenodo.org/api/records/23101219",
+        "archive_files": [
+          {
+            "filename": "Parveen117/extra-ideas-v0.1.zip",
+            "size_bytes": 2882741,
+            "download_url": "https://zenodo.org/api/records/23101219/files/Parveen117/extra-ideas-v0.1.zip/content",
+            "zenodo_checksum": "md5:2f5ca954885358a11047c676b3f1322f",
+            "sha256": "b1908a62e9c4ef4833a1bf5903e64c6a543d2f357fb0ffe3345ebba9be4e63f8",
+            "git_blob_comparison": {
+              "matched": true,
+              "files_checked": 351,
+              "missing": [],
+              "extra": [],
+              "changed": []
+            }
+          }
+        ],
+        "verification_time": "2026-10-26T14:21:06.520249+00:00",
+        "release_commit": "452fbe05797d642bd3c72fefb631c1ad61db78a9",
+        "status": "verified"
+      }
+    }
+  ]
+}

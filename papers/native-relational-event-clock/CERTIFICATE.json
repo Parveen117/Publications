@@ -1,0 +1,2943 @@
+{
+  "protocol": "REC1_RELATIONAL_EVENT_CLOCK_V1",
+  "status": "PASS_NATIVE_RELATIONAL_EVENT_CLOCK",
+  "scope": "Selected homogeneous classical LNC reduction; finite exact checks and symbolic denominator-cleared identities. No full local quantum gravity claim.",
+  "source_pins_sha256": "b3b39ef20f5f47ad9076b7cde2b46a974bf16b5ccb8aa4212bc1a25f3c181830",
+  "presentations": [
+    {
+      "name": "homogeneous_clock",
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "l",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "p",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "k",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "v",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "dv",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "commute_1_0",
+            "lhs": [
+              "p",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "p"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          },
+          {
+            "id": "commute_2_0",
+            "lhs": [
+              "k",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "k"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          },
+          {
+            "id": "commute_2_1",
+            "lhs": [
+              "k",
+              "p"
+            ],
+            "rhs": [
+              [
+                [
+                  "p",
+                  "k"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          },
+          {
+            "id": "commute_3_0",
+            "lhs": [
+              "v",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          },
+          {
+            "id": "commute_3_1",
+            "lhs": [
+              "v",
+              "p"
+            ],
+            "rhs": [
+              [
+                [
+                  "p",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          },
+          {
+            "id": "commute_3_2",
+            "lhs": [
+              "v",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "v"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          },
+          {
+            "id": "commute_4_0",
+            "lhs": [
+              "dv",
+              "l"
+            ],
+            "rhs": [
+              [
+                [
+                  "l",
+                  "dv"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          },
+          {
+            "id": "commute_4_1",
+            "lhs": [
+              "dv",
+              "p"
+            ],
+            "rhs": [
+              [
+                [
+                  "p",
+                  "dv"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          },
+          {
+            "id": "commute_4_2",
+            "lhs": [
+              "dv",
+              "k"
+            ],
+            "rhs": [
+              [
+                [
+                  "k",
+                  "dv"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          },
+          {
+            "id": "commute_4_3",
+            "lhs": [
+              "dv",
+              "v"
+            ],
+            "rhs": [
+              [
+                [
+                  "v",
+                  "dv"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "Commuting scalar symbols in the classical homogeneous canonical sector"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 10,
+        "resolutions": [
+          {
+            "word": [
+              "k",
+              "p",
+              "l"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              2,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "l",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "l",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "l",
+                    "k",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_1",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "p",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "k",
+                      "l"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "k",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_0",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "p",
+                    "l",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_1_0",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "p",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "v",
+              "p",
+              "l"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              4,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "l",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "v",
+                    "l",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "l",
+                    "v",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_1",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "p",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "v",
+                      "l"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "v",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_0",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "p",
+                    "l",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_1_0",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "p",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "dv",
+              "p",
+              "l"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              7,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "dv",
+                      "l",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "dv",
+                    "l",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "l",
+                    "dv",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_1",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "p",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "dv",
+                      "l"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "p",
+                    "dv",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_0",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "p",
+                    "l",
+                    "dv"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_1_0",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "p",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "v",
+              "k",
+              "l"
+            ],
+            "first": [
+              1,
+              1
+            ],
+            "second": [
+              5,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "l",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "v",
+                    "l",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "l",
+                    "v",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_2",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "k",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "v",
+                      "l"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "v",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_0",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "k",
+                    "l",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_0",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "k",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "dv",
+              "k",
+              "l"
+            ],
+            "first": [
+              1,
+              1
+            ],
+            "second": [
+              8,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "dv",
+                      "l",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "dv",
+                    "l",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "l",
+                    "dv",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_2",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "k",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "dv",
+                      "l"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "dv",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_0",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "k",
+                    "l",
+                    "dv"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_0",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "k",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "v",
+              "k",
+              "p"
+            ],
+            "first": [
+              2,
+              1
+            ],
+            "second": [
+              5,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "p",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "v",
+                    "p",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_1",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "p",
+                    "v",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_2",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "k",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "v",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "v",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_1",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "k",
+                    "p",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_1",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "k",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "dv",
+              "k",
+              "p"
+            ],
+            "first": [
+              2,
+              1
+            ],
+            "second": [
+              8,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "dv",
+                      "p",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "dv",
+                    "p",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_1",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "p",
+                    "dv",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_2",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "k",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "dv",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "k",
+                    "dv",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_1",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "k",
+                    "p",
+                    "dv"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_2_1",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "k",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "dv",
+              "v",
+              "l"
+            ],
+            "first": [
+              3,
+              1
+            ],
+            "second": [
+              9,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "dv",
+                      "l",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "dv",
+                    "l",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_0",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "l",
+                    "dv",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_3",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "v",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "dv",
+                      "l"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "v",
+                    "dv",
+                    "l"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_0",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "v",
+                    "l",
+                    "dv"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_0",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "l",
+                      "v",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "dv",
+              "v",
+              "p"
+            ],
+            "first": [
+              4,
+              1
+            ],
+            "second": [
+              9,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "dv",
+                      "p",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "dv",
+                    "p",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_1",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "p",
+                    "dv",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_3",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "v",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "dv",
+                      "p"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "v",
+                    "dv",
+                    "p"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_1",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "v",
+                    "p",
+                    "dv"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_1",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "p",
+                      "v",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "dv",
+              "v",
+              "k"
+            ],
+            "first": [
+              5,
+              1
+            ],
+            "second": [
+              9,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "dv",
+                      "k",
+                      "v"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "dv",
+                    "k",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_2",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "k",
+                    "dv",
+                    "v"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_3",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "v",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "v",
+                      "dv",
+                      "k"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "v",
+                    "dv",
+                    "k"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_4_2",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "v",
+                    "k",
+                    "dv"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "commute_3_2",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "k",
+                      "v",
+                      "dv"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "words:K_weak_factor",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "l",
+              "v"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "l",
+              "p",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "l",
+              "k"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "l",
+              "v"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "l",
+              "p",
+              "k"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l",
+                "p",
+                "k"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "l",
+                "k"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "l",
+              "k"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:M_weak_factor",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "p",
+              "l",
+              "v"
+            ],
+            [
+              "-4",
+              "0"
+            ]
+          ],
+          [
+            [
+              "l",
+              "p",
+              "p",
+              "k"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "l",
+              "v",
+              "l",
+              "p"
+            ],
+            [
+              "2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "p",
+              "l",
+              "l",
+              "v"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "l",
+              "p",
+              "k"
+            ],
+            [
+              "-2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l",
+                "p",
+                "l",
+                "v"
+              ],
+              [
+                "-4",
+                "0"
+              ]
+            ],
+            [
+              [
+                "l",
+                "p",
+                "p",
+                "k"
+              ],
+              [
+                "-2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "l",
+                "v",
+                "l",
+                "p"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "l",
+                "l",
+                "v"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "l",
+                "p",
+                "k"
+              ],
+              [
+                "2",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "l",
+              "p",
+              "k"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "p",
+              "l",
+              "l",
+              "v"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "l",
+              "v",
+              "l",
+              "p"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "commute_3_0",
+            "position": 1
+          },
+          {
+            "word": [
+              "l",
+              "p",
+              "l",
+              "v"
+            ],
+            "coefficient": [
+              "-2",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 1
+          },
+          {
+            "word": [
+              "l",
+              "l",
+              "v",
+              "p"
+            ],
+            "coefficient": [
+              "2",
+              "0"
+            ],
+            "rule": "commute_3_1",
+            "position": 2
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:ratio_conservation",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "v",
+              "p"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "p",
+              "l",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": []
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l",
+                "v",
+                "p"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "p",
+                "l",
+                "v"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "p",
+              "l",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_1_0",
+            "position": 0
+          },
+          {
+            "word": [
+              "l",
+              "v",
+              "p"
+            ],
+            "coefficient": [
+              "1",
+              "0"
+            ],
+            "rule": "commute_3_1",
+            "position": 1
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "words:remaining_momentum_equation",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "v",
+              "v"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "v",
+              "l",
+              "v"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "l",
+              "dv",
+              "p",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "l",
+              "dv",
+              "p",
+              "p"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "ab2e10c97280961237b98c4219ebf12f70e78ec32597192eb9a721530c9b32c4",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "l",
+                "v",
+                "v"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "v",
+                "l",
+                "v"
+              ],
+              [
+                "-1",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "v",
+              "l",
+              "v"
+            ],
+            "coefficient": [
+              "-1",
+              "0"
+            ],
+            "rule": "commute_3_0",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "constraint:on_surface:0",
+      "passed": true
+    },
+    {
+      "name": "clock:regular:0",
+      "passed": true
+    },
+    {
+      "name": "observable:K_weak:0",
+      "passed": true
+    },
+    {
+      "name": "observable:M_weak:0",
+      "passed": true
+    },
+    {
+      "name": "observable:canonical_K_M:0",
+      "passed": true
+    },
+    {
+      "name": "invariant:ratio_derivative:0",
+      "passed": true
+    },
+    {
+      "name": "invariant:mass_derivative:0",
+      "passed": true
+    },
+    {
+      "name": "constraint:remaining_momentum_equation:0",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_L:0:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_pi:0:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_k:0:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_L:0:2/3",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_pi:0:2/3",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_k:0:2/3",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_L:0:-5/2",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_pi:0:-5/2",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_k:0:-5/2",
+      "passed": true
+    },
+    {
+      "name": "observable:off_surface_K_factor:0",
+      "passed": true
+    },
+    {
+      "name": "observable:off_surface_M_factor:0",
+      "passed": true
+    },
+    {
+      "name": "constraint:on_surface:1",
+      "passed": true
+    },
+    {
+      "name": "clock:regular:1",
+      "passed": true
+    },
+    {
+      "name": "observable:K_weak:1",
+      "passed": true
+    },
+    {
+      "name": "observable:M_weak:1",
+      "passed": true
+    },
+    {
+      "name": "observable:canonical_K_M:1",
+      "passed": true
+    },
+    {
+      "name": "invariant:ratio_derivative:1",
+      "passed": true
+    },
+    {
+      "name": "invariant:mass_derivative:1",
+      "passed": true
+    },
+    {
+      "name": "constraint:remaining_momentum_equation:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_L:1:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_pi:1:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_k:1:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_L:1:2/3",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_pi:1:2/3",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_k:1:2/3",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_L:1:-5/2",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_pi:1:-5/2",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_k:1:-5/2",
+      "passed": true
+    },
+    {
+      "name": "observable:off_surface_K_factor:1",
+      "passed": true
+    },
+    {
+      "name": "observable:off_surface_M_factor:1",
+      "passed": true
+    },
+    {
+      "name": "constraint:on_surface:2",
+      "passed": true
+    },
+    {
+      "name": "clock:regular:2",
+      "passed": true
+    },
+    {
+      "name": "observable:K_weak:2",
+      "passed": true
+    },
+    {
+      "name": "observable:M_weak:2",
+      "passed": true
+    },
+    {
+      "name": "observable:canonical_K_M:2",
+      "passed": true
+    },
+    {
+      "name": "invariant:ratio_derivative:2",
+      "passed": true
+    },
+    {
+      "name": "invariant:mass_derivative:2",
+      "passed": true
+    },
+    {
+      "name": "constraint:remaining_momentum_equation:2",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_L:2:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_pi:2:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_k:2:1",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_L:2:2/3",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_pi:2:2/3",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_k:2:2/3",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_L:2:-5/2",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_pi:2:-5/2",
+      "passed": true
+    },
+    {
+      "name": "clock:lapse_cancels_k:2:-5/2",
+      "passed": true
+    },
+    {
+      "name": "observable:off_surface_K_factor:2",
+      "passed": true
+    },
+    {
+      "name": "observable:off_surface_M_factor:2",
+      "passed": true
+    },
+    {
+      "name": "inverse:polynomial_potential:A",
+      "passed": true
+    },
+    {
+      "name": "inverse:primitive:A",
+      "passed": true
+    },
+    {
+      "name": "observable:M_on_curve:A:0",
+      "passed": true
+    },
+    {
+      "name": "observable:M_on_curve:A:2",
+      "passed": true
+    },
+    {
+      "name": "observable:M_on_curve:A:4",
+      "passed": true
+    },
+    {
+      "name": "events:initial_pi_squared:A",
+      "passed": true
+    },
+    {
+      "name": "events:final_pi_squared:A",
+      "passed": true
+    },
+    {
+      "name": "inverse:endpoint_integral:A",
+      "passed": true
+    },
+    {
+      "name": "inverse:polynomial_potential:B",
+      "passed": true
+    },
+    {
+      "name": "inverse:primitive:B",
+      "passed": true
+    },
+    {
+      "name": "observable:M_on_curve:B:0",
+      "passed": true
+    },
+    {
+      "name": "observable:M_on_curve:B:2",
+      "passed": true
+    },
+    {
+      "name": "observable:M_on_curve:B:4",
+      "passed": true
+    },
+    {
+      "name": "events:initial_pi_squared:B",
+      "passed": true
+    },
+    {
+      "name": "events:final_pi_squared:B",
+      "passed": true
+    },
+    {
+      "name": "inverse:endpoint_integral:B",
+      "passed": true
+    },
+    {
+      "name": "event:exact_square_branch",
+      "passed": true
+    },
+    {
+      "name": "event:normalized_diagonal",
+      "passed": true
+    },
+    {
+      "name": "event:normalized_invariant",
+      "passed": true
+    },
+    {
+      "name": "event:complete_observable_canonical",
+      "passed": true
+    },
+    {
+      "name": "event:complete_Pi_weak",
+      "passed": true
+    },
+    {
+      "name": "event:complete_L_weak",
+      "passed": true
+    },
+    {
+      "name": "baseline:zero_potential_L_static",
+      "passed": true
+    },
+    {
+      "name": "baseline:zero_potential_pi_static",
+      "passed": true
+    },
+    {
+      "name": "baseline:zero_potential_clock_runs",
+      "passed": true
+    },
+    {
+      "name": "clock:zero_momentum_can_satisfy_constraint",
+      "passed": true
+    },
+    {
+      "name": "closure:matrix_basis_dimension",
+      "passed": true
+    },
+    {
+      "name": "closure:X_Z_generate_full_algebra",
+      "passed": true
+    },
+    {
+      "name": "closure:product:0:0",
+      "passed": true
+    },
+    {
+      "name": "closure:product:0:1",
+      "passed": true
+    },
+    {
+      "name": "closure:product:0:2",
+      "passed": true
+    },
+    {
+      "name": "closure:product:0:3",
+      "passed": true
+    },
+    {
+      "name": "closure:product:1:0",
+      "passed": true
+    },
+    {
+      "name": "closure:product:1:1",
+      "passed": true
+    },
+    {
+      "name": "closure:product:1:2",
+      "passed": true
+    },
+    {
+      "name": "closure:product:1:3",
+      "passed": true
+    },
+    {
+      "name": "closure:product:2:0",
+      "passed": true
+    },
+    {
+      "name": "closure:product:2:1",
+      "passed": true
+    },
+    {
+      "name": "closure:product:2:2",
+      "passed": true
+    },
+    {
+      "name": "closure:product:2:3",
+      "passed": true
+    },
+    {
+      "name": "closure:product:3:0",
+      "passed": true
+    },
+    {
+      "name": "closure:product:3:1",
+      "passed": true
+    },
+    {
+      "name": "closure:product:3:2",
+      "passed": true
+    },
+    {
+      "name": "closure:product:3:3",
+      "passed": true
+    },
+    {
+      "name": "closure:rho_Y_projector",
+      "passed": true
+    },
+    {
+      "name": "uncertainty:var_X",
+      "passed": true
+    },
+    {
+      "name": "uncertainty:var_Z",
+      "passed": true
+    },
+    {
+      "name": "uncertainty:nonzero_commutator_bound",
+      "passed": true
+    },
+    {
+      "name": "uncertainty:Z_eigenstate_zero_variance",
+      "passed": true
+    },
+    {
+      "name": "homogeneous_clock:confluence",
+      "passed": true
+    },
+    {
+      "name": "words:K_weak_factor",
+      "passed": true
+    },
+    {
+      "name": "words:K_weak_factor:replay",
+      "passed": true
+    },
+    {
+      "name": "words:M_weak_factor",
+      "passed": true
+    },
+    {
+      "name": "words:M_weak_factor:replay",
+      "passed": true
+    },
+    {
+      "name": "words:ratio_conservation",
+      "passed": true
+    },
+    {
+      "name": "words:ratio_conservation:replay",
+      "passed": true
+    },
+    {
+      "name": "words:remaining_momentum_equation",
+      "passed": true
+    },
+    {
+      "name": "words:remaining_momentum_equation:replay",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "observable:K_strongly_commutes:0",
+      "rejected": true
+    },
+    {
+      "name": "observable:K_strongly_commutes:1",
+      "rejected": true
+    },
+    {
+      "name": "observable:K_strongly_commutes:2",
+      "rejected": true
+    },
+    {
+      "name": "inverse:endpoints_select_interior",
+      "rejected": true
+    },
+    {
+      "name": "inverse:endpoints_select_initial_k",
+      "rejected": true
+    },
+    {
+      "name": "calibration:independent_axis_scales_preserve_slope_one",
+      "rejected": true
+    },
+    {
+      "name": "rate:diagonal_implies_constant_rate",
+      "rejected": true
+    },
+    {
+      "name": "clock:zero_momentum_division",
+      "rejected": true
+    },
+    {
+      "name": "clock:constraint_implies_clock_regular",
+      "rejected": true
+    },
+    {
+      "name": "topology:fixed_length_allows_nonzero_V",
+      "rejected": true
+    },
+    {
+      "name": "closure:noncommutativity_forbids_closure",
+      "rejected": true
+    },
+    {
+      "name": "closure:closure_forces_nonzero_variance",
+      "rejected": true
+    },
+    {
+      "name": "integrity:corrupted_native_proof",
+      "rejected": true
+    }
+  ],
+  "results": {
+    "constrained_jets": [
+      {
+        "L": "6",
+        "p": "3",
+        "V": "1",
+        "Vprime": "0",
+        "k": "-2",
+        "C": "0",
+        "L_tau": "-2/3",
+        "pi_tau": "-1/3",
+        "k_tau": "0"
+      },
+      {
+        "L": "2",
+        "p": "-2",
+        "V": "3/5",
+        "Vprime": "2/7",
+        "k": "3/5",
+        "C": "0",
+        "L_tau": "-3/10",
+        "pi_tau": "3/10",
+        "k_tau": "2/7"
+      },
+      {
+        "L": "5/3",
+        "p": "4/5",
+        "V": "-2/3",
+        "Vprime": "1/2",
+        "k": "25/18",
+        "C": "0",
+        "L_tau": "125/72",
+        "pi_tau": "5/6",
+        "k_tau": "-25/24"
+      }
+    ],
+    "event_models": [
+      {
+        "name": "A",
+        "V": [
+          "1"
+        ],
+        "W": [
+          "0",
+          "1"
+        ],
+        "pi_squared": [
+          "9",
+          "-2"
+        ],
+        "initial": {
+          "phi": "0",
+          "L": "6",
+          "pi": "3"
+        },
+        "final": {
+          "phi": "4",
+          "L": "2",
+          "pi": "1"
+        },
+        "interior": {
+          "phi": "2",
+          "pi_squared": "5",
+          "L_squared": "20"
+        }
+      },
+      {
+        "name": "B",
+        "V": [
+          "0",
+          "1/2"
+        ],
+        "W": [
+          "0",
+          "0",
+          "1/4"
+        ],
+        "pi_squared": [
+          "9",
+          "0",
+          "-1/2"
+        ],
+        "initial": {
+          "phi": "0",
+          "L": "6",
+          "pi": "3"
+        },
+        "final": {
+          "phi": "4",
+          "L": "2",
+          "pi": "1"
+        },
+        "interior": {
+          "phi": "2",
+          "pi_squared": "7",
+          "L_squared": "28"
+        }
+      }
+    ],
+    "scope": {
+      "classical": true,
+      "homogeneous": true,
+      "matter": "zero",
+      "clock": "phi",
+      "domain": "L>0; pi nonzero; fixed sign branch; radicand>0",
+      "global_single_angle_lift_assumed": false,
+      "full_local_quantization": false,
+      "continuum_proofs": "THEOREM.md"
+    }
+  },
+  "summary": {
+    "exact_checks": 115,
+    "negative_controls": 13,
+    "native_presentations": 1,
+    "symbolic_certificates": 4,
+    "serialized_replays": 4
+  }
+}

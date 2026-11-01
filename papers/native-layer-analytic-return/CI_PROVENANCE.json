@@ -1,0 +1,925 @@
+{
+  "protocol": "LAR1_GITHUB_GENERATION_V1",
+  "repository": "Parveen117/Publications",
+  "run_id": "38997057551",
+  "run_attempt": "1",
+  "source_head_sha": "724c8a6a58a4a6955a53dbc4999f1630f0a64e27",
+  "checkout_commit": "5de0f10237e4ec6225f9cf258471a7f46a191749",
+  "source_tree": "1d24f4d40640c951823efcf287487c01f362109b",
+  "outputs": {
+    "CERTIFICATE.json": "8a2550206c26f2dc78d9cdc5b742fda5e39e9baf42f6a63465f5ec5273d4bedf",
+    "EXPECTED.sha256": "ce130e291d56b94e6529cf8e76db8c877787c49765df82702dac6173ded48dce"
+  },
+  "source_pins_sha256": "9344aba370343a9aaf82df76a53d926aec763c4f69a7856884b2aa29505cdaf4",
+  "reports": [
+    {
+      "stage": "native-jacobian-cut-certification",
+      "mode": "read-only replay",
+      "status": "PASS_CERTIFIED_CORE_WITH_RECORDED_REJECTIONS",
+      "native_presentations": 8,
+      "symbolic_certificates": 151,
+      "serialized_replays": 151,
+      "exact_checks": 349,
+      "negative_controls": 25,
+      "sha256": "8b1d29d0eb0856d4eb2b3f1bd4553a5164d4e60814a027ab4c48ac532c2f0811",
+      "gravity": {
+        "curvature": [
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ],
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        ],
+        "normal_curvature_energy": "2",
+        "free_normal_connection": true
+      }
+    },
+    {
+      "stage": "native-angular-calibration",
+      "mode": "read-only replay",
+      "status": "PASS_FINITE_ANGLE_TRANSPORT_AND_CURVATURE_CALIBRATION",
+      "native_presentations": 3,
+      "symbolic_certificates": 15,
+      "serialized_replays": 15,
+      "exact_checks": 117,
+      "negative_controls": 10,
+      "sha256": "a81c1e0a564e61214b61e8637f3dfd45bb8e74c5f5b5891877c2c252115a2794",
+      "perpendicular_defect": "144/625",
+      "tilted_defect": "2304/15625",
+      "doubled_defect": "32/25"
+    },
+    {
+      "stage": "native-exponential-gravity-response",
+      "mode": "read-only replay",
+      "status": "PASS_LINEARIZED_GEOMETRY_AND_SELECTED_CUT_FLOW",
+      "native_presentations": 4,
+      "symbolic_certificates": 22,
+      "serialized_replays": 22,
+      "exact_checks": 434,
+      "negative_controls": 9,
+      "sha256": "59f857b682d14611d08c26f163730a0973ed8a599cd76db8a57e27e63a129184",
+      "geometry": {
+        "cells": 9,
+        "interior_edges": 10,
+        "gauge_rank": 8,
+        "curvature_rank": 2,
+        "K": [
+          [
+            [
+              "10",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0"
+            ],
+            [
+              "47",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "response": "y=(alpha*N/gamma)*diag(1/10,1/47)*r(P)",
+      "exponential_rate": "m(lambda)=m(0)*exp(-(37/235)*(alpha^2*N^2/gamma)*lambda), m=r_2/r_1, r_1 nonzero"
+    },
+    {
+      "stage": "native-nonlinear-gravity-continuation",
+      "mode": "read-only replay",
+      "status": "PASS_EXACT_NONLINEAR_JET_AND_LOCAL_BRANCH_HYPOTHESES",
+      "native_presentations": 3,
+      "symbolic_certificates": 9,
+      "serialized_replays": 9,
+      "exact_checks": 317,
+      "negative_controls": 12,
+      "sha256": "00b7f69b8dcbd5999a0abeda36a45285b05ac04641bce2bfdc36fc1b928b9e19",
+      "branches": [
+        {
+          "readout": [
+            [
+              [
+                "3/5",
+                "0"
+              ]
+            ],
+            [
+              [
+                "4/5",
+                "0"
+              ]
+            ]
+          ],
+          "IFT_jacobian_determinant": "2494955520",
+          "inertia": {
+            "positive": 2,
+            "negative": 8,
+            "zero": 0
+          },
+          "volume_log_derivatives": [
+            "163103/848256",
+            "163103/848256",
+            "163103/848256",
+            "163103/848256",
+            "4410869/1060320",
+            "912209/1060320",
+            "912209/1060320",
+            "912209/1060320",
+            "912209/1060320"
+          ]
+        },
+        {
+          "readout": [
+            [
+              [
+                "-3/5",
+                "0"
+              ]
+            ],
+            [
+              [
+                "-4/5",
+                "0"
+              ]
+            ]
+          ],
+          "IFT_jacobian_determinant": "2494955520",
+          "inertia": {
+            "positive": 10,
+            "negative": 0,
+            "zero": 0
+          },
+          "volume_log_derivatives": [
+            "-163103/848256",
+            "-163103/848256",
+            "-163103/848256",
+            "-163103/848256",
+            "-4410869/1060320",
+            "-912209/1060320",
+            "-912209/1060320",
+            "-912209/1060320",
+            "-912209/1060320"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "native-cut-record-completeness",
+      "mode": "read-only replay",
+      "status": "PASS_DECLARED_OPERATION_CLOSURE_AND_SOURCE_LAW_WITNESSES",
+      "native_presentations": 4,
+      "symbolic_certificates": 16,
+      "serialized_replays": 16,
+      "exact_checks": 175,
+      "negative_controls": 12,
+      "sha256": "40d4487297fc8843ead9e4989be63a8957c50d2b0c94bf6df4d5b17ce86a8651",
+      "closure_ranks": {
+        "real": [
+          2,
+          3
+        ],
+        "extra_transport": [
+          2,
+          4
+        ]
+      },
+      "gravity": [
+        {
+          "kappa": 0,
+          "inertia": {
+            "positive": 2,
+            "negative": 8,
+            "zero": 0
+          },
+          "volume_rates": [
+            "163103/848256",
+            "163103/848256",
+            "163103/848256",
+            "163103/848256",
+            "4410869/1060320",
+            "912209/1060320",
+            "912209/1060320",
+            "912209/1060320",
+            "912209/1060320"
+          ]
+        },
+        {
+          "kappa": 2,
+          "inertia": {
+            "positive": 10,
+            "negative": 0,
+            "zero": 0
+          },
+          "volume_rates": [
+            "1729253/4241280",
+            "1729253/4241280",
+            "1729253/4241280",
+            "1729253/4241280",
+            "-4410869/1060320",
+            "1975471/1060320",
+            "1975471/1060320",
+            "1975471/1060320",
+            "1975471/1060320"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "native-quantum-gravity-consistency",
+      "mode": "read-only replay",
+      "status": "PASS_FINITE_QUANTUM_CONSISTENCY_AND_CONDITIONAL_PREDICTIONS",
+      "native_presentations": 6,
+      "symbolic_certificates": 19,
+      "serialized_replays": 19,
+      "exact_checks": 199,
+      "negative_controls": 10,
+      "sha256": "141b485a82eebd655061fd96b21e6353f1a26f5b493af53f0c0a1fadaa6dd570",
+      "ensemble_velocity_difference": "1776/29375",
+      "success_probability": "109/125",
+      "added_noise_product": "1/220900",
+      "heldout_coefficients": [
+        "640/141",
+        "-1860931/621932529"
+      ]
+    },
+    {
+      "stage": "native-four-dimensional-hinge",
+      "mode": "read-only replay",
+      "status": "PASS_EXACT_GEOMETRY_AND_ALGEBRA_WITH_DECLARED_ACTION",
+      "native_presentations": 3,
+      "symbolic_certificates": 21,
+      "serialized_replays": 21,
+      "exact_checks": 476,
+      "negative_controls": 15,
+      "sha256": "fe6b6ed35bc55656add884f3be5deeba380ee5ef4a3e8fe1c9c015059107a986",
+      "interior_edge": {
+        "vacuum_x": "4",
+        "hessian": "-1/2"
+      },
+      "lift": {
+        "flat_total_angle": "2*pi",
+        "flat_deficit": "0",
+        "excess_total_angle": "4*pi",
+        "excess_deficit": "-2*pi",
+        "same_compact_holonomy": true,
+        "source_of_lift": "positive simplex angles and oriented incidence, with written branch proof"
+      }
+    },
+    {
+      "stage": "native-matter-geometry-holonomy",
+      "mode": "read-only replay",
+      "status": "PASS_GEOMETRIC_REALIZATION_AND_FINITE_QUANTUM_DEMO",
+      "native_presentations": 6,
+      "symbolic_certificates": 17,
+      "serialized_replays": 17,
+      "exact_checks": 473,
+      "negative_controls": 11,
+      "sha256": "63941f4a1f22c698387cd3a90fb46e75bbee073069a0543c1b9cfa6dab9c9291",
+      "geometric_phase": [
+        "-7/25",
+        "24/25"
+      ],
+      "hinge_defect": "32/25",
+      "linear_entropy": "8/25",
+      "curved_probability": "8/25",
+      "mean_curvature": "256/625",
+      "witness_expectation": "-2/5",
+      "noise_visibility_threshold": "5/13"
+    },
+    {
+      "stage": "native-common-cone-limit",
+      "mode": "check",
+      "passed": true,
+      "exact_checks": 69,
+      "negative_controls": 3,
+      "numerical_illustration": [
+        {
+          "epsilon": 0.2,
+          "omega_squared": 1.920543495515805,
+          "continuum_squared": 1.93,
+          "error": -0.009456504484194994,
+          "corrected_residual": -4.850448419491116e-05
+        },
+        {
+          "epsilon": 0.1,
+          "omega_squared": 1.9276449724185063,
+          "continuum_squared": 1.93,
+          "error": -0.0023550275814936406,
+          "corrected_residual": -3.0275814937308354e-06
+        },
+        {
+          "epsilon": 0.05,
+          "omega_squared": 1.929411810838934,
+          "continuum_squared": 1.93,
+          "error": -0.0005881891610659551,
+          "corrected_residual": -1.8916106592214987e-07
+        },
+        {
+          "epsilon": 0.025,
+          "omega_squared": 1.9298529881781974,
+          "continuum_squared": 1.93,
+          "error": -0.00014701182180254513,
+          "corrected_residual": -1.1821802647915547e-08
+        }
+      ]
+    },
+    {
+      "stage": "native-geometry-controlled-propagation",
+      "mode": "check",
+      "status": "PASS_NATIVE_ALGEBRA_AND_EXACT_QUANTUM_DEMO",
+      "exact_checks": 115,
+      "negative_controls": 9,
+      "native_presentations": 4,
+      "symbolic_certificates": 6,
+      "serialized_replays": 6,
+      "sha256": "35c73f854e9526aabd3394c5dbf1aca597c673e75d515fedd95dd29f29c8da88",
+      "linear_entropy": "73728/390625",
+      "geometry_population": "256/625"
+    },
+    {
+      "stage": "native-action-geometry-dynamics",
+      "mode": "check",
+      "status": "PASS_ACTION_DERIVATION_NATIVE_PROOFS_AND_FINITE_CONTROLS",
+      "exact_checks": 92,
+      "negative_controls": 8,
+      "native_presentations": 3,
+      "symbolic_certificates": 8,
+      "serialized_replays": 8,
+      "sha256": "22af0b5f980c2204d69c5c2d389a3322fbe3d4cbbc05ebb67ad045746327a64a",
+      "source_rate": "-3/10",
+      "parity_leak": "9/50",
+      "finite_section_error": "148035889/120000000000000"
+    },
+    {
+      "stage": "native-zero-reference-recovery",
+      "mode": "check",
+      "status": "PASS_NATIVE_CLOSURE_PACKET_MOMENTS_AND_RECOVERY_BUDGET",
+      "exact_checks": 169,
+      "negative_controls": 13,
+      "native_presentations": 3,
+      "symbolic_certificates": 11,
+      "serialized_replays": 11,
+      "sha256": "21cca901514dbddb7a8c562e036fd7f877ead2fef059f63401c0ee92e23a01f4",
+      "state_error_budget": "279/200000",
+      "observable_error_budget": "279/100000"
+    },
+    {
+      "stage": "native-invariant-ratio-transport",
+      "mode": "check",
+      "status": "PASS_NATIVE_INVARIANT_RATIOS_REFLECTION_AND_CALIBRATED_DIAGONAL",
+      "exact_checks": 103,
+      "negative_controls": 16,
+      "native_presentations": 2,
+      "symbolic_certificates": 9,
+      "serialized_replays": 9,
+      "sha256": "b4a322a676b3e0452c27e1b551d9aa280b9e7ea531e4576d7d56b875655dff34",
+      "AGD_ratio": "1/2",
+      "commutant_dimension": 2,
+      "attenuation_ratio": "4/5"
+    },
+    {
+      "stage": "native-cut-local-dynamics",
+      "mode": "check",
+      "status": "PASS_NATIVE_MOVING_CUT_CONNECTION_RETURN_AND_REFLECTION",
+      "exact_checks": 167,
+      "negative_controls": 14,
+      "native_presentations": 2,
+      "symbolic_certificates": 15,
+      "serialized_replays": 15,
+      "sha256": "414c0ad07fab8b47321f95d88b3e3f1796a19dab2d8bc722e94fecaf0e2f8e3e"
+    },
+    {
+      "stage": "native-relational-cut-space",
+      "mode": "check",
+      "status": "PASS_NATIVE_RELATIONAL_CUT_GEOMETRY_AND_TRANSPORT_RESIDUAL",
+      "exact_checks": 108,
+      "negative_controls": 10,
+      "native_presentations": 2,
+      "symbolic_certificates": 9,
+      "serialized_replays": 9,
+      "sha256": "05e89bae332fd4fe9c118c75f530147b32448e976fc8cfba73b3fbf22c868286",
+      "distance_blind_residual_squared": "3600/25621"
+    },
+    {
+      "stage": "native-local-coframe-covariance",
+      "mode": "check",
+      "status": "PASS_NATIVE_MIXED_LOCAL_REPAIR_WITH_NORMAL_OBLIGATION",
+      "exact_checks": 95,
+      "negative_controls": 17,
+      "native_presentations": 2,
+      "symbolic_certificates": 8,
+      "serialized_replays": 8,
+      "sha256": "e3918d3f907a0c1f42f927db22a78cc84782786ea2b09d98f570aa6bab671a79"
+    },
+    {
+      "stage": "native-local-normal-closure",
+      "mode": "check",
+      "status": "PASS_NATIVE_CLASSICAL_LOCAL_CONSTRAINT_ALGEBRA",
+      "exact_checks": 66,
+      "negative_controls": 14,
+      "native_presentations": 2,
+      "symbolic_certificates": 4,
+      "serialized_replays": 4,
+      "sha256": "1914afe118fec05d9c1810481011e03b4bd2f3e520d28ea4a9cb45012d69867a"
+    },
+    {
+      "stage": "native-relational-event-clock",
+      "mode": "check",
+      "status": "PASS_NATIVE_RELATIONAL_EVENT_CLOCK",
+      "exact_checks": 115,
+      "negative_controls": 13,
+      "native_presentations": 1,
+      "symbolic_certificates": 4,
+      "serialized_replays": 4,
+      "sha256": "b23d716674e3096b4646307b4fc8b4bd6f1ea12f9fca2d43195085520ebc8d54"
+    },
+    {
+      "stage": "native-singular-response-transport",
+      "mode": "check",
+      "status": "PASS_NATIVE_GRADED_SINGULAR_RESPONSE_TRANSPORT",
+      "exact_checks": 143,
+      "negative_controls": 21,
+      "native_presentations": 1,
+      "symbolic_certificates": 5,
+      "serialized_replays": 5,
+      "sha256": "74d89e759d74854d2c63276737ecdff1291f55dbc89527347410a674ba950a11"
+    },
+    {
+      "stage": "native-moving-zero-covariance",
+      "mode": "check",
+      "status": "PASS_NATIVE_MOVING_ZERO_COVARIANCE",
+      "exact_checks": 194,
+      "negative_controls": 22,
+      "native_presentations": 2,
+      "symbolic_certificates": 3,
+      "serialized_replays": 3,
+      "sha256": "907d41bb7db85bc6d103885ebc18cb299719dc3a1d74ad22dd0e0057d5f15bc1"
+    },
+    {
+      "stage": "native-heat-observer-memory",
+      "mode": "check",
+      "status": "PASS_SOURCE_HEAT_OBSERVER_MEMORY",
+      "exact_checks": 265,
+      "negative_controls": 28,
+      "native_presentations": 3,
+      "symbolic_certificates": 3,
+      "serialized_replays": 3,
+      "sha256": "5a958373946885d5546aeb07dc1005fedcfc0a4c8679fd057200ac4640e6db4a"
+    },
+    {
+      "stage": "native-cut-generated-history",
+      "mode": "check",
+      "status": "PASS_CUT_GENERATED_HISTORY",
+      "exact_checks": 594,
+      "negative_controls": 89,
+      "native_presentations": 4,
+      "symbolic_certificates": 12,
+      "serialized_replays": 12,
+      "sha256": "91cdbd7de3c0b640f7dcd9b3f6022ef509e58cc72675c8d05298ab532c069c4b"
+    },
+    {
+      "stage": "native-gravity-signalling-audit",
+      "mode": "check",
+      "status": "PASS_CONDITIONAL_SIGNALLING_AUDIT_NOT_PHYSICAL_FTL",
+      "exact_checks": 150,
+      "negative_controls": 7,
+      "native_presentations": 2,
+      "symbolic_certificates": 3,
+      "serialized_replays": 3,
+      "sha256": "440775824fafcbcadff1c9b90829fdd4da909c7751145897d81abfd2adf75ec5"
+    },
+    {
+      "stage": "native-homogeneous-quantum-sector",
+      "mode": "check",
+      "status": "PASS_SELECTED_REGULAR_HOMOGENEOUS_QUANTUM_SECTOR",
+      "exact_checks": 147,
+      "symbolic_certificates": 10,
+      "serialized_replays": 10,
+      "negative_controls": 14,
+      "native_presentations": 1,
+      "sha256": "997e56fb4629f0eb0a915b9c4a17a3381b527ef0986e21d84ab828856d7834f7"
+    },
+    {
+      "stage": "native-local-quantum-anomaly",
+      "mode": "check",
+      "status": "PASS_COMPARATIVE_LOCAL_QUANTIZATION_AUDIT",
+      "exact_checks": 407,
+      "symbolic_certificates": 9,
+      "serialized_replays": 9,
+      "negative_controls": 25,
+      "native_presentations": 2,
+      "sha256": "a84b3ff4d857a2ec42dd3d2549dc537f2a620a3d3593564ef1934812553928b7"
+    },
+    {
+      "stage": "native-local-physical-sector",
+      "mode": "check",
+      "status": "PASS_SELECTED_REGULAR_LOCAL_PHYSICAL_SECTOR",
+      "exact_checks": 597,
+      "symbolic_certificates": 4,
+      "negative_controls": 36,
+      "sha256": "445b0c315918a48721e3b1830dadea83f6762a07ba44e7b8430b9ab7b2bc5b1e"
+    },
+    {
+      "stage": "native-local-sector-classification",
+      "mode": "check",
+      "status": "PASS_TEST_DUAL_CLASSIFICATION_AND_CONDITIONAL_MEASURE_UNIQUENESS",
+      "exact_checks": 753,
+      "symbolic_certificates": 5,
+      "negative_controls": 26,
+      "sha256": "0588b505e6763d049ebf302178ae07ee509490e9057508c0c8bd4680cd0d7508"
+    },
+    {
+      "stage": "native-complementary-clock-sector",
+      "mode": "check",
+      "status": "PASS_COMPLEMENTARY_CLOCK_AND_PUNCTURED_TWO_AXIS_COMPLETION",
+      "exact_checks": 688,
+      "symbolic_certificates": 5,
+      "negative_controls": 20,
+      "sha256": "8fdc07b0ed1a1de135768c3e3f4abadb200bf0095714100ec91e374cdf9c492a"
+    },
+    {
+      "stage": "native-critical-origin-sector",
+      "mode": "check",
+      "status": "PASS_CRITICAL_QUOTIENT_AND_TWO_SCALE_AVERAGING",
+      "exact_checks": 275,
+      "symbolic_certificates": 3,
+      "negative_controls": 27,
+      "sha256": "0c8fcc7fb04743f4e2fc88b2a4ccd536a2d00a784aaf22f9cce113057e4ceeb6"
+    },
+    {
+      "stage": "native-global-observable-algebra",
+      "mode": "check",
+      "status": "PASS_SMOOTH_OBSERVABLE_ALGEBRA_AND_ORIENTATION_MIXING",
+      "exact_checks": 192,
+      "symbolic_certificates": 3,
+      "negative_controls": 14,
+      "sha256": "8180eb34b7956882e41249e451415dea5fc143f2bd0c8c6a10a2545e9f7e54e2"
+    },
+    {
+      "stage": "native-relational-pointer-measurement",
+      "mode": "check",
+      "status": "PASS_IDEAL_RELATIONAL_POINTER_EXTENSION",
+      "exact_checks": 84,
+      "symbolic_certificates": 5,
+      "negative_controls": 11,
+      "sha256": "c79e6894fb585561b52c225591cbdd4c63d3eed9a59cccb7363262b21b235ad1"
+    },
+    {
+      "stage": "native-regular-apparatus-lift",
+      "mode": "check",
+      "status": "PASS_REGULAR_CLASSICAL_LIFT_AND_FIXED_WINDOW_OBSTRUCTION",
+      "exact_checks": 105,
+      "symbolic_certificates": 4,
+      "negative_controls": 11,
+      "sha256": "43524afcd1781d719451173867065c96ad37729ffda795a019bdcce4f9c0341e"
+    },
+    {
+      "stage": "native-material-reference-field",
+      "mode": "check",
+      "status": "PASS_CLASSICAL_MATERIAL_REFERENCE_AND_PROFILE_REDUCTION",
+      "exact_checks": 96,
+      "symbolic_certificates": 4,
+      "negative_controls": 21,
+      "sha256": "ab9a8825ee065114014fe8b08cc412db7b8ec7ec3a29b577dc2ea9bdac7493a8"
+    },
+    {
+      "stage": "native-material-profile-quantization",
+      "mode": "check",
+      "status": "PASS_SELECTED_REDUCED_CONTINUUM_QUANTIZATION",
+      "exact_checks": 283,
+      "symbolic_certificates": 9,
+      "negative_controls": 21,
+      "sha256": "37409ca775803390b54b268ab5e247621d7d55ee5ffe0dd2428d702d400e2648"
+    },
+    {
+      "stage": "native-inverse-gauge-quantization",
+      "mode": "check",
+      "status": "PASS_INVERSE_GAUGE_UNITARIES_WITH_RECORDED_RIGGING_BOUNDARY",
+      "exact_checks": 147,
+      "symbolic_certificates": 5,
+      "negative_controls": 24,
+      "sha256": "50f0fcfffc615842a7ac0f8abe7f4a47905c47fe8664e3eab08873129752ac0c"
+    },
+    {
+      "stage": "native-central-gauge-domain",
+      "mode": "check",
+      "status": "PASS_CENTRAL_REDUCTION_AND_COMMON_CORE_WITH_RIGGING_OBSTRUCTION",
+      "exact_checks": 73,
+      "symbolic_certificates": 6,
+      "negative_controls": 10,
+      "sha256": "9704439d7b5063ccbf99900c5a894a3bd0074d4d6deb11e2da51fc8742d65094"
+    },
+    {
+      "stage": "native-residual-gauge-rigging",
+      "mode": "check",
+      "status": "PASS_SELECTED_POSITIVE_FULL_GAUGE_RIGGING",
+      "exact_checks": 182,
+      "symbolic_certificates": 5,
+      "negative_controls": 13,
+      "sha256": "febb970dfe3fa2be6c6d1ab5ee4a6fbb87390ab62791903dbf73cbdc8d126d5d"
+    },
+    {
+      "stage": "native-resolved-material-geometry",
+      "mode": "check",
+      "status": "PASS_RESOLVED_GEOMETRY_AND_SCOPED_OBSTRUCTION",
+      "exact_checks": 261,
+      "symbolic_certificates": 6,
+      "negative_controls": 16,
+      "sha256": "196916bec9c2cbc9e99e3134123d9b9d43d44b6ae449ef089743d301b3c2563c"
+    },
+    {
+      "stage": "native-coarse-material-geometry",
+      "mode": "check",
+      "status": "PASS_CONTINUUM_COARSE_GEOMETRY_WITH_DECLARED_THRESHOLD",
+      "exact_checks": 281,
+      "symbolic_certificates": 5,
+      "negative_controls": 20,
+      "sha256": "8c5ed3e3d26fb0ff6ccd7d9da390e231aeb3511cf78829a908e5705d3d7a1245"
+    },
+    {
+      "stage": "native-material-detector-dilation",
+      "mode": "check",
+      "status": "PASS_SOURCE_LIFT_JOINT_DETECTOR_AND_CALIBRATION",
+      "exact_checks": 272,
+      "symbolic_certificates": 11,
+      "negative_controls": 18,
+      "sha256": "c3252b912138c81b7e02105fb00e1fad1fda8c83fe79d671bf102a24ba7171eb"
+    },
+    {
+      "stage": "native-material-reference-momentum",
+      "mode": "check",
+      "status": "PASS_TOTAL_CHARGE_AND_SCOPED_LOCAL_OBSTRUCTIONS",
+      "exact_checks": 157,
+      "symbolic_certificates": 10,
+      "negative_controls": 25,
+      "sha256": "b1768f4556b4fa399c666428bd7b5b218193930e0911520dce2a133afe0507fd"
+    },
+    {
+      "stage": "native-logarithmic-material-density",
+      "mode": "check",
+      "status": "PASS_SELECTED_LOCAL_FLOW_AND_RENORMALIZED_DENSITY",
+      "exact_checks": 103,
+      "symbolic_certificates": 8,
+      "negative_controls": 28,
+      "sha256": "de5cfdd5532352bda2063be67948c07fde932ce6cd352b7e228b89d21eb7849c"
+    },
+    {
+      "stage": "native-tvsp-lambda-matrices",
+      "mode": "check",
+      "status": "PASS_TLM1_TVSP_LAMBDA_MATRICES",
+      "exact_checks": 294,
+      "symbolic_certificates": 9,
+      "negative_controls": 59,
+      "sha256": "3129fb851b4bdb8c504d630afd6a9e2f6be41dd7b3b2f66888b94ef2d86f1b74"
+    },
+    {
+      "stage": "native-tvsp-exponential-transport",
+      "mode": "check",
+      "status": "PASS_TET1_TVSP_EXPONENTIAL_TRANSPORT",
+      "exact_checks": 302,
+      "symbolic_certificates": 7,
+      "negative_controls": 43,
+      "sha256": "09455f255c193b7975ecf225e83cf47d049ab2d2d7a09fbcbe10792d0b6b4acb"
+    },
+    {
+      "stage": "native-quantum-response-transport",
+      "mode": "check",
+      "status": "PASS_QRT1_QUANTUM_RESPONSE_TRANSPORT",
+      "exact_checks": 123,
+      "symbolic_certificates": 7,
+      "negative_controls": 28,
+      "sha256": "0da65242c759497be548a8678f92ae1cb1d1b4be4e511613a45505dbbb136ed1"
+    },
+    {
+      "stage": "native-density-cut-dynamics",
+      "mode": "check",
+      "status": "PASS_DCD1_DENSITY_CUT_DYNAMICS",
+      "exact_checks": 143,
+      "symbolic_certificates": 13,
+      "negative_controls": 23,
+      "sha256": "834d9785f01c86f178ab2b041e50ecb90c5957c75bb2b76439846324288a4a6a"
+    },
+    {
+      "stage": "native-phase-current-response",
+      "mode": "check",
+      "status": "PASS_PCR1_PHASE_CURRENT_RESPONSE",
+      "exact_checks": 247,
+      "symbolic_certificates": 14,
+      "negative_controls": 35,
+      "sha256": "7e57cb1ff8971775d559de29e099887262cbffb8b4adafe02fe1803bb855a737"
+    },
+    {
+      "stage": "native-wick-calibrated-geometry",
+      "mode": "check",
+      "status": "PASS_WCG1_WICK_CALIBRATED_GEOMETRY",
+      "exact_checks": 354,
+      "symbolic_certificates": 15,
+      "negative_controls": 50,
+      "sha256": "5c42b770cd54bd083ace48863399d48c8a5e319a3976a92093c82cc2bd93f6b7"
+    },
+    {
+      "stage": "native-prime-observer-sectors",
+      "mode": "check",
+      "status": "PASS_POS1_PRIME_OBSERVER_SECTORS",
+      "exact_checks": 118,
+      "symbolic_certificates": 8,
+      "negative_controls": 35,
+      "sha256": "3b3692807dd6b358a8d16e16816e92e4c66407982fb15b9174896b35ab5d689b"
+    },
+    {
+      "stage": "native-prime-observation-closure",
+      "mode": "check",
+      "status": "PASS_POC1_PRIME_OBSERVATION_CLOSURE",
+      "exact_checks": 52,
+      "symbolic_certificates": 4,
+      "negative_controls": 26,
+      "actual_prime_observations": 8,
+      "sha256": "d465df02b9bb4a33aa6e2e677cb53f09f404a5bd1a1214a0f12e9a1c9e32d202"
+    },
+    {
+      "stage": "native-prime-innovation-window",
+      "mode": "check",
+      "status": "PASS_PIW1_PRIME_INNOVATION_WINDOW",
+      "exact_checks": 51,
+      "symbolic_certificates": 4,
+      "negative_controls": 16,
+      "actual_prime_observations": 9,
+      "source_jets_evaluated": 3,
+      "sha256": "20e0e48c6f184a1ff4b6b210811ba8fc50f24fc0d7eb72c76b814bd3561fe4cc"
+    },
+    {
+      "stage": "native-infinite-layer-cut",
+      "mode": "check",
+      "status": "PASS_ILC1_INFINITE_LAYER_CUT",
+      "exact_checks": 63,
+      "symbolic_certificates": 6,
+      "negative_controls": 17,
+      "actual_derivative_layers": 16,
+      "actual_confluent_directions": 8,
+      "positive_binomial_readings": 136,
+      "sha256": "1affc1af472425ebaeffbbdb2c637871bb8227494785d2b7d99b08c1455d186d"
+    },
+    {
+      "stage": "native-layer-continuation-window",
+      "mode": "check",
+      "status": "PASS_LCW1_LAYER_CONTINUATION_WINDOW",
+      "exact_checks": 67,
+      "symbolic_certificates": 4,
+      "negative_controls": 15,
+      "actual_derivative_layers": 18,
+      "actual_confluent_directions": 9,
+      "positive_binomial_readings": 171,
+      "sha256": "1a736ede7efce10245bbdb71bbc550b070aec8326119281016bd4760f5b1d30a"
+    },
+    {
+      "stage": "native-layer-anchor-transport",
+      "mode": "check",
+      "status": "PASS_LAT1_LAYER_ANCHOR_TRANSPORT",
+      "exact_checks": 61,
+      "symbolic_certificates": 3,
+      "negative_controls": 14,
+      "actual_derivative_layers": 20,
+      "actual_confluent_directions": 10,
+      "positive_binomial_readings": 210,
+      "continuous_source_corridors": 2,
+      "sha256": "1f1c35442a46665d6af672b8056e0c02796119b03e1cf5854f206f1ae310b521"
+    },
+    {
+      "stage": "native-layer-anchor-atlas",
+      "mode": "check",
+      "status": "PASS_LAA1_LAYER_ANCHOR_ATLAS",
+      "exact_checks": 85,
+      "symbolic_certificates": 2,
+      "negative_controls": 19,
+      "source_anchors": 3,
+      "fresh_derivative_layers": 40,
+      "retained_derivative_layers_per_anchor": 20,
+      "positive_binomial_readings": 630,
+      "continuous_source_charts": 6,
+      "connected_atlases": 2,
+      "sha256": "ee43c13fbeff0f33479e36c52ca4a9add0478d62c84dd2dd29df81f9ec621a97"
+    },
+    {
+      "stage": "native-layer-depth-compatibility",
+      "mode": "check",
+      "status": "PASS_LDC1_LAYER_DEPTH_COMPATIBILITY",
+      "exact_checks": 217,
+      "symbolic_certificates": 2,
+      "negative_controls": 14,
+      "actual_source_anchors": 3,
+      "certified_depth_transitions": 27,
+      "positive_response_innovations": 27,
+      "adjacent_record_couplings": 54,
+      "largest_record_length": 19,
+      "sha256": "de009896160316aa5f5ead4f63cffe4594a98abaf4f0faf8760166e2000ee8a7"
+    },
+    {
+      "stage": "native-layer-observer-transport",
+      "mode": "check",
+      "status": "PASS_LOT1_LAYER_OBSERVER_TRANSPORT",
+      "exact_checks": 181,
+      "symbolic_certificates": 2,
+      "negative_controls": 20,
+      "actual_source_anchors": 3,
+      "certified_depth_transitions": 27,
+      "sha256": "a0b3d9816195157eb8a26c4967ada6d75dccf9f1d82a4b1be4e60e2fde672e01"
+    },
+    {
+      "stage": "native-layer-wave-propagation",
+      "mode": "check",
+      "status": "PASS_LWP1_LAYER_WAVE_PROPAGATION",
+      "exact_checks": 528,
+      "symbolic_certificates": 3,
+      "negative_controls": 19,
+      "actual_source_anchors": 3,
+      "resolved_wave_return_readings": 300,
+      "first_boundary_return_innovations": 27,
+      "exponential_enclosures": 9,
+      "sha256": "6812cdb975ca22b829b1251cc7712e653f444df1ceb41b1f7f890f52f7c404c2"
+    },
+    {
+      "stage": "native-layer-analytic-return",
+      "mode": "write",
+      "status": "PASS_LAR1_LAYER_ANALYTIC_RETURN",
+      "exact_checks": 140,
+      "symbolic_certificates": 0,
+      "negative_controls": 13,
+      "actual_source_anchors": 3,
+      "actual_source_enclosures": 9,
+      "sha256": "8a2550206c26f2dc78d9cdc5b742fda5e39e9baf42f6a63465f5ec5273d4bedf"
+    }
+  ],
+  "scope": "Successful source execution and generated bytes; no assertion of a later import-commit replay"
+}
