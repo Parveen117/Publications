@@ -1,0 +1,23 @@
+{
+ "L": "9/10",
+ "active_prime_powers": [
+  2,
+  3,
+  4,
+  5
+ ],
+ "retained_modes": 3,
+ "kernel_degree": 560,
+ "cosh_terms": 12,
+ "complement": {
+  "rule": "declared",
+  "base_level": 3,
+  "base_value": "1",
+  "explicit_levels": 0,
+  "source": "unused in --rayleigh mode"
+ },
+ "margin": "1/100000000000000000000000",
+ "rational_grid_digits": 34,
+ "rational_rounding_allowance": "1/100000000000000000000000000000000",
+ "declared_family_bound": "1/10000000000000000000000000000"
+}

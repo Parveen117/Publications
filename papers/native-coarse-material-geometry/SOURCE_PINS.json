@@ -1,0 +1,18 @@
+{
+  "protocol": "CMG1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "8e0c24e1af0b37ec072e4809884c2ba210d12078fbc2102f08ddcfaf0b08b7a7",
+    "THEOREM.md": "3a7563fd123499a6638086f01b3f3d554c8b064e849bf554913f0cfd9e1cc97e",
+    "SOURCE_MAP.md": "9769db75300896f2053247dc52f48f76f362fabd98ee24662ef6a6080296aeb5",
+    "verify.cjs": "8503b9bed548a7ac598fe02f50ca5c9e18d5af81c0caa9c9667835e94333e677",
+    "run.py": "2082f5ad324d01f6037aed24c58befce3bbaecaa75554bb63dab6e7e213370b4",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-resolved-material-geometry/THEOREM.md": "290f90dd010493aee033349c125354bb99a4e1aa0edd3ee034fed4db13326f20",
+    "../native-resolved-material-geometry/CERTIFICATE.json": "196916bec9c2cbc9e99e3134123d9b9d43d44b6ae449ef089743d301b3c2563c",
+    "../native-residual-gauge-rigging/THEOREM.md": "8ff94808f326a81bac1c72a39641607e086240e32e35b2e107861ff5ea07ab83",
+    "../native-material-profile-quantization/THEOREM.md": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0",
+    "../native-material-reference-field/THEOREM.md": "2efecdf36d8931e4a6748ba83c4be19495eb717a58d21110935eeb0cdeeedadd",
+    "../native-local-normal-closure/THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7"
+  }
+}

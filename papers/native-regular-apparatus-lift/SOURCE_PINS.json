@@ -1,0 +1,19 @@
+{
+  "protocol": "RAL1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "ae1ea478815a741f20ca95890a72e7f700ff6ddd7839cc95a3ab7f760616db6d",
+    "THEOREM.md": "917e37e68fed2d1155d0f6905eec84db80a0996906634e6fb5baf2440fc33d31",
+    "SOURCE_MAP.md": "b2cdb76902420d4b4cdb3e1fa33a726559fa916c77cf079a765e6f05d330daae",
+    "verify.cjs": "8eeb6f6f03b62e7505959ed5e7f4b8554f69489976bbd65e754b298300963a00",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-normal-closure/THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7",
+    "../native-local-quantum-anomaly/THEOREM.md": "59bafe822249b5d9284667393e04b11f7bdbad76655819ee22a5b7dcd7ae8785",
+    "../native-local-physical-sector/LOCAL_GEOMETRY.md": "b7fc2781cf8dd78a3f82b111c2fa5e2a8a6a01a69627becc2134c7c7bd824def",
+    "../native-complementary-clock-sector/THEOREM.md": "475ba0d86355bcf10a8ef78c3af08faff912ae6925ba5a20232bbdc84c9f05b4",
+    "../native-global-observable-algebra/THEOREM.md": "d150cd2ec9429ce04ae3221bbc6df6636e16cb29367fba73660cc023af2865b3",
+    "../native-relational-pointer-measurement/THEOREM.md": "b69daf19e305812f8dc63e59957f3f98a9bd7d67473e4598991355c6d0a6bbd9",
+    "../native-relational-pointer-measurement/CERTIFICATE.json": "c79e6894fb585561b52c225591cbdd4c63d3eed9a59cccb7363262b21b235ad1"
+  }
+}

@@ -1,0 +1,65 @@
+name: Quantum geometry propagation proof replay
+
+on:
+  push:
+    branches: [main, 'codex/quantum-geometry-propagation-*', 'codex/tvsp-lambda-matrices-*', 'codex/tvsp-exponential-transport-*', 'codex/quantum-response-transport-*', 'codex/density-cut-dynamics-*', 'codex/phase-current-response-*', 'codex/wick-calibrated-geometry-*', 'codex/prime-observer-sectors-*', 'codex/prime-observation-closure-*', 'codex/prime-innovation-window-*', 'codex/infinite-layer-cut-*', 'codex/layer-continuation-window-*', 'codex/layer-anchor-transport-*', 'codex/layer-anchor-atlas-*', 'codex/layer-depth-compatibility-*', 'codex/layer-observer-transport-*', 'codex/layer-wave-propagation-*']
+    paths:
+      - 'papers/native-*/**'
+      - 'papers/Native_Phase_Word_Reconstruction_Source.zip'
+      - 'scripts/replay_quantum_geometry.py'
+      - '.github/workflows/quantum-geometry-propagation.yml'
+  pull_request:
+    branches: [main, 'codex/quantum-geometry-propagation-*', 'codex/tvsp-lambda-matrices-*', 'codex/tvsp-exponential-transport-*', 'codex/quantum-response-transport-*', 'codex/density-cut-dynamics-*', 'codex/phase-current-response-*', 'codex/wick-calibrated-geometry-*', 'codex/prime-observer-sectors-*', 'codex/prime-observation-closure-*', 'codex/prime-innovation-window-*', 'codex/infinite-layer-cut-*', 'codex/layer-continuation-window-*', 'codex/layer-anchor-transport-*', 'codex/layer-anchor-atlas-*', 'codex/layer-depth-compatibility-*', 'codex/layer-observer-transport-*', 'codex/layer-wave-propagation-*', 'codex/layer-analytic-return-*', 'codex/vtps-source-reflection-*']
+    paths:
+      - 'papers/native-*/**'
+      - 'papers/Native_Phase_Word_Reconstruction_Source.zip'
+      - 'scripts/replay_quantum_geometry.py'
+      - '.github/workflows/quantum-geometry-propagation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout research
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Native engine runtime
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: '24.19.0'
+          package-manager-cache: false
+      - name: Replay inherited native cut action
+        if: ${{ !startsWith(github.head_ref, 'codex/vtps-source-reflection-') }}
+        run: python3 papers/native-cut-transport-feedback/verify.py --check
+      - name: Replay full source-bound quantum geometry chain
+        if: ${{ !startsWith(github.head_ref, 'codex/vtps-source-reflection-') }}
+        run: python3 scripts/replay_quantum_geometry.py
+      - name: Reuse verified predecessors and execute VTPS source reflection
+        if: ${{ startsWith(github.head_ref, 'codex/vtps-source-reflection-') }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SOURCE_HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python3 papers/native-vtps-source-reflection/ci.py
+      - name: Retain GitHub-generated VSR certificate
+        if: ${{ startsWith(github.head_ref, 'codex/vtps-source-reflection-') }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: vsr-certificate-${{ github.run_id }}
+          path: |
+            papers/native-vtps-source-reflection/SOURCE_PINS.json
+            papers/native-vtps-source-reflection/CERTIFICATE.json
+            papers/native-vtps-source-reflection/EXPECTED.sha256
+            papers/native-vtps-source-reflection/CI_PROVENANCE.json
+          if-no-files-found: error
+          retention-days: 30

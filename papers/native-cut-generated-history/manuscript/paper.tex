@@ -1,0 +1,567 @@
+\documentclass[11pt,a4paper]{article}
+\pdfinfoomitdate=1
+\pdftrailerid{}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=26mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage{microtype}
+\usepackage{needspace}
+\usepackage{xcolor}
+\definecolor{linkblue}{RGB}{25,65,110}
+\usepackage[colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Cut-generated transport and observer verification}
+\fancyfoot[L]{\small Research manuscript, v1.0}
+\fancyfoot[R]{\thepage}
+\setlength{\headheight}{15pt}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{2em}
+\widowpenalty=10000
+\clubpenalty=10000
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\adj}{\dagger}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\Id}{\mathbb I}
+\newcommand{\Herm}{\operatorname{Herm}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\qform}[2]{q_{#1}(#2)}
+\hypersetup{pdftitle={Cut-Generated Information Transport and Complete Observer Verification},pdfsubject={A finite mathematical framework for quantum-gravity research},pdfkeywords={cut operators, coherent histories, invariant transport, observer verification, quantum gravity foundations}}
+\title{\bfseries Cut-Generated Information Transport\\and Complete Observer Verification\\[5pt]\large A finite mathematical framework for quantum-gravity research}
+\author{}
+\date{16 October 2026\quad |\quad Version 1.0}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{abstract}
+We give a complete representation and verification procedure for information
+transport in a declared finite cut/operator framework. Successive binary
+projective cuts generate an isometric coherent history, retaining the full
+input operator algebra on a known image subspace. A positive quadratic form
+of rank $r$ has a minimum $r$-channel weighted amplitude record, with exact
+descent of form-preserving linear operations. We construct $n^2$ calibrated
+quadratic readings at rational circular observer positions that reconstruct
+every Hermitian observable on $n$ complex channels. This count is minimal
+for fixed scalar readings of an unrestricted Hermitian observable. The same
+family gives a necessary-and-sufficient finite certificate for all-input
+linear invariant transport, an explicit decoder for positive metrics, and
+a deterministic reconstruction-error bound. An inherited two-channel
+thermodynamic form shows exactly how a circular probe detects information
+missed by axis readings after classical branch extraction. The manuscript
+completes this finite mathematical verification problem and integrates
+standard dilation, square completion and polarization in one native exact
+implementation. The resulting interface is available for quantum-gravity
+models; it does not by itself select gravitational dynamics, quantize local
+constraints, or establish physical faster-than-light communication.
+\end{abstract}
+
+\section{The problem and the completed contribution}
+
+An invariant value, a recoverable information record and a complete
+verification procedure are different objects. Two sources can have the same
+quadratic amount while differing in phase or in their responses to a later
+cut. A successful transport claim must specify which information is retained,
+which operations are allowed, and which observations can distinguish a
+correct transport from an incorrect one.
+
+The native research programme formulates these questions through cuts,
+retained records and comparison-dependent observables. Its quantum-gravity
+motivation is to relate operational information to geometry without treating
+an uncalibrated coordinate or operation count as an absolute physical clock.
+Here we settle a finite mathematical component of that programme: complete
+quadratic-observer verification of coherent information transport.
+
+The completed chain is
+\begin{equation}
+\text{declared cuts}\ \longrightarrow\ \text{coherent record}\
+\longrightarrow\ \text{complete observer certificate}.
+\end{equation}
+Each arrow has an explicit construction and proof. Assumptions fix the
+meaning of verification; the identity being tested is not among those
+assumptions. Circular observer geometry provides a separating family of
+readings, not a circular logical justification of the conclusion.
+
+The ingredients have established mathematical precedents. Coherent
+measurement dilation and recovery on an isometry's image are standard
+\cite{watrous}. Weighted square completion and polarization are standard
+linear algebra. Informationally complete measurements are a developed
+subject \cite{scott}; restrictions such as known low rank alter the relevant
+reconstruction problem \cite{baldwin}. Our contribution is a source-bound
+integration of these ingredients in the native cut calculus, including an
+explicit rational observer family, minimum-count proof, transport test,
+decoder and reproducible exact certificates. We do not claim tomography or
+measurement dilation as new physical discoveries.
+
+\section{Observation contract and notation}
+
+Let $V$ be an $n$-dimensional positive complex carrier with specified adjoint
+and calibrated coordinates. Executable examples use the exact field
+$\mathbb Q+\ii\mathbb Q$, with $\ii^2=-1$, represented by the unchanged native
+cut-scalar engine. General statements are finite-dimensional statements over
+$\mathbb C$. The carrier is an admitted representation of the cut algebra;
+this paper does not derive it, physical spacetime, or all historical UGD
+arithmetic from an empty set of premises.
+
+A cut is an orthogonal projection $P$, with complement $Q=\Id-P$. The
+selected projective implementation has branch operators $P,Q$. A cut
+predicate alone does not uniquely select a physical instrument. Likewise,
+the ordered cut schedule is protocol data; no gravitational field equation
+is inferred merely from its existence.
+
+A quadratic observable is $H\in\Herm(n)$ with calibrated reading
+\begin{equation}\label{eq:q}
+\qform{H}{x}=x^\adj Hx.
+\end{equation}
+Hermiticity, quadratic dependence, dimension and calibration are explicit
+hypotheses. Distinct probe preparations or reproducible expectation values
+are permitted. The observations below are not simultaneous exact
+measurements of a single unknown quantum specimen. In a statistical
+implementation each expectation must be estimated, and uncertainty enters
+the error bound in Section~\ref{sec:error}.
+
+At a stipulated uncut level the accessible algebra may be only
+$\mathbb C\Id$. Every complex-linear unital map acts identically there,
+since $T(a\Id)=a\Id$. This is zero observable distinction within that
+algebra, not zero geometric dimension or a proof that inaccessible change
+cannot occur. A nontrivial cut instead generates
+$\{aP+bQ\}\simeq\mathbb C\oplus\mathbb C$. Repeating the same ideal cut is
+idempotent and does not by itself create a clock.
+
+\section{Coherent records and the minimum amplitude representation}
+
+For a finite ordered cut tree of depth $k$, let $E_{j,h,b}$ denote the
+projection for outcome $b\in\{0,1\}$ at step $j$, after prefix $h$.
+Each node obeys $\sum_b E_{j,h,b}^\adj E_{j,h,b}=\Id$. For a history
+$h=(h_1,\ldots,h_k)$, define the ordered branch product $K_h$ and record
+\begin{equation}\label{eq:history}
+W_kx=\sum_{h\in\{0,1\}^k}|h\rangle\otimes K_hx.
+\end{equation}
+The record includes relative branch phases and the final carrier, not just
+the outcome labels.
+
+\begin{proposition}[Complete coherent history]\label{thm:history}
+For every finite declared cut tree, $W_k^\adj W_k=\Id$. If
+$R_k=W_kW_k^\adj$, the map $J_k(O)=W_kOW_k^\adj$ is an injective
+$*$-isomorphism onto the corner $R_k\operatorname{End}(\mathrm{record})R_k$.
+It has inverse $B\mapsto W_k^\adj BW_k$ on that corner.
+\end{proposition}
+\begin{proof}
+The empty history has $K_\emptyset=\Id$. Appending a cut to a prefix gives
+\[
+\sum_b K_h^\adj E_{j,h,b}^\adj E_{j,h,b}K_h=K_h^\adj K_h.
+\]
+Induction yields $\sum_h K_h^\adj K_h=\Id$, proving the isometry.
+Inserting $W_k^\adj W_k=\Id$ gives
+$J_k(AB)=J_k(A)J_k(B)$ and $W_k^\adj J_k(O)W_k=O$; adjoints are preserved.
+Every corner operator $B=R_kBR_k$ equals
+$J_k(W_k^\adj BW_k)$. The corner identity is $R_k$, not the identity of
+the larger record carrier.
+\end{proof}
+
+No pre-cut Hamiltonian, continuous time or exponential is needed for this
+construction. A later embedding into continuous dynamics is a separate
+contract. On amplitudes the decoder $W_k^\adj$ has norm one. On densities,
+$W_k^\adj(W_k\rho W_k^\adj)W_k=\rho$.
+
+Classicalizing the history produces $\bigoplus_h K_h\rho K_h^\adj$ and
+removes cross-history blocks. For a single cut the lost part is
+$P\rho Q+Q\rho P$. If two inputs have equal first-cut diagonal blocks,
+every later classical history beginning with that cut is identical for
+them. The coherent records can nevertheless remain distinct.
+
+\begin{proposition}[Minimum weighted amplitude record]\label{thm:factor}
+Let $H\geq0$ have rank $r$ and entries in $\mathbb Q+\ii\mathbb Q$. There
+are a full-row-rank $r\times n$ matrix $L$ and a positive rational diagonal
+matrix $D$ such that $H=L^\adj DL$. Exactly $r$ linear scalar amplitude
+channels are necessary and sufficient for this positive weighted
+representation. The record $Lx$ is faithful on $V/\ker H$.
+\end{proposition}
+\begin{proof}
+For a nonzero positive residual, choose a positive diagonal pivot $a$ and
+divide its row by $a$ to obtain $\ell$. Subtraction of
+$a\ell^\adj\ell$ leaves the positive Schur complement and reduces rank
+by one. A positive matrix with every diagonal zero is zero, since each
+two-coordinate positive restriction has zero off-diagonal entry. Exact
+iteration gives $r$ independent rows and positive rational pivots.
+Conversely, a sum of $m$ positive weighted rank-one forms has rank at most
+$m$. Finally, positivity gives $\ker L=\ker H$.
+\end{proof}
+
+The nonnegative summands $D_{jj}|(Lx)_j|^2$ admit a binary Pythagorean
+synthesis with $r-1$ merges and minimum possible maximum depth
+$\lceil\log_2 r\rceil$ for $r\geq1$. These are synthesis counts, not
+classical bit lengths. Retaining only the summands or their sum loses
+phase; retaining the linear amplitudes preserves the quotient record.
+
+If $T^\adj HT=H$, kernel invariance gives a unique descended operator $U$
+with $LT=UL$ and $U^\adj DU=D$. To construct it choose
+$S=L^\adj(LL^\adj)^{-1}$ and set $U=LTS$. Since $LS=\Id$ and
+$T\ker L\subseteq\ker L$, this intertwining identity follows directly.
+This formula applies for $r>0$; the zero form has the empty quotient record.
+Additional operations that do not preserve $H$ can require a larger record;
+the previously proved operation-closure criterion computes the span of
+rows $LT_w$ over allowed finite words \cite{crc,chd}.
+
+\section{Complete circular-observer verification}
+
+Choose $a=3/5$, $b=4/5$ and standard coordinate vectors $e_i$. The observer
+family is
+\begin{equation}\label{eq:probes}
+\mathcal P_n=\{e_i\}_i\ \cup\
+\{ae_i+be_j,\ ae_i+\ii be_j: i<j\}.
+\end{equation}
+It contains $n^2$ vectors. Every vector obeys $p^\adj p=1$, and $pp^\adj$
+is an orthogonal binary cut. The two-coordinate vectors lie on circles in
+the real planes spanned by $(e_i,e_j)$ or $(e_i,\ii e_j)$. The projectors
+are separately accessible tests and are not asserted to sum to $\Id$ or
+form a symmetric informationally complete POVM.
+
+\Needspace{12\baselineskip}
+\begin{theorem}[Complete observer and transport certificate]\label{thm:main}
+Under the declared finite quadratic observation contract:
+\begin{enumerate}
+\item The readings $\{\qform{H}{p}:p\in\mathcal P_n\}$ reconstruct every
+$H\in\Herm(n)$. The count $n^2$ is minimum among fixed scalar quadratic
+readings for an unrestricted Hermitian observable.
+\item For any specified linear $T:\mathbb C^n\to\mathbb C^m$ and specified
+Hermitian $G_{\rm in},G_{\rm out}$, equality of the input and output form
+readings on $\mathcal P_n$ is equivalent to
+$T^\adj G_{\rm out}T=G_{\rm in}$ and hence to equality on every input.
+If both metrics are positive definite, an exact left decoder is
+$G_{\rm in}^{-1}T^\adj G_{\rm out}$.
+\item For every coherent cut history $W$, the transported observers $Wp$
+reconstruct the entire image-corner observable $WHW^\adj$. More generally,
+they certify $W^\adj BW=H$ for a specified output observable $B$.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Write
+\[
+d_i=\qform{H}{e_i},\quad
+r_{ij}=\qform{H}{ae_i+be_j},\quad
+s_{ij}=\qform{H}{ae_i+\ii be_j}.
+\]
+For $H_{ij}=u_{ij}+\ii v_{ij}$, direct expansion gives
+\begin{align}
+25r_{ij}&=9d_i+16d_j+24u_{ij},\\
+25s_{ij}&=9d_i+16d_j-24v_{ij}.
+\end{align}
+Therefore the exact inverse is
+\begin{equation}\label{eq:inverse}
+\begin{aligned}
+H_{ii}&=d_i,\\
+\operatorname{Re}H_{ij}&=\frac{25r_{ij}-9d_i-16d_j}{24},\\
+\operatorname{Im}H_{ij}&=\frac{9d_i+16d_j-25s_{ij}}{24}.
+\end{aligned}
+\end{equation}
+with $H_{ji}=\overline{H_{ij}}$. It reconstructs a Hermitian matrix from
+every real reading vector and substituting it back recovers that vector.
+
+The real dimension of $\Herm(n)$ is $n+2\binom n2=n^2$. Any fixed $m$
+scalar quadratic readings define a real-linear map to $\mathbb R^m$;
+when $m<n^2$, its kernel is nonzero. Thus it cannot separate all observables.
+Even positivity alone does not remove the obstruction: a nonzero invisible
+Hermitian direction $A$ makes $c\Id$ and $c\Id+\epsilon A$ positive with
+identical readings for sufficiently small nonzero $\epsilon$ and $c>0$.
+
+For transport, the probe differences are the readings of the Hermitian
+defect $D_T=T^\adj G_{\rm out}T-G_{\rm in}$. The inverse above proves
+\begin{equation}\label{eq:iff}
+\bigl[\qform{D_T}{p}=0\quad\forall p\in\mathcal P_n\bigr]
+\quad\Longleftrightarrow\quad D_T=0.
+\end{equation}
+If the metrics are positive, $Tx=0$ implies $x^\adj G_{\rm in}x=0$ and
+therefore $x=0$. Multiplication verifies the stated left decoder.
+
+Finally, Proposition~\ref{thm:history} gives
+\[
+(Wp)^\adj(WHW^\adj)(Wp)=p^\adj Hp.
+\]
+Reconstruction first gives $H$ and then $WHW^\adj$. Applying the same
+argument to $W^\adj BW-H$ proves the compression test.
+\end{proof}
+
+Theorem~\ref{thm:main} is a finite iff test for a general all-input identity,
+not a fit to the displayed source example. Removing any one probe produces
+an explicit invisible direction: apply~\eqref{eq:inverse} to a reading
+vector with one at the removed position and zero elsewhere. The native
+certificate constructs these witnesses.
+
+If the observable is known real symmetric, the imaginary probes are
+unnecessary and the minimum is $n(n+1)/2$. If its trace is known, one axis
+reading follows from the trace and the other diagonal readings, leaving
+$n^2-1$ independent scalar data for an arbitrary trace-fixed Hermitian
+matrix. Neither count is a universal minimum for pure states, adaptive
+protocols or arbitrary nonlinear encodings.
+
+On a known history image corner, the count depends on the original $n$,
+not the enlarged history dimension. It does not identify arbitrary
+off-image blocks of an output operator. Likewise, reconstructing a Gram
+record $xx^\adj$ fixes a nonzero $x$ only up to one common unit phase.
+It is not recovery of that phase from classical quadratic readings.
+
+\section{Frame covariance, error control and composition}\label{sec:error}
+
+For an invertible calibrated frame change $S$, transform
+\begin{equation}
+p'=Sp,\qquad H'=S^{-\adj}HS^{-1},\qquad
+G'_{\rm ref}=S^{-\adj}S^{-1}.
+\end{equation}
+Then $p'^\adj G'_{\rm ref}p'=1$ and $p'^\adj H'p'=p^\adj Hp$.
+The probe family remains circular relative to the transported reference
+metric. A nonunitary coordinate transformation need not preserve its
+Euclidean coordinate norm. This common-frame covariance does not license
+independently unknown calibration changes for different readings.
+
+\begin{proposition}[Deterministic error bound]
+Suppose every scalar reading in~\eqref{eq:probes} has absolute error at
+most $\epsilon$. The reconstructed Hermitian observable satisfies
+\begin{equation}\label{eq:error}
+\|\widehat H-H\|_{\rm op}\leq
+\left(1+\frac{25(n-1)}6\right)\epsilon.
+\end{equation}
+The same coefficient bounds an all-input transport defect when every exact
+probe defect is bounded by $\epsilon$.
+\end{proposition}
+\begin{proof}
+Equation~\eqref{eq:inverse} bounds each diagonal error by $\epsilon$ and
+each real or imaginary off-diagonal error by
+$(25+9+16)\epsilon/24=25\epsilon/12$. Thus each complex off-diagonal
+magnitude is at most $25\epsilon/6$. The maximum absolute row sum is
+bounded by the right side of~\eqref{eq:error}. For a Hermitian matrix,
+apply the eigenvector equation at a component of maximum magnitude to
+bound every eigenvalue by that row sum. For a transport defect, conclude
+$|x^\adj D_Tx|\leq\|D_T\|_{\rm op}\|x\|^2$.
+\end{proof}
+
+Calibration error and statistical uncertainty must be included in the
+reading budget. Small estimated defects do not prove an exactly zero
+identity. The bound is deterministic and conservative; no optimal sampling
+claim is made.
+
+Certificates also compose. If $T_1^\adj G_1T_1=G_0$ and
+$T_2^\adj G_2T_2=G_1$, substitution proves
+$(T_2T_1)^\adj G_2(T_2T_1)=G_0$. No return to the initial point or external
+time parameter is required. For semidefinite forms, recovery remains a
+quotient statement as in Proposition~\ref{thm:factor}.
+
+\section{Exact source demonstration and information loss}
+
+Use the inherited two-channel thermo form and its exact square completion
+\cite{chd}:
+\begin{equation}
+H=\begin{pmatrix}2&1\\1&5\end{pmatrix},\qquad
+L=\begin{pmatrix}1&1/2\\0&1\end{pmatrix},\qquad
+D=\diag(2,9/2),\qquad H=L^\adj DL.
+\end{equation}
+Two independent amplitude channels are necessary and sufficient. One
+binary Pythagorean merge evaluates the quadratic total.
+
+For $P=\diag(1,0)$, $Q=\Id-P$, use $Wx=|0\rangle Qx+|1\rangle Px$.
+The full observable $J(H)=WHW^\adj$ has exact pullback $H$. In contrast,
+copying the same $H$ onto both classical branches gives
+\begin{equation}\label{eq:branch}
+W^\adj(\Id_{\rm label}\otimes H)W=PHP+QHQ
+=H-[P,[P,H]].
+\end{equation}
+Its equality to $H$ is equivalent to $[P,H]=0$, as sandwiching the lost
+part with $P,Q$ isolates both cross blocks.
+
+\begin{table}[ht]
+\centering
+\caption{The four calibrated readings. Coherent transport preserves the
+source column. Classical branch extraction retains the axes but loses the
+real cross term.}
+\begin{tabular}{lccc}
+\toprule
+Observer position & Source $H$ & Fixed branch readout & Difference\\
+\midrule
+$(1,0)$ & $2$ & $2$ & $0$\\
+$(0,1)$ & $5$ & $5$ & $0$\\
+$(3/5,4/5)$ & $122/25$ & $98/25$ & $-24/25$\\
+$(3/5,4\ii/5)$ & $98/25$ & $98/25$ & $0$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The inverse reconstructs the lost defect as
+$\left(\begin{smallmatrix}0&-1\\-1&0\end{smallmatrix}\right)$.
+The coherent record instead passes all four tests. A complex positive
+fixture
+\[
+H_c=\begin{pmatrix}2&1+2\ii\\1-2\ii&5\end{pmatrix}
+\]
+has readings $(2,5,122/25,2)$ and reconstructs both cross components
+exactly. Real-only probes cannot distinguish the Gram records of
+$(3/5,4\ii/5)$ and $(3/5,-4\ii/5)$, while the imaginary circular probe
+does. Multiplication by a common unit phase changes none of these
+quadratic readings.
+
+\section{What the certificate implies for geometry}
+
+The construction supplies a rigorous interface for a proposed
+information--geometry model: specify its carrier, accessible observables,
+cuts, retained record and transport; then apply the complete family to its
+claimed invariant identities. A nonzero reconstructed defect identifies
+exactly which quadratic information fails to match. This is stronger than
+checking one radius or a few axis values.
+
+Norm preservation alone does not select curvature. For example, let
+\begin{equation}
+U=\begin{pmatrix}3/5&-4/5\\4/5&3/5\end{pmatrix},\qquad
+V=\diag(1,\ii),\qquad K=V^\adj U^\adj VU.
+\end{equation}
+Both $\Id$ and this nontrivial loop preserve every Euclidean norm, whereas
+$K^\adj P K-P\neq0$. The complete observer family detects the changed
+cut observable. Interpreting an algebraic loop as physical spacetime
+curvature requires an additional geometric and dynamical identification.
+Also, the nonlinear map $x\mapsto\|x\|e_1$ preserves norms while erasing
+direction. The linearity hypothesis in the decoder theorem is substantive.
+
+The existing programme has separate geometric and physical results. Its
+finite hinge and matter--geometry packets provide selected geometric
+realizations and joint interactions; the local coframe construction has
+classical constraint closure in a specified $1+1$ model \cite{record,lnc}.
+None of these changes the hypotheses of the present theorem. In particular,
+classical constraint closure is not a proof of quantum anomaly cancellation
+or of a positive physical sector in $3+1$ dimensions.
+
+The signalling audit is similarly separate \cite{gsa}. Local
+trace-preserving quantum operations give zero remote contrast. The inherited
+nonlinear branch-sensitive extension yields a conditional finite contrast
+$1/10$, but requires an additional physical state-law assumption and has
+no calibrated faster-than-light arrival comparison. Circular verification
+does not discharge those obligations. No gravitational experiment or
+physical transmission-speed measurement is reported here.
+
+The completed mathematical result therefore closes this manuscript's
+representation and verification problem. To close a physical quantum-gravity
+construction would additionally require a justified matter/geometry law,
+its physical quantum constraints and domains, appropriate limiting behaviour,
+and calibrated distinguishing observations. These are separate research
+claims rather than omitted steps in the finite reconstruction proof.
+
+\section{Reproducibility and certification scope}
+
+The executable packet is \texttt{papers/native-cut-generated-history/} in
+the Publications repository \cite{chd}. Python 3.12 performs orchestration,
+source hashing and I/O; the unchanged native JavaScript scalar/matrix and
+Paninian rewrite engines perform scientific arithmetic and symbolic replay.
+There is no numerical fitting or floating-point scientific calculation in
+the new observer certificate.
+
+\begin{table}[ht]
+\centering
+\caption{Executed certificate counts. Counts describe verification work,
+not the number of independently novel theorems.}
+\begin{tabular}{lrrr}
+\toprule
+Packet & Exact checks & Symbolic replays & Negative controls\\
+\midrule
+CHD-1/2 retained & 348 & 8 & 36\\
+CHD-3 addition & 246 & 4 & 53\\
+Combined CHD & 594 & 12 & 89\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The new execution checks complete Hermitian bases in dimensions $1,2,3,5$,
+all omitted-probe dual witnesses for those families, source reconstruction,
+coherent-history compression, valid and invalid transports, common-frame
+covariance, phase blindness, a nontrivial isometric loop and every vertex of
+the two-channel reading-error box. Four symbolic certificates cover the
+real and imaginary polarization expansions and their rational inverses.
+A corrupted witness is rejected. Every earlier CHD-1/2 certificate entry
+and result remains a prefix or unchanged subrecord.
+
+General dimension, arbitrary-depth and error-bound claims have the written
+proofs above. Finite fixtures do not certify their universal quantifiers,
+and native rewrite replay is not a general proof-assistant formalization
+of the manuscript. The full research runner has 23 stages, all passing at
+the recorded source revision; GitHub CI independently passed the same
+research replay and its inherited action gate.
+
+\begin{quote}\small\ttfamily
+python3 papers/native-cut-generated-history/run.py --check\\
+python3 scripts/replay\_quantum\_geometry.py
+\end{quote}
+
+Evidence revision: \texttt{ac291f7aefea5b6f3d0eaf7f7679e83625341285}.
+The combined certificate SHA-256 is
+\begin{quote}\footnotesize\ttfamily
+91cdbd7de3c0b640f7dcd9b3f6022ef509e58cc72675c8d05298ab532c069c4b
+\end{quote}
+The accompanying manuscript manifest binds this paper to its local proof
+sources and certificate bytes. It records provenance, not an additional
+physical or theorem certificate.
+
+\Needspace{19\baselineskip}
+\section{Conclusion}
+
+We have completed a finite operational verification problem: declared binary
+cuts construct a recoverable coherent history; a positive quadratic source
+has a minimum weighted amplitude record; and a minimum calibrated family
+of circular observer positions reconstructs every quadratic observable and
+certifies its linear transport on all inputs. The construction includes an
+explicit decoder, common-frame covariance, a deterministic error bound and
+an exact source example that exposes information missed by axis-only checks.
+
+Within this scope, the observation contract determines what can be verified,
+and the separating observer family proves the claimed invariant identity
+without assuming it. The completed interface can now be used to test a
+specified quantum-gravity model's information-transport claims. Selecting
+and validating that physical model remains distinct from the mathematical
+completion established here.
+
+\begin{thebibliography}{9}
+\raggedright
+\bibitem{watrous}
+J. Watrous, \emph{The Theory of Quantum Information}, Lecture 5,
+representations of channels and isometric measurement constructions.
+\url{https://cs.uwaterloo.ca/~watrous/TQI-notes/TQI-notes.05.pdf}.
+
+\bibitem{scott}
+A. J. Scott, Tight informationally complete quantum measurements,
+\emph{J. Phys. A} \textbf{39}, 13507 (2006).
+\url{https://arxiv.org/abs/quant-ph/0604049}.
+
+\bibitem{baldwin}
+C. H. Baldwin, I. H. Deutsch and A. Kalev,
+Informational completeness in bounded-rank quantum-state tomography,
+arXiv:1510.02736 (2015; revised 2016).
+\url{https://arxiv.org/abs/1510.02736}.
+
+\bibitem{chd}
+Publications research repository, CHD-1/2/3 source proofs and native
+certificates, evidence revision \texttt{ac291f7}, 16 October 2026.
+\url{https://github.com/Parveen117/Publications/tree/ac291f7aefea5b6f3d0eaf7f7679e83625341285/papers/native-cut-generated-history}.
+
+\bibitem{crc}
+Publications research repository, \emph{Native cut-record completeness},
+CRC-1, \texttt{papers/native-cut-record-completeness/THEOREM.md},
+at the evidence revision in Ref.~\cite{chd}.
+
+\bibitem{record}
+Publications research repository, \emph{Quantum gravity: canonical research
+record}, \texttt{QUANTUM\_GRAVITY\_RESEARCH.md},
+at the evidence revision in Ref.~\cite{chd}.
+
+\bibitem{lnc}
+Publications research repository, \emph{Native local normal closure},
+LNC-1, \texttt{papers/native-local-normal-closure/THEOREM.md},
+at the evidence revision in Ref.~\cite{chd}.
+
+\bibitem{gsa}
+Publications research repository, \emph{Gravity information signalling:
+conditional mechanism and speed audit}, GSA-1,
+\texttt{papers/native-gravity-signalling-audit/THEOREM.md},
+at the evidence revision in Ref.~\cite{chd}.
+\end{thebibliography}
+\end{document}

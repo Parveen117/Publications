@@ -1,0 +1,24 @@
+{
+  "protocol": "TET1_SOURCE_PINS_V1",
+  "repository_parent": "babb4fb1922bd91c2eadc82abd4b9538a19745d0",
+  "files": {
+    "README.md": "2479be4ab9cf5bda0ab68ef583b8bc93663a1d1521cfff11cac8bffe193dd86b",
+    "THEOREM.md": "a5de5a5819d0223e9e988eda5fd2ea6e587f27a1a2edd433c417d74cda472d44",
+    "SOURCE_MAP.md": "5a34d2550d3917a66acc182c22075746bfcbfb6f26b8d3b6888a8b25bd29e1a4",
+    "USAGE.md": "a2649abb2f4ef3d688bb759d6fa69a835bc9fa7e162bc229ca5f408b8abd95d7",
+    "transport_adapter.cjs": "ea7e1cc3e627d20324fe0fefc63a17a21b18f2d17113054224d129dd0e9d25fd",
+    "verify.cjs": "ea8782722a1988749d9f6b779097774ff9da871cdb2616b23b69050a8765fe0d",
+    "run.py": "f5c24e82c0b9c096fa22da25f71db712b6fb883576abbf0cb48f9250e5e5dcd1",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-tvsp-lambda-matrices/THEOREM.md": "859dff20097e1d9377c79b2763fe6e73436b70f191ac8fea04f6a587b08e0c00",
+    "../native-tvsp-lambda-matrices/tvsp_adapter.cjs": "cf752edd50741e738328c97f5f4bebefde58f0cb213def34dd6f9d4ffc525bf3",
+    "../native-tvsp-lambda-matrices/SOURCE_PINS.json": "b987300c34d89d13e1d7ccb56e25ea56c67edb1b3621498bb48227071c76fa6d",
+    "../native-thermodynamic-curvature/THEOREM.md": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29",
+    "../native-thermodynamic-curvature/SOURCE_MAP.md": "12793522839a603fecd749efb47cf04c252bd978df77298636b44586a8135422",
+    "../native-exponential-gravity-response/THEOREM.md": "3c14dc1ad2f06ec5b3804ec6a126f3c56c59e698ba18ca5967c272db99375a69",
+    "../native-exponential-gravity-response/SOURCE_PINS.json": "650ebb72a22447b712bb7cb3ba2df96e9b640fb317734cd743bfeff4c8c6f788",
+    "../native-moving-zero-covariance/THEOREM.md": "11a3a370192493f543b357d9701cd3d09e6386aa37079b927946304b000d1b0a",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

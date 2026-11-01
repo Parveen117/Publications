@@ -1,6 +1,6 @@
 # Mathematical foundation and development route
 
-Author: Monty Dabas. Updated: 14 October 2026.
+Author: Monty Dabas. Updated: 17 October 2026.
 
 The common mathematical foundation is **Morphic operator algebra and its recognition/cut calculus**. In standard subject terms this crosses associative noncommutative algebra, graded algebra, representation/module theory, Lie derivations, cocycle/path memory and noncommutative differential geometry. Completion adds functional analysis under stated norms. UGD adds a structured numeral and conserved-ledger layer. These are connected layers, not competing replacements for one another.
 
@@ -21,6 +21,197 @@ The common mathematical foundation is **Morphic operator algebra and its recogni
 The 2 October audit read the EMK/UGD publication guide and lineage, generalized-Euler dock, current operator contracts, Morphic status ledgers and selected derivation/clock/geometry source sections. It did not re-certify every manuscript claim. The collected volume records its own historical source manifest; it does not contain every later nested Morphic manuscript.
 
 ## Current mathematical continuation
+
+[LWP-1: wave horizons and exponential readings](papers/native-layer-wave-propagation/THEOREM.md)
+derives exact state propagation through M-N steps and exact old-state
+correlations through 2(M-N) steps, with strict boundary witnesses.
+The first unresolved constant-seed wave return at k=2M-1 changes by
+2^(4M-3)h_M. The source skew generator [P,Z]=(W-W^sharp)/2 has
+norm at most one and yields a unitary exponential. Its finite-depth
+state and correlation errors have different factorial-tail orders.
+A sharper common first-channel return interval uses only
+D_(j+1,j), j<M, and has normalized radius |tau|^(2M)/(2M)!.
+The infinite strong limit, uniform on bounded parameter sets, remains
+conditional on all-order actual-source positivity. The exponential
+is not identified with a logarithmic interpolation of W or with
+physical time.
+
+[LOT-1: observer transport and the depth boundary](papers/native-layer-observer-transport/THEOREM.md)
+uses G_N=diag(A_N,B_N) to represent the inherited cut without matrix
+square roots. Channel-wise polynomial inclusion is isometric; embedded
+cut ranges are nested, with one exact orthogonal boundary projection
+per new direction. Its old-space compression has eigenvalue
+p_N=h_N/W_N, the LCW even canonical moment position. Co-carried
+observer readings are invariant. The new full cut instead adds
+h_N|ell^T(x-z)|^2, while compressed wave norm loss has eigenvalue
+4p_N(1-p_N). Every fixed polynomial pair has exact cut-action
+saturation after one extra direction. Under all-order positivity, the
+embedded cuts converge monotonically and strongly in the intrinsic
+weighted completion. This different isometric transport leaves the
+LDC obstruction for natural H_N-doubled inclusion intact.
+
+[LDC-1: stable observer records across changing depth](papers/native-layer-depth-compatibility/THEOREM.md)
+proves that the natural polynomial inclusion compresses Y_(N+1) to
+Y_N but leaves a positive rank-one square defect with sole eigenvalue
+h_N/h_(N-1) in (0,1/4). The same monic norm h_N appears in an exact
+positive determinant formula for f_(N+1)-f_N. Source word probabilities
+of length m stabilize whenever 2N-1>=m; deletion preserves factorial
+readings and gives squared discrepancy (c_1-c_2)/(m(m+1)). Strict
+growth prevents exact natural cut or wave intertwining, despite this
+record invariance. Under the all-order source premise, the specified
+conditional Bernoulli record process has L2 error (c_1-c_2)/m.
+The native execution verifies 27 source transitions and 54 record
+couplings using existing jets, without another derivative evaluation.
+
+[LAA-1: connected source atlas and retained remainder](papers/native-layer-anchor-atlas/THEOREM.md)
+derives an exact positive differentiated geometric-tail formula valid
+for every retained derivative inside the source disk. Finite Taylor
+transport composes exactly, while actual-source forecasts keep their
+original jet, normalization, degree and cumulative displacement.
+Recentring a polynomial cannot erase its source error. Fresh complete
+jets at s=31 and s=33 supply legitimate restarts. Six overlapping
+uniform certificates prove both actual 3x3 forms throughout s in
+[27,35] and both 4x4 forms throughout [28,34]. Same-anchor cuts agree
+on overlaps; separately rebuilt finite rational models generally do
+not agree as functions. All-order source signs remain the independent
+RH obligation. Anchor coverage at fixed order cannot replace it.
+
+[LAT-1: moving source anchors and continuous positivity](papers/native-layer-anchor-transport/THEOREM.md)
+derives dot c_n=(n+c_1)c_n-(n+1)c_(n+1) along logarithmic anchor
+motion. The finite positive model has an exact fractional-linear
+transport with invariant poles/residues and a required weight tilt.
+A complete source disk majorant and differentiated tail estimate,
+combined with polynomial pullback, give a sufficient matrix certificate
+for actual positivity at every anchor in an interval. It is executed
+at orders three and four, while twenty actual derivatives at the
+reference anchor certify ten directions. No finite closure of the
+hierarchy or all-order source positivity is inferred.
+
+[LCW-1: sharp two-layer continuation](papers/native-layer-continuation-window/THEOREM.md)
+derives the exact even and odd Schur windows from the retained moment
+forms. A finite Gram congruence proves their positive width and its
+reciprocal-inverse identity. The normalized source positions give an
+exact width recurrence and a factor-at-most-1/16 contraction per pair.
+These are classical canonical moment coordinates, with a self-contained
+finite derivation. Actual layers through derivative 17 pass both windows
+and both 9x9 forms. The source-specific all-depth membership remains
+open; selecting an admissible continuation does not establish it.
+
+[ILC-1: single-point infinite layers and a positive cut](papers/native-infinite-layer-cut/THEOREM.md)
+replaces separated observations by normalized derivatives at one point.
+The inherited L/J kernels give two confluent Hankel forms. Their
+all-order positivity, equivalently nonnegative alternating binomial
+readings, is a one-point RH criterion. The acquired polynomial pairing
+then gives a positive contraction, a strongly convergent sequence of
+padded cuts and a two-reflection wave law. Sixteen complete actual
+layers at s=29 certify the finite eight-direction version and a
+separate s=31 response error below 6e-28. Classical compact moment,
+dilation and spectral methods are credited and their required arguments
+are supplied. No finite jet establishes the universal inequalities.
+
+[PIW-1: sharp source innovation windows](papers/native-prime-innovation-window/THEOREM.md)
+factors the next-step two-sign budget into delta(1-kappa delta),
+where delta is the actual new value minus the old finite response.
+It derives the exact value interval, independently required derivative
+interval and their dimensionless coordinates. Retained-source congruence
+preserves them. A determinant transfer factor removes the forced old
+interpolation zeros and gives a strict slope cone for the normalized
+actual residual. A fresh native complete-source jet at prime 29 passes
+both new signs and both nine-dimensional forms, with independent prime
+31 response error below 3e-17. The explicit source tails use credited
+analytic identities; neither a finite sign nor the factorization proves
+their universal validity at all subsequent primes.
+
+[POC-1: equal-reading centres and prime-sampled source recovery](papers/native-prime-observation-closure/THEOREM.md)
+makes the three-prime centre proposal precise in the retained TET metric.
+Prime-content points need not have an integral centre. Good primes give
+unique compatible local centres by a determinant-unit condition, while
+first-layer solutions at bad primes can fail to lift. On the separate
+actual RH response, SE48/SE49's pencil and Schur signs are reused on odd
+prime s-readings. An elementary Euler-product bound supplies the missing
+analytic sampling density, yielding an all-order RH criterion and a
+conditional compact-uniform response limit. Eight prime directions from
+the old complete V24 source boxes have strict native interval pivots and
+held-out error below 10^-15. This does not prove the universal signs or
+identify arithmetic centres with zeta zeros or physical particles.
+
+[POS-1: prime elementary observer sectors](papers/native-prime-observer-sectors/THEOREM.md)
+classifies all additive congruence observers stable under NM1's chosen
+integral seam/shear action: Lambda/nLambda is nonzero simple exactly at
+prime n. Matrix units are supplied by the existing seam projectors.
+CRT, prime-power carries and invariant gcd content give the exact nested
+observer structure. Coherent quotient records and uniform coarse-sector
+embeddings are equivariant. The faithful TET frame adapter preserves this
+hierarchy pathwise, while actual nonzero source curvature obstructs a
+parallel fixed lattice. Same-observer arbitrary-energy families, including
+resolution-compatible families without a uniform gap, leave mass selection
+open. Standard algebra is credited; no prime-selected physical mass or
+continuum-state identification follows from additive module simplicity.
+
+[WCG-1: Wick-calibrated material observables](papers/native-wick-calibrated-geometry/THEOREM.md)
+adapts the existing countable coherent detector to LMD and proves the
+conditional measured-mass identity E_probe N_(s+probe)=M_s. The joint
+measurement has exact density-form and current-moment domains. Positive
+heat convolution gives the original nonlinear material inverse as a
+normalized POVM with bounded metric operators and a thresholded positive
+self-adjoint length mean. PCR's actual phase-pulsed coherent states give
+H3/C2 classical recovery for h ell^-8->0. Full detector material-flow
+covariance and the fixed-h raw point inverse remain unresolved; no new
+general anti-Wick quantization or spacetime geometry is claimed.
+
+[PCR-1: phase/current response coordinates](papers/native-phase-current-response/THEOREM.md)
+adds existing density phases to the fixed prepared response family.
+Actual Cameron--Martin means give p_i=beta_i m_i, so four ensemble means
+identify the family globally. The quantum tensor has complex rank two
+and a positive four-real-control metric; its Berry curvature is exactly
+(1/h)sum d(log m_i) wedge dp_i. Current graph cores, source-lift domains
+and the mixed-loop phase are explicit. A separate coherent comparison
+recovers smeared classical conjugate data and a homogeneous material
+label. Standard Kähler geometry is credited; no sharp pointwise quantum
+material metric or spacetime interpretation is inferred.
+
+[DCD-1: density and coherent-cut dynamics](papers/native-density-cut-dynamics/THEOREM.md)
+derives the exact source generator [Pi+Q/2, dot(theta).X], including its
+uniquely required two-cut weights. Smooth bounded-mass states preserve
+the nonzero QRT curvature and the original current domains. A convergent
+four-pulse construction supplies a declared coherent-control realization;
+a cubic-moment obstruction excludes the old configuration-normalizing
+flow class from the same small-loop state/response task. Density-only
+material-metric reconstruction is excluded by conjugate-phase blindness.
+
+[QRT-1: quantum density-response transport](papers/native-quantum-response-transport/THEOREM.md)
+realizes the TET connection inside LMD's existing positive Hilbert space.
+The covariance metric is the Gram matrix of actual response vectors, and
+its selected strain connection is exactly their projected connection.
+Projection parallel transport gives a unitary intertwiner and explicit
+preservation of joint density polynomial domains. A quantitative spectral
+cell preparation proves nonzero curvature for the actual unbinned density;
+finite comparison models are distinguished from that continuum argument.
+This is response/control geometry, with no inferred material metric or
+new canonical operator engine.
+
+[TET-1: TVSP exponential observer transport](papers/native-tvsp-exponential-transport/THEOREM.md)
+continues the actual TLM source into transport. Source jets through N
+determine transport jets through N; compatible moving observers and positive
+cuts satisfy the EGR transport contract after an explicit metric frame
+change. The existing affine Hessian source gives exact straight-path
+exponentials, while its curved path has ordering correction t³ F_sv(0)/6.
+The finite loop is an integrated curvature rotation in the oriented
+rank-two frame. Actual response tensors retain their source variation.
+Stable TVSP potentials prove that finite layers alone cannot determine a
+nonzero endpoint; interval residual bounds provide controlled approximation.
+No new operator engine or continuum quantum geometry representation is added.
+
+[TLM-1: TVSP lambda-layered matrices](papers/native-tvsp-lambda-matrices/THEOREM.md)
+implements the corrected entry-layer proposal using NT's actual six-response
+section and NJC's typed tower hypotheses. Finite holonomic jets form an
+associative matrix calculus with exact point-observer recovery. Their regular
+matrix encoding retains all layers but its spectrum sees only the point
+matrix. In a parameterized NT Hessian source, the mechanical reading remains
+5 while the selected curvature is 5 mu²/324. First context jets suffice for
+that curvature, while the entire scalar reading germ does not. The formal
+jet algebra is not a faithful positive bounded-operator *-algebra, and its
+grading is not physical space quantization. The canonical engine is unchanged.
 
 [CID-D3: native coupling reconstruction](papers/native-coupling-reconstruction/THEOREM.md)
 finds exact action blindness in CID-D2's symmetric protocol: only
@@ -340,3 +531,25 @@ This is a dependency order; existing advanced results remain available at their 
 **extra-ideas** hosts current physical applications and exploration. Its [R1–R46 register](https://github.com/Parveen117/extra-ideas/blob/main/CURRENT_STATUS.md) retains the existing derivations and corrections. Mathematical results first developed there are consumed by reference; their frozen historical proofs/pins are preserved. New common mathematical foundations should enter this publication route, with physics-specific hypotheses in the downstream adapter.
 
 Cut grading, scalar radial/turn splitting and dagger grading are distinct. The EMK two-by-two sector is one admitted representation; it is not the full UGD number or master-tensor structure. A finite PASS, a general written proof, a manuscript-status audit and physical validation are separate evidence.
+
+## Entire source return — LAR-1
+
+[LAR-T1 through T4](papers/native-layer-analytic-return/THEOREM.md)
+separate analytic existence from positive realization. The source Cauchy
+estimate bounds D_(j+1,j) geometrically, so the even factorial denominator
+makes the actual return entire. A finite polynomial retains every known
+coefficient contribution, and a positive rational budget covers all missing
+terms. This conclusion uses no all-order positivity. Identifying the
+function with the infinite weighted-channel unitary return retains the
+inherited all-order criterion. An entire nonunitary counterexample prevents
+the two statements from being conflated.
+
+## Actual source reflection and VTPS chart — VSR-1
+
+[VSR-T1 through T5](papers/native-vtps-source-reflection/THEOREM.md) establish
+cut equivariance for the actual five-reading source, including affine
+calibration of its thermodynamic fields. Legendre response, positive metric
+and connection are transformed with their own tensor types. The diagonal
+VTPS metric retains the source curvature; reselecting a diagonal strain
+connection would erase it. All finite regular jet matrices carry the
+two-sided source relation through a degree-parity similarity.

@@ -1,0 +1,26 @@
+{
+  "protocol": "VSR1_SOURCE_PINS_V1",
+  "repository_parent": "0c98adf69682f6fee48be85dcbcb7667d77dea2e",
+  "files": {
+    "README.md": "754e174666bbb0247823abbcba195ba6c6f322aa93fcba48268e1f653118fe65",
+    "THEOREM.md": "9dc2044d51d019191d7b5cf1bf8805838c15c49ab6d1916b81d45db347eda251",
+    "SOURCE_MAP.md": "670d259d00794647278e787b603c61b1d120ac884a8c3f645f0e0e6a79d69a7b",
+    "USAGE.md": "07d6ffb222a1dc7d9aa1c27a11e3d4ffe90cebf7effa0daafae064e8761b2961",
+    "reflection_adapter.cjs": "8d4817b2e0104c2533f6e32404a0ae949c12b3c92c5b648f804619de4ef5c5fe",
+    "verify.cjs": "591cbbd60386081bddb7d4e5a1c77b46ada3ea1499c62b717adbd27c010e7fd9",
+    "run.py": "0dc0b852b9253398154555284264f94c07d64b0ed186e0f718977584f87c8d32",
+    "ci.py": "948be99e0991a1f3ce4b1641d9f1c7974a1b4fb743ee78c0ff4e55bcc8b64253",
+    "PIN_INPUTS.json": "8ab863e8fbda011a64230e3bfd60989a3b17d1749cce6813f5f18ea68a5548dd",
+    "../../OPERATOR_FOUNDATION.md": "f3f20f3c7f8aeb30f4f49a6f47298bc758e629bdd00a74d4b705c7327acec467",
+    "../native-tvsp-lambda-matrices/tvsp_adapter.cjs": "cf752edd50741e738328c97f5f4bebefde58f0cb213def34dd6f9d4ffc525bf3",
+    "../native-tvsp-lambda-matrices/THEOREM.md": "859dff20097e1d9377c79b2763fe6e73436b70f191ac8fea04f6a587b08e0c00",
+    "../native-tvsp-lambda-matrices/SOURCE_PINS.json": "b987300c34d89d13e1d7ccb56e25ea56c67edb1b3621498bb48227071c76fa6d",
+    "../native-tvsp-lambda-matrices/CERTIFICATE.json": "3129fb851b4bdb8c504d630afd6a9e2f6be41dd7b3b2f66888b94ef2d86f1b74",
+    "../native-tvsp-exponential-transport/THEOREM.md": "a5de5a5819d0223e9e988eda5fd2ea6e587f27a1a2edd433c417d74cda472d44",
+    "../native-tvsp-exponential-transport/SOURCE_PINS.json": "e9232b980a9cbd69af2ea0007deba65ceb695c378722f08b71213fae3e7e33c4",
+    "../native-jacobian-cut-certification/THEOREM.md": "6240606cb6ad10514f16132592b46a1929703316879da543c62353f0244101ee",
+    "../native-thermodynamic-curvature/THEOREM.md": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  }
+}

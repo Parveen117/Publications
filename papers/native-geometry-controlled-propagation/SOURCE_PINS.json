@@ -1,0 +1,14 @@
+{
+  "protocol": "GCP1_SOURCE_PINS_V1",
+  "files": {
+    "THEOREM.md": "a06fa36e7657cbac8b672f1f50f2bfe60985c6edb74235f869ac297c884a5a56",
+    "verify.cjs": "2d1684003e0ab6e360eab532d22f46d7d68141c8e9aaa801a60f51a42c1d0acc",
+    "run.py": "b4aa454ecc0e007565f7a863e84d796df7b810f57ffbf7bc0937536c275a668b",
+    "../native-common-cone-limit/THEOREM.tex": "0e6f0b170d81b59cc6282859f60a4a5e1ed5b8ee1a7c73f17d35e3cad38b9dd1",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-matter-geometry-holonomy/THEOREM.md": "77f7e0eb5da1c27b815445f9e494fe2ce267b92d9c8a8d4d3196b97bbe316df4",
+    "../native-quantum-gravity-consistency/THEOREM.md": "4a431b5ad31d7981d7d505159c756db213dc6faac47d48534c911f20ad831335",
+    "README.md": "c1a92a4109aeab7045bacf8c74d3c266aa34626a95b985f2b8c971ef80a845ca"
+  }
+}
