@@ -108,6 +108,25 @@ rejection controls as true. A failed assertion is failure or
 inconclusive verification, not evidence that the actual mathematical
 source is negative.
 
+## Continuous reproduction
+
+`ci_check.py` reruns the committed certificates in a temporary copy of
+each packet and compares every field of the fresh result with the
+committed evidence (only the interpreter version string is ignored),
+after checking that each evidence file carries the SHA-256 of the
+engine in the tree. The workflow
+`.github/workflows/rh-boundary-regular-trial.yml` runs it on one Python
+version (3.12) for every push or pull request that touches the packets
+or the note: the `rh_l055` packet, the two standard-library reruns
+(`l055_control`, `near_null`) and all twelve fast Arb packets, about
+ten minutes in all. The L=9/10, 19/20 and 1 certificates are rerun only
+by the manual `full` dispatch of the same workflow (one to two hours).
+
+~~~sh
+python3 -B proof_lab/rh_l075/ci_check.py          # fast set
+python3 -B proof_lab/rh_l075/ci_check.py --full   # every packet
+~~~
+
 ## Fixed choices
 
 The code SHA-256 is recorded in every result file as `code_sha256`;
