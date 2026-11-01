@@ -1,0 +1,70 @@
+\subsection{Response-coordinate summary and unit typing}
+\label{sec:response-summary}
+
+The six constrained derivatives are collected here because their constraint, formula, and physical dimension are all part of the datum.  Let $[\mathsf E]$, $[\mathsf S]$, $[\mathsf T]$, $[\mathsf P]$, and $[\mathsf V]$ denote the dimensions of energy, entropy, temperature, pressure, and volume, with
+\[
+[\mathsf S]=[\mathsf E]/[\mathsf T],
+\qquad
+[\mathsf P]=[\mathsf E]/[\mathsf V].
+\]
+
+\begin{center}
+\small
+\begin{tabular}{p{0.12\textwidth}p{0.23\textwidth}p{0.28\textwidth}p{0.19\textwidth}}
+\toprule
+Symbol & Constrained derivative & Exact formula & Dimension\\
+\midrule
+$\lambda_P$ & $(\partial G/\partial S)_P$ & $-ST/C_P$ & temperature\\
+$\lambda_V$ & $(\partial F/\partial S)_V$ & $-ST/C_V$ & temperature\\
+$\lambda_S$ & $(\partial H/\partial V)_S$ & $V(\partial P/\partial V)_S=-K_S$ & pressure\\
+$z_T$ & $(\partial G/\partial V)_T$ & $V(\partial P/\partial V)_T=-K_T$ & pressure\\
+$z_S$ & $(\partial U/\partial P)_S$ & $-P(\partial V/\partial P)_S=PV/K_S$ & volume\\
+$\lambda_T$ & $(\partial F/\partial P)_T$ & $-P(\partial V/\partial P)_T=PV/K_T$ & volume\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Thus the natural response bundle is the unit-typed direct sum
+\begin{equation}
+E_\Lambda
+=E_{\mathsf T}^{\oplus2}
+\oplus E_{\mathsf P}^{\oplus2}
+\oplus E_{\mathsf V}^{\oplus2},
+\label{eq:unit-typed-response-bundle}
+\end{equation}
+not an unqualified copy of $\R^6$.  A Hilbert norm, cut, orthogonal frame change, or Euclidean matrix representation is introduced only after reference scales
+\[
+T_*,\qquad P_*,\qquad V_*>0
+\]
+are declared and the response section is nondimensionalized as
+\begin{equation}
+\widehat\Lambda
+=
+\left(
+\frac{\lambda_P}{T_*},
+\frac{\lambda_V}{T_*},
+\frac{\lambda_S}{P_*},
+\frac{z_T}{P_*},
+\frac{z_S}{V_*},
+\frac{\lambda_T}{V_*}
+\right).
+\label{eq:nondimensional-response-section}
+\end{equation}
+
+\begin{proposition}[Scale covariance of the typed carrier]
+Let $T_*',P_*',V_*'>0$ be another set of reference scales.  The two nondimensional response representations are related by the invertible block-diagonal map
+\[
+C
+=\operatorname{diag}
+\left(
+\frac{T_*}{T_*'},\frac{T_*}{T_*'},
+\frac{P_*}{P_*'},\frac{P_*}{P_*'},
+\frac{V_*}{V_*'},\frac{V_*}{V_*'}
+\right).
+\]
+Consequently, every statement formulated covariantly under invertible response-frame changes is independent of the numerical choice of units.  Orthogonality or norm values are representation dependent unless the reference metric is transported with $C$.
+\end{proposition}
+
+\begin{proof}
+The transformation follows directly from \eqref{eq:nondimensional-response-section}.  Covariant tensors and bundle maps transform by the corresponding natural representations.  A fixed Euclidean inner product is not invariant under arbitrary nonorthogonal $C$, so it must be transported rather than silently reused.
+\end{proof}

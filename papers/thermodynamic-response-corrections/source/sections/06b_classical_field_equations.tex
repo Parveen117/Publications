@@ -1,0 +1,130 @@
+\subsection{Classical Recognition field equations}
+
+\begin{theorem}[Recognition gravity, gauge, and matter equations]
+\label{thm:classical-recognition-field-equations}
+A smooth datum $(g,A,\Phi)$ is a compactly supported critical point of \eqref{eq:ark-action} if and only if it satisfies
+\begin{align}
+G_{\mu\nu}+\Lambda_{\mathrm{cos}}g_{\mu\nu}
+&=\kappa\bigl(T^A_{\mu\nu}+T^\Phi_{\mu\nu}\bigr),
+\label{eq:recognition-einstein}\\
+D_{A\,\mu}F_A^{\mu\nu}
+&=g_{\RK}^2J_\Phi^\nu,
+\label{eq:recognition-yang-mills}\\
+D_A^\mu D_{A\,\mu}\Phi
+-\nabla V_{\RK}(\Phi)
+&=0.
+\label{eq:recognition-matter}
+\end{align}
+Here $G_{\mu\nu}=R_{\mu\nu}-\tfrac12R_gg_{\mu\nu}$ and $\nabla V_{\RK}$ is the fibre gradient.
+\end{theorem}
+
+\begin{proof}
+For a compactly supported metric variation $h^{\mu\nu}=\delta g^{\mu\nu}$,
+\[
+\delta(R_g\,\mathrm{vol}_g)
+=G_{\mu\nu}h^{\mu\nu}\,\mathrm{vol}_g
++\mathrm d(\text{boundary current}).
+\]
+The boundary current integrates to zero. By \eqref{eq:gauge-stress}--\eqref{eq:recognition-stress},
+\[
+\delta S_{\mathrm{matter}}
+=-\frac12\int_M
+(T^A_{\mu\nu}+T^\Phi_{\mu\nu})h^{\mu\nu}\,\mathrm{vol}_g.
+\]
+The coefficient of arbitrary $h$ is \eqref{eq:recognition-einstein}.
+
+Let $a\in\Omega^1(M;\operatorname{ad}P)$ be a compactly supported connection variation. Then $\delta_A F_A=D_Aa$. Covariant integration by parts gives
+\[
+\delta_A S_{\mathrm{gauge}}
+=\frac{1}{g_{\RK}^2}
+\int_M\langle D_{A\,\mu}F_A^{\mu\nu},a_\nu\rangle_{\mathfrak g}\,\mathrm{vol}_g.
+\]
+Since $\delta_A(D_{A\,\nu}\Phi)=\rho_*(a_\nu)\Phi$, the field kinetic term contributes
+\[
+-\int_M\langle J_\Phi^\nu,a_\nu\rangle_{\mathfrak g}\,\mathrm{vol}_g.
+\]
+The coefficient of arbitrary $a$ is \eqref{eq:recognition-yang-mills}.
+
+For a compactly supported field variation $\psi=\delta\Phi$,
+\[
+\delta_\Phi S_{\mathrm{ARK}}
+=\int_M\left[
+-\operatorname{Re}\langle D_{A\,\mu}\psi,D_A^\mu\Phi\rangle_E
+-\operatorname{Re}\langle\nabla V_{\RK}(\Phi),\psi\rangle_E
+\right]\mathrm{vol}_g.
+\]
+Covariant integration by parts gives
+\[
+\delta_\Phi S_{\mathrm{ARK}}
+=\int_M\operatorname{Re}\left\langle
+D_A^\mu D_{A\,\mu}\Phi-\nabla V_{\RK}(\Phi),\psi
+\right\rangle_E\mathrm{vol}_g,
+\]
+which is \eqref{eq:recognition-matter}. The converse follows by reversing the calculation.
+\end{proof}
+
+\begin{corollary}[Bianchi and conservation laws]
+\label{cor:recognition-conservation}
+Every solution satisfies
+\begin{align}
+D_AF_A&=0,
+\label{eq:gauge-bianchi}\\
+D_{A\,\nu}J_\Phi^\nu&=0,
+\label{eq:current-conservation}\\
+\nabla^\mu(T^A_{\mu\nu}+T^\Phi_{\mu\nu})&=0.
+\label{eq:stress-conservation}
+\end{align}
+\end{corollary}
+
+\begin{proof}
+The first identity is the curvature Bianchi identity. Gauge invariance of the fibre metric and $V_{\RK}$ gives the Noether identity whose on-shell form is \eqref{eq:current-conservation}. Diffeomorphism invariance gives \eqref{eq:stress-conservation}; equivalently it follows from $\nabla^\mu G_{\mu\nu}=0$ and \eqref{eq:recognition-einstein}.
+\end{proof}
+
+\begin{corollary}[Vacuum and standard reductions]
+\label{cor:field-reductions}
+The action-lifted equations contain the following exact reductions.
+\begin{enumerate}[label=(\roman*)]
+\item If $F_A=0$, $D_A\Phi=0$, $\nabla V_{\RK}(\Phi_0)=0$, and $V_{\RK}(\Phi_0)=V_0$, then
+\[
+G_{\mu\nu}+(\Lambda_{\mathrm{cos}}+\kappa V_0)g_{\mu\nu}=0.
+\]
+\item If the metric is fixed, \eqref{eq:recognition-yang-mills}--\eqref{eq:recognition-matter} are a Yang--Mills--matter system for $G_{\RK}$.
+\item If $G_{\RK}=U(1)$ and $\Phi$ is absent, \eqref{eq:recognition-einstein}--\eqref{eq:recognition-yang-mills} reduce to the Einstein--Maxwell equations with the chosen normalization.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+In (i), the only nonzero matter stress is $T^\Phi_{\mu\nu}=-V_0g_{\mu\nu}$. Parts (ii) and (iii) follow by specialization of the structure group and field content.
+\end{proof}
+
+\begin{corollary}[Target-residue potential]
+Let $\mathcal O_\Pi:E\to W$ be a gauge-equivariant bundle map representing a declared open target residue and let
+\[
+V_{\RK}(\Phi)=V_0(\Phi)+\frac{\mu^2}{2}\norm{\mathcal O_\Pi\Phi}^2.
+\]
+Then
+\[
+D_A^\mu D_{A\,\mu}\Phi
+-\nabla V_0(\Phi)
+-\mu^2\mathcal O_\Pi^*\mathcal O_\Pi\Phi=0.
+\]
+\end{corollary}
+
+\begin{proof}
+Gauge equivariance makes the norm term invariant, and
+$\nabla\tfrac12\norm{\mathcal O_\Pi\Phi}^2
+=\mathcal O_\Pi^*\mathcal O_\Pi\Phi$.
+\end{proof}
+
+\begin{theorem}[Action-lifted Extended Recognition Capstone]
+\label{thm:action-lifted-capstone}
+Assume the Extended Thermodynamic Recognition Capstone fibrewise on $M$. Assume that the completed fibres assemble into $E$, that their unitary datum-preserving automorphisms contain $G_{\RK}$, and that \eqref{eq:ark-action} is declared. Then the fibrewise Recognition-kernel, decoder, cut, curvature, and jet conclusions remain valid; parallel transport is governed by $A$ and $F_A$; stationary configurations satisfy \eqref{eq:recognition-einstein}--\eqref{eq:recognition-matter}; and the Bianchi, conservation, vacuum, gauge-matter, and Einstein--Maxwell reductions above are exact corollaries.
+\end{theorem}
+
+\begin{proof}
+The fibrewise statements are the Extended Capstone. The associated-bundle construction supplies $A$ and $F_A$. Theorem~\ref{thm:classical-recognition-field-equations} and Corollaries~\ref{cor:recognition-conservation}--\ref{cor:field-reductions} give the remaining conclusions.
+\end{proof}
+
+\begin{remark}[Kinematics versus dynamics]
+The field equations are corollaries of the action-lifted capstone. The Recognition theorem determines the lawful carrier, blind directions, target completion, connection sectors, and curvature accounting. The invariant action is the additional dynamical datum. Without an action or equivalent evolution principle, no theorem can uniquely choose a gravitational or gauge equation from kinematics alone.
+\end{remark}

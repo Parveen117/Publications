@@ -1,0 +1,77 @@
+\section{Spacetime Recognition action}
+\label{sec:spacetime-action}
+
+Section~\ref{sec:thermodynamic-recognition-square} removes the formerly missing interface between thermodynamic response and spacetime field theory.  A local-equilibrium field $\Theta$ and the response jet $j^N\Lambda$ define the pulled-back carrier $\cH^N_\Theta$.  The observation and target maps define the quotient bundle
+\[
+E_{\RK}=\Ker\cA/(\Ker\cA\cap\Ker\Pi),
+\]
+the distinguished thermodynamic Recognition field $\Phi_{\mathrm{th}}$, and the induced quotient connection $\nabla^{\RK}$.  Its curvature is the leading target-faithful transport-square defect.  Thus the fibre, field, connection, and curvature used below are constructed Recognition objects rather than a scalar and gauge field renamed after their equations are written.
+
+Let $(M,g)$ be an oriented, time-oriented Lorentzian manifold of dimension $n\ge3$.  The metric may be supplied as calibrated spacetime data or reconstructed from the normalized scalar principal symbol of target-faithful quotient propagation by Theorem~\ref{thm:principal-symbol-recognition-metric}; characteristic data alone determine its conformal class.  Assume either that $M$ has no boundary or that all variations below have compact support.  Let $P\to M$ be a compact orthogonal or unitary frame reduction of $E_{\RK}$ that preserves its fibre metric, target structure, and any declared cut sectors.  Write its compact structure group as $G_{\RK}$, its Lie algebra as $\mathfrak g_{\RK}$, and equip $\mathfrak g_{\RK}$ with an $\operatorname{Ad}$-invariant positive inner product $\langle\cdot,\cdot\rangle_{\mathfrak g}$.  Equivalently,
+\[
+E_{\RK}=P\times_\rho H_{\RK},
+\]
+where $H_{\RK}$ is the typical fibre of the target-relevant quotient or a declared Hilbert completion of it.
+
+The quotient connection $\nabla^{\RK}$ is represented in a local frame by a principal connection $A$ on $P$ and induces the covariant derivative $D_A$ on $E_{\RK}$.  Its curvature
+\[
+F_A\in\Omega^2(M;\operatorname{ad}P)
+\]
+is the local representative of the quotient curvature in \eqref{eq:quotient-curvature}.  A spacetime Recognition field is a section
+\[
+\Phi\in\Gamma(E_{\RK}).
+\]
+The section $\Phi_{\mathrm{th}}$ in \eqref{eq:thermodynamic-recognition-field} is the response-generated configuration singled out by the thermodynamic data; allowing $\Phi$ to vary gives the dynamical completion of that same target-relevant carrier.  Let $V_{\RK}:E_{\RK}\to\R$ be a smooth $G_{\RK}$-invariant fibre potential.
+
+\begin{definition}[Action-lifted Recognition datum]
+An action-lifted Recognition datum is
+\[
+\mathfrak R_{\mathrm{act}}
+=(M,g;\Theta,\cH^N_\Theta,\cA,\Pi;
+ P,A;E_{\RK},\Phi;V_{\RK};
+ \kappa,g_{\RK},\Lambda_{\mathrm{cos}}),
+\]
+where $\kappa>0$, $g_{\RK}>0$, and $\Lambda_{\mathrm{cos}}\in\R$.  Its minimal parity-even local action, classified by Theorem~\ref{thm:minimal-action-classification}, is
+\begin{equation}
+\begin{split}
+S_{\mathrm{ARK}}[g,A,\Phi]
+:=\int_M\Bigg[
+&\frac{1}{2\kappa}(R_g-2\Lambda_{\mathrm{cos}})
+-\frac{1}{4g_{\RK}^2}
+ \langle F_{A\,\mu\nu},F_A^{\mu\nu}\rangle_{\mathfrak g}
+\\
+&-\frac12\langle D_{A\,\mu}\Phi,D_A^{\mu}\Phi\rangle_{E_{\RK}}
+-V_{\RK}(\Phi)
+\Bigg]\,\mathrm{vol}_g.
+\end{split}
+\label{eq:ark-action}
+\end{equation}
+\end{definition}
+
+For $\xi\in\mathfrak g_{\RK}$, define the Recognition current by
+\begin{equation}
+\langle J_\Phi^\nu,\xi\rangle_{\mathfrak g}
+:=\operatorname{Re}\langle D_A^\nu\Phi,\rho_*(\xi)\Phi\rangle_{E_{\RK}}.
+\label{eq:recognition-current}
+\end{equation}
+Define
+\begin{align}
+T^{A}_{\mu\nu}
+&:=\frac{1}{g_{\RK}^2}
+\left(
+\langle F_{A\,\mu\alpha},F_{A\,\nu}{}^{\alpha}\rangle_{\mathfrak g}
+-\frac14g_{\mu\nu}
+ \langle F_{A\,\alpha\beta},F_A^{\alpha\beta}\rangle_{\mathfrak g}
+\right),
+\label{eq:gauge-stress}\\
+T^{\Phi}_{\mu\nu}
+&:=\operatorname{Re}\langle D_{A\,\mu}\Phi,D_{A\,\nu}\Phi\rangle_{E_{\RK}}
+-g_{\mu\nu}
+\left(
+\frac12\langle D_{A\,\alpha}\Phi,D_A^{\alpha}\Phi\rangle_{E_{\RK}}
++V_{\RK}(\Phi)
+\right).
+\label{eq:recognition-stress}
+\end{align}
+
+The thermodynamic Recognition square fixes the meaning of $E_{\RK}$, $\Phi_{\mathrm{th}}$, $A$, and $F_A$.  The target-faithful quotient propagation symbol fixes $g$ when its normalization is declared.  The minimal-action theorem fixes the action form within its declared locality, symmetry, parity, and derivative-order class.  The numerical couplings and nonlinear invariant potential remain additional constitutive data; they are not inferred from equilibrium identities alone.

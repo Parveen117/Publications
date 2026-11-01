@@ -1,0 +1,281 @@
+\section{Purpose, revision scope, and claim discipline}
+
+The purpose of this revision is not to enlarge the vocabulary of thermodynamics.  It is to identify the mathematical object actually present, prove the statements that follow from it, and separate those statements from constitutive or experimental hypotheses.  The equilibrium and response conventions follow standard thermodynamics \cite{Callen,deGrootMazur}; the geometric language is used only where its hypotheses are stated.  Throughout, complex Hilbert-space inner products are linear in the first argument.
+
+The paper retains four ideas from the earlier geometric presentation \cite{DabasThermoV2}:
+\begin{enumerate}[label=(\roman*)]
+\item the signed $T$--$V$--$S$--$P$ compass as a compact display of the four Legendre charts;
+\item constraint-dependent response coordinates denoted by $\lambda$ and $z$;
+\item recursive response derivatives, now formulated as a finite covariant jet tower;
+\item cyclic residue, now formulated through a Recognition Kernel and a prior lawful ledger.
+\end{enumerate}
+
+The revision makes four structural corrections.
+\begin{enumerate}[label=(\roman*)]
+\item A simple compressible equilibrium state space has two independent coordinates after the amount of substance is fixed.  The four symbols $T,V,S,P$ are overlapping chart variables, not four independent coordinates on an open subset of $\R^4$.
+\item Maxwell relations follow from exact potential differentials, equivalently from the vanishing pullback of the thermodynamic contact form.  They do not require a universal skew Jacobian of the $\lambda$-map.
+\item A nonzero loop integral is a geometric residue.  It becomes memory, hysteresis, or entropy production only after the relevant state extension, ledger, time orientation, units, and constitutive calibration are supplied.
+\item The Cut--Flow--Jet construction is proved on a finite graded carrier.  Infinite completed jet spaces and unbounded generators require additional analytic hypotheses and are not silently inherited from the finite theorem.
+\end{enumerate}
+
+\begin{principle}[Claim boundary]
+Every statement below is labelled by its hypotheses.  A constitutive example proves an identity inside that model; a finite certificate verifies a declared finite witness; neither is promoted into a universal physical law.
+\end{principle}
+
+\section{The equilibrium thermodynamic manifold}
+
+\subsection{Admissible simple-compressible chart}
+
+\begin{definition}[Admissible equilibrium chart]
+Let $\Omega\subset\R^2$ be an open connected set with coordinates $(S,V)$ and let
+\[
+U\in C^{r+2}(\Omega),\qquad r\ge2,
+\]
+be a molar or specific fundamental relation.  Define
+\[
+T=\pdc{U}{S}{V},\qquad P=-\pdc{U}{V}{S}.
+\]
+The chart is \emph{admissible} when $T>0$ and the Hessian $D^2U$ is positive definite.  Thus
+\[
+U_{SS}>0,\qquad U_{VV}>0,\qquad
+\det D^2U=U_{SS}U_{VV}-U_{SV}^2>0.
+\]
+Phase-transition singularities and chart-degeneracy loci are excluded from $\Omega$.
+\end{definition}
+
+Positive definiteness is stronger than is needed for several local identities, but it gives the standard stable single-phase regime and guarantees the regularity of the Legendre charts used below.
+
+\subsection{Contact formulation and Maxwell relations}
+
+Consider the five-dimensional contact space with coordinates $(U,S,V,T,P)$ and contact form (compare the standard contact-geometric thermodynamic formulation \cite{Mrugala1978})
+\[
+\vartheta=\dd U-T\,\dd S+P\,\dd V.
+\]
+The equilibrium embedding is
+\[
+\iota:\Omega\longrightarrow\R^5,
+\qquad
+\iota(S,V)=\bigl(U(S,V),S,V,U_S(S,V),-U_V(S,V)\bigr).
+\]
+
+\begin{theorem}[Equilibrium Legendre theorem]
+For an admissible equilibrium chart,
+\[
+\iota^*\vartheta=0
+\qquad\text{and}\qquad
+\iota^*(\dd\vartheta)=0.
+\]
+Equivalently,
+\begin{equation}
+\dd T\wedge\dd S=\dd P\wedge\dd V
+\label{eq:fundamental-two-form}
+\end{equation}
+on $\Omega$.  In every regular Legendre chart this identity is equivalent to the corresponding Maxwell relation.
+\end{theorem}
+
+\begin{proof}
+By definition,
+\[
+\iota^*\vartheta
+=\dd U-U_S\,\dd S-U_V\,\dd V=0.
+\]
+Exterior differentiation commutes with pullback, hence
+\[
+0=\dd(\iota^*\vartheta)=\iota^*(\dd\vartheta)
+=-\dd T\wedge\dd S+\dd P\wedge\dd V,
+\]
+which gives \eqref{eq:fundamental-two-form}.  In the $(S,V)$ chart, the coefficient of $\dd S\wedge\dd V$ is
+\[
+-\pdc{T}{V}{S}-\pdc{P}{S}{V},
+\]
+so \eqref{eq:fundamental-two-form} gives
+\[
+\pdc{T}{V}{S}=-\pdc{P}{S}{V}.
+\]
+The other Maxwell relations follow after the regular Legendre coordinate changes proved below.
+\end{proof}
+
+\subsection{Four potential corners}
+
+Define the Legendre potentials
+\[
+H=U+PV,\qquad F=U-TS,\qquad G=U+PV-TS.
+\]
+The positive-definite Hessian makes the maps to $(S,P)$, $(T,V)$, and $(T,P)$ locally invertible.
+
+\begin{proposition}[Exact potential differentials]
+On every admissible chart,
+\begin{align}
+\dd U&=T\,\dd S-P\,\dd V,\label{eq:dU}\\
+\dd H&=T\,\dd S+V\,\dd P,\label{eq:dH}\\
+\dd F&=-S\,\dd T-P\,\dd V,\label{eq:dF}\\
+\dd G&=-S\,\dd T+V\,\dd P.\label{eq:dG}
+\end{align}
+Consequently,
+\begin{align}
+\pdc{T}{V}{S}&=-\pdc{P}{S}{V},&
+\pdc{T}{P}{S}&=\pdc{V}{S}{P},\label{eq:maxwell1}\\
+\pdc{S}{V}{T}&=\pdc{P}{T}{V},&
+\pdc{S}{P}{T}&=-\pdc{V}{T}{P}.\label{eq:maxwell2}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+The differential identities follow by differentiating the Legendre transforms and using \eqref{eq:dU}.  Equality of mixed partial derivatives of $U,H,F,G$ gives \eqref{eq:maxwell1}--\eqref{eq:maxwell2}.
+\end{proof}
+
+The compass is therefore a chart mnemonic for one Legendre submanifold.  It is useful, but the invariant object is the contact pullback and the exact differentials.
+
+\section{Constraint-dependent response coordinates}
+
+\subsection{Definitions}
+
+Define the usual heat capacities
+\[
+C_P=T\pdc{S}{T}{P},
+\qquad
+C_V=T\pdc{S}{T}{V},
+\]
+and assume they are finite and nonzero on the chart under consideration.
+
+The symbols below denote derivatives after the relevant potential is pulled back to the indicated regular chart.  This removes the common ambiguity of differentiating a potential with respect to a variable that is not one of its natural coordinates.
+
+\begin{definition}[Six response coordinates]
+Set
+\begin{align}
+\lambda_P&:=\pdc{G}{S}{P},&
+\lambda_V&:=\pdc{F}{S}{V},\label{eq:lambda-caloric-def}\\
+\lambda_S&:=\pdc{H}{V}{S},&
+z_S&:=\pdc{U}{P}{S},\label{eq:lambda-adiabatic-def}\\
+\lambda_T&:=\pdc{F}{P}{T},&
+z_T&:=\pdc{G}{V}{T}.\label{eq:lambda-isothermal-def}
+\end{align}
+\end{definition}
+
+The pairs $(\lambda_P,\lambda_V)$, $(\lambda_S,z_T)$, and $(z_S,\lambda_T)$ have, respectively, common physical dimensions.  They should not be assembled into a Euclidean vector without a declared nondimensionalization or direct-sum unit structure.
+
+\subsection{Exact response formulas}
+
+\begin{theorem}[Response-coordinate theorem]
+On an admissible regular chart,
+\begin{align}
+\lambda_P&=-\frac{ST}{C_P},&
+\lambda_V&=-\frac{ST}{C_V},\label{eq:lambda-caloric}\\
+\lambda_S&=V\pdc{P}{V}{S},&
+z_S&=-P\pdc{V}{P}{S},\label{eq:lambda-adiabatic}\\
+\lambda_T&=-P\pdc{V}{P}{T},&
+z_T&=V\pdc{P}{V}{T}.\label{eq:lambda-isothermal}
+\end{align}
+They satisfy the four conjugate product identities
+\begin{equation}
+\lambda_P\frac{C_P}{T}=-S,
+\qquad
+\lambda_V\frac{C_V}{T}=-S,
+\qquad
+\lambda_Sz_S=-PV,
+\qquad
+\lambda_Tz_T=-PV.
+\label{eq:product-identities}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+At fixed $P$, use $G_T=-S$ and the reciprocal derivative
+\[
+\pdc{T}{S}{P}=\left(\pdc{S}{T}{P}\right)^{-1}=\frac{T}{C_P}.
+\]
+Therefore
+\[
+\lambda_P=G_T\pdc{T}{S}{P}=-\frac{ST}{C_P}.
+\]
+The $V$-constrained calculation with $F_T=-S$ gives $\lambda_V=-ST/C_V$.
+
+At fixed $S$, the chain rule in the $(S,V)$ chart and $H_P=V$ give
+\[
+\lambda_S=H_P\pdc{P}{V}{S}=V\pdc{P}{V}{S}.
+\]
+Likewise $U_V=-P$ gives
+\[
+z_S=U_V\pdc{V}{P}{S}=-P\pdc{V}{P}{S}.
+\]
+At fixed $T$, $F_V=-P$ and $G_P=V$ yield \eqref{eq:lambda-isothermal}.  Multiplying reciprocal derivatives gives \eqref{eq:product-identities}.
+\end{proof}
+
+\subsection{Caloric--mechanical closure}
+
+Define the positive isentropic and isothermal bulk moduli
+\[
+K_S:=-V\pdc{P}{V}{S},
+\qquad
+K_T:=-V\pdc{P}{V}{T},
+\]
+and compressibilities $\kappa_S=K_S^{-1}$ and $\kappa_T=K_T^{-1}$.
+Then
+\[
+\lambda_S=-K_S,
+\qquad
+z_T=-K_T,
+\qquad
+z_S=\frac{PV}{K_S},
+\qquad
+\lambda_T=\frac{PV}{K_T}.
+\]
+
+\begin{theorem}[Equilibrium closure identity]
+On every admissible chart,
+\begin{equation}
+\frac{C_P}{C_V}
+=\frac{K_S}{K_T}
+=\frac{\kappa_T}{\kappa_S}.
+\label{eq:cp-cv-kappa}
+\end{equation}
+Consequently, the dimensionless response ratios
+\[
+\Gamma_c:=\frac{\lambda_P}{\lambda_V}=\frac{C_V}{C_P},
+\qquad
+\Gamma_m:=\frac{\lambda_S}{z_T}=\frac{K_S}{K_T}
+\]
+satisfy
+\begin{equation}
+\boxed{\Gamma_c\Gamma_m=1.}
+\label{eq:equilibrium-invariant}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+In the $(T,V)$ chart, \eqref{eq:maxwell2} gives
+\[
+\dd S=\frac{C_V}{T}\,\dd T+\pdc{P}{T}{V}\,\dd V.
+\]
+Along $P=\mathrm{const}$,
+\[
+\pdc{V}{T}{P}
+=-\frac{(\partial P/\partial T)_V}{(\partial P/\partial V)_T}.
+\]
+Hence
+\begin{equation}
+C_P-C_V
+=-T\frac{\bigl((\partial P/\partial T)_V\bigr)^2}
+{(\partial P/\partial V)_T}.
+\label{eq:cp-minus-cv}
+\end{equation}
+Along $S=\mathrm{const}$,
+\[
+\pdc{T}{V}{S}
+=-\frac{T}{C_V}\pdc{P}{T}{V},
+\]
+so
+\begin{align*}
+\pdc{P}{V}{S}
+&=\pdc{P}{V}{T}
++\pdc{P}{T}{V}\pdc{T}{V}{S}\\
+&=\pdc{P}{V}{T}
+-\frac{T}{C_V}\left(\pdc{P}{T}{V}\right)^2\\
+&=\frac{C_P}{C_V}\pdc{P}{V}{T},
+\end{align*}
+where the last equality uses \eqref{eq:cp-minus-cv}.  Multiplication by $-V$ proves $K_S/K_T=C_P/C_V$.  The remaining identities follow from the definitions.
+\end{proof}
+
+\begin{remark}[What the closure identity does not imply]
+Equation \eqref{eq:equilibrium-invariant} is an equilibrium response identity.  It is not an integer index, a curvature flux, a spectral-flow charge, or entropy production.  A map from this scalar identity into any such object is additional structure and must be proved separately.
+\end{remark}

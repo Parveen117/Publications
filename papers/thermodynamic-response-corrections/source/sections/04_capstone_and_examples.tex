@@ -1,0 +1,156 @@
+\section{Thermodynamic Cut--Flow--Jet specialization}
+
+Take the finite response carrier at a state $x$ to be
+\[
+\cJ_N(x)
+=\bigoplus_{n=0}^N
+\Sym^nT_x^*\cM\otimes E_{\Lambda,x},
+\]
+where $E_\Lambda$ is the direct-sum unit bundle of the response coordinates.  A connection $\nabla$ produces the holonomic jet seed.  A thermodynamic process field $X$ induces transport on each layer.
+
+The exact factorization theorem applies when the process transport preserves the chosen connection.  In coordinates this is the condition that transport and covariant differentiation commute on the declared response section.  When they do not commute, $[\mathbb T_X,\mathbb R_\nabla]$ is a measurable compatibility defect; it must not be erased by calling every layer a derivative tower.
+
+A cut $\mathsf J$ can represent a declared orientation reversal, constraint-sector exchange, or pre/post comparison.  It becomes part of the theorem only after:
+\begin{enumerate}[label=(\roman*)]
+\item the response components are placed in a common Hilbert carrier by lawful nondimensionalization;
+\item $\mathsf J^*=\mathsf J=\mathsf J^{-1}$ is verified;
+\item its action on the observation and target maps is declared.
+\end{enumerate}
+No universal physical cut is inferred from notation alone.
+
+\begin{theorem}[Thermodynamic Recognition Capstone]
+Let $U(S,V)$ define an admissible equilibrium chart, let $\Lambda$ be the six-component response section, and fix a finite jet order $N$.  Suppose:
+\begin{enumerate}[label=(\roman*)]
+\item $\mathbb R_\nabla$ is a holonomic nilpotent raiser on $\cJ_N(x)$;
+\item $\mathbb T_X$ preserves the grading and $[\mathbb T_X,\mathbb R_\nabla]=0$;
+\item $\mathsf J$ is a self-adjoint unitary involution on the nondimensionalized carrier;
+\item $\cA_x:\cJ_N(x)\to Y$ and $\Pi_x:\cJ_N(x)\to Z$ are bounded;
+\item $\omega$ is a declared response one-form and $\ell$ is prior lawful ledger data on the state space on which the cycle is evaluated.
+\end{enumerate}
+Then the following conclusions hold simultaneously:
+\begin{enumerate}[label=(\alph*)]
+\item the equilibrium response coordinates satisfy the four product identities and $\Gamma_c\Gamma_m=1$;
+\item $\exp(t(\mathbb T_X+\mathbb R_\nabla))$ generates the finite covariant response jets with coefficients $t^n/n!$;
+\item the canonical augmented observation has kernel
+\[
+\Ker\cA_x\cap\Ker\Pi_x,
+\]
+and the minimum finite supplemental-observation dimension is
+\[
+\dim\frac{\Ker\cA_x}{\Ker\cA_x\cap\Ker\Pi_x};
+\]
+\item every bounding cycle obeys the exact open-residue identity
+\[
+\oint_{\partial A}(\omega-\ell)=\int_A\dd(\omega-\ell);
+\]
+\item the cut gives unique even/odd and even/odd-adjoint sectors, and its loop has the expansion
+\[
+\log\!\left(\mathsf J\e^{t\mathbb G}\mathsf J\e^{t\mathbb G}\right)
+=2t\mathbb G_{\mathrm e}
++t^2[\mathbb G_{\mathrm e},\mathbb G_{\mathrm o}]+O(t^3).
+\]
+\end{enumerate}
+If, in addition, a self-adjoint closure generator $K$ is declared, its clock-free Eye is exactly $E_K(\{0\})$.  All conclusions are invariant under grade-preserving unitary changes of representation.
+\end{theorem}
+
+\begin{proof}
+Part (a) is the response-coordinate and equilibrium-closure theorem package.  Part (b) is the finite flow-generated jet theorem.  Part (c) follows from canonical target-faithful completion and the minimum repair-rank theorem.  Part (d) is Recognition--Stokes.  Part (e) combines unique cut grading, the BCH cut-loop expansion, and the real cut--adjoint bi-grading.  The final statements are the clock-free Eye theorem and unitary invariance.  No conclusion uses the finite numerical packet as a substitute for these hypotheses.
+\end{proof}
+
+The observation $\cA$ may select experimentally available response channels from the finite jet.  The target $\Pi$ may select a constitutive coefficient or cycle response.  Section~\ref{sec:recognition-kernel} then determines whether the measurement is target-faithful, the exact blind quotient, the minimum supplemental probe rank, and the decoder burden.
+
+\section{Exact constitutive examples}
+
+\subsection{Ideal gas}
+
+For one mole of an ideal gas with constant $C_V>0$,
+\[
+PV=RT,
+\qquad
+S(T,V)=S_0+C_V\log\frac{T}{T_0}
++R\log\frac{V}{V_0},
+\qquad
+C_P=C_V+R.
+\]
+Let $\gamma=C_P/C_V$.  Then
+\[
+K_T=P,
+\qquad
+K_S=\gamma P,
+\]
+and the response coordinates are
+\begin{align*}
+\lambda_P&=-\frac{ST}{C_P},&
+\lambda_V&=-\frac{ST}{C_V},\\
+\lambda_S&=-\gamma P,&
+z_S&=\frac{V}{\gamma},\\
+\lambda_T&=V,&
+z_T&=-P.
+\end{align*}
+Therefore
+\[
+\Gamma_c=\frac1\gamma,
+\qquad
+\Gamma_m=\gamma,
+\qquad
+\Gamma_c\Gamma_m=1,
+\]
+and all four product identities in \eqref{eq:product-identities} hold exactly.
+
+\subsection{Van der Waals chart}
+
+For one mole, let
+\[
+P(T,V)=\frac{RT}{V-b}-\frac{a}{V^2},
+\qquad
+V>b,
+\]
+with constant $C_V>0$.  Using $\pdc{S}{V}{T}=\pdc{P}{T}{V}$, the entropy differential is
+\[
+\dd S=\frac{C_V}{T}\,\dd T+\frac{R}{V-b}\,\dd V,
+\]
+so locally
+\[
+S(T,V)=S_0+C_V\log\frac{T}{T_0}
++R\log\frac{V-b}{V_0-b}.
+\]
+On the stable single-phase domain
+\[
+\pdc{P}{V}{T}
+=-\frac{RT}{(V-b)^2}+\frac{2a}{V^3}<0,
+\]
+one has
+\begin{align*}
+K_T
+&=-V\pdc{P}{V}{T}
+=V\left(\frac{RT}{(V-b)^2}-\frac{2a}{V^3}\right),\\
+C_P
+&=C_V
+-T\frac{\bigl(R/(V-b)\bigr)^2}{(\partial P/\partial V)_T},\\
+K_S&=\frac{C_P}{C_V}K_T.
+\end{align*}
+The six response coordinates follow from Theorem~3.2, and the equilibrium invariant \eqref{eq:equilibrium-invariant} again equals one exactly.
+
+\begin{remark}[What the examples establish]
+The ideal-gas and van der Waals calculations verify the response identities inside two constitutive models.  They do not establish a universal hysteresis law, a universal curvature-to-entropy map, or experimental validity of a particular Recognition Kernel ledger.
+\end{remark}
+
+\section{Finite certificate and theorem boundary}
+
+A companion exact-rational packet tests one finite Cut--Flow--Jet Recognition model.  Its archived generated-result SHA-256 is
+\[
+\texttt{33d274dc5e4e75d0729601f47d0f6c5fbc1aa163ed0a2233dafc98cc88a185d2}.
+\]
+The source ZIP supplied for this revision has SHA-256
+\[
+\texttt{7945f537ab3fe81d5fa0ba105f6945dec1433208493c31885f3e7ae6a2616b12}.
+\]
+
+The finite packet is evidence for deterministic implementation of its declared matrices.  The general statements in this paper are supported by the proofs above, not by extrapolating a finite test fixture.  The public Recognition Kernel Framework reviewer archive is identified by DOI 10.5281/zenodo.21760119 \cite{DabasRKF}; the exact finite capstone packet is identified here by content hashes.  In particular, the packet does not establish:
+\begin{enumerate}[label=(\roman*)]
+\item a closed unbounded generator on an infinite completed jet carrier;
+\item convergence of an infinite direct-sum exponential;
+\item a universal physical cut, connection, or observer;
+\item equality of operator commutator curvature with entropy production or hysteresis without calibration;
+\item a quantum field theory, quantum gravity theory, or quantized entropy spectrum.
+\end{enumerate}
