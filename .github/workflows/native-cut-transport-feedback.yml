@@ -1,0 +1,82 @@
+name: Native cut transport feedback
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/native-relative-curvature/**'
+      - 'papers/native-loop-concentration/**'
+      - 'papers/native-cut-transport-feedback/**'
+      - 'papers/emk-recognition-geometry/certificates/emkg3_helical_sheet_memory.py'
+      - 'papers/curvature-information-duality/**'
+      - 'papers/generalized-euler-evolution/THEOREM.md'
+      - 'papers/emk-ugd-algebra/certificates/emkt2_time_ordered_transport.py'
+      - 'papers/recognition-seam-topology/README.md'
+      - 'papers/generalized-euler-evolution/GE3_RETURNING_MEMORY.md'
+      - 'papers/native-phase-observation-certification/**'
+      - 'papers/Clock_Free_*'
+      - 'papers/Clock_Relation_Reconstruction*'
+      - 'papers/Native_Phase_Word_Reconstruction*'
+      - 'Native_Phase_Memory_Development_Draft.tex'
+      - 'Native_Angular_Current_Development_Draft.tex'
+      - 'papers/emk-ugd-algebra/CONNECTION_CALCULUS.md'
+      - 'papers/native-thermodynamic-curvature/THEOREM.md'
+      - 'papers/emk-recognition-geometry/README.md'
+      - 'papers/information-invariance/README.md'
+      - 'papers/information-invariance/LEDGER.md'
+      - 'papers/information-invariance/paper/information_invariance_v2.tex'
+      - 'papers/yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md'
+      - 'papers/generalized-euler-evolution/GE2_CLOCK_FREE_RECOGNITION_GENERATOR.md'
+      - '.github/workflows/native-cut-transport-feedback.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'papers/native-relative-curvature/**'
+      - 'papers/native-loop-concentration/**'
+      - 'papers/native-cut-transport-feedback/**'
+      - 'papers/emk-recognition-geometry/certificates/emkg3_helical_sheet_memory.py'
+      - 'papers/curvature-information-duality/**'
+      - 'papers/generalized-euler-evolution/THEOREM.md'
+      - 'papers/emk-ugd-algebra/certificates/emkt2_time_ordered_transport.py'
+      - 'papers/recognition-seam-topology/README.md'
+      - 'papers/generalized-euler-evolution/GE3_RETURNING_MEMORY.md'
+      - 'papers/native-phase-observation-certification/**'
+      - 'papers/Clock_Free_*'
+      - 'papers/Clock_Relation_Reconstruction*'
+      - 'papers/Native_Phase_Word_Reconstruction*'
+      - 'Native_Phase_Memory_Development_Draft.tex'
+      - 'Native_Angular_Current_Development_Draft.tex'
+      - 'papers/emk-ugd-algebra/CONNECTION_CALCULUS.md'
+      - 'papers/native-thermodynamic-curvature/THEOREM.md'
+      - 'papers/emk-recognition-geometry/README.md'
+      - 'papers/information-invariance/README.md'
+      - 'papers/information-invariance/LEDGER.md'
+      - 'papers/information-invariance/paper/information_invariance_v2.tex'
+      - 'papers/yang-mills-certified-benchmark/YM54_RESPONSE_CURVATURE_PROTOCOL_BRIDGE.md'
+      - 'papers/generalized-euler-evolution/GE2_CLOCK_FREE_RECOGNITION_GENERATOR.md'
+      - '.github/workflows/native-cut-transport-feedback.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  native-cut-transport-feedback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout Publications
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Pinned native runtime
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '24.19.0'
+          package-manager-cache: false
+      - name: Coupled cut transport and inherited native certification
+        run: python3.12 papers/native-cut-transport-feedback/verify.py --check

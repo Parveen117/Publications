@@ -1,0 +1,34 @@
+{
+  "protocol": "NAC1_SOURCE_PINS_V1",
+  "repository_base": "fc4619637f9417ecd0f0105bae995fab9cc3d9bd",
+  "native_engine": {
+    "native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+  },
+  "native_archive_sha256": "6c48b1353a891160623628c88def72ae90c807eb2a3a4186a4aa3ac15ef5da43",
+  "packet_files": {
+    "README.md": "7c2d8fc52598b1d969713fc4a4d96eb4ef3b610a8a6c1e9c6faa7a11800c06c5",
+    "THEOREM.md": "22b0663fa55b7ccbd6b6d238a75ea266e2cf85fc3f168d62ceaf2753af87705b",
+    "verify.cjs": "f241612b285460140650c58b145534d9cdfdfc9862c8d1e2ac2189ce769fcf1d",
+    "run.py": "354387be9638605435959450abdfaec8f6fb73fce992b3fc83da739c4dfde9b6"
+  },
+  "predecessor_files": {
+    "papers/native-phase-observation-certification/CLAIM_COVERAGE.md": "7e492bf97b2362db0b940bab1fec2b51d04e41d4802b7ddf4140700985893be3",
+    "papers/native-phase-observation-certification/CERTIFICATE.json": "54f95cfd6b0e18f22e336aed045e4b6931c29c77cb8be1faaa8f5f3ed0a544f5",
+    "papers/native-relative-curvature/THEOREM.md": "05520b64e0110a370b3f5e955513fddf5a511bd41fc1125be95ab194c12bc1ea",
+    "papers/native-relative-curvature/CERTIFICATE.json": "8575bc635f9810885312dd731953ee04225ddffbeee7df58e99975613fbe5f44",
+    "papers/native-jacobian-cut-certification/THEOREM.md": "6240606cb6ad10514f16132592b46a1929703316879da543c62353f0244101ee",
+    "papers/native-jacobian-cut-certification/CERTIFICATE.json": "8b1d29d0eb0856d4eb2b3f1bd4553a5164d4e60814a027ab4c48ac532c2f0811",
+    "papers/native-four-dimensional-hinge/THEOREM.md": "59bd0b15b51d1a5b10f159e8d6c1d00c62823711e7940fba93b60a0273eaaad2",
+    "papers/native-four-dimensional-hinge/CERTIFICATE.json": "fe6b6ed35bc55656add884f3be5deeba380ee5ef4a3e8fe1c9c015059107a986",
+    "papers/native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "papers/native-cut-record-completeness/CERTIFICATE.json": "40d4487297fc8843ead9e4989be63a8957c50d2b0c94bf6df4d5b17ce86a8651",
+    "papers/native-matter-geometry-holonomy/THEOREM.md": "77f7e0eb5da1c27b815445f9e494fe2ce267b92d9c8a8d4d3196b97bbe316df4",
+    "papers/native-matter-geometry-holonomy/CERTIFICATE.json": "63941f4a1f22c698387cd3a90fb46e75bbee073069a0543c1b9cfa6dab9c9291"
+  },
+  "primary_reference": {
+    "title": "NIST DLMF 18.5.1, Chebyshev representation",
+    "url": "https://dlmf.nist.gov/18.5.E1",
+    "use": "Classical identification of the natively derived scalar recurrence; not a computational dependency."
+  }
+}

@@ -1,0 +1,3807 @@
+{
+  "protocol": "LPS1_REGULAR_LOCAL_PHYSICAL_SECTOR_V1",
+  "status": "PASS_SELECTED_REGULAR_LOCAL_PHYSICAL_SECTOR",
+  "source_pins_sha256": "2ae3b1d8d2d8f0b2c6c7b65ef263e75a7adbf3f2c44327719da4987c74518138",
+  "checks": [
+    {
+      "name": "Gram_real:0:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:0:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:0:0",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:0:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:0:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:0:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:0:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:0:1",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:0:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:1:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:0:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:0:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:0:2",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:0:2",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:2:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:2:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:0:3",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:0:3",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:0:3",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:0:3",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:3:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:3:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:3:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:0:4",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:0:4",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:0:4",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:0:4",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:4:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:4:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:4:2",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:4:3",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:0:4:4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_norm_exact:0",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:0:-3",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:0:-3",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:0:-2",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:0:-2",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:0:-1",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:0:-1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:0:0",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:0:0",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:0:1",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:0:1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:0:2",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:0:2",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:0:3",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:0:3",
+      "passed": true
+    },
+    {
+      "name": "level_one_phase:0",
+      "passed": true
+    },
+    {
+      "name": "level_one_modulus:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:2|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:0:1.1|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:0:1,-1",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:0:2,-2",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:0:3,-3",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:0:2,-1",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:0:-2,1",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:0:1",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:0:2",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:0:3",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:0:4",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:0:5",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:0:6",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:1:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:1:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:1:0",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:1:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:0:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:1:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:1:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:1:1",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:1:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:1:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:1:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:1:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:1:2",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:1:2",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:2:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:2:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:1:3",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:1:3",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:1:3",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:1:3",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:3:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:3:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:3:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:1:4",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:1:4",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:1:4",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:1:4",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:4:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:4:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:4:2",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:4:3",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:1:4:4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_norm_exact:1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:1:-3",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:1:-3",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:1:-2",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:1:-2",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:1:-1",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:1:-1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:1:0",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:1:0",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:1:1",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:1:1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:1:2",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:1:2",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:1:3",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:1:3",
+      "passed": true
+    },
+    {
+      "name": "level_one_phase:1",
+      "passed": true
+    },
+    {
+      "name": "level_one_modulus:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:2|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:1:1.1|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:1:1,-1",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:1:2,-2",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:1:3,-3",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:1:2,-1",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:1:-2,1",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:1:1",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:1:2",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:1:3",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:1:4",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:1:5",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:1:6",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:-1:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:-1:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:-1:0",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:-1:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:0:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:-1:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:-1:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:-1:1",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:-1:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:1:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:-1:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:-1:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:-1:2",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:-1:2",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:2:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:2:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:-1:3",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:-1:3",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:-1:3",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:-1:3",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:3:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:3:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:3:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:-1:4",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:-1:4",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:-1:4",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:-1:4",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:4:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:4:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:4:2",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:4:3",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:-1:4:4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_norm_exact:-1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:-1:-3",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:-1:-3",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:-1:-2",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:-1:-2",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:-1:-1",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:-1:-1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:-1:0",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:-1:0",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:-1:1",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:-1:1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:-1:2",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:-1:2",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:-1:3",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:-1:3",
+      "passed": true
+    },
+    {
+      "name": "level_one_phase:-1",
+      "passed": true
+    },
+    {
+      "name": "level_one_modulus:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:2|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:-1:1.1|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:-1:1,-1",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:-1:2,-2",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:-1:3,-3",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:-1:2,-1",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:-1:-2,1",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:-1:1",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:-1:2",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:-1:3",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:-1:4",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:-1:5",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:-1:6",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:3/2:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:3/2:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:3/2:0",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:3/2:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:0:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:3/2:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:3/2:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:3/2:1",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:3/2:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:1:0",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:3/2:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:3/2:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:3/2:2",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:3/2:2",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:2:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:2:1",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:3/2:3",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:3/2:3",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:3/2:3",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:3/2:3",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:3:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:3:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:3:2",
+      "passed": true
+    },
+    {
+      "name": "Gram_real:3/2:4",
+      "passed": true
+    },
+    {
+      "name": "Gram_inverse:3/2:4",
+      "passed": true
+    },
+    {
+      "name": "Gram_matching_copies:3/2:4",
+      "passed": true
+    },
+    {
+      "name": "paired_level_norm:3/2:4",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:4:0",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:4:1",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:4:2",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:4:3",
+      "passed": true
+    },
+    {
+      "name": "positive_descendant:3/2:4:4",
+      "passed": true
+    },
+    {
+      "name": "cutoff_norm_exact:3/2",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:3/2:-3",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:3/2:-3",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:3/2:-2",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:3/2:-2",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:3/2:-1",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:3/2:-1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:3/2:0",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:3/2:0",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:3/2:1",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:3/2:1",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:3/2:2",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:3/2:2",
+      "passed": true
+    },
+    {
+      "name": "source_factorization:3/2:3",
+      "passed": true
+    },
+    {
+      "name": "gluing_interior:3/2:3",
+      "passed": true
+    },
+    {
+      "name": "level_one_phase:3/2",
+      "passed": true
+    },
+    {
+      "name": "level_one_modulus:3/2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:2|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|2:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|2:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|2:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|2:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|2:2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1.1:-2",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1.1:-1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1.1:0",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1.1:1",
+      "passed": true
+    },
+    {
+      "name": "dual_gluing:3/2:1.1|1.1:2",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:3/2:1,-1",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:3/2:2,-2",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:3/2:3,-3",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:3/2:2,-1",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_c7:3/2:-2,1",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:3/2:1",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:3/2:2",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:3/2:3",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:3/2:4",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:3/2:5",
+      "passed": true
+    },
+    {
+      "name": "sl2_norm_recurrence:3/2:6",
+      "passed": true
+    },
+    {
+      "name": "zero_mode_source_no_intercept:2:1",
+      "passed": true
+    },
+    {
+      "name": "zero_mode_source_no_intercept:-2:1",
+      "passed": true
+    },
+    {
+      "name": "zero_mode_source_no_intercept:1:0",
+      "passed": true
+    },
+    {
+      "name": "physical_packet_unit_norm",
+      "passed": true
+    },
+    {
+      "name": "physical_packet_mean_P",
+      "passed": true
+    },
+    {
+      "name": "physical_packet_second_moment",
+      "passed": true
+    },
+    {
+      "name": "physical_Q_weight_symmetry:2",
+      "passed": true
+    },
+    {
+      "name": "physical_Q_weight_symmetry:-2",
+      "passed": true
+    },
+    {
+      "name": "local:T_plus:2,3,1,-2,4,3",
+      "passed": true
+    },
+    {
+      "name": "local:T_minus:2,3,1,-2,4,3",
+      "passed": true
+    },
+    {
+      "name": "local:C_spatial_constant:2,3,1,-2,4,3",
+      "passed": true
+    },
+    {
+      "name": "local:C_plus_invariant:2,3,1,-2,4,3",
+      "passed": true
+    },
+    {
+      "name": "local:C_minus_invariant:2,3,1,-2,4,3",
+      "passed": true
+    },
+    {
+      "name": "local:T_plus:2,2,0,1,-1,2",
+      "passed": true
+    },
+    {
+      "name": "local:T_minus:2,2,0,1,-1,2",
+      "passed": true
+    },
+    {
+      "name": "local:C_spatial_constant:2,2,0,1,-1,2",
+      "passed": true
+    },
+    {
+      "name": "local:C_plus_invariant:2,2,0,1,-1,2",
+      "passed": true
+    },
+    {
+      "name": "local:C_minus_invariant:2,2,0,1,-1,2",
+      "passed": true
+    },
+    {
+      "name": "local:T_plus:-2,-3,1,2,3,-1",
+      "passed": true
+    },
+    {
+      "name": "local:T_minus:-2,-3,1,2,3,-1",
+      "passed": true
+    },
+    {
+      "name": "local:C_spatial_constant:-2,-3,1,2,3,-1",
+      "passed": true
+    },
+    {
+      "name": "local:C_plus_invariant:-2,-3,1,2,3,-1",
+      "passed": true
+    },
+    {
+      "name": "local:C_minus_invariant:-2,-3,1,2,3,-1",
+      "passed": true
+    },
+    {
+      "name": "local:T_plus:3/2,2/3,-2,3,1/2,4",
+      "passed": true
+    },
+    {
+      "name": "local:T_minus:3/2,2/3,-2,3,1/2,4",
+      "passed": true
+    },
+    {
+      "name": "local:C_spatial_constant:3/2,2/3,-2,3,1/2,4",
+      "passed": true
+    },
+    {
+      "name": "local:C_plus_invariant:3/2,2/3,-2,3,1/2,4",
+      "passed": true
+    },
+    {
+      "name": "local:C_minus_invariant:3/2,2/3,-2,3,1/2,4",
+      "passed": true
+    },
+    {
+      "name": "word_confluence",
+      "passed": true
+    },
+    {
+      "name": "c7_central_polynomial",
+      "passed": true
+    },
+    {
+      "name": "c7_central_polynomial:replay",
+      "passed": true
+    },
+    {
+      "name": "phase_denominator_identity",
+      "passed": true
+    },
+    {
+      "name": "phase_denominator_identity:replay",
+      "passed": true
+    },
+    {
+      "name": "matching_weight_difference",
+      "passed": true
+    },
+    {
+      "name": "matching_weight_difference:replay",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_intercepts_cancel",
+      "passed": true
+    },
+    {
+      "name": "auxiliary_intercepts_cancel:replay",
+      "passed": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "name": "cutoff_is_exact_all_mode_state:0:-2",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:0:-1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:0:1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:0:2",
+      "rejected": true
+    },
+    {
+      "name": "naive_improvement_free_pairing:0",
+      "rejected": true
+    },
+    {
+      "name": "wrong_pairing_fails_test:0",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:1:-2",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:1:-1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:1:1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:1:2",
+      "rejected": true
+    },
+    {
+      "name": "naive_improvement_free_pairing:1",
+      "rejected": true
+    },
+    {
+      "name": "wrong_pairing_fails_test:1",
+      "rejected": true
+    },
+    {
+      "name": "wrong_pairing_conjugation:1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:-1:-2",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:-1:-1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:-1:1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:-1:2",
+      "rejected": true
+    },
+    {
+      "name": "naive_improvement_free_pairing:-1",
+      "rejected": true
+    },
+    {
+      "name": "wrong_pairing_fails_test:-1",
+      "rejected": true
+    },
+    {
+      "name": "wrong_pairing_conjugation:-1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:3/2:-2",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:3/2:-1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:3/2:1",
+      "rejected": true
+    },
+    {
+      "name": "cutoff_is_exact_all_mode_state:3/2:2",
+      "rejected": true
+    },
+    {
+      "name": "naive_improvement_free_pairing:3/2",
+      "rejected": true
+    },
+    {
+      "name": "wrong_pairing_fails_test:3/2",
+      "rejected": true
+    },
+    {
+      "name": "wrong_pairing_conjugation:3/2",
+      "rejected": true
+    },
+    {
+      "name": "unequal_zero_weights_allow_vacuum_pairing",
+      "rejected": true
+    },
+    {
+      "name": "signed_measure_is_positive",
+      "rejected": true
+    },
+    {
+      "name": "naive_Q_omits_weight_correction:2",
+      "rejected": true
+    },
+    {
+      "name": "naive_Q_omits_weight_correction:-2",
+      "rejected": true
+    },
+    {
+      "name": "local:omit_derivative_improvement:2,3,1,-2,4,3",
+      "rejected": true
+    },
+    {
+      "name": "local:omit_derivative_improvement:2,2,0,1,-1,2",
+      "rejected": true
+    },
+    {
+      "name": "local:omit_derivative_improvement:-2,-3,1,2,3,-1",
+      "rejected": true
+    },
+    {
+      "name": "local:omit_derivative_improvement:3/2,2/3,-2,3,1/2,4",
+      "rejected": true
+    },
+    {
+      "name": "local:nonzero_P_implies_nonvanishing_current",
+      "rejected": true
+    }
+  ],
+  "presentations": [
+    {
+      "spec": {
+        "objects": [
+          "*"
+        ],
+        "tokens": [
+          {
+            "name": "t",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "m",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "a",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          },
+          {
+            "name": "b",
+            "from": "*",
+            "to": "*",
+            "charge": "0"
+          }
+        ],
+        "rules": [
+          {
+            "id": "mt",
+            "lhs": [
+              "m",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "m"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar parameters"
+          },
+          {
+            "id": "at",
+            "lhs": [
+              "a",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "a"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar parameters"
+          },
+          {
+            "id": "am",
+            "lhs": [
+              "a",
+              "m"
+            ],
+            "rhs": [
+              [
+                [
+                  "m",
+                  "a"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar parameters"
+          },
+          {
+            "id": "bt",
+            "lhs": [
+              "b",
+              "t"
+            ],
+            "rhs": [
+              [
+                [
+                  "t",
+                  "b"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar parameters"
+          },
+          {
+            "id": "bm",
+            "lhs": [
+              "b",
+              "m"
+            ],
+            "rhs": [
+              [
+                [
+                  "m",
+                  "b"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar parameters"
+          },
+          {
+            "id": "ba",
+            "lhs": [
+              "b",
+              "a"
+            ],
+            "rhs": [
+              [
+                [
+                  "a",
+                  "b"
+                ],
+                [
+                  "1",
+                  "0"
+                ]
+              ]
+            ],
+            "source": "commuting scalar parameters"
+          }
+        ]
+      },
+      "audit": {
+        "protocol": "NATIVE_CRITICAL_PAIR_AUDIT_V1",
+        "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+        "status": "CONFLUENT_BY_CHECKED_DIAMONDS",
+        "termination": "strict degree-lex decrease",
+        "criticalPairs": 4,
+        "resolutions": [
+          {
+            "word": [
+              "a",
+              "m",
+              "t"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              2,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "a",
+                      "t",
+                      "m"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "a",
+                    "t",
+                    "m"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "at",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "t",
+                    "a",
+                    "m"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "am",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "t",
+                      "m",
+                      "a"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "m",
+                      "a",
+                      "t"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "m",
+                    "a",
+                    "t"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "at",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "m",
+                    "t",
+                    "a"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "mt",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "t",
+                      "m",
+                      "a"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "b",
+              "m",
+              "t"
+            ],
+            "first": [
+              0,
+              1
+            ],
+            "second": [
+              4,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "b",
+                      "t",
+                      "m"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "b",
+                    "t",
+                    "m"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "bt",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "t",
+                    "b",
+                    "m"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "bm",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "t",
+                      "m",
+                      "b"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "m",
+                      "b",
+                      "t"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "m",
+                    "b",
+                    "t"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "bt",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "m",
+                    "t",
+                    "b"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "mt",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "t",
+                      "m",
+                      "b"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "b",
+              "a",
+              "t"
+            ],
+            "first": [
+              1,
+              1
+            ],
+            "second": [
+              5,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "b",
+                      "t",
+                      "a"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "b",
+                    "t",
+                    "a"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "bt",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "t",
+                    "b",
+                    "a"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "ba",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "t",
+                      "a",
+                      "b"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "a",
+                      "b",
+                      "t"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "a",
+                    "b",
+                    "t"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "bt",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "a",
+                    "t",
+                    "b"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "at",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "t",
+                      "a",
+                      "b"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          },
+          {
+            "word": [
+              "b",
+              "a",
+              "m"
+            ],
+            "first": [
+              2,
+              1
+            ],
+            "second": [
+              5,
+              0
+            ],
+            "kind": "overlap",
+            "closed": true,
+            "left": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "b",
+                      "m",
+                      "a"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "b",
+                    "m",
+                    "a"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "bm",
+                  "position": 0
+                },
+                {
+                  "word": [
+                    "m",
+                    "b",
+                    "a"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "ba",
+                  "position": 1
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "m",
+                      "a",
+                      "b"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            },
+            "right": {
+              "protocol": "NATIVE_REWRITE_WITNESS_V1",
+              "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+              "input": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "a",
+                      "b",
+                      "m"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              },
+              "steps": [
+                {
+                  "word": [
+                    "a",
+                    "b",
+                    "m"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "bm",
+                  "position": 1
+                },
+                {
+                  "word": [
+                    "a",
+                    "m",
+                    "b"
+                  ],
+                  "coefficient": [
+                    "1",
+                    "0"
+                  ],
+                  "rule": "am",
+                  "position": 0
+                }
+              ],
+              "output": {
+                "from": "*",
+                "to": "*",
+                "terms": [
+                  [
+                    [
+                      "m",
+                      "a",
+                      "b"
+                    ],
+                    [
+                      "1",
+                      "0"
+                    ]
+                  ]
+                ]
+              }
+            }
+          }
+        ],
+        "open": []
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "name": "c7_central_polynomial",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "m"
+            ],
+            [
+              "-7/12",
+              "0"
+            ]
+          ],
+          [
+            [
+              "m",
+              "m",
+              "m"
+            ],
+            [
+              "7/12",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "m"
+            ],
+            [
+              "-7/12",
+              "0"
+            ]
+          ],
+          [
+            [
+              "m",
+              "m",
+              "m"
+            ],
+            [
+              "7/12",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "phase_denominator_identity",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "t",
+              "t"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "t",
+              "t"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "matching_weight_difference",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a",
+              "b"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ],
+          [
+            [
+              "b",
+              "a"
+            ],
+            [
+              "1/2",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a",
+              "b"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": [
+            [
+              [
+                "a",
+                "b"
+              ],
+              [
+                "-1/2",
+                "0"
+              ]
+            ],
+            [
+              [
+                "b",
+                "a"
+              ],
+              [
+                "1/2",
+                "0"
+              ]
+            ]
+          ]
+        },
+        "steps": [
+          {
+            "word": [
+              "b",
+              "a"
+            ],
+            "coefficient": [
+              "1/2",
+              "0"
+            ],
+            "rule": "ba",
+            "position": 0
+          }
+        ],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    },
+    {
+      "name": "auxiliary_intercepts_cancel",
+      "lhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "b"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "rhs": {
+        "from": "*",
+        "to": "*",
+        "terms": [
+          [
+            [
+              "a"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "b"
+            ],
+            [
+              "-1",
+              "0"
+            ]
+          ]
+        ]
+      },
+      "certificate": {
+        "protocol": "NATIVE_REWRITE_WITNESS_V1",
+        "presentation": "d407e3b8da122deb9ddbc5ee9d16ec5eba9f587112d0f9a602704306a86a3fdc",
+        "input": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        },
+        "steps": [],
+        "output": {
+          "from": "*",
+          "to": "*",
+          "terms": []
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "t": "0",
+      "h": "1/4",
+      "first_level_coefficient": [
+        "-1/2",
+        "0"
+      ],
+      "level_two_Gram": [
+        [
+          [
+            "9/2",
+            "0"
+          ],
+          [
+            "3/2",
+            "0"
+          ]
+        ],
+        [
+          [
+            "3/2",
+            "0"
+          ],
+          [
+            "3/2",
+            "0"
+          ]
+        ]
+      ],
+      "cutoff_level": 4,
+      "cutoff_norm_squared": [
+        "12",
+        "0"
+      ],
+      "interpretation": "finite witnesses only; all-level kernel proved in THEOREM.md"
+    },
+    {
+      "t": "1",
+      "h": "1/2",
+      "first_level_coefficient": [
+        "0",
+        "-1/2"
+      ],
+      "level_two_Gram": [
+        [
+          [
+            "11/2",
+            "0"
+          ],
+          [
+            "3",
+            "0"
+          ]
+        ],
+        [
+          [
+            "3",
+            "0"
+          ],
+          [
+            "4",
+            "0"
+          ]
+        ]
+      ],
+      "cutoff_level": 4,
+      "cutoff_norm_squared": [
+        "12",
+        "0"
+      ],
+      "interpretation": "finite witnesses only; all-level kernel proved in THEOREM.md"
+    },
+    {
+      "t": "-1",
+      "h": "1/2",
+      "first_level_coefficient": [
+        "0",
+        "1/2"
+      ],
+      "level_two_Gram": [
+        [
+          [
+            "11/2",
+            "0"
+          ],
+          [
+            "3",
+            "0"
+          ]
+        ],
+        [
+          [
+            "3",
+            "0"
+          ],
+          [
+            "4",
+            "0"
+          ]
+        ]
+      ],
+      "cutoff_level": 4,
+      "cutoff_norm_squared": [
+        "12",
+        "0"
+      ],
+      "interpretation": "finite witnesses only; all-level kernel proved in THEOREM.md"
+    },
+    {
+      "t": "3/2",
+      "h": "13/16",
+      "first_level_coefficient": [
+        "5/26",
+        "-6/13"
+      ],
+      "level_two_Gram": [
+        [
+          [
+            "27/4",
+            "0"
+          ],
+          [
+            "39/8",
+            "0"
+          ]
+        ],
+        [
+          [
+            "39/8",
+            "0"
+          ],
+          [
+            "273/32",
+            "0"
+          ]
+        ]
+      ],
+      "cutoff_level": 4,
+      "cutoff_norm_squared": [
+        "12",
+        "0"
+      ],
+      "interpretation": "finite witnesses only; all-level kernel proved in THEOREM.md"
+    }
+  ],
+  "localFixtures": [
+    {
+      "ap": "2",
+      "am": "3",
+      "dp": "1",
+      "dm": "-2",
+      "qp": "-1/12",
+      "k": "7/12",
+      "deltaAp": "10",
+      "deltaAm": "-1"
+    },
+    {
+      "ap": "2",
+      "am": "2",
+      "dp": "0",
+      "dm": "1",
+      "qp": "1/4",
+      "k": "-1/4",
+      "deltaAp": "4",
+      "deltaAm": "-3"
+    },
+    {
+      "ap": "-2",
+      "am": "-3",
+      "dp": "1",
+      "dm": "2",
+      "qp": "-7/12",
+      "k": "1/12",
+      "deltaAp": "5",
+      "deltaAm": "-9"
+    },
+    {
+      "ap": "3/2",
+      "am": "2/3",
+      "dp": "-2",
+      "dm": "3",
+      "qp": "19/12",
+      "k": "-35/12",
+      "deltaAp": "5",
+      "deltaAm": "-25/6"
+    }
+  ],
+  "results": {
+    "auxiliary_c": 7,
+    "local_constraint_c": 0,
+    "regular_branch": "P!=0,K=0",
+    "physical_measure": "dP/|P|",
+    "physical_solution": "two chirality descendant pairings in the test dual",
+    "physical_observables": "HQS reduced algebra transported with domains",
+    "unique_rigging": false,
+    "full_kernel_classified": false,
+    "classical_regular_local_reduction_proved": true,
+    "relational_length_quantized_after_reduction": true,
+    "pointwise_quantum_field_length_constructed": false,
+    "full_physical_quantum_gravity": false
+  },
+  "summary": {
+    "exact_checks": 597,
+    "symbolic_certificates": 4,
+    "negative_controls": 36
+  }
+}

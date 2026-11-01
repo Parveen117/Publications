@@ -1,0 +1,294 @@
+{
+  "local_inputs": [
+    {
+      "git_blob_sha": "d1fcf3d8f9e7cb576d4bd80e104f48fe16c28a3e",
+      "path": ".github/workflows/native-thermodynamic-curvature.yml",
+      "sha256": "0b915f6e81995059d678de1880ad560d09e66d44660e4339fca3ea5c3566fe06"
+    },
+    {
+      "git_blob_sha": "48fd8bf312553e005576b59e252d06dc7e2ef158",
+      "path": "papers/native-thermodynamic-curvature/README.md",
+      "sha256": "eb097fffc60bd824a0d8a4c0c73ea290770b6d237ff334d24fef1e4df7cea917"
+    },
+    {
+      "git_blob_sha": "0dcb1df7e55b6190e196024ecf88b7ef2747104f",
+      "path": "papers/native-thermodynamic-curvature/SOURCE_MAP.md",
+      "sha256": "12793522839a603fecd749efb47cf04c252bd978df77298636b44586a8135422"
+    },
+    {
+      "git_blob_sha": "980fab7844d990329c4390b5b52f55ffbb34de63",
+      "path": "papers/native-thermodynamic-curvature/THEOREM.md",
+      "sha256": "a01db1d145ad6155632aa2c7e239114c4e4c736dd2b814f059d5c3d3945fda29"
+    },
+    {
+      "git_blob_sha": "7a8ca6a612fc969fa3dea89bc41a2267677eac11",
+      "path": "papers/native-thermodynamic-curvature/build_paper.py",
+      "sha256": "5fa716eeb2897189d113e58004ee7af21f7282e31e9b5327c73ef9941a528c17"
+    },
+    {
+      "git_blob_sha": "fd653bce80c497dbdda1e142d9f208f00a817c9f",
+      "path": "papers/native-thermodynamic-curvature/controls.py",
+      "sha256": "be14eb91b5c2d82daf56ee70f4dff4bd1f2ab8c62d52b76d921541a7a0758b23"
+    },
+    {
+      "git_blob_sha": "3413b015efc2686f721e516dcf6060820cff014b",
+      "path": "papers/native-thermodynamic-curvature/pdf/native-thermodynamic-curvature.pdf",
+      "sha256": "7b3d0b2d46fdb7b8306725fdd26b7e23b2b916b6884d74636c3a9358936211f1"
+    },
+    {
+      "git_blob_sha": "e02a8a25b8fc15b37decf43abdcf0521c9be8a1b",
+      "path": "papers/native-thermodynamic-curvature/source/main.tex",
+      "sha256": "a6f6b78ac16560e6d9450799bf7b2900c87fc8efaf6a06f20350b5f4669a6560"
+    },
+    {
+      "git_blob_sha": "03d14eaa975ced3289c6c37afcff7b8fa2d7f7a5",
+      "path": "papers/native-thermodynamic-curvature/source/preamble.tex",
+      "sha256": "3d90a9b233bcb2087e5d74e9103291cf3ae2ad1db6be72291c80c17eca8071d0"
+    },
+    {
+      "git_blob_sha": "b09bbf23ccadecdc07d894fab57ed85ef310df47",
+      "path": "papers/native-thermodynamic-curvature/verify.cjs",
+      "sha256": "703eb7ccae772dd8a6637f4d6d2eb2b2226a37d3d3315693e34638be42389845"
+    },
+    {
+      "git_blob_sha": "90b80fe5f3a554332005764c8b8fd123f05392b6",
+      "path": "papers/native-thermodynamic-curvature/verify.sh",
+      "sha256": "a83ce1a75b7cf207e7f1a2c5b2b6c8cd35dadf3a6d8e4b38ef86450917e1d87e"
+    }
+  ],
+  "reused_publication_inputs": [
+    {
+      "git_blob_sha": "d07f13191ce6443ca54966b0e751a585108254d2",
+      "path": "papers/emk-ugd-algebra/CONNECTION_CALCULUS.md",
+      "sha256": "222b5da9d22ffa6a17b84ec58646447b56ab68a4e2bdd9b3c3ad3792060de7d9"
+    }
+  ],
+  "rkf": {
+    "commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+    "files": [
+      {
+        "git_blob_sha": "f22847fe52944214912fa66524d0edb1fc2448a4",
+        "path": "operator_foundation/CANONICAL_HOME.json",
+        "sha256": "6c5a7756ff220e7a9afa7fdb72151781f1777e2099880788f21a1e1b780ced39"
+      },
+      {
+        "git_blob_sha": "7b188defee82aa0edafc586eb3091baf0ceb6900",
+        "path": "operator_foundation/core/native_operator.cjs",
+        "sha256": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+      },
+      {
+        "git_blob_sha": "39d0cc2d2c0b42db319b02f4cd29c045910edbbc",
+        "path": "operator_foundation/core/paninian_operator.cjs",
+        "sha256": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+      },
+      {
+        "git_blob_sha": "7a6eb17ecc8ddefc145645cd9bbfdf66361c6ecb",
+        "path": "operator_foundation/examples/emk_job.json",
+        "sha256": "fd3c9e50cb51050acb9c36b3123fbc4664870c621e5d73bb8763b1050b30c763"
+      },
+      {
+        "git_blob_sha": "b7850a2b059dfc0e072f9c423fefacff5233c287",
+        "path": "operator_foundation/sources/rkf_reference/theorum/42_cut_graded_lambda_jacobian_tower_theorem.md",
+        "sha256": "e5304cc970bfa0e18140aa1b5373f16733cd5613e25ae4f29642d10f5b6431ed"
+      },
+      {
+        "git_blob_sha": "923ba3eded5c5dfd798c3b3aa911e0ad02825a81",
+        "path": "operator_foundation/sources/rkf_reference/theorum/singularity_calculus/05_seam_stokes_memory.md",
+        "sha256": "300a52685ead180ee3be87d96108d24d90f9ad490a83b162fa6474874f082bd5"
+      },
+      {
+        "git_blob_sha": "b32e49f52be362ffe819ea98d547b1af15617bc7",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/01_response_tetrad_and_flat_closure.md",
+        "sha256": "7be53109c96a5c742b2e306496080ca039bb04246548593540d99f0f233a27fd"
+      },
+      {
+        "git_blob_sha": "e5aa0540d53ca1944679455c6b5ce5fdbbde156f",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/02_curvature_to_seam_spectral_flow.md",
+        "sha256": "08ddbbdf079247f3b6855fddf6572891bdf6ce5dddcebbefb22c8c41070548bd"
+      },
+      {
+        "git_blob_sha": "0ac8da2836febbfa2273e32924c8c0553ef18039",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/03_canonical_response_cost_barrier.md",
+        "sha256": "fa41acacbde100541f708d8577403ffa61bbc68a9edd8ec8dc1ad5c401034897"
+      },
+      {
+        "git_blob_sha": "3acb5751711ff5754186077f74426332050ded9a",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/04_projection_defect_and_source_overlap.md",
+        "sha256": "9ebe8ffbba00917a87dda2537026f09f4e52d04a28a27ee8272a96507d0535b1"
+      },
+      {
+        "git_blob_sha": "e304668c861e04c813c3b97320b778de08ee817f",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/05_onsager_compass_and_constitutive_no_go.md",
+        "sha256": "116a5360098b28efc05f31febf8ac54fea087e8c1d590b78190f02c5792e7c2d"
+      },
+      {
+        "git_blob_sha": "df4c049174771abc3dee74539bfc6d8baa669593",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/06_onsager_hodge_no_leakage.md",
+        "sha256": "0b2ffee77b9e719a563e045a3150b3f0dae21b1f40d624531e4be2afcc926724"
+      },
+      {
+        "git_blob_sha": "5a88fb9b43ce5c36c66b907d72104c3b3be3aed9",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/07_thermo_weil_provenance_five_source_schur.md",
+        "sha256": "6bf876646ddbd481d0c3867cda18e31acdd672ec015f312ed4220b3dcbd6192a"
+      },
+      {
+        "git_blob_sha": "626b833fb194beaf846120fa00ab044aad450203",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/08_canonical_connection_physical_flux.md",
+        "sha256": "e5b26808654d36c74b883d058f2e75911452c453e09a95e14c0d0bcd5e188463"
+      },
+      {
+        "git_blob_sha": "99a8ff7d1244a003fd4b6305a47321e8fcdf6a9d",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/09_scope_exclusions.md",
+        "sha256": "109a8538f6bdb90488a1013f08acd73ffdb5d2ddb419f49460050f348cb3dd98"
+      },
+      {
+        "git_blob_sha": "b4ab0dcfb22bad997b5c1fe259e3b2940e0ec200",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/10_thermodynamic_cut_square_response_decomposition.md",
+        "sha256": "c8aff934b5709feb8cf1976d3728820e23a10fb5d5f8e0e14739055551d98516"
+      },
+      {
+        "git_blob_sha": "e71310209f99244b06461864ba303ade6bacc536",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/README.md",
+        "sha256": "5b944f09b48f9621db5335865a3f4475b5282202971a891130850f721c94767e"
+      },
+      {
+        "git_blob_sha": "5af8e6c287d2691cda741d242fe82e55d67d5a4a",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/SOURCE_PROVENANCE.md",
+        "sha256": "614aa624febca997bd99b168b8fbcd735e2dda7bfac387f73c508e159078dbea"
+      },
+      {
+        "git_blob_sha": "8ef943ca1a076ee956af82160a629ff1adeb2839",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/lambda_geometry/10_lambda_holonomy_and_branch_memory.md",
+        "sha256": "7c6251d7fdbff719dc970b377a63e3750043b53e369914e6f1712504fbdbc483"
+      },
+      {
+        "git_blob_sha": "aad1a3645f83d675ed5f3a2254dfd8dfe722b5e1",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/lambda_geometry/11_noncommutative_holonomy_and_irreducibility.md",
+        "sha256": "5ad8f503bee6f46b5f8c437f728c6c2f5a704a6dad7aa23d35a64f1afcaa3ac7"
+      },
+      {
+        "git_blob_sha": "cbe6f31e2e71d5b865e960a95cb23adb650a0d07",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/lambda_geometry/12_admissible_factorization_and_primitivity.md",
+        "sha256": "ff31fa26e7e6da376644cbd7e12a751eb3717fd62b3074a4fabb04d53add8c37"
+      },
+      {
+        "git_blob_sha": "37e92c3040555846ca7c76b224ca38a252c82149",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/lambda_geometry/13_refinement_and_continuum_length.md",
+        "sha256": "324dc41ae3ca33c269bde20aeba2de883c07e3ae90d5bd826a2aa751b039a4f3"
+      },
+      {
+        "git_blob_sha": "8a6a6a88dd4a74fc47a029b68cca4ea09f81c60c",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/lambda_geometry/14_constrained_variational_length.md",
+        "sha256": "24d8844991d23cbb3c25caa32a2512b2b9438875b4ceb1efb70fef73f61d64cd"
+      },
+      {
+        "git_blob_sha": "d3fa5a156ce96be3fa182c5689be20505e712c31",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/lambda_geometry/15_curvature_flux_no_collapse.md",
+        "sha256": "9ba0212cb7ebcdce71d3b7157081bcf77ae05fb1ca8266ebcf7b95800d405d16"
+      },
+      {
+        "git_blob_sha": "7bbace2c2b42f792933ec13c933d8b2d90dd6360",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/lambda_geometry/16_primitive_flux_spectrum_and_obstruction.md",
+        "sha256": "c426110ff5c3c0cb8614206f28b0bd78cbd3c32ccccb9fb59b7aad7e341374ce"
+      },
+      {
+        "git_blob_sha": "7c5c1fe6dc40ca95a66dc4649ef31916771ad6a4",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/lambda_geometry/README.md",
+        "sha256": "b6a45659282909224742e2137c5cf67e53bd9eb96941929a87c65942dc4a67ea"
+      },
+      {
+        "git_blob_sha": "5aa4487084d3d40458b0fc4b93030006c952b06f",
+        "path": "operator_foundation/sources/rkf_reference/theorum/thermodynamics/lambda_geometry/SOURCE_PROVENANCE.md",
+        "sha256": "3bf8e7c3cc9dd7528fbe733b75a3a29cd1fca8309c39df399d956eb24a9849c1"
+      },
+      {
+        "git_blob_sha": "86366ede2f152f19cbdf0d1dbf06b2e4c0971dad",
+        "path": "operator_foundation/theory/01_NATIVE_ALGEBRA.md",
+        "sha256": "ea07ab9f0f8a47e63f8ee973638669f596308cec4ed234ced7497a5f7539ecf5"
+      },
+      {
+        "git_blob_sha": "df4ebc098f9a59cbf40de178c61796fe857a7bae",
+        "path": "operator_foundation/theory/02_COMPLETION_AND_MEMORY.md",
+        "sha256": "d205729945231c81a035889709f0a217b5a0979ce5299bdf6ed2ea30a5b9c817"
+      }
+    ],
+    "repository": "Parveen117/Recognition-Kernel-Framework"
+  },
+  "schema": "publications.native-thermodynamic-curvature.pins.v1",
+  "thermo": {
+    "commit": "f0f1c1650e914b7eaf3bf64ddb7df9f543c92a56",
+    "files": [
+      {
+        "git_blob_sha": "125649f92b0e1719834d09816abe921b492d173e",
+        "path": "papers/coherence-first-thermodynamics/THEOREM.md",
+        "sha256": "a13616c39bed8bc453249beb4c71e7db73d338f5a0627ff1e75de9a5f7b4d0fb"
+      },
+      {
+        "git_blob_sha": "ee4d361588221a00f9dc23b3beb27b5d59a323d1",
+        "path": "papers/thermo-compass-foundations/THEOREM.md",
+        "sha256": "783caecc1d6d0156576f07d0fea4d3f14c9c4124d1a901aaa1ac0b48c54fd7c4"
+      },
+      {
+        "git_blob_sha": "a6e80006f0e1543d8567b16574a5683c1048002f",
+        "path": "papers/thermo-phase-field/THEOREM.md",
+        "sha256": "717de52421b2609327dd1e95321fb14d5f91c138f8ef4c4d8c0c1d129f874a1c"
+      },
+      {
+        "git_blob_sha": "ff29e075a21aeaf33db9b49fdedcdf5ded3584a6",
+        "path": "papers/thermodynamic-response-corrections/README.md",
+        "sha256": "ca5b9132b897592551cbba256ca40eac5bc029d57455a88e9e204bc6ca1e418b"
+      },
+      {
+        "git_blob_sha": "c9e587c7a33b9d84fe42cbf0aedf32d01eb40a98",
+        "path": "papers/thermodynamic-response-corrections/source/main.tex",
+        "sha256": "8e36dd3a0e607a88f0efe2466856c9a224aa7023edd4fccf036eb8b549a63256"
+      },
+      {
+        "git_blob_sha": "308976a3084a93dcbcac1f80af77bdc7f08486bf",
+        "path": "papers/thermodynamic-response-corrections/source/sections/00_dependency_contract.tex",
+        "sha256": "571a70ca620ef96af89a75d2a7777a6560cf9babc2f6e83e3f92ae10f046e526"
+      },
+      {
+        "git_blob_sha": "d356d57d859d290ee5c5b5c4057f791fdedf56da",
+        "path": "papers/thermodynamic-response-corrections/source/sections/01_foundations.tex",
+        "sha256": "e693803c14a6d72837fa1a25bb2c16248b33bb60c134ab591ca6274f6c454339"
+      },
+      {
+        "git_blob_sha": "4d23dbb8447c3a4a1f446d232129c261bb16360f",
+        "path": "papers/thermodynamic-response-corrections/source/sections/01a_response_summary.tex",
+        "sha256": "611bad7032e766db32e538cfa7c500e4f17cc1e809c61368be795c0a524715f2"
+      },
+      {
+        "git_blob_sha": "a64d510e9d1d702fc483c0f796bb0ed66929ebba",
+        "path": "papers/thermodynamic-response-corrections/source/sections/03_loop_and_cutflow.tex",
+        "sha256": "84c2397b5c647b83872282c9608cd3e71a60213da84f01159003c97bfff08d9e"
+      },
+      {
+        "git_blob_sha": "8d7933fd17694040e009c3014a3eb5ba23e9865d",
+        "path": "papers/thermodynamic-response-corrections/source/sections/03a_thermodynamic_cut_realizations.tex",
+        "sha256": "8c5a35e444283ce82922736536b439dd1209e13e34d5dd44f177222ea76bdbd2"
+      },
+      {
+        "git_blob_sha": "47177c60dcd188a2a69dfc69b29197505f2ed352",
+        "path": "papers/thermodynamic-response-corrections/source/sections/05a_curvature_and_analytic_relevance.tex",
+        "sha256": "393eaec9c6194435e38a51e6e0a399fef0b45e5bb5c3d561cc2dfb59ad16ef4f"
+      },
+      {
+        "git_blob_sha": "760c821f934a1ce4c18a05aee12746d93f8af8b0",
+        "path": "papers/thermodynamic-response-corrections/source/sections/06a0_thermodynamic_recognition_square.tex",
+        "sha256": "f555e4326579a963a76345bf17bdd942f4f155ef4acb6946dcea6f5f762e5f21"
+      },
+      {
+        "git_blob_sha": "04f8f3e092796712082396e717cc21d3559e3d09",
+        "path": "papers/ugd-kahler-propagation/THERMO_GAUGE_COMPLETION.md",
+        "sha256": "9ac35f4e6bd1fc4262ba9e3d6b1f5c7d251684618975380d29abc81f0ace9068"
+      },
+      {
+        "git_blob_sha": "4e977da56c1b1b1c070c96a6803bf626e495d086",
+        "path": "papers/uncut-cut-measurement/THERMODYNAMIC_FOUNDATION_BRIDGE.md",
+        "sha256": "a9bed547e21bfe7787d989d2f9d411aaa6f7f1ddddbeed787f0971d083e08e7b"
+      }
+    ],
+    "repository": "Parveen117/Publications"
+  }
+}

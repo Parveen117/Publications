@@ -1,0 +1,193 @@
+{
+  "all_strict_failure_witnesses": [
+    {
+      "inputs": [
+        -1,
+        -1,
+        1
+      ],
+      "left": {
+        "K": 4,
+        "digits": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "ledger": -1,
+        "total_seam": -1
+      },
+      "right": {
+        "K": 4,
+        "digits": [
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "ledger": 0,
+        "total_seam": -1
+      }
+    },
+    {
+      "inputs": [
+        -1,
+        1,
+        1
+      ],
+      "left": {
+        "K": 4,
+        "digits": [
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "ledger": 0,
+        "total_seam": 1
+      },
+      "right": {
+        "K": 4,
+        "digits": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "ledger": 1,
+        "total_seam": 1
+      }
+    },
+    {
+      "inputs": [
+        1,
+        -1,
+        -1
+      ],
+      "left": {
+        "K": 4,
+        "digits": [
+          [
+            0,
+            0,
+            -1
+          ]
+        ],
+        "ledger": 0,
+        "total_seam": -1
+      },
+      "right": {
+        "K": 4,
+        "digits": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "ledger": -1,
+        "total_seam": -1
+      }
+    },
+    {
+      "inputs": [
+        1,
+        1,
+        -1
+      ],
+      "left": {
+        "K": 4,
+        "digits": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "ledger": 1,
+        "total_seam": 1
+      },
+      "right": {
+        "K": 4,
+        "digits": [
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "ledger": 0,
+        "total_seam": 1
+      }
+    }
+  ],
+  "boundary": {
+    "finite_no_go_not_all_UGD_presentations": true,
+    "formal_proof_assistant_verified": false,
+    "historical_source_modified": false,
+    "infinite_numerals_certified": false,
+    "linked_seam_rule_derived": false,
+    "physical_validation": false
+  },
+  "charge_target_addition_associative": true,
+  "exact_witness": {
+    "inputs": [
+      -1,
+      1,
+      1
+    ],
+    "left": {
+      "K": 4,
+      "digits": [
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "ledger": 0,
+      "total_seam": 1
+    },
+    "phase_exponents": [
+      0,
+      0,
+      0
+    ],
+    "right": {
+      "K": 4,
+      "digits": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "ledger": 1,
+      "total_seam": 1
+    }
+  },
+  "finite_checks": {
+    "balanced_triples": 27,
+    "seam_ledger_conservation_pairs": 225,
+    "strict_associativity_failures": 4
+  },
+  "full_UGD_algebra_certified": false,
+  "negative_controls": {
+    "charge_quotient_as_full_state_equality_rejected": true,
+    "ledger_erasure_rejected": true,
+    "strict_associativity_promotion_rejected": true
+  },
+  "schema": "publications.ugd-a0.v1",
+  "source_pins_sha256": "d52fa0d8b83276aef4c37e6922ea531cddacabef418c7aeb96ea82afcdbee930",
+  "status": "PASS_UGD_A0_ASSOCIATIVE_CARRIER_GATE_AUDIT",
+  "strict_state_addition_associative": false,
+  "written_results": [
+    "A0.1 strict-state nonassociativity",
+    "A0.2 total-charge conservation",
+    "A0.3 associative-algebra import requires a new contract"
+  ]
+}

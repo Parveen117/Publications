@@ -1,0 +1,45 @@
+name: NM1 Native modular observers
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'papers/native-modular-observers/**'
+      - 'papers/emk-ugd-algebra/README.md'
+      - 'papers/emk-ugd-algebra/CONNECTION_CALCULUS.md'
+      - 'papers/emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md'
+      - 'papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py'
+      - 'papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md'
+      - '.github/workflows/native-modular-observers.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'papers/native-modular-observers/**'
+      - 'papers/emk-ugd-algebra/README.md'
+      - 'papers/emk-ugd-algebra/CONNECTION_CALCULUS.md'
+      - 'papers/emk-ugd-algebra/UGD_ALGEBRA_CONTRACT.md'
+      - 'papers/emk-ugd-algebra/certificates/emk1_determinant_seam_ladder.py'
+      - 'papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md'
+      - '.github/workflows/native-modular-observers.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  certify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Replay exact native modular certificate without writing
+        run: python -B papers/native-modular-observers/certificates/nm1_modular_observers.py --check
+      - name: Run adversarial observer and lattice tests
+        run: python -B -m unittest discover -s papers/native-modular-observers/tests -v
+      - name: Evidence and native sources stay unchanged
+        run: git diff --exit-code -- papers/native-modular-observers papers/emk-ugd-algebra papers/generalized-euler-evolution/GE4_MINIMAL_OBSERVER_MEMORY.md

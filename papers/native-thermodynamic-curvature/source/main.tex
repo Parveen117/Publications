@@ -1,0 +1,704 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=0.88in]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{microtype}
+\allowdisplaybreaks
+\emergencystretch=3em
+\setlength{\parskip}{0.45em}
+\AtBeginDocument{\hypersetup{pdftitle={Native Thermodynamic Curvature},pdfauthor={Monty Dabas}}}
+\pdfinfoomitdate=1
+\pdftrailerid{}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Native Thermodynamic Curvature},
+  pdfauthor={Monty Dabas},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Native Thermodynamic Curvature}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Ordered response, Smriti balance, and the Hessian
+representation}
+\author{Monty Dabas}
+\date{2 October 2026 - NT-1 to NT-8}
+
+\begin{document}
+\maketitle
+
+\hypertarget{result-and-source-contract}{%
+\section{Result and source contract}\label{result-and-source-contract}}
+
+The thermodynamic response paper already contains exact potential
+differentials, six unit-typed responses, a covariant response tower, and
+loop recognition with a prior ledger. The later TC and PF chapters
+construct Hessian response geometry. This edition supplies their missing
+\textbf{explicit EMK connection intertwiner}, then extends the scalar
+ledger to ordered native transport. It consumes the existing algebra and
+calculus; it does not propose a second operator engine.
+
+The principal native equations are
+
+\[
+\begin{split}
+\mathbf H&=\frac{a+c}{2}1+\frac{a-c}{2}K+bRK,\qquad
+X_i=\mathbf H^{-1}\delta_i\mathbf H,\\
+\mathcal F^H_{ij}&=-\frac14[X_i,X_j],\\
+\mathcal F^{\rm open}&=\mathcal F^A-D_A M+M\wedge M.
+\end{split}
+\]
+
+Here the first curvature is selected response transport; the second
+compares a connection with a \textbf{previously declared}, same-carrier
+Smriti ledger. They are not assumed to coincide with every use of the
+word curvature in the archive.
+
+The sources are Publications main
+\texttt{121f2dff607fbe0a8b8550fa19b97637ed82509b} (EMK-C1), its research
+edition \texttt{f0f1c1650e914b7eaf3bf64ddb7df9f543c92a56} (corrected
+thermo manuscript, TC, PF and CP), and canonical RKF main
+\texttt{3cc5a33b05c16d59c90994ddda69dedc0d392424}. SOURCE\_MAP.md
+identifies the exact chapters and all thermodynamic theorem capsules.
+SOURCE\_PINS.json binds their bytes. The printed equations below have
+written proofs; the certificate checks a declared finite rational
+sector.
+
+The source order is: native algebra and lawful derivatives; response
+target and constitutive chart; connection selection; curvature and
+memory; observer; then the faithful tangent representation. An equation
+of state and entropy/volume calibration remain physical input. No
+universal material, clock or spacetime metric is inferred from an
+abstract algebra relation.
+
+\hypertarget{nt-1.-native-response-carrier-and-the-six-thermodynamic-coordinates}{%
+\section{NT-1. Native response carrier and the six thermodynamic
+coordinates}\label{nt-1.-native-response-carrier-and-the-six-thermodynamic-coordinates}}
+
+Work over the radial real sector of the established cut scalars,
+extended by positive square roots when used below. The algebra is the
+existing associative EMK algebra
+
+\[
+K^2=1,\quad R^2=-1,\quad KR=-RK,\qquad
+K^\dagger=K,\quad R^\dagger=-R.
+\]
+
+Put \(L=RK\). Then \(L^\dagger=L\), \(L^2=1\), and
+
+\[
+[R,K]=2L,\qquad [K,L]=-2R,\qquad [R,L]=-2K.
+\]
+
+The four native normal words are \(1,K,R,L\). The internal element \(R\)
+is not silently identified with the central cut scalar \(\iota_\Sigma\).
+
+Let \(\operatorname{sc}\) select the coefficient of \(1\). Native
+multiplication gives
+
+\[
+\operatorname{sc}(xy)=\operatorname{sc}(yx),\qquad
+\operatorname{sc}(x^\dagger x)=x_0^2+x_K^2+x_R^2+x_L^2.
+\]
+
+For radial functions \(a,b,c\) with \(a>0\) and \(\Delta=ac-b^2>0\),
+define \(\mathbf H\) as above. Then
+
+\[
+\mathbf H^{-1}=
+\frac{(a+c)1/2-(a-c)K/2-bL}{\Delta}.
+\]
+
+In particular, this is a native inverse, before a matrix interpretation.
+
+\textbf{Proof.} The mixed terms in the square of \((a-c)K/2+bL\) cancel
+because \(KL=-LK\). Its square is \(((a-c)^2/4+b^2)1\). Multiplication
+by the proposed numerator leaves \(\Delta1\) on both sides. The
+scalar-part identities follow from the same four-word table.
+
+There is also a native positive factorization. Set
+
+\[
+P_\pm=(1\pm K)/2,\quad E_{12}=(L-R)/2,\qquad
+B=\sqrt a\,P_++\frac b{\sqrt a}E_{12}
+                  +\frac{\sqrt\Delta}{\sqrt a}P_-.
+\]
+
+The relations give \(B^\dagger B=\mathbf H\), and \(B\) is invertible.
+Thus
+\(\operatorname{sc}(x^\dagger\mathbf Hx) =\operatorname{sc}((Bx)^\dagger Bx)>0\)
+for \(x\ne0\). This constructs a positive finite native pairing from the
+declared response element; an ordinary Hilbert space was not its
+primitive input.
+
+For the thermodynamic adapter, choose constant positive units and
+translated dimensionless coordinates \(s,v\), a supplied \(C^4\) energy
+\(u(s,v)\), and the stable chart
+
+\[
+a=u_{ss},\quad b=u_{sv},\quad c=u_{vv},\quad \Delta>0.
+\]
+
+The physical identification is the one in the source paper. In
+dimensional coordinates temporarily use \(a=U_{SS},b=U_{SV},c=U_{VV}\).
+Differentiating \(T=U_S,P=-U_V\), with the source's fixed-amount
+convention, gives
+
+\[
+\begin{gathered}
+dU=T\,dS-P\,dV,\qquad T_V=-P_S,\\
+C_V=T/a,\quad C_P=Tc/\Delta,\quad
+K_S=Vc,\quad K_T=V\Delta/a,\\
+\lambda_P=-S\Delta/c,\quad \lambda_V=-Sa,\quad
+\lambda_S=-Vc,\quad z_T=-V\Delta/a,\\
+z_S=P/c,\qquad \lambda_T=Pa/\Delta.
+\end{gathered}
+\]
+
+To prove these formulas, impose respectively \(dV=0,dP=0,dS=0,dT=0\) in
+\(dT=a\,dS+b\,dV\), \(dP=-b\,dS-c\,dV\); substitute the reciprocal
+derivatives in the six source definitions. The four Legendre
+differentials follow by differentiating \(U+PV,U-TS,U+PV-TS\).
+Consequently \(\Gamma_c\Gamma_m=(C_V/C_P)(K_S/K_T)=1\).
+
+The six responses retain their temperature, pressure and volume units
+until nondimensionalized. The older \emph{uniform entropy-scaled tetrad}
+\(\lambda_X^{\rm th}=-ST/C_X\) is a different declared coordinate
+family. In particular its two mechanical coordinates must not replace
+\(\lambda_S,z_T\) in the six-response formulas. Scalar ratio closure is
+not full curvature flatness, as NT-4 will demonstrate on this very same
+stable chart.
+
+\hypertarget{nt-2.-curvature-is-the-native-transport-square-defect}{%
+\section{NT-2. Curvature is the native transport-square
+defect}\label{nt-2.-curvature-is-the-native-transport-square-defect}}
+
+Use the EMK-C1 derivative contract: derivations \(\delta_i\) satisfy
+\([\delta_i,\delta_j]=c_{ij}^{\ k}\delta_k\), with central constant
+frame coefficients obeying Jacobi. On the regular right module define
+\(\nabla_i x=\delta_i x+A_ix\). The curvature coefficient is
+
+\[
+\boxed{F^A_{ij}=\delta_iA_j-\delta_jA_i+[A_i,A_j]-c_{ij}^{\ k}A_k.}
+\]
+
+It satisfies
+
+\[
+([\nabla_i,\nabla_j]-c_{ij}^{\ k}\nabla_k)x=F^A_{ij}x.
+\]
+
+For a two-sided invertible native change \(g\),
+
+\[
+A_i'=g^{-1}A_ig+g^{-1}\delta_i g,\qquad
+F^{A'}_{ij}=g^{-1}F^A_{ij}g.
+\]
+
+\textbf{Proof.} Expand the two compositions with Leibniz; the terms
+differentiating \(x\) cancel after subtracting the frame bracket.
+Conjugate \(\nabla_i\) by left multiplication with \(g\) to obtain both
+transformation identities. This is EMK-C1 specialized to the
+thermodynamic coefficient carrier.
+
+Hence neither ordinary off-diagonal entries nor an uncorrected frame
+commutator define this curvature. For example \([R,L]=-2K\) is nonzero
+and diagonal in the later standard cut chart. Conversely a noncommuting
+direction frame with \(A=0\) has \(F^A=0\) relative to that frame. Even
+central coefficients can have curvature through their derivative terms.
+
+For coordinate directions, parallel transport is fixed here by
+\(\dot w=-A(\dot\gamma)w\), with later segments multiplying on the left.
+A positive rectangle follows \(+i,+j,-i,-j\); its holonomy is
+\(1-\varepsilon^2F_{ij}+o(\varepsilon^2)\). Reversing the rectangle
+reverses this sign. For constant coefficients this follows by
+multiplying
+\(e^{\varepsilon A_j}e^{\varepsilon A_i} e^{-\varepsilon A_j}e^{-\varepsilon A_i}\);
+allowing variable coefficients adds the two derivative terms with the
+same sign. This explicitly fixes the orientation that an unnamed ``small
+square'\,' would leave ambiguous.
+
+\hypertarget{nt-3.-select-response-transport-and-derive-its-native-curvature}{%
+\section{NT-3. Select response transport and derive its native
+curvature}\label{nt-3.-select-response-transport-and-derive-its-native-curvature}}
+
+Assume now that \(\delta_i\) commutes with dagger. A compatible
+connection for \(h_H(x,y)=x^\dagger\mathbf Hy\) obeys
+
+\[
+\delta_i\mathbf H=A_i^\dagger\mathbf H+\mathbf HA_i.
+\]
+
+Select the strain representative by the additional condition
+\(A_i^\dagger\mathbf H=\mathbf HA_i\). Then it is unique and equals
+
+\[
+\boxed{A_i^H=\tfrac12X_i,\qquad X_i=\mathbf H^{-1}\delta_i\mathbf H.}
+\]
+
+Without the additional condition there is the genuine freedom
+\(A_i=A_i^H+Q_i\), \(Q_i^\dagger\mathbf H+\mathbf HQ_i=0\). The
+selection is made in the declared response trivialization, then
+transported as a connection; it is not reimposed after every variable
+frame change.
+
+The native inverse derivative and derivative-frame relation give
+
+\[
+\delta_iX_j-\delta_jX_i-c_{ij}^{\ k}X_k=-[X_i,X_j].
+\]
+
+Consequently for every central constant \(q\),
+
+\[
+F^{qX}_{ij}=q(q-1)[X_i,X_j],\qquad
+\boxed{F^H_{ij}=-\tfrac14[X_i,X_j].}
+\]
+
+\textbf{Proof.} The two selection equations imply
+\(2\mathbf HA_i=\delta_i\mathbf H\), proving uniqueness. Conversely this
+choice satisfies both equations because
+\((\delta_i\mathbf H)^\dagger=\delta_i\mathbf H\). Differentiating
+\(\mathbf H^{-1}\mathbf H=1\) gives
+\(\delta_i\mathbf H^{-1}=-\mathbf H^{-1}(\delta_i\mathbf H)\mathbf H^{-1}\).
+Apply it to \(X_j\), antisymmetrize, and subtract the frame term. The
+second derivatives cancel by the derivative contract. Substitute into
+NT-2.
+
+The coefficient \(q=1\) is pure gauge and flat, even when the \(X_i\) do
+not commute. The metric-compatible strain choice is \(q=1/2\), not
+\(q=1\), wherever \(\delta\mathbf H\ne0\). The minus sign and quarter
+factor therefore carry real content. Response rotation alone does not
+imply curvature; the obstruction is this selected transport commutator.
+
+\hypertarget{nt-4.-exact-classical-special-case-and-an-oriented-native-marker}{%
+\section{NT-4. Exact classical special case and an oriented native
+marker}\label{nt-4.-exact-classical-special-case-and-an-oriented-native-marker}}
+
+Let \(e=P_+\). The native left ideal \(\mathcal E=\mathcal A e\) is a
+rank-two module over the central radial functions, with basis \(e,Re\).
+Left multiplication is faithful and gives
+
+\[
+\rho(K)=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\quad
+\rho(R)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+\rho(L)=\begin{pmatrix}0&1\\1&0\end{pmatrix},
+\quad \rho(\mathbf H)=\begin{pmatrix}a&b\\b&c\end{pmatrix}=H.
+\]
+
+This module is not asserted to be a right module over all of
+\(\mathcal A\). Its right scalars are the central coefficient functions.
+The pairing \(2\operatorname{sc}(x^\dagger\mathbf Hy)\) on
+\(\mathcal E\) is exactly the response form with matrix \(H\).
+
+For commuting coordinate derivatives and \(H=D^2u\), identify \(e,Re\)
+with the normalized \(s,v\) tangent directions. Then
+
+\[
+\rho(A_i^H)=\tfrac12H^{-1}\partial_iH=\Gamma_i,
+\qquad \boxed{\rho(F^H_{sv})=R^g_{sv}}.
+\]
+
+Here \(g=H_{ij}dx^idx^j\) and \(R^g\) is its Riemann curvature in the
+convention \([\nabla_s,\nabla_v]\). This closes the \emph{specific}
+EMK-to-Hessian connection map left open in TC-5.
+
+\textbf{Proof.} The matrices follow by acting on \(e,Re\). They form a
+basis of all real two-by-two matrices, proving faithfulness;
+multiplication and dagger are respected. Third derivatives of \(u\) are
+completely symmetric, so \(\Gamma^k_{ij}=\frac12H^{k\ell}u_{\ell ij}\)
+is torsion free. NT-3 supplies metric compatibility, which makes this
+the Levi-Civita connection. The representation respects derivatives and
+products, so it intertwines connections and curvature. No identification
+of a general native connection with a tangent connection has been
+assumed.
+
+Define native \(J_H=R\mathbf H/\sqrt\Delta\). Then
+
+\[
+J_H^2=-1,\quad J_H^\dagger\mathbf H=-\mathbf HJ_H,\quad
+\partial_iJ_H+[A_i^H,J_H]=0.
+\]
+
+The first two follow by multiplication; differentiation of the first
+expression using NT-3 proves the last (equivalently expand its four
+native coefficients). Hence \([F^H,J_H]=0\). Metric compatibility also
+makes \(F^H\) skew for the \(H\)-pairing. In this two-dimensional
+response sector the intersection is the line spanned by \(J_H\), so
+
+\[
+F^H_{sv}=J_H f_{sv}=-\kappa R\mathbf H,\qquad
+f_{sv}=-\kappa\sqrt\Delta.
+\]
+
+In native coefficients the signed readouts are
+
+\[
+\boxed{f_{sv}=-\operatorname{sc}(J_HF^H_{sv}),\qquad
+\kappa=\frac{\operatorname{sc}(R\mathbf HF^H_{sv})}{\Delta}.}
+\]
+
+The scalar part of \(F^H\) itself is zero. Thus an ordinary trace misses
+nonzero curvature, while this calibrated marker recovers its
+orientation. Both the marker and curvature must be transported under a
+change of response frame. In the tangent adapter
+\(\kappa=(HR^g_{sv})_{12}/\Delta\) is Gaussian curvature. Outside that
+adapter it is the stated response-coordinate marker.
+
+Conjugating by the native factor \(B\) of NT-1 gives
+
+\[
+BA^HB^{-1}-dB\,B^{-1}=R\alpha,\qquad
+\alpha=\frac{db-(b/a)\,da}{2\sqrt\Delta},\qquad
+d\alpha=f_{sv}\,ds\wedge dv.
+\]
+
+Indeed the transformed compatible connection is skew, hence a multiple
+of \(R\); its lower-left coefficient gives the displayed \(\alpha\).
+This is the exact PF-1 phase sector within the native connection.
+
+For the source fixture
+
+\[
+u=10s-10v+s^2+sv+\tfrac52v^2+\tfrac12s^2v
+\]
+
+at the origin, \((a,b,c)=(2,1,5)\), \(\Delta=9\). Direct native
+multiplication gives
+
+\[
+F^H_{sv}=\tfrac5{324}K-\tfrac{35}{648}R+\tfrac5{216}L,
+\qquad \kappa=\tfrac5{324},\qquad f_{sv}=-\tfrac5{108}.
+\]
+
+All caloric-mechanical ratio identities hold here while this curvature
+is nonzero. Deleting only the cubic term leaves the same point Hessian
+and all six point responses, but makes the curvature zero. Thus the
+higher response tower is necessary; a point spectrum or scalar closure
+ratio does not determine it. Positive physical entropy and volume
+origins can be translated as in TC-5.
+
+\hypertarget{nt-5.-non-abelian-smriti-balance-and-its-scalar-seam-sector}{%
+\section{NT-5. Non-Abelian Smriti balance and its scalar seam
+sector}\label{nt-5.-non-abelian-smriti-balance-and-its-scalar-seam-sector}}
+
+Let \(A\) be a connection and let \(M\) be a prior native
+endomorphism-valued one-form on the \textbf{same} carrier. Under frame
+change it transforms tensorially, \(M'=g^{-1}Mg\). Define the open
+connection \(C=A-M\). Put
+
+\[
+(D_A M)_{ij}=\delta_iM_j-\delta_jM_i-c_{ij}^{\ k}M_k
+                  +[A_i,M_j]-[A_j,M_i].
+\]
+
+Then
+
+\[
+\boxed{F^C_{ij}=F^A_{ij}-(D_A M)_{ij}+[M_i,M_j].}
+\]
+
+In differential-form notation \((M\wedge M)_{ij}=[M_i,M_j]\). Thus
+native local balance is the exact equation
+
+\[
+\boxed{F^A=D_A M-M\wedge M,}
+\]
+
+which permits \(F^A\ne0\). The equation is gauge covariant.
+
+\textbf{Proof.} Expand \(F(A-M)\) in NT-2 and collect derivative, cross
+and quadratic terms. Since \(M\) transforms tensorially, \(C\)
+transforms as a connection and its curvature transforms by conjugation.
+This proves the balance equation and its covariance. It is generally
+false that \(F(A-M)=F(A)-F(M)\).
+
+For constant \(A_s=K,A_v=L\) and \(M_s=0,M_v=L\), \(F^A=-2R\),
+\(D_A M=-2R\), \(M\wedge M=0\), and \(F^C=0\). The ledger is declared as
+part of this model before testing the loop. An arbitrary post-hoc choice
+\(M=A\) is not evidence that a physical memory law has been derived.
+
+The original paper's additive response law is an exact special sector.
+Take a fixed nonzero native generator \(Z\) and radial one-forms
+\(\omega,\ell\), with \(A=Z\omega,M=Z\ell\). All coefficient commutators
+vanish, giving
+
+\[
+F^C=Z\,d(\omega-\ell),\qquad
+\oint_{\partial S}(\omega-\ell)=\int_S d(\omega-\ell).
+\]
+
+For the thermo phase line \(Z=R\), NT-4 supplies \(\omega=\alpha\). On a
+simply connected smooth domain, \(d(\omega-\ell)=0\) is equivalent to
+every additive loop residue vanishing, by path integration. On a domain
+with holes the periods remain data. Principal phase also loses full
+turns; the lifted integral is retained as Smriti even when its
+exponential is one.
+
+If \(\eta=\omega-\ell\) is piecewise smooth across a transverse seam
+\(r=0\), the source SC-03/SC-05 identity specializes to
+
+\[
+d\eta=(1-\mathsf H(r))d\eta_-+\mathsf H(r)d\eta_+
+       +\delta(r)\,dr\wedge(\eta_+-\eta_-).
+\]
+
+It follows by differentiating \(\eta_-+\mathsf H(r)(\eta_+-\eta_-)\).
+For \(\eta_-=0,\eta_+=c\,dv\), a positive rectangle crossing the seam
+with height \(b\) has loop residue \(cb\), despite flat smooth pieces.
+The seam and bulk channels cannot be silently cancelled across different
+supports. For general noncommuting coefficients, ordered transport
+replaces the scalar Stokes readout; no ordinary exponential of a surface
+integral is asserted here. History-dependent memory requires its
+declared extended state.
+
+\hypertarget{nt-6.-what-an-observer-retains-descent-versus-compression}{%
+\section{NT-6. What an observer retains: descent versus
+compression}\label{nt-6.-what-an-observer-retains-descent-versus-compression}}
+
+For a surjective bundle readout \(O:\mathcal E\to\mathcal Y\), the
+connection descends through \(O\) exactly when its kernel subbundle is
+preserved by \(\nabla\). In that case
+
+\[
+O\nabla_i=\bar\nabla_i O,\qquad OF_{ij}=\bar F_{ij}O.
+\]
+
+For each curvature target, faithful flatness additionally requires
+\(\ker O\cap\operatorname{ran}F_{ij}=0\). Descent alone is insufficient.
+
+\textbf{Proof.} Define \(\bar\nabla_i(Ox)=O\nabla_i x\). Independence of
+the representative is exactly kernel preservation. Composing and
+subtracting the frame term proves curvature descent. The displayed
+intersection condition is precisely injectivity of \(O\) on the
+curvature output range.
+
+Compression is a different operation. For a smooth native idempotent
+\(P\), set \(Q=1-P\) and \(D_iP=\delta_iP+[A_i,P]\). The connection
+\(\nabla_i^P=P\nabla_i\) on \(\operatorname{ran}P\) has curvature
+
+\[
+\boxed{F^P_{ij}=PF^A_{ij}P+P[D_iP,D_jP]P.}
+\]
+
+For a constant cut,
+
+\[
+F^P_{ij}=PF^A_{ij}P
+ -PA_iQA_jP+PA_jQA_iP.
+\]
+
+To prove the formula, expand \(P\nabla_i(P\nabla_jx)\), use \(Px=x\),
+\(P(D_iP)P=0\), and \(Q\nabla_i x=(D_iP)x\). Antisymmetrization gives
+the displayed correction. It is the same hidden-return channel as the
+native identity \(PabP-PaPbP=PaQbP\), now with both transport orders
+retained.
+
+For \(A_s=R,A_v=L,P=P_+\), both compressed coefficients vanish, so
+\(F^P=0\). Nevertheless
+
+\[
+F^A=-2K,\quad PF^AP=-2P,\quad
+PA_sQA_vP-PA_vQA_sP=-2P.
+\]
+
+The complement return cancels in the compressed verdict, without erasing
+the full native curvature. The actual quotient descent test fails
+because \(PA_sQ\ne0\). This is a constructive example of
+observer-dependent flatness, not a theorem that all observation flattens
+curvature.
+
+\hypertarget{nt-7.-the-precise-onsager-flatness-statement}{%
+\section{NT-7. The precise Onsager-flatness
+statement}\label{nt-7.-the-precise-onsager-flatness-statement}}
+
+In a calibrated real force chart \(x=(x^1,\ldots,x^m)\), suppose the
+flux law is \(j=L(x)x\), with the conjugate pairing used for entropy
+production. Use the native central connection \(A=1\,\beta\),
+\(\beta=\sum_i j_i dx^i\). Then
+
+\[
+F_{ij}=1\left[L_{ji}-L_{ij}
+ +\sum_k(\partial_iL_{jk}-\partial_jL_{ik})x^k\right].
+\]
+
+For \textbf{constant} \(L\), flatness is equivalent to \(L=L^T\), and
+
+\[
+F_{ij}=-2(L_a)_{ij}1,\qquad
+\sigma=x^TLx=x^TL_sx,
+\quad L_s=(L+L^T)/2,\quad L_a=(L-L^T)/2.
+\]
+
+Thus constant reciprocal transport is a flat \emph{process-form sector}.
+This is not a flatness criterion for the different response-metric
+connection in NT-3.
+
+\textbf{Proof.} Differentiate \(j_j=\sum_kL_{jk}x^k\) and
+antisymmetrize. The native coefficient commutator is zero in this
+central sector, but the covariant-derivative commutator need not be. The
+scalar \(x^TL_ax\) equals its negative after transposition and hence
+vanishes.
+
+For variable \(L\), pointwise reciprocity leaves the derivative term. An
+exact positive counterexample is
+
+\[
+L(x)=\operatorname{diag}(1,1+x^1),\qquad x^1>-1.
+\]
+
+It is symmetric and positive, but \(F_{12}=x^2 1\). On the other hand
+constant \(L=I\) has positive production away from zero and flat
+\(\beta\), while constant \(L=\rho(R)\) has zero production and nonzero
+curvature. There is therefore no universal equality of entropy
+production and curvature.
+
+Under a constant dual calibration \(j'=Bj,x'=B^{-T}x\), both
+\(j'^Tx'=j^Tx\) and \(j'^Tdx'=j^Tdx\) are invariant, with \(L'=BLB^T\).
+This recovers the original paper's reciprocal covariance. Time-reversal
+parities, kinetic coefficients and the physical identification of
+\(\sigma\) remain those of the declared Onsager adapter.
+
+\hypertarget{nt-8.-native-response-tower-and-the-surviving-theorem-ledger}{%
+\section{NT-8. Native response tower and the surviving theorem
+ledger}\label{nt-8.-native-response-tower-and-the-surviving-theorem-ledger}}
+
+Let \(E\) be the unit-typed six-response module after lawful
+normalization, with a declared fibre connection, and let the base
+cotangent connection be the one selected in NT-3/NT-4 when that adapter
+is used. The source tower is
+
+\[
+L_1=\widehat\Lambda,\qquad L_{n+1}=\nabla L_n,
+\qquad L_n\in E\otimes(T^*)^{\otimes(n-1)}.
+\]
+
+Its curvature is forced by the product rule:
+
+\[
+(\mathcal F^{(n)}_{ij}T)(v_1,\ldots,v_{n-1})
+=F^E_{ij}T(v_1,\ldots,v_{n-1})
+-\sum_r T(v_1,\ldots,F^H_{ij}v_r,\ldots,v_{n-1}).
+\]
+
+This supplies the native curvature action on the response theorem's
+covariant tower. It does not confuse the six-dimensional response fibre
+with the two-dimensional tangent module. A flat internal connection on
+the six scaled scalar components is one choice, not a consequence of the
+Hessian formula.
+
+\textbf{Proof.} Apply the connection product rule twice to evaluation of
+a tensor. The mixed first-derivative terms cancel in the commutator; the
+derivative-frame terms subtract on every slot. A covector acts with the
+negative transpose action because \(\delta\langle\xi,v\rangle\) is the
+sum of the two covariant derivatives. Summing slots proves the formula.
+It is unchanged under a faithful intertwiner such as NT-4.
+
+The algebraic Cut-Flow-Jet results require only their original native
+module and composition contracts. For a finite raiser
+\(\mathbb R^{N+1}=0\),
+\(\operatorname{Exp}(t\mathbb R)=\sum_{k=0}^Nt^k\mathbb R^k/k!\). If
+\([\mathbb T,\mathbb R]=0\), the ordered Cauchy product gives
+\(\operatorname{Exp}(t(\mathbb T+\mathbb R)) =\operatorname{Exp}(t\mathbb T)\operatorname{Exp}(t\mathbb R)\)
+as formal series (and in the source's admitted convergent completion).
+Holonomic identification with \(\operatorname{Sym}\nabla^n\Lambda\) is
+still required. For an involution \(J\), define
+\(G_e=(G+JGJ)/2,G_o=(G-JGJ)/2\). Direct multiplication through order two
+followed by \(\log(1+Y)=Y-Y^2/2+\cdots\) yields
+
+\[
+\log\bigl(J\operatorname{Exp}(tG)J\operatorname{Exp}(tG)\bigr)
+=2tG_e+t^2[G_e,G_o]+O(t^3).
+\]
+
+That coefficient is the original cut-loop target. It equals a constant
+two-direction connection curvature when \(A_1=G_e,A_2=G_o\); it is not
+automatically \(F^H\). Adjoint orthogonality and the clock-free Eye
+theorem retain their extra positive/spectral hypotheses. Changing their
+symbols to native words does not establish those hypotheses anew.
+
+\hypertarget{certification-and-what-this-conversion-establishes}{%
+\section{Certification and what this conversion
+establishes}\label{certification-and-what-this-conversion-establishes}}
+
+The conversion constructs an exact native response element, selects its
+connection under a stated condition, and proves a faithful thermo
+tangent intertwiner. It also proves the non-Abelian ledger balance,
+compression residue, Onsager process-form criterion and induced tower
+action. These are mathematical bridges within the established programme,
+with standard connection and Hessian identities explicitly attributed
+through the source map. External priority is not claimed.
+
+The executable package uses the unchanged canonical Pāṇinian compiler
+for native words. An independent Python Fraction implementation
+differentiates the full Christoffel formula, including fourth-order
+jets, to check the tangent adapter. Negative controls distinguish
+closure ratios, traces, derivative terms, ledger cross terms, hidden
+returns and orientation signs. The certificate enumerates its actual
+executed scope; source pins alone do not recertify all old capsules.
+Proof-assistant formalization and independent external review are not
+claimed.
+
+The connection selector, material energy law, units, preparation and
+physical observer remain declared inputs. In particular this paper does
+not infer spacetime curvature, a universal dissipation law, an
+arithmetic source identity, or new experimental validation. The original
+thermo paper and source archives remain preserved. This native edition
+is an additive conversion and explicit bridge, not a change to the
+already released arXiv record.
+
+\end{document}

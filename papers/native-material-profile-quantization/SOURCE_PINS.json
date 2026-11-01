@@ -1,0 +1,18 @@
+{
+  "protocol": "MPQ1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "09f8dc402bf09715b7563dc05216b81814b1cdac53826419dd47e48372287f8a",
+    "THEOREM.md": "33096f573220f495f920b35d163b30e235a3653e601c6cc3f906cab3c44ffae0",
+    "SOURCE_MAP.md": "1144af36b8e80bda5b2dbda75959b1c7980a43e894c32186b8d8636f4012f6d4",
+    "verify.cjs": "720e73db2f13f0e8f21c8ab1d4db98db443581d0ddacebf829e4316dd44e176d",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-material-reference-field/THEOREM.md": "2efecdf36d8931e4a6748ba83c4be19495eb717a58d21110935eeb0cdeeedadd",
+    "../native-material-reference-field/CERTIFICATE.json": "ab9a8825ee065114014fe8b08cc412db7b8ec7ec3a29b577dc2ea9bdac7493a8",
+    "../native-global-observable-algebra/THEOREM.md": "d150cd2ec9429ce04ae3221bbc6df6636e16cb29367fba73660cc023af2865b3",
+    "../native-global-observable-algebra/CERTIFICATE.json": "8180eb34b7956882e41249e451415dea5fc143f2bd0c8c6a10a2545e9f7e54e2",
+    "../native-relational-pointer-measurement/THEOREM.md": "b69daf19e305812f8dc63e59957f3f98a9bd7d67473e4598991355c6d0a6bbd9",
+    "../native-local-quantum-anomaly/THEOREM.md": "59bafe822249b5d9284667393e04b11f7bdbad76655819ee22a5b7dcd7ae8785"
+  }
+}

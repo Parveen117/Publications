@@ -1,0 +1,16 @@
+{
+  "protocol": "LQA1_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "daef23395a9c048e5125d8eba782f88bba7deb2d46846984de01257797c7b3b3",
+    "THEOREM.md": "59bafe822249b5d9284667393e04b11f7bdbad76655819ee22a5b7dcd7ae8785",
+    "SOURCE_MAP.md": "f5d165afce6b66423593b060e22767e7b99586d3126f9285ea19138b4645a919",
+    "verify.cjs": "c54fd52886019203e913f3f6251d0cd8f61088b9dede8b65367ad6ad467b42df",
+    "run.py": "b8b5d638dea823963e5284ee17e2696bb4fe4977e9ca7933a363d286a9633a2c",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-local-normal-closure/THEOREM.md": "90194542558d85272d42692551967e0a4c3cea2a4e081d78a8f5834ad4e193e7",
+    "../native-relational-event-clock/THEOREM.md": "fabe0ba35389a8c85dc123359831ffda1faa7872d035dbba5e1a9caee1c38077",
+    "../native-homogeneous-quantum-sector/THEOREM.md": "083e699c04bcd5769ff35b56050f771d5d53a3613ecf750ac57205ad1bddee88",
+    "../native-homogeneous-quantum-sector/CERTIFICATE.json": "997e56fb4629f0eb0a915b9c4a17a3381b527ef0986e21d84ab828856d7834f7"
+  }
+}

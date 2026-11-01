@@ -1,0 +1,274 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,xcolor,hyperref,fancyhdr}
+\definecolor{ink}{HTML}{15344A}
+\hypersetup{colorlinks=true,urlcolor=ink,linkcolor=ink,pdftitle={CCL-1: Common cone, rest invariant and the geometry interface},pdfauthor={Research development for Monty Dabas}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\textcolor{ink}{CCL-1 / Native common-cone limit}}\fancyhead[R]{\small 15 October 2026}\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}\setlength{\parindent}{0pt}\setlength{\parskip}{7pt}
+\newtheorem{theorem}{Theorem}\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\ii}{\iota}\newcommand{\id}{\mathbf1}\newcommand{\dd}{\mathrm d}\newcommand{\tr}{\operatorname{Tr}}
+\begin{document}
+\begin{center}
+{\Large\bfseries\color{ink} Common cone, rest invariant,\par and the geometry interface\par}\vspace{6pt}
+{\large CCL-1: a conditional continuation of PR1, PR2 and IN1}\par
+Research draft for Monty Dabas / 15 October 2026
+\end{center}
+
+\textbf{Main result.} In a specified cut-shift walk, a common address/count refinement and bounded rest-turn rates give a shared continuum propagation cone, even when rest rates differ. Bounded local sector mixing preserves that causal bound. For the free homogeneous sector the native algebra also gives the mass-shell form. On the already admitted curved coframe module, the principal symbol gives the same local null cone to every minimally coupled sector.
+
+The new development is this \emph{conditional connection between existing stages}, with an explicit convergence estimate and conditions that can fail. The underlying Clifford identities, Lorentz form, local hyperbolic propagation and product approximation are established mathematical structures; no literature-wide novelty claim is made.
+
+\textbf{What is not assumed at the start.} No numerical light speed, physical mass value, Einstein energy formula or empirical gravitational coupling is used to obtain the dimensionless free dispersion. The carrier, continuum completion, shared scaling and local coupling class \emph{are} assumptions. Calling the output physical energy, momentum, mass and spacetime requires an operational dictionary.
+
+\section*{1. Typed contract}
+The finite coefficient carrier has a self-dagger cut $C$ and an anti-dagger turn $R$:
+\[
+C^2=\id,\quad R^2=-\id,\quad CR=-RC,\quad C^\dagger=C,\quad R^\dagger=-R.
+\]
+The central scalar $\ii^2=-1$ is distinct from $R$. A concrete native block is
+\[
+C=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+R=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad P_\pm=(\id\pm C)/2.
+\]
+For the analytic bridge declare $\mathcal H=L^2(\mathbb R;\mathbb C^2)$ with its positive dagger pairing. Set $S_a f(x)=f(x+a)$ and
+\[
+D_\varepsilon=S_\varepsilon P_++S_{-\varepsilon}P_-,\qquad
+U_\varepsilon=D_\varepsilon e^{\varepsilon gR}.
+\]
+Here $x$ is a dimensionless address, $s=n\varepsilon$ an ordered count coordinate, and $g$ a fixed finite rest-turn rate. Identifying $s$ with a clock is a later choice. This paper does not remove the need for an ordering parameter.
+
+\textbf{Source and target.} Source: the PR1 walk with coin angle $\theta=\varepsilon g$ and address phase $k=\varepsilon q$. Target: its continuum propagation generator. Intertwiner: the Fourier transform, under which $D_\varepsilon$ becomes $e^{\ii\varepsilon qC}$. For lattice samples one must additionally specify sampling and interpolation; here the exact shifted-function realization supplies the comparison without an aliasing assumption.
+
+\newpage
+\section*{2. What an exponential actually preserves}
+\begin{proposition}[Compatible generator]
+For a finite Hermitian form $J$ and a constant matrix $A$, the maps $T(s)=e^{sA}$ preserve $J$ for every real $s$ if and only if
+\[
+A^\dagger J+JA=0.
+\]
+\end{proposition}
+\textit{Proof.} Differentiate $T(s)^\dagger JT(s)$. The derivative is $T(s)^\dagger(A^\dagger J+JA)T(s)$, so the condition is sufficient. Evaluating the derivative at zero proves necessity. $\square$
+
+Thus an invariant restricts the generator; it does not choose a unique exponential channel. For positive $J=\id$, this is the anti-dagger condition. For an indefinite $J$, it gives a different preservation class. A count-evolution unitary and an observer boost are distinct operations even when both use exponentials.
+
+\textbf{Reusing IN1, with its normalization explicit.} Write the reading tensor as
+\[
+Q=n\id+\mathbf r\cdot\mathbf C=2\rho,
+\qquad \det Q=n^2-|\mathbf r|^2=4\det\rho.
+\]
+For $B=e^{\eta C_1/2}$, $\det B=1$, and $Q'=BQB^\dagger$ gives
+\[
+\begin{pmatrix}n'\\r'_1\end{pmatrix}
+=\begin{pmatrix}\cosh\eta&\sinh\eta\\\sinh\eta&\cosh\eta\end{pmatrix}
+\begin{pmatrix}n\\r_1\end{pmatrix},\qquad r'_2=r_2,\quad r'_3=r_3.
+\]
+The determinant and future positive cone are preserved. This is the existing IN1 algebraic result, not a derivation of a spacetime cone from a density tensor alone.
+
+\textbf{A bridge must carry the readings.} A map from $(n,\mathbf r)$ to propagation frequencies must preserve the relevant form and observation convention. No identity between the determinant of an arbitrary normalized quantum state and the physical rest mass of a particle is inferred. In particular, a pure density matrix is rank one even for a massive quantum particle; the mass shell is a statement about translation generators, not the determinant of that density matrix.
+
+\textbf{Exact control.} With the rational boost coefficients $\cosh\eta=5/3$, $\sinh\eta=4/3$, the pair $(n,r_1)=(2,0)$ becomes $(10/3,8/3)$ and both have invariant $4$. The supplementary native-arithmetic checks reproduce this and reject a non-preserving dilation.
+
+\newpage
+\section*{3. Refinement theorem and the free mass shell}
+\begin{theorem}[Shared free continuum limit]
+Fix $g\in\mathbb R$. For $s=n\varepsilon\geq0$ and Fourier support $|q|\leq K$,
+\[
+\boxed{\ \|U_\varepsilon^n f-e^{sG_g}f\|_2
+\leq s\varepsilon K|g|\,\|f\|_2,\qquad
+G_g=C\partial_x+gR.\ }
+\]
+Consequently $U_\varepsilon^{\lfloor s/\varepsilon\rfloor}f\to e^{sG_g}f$ strongly for every $f\in\mathcal H$, uniformly for $s$ in a fixed compact nonnegative interval. Finitely many fixed rates $g_a$ share this limit with the same derivative coefficient.
+\end{theorem}
+\textit{Proof.} At a Fourier frequency $q$, put $A=\ii qC$ and $B=gR$. Both are anti-dagger. A double Duhamel integration, using norm-one exponentials, gives
+\[
+\|e^{\varepsilon A}e^{\varepsilon B}-e^{\varepsilon(A+B)}\|
+\leq\tfrac12\varepsilon^2\|[A,B]\|
+=\varepsilon^2|qg|.
+\]
+For completeness, differentiate the product error and write
+\[
+[e^{uA},B]=\int_0^u e^{vA}[A,B]e^{(u-v)A}\dd v.
+\]
+Integrating the resulting norm bound over $0\leq u\leq\varepsilon$ gives the displayed estimate. Telescoping the $n$ factors gives $n\varepsilon^2|qg|$; integrate its square with the Fourier norm. The count rounding adds at most $\varepsilon(K+|g|)\|f\|_2$ on this band. For general $L^2$ data, truncate the Fourier tail and use unitarity to bound the remaining error by twice its norm. $\square$
+
+Anticommutation gives
+\[
+G_g^2=\partial_x^2-g^2,\qquad
+\boxed{\Omega^2=q^2+g^2.}
+\]
+This is also the low-phase limit of the \emph{exact} PR1 dispersion
+\[
+\cos(\varepsilon\Omega_\varepsilon)
+=\cos(\varepsilon g)\cos(\varepsilon q).
+\]
+On its principal branch, for bounded $(g,q)$ as $\varepsilon\to0$,
+\[
+\boxed{\Omega_\varepsilon^2=q^2+g^2
+-\frac{\varepsilon^2}{3}g^2q^2+O(\varepsilon^4).}
+\]
+To prove the correction, put $\Omega_\varepsilon^2=q^2+g^2+\varepsilon^2a+O(\varepsilon^4)$ and compare the fourth-order cosine coefficients. They give $-a/2=g^2q^2/6$. The squared principal inverse is analytic in $1-\cos(\varepsilon g)\cos(\varepsilon q)$ near zero, including the origin, so the remainder is uniform on bounded sets.
+
+This finite-step term is a property of the specified walk, not yet an experimental prediction: no physical refinement scale has been selected.
+
+\newpage
+\section*{4. Local coupling keeps the causal bound}
+\begin{theorem}[Common cone with local sector mixing]
+Let $\mathsf C=C\otimes\id_N$, and let $V(s,x)$ be a smooth bounded matrix-valued multiplication operator, anti-dagger at every point. Assume the bound is uniform on the count interval considered. The equation
+\[
+\partial_s\Psi=\mathsf C\partial_x\Psi+V(s,x)\Psi
+\]
+has a unique mild $L^2$ evolution. If its initial support lies in $[a,b]$, then
+\[
+\boxed{\operatorname{supp}\Psi(s)\subseteq[a-s,b+s],\quad s\geq0.}
+\]
+Every sector has characteristic set $\tau^2-\xi^2=0$, irrespective of its bounded zeroth-order rest term or sector mixing.
+\end{theorem}
+\textit{Proof.} The free propagator is $D(s)=S_sP_++S_{-s}P_-$. Iterating
+\[
+\Psi(s)=D(s)\Psi(0)+\int_0^s D(s-u)V(u)\Psi(u)\dd u
+\]
+gives a norm-convergent series: the $j$th term is bounded by $(Ms)^j/j!$ times the initial norm. The same estimate gives uniqueness. Multiplication by $V$ does not enlarge support; every term's shifts have total elapsed length $s$. Thus every term, and its $L^2$ limit, has the displayed support bound. The principal symbol is $\tau\id-\xi\mathsf C$, whose determinant is $(\tau^2-\xi^2)^N$. $\square$
+
+The positive pairing is conserved: for regular solutions, with $\rho=\Psi^\dagger\Psi$ and $w=\Psi^\dagger\mathsf C\Psi$, one has $\partial_s\rho=\partial_xw$ and $|w|\leq\rho$. Approximation extends norm conservation to the mild evolution. The theorem permits local mixing between different fixed rest sectors, for example $V=R\otimes M+W(s,x)$ with $M=M^\dagger$ constant and $W^\dagger=-W$. An arbitrary $W$ need not preserve the free mass-shell dispersion or full Lorentz symmetry.
+
+\textbf{Discrete locality.} More directly, each step $D_\varepsilon e^{\varepsilon V_j(x)}$ expands support by at most $\varepsilon$. This exact finite-step statement needs no Taylor approximation and holds even for noncommuting local coins. It is a support bound, distinct from a wave-packet group velocity. In PR1 the latter has supremum $|\cos\theta|$; with $\theta=\varepsilon g$, it approaches one.
+
+\textbf{Sharp failure conditions.} If sector $a$ uses $S_{v_a\varepsilon}$ instead, its generator is $v_aC\partial_x+g_aR$, and its characteristic speed is $|v_a|$. Exponentials still exist and all dagger conditions hold. Different $v_a$ therefore disprove universality from exponentiation alone. Likewise derivative mixing, spatially nonlocal interactions or a rest angle fixed as $\varepsilon\to0$ fall outside this refinement theorem. The last choice gives a divergent rest rate rather than the stated finite continuum sector.
+
+\newpage
+\section*{5. Relativity as a free-sector special case}
+On the homogeneous limiting sector, the pair $(\Omega,q)$ lies on
+\[
+\Omega^2-q^2=g^2.
+\]
+The exponential boost of Section 2 preserves this form, and for $g>0$ the positive sheet is parametrized by
+\[
+\Omega=g\cosh\eta,\qquad q=g\sinh\eta,\qquad
+\frac{\partial\Omega}{\partial q}=\tanh\eta.
+\]
+This matches the existing PR2 rest-turn orbit. For $g=0$ the free dispersion is null and its nonzero modes have speed magnitude one. Different fixed $g$ change the rest rate but not the characteristic cone. This is the mathematical content of the proposed special-relativistic sector, not a claim that every permitted interaction is relativistic.
+
+\textbf{Operational dictionary, kept visible.} If an address unit is $L_*$, a count-to-clock unit $T_*$ and a phase-to-action unit $\mathcal A_*$, set
+\[
+c=\frac{L_*}{T_*},\qquad
+E=\frac{\mathcal A_*}{T_*}\Omega,\qquad
+p=\frac{\mathcal A_*}{L_*}q,\qquad
+m=\frac{\mathcal A_*T_*}{L_*^2}|g|.
+\]
+Then, by substitution rather than an extra dispersion postulate,
+\[
+E^2-c^2p^2=m^2c^4,\qquad E_{\rm rest}=mc^2.
+\]
+This is a conditional normalization map. It does not establish that a given laboratory energy observable equals $\mathcal A_*\Omega/T_*$, nor select $\mathcal A_*=\hbar$, $L_*/T_*$ or particle masses. The native equation supplies the dimensionless relation; measurements and a generator-observable interface must supply the physical dictionary.
+
+\textbf{Clarifying the proposed mass observation.} At the level of future energy-momentum vectors, two opposite null readings $(1,1)$ and $(1,-1)$ have total $(2,0)$, with nonzero invariant $4$. A system can therefore have a rest invariant even if its constituents are null. This does not prove binding, stability, a particle spectrum, or a field equation for gravity. A normalized mixture and an unnormalized total source have different scales and must not be interchanged.
+
+\textbf{Necessary next identification.} Construct a common observation map that sends the phase generators and source observables to calibrated energy and momentum, and intertwines their frame action. Only after that map is justified may the propagation invariant and a selected IN1 source tensor be identified physically. Merely giving both the same quadratic formula is insufficient.
+
+\newpage
+\section*{6. Conditional curved-frame extension}
+The earlier MG and SM packets already admit a smooth four-dimensional Lorentzian coframe and a Clifford module. Reuse that module, rather than treating the two-component reading tensor as an automatic spacetime construction. With signature $\eta=\operatorname{diag}(-1,1,1,1)$,
+\[
+\{\Gamma^a,\Gamma^b\}=2\eta^{ab}\id,\qquad
+\mathcal D_a=\Gamma^b e_b{}^\mu(\partial_\mu+\mathcal A_{a\mu})+\mathcal M_a.
+\]
+The sector index is $a$; all sectors use the \emph{same} invertible coframe $e$. The connection and mass matrices are smooth zeroth-order coefficients. Their detailed symmetry and adjoint requirements are inherited from whichever action is chosen; the following symbol identity does not select that action.
+
+\begin{proposition}[Shared local characteristic geometry]
+For a real covector $\xi$, omit the conventional scalar $\ii$ in the principal symbol and set $\sigma_a(\xi)=\Gamma^b e_b{}^\mu\xi_\mu$. Then
+\[
+\boxed{\sigma_a(\xi)^2=g^{\mu\nu}\xi_\mu\xi_\nu\id,\qquad
+g^{\mu\nu}=\eta^{bc}e_b{}^\mu e_c{}^\nu.}
+\]
+Its characteristic set is exactly the metric null cone, independent of the sector's zeroth-order connection and mass matrices.
+\end{proposition}
+\textit{Proof.} Symmetry of $\xi_\mu\xi_\nu$ removes the Clifford commutator and leaves the displayed anticommutator. If the scalar is nonzero, the symbol is invertible with inverse $\sigma_a/(g^{\mu\nu}\xi_\mu\xi_\nu)$. If it vanishes, the square is zero, so the symbol is singular. $\square$
+
+This is a local characteristic theorem, not a global causal existence theorem, nor a proof that the flat discrete walk refines to this curved operator. Those require the appropriate hyperbolicity, geometry and convergence hypotheses.
+
+\textbf{The source bridge already available.} SM's selected classical matter action, coupled to MG/LR's selected gravitational action, is varied with respect to matter, coframe and independent connection. It already supplies classical stress and spin sources. The reusable architecture is
+\[
+\frac{\delta(S_{\rm geom}+S_{\rm matter})}{\delta\Psi}=0,\qquad
+\frac{\delta(S_{\rm geom}+S_{\rm matter})}{\delta e}=0,\qquad
+\frac{\delta(S_{\rm geom}+S_{\rm matter})}{\delta\omega}=0.
+\]
+If the recovered matter operators have the shared symbol above, all their characteristics use the evolving common metric. This conditional composition supplies a precise interface for ``cut and transport both evolve.'' It does not derive the chosen action, a quantum metric measure or a joint continuum limit. In a noncoordinate frame, retain the full curvature
+\[
+F_{bc}=e_b\mathcal A_c-e_c\mathcal A_b+[\mathcal A_b,\mathcal A_c]-c_{bc}{}^d\mathcal A_d.
+\]
+
+\newpage
+\section*{7. Connect the existing quantum geometry example}
+MGH-1 already contains two explicit Euclidean hinge metrics, independent configuration labels, a selected mass-weighted phase and a joint quantum witness. Its local operation is
+\[
+W_\delta=\exp(\ii\delta M_o\otimes Q_X),\qquad Q_X^2=Q_X=Q_X^\dagger.
+\]
+It is not necessary to rebuild that finite example. One precise propagation extension is to attach its finite registers to the direction carrier and take the bounded local coefficient
+\[
+V=gR\otimes\id_m\otimes\id_g
++\ii\lambda\,\id_{\rm dir}\otimes M_o\otimes Q_X,
+\]
+with Hermitian finite $M_o$ and real bounded $\lambda$. The second term may vary smoothly with $(s,x)$. Both terms are anti-dagger. Theorem 3 therefore gives the common causal support bound for the resulting wavefunction. At a discrete step the corresponding on-site phase remains support preserving.
+
+This attaches the existing independent quantum configuration register to a causal transport model. It does \emph{not} make its Euclidean hinge into the Lorentzian metric governing that transport: an additional common-coframe reconstruction map would be required. It also does not force the free mass shell to persist when the new internal coupling is active. The prescribed $\lambda$, configuration transitions, gravitational constraints and continuum feedback remain substantive dynamical choices.
+
+\textbf{What is genuinely gained here.} A local quantum geometry interaction need not destroy a shared propagation bound. The algebra and the old quantum example are compatible at this precise level. The stronger identification of the interacting geometry with the metric of the propagation operator is an explicit next theorem target, rather than hidden inside the word ``gravity.''
+
+\newpage
+\section*{8. Checks and scope of evidence}
+The companion script uses the unchanged native exact rational cut engine, extracted from the same pinned archive used by MGH-1. It checks cut/turn algebra, the Fourier generator square, rational boost invariance, the fourth-order dispersion coefficient at exact rational fixtures, Clifford principal-symbol squares and counterexamples with unequal shift speeds. Separate floating-point values illustrate the dispersion remainder; they are not proof certificates.
+
+\textbf{Executed result: 69 exact checks passed; 3 negative controls rejected the stronger claims.} Controls distinguish an incompatible generator, a non-preserving dilation and unequal sector shift speeds. An eight-step local-coin fixture also preserves norm exactly and respects its discrete support cone at every step.
+
+For the numerical illustration $q=1.2$, $g=0.7$, the continuum value is $\Omega^2=1.93$:
+\begin{center}
+\begin{tabular}{rrr}
+\toprule
+$\varepsilon$ & $\Omega_\varepsilon^2-1.93$ & Residual after correction\\\midrule
+0.200 & $-9.45650\times10^{-3}$ & $-4.85045\times10^{-5}$\\
+0.100 & $-2.35503\times10^{-3}$ & $-3.02758\times10^{-6}$\\
+0.050 & $-5.88189\times10^{-4}$ & $-1.89161\times10^{-7}$\\
+0.025 & $-1.47012\times10^{-4}$ & $-1.18218\times10^{-8}$\\\bottomrule
+\end{tabular}
+\end{center}
+The second column approaches second-order scaling; the corrected residual approaches fourth-order scaling. These are floating-point illustrations of the analytically derived asymptotics, not accuracy claims about measured physics.
+
+The analytic results above have written proofs. No proof-assistant verification of functional analysis, global gravitational constraint closure, physical speed universality, or experimental confirmation is claimed. Old frozen packets are not modified. The new exact checks validate finite algebraic fixtures; their scope is not promoted to a proof of every analytic limit.
+
+\textbf{Verification report.} See the attached \texttt{CHECKS.json} and the reproducible source packet attached to this PDF. The source packet includes the native engine needed for replay, with predecessor hashes and repository revisions. Run \texttt{python3 run.py --check} using Python 3.12 and Node.js. The report separates exact arithmetic from numerical illustrations.
+
+\newpage
+\section*{9. Claim ledger and the next concrete obligation}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.57\linewidth}>{\raggedright\arraybackslash}p{0.35\linewidth}}
+\toprule
+Claim & Status in this development\\\midrule
+Compatible exponential preserves a declared form & Written finite-matrix proof\\[4pt]
+Free cut walk converges under shared scaling & Written $L^2$ proof and band estimate\\[4pt]
+Local bounded sector mixing keeps common support cone & Written mild-evolution proof\\[4pt]
+Free Lorentz mass-shell form & Algebraic consequence; PR2 reused\\[4pt]
+Physical energy and mass calibration & Dictionary stated; identification open\\[4pt]
+Common curved characteristic cone & Conditional Clifford/coframe proof\\[4pt]
+Classical source feedback & Earlier MG/SM actions reused conditionally\\[4pt]
+Quantum configuration coupling inside causal transport & Finite local extension; metric identification open\\[4pt]
+Nature selects one scaling, action and coupling & Open\\[4pt]
+Interacting quantum gravity and controlled continuum & Open\\\bottomrule
+\end{tabular}
+
+\textbf{Next target: source-to-symbol compatibility.} Construct a specified map from the existing metric register to the coframe/shift operator and its matter source. Require that it (i) transforms correctly under frame changes, (ii) supplies the same coframe to every tested sector, (iii) is driven by the same joint dynamics that changes the source, and (iv) has a controlled weak-curvature classical limit. A geometry label that only contributes a phase does not yet meet this target. This document resolves the propagation condition that the next map must preserve.
+
+\newpage
+\section*{10. Pinned lineage}
+Extra-ideas revision:\par\texttt{4aad5a0ec0fbdac727894ad0c315ed822cc0350e}.
+\begin{itemize}
+\item \href{https://github.com/Parveen117/extra-ideas/blob/4aad5a0ec0fbdac727894ad0c315ed822cc0350e/physics/pr1/PR1_SECTOR_SPEED_AND_MASS.md}{PR1: sector speed and mass}. Exact walk dispersion and the unresolved universal-speed condition.
+\item \href{https://github.com/Parveen117/extra-ideas/blob/4aad5a0ec0fbdac727894ad0c315ed822cc0350e/physics/pr2/PR2_TWO_SHEETS_PAIR_OBSERVER.md}{PR2: two sheets and pair observer}; \href{https://github.com/Parveen117/extra-ideas/blob/4aad5a0ec0fbdac727894ad0c315ed822cc0350e/physics/in1/IN1_THE_INVARIANT.md}{IN1: the invariant}. Existing boost and determinant identities; physical reading boundary retained.
+\end{itemize}
+Publications revision:\par\texttt{f0f1c1650e914b7eaf3bf64ddb7df9f543c92a56}.
+\begin{itemize}
+\item \href{https://github.com/Parveen117/Publications/blob/f0f1c1650e914b7eaf3bf64ddb7df9f543c92a56/papers/ugd-kahler-propagation/NATIVE_METRIC_DYNAMICS.md}{MG: native metric dynamics}; \href{https://github.com/Parveen117/Publications/blob/f0f1c1650e914b7eaf3bf64ddb7df9f543c92a56/papers/ugd-kahler-propagation/NATIVE_MASSIVE_MATTER.md}{SM: native massive matter}. Declared smooth coframe, action and classical-source assumptions reused.
+\end{itemize}
+Local predecessors:\par
+{\small\texttt{native-cut-transport-feedback/THEOREM.md} (CID-D2)\par
+\texttt{native-matter-geometry-holonomy/THEOREM.md} (MGH-1)}\par
+Their exact source hashes are recorded in \texttt{SOURCE\_PINS.json}. Neither the old finite feedback action nor the mass-weighted hinge interaction is silently upgraded to a physical quantum gravity law.
+\end{document}

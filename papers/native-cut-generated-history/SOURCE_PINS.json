@@ -1,0 +1,23 @@
+{
+  "protocol": "CHD3_SOURCE_PINS_V1",
+  "files": {
+    "README.md": "77d1b8f0f18b8dcad3d0a91e8b8c734f6076a298e6cdc22e23b5b6646d349642",
+    "THEOREM.md": "b75643d84d600c2fd7a2bc7b6de4fae18886a7d02df3d9d348c34f924489c1d6",
+    "SOURCE_MAP.md": "3230a7a8a89688d8d2543ef5058e2b2b64e95baf4acb11392353d92ab2cfe37a",
+    "verify.cjs": "84afd0ed9bd4fe67980f349c6c8d64f6cbb75fa9fc9d1d5024c19cc0b530402b",
+    "run.py": "4d700b19015e55b35a63fa1d9eb6da7b958b919d8be8e79e65e96e093d54b44f",
+    "../native-common-cone-limit/native_engine/native_operator.cjs": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3",
+    "../native-common-cone-limit/native_engine/paninian_operator.cjs": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8",
+    "../native-moving-zero-covariance/sources/T23.md": "384ef9e3278fd56c212403db54072542c9a94033de7d402d2044694b01805908",
+    "../native-cut-record-completeness/THEOREM.md": "1c49649c51e74a5ed541e835ca4feebd8086552b97c353cb26c62093b4ab6a11",
+    "../native-cut-local-dynamics/THEOREM.md": "620ae9906bafa18a7a196097c3b26873d72e1ec3d851500e5c5eecefb0ba9271",
+    "../native-relational-cut-space/THEOREM.md": "b692cd897860249ae33931c0383f0f0a5ea400e8a83f8239d2caa2e7eaffbb12",
+    "../native-quantum-gravity-consistency/THEOREM.md": "4a431b5ad31d7981d7d505159c756db213dc6faac47d48534c911f20ad831335",
+    "../native-heat-observer-memory/PHASE_RECORD.md": "de23fe39a2d55f8a89b5e063a720c31f631db1f40db9a6661cc4a12a155ab1ba",
+    "BINARY_INVARIANT_SYNTHESIS.md": "17607b1e8d18f07c6ea1cc286c6d258155efca244c0e78b56a765a6a6c7e58a1",
+    "binary_synthesis.cjs": "0ab958d5d6515c56c19c19aa8637dba13dc557608dd06e6bec3cd73750015b2d",
+    "../yang-mills-certified-benchmark/certificates/YM54_RESULT.json": "f4f704ccc77f9505c5adb8d9bf3b0fc9ee9aecbb341b0ff749d377a3c9c9a1c0",
+    "CIRCULAR_OBSERVER_COMPLETION.md": "9ad8a199ab4e011131991be8daf469add67647dfad2e1d142ce195a9e842c697",
+    "circular_observer.cjs": "89252667ff58c5223ace4aebdd0e7c28500bd022eb98e9e359dcca0bb8682e90"
+  }
+}
