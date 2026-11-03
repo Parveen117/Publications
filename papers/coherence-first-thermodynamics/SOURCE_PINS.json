@@ -1,0 +1,81 @@
+{
+  "protocol": "COHERENCE_FIRST_THERMO_SOURCE_PINS_R1",
+  "publications_files": [
+    {
+      "path": "papers/thermo-compass-foundations/model.py",
+      "sha256": "b80f6b40419b5a7eeac2e1218f1d07318525cef12168f2e02c4de2325962a747"
+    },
+    {
+      "path": "papers/thermo-compass-foundations/THEOREM.md",
+      "sha256": "783caecc1d6d0156576f07d0fea4d3f14c9c4124d1a901aaa1ac0b48c54fd7c4"
+    },
+    {
+      "path": "papers/curvature-information-duality/README.md",
+      "sha256": "2b1851eb8122976e9bd94b0daaea4bd8961441fb6eb2165a0bbdbd70832614b3"
+    },
+    {
+      "path": "papers/curvature-information-duality/LINEAGE.md",
+      "sha256": "01abb15d7ff3e9d577bfa91b21f85bd67a48b5640b0f3da2af369ed3bdb64c66"
+    },
+    {
+      "path": "papers/curvature-information-duality/certificates/cid1_curvature_information_duality.py",
+      "sha256": "e4207d4d77ff71ff4014f05205f15600699fb516dc4ab7721f0fa07b3ba20186"
+    },
+    {
+      "path": "papers/cut-first-equivalence/certificates/cfeu_uniqueness.py",
+      "sha256": "f4cce58ec424a5ce144cde6e8082c18e6fa5b3118bc2c297eaa04dbbe815c97b"
+    },
+    {
+      "path": "papers/cut-first-equivalence/certificates/cfe1_cut_first_equivalence.py",
+      "sha256": "f8188dd6765a51bbe9e7ffa47faf947f8c367e5f6dcfe69a32c1f05e91f2c02a"
+    },
+    {
+      "path": "papers/thermodynamic-response-corrections/source/sections/01_foundations.tex",
+      "sha256": "e693803c14a6d72837fa1a25bb2c16248b33bb60c134ab591ca6274f6c454339"
+    },
+    {
+      "path": "papers/thermodynamic-response-corrections/source/sections/01a_response_summary.tex",
+      "sha256": "611bad7032e766db32e538cfa7c500e4f17cc1e809c61368be795c0a524715f2"
+    },
+    {
+      "path": "papers/native-ugd-propagation/THEOREM.md",
+      "sha256": "8c452ed73cbd6af7c73a3c4509fe722b71c3241f16483655e84b46326f6a82da"
+    }
+  ],
+  "publications_parent_commit": "c263de269c41b0713e38336e79061873ad632a10",
+  "rkf_commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+  "rkf_files": [
+    {
+      "path": "operator_foundation/CANONICAL_HOME.json",
+      "sha256": "6c5a7756ff220e7a9afa7fdb72151781f1777e2099880788f21a1e1b780ced39"
+    },
+    {
+      "path": "operator_foundation/README.md",
+      "sha256": "5fa13d4df90b33597e3c72d1860258d0492d8680583e7b7e3b2e13dddfc6bbc9"
+    },
+    {
+      "path": "operator_foundation/examples/emk_job.json",
+      "sha256": "fd3c9e50cb51050acb9c36b3123fbc4664870c621e5d73bb8763b1050b30c763"
+    },
+    {
+      "path": "operator_foundation/core/native_operator.cjs",
+      "sha256": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+    },
+    {
+      "path": "operator_foundation/core/paninian_operator.cjs",
+      "sha256": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+    },
+    {
+      "path": "operator_foundation/theory/NATIVE_PRIMITIVE_ORDER.md",
+      "sha256": "f1f2fa357d41745445bcaf403784edbec6a17cbd78bc400cbd1229aa682c0fd9"
+    },
+    {
+      "path": "operator_foundation/theory/01_NATIVE_ALGEBRA.md",
+      "sha256": "ea07ab9f0f8a47e63f8ee973638669f596308cec4ed234ced7497a5f7539ecf5"
+    },
+    {
+      "path": "operator_foundation/theory/PANINIAN_OPERATOR_COMPILER.md",
+      "sha256": "cbeb9fd821bc134f4510408623fb1c723ab59a00237aa5b505d09cd4621c4eca"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "retrieved_and_verified": "2026-09-25",
+  "method": "Full-file Git blob hashes matched immutable remote trees; SHA-256 recorded",
+  "sources": [
+    {
+      "id": "SR1",
+      "repository": "Parveen117/Publications",
+      "commit": "cfeac63e13ccdc1c6315224877f8acf212c88274",
+      "path": "papers/uncut-cut-measurement/NATIVE_INTERACTION_AND_LAWFUL_CUTS.md",
+      "role": "U27 real anti-self-dagger generators, common grading and nonzero mixing brackets; graph selection remains open",
+      "git_blob_sha": "c72763d2ad7f01d356a74a92f3a29a56268e4903",
+      "sha256": "ac37333fb1aa315ffe41f6ad821bd1437ddb4a2270cc065f65820b270bb4ea69",
+      "url": "https://github.com/Parveen117/Publications/blob/cfeac63e13ccdc1c6315224877f8acf212c88274/papers/uncut-cut-measurement/NATIVE_INTERACTION_AND_LAWFUL_CUTS.md"
+    },
+    {
+      "id": "SR2",
+      "repository": "Parveen117/Publications",
+      "commit": "cfeac63e13ccdc1c6315224877f8acf212c88274",
+      "path": "papers/uncut-cut-measurement/NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md",
+      "role": "U30-U32 signed response, fixed targets, and exact cut accounting",
+      "git_blob_sha": "5251019b4d5417f49cb8aa8f48a36d32efe2ddae",
+      "sha256": "3ee3183f14e5f0a5978c1d591720c7bfb499528d71677ddb722ecbe8a19d1fbe",
+      "url": "https://github.com/Parveen117/Publications/blob/cfeac63e13ccdc1c6315224877f8acf212c88274/papers/uncut-cut-measurement/NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md"
+    },
+    {
+      "id": "SR3",
+      "repository": "Parveen117/Publications",
+      "commit": "cfeac63e13ccdc1c6315224877f8acf212c88274",
+      "path": "papers/uncut-cut-measurement/PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md",
+      "role": "U33-U35 independently calibrated readouts and bounded-error rejection",
+      "git_blob_sha": "782138b414e7191ff5a9fc4ed80a1a84361f6674",
+      "sha256": "5fa440c92789cc7aa0e21d996d6a97e70d59f4c87a876eafe74285205d7182cf",
+      "url": "https://github.com/Parveen117/Publications/blob/cfeac63e13ccdc1c6315224877f8acf212c88274/papers/uncut-cut-measurement/PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md"
+    },
+    {
+      "id": "SR4",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex",
+      "role": "Constitutive potentials and numerical couplings are not selected by the Recognition square",
+      "git_blob_sha": "437f3de0ab8ed31af3fd9204210e0c3454126f91",
+      "sha256": "fa5ea981f7ffc4c28040df4adcd6d380fa254d47486f62c9f1447ce57bd6562c",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex"
+    },
+    {
+      "id": "SR5",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/thermodynamic-response-corrections/source/sections/06b_classical_field_equations.tex",
+      "role": "Field equations are conditional on a declared spacetime action; not imported into U36-U38",
+      "git_blob_sha": "e12070f344fab8b39a77b6abe9f704c516668517",
+      "sha256": "a343509a201f0d5a43f7b15bd190b55b6851ae9bb668cfe47f9af83a06ecf06f",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/thermodynamic-response-corrections/source/sections/06b_classical_field_equations.tex"
+    },
+    {
+      "id": "SR6",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/morphic_geometry/main.tex",
+      "role": "Only Laplacian definitions and corrected finite symmetric graph reduction, Theorem 11, used; no whole-paper endorsement",
+      "git_blob_sha": "887cb2065428d29b375aa14431c53144372b45fb",
+      "sha256": "bc0f5177e0f1abda410793333963b7cbde813897a1baf1879f417bd75e268c64",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/morphic_geometry/main.tex"
+    },
+    {
+      "id": "SR7",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/thermodynamics/lambda_geometry/13_refinement_and_continuum_length.md",
+      "role": "Native length rigidity under sector axioms, independent scale, and failure of unrestricted homotopy invariance",
+      "git_blob_sha": "37e92c3040555846ca7c76b224ca38a252c82149",
+      "sha256": "324dc41ae3ca33c269bde20aeba2de883c07e3ae90d5bd826a2aa751b039a4f3",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/thermodynamics/lambda_geometry/13_refinement_and_continuum_length.md"
+    }
+  ],
+  "boundary": "Thermo correction PR 4 remains open. Source SR6 is used only for the stated sections. No spacetime field equation is a premise.",
+  "new_constitutive_hypotheses": [
+    "Positive link weights and a grounded connectivity graph",
+    "Quadratic additive shift-invariant mismatch cost with linear source coupling",
+    "Stationary preparation; native conservative evolution does not imply relaxation",
+    "Shell symmetry and quadratic capacity growth for inverse-square sector",
+    "Independent physical ruler, source/probe and work/force adapters"
+  ],
+  "benchmark_sources": [
+    {
+      "url": "https://arxiv.org/abs/2002.11761v1",
+      "authors": "J.G. Lee et al.",
+      "year": 2020,
+      "doi": "10.1103/PhysRevLett.124.101101",
+      "inspected": "Authors abstract and bibliographic record; no raw data"
+    },
+    {
+      "url": "https://arxiv.org/abs/2209.15487v1",
+      "authors": "P. Touboul et al.",
+      "year": 2022,
+      "doi": "10.1103/PhysRevLett.129.121102",
+      "inspected": "Authors abstract and bibliographic record; no raw data"
+    }
+  ],
+  "physical_inverse_square_derived_from_primitive_alone": false,
+  "empirical_data_ingested": false
+}

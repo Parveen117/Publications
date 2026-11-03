@@ -1,0 +1,1797 @@
+{
+  "admissible_continuation": {
+    "checks": {
+      "closed_refinement_comparisons": 24911,
+      "cut_two_partial_arrow_cases": 20646,
+      "diagnostic_pair_mode_checks": 369944,
+      "smaller_memory_maps_rejected": 30392,
+      "totalization_comparisons": 20646,
+      "word_descent_checks": 432376
+    },
+    "controls": {
+      "W7_safe_nontransitive": {
+        "arrows": [
+          [
+            0,
+            null,
+            3,
+            3
+          ]
+        ],
+        "cut": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "distinguished_pair": [
+          0,
+          2
+        ],
+        "safe_indistinguishable_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "word": [
+          0
+        ]
+      },
+      "W8_availability_not_execution": {
+        "arrows": [
+          [
+            0,
+            null
+          ]
+        ],
+        "availability_query": 0,
+        "cut": [
+          0,
+          0
+        ],
+        "memory_restricted": 2,
+        "memory_total_identity": 1,
+        "safe_witness": null
+      },
+      "W9_delayed_availability": {
+        "arrows": [
+          [
+            1,
+            2,
+            null
+          ]
+        ],
+        "class_counts": [
+          1,
+          2,
+          3
+        ],
+        "cut": [
+          0,
+          0,
+          0
+        ],
+        "depth": 2,
+        "memory_labels": 3
+      }
+    },
+    "domains": [
+      {
+        "carrier_size": 1,
+        "cut_partitions": 1,
+        "ordered_arrow_pairs": 4,
+        "partial_endomaps": 2
+      },
+      {
+        "carrier_size": 2,
+        "cut_partitions": 2,
+        "ordered_arrow_pairs": 81,
+        "partial_endomaps": 9
+      },
+      {
+        "carrier_size": 3,
+        "cut_partitions": 5,
+        "ordered_arrow_pairs": 4096,
+        "partial_endomaps": 64
+      }
+    ],
+    "scope": "All cuts and ordered pairs of partial endomaps through three states; W7 is a named four-state control. Availability queries require a separately justified interface; no physical instrument is certified."
+  },
+  "arithmetic": "exact integer and rational arithmetic with declared finite coverage; no floating point",
+  "calibrated_probe_identification": {
+    "controls": {
+      "NP0_not_physical_selection": {
+        "gravity_identified": false,
+        "two_different_pairs_pass_internal_agreement": true
+      },
+      "W39_reciprocal_blindness": {
+        "mixings": [
+          "1/2",
+          "2"
+        ],
+        "phase": "1/2",
+        "reported_first": [
+          "-8/25",
+          "16/25",
+          "3/5"
+        ],
+        "reported_second": [
+          "-8/25",
+          "16/25",
+          "-3/5"
+        ],
+        "same_complete_order_matrix": true,
+        "same_tensor": true
+      },
+      "W40_augmented_probe_rejection": "SHARED_PAIR_REJECTED",
+      "W41_posthoc_output_fit": {
+        "different_native_response": true,
+        "fitted_residual_zero": true,
+        "independent_two_sided_calibration": false
+      },
+      "W42_hidden_native_extension": {
+        "extra_channel_R_readings": [
+          "3/5",
+          "12/13"
+        ],
+        "same_five_raw_readings": true
+      },
+      "W43_bounded_error": {
+        "direct_gap": "6/5",
+        "radius_one_tenth": "SHARED_PAIR_REJECTED",
+        "radius_three_fifths": "UNRESOLVED"
+      },
+      "W44_no_uniform_inverse_margin": {
+        "large_mixing": "INSUFFICIENT_RESOLUTION",
+        "weak_phase": "INSUFFICIENT_RESOLUTION"
+      }
+    },
+    "counts": {
+      "calibrated_frames": 300,
+      "distinct_reciprocal_collisions": 40,
+      "held_out_basis_predictions": 400,
+      "noisy_enclosures": 2700,
+      "pairwise_augmented_verdicts": 4950,
+      "pairwise_order_comparisons": 4950,
+      "parameter_pairs": 100,
+      "phase_error_bounds": 2700
+    },
+    "domains": {
+      "frames": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "2",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "3",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "5",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "7"
+          ]
+        ],
+        [
+          [
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "-2"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "generated_data": "synthetic exact native matrices",
+      "noise_offsets_per_statistic": [
+        -1,
+        0,
+        1
+      ],
+      "parameters": [
+        "-1/3",
+        "-1/2",
+        "-1",
+        "-2",
+        "-3",
+        "1/3",
+        "1/2",
+        "1",
+        "2",
+        "3"
+      ],
+      "raw_scalar_readings": 5,
+      "reported_error_radius": "1/10000",
+      "reported_statistics": 3
+    },
+    "scope": "U33-U35 under the declared oriented two-channel family; neither instrument realization nor physical gravitational universality is established",
+    "status": "PASS_FINITE_CHECKS"
+  },
+  "checks": {
+    "closed_refinement_comparisons": 8521,
+    "common_target_triples": 3509,
+    "cut_target_pairs": 255,
+    "cut_transition_pairs": 3984,
+    "natural_transition_comparisons": 5701,
+    "refinement_target_triples": 967,
+    "represented_block_pairs": 6561,
+    "smaller_memory_maps_rejected": 596,
+    "symmetry_permutations": 6
+  },
+  "conditional_atom_interferometer_interface": {
+    "changed_path_double_difference": "1",
+    "common_response_cancels": true,
+    "experimental_native_prediction_computed": false,
+    "native_force_to_phase_is_conditional": true,
+    "same_row_source_double_difference": "2/3",
+    "triangular_kernel_moments_exact": true
+  },
+  "conditional_gravity_bridge": {
+    "checks": {
+      "basis_change_checks": 12,
+      "candidate_form_comparisons": 1296,
+      "cayley_two_route_checks": 100,
+      "cut_form_checks": 8,
+      "graph_edge_checks": 27,
+      "integer_single_transports": 48,
+      "lawful_memory_cut_examples": 1,
+      "sector_comparisons": 20,
+      "star_families": 24,
+      "warped_chart_points": 24
+    },
+    "controls": {
+      "W10_EMK_candidate_signature": {
+        "dimension": 4,
+        "form_up_to_scale": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-1"
+          ]
+        ],
+        "nontrivial_three_component_loop": [
+          [
+            "85/72",
+            "-5/9",
+            "7/24"
+          ],
+          [
+            "-1/18",
+            "5/9",
+            "5/6"
+          ],
+          [
+            "5/8",
+            "-1",
+            "5/8"
+          ]
+        ]
+      },
+      "W11_sector_nonselection": {
+        "K_form": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "-1"
+          ]
+        ],
+        "R_form": [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "combined_invariant_dimension": 0
+      },
+      "W12_incomplete_family": {
+        "dimension": 4,
+        "one_K_pair_invariant_dimension": 4
+      },
+      "W13_compression_artifact": {
+        "compressed_commutator": [
+          [
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "exact_descent": false,
+        "native_commutator": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "W14_torsion_blocks_identification": {
+        "at_u": 1,
+        "coframe": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "fibre_curvature": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ],
+        "metric_curvature": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "torsion": [
+          "0",
+          "-1"
+        ]
+      },
+      "W15_valid_curved_adapter_at_zero": {
+        "fibre_curvature": [
+          [
+            "0",
+            "2"
+          ],
+          [
+            "2",
+            "0"
+          ]
+        ],
+        "metric": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "-1"
+          ]
+        ],
+        "riemann_uv": [
+          [
+            "0",
+            "2"
+          ],
+          [
+            "2",
+            "0"
+          ]
+        ],
+        "torsion": [
+          "0",
+          "0"
+        ],
+        "warp": "1"
+      },
+      "W16_lawful_memory_cut": {
+        "cut": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ]
+        ],
+        "memory_step": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "2"
+          ]
+        ],
+        "native_lift": [
+          [
+            "5/3",
+            "4/3",
+            "0"
+          ],
+          [
+            "4/3",
+            "5/3",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "2"
+          ]
+        ],
+        "quotient_form": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "-1"
+          ]
+        ],
+        "quotient_transport": [
+          [
+            "5/3",
+            "4/3"
+          ],
+          [
+            "4/3",
+            "5/3"
+          ]
+        ],
+        "source_form": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      }
+    },
+    "rational_encoding": "Fraction values are exact integer or p/q strings",
+    "scope": "Conditional linear transport and supplied smooth-chart checks. No physical gravity law, continuum emergence, selected dimension, quantum readout rule or empirical validation."
+  },
+  "conditional_gravity_phase_translator": {
+    "cross_response_a": "-1/3",
+    "cross_response_b": "-5/8",
+    "distinct_coherent_maps": true,
+    "full_coherent_cayley_inversion_passed": true,
+    "global_phase_relation": [
+      "4/5",
+      "-3/5"
+    ],
+    "same_dephased_transition": [
+      [
+        "4/5",
+        "1/5"
+      ],
+      [
+        "1/5",
+        "4/5"
+      ]
+    ],
+    "same_quantum_density_channel_up_to_global_phase": true,
+    "source_field_a": [
+      "4/3",
+      "5/3"
+    ],
+    "source_field_b": [
+      "21/8",
+      "27/8"
+    ],
+    "universal_gravitational_coupling_derived": false,
+    "unknown_step_scale_ambiguous": true
+  },
+  "conditional_quantum_classical_bridge": {
+    "coherent_site_2_after_two_steps": "16/25",
+    "grounded_graph_vertices": 2,
+    "one_step_transition": [
+      [
+        "4/5",
+        "1/5"
+      ],
+      [
+        "1/5",
+        "4/5"
+      ]
+    ],
+    "phase_erased_site_2_after_two_steps": "8/25",
+    "physical_clock_and_hbar_derived": false,
+    "physical_detector_frequency_law_derived": false,
+    "same_diagonal_different_future_control": true,
+    "seam_residue": "8/25",
+    "source_response": [
+      "4/3",
+      "5/3"
+    ],
+    "thermo_ratio": "4/3"
+  },
+  "conditional_source_response_and_gravity_tests": {
+    "W45_inverse_square_source_one": [
+      "-1",
+      "-1/4",
+      "-1/9",
+      "-1/16"
+    ],
+    "W46_same_native_rules_other_exponents": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "W47_cubic_cost_quartic_capacity": "Same 1/n^2 drop, source times 4 gives response times 2",
+    "W48_onsite_flux": [
+      "27/61",
+      "20/61",
+      "18/61"
+    ],
+    "W49_naive_cut_stiffness": "1 versus correct effective 36/49",
+    "W50_posthoc_radius": "A 1/n profile becomes 1/r^2 under fitted r=sqrt(n); forbidden calibration",
+    "W51_no_relaxation": "Affine Cayley preserves excess cost; a nonstationary state does not settle",
+    "counts": {
+      "bounded_error_ratio_checks": 54,
+      "cut_flux_ledgers": 2204,
+      "energy_completions": 332,
+      "native_affine_laws": 86,
+      "nonlinear_scaling_controls": 108,
+      "pair_energy_force_checks": 176,
+      "radial_profiles": 96,
+      "source_solutions": 332,
+      "stationary_eliminations": 2204,
+      "weighted_graphs": 86
+    },
+    "data_type": "Synthetic exact rational fixtures, not laboratory observations",
+    "distance_control": "REJECTED",
+    "native_primitive_selects_quadratic_cost_or_quadratic_shell_growth": false,
+    "physical_gravity_test_passed": false,
+    "physical_inverse_square_law_derived_without_additional_hypotheses": false,
+    "quantum_gravity_established": false,
+    "source_control": "REJECTED"
+  },
+  "conditional_thermodynamic_foundation": {
+    "effective_hessian_determinant": "13/2",
+    "graph_vertices": 3,
+    "hidden_basis_invariant": true,
+    "hidden_coordinates": 1,
+    "maxwell_perturbation_rejected": true,
+    "physical_entropy_volume_identification_derived": false,
+    "pressure_at_unit_chart": "8",
+    "response_ratio": "35/26",
+    "temperature_at_unit_chart": "1"
+  },
+  "controls": {
+    "S0_transitive_not_nontrivial_symmetry": {
+      "commuting_permutations": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "transition": [
+        0,
+        0,
+        1
+      ]
+    },
+    "U3_strict_product": {
+      "actual": 2,
+      "product_bound": 4
+    },
+    "U7_memory_return": {
+      "U": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "V": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "memory_return": 1,
+      "visible_composite": 1,
+      "visible_step_product": 0
+    },
+    "W1_hidden_bit": {
+      "hidden_target_labels": 2,
+      "readout_only_recovery": false,
+      "visible_target_labels": 1
+    },
+    "W2_pairwise_not_global": {
+      "global_fibre": [],
+      "pair_witness_indices": {
+        "0,1": [
+          3
+        ],
+        "0,2": [
+          2
+        ],
+        "1,2": [
+          1
+        ]
+      },
+      "states": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    "W3_common_not_joint": {
+      "common_components": 1,
+      "joint_distinct_readouts": 4
+    },
+    "W4_delayed_history": {
+      "binary_bits": 2,
+      "class_counts": [
+        2,
+        3,
+        4
+      ],
+      "memory_labels": 3,
+      "stable_depth": 2
+    }
+  },
+  "domains": [
+    {
+      "carrier_size": 1,
+      "cut_partitions": 1,
+      "endomaps": 1,
+      "target_partitions": 1
+    },
+    {
+      "carrier_size": 2,
+      "cut_partitions": 2,
+      "endomaps": 4,
+      "target_partitions": 2
+    },
+    {
+      "carrier_size": 3,
+      "cut_partitions": 5,
+      "endomaps": 27,
+      "target_partitions": 5
+    },
+    {
+      "carrier_size": 4,
+      "cut_partitions": 15,
+      "endomaps": 256,
+      "target_partitions": 15
+    }
+  ],
+  "family_continuation": {
+    "additional_four_state_scope": "W5; the U6 sharp-depth chain; identity pair on all 15 cuts",
+    "controls": {
+      "W5_mixed_words": {
+        "arrows": {
+          "A": [
+            0,
+            2,
+            2,
+            3
+          ],
+          "B": [
+            0,
+            0,
+            3,
+            3
+          ]
+        },
+        "class_counts": [
+          2,
+          3,
+          4
+        ],
+        "depth_before_after_naming_composite": [
+          2,
+          1
+        ],
+        "diagnostic_candidates": [
+          0,
+          1
+        ],
+        "family_binary_bits": 2,
+        "family_closure": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "initial_cut": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "memory_sizes_A_B_family": [
+          1,
+          2,
+          3
+        ],
+        "naive_join": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "shortest_word": [
+          "A",
+          "B"
+        ],
+        "single_closures": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ]
+        ],
+        "unmixed_words_cannot_distinguish": true
+      },
+      "W6_initial_detail_can_increase_prediction_memory": {
+        "closures": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "coarse_cut": [
+          0,
+          0,
+          0
+        ],
+        "fine_cut": [
+          0,
+          0,
+          1
+        ],
+        "memory_sizes": [
+          1,
+          2
+        ],
+        "transition": [
+          0,
+          2,
+          2
+        ]
+      }
+    },
+    "counts": {
+      "closed_refinement_comparisons": 5835,
+      "cut_family_pairs_checked": 3695,
+      "diagnostic_pairs_checked": 33206,
+      "exhaustive_cut_family_pairs": 3678,
+      "four_state_fixtures": 17,
+      "generator_presentations_checked": 7390,
+      "joint_cut_comparisons": 18515,
+      "refinement_intertwiners_checked": 8857,
+      "smaller_memory_maps_rejected": 1544,
+      "subfamily_comparisons": 11084,
+      "word_descent_checks": 55403
+    },
+    "exhaustive_domains": [
+      {
+        "carrier_size": 1,
+        "cut_partitions": 1,
+        "ordered_two_arrow_families": 1,
+        "word_oracle_max_depth": 1
+      },
+      {
+        "carrier_size": 2,
+        "cut_partitions": 2,
+        "ordered_two_arrow_families": 16,
+        "word_oracle_max_depth": 2
+      },
+      {
+        "carrier_size": 3,
+        "cut_partitions": 5,
+        "ordered_two_arrow_families": 729,
+        "word_oracle_max_depth": 3
+      }
+    ],
+    "scope": {
+      "all_finite_words_admitted": true,
+      "arrow_labels_known_to_observer": true,
+      "general_proofs": "FAMILY_CONTINUATION.md U8-U12 under declared finite hypotheses",
+      "minimum_physical_action_derived": false,
+      "physical_memory_acquisition_derived": false,
+      "quantum_or_spacetime_identification": false
+    },
+    "status": "PASS_FINITE_CHECKS"
+  },
+  "native_grading_and_seam_memory": {
+    "by_dimension": [
+      {
+        "connected_graphs": 1,
+        "vertices": 2
+      },
+      {
+        "connected_graphs": 4,
+        "vertices": 3
+      },
+      {
+        "connected_graphs": 38,
+        "vertices": 4
+      },
+      {
+        "connected_graphs": 728,
+        "vertices": 5
+      }
+    ],
+    "controls": {
+      "W21_two_involutions_are_not_identical": {
+        "metric_sign_J": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "-1"
+          ]
+        ],
+        "native_J": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "0"
+          ]
+        ]
+      },
+      "W22_gluing_loses_grading": {
+        "after_J": [
+          "0",
+          "1",
+          "-1"
+        ],
+        "hidden_state": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "initial": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "W23_three_vertex_tree": {
+        "cut_rank": 3,
+        "minimum_extra": 1,
+        "source_rank": 4
+      },
+      "W24_triangle_targets_differ": {
+        "edge_response_observer_rank": 6,
+        "grading_observer_rank": 5,
+        "hidden_state": [
+          1,
+          -1,
+          -1,
+          1,
+          1,
+          -1
+        ]
+      },
+      "W25_declared_sector_transcripts": {
+        "K_algebraic_candidate": [
+          "-2/3",
+          "2/3",
+          "0"
+        ],
+        "R_native_sector": [
+          "2/5",
+          "6/5",
+          "0"
+        ],
+        "linfinity_separation": "16/15",
+        "parameter": "1/2"
+      },
+      "W26_compression_invents_commutator": {
+        "compressed_commutator": [
+          [
+            "0",
+            "-4/25",
+            "4/25"
+          ],
+          [
+            "-2/25",
+            "0",
+            "-8/25"
+          ],
+          [
+            "2/25",
+            "8/25",
+            "0"
+          ]
+        ],
+        "exact_descent": false,
+        "native_commutes": true
+      }
+    },
+    "counts": {
+      "addressed_R_families": 43,
+      "bipartite_connected": 218,
+      "connected_graphs": 771,
+      "cut_memory_rank_checks": 43,
+      "edge_response_reconstructions": 154,
+      "full_grading_linear_systems": 43,
+      "graphs_enumerated": 1098,
+      "local_native_grading_checks": 308,
+      "minimal_observers_constructed": 43,
+      "nonbipartite_connected": 553
+    },
+    "coverage": "All simple labelled graphs on 2-5 vertices for C/CJ rank; all connected graphs on 2-4 vertices for full grading equations, minimal observer construction and separately addressed R Cayley responses at t=1/2.",
+    "minimum_cost_type": "Additional independent linear scalar channels; not bits, entropy or physical action",
+    "native_multi_pair_interaction_selected": false,
+    "physical_instrument_or_gravity_identification": false
+  },
+  "native_interaction_and_lawful_cuts": {
+    "by_dimension": [
+      {
+        "channels": 1,
+        "connected": 1,
+        "graphs": 1
+      },
+      {
+        "channels": 2,
+        "connected": 1,
+        "graphs": 2
+      },
+      {
+        "channels": 3,
+        "connected": 4,
+        "graphs": 8
+      },
+      {
+        "channels": 4,
+        "connected": 38,
+        "graphs": 64
+      }
+    ],
+    "controls": {
+      "W27_actual_order_response": {
+        "R_then_mixing": "0",
+        "difference": "-16/25",
+        "group_commutator": [
+          [
+            "93/125",
+            "64/125",
+            "-24/125",
+            "-48/125"
+          ],
+          [
+            "-64/125",
+            "93/125",
+            "48/125",
+            "-24/125"
+          ],
+          [
+            "24/125",
+            "-48/125",
+            "93/125",
+            "-64/125"
+          ],
+          [
+            "48/125",
+            "24/125",
+            "64/125",
+            "93/125"
+          ]
+        ],
+        "initial_state": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "mixing_then_R": "16/25"
+      },
+      "W28_lossy_interacting_quotient": {
+        "grading_and_form_descend": true,
+        "lost_component": [
+          2
+        ],
+        "nonzero_target_commutator": [
+          [
+            "0",
+            "0",
+            "-8/25",
+            "-16/25"
+          ],
+          [
+            "0",
+            "0",
+            "16/25",
+            "-8/25"
+          ],
+          [
+            "-8/25",
+            "-16/25",
+            "0",
+            "0"
+          ],
+          [
+            "16/25",
+            "-8/25",
+            "0",
+            "0"
+          ]
+        ],
+        "source_dimension": 6,
+        "target_dimension": 4
+      },
+      "W29_cut_inside_connected_component": {
+        "exact_descent": false,
+        "minimum_extra": 2
+      },
+      "W30_cancellation_is_not_blind_component": {
+        "after_local_R": [
+          "-2/5"
+        ],
+        "closed_observer_rank": 4,
+        "initial": 0
+      },
+      "W31_connected_invariant_form": {
+        "Lorentz_signature_derived": false,
+        "nonzero_forms_definite": true,
+        "space_dimension": 1
+      },
+      "W32_missing_control": {
+        "full_connected_family_rank": 4,
+        "local_phases_only_rank": 2,
+        "mixing_only_rank": 2
+      }
+    },
+    "counts": {
+      "chronological_word_checks": 1298,
+      "component_projection_intertwiners": 700,
+      "connected_graphs": 44,
+      "decoder_basis_reconstructions": 1298,
+      "full_invariant_form_solves": 11,
+      "graded_orthogonal_steps": 490,
+      "interaction_graphs": 75,
+      "optimal_transcripts": 167,
+      "quarter_turn_commutations": 490,
+      "readout_closure_comparisons": 360
+    },
+    "coverage": "All simple interaction graphs on 1-4 two-component channels, phase=mixing=1/2. Every channel first-coordinate readout plus one aggregate row. Every root on connected graphs for minimal transcripts. Full symmetric-form nullspaces on 1-3 channels.",
+    "interaction_graph_and_strengths_supplied": true,
+    "native_rules_used": "Real anti-self-dagger generators, common J=I tensor K, exact Cayley steps; parameters are protocol labels, not a physical clock.",
+    "physical_gravity_identification": false,
+    "quantum_readout_or_instrument_realized": false
+  },
+  "native_response_tensor_and_cut_ledger": {
+    "controls": {
+      "W33_real_cut_complex_seam": {
+        "cross_imaginary": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "-1",
+            "0"
+          ]
+        ],
+        "gap_determinant": "-1",
+        "minimum_extra": 1
+      },
+      "W34_paired_cut_not_dynamically_closed": {
+        "mixing_descends": false,
+        "tensor_ledger": true
+      },
+      "W35_signed_response": {
+        "full_target_rank": 4,
+        "norm_target_also_requires_rank": 4,
+        "response": [
+          "-16/25",
+          "-8/25",
+          "0",
+          "0"
+        ],
+        "squared_size": "64/125"
+      },
+      "W36_proper_lossy_response_quotient": {
+        "source_dimension": 6,
+        "target_dimension": 4
+      },
+      "W37_zero_average_and_sign_blindness": {
+        "discarded_covariance": [
+          [
+            "256/625",
+            "128/625",
+            "0",
+            "0"
+          ],
+          [
+            "128/625",
+            "64/625",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "mean": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "opposite_responses_same_tensor": true
+      }
+    },
+    "counts": {
+      "coordinate_cuts": 340,
+      "general_readout_repairs": 14,
+      "loop_scale_and_quotient_checks": 90,
+      "nested_statistical_ledgers": 1620,
+      "paired_coordinate_cuts": 30,
+      "statistical_ledgers": 405,
+      "tensor_transport_checks": 490
+    },
+    "domains": {
+      "channels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cuts": "all real coordinate subsets through eight dimensions, including zero and identity",
+      "ensemble_partitions": 15,
+      "ensemble_size": 4,
+      "ensemble_weights": [
+        [
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "1/10",
+          "1/5",
+          "3/10",
+          "2/5"
+        ],
+        [
+          "1/2",
+          "1/6",
+          "1/6",
+          "1/6"
+        ]
+      ],
+      "graphs": "all simple graphs through four channels",
+      "loop_parameters": [
+        "-2/3",
+        "1/2",
+        "1"
+      ],
+      "nested_partitions": "all refinement-related pairs",
+      "noncoordinate_readouts": "specified rational modular-entry fixtures"
+    },
+    "scope": "U30-U32 written proofs are separate from these finite comparisons; no physical gravity or quantum readout law",
+    "status": "PASS_FINITE_CHECKS"
+  },
+  "pre_entropy_seam_return": {
+    "SR1_sector_defect_squares": {
+      "-1": {
+        "-1": 0,
+        "1": 4
+      },
+      "1": {
+        "-1": 4,
+        "1": 0
+      }
+    },
+    "SR1_unitary_norm_negative_control": true,
+    "SR2_flat_plaquettes": 9,
+    "SR2_horizontal_return": -1,
+    "SR2_nontrivial_horizontal_cycles": 9,
+    "lifted_integer_endpoint_collision": 3,
+    "positive_thermodynamic_closure_independent": true
+  },
+  "protocol": "UNCUT_CUT_MEASUREMENT_V1_8_QUANTUM_EMK_LOCAL_GEOMETRY",
+  "quantum_emk_local_geometry_bridge": {
+    "cut_controls": {
+      "Z_invariance_alone_preserves_chi": false,
+      "Z_invariant_lossy_cut_chi": "1",
+      "paired_repair_extra_scalar_channels_on_fixture": 2,
+      "uncut_chi": "1/2"
+    },
+    "emk_local_two_jet": {
+      "K_0": "-1/8",
+      "W_0": "1",
+      "W_1": "0",
+      "W_2": "1/4",
+      "global_warp_selected": false,
+      "kappa": "1/8",
+      "supplied_length_squared": "4"
+    },
+    "helical_guard": {
+      "physical_double_helix_identified": false,
+      "same_local_two_jet_different_sheet_memory": true,
+      "sheet_memory_is_local_metric_curvature": false
+    },
+    "native_iota_representation_fixture": {
+      "Z_skew_adjoint": true,
+      "Z_squared_minus_identity": true,
+      "wrong_identity_representation_rejected": true
+    },
+    "protocol": "QUANTUM_EMK_LOCAL_GEOMETRY_V1",
+    "response_plane": {
+      "A": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "-1",
+          "0"
+        ]
+      ],
+      "G": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "2"
+        ]
+      ],
+      "GL2_label_invariance": true,
+      "chi": "1/2",
+      "det_A": "1",
+      "det_G": "2",
+      "gram_margin": "1",
+      "orientation_reversal_flips_A_not_chi": true
+    },
+    "scope": {
+      "physical_gravity_identified": false,
+      "physical_length_scale_derived": false,
+      "quantum_gravity_established": false,
+      "represented_iota_to_response_complex_structure": true,
+      "response_plane_invariant_to_emk_local_two_jet_adapter": true,
+      "spacetime_metric_derived": false
+    }
+  },
+  "represented_blocks": {
+    "entry_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "shape": [
+      2,
+      2
+    ]
+  },
+  "scope": {
+    "antisymmetric_response_identified_with_connection_curvature": false,
+    "atom_interferometer_written_interface": "ATOM_INTERFEROMETER_AUDIT.md AI-1 under declared instrument and physical calibration inputs; exact rational controls are distinct from the external numerical reference",
+    "availability_interface_physically_established": false,
+    "bounded_error_probe_rejection_constructed": true,
+    "classical_phase_erasure_does_not_identify_native_source_response": true,
+    "coframe_profile_constrained_within_supplied_homogeneous_class": true,
+    "conditional_finite_quantum_classical_bridge_from_one_graph": true,
+    "conditional_inverse_square_shell_sector_constructed": true,
+    "conditional_native_source_to_atom_phase_interface_constructed": true,
+    "conditional_phase_referenced_matrix_recovers_native_source_green_operator": true,
+    "conditional_spin_vector_holonomy_gate_constructed": true,
+    "conditional_thermodynamic_equilibrium_chart_from_source_cost": true,
+    "cubic_shell_count_proves_pointwise_radial_response": false,
+    "current_native_axioms_cannot_select_quadratic_capacity": true,
+    "declared_native_pair_identified_with_augmented_readout": true,
+    "empirical_validation": false,
+    "explicit_affine_source_cost_candidate_constructed": true,
+    "external_newtonian_reference_is_native_prediction": false,
+    "flat_local_transport_can_retain_global_minus_sector": true,
+    "formal_proof_assistant_verification": false,
+    "full_global_emk_metric_selected_from_native_law": false,
+    "general_written_proofs": "MANUSCRIPT.md U1-U7, FAMILY_CONTINUATION.md U8-U12, ADMISSIBLE_CONTINUATION.md U13-U16, GRAVITY_BEFORE_CURVATURE.md U17-U20, SECTOR_AND_COFRAME_SELECTION.md U21-U23, NATIVE_GRADING_AND_SEAM_MEMORY.md U24-U26, NATIVE_INTERACTION_AND_LAWFUL_CUTS.md U27-U29, NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md U30-U32, PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md U33-U35, SOURCE_RESPONSE_AND_GRAVITY_TESTS.md U36-U38, SHELL_CAPACITY_SELECTION.md U39-U41, THERMODYNAMIC_FOUNDATION_BRIDGE.md TF-1/TF-2, QUANTUM_CLASSICAL_BRIDGE.md QB-1/QB-3, GRAVITY_PHASE_TRANSLATOR.md GP-1/GP-2, PRE_ENTROPY_SEAM_RETURN.md SR-1/SR-2, SPIN_HOLONOMY_GEOMETRY_GATE.md SH-1/SH-3 and QUANTUM_EMK_LOCAL_GEOMETRY.md QG-1/QG-5 under stated hypotheses; no priority claim for standard Cayley inversion, Schur reduction, dephasing, thermodynamic contact geometry, flat nontrivial holonomy, spin double cover or conical deficit",
+    "genuine_lossy_quotient_preserves_declared_interaction": true,
+    "helical_sheet_memory_identified_with_physical_double_helix": false,
+    "homogeneity_derived_from_native_law": false,
+    "independent_review": false,
+    "lifted_winding_recovered_from_terminal_principal_holonomy": false,
+    "minimum_nature_action_derived": false,
+    "minus_one_return_selects_conical_deficit_or_spin_connection": false,
+    "model_response_transcript_physically_realized": false,
+    "native_atom_interferometer_prediction_empirically_tested": false,
+    "native_compatible_inter_edge_candidate_constructed": true,
+    "native_conservative_flow_proves_relaxation": false,
+    "native_coupling_values_selected_from_primitive": false,
+    "native_grading_repair_on_declared_edge_assembly": true,
+    "native_gravity_law_physically_identified": false,
+    "native_iota_representation_gate_constructed": true,
+    "native_response_tensor_and_exact_cut_seam_constructed": true,
+    "native_step_identified_with_physical_time": false,
+    "native_tensor_identified_with_quantum_information_metric": false,
+    "numerical_reference_recomputed_by_exact_master_certificate": false,
+    "operational_global_phase_reference_supplied": false,
+    "physical_born_frequency_law_derived": false,
+    "physical_entropy_volume_energy_adapter_derived": false,
+    "physical_gravity_experiment_passed": false,
+    "physical_inter_edge_law_selected_from_primitive": false,
+    "physical_inverse_square_derived_without_extra_hypotheses": false,
+    "physical_length_scale_for_emk_two_jet_derived": false,
+    "physical_probe_universality_established": false,
+    "physical_quantum_classical_derivation": false,
+    "physical_quantum_gravity_established": false,
+    "physical_spacetime_derivation": false,
+    "post_cut_smooth_chart_is_supplied": true,
+    "published_atom_phase_summary_ingested": true,
+    "quadratic_cost_and_shell_growth_selected_from_primitive": false,
+    "quantum_density_channel_does_not_identify_native_source_response": true,
+    "response_plane_invariant_to_emk_local_two_jet_constructed": true,
+    "spacetime_dimension_derived": false,
+    "spin_and_vector_probes_jointly_resolve_declared_examples": true,
+    "thermodynamic_equilibrium_invariant_identified_with_grading_sign": false,
+    "three_direction_lattice_has_quadratic_leading_capacity": true,
+    "three_direction_lattice_selected_from_native_primitive": false,
+    "transport_sector_selected_by_native_law": false,
+    "uncut_identified_with_finite_carrier": false,
+    "unitary_holonomy_norm_detects_seam_memory": false
+  },
+  "sector_and_coframe_constraints": {
+    "chart_and_homogeneity_derived": false,
+    "coframe_profile_constrained_within_supplied_ansatz": true,
+    "controls": {
+      "W17_minimum_edge_tie": {
+        "edge_count_each": 3,
+        "signatures": {
+          "K_path": [
+            2,
+            2,
+            0
+          ],
+          "K_star": [
+            1,
+            3,
+            0
+          ],
+          "R_star": [
+            4,
+            0,
+            0
+          ]
+        }
+      },
+      "W18_cycle_gate": {
+        "all_K_triangle_nonzero_form": false,
+        "two_K_one_R_signature": [
+          1,
+          2,
+          0
+        ]
+      },
+      "W19_pointwise_zero_is_not_patch_closure": {
+        "torsion_coefficients": [
+          "-1",
+          "0",
+          "1"
+        ],
+        "u": [
+          0,
+          "1/2",
+          1
+        ]
+      },
+      "W20_coframe_closure_does_not_select_sector": {
+        "K_metric": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-9",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "-9"
+          ]
+        ],
+        "R_metric": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "9",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "9"
+          ]
+        ]
+      }
+    },
+    "counts": {
+      "balanced_graphs": 322,
+      "chart_points": 48,
+      "connected_graphs": 646,
+      "curvature_component_comparisons": 240,
+      "disconnected_graphs_outside_theorem": 113,
+      "inconsistent_graphs": 324,
+      "labelled_graphs_enumerated": 759
+    },
+    "coverage": "All absent/K/R simple labelled graphs on 2-4 vertices; connected graphs compared to full Cayley invariant-form nullspace. Charts: n=2..5, both sectors, kappa=-1 or 1/2, b=3+kappa*u, u=-1,0,2.",
+    "graphs_by_dimension": [
+      {
+        "balanced": 2,
+        "connected": 2,
+        "dimension": 2
+      },
+      {
+        "balanced": 16,
+        "connected": 20,
+        "dimension": 3
+      },
+      {
+        "balanced": 304,
+        "connected": 624,
+        "dimension": 4
+      }
+    ],
+    "physical_sector_selection": false
+  },
+  "shell_capacity_selection_audit": {
+    "U39_equal_local_contract_different_capacity": {
+      "carrier_count_each": 49,
+      "cycle_two_jumps_shell_capacity": [
+        4,
+        6,
+        6
+      ],
+      "degree_each": 4,
+      "periodic_square_shell_capacity": [
+        4,
+        12,
+        20
+      ],
+      "unit_links_each": 98
+    },
+    "U40_declared_3_direction_count": {
+      "exact_pure_n_squared_at_finite_radii": false,
+      "first_shell_capacities": [
+        6,
+        30,
+        78
+      ],
+      "identity": "C_3(n)=12*n^2+12*n+6 for integer n>=0",
+      "physical_dimension_selected": false
+    },
+    "U41_cubic_local_response_obstruction": {
+      "inverse_aggregate_capacities": [
+        "1/6",
+        "1/30",
+        "1/78"
+      ],
+      "mean_drops": [
+        "1/6",
+        "13/378",
+        "5/378"
+      ],
+      "shell_field_constant": false
+    },
+    "counts": {
+      "exact_lattice_profiles": 16,
+      "independent_ball_flux_checks": 12,
+      "lattice_link_counts": 40,
+      "nonradial_checks": 3,
+      "radial_tree_checks": 1,
+      "same_size_valence_weight_countermodels": 2,
+      "stationary_source_solutions": 4,
+      "tree_link_counts": 30,
+      "tree_profiles": 12
+    },
+    "native_axioms_force_quadratic_capacity": false,
+    "physical_inverse_square_derived": false,
+    "source_type": "Exact rational finite graph constructions; no physical distance or empirical data",
+    "upper_bound_saturation_control": "1D constant capacity 2 obeys a quadratic upper bound"
+  },
+  "source_sha256": {
+    "../curvature-information-duality/LINEAGE.md": "01abb15d7ff3e9d577bfa91b21f85bd67a48b5640b0f3da2af369ed3bdb64c66",
+    "../curvature-information-duality/README.md": "2b1851eb8122976e9bd94b0daaea4bd8961441fb6eb2165a0bbdbd70832614b3",
+    "../curvature-information-duality/certificates/EXPECTED_QTH1.sha256": "03f561271b778baeb43162d523e1303b2257723d0159e83702f97387ee6c4fb5",
+    "../curvature-information-duality/certificates/QTH1_RESULT.json": "4636f5a79bbba0ec9aabb77ed9932360d34b9f4697bc5a418e5d7971ccfedfbb",
+    "../curvature-information-duality/certificates/qth1_quantum_recognition_information.py": "f619d64e45f697db3764b6455c8413aef8daa668a968d363236e878c37a4040c",
+    "../curvature-information-duality/tests/test_qth1.py": "b72cf1965bc6745f4aa29f8acaa3193f452a2801911ad5286148693ae4a6a316",
+    "ADMISSIBLE_CONTINUATION.md": "dd71c56c3bb1593d5cc5afb5fe66c118216be94c933b7961e3bb52cce445a3c5",
+    "ATOM_INTERFEROMETER_AUDIT.md": "3558e8ba19871f9081ed0e57b715cc3c29487edaa9fa15a6c83101b3c28a98f2",
+    "CLAIMS.md": "136ee9590cf467fbc0e6a44a8859d357a957085b9460d65cc1387aae782054bb",
+    "FAMILY_CONTINUATION.md": "847e994bf6ec2990f4727e7ac6b25374fd8d5aaa94914c7a668fff25c854e3db",
+    "GRADING_SOURCE_PINS.json": "670cc69d25bbb3f45b0dabdcda955e5acfaafb70ee605867201c9a047b0efe8c",
+    "GRAVITY_BEFORE_CURVATURE.md": "9271e6063aac15382df8aeaff4ca39e28be92460687bc6bd54b60820ec90bbe5",
+    "GRAVITY_EXPERIMENT_CONTRACT.md": "30e5bce0e1669bde301bf2dff05f55eafdb0b1e350c713f9e0f8b9953b3ef940",
+    "GRAVITY_PHASE_TRANSLATOR.md": "ebceffa943288fe3e4bdc50a7c732c1c493219bbd24dd0086ef24afb05ed1633",
+    "GRAVITY_SOURCE_PINS.json": "0025efcc8048896b0e6a02b23df84beaf4bea2c46badce54d8c19865a03e2f95",
+    "IDENTIFICATION_SOURCE_PINS.json": "44757fdfb25427fceced9efa6fb20e4d6df127babf33834bc88a8354b7710921",
+    "INTERACTION_SOURCE_PINS.json": "1b455519dbe92b83aa98012059ab1774e075c26279a03bcf81beeebbfa136bb1",
+    "MANUSCRIPT.md": "a95cee99c7f55ebe861d1ded782aa710fe1934354f789b19d6990873da7fdf32",
+    "NATIVE_GRADING_AND_SEAM_MEMORY.md": "247c3f652cabacfaf9338c4900037baf8c5d6941fbdd56134ecace532174a051",
+    "NATIVE_INTERACTION_AND_LAWFUL_CUTS.md": "ac37333fb1aa315ffe41f6ad821bd1437ddb4a2270cc065f65820b270bb4ea69",
+    "NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md": "3ee3183f14e5f0a5978c1d591720c7bfb499528d71677ddb722ecbe8a19d1fbe",
+    "NOVELTY_AND_LINEAGE.md": "9cf3687215bf503decdd647977da62ebe38d8b79aa41d62b8f01174b2eb3d536",
+    "PRE_ENTROPY_SEAM_RETURN.md": "2721e43d805dec88281080063f9faf8d47654698810abb5633bcc023bcef4179",
+    "PROBE_CALIBRATION_AND_NATIVE_IDENTIFICATION.md": "5fa440c92789cc7aa0e21d996d6a97e70d59f4c87a876eafe74285205d7182cf",
+    "QUANTUM_CLASSICAL_BRIDGE.md": "e7105a6e951e9eb363c22a27b433576a1b69a81fe8448f2a322b412ec9d9a068",
+    "QUANTUM_EMK_LOCAL_GEOMETRY.md": "b94c6e3b6eafb1a99bd10c2f2930fba5950ec02c70ee94b172a0aa14cef6693b",
+    "README.md": "92e8826f24ecba2b12bca8cae65956db437c71f4e5ea22d3dc771e429a06bf7f",
+    "RESEARCH_PROGRAMME.md": "4ce5c61b35a4c92c78e0ee247ee55e08ac7ecf9069a51f921f3dd382be618bfb",
+    "RESPONSE_SOURCE_AUDIT.md": "454ada029b6bd819c43d6ea636289c164ebe9a7a21c6aa3601af93367f3a334e",
+    "RESPONSE_SOURCE_PINS.json": "1948b38ae80ad66abdfb0e7b21663abece5151dc1d587b0370b289ac19305927",
+    "SECTOR_AND_COFRAME_SELECTION.md": "d9180edd7fef49f24116f5b28db8642463525f9b89030be2129185f25d10db5d",
+    "SELECTION_SOURCE_PINS.json": "75cdff089cbad4ef638c64204147cdf9b3f8cb9688e742b8572afe3f4075f869",
+    "SHELL_CAPACITY_SELECTION.md": "e317d7f77ec09c262434ce1135861a79a04444c38ee894e22bab46146590db31",
+    "SHELL_GROWTH_SOURCE_PINS.json": "2aedfc4824111be03899902ec38604a3e4cb0c71d961f94fc42f7589c9d22a2b",
+    "SOURCE_PINS.json": "83811fbe301b92812bed1d3f0a28771c9163fbaf0bbd92392990aa134ef3bc7a",
+    "SOURCE_RESPONSE_AND_GRAVITY_TESTS.md": "eacbdd0aa9e1d2045a839ad65c22ee7bf2221512fef9b947c3d281d72694ffa3",
+    "SOURCE_RESPONSE_PINS.json": "98417cedc06e8c3120c412ee00797a2ca18c6951414fe46711492bb9851b17dd",
+    "SPIN_HOLONOMY_GEOMETRY_GATE.md": "cb5ce021fa197e1590c3faf58f4e6e9b9352513da6c39c21379976a685fb3e41",
+    "THERMODYNAMIC_FOUNDATION_BRIDGE.md": "a9bed547e21bfe7787d989d2f9d411aaa6f7f1ddddbeed787f0971d083e08e7b",
+    "TRANSLATOR_REPO_AUDIT.md": "2b29dc46ab1c869927c4ff35b1e77613ba9b5b088b288ff5e4cb73be615b6e3f",
+    "certificate.py": "e3cb25eefbabd8c9b181429546c874ae4ae27cc58c135210a0c5c3f9fbe77029",
+    "certificates/atom_interferometer_bridge.py": "ee50a00d8a2e19e10f730d006ca99dc87fbeaf1395b8451a525346fe4bf04e9a",
+    "certificates/gravity_phase_translator.py": "aa6389f958489f4587d6f2214b4f236df213e7b295bf34a6c44922c12caa204a",
+    "certificates/pre_entropy_seam_return.py": "0a3e04c33799dbadc6742a28ac6ec4ee6d815625c880e7983fe94b8a25389f87",
+    "certificates/quantum_classical_bridge.py": "16504632b0dd05bcd0f0a2524a5d659aab458255311d5d2fcd9b3a7003586587",
+    "certificates/quantum_emk_local_geometry.py": "e94431e92ee91475b33c720b5ec08388be57a2cf4b68444d2d447c62205303d4",
+    "certificates/spin_holonomy_geometry_gate.py": "ead8c432f690bb9ccdbe279f679d95a2edf81839e03f1dbb8e8617c86bc16d13",
+    "certificates/thermodynamic_foundation_bridge.py": "e5f3632ae0b6e784dbfe7a8926df1dab7f4e1142c09e37b9b8884b7f34078650",
+    "experiments/ATOM_INTERFEROMETER_REFERENCE.json": "dee3a1f2b0f23a1af41d0d42c70dda1c7d10a4278b442f29ae2abc53a0d04683",
+    "experiments/atom_interferometer_2014_inputs.json": "efa97b8034fe9328c5c9fa3528d4e337667d3827861a25ab80f5c1e5e055b693",
+    "experiments/atom_interferometer_reference.py": "38c21ad967ac786ddadd89f57c8c7af5803dd55145121696d52000a8aae79d55",
+    "family_certificate.py": "91b949103dc086b271187894d6a1ce0c34328b91b1bfc361aa40fed42b74e429",
+    "family_model.py": "db7e2505667eb7eb85bf7e6f75eee46348935f79875528e77f0eef3ed65a535a",
+    "finite_model.py": "ff274cccdeb9ee5cc1e65db661bed733f114415c34d31f0bd3be75cc27df876a",
+    "grading_certificate.py": "81dd74fc4fb92854aedef891bd9386f0963b823ebf7296536a7fadee32850a0d",
+    "grading_model.py": "b4921f85e348ee987d340660fc02bb20a9b3182e00e365bf8db3f30b686c4bf0",
+    "gravity_certificate.py": "d38dc8b204669aeeb09c9dd4f0fbcc6786dcfd1c90a496a202a7efa6175781b7",
+    "gravity_model.py": "20346e44998ee42a655adf38b319e219d3f1dedf79b73993fa7d279355175cb7",
+    "identification_certificate.py": "2541dbccb648a76a546e953aaff3ed4f80ac65bde1669e8758794dbcddcc6edc",
+    "identification_model.py": "64bb78dfcac7c398b8e847fb9862023ebe2d4b59462332dce5eabd4511f1f00e",
+    "interaction_certificate.py": "22b0b7c67142150dce6be025313f85af5992928a671bb7c02f1b76e52489a3e9",
+    "interaction_model.py": "887708a90d5410f2da8200b28f441c5240e590f5bc8ac50e981d7433dc9b6335",
+    "partial_certificate.py": "293e19c34558e84d140b0cef0fee857a77729a39410d645e01bad9676a742a04",
+    "partial_model.py": "92bad02105884f4dc3c3e1da7415998eb2048f4c2c9e31c4bbd8a60678c7f270",
+    "response_certificate.py": "29bc919029d6bb9e3de7dc33b88533c556b12d760905e443811c6f3165228518",
+    "response_model.py": "b69643e5bdf2fda27d52f5e3350e31beb839bc83160d358916d18e07206805a7",
+    "selection_certificate.py": "848ab2d0bc64e8057f4cec7e9fef4ae0e502b1392f5257985053292aa0ab7f66",
+    "selection_model.py": "8ec412bd382c28cd23f6f44f6ab789a77e957146860f4defa092470e2b93a0fa",
+    "shell_growth_certificate.py": "7ee77e347ffde2d31caf23c9d3bb2a74aa86431a56104c0175c7beffe223243c",
+    "shell_growth_model.py": "99f70821cc2b6c1f1e56596026fb843a415d6d83d4716c94e26df7571d74aee5",
+    "source_response_certificate.py": "1d52e77a3282e59b976d07a10f50f119e6eb19d7ac199b24df417ff8db8f1d84",
+    "source_response_model.py": "e4a86cebca43d82ffd50f75e4b5300d2e61dfcc4355caa4daad2ca43701e5ab5",
+    "tests/test_family_model.py": "11d104afb3f7d9521718632b3768eb94c63e5e2e542ac091ed086179541e7d8d",
+    "tests/test_finite_model.py": "5f53ea7ee064f5dbcab1523b22222638370c626aa25a0cd5858c5e82c3cb13ae",
+    "tests/test_grading_model.py": "9740b5c92947daa3e58d64bc0bb4a00a74a1a0aa504ee5bef7988d8d7f6b6c07",
+    "tests/test_gravity_model.py": "84d910732a1840ae12be4e9b76056c2b67c62f071356806b9c81013ee184893d",
+    "tests/test_identification_model.py": "539559d1d87f380b42fc9b092aff0758d66a98995b175848d8aa6a9f987bcb31",
+    "tests/test_interaction_model.py": "281072a97b92032b5c8f69bb42db970f6f1d06dca304dbc65396096d52323cf4",
+    "tests/test_partial_model.py": "5c10db7f08c52d5c244eeddadc85506e6645bc8ecba3b22c1528f385510484d0",
+    "tests/test_response_model.py": "b79a1b1a867607eca91906a312671382517c6134dceea4eabbb00bcfa3699156",
+    "tests/test_selection_model.py": "53a3f53df42bb6076f6862ca774991cd993263747ed3c8521032d32e91a65f0a",
+    "tests/test_shell_growth_model.py": "73b10668329f78c15c5ed9c490b98333a7d9eb93e496f4c4d1c2561c04de1ba3",
+    "tests/test_source_response_model.py": "26d95ad1c2c716ef006e752392c236255e987e663a795a24392a9bbc2e285db2"
+  },
+  "spin_holonomy_geometry_gate": {
+    "cone_deficit_pi_spin_phase": "i (up to orientation and spin-structure sign)",
+    "cone_deficit_pi_vector_minus_identity": true,
+    "dimensionful_hbar_selected_from_sign": false,
+    "flat_spin_negative_cycles": 3,
+    "flat_spin_plaquettes": 9,
+    "smooth_adapter_curvature_coefficient": 2,
+    "smooth_adapter_rectangle_area": "1/5",
+    "spin_minus_one_selects_cone_deficit": false,
+    "spin_minus_one_vector_identity": true
+  },
+  "status": "PASS_FINITE_CHECKS"
+}

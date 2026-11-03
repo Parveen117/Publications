@@ -1,0 +1,61 @@
+{
+  "protocol": "NATIVE_CUT_ENERGY_TRANSPORT_SOURCE_PINS_R1",
+  "rkf_commit": "3cc5a33b05c16d59c90994ddda69dedc0d392424",
+  "publications_parent_commit": "704ae8fc20832d73b9ba1c46a3148dddd4a9764d",
+  "rkf_files": [
+    {
+      "path": "operator_foundation/CANONICAL_HOME.json",
+      "sha256": "6c5a7756ff220e7a9afa7fdb72151781f1777e2099880788f21a1e1b780ced39"
+    },
+    {
+      "path": "operator_foundation/README.md",
+      "sha256": "5fa13d4df90b33597e3c72d1860258d0492d8680583e7b7e3b2e13dddfc6bbc9"
+    },
+    {
+      "path": "operator_foundation/examples/emk_job.json",
+      "sha256": "fd3c9e50cb51050acb9c36b3123fbc4664870c621e5d73bb8763b1050b30c763"
+    },
+    {
+      "path": "operator_foundation/core/native_operator.cjs",
+      "sha256": "304963cccf4320d76dd36147e5c15ad579e9d0496c86fb1f942543bc692e06a3"
+    },
+    {
+      "path": "operator_foundation/core/paninian_operator.cjs",
+      "sha256": "9a30c72f4e89d0a15697c99095ed8e0f015bb8c64fda4ded9897394945886fd8"
+    },
+    {
+      "path": "operator_foundation/theory/NATIVE_PRIMITIVE_ORDER.md",
+      "sha256": "f1f2fa357d41745445bcaf403784edbec6a17cbd78bc400cbd1229aa682c0fd9"
+    },
+    {
+      "path": "operator_foundation/theory/01_NATIVE_ALGEBRA.md",
+      "sha256": "ea07ab9f0f8a47e63f8ee973638669f596308cec4ed234ced7497a5f7539ecf5"
+    },
+    {
+      "path": "operator_foundation/theory/PANINIAN_OPERATOR_COMPILER.md",
+      "sha256": "cbeb9fd821bc134f4510408623fb1c723ab59a00237aa5b505d09cd4621c4eca"
+    },
+    {
+      "path": "theorems/foundation/F00G_NATIVE_LOGARITHM_AND_POWERS.md",
+      "sha256": "488eabd5bf14952b503a725c45afcc244be613dcb31838e597115821b34fc0a3"
+    },
+    {
+      "path": "theorum/morphic_calculus/main.tex",
+      "sha256": "b8179549dc097417b10bde505c4025924c591702052fb1ef9b294d6077570c17"
+    }
+  ],
+  "publications_files": [
+    {
+      "path": "papers/coherence-first-thermodynamics/THEOREM.md",
+      "sha256": "a13616c39bed8bc453249beb4c71e7db73d338f5a0627ff1e75de9a5f7b4d0fb"
+    },
+    {
+      "path": "papers/native-ugd-propagation/THEOREM.md",
+      "sha256": "8c452ed73cbd6af7c73a3c4509fe722b71c3241f16483655e84b46326f6a82da"
+    },
+    {
+      "path": "papers/thermo-compass-foundations/model.py",
+      "sha256": "b80f6b40419b5a7eeac2e1218f1d07318525cef12168f2e02c4de2325962a747"
+    }
+  ]
+}

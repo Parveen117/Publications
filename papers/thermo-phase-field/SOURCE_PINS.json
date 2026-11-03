@@ -1,0 +1,90 @@
+{
+  "schema": "THERMO_PHASE_FIELD_SOURCE_PINS_R1",
+  "local_sources": [
+    {
+      "path": "papers/thermo-compass-foundations/THEOREM.md",
+      "git_blob_sha1": "ee4d361588221a00f9dc23b3beb27b5d59a323d1",
+      "sha256": "783caecc1d6d0156576f07d0fea4d3f14c9c4124d1a901aaa1ac0b48c54fd7c4",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    },
+    {
+      "path": "papers/thermo-compass-foundations/model.py",
+      "git_blob_sha1": "bd532b30ac350469cadf26f3f732ec6937c8f36c",
+      "sha256": "b80f6b40419b5a7eeac2e1218f1d07318525cef12168f2e02c4de2325962a747",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    },
+    {
+      "path": "papers/uncut-cut-measurement/NATIVE_RESPONSE_TENSOR_AND_CUT_LEDGER.md",
+      "git_blob_sha1": "5251019b4d5417f49cb8aa8f48a36d32efe2ddae",
+      "sha256": "3ee3183f14e5f0a5978c1d591720c7bfb499528d71677ddb722ecbe8a19d1fbe",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    },
+    {
+      "path": "papers/uncut-cut-measurement/certificates/native_sources/native_summability.py",
+      "git_blob_sha1": "77011e37ebfe42d916ab465cfe5666038a4ad7cb",
+      "sha256": "c35b67e5eeedcb4dfc3532cc7073c30d889113cbf1421cef1cfc753d9d3843b7",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    },
+    {
+      "path": "papers/curvature-information-duality/README.md",
+      "git_blob_sha1": "39423ba75b05fd812f26399c7e557f035106f035",
+      "sha256": "2b1851eb8122976e9bd94b0daaea4bd8961441fb6eb2165a0bbdbd70832614b3",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    },
+    {
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a0_thermodynamic_recognition_square.tex",
+      "git_blob_sha1": "760c821f934a1ce4c18a05aee12746d93f8af8b0",
+      "sha256": "f555e4326579a963a76345bf17bdd942f4f155ef4acb6946dcea6f5f762e5f21",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    },
+    {
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a00_response_propagation_metric.tex",
+      "git_blob_sha1": "079a9c6616ad8ed8c2d52ddd4f545f6a79de2094",
+      "sha256": "0f2c319d975c914d7ec39f9ef35aed08a80ad54742f05650c25118ca185d0a20",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    },
+    {
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex",
+      "git_blob_sha1": "437f3de0ab8ed31af3fd9204210e0c3454126f91",
+      "sha256": "fa5ea981f7ffc4c28040df4adcd6d380fa254d47486f62c9f1447ce57bd6562c",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    },
+    {
+      "path": "papers/thermodynamic-response-corrections/source/sections/06a_spacetime_recognition_datum.tex",
+      "git_blob_sha1": "497bbba637fc212847cfbc5a8036d96c2f462799",
+      "sha256": "249f33a2123bb4abeed930670ce21d887bd8930e933272d03cdac2256e0b4a03",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    },
+    {
+      "path": "papers/thermodynamic-response-corrections/source/sections/06b_classical_field_equations.tex",
+      "git_blob_sha1": "e12070f344fab8b39a77b6abe9f704c516668517",
+      "sha256": "a343509a201f0d5a43f7b15bd190b55b6851ae9bb668cfe47f9af83a06ecf06f",
+      "repository": "Parveen117/Publications",
+      "commit": "bf3193b74285e8dc0d0adc13dcca844ba84125ef"
+    }
+  ],
+  "standard_references": [
+    {
+      "title": "Geometric Computational Electrodynamics with Variational Integrators and Discrete Differential Forms",
+      "url": "https://arxiv.org/abs/0707.4470v3"
+    },
+    {
+      "title": "Variational Integrators for Maxwell Equations with Sources",
+      "url": "https://arxiv.org/abs/0803.2070v1"
+    },
+    {
+      "title": "MIT 18.969 Lecture 1, Darboux theorem",
+      "url": "https://ocw.mit.edu/courses/18-969-topics-in-geometry-dirac-geometry-fall-2006/0977bd35075df6dbd9ab50071f0c86c3_lecture1.pdf"
+    }
+  ],
+  "scope": "Local dependency bytes checked against immutable Git tree; offline verifier checks hashes, not remote sources or experimental claims."
+}

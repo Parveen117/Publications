@@ -1,0 +1,85 @@
+{
+  "field": {
+    "cell_counts": {
+      "cells": 8,
+      "faces": 24,
+      "links": 24,
+      "vertices": 8
+    },
+    "compact_cell_checks": 8,
+    "compact_face_checks": 24,
+    "independent_action_variations": 56,
+    "midpoint_steps": [
+      {
+        "energy": "8258/45",
+        "step": "1/7"
+      },
+      {
+        "energy": "8258/45",
+        "step": "2/9"
+      },
+      {
+        "energy": "8258/45",
+        "step": "-1/5"
+      }
+    ],
+    "negative_controls": 3,
+    "ranks": [
+      7,
+      14,
+      7
+    ],
+    "source_work_rate": "43/15"
+  },
+  "geometry": {
+    "counts": {
+      "coframe_connection_agreements": 486,
+      "cubic_jets": 243,
+      "phase_cut_controls": 5,
+      "scalar_matrix_curvature_agreements": 486,
+      "simple_pullback_controls": 49
+    },
+    "darbouxs_local_theorem": "WRITTEN_PROOF_NOT_FINITE_INFERENCE",
+    "rank_four_wedge_square": "2",
+    "reference": {
+      "A_s": "1/6",
+      "A_v": "-1/12",
+      "f_sv": "-5/108"
+    }
+  },
+  "pinned_sources_checked": 10,
+  "propagation": {
+    "conditional_mass_fixture": {
+      "E": "25",
+      "E0": "20",
+      "c": "3",
+      "eta": "5",
+      "gap": "4",
+      "inertial_mass": "20/9",
+      "p": "5"
+    },
+    "nonzero_native_fourier_characters": 63,
+    "periodic_curl_rank": 14,
+    "physical_vacuum_or_mass_selection": "NOT_DERIVED",
+    "zero_mode_checks": 1
+  },
+  "protocol": "THERMO_PHASE_FIELD_R1",
+  "refusal_controls": 5,
+  "scope": {
+    "c": "Computed model speed; physical universal c not derived",
+    "empirical_validation": "NOT_PERFORMED",
+    "field_dynamics": "Declared quadratic phase action and selected cell complex",
+    "mass": "Conditional dispersion/calibration corollary; no particle mass prediction",
+    "proof_assistant": "NOT_PERFORMED",
+    "proofs": "THEOREM.md; finite checks do not replace the proofs",
+    "two_channel_completeness": "Local closed nondegenerate two-forms; not global selection"
+  },
+  "source_sha256": {
+    "README.md": "3a3b4bba7c888602b5a169e0a68620b63b8b642f159c66551a57d028e1ab0581",
+    "SOURCE_PINS.json": "38e12c322e68328287e8de0c34a07ef10767784b6000fbe86165129bf1955073",
+    "THEOREM.md": "717de52421b2609327dd1e95321fb14d5f91c138f8ef4c4d8c0c1d129f874a1c",
+    "model.py": "2c1f925524a5d9d4668c0345ac4d8836fb78b169e24c73e2fa9e0c5e0f7d228b",
+    "verify.py": "f0cdf33689cd94163490215b177c7285386301e83166a0f4f11b1824c6ec2f24"
+  },
+  "status": "PASS_DECLARED_EXACT_CONTROLS"
+}

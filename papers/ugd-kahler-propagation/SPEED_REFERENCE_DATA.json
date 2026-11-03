@@ -1,0 +1,25 @@
+{
+  "protocol": "UGD_SPEED_REFERENCE_DATA_R9",
+  "scope": "External definition and published comparison data; none selects the native constitutive law or calibrates it independently.",
+  "retrieved_utc": "2026-09-30",
+  "SI": {
+    "c_m_per_s": 299792458,
+    "status": "EXACT_DEFINING_CONSTANT_NOT_AN_INDEPENDENT_FIT_TARGET",
+    "source": "https://www.bipm.org/en/si-base-units/metre"
+  },
+  "gw170817": {
+    "reference": "Abbott et al., Gravitational Waves and Gamma-rays from a Binary Neutron Star Merger: GW170817 and GRB 170817A, ApJL 848 L13 (2017), section 4.1, equation (1).",
+    "doi": "https://doi.org/10.3847/2041-8213/aa920c",
+    "arxiv": "https://arxiv.org/abs/1710.05834",
+    "primary_pdf": "https://ntrs.nasa.gov/api/citations/20170011356/downloads/20170011356.pdf",
+    "event_date": "2017-08-17",
+    "fractional_speed_definition": "(v_GW-v_EM)/v_EM",
+    "fractional_speed_interval": ["-3e-15", "7e-16"],
+    "gamma_minus_gw_arrival_seconds": "1.74",
+    "arrival_uncertainty_seconds": "0.05",
+    "conservative_distance_Mpc": "26",
+    "intrinsic_emission_endpoints_seconds": ["0", "10"],
+    "assumptions": "Simultaneous emission for the upper endpoint; gamma rays emitted ten seconds later for the lower endpoint; the paper's propagation approximation and negligible gamma-ray medium dispersion.",
+    "scope": "Historical published interval, not a latest-bound claim, likelihood, raw-data reanalysis, exact equality measurement, or model-independent emission-time bound."
+  }
+}

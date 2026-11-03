@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "corrected_spectral_bound_rejects": true,
+    "coupled_complement_bound": true,
+    "diagonal_exhaustion": true,
+    "full_projection_negative_is_safe": true,
+    "independent_bracket_can_violate": true,
+    "nonzero_error_negative_control": true,
+    "old_spectral_bound_false_accepts": true,
+    "perturbed_independent_positive_control": true,
+    "threshold_equality_allowed": true,
+    "wedge_identity_finite_grid": true,
+    "zero_rank_projection": true
+  },
+  "schema": "native-prerequisite-corrections-v1",
+  "scope": "Exact declared finite controls only. General proofs are in README.md and corrected sources. No Lean, peer-review, empirical, RH, YM or quantum-gravity promotion.",
+  "status": "PASS_FINITE_CONTROLS"
+}

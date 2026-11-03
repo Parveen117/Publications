@@ -1,0 +1,61 @@
+{
+  "version": "0.5",
+  "retrieved_and_verified": "2026-09-25",
+  "publication_parent_commit": "2b68c5ec10e0be460d0c0d322f33fe57b8256eb9",
+  "method": "Local full-file SHA-256 and Git blob SHA matched pinned remote recursive trees",
+  "sources": [
+    {
+      "id": "P1",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/31_cut_variational_minimal_observer_theorem.md",
+      "role": "Observer variational theorem for a supplied memory target; not sector selection",
+      "git_blob_sha": "f419b5750750cd87d06465c28b2fdf6202ef93b4",
+      "sha256": "408870812cf548d7fc42ecd5c242d1c454b678733c110096fe02c371194045ff",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/31_cut_variational_minimal_observer_theorem.md"
+    },
+    {
+      "id": "P2",
+      "repository": "Parveen117/Recognition-Kernel-Framework",
+      "commit": "927cdb6ca98221c0b4285da953a2c8b689fb202c",
+      "path": "theorum/thermodynamics/lambda_geometry/16_primitive_flux_spectrum_and_obstruction.md",
+      "role": "Restricted minimization versus global canonicality; comparison only",
+      "git_blob_sha": "7bbace2c2b42f792933ec13c933d8b2d90dd6360",
+      "sha256": "c426110ff5c3c0cb8614206f28b0bd78cbd3c32ccccb9fb59b7aad7e341374ce",
+      "url": "https://github.com/Parveen117/Recognition-Kernel-Framework/blob/927cdb6ca98221c0b4285da953a2c8b689fb202c/theorum/thermodynamics/lambda_geometry/16_primitive_flux_spectrum_and_obstruction.md"
+    },
+    {
+      "id": "P3",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/information-invariance/certificates/d1_selection_principle.py",
+      "role": "Theorem I nonselection precedent; Theorem J explicitly adds a selection principle; no physical law imported",
+      "git_blob_sha": "3a7386dfb022ded5f6412e0aa5eb42e743b9c6f2",
+      "sha256": "20b592a670dac603abfa89a07cb20d1b55f92dc3dddf06c5397f1b610ad912bc",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/information-invariance/certificates/d1_selection_principle.py"
+    },
+    {
+      "id": "P4",
+      "repository": "Parveen117/Publications",
+      "commit": "c1a35e0f509cd137d20f9504543f97b5ec7479fc",
+      "path": "papers/information-invariance/LEDGER.md",
+      "role": "Existing selection obligation and withdrawn gravity derivation; comparison only",
+      "git_blob_sha": "7e779c0959069e8c4e14257885e86a8ff19f57e2",
+      "sha256": "99b125eae6cfed50e231e40d3ebd95e9b3226c842d3db3aadded4653ad9686d2",
+      "url": "https://github.com/Parveen117/Publications/blob/c1a35e0f509cd137d20f9504543f97b5ec7479fc/papers/information-invariance/LEDGER.md"
+    }
+  ],
+  "inherited_algebra_sources": "GRAVITY_SOURCE_PINS.json G1-G3",
+  "physical_field_equations_imported": [],
+  "additional_candidate_assumptions": [
+    "Connected simple coupling graph of declared response components",
+    "Each edge carries one chosen K or R embedding",
+    "Smooth chart, homogeneous coframe class and constant star connection are supplied for U23"
+  ],
+  "not_established": [
+    "Physical selection of graph, sector, rank or coupling strength",
+    "Derivation of chart or homogeneity from the uncut primitive",
+    "Operational gravitational or quantum identification"
+  ],
+  "corrected_publication_sources": "P3/P4 pinned to Publications PR #4; no assertion that every statement in those files is independently certified"
+}

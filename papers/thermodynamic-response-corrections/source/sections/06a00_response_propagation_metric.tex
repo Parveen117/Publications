@@ -1,0 +1,71 @@
+\subsection{Recognition metric from target-faithful response propagation}
+\label{sec:recognition-metric-propagation}
+
+The quotient bundle and its connection are constructed from thermodynamic response transport.  A spacetime metric enters when the target-relevant quotient field is assigned a propagation law.  The correct geometric datum is the principal symbol of that propagation operator, not a visual analogy between thermodynamic and spacetime curvature.
+
+Let
+\[
+\mathcal P_{\RK}:\Gamma(E_{\RK})\longrightarrow\Gamma(E_{\RK})
+\]
+be a second-order linear differential operator describing linearized propagation of the target-relevant thermodynamic Recognition field.  Assume that its principal symbol is scalar on the quotient fibre:
+\begin{equation}
+\sigma_2(\mathcal P_{\RK})(x,\xi)
+=p_x(\xi)\id_{(E_{\RK})_x},
+\label{eq:scalar-recognition-symbol}
+\end{equation}
+where $p_x$ is a smooth nondegenerate Lorentzian quadratic form on $T_x^*M$.
+
+\begin{theorem}[Principal-symbol Recognition metric theorem]
+\label{thm:principal-symbol-recognition-metric}
+Under \eqref{eq:scalar-recognition-symbol}, there is a unique Lorentzian co-metric $g^{-1}$ satisfying
+\begin{equation}
+p_x(\xi)=g_x^{-1}(\xi,\xi).
+\label{eq:recognition-cometric-symbol}
+\end{equation}
+It is reconstructed pointwise by polarization:
+\begin{equation}
+g_x^{-1}(\xi,\eta)
+=
+\frac12\bigl(
+ p_x(\xi+\eta)-p_x(\xi)-p_x(\eta)
+\bigr).
+\label{eq:cometric-polarization}
+\end{equation}
+Consequently, a normalized target-faithful response propagation operator determines the spacetime metric used in the action.
+
+If only the characteristic set
+\[
+\operatorname{Char}_x(\mathcal P_{\RK})
+=\{\xi\ne0:p_x(\xi)=0\}
+\]
+is observed, it determines the conformal class of $g$.  A pointwise volume, proper-time, or proper-length calibration fixes the remaining conformal factor.
+\end{theorem}
+
+\begin{proof}
+A quadratic form is uniquely determined by its polarization, which gives \eqref{eq:cometric-polarization}.  Nondegeneracy and Lorentzian signature of $p_x$ therefore define a unique Lorentzian co-metric and its inverse metric.  If only the null cone is known, two Lorentzian quadratic forms in dimension at least three with the same nonzero null set are positive scalar multiples of one another.  Hence the cone determines the conformal class.  The scale arguments are those proved in Theorem~\ref{thm:null-cone-identification}.
+\end{proof}
+
+\begin{definition}[Target-faithful propagation compatibility]
+Let $\mathcal P_{\cH}$ be a second-order response-jet propagation operator on $\cH^N_\Theta$, and let $\mathcal P_{\cY}$ be the corresponding measured-data propagation.  The propagation is target-faithful when
+\begin{equation}
+\cA_\Pi^\sharp\mathcal P_{\cH}
+=
+(\mathcal P_{\cY}\oplus\mathcal P_{\RK})
+\cA_\Pi^\sharp
+\label{eq:propagation-intertwining-square}
+\end{equation}
+on a common smooth core.
+\end{definition}
+
+\begin{proposition}[No hidden target cone after completion]
+\label{prop:no-hidden-target-cone}
+Assume \eqref{eq:propagation-intertwining-square} and the uniform source-domination estimate \eqref{eq:uniform-source-domination}.  Then no high-frequency response-jet mode can be invisible to the completed observation while producing a nonzero target amplitude.  In particular, every target-relevant characteristic covector of $\mathcal P_{\cH}$ appears in either the measured-data symbol or the quotient-field symbol.
+\end{proposition}
+
+\begin{proof}
+Let $v$ be a principal-amplitude vector at $(x,\xi)$ lying in the kernel of the completed principal observation.  Source domination gives $\Pi_xv=0$, so such a mode is target irrelevant.  Conversely, if $\Pi_xv\ne0$, then $\cA_{\Pi,x}^\sharp v\ne0$.  Applying the principal symbol of \eqref{eq:propagation-intertwining-square} shows that its propagated amplitude is represented in the measured or quotient component.  Thus a target-relevant characteristic cannot disappear into the original blind kernel after completion.
+\end{proof}
+
+\begin{remark}[Exact metric claim]
+The theorem does not assert that equilibrium thermodynamics alone creates a Lorentzian metric.  It proves the sharper statement that once the target-relevant thermodynamic quotient is assigned a scalar normally hyperbolic propagation operator, the metric is encoded uniquely in its normalized principal symbol, and target-faithful completion prevents a physically relevant propagation cone from remaining observationally blind.
+\end{remark}

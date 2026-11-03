@@ -1,0 +1,55 @@
+\section{Extended Thermodynamic Recognition Capstone}
+\label{sec:extended-capstone}
+
+The previous results can be consumed as one strengthened theorem without confusing their hypotheses.
+
+\begin{theorem}[Extended Thermodynamic Recognition Capstone]
+Assume the hypotheses of the finite Thermodynamic Recognition Capstone.  Assume in addition:
+\begin{enumerate}[label=(\roman*)]
+\item the equilibrium chart carries a declared nowhere-vanishing area form $\varpi$ and four selected response channels have been nondimensionalized to a smooth map $F:\cM\to\R^4$;
+\item an open-curvature space $\mathfrak F$, force space $\R^m$, and prior calibration
+\[
+\mathcal C:\mathfrak F\to\operatorname{Hom}(\R^m,\R^r)
+\]
+have been declared;
+\item the covariant process derivative $D=\nabla_X$ is densely defined and closed on a Hilbert completion $H$ of response sections;
+\item the response seed $\Lambda$ belongs to $\mathcal A_r(D)$ for some $r>0$.
+\end{enumerate}
+Then all finite-capstone conclusions remain valid and the following strengthened conclusions hold:
+\begin{enumerate}[label=(\alph*)]
+\item the response-bracket matrix
+\[
+\mathbb B_\varpi(F)_{ab}=\{f_a,f_b\}_\varpi
+\]
+is skew, has rank at most two, transforms by congruence under constant response-basis changes, and obeys
+\[
+B_{12}B_{34}-B_{13}B_{24}+B_{14}B_{23}=0;
+\]
+\item for every admissible curvature value $F^{\mathrm{open}}$ and force $X$, the calibrated response law
+\[
+J=\bigl(\mathcal C(F^{\mathrm{open}})^{\mathsf T}
+\mathcal C(F^{\mathrm{open}})+A(F^{\mathrm{open}})\bigr)X,
+\qquad A^{\mathsf T}=-A,
+\]
+has nonnegative production
+\[
+J^{\mathsf T}X
+=\norm{\mathcal C(F^{\mathrm{open}})X}^2\ge0;
+\]
+\item the completed carrier $\cJ_\infty=\ell^2(\N_0;H)$ supports the closed unbounded raiser $\mathbb R_D$, and for $|t|<r$ the exact infinite response jet is
+\[
+\Psi_\Lambda(t)
+=\left(\frac{t^n}{n!}D^n\Lambda\right)_{n\ge0};
+\]
+\item if $\Lambda$ is entire analytic for $D$, the infinite-jet orbit exists for every $t$; if a unitary process transport commutes strongly with $D$, it transports the tower layer by layer without changing the factorial coefficients.
+\end{enumerate}
+No finite certificate is used to infer these infinite or constitutive conclusions.
+\end{theorem}
+
+\begin{proof}
+The finite conclusions are those of the Thermodynamic Recognition Capstone.  Part (a) is the universal skew four-channel bracket theorem.  Part (b) is the calibrated curvature-to-production theorem.  Part (c) is the closedness lemma and unbounded analytic infinite-jet theorem applied to $D=\nabla_X$.  Part (d) follows from the entire-seed statement and the commuting transported-jet corollary.  Each conclusion consumes only the additional datum named in its corresponding hypothesis.
+\end{proof}
+
+\begin{remark}[Expanded but still typed]
+The theorem genuinely enlarges the claim boundary: it supplies an intrinsic skew four-channel object, a positive curvature-generated production functional, and an unbounded infinite response tower.  It does not identify the ordinary derivative Jacobian with the bracket matrix, choose a physical calibration from geometry alone, or promote an analytic-vector orbit into a whole-carrier semigroup without a generator theorem.
+\end{remark}

@@ -1,0 +1,765 @@
+{
+  "date": "2026-09-25",
+  "status": "PASS_AFFECTED_VERIFICATION",
+  "scope": "Identified prerequisite corrections. Not a complete theory, formal, empirical, or external peer-review certification.",
+  "tests": [
+    {
+      "group": "RKF index, T50, T54, ladder and correction regressions",
+      "passed": 28,
+      "command": "python -m unittest proof_lab.test_mathematics_index proof_lab.test_native_seam_gap_odd_covariance proof_lab.test_infinite_face_recognition_completion proof_lab.test_ladder_audit_50_59 proof_lab.test_correction_regressions -v"
+    },
+    {
+      "group": "RKF recognition topology",
+      "passed": 7,
+      "command": "python -m unittest proof_lab.test_recognition_topology -v"
+    },
+    {
+      "group": "RH native function completion",
+      "passed": 10,
+      "command": "PYTHONPATH=src python -m unittest discover -s tests -p 'test_native_function_completion.py' -v"
+    },
+    {
+      "group": "Publications information invariance",
+      "passed": 44,
+      "command": "python -m pytest -q papers/information-invariance/tests"
+    },
+    {
+      "group": "Publications exact spectral and Pluecker controls",
+      "passed": 3,
+      "command": "python -m unittest test_certificate -v; python certificate.py --check"
+    },
+    {
+      "group": "MP reduced Arb active-band tests including coverage assertion",
+      "passed": 5,
+      "command": "python -m pytest -q papers/rh_initial_journey/test_native_arb_covariant_active_band.py"
+    }
+  ],
+  "total_tests_passed": 97,
+  "foundation_campaign": {
+    "status": "PASS_IMPLEMENTED_FOUNDATION_CERTIFICATE_CAMPAIGN",
+    "packages": 2,
+    "source_pin_updated": "F00-I proof correction",
+    "canonical_sha256": "5ab44f23bd3296885e0052fbcd4b076d77404535c83d80784ca745cec4130c7f"
+  },
+  "certificate_pins": {
+    "NATIVE_SEAM_GAP_ODD_COVARIANCE": "779ac7a36b9da7e3c17740f6f1bf5c29774f1e8667aaa0b502ce998d1fbb657e",
+    "INFINITE_FACE_RECOGNITION_COMPLETION": "e71586938240ddd0d80f1074e80e049ae6f26898f8f2424cb6bb5bccbbbbcfbb"
+  },
+  "micro_pin": "1c63419e58ce3a257238a78275de4eb1868efc4fd66a796ebb613f40835c03ca",
+  "source_regeneration": "All three Morphic prepare paths re-executed; compared with corrected working copies. Only embedded pre-appendix hashes changed. All three finalization/verification commands pass.",
+  "latex_builds": [
+    {
+      "name": "morphic_algebra",
+      "exit_code": 0,
+      "pages": 60,
+      "sha256": "eacf74ba22d081dfbba0e40c388a9e7dffe17b355fad1d8711f7f2ebc814b69d"
+    },
+    {
+      "name": "morphic_calculus",
+      "exit_code": 0,
+      "pages": 55,
+      "sha256": "9f45a7b8b40149fdcd72994bbd2406632b9327a732877dbcf536ce879fb58017"
+    },
+    {
+      "name": "morphic_geometry",
+      "exit_code": 0,
+      "pages": 20,
+      "sha256": "74c55776694f19051ca1eb395696fc70d78660c041c02f6dab41b302ecce9e8c"
+    },
+    {
+      "name": "information",
+      "exit_code": 0,
+      "pages": 5,
+      "sha256": "8b35efd4e459d85a55950ec695239def59aa936bd66bebaefa743ee533512370"
+    },
+    {
+      "name": "thermodynamics",
+      "exit_code": 0,
+      "pages": 57,
+      "sha256": "2ad104d233aade3e62575a1f19b224961d59afd7af480089fe905965352d49c7"
+    },
+    {
+      "name": "mp_representation",
+      "exit_code": 0,
+      "pages": 137,
+      "sha256": "33d8a21b2e595fa502c91173ddc2499ce78a9e794d4c0ccc41aaee18d1935fa5"
+    }
+  ],
+  "limits": [
+    "No new Lean proof or external review.",
+    "MP full-prime historical numerical values retained with corrected coverage; reduced Arb tests rerun. Full companion fixed-shift endpoint certificate not independently rerun.",
+    "Morphic and MP source builds retain pre-existing wide formula/table layout warnings; these PDFs are not presented as new publication-ready editions.",
+    "Original SPECTRAL 2 and collected book PDFs remain historical editions read with the explicit erratum.",
+    "arXiv and Zenodo records have not been replaced."
+  ],
+  "changed_source_files": {
+    "Recognition-Kernel-Framework": [
+      {
+        "path": "CERTIFICATE_INDEX.md",
+        "bytes": 35716,
+        "sha256": "0a5a37e3fadc7a9fbca23d81b7d62dd97bfd56878830cb54e50091e5d07f720f",
+        "new": false
+      },
+      {
+        "path": "CORRECTIONS_2026_09_25.md",
+        "bytes": 2069,
+        "sha256": "1de7e84159b686c0a5e25a1e11e28e68295a94873a74c8b43ae8536cd51730b8",
+        "new": true
+      },
+      {
+        "path": "MATHEMATICS_INDEX.md",
+        "bytes": 41680,
+        "sha256": "4ebbf284360a799ac93f01af0aa3df0cc82de8547565ca001519574487aa46bb",
+        "new": false
+      },
+      {
+        "path": "SOURCE_PROVENANCE.md",
+        "bytes": 2339,
+        "sha256": "5ef514f34ae44582d03ce15417c446869e43a9a988e4f137ea74f97b6466b0ad",
+        "new": false
+      },
+      {
+        "path": "certificates/foundation/F00GHI_LOG_ARITHMETIC_ZETA_V0_1/result.json",
+        "bytes": 422784,
+        "sha256": "3da6885ee34e9158180800d6c44e5405e1c4a2d3efdd85164c117cc43b73d727",
+        "new": false
+      },
+      {
+        "path": "certificates/foundation/F00GHI_LOG_ARITHMETIC_ZETA_V0_1/spec.json",
+        "bytes": 1997,
+        "sha256": "ce4a8205a59adcb345b1ac81ec1e525307d4aa25faeb445824b6a4e26fe35383",
+        "new": false
+      },
+      {
+        "path": "certificates/foundation/campaign_result.json",
+        "bytes": 1703,
+        "sha256": "5b7eacff0bfb18ae8236a43de7b64b0350a8f9bb1bcc5b68452001f64f67e4df",
+        "new": false
+      },
+      {
+        "path": "proof_lab/INFINITE_FACE_RECOGNITION_COMPLETION_EXPECTED.sha256",
+        "bytes": 65,
+        "sha256": "88f9975014227068f2395b7ca57c231e717b93681c3c488800a440323e779d92",
+        "new": false
+      },
+      {
+        "path": "proof_lab/INFINITE_FACE_RECOGNITION_COMPLETION_REPORT.json",
+        "bytes": 5502,
+        "sha256": "e71586938240ddd0d80f1074e80e049ae6f26898f8f2424cb6bb5bccbbbbcfbb",
+        "new": true
+      },
+      {
+        "path": "proof_lab/LADDER_AUDIT_50_59_REPORT.json",
+        "bytes": 6916,
+        "sha256": "90068042673d19028e5c3febd95e0ede2708f3bd3f2b4235115fbd9ecc3deffe",
+        "new": false
+      },
+      {
+        "path": "proof_lab/NATIVE_SEAM_GAP_ODD_COVARIANCE_EXPECTED.sha256",
+        "bytes": 65,
+        "sha256": "f5d5baf6b2f92e930bfd5cfd9d1ea0cdf711a01483dc35cdc2ae3d760b58fd6d",
+        "new": false
+      },
+      {
+        "path": "proof_lab/NATIVE_SEAM_GAP_ODD_COVARIANCE_REPORT.json",
+        "bytes": 6517,
+        "sha256": "779ac7a36b9da7e3c17740f6f1bf5c29774f1e8667aaa0b502ce998d1fbb657e",
+        "new": true
+      },
+      {
+        "path": "proof_lab/README_INFINITE_FACE_RECOGNITION_COMPLETION.md",
+        "bytes": 650,
+        "sha256": "8562fd2f08e72de01ec1113a92924140169e969501950932e1467c8cfc17ade1",
+        "new": false
+      },
+      {
+        "path": "proof_lab/README_NATIVE_SEAM_GAP_ODD_COVARIANCE.md",
+        "bytes": 987,
+        "sha256": "a7bd2802e5dbb84f4a80b6b7bab5eaabf60f59a258f99f9e82d5f0d1400af8f5",
+        "new": false
+      },
+      {
+        "path": "proof_lab/infinite_face_recognition_completion.py",
+        "bytes": 14259,
+        "sha256": "060f64e80d9f0ac19f1f90e03dd6b8f720b115892e2472e9a53619c352bc0b15",
+        "new": false
+      },
+      {
+        "path": "proof_lab/ladder_audit_50_59.py",
+        "bytes": 22661,
+        "sha256": "3ffd7584fd185e72557c86d46865f9659321bbf5d6e730c9e7a26019ea1180bd",
+        "new": false
+      },
+      {
+        "path": "proof_lab/native_seam_gap_odd_covariance.py",
+        "bytes": 24822,
+        "sha256": "7d9e2cbae1c0c26fed5c0106c5ce031147604ec7887af1d7a3518d7cda74b8c7",
+        "new": false
+      },
+      {
+        "path": "proof_lab/test_correction_regressions.py",
+        "bytes": 4202,
+        "sha256": "2e4666ab660c66d6efc8f6b04a38457b631780ebe51fd48ab029baa3716894c1",
+        "new": true
+      },
+      {
+        "path": "scripts/certify_morphic_geometry.py",
+        "bytes": 32037,
+        "sha256": "dcd1dbe0f6399bafe88fc1ebe027d7c74fbeaf808e632e4ce42fe1c511ac82a7",
+        "new": false
+      },
+      {
+        "path": "scripts/materialize_morphic_manuscripts.py",
+        "bytes": 1553,
+        "sha256": "040dbff4655c6b0a345b5c2a0785ae142409c21dc769aeb0a7d371b249d9032c",
+        "new": false
+      },
+      {
+        "path": "scripts/morphic_cert_builder_chunks/builder.py.gz.b64.part00",
+        "bytes": 3163,
+        "sha256": "33355ba78a82f4126e1005b958012d7014b1cc8063d6e622a8f8facb3ac778cb",
+        "new": false
+      },
+      {
+        "path": "scripts/morphic_cert_builder_chunks/builder.py.gz.b64.part01",
+        "bytes": 3163,
+        "sha256": "f8d4c999fcd7914290690fcd94b0fe1891f98fab93ed260105bd43babfe923c8",
+        "new": false
+      },
+      {
+        "path": "scripts/morphic_cert_builder_chunks/builder.py.gz.b64.part02",
+        "bytes": 3161,
+        "sha256": "916a9964e7e7bbe6a3620715b9c4386ff86d8b33c88cbee4c4ea643a68767da6",
+        "new": false
+      },
+      {
+        "path": "scripts/morphic_corrections.py",
+        "bytes": 627,
+        "sha256": "c01dcc88de5da35692e3d25963be3b82a639dd28da40fec05aaee8dfde03bfee",
+        "new": true
+      },
+      {
+        "path": "scripts/morphic_corrections_2026_09_25.json",
+        "bytes": 9368,
+        "sha256": "2455929b6e559129cd338d61cc340218f88086a14b3d12c56e9c21686b79576c",
+        "new": true
+      },
+      {
+        "path": "theorems/foundation/F00I_NATIVE_DIRICHLET_ZETA_EULER_PRODUCT.md",
+        "bytes": 14595,
+        "sha256": "fd51ee054603162afdbc026434042b20e28b254d0c0d1553d2b685bc4a1f2f39",
+        "new": false
+      },
+      {
+        "path": "theorum/50_native_seam_gap_odd_sector_covariance_theorem.md",
+        "bytes": 7855,
+        "sha256": "fc179998009a29cf393dbd6136719dc6ccedc5b7323f3284af55f813cc633a20",
+        "new": false
+      },
+      {
+        "path": "theorum/54_infinite_face_recognition_completion_theorem.md",
+        "bytes": 4122,
+        "sha256": "e5a5622c6bb0e725162022cd50a68c853356108a21911872907dc474248123c3",
+        "new": false
+      },
+      {
+        "path": "theorum/AUDIT_LADDER_50_59.md",
+        "bytes": 2569,
+        "sha256": "76d2893d47b59dfb3c89fcb7c219cb6f5a7d21b5e32f7930d07c0c827e45b07c",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_algebra/CERTIFICATION_STATUS.md",
+        "bytes": 725,
+        "sha256": "86525c7fcd47ebf7584ab7863dbd5fa6db23a24e2da44562ded9ee543a23ac46",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_algebra/CERTIFICATION_SUMMARY.md",
+        "bytes": 1184,
+        "sha256": "02e147c512176ad02819292496b860add8a3c6477169002f144642ff453b2b2e",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_algebra/PREPARE_MANIFEST.json",
+        "bytes": 620,
+        "sha256": "32471b4a167a758a0affff8e123ab165ac3a9bcdeb8c2a121026fba7cebe7137",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_algebra/README.md",
+        "bytes": 3385,
+        "sha256": "44b26a10ada4bb1f878130442e8308139e645697342246f6367d4e0e3a558586",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_algebra/RNKE_CERTIFICATE.json",
+        "bytes": 12293,
+        "sha256": "752c6287130c2be7f4f3a1961c0650f033b7769d77d3e8499751258e26650f87",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_algebra/main.tex",
+        "bytes": 97915,
+        "sha256": "d9d3a645eba11bd77597f509a1154f574e793520579a8338bbc82d6212c47f68",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_calculus/CERTIFICATION_STATUS.md",
+        "bytes": 708,
+        "sha256": "b29423da0e3aab02293fd68bcdc2140f9f5b74fbac2be650673594455d7b64b2",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_calculus/CERTIFICATION_SUMMARY.md",
+        "bytes": 1165,
+        "sha256": "2d1e49b5f8d41b4c433f4359813af30eeb6edbfa319e3961e5013b078db61137",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_calculus/PREPARE_MANIFEST.json",
+        "bytes": 603,
+        "sha256": "cdcba9ea086102f49a6a2a220341a7e46839b255635d480e72d72f21b73b562d",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_calculus/README.md",
+        "bytes": 3218,
+        "sha256": "a24c2be3467141348771876e964fe00183c5edf49599238e0a0035022af0b107",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_calculus/RNKE_CERTIFICATE.json",
+        "bytes": 3100,
+        "sha256": "c347363b2046c1d6fcbe754c5e3622c87cac86fb89d9bc3647f3245c237f26fd",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_calculus/main.tex",
+        "bytes": 80539,
+        "sha256": "649d7b1b8cda3d000976f2f8b2f3a3486894aefed313466044974dfb9503c380",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_geometry/CERTIFICATION_STATUS.md",
+        "bytes": 624,
+        "sha256": "e5e6224b2e2c3d74129a479e9245b016f9d61438ea0238d44a94fb9c3e4b2ea6",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_geometry/CERTIFICATION_SUMMARY.md",
+        "bytes": 1357,
+        "sha256": "ddb0da885ddead8d5743047eef3bb2c63e55155f62c309049df5c205b13b1328",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_geometry/PREPARE_MANIFEST.json",
+        "bytes": 1246,
+        "sha256": "5ad2e734d780a9b52037f10091497de4ca1a0692101417920d939447ee503a3e",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_geometry/README.md",
+        "bytes": 4184,
+        "sha256": "2f8f15f434f9cd80c7758b450724a9a525ec1d7c74d3e283eaab9c0bbaad9ad9",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_geometry/RNKE_CERTIFICATE.json",
+        "bytes": 6939,
+        "sha256": "0832d3add181662676cf1d94858f029c2348129f359543b882f219a227dfce20",
+        "new": false
+      },
+      {
+        "path": "theorum/morphic_geometry/main.tex",
+        "bytes": 37337,
+        "sha256": "bc0f5177e0f1abda410793333963b7cbde813897a1baf1879f417bd75e268c64",
+        "new": false
+      },
+      {
+        "path": "theorum/recognition_topology/04_unitary_phase_crossing_and_sector_index.md",
+        "bytes": 3398,
+        "sha256": "434ffcfb35871632509cf37362718c824198454a896fd7e63fcfa254e517852a",
+        "new": false
+      },
+      {
+        "path": "theorum/recognition_topology/RNKE_CERTIFICATE.json",
+        "bytes": 2573,
+        "sha256": "73aa46c7af83fe0c2de4257f76d8e4b72e3138aca8fab607999ef88a1d285385",
+        "new": false
+      },
+      {
+        "path": "theorum/thermodynamics/lambda_geometry/10_lambda_holonomy_and_branch_memory.md",
+        "bytes": 4860,
+        "sha256": "7c6251d7fdbff719dc970b377a63e3750043b53e369914e6f1712504fbdbc483",
+        "new": false
+      }
+    ],
+    "RH-Framework": [
+      {
+        "path": "README.md",
+        "bytes": 6051,
+        "sha256": "e4cdc84128579c9574578ea25219e7da9e56b80a7f079bed8228f072a67565d8",
+        "new": false
+      },
+      {
+        "path": "tests/test_native_function_completion.py",
+        "bytes": 6930,
+        "sha256": "3ec7ae2d81ff7f17533a086fec63124451c46b5b3f2bce1e1ea29879912cfeb3",
+        "new": false
+      },
+      {
+        "path": "theorems/T01_E4_NATIVE_FUNCTION_COMPLETION.md",
+        "bytes": 7984,
+        "sha256": "ab54abb4b7e1681e9504164c0cb62d236c5c2d2b6fbd58cbca929240ca1e3e6b",
+        "new": false
+      }
+    ],
+    "MP": [
+      {
+        "path": "papers/rh_initial_journey/CORRECTIONS_2026_09_25.md",
+        "bytes": 1271,
+        "sha256": "d3ba7a9cdfbdbad1b38ce33ef9e05b234bf93db69dd9b3acdd8e475b003b9034",
+        "new": true
+      },
+      {
+        "path": "papers/rh_initial_journey/NATIVE_ARB_COVARIANT_ACTIVE_BAND.md",
+        "bytes": 5110,
+        "sha256": "06023aa6e01aafac0adbb7e04d47b2472d8805172ddb87ecba839c4f14e432be",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/NATIVE_ARB_COVARIANT_ACTIVE_BAND_STATUS.json",
+        "bytes": 3189,
+        "sha256": "b02a7de39580b4508345d03a8cdab278bf0f13f7a8e7bf52479437212b400763",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/native_arb_covariant_active_band.py",
+        "bytes": 28088,
+        "sha256": "50b1a41d2a2d0d51dd7f057ef1bef86ff9a284d14f6b996a2246ee14c49ba576",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/sections/07_x3_surya_emk_fusion.tex",
+        "bytes": 21790,
+        "sha256": "76d19f6e4351531df04e79bc2cb968488b14c6ea946e4290a30459a8878168c6",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/sections/07c_spectral_blindness_and_freeze.tex",
+        "bytes": 14678,
+        "sha256": "31b33a190d44a088ff5507095a29d255a847891a60a3a53dc22205907097fa75",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/sections/07h_native_arb_covariant_active_band.tex",
+        "bytes": 4336,
+        "sha256": "8c24dd9b45780a1c5a43b91e35ad62f0763add715cf1e3c36958deb786c4d0e1",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/sections/07j_native_virial_birman_schwinger_gate.tex",
+        "bytes": 10810,
+        "sha256": "074cee2389b3d36593d4f76fa1ec9fb30008035f7345953148dd3322d2b1310e",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/sections/07k_seven_realizations_terminal_seam.tex",
+        "bytes": 10186,
+        "sha256": "6dd87972dffabcdea9c1f95e9ad8037f3d806cd6eb9950ac54ea5ae642896449",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/sections/08_positioning.tex",
+        "bytes": 8661,
+        "sha256": "045e81aa46611f2222a611d5f11fdb8ff7539cd545ba0c00916bd49f194d8fea",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/sections/A1_development_and_realization_ledger.tex",
+        "bytes": 4744,
+        "sha256": "3ab9f888c371af380c2a2218d60e03b5a9970ccc018a23e9a447c31aabc4f210",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/sections/B_source_lineage.tex",
+        "bytes": 7571,
+        "sha256": "eafa030ea6f0b26b0f6709dcfad563d641e34a84bb59ed918f7c7748e1ee6bc3",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/sections/C_theorem_dependencies.tex",
+        "bytes": 10381,
+        "sha256": "dc74bb30cde2f78cd1ec0ea04da9e0c20cc31e7cab26dff96659b12565e7d4f5",
+        "new": false
+      },
+      {
+        "path": "papers/rh_initial_journey/test_native_arb_covariant_active_band.py",
+        "bytes": 5304,
+        "sha256": "44ed40b985fc1b61100e5a5b95753a19c2fc9a6e074bd66d20d4367855d5abf6",
+        "new": false
+      }
+    ],
+    "Publications": [
+      {
+        "path": ".github/workflows/correction-regressions.yml",
+        "bytes": 825,
+        "sha256": "cf5865df1cf0c645c06a172902e8eb7a8fd461ab10eef2414fc80f668b04a56b",
+        "new": true
+      },
+      {
+        "path": "README.md",
+        "bytes": 4833,
+        "sha256": "5cce876c452b76bbb31a1aa35fa129bb4270ba65e96c7bc714f235bf8c175200",
+        "new": false
+      },
+      {
+        "path": "book/recognition-kernel-collected-volume/README.md",
+        "bytes": 1226,
+        "sha256": "816ccbc24033e9176ce0ec84a7729484175e051050dab323a8519769eca63a78",
+        "new": false
+      },
+      {
+        "path": "papers/corrections-2026-09-25/CERTIFICATE.json",
+        "bytes": 747,
+        "sha256": "e2f37801c34c41e7d09f3ccdb221fac172f09ff08ec37224e8bc362cbef4f4ee",
+        "new": true
+      },
+      {
+        "path": "papers/corrections-2026-09-25/EXPECTED.sha256",
+        "bytes": 65,
+        "sha256": "8e7ef4c143a4d6bfa03e90c28df3e488c57df8862e869b7b9fb7ff54188ba13d",
+        "new": true
+      },
+      {
+        "path": "papers/corrections-2026-09-25/README.md",
+        "bytes": 9234,
+        "sha256": "95aad83bf09106d9e569458ecf0f08e8749b2a889d472e47d5d6482fcdc7ce4b",
+        "new": true
+      },
+      {
+        "path": "papers/corrections-2026-09-25/certificate.py",
+        "bytes": 3126,
+        "sha256": "2556c2780f33729543f414d7f2b5bcc305e56e3daf69c08c45b5f9d90afbb73d",
+        "new": true
+      },
+      {
+        "path": "papers/corrections-2026-09-25/test_certificate.py",
+        "bytes": 917,
+        "sha256": "c6f2cc2f2bc2695028a483879650cc8b2f81d255b3038cd6903640f167a67177",
+        "new": true
+      },
+      {
+        "path": "papers/information-invariance/LEDGER.md",
+        "bytes": 8620,
+        "sha256": "99b125eae6cfed50e231e40d3ebd95e9b3226c842d3db3aadded4653ad9686d2",
+        "new": false
+      },
+      {
+        "path": "papers/information-invariance/README.md",
+        "bytes": 2137,
+        "sha256": "8e538bd38bbc59a39127fc7fbc55fe42fc284ef7e78b29f5c3cae3ad77a84d7a",
+        "new": false
+      },
+      {
+        "path": "papers/information-invariance/certificates/EXPECTED_MICRO.sha256",
+        "bytes": 65,
+        "sha256": "40102e204af175cd2fccbcf24174dc876de82785e7a55bb7a6e32189ad58c774",
+        "new": false
+      },
+      {
+        "path": "papers/information-invariance/certificates/MICRO_certificate.json",
+        "bytes": 2361,
+        "sha256": "c7e7b1964d29bf98e8b12c0a5ab6ecca834d44141ccca1a1c0a7897031f4f008",
+        "new": false
+      },
+      {
+        "path": "papers/information-invariance/certificates/micro_chi_characterisation.py",
+        "bytes": 9652,
+        "sha256": "8c6c24bf2032d7954b461977286625d6a8a52c5c2c73af6166c960c61a78e980",
+        "new": false
+      },
+      {
+        "path": "papers/information-invariance/paper/information_invariance_v2.pdf",
+        "bytes": 351584,
+        "sha256": "8b35efd4e459d85a55950ec695239def59aa936bd66bebaefa743ee533512370",
+        "new": true
+      },
+      {
+        "path": "papers/information-invariance/paper/information_invariance_v2.tex",
+        "bytes": 24461,
+        "sha256": "f37277bbdcaf348a1ab90d91545e30c34b362beb9ae717815cf44d5758aa4a49",
+        "new": false
+      },
+      {
+        "path": "papers/information-invariance/tests/test_l1.py",
+        "bytes": 9150,
+        "sha256": "7269084989833a13a399427df19cca9e9078b220243ef656ecc3aa9d4cb9cb25",
+        "new": false
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/README.md",
+        "bytes": 1158,
+        "sha256": "ca5b9132b897592551cbba256ca40eac5bc029d57455a88e9e204bc6ca1e418b",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/SOURCE_MANIFEST.json",
+        "bytes": 3032,
+        "sha256": "d93dfeafadc58f9c8b3cd6702ea6f157ec712c94a5f8f5411b2c7af1c3a197e1",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/00README.json",
+        "bytes": 213,
+        "sha256": "d1f6b1a71c9accb812ec5121d1fff7910c025ca7bb201948bacdb40941bc14e5",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/main.tex",
+        "bytes": 9284,
+        "sha256": "8e36dd3a0e607a88f0efe2466856c9a224aa7023edd4fccf036eb8b549a63256",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/00_dependency_contract.tex",
+        "bytes": 2963,
+        "sha256": "571a70ca620ef96af89a75d2a7777a6560cf9babc2f6e83e3f92ae10f046e526",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/01_foundations.tex",
+        "bytes": 9920,
+        "sha256": "e693803c14a6d72837fa1a25bb2c16248b33bb60c134ab591ca6274f6c454339",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/01a_response_summary.tex",
+        "bytes": 2899,
+        "sha256": "611bad7032e766db32e538cfa7c500e4f17cc1e809c61368be795c0a524715f2",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/02_recognition.tex",
+        "bytes": 9187,
+        "sha256": "9237a579c1fe31457a5444f35ad5df764f986356c5c3483bd14af568837b3ce2",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/02a_measurement_operators.tex",
+        "bytes": 3351,
+        "sha256": "7c99352d3fcf68c56dd7958cb193537088e9219f57974ae5b71dad9cbefc19c8",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/03_loop_and_cutflow.tex",
+        "bytes": 12328,
+        "sha256": "84c2397b5c647b83872282c9608cd3e71a60213da84f01159003c97bfff08d9e",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/03a_thermodynamic_cut_realizations.tex",
+        "bytes": 3223,
+        "sha256": "8c5a35e444283ce82922736536b439dd1209e13e34d5dd44f177222ea76bdbd2",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/04_capstone_and_examples.tex",
+        "bytes": 6989,
+        "sha256": "1a20d90bccedee177fd259266187fa725bdee1b3559c1c0f6aba35577a95c962",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/05_conclusion_and_ledger.tex",
+        "bytes": 11190,
+        "sha256": "da6b71b77f780db3bbf4582bb1218bb95a0315d6cf69836479d485225027c111",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/05_proved_extensions.tex",
+        "bytes": 11792,
+        "sha256": "4d9fda01d005535821c3ae2eb71da502d02aa20b75de3f69d8abf35a122ebb11",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/05a_curvature_and_analytic_relevance.tex",
+        "bytes": 6165,
+        "sha256": "393eaec9c6194435e38a51e6e0a399fef0b45e5bb5c3d561cc2dfb59ad16ef4f",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/05b_extended_capstone.tex",
+        "bytes": 3233,
+        "sha256": "75d976bb8319b234078bce1cd4dc7ea9f7cb37ffe33a36b4d9de8240c7866f81",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/05c_novelty_falsifiability.tex",
+        "bytes": 9881,
+        "sha256": "d422ffd9ac3ef12430d28b19a7dd7ed2d07628120b551eea4137fb7c36993124",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/06a00_response_propagation_metric.tex",
+        "bytes": 4440,
+        "sha256": "0f2c319d975c914d7ec39f9ef35aed08a80ad54742f05650c25118ca185d0a20",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/06a0_thermodynamic_recognition_square.tex",
+        "bytes": 13366,
+        "sha256": "f555e4326579a963a76345bf17bdd942f4f155ef4acb6946dcea6f5f762e5f21",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/06a1_dynamical_nonselection.tex",
+        "bytes": 3792,
+        "sha256": "fa5ea981f7ffc4c28040df4adcd6d380fa254d47486f62c9f1447ce57bd6562c",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/06a_spacetime_recognition_datum.tex",
+        "bytes": 4513,
+        "sha256": "249f33a2123bb4abeed930670ce21d887bd8930e933272d03cdac2256e0b4a03",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/06b_classical_field_equations.tex",
+        "bytes": 5829,
+        "sha256": "a343509a201f0d5a43f7b15bd190b55b6851ae9bb668cfe47f9af83a06ecf06f",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/06c_quantum_effective_equations.tex",
+        "bytes": 6614,
+        "sha256": "acc0eee52b4b89227eacca03f9f0ea9ded9719bf00ac1c6b892d3a7b6677e78e",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/06d_constructive_continuum_and_identification.tex",
+        "bytes": 19372,
+        "sha256": "4dafb6aa9640bac391cd7e2cdef859d48e1479778082d691d84bfbecf1d729ab",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/06e_noise_stable_spacetime_recognition.tex",
+        "bytes": 7540,
+        "sha256": "acddaf008feb3c046e1fc28bbb51920d16ed4649aea034e6d1a163cb7dc1d7fe",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/source/sections/references.tex",
+        "bytes": 3381,
+        "sha256": "7eefefb3ee44c09bd2ae956b352cc15d4f35da33cb3eba0e1f5737321cfc985e",
+        "new": true
+      },
+      {
+        "path": "papers/thermodynamic-response-corrections/thermodynamic_response_corrected.pdf",
+        "bytes": 605844,
+        "sha256": "2ad104d233aade3e62575a1f19b224961d59afd7af480089fe905965352d49c7",
+        "new": true
+      }
+    ]
+  }
+}

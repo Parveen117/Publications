@@ -1,0 +1,56 @@
+{
+  "schema": "ATOM_INTERFEROMETER_2014_RETROSPECTIVE_REFERENCE_V1",
+  "purpose": "External Newtonian apparatus control, not a native prediction or held-out test",
+  "sources": {
+    "apparatus": "https://arxiv.org/abs/1412.7954v1",
+    "detailed_analysis": "https://doi.org/10.1098/rsta.2014.0030",
+    "three_cloud_comparison": "https://arxiv.org/abs/1501.01500v1"
+  },
+  "reported_nominal_geometry": {
+    "total_cylinder_mass_kg": 516.0,
+    "cylinder_count": 24,
+    "diameter_m": 0.09990,
+    "height_m": 0.15011,
+    "cloud_apex_separation_m": 0.328,
+    "configuration_C_centers_relative_to_lower_apex_m": [0.040, 0.261],
+    "configuration_F_centers_relative_to_lower_apex_m": [-0.074, 0.377],
+    "pulse_separation_s": 0.160,
+    "apex_after_middle_pulse_s": 0.006
+  },
+  "external_reference_choices": {
+    "G_m3_kg_s2": 6.67384e-11,
+    "G_basis": "Historical CODATA 2010 value quoted in the paper, not its fitted G",
+    "nominal_laser_wavelength_m": 7.80e-7,
+    "background_acceleration_m_s2": 9.81,
+    "cylinders_equal_mass_and_uniform_density": true,
+    "atoms_pointlike_on_axis": true,
+    "pulses_instantaneous": true,
+    "reference_trajectory_fixed_ballistic": true,
+    "recoil_and_cloud_average_included": false,
+    "supports_and_other_moving_masses_included": false,
+    "parameters_fitted_to_observed_phase": []
+  },
+  "published_summary_only": {
+    "phase_CF_rad": 0.547870,
+    "quoted_phase_standard_error_rad": 0.000063,
+    "error_interpretation": "Rescaled aggregate statistical standard error, not full apparatus/model uncertainty",
+    "reported_cylinders_signal_fraction_approx": 0.970,
+    "authors_full_simulation_rad": 0.548105,
+    "authors_simulation_mc_error_rad": 0.000001,
+    "summary_is_raw_shot_data": false,
+    "summary_was_seen_before_analysis": true
+  },
+  "numerics": {
+    "quadrature_orders": [12, 20, 28],
+    "successive_phase_tolerance_rad": 1e-8,
+    "report_decimal_places": 10
+  },
+  "native_validation_readiness": {
+    "native_graph_weights_boundary_frozen": false,
+    "mass_to_native_source_map_calibrated": false,
+    "force_to_acceleration_scale_calibrated": false,
+    "detector_and_trajectory_error_budget_complete": false,
+    "raw_shots_and_calibration_covariance_ingested": false,
+    "unused_configurations_reserved": false
+  }
+}

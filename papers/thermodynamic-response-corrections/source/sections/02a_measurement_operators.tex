@@ -1,0 +1,60 @@
+\subsection{Why the thermodynamic observation maps are bounded}
+\label{sec:measurement-operator-context}
+
+The boundedness hypotheses in the Recognition Kernel theorem are automatic for the finite-jet measurement protocols used in the main thermodynamic application, and they have a standard interpretation after Hilbert completion.
+
+\begin{proposition}[Finite-jet observation boundedness]
+At a fixed state and finite jet order $N$, the response-jet fibre
+\[
+J_x^N(E_\Lambda)
+\]
+is finite dimensional.  Therefore every linear measurement map
+\[
+\cA_x:J_x^N(E_\Lambda)\to Y_x
+\]
+and every linear target map
+\[
+\Pi_x:J_x^N(E_\Lambda)\to Z_x
+\]
+into finite-dimensional normed data spaces is bounded.  If their coefficients depend smoothly on $x$, their operator norms are locally bounded and are uniformly bounded on compact subsets of an admissible chart.
+\end{proposition}
+
+\begin{proof}
+Every linear map between finite-dimensional normed spaces is continuous.  Smooth coefficient dependence gives continuous operator-norm dependence; continuity on a compact set gives a finite supremum.
+\end{proof}
+
+Typical finite-jet observations include channel selection, weighted probe combinations, finite differences represented on the declared jet, sensor averages, and finite collections of cycle or directional functionals.  Their kernels encode exactly which finite response directions the protocol cannot distinguish.
+
+For an infinite-dimensional completion, boundedness is a genuine protocol condition rather than an automatic fact.  A common measurement has the form
+\begin{equation}
+(\cA f)_j
+=\langle f,k_j\rangle_H,
+\qquad 1\le j\le m,
+\label{eq:finite-probe-observation}
+\end{equation}
+with probe vectors $k_j\in H$.  Then
+\begin{equation}
+\norm{\cA f}_{\ell^2_m}^2
+\le
+\left(\sum_{j=1}^m\norm{k_j}_H^2\right)
+\norm f_H^2.
+\label{eq:probe-boundedness}
+\end{equation}
+Integral sensors, convolutional probes, and compact smoothing measurements fit this form after their kernels are placed in the dual Hilbert space.
+
+\begin{proposition}[Compact sensing does not remove the Recognition problem]
+Let $H$ be infinite dimensional and let $\cA:H\to Y$ be compact.  Even when $\Ker\cA=\{0\}$, stable recovery of the full state generally fails because the singular values may converge to zero.  A target functional $L$ remains stably recoverable exactly when its decoder burden $\beta_\cA(L)$ is finite.  Hence the Recognition theorem separates algebraic blindness from unstable near-blindness.
+\end{proposition}
+
+\begin{proof}
+If a compact injective operator on an infinite-dimensional Hilbert space had a bounded inverse on its range, the identity on the unit ball would factor through a compact map and would be compact, which is impossible.  The target statement is precisely the minimum-decoder theorem: finite burden is equivalent to bounded factorization through $\cA$.
+\end{proof}
+
+\begin{remark}[Protocol declaration]
+The paper therefore uses three distinct levels without conflating them:
+\begin{enumerate}[label=(\roman*)]
+\item finite response jets, where linear boundedness is automatic;
+\item Hilbert-completed probes, where boundedness is an explicit sensor condition;
+\item unbounded differential generators, whose domains are handled separately in the analytic-jet theorem and are not treated as measurement maps.
+\end{enumerate}
+\end{remark}
